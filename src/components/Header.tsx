@@ -96,7 +96,7 @@ export default function Header() {
                     alt="Seek Jobs"
                     width={22}
                     height={22}
-                    style={{ marginLeft: "-8px" }}
+                    style={{ height: "22px", marginLeft: "-8px" }}
                   />
                   <span className="flex flex-col">
                     <span>Seek Jobs</span>
@@ -104,51 +104,56 @@ export default function Header() {
                 </span>
               </div>
             </Link>
-            {/* <NavLink
-              to={`/${countryMappings2[region.toLowerCase()].url}/Employers/`}
+            <Link
+              href={`/${countryMappings2[region.toLowerCase()].url}/Employers/`}
               className="nav-link nav-link-ltr whitespace-nowrap text-gray-900"
               activeClassName="active"
             >
               <span className="flex flex-row items-center justify-center gap-1 m-auto">
-                <img
+                <Image
                   className="academic-award"
                   src="/upward-arrow.svg"
                   alt="Top Universities"
+                  width={22}
+                  height={22}
                   style={{ height: "22px", marginLeft: "-8px" }}
                 />
                 <span className="flex flex-col">
                   <span>Top Universities</span>
                 </span>
               </span>
-            </NavLink> */}
-            {/* <NavLink
-              to="/academic-hub/"
+            </Link>
+            <Link
+              href="/academic-hub/"
               className="nav-link nav-link-ltr whitespace-nowrap text-gray-900"
               activeClassName="active"
             >
               <span className="flex flex-row items-center justify-center gap-1 m-auto">
-                <img
+                <Image
                   className="academic-award"
                   src="/network-icon.svg"
                   alt="My Academic Hub"
+                  width={22}
+                  height={22}
                   style={{ height: "22px", marginLeft: "-8px" }}
                 />
                 <span className="flex flex-col">
                   <span>My Academic Hub</span>
                 </span>
               </span>
-            </NavLink> */}
-            {/* <NavLink
+            </Link>
+            {/* <Link
               className={`p-2  md:w-52  dropdown-content z-[1] menu px-4 py-2  bg-base-100 rounded-box w-31 } `}
+              
               style={{ maxWidth: "62px" }}
-              onMouseLeave={onMouseLeave}
+             
             >
               <div
                 className="  text-gray-900 relative"
-                onMouseEnter={onMouseEnter}
+                
               >
                 {countryMappings1[region].hasPic ? (
-                  <img
+                  <Image
                     src={`https://academicjobs.s3.amazonaws.com/icon/countryFlag/${region}.svg`}
                     alt={region}
                     style={{ height: "30px" }}
@@ -160,44 +165,44 @@ export default function Header() {
                   </span>
                 )}
                 <ul
-                  onMouseLeave={onMouseLeave}
+                
                   className={`${dropdown ? "block" : "hidden"
                     } absolute  left-0 text-[0.875rem] z-99  min-w-[10rem] py-1 bg-white rounded-lg shadow-lg shadow-indigo-500/40`}
-                  ref={ref}
+                  
                 >
                   {Object.keys(countryMappings1).map((key) => (
                     <li className="navbar__item" key={key}>
-                      <DispatchLink
-                        to={`/${key}/`}
+                      <Link
+                        href={`/${key}/`}
                         region={key}
                         setDropdown={setDropdown}
                         setIsNavOpen={setIsNavOpen}
                         className="navbar__link"
                       >
                         {countryMappings1[key].menu}
-                      </DispatchLink>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </div>
-            </NavLink> */}
+            </Link> */}
          
           </div>
           <div className=" w-[200px] grid items-center justify-center ">
-            {/* <NavLink
-              to="/post-job/"
+            {/* <Link
+              href="/post-job/"
               className="text-[#f4a10c]  font-bold shadow-md rounded-full px-4 py-2 border border-[#f4a10c] hover:bg-gradient-to-r from-gray-400 via-amber-500 to-amber-500 font-bold hover:text-white "
               activeClassName="post-a-job"
             >
               Post A Job
-            </NavLink> */}
-            {/* <NavLink
+            </Link> */}
+            <Link
               className="nav-link nav-link-ltr whitespace-nowrap rounded-2xl  "
               activeClassName="post-a-job"
-              to={`/${countryMappings2[region.toLowerCase()].url}/Recruitment/`}
+              href={`/${countryMappings2[region.toLowerCase()].url}/Recruitment/`}
             >
               <span className="font-bold  ">⬛ Recruitment </span>
-            </NavLink> */}
+            </Link>
           </div>
         </div>
       </nav>
