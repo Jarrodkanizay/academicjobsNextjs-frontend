@@ -1,24 +1,24 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Header from '@/components/Header'
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.scss";
+import Header from "@/components/Header";
 // import Footer from '@/components/Footer'
-import QueryProvider from '@/components/providers/query-provider'
+import QueryProvider from "@/components/providers/query-provider";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'pls copy from old',
-  description: 'pls copy from old',
-}
+  title: "pls copy from old",
+  description: "pls copy from old",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body className={inter.className}>
         <QueryProvider>
           <Header />
@@ -27,5 +27,5 @@ export default function RootLayout({
         </QueryProvider>
       </body>
     </html>
-  )
+  );
 }
