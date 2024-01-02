@@ -1,12 +1,16 @@
-import MyForm from "@/components/MyForm";
+
 import Image from "next/image";
-import { FaBeer } from "react-icons/fa";
 import Link  from "next/link";
 
 export default function Home() {
   
   return (
     <>
+    {/* <head>
+                <title>Diversity Statement Academic Jobs</title>
+                <meta name="description" content="Discover a diverse and inclusive academic job board site committed to equity and accessibility. Explore opportunities that value and embrace diversity. " />
+                <meta name="keywords" content="Diversity Statement Academic Jobs, AcademicJobs Diversity Statement" />
+            </head> */}
      <Image
         src="/about-us/Academic-jobs-About-AJ.jpg"
         width={1280}
@@ -21,28 +25,28 @@ export default function Home() {
    
      </div>
 
-      <main className="container">
-        <div className="prose mt-16">
+      <main className="container prose">
+        <div className="prose mt-8 mb-8">
           {/* <SubHead>About Us</SubHead> */}
           <h1>All the Best University Jobs</h1>
-          <h2>
+          <h2 className="mb-8">
             Find the best academic positions in your city, country and
             worldwide.
           </h2>
         </div>
-        <div className="prose text mt-8 grid grid-cols-3 gap-4 ">
-          <p className="mt-4">
+        <div className="prose text mt-8 ">
+          <p >
             Also listing administrative, staff and support roles in higher ed.
             Search for academic jobs, college careers and faculty positions
             online with AcademicJobs.com.
           </p>
-          <p className="mt-4">
+          <p >
             Welcome to AcademicJobs, the leading online platform for finding and
             applying for university and higher education jobs and positions.
             Whether you are looking for a faculty, research, administrative, or
             professional role, we have the right opportunity for you.
           </p>
-          <p className="mt-4">
+          <p >
             Academic Jobs was founded by a team of higher ed professionals who
             were frustrated with the lack of transparency and efficiency in the
             academic job market. Put simply, they thought that the old job
@@ -55,7 +59,7 @@ export default function Home() {
             their vacancies, reach a global talent pool, and manage their
             applications.
           </p>
-          <p className="mt-4">
+          <p >
             AcademicJobs has grown to become the most trusted and popular
             website for academic job seekers and employers worldwide. With over
             5000 universities and their jobs, and over 1 million registered
@@ -66,7 +70,7 @@ export default function Home() {
             students and postdocs to professors, lecturers, researchers and
             deans.
           </p>
-          <p className="mt-4">
+          <p >
             Our mission is to help you find your dream academic job or hire the
             best academic talent. We are committed to providing you with the
             most comprehensive and up-to-date information, the most advanced and
@@ -75,7 +79,7 @@ export default function Home() {
             community and promoting diversity, equity, and inclusion in higher
             education.
           </p>
-          <p className="mt-4">
+          <p >
             We hope you enjoy using AcademicJobs and find it useful for your
             academic career or recruitment needs. If you have any questions,
             feedback, or suggestions, please feel free to{" "}
@@ -85,7 +89,7 @@ export default function Home() {
             . We would love to hear from you!
           </p>
           <p>
-            <Link href="/about/term-of-use/" className="link link-aj">
+            <Link href="/about/terms-of-use/" className="link link-aj">
               Terms & Conditions
             </Link>
           </p>
