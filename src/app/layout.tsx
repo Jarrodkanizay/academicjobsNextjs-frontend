@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/Header";
-// import Footer from '@/components/Footer'
+import Footer from '@/components/Footer'
 import QueryProvider from "@/components/providers/query-provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,7 +23,7 @@ export default function RootLayout({
         <QueryProvider>
           <Header />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </QueryProvider>
       </body>
     </html>
