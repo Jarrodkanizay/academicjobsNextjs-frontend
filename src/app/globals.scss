@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '../css/default.scss';
+@import '../css/academic-theme.scss';
 
 @layer base {
   :root {
@@ -72,6 +74,3 @@
     --ring: 212.7 26.8% 83.9%;
   }
 }
-
-@import "../css/default.scss";
-@import "../css/academic-theme.scss";
