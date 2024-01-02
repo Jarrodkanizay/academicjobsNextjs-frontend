@@ -1,15 +1,18 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.scss";
-import Header from "@/components/Header";
-import Footer from '@/components/Footer'
-import QueryProvider from "@/components/providers/query-provider";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.scss';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import QueryProvider from '@/components/providers/query-provider';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "pls copy from old",
-  description: "pls copy from old",
+  title: {
+    default: "Academic Jobs the worlds' number 1 job board", //Default if nothing is set
+    template: '%s | Academic Jobs', //If the title is set on the page the %s will be replaced with the title
+  },
+  description: "Academic Jobs the worlds' number 1 job board",
 };
 
 export default function RootLayout({
