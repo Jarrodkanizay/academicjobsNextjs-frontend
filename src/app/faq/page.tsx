@@ -1,15 +1,12 @@
-import MyForm from "@/components/MyForm";
-import Image from "next/image";
-import { FaBeer } from "react-icons/fa";
-import Link  from "next/link";
+import Image from 'next/image';
+
+import Link from 'next/link';
 
 export default function Home() {
-  
   return (
     <>
-  
-    <main className="content-grid">
-    <div className="prose">
+      <main className="content-grid">
+        <div className="prose">
           {/* <Link
           className="link link-aj link-nav"
           to="https://www.academicjobs.com/"
@@ -20,7 +17,7 @@ export default function Home() {
             Most Frequently Asked Questions for Academic&nbsp;Jobs&nbsp;Online
           </h1>
 
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>What Are Academic Jobs?</h2>
             <p>
               Academic jobs are positions related to teaching, research, or
@@ -32,7 +29,7 @@ export default function Home() {
               casual staff.
             </p>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>How Can I Find Academic Jobs Online?</h2>
             <p>
               You can find academic jobs online by searching on academic job
@@ -47,21 +44,21 @@ export default function Home() {
               contacts.
             </p>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>What Are the Requirements for Academic Jobs?</h2>
             <p>
               The requirements for academic jobs vary depending on the type,
               level, and field of the position. Generally, academic jobs require
-              a minimum of a bachelors degree in a relevant discipline, but
-              many positions also require a masters degree, a doctoral degree,
-              or a postdoctoral qualification. Additionally, academic jobs may
+              a minimum of a bachelors degree in a relevant discipline, but many
+              positions also require a masters degree, a doctoral degree, or a
+              postdoctoral qualification. Additionally, academic jobs may
               require specific skills, such as teaching, research, writing,
               communication, or leadership skills. Some academic jobs may also
               require professional accreditation, registration, or certification
               in certain fields or areas.
             </p>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>How Can I Apply for Academic Jobs Online?</h2>
             <p>
               To apply for academic jobs online, you need to prepare a resume or
@@ -78,7 +75,7 @@ export default function Home() {
               specified in the job advertisement.
             </p>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>How Can I Prepare for an Academic Job Interview?</h2>
             <p>
               To prepare for an academic job interview, you need to research the
@@ -115,7 +112,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>What Are Some Tips for Succeeding in an Academic Career?</h2>
             <ul>
               <li>Pursue your passion and curiosity in your field of study</li>
@@ -136,7 +133,7 @@ export default function Home() {
               <li>Keep learning and growing</li>
             </ul>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>What Is an Example of an Academic Career?</h2>
             <p>
               There are many different types of careers in academia. In this
@@ -146,7 +143,7 @@ export default function Home() {
               such as admissions, academic counseling, and fundraising.
             </p>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>How Do You Become a Paid Academic?</h2>
             <p>
               Many academics take the following steps to get a career in
@@ -163,7 +160,7 @@ export default function Home() {
               <li>Enhance critical thinking.</li>
             </ul>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>What Are the Duties of a Professor?</h2>
             <p>Duties of a professor may include:</p>
             <ul>
@@ -181,7 +178,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>What Is the Highest Academic Job?</h2>
             <p>
               Professor. A professor is an academic who has been promoted to the
@@ -190,7 +187,7 @@ export default function Home() {
               number of years before being promoted to professors.
             </p>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>How Do You Work as an Academic?</h2>
             <p>What does an academic job involve?</p>
             <ul>
@@ -203,7 +200,7 @@ export default function Home() {
               <li>Writing up research and publishing the findings.</li>
             </ul>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>What Qualifications Do I Need to Be a Researcher?</h2>
             <p>
               You usually need a first or 2:1 (upper second class) degree in a
@@ -212,7 +209,7 @@ export default function Home() {
               a PhD.
             </p>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>How to Make Money Through Academic Writing?</h2>
             <p>Ways to make money through academic writing:</p>
             <ul>
@@ -226,7 +223,7 @@ export default function Home() {
               <li>iWritessays.com</li>
             </ul>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>What Not to Do as a Professor?</h2>
             <p>Things to avoid as a professor:</p>
             <ul>
@@ -240,7 +237,7 @@ export default function Home() {
               <li>Fail to teach.</li>
             </ul>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>Where Are Academics Paid the Most?</h2>
             <p>
               Here are four countries to explore based on data from various
@@ -253,7 +250,7 @@ export default function Home() {
               <li>Switzerland</li>
             </ul>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>Where Do Academics Make the Most Money?</h2>
             <p>
               Canada comes out on top for those newly entering the academic
@@ -263,7 +260,7 @@ export default function Home() {
               its northern neighbor, but also Italy, South Africa, and India.
             </p>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>Do All PhD Students Need to Teach?</h2>
             <p>
               All full-time PhD students should expect to teach from their
@@ -272,7 +269,7 @@ export default function Home() {
               significant part of the overall teaching timetable.
             </p>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>Which Subject Is Best for Lecturer?</h2>
             <p>
               Many students might not know which course is best for Lecturers.
@@ -281,7 +278,7 @@ export default function Home() {
               many more.
             </p>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>What Kind of Tutors Make the Most Money?</h2>
             <p>High paying tutoring jobs:</p>
             <ul>
@@ -295,7 +292,7 @@ export default function Home() {
               <li>Mandarin Tutor</li>
             </ul>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>Why Do You Want to Work in Academics?</h2>
             <p>
               At other jobs you might only get to work on something that truly
@@ -305,7 +302,7 @@ export default function Home() {
               positions have significantly less oversight.
             </p>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>What Are 4 Qualities of a Good Researcher?</h2>
             <p>The characteristics of a good researcher:</p>
             <ul>
@@ -316,7 +313,7 @@ export default function Home() {
               <li>Communication</li>
             </ul>
           </div>
-          <div className='bg-slate-100 rounded-xl px-4' >
+          <div className="bg-slate-100 rounded-xl px-4">
             <h2>What Is the Most Basic Skill Required of Any Researcher?</h2>
             <p>
               Communication skills involve active listening, observing, and
@@ -328,8 +325,7 @@ export default function Home() {
           </div>
           <div className="mb-16">&nbsp;</div>
         </div>
-    </main>
-          </>
-);
-
+      </main>
+    </>
+  );
 }

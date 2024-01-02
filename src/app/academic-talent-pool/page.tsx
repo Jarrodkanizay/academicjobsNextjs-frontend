@@ -1,14 +1,12 @@
-import MyForm from "@/components/MyForm";
-import Image from "next/image";
-import { FaBeer } from "react-icons/fa";
-import Link  from "next/link";
+import Image from 'next/image';
+
+import Link from 'next/link';
 
 export default function Home() {
-  
   return (
     <>
- {/* Page heading */}
- <div className="container mx-auto mt-8 mb-6">
+      {/* Page heading */}
+      <div className="container mx-auto mt-8 mb-6">
         <h1 className="text-3xl font-bold py-4 px-7 bg-[#f4a10c] text-white rounded-full shadow-xl mb-8">
           {/* Unlock Your Academic Potential!  */}
           Join Our Talent Pool Today!
@@ -106,7 +104,7 @@ export default function Home() {
                 <h2 className="card-title">Keynote Speaking</h2>
                 <p>
                   Access opportunities for keynote speaking at prestigious
-                  conferences and events{" "}
+                  conferences and events{' '}
                 </p>
               </div>
             </div>
@@ -168,9 +166,6 @@ export default function Home() {
           </ul>
         </div>
       </div>
-
-   
-          </>
-);
-
+    </>
+  );
 }
