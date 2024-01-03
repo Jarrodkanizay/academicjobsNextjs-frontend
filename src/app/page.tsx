@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import LogoAJ from '@/components/brand/LogoAJ';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -19,14 +20,15 @@ export default function myPage() {
     <main className="">
       <div className="flex flex-col items-center justify-center mb-32">
         <div className="h-[25vh] flex flex-col items-end justify-end">
-          <Image
+          <LogoAJ width={290} height={200} />
+          {/* <Image
             // src="https://academicjobs.s3.amazonaws.com/Image/_misc/academic-jobs-logo.png"
             src="/academicJobsLogo.png"
             alt="AcademicJobs Logo"
             width={1280}
             height={380}
-            className="pl-4 w-[20rem] mb-[1rem] "
-          />
+            className="pl-4 w-[20rem] mb-[1rem]"
+          /> */}
         </div>
 
         {/* Job Search Form */}
