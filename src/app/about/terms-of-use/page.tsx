@@ -4,22 +4,26 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  // title: 'About', //Option 1 replaces the %s in layout.tsx
-  title: {
-    absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
-  },
+  title: 'Terms and Conditions', //Option 1 replaces the %s in layout.tsx
+  // title: {
+  //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
+  // },
   description:
-    'Discover academic jobs at all universities today! Explore your next academic positions through visiting our higher ed jobs, with new academic jobs added daily.',
-  keywords: 'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
+    'Review our comprehensive terms and conditions to understand the guidelines and agreements for using our academic job board. Learn about the user rights.',
+  keywords: 'Terms and Conditions academicjobs, academicjobs Terms and Conditions',
 };
 export default function myPage() {
   return (
     <>
       <main className="content-grid">
         <div className="bg-white bg-opacity-70 p-4 text-start text-black text-base">
-          <strong className="block text-xl font-bold mb-2 mt-4">
-            Terms and Conditions
-          </strong>
+        <h1 className="text-amber-500 text-2xl mb-4 font-bold">Terms and Conditions</h1>
+                <p>
+                    Please read these Terms &amp; Conditions carefully before using
+                    AcademicJobs. AcademicJobs reserves the right to modify these Terms
+                    &amp; Conditions at any time.
+                </p>
+        
           <p>
             Welcome to AcademicJobs, the leading online platform for academic
             job seekers and employers. By using our website, you agree to comply
@@ -27,7 +31,7 @@ export default function myPage() {
             time without notice. Please read them carefully before you proceed.
           </p>
 
-          <strong className="block text-xl font-bold mb-2 mt-4">
+          <strong className="block text-xl font-bold mb-2 mt-10">
             About AcademicJobs
           </strong>
           <p>
