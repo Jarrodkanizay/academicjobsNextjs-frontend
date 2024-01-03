@@ -15,25 +15,34 @@ export const metadata: Metadata = {
 export default function myPage() {
   return (
     <>
-      <Image
-        src="/about-us/Academic-jobs-About-AJ.jpg"
-        width={1280}
-        height={380}
-        alt="About us - AcademicJobs - Academic Jobs - About"
-        className="w-full p-0 m-0"
-      />
-      <main className="content-grid">
+        <div className="hero max-h-fit bg-slate-200 py-8">
+        <div className="">
+          <div className="hero-content flex-col lg:flex-row-reverse ">
+            <Image
+              src="/about-us/about-aj.jpeg"
+              width={1280}
+              height={380}
+              className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
+              alt="AI Powered Recruitment Platform"
+            />
+            <div>
+              <h1 className="text-4xl font-bold text-aj">
+              About AJ: all the Best University Jobs
+              </h1>
+              <p className="py-6">
+              Find the best academic positions in your city, country and
+              worldwide.
+              </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <main className="content-grid p-8 ">
         <div className="full-width"></div>
 
         <main className="container prose">
-          <div className="prose mt-8 mb-8">
-            {/* <SubHead>About Us</SubHead> */}
-            <h1>All the Best University Jobs</h1>
-            <h2 className="mb-8">
-              Find the best academic positions in your city, country and
-              worldwide.
-            </h2>
-          </div>
+          
           <div className="prose text mt-8 ">
             <p>
               Also listing administrative, staff and support roles in higher ed.
