@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function myPage() {
   return (
     <>
-        <div className="hero max-h-fit bg-slate-200 py-8">
+      <div className="hero max-h-fit bg-slate-200 py-8">
         <div className="">
           <div className="hero-content flex-col lg:flex-row-reverse ">
             <Image
@@ -26,14 +26,13 @@ export default function myPage() {
               alt="AI Powered Recruitment Platform"
             />
             <div>
-              <h1 className="text-4xl font-bold text-aj">
-              About AJ: all the Best University Jobs
+              <h1 className="text-4xl">
+                About AJ: all the Best University Jobs
               </h1>
               <p className="py-6">
-              Find the best academic positions in your city, country and
-              worldwide.
+                Find the best academic positions in your city, country and
+                worldwide.
               </p>
-             
             </div>
           </div>
         </div>
@@ -42,7 +41,6 @@ export default function myPage() {
         <div className="full-width"></div>
 
         <main className="container prose">
-          
           <div className="prose text mt-8 ">
             <p>
               Also listing administrative, staff and support roles in higher ed.
