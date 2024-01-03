@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function myPage() {
   return (
-    <main className="">
+  
       <main className=" ">
         <div className="flex flex-col items-center justify-center mb-32">
           <div className="h-[25vh] flex flex-col items-end justify-end">
@@ -1153,6 +1153,6 @@ export default function myPage() {
           </div>
         </div>
       </main>
-    </main>
+
   );
 }

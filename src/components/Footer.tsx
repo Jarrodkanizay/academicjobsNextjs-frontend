@@ -10,18 +10,18 @@ const Footer = () => {
             <li className="text-white font-bold text-xl pb-1 ">Recruiters</li>
 
             <li>
-              <a className="footer-nav__link" href="/post-job/">
+              <a className="footer-nav__link" href="/job-ads">
                 Post a Job
               </a>
             </li>
             <li>
-              <Link href="/ai-recruitment/">AI Recruitment</Link>
+              <Link href="/ai-recruitment">AI Recruitment</Link>
             </li>
             <li>
-              <Link href="/about/">About AJ</Link>
+              <Link href="/about">About AJ</Link>
             </li>
             <li>
-              <Link href="/global/recruitment">Recruitment Assistance</Link>
+              <Link href="/recruitment">Recruitment Assistance</Link>
             </li>
           </ul>
         </div>
@@ -36,13 +36,13 @@ const Footer = () => {
               <Link href="/student-jobs-on-campus">Student Jobs on Campus</Link>
             </li>
             <li>
-              <Link href="/employers/">Find Employers</Link>
+              <Link href="/employers">Find Employers</Link>
             </li>
             <li>
-              <Link href="/academic-hub/">Academic Hub</Link>
+              <Link href="/academic-hub">Academic Hub</Link>
             </li>
             <li>
-              <Link href="/academic-talent-pool/">Talent Pool</Link>
+              <Link href="/academic-talent-pool">Talent Pool</Link>
             </li>
           </ul>
         </div>
@@ -55,14 +55,14 @@ const Footer = () => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/faq/">FAQ</Link>
+              <Link href="/faq">FAQ</Link>
             </li>
 
             <li>
-              <Link href="/sitemap/">Site Map</Link>
+              <Link href="/sitemap">Site Map</Link>
             </li>
             <li>
-              <Link href="/contact-us/">Contact Us</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </li>
           </ul>
         </div>
