@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 export default function myPage() {
   return (
-    <>
+    
       <main className="content-grid">
               <h1>
                 Diversity Statement
@@ -31,6 +31,6 @@ export default function myPage() {
                 protected category under federal, state and local law.
               </p>
       </main>
-    </>
+   
   );
 }
