@@ -83,8 +83,8 @@ export default function Header() {
             // className='w-48'
             src="/academic-jobs-logo.png"
             alt=""
-            width={98}
-            height={28}
+            width={200}
+            height={100}
           />
         )}
       </Link>
