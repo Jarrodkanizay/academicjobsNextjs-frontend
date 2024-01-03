@@ -88,7 +88,7 @@ export default function Header() {
           />
         )}
       </Link>
-      <NavItem url="/jobs" icon="/dotted-arrow.svg" navLink="Seek Jobs" />
+      {/* <NavItem url="/jobs" icon="/dotted-arrow.svg" navLink="Seek Jobs" /> */}
       <nav className="md:w-full">
         <div className="DESKTOP-MENU w-full justify-between  space-x-1 lg:flex">
           <div className="w-full columns-1 flex justify-start  md:items-center md:gap-1 ">
