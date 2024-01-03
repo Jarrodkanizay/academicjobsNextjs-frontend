@@ -51,7 +51,7 @@ export default function myPage() {
             <Image  
             width={1280}
                 height={380}
-              src="https://academicjobs.s3.amazonaws.com/Image/banner/Recruitment-Academic-Jobs.jpg"
+              src="https://academicjobs.s3.amazonaws.com/img/banner/Recruitment-Academic-Jobs.jpg"
               alt="Academic Employers"
               className="rounded-t-3xl md:rounded-3xl shadow-xl"
             />
@@ -618,7 +618,7 @@ export default function myPage() {
                 height={380}
                   alt="Job seeking bell notification icon"
                   className="rounded-3xl"
-                  src="https://academicjobs.s3.amazonaws.com/Image/_misc/SingleJobListingDemo.png"
+                  src="https://academicjobs.s3.amazonaws.com/img/_misc/SingleJobListingDemo.png"
                 />
               </div>
             </div>
@@ -629,7 +629,7 @@ export default function myPage() {
                 height={380}
                   alt="Employer attraction icon"
                   className="rounded-3xl"
-                  src="https://academicjobs.s3.amazonaws.com/Image/_misc/PriorityListingDemo.png"
+                  src="https://academicjobs.s3.amazonaws.com/img/_misc/PriorityListingDemo.png"
                 />
               </div>
             </div>
@@ -640,7 +640,7 @@ export default function myPage() {
                 height={380}
                   alt="Secure profile icon"
                   className="rounded-3xl"
-                  src="https://academicjobs.s3.amazonaws.com/Image/_misc/SocialPlusPriorityListingDemo.png"
+                  src="https://academicjobs.s3.amazonaws.com/img/_misc/SocialPlusPriorityListingDemo.png"
                 />
               </div>
             </div>
@@ -785,7 +785,7 @@ export default function myPage() {
                 height={380}
                   alt="academicjobs university logos"
                   className="seeker-icons "
-                  src="https://academicjobs.s3.amazonaws.com/Image/_misc/academicjobs-university-logos-min.png"
+                  src="https://academicjobs.s3.amazonaws.com/img/_misc/academicjobs-university-logos-min.png"
                 />
               </div>
             </div>
@@ -804,7 +804,7 @@ export default function myPage() {
                 height={380}
                     alt="Job seeking bell notification icon"
                     className="seeker-icons  p-4 pb-0 "
-                    src="https://academicjobs.s3.amazonaws.com/Image/banner/QUT-profile-min.png"
+                    src="https://academicjobs.s3.amazonaws.com/img/banner/QUT-profile-min.png"
                   />
                 </div>
               </div>
@@ -827,7 +827,7 @@ export default function myPage() {
         <picture className="bg-white min-w-full max-w-2xl mx-auto">
           <Image  width={1280}
                 height={380}
-            src="https://academicjobs.s3.amazonaws.com/Image/_misc/proudly-working-with.png"
+            src="https://academicjobs.s3.amazonaws.com/img/_misc/proudly-working-with.png"
             alt="job elephant logo"
           />
         </picture>
@@ -859,7 +859,7 @@ export default function myPage() {
         <div className=" rounded-3xl">
           <Image  width={1280}
                 height={380}
-            src="https://academicjobs.s3.amazonaws.com/Image/_misc/academicjobs-university-logos-min.png"
+            src="https://academicjobs.s3.amazonaws.com/img/_misc/academicjobs-university-logos-min.png"
             alt="academicjobs university logos"
             className=" rounded-3xl shadow-xl hidden"
           />
@@ -870,7 +870,7 @@ export default function myPage() {
           <Image  
           width={1280}
                 height={380}
-            src="https://academicjobs.s3.amazonaws.com/Image/_misc/proudly-working-with.png"
+            src="https://academicjobs.s3.amazonaws.com/img/_misc/proudly-working-with.png"
             alt="job elephant logo"
             className="mx-auto"
           />
@@ -880,7 +880,7 @@ export default function myPage() {
           <Image  
           width={1280}
                 height={380}
-            src="https://academicjobs.s3.amazonaws.com/Image/_misc/academicjobs-university-logos-min.png"
+            src="https://academicjobs.s3.amazonaws.com/img/_misc/academicjobs-university-logos-min.png"
             alt="academicjobs university logos"
             className="rounded-3xl shadow-xl hidden mx-auto"
           />
