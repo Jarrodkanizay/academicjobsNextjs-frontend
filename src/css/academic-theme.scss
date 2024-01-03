@@ -66,7 +66,10 @@ html {
     h6 {
       font-weight: 700;
     }
-    p {
+    p,
+    a,
+    li,
+    p a {
       font-size: 16px;
     }
     p.intro {
