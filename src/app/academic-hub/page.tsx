@@ -15,7 +15,7 @@ export default function myPage() {
    <>
     
     {/* Hero banner */}
-   
+   <main>
    <div className="hero max-h-fit bg-slate-200 py-8">
    <div className="container mx-auto">
      <div className="hero-content flex-col lg:flex-row-reverse">
@@ -263,6 +263,7 @@ export default function myPage() {
 
    
   </div>
+  </main>
   </> 
   );
 }

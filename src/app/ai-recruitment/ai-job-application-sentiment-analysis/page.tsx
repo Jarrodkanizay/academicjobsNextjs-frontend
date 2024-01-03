@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 export default function myPage() {
   return (
-    <div className="">
+    <main className="">
  
 
       <div className="hero max-h-fit bg-pink-100 py-8">
@@ -271,6 +271,6 @@ export default function myPage() {
           </Link>
         </p>
       </section>
-    </div>
+    </main>
   );
 }
