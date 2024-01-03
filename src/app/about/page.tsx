@@ -29,10 +29,10 @@ export default function myPage() {
               <h1 className="text-4xl">
                 About AJ: all the Best University Jobs
               </h1>
-              <p className="py-6">
-                Find the best academic positions in your city, country and
-                worldwide.
-              </p>
+              <h2 className="py-6">
+                Find the best academic positions in your city,
+                country and worldwide.
+              </h2>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function myPage() {
 
         <main className="container prose">
           <div className="prose text mt-8 ">
-            <p>
+            <p className="intro">
               Also listing administrative, staff and support roles in higher ed.
               Search for academic jobs, college careers and faculty positions
               online with AcademicJobs.com.
