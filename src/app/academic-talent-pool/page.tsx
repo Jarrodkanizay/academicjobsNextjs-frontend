@@ -75,6 +75,8 @@ export default function myPage() {
                 <Image
                   src="https://academicjobs.s3.amazonaws.com/img/_misc/Professional-Services-icon.png"
                   alt="Shoes"
+                  width={1280}
+                  height={380}
                   className="rounded-xl max-h-[100px] "
                 />
               </figure>
@@ -93,6 +95,8 @@ export default function myPage() {
                 <Image
                   src="https://academicjobs.s3.amazonaws.com/img/_misc/Client-Success-icon.png"
                   alt="Shoes"
+                  width={1280}
+                  height={380}
                   className="rounded-xl max-h-[100px] "
                 />
               </figure>
@@ -108,6 +112,8 @@ export default function myPage() {
                 <Image
                   src="https://academicjobs.s3.amazonaws.com/img/_misc/Internship-icon.png"
                   alt="Shoes"
+                  width={1280}
+                  height={380}
                   className="rounded-xl max-h-[100px] "
                 />
               </figure>
@@ -126,6 +132,8 @@ export default function myPage() {
                 <Image
                   src="https://academicjobs.s3.amazonaws.com/img/_misc/Corporate-Services-icon.png"
                   alt="Shoes"
+                  width={1280}
+                  height={380}
                   className="rounded-xl max-h-[100px] "
                 />
               </figure>
@@ -144,6 +152,8 @@ export default function myPage() {
                 <Image
                   src="https://academicjobs.s3.amazonaws.com/img/_misc/Client-Care-icon.png"
                   alt="Shoes"
+                  width={1280}
+                  height={380}
                   className="rounded-xl max-h-[100px] "
                 />
               </figure>
@@ -161,6 +171,8 @@ export default function myPage() {
                 <Image
                   src="https://academicjobs.s3.amazonaws.com/img/_misc/Innovation-icon.png"
                   alt="Shoes"
+                  width={1280}
+                  height={380}
                   className="rounded-xl max-h-[100px] "
                 />
               </figure>
