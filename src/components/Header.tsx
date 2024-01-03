@@ -1,23 +1,27 @@
-'use client'
-import React, { useState, useEffect, useRef } from 'react'
-import Image from 'next/image'
-import { usePathname } from 'next/navigation'
-import Link from 'next/link'
-import { countryMappings, countryMappings1, countryMappings2 } from '@/lib/data/data'
+'use client';
+import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import NavItem from '@/components/NavItem';
+import {
+  countryMappings,
+  countryMappings1,
+  countryMappings2,
+} from '@/lib/data/data';
 export default function Header() {
   // const navigate = useNavigate();
   // const dispatch = useDispatch();
-  const pathname = usePathname() 
+  const pathname = usePathname();
 
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [dropdown, setDropdown] = useState(false);
-  const region = "Global"
- 
-  
+  const region = 'Global';
+
   //alert(router.pathname)
   // const region = useSelector((state) => state.posts.region);
   // console.log(region)
-  const handleFormSubmit = () => { }
+  const handleFormSubmit = () => {};
   // const handleFormSubmit = () => {
   //   if (region !== "Global") {
   //     navigate("/jobs/", {
@@ -73,17 +77,18 @@ export default function Header() {
   //const location = useLocation();
   return (
     <div className="flex w-full items-center  justify-between md:justify-start gap-12 border-gray-400 py-8 px-8">
-      <Link href={`/${region}/`} className=''>
-        {pathname     === '/' || (
+      <Link href={`/${region}/`} className="">
+        {pathname === '/' || (
           <Image
             // className='w-48'
-            src='/academic-jobs-logo.png'
-            alt=''
+            src="/academic-jobs-logo.png"
+            alt=""
             width={98}
             height={28}
           />
         )}
       </Link>
+      <NavItem url="/jobs" icon="/dotted-arrow.svg" navLink="Seek Jobs" />
       <nav className="md:w-full">
         <div className="DESKTOP-MENU w-full justify-between  space-x-1 lg:flex">
           <div className="w-full columns-1 flex justify-start  md:items-center md:gap-1 ">
@@ -96,7 +101,7 @@ export default function Header() {
                     alt="Seek Jobs"
                     width={22}
                     height={22}
-                    style={{ height: "22px", marginLeft: "-8px" }}
+                    style={{ height: '22px', marginLeft: '-8px' }}
                   />
                   <span className="flex flex-col">
                     <span>Seek Jobs</span>
@@ -107,7 +112,6 @@ export default function Header() {
             <Link
               href={`/employers`}
               className="nav-link nav-link-ltr whitespace-nowrap text-gray-900"
-              
             >
               <span className="flex flex-row items-center justify-center gap-1 m-auto">
                 <Image
@@ -116,7 +120,7 @@ export default function Header() {
                   alt="Top Universities"
                   width={22}
                   height={22}
-                  style={{ height: "22px", marginLeft: "-8px" }}
+                  style={{ height: '22px', marginLeft: '-8px' }}
                 />
                 <span className="flex flex-col">
                   <span>Top Universities</span>
@@ -126,7 +130,6 @@ export default function Header() {
             <Link
               href="/academic-hub"
               className="nav-link nav-link-ltr whitespace-nowrap text-gray-900"
-            
             >
               <span className="flex flex-row items-center justify-center gap-1 m-auto">
                 <Image
@@ -135,7 +138,7 @@ export default function Header() {
                   alt="My Academic Hub"
                   width={22}
                   height={22}
-                  style={{ height: "22px", marginLeft: "-8px" }}
+                  style={{ height: '22px', marginLeft: '-8px' }}
                 />
                 <span className="flex flex-col">
                   <span>My Academic Hub</span>
@@ -186,7 +189,6 @@ export default function Header() {
                 </ul>
               </div>
             </Link> */}
-         
           </div>
           <div className=" w-[200px] grid items-center justify-center ">
             {/* <Link
@@ -198,7 +200,6 @@ export default function Header() {
             </Link> */}
             <Link
               className="nav-link nav-link-ltr whitespace-nowrap rounded-2xl  "
-             
               href={`/recruitment`}
             >
               <span className="font-bold  ">⬛ Recruitment </span>

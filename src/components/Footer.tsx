@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
-import Link  from "next/link";
+import Link from 'next/link';
+
 const Footer = () => {
   return (
     <footer className="py-4 px-7 md:mt-4 md:pb-10 bg-[#f4a10c] rounded-b-3xl rounded-t-lg shadow-xl pb-4 border-4 ">
