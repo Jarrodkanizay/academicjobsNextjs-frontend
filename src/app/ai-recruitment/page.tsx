@@ -37,7 +37,7 @@ export default function myPage() {
                 & Development (R&D) Industries, and many other sectors find the
                 right candidate for the job.
               </p>
-              <Link className="btn btn-aj" href="/ai-job-posting-optimization">
+              <Link className="btn btn-aj" href="/ai-recruitment/ai-job-posting-optimization">
                 Learn more about AI
               </Link>
             </div>
@@ -201,7 +201,7 @@ export default function myPage() {
               job.
             </p>
             <div className="card-actions justify-end">
-              <Link href="/ai-job-posting-optimization" className="btn btn-aj">
+              <Link href="/ai-recruitment/ai-job-posting-optimization" className="btn btn-aj">
                 Learn about AI Optimization
               </Link>
             </div>
@@ -234,7 +234,7 @@ export default function myPage() {
             </p>
             <div className="card-actions justify-end">
               <Link
-                href="/ai-job-application-sentiment-analysis"
+                href="/ai-recruitment/ai-job-application-sentiment-analysis"
                 className="btn btn-aj"
               >
                 Learn about AI Job Postings
@@ -263,7 +263,7 @@ export default function myPage() {
             Word, PDF & JPEG). Coming soon!
           </span>
           <div>
-            <Link href="/ai-resume-extraction" className="btn btn-sm btn-aj">
+            <Link href="/ai-recruitment/ai-resume-extraction" className="btn btn-sm btn-aj">
               More about Resume Parsing
             </Link>
           </div>
@@ -315,19 +315,19 @@ export default function myPage() {
         </h3>
         <p className="text-center p-4">
           <Link
-            href="/ai-job-posting-optimization"
+            href="/ai-recruitment/ai-job-posting-optimization"
             className="link link-warning hover:text-orange-500"
           >
             AI&nbsp;Job&nbsp;Listings
           </Link>{' '}
           <Link
-            href="/ai-job-application-sentiment-analysis"
+            href="/ai-recruitment/ai-job-application-sentiment-analysis"
             className="link link-warning hover:text-orange-500 mx-4"
           >
             AI&nbsp;Sentiment&nbsp;Analysis
           </Link>{' '}
           <Link
-            href="/ai-resume-extraction"
+            href="/ai-recruitment/ai-resume-extraction"
             className="link link-warning hover:text-orange-500"
           >
             AI&nbsp;Resume&nbsp;Extraction
