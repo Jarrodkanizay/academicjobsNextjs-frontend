@@ -1,4 +1,5 @@
 import Image from 'next/image';
+// import Link from 'next/link';
 
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -32,7 +33,7 @@ export default function myPage() {
         </h2>
         <p className="text-center">
           we want to create a community of academics who share similar passions,
-          interests an ideas. So that you have a space to connect, mtivate and
+          interests an ideas. So that you have a space to connect, motivate and
           ...
         </p>
         <p className="text-center">

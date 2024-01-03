@@ -3,5 +3,11 @@
   "scss.validate": true,
   "css.lint.unknownAtRules": "ignore",
   "scss.lint.unknownAtRules": "ignore",
-  "cSpell.words": ["DHSI", "neurodiversity", "Pasifika", "Robina"]
+  "cSpell.words": [
+    "Academicjobs",
+    "DHSI",
+    "neurodiversity",
+    "Pasifika",
+    "Robina"
+  ]
 }

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: 'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
 
-export default function Home() {
+export default function myPage() {
   return (
     <main className="">
       <main className=" ">
