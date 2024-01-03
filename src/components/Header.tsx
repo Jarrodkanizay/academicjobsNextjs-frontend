@@ -77,14 +77,14 @@ export default function Header() {
   //const location = useLocation();
   return (
     <div className="flex w-full items-center  justify-between md:justify-start gap-12 border-gray-400 py-8 px-8">
-      <Link href={`/${region}/`} className="">
+      <Link href='/' className="">
         {pathname === '/' || (
           <Image
             // className='w-48'
             src="/academic-jobs-logo.png"
             alt=""
-            width={98}
-            height={28}
+            width={200}
+            height={100}
           />
         )}
       </Link>
