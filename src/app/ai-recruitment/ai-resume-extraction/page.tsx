@@ -20,7 +20,9 @@ export default function myPage() {
       <div className="container mx-auto">
         <div className="hero-content flex-col lg:flex-row">
           <Image
-            src="/ai-resume-extraction/ai-resume-extraction.svg"
+           width="1280"
+           height="380"
+            src="/ai-resume-extraction/ai-resume-extraction.jpg"
             className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0 lg:mr-4"
             alt="AI Powered Recruitment Platform"
           />
@@ -53,7 +55,7 @@ export default function myPage() {
         into a structured format. This innovative approach not only saves
         valuable time and in combination with{" "}
         <Link
-          href="/ai-job-application-sentiment-analysis"
+          href="/ai-recruitment/ai-job-application-sentiment-analysis"
           className="link link-warning hover:text-orange-500"
         >
           AI&nbsp;Sentiment&nbsp;Analysis
@@ -174,7 +176,7 @@ export default function myPage() {
             that no critical information is missed. Additionally, the
             integration of{" "}
             <Link
-              href="/ai-job-application-sentiment-analysis"
+              href="/ai-recruitment/ai-job-application-sentiment-analysis"
               className="link link-warning hover:text-orange-500"
             >
               AI&nbsp;Sentiment&nbsp;Analysis
