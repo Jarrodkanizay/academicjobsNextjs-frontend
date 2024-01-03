@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function myPage() {
   return (
-    <>
+    <main>
       <div className="hero max-h-fit bg-slate-200 py-8">
         <div className="">
           <div className="hero-content flex-col lg:flex-row-reverse ">
@@ -37,10 +37,10 @@ export default function myPage() {
           </div>
         </div>
       </div>
-      <main className="content-grid p-8 ">
+      <div className="content-grid p-8 ">
         <div className="full-width"></div>
 
-        <main className="container prose">
+        <div className="container prose">
           <div className="prose text mt-8 ">
             <p className="intro">
               Also listing administrative, staff and support roles in higher ed.
@@ -115,8 +115,8 @@ export default function myPage() {
             </Link>
           </p> */}
           </div>
-        </main>
-      </main>
-    </>
+        </div>
+      </div>
+    </main>
   );
 }

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function myPage() {
   return (
     <>
-          <div className="">
+          <main className="">
   
       <div className="blurb text-left pb-4">
         {/* Hero banner */}
@@ -886,7 +886,7 @@ export default function myPage() {
           />
         </div>
       </section>
-    </div>
+    </main>
     </>
   );
 }

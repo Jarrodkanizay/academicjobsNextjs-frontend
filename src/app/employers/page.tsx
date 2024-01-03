@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 export default function myPage() {
   return (
-    <div className=" mx-auto">
+    <main className=" mx-auto">
    
 
       {/* Hero banner */}
@@ -1887,6 +1887,6 @@ export default function myPage() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
