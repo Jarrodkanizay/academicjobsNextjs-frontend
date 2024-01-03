@@ -1,8 +1,18 @@
 import Image from 'next/image';
 
 import Link from 'next/link';
+import type { Metadata } from 'next';
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: 'Academic Talent Pool', //Option 1 replaces the %s in layout.tsx
+  // title: {
+  //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
+  // },
+  description:
+    'Join our exclusive Talent Pool to connect and collaborate with top employers and academics worldwide. Sign up today to explore exciting job opportunities, gain industry exposure, and fast-track your career. Perfect for academics seeking to elevate their career paths.',
+  keywords: 'talent pool, career opportunities, job seekers, find academic networking, academic exposure, professional networking, industry exposure, employment, career growth, job application, talent database, professional development, sign up, global job market',
+};
+export default function myPage() {
   return (
     <>
       {/* Page heading */}

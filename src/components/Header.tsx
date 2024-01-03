@@ -105,9 +105,9 @@ export default function Header() {
               </div>
             </Link>
             <Link
-              href={`/${countryMappings2[region.toLowerCase()].url}/Employers/`}
+              href={`/employers`}
               className="nav-link nav-link-ltr whitespace-nowrap text-gray-900"
-              activeClassName="active"
+              
             >
               <span className="flex flex-row items-center justify-center gap-1 m-auto">
                 <Image
@@ -124,9 +124,9 @@ export default function Header() {
               </span>
             </Link>
             <Link
-              href="/academic-hub/"
+              href="/academic-hub"
               className="nav-link nav-link-ltr whitespace-nowrap text-gray-900"
-              activeClassName="active"
+            
             >
               <span className="flex flex-row items-center justify-center gap-1 m-auto">
                 <Image
@@ -198,8 +198,8 @@ export default function Header() {
             </Link> */}
             <Link
               className="nav-link nav-link-ltr whitespace-nowrap rounded-2xl  "
-              activeClassName="post-a-job"
-              href={`/${countryMappings2[region.toLowerCase()].url}/Recruitment/`}
+             
+              href={`/recruitment`}
             >
               <span className="font-bold  ">⬛ Recruitment </span>
             </Link>

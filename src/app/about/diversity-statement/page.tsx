@@ -1,11 +1,19 @@
-export default function Home() {
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  // title: 'About', //Option 1 replaces the %s in layout.tsx
+  title: {
+    absolute: '  Diversity Statement Academic Jobs', //Option 2 overrides the title in layout.tsx
+  },
+  description:
+    'Discover a diverse and inclusive academic job board site committed to equity and accessibility. Explore opportunities that value and embrace diversity.',
+  keywords: 'Diversity Statement Academic Jobs, AcademicJobs Diversity Statement',
+};
+export default function myPage() {
   return (
     <>
       <main className="content-grid">
-        <div className="relative">
-          <div className="bg-cover bg-center bg-repeat">
-            <div className="px-7 py-8 max-w-screen-xl mx-auto py-12 px-6 text-gray-700">
-              <h1 className="text-orange-500 text-2xl font-semibold">
+              <h1>
                 Diversity Statement
               </h1>
               <p>
@@ -22,9 +30,6 @@ export default function Home() {
                 neurodiversity, disability, veteran status, or any other
                 protected category under federal, state and local law.
               </p>
-            </div>
-          </div>
-        </div>
       </main>
     </>
   );

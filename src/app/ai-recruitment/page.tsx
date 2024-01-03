@@ -1,8 +1,18 @@
 import Image from 'next/image';
 
 import Link from 'next/link';
+import type { Metadata } from 'next';
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: 'Worlds Best AI Recruitment Platform', //Option 1 replaces the %s in layout.tsx
+  // title: {
+  //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
+  // },
+  description:
+    'Academic Jobs is the leading AI Recruitment Platform specializing in helping Higher Education Institutions, Research & Development (R&D) Industries, and many other sectors find candidates with our specialized AI tools that significantly enhance the job posting process..',
+  keywords: 'AI Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
+};
+export default function myPage() {
   return (
     <main>
       {/* Hero banner */}
