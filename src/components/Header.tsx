@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import LogoAJ from '@/components/brand/LogoAJ';
 import NavItem from '@/components/NavItem';
 import {
   countryMappings,
@@ -77,16 +78,8 @@ export default function Header() {
   //const location = useLocation();
   return (
     <div className="flex w-full items-center  justify-between md:justify-start gap-12 border-gray-400 py-8 px-8">
-      <Link href='/' className="">
-        {pathname === '/' || (
-          <Image
-            // className='w-48'
-            src="/academic-jobs-logo.png"
-            alt=""
-            width={200}
-            height={100}
-          />
-        )}
+      <Link href="/" className="">
+        {pathname === '/' || <LogoAJ width={200} height={100} />}
       </Link>
       {/* <NavItem url="/jobs" icon="/dotted-arrow.svg" navLink="Seek Jobs" /> */}
       <nav className="md:w-full">
