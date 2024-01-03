@@ -1,4 +1,4 @@
-export default function Home() {
+export default function myPage() {
   return (
     <>
       <main className="content-grid">

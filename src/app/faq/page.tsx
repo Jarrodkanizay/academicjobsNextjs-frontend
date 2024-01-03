@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import Link from 'next/link';
 
-export default function Home() {
+export default function myPage() {
   return (
     <>
       <main className="content-grid">
