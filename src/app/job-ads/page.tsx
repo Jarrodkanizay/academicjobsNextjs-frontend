@@ -21,8 +21,8 @@ export default function myPage() {
             <div className="container mx-auto">
               <div className="hero-content flex-col lg:flex-row-reverse">
                 <Image
-                  width={1280}
-                  height={380}
+                  width={800}
+                  height={534}
                   src="/job-ads/recruitment-post-a-job.jpg"
                   className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
                   alt="AI Powered Recruitment Platform"
@@ -116,7 +116,7 @@ export default function myPage() {
                   <div className="text-center mb-35"></div>
                   <div className="p-4 grid-cols-1 grid md:flex md:flex-wrap justify-center gap-3 max-w-screen-2xl mx-auto">
                     {/* Single Job Posting */}
-                    <div className="md:w-[24%] bg-[white]  p-4 mb-10  border border-gray-300 p-4 mb-4 shadow-xl">
+                    <div className="md:w-[24%] bg-[white] border border-gray-300 p-4 mb-4 shadow-xl">
                       <div className="bg-[#f4a10c] pt-2 mt-[-1rem] mx-[-1rem]">
                         {' '}
                       </div>
@@ -194,7 +194,7 @@ export default function myPage() {
                     </div>
                     {/* 5 Job Pack */}
                     {/* <div className="md:w-[24%] bg-gradient-to-t from-white to-amber-500  p-4 mb-10  border border-gray-300 p-4 mb-4  shadow-xl"> */}
-                    <div className="md:w-[24%] bg-[white]  p-4 mb-10  border border-gray-300 p-4 mb-4 shadow-xl">
+                    <div className="md:w-[24%] bg-[white]  p-4 mb-10  border border-gray-300 shadow-xl">
                       <div className="bg-[#f4a10c] pt-2 mt-[-1rem] mx-[-1rem]"></div>
                       <h3 className="font-bold text-2xl text-center text-[#f4a10c] pt-2">
                         5 Job Pack
@@ -206,7 +206,7 @@ export default function myPage() {
                         MOST POPULAR
                       </p>
                       <div className="flex flex-col mt-5">
-                        <div className="flex justify-between mb-5 items-center items-center">
+                        <div className="flex justify-between mb-5 items-center">
                           <p className="font-bold ">Basic Post</p>
                           <div className="flex items-center gap-3">
                             <p className="text-xl">$1,418</p>
@@ -256,7 +256,7 @@ export default function myPage() {
                       </div>
                     </div>
                     {/* 10 Job Pack */}
-                    <div className="md:w-[24%] bg-[white]  p-4 mb-10  border border-gray-300 p-4 mb-4  shadow-xl">
+                    <div className="md:w-[24%] bg-[white]  p-4 mb-10  border border-gray-300 shadow-xl">
                       <div className="bg-[#f4a10c] pt-2 mt-[-1rem] mx-[-1rem]">
                         {' '}
                       </div>
@@ -317,7 +317,7 @@ export default function myPage() {
                       </div>
                     </div>
                     {/* Unlimited Packs */}
-                    <div className="md:w-[24%] bg-[white]  p-4 mb-10  border border-gray-300 p-4 mb-4  shadow-xl">
+                    <div className="md:w-[24%] bg-[white]  p-4 mb-10  border border-gray-300 shadow-xl">
                       <div className="bg-[#f4a10c] pt-2 mt-[-1rem] mx-[-1rem]">
                         {' '}
                       </div>
