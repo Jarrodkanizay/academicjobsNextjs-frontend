@@ -1,27 +1,38 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+
+const countryRegion = 'World';
+
+function countryRegionPlural() {
+  return countryRegion.toLowerCase().endsWith('s')
+    ? `${countryRegion}'`
+    : `${countryRegion}'s`;
+}
+
 export const metadata: Metadata = {
-  title: 'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
+  title:
+    'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
     'With our advanced AI technologies that greatly improve the job posting process, Academic Jobs is the top AI recruitment platform, enabling higher education institutions, the research and development (R&D) industry, and many other industries discover people. ',
-  keywords: 'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
+  keywords:
+    'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
 };
 export default function myPage() {
   return (
     <>
-        <main>
+      <main>
         {/* Hero banner */}
         <div
           className="hero h-screen max-h-[480px] md:max-h-[400px]"
           style={{
             backgroundImage:
-              "url(/student-jobs-on-campus/students-working-on-campus.jpg)",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
+              'url(/student-jobs-on-campus/students-working-on-campus.jpg)',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
           }}
         >
           <div className="hero-overlay bg-opacity-70"></div>
@@ -68,78 +79,12 @@ export default function myPage() {
               </div>
             </Link>
           </div>
-          {/* Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-            {/* Card 1 */}
-            <div className="card bg-base-100 shadow-xl">
-              <div className="card-body">
-                <h2 className="card-title">
-                  Financial Support Through Campus Jobs
-                </h2>
-                <p>
-                  Ease Your College Expenses with Academic Student Jobs.
-                  On-campus roles offer a practical solution to managing your
-                  finances with steady income to help reduce student debt,
-                  making your academic journey more enjoyable.
-                </p>
-              </div>
-              <figure>
-                <Image   width="1280"
-           height="380"
-                  src="/student-jobs-on-campus/financial-support-with-campus-jobs.jpg"
-                  alt="Support Yourself with Student Campus Jobs"
-                />
-              </figure>
-            </div>{" "}
-            {/* Card 2 */}
-            <div className="card bg-base-100 shadow-xl">
-              <div className="card-body">
-                <h2 className="card-title">
-                  Personal Growth with On-Campus Employment
-                </h2>
-                <p>
-                  Student Jobs are more than a paycheck, Develop Skills and Grow
-                  Personally with opportunities for personal development.
-                  Enhance communication skills, learn time management, and
-                  prepare yourself for the professional world.
-                </p>
-              </div>
-              <figure>
-                <Image   width="1280"
-           height="380"
-                  src="/student-jobs-on-campus/personal-growth-with-campus-jobs.jpg"
-                  alt="Grow as an individual with On-Campus Employment"
-                />
-              </figure>
-            </div>{" "}
-            {/* Card 3 */}
-            <div className="card bg-base-100 shadow-xl">
-              <div className="card-body">
-                <h2 className="card-title">
-                  Building Relationships through Campus Work
-                </h2>
-                <p>
-                  Forge Lasting Connections working on campus. Build
-                  relationships and expand your network. Connect with peers,
-                  mentors, and professionals, laying the foundation for future
-                  career opportunities.
-                </p>
-              </div>
-              <figure>
-                <Image   width="1280"
-           height="380"
-                  src="/student-jobs-on-campus/networking-with-campus-jobs.jpg"
-                  alt="Networking & Build Relationships with Campus Work"
-                />
-              </figure>
-            </div>{" "}
-            {/* End Cards */}
-          </div>
           {/* Diverse Roles Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
-              <Image   width="1280"
-           height="380"
+              <Image
+                width={2000}
+                height={534}
                 src="/student-jobs-on-campus/diverse-student-jobs.jpg"
                 alt="Choose from diverse campus roles"
                 className="w-full lg:max-w-lg rounded-xl m-6"
@@ -170,8 +115,9 @@ export default function myPage() {
           {/* Flexible Part-Time Opportunities for Students Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
-              <Image   width="1280"
-           height="380"
+              <Image
+                width={2000}
+                height={534}
                 src="/student-jobs-on-campus/flexible-work-hours.jpg"
                 alt="Work Part-Time with Flexible Opportunities for Students"
                 className="w-full lg:max-w-lg rounded-xl m-6"
@@ -201,11 +147,11 @@ export default function myPage() {
         <div className="bg-sky-200 mb-8 mt-16 py-8 px-4">
           <div className="container mx-auto">
             <h2 className="text-3xl text-center font-bold mb-8 text-sky-700">
-              World's #1 Job Board for Student Jobs on Campus{" "}
+              {countryRegionPlural()} #1 Job Board for Student Jobs on Campus{' '}
             </h2>
             <div className="text-col-2">
               <p className="mb-4">
-                Academic Jobs stands out as the World's premier
+                Academic Jobs stands out as the {countryRegionPlural()} premier
                 platform for Student Jobs on Campus, celebrated for linking
                 students with valuable on-campus employment opportunities. Our
                 platform is meticulously crafted to meet the specific needs of
@@ -216,8 +162,8 @@ export default function myPage() {
                 roles. Whether it's part-time positions or work-study
                 opportunities, we connect you with roles that enhance your
                 academic experience and provide practical work skills. Opt for
-                Academic Jobs for unrivaled access to the{" "}
-                World's most sought-after student positions in
+                Academic Jobs for unrivaled access to the{' '}
+                {countryRegionPlural()} most sought-after student positions in
                 academia.
               </p>
             </div>
@@ -227,8 +173,9 @@ export default function myPage() {
           {/* Gain Real-World Experience in Academic Settings Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
-              <Image   width="1280"
-           height="380"
+              <Image
+                width={2000}
+                height={534}
                 src="/student-jobs-on-campus/real-world-experience.jpg"
                 alt="Experience the Real-World in Academic Settings"
                 className="w-full lg:max-w-lg rounded-xl m-6"
@@ -256,8 +203,9 @@ export default function myPage() {
           {/* Build Your Network with On-Campus Employment Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
-              <Image   width="1280"
-           height="380"
+              <Image
+                width={2000}
+                height={534}
                 src="/student-jobs-on-campus/networking-with-campus-jobs.jpg"
                 alt="Build Your Network with On-Campus Employment"
                 className="w-full lg:max-w-lg rounded-xl m-6"
@@ -319,7 +267,7 @@ export default function myPage() {
         </div>
         <section>
           <h3 className="container mx-auto text-center py-8 px-4">
-            Want opportunities delivered to you?{" "}
+            Want opportunities delivered to you?{' '}
             <Link href="/academic-talent-pool" className="btn btn-aj">
               Join our Talent Pool
             </Link>
