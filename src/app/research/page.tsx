@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -21,7 +22,7 @@ export default function myPage() {
 
               <p className='pt-4'>Academic Researcher jobs create original and innovative research in their fields of interest, often as part of a larger project or team. Academic Researchers typically have a PhD or equivalent qualification, as well as relevant skills and experience in data analysis, methodology, and communication. Academic Researcher jobs may also be involved in teaching, supervision, and outreach activities, depending on their role and contract type.</p>
 
-              <p className='pt-4'>View Research Jobs FAQ</p>
+              <Link href="/research/faq" className='pt-4 text-sky-500'>View Research Jobs FAQ</Link>
              
       </main>
    
