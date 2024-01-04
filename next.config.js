@@ -2,6 +2,14 @@
 const nextConfig = {
   images: {
     domains: ['academicjobs.s3.amazonaws.com', 'res.cloudinary.com'],
+    // remotePatterns: [
+    //   {
+    //     protocol: 'https',
+    //     hostname: 'academicjobs.s3.amazonaws.com',
+    //     port: '',
+    //     pathname: '/img/*',
+    //   },
+    // ],
   },
 };
 
