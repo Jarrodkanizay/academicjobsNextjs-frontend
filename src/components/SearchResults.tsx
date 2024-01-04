@@ -6,7 +6,7 @@ import axios from 'axios';
 interface SearchResultsProps {
   q: {
     q?: string; 
-    l?: string; // Assuming l is a string, adjust the type as needed
+    l?: string; 
   };
 }
 export default function SearchResults({ q }: SearchResultsProps) {
@@ -25,11 +25,7 @@ export default function SearchResults({ q }: SearchResultsProps) {
     },
     enabled: q && Object.keys(q).length > 0,
   });
-  useEffect(() => {
-    // If you need to perform any side-effects on successful data retrieval
-    // For example, updating the UI state
-    // You can do that here
-  }, [data, isSuccess]);
+
   let content;
    function nextPage() {
      console.log('nextPage');

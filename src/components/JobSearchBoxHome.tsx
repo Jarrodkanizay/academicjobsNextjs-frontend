@@ -7,7 +7,7 @@ import { countryMappings, countryMappings1 } from '@/lib/data/data';
 export default function JobSearchBox() {
   const keyWordRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
-  let region = 'Global1';
+  let region = 'Australia';
   const { setRegion, setSearchJobCriteria } = useStore();
   const handleFormSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -34,10 +34,7 @@ export default function JobSearchBox() {
         const lValue = (countryMappings1 as any)[
           (countryMappings as any)[country.toLowerCase()]
         ]?.searchLocation;
-        
         router.push(`/find-jobs?q=${qValue}&l=${lValue}`);
-
-
       } catch (error) {
         console.log('Error:', error);
       }
@@ -64,17 +61,22 @@ export default function JobSearchBox() {
       </div>
       <h2
         className="underline text-[#f4a10c]"
-        onClick={() => {
-          const a: { q?: string } = {};
-          if (keyWordRef.current) a.q = keyWordRef.current.value.trim();
-          setSearchJobCriteria(a);
+        onClick={async (event: React.FormEvent) => {
+          event.preventDefault();
+          const a: { q?: string; l?: string } = {};
+          if (keyWordRef.current && keyWordRef.current.value.trim()) {
+            a.q = keyWordRef.current.value.trim();
+          }
           setRegion('Global');
-          router.push(`/find-jobs`);
+          const params = new URLSearchParams({
+            l: '',
+            q: encodeURIComponent(a.q || ''),
+          });
+          router.push(`/find-jobs?${params.toString()}`);
         }}
       >
         Or Search Globally
       </h2>
     </form>
   );
-};
-
+}
