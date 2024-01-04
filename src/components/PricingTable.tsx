@@ -68,8 +68,8 @@ invoice for $${formatNumberWithCommas(price)}.
         {/* Pricing Card 1 */}
         <div className="w-full flex-1 mt-8 mb-8 p-8 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:rounded-r-none">
           <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
-            <Image  width="1280"
-            height="380"
+            <Image  width="150"
+            height="150"
             alt=""
               src="https://res.cloudinary.com/williamsondesign/abstract-1.jpg"
              
@@ -91,32 +91,32 @@ invoice for $${formatNumberWithCommas(price)}.
           </div>
           <ul className="mb-7 font-medium text-gray-500">
             <li className="flex text-lg mb-2">
-              <Image  width="1280"
-            height="380"
+              <Image  width="20"
+            height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
               <span className="ml-3">
                 30 day single<span className="text-black"> job listing</span>
               </span>
             </li>
             <li className="flex text-lg mb-2">
-              <Image  width="1280"
-            height="380"
+              <Image  width="20"
+            height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
               <span className="ml-3">
                 <span className="text-black">Free </span>employer account
               </span>
             </li>
             <li className="flex text-lg mb-2">
-              <Image  width="1280"
-            height="380"
+              <Image  width="20"
+            height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
               <span className="ml-3">
                 Ad<span className="text-black"> performance metrics</span>
               </span>
             </li>
             <li className="flex text-lg mb-2">
-              <Image  width="1280"
-            height="380"
+              <Image  width="20"
+            height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
               <span className="ml-3">
                 Edit job postings
@@ -139,8 +139,8 @@ invoice for $${formatNumberWithCommas(price)}.
         {/* Pricing Card 2 */}
         <div className="w-full flex-1 p-8 shadow-xl rounded-3xl bg-gray-900 text-gray-400 sm:w-96 lg:w-full lg:mt-0">
           <div className="mb-8 pb-8 flex items-center border-b border-gray-600">
-            <Image  width="1280"
-            height="380"
+            <Image  width="150"
+            height="150"
             alt=""
               src="https://res.cloudinary.com/williamsondesign/abstract-2.jpg"
              
@@ -162,16 +162,16 @@ invoice for $${formatNumberWithCommas(price)}.
           </div>
           <ul className="mb-10 font-medium text-xl">
             <li className="flex mb-6">
-              <Image  width="1280"
-            height="380"
+              <Image  width="20"
+            height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
               <span className="ml-3">
                 30 day<span className="text-white"> job listings</span>
               </span>
             </li>
             <li className="flex mb-6">
-              <Image  width="1280"
-            height="380"
+              <Image  width="20"
+            height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
               <span className="ml-3">
                 Edit job postings
@@ -179,16 +179,16 @@ invoice for $${formatNumberWithCommas(price)}.
               </span>
             </li>
             <li className="flex mb-6">
-              <Image  width="1280"
-            height="380"
+              <Image  width="20"
+            height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
               <span className="ml-3">
                 Job credits<span className="text-white"> do not expire</span>
               </span>
             </li>
             <li className="flex">
-              <Image  width="1280"
-            height="380"
+              <Image  width="20"
+            height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-white.svg" />
               <span className="ml-3">
                 Save<span className="text-white"> 10%</span>
@@ -209,8 +209,8 @@ invoice for $${formatNumberWithCommas(price)}.
         {/* Pricing Card 3 */}
         <div className="w-full flex-1 mt-8 p-8 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:rounded-l-none">
           <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
-            <Image  width="1280"
-            height="380"
+            <Image  width="150"
+            height="150"
             alt=""
               src="https://res.cloudinary.com/williamsondesign/abstract-3.jpg"
              
@@ -232,16 +232,16 @@ invoice for $${formatNumberWithCommas(price)}.
           </div>
           <ul className="mb-7 font-medium text-gray-500">
             <li className="flex text-lg mb-2">
-              <Image  width="1280"
-            height="380"
+              <Image  width="20"
+            height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
               <span className="ml-3">
                 30 day single<span className="text-black"> job listings</span>
               </span>
             </li>
             <li className="flex text-lg mb-2">
-              <Image  width="1280"
-            height="380"
+              <Image  width="20"
+            height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
               <span className="ml-3">
                 Edit job postings
@@ -249,16 +249,16 @@ invoice for $${formatNumberWithCommas(price)}.
               </span>
             </li>
             <li className="flex text-lg mb-2">
-              <Image  width="1280"
-            height="380"
+              <Image  width="20"
+            height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
               <span className="ml-3">
                 Job credits<span className="text-black"> do not expire</span>
               </span>
             </li>
             <li className="flex text-lg">
-              <Image  width="1280"
-            height="380"
+              <Image  width="20"
+            height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
               <span className="ml-3">
                 Save <span className="text-black"> 20%</span>
