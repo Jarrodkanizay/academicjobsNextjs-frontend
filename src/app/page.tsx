@@ -155,7 +155,7 @@ export default function myPage() {
       </div>
 
       {/* Main Content Panel */}
-      <div id="section" className="mt-[-1rem] bg-slate-100">
+      <div id="section" className="mt-[-1rem]">
         <div className="bg-slate-200">
       <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
       <h1 className="text-3xl font-normal text-right text-gray-400 m-0">
@@ -187,7 +187,7 @@ export default function myPage() {
             </div>
           </div>
           </div>
-        <div className="max-w-screen-xl mx-auto">
+        <div className="content-grid mx-auto">
           
         
           {/* <p className="px-7 text-center mt-5">

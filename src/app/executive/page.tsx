@@ -3,23 +3,23 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: '  Academic Professor Jobs', //Option 2 overrides the title in layout.tsx
+    absolute: '  Academic Executive Jobs', //Option 2 overrides the title in layout.tsx
   },
   description:
-    'Academic professor jobs can cover a wide range of topics and disciplines, depending on the field of specialization and the institution. ',
-  keywords: 'Academic professor Jobs. professor positions',
+    'As an academic executive, you will have the opportunity to work with talented and dedicated staff, students, alumni, and stakeholders, contribute to the vision and mission.  ',
+  keywords: 'Academic Executive Jobs, Executive AcademicJobs',
 };
 export default function myPage() {
   return (
     
       <main className="content-grid">
               <h1>
-              Academic Lecturer Jobs
+              Academic Executive Jobs
               </h1>
               <p>
-              See all available professor job opportunities on AcademicJobs right now from reputable colleges. Our institutions are always looking for the best professors, and through our academic platform, academics may apply for amazing worldwide academic professor jobs.</p>
+              View all of the executive jobs that respectable universities now have available on AcademicJobs. Our academic institutions are constantly seeking the greatest executives, and academics may apply for fantastic global academic executive positions through our website.</p>
 
-              <p className='pt-4'>Academic professor jobs are professor of law, professor of computer science, professor of practice, professor of chemistry, professor of engineering, and other professor jobs. Academic professor jobs deliver courses, supervising students and staff, conducting original and impactful research, publishing in academic journals and books, applying for grants and funding, collaborating with other researchers and institutions, engaging with industry and community partners, and contributing to the academic governance and administration.</p>
+              <p className='pt-4'>Academic Executive Jobs contain leadership, management, and direction for a specific academic unit or function within a higher education institution. Academic Executive Jobs set the goals and objectives of the unit or function, overseeing the academic programs and activities, ensuring the quality and standards of teaching and research, supporting and developing the staff and students, and managing the financial and human resources.</p>
 
              
       </main>
