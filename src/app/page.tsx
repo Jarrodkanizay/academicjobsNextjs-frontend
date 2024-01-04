@@ -155,31 +155,17 @@ export default function myPage() {
       </div>
 
       {/* Main Content Panel */}
-      <div id="section" className="mt-[-1rem] px-5">
-        <div className="max-w-screen-xl mx-auto">
-          <div className="blurb text-left py-6 ">
-            <h1 className="font-bold text-lg md:text-3xl py-4 px-6 bg-[#f4a10c] text-white rounded-full mb-6 shadow-xl border-4">
-              ACADEMIC JOBS: Academic, research and science positions locally
-              and globally
-            </h1>
-            <div className="newLine mb-4">
-              <p className="font-semibold"></p>
-              <p className="font-semibold"></p>
-            </div>
-            {/* <p className="px-7 mb-4">
-              Find the best academic positions and administrative jobs in higher
-              ed. Search for academic jobs, college careers and faculty
-              positions online. Seek and apply for lecturer, research, uni admin
-              and senior academic jobs in every university in your country or
-              globally.
-            </p>
-            <p className="px-7">
-              Whether you are a professor, researcher, lecturer, or
-              administrator, you can find the latest opportunities in higher
-              education on academic jobs online.
-            </p>
-            <p className="px-7 mb-4"></p> */}
-            <p className="px-7 mb-4">
+      <div id="section" className="mt-[-1rem] bg-slate-100">
+        <div className="bg-slate-200">
+      <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
+      <h1 className="text-3xl font-normal text-right text-gray-400 m-0">
+              <span className="text-6xl font-bold  text-right text-[#f4a10c] pb-4">ACADEMIC&nbsp;JOBS:</span> Academic, research &&nbsp;science positions locally
+              & globally
+              </h1>
+              
+            <div>
+            
+            <p className="px-7 mb-4 mt-1">
               Discover top-tier faculty and administrative roles in the world of
               higher education. Begin your search for university academic jobs,
               college faculty positions, and administrative opportunities in
@@ -195,7 +181,15 @@ export default function myPage() {
               sector through our comprehensive online job board. Find your next
               academic job now!
             </p>
+              {/* <Link className="btn btn-aj mx-6 mt-6" href="/ai-recruitment/ai-job-posting-optimization">
+                Join Talent Pool
+              </Link> */}
+            </div>
           </div>
+          </div>
+        <div className="max-w-screen-xl mx-auto">
+          
+        
           {/* <p className="px-7 text-center mt-5">
             <Link
               className="link  text-[#f4a10c] font-bold text-2xl hover:text-orange-500"
