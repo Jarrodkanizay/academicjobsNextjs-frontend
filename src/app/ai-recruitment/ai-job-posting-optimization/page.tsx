@@ -22,6 +22,7 @@ export default function myPage() {
           <Image
             width="1280"
             height="380"
+           
             src="/ai-jop-posting/ai-job-listing-automation.jpg"
             className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0 lg:mr-4"
             alt="AI Powered Job Posting Automation"

@@ -14,14 +14,14 @@ export default function myPage() {
     
       <main className="content-grid">
               <h1>
-              Academic Lecturer Jobs
+              Academic Research Jobs
               </h1>
               <p>
-              Find all jobs for lecturers from top ranking universities on AcademicJobs today. Our universities are looking for the best lecturers, and our academic jobs platform allows lecturers to seek great careers in lecturing around the world.</p>
+              Browse all Research positions from well regarded universities right now on AcademicJobs. The top researchers are sought after by our universities, and academics may pursue fantastic global academic researcher jobs through our academic job platform.</p>
 
-              <p className='pt-4'>Lecturers can find university jobs online, compare competitive salaries, generous benefits, and supportive work environments.</p>
+              <p className='pt-4'>Academic Researcher jobs create original and innovative research in their fields of interest, often as part of a larger project or team. Academic Researchers typically have a PhD or equivalent qualification, as well as relevant skills and experience in data analysis, methodology, and communication. Academic Researcher jobs may also be involved in teaching, supervision, and outreach activities, depending on their role and contract type.</p>
 
-              <p className='pt-4'>Sign up as a ‘Global Academic’ to get an academic ranking, and to get the opportunity to collaborate with national and international partners, to work with some of the best minds in your discipline, and access world-class facilities and resources.</p>
+              <p className='pt-4'>View Research Jobs FAQ</p>
              
       </main>
    
