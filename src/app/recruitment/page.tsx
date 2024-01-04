@@ -2,13 +2,13 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 export const metadata: Metadata = {
-  title: 'Contact Us', //Option 1 replaces the %s in layout.tsx
+  title: 'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
-    'Contact our knowledgeable team today for assistance and information on our number 1 academic job board site in higher education and academia. ',
-  keywords: 'Contact Us Academicjobs, Contact Academic Jobs, Academicjobs Contact',
+    'With our advanced AI technologies that greatly improve the job posting process, Academic Jobs is the top AI recruitment platform, enabling higher education institutions, the research and development (R&D) industry, and many other industries discover people. ',
+  keywords: 'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
 };
 export default function myPage() {
   return (
@@ -231,7 +231,7 @@ export default function myPage() {
                 best customer service and support.
               </p>
               <div className="card-actions justify-end">
-                <Link href="/post-job" className="btn btn-aj">
+                <Link href="/job-ads" className="btn btn-aj">
                   Check out our prices
                 </Link>
               </div>

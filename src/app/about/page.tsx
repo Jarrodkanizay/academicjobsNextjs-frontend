@@ -14,8 +14,8 @@ export const metadata: Metadata = {
 
 export default function myPage() {
   return (
-    <>
-        <div className="hero max-h-fit bg-slate-200 py-8">
+    <main>
+      <div className="hero max-h-fit bg-slate-200 py-8">
         <div className="">
           <div className="hero-content flex-col lg:flex-row-reverse ">
             <Image
@@ -26,25 +26,23 @@ export default function myPage() {
               alt="AI Powered Recruitment Platform"
             />
             <div>
-              <h1 className="text-4xl font-bold text-aj">
-              About AJ: all the Best University Jobs
+              <h1 className="text-4xl">
+                About AJ: all the Best University Jobs
               </h1>
-              <p className="py-6">
-              Find the best academic positions in your city, country and
-              worldwide.
-              </p>
-             
+              <h2 className="py-6">
+                Find the best academic positions in your city,
+                country and worldwide.
+              </h2>
             </div>
           </div>
         </div>
       </div>
-      <main className="content-grid p-8 ">
+      <div className="content-grid p-8 ">
         <div className="full-width"></div>
 
-        <main className="container prose">
-          
+        <div className="container prose">
           <div className="prose text mt-8 ">
-            <p>
+            <p className="intro">
               Also listing administrative, staff and support roles in higher ed.
               Search for academic jobs, college careers and faculty positions
               online with AcademicJobs.com.
@@ -117,8 +115,8 @@ export default function myPage() {
             </Link>
           </p> */}
           </div>
-        </main>
-      </main>
-    </>
+        </div>
+      </div>
+    </main>
   );
 }

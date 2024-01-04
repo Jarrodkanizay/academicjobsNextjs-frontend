@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import LogoAJ from '@/components/brand/LogoAJ';
 import NavItem from '@/components/NavItem';
 import {
   countryMappings,
@@ -77,74 +78,28 @@ export default function Header() {
   //const location = useLocation();
   return (
     <div className="flex w-full items-center  justify-between md:justify-start gap-12 border-gray-400 py-8 px-8">
-      <Link href={`/${region}/`} className="">
-        {pathname === '/' || (
-          <Image
-            // className='w-48'
-            src="/academic-jobs-logo.png"
-            alt=""
-            width={98}
-            height={28}
-          />
-        )}
+      <Link href="/" className="">
+        {pathname === '/' || <LogoAJ width={200} height={100} />}
       </Link>
-      {/* <NavItem url="/jobs" icon="/dotted-arrow.svg" navLink="Seek Jobs" /> */}
       <nav className="md:w-full">
         <div className="DESKTOP-MENU w-full justify-between  space-x-1 lg:flex">
           <div className="w-full columns-1 flex justify-start  md:items-center md:gap-1 ">
-            <Link href="/jobs/" passHref>
-              <div className="nav-link nav-link-ltr whitespace-nowrap text-gray-900">
-                <span className="flex flex-row items-center justify-center gap-1 m-auto">
-                  <Image
-                    className="academic-award"
-                    src="/dotted-arrow.svg"
-                    alt="Seek Jobs"
-                    width={22}
-                    height={22}
-                    style={{ height: '22px', marginLeft: '-8px' }}
-                  />
-                  <span className="flex flex-col">
-                    <span>Seek Jobs</span>
-                  </span>
-                </span>
-              </div>
-            </Link>
-            <Link
-              href={`/employers`}
-              className="nav-link nav-link-ltr whitespace-nowrap text-gray-900"
-            >
-              <span className="flex flex-row items-center justify-center gap-1 m-auto">
-                <Image
-                  className="academic-award"
-                  src="/upward-arrow.svg"
-                  alt="Top Universities"
-                  width={22}
-                  height={22}
-                  style={{ height: '22px', marginLeft: '-8px' }}
-                />
-                <span className="flex flex-col">
-                  <span>Top Universities</span>
-                </span>
-              </span>
-            </Link>
-            <Link
-              href="/academic-hub"
-              className="nav-link nav-link-ltr whitespace-nowrap text-gray-900"
-            >
-              <span className="flex flex-row items-center justify-center gap-1 m-auto">
-                <Image
-                  className="academic-award"
-                  src="/network-icon.svg"
-                  alt="My Academic Hub"
-                  width={22}
-                  height={22}
-                  style={{ height: '22px', marginLeft: '-8px' }}
-                />
-                <span className="flex flex-col">
-                  <span>My Academic Hub</span>
-                </span>
-              </span>
-            </Link>
+            <NavItem
+              url="/jobs"
+              icon="/dotted-arrow.svg"
+              navLink="Seek Jobs"
+              forceClass="" //this is optional
+            />
+            <NavItem
+              url="/employers"
+              icon="/upward-arrow.svg"
+              navLink="Top Universities"
+            />
+            <NavItem
+              url="/academic-hub"
+              icon="/network-icon.svg"
+              navLink="My Academic Hub"
+            />
             {/* <Link
               className={`p-2  md:w-52  dropdown-content z-[1] menu px-4 py-2  bg-base-100 rounded-box w-31 } `}
               
@@ -215,7 +170,7 @@ export default function Header() {
         display: block;
         position: absolute;
         width: 100%;
-       hieght: 100%;
+        height: 100%;
         top: 0;
         left: 0;
         background: white;

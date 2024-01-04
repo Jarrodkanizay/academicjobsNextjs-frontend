@@ -1,7 +1,7 @@
-// import Image from 'next/image';
-// import Link from 'next/link';
+import Image from 'next/image';
+
+import Link from 'next/link';
 import type { Metadata } from 'next';
-import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -23,9 +23,12 @@ export default function myPage() {
         >
           ← Back
         </Link> */}
-          <h1>Most Frequently Asked Questions for Academic Jobs Online</h1>
+          <h1>
+            Most Frequently Asked Questions for Academic&nbsp;Jobs&nbsp;Online
+          </h1>
 
-          <FAQ question="What Are Academic Jobs?">
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>What Are Academic Jobs?</h2>
             <p>
               Academic jobs are positions related to teaching, research, or
               administration in higher education institutions, such as
@@ -35,8 +38,9 @@ export default function myPage() {
               such as academic staff, research staff, professional staff, and
               casual staff.
             </p>
-          </FAQ>
-          <FAQ question="How Can I Find Academic Jobs Online?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>How Can I Find Academic Jobs Online?</h2>
             <p>
               You can find academic jobs online by searching on academic job
               board sites, such as Jobs@UNSW, Academic Positions, or
@@ -49,21 +53,23 @@ export default function myPage() {
               workshops, to learn about new opportunities and establish
               contacts.
             </p>
-          </FAQ>
-          <FAQ question="What Are the Requirements for Academic Jobs?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>What Are the Requirements for Academic Jobs?</h2>
             <p>
               The requirements for academic jobs vary depending on the type,
               level, and field of the position. Generally, academic jobs require
-              a minimum of a bachelor’s degree in a relevant discipline, but
-              many positions also require a master’s degree, a doctoral degree,
-              or a postdoctoral qualification. Additionally, academic jobs may
+              a minimum of a bachelors degree in a relevant discipline, but many
+              positions also require a masters degree, a doctoral degree, or a
+              postdoctoral qualification. Additionally, academic jobs may
               require specific skills, such as teaching, research, writing,
               communication, or leadership skills. Some academic jobs may also
               require professional accreditation, registration, or certification
               in certain fields or areas.
             </p>
-          </FAQ>
-          <FAQ question="How Can I Apply for Academic Jobs Online?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>How Can I Apply for Academic Jobs Online?</h2>
             <p>
               To apply for academic jobs online, you need to prepare a resume or
               curriculum vitae (CV) that highlights your education,
@@ -74,12 +80,13 @@ export default function myPage() {
               other documents, such as transcripts, references, a teaching
               portfolio, a research proposal, or samples of your work. You can
               submit your application online through the academic job board site
-              or the institution’s website. Alternatively, you can send your
+              or the institutions website. Alternatively, you can send your
               application by email or post to the contact person or address
               specified in the job advertisement.
             </p>
-          </FAQ>
-          <FAQ question="How Can I Prepare for an Academic Job Interview?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>How Can I Prepare for an Academic Job Interview?</h2>
             <p>
               To prepare for an academic job interview, you need to research the
               institution and the department that you are applying to. You
@@ -114,8 +121,9 @@ export default function myPage() {
                 department or institution?
               </li>
             </ul>
-          </FAQ>
-          <FAQ question="What Are Some Tips for Succeeding in an Academic Career?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>What Are Some Tips for Succeeding in an Academic Career?</h2>
             <ul>
               <li>Pursue your passion and curiosity in your field of study</li>
               <li>Seek mentorship and guidance from senior academics</li>
@@ -134,8 +142,9 @@ export default function myPage() {
               <li>Balance your work and personal life</li>
               <li>Keep learning and growing</li>
             </ul>
-          </FAQ>
-          <FAQ question="What Is an Example of an Academic Career?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>What Is an Example of an Academic Career?</h2>
             <p>
               There are many different types of careers in academia. In this
               industry, you can work as a teacher, instructor, or professor, a
@@ -143,24 +152,26 @@ export default function myPage() {
               researcher, or in another department that supports the school,
               such as admissions, academic counseling, and fundraising.
             </p>
-          </FAQ>
-          <FAQ question="How Do You Become a Paid Academic?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>How Do You Become a Paid Academic?</h2>
             <p>
               Many academics take the following steps to get a career in
               academia:
             </p>
             <ul>
               <li>Graduate high school at year 12.</li>
-              <li>Enroll in a bachelor's degree program.</li>
-              <li>Study honours or master's degree.</li>
+              <li>Enroll in a bachelors degree program.</li>
+              <li>Study honours or masters degree.</li>
               <li>Become a tutor.</li>
               <li>Get a doctorate.</li>
               <li>Apply for an academic job.</li>
               <li>Develop written and verbal communication skills.</li>
               <li>Enhance critical thinking.</li>
             </ul>
-          </FAQ>
-          <FAQ question="What Are the Duties of a Professor?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>What Are the Duties of a Professor?</h2>
             <p>Duties of a professor may include:</p>
             <ul>
               <li>
@@ -176,16 +187,18 @@ export default function myPage() {
                 participate in learning opportunities and gain experience.
               </li>
             </ul>
-          </FAQ>
-          <FAQ question="What Is the Highest Academic Job?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>What Is the Highest Academic Job?</h2>
             <p>
               Professor. A professor is an academic who has been promoted to the
               highest academic grade on the basis of their scholarly
               achievements. Many professors work as senior lecturers for a
               number of years before being promoted to professors.
             </p>
-          </FAQ>
-          <FAQ question="How Do You Work as an Academic?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>How Do You Work as an Academic?</h2>
             <p>What does an academic job involve?</p>
             <ul>
               <li>Administrative work.</li>
@@ -196,16 +209,18 @@ export default function myPage() {
               <li>Teaching in lectures and seminars.</li>
               <li>Writing up research and publishing the findings.</li>
             </ul>
-          </FAQ>
-          <FAQ question="What Qualifications Do I Need to Be a Researcher?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>What Qualifications Do I Need to Be a Researcher?</h2>
             <p>
               You usually need a first or 2:1 (upper second class) degree in a
               science subject to become a research scientist. Most research
               scientists continue to study for a postgraduate qualification like
               a PhD.
             </p>
-          </FAQ>
-          <FAQ question="How to Make Money Through Academic Writing?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>How to Make Money Through Academic Writing?</h2>
             <p>Ways to make money through academic writing:</p>
             <ul>
               <li>Writers Work</li>
@@ -217,8 +232,9 @@ export default function myPage() {
               <li>Essaypro</li>
               <li>iWritessays.com</li>
             </ul>
-          </FAQ>
-          <FAQ question="What Not to Do as a Professor?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>What Not to Do as a Professor?</h2>
             <p>Things to avoid as a professor:</p>
             <ul>
               <li>Forget your privilege.</li>
@@ -226,12 +242,13 @@ export default function myPage() {
               <li>Assume.</li>
               <li>Use grades as punishment.</li>
               <li>Have office hours only.</li>
-              <li>Think your time is more valuable than your students'.</li>
+              <li>Think your time is more valuable than your students.</li>
               <li>Expect students to improve without feedback.</li>
               <li>Fail to teach.</li>
             </ul>
-          </FAQ>
-          <FAQ question="Where Are Academics Paid the Most?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>Where Are Academics Paid the Most?</h2>
             <p>
               Here are four countries to explore based on data from various
               reports and job-hunting websites:
@@ -242,8 +259,9 @@ export default function myPage() {
               <li>The United Kingdom</li>
               <li>Switzerland</li>
             </ul>
-          </FAQ>
-          <FAQ question="Where Do Academics Make the Most Money?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>Where Do Academics Make the Most Money?</h2>
             <p>
               Canada comes out on top for those newly entering the academic
               profession, average salaries among all professors and those at the
@@ -251,24 +269,27 @@ export default function myPage() {
               purchasing power, the United States ranks fifth, behind not only
               its northern neighbor, but also Italy, South Africa, and India.
             </p>
-          </FAQ>
-          <FAQ question="Do All PhD Students Need to Teach?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>Do All PhD Students Need to Teach?</h2>
             <p>
               All full-time PhD students should expect to teach from their
               second year of studies onwards. Class teaching plays a valuable
               role in the Department, and Graduate Teaching Assistants make up a
               significant part of the overall teaching timetable.
             </p>
-          </FAQ>
-          <FAQ question="Which Subject Is Best for Lecturer?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>Which Subject Is Best for Lecturer?</h2>
             <p>
               Many students might not know which course is best for Lecturers.
               There are a variety of streams from which you can opt from such as
               Humanities, Science, Arts, Social Sciences, Computer Sciences, and
               many more.
             </p>
-          </FAQ>
-          <FAQ question="What Kind of Tutors Make the Most Money?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>What Kind of Tutors Make the Most Money?</h2>
             <p>High paying tutoring jobs:</p>
             <ul>
               <li>GMAT Tutor</li>
@@ -280,8 +301,9 @@ export default function myPage() {
               <li>Kindergarten Tutor</li>
               <li>Mandarin Tutor</li>
             </ul>
-          </FAQ>
-          <FAQ question="Why Do You Want to Work in Academics?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>Why Do You Want to Work in Academics?</h2>
             <p>
               At other jobs you might only get to work on something that truly
               interests you for a few hours of your workday, but as an academic
@@ -289,8 +311,9 @@ export default function myPage() {
               passions. Compared to corporate or industry jobs, academic
               positions have significantly less oversight.
             </p>
-          </FAQ>
-          <FAQ question="What Are 4 Qualities of a Good Researcher?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>What Are 4 Qualities of a Good Researcher?</h2>
             <p>The characteristics of a good researcher:</p>
             <ul>
               <li>Curiosity</li>
@@ -299,8 +322,9 @@ export default function myPage() {
               <li>Collaboration</li>
               <li>Communication</li>
             </ul>
-          </FAQ>
-          <FAQ question="What Is the Most Basic Skill Required of Any Researcher?">
+          </div>
+          <div className="bg-slate-100 rounded-xl px-4">
+            <h2>What Is the Most Basic Skill Required of Any Researcher?</h2>
             <p>
               Communication skills involve active listening, observing, and
               speaking. Research skills require good communication skills to
@@ -308,7 +332,7 @@ export default function myPage() {
               are often one of the most important skills employers look for in
               candidates.
             </p>
-          </FAQ>
+          </div>
           <div className="mb-16">&nbsp;</div>
         </div>
       </main>

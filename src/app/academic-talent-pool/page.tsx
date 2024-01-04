@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 export default function myPage() {
   return (
-    <>
+    <main>
       {/* Page heading */}
       <div className="container mx-auto mt-8 mb-6">
         <h1 className="text-3xl font-bold py-4 px-7 bg-[#f4a10c] text-white rounded-full shadow-xl mb-8">
@@ -82,7 +82,7 @@ export default function myPage() {
               <div className="card-body items-center text-center">
                 <h2 className="card-title">Collaborations</h2>
                 <p>
-                  Enagage in a high-level academic collaborations and research
+                  Engage in a high-level academic collaborations and research
                   partnerships.
                 </p>
               </div>
@@ -101,7 +101,7 @@ export default function myPage() {
               </figure>
               <div className="card-body items-center text-center">
                 <h2 className="card-title">Media Expert</h2>
-                <p>Gain visbility through media features and nterviews.</p>
+                <p>Gain visibility through media features and interviews.</p>
               </div>
             </div>
 
@@ -188,6 +188,6 @@ export default function myPage() {
           </ul>
         </div>
       </div>
-    </>
+    </main>
   );
 }
