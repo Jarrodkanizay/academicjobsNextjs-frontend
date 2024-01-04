@@ -20,6 +20,7 @@ export default function myPage() {
    </div>
    <div className="hidden md:block overflow-y-auto w-[70%]  top-0 h-screen sticky">   
    
+   <div className="card-listing"><div className="badge badge-sm badge-featured">Featured</div><div className="card-listing-header mb-4"><figure><img src="https://iloveacademicjobs.com/files/pictures/BondTwitterIcon_400x400.jpg" alt="Logo"></img></figure><div className="card-listing-top grow"><p className="job-title">Cook/Commis Chef/Demi Chef</p></div></div><p className="col-span-full institute-name">Bond University</p><div className="card-listing-footer col-span-full flex items-center justify-between"><p className="card-location">Robina QLD, Australia</p><div className="applications-close"><p className="expiry-date-heading">Applications Close</p><p className="expiry-date"><time>Jan 9, 2024</time></p></div></div></div>
 
    
    </div>

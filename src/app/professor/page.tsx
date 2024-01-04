@@ -14,7 +14,7 @@ export default function myPage() {
     
       <main className="content-grid">
               <h1>
-              Academic Lecturer Jobs
+              Academic Professor Jobs
               </h1>
               <p>
               See all available professor job opportunities on AcademicJobs right now from reputable colleges. Our institutions are always looking for the best professors, and through our academic platform, academics may apply for amazing worldwide academic professor jobs.</p>
