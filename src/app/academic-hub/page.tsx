@@ -40,8 +40,8 @@ export default function myPage() {
    these blogs now and discover the best opportunities and practices
    for academic hub.
          </p>
-         <a href="#pricing-table-cards" className="btn btn-aj">
-           Post a Job
+         <a href="/academic-talent-pool" className="btn btn-aj">
+           Join our Talent Pool
          </a>
        </div>
      </div>

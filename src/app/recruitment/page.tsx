@@ -231,7 +231,7 @@ export default function myPage() {
                 best customer service and support.
               </p>
               <div className="card-actions justify-end">
-                <Link href="/post-job" className="btn btn-aj">
+                <Link href="/job-ads" className="btn btn-aj">
                   Check out our prices
                 </Link>
               </div>
