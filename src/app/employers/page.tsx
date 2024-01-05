@@ -57,7 +57,7 @@ export default function myPage() {
         </div>
       </section>
 
-      <div className=" max-w-screen-2xl mx-auto">
+      {/* <div className=" max-w-screen-2xl mx-auto">
         <h2 className="text-xl font-bold pt-4  px-10 text-[#f4a10c] ">
           ▼ University Region Selection{" "}
         </h2>
@@ -1886,7 +1886,7 @@ export default function myPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }

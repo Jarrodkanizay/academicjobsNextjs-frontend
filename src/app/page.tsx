@@ -152,6 +152,7 @@ export default function myPage() {
               Academic&nbsp;Awards 2023'&nbsp;NOW
             </Link>
           </p> */}
+          {/* <div>
           <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-xl mt-20 shadow-md">
             Top Academic Jobs Today
           </h2>
@@ -1088,6 +1089,7 @@ export default function myPage() {
               </h2>
             </Link>
           </div>
+          </div> */}
         </div>
       </div>
     </main>
