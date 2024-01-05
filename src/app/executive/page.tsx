@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import SearchResults from '@/components/SearchResults'
+import JobSearchBox from '@/components/JobSearchBox'
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -21,7 +23,8 @@ export default function myPage() {
 
               <p className='pt-4'>Academic Executive Jobs contain leadership, management, and direction for a specific academic unit or function within a higher education institution. Academic Executive Jobs set the goals and objectives of the unit or function, overseeing the academic programs and activities, ensuring the quality and standards of teaching and research, supporting and developing the staff and students, and managing the financial and human resources.</p>
 
-             
+              <JobSearchBox/>
+              <SearchResults q={{ q: "executive" || 0 }} />
       </main>
    
   );

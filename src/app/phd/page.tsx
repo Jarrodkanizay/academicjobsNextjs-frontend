@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import SearchResults from '@/components/SearchResults'
+import JobSearchBox from '@/components/JobSearchBox'
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -21,7 +23,8 @@ export default function myPage() {
 
               <p className='pt-4'>PhD jobs on campus involve working part-time or casually in various roles and departments within a university or research institute setting. These jobs provide PhD graduates with the opportunity to earn income, gain valuable work experience, develop employability skills, and enhance their academic and social networks. PhD jobs on campus can cover administration, customer service, events, marketing, IT, library, research, teaching, and other roles. You can find hundreds of job postings from universities across Australia and around the world. Gain valuable work experience and skills by applying today!</p>
 
-             
+              <JobSearchBox/>
+              <SearchResults q={{ q: "phd" || 0 }} />
       </main>
    
   );
