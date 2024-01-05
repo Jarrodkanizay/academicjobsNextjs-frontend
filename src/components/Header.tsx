@@ -100,6 +100,11 @@ export default function Header() {
               icon="/network-icon.svg"
               navLink="My Academic Hub"
             />
+            <NavItem
+              url="/job-ads"
+              icon="/network-icon.svg"
+              navLink="Job Ads"
+            />
             {/* <Link
               className={`p-2  md:w-52  dropdown-content z-[1] menu px-4 py-2  bg-base-100 rounded-box w-31 } `}
               

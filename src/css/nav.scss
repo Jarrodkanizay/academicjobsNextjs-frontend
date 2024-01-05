@@ -1,3 +1,6 @@
+:root {
+  --border-width-nav: 3px;
+}
 html {
   body,
   body .prose {
@@ -16,8 +19,11 @@ html {
         position: relative;
         /* opacity: 0.75; */
       }
-
-      .nav-link:hover {
+      .link-nav {
+        text-decoration: none;
+      }
+      .link-nav:hover {
+        text-decoration: underline;
         opacity: 1;
       }
 
@@ -27,7 +33,7 @@ html {
         height: 48px;
         transition: 300ms;
         content: '';
-        border-bottom: 3px solid var(--color-primary);
+        border-bottom: var(--border-width-nav) solid var(--color-primary);
         z-index: -1;
         left: 0;
         width: 0%;
@@ -42,7 +48,7 @@ html {
         position: absolute;
         transition: 300ms;
         content: '';
-        border-bottom: 3px solid #ddd;
+        border-bottom: var(--border-width-nav) solid #ddd;
         z-index: -2;
         width: 100%;
       }
@@ -54,7 +60,7 @@ html {
 
       .nav-link-ltr.active::before {
         width: 100%;
-        border-bottom: 3px solid black;
+        border-bottom: var(--border-width-nav) solid black;
       }
       .nav-link.active {
         color: var(--color-primary);
