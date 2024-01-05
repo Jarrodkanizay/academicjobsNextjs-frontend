@@ -23,7 +23,7 @@ export default function SearchResults({ q }: SearchResultsProps) {
     isFetching,
     isPlaceholderData,
   } = useQuery({
-    queryKey: ['jobs', page],
+    queryKey: ['jobs', q, page],
     queryFn: async () => {
       const response = await BaseApi.post('/jobs', { ...q, page });
       console.log(response.data);
