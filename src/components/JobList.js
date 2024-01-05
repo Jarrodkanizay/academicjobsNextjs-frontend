@@ -20,10 +20,11 @@ const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
   return (
     <div className="w-full">
       {content}
+      <div className='flex justify-center gap-4'>
       <button onClick={() => handlePageChange('prev')} disabled={page === 0}>
         Previous Page
       </button>
-      <span>Current Page: {page + 1}</span>
+      <span className="text-xs ">Current Page: {page + 1}</span>
       <button
         onClick={() => {
           if (!isPlaceholderData && data.hasMore) {
@@ -34,7 +35,8 @@ const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
         disabled={isPlaceholderData || !data?.hasMore}
       >
         Next Page
-      </button>
+        </button>
+      </div>
     </div>
   );
 };
