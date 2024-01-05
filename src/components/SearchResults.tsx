@@ -37,7 +37,7 @@ export default function SearchResults({ q }: SearchResultsProps) {
     if (data.length > 0) {
 console.log("data",data)
       content = (
-        <div className="mx-auto overflow-y-auto md:w-[40%] h-screen">
+        <div className="content-grid mx-auto w-2/5">
           <JobList data={data} nextPage={nextPage} />
         </div>
       );

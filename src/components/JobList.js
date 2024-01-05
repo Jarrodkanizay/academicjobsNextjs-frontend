@@ -25,10 +25,11 @@ const JobList = ({ data, nextPage }) => {
       >
         <Job job={job} />
       </div>
+   
     );
   });
   return (
-    <div className="overflow-y w-full">
+    <div className="w-full">
       {content}
       <button
         type="button"

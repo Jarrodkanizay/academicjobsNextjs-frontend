@@ -25,7 +25,7 @@ export default function Page() {
   console.log("router.query", searchParams)
   //const { q, l } = router.query;
   return (
-    <div className="overflow-y w-full">
+    <div className=" w-full">
       <div className="bg-gray-100 py-10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-screen-xl mx-auto">

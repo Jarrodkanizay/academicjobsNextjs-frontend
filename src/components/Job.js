@@ -9,6 +9,8 @@ const Job = ({ job }) => {
   //let logo = '', company_name = ''
   const { employer_id, title, location, activation_date, expiration_date, how_to_apply, logo, company_name, featured, id } = job
   content = (
+    <>
+   
     <article className="media bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg" data-id="59973"
       onClick={() => {
         //window.history.pushState({}, "New Page Title", `/jobs/${title?.replace(/\W+/g, '-').toLowerCase()}/${id}/`);
@@ -46,14 +48,15 @@ const Job = ({ job }) => {
         <div className="applications-close border-4 rounded p-1">
               <p className="expiry-date-heading">Applications Close</p>
               <p className="expiry-date">
+                  {expiration_date ?(
                 <time>
-                  {expiration_date &&
-                    `${new Date(expiration_date).toLocaleDateString("en-US", {
+                    {new Date(expiration_date).toLocaleDateString("en-US", {
                       month: "short",
                       day: "numeric",
                       year: "numeric",
-                    })}`}
+                    })}
                 </time>
+                  ):(<p className='text-center'>NA</p>)}
               </p>
             </div>
         {((new Date(expiration_date) < new Date()) && expiration_date) && (
@@ -63,6 +66,8 @@ const Job = ({ job }) => {
         )}
       </div>
     </article>
+  </>
+
   )
   return <div className='overflow-y w-full relative'>{content}</div>
 }

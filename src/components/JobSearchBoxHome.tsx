@@ -48,19 +48,19 @@ export default function JobSearchBox() {
       <div className="flex flex-col gap-2 md:flex-row md:gap-0 mx-18 w-full mt-5 md:border rounded-lg p-2 md:shadow-md">
         <input
           type="text"
-          className="flex-grow px-4 py-2 focus:outline-none border rounded-lg shadow-md md:border-none md:shadow-none"
+          className="flex-grow px-4 py-2 focus:outline-none border rounded-lg shadow-md md:border-none md:shadow-none text-base bg-white"
           placeholder="Jobs Search"
           ref={keyWordRef}
         />
         <button
-          className="px-4 py-2 bg-[#f4a10c] text-white rounded-md hover:bg-orange-600"
+          className="px-4 py-2 bg-[#f4a10c] text-white rounded-md hover:bg-orange-600 animate-pulse font-bold shadow-md"
           type="submit"
         >
-          Search In Your Country
+          》Search In Your Country
         </button>
       </div>
       <h2
-        className="underline text-[#f4a10c]"
+        className=" text-[#f4a10c] text-base pr-6"
         onClick={async (event: React.FormEvent) => {
           event.preventDefault();
           const a: { q?: string; l?: string } = {};
