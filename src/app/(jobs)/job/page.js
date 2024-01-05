@@ -6,14 +6,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { BsFillShareFill } from "react-icons/bs";
 import { useSearchParams } from 'next/navigation'
+import BaseApi from '@/lib/store/Base';
 const Job = () => {
     const searchParams = useSearchParams()
     const id = searchParams.get('id')
     const { data: job, isSuccess, isLoading, isError, error } = useQuery({
         queryKey: ["job", id],
         queryFn: async () => {
-            const response = await axios.get(
-                `https://api1.sciencejobs.com.au/api/job/${id}`,
+            const response = await BaseApi.get(
+                `/job/${id}`,
             );
             console.log(response.data);
             console.log('response.data.data', response.data.data);
