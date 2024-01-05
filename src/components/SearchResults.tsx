@@ -145,8 +145,8 @@ export default function SearchResults({ q }: SearchResultsProps) {
         </div>
       </div>
     );
-  } else if (isSuccess && data) {
-    if (data.length > 0) {
+  } else if (isSuccess && data.jobs.length > 0) {
+    if (data.jobs.length > 0) {
       console.log('data', data);
       content = (
         <div className="content-grid mx-auto w-2/5">
@@ -154,6 +154,7 @@ export default function SearchResults({ q }: SearchResultsProps) {
             data={data}
             handlePageChange={handlePageChange}
             page={page}
+            isPlaceholderData={isPlaceholderData}
           />
         </div>
       );
