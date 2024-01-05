@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 export default function myPage() {
   return (
     <main className="">
+      <div className="h-[100vh]">
       <div className="flex flex-col items-center justify-center mb-32">
         <div className="h-[27vh] flex flex-col items-end justify-end">
           <LogoAJ width={290} height={200} />
@@ -104,7 +105,7 @@ export default function myPage() {
               ▼
             </a>
           </div>
-
+          </div>
 
       {/* Main Content Panel */}
       <div id="section" className="mt-[-1rem]">
