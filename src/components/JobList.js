@@ -14,7 +14,7 @@ const JobList = ({ data, nextPage }) => {
     //console.log(job)
     return (
       <div
-        className={`font-bold ${index % 2 === 0 ? 'bg-gray-200' : 'bg-white'}`}
+        className={`font-bold ${index % 2 === 0 ? 'bg-white p-4' : 'bg-white p-4 py-0'}`}
         onClick={() => {
        
           if (window.innerWidth <= 768) {
