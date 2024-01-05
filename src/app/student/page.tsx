@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import SearchResults from '@/components/SearchResults'
+import JobSearchBox from '@/components/JobSearchBox'
 
 export const metadata: Metadata = {
   title: 'Student Jobs on Campus', //Option 1 replaces the %s in layout.tsx
@@ -50,7 +52,7 @@ export default function myPage() {
     <>
       <main className="content-grid">
         {/* Hero banner */}
-        <div className="hero full-width max-h-fit bg-base-200 py-8">
+        <div className="hero full-width max-h-fit bg-slate-200 py-8">
           <div className="container mx-auto">
             <div className="hero-content flex-col lg:flex-row-reverse">
               <Image
@@ -103,7 +105,7 @@ export default function myPage() {
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
             {/* Card 1 */}
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
                   <svg
@@ -133,7 +135,7 @@ export default function myPage() {
             </div>
 
             {/* Card 2 */}
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
                   <svg
@@ -176,7 +178,7 @@ export default function myPage() {
             </div>
 
             {/* Card 3 */}
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
                   <svg
@@ -252,11 +254,11 @@ export default function myPage() {
         </section>
       </main>
       <div className="container mx-auto mt-16">
-        <div className="prose">
+        {/* <div className="prose">
           <h2 className="underline-full">
             What type of Student Job are you&nbsp;looking&nbsp;for?
           </h2>
-          {/* <ul className="text-center columns-1 md:columns-4 md:gap-2 capitalize m-0 p-0 mx-auto"> */}
+          <ul className="text-center columns-1 md:columns-4 md:gap-2 capitalize m-0 p-0 mx-auto">
           <ul className="flex flex-col sm:flex-row items-center justify-center capitalize m-0 p-0 mx-auto">
             {student.map(({ Title, Name }, key) => (
               <li
@@ -285,7 +287,9 @@ export default function myPage() {
             ))}
           </ul>
           <div className="newLine"></div>
-        </div>
+        </div> */}
+         <JobSearchBox/>
+              <SearchResults q={{ q: "student" || 0 }} />
       </div>
     </>
   );

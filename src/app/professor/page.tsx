@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import SearchResults from '@/components/SearchResults'
+import JobSearchBox from '@/components/JobSearchBox'
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -21,7 +23,8 @@ export default function myPage() {
 
               <p className='pt-4'>Academic professor jobs are professor of law, professor of computer science, professor of practice, professor of chemistry, professor of engineering, and other professor jobs. Academic professor jobs deliver courses, supervising students and staff, conducting original and impactful research, publishing in academic journals and books, applying for grants and funding, collaborating with other researchers and institutions, engaging with industry and community partners, and contributing to the academic governance and administration.</p>
 
-             
+              <JobSearchBox/>
+              <SearchResults q={{ q: "professor" || 0 }} />
       </main>
    
   );
