@@ -14,7 +14,7 @@ const JobList = ({ data, nextPage }) => {
     //console.log(job)
     return (
       <div
-        className={`font-bold ${index % 2 === 0 ? 'bg-gray-200' : 'bg-white'}`}
+        className={`font-bold ${index % 2 === 0 ? 'bg-white p-4' : 'bg-white p-4 py-0'}`}
         onClick={() => {
        
           if (window.innerWidth <= 768) {
@@ -25,10 +25,11 @@ const JobList = ({ data, nextPage }) => {
       >
         <Job job={job} />
       </div>
+   
     );
   });
   return (
-    <div className="overflow-y w-full">
+    <div className="w-full">
       {content}
       <button
         type="button"

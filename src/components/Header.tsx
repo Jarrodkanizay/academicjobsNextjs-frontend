@@ -85,7 +85,7 @@ export default function Header() {
         <div className="DESKTOP-MENU w-full justify-between  space-x-1 lg:flex">
           <div className="w-full columns-1 flex justify-start  md:items-center md:gap-1 ">
             <NavItem
-              url="/jobs"
+              url="/find-jobs"
               icon="/dotted-arrow.svg"
               navLink="Seek Jobs"
               forceClass="" //this is optional
