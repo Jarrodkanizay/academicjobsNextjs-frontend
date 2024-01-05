@@ -58,113 +58,130 @@ export default function SearchResults({ q }: SearchResultsProps) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
   };
-  if (isFetching) {
-    content = (
-      <div className="container mx-auto flex w-full h-screen justify-between">
-        <div
-          role="status"
-          className="w-[40%] h-screen p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700"
-        >
-          <div className="flex items-center justify-between">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <span className="sr-only">Loading...</span>
-        </div>
-        <div
-          role="status"
-          className="w-[60%] h-screen p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700"
-        >
-          <div className="flex items-center justify-between">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <span className="sr-only">Loading...</span>
-        </div>
-      </div>
-    );
-  } else if (isSuccess && data.jobs.length > 0) {
-    if (data.jobs.length > 0) {
-      console.log('data', data);
-      content = (
-        <div className="content-grid mx-auto w-2/5">
-          <JobList
-            data={data}
-            handlePageChange={handlePageChange}
-            page={page}
-            isPlaceholderData={isPlaceholderData}
-          />
-        </div>
-      );
-    } else {
-      content = (
-        <p className="text-center text-2xl font-bold py-10">
-          Found No Job, Pls use other keywords.
-        </p>
-      );
-    }
-  }
+
+     if (isFetching) {
+       content = (
+         <div className="container mx-auto flex w-full h-screen justify-between">
+           <div
+             role="status"
+             className="w-[40%] h-screen p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700"
+           >
+             <div className="flex items-center justify-between">
+               <div>
+                 <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                 <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+               </div>
+               <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+             </div>
+             <div className="flex items-center justify-between pt-4">
+               <div>
+                 <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                 <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+               </div>
+               <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+             </div>
+             <div className="flex items-center justify-between pt-4">
+               <div>
+                 <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                 <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+               </div>
+               <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+             </div>
+             <div className="flex items-center justify-between pt-4">
+               <div>
+                 <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                 <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+               </div>
+               <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+             </div>
+             <div className="flex items-center justify-between pt-4">
+               <div>
+                 <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                 <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+               </div>
+               <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+             </div>
+             <span className="sr-only">Loading...</span>
+           </div>
+           <div
+             role="status"
+             className="w-[60%] h-screen p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700"
+           >
+             <div className="flex items-center justify-between">
+               <div>
+                 <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                 <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+               </div>
+               <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+             </div>
+             <div className="flex items-center justify-between pt-4">
+               <div>
+                 <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                 <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+               </div>
+               <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+             </div>
+             <div className="flex items-center justify-between pt-4">
+               <div>
+                 <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                 <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+               </div>
+               <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+             </div>
+             <div className="flex items-center justify-between pt-4">
+               <div>
+                 <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                 <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+               </div>
+               <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+             </div>
+             <div className="flex items-center justify-between pt-4">
+               <div>
+                 <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                 <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+               </div>
+               <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+             </div>
+             <span className="sr-only">Loading...</span>
+           </div>
+         </div>
+       );
+     } else if (isSuccess && data.jobs.length > 0) {
+       if (data.jobs.length > 0) {
+         console.log('data', data);
+         content = (
+           <div className="content-grid mx-auto w-2/5">
+             <JobList
+               data={data}
+               handlePageChange={handlePageChange}
+               page={page}
+               isPlaceholderData={isPlaceholderData}
+             />
+           </div>
+         );
+       } else {
+         content = (
+           <p className="text-center text-2xl font-bold py-10">
+             Found No Job, Pls use other keywords.
+           </p>
+         );
+       }
+     } else {
+       content = (
+         <div className="container mx-auto">
+           <p className="text-center text-xl font-bold mt-12 px-8">
+             Sorry! We couldn't find any jobs matching&nbsp;your&nbsp;request.
+           </p>
+           <p className="text-center text-md py-10 px-8">
+             Please consider expanding your search and joining our
+             Talent&nbsp;Pool to get notified of jobs matching
+             your&nbsp;unique&nbsp;skills.
+           </p>
+           <p className="text-center">
+             {/* <JoinTalentPoolButton /> */}
+           </p>
+         </div>
+       );
+     }
   return <div>{content}</div>;
 }
