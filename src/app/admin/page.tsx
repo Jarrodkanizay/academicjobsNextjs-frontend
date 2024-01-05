@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import SearchResults from '@/components/SearchResults'
+import JobSearchBox from '@/components/JobSearchBox'
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -21,7 +23,8 @@ export default function myPage() {
 
               <p className='pt-4'>Academic Admin and support Jobs will need to have a diploma or higher qualification in business administration or a related field, as well as relevant work experience in academic administration and support. Academic Admin and support Jobs will also need to have excellent communication, interpersonal, organizational, and problem-solving skills. Academic Admin and support Jobs need to be familiar with the policies and procedures of the higher education sector, as well as the applicable laws and regulations.</p>
 
-             
+              <JobSearchBox/>
+              <SearchResults q={{ q: "admin" || 0 }} />
       </main>
    
   );

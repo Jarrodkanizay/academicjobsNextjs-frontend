@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import SearchResults from '@/components/SearchResults'
+import JobSearchBox from '@/components/JobSearchBox'
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -21,7 +23,8 @@ export default function myPage() {
 
               <p className='pt-4'>Participants not only improve their employability skills but also cultivate a deep connection with the academic community, creating a comprehensive and rewarding experience. Through higher ed jobs online, individuals can actively contribute to the advancement of knowledge, the cultivation of learning environments, and the overall growth of the academic landscape while simultaneously expanding their professional horizons.</p>
 
-             
+              <JobSearchBox/>
+              <SearchResults q={{ q: "online" || 0 }} />
       </main>
    
   );

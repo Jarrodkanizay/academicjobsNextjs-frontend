@@ -18,8 +18,9 @@ export const metadata: Metadata = {
 export default function myPage() {
   return (
     <main className="">
+      <div className="h-[100vh]">
       <div className="flex flex-col items-center justify-center mb-32">
-        <div className="h-[25vh] flex flex-col items-end justify-end">
+        <div className="h-[27vh] flex flex-col items-end justify-end">
           <LogoAJ width={290} height={200} />
           {/* <Image
             // src="https://academicjobs.s3.amazonaws.com/Image/_misc/academic-jobs-logo.png"
@@ -33,10 +34,78 @@ export default function myPage() {
 
       
           {/* Job Search Form */}
-          <div className="w-full md:w-3/5 h-[60vh] flex flex-col items-top ">
+          <div className="w-full md:w-3/6 h-[6vh] flex flex-col items-top mt-[-1rem]">
             <JobSearchBoxHome />
           </div>
         </div>
+
+        <div className="mt-[3rem] ">
+            <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 px-2">
+              <li className="hover:underline">
+                <Link href="/lecturer">Lecturer{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/research/">Research{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/professor/">Professor{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/executive/">Executive{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/faculty/">Faculty{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/admin/">Admin{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/hr-jobs/">HR{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/student/">Student{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/graduate/"> Graduate{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/postdoc/"> Postdoc{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/phd/">PhD</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Employment Type Container */}
+          <div className="mt-7">
+            <ul className="faculty-container flex gap-4 items-center justify-center text-[#f4a10c] px-2">
+              <li className="hover:underline">
+                <Link href="/online/">Online{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/remote/">Remote{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/full-time/">Full-Time{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/part-time/">Part-Time{"  "}</Link>
+              </li>
+              <li className="hover:underline">
+                <Link href="/casual/">Casual</Link>
+              </li>
+            </ul>
+          </div>
+
+
+
+          <div className="text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16rem]">
+            <a href="#section" className="scroll-smooth md:scroll-auto">
+              ▼
+            </a>
+          </div>
+          </div>
 
       {/* Main Content Panel */}
       <div id="section" className="mt-[-1rem]">
@@ -83,7 +152,8 @@ export default function myPage() {
               Academic&nbsp;Awards 2023'&nbsp;NOW
             </Link>
           </p> */}
-          <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl mt-20 shadow-md">
+          {/* <div>
+          <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-xl mt-20 shadow-md">
             Top Academic Jobs Today
           </h2>
           <div className="cate-group section23 ">
@@ -486,7 +556,7 @@ export default function myPage() {
           >
             view more top jobs →
           </Link>
-          <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl mt-20 shadow-md">
+          <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-xl mt-20 shadow-md">
             Top Cities for Uni Jobs
           </h2>
           <div className="cate-group section23 ">
@@ -667,7 +737,7 @@ export default function myPage() {
               </div>
             </div>
           </div>
-          <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl mt-20 shadow-md">
+          <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-xl mt-20 shadow-md">
             Top Universities To Work For
           </h2>
           <div className="cate-group section23 ">
@@ -858,7 +928,7 @@ export default function myPage() {
               </div>
             </div>
           </div>
-          <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl mt-20 shadow-md">
+          <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-xl mt-20 shadow-md">
             <Link href="/the-university-rankings/">
               The University Rankings/ Top Academic Careers
             </Link>
@@ -1019,6 +1089,7 @@ export default function myPage() {
               </h2>
             </Link>
           </div>
+          </div> */}
         </div>
       </div>
     </main>

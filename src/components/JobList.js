@@ -12,15 +12,16 @@ const JobList = ({ data, handlePageChange, page }) => {
   content = data.map((job, index) => {
      return (
       <div
-        className={`font-bold ${index % 2 === 0 ? 'bg-gray-200' : 'bg-white'}`}
+        className={`font-bold ${index % 2 === 0 ? 'bg-white p-4' : 'bg-white p-4 py-0'}`}
         key={index}
       >
         <Job job={job} />
       </div>
+   
     );
   });
   return (
-    <div className="overflow-y w-full">
+    <div className="w-full">
       {content}
       
       <button onClick={() => handlePageChange('prev')} disabled={page === 0}>

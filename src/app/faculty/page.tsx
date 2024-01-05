@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import SearchResults from '@/components/SearchResults'
+import JobSearchBox from '@/components/JobSearchBox'
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -21,7 +23,8 @@ export default function myPage() {
 
               <p className='pt-4'>All Lecturing, Research and Science jobs online today.</p>
 
-             
+              <JobSearchBox/>
+              <SearchResults q={{ q: "faculty" || 0 }} />
       </main>
    
   );
