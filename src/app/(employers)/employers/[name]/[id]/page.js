@@ -92,7 +92,7 @@ const Employer = () => {
      
         <article className={`media ${company_name == 'Queensland University of Technology (QUT)' ? 'bg-blue-950' : 'bg-[#003663]'} border border-gray-300 p-4 mb-4 rounded-lg shadow-lg`}
         >
-          <div class="md:flex md:justify-start .col-auto ">
+          <div className="md:flex md:justify-start .col-auto ">
             <div className="w-[8rem] h-[8rem] mr-4  ">
               <img src={logo || "/favicon.png"}
                 alt={company_name}
@@ -102,16 +102,16 @@ const Employer = () => {
                 }}
               />
             </div>
-            <div class="md:flex md:flex-col gap-6 ">
-              <h1 class="text-3xl font-bold text-white pt-4">{company_name}</h1>
-              <div class="md:flex  md:gap-6 p-4">
-                <div class="text-white md:flex md:items-center md:justify-start md:gap-2 .col-auto p-4">
+            <div className="md:flex md:flex-col gap-6 ">
+              <h1 className="text-3xl font-bold text-white pt-4">{company_name}</h1>
+              <div className="md:flex  md:gap-6 p-4">
+                <div className="text-white md:flex md:items-center md:justify-start md:gap-2 .col-auto p-4">
                   <MdLocationPin />
                   {location}
                 </div>
                 {
                   website &&
-                  <div class="text-white md:flex md:items-center md:justify-start md:gap-2 p-4">
+                  <div className="text-white md:flex md:items-center md:justify-start md:gap-2 p-4">
                     <AiOutlineGlobal />
                     <a href={website} className="">{website}</a>
                   </div>}
@@ -119,7 +119,7 @@ const Employer = () => {
             </div>
           </div>
         </article>
-        <div class="flex justify-start gap-4 mt-6 mb-2 pl-4">
+        <div className="flex justify-start gap-4 mt-6 mb-2 pl-4">
           <div className={` cursor-pointer text-xl text-orange-400    ${viewJob || 'underline'}`}
             onClick={() => { setViewJob(false) }}
           >Institution Description</div>
