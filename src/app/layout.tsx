@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     template: '%s | Academic Jobs', //If the title is set on the page the %s will be replaced with the title
   },
   description: "Academic Jobs the worlds' number 1 job board",
+  icons: {
+    icon: '/favicon.png', 
+  },
 };
 
 export default function RootLayout({

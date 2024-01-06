@@ -1,6 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { apiSlice } from './apiSlice';
 import postsReducer from './postsSlice';
+import { useDispatch } from 'react-redux'
 import { setupListeners } from '@reduxjs/toolkit/query'
 export const store = configureStore({
     reducer: {

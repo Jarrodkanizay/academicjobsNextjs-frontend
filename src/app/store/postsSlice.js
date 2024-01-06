@@ -1,8 +1,7 @@
-
-'use client'
 import { createSlice, nanoid, createAsyncThunk } from '@reduxjs/toolkit'
 
 const initialState = {
+  filter1: [],
   employer: { employer_id: 0 },
   job: { description: '', employer_id: 0 },
   status: 'dangerTest',
@@ -16,6 +15,9 @@ const postsSlice = createSlice({
   name: 'status',
   initialState,
   reducers: {
+    setfilter(state, action) {
+      state.filter1 = action.payload
+    },
     setSearchJobCriteria(state, action) {
       state.searchJobCriteria = action.payload
     },
@@ -55,6 +57,7 @@ const postsSlice = createSlice({
 })
 
 export const {
+  setfilter,
   setRegion,
   setEmployer,
   setSearchJobCriteria,

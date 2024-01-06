@@ -12,7 +12,6 @@ import { useParams } from 'next/navigation'
 import BaseApi from '@/lib/store/Base';
 const Employer = () => {
   const [viewJob, setViewJob] = useState(false)
-
   const { id } = useParams()
   console.log(id)
   const { data, isSuccess, isLoading, isError, error } = useQuery({
@@ -89,7 +88,6 @@ const Employer = () => {
     }
     content = (
       <div className='flex-col gap-4 max-w-screen-xl mx-auto'>
-     
         <article className={`media ${company_name == 'Queensland University of Technology (QUT)' ? 'bg-blue-950' : 'bg-[#003663]'} border border-gray-300 p-4 mb-4 rounded-lg shadow-lg`}
         >
           <div className="md:flex md:justify-start .col-auto ">
