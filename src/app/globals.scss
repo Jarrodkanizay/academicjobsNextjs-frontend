@@ -93,4 +93,34 @@ html body {
   input.input {
     background-color: white;
   }
+
+  .logo {
+  width: 1280px;
+  height: 380px;
+  animation: bounceIn 2.6s;
+  transform: rotate(0deg) scale(1) translateZ(0);
+  transition: all 0.4s cubic-bezier(.8,1.8,.75,.75);
+  cursor: pointer;
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 1;
+    transform: scale(4);
+  } 
+
+  0% {
+    opacity: 1;
+    transform: scale(3);
+  } 
+
+  70% {
+    opacity: 1;
+    transform: scale(.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 }

@@ -56,7 +56,7 @@ export default function JobSearchBox() {
           className="px-4 py-2 bg-[#f4a10c] text-white rounded-md hover:bg-orange-600 animate-pulse font-bold shadow-md"
           type="submit"
         >
-          》Search In Your Country
+        Search In Your Country
         </button>
       </div>
       <h2
