@@ -4,7 +4,11 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
-export default function JobSearchBox() {
+interface MyComponentProps {
+  q?: string;
+  l?: string;
+}
+export default function JobSearchBox({ q, l }: MyComponentProps) {
   const searchParams = useSearchParams();
   const keyWordRef = useRef<HTMLInputElement>(null);
   const locationRef = useRef<HTMLInputElement>(null);
@@ -15,6 +19,8 @@ export default function JobSearchBox() {
     if (locationRef.current && searchParams.has('l')) {
       locationRef.current.value = searchParams.get('l') || '';
     }
+    if (keyWordRef.current && q) keyWordRef.current.value = q;
+    if (locationRef.current && l) locationRef.current.value = l;
   }, []);
   const router = useRouter();
   const handleFormSubmit = async (event: React.FormEvent) => {
