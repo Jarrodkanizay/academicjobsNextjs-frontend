@@ -13,17 +13,15 @@ export const metadata: Metadata = {
 };
 export default function myPage() {
   return (
-    
-      <main className="content-grid">
-              <h1>
-              Academic part-time Jobs
-              </h1>
-              <p>
-             From part-time positions to vibrant on-site roles, we've curated diverse part-time opportunities just for you. </p>
+    <main className="content-grid">
+      <h1>Academic part-time Jobs</h1>
+      <p>
+        From part-time positions to vibrant on-site roles, we've curated diverse
+        part-time opportunities just for you.{' '}
+      </p>
 
-              <JobSearchBox/>
-              <SearchResults q={{ q: "part time" || 0 }} />
-      </main>
-   
+      <JobSearchBox q="part time" />
+      <SearchResults q={{ q: 'part time' || 0 }} />
+    </main>
   );
 }
