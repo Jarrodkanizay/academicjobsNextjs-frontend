@@ -14,22 +14,31 @@ export const metadata: Metadata = {
 };
 export default function myPage() {
   return (
-    
-      <main className="content-grid">
-              <h1>
-              Academic Research Jobs
-              </h1>
-              <p>
-              Browse all Research positions from well regarded universities right now on AcademicJobs. The top researchers are sought after by our universities, and academics may pursue fantastic global academic researcher jobs through our academic job platform.</p>
+    <main className="content-grid">
+      <h1>Academic Research Jobs</h1>
+      <p>
+        Browse all Research positions from well regarded universities right now
+        on AcademicJobs. The top researchers are sought after by our
+        universities, and academics may pursue fantastic global academic
+        researcher jobs through our academic job platform.
+      </p>
 
-              <p className='pt-4'>Academic Researcher jobs create original and innovative research in their fields of interest, often as part of a larger project or team. Academic Researchers typically have a PhD or equivalent qualification, as well as relevant skills and experience in data analysis, methodology, and communication. Academic Researcher jobs may also be involved in teaching, supervision, and outreach activities, depending on their role and contract type.</p>
+      <p className="pt-4">
+        Academic Researcher jobs create original and innovative research in
+        their fields of interest, often as part of a larger project or team.
+        Academic Researchers typically have a PhD or equivalent qualification,
+        as well as relevant skills and experience in data analysis, methodology,
+        and communication. Academic Researcher jobs may also be involved in
+        teaching, supervision, and outreach activities, depending on their role
+        and contract type.
+      </p>
 
-              <Link href="/research/faq" className='pt-4 text-sky-500'>View Research Jobs FAQ</Link>
+      <Link href="/research/faq" className="pt-4 text-sky-500">
+        View Research Jobs FAQ
+      </Link>
 
-              <JobSearchBox/>
-              <SearchResults q={{ q: "research" || 0 }} />
-             
-      </main>
-   
+      <JobSearchBox q="research" />
+      <SearchResults q={{ q: 'research' || 0 }} />
+    </main>
   );
 }

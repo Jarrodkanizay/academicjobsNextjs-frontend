@@ -13,19 +13,28 @@ export const metadata: Metadata = {
 };
 export default function myPage() {
   return (
-    
-      <main className="content-grid">
-              <h1>
-              Academic Professor Jobs
-              </h1>
-              <p>
-              See all available professor job opportunities on AcademicJobs right now from reputable colleges. Our institutions are always looking for the best professors, and through our academic platform, academics may apply for amazing worldwide academic professor jobs.</p>
+    <main className="content-grid">
+      <h1>Academic Professor Jobs</h1>
+      <p>
+        See all available professor job opportunities on AcademicJobs right now
+        from reputable colleges. Our institutions are always looking for the
+        best professors, and through our academic platform, academics may apply
+        for amazing worldwide academic professor jobs.
+      </p>
 
-              <p className='pt-4'>Academic professor jobs are professor of law, professor of computer science, professor of practice, professor of chemistry, professor of engineering, and other professor jobs. Academic professor jobs deliver courses, supervising students and staff, conducting original and impactful research, publishing in academic journals and books, applying for grants and funding, collaborating with other researchers and institutions, engaging with industry and community partners, and contributing to the academic governance and administration.</p>
+      <p className="pt-4">
+        Academic professor jobs are professor of law, professor of computer
+        science, professor of practice, professor of chemistry, professor of
+        engineering, and other professor jobs. Academic professor jobs deliver
+        courses, supervising students and staff, conducting original and
+        impactful research, publishing in academic journals and books, applying
+        for grants and funding, collaborating with other researchers and
+        institutions, engaging with industry and community partners, and
+        contributing to the academic governance and administration.
+      </p>
 
-              <JobSearchBox/>
-              <SearchResults q={{ q: "professor" || 0 }} />
-      </main>
-   
+      <JobSearchBox q="professor" />
+      <SearchResults q={{ q: 'professor' || 0 }} />
+    </main>
   );
 }

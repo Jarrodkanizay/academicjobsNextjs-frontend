@@ -288,8 +288,8 @@ export default function myPage() {
           </ul>
           <div className="newLine"></div>
         </div> */}
-         <JobSearchBox/>
-              <SearchResults q={{ q: "student" || 0 }} />
+        <JobSearchBox q="student" />
+        <SearchResults q={{ q: 'student' || 0 }} />
       </div>
     </>
   );
