@@ -11,13 +11,12 @@ const Job = ({ job }) => {
   content = (
     <>
       <article className="media bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg" data-id="59973"
-        onClick={() => {
-          //window.history.pushState({}, "New Page Title", `/jobs/${title?.replace(/\W+/g, '-').toLowerCase()}/${id}/`);
-          const params = new URLSearchParams({
-            id: encodeURIComponent(id),
-          });
-          router.push(`/job?${params.toString()}`)
-        }}
+      // onClick={() => {
+      //   const params = new URLSearchParams({
+      //     id: encodeURIComponent(id),
+      //   });
+      //   router.push(`/job?${params.toString()}`)
+      // }}
       >
         {featured ? (
           <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-1">Featured</div>
@@ -26,16 +25,20 @@ const Job = ({ job }) => {
         )}
         <div className="flex items-center  mb-2">
           <div className="w-20 h-20 mr-4">
-            {/* <Link to={`/employers/${company_name}/${employer_id}/`}> */}
-            <img src={logo || "/favicon.png"} alt={company_name} className="w-full h-full object-contain rounded-lg" />
-            {/* </Link> */}
+            <Link
+              href={`/employers/${company_name?.replace(/\W+/g, '-').toLowerCase()}/${employer_id}/`}
+            >
+              <img src={logo || "/favicon.png"} alt={company_name} className="w-full h-full object-contain rounded-lg" />
+            </Link>
           </div>
-          <div className="flex-1">
+          <Link className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer"
+            href={`/jobs/${title?.replace(/\W+/g, '-').toLowerCase()}/${id}/`}
+          >
+            {title}
+          </Link>
+          {/* <div className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer">
             <span className="block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer">{title}</span>
-            {/* <div className="hidden-xs mt-2">
-            {featured ? <span className="inline-block bg-[#f4a10c] text-white px-2 py-1 text-xs font-bold rounded-full mr-2">Featured</span> : ''}
           </div> */}
-          </div>
         </div>
         <div className="flex justify-between items-center">
           <div className="text-sm text-gray-600">
