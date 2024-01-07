@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import LogoAJ from '@/components/brand/LogoAJ';
 import NavItem from '@/components/NavItem';
+import DispatchLink from "@/components/DispatchLink";
 import {
   countryMappings,
   countryMappings1,
@@ -18,6 +19,14 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const region = 'Global';
+  const ref = useRef(null);
+  const onMouseEnter = (e) => {
+    setDropdown(true);
+  };
+  const onMouseLeave = () => {
+    setDropdown(false);
+  };
+
 
   //alert(router.pathname)
   // const region = useSelector((state) => state.posts.region);
@@ -100,50 +109,50 @@ export default function Header() {
               icon="/network-icon.svg"
               navLink="My Academic Hub"
             />
-            {/* <Link
-              className={`p-2  md:w-52  dropdown-content z-[1] menu px-4 py-2  bg-base-100 rounded-box w-31 } `}
-              
-              style={{ maxWidth: "62px" }}
-             
+            <div
+              className={`p-2  md:w-52  dropdown-content z-[1] menu px-4 py-2   rounded-box w-31 } `}
+              style={{ maxWidth: '62px' }}
+              onMouseLeave={onMouseLeave}
             >
               <div
                 className="  text-gray-900 relative"
-                
+                onMouseEnter={onMouseEnter}
               >
                 {countryMappings1[region].hasPic ? (
-                  <Image
+                  <img
                     src={`https://academicjobs.s3.amazonaws.com/icon/countryFlag/${region}.svg`}
                     alt={region}
-                    style={{ height: "30px" }}
+                    style={{ height: '30px' }}
                   />
                 ) : (
-                  <span className="" style={{ height: "20px" }}>
-                    {" "}
-                    {region}{" "}
+                  <span className="" style={{ height: '20px' }}>
+                    {' '}
+                    {region}{' '}
                   </span>
                 )}
                 <ul
-                
-                  className={`${dropdown ? "block" : "hidden"
-                    } absolute  left-0 text-[0.875rem] z-99  min-w-[10rem] py-1 bg-white rounded-lg shadow-lg shadow-indigo-500/40`}
-                  
+                  onMouseLeave={onMouseLeave}
+                  className={`${
+                    dropdown ? 'block' : 'hidden'
+                  } absolute  left-0 text-[0.875rem] z-99  min-w-[10rem] py-1 bg-white rounded-lg shadow-lg shadow-indigo-500/40`}
+                  ref={ref}
                 >
                   {Object.keys(countryMappings1).map((key) => (
                     <li className="navbar__item" key={key}>
-                      <Link
-                        href={`/${key}/`}
+                      <DispatchLink
+                        to={`/${key}/`}
                         region={key}
                         setDropdown={setDropdown}
                         setIsNavOpen={setIsNavOpen}
                         className="navbar__link"
                       >
                         {countryMappings1[key].menu}
-                      </Link>
+                      </DispatchLink>
                     </li>
                   ))}
                 </ul>
               </div>
-            </Link> */}
+            </div>
           </div>
           <div className=" w-[200px] grid items-center justify-center ">
             {/* <Link
