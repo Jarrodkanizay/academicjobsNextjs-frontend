@@ -21,7 +21,7 @@ export default function JobSearchBox() {
         l: encodeURIComponent(location),
         q: encodeURIComponent(a.q || ''),
       });
-      router.push(`/find-jobs?${params.toString()}`);
+      router.push(`/jobs?${params.toString()}`);
     } else {
       try {
         const response = await fetch(
@@ -34,7 +34,7 @@ export default function JobSearchBox() {
         const lValue = (countryMappings1 as any)[
           (countryMappings as any)[country.toLowerCase()]
         ]?.searchLocation;
-        router.push(`/find-jobs?q=${qValue}&l=${lValue}`);
+        router.push(`/jobs?q=${qValue}&l=${lValue}`);
       } catch (error) {
         console.log('Error:', error);
       }
@@ -56,7 +56,7 @@ export default function JobSearchBox() {
           className="px-4 py-2 bg-[#f4a10c] text-white rounded-md hover:bg-orange-600 animate-pulse font-bold shadow-md"
           type="submit"
         >
-        Search In Your Country
+          Search In Your Country
         </button>
       </div>
       <h2
@@ -72,7 +72,7 @@ export default function JobSearchBox() {
             l: '',
             q: encodeURIComponent(a.q || ''),
           });
-          router.push(`/find-jobs?${params.toString()}`);
+          router.push(`/jobs?${params.toString()}`);
         }}
       >
         Or Search Globally

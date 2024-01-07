@@ -29,7 +29,7 @@ export default function JobSearchBox({ q, l }: MyComponentProps) {
       l: encodeURIComponent(locationRef.current?.value.trim() || ''),
       q: encodeURIComponent(keyWordRef.current?.value.trim() || ''),
     });
-    router.push(`/find-jobs?${params.toString()}`);
+    router.push(`/jobs?${params.toString()}`);
   };
   return (
     <div className="search-panel py-10">

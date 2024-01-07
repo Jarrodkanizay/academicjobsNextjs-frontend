@@ -22,7 +22,7 @@ const Findemployerss = () => {
                 alt="The Top Academic Employers"
                 width={1280}
                 height={380}
-               
+
               />
               <div>
                 <h1 className="text-3xl font-bold text-aj">
@@ -403,7 +403,7 @@ const Findemployerss = () => {
                     </li>
                     <li><Link href="/employers/university-of-sunshine-coast/3859/">University of Sunshine
                       Coast</Link></li>
-                    <li className='mb-1 '><Link href="/find-jobs/northern-territory/" className='text-[#f4a10c] font-bold'>Northern
+                    <li className='mb-1 '><Link href="/jobs/northern-territory/" className='text-[#f4a10c] font-bold'>Northern
                       Territory</Link></li>
                     <li><Link href="/employers/charles-darwin-university/3880/">Charles Darwin
                       University</Link>
