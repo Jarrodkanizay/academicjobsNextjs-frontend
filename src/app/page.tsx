@@ -36,8 +36,8 @@ export default function myPage() {
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
-              width={250}
-              height={160}
+              width={310}
+              height={210}
               viewBox="0 0 424.2 144.5"
               // style="enable-background:new 0 0 424.2 144.5;"
               // xml:space="preserve"
