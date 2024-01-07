@@ -6,19 +6,19 @@ import Link from 'next/link';
 import LogoAJ from '@/components/brand/LogoAJ';
 import NavItem from '@/components/NavItem';
 import DispatchLink from "@/components/DispatchLink";
+import { useStore } from '@/lib/store/store';
+
 import {
   countryMappings,
   countryMappings1,
   countryMappings2,
 } from '@/lib/data/data';
 export default function Header() {
-  // const navigate = useNavigate();
-  // const dispatch = useDispatch();
+  const { region } = useStore();
   const pathname = usePathname();
-
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [dropdown, setDropdown] = useState(false);
-  const region = 'Global';
+  //const region = 'Global';
   const ref = useRef(null);
   const onMouseEnter = (e) => {
     setDropdown(true);
@@ -26,12 +26,10 @@ export default function Header() {
   const onMouseLeave = () => {
     setDropdown(false);
   };
-
-
   //alert(router.pathname)
   // const region = useSelector((state) => state.posts.region);
   // console.log(region)
-  const handleFormSubmit = () => {};
+  const handleFormSubmit = () => { };
   // const handleFormSubmit = () => {
   //   if (region !== "Global") {
   //     navigate("/jobs/", {
@@ -119,22 +117,20 @@ export default function Header() {
                 onMouseEnter={onMouseEnter}
               >
                 {countryMappings1[region].hasPic ? (
-                  <img
+                  <Image
                     src={`https://academicjobs.s3.amazonaws.com/icon/countryFlag/${region}.svg`}
                     alt={region}
-                    style={{ height: '30px' }}
+                    width={30} height={30}
                   />
                 ) : (
                   <span className="" style={{ height: '20px' }}>
-                    {' '}
-                    {region}{' '}
+                    {region}
                   </span>
                 )}
                 <ul
                   onMouseLeave={onMouseLeave}
-                  className={`${
-                    dropdown ? 'block' : 'hidden'
-                  } absolute  left-0 text-[0.875rem] z-99  min-w-[10rem] py-1 bg-white rounded-lg shadow-lg shadow-indigo-500/40`}
+                  className={`${dropdown ? 'block' : 'hidden'
+                    } absolute  left-0 text-[0.875rem] z-99  min-w-[10rem] py-1 bg-white rounded-lg shadow-lg shadow-indigo-500/40`}
                   ref={ref}
                 >
                   {Object.keys(countryMappings1).map((key) => (

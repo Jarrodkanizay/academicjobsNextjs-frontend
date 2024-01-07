@@ -4,9 +4,8 @@ import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 //import { useParams } from 'next/navigation'
 export const metadata = {
-  // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: '  Academic Lecturer Jobs', //Option 2 overrides the title in layout.tsx
+    absolute: '  Academic Lecturer Jobs', 
   },
   description:
     'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',

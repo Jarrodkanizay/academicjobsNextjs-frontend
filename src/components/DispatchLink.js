@@ -9,6 +9,7 @@ const DispatchLink = ({ to, region, children, setDropdown, setIsNavOpen }) => {
     const handleClick = (e) => {
         e.preventDefault();
         setRegion(region)
+        console.log("region", region)
         router.push(to);
 
         setDropdown(false);
