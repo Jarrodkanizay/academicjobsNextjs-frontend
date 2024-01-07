@@ -91,7 +91,7 @@ export default function Header() {
               forceClass="" //this is optional
             />
             <NavItem
-              url="/employers"
+              url="/Global/employers"
               icon="/upward-arrow.svg"
               navLink="Top Universities"
             />
