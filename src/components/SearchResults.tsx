@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import JobList from '@/components/JobList';
 import BaseApi from '@/lib/store/Base';
+import { BsHandbag } from 'react-icons/bs';
 interface SearchResultsProps {
   q: {
     q?: string;
@@ -13,6 +14,7 @@ export default function SearchResults({ q }: SearchResultsProps) {
   console.log('==============SearchResults==================');
   const [page, setPage] = useState(0);
   console.log('q1', q, page);
+  //useGetQtyQuery({ q: q, l: l || '', filter1 });
   const {
     isPending,
     isError,
@@ -32,29 +34,25 @@ export default function SearchResults({ q }: SearchResultsProps) {
     // enabled: q && Object.keys(q).length > 0,
     placeholderData: keepPreviousData,
   });
-  console.log(
-    isPending,
-    isError,
-    isSuccess,
-    error,
-    data,
-    isFetching,
-    isPlaceholderData
-  );
-  // const { status, error, data, isPreviousData } = useQuery({
-  //   queryKey: ['jobs', { page }],
-  //   keepPreviousData: true,
-  //   queryFn: async (page) => {
-  //     const response = await axios.post(
-  //       'https://api1.sciencejobs.com.au/api/jobs',
-  //       q
-  //     );
-  //     console.log(response.data);
-  //     console.log('response.data.data', response.data.data);
-  //     return response.data.data;
-  //   },
-  //   enabled: q && Object.keys(q).length > 0,
-  // });
+  console.log('data', data);
+  const {
+    isPending: isPendingQty,
+    isError: isErrorQty,
+    isSuccess: isSuccessQty,
+    error: errorQty,
+    data: dataQty,
+    isFetching: isFetchingQty,
+    isPlaceholderData: isPlaceholderDataQty,
+  } = useQuery({
+    queryKey: ['qty', q],
+    queryFn: async () => {
+      const response = await BaseApi.post('/jobQty', { ...q, page });
+      console.log(response.data);
+      console.log('response.data.data', response.data.data);
+      return response.data.data;
+    },
+    enabled: data?.jobs?.length > 0,
+  });
   let content;
   const handlePageChange = (direction: any) => {
     if (direction === 'prev') {
@@ -158,6 +156,10 @@ export default function SearchResults({ q }: SearchResultsProps) {
       console.log('data', data);
       content = (
         <div className="content-grid mx-auto w-2/5">
+          <div className="flex justify-start items-start font-bold gap-2 ">
+            <BsHandbag />
+            {dataQty && <span>{`${dataQty} Academic Jobs Found`}</span>}
+          </div>
           <JobList
             data={data}
             handlePageChange={handlePageChange}
