@@ -6,14 +6,17 @@ const nextConfig = {
       'res.cloudinary.com',
       'iloveacademicjobs.com',
     ],
-    // remotePatterns: [
-    //   {
-    //     protocol: 'https',
-    //     hostname: 'academicjobs.s3.amazonaws.com',
-    //     port: '',
-    //     pathname: '/img/*',
-    //   },
-    // ],
+  },
+  async redirects() {
+    return [
+      {
+        source: '/employers',
+        destination: '/Global/employers',
+        permanent: true,
+      },
+    ];
   },
 };
+
 module.exports = nextConfig;
+
