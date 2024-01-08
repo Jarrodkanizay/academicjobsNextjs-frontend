@@ -29,9 +29,14 @@ export default function Header() {
   return (
     <header className="">
       <nav>
-        <Link href="/" className="mr-10">
-          {pathname === '/' || <LogoAJ width={270} height={60} />}
-        </Link>
+        {pathname === '/' ? (
+          ''
+        ) : (
+          <Link href="/" className="static-logo mr-4">
+            <LogoAJ width={270} height={60} />{' '}
+          </Link>
+        )}
+
         <NavItem
           url="/jobs"
           icon="/dotted-arrow.svg"
