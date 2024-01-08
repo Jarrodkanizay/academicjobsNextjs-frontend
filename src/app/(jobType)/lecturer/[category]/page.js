@@ -33,6 +33,32 @@ export default function Page({ params, searchParams }) {
       <div className="max-h-50 overflow-y  border border-[#f4a10c] text-gray-500 p-4 mb-4 rounded-lg shadow-lg">
         {content1}
       </div>
+
+      <div className="bg-slate-200 full-width">
+      <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
+      <h1 className="text-3xl font-normal text-right text-gray-400 m-0">
+              <span className="text-6xl font-bold  text-right text-gray-500 pb-4">{Title}</span> 
+              </h1>
+              
+            <div>
+            
+            <p className="px-7 mb-4 mt-1">
+            {content1}
+            </p>
+            <p className="px-7">
+            Lecturers can find university jobs online, compare competitive salaries,
+        generous benefits, and supportive work environments.
+   
+        Sign up as a ‘Global Academic’ to get an academic ranking, and to get
+        the opportunity to collaborate with national and international partners,
+        to work with some of the best minds in your discipline, and access
+        world-class facilities and resources.
+            </p>
+         
+            </div>
+          </div>
+          </div>
+
       <JobSearchBox q="lecturer" />
       <SearchResults q={{ q: 'lecturer' || 0 }} />
     </div>

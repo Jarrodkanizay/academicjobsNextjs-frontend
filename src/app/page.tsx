@@ -294,7 +294,7 @@ export default function myPage() {
         className="mt-[-1rem] px-5"
       >
         <div className=" ">
-        <div className="bg-slate-200 breakout">
+        <div className="bg-slate-200 full-width">
       <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
       <h1 className="text-3xl font-normal text-right text-gray-400 m-0">
               <span className="text-6xl font-bold  text-right text-gray-500 pb-4">ACADEMIC&nbsp;JOBS:</span> Academic, research &&nbsp;science positions locally
