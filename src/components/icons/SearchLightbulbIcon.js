@@ -1,5 +1,3 @@
-import React from "react";
-
 const SearchLightbulbIcon = ({ width = 32, height = 32, dimensions }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

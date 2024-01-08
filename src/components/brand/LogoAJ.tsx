@@ -2,9 +2,15 @@ type Props = {
   width?: number;
   height?: number;
   dimensions?: number;
+  forceClass?: string;
 };
 
-const AcademicJobsLogo = ({ width = 32, height = 32, dimensions }: Props) => (
+const AcademicJobsLogo = ({
+  width = 32,
+  height = 32,
+  dimensions,
+  forceClass,
+}: Props) => (
   <svg
     version="1.1"
     id="Layer_1"
