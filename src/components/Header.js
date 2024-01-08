@@ -18,6 +18,7 @@ export default function Header() {
   const { region } = useStore();
   const pathname = usePathname();
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [mobileMode, setMobileMode] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const ref = useRef(null);
   const onMouseEnter = (e) => {
@@ -32,17 +33,21 @@ export default function Header() {
       <HamburgerMenuIcon
         onClick={() => {
           setIsNavOpen(!isNavOpen);
+          setMobileMode(!isNavOpen);
         }}
       />
       <header className={`header ${isNavOpen ? 'show-menu' : ''}`}>
         <nav>
-          {pathname === '/' || isNavOpen ? (
-            ''
-          ) : (
+          {pathname === '/' ? null : (
             <Link href="/" className="static-logo mr-4">
               <LogoAJ width={270} height={60} />{' '}
             </Link>
           )}
+          {mobileMode ? (
+            <Link href="/" className="static-logo mr-4">
+              <LogoAJ width={270} height={60} />{' '}
+            </Link>
+          ) : null}
 
           <NavItem
             url="/jobs"
@@ -115,7 +120,7 @@ export default function Header() {
             forceButtonClass="nav-mobile-btn btn btn-aj"
           />
         </nav>
-        <style>{`
+        {/* <style>{`
       .hideMenuNav {
         display: none;
       }
@@ -134,7 +139,7 @@ export default function Header() {
         align-items: end;
         background: rgba(0,0,0,.4);
       }
-    `}</style>
+    `}</style> */}
       </header>
     </>
   );
