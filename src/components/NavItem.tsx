@@ -5,24 +5,30 @@ type NavLinkProps = {
   url: string;
   icon?: string;
   navLink: string;
-  forceClass?: string;
+  forceLinkClass: string;
+  forceButtonClass?: string;
+  forceImageClass?: string;
 };
 
 export default function NavLink({
   url,
   icon,
   navLink,
-  forceClass,
+  forceLinkClass,
+  forceButtonClass,
+  forceImageClass,
 }: NavLinkProps) {
   const iconWidth = 22;
   const iconHeight = 22;
   return (
-    <Link href={url} passHref>
-      <div className="nav-link nav-link-ltr whitespace-nowrap text-gray-900">
+    <Link href={url} passHref className={`${forceLinkClass}`}>
+      <div
+        className={`nav-link nav-link-ltr whitespace-nowrap text-gray-900 ${forceButtonClass}`}
+      >
         <span className="flex flex-row items-center justify-center gap-1 m-auto">
           {icon && (
             <Image
-              className={`nav-icon ${forceClass}`}
+              className={`nav-icon ${forceImageClass}`}
               src={icon ? icon : '#'}
               alt={navLink}
               width={iconWidth}
