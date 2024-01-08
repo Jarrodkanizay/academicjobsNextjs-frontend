@@ -351,22 +351,21 @@ export default function myPage() {
                   <ul className="">
                     <li className="mb-1 mt-4 hover:underline">
                       <Link
-                        href="/jobs/Assistant-Professor-in-Pasifika-Theater-and-Performance-Studies,-UCLA/76215/"
+                        href="/jobs/postdoctoral-position-in-multiplexed-single-cell-rnaseq-based-antibody-discovery/81986"
                         className="text-blue-500 font-bold"
                       >
-                        Assistant Professor in Pasifika Theater and Performance
-                        Studies, UCLA
+                        Postdoctoral position in multiplexed single-cell RNAseq-based antibody discovery
                       </Link>
                     </li>
                     <ul className="innerUL">
                       <li>
-                        <Link href="">University of California, Los Angeles</Link>
+                        <Link href="">Ecole Polytechnique</Link>
                       </li>
                       <li>
-                        <Link href="">Los Angeles, California,USA</Link>
+                        <Link href="">Lausanne, Switzerland</Link>
                       </li>
                       <li>
-                        <Link href="">5 Jan, 2024</Link>
+                        <Link href="">Feb 5, 2024</Link>
                       </li>
                     </ul>
                   </ul>
@@ -375,7 +374,7 @@ export default function myPage() {
                   <ul className="">
                     <li className="mb-1 mt-4 hover:underline">
                       <Link
-                        href="https://www.academicjobs.com/jobs/assistant-associate-professor-of-environmental-toxicology-tenure-track-appointment/78925/"
+                        href="/jobs/assistant-associate-professor-of-environmental-toxicology-tenure-track-appointment/78925/"
                         className="text-blue-500 font-bold"
                       >
                        Assistant/Associate Professor of Environmental Toxicology (tenure track appointment)
@@ -389,7 +388,7 @@ export default function myPage() {
                         <Link href="">Davis, CA, USA</Link>
                       </li>
                       <li>
-                        <Link href="">16 Jan, 2023</Link>
+                        <Link href="">Feb 14, 2024</Link>
                       </li>
                     </ul>
                   </ul>
@@ -398,21 +397,21 @@ export default function myPage() {
                   <ul className="">
                     <li className="mb-1 mt-4 hover:underline">
                       <Link
-                        href="/jobs/Project-Director-DHSI-Grant-Academic-Affairs/75567/"
+                        href="/jobs/tenured-professor-epidemiology/81981"
                         className="text-blue-500 font-bold"
                       >
-                        Project Director DHSI Grant - Academic Affairs
+                        Tenured Professor - Epidemiology
                       </Link>
                     </li>
                     <ul className="innerUL">
                       <li>
-                        <Link href="">University of Texas Permian Basin</Link>
+                        <Link href="">Rutgers, The State University of New Jersey</Link>
                       </li>
                       <li>
-                        <Link href="">Odessa, Texas,USA</Link>
+                        <Link href="">New Brunswick, New Jersey, USA</Link>
                       </li>
                       <li>
-                        <Link href="">1 Jan, 2024</Link>
+                        <Link href="">Feb 5, 2024</Link>
                       </li>
                     </ul>
                   </ul>
@@ -447,21 +446,21 @@ export default function myPage() {
                   <ul className="">
                     <li className="mb-1 mt-4 hover:underline">
                       <Link
-                        href="https://www.academicjobs.com/jobs/computer-science-engineering-lecturer/72982//"
+                        href="/jobs/assistant-professor-associate-professor-of-economics/81980/"
                         className="text-blue-500 font-bold"
                       >
-                        University of Minnesota Twin Cities
+                        Assistant Professor/Associate Professor of Economics
                       </Link>
                     </li>
                     <ul className="innerUL">
                       <li>
-                        <Link href="">University of Minnesota Twin Cities</Link>
+                        <Link href="">University of North Carolina Wilmington</Link>
                       </li>
                       <li>
-                        <Link href="">Minneapolis, Minnesota, USA</Link>
+                        <Link href="">Wilmington, North Carolina, USA</Link>
                       </li>
                       <li>
-                        <Link href="">Jan 1, 2024</Link>
+                        <Link href="">Feb 5, 2024</Link>
                       </li>
                     </ul>
                   </ul>
@@ -588,11 +587,10 @@ export default function myPage() {
                   <ul className="">
                     <li className="mb-1 mt-4 hover:underline">
                       <Link
-                        href="https://www.academicjobs.com/jobs/assistant-professor-or-associate-professor-complex-family-planning-division/44611/"
+                        href="/jobs/lecturer-chemical-and-environmental-engineering/80802"
                         className="text-blue-500 font-bold"
                       >
-                        Assistant Professor or Associate Professor - Complex
-                        Family Planning Division
+                        Lecturer, Chemical and Environmental Engineering
                       </Link>
                     </li>
                     <ul className="innerUL">
@@ -603,7 +601,7 @@ export default function myPage() {
                         <Link href="">New Haven, CT, USA</Link>
                       </li>
                       <li>
-                        <Link href="">6 Jan, 2024</Link>
+                        <Link href="">May 31, 2024</Link>
                       </li>
                     </ul>
                   </ul>
@@ -635,11 +633,10 @@ export default function myPage() {
                   <ul className="">
                     <li className="mb-1 mt-4 hover:underline">
                       <Link
-                        href="https://www.academicjobs.com/jobs/Executive-Officer---Full-time---Permanent---Robina---Gold-Coast/69249/"
+                        href="/jobs/phd-students-call-for-expressions-of-interest-multiple-topics-faculty-of-law/78929"
                         className="text-blue-500 font-bold"
                       >
-                        Executive Officer - Full time - Permanent - Robina -
-                        Gold Coast
+                        PhD Students- Call for Expressions of Interest - Multiple Topics, Faculty of Law
                       </Link>
                     </li>
                     <ul className="innerUL">
@@ -647,33 +644,10 @@ export default function myPage() {
                         <Link href="">Bond University</Link>
                       </li>
                       <li>
-                        <Link href="">Gold Coast QLD, Australia</Link>
+                        <Link href="">Robina QLD, Australia</Link>
                       </li>
                       <li>
-                        <Link href="">26 Dec, 2023</Link>
-                      </li>
-                    </ul>
-                  </ul>
-                </div>
-                <div className="column">
-                  <ul className="">
-                    <li className="mb-1 mt-4 hover:underline">
-                      <Link
-                        href="https://www.academicjobs.com/jobs/client-services-officer/70860/"
-                        className="text-blue-500 font-bold"
-                      >
-                        Client Services Officer
-                      </Link>
-                    </li>
-                    <ul className="innerUL">
-                      <li>
-                        <Link href="">Queensland University of Technology</Link>
-                      </li>
-                      <li>
-                        <Link href="">Kelvin Grove Brisbane, QLD</Link>
-                      </li>
-                      <li>
-                        <Link href="">1 Jan, 2024</Link>
+                        <Link href="">Apr 1, 2024</Link>
                       </li>
                     </ul>
                   </ul>
@@ -682,22 +656,44 @@ export default function myPage() {
                   <ul className="">
                     <li className="mb-1 mt-4 hover:underline">
                       <Link
-                        href="https://www.academicjobs.com/jobs/pediatrics-allergy-immunology-rheumatology-health-sciences-series/73113/"
+                        href="/jobs/lecturer-senior-lecturer-associate-professor-professor-of-structural-engineering-timber/78822"
                         className="text-blue-500 font-bold"
                       >
-                        Pediatrics Allergy / Immunology / Rheumatology - Health
-                        Sciences Series
+                        Lecturer/Senior Lecturer/Associate Professor/Professor of Structural Engineering - Timber
                       </Link>
                     </li>
                     <ul className="innerUL">
                       <li>
-                        <Link href="">University of California, Los Angeles</Link>
+                        <Link href="">University of Canterbury</Link>
                       </li>
                       <li>
-                        <Link href="">Los Angeles, CA, USA</Link>
+                        <Link href="">Christchurch, New Zealand</Link>
                       </li>
                       <li>
-                        <Link href=""> Jan 10, 2024</Link>
+                        <Link href="">Jan 28, 2024</Link>
+                      </li>
+                    </ul>
+                  </ul>
+                </div>
+                <div className="column">
+                  <ul className="">
+                    <li className="mb-1 mt-4 hover:underline">
+                      <Link
+                        href="/jobs/provost/79513"
+                        className="text-blue-500 font-bold"
+                      >
+                        Provost
+                      </Link>
+                    </li>
+                    <ul className="innerUL">
+                      <li>
+                        <Link href="">University of North Carolina Asheville</Link>
+                      </li>
+                      <li>
+                        <Link href="">Asheville, NC, USA</Link>
+                      </li>
+                      <li>
+                        <Link href=""> Feb 18, 2024</Link>
                       </li>
                     </ul>
                   </ul>
