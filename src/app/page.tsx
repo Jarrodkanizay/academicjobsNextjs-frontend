@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function myPage() {
   return (
-    <main className="">
+    <main className="content-grid">
       <div className="h-[100vh]">
         <div className="flex flex-col items-center justify-center mb-32">
           <div className="h-[27vh] flex flex-col items-end justify-end">
@@ -293,30 +293,17 @@ export default function myPage() {
         id="section"
         className="mt-[-1rem] px-5"
       >
-        <div className="max-w-screen-xl mx-auto">
-          <div className="blurb text-left py-6 ">
-            <h1 className="font-bold text-lg md:text-3xl py-4 px-6 bg-[#f4a10c] text-white rounded-full mb-6 shadow-xl border-4">
-              ACADEMIC JOBS: Academic, research and science positions locally
-              and globally
-            </h1>
-            <div className="newLine mb-4">
-              <p className="font-semibold"></p>
-              <p className="font-semibold"></p>
-            </div>
-            {/* <p className="px-7 mb-4">
-              Find the best academic positions and administrative jobs in higher
-              ed. Search for academic jobs, college careers and faculty
-              positions online. Seek and apply for lecturer, research, uni admin
-              and senior academic jobs in every university in your country or
-              globally.
-            </p>
-            <p className="px-7">
-              Whether you are a professor, researcher, lecturer, or
-              administrator, you can find the latest opportunities in higher
-              education on academic jobs online.
-            </p>
-            <p className="px-7 mb-4"></p> */}
-            <p className="px-7 mb-4">
+        <div className=" ">
+        <div className="bg-slate-200 breakout">
+      <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
+      <h1 className="text-3xl font-normal text-right text-gray-400 m-0">
+              <span className="text-6xl font-bold  text-right text-gray-500 pb-4">ACADEMIC&nbsp;JOBS:</span> Academic, research &&nbsp;science positions locally
+              & globally
+              </h1>
+              
+            <div>
+            
+            <p className="px-7 mb-4 mt-1">
               Discover top-tier faculty and administrative roles in the world of
               higher education. Begin your search for university academic jobs,
               college faculty positions, and administrative opportunities in
@@ -325,12 +312,16 @@ export default function myPage() {
               academic positions, available nationally and internationally.
             </p>
             <p className="px-7">
-              Whether you're an aspiring or established professor, researcher,
-              lecturer, or higher education administrator, our platform offers
-              the most current opportunities in academia globally. Connect with
-              your next career move in the academic sector through our
-              comprehensive online job board. Find your next academic job now!
+              Whether you&apos;re an aspiring or established professor,
+              researcher, lecturer, or higher education administrator, our
+              platform offers the most current opportunities in academia
+              globally. Connect with your next career move in the academic
+              sector through our comprehensive online job board. Find your next
+              academic job now!
             </p>
+         
+            </div>
+          </div>
           </div>
           {/* <p className="px-7 text-center mt-5">
             <Link
