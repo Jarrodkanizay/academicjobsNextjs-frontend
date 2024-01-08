@@ -21,10 +21,8 @@ export default function myPage() {
 
       <div className="bg-slate-200 full-width">
       <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
-      <h1 className="text-3xl font-normal text-right text-gray-400 m-0">
-              <span className="text-6xl font-bold  text-right text-gray-500 pb-4">Academic Lecturer Jobs</span> Higher Ed, research &&nbsp;science positions locally
-              & globally
-              </h1>
+    
+              <h1 className="text-6xl font-bold m-0 text-right text-gray-500 pb-4">Academic Lecturer Jobs</h1> 
               
             <div>
             
@@ -36,8 +34,7 @@ export default function myPage() {
             </p>
             <p className="px-7">
             Lecturers can find university jobs online, compare competitive salaries,
-        generous benefits, and supportive work environments.
-   
+        generous benefits, and supportive work environments.   
         Sign up as a ‘Global Academic’ to get an academic ranking, and to get
         the opportunity to collaborate with national and international partners,
         to work with some of the best minds in your discipline, and access
@@ -52,7 +49,7 @@ export default function myPage() {
       <div className="bg-white flex flex-col  ">
                <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
               {lecturer.map(({ Title, Name, }, key) => (
-                <li className={`pb-2 flex ${' md:break' } ${ ' font-bold text-blue-500' }`} key={key}>
+                <li className={`pb-2 flex ${' md:break' } ${ ' font-bold text-gray-400' }`} key={key}>
                   <Link href={`/lecturer/${Name?.replace(/\s+/g, '-')}/`}>{Name}</Link>
                 </li>
               ))}
