@@ -90,14 +90,15 @@ export default function myPage() {
       {/* Hero Panel */}
       <div
         id="section"
-        className="hero-content flex-col lg:flex-row mx-auto items-start py-12 bg-slate-200 breakout full-width prose"
-      >
-        <h1 className="text-3xl md:text-6xl font-normal text-gray-500 mt-12">
-          ACADEMIC JOBS:
+        className="hero-content flex-col lg:flex-row mx-auto items-start py-12 bg-slate-200 breakout full-width prose "
+      ><div>
+        <h1 className="text-3xl md:text-6xl font-normal text-gray-500 mt-12 text-right">
+          ACADEMIC JOBS: Academic, research &&nbsp;science positions locally & globally
         </h1>
-        <h2 className="mt-0">
+        <h2 className="mt-0 text-right">
           Academic, research &&nbsp;science positions locally & globally
         </h2>
+        </div>
         <div className="text-col-2 mb-12">
           <p>
             Discover top-tier faculty and administrative roles in the world of
@@ -116,6 +117,35 @@ export default function myPage() {
           </p>
         </div>
       </div>
+
+      <div className="bg-slate-200 full-width">
+      <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
+    
+              <h1 className="text-7xl font-bold m-0 text-right text-gray-500 pb-4 mt-0"> ACADEMIC JOBS: <span className="text-3xl font-normal ">Academic, research &&nbsp;science positions locally & globally</span></h1> 
+          
+            <div>
+            
+            <p className="px-7 mb-4 mt-1">
+            Discover top-tier faculty and administrative roles in the world of
+            higher education. Begin your search for university academic jobs,
+            college faculty positions, and administrative opportunities in
+            higher ed. Explore and apply for a range of roles, including
+            lecturer, researcher, university administrator, and senior academic
+            positions, available nationally and internationally.
+            </p>
+            <p className="px-7">
+            Whether you&apos;re an aspiring or established professor,
+            researcher, lecturer, or higher education administrator, our
+            platform offers the most current opportunities in academia globally.
+            Connect with your next career move in the academic sector through
+            our comprehensive online job board. Find your next academic job now!
+            </p>
+         
+            </div>
+          </div>
+          </div>
+
+
 
       <div className="full-width">
         <div className=""></div>
