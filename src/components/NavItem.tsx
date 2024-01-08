@@ -19,7 +19,7 @@ export default function NavLink({
   forceImageClass,
 }: NavLinkProps) {
   const iconWidth = 22;
-  const iconHeight = 22;
+  const iconHeight = iconWidth;
   return (
     <Link href={url} passHref className={`${forceLinkClass}`}>
       <div

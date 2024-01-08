@@ -2,9 +2,22 @@ html {
   body,
   body .prose {
     header {
-      background-color: white;
+      padding: 20px;
       nav {
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .btn-mode {
+          width: 100%;
+          flex-grow: 1;
+          margin-left: auto;
+        }
+        .nav-mobile-btn.nav-link-ltr {
+          border-color: var(--color-primary);
+          background-color: white;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
 
         .nav-icon {
           fill: var(--color-primary);
@@ -89,38 +102,38 @@ html {
         }
       }
     }
-    @media (max-width: 1023px) {
-      header {
-        position: absolute;
-        z-index: 99999;
-        inset: 0px;
-        padding-bottom: 20px;
-      }
-      nav {
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
+    // @media (max-width: 1023px) {
+    //   header {
+    //     position: absolute;
+    //     z-index: 99999;
+    //     inset: 0px;
+    //     padding-bottom: 20px;
+    //     nav {
+    //       flex-direction: column;
+    //       align-items: flex-start;
+    //       justify-content: flex-start;
 
-        .btn-mode {
-          width: 100%;
-          flex-grow: 1;
-        }
-        .nav-mobile-btn.nav-link-ltr {
-          border-color: var(--color-primary);
-          background-color: white;
-          padding-left: 20px;
-          padding-right: 20px;
-        }
+    //       .btn-mode {
+    //         width: 100%;
+    //         flex-grow: 1;
+    //       }
+    //       .nav-mobile-btn.nav-link-ltr {
+    //         border-color: var(--color-primary);
+    //         background-color: white;
+    //         padding-left: 20px;
+    //         padding-right: 20px;
+    //       }
 
-        .nav-mobile-btn.nav-link-ltr::before,
-        .nav-mobile-btn.nav-link-ltr::after {
-          display: none;
-        }
+    //       .nav-mobile-btn.nav-link-ltr::before,
+    //       .nav-mobile-btn.nav-link-ltr::after {
+    //         display: none;
+    //       }
 
-        .hide-mobile {
-          display: none;
-        }
-      }
-    }
+    //       .hide-mobile {
+    //         display: none;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }

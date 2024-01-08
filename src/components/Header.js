@@ -28,12 +28,10 @@ export default function Header() {
 
   return (
     <header className="">
-      <nav className="md:w-full">
-        <Link href="/" className="">
-          {pathname === '/' || <LogoAJ width={200} height={100} />}
+      <nav>
+        <Link href="/" className="mr-10">
+          {pathname === '/' || <LogoAJ width={270} height={60} />}
         </Link>
-        {/* <div className="DESKTOP-MENU "> */}
-        {/* <div className="w-full columns-1 flex justify-start  md:items-center md:gap-1 "> */}
         <NavItem
           url="/jobs"
           icon="/dotted-arrow.svg"
