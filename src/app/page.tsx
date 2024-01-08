@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   keywords:
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
-
 export default function myPage() {
+  //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
   return (
     <main className="content-grid">
       <div className="h-[100vh]">
@@ -213,13 +213,11 @@ export default function myPage() {
               </g>
             </svg>
           </div>
-
           {/* Job Search Form */}
           <div className="w-full md:w-3/6 h-[6vh] flex flex-col items-top mt-[-1rem]">
             <JobSearchBoxHome />
           </div>
         </div>
-
         <div className="mt-[3rem] ">
           <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 px-2">
             <li className="hover:underline">
@@ -257,7 +255,6 @@ export default function myPage() {
             </li>
           </ul>
         </div>
-
         {/* Employment Type Container */}
         <div className="mt-7">
           <ul className="faculty-container flex gap-4 items-center justify-center text-[#f4a10c] px-2">
@@ -278,50 +275,43 @@ export default function myPage() {
             </li>
           </ul>
         </div>
-
         <div className="text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16rem]">
           <a href="#section" className="scroll-smooth md:scroll-auto">
             ▼
           </a>
         </div>
       </div>
-
-   
-
       {/* Main Content Panel */}
-      <div
-        id="section"
-        className="mt-[-1rem] px-5"
-      >
+      <div id="section" className="mt-[-1rem] px-5">
         <div className=" ">
-        <div className="bg-slate-200 full-width">
-      <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
-      <h1 className="text-3xl font-normal text-right text-gray-400 m-0">
-              <span className="text-6xl font-bold  text-right text-gray-500 pb-4">ACADEMIC&nbsp;JOBS:</span> Academic, research &&nbsp;science positions locally
-              & globally
+          <div className="bg-slate-200 full-width">
+            <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
+              <h1 className="text-3xl font-normal text-right text-gray-400 m-0">
+                <span className="text-6xl font-bold  text-right text-gray-500 pb-4">
+                  ACADEMIC&nbsp;JOBS:
+                </span>{' '}
+                Academic, research &&nbsp;science positions locally & globally
               </h1>
-              
-            <div>
-            
-            <p className="px-7 mb-4 mt-1">
-              Discover top-tier faculty and administrative roles in the world of
-              higher education. Begin your search for university academic jobs,
-              college faculty positions, and administrative opportunities in
-              higher ed. Explore and apply for a range of roles, including
-              lecturer, researcher, university administrator, and senior
-              academic positions, available nationally and internationally.
-            </p>
-            <p className="px-7">
-              Whether you&apos;re an aspiring or established professor,
-              researcher, lecturer, or higher education administrator, our
-              platform offers the most current opportunities in academia
-              globally. Connect with your next career move in the academic
-              sector through our comprehensive online job board. Find your next
-              academic job now!
-            </p>
-         
+              <div>
+                <p className="px-7 mb-4 mt-1">
+                  Discover top-tier faculty and administrative roles in the
+                  world of higher education. Begin your search for university
+                  academic jobs, college faculty positions, and administrative
+                  opportunities in higher ed. Explore and apply for a range of
+                  roles, including lecturer, researcher, university
+                  administrator, and senior academic positions, available
+                  nationally and internationally.
+                </p>
+                <p className="px-7">
+                  Whether you&apos;re an aspiring or established professor,
+                  researcher, lecturer, or higher education administrator, our
+                  platform offers the most current opportunities in academia
+                  globally. Connect with your next career move in the academic
+                  sector through our comprehensive online job board. Find your
+                  next academic job now!
+                </p>
+              </div>
             </div>
-          </div>
           </div>
           {/* <p className="px-7 text-center mt-5">
             <Link
@@ -351,7 +341,9 @@ export default function myPage() {
                     </li>
                     <ul className="innerUL">
                       <li>
-                        <Link href="">University of California, Los Angeles</Link>
+                        <Link href="">
+                          University of California, Los Angeles
+                        </Link>
                       </li>
                       <li>
                         <Link href="">Los Angeles, California,USA</Link>
@@ -369,7 +361,8 @@ export default function myPage() {
                         href="https://www.academicjobs.com/jobs/assistant-associate-professor-of-environmental-toxicology-tenure-track-appointment/78925/"
                         className="text-blue-500 font-bold"
                       >
-                       Assistant/Associate Professor of Environmental Toxicology (tenure track appointment)
+                        Assistant/Associate Professor of Environmental
+                        Toxicology (tenure track appointment)
                       </Link>
                     </li>
                     <ul className="innerUL">
@@ -421,7 +414,9 @@ export default function myPage() {
                     </li>
                     <ul className="innerUL">
                       <li>
-                        <Link href="">University of California, Los Angeles</Link>
+                        <Link href="">
+                          University of California, Los Angeles
+                        </Link>
                       </li>
                       <li>
                         <Link href="">Los Angeles, CA, USA</Link>
@@ -682,7 +677,9 @@ export default function myPage() {
                     </li>
                     <ul className="innerUL">
                       <li>
-                        <Link href="">University of California, Los Angeles</Link>
+                        <Link href="">
+                          University of California, Los Angeles
+                        </Link>
                       </li>
                       <li>
                         <Link href="">Los Angeles, CA, USA</Link>
@@ -706,7 +703,9 @@ export default function myPage() {
                     </li>
                     <ul className="innerUL">
                       <li>
-                        <Link href="">University of California, Los Angeles</Link>
+                        <Link href="">
+                          University of California, Los Angeles
+                        </Link>
                       </li>
                       <li>
                         <Link href="">Los Angeles, CA, USA</Link>
@@ -720,7 +719,10 @@ export default function myPage() {
               </div>
             </div>
           </div>
-          <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
+          <Link
+            className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold"
+            href="/jobs/"
+          >
             view more top jobs →
           </Link>
           <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl mt-20 shadow-md">
@@ -830,7 +832,10 @@ export default function myPage() {
                 <div className="column">
                   <ul className="">
                     <li className="mb-1 mt-4">
-                      <Link href="/Canada/" className="text-[#f4a10c] font-bold">
+                      <Link
+                        href="/Canada/"
+                        className="text-[#f4a10c] font-bold"
+                      >
                         Canada
                       </Link>
                     </li>
@@ -869,7 +874,10 @@ export default function myPage() {
                 <div className="column">
                   <ul className="">
                     <li className="mb-1 mt-4">
-                      <Link href="/Europe/" className="text-[#f4a10c] font-bold">
+                      <Link
+                        href="/Europe/"
+                        className="text-[#f4a10c] font-bold"
+                      >
                         Europe
                       </Link>
                     </li>
@@ -916,10 +924,14 @@ export default function myPage() {
                     </li>
                     <ul className="innerUL">
                       <li className="hover:underline">
-                        <Link href="/jobs/QUT-lecturer/">QUT Lecturing Jobs</Link>
+                        <Link href="/jobs/QUT-lecturer/">
+                          QUT Lecturing Jobs
+                        </Link>
                       </li>
                       <li className="hover:underline">
-                        <Link href="/jobs/QUT-research/">QUT Research Jobs</Link>
+                        <Link href="/jobs/QUT-research/">
+                          QUT Research Jobs
+                        </Link>
                       </li>
                       <li className="hover:underline">
                         <Link href="/jobs/QUT-professor/">
@@ -1098,19 +1110,19 @@ export default function myPage() {
                     <ul className="pb-4">
                       <li className="hover:underline">
                         <Link href="/employers/harvard-university/3100/">
-                          {" "}
+                          {' '}
                           Harvard University
                         </Link>
                       </li>
                       <li className="hover:underline">
                         <Link href="/employers/stanford-university/3101/">
-                          {" "}
+                          {' '}
                           Stanford University
                         </Link>
                       </li>
                       <li className="hover:underline">
                         <Link href="/employers/university-of-cambridge/12635/">
-                          {" "}
+                          {' '}
                           University of Cambridge
                         </Link>
                       </li>
@@ -1121,7 +1133,7 @@ export default function myPage() {
                       </li>
                       <li className="hover:underline">
                         <Link href="/employers/university-of-california-berkeley/3105/">
-                          {" "}
+                          {' '}
                           University of California, Berkeley
                         </Link>
                       </li>
@@ -1133,19 +1145,19 @@ export default function myPage() {
                     <ul className="innerUL">
                       <li className="hover:underline">
                         <Link href="/employers/princeton-university/3104/">
-                          {" "}
+                          {' '}
                           Princeton University
                         </Link>
                       </li>
                       <li className="hover:underline">
                         <Link href="/employers/university-of-oxford/3099/">
-                          {" "}
+                          {' '}
                           University of Oxford
                         </Link>
                       </li>
                       <li className="hover:underline">
                         <Link href="/employers/columbia-university/3127/">
-                          {" "}
+                          {' '}
                           Columbia University
                         </Link>
                       </li>
@@ -1154,7 +1166,7 @@ export default function myPage() {
                       </li>
                       <li className="hover:underline">
                         <Link href="/employers/University-of-Chicago/3126/">
-                          {" "}
+                          {' '}
                           University of Chicago
                         </Link>
                       </li>
@@ -1166,7 +1178,7 @@ export default function myPage() {
                     <ul className="innerUL">
                       <li className="hover:underline">
                         <Link href="/employers/yale-university/3125/">
-                          {" "}
+                          {' '}
                           Yale University
                         </Link>
                       </li>
@@ -1202,7 +1214,9 @@ export default function myPage() {
                         </Link>
                       </li>
                       <li className="hover:underline">
-                        <Link href="/employers/eth-zurich/3132/">ETH Zurich</Link>
+                        <Link href="/employers/eth-zurich/3132/">
+                          ETH Zurich
+                        </Link>
                       </li>
                       <li className="hover:underline">
                         <Link href="/employers/university-of-tokyo/3155/">
@@ -1216,7 +1230,7 @@ export default function myPage() {
                       </li>
                       <li className="hover:underline">
                         <Link href="/employers/duke-university/3139/">
-                          {" "}
+                          {' '}
                           Duke University (Duke)
                         </Link>
                       </li>
@@ -1236,7 +1250,7 @@ export default function myPage() {
           </div>
           <div className="flex flex-col  ">
             <Link href="/industry/">
-              {" "}
+              {' '}
               <h2 className="  py-4 px-7 border-4 text-[#f4a10c] rounded-full mt-10 hover:bg-orange-500 hover:text-white shadow-md mb-12">
                 → Find Academic Positions in
                 <span className="font-bold"> Industry</span> ( i.e. laboratory
@@ -1246,7 +1260,6 @@ export default function myPage() {
           </div>
         </div>
       </div>
-
     </main>
   );
 }
