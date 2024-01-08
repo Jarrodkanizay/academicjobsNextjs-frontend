@@ -25,31 +25,18 @@ export default function myPage() {
             <div>
             
             <p className="px-7 mb-4 mt-1">
-            Find all jobs for lecturers from top ranking universities on
-        AcademicJobs today. Our universities are looking for the best lecturers,
-        and our academic jobs platform allows lecturers to seek great careers in
-        lecturing around the world.
+            View all of the executive jobs that respectable universities now have available on AcademicJobs. Our academic institutions are constantly seeking the greatest executives, and academics may apply for fantastic global academic executive positions through our website.
             </p>
             <p className="px-7">
-            Lecturers can find university jobs online, compare competitive salaries,
-        generous benefits, and supportive work environments.   
-        Sign up as a ‘Global Academic’ to get an academic ranking, and to get
-        the opportunity to collaborate with national and international partners,
-        to work with some of the best minds in your discipline, and access
-        world-class facilities and resources.
+            Academic Executive Jobs contain leadership, management, and direction for a specific academic unit or function within a higher education institution. Academic Executive Jobs set the goals and objectives of the unit or function, overseeing the academic programs and activities, ensuring the quality and standards of teaching and research, supporting and developing the staff and students, and managing the financial and human resources.
             </p>
          
             </div>
           </div>
           </div>
 
-              <h1>
-              Academic Executive Jobs
-              </h1>
-              <p>
-              View all of the executive jobs that respectable universities now have available on AcademicJobs. Our academic institutions are constantly seeking the greatest executives, and academics may apply for fantastic global academic executive positions through our website.</p>
-
-              <p className='pt-4'>Academic Executive Jobs contain leadership, management, and direction for a specific academic unit or function within a higher education institution. Academic Executive Jobs set the goals and objectives of the unit or function, overseeing the academic programs and activities, ensuring the quality and standards of teaching and research, supporting and developing the staff and students, and managing the financial and human resources.</p>
+      
+           
 
               <div className="bg-white flex flex-col  ">
                <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
