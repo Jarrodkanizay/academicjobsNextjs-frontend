@@ -88,9 +88,9 @@ export default function myPage() {
       </a>
 
       {/* Hero Panel */}
-      <div
+      {/* <div
         id="section"
-        className="hero-content flex-col lg:flex-row mx-auto items-start py-12 bg-slate-200 breakout full-width prose "
+        className="hero-content flex-col lg:flex-row mx-auto items-start py-12 bg-slate-200 breakout full-width prose w-fit"
       ><div>
         <h1 className="text-3xl md:text-6xl font-normal text-gray-500 mt-12 text-right">
           ACADEMIC JOBS: Academic, research &&nbsp;science positions locally & globally
@@ -116,31 +116,34 @@ export default function myPage() {
             our comprehensive online job board. Find your next academic job now!
           </p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="bg-slate-200 full-width">
-      <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
-    
-              <h1 className="text-7xl font-bold m-0 text-right text-gray-500 pb-4 mt-0"> ACADEMIC JOBS: <span className="text-3xl font-normal ">Academic, research &&nbsp;science positions locally & globally</span></h1> 
-          
+      <div id="section" className="bg-slate-200 full-width py-4">
+      <div className="md:hero-content md:flex-col lg:flex-row mx-auto md:items-start py-12">
+      <h1 className="md:text-3xl font-normal md:text-right text-gray-400 m-0 pb-2">
+              <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4">ACADEMIC&nbsp;JOBS:</span> Academic, research &&nbsp;science positions locally
+              & globally
+              </h1>
+              
             <div>
             
             <p className="px-7 mb-4 mt-1">
-            Discover top-tier faculty and administrative roles in the world of
-            higher education. Begin your search for university academic jobs,
-            college faculty positions, and administrative opportunities in
-            higher ed. Explore and apply for a range of roles, including
-            lecturer, researcher, university administrator, and senior academic
-            positions, available nationally and internationally.
+              Discover top-tier faculty and administrative roles in the world of
+              higher education. Begin your search for university academic jobs,
+              college faculty positions, and administrative opportunities in
+              higher ed. Explore and apply for a range of roles, including
+              lecturer, researcher, university administrator, and senior
+              academic positions, available nationally and internationally.
             </p>
             <p className="px-7">
-            Whether you&apos;re an aspiring or established professor,
-            researcher, lecturer, or higher education administrator, our
-            platform offers the most current opportunities in academia globally.
-            Connect with your next career move in the academic sector through
-            our comprehensive online job board. Find your next academic job now!
+              Whether you&apos;re an aspiring or established professor,
+              researcher, lecturer, or higher education administrator, our
+              platform offers the most current opportunities in academia
+              globally. Connect with your next career move in the academic
+              sector through our comprehensive online job board. Find your next
+              academic job now!
             </p>
-         
+            
             </div>
           </div>
           </div>
