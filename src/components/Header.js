@@ -32,12 +32,11 @@ export default function Header() {
       <HamburgerMenuIcon
         onClick={() => {
           setIsNavOpen(!isNavOpen);
-          console.log('clicked');
         }}
       />
       <header className={`header ${isNavOpen ? 'show-menu' : ''}`}>
         <nav>
-          {pathname === '/' ? (
+          {pathname === '/' || isNavOpen ? (
             ''
           ) : (
             <Link href="/" className="static-logo mr-4">
