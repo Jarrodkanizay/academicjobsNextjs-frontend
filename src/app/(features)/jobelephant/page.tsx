@@ -30,9 +30,9 @@ export default function Page() {
 
 
     const pricing: PricingTypes  = {
-      cta: "Buy",
+      cta: "Buy Single Job Post",
       currencySymbol: "$",
-      basic: "Single Job Post",
+      basic: "Let's Do It,   Post Now",
       basicPrice: 315,
       business: "5 Job Pack",
       businessPrice: 1418,
@@ -40,7 +40,7 @@ export default function Page() {
       enterprisePrice: 2520,
     };
   
-    const emailAJ = "advertise@academicjobs.com";
+    const emailAJ = "jobelephant@academicjobs.com";
   
     const subjectBasic = `I would like to buy a ${pricing.basic}`;
     const subjectBusiness = `I would like to buy a ${pricing.business}`;
@@ -102,7 +102,7 @@ export default function Page() {
           
 
                   {/* Pricing Card 1 */}
-        <div  id="pricing-table-cards" className="w-full flex-1 mt-8 mb-8 p-8 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:rounded-r-none">
+        <div  id="pricing-table-cards" className="w-1/4 flex-1 mt-8 mb-8 p-8 bg-white shadow-xl rounded-3xl   lg:rounded-r-none max-w-screen-sm mx-auto">
           <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
             <Image  width="150"
             height="150"
@@ -113,7 +113,7 @@ export default function Page() {
             />
             <div className="ml-5">
               <span className="block text-2xl font-semibold">
-                {pricing.basic}
+                {pricing.cta}
               </span>
               <span>
                 <span className="font-medium text-gray-500 text-xl align-top">
@@ -166,9 +166,9 @@ export default function Page() {
               pricing.basic,
               pricing.basicPrice
             )}`}
-            className="flex justify-center items-center bg-aj rounded-xl py-5 px-4 text-center text-white text-xl"
+            className="flex justify-center items-center bg-aj rounded-xl py-5 px-4 text-center text-white text-3xl font-bold "
           >
-            {pricing.cta} {pricing.basic}
+           {pricing.basic}
           </a>
         </div>
 
