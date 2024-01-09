@@ -8,6 +8,7 @@ type NavLinkProps = {
   forceLinkClass: string;
   forceButtonClass?: string;
   forceImageClass?: string;
+  onClick: () => void;
 };
 
 export default function NavLink({
@@ -17,11 +18,12 @@ export default function NavLink({
   forceLinkClass,
   forceButtonClass,
   forceImageClass,
+  onClick,
 }: NavLinkProps) {
   const iconWidth = 22;
   const iconHeight = iconWidth;
   return (
-    <Link href={url} passHref className={`${forceLinkClass}`}>
+    <Link href={url} passHref className={`${forceLinkClass}`} onClick={onClick}>
       <div
         className={`nav-link nav-link-ltr whitespace-nowrap text-gray-900 ${forceButtonClass}`}
       >
