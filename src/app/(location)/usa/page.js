@@ -26,7 +26,7 @@ export default function Page() {
           className=" w-[20rem] mb-[1rem] "
         />
       </div>
-      <JobSearchBox />
+      <JobSearchBox l="USA"/>
       <div className=" mt-[10rem] " >
         <ul className=" flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <li><Link href="/boston/" >	Boston </Link></li>

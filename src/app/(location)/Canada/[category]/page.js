@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import canadapositionsData from "@/data/canadapositions.json";
+import ukpositionsData from "@/data/ukpositions.json";
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 //const Lecturer = () => {
@@ -7,7 +7,7 @@ export default function Page({ params, searchParams }) {
   console.log("````````````````````params````````````````````")
   console.log(params)
   let { category } = params
-  console.log(canadapositionsData)
+  console.log(ukpositionsData)
   console.log(category);
   category = category?.replace(/-/g, " ");
   console.log(category);
@@ -18,7 +18,7 @@ export default function Page({ params, searchParams }) {
     Description,
     Keyword,
     content: content1,
-  } = canadapositionsData.find((item) => item.Name === category);
+  } = ukpositionsData.find((item) => item.Name === category);
   let content;
   //console.log(Name);
   //const { logo, company_name, website, company_description, location } = data
@@ -26,7 +26,7 @@ export default function Page({ params, searchParams }) {
   content = (
     <div className="content-grid flex-col gap-2">
     
-      {/* <Link className="text-[#f4a10c] " href="/canadapositions/">
+      {/* <Link className="text-[#f4a10c] " href="/ukpositions/">
         View all Lecturer Jobs →
       </Link> */}
     
