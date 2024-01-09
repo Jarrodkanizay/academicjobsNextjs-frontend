@@ -177,29 +177,29 @@ export default function Page() {
         </div>
 
      
-     
+        <div className=" bg-gray-200 p-4 ">
+            <Image
+              width={1280}
+              height={380}
+              src="https://academicjobs.s3.amazonaws.com/img/_misc/Jobelephant-Universities.png"
+              alt="academicjobs university logos "
+              className=" rounded-xl mx-auto max-w-5xl my-12"
+            />
+          </div>
      
 
-        <section className="w-full mx-auto text-center">
-          <picture className="bg-white min-w-full max-w-2xl mx-auto">
+        <section className="w-full mx-auto text-center ">
+          <picture className=" min-w-full max-w-2xl mx-auto">
             <Image
               width={800}
               height={380}
               src="https://academicjobs.s3.amazonaws.com/img/_misc/proudly-working-with.png"
               alt="job elephant logo"
-              className="mx-auto"
+              className="mx-auto bg-gray-200"
             />
           </picture>
 
-          <div className="rounded-3xl">
-            <Image
-              width={1280}
-              height={380}
-              src="https://academicjobs.s3.amazonaws.com/img/_misc/academicjobs-university-logos-min.png"
-              alt="academicjobs university logos"
-              className="rounded-3xl shadow-xl hidden mx-auto"
-            />
-          </div>
+      
         </section>
       </main>
     </>

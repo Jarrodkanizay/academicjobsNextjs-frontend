@@ -727,7 +727,7 @@ export default function myPage() {
           </div>
         </div>
       </div>
-      <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl mt-20 shadow-md">
+      {/* <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl mt-20 shadow-md">
         Top Universities To Work For
       </h2>
       <div className="cate-group section23 ">
@@ -905,7 +905,7 @@ export default function myPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl mt-20 shadow-md">
         <Link href="/the-university-rankings/">
           The University Rankings/ Top Academic Careers
@@ -1047,7 +1047,7 @@ export default function myPage() {
           </div>
         </div>
       </div>
-      <div className=" flex flex-col  ">
+      {/* <div className=" flex flex-col ">
         <Link href="/job-type/">
           <h2 className=" py-4 px-7 border-4 text-[#f4a10c] rounded-full mt-[7rem] hover:bg-orange-500 hover:text-white shadow-md">
             → Find Academic<span className="font-bold"> Job-Types</span> ( i.e.
@@ -1064,7 +1064,7 @@ export default function myPage() {
             technical services )
           </h2>
         </Link>
-      </div>
+      </div> */}
     </main>
   );
 }
