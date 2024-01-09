@@ -31,10 +31,10 @@ export default function Page() {
 
     const pricing: PricingTypes  = {
       cta: "Buy Single Job Post",
-      currencySymbol: "$",
+      currencySymbol: "",
       basic: "Let's Do It,   Post Now",
-      basicPrice: 315,
-      business: "5 Job Pack",
+      basicPrice: 111,
+      business: "exclusive to JobElephant",
       businessPrice: 1418,
       enterprise: "10 Job Pack",
       enterprisePrice: 2520,
@@ -42,9 +42,9 @@ export default function Page() {
   
     const emailAJ = "jobelephant@academicjobs.com";
   
-    const subjectBasic = `I would like to buy a ${pricing.basic}`;
-    const subjectBusiness = `I would like to buy a ${pricing.business}`;
-    const subjectEnterprise = `I would like to buy a ${pricing.enterprise}`;
+    const subjectBasic = `I would like to buy a Single Job listing`;
+    const subjectBusiness = `I would like to buy a Single Job listing`;
+    const subjectEnterprise = `I would like to buy a Single Job listing`;
   
     function formatNumberWithCommas(number: number) {
       return number.toLocaleString();
@@ -87,9 +87,9 @@ export default function Page() {
                   <p className="pb-6 font-bold">
                     Simply email all your jobs through the link bellow 
                   </p>
-                  <a href="#pricing-table-cards" className="btn btn-aj">
+                  {/* <a href="#pricing-table-cards" className="btn btn-aj">
                     Post a Job
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function Page() {
                   {pricing.currencySymbol}&thinsp;
                 </span>
                 <span className="text-3xl font-bold">
-                  {formatNumberWithCommas(pricing.basicPrice)}
+                exclusive to JobElephant
                 </span>{" "}
               </span>
             </div>
