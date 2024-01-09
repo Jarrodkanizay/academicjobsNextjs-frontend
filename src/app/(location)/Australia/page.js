@@ -57,18 +57,46 @@ export default function Page() {
           ▼
         </a>
       </div>
-      <div className="bg-gradient-to-b to-white from-orange-100 rounded-t-[3rem] mt-[-1rem]">
+    
+     
         <div className=" max-w-screen-xl mx-auto">
           <div className="blurb text-left py-8 mt-[30rem] ">
             <h1 className="py-3 px-7 bg-[#f4a10c] text-white rounded-full font-bold text-2xl md:text-3xl lg:text-2xl shadow-xl ">Academic Jobs Australia</h1>
             <div className="newLine mb-4">
               <p className="font-semibold"></p>
               <p className="font-semibold"></p>
+            
+            
+            
+            {/* <div id="section" className="bg-slate-200 full-width py-4">
+      <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12">
+      <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0">
+              <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS:</span> Academic, research &&nbsp;science positions locally
+              & globally
+              </h1>
+              
+            <div>
+            
+            <p className="px-7 mb-4 mt-1">
+            Welcome to Australia's #1university jobs website.  You will find all the uni jobs in Australia right here. If you are a researcher, lecturer, professor, HR professional or administrator, you can seek jobs, find the best university jobs, and apply online for any job in your academic or professional field. 
+            </p>
+            <p className="px-7">
+              Whether you&apos;re an aspiring or established professor,
+              researcher, lecturer, or higher education administrator, our
+              platform offers the most current opportunities in academia
+              globally. Connect with your next career move in the academic
+              sector through our comprehensive online job board. Find your next
+              academic job now!
+            </p>
+            
             </div>
-            <div className="newLine">
-              <p className="px-7 pb-8">Welcome to Australia's #1university jobs website.  You will find all the uni jobs in Australia right here. If you are a researcher, lecturer, professor, HR professional or administrator, you can seek jobs, find the best university jobs, and apply online for any job in your academic or professional field. </p>
-              <div className="newLine">  <p className="px-7 pb-8"> Australia is home to some of the highest ranked universities and world-renowned academics.  The best academic careers start here at Academic Jobs.  Sign up for job alerts or post a job today.</p>
-              </div>
+          </div>
+          </div> */}
+           
+           
+           
+             
+             
               <p className="font-semibold"></p>
               <div className="  " >
                 <ul className=" flex flex-wrap gap-6 px-7 pb-4  text-[#f4a10c] ">
@@ -85,7 +113,7 @@ export default function Page() {
                 <Link href="/Australia/faq/" >	Aus FAQ</Link>
                 <Link href="/groupof8/" >	Group Of 8</Link> </div>
             </div>
-          </div>
+         
           <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl  shadow-md">Top Australian Universities To Work For</h2>
           <div className="cate-group section23 ">
             <div className="widget__text-block">
