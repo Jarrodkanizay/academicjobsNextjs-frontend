@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   description: "Academic Jobs the worlds' number 1 job board",
   icons: {
-    icon: '/favicon.png', 
+    icon: '/favicon.png',
   },
 };
 
@@ -29,6 +29,7 @@ export default function RootLayout({
         <QueryProvider>
           <Header />
           {children}
+          <div className="spacer">&nbsp;</div>
           <Footer />
         </QueryProvider>
       </body>

@@ -721,7 +721,9 @@ export default function myPage() {
           </div>
         </div>
       </div>
-      <h2 className="underline-full mt-20">Top Universities To Work For</h2>
+
+      {/* WIP */}
+      {/* <h2 className="underline-full mt-20">Top Universities To Work For</h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
@@ -897,7 +899,7 @@ export default function myPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <h2 className="underline-full mt-20">
         <Link href="/the-university-rankings/">
           The University Rankings/ Top Academic Careers
@@ -1039,8 +1041,9 @@ export default function myPage() {
           </div>
         </div>
       </div>
-      {/* flex flex-row justify-between */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 mb-36 hidden">
+
+      {/* These are broken */}
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
         <Link
           href="/job-type/"
           className="btn btn-white border-4 shadow-md leading-none"
