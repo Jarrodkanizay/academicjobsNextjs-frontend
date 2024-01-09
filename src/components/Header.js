@@ -157,15 +157,16 @@ export default function Header() {
               </details>
             </>
           )}
-
-          <NavItem
-            url="/recruitment"
-            icon="/post-a-job-icon.svg"
-            navLink="Post a Job"
-            forceLinkClass="btn-mode"
-            forceButtonClass="nav-mobile-btn btn btn-aj"
-            onClick={() => setIsNavOpen(false)}
-          />
+          <div className="ml-auto">
+            <NavItem
+              url="/recruitment"
+              icon="/post-a-job-icon.svg"
+              navLink="Post a Job"
+              forceLinkClass="btn-mode"
+              forceButtonClass="nav-mobile-btn btn btn-aj"
+              onClick={() => setIsNavOpen(false)}
+            />
+          </div>
         </nav>
       </header>
     </>

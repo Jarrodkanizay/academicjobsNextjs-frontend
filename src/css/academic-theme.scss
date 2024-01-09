@@ -359,10 +359,17 @@ html {
       fill: var(--color-primary) !important;
     }
 
-    .text-col-2 {
+    .text-col-2,
+    .text-2-cols {
       column-count: 2;
-      column-gap: 30px;
+      column-gap: 40px;
       column-width: 250px;
+    }
+    .text-col-3,
+    .text-3-cols {
+      column-count: 3;
+      column-gap: 50px;
+      column-width: 300px;
     }
 
     blockquote {
