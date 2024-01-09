@@ -3,6 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import HeroBanner from '@/components/HeroBanner';
 
 export const metadata: Metadata = {
   title: 'Student Jobs on Campus', //Option 1 replaces the %s in layout.tsx
@@ -52,44 +53,54 @@ export default function myPage() {
     <>
       <main className="content-grid">
         {/* Hero banner */}
-        <div className="hero full-width max-h-fit bg-slate-200 py-8">
-          <div className="container mx-auto">
-            <div className="hero-content flex-col lg:flex-row-reverse">
-              <Image
-                width={2000}
-                height={534}
-                src="/student-jobs-on-campus/student-jobs-on-campus.jpg"
-                className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
-                alt="Student Jobs on Campus can be life changing"
-              />
-              <div>
-                <h1 className="text-4xl font-bold text-aj">
-                  Student Jobs on Campus
-                </h1>
-                <p className="py-6">
-                  Unlock your earning potential while studying at university.
-                  Exciting opportunities for students and graduates to earn
-                  extra cash. Immediate openings for casual and part-time
-                  positions. Use your earnings for rent, groceries, or a night
-                  out. Turn your college experience into 'beer money' and gain
-                  valuable skills.
-                </p>
-                <p className="text-right">
-                  <Link className="link link-aj mx-4" href="/student/faq/">
-                    Student FAQ
-                  </Link>
-                  <Link
-                    className="btn btn-aj mx-4"
-                    href="/student-jobs-on-campus"
+        <HeroBanner
+          h1="Student Jobs on Campus"
+          para1="Unlock your earning potential while studying at university. Exciting opportunities for students and graduates to earn extra cash. Immediate openings for casual and part-time positions. Use your earnings for rent, groceries, or a night out. Turn your college experience into 'beer money' and gain valuable skills."
+          btnPrimaryText="Learn About Student Jobs"
+          btnPrimaryURL="/student-jobs-on-campus"
+          btnSecondaryText="Student FAQ"
+          btnSecondaryURL="/student/faq/"
+          src="/student-jobs-on-campus/student-jobs-on-campus.jpg"
+          // imgRight={false}
+        />
+      </main>
+      <div className="content-grid mx-auto mt-16">
+        {/* <div className="prose">
+          <h2 className="underline-full">
+            What type of Student Job are you&nbsp;looking&nbsp;for?
+          </h2>
+          <ul className="text-center columns-1 md:columns-4 md:gap-2 capitalize m-0 p-0 mx-auto">
+          <ul className="flex flex-col sm:flex-row items-center justify-center capitalize m-0 p-0 mx-auto">
+            {student.map(({ Title, Name }, key) => (
+              <li
+                className={`p-0 m-0 flex items-center justify-center mx-8`}
+                key={key}
+              >
+                <Link
+                  href={`/student/${Name?.replace(/\s+/g, '-')}/`}
+                  className="link link-aj font-bold flex align-center justify-center whitespace-nowrap"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 512 512"
+                    className="mr-2"
                   >
-                    Learn About Student Jobs
-                  </Link>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
+                    <path
+                      d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"
+                      fill="green"
+                    />
+                  </svg>
+                  {Name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="newLine"></div>
+        </div> */}
+        <JobSearchBox q="student" />
+        <SearchResults q={{ q: 'student' || 0 }} />
         <section className="container mx-auto px-4 mt-12">
           <h2 className="text-center">
             Find the Best Student Jobs & make money whilst&nbsp;studying…
@@ -252,44 +263,6 @@ export default function myPage() {
             </div>
           </div> */}
         </section>
-      </main>
-      <div className="content-grid mx-auto mt-16">
-        {/* <div className="prose">
-          <h2 className="underline-full">
-            What type of Student Job are you&nbsp;looking&nbsp;for?
-          </h2>
-          <ul className="text-center columns-1 md:columns-4 md:gap-2 capitalize m-0 p-0 mx-auto">
-          <ul className="flex flex-col sm:flex-row items-center justify-center capitalize m-0 p-0 mx-auto">
-            {student.map(({ Title, Name }, key) => (
-              <li
-                className={`p-0 m-0 flex items-center justify-center mx-8`}
-                key={key}
-              >
-                <Link
-                  href={`/student/${Name?.replace(/\s+/g, '-')}/`}
-                  className="link link-aj font-bold flex align-center justify-center whitespace-nowrap"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="28"
-                    height="28"
-                    viewBox="0 0 512 512"
-                    className="mr-2"
-                  >
-                    <path
-                      d="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm106.5 150.5L228.8 332.8h-.1c-1.7 1.7-6.3 5.5-11.6 5.5-3.8 0-8.1-2.1-11.7-5.7l-56-56c-1.6-1.6-1.6-4.1 0-5.7l17.8-17.8c.8-.8 1.8-1.2 2.8-1.2 1 0 2 .4 2.8 1.2l44.4 44.4 122-122.9c.8-.8 1.8-1.2 2.8-1.2 1.1 0 2.1.4 2.8 1.2l17.5 18.1c1.8 1.7 1.8 4.2.2 5.8z"
-                      fill="green"
-                    />
-                  </svg>
-                  {Name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <div className="newLine"></div>
-        </div> */}
-        <JobSearchBox q="student" />
-        <SearchResults q={{ q: 'student' || 0 }} />
       </div>
     </>
   );
