@@ -30,7 +30,7 @@ export default function Page() {
           className=" w-[20rem] mb-[1rem] "
         /></div>
 
-      <JobSearchBox/>
+      <JobSearchBox l="New Zealand"/>
 
       <div className=" mt-[10rem] " >
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">

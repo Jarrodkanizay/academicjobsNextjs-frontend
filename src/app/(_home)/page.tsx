@@ -1040,7 +1040,7 @@ export default function myPage() {
         </div>
       </div>
       {/* flex flex-row justify-between */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 mb-36">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 mb-36 hidden">
         <Link
           href="/job-type/"
           className="btn btn-white border-4 shadow-md leading-none"
@@ -1058,7 +1058,7 @@ export default function myPage() {
             (i.e. laboratory technical services)
           </span>
         </Link>
-      </div>
+      </div> */}
     </main>
   );
 }
