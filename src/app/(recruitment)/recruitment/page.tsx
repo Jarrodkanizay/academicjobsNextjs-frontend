@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import PricingTable2 from '@/components/PricingTable2';
 export const metadata: Metadata = {
   title: 'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
   // title: {
@@ -20,7 +21,7 @@ export default function myPage() {
             <div className="container mx-auto">
               <div className="hero-content flex-col xl:flex-row-reverse mx-auto max-w-full">
                 <Image
-                  src="/academic-job-postings/global-academics.jpg"
+                  src="https://academicjobs.s3.amazonaws.com/img/_misc/Were-Hiring-Stock-scaled.jpg"
                   className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
                   width={1280}
                   height={380}
@@ -41,7 +42,7 @@ export default function myPage() {
                     understand the importance of finding the right talent, and
                     we go above and beyond to help you achieve this.
                   </p>
-                  <Link className="btn btn-aj" href="/job-ads">
+                  <Link className="btn btn-aj" href="/post-a-job-form">
                     Post a Job Today
                   </Link>
                 </div>
@@ -51,6 +52,11 @@ export default function myPage() {
         </section>
         {/* Main Content */}
         <section className="container mx-auto px-4 mt-12">
+
+
+        <PricingTable2 />
+
+
           <h2 className="text-left mb-4 md:px-10 text-xl font-bold">
             Connect with the Global Academic Elite on the
             Premier Job Board
@@ -70,6 +76,7 @@ export default function myPage() {
               right candidates effortlessly.
             </p>
           </div>
+
 
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
@@ -111,6 +118,7 @@ export default function myPage() {
               </div>
             </div>
 
+
             {/* Card 2 */}
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
@@ -139,6 +147,7 @@ export default function myPage() {
                 </p>
               </div>
             </div>
+
 
             {/* Card 3 */}
             <div className="card bg-slate-100 shadow-xl">
@@ -210,6 +219,7 @@ export default function myPage() {
             </div>
           </div>
 
+
           {/* Lowest fees Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
@@ -238,6 +248,7 @@ export default function myPage() {
             </div>
           </div>
         </section>
+
 
         {/* Breakout Section */}
         <div className="bg-sky-100 mb-8 mt-16 py-8 px-4">
@@ -280,6 +291,7 @@ export default function myPage() {
                 </p>
               </div>
             </div>
+
 
             {/* Card 2 */}
             <div className="card bg-slate-100 shadow-xl">
@@ -352,8 +364,10 @@ export default function myPage() {
               </div>
             </div>
 
+
             {/* End Cards */}
           </div>
+
 
           {/* Access to thousands of top academics Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
@@ -383,6 +397,7 @@ export default function myPage() {
             </div>
           </div>
 
+
           {/* Helpful tools and AI make it easy to list Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
@@ -411,6 +426,7 @@ export default function myPage() {
             </div>
           </div>
         </section>
+
 
         {/* Contact us CTA */}
         <section className="container mx-auto px-4 mt-12">
@@ -513,3 +529,6 @@ export default function myPage() {
     </>
   );
 }
+
+
+
