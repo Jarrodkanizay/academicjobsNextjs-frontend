@@ -29,7 +29,7 @@ export default function Page() {
           alt="AcademicJobs Canada"
           className=" w-[20rem] mb-[1rem] "
         /></div>
-      <JobSearchBox />
+      <JobSearchBox l="Canada"/>
 
       <div className=" mt-[10rem] " >
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-500 ">

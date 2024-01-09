@@ -38,7 +38,7 @@ export default function Page() {
           className=" w-[20rem] mb-[1rem] "
         />
       </div>
-      <JobSearchBox />
+      <JobSearchBox l="India"/>
       <div className=" mt-[10rem] ">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-500 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
