@@ -42,7 +42,7 @@ export default function myPage() {
                     understand the importance of finding the right talent, and
                     we go above and beyond to help you achieve this.
                   </p>
-                  <Link className="btn btn-aj" href="/post-a-job-form">
+                  <Link className="btn btn-aj" href="https://www.iloveacademicjobs.com/post-a-job-form">
                     Post a Job Today
                   </Link>
                 </div>
