@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import facultyData from "@/data/faculty.json";
+import categoryData from "@/data/category.json";
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 //const Lecturer = () => {
@@ -7,7 +7,7 @@ export default function Page({ params, searchParams }) {
   console.log("````````````````````params````````````````````")
   console.log(params)
   let { category } = params
-  console.log(facultyData)
+  console.log(categoryData)
   console.log(category);
   category = category?.replace(/-/g, " ");
   console.log(category);
@@ -18,7 +18,7 @@ export default function Page({ params, searchParams }) {
     Description,
     Keyword,
     content: content1,
-  } = facultyData.find((item) => item.Name === category);
+  } = categoryData.find((item) => item.Name === category);
   let content;
   //console.log(Name);
   //const { logo, company_name, website, company_description, location } = data
