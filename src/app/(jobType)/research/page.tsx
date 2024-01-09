@@ -16,7 +16,7 @@ export default function myPage() {
   return (
     
       <main className="content-grid">
-              <h1>
+              <h1> 
               Academic Research Jobs
               </h1>
               <p>
@@ -28,6 +28,8 @@ export default function myPage() {
 
               <JobSearchBox/>
               <SearchResults q={{ q: "research" || 0 }} />
+             
+
              
       </main>
    
