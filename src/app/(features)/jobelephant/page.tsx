@@ -68,7 +68,7 @@ export default function Page() {
         <div className="blurb text-left pb-4">
           {/* Hero banner */}
           <div className="hero max-h-fit bg-slate-200 py-8">
-            <div className="container mx-auto">
+            <div className=" mx-auto">
               <div className="hero-content flex-col lg:flex-row-reverse">
                 <Image
                   width={300}
@@ -102,7 +102,7 @@ export default function Page() {
           
 
                   {/* Pricing Card 1 */}
-        <div  id="pricing-table-cards" className="w-1/4 flex-1 mt-8 mb-8 p-8 bg-white shadow-xl rounded-3xl   lg:rounded-r-none max-w-screen-sm mx-auto">
+        <div  id="pricing-table-cards" className="md:w-1/4 flex-1 mt-8 mb-8 p-8 bg-white shadow-xl rounded-3xl  md:max-w-screen-sm mx-auto">
           <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
             <Image  width="150"
             height="150"
@@ -183,7 +183,7 @@ export default function Page() {
         <section className="w-full mx-auto text-center">
           <picture className="bg-white min-w-full max-w-2xl mx-auto">
             <Image
-              width={1280}
+              width={800}
               height={380}
               src="https://academicjobs.s3.amazonaws.com/img/_misc/proudly-working-with.png"
               alt="job elephant logo"
