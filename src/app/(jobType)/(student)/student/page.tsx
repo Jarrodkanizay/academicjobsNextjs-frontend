@@ -253,7 +253,7 @@ export default function myPage() {
           </div> */}
         </section>
       </main>
-      <div className="container mx-auto mt-16">
+      <div className="content-grid mx-auto mt-16">
         {/* <div className="prose">
           <h2 className="underline-full">
             What type of Student Job are you&nbsp;looking&nbsp;for?
@@ -288,7 +288,7 @@ export default function myPage() {
           </ul>
           <div className="newLine"></div>
         </div> */}
-        <JobSearchBox />
+        <JobSearchBox q= 'student'/>
         <SearchResults q={{ q: 'student' || 0 }} />
       </div>
     </>

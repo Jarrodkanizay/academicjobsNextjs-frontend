@@ -22,7 +22,7 @@ export default function myPage() {
       <div className="bg-slate-200 full-width">
       <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
     
-              <h1 className="text-6xl font-bold m-0 text-right text-gray-500 pb-4">Academic Lecturer Jobs</h1> 
+              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">Academic Lecturer Jobs</h1> 
               
             <div>
             
@@ -32,7 +32,7 @@ export default function myPage() {
         and our academic jobs platform allows lecturers to seek great careers in
         lecturing around the world.
             </p>
-            <p className="px-7">
+            <p className="px-7 md:flex hidden">
             Lecturers can find university jobs online, compare competitive salaries,
         generous benefits, and supportive work environments.   
         Sign up as a ‘Global Academic’ to get an academic ranking, and to get

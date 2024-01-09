@@ -38,7 +38,7 @@ export default function Page({ params, searchParams }) {
                  </div>
           </div>
 
-      <JobSearchBox q="hr" />
+      <JobSearchBox q={Name} />
       <SearchResults q={{ q: 'hr' || 0 }} />
     </div>
   );
