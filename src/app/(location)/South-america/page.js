@@ -22,7 +22,7 @@ export const metadata = {
           alt="AcademicJobs South America"
           className=" w-[20rem] mb-[1rem] "
         /></div>
-      <JobSearchBox />
+      <JobSearchBox l="South America"/>
 
       <div className=" mt-[10rem] " >
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">

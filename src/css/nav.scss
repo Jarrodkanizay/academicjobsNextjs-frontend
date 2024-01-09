@@ -1,15 +1,18 @@
 html {
   body,
   body .prose {
+    div.hamburger-wrapper {
+      height: 0;
+    }
     div.hamburger-menu-icon {
       display: none;
-      --hb-position: 20px;
+      --hb-position: 12px;
       position: absolute;
       right: var(--hb-position);
       top: var(--hb-position);
       z-index: 1000;
       svg {
-        width: 50px;
+        width: 40px;
         margin: 0 auto;
         display: block;
         stroke: var(--color-gray-blue);
@@ -17,13 +20,24 @@ html {
       }
     }
 
+    .static-logo.mobile {
+      --logo-pos: 10px;
+      position: absolute;
+      text-align: left;
+      width: 150px;
+      top: var(--logo-pos);
+      left: 12px;
+      display: none;
+    }
+
     header {
       position: relative;
       padding: 20px;
-      max-width: 1300px;
+      max-width: 1500px;
       margin-left: auto;
       margin-right: auto;
       background-color: white;
+      // background-color: pink;
 
       nav {
         display: flex;
@@ -139,15 +153,24 @@ html {
   @media (max-width: 1023px) {
     body,
     body .prose {
+      div.hamburger-wrapper {
+        height: 80px;
+      }
+
       div.hamburger-menu-icon {
         display: block;
       }
+      .static-logo.mobile {
+        display: block;
+      }
+
       header {
         display: none;
         position: absolute;
         z-index: 999;
-        inset: 0px;
+        inset: 80px 0px 0px 0px;
         padding-bottom: 20px;
+        padding-top: 0;
 
         nav {
           flex-direction: column;
@@ -156,9 +179,6 @@ html {
           padding-top: 60px;
           > * {
             margin-bottom: 30px;
-          }
-          .static-logo {
-            // display: none;
           }
           .btn-mode {
             --bottom-position: 30px;
@@ -173,10 +193,12 @@ html {
               margin-right: 0;
             }
           }
-          .hide-mobile,
           .nav-mobile-btn.nav-link-ltr::before,
           .nav-mobile-btn.nav-link-ltr::after {
             display: none;
+          }
+          .show-mobile {
+            display: block;
           }
         }
       }

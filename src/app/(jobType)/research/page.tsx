@@ -16,18 +16,20 @@ export default function myPage() {
   return (
     
       <main className="content-grid">
-              <h1>
+              <h1> 
               Academic Research Jobs
               </h1>
               <p>
-              Browse all Research positions from well regarded universities right now on AcademicJobs. The top researchers are sought after by our universities, and academics may pursue fantastic global academic researcher jobs through our academic job platform.</p>
+              Browse all Research positions from well regarded universities right now on AcademicJobs. The top researchers are highly sought after by our universities, and academics may pursue fantastic global opportunities through our platform.</p>
 
-              <p className='pt-4'>Academic Researcher jobs create original and innovative research in their fields of interest, often as part of a larger project or team. Academic Researchers typically have a PhD or equivalent qualification, as well as relevant skills and experience in data analysis, methodology, and communication. Academic Researcher jobs may also be involved in teaching, supervision, and outreach activities, depending on their role and contract type.</p>
+              <p className='pt-4'>Academic Researcher jobs allow for the creatation of original and innovative research in their fields of interest, often as part of a larger project or team. Join esteemed institutions, collaborate with fellow academic researchers and leading experts, and contribute to groundbreaking studies in diverse fields. Elevate your career and make a lasting impact on the forefront of knowledge.</p>
 
               <Link href="/research/faq" className='pt-4 text-sky-500'>View Research Jobs FAQ</Link>
 
               <JobSearchBox/>
               <SearchResults q={{ q: "research" || 0 }} />
+             
+
              
       </main>
    

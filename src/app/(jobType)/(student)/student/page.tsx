@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import SearchResults from '@/components/SearchResults'
-import JobSearchBox from '@/components/JobSearchBox'
+import SearchResults from '@/components/SearchResults';
+import JobSearchBox from '@/components/JobSearchBox';
 
 export const metadata: Metadata = {
   title: 'Student Jobs on Campus', //Option 1 replaces the %s in layout.tsx
@@ -82,7 +82,7 @@ export default function myPage() {
                     className="btn btn-aj mx-4"
                     href="/student-jobs-on-campus"
                   >
-                    Student Jobs
+                    Learn About Student Jobs
                   </Link>
                 </p>
               </div>
@@ -253,7 +253,7 @@ export default function myPage() {
           </div> */}
         </section>
       </main>
-      <div className="container mx-auto mt-16">
+      <div className="content-grid mx-auto mt-16">
         {/* <div className="prose">
           <h2 className="underline-full">
             What type of Student Job are you&nbsp;looking&nbsp;for?
@@ -288,8 +288,8 @@ export default function myPage() {
           </ul>
           <div className="newLine"></div>
         </div> */}
-         <JobSearchBox/>
-              <SearchResults q={{ q: "student" || 0 }} />
+        <JobSearchBox q= 'student'/>
+        <SearchResults q={{ q: 'student' || 0 }} />
       </div>
     </>
   );

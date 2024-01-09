@@ -15,13 +15,23 @@ export default function myPage() {
   return (
     
       <main className="content-grid">
-              <h1>
-              Academic Remote Jobs
-              </h1>
-              <p>
-              Step into the future of work with our remote job platform, breaking free from the 9-to-5 routine. Whether you're a seasoned professional or a newcomer, explore tailored opportunities across diverse industries. Escape the confines of a physical office and unlock the potential of working from your own space, reshaping your work-life balance. Discover flexibility to align your professional pursuits with your lifestyle choices. Find the ideal remote job transcending geographical boundaries. Join us in embracing a future where your workspace is as flexible as your ambitions. Redefine your career through our comprehensive remote job platform, unleashing boundless possibilities wherever you choose your path to be.</p>
 
-              <JobSearchBox/>
+              <div className="bg-slate-200 full-width">
+      <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
+    
+              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">Academic Remote Jobs</h1> 
+              
+            <div className="">
+            
+            <p className="px-7 mb-4 mt-1">
+             Discover flexibility to align your professional pursuits with your lifestyle choices. Find the ideal remote job transcending geographical boundaries. Join us in embracing a future where your workspace is as flexible as your ambitions. Redefine your career through our comprehensive remote job platform, unleashing boundless possibilities wherever you choose your path to be.
+            </p>
+         
+            </div>
+          </div>
+          </div>
+
+              <JobSearchBox q= "remote"/>
               <SearchResults q={{ q: "remote" || 0 }} />
       </main>
    

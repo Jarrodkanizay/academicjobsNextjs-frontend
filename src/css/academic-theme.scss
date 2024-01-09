@@ -45,6 +45,9 @@ html {
     font-size: var(--fs-400);
     line-height: 1.6;
 
+    .spacer {
+      height: 100px;
+    }
     .container {
       margin-left: auto;
       margin-right: auto;
@@ -58,8 +61,17 @@ html {
       color: var(--color-primary);
     }
     h2,
-    .faq h2 {
+    h2 a {
+      font-size: 30px;
       color: var(--color-gray-blue);
+      .faq h2 {
+        font-size: 21px;
+        color: var(--color-gray-blue);
+      }
+    }
+    h2 a:hover,
+    .faq h2:hover {
+      color: var(--color-primary);
     }
     h1,
     h2,
@@ -136,7 +148,15 @@ html {
       color: #fff;
       border-radius: 100vmax;
     }
-    .btn-aj:hover {
+    .btn-white {
+      background-color: white;
+      color: var(--color-primary);
+      border-radius: 100vmax;
+    }
+
+    .btn-aj:hover,
+    .btn-white:hover {
+      color: white;
       background-color: var(--color-primary-hover);
     }
 
@@ -621,6 +641,11 @@ html {
     section.invoice-container {
       padding: 10mm;
       border: 1px solid #ccc;
+    }
+    @media (max-width: 1023px) {
+      .hide-mobile {
+        display: none;
+      }
     }
   }
 }

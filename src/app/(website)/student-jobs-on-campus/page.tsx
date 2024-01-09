@@ -60,15 +60,15 @@ export default function myPage() {
             Need Cash? Fund your personal life with a student job…
           </h2>
           <div className="flex flex-wrap items-center justify-center gap-3 mb-16">
-            <Link href={`/student/student-part-time`}>
+            <Link href={`/jobs/student-part-time`}>
               <div className="badge badge-outline p-3">
                 Part-Time Student Jobs
               </div>
             </Link>
-            <Link href={`/student/student-casual`}>
+            <Link href={`/jobs/student-casual`}>
               <div className="badge badge-outline p-3">Casual Student Jobs</div>
             </Link>
-            <Link href={`/student/student-full-time`}>
+            <Link href={`/jobs/student-full-time`}>
               <div className="badge badge-outline p-3">
                 Full-Time Student Jobs
               </div>

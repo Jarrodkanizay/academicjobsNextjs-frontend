@@ -26,8 +26,7 @@ export default function Page() {
           alt="AcademicJobs UK Logo"
           className=" w-[20rem] mb-[1rem] "
         /></div>
-      <JobSearchBox />
-
+      <JobSearchBox l="United Kingdom"/>
       <div className=" mt-[10rem] " >
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">

@@ -26,7 +26,7 @@ const Findemployerss = () => {
               />
               <div>
                 <h1 className="text-3xl font-bold text-aj">
-                  Find The {countryRegionPlural()} Top Academic Employers & University Rankings
+                Find the best universities to work for here... use university rankings to search for jobs in higher education.  
                 </h1>
                 <p className="py-6">
                   On AcademicJobs explore higher ed career opportunities at universities worldwide. The find employerss page helps you to learn more about the academic jobs that interest you and their current job openings. You can view the employers’s profile, which includes information such as their mission, vision, values, history, achievements, and culture. Find your dream academic job online at the university of your choice with AcademicJobs.</p>

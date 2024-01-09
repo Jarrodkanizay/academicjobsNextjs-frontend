@@ -3,6 +3,7 @@ import Link from 'next/link';
 import LogoAJ from '@/components/brand/LogoAJ';
 import type { Metadata } from 'next';
 import JobSearchBoxHome from '@/components/JobSearchBoxHome';
+
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
   keywords:
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
+
 export default function myPage() {
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
   return (
@@ -88,16 +90,17 @@ export default function myPage() {
       </a>
 
       {/* Hero Panel */}
-      <div
+      {/* <div
         id="section"
-        className="hero-content flex-col lg:flex-row mx-auto items-start py-12 bg-slate-200 breakout full-width prose"
-      >
-        <h1 className="text-3xl md:text-6xl font-normal text-gray-500 mt-12">
-          ACADEMIC JOBS:
+        className="hero-content flex-col lg:flex-row mx-auto items-start py-12 bg-slate-200 breakout full-width prose w-fit"
+      ><div>
+        <h1 className="text-3xl md:text-6xl font-normal text-gray-500 mt-12 text-right">
+          ACADEMIC JOBS: Academic, research &&nbsp;science positions locally & globally
         </h1>
-        <h2 className="mt-0">
+        <h2 className="mt-0 text-right">
           Academic, research &&nbsp;science positions locally & globally
         </h2>
+        </div>
         <div className="text-col-2 mb-12">
           <p>
             Discover top-tier faculty and administrative roles in the world of
@@ -115,11 +118,38 @@ export default function myPage() {
             our comprehensive online job board. Find your next academic job now!
           </p>
         </div>
+      </div> */}
+
+      <div id="section" className="bg-slate-200 full-width py-4 mb-16">
+        <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
+          <h1 className="text-3xl font-normal sm:text-right text-gray-400 m-0 pb-8 px-7 md:px-0">
+            <span className="md:text-6xl font-bold text-gray-500 pb-4 ">
+              ACADEMIC&nbsp;JOBS:
+            </span>{' '}
+            Academic, research &&nbsp;science positions locally & globally
+          </h1>
+
+          <div>
+            <p className="px-7 mb-4 mt-1">
+              Discover top-tier faculty and administrative roles in the world of
+              higher education. Begin your search for university academic jobs,
+              college faculty positions, and administrative opportunities in
+              higher ed. Explore and apply for a range of roles, including
+              lecturer, researcher, university administrator, and senior
+              academic positions, available nationally and internationally.
+            </p>
+            <p className="px-7">
+              Whether you&apos;re an aspiring or established professor,
+              researcher, lecturer, or higher education administrator, our
+              platform offers the most current opportunities in academia
+              globally. Connect with your next career move in the academic
+              sector through our comprehensive online job board. Find your next
+              academic job now!
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div className="full-width">
-        <div className=""></div>
-      </div>
       {/* <p className="px-7 text-center mt-5">
             <Link
               className="link  text-[#f4a10c] font-bold text-2xl hover:text-orange-500"
@@ -129,9 +159,7 @@ export default function myPage() {
               Academic&nbsp;Awards 2023'&nbsp;NOW
             </Link>
           </p> */}
-      <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl mt-20 shadow-md">
-        Top Academic Jobs Today
-      </h2>
+      <h2 className="underline-full">Top Academic Jobs Today</h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7 ">
@@ -148,7 +176,7 @@ export default function myPage() {
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Ecole Polytechnique</Link>
+                    <Link href="">École Polytechnique</Link>
                   </li>
                   <li>
                     <Link href="">Lausanne, Switzerland</Link>
@@ -522,9 +550,8 @@ export default function myPage() {
       <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
         view more top jobs →
       </Link>
-      <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl mt-20 shadow-md">
-        Top Cities for Uni Jobs
-      </h2>
+
+      <h2 className="underline-full mt-20">Top Cities for Uni Jobs</h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">
           <div className="faculty-container grid-cols-2 grid md:grid-cols-4 gap-8 py-2 px-7">
@@ -694,9 +721,9 @@ export default function myPage() {
           </div>
         </div>
       </div>
-      <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl mt-20 shadow-md">
-        Top Universities To Work For
-      </h2>
+
+      {/* WIP */}
+      {/* <h2 className="underline-full mt-20">Top Universities To Work For</h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
@@ -872,8 +899,8 @@ export default function myPage() {
             </div>
           </div>
         </div>
-      </div>
-      <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl mt-20 shadow-md">
+      </div> */}
+      <h2 className="underline-full mt-20">
         <Link href="/the-university-rankings/">
           The University Rankings/ Top Academic Careers
         </Link>
@@ -1014,24 +1041,27 @@ export default function myPage() {
           </div>
         </div>
       </div>
-      <div className=" flex flex-col  ">
-        <Link href="/job-type/">
-          <h2 className=" py-4 px-7 border-4 text-[#f4a10c] rounded-full mt-[7rem] hover:bg-orange-500 hover:text-white shadow-md">
-            → Find Academic<span className="font-bold"> Job-Types</span> ( i.e.
-            Professor, Fellow )
-          </h2>
+
+      {/* These are broken */}
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+        <Link
+          href="/job-type/"
+          className="btn btn-white border-4 shadow-md leading-none"
+        >
+          → Find Academic<span className="font-bold"> Job-Types</span>{' '}
+          <span className="hide-mobile">(i.e. Professor, Fellow)</span>
         </Link>
-      </div>
-      <div className="flex flex-col  ">
-        <Link href="/industry/">
-          {' '}
-          <h2 className="  py-4 px-7 border-4 text-[#f4a10c] rounded-full mt-10 hover:bg-orange-500 hover:text-white shadow-md mb-12">
-            → Find Academic Positions in
-            <span className="font-bold"> Industry</span> ( i.e. laboratory
-            technical services )
-          </h2>
+        <Link
+          href="/industry/"
+          className="btn btn-white border-4 shadow-md leading-none"
+        >
+          → Find Academic Positions in
+          <span className="font-bold"> Industry</span>
+          <span className="hide-mobile">
+            (i.e. laboratory technical services)
+          </span>
         </Link>
-      </div>
+      </div> */}
     </main>
   );
 }
