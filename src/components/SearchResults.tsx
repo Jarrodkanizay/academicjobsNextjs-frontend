@@ -155,7 +155,7 @@ export default function SearchResults({ q }: SearchResultsProps) {
     if (data.jobs.length > 0) {
       console.log('data', data);
       content = (
-        <div className="content-grid mx-auto w-2/5">
+        <div className="content-grid mx-auto md:w-2/5">
           <div className="flex justify-start items-start font-bold gap-2 ">
             <BsHandbag />
             {dataQty && <span>{`${dataQty} Academic Jobs Found`}</span>}
