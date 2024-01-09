@@ -30,6 +30,12 @@ export default function Header() {
 
   return (
     <>
+      {pathname === '/' ? null : (
+        <Link href="/" className="static-logo mobile">
+          <LogoAJ width={270} height={60} />{' '}
+        </Link>
+      )}
+
       <HamburgerMenuIcon
         onClick={() => {
           setIsNavOpen(!isNavOpen);
@@ -43,11 +49,6 @@ export default function Header() {
               <LogoAJ width={270} height={60} />{' '}
             </Link>
           )}
-          {mobileMode ? (
-            <Link href="/" className="static-logo mr-4">
-              <LogoAJ width={270} height={60} />{' '}
-            </Link>
-          ) : null}
 
           <NavItem
             url="/jobs"
