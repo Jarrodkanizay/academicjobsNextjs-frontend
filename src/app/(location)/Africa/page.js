@@ -56,7 +56,7 @@ export default function Page() {
 
       <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
         <a>▼</a></div>
-      <div className="bg-gradient-to-b to-white from-orange-100 rounded-t-[3rem] mt-[-1rem]">
+      {/* <div className="bg-gradient-to-b to-white from-orange-100 rounded-t-[3rem] mt-[-1rem]"> */}
         <div className=" max-w-screen-xl mx-auto">
           <div className="blurb text-left py-8 mt-[30rem] ">
             <h1 className="py-3 px-7 bg-[#f4a10c] text-white rounded-3xl font-bold text-2xl md:text-2xl lg:text-2xl shadow-xl">Academic Jobs Africa: The Best Uni Jobs</h1>
@@ -68,7 +68,7 @@ export default function Page() {
               <p className="px-7 pb-8">Academic Jobs Africa is a platform that connects you with the best academic employers and candidates. You can browse through hundreds of job listings in various disciplines and fields, such as engineering, health sciences, humanities, social sciences, education, and more. You can also filter your search by country, region, institution type, salary range, and contract duration.</p>
               <p className="font-semibold"></p>
             </div>
-          </div>
+          {/* </div> */}
           <div id="myUniversity" class="myUniversity">
             <div class="widget__text-block1">
               <div>

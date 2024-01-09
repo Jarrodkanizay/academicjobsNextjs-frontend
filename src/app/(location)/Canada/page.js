@@ -64,7 +64,7 @@ export default function Page() {
 
       <div className="text-[#fe0000]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
         <a>▼</a></div>
-      <div className="bg-gradient-to-b to-white from-orange-100 rounded-t-[3rem] mt-[-1rem]">
+      {/* <div className="bg-gradient-to-b to-white from-orange-100 rounded-t-[3rem] mt-[-1rem]"> */}
         <div className=" max-w-screen-xl mx-auto">
           <div className="blurb text-left py-8 mt-[30rem] ">
             <h1 className="py-3 px-7 bg-[#fe0000] text-white rounded-3xl font-bold text-2xl md:text-2xl lg:text-2xl  shadow-xl">ALL YOUR BEST CANADIAN UNIVERSITY JOBS</h1>
@@ -76,7 +76,7 @@ export default function Page() {
               <p className="px-7 pb-8">Academic jobs is more than just a listing of vacancies for canada. It is also a platform for networking, learning, and career development. Academic jobs is updated daily with new postings from universities, colleges, research institutes, and other organizations across Canada. You can browse by location, discipline, level, type, and keywords to find the best match for your qualifications and interests.</p>
               <p className="font-semibold"></p>
             </div>
-          </div>
+          {/* </div> */}
           <div id="myUniversity" class="myUniversity">
             <div class="widget__text-block1">
               <div>

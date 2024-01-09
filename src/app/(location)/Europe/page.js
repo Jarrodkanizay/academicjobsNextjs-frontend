@@ -56,7 +56,7 @@ export default function Page() {
 
       <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
         <a>▼</a></div>
-      <div className="bg-gradient-to-b to-white from-orange-100 rounded-t-[3rem] mt-[-1rem]">
+      {/* <div className="bg-gradient-to-b to-white from-orange-100 rounded-t-[3rem] mt-[-1rem]"> */}
         <div className=" max-w-screen-xl mx-auto">
           <div className="blurb text-left py-8 mt-[30rem] ">
             <h1 className="py-3 px-7 bg-[#f4a10c] text-white rounded-3xl font-bold text-2xl md:text-2xl lg:text-2xl  shadow-xl">Academic Jobs Europe</h1>
@@ -68,7 +68,7 @@ export default function Page() {
               <p className="px-7 pb-8">Academic Jobs board is a platform that connects academic universities, institutions and organizations with qualified candidates across Europe. You can browse through hundreds of University Jobs in various disciplines. Whether you are looking for a permanent or a temporary position, a full-time or a part-time role, our academic job board can help you find your dream job in Europe.</p>
               <p className="font-semibold"></p>
             </div>
-          </div>
+          {/* </div> */}
           <div id="myUniversity" class="myUniversity">
             <div class="widget__text-block1">
               <div>

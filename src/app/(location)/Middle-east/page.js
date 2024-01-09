@@ -62,7 +62,7 @@ export default function Page() {
 
       <div className="text-[#922c40]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
         <a>▼</a></div>
-      <div className="bg-gradient-to-b to-white from-orange-100 rounded-t-[3rem] mt-[-1rem]">
+      {/* <div className="bg-gradient-to-b to-white from-orange-100 rounded-t-[3rem] mt-[-1rem]"> */}
         <div className=" max-w-screen-xl mx-auto">
           <div className="blurb text-left py-8 mt-[30rem] ">
             <h1 className="py-3 px-7 bg-[#922c40] text-white rounded-3xl font-bold text-2xl md:text-2xl lg:text-2xl  shadow-xl">Academic Jobs Middle East</h1>
@@ -73,7 +73,7 @@ export default function Page() {
             <div className="newLine">
               <p className="px-7 pb-8">Academic Jobs Middle East is a diverse and dynamic website that offers many opportunities for academic professionals. Whether you are interested in teaching, research, or administration, you can find a variety of academic jobs in the middle east that suit your qualifications and goals. You can explore hundreds of academic jobs in the middle east on this page, covering various fields and disciplines such as engineering, humanities, social sciences, health sciences, and more.</p>
               <p className="font-semibold"></p>
-            </div>
+            {/* </div> */}
           </div>
           <div id="myUniversity" class="myUniversity">
             <div class="widget__text-block1">

@@ -28,7 +28,12 @@ const Job = ({ job }) => {
             <Link
               href={`/employers/${company_name?.replace(/\W+/g, '-').toLowerCase()}/${employer_id}/`}
             >
-              <img src={logo || "/favicon.png"} alt={company_name} className="w-full h-full object-contain rounded-lg" />
+              <img
+                src={logo && logo.replace("https://iloveacademicjobs.com/files/pictures", "https://academicjobs.s3.amazonaws.com/img/university-logo") || "/favicon.png"}
+             
+                // src={logo?.replace("https://www.iloveacademicjobs.com/files/pictures", "https://academicjobs.s3.amazonaws.com/img/university-logo") || "/favicon.png"}
+                
+                alt={company_name} className="w-full h-full object-contain rounded-lg" />
             </Link>
           </div>
           <Link className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer"
