@@ -21,7 +21,7 @@ export default function Page() {
           alt="AcademicJobs Africa"
           className=" w-[20rem] mb-[1rem] "
         /></div>
-      <JobSearchBox />
+      <JobSearchBox l="Africa"/>
 
       <div className=" mt-[10rem] " >
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">

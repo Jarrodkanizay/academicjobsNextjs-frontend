@@ -25,7 +25,7 @@ export default function Page() {
           width={330} height={220}
         />
       </div>
-      <JobSearchBox />
+      <JobSearchBox l="Australia"/>
       <div className=" mt-[10rem] " >
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
