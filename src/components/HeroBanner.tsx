@@ -36,7 +36,10 @@ const HeroBanner = ({
   imgHeight = 534,
   imgRight = true,
 }: HeroProps) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 0
+  );
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
