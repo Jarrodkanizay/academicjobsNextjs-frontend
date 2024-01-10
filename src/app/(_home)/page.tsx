@@ -430,21 +430,21 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="https://www.academicjobs.com/jobs/director-of-alumni-engagement/72223"
+                    href="/jobs/program-coordinator-pre-professional-programs/82178"
                     className="text-blue-500 font-bold"
                   >
-                    Director of Alumni Engagement
+                    Program Coordinator- Pre-Professional Programs
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">University of Pennsylvania</Link>
+                    <Link href="">Southern Utah University</Link>
                   </li>
                   <li>
-                    <Link href="">Philadelphia, PA, USA</Link>
+                    <Link href="">Cedar City, UT, USA</Link>
                   </li>
                   <li>
-                    <Link href="">16 Jan, 2023</Link>
+                    <Link href=""></Link>
                   </li>
                 </ul>
               </ul>
