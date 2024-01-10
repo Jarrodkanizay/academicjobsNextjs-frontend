@@ -88,20 +88,59 @@ export default function Page() {
         </ul>
       </div>
 
-      <div className="text-[#138806]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6">
-        <a>▼</a>
+      <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">
+        <a href="#section" class="scroll-smooth md:scroll-auto">
+          ▼
+        </a>
+      </div>
+
+      <div className="content-grid mx-auto">
+        
+   
+    
+            
+            
+            
+        <div id="section" className=" full-width py-4 mt-[30rem] full-width mb-[175px] bg-slate-200">
+  <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
+  <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
+          <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS India:</span> < br /> Academic, research &&nbsp;science positions locally
+          & globally
+          </h1>
+          
+        <div>
+        
+        <p className="px-7 mb-4 mt-1">
+        As an academic job seeker in India, you can explore various
+                fields of study, such as engineering, technology, mathematics,
+                statistics, economics, business, arts, humanities, social
+                sciences, life sciences, health sciences, and more. You can also
+                choose from different types of academic positions, such as
+                assistant professor, associate professor, professor, lecturer,
+                researcher, postdoctoral fellow, and more. On Academic Jobs
+                India you can also apply for jobs in different types of
+                institutions, such as public universities, private universities,
+                deemed universities, institutes of national importance, central
+                universities, state universities, and more.
+        </p>
+      
+        </div>
+      </div>
+      </div>
+      {/* <div className="text-[#138806]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6">
+        <a>▼</a> */}
       </div>
       {/* <div className="bg-gradient-to-b to-white from-orange-100 rounded-t-[3rem] mt-[-1rem]"> */}
-        <div className=" max-w-screen-xl mx-auto">
+        {/* <div className=" max-w-screen-xl mx-auto">
           <div className="blurb text-left py-8 mt-[30rem] ">
             <h1 className="py-3 px-7 bg-[#138806] text-white rounded-3xl font-bold text-2xl md:text-2xl lg:text-2xl shadow-xl">
               Academic Jobs India
             </h1>
             <div className="newLine mb-4">
               <p className="font-semibold"></p>
-              <p className="font-semibold"></p>
+              <p className="font-semibold"></p> */}
             {/* </div> */}
-            <div className="newLine">
+            {/* <div className="newLine">
               <p className="px-7">
                 As an academic job seeker in India, you can explore various
                 fields of study, such as engineering, technology, mathematics,
@@ -119,7 +158,7 @@ export default function Page() {
             </div>
           </div>
           <div id="myUniversity" class="myUniversity">
-            <div class="widget__text-block1">
+            <div class="widget__text-block1"> */}
               <div>
                 <h2 className="text-1xl font-bold py-3 px-7 border-[#f4a10c] border-2  text-[#f4a10c] rounded-3xl shadow-md ">
                   AcademicJobs India: University Jobs by State{' '}
@@ -203,9 +242,6 @@ export default function Page() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      
   );
 }
