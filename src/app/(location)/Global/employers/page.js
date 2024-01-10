@@ -41,12 +41,7 @@ const Findemployerss = () => {
                   <Link href="/academic-talent-pool" className="btn btn-aj">
                     Join our Talent Pool
                   </Link>
-                  <Link
-                    href="https://iloveacademicjobs.com/employer-products/?action=buy_product&product_sid=14"
-                    className="btn btn-aj"
-                  >
-                    Create Institutional Profile
-                  </Link>
+               
                 </div>
               </div>
             </div>

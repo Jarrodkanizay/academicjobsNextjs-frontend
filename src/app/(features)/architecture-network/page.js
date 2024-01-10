@@ -24,10 +24,10 @@ export default function Page() {
     
 <div className="content-grid mx-auto">
            
-           <div id="section" className=" full-width py-4 mt-[30rem] full-width mb bg-slate-200">
+           <div id="section" className=" full-width py-4  full-width m bg-slate-200">
      <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
      <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
-             <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS Architecture Network:</span> < br /> Academic, research &&nbsp;science positions locally  & globally</h1>
+             <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS Architecture Network:</span> < br /> </h1>
              
            <div>
            
@@ -39,16 +39,10 @@ export default function Page() {
          </div>
          </div>
              </div>
-    <div className="pt-[10rem] flex flex-col items-center justify-center" >
-        <img
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-asia-min.png"
-
-          alt="AcademicJobs Logo"
-          className=" w-[20rem] mb-[1rem] "
-        /></div>
+             
       <JobSearchBox q="Architecture"/>
 
-      <div className=" mt-[13rem] " >
+      <div className=" mt-[3rem] " >
         <ul className="faculty-container flex  gap-4 items-center justify-center text-[#f4a10c] ">
           <li><Link href="/architecture/lecturer/" >	Lecturer</Link></li>
           <li><Link href="/architecture/research/" >	Research </Link></li>
@@ -79,7 +73,15 @@ export default function Page() {
         </a>
       </div>
 
+
+      <div className="container mx-auto flex flex-col">
+        <h2 className="font-bold text-xl md:text-xl mt-12 text-center">
+          Join Our Talent Pool Today!
+        </h2>
+
           </div>
+          </div>
+          
      
   )
 }
