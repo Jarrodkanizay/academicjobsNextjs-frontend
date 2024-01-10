@@ -3,8 +3,7 @@ import Link from 'next/link';
 import LogoAJ from '@/components/brand/LogoAJ';
 import type { Metadata } from 'next';
 import JobSearchBoxHome from '@/components/JobSearchBoxHome';
-import JobCategoryLinks from '@/components/links/JobCategoryLinks';
-import JobLocationTypeLinks from '@/components/links/JobLocationTypeLinks';
+import JobCategoryAndLocationLinks from '@/components/links/JobCategoryAndLocationLinks';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -32,8 +31,7 @@ export default function myPage() {
         </div>
       </div>
 
-      <JobCategoryLinks />
-      <JobLocationTypeLinks />
+      <JobCategoryAndLocationLinks />
 
       <a
         href="#section"
