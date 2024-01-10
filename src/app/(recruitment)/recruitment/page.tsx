@@ -19,12 +19,12 @@ export default function myPage() {
         <section>
           <div className="hero max-h-fit bg-slate-200 py-8 mx-auto">
             <div className="container mx-auto">
-              <div className="hero-content flex-col xl:flex-row-reverse mx-auto max-w-full">
+              <div className="hero-content flex-col xl:flex-row mx-auto max-w-full gap-8">
                 <Image
                   src="https://academicjobs.s3.amazonaws.com/img/_misc/Were-Hiring-Stock-scaled.jpg"
                   className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
                   width={1280}
-                  height={380}
+                  height={480}
                   alt="Number 1 Recruitment Platform"
                 />
                 <div>
