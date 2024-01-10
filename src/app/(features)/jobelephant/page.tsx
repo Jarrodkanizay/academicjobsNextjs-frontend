@@ -105,12 +105,15 @@ export default function Page() {
 
           {/* Hero Banner */}
          
-          <div className="mt-8">&nbsp;</div>
+          <div className="">&nbsp;</div>
 
           
 
                   {/* Pricing Card 1 */}
-        <div  id="pricing-table-cards" className="md:w-1/4 flex-1 mt-8 mb-8 p-8 bg-white shadow-xl rounded-3xl  md:max-w-screen-sm mx-auto">
+                  <div className="hero max-h-fit bg-white py-8">
+            <div className="max-w-screen-lg mx-auto">
+              <div className="hero-content flex-col lg:flex-row gap-12">
+              <div  id="pricing-table-cards" className="md:w-1/2 flex-1 mt-8 mb-8 p-8 bg-white shadow-xl rounded-3xl  md:max-w-screen-sm mx-auto">
           <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
             <Image  width="150"
             height="150"
@@ -170,10 +173,7 @@ export default function Page() {
           </ul>
 
           <a
-            href={`mailto:${emailAJ}?subject=${subjectBasic}&body=${createMessage(
-              pricing.basic,
-              pricing.basicPrice
-            )}`}
+            href="https://www.iloveacademicjobs.com/jobelephant-job-form"
             className="flex justify-center items-center bg-aj rounded-xl py-5 px-4 text-center text-white text-3xl font-bold "
           >
            {pricing.basic}
@@ -181,13 +181,29 @@ export default function Page() {
         </div>
 
 
-        <PricingTable />
-        
+              <div className="md:w-1/2">
+                <h1 className="text-5xl font-semibold  text-[#f4a10c] "> THIS IS NEW... <br /> don't panic!</h1>
+      <h4 className=" text-gray-700 text-3xl mt-4 font-normal">We are about to launch our new 'recruiter center'. In the meantime, send through your new job using the simple form button...</h4>
+     
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+        <div className="max-w-xl mx-auto">
+              <div className="hero-content flex-col lg:flex-row">
+             
+               
+              </div>
+            </div>
 
 
         
         </div>
 
+        <div className="hero max-h-fit bg-slate-200 py-8 ">
+           
+          </div>
      
         <div className=" bg-gray-200 p-4 ">
             <Image
