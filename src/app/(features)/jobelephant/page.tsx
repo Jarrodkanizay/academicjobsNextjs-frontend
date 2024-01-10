@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-
+import PricingTable from '@/components/PricingTable';
 export const metadata: Metadata = {
   title: 'Post a job - Recruit Academics', //Option 1 replaces the %s in layout.tsx
   // title: {
@@ -26,6 +26,8 @@ type PricingTypes = {
 
 
 
+
+
 export default function Page() {
 
 
@@ -39,6 +41,12 @@ export default function Page() {
       enterprise: "10 Job Pack",
       enterprisePrice: 2520,
     };
+
+    
+
+    
+    
+   
   
     const emailAJ = "jobelephant@academicjobs.com";
   
@@ -171,6 +179,10 @@ export default function Page() {
            {pricing.basic}
           </a>
         </div>
+
+
+        <PricingTable />
+        
 
 
         

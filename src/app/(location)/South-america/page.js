@@ -53,25 +53,54 @@ export const metadata = {
       </div>
 
 
+      <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">
+        <a href="#section" class="scroll-smooth md:scroll-auto">
+          ▼
+        </a>
+      </div>
+
+      <div className="content-grid mx-auto">
+        
+   
+    
+            
+            
+            
+        <div id="section" className=" full-width py-4 mt-[30rem] full-width mb-[175px] bg-slate-200">
+  <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
+  <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
+          <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS South America:</span> < br /> Academic, research &&nbsp;science positions locally
+          & globally
+          </h1>
+          
+        <div>
+        
+        <p className="px-7 mb-4 mt-1">
+        If you are interested in finding your dream job in South America, you can browse through our listings of teaching and education jobs1, science jobs, and university and academic jobs. You can also filter by location, discipline, and salary to narrow down your search. Don’t miss this chance to explore the academic opportunities in South America!
+        </p>
+      
+        </div>
+      </div>
+      </div>
 
 
-      <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
-        <a>▼</a></div>
+      {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
+        <a>▼</a></div> */}
       {/* <div className="bg-gradient-to-b to-white from-orange-100 rounded-t-[3rem] mt-[-1rem]"> */}
-        <div className=" max-w-screen-xl mx-auto">
+        {/* <div className=" max-w-screen-xl mx-auto">
           <div className="blurb text-left py-8 pt-[30rem] ">
             <h1 className="py-3 px-7 bg-[#f4a10c] text-white rounded-3xl font-bold text-2xl md:text-2xl lg:text-2xl  shadow-xl">Academic Jobs South America</h1>
             <div className="newLine mb-4">
               <p className="font-semibold"></p>
-              <p className="font-semibold"></p>
+              <p className="font-semibold"></p> */}
             {/* </div> */}
-            <div className="newLine">
+            {/* <div className="newLine">
               <p className="px-7 pb-8">If you are interested in finding your dream job in South America, you can browse through our listings of teaching and education jobs1, science jobs, and university and academic jobs. You can also filter by location, discipline, and salary to narrow down your search. Don’t miss this chance to explore the academic opportunities in South America!</p>
               <p className="font-semibold"></p>
             </div>
           </div>
           <div id="myUniversity" class="myUniversity">
-            <div class="widget__text-block1">
+            <div class="widget__text-block1"> */}
               <div>
                 <h2 className="text-1xl font-bold py-3 px-7 border-[#f4a10c] border-2  text-[#f4a10c] rounded-3xl shadow-md ">AcademicJobs South America: All University Jobs by Country </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
@@ -126,8 +155,5 @@ export const metadata = {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
   )
 }

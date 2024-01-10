@@ -59,19 +59,17 @@ export default function Page() {
       </div>
     
      
-        <div className=" max-w-screen-xl mx-auto">
-          <div className="blurb text-left py-8 mt-[30rem] ">
-            <h1 className="py-3 px-7 bg-[#f4a10c] text-white rounded-full font-bold text-2xl md:text-3xl lg:text-2xl shadow-xl ">Academic Jobs Australia</h1>
-            <div className="newLine mb-4">
-              <p className="font-semibold"></p>
-              <p className="font-semibold"></p>
+        <div className="content-grid mx-auto">
+        
+   
+    
             
             
             
-            {/* <div id="section" className="bg-slate-200 full-width py-4">
-      <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12">
-      <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0">
-              <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS:</span> Academic, research &&nbsp;science positions locally
+            <div id="section" className="bg-slate-200 full-width py-4 mt-[30rem] full-width mb-[175px]">
+      <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
+      <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
+              <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS Australia:</span> < br /> Academic, research &&nbsp;science positions locally
               & globally
               </h1>
               
@@ -91,7 +89,7 @@ export default function Page() {
             
             </div>
           </div>
-          </div> */}
+         
            
            
            
@@ -307,6 +305,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-    </div>
+   
   )
 }
