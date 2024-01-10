@@ -45,6 +45,13 @@ html {
     font-size: var(--fs-400);
     line-height: 1.6;
 
+    .desktop-mode {
+      display: block;
+    }
+    .mobile-mode {
+      display: none;
+    }
+
     .spacer {
       height: 100px;
     }
@@ -650,6 +657,18 @@ html {
       border: 1px solid #ccc;
     }
     @media (max-width: 1023px) {
+      .desktop-mode {
+        display: none;
+      }
+      .mobile-mode {
+        display: block;
+      }
+      .hero-wrapper {
+        margin-top: 80px;
+        margin-left: -1rem;
+        margin-right: -1rem;
+      }
+
       .hide-mobile {
         display: none;
       }

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults';
@@ -51,20 +50,36 @@ export default function myPage() {
 
   return (
     <>
-      <main className="content-grid">
+      <main className="content-grid mx-auto">
         {/* Hero banner */}
+        {/* <section className="full-width h-[300px] bg-sky-200"></section> */}
         <HeroBanner
           h1="Student Jobs on Campus"
+          // h2=""
           para1="Unlock your earning potential while studying at university. Exciting opportunities for students and graduates to earn extra cash. Immediate openings for casual and part-time positions. Use your earnings for rent, groceries, or a night out. Turn your college experience into 'beer money' and gain valuable skills."
+          // para2=""
           btnPrimaryText="Learn About Student Jobs"
           btnPrimaryURL="/student-jobs-on-campus"
           btnSecondaryText="Student FAQ"
           btnSecondaryURL="/student/faq/"
-          src="/student-jobs-on-campus/student-jobs-on-campus.jpg"
+          src="/student-jobs-on-campus/student-working-in-campus-cafe.jpg"
+          alt="Student Jobs on Campus can be life changing"
+          // bgColorClass="bg-sky-200"
           // imgRight={false}
         />
-      </main>
-      <div className="content-grid mx-auto mt-16">
+        <div className="order-none max-w-screen-sm mx-auto">
+          <h2 className="underline-full">Earn with Student Jobs on Campus</h2>
+          <p className="mt-4">
+            Jump the queue and find student jobs on campus today. Join our
+            Income Booster program to get notified of positions immediately.
+            <Link
+              href="/student/income-booster"
+              className="btn btn-aj btn-block mt-4"
+            >
+              Join Income Booster
+            </Link>
+          </p>
+        </div>
         {/* <div className="prose">
           <h2 className="underline-full">
             What type of Student Job are you&nbsp;looking&nbsp;for?
@@ -101,7 +116,20 @@ export default function myPage() {
         </div> */}
         <JobSearchBox q="student" />
         <SearchResults q={{ q: 'student' || 0 }} />
-        <section className="container mx-auto px-4 mt-12">
+        {/* <HeroBanner
+          mobileMode={true}
+          h1="Student Jobs on Campus"
+          para1="Unlock your earning potential while studying at university. Exciting opportunities for students and graduates to earn extra cash. Immediate openings for casual and part-time positions. Use your earnings for rent, groceries, or a night out. Turn your college experience into 'beer money' and gain valuable skills."
+          btnPrimaryText="Learn About Student Jobs"
+          btnPrimaryURL="/student-jobs-on-campus"
+          btnSecondaryText="Student FAQ"
+          btnSecondaryURL="/student/faq/"
+          src="/student-jobs-on-campus/student-jobs-on-campus.jpg"
+          alt="Student Jobs on Campus can be life changing"
+          // bgColorClass="bg-sky-300"
+          // imgRight={false}
+        /> */}
+        <section className="container mx-auto px-4 mt-12 order-1">
           <h2 className="text-center">
             Find the Best Student Jobs & make money whilst&nbsp;studying…
           </h2>
@@ -263,7 +291,7 @@ export default function myPage() {
             </div>
           </div> */}
         </section>
-      </div>
+      </main>
     </>
   );
 }

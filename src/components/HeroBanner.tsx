@@ -1,3 +1,5 @@
+'use client';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -34,8 +36,22 @@ const HeroBanner = ({
   imgHeight = 534,
   imgRight = true,
 }: HeroProps) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <div className={`hero full-width max-h-fit py-8 ${bgColorClass}`}>
+    <section
+      className={`hero full-width max-h-fit py-8 mb-16 ${bgColorClass} order-${
+        windowWidth > 1023 ? 'none' : '1'
+      }`}
+    >
       <div className="container mx-auto">
         <div
           className={`hero-content flex-col lg:flex-row${
@@ -79,7 +95,7 @@ const HeroBanner = ({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
