@@ -29,8 +29,9 @@ const Job = ({ job }) => {
               href={`/employers/${company_name?.replace(/\W+/g, '-').toLowerCase()}/${employer_id}/`}
             >
               <img
-                src={logo && logo.replace("https://iloveacademicjobs.com/files/pictures", "https://academicjobs.s3.amazonaws.com/img/university-logo") || "/favicon.png"}
-             
+                src={ `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` || "/favicon.png"}
+                //src={logo && logo.replace("https://iloveacademicjobs.com/files/pictures", "https://academicjobs.s3.amazonaws.com/img/university-logo") || "/favicon.png"}
+
                 // src={logo?.replace("https://www.iloveacademicjobs.com/files/pictures", "https://academicjobs.s3.amazonaws.com/img/university-logo") || "/favicon.png"}
                 
                 alt={company_name} className="w-full h-full object-contain rounded-lg" />
