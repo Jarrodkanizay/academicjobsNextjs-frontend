@@ -3,6 +3,8 @@ import Link from 'next/link';
 import LogoAJ from '@/components/brand/LogoAJ';
 import type { Metadata } from 'next';
 import JobSearchBoxHome from '@/components/JobSearchBoxHome';
+import JobCategoryLinks from '@/components/links/JobCategoryLinks';
+import JobLocationTypeLinks from '@/components/links/JobLocationTypeLinks';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -29,59 +31,10 @@ export default function myPage() {
           <JobSearchBoxHome />
         </div>
       </div>
-      <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 px-2">
-        <li className="hover:underline">
-          <Link href="/lecturer">Lecturer{'  '}</Link>
-        </li>
-        <li className="hover:underline">
-          <Link href="/research/">Research{'  '}</Link>
-        </li>
-        <li className="hover:underline">
-          <Link href="/professor/">Professor{'  '}</Link>
-        </li>
-        <li className="hover:underline">
-          <Link href="/executive/">Executive{'  '}</Link>
-        </li>
-        <li className="hover:underline">
-          <Link href="/faculty/">Faculty{'  '}</Link>
-        </li>
-        <li className="hover:underline">
-          <Link href="/admin/">Admin{'  '}</Link>
-        </li>
-        <li className="hover:underline">
-          <Link href="/hr-jobs/">HR{'  '}</Link>
-        </li>
-        <li className="hover:underline">
-          <Link href="/student/">Student{'  '}</Link>
-        </li>
-        <li className="hover:underline">
-          <Link href="/graduate/"> Graduate{'  '}</Link>
-        </li>
-        <li className="hover:underline">
-          <Link href="/postdoc/"> Postdoc{'  '}</Link>
-        </li>
-        <li className="hover:underline">
-          <Link href="/phd/">PhD</Link>
-        </li>
-      </ul>
-      {/* Employment Type Container */}
-      <ul className="faculty-container flex gap-4 items-center justify-center text-[#f4a10c] px-2 mt-7">
-        <li className="hover:underline whitespace-nowrap">
-          <Link href="/online/">Online{'  '}</Link>
-        </li>
-        <li className="hover:underline whitespace-nowrap">
-          <Link href="/remote/">Remote{'  '}</Link>
-        </li>
-        <li className="hover:underline whitespace-nowrap">
-          <Link href="/full-time/">Full-Time{'  '}</Link>
-        </li>
-        <li className="hover:underline whitespace-nowrap">
-          <Link href="/part-time/">Part-Time{'  '}</Link>
-        </li>
-        <li className="hover:underline whitespace-nowrap">
-          <Link href="/casual/">Casual</Link>
-        </li>
-      </ul>
+
+      <JobCategoryLinks />
+      <JobLocationTypeLinks />
+
       <a
         href="#section"
         className="scroll-smooth md:scroll-auto text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16rem]"
@@ -901,9 +854,7 @@ export default function myPage() {
         </div>
       </div> */}
       <h2 className="underline-full mt-20">
-      
-          The University Rankings/ Top Academic Careers
-        
+        The University Rankings/ Top Academic Careers
       </h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">

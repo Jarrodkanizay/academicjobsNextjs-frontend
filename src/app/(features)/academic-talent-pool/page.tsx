@@ -30,7 +30,7 @@ export default function myPage() {
         {/* <h4 className="font-semibold text-slate-400 text-2xl mt-4">
           Talent Pool Sign Up
         </h4> */}
-        <form
+        {/* <form
           // onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col gap-4"
         >
@@ -127,7 +127,7 @@ export default function myPage() {
           >
             Post My Job Now
           </button>
-        </form>
+        </form> */}
       </div>
 
       <h3 className="text-[#f4a10c] text-xl font-semibold mb-4">
