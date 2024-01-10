@@ -1,4 +1,5 @@
 import countries from '@/data/CountryList.json';
+import InputBlock2 from './InputBlock2';
 
 const TalentPoolForm = () => {
   return (
@@ -11,16 +12,16 @@ const TalentPoolForm = () => {
         {/* First name */}
         <div className="col-span-1">
           <div className="relative">
-            <input
+            <InputBlock2
               tabIndex={1}
               type="text"
-              id="first-name-input"
+              ID="first-name-input"
               name="01_First_Name"
-              className="w-full px-4 py-3  rounded-lg text-black focus:outline-none focus:border-orange-500"
+              forceClass="px-4 py-3 text-black"
               placeholder="First Name"
               autoComplete="given-name"
               // onChange={handleChange}
-              required
+              required={true}
             />
             <i className="required">*</i>
           </div>
@@ -28,16 +29,16 @@ const TalentPoolForm = () => {
         {/* Last name */}
         <div className="col-span-1">
           <div className="relative">
-            <input
+            <InputBlock2
               tabIndex={2}
               type="text"
-              id="last-name-input"
+              ID="last-name-input"
               name="02_Last_Name"
-              className="w-full px-4 py-3  rounded-lg text-black focus:outline-none focus:border-orange-500"
+              forceClass="w-full px-4 py-3  rounded-lg text-black"
               placeholder=" Last Name"
               autoComplete="family-name"
               // onChange={handleChange}
-              required
+              required={true}
             />
             <i className="required">*</i>
           </div>
@@ -45,15 +46,15 @@ const TalentPoolForm = () => {
         {/* Academic Title */}
         <div className="col-span-1">
           <div className="relative">
-            <input
+            <InputBlock2
               tabIndex={3}
               type="text"
-              id="name-input"
+              ID="name-input"
               name="03_Academic_Title"
-              className="w-full px-4 py-3 0 rounded-lg text-black focus:outline-none focus:border-orange-500"
+              forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="Academic Title (Role or Position)"
               // onChange={handleChange}
-              required
+              required={true}
             />
             <i className="required">*</i>
           </div>
@@ -61,12 +62,12 @@ const TalentPoolForm = () => {
         {/* phone */}
         <div className="col-span-1">
           <div className="relative">
-            <input
+            <InputBlock2
               tabIndex={4}
               type="tel"
-              id="phone-input"
+              ID="phone-input"
               name="04_phone"
-              className="w-full px-4 py-3 0 rounded-lg text-black focus:outline-none focus:border-orange-500"
+              forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               autoComplete="tel"
               placeholder="Phone Number"
               // onChange={handleChange}
@@ -77,16 +78,16 @@ const TalentPoolForm = () => {
         {/* Email */}
         <div className="col-span-2">
           <div className="relative">
-            <input
+            <InputBlock2
               tabIndex={5}
               type="email"
-              id="email-input"
+              ID="email-input"
               name="05_Email"
-              className="w-full px-4 py-3 0 rounded-lg text-black focus:outline-none focus:border-orange-500"
+              forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="Email"
               autoComplete="email"
               // onChange={handleChange}
-              required
+              required={true}
             />
             <i className="required">*</i>
           </div>
@@ -97,13 +98,13 @@ const TalentPoolForm = () => {
         {/* Seeking Opportunities */}
         <div className="form-control">
           <label className="label cursor-pointer">
-            <input
+            <InputBlock2
               tabIndex={6}
               type="checkbox"
-              id="06_Collaborations_Checkbox"
+              ID="06_Collaborations_Checkbox"
               name="06_Collaborations_Checkbox"
               // value={isChecked1 ? 'Collaborate with Top Academics' : ''}
-              className="checkbox checkbox-warning"
+              forceClass="checkbox checkbox-warning"
               // checked={isChecked1}
               // onChange={handleCheckboxChange1}
             />
@@ -112,13 +113,13 @@ const TalentPoolForm = () => {
         </div>
         <div className="form-control">
           <label className="label cursor-pointer">
-            <input
+            <InputBlock2
               tabIndex={7}
               type="checkbox"
-              id="keynote"
+              ID="keynote"
               name="07_Keynote_Checkbox"
               // value={isChecked2 ? 'Keynote Speaking' : ''}
-              className="checkbox checkbox-warning"
+              forceClass="checkbox checkbox-warning"
               // checked={isChecked2}
               // onChange={handleCheckboxChange2}
             />
@@ -127,13 +128,13 @@ const TalentPoolForm = () => {
         </div>
         <div className="form-control">
           <label className="label cursor-pointer">
-            <input
+            <InputBlock2
               tabIndex={8}
               type="checkbox"
-              id="media"
+              ID="media"
               name="08_Media_Checkbox"
               // value={isChecked3 ? 'Media' : ''}
-              className="checkbox checkbox-warning"
+              forceClass="checkbox checkbox-warning"
               // checked={isChecked3}
               // onChange={handleCheckboxChange3}
             />
@@ -142,13 +143,13 @@ const TalentPoolForm = () => {
         </div>
         <div className="form-control">
           <label className="label cursor-pointer">
-            <input
+            <InputBlock2
               tabIndex={9}
               type="checkbox"
-              id="career-job-opportunities"
+              ID="career-job-opportunities"
               name="09_Career_Job_Opportunities_Checkbox"
               // value={isChecked4 ? 'Career Job Opportunities' : ''}
-              className="checkbox checkbox-warning"
+              forceClass="checkbox checkbox-warning"
               // checked={isChecked4}
               // onChange={handleCheckboxChange4}
             />
@@ -159,13 +160,13 @@ const TalentPoolForm = () => {
         </div>
         <div className="form-control">
           <label className="label cursor-pointer">
-            <input
+            <InputBlock2
               tabIndex={10}
               type="checkbox"
-              id="seek-ip-investors"
+              ID="seek-ip-investors"
               name="10_Seek_IP_Investors_Checkbox"
               // value={isChecked5 ? 'Seek IP Investors' : ''}
-              className="checkbox checkbox-warning"
+              forceClass="checkbox checkbox-warning"
               // checked={isChecked5}
               // onChange={handleCheckboxChange5}
             />
@@ -174,13 +175,13 @@ const TalentPoolForm = () => {
         </div>
         <div className="form-control">
           <label className="label cursor-pointer">
-            <input
+            <InputBlock2
               tabIndex={11}
               type="checkbox"
-              id="partner-with-"
+              ID="partner-with-"
               name="11_Partner_with_Industry_Checkbox"
               // value={isChecked6 ? 'Partner with Industry' : ''}
-              className="checkbox checkbox-warning"
+              forceClass="checkbox checkbox-warning"
               // checked={isChecked6}
               // onChange={handleCheckboxChange6}
             />
@@ -196,15 +197,15 @@ const TalentPoolForm = () => {
         {/* Institution */}
         <div className="col-span-1">
           <div className="relative">
-            <input
+            <InputBlock2
               tabIndex={12}
               type="text"
-              id="institution-input"
+              ID="institution-input"
               name="12_Institution"
-              className="w-full px-4 py-3 0 rounded-lg text-black focus:outline-none focus:border-orange-500"
+              forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="Institution/University (Current, Last or Attended)"
               // onChange={handleChange}
-              required
+              required={true}
             />
             <i className="required">*</i>
           </div>
@@ -212,15 +213,15 @@ const TalentPoolForm = () => {
         {/* Department/Faculty */}
         <div className="col-span-1">
           <div className="relative">
-            <input
+            <InputBlock2
               tabIndex={13}
               type="text"
-              id="department-faculty-input"
+              ID="department-faculty-input"
               name="13_Department_Faculty"
-              className="w-full px-4 py-3 0 rounded-lg text-black focus:outline-none focus:border-orange-500"
+              forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="Department/Faculty"
               // onChange={handleChange}
-              required
+              required={true}
             />
             <i className="required">*</i>
           </div>
@@ -228,15 +229,15 @@ const TalentPoolForm = () => {
         {/* Specialty */}
         <div className="col-span-1">
           <div className="relative">
-            <input
+            <InputBlock2
               tabIndex={14}
               type="text"
-              id="specialty-input"
+              ID="specialty-input"
               name="14_Specialty"
-              className="w-full px-4 py-3 0 rounded-lg text-black focus:outline-none focus:border-orange-500"
+              forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="Specialty"
               // onChange={handleChange}
-              required
+              required={true}
             />
             <i className="required">*</i>
           </div>
@@ -244,15 +245,15 @@ const TalentPoolForm = () => {
         {/* Location */}
         <div className="col-span-1">
           <div className="relative">
-            <input
+            <InputBlock2
               tabIndex={15}
               type="text"
-              id="location-input"
+              ID="location-input"
               name="15_Institution_Location"
-              className="w-full px-4 py-3 0 rounded-lg text-black focus:outline-none focus:border-orange-500"
+              forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="Institution Location"
               // onChange={handleChange}
-              required
+              required={true}
             />
             <i className="required">*</i>
           </div>
@@ -263,9 +264,9 @@ const TalentPoolForm = () => {
               tabIndex={16}
               id="country-select"
               name="16_Country"
-              className="w-full px-4 py-3 0 rounded-lg text-black focus:outline-none focus:border-orange-500"
+              className="w-full px-4 py-3 0 rounded-lg text-black"
               // onChange={handleChange}
-              required
+              required={true}
             >
               <option value="" disabled selected>
                 Select a country...
@@ -286,7 +287,7 @@ const TalentPoolForm = () => {
               tabIndex={17}
               id="profile-input"
               name="17_Profile"
-              className="w-full px-4 py-3 0 rounded-lg text-black focus:outline-none focus:border-orange-500"
+              className="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="OPTIONAL - Please write a brief profile noting your key skills, experience, and achievements."
               // onChange={handleChange}
             />
