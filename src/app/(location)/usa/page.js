@@ -90,7 +90,7 @@ export default function Page() {
         </p>
       
         </div>
-      </div>
+      
       
     
       {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
@@ -112,7 +112,7 @@ export default function Page() {
               <p className="font-semibold"></p>
             </div>
           </div>
-          <h2 className="text-1xl font-bold py-3 px-7 border-[#f4a10c] border-2  text-[#f4a10c] rounded-3xl shadow-md ">USA Academic Jobs Online: Academia Jobs by University </h2>
+          <h2 className="underline-full">USA Academic Jobs Online: Academia Jobs by University </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
             <ul>
               <li className='mb-1 '><Link href="/jobs/california/" className='text-[#f4a10c] font-bold'>California</Link></li>
@@ -333,6 +333,6 @@ export default function Page() {
             </ul>
           </div>
         </div>
-    
+        </div>
   )
 }

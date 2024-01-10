@@ -50,7 +50,7 @@ export default function myPage() {
     <div className="max-w-screen-xl mx-auto ">
    
     
-      <h2 className=" font-bold text-xl md:text-xl px-7 text-[#f4ac10] border-2 border-[#f4ac10] rounded-3xl mt-6 py-2">
+    <h2 className="underline-full">
         {" "}
         Top Academic Hub Posts
       </h2>
