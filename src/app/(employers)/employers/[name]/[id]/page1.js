@@ -66,7 +66,8 @@ const Job = () => {
                     >
                         <Image
                             className="w-full rounded-xl"
-                            src={logo || ''}
+                            //src={logo || ''}
+                            src={`https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` || "/favicon.png"}
                             alt={company_name}
                             width={300}
                             height={200}

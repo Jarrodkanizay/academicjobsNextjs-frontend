@@ -59,14 +59,14 @@ const Job = () => {
     } = job;
     return (
         <div className="bg-white relative max-w-screen-lg mx-auto pl-2">
-            <div className="flex items-center p-4">
+            <div className="flex items-center p-4 gap-8">
                 <div className="w-1/4 pr-4">
                     <Link
                         href={`/employers/${company_name?.replace(/\W+/g, '-').toLowerCase()}/${employer_id}/`}
                     >
                         <Image
                             className="w-full rounded-xl"
-                            src={logo || ''}
+                            src={`https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` || ''}
                             alt={company_name}
                             width={300}
                             height={200}
@@ -74,7 +74,7 @@ const Job = () => {
                     </Link>
                 </div>
                 <div className="w-3/4">
-                    <h1 className="text-2xl font-bold mb-2">{title}</h1>
+                    <h1 className="text-2xl font-bold mb-2 text-gray-500">{title}</h1>
                     <div className="mb-4">
                         <Link href={`/employers/id/${id}`}>
                             {location}
@@ -114,11 +114,32 @@ const Job = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-wrap gap-6 bg-white border-2 border-[#f4a10c] p-4 mb-4 rounded-lg shadow-lg" '>
+            <div className='flex flex-wrap bg-white  p-1 mb-4 rounded-lg shadow-lg" '>
                 {/* ... (rest of the component remains unchanged) */}
+                <div className="flex justify-between gap-16 items-center">
+          <div className="text-sm text-gray-600">
+            <div className="mb-1">{company_name}</div>
+            <div className="text-gray-700 font-light">{location}</div>
+          </div>
+          <div className="applications-close border-4 rounded p-1">
+            <p className="expiry-date-heading">Applications Close</p>
+            <div className="expiry-date">
+              {expiration_date ? (
+                <time>
+                  {new Date(expiration_date).toLocaleDateString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                  })}
+                </time>
+              ) : (<p className='text-center'>NA</p>)}
+            </div>
+          </div>
+       
+        </div>
             </div>
             <article
-                className="wrapper media bg-white border-2 border-2-gray-300 p-4 mb-4 rounded-lg shadow-lg"
+                className="wrapper media bg-white border-2  p-4 mb-4 rounded-lg shadow-lg max-w-screen-md"
                 data-id={jobId}
             >
                 <div dangerouslySetInnerHTML={{ __html: description }} />

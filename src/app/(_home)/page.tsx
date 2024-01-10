@@ -901,9 +901,9 @@ export default function myPage() {
         </div>
       </div> */}
       <h2 className="underline-full mt-20">
-        <Link href="/the-university-rankings/">
+      
           The University Rankings/ Top Academic Careers
-        </Link>
+        
       </h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">
