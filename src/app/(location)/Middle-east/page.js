@@ -106,7 +106,7 @@ export default function Page() {
           <div id="myUniversity" class="myUniversity">
             <div class="widget__text-block1"> */}
               <div>
-                <h2 className="text-1xl font-bold py-3 px-7 border-[#f4a10c] border-2  text-[#f4a10c] rounded-3xl shadow-md ">AcademicJobs Middle East: University Jobs  </h2>
+              <h2 className="underline-full">AcademicJobs Middle East: University Jobs  </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
                   <ul>
                     <li className='mb-1 '><Link href="/jobs/saudi arabia/" className='text-[#f4a10c] font-bold'>Saudi Arabia</Link></li>

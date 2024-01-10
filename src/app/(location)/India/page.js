@@ -126,7 +126,7 @@ export default function Page() {
       
         </div>
       </div>
-      </div>
+   
       {/* <div className="text-[#138806]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6">
         <a>▼</a> */}
       </div>
@@ -160,7 +160,7 @@ export default function Page() {
           <div id="myUniversity" class="myUniversity">
             <div class="widget__text-block1"> */}
               <div>
-                <h2 className="text-1xl font-bold py-3 px-7 border-[#f4a10c] border-2  text-[#f4a10c] rounded-3xl shadow-md ">
+              <h2 className="underline-full">
                   AcademicJobs India: University Jobs by State{' '}
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
@@ -241,6 +241,7 @@ export default function Page() {
                   </ul>
                 </div>
               </div>
+            </div>
             </div>
       
   );
