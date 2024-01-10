@@ -21,6 +21,7 @@ export default function myPage() {
         {/* Unlock Your Academic Potential!  */}
         Join Our Talent Pool Today!
       </h1>
+
       <div className="talent-pool px-7 container mx-auto py-16 border-[1px] border-slate-500 bg-slate-50 p-4 pt-4 rounded-3xl mt-8 mb-12">
         {/* <h4 className="font-semibold text-slate-400 text-2xl mt-4">
           Talent Pool Sign Up
@@ -349,6 +350,77 @@ export default function myPage() {
           )} */}
         </form>
       </div>
+
+      <h3 className="text-[#f4a10c] text-xl font-semibold mb-4">
+        Checkbox Definitions
+      </h3>
+      <ul className="ul">
+        <li>
+          <strong>Collaborations: </strong>Engage in high-level academic
+          collaborations and research partnerships.
+        </li>
+        <li>
+          <strong>Keynote Speaking: </strong>
+          Access opportunities for keynote speaking at prestigious conferences
+          and events.
+        </li>
+        <li>
+          <strong>Media Visibility: </strong>Gain visibility through media
+          features and interviews.
+        </li>
+        <li>
+          <strong>Career Progression: </strong>
+          Open doors to career progression and attract attention from
+          headhunters.
+        </li>
+        <li>
+          <strong>Seek IP Investors: </strong>
+          Connect with investors to fund and support your innovative
+          intellectual property projects.
+        </li>
+        <li>
+          <strong>Academic Rankings: </strong>
+          Become eligible for recognition in academic rankings and awards.
+        </li>
+      </ul>
+      <div className="text-black rounded-2xl mt-8 mb-16">
+        <div className="p-4 rounded-3xl bg-slate-100 pt-7">
+          <ul className="ul">
+            <li>
+              <strong>Dive into a World of Opportunities</strong> - Sign up
+              today and connect with prestigious academic institutions
+              worldwide. Explore cutting-edge job openings and collaborate with
+              world-renowned academics.
+            </li>
+            <li>
+              <strong>Elevate Your Career</strong> - Whether you're seeking
+              groundbreaking research projects or looking to shape the minds of
+              the next generation, our platform is your gateway to extraordinary
+              possibilities.
+            </li>
+            <li>
+              <strong>Expand Your Network</strong> - Collaborate, innovate, and
+              grow with the best in academia. Be part of a vibrant community
+              where ideas flourish and careers soar.
+            </li>
+            <li>
+              <strong>Find Your Perfect Match</strong> - Our tailored job
+              matching system brings you opportunities that align perfectly with
+              your expertise and aspirations.
+            </li>
+            <li>
+              <strong>Share and Gain Insights</strong> - Engage in meaningful
+              dialogues, share your expertise, and gain unique perspectives from
+              fellow academics globally.
+            </li>
+          </ul>
+          <p className="p-6">
+            Don't Wait — The Opportunity for Academic Excellence Awaits! Sign Up
+            Now and Propel Your Career to New Heights!
+          </p>
+        </div>
+      </div>
+
       {/* <div className="container mx-auto flex flex-col"> */}
       <h2 className="underline-full">
         Power-up Your Academic Potential: Join Our Dynamic Talent Pool Today!
