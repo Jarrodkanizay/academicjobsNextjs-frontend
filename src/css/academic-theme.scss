@@ -219,7 +219,7 @@ html {
     input[required] + i.required,
     select[required] + i.required,
     textarea[required] + i.required,
-    p[required]::before {
+    p[required-data]::before {
       display: block;
       color: red;
       position: absolute;
