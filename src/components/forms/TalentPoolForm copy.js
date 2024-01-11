@@ -2,105 +2,47 @@
 import countries from '@/data/CountryList.json';
 import InputBlock2 from './InputBlock2';
 import { useForm } from 'react-hook-form';
-import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+
 const TalentPoolForm = () => {
-  const {
-    register,
-    handleSubmit,
-    setValue,
-    watch,
-    formState: { errors },
-    setError,
-  } = useForm();
-  const mutation = useMutation({
-    mutationFn: (data) => {
-      return BaseApi.post('/sendemail', data)
-    },
-  })
-
-  const onSubmit = async (data) => {
-    //e.preventDefault();
-    //alert()
-    console.log('data', data)
-     mutation.mutate(data)
-   
-  }
-
-  if (mutation.isLoading) {
- 
-    return (
-      <div className="bg-white relative max-w-screen-lg mx-auto pl-2">
-       
-        <div className="p-4 animate-pulse">
-          <div className="w-1/4 pr-4">
-            <div className="rounded-xl bg-gray-300 h-16 w-full">'Sending Email ...'</div>
-          </div>
-          
-        </div>
-      </div>
-    );
-  }
-  if (mutation.isError) {
-    return <div>An error occurred: {mutation.error.message}</div>;
-  }
-  if (mutation.isSuccess) {
-    return <div>Email Sent!</div>
-  }
-
-
+   const {
+     register,
+     handleSubmit,
+     setValue,
+     watch,
+     formState: { errors },
+     setError,
+   } = useForm();
   return (
-
-    
-    <form   className="mt-4 " onSubmit={handleSubmit(onSubmit)}>
-       <h3 className="underline-full mb-6">Your Details</h3>
+    <form
+      className="mt-4 "
+      // onSubmit={handleSubmit}
+    >
+      <h3 className="underline-full mb-6">Your Details</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* First name */}
         <div className="col-span-1">
           <div className="relative">
-            <InputBlock2 register={register} errors={errors} 
-              tabIndex={1}
-              type="text"
-              ID="first-name-input"
-              field=" 01_First_Name"
-              forceClass="px-4 py-3 text-black"
-              placeholder="First Name"
-              autoComplete="given-name"
-              // onChange={handleChange}
-              required={true}
-            />
-            <i className="required">*</i>
+            <InputBlock2 tabIndex={1} type="text" field="FirstName" placeholder="First Name*" register={register} errors={errors} forceClass="w-full" />
           </div>
         </div>
         {/* Last name */}
         <div className="col-span-1">
           <div className="relative">
-            <InputBlock2 register={register} errors={errors} 
-              tabIndex={2}
-              type="text"
-              ID="last-name-input"
-              field=" 02_Last_Name"
-              forceClass="w-full px-4 py-3  rounded-lg text-black"
-              placeholder=" Last Name"
-              autoComplete="family-name"
-              // onChange={handleChange}
-              required={true}
-            />
-            <i className="required">*</i>
+            <InputBlock2 tabIndex={2} type="text" field="LastName" placeholder="Last Name*" register={register} errors={errors} forceClass="w-full px-4 py-3  rounded-lg text-black" />
           </div>
         </div>
         {/* Academic Title */}
         <div className="col-span-1">
           <div className="relative">
-            <InputBlock2 register={register} errors={errors} 
+            <InputBlock2 register={register} errors={errors}
               tabIndex={3}
               type="text"
               ID="name-input"
-              field=" 03_Academic_Title"
+              name="03_Academic_Title"
               forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="Academic Title (Role or Position)"
-              // onChange={handleChange}
-              required={true}
+            // onChange={handleChange}
+            //required={true}
             />
             <i className="required">*</i>
           </div>
@@ -108,11 +50,11 @@ const TalentPoolForm = () => {
         {/* phone */}
         <div className="col-span-1">
           <div className="relative">
-            <InputBlock2 register={register} errors={errors} 
+            <InputBlock2 register={register} errors={errors}
               tabIndex={4}
               type="tel"
               ID="phone-input"
-              field=" 04_phone"
+              name="04_phone"
               forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               autoComplete="tel"
               placeholder="Phone Number"
@@ -124,16 +66,16 @@ const TalentPoolForm = () => {
         {/* Email */}
         <div className="col-span-2">
           <div className="relative">
-            <InputBlock2 register={register} errors={errors} 
+            <InputBlock2 register={register} errors={errors}
               tabIndex={5}
               type="email"
               ID="email-input"
-              field=" 05_Email"
+              name="05_Email"
               forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="Email"
               autoComplete="email"
-              // onChange={handleChange}
-              required={true}
+            // onChange={handleChange}
+            //required={true}
             />
             <i className="required">*</i>
           </div>
@@ -144,57 +86,61 @@ const TalentPoolForm = () => {
         {/* Seeking Opportunities */}
         <div className="form-control">
           <label className="label cursor-pointer">
-            <input
+            <InputBlock2 register={register} errors={errors}
               tabIndex={6}
               type="checkbox"
-              {...register(" 06_Collaborations_Checkbox")}
-     
-              className="checkbox checkbox-warning"
-     
+              ID="06_Collaborations_Checkbox"
+              name="06_Collaborations_Checkbox"
+              // value={isChecked1 ? 'Collaborate with Top Academics' : ''}
+              forceClass="checkbox checkbox-warning"
+            // checked={isChecked1}
+            // onChange={handleCheckboxChange1}
             />
-      
             <span className="label-text ml-2 mr-auto">Collaborations</span>
           </label>
         </div>
         <div className="form-control">
           <label className="label cursor-pointer">
-            <input
-              tabIndex={6}
+            <InputBlock2 register={register} errors={errors}
+              tabIndex={7}
               type="checkbox"
-              {...register(" 07_Keynote_Checkbox")}
-
-              className="checkbox checkbox-warning"
-
+              ID="keynote"
+              name="07_Keynote_Checkbox"
+              // value={isChecked2 ? 'Keynote Speaking' : ''}
+              forceClass="checkbox checkbox-warning"
+            // checked={isChecked2}
+            // onChange={handleCheckboxChange2}
             />
-        
             <span className="label-text ml-2 mr-auto">Keynote Speaking</span>
           </label>
         </div>
         <div className="form-control">
           <label className="label cursor-pointer">
-            <input
-              tabIndex={6}
+            <InputBlock2 register={register} errors={errors}
+              tabIndex={8}
               type="checkbox"
-              {...register(" 08_Media_Checkbox")}
-
-              className="checkbox checkbox-warning"
-
+              ID="media"
+              name="08_Media_Checkbox"
+              // value={isChecked3 ? 'Media' : ''}
+              forceClass="checkbox checkbox-warning"
+            // checked={isChecked3}
+            // onChange={handleCheckboxChange3}
             />
-       
             <span className="label-text ml-2 mr-auto">Media Visibility</span>
           </label>
         </div>
         <div className="form-control">
           <label className="label cursor-pointer">
-            <input
-              tabIndex={6}
+            <InputBlock2 register={register} errors={errors}
+              tabIndex={9}
               type="checkbox"
-              {...register(" 09_Career_Job_Opportunities_Checkbox")}
-
-              className="checkbox checkbox-warning"
-
+              ID="career-job-opportunities"
+              name="09_Career_Job_Opportunities_Checkbox"
+              // value={isChecked4 ? 'Career Job Opportunities' : ''}
+              forceClass="checkbox checkbox-warning"
+            // checked={isChecked4}
+            // onChange={handleCheckboxChange4}
             />
-      
             <span className="label-text ml-2 mr-auto">
               Career Progression (Open to Job Offers)
             </span>
@@ -202,29 +148,31 @@ const TalentPoolForm = () => {
         </div>
         <div className="form-control">
           <label className="label cursor-pointer">
-            <input
-              tabIndex={6}
+            <InputBlock2 register={register} errors={errors}
+              tabIndex={10}
               type="checkbox"
-              {...register(" 10_Seek_IP_Investors_Checkboxx")}
-
-              className="checkbox checkbox-warning"
-
+              ID="seek-ip-investors"
+              name="10_Seek_IP_Investors_Checkbox"
+              // value={isChecked5 ? 'Seek IP Investors' : ''}
+              forceClass="checkbox checkbox-warning"
+            // checked={isChecked5}
+            // onChange={handleCheckboxChange5}
             />
-        
             <span className="label-text ml-2 mr-auto">Seek IP Investors</span>
           </label>
         </div>
         <div className="form-control">
           <label className="label cursor-pointer">
-            <input
-              tabIndex={6}
+            <InputBlock2 register={register} errors={errors}
+              tabIndex={11}
               type="checkbox"
-              {...register(" 11_Partner_with_Industry_Checkbox")}
-
-              className="checkbox checkbox-warning"
-
+              ID="partner-with-"
+              name="11_Partner_with_Industry_Checkbox"
+              // value={isChecked6 ? 'Partner with Industry' : ''}
+              forceClass="checkbox checkbox-warning"
+            // checked={isChecked6}
+            // onChange={handleCheckboxChange6}
             />
-         
             <span className="label-text ml-2 mr-auto">
               Partner with Industry
             </span>
@@ -237,15 +185,15 @@ const TalentPoolForm = () => {
         {/* Institution */}
         <div className="col-span-1">
           <div className="relative">
-            <InputBlock2 register={register} errors={errors} 
+            <InputBlock2 register={register} errors={errors}
               tabIndex={12}
               type="text"
               ID="institution-input"
-              field=" 12_Institution"
+              name="12_Institution"
               forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="Institution/University (Current, Last or Attended)"
-              // onChange={handleChange}
-              required={true}
+            // onChange={handleChange}
+            //required={true}
             />
             <i className="required">*</i>
           </div>
@@ -253,15 +201,15 @@ const TalentPoolForm = () => {
         {/* Department/Faculty */}
         <div className="col-span-1">
           <div className="relative">
-            <InputBlock2 register={register} errors={errors} 
+            <InputBlock2 register={register} errors={errors}
               tabIndex={13}
               type="text"
               ID="department-faculty-input"
-              field=" 13_Department_Faculty"
+              name="13_Department_Faculty"
               forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="Department/Faculty"
-              // onChange={handleChange}
-              required={true}
+            // onChange={handleChange}
+            //required={true}
             />
             <i className="required">*</i>
           </div>
@@ -269,15 +217,15 @@ const TalentPoolForm = () => {
         {/* Specialty */}
         <div className="col-span-1">
           <div className="relative">
-            <InputBlock2 register={register} errors={errors} 
+            <InputBlock2 register={register} errors={errors}
               tabIndex={14}
               type="text"
               ID="specialty-input"
-              field=" 14_Specialty"
+              name="14_Specialty"
               forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="Specialty"
-              // onChange={handleChange}
-              required={true}
+            // onChange={handleChange}
+            //required={true}
             />
             <i className="required">*</i>
           </div>
@@ -285,15 +233,15 @@ const TalentPoolForm = () => {
         {/* Location */}
         <div className="col-span-1">
           <div className="relative">
-            <InputBlock2 register={register} errors={errors} 
+            <InputBlock2 register={register} errors={errors}
               tabIndex={15}
               type="text"
               ID="location-input"
-              field=" 15_Institution_Location"
+              name="15_Institution_Location"
               forceClass="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="Institution Location"
-              // onChange={handleChange}
-              required={true}
+            // onChange={handleChange}
+            //required={true}
             />
             <i className="required">*</i>
           </div>
@@ -302,12 +250,11 @@ const TalentPoolForm = () => {
           <div className="relative">
             <select
               tabIndex={16}
-              {...register('16_Country')}
               id="country-select"
-              field=" 16_Country"
+              name="16_Country"
               className="w-full px-4 py-3 0 rounded-lg text-black"
-              // onChange={handleChange}
-              required={true}
+            // onChange={handleChange}
+            //required={true}
             >
               <option value="" disabled selected>
                 Select a country...
@@ -327,7 +274,7 @@ const TalentPoolForm = () => {
             <textarea
               tabIndex={17}
               id="profile-input"
-              field=" 17_Profile"
+              name="17_Profile"
               className="w-full px-4 py-3 0 rounded-lg text-black"
               placeholder="OPTIONAL - Please write a brief profile noting your key skills, experience, and achievements."
             // onChange={handleChange}
@@ -342,20 +289,24 @@ const TalentPoolForm = () => {
       </div>
       <div className="col-span-1">
         <div className="relative">
-          <p>
+          <p required-data>
             Any field with an asterisk (<span className="asterisk">*</span>) is
             a required field!
           </p>
         </div>
       </div>
-        <div className="text-right mt-6">
-          <button tabIndex={30} type="submit" className="btn btn-aj">
-            Join Talent Pool
-          </button>
-        </div>
-    
-            </form>
- 
+      <div className="text-right mt-6">
+        <button tabIndex={30} type="submit" className="btn btn-aj">
+          Join Talent Pool
+        </button>
+      </div>
+      {/* {submitStatus === 'error' && (
+      <p className="mt-4 text-center text-2xl font-bold text-red-500">
+        An unknown error occurred.
+      </p>
+    )} */}
+    </form>
   );
 };
+
 export default TalentPoolForm;
