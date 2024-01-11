@@ -20,11 +20,12 @@ const AcademicJobsLogo = ({
     width={dimensions ? dimensions : width}
     height={dimensions ? dimensions : height}
     viewBox="0 0 424.2 144.5"
+    className={forceClass}
     // style="enable-background:new 0 0 424.2 144.5;"
     // xml:space="preserve"
   >
     <g>
-      <circle className="logo-circle-fill " cx="352" cy="72.3" r="72.3" />
+      <circle className={`logo-circle-fill`} cx="352" cy="72.3" r="72.3" />
       <g>
         <path
           d="M30.1,81.7h0.4c1.2,0,1.7-0.5,1.7-1.6c0-0.4-0.1-0.8-0.2-1.2l-6.6-17.7H12.7L6.3,78.5c-0.1,0.4-0.2,0.8-0.2,1.1
