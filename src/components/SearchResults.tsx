@@ -171,8 +171,8 @@ export default function SearchResults({ q }: SearchResultsProps) {
             isPlaceholderData={isPlaceholderData}
           />
         </div>
-        <div className="max-w-screen-sm bg-slate-100 pt-4  px-8 rounded m-0 shadow-xl mt-4 border border-t-4 border-">
-        <div className="flex justify-left items-center gap-2 my-4 text-sm font-bold text-gray-500 border-2 p-4 rounded-xl mb-6">
+        <div className="max-w-screen-sm bg-slate-100 py-4 pb-8  px-8 rounded m-0 shadow-xl mt-4 border border-t-4 h-fit ">
+        <div className="flex justify-left items-center gap-2 my-4 text-sm font-bold text-gray-500 border-2 p-4 rounded-xl mb-8">
             <BsHandbag />
             {dataQty && <span>{`${dataQty} Jobs Found`}</span>}
           </div>    
