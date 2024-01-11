@@ -90,7 +90,7 @@ export default function Page() {
                   <span className="text-7xl font-bold text-right pb-4">Welcome!&nbsp;</span> <br/>you've landed on the new AcademicJobs JobElephant portal 
                   </h1>
                   <p className="pt-6">
-                    We've just made it easier for you to post a job for all your clients 
+                    We've just made it easier for all JobElephant staff to post a job for all your clients 
                   </p>
                   <p className="pb-6 font-bold">
                     Simply email all your jobs through the link bellow 
@@ -201,11 +201,75 @@ export default function Page() {
         
         </div>
 
-        <div className="hero max-h-fit bg-slate-200 py-8 ">
-           
+       
+
+
+          <div className="hero max-h-fit bg-[#c1d72e] py-8">
+            <div className=" mx-auto">
+              <div className="hero-content flex-col lg:flex-row-reverse max-w-screen-lg">
+                <Image
+                  width={1200}
+                  height={400}
+                  src="https://academicjobs.s3.amazonaws.com/img/_misc/Web+capture_11-1-2024_161925_jobelephant.com.jpeg"
+                  className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0 bg-white"
+                  alt="AI Powered Recruitment Platform"
+                />
+                <div className="content-grid">
+                  <h2 className="text-xl font-normal text-[#265882]">
+                  <span className="text-3xl font-bold text-right pb-4 text-[#265882] ">Any university can use JobElephant, here's how:&nbsp;</span> <br/>Use JobElephant to load jobs on AcademicJobs! 
+                  </h2>
+                  <p className="pt-6">
+                  Working with JobElephant to create and place your recruitment ads means you have an expert consulting partner that understands your resources and budgets, ensuring effective campaigns for each open position.
+                  </p>
+               
+                  <a href="https://jobelephant.com/what-we-do/college-university/" className="btn mt-8 bg-[#265882] text-white">
+                    JobElephant Website
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
+
+
+          <div className="hero max-h-fit bg-slate-200 py-8">
+            <div className=" mx-auto max-w-screen-lg">
+              <div className="hero-content flex-col lg:flex-row gap-8">
+                <Image
+                  width={300}
+                  height={300}
+                  src="https://academicjobs.s3.amazonaws.com/img/_misc/1690109738395.jpg"
+                  className="lg:max-w-lg rounded-full shadow-2xl mb-8 lg:mb-0 bg-white"
+                  alt="AI Powered Recruitment Platform"
+                />
+                <div>
+                  <h1 className="text-3xl font-normal">
+                  <span className="text-3xl font-bold text-right pb-4">It is a pleasure working with JobElephant
+&nbsp;</span> <br/>and their amazing staff.
+                  </h1>
+                  <p className="pt-6 italic">
+                  "AcademicJobs have partnered with JobElephant
+to give amazing ‘job listings exposure’ to their
+higher education clients, which in turn produces
+great academic and staff candidates.
+
+If you are a university or
+college looking for a great advertising partner,
+then JobElephant is a brilliant choice.""
+                  </p>
+                  <p className="pt-6 font-bold">
+                  Jarrod Kanizay C.E.O - AcademicJobs.com
+                  </p>
+                  {/* <a href="#pricing-table-cards" className="btn btn-aj">
+                    Post a Job
+                  </a> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
      
-        <div className=" bg-gray-200 p-4 ">
+        <div className=" bg-white p-4 ">
             <Image
               width={1280}
               height={380}
