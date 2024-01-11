@@ -11,12 +11,12 @@ const nextConfig = {
     return [
       // {
       //   source: '/Global/Employers',
-      //   destination: '/Global/employers',
+      //   destination: '/global/employers',
       //   permanent: true,
       // },
       // {
       //   source: '/employers',
-      //   destination: '/Global/employers',
+      //   destination: '/global/employers',
       //   permanent: true,
       // },
     ];

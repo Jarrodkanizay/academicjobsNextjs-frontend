@@ -3,6 +3,7 @@
 import SearchResults from '@/components/SearchResults';
 import { useSearchParams } from 'next/navigation'
 import JobSearchBox from '@/components/JobSearchBox';
+
 import Link from 'next/link';
 //import { useRouter } from 'next/router';
 //import { useRouter } from 'next/navigation';
