@@ -158,7 +158,7 @@ export default function SearchResults({ q }: SearchResultsProps) {
       content = (
 
 
-        <div className="flex p-4 mx-auto max-w-screen-xl gap-4 flex-row-reverse">
+        <div className="flex md:p-4 mx-auto max-w-screen-lg gap-4 flex-row-reverse">
          
           
 
@@ -171,8 +171,8 @@ export default function SearchResults({ q }: SearchResultsProps) {
             isPlaceholderData={isPlaceholderData}
           />
         </div>
-        <div className="max-w-screen-sm bg-slate-100 py-4 pb-8  px-8 rounded m-0 shadow-xl mt-4 border border-t-4 h-fit hidden md:block">
-        <div className="flex justify-left items-center gap-2 my-4 text-sm font-bold text-gray-500 border-2 p-4 rounded-xl mb-8">
+        <div className="w-1/4 bg-slate-100 py-4 pb-8  px-8 rounded m-0 shadow-xl mt-4 border border-t-4 h-fit hidden md:block justify-center items-center ml-4">
+        <div className="flex justify-center items-center gap-2 my-4 text-sm font-bold text-gray-500 border-2 p-1 rounded-xl mb-8">
             <BsHandbag />
             {dataQty && <span>{`${dataQty} Jobs Found`}</span>}
           </div>    
@@ -249,7 +249,7 @@ export default function SearchResults({ q }: SearchResultsProps) {
           <div className="cate-group section23 ">
         <div className="widget__text-block">
        
-          <div className="faculty-container grid-cols-1 grid md:grid-cols-1 gap-8 py-2 px-7 text-gray-500 mt-4">
+          <div className="faculty-container grid-cols-1 grid md:grid-cols-1 gap-2 py-2 px-7 text-gray-500 mt-4">
             <div className="column">
             <a className="font-bold text-gray-500 ">
                 Top Cities▾ 
@@ -422,14 +422,14 @@ export default function SearchResults({ q }: SearchResultsProps) {
 
 
 {/* {Unis} */}
-      <div className="faculty-container grid-cols-1 grid md:grid-cols-1 gap-4 py-2 text-gray-500 mt-6">
+      <div className="faculty-container grid-cols-1 grid md:grid-cols-1  py-2 text-gray-500 mt-6">
       <a className="font-bold">
                 Top Universities▾ 
               </a>
             <div className="column">
           
               <ul className="">
-                <ul className="pb-4">
+                <ul className="">
                   <li className="hover:underline">
                     <Link href="/employers/harvard-university/3100/">
                       {' '}
