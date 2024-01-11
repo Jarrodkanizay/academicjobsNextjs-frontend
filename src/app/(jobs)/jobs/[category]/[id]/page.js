@@ -58,9 +58,10 @@ const Job = () => {
         featured,
     } = job;
     return (
-        <div className="bg-white relative max-w-screen-lg mx-auto pl-2">
-            <div className="flex items-center p-4 gap-8">
-                <div className="w-1/4 pr-4">
+        <div className="bg-white relative content-grid mx-auto pl-2 ">
+            <div className="bg-slate-200 full-width">
+            <div className="flex items-center p-4 gap-8   ">
+                <div className="md:w-1/4 md:pr-4 md:p-8">
                     <Link
                         href={`/employers/${company_name?.replace(/\W+/g, '-').toLowerCase()}/${employer_id}/`}
                     >
@@ -114,9 +115,10 @@ const Job = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-wrap bg-white  p-1 mb-4 rounded-lg shadow-lg" '>
+            </div>
+            <div className='flex flex-wrap bg-white  p-4 mb-4 rounded-lg shadow-lg" '>
                 {/* ... (rest of the component remains unchanged) */}
-                <div className="flex justify-between gap-16 items-center">
+                <div className="flex justify-between md:gap-16 items-center">
           <div className="text-sm text-gray-600">
             <div className="mb-1">{company_name}</div>
             <div className="text-gray-700 font-light">{location}</div>
@@ -138,12 +140,13 @@ const Job = () => {
        
         </div>
             </div>
+            div
             <article
                 className="wrapper media bg-white border-2  p-4 mb-4 rounded-lg shadow-lg max-w-screen-md"
                 data-id={jobId}
             >
                 <div dangerouslySetInnerHTML={{ __html: description }} />
-                <div className="mt-5 mb-0 text-right">Join Talent Pool</div>
+                {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
             </article>
             {new Date(expiration_date) < new Date() && expiration_date && (
                 <div className="bg-opacity-50 bg-red-500 text-white text-4xl px-8 py-8 rounded-full absolute top-[200px] left-[50%] transform -translate-x-1/2 -translate-y-1/2 rotate-45 skew-y-0">

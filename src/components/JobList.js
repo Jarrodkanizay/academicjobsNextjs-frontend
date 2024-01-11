@@ -20,15 +20,15 @@ const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
     );
   });
   return (
-    <div className="w-full mb-32">
+    <div className="w-full mb-32 max-w-screen-md mx-auto">
       {content}
-      <div className="flex justify-center gap-4">
+      <div className="flex justify-center gap-4 pt-8">
         <button
-          className={page === 0 ? 'hidden' : 'block'}
+          className={page === 0 ? 'hidden' : ' font-bold block'}
           onClick={() => handlePageChange('prev')}
           disabled={page === 0}
         >
-          Previous Page
+         ◀ Previous Page
         </button>
         <span className={`text-xs ${page === 0 ? 'hidden' : 'block'}`}>
           Current Page: {page + 1}
@@ -40,11 +40,11 @@ const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
             }
           }}
           className={`${
-            isPlaceholderData || !data?.hasMore ? 'hidden' : 'block'
+            isPlaceholderData || !data?.hasMore ? 'hidden' : 'font-bold block'
           }`}
           disabled={isPlaceholderData || !data?.hasMore}
         >
-          Next Page
+          Next Page ▶
         </button>
       </div>
     </div>
