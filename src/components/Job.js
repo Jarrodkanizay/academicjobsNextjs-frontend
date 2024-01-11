@@ -19,7 +19,7 @@ const Job = ({ job }) => {
       // }}
       >
         {featured ? (
-          <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-1">Featured</div>
+          <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">Featured</div>
         ) : (
           ""
         )}
@@ -52,7 +52,7 @@ const Job = ({ job }) => {
             <div className="text-gray-700 font-light text-sm">{location}</div>
           </div>
           <div className="applications-close border-4 rounded p-1 mt-1">
-            <p className="text-gray-400 text-sm mb-1">Applications Close</p>
+            <p className="text-gray-400 text-sm mb-1">Expiration</p>
             <div className="text-sm">
               {expiration_date ? (
                 <time>
