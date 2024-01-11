@@ -31,8 +31,11 @@ export default function myPage() {
           Sign up is undergoing some upgrades and will be back online soon!
         </h2>
         <p className="mt-4 px-4">
-          Thanks for you understanding <Link href="/jobs">Search jobs</Link> in
-          the meantime
+          Thanks for you understanding{' '}
+          <Link href="/jobs" className="link link-aj">
+            Search jobs
+          </Link>{' '}
+          in the meantime
         </p>
         {/* <h4 className="font-semibold text-slate-400 text-2xl mt-4">
           Talent Pool Sign Up
