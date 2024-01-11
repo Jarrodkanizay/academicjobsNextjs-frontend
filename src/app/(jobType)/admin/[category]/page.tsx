@@ -1,8 +1,8 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 import adminData from '@/data/admin.json';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
-import type { Metadata } from 'next';
+// import type { Metadata } from 'next';
 
 type MetadataTypes = {
   Name?: string | undefined;
@@ -11,20 +11,7 @@ type MetadataTypes = {
   Keyword?: string | undefined;
   content?: any | undefined;
 };
-const myMeta: MetadataTypes = {
-  Title: '',
-  Description: '',
-  Keyword: '',
-};
 
-// export const metadata: Metadata = {
-//   title: myMeta.Title, //Option 1 replaces the %s in layout.tsx
-//   // title: {
-//   //   absolute: 'Academic Admin and Support Jobs', //Option 2 overrides the title in layout.tsx
-//   // },
-//   description: myMeta.Description,
-//   keywords: myMeta.Keyword,
-// };
 export async function generateMetadata({ params, searchParams }: any) {
   // console.log(params)
   let { category } = params;
@@ -43,15 +30,17 @@ export async function generateMetadata({ params, searchParams }: any) {
 
   return {
     title: Title,
+    description: Description,
+    keywords: Keyword,
   };
 }
 
 //const Lecturer = () => {
 export default function Page({ params, searchParams }: any) {
-  //  console.log("````````````````````params````````````````````")
-  // console.log(params)
+  // console.log('````````````````````params````````````````````');
+  // console.log(params);
   let { category } = params;
-  // console.log(adminData)
+  // console.log(adminData);
   // console.log(category);
   category = category?.replace(/-/g, ' ');
   // console.log(category);
@@ -63,13 +52,6 @@ export default function Page({ params, searchParams }: any) {
     Keyword = '',
     content: content1 = '',
   } = adminData.find((item) => item.Name === category) || {};
-
-  myMeta.Title = Title;
-  myMeta.Description = Description;
-  myMeta.Keyword = Keyword;
-  console.log(myMeta.Title);
-  console.log(myMeta.Description);
-  console.log(myMeta.Keyword);
 
   let content;
   //console.log(Name);
