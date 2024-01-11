@@ -49,11 +49,11 @@ const Job = ({ job }) => {
         <div className="flex justify-between items-center">
           <div className="text-sm text-gray-600">
             <div className="mb-1">{company_name}</div>
-            <div className="text-gray-700 font-light">{location}</div>
+            <div className="text-gray-700 font-light text-sm">{location}</div>
           </div>
-          <div className="applications-close border-4 rounded p-1">
-            <p className="expiry-date-heading">Applications Close</p>
-            <div className="expiry-date">
+          <div className="applications-close border-4 rounded p-1 mt-1">
+            <p className="text-gray-400 text-sm mb-1">Applications Close</p>
+            <div className="text-sm">
               {expiration_date ? (
                 <time>
                   {new Date(expiration_date).toLocaleDateString("en-US", {

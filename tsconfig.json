@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     },
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/[category]/page.js", "src/components/Header.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/[category]/page.js", "src/components/Header.js", "src/components/forms/TalentPoolForm.js", "src/components/forms/InputBlock2.js"],
   "exclude": ["node_modules"]
 }
