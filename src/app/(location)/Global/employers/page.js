@@ -129,8 +129,7 @@ const Findemployerss = () => {
         <div className="region-container bg-white">
           <h2
             id="section"
-            className="text-2xl font-bold py-3 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-full shadow-md  mx-8"
-          >
+            className="underline-full">
             UNITED STATES
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl  ">
@@ -719,8 +718,7 @@ const Findemployerss = () => {
             <div>
               <h2
                 id="section1"
-                className="text-2xl font-bold py-3 px-7 mx-8 border-2 border-[#f4a10c] text-[#f4a10c] rounded-full shadow-md  "
-              >
+                 className="underline-full">
                 AUSTRALIA
               </h2>
               <div className="bg-gradient-to-b to-white from-orange-100 m-8 rounded-3xl">
@@ -1007,8 +1005,7 @@ const Findemployerss = () => {
         <div>
           <h2
             id="section9"
-            className="text-2xl font-bold py-3 px-7 mx-8 border-2 border-[#f4a10c] text-[#f4a10c] rounded-full shadow-md  "
-          >
+          className="underline-full">
             AFRICA
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1201,8 +1198,7 @@ const Findemployerss = () => {
         <div>
           <h2
             id="section3"
-            className="text-2xl font-bold py-3 px-7 mx-8 border-2 border-[#f4a10c] text-[#f4a10c] rounded-full shadow-md  "
-          >
+             className="underline-full">
             ASIA
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1299,8 +1295,7 @@ const Findemployerss = () => {
         <div>
           <h2
             id="section4"
-            className="text-2xl font-bold py-3 px-7 mx-8 border-2 border-[#f4a10c] text-[#f4a10c] rounded-full shadow-md  "
-          >
+             className="underline-full">
             CANADA
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1387,8 +1382,7 @@ const Findemployerss = () => {
         <div>
           <h2
             id="section2"
-            className="text-2xl font-bold py-3 px-7 mx-8 border-2 border-[#f4a10c] text-[#f4a10c] rounded-full shadow-md  "
-          >
+            className="underline-full">
             UNITED KINGDOM
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1508,8 +1502,7 @@ const Findemployerss = () => {
         <div>
           <h2
             id="section5"
-            className="text-2xl font-bold py-3 px-7 mx-8 border-2 border-[#f4a10c] text-[#f4a10c] rounded-full shadow-md  "
-          >
+           className="underline-full">
             SOUTH AMERICA
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1598,8 +1591,7 @@ const Findemployerss = () => {
         <div>
           <h2
             id="section6"
-            className="text-2xl font-bold py-3 px-7 mx-8 border-2 border-[#f4a10c] text-[#f4a10c] rounded-full shadow-md  "
-          >
+           className="underline-full">
             NEW ZEALAND
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1656,8 +1648,7 @@ const Findemployerss = () => {
         <div>
           <h2
             id="section7"
-            className="text-2xl font-bold py-3 px-7 mx-8 border-2 border-[#f4a10c] text-[#f4a10c] rounded-full shadow-md  "
-          >
+            className="underline-full">
             MIDDLE EAST
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1729,8 +1720,7 @@ const Findemployerss = () => {
         <div>
           <h2
             id="section8"
-            className="text-2xl font-bold py-3 px-7 mx-8 border-2 border-[#f4a10c] text-[#f4a10c] rounded-full shadow-md  "
-          >
+            className="underline-full">
             INDIA
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1781,8 +1771,7 @@ const Findemployerss = () => {
         <div>
           <h2
             id="section4"
-            className="text-2xl font-bold py-3 px-7 mx-8 border-2 border-[#f4a10c] text-[#f4a10c] rounded-full shadow-md  "
-          >
+          className="underline-full">
             EUROPE
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
