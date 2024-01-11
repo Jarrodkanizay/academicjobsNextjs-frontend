@@ -17,14 +17,35 @@ const myMeta: MetadataTypes = {
   Keyword: '',
 };
 
-export const metadata: Metadata = {
-  title: myMeta.Title, //Option 1 replaces the %s in layout.tsx
-  // title: {
-  //   absolute: 'Academic Admin and Support Jobs', //Option 2 overrides the title in layout.tsx
-  // },
-  description: myMeta.Description,
-  keywords: myMeta.Keyword,
-};
+// export const metadata: Metadata = {
+//   title: myMeta.Title, //Option 1 replaces the %s in layout.tsx
+//   // title: {
+//   //   absolute: 'Academic Admin and Support Jobs', //Option 2 overrides the title in layout.tsx
+//   // },
+//   description: myMeta.Description,
+//   keywords: myMeta.Keyword,
+// };
+export async function generateMetadata({ params, searchParams }: any) {
+  // console.log(params)
+  let { category } = params;
+  // console.log(adminData)
+  // console.log(category);
+  category = category?.replace(/-/g, ' ');
+  // console.log(category);
+
+  const {
+    Name = '',
+    Title = '',
+    Description = '',
+    Keyword = '',
+    content: content1 = '',
+  } = adminData.find((item) => item.Name === category) || {};
+
+  return {
+    title: Title,
+  };
+}
+
 //const Lecturer = () => {
 export default function Page({ params, searchParams }: any) {
   //  console.log("````````````````````params````````````````````")
