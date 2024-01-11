@@ -96,8 +96,7 @@ export default function Page() {
              
              
               <p className="font-semibold"></p>
-              <div className="  " >
-                <ul className=" flex flex-wrap gap-6 px-7 pb-4  text-[#f4a10c] ">
+                <ul className="flex flex-wrap text-justify space-between gap-6 px-7 pb-4  text-[#f4a10c] mx-auto">
                   <li><Link href="/melbourne/" >	Melboune </Link></li>
                   <li><Link href="/sydney/" >	Sydney</Link></li>
                   <li><Link href="/brisbane/" >Brisbane</Link></li>
@@ -106,8 +105,7 @@ export default function Page() {
                   <li><Link href="/perth/" >	Perth</Link></li>
                   <li><Link href="/adelaide/" >	Adelaide</Link></li>
                 </ul>
-              </div>
-              <div className="  flex flex-wrap gap-6 px-7 pb-4 text-gray-400" >
+              <div className="  flex flex-wrap gap-6 px-7 pb-4 text-gray-400 mx-auto" >
                 <Link href="/Australia/faq/" >	Aus FAQ</Link>
                 <Link href="/groupof8/" >	Group Of 8</Link> </div>
             </div>

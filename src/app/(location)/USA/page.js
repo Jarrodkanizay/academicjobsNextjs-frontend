@@ -89,7 +89,9 @@ export default function Page() {
             {/* <div className="newLine">
               <p className="px-7 pb-8">On Academic Jobs Online find all University Positions in the USA. We have all academic jobs online job for researchers, scientists, university staff, lecturers, professors, and researchers.
                 Find academic jobs in USA colleges and apply to the top universities and institutions with faculty, postdoc or staff roles and more.</p> */}
-            <div className="  px-7 pb-8 text-gray-400" >
+           
+           </div>
+            <div className="  flex flex-wrap gap-6 px-7 pb-4 text-gray-400 mx-auto" >
               <Link href="/USA/faq/" >	USA FAQ</Link>
               <Link href="/ivyleague/" >	Ivy League</Link> </div>
             <p className="font-semibold"></p>
@@ -316,6 +318,6 @@ export default function Page() {
           </ul>
         </div>
       </div>
-    </div>
+    
   )
 }
