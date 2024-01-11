@@ -32,13 +32,13 @@ export default function JobSearchBox({ q, l }: MyComponentProps) {
     router.push(`/jobs?${params.toString()}`);
   };
   return (
-    <div className="search-panel py-10">
-      <div className="container max-w-[800px] px-4 mx-auto">
+    <div className="search-panel py-4">
+      <div className="container max-w-screen-lg px-4 mx-auto">
         <form onSubmit={handleFormSubmit}>
-          <div className="join mx-auto w-full p-4 shadow-lg bg-slate-200">
+          <div className="join mx-auto w-full border border-gray-200 shadow-md">
             <input
               type="text"
-              className="input input-bordered join-item w-full"
+              className="input input-bordered join-item w-full  "
               placeholder="Keywords"
               ref={keyWordRef}
             />
@@ -51,7 +51,7 @@ export default function JobSearchBox({ q, l }: MyComponentProps) {
             <div className="indicator">
               <button
                 type="submit"
-                className="btn join-item bg-orange-400 border-0 text-white"
+                className="btn join-item bg-amber-500 border border-gray-300 shadow-md text-white animate-pulse"
               >
                 Search
               </button>
