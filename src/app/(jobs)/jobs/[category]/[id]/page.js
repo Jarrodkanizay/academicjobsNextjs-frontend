@@ -60,7 +60,7 @@ const Job = () => {
         featured,
     } = job;
     return (
-        <div className="bg-white relative content-grid mx-auto pl-2 ">
+        <div className="bg-white relative content-grid mx-auto  ">
             <div className="bg-slate-200 full-width">
             <div className="flex items-center p-4 gap-8   ">
                 <div className="md:w-1/4 md:pr-4 md:p-8">
@@ -142,7 +142,7 @@ const Job = () => {
        
         </div>
             </div>
-            <div className="flex p-4 gap-8">
+            <div className="flex p-4 gap-8 ">
             <article
                 className="wrapper media bg-white border-2  p-4 mb-4 rounded-lg shadow-lg max-w-screen-md"
                 data-id={jobId}
@@ -150,7 +150,7 @@ const Job = () => {
                 <div dangerouslySetInnerHTML={{ __html: description }} />
                 {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
             </article>
-            <div className="max-h-screen overflow-y-scroll w-96 ">
+            <div className="max-h-screen overflow-y-scroll w-96 hidden md:block">
                 <h3 className=" pl-4 text-lg text-gray-400">This might interest you... </h3>
             <JobSearchBox q={title}/>
               <SearchResults q={title}/>

@@ -10,17 +10,14 @@ function countryRegionPlural() {
 }
 const Findemployerss = () => {
   return (
-   
-   
-
- <main className="content-grid mx-auto">
-        {/* Hero banner */}
-        {/* <section className="full-width h-[300px] bg-sky-200"></section> */}
-        <HeroBanner
-          h1="Find the best universities to work for here... use university
+    <main className="content-grid mx-auto">
+      {/* Hero banner */}
+      {/* <section className="full-width h-[300px] bg-sky-200"></section> */}
+      {/* <HeroBanner
+        h1="Find the best universities to work for here... use university
           rankings to search for jobs in higher education."
-          // h2=""
-          para1=" On AcademicJobs explore higher ed career opportunities at
+        // h2=""
+        para1=" On AcademicJobs explore higher ed career opportunities at
           universities worldwide. The find employers page helps you to
           learn more about the academic jobs that interest you and their
           current job openings. You can view the employers’s profile,
@@ -28,20 +25,18 @@ const Findemployerss = () => {
           values, history, achievements, and culture. Find your dream
           academic job online at the university of your choice with
           AcademicJobs."
-          // para2=""
-          btnPrimaryText="Learn About Student Jobs"
-          btnPrimaryURL="/student-jobs-on-campus"
-          btnSecondaryText="Student FAQ"
-          btnSecondaryURL="/student/faq/"
-          src="/student-jobs-on-campus/student-working-in-campus-cafe.jpg"
-          alt="Student Jobs on Campus can be life changing"
-          // bgColorClass="bg-sky-200"
-          // imgRight={false}
-        />
-
-
-
-   {/* <main className=" mx-auto"> */}
+        // para2=""
+        btnPrimaryText="Learn About Student Jobs"
+        btnPrimaryURL="/student-jobs-on-campus"
+        btnSecondaryText="Student FAQ"
+        btnSecondaryURL="/student/faq/"
+        src="/academic-job-postings/top-universities-worldwide.jpg"
+        alt="Student Jobs on Campus can be life changing"
+        // bgColorClass="bg-sky-200"
+        // imgRight={false}
+      />
+ */}
+      {/* <main className=" mx-auto"> */}
       {/* Hero banner */}
       <section>
         <div className="hero max-h-fit  bg-slate-200 py-8 mx-auto">
