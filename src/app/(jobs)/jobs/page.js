@@ -27,13 +27,13 @@ export default function Page() {
   //const { q, l } = router.query;
   return (
     <div className=" w-full">
-      <div className="bg-gray-100 py-10">
+      <div className="bg-gray-100 py-4 mb-4">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-screen-xl mx-auto">
+          <div className="max-w-screen-xl mx-auto ">
             <JobSearchBox />
           </div>
              {/* Employment Cat Container */}
-          <div className="mt-[1rem] ">
+          {/* <div className="mt-[1rem] ">
             <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 px-2">
               <li className="hover:underline">
                 <Link href="/lecturer">Lecturer{"  "}</Link>
@@ -69,10 +69,10 @@ export default function Page() {
                 <Link href="/phd/">PhD</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Employment Type Container */}
-          <div className="mt-7">
+          {/* <div className="mt-7">
 
             <ul className="faculty-container flex gap-4 items-center justify-center text-[#f4a10c] px-2">
               <li className="hover:underline">
@@ -91,7 +91,7 @@ export default function Page() {
                 <Link href="/casual/">Casual</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
         </div>
       </div>
