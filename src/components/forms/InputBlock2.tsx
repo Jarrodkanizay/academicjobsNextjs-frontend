@@ -43,7 +43,7 @@ const InputBlock2 = ({
         autoComplete={autoComplete}
         placeholder={placeholder}
       />
-      {errors[field] && <span className="error">{errors[field].message}</span>}
+      {/* {errors[field] && <span className="error">{errors[field].message}</span>} */}
     </div>
   );
 };
