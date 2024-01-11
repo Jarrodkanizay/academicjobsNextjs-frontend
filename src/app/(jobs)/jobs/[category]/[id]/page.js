@@ -8,6 +8,8 @@ import { BsFillShareFill } from "react-icons/bs";
 import { useParams } from 'next/navigation'
 import { NextPage } from 'next'
 import BaseApi from '@/lib/store/Base';
+import SearchResults from '@/components/SearchResults'
+import JobSearchBox from '@/components/JobSearchBox'
 const Job = () => {
     const { id } = useParams()
     console.log(id)
@@ -75,7 +77,7 @@ const Job = () => {
                     </Link>
                 </div>
                 <div className="w-3/4">
-                    <h1 className="text-2xl font-bold mb-2 text-gray-500">{title}</h1>
+                    <h1 className="text-2xl font-bold mb-2 text-black">{title}</h1>
                     <div className="mb-4">
                         <Link href={`/employers/id/${id}`}>
                             {location}
@@ -123,9 +125,9 @@ const Job = () => {
             <div className="mb-1">{company_name}</div>
             <div className="text-gray-700 font-light">{location}</div>
           </div>
-          <div className="applications-close border-4 rounded p-1">
-            <p className="expiry-date-heading">Applications Close</p>
-            <div className="expiry-date">
+          <div className="applications-close border-4 rounded p-1 font-bold">
+          <p className="text-gray-400 text-sm mb-1">Applications Close</p>
+          <div className="text-sm">
               {expiration_date ? (
                 <time>
                   {new Date(expiration_date).toLocaleDateString("en-US", {
@@ -140,7 +142,7 @@ const Job = () => {
        
         </div>
             </div>
-            div
+            <div className="flex p-4 gap-8">
             <article
                 className="wrapper media bg-white border-2  p-4 mb-4 rounded-lg shadow-lg max-w-screen-md"
                 data-id={jobId}
@@ -148,6 +150,12 @@ const Job = () => {
                 <div dangerouslySetInnerHTML={{ __html: description }} />
                 {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
             </article>
+            <div className="max-h-screen overflow-y-scroll w-96 ">
+                <h3 className=" pl-4 text-lg text-gray-400">This might interest you... </h3>
+            <JobSearchBox q={title}/>
+              <SearchResults q={title}/>
+              </div>
+            </div>
             {new Date(expiration_date) < new Date() && expiration_date && (
                 <div className="bg-opacity-50 bg-red-500 text-white text-4xl px-8 py-8 rounded-full absolute top-[200px] left-[50%] transform -translate-x-1/2 -translate-y-1/2 rotate-45 skew-y-0">
                     Job Fulfilled By AcademicJobs.com

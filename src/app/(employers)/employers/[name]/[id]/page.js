@@ -158,7 +158,10 @@ const Employer = () => {
             <div className="w-[8rem] h-[8rem] mr-4  ">
               <Image
                 //src={logo || '/favicon.png'}
-                src={`https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` || "/favicon.png"}
+                src={
+                  `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` ||
+                  '/favicon.png'
+                }
                 alt={company_name}
                 className="w-full h-full object-contain rounded-md bg-white "
                 onError={(e) => {
