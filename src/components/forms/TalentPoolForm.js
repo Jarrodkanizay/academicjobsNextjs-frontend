@@ -22,13 +22,13 @@ const TalentPoolForm = () => {
         {/* First name */}
         <div className="col-span-1">
           <div className="relative">
-            <InputBlock2 tabIndex={1} type="text" field="FirstName" label="First Name*" register={register} errors={errors} forceClass="w-full" />
+            <InputBlock2 tabIndex={1} type="text" field="FirstName" placeholder="First Name*" register={register} errors={errors} forceClass="w-full" />
           </div>
         </div>
         {/* Last name */}
         <div className="col-span-1">
           <div className="relative">
-            <InputBlock2 tabIndex={2} type="text" field="LastName" label="Last Name*" register={register} errors={errors} forceClass="w-full px-4 py-3  rounded-lg text-black" />
+            <InputBlock2 tabIndex={2} type="text" field="LastName" placeholder="Last Name*" register={register} errors={errors} forceClass="w-full px-4 py-3  rounded-lg text-black" />
           </div>
         </div>
         {/* Academic Title */}
