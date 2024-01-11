@@ -1,10 +1,10 @@
 import Image from 'next/image';
-// import Link from 'next/link';
+import Link from 'next/link';
 import type { Metadata } from 'next';
-import countries from '@/data/CountryList.json';
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css';
-import InputBlock2 from '@/components/InputBlock2';
+// import countries from '@/data/CountryList.json';
+// import ReactQuill from 'react-quill';
+// import 'react-quill/dist/quill.snow.css';
+// import InputBlock2 from '@/components/forms/InputBlock2';
 
 export const metadata: Metadata = {
   title: 'Academic Talent Pool', //Option 1 replaces the %s in layout.tsx
@@ -27,10 +27,17 @@ export default function myPage() {
       </h1>
 
       <div className="talent-pool px-7 container mx-auto py-16 border-[1px] border-slate-500 bg-slate-50 p-4 pt-4 rounded-3xl mt-8 mb-12">
+        <h2 className="mt-8 px-4">
+          Sign up is undergoing some upgrades and will be back online soon!
+        </h2>
+        <p className="mt-4 px-4">
+          Thanks for you understanding <Link href="/jobs">Search jobs</Link> in
+          the meantime
+        </p>
         {/* <h4 className="font-semibold text-slate-400 text-2xl mt-4">
           Talent Pool Sign Up
         </h4> */}
-        <form
+        {/* <form
           // onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col gap-4"
         >
@@ -127,7 +134,7 @@ export default function myPage() {
           >
             Post My Job Now
           </button>
-        </form>
+        </form> */}
       </div>
 
       <h3 className="text-[#f4a10c] text-xl font-semibold mb-4">
