@@ -28,7 +28,7 @@ export default function Page() {
       <div className=" mt-[10rem] " >
         <ul className=" flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <li><Link href="/boston/" >	Boston </Link></li>
-          <li><Link href="/new-York/" >	New York</Link></li>
+          <li><Link href="/new-york/" >	New York</Link></li>
           <li><Link href="/philadelphia/" >Philadelphia</Link></li>
           <li><Link href="/new-haven/" >	New Haven</Link></li>
           <li><Link href="/los-angeles/" >Los Angeles	</Link></li>
