@@ -2,15 +2,38 @@ import Link from 'next/link';
 import adminData from "@/data/admin.json";
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import type { Metadata } from 'next';
+
+type MetadataTypes = {
+  Name?: string | undefined;
+  Title?: string | undefined;
+  Description?: string | undefined;
+  Keyword?: string | undefined;
+  content?: any | undefined;
+}
+const myMeta: MetadataTypes = {
+  Title: "",
+  Description: "",
+  Keyword: "",
+}
+
+export const metadata: Metadata = {
+  title: myMeta.Title, //Option 1 replaces the %s in layout.tsx
+  // title: {
+  //   absolute: 'Academic Admin and Support Jobs', //Option 2 overrides the title in layout.tsx
+  // },
+  description: myMeta.Description,
+  keywords: myMeta.Keyword,
+};
 //const Lecturer = () => {
-export default function Page({ params, searchParams }) {
-  console.log("````````````````````params````````````````````")
-  console.log(params)
+export default function Page({ params, searchParams }: any) {
+  // console.log("````````````````````params````````````````````")
+  // console.log(params)
   let { category } = params
-  console.log(adminData)
-  console.log(category);
+  // console.log(adminData)
+  // console.log(category);
   category = category?.replace(/-/g, " ");
-  console.log(category);
+  // console.log(category);
 
   const {
     Name,
@@ -19,6 +42,12 @@ export default function Page({ params, searchParams }) {
     Keyword,
     content: content1,
   } = adminData.find((item) => item.Name === category);
+
+  
+  myMeta.Title = Title;
+  myMeta.Description = Description;
+  myMeta.Keyword = Keyword;
+
   let content;
   //console.log(Name);
   //const { logo, company_name, website, company_description, location } = data

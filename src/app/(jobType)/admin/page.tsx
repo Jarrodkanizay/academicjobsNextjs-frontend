@@ -1,8 +1,9 @@
-import type { Metadata } from 'next';
+
 import SearchResults from '@/components/SearchResults'
 import JobSearchBox from '@/components/JobSearchBox'
 import admin from "@/data/admin.json";
 import Link from 'next/link';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
