@@ -145,9 +145,9 @@ export default function Page() {
             <li>
               <Link href="/perth/"> Perth</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/adelaide/"> Adelaide</Link>
-            </li>
+            </li> */}
           </ul>
           <div className="  flex flex-wrap gap-6 px-7 pb-4 text-gray-400 mx-auto">
             <Link href="/Australia/faq/"> Aus FAQ</Link>
