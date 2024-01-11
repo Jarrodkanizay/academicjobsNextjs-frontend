@@ -150,7 +150,7 @@ const Job = () => {
                 <div dangerouslySetInnerHTML={{ __html: description }} />
                 {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
             </article>
-            <div className="max-h-screen overflow-y-scroll ">
+            <div className="max-h-screen overflow-y-scroll w-96 ">
                 <h3 className=" pl-4 text-lg text-gray-400">This might interest you... </h3>
             <JobSearchBox q={title}/>
               <SearchResults q={title}/>
