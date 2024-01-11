@@ -1,5 +1,5 @@
 import countries from '@/data/CountryList.json';
-import InputBlock2 from './InputBlock2';
+import InputBlock2 from './InputBlock2qq';
 
 const TalentPoolForm = () => {
   return (
