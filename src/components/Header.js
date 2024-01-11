@@ -65,7 +65,7 @@ export default function Header() {
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url="/Global/employers"
+            url="/global/employers"
             icon="/upward-arrow.svg"
             navLink="Top Universities"
             onClick={() => setIsNavOpen(false)}

@@ -10,7 +10,7 @@ const nextConfig = {
   async redirects() {
     return [
       // {
-      //   source: '/Global/Employers',
+      //   source: '/global/Employers',
       //   destination: '/global/employers',
       //   permanent: true,
       // },
