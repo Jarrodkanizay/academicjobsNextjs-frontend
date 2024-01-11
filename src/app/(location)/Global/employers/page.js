@@ -9,7 +9,7 @@ function countryRegionPlural() {
 }
 const Findemployerss = () => {
   return (
-    <div className=" mx-auto">
+    <main className=" mx-auto">
       {/* Hero banner */}
       <section>
         <div className="hero max-h-fit  bg-slate-200 py-8 mx-auto">
@@ -20,7 +20,7 @@ const Findemployerss = () => {
                 className="object-cover object-center h-60 w-96  rounded-xl shadow-2xl mb-8 lg:mb-0"
                 alt="The Top Academic Employers"
                 width={1280}
-                height={380}
+                height={534}
               />
               <div>
                 <h1 className="text-3xl font-bold text-aj">
@@ -41,7 +41,6 @@ const Findemployerss = () => {
                   <Link href="/academic-talent-pool" className="btn btn-aj">
                     Join our Talent Pool
                   </Link>
-               
                 </div>
               </div>
             </div>
@@ -126,130 +125,129 @@ const Findemployerss = () => {
             </div>
           </div>
         </div>
+
+        {/* Start US Section */}
+        <h2 id="section" className="underline-full">
+          UNITED STATES
+        </h2>
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 p-7">
+          <li>
+            <h3>California</h3>
+          </li>
+          <li>
+            <Link href="/employers/stanford-university/3101/">
+              Stanford University
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/california-institute/4133/">
+              California Institute of Technology
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/university-of-california-san-francisco/3683/">
+              University of California - San Francisco
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/university-of-southern-california/3672/">
+              University of Southern California
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/university-of-california-berkeley/3105/">
+              University of California - Berkeley
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/university-of-california-los-angeles/3136/">
+              University of California - Los Angeles
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/university-of-california-san-diego/3149/">
+              University of California - San Diego
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/university-of-california-davis/3498/">
+              University of California - Davis
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/university-of-california-irvine/3689/">
+              University of California - Irvine
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/university-of-california-santa-barbara/5407/">
+              University of California - Santa Barbara
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/university-of-california-santa-cruz/3252/">
+              University of California - Santa Cruz
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/university-of-california-Rrverside/3268/">
+              University of California - Riverside
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/california-state-university-stanislaus/3414/">
+              California State University Stanislaus
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/cal-poly-pomona/3728/">Cal Poly Pomona</Link>
+          </li>
+          <li>
+            <Link href="/employers/california-state-university-monterey-bay/3313/">
+              California State University, Monterey Bay
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/caltech/3128/">Caltech</Link>
+          </li>
+          <li>
+            <Link href="/employers/grossmont-cuyamaca-community-college-district/3858/">
+              Grossmont–Cuyamaca Community College District
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/northeastern-university/3285/">
+              Northeastern University
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/loyola-marymount-university/3637/">
+              Loyola Marymount University
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/palomar-college/3612/">Palomar College</Link>
+          </li>
+          <li>
+            <Link href="/employers/san-diego-state-university/3693/">
+              San Diego State University
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/saint-mary-s-college-of-california/3729/">
+              Saint Mary's College of California
+            </Link>
+          </li>
+          <li>
+            <Link href="/employers/university-of-california-office-of-the-president/3731/">
+              University of California Office of the President
+            </Link>
+          </li>
+        </ul>
+
         <div className="region-container bg-white">
-          <h2
-            id="section"
-            className="underline-full">
-            UNITED STATES
-          </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl  ">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 ">
-              <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">California</li>
-                <li>
-                  <Link href="/employers/stanford-university/3101/">
-                    Stanford University
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/california-institute/4133/">
-                    California Institute of Technology
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/university-of-california-san-francisco/3683/">
-                    University of California - San Francisco
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/university-of-southern-california/3672/">
-                    University of Southern California
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/university-of-california-berkeley/3105/">
-                    University of California - Berkeley
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/university-of-california-los-angeles/3136/">
-                    University of California - Los Angeles
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/university-of-california-san-diego/3149/">
-                    University of California - San Diego
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/university-of-california-davis/3498/">
-                    University of California - Davis
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/university-of-california-irvine/3689/">
-                    University of California - Irvine
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/university-of-california-santa-barbara/5407/">
-                    University of California - Santa Barbara
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/university-of-california-santa-cruz/3252/">
-                    University of California - Santa Cruz
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/university-of-california-Rrverside/3268/">
-                    University of California - Riverside
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/california-state-university-stanislaus/3414/">
-                    California State University Stanislaus
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/cal-poly-pomona/3728/">
-                    Cal Poly Pomona
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/california-state-university-monterey-bay/3313/">
-                    California State University, Monterey Bay
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/caltech/3128/">Caltech</Link>
-                </li>
-                <li>
-                  <Link href="/employers/grossmont-cuyamaca-community-college-district/3858/">
-                    Grossmont–Cuyamaca Community College District
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/northeastern-university/3285/">
-                    Northeastern University
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/loyola-marymount-university/3637/">
-                    Loyola Marymount University
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/palomar-college/3612/">
-                    Palomar College
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/san-diego-state-university/3693/">
-                    San Diego State University
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/saint-mary-s-college-of-california/3729/">
-                    Saint Mary's College of California
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/employers/university-of-california-office-of-the-president/3731/">
-                    University of California Office of the President
-                  </Link>
-                </li>
-              </ul>
               <ul>
                 <li className="mb-1 text-[#f4a10c] font-bold">Massachusetts</li>
                 <li>
@@ -716,9 +714,7 @@ const Findemployerss = () => {
           </div>
           <div class="region-container">
             <div>
-              <h2
-                id="section1"
-                 className="underline-full">
+              <h2 id="section1" className="underline-full">
                 AUSTRALIA
               </h2>
               <div className="bg-gradient-to-b to-white from-orange-100 m-8 rounded-3xl">
@@ -1003,9 +999,7 @@ const Findemployerss = () => {
           </div>
         </div>
         <div>
-          <h2
-            id="section9"
-          className="underline-full">
+          <h2 id="section9" className="underline-full">
             AFRICA
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1196,9 +1190,7 @@ const Findemployerss = () => {
           </div>
         </div>
         <div>
-          <h2
-            id="section3"
-             className="underline-full">
+          <h2 id="section3" className="underline-full">
             ASIA
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1293,9 +1285,7 @@ const Findemployerss = () => {
           </div>
         </div>
         <div>
-          <h2
-            id="section3"
-             className="underline-full">
+          <h2 id="section3" className="underline-full">
             CANADA
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1380,9 +1370,7 @@ const Findemployerss = () => {
           </div>
         </div>
         <div>
-          <h2
-            id="section2"
-            className="underline-full">
+          <h2 id="section2" className="underline-full">
             UNITED KINGDOM
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1500,9 +1488,7 @@ const Findemployerss = () => {
           </div>
         </div>
         <div>
-          <h2
-            id="section5"
-           className="underline-full">
+          <h2 id="section5" className="underline-full">
             SOUTH AMERICA
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1589,9 +1575,7 @@ const Findemployerss = () => {
           </div>
         </div>
         <div>
-          <h2
-            id="section6"
-           className="underline-full">
+          <h2 id="section6" className="underline-full">
             NEW ZEALAND
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1646,9 +1630,7 @@ const Findemployerss = () => {
           </div>
         </div>
         <div>
-          <h2
-            id="section7"
-            className="underline-full">
+          <h2 id="section7" className="underline-full">
             MIDDLE EAST
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1718,9 +1700,7 @@ const Findemployerss = () => {
           </div>
         </div>
         <div>
-          <h2
-            id="section8"
-            className="underline-full">
+          <h2 id="section8" className="underline-full">
             INDIA
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1769,9 +1749,7 @@ const Findemployerss = () => {
           </div>
         </div>
         <div>
-          <h2
-            id="section4"
-          className="underline-full">
+          <h2 id="section4" className="underline-full">
             EUROPE
           </h2>
           <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
@@ -1853,7 +1831,7 @@ const Findemployerss = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 export default Findemployerss;
