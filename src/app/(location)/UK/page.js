@@ -108,7 +108,7 @@ export default function Page() {
              
           </div>
 
-          <div className="  flex flex-wrap gap-6 px-7 pb-4 text-gray-400" >
+          <div className="  flex-wrap text-center gap-6 px-7 pb-4  text-gray-400" >
             <Link href="/russelgroup/" >	Russel Group</Link> </div>
 
             </div>

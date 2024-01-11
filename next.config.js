@@ -9,16 +9,16 @@ const nextConfig = {
   },
   async redirects() {
     return [
-      {
-        source: '/Global/Employers',
-        destination: '/Global/employers',
-        permanent: true,
-      },
-      {
-        source: '/employers',
-        destination: '/Global/employers',
-        permanent: true,
-      },
+      // {
+      //   source: '/Global/Employers',
+      //   destination: '/Global/employers',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/employers',
+      //   destination: '/Global/employers',
+      //   permanent: true,
+      // },
     ];
   },
 };
