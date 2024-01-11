@@ -8,7 +8,7 @@ type Props = {
 const JobCategoryAndLocationLinks = ({ nativeTrue }: Props) => {
   return (
     <>
-      <h2 className="underline-full mb-4">Done</h2>
+      {/* <h2 className="underline-full mb-4">Done</h2> */}
       <JobCategoryLinks nativeOn={nativeTrue} />
       <JobLocationTypeLinks />
     </>
