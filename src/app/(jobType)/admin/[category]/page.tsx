@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 };
 //const Lecturer = () => {
 export default function Page({ params, searchParams }: any) {
-  // console.log("````````````````````params````````````````````")
+  //  console.log("````````````````````params````````````````````")
   // console.log(params)
   let { category } = params;
   // console.log(adminData)
@@ -46,6 +46,9 @@ export default function Page({ params, searchParams }: any) {
   myMeta.Title = Title;
   myMeta.Description = Description;
   myMeta.Keyword = Keyword;
+  console.log(myMeta.Title);
+  console.log(myMeta.Description);
+  console.log(myMeta.Keyword);
 
   let content;
   //console.log(Name);
