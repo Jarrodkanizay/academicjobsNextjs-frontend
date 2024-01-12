@@ -158,6 +158,8 @@ const Findemployerss = () => {
           UNITED STATES
         </h2>
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 p-7">
+        <ul>
+          
           <li>
             <h3>California</h3>
           </li>
@@ -271,12 +273,9 @@ const Findemployerss = () => {
             </Link>
           </li>
         </ul>
-
-        <div className="region-container bg-white">
-          <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl  ">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 ">
-              <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Massachusetts</li>
+        <ul>
+                <li><h3>Massachusetts</h3>
+                </li>
                 <li>
                   <Link href="/employers/massachusetts-institute-of-technology/3103/">
                     Massachusetts Institute of Technology
@@ -322,7 +321,7 @@ const Findemployerss = () => {
                     Dana-Farber Cancer Institute
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Georgia</li>
+                <li><h3>Georgia</h3></li>
                 <li>
                   <Link href="/employers/emory-university/3372/">
                     Emory University
@@ -333,7 +332,7 @@ const Findemployerss = () => {
                     Georgia Institute of Technology
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Florida</li>
+                <li><h3>Florida</h3></li>
                 <li>
                   <Link href="/employers/university-of-miami/5475/">
                     University of Miami
@@ -349,8 +348,7 @@ const Findemployerss = () => {
                     University of Florida
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">
-                  North Carolina
+                <li><h3>North Carolina</h3>
                 </li>
                 <li>
                   <Link href="/employers/duke-university/3139/">
@@ -374,7 +372,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">New york</li>
+                <li><h3>New york</h3></li>
                 <li>
                   <Link href="/employers/columbia-university/3127/">
                     Columbia University
@@ -442,7 +440,7 @@ const Findemployerss = () => {
                     University at Buffalo
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Pennsylvania</li>
+                <li><h3>Pennsylvania</h3></li>
                 <li>
                   <Link
                     href="/employers/university-of-pennsylvania/3131/
@@ -475,7 +473,7 @@ const Findemployerss = () => {
                     Duquesne University
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Illinois</li>
+                <li><h3>Illinois</h3></li>
                 <li>
                   <Link
                     href="/employers/University-of-Chicago/3126/
@@ -508,7 +506,7 @@ const Findemployerss = () => {
                     University of Illinois at Urbana-Champaign
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Michigan</li>
+                <li><h3>Michigan</h3></li>
                 <li>
                   <Link
                     href="/employers/university-of-michigan/3142/
@@ -536,7 +534,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold"> All States</li>
+                <li><h3>All States</h3></li>
                 <li>
                   <Link href="/employers/yale-university/3125/">
                     Yale University
@@ -737,17 +735,18 @@ const Findemployerss = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
-          </div>
-          <div class="region-container">
-            <div>
+              </ul>
+              {/* <li className="mb-1 text-[#f4a10c] font-bold">Massachusetts</li>
+                <li> orange colour script */}
+      
+        
               <h2 id="section1" className="underline-full">
                 AUSTRALIA
               </h2>
-              <div className="bg-gradient-to-b to-white from-orange-100 m-8 rounded-3xl">
+           
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
                   <ul>
-                    <li className="mb-1 text-[#f4a10c] font-bold">ACT</li>
+                    <li><h3>ACT</h3></li>
                     <li>
                       <Link href="/employers/australian-national-university/3739/">
                         Australian National University
@@ -758,8 +757,7 @@ const Findemployerss = () => {
                         University of Canberra
                       </Link>
                     </li>
-                    <li className="mb-1 text-[#f4a10c] font-bold">
-                      New South Wales
+                    <li><h3>New South Wales</h3>
                     </li>
                     <li>
                       <Link href="/employers/the-university-of-sydney/3171/">
@@ -818,7 +816,7 @@ const Findemployerss = () => {
                     </li>
                   </ul>
                   <ul>
-                    <li className="mb-1 text-[#f4a10c] font-bold">Victoria</li>
+                    <li><h3>Victoria</h3></li>
                     <li>
                       <Link
                         href="/employers/university-of-melbourne/3170/
@@ -891,7 +889,7 @@ const Findemployerss = () => {
                         Federation University Australia
                       </Link>
                     </li>
-                    <li className="mb-1 text-[#f4a10c] font-bold">Tasmania</li>
+                    <li><h3>Tasmania</h3></li>
                     <li>
                       <Link
                         href="/employers/university-of-tasmania/3867/
@@ -902,9 +900,7 @@ const Findemployerss = () => {
                     </li>
                   </ul>
                   <ul>
-                    <li className="mb-1 text-[#f4a10c] font-bold">
-                      Queensland
-                    </li>
+                    <li><h3>Queensland</h3></li>
                     <li>
                       <Link
                         href="/employers/bond-university/3785/
@@ -948,14 +944,7 @@ const Findemployerss = () => {
                         University of Sunshine Coast
                       </Link>
                     </li>
-                    <li className="mb-1 ">
-                      <Link
-                        href="/jobs/northern-territory/"
-                        className="text-[#f4a10c] font-bold"
-                      >
-                        Northern Territory
-                      </Link>
-                    </li>
+                    <li><h3>Northern Territory</h3></li>
                     <li>
                       <Link href="/employers/charles-darwin-university/3880/">
                         Charles Darwin University
@@ -963,9 +952,7 @@ const Findemployerss = () => {
                     </li>
                   </ul>
                   <ul>
-                    <li className="mb-1 text-[#f4a10c] font-bold">
-                      South Australia
-                    </li>
+                    <li><h3>South Australia</h3></li>
                     <li>
                       <Link href="/employers/the-university-of-adelaide/3737/">
                         The University of Adelaide
@@ -991,9 +978,7 @@ const Findemployerss = () => {
                         Flinders University
                       </Link>
                     </li>
-                    <li className="mb-1 text-[#f4a10c] font-bold">
-                      Western Australia
-                    </li>
+                    <li><h3> Western Australia</h3></li>
                     <li>
                       <Link href="/employers/university-of-western-australia/3173/">
                         The University of Western Australia
@@ -1022,17 +1007,19 @@ const Findemployerss = () => {
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div>
+            
+       
+       
+       
+       
+       <div>
           <h2 id="section9" className="underline-full">
             AFRICA
           </h2>
-          <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
+     
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7  mb-16">
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Egypt</li>
+                <li><h3>Egypt</h3></li>
                 <li>
                   <Link href="/employers/cairo-university/6226/">
                     Cairo University
@@ -1050,7 +1037,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">South Africa</li>
+                <li><h3>South Africa</h3></li>
                 <li>
                   <Link href="/employers/university-of-cape-town/12637/">
                     University of Cape Town
@@ -1078,7 +1065,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Nigeria</li>
+                <li><h3>Nigeria</h3></li>
                 <li>
                   <Link href="/employers/university-of-ibadan/12743/">
                     University of Ibadan
@@ -1106,7 +1093,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Kenya</li>
+                <li><h3>Kenya</h3></li>
                 <li>
                   <Link href="/employers/university-of-nairobi/12866/">
                     University of Nairobi
@@ -1134,7 +1121,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Morocco</li>
+                <li><h3>Morocco</h3></li>
                 <li>
                   <Link href="/employers/university-mohammed-v-of-rabat/12453/">
                     University Mohammed V of Rabat
@@ -1152,7 +1139,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Ghana</li>
+                <li><h3>Ghana</h3></li>
                 <li>
                   <Link href="/employers/university-of-ghana/12711/">
                     University of Ghana
@@ -1170,7 +1157,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Senegal</li>
+                <li><h3>Senegal</h3></li>
                 <li>
                   <Link href="/employers/cheikh-anta-diop-university/12272/">
                     Cheikh Anta Diop University
@@ -1178,7 +1165,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Tunisia</li>
+                <li><h3>Tunisia</h3></li>
                 <li>
                   <Link href="/employers/university-of-tunis-el-manar/12393/">
                     University of Tunis El Manar
@@ -1196,7 +1183,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Uganda</li>
+                <li><h3>Uganda</h3></li>
                 <li>
                   <Link href="/employers/makerere-university/8875/">
                     Makerere University
@@ -1215,15 +1202,15 @@ const Findemployerss = () => {
               </ul>
             </div>
           </div>
-        </div>
+        
         <div>
           <h2 id="section3" className="underline-full">
             ASIA
           </h2>
-          <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
+          
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Singapore</li>
+                <li><h3>Singapore</h3></li>
                 <li>
                   <Link href="/employers/nanyang-technological-university-singapore/3152/">
                     Nanyang Technological University
@@ -1234,7 +1221,7 @@ const Findemployerss = () => {
                     National University of Singapore
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Malaysia</li>
+                <li><h3>Malaysia</h3></li>
                 <li>
                   <Link href="/employers/universiti-ualaya/12499/">
                     Universiti Malaya (UM)
@@ -1242,7 +1229,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">China</li>
+                <li><h3>China</h3></li>
                 <li>
                   <Link href="/employers/peking-university/3133/">
                     Peking University
@@ -1265,19 +1252,19 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Japan</li>
+                <li><h3>Japan</h3></li>
                 <li>
                   <Link href="/employers/university-of-tokyo/3155/">
                     University of Tokyo
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Indonesia</li>
+                <li><h3>Indonesia</h3></li>
                 <li>
                   <Link href="/employers/the-university-of-indonesia/12068/">
                     The University of Indonesia
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Thailand</li>
+                <li><h3>Thailand</h3></li>
                 <li>
                   <Link href="/employers/chulalongkorn-university/6615/">
                     Chulalongkorn University
@@ -1285,7 +1272,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Hong Kong</li>
+                <li><h3>Hong Kong</h3></li>
                 <li>
                   <Link href="/employers/university-of-hong-kong/3148/">
                     University of Hong Kong
@@ -1301,7 +1288,7 @@ const Findemployerss = () => {
                     The Hong Kong University of Science and Technology
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">South Korea</li>
+                <li><h3>South Korea</h3></li>
                 <li>
                   <Link href="/employers/seoul-national-university/10119/">
                     Seoul National University
@@ -1310,15 +1297,14 @@ const Findemployerss = () => {
               </ul>
             </div>
           </div>
-        </div>
+        
         <div>
           <h2 id="section3" className="underline-full">
             CANADA
           </h2>
-          <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Alberta</li>
+                <li><h3>Alberta</h3></li>
                 <li>
                   <Link href="/employers/university-of-alberta/3837/">
                     University of Alberta
@@ -1331,7 +1317,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Quebec</li>
+                <li><h3>Quebec</h3></li>
                 <li>
                   <Link href="/employers/mcgill-university/3162/">
                     McGill University
@@ -1354,7 +1340,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Ontario</li>
+                <li><h3>Ontario</h3></li>
                 <li>
                   <Link href="/employers/university-of-toronto//3134/">
                     University of Toronto
@@ -1393,17 +1379,16 @@ const Findemployerss = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
           </div>
         </div>
         <div>
           <h2 id="section2" className="underline-full">
             UNITED KINGDOM
           </h2>
-          <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
+      
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">England</li>
+                <li><h3>England</h3></li>
                 <li>
                   <Link href="/employers/university-of-cambridge/12635/">
                     University of Cambridge
@@ -1446,7 +1431,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Scotland</li>
+                <li><h3>Scotland</h3></li>
                 <li>
                   <Link href="/employers/university-of-edinburgh/12681/">
                     University of Edinburgh
@@ -1474,7 +1459,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Wales</li>
+                <li><h3>Wales</h3></li>
                 <li>
                   <Link href="/employers/cardiff-university/6252/">
                     Cardiff University
@@ -1497,8 +1482,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">
-                  Northern Ireland
+                <li><h3>Northern Ireland</h3>
                 </li>
                 <li>
                   <Link href="/employers/queens-university-belfast/10799/">
@@ -1512,16 +1496,14 @@ const Findemployerss = () => {
                 </li>
               </ul>
             </div>
-          </div>
         </div>
         <div>
           <h2 id="section5" className="underline-full">
             SOUTH AMERICA
           </h2>
-          <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Brazil</li>
+                <li><h3>Brazil</h3></li>
                 <li>
                   <Link href="/employers/university-of-sao-paulo/11463/">
                     University of São Paulo
@@ -1544,13 +1526,13 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Argentina</li>
+                <li><h3>Argentina</h3></li>
                 <li>
                   <Link href="/employers/universidad-de-buenos-aires/11196/">
                     Universidad de Buenos Aires
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Colombia</li>
+                <li><h3>Colombia</h3></li>
                 <li>
                   <Link href="/employers/universidad-de-los-andes/11308/">
                     Universidad de los Andes
@@ -1563,7 +1545,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Chile</li>
+                <li><h3>Chile</h3></li>
                 <li>
                   <Link href="/employers/pontificia-universidad-catolica-de-chile/9739/">
                     Pontificia Universidad Catolica de Chile
@@ -1586,7 +1568,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Peru</li>
+                <li><h3>Peru</h3></li>
                 <li>
                   <Link href="/employers/universidad-alas-peruanas/11010/">
                     Universidad Alas Peruanas
@@ -1598,17 +1580,15 @@ const Findemployerss = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
           </div>
         </div>
         <div>
           <h2 id="section6" className="underline-full">
             NEW ZEALAND
           </h2>
-          <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">North Island</li>
+                <li><h3>North Island</h3></li>
                 <li>
                   <Link href="/employers/the-university-of-auckland/3809/">
                     The University of Auckland
@@ -1631,7 +1611,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">South Island</li>
+                <li><h3>South Island</h3></li>
                 <li>
                   <Link href="/employers/university-of-otago/3805/">
                     University of Otago
@@ -1653,17 +1633,15 @@ const Findemployerss = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
           </div>
         </div>
         <div>
           <h2 id="section7" className="underline-full">
             MIDDLE EAST
           </h2>
-          <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Saudi Arabia</li>
+                <li><h3>Saudi Arabia</h3></li>
                 <li>
                   <Link href="/employers/king-saud-university-saudi-arabia/8522/">
                     King Saud University
@@ -1681,7 +1659,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">UAE</li>
+                <li><h3>UAE</h3></li>
                 <li>
                   <Link href="/employers/khalifa-university-uae/8481/">
                     Khalifa University
@@ -1704,36 +1682,34 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Lebanon</li>
+                <li><h3>Lebanon</h3></li>
                 <li>
                   <Link href="/employers/american-university-of-beirut-lebanon/5804/">
                     American University of Beirut
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Jordan</li>
+                <li><h3>Jordan</h3></li>
                 <li>
                   <Link href="/employers/university-of-jordan-jordan/12763/">
                     University of Jordan
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Qatar</li>
+                <li><h3>Qatar</h3></li>
                 <li>
                   <Link href="/employers/qatar-university-qatar/12944/">
                     Qatar University
                   </Link>
                 </li>
               </ul>
-            </div>
-          </div>
+         </div>
         </div>
         <div>
           <h2 id="section8" className="underline-full">
             INDIA
           </h2>
-          <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Mumbai</li>
+                <li><h3>Mumbai</h3></li>
                 <li>
                   <Link href="/employers/indian-institute-of-technology-bombay/3844/">
                     Indian Institute of Technology Bombay
@@ -1741,7 +1717,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Chennai</li>
+                <li><h3>Chennai</h3></li>
                 <li>
                   <Link href="/employers/indian-institute-of-technology-madras/3845/">
                     Indian Institute of Technology Madras
@@ -1749,7 +1725,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Vellore</li>
+                <li><h3>Vellore</h3></li>
                 <li>
                   <Link href="/employers/vellore-institute-of-technology/3846/">
                     Vellore Institute of Technology
@@ -1757,7 +1733,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Bangalore</li>
+                <li><h3>Bangalore</h3></li>
                 <li>
                   <Link href="/employers/indian-institute-of-science/7818/">
                     Indian Institute of Science (IISc)
@@ -1765,24 +1741,22 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Delhi</li>
+                <li><h3>Delhi</h3></li>
                 <li>
                   <Link href="/employers/indian-institute-of-technology-delhi/7822/">
                     Indian Institute of Technology Delhi
                   </Link>
                 </li>
               </ul>
-            </div>
           </div>
         </div>
         <div>
           <h2 id="section4" className="underline-full">
             EUROPE
           </h2>
-          <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">France</li>
+                <li><h3>France</h3></li>
                 <li>
                   <Link href="/employers/paris-sciences-et-lettres/3163/">
                     Paris Sciences et Lettres
@@ -1793,7 +1767,7 @@ const Findemployerss = () => {
                     Ecole Polytechnique
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Sweden</li>
+                <li><h3>Sweden</h3></li>
                 <li>
                   <Link href="/employers/karolinska-institute/3165/">
                     Karolinska Institute
@@ -1801,7 +1775,7 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Germany</li>
+                <li><h3>Germany</h3></li>
                 <li>
                   <Link href="/employers/heidelberg-university/3160/">
                     Heidelberg University
@@ -1819,35 +1793,35 @@ const Findemployerss = () => {
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Denmark</li>
+                <li><h3>Denmark</h3></li>
                 <li>
                   <Link href="/employers/the-university-of-copenhagen/3156/">
                     University of Copenhagen
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Switzerland</li>
+                <li><h3>Switzerland</h3></li>
                 <li>
                   <Link href="/employers/eth-zurich/3132/">ETH Zurich</Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Belgium</li>
+                <li><h3>Belgium</h3></li>
                 <li>
                   <Link href="/employers/ku-leuven/3159/">KU Leuven</Link>
                 </li>
               </ul>
               <ul>
-                <li className="mb-1 text-[#f4a10c] font-bold">Netherlands</li>
+                <li><h3>Netherlands</h3></li>
                 <li>
                   <Link href="/employers/delft-university-of-technology/3847/">
                     Delft University of Technology
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Italy</li>
+                <li><h3>Italy</h3></li>
                 <li>
                   <Link href="/employers/University-of-Bologna/12015/">
                     University of Bologna
                   </Link>
                 </li>
-                <li className="mb-1 text-[#f4a10c] font-bold">Spain</li>
+                <li><h3>Spain</h3></li>
                 <li>
                   <Link href="/employers/universitat-de-barcelona/12195/">
                     Universitat de Barcelona
@@ -1856,9 +1830,7 @@ const Findemployerss = () => {
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </main>
+        </main>
   );
 };
 export default Findemployerss;
