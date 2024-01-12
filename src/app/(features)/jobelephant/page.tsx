@@ -173,7 +173,7 @@ export default function Page() {
           </ul>
 
           <a
-            href="https://www.iloveacademicjobs.com/jobelephant-job-form"
+            href="https://www.postmyjob.online/jobelephant-portal"
             className="flex justify-center items-center bg-aj rounded-xl py-5 px-4 text-center text-white text-3xl font-bold "
           >
            {pricing.basic}
