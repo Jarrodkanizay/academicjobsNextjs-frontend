@@ -1,15 +1,14 @@
-const data =[
+const data = [
+  {
+    break1: true,
 
-
- {
-  "break1": true,   
-  
-  "Name": "how to land your dream college job a step by step guide",
-  "Title": "How to Land Your Dream College Job: A Step-by-Step Guide",
-  "Description": "Follow our step by step guide to learn how to plan, prepare, and apply for the academic position you’ve always wanted.",
-  "Keyword": "Academic Dream Jobs. dream college job",
-  "content": "06 Jul, 2023" ,
-  "content2": `  
+    Name: 'how to land your dream college job a step by step guide',
+    Title: 'How to Land Your Dream College Job: A Step-by-Step Guide',
+    Description:
+      'Follow our step by step guide to learn how to plan, prepare, and apply for the academic position you’ve always wanted.',
+    Keyword: 'Academic Dream Jobs. dream college job',
+    content: '06 Jul, 2023',
+    content2: `  
   <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Dream_Job_2.png" alt="How to Land Your Dream College Job: A Step-by-Step Guide">
   <div class="blog__content">
   <p>&nbsp;</p>
@@ -44,16 +43,18 @@ const data =[
 </div>
 </div>
             </div>
-  `
-},
- {
-  "break1": true,   
-  "Name": "exploring the global landscape of academic jobs opportunities and challenges",
-  "Title": "Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges",
-  "Description": "Find out how to prepare yourself for the future of work in academia and discover the best academic jobs across different regions and disciplines.",
-  "Keyword": "Global Landscape of Academic Jobs. opportunities and challenges",
-  "content": "07 Jul, 2023",
-  "content2": `  
+  `,
+  },
+  {
+    break1: true,
+    Name: 'exploring the global landscape of academic jobs opportunities and challenges',
+    Title:
+      'Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges',
+    Description:
+      'Find out how to prepare yourself for the future of work in academia and discover the best academic jobs across different regions and disciplines.',
+    Keyword: 'Global Landscape of Academic Jobs. opportunities and challenges',
+    content: '07 Jul, 2023',
+    content2: `  
   <div class="blog__content">
   <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Global_Opportunities_2.png" alt="Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges">
   <p>&nbsp;</p>
@@ -83,18 +84,19 @@ const data =[
 
 </div>
             </div>
-  `
+  `,
+  },
 
-},
- 
- {   
-  "break1": true,   
-  "Name": "exploring the benefits of academic jobs online why virtual hiring is on the rise",
-  "Title": "Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise",
-  "Description": "Learn how to find, apply, and succeed in your dream academic position with our expert tips and resources. ",
-  "Keyword": "benefits of academic jobs online. virtual hiring is on the rise",
-  "content": "20 Jun, 2023",
-  "content2": `   
+  {
+    break1: true,
+    Name: 'exploring the benefits of academic jobs online why virtual hiring is on the rise',
+    Title:
+      'Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise',
+    Description:
+      'Learn how to find, apply, and succeed in your dream academic position with our expert tips and resources. ',
+    Keyword: 'benefits of academic jobs online. virtual hiring is on the rise',
+    content: '20 Jun, 2023',
+    content2: `   
   <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Virtual_Hiring.png" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
   <div class="blog__content">
   <p>&nbsp;</p>
@@ -118,17 +120,18 @@ const data =[
 <p><span style="">Overall, the rise of virtual hiring for academic jobs offers numerous benefits, including expanded access to talent, cost savings, time efficiency, enhanced diversity, increased satisfaction and flexibility for candidates, environmental sustainability, and leveraging advanced technologies. As these advantages continue to be recognized, it is likely that virtual hiring will become increasingly common in the academic job market.</span></p>
 <p><span style="">If you want to talk to us more about virtual hiring, contact us at <a style="" href="https://academicjobs.com/contact-us/">AcademicJobs</a>.</span></p>
 </div>
-  `
-},
+  `,
+  },
 
-{   
-  "break1": true,   
-  "Name": "happiness and academics",
-  "Title": "Happiness and Academics: Scott Galloway's Algebra of Happiness",
-  "Description": "Learn how to find happiness in academia from Scott Galloway, a renowned professor and author of The Algebra of Happiness. ",
-  "Keyword": "Academic Happiness. happiness and academics",
-  "content": "16 Oct, 2023",
-  "content2": `   
+  {
+    break1: true,
+    Name: 'happiness and academics',
+    Title: "Happiness and Academics: Scott Galloway's Algebra of Happiness",
+    Description:
+      'Learn how to find happiness in academia from Scott Galloway, a renowned professor and author of The Algebra of Happiness. ',
+    Keyword: 'Academic Happiness. happiness and academics',
+    content: '16 Oct, 2023',
+    content2: `   
   <img src="https://academicjobs.s3.amazonaws.com/img/_misc/how-to-be-a-happy-academic.jpg" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
       <div className="container mx-auto py-4">
@@ -182,17 +185,18 @@ const data =[
   
   
 </div>
-  `
-},
+  `,
+  },
 
-{   
-  "break1": true,   
-  "Name": "top academic jobs australia",
-  "Title": "Top Academic Jobs Australia",
-  "Description": "Looking for the best academic jobs in Australia? This blog shows the best of faculty, research, and administrative positions at leading universities. ",
-  "Keyword": "Top Academic Jobs Australia. Academic Jobs Australia",
-  "content": "10 Aug, 2023",
-  "content2": `   
+  {
+    break1: true,
+    Name: 'top academic jobs australia',
+    Title: 'Top Academic Jobs Australia',
+    Description:
+      'Looking for the best academic jobs in Australia? This blog shows the best of faculty, research, and administrative positions at leading universities. ',
+    Keyword: 'Top Academic Jobs Australia. Academic Jobs Australia',
+    content: '10 Aug, 2023',
+    content2: `   
   <img src="https://academicjobs.s3.amazonaws.com/img/_misc/top-academic-jobs-australia.jpg" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
   <div class="blog__content">
@@ -245,17 +249,20 @@ const data =[
 </div>
 <cib-overlay></cib-overlay></div>
 </div>
-  `
-},
+  `,
+  },
 
-{   
-  "break1": true,   
-  "Name": "the evolution of university recruitment",
-  "Title": "The Evolution of University Recruitment: Embracing Digital Platforms",
-  "Description": "Learn how digital platforms are transforming the way universities recruit and hire academic talent. Explore the benefits now!",
-  "Keyword": "evolution of university recruitment. evolution of academic recruitment",
-  "content": "May 15, 2023",
-  "content2": `   
+  {
+    break1: true,
+    Name: 'the evolution of university recruitment',
+    Title:
+      'The Evolution of University Recruitment: Embracing Digital Platforms',
+    Description:
+      'Learn how digital platforms are transforming the way universities recruit and hire academic talent. Explore the benefits now!',
+    Keyword:
+      'evolution of university recruitment. evolution of academic recruitment',
+    content: 'May 15, 2023',
+    content2: `   
   <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
   <div class="blog__content">
@@ -312,17 +319,18 @@ const data =[
 <p>&nbsp;</p><p><p><span style="";">In conclusion, the evolution of university recruitment has been shaped by the embrace of digital platforms. The use of online job boards, social media, virtual career fairs, AI-powered tools, and data analytics has transformed the way employers connect with candidates and identify top talent. While digital platforms offer numerous benefits, it's crucial to strike a balance between online and in-person engagement to create a comprehensive and effective recruitment strategy.</span></p>
 <p><span style="";">If you want to talk to us more about university recruitment in academia, contact us at <a href="https://academicjobs.com/contact-us/">AcademicJobs</a>.</span></p>
             </div>
-  `
-},
+  `,
+  },
 
-{   
-  "break1": true,   
-  "Name": "highest paid academic jobs australia 2023",
-  "Title": "The Highest Paid Academic Jobs Australia for 2023",
-  "Description": "If you are looking for a rewarding and lucrative career in the academic sector, you might be wondering what is the highest paid job in Australian higher education.",
-  "Keyword": "highest paid academic jobs Australia 2023 .",
-  "content": "May 15, 2023",
-  "content2": `   
+  {
+    break1: true,
+    Name: 'highest paid academic jobs australia 2023',
+    Title: 'The Highest Paid Academic Jobs Australia for 2023',
+    Description:
+      'If you are looking for a rewarding and lucrative career in the academic sector, you might be wondering what is the highest paid job in Australian higher education.',
+    Keyword: 'highest paid academic jobs Australia 2023 .',
+    content: 'May 15, 2023',
+    content2: `   
   <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
   <div class="container">
@@ -391,17 +399,18 @@ const data =[
   
   <p>If you want to learn more about the highest paying academic jobs in Australia or other career options in higher education, you can visit our website or contact us for more information.</p>
 </div>
-  `
-},
+  `,
+  },
 
-{   
-  "break1": true,   
-  "Name": "the highest paid academic job in 2023",
-  "Title": "Unveiling the Pinnacle: The Highest-Paid Academic Job in 2023",
-  "Description": "While there are many factors that can influence your earning potential, such as your field of expertise, there are some general trends that can help you identify the most profitable positions.",
-  "Keyword": "highest paid academic job 2023 .",
-  "content": "May 15, 2023",
-  "content2": `   
+  {
+    break1: true,
+    Name: 'the highest paid academic job in 2023',
+    Title: 'Unveiling the Pinnacle: The Highest-Paid Academic Job in 2023',
+    Description:
+      'While there are many factors that can influence your earning potential, such as your field of expertise, there are some general trends that can help you identify the most profitable positions.',
+    Keyword: 'highest paid academic job 2023 .',
+    content: 'May 15, 2023',
+    content2: `   
   <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
 
@@ -429,19 +438,18 @@ const data =[
 </div>
  
   
-  `
-},
+  `,
+  },
 
-
-
-{   
-  "break1": true,   
-  "Name": "find student jobs on your university campus",
-  "Title": "Find Student Jobs on your University Campus",
-  "Description": "Taking on casual or part-time employment as a student on campus is a complete experience that combines work with the social and academic aspects of university life.",
-  "Keyword": "Find Student Jobs on your University Campus .",
-  "content": "Find Student Jobs on your University Campus",
-  "content2": `   
+  {
+    break1: true,
+    Name: 'find student jobs on your university campus',
+    Title: 'Find Student Jobs on your University Campus',
+    Description:
+      'Taking on casual or part-time employment as a student on campus is a complete experience that combines work with the social and academic aspects of university life.',
+    Keyword: 'Find Student Jobs on your University Campus .',
+    content: 'Find Student Jobs on your University Campus',
+    content2: `   
  
 
  <p><strong>Find Student Jobs on your University Campus<o:p></o:p></strong></p>
@@ -467,17 +475,18 @@ const data =[
 <p>The availability of jobs on university campuses for students can vary based on the size of the university, its location, and the demand for student employment. Typically, larger universities and those situated in urban areas tend to offer a greater number and variety of on-campus job opportunities. Common on-campus job options for students include positions in administration, libraries, research labs, student services, food services, and recreational facilities. Additionally, universities often have student employment programs to facilitate part-time work opportunities. However, the specific availability of jobs will depend on the institution's policies and the current economic climate.<o:p></o:p></p>
  
   
-  `
-},
+  `,
+  },
 
-{
-"break1": true,   
-"Name": "seek all qut university careers here",
-"Title": "Seek all QUT University Careers Here",
-"Description": "You may launch your career at Queensland University of Technology right now with the aid of academic jobs!",
-"Keyword": "Seek all QUT University Careers Here .",
-"content": "Seek all QUT University Careers Here",
-"content2": `   
+  {
+    break1: true,
+    Name: 'seek all qut university careers here',
+    Title: 'Seek all QUT University Careers Here',
+    Description:
+      'You may launch your career at Queensland University of Technology right now with the aid of academic jobs!',
+    Keyword: 'Seek all QUT University Careers Here .',
+    content: 'Seek all QUT University Careers Here',
+    content2: `   
 
 
 <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip1.png"></p>
@@ -511,18 +520,18 @@ const data =[
 <p>-&nbsp; <!--[endif]-->Visiting Professor<o:p></o:p></p>
 <p>-&nbsp; <!--[endif]-->Adjunct Professor<o:p></o:p></p>
 <p>-&nbsp; <!--[endif]-->Academic Advisor<o:p></o:p></p>
-`
-},
+`,
+  },
 
-
-{
-  "break1": true,   
-  "Name": "seek all qut university jobs here",
-  "Title": "Seek all QUT University Jobs Here",
-  "Description": "Join the academic team at Queensland University of Technology (QUT) to find your future career.",
-  "Keyword": "Seek all QUT University Jobs Here.",
-  "content": "Seek all QUT University Jobs Here",
-  "content2": `   
+  {
+    break1: true,
+    Name: 'seek all qut university jobs here',
+    Title: 'Seek all QUT University Jobs Here',
+    Description:
+      'Join the academic team at Queensland University of Technology (QUT) to find your future career.',
+    Keyword: 'Seek all QUT University Jobs Here.',
+    content: 'Seek all QUT University Jobs Here',
+    content2: `   
   
   
   <div><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip2.png"><br>
@@ -543,17 +552,18 @@ const data =[
 <li>Faculty of Science<o:p></o:p></li>
 <li>QUT International College (providing pathway programs for international students)<o:p></o:p></li>
 </ul>
-  `
+  `,
   },
-  
+
   {
-    "break1": true,   
-    "Name": "seek all bond university careers here",
-    "Title": "Seek all Bond University Careers Here",
-    "Description": "Academic careers at Bond University provide professionals with the chance to flourish in a dynamic and cutting-edge higher education setting.",
-    "Keyword": "Seek all Bond University Careers Here",
-    "content": "Seek all Bond University Careers Here",
-    "content2": `   
+    break1: true,
+    Name: 'seek all bond university careers here',
+    Title: 'Seek all Bond University Careers Here',
+    Description:
+      'Academic careers at Bond University provide professionals with the chance to flourish in a dynamic and cutting-edge higher education setting.',
+    Keyword: 'Seek all Bond University Careers Here',
+    content: 'Seek all Bond University Careers Here',
+    content2: `   
     
     
     <div><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip3.png"><br><o:p></o:p>
@@ -584,18 +594,18 @@ const data =[
 <p>Academic Advisor<o:p></o:p></p>
 <p>Research Assistant<o:p></o:p></p>
 </div>
-    `
-    },
+    `,
+  },
 
-
-    {
-      "break1": true,   
-      "Name": "seek all bond university jobs here",
-      "Title": "Seek all Bond University Jobs Here",
-      "Description": "Join Bond University's academic staff and collaborate with some of the top higher education professionals in the world to find your future career.",
-      "Keyword": "Seek all Bond University Jobs Here",
-      "content": "Seek all Bond University Jobs Here",
-      "content2": `   
+  {
+    break1: true,
+    Name: 'seek all bond university jobs here',
+    Title: 'Seek all Bond University Jobs Here',
+    Description:
+      "Join Bond University's academic staff and collaborate with some of the top higher education professionals in the world to find your future career.",
+    Keyword: 'Seek all Bond University Jobs Here',
+    content: 'Seek all Bond University Jobs Here',
+    content2: `   
       
       
       <div>
@@ -618,18 +628,18 @@ const data =[
 <li>Bond Business School<o:p></o:p></li>
 <li>Bond College (providing preparatory and foundation programs)<o:p></o:p></li>
 </ul>
-      `
-      },
+      `,
+  },
 
-
-      {
-        "break1": true,   
-        "Name": "start your career at harvard university",
-        "Title": "Start your Career at Harvard University ",
-        "Description": "Professionals may flourish in a dynamic and cutting-edge higher education setting by pursuing a career in academic roles at Harvard University.",
-        "Keyword": "Start your Career at Harvard University ",
-        "content": "Start your Career at Harvard University ",
-        "content2": `   
+  {
+    break1: true,
+    Name: 'start your career at harvard university',
+    Title: 'Start your Career at Harvard University ',
+    Description:
+      'Professionals may flourish in a dynamic and cutting-edge higher education setting by pursuing a career in academic roles at Harvard University.',
+    Keyword: 'Start your Career at Harvard University ',
+    content: 'Start your Career at Harvard University ',
+    content2: `   
         
         
         <div>
@@ -666,17 +676,18 @@ const data =[
 <li>Visiting Professor<o:p></o:p></li>
 <li>Adjunct Professor<o:p></o:p></li>
 </ul>
-        `
-        },
+        `,
+  },
 
-        {
-          "break1": true,   
-          "Name": "seek all harvard university jobs here",
-          "Title": "Seek all Harvard University Jobs Here ",
-          "Description": "Working at Harvard University offers a once-in-a-lifetime chance to join a prestigious organisation recognised for its dedication to global impact, groundbreaking research, and academic achievement.",
-          "Keyword": "Seek all Harvard University Jobs Here ",
-          "content": "Seek all Harvard University Jobs Here ",
-          "content2": `   
+  {
+    break1: true,
+    Name: 'seek all harvard university jobs here',
+    Title: 'Seek all Harvard University Jobs Here ',
+    Description:
+      'Working at Harvard University offers a once-in-a-lifetime chance to join a prestigious organisation recognised for its dedication to global impact, groundbreaking research, and academic achievement.',
+    Keyword: 'Seek all Harvard University Jobs Here ',
+    content: 'Seek all Harvard University Jobs Here ',
+    content2: `   
           
           
           <div>
@@ -707,18 +718,18 @@ const data =[
 <li>&nbsp; <!--[endif]-->Director of Research<o:p></o:p></li>
 <li>&nbsp; <!--[endif]-->Lab Manager<o:p></o:p></li>
 </ul>
-          `
-          },
+          `,
+  },
 
-
-          {
-            "break1": true,   
-            "Name": "seek all ucla jobs here",
-            "Title": "Seek all UCLA Jobs Here ",
-            "Description": "employment at UCLA University provides access to a rich and active academic community within the context of higher education.",
-            "Keyword": "Seek all UCLA Jobs Here ",
-            "content": "Seek all UCLA Jobs Here ",
-            "content2": `   
+  {
+    break1: true,
+    Name: 'seek all ucla jobs here',
+    Title: 'Seek all UCLA Jobs Here ',
+    Description:
+      'employment at UCLA University provides access to a rich and active academic community within the context of higher education.',
+    Keyword: 'Seek all UCLA Jobs Here ',
+    content: 'Seek all UCLA Jobs Here ',
+    content2: `   
             
             
             <div>
@@ -754,17 +765,18 @@ const data =[
             </ul>
             </div>
             <p>&nbsp;</p>
-            `
-            },
+            `,
+  },
 
-            {
-              "break1": true,   
-              "Name": "start you career at ucla",
-              "Title": "Start you Career at UCLA ",
-              "Description": "Professionals can flourish in an innovative and dynamic higher education setting by holding academic roles at UCLA.",
-              "Keyword": "Start you Career at UCLA ",
-              "content": "Start you Career at UCLA ",
-              "content2": `   
+  {
+    break1: true,
+    Name: 'start you career at ucla',
+    Title: 'Start you Career at UCLA ',
+    Description:
+      'Professionals can flourish in an innovative and dynamic higher education setting by holding academic roles at UCLA.',
+    Keyword: 'Start you Career at UCLA ',
+    content: 'Start you Career at UCLA ',
+    content2: `   
               
               
               <div>
@@ -797,12 +809,8 @@ const data =[
               <li>&nbsp; <!--[endif]-->Research Scientist<o:p></o:p></li>
               <li>Postdoctoral Scholar</li>
               </ul>
-              `
-              },
-
-]
- 
-
-
+              `,
+  },
+];
 
 module.exports = data;
