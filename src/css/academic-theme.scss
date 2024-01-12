@@ -71,10 +71,10 @@ html {
     h2 a {
       font-size: 30px;
       color: var(--color-gray-blue);
-      .faq h2 {
-        font-size: 21px;
-        color: var(--color-gray-blue);
-      }
+    }
+    .faq h2 {
+      font-size: 21px;
+      color: var(--color-gray-blue);
     }
     h2 a:hover,
     .faq h2:hover {
@@ -248,6 +248,7 @@ html {
 
     section h2,
     section h3,
+    h3,
     section h4 {
       color: var(--color-primary);
       margin-top: 1.5rem;
