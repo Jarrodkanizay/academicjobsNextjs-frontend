@@ -10,7 +10,7 @@ const Footer = () => {
             <li className="text-white font-bold text-xl pb-1 ">Recruiters</li>
 
             <li>
-              <a className="footer-nav__link" href="/job-ads">
+              <a className="footer-nav__link" href="https://www.postmyjob.online/academicjobs-job-portal">
                 Post a Job
               </a>
             </li>
