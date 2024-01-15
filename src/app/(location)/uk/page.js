@@ -79,9 +79,12 @@ export default function Page() {
         <div>
         
         <p className="px-7 mb-4 mt-1">
-        To start your UK academic jobs search, you can browse through our listings of university jobs, research jobs, science jobs and managerial jobs in leading universities and top global employerss. You can also find PhDs, studentships, scholarships and fellowships to support your academic career. You can search by keywords, disciplines, locations, salary bands, contract types and more.
-                Find your ideal academia jobs and join the vibrant academic community of university jobs uk. We have the perfect opportunity for you whatever the jobs in academia you are seeking.
+        <p className="px-7">
+        The number 1 job board for academics can help you find your dream academic position through our services. At Academic Jobs, we value our customers interests by providing the best career choices possible, making us the best job board for higher education jobs globally!</p>
         </p>
+        <p className="px-7">
+        The number 1 job board for academics can help you find your dream academic career through our services. At Academic Jobs, we value our customers interests by providing the best career choices possible, making us the best job board for higher education positions globally!
+</p>
       
       
     

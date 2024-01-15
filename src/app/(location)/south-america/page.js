@@ -76,8 +76,9 @@ export const metadata = {
         <div>
         
         <p className="px-7 mb-4 mt-1">
-        If you are interested in finding your dream job in South America, you can browse through our listings of teaching and education jobs1, science jobs, and university and academic jobs. You can also filter by location, discipline, and salary to narrow down your search. Don’t miss this chance to explore the academic opportunities in South America!
-        </p>
+        Explore what academic positions South America has to offer through Academic Jobs! We value the importance of an easy to navigate website to help you find and secure the perfect academic job, anywhere in the world. Academic Jobs provides an extensive list of opportunities for the future of your career in education, carefully sectioning the top Higher Ed jobs to curate the best fitting position for you. </p>
+        <p className="px-7">
+        The number 1 job board for academics can help you find your dream academic position through our services. At Academic Jobs, we value our customers' interests by providing the best career choices possible, making us the best job board for higher education jobs globally!</p>
       
         </div>
       </div>
