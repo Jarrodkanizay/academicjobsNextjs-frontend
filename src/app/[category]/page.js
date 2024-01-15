@@ -14,8 +14,7 @@ export default function Page({ params, searchParams }) {
   console.log(citiesData)
   console.log(category);
   category = category?.replace(/-/g, " ");
-  console.log(category);
-
+  console.log(category); 
 
   const {
     Name,
