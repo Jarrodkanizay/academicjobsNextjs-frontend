@@ -102,11 +102,70 @@ html {
       color: #374151;
       line-height: 1.6rem;
     }
-    .text {
+    .text-1-cols {
+      column-count: 1;
+      column-gap: 40px;
+      column-width: 600px;
+    }
+    .text-col-2,
+    .text-2-cols {
+      column-count: 2;
+      column-gap: 40px;
+      column-width: 250px;
+    }
+    .text-col-3,
+    .text-3-cols {
+      column-count: 3;
+      column-gap: 80px;
+      column-width: 340px;
+    }
+    .text,
+    .text-4-cols {
       column-count: 4;
       column-gap: 40px;
       column-width: 270px;
     }
+
+    .blog-post p {
+      line-height: 30px;
+    }
+
+    blockquote {
+      position: relative;
+      font-style: italic;
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      background-color: #f9f9f9;
+      border-left: 5px solid #0078d7; /* Adjust the color as needed */
+    }
+
+    blockquote::before,
+    blockquote::after {
+      content: open-quote;
+      font-size: 2em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+      color: #0078d7; /* Adjust the color as needed */
+    }
+
+    blockquote::after {
+      content: close-quote;
+    }
+
+    blockquote p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .sub-head {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 1.5rem;
+      margin-bottom: 3rem;
+      color: var(--color-primary);
+    }
+
     .faq {
       background-color: var(--bg-faq);
       padding: 1rem;
@@ -365,55 +424,6 @@ html {
     /* AI Recruitment Page */
     .icon-ai svg {
       fill: var(--color-primary) !important;
-    }
-
-    .text-col-2,
-    .text-2-cols {
-      column-count: 2;
-      column-gap: 40px;
-      column-width: 250px;
-    }
-    .text-col-3,
-    .text-3-cols {
-      column-count: 3;
-      column-gap: 50px;
-      column-width: 300px;
-    }
-
-    blockquote {
-      position: relative;
-      font-style: italic;
-      padding: 1rem 1.5rem;
-      margin: 1.5rem 0;
-      background-color: #f9f9f9;
-      border-left: 5px solid #0078d7; /* Adjust the color as needed */
-    }
-
-    blockquote::before,
-    blockquote::after {
-      content: open-quote;
-      font-size: 2em;
-      line-height: 0.1em;
-      margin-right: 0.25em;
-      vertical-align: -0.4em;
-      color: #0078d7; /* Adjust the color as needed */
-    }
-
-    blockquote::after {
-      content: close-quote;
-    }
-
-    blockquote p {
-      margin: 0;
-      font-size: 1rem;
-    }
-
-    .sub-head {
-      font-size: 1.8rem;
-      font-weight: bold;
-      margin-top: 1.5rem;
-      margin-bottom: 3rem;
-      color: var(--color-primary);
     }
 
     .bg-aj {

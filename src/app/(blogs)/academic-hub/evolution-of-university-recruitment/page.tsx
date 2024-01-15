@@ -2,11 +2,11 @@ import blogData from '@/data/blogData.json';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function BlogPosts() {
+export default function BlogPost() {
   const post = blogData[1];
   const content = post.content.split('«r»');
   return (
-    <main className="content-grid">
+    <main className="blog-post content-grid">
       <div className="hero max-h-fit full-width bg-slate-200 py-8 mb-16">
         <div className="container mx-auto">
           <div className="hero-content flex-col lg:flex-row-reverse">
@@ -29,11 +29,11 @@ export default function BlogPosts() {
       </div>
       <h3>By {post.author}</h3>
       <time className="mb-8">{post.published_at}</time>
-      {content.map((content, index) => (
-        <p key={index} className="mb-4">
-          {content}
-        </p>
-      ))}
+      <div className="text-3-cols">
+        {content.map((content, index) => (
+          <p key={index}>{content}</p>
+        ))}
+      </div>
     </main>
   );
 }
