@@ -74,8 +74,9 @@ export default function Page() {
         <div>
         
         <p className="px-7 mb-4 mt-1">
-        Academic Jobs Africa is a platform that connects you with the best academic employers and candidates. You can browse through hundreds of job listings in various disciplines and fields, such as engineering, health sciences, humanities, social sciences, education, and more. You can also filter your search by country, region, institution type, salary range, and contract duration.
-        </p>
+        Explore what academic positions the United Kingdom has to offer through Academic Jobs! We value the importance of an easy to navigate website where your future academic career path is one click away. Academic Jobs provides an extensive list of opportunities for the future of your career in education, carefully sectioning the top Higher Ed jobs to curate the best fitting position for you. </p>
+        <p className="px-7">
+        The number 1 job board for academia in Africa can help you find your perfect academic job through our services. At Academic Jobs, we value our customers' interests by providing the best career choices possible, making us the best job board for higher education positions globally! </p>
       
         </div>
       </div>
