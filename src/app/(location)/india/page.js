@@ -111,19 +111,9 @@ export default function Page() {
         <div>
         
         <p className="px-7 mb-4 mt-1">
-        As an academic job seeker in India, you can explore various
-                fields of study, such as engineering, technology, mathematics,
-                statistics, economics, business, arts, humanities, social
-                sciences, life sciences, health sciences, and more. You can also
-                choose from different types of academic positions, such as
-                assistant professor, associate professor, professor, lecturer,
-                researcher, postdoctoral fellow, and more. On Academic Jobs
-                India you can also apply for jobs in different types of
-                institutions, such as public universities, private universities,
-                deemed universities, institutes of national importance, central
-                universities, state universities, and more.
-        </p>
-      
+        Discover what academic positions India has to offer through Academic Jobs! We value the importance of an easy to navigate website where your academic career path is one click away. Academic Jobs provides an extensive list of opportunities for the future of your career in education, carefully sectioning the top jobs in education to curate the best fitting position for you. </p>
+        <p className="px-7">
+        The number 1 job board for academics can help you find your dream academic position through our services. At Academic Jobs, we value our customers interests by providing the best career choices possible, making us the best job board for higher education jobs globally!</p>
         </div>
       </div>
    
