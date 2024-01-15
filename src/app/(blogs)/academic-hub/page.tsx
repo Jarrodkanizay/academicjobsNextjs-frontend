@@ -65,7 +65,8 @@ export default function BlogPosts() {
                 {/* <div className="badge badge-secondary">NEW</div> */}
               </h2>
               <h3>By {post.author}</h3>
-              <time>{formatDate(post.published_at)}</time>
+              {/* <time>{formatDate(post.published_at)}</time> */}
+              <time>{post.published_at}</time>
               <p className="h-[130px] relative">
                 {post.summary}
                 <div className="blog-gradient"> </div>
