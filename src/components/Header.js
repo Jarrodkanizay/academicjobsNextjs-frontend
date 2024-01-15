@@ -49,7 +49,7 @@ export default function Header() {
           }}
         />
       </div>
-      <header className={`header ${isNavOpen ? 'show-menu' : ''}`}>
+      <header className= {`header ${isNavOpen ? 'show-menu' : ''} `}>
         <nav>
           {pathname === '/' ? null : (
             <Link href="/" className="hide-mobile static-logo mr-4">
