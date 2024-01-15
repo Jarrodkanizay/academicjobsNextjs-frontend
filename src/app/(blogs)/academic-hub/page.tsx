@@ -3,11 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function BlogPosts() {
-  function formatDate(input: Date) {
-    const date = new Date(input);
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return date.toLocaleDateString('en-US', options);
-  }
+  // function formatDate(input: any) {
+  //   const date = new Date(input);
+  //   const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  //   return date.toLocaleDateString('en-US', options);
+  // }
 
   console.log(formatDate('2023-05-15')); // Outputs: May 15, 2023
   return (
