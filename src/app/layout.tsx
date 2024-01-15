@@ -28,7 +28,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <GoogleAnalytics />
       <body className={`${inter.className} bg-white`}>
         <QueryProvider>
           <Header />
@@ -37,6 +36,7 @@ export default function RootLayout({
           <Footer />
         </QueryProvider>
       </body>
+      <GoogleAnalytics />
     </html>
   );
 }
