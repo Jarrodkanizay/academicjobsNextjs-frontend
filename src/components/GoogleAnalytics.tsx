@@ -1,5 +1,10 @@
-'use client';
-import { useEffect } from 'react';
+declare global {
+  interface Window {
+    ga: any;
+    gtag: any;
+    dataLayer: any[];
+  }
+}
 
 const GoogleAnalytics = () => {
   useEffect(() => {
@@ -15,10 +20,10 @@ const GoogleAnalytics = () => {
     // Initialize Google Analytics
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () {
-      dataLayer.push(arguments);
+      window.dataLayer.push(arguments);
     };
-    gtag('js', new Date());
-    gtag('config', 'G-1VLH0S9KCJ`');
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-1VLH0S9KCJ');
   }, []);
 
   return null; // This component doesn't render anything
