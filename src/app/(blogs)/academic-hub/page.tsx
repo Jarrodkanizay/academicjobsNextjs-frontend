@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function BlogPosts() {
-  function formatDate(input: string) {
+  function formatDate(input: any) {
     const date = new Date(input);
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return date.toLocaleDateString('en-US', options);
