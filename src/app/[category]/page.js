@@ -8,13 +8,21 @@ import JobSearchBox from '@/components/JobSearchBox';
 
 //const Lecturer = () => {
 export default function Page({ params, searchParams }) {
-  console.log("````````````````````params````````````````````")
-  console.log(params)
+  // console.log("````````````````````params````````````````````")
+  // console.log(params)
   let { category } = params
-  console.log(citiesData)
-  console.log(category);
-  category = category?.replace(/-/g, " ");
-  console.log(category); 
+  // console.log(citiesData)
+  // console.log(category);
+  // category = category?.replace(/-/g, " ");
+  // console.log(category);   
+
+  const city = citiesData.find((item) => item.Name === category);
+
+  if (!city) {
+    console.error('City not found');
+    return null; // or return an error component, or handle this situation in another appropriate way
+  }
+
 
   const {
     Name,
@@ -22,7 +30,8 @@ export default function Page({ params, searchParams }) {
     Description,
     Keyword,
     content: content1,
-  } = citiesData.find((item) => item.Name === category);
+  } = city;
+
   let content;
   //console.log(Name);
   //const { logo, company_name, website, company_description, location } = data
