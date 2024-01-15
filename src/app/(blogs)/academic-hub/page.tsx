@@ -9,7 +9,6 @@ export default function BlogPosts() {
   //   return date.toLocaleDateString('en-US', options);
   // }
 
-  console.log(formatDate('2023-05-15')); // Outputs: May 15, 2023
   return (
     <main className="content-grid">
       <div className="hero max-h-fit full-width bg-slate-200 py-8 mb-16">
