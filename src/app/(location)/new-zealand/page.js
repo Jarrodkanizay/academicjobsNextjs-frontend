@@ -77,15 +77,17 @@ export default function Page() {
         <div id="section" className=" full-width py-4 mt-[30rem] full-width mb-[175px] bg-slate-200">
   <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
   <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
-          <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS New Zealand:</span> < br /> Academic, research &&nbsp;science positions locally
-          & globally
-          </h1>
+          <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS New Zealand:</span> < br /> Academic, research &&nbsp;science positions in New Zealand and globally</h1>
           
         <div>
         
         <p className="px-7 mb-4 mt-1">
-        New Zealand is a beautiful and diverse country that offers a high quality of life and a supportive academic environment. Whether you are looking for teaching, research, or leadership positions, you can find a range of academic jobs in New Zealand that match your skills and interests. You can browse through hundreds of academic jobs in New Zealand on this page, covering various fields and disciplines such as education, science, arts, business, and more.
-        </p>
+        Seek university jobs in New Zealand at Academic Jobs, where we list all the best jobs for academics globally! We value the importance of an easy to navigate website where your future academic career path is one click away. Academic Jobs provides an extensive list of opportunities for the future of your career in education, carefully sectioning the top Higher Ed jobs to curate the best fitting position for you.</p>
+        <p className="px-7 md:flex hidden">
+              The number 1 job board for academics can help you find your dream Higher Ed job through our services. At Academic Jobs, we value our customers interests by providing the best career choices possible, making us the best job board for higher education positions globally!
+            </p>
+            <p className="px-7 md:flex hidden">
+            Find all the best jobs here…</p>
       
         </div>
       </div>

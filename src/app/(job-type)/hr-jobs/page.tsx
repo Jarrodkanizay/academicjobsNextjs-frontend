@@ -41,7 +41,7 @@ export default function myPage() {
                <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
               {hr.map(({ Title, Name, }, key) => (
                 <li className={`pb-2 flex ${' md:break' } ${ ' font-bold text-gray-400' }`} key={key}>
-                  <Link href={`/hr/${Name?.replace(/\s+/g, '-')}/`}>{Name}</Link>
+                  <Link href={`/hr-jobs/${Name?.replace(/\s+/g, '-')}/`}>{Name}</Link>
                 </li>
               ))}
             </ul>

@@ -10,7 +10,7 @@ function countryRegionPlural() {
 }
 const Findemployerss = () => {
   return (
-    <main className="content-grid mx-auto">
+    <main className=" mx-auto">
       {/* Hero banner */}
       {/* <section className="full-width h-[300px] bg-sky-200"></section> */}
       {/* <HeroBanner
@@ -39,7 +39,7 @@ const Findemployerss = () => {
       {/* <main className=" mx-auto"> */}
       {/* Hero banner */}
       <section>
-        <div className="hero max-h-fit  bg-slate-200 py-8 mx-auto">
+        <div className=" max-h-fit  bg-slate-200 py-8 mx-auto full-width">
           <div className="container mx-auto">
             <div className="hero-content flex-col xl:flex-row-reverse mx-auto max-w-full">
               <Image
@@ -74,6 +74,7 @@ const Findemployerss = () => {
           </div>
         </div>
       </section>
+      <div className="content-grid">
       <div className=" max-w-screen-2xl mx-auto">
         <h2 className="text-xl font-bold pt-4  px-10 text-[#f4a10c] ">
           ▼ University Region Selection{' '}
@@ -81,7 +82,7 @@ const Findemployerss = () => {
         <div className="cate-group section23 ">
           <div className="widget__text-block">
             <div className="faculty-container  flex flex-wrap  md:gap-8 py-2 px-16 pb-16 text-blue-500">
-              <ul className=" flex flex-wrap gap-10">
+              <ul className=" flex flex-wrap gap-8">
                 <li className="mb-1 mt-4 ">
                   <a href="#section" class="scroll-smooth md:scroll-auto ">
                     {' '}
@@ -1828,6 +1829,7 @@ const Findemployerss = () => {
                   </Link>
                 </li>
               </ul>
+            </div>
             </div>
           </div>
         </main>

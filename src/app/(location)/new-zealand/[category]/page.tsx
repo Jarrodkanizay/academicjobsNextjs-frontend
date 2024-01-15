@@ -1,5 +1,5 @@
 // import Link from 'next/link';
-import adminData from '@/data/admin.json';
+import newzealandpositionsData from '@/data/newzealandpositions.json';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 // import type { Metadata } from 'next';
@@ -15,7 +15,7 @@ type MetadataTypes = {
 export async function generateMetadata({ params, searchParams }: any) {
   // console.log(params)
   let { category } = params;
-  // console.log(adminData)
+  // console.log(newzealandpositionsData)
   // console.log(category);
   category = category?.replace(/-/g, ' ');
   // console.log(category);
@@ -26,7 +26,7 @@ export async function generateMetadata({ params, searchParams }: any) {
     Description = '',
     Keyword = '',
     content: content1 = '',
-  } = adminData.find((item) => item.Name === category) || {};
+  } = newzealandpositionsData.find((item) => item.Name === category) || {};
 
   return {
     title: Title,
@@ -40,7 +40,7 @@ export default function Page({ params, searchParams }: any) {
   // console.log('````````````````````params````````````````````');
   // console.log(params);
   let { category } = params;
-  // console.log(adminData);
+  // console.log(newzealandpositionsData);
   // console.log(category);
   category = category?.replace(/-/g, ' ');
   // console.log(category);
@@ -51,7 +51,7 @@ export default function Page({ params, searchParams }: any) {
     Description = '',
     Keyword = '',
     content: content1 = '',
-  } = adminData.find((item) => item.Name === category) || {};
+  } = newzealandpositionsData.find((item) => item.Name === category) || {};
 
   let content;
   //console.log(Name);
@@ -59,7 +59,7 @@ export default function Page({ params, searchParams }: any) {
   //console.log(company_description)
   content = (
     <div className="content-grid flex-col gap-2">
-      {/* <Link className="text-[#f4a10c] " href="/admin/">
+      {/* <Link className="text-[#f4a10c] " href="/newzealandpositions/">
         View all Lecturer Jobs →
       </Link> */}
 
