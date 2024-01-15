@@ -24,8 +24,9 @@ export default function myPage() {
             <div className="">
             
             <p className="px-7 mb-4 mt-1">
-             Discover flexibility to align your professional pursuits with your lifestyle choices. Find the ideal remote job transcending geographical boundaries. Join us in embracing a future where your workspace is as flexible as your ambitions. Redefine your career through our comprehensive remote job platform, unleashing boundless possibilities wherever you choose your path to be.
-            </p>
+            Seek all remote uni jobs through Australia’s No.1 job board. Discover flexibility to align your professional pursuits with your lifestyle choices. Find the ideal remote job transcending geographical boundaries. Join us in embracing a future where your workspace is as flexible as your ambitions</p>
+            <p className="px-7 md:flex hidden">
+            The best job board in Australia will help you find your dream remote position. Redefine your career through our comprehensive remote job platform, unleashing boundless possibilities wherever you choose your path to be.</p>
          
             </div>
           </div>
