@@ -8,7 +8,7 @@ const GoogleAnalytics = () => {
 
     // Add Google Analytics script
     const script = document.createElement('script');
-    script.src = `https://www.googletagmanager.com/gtag/js?id=G-1VLH0S9KCJ``;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=G-1VLH0S9KCJ`;
     script.async = true;
     document.head.appendChild(script);
 
