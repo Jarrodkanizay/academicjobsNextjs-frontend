@@ -19,7 +19,9 @@ export default function myPage() {
               Academic Casual Jobs
               </h1>
               <p>
-              Dive into a new job adventure with our casual job search platform! Whether you're a student or a seasoned professional, discover flexible gigs tailored to your skills and schedule. From remote positions to vibrant on-site roles, we've curated diverse opportunities just for you. Join our community and connect with employers who value your unique talents. Simplify your job search, take control of your work-life balance, and find your dream gig in just a few clicks. Your next exciting opportunity awaits – let's make it happen together!</p>
+              Seek all casual uni jobs through Australia’s best job board. Whether you're a student or a seasoned professional, discover flexible gigs tailored to your skills and schedule. Dive into a new job adventure with our casual job search platform!</p>
+              <p className="px-7 md:flex hidden">
+              The No. 1 job board for part-time jobs in Australia. Join our community and connect with employers who value your unique talents. Simplify your job search, take control of your work-life balance, and find your dream gig in just a few clicks. Your next exciting opportunity awaits – let's make it happen together!</p>
 
               <JobSearchBox/>
               <SearchResults q={{ q: "casual" || 0 }} />
