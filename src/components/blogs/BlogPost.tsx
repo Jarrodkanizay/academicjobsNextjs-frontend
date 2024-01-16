@@ -21,9 +21,9 @@ const BlogPost = ({
   let content: string[] = [];
 
   if (post.content) {
-    const content = post.content.split('\n');
+    content = post.content.split('\n');
   } else {
-    const content = [];
+    content = [];
   }
 
   return (
