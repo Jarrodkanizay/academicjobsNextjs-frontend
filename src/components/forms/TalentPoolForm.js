@@ -52,7 +52,7 @@ const TalentPoolForm = () => {
   return (
 
     
-    <form   className="mt-4 " onSubmit={handleSubmit(onSubmit)}>
+    <form className="mt-4 " onSubmit={handleSubmit(onSubmit)}>
        <h3 className="underline-full mb-6">Your Details</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* First name */}
