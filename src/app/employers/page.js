@@ -2,9 +2,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroBanner from '@/components/HeroBanner';
-import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
+
+export const metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
     absolute: 'Find Academic Employers - #1 for Higher Ed Jobs', //Option 2 overrides the title in layout.tsx
