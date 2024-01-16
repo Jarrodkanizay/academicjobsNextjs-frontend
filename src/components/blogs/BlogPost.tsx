@@ -1,5 +1,5 @@
 import HeroBanner from '@/components/HeroBanner';
-import BlogPostProps from '@/types/types';
+import { BlogPostTypes } from '@/types/types';
 
 const BlogPost = ({
   post = {
@@ -17,7 +17,7 @@ const BlogPost = ({
     content: '',
   },
   columns = 3,
-}: BlogPostProps) => {
+}: BlogPostTypes) => {
   const content = post.content.split('\n');
 
   return (
