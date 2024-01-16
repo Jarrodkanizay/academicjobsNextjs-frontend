@@ -1,4 +1,4 @@
-export const blogPosts = [
+export const blogData = [
   {
     status: `published`,
     title: `Unveiling the Pinnacle: The Highest-Paid Academic Job in 2023`,

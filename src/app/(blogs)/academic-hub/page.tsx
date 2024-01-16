@@ -1,4 +1,4 @@
-import blogData from '@/data/blogData.ts';
+import { blogData } from '@/data/blogData.ts';
 import Image from 'next/image';
 import Link from 'next/link';
 import BlogPostTypes from '@/types/types';
@@ -24,9 +24,93 @@ export default function BlogPosts() {
         opportunities and practices for academic hub."
         src="/job-ads/recruitment-post-a-job.jpg"
         alt="People immersed in academic blogs at our vibrant Academic Hub"
+        btnPrimaryText="Join our Talent Pool"
+        btnPrimaryURL="/talent-pool"
       />
 
       <h2 className="underline-full mb-8"> Top Academic Hub Posts</h2>
+
+      {blogData ? (
+        <>
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {blogData.slice(0, 6).map((post, index) => (
+              <article key={index} className="card bg-base-100 shadow-xl">
+                <figure>
+                  <Image
+                    src={post.image_url}
+                    alt={post.alt}
+                    width={800}
+                    height={800}
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title grow">
+                    <Link
+                      href={'/academic-hub/' + post.slug}
+                      className="hover:text-orange-500 text-2xl"
+                    >
+                      {post.title}
+                    </Link>
+                  </h2>
+                  <h3>By {post.author}</h3>
+                  <time>{post.published_at}</time>
+                  <p className="h-[130px] relative">
+                    {post.summary}
+                    <div className="blog-gradient"> </div>
+                  </p>
+                  <div className="card-actions justify-end">
+                    <Link
+                      href={'/academic-hub/' + post.slug}
+                      className="btn btn-aj btn-sm"
+                    >
+                      Read more
+                    </Link>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+          <h2 className="underline-full mt-16 mb-8">Academic Blog Posts</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            {blogData.slice(6).map((post, index) => (
+              <article
+                key={index}
+                className="card bg-base-100 shadow-xl image-full"
+              >
+                <figure>
+                  <Image
+                    src={post.image_url}
+                    alt={post.alt}
+                    width={800}
+                    height={800}
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title">
+                    <Link
+                      href={'/academic-hub/' + post.slug}
+                      className="text-white hover:text-orange-500 text-lg"
+                    >
+                      {post.title}
+                    </Link>
+                  </h2>
+                  <div className="card-actions justify-end">
+                    <Link
+                      href={'/academic-hub/' + post.slug}
+                      className="btn btn-aj btn-sm"
+                    >
+                      Read more
+                    </Link>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </>
+      ) : (
+        <div>Loading...</div>
+      )}
+
       {/* <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {blogData.slice(0, 6).map((post, index) => (
           <article key={index} className="card bg-base-100 shadow-xl">
@@ -53,42 +137,6 @@ export default function BlogPosts() {
                 {post.summary}
                 <div className="blog-gradient"> </div>
               </p>
-              <div className="card-actions justify-end">
-                <Link
-                  href={'/academic-hub/' + post.slug}
-                  className="btn btn-aj btn-sm"
-                >
-                  Read more
-                </Link>
-              </div>
-            </div>
-          </article>
-        ))}
-      </div> */}
-      <h2 className="underline-full mt-16 mb-8">Academic Blog Posts</h2>
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-        {blogData.slice(6).map((post, index) => (
-          <article
-            key={index}
-            className="card bg-base-100 shadow-xl image-full"
-          >
-            <figure>
-              <Image
-                src={post.image_url}
-                alt={post.alt}
-                width={800}
-                height={800}
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">
-                <Link
-                  href={'/academic-hub/' + post.slug}
-                  className="text-white hover:text-orange-500 text-lg"
-                >
-                  {post.title}
-                </Link>
-              </h2>
               <div className="card-actions justify-end">
                 <Link
                   href={'/academic-hub/' + post.slug}
