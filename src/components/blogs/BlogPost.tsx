@@ -18,7 +18,7 @@ const BlogPost = ({
   },
   columns = 3,
 }: BlogPostProps) => {
-  const content = post.content.split('«r»');
+  const content = post.content.split('\n');
 
   return (
     <main className="blog-post content-grid">
