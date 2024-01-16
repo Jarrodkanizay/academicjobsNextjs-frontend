@@ -4,14 +4,18 @@ export const regionData = [
     Title: `Lecturing Jobs in India`,
     Description: `See more about Lecturer Academic Jobs India by perusing the list of available higher education lecturer roles on our website.`,
     Keyword: `Lecturer Academic Jobs India`,
-    content: `Discover your perfect lecturing position through India’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top Indian universities. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.<r>The No.1 job board for jobs in education. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.<r>Find all the best lecturing jobs here…`,
+    content: `Discover your perfect lecturing position through India’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top Indian universities. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+The No.1 job board for jobs in education. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.
+Find all the best lecturing jobs here…`,
   },
   {
     Name: `research`,
     Title: `Research Jobs in India`,
     Description: `Do you take pleasure in generating novel concepts and resolving real-world problems? If yes, you might like to apply for a researcher position posted on Research Academic Jobs India to one of the top universities.`,
     Keyword: `Academic Research Jobs India`,
-    content: `Find your dream research position through the best Indian job board, Academic Jobs! At Academic Jobs we offer the most renowned research jobs at the top Indian universities. Positions as an academic researcher will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.<r>The No.1 job board for jobs in education in India. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you!<r>Find all the best research jobs here…`,
+    content: `Find your dream research position through the best Indian job board, Academic Jobs! At Academic Jobs we offer the most renowned research jobs at the top Indian universities. Positions as an academic researcher will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+The No.1 job board for jobs in education in India. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you!
+Find all the best research jobs here…`,
   },
 
   {
@@ -20,7 +24,9 @@ export const regionData = [
     Title: `Professor Jobs in India`,
     Description: `Depending on the organisation and degree of experience, Professor Academic Jobs India may provide a wide choice of disciplines and specialisations.`,
     Keyword: `Academic Professor Jobs India`,
-    content: `Find your dream professor position through the best Indian job board, Academic Jobs! At Academic Jobs we offer the most renowned professor jobs at the top Indian universities. Positions as an academic professor will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.<r>The No.1 job board for jobs in education in India. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you!<r>Find all the best jobs here…`,
+    content: `Find your dream professor position through the best Indian job board, Academic Jobs! At Academic Jobs we offer the most renowned professor jobs at the top Indian universities. Positions as an academic professor will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+The No.1 job board for jobs in education in India. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you!
+Find all the best jobs here…`,
   },
   {
     Name: `executive`,
@@ -28,7 +34,9 @@ export const regionData = [
     Description:
       "You will be able to support Executive Academic Jobs India's aims and objectives by interacting with competent and committed educators, students, alumni, and other interested parties. ",
     Keyword: `Academic Executive Jobs India`,
-    content: `Find your perfect executive academic position through India’s best job board! At Academic Jobs we offer the most renowned High Ed jobs at the top Indian universities. Positions in executive roles will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.<r>The No.1 job board for jobs in education in India.Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!<r>Find all the best executive jobs here…`,
+    content: `Find your perfect executive academic position through India’s best job board! At Academic Jobs we offer the most renowned High Ed jobs at the top Indian universities. Positions in executive roles will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+The No.1 job board for jobs in education in India.Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!
+Find all the best executive jobs here…`,
   },
   {
     break1: true,
@@ -37,7 +45,9 @@ export const regionData = [
     Description:
       "Promoting your company's cutting-edge procedures and academic standards will allow you to collaborate with a clever and diversified workforce at Admin and Support Academic Jobs India. ",
     Keyword: `Academic Admin Jobs India`,
-    content: `Seek your perfect admin position through India’s best job board! At Academic Jobs we offer the most renowned Higher Ed jobs at the top Indian universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.<r>The No.1 job board for jobs in education in India. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!<r>Find all the best administrative jobs here…`,
+    content: `Seek your perfect admin position through India’s best job board! At Academic Jobs we offer the most renowned Higher Ed jobs at the top Indian universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
+The No.1 job board for jobs in education in India. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
+Find all the best administrative jobs here…`,
   },
 
   {
@@ -46,7 +56,8 @@ export const regionData = [
     Description:
       "A bachelor's degree or above in a related field, such human resources management, is required to be eligible for Human Resources Academic Jobs India. ",
     Keyword: `Academic HR Jobs India`,
-    content: `Discover your perfect human resource position through the top Indian job board, Academic Jobs! At Academic Jobs we offer the most renowned HR jobs at the top Indian universities. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.<r>The No.1 job board for HR professionals in Indian universities. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
+    content: `Discover your perfect human resource position through the top Indian job board, Academic Jobs! At Academic Jobs we offer the most renowned HR jobs at the top Indian universities. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
+The No.1 job board for HR professionals in Indian universities. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
   },
   {
     break1: true,
@@ -54,7 +65,9 @@ export const regionData = [
     Title: `Student Jobs in India`,
     Description: `Are you trying to find a flexible, satisfying job on campus? Examine the hundreds of job postings for students offered by your institution in a variety of departments and fields. Send in your application to Student Jobs on Campus India right now for the opportunity to get priceless work experience and abilities.`,
     Keyword: `Student jobs on campus India`,
-    content: `Find your perfect student position through the top Indian job board, Academic Jobs! At Academic Jobs we offer the most exciting student jobs, for young professionals looking for some extra cash for the weekends. Our job listings offer great hourly rates, flexible hours, and access to many perks and opportunities.<r>The No.1 job board for academic positions for students in India. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!<r>Find all the best student jobs here…`,
+    content: `Find your perfect student position through the top Indian job board, Academic Jobs! At Academic Jobs we offer the most exciting student jobs, for young professionals looking for some extra cash for the weekends. Our job listings offer great hourly rates, flexible hours, and access to many perks and opportunities.
+The No.1 job board for academic positions for students in India. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
+Find all the best student jobs here…`,
   },
 
   {
