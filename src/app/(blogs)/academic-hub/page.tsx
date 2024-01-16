@@ -1,7 +1,7 @@
 import { blogData } from '@/data/blogData';
 import Image from 'next/image';
 import Link from 'next/link';
-import { BlogPostTypes } from '@/types/types';
+// import { BlogPostTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
 
 export default function BlogPosts() {
