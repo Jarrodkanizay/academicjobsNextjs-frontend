@@ -1,5 +1,5 @@
 // import Link from 'next/link';
-import { regionData } from '@/data/usaPositions.ts';
+import { regionData } from '@/data/usaPositions';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 // import type { Metadata } from 'next';
