@@ -37,8 +37,8 @@ const BlogPost = ({
       <h3>By {post.author}</h3>
       <time className="mb-8">{post.published_at || ''}</time>
       <div className={`text-${columns.toString()}-cols`}>
-        {content.map((content, index) => (
-          <p key={index}>{content}</p>
+        {content.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
         ))}
       </div>
     </main>
