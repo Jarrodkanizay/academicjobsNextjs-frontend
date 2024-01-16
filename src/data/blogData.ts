@@ -1,6 +1,161 @@
 export const blogData = [
   {
     status: `published`,
+    title: `Happiness and Academics: Scott Galloway's Algebra of Happiness`,
+    slug: ``,
+    author: `Scott Galloway`,
+    published_at: `16 Oct, 2023`,
+    updated_at: ``,
+    image_url: `/blogs/how-to-be-a-happy-academic.jpg`,
+    alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
+    summary: `Learn how to find happiness in academia from Scott Galloway, a renowned professor and author of The Algebra of Happiness.`,
+    tags: [],
+    keywords: `Academic Happiness. happiness and academics`,
+    content: `Scott Galloway is a professor and author who has written a book called The Algebra of Happiness, where he shares his insights and advice on how to live a fulfilling life. One of his main themes is that happiness is not a destination but a process that involves making choices, taking actions, and finding meaning.
+
+
+
+Academic happiness is a term that refers to the satisfaction and well-being that students and educators experience in their learning and teaching environments. Academic happiness can be influenced by many factors, such as personal goals, interests, motivation, relationships, feedback, support, challenges, and achievements.
+
+
+
+ 
+
+
+
+Using Scott Galloway’s algebra of happiness, we can write about academic happiness in the following way:
+
+Academic happiness = (Meaning + Relationships + Skills) x (Gratitude / Expectations)
+
+
+
+Meaning: This is the sense of purpose and value that students and educators derive from their academic work. Meaning can be found by pursuing topics that are relevant, engaging, and aligned with one’s passions and values. Meaning can also be enhanced by connecting one’s academic work to larger social issues or personal aspirations.
+
+
+
+Relationships: This is the quality and quantity of social connections that students and educators have with their peers, mentors, teachers, and others in their academic community. Relationships can provide support, feedback, collaboration, inspiration, and belonging. Relationships can also foster positive emotions, such as joy, trust, and empathy.
+
+
+
+Skills: This is the level of competence and confidence that students and educators have in their academic abilities. Skills can be developed by setting realistic goals, seeking feedback, practicing deliberately, and overcoming challenges. Skills can also lead to mastery, autonomy, and recognition.
+
+
+
+Gratitude: This is the appreciation and acknowledgment of the positive aspects of one’s academic life. Gratitude can be expressed by thanking others for their help, celebrating one’s achievements, and reflecting on one’s growth. Gratitude can also increase happiness by reducing stress, enhancing optimism, and improving well-being.
+
+
+
+Expectations: This is the level of ambition and aspiration that students and educators have for their academic outcomes. Expectations can be motivating and inspiring, but they can also be unrealistic and stressful. Expectations can also affect happiness by creating a gap between what one wants and what one has.
+
+
+
+According to Scott Galloway’s algebra of happiness, academic happiness can be maximized by finding meaning in one’s academic work, building strong relationships with others in one’s academic community, developing skills that match one’s interests and goals, expressing gratitude for the opportunities and achievements in one’s academic life, and adjusting expectations to be realistic and flexible.`,
+  },
+  {
+    status: `published`,
+    title: `How to Choose the Best University and Career Path in Australia for 2023?`,
+    slug: `choosing-the-best-university-in-australia-for-2023`,
+    author: `Academic Jobs`,
+    published_at: `10 Aug, 2023`,
+    updated_at: `10 Aug, 2023`,
+    image_url: `/blogs/top-academic-jobs-australia.jpg`,
+    alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
+    summary: `Looking for the best academic jobs in Australia? This blog shows the best of faculty, research, and administrative positions at leading universities.`,
+    tags: [],
+    keywords: `Top Academic Jobs Australia. Academic Jobs Australia`,
+    content: `The top Australian university rankings and their top academic jobs are popular questions for students who want to pursue higher education and enjoy a high quality of life. With a diverse and multicultural society, a strong economy, and a beautiful natural environment, Australia offers many opportunities and benefits for academic jobs.
+
+ 
+
+How do you choose the best university and career path in Australia for 2023? There are many factors to consider, such as your academic interests, your career goals, your budget, your location preferences, and your personal preferences. In this blog post, we will provide some tips and insights to help you make an informed decision.
+
+ 
+
+Top Australian University Rankings for 2023
+
+    One of the most common ways to compare universities is to look at their rankings. Rankings are based on various indicators, such as academic reputation, research impact, teaching quality, student satisfaction, employability, internationalization, and innovation. Rankings can give you an overview of the strengths and weaknesses of different universities, as well as their reputation and recognition in the global market.
+
+Australia has 37 top universities, with our top 8 universities in the top 100 worldwide. The top 10 Australian universities are:
+
+ 
+
+University of Melbourne (ranked 34th in the world)
+
+    Monash University (ranked 44th in the world)
+
+    The University of Queensland (ranked 53rd in the world)
+
+    University of Sydney (ranked 54th in the world)
+
+    Australian National University (ranked 59th in the world)
+
+    University of New South Wales (ranked 67th in the world)
+
+    The University of Western Australia (ranked 92nd in the world)
+
+    The University of Adelaide (ranked 118th in the world)
+
+    The University of Technology Sydney (ranked 160th in the world)
+
+    Macquarie University (ranked 195th in the world)
+
+     
+
+These rankings are based on five main categories: teaching (30%), research (30%), citations (30%), international outlook (7.5%), and industry income (2.5%). Each category has several sub-indicators that measure different aspects of university performance. For example, teaching includes indicators such as student-to-staff ratio, doctorate-to-bachelors ratio, doctorates awarded-to-academic staff ratio, institutional income, and reputation survey. Research includes indicators such as research income, research productivity, research reputation survey, and research influence. Citations measure how often a university’s research is cited by other scholars around the world. International outlook includes indicators such as international-to-domestic-student ratio, international-to-domestic-staff ratio, international collaboration, and international reputation survey. Industry income measures how much a university earns from its knowledge transfer activities with industry partners.
+
+While rankings can be useful to compare universities at a glance, they are not the only factor to consider when choosing a university. Rankings do not capture everything that matters to students, such as campus culture, student support services, extracurricular activities, learning environment, social life, and personal fit. Rankings also do not reflect the quality of specific programs or courses within a university. Therefore, it is important to look beyond rankings and do your own research on different universities and their offerings.
+
+ 
+
+Top Academic Jobs Australia 2023
+
+    Another factor to consider when choosing a university and career path is the job market. What are the skills and qualifications that employers are looking for? What are the industries and sectors that are growing and hiring? What are the salaries and benefits that different jobs offer?
+
+Some of the highest-paying jobs in Australia for 2023 include positions in the legal, executive, retail, accountancy & finance, property, energy, construction, sustainability, technology, and healthcare sectors. The top 10 highest-paying jobs in Australia for 2023 according to Hays are:
+
+ 
+
+Legal: Equity Partner (up to $850,000)
+
+    Executive: CEO and MD ($700,000)
+
+    Retail: General Manager (up to $510,000)
+
+    Accountancy & Finance: Head of Treasury ($410,000)
+
+    Property: Development Director (up to $388,000)
+
+    Energy: Project Delivery Director (up to $357,000)
+
+    Construction: Construction Manager (up to $320,000)
+
+    Sustainability: Head of Sustainability (up to $310,000)
+
+    Technology: Chief Technology Officer ($350,000)
+
+    Healthcare: Managing Director/Country Manager in Medical Devices/Pharmaceuticals ($300,000)
+
+     
+
+These salaries are based on the average annual income for each role across different states and territories in Australia. They may vary depending on the size and type of the organisation, the level of experience and expertise, the location and demand of the role, and the negotiation skills of the candidate.
+
+These jobs are not only high-paying but also high-demanding. They require a combination of hard skills, such as technical knowledge, qualifications, and certifications, and soft skills, such as communication, leadership, problem-solving, and creativity. They also require a high level of commitment, responsibility, and performance. Therefore, they are not suitable for everyone, and they may not be aligned with your personal interests, values, and goals.
+
+When choosing a career path, it is important to consider not only the salary, but also the job satisfaction, work-life balance, career progression, and social impact. You should also consider your strengths, passions, and personality. What are you good at? What do you enjoy doing? What kind of work environment suits you best? What kind of impact do you want to make in the world?
+
+ 
+
+Conclusions of Top Academic Jobs Australia
+
+    Choosing the best university and career path in Australia for 2023 is not an easy task. It requires careful planning, research, and reflection. It also requires flexibility, adaptability, and resilience. The world is changing rapidly, and so are the education and employment landscapes. You may need to update your skills and qualifications, change your direction or goals, or explore new opportunities along the way.
+
+However, choosing the best university jobs and career path in Australia for 2023 is also an exciting and rewarding journey. It can help you achieve your academic potential, your professional success, and your personal fulfillment. It can also help you contribute to society and the world in a positive and meaningful way.
+
+We hope this blog post has given you some useful tips and insights to help you make an informed decision about your future education and career in Australia. We wish you all the best in your endeavors!`,
+  },
+
+  {
+    status: `published`,
     title: `Unveiling the Pinnacle: The Highest-Paid Academic Job in 2023`,
     slug: `the-highest-paid-academic-job-of-2023`,
     author: `Academic Jobs`,
@@ -123,108 +278,6 @@ If you want to talk to us more about university recruitment in academia, contact
   },
   {
     status: `published`,
-    title: `How to Choose the Best University and Career Path in Australia for 2023?`,
-    slug: `choosing-the-best-university-in-australia-for-2023`,
-    author: `Academic Jobs`,
-    published_at: `10 Aug, 2023`,
-    updated_at: `10 Aug, 2023`,
-    image_url: `/blogs/top-academic-jobs-australia.jpg`,
-    alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
-    summary: `Looking for the best academic jobs in Australia? This blog shows the best of faculty, research, and administrative positions at leading universities.`,
-    tags: [],
-    keywords: `Top Academic Jobs Australia. Academic Jobs Australia`,
-    content: `The top Australian university rankings and their top academic jobs are popular questions for students who want to pursue higher education and enjoy a high quality of life. With a diverse and multicultural society, a strong economy, and a beautiful natural environment, Australia offers many opportunities and benefits for academic jobs.
-
- 
-
-How do you choose the best university and career path in Australia for 2023? There are many factors to consider, such as your academic interests, your career goals, your budget, your location preferences, and your personal preferences. In this blog post, we will provide some tips and insights to help you make an informed decision.
-
- 
-
-Top Australian University Rankings for 2023
-
-    One of the most common ways to compare universities is to look at their rankings. Rankings are based on various indicators, such as academic reputation, research impact, teaching quality, student satisfaction, employability, internationalization, and innovation. Rankings can give you an overview of the strengths and weaknesses of different universities, as well as their reputation and recognition in the global market.
-
-Australia has 37 top universities, with our top 8 universities in the top 100 worldwide. The top 10 Australian universities are:
-
- 
-
-University of Melbourne (ranked 34th in the world)
-
-    Monash University (ranked 44th in the world)
-
-    The University of Queensland (ranked 53rd in the world)
-
-    University of Sydney (ranked 54th in the world)
-
-    Australian National University (ranked 59th in the world)
-
-    University of New South Wales (ranked 67th in the world)
-
-    The University of Western Australia (ranked 92nd in the world)
-
-    The University of Adelaide (ranked 118th in the world)
-
-    The University of Technology Sydney (ranked 160th in the world)
-
-    Macquarie University (ranked 195th in the world)
-
-     
-
-These rankings are based on five main categories: teaching (30%), research (30%), citations (30%), international outlook (7.5%), and industry income (2.5%). Each category has several sub-indicators that measure different aspects of university performance. For example, teaching includes indicators such as student-to-staff ratio, doctorate-to-bachelors ratio, doctorates awarded-to-academic staff ratio, institutional income, and reputation survey. Research includes indicators such as research income, research productivity, research reputation survey, and research influence. Citations measure how often a university’s research is cited by other scholars around the world. International outlook includes indicators such as international-to-domestic-student ratio, international-to-domestic-staff ratio, international collaboration, and international reputation survey. Industry income measures how much a university earns from its knowledge transfer activities with industry partners.
-
-While rankings can be useful to compare universities at a glance, they are not the only factor to consider when choosing a university. Rankings do not capture everything that matters to students, such as campus culture, student support services, extracurricular activities, learning environment, social life, and personal fit. Rankings also do not reflect the quality of specific programs or courses within a university. Therefore, it is important to look beyond rankings and do your own research on different universities and their offerings.
-
- 
-
-Top Academic Jobs Australia 2023
-
-    Another factor to consider when choosing a university and career path is the job market. What are the skills and qualifications that employers are looking for? What are the industries and sectors that are growing and hiring? What are the salaries and benefits that different jobs offer?
-
-Some of the highest-paying jobs in Australia for 2023 include positions in the legal, executive, retail, accountancy & finance, property, energy, construction, sustainability, technology, and healthcare sectors. The top 10 highest-paying jobs in Australia for 2023 according to Hays are:
-
- 
-
-Legal: Equity Partner (up to $850,000)
-
-    Executive: CEO and MD ($700,000)
-
-    Retail: General Manager (up to $510,000)
-
-    Accountancy & Finance: Head of Treasury ($410,000)
-
-    Property: Development Director (up to $388,000)
-
-    Energy: Project Delivery Director (up to $357,000)
-
-    Construction: Construction Manager (up to $320,000)
-
-    Sustainability: Head of Sustainability (up to $310,000)
-
-    Technology: Chief Technology Officer ($350,000)
-
-    Healthcare: Managing Director/Country Manager in Medical Devices/Pharmaceuticals ($300,000)
-
-     
-
-These salaries are based on the average annual income for each role across different states and territories in Australia. They may vary depending on the size and type of the organisation, the level of experience and expertise, the location and demand of the role, and the negotiation skills of the candidate.
-
-These jobs are not only high-paying but also high-demanding. They require a combination of hard skills, such as technical knowledge, qualifications, and certifications, and soft skills, such as communication, leadership, problem-solving, and creativity. They also require a high level of commitment, responsibility, and performance. Therefore, they are not suitable for everyone, and they may not be aligned with your personal interests, values, and goals.
-
-When choosing a career path, it is important to consider not only the salary, but also the job satisfaction, work-life balance, career progression, and social impact. You should also consider your strengths, passions, and personality. What are you good at? What do you enjoy doing? What kind of work environment suits you best? What kind of impact do you want to make in the world?
-
- 
-
-Conclusions of Top Academic Jobs Australia
-
-    Choosing the best university and career path in Australia for 2023 is not an easy task. It requires careful planning, research, and reflection. It also requires flexibility, adaptability, and resilience. The world is changing rapidly, and so are the education and employment landscapes. You may need to update your skills and qualifications, change your direction or goals, or explore new opportunities along the way.
-
-However, choosing the best university jobs and career path in Australia for 2023 is also an exciting and rewarding journey. It can help you achieve your academic potential, your professional success, and your personal fulfillment. It can also help you contribute to society and the world in a positive and meaningful way.
-
-We hope this blog post has given you some useful tips and insights to help you make an informed decision about your future education and career in Australia. We wish you all the best in your endeavors!`,
-  },
-  {
-    status: `published`,
     title: `How to Land Your Dream College Job: A Step-by-Step Guide`,
     slug: ``,
     author: `Academic Jobs`,
@@ -282,58 +335,6 @@ Seek feedback from mentors and colleagues to identify areas for improvement. Emb
 In conclusion, landing your dream job in the field of academics requires a combination of purpose, strategic planning, and a strong dedication to your research and teaching pursuits. By clarifying your academic interests, building a robust network, developing your research profile, tailoring your application materials, preparing for interviews, pursuing postdoctoral opportunities, and embracing continuous learning, you can position yourself as a competitive candidate for academic positions. Stay resilient, persistent, and passionate about your academic journey, and you will be well on your way to achieving your dream job in academia.
 
 If you want to talk to us more about how to land your dream college job, contact us at AcademicJobs.`,
-  },
-  {
-    status: `published`,
-    title: `Happiness and Academics: Scott Galloway's Algebra of Happiness`,
-    slug: ``,
-    author: `Scott Galloway`,
-    published_at: `16 Oct, 2023`,
-    updated_at: ``,
-    image_url: `/blogs/how-to-be-a-happy-academic.jpg`,
-    alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
-    summary: `Learn how to find happiness in academia from Scott Galloway, a renowned professor and author of The Algebra of Happiness.`,
-    tags: [],
-    keywords: `Academic Happiness. happiness and academics`,
-    content: `Scott Galloway is a professor and author who has written a book called The Algebra of Happiness, where he shares his insights and advice on how to live a fulfilling life. One of his main themes is that happiness is not a destination but a process that involves making choices, taking actions, and finding meaning.
-
-
-
-Academic happiness is a term that refers to the satisfaction and well-being that students and educators experience in their learning and teaching environments. Academic happiness can be influenced by many factors, such as personal goals, interests, motivation, relationships, feedback, support, challenges, and achievements.
-
-
-
- 
-
-
-
-Using Scott Galloway’s algebra of happiness, we can write about academic happiness in the following way:
-
-Academic happiness = (Meaning + Relationships + Skills) x (Gratitude / Expectations)
-
-
-
-Meaning: This is the sense of purpose and value that students and educators derive from their academic work. Meaning can be found by pursuing topics that are relevant, engaging, and aligned with one’s passions and values. Meaning can also be enhanced by connecting one’s academic work to larger social issues or personal aspirations.
-
-
-
-Relationships: This is the quality and quantity of social connections that students and educators have with their peers, mentors, teachers, and others in their academic community. Relationships can provide support, feedback, collaboration, inspiration, and belonging. Relationships can also foster positive emotions, such as joy, trust, and empathy.
-
-
-
-Skills: This is the level of competence and confidence that students and educators have in their academic abilities. Skills can be developed by setting realistic goals, seeking feedback, practicing deliberately, and overcoming challenges. Skills can also lead to mastery, autonomy, and recognition.
-
-
-
-Gratitude: This is the appreciation and acknowledgment of the positive aspects of one’s academic life. Gratitude can be expressed by thanking others for their help, celebrating one’s achievements, and reflecting on one’s growth. Gratitude can also increase happiness by reducing stress, enhancing optimism, and improving well-being.
-
-
-
-Expectations: This is the level of ambition and aspiration that students and educators have for their academic outcomes. Expectations can be motivating and inspiring, but they can also be unrealistic and stressful. Expectations can also affect happiness by creating a gap between what one wants and what one has.
-
-
-
-According to Scott Galloway’s algebra of happiness, academic happiness can be maximized by finding meaning in one’s academic work, building strong relationships with others in one’s academic community, developing skills that match one’s interests and goals, expressing gratitude for the opportunities and achievements in one’s academic life, and adjusting expectations to be realistic and flexible.`,
   },
   {
     status: `published`,

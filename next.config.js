@@ -14,6 +14,11 @@ const nextConfig = {
         destination: '/employers',
         permanent: true,
       },
+      {
+        source: '/global/recruitment',
+        destination: '/recruitment',
+        permanent: true,
+      },
     ];
   },
 };

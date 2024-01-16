@@ -1,5 +1,5 @@
 // import Link from 'next/link';
-import { regionData } from '@/data/newzealandPositions.ts';
+import { regionData } from '@/data/newzealandPositions';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 // import type { Metadata } from 'next';
