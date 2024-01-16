@@ -334,22 +334,21 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="https://www.academicjobs.com/employers/johns-hopkins-university/3130/"
+                    href="/jobs/information-technology-faculty/82182"
                     className="text-blue-500 font-bold"
                   >
-                    Visiting Graduate Fellowship in the History of Science and
-                    Technology
+                    Information Technology Faculty
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Johns Hopkins University</Link>
+                    <Link href="">North Central State College</Link>
                   </li>
                   <li>
-                    <Link href="">Baltimore, MD, USA</Link>
+                    <Link href="">2441 Kenwood Circle, Mansfield, OH, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Jan 21, 2023</Link>
+                    <Link href="">Mar 15, 2024</Link>
                   </li>
                 </ul>
               </ul>
