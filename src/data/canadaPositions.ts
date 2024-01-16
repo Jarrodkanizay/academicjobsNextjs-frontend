@@ -1,4 +1,4 @@
-[
+export const regionData = [
   {
     "Name": "lecturer",
     "Title": "Lecturing Jobs in Canada",

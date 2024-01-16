@@ -1,4 +1,4 @@
-[
+export const regionData = [
 
   {
     "Name" : "admin" ,

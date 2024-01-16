@@ -1,4 +1,4 @@
-const data = [
+export const regionData = const data = [
   {
     break1: true,
 

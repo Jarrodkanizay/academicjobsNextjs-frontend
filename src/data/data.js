@@ -1,4 +1,4 @@
-export const blurb = {
+export const regionData = export const blurb = {
   remote: `Step into the future of work with our remote job platform, breaking free from the 9-to-5 routine. Whether you're a seasoned professional or a newcomer, explore tailored opportunities across diverse industries. Escape the confines of a physical office and unlock the potential of working from your own space, reshaping your work-life balance. 
     Discover flexibility to align your professional pursuits with your lifestyle choices. Find the ideal remote job transcending geographical boundaries. Join us in embracing a future where your workspace is as flexible as your ambitions. Redefine your career through our comprehensive remote job platform, unleashing boundless possibilities wherever you choose your path to be. `,
   "full-time": `Are you ready to take the next leap in your career journey? We are actively seeking a dedicated and passionate professional to join our dynamic team in a full-time role. As a key player in our organization, you will have the opportunity to contribute your expertise and make a significant impact. 
