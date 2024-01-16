@@ -1,4 +1,4 @@
-import { blogData } from '@/data/blogData.ts';
+import { blogData } from '@/data/blogData';
 import Image from 'next/image';
 import Link from 'next/link';
 import BlogPostTypes from '@/types/types';
