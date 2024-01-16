@@ -1,16 +1,21 @@
-// import React, { useState, useEffect, useRef } from 'react'
-import Image from 'next/image';
+import type { Metadata } from 'next';
+import SearchResults from '@/components/SearchResults'
+import JobSearchBox from '@/components/JobSearchBox'
 import Link from 'next/link';
-import HeroBanner from '@/components/HeroBanner';
-const countryRegion = 'World';
-function countryRegionPlural() {
-  return countryRegion.toLowerCase().endsWith('s')
-    ? `${countryRegion}'`
-    : `${countryRegion}'s`;
-}
-const Findemployerss = () => {
+
+export const metadata: Metadata = {
+  // title: 'About', //Option 1 replaces the %s in layout.tsx
+  title: {
+    absolute: 'Find Academic Employers - #1 for Higher Ed Jobs', //Option 2 overrides the title in layout.tsx
+  },
+  description:
+    'Browse through our comprehensive list of universities from around the world and find the best one for you. Whether you want to study in Australia, Canada, UK, USA, or anywhere else, we have the information you need to make an informed decision.',
+  keywords: 'Find Universities. Find employers, Find institutions',
+};
+export default function myPage() {
   return (
-    <main className=" mx-auto">
+    <>
+      <main className=" mx-auto">
       {/* Hero banner */}
       {/* <section className="full-width h-[300px] bg-sky-200"></section> */}
       {/* <HeroBanner
@@ -42,13 +47,14 @@ const Findemployerss = () => {
         <div className=" max-h-fit  bg-slate-200 py-8 mx-auto full-width">
           <div className="container mx-auto">
             <div className="hero-content flex-col xl:flex-row-reverse mx-auto max-w-full">
-              <Image
+              <img
                 src="/academic-job-postings/top-universities-worldwide.jpg"
                 className="object-cover object-center h-60 w-96  rounded-xl shadow-2xl mb-8 lg:mb-0"
                 alt="The Top Academic Employers"
                 width={1280}
                 height={534}
               />
+
               <div>
                 <h1 className="text-3xl font-bold text-aj">
                   Find the best universities to work for here... use university
@@ -84,67 +90,67 @@ const Findemployerss = () => {
             <div className="faculty-container  flex flex-wrap  md:gap-8 py-2 px-16 pb-16 text-blue-500">
               <ul className=" flex flex-wrap gap-8">
                 <li className="mb-1 mt-4 ">
-                  <a href="#section" class="scroll-smooth md:scroll-auto ">
+                  <a href="#section" className="scroll-smooth md:scroll-auto ">
                     {' '}
                     United States{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4 ">
-                  <a href="#section1" class="scroll-smooth md:scroll-auto">
+                  <a href="#section1" className="scroll-smooth md:scroll-auto">
                     {' '}
                     Australia{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section2" class="scroll-smooth md:scroll-auto">
+                  <a href="#section2" className="scroll-smooth md:scroll-auto">
                     {' '}
                     United Kingdom{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section3" class="scroll-smooth md:scroll-auto">
+                  <a href="#section3" className="scroll-smooth md:scroll-auto">
                     {' '}
                     Asia{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section3" class="scroll-smooth md:scroll-auto">
+                  <a href="#section3" className="scroll-smooth md:scroll-auto">
                     {' '}
                     Canada{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section4" class="scroll-smooth md:scroll-auto">
+                  <a href="#section4" className="scroll-smooth md:scroll-auto">
                     {' '}
                     Europe{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section5" class="scroll-smooth md:scroll-auto">
+                  <a href="#section5" className="scroll-smooth md:scroll-auto">
                     {' '}
                     South America{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section6" class="scroll-smooth md:scroll-auto">
+                  <a href="#section6" className="scroll-smooth md:scroll-auto">
                     {' '}
                     New Zealand{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section7" class="scroll-smooth md:scroll-auto">
+                  <a href="#section7" className="scroll-smooth md:scroll-auto">
                     {' '}
                     Middle East{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section8" class="scroll-smooth md:scroll-auto">
+                  <a href="#section8" className="scroll-smooth md:scroll-auto">
                     {' '}
                     India{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section9" class="scroll-smooth md:scroll-auto">
+                  <a href="#section9" className="scroll-smooth md:scroll-auto">
                     {' '}
                     Africa{' '}
                   </a>
@@ -745,7 +751,7 @@ const Findemployerss = () => {
                 AUSTRALIA
               </h2>
            
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
                   <ul>
                     <li><h3>ACT</h3></li>
                     <li>
@@ -1018,7 +1024,7 @@ const Findemployerss = () => {
             AFRICA
           </h2>
      
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7  mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7  mb-16">
               <ul>
                 <li><h3>Egypt</h3></li>
                 <li>
@@ -1209,7 +1215,7 @@ const Findemployerss = () => {
             ASIA
           </h2>
           
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>Singapore</h3></li>
                 <li>
@@ -1303,7 +1309,7 @@ const Findemployerss = () => {
           <h2 id="section3" className="underline-full">
             CANADA
           </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>Alberta</h3></li>
                 <li>
@@ -1387,7 +1393,7 @@ const Findemployerss = () => {
             UNITED KINGDOM
           </h2>
       
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>England</h3></li>
                 <li>
@@ -1502,7 +1508,7 @@ const Findemployerss = () => {
           <h2 id="section5" className="underline-full">
             SOUTH AMERICA
           </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>Brazil</h3></li>
                 <li>
@@ -1587,7 +1593,7 @@ const Findemployerss = () => {
           <h2 id="section6" className="underline-full">
             NEW ZEALAND
           </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>North Island</h3></li>
                 <li>
@@ -1640,7 +1646,7 @@ const Findemployerss = () => {
           <h2 id="section7" className="underline-full">
             MIDDLE EAST
           </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>Saudi Arabia</h3></li>
                 <li>
@@ -1708,7 +1714,7 @@ const Findemployerss = () => {
           <h2 id="section8" className="underline-full">
             INDIA
           </h2>
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>Mumbai</h3></li>
                 <li>
@@ -1755,7 +1761,7 @@ const Findemployerss = () => {
           <h2 id="section4" className="underline-full">
             EUROPE
           </h2>
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>France</h3></li>
                 <li>
@@ -1833,6 +1839,6 @@ const Findemployerss = () => {
             </div>
           </div>
         </main>
+    </>
   );
-};
-export default Findemployerss;
+}

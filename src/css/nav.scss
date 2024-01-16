@@ -84,14 +84,15 @@ html {
           /* opacity: 0.75; */
           font-weight: 700;
           /* opacity: 0.75; */
-          color: rgb(244 161 12 / var(--tw-text-opacity));
+  
           font-size: 14px;
+         
+        
+        
         }
 
         .nav-link:hover {
-          background: -webkit-linear-gradient(orange, #eee);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: rgb(244 161 12 / var(--tw-text-opacity));
                     opacity: 1;
         }
 
