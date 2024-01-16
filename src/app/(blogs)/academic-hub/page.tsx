@@ -5,6 +5,7 @@ import BlogPostTypes from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
 
 export default function BlogPosts() {
+  //Get this working tomorrow
   // function formatDate(input: any) {
   //   const date = new Date(input);
   //   const options = { year: 'numeric', month: 'long', day: 'numeric' };
