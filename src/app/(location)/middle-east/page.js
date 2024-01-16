@@ -80,8 +80,10 @@ export default function Page() {
         <div>
         
         <p className="px-7 mb-4 mt-1">
-        Academic Jobs Middle East is a diverse and dynamic website that offers many opportunities for academic professionals. Whether you are interested in teaching, research, or administration, you can find a variety of academic jobs in the middle east that suit your qualifications and goals. You can explore hundreds of academic jobs in the middle east on this page, covering various fields and disciplines such as engineering, humanities, social sciences, health sciences, and more.
-        </p>
+        Explore what academic positions the Middle East has to offer through Academic Jobs! We value the importance of an easy to navigate website where your future academic career path is one click away. Academic Jobs provides an extensive list of opportunities for the future of your career in education, carefully sectioning the top Higher Ed jobs to curate the best fitting position for you.</p>
+        <p className="px-7">
+        The number 1 job board for academics can help you find your dream Higher Ed job through our services. At Academic Jobs, we value our customers interests by providing the best career choices possible, making us the best job board for higher education positions globally!</p>
+         
       
         </div>
       </div>

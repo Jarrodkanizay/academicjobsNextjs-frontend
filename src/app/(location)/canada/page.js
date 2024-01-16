@@ -82,8 +82,10 @@ export default function Page() {
         <div>
         
         <p className="px-7 mb-4 mt-1">
-       Academic jobs is more than just a listing of vacancies for canada. It is also a platform for networking, learning, and career development. Academic jobs is updated daily with new postings from universities, colleges, research institutes, and other organizations across Canada. You can browse by location, discipline, level, type, and keywords to find the best match for your qualifications and interests.
+        Find Canada’s most rewarding academic jobs through the world’s leading job board. Academic Jobs provides an extensive list of opportunities for the future of your career in education, carefully sectioning the top Higher Ed jobs to curate the best fitting position for you. We value the fairness and unity of Canadian citizens, thus reflect these values into our goals as a company with our fair prices and unity of all academic professionals looking for a rewarding career.
         </p>
+        <p className="px-7">
+        Explore further into university Higher Ed jobs in Canada, with us providing university affairs to ensure you have access to support and guidance from the top job board globally. Whether you’re interested in research, teaching, or lecturing, Academic Jobs is the place to rely on when finding your dream academic job. Just a few simple steps are needed to set up a valuable position for yourself and your future!</p>
       
         </div>
       </div>

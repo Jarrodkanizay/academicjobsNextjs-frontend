@@ -72,9 +72,10 @@ export default function Page() {
             </h1>
             <div>
               <p className="px-7 mb-4 mt-1">
-                On Academic Jobs Online find all University Positions in the USA. We have all academic jobs online job for researchers, scientists, university staff, lecturers, professors, and researchers.
-                Find academic jobs in USA colleges and apply to the top universities and institutions with faculty, postdoc or staff roles and more.
-              </p>
+              Explore what academic positions the United States has to offer through Academic Jobs! We value the importance of an easy to navigate website where your future academic career path is one click away. Academic Jobs provides an extensive list of opportunities for the future of your career in education, carefully sectioning the top Higher Ed jobs to curate the best fitting position for you. </p>
+              <p className="px-7 md:flex hidden">
+              The number 1 job board for academics can help you find your dream Higher Ed job through our services. At Academic Jobs, we value our customers interests by providing the best career choices possible, making us the best job board for higher education positions globally!
+            </p>
             </div>
             {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
         <a>▼</a></div> */}

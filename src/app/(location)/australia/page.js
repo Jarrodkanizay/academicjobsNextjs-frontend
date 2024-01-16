@@ -5,11 +5,11 @@ import JobSearchBox from '@/components/JobSearchBox';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
-    absolute: '  Academic Lecturer Jobs',
+    absolute: '  Academic Jobs Australia',
   },
   description:
-    'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',
-  keywords: 'Academic Lecturer Jobs. Lecturer positions',
+    'Browse through hundreds of opportunities in higher education and research across various disciplines and institutions in Australia today. ',
+  keywords: 'Academic Jobs Australia. university jobs Australia, Uni jobs Australia',
 };
 export default function Page() {
   // useEffect(() => {
@@ -107,21 +107,13 @@ export default function Page() {
 
             <div>
               <p className="px-7 mb-4 mt-1">
-                Welcome to Australia's #1university jobs website. You will find
-                all the uni jobs in Australia right here. If you are a
-                researcher, lecturer, professor, HR professional or
-                administrator, you can seek jobs, find the best university jobs,
-                and apply online for any job in your academic or professional
-                field.
+              Australia’s No.1 university job website! Seek uni jobs in Australia at Academic Jobs, where we list all the best jobs for academics globally! Academic Jobs provides an extensive list of opportunities for the future of your career in education, carefully sectioning the top Higher Ed jobs to curate the best fitting position for you.
+
               </p>
               <p className="px-7">
-                Whether you&apos;re an aspiring or established professor,
-                researcher, lecturer, or higher education administrator, our
-                platform offers the most current opportunities in academia
-                globally. Connect with your next career move in the academic
-                sector through our comprehensive online job board. Find your
-                next academic job now!
-              </p>
+              The No.1 job board for academics in Australia for all your uni jobs requirements, from seeking to recruiting, look no further. In just a few simple steps you can be in the running for your dream uni job!</p>
+              <p className="px-7">
+            Find all the best jobs here…</p>
             </div>
           </div>
 

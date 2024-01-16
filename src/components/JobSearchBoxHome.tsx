@@ -59,8 +59,8 @@ export default function JobSearchBox() {
           Search In Your Country
         </button>
       </div>
-      <h2
-        className=" text-[#f4a10c] text-base pr-6"
+      <button
+        className=" text-gray-400 text-base pr-6 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l from-green-400 via-green-400 to-sky-300"
         onClick={async (event: React.FormEvent) => {
           event.preventDefault();
           const a: { q?: string; l?: string } = {};
@@ -76,7 +76,7 @@ export default function JobSearchBox() {
         }}
       >
         Or Search Globally
-      </h2>
+      </button>
     </form>
   );
 }

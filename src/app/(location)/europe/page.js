@@ -73,8 +73,9 @@ export default function Page() {
         <div>
         
         <p className="px-7 mb-4 mt-1">
-        Academic Jobs board is a platform that connects academic universities, institutions and organizations with qualified candidates across Europe. You can browse through hundreds of University Jobs in various disciplines. Whether you are looking for a permanent or a temporary position, a full-time or a part-time role, our academic job board can help you find your dream job in Europe.
-        </p>
+        Discover what academic positions Europe has to offer through Academic Jobs! We value the importance of an easy to navigate website where your future academic career path is one click away. Academic Jobs provides an extensive list of opportunities for the future of your career in education, carefully sectioning the top Higher Ed jobs to curate the best fitting position for you.</p>
+        <p className="px-7">
+        The No.1 job board for academics in Europe, for all your university job requirements, from seeking to recruiting, look no further. At Academic Jobs, we value our customers' interests by providing the best career choices possible, making us the best job board for higher education positions globally.</p>
       
         </div>
       </div>

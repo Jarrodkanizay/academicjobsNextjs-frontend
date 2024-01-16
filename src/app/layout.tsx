@@ -4,6 +4,9 @@ import './globals.scss';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import QueryProvider from '@/lib/store/query-provider';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+
+// import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -33,6 +36,7 @@ export default function RootLayout({
           <Footer />
         </QueryProvider>
       </body>
+      <GoogleAnalytics />
     </html>
   );
 }

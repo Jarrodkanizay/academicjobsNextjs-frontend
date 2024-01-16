@@ -73,7 +73,7 @@ export default function Page({ params, searchParams }: any) {
       </div>
 
       <JobSearchBox q={Name} />
-      <SearchResults q={{ q: 'admin' || 0 }} />
+      <SearchResults q={{ q: Name }} />
     </div>
   );
   return <div className="overflow-y w-full">{content}</div>;

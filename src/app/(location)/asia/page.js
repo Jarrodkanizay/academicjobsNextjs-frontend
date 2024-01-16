@@ -72,9 +72,9 @@ export default function Page() {
         <div>
         
         <p className="px-7 mb-4 mt-1">
-        Academic Jobs Asia has jobs from the best universities, colleges, research institutes, and organizations in Asia. You can browse through hundreds of listings from different countries and regions, such as China, Japan, Korea, India, Singapore, Malaysia, Thailand, Vietnam, Indonesia, and more. You can also filter your search by discipline, level, type, and duration of the position.
-        </p>
-      
+        Discover your dream role in Asian education fields with Academic Jobs. We focus on the importance of uni roles by providing higher education jobs to those in the academic field. By using Academic Jobs, you can excel your position in the university or college field and work with professionals across all educational arenas in Asia.</p>
+        <p className="px-7">
+        By finding an academic position through us, you can mark the start of your dream career path. Our jobs provided from Asia’s highest ranked universities are located across Singapore, Hong Kong, China, South Korea and more, providing endless academic opportunities for all.</p>
         </div>
       </div>
       </div>

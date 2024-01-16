@@ -27,7 +27,7 @@ export default function myPage() {
             />
             <div>
               <h1 className="text-4xl">
-                About AJ: all the Best University Jobs
+              #1 Job Board for Higher Ed Jobs
               </h1>
               <h2 className="py-6">
                 Find the best academic positions in your city,
