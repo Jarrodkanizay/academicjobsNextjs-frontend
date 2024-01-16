@@ -2,6 +2,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroBanner from '@/components/HeroBanner';
+
+
+export const metadata = {
+  // title: 'About', //Option 1 replaces the %s in layout.tsx
+  title: {
+    absolute: 'Find Academic Employers - #1 for Higher Ed Jobs', //Option 2 overrides the title in layout.tsx
+  },
+  description:
+    'Browse through our comprehensive list of universities from around the world and find the best one for you. Whether you want to study in Australia, Canada, UK, USA, or anywhere else, we have the information you need to make an informed decision.',
+  keywords: 'Find Universities. Find employers, Find institutions',
+};
+
 const countryRegion = 'World';
 function countryRegionPlural() {
   return countryRegion.toLowerCase().endsWith('s')
@@ -84,67 +96,67 @@ export default function myPage() {
             <div className="faculty-container  flex flex-wrap  md:gap-8 py-2 px-16 pb-16 text-blue-500">
               <ul className=" flex flex-wrap gap-8">
                 <li className="mb-1 mt-4 ">
-                  <a href="#section" class="scroll-smooth md:scroll-auto ">
+                  <a href="#section" className="scroll-smooth md:scroll-auto ">
                     {' '}
                     United States{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4 ">
-                  <a href="#section1" class="scroll-smooth md:scroll-auto">
+                  <a href="#section1" className="scroll-smooth md:scroll-auto">
                     {' '}
                     Australia{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section2" class="scroll-smooth md:scroll-auto">
+                  <a href="#section2" className="scroll-smooth md:scroll-auto">
                     {' '}
                     United Kingdom{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section3" class="scroll-smooth md:scroll-auto">
+                  <a href="#section3" className="scroll-smooth md:scroll-auto">
                     {' '}
                     Asia{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section3" class="scroll-smooth md:scroll-auto">
+                  <a href="#section3" className="scroll-smooth md:scroll-auto">
                     {' '}
                     Canada{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section4" class="scroll-smooth md:scroll-auto">
+                  <a href="#section4" className="scroll-smooth md:scroll-auto">
                     {' '}
                     Europe{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section5" class="scroll-smooth md:scroll-auto">
+                  <a href="#section5" className="scroll-smooth md:scroll-auto">
                     {' '}
                     South America{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section6" class="scroll-smooth md:scroll-auto">
+                  <a href="#section6" className="scroll-smooth md:scroll-auto">
                     {' '}
                     New Zealand{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section7" class="scroll-smooth md:scroll-auto">
+                  <a href="#section7" className="scroll-smooth md:scroll-auto">
                     {' '}
                     Middle East{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section8" class="scroll-smooth md:scroll-auto">
+                  <a href="#section8" className="scroll-smooth md:scroll-auto">
                     {' '}
                     India{' '}
                   </a>
                 </li>
                 <li className="mb-1 mt-4">
-                  <a href="#section9" class="scroll-smooth md:scroll-auto">
+                  <a href="#section9" className="scroll-smooth md:scroll-auto">
                     {' '}
                     Africa{' '}
                   </a>
@@ -745,7 +757,7 @@ export default function myPage() {
                 AUSTRALIA
               </h2>
            
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
                   <ul>
                     <li><h3>ACT</h3></li>
                     <li>
@@ -1018,7 +1030,7 @@ export default function myPage() {
             AFRICA
           </h2>
      
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7  mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7  mb-16">
               <ul>
                 <li><h3>Egypt</h3></li>
                 <li>
@@ -1209,7 +1221,7 @@ export default function myPage() {
             ASIA
           </h2>
           
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>Singapore</h3></li>
                 <li>
@@ -1303,7 +1315,7 @@ export default function myPage() {
           <h2 id="section3" className="underline-full">
             CANADA
           </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>Alberta</h3></li>
                 <li>
@@ -1387,7 +1399,7 @@ export default function myPage() {
             UNITED KINGDOM
           </h2>
       
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>England</h3></li>
                 <li>
@@ -1502,7 +1514,7 @@ export default function myPage() {
           <h2 id="section5" className="underline-full">
             SOUTH AMERICA
           </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>Brazil</h3></li>
                 <li>
@@ -1587,7 +1599,7 @@ export default function myPage() {
           <h2 id="section6" className="underline-full">
             NEW ZEALAND
           </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>North Island</h3></li>
                 <li>
@@ -1640,7 +1652,7 @@ export default function myPage() {
           <h2 id="section7" className="underline-full">
             MIDDLE EAST
           </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>Saudi Arabia</h3></li>
                 <li>
@@ -1708,7 +1720,7 @@ export default function myPage() {
           <h2 id="section8" className="underline-full">
             INDIA
           </h2>
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>Mumbai</h3></li>
                 <li>
@@ -1755,7 +1767,7 @@ export default function myPage() {
           <h2 id="section4" className="underline-full">
             EUROPE
           </h2>
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
                 <li><h3>France</h3></li>
                 <li>

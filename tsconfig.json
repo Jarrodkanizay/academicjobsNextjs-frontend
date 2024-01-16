@@ -31,6 +31,6 @@
     "src/components/Header.js",
     "src/components/forms/TalentPoolForm.js",
     "src/components/forms/InputBlock2qq.js"
-  ],
+, "src/app/(location)/employers/page.js"  ],
   "exclude": ["node_modules"]
 }

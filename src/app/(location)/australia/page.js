@@ -19,7 +19,7 @@ export default function Page() {
     <div>
       <div className="pt-[8rem] flex flex-col items-center justify-center">
         <Image
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-australia-min.png"
+          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-au.gif"
           alt="AcademicJobs Logo"
           className="  mb-[1rem] "
           width={330}
@@ -27,6 +27,8 @@ export default function Page() {
         />
       </div>
       <JobSearchBox l="Australia" />
+
+
       <div className=" mt-[10rem] ">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
@@ -94,7 +96,7 @@ export default function Page() {
       <div className="content-grid mx-auto">
         <div
           id="section"
-          className="bg-slate-200 full-width py-4 mt-[30rem] full-width mb-[175px]"
+          className="bg-slate-200 full-width py-4 mt-[30rem] full-width mb-[90px]"
         >
           <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
             <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
