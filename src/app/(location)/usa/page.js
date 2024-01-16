@@ -98,8 +98,8 @@ export default function Page() {
             <p className="font-semibold"></p>
           </div>
         </div>
-        <h2 className="underline-full">USA Academic Jobs Online: Academia Jobs by University </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
+        <h2 className="underline-full max-w-screen-xl mx-auto">USA Academic Jobs Online: Academia Jobs by University </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 max-w-screen-xl mx-auto">
           <ul>
             <li className='mb-1 '><Link href="/jobs/california/" className='text-[#f4a10c] font-bold'>California</Link></li>
             <li><Link href="/employers/stanford-university/3101/">Stanford University</Link></li>
