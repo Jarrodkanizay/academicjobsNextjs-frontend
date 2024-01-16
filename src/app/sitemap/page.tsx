@@ -10,15 +10,15 @@ import executive from '@/data/executive.json';
 import student from '@/data/student.json';
 import admin from '@/data/admin.json';
 import professor from '@/data/professor.json';
-import { asiaPositions } from '@/data/asiaPositions';
-import { africaPositions } from '@/data/africaPositions';
-import { canadaPositions } from '@/data/canadaPositions';
-import { europePositions } from '@/data/europePositions';
-import { indiaPositions } from '@/data/indiaPositions';
-import { middleeastPositions } from '@/data/middleeastPositions';
-import { newzealandPositions } from '@/data/newzealandPositions';
-import { southamericaPositions } from '@/data/southamericaPositions';
-import { ukPositions } from '@/data/ukPositions';
+import { regionData as asiaPositions } from '@/data/asiaPositions';
+import { regionData as africaPositions } from '@/data/africaPositions';
+import { regionData as canadaPositions } from '@/data/canadaPositions';
+import { regionData as europePositions } from '@/data/europePositions';
+import { regionData as indiaPositions } from '@/data/indiaPositions';
+import { regionData as middleeastPositions } from '@/data/middleeastPositions';
+import { regionData as newzealandPositions } from '@/data/newzealandPositions';
+import { regionData as southamericaPositions } from '@/data/southamericaPositions';
+import { regionData as ukPositions } from '@/data/ukPositions';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
