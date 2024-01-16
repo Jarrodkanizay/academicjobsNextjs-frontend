@@ -1,23 +1,23 @@
 import HeroBanner from '@/components/HeroBanner';
+import BlogPostProps from '@/types/types';
 
-type BlogPostProps = {
-  post: {
-    status: string;
-    title: string;
-    slug?: string;
-    author?: string;
-    published_at?: string;
-    updated_at?: string;
-    image_url: string;
-    alt: string;
-    summary: string;
-    tags?: string[];
-    keywords: string;
-    content: string;
-  };
-};
-
-const BlogPost = ({ post }: BlogPostProps) => {
+const BlogPost = ({
+  post = {
+    status: 'published',
+    title: '',
+    slug: '',
+    author: '',
+    published_at: '',
+    updated_at: '',
+    image_url: '',
+    alt: '',
+    summary: '',
+    tags: [],
+    keywords: '',
+    content: '',
+  },
+  columns = 3,
+}: BlogPostProps) => {
   const content = post.content.split('«r»');
 
   return (
@@ -28,11 +28,9 @@ const BlogPost = ({ post }: BlogPostProps) => {
         src={post.image_url}
         alt={post.alt}
       />
-      <div className="hero max-h-fit full-width bg-slate-200 py-8 mb-16"></div>
       <h3>By {post.author}</h3>
       <time className="mb-8">{post.published_at}</time>
-      {/* <div className={`text-${columns.toString()}-cols`}> */}
-      <div className={`text-3-cols`}>
+      <div className={`text-${columns.toString()}-cols`}>
         {content.map((content, index) => (
           <p key={index}>{content}</p>
         ))}

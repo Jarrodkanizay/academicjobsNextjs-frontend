@@ -11,7 +11,7 @@
     "Title": "Lecturer Jobs In Australia",
     "Description": "Look through this page's list of open higher education lecturer positions to learn more about Lecturer Academic Jobs Australia.",
     "Keyword": "Lecturer Jobs In Australia",
-    "content": "Seek your perfect lecturing position through Australia’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top Australian universities. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.<r>The No.1 job board for lecturers in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.<r>Find all the best lecturing jobs here…" 
+    "content": "Seek your perfect lecturing position through Australia’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top Australian universities. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.<r>The No.1 job board for lecturers in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.<r>Find all the best lecturing jobs here…"
   },
   {
     "Name": "research",
@@ -55,33 +55,26 @@
     "Keyword": "Executive Academic Jobs Australia, Executive AcademicJobs Australia ",
     "content": "Seek your perfect executive position through Australia’s best job board! At Academic Jobs we offer the most renowned uni jobs at the top Australian universities. Positions in Higher Ed executive roles will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.<r>The No.1 job board for academics in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!<r>Find all the best executive jobs here…"
   },
- {
-  "Name": "admin",
-  "Title": "Admin and Support Jobs In Australia",
-  "Description": "Admin and Support Academic Jobs Australia will provide you the chance to collaborate with a varied and skilled group of individuals while advancing the academic standards and innovative practises of your organisation. ",
-  "Keyword": "Admin and Support Academic Jobs Australia, Admin and Support AcademicJobs ",
-  "content": "Seek your perfect admin position through Australia’s best job board! At Academic Jobs we offer the most renowned uni jobs at the top Australian universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.<r>The No.1 job board for academics in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!<r>Find all the best administrative jobs here…"
-},
-  
-   
-{
-  "Name": "graduate",
-  "Title": "Graduate Jobs In Australia",
-  "Description": "Our site features all the latest graduate opportunities from leading universities across the Australia.  ",
-  "Keyword": "Graduate Jobs Australia ",
-  "content": "Seek your perfect graduate position through Australia’s best job board! At Academic Jobs we offer the most renowned graduate jobs at the top Australian universities. For young professionals looking for industry experience, on-field training, personality development and course credit, at Academic Jobs we aim to help find the most exciting opportunities for new graduates.<r>The No.1 job board for graduates in Australia. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!<r>Find all the best graduate jobs here…"
-},
- {
+  {
+    "Name": "admin",
+    "Title": "Admin and Support Jobs In Australia",
+    "Description": "Admin and Support Academic Jobs Australia will provide you the chance to collaborate with a varied and skilled group of individuals while advancing the academic standards and innovative practises of your organisation. ",
+    "Keyword": "Admin and Support Academic Jobs Australia, Admin and Support AcademicJobs ",
+    "content": "Seek your perfect admin position through Australia’s best job board! At Academic Jobs we offer the most renowned uni jobs at the top Australian universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.<r>The No.1 job board for academics in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!<r>Find all the best administrative jobs here…"
+  },
 
-  "Name": "phd",
-  "Title": "PhD Jobs In Australia",
-  "Description": "Numerous PhD job advertisements from institutions in Australia and other countries are available. Apply now to gain important job experience and skills!",
-  "Keyword": "Academic PhD Jobs Australia",
-  "content": "Seek your perfect PhD position through Australia’s best job board! At Academic Jobs we offer PhD positions at the most renowned universities across Australia and the globe. PhD opportunities will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.<r>The No.1 job board for academics in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programs.<r>Find all the best PhD positions here…"
- }
- 
-
- 
- 
+  {
+    "Name": "graduate",
+    "Title": "Graduate Jobs In Australia",
+    "Description": "Our site features all the latest graduate opportunities from leading universities across the Australia.  ",
+    "Keyword": "Graduate Jobs Australia ",
+    "content": "Seek your perfect graduate position through Australia’s best job board! At Academic Jobs we offer the most renowned graduate jobs at the top Australian universities. For young professionals looking for industry experience, on-field training, personality development and course credit, at Academic Jobs we aim to help find the most exciting opportunities for new graduates.<r>The No.1 job board for graduates in Australia. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!<r>Find all the best graduate jobs here…"
+  },
+  {
+    "Name": "phd",
+    "Title": "PhD Jobs In Australia",
+    "Description": "Numerous PhD job advertisements from institutions in Australia and other countries are available. Apply now to gain important job experience and skills!",
+    "Keyword": "Academic PhD Jobs Australia",
+    "content": "Seek your perfect PhD position through Australia’s best job board! At Academic Jobs we offer PhD positions at the most renowned universities across Australia and the globe. PhD opportunities will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.<r>The No.1 job board for academics in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programs.<r>Find all the best PhD positions here…"
+  }
 ]
- 
