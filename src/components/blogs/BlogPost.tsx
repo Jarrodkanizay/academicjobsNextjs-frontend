@@ -1,3 +1,4 @@
+'use client';
 import HeroBanner from '@/components/HeroBanner';
 
 type BlogPostProps = {
