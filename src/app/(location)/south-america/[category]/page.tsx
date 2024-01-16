@@ -1,10 +1,10 @@
 // import Link from 'next/link';
-import { regionData } from '@/data/australiaPositions.ts';
+import { regionData } from '@/data/southamericaPositions.ts';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 // import type { Metadata } from 'next';
 
-const regionName = 'Australia';
+const regionName = 'South America';
 
 type MetadataTypes = {
   Name?: string | undefined;

@@ -1,83 +1,112 @@
-[
-
-
- {
-  
-   
-  
-  "Name": "lecturer",
-  "Title": "Academic Lecturer Jobs New Zealand",
-  "Description": "To find out more about Lecturer Academic Jobs New Zealand, peruse the list of available vacancies for lecturers in higher education on our website.  ",
-  "Keyword": "Lecturer Academic Jobs New Zealand",
-  "content": "Visit Lecturer Academic Jobs New Zealand to get a list of all available lecture roles. Serving as a professor in an academic setting may provide you the opportunity to work with some of the most creative minds in your field, access first-rate facilities and resources, and establish connections with partners both locally and beyond. In addition to a comfortable workplace and a tonne of amenities, Lecturer Academic Jobs New Zealand provide many fantastic advantages, such a competitive income."
-},
- {
-
-  "Name": "research",
-  "Title": "Academic Research Jobs New Zealand",
-  "Description": "Are you interested in discovering novel insights and solving real-world problems? If yes, you may decide to apply for a researcher position posted on Research Academic Jobs New Zealand to one of the top universities.",
-  "Keyword": "Academic Research Jobs New Zealand",
-  "content": "In their line of work, academic scholars are inventive and creative; they occasionally collaborate on larger projects or work in larger groups. Research Academic Jobs New Zealand requires a PhD or comparable degree in addition to the essential coursework and experience in data analysis, methodology, and communication. Research Academic Jobs New Zealand offers outreach, monitoring, and instruction, depending on the position and contract type."
- },
- 
- {   
-  "break1": true,   
-  "Name": "professor",
-  "Title": "Academic Professor Jobs New Zealand",
-  "Description": "Professor Academic Jobs New Zealand may cover a wide range of topics and disciplines, depending on the organisation and the level of experience. ",
-  "Keyword": "Academic Professor Jobs New Zealand",
-  "content": "Numerous academic disciplines, such as computer science, medicine, engineering, chemistry, and law, are home to Professor Academic Jobs New Zealand. Professorial positions at Academic Jobs New Zealand include teaching, supervising staff and students, conducting original and significant research, publishing in books and academic journals, applying for grants and funding, collaborating with other academics and institutions, engaging with businesses and the community, and taking part in academic governance and administration."
- },
- {
-  "Name": "executive",
-  "Title": "Academic Executive Jobs New Zealand",
-  "Description": "Through your interactions with capable and dedicated teachers, students, alumni, and other interested parties, you will have the opportunity to further the goals and objectives of Executive Academic Jobs New Zealand. ",
-  "Keyword": "Academic Executive Jobs New Zealand",
-  "content": "In New Zealandn higher education, executive academic posts involve administering, supervising, and giving guidance for a particular academic department or function. Decide on the unit's or function's goals and objectives. oversee the division's human and financial resources. oversee academic activities and courses. Ensure that rigorous protocols are adhered to in both research and teaching. Executive Academic Jobs New Zealand supports and nurtures employees as well as learners."
- },
- {
-  "break1": true,   
-  "Name": "admin",
-  "Title": "Academic Admin Jobs New Zealand",
-  "Description": "As you advance the academic standards and state-of-the-art practises of your organisation, you will have the chance to collaborate with a smart and varied team at Admin and Support Academic Jobs New Zealand.    ",
-  "Keyword": "Academic Admin Jobs New Zealand",
-  "content": "Candidates must possess a diploma or higher certification in business administration or a related field, as well as work experience in administrative or support academic roles in New Zealand, in order to be considered for employment. Academic Jobs New Zealand requires strong interpersonal, communication, organisational, and problem-solving skills for its administrative and support jobs. Academic administrators and support personnel need to be aware of applicable laws and regulations, as well as higher education policies and procedures."
-   
-},
- 
- {
-  "Name": "hr jobs",
-  "Title": "Academic HR Jobs New Zealand",
-  "Description": "A bachelor's degree or above in a relevant field, such human resources management, is required to be eligible for Human Resources Academic Jobs New Zealand. ",
-  "Keyword": "Academic HR Jobs New Zealand",
-  "content": "Human Resources Academic Jobs New Zealand focuses on the management and administration of human resources in postsecondary educational institutions. The Human Resources division of Academic Jobs New Zealand is in charge of hiring, payroll, benefits, training and development, and compliance. Academic human resources job descriptions must complement your organization's academic objectives through the development and implementation of HR policies and procedures."
- },
- {
-  "break1": true,   
-  "Name": "student",
-  "Title": "Academic Student Jobs New Zealand",
-  "Description": "Are you trying to find a flexible, rewarding job on campus? Look through the hundreds of student job postings that your school has in a range of departments and fields. Send in your application to Student Jobs on Campus New Zealand right now to gain valuable work experience and skills.",
-  "Keyword": "Student jobs on campus New Zealand",
-  "content": "One of the responsibilities of being a student employee at a university or research centre is working irregular hours or part-time in many departments. Working as academic assistants on campus allows students to enhance their academic and social networks, earn money, obtain practical job experience, and sharpen their employability skills. In New Zealand, student occupations include work in offices, customer service, marketing, event planning, information technology, libraries, research, teaching, and other campus professions."
-   
-
- }
- ,
-
- {
-  "Name" : "faculty" ,
-  "Title": "Academic faculty Jobs New Zealand", "Description": "Our website offers the latest faculty positions from leading New Zealand colleges,", "Keyword": "faculty Academic Jobs New Zealand, faculty AcademicJobs New Zealand", "content": "Learn about academic opportunities in the New Zealand based on your department, university, and area of expertise. Discover the most recent job openings in science, research, and education in the New Zealand."
- },
- {
-   
-  "Name" : "graduate" ,
-  "Title" : "Academic Graduate Jobs New Zealand" , "Description" : "Our site features all the latest graduate opportunities from leading universities across the New Zealand.",
-  "Keyword": "New Zealand Graduate Jobs", "content": "The most recent graduate jobs are available on our website from the top New Zealand colleges. No matter if you would rather work in the United States or overseas, our university partners provide a wide range of fascinating graduate degrees that are ideal for you. Graduate positions are flexible, temporary positions with a range of responsibilities used at research facilities and academic institutions. Graduates in these areas can get a lot of job experience, make money, expand their social and intellectual networks, and become more employable."
- },
+export const regionData = [
   {
-    "Name" : "phd" , "Description" : "A variety of PhD job postings from New Zealand and international universities are available.","Title": "PhD Opportunities in the New Zealand", "content": "PhD opportunities are offered by the reputable universities that are listed on our website. Apply now to get real-world experience and useful skills!  You may apply online right now to be eligible for fantastic PHD degrees in the New Zealand. Our academic institutions are always looking for the best candidates to work on PHDs. Part-time or temporary labour is needed for PhD employment on campus in a variety of departments and activities inside a university or PHD institution.", "Keyword": "Academic PhD Jobs New Zealand."
-  }
+    Name: `faculty`,
+    Title: `Faculty Jobs in New Zealand`,
+    Description: `Look through this page's list of open higher education lecturer positions to learn more about Lecturer Academic Jobs Australia.`,
+    Keyword: `Lecturer Academic Jobs Australia`,
+    content: `Seek your perfect faculty position through New Zealand’s best job board! At Academic Jobs we offer the most renowned uni jobs at the top universities in New Zealand. Positions in academic faculty will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
  
+    The No.1 job board for uni jobs in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top faculty jobs to find the best position for you!
+     
+    Find all the best academic faculty jobs here…`,
+  },
+  {
+    Name: `lecturer`,
+    Title: `
+    Lecturing Jobs in New Zealand`,
+    Description: `Look through this page's list of open higher education lecturer positions to learn more about Lecturer Academic Jobs Australia.`,
+    Keyword: `Lecturer Jobs In Australia`,
+    content: `Seek your perfect lecturing position through New Zealand’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top universities in New Zealand. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
  
-]
+    The No.1 job board for lecturers in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.
+     
+    Find all the best lecturing jobs here…`,
+  },
+  {
+    Name: `research`,
+    Title: `Research Jobs in New Zealand`,
+    Description: `Do you enjoy learning new things and finding solutions to practical issues? If yes, you may consider applying to one of the best institutions for a researcher post onResearch Academic Jobs Australia.`,
+    Keyword: `Academic Jobs Australia Research. Researcher positions`,
+    content: `Seek your perfect research position through New Zealand’s best job board! At Academic Jobs we offer the most renowned research jobs at the top universities in New Zealand. Positions as an academic researcher will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
  
+    The No.1 job board for researchers in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you!
+     
+    Find all the best research jobs here…`,
+  },
+  {
+    Name: `professor`,
+    Title: `Professor Jobs in New Zealand`,
+    Description: `Depending on the institution and the area of specialisation, Professor Academic Jobs Australia might encompass a broad range of subjects and disciplines.`,
+    Keyword: `Professor Academic Jobs Australia. professor positions Australia`,
+    content: `Seek your perfect professor position through New Zealand’s best job board! At Academic Jobs we offer the most renowned professor jobs at the top universities in New Zealand. Positions as an academic professor will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for professors in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you!
+     
+    Find all the best jobs here…`,
+  },
+  {
+    Name: `Student`,
+    Title: `Student Jobs in New Zealand`,
+    Description: `Searching for a flexible, fulfilling employment on campus? Examine hundreds of student positions offered by your institution in a range of areas and disciplines. Apply now to get useful job experience and competencies with Student Jobs on Campus Australia.`,
+    Keyword: `Student Jobs on Campus Australia, Student Jobs at University Australia`,
+    content: `Find the perfect student job near you through Academic Jobs New Zealand. At Academic Jobs we offer the most exciting student jobs, for young professionals looking for some extra cash for the weekends. Our job listings offer great hourly rates, flexible hours, and access to many perks and opportunities.
+ 
+    The No.1 job board for students in New Zealand. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
+     
+    Find all the best student jobs here…`,
+  },
+  {
+    Name: `hr jobs`,
+    Title: `Human Resource Jobs in New Zealand`,
+    Description: `Your eligibility for Human Resources Academic Jobs Australia  is contingent upon holding a bachelor's degree or higher in a related discipline, such as human resources management. `,
+    Keyword: `Human Resources Academic Jobs Australia, Human Resources AcademicJobs `,
+    content: `Seek your perfect human resource position through New Zealand’s best job board! At Academic Jobs we offer the most renowned HR jobs at the top universities in New Zealand. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
+ 
+    The No.1 job board for HR professionals in universities in New Zealand. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
+  },
+  {
+    Name: `executive`,
+    Title: `Executive University Jobs in New Zealand`,
+    Description: `Working with bright and committed faculty, students, alumni, and other stakeholders will provide you the chance to support the vision and purpose in Executive Academic Jobs Australia. `,
+    Keyword: `Executive Academic Jobs Australia, Executive AcademicJobs Australia `,
+    content: `Seek your perfect executive position through New Zealand’s best job board! At Academic Jobs we offer the most renowned uni jobs at the top universities in New Zealand. Positions in Higher Ed executive roles will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for academics in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!
+     
+    Find all the best executive jobs here…`,
+  },
+  {
+    Name: `admin`,
+    Title: `Admin Jobs in New Zealand`,
+    Description: `Admin and Support Academic Jobs Australia will provide you the chance to collaborate with a varied and skilled group of individuals while advancing the academic standards and innovative practices of your organisation.`,
+    Keyword: `Admin and Support Academic Jobs Australia, Admin and Support AcademicJobs `,
+    content: `Seek your perfect admin position through New Zealand’s best job board! At Academic Jobs we offer the most renowned uni jobs at the top universities in New Zealand. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for academics in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
+     
+    Find all the best administrative jobs here…`,
+  },
+
+  {
+    Name: `graduate`,
+    Title: `Graduate Jobs In New Zealand`,
+    Description: `Our site features all the latest graduate opportunities from leading universities across the Australia.  `,
+    Keyword: `Graduate Jobs Australia `,
+    content: `Seek your perfect graduate position through New Zealand’s best job board! At Academic Jobs we offer the most renowned graduate jobs at the top New Zealand universities. For young professionals looking for industry experience, on-field training, personality development and course credit, at Academic Jobs we aim to help find the most exciting opportunities for new graduates.
+  
+  The No.1 job board for graduates in New Zealand. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
+  
+  Find all the best graduate jobs here…`,
+  },
+  {
+    Name: `phd`,
+    Title: `PhD Jobs In New Zealand`,
+    Description: `Numerous PhD job advertisements from institutions in Australia and other countries are available. Apply now to gain important job experience and skills!`,
+    Keyword: `Academic PhD Jobs Australia`,
+    content: `Seek your perfect PhD position through New Zealand’s best job board! At Academic Jobs we offer PhD positions at the most renowned universities across New Zealand and the globe. PhD opportunities will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+  
+  The No.1 job board for academics in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programs.
+  
+  Find all the best PhD positions here…`,
+  },
+];

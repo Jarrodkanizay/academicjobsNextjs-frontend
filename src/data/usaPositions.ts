@@ -1,65 +1,113 @@
-[
+export const regionData = [
+  {
+    Name: `faculty`,
+    Title: `Faculty Jobs in United States of America`,
+    Description: `Look through this page's list of open higher education lecturer positions to learn more about Lecturer Academic Jobs Australia.`,
+    Keyword: `Lecturer Academic Jobs Australia`,
+    content: `Seek your perfect faculty position through United States of America’s best job board! At Academic Jobs we offer the most renowned uni jobs at the top universities in the United States of America. Positions in academic faculty will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for uni jobs in the United States of America. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top faculty jobs to find the best position for you!
+     
+    Find all the best academic faculty jobs here…`,
+  },
+  {
+    Name: `lecturer`,
+    Title: `
+    Lecturing Jobs in the United States of America`,
+    Description: `Look through this page's list of open higher education lecturer positions to learn more about Lecturer Academic Jobs Australia.`,
+    Keyword: `Lecturer Jobs In Australia`,
+    content: `Discover your perfect lecturing position through the United States of America’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top universities in the USA. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for lecturers in the USA. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.
+     
+    Find all the best lecturing jobs here…`,
+  },
+  {
+    Name: `research`,
+    Title: `Research Jobs in the United States of America`,
+    Description: `Do you enjoy learning new things and finding solutions to practical issues? If yes, you may consider applying to one of the best institutions for a researcher post onResearch Academic Jobs Australia.`,
+    Keyword: `Academic Jobs Australia Research. Researcher positions`,
+    content: `Find your perfect research position through the United States of America’s best job board! At Academic Jobs we offer the most renowned research jobs at the top universities in the USA. Positions as an academic researcher will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for researchers in the USA. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you!
+     
+    Find all the best research jobs here…`,
+  },
+  {
+    Name: `professor`,
+    Title: `Professor Jobs in the United States of America`,
+    Description: `Depending on the institution and the area of specialisation, Professor Academic Jobs Australia might encompass a broad range of subjects and disciplines.`,
+    Keyword: `Professor Academic Jobs Australia. professor positions Australia`,
+    content: `Discover your perfect professor position through the United States of America’s best job board! At Academic Jobs we offer the most renowned professor jobs at the top universities in the USA. Positions as an academic professor will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for professors in the USA. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you!
+     
+    Find all the best jobs here…
+    `,
+  },
+  {
+    Name: `Student`,
+    Title: `Student Jobs in the United States of America`,
+    Description: `Searching for a flexible, fulfilling employment on campus? Examine hundreds of student positions offered by your institution in a range of areas and disciplines. Apply now to get useful job experience and competencies with Student Jobs on Campus Australia.`,
+    Keyword: `Student Jobs on Campus Australia, Student Jobs at University Australia`,
+    content: `Find the perfect student job near you through Academic Jobs USA. At Academic Jobs we offer the most exciting student jobs, for young professionals looking for some extra cash for the weekends. Our job listings offer great hourly rates, flexible hours, and access to many perks and opportunities.
+ 
+    The No.1 job board for students in the USA. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
+     
+    Find all the best student jobs here…`,
+  },
+  {
+    Name: `hr jobs`,
+    Title: `Human Resource Jobs in the United States of America`,
+    Description: `Your eligibility for Human Resources Academic Jobs Australia  is contingent upon holding a bachelor's degree or higher in a related discipline, such as human resources management. `,
+    Keyword: `Human Resources Academic Jobs Australia, Human Resources AcademicJobs `,
+    content: `Discover your perfect human resource position through the United States of America best job board! At Academic Jobs we offer the most renowned HR jobs at the top universities in the USA. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
+ 
+    The No.1 job board for HR professionals in universities in the USA. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
+  },
+  {
+    Name: `executive`,
+    Title: `Executive University Jobs in the United States of America`,
+    Description: `Working with bright and committed faculty, students, alumni, and other stakeholders will provide you the chance to support the vision and purpose in Executive Academic Jobs Australia. `,
+    Keyword: `Executive Academic Jobs Australia, Executive AcademicJobs Australia `,
+    content: `Find your perfect executive position through the United States of America’s best job board! At Academic Jobs we offer the most renowned High Ed jobs at the top universities in the USA. Positions in executive roles will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for academics in the USA. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!
+     
+    Find all the best executive jobs here…`,
+  },
+  {
+    Name: `admin`,
+    Title: `Admin Jobs in the United States of America`,
+    Description: `Admin and Support Academic Jobs Australia will provide you the chance to collaborate with a varied and skilled group of individuals while advancing the academic standards and innovative practices of your organisation.`,
+    Keyword: `Admin and Support Academic Jobs Australia, Admin and Support AcademicJobs `,
+    content: `Seek your perfect admin position through the United States of America best job board! At Academic Jobs we offer the most renowned Higher Ed jobs at the top universities in the USA. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for academics in the USA. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
+     
+    Find all the best administrative jobs here…`,
+  },
 
   {
-    "Name" : "admin" ,
-    "Title" : "Admin and Support Academia Jobs USA" , 
-    "Description" : "Working in Admin and Support Academia Jobs USA will provide you the chance to collaborate with a varied and skilled group of individuals while advancing the academic standards and innovative practises of your organisation.",
-    "Keyword": "Admin and Support Academia Jobs USA, Admin and Support AcademicJobs", 
-    "content": "Admin and Support Academia Jobs USA requires professional experience in academic administration and assistance, jobs will require a diploma or higher certification in business administration or a similar sector. Outstanding interpersonal, organisational, communication, and problem-solving abilities are also required for jobs in academic administration and assistance. Higher education policies, processes, and relevant rules and regulations must be understood by candidates for Admin and Support Academia Jobs USA."
+    Name: `graduate`,
+    Title: `Graduate Jobs In United States of America`,
+    Description: `Our site features all the latest graduate opportunities from leading universities across the Australia.  `,
+    Keyword: `Graduate Jobs Australia `,
+    content: `Seek your perfect graduate position through United States of America’s best job board! At Academic Jobs we offer the most renowned graduate jobs at the top United States of America universities. For young professionals looking for industry experience, on-field training, personality development and course credit, at Academic Jobs we aim to help find the most exciting opportunities for new graduates.
+  
+  The No.1 job board for graduates in United States of America. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
+  
+  Find all the best graduate jobs here…`,
   },
   {
-    "Name" : "executive" ,
-    "Title" : "Executive Academia Jobs USA" , 
-    "Description" : "With Executive Academia Jobs USA, you will be able to support the vision and purpose through collaborating with bright and committed faculty, students, alumni, and other stakeholders.",
-    "Keyword": "Executive Academia Jobs USA, Executive AcademicJobs", 
-    "content": "Leading, managing, and providing direction for a particular academic department or function within a university is the responsibility of academic executive jobs. Academic executive jobs include setting the department's or function's aims and objectives, supervising academic activities and programmes, guaranteeing the calibre and standards of instruction and research, assisting in the professional and personal growth of employees and students, and managing the organization's finances and human resources."
+    Name: `phd`,
+    Title: `PhD Jobs In United States of America`,
+    Description: `Numerous PhD job advertisements from institutions in Australia and other countries are available. Apply now to gain important job experience and skills!`,
+    Keyword: `Academic PhD Jobs Australia`,
+    content: `Seek your perfect PhD position through United States of America’s best job board! At Academic Jobs we offer PhD positions at the most renowned universities across United States of America and the globe. PhD opportunities will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+  
+  The No.1 job board for academics in United States of America. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programs.
+  
+  Find all the best PhD positions here…`,
   },
-  {
-    "Name" : "research" ,
-    "Title" : "Research Academia Jobs USA" , 
-    "Description" : "Are you passionate in learning new things and finding solutions to challenges in the real world? If so, you might choose to apply to one of the best colleges for a career in Research Academia Jobs USA.",
-    "Keyword": "Research Academia Jobs USA. Researcher positions USA", 
-    "content": "Research Academia Jobs USA inquire novel and creative study in their areas of interest, sometimes as a member of a larger team or project. In addition to having a PhD or a comparable degree, Research Academia Jobs USA possess the necessary training and expertise in data analysis, methodology, and communication. Academia Jobs Research USA can also include outreach, supervision, and teaching, depending on the nature of their contract and function."
-  },
-  {
-    "Name" : "professor" ,
-    "Title" : "Professor Academia Jobs USA" , 
-    "Description" : "The themes and disciplines covered by Professor Academia Jobs USA vary based on the institution and the area of specialisation.",
-    "Keyword": "Professor Academia Jobs USA. professor positions USA", 
-    "content": "Professor positions in law, computer science, medicine, chemistry, engineering, and other fields are examples of Professor Academia Jobs USA. Academic professor positions include teaching, managing staff and students, carrying out original and significant research, publishing in books and academic journals, submitting grant and funding applications, working with other academics and institutions, interacting with business and community partners, and participating in Professor Academia Jobs USA."
-  },
-  {
-    "Name" : "lecturer" ,
-    "Title" : "Lecturer Academia Jobs USA" , 
-    "Description" : "View our list of open lecturer positions on this website to learn more about the academic lecturer positions in higher education.",
-    "Keyword": "Lecturer Academia Jobs USA. Lecturer positions", 
-    "content": "Use Lecturer Academia Jobs USA to find all lecturing positions in the United States of America. Working as an academic professor will provide you with the chance to engage with partners both domestically and internationally, work with some of the brightest minds in your field, and use top-notch facilities and resources. Lecturer Academia Jobs USA displays benefits from high pay, extensive compensation packages, and positive work conditions."
-  },
-  {
-    "Name" : "hr" ,
-    "Title" : "Human Resources Academia Jobs USA" , 
-    "Description" : "You must hold a bachelor's degree or higher in human resources management or a comparable discipline in order to be qualified for Academic Human Resources Jobs on academic jobs.",
-    "Keyword": "Human Resources Academia Jobs USA, Human Resources AcademicJobs", 
-    "content": "Human Resources Academia Jobs USA relate to areas of administration and management of human resources in american higher education. Jobs in academic human resources are in charge of things like hiring, managing performance, employee relations, training and development, payroll, benefits, and compliance. Human resources policies and procedures that support your institution's academic purpose and vision must be developed and implemented for Human Resources Academia Jobs USA. "
-  },
- {
-  "Name" : "graduate" ,
-  "Title" : "Academic Graduate Jobs USA" , 
-  "Description" : "Our site features all the latest graduate opportunities from leading universities across the USA.",
-  "Keyword": "Graduate Jobs USA", 
-  "content": "Our website offers the most up-to-date graduate opportunities from USA's best universities. We have a wide range of exciting graduate opportunities available from our university partners that are perfect for you, whether you want to work in USA or abroad. Graduate posts in a university or research institute are temporary or flexible roles in a variety of areas and capabilities. Graduates in these fields can expand their social and intellectual networks, earn money, gain valuable work experience, and hone their employability skills."
-},
- {
-
-  "Name": "phd", 
-  "Title": "Academic PhD Jobs USA", 
-  "Description": "A plethora of PhD job postings from US and international universities are accessible. Apply right now to get valuable work experience and abilities!",
-  "Keyword": "Academic PhD Jobs USA", 
-  "content": "Our website posts PHD openings from the leading colleges. Because our academic institutions are constantly searching for the best people for PHD positions, apply on our website for incredible PHD possibilities in the USA. PhD roles on campus involve part-time or temporary labour in a number of departments and tasks within a university or PHD centre."
- }
- 
-
- 
- 
-]
- 
+];
