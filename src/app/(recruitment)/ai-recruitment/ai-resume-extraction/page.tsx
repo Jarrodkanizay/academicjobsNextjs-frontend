@@ -70,7 +70,7 @@ export default function myPage() {
       {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
         {/* Card 1 */}
-        <div className="card bg-base-100 shadow-xl">
+        <div className="card bg-slate-100 shadow-xl">
           <figure className="px-10 pt-10">
             <div className="icon-ai">
               <Image
@@ -92,7 +92,7 @@ export default function myPage() {
         </div>
 
         {/* Card 2 */}
-        <div className="card bg-base-100 shadow-xl">
+        <div className="card bg-slate-100 shadow-xl">
           <figure className="px-10 pt-10">
             <div className="icon-ai">
               <svg
@@ -128,7 +128,7 @@ export default function myPage() {
         </div>
 
         {/* Card 3 */}
-        <div className="card bg-base-100 shadow-xl">
+        <div className="card bg-slate-100 shadow-xl">
           <figure className="px-10 pt-10">
             <div className="icon-ai">
               <Image
