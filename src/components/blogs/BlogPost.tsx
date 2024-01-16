@@ -18,7 +18,11 @@ const BlogPost = ({
   },
   columns = 3,
 }: BlogPostTypes) => {
-  const content = post.content.split('\n');
+  if (post.content) {
+    const content = post.content.split('\n');
+  } else {
+    const content = [];
+  }
 
   return (
     <main className="blog-post content-grid">
