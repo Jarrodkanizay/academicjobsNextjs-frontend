@@ -24,11 +24,11 @@ import ukpositions from "@/data/ukpositions.json";
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: '  Diversity Statement Academic Jobs', //Option 2 overrides the title in layout.tsx
+    absolute: '  Sitemap Academic Jobs', //Option 2 overrides the title in layout.tsx
   },
   description:
-    'Discover a diverse and inclusive academic job board site committed to equity and accessibility. Explore opportunities that value and embrace diversity.',
-  keywords: 'Diversity Statement Academic Jobs, AcademicJobs Diversity Statement',
+    'Discover academic job board sitemap committed to equity and accessibility, with thousands of jobs to explore ',
+  keywords: 'Sitemap Academic Jobs, AcademicJobs Sitemap',
 };
 export default function myPage() {
   return (
@@ -37,14 +37,14 @@ export default function myPage() {
 
 
 
-<div className="blurb text-left py-8 text-xl">
+<div className="blurb text-left py-8 text-2xl">
   <h1 className="bg-[#f4a10c] text-white rounded-3xl font-bold mb-2 text-lg md:text-2xl px-7">AcademicJobs Sitemap</h1>
   <div className="newLine mb-4">
     <p className="font-semibold"></p>
     <p className="font-semibold"></p>
   </div>
   <div className="newLine">
-    <p className="px-7">
+    <p className="px-7 ">
       The sitemap of Academic Job provides an overview of the pages and links on the website. Whether you are a job seeker or an employer, you can find everything.</p>
     <p className=""></p>
   </div>
