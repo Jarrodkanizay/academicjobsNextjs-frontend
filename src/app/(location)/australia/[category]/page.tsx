@@ -1,5 +1,5 @@
 // import Link from 'next/link';
-import regionData from '@/data/australiaPositions.json';
+import { regionData } from '@/data/australiaPositions.ts';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 // import type { Metadata } from 'next';
@@ -55,7 +55,7 @@ export default function Page({ params, searchParams }: any) {
     content: content1 = '',
   } = regionData.find((item) => item.Name === category) || {};
 
-  const paras = content1.split('<r>');
+  const paras = content1.split('\r');
 
   let content;
   //console.log(Name);
@@ -63,7 +63,7 @@ export default function Page({ params, searchParams }: any) {
   //console.log(company_description)
   content = (
     <main className="content-grid flex-col gap-2">
-      {/* <Link className="text-[#f4a10c] " href="/canadapositions/">
+      {/* <Link className="text-[#f4a10c] " href="/canada-positions/">
         View all Lecturer Jobs →
       </Link> */}
 
