@@ -1,17 +1,17 @@
 export type BlogPostTypes = {
   post: {
-    status?: string;
-    title?: string;
-    slug?: string;
-    author?: string;
-    published_at?: string;
-    updated_at?: string;
-    image_url?: string;
-    alt?: string;
-    summary?: string;
-    tags?: string[];
-    keywords?: string;
-    content?: string;
+    status?: string | undefined;
+    title?: string | undefined;
+    slug?: string | undefined;
+    author?: string | undefined;
+    published_at?: string | undefined;
+    updated_at?: string | undefined;
+    image_url?: string | undefined;
+    alt?: string | undefined;
+    summary?: string | undefined;
+    tags?: string[] | undefined;
+    keywords?: string | undefined;
+    content?: string | undefined;
   };
-  columns?: number;
+  columns?: number | undefined;
 };
