@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 import Link from 'next/link';
 import PricingTable2 from '@/components/PricingTable2';
 export const metadata = {
@@ -12,14 +11,12 @@ export const metadata = {
   keywords: 'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
 };
 const countryRegion = "India";
-
 function countryRegionPlural() {
   return countryRegion.toLowerCase().endsWith("s")
     ? `${countryRegion}'`
     : `${countryRegion}'s`;
 }
-
-export default function myPage() {
+export default function Page() {
   return (
     <div className="">
       <main>
@@ -48,7 +45,7 @@ export default function myPage() {
                     understand the importance of finding the right talent, and
                     we go above and beyond to help you achieve this.
                   </p>
-                  <Link className="btn btn-aj" to="/job-ads">
+                  <Link className="btn btn-aj" href="/job-ads">
                     Post a Job Today
                   </Link>
                 </div>
@@ -77,7 +74,6 @@ export default function myPage() {
               right candidates effortlessly.
             </p>
           </div>
-
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
             {/* Card 1 */}
@@ -117,7 +113,6 @@ export default function myPage() {
                 </p>
               </div>
             </div>
-
             {/* Card 2 */}
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
@@ -146,7 +141,6 @@ export default function myPage() {
                 </p>
               </div>
             </div>
-
             {/* Card 3 */}
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
@@ -207,7 +201,7 @@ export default function myPage() {
               </p>
               <div className="card-actions justify-end">
                 <Link
-                  to="https://postmyjob.online/academicjobs-job-portal"
+                  href="https://postmyjob.online/academicjobs-job-portal"
                   className="btn btn-aj"
                 >
                   Create a free profile now
@@ -215,7 +209,6 @@ export default function myPage() {
               </div>
             </div>
           </div>
-
           {/* Lowest fees Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
@@ -235,14 +228,13 @@ export default function myPage() {
                 best customer service and support.
               </p>
               <div className="card-actions justify-end">
-                <Link to="/post-job" className="btn btn-aj">
+                <Link href="/post-job" className="btn btn-aj">
                   Check out our prices
                 </Link>
               </div>
             </div>
           </div>
         </section>
-
         {/* Breakout Section */}
         <div className="bg-sky-100 mb-8 mt-16 py-8 px-4">
           <div className="container mx-auto">
@@ -284,7 +276,6 @@ export default function myPage() {
                 </p>
               </div>
             </div>
-
             {/* Card 2 */}
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
@@ -355,7 +346,6 @@ export default function myPage() {
                 </p>
               </div>
             </div>
-
             {/* End Cards */}
           </div>
         </section>
@@ -379,13 +369,12 @@ export default function myPage() {
                 decisions about who will join your organization.
               </p>
               <div className="card-actions justify-end">
-                <Link to="/academic-talent-pool" className="btn btn-aj">
+                <Link href="/academic-talent-pool" className="btn btn-aj">
                   Join our Talent Pool
                 </Link>
               </div>
             </div>
           </div>
-
           {/* Helpful tools and AI make it easy to list Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
@@ -406,7 +395,7 @@ export default function myPage() {
               </p>
               <div className="card-actions justify-end">
                 <Link
-                  to="https://postmyjob.online/academicjobs-job-portal"
+                  href="https://postmyjob.online/academicjobs-job-portal"
                   className="btn btn-aj"
                 >
                   Try it for Yourself
@@ -415,7 +404,6 @@ export default function myPage() {
             </div>
           </div>
         </section>
-
         {/* Contact us CTA */}
         <section className="container mx-auto px-4 mt-12">
           <div className="alert mb-10">
@@ -433,11 +421,11 @@ export default function myPage() {
               ></path>
             </svg>
             <span>
-              ​​Try out Academic Jobs today, not because we are number 1 but for
+              Try out Academic Jobs today, not because we are number 1 but for
               the best customer service and support you will ever experience.
             </span>
             <div>
-              <Link to="/contact-us" className="btn btn-sm btn-aj">
+              <Link href="/contact-us" className="btn btn-sm btn-aj">
                 Experience the Difference
               </Link>
             </div>
@@ -510,7 +498,7 @@ export default function myPage() {
             money…{" "}
             <Link
               className="btn btn-aj"
-              to="https://postmyjob.online/academicjobs-job-portal"
+              href="https://postmyjob.online/academicjobs-job-portal"
             >
               Post a Job Today
             </Link>
@@ -520,4 +508,3 @@ export default function myPage() {
     </div>
   );
 };
-
