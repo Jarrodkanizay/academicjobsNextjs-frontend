@@ -1,11 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-// import countries from '@/data/CountryList.json';
+import TalentPoolForm from '@/components/forms/TalentPoolForm';
 // import ReactQuill from 'react-quill';
 // import 'react-quill/dist/quill.snow.css';
 // import InputBlock2 from '@/components/forms/InputBlock2';
-
 export const metadata: Metadata = {
   title: 'Academic Talent Pool', //Option 1 replaces the %s in layout.tsx
   // title: {
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
   keywords:
     'talent pool, career opportunities, job seekers, find academic networking, academic exposure, professional networking, industry exposure, employment, career growth, job application, talent database, professional development, sign up, global job market',
 };
-export default function myPage() {
+export default function Page() {
   const cardIconSize = 90;
 
   return (
@@ -25,121 +24,9 @@ export default function myPage() {
         {/* Unlock Your Academic Potential!  */}
         Join Our Talent Pool Today!
       </h1>
-
       <div className="talent-pool px-7 container mx-auto py-16 border-[1px] border-slate-500 bg-slate-50 p-4 pt-4 rounded-3xl mt-8 mb-12">
-        <h2 className="mt-8 px-4">
-          Sign up is undergoing some upgrades and will be back online soon!
-        </h2>
-        <p className="mt-4 px-4">
-          Thanks for you understanding{' '}
-          <Link href="/jobs" className="link link-aj">
-            Search jobs
-          </Link>{' '}
-          in the meantime
-        </p>
-        {/* <h4 className="font-semibold text-slate-400 text-2xl mt-4">
-          Talent Pool Sign Up
-        </h4> */}
-        {/* <form
-          // onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col gap-4"
-        >
-          <div className="flex justify-between gap-2">
-            <label>
-              Basic Listing
-              <input
-                type="checkbox"
-                // {...register('basicListing')}
-              />
-            </label>
-            <label>
-              Priority Listing
-              <input
-                type="checkbox"
-                // {...register('priorityListing')}
-              />
-            </label>
-            <label>
-              5 Jobs Pack
-              <input
-                type="checkbox"
-                // {...register('5JobsPack')}
-              />
-            </label>
-            <label>
-              JobElephant Listing
-              <input
-                type="checkbox"
-                // {...register('jobElephantListing')}
-              />
-            </label>
-          </div>
-          <InputBlock2
-            type="text"
-            field="name"
-            label="Name"
-            // register={register}
-            // errors={errors}
-            forceClass=""
-          />
-          <InputBlock2
-            type="text"
-            field="email"
-            label="Email"
-            // register={register}
-            // errors={errors}
-            forceClass=""
-          />
-          <InputBlock2
-            type="text"
-            field="phone"
-            label="Phone"
-            // register={register}
-            // errors={errors}
-            forceClass=""
-          />
-          <InputBlock2
-            type="text"
-            field="organization_name"
-            label="Organization Name"
-            // register={register}
-            // errors={errors}
-            forceClass=""
-          />
-          <InputBlock2
-            type="text"
-            field="title"
-            label="Job Title"
-            // register={register}
-            // errors={errors}
-            forceClass=""
-          />
-          <div>Job Description</div>
-          <div className="">
-            <ReactQuill
-              className="w-full mb-2"
-              // value={editorContent}
-              // onChange={onEditorStateChange}
-            />
-          </div>
-          <InputBlock2
-            type="text"
-            field="jobUrl"
-            label="Job Url"
-            // register={register}
-            // errors={errors}
-            forceClass=""
-          />
-          <button
-            type="submit"
-            className="btn bg-orange-400 ml-auto"
-            // ref={submitRef}
-          >
-            Post My Job Now
-          </button>
-        </form> */}
+        <TalentPoolForm/>
       </div>
-
       <h3 className="text-[#f4a10c] text-xl font-semibold mb-4">
         Checkbox Definitions
       </h3>
@@ -209,7 +96,6 @@ export default function myPage() {
           </p>
         </div>
       </div>
-
       {/* <div className="container mx-auto flex flex-col"> */}
       <h2 className="underline-full">
         Power-up Your Academic Potential: Join Our Dynamic Talent Pool Today!
@@ -217,7 +103,6 @@ export default function myPage() {
       <h3 className="my-5">
         We are looking for people who want to connect and collaborate!
       </h3>
-
       <div className="text-2-cols">
         <p className="mb-6">
           Our Talent Pool network is a rich community to innovate, and
@@ -271,7 +156,6 @@ export default function myPage() {
             </p>
           </div>
         </div>
-
         {/* card 2 */}
         <div className="card bg-slate-100  mb-4 shadow-xl">
           <figure className="px-10 pt-10">
@@ -288,7 +172,6 @@ export default function myPage() {
             <p>Gain visibility through media features and interviews.</p>
           </div>
         </div>
-
         {/* card 3 */}
         <div className="card bg-slate-100 mb-4 shadow-xl">
           <figure className="px-10 pt-10 ">
@@ -308,7 +191,6 @@ export default function myPage() {
             </p>
           </div>
         </div>
-
         {/* card 4  */}
         <div className="card bg-slate-100  mb-4 shadow-xl">
           <figure className="px-10 pt-10">

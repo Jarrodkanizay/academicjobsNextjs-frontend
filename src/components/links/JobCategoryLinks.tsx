@@ -1,6 +1,10 @@
 import Link from 'next/link';
 
-const JobCategoryLinks = () => {
+type JobCategoryLinksProps = {
+  nativeOn?: boolean;
+};
+
+const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
   return (
     <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 px-2">
       <li className="hover:underline">
@@ -27,6 +31,11 @@ const JobCategoryLinks = () => {
       <li className="hover:underline">
         <Link href="/student/">Student{'  '}</Link>
       </li>
+      {nativeOn ? (
+        <li className="hover:underline">
+          <Link href="/Australia/indigenous/">Indigenous</Link>
+        </li>
+      ) : null}
       <li className="hover:underline">
         <Link href="/graduate/"> Graduate{'  '}</Link>
       </li>

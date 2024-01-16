@@ -49,7 +49,7 @@ export default function Header() {
           }}
         />
       </div>
-      <header className={`header ${isNavOpen ? 'show-menu' : ''}`}>
+      <header className= {`header ${isNavOpen ? 'show-menu' : ''} `}>
         <nav>
           {pathname === '/' ? null : (
             <Link href="/" className="hide-mobile static-logo mr-4">
@@ -65,7 +65,7 @@ export default function Header() {
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url="/Global/employers"
+            url="/global/employers"
             icon="/upward-arrow.svg"
             navLink="Top Universities"
             onClick={() => setIsNavOpen(false)}

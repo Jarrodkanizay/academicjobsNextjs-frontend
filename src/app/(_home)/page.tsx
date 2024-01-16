@@ -240,21 +240,21 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="https://www.academicjobs.com/jobs/clinical-instructor-clinical-professor/73147/"
+                    href="/jobs/digital-solutions-manager/82179"
                     className="text-blue-500 font-bold"
                   >
-                    Clinical Instructor - Clinical Professor
+                    Digital Solutions Manager
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">University of Michigan</Link>
+                    <Link href="">California State University, Long Beach</Link>
                   </li>
                   <li>
-                    <Link href="">Ann Arbor, MI, USA</Link>
+                    <Link href="">California State University, Long Beach</Link>
                   </li>
                   <li>
-                    <Link href="">Jan 17, 2024</Link>
+                    <Link href="">Mar 11, 2024</Link>
                   </li>
                 </ul>
               </ul>
@@ -263,21 +263,21 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="https://www.academicjobs.com/jobs/research-specialist-b-c/78662/"
+                    href="/jobs/postdoctoral-fellow-in-comparative-radiobiology-translational-radiopharmaceutical-development-and-boron-neutron-capture-therapy-bnct-/82181"
                     className="text-blue-500 font-bold"
                   >
-                    Research Specialist B/C
+                    Postdoctoral Fellow in Comparative Radiobiology, Translational Radiopharmaceutical Development, and Boron Neutron Capture Therapy (BNCT)
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">University of Pennsylvania</Link>
+                    <Link href="">University of Missouri System</Link>
                   </li>
                   <li>
-                    <Link href="">Philadelphia, PA, USA</Link>
+                    <Link href="">Columbia, Missouri, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Jan 17, 2023</Link>
+                    <Link href="">Mar 11, 2024</Link>
                   </li>
                 </ul>
               </ul>
@@ -311,21 +311,21 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="https://www.academicjobs.com/jobs/open-rank-in-school-counseling-psychology/64801"
+                    href="/jobs/career-advisor-senior-career-advisor/82180"
                     className="text-blue-500 font-bold"
                   >
-                    Research Fellow In Natural Language Processing
+                    Career Advisor/Senior Career Advisor
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">University of Michigan</Link>
+                    <Link href="">University of the Pacific</Link>
                   </li>
                   <li>
-                    <Link href="">Ann Arbor, MI, USA</Link>
+                    <Link href="">Stockton, CA, USA</Link>
                   </li>
                   <li>
-                    <Link href="">17 Jan, 2024</Link>
+                    <Link href="">Mar 11, 2024</Link>
                   </li>
                 </ul>
               </ul>
@@ -334,22 +334,21 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="https://www.academicjobs.com/employers/johns-hopkins-university/3130/"
+                    href="/jobs/information-technology-faculty/82182"
                     className="text-blue-500 font-bold"
                   >
-                    Visiting Graduate Fellowship in the History of Science and
-                    Technology
+                    Information Technology Faculty
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Johns Hopkins University</Link>
+                    <Link href="">North Central State College</Link>
                   </li>
                   <li>
-                    <Link href="">Baltimore, MD, USA</Link>
+                    <Link href="">2441 Kenwood Circle, Mansfield, OH, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Jan 21, 2023</Link>
+                    <Link href="">Mar 15, 2024</Link>
                   </li>
                 </ul>
               </ul>
