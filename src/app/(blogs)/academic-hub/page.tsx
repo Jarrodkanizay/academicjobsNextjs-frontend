@@ -1,10 +1,11 @@
-import { blogData } from '@/data/blogData.ts';
+import { blogData } from '@/data/blogData';
 import Image from 'next/image';
 import Link from 'next/link';
-import BlogPostTypes from '@/types/types';
+// import { BlogPostTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
 
 export default function BlogPosts() {
+  //Get this working tomorrow
   // function formatDate(input: any) {
   //   const date = new Date(input);
   //   const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -34,7 +35,7 @@ export default function BlogPosts() {
         <>
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {blogData.slice(0, 6).map((post, index) => (
-              <article key={index} className="card bg-base-100 shadow-xl">
+              <article key={index} className="card bg-slate-100 shadow-xl">
                 <figure>
                   <Image
                     src={post.image_url}
@@ -75,7 +76,7 @@ export default function BlogPosts() {
             {blogData.slice(6).map((post, index) => (
               <article
                 key={index}
-                className="card bg-base-100 shadow-xl image-full"
+                className="card bg-slate-100 shadow-xl image-full"
               >
                 <figure>
                   <Image
@@ -113,7 +114,7 @@ export default function BlogPosts() {
 
       {/* <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {blogData.slice(0, 6).map((post, index) => (
-          <article key={index} className="card bg-base-100 shadow-xl">
+          <article key={index} className="card bg-slate-100 shadow-xl">
             <figure>
               <Image
                 src={post.image_url}

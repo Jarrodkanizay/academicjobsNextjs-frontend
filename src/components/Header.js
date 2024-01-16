@@ -65,7 +65,7 @@ export default function Header() {
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url="/global/employers"
+            url={`/${countryMappings2[region.toLowerCase()].url}/employers`}
             icon="/upward-arrow.svg"
             navLink="Top Universities"
             onClick={() => setIsNavOpen(false)}
@@ -134,7 +134,7 @@ export default function Header() {
               <details class="w-full text-center bg-gray-300 open:bg-[amber-200] duration-300 rounded-3xl ">
                 <summary class="py-2">Search Globally</summary>
                 <a
-                  className={`md:w-52  dropdown-content z-[1] menu p-2  bg-base-100  w-31 } `}
+                  className={`md:w-52  dropdown-content z-[1] menu p-2  bg-slate-100  w-31 } `}
                 >
                   <div className="  text-gray-900 relative">
                     <ul className=" text-[0.875rem] z-99  min-w-[10rem] py-1 bg-white rounded-lg ">

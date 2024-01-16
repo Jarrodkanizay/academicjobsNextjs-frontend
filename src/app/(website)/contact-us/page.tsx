@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
+import TalentPoolForm from '@/components/forms/TalentPoolForm';
 
 export const metadata: Metadata = {
   title: 'Contact Us', //Option 1 replaces the %s in layout.tsx
@@ -29,8 +30,12 @@ export default function myPage() {
           </h4>
         </div>
 
+        <div className="talent-pool px-7 container mx-auto py-16 border-[1px] border-slate-500 bg-slate-50 p-4 pt-4 rounded-3xl mt-8 mb-12">
+        <TalentPoolForm/>
+      </div>
+
         <div className="full-width bg-slate-100 py-6 px-8 mt-12">
-          <h3 className="text-[#f4a10c] font-bold pb-4">
+          <h3 className="text-[#f4a10c] font-bold pb-4"> 
             GLOBAL OFFICE PHONE NUMBERS
           </h3>
           <div className="grid grid-cols-1 xxs:grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:md:grid-cols-2 gap-8 text-lg">

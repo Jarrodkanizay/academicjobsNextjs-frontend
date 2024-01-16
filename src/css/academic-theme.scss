@@ -40,10 +40,27 @@ html {
 html {
   body,
   body .prose {
+    // display: grid;
+    // grid-template-rows: auto 1fr auto;
+    // min-height: 100vh;
+
+    // main,
+    // div {
+    //   align-self: stretch;
+    // }
+
     margin: 0;
     font-family: var(--font-family) 'Open Sans', sans-serif;
     font-size: var(--fs-400);
     line-height: 1.6;
+
+    footer {
+      // position: relative;
+      // bottom: 0;
+      // width: 100%;
+      border-width: 0 !important;
+      border-radius: 0 !important;
+    }
 
     .desktop-mode {
       display: block;
