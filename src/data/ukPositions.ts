@@ -1,77 +1,112 @@
 export const regionData = [
   {
+    Name: `faculty`,
+    Title: `Faculty Jobs in United Kingdom`,
+    Description: `Look through this page's list of open higher education lecturer positions to learn more about Lecturer Academic Jobs Australia.`,
+    Keyword: `Lecturer Academic Jobs Australia`,
+    content: `Seek your perfect faculty position through United Kingdom's best job board! At Academic Jobs we offer the most renowned uni jobs at the top universities in United Kingdom. Positions in academic faculty will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for uni jobs in United Kingdom's. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top faculty jobs to find the best position for you!
+     
+    Find all the best academic faculty jobs here…`,
+  },
+  {
     Name: `lecturer`,
-    Title: `Academic Lecturer Jobs UK`,
-    Description: `To find out more about Lecturer Academic Jobs UK, browse the list of available higher education lecturer roles on this website.`,
-    Keyword: `Lecturer Academic Jobs UK`,
-    content: `Find every lecture post at Lecturer Academic Jobs UK. Jobs as an academic professor will allow you the ability to interact with partners both locally and abroad, collaborate with some of the most innovative thinkers in your area, and make use of first-rate facilities and resources. Additional benefits of working at Lecturer Academic Jobs UK include competitive compensation, plenty of amenities, and a great work environment.`,
+    Title: `
+    Lecturing Jobs in the United Kingdom`,
+    Description: `Look through this page's list of open higher education lecturer positions to learn more about Lecturer Academic Jobs Australia.`,
+    Keyword: `Lecturer Jobs In Australia`,
+    content: `Discover your perfect lecturing position through the United Kingdom’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top universities in the UK. A career as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for lecturers in the UK. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.
+     
+    Find all the best lecturing jobs here…`,
   },
   {
     Name: `research`,
-    Title: `Academic Research Jobs UK`,
-    Description: `Do you take pleasure in discovering new information and solving real-world problems? If so, you might like to apply for a researcher position on Research Academic Jobs UK at one of the top universities.`,
-    Keyword: `Academic Research Jobs UK`,
-    content: `In their chosen fields, academic scholars do original and imaginative research, sometimes as part of larger teams or projects. Research Academic Jobs UK demands a PhD or equivalent degree in addition to the requisite training and experience in data analysis, methodology, and communication. Research Academic Jobs UK comprises outreach, monitoring, and teaching based on the function and kind of contract.`,
+    Title: `Research Jobs in the United Kingdom`,
+    Description: `Do you enjoy learning new things and finding solutions to practical issues? If yes, you may consider applying to one of the best institutions for a researcher post onResearch Academic Jobs Australia.`,
+    Keyword: `Academic Jobs Australia Research. Researcher positions`,
+    content: `Find your perfect research position through the United Kingdom’s best job board! At Academic Jobs we offer the most renowned research jobs at the top universities in the UK. A career as an academic researcher will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for researchers in the UK. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you!
+     
+    Find all the best research jobs here…`,
   },
   {
-    break1: true,
     Name: `professor`,
-    Title: `Academic Professor Jobs UK`,
-    Description: `A wide number of topics and disciplines may be covered by Professor Academic Jobs UK, depending on the organisation and the area of specialty.`,
-    Keyword: `Academic Professor Jobs UK`,
-    content: `Law, computer science, medicine, chemistry, engineering, and other academic disciplines are among the academic domains in which there are Professor Academic Jobs UK. Professor Academic Jobs UK positions include teaching, supervising staff and students, conducting original and significant research, publishing in books and academic journals, applying for grants and funding, collaborating with other academics and institutions, engaging with businesses and the community, and taking part in academic governance and administration.`,
+    Title: `Professor Jobs in the United Kingdom`,
+    Description: `Depending on the institution and the area of specialisation, Professor Academic Jobs Australia might encompass a broad range of subjects and disciplines.`,
+    Keyword: `Professor Academic Jobs Australia. professor positions Australia`,
+    content: `Discover your perfect professor position through the United Kingdom’s best job board! At Academic Jobs we offer the most renowned professor jobs at the top universities in the UK. A career as an academic professor will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for professors in the UK. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you!
+     
+    Find all the best jobs here…`,
   },
   {
-    Name: `executive`,
-    Title: `Academic Executive Jobs UK`,
-    Description: `Engaging with knowledgeable and dedicated educators, learners, former students, and other interested parties will offer you the opportunity to further the goals and objectives of Executive Academic Jobs UK.`,
-    Keyword: `Academic Executive Jobs UK`,
-    content: `Executive Academic Jobs UK entail overseeing, managing, and providing direction for a certain academic department or function within a higher education establishment. Establish the aims and objectives for the unit or function. Oversee the financial and personnel resources of the unit. Oversee academic initiatives and events. Make sure research and instruction adhere to strict guidelines. Additionally, Executive Academic Jobs UK helps and develops both staff members and students.`,
-  },
-  {
-    break1: true,
-    Name: `admin`,
-    Title: `Academic Admin Jobs UK`,
-    Description: `You will have the opportunity to work with a diverse and talented group of people at Admin and Support Academic Jobs UK, all while enhancing the academic standards and cutting-edge procedures of your company.`,
-    Keyword: `Academic Admin Jobs UK`,
-    content: `Work experience in the field of administrative and support academic roles in UK, together with a diploma or higher certification in business administration or a related field, are requirements for employment. For Admin and Support Academic Jobs UK, strong interpersonal, communication, organisational, and problem-solving skills are required. Academic administrators and support staff members must be familiar with higher education policies and processes, as well as pertinent laws and regulations.`,
+    Name: `Student`,
+    Title: `Student Jobs in the United Kingdom`,
+    Description: `Searching for a flexible, fulfilling employment on campus? Examine hundreds of student positions offered by your institution in a range of areas and disciplines. Apply now to get useful job experience and competencies with Student Jobs on Campus Australia.`,
+    Keyword: `Student Jobs on Campus Australia, Student Jobs at University Australia`,
+    content: `Find the perfect student job near you through Academic Jobs United Kingdom. At Academic Jobs we offer the most exciting student jobs, for young professionals looking for some extra cash for the weekends. Our job listings offer great hourly rates, flexible hours, and access to many perks and opportunities.
+ 
+    The No.1 job board for students in the UK. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
+     
+    Find all the best student jobs here…`,
   },
   {
     Name: `hr jobs`,
-    Title: `Academic HR Jobs UK`,
-    Description:
-      "You must have a bachelor's degree or above in a relevant field, such human resources management, in order to be eligible for Human Resources Academic Jobs UK. ",
-    Keyword: `Academic HR Jobs UK`,
-    content: `Human Resources Academic Jobs UK focuses on the administration and management of HR in higher education institutions. Human Resources Academic Jobs UK is responsible for recruiting, performance management, training and development, payroll, benefits, and compliance. Academic human resources job descriptions call for the development and implementation of HR procedures and policies that uphold the academic objectives of your organisation.`,
+    Title: `Human Resource Jobs in the United Kingdom`,
+    Description: `Your eligibility for Human Resources Academic Jobs Australia  is contingent upon holding a bachelor's degree or higher in a related discipline, such as human resources management. `,
+    Keyword: `Human Resources Academic Jobs Australia, Human Resources AcademicJobs `,
+    content: `Discover your perfect human resource position through the United Kingdom’s best job board! At Academic Jobs we offer the most renowned HR jobs at the top universities in the UK. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
+ 
+    The No.1 job board for HR professionals in universities in the UK. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
   },
   {
-    break1: true,
-    Name: `student`,
-    Title: `Academic Student Jobs UK`,
-    Description: `Are you trying to find a flexible, satisfying job on campus? Look over the hundreds of student postings in various departments and fields that your university is offering. Apply right now to Student Jobs on Campus UK to gain valuable work experience and skills.`,
-    Keyword: `Student jobs on campus UK`,
-    content: `Student employment in a university or research centre involves working irregular hours or part-time in a range of departments. Through academic student employment on campus, students have the opportunity to enhance their academic and social networks, earn money, get practical job experience, and develop employability skills. Student Jobs on Campus UK include office work, customer service, marketing, events planning, information technology, library work, research, teaching, and other student jobs on campus.`,
+    Name: `executive`,
+    Title: `Executive University Jobs in the United Kingdom`,
+    Description: `Working with bright and committed faculty, students, alumni, and other stakeholders will provide you the chance to support the vision and purpose in Executive Academic Jobs Australia. `,
+    Keyword: `Executive Academic Jobs Australia, Executive AcademicJobs Australia `,
+    content: `Find your perfect executive position through the United Kingdom’s best job board! At Academic Jobs we offer the most renowned High Ed jobs at the top universities in the UK. Positions in executive roles will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for academics in the UK. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!
+     
+    Find all the best executive jobs here…`,
+  },
+  {
+    Name: `admin`,
+    Title: `Admin Jobs in the United Kingdom`,
+    Description: `Admin and Support Academic Jobs Australia will provide you the chance to collaborate with a varied and skilled group of individuals while advancing the academic standards and innovative practices of your organisation.`,
+    Keyword: `Admin and Support Academic Jobs Australia, Admin and Support AcademicJobs `,
+    content: `Seek your perfect admin position through the United Kingdom’s best job board! At Academic Jobs we offer the most renowned Higher Ed jobs at the top universities in the UK. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for academics in the UK. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
+     
+    Find all the best administrative jobs here…`,
   },
 
   {
-    Name: `faculty`,
-    Title: `Academic faculty Jobs UK`,
-    Description: `Our website offers the latest faculty positions from leading UK colleges`,
-    Keyword: `faculty Academic Jobs UK, faculty AcademicJobs UK`,
-    content: `  Find information about academic positions in UK according on your field of study, department, and university. Discover the most recent openings in science, research, and education in UK with the help of.`,
-  },
-  {
     Name: `graduate`,
-    Title: `Academic Graduate Jobs UK`,
-    Description: `Our site features all the latest graduate opportunities from leading universities across the UK.`,
-    Keyword: `UK Graduate jobs`,
-    content: `On our website, the top UKn universities have listed their most recent graduate posts. No matter if you would rather work in the United States or overseas, our university partners provide a wide range of fascinating graduate degrees that are ideal for you. Graduate positions, which are transient, adaptable roles with a range of responsibilities, are used by academic institutions and research centres. Graduates in these areas can get a lot of job experience, make money, expand their social and intellectual networks, and become more employable.`,
+    Title: `Graduate Jobs In United Kingdom`,
+    Description: `Our site features all the latest graduate opportunities from leading universities across the Australia.  `,
+    Keyword: `Graduate Jobs Australia `,
+    content: `Seek your perfect graduate position through United Kingdom’s best job board! At Academic Jobs we offer the most renowned graduate jobs at the top United Kingdom universities. For young professionals looking for industry experience, on-field training, personality development and course credit, at Academic Jobs we aim to help find the most exciting opportunities for new graduates.
+  
+  The No.1 job board for graduates in United Kingdom. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
+  
+  Find all the best graduate jobs here…`,
   },
   {
     Name: `phd`,
-    Description: `A variety of PhD job postings from UK and international universities are available.`,
-    content: `PhD opportunities are available in UK from reputable colleges. Apply right now to obtain relevant experience and skills in the real world!  You may apply online right now to be considered for UKn PHD programmes that are excellent. Our academic institutions are always looking for the best candidates to work on PHDs. Part-time or temporary labour is needed for PhD employment on campus in a variety of departments and activities inside a university or PHD institution.`,
-    Keyword: `Academic PhD Jobs UK.`,
-    Title: `Academic PhD Jobs UK.`,
+    Title: `PhD Jobs In United Kingdom`,
+    Description: `Numerous PhD job advertisements from institutions in Australia and other countries are available. Apply now to gain important job experience and skills!`,
+    Keyword: `Academic PhD Jobs Australia`,
+    content: `Seek your perfect PhD position through United Kingdom’s best job board! At Academic Jobs we offer PhD positions at the most renowned universities across United Kingdom and the globe. PhD opportunities will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+  
+  The No.1 job board for academics in United Kingdom. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programs.
+  
+  Find all the best PhD positions here…`,
   },
 ];
