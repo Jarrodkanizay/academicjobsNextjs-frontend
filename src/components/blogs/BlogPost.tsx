@@ -1,8 +1,18 @@
-'use client';
 import HeroBanner from '@/components/HeroBanner';
 
 type BlogPostProps = {
-  post: any;
+  status: string;
+  title: string;
+  slug?: string;
+  author?: string;
+  published_at?: string;
+  updated_at?: string;
+  image_url: string;
+  alt: string;
+  summary: string;
+  tags?: string[];
+  keywords: string;
+  content: string;
 };
 
 const BlogPost = ({ post }: BlogPostProps) => {
