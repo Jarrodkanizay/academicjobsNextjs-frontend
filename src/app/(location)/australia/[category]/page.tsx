@@ -55,7 +55,7 @@ export default function Page({ params, searchParams }: any) {
     content: content1 = '',
   } = regionData.find((item) => item.Name === category) || {};
 
-  const paras = content1.split('\r');
+  const paras = content1.split('\n');
 
   let content;
   //console.log(Name);
