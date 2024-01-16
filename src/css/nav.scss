@@ -89,8 +89,10 @@ html {
         }
 
         .nav-link:hover {
-          color: gray;
-          opacity: 1;
+          background: -webkit-linear-gradient(orange, #eee);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+                    opacity: 1;
         }
 
         .nav-link::before,
