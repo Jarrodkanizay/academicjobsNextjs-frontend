@@ -80,13 +80,19 @@ html {
           margin: 0px 14px;
           display: inline-block;
           position: relative;
-          text-decoration: underline;
+          // text-decoration: underline;
           /* opacity: 0.75; */
+          font-weight: 700;
+          /* opacity: 0.75; */
+          color: rgb(244 161 12 / var(--tw-text-opacity));
+          font-size: 14px;
         }
 
         .nav-link:hover {
-          color: var(--color-primary);
-          opacity: 1;
+          background: -webkit-linear-gradient(orange, #eee);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+                    opacity: 1;
         }
 
         .nav-link::before,

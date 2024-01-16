@@ -5,11 +5,11 @@ import JobSearchBox from '@/components/JobSearchBox';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
-    absolute: '  Academic Lecturer Jobs',
+    absolute: '  Academic Jobs Australia',
   },
   description:
-    'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',
-  keywords: 'Academic Lecturer Jobs. Lecturer positions',
+    'Browse through hundreds of opportunities in higher education and research across various disciplines and institutions in Australia today. ',
+  keywords: 'Academic Jobs Australia. university jobs Australia, Uni jobs Australia',
 };
 export default function Page() {
   // useEffect(() => {
