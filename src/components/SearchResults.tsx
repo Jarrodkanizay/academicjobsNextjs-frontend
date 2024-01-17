@@ -157,11 +157,13 @@ export default function SearchResults({ q }: SearchResultsProps) {
       console.log('data', data);
       content = (
 
+        
 
         <div className="flex md:p-4 mx-auto max-w-screen-lg gap-4 flex-row-reverse">
-         
-          
+              
+                 {/* <details className="bg-gray-300 open:bg-[amber-200] duration-300 md:hidden mt-[-2rem] mb-4 " ><summary className="bg-inherit px-5 py-3 text-lg cursor-pointer pl-8">Filters</summary><div className="bg-white px-5 py-3 border border-gray-300 text-sm font-light"><div className="flex flex-col md:flex  md:justify-start py-4 px-6 mb-4"><div className=" flex flex-col  "><div className="flex gap-4 flex-wrap px-4"><button className="px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold bg-white border-gray-500">Country</button><button className="px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold bg-white border-gray-500">State</button><button className="px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold bg-white border-gray-500">City</button><button className="px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold bg-white border-gray-500">Institution Name</button><button className="px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold bg-white border-gray-500">Job Type</button><button className="px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold bg-white border-gray-500">Faculty/Department</button><button className="px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold bg-white border-gray-500">Academic Position Type</button><button className="px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold bg-white border-gray-500">Executive Jobs</button><button className="px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold bg-white border-gray-500">Employment Type</button><button className="px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold bg-white border-gray-500">Salary Range in USD</button><button className="px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold bg-white border-gray-500">Onsite/Remote</button></div></div></div></div></details> */}
 
+ 
         <div className="mr-auto">
                  
           <JobList

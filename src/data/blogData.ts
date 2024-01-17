@@ -470,6 +470,7 @@ In conclusion, the evolution of university recruitment has been shaped by the em
 If you want to talk to us more about university recruitment in academia, contact us at AcademicJobs.`,
   },
   {
+    // Done
     status: `published`,
     title: `Unveiling the Pinnacle: The Highest-Paid Academic Job in 2023`,
     slug: `the-highest-paid-academic-job-of-2023`,
