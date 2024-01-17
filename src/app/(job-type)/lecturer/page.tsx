@@ -17,23 +17,17 @@ export default function Page() {
       <div className="bg-slate-200 full-width">
         <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
           <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">
-            Academic Lecturer Jobs
+            Lecturing Jobs
           </h1>
           <div>
             <p className="px-7 mb-4 mt-1">
-              Find all jobs for lecturers from top ranking universities on
-              AcademicJobs today. Our universities are looking for the best
-              lecturers, and our academic jobs platform allows lecturers to seek
-              great careers in lecturing around the world.
+            Discover your perfect lecturing position through the world’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top universities. A career as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+
             </p>
             <p className="px-7 md:flex hidden">
-              Lecturers can find university jobs online, compare competitive
-              salaries, generous benefits, and supportive work environments.
-              Sign up as a ‘Global Academic’ to get an academic ranking, and to
-              get the opportunity to collaborate with national and international
-              partners, to work with some of the best minds in your discipline,
-              and access world-class facilities and resources.
-            </p>
+            The No.1 job board for lecturers, Academic Jobs, provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.</p>
+            <p className="px-7 md:flex hidden">
+            Find all the best lecturing jobs here…</p>
           </div>
         </div>
       </div>

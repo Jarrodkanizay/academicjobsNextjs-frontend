@@ -240,21 +240,22 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/digital-solutions-manager/82179"
+                    href="/jobs/disability-support-programs-and-services-dsps-full-time-tenure-track-counselor/82204"
                     className="text-blue-500 font-bold"
                   >
-                    Digital Solutions Manager
+                    Disability Support Programs and Services (DSPS) Full-Time Tenure Track Counselor
+
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">California State University, Long Beach</Link>
+                    <Link href="">Cuesta College</Link>
                   </li>
                   <li>
-                    <Link href="">California State University, Long Beach</Link>
+                    <Link href="">San Luis Obispo County, California,USA</Link>
                   </li>
                   <li>
-                    <Link href="">Mar 11, 2024</Link>
+                    <Link href="">Feb 19, 2024</Link>
                   </li>
                 </ul>
               </ul>
