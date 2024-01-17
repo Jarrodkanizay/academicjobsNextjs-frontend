@@ -33,18 +33,26 @@ const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
       </li>
       {nativeOn ? (
         <li className="hover:underline">
-          <Link href="/Australia/indigenous/">Indigenous</Link>
+          <Link href="/Australia/indigenous">Indigenous</Link>
         </li>
       ) : null}
       <li className="hover:underline">
-        <Link href="/graduate/"> Graduate{'  '}</Link>
+        <Link href="/graduate"> Graduate{'  '}</Link>
       </li>
       <li className="hover:underline">
-        <Link href="/postdoc/"> Postdoc{'  '}</Link>
+        <Link href="/postdoc"> Postdoc{'  '}</Link>
       </li>
       <li className="hover:underline">
-        <Link href="/phd/">PhD</Link>
+        <Link href="/phd">PhD</Link>
       </li>
+      <li className="hover:underline md:hidden">
+        <Link href="/jobs?l=&q=tenure"> Tenure-Track{'  '}</Link>
+      </li>
+      <li className="hover:underline md:hidden">
+        <Link href="/jobs?l=&q=assistant">Assistant</Link>
+      </li>
+   
+  
     </ul>
   );
 };

@@ -520,7 +520,7 @@ export default function myPage() {
           <h3 className="container mx-auto text-center py-8 px-4">
             If you're interested in a great experience while saving time &
             money…{" "}
-            <Link className="btn btn-aj" href="/job-ads">
+            <Link className="btn btn-aj" href="https://postmyjob.online/academicjobs-job-portal/">
               Post a Job Today
             </Link>
           </h3>
