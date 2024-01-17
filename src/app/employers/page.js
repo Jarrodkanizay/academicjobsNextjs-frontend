@@ -53,7 +53,7 @@ export default function myPage() {
       <section>
         <div className=" max-h-fit  bg-slate-200 py-8 mx-auto full-width">
           <div className="container mx-auto">
-            <div className="hero-content flex-col xl:flex-row-reverse mx-auto max-w-full">
+            <div className="hero-content flex-col xl:flex-row gap-8 mx-auto max-w-full">
               <Image
                 src="/academic-job-postings/top-universities-worldwide.jpg"
                 className="object-cover object-center h-60 w-96  rounded-xl shadow-2xl mb-8 lg:mb-0"

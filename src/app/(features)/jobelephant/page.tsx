@@ -77,7 +77,7 @@ export default function Page() {
           {/* Hero banner */}
           <div className="hero max-h-fit bg-slate-200 py-8">
             <div className=" mx-auto">
-              <div className="hero-content flex-col lg:flex-row-reverse">
+              <div className="hero-content flex-col lg:flex-row gap-8">
                 <Image
                   width={300}
                   height={300}
@@ -206,7 +206,7 @@ export default function Page() {
 
           <div className="hero max-h-fit bg-[#c1d72e] py-8">
             <div className=" mx-auto">
-              <div className="hero-content flex-col lg:flex-row-reverse max-w-screen-lg">
+              <div className="hero-content flex-col lg:flex-row gap-8 max-w-screen-lg">
                 <Image
                   width={1200}
                   height={400}
