@@ -159,7 +159,7 @@ export default function Header() {
           )}
           <div className="ml-auto">
             <NavItem
-              url="/recruitment"
+              url={`/${countryMappings2[region.toLowerCase()].url}/recruitment/`}
               icon="/post-a-job-icon.svg"
               navLink="Post a Job"
               forceLinkClass="btn-mode"

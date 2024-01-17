@@ -52,7 +52,7 @@ const Job = ({ job }) => {
             <div className="text-gray-700 font-light text-sm">{location}</div>
           </div>
           <div className="applications-close border-4 rounded p-1 mt-1">
-            <p className="text-gray-400 text-sm ">Expiration</p>
+            <p className="text-gray-400 text-sm mb-0">Expiration</p>
             <div className="text-sm">
               {expiration_date ? (
                 <time>
@@ -62,7 +62,7 @@ const Job = ({ job }) => {
                     year: "numeric",
                   })}
                 </time>
-              ) : (<p className='text-center'>NA</p>)}
+              ) : (<p className='text-center mb-0'>NA</p>)}
             </div>
           </div>
           {((new Date(expiration_date) < new Date()) && expiration_date) && (
