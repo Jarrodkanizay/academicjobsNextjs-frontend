@@ -17,7 +17,7 @@ export default function myPage() {
     <main>
       <div className="hero max-h-fit bg-slate-200 py-8">
         <div className="">
-          <div className="hero-content flex-col lg:flex-row-reverse ">
+          <div className="hero-content flex-col lg:flex-row gap-8 ">
             <Image
               src="/about-us/about-aj.jpeg"
               width={1280}
