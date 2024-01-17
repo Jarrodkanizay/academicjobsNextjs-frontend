@@ -1,7 +1,6 @@
 const data = [
   {
-    break1: true,
-
+// Blog 1
     Name: 'how to land your dream college job a step by step guide',
     Title: 'How to Land Your Dream College Job: A Step-by-Step Guide',
     Description:
@@ -46,7 +45,7 @@ const data = [
   `,
   },
   {
-    break1: true,
+// Blog 2
     Name: 'exploring the global landscape of academic jobs opportunities and challenges',
     Title:
       'Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges',
@@ -88,8 +87,8 @@ const data = [
   },
 
   {
-    break1: true,
-    Name: 'exploring the benefits of academic jobs online why virtual hiring is on the rise',
+// Blog 3
+Name: 'exploring the benefits of academic jobs online why virtual hiring is on the rise',
     Title:
       'Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise',
     Description:
@@ -124,7 +123,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 4
     Name: 'happiness and academics',
     Title: "Happiness and Academics: Scott Galloway's Algebra of Happiness",
     Description:
@@ -189,7 +188,7 @@ const data = [
   },
 
   {
-    break1: true,
+// Blog 5
     Name: 'top academic jobs australia',
     Title: 'Top Academic Jobs Australia',
     Description:
@@ -253,7 +252,7 @@ const data = [
   },
 
   {
-    break1: true,
+// Blog 6
     Name: 'the evolution of university recruitment',
     Title:
       'The Evolution of University Recruitment: Embracing Digital Platforms',
@@ -323,7 +322,7 @@ const data = [
   },
 
   {
-    break1: true,
+// Blog 7
     Name: 'highest paid academic jobs australia 2023',
     Title: 'The Highest Paid Academic Jobs Australia for 2023',
     Description:
@@ -403,7 +402,7 @@ const data = [
   },
 
   {
-    break1: true,
+// Blog 8
     Name: 'the highest paid academic job in 2023',
     Title: 'Unveiling the Pinnacle: The Highest-Paid Academic Job in 2023',
     Description:
@@ -442,7 +441,7 @@ const data = [
   },
 
   {
-    break1: true,
+// Blog 9
     Name: 'find student jobs on your university campus',
     Title: 'Find Student Jobs on your University Campus',
     Description:
@@ -479,7 +478,7 @@ const data = [
   },
 
   {
-    break1: true,
+// Blog 10
     Name: 'seek all qut university careers here',
     Title: 'Seek all QUT University Careers Here',
     Description:
@@ -524,7 +523,7 @@ const data = [
   },
 
   {
-    break1: true,
+// Blog 11
     Name: 'seek all qut university jobs here',
     Title: 'Seek all QUT University Jobs Here',
     Description:
@@ -556,7 +555,7 @@ const data = [
   },
 
   {
-    break1: true,
+// Blog 12
     Name: 'seek all bond university careers here',
     Title: 'Seek all Bond University Careers Here',
     Description:
@@ -598,7 +597,7 @@ const data = [
   },
 
   {
-    break1: true,
+// Blog 13
     Name: 'seek all bond university jobs here',
     Title: 'Seek all Bond University Jobs Here',
     Description:
@@ -632,7 +631,7 @@ const data = [
   },
 
   {
-    break1: true,
+// Blog 14
     Name: 'start your career at harvard university',
     Title: 'Start your Career at Harvard University ',
     Description:
@@ -680,7 +679,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 15
     Name: 'seek all harvard university jobs here',
     Title: 'Seek all Harvard University Jobs Here ',
     Description:
@@ -722,7 +721,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 16
     Name: 'seek all ucla jobs here',
     Title: 'Seek all UCLA Jobs Here ',
     Description:
@@ -769,17 +768,14 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 17
     Name: 'start you career at ucla',
     Title: 'Start you Career at UCLA ',
     Description:
       'Professionals can flourish in an innovative and dynamic higher education setting by holding academic roles at UCLA.',
     Keyword: 'Start you Career at UCLA ',
     content: 'Start you Career at UCLA ',
-    content2: `   
-              
-              
-              <div>
+    content2: `              <div>
               <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip8.png"></p>
               <p>&nbsp;</p>
               <p>Academic Jobs can help you kick start your career at UCLA today!<o:p></o:p></p>
