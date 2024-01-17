@@ -94,7 +94,7 @@ export default function myPage() {
         <div className="cate-group section23 ">
           <div className="widget__text-block">
             <div className="faculty-container  flex flex-wrap  md:gap-8 py-2 px-16 pb-16 text-blue-500">
-              <ul className=" flex flex-wrap gap-8">
+              <ul className=" md:flex flex-wrap gap-8">
                 <li className="mb-1 mt-4 ">
                   <a href="#section" className="scroll-smooth md:scroll-auto ">
                     {' '}

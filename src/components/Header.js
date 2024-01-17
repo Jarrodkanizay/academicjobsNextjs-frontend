@@ -15,6 +15,48 @@ import {
   countryMappings2,
 } from '@/lib/data/data';
 export default function Header() {
+  const handleFormSubmit = () => {
+    if (region !== "Global") {
+      navigate("/jobs/", {
+        state: { q: "", l: countryMappings1[region].searchLocation },
+      });
+    } else {
+      const fetchLocation1 = async () => {
+        try {
+          const response = await fetch(
+            "https://api.geoapify.com/v1/ipinfo?apiKey=ea0e191c22a94bf39e0e58ffbe2d6b66"
+          );
+          const result = await response.json();
+          return result.country.name;
+        } catch (error) {
+          return "";
+        }
+      };
+      fetchLocation1()
+        .then((country) => {
+          //sessionStorage.setItem("location", countryMappings[country.toLowerCase()]);
+          //alert(countryMappings[country.toLowerCase()])
+          //alert(countryMappings[country.toLowerCase()])
+          dispatch(setRegion(countryMappings[country.toLowerCase()]));
+          //a.l = countryMappings1[sessionStorage.getItem("location")].searchLocation
+          //alert(region)
+          //dispatch(setSearchJobCriteria(a))
+          //alert(countryMappings1[sessionStorage.getItem("location")].searchLocation)
+          navigate("/jobs/", {
+            state: {
+              q: "",
+              l: countryMappings1[countryMappings[country.toLowerCase()]]
+                .searchLocation,
+            },
+          });
+          //navigate(`/jobs/${countryMappings1[sessionStorage.getItem("location")].searchLocation}`);
+        })
+        .catch((error) => {
+          console.log("Error:", error);
+        });
+    }
+    setIsNavOpen(false);
+  };
   const { region } = useStore();
   const pathname = usePathname();
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -27,6 +69,7 @@ export default function Header() {
   const onMouseLeave = () => {
     setDropdown(false);
   };
+  
 
   return (
     <>
@@ -49,7 +92,7 @@ export default function Header() {
           }}
         />
       </div>
-      <header className= {`header ${isNavOpen ? 'show-menu' : ''} `}>
+      <header className= {`header ${isNavOpen ? 'show-menu max-h-max' : ''} `}>
         <nav>
           {pathname === '/' ? null : (
             <Link href="/" className="hide-mobile static-logo mr-4">
@@ -127,7 +170,7 @@ export default function Header() {
             <>
               <button
                 className="btn btn-aj w-full mt-4"
-                // onClick={handleFormSubmit}
+                onClick={handleFormSubmit}
               >
                 Search In Your Country
               </button>
@@ -162,7 +205,7 @@ export default function Header() {
               url={`/${countryMappings2[region.toLowerCase()].url}/recruitment/`}
               icon="/post-a-job-icon.svg"
               navLink="Post a Job"
-              forceLinkClass="btn-mode"
+              forceLinkClass=""
               forceButtonClass="nav-mobile-btn btn btn-aj"
               onClick={() => setIsNavOpen(false)}
             />
