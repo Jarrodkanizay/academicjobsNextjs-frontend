@@ -4,7 +4,7 @@ import Link from 'next/link';
 import PricingTable from '@/components/PricingTable';
 export const metadata: Metadata = {
   title: 'Post a job - Recruit Academics', //Option 1 replaces the %s in layout.tsx
-  // title: {
+  // title: {//
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:

@@ -4,7 +4,7 @@ export const blogData = [
     status: `published`,
     rank: 1,
     title: 'How to Land Your Dream College Job: A Step-by-Step Guide',
-    slug: ``,
+    slug: `how-to-land-your-dream-college-job-a-step-by-step-guide`,
     author: `Academic Jobs`,
     published_at: `2023-07-06`,
     updated_at: ``,
