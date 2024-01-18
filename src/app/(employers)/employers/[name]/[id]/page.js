@@ -115,6 +115,7 @@ const Employer = () => {
   } else if (isSuccess) {
     console.log(data);
     const {
+      ranking,
       logo,
       company_name,
       website,
@@ -174,13 +175,13 @@ const Employer = () => {
               <h1 className="text-3xl font-bold text-white pt-4">
                 {company_name}
               </h1>
-              <div className="md:flex  md:gap-6 p-4">
-                <div className="text-white md:flex md:items-center md:justify-start md:gap-2 .col-auto p-4">
+              <div className="md:flex  md:gap-6 py-4">
+                <div className="text-white md:flex md:items-center md:justify-start md:gap-2 .col-auto py-4">
                   <MdLocationPin />
                   {location}
                 </div>
                 {website && (
-                  <div className="text-white md:flex md:items-center md:justify-start md:gap-2 p-4">
+                  <div className="text-white md:flex md:items-center md:justify-start md:gap-2 py-4">
                     <AiOutlineGlobal />
                     <a href={website} className="">
                       {website}
