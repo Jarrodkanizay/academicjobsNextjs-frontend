@@ -1,6 +1,7 @@
 export type BlogPostTypes = {
   post: {
     status?: string | undefined;
+    rank?: number;
     title?: string | undefined;
     slug?: string | undefined;
     author?: string | undefined;

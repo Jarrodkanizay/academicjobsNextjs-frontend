@@ -4,7 +4,7 @@ export const blogData = [
     rank: 1,
     title: 'How to Land Your Dream College Job: A Step-by-Step Guide',
     slug: `how-to-land-your-dream-college-job-a-step-by-step-guide`,
-    author: `Academic Jobs`,
+    author: `Gabrielle Ryan`,
     published_at: `2023-07-06`,
     updated_at: ``,
     image_url: `/blogs/dream-job.jpg`,
@@ -53,7 +53,7 @@ export const blogData = [
     title:
       'Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges',
     slug: `exploring-global-landscape-academic-jobs-opportunities-challenges`,
-    author: `Academic Jobs`,
+    author: `Gabrielle Ryan`,
     published_at: `2023-07-01`,
     image_url: `/blogs/global-opportunities.jpg`,
     alt: `Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges`,
@@ -93,7 +93,7 @@ export const blogData = [
     title:
       'Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise',
     slug: `exploring-the-benefits-of-academic-jobs-online-why-virtual-hiring-is-on-the-rise`,
-    author: `Academic Jobs`,
+    author: `Gabrielle Ryan`,
     published_at: `2023-06-20`,
     updated_at: ``,
     image_url: `/blogs/people-exploring-the-benefits-of-academic-jobs-online-and-virtual-hiring.jpg`,
@@ -195,7 +195,7 @@ export const blogData = [
     rank: 5,
     title: 'Top Academic Jobs Australia',
     slug: `choosing-the-best-university-in-australia-for-2023`,
-    author: `Academic Jobs`,
+    author: `Gabrielle Ryan`,
     published_at: `2023-08-10`,
     updated_at: ``,
     image_url: `/blogs/top-academic-jobs-australia.jpg`,
@@ -261,7 +261,7 @@ export const blogData = [
     title:
       'The Evolution of University Recruitment: Embracing Digital Platforms',
     slug: `evolution-of-university-recruitment`,
-    author: `Academic Jobs`,
+    author: `Gabrielle Ryan`,
     published_at: `May 15, 2023`,
     updated_at: `May 15, 2023`,
     image_url: `/blogs/recruitment-evolution.jpg`,
@@ -329,280 +329,262 @@ export const blogData = [
   },
 
   {
-    // Blog
     status: `published`,
-    rank: 0,
+    rank: 7,
     title: 'The Highest Paid Academic Jobs Australia for 2023',
-    slug: ``,
-    author: ``,
+    slug: `the-highest-paid-academic-job-of-2023`,
+    author: `Gabrielle Ryan`,
+    published_at: `2023-05-15`,
     updated_at: ``,
-    image_url: ``,
-    alt: ``,
+    image_url: `/blogs/highest-paid-academic-jobs.jpg`,
+    alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
     summary:
       'If you are looking for a rewarding and lucrative career in the academic sector, you might be wondering what is the highest paid job in Australian higher education.',
     tags: [],
     keywords: 'highest paid academic jobs Australia 2023 .',
-    published_at: 'May 15, 2023',
     content: `
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
-
-  <div class="container">
-  <p style="padding-bottom: 2rem">If you are looking for a rewarding and lucrative career in academia, you might be interested in knowing which academic jobs pay the best. According to the latest data from the Australian Taxation Office, the highest paid academic jobs in Australia for 2023 are:</p>
-
-  <div class="job">
-    <h2 style="font-weight: bold";">Professor of Medicine: $282,212</h2>
-    <p style="padding-bottom: 1rem">Professors of medicine are experts in their fields of medical research and education. They teach medical students, supervise postgraduate researchers, conduct clinical trials, publish papers, and provide leadership in their departments and faculties.</p>
+    <div class="container">
+    <p style="padding-bottom: 2rem;">If you are looking for a rewarding and lucrative career in academia, you might be interested in knowing which academic jobs pay the best. According to the latest data from the Australian Taxation Office, the highest paid academic jobs in Australia for 2023 are:</p>
+  
+    <div class="job">
+      <h2 style="font-weight: bold;">Professor of Medicine: $282,212</h2>
+      <p style="padding-bottom: 1rem;">Professors of medicine are experts in their fields of medical research and education. They teach medical students, supervise postgraduate researchers, conduct clinical trials, publish papers, and provide leadership in their departments and faculties.</p>
+    </div>
+  
+    <div class="job">
+      <h2 style="font-weight: bold;">Professor of Engineering: $216,388</h2>
+      <p style="padding-bottom: 1rem;">Professors of engineering are leaders in their disciplines of engineering research and education. They teach engineering students, supervise postgraduate researchers, conduct applied research, publish papers, and collaborate with industry partners.</p>
+    </div>
+  
+    <div class="job">
+      <h2 style="font-weight: bold;">Professor of Law: $213,844</h2>
+      <p style="padding-bottom: 1rem;">Professors of law are authorities in their areas of legal research and education. They teach law students, supervise postgraduate researchers, conduct theoretical and empirical research, publish papers, and provide consultancy services.</p>
+    </div>
+  
+    <div class="job">
+      <h2 style="font-weight: bold;">Professor of Business: $208,788</h2>
+      <p style="padding-bottom: 1rem;">Professors of business are experts in their fields of business research and education. They teach business students, supervise postgraduate researchers, conduct quantitative and qualitative research, publish papers, and engage with stakeholders.</p>
+    </div>
+  
+    <div class="job">
+      <h2 style="font-weight: bold;">Professor of Education: $201,688</h2>
+      <p style="padding-bottom: 3rem;">Professors of education are specialists in their domains of educational research and education. They teach education students, supervise postgraduate researchers, conduct pedagogical and policy research, publish papers, and contribute to curriculum development.</p>
+    </div>
+  
+    <p style="padding-bottom: 1rem;">These are the average taxable incomes for full-time professors in these fields based on tax returns from over 14 million Australians over the 2018-19 period. However, these figures may vary depending on the institution, location, experience, qualifications, and market demand.</p>
+  
+    <h2 style="font-weight: bold; padding-bottom: 1rem;">How to become a professor in Australia?</h2>
+    <ol>
+      <li style="padding-left: 80px;">- Complete an undergraduate degree in your chosen field of study</li>
+      <li style="padding-left: 80px;">- Complete an honours year or a master’s degree with a research component</li>
+      <li style="padding-left: 80px;">- Complete a PhD degree with original and significant research</li>
+      <li style="padding-left: 80px;">- Apply for academic positions as a lecturer or a postdoctoral fellow</li>
+      <li style="padding-left: 80px;">- Gain teaching experience and publish your research in reputable journals</li>
+      <li style="padding-bottom: 1rem; padding-left: 80px;">- Apply for academic promotions as a senior lecturer, associate professor, and finally professor</li>
+    </ol>
+  
+    <p style="padding-bottom: 1rem;">The competition for academic jobs is fierce, and the expectations are high. You need to demonstrate excellence in research, teaching, and service to your academic community. You also need to secure external funding for your research projects and collaborate with other researchers nationally and internationally.</p>
+  
+    <h2 style="font-weight: bold; padding-bottom: 1rem;">What are the benefits of working as a professor in Australia?</h2>
+    <ul>
+      <li style="padding-left: 80px;">- You can pursue your intellectual curiosity and passion for your field of study</li>
+      <li style="padding-left: 80px;">- You can contribute to the advancement of knowledge and society through your research</li>
+      <li style="padding-left: 80px;">- You can inspire and mentor the next generation of scholars and professionals through your teaching</li>
+      <li style="padding-left: 80px;">- You can enjoy academic freedom and autonomy in your work</li>
+      <li style="padding-left: 80px;">- You can have flexible working hours and conditions</li>
+      <li style="padding-bottom: 1rem; padding-left: 80px;">- You can earn a high salary and enjoy generous superannuation and leave entitlements</li>
+    </ul>
+  
+    <p style="padding-bottom: 1rem;">Of course, working as a professor in Australia also comes with some challenges and pressures. Some of the challenges of working as a professor in Australia are:</p>
+  
+    <ul>
+      <li style="padding-left: 80px;">- You have to balance multiple roles and responsibilities as a researcher, teacher, supervisor, administrator, reviewer, consultant, etc.</li>
+      <li style="padding-left: 80px;">- You have to cope with high workloads and deadlines</li>
+      <li style="padding-left: 80px;">- You have to deal with performance reviews and evaluations</li>
+      <li style="padding-left: 80px;">- You have to face increasing competition for funding and publications</li>
+      <li style="padding-bottom: 1rem; padding-left: 80px;">- You have to adapt to changing policies and regulations</li>
+    </ul>
+  
+    <p style="padding-bottom: 1rem;">If you are interested in pursuing a career as a professor in Australia, you need to be prepared for these challenges and opportunities. You also need to be passionate about your field of study and committed to excellence in research and teaching.</p>
+  
+    <p>If you want to learn more about the highest paying academic jobs in Australia or other career options in higher education, you can visit our website or contact us for more information.</p>
   </div>
+    `,
+  },
 
-  <div class="job">
-    <h2 style="font-weight: bold">Professor of Engineering: $216,388</h2>
-    <p style="padding-bottom: 1rem">Professors of engineering are leaders in their disciplines of engineering research and education. They teach engineering students, supervise postgraduate researchers, conduct applied research, publish papers, and collaborate with industry partners.</p>
+  {
+    status: `published`,
+    rank: 8,
+    title:
+      'Unveiling the Apex of Academic Leadership: The Chief Research Officer in 2023',
+    slug: `chief-research-officer-academic-leadership-2023`,
+    author: `Gabrielle Ryan`,
+    published_at: `2023-12-01`,
+    updated_at: ``,
+    image_url: `/blogs/apex-of-academic-leadership.jpg`,
+    alt: `Academic Leader guiding the team to success`,
+    summary: `Explore the dynamic world of academic leadership in 2023 as we delve into the role of a Chief Research Officer (CRO). Discover the responsibilities, financial rewards, and profound impact that make the CRO the pinnacle of academic achievement. Join us on a journey through strategic partnerships, innovative projects, and the shaping of the future of research and innovation.`,
+    tags: [
+      'Academic Leadership',
+      'Chief Research Officer',
+      'Academic Careers',
+      'Research Strategy',
+      'Financial Rewards',
+      'Innovation',
+      'Academic Achievements',
+      'Collaborations',
+      'Research Funding',
+      'Academic Landscape',
+    ],
+    keywords: `Chief Research Officer 2023,
+    Academic Leadership trends,
+    Research Strategy and Innovation,
+    Financial Rewards in academia,
+    Academic Achievements and Impact,
+    Collaborations in research,
+    Shaping the Future of Research,
+    Academic Careers in 2023,
+    Research Funding Landscape,
+    Strategic Partnerships in academia`,
+    content: `
+    <div class="container">
+    <p style="text-align: justify;">In the dynamic landscape of academia, where knowledge is not only power but also a lucrative profession, the quest for the highest-paid academic job is a journey many aspire to embark upon. As we step into 2023, let's explore the pinnacle of academic careers, the role that not only commands respect but also an impressive financial reward.</p>
+  
+    <h2 style="font-size: 20px; font-weight: bold; margin-top: 20px;">The Prestigious Position:</h2>
+    <p style="text-align: justify;">Topping the charts as the highest-paid academic job today is the role of a Chief Research Officer (CRO) in leading research universities and institutions. The Chief Research Officer plays a pivotal role in shaping the institution's research agenda, fostering innovation, and securing substantial grants and funding.</p>
+  
+    <h2 style="font-size: 20px; font-weight: bold; margin-top: 20px; padding-bottom: 1rem;">Key Responsibilities:</h2>
+    <p style="text-align: justify; padding-bottom: 0.5rem; padding-left: 80px;">- Research Strategy Development: The CRO is entrusted with crafting and implementing a comprehensive research strategy aligned with the institution's goals. This involves identifying emerging trends, potential collaborations, and innovative projects that can elevate the institution's research profile.</p>
+  
+    <p style="text-align: justify; padding-bottom: 0.5rem; padding-left: 80px;">- Grant Acquisition: One of the primary responsibilities is securing substantial research grants and funding from government agencies, private organizations, and philanthropic sources. The ability to navigate the competitive landscape of research funding is a crucial skill for a successful Chief Research Officer.</p>
+  
+    <p style="text-align: justify; padding-bottom: 0.5rem; padding-left: 80px;">- Team Leadership: The CRO oversees a team of researchers, guiding them in their projects, ensuring compliance with ethical standards, and fostering a culture of collaboration and excellence. Effective leadership is essential in maximizing the research output of the institution.</p>
+  
+    <p style="text-align: justify; padding-bottom: 0.5rem; padding-left: 80px;">- Partnerships and Collaborations: Building strategic partnerships with other academic institutions, industry players, and research organizations is a key aspect of the CRO's role. These collaborations not only enhance the institution's research capabilities but also open doors to additional funding opportunities.</p>
+  
+    <p style="text-align: justify; padding-bottom: 0.5rem; padding-left: 80px;">- Innovation and Commercialization: The Chief Research Officer plays a vital role in translating research findings into practical applications. This involves exploring avenues for commercialization, patenting innovative technologies, and contributing to the economic impact of the institution.</p>
+  
+    <h2 style="font-size: 20px; font-weight: bold; margin-top: 20px;">Financial Rewards:</h2>
+    <p style="text-align: justify;">Given the immense responsibilities and the impact of the role, it's no surprise that the Chief Research Officer is handsomely rewarded. Salaries for CROs in top-tier universities and research institutions often surpass those of other academic leadership positions. In addition to a competitive base salary, CROs may enjoy performance-based bonuses, profit-sharing, and other perks that reflect the success of their research endeavors.</p>
+  
+    <p style="text-align: justify;">As we delve into the academic landscape of 2023, the role of the Chief Research Officer stands out not only for its financial rewards but also for the profound influence it has on shaping the future of research and innovation. For aspiring academics with a passion for groundbreaking discoveries and strategic leadership, the position of Chief Research Officer represents the zenith of academic achievement.</p>
   </div>
-
-  <div class "job">
-    <h2 style="font-weight: bold">Professor of Law: $213,844</h2>
-    <p style="padding-bottom: 1rem"> "Professors of law are authorities in their areas of legal research and education. They teach law students, supervise postgraduate researchers, conduct theoretical and empirical research, publish papers, and provide consultancy services.</p>
-  </div>
-
-  <div class="job">
-    <h2 style="font-weight: bold">Professor of Business: $208,788</h2>
-    <p style="padding-bottom: 1rem">Professors of business are experts in their fields of business research and education. They teach business students, supervise postgraduate researchers, conduct quantitative and qualitative research, publish papers, and engage with stakeholders.</p>
-  </div>
-
-  <div class="job">
-    <h2 style="font-weight: bold">Professor of Education: $201,688</h2>
-    <p style="padding-bottom: 3rem">Professors of education are specialists in their domains of educational research and education. They teach education students, supervise postgraduate researchers, conduct pedagogical and policy research, publish papers, and contribute to curriculum development.</p>
-  </div>
-
-  <p style="padding-bottom: 1rem">These are the average taxable incomes for full-time professors in these fields based on tax returns from over 14 million Australians over the 2018-19 period1. However, these figures may vary depending on the institution, location, experience, qualifications, and market demand.</p>
-
-  <h2 style=" font-weight: bold; padding-bottom: 1rem">How to become a professor in Australia?</h2>
-  <ol>
-    <li style="padding-left: 80px;">- Complete an undergraduate degree in your chosen field of study</li>
-    <li style="padding-left: 80px;">- Complete an honours year or a master’s degree with a research component</li>
-    <li style="padding-left: 80px;">- Complete a PhD degree with original and significant research</li>
-    <li style="padding-left: 80px;">- Apply for academic positions as a lecturer or a postdoctoral fellow</li>
-    <li style="padding-left: 80px;">- Gain teaching experience and publish your research in reputable journals</li>
-    <li style="padding-bottom: 1rem; padding-left: 80px;">-Apply for academic promotions as a senior lecturer, associate professor, and finally professor</li>
-  </ol>
-
-  <p style="padding-bottom: 1rem">The competition for academic jobs is fierce and the expectations are high. You need to demonstrate excellence in research, teaching, and service to your academic community. You also need to secure external funding for your research projects and collaborate with other researchers nationally and internationally.</p>
-
-  <h2 style="font-weight: bold; padding-bottom: 1rem">What are the benefits of working as a professor in Australia?</h2>
-  <ul>
-    <li style="padding-left: 80px;">-You can pursue your intellectual curiosity and passion for your field of study</li>
-    <li style="padding-left: 80px;">-You can contribute to the advancement of knowledge and society through your research</li>
-    <li style="padding-left: 80px;">-You can inspire and mentor the next generation of scholars and professionals through your teaching</li>
-    <li style="padding-left: 80px;">-You can enjoy academic freedom and autonomy in your work</li>
-    <li style="padding-left: 80px;">-You can have flexible working hours and conditions</li>
-    <li style="padding-bottom: 1rem; padding-left: 80px;">-You can earn a high salary and enjoy generous superannuation and leave entitlements</li>
-  </ul>
-
-  <p style="padding-bottom: 1rem">Of course, working as a professor in Australia also comes with some challenges and pressures. Some of the challenges of working as a professor in Australia are:</p>
-
-  <ul>
-    <li style="padding-left: 80px;">-You have to balance multiple roles and responsibilities as a researcher, teacher, supervisor, administrator, reviewer, consultant, etc.</li>
-    <li style="padding-left: 80px;">-You have to cope with high workloads and deadlines</li>
-    <li style="padding-left: 80px;">-You have to deal with performance reviews and evaluations</li>
-    <li style="padding-left: 80px;">-You have to face increasing competition for funding and publications</li>
-    <li style="padding-bottom: 1rem; padding-left: 80px;">-You have to adapt to changing policies and regulations</li>
-  </ul>
-
-  <p style="padding-bottom: 1rem">If you are interested in pursuing a career as a professor in Australia, you need to be prepared for these challenges and opportunities. You also need to be passionate about your field of study and committed to excellence in research and teaching.</p>
-
-  <p>If you want to learn more about the highest paying academic jobs in Australia or other career options in higher education, you can visit our website or contact us for more information.</p>
-</div>
   `,
   },
 
   {
-    // Blog
     status: `published`,
-    rank: 0,
-    title: 'Unveiling the Pinnacle: The Highest-Paid Academic Job in 2023',
-    slug: ``,
-    author: ``,
-    updated_at: ``,
-    image_url: ``,
-    alt: ``,
-    summary:
-      'While there are many factors that can influence your earning potential, such as your field of expertise, there are some general trends that can help you identify the most profitable positions.',
-    tags: [],
-    keywords: 'highest paid academic job 2023 .',
-    published_at: 'May 15, 2023',
-    content: `
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
-
-
-  <div class="container">
-  <p style="text-align: justify;">In the dynamic landscape of academia, where knowledge is not only power but also a lucrative profession, the quest for the highest-paid academic job is a journey many aspire to embark upon. As we step into 2023, let's explore the pinnacle of academic careers, the role that not only commands respect but also an impressive financial reward.</p>
-
-  <h2 style="font-size: 20px; font-weight: bold; margin-top: 20px;">The Prestigious Position:</h2>
-  <p style="text-align: justify;">Topping the charts as the highest-paid academic job today is the role of a Chief Research Officer (CRO) in leading research universities and institutions. The Chief Research Officer plays a pivotal role in shaping the institution's research agenda, fostering innovation, and securing substantial grants and funding.</p>
-
-  <h2 style="font-size: 20px; font-weight: bold; margin-top: 20px; padding-bottom: 1rem;">Key Responsibilities:</h2>
-  <p style="text-align: justify; padding-bottom: 0.5rem; padding-left: 80px;">-Research Strategy Development: The CRO is entrusted with crafting and implementing a comprehensive research strategy aligned with the institution's goals. This involves identifying emerging trends, potential collaborations, and innovative projects that can elevate the institution's research profile.</p>
-
-  <p style="text-align: justify; padding-bottom: 0.5rem; padding-left: 80px;">-Grant Acquisition: One of the primary responsibilities is securing substantial research grants and funding from government agencies, private organizations, and philanthropic sources. The ability to navigate the competitive landscape of research funding is a crucial skill for a successful Chief Research Officer.</p>
-
-  <p style="text-align: justify; padding-bottom: 0.5rem; padding-left: 80px;">-Team Leadership: The CRO oversees a team of researchers, guiding them in their projects, ensuring compliance with ethical standards, and fostering a culture of collaboration and excellence. Effective leadership is essential in maximizing the research output of the institution.</p>
-
-  <p style="text-align: justify; padding-bottom: 0.5rem; padding-left: 80px;">-Partnerships and Collaborations: Building strategic partnerships with other academic institutions, industry players, and research organizations is a key aspect of the CRO's role. These collaborations not only enhance the institution's research capabilities but also open doors to additional funding opportunities.</p>
-
-  <p style="text-align: justify; padding-bottom: 0.5rem; padding-left: 80px;">-Innovation and Commercialization: The Chief Research Officer plays a vital role in translating research findings into practical applications. This involves exploring avenues for commercialization, patenting innovative technologies, and contributing to the economic impact of the institution.</p>
-
-  <h2 style="font-size: 20px; font-weight: bold; margin-top: 20px;">Financial Rewards:</h2>
-  <p style="text-align: justify;">Given the immense responsibilities and the impact of the role, it's no surprise that the Chief Research Officer is handsomely rewarded. Salaries for CROs in top-tier universities and research institutions often surpass those of other academic leadership positions. In addition to a competitive base salary, CROs may enjoy performance-based bonuses, profit-sharing, and other perks that reflect the success of their research endeavors.</p>
-
-  <p style="text-align: justify;">As we delve into the academic landscape of 2023, the role of the Chief Research Officer stands out not only for its financial rewards but also for the profound influence it has on shaping the future of research and innovation. For aspiring academics with a passion for groundbreaking discoveries and strategic leadership, the position of Chief Research Officer represents the zenith of academic achievement.</p>
-</div>
-
-
-  `,
-  },
-
-  {
-    // Blog
-    status: `published`,
-    rank: 0,
-    title: 'Find Student Jobs on your University Campus',
-    slug: ``,
-    author: ``,
-    updated_at: ``,
-    image_url: ``,
-    alt: ``,
+    rank: 9,
+    title:
+      'Unlocking the Benefits of On-Campus Student Jobs: A Holistic Approach to Education',
+    slug: `unlocking-benefits-on-campus-student-jobs`,
+    author: `Gabrielle Ryan`,
+    updated_at: `2023-12-15`,
+    image_url: `/blogs/student-jobs-on-college-campus.jpg`,
+    alt: `student jobs on university campus`,
     summary:
       'Taking on casual or part-time employment as a student on campus is a complete experience that combines work with the social and academic aspects of university life.',
     tags: [],
     keywords: 'Find Student Jobs on your University Campus .',
-    published_at: 'Find Student Jobs on your University Campus',
     content: `
-
-
- <p><strong>Find Student Jobs on your University Campus<o:p></o:p></strong></p>
-<p><o:p>&nbsp;</o:p></p>
-<p>Engaging in part-time or casual student jobs on campus is a holistic experience that integrates work with the academic and social fabric of university life. These academic student jobs, spanning various roles within the university, serve as a bridge between the academic realm and the professional world. Whether contributing to administration, customer service, events, marketing, IT, library services, research projects, or teaching assistance, these academic student jobs on campus foster the development of essential employability skills. <o:p></o:p></p>
-<p><o:p>&nbsp;</o:p></p>
-<p>Beyond the professional growth, students working in roles such as those at the university coffee shop or gym find themselves embedded in a vibrant community, building connections with peers, faculty, and the university community. This close-knit engagement within the campus community contributes to the development of a strong work ethic, creating a dynamic environment where shared experiences transcend the workplace and extend into the broader university experience.<o:p></o:p></p>
-<p><o:p>&nbsp;</o:p></p>
-
-<p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip0.png"><!--[endif]--><o:p></o:p></p>
-<p><o:p>&nbsp;</o:p></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>Q1:<o:p></o:p></p>
-<p><strong>Is it good to have a part-time job while studying?<o:p></o:p></strong></p>
-<p>Yes, having a part-time job while studying can be beneficial. It provides students with valuable practical experience, helps them develop time management and organizational skills, and allows them to earn income to support their education and living expenses. Additionally, it can enhance their resume, making them more competitive in the job market upon graduation. While balancing work and studies requires effective time management, the overall experience contributes to personal and professional growth.<o:p></o:p></p>
-<p><o:p></o:p></p>
-<p><o:p>&nbsp;</o:p></p>
-
-<p><o:p>&nbsp;</o:p></p>
-<p>Q2:<o:p></o:p></p>
-<p><strong>Are there many jobs available on university campus&rsquo; for students? <o:p></o:p></strong></p>
-<p>The availability of jobs on university campuses for students can vary based on the size of the university, its location, and the demand for student employment. Typically, larger universities and those situated in urban areas tend to offer a greater number and variety of on-campus job opportunities. Common on-campus job options for students include positions in administration, libraries, research labs, student services, food services, and recreational facilities. Additionally, universities often have student employment programs to facilitate part-time work opportunities. However, the specific availability of jobs will depend on the institution's policies and the current economic climate.<o:p></o:p></p>
-
-
-  `,
+    <p><strong>Find Student Jobs on your University Campus</strong></p>
+    <p>Engaging in part-time or casual student jobs on campus is a holistic experience that integrates work with the academic and social fabric of university life. These academic student jobs, spanning various roles within the university, serve as a bridge between the academic realm and the professional world. Whether contributing to administration, customer service, events, marketing, IT, library services, research projects, or teaching assistance, these academic student jobs on campus foster the development of essential employability skills.</p>
+    <p>Beyond the professional growth, students working in roles such as those at the university coffee shop or gym find themselves embedded in a vibrant community, building connections with peers, faculty, and the university community. This close-knit engagement within the campus community contributes to the development of a strong work ethic, creating a dynamic environment where shared experiences transcend the workplace and extend into the broader university experience.</p>
+    <p>Q1:<strong>Is it good to have a part-time job while studying?</strong></p>
+    <p>Yes, having a part-time job while studying can be beneficial. It provides students with valuable practical experience, helps them develop time management and organizational skills, and allows them to earn income to support their education and living expenses. Additionally, it can enhance their resume, making them more competitive in the job market upon graduation. While balancing work and studies requires effective time management, the overall experience contributes to personal and professional growth.</p>
+    <p>Q2:<strong>Are there many jobs available on university campuses for students?</strong></p>
+    <p>The availability of jobs on university campuses for students can vary based on the size of the university, its location, and the demand for student employment. Typically, larger universities and those situated in urban areas tend to offer a greater number and variety of on-campus job opportunities. Common on-campus job options for students include positions in administration, libraries, research labs, student services, food services, and recreational facilities. Additionally, universities often have student employment programs to facilitate part-time work opportunities. However, the specific availability of jobs will depend on the institution's policies and the current economic climate.</p>
+      `,
   },
 
   {
-    // Blog
     status: `published`,
-    rank: 0,
-    title: 'Seek all QUT University Careers Here',
-    slug: ``,
-    author: ``,
+    rank: 10,
+    title: 'Thriving in Academic Excellence: Your Gateway to QUT Careers',
+    slug: `qut-university-academic-careers`,
+    author: `Gabrielle Ryan`,
+    published_at: `2024-01-01`,
     updated_at: ``,
-    image_url: ``,
-    alt: ``,
+    image_url: `/blogs/lecturer-in-action-at-qut.jpg`,
+    alt: `lecturer educating students at qut (queensland university of technology)`,
     summary:
-      'You may launch your career at Queensland University of Technology right now with the aid of academic jobs!',
-    tags: [],
-    keywords: 'Seek all QUT University Careers Here .',
-    published_at: 'Seek all QUT University Careers Here',
+      'Explore diverse academic opportunities at Queensland University of Technology (QUT). This blog unveils the enriching environment, career options, and the vibrant community that make a career at QUT a rewarding journey in higher education.',
+    tags: [
+      'Academic Jobs',
+      'QUT University',
+      'Higher Education Careers',
+      'Academic Excellence',
+      'Career Opportunities',
+      'Brisbane Community',
+    ],
+    keywords: `QUT academic positions, higher education careers, academic excellence, QUT University jobs, Brisbane academic community, diverse academic opportunities, higher ed environment, career growth in academia, QUT faculty positions, academic roles at QUT`,
     content: `
+<div class="career-advice">
+  <p>Academic Jobs can help you kick start your career at Queensland University of Technology today!</p>
+  <p>A career at QUT University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment.</p>
+  <p>With a strong commitment to academic excellence, QUT provides a platform for educators and researchers to engage in innovative teaching and research that shapes the future of higher education. The university's focus on global perspectives, interdisciplinary collaboration, and state-of-the-art facilities fosters an environment where individuals can contribute significantly to advancements in knowledge and learning.</p>
+  <p>Academic Jobs can find your perfect uni job in the vibrant community of Brisbane. A career at QUT combines the rewards of academic excellence, professional growth, and a diverse, inclusive workplace, making it an ideal destination for those dedicated to making a meaningful impact in the field of higher education.</p>
+  <p>QUT offer a diverse range of academic career opportunities.</p>
+  <p>The specific careers available can vary across different faculties and departments. Here is a list of potential careers at QUT:</p>
+  <ul>
+    <li>Professor</li>
+    <li>Associate Professor</li>
+    <li>Senior Lecturer</li>
+    <li>Lecturer</li>
+    <li>Research Fellow</li>
+    <li>Teaching Fellow</li>
+    <li>Postdoctoral Researcher</li>
+    <li>Assistant Professor</li>
+    <li>Tutor</li>
+    <li>Academic Coordinator</li>
+    <li>Course Convenor</li>
+    <li>Research Assistant</li>
+    <li>Visiting Professor</li>
+    <li>Adjunct Professor</li>
+    <li>Academic Advisor</li>
+  </ul>
+</div>`,
+  },
 
-
-<p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip1.png"></p>
-<p>&nbsp;</p>
-<p>Academic Jobs can help you kick start your career at Queensland University of Technology today! <o:p></o:p></p>
-<p><br>A career at QUT University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment.<o:p></o:p></p>
-<p><o:p>&nbsp;</o:p></p>
-<p>With a strong commitment to academic excellence, QUT provides a platform for educators and researchers to engage in innovative teaching and research that shapes the future of higher education. The university's focus on global perspectives, interdisciplinary collaboration, and state-of-the-art facilities fosters an environment where individuals can contribute significantly to advancements in knowledge and learning. <o:p></o:p></p>
-<p><o:p>&nbsp;</o:p></p>
-<p>Academic Jobs can find your perfect uni job in the vibrant community of Brisbane. A career at QUT combines the rewards of academic excellence, professional growth, and a diverse, inclusive workplace, making it an ideal destination for those dedicated to making a meaningful impact in the field of higher education.<o:p></o:p></p>
-<p><o:p>&nbsp;</o:p></p>
-<p><o:p>&nbsp;</o:p></p>
-<p>QUT offer a diverse range of academic career opportunities. <o:p></o:p></p>
-<p><o:p>&nbsp;</o:p></p>
-<p>The specific careers available can vary across different faculties and departments. Here is a list of potential careers at QUT:<o:p></o:p></p>
-<p><o:p>&nbsp;</o:p></p>
+  {
+    status: `published`,
+    rank: 11,
+    title: 'Seek all QUT University Jobs Here',
+    slug: ``,
+    author: `Gabrielle Ryan`,
+    published_at: 'Seek all QUT University Jobs Here',
+    updated_at: `2023-03-12`,
+    image_url: `/blogs/find-your-future-career-at-Queensland-University-of-Technology-(QUT).jpg`,
+    alt: `Join the academic team at Queensland University of Technology`,
+    summary:
+      'Join the academic team at Queensland University of Technology (QUT) to find your future career.',
+    tags: [],
+    keywords: 'Seek all QUT University Jobs at Academic Jobs.',
+    content: `
+  <div>
+<p>Find you next job as a part of the academic team at Queensland University of Technology (QUT), working alongside some of the best. Life at QUT offers an enriching experience, positioning it as an ideal place of employment, especially for lecturers and academics. As a lecturer at QUT, one can partake in a dynamic academic environment that emphasises innovative teaching methodologies and fosters close connections with students during engaging lectures. </p>
+<p>Uni jobs at QUT are committed to academic excellence, which is mirrored in its world-class facilities, creating an optimal setting for delivering impactful lectures and conducting cutting-edge research. QUT's Human Resources initiatives play a crucial role in supporting academic staff, offering comprehensive professional development, workshops, and ongoing training. Across various faculties, including the Faculty of Business and Law, Faculty of Health, Faculty of Education, and others, lecturers at QUT can contribute to multidisciplinary research and collaborative initiatives. With a commitment to inclusivity and diversity, QUT stands as an ideal workplace, providing lecturers with a stimulating and supportive environment for both professional and personal growth.</p>
+<p>Queensland University of Technology has a range of faculties covering diverse academic disciplines. </p>
+<p>The faculties at QUT include:</p>
+<ul>
+<li>Faculty of Business and Law</li>
+<li>Faculty of Creative Industries, Education, and Social Justice</li>
+<li>Faculty of Engineering&nbsp;Faculty of Health</li>
+<li>Faculty of Science</li>
+<li>QUT International College (providing pathway programs for international students)</li>
+</ul>
 </div>
-<p>&nbsp;</p>
-<p>-&nbsp; <!--[endif]-->Professor<o:p></o:p></p>
-<p>-&nbsp; <!--[endif]-->Associate Professor<o:p></o:p></p>
-<p>-&nbsp; <!--[endif]-->Senior Lecturer<o:p></o:p></p>
-<p>- <!--[endif]-->Lecturer<o:p></o:p></p>
-<p>-&nbsp; <!--[endif]-->Research Fellow<o:p></o:p></p>
-<p>-&nbsp; <!--[endif]-->Teaching Fellow<o:p></o:p></p>
-<p>-&nbsp; <!--[endif]-->Postdoctoral Researcher<o:p></o:p></p>
-<p>-&nbsp; <!--[endif]-->Assistant Professor<o:p></o:p></p>
-<p>-&nbsp; <!--[endif]-->Tutor<o:p></o:p></p>
-<p>-&nbsp; <!--[endif]-->Academic Coordinator<o:p></o:p></p>
-<p>-&nbsp; <!--[endif]-->Course Convenor<o:p></o:p></p>
-<p>-&nbsp; <!--[endif]-->Research Assistant<o:p></o:p></p>
-<p>-&nbsp; <!--[endif]-->Visiting Professor<o:p></o:p></p>
-<p>-&nbsp; <!--[endif]-->Adjunct Professor<o:p></o:p></p>
-<p>-&nbsp; <!--[endif]-->Academic Advisor<o:p></o:p></p>
 `,
   },
 
   {
     // Blog
     status: `published`,
-    rank: 0,
-    title: 'Seek all QUT University Jobs Here',
-    slug: ``,
-    author: ``,
-    updated_at: ``,
-    image_url: ``,
-    alt: ``,
-    summary:
-      'Join the academic team at Queensland University of Technology (QUT) to find your future career.',
-    tags: [],
-    keywords: 'Seek all QUT University Jobs Here.',
-    published_at: 'Seek all QUT University Jobs Here',
-    content: `
-
-
-  <div><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip2.png"><br>
-<p><o:p>&nbsp;</o:p></p>
-<p>Find you next job as a part of the academic team at Queensland University of Technology (QUT), working alongside some of the best. Life at QUT offers an enriching experience, positioning it as an ideal place of employment, especially for lecturers and academics. As a lecturer at QUT, one can partake in a dynamic academic environment that emphasises innovative teaching methodologies and fosters close connections with students during engaging lectures. <o:p></o:p></p>
-<p><o:p>&nbsp;</o:p></p>
-<p>Uni jobs at QUT are committed to academic excellence, which is mirrored in its world-class facilities, creating an optimal setting for delivering impactful lectures and conducting cutting-edge research. QUT's Human Resources initiatives play a crucial role in supporting academic staff, offering comprehensive professional development, workshops, and ongoing training. Across various faculties, including the Faculty of Business and Law, Faculty of Health, Faculty of Education, and others, lecturers at QUT can contribute to multidisciplinary research and collaborative initiatives. With a commitment to inclusivity and diversity, QUT stands as an ideal workplace, providing lecturers with a stimulating and supportive environment for both professional and personal growth.<o:p></o:p></p>
-<p><o:p>&nbsp;</o:p></p>
-<p><o:p>&nbsp;</o:p></p>
-<p>Queensland University of Technology has a range of faculties covering diverse academic disciplines. <o:p></o:p></p>
-<p>The faculties at QUT include:<o:p></o:p></p>
-</div>
-<p>&nbsp;</p>
-<ul>
-<li>Faculty of Business and Law<o:p></o:p></li>
-<li>Faculty of Creative Industries, Education, and Social Justice<o:p></o:p></li>
-<li>Faculty of Engineering<o:p></o:p>&nbsp;<!--[endif]-->Faculty of Health<o:p></o:p></li>
-<li>Faculty of Science<o:p></o:p></li>
-<li>QUT International College (providing pathway programs for international students)<o:p></o:p></li>
-</ul>
-  `,
-  },
-
-  {
-    // Blog
-    status: `published`,
-    rank: 0,
+    rank: 12,
     title: 'Seek all Bond University Careers Here',
     slug: ``,
-    author: ``,
+    author: `Gabrielle Ryan`,
+    published_at: '2023-02-08',
     updated_at: ``,
     image_url: ``,
     alt: ``,
@@ -610,37 +592,36 @@ export const blogData = [
       'Academic careers at Bond University provide professionals with the chance to flourish in a dynamic and cutting-edge higher education setting.',
     tags: [],
     keywords: 'Seek all Bond University Careers Here',
-    published_at: 'Seek all Bond University Careers Here',
     content: `
 
 
-    <div><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip3.png"><br><o:p></o:p>
+    <div><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip3.png"><br>
 <div>
-<p>Academic Jobs can help you kick start your career at Bond Uni today! <o:p></o:p></p>
-<p><br>A career at Bond University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. With a commitment to excellence in education and research, Bond University provides a platform for employees to contribute meaningfully to the academic community. The small class sizes allow personalised interactions with students, creating a unique and impactful teaching experience. The university's state-of-the-art facilities, global perspective, and interdisciplinary approach to research offer a stimulating environment for continuous learning and professional development. <o:p></o:p></p>
+<p>Academic Jobs can help you kick start your career at Bond Uni today! </p>
+<p><br>A career at Bond University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. With a commitment to excellence in education and research, Bond University provides a platform for employees to contribute meaningfully to the academic community. The small class sizes allow personalised interactions with students, creating a unique and impactful teaching experience. The university's state-of-the-art facilities, global perspective, and interdisciplinary approach to research offer a stimulating environment for continuous learning and professional development. </p>
 <p><o:p>&nbsp;</o:p></p>
-<p>A higher ed career at Bond would see you to the breathtaking Gold Coast, where Bond University provides a picturesque backdrop for work. The supportive community and a commitment to work-life balance, making it an ideal destination for those who aspire to make a meaningful impact in academia and beyond.<o:p></o:p></p>
+<p>A higher ed career at Bond would see you to the breathtaking Gold Coast, where Bond University provides a picturesque backdrop for work. The supportive community and a commitment to work-life balance, making it an ideal destination for those who aspire to make a meaningful impact in academia and beyond.</p>
 <p><o:p>&nbsp;</o:p></p>
-<p>Bond University offers a variety of academic careers across different faculties. <o:p></o:p></p>
+<p>Bond University offers a variety of academic careers across different faculties. </p>
 <p><o:p>&nbsp;</o:p></p>
-<p>While the specific positions may vary, here is a list of academic careers you could have at Bond University:<o:p></o:p></p>
+<p>While the specific positions may vary, here is a list of academic careers you could have at Bond University:</p>
 </div>
 <p>&nbsp;</p>
-<p>Professor<o:p></o:p></p>
-<p>Associate Professor<o:p></o:p></p>
-<p>Senior Lecturer<o:p></o:p></p>
-<p>Lecturer<o:p></o:p></p>
-<p>Teaching Fellow<o:p></o:p></p>
-<p>Research Fellow<o:p></o:p></p>
-<p>Postdoctoral Researcher<o:p></o:p></p>
+<p>Professor</p>
+<p>Associate Professor</p>
+<p>Senior Lecturer</p>
+<p>Lecturer</p>
+<p>Teaching Fellow</p>
+<p>Research Fellow</p>
+<p>Postdoctoral Researcher</p>
 <p>Assistant Professor</p>
-<p><o:p></o:p>Visiting Professor<o:p></o:p></p>
-<p>Adjunct Professor<o:p></o:p></p>
-<p>Tutor<o:p></o:p></p>
-<p>Academic Coordinator<o:p></o:p></p>
-<p>Course Convenor<o:p></o:p></p>
-<p>Academic Advisor<o:p></o:p></p>
-<p>Research Assistant<o:p></o:p></p>
+<p>Visiting Professor</p>
+<p>Adjunct Professor</p>
+<p>Tutor</p>
+<p>Academic Coordinator</p>
+<p>Course Convenor</p>
+<p>Academic Advisor</p>
+<p>Research Assistant</p>
 </div>
     `,
   },
@@ -648,11 +629,11 @@ export const blogData = [
   {
     // Blog
     status: `published`,
-    rank: 0,
+    rank: 13,
     title: 'Seek all Bond University Jobs Here',
     slug: ``,
-    author: ``,
-    updated_at: ``,
+    author: `Gabrielle Ryan`,
+    updated_at: `2023-04-05`,
     image_url: ``,
     alt: ``,
     summary:
@@ -666,22 +647,22 @@ export const blogData = [
       <div>
 <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip4.png"></p>
 <p>&nbsp;</p>
-<p>Find you next job as a part of the academic team at Bond University, working alongside some of the best. Working at Bond University provides an exceptional professional and academic experience, making it an ideal place of employment. The university's commitment to academic excellence is manifested in its cutting-edge facilities and intimate lecture settings, providing lecturers with a conducive environment for impactful teaching. <o:p></o:p></p>
+<p>Find you next job as a part of the academic team at Bond University, working alongside some of the best. Working at Bond University provides an exceptional professional and academic experience, making it an ideal place of employment. The university's commitment to academic excellence is manifested in its cutting-edge facilities and intimate lecture settings, providing lecturers with a conducive environment for impactful teaching. </p>
 <p><o:p>&nbsp;</o:p></p>
-<p>Bond University&rsquo;s jobs stand out for their commitment to academic excellence and world class higher ed research. Bond offer an academic support system through human resources initiatives, ensuring that higher ed staff receive comprehensive assistance, professional development opportunities, and ongoing training. The inclusive and collaborative culture extends across various faculties, such as business, health sciences, law, and more. Lecturers at Bond not only engage in innovative and research-driven lectures but also contribute to a multidisciplinary academic community. This collaborative ethos, coupled with a global perspective, creates an enriching and diverse workplace, making Bond University an ideal destination for those seeking a fulfilling career in academia.<o:p></o:p></p>
-<p><o:p></o:p></p>
+<p>Bond University&rsquo;s jobs stand out for their commitment to academic excellence and world class higher ed research. Bond offer an academic support system through human resources initiatives, ensuring that higher ed staff receive comprehensive assistance, professional development opportunities, and ongoing training. The inclusive and collaborative culture extends across various faculties, such as business, health sciences, law, and more. Lecturers at Bond not only engage in innovative and research-driven lectures but also contribute to a multidisciplinary academic community. This collaborative ethos, coupled with a global perspective, creates an enriching and diverse workplace, making Bond University an ideal destination for those seeking a fulfilling career in academia.</p>
+<p></p>
 <p><o:p>&nbsp;</o:p></p>
-<p>Bond University offers a diverse range of faculties, each specializing in various academic disciplines. <o:p></o:p></p>
-<p>The faculties at Bond University include:<o:p></o:p></p>
+<p>Bond University offers a diverse range of faculties, each specializing in various academic disciplines. </p>
+<p>The faculties at Bond University include:</p>
 </div>
 <p>&nbsp;</p>
 <ul>
-<li>Faculty of Business<o:p></o:p></li>
-<li>Faculty of Health Sciences and Medicine<o:p></o:p></li>
-<li>Faculty of Law<o:p></o:p></li>
-<li>Faculty of Society and Design<o:p></o:p></li>
-<li>Bond Business School<o:p></o:p></li>
-<li>Bond College (providing preparatory and foundation programs)<o:p></o:p></li>
+<li>Faculty of Business</li>
+<li>Faculty of Health Sciences and Medicine</li>
+<li>Faculty of Law</li>
+<li>Faculty of Society and Design</li>
+<li>Bond Business School</li>
+<li>Bond College (providing preparatory and foundation programs)</li>
 </ul>
       `,
   },
@@ -689,11 +670,11 @@ export const blogData = [
   {
     // Blog
     status: `published`,
-    rank: 0,
+    rank: 14,
     title: 'Start your Career at Harvard University ',
     slug: ``,
-    author: ``,
-    updated_at: ``,
+    author: `Gabrielle Ryan`,
+    updated_at: `2023-04-27`,
     image_url: ``,
     alt: ``,
     summary:
@@ -708,35 +689,35 @@ export const blogData = [
 <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip5.png"></p>
 <p>&nbsp;</p>
 
-<p><br>A career at Harvard University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment.<o:p></o:p></p>
+<p><br>A career at Harvard University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment.</p>
 <p><o:p>&nbsp;</o:p></p>
-<p>Harvard University offers an opportunity to engage in cutting-edge research, inspire the next generation of leaders and contribute to the legacy of excellence that defines Harvard's global impact in the realm of higher education. Harvard provides an intellectually stimulating environment where professionals can engage in ground-breaking research, collaborate with esteemed colleagues, and contribute to the global conversation across various disciplines. <o:p></o:p></p>
+<p>Harvard University offers an opportunity to engage in cutting-edge research, inspire the next generation of leaders and contribute to the legacy of excellence that defines Harvard's global impact in the realm of higher education. Harvard provides an intellectually stimulating environment where professionals can engage in ground-breaking research, collaborate with esteemed colleagues, and contribute to the global conversation across various disciplines. </p>
 <p><o:p>&nbsp;</o:p></p>
-<p>Taking on an academic position at Harvard University means embarking on a journey within the pinnacle of higher education. With a commitment to innovation, diversity, and leadership development, a career at Harvard represents not just a job but a transformative journey where individuals can shape the future of education and make a lasting impact on the world.Bottom of Form<o:p></o:p></p>
+<p>Taking on an academic position at Harvard University means embarking on a journey within the pinnacle of higher education. With a commitment to innovation, diversity, and leadership development, a career at Harvard represents not just a job but a transformative journey where individuals can shape the future of education and make a lasting impact on the world.Bottom of Form</p>
 <p><o:p>&nbsp;</o:p></p>
 <p>It's not just a career move; it's an invitation to be part of an institution that has set the standard for academic distinction and leadership in higher education.</p>
 <p><o:p>&nbsp;</o:p></p>
-<p>Harvard offer a diverse range of academic career opportunities. <o:p></o:p></p>
+<p>Harvard offer a diverse range of academic career opportunities. </p>
 <p><o:p>&nbsp;</o:p></p>
-<p>The specific careers available can vary across different faculties and departments. Here is a list of potential careers at Harvard:<o:p></o:p></p>
+<p>The specific careers available can vary across different faculties and departments. Here is a list of potential careers at Harvard:</p>
 <p><o:p>&nbsp;</o:p></p>
 </div>
 <p>&nbsp;</p>
 <ul>
-<li>Professor<o:p></o:p></li>
-<li>Associate Professor<o:p></o:p></li>
+<li>Professor</li>
+<li>Associate Professor</li>
 <li>Senior Lecturer</li>
-<li><o:p></o:p>Lecturer<o:p></o:p></li>
-<li>Research Fellow<o:p></o:p></li>
-<li>Teaching Fellow<o:p></o:p></li>
-<li>Postdoctoral Researcher<o:p></o:p></li>
-<li>Assistant Professor<o:p></o:p></li>
-<li>Tutor<o:p></o:p></li>
-<li>Academic Coordinator<o:p></o:p></li>
-<li>Course Convenor<o:p></o:p></li>
-<li>Research Assistant<o:p></o:p></li>
-<li>Visiting Professor<o:p></o:p></li>
-<li>Adjunct Professor<o:p></o:p></li>
+<li>Lecturer</li>
+<li>Research Fellow</li>
+<li>Teaching Fellow</li>
+<li>Postdoctoral Researcher</li>
+<li>Assistant Professor</li>
+<li>Tutor</li>
+<li>Academic Coordinator</li>
+<li>Course Convenor</li>
+<li>Research Assistant</li>
+<li>Visiting Professor</li>
+<li>Adjunct Professor</li>
 </ul>
         `,
   },
@@ -744,11 +725,11 @@ export const blogData = [
   {
     // Blog
     status: `published`,
-    rank: 0,
+    rank: 15,
     title: 'Seek all Harvard University Jobs Here ',
     slug: ``,
-    author: ``,
-    updated_at: ``,
+    author: `Gabrielle Ryan`,
+    updated_at: `2023-05-09`,
     image_url: ``,
     alt: ``,
     summary:
@@ -762,30 +743,30 @@ export const blogData = [
           <div>
 <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip6.png"></p>
 <p>&nbsp;</p>
-<p>Find you next job as a part of the academic team at Harvard University, working alongside some of the best. A job at Harvard University represents an unparalleled opportunity to be part of an esteemed institution renowned for its commitment to academic excellence, ground-breaking research, and global impact. Whether as a professor, lecturer, researcher, or academic administrator, individuals at Harvard engage in an intellectually stimulating environment where innovation, diversity, and interdisciplinary collaboration flourish. <o:p></o:p></p>
+<p>Find you next job as a part of the academic team at Harvard University, working alongside some of the best. A job at Harvard University represents an unparalleled opportunity to be part of an esteemed institution renowned for its commitment to academic excellence, ground-breaking research, and global impact. Whether as a professor, lecturer, researcher, or academic administrator, individuals at Harvard engage in an intellectually stimulating environment where innovation, diversity, and interdisciplinary collaboration flourish. </p>
 <p><o:p>&nbsp;</o:p></p>
-<p>A uni job at Harvard, for those seeking academic positions, is highly desirable as it offers opportunities for professional growth and engagement with a diverse and prestigious academic community, making it an ideal destination for academics passionate about advancing their career in higher education. Contributing to the rich tapestry of higher education, jobs at Harvard involve not only teaching and research but also shaping the next generation of leaders. The university's emphasis on global perspectives, state-of-the-art facilities, and a vibrant academic community makes working at Harvard an inspiring and transformative experience within the realm of higher education.<o:p></o:p></p>
-<p><o:p></o:p></p>
+<p>A uni job at Harvard, for those seeking academic positions, is highly desirable as it offers opportunities for professional growth and engagement with a diverse and prestigious academic community, making it an ideal destination for academics passionate about advancing their career in higher education. Contributing to the rich tapestry of higher education, jobs at Harvard involve not only teaching and research but also shaping the next generation of leaders. The university's emphasis on global perspectives, state-of-the-art facilities, and a vibrant academic community makes working at Harvard an inspiring and transformative experience within the realm of higher education.</p>
+<p></p>
 <p><o:p>&nbsp;</o:p></p>
-<p>Harvard University offers a wide range of academic positions across various faculties and departments. <o:p></o:p></p>
+<p>Harvard University offers a wide range of academic positions across various faculties and departments. </p>
 <p><o:p>&nbsp;</o:p></p>
-<p>While specific positions may vary, here is a list of academic jobs that one might find at Harvard:<o:p></o:p></p>
+<p>While specific positions may vary, here is a list of academic jobs that one might find at Harvard:</p>
 </div>
 <p>&nbsp;</p>
 <ul>
-<li>&nbsp; <!--[endif]-->Professor<o:p></o:p></li>
-<li>&nbsp; <!--[endif]-->Associate Professor<o:p></o:p></li>
-<li>&nbsp; <!--[endif]-->Assistant Professor<o:p></o:p></li>
-<li>&nbsp; <!--[endif]-->Lecturer<o:p></o:p></li>
-<li>&nbsp; <!--[endif]-->Research Scientist<o:p></o:p></li>
-<li>&nbsp; <!--[endif]-->Research Fellow<o:p></o:p></li>
-<li>&nbsp; <!--[endif]-->Postdoctoral Researcher<o:p></o:p></li>
-<li>&nbsp; <!--[endif]-->Academic Advisor<o:p></o:p></li>
-<li>&nbsp; <!--[endif]-->Curator<o:p></o:p></li>
-<li>&nbsp; <!--[endif]-->Teaching Fellow<o:p></o:p></li>
-<li>&nbsp; <!--[endif]-->Visiting Scholar<o:p></o:p></li>
-<li>&nbsp; <!--[endif]-->Director of Research<o:p></o:p></li>
-<li>&nbsp; <!--[endif]-->Lab Manager<o:p></o:p></li>
+<li>&nbsp; Professor</li>
+<li>&nbsp; Associate Professor</li>
+<li>&nbsp; Assistant Professor</li>
+<li>&nbsp; Lecturer</li>
+<li>&nbsp; Research Scientist</li>
+<li>&nbsp; Research Fellow</li>
+<li>&nbsp; Postdoctoral Researcher</li>
+<li>&nbsp; Academic Advisor</li>
+<li>&nbsp; Curator</li>
+<li>&nbsp; Teaching Fellow</li>
+<li>&nbsp; Visiting Scholar</li>
+<li>&nbsp; Director of Research</li>
+<li>&nbsp; Lab Manager</li>
 </ul>
           `,
   },
@@ -793,11 +774,11 @@ export const blogData = [
   {
     // Blog
     status: `published`,
-    rank: 0,
+    rank: 16,
     title: 'Seek all UCLA Jobs Here ',
     slug: ``,
-    author: ``,
-    updated_at: ``,
+    author: `Gabrielle Ryan`,
+    updated_at: `2023-06-28`,
     image_url: ``,
     alt: ``,
     summary:
@@ -811,33 +792,33 @@ export const blogData = [
             <div>
             <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip7.png"></p>
             <p>&nbsp;</p>
-            <p>Find you next job as a part of the academic team at the University of California, Los Angeles, working alongside some of the best. <o:p></o:p></p>
+            <p>Find you next job as a part of the academic team at the University of California, Los Angeles, working alongside some of the best. </p>
             <p><o:p>&nbsp;</o:p></p>
-            <p>A job at UCLA University, within the realm of higher education and academic positions, opens the door to a dynamic and intellectually vibrant community. At UCLA innovation, diversity, and a commitment to excellence in academics is highly regarded and can be expected when working in our community. With a commitment to upholding the highest ethical standards, UCLA stands as the nation's No. 1 public university, offering limitless opportunities for career growth and development.<o:p></o:p></p>
+            <p>A job at UCLA University, within the realm of higher education and academic positions, opens the door to a dynamic and intellectually vibrant community. At UCLA innovation, diversity, and a commitment to excellence in academics is highly regarded and can be expected when working in our community. With a commitment to upholding the highest ethical standards, UCLA stands as the nation's No. 1 public university, offering limitless opportunities for career growth and development.</p>
             <p><o:p>&nbsp;</o:p></p>
-            <p><o:p></o:p></p>
-            <p>Academics at UCLA have the unique advantage of not just a job but a meaningful career within a supportive community that is collectively propelling the institution into its second century. Moreover, the investment in employees through a variety of development programs, reduced-fee rates for continued learning, and a dedication to maintaining a healthy work-life balance underscores UCLA's commitment to the holistic growth and well-being of its academic community. <o:p></o:p></p>
-            <p>Bottom of Form<o:p></o:p></p>
-            <p>UCLA, being a comprehensive research university, offers a wide range of academic jobs across various disciplines. <o:p></o:p></p>
+            <p></p>
+            <p>Academics at UCLA have the unique advantage of not just a job but a meaningful career within a supportive community that is collectively propelling the institution into its second century. Moreover, the investment in employees through a variety of development programs, reduced-fee rates for continued learning, and a dedication to maintaining a healthy work-life balance underscores UCLA's commitment to the holistic growth and well-being of its academic community. </p>
+            <p>Bottom of Form</p>
+            <p>UCLA, being a comprehensive research university, offers a wide range of academic jobs across various disciplines. </p>
             <p><o:p>&nbsp;</o:p></p>
-            <p>The faculties at UCLA include:<o:p></o:p></p>
+            <p>The faculties at UCLA include:</p>
             <p><o:p>&nbsp;</o:p></p>
             </div>
             <p>&nbsp;</p>
             <div>
             <ul type="square">
-            <li>Assistant Professor<o:p></o:p></li>
-            <li>Associate Professor<o:p></o:p></li>
-            <li>Full Professor<o:p></o:p></li>
-            <li>Adjunct Professor<o:p></o:p></li>
-            <li>Lecturer<o:p></o:p></li>
-            <li>Clinical Professor<o:p></o:p></li>
-            <li>Research Professor<o:p></o:p></li>
-            <li>Visiting Professor<o:p></o:p></li>
-            <li>Emeritus/Emerita Professor<o:p></o:p></li>
-            <li>Chair or Professor in Residence<o:p></o:p></li>
-            <li>Assistant/Associate/Full Dean<o:p></o:p></li>
-            <li>Endowed Chair Professor<o:p></o:p></li>
+            <li>Assistant Professor</li>
+            <li>Associate Professor</li>
+            <li>Full Professor</li>
+            <li>Adjunct Professor</li>
+            <li>Lecturer</li>
+            <li>Clinical Professor</li>
+            <li>Research Professor</li>
+            <li>Visiting Professor</li>
+            <li>Emeritus/Emerita Professor</li>
+            <li>Chair or Professor in Residence</li>
+            <li>Assistant/Associate/Full Dean</li>
+            <li>Endowed Chair Professor</li>
             </ul>
             </div>
             <p>&nbsp;</p>
@@ -847,11 +828,11 @@ export const blogData = [
   {
     // Blog
     status: `published`,
-    rank: 0,
+    rank: 17,
     title: 'Start you Career at UCLA ',
     slug: ``,
-    author: ``,
-    updated_at: ``,
+    author: `Gabrielle Ryan`,
+    updated_at: `2023-08-24`,
     image_url: ``,
     alt: ``,
     summary:
@@ -862,31 +843,31 @@ export const blogData = [
     content: `<div>
               <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip8.png"></p>
               <p>&nbsp;</p>
-              <p>Academic Jobs can help you kick start your career at UCLA today!<o:p></o:p></p>
-              <p><br>A career at The University of California, Los Angeles (UCLA) in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. Whether in faculty roles such as Assistant, Associate, or Full Professors, or engaging in dynamic administrative positions within higher education, UCLA provides a platform for professionals to thrive, fostering a culture of innovation, diversity, and continuous learning. <o:p></o:p></p>
+              <p>Academic Jobs can help you kick start your career at UCLA today!</p>
+              <p><br>A career at The University of California, Los Angeles (UCLA) in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. Whether in faculty roles such as Assistant, Associate, or Full Professors, or engaging in dynamic administrative positions within higher education, UCLA provides a platform for professionals to thrive, fostering a culture of innovation, diversity, and continuous learning. </p>
               <p><o:p>&nbsp;</o:p></p>
-              <p>A career at UCLA opens doors to a vibrant community of scholars, offering academic positions and higher education opportunities that empower individuals to contribute to the excellence of the nation's top public university. Joining UCLA means embracing a commitment to True Bruin Values, upholding ethical standards, and playing a pivotal role in shaping the future of higher education while enjoying the picturesque campus in Westwood, just five miles from the Pacific Ocean.<o:p></o:p></p>
+              <p>A career at UCLA opens doors to a vibrant community of scholars, offering academic positions and higher education opportunities that empower individuals to contribute to the excellence of the nation's top public university. Joining UCLA means embracing a commitment to True Bruin Values, upholding ethical standards, and playing a pivotal role in shaping the future of higher education while enjoying the picturesque campus in Westwood, just five miles from the Pacific Ocean.</p>
               <p><o:p>&nbsp;</o:p></p>
-              <p>UCLA, being a comprehensive research university, offers a diverse range of academic careers across various disciplines and departments. <o:p></o:p></p>
+              <p>UCLA, being a comprehensive research university, offers a diverse range of academic careers across various disciplines and departments. </p>
               <p><o:p>&nbsp;</o:p></p>
-              <p>Academic career paths at UCLA include:<o:p></o:p></p>
+              <p>Academic career paths at UCLA include:</p>
               </div>
               <p>&nbsp;</p>
               <ul>
-              <li>&nbsp; <!--[endif]-->Assistant Professor<o:p></o:p></li>
-              <li>&nbsp; <!--[endif]-->Associate Professor<o:p></o:p></li>
-              <li>&nbsp; <!--[endif]-->Full Professor<o:p></o:p></li>
-              <li>&nbsp; <!--[endif]-->Lecturer<o:p></o:p></li>
-              <li>&nbsp; <!--[endif]-->Clinical Professor<o:p></o:p></li>
-              <li>&nbsp; <!--[endif]-->Research Professor<o:p></o:p></li>
-              <li>&nbsp;<!--[endif]-->Adjunct Professor<o:p></o:p></li>
-              <li>&nbsp; <!--[endif]-->Emeritus/Emerita Professor<o:p></o:p></li>
-              <li>&nbsp; <!--[endif]-->Instructor<o:p></o:p></li>
-              <li>&nbsp; <!--[endif]-->Librarian Positions<o:p></o:p></li>
-              <li>&nbsp; <!--[endif]-->Curator Positions<o:p></o:p></li>
-              <li>&nbsp; <!--[endif]-->Department Chair<o:p></o:p></li>
-              <li>&nbsp; <!--[endif]-->Dean Positions<o:p></o:p></li>
-              <li>&nbsp; <!--[endif]-->Research Scientist<o:p></o:p></li>
+              <li>&nbsp; Assistant Professor</li>
+              <li>&nbsp; Associate Professor</li>
+              <li>&nbsp; Full Professor</li>
+              <li>&nbsp; Lecturer</li>
+              <li>&nbsp; Clinical Professor</li>
+              <li>&nbsp; Research Professor</li>
+              <li>&nbsp;Adjunct Professor</li>
+              <li>&nbsp; Emeritus/Emerita Professor</li>
+              <li>&nbsp; Instructor</li>
+              <li>&nbsp; Librarian Positions</li>
+              <li>&nbsp; Curator Positions</li>
+              <li>&nbsp; Department Chair</li>
+              <li>&nbsp; Dean Positions</li>
+              <li>&nbsp; Research Scientist</li>
               <li>Postdoctoral Scholar</li>
               </ul>`,
   },
