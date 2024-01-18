@@ -96,6 +96,11 @@ const Footer = () => {
                 Linkedin
               </a>
             </li>
+            <li>
+              <a href="https://www.instagram.com/academicjobs_/">
+                Instagram
+              </a>
+            </li>
           </ul>
         </div>
       </div>

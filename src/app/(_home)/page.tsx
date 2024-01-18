@@ -142,22 +142,21 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/assistant-associate-professor-of-environmental-toxicology-tenure-track-appointment/78925/"
+                    href="/jobs/assistant-professor-associate-professor-of-economics/81980/"
                     className="text-blue-500 font-bold"
                   >
-                    Assistant/Associate Professor of Environmental Toxicology
-                    (tenure track appointment)
+                    Assistant Professor/Associate Professor of Economics
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">University of California Davis</Link>
+                    <Link href="">University of North Carolina Wilmington</Link>
                   </li>
                   <li>
-                    <Link href="">Davis, CA, USA</Link>
+                    <Link href="">Wilmington, North Carolina, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Feb 14, 2024</Link>
+                    <Link href="">Feb 5, 2024</Link>
                   </li>
                 </ul>
               </ul>
@@ -213,26 +212,30 @@ export default function myPage() {
             </div>
           </div>
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-            <div className="column">
+          <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/assistant-professor-associate-professor-of-economics/81980/"
+                    href="/jobs/assistant-associate-professor-of-environmental-toxicology-tenure-track-appointment/78925/"
                     className="text-blue-500 font-bold"
                   >
-                    Assistant Professor/Associate Professor of Economics
+                    Assistant/Associate Professor of Environmental Toxicology
+                    (tenure track appointment)
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">University of North Carolina Wilmington</Link>
+                    <Link href="">University of California Davis</Link>
                   </li>
                   <li>
-                    <Link href="">Wilmington, North Carolina, USA</Link>
+                    <Link href="">Davis, CA, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Feb 5, 2024</Link>
+                    <Link href="">Feb 14, 2024</Link> 
                   </li>
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4867143" className="btn btn-sm btn-aj mt-4"> 
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
@@ -240,11 +243,10 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/disability-support-programs-and-services-dsps-full-time-tenure-track-counselor/82204"
+                    href="/jobs/disability-support-programs-and-services-dsps-full-time-tenure-track-counselor/82203"
                     className="text-blue-500 font-bold"
                   >
                     Disability Support Programs and Services (DSPS) Full-Time Tenure Track Counselor
-
                   </Link>
                 </li>
                 <ul className="innerUL">
@@ -257,6 +259,9 @@ export default function myPage() {
                   <li>
                     <Link href="">Feb 19, 2024</Link>
                   </li>
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4938583" className="btn btn-sm btn-aj mt-4"> 
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
@@ -280,6 +285,9 @@ export default function myPage() {
                   <li>
                     <Link href="">Mar 11, 2024</Link>
                   </li>
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4922759" className="btn btn-sm btn-aj mt-4"> 
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
@@ -287,22 +295,25 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="https://www.academicjobs.com/jobs/clinical-associate-professor-of-leadership/78640/"
+                    href="/jobs/assistant-to-associate-dean-of-undergrad-programs/82206"
                     className="text-blue-500 font-bold"
                   >
-                    Clinical Associate Professor of Leadership
+                    Assistant to Associate Dean of Undergrad Programs
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">University of Chicago</Link>
+                    <Link href="">Oregon State University</Link>
                   </li>
                   <li>
-                    <Link href="">Chicago, IL, USA</Link>
+                    <Link href="">Corvallis, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Jan 19, 2023</Link>
+                    <Link href="">Apr 16, 2024</Link>
                   </li>
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4929143" className="btn btn-sm btn-aj mt-4"> 
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
@@ -328,6 +339,9 @@ export default function myPage() {
                   <li>
                     <Link href="">Mar 11, 2024</Link>
                   </li>
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4921373" className="btn btn-sm btn-aj mt-4"> 
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
@@ -351,6 +365,9 @@ export default function myPage() {
                   <li>
                     <Link href="">Mar 15, 2024</Link>
                   </li>
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4931492" className="btn btn-sm btn-aj mt-4"> 
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
@@ -397,9 +414,13 @@ export default function myPage() {
                   <li>
                     <Link href="">Mar 10, 2024</Link>
                   </li>
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4918224" className="btn btn-sm btn-aj mt-4"> 
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
+
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
