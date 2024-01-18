@@ -20,15 +20,18 @@ export default function myPage() {
 <div className="bg-slate-200 full-width">
       <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
     
-              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4"> Academic Executive Jobs</h1> 
+              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4"> Executive Jobs</h1> 
               
             <div>
             
             <p className="px-7 mb-4 mt-1">
-            View all of the executive jobs that respectable universities now have available on AcademicJobs. Our academic institutions are constantly seeking the greatest executives, and academics may apply for fantastic global academic executive positions through our website.
+            Find your perfect executive position through the world’s best job board! At Academic Jobs we offer the most renowned High Ed jobs at the top universities. Positions in executive roles will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
             </p>
             <p className="px-7 md:flex hidden">
-            Academic Executive Jobs contain leadership, management, and direction for a specific academic unit or function within a higher education institution. Academic Executive Jobs set the goals and objectives of the unit or function, overseeing the academic programs and activities, ensuring the quality and standards of teaching and research, supporting and developing the staff and students, and managing the financial and human resources.
+            The No.1 job board for academics, Academic Jobs, provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!
+            </p>
+            <p className="px-7 md:flex hidden">
+            Find all the best executive jobs here…
             </p>
          
             </div>

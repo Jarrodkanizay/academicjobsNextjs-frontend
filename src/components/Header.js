@@ -92,7 +92,7 @@ export default function Header() {
           }}
         />
       </div>
-      <header className= {`header ${isNavOpen ? 'show-menu max-h-max' : ''} `}>
+      <header className= {`header ${isNavOpen ? 'show-menu max-h-max shadow-xl' : ''} `}>
         <nav>
           {pathname === '/' ? null : (
             <Link href="/" className="hide-mobile static-logo mr-4">

@@ -25,11 +25,15 @@ export default function myPage() {
             <div className="">
             
             <p className="px-7 mb-4 mt-1">
-            All graduate job openings from the top universities are available on our site. Apply on our website for amazing graduate roles worldwide, since our academic institutions are always looking for the best graduate jobs.
+            Seek your perfect graduate position through the world’s best job board! At Academic Jobs we offer the most renowned graduate jobs at the top universities. For young professionals looking for industry experience, on-field training, personality development and course credit, at Academic Jobs we aim to help find the most exciting opportunities for new graduates.
             </p>
             <p className="px-7 md:flex hidden">
-            Graduate jobs are temporary or part-time positions in a variety of departments and functions in a university or research institute. These positions give graduates the chance to improve their academic and social networks, earn money, obtain useful work experience, and develop employability skills. Graduate positions can be found in a variety of fields, such as research, teaching, administration, customer service, events, marketing, IT, and libraries. You can locate graduate programs, part-time and casual work, and unique internship possibilities in Australia and throughout the world if you're interested in seeking graduate jobs. You can obtain important work experience and abilities that will benefit you in your future career by applying for these opportunities.
+            The No.1 job board for graduates, Academic Jobs, provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
             </p>
+            <p className="px-7 md:flex hidden">
+            Find all the best graduate jobs here…
+            </p>
+         
          
             </div>
           </div>

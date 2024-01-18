@@ -82,9 +82,7 @@ export default function Page() {
         <p className="px-7">
         The number 1 job board for academics can help you find your dream academic position through our services. At Academic Jobs, we value our customers interests by providing the best career choices possible, making us the best job board for higher education jobs globally!</p>
         </p>
-        <p className="px-7">
-        The number 1 job board for academics can help you find your dream academic career through our services. At Academic Jobs, we value our customers interests by providing the best career choices possible, making us the best job board for higher education positions globally!
-</p>
+      
       
       
     

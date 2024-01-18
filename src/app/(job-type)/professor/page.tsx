@@ -22,26 +22,17 @@ export default function myPage() {
       <div className="bg-slate-200 full-width">
       <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
     
-              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">Academic Professor Jobs</h1> 
+              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">Professor Jobs</h1> 
               
             <div className="">
             
             <p className="px-7 mb-4 mt-1">
-            See all available professor job opportunities on AcademicJobs right now
-        from reputable colleges. Our institutions are always looking for the
-        best professors, and through our academic platform, academics may apply
-        for amazing worldwide academic professor jobs.
+            Discover your perfect professor position through the world’s best job board! At Academic Jobs we offer the most renowned professor jobs at the top universities. A career as an academic professor will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
             </p>
             <p className="px-7 md:flex hidden">
-            Our Academic professor jobs are professor of law, professor of computer
-        science, professor of practice, professor of chemistry, professor of
-        engineering, and other professor jobs. Academic professor jobs deliver
-        courses, supervising students and staff, conducting original and
-        impactful research, publishing in academic journals and books, applying
-        for grants and funding, collaborating with other researchers and
-        institutions, engaging with industry and community partners, and
-        contributing to the academic governance and administration.
-            </p>
+            The No.1 job board for professors, Academic Jobs, provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you!</p>
+            <p className="px-7 md:flex hidden">
+            Find all the best jobs here…</p>
          
             </div>
           </div>

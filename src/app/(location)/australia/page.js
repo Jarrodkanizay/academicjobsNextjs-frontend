@@ -139,6 +139,15 @@ export default function Page() {
             <li>
               <Link href="/perth/"> Perth</Link>
             </li>
+            <li>
+              <Link href="/adelaide/"> Adelaide</Link>
+            </li>
+            <li>
+              <Link href="/tasmania/"> Tasmania</Link>
+            </li>
+            <li>
+              <Link href="/hobart/"> Hobart</Link>
+            </li>
             {/* <li>
               <Link href="/adelaide/"> Adelaide</Link>
             </li> */}

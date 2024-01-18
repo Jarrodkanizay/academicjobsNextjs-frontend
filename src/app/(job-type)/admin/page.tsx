@@ -22,15 +22,18 @@ export default function myPage() {
               <div className="bg-slate-200 full-width">
       <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
     
-              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">University Admin & Support Jobs</h1> 
+              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">Admin Jobs</h1> 
               
             <div className="">
             
             <p className="px-7 mb-4 mt-1">
-            We have posts of all admin positions from the best institutions. Our academic institutions are constantly seeking the greatest admin staff, so apply on our website for incredible admin positions across the world.
+            Seek your perfect admin position through the world’s best job board! At Academic Jobs we offer the most renowned Higher Ed jobs at the top universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
             </p>
             <p className="px-7 md:flex hidden">
-            Academic Admin and support Jobs will need to have a diploma or higher qualification in business administration or a related field, as well as relevant work experience in academic administration and support. Academic Admin and support Jobs will also need to have excellent communication, interpersonal, organizational, and problem-solving skills. Academic Admin and support Jobs need to be familiar with the policies and procedures of the higher education sector, as well as the applicable laws and regulations.
+            The No.1 job board, Academic Jobs, provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
+            </p>
+            <p className="px-7 md:flex hidden">
+            Find all the best administrative jobs here…
             </p>
          
             </div>
