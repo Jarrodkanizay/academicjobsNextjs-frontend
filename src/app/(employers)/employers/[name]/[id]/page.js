@@ -171,17 +171,22 @@ const Employer = () => {
                 }}
               />
             </div>
-            <div className="md:flex md:flex-col gap-6 ">
-              <h1 className="text-3xl font-bold text-white pt-4">
+            <div className="md:flex md:flex-col gap-1 ">
+              <h1 className="text-3xl leading-[1rem] font-bold text-white ">
                 {company_name}
               </h1>
-              <div className="md:flex  md:gap-6 py-4">
-                <div className="text-white md:flex md:items-center md:justify-start md:gap-2 .col-auto py-4">
+              <div className='flex gap-2'>
+                <p className="text-xl  leading-[.75rem]  font-bold text-white ">Employer Ranking -</p>
+                <p className="text-xl  leading-[.75rem]  font-bold text-yellow-500 ">{ranking} stars</p>
+              </div>
+             
+              <div className="md:flex  md:gap-6 ml-[-3px]">
+                <div className="text-white md:flex md:items-center md:justify-start md:gap-2 .col-auto">
                   <MdLocationPin />
                   {location}
                 </div>
                 {website && (
-                  <div className="text-white md:flex md:items-center md:justify-start md:gap-2 py-4">
+                  <div className="text-white md:flex md:items-center md:justify-start md:gap-2">
                     <AiOutlineGlobal />
                     <a href={website} className="">
                       {website}
