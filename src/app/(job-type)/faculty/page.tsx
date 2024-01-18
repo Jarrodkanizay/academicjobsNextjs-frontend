@@ -22,15 +22,18 @@ export default function myPage() {
               <div className="bg-slate-200 full-width">
       <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
     
-              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">Search for a Faculty Position in Academia</h1> 
+              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">Faculty Jobs</h1> 
               
             <div>
             
             <p className="px-7 mb-4 mt-1">
-            Find all academic positions by discipline, faculty and specialty.
+            Seek your perfect faculty position through the world’s best job board! At Academic Jobs we offer the most renowned uni jobs at the top universities. Positions in academic faculty will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
             </p>
             <p className="px-7">
-            All Lecturing, Research and Science jobs online today.
+            The No.1 job board for uni jobs, Academic Jobs, provides an extensive list of opportunities for the future of your career, carefully sectioning the top faculty jobs to find the best position for you!
+            </p>
+            <p className="px-7">
+            Find all the best academic faculty jobs here…
             </p>
          
             </div>

@@ -22,22 +22,18 @@ export default function myPage() {
       <div className="bg-slate-200 full-width">
       <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
     
-              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">Academic Research Jobs</h1> 
+              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">Research Jobs</h1> 
               
             <div className="">
             
             <p className="px-7 mb-4 mt-1">
-            Explore all top Research positions at leading universities and
-          colleges to find your dream job. Highly sought-after researchers find
-          local and global opportunities through our platform, secure your new
-          role today.
+            Find your perfect research position through the world’s best job board! At Academic Jobs we offer the most renowned research jobs at the top universities. A career as an academic researcher will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
             </p>
             <p className="px-7 md:flex hidden">
-            Work on groundbreaking projects as an Academic Researcher. Foster
-          original, innovative research in diverse fields with esteemed
-          institutions. Collaborate with experts, and contribute to
-          bleeding-edge studies. Are you ready to elevate your career by making
-          impactful contributions to the forefront of knowledge?
+            The No.1 job board for researchers, Academic Job, provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you!
+            </p>
+            <p className="px-7 md:flex hidden">
+            Find all the best research jobs here…
             </p>
          
             </div>

@@ -19,16 +19,20 @@ export default function myPage() {
 <div className="bg-slate-200 full-width">
       <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
     
-              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4"> Academic PHD Jobs</h1> 
+              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">PHD Jobs</h1> 
               
             <div className="">
             
             <p className="px-7 mb-4 mt-1">
-            Our website lists all PHD position available at the best institutions. Our academic institutions are constantly searching for the greatest PHD job seekers, therefore apply on our website for fantastic PHD opportunities globally.
+            Discover your ideal postdoctoral position through the world’s best job board! At Academic Jobs, we offer postdoc opportunities at the most prestigious universities worldwide. Engage with domestic and international partners, collaborate with brilliant minds, and access state-of-the-art facilities and resources in a fulfilling postdoctoral experience.
             </p>
             <p className="px-7 md:flex hidden">
-            PhD jobs on campus involve working part-time or casually in various roles and departments within a university or research institute setting. These jobs provide PhD graduates with the opportunity to earn income, gain valuable work experience, develop employability skills, and enhance their academic and social networks. PhD jobs on campus can cover administration, customer service, events, marketing, IT, library, research, teaching, and other roles. You can find hundreds of job postings from universities across Australia and around the world. Gain valuable work experience and skills by applying today!
+            The No.1 job board for academics, Academic Jobs, offers a comprehensive list of opportunities to shape the trajectory of your career. We carefully categorise top Higher Ed fellowships, scholarships, and programs, making it your go-to resource for advancing in academia.
             </p>
+            <p className="px-7 md:flex hidden">
+            Explore all the finest postdoctoral positions right here...
+            </p>
+         
          
             </div>
           </div>

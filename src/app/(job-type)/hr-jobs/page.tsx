@@ -22,15 +22,15 @@ export default function myPage() {
               <div className="bg-slate-200 full-width">
       <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
     
-              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4"> Higher Ed HR jobs</h1> 
+              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4"> Human Resource Jobs</h1> 
               
             <div>
             
             <p className="px-7 mb-4 mt-1">
-            Dive into the dynamic world of higher education HR with our curated selection of roles. Our platform connects HR professionals to unique opportunities in universities and colleges, where you can foster talent and drive organizational success.
+            Discover your perfect human resource position through the world’s best job board! At Academic Jobs we offer the most renowned HR jobs at the top universities. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
             </p>
             <p className="px-7 md:flex hidden">
-            Higher education HR jobs offer more than a role; they're a journey into vibrant academic communities. Embrace the challenge and satisfaction of shaping educational excellence and nurturing a positive workplace culture. Find your next HR opportunity with Academic Jobs.
+            The No.1 job board for HR professionals in universities. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.
             </p>
          
             </div>
