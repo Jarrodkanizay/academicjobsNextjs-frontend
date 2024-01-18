@@ -73,9 +73,9 @@ export default function Page() {
   return (
     <>
       <main className="">
-        <div className="blurb text-left pb-4">
+        <div className="blurb text-left ">
           {/* Hero banner */}
-          <div className="hero max-h-fit bg-white py-8">
+          <div className="hero max-h-fit bg-white ">
             <div className=" mx-auto">
               <div className="hero-content flex-col lg:flex-row gap-8">
                 <Image
@@ -87,21 +87,22 @@ export default function Page() {
                 />
                 <div>
                   <h1 className="text-xl text-[#265882]">
-                  <span className="text-7xl font-bold text-right pb-4 text-[#c1d72e]">Welcome!&nbsp;</span> <br/> In Partnership with JobElephant, Get On Your #1 Job Board
+                  <span className="text-7xl font-bold text-right pb-4 text-[#c1d72e]">Welcome to <br/> the JobElephant <br/> client center!&nbsp;</span> <br/>
                   </h1>
-                  {/* <p className="pt-6 font-bold">
+                  
+                  {/* {/* <p className="pt-6 font-bold">
                   Get a Free Featured Job Listing Everytime
-                  </p>
-                  <p className="pb-6">
-                  50% off next job advertisement  
                   </p> */}
+                  <p className=" font-bold text-[#265882] text-xl">
+                  Making it easy for you to post all your jobs on AcademicJobs.com  <br/>Your #1 college and university job board... for price, reach and results
+                  </p> 
                   {/* <a href="#pricing-table-cards" className="btn btn-aj">
                     Post a Job
                   </a> */}
 
 <Link
                  href="https://cportal.jobelephant.com/login"
-                 className="btn text-white mt-8 bg-[#265882]"
+                 className="btn text-white mt-1 bg-[#265882]"
                >
                   Post Your Job Now
                </Link>
@@ -114,7 +115,7 @@ export default function Page() {
           <div className=" mx-auto bg-slate-200">
               <div className="hero-content flex-col lg:flex-row gap-8 max-w-screen-lg mx-auto">
 <p className="p-8  text-2xl font-bold  text-gray-600">
-                  Get your free college or university profile on academicjobs with your first job listing! 
+                  Get YOUR FREE college or university PROFILE on AcademicJobs with your first job listing! 
                   </p>
                   <Link
                  href="https://cportal.jobelephant.com/login"
@@ -144,21 +145,28 @@ export default function Page() {
              
               className="rounded-3xl w-20 h-20"
             /> */}
+          
             <div className="ml-5">
-              <span className="block text-2xl font-semibold">
+            <span className="block text-[5.3rem] font-semibold text-[#c1d72e]">
+               Our Gift to You
+              </span>
+              <span className="block text-3xl font-semibold">
                 {pricing.cta}
               </span>
               <span>
                 <span className="font-medium text-gray-500 text-xl align-top">
                   {pricing.currencySymbol}&thinsp;
                 </span>
-                <span className="text-3xl font-bold text-[#265882]">
-                Your Exclusive JobElephant Network 
+                <span className="text-5xl font-bold text-[#265882]">
+                Stand Out Above the Rest
                 </span>{" "}
               </span>
             </div>
           </div>
-          <ul className="mb-7 font-medium text-gray-500">
+
+
+          
+          {/* <ul className="mb-7 font-medium text-gray-500">
             <li className="flex text-lg mb-2">
               <Image  width="20"
             height="20"
@@ -192,7 +200,7 @@ export default function Page() {
                 <span className="text-black"> anytime </span>
               </span>
             </li> */}
-          </ul>
+          {/* </ul> */} 
 
           <Link
                  href="https://cportal.jobelephant.com/login"

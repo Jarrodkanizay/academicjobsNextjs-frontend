@@ -25,7 +25,7 @@ export default function Page() {
         />
       </div>
       <JobSearchBox l="USA" />
-      <div className=" mt-[10rem] " >
+      <div className=" mt-[3rem] " >
         <ul className=" flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <li><Link href="/boston/" >	Boston </Link></li>
           <li><Link href="/new-york/" >	New York</Link></li>
@@ -58,6 +58,13 @@ export default function Page() {
           <li><Link href="/jobs/casual/" >	Casual</Link></li>
         </ul>
       </div>
+      <a href="/jobelephant-recruitment"><Image
+              width={180}
+              height={170}
+              src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
+              className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
+              alt="AI Powered Recruitment Platform"
+                         /> </a>
       <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">
         <a href="#section" class="scroll-smooth md:scroll-auto">
           ▼

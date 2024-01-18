@@ -168,14 +168,16 @@ export default function Header() {
 
           {isNavOpen && (
             <>
-              <button
+            
+              <a
                 className="btn btn-aj w-full mt-4"
-                onClick={handleFormSubmit}
+                // onClick={handleFormSubmit}
+                href="/jobs"
               >
-                Search In Your Country
-              </button>
-              <details class="w-full text-center bg-gray-300 open:bg-[amber-200] duration-300 rounded-3xl ">
-                <summary class="py-2">Search Globally</summary>
+               Search Globally  
+              </a>
+              <details class="w-full text-center bg-gray-300 open:bg-[amber-200] duration-300 rounded-3xl font-bold">
+                <summary class="py-2">Search In Your Country</summary>
                 <a
                   className={`md:w-52  dropdown-content z-[1] menu p-2  bg-slate-100  w-31 } `}
                 >
@@ -200,7 +202,11 @@ export default function Header() {
               </details>
             </>
           )}
+
+     
+          
           <div className="ml-auto">
+           
             <NavItem
               url={`/${countryMappings2[region.toLowerCase()].url}/recruitment/`}
               icon="/post-a-job-icon.svg"
@@ -210,6 +216,9 @@ export default function Header() {
               onClick={() => setIsNavOpen(false)}
             />
           </div>
+
+       
+
         </nav>
       </header>
     </>

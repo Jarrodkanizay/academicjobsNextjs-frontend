@@ -33,6 +33,14 @@ export default function myPage() {
 
       <JobCategoryAndLocationLinks />
 
+      <a href="/jobelephant-recruitment"><Image
+              width={180}
+              height={170}
+              src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
+              className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
+              alt="AI Powered Recruitment Platform"
+                         /> </a>
+
       <a
         href="#section"
         className="scroll-smooth md:scroll-auto text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16rem]"
@@ -80,6 +88,8 @@ export default function myPage() {
             Academic, research &&nbsp;science positions locally & globally
           </h1>
 
+       
+
           <div>
             <p className="px-7 mb-4 mt-1">
               Discover top-tier faculty and administrative roles in the world of
@@ -100,6 +110,8 @@ export default function myPage() {
           </div>
         </div>
       </div>
+
+
 
       {/* <p className="px-7 text-center mt-5">
             <Link
@@ -501,6 +513,13 @@ export default function myPage() {
       <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
         view more top jobs →
       </Link>
+      
+      {/* <div className="ml-2">
+      {/* <Link                 href="https://cportal.jobelephant.com/login"
+                 className="btn text-white mt-8 bg-[#265882] px-4"
+               >
+                  Post Your JobElephant Now
+               </Link></div> */} 
 
       <h2 className="underline-full mt-20">Top Cities for Uni Jobs</h2>
       <div className="cate-group section23 ">
