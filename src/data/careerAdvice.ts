@@ -1,6 +1,5 @@
 export const blogData = [
   {
-    // Done
     status: `published`,
     rank: 1,
     title: 'How to Land Your Dream College Job: A Step-by-Step Guide',
@@ -16,7 +15,6 @@ export const blogData = [
     keywords: 'Academic Dream Jobs. dream college job',
     content: `
   <div class="blog-content">
-  <p>&nbsp;</p>
 <p "padding-top: 40px;  "><span style= >Securing your dream job in the field of academics requires a strategic and purposeful approach. Just as in any other profession, landing an academic position necessitates careful planning, relevant experience, networking, and a strong understanding of the industry. This article aims to guide you through the process of pursuing your dream academic job, building upon the strategies discussed in our previous article on landing a dream job in college. By following these steps, you can increase your chances of achieving your career goals in academia.</span></p>
 <p style="padding-left: 40px; padding-top: 40px; font-weight: bold; "><span >&gt; Step 1 Clarify Your Academic Interests and Aspirations</span></p>
 <p style="padding-left: 40px;"><span >Before embarking on your job search, take the time to reflect on your academic interests and aspirations. Consider the subjects or disciplines that genuinely captivate you and the type of academic role that aligns with your long-term career goals. This self-reflection will help you narrow down your focus and make more informed decisions during your job search.</span></p>
@@ -50,24 +48,20 @@ export const blogData = [
 </div>`,
   },
   {
-    // Blog
     status: `published`,
-    rank: 0,
+    rank: 2,
     title:
       'Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges',
-    slug: ``,
-    author: ``,
-    updated_at: ``,
-    image_url: ``,
-    alt: ``,
+    slug: `exploring-global-landscape-academic-jobs-opportunities-challenges`,
+    author: `Academic Jobs`,
+    published_at: `2023-07-01`,
+    image_url: `/blogs/global-opportunities.jpg`,
+    alt: `Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges`,
     summary:
       'Find out how to prepare yourself for the future of work in academia and discover the best academic jobs across different regions and disciplines.',
     tags: [],
     keywords: 'Global Landscape of Academic Jobs. opportunities and challenges',
-    published_at: '2023-07-07',
     content: `<div class="blog-content">
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Global_Opportunities_2.png" alt="Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges">
-  <p>&nbsp;</p>
 <p><span style="">Exploring the global landscape of academic jobs reveals a diverse range of opportunities and challenges for individuals pursuing careers in academia. Academic jobs encompass various roles, including professors, researchers, postdoctoral fellows, lecturers, and administrative positions within educational institutions.</span></p>
 <p><span style="">Let's delve into the opportunities and challenges associated with academic careers on a global scale.</span></p>
 <p style="padding-top: 40px;><span "><strong>Opportunities</strong>:</span></p>
@@ -94,25 +88,22 @@ export const blogData = [
   },
 
   {
-    // Blog
     status: `published`,
-    rank: 0,
+    rank: 3,
     title:
       'Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise',
-    slug: ``,
-    author: ``,
+    slug: `exploring-the-benefits-of-academic-jobs-online-why-virtual-hiring-is-on-the-rise`,
+    author: `Academic Jobs`,
+    published_at: `2023-06-20`,
     updated_at: ``,
-    image_url: ``,
-    alt: ``,
+    image_url: `/blogs/people-exploring-the-benefits-of-academic-jobs-online-and-virtual-hiring.jpg`,
+    alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
     summary:
       'Learn how to find, apply, and succeed in your dream academic position with our expert tips and resources. ',
     tags: [],
     keywords: 'benefits of academic jobs online. virtual hiring is on the rise',
-    published_at: '20 Jun, 2023',
     content: `
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Virtual_Hiring.png" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
   <div class="blog-content">
-  <p>&nbsp;</p>
   <p><span style="">Virtual hiring for academic jobs has gained significant popularity in recent years, and there are several reasons why it is on the rise beyond just coping with a pandemic!</span></p>
 <p><span style="">This shift to online platforms for academic job recruitment offers numerous benefits for both employers and job seekers.</span></p>
 <p>&nbsp;</p>
@@ -137,22 +128,20 @@ export const blogData = [
   },
 
   {
-    // Blog
     status: `published`,
-    rank: 0,
+    rank: 4,
     title: "Happiness and Academics: Scott Galloway's Algebra of Happiness",
     slug: ``,
-    author: ``,
+    author: `Scott Galloway`,
+    published_at: `2023-10-16`,
     updated_at: ``,
-    image_url: ``,
-    alt: ``,
+    image_url: `/blogs/how-to-be-a-happy-academic.jpg`,
+    alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
     summary:
       'Learn how to find happiness in academia from Scott Galloway, a renowned professor and author of The Algebra of Happiness. ',
     tags: [],
     keywords: 'Academic Happiness. happiness and academics',
-    published_at: '16 Oct, 2023',
     content: `
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/how-to-be-a-happy-academic.jpg" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
 
       <div className="container mx-auto py-4">
 
@@ -180,13 +169,8 @@ export const blogData = [
         <p>&nbsp;</p>
         <p style="padding-left: 40px;"><strong>Expectations:</strong> This is the level of ambition and aspiration that students and educators have for their academic outcomes. Expectations can be motivating and inspiring, but they can also be unrealistic and stressful. Expectations can also affect happiness by creating a gap between what one wants and what one has.</p>
      <p>&nbsp;</p>
-
-
-
-
         <div className="mt-8">
           <p className="mb-4">
-
           <p>&nbsp;</p>
             According to Scott Galloway’s algebra of happiness, academic happiness can be maximized by finding meaning in one’s academic work, building strong relationships with others in one’s academic community, developing skills that match one’s interests and goals, expressing gratitude for the opportunities and achievements in one’s academic life, and adjusting expectations to be realistic and flexible.
             <p>&nbsp;</p></p>
@@ -202,36 +186,28 @@ export const blogData = [
           </ul>
         </div>
       </div>
-
-
 </div>
   `,
   },
 
   {
-    // Blog
     status: `published`,
-    rank: 0,
+    rank: 5,
     title: 'Top Academic Jobs Australia',
-    slug: ``,
-    author: ``,
+    slug: `choosing-the-best-university-in-australia-for-2023`,
+    author: `Academic Jobs`,
+    published_at: `2023-08-10`,
     updated_at: ``,
-    image_url: ``,
-    alt: ``,
+    image_url: `/blogs/top-academic-jobs-australia.jpg`,
+    alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
     summary:
       'Looking for the best academic jobs in Australia? This blog shows the best of faculty, research, and administrative positions at leading universities. ',
     tags: [],
     keywords: 'Top Academic Jobs Australia. Academic Jobs Australia',
-    published_at: '10 Aug, 2023',
-    content: `
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/top-academic-jobs-australia.jpg" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
-
-  <div class="blog-content">
+    content: `<div class="blog-content">
   <div tabindex="0">
 <div>
-<p>&nbsp;</p>
 <h2><span style="font-weight: bold;">How to Choose the Best University and Career Path in Australia for 2023?</span></h2>
-
 <p><span style="">The top Australian university rankings and their top academic jobs are popular questions for students who want to pursue higher education and enjoy a high quality of life. With a diverse and multicultural society, a strong economy, and a beautiful natural environment, Australia offers many opportunities and benefits for academic jobs.</span></p> <p>&nbsp;</p>
 <p><span style="">How do you choose the best university and career path in Australia for 2023? There are many factors to consider, such as your academic interests, your career goals, your budget, your location preferences, and your personal preferences. In this blog post, we will provide some tips and insights to help you make an informed decision.</span></p> <p>&nbsp;</p>
 <h3><span style="font-weight: bold;">Top Australian University Rankings for 2023</span></h3>
@@ -280,80 +256,76 @@ export const blogData = [
   },
 
   {
-    // Blog
     status: `published`,
-    rank: 0,
+    rank: 6,
     title:
       'The Evolution of University Recruitment: Embracing Digital Platforms',
-    slug: ``,
-    author: ``,
-    updated_at: ``,
-    image_url: ``,
-    alt: ``,
+    slug: `evolution-of-university-recruitment`,
+    author: `Academic Jobs`,
+    published_at: `May 15, 2023`,
+    updated_at: `May 15, 2023`,
+    image_url: `/blogs/recruitment-evolution.jpg`,
+    alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
     summary:
       'Learn how digital platforms are transforming the way universities recruit and hire academic talent. Explore the benefits now!',
     tags: [],
     keywords:
       'evolution of university recruitment. evolution of academic recruitment',
-    published_at: 'May 15, 2023',
     content: `
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
-
-  <div class="blog-content">
-  <p>&nbsp;</p><p><p><span style="";">The evolution of university recruitment has undergone significant changes in recent years, with the increasing adoption and integration of digital platforms. Traditional methods of recruitment, such as on-campus career fairs and job postings, have been supplemented and, in some cases, replaced by innovative digital strategies. This shift has been driven by several factors, including advancements in technology, changing candidate preferences, and the need for more efficient and cost-effective recruitment processes. According to a report by McKinsey, companies can reduce their cost per hire by 60% using digital recruiting methods. The Society for Human Resource Management (SHRM) estimates that recruiters can save up to 80% of their time by using AI-powered recruitment tools.</span></p>
-  <p>&nbsp;</p><p><p style="padding-left: 40px;"><span style="";">&gt; One of the key drivers behind the embrace of digital platforms in university recruitment is the rise of online job boards and professional networking sites. Platforms like AcademicJobs.com, LinkedIn, Indeed, and Glassdoor have become popular destinations for both candidates and employers. These platforms offer a vast pool of talent and provide an efficient way for employers to reach out to potential candidates. Employers can post job openings, search for qualified candidates, and even engage in direct communication through messaging features.</span></p>
-  <p>&nbsp;</p><p><p style="padding-left: 40px;"><span style="";">&gt; Social media platforms have also played a significant role in the evolution of university recruitment. Platforms like Facebook, Twitter, and Instagram have become powerful tools for employers to connect with candidates and build their employer brand. Companies now leverage social media to showcase their company culture, share job openings, and engage with potential candidates. This shift has allowed for more personalized and targeted recruitment efforts.</span></p>
-  <p>&nbsp;</p><p><p style="padding-left: 80px; font-weight: bold;"><span style="";"><em>&gt; Some interesting data on the impact of Social Media:</em></span></p>
-<ul>
-<li style="list-style-type: none;">
-<ul>
-<li style="list-style-type: none;">
-<ul>
-<li><span style="padding-left: 80px;";"><em>As of January 2021, there are 2.85 billion monthly active users on Facebook.</em></span></li>
-<li><span style="padding-left: 80px;";"><em>Twitter has over 330 million monthly active users worldwide.</em></span></li>
-<li><span style="padding-left: 80px;";"><em>Instagram has over 1 billion monthly active users.</em></span></li>
-<li><span style="padding-left: 80px;";"><em>A survey by CareerBuilder found that 70% of employers use social media to screen candidates.</em></span></li>
-<p>&nbsp;</p><p></ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>&nbsp;</p><p><p style="padding-left: 40px;"><span style="";">&gt; In addition to online job boards and social media, virtual career fairs and recruitment events have gained popularity. Virtual career fairs provide a convenient and cost-effective alternative to traditional on-campus events. These events typically take place on dedicated virtual platforms where candidates can explore employer booths, chat with recruiters, and even participate in video interviews. Virtual career fairs allow employers to reach a wider audience of candidates from broader geographic locations.</span></p>
-<p>&nbsp;</p><p><p style="padding-left: 80px;"><span style="font-weight: bold;";"><em>&gt; Some interesting data on the growth of Virtual Career Fairs:</em></span></p>
-<ul>
-<li style="list-style-type: none;">
-<ul>
-<li style="list-style-type: none;">
-<ul>
-<p><li><span style="padding-left: 80px;";"><em>The COVID-19 pandemic accelerated the adoption of virtual career fairs.</em></span></li>
-<li><span style="padding-left: 80px;";"><em>In 2020, the number of virtual career fairs increased by 800% compared to the previous year.</em></span></li>
-<li><span style="padding-left: 80px;";"><em>According to a survey by Handshake, 89% of employers plan to participate in virtual career fairs even after.</em></span></li>
-<p>&nbsp;</p><p></ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>&nbsp;</p><p><p style="padding-left: 40px;"><span style="";">&gt; Another significant advancement in university recruitment is the use of artificial intelligence (AI) and data analytics. AI-powered recruitment tools can analyze resumes, screen candidates, and even conduct initial interviews through chatbots. These tools help streamline the recruitment process, save time, and improve the efficiency of candidate selection. Data analytics also play a crucial role in identifying recruitment trends, evaluating the success of recruitment campaigns, and making data-driven decisions.</span></p>
-<p>&nbsp;</p><p><p style="padding-left: 80px;"><span style="font-weight: bold;";"><em>&gt; Some interesting data on Artificial Intelligence in Recruitment:</em></span></p>
-<ul>
-<li style="list-style-type: none;">
-<ul>
-<li style="list-style-type: none;">
-<ul>
-<li><span style="padding-left: 80px;";"><em>The global recruitment software market size is expected to reach $3.41 billion by 2027, driven by the adoption of AI.</em></span></li>
-<li><span style="padding-left: 80px;";"><em>AI-powered chatbots and automated screening tools can save up to 23 hours per hire, according to a study by Ideal.</em></span></li>
-<li><span style="padding-left: 80px;";"><em>A survey by Deloitte found that 33% of HR professionals use AI for candidate sourcing and screening.</em></span></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>&nbsp;</p><p><p><span style="";">The benefits of embracing digital platforms in university recruitment are numerous. Employers can reach a larger and more diverse pool of candidates, reduce costs associated with travel and logistics, and leverage technology to streamline and automate recruitment processes. Candidates also benefit from increased accessibility and the ability to explore job opportunities beyond their immediate geographic area.</span></p>
-<p>&nbsp;</p><p><p><span style="";">However, it's important to note that while digital platforms offer many advantages, they should not completely replace in-person interactions and on-campus engagement. Building personal connections, networking, and experiencing company culture firsthand are still essential aspects of the recruitment process. Therefore, a well-rounded recruitment strategy should incorporate both digital and traditional methods to maximize effectiveness.</span></p>
-<p>&nbsp;</p><p><p><span style="";">In conclusion, the evolution of university recruitment has been shaped by the embrace of digital platforms. The use of online job boards, social media, virtual career fairs, AI-powered tools, and data analytics has transformed the way employers connect with candidates and identify top talent. While digital platforms offer numerous benefits, it's crucial to strike a balance between online and in-person engagement to create a comprehensive and effective recruitment strategy.</span></p>
-<p><span style="";">If you want to talk to us more about university recruitment in academia, contact us at <a href="https://academicjobs.com/contact-us/">AcademicJobs</a>.</span></p>
-            </div>
-  `,
+    <div class="blog-content">
+    <p><span style="">The evolution of university recruitment has undergone significant changes in recent years, with the increasing adoption and integration of digital platforms. Traditional methods of recruitment, such as on-campus career fairs and job postings, have been supplemented and, in some cases, replaced by innovative digital strategies. This shift has been driven by several factors, including advancements in technology, changing candidate preferences, and the need for more efficient and cost-effective recruitment processes. According to a report by McKinsey, companies can reduce their cost per hire by 60% using digital recruiting methods. The Society for Human Resource Management (SHRM) estimates that recruiters can save up to 80% of their time by using AI-powered recruitment tools.</span></p>
+    <p style="padding-left: 40px;"><span style="">&gt; One of the key drivers behind the embrace of digital platforms in university recruitment is the rise of online job boards and professional networking sites. Platforms like AcademicJobs.com, LinkedIn, Indeed, and Glassdoor have become popular destinations for both candidates and employers. These platforms offer a vast pool of talent and provide an efficient way for employers to reach out to potential candidates. Employers can post job openings, search for qualified candidates, and even engage in direct communication through messaging features.</span></p>
+    <p style="padding-left: 40px;"><span style="">&gt; Social media platforms have also played a significant role in the evolution of university recruitment. Platforms like Facebook, Twitter, and Instagram have become powerful tools for employers to connect with candidates and build their employer brand. Companies now leverage social media to showcase their company culture, share job openings, and engage with potential candidates. This shift has allowed for more personalized and targeted recruitment efforts.</span></p>
+    <p style="padding-left: 80px; font-weight: bold;"><span style=""><em>&gt; Some interesting data on the impact of Social Media:</em></span></p>
+    <ul>
+      <li style="list-style-type: none;">
+        <ul>
+          <li style="list-style-type: none;">
+            <ul>
+              <li><span style="padding-left: 80px;"><em>As of January 2021, there are 2.85 billion monthly active users on Facebook.</em></span></li>
+              <li><span style="padding-left: 80px;"><em>Twitter has over 330 million monthly active users worldwide.</em></span></li>
+              <li><span style="padding-left: 80px;"><em>Instagram has over 1 billion monthly active users.</em></span></li>
+              <li><span style="padding-left: 80px;"><em>A survey by CareerBuilder found that 70% of employers use social media to screen candidates.</em></span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p style="padding-left: 40px;"><span style="">&gt; In addition to online job boards and social media, virtual career fairs and recruitment events have gained popularity. Virtual career fairs provide a convenient and cost-effective alternative to traditional on-campus events. These events typically take place on dedicated virtual platforms where candidates can explore employer booths, chat with recruiters, and even participate in video interviews. Virtual career fairs allow employers to reach a wider audience of candidates from broader geographic locations.</span></p>
+    <p style="padding-left: 80px;"><span style="font-weight: bold;"><em>&gt; Some interesting data on the growth of Virtual Career Fairs:</em></span></p>
+    <ul>
+      <li style="list-style-type: none;">
+        <ul>
+          <li style="list-style-type: none;">
+            <ul>
+              <li><span style="padding-left: 80px;"><em>The COVID-19 pandemic accelerated the adoption of virtual career fairs.</em></span></li>
+              <li><span style="padding-left: 80px;"><em>In 2020, the number of virtual career fairs increased by 800% compared to the previous year.</em></span></li>
+              <li><span style="padding-left: 80px;"><em>According to a survey by Handshake, 89% of employers plan to participate in virtual career fairs even after.</em></span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p style="padding-left: 40px;"><span style="">&gt; Another significant advancement in university recruitment is the use of artificial intelligence (AI) and data analytics. AI-powered recruitment tools can analyze resumes, screen candidates, and even conduct initial interviews through chatbots. These tools help streamline the recruitment process, save time, and improve the efficiency of candidate selection. Data analytics also play a crucial role in identifying recruitment trends, evaluating the success of recruitment campaigns, and making data-driven decisions.</span></p>
+    <p style="padding-left: 80px;"><span style="font-weight: bold;"><em>&gt; Some interesting data on Artificial Intelligence in Recruitment:</em></span></p>
+    <ul>
+      <li style="list-style-type: none;">
+        <ul>
+          <li style="list-style-type: none;">
+            <ul>
+              <li><span style="padding-left: 80px;"><em>The global recruitment software market size is expected to reach $3.41 billion by 2027, driven by the adoption of AI.</em></span></li>
+              <li><span style="padding-left: 80px;"><em>AI-powered chatbots and automated screening tools can save up to 23 hours per hire, according to a study by Ideal.</em></span></li>
+              <li><span style="padding-left: 80px;"><em>A survey by Deloitte found that 33% of HR professionals use AI for candidate sourcing and screening.</em></span></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p><span style="">The benefits of embracing digital platforms in university recruitment are numerous. Employers can reach a larger and more diverse pool of candidates, reduce costs associated with travel and logistics, and leverage technology to streamline and automate recruitment processes. Candidates also benefit from increased accessibility and the ability to explore job opportunities beyond their immediate geographic area.</span></p>
+    <p><span style="">However, it's important to note that while digital platforms offer many advantages, they should not completely replace in-person interactions and on-campus engagement. Building personal connections, networking, and experiencing company culture firsthand are still essential aspects of the recruitment process. Therefore, a well-rounded recruitment strategy should incorporate both digital and traditional methods to maximize effectiveness.</span></p>
+    <p><span style="">If you want to talk to us more about university recruitment in academia, contact us at <a href="https://academicjobs.com/contact-us/">AcademicJobs</a>.</span></p>
+  </div>
+    `,
   },
 
   {

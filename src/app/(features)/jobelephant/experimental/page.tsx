@@ -45,6 +45,8 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 
+const newContact = true;
+
 const FormSchema = z.object({
   username: z.string().min(2, {
     message: 'Username must be at least 2 characters.',
@@ -79,13 +81,13 @@ export default function InputForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-6 w-[300px]"
+          className="space-y-6 w-[500px]"
         >
           <div className="grid w-full items-center gap-1.5">
             <Label htmlFor="job-elephant-contact">Name (Job Elephant)</Label>
             <Select>
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Theme" />
+              <SelectTrigger>
+                <SelectValue placeholder="Job Elephant Contact" />
               </SelectTrigger>
               <SelectContent>
                 {jobElephantContacts.map((contact, index) => (
@@ -96,29 +98,63 @@ export default function InputForm() {
               </SelectContent>
             </Select>
           </div>
-          <div className="grid w-full max-w-sm items-center gap-1.5">
-            <Label htmlFor="email">Email</Label>
-            <Input type="email" id="email" placeholder="Email" />
-          </div>
-          <div className="grid w-full max-w-sm items-center gap-1.5">
-            <Label htmlFor="email">
+          {newContact ? (
+            <div className="p-4 border border-sky-200 bg-sky-50">
+              <div className="grid w-full items-center gap-1.5">
+                <Label htmlFor="job_elephant_first_name">First Name</Label>
+                <Input
+                  type="text"
+                  id="job_elephant_first_name"
+                  placeholder="Job Elephant Client Name"
+                  className="bg-white"
+                />
+              </div>
+              <div className="grid w-full items-center gap-1.5 mt-4">
+                <Label htmlFor="job_elephant_last_name">Last Name</Label>
+                <Input
+                  type="text"
+                  id="job_elephant_last_name"
+                  placeholder="Job Elephant Client Name"
+                  className="bg-white"
+                />
+              </div>
+              <div className="grid w-full items-center gap-1.5 mt-4">
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  type="email"
+                  id="email"
+                  className="bg-white"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+          ) : null}
+
+          <div className="grid w-full items-center gap-1.5">
+            <Label htmlFor="job_elephant_client_name">
               Job Elephant Client (ie: Utah University)
             </Label>
-            <Input type="text" id="job-link" placeholder="Job Link" />
+            <Input
+              type="text"
+              id="job_elephant_client_name"
+              placeholder="Job Elephant Client Name"
+            />
           </div>
-          <div className="grid w-full max-w-sm items-center gap-1.5">
-            <Label htmlFor="email">Job Link URL (ie: apptrkr.com/…)</Label>
-            <Input type="text" id="job-link-url" placeholder="Job Link" />
+          <div className="grid w-full items-center gap-1.5">
+            <Label htmlFor="job_link_url">
+              Job Link URL (ie: apptrkr.com/…)
+            </Label>
+            <Input type="text" id="job_link_url" placeholder="Job Link URL" />
           </div>
 
           <div className="grid w-full gap-2">
-            <Label htmlFor="message">Notes</Label>
-            <Textarea placeholder="Type your message here." />
+            <Label htmlFor="message">Notes or Special Instructions</Label>
+            <Textarea id="message" placeholder="Type your message here." />
           </div>
 
-          {/* <div className="grid w-full max-w-sm items-center gap-1.5">
-            <Label htmlFor="picture">Job Post Document</Label>
-            <Input id="picture" type="file" />
+          {/* <div className="grid w-full items-center gap-1.5">
+            <Label htmlFor="job_post_document">Job Post Document</Label>
+            <Input id="job_post_document" type="file" />
           </div> */}
 
           <Button type="submit">Submit</Button>

@@ -1,6 +1,6 @@
 export const blogData = [
   {
-    // Blog 1
+    // Done
     status: `published`,
     title: `Happiness and Academics: Scott Galloway's Algebra of Happiness`,
     slug: ``,
@@ -53,7 +53,7 @@ Expectations: This is the level of ambition and aspiration that students and edu
 According to Scott Galloway’s algebra of happiness, academic happiness can be maximized by finding meaning in one’s academic work, building strong relationships with others in one’s academic community, developing skills that match one’s interests and goals, expressing gratitude for the opportunities and achievements in one’s academic life, and adjusting expectations to be realistic and flexible.`,
   },
   {
-    // Blog 2
+    // Done
     status: `published`,
     title: `How to Choose the Best University and Career Path in Australia for 2023?`,
     slug: `choosing-the-best-university-in-australia-for-2023`,
@@ -217,7 +217,7 @@ In conclusion, landing your dream job in the field of academics requires a combi
 If you want to talk to us more about how to land your dream college job, contact us at AcademicJobs.`,
   },
   {
-    // Blog 4
+    // Done
     status: `published`,
     title: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
     slug: ``,
@@ -300,7 +300,7 @@ Overall, the rise of virtual hiring for academic jobs offers numerous benefits, 
 If you want to talk to us more about virtual hiring, contact us at AcademicJobs`,
   },
   {
-    // Blog 5
+    // Done
     status: `published`,
     title: `Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges`,
     slug: ``,
@@ -383,7 +383,7 @@ Despite the challenges, academic careers can be immensely rewarding for those pa
 If you want to talk to us more about global opportunities in academia, contact us at AcademicJobs.`,
   },
   {
-    // Blog 6
+    // Done
     status: `published`,
     title: `The Evolution of University Recruitment: Embracing Digital Platforms`,
     slug: `evolution-of-university-recruitment`,
