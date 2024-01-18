@@ -37,7 +37,7 @@ export default function Page() {
       basic: "Post Your Job Now",
       basicPrice: 111,
       business: "exclusive to JobElephant Memebers",
-      businessPrice: 1418,
+      businessPrice: 1,
       enterprise: "10 Job Pack",
       enterprisePrice: 2520,
     };
@@ -61,8 +61,7 @@ export default function Page() {
     function createMessage(productName: string, price: number) {
       return encodeURIComponent(`Hi Academic Jobs,
   
-  I would like to purchase the ${productName}. Please send me an
-  invoice for $${formatNumberWithCommas(price)}.
+  I would like to post my Institutional Profile. 
             
   ---Please Post the following for me…
             
@@ -118,7 +117,10 @@ export default function Page() {
                   Get YOUR FREE college or university PROFILE on AcademicJobs with your first job listing! 
                   </p>
                   <Link
-                 href="https://cportal.jobelephant.com/login"
+                 href={`mailto:${emailAJ}?subject=${"Institutional Profile Details"}&body=${createMessage(
+                  pricing.business,
+                  pricing.businessPrice
+                )}`}
                  className="btn btn-aj"
                >
                   Send Profile Details Now
