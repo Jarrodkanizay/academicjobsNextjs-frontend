@@ -6,6 +6,7 @@ import * as z from 'zod';
 
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
 import {
   Form,
   FormControl,
@@ -124,7 +125,10 @@ export default function InputForm() {
     <main className="content-grid">
       <h2 className="underline-full mt-4 mb-8">Job Elephant Post Form</h2>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="space-y-6 w-[300px]"
+        >
           <div className="grid w-full items-center gap-1.5">
             <Label htmlFor="job-elephant-contact">Name (Job Elephant)</Label>
             <Popover open={open} onOpenChange={setOpen}>
@@ -142,7 +146,7 @@ export default function InputForm() {
                   <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                 </Button>
               </PopoverTrigger>
-              <PopoverContent className="w-[200px] p-0">
+              <PopoverContent className="w-full p-0">
                 <Command>
                   <CommandInput placeholder="Search framework..." />
                   <CommandEmpty>No framework found.</CommandEmpty>
@@ -186,6 +190,11 @@ export default function InputForm() {
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="email">Job Link URL (ie: apptrkr.com/…)</Label>
             <Input type="text" id="job-link-url" placeholder="Job Link" />
+          </div>
+
+          <div className="grid w-full gap-2">
+            <Label htmlFor="message">Notes</Label>
+            <Textarea placeholder="Type your message here." />
           </div>
 
           {/* <div className="grid w-full max-w-sm items-center gap-1.5">
