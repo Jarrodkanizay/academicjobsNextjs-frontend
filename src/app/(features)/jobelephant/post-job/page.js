@@ -42,12 +42,9 @@ const TalentPoolForm = () => {
   }
   if (mutation.isSuccess) {
     content = (
-    
       <div className='h-[600px] text-xl font-bold flex flex-col justify-center items-center'>
-        
         <div>Job Info Sent!</div>
         <div>Pls make the payment by clicking the pay button below</div>
-      
       </div>
     )
   } else {
