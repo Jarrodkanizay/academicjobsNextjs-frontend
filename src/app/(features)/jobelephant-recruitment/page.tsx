@@ -4,7 +4,7 @@ import Link from 'next/link';
 import PricingTable from '@/components/PricingTable';
 export const metadata: Metadata = {
   title: 'Post a job - Recruit Academics', //Option 1 replaces the %s in layout.tsx
-  // title: {//
+  // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
@@ -32,11 +32,11 @@ export default function Page() {
 
 
     const pricing: PricingTypes  = {
-      cta: "Buy Single Job Post",
+      cta: "Get a Free Featured Job Listing Everytime",
       currencySymbol: "",
-      basic: "Let's Do It,   Post Now",
+      basic: "Post Your Job Now",
       basicPrice: 111,
-      business: "exclusive to JobElephant",
+      business: "exclusive to JobElephant Memebers",
       businessPrice: 1418,
       enterprise: "10 Job Pack",
       enterprisePrice: 2520,
@@ -75,53 +75,75 @@ export default function Page() {
       <main className="">
         <div className="blurb text-left pb-4">
           {/* Hero banner */}
-          <div className="hero max-h-fit bg-slate-200 py-8">
+          <div className="hero max-h-fit bg-white py-8">
             <div className=" mx-auto">
               <div className="hero-content flex-col lg:flex-row gap-8">
                 <Image
                   width={300}
                   height={300}
                   src="https://academicjobs.s3.amazonaws.com/img/_misc/jobelephant.gif"
-                  className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0 bg-white"
+                  className="lg:max-w-lg rounded-lg mb-8 lg:mb-0 bg-white"
                   alt="AI Powered Recruitment Platform"
                 />
                 <div>
-                  <h1 className="text-xl font-normal">
-                  <span className="text-7xl font-bold text-right pb-4">Welcome!&nbsp;</span> <br/>you've landed on the new AcademicJobs JobElephant portal 
+                  <h1 className="text-xl text-[#265882]">
+                  <span className="text-7xl font-bold text-right pb-4 text-[#c1d72e]">Welcome!&nbsp;</span> <br/> In Partnership with JobElephant, Get On Your #1 Job Board
                   </h1>
-                  <p className="pt-6">
-                    We've just made it easier for all JobElephant staff to post a job for all your clients 
+                  {/* <p className="pt-6 font-bold">
+                  Get a Free Featured Job Listing Everytime
                   </p>
-                  <p className="pb-6 font-bold">
-                    Simply email all your jobs through the link bellow 
-                  </p>
+                  <p className="pb-6">
+                  50% off next job advertisement  
+                  </p> */}
                   {/* <a href="#pricing-table-cards" className="btn btn-aj">
                     Post a Job
                   </a> */}
+
+<Link
+                 href="https://cportal.jobelephant.com/login"
+                 className="btn text-white mt-8 bg-[#265882]"
+               >
+                  Post Your Job Now
+               </Link>
+
                 </div>
               </div>
             </div>
           </div>
 
+          <div className=" mx-auto bg-slate-200">
+              <div className="hero-content flex-col lg:flex-row gap-8 max-w-screen-lg mx-auto">
+<p className="p-8  text-2xl font-bold  text-gray-600">
+                  Get your free college or university profile on academicjobs with your first job listing! 
+                  </p>
+                  <Link
+                 href="https://cportal.jobelephant.com/login"
+                 className="btn btn-aj"
+               >
+                  Send Profile Details Now
+               </Link>
+              </div>
+              </div>
+
           {/* Hero Banner */}
          
-          <div className="">&nbsp;</div>
+        
 
           
 
                   {/* Pricing Card 1 */}
-                  <div className="hero max-h-fit bg-white py-8">
-            <div className="max-w-screen-lg mx-auto">
+                  <div className="hero max-h-fit bg-white ">
+            <div className="max-w-screen-xl mx-auto">
               <div className="hero-content flex-col lg:flex-row gap-12">
-              <div  id="pricing-table-cards" className="md:w-1/2 flex-1 mt-8 mb-8 p-8 bg-white shadow-xl rounded-3xl  md:max-w-screen-sm mx-auto">
+              <div  id="pricing-table-cards" className=" flex-1 mt-8 mb-8  bg-white shadow-xl rounded-3xl  md:max-w-screen-lg mx-auto p-8">
           <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
-            <Image  width="150"
+            {/* <Image  width="150"
             height="150"
             alt=""
               src="https://res.cloudinary.com/williamsondesign/abstract-1.jpg"
              
               className="rounded-3xl w-20 h-20"
-            />
+            /> */}
             <div className="ml-5">
               <span className="block text-2xl font-semibold">
                 {pricing.cta}
@@ -130,8 +152,8 @@ export default function Page() {
                 <span className="font-medium text-gray-500 text-xl align-top">
                   {pricing.currencySymbol}&thinsp;
                 </span>
-                <span className="text-3xl font-bold">
-                exclusive to JobElephant
+                <span className="text-3xl font-bold text-[#265882]">
+                Your Exclusive JobElephant Network 
                 </span>{" "}
               </span>
             </div>
@@ -142,7 +164,7 @@ export default function Page() {
             height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
               <span className="ml-3">
-                30 day single<span className="text-black"> job listing</span>
+                The Offical <span className="text-black">Academic Job Board</span>
               </span>
             </li>
             <li className="flex text-lg mb-2">
@@ -150,18 +172,18 @@ export default function Page() {
             height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
               <span className="ml-3">
-                <span className="text-black">Free </span>employer account
+                <span className="text-black">Modern and Bold </span>to the dated and old job boards
               </span>
             </li>
             <li className="flex text-lg mb-2">
               <Image  width="20"
             height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
-              <span className="ml-3">
-                Ad<span className="text-black"> performance metrics</span>
+              <span className="ml-3 text-black">
+                The #1 <span className="text-gray-500">Exclusive Academic Social Network that fills all university positions</span>
               </span>
             </li>
-            <li className="flex text-lg mb-2">
+            {/* <li className="flex text-lg mb-2">
               <Image  width="20"
             height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
@@ -169,33 +191,33 @@ export default function Page() {
                 Edit job postings
                 <span className="text-black"> anytime </span>
               </span>
-            </li>
+            </li> */}
           </ul>
 
-          <a
-            href="https://www.postmyjob.online/jobelephant-portal"
-            className="flex justify-center items-center bg-aj rounded-xl py-5 px-4 text-center text-white text-3xl font-bold "
-          >
-           {pricing.basic}
-          </a>
+          <Link
+                 href="https://cportal.jobelephant.com/login"
+                 className="btn text-white mt-8 bg-[#265882]"
+               >
+                  Post Your Job Now
+               </Link>
         </div>
 
 
-              <div className="md:w-1/2">
-                <h1 className="text-5xl font-semibold  text-[#f4a10c] "> THIS IS NEW... <br /> don't panic!</h1>
-      <h4 className=" text-gray-700 text-3xl mt-4 font-normal">We are about to launch our new 'recruiter center'. In the meantime, send through your new job using the simple form button...</h4>
+              <div className="md:w-1/3">
+              <Image
+                  width={1280}
+                  height={300}
+                  src="https://academicjobs.s3.amazonaws.com/img/_misc/On-Top.jpeg"
+                  className="lg:max-w-lg rounded-3xl shadow-2xl mb-8 lg:mb-0 bg-white"
+                  alt="AI Powered Recruitment Platform"
+                />
      
                 </div>
               </div>
             </div>
           </div>
  
-        <div className="max-w-xl mx-auto">
-              <div className="hero-content flex-col lg:flex-row">
-             
-               
-              </div>
-            </div>
+      
 
 
         
@@ -210,25 +232,38 @@ export default function Page() {
                 <Image
                   width={1200}
                   height={400}
-                  src="https://academicjobs.s3.amazonaws.com/img/_misc/Web+capture_11-1-2024_161925_jobelephant.com.jpeg"
-                  className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0 bg-white"
+                  src="https://academicjobs.s3.amazonaws.com/img/_misc/Uni-San-Diego.jpeg"
+                  className="lg:max-w-lg rounded-xl shadow-2xl mb-8 lg:mb-0 bg-white"
                   alt="AI Powered Recruitment Platform"
                 />
                 <div className="content-grid">
                   <h2 className="text-xl font-normal text-[#265882]">
-                  <span className="text-3xl font-bold text-right pb-4 text-[#265882] ">Any university can use JobElephant, here's how:&nbsp;</span> <br/>Use JobElephant to load jobs on AcademicJobs! 
+                  <span className="text-3xl font-bold text-right pb-4 text-[#265882] ">You Get&nbsp;</span> <br/>'Priority Employer Branding' 
                   </h2>
                   <p className="pt-6">
-                  Working with JobElephant to create and place your recruitment ads means you have an expert consulting partner that understands your resources and budgets, ensuring effective campaigns for each open position.
+                  When you have a job listing on AcademicJobs
                   </p>
                
-                  <a href="https://jobelephant.com/what-we-do/college-university/" className="btn mt-8 bg-[#265882] text-white">
+                  {/* <a href="https://jobelephant.com/what-we-do/college-university/" className="btn mt-8 bg-[#265882] text-white">
                     JobElephant Website
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
           </div>
+
+
+          <div className=" bg-white p-4 ">
+            <Image
+              width={1280}
+              height={380}
+              src="https://academicjobs.s3.amazonaws.com/img/_misc/Jobelephant-Universities.png"
+              alt="academicjobs university logos "
+              className=" rounded-xl mx-auto max-w-5xl my-12"
+            />
+          </div>
+
+
 
 
           <div className="hero max-h-fit bg-slate-200 py-8">
@@ -269,15 +304,7 @@ then JobElephant is a brilliant choice.""
 
           
      
-        <div className=" bg-white p-4 ">
-            <Image
-              width={1280}
-              height={380}
-              src="https://academicjobs.s3.amazonaws.com/img/_misc/Jobelephant-Universities.png"
-              alt="academicjobs university logos "
-              className=" rounded-xl mx-auto max-w-5xl my-12"
-            />
-          </div>
+  
      
 
         <section className="w-full mx-auto text-center ">
