@@ -66,7 +66,7 @@ export default function Page({ params, searchParams }: any) {
   //const { logo, company_name, website, company_description, location } = data
   //console.log(company_description)
   content = (
-    <div className="content-grid flex-col gap-2">
+    <div className="content-grid flex-col md:gap-2">
       {/* <Link className="text-[#f4a10c] " href="/cities/">
         View all Lecturer Jobs →
       </Link> */}
