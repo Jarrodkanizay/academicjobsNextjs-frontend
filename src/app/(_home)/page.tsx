@@ -233,7 +233,7 @@ export default function myPage() {
                   <li>
                     <Link href="">Feb 14, 2024</Link> 
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4867143" className="btn btn-aj mt-4"> 
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4867143" className="btn btn-sm btn-aj mt-4"> 
                     More Info
                   </Link>
                 </ul>
@@ -259,7 +259,7 @@ export default function myPage() {
                   <li>
                     <Link href="">Feb 19, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4938583" className="btn btn-aj mt-4"> 
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4938583" className="btn btn-sm btn-aj mt-4"> 
                     More Info
                   </Link>
                 </ul>
@@ -285,7 +285,7 @@ export default function myPage() {
                   <li>
                     <Link href="">Mar 11, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4922759" className="btn btn-aj mt-4"> 
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4922759" className="btn btn-sm btn-aj mt-4"> 
                     More Info
                   </Link>
                 </ul>
@@ -311,7 +311,7 @@ export default function myPage() {
                   <li>
                     <Link href="">Apr 16, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4929143" className="btn btn-aj mt-4"> 
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4929143" className="btn btn-sm btn-aj mt-4"> 
                     More Info
                   </Link>
                 </ul>
@@ -339,7 +339,7 @@ export default function myPage() {
                   <li>
                     <Link href="">Mar 11, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4921373" className="btn btn-aj mt-4"> 
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4921373" className="btn btn-sm btn-aj mt-4"> 
                     More Info
                   </Link>
                 </ul>
@@ -365,7 +365,7 @@ export default function myPage() {
                   <li>
                     <Link href="">Mar 15, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4931492" className="btn btn-aj mt-4"> 
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4931492" className="btn btn-sm btn-aj mt-4"> 
                     More Info
                   </Link>
                 </ul>
@@ -414,7 +414,7 @@ export default function myPage() {
                   <li>
                     <Link href="">Mar 10, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4918224" className="btn btn-aj mt-4"> 
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4918224" className="btn btn-sm btn-aj mt-4"> 
                     More Info
                   </Link>
                 </ul>
