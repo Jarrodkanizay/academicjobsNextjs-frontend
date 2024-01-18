@@ -37,49 +37,59 @@ import {
 
 const frameworks = [
   {
-    value: 'Jessica White',
-    label: 'Jessica White',
+    value: 'Jessica  White',
+    email: 'Jessica@jobelephant.com',
+    label: 'Jessica  White',
   },
   {
-    value: 'Trista Nicholson',
-    label: 'Trista Nicholson',
+    value: 'Trista  Nicholson',
+    email: 'Trista@jobelephant.com ',
+    label: 'Trista  Nicholson',
   },
-  { value: 'Lauren ', label: 'Lauren ' },
+  { value: 'Lauren ', email: 'lauren@jobelephant.com ', label: 'Lauren ' },
   {
     value: 'Justin Baker',
+    email: 'justin@jobelephant.com',
     label: 'Justin Baker',
   },
   {
     value: 'Natasha Felix Partida',
+    email: 'natasha@jobelephant.com',
     label: 'Natasha Felix Partida',
   },
-  { value: 'Joe Grant', label: 'Joe Grant' },
-  { value: 'Kim Hoang', label: 'Kim Hoang' },
+  { value: 'Joe Grant', email: 'joe@jobelephant.com ', label: 'Joe Grant' },
+  { value: 'Kim Hoang', email: 'kim@jobelephant.com ', label: 'Kim Hoang' },
   {
     value: 'Lewam Kebreab',
+    email: 'lewam@jobelephant.com ',
     label: 'Lewam Kebreab',
   },
   {
     value: 'Sawyer Kim',
+    email: 'sawyer@jobelephant.com ',
     label: 'Sawyer Kim',
   },
   {
     value: 'Sarah Seagraves',
+    email: 'sarah@jobelephant.com ',
     label: 'Sarah Seagraves',
   },
   {
     value: 'Tyler Sheehan',
+    email: 'tyler@jobelephant.com',
     label: 'Tyler Sheehan',
   },
   {
     value: 'Irene Silveira',
+    email: 'irene@jobelephant.com',
     label: 'Irene Silveira',
   },
   {
     value: 'Hiral Trivedi',
+    email: 'hiral@jobelephant.com ',
     label: 'Hiral Trivedi',
   },
-  { value: 'Anna Felix', label: 'Anna Felix' },
+  { value: 'Anna Felix', email: 'anna@jobelephant.com ', label: 'Anna Felix' },
 ];
 
 const FormSchema = z.object({
@@ -114,11 +124,8 @@ export default function InputForm() {
     <main className="content-grid">
       <h2 className="underline-full mt-4 mb-8">Job Elephant Post Form</h2>
       <Form {...form}>
-        <form
-          onSubmit={form.handleSubmit(onSubmit)}
-          className="w-2/3 space-y-6"
-        >
-          <div className="grid w-full max-w-sm items-center gap-1.5">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+          <div className="grid w-full items-center gap-1.5">
             <Label htmlFor="job-elephant-contact">Name (Job Elephant)</Label>
             <Popover open={open} onOpenChange={setOpen}>
               <PopoverTrigger asChild>
@@ -126,12 +133,12 @@ export default function InputForm() {
                   variant="outline"
                   role="combobox"
                   aria-expanded={open}
-                  className="w-[200px] justify-between"
+                  className="justify-between"
                 >
                   {value
                     ? frameworks.find((framework) => framework.value === value)
                         ?.label
-                    : 'Select framework...'}
+                    : 'Select Job Elephant Contact...'}
                   <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                 </Button>
               </PopoverTrigger>
