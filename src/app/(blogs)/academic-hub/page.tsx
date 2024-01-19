@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 // import { BlogPostTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
-import { formatDate } from '@/utils/utilityScripts.ts';
+import { formatDate } from '@/utils/utilityScripts';
 
 export default function BlogPosts() {
   // function formatDate(input: string) {

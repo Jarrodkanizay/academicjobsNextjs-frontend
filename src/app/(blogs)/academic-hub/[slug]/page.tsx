@@ -1,7 +1,7 @@
 import { blogData } from '@/data/blogData';
 import { BlogPostTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
-import { formatDate } from '@/utils/utilityScripts.ts';
+import { formatDate } from '@/utils/utilityScripts';
 
 // import BlogPost from '@/components/blogs/BlogPost';
 
