@@ -3,8 +3,6 @@ import { BlogPostTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
 import { formatDate } from '@/utils/utilityScripts';
 
-// import BlogPost from '@/components/blogs/BlogPost';
-
 type Params = {
   slug: string;
 };
@@ -27,6 +25,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         para1={post.summary || ''}
         src={post.image_url || ''}
         alt={post.alt || ''}
+        reorder={false}
       />
       <h3>By {post.author}</h3>
       <p>
