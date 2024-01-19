@@ -189,7 +189,7 @@ const Employer = () => {
               />
             </div>
             <div className="md:flex md:flex-col p-4">
-              <h1 className="text-4xl leading-[1rem] font-bold text-gray-500 ">
+              <h1 className="text-4xl leading-[2rem] font-bold text-gray-500 ">
                 {company_name}
               </h1>
               <div className='flex gap-2'>
@@ -248,13 +248,13 @@ const Employer = () => {
             View Jobs
           </div>
         </div> */}
-        <div className="content-grid mx-auto flex">
-          <div className="flex">
+        <div className="content-grid md:mx-auto md:flex">
+          <div className="md:flex flex-col-reverse">
           {viewJob ? (
             <SearchResults q={{ employer_id: id || 0 }} />
           ) : (
             <div
-              className={`max-h-50 overflow-y  p-4 mb-4 rounded-lg  w-1/2 ${
+              className={`max-h-50 overflow-y  p-4 mb-4 rounded-lg  md:w-1/2 ${
                 company_name == 'Bond University' && 'bg-[#f1b821]'
               } ${
                 company_name == 'Queensland University of Technology (QUT)' &&
@@ -303,7 +303,7 @@ const Employer = () => {
             
           )}{' '} 
 
-          <div className="w-1/2 max-h-screen overflow-y-scroll "> 
+          <div className="md:w-1/2 max-h-screen overflow-y-scroll"> 
           <JobSearchBox/>
           <SearchResults q={{ employer_id: id || 0 }} /> </div></div>
 
