@@ -172,13 +172,15 @@ const Employer = () => {
         >
           <div className="md:flex md:justify-start .col-auto mx-auto max-w-screen-xl gap-4">
             <div className="w-[15rem] h-[15rem] mr-4  ">
-              <img
+              <Image
                 //src={logo || '/favicon.png'}
                 src={
                   `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` ||
                   '/favicon.png'
                 }
-                alt={company_name}
+                width={300}
+                height={300}
+                alt={`${company_name} Logo`}
                 className="w-full h-full object-contain rounded-md bg-white "
                 onError={(e) => {
                   e.target.src =
@@ -186,7 +188,7 @@ const Employer = () => {
                 }}
               />
             </div>
-            <div className="md:flex md:flex-col gap-4 p-4">
+            <div className="md:flex md:flex-col p-4">
               <h1 className="text-4xl leading-[1rem] font-bold text-gray-500 ">
                 {company_name}
               </h1>
@@ -195,7 +197,7 @@ const Employer = () => {
                 <p className="text-2xl  leading-[.75rem]  font-bold text-yellow-500 "> ★ {ranking}</p>
               </div>
              
-              <div className="md:flex-col  md:gap-6 ml-[-3px]">
+              <div className="md:flex-col  md:gap-6 ml-[-3px] pt-6">
                 <div className="text-gray-400 md:flex md:items-center md:justify-start md:gap-2 .col-auto">
                   <MdLocationPin />
                   {location}
