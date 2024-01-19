@@ -82,6 +82,30 @@ export default function BlogPosts() {
               </article>
             ))}
           </div>
+
+          
+
+<div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-8 mt-10">
+  <iframe
+    className=" aspect-video  rounded-3xl"
+    src="https://www.youtube.com/embed/bEEmo_KhOOk?si=yiNtzXaYyASiWU8W"
+    title="YouTube video player"
+  ></iframe>
+
+  <iframe
+    className=" aspect-video rounded-3xl"
+    src="https://www.youtube.com/embed/hSbjVkmSIrc?si=qeq_VAZ3ZEQpWhjh"
+    title="YouTube video player"
+  ></iframe>
+
+  <iframe
+    className=" aspect-video rounded-3xl"
+    src="https://www.youtube.com/embed/yn-ctFDfI60?si=REwYQIJFPBm6NnXm"
+    title="YouTube video player"
+  ></iframe>
+</div>
+
+
           <h2 className="underline-full mt-16 mb-8">Academic Blog Posts</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {blogData.slice(6).map((post, index) => (
