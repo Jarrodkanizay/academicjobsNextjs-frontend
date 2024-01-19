@@ -27,7 +27,7 @@ export default function NavLink({
       <div
         className={`nav-link nav-link-ltr whitespace-nowrap text-gray-900 ${forceButtonClass}`}
       >
-        <span className="flex flex-row items-center justify-center gap-1 m-auto">
+        <span className="flex flex-row items-center justify-center gap-1 m-auto pb-3 px-3 shadow-md">
           {icon && (
             <Image
               className={`nav-icon ${forceImageClass}`}
