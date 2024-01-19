@@ -5,8 +5,20 @@ import { formatDate } from '@/utils/utilityScripts';
 
 // import BlogPost from '@/components/blogs/BlogPost';
 
-export default function BlogPostPage({ params }) {
+type Params = {
+  slug: string;
+};
+
+type BlogPostPageProps = {
+  params: Params;
+};
+
+export default function BlogPostPage({ params }: BlogPostPageProps) {
   const post = blogData.find((post) => post.slug === params.slug);
+
+  if (!post) {
+    return <div>Post not found</div>;
+  }
 
   return (
     <main className="blog-post content-grid">
