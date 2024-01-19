@@ -100,6 +100,7 @@ export default function Page() {
                   </a> */}
 
 <Link
+target="_blank"
                  href="https://cportal.jobelephant.com/login"
                  className="btn text-white mt-1 bg-[#265882]"
                >
@@ -117,6 +118,7 @@ export default function Page() {
                   Get YOUR FREE college or university PROFILE on AcademicJobs with your first job listing! 
                   </p>
                   <Link
+                  
                  href={`mailto:${emailAJ}?subject=${"Institutional Profile Details"}&body=${createMessage(
                   pricing.business,
                   pricing.businessPrice
@@ -205,6 +207,7 @@ export default function Page() {
           {/* </ul> */} 
 
           <Link
+          target="_blank"
                  href="https://cportal.jobelephant.com/login"
                  className="btn text-white mt-4 bg-[#265882]"
                >

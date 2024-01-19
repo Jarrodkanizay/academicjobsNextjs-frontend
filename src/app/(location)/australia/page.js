@@ -19,7 +19,7 @@ export default function Page() {
     <div>
       <div className="pt-[8rem] flex flex-col items-center justify-center">
         <Image
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-australia-mini.png"
+          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-australia-min.png"
           alt="AcademicJobs Logo"
           className="  mb-[1rem] "
           width={330}

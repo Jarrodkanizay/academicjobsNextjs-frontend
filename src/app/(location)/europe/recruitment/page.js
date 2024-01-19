@@ -49,7 +49,7 @@ export default function myPage() {
                     right talent, and we go above and beyond to help you achieve
                     this.
                   </p>
-                  <Link className="btn btn-aj" href="https://postmyjob.online/academicjobs-job-portal/">
+                  <Link className="btn btn-aj" target="_blank" href="https://postmyjob.online/academicjobs-job-portal/">
                     Post a Job Today
                   </Link>
                 </div>

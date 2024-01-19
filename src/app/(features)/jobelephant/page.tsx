@@ -81,7 +81,7 @@ export default function Page() {
                 <Image
                   width={300}
                   height={300}
-                  src="https://academicjobs.s3.amazonaws.com/img/_misc/jobelephant.gif"
+                  src="https://academicjobs.s3.amazonaws.com/img/_misc/jobelephant-puzzle.png"
                   className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0 bg-white"
                   alt="AI Powered Recruitment Platform"
                 />
@@ -98,7 +98,8 @@ export default function Page() {
                   {/* <a href="#pricing-table-cards" className="btn btn-aj">
                     Post a Job
                   </a> */}
-                  <a
+                  <a 
+                  target="_blank"
             href="/jobelephant/post-job"
             className=" btn btn-aj  rounded-xl  text-center text-white font-bold "
           >

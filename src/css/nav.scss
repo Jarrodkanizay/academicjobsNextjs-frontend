@@ -102,7 +102,7 @@ html {
           height: 48px;
           transition: 300ms;
           content: '';
-          border-bottom: 3px solid var(--color-primary);
+       
           z-index: -1;
           left: 0;
           width: 0%;
@@ -117,19 +117,18 @@ html {
           position: absolute;
           transition: 300ms;
           content: '';
-          border-bottom: 3px solid #ddd;
+       
           z-index: -2;
           width: 100%;
         }
 
         .nav-link-ltr:hover::before {
-          background-color: var(--color-primary-light);
-          width: 100%;
+        
+        
         }
 
         .nav-link-ltr.active::before {
-          width: 100%;
-          border-bottom: 3px solid black;
+       
         }
         .nav-link.active {
           color: var(--color-primary);
@@ -140,7 +139,7 @@ html {
           color: var(--color-primary);
         }
         .post-a-job {
-          background-color: var(--color-primary-light);
+        
         }
         .mobile-icons {
           font-size: 20px;
