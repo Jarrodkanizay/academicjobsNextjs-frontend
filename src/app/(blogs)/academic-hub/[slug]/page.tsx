@@ -21,8 +21,7 @@ export default function BlogPostPage({ params }) {
         <time className="mr-4">{formatDate(post.published_at)}</time>
         {post.updated_at !== '' ? (
           <span className="text-slate-400">
-            Last updated on:
-            <time>{formatDate(post.updated_at)}</time>
+            Updated: <time>{formatDate(post.updated_at)}</time>
           </span>
         ) : null}
       </p>
