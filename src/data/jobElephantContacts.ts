@@ -15,4 +15,5 @@ export const jobElephantContacts = [
   'Anna Felix - anna@jobelephant.com ',
   'Matthew Jefferson - matthew@jobelephant.com',
   'Tony Ngo - tony@jobelephant.com',
+  'Add Contact',
 ];
