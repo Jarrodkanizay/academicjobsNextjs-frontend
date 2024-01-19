@@ -3,14 +3,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 // import { BlogPostTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
+import { formatDate } from '@/utils/utilityScripts.ts';
 
 export default function BlogPosts() {
-  //Get this working tomorrow
-  // function formatDate(input: any) {
+  // function formatDate(input: string) {
   //   const date = new Date(input);
   //   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   //   return date.toLocaleDateString('en-US', options);
   // }
+
   console.log(blogData);
   return (
     <main className="content-grid">
@@ -27,6 +28,7 @@ export default function BlogPosts() {
         alt="People immersed in academic blogs at our vibrant Academic Hub"
         btnPrimaryText="Join our Talent Pool"
         btnPrimaryURL="/talent-pool"
+        reorder={false}
       />
 
       <h2 className="underline-full mb-8"> Top Academic Hub Posts</h2>
@@ -54,7 +56,17 @@ export default function BlogPosts() {
                     </Link>
                   </h2>
                   <h3>By {post.author}</h3>
-                  <time>{post.published_at}</time>
+                  <p>
+                    <time className="mr-4">
+                      {formatDate(post.published_at)}
+                    </time>
+                    {post.updated_at !== '' ? (
+                      <span className="text-slate-400">
+                        Last updated on:
+                        <time>{formatDate(post.updated_at)}</time>
+                      </span>
+                    ) : null}
+                  </p>
                   <p className="h-[130px] relative">
                     {post.summary}
                     <div className="blog-gradient"> </div>

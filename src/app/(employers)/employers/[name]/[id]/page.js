@@ -4,12 +4,26 @@ import { MdLocationPin } from 'react-icons/md';
 import { AiOutlineGlobal } from 'react-icons/ai';
 import SearchResults from '@/components/SearchResults';
 import { useQuery } from '@tanstack/react-query';
+import JobSearchBox from '@/components/JobSearchBox'
 import axios from 'axios';
 import Image from 'next/image';
 import Link from 'next/link';
 import { BsFillShareFill } from 'react-icons/bs';
 import { useParams } from 'next/navigation';
 import BaseApi from '@/lib/store/Base';
+
+// export const metadata = {
+//   // title: 'About', //Option 1 replaces the %s in layout.tsx
+//   title: {
+//     absolute: "", //Option 2 overrides the title in layout.tsx
+//   },
+//   description:
+//     '',
+//   keywords: '',
+// };
+
+
+
 const Employer = () => {
   const [viewJob, setViewJob] = useState(false);
   const { id } = useParams();
@@ -24,6 +38,7 @@ const Employer = () => {
     },
     // enabled: id,
   });
+
   let content;
   if (isLoading) {
     content = (
@@ -147,16 +162,16 @@ const Employer = () => {
       `;
     }
     content = (
-      <div className="flex-col gap-4 max-w-screen-xl mx-auto">
+      <div className="flex-col gap-4  mx-auto">
         <article
           className={`media ${
             company_name == 'Queensland University of Technology (QUT)'
               ? 'bg-blue-950'
-              : 'bg-[#003663]'
-          } border border-gray-300 p-4 mb-4 rounded-lg shadow-lg`}
+              : 'bg-slate-200 w-full'
+          } p-8 mb-4  mx-auto`}
         >
-          <div className="md:flex md:justify-start .col-auto ">
-            <div className="w-[8rem] h-[8rem] mr-4  ">
+          <div className="md:flex md:justify-start .col-auto mx-auto max-w-screen-xl gap-4">
+            <div className="w-[15rem] h-[15rem] mr-4  ">
               <img
                 //src={logo || '/favicon.png'}
                 src={
@@ -171,22 +186,22 @@ const Employer = () => {
                 }}
               />
             </div>
-            <div className="md:flex md:flex-col gap-1 ">
-              <h1 className="text-3xl leading-[1rem] font-bold text-white ">
+            <div className="md:flex md:flex-col gap-4 p-4">
+              <h1 className="text-4xl leading-[1rem] font-bold text-gray-500 ">
                 {company_name}
               </h1>
               <div className='flex gap-2'>
-                <p className="text-xl  leading-[.75rem]  font-bold text-white ">Employer Ranking -</p>
-                <p className="text-xl  leading-[.75rem]  font-bold text-yellow-500 ">{ranking} stars</p>
+                <p className="text-xl  leading-[.75rem]  font-bold text-yellow-500 ">Employer Ranking -</p>
+                <p className="text-2xl  leading-[.75rem]  font-bold text-yellow-500 "> ★ {ranking}</p>
               </div>
              
-              <div className="md:flex  md:gap-6 ml-[-3px]">
-                <div className="text-white md:flex md:items-center md:justify-start md:gap-2 .col-auto">
+              <div className="md:flex-col  md:gap-6 ml-[-3px]">
+                <div className="text-gray-400 md:flex md:items-center md:justify-start md:gap-2 .col-auto">
                   <MdLocationPin />
                   {location}
                 </div>
                 {website && (
-                  <div className="text-white md:flex md:items-center md:justify-start md:gap-2">
+                  <div className="text-gray-400 md:flex md:items-center md:justify-start md:gap-2">
                     <AiOutlineGlobal />
                     <a href={website} className="">
                       {website}
@@ -197,7 +212,7 @@ const Employer = () => {
             </div>
           </div>
         </article>
-        <div className="flex justify-start gap-4 mt-6 mb-2 pl-4">
+        {/* <div className="flex justify-start gap-4 mt-6 mb-2 pl-4">
           <div
             className={` cursor-pointer text-xl text-orange-400    ${
               viewJob || 'underline'
@@ -230,13 +245,14 @@ const Employer = () => {
           >
             View Jobs
           </div>
-        </div>
-        <div className="max-w-screen-xl mx-auto">
+        </div> */}
+        <div className="content-grid mx-auto flex">
+          <div className="flex">
           {viewJob ? (
             <SearchResults q={{ employer_id: id || 0 }} />
           ) : (
             <div
-              className={`max-h-50 overflow-y  border border-gray-300 p-4 mb-4 rounded-lg shadow-lg ${
+              className={`max-h-50 overflow-y  p-4 mb-4 rounded-lg  w-1/2 ${
                 company_name == 'Bond University' && 'bg-[#f1b821]'
               } ${
                 company_name == 'Queensland University of Technology (QUT)' &&
@@ -279,7 +295,16 @@ const Employer = () => {
                 )}
               </div>
             </div>
-          )}{' '}
+
+
+            
+            
+          )}{' '} 
+
+          <div className="w-1/2 max-h-screen overflow-y-scroll "> 
+          <JobSearchBox/>
+          <SearchResults q={{ employer_id: id || 0 }} /> </div></div>
+
           <div className="hidden" id="my-target">
             <SearchResults id="about" q={{ employer_id: id || 0 }} />{' '}
           </div>
