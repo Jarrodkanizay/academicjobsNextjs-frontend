@@ -7,7 +7,7 @@ import HeroBanner from '@/components/HeroBanner';
 export const metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: "Find South America's Top University Employers", //Option 2 overrides the title in layout.tsx
+    absolute: "The Best Universities to Work for in South America", //Option 2 overrides the title in layout.tsx
   },
   description:
     'Browse through our comprehensive list of universities from around the world and find the best one for you. Whether you want to study in Australia, Canada, UK, USA, or anywhere else, we have the information you need to make an informed decision.',
@@ -37,12 +37,18 @@ export default function myPage() {
                 />
                 <div>
                   <h1 className="text-3xl font-bold text-aj">
-                    Find {countryRegionPlural()} Top University Employers
+                  Find the best South American universities to work for here...
+Use university rankings to search for jobs in higher education.
+
                   </h1>
             
-                  <p className="py-6">
-                  Here you will find a variety of opportunities to join the faculty or staff of leading British institutions, such as the University of Oxford, the University of Cambridge, Imperial College London, UCL (University College London), and many more. Whether you are interested in teaching, research, administration, or service, you will find a role that suits your skills, interests, and values.
-                  </p>
+                  <p className="py-1">
+                  All academic positions in South America can be found through the No.1 job board, Academic Jobs. The 'find employers' page helps you explore all academic careers and current job openings, at the world’s top colleges and universities.</p>
+              <p className="py-1">
+              Our employer rankings help you to find amazing Higher Ed jobs at the university of your choice. You can see details about employers, like their mission, vision, values, history, achievements, and culture.
+              </p>
+              <p className="py-1">
+              Use the South American university rankings in your search for the perfect academic job…</p>
                   <div className="card-actions flex ">
                 <Link href="/academic-talent-pool" className="btn btn-aj">
                   Join our Talent Pool
