@@ -26,7 +26,7 @@ export default function BlogPostPage({ params }) {
         ) : null}
       </p>
       <div
-        className={`text-2-cols mt-8`}
+        className={`text-2-cols mt-8 prose`}
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
     </main>
