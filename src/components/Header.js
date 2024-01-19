@@ -101,7 +101,7 @@ export default function Header() {
           )}
 
           <NavItem
-            url="/jobs"
+            url={`/${countryMappings2[region.toLowerCase()].url}/jobs`}
             icon="/dotted-arrow.svg"
             navLink="Seek Jobs"
             forceClass="" //this is optional
