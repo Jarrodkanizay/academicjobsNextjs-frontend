@@ -86,7 +86,7 @@ export default function Page() {
                 />
                 <div>
                   <h1 className="text-xl text-[#265882]">
-                  <span className="text-7xl font-bold text-right pb-4 text-[#c1d72e]">Welcome to <br/> the JobElephant <br/> client center!&nbsp;</span> <br/>
+                  <span className="text-4xl md:text-7xl font-bold text-right pb-4 text-[#c1d72e]">Welcome to <br/> the JobElephant <br/> client center!&nbsp;</span> <br/>
                   </h1>
                   
                   {/* {/* <p className="pt-6 font-bold">
@@ -112,8 +112,8 @@ export default function Page() {
           </div>
 
           <div className=" mx-auto bg-slate-200">
-              <div className="hero-content flex-col lg:flex-row gap-8 max-w-screen-lg mx-auto">
-<p className="p-8  text-2xl font-bold  text-gray-600">
+              <div className="hero-content flex-col lg:flex-row md:gap-8 max-w-screen-lg mx-auto">
+<p className="p-8  md:text-2xl font-bold  text-gray-600">
                   Get YOUR FREE college or university PROFILE on AcademicJobs with your first job listing! 
                   </p>
                   <Link
@@ -149,17 +149,17 @@ export default function Page() {
             /> */}
           
             <div className="ml-5">
-            <span className="block text-[5.3rem] font-semibold text-[#c1d72e]">
+            <span className="block text-6xl md:text-[5.3rem] font-semibold text-[#c1d72e]">
                Our Gift to You
               </span>
-              <span className="block text-3xl font-semibold">
+              <span className="block md:text-3xl font-semibold">
                 {pricing.cta}
               </span>
               <span>
                 <span className="font-medium text-gray-500 text-xl align-top">
                   {pricing.currencySymbol}&thinsp;
                 </span>
-                <span className="text-5xl font-bold text-[#265882]">
+                <span className="md:text-5xl font-bold text-[#265882]">
                 Stand Out Above the Rest
                 </span>{" "}
               </span>
@@ -269,7 +269,7 @@ export default function Page() {
               height={380}
               src="https://academicjobs.s3.amazonaws.com/img/_misc/Jobelephant-Universities.png"
               alt="academicjobs university logos "
-              className=" rounded-xl mx-auto max-w-5xl my-12"
+              className=" rounded-xl mx-auto md:max-w-5xl my-12"
             />
           </div>
 

@@ -7,7 +7,7 @@ import HeroBanner from '@/components/HeroBanner';
 export const metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: 'Find Academic Employers - #1 for Higher Ed Jobs', //Option 2 overrides the title in layout.tsx
+    absolute: 'The Best Universities to work for Globally', //Option 2 overrides the title in layout.tsx
   },
   description:
     'Browse through our comprehensive list of universities from around the world and find the best one for you. Whether you want to study in Australia, Canada, UK, USA, or anywhere else, we have the information you need to make an informed decision.',
@@ -63,19 +63,15 @@ export default function myPage() {
               />
               <div>
                 <h1 className="text-3xl font-bold text-aj">
-                  Find the best universities to work for here... use university
-                  rankings to search for jobs in higher education.
+                Find the best universities and colleges to work for here...
+Use university rankings to search for jobs in higher education.
+
                 </h1>
                 <p className="py-6">
-                  On AcademicJobs explore higher ed career opportunities at
-                  universities worldwide. The find employers page helps you to
-                  learn more about the academic jobs that interest you and their
-                  current job openings. You can view the employers’s profile,
-                  which includes information such as their mission, vision,
-                  values, history, achievements, and culture. Find your dream
-                  academic job online at the university of your choice with
-                  AcademicJobs.
-                </p>
+                Search jobs by university rankings worldwide and find higher ed career opportunities through the best academic job board.  The 'find employers' page helps you explore all academic positions with current job openings, at the world’s top universities </p>
+                <p className="py-2   md:flex hidden">
+                Our employer rankings help you to find amazing jobs at the university of your choice. You can see details about employers, like their mission, vision, values, history, achievements, and culture.
+            </p>
                 <div className="card-actions flex ">
                   <Link href="/academic-talent-pool" className="btn btn-aj">
                     Join our Talent Pool
