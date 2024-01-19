@@ -5,7 +5,11 @@ import { formatDate } from '@/utils/utilityScripts';
 
 // import BlogPost from '@/components/blogs/BlogPost';
 
-export default function BlogPostPage({ params }) {
+type Params = {
+  slug: string;
+};
+
+export default function BlogPostPage({ params }: Params) {
   const post = blogData.find((post) => post.slug === params.slug);
 
   return (
