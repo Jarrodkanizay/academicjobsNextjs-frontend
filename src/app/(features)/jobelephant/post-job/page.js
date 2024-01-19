@@ -1,12 +1,14 @@
 "use client"
-import countries from '@/data/CountryList.json';
 import InputBlock from '@/components/forms/InputBlock';
 import { useForm } from 'react-hook-form';
 import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { jobElephantContacts } from '@/data/jobElephantContacts';
 const TalentPoolForm = () => {
   let content
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -31,7 +33,7 @@ const TalentPoolForm = () => {
       <div className="bg-white relative max-w-screen-lg mx-auto pl-2">
         <div className="p-4 animate-pulse">
           <div className="w-1/4 pr-4">
-            <div className="rounded-xl bg-gray-300 h-16 w-full">'Sending Email ...'</div>
+            <div className="rounded-xl bg-gray-300 h-16 w-full">'Sending Jobs ...'</div>
           </div>
         </div>
       </div>
@@ -41,12 +43,7 @@ const TalentPoolForm = () => {
     return <div>An error occurred: {mutation.error.message}</div>;
   }
   if (mutation.isSuccess) {
-    content = (
-      <div className='h-[600px] text-xl font-bold flex flex-col justify-center items-center'>
-        <div>Job Info Sent!</div>
-        <div>Pls make the payment by clicking the pay button below</div>
-      </div>
-    )
+    router.push("https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce");
   } else {
     content = (
       <form className=" " onSubmit={handleSubmit(onSubmit)}>
@@ -54,13 +51,21 @@ const TalentPoolForm = () => {
           <h1 className="text-4xl font-bold mb-6">
             JobElephant Post Form
           </h1>
-          <InputBlock register={register} errors={errors}
-            label="Name (Job Elephant)"
-            type="text"
-            field="01_Name_Job_Elephant"
-            forceClass=" py-3 text-black"
-            placeholder=""
-          />
+          <div className=" w-full  flex flex-col  items-start">
+            <label className="label-text text-xs">Name (Job Elephant)</label>
+            <select className="select select-sm select-bordered w-full font-normal bg-white"
+              {...register("01_Name_Job_Elephant")}
+              onChange={(e) => {
+                setValue("02_Email", e.target.value)
+              }}
+            >
+              {jobElephantContacts.map((el, index) => (
+                <option key={index} value={el}>
+                  {el}
+                </option>
+              ))}
+            </select>
+          </div>
           <InputBlock register={register} errors={errors}
             label="Email"
             type="text"
@@ -88,7 +93,14 @@ const TalentPoolForm = () => {
           <textarea className="bg-white text-black text-sm" id="notes" placeholder="Type your message here."
             {...register("05_Notes")}
           />
-          <button className="btn btn-accent mt-4">Submit</button>
+          {/* <QuillEditor
+            value={content}
+            onChange={(value) => {
+              setValue("job_description", value)
+            }}
+            className="w-full h-[70%] mt-10 bg-white"
+          /> */}
+          <button className="btn btn-accent mt-4">Submit & PayNow </button>
         </div>
       </form>
     )
@@ -96,12 +108,6 @@ const TalentPoolForm = () => {
   return (
     <div className="max-w-md mx-auto my-10 flex flex-col gap-4 justify-start">
       {content}
-      <Link
-        className="btn btn-prima mt-4"
-        href="https://buy.stripe.com/test_cN2eYG56A0v12gU3cc"
-      >
-        Pay Now
-      </Link>
     </div>
   );
 };
