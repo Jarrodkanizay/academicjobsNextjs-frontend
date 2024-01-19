@@ -9,7 +9,11 @@ type Params = {
   slug: string;
 };
 
-export default function BlogPostPage({ params }: Params) {
+type BlogPostPageProps = {
+  params: Params;
+};
+
+export default function BlogPostPage({ params }: BlogPostPageProps) {
   const post = blogData.find((post) => post.slug === params.slug);
 
   return (
