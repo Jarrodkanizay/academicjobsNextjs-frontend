@@ -16,15 +16,11 @@ export default function Page() {
     <div>
     
       <div className="pt-[5rem] flex flex-col items-center justify-center" >
-        <img
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/Canada-Leaf.jpg"
-
-          alt="AcademicJobs Canada"
-          className=" w-[8rem]  "
-        /></div>
+     
+        </div> 
  <div className=" flex flex-col items-center justify-center" >
         <img
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-canada.png"
+          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-canada-min.png"
 
           alt="AcademicJobs Canada"
           className=" w-[20rem] mb-[1rem] "
@@ -48,7 +44,7 @@ export default function Page() {
 
 
       <div className=" mt-4 " >
-        <ul className="faculty-container flex  gap-4 items-center justify-center text-[#fe0000] ">
+        <ul className="faculty-container flex  gap-4 items-center justify-center text-amber-500 ">
 
           <li><Link href="/online/" >	Online </Link></li>
           <li><Link href="/jobs/remote/" >	Remote</Link></li>

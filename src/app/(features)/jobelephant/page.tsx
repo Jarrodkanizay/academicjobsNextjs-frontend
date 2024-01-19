@@ -98,6 +98,12 @@ export default function Page() {
                   {/* <a href="#pricing-table-cards" className="btn btn-aj">
                     Post a Job
                   </a> */}
+                  <a
+            href="/jobelephant/post-job"
+            className=" btn btn-aj  rounded-xl  text-center text-white font-bold "
+          >
+           Post A Job
+          </a>
                 </div>
               </div>
             </div>
@@ -173,7 +179,7 @@ export default function Page() {
           </ul>
 
           <a
-            href="https://www.postmyjob.online/jobelephant-portal"
+            href="/jobelephant/post-job"
             className="flex justify-center items-center bg-aj rounded-xl py-5 px-4 text-center text-white text-3xl font-bold "
           >
            {pricing.basic}
