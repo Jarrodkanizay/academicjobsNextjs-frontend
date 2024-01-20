@@ -76,11 +76,11 @@ export default function Page() {
           {/* Hero banner */}
           <div className="hero max-h-fit bg-white ">
             <div className=" mx-auto">
-              <div className="hero-content flex-col lg:flex-row gap-8">
+              <div className="hero-content flex-col lg:flex-row gap-12">
                 <Image
-                  width={300}
-                  height={300}
-                  src="https://academicjobs.s3.amazonaws.com/img/_misc/jobelephant.gif"
+                  width={500}
+                  height={500}
+                  src="https://academicjobs.s3.amazonaws.com/img/_misc/jobelephant-puzzle.png"
                   className="lg:max-w-lg rounded-lg mb-8 lg:mb-0 bg-white"
                   alt="AI Powered Recruitment Platform"
                 />
@@ -100,6 +100,7 @@ export default function Page() {
                   </a> */}
 
 <Link
+target="_blank"
                  href="https://cportal.jobelephant.com/login"
                  className="btn text-white mt-1 bg-[#265882]"
                >
@@ -117,6 +118,7 @@ export default function Page() {
                   Get YOUR FREE college or university PROFILE on AcademicJobs with your first job listing! 
                   </p>
                   <Link
+                  
                  href={`mailto:${emailAJ}?subject=${"Institutional Profile Details"}&body=${createMessage(
                   pricing.business,
                   pricing.businessPrice
@@ -205,8 +207,9 @@ export default function Page() {
           {/* </ul> */} 
 
           <Link
+          target="_blank"
                  href="https://cportal.jobelephant.com/login"
-                 className="btn text-white mt-8 bg-[#265882]"
+                 className="btn text-white mt-4 bg-[#265882]"
                >
                   Post Your Job Now
                </Link>
@@ -216,9 +219,9 @@ export default function Page() {
               <div className="md:w-1/3">
               <Image
                   width={1280}
-                  height={300}
-                  src="https://academicjobs.s3.amazonaws.com/img/_misc/On-Top.jpeg"
-                  className="lg:max-w-lg rounded-3xl shadow-2xl mb-8 lg:mb-0 bg-white"
+                  height={500}
+                  src="https://academicjobs.s3.amazonaws.com/img/_misc/Get-On-Top.png"
+                  className="lg:max-w-xl rounded-3xl shadow-2xl mb-8 lg:mb-0 bg-white"
                   alt="AI Powered Recruitment Platform"
                 />
      
@@ -248,9 +251,9 @@ export default function Page() {
                 />
                 <div className="content-grid">
                   <h2 className="text-xl font-normal text-[#265882]">
-                  <span className="text-3xl font-bold text-right pb-4 text-[#265882] ">You Get&nbsp;</span> <br/>'Priority Employer Branding' 
+                  <span className="text-6xl font-bold text-right pb-4 text-[#265882] ">You Get&nbsp;</span> <br/>'Priority Employer Branding' 
                   </h2>
-                  <p className="pt-6">
+                  <p className="pt-6 font-bold">
                   When you have a job listing on AcademicJobs
                   </p>
                
@@ -269,7 +272,7 @@ export default function Page() {
               height={380}
               src="https://academicjobs.s3.amazonaws.com/img/_misc/Jobelephant-Universities.png"
               alt="academicjobs university logos "
-              className=" rounded-xl mx-auto md:max-w-5xl my-12"
+              className=" rounded-xl mx-auto md:max-w-screen-2xl my-12 "
             />
           </div>
 

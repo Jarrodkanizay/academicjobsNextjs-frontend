@@ -16,12 +16,7 @@ export default function Page() {
     <div>
       
       <div className="pt-[5rem] flex flex-col items-center justify-center" >
-        <img
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/Black-Fern.jpg"
-
-          alt="AcademicJobs New Zealand"
-          className=" w-[8rem]  "
-        /></div>
+       </div>
  <div className=" flex flex-col items-center justify-center" >
         <img
           src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-nz.png"

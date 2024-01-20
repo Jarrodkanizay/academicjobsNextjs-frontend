@@ -55,6 +55,7 @@ export const blogData = [
     slug: `exploring-global-landscape-academic-jobs-opportunities-challenges`,
     author: `Gabrielle Ryan`,
     published_at: `2023-07-01`,
+    updated_at: ``,
     image_url: `/blogs/global-opportunities.jpg`,
     alt: `Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges`,
     summary:
@@ -80,7 +81,7 @@ export const blogData = [
 <p style="padding-top: 40px;><span style="">In summary, the global landscape of academic jobs presents both opportunities and challenges. While there are prospects for global mobility, research funding, collaboration, and professional development, individuals must navigate a competitive job market, job insecurity, pressure to publish, disparities in resources, a demanding workload, and potential international and cultural barriers.</span></p>
 <p><span style="">Despite the challenges, academic careers can be immensely rewarding for those passionate about research, teaching, and contributing to knowledge advancement in their respective fields. The pursuit of academic excellence, impactful teaching, and the opportunity to shape future generations make academic jobs an exciting and fulfilling choice for many.&nbsp;</span></p>
 <div>
-<p>&nbsp;</p>
+
 <p><span style="">If you want to talk to us more about global opportunities in academia, contact us at <a style="" href="https://academicjobs.com/contact-us/">AcademicJobs</a>.</span></p>
 </div>
 </div>
@@ -106,9 +107,9 @@ export const blogData = [
   <div class="blog-content">
   <p><span style="">Virtual hiring for academic jobs has gained significant popularity in recent years, and there are several reasons why it is on the rise beyond just coping with a pandemic!</span></p>
 <p><span style="">This shift to online platforms for academic job recruitment offers numerous benefits for both employers and job seekers.</span></p>
-<p>&nbsp;</p>
+
 <p><span style="">Let's explore some of these advantages:</span></p>
-<p>&nbsp;</p>
+
 <p style="padding-left: 40px;"><span style=""><strong>&gt; Access to a Larger Talent Pool:</strong> Virtual hiring enables institutions to tap into a broader talent pool beyond their geographical limitations. Traditional hiring processes often restrict the search to local or regional candidates. However, with online platforms, universities and colleges can reach out to qualified candidates from around the world, increasing the chances of finding the best fit for a position.</span></p>
 <p style="padding-left: 40px;"><span style=""><strong>&gt; Cost-Effectiveness:</strong> Conducting academic job searches and interviews online significantly reduces costs associated with in-person interviews. Institutions save money on travel expenses for candidates and search committee members. Moreover, virtual hiring eliminates the need for physical venues and related logistical arrangements, resulting in cost savings for the hiring institution.</span></p>
 <p style="padding-left: 40px;"><span style="">&gt; <strong>Time Efficiency:</strong> Virtual hiring streamlines the recruitment process and reduces the time taken to fill academic positions. Coordinating schedules and arranging in-person interviews can be time-consuming, especially when multiple candidates are involved. By leveraging online platforms, institutions can conduct initial screenings, interviews, and even presentations more efficiently, enabling faster decision-making and hiring.</span></p>
@@ -120,7 +121,7 @@ export const blogData = [
 <p style="padding-left: 40px;"><span style=""><strong>&gt; Scalable and Flexible:</strong> Virtual events are easier to put together than hosting in-person events. Also, you can host virtual events more frequently and for more specific pools of talent, giving you effective strategies for targeting your ideal candidates and talent niches as broadly or as narrowly as you need. One common misconception about virtual recruiting technologies is that they only work for remote positions—but this simply isn’t the case. Even when the majority of positions will be onsite, talent acquisition teams are shifting to digital tools and hybrid recruiting events to gain efficiencies of scale, deliver a quality candidate experience, and shorten time to hire.</span></p>
 <p style="padding-left: 40px;"><span style=""><strong>&gt; Better Candidate Experience:</strong> According to recent TalentBoard research, candidate resentment saw its largest spike in a decade. Virtual recruiting makes the recruiting process faster, more engaging, and consistent—all of which help boost the overall quality of the interview experience for job seekers and recruiters alike.&nbsp;</span></p>
 <p style="padding-left: 40px;"><span style=""><strong>&gt; Remote is Part of the New Normal:</strong> Prior to the pandemic, many employers believed that job seekers wouldn’t be comfortable interviewing online. But as we all know, technology played a huge part in maintaining some semblance of ‘normal’ life during the health crisis, from remote work and telehealth to online ordering and contactless pickup. Employers that adopted virtual recruiting early in the pandemic quickly learned that job seekers not only respond positively to this application of technology, but that virtual recruiting enabled them to reach more candidates, meet more diverse talent, and more effectively engage with job seekers throughout the recruiting process.&nbsp;</span></p>
-<p>&nbsp;</p>
+
 <p><span style="">Overall, the rise of virtual hiring for academic jobs offers numerous benefits, including expanded access to talent, cost savings, time efficiency, enhanced diversity, increased satisfaction and flexibility for candidates, environmental sustainability, and leveraging advanced technologies. As these advantages continue to be recognized, it is likely that virtual hiring will become increasingly common in the academic job market.</span></p>
 <p><span style="">If you want to talk to us more about virtual hiring, contact us at <a style="" href="https://academicjobs.com/contact-us/">AcademicJobs</a>.</span></p>
 </div>
@@ -131,7 +132,7 @@ export const blogData = [
     status: `published`,
     rank: 4,
     title: "Happiness and Academics: Scott Galloway's Algebra of Happiness",
-    slug: ``,
+    slug: `happiness-and-academics-scott-galloways-algebra-of-happiness`,
     author: `Scott Galloway`,
     published_at: `2023-10-16`,
     updated_at: ``,
@@ -145,40 +146,29 @@ export const blogData = [
 
       <div className="container mx-auto py-4">
 
-        <p>&nbsp;</p>
         <div className="mb-8">
           <p className="mb-4">
             Scott Galloway is a professor and author who has written a book called <span className="italic">The Algebra of Happiness</span>, where he shares his insights and advice on how to live a fulfilling life. One of his main themes is that happiness is not a destination, but a process that involves making choices, taking actions, and finding meaning.
           </p>
-          <p>&nbsp;</p>
           <p>
             Academic happiness is a term that refers to the satisfaction and well-being that students and educators experience in their learning and teaching environments. Academic happiness can be influenced by many factors, such as personal goals, interests, motivation, relationships, feedback, support, challenges, and achievements.
           </p>
-          <p>&nbsp;</p>
         </div>
 
         <p>Using Scott Galloway’s algebra of happiness, we can write about academic happiness in the following way:</p>
-        <p style="padding-left: 40px;"><strong>Academic happiness </strong>= (Meaning + Relationships + Skills) x (Gratitude / Expectations)</p> <p>&nbsp;</p>
+        <p style="padding-left: 40px;"><strong>Academic happiness </strong>= (Meaning + Relationships + Skills) x (Gratitude / Expectations)</p> 
         <p style="padding-left: 40px;"><strong>Meaning:</strong> This is the sense of purpose and value that students and educators derive from their academic work. Meaning can be found by pursuing topics that are relevant, engaging, and aligned with one’s passions and values. Meaning can also be enhanced by connecting one’s academic work to larger social issues or personal aspirations.</p>
-        <p>&nbsp;</p>
         <p style="padding-left: 40px;"><strong>Relationships:</strong> This is the quality and quantity of social connections that students and educators have with their peers, mentors, teachers, and others in their academic community. Relationships can provide support, feedback, collaboration, inspiration, and belonging. Relationships can also foster positive emotions, such as joy, trust, and empathy.</p>
-        <p>&nbsp;</p>
         <p style="padding-left: 40px;"><strong>Skills:</strong> This is the level of competence and confidence that students and educators have in their academic abilities. Skills can be developed by setting realistic goals, seeking feedback, practicing deliberately, and overcoming challenges. Skills can also lead to mastery, autonomy, and recognition.</p>
-        <p>&nbsp;</p>
         <p style="padding-left: 40px;"><strong>Gratitude:</strong> This is the appreciation and acknowledgment of the positive aspects of one’s academic life. Gratitude can be expressed by thanking others for their help, celebrating one’s achievements, and reflecting on one’s growth. Gratitude can also increase happiness by reducing stress, enhancing optimism, and improving well-being.</p>
-        <p>&nbsp;</p>
         <p style="padding-left: 40px;"><strong>Expectations:</strong> This is the level of ambition and aspiration that students and educators have for their academic outcomes. Expectations can be motivating and inspiring, but they can also be unrealistic and stressful. Expectations can also affect happiness by creating a gap between what one wants and what one has.</p>
-     <p>&nbsp;</p>
+     
         <div className="mt-8">
           <p className="mb-4">
-          <p>&nbsp;</p>
             According to Scott Galloway’s algebra of happiness, academic happiness can be maximized by finding meaning in one’s academic work, building strong relationships with others in one’s academic community, developing skills that match one’s interests and goals, expressing gratitude for the opportunities and achievements in one’s academic life, and adjusting expectations to be realistic and flexible.
-            <p>&nbsp;</p></p>
-          <p>&nbsp;</p>
           <p className="mb-4"><strong>
             Some possible additional sentences are:
             </strong></p>
-          <p>&nbsp;</p>
           <ul className="list-disc ml-6">
           <p style="padding-left: 40px;"><span style="">&gt;This formula is not meant to be a rigid or definitive measure of academic happiness, but rather a guide or a reminder of the factors that can influence it.</span></p>
           <p style="padding-left: 40px;"><span style="">&gt;Academic happiness is not a static or fixed state, but rather a dynamic and fluctuating process that depends on one’s choices, actions, and circumstances.</span></p>
@@ -197,7 +187,7 @@ export const blogData = [
     slug: `choosing-the-best-university-in-australia-for-2023`,
     author: `Gabrielle Ryan`,
     published_at: `2023-08-10`,
-    updated_at: ``,
+    updated_at: `2023-09-12`,
     image_url: `/blogs/top-academic-jobs-australia.jpg`,
     alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
     summary:
@@ -208,12 +198,12 @@ export const blogData = [
   <div tabindex="0">
 <div>
 <h2><span style="font-weight: bold;">How to Choose the Best University and Career Path in Australia for 2023?</span></h2>
-<p><span style="">The top Australian university rankings and their top academic jobs are popular questions for students who want to pursue higher education and enjoy a high quality of life. With a diverse and multicultural society, a strong economy, and a beautiful natural environment, Australia offers many opportunities and benefits for academic jobs.</span></p> <p>&nbsp;</p>
-<p><span style="">How do you choose the best university and career path in Australia for 2023? There are many factors to consider, such as your academic interests, your career goals, your budget, your location preferences, and your personal preferences. In this blog post, we will provide some tips and insights to help you make an informed decision.</span></p> <p>&nbsp;</p>
+<p><span style="">The top Australian university rankings and their top academic jobs are popular questions for students who want to pursue higher education and enjoy a high quality of life. With a diverse and multicultural society, a strong economy, and a beautiful natural environment, Australia offers many opportunities and benefits for academic jobs.</span></p> 
+<p><span style="">How do you choose the best university and career path in Australia for 2023? There are many factors to consider, such as your academic interests, your career goals, your budget, your location preferences, and your personal preferences. In this blog post, we will provide some tips and insights to help you make an informed decision.</span></p> 
 <h3><span style="font-weight: bold;">Top Australian University Rankings for 2023</span></h3>
 <p><span style="">One of the most common ways to compare universities is to look at their rankings. Rankings are based on various indicators, such as academic reputation, research impact, teaching quality, student satisfaction, employability, internationalization, and innovation. Rankings can give you an overview of the strengths and weaknesses of different universities, as well as their reputation and recognition in the global market.</span></p>
-<p>&nbsp;</p><p><span style="">Australia has 37 top universities, with our top 8 universities in the top 100 worldwide. The top 10 Australian universities are:</span></p>
-<p>&nbsp;</p><ul>
+<p><span style="">Australia has 37 top universities, with our top 8 universities in the top 100 worldwide. The top 10 Australian universities are:</span></p>
+<ul>
 <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/The-University-of-Melbourne-Jobs">University of Melbourne (ranked 34th in the world)</a></span></li>
 <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/Monash-University-Jobs">Monash University (ranked 44th in the world)</a></span></li>
 <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/The-University-of-Queensland-Jobs">The University of Queensland (ranked 53rd in the world)</a></span></li>
@@ -224,13 +214,13 @@ export const blogData = [
 <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/The-University-of-Adelaide-Jobs">The University of Adelaide (ranked 118th in the world)</a></span></li>
 <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/University-of-Technology-Sydney-Jobs">The University of Technology Sydney (ranked 160th in the world)</a></span></li>
 <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/Macquarie-University-Jobs">Macquarie University (ranked 195th in the world)</a></span></li>
-<p>&nbsp;</p></ul>
+</ul>
 <p><span style="">These rankings are based on five main categories: teaching (30%), research (30%), citations (30%), international outlook (7.5%), and industry income (2.5%). Each category has several sub-indicators that measure different aspects of university performance. For example, teaching includes indicators such as student-to-staff ratio, doctorate-to-bachelor’s ratio, doctorates awarded-to-academic staff ratio, institutional income, and reputation survey. Research includes indicators such as research income, research productivity, research reputation survey, and research influence. Citations measure how often a university’s research is cited by other scholars around the world. International outlook includes indicators such as international-to-domestic-student ratio, international-to-domestic-staff ratio, international collaboration, and international reputation survey. Industry income measures how much a university earns from its knowledge transfer activities with industry partners.</span></p>
-<p>&nbsp;</p><p><span style="">While rankings can be useful to compare universities at a glance, they are not the only factor to consider when choosing a university. Rankings do not capture everything that matters to students, such as campus culture, student support services, extracurricular activities, learning environment, social life, and personal fit. Rankings also do not reflect the quality of specific programs or courses within a university. Therefore, it is important to look beyond rankings and do your own research on different universities and their offerings.</span></p>
-<p>&nbsp;</p><h3><span style="font-weight: bold;">Top Academic Jobs Australia 2023</span></h3>
+<p><span style="">While rankings can be useful to compare universities at a glance, they are not the only factor to consider when choosing a university. Rankings do not capture everything that matters to students, such as campus culture, student support services, extracurricular activities, learning environment, social life, and personal fit. Rankings also do not reflect the quality of specific programs or courses within a university. Therefore, it is important to look beyond rankings and do your own research on different universities and their offerings.</span></p>
+<h3><span style="font-weight: bold;">Top Academic Jobs Australia 2023</span></h3>
 </p><p><span style="">Another factor to consider when choosing a university and career path is the job market. What are the skills and qualifications that employers are looking for? What are the industries and sectors that are growing and hiring? What are the salaries and benefits that different jobs offer?</span></p>
-<p>&nbsp;</p><p><span style="">Some of the highest paying jobs in Australia for 2023 include positions in the legal, executive, retail, accountancy &amp; finance, property, energy, construction, sustainability, technology, and healthcare sectors. The top 10 highest paying jobs in Australia for 2023 according to Hays are:</span></p>
-<p>&nbsp;</p><ul>
+<p><span style="">Some of the highest paying jobs in Australia for 2023 include positions in the legal, executive, retail, accountancy &amp; finance, property, energy, construction, sustainability, technology, and healthcare sectors. The top 10 highest paying jobs in Australia for 2023 according to Hays are:</span></p>
+<ul>
 <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/equity-partner-jobs">Legal: Equity Partner (up to $850,000)</a></span></li>
 <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/CEO-MD-jobs">Executive: CEO and MD ($700,000)</a></span></li>
 <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/general-manager-jobs">Retail: General Manager (up to $510,000)</a></span></li>
@@ -241,14 +231,14 @@ export const blogData = [
 <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/Head-Sustainability-jobs">Sustainability: Head of Sustainability (up to $310,000)</a></span></li>
 <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/Chief-Technology-Officer-jobs">Technology: Chief Technology Officer ($350,000)</a></span></li>
 <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/Healthcare-Managing-Director-jobs">Healthcare: Managing Director/Country Manager in Medical Devices/Pharmaceuticals ($300,000)</a></span></li>
-<p>&nbsp;</p></ul>
-<p>&nbsp;</p><p><span style="">These salaries are based on the average annual income for each role across different states and territories in Australia. They may vary depending on the size and type of the organisation, the level of experience and expertise, the location and demand of the role, and the negotiation skills of the candidate.</span></p>
-<p>&nbsp;</p><p><span style="">These jobs are not only high-paying, but also high-demanding. They require a combination of hard skills, such as technical knowledge, qualifications, and certifications, and soft skills, such as communication, leadership, problem-solving, and creativity. They also require a high level of commitment, responsibility, and performance. Therefore, they are not suitable for everyone, and they may not be aligned with your personal interests, values, and goals.</span></p>
-<p>&nbsp;</p><p><span style="">When choosing a career path, it is important to consider not only the salary, but also the job satisfaction, work-life balance, career progression, and social impact. You should also consider your strengths, passions, and personality. What are you good at? What do you enjoy doing? What kind of work environment suits you best? What kind of impact do you want to make in the world?</span></p>
-<p>&nbsp;</p><h3><span style="font-weight: bold;">Conclusions of Top Academic Jobs Australia</span></h3>
+</ul>
+<p><span style="">These salaries are based on the average annual income for each role across different states and territories in Australia. They may vary depending on the size and type of the organisation, the level of experience and expertise, the location and demand of the role, and the negotiation skills of the candidate.</span></p>
+<p><span style="">These jobs are not only high-paying, but also high-demanding. They require a combination of hard skills, such as technical knowledge, qualifications, and certifications, and soft skills, such as communication, leadership, problem-solving, and creativity. They also require a high level of commitment, responsibility, and performance. Therefore, they are not suitable for everyone, and they may not be aligned with your personal interests, values, and goals.</span></p>
+<p><span style="">When choosing a career path, it is important to consider not only the salary, but also the job satisfaction, work-life balance, career progression, and social impact. You should also consider your strengths, passions, and personality. What are you good at? What do you enjoy doing? What kind of work environment suits you best? What kind of impact do you want to make in the world?</span></p>
+<h3><span style="font-weight: bold;">Conclusions of Top Academic Jobs Australia</span></h3>
 </p><p><span style="">Choosing the best university and career path in Australia for 2023 is not an easy task. It requires careful planning, research, and reflection. It also requires flexibility, adaptability, and resilience. The world is changing rapidly, and so are the education and employment landscapes. You may need to update your skills and qualifications, change your direction or goals, or explore new opportunities along the way.</span></p>
-<p>&nbsp;</p><p><span style="">However, choosing the best university jobs and career path in Australia for 2023 is also an exciting and rewarding journey. It can help you achieve your academic potential, your professional success, and your personal fulfilment. It can also help you contribute to the society and the world in a positive and meaningful way.</span></p>
-<p>&nbsp;</p><p><span style="">We hope this blog post has given you some useful tips and insights to help you make an informed decision about your future education and career in Australia. We wish you all the best in your endeavours!</span></p>
+<p><span style="">However, choosing the best university jobs and career path in Australia for 2023 is also an exciting and rewarding journey. It can help you achieve your academic potential, your professional success, and your personal fulfilment. It can also help you contribute to the society and the world in a positive and meaningful way.</span></p>
+<p><span style="">We hope this blog post has given you some useful tips and insights to help you make an informed decision about your future education and career in Australia. We wish you all the best in your endeavours!</span></p>
 </div>
 <cib-overlay></cib-overlay></div>
 </div>
@@ -263,7 +253,7 @@ export const blogData = [
     slug: `evolution-of-university-recruitment`,
     author: `Gabrielle Ryan`,
     published_at: `May 15, 2023`,
-    updated_at: `May 15, 2023`,
+    updated_at: ``,
     image_url: `/blogs/recruitment-evolution.jpg`,
     alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
     summary:
@@ -479,7 +469,8 @@ export const blogData = [
       'Unlocking the Benefits of On-Campus Student Jobs: A Holistic Approach to Education',
     slug: `unlocking-benefits-on-campus-student-jobs`,
     author: `Gabrielle Ryan`,
-    updated_at: `2023-12-15`,
+    published_at: `2023-12-15`,
+    updated_at: ``,
     image_url: `/blogs/student-jobs-on-college-campus.jpg`,
     alt: `student jobs on university campus`,
     summary:
@@ -550,10 +541,10 @@ export const blogData = [
     status: `published`,
     rank: 11,
     title: 'Seek all QUT University Jobs Here',
-    slug: ``,
+    slug: `find-all-qut-university-jobs-here`,
     author: `Gabrielle Ryan`,
-    published_at: 'Seek all QUT University Jobs Here',
-    updated_at: `2023-03-12`,
+    published_at: '2023-03-12',
+    updated_at: ``,
     image_url: `/blogs/find-your-future-career-at-Queensland-University-of-Technology-(QUT).jpg`,
     alt: `Join the academic team at Queensland University of Technology`,
     summary:
@@ -562,7 +553,7 @@ export const blogData = [
     keywords: 'Seek all QUT University Jobs at Academic Jobs.',
     content: `
   <div>
-<p>Find you next job as a part of the academic team at Queensland University of Technology (QUT), working alongside some of the best. Life at QUT offers an enriching experience, positioning it as an ideal place of employment, especially for lecturers and academics. As a lecturer at QUT, one can partake in a dynamic academic environment that emphasises innovative teaching methodologies and fosters close connections with students during engaging lectures. </p>
+<p>Find your next job as a part of the academic team at Queensland University of Technology (QUT), working alongside some of the best. Life at QUT offers an enriching experience, positioning it as an ideal place of employment, especially for lecturers and academics. As a lecturer at QUT, one can partake in a dynamic academic environment that emphasises innovative teaching methodologies and fosters close connections with students during engaging lectures. </p>
 <p>Uni jobs at QUT are committed to academic excellence, which is mirrored in its world-class facilities, creating an optimal setting for delivering impactful lectures and conducting cutting-edge research. QUT's Human Resources initiatives play a crucial role in supporting academic staff, offering comprehensive professional development, workshops, and ongoing training. Across various faculties, including the Faculty of Business and Law, Faculty of Health, Faculty of Education, and others, lecturers at QUT can contribute to multidisciplinary research and collaborative initiatives. With a commitment to inclusivity and diversity, QUT stands as an ideal workplace, providing lecturers with a stimulating and supportive environment for both professional and personal growth.</p>
 <p>Queensland University of Technology has a range of faculties covering diverse academic disciplines. </p>
 <p>The faculties at QUT include:</p>
@@ -582,7 +573,7 @@ export const blogData = [
     status: `published`,
     rank: 12,
     title: 'Seek all Bond University Careers Here',
-    slug: ``,
+    slug: `find-all-bond-university-careers-here`,
     author: `Gabrielle Ryan`,
     published_at: '2023-02-08',
     updated_at: ``,
@@ -606,7 +597,7 @@ export const blogData = [
 <p><o:p>&nbsp;</o:p></p>
 <p>While the specific positions may vary, here is a list of academic careers you could have at Bond University:</p>
 </div>
-<p>&nbsp;</p>
+
 <p>Professor</p>
 <p>Associate Professor</p>
 <p>Senior Lecturer</p>
@@ -631,7 +622,7 @@ export const blogData = [
     status: `published`,
     rank: 13,
     title: 'Seek all Bond University Jobs Here',
-    slug: ``,
+    slug: `seek-all-bond-university-jobs-here`,
     author: `Gabrielle Ryan`,
     published_at: '2023-04-05',
     updated_at: ``,
@@ -646,7 +637,7 @@ export const blogData = [
 
       <div>
 <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip4.png"></p>
-<p>&nbsp;</p>
+
 <p>Find you next job as a part of the academic team at Bond University, working alongside some of the best. Working at Bond University provides an exceptional professional and academic experience, making it an ideal place of employment. The university's commitment to academic excellence is manifested in its cutting-edge facilities and intimate lecture settings, providing lecturers with a conducive environment for impactful teaching. </p>
 <p><o:p>&nbsp;</o:p></p>
 <p>Bond University&rsquo;s jobs stand out for their commitment to academic excellence and world class higher ed research. Bond offer an academic support system through human resources initiatives, ensuring that higher ed staff receive comprehensive assistance, professional development opportunities, and ongoing training. The inclusive and collaborative culture extends across various faculties, such as business, health sciences, law, and more. Lecturers at Bond not only engage in innovative and research-driven lectures but also contribute to a multidisciplinary academic community. This collaborative ethos, coupled with a global perspective, creates an enriching and diverse workplace, making Bond University an ideal destination for those seeking a fulfilling career in academia.</p>
@@ -655,7 +646,7 @@ export const blogData = [
 <p>Bond University offers a diverse range of faculties, each specializing in various academic disciplines. </p>
 <p>The faculties at Bond University include:</p>
 </div>
-<p>&nbsp;</p>
+
 <ul>
 <li>Faculty of Business</li>
 <li>Faculty of Health Sciences and Medicine</li>
@@ -672,22 +663,22 @@ export const blogData = [
     status: `published`,
     rank: 14,
     title: 'Start your Career at Harvard University ',
-    slug: ``,
+    slug: `start-your-career-at-harvard-university`,
     author: `Gabrielle Ryan`,
-    updated_at: `2023-04-27`,
+    published_at: '2023-04-27',
+    updated_at: ``,
     image_url: ``,
     alt: ``,
     summary:
       'Professionals may flourish in a dynamic and cutting-edge higher education setting by pursuing a career in academic roles at Harvard University.',
     tags: [],
     keywords: 'Start your Career at Harvard University ',
-    published_at: 'Start your Career at Harvard University ',
     content: `
 
 
         <div>
 <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip5.png"></p>
-<p>&nbsp;</p>
+
 
 <p><br>A career at Harvard University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment.</p>
 <p><o:p>&nbsp;</o:p></p>
@@ -702,7 +693,7 @@ export const blogData = [
 <p>The specific careers available can vary across different faculties and departments. Here is a list of potential careers at Harvard:</p>
 <p><o:p>&nbsp;</o:p></p>
 </div>
-<p>&nbsp;</p>
+
 <ul>
 <li>Professor</li>
 <li>Associate Professor</li>
@@ -726,23 +717,23 @@ export const blogData = [
     // To Do
     status: `published`,
     rank: 15,
-    title: 'Seek all Harvard University Jobs Here ',
-    slug: ``,
+    title: 'Seek all Harvard University Jobs Here',
+    slug: `seek-all-harvard-university-jobs-here`,
     author: `Gabrielle Ryan`,
-    updated_at: `2023-05-09`,
+    published_at: '2023-05-09',
+    updated_at: ``,
     image_url: ``,
     alt: ``,
     summary:
       'Working at Harvard University offers a once-in-a-lifetime chance to join a prestigious organisation recognised for its dedication to global impact, groundbreaking research, and academic achievement.',
     tags: [],
     keywords: 'Seek all Harvard University Jobs Here ',
-    published_at: 'Seek all Harvard University Jobs Here ',
     content: `
 
 
           <div>
 <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip6.png"></p>
-<p>&nbsp;</p>
+
 <p>Find you next job as a part of the academic team at Harvard University, working alongside some of the best. A job at Harvard University represents an unparalleled opportunity to be part of an esteemed institution renowned for its commitment to academic excellence, ground-breaking research, and global impact. Whether as a professor, lecturer, researcher, or academic administrator, individuals at Harvard engage in an intellectually stimulating environment where innovation, diversity, and interdisciplinary collaboration flourish. </p>
 <p><o:p>&nbsp;</o:p></p>
 <p>A uni job at Harvard, for those seeking academic positions, is highly desirable as it offers opportunities for professional growth and engagement with a diverse and prestigious academic community, making it an ideal destination for academics passionate about advancing their career in higher education. Contributing to the rich tapestry of higher education, jobs at Harvard involve not only teaching and research but also shaping the next generation of leaders. The university's emphasis on global perspectives, state-of-the-art facilities, and a vibrant academic community makes working at Harvard an inspiring and transformative experience within the realm of higher education.</p>
@@ -752,7 +743,7 @@ export const blogData = [
 <p><o:p>&nbsp;</o:p></p>
 <p>While specific positions may vary, here is a list of academic jobs that one might find at Harvard:</p>
 </div>
-<p>&nbsp;</p>
+
 <ul>
 <li>&nbsp; Professor</li>
 <li>&nbsp; Associate Professor</li>
@@ -776,22 +767,20 @@ export const blogData = [
     status: `published`,
     rank: 16,
     title: 'Seek all UCLA Jobs Here ',
-    slug: ``,
+    slug: `seek-all-ucla-jobs-here`,
     author: `Gabrielle Ryan`,
-    updated_at: `2023-06-28`,
+    published_at: '2023-06-28 ',
+    updated_at: ``,
     image_url: ``,
     alt: ``,
     summary:
       'employment at UCLA University provides access to a rich and active academic community within the context of higher education.',
     tags: [],
     keywords: 'Seek all UCLA Jobs Here ',
-    published_at: 'Seek all UCLA Jobs Here ',
     content: `
-
-
             <div>
             <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip7.png"></p>
-            <p>&nbsp;</p>
+            
             <p>Find you next job as a part of the academic team at the University of California, Los Angeles, working alongside some of the best. </p>
             <p><o:p>&nbsp;</o:p></p>
             <p>A job at UCLA University, within the realm of higher education and academic positions, opens the door to a dynamic and intellectually vibrant community. At UCLA innovation, diversity, and a commitment to excellence in academics is highly regarded and can be expected when working in our community. With a commitment to upholding the highest ethical standards, UCLA stands as the nation's No. 1 public university, offering limitless opportunities for career growth and development.</p>
@@ -804,7 +793,7 @@ export const blogData = [
             <p>The faculties at UCLA include:</p>
             <p><o:p>&nbsp;</o:p></p>
             </div>
-            <p>&nbsp;</p>
+            
             <div>
             <ul type="square">
             <li>Assistant Professor</li>
@@ -821,7 +810,7 @@ export const blogData = [
             <li>Endowed Chair Professor</li>
             </ul>
             </div>
-            <p>&nbsp;</p>
+            
             `,
   },
 
@@ -830,19 +819,19 @@ export const blogData = [
     status: `published`,
     rank: 17,
     title: 'Start you Career at UCLA ',
-    slug: ``,
+    slug: `start-your-career-at-ucla`,
     author: `Gabrielle Ryan`,
-    updated_at: `2023-08-24`,
+    published_at: '2023-08-24 ',
+    updated_at: ``,
     image_url: ``,
     alt: ``,
     summary:
       'Professionals can flourish in an innovative and dynamic higher education setting by holding academic roles at UCLA.',
     tags: [],
     keywords: 'Start you Career at UCLA ',
-    published_at: 'Start you Career at UCLA ',
     content: `<div>
               <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip8.png"></p>
-              <p>&nbsp;</p>
+              
               <p>Academic Jobs can help you kick start your career at UCLA today!</p>
               <p><br>A career at The University of California, Los Angeles (UCLA) in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. Whether in faculty roles such as Assistant, Associate, or Full Professors, or engaging in dynamic administrative positions within higher education, UCLA provides a platform for professionals to thrive, fostering a culture of innovation, diversity, and continuous learning. </p>
               <p><o:p>&nbsp;</o:p></p>
@@ -852,7 +841,7 @@ export const blogData = [
               <p><o:p>&nbsp;</o:p></p>
               <p>Academic career paths at UCLA include:</p>
               </div>
-              <p>&nbsp;</p>
+              
               <ul>
               <li>&nbsp; Assistant Professor</li>
               <li>&nbsp; Associate Professor</li>
