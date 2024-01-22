@@ -231,7 +231,8 @@ const PostJobForm = () => {
           <div>
             <h3 className="text-emerald-600 mb-4">
               Welcome to our new JobElephant form. <br />
-              Taking you two minutes per job, saving you 6 minutes each time!
+              Taking you under two minutes per job, saving you
+              6 minutes each time!
             </h3>
             <Image
               width={800}
