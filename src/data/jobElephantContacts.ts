@@ -1,9 +1,9 @@
 export const jobElephantContacts = [
   'Jessica White - Jessica@jobelephant.com',
   'Trista Nicholson - Trista@jobelephant.com ',
-  'Lauren  - lauren@jobelephant.com ',
+  'Lauren Blevins - lauren@jobelephant.com ',
   'Justin Baker - justin@jobelephant.com',
-  'Natasha Felix Partida - natasha@jobelephant.com',
+  'Natasha Felix-Partida - natasha@jobelephant.com',
   'Joe Grant - joe@jobelephant.com ',
   'Kim Hoang - kim@jobelephant.com ',
   'Lewam Kebreab - lewam@jobelephant.com ',
