@@ -194,7 +194,7 @@ const PostJobForm = () => {
                 width={800}
                 height={380}
                 src="https://academicjobs.s3.amazonaws.com/img/_misc/proudly-working-with.png"
-                alt="job elephant logo"
+                alt="jobElephant logo"
                 className="mx-auto bg-gray-200"
               />
             </picture>
