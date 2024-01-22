@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
 }
 
 
-export async function getJob(id) {
+ async function getJob(id) {
   const response = await fetch(`https://api2.sciencejobs.com.au/api/job/${id}`);
   const res = await response.json();
   // console.log(res);
