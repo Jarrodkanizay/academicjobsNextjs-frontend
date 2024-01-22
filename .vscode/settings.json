@@ -5,6 +5,7 @@
   "scss.lint.unknownAtRules": "ignore",
   "cSpell.words": [
     "Academicjobs",
+    "apptrkr",
     "DHSI",
     "École",
     "Essaypro",
@@ -16,6 +17,7 @@
     "Polytechnique",
     "rnaseq",
     "Robina",
+    "sendemail",
     "specialisation",
     "tanstack",
     "vellore",
