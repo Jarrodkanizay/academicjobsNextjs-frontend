@@ -25,7 +25,7 @@ export default function myPage() {
              height="380"
               src="/ai-sentiment-analysis/ai-sentiment-analysis.jpg"
               className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0 lg:mr-4"
-              alt="AI Powered Recruitment Platform"
+              alt="AI sentiment analysis"
             />
             <div>
               <h1 className="text-3xl font-bold text-aj">

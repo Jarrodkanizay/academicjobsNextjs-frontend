@@ -26,7 +26,7 @@ export default function Page() {
       <div className=" flex flex-col items-center justify-center">
         <Image
           src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-india-min.png"
-          alt="AcademicJobs India"
+          alt="AcademicJobs India logo"
           width={500}
           height={500}
           className=" w-[20rem] mb-[1rem] "

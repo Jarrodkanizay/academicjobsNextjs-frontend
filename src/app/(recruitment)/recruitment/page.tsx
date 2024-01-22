@@ -183,7 +183,7 @@ export default function myPage() {
           <figure className="relative w-full min-h-[237px] max-h-[237px] overflow-hidden">
             <Image
               src="/academic-job-postings/top-universities-worldwide.jpg"
-              alt="A new way to recruit with powerful AI tools"
+              alt="top universities worldwide"
               width={1280}
               height={380}
               className="absolute w-full h-full object-cover"
@@ -278,7 +278,7 @@ export default function myPage() {
                     width={90}
                     height={90}
                     src="/academic-job-postings/Top-Executive.jpg"
-                    alt="Life Saving Customer Service & Support"
+                    alt="Top Executive"
                   />
                 </div>
               </figure>
@@ -303,7 +303,7 @@ export default function myPage() {
                     width={90}
                     height={90}
                     src="/academic-job-postings/HR-Jobs.png"
-                    alt="Elite Academic Talent"
+                    alt="HR Jobs"
                   />
                 </div>
               </figure>
@@ -331,7 +331,7 @@ export default function myPage() {
                     width={90}
                     height={90}
                     src="/academic-job-postings/Admin-Jobs.png"
-                    alt="Elite Academic Talent"
+                    alt="Admin Jobs"
                   />
                 </div>
                 <div className="icon-ai hidden">

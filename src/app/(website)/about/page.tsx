@@ -23,7 +23,7 @@ export default function myPage() {
               width={1280}
               height={380}
               className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
-              alt="AI Powered Recruitment Platform"
+              alt="About us"
             />
             <div>
               <h1 className="text-4xl">
