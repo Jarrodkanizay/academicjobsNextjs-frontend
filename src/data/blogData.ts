@@ -545,7 +545,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2023-03-12',
     updated_at: ``,
-    image_url: `/blogs/find-your-future-career-at-Queensland-University-of-Technology-(QUT).jpg`,
+    image_url: `/blogs/find-your-future-career-at-Queensland-University-of-Technology-QUT.jpg`,
     alt: `Join the academic team at Queensland University of Technology`,
     summary:
       'Join the academic team at Queensland University of Technology (QUT) to find your future career.',
@@ -577,16 +577,13 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2023-02-08',
     updated_at: ``,
-    image_url: ``,
-    alt: ``,
+    image_url: `/blogs/exciting-jobs-at-bond-university.jpg`,
+    alt: `Bond University Careers`,
     summary:
       'Academic careers at Bond University provide professionals with the chance to flourish in a dynamic and cutting-edge higher education setting.',
     tags: [],
     keywords: 'Seek all Bond University Careers Here',
-    content: `
-
-
-    <div><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip3.png"><br>
+    content: `<div><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip3.png"><br>
 <div>
 <p>Academic Jobs can help you kick start your career at Bond Uni today! </p>
 <p><br>A career at Bond University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. With a commitment to excellence in education and research, Bond University provides a platform for employees to contribute meaningfully to the academic community. The small class sizes allow personalised interactions with students, creating a unique and impactful teaching experience. The university's state-of-the-art facilities, global perspective, and interdisciplinary approach to research offer a stimulating environment for continuous learning and professional development. </p>

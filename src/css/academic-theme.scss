@@ -687,6 +687,14 @@ html {
       padding: 10mm;
       border: 1px solid #ccc;
     }
+    .show-form {
+      display: block;
+    }
+
+    .hide-form {
+      display: none;
+    }
+
     @media (max-width: 1023px) {
       .desktop-mode {
         display: none;

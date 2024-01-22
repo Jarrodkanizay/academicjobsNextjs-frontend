@@ -39,13 +39,16 @@ export default function BlogPosts() {
             {blogData.slice(0, 6).map((post, index) => (
               <article key={index} className="card bg-slate-100 shadow-xl">
                 <figure>
-                  <Image
-                    src={post.image_url}
-                    alt={post.alt}
-                    width={800}
-                    height={800}
-                  />
+                  <Link href={'/academic-hub/' + post.slug}>
+                    <Image
+                      src={post.image_url}
+                      alt={post.alt}
+                      width={800}
+                      height={800}
+                    />
+                  </Link>
                 </figure>
+
                 <div className="card-body">
                   <h2 className="card-title grow">
                     <Link
@@ -111,15 +114,17 @@ export default function BlogPosts() {
             {blogData.slice(6).map((post, index) => (
               <article
                 key={index}
-                className="card bg-slate-100 shadow-xl image-full"
+                className="card bg-slate-100 shadow-xl image-full items-stretch"
               >
                 <figure>
-                  <Image
-                    src={post.image_url}
-                    alt={post.alt}
-                    width={800}
-                    height={800}
-                  />
+                  <Link href={'/academic-hub/' + post.slug}>
+                    <Image
+                      src={post.image_url}
+                      alt={post.alt}
+                      width={800}
+                      height={800}
+                    />
+                  </Link>
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">
@@ -130,7 +135,7 @@ export default function BlogPosts() {
                       {post.title}
                     </Link>
                   </h2>
-                  <div className="card-actions justify-end">
+                  <div className="card-actions justify-end mt-auto">
                     <Link
                       href={'/academic-hub/' + post.slug}
                       className="btn btn-aj btn-sm"
@@ -144,47 +149,8 @@ export default function BlogPosts() {
           </div>
         </>
       ) : (
-        <div>Loading...</div>
+        <div>Something went wrong loading the Blogs.</div>
       )}
-
-      {/* <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {blogData.slice(0, 6).map((post, index) => (
-          <article key={index} className="card bg-slate-100 shadow-xl">
-            <figure>
-              <Image
-                src={post.image_url}
-                alt={post.alt}
-                width={800}
-                height={800}
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title grow">
-                <Link
-                  href={'/academic-hub/' + post.slug}
-                  className="hover:text-orange-500 text-2xl"
-                >
-                  {post.title}
-                </Link>
-              </h2>
-              <h3>By {post.author}</h3>
-              <time>{post.published_at}</time>
-              <p className="h-[130px] relative">
-                {post.summary}
-                <div className="blog-gradient"> </div>
-              </p>
-              <div className="card-actions justify-end">
-                <Link
-                  href={'/academic-hub/' + post.slug}
-                  className="btn btn-aj btn-sm"
-                >
-                  Read more
-                </Link>
-              </div>
-            </div>
-          </article>
-        ))}
-      </div> */}
     </main>
   );
 }
