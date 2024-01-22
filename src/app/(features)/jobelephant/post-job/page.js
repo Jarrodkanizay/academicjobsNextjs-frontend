@@ -189,7 +189,7 @@ const PostJobForm = () => {
                 </button>
               </div>
             </form>
-            <picture className="min-w-full max-w-2xl mx-auto mt-6">
+            <picture className="min-w-full max-w-2xl mx-auto mt-16">
               <Image
                 width={800}
                 height={380}
@@ -209,7 +209,7 @@ const PostJobForm = () => {
               height={800}
               src="https://academicjobs.s3.amazonaws.com/img/_misc/jobelephant-puzzle.png"
               className=""
-              alt="AI Powered Recruitment Platform"
+              alt="AcademicJobs and JobElephant Partnership"
             />
             <div className="prose">
               <p className="mt-4">
