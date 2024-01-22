@@ -13,6 +13,7 @@ import { Input } from '@/components/ui/input';
 
 const PostJobForm = () => {
   const [newContact, setNewContact] = useState(false);
+  const [selectedContact, setSelectedContact] = useState(null);
 
   let content;
   const router = useRouter();
@@ -61,12 +62,11 @@ const PostJobForm = () => {
       <main className=" content-grid">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
+            <h2 className="text-4xl font-bold mb-8 mt-8 underline-full">
+              JobElephant Quick Post
+            </h2>
             <form className=" " onSubmit={handleSubmit(onSubmit)}>
               <div className="flex flex-col gap-4 justify-start">
-                <h2 className="text-4xl font-bold mb-6 mt-8 underline-full">
-                  JobElephant Quick Post
-                </h2>
-
                 <div className="w-full  flex flex-col items-start">
                   <label className="label-text text-xs mb-1">
                     Name (JobElephant person posting the job)
@@ -77,29 +77,60 @@ const PostJobForm = () => {
                     onChange={(e) => {
                       if (e.target.value === 'Add Contact') {
                         setNewContact(true);
+                        setSelectedContact(null);
                         setValue('00_First_Name', '');
                         setValue('00_Last_Name', '');
                         setValue('02_Email', '');
                       } else {
                         setNewContact(false);
-                        setValue(
-                          '00_First_Name',
-                          e.target.value.split(' - ')[0].split(' ')[0]
+                        const selectedContact = jobElephantContacts.find(
+                          (contact) =>
+                            `${contact.firstName} ${contact.lastName} - ${contact.email}` ===
+                            e.target.value
                         );
-                        setValue(
-                          '00_Last_Name',
-                          e.target.value.split(' - ')[0].split(' ')[1]
-                        );
-                        setValue('02_Email', e.target.value.split(' - ')[1]);
+                        setSelectedContact(selectedContact);
+
+                        if (selectedContact) {
+                          setValue('00_First_Name', selectedContact.firstName);
+                          setValue('00_Last_Name', selectedContact.lastName);
+                          setValue('02_Email', selectedContact.email);
+                        }
                       }
                     }}
                   >
+                    <option value="SelectContact" disabled selected>
+                      Select Contact
+                    </option>
                     {jobElephantContacts.map((el, index) => (
-                      <option key={index} value={el}>
-                        {el}
-                      </option>
+                      <>
+                        <option
+                          key={index}
+                          value={`${el.firstName} ${el.lastName} - ${el.email}`}
+                        >
+                          {`${el.firstName} ${el.lastName} - ${el.email}`}
+                        </option>
+                      </>
                     ))}
+                    <option value="Add Contact">Add Contact</option>
                   </select>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  {selectedContact && selectedContact.avatar && (
+                    <>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={selectedContact.avatar}
+                        alt="Avatar"
+                        width={100} // replace with your desired width
+                        height={100} // replace with your desired height
+                      />
+                      <p className="mt-3">
+                        Hi <b>{selectedContact.firstName}</b>, welcome to your
+                        quick post form.
+                      </p>
+                    </>
+                  )}
                 </div>
                 <div
                   className={`p-4 border border-sky-200 bg-sky-50 ${
@@ -112,7 +143,7 @@ const PostJobForm = () => {
                       errors={errors}
                       label="First Name"
                       type="text"
-                      field="00_First_Name"
+                      field="01_First_Name"
                       forceClass=" py-3 text-black"
                       placeholder="First Name"
                       autoComplete="given-name"
@@ -125,7 +156,7 @@ const PostJobForm = () => {
                       errors={errors}
                       label="Last Name"
                       type="text"
-                      field="00_Last_Name"
+                      field="01_Last_Name"
                       forceClass=" py-3 text-black"
                       placeholder="Last Name"
                       autoComplete="family-name"
@@ -184,9 +215,7 @@ const PostJobForm = () => {
               setValue("job_description", value)
             }}
             className="w-full h-[70%] mt-10 bg-white" /> */}
-                <button className="btn btn-accent mt-4">
-                  Submit & PayNow{' '}
-                </button>
+                <button className="btn btn-accent mt-4">Submit & PayNow</button>
               </div>
             </form>
             <picture className="min-w-full max-w-2xl mx-auto mt-16">
