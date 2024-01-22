@@ -15,10 +15,10 @@ export default function Page() {
   return (
     <div>
     <div className="pt-[10rem] flex flex-col items-center justify-center" >
-        <img
+        <Image
           src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-asia-min.png"
 
-          alt="AcademicJobs Logo"
+          alt="AcademicJobs Asia Logo"
           className=" w-[20rem] mb-[1rem] "
         /></div>
       <JobSearchBox l="Asia"/>
