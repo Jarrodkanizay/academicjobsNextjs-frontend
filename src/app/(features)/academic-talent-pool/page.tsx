@@ -142,7 +142,7 @@ export default function Page() {
           <figure className="px-10 pt-10">
             <Image
               src="https://academicjobs.s3.amazonaws.com/img/_misc/Professional-Services-icon.png"
-              alt="Shoes"
+              alt="Professional Services icon"
               width={cardIconSize}
               height={cardIconSize}
               className="rounded-xl max-h-[100px] "
@@ -161,7 +161,7 @@ export default function Page() {
           <figure className="px-10 pt-10">
             <Image
               src="https://academicjobs.s3.amazonaws.com/img/_misc/Client-Success-icon.png"
-              alt="Shoes"
+              alt="Client Success icon"
               width={cardIconSize}
               height={cardIconSize}
               className="rounded-xl max-h-[100px] "
@@ -177,7 +177,7 @@ export default function Page() {
           <figure className="px-10 pt-10 ">
             <Image
               src="https://academicjobs.s3.amazonaws.com/img/_misc/Internship-icon.png"
-              alt="Shoes"
+              alt="Internship icon"
               width={cardIconSize}
               height={cardIconSize}
               className="rounded-xl max-h-[100px] "
@@ -196,7 +196,7 @@ export default function Page() {
           <figure className="px-10 pt-10">
             <Image
               src="https://academicjobs.s3.amazonaws.com/img/_misc/Corporate-Services-icon.png"
-              alt="Shoes"
+              alt="Corporate Services icon"
               width={cardIconSize}
               height={cardIconSize}
               className="rounded-xl max-h-[100px] "
@@ -216,7 +216,7 @@ export default function Page() {
           <figure className="px-10 pt-10">
             <Image
               src="https://academicjobs.s3.amazonaws.com/img/_misc/Client-Care-icon.png"
-              alt="Shoes"
+              alt="Client Care icon"
               width={cardIconSize}
               height={cardIconSize}
               className="rounded-xl max-h-[100px] "
@@ -235,7 +235,7 @@ export default function Page() {
           <figure className="px-10 pt-10">
             <Image
               src="https://academicjobs.s3.amazonaws.com/img/_misc/Innovation-icon.png"
-              alt="Shoes"
+              alt="Innovation icon"
               width={cardIconSize}
               height={cardIconSize}
               className="rounded-xl max-h-[100px] "
