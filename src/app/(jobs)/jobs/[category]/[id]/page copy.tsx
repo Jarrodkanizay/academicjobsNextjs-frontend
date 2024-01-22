@@ -47,7 +47,7 @@ interface JobData {
   website: string;
   employer_location: string;
 }
- async function getJob(id: string): Promise<JobApiResponse> {
+export async function getJob(id: string): Promise<JobApiResponse> {
   const response = await fetch(`https://api2.sciencejobs.com.au/api/job/${id}`);
   const res: JobApiResponse = await response.json();
   // console.log(res);
