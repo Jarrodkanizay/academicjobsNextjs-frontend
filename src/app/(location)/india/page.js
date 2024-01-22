@@ -21,17 +21,11 @@ export default function Page() {
         <meta name="keywords" content="Academic Jobs India. India university jobs, academic jobs in India, " />
       </Helmet> */}
       <div className="pt-[5rem] flex flex-col items-center justify-center">
-        <Image
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/India-Leaf.jpg"
-          alt="AcademicJobs India"
-          width={500}
-          height={500}
-          className=" w-[8rem]  "
-        />
+    
       </div>
       <div className=" flex flex-col items-center justify-center">
         <Image
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-india.png"
+          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-india-min.png"
           alt="AcademicJobs India"
           width={500}
           height={500}

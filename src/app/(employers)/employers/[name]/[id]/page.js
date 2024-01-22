@@ -249,7 +249,7 @@ const Employer = () => {
           </div>
         </div> */}
         <div className="content-grid md:mx-auto md:flex">
-          <div className="md:flex flex-col-reverse">
+          <div className="md:flex">
           {viewJob ? (
             <SearchResults q={{ employer_id: id || 0 }} />
           ) : (

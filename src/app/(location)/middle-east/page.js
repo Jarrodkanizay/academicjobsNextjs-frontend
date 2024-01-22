@@ -15,15 +15,10 @@ export default function Page() {
   return (
     <div>
       <div className="pt-[5rem] flex flex-col items-center justify-center" >
-        <img
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/Middle-Leaf.png"
-
-          alt="AcademicJobs Middle East"
-          className=" w-[8rem]  "
-        /></div>
+      </div>
  <div className=" flex flex-col items-center justify-center" >
         <img
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-middle-east.png"
+          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-middle-east-min.png"
 
           alt="AcademicJobs Middle East"
           className=" w-[20rem] mb-[1rem] mt-[-1rem]"
