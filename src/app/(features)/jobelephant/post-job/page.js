@@ -189,6 +189,15 @@ const PostJobForm = () => {
                 </button>
               </div>
             </form>
+            <picture className="min-w-full max-w-2xl mx-auto mt-6">
+              <Image
+                width={800}
+                height={380}
+                src="https://academicjobs.s3.amazonaws.com/img/_misc/proudly-working-with.png"
+                alt="job elephant logo"
+                className="mx-auto bg-gray-200"
+              />
+            </picture>
           </div>
           <div>
             <h3 className="text-emerald-600 mb-4">
