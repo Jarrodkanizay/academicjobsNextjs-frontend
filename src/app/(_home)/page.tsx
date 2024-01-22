@@ -38,7 +38,7 @@ export default function myPage() {
               height={170}
               src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
               className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
-              alt="AI Powered Recruitment Platform"
+              alt="AcademicJobs Job Elephant Client Center"
                          /> </a>
 
       <a
@@ -111,7 +111,116 @@ export default function myPage() {
         </div>
       </div>
 
+      <div className=" mx-auto mt-8">
+          <h2 className="underline-full"> Top University Employer Rankings</h2>
+          <div className="bg-white flex flex-col">
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  px-1 mb-8 text-left px-4">
+              <div className="/academic-hub/happiness-and-academics/">
+                <div className="card bg-slate-100 shadow-xl">
+                  <div className="card-body">
+                    <h2 className="card-title">
+                      {' '}
+                     Top University Employers USA{' '}
+                    </h2>
+                    <a className=" text-gray-400"> 10 Aug, 2023</a>
+                  </div>
+                  <figure>
+                    <Image
+                      width={1280}
+                      height={380}
+                      src="/academic-job-postings/harvard-university.jpg"
+                      alt="Happiness and Academics: Scott Galloway's Algebra of hub"
+                    />
+                  </figure>
 
+                  <ul className=" p-4 pl-12 list-disc text-gray-500" >
+                    <li >Harvard University</li>
+                    <li>	Massachusetts Institute of Technology (MIT)</li>
+                    <li> Stanford University</li>
+                    <li> University of California Berkeley (UCB)</li>
+                    <li> California Institute of Technology (Caltech)</li>
+                    </ul>
+
+                  <Link
+                      href={'/academic-hub/'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                    >
+                      View List
+                    </Link>
+                </div>
+              </div>
+              <div className="/academic-hub/top-academic-jobs-australia/">
+                <div className="card bg-slate-100 shadow-xl">
+                  <div className="card-body">
+                    <h2 className="card-title">
+                      {' '}
+                      Top University Employers Australia{' '}
+                    </h2>
+                    <a className=" text-gray-400"> 10 Aug, 2023</a>
+                  </div>
+                  <figure>
+                    <Image
+                      width={1280}
+                      height={380}
+                      src="/academic-job-postings/university-of-sydney.jpg"
+                      alt="Top Academic Jobs Australia"
+                      className="h-[5rem]"
+                    />
+                  </figure>
+                  <ul className=" p-4 pl-12 list-disc text-gray-500" >
+                    <li >Queensland University of Technology (QUT)</li>
+                    <li>	Bond University</li>
+                    <li> The University of Sydney</li>
+                    <li> Australian National University (ANU)</li>
+                    <li> Monash University</li>
+                    </ul>
+                  <Link
+                      href={'/academic-hub/'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                    >
+                      View List
+                    </Link>
+                </div>
+              </div>
+              <div className="/academic-hub/how-to-land-your-dream-college-job-a-step-by-step-guide/">
+                <div className="card bg-slate-100 shadow-xl">
+                  <div className="card-body">
+                    <h2 className="card-title">
+                      {' '}
+                      Top University Employers UK{' '}
+                    </h2>
+                    <a className=" text-gray-400"> 06 Jul, 2023</a>
+                  </div>
+                  <figure  >
+                    <Image
+                      width={1280}
+                      height={380}
+                      src="/academic-job-postings/top-universities-worldwide.jpg"
+                      alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                      className="h-[5rem]"
+                    />
+                  </figure>
+                  <ul className=" p-4 pl-12 list-disc text-gray-500" >
+                    <li >University of Oxford</li>
+                    <li>	Imperial College London</li>
+                    <li> University of Cambridge</li>
+                    <li> University of Edinburgh</li>
+                    <li> King’s College London</li>
+                    </ul>
+                  <Link
+                      href={'/academic-hub/'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                    >
+                      View List
+                    </Link>
+                </div>
+              </div>
+           
+            </ul>
+          </div>
+
+   
+        </div>
 
       {/* <p className="px-7 text-center mt-5">
             <Link

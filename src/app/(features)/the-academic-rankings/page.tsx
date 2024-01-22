@@ -19,9 +19,9 @@ export default function myPage() {
           <div className="container mx-auto">
             <div className="hero-content flex-col lg:flex-row-reverse">
               <Image
-                width={1280}
-                height={380}
-                src="/job-ads/recruitment-post-a-job.jpg"
+                width={300}
+                height={300}
+                src="https://academicjobs.s3.amazonaws.com/img/_misc/Aca-rankings-logo.png"
                 className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
                 alt="AI Powered Recruitment Platform"
               />
@@ -44,14 +44,39 @@ export default function myPage() {
         </div>
         <div className="max-w-screen-xl mx-auto mt-8">
           <h2 className="underline-full"> Top Rankings Today</h2>
-          <div className="bg-white flex flex-col">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+           
+          <figure>
+                  <Link href='/academic-hub/' >
+                    <Image
+                      src="/job-ads/recruitment-post-a-job.jpg"
+                      alt="AI Powered Recruitment Platform"
+                      width={800}
+                      height={800}
+                    />
+                  </Link>
+                </figure>
+          <div className="card-body">
+      
+            <h2 className="card-title">
+                              <a className="text-white hover:text-orange-500 text-lg" href="/academic-hub/the-highest-paid-academic-job-of-2023">The Highest Paid Academic Jobs Australia for 2023</a>
+              </h2>
+              <div className="card-actions justify-end mt-auto">
+                <a className="btn btn-aj btn-sm" href="/academic-hub/the-highest-paid-academic-job-of-2023">Read more</a>
+                </div>
+                
+                </div>
+          </div>
+
+          {/* <div className="bg-white flex flex-col">
             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  px-1 mb-8 text-left px-4">
               <div className="/academic-hub/happiness-and-academics/">
                 <div className="card bg-slate-100 shadow-xl">
                   <div className="card-body">
                     <h2 className="card-title">
                       {' '}
-                     Top University Employers USA{' '}
+                     Top Academics USA{' '}
                     </h2>
                     <a className=" text-gray-400"> 10 Aug, 2023</a>
                   </div>
@@ -85,7 +110,7 @@ export default function myPage() {
                   <div className="card-body">
                     <h2 className="card-title">
                       {' '}
-                      Top University Employers Australia{' '}
+                      Top Academics Australia{' '}
                     </h2>
                     <a className=" text-gray-400"> 10 Aug, 2023</a>
                   </div>
@@ -118,7 +143,7 @@ export default function myPage() {
                   <div className="card-body">
                     <h2 className="card-title">
                       {' '}
-                      Top University Employers UK{' '}
+                      Top Academics UK{' '}
                     </h2>
                     <a className=" text-gray-400"> 06 Jul, 2023</a>
                   </div>
@@ -206,8 +231,8 @@ export default function myPage() {
                   </figure>
                 </div>
               </div> */}
-            </ul>
-          </div>
+            {/* </ul>
+          </div> */} 
 
           {/* <h2 className="text-1xl font-bold py-1 px-7 border-2 border-[#f4a10c] text-[#f4a10c] rounded-3xl mt-20 shadow-md ">
           Most Rewarding University Careers
