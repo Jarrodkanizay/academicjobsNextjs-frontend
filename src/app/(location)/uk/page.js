@@ -20,7 +20,7 @@ export default function Page() {
     <div>
   
       <div className="pt-[8rem] flex flex-col items-center justify-center" >
-        <img
+        <Image
           src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-uk-min.png"
 
           alt="AcademicJobs UK Logo"
