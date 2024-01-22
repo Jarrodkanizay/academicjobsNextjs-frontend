@@ -10,10 +10,11 @@ import Button from './Button';
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
   if (!job) return { title: 'not found' };
+  const { title, company_name, location } = job?.data
   return {
-    title:
-    job?.data.master_category_job_type + '#######' + job?.data.company_name,
-    description: job?.data.company_name,
+    title: `${title} | ${company_name}`,
+    description: `Explore our ${title} job opportunities available at ${company_name}! Apply to become a ${title} today. Apply for an academic job today!`,
+    keywords: `${title} jobs| ${company_name} university jobs| ${location} university jobs`,
   };
 }
 
