@@ -60,7 +60,7 @@ export default function Page() {
               height={170}
               src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
               className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
-              alt="AI Powered Recruitment Platform"
+              alt="AcademicJobs Canada logo"
                          /> </a>
 
       <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">

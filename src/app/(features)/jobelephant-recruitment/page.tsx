@@ -82,7 +82,7 @@ export default function Page() {
                   height={500}
                   src="https://academicjobs.s3.amazonaws.com/img/_misc/jobelephant-puzzle.png"
                   className="lg:max-w-lg rounded-lg mb-8 lg:mb-0 bg-white"
-                  alt="AI Powered Recruitment Platform"
+                  alt="jobelephant puzzle"
                 />
                 <div>
                   <h1 className="text-xl text-[#265882]">
@@ -222,7 +222,7 @@ target="_blank"
                   height={500}
                   src="https://academicjobs.s3.amazonaws.com/img/_misc/Get-On-Top.png"
                   className="lg:max-w-xl rounded-3xl shadow-2xl mb-8 lg:mb-0 bg-white"
-                  alt="AI Powered Recruitment Platform"
+                  alt="Get On Top"
                 />
      
                 </div>
@@ -247,7 +247,7 @@ target="_blank"
                   height={400}
                   src="https://academicjobs.s3.amazonaws.com/img/_misc/Uni-San-Diego.jpeg"
                   className="lg:max-w-lg rounded-xl shadow-2xl mb-8 lg:mb-0 bg-white"
-                  alt="AI Powered Recruitment Platform"
+                  alt="San Diego"
                 />
                 <div className="content-grid">
                   <h2 className="text-xl font-normal text-[#265882]">
@@ -271,7 +271,7 @@ target="_blank"
               width={1280}
               height={380}
               src="https://academicjobs.s3.amazonaws.com/img/_misc/Jobelephant-Universities.png"
-              alt="academicjobs university logos "
+              alt="Jobelephant Universities"
               className=" rounded-xl mx-auto md:max-w-screen-2xl my-12 "
             />
           </div>
@@ -326,7 +326,7 @@ then JobElephant is a brilliant choice.""
               width={800}
               height={380}
               src="https://academicjobs.s3.amazonaws.com/img/_misc/proudly-working-with.png"
-              alt="job elephant logo"
+              alt="proudly working with job elephant"
               className="mx-auto bg-gray-200"
             />
           </picture>

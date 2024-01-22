@@ -24,7 +24,7 @@ export default function myPage() {
            height="380"
             src="/ai-resume-extraction/ai-resume-extraction.jpg"
             className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0 lg:mr-4"
-            alt="AI Powered Recruitment Platform"
+            alt="AI resume extraction"
           />
           <div>
             <h1 className="text-4xl font-bold text-aj">
