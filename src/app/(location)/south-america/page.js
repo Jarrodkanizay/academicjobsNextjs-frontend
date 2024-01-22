@@ -21,6 +21,8 @@ export const metadata = {
 
           alt="AcademicJobs South America Logo"
           className=" w-[20rem] mb-[1rem] "
+          width={330}
+          height={220}
         /></div>
       <JobSearchBox l="South America"/>
 
