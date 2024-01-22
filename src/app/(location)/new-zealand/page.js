@@ -18,11 +18,13 @@ export default function Page() {
       <div className="pt-[5rem] flex flex-col items-center justify-center" >
        </div>
  <div className=" flex flex-col items-center justify-center" >
-        <img
+        <Image
           src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-nz.png"
 
-          alt="AcademicJobs New Zealand"
+          alt="AcademicJobs New Zealand Logo"
           className=" w-[20rem] mb-[1rem] "
+          width={330}
+          height={220}
         /></div>
 
       <JobSearchBox l="New Zealand"/>

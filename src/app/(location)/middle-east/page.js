@@ -17,11 +17,13 @@ export default function Page() {
       <div className="pt-[5rem] flex flex-col items-center justify-center" >
       </div>
  <div className=" flex flex-col items-center justify-center" >
-        <img
+        <Image
           src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-middle-east-min.png"
 
-          alt="AcademicJobs Middle East"
+          alt="AcademicJobs Middle East logo"
           className=" w-[20rem] mb-[1rem] mt-[-1rem]"
+          width={330}
+          height={220}
         /></div>
       <JobSearchBox l="Middle East"/>
       <div className=" mt-[10rem] " >

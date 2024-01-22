@@ -28,10 +28,10 @@ export default function myPage() {
           <div className="hero max-h-fit bg-slate-200 py-8">
             <div className="container mx-auto">
               <div className="hero-content flex-col lg:flex-row gap-8">
-                <img
+                <Image
                   src="/academic-job-postings/Middle-East-Professor.jpg"
                   className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
-                  alt="Number 1 Recruitment Platform"
+                  alt="Middle East Professor"
                 />
                 <div>
                   <h1 className="text-3xl font-bold text-aj">
@@ -125,11 +125,11 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
-                  <img
+                  <Image
                     width={90}
                     height={90}
                     src="/academic-job-postings/life-saving-customer-service.svg"
-                    alt="Life Saving Customer Service & Support"
+                    alt="Life Saving Customer Service & Support Middle East"
                   />
                 </div>
               </figure>
@@ -154,11 +154,11 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
-                  <img
+                  <Image
                     width={90}
                     height={90}
                     src="/academic-job-postings/elite-talent.svg"
-                    alt="Elite Academic Talent"
+                    alt="Middle East Elite Academic Talent"
                   />
                 </div>
               </figure>
@@ -180,9 +180,9 @@ export default function myPage() {
         {/* Uni hero image */}
         <div className="bg-gray-200 mt-16">
           <figure className="relative w-full min-h-[237px] max-h-[237px] overflow-hidden">
-            <img
+            <Image
               src="/academic-job-postings/Middle-East-qataruniversity.jpg"
-              alt="A new way to recruit with powerful AI tools"
+              alt="Middle East qatar university"
               className="absolute w-full h-full object-cover"
             />
           </figure>
@@ -194,9 +194,9 @@ export default function myPage() {
           {/* A whole new way to recruit Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
-              <img
+              <Image
                 src="/academic-job-postings/academics-networking.jpg"
-                alt="A new way to recruit with powerful AI tools"
+                alt="Middle East academic networking"
                 className="w-full lg:max-w-lg rounded-xl m-6"
               />
             </figure>
@@ -225,9 +225,9 @@ export default function myPage() {
           {/* Lowest fees Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
-              <img
+              <Image
                 src="/academic-job-postings/great-customer-service.jpg"
-                alt="Great Customer Service with the Lowest Prices"
+                alt="Great Customer Service with the Lowest Prices Middle East"
                 className="w-full lg:max-w-lg rounded-xl m-6"
               />
             </figure>
@@ -274,11 +274,11 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-4">
                 <div className="icon-ai">
-                  <img
+                  <Image
                     width={90}
                     height={90}
                     src="/academic-job-postings/Top-Executive.jpg"
-                    alt="Life Saving Customer Service & Support"
+                    alt="Middle East Top Executive"
                   />
                 </div>
               </figure>
@@ -298,11 +298,11 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
-                  <img
+                  <Image
                     width={90}
                     height={90}
                     src="/academic-job-postings/HR-Jobs.png"
-                    alt="Elite Academic Talent"
+                    alt="Middle East HR Jobs"
                   />
                 </div>
               </figure>
@@ -326,11 +326,11 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
-                  <img
+                  <Image
                     width={90}
                     height={90}
                     src="/academic-job-postings/Admin-Jobs.png"
-                    alt="Elite Academic Talent"
+                    alt="Middle East Admin Jobs"
                   />
                 </div>
                 <div className="icon-ai hidden">
@@ -375,9 +375,9 @@ export default function myPage() {
           {/* Access to thousands of top academics Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
-              <img
+              <Image
                 src="/academic-job-postings/global-academic-network.jpg"
-                alt="Access to thousands of top global academics"
+                alt="Access to thousands of top global academics Middle East"
                 className="w-full lg:max-w-lg rounded-xl m-6"
               />
             </figure>
@@ -401,9 +401,9 @@ export default function myPage() {
           {/* Helpful tools and AI make it easy to list Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
-              <img
+              <Image
                 src="/academic-job-postings/helpful-artificial-intelligence.jpg"
-                alt="Helpful AI tools"
+                alt="Middle East AI tools"
                 className="w-full lg:max-w-lg rounded-xl m-6"
               />
             </figure>
