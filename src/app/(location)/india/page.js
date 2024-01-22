@@ -30,6 +30,7 @@ export default function Page() {
           width={500}
           height={500}
           className=" w-[20rem] mb-[1rem] "
+          
         />
       </div>
       <JobSearchBox l="India"/>

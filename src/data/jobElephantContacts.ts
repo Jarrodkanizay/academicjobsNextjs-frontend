@@ -1,4 +1,4 @@
-export const jobElephantContacts = [
+export const jobElephantContactsOld = [
   'Jessica White - Jessica@jobelephant.com',
   'Trista Nicholson - Trista@jobelephant.com ',
   'Lauren Blevins - lauren@jobelephant.com ',
@@ -16,4 +16,121 @@ export const jobElephantContacts = [
   'Matthew Jefferson - matthew@jobelephant.com',
   'Tony Ngo - tony@jobelephant.com',
   'Add Contact',
+];
+
+export const jobElephantContacts = [
+  {
+    firstName: 'Ana',
+    lastName: 'Carreto',
+    email: 'ana@jobelephant.com',
+    avatar: '/partners/jobelephant/avatars/Ana-Carreto.png',
+  },
+  {
+    firstName: 'Andy',
+    lastName: 'Ling',
+    email: 'andyling@jobelephant.com',
+    avatar: '/partners/jobelephant/avatars/Andy-Ling.png',
+  },
+  {
+    firstName: 'Bernice',
+    lastName: 'Gonzalez',
+    email: 'bernice@jobelephant.com',
+    avatar: '/partners/jobelephant/avatars/Bernice-Gonzalez.png',
+  },
+  {
+    firstName: 'Hiral',
+    lastName: 'Trivedi',
+    email: 'hiral@jobelephant.com ',
+    avatar: '/partners/jobelephant/avatars/Hiral-Trivedi.png',
+  },
+  {
+    firstName: 'Irene',
+    lastName: 'Silveira',
+    email: 'irene@jobelephant.com',
+    avatar: '/partners/jobelephant/avatars/Irene-Silveira.png',
+  },
+  {
+    firstName: 'Joe',
+    lastName: 'Grant',
+    email: 'joe@jobelephant.com ',
+    avatar: '/partners/jobelephant/avatars/Joe-Grant.png',
+  },
+  {
+    firstName: 'Jonathan',
+    lastName: 'Davis',
+    email: 'jonathan@jobelephant.com',
+    avatar: '/partners/jobelephant/avatars/Jonathan-Davis.png',
+  },
+  {
+    firstName: 'Justin',
+    lastName: 'Baker',
+    email: 'justin@jobelephant.com',
+    avatar: '/partners/jobelephant/avatars/Justin-Baker.png',
+  },
+  {
+    firstName: 'Kim',
+    lastName: 'Hoang',
+    email: 'kim@jobelephant.com ',
+    avatar: '/partners/jobelephant/avatars/Kim-Hoang.png',
+  },
+  {
+    firstName: 'Kyle',
+    lastName: 'Jones',
+    email: 'kyle@jobelephant.com',
+    avatar: '/partners/jobelephant/avatars/Kyle-Jones.png',
+  },
+  {
+    firstName: 'Lewam',
+    lastName: 'Kebreab',
+    email: 'lewam@jobelephant.com ',
+    avatar: '/partners/jobelephant/avatars/Lewam-Kebreab.png',
+  },
+  {
+    firstName: 'Natasha',
+    lastName: 'Felix Partida',
+    email: 'natasha@jobelephant.com',
+    avatar: '/partners/jobelephant/avatars/Natasha-Felix-Partida.png',
+  },
+  {
+    firstName: 'Patrina',
+    lastName: 'DeBiase',
+    email: 'patrina@jobelephant.com',
+    avatar: '/partners/jobelephant/avatars/Patrina-DeBiase.png',
+  },
+  {
+    firstName: 'Samantha',
+    lastName: 'Ianucci',
+    email: 'samantha@jobelephant.com',
+    avatar: '/partners/jobelephant/avatars/Samantha-Ianucci.png',
+  },
+  {
+    firstName: 'Sarah',
+    lastName: 'Seagraves',
+    email: 'sarah@jobelephant.com ',
+    avatar: '/partners/jobelephant/avatars/Sarah-Seagraves.png',
+  },
+  {
+    firstName: 'Sawyer',
+    lastName: 'Kim',
+    email: 'sawyer@jobelephant.com ',
+    avatar: '/partners/jobelephant/avatars/Sawyer-Kim.png',
+  },
+  {
+    firstName: 'Tony',
+    lastName: 'Ngo',
+    email: 'tony@jobelephant.com',
+    avatar: '/partners/jobelephant/avatars/Tony-Ngo.png',
+  },
+  {
+    firstName: 'Tyler',
+    lastName: 'Sheehan',
+    email: 'tyler@jobelephant.com',
+    avatar: '/partners/jobelephant/avatars/Tyler-Sheehan.png',
+  },
+  {
+    firstName: 'Vivian',
+    lastName: 'Nguyen',
+    email: 'vivian@jobelephant.com',
+    avatar: '/partners/jobelephant/avatars/Vivian-Nguyen.png',
+  },
 ];

@@ -29,7 +29,7 @@ export default function Page() {
       <JobSearchBox l="Australia" />
 
 
-      <div className=" mt-[10rem] ">
+      <div className=" mt-[4rem] ">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li className="">
@@ -87,6 +87,15 @@ export default function Page() {
           </li>
         </ul>
       </div>
+      <a href="/the-academic-rankings"><Image
+              width={200}
+              height={200}
+              src="https://academicjobs.s3.amazonaws.com/img/_misc/The+Academic+Rankings+Logo4+(002).JPG"
+              className=" mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto text-center"
+              alt="AcademicJobs Job Elephant Client Center"
+                         /> </a>
+<div className="text-center items-center justify-center px-auto mx-auto text-sm text-gray-500 animate-pulse">View Your Ranking Here</div> 
+
       <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">
         <a href="#section" class="scroll-smooth md:scroll-auto">
           ▼
