@@ -7,7 +7,7 @@ import { BsFillShareFill } from 'react-icons/bs';
 import Button from './Button';
 
 //metadata
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
   if (!job) return { title: 'not found' };
   return {
@@ -17,44 +17,15 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-interface Props {
-  params: { id: string; category: string };
-}
-interface JobApiResponse {
-  status: string;
-  code: number;
-  data: JobData;
-}
-interface JobData {
-  employer_id: number;
-  id: number;
-  master_category_job_type: string;
-  job_type: string;
-  region: string | null;
-  country: string;
-  state: string;
-  city: string;
-  activation_date: string;
-  description: string;
-  title: string;
-  location: string;
-  how_to_apply: string;
-  expiration_date: string;
-  featured: number;
-  company_description: string;
-  company_name: string;
-  logo: string;
-  website: string;
-  employer_location: string;
-}
- async function getJob(id: string): Promise<JobApiResponse> {
+
+ async function getJob(id) {
   const response = await fetch(`https://api2.sciencejobs.com.au/api/job/${id}`);
-  const res: JobApiResponse = await response.json();
+  const res = await response.json();
   // console.log(res);
   return res;
 }
 
-const JobDetailPage = async ({ params }: Props) => {
+const JobDetailPage = async ({ params }) => {
   const job = await getJob(params.id);
   if (!job) notFound();
   const {
