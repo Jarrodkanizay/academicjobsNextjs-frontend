@@ -16,6 +16,7 @@ const PostJobForm = ({ partner }) => {
   const [newContact, setNewContact] = useState(false);
   const [selectedContact, setSelectedContact] = useState(null);
 
+  let avatarPath = '';
   let textColor = 'text-aj';
   let partnerName = 'AcademicJobs';
   let partnerLogo = '';
@@ -32,6 +33,7 @@ const PostJobForm = ({ partner }) => {
       'https://academicjobs.s3.amazonaws.com/img/_misc/proudly-working-with.png';
     partnerImage =
       'https://academicjobs.s3.amazonaws.com/img/_misc/jobelephant-puzzle.png';
+    avatarPath = '/partners/jobelephant/avatars/';
   }
   useEffect(() => {
     if (partnerName === 'AcademicJobs') {
@@ -148,8 +150,8 @@ const PostJobForm = ({ partner }) => {
                   {selectedContact && selectedContact.avatar && (
                     <>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={selectedContact.avatar}
+                      <Image
+                        src={`${avatarPath}${selectedContact.avatar}`}
                         alt="Avatar"
                         width={100} // replace with your desired width
                         height={100} // replace with your desired height
