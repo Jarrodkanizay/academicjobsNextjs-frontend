@@ -18,7 +18,7 @@ export default function Page() {
   // }, []);
   return (
     <div>
-      <div className="pt-[8rem] flex flex-col items-center justify-center">
+      <div className="pt-[4rem] flex flex-col items-center justify-center">
         <Image
           src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-australia-min.png"
           alt="AcademicJobs Australia Logo"
@@ -26,6 +26,9 @@ export default function Page() {
           width={330}
           height={220}
         />
+        {/* <h2 className="underline-full text-5xl text-amber-500">
+        Australia's University Job Board
+        </h2> */}
       </div>
       <div className="max-w-screen-md mx-auto">
       <JobSearchBox l="Australia" />
@@ -96,18 +99,20 @@ export default function Page() {
               className=" mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto text-center"
               alt="AcademicJobs Job Elephant Client Center"
                          /> </a>
-<div className="text-center items-center justify-center px-auto mx-auto text-sm text-gray-500 animate-pulse">View Your Ranking Here</div> 
+<div className="text-center items-center justify-center px-auto mx-auto text-sm text-gray-500 animate-pulse pb-12">View Your Ranking Here</div> 
 
-      <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">
+      {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">
         <a href="#section" class="scroll-smooth md:scroll-auto">
           ▼
         </a>
-      </div>
+      </div> */}
+
+
 
       <div className="content-grid mx-auto">
         <div
           id="section"
-          className="bg-slate-200 full-width py-4 mt-[20rem] full-width mb-[90px]"
+          className="bg-slate-200 full-width py-4 full-width "
         >
           <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
             <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
@@ -169,96 +174,9 @@ export default function Page() {
           </div>
         </div>
 
-       
-          {/* <h2 className="underline-full"> Top University Employer Rankings</h2> */}
-          <div className="bg-white flex flex-col mx-auto mb-4">
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  px-1 mb-8 text-left px-4">
-             
-            <div className="card bg-slate-300 shadow-xl">
-                  <div className="card-body">
-                    <h2 className="card-title">
-                      {' '}
-                      Top HR Professional of the Month{' '}
-                    </h2>
-                    <a className=" text-gray-400"> 23 Jan, 2024</a>
-                  </div>
-                  <figure  >
-                    <Image
-                      width={200}
-                      height={200}
-                      src="https://academicjobs.s3.amazonaws.com/img/_misc/1694053173648.jpg"
-                      alt="How to Land Your Dream College Job: A Step-by-Step Guide"
-                      className="rounded-full"
-                    />
-                  </figure>
-                  {/* <ul className=" p-4 pl-12 list-disc text-gray-500" >
-                    <li >University of Oxford</li>
-                    <li>	Imperial College London</li>
-                    <li> University of Cambridge</li>
-                    <li> University of Edinburgh</li>
-                    <li> King’s College London</li>
-                    </ul> */}
 
-<ul className=" p-4 pl-12  text-gray-500 text-center font-bold" >
-                    <li >Karen Lamont - Curtin University</li>
-                                       </ul> 
-
-                  <Link
-                      href={'/academic-hub/'}
-                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2 "
-                    >
-                   Nominate HR Award
-                    </Link>
-                         </div>
-
-
-             
-                <div className="card bg-slate-100 shadow-xl">
-                  <div className="card-body">
-                    <h2 className="card-title">
-                      {' '}
-                      Top University Employers Australia{' '}
-                    </h2>
-                    <a className=" text-gray-400"> 10 Dec, 2023</a>
-                  </div>
-                  <figure>
-                    <Image
-                      width={1280}
-                      height={380}
-                      src="/academic-job-postings/university-of-sydney.jpg"
-                      alt="Top Academic Jobs Australia"
-                      className="h-[5rem]"
-                    />
-                  </figure>
-                  <ul className=" p-4 pl-12 list-disc text-gray-500" >
-                    <li >Queensland University of Technology (QUT)</li>
-                    <li>	Bond University</li>
-                    <li> The University of Sydney</li>
-                    <li> Australian National University (ANU)</li>
-                    <li> Monash University</li>
-                    </ul>
-                  <Link
-                      href={'/academic-hub/'}
-                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
-                    >
-                      View List
-                    </Link>
-                </div>
-         
-           
-               
-                         <div>
-<a div className="card-title mx-8 mt-8 text-[#3b5683]"> Top 20 HR jobs today</a>
-                         <div className=" h-96 ml-8 overflow-y-scroll"> 
-        
-          <SearchResults q= "Human Resources" /> </div></div>
-
-                       </ul>
-          </div>
-  
-      
-
-        <h2 className="underline-full">
+        <div className="max-w-screen-xl mx-auto mt-4">
+<h2 className="underline-full">
           Top Australian Universities To Work For
         </h2>
         <div className="cate-group section23 ">
@@ -448,6 +366,99 @@ export default function Page() {
             </div>
           </div>
         </div>
+        </div>
+       
+          {/* <h2 className="underline-full"> Top University Employer Rankings</h2> */}
+          <div className="bg-white flex flex-col mx-auto mb-4">
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  px-1 mb-8 text-left px-4">
+             
+            <div className="card bg-slate-300 shadow-xl">
+                  <div className="card-body">
+                    <h2 className="card-title">
+                      {' '}
+                      Top HR Professional of the Month{' '}
+                    </h2>
+                    <a className=" text-gray-400"> 23 Jan, 2024</a>
+                  </div>
+                  <figure  >
+                    <Image
+                      width={200}
+                      height={200}
+                      src="https://academicjobs.s3.amazonaws.com/img/_misc/1694053173648.jpg"
+                      alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                      className="rounded-full"
+                    />
+                  </figure>
+                  {/* <ul className=" p-4 pl-12 list-disc text-gray-500" >
+                    <li >University of Oxford</li>
+                    <li>	Imperial College London</li>
+                    <li> University of Cambridge</li>
+                    <li> University of Edinburgh</li>
+                    <li> King’s College London</li>
+                    </ul> */}
+
+<ul className=" p-4 pl-12  text-gray-500 text-center font-bold" >
+                    <li >Karen Lamont - Curtin University</li>
+                                       </ul> 
+
+                  <Link
+                      href={'/academic-hub/'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2 "
+                    >
+                   Nominate HR Award
+                    </Link>
+                         </div>
+
+
+             
+                <div className="card bg-slate-100 shadow-xl">
+                  <div className="card-body">
+                    <h2 className="card-title">
+                      {' '}
+                      Top University Employers Australia{' '}
+                    </h2>
+                    <a className=" text-gray-400"> 10 Dec, 2023</a>
+                  </div>
+                  <figure>
+                    <Image
+                      width={1280}
+                      height={380}
+                      src="/academic-job-postings/university-of-sydney.jpg"
+                      alt="Top Academic Jobs Australia"
+                      className="h-[5rem]"
+                    />
+                  </figure>
+                  <ul className=" p-4 pl-12 list-disc text-gray-500" >
+                    <li >Queensland University of Technology (QUT)</li>
+                    <li>	Bond University</li>
+                    <li> The University of Sydney</li>
+                    <li> Australian National University (ANU)</li>
+                    <li> Monash University</li>
+                    </ul>
+                  <Link
+                      href={'/academic-hub/'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                    >
+                      View List
+                    </Link>
+                </div>
+         
+           
+               
+                         <div>
+<a div className="card-title mx-8 mt-8 text-[#3b5683]"> Top 20 HR jobs today</a>
+                         <div className=" h-96 ml-8 overflow-y-scroll"> 
+        
+          <SearchResults q= "Human Resources" /> </div></div>
+
+                       </ul>
+          </div>
+  
+      
+
+
+
+
         <div id="myUniversity" class="myUniversity">
           <div class="widget__text-block1">
             <div>
