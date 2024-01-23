@@ -16,7 +16,7 @@ const stripeLink = {
   'JobElephant': 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
   "USA": 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
 }
-const PostJobForm = ({ partner }) => {
+const JobPostForm = ({ partner }) => {
   
   const [standardMode, setStandardMode] = useState(true);
   const [newContact, setNewContact] = useState(false);
@@ -318,4 +318,4 @@ const PostJobForm = ({ partner }) => {
   }
   return <>{content}</>;
 };
-export default PostJobForm;
+export default JobPostForm;
