@@ -149,7 +149,7 @@ export default function myPage() {
                     </Link>
                 </div>
               </div>
-              <div className="/academic-hub/top-academic-jobs-australia/">
+              <div className="/top-10-australian-universities">
                 <div className="card bg-slate-100 shadow-xl">
                   <div className="card-body">
                     <h2 className="card-title">
@@ -175,7 +175,7 @@ export default function myPage() {
                     <li> Monash University</li>
                     </ul>
                   <Link
-                      href={'/academic-hub/'}
+                      href={'/top-10-australian-universities'}
                       className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
                     >
                       View List

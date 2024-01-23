@@ -435,7 +435,7 @@ export default function Page() {
                     <li> University of Western Australia</li>
                     </ul>
                   <Link
-                      href={'/academic-hub/'}
+                      href={'/top-10-australian-universities'}
                       className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
                     >
                       View List
