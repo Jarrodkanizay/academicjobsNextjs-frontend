@@ -30,12 +30,8 @@ const Job = ({ job }) => {
             >
               <Image
                 src={ `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` || "/favicon.png"}
-                //src={logo && logo.replace("https://iloveacademicjobs.com/files/pictures", "https://academicjobs.s3.amazonaws.com/img/university-logo") || "/favicon.png"}
-
-                // src={logo?.replace("https://www.iloveacademicjobs.com/files/pictures", "https://academicjobs.s3.amazonaws.com/img/university-logo") || "/favicon.png"}
-                
-                width={150}
-          height={150}
+                width={100}
+                height={100}
                 alt={company_name} className="w-full h-full object-contain rounded-lg" />
             </Link>
           </div>

@@ -5,8 +5,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { BsFillShareFill } from 'react-icons/bs';
 import Button from './Button';
-
-//metadata
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
   if (!job) return { title: 'not found' };
@@ -17,15 +15,12 @@ export async function generateMetadata({ params }) {
     keywords: `${title} jobs| ${company_name} university jobs| ${location} university jobs`,
   };
 }
-
-
- async function getJob(id) {
+async function getJob(id) {
   const response = await fetch(`https://api2.sciencejobs.com.au/api/job/${id}`);
   const res = await response.json();
   // console.log(res);
   return res;
 }
-
 const JobDetailPage = async ({ params }) => {
   const job = await getJob(params.id);
   if (!job) notFound();
@@ -142,5 +137,3 @@ const JobDetailPage = async ({ params }) => {
   );
 };
 export default JobDetailPage;
-
-
