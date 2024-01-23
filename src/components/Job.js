@@ -34,6 +34,8 @@ const Job = ({ job }) => {
 
                 // src={logo?.replace("https://www.iloveacademicjobs.com/files/pictures", "https://academicjobs.s3.amazonaws.com/img/university-logo") || "/favicon.png"}
                 
+                width={150}
+          height={150}
                 alt={company_name} className="w-full h-full object-contain rounded-lg" />
             </Link>
           </div>
