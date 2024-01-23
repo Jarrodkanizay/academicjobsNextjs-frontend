@@ -110,6 +110,9 @@ const JobPostForm = ({ partner }) => {
                       className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500"
                       {...register('01_Name_Job_Elephant')}
                       onChange={(e) => {
+                        if (partner === 'JobElephant') {
+                          setValue('01_Organisation_Name', 'JobElephant');
+                        }
                         if (e.target.value === 'Add Contact') {
                           setNewContact(true);
                           setSelectedContact(null);
