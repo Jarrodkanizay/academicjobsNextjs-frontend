@@ -14,6 +14,7 @@ import { Input } from '@/components/ui/input';
 const stripeLink = {
   "Australia": 'https://buy.stripe.com/fZe3dS5LqeqQ8ZGfZ1',
   'JobElephant': 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
+  "USA": 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
 }
 const PostJobForm = ({ partner }) => {
   
