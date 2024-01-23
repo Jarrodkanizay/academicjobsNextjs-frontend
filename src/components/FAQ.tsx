@@ -7,7 +7,7 @@ const FAQ = ({ children, question }: FAQProps) => {
       <div className="collapse-title text-xl font-medium">
         <h2>{question}</h2>
       </div>
-      <div className="collapse-content">{children}</div>
+      <div className="collapse-content text-black">{children}</div>
     </section>
   );
 };
