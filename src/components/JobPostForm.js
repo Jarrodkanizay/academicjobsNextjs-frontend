@@ -11,7 +11,12 @@ import Image from 'next/image';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 
+const stripeLink = {
+  "Australia": 'https://buy.stripe.com/fZe3dS5LqeqQ8ZGfZ1',
+  'JobElephant': 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
+}
 const PostJobForm = ({ partner }) => {
+  
   const [standardMode, setStandardMode] = useState(true);
   const [newContact, setNewContact] = useState(false);
   const [selectedContact, setSelectedContact] = useState(null);
@@ -36,7 +41,8 @@ const PostJobForm = ({ partner }) => {
     avatarPath = '/partners/jobelephant/avatars/';
   }
   useEffect(() => {
-    if (partnerName === 'AcademicJobs') {
+    //alert(partnerName)
+    if (partnerName === 'JobElephant') {
       setStandardMode(true);
     } else {
       setStandardMode(false);
@@ -63,7 +69,7 @@ const PostJobForm = ({ partner }) => {
     console.log('data', data);
     mutation.mutate({
       ...data,
-      '00_formSource': 'Message from: JobElephant Post Form',
+      '00_formSource': `Message from: ${partner} Post Form`,
     });
   };
   if (mutation.isLoading) {
@@ -83,7 +89,8 @@ const PostJobForm = ({ partner }) => {
     return <div>An error occurred: {mutation.error.message}</div>;
   }
   if (mutation.isSuccess) {
-    router.push('https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce');
+    //alert(partner)
+    router.push(stripeLink[partner]);
   } else {
     content = (
       <main className=" content-grid">

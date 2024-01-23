@@ -1,5 +1,5 @@
 'use client';
-const InputBlock2 = ({
+const InputBlock = ({
   ID,
   name,
   type,
@@ -30,4 +30,4 @@ const InputBlock2 = ({
     </div>
   );
 };
-export default InputBlock2;
+export default InputBlock;
