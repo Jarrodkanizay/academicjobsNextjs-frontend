@@ -12,12 +12,11 @@ import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 
 const stripeLink = {
-  "Australia": 'https://buy.stripe.com/fZe3dS5LqeqQ8ZGfZ1',
-  'JobElephant': 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
-  "USA": 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
-}
+  Australia: 'https://buy.stripe.com/fZe3dS5LqeqQ8ZGfZ1',
+  JobElephant: 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
+  USA: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
+};
 const JobPostForm = ({ partner }) => {
-  
   const [standardMode, setStandardMode] = useState(true);
   const [newContact, setNewContact] = useState(false);
   const [selectedContact, setSelectedContact] = useState(null);
@@ -43,7 +42,7 @@ const JobPostForm = ({ partner }) => {
   }
   useEffect(() => {
     //alert(partnerName)
-    if (partnerName === 'JobElephant') {
+    if (partnerName === '' || partnerName === 'AcademicJobs') {
       setStandardMode(true);
     } else {
       setStandardMode(false);
@@ -98,7 +97,7 @@ const JobPostForm = ({ partner }) => {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <h2 className={`text-4xl font-bold mb-8 mt-8 underline-full`}>
-              {partnerName} Quick Post
+              {partnerName} Quick Post!
             </h2>
             <form className=" " onSubmit={handleSubmit(onSubmit)}>
               <div className="flex flex-col gap-4 justify-start">
