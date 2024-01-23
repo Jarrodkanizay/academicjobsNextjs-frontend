@@ -38,57 +38,57 @@ export default function Page() {
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li className="">
-              <Link href="/Australia/lecturer/"> Lecturer</Link>
+              <Link href="/Australia/lecturer"> Lecturer</Link>
             </li>
             <li className="">
-              <Link href="/Australia/research/"> Research </Link>
+              <Link href="/Australia/research"> Research </Link>
             </li>
             <li className=" ">
-              <Link href="/Australia/professor/"> Professor</Link>
+              <Link href="/Australia/professor"> Professor</Link>
             </li>
             <li>
-              <Link href="/Australia/faculty/"> Faculty</Link>
+              <Link href="/Australia/faculty"> Faculty</Link>
             </li>
           </ul>
           <li>
-            <Link href="/Australia/executive/"> Executive</Link>
+            <Link href="/Australia/executive"> Executive</Link>
           </li>
           <li>
-            <Link href="/Australia/admin/">Admin</Link>
+            <Link href="/Australia/admin">Admin</Link>
           </li>
           <li>
-            <Link href="/Australia/hr-jobs/"> HR</Link>
+            <Link href="/Australia/hr-jobs"> HR</Link>
           </li>
           <li>
-            <Link href="/Australia/student/"> Student</Link>
+            <Link href="/Australia/student"> Student</Link>
           </li>
           <li>
-            <Link href="/Australia/indigenous/">Indigenous</Link>
+            <Link href="/Australia/indigenous">Indigenous</Link>
           </li>
           <li>
-            <Link href="/Australia/graduate/">Graduate</Link>
+            <Link href="/Australia/graduate">Graduate</Link>
           </li>
           <li>
-            <Link href="/Australia/phd/">PhD</Link>
+            <Link href="/Australia/phd">PhD</Link>
           </li>
         </ul>
       </div>
       <div className=" mt-4 ">
         <ul className=" flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
           <li>
-            <Link href="/online/"> Online </Link>
+            <Link href="/online"> Online </Link>
           </li>
           <li>
-            <Link href="/jobs/remote/"> Remote</Link>
+            <Link href="/jobs?l=&q=remote"> Remote</Link>
           </li>
           <li>
-            <Link href="/jobs/full-time/">Full-Time</Link>
+            <Link href="/jobs?l=&q=full-time">Full-Time</Link>
           </li>
           <li>
-            <Link href="/jobs/part-time/"> Part-Time</Link>
+            <Link href="/jobs?l=&q=part-time"> Part-Time</Link>
           </li>
           <li>
-            <Link href="/jobs/casual/"> Casual</Link>
+            <Link href="/jobs?l=&q=casual"> Casual</Link>
           </li>
         </ul>
       </div>
@@ -119,8 +119,7 @@ export default function Page() {
               <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">
                 ACADEMIC&nbsp;JOBS Australia:
               </span>{' '}
-              <br /> Academic, research &&nbsp;science positions locally &
-              globally
+              <br /> Australia's University <br /> Job Website
             </h1>
 
             <div>
@@ -138,39 +137,39 @@ export default function Page() {
           <p className="font-semibold"></p>
           <ul className="flex flex-wrap text-justify space-between gap-6 px-7 pb-4  text-[#f4a10c] mx-auto">
             <li>
-              <Link href="/melbourne/"> Melboune </Link>
+              <Link href="/melbourne"> Melboune </Link>
             </li>
             <li>
-              <Link href="/sydney/"> Sydney</Link>
+              <Link href="/sydney"> Sydney</Link>
             </li>
             <li>
-              <Link href="/brisbane/">Brisbane</Link>
+              <Link href="/brisbane">Brisbane</Link>
             </li>
             <li>
-              <Link href="/gold-coast/"> Gold Coast</Link>
+              <Link href="/gold-coast"> Gold Coast</Link>
             </li>
             <li>
-              <Link href="/canberra/"> Canberra</Link>
+              <Link href="/canberra"> Canberra</Link>
             </li>
             <li>
-              <Link href="/perth/"> Perth</Link>
+              <Link href="/perth"> Perth</Link>
             </li>
             <li>
-              <Link href="/adelaide/"> Adelaide</Link>
+              <Link href="/adelaide"> Adelaide</Link>
             </li>
             <li>
-              <Link href="/tasmania/"> Tasmania</Link>
+              <Link href="/tasmania"> Tasmania</Link>
             </li>
             <li>
-              <Link href="/hobart/"> Hobart</Link>
+              <Link href="/hobart"> Hobart</Link>
             </li>
             {/* <li>
-              <Link href="/adelaide/"> Adelaide</Link>
+              <Link href="/adelaide"> Adelaide</Link>
             </li> */}
           </ul>
           <div className="  flex flex-wrap gap-6 px-7 pb-4 text-gray-400 mx-auto">
-            <Link href="/Australia/faq/"> Aus FAQ</Link>
-            <Link href="/groupof8/"> Group Of 8</Link>{' '}
+            <Link href="/Australia/faq"> Aus FAQ</Link>
+         
           </div>
         </div>
 
@@ -193,7 +192,7 @@ export default function Page() {
                       className="rounded-3xl"
                     />
                     <Link
-                      href="/employers/queensland-university-of-technology-qut-/3786/"
+                      href="/employers/queensland-university-of-technology-qut-/3786"
                       className="text-[#003463] font-bold pl-2"
                     >
                       Queensland University of Technology (QUT)
@@ -201,26 +200,26 @@ export default function Page() {
                   </li>
                   <ul className="innerUL pl-4 pt-2 text-gray-400">
                     <li>
-                      <Link href="/jobs/QUT-lecturer/">QUT Lecturing Jobs</Link>
+                      <Link href="/jobs?l=&q=QUT-lecturer">QUT Lecturing Jobs</Link>
                     </li>
                     <li>
-                      <Link href="/jobs/QUT-research/">QUT Research Jobs</Link>
+                      <Link href="/jobs?l=&q=QUT-research">QUT Research Jobs</Link>
                     </li>
                     <li>
-                      <Link href="/jobs/QUT-professor/">
+                      <Link href="/jobs?l=&q=QUT-professor">
                         QUT Professorial Jobs
                       </Link>
                     </li>
                     <li>
-                      <Link href="/jobs/QUT-Executive/">QUT Executive</Link>
+                      <Link href="/jobs?l=&q=QUT-Executive">QUT Executive</Link>
                     </li>
                     <li>
-                      <Link href="/jobs/QUT-Administration/">
+                      <Link href="/jobs?l=&q=QUT-Administration">
                         QUT Administration
                       </Link>
                     </li>
                     <li>
-                      <Link href="/jobs/QUT-Human-Resources/">
+                      <Link href="/jobs?l=&q=QUT-Human-Resources">
                         QUT Human Resources
                       </Link>
                     </li>
@@ -239,7 +238,7 @@ export default function Page() {
                       className="rounded-3xl"
                     />
                     <Link
-                      href="/employers/bond-university/3785/"
+                      href="/employers/bond-university/3785"
                       className="text-[#f1b821] font-bold pl-2 pt-6"
                     >
                       Bond University
@@ -247,30 +246,30 @@ export default function Page() {
                   </li>
                   <ul className="innerUL pl-4 pt-2 text-gray-400">
                     <li>
-                      <Link href="/jobs/bond-lecturer/">
+                      <Link href="/jobs?l=&q=bond-lecturer">
                         Bond Lecturing Jobs
                       </Link>
                     </li>
                     <li>
-                      <Link href="/jobs/bond-research/">
+                      <Link href="/jobs?l=&q=bond-research">
                         Bond Research Jobs
                       </Link>
                     </li>
                     <li>
-                      <Link href="/jobs/bond-professor/">
+                      <Link href="/jobs?l=&q=bond-professor">
                         Bond Professorial Jobs
                       </Link>
                     </li>
                     <li>
-                      <Link href="/jobs/bond-Executive/">Bond Executive</Link>
+                      <Link href="/jobs?l=&q=bond-Executive">Bond Executive</Link>
                     </li>
                     <li>
-                      <Link href="/jobs/bond-Administration/">
+                      <Link href="/jobs?l=&q=bond-Administration">
                         Bond Administration
                       </Link>
                     </li>
                     <li>
-                      <Link href="/jobs/bond-Human-Resources/">
+                      <Link href="/jobs?l=&q=bond-Human-Resources">
                         Bond Human Resources
                       </Link>
                     </li>
@@ -288,7 +287,7 @@ export default function Page() {
                       className="rounded-3xl"
                     />
                     <Link
-                      href="/employers/the-university-of-adelaide/3737/"
+                      href="/employers/the-university-of-adelaide/3737"
                       className="text-[#A51C30] font-bold pl-2"
                     >
                       University of Adelaide
@@ -296,28 +295,28 @@ export default function Page() {
                   </li>
                   <ul className="innerUL pl-4 pt-2 text-gray-400">
                     <li>
-                      <Link href="/jobs/Adelaide/">
+                      <Link href="/jobs?l=&q=Adelaide">
                         Adelaide Lecturing Jobs
                       </Link>
                     </li>
                     <li>
-                      <Link href="/jobs/Adelaide/">Adelaide Research Jobs</Link>
+                      <Link href="/jobs?l=&q=Adelaide">Adelaide Research Jobs</Link>
                     </li>
                     <li>
-                      <Link href="/jobs/Adelaide/">
+                      <Link href="/jobs?l=&q=Adelaide">
                         Adelaide Professorial Jobs
                       </Link>
                     </li>
                     <li>
-                      <Link href="/jobs/Adelaide/">Adelaide Executive</Link>
+                      <Link href="/jobs?l=&q=Adelaide">Adelaide Executive</Link>
                     </li>
                     <li>
-                      <Link href="/jobs/Adelaide/">
+                      <Link href="/jobs?l=&q=Adelaide">
                         Adelaide Administration
                       </Link>
                     </li>
                     <li>
-                      <Link href="/jobs/Adelaide/">
+                      <Link href="/jobs?l=&q=Adelaide">
                         Adelaide Human Resources
                       </Link>
                     </li>
@@ -335,7 +334,7 @@ export default function Page() {
                       className="rounded-3xl"
                     />
                     <Link
-                      href="/employers/university-of-western-australia/3173/"
+                      href="/employers/university-of-western-australia/3173"
                       className="text-[#192847] font-bold pl-2"
                     >
                       University of Western Australia
@@ -343,22 +342,22 @@ export default function Page() {
                   </li>
                   <ul className="innerUL pl-4 pt-2 text-gray-400">
                     <li>
-                      <Link href="/jobs/western/">UWA Lecturing Jobs</Link>
+                      <Link href="/jobs?l=&q=western">UWA Lecturing Jobs</Link>
                     </li>
                     <li>
-                      <Link href="/jobs/western/">UWA Research Jobs</Link>
+                      <Link href="/jobs?l=&q=western">UWA Research Jobs</Link>
                     </li>
                     <li>
-                      <Link href="/jobs/western/">UWA Professorial Jobs</Link>
+                      <Link href="/jobs?l=&q=western">UWA Professorial Jobs</Link>
                     </li>
                     <li>
-                      <Link href="/jobs/western/">UWA Executive</Link>
+                      <Link href="/jobs?l=&q=western">UWA Executive</Link>
                     </li>
                     <li>
-                      <Link href="/jobs/western/">UWA Administration</Link>
+                      <Link href="/jobs?l=&q=western">UWA Administration</Link>
                     </li>
                     <li>
-                      <Link href="/jobs/western/">UWA Human Resources</Link>
+                      <Link href="/jobs?l=&q=western">UWA Human Resources</Link>
                     </li>
                   </ul>
                 </ul>
@@ -402,7 +401,7 @@ export default function Page() {
                                        </ul> 
 
                   <Link
-                      href={'/academic-hub/'}
+                      href={'/academic-talent-pool'}
                       className="btn btn-aj btn-sm w-1/4 mx-auto my-2 "
                     >
                    Nominate HR Award
@@ -433,7 +432,7 @@ export default function Page() {
                     <li>	Bond University</li>
                     <li> The University of Sydney</li>
                     <li> Australian National University (ANU)</li>
-                    <li> Monash University</li>
+                    <li> University of Western Australia</li>
                     </ul>
                   <Link
                       href={'/academic-hub/'}
@@ -469,82 +468,82 @@ export default function Page() {
                 <ul>
                   <li className="mb-1 ">
                     <Link
-                      href="/jobs/act/"
+                      href="/jobs?l=&q=act"
                       className="text-[#f4a10c] font-bold"
                     >
                       ACT
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/australian-national-university/3739/">
+                    <Link href="/employers/australian-national-university/3739">
                       Australian National University
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/university-of-canberra/3821/">
+                    <Link href="/employers/university-of-canberra/3821">
                       University of Canberra
                     </Link>
                   </li>
                   <li className="mb-1 ">
                     <Link
-                      href="/jobs/new-south-wales/"
+                      href="/jobs?l=&q=new-south-wales"
                       className="text-[#f4a10c] font-bold"
                     >
                       New South Wales
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/the-university-of-sydney/3171/">
+                    <Link href="/employers/the-university-of-sydney/3171">
                       The University of Sydney
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/university-of-new-south-wales/3738/">
+                    <Link href="/employers/university-of-new-south-wales/3738">
                       University of New South Wales
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/charles-sturt-university/3855/">
+                    <Link href="/employers/charles-sturt-university/3855">
                       Charles Sturt University
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/australian-catholic-university/3853/">
+                    <Link href="/employers/australian-catholic-university/3853">
                       Australian Catholic University
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/southern-cross-university/3862/">
+                    <Link href="/employers/southern-cross-university/3862">
                       Southern Cross University
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/university-of-technology-sydney/3864/">
+                    <Link href="/employers/university-of-technology-sydney/3864">
                       University of Technology, Sydney
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/macquarie-university/3881/">
+                    <Link href="/employers/macquarie-university/3881">
                       Macquarie University
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/university-of-new-england/3209/">
+                    <Link href="/employers/university-of-new-england/3209">
                       University of New England
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/university-of-newcastle/3863/">
+                    <Link href="/employers/university-of-newcastle/3863">
                       University of Newcastle
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/university-of-western-sydney/3865/">
+                    <Link href="/employers/university-of-western-sydney/3865">
                       University of Western Sydney
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/university-of-wollongong/3866/">
+                    <Link href="/employers/university-of-wollongong/3866">
                       University of Wollongong
                     </Link>
                   </li>
@@ -552,7 +551,7 @@ export default function Page() {
                 <ul>
                   <li className="mb-1 ">
                     <Link
-                      href="/jobs/victoria/"
+                      href="/jobs?l=&q=victoria"
                       className="text-[#f4a10c] font-bold"
                     >
                       Victoria
@@ -632,7 +631,7 @@ export default function Page() {
                   </li>
                   <li className="mb-1 ">
                     <Link
-                      href="/jobs/tasmania/"
+                      href="/jobs?l=&q=tasmania"
                       className="text-[#f4a10c] font-bold"
                     >
                       Tasmania
@@ -650,14 +649,14 @@ export default function Page() {
                 <ul>
                   <li className="mb-1 ">
                     <Link
-                      href="/jobs/queensland/"
+                      href="/jobs?l=&q=queensland"
                       className="text-[#f4a10c] font-bold"
                     >
                       Queensland
                     </Link>
                   </li>
                   <li className="text-[#003463] ">
-                    <Link href="/employers/queensland-university-of-technology-qut-/3786/">
+                    <Link href="/employers/queensland-university-of-technology-qut-/3786">
                       Queensland University of Technology (QUT)
                     </Link>
                   </li>
@@ -670,45 +669,45 @@ export default function Page() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/university-of-queensland/3172/">
+                    <Link href="/employers/university-of-queensland/3172">
                       The University of Queensland
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/cquniversity/3854/">
+                    <Link href="/employers/cquniversity/3854">
                       CQUniversity
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/griffith-university/3860/">
+                    <Link href="/employers/griffith-university/3860">
                       Griffith University
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/james-cook-university/3857/">
+                    <Link href="/employers/james-cook-university/3857">
                       James Cook University
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/university-of-southern-queensland/3861/">
+                    <Link href="/employers/university-of-southern-queensland/3861">
                       University of Southern Queensland
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/university-of-sunshine-coast/3859/">
+                    <Link href="/employers/university-of-sunshine-coast/3859">
                       University of Sunshine Coast
                     </Link>
                   </li>
                   <li className="mb-1 ">
                     <Link
-                      href="/jobs/northern-territory/"
+                      href="/jobs?l=&q=northern-territory"
                       className="text-[#f4a10c] font-bold"
                     >
                       Northern Territory
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/charles-darwin-university/3880/">
+                    <Link href="/employers/charles-darwin-university/3880">
                       Charles Darwin University
                     </Link>
                   </li>
@@ -716,67 +715,67 @@ export default function Page() {
                 <ul>
                   <li className="mb-1 ">
                     <Link
-                      href="/jobs/south-australia/"
+                      href="/jobs?l=&q=south-australia"
                       className="text-[#f4a10c] font-bold"
                     >
                       South Australia
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/the-university-of-adelaide/3737/">
+                    <Link href="/employers/the-university-of-adelaide/3737">
                       The University of Adelaide
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/carnegie-mellon-university/3146/">
+                    <Link href="/employers/carnegie-mellon-university/3146">
                       Carnegie Mellon University
                     </Link>{' '}
                   </li>
                   <li>
-                    <Link href="/employers/torrens-university-australia/3875/">
+                    <Link href="/employers/torrens-university-australia/3875">
                       Torrens University Australia
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/university-of-south-australia/3874/">
+                    <Link href="/employers/university-of-south-australia/3874">
                       University of South Australia
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/flinders-university/3873/">
+                    <Link href="/employers/flinders-university/3873">
                       Flinders University
                     </Link>
                   </li>
                   <li className="mb-1 ">
                     <Link
-                      href="/jobs/western-australia/"
+                      href="/jobs?l=&q=western-australia"
                       className="text-[#f4a10c] font-bold"
                     >
                       Western Australia
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/university-of-western-australia/3173/">
+                    <Link href="/employers/university-of-western-australia/3173">
                       The University of Western Australia
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/university-of-notre-dame/3879/">
+                    <Link href="/employers/university-of-notre-dame/3879">
                       University of Notre Dame
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/murdoch-university/3878/">
+                    <Link href="/employers/murdoch-university/3878">
                       Murdoch University
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/edith-cowan-university/3877/">
+                    <Link href="/employers/edith-cowan-university/3877">
                       Edith Cowan University
                     </Link>
                   </li>
                   <li>
-                    <Link href="/employers/curtin-university/3876/">
+                    <Link href="/employers/curtin-university/3876">
                       Curtin University
                     </Link>
                   </li>

@@ -5,103 +5,163 @@ import FAQ from '@/components/FAQ';
   export const metadata: Metadata = {
     // title: 'About', //Option 1 replaces the %s in layout.tsx
     title: {
-      absolute: 'FAQ Academic Jobs Online', //Option 2 overrides the title in layout.tsx
+      absolute: 'FAQ Academic Jobs Australia', //Option 2 overrides the title in layout.tsx
     },
     description:
-      'Discover academic jobs at all universities today! Explore your next academic positions through visiting our higher ed jobs, with new academic jobs added daily.',
-    keywords: 'FAQ academicjobs, academicjobs FAQ, Frequently Asked Questions',
+      'Discover academic jobs at all Australian universities today! Explore your next academic positions through visiting our higher ed jobs in Australia.',
+    keywords: 'FAQ academicjobs Australia, academicjobs Australia FAQ, Frequently Asked Questions Australia',
   };
   export default function myPage() {
     return (
-         
-      <main className="content-grid">
-      <div className="prose">
-      <h1 className="text-3xl font-bold text-orange-400 ">University Student Jobs FAQ</h1>
+        <main className="p-8">
+        
+            <h1 className="text-2xl font-bold mb-4 text-orange-400">academic jobs Australia FAQ</h1>
+            
+
+            
      
-     
-       <FAQ question="Where Do Uni Students Usually Work - University Student Jobs FAQ">
-        <p>
-          Working in the retail or hospitality industries is really popular with uni students as casual shift work is often flexible. You can let your employer know your availability and preferred days and times - and usually weekends and weeknights work well for both parties!
-        </p>
-      </FAQ>
-
-       <FAQ question="Can You Do Uni and Have a Full-Time Job?">
-        <p>
-          Although it may at times feel like too much hard work balancing both work and study, the benefits are enormous, especially if you have on-the-job experience to draw from that can enrich your studies, and vice versa. You'll also still be earning a salary, therefore avoiding the debt that lots of students fall into.
-        </p>
-      </FAQ>
-
-       <FAQ question="How Much Should a Uni Student Be Working?">
-        <p>
-          How many hours do you work a week as a full-time college student? The recommended amount is no more than 10–15 hours/week, but you can work more if you have good time management skills.
-        </p>
-      </FAQ>
-
-       <FAQ question="How Do People Study and Work Full-Time?">
-        <p>
-          Instead, set one day per week where you focus on completing your studies, track how much work you can get done, and how many hours it takes. This will help you figure out how long you need to schedule for each study session in order to meet the requirements for your course and how quickly you can get it all finished.
-        </p>
-      </FAQ>
-
-       <FAQ question="Can You Work Part-Time and Do Uni?">
-        <p>
-          You can successfully attend university full-time and work part-time by creating to-do lists. You may write a to-do list for each day or week and focus on prioritizing important tasks over ones that don't require immediate completion.
-        </p>
-      </FAQ>
-
-       <FAQ question="How Do I Find a Job as a Student at University?">
-        <p>
-          Your university itself is a tremendous resource – you can look everywhere from noticeboards in student services buildings and libraries to your institution's careers hub. Many universities have careers portals that you can log into to receive updates regarding any on or off-campus job vacancies.
-        </p>
-      </FAQ>
-
-       <FAQ question="How Can Universities Help Students Find Jobs?">
-        <p>
-          Below are five uni-run facilities that can help you boost your employability prospects while studying:
-        </p>
-        <ul className="list-disc pl-4">
-          <li>Careers and employment services</li>
-          <li>Student and industry recruitment events</li>
-          <li>Research centers or institutes</li>
-          <li>Meeting different kinds of people</li>
-          <li>Professional industry associations</li>
-        </ul>
-      </FAQ>
-
-       <FAQ question="Is It Hard to Get a Job in Australia as a Student?">
-        <p>
-          Working in Australia is very easy to do while you are a student – after graduation, it's more difficult. Remember, as an international student, you should never expect to live on the money you make while studying, but the extra income can certainly help you meet your financial needs.
-        </p>
-      </FAQ>
-
-       <FAQ question="How Can Students Earn More Money in Australia?">
-        <p>
-          International students can work full-time, or up to 38 hours a week, during the holidays. Working full-time over holidays is an excellent way for international students to supplement their income. International students working full-time in retail and hospitality can earn between AUD 600 to AUD 1,000 per week.
-        </p>
-      </FAQ>
-
-       <FAQ question="What Is the Average Income of Australian Uni Students?">
-        <p>
-          Median annual income for full-time domestic undergraduate students is $18,000, while their median spending is $14,000. One-third of domestic undergraduate students have estimated expenses exceeding their estimated income.
-        </p>
-      </FAQ>
-
-       <FAQ question="How Do You Juggle Uni Life?">
-        <p>
-          How to juggle university and part-time work:
-        </p>
-        <ul className="list-disc pl-4">
-          <li>Let work know your uni schedule. Most places that employ students understand the temporary nature of uni schedules.</li>
-          <li>If possible, try and get a job near uni.</li>
-          <li>Don't always sleep in.</li>
-          <li>You don't always have to attend lectures!</li>
-          <li>Find that balance.</li>
-        </ul>
-      </FAQ>
- 
-      <div className="mb-16">&nbsp;</div>
-        </div>
-      </main>
     
-);
-}
+        <FAQ question="How to apply academic jobs Australia FAQ">
+        <p>Contact academics you may know. They will guide you as a mentor. Also, look online for academic jobs. You may think about completing a master's program or Ph.D. Today, most candidates need a Ph.D. to obtain a full-time position, as the criteria for most academic jobs tend to favor coursework over research. Impressive professional experience is also looked upon favorably.</p>
+      </FAQ>
+     
+    
+        <FAQ question="How Much Does Academia Pay in Australia?">
+        <p>According to our AcademicJobs data, the average annual salary for Academic jobs in Australia ranges from $125,000 to $128,000.</p>
+      </FAQ>
+     
+    
+        <FAQ question="Do Academics Get Paid Well in Australia?">
+        <p>Find out what all Academic salaries are in Australia by browsing the jobs online here. The average academic salary in Australia is $108,000 per year or $55.17 per hour. Entry-level positions start at $88,000 per year, while most experienced workers make up to $145,000 per year.</p>
+      </FAQ>
+     
+    
+        <FAQ question="Can You Be a Lecturer Without a Ph.D. in Australia?">
+        <p>It is usual to have a Ph.D., but not mandatory. To become a university lecturer, you usually need to study a postgraduate degree in an area of academic interest. Entry to this occupation may also be improved if you have relevant industry experience, previous teaching or research experience, or if you have completed a postgraduate teaching course.</p>
+      </FAQ>
+     
+    
+        <FAQ question="How Much Do Academic Tutors Make in Australia?">
+        <p>What can I earn as a Tutor? According to our AcademicJobs data, the average annual salary for Tutor jobs in Australia ranges from $65,000 to $85,000.</p>
+      </FAQ>
+     
+    
+        <FAQ question="How Do You Become a Professor in Australia?">
+        <p>The career path to becoming a full professor generally involves progressing through several ranks of academic positions. These often begin with a postdoctoral research fellowship or lecturer position, then a senior lecturer, an associate professor and, finally, a professor role.</p>
+      </FAQ>
+     
+    
+        <FAQ question="What Is the Average Salary for a Ph.D. in Australia?">
+        <p>$62,000 per year. Find out what the average Ph.D. salary is.</p>
+      </FAQ>
+     
+    
+        <FAQ question="How Much Does a Ph.D. Make in Australia?">
+        <p>The average Ph.D. salary in Australia is $62,000 per year or $31.75 per hour. Entry-level positions start at $47,000 per year, while most experienced workers make up to $110,000 per year.</p>
+      </FAQ>
+     
+    
+        <FAQ question="Are Professors in Demand in Australia?">
+        <p>Australia is in critical need of very experienced lecturers. Their demand is growing with the increase of institutions and glorified universities. Usually, universities hire lecturers who are at least in their 2nd year of postgraduation with an outstanding Ph.D.</p>
+      </FAQ>
+     
+    
+        <FAQ question="What Is the Highest Paid University in Australia?">
+        <ul className="list-disc pl-4">
+          <li>UNSW Sydney - $113,000</li>
+          <li>Southern Cross University - $105,000</li>
+          <li>Queensland University of Technology (QUT) - $103,000</li>
+        </ul>
+      </FAQ>
+     
+    
+        <FAQ question="How Much Do Monash Professors Get Paid?">
+        <p>Average Monash University Professor yearly pay in Australia is approximately $192,000. One of the best universities to work for in Australia is QUT and Bond University. Salary information comes from data collected directly from past and present job advertisements on AcademicJobs in the past 12 months.</p>
+      </FAQ>
+     
+    
+        <FAQ question="What Is the Difference Between Associate Professor and Professor in Australia?">
+        <p>In some Australian Universities, they have adopted the American system and the term can refer to the most senior academic position; however, more commonly Associate Professor is the support for the Professor and is likened to Senior Lecturer.</p>
+      </FAQ>
+     
+    
+        <FAQ question="Which Tutoring Company Pays the Most in Australia?">
+        <ul className="list-disc pl-4">
+          <li>University of Sydney - $62.27 per hour</li>
+          <li>The University of Queensland - $46.80 per hour</li>
+          <li>Alchemy Tuition - $39.54 per hour</li>
+          <li>Tutor Doctor - $36.85 per hour</li>
+          <li>A Team Tuition - $34.28 per hour</li>
+        </ul>
+      </FAQ>
+     
+    
+        <FAQ question="How Much Does a Dean of Faculty Make in Australia?">
+        <p>The average dean salary in Australia is $157,000 per year or approximately $80.40 per hour. Entry-level positions start at $101,000 per year, while most experienced workers make up to $198,000 per year.</p>
+      </FAQ>
+     
+    
+        <FAQ question="How Do I Become a Research Assistant in Australia?">
+        <p>How to become a Research Assistant:
+          <ol className="list-decimal pl-4">
+            <li>Complete a bachelor degree in your field of interest.</li>
+            <li>Look to gain research experience by completing an honors year.</li>
+            <li>Consider completing a master's degree in your chosen field, which will take between 1-2 years.</li>
+          </ol>
+        </p>
+      </FAQ>
+     
+    
+        <FAQ question="How Much Do Professors Get Paid in Australia?">
+        <p>The average professor salary in Australia is $166,000 per year or $85.30 per hour. Entry-level positions start at $153,000 per year, while most experienced workers make up to $202,000 per year.</p>
+      </FAQ>
+     
+    
+        <FAQ question="How Can I Work as a Researcher in Australia?">
+        <p>On academic jobs Australia FAQ, follow these steps to learn how to become a researcher in Australia:
+          <ol className="list-decimal pl-4">
+            <li>Step 1: Choose A Subject of Interest.</li>
+            <li>Step 2: Earn The Education You Wish To Research.</li>
+            <li>Step 3: Apply For an Internship or a Research Assistant Position.</li>
+            <li>Step 4: Apply For A Research Job.</li>
+          </ol>
+        </p>
+        <p>Estimated Salary based on Experience: $100,000 to $110,000</p>
+      </FAQ>
+     
+    
+        <FAQ question="What Qualifications Do I Need to Be a Research Assistant?">
+        <p>To become a Research Assistant, you typically need to complete a degree in a relevant discipline, although in some cases, an equivalent amount of work experience in your chosen field may substitute for a qualification. Complete a bachelor degree in your field of interest.</p>
+      </FAQ>
+     
+    
+        <FAQ question="How Much Does a Researcher Earn per Hour in Australia?">
+        <p>The average researcher salary in Australia is $104,000 per year or $53.30 per hour. Entry-level positions start at $91,000 per year, while most experienced workers make up to $131,000 per year.</p>
+      </FAQ>
+     
+    
+        <FAQ question="How Much Is a Research Assistant Paid in Australia?">
+        <p>The average research assistant salary in Australia is $81,000 per year or $41.80 per hour. Entry-level positions start at $72,000 per year, while most experienced workers make up to $98,000 per year.</p>
+      </FAQ>
+     
+    
+        <FAQ question="Is It Hard to Become a Lecturer in Australia?">
+        <p>To become a university lecturer, you usually need to study a postgraduate degree in an area of academic interest. Entry to this occupation may also be improved if you have relevant industry experience, previous teaching or research experience, or if you have completed a postgraduate teaching course.</p>
+      </FAQ>
+     
+    
+        <FAQ question="What Qualifications Do You Need to Be a University Lecturer in Australia?">
+        <p>Education & Training for a University Lecturer: To become a university lecturer, you usually have to complete a degree in your field, preferably at a master's or doctoral degree level. Relevant courses are widely available; consult institution handbooks for more information on courses in your field of interest.</p>
+      </FAQ>
+     
+    
+        <FAQ question="What Is a Level B Lecturer in Australia?">
+        <p>Lecturers (Level B) will normally have a Ph.D. and/or have relevant and/or professional, performance or creative works and/or experience. Teaching activities include initiation and development of unit materials and may include the supervision of honors and research students.</p>
+      </FAQ>
+    
+    </main>
+    
+    );
+};
+
+
