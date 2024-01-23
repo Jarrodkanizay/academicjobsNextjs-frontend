@@ -77,13 +77,13 @@ export const regionData = [
     Find all the best executive jobs here…`,
   },
   {
-    Name: `admin`,
-    Title: `Admin Jobs in USA`,
+    Name: `staff`,
+    Title: `All staff Jobs in USA`,
     Description: `Admin and Support Academic Jobs Australia will provide you the chance to collaborate with a varied and skilled group of individuals while advancing the academic standards and innovative practices of your organisation.`,
     Keyword: `Admin and Support Academic Jobs Australia, Admin and Support AcademicJobs `,
-    content: `Seek your perfect admin position through the United States of America best job board! At Academic Jobs we offer the most renowned Higher Ed jobs at the top universities in the USA. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
+    content: `Seek your perfect staff position through the United States of America best job board! At Academic Jobs we offer the most renowned Higher Ed jobs at the top universities in the USA. Positions in staff will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
  
-    The No.1 job board for academics in the USA. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
+    The No.1 job board for academics in the USA. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top staff jobs to find the best position for you!
      
     Find all the best administrative jobs here…`,
   },

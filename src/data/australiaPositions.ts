@@ -1,8 +1,8 @@
 export const regionData = [
   {
     Name: `faculty`,
-    Title: `Lecturer Jobs In Australia`,
-    Description: `Look through this page's list of open higher education lecturer positions to learn more about Lecturer Academic Jobs Australia.`,
+    Title: `Faculty Jobs In Australia`,
+    Description: `Look through this page's list of open higher education lecturer positions to learn more about Faculty Academic Jobs Australia.`,
     Keyword: `Lecturer Academic Jobs Australia`,
     content: `Seek your perfect faculty position through Australia’s best job board! At Academic Jobs we offer the most renowned uni jobs at the top Australian universities. Positions in academic faculty will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
   
