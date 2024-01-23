@@ -1,10 +1,12 @@
 import { notFound } from 'next/navigation';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import HeadlineUpgrade from '@/components/forms/HeadlineUpgrade';
 import Link from 'next/link';
 import Image from 'next/image';
 import { BsFillShareFill } from 'react-icons/bs';
 import Button from './Button';
+import { CloudCog } from 'lucide-react';
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
   if (!job) return { title: 'not found' };
@@ -23,6 +25,7 @@ async function getJob(id) {
 }
 const JobDetailPage = async ({ params }) => {
   const job = await getJob(params.id);
+  console.log("job", job)
   if (!job) notFound();
   const {
     employer_id,
@@ -36,7 +39,10 @@ const JobDetailPage = async ({ params }) => {
     description,
     how_to_apply,
     featured,
+    clientType
   } = job.data;
+
+
   return (
     <div className="bg-white relative content-grid mx-auto  ">
       <div className="bg-slate-200 full-width">
@@ -117,7 +123,17 @@ const JobDetailPage = async ({ params }) => {
           className="wrapper media bg-white border-2  p-4 mb-4 rounded-lg shadow-lg max-w-screen-md"
           data-id={jobId}
         >
-          <div dangerouslySetInnerHTML={{ __html: description }} />
+          {
+            <div className='w-full'>            
+              <div className={`${clientType !== "HeadlineOnly" ? 'block' : 'hidden'}`} dangerouslySetInnerHTML={{ __html: description }} />
+              <div className={`${clientType !== "HeadlineOnly" ? 'hidden' : 'block'} w-full h-full flex flex-col gap-2 justify-center`} >
+                <p className='text-xl font-bold text-gray-500'>Headline only listing, to show full job content, fill the form below to upgrade to Priority Listing</p>
+                <HeadlineUpgrade/>
+              </div>
+            </div>
+            
+          }
+          
           {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
         </article>
         <div className="max-h-screen overflow-y-scroll w-96 hidden md:block">
@@ -137,3 +153,6 @@ const JobDetailPage = async ({ params }) => {
   );
 };
 export default JobDetailPage;
+
+  //  <p className='text-xl font-bold'>Headline only listing, to show full job content, click button below to:</p>
+  //               <Link href={`\headline_upgrade\${company_name}`}>Upgrade to Priority Listing</Link>
