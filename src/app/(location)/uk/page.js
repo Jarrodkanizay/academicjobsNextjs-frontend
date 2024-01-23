@@ -25,6 +25,8 @@ export default function Page() {
 
           alt="AcademicJobs UK Logo"
           className=" w-[20rem] mb-[1rem] "
+          width={330}
+          height={220}
         /></div>
       <JobSearchBox l="United Kingdom"/>
       <div className=" mt-[10rem] " >

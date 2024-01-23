@@ -22,6 +22,8 @@ export default function Page() {
 
           alt="AcademicJobs Middle East logo"
           className=" w-[20rem] mb-[1rem] mt-[-1rem]"
+          width={330}
+          height={220}
         /></div>
       <JobSearchBox l="Middle East"/>
       <div className=" mt-[10rem] " >

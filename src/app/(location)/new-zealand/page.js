@@ -23,6 +23,8 @@ export default function Page() {
 
           alt="AcademicJobs New Zealand Logo"
           className=" w-[20rem] mb-[1rem] "
+          width={330}
+          height={220}
         /></div>
 
       <JobSearchBox l="New Zealand"/>

@@ -5,26 +5,22 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { BsFillShareFill } from 'react-icons/bs';
 import Button from './Button';
-
-//metadata
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
   if (!job) return { title: 'not found' };
+  const { title, company_name, location } = job?.data
   return {
-    title:
-    job?.data.master_category_job_type + '#######' + job?.data.company_name,
-    description: job?.data.company_name,
+    title: `${title} | ${company_name}`,
+    description: `Explore our ${title} job opportunities available at ${company_name}! Apply to become a ${title} today. Apply for an academic job today!`,
+    keywords: `${title} jobs| ${company_name} university jobs| ${location} university jobs`,
   };
 }
-
-
- async function getJob(id) {
+async function getJob(id) {
   const response = await fetch(`https://api2.sciencejobs.com.au/api/job/${id}`);
   const res = await response.json();
   // console.log(res);
   return res;
 }
-
 const JobDetailPage = async ({ params }) => {
   const job = await getJob(params.id);
   if (!job) notFound();
@@ -141,5 +137,3 @@ const JobDetailPage = async ({ params }) => {
   );
 };
 export default JobDetailPage;
-
-

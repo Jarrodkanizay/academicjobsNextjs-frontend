@@ -24,6 +24,8 @@ export default function Page() {
 
           alt="AcademicJobs Canada Logo"
           className=" w-[20rem] mb-[1rem] "
+          width={330}
+          height={220}
         /></div>
       <JobSearchBox l="Canada"/>
 

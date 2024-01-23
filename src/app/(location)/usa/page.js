@@ -22,6 +22,8 @@ export default function Page() {
           src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-us-min.png"
           alt="AcademicJobs USA Logo"
           className=" w-[20rem] mb-[1rem] "
+          width={330}
+          height={220}
         />
       </div>
       <JobSearchBox l="USA" />
