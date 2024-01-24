@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults'
 import JobSearchBox from '@/components/JobSearchBox'
@@ -27,6 +28,12 @@ export default function myPage() {
             Seek all remote uni jobs through Australia’s No.1 job board. Discover flexibility to align your professional pursuits with your lifestyle choices. Find the ideal remote job transcending geographical boundaries. Join us in embracing a future where your workspace is as flexible as your ambitions</p>
             <p className="px-7 md:flex hidden">
             The best job board in Australia will help you find your dream remote position. Redefine your career through our comprehensive remote job platform, unleashing boundless possibilities wherever you choose your path to be.</p>
+            <Link
+                      href={'/academic-talent-pool'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                    >
+                     Join Our Talent Pool
+                    </Link>
          
             </div>
           </div>

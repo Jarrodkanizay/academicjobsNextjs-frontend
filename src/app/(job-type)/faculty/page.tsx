@@ -35,6 +35,12 @@ export default function myPage() {
             <p className="px-7">
             Find all the best academic faculty jobs here…
             </p>
+            <Link
+                      href={'/academic-talent-pool'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                    >
+                     Join Our Talent Pool
+                    </Link>
          
             </div>
           </div>
