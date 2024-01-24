@@ -79,7 +79,7 @@ const ContactUsForm = ({ maxWidth }) => {
         errors={errors}
         type="text"
         ID="contact-us"
-        field=" 00_Form_Name"
+        field="00_Form_Name"
         placeholder="Contact_Us"
         hidden={true}
       />
@@ -91,7 +91,7 @@ const ContactUsForm = ({ maxWidth }) => {
           tabIndex={1}
           type="text"
           ID="first-name-input"
-          field=" 01_First_Name"
+          field="01_First_Name"
           forceClass=""
           placeholder="First Name"
           autoComplete="given-name"
@@ -105,7 +105,7 @@ const ContactUsForm = ({ maxWidth }) => {
           tabIndex={2}
           type="text"
           ID="last-name-input"
-          field=" 02_Last_Name"
+          field="02_Last_Name"
           forceClass=""
           placeholder=" Last Name"
           autoComplete="family-name"
@@ -120,7 +120,7 @@ const ContactUsForm = ({ maxWidth }) => {
           tabIndex={5}
           type="email"
           ID="email-input"
-          field=" 05_Email"
+          field="05_Email"
           forceClass=""
           placeholder="Email"
           autoComplete="email"
@@ -135,7 +135,7 @@ const ContactUsForm = ({ maxWidth }) => {
           tabIndex={4}
           type="tel"
           ID="phone-input"
-          field=" 04_phone"
+          field="04_phone"
           forceClass=""
           autoComplete="tel"
           placeholder="Phone Number"
@@ -234,7 +234,7 @@ const ContactUsForm = ({ maxWidth }) => {
         <textarea
           tabIndex={17}
           id="profile-input"
-          field=" 17_Profile"
+          field="17_Profile"
           className="w-full textarea textarea-bordered"
           placeholder="Message, comments, testimonials, etc."
         />

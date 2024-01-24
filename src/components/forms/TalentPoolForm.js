@@ -82,8 +82,8 @@ const TalentPoolForm = ({ maxWidth }) => {
         errors={errors}
         type="text"
         ID="talent-pool-form-submission"
-        name=" 00_Form_Name"
-        field=" 00_Form_Name"
+        name="00_Form_Name"
+        field="00_Form_Name"
         placeholder="Talent Pool Form Submission"
         hidden={true}
       />
@@ -95,7 +95,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           tabIndex={1}
           type="text"
           ID="first-name-input"
-          field=" 01_First_Name"
+          field="01_First_Name"
           forceClass=""
           placeholder="First Name"
           autoComplete="given-name"
@@ -108,7 +108,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           tabIndex={2}
           type="text"
           ID="last-name-input"
-          field=" 02_Last_Name"
+          field="02_Last_Name"
           forceClass=""
           placeholder=" Last Name"
           autoComplete="family-name"
@@ -122,7 +122,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           tabIndex={3}
           type="text"
           ID="name-input"
-          field=" 03_Academic_Title"
+          field="03_Academic_Title"
           forceClass=""
           placeholder="Academic Title (Role or Position)"
           required={true}
@@ -135,7 +135,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           tabIndex={4}
           type="tel"
           ID="phone-input"
-          field=" 04_phone"
+          field="04_phone"
           forceClass=""
           autoComplete="tel"
           placeholder="Phone Number"
@@ -148,7 +148,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           tabIndex={5}
           type="email"
           ID="email-input"
-          field=" 05_Email"
+          field="05_Email"
           forceClass=""
           placeholder="Email"
           autoComplete="email"
@@ -247,7 +247,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           tabIndex={12}
           type="text"
           ID="institution-input"
-          field=" 12_Institution"
+          field="12_Institution"
           forceClass=""
           placeholder="Institution/University (Current, Last or Attended)"
           required={true}
@@ -262,7 +262,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           tabIndex={13}
           type="text"
           ID="department-faculty-input"
-          field=" 13_Department_Faculty"
+          field="13_Department_Faculty"
           forceClass=""
           placeholder="Department/Faculty"
           required={true}
@@ -276,7 +276,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           tabIndex={14}
           type="text"
           ID="specialty-input"
-          field=" 14_Specialty"
+          field="14_Specialty"
           forceClass=""
           placeholder="Specialty"
           required={true}
@@ -290,7 +290,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           tabIndex={15}
           type="text"
           ID="location-input"
-          field=" 15_Institution_Location"
+          field="15_Institution_Location"
           forceClass=""
           placeholder="Institution Location"
           required={true}
@@ -300,7 +300,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           tabIndex={16}
           {...register('16_Country')}
           id="country-select"
-          field=" 16_Country"
+          field="16_Country"
           className="select select-bordered w-full"
           required={true}
         >
@@ -319,7 +319,7 @@ const TalentPoolForm = ({ maxWidth }) => {
         <textarea
           tabIndex={17}
           id="profile-input"
-          field=" 17_Profile"
+          field="17_Profile"
           className="w-full textarea textarea-bordered"
           placeholder="OPTIONAL - Please write a brief profile noting your key skills, experience, and achievements."
         />

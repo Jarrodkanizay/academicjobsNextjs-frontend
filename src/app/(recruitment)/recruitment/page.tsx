@@ -3,18 +3,20 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PricingTable2 from '@/components/PricingTable2';
 export const metadata: Metadata = {
-  title: 'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
+  title:
+    'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
     'With our advanced AI technologies that greatly improve the job posting process, Academic Jobs is the top AI recruitment platform, enabling higher education institutions, the research and development (R&D) industry, and many other industries discover people. ',
-  keywords: 'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
+  keywords:
+    'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
 };
 export default function myPage() {
   return (
     <>
-        <main>
+      <main>
         {/* Hero banner */}
         <section>
           <div className="hero max-h-fit bg-slate-200 py-8 mx-auto">
@@ -29,8 +31,7 @@ export default function myPage() {
                 />
                 <div>
                   <h1 className="text-3xl font-bold text-aj">
-                    Join the Global No. 1 Academic Job Board &
-                    Community
+                    Join the Global No. 1 Academic Job Board & Community
                   </h1>
                   <h4 className="">
                     Academic Jobs is the Premier Destination for Academic and
@@ -42,9 +43,12 @@ export default function myPage() {
                     understand the importance of finding the right talent, and
                     we go above and beyond to help you achieve this.
                   </p>
-                  <Link 
-                  target="_blank"
-                  className="btn btn-aj" href="https://www.postmyjob.online/academicjobs-job-portal">
+                  <Link
+                    target="_blank"
+                    className="btn btn-aj"
+                    href="/post-a-job"
+                    // href="https://www.postmyjob.online/academicjobs-job-portal"
+                  >
                     Post a Job Today
                   </Link>
                 </div>
@@ -54,22 +58,17 @@ export default function myPage() {
         </section>
         {/* Main Content */}
         <section className="container mx-auto px-4 mt-12">
-
-
-        <PricingTable2 />
-
+          <PricingTable2 />
 
           <h2 className="text-left mb-4 md:px-10 text-xl font-bold">
-            Connect with the Global Academic Elite on the
-            Premier Job Board
+            Connect with the Global Academic Elite on the Premier Job Board
           </h2>
           <div className="text-col-2 rounded-2xl shadow-lg pb-12 px-auto">
             <p className="max-w-xl mx-auto ">
-              Leverage the power of the Global No. 1 Academic
-              Job Board for unparalleled access to top-tier academic talent.
-              Academic Jobs simplifies your recruitment process, offering an
-              affordable, efficient way to find academics and university support
-              staff.
+              Leverage the power of the Global No. 1 Academic Job Board for
+              unparalleled access to top-tier academic talent. Academic Jobs
+              simplifies your recruitment process, offering an affordable,
+              efficient way to find academics and university support staff.
             </p>
             <p className="max-w-xl mx-auto">
               With our commitment to genuine customer service, combined with
@@ -78,7 +77,6 @@ export default function myPage() {
               right candidates effortlessly.
             </p>
           </div>
-
 
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
@@ -108,9 +106,9 @@ export default function myPage() {
                   Global Leading Academic Job Board
                 </h2>
                 <p>
-                  Connect with the Global top academic talent
-                  on the No. 1 Academic Job Board. Posting jobs is simple and
-                  affordable, targeting both local and global candidates.{" "}
+                  Connect with the Global top academic talent on the No. 1
+                  Academic Job Board. Posting jobs is simple and affordable,
+                  targeting both local and global candidates.{' '}
                   <span className="hidden">
                     We specialize in matching premier academic professionals
                     with your specific needs, ensuring you find the right talent
@@ -119,7 +117,6 @@ export default function myPage() {
                 </p>
               </div>
             </div>
-
 
             {/* Card 2 */}
             <div className="card bg-slate-100 shadow-xl">
@@ -149,7 +146,6 @@ export default function myPage() {
                 </p>
               </div>
             </div>
-
 
             {/* Card 3 */}
             <div className="card bg-slate-100 shadow-xl">
@@ -221,7 +217,6 @@ export default function myPage() {
             </div>
           </div>
 
-
           {/* Lowest fees Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
@@ -250,7 +245,6 @@ export default function myPage() {
             </div>
           </div>
         </section>
-
 
         {/* Breakout Section */}
         <div className="bg-sky-100 mb-8 mt-16 py-8 px-4">
@@ -293,7 +287,6 @@ export default function myPage() {
                 </p>
               </div>
             </div>
-
 
             {/* Card 2 */}
             <div className="card bg-slate-100 shadow-xl">
@@ -354,8 +347,7 @@ export default function myPage() {
               </figure>
               <div className="card-body items-left text-left pt-14">
                 <h2 className="card-title">
-                  Global Leading Admin & Support Staff Job
-                  Board
+                  Global Leading Admin & Support Staff Job Board
                 </h2>
                 <p>
                   Academic Jobs shines as the #1&nbsp;Job Board in the World for
@@ -366,10 +358,8 @@ export default function myPage() {
               </div>
             </div>
 
-
             {/* End Cards */}
           </div>
-
 
           {/* Access to thousands of top academics Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
@@ -399,7 +389,6 @@ export default function myPage() {
             </div>
           </div>
 
-
           {/* Helpful tools and AI make it easy to list Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
@@ -428,7 +417,6 @@ export default function myPage() {
             </div>
           </div>
         </section>
-
 
         {/* Contact us CTA */}
         <section className="container mx-auto px-4 mt-12">
@@ -465,17 +453,15 @@ export default function myPage() {
             <div className="text-col-2">
               <p className="mb-4">
                 <blockquote>
-                  Discover the Ease of Academic Recruitment with the{" "}
-                  Global
+                  Discover the Ease of Academic Recruitment with the Global
                   Leading Job Board
                 </blockquote>
-                Choosing Academic Jobs means partnering with the{" "}
-                Global
-                foremost academic job board, renowned for its simplicity,
-                affordability, and unparalleled access to a global talent pool.
-                As the premier destination for academic recruitment, we cater
-                specifically to the needs of HR professionals in the academic
-                sector, offering an effortless platform to post job vacancies.
+                Choosing Academic Jobs means partnering with the Global foremost
+                academic job board, renowned for its simplicity, affordability,
+                and unparalleled access to a global talent pool. As the premier
+                destination for academic recruitment, we cater specifically to
+                the needs of HR professionals in the academic sector, offering
+                an effortless platform to post job vacancies.
               </p>
               <p className="mb-4">
                 Understanding the critical importance of finding the right
@@ -521,8 +507,12 @@ export default function myPage() {
         <section>
           <h3 className="container mx-auto text-center py-8 px-4">
             If you're interested in a great experience while saving time &
-            money…{" "}
-            <Link className="btn btn-aj" target="_blank" href="https://postmyjob.online/academicjobs-job-portal/">
+            money…{' '}
+            <Link
+              className="btn btn-aj"
+              target="_blank"
+              href="https://postmyjob.online/academicjobs-job-portal/"
+            >
               Post a Job Today
             </Link>
           </h3>
@@ -531,6 +521,3 @@ export default function myPage() {
     </>
   );
 }
-
-
-
