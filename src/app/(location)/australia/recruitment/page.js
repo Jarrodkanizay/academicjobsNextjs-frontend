@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import img from 'next/image';
 
 import Link from 'next/link';
 import PricingTable2 from '@/components/PricingTable2';
@@ -28,7 +28,7 @@ export default function myPage() {
           <div className="hero max-h-fit bg-slate-200 py-8">
             <div className="container mx-auto">
               <div className="hero-content flex-col lg:flex-row gap-8">
-                <Image
+                <img
                   src="/academic-job-postings/academic-jobs-college-professor.jpg"
                   className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
                   alt="academic jobs college professor"
@@ -49,7 +49,7 @@ export default function myPage() {
                     right talent, and we go above and beyond to help you achieve
                     this.
                   </p>
-                  <Link className="btn btn-aj" target="_blank" href="https://postmyjob.online/academicjobs-job-portal/">
+                  <Link className="btn btn-aj" target="_blank" href="/australia/post-a-job">
                     Post a Job Today
                   </Link>
                 </div>
@@ -126,7 +126,7 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
-                  <Image
+                  <img
                     width={90}
                     height={90}
                     src="/academic-job-postings/life-saving-customer-service.svg"
@@ -155,7 +155,7 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
-                  <Image
+                  <img
                     width={90}
                     height={90}
                     src="/academic-job-postings/elite-talent.svg"
@@ -181,7 +181,7 @@ export default function myPage() {
         {/* Uni hero image */}
         <div className="bg-gray-200 mt-16">
           <figure className="relative w-full min-h-[237px] max-h-[237px] overflow-hidden">
-            <Image
+            <img
               src="/academic-job-postings/university-of-sydney.jpg"
               alt="university of sydney"
               className="absolute w-full h-full object-cover"
@@ -191,11 +191,11 @@ export default function myPage() {
          <section className="container mx-auto px-4 mt-12">
 
 
-        <PricingTable2 />
+        
           {/* A whole new way to recruit Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
-              <Image
+              <img
                 src="/academic-job-postings/academics-networking.jpg"
                 alt="academics networking Australia"
                 className="w-full lg:max-w-lg rounded-xl m-6"
@@ -214,7 +214,7 @@ export default function myPage() {
               </p>
               <div className="card-actions justify-end">
                 <Link
-                  href="https://postmyjob.online/academicjobs-job-portal"
+                  href="/australia/post-a-job"
                   className="btn btn-aj"
                 >
                   Create a free profile now
@@ -226,7 +226,7 @@ export default function myPage() {
           {/* Lowest fees Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
-              <Image
+              <img
                 src="/academic-job-postings/great-customer-service.jpg"
                 alt="Great Customer Service with the Lowest Prices Australia"
                 className="w-full lg:max-w-lg rounded-xl m-6"
@@ -242,7 +242,7 @@ export default function myPage() {
                 best customer service and support.
               </p>
               <div className="card-actions justify-end">
-                <Link href="/post-job" className="btn btn-aj">
+                <Link href="/australia/post-a-job" className="btn btn-aj">
                   Check out our prices
                 </Link>
               </div>
@@ -275,7 +275,7 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-4">
                 <div className="icon-ai">
-                  <Image
+                  <img
                     width={90}
                     height={90}
                     src="/academic-job-postings/Top-Executive.jpg"
@@ -299,7 +299,7 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
-                  <Image
+                  <img
                     width={90}
                     height={90}
                     src="/academic-job-postings/HR-Jobs.png"
@@ -327,7 +327,7 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
-                  <Image
+                  <img
                     width={90}
                     height={90}
                     src="/academic-job-postings/Admin-Jobs.png"
@@ -376,7 +376,7 @@ export default function myPage() {
           {/* Access to thousands of top academics Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
-              <Image
+              <img
                 src="/academic-job-postings/global-academic-network.jpg"
                 alt="Access to thousands of top global academics Australia"
                 className="w-full lg:max-w-lg rounded-xl m-6"
@@ -392,7 +392,7 @@ export default function myPage() {
                 decisions about who will join your organisation.
               </p>
               <div className="card-actions justify-end">
-                <Link href="/academic-talent-pool" className="btn btn-aj">
+                <Link href="/australia/post-a-job" className="btn btn-aj">
                   Join our Talent Pool
                 </Link>
               </div>
@@ -402,7 +402,7 @@ export default function myPage() {
           {/* Helpful tools and AI make it easy to list Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
-              <Image
+              <img
                 src="/academic-job-postings/helpful-artificial-intelligence.jpg"
                 alt="Australia Helpful AI tools"
                 className="w-full lg:max-w-lg rounded-xl m-6"
@@ -419,7 +419,7 @@ export default function myPage() {
               </p>
               <div className="card-actions justify-end">
                 <Link
-                  href="https://postmyjob.online/academicjobs-job-portal"
+                  href="/australia/post-a-job"
                   className="btn btn-aj"
                 >
                   Try it for Yourself
@@ -526,7 +526,7 @@ export default function myPage() {
             money…{" "}
             <Link
               className="btn btn-aj"
-              href="https://postmyjob.online/academicjobs-job-portal"
+              href="/australia/post-a-job"
             >
               Post a Job Today
             </Link>

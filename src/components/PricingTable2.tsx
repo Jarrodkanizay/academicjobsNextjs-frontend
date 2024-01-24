@@ -129,7 +129,7 @@ invoice for $${formatNumberWithCommas(price)}.
             </li>
             <li className="flex text-lg mb-2">
            
-              <a  href="https://www.iloveacademicjobs.com/post-a-job-form" className="ml-3">
+              <a  href="/australia/post-a-job" className="ml-3">
                 Upgrade to <span className="text-black underline">Priority Listing</span>
               </a>
             </li>
@@ -137,7 +137,7 @@ invoice for $${formatNumberWithCommas(price)}.
 
 
           <a
-            href="https://www.iloveacademicjobs.com/post-a-job-form"
+            href="/australia/post-a-job"
             className="flex justify-center items-center bg-aj rounded-xl py-5 px-4 text-center text-white font-bold text-xl"
           >
             {pricing.cta} {pricing.basic}
@@ -205,7 +205,7 @@ invoice for $${formatNumberWithCommas(price)}.
             </li>
           </ul>
           <a
-            href="https://www.iloveacademicjobs.com/post-a-job-form"
+            href="/australia/post-a-job"
             className="flex justify-center items-center bg-aj rounded-xl py-5 px-4 text-center text-white font-bold text-xl"
           >
             {pricing.cta} {pricing.business}
