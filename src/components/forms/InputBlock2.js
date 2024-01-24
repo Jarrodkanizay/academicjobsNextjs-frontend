@@ -1,4 +1,4 @@
-'use client'
+'use client';
 const InputBlock2 = ({
   ID,
   name,
@@ -12,21 +12,28 @@ const InputBlock2 = ({
   placeholder,
   tabIndex,
   required,
+  colSpan,
 }) => {
+  if (required === undefined) required = false;
+  if (colSpan === undefined) colSpan = 1;
   return (
     <div
-      className={` w-full  flex flex-col  gap-1   items-start   ${forceClass}`}
+      className={`relative w-full flex flex-col gap-1 items-start ${forceClass} col-span-2 ${
+        colSpan === 1 ? 'md:col-span-1' : `md:col-span-${colSpan}`
+      }`}
     >
-      {/* <label className="label-text text-xs">{label}</label> */}
+      {label ? <label className="label-text text-xs">{label}</label> : null}
       <input
         tabIndex={tabIndex}
         {...register(field)}
         type={type}
-        className="w-full input input-sm input-bordered focus:outline-none focus:border-orange-500"
+        className="w-full input input-md focus:outline-none focus:border-orange-500"
         autoComplete={autoComplete}
         placeholder={placeholder}
+        required={required ? true : false}
       />
       {errors[field] && <span className="error">{errors[field].message}</span>}
+      {required ? <i className="required">*</i> : null}
     </div>
   );
 };
