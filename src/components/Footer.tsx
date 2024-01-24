@@ -10,7 +10,10 @@ const Footer = () => {
             <li className="text-white font-bold text-xl pb-1 ">Recruiters</li>
 
             <li>
-              <a className="footer-nav__link" href="https://www.postmyjob.online/academicjobs-job-portal">
+              <a
+                className="footer-nav__link"
+                href="https://www.postmyjob.online/academicjobs-job-portal"
+              >
                 Post a Job
               </a>
             </li>
@@ -92,12 +95,20 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/academic-jobs/">
+              <a
+                href="https://www.linkedin.com/company/academic-jobs/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Linkedin
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/academicjobs_/">
+              <a
+                href="https://www.instagram.com/academicjobs_/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Instagram
               </a>
             </li>

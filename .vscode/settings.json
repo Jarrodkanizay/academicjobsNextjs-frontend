@@ -22,5 +22,10 @@
     "tanstack",
     "vellore",
     "Writessays"
-  ]
+  ],
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto"
 }
