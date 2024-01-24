@@ -668,10 +668,12 @@ html {
       padding: 10mm;
       border: 1px solid #ccc;
     }
+    .show-item,
     .show-form {
       display: block;
     }
 
+    .hide-item,
     .hide-form {
       display: none;
     }

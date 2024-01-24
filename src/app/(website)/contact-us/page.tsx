@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
-import TalentPoolForm from '@/components/forms/TalentPoolForm';
+import ContactUsForm from '@/components/forms/ContactUsForm';
 
 export const metadata: Metadata = {
   title: 'Contact Us', //Option 1 replaces the %s in layout.tsx
@@ -31,9 +31,9 @@ export default function myPage() {
         </div>
 
         <div className="flex flex-col lg:flex-row lg:gap-8">
-          <TalentPoolForm maxWidth="700" />
+          <ContactUsForm maxWidth="700" />
           {/* Contact Numbers */}
-          <div className="w-full bg-slate-100 py-4 px-8 rounded-2xl lg:min-w-[450px] lg:max-w-[500px] mt-8 lg:mt-0">
+          <div className="flex flex-col w-full bg-slate-100 py-4 px-8 rounded-2xl lg:min-w-[450px] lg:max-w-[500px] mt-8 lg:mt-0">
             <h2 className="underline-full mb-6">Global Office Numbers</h2>
             <ul className="contact-number">
               <li>
@@ -77,6 +77,13 @@ export default function myPage() {
                 </a>
               </li>
             </ul>
+            <Image
+              src="/contact-us/global-office-numbers.jpg"
+              width={500}
+              height={500}
+              alt="Global Office Numbers"
+              className="rounded-xl mx-auto mt-auto mb-4"
+            />
           </div>
         </div>
       </main>

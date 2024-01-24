@@ -13,13 +13,18 @@ const InputBlock2 = ({
   tabIndex,
   required,
   colSpan,
+  hidden,
 }) => {
   if (required === undefined) required = false;
+  if (hidden === undefined) hidden = false;
   if (colSpan === undefined) colSpan = 1;
+  if (name === undefined) name = field;
   return (
     <div
       className={`relative w-full flex flex-col gap-1 items-start ${forceClass} col-span-2 ${
-        colSpan === 1 ? 'md:col-span-1' : `md:col-span-${colSpan}`
+        colSpan === 1
+          ? 'md:col-span-1'
+          : `md:col-span-${colSpan} ${hidden ? 'hide-item' : 'show-item'}`
       }`}
     >
       {label ? <label className="label-text text-xs">{label}</label> : null}
@@ -31,6 +36,7 @@ const InputBlock2 = ({
         autoComplete={autoComplete}
         placeholder={placeholder}
         required={required ? true : false}
+        hidden={hidden ? true : false}
       />
       {errors[field] && <span className="error">{errors[field].message}</span>}
       {required ? <i className="required">*</i> : null}
