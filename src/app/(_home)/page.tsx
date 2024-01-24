@@ -81,17 +81,17 @@ export default function myPage() {
 
       <div id="section" className="bg-slate-200 full-width py-4 mb-16">
         <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
-          <h1 className="text-3xl font-normal sm:text-right text-gray-400 m-0 pb-8 px-7 md:px-0">
+          <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 pb-8  md:px-0">
             <span className="md:text-6xl font-bold text-gray-500 pb-4 ">
-              ACADEMIC&nbsp;JOBS:
+              ACADEMIC JOBS: <br/> 
             </span>{' '}
-            Academic, research &&nbsp;science positions locally & globally
+            Academic, research & science positions locally & globally
           </h1>
 
        
 
           <div>
-            <p className="px-7 mb-4 mt-1">
+            <p className="md:px-7 mb-4 mt-1">
               Discover top-tier faculty and administrative roles in the world of
               higher education. Begin your search for university academic jobs,
               college faculty positions, and administrative opportunities in
@@ -99,7 +99,7 @@ export default function myPage() {
               lecturer, researcher, university administrator, and senior
               academic positions, available nationally and internationally.
             </p>
-            <p className="px-7">
+            <p className="md:px-7">
               Whether you&apos;re an aspiring or established professor,
               researcher, lecturer, or higher education administrator, our
               platform offers the most current opportunities in academia
