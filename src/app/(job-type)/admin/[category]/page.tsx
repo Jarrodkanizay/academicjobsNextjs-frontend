@@ -1,4 +1,4 @@
-// import Link from 'next/link';
+import Link from 'next/link';
 import adminData from '@/data/admin.json';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
@@ -69,7 +69,14 @@ export default function Page({ params, searchParams }: any) {
             {Name}
           </h1>
           <p className="px-7 mb-4 mt-1">{content1}</p>
+         
         </div>
+        <Link
+                      href={'/academic-talent-pool'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                    >
+                     Join Our Talent Pool
+                    </Link>
       </div>
 
       <JobSearchBox q={Name} />

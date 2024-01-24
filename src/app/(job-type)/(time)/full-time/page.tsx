@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults'
 import JobSearchBox from '@/components/JobSearchBox'
@@ -19,6 +20,12 @@ export default function myPage() {
       Seek all full-time uni jobs through Australia’s No.1 job board. Are you ready to take the next leap in your career journey? We are actively seeking a dedicated and passionate professional to join our dynamic team in a full-time role. </p>
       <p className="px-7 md:flex hidden">
       The best job board in Australia will help you find your dream full-time position. If you thrive in a collaborative environment, possess a strong work ethic, and are eager to take on new challenges, we invite you to apply. This is more than just a job – it's a chance to grow and excel in a supportive and innovative workplace. Join us on this exciting journey and let's build a successful future together.</p>
+      <Link
+                      href={'/academic-talent-pool'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                    >
+                     Join Our Talent Pool
+                    </Link>
 
       <JobSearchBox q="full time" />
       <SearchResults q={{ q: 'full time' || 0 }} />

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults'
 import JobSearchBox from '@/components/JobSearchBox'
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -32,6 +33,12 @@ export default function myPage() {
             <p className="px-7 md:flex hidden">
             Explore all the finest postdoctoral positions right here...
             </p>
+            <Link
+                      href={'/academic-talent-pool'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                    >
+                     Join Our Talent Pool
+                    </Link>
          
          
             </div>

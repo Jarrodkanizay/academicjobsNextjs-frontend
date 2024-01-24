@@ -12,7 +12,7 @@ import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 
 const stripeLink = {
-  Australia: 'https://buy.stripe.com/fZe3dS5LqeqQ8ZGfZ1',
+  Australia: 'https://buy.stripe.com/dR6eWA6PuaaA7VC6ov',
   JobElephant: 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
   USA: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
 };
