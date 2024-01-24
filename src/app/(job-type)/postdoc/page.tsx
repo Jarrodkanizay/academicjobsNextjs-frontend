@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults'
 import JobSearchBox from '@/components/JobSearchBox'
@@ -32,6 +33,12 @@ export default function myPage() {
             <p className="px-7 md:flex hidden">
             Find all the best PhD positions here…
             </p>
+            <Link
+                      href={'/academic-talent-pool'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                    >
+                     Join Our Talent Pool
+                    </Link>
          
             </div>
           </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
@@ -18,6 +19,12 @@ export default function myPage() {
       Seek all part-time uni jobs through Australia’s best job board. Discover flexibility to align your professional pursuits with your lifestyle choices. Join us in embracing a future where your workspace is as adaptable as your ambitions. From part-time positions to vibrant on-site roles, we've curated diverse part-time opportunities just for you.</p>
       <p className="px-7 md:flex hidden">
       All of the best professional casual jobs in Australia. Through higher ed jobs part-time, individuals can actively contribute to the advancement of knowledge, the cultivation of learning environments, and the overall growth of the academic landscape while simultaneously expanding their professional horizons.</p>
+      <Link
+                      href={'/academic-talent-pool'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                    >
+                     Join Our Talent Pool
+                    </Link>
 
       <JobSearchBox q="part time" />
       <SearchResults q={{ q: 'part time' || 0 }} />

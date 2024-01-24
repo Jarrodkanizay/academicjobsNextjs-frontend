@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults'
 import JobSearchBox from '@/components/JobSearchBox'
@@ -22,6 +23,12 @@ export default function myPage() {
               Seek all casual uni jobs through Australia’s best job board. Whether you're a student or a seasoned professional, discover flexible gigs tailored to your skills and schedule. Dive into a new job adventure with our casual job search platform!</p>
               <p className="px-7 md:flex hidden">
               The No. 1 job board for part-time jobs in Australia. Join our community and connect with employers who value your unique talents. Simplify your job search, take control of your work-life balance, and find your dream gig in just a few clicks. Your next exciting opportunity awaits – let's make it happen together!</p>
+              <Link
+                      href={'/academic-talent-pool'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                    >
+                     Join Our Talent Pool
+                    </Link>
 
               <JobSearchBox/>
               <SearchResults q={{ q: "casual" || 0 }} />

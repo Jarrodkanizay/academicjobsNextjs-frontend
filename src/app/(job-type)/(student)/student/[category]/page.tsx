@@ -33,6 +33,7 @@ export async function generateMetadata({ params, searchParams }: any) {
     description: Description,
     keywords: Keyword,
   };
+  
 }
 
 //const Lecturer = () => {
@@ -69,6 +70,7 @@ export default function Page({ params, searchParams }: any) {
             {Name}
           </h1>
           <p className="px-7 mb-4 mt-1">{content1}</p>
+          
         </div>
       </div>
 

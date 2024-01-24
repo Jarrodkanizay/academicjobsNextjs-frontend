@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults'
 import JobSearchBox from '@/components/JobSearchBox'
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -32,7 +33,14 @@ export default function myPage() {
             The best job board in Australia will help you find your dream online position. Through higher ed jobs online, individuals can actively contribute to the advancement of knowledge, the cultivation of learning environments, and the overall growth of the academic landscape while simultaneously expanding their professional horizons.</p>
          
             </div>
+            
           </div>
+          <Link
+                      href={'/academic-talent-pool'}
+                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                    >
+                     Join Our Talent Pool
+                    </Link>
           </div>
 
               <JobSearchBox q= "online"/>
