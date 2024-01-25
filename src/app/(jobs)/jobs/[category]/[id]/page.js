@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 import HeadlineUpgrade from '@/components/forms/HeadlineUpgrade';
+import HeadlineLinks from '@/components/forms/HeadlineLinks';
+import InputBlock from '@/components/forms/InputBlock';
 import Link from 'next/link';
 import Image from 'next/image';
 import { BsFillShareFill } from 'react-icons/bs';
@@ -127,8 +129,29 @@ const JobDetailPage = async ({ params }) => {
             <div className='w-full'>            
               <div className={`${clientType !== "HeadlineOnly" ? 'block' : 'hidden'}`} dangerouslySetInnerHTML={{ __html: description }} />
               <div className={`${clientType !== "HeadlineOnly" ? 'hidden' : 'block'} w-full h-full flex flex-col gap-2 justify-center`} >
-                <p className='text-xl font-bold text-gray-500'>Headline only listing, to show full job content, fill the form below to upgrade to Priority Listing</p>
-                <HeadlineUpgrade/>
+                
+               
+              <a
+                     href='/post-a-job'
+                     className="btn  btn-sm  mx-auto my-2"
+                   >
+                    Email Job Post
+                   </a>
+
+                <details>
+               
+                <div className="grid w-full items-center gap-1.5 mt-4">
+               
+
+                  </div>
+  <summary class="  px-4 py-2 rounded-md text-center"> Recruiter Information Only
+  <HeadlineLinks/>
+  </summary>
+  <div class="px-4 py-2">
+  <HeadlineUpgrade/>
+  </div>
+</details>
+
               </div>
             </div>
             
