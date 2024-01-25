@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect, watch } from 'react';
+import React, { watch } from 'react';
 import countries from '@/data/CountryList.json';
 import InputBlock2 from './InputBlock2';
 import { useForm } from 'react-hook-form';
@@ -7,7 +7,7 @@ import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import FormSubmissionMessage from './FormSubmissionMessage';
 
-const TalentPoolForm = ({ maxWidth }) => {
+const ContactUsForm = ({ maxWidth }) => {
   const {
     register,
     handleSubmit,
@@ -17,7 +17,7 @@ const TalentPoolForm = ({ maxWidth }) => {
     setError,
   } = useForm({
     defaultValues: {
-      '00_Form_Name': 'Talent Pool Form Submission',
+      '00_Form_Name': 'Contact Us Form Submission',
     },
   });
 
@@ -27,17 +27,14 @@ const TalentPoolForm = ({ maxWidth }) => {
     },
   });
 
-  const firstName = watch('01_First_Name');
-
   const onSubmit = async (data) => {
     //e.preventDefault();
     //alert()
     console.log('data', data);
     mutation.mutate(data);
   };
-  // useEffect(() => {
-  //   setValue('00_Form_Name', 'Talent Pool Form Submission');
-  // }, [setValue]);
+
+  const firstName = watch('01_First_Name');
 
   if (mutation.isLoading) {
     return (
@@ -65,7 +62,7 @@ const TalentPoolForm = ({ maxWidth }) => {
     return (
       <FormSubmissionMessage
         status="success"
-        message="We are excited to welcome you to our Talent Pool and the benefits it will bring to you and your career. We will be in touch with you shortly."
+        message="We appreciate you reaching out, a team member will be in touch with you shortly."
         firstName={firstName}
       />
     );
@@ -76,15 +73,14 @@ const TalentPoolForm = ({ maxWidth }) => {
       className={`talent-pool mx-auto px-7 pt-4 pb-6 border-[1px] border-slate-500 bg-slate-50 rounded-2xl w-full lg:max-w-[${maxWidth}px] lg:min-w-[640px]`}
       onSubmit={handleSubmit(onSubmit)}
     >
-      <h2 className="underline-full mb-6">Your Details</h2>
+      <h2 className="underline-full mb-6">Contact Us</h2>
       <InputBlock2
         register={register}
         errors={errors}
         type="text"
-        ID="talent-pool-form-submission"
-        name="00_Form_Name"
+        ID="contact-us"
         field="00_Form_Name"
-        placeholder="Talent Pool Form Submission"
+        placeholder="Contact_Us"
         hidden={true}
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -100,6 +96,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           placeholder="First Name"
           autoComplete="given-name"
           required={true}
+          colSpan={2}
         />
         {/* Last name */}
         <InputBlock2
@@ -113,34 +110,9 @@ const TalentPoolForm = ({ maxWidth }) => {
           placeholder=" Last Name"
           autoComplete="family-name"
           required={true}
+          colSpan={2}
         />
 
-        {/* Academic Title */}
-        <InputBlock2
-          register={register}
-          errors={errors}
-          tabIndex={3}
-          type="text"
-          ID="name-input"
-          field="03_Academic_Title"
-          forceClass=""
-          placeholder="Academic Title (Role or Position)"
-          required={true}
-        />
-
-        {/* phone */}
-        <InputBlock2
-          register={register}
-          errors={errors}
-          tabIndex={4}
-          type="tel"
-          ID="phone-input"
-          field="04_phone"
-          forceClass=""
-          autoComplete="tel"
-          placeholder="Phone Number"
-          required={false}
-        />
         {/* Email */}
         <InputBlock2
           register={register}
@@ -155,8 +127,24 @@ const TalentPoolForm = ({ maxWidth }) => {
           required={true}
           colSpan={2}
         />
+
+        {/* phone */}
+        <InputBlock2
+          register={register}
+          errors={errors}
+          tabIndex={4}
+          type="tel"
+          ID="phone-input"
+          field="04_phone"
+          forceClass=""
+          autoComplete="tel"
+          placeholder="Phone Number"
+          required={false}
+          colSpan={2}
+        />
       </div>
       <h2 className="underline-full mt-10 mb-6">What are you interested in?</h2>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Seeking Opportunities */}
         <div className="form-control">
@@ -237,93 +225,21 @@ const TalentPoolForm = ({ maxWidth }) => {
         </div>
       </div>
       {/* Academic Details Section */}
-      <h2 className="underline-full mt-10 mb-6">Academic Details</h2>
+      <h2 className="underline-full mt-10 mb-6">Message</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Institution */}
-
-        <InputBlock2
-          register={register}
-          errors={errors}
-          tabIndex={12}
-          type="text"
-          ID="institution-input"
-          field="12_Institution"
-          forceClass=""
-          placeholder="Institution/University (Current, Last or Attended)"
-          required={true}
-          colSpan={2}
-        />
-
-        {/* Department/Faculty */}
-
-        <InputBlock2
-          register={register}
-          errors={errors}
-          tabIndex={13}
-          type="text"
-          ID="department-faculty-input"
-          field="13_Department_Faculty"
-          forceClass=""
-          placeholder="Department/Faculty"
-          required={true}
-        />
-
-        {/* Specialty */}
-
-        <InputBlock2
-          register={register}
-          errors={errors}
-          tabIndex={14}
-          type="text"
-          ID="specialty-input"
-          field="14_Specialty"
-          forceClass=""
-          placeholder="Specialty"
-          required={true}
-        />
-
-        {/* Location */}
-
-        <InputBlock2
-          register={register}
-          errors={errors}
-          tabIndex={15}
-          type="text"
-          ID="location-input"
-          field="15_Institution_Location"
-          forceClass=""
-          placeholder="Institution Location"
-          required={true}
-        />
-
-        <select
-          tabIndex={16}
-          {...register('16_Country')}
-          id="country-select"
-          field="16_Country"
-          className="select select-bordered w-full"
-          required={true}
-        >
-          <option value="" disabled selected>
-            Select a country...
-          </option>
-          {countries.map((country, index) => (
-            <option key={index} value={country.code}>
-              {country.name}
-            </option>
-          ))}
-        </select>
       </div>
       {/* Profile */}
-      <div className="col-span-2 mt-6">
+      <div className="col-span-2">
         <textarea
           tabIndex={17}
           id="profile-input"
           field="17_Profile"
           className="w-full textarea textarea-bordered"
-          placeholder="OPTIONAL - Please write a brief profile noting your key skills, experience, and achievements."
+          placeholder="Message, comments, testimonials, etc."
         />
       </div>
+
       {/* End form inputs */}
       <div className="col-span-1">
         <div className="relative">
@@ -341,4 +257,4 @@ const TalentPoolForm = ({ maxWidth }) => {
     </form>
   );
 };
-export default TalentPoolForm;
+export default ContactUsForm;

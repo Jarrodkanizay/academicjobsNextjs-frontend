@@ -284,42 +284,23 @@ html {
     input {
       position: relative;
     }
-    i.required {
-      display: none;
-    }
 
-    p[required] {
-      margin-left: 10px;
-      font-size: 12px;
-      margin-top: 6px;
-      font-style: italic;
-    }
-
-    input[required] + i.required,
-    select[required] + i.required,
-    textarea[required] + i.required,
-    p[required-data]::before {
-      display: block;
+    .required {
       color: red;
       position: absolute;
       inset: 0;
       left: 6px;
       top: 0px;
       font-style: normal;
-      font-size: 20px;
+      font-size: 16px;
       width: 10px;
       height: 20px;
-    }
-    p[required]::before {
-      content: '*';
-      left: 0px;
-      top: -2px;
     }
     .asterisk {
       color: red;
       position: relative;
-      top: 8px;
-      left: 1px;
+      top: 5px;
+      left: 0;
       font-style: normal;
       font-size: 20px;
       line-height: 0;
@@ -687,12 +668,24 @@ html {
       padding: 10mm;
       border: 1px solid #ccc;
     }
+    .show-item,
     .show-form {
       display: block;
     }
 
+    .hide-item,
     .hide-form {
       display: none;
+    }
+    .contact-number li {
+      padding: 10px 0;
+    }
+    .contact-number li strong {
+      display: inline-block;
+      font-weight: bold;
+      width: 140px;
+      text-align: right;
+      margin-right: 16px;
     }
 
     @media (max-width: 1023px) {

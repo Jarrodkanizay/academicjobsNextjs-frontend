@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   keywords:
     'talent pool, career opportunities, job seekers, find academic networking, academic exposure, professional networking, industry exposure, employment, career growth, job application, talent database, professional development, sign up, global job market',
 };
+//WIP
 export default function Page() {
   const cardIconSize = 90;
 
@@ -24,41 +25,49 @@ export default function Page() {
         {/* Unlock Your Academic Potential!  */}
         Join Our Talent Pool Today!
       </h1>
-      <div className="talent-pool px-7 container mx-auto py-16 border-[1px] border-slate-500 bg-slate-50 p-4 pt-4 rounded-3xl mt-8 mb-12">
-        <TalentPoolForm/>
+      <div className="flex flex-col lg:flex-row lg:gap-8">
+        <TalentPoolForm maxWidth="700" />
+        {/* Contact Numbers */}
+        <div className="flex flex-col w-full pb-8 bg-slate-100 py-4 px-8 rounded-2xl lg:min-w-[450px] lg:max-w-[500px] mt-8 lg:mt-0">
+          <h2 className="underline-full mb-6">Checkbox Definitions</h2>
+          <ul className="ul mb-auto">
+            <li>
+              <strong>Collaborations: </strong>Engage in high-level academic
+              collaborations and research partnerships.
+            </li>
+            <li>
+              <strong>Keynote Speaking: </strong>
+              Access opportunities for keynote speaking at prestigious
+              conferences and events.
+            </li>
+            <li>
+              <strong>Media Visibility: </strong>Gain visibility through media
+              features and interviews.
+            </li>
+            <li>
+              <strong>Career Progression: </strong>
+              Open doors to career progression and attract attention from
+              headhunters.
+            </li>
+            <li>
+              <strong>Seek IP Investors: </strong>
+              Connect with investors to fund and support your innovative
+              intellectual property projects.
+            </li>
+            <li>
+              <strong>Academic Rankings: </strong>
+              Become eligible for recognition in academic rankings and awards.
+            </li>
+          </ul>
+          <Image
+            src="/talent-pool/talent-pool-juggler.jpg"
+            width={500}
+            height={500}
+            alt="Talent Pool Juggler"
+            className="rounded-xl mx-auto mt-8"
+          />
+        </div>
       </div>
-      <h3 className="text-[#f4a10c] text-xl font-semibold mb-4">
-        Checkbox Definitions
-      </h3>
-      <ul className="ul">
-        <li>
-          <strong>Collaborations: </strong>Engage in high-level academic
-          collaborations and research partnerships.
-        </li>
-        <li>
-          <strong>Keynote Speaking: </strong>
-          Access opportunities for keynote speaking at prestigious conferences
-          and events.
-        </li>
-        <li>
-          <strong>Media Visibility: </strong>Gain visibility through media
-          features and interviews.
-        </li>
-        <li>
-          <strong>Career Progression: </strong>
-          Open doors to career progression and attract attention from
-          headhunters.
-        </li>
-        <li>
-          <strong>Seek IP Investors: </strong>
-          Connect with investors to fund and support your innovative
-          intellectual property projects.
-        </li>
-        <li>
-          <strong>Academic Rankings: </strong>
-          Become eligible for recognition in academic rankings and awards.
-        </li>
-      </ul>
       <div className="text-black rounded-2xl mt-8 mb-16">
         <div className="p-4 rounded-3xl bg-slate-100 pt-7">
           <ul className="ul">
