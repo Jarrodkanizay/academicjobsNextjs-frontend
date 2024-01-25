@@ -17,7 +17,7 @@ const ContactUsForm = ({ maxWidth }) => {
     setError,
   } = useForm({
     defaultValues: {
-      '00_Form_Name': 'Contact Us Form Submission',
+      '00_Form_Name': 'Search Rank Form Submission',
     },
   });
 
@@ -76,20 +76,17 @@ const ContactUsForm = ({ maxWidth }) => {
       <h2 className="underline-full mb-6">Find your Academic Rank</h2>
       <p>
         In order to find your academic ranking we need a few personal details.
+        The more information you provide the more accurate we can find your
+        ranking.
       </p>
-      <SearchSubmissionMessage
-        status="success"
-        message="We appreciate you reaching out, a team member will be in touch with you shortly."
-        firstName={firstName}
-      />
 
       <InputBlock2
         register={register}
         errors={errors}
         type="text"
-        ID="contact-us"
+        ID="rank_search_form"
         field="00_Form_Name"
-        placeholder="Contact_Us"
+        placeholder="Rank Search Form"
         hidden={true}
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -105,7 +102,6 @@ const ContactUsForm = ({ maxWidth }) => {
           placeholder="First Name"
           autoComplete="given-name"
           required={true}
-          colSpan={2}
         />
         {/* Last name */}
         <InputBlock2
@@ -119,7 +115,6 @@ const ContactUsForm = ({ maxWidth }) => {
           placeholder=" Last Name"
           autoComplete="family-name"
           required={true}
-          colSpan={2}
         />
 
         {/* Email */}
@@ -149,7 +144,19 @@ const ContactUsForm = ({ maxWidth }) => {
           autoComplete="tel"
           placeholder="Phone Number"
           required={false}
-          colSpan={2}
+        />
+        {/* Current Employer */}
+        <InputBlock2
+          register={register}
+          errors={errors}
+          tabIndex={4}
+          type="text"
+          ID="current_employer"
+          field="05_Current_Employer"
+          forceClass=""
+          autoComplete="organization"
+          placeholder="Current Employer"
+          required={false}
         />
       </div>
       {/* Academic Details Section */}
@@ -201,7 +208,7 @@ const ContactUsForm = ({ maxWidth }) => {
       </p>
       <div className="text-right mt-6">
         <button tabIndex={30} type="submit" className="btn btn-aj">
-          Search
+          Find My Academic Rank
         </button>
       </div>
     </form>

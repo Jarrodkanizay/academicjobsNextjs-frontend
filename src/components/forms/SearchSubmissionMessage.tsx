@@ -19,7 +19,7 @@ const SearchSubmissionMessage = ({
   useEffect(() => {
     const timer = setTimeout(() => {
       setDisplaySearchMessage(false);
-    }, 30000);
+    }, 3000);
 
     return () => clearTimeout(timer); // This will clear the timer if the component unmounts before the 3 seconds are up
   }, []);
@@ -27,7 +27,7 @@ const SearchSubmissionMessage = ({
   return (
     <>
       {displaySearchMessage ? (
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-4 mt-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="80"
@@ -91,13 +91,17 @@ const SearchSubmissionMessage = ({
                 your details and we will get your ranking sorted as soon as
                 possible.
               </p>
+              <p>{message}</p>
             </div>
           )}
           {status === 'error' && (
             <div
               className={`w-full flex flex-col gap-1.5 items-start ${forceClass}`}
             >
-              {/* Rest of your code */}
+              <h3 className="text-red-500">
+                Sorry an error occured please try again
+              </h3>
+              <p>{message}</p>
             </div>
           )}
         </>
