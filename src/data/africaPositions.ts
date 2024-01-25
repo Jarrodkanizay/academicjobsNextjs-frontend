@@ -77,7 +77,7 @@ Find all the best student jobs here…`,
     content: `The most recent graduate opportunities from the top colleges in the Africa are available on our website. Whether you wish to work in the United States or overseas, our university partners provide a wide choice of fascinating graduate jobs that are ideal for you. Graduate positions in academic institutions and research centres are flexible, temporary positions with a range of responsibilities. Graduates in these professions can improve their employability skills, make money, network socially and intellectually, and obtain significant job experience.`,
   },
   {
-    Title: `Academic PhD Jobs Africa`,
+    Title: `academic phd jobs africa`,
     Name: `phd`,
     Description: `A wide range of PhD job postings from Africa and foreign universities are available. Apply today to get important skills and job experience!`,
     Keyword: `Academic PhD Jobs Africa`,
