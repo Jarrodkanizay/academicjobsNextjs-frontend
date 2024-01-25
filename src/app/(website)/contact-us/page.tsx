@@ -20,7 +20,7 @@ export default function myPage() {
           <h1 className="mt-8">Let’s Get Together!</h1>
           <h2 className="mt-4">
             Tell us what you need, and we will be straight back to you. At
-            Academic JobsWe we make it easy for you!
+            Academic Jobs we make it easy for you!
           </h2>
           <h4 className="mt-4 mb-16">
             <span className="font-bold">Fun Fact: </span> AcademicJobs.com is

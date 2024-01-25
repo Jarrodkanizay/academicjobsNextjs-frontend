@@ -82,16 +82,19 @@ const SearchSubmissionMessage = ({
             <div
               className={`w-full flex flex-col gap-1.5 items-start ${forceClass}`}
             >
-              <h3>Sorry but we couldn't find your details…</h3>
+              <h3>Oh Snap! It looks like you don't have a ranking.</h3>
               <p>
-                Please{' '}
+                Let's get you ranked now,{' '}
                 <Link href="/academic-talent-pool" className="link link-aj">
                   register
                 </Link>{' '}
-                your details and we will get your ranking sorted as soon as
-                possible.
+                your details and we will get you sorted and improve your chances
+                when applying for jobs.
               </p>
-              <p>{message}</p>
+              {/* <p>{message}</p> */}
+              <Link href="/academic-talent-pool" className="btn btn-aj">
+                Get Ranked
+              </Link>
             </div>
           )}
           {status === 'error' && (
@@ -99,7 +102,7 @@ const SearchSubmissionMessage = ({
               className={`w-full flex flex-col gap-1.5 items-start ${forceClass}`}
             >
               <h3 className="text-red-500">
-                Sorry an error occured please try again
+                Sorry an error occurred please try again?
               </h3>
               <p>{message}</p>
             </div>

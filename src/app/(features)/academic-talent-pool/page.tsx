@@ -60,10 +60,10 @@ export default function Page() {
             </li>
           </ul>
           <Image
-            src="/talent-pool/talent-pool-juggler.jpg"
+            src="/talent-pool/talent-pool-professor.jpg"
             width={500}
             height={500}
-            alt="Talent Pool Juggler"
+            alt="Talented Professor - Bill Nye the Science Guy"
             className="rounded-xl mx-auto mt-8"
           />
         </div>
