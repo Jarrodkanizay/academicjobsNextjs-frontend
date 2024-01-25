@@ -17,9 +17,9 @@ export async function generateMetadata({ params }) {
   };
 }
 async function getEmployer(id) {
-  const response = await fetch(`https://api2.sciencejobs.com.au/api/employer/${id}`);
+  const response = await fetch(`https://api2.sciencejobs.com.au/api/employer/${id}`, { next: { revalidate: 10 }, });
   const res = await response.json();
-  // console.log(res);
+  console.log("===========getEmployer===============",res);
   return res;
 }
 const Employer = async ({ params }) => {
