@@ -427,7 +427,7 @@ export default function myPage() {
                     <Link href="">Oregon State University</Link>
                   </li>
                   <li>
-                    <Link href="">Corvallis, USA</Link>
+                    <Link href="">Corvallis, OR, USA</Link>
                   </li>
                   <li>
                     <Link href="">Apr 16, 2024</Link>
@@ -496,26 +496,29 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/lecturer-chemical-and-environmental-engineering/80802"
+                    href="/jobs/associate-vice-provost-for-teaching-and-learning/82571"
                     className="text-blue-500 font-bold"
                   >
-                    Lecturer, Chemical and Environmental Engineering
+                    Associate Vice Provost for Teaching and Learning
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Yale University</Link>
+                    <Link href="">Oregon State University</Link>
                   </li>
                   <li>
-                    <Link href="">New Haven, CT, USA</Link>
+                    <Link href="">Corvallis, OR, USA</Link>
                   </li>
                   <li>
-                    <Link href="">May 31, 2024</Link>
+                    <Link href=""> Feb 20, 2024</Link>
                   </li>
+                  <Link href="https://apptrkr.com/get_redirect.php?id=4931492" className="btn btn-sm btn-aj mt-4"> 
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
-            <div className="column">
+             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
@@ -594,21 +597,21 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/provost/79513"
+                    href="/jobs/lecturer-chemical-and-environmental-engineering/80802"
                     className="text-blue-500 font-bold"
                   >
-                    Provost
+                    Lecturer, Chemical and Environmental Engineering
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">University of North Carolina Asheville</Link>
+                    <Link href="">Yale University</Link>
                   </li>
                   <li>
-                    <Link href="">Asheville, NC, USA</Link>
+                    <Link href="">New Haven, CT, USA</Link>
                   </li>
                   <li>
-                    <Link href=""> Feb 18, 2024</Link>
+                    <Link href="">May 31, 2024</Link>
                   </li>
                 </ul>
               </ul>
