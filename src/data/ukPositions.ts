@@ -45,7 +45,7 @@ export const regionData = [
     Find all the best jobs here…`,
   },
   {
-    Name: `Student`,
+    Name: `student`,
     Title: `Student Jobs in the United Kingdom`,
     Description: `Searching for a flexible, fulfilling employment on campus? Examine hundreds of student positions offered by your institution in a range of areas and disciplines. Apply now to get useful job experience and competencies with Student Jobs on Campus Australia.`,
     Keyword: `Student Jobs on Campus Australia, Student Jobs at University Australia`,

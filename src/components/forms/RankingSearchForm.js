@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form';
 import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import SearchSubmissionMessage from './SearchSubmissionMessage';
+// import { industryTypes } from '@/data/IndustryTypes';
 
 const ContactUsForm = ({ maxWidth }) => {
   const {
@@ -158,6 +159,24 @@ const ContactUsForm = ({ maxWidth }) => {
           placeholder="Current Employer"
           required={false}
         />
+        {/* About You */}
+        {/* <select
+          tabIndex={5}
+          {...register('16_Country')}
+          ID="about_you-select"
+          field="05_About_You"
+          className="select select-bordered w-full col-span-2 focus:outline-none focus:border-orange-500"
+          required={true}
+        >
+          <option value="" disabled selected>
+            Tell us about you...
+          </option>
+          {industryTypes.map((industryType, index) => (
+            <option key={index} value={industryType}>
+              {industryType}
+            </option>
+          ))}
+        </select> */}
       </div>
       {/* Academic Details Section */}
       <h2 className="underline-full mt-10 mb-6">
@@ -167,7 +186,7 @@ const ContactUsForm = ({ maxWidth }) => {
         <InputBlock2
           register={register}
           errors={errors}
-          tabIndex={5}
+          tabIndex={6}
           type="text"
           ID="institution_01"
           field="institution_01"
@@ -179,7 +198,7 @@ const ContactUsForm = ({ maxWidth }) => {
         <InputBlock2
           register={register}
           errors={errors}
-          tabIndex={6}
+          tabIndex={7}
           type="text"
           ID="institution_02"
           field="institution_02"
@@ -191,7 +210,7 @@ const ContactUsForm = ({ maxWidth }) => {
         <InputBlock2
           register={register}
           errors={errors}
-          tabIndex={7}
+          tabIndex={8}
           type="text"
           ID="institution_03"
           field="institution_03"
