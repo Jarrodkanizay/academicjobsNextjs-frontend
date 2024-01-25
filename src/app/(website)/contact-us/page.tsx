@@ -35,18 +35,24 @@ export default function myPage() {
           {/* Contact Numbers */}
           <div className="flex flex-col w-full bg-slate-100 py-4 px-8 rounded-2xl lg:min-w-[450px] lg:max-w-[500px] mt-8 lg:mt-0">
             <h2 className="underline-full mb-6">Global Office Numbers</h2>
-            <ul className="contact-number">
-              <li>
+            <ul className="contact-number mb-4">
+              {/* <li>
                 <a className="footer-nav__link" href="tel:+852-3730021">
                   <strong>Asia: </strong>+852-3730021 (Hong Kong)
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a className="footer-nav__link" href="tel:+61-452070156">
                   <strong>Australia: </strong> +61-452070156 (Melbourne)
                 </a>
               </li>
               <li>
+                <a className="footer-nav__link" href="tel:+61-452070156">
+                  <strong>New Zealand: </strong>+61-452070156 (Wellington)
+                </a>
+              </li>
+
+              {/* <li>
                 <a className="footer-nav__link" href="tel:778 819 1866">
                   <strong>Canada: </strong>778 819 1866 (Vancouver)
                 </a>
@@ -62,11 +68,6 @@ export default function myPage() {
                 </a>
               </li>
               <li>
-                <a className="footer-nav__link" href="tel:+61-452070156">
-                  <strong>New Zealand: </strong>+61-452070156 (Wellington)
-                </a>
-              </li>
-              <li>
                 <a className="footer-nav__link" href="tel:+91-2250972736">
                   <strong>India: </strong>+91-2250972736 (Mumbai)
                 </a>
@@ -75,7 +76,7 @@ export default function myPage() {
                 <a className="footer-nav__link" href="tel:+44-2045876329">
                   <strong>United Kingdom: </strong>+44-2045876329 (London)
                 </a>
-              </li>
+              </li> */}
             </ul>
             <Image
               src="/contact-us/global-office-numbers.jpg"
