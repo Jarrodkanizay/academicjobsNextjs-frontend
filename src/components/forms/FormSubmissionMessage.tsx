@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SubscribeForm from './SubscribeForm';
 
 type FormSubmissionMessageProps = {
   status?: string;
@@ -28,7 +29,8 @@ const FormSubmissionMessage = ({
             Your submission is really important to us and we will action your
             request as quickly as possible.
           </p>
-          <CTAs />
+          {/* <CTAs /> */}
+          <SubscribeForm />
         </div>
       )}
       {status === 'error' && (

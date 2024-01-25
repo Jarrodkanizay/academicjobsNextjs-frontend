@@ -301,7 +301,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           {...register('16_Country')}
           id="country-select"
           field="16_Country"
-          className="select select-bordered w-full"
+          className="select select-bordered w-full focus:outline-none focus:border-orange-500"
           required={true}
         >
           <option value="" disabled selected>
@@ -320,7 +320,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           tabIndex={17}
           id="profile-input"
           field="17_Profile"
-          className="w-full textarea textarea-bordered"
+          className="w-full textarea textarea-bordered focus:outline-none focus:border-orange-500"
           placeholder="OPTIONAL - Please write a brief profile noting your key skills, experience, and achievements."
         />
       </div>
