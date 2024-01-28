@@ -1,6 +1,6 @@
 import JobPostForm from '@/components/JobPostForm';
 
 const PostJobPage = () => {
-  return <JobPostForm partner="Australia" />;
+  return <JobPostForm region="Australia" />;
 };
 export default PostJobPage;

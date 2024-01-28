@@ -16,7 +16,7 @@ const stripeLink = {
   JobElephant: 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
   USA: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
 };
-const JobPostForm = ({ partner }) => {
+const JobPostForm = ({ partner, region }) => {
   const [standardMode, setStandardMode] = useState(true);
   const [newContact, setNewContact] = useState(false);
   const [selectedContact, setSelectedContact] = useState(null);
@@ -90,7 +90,7 @@ const JobPostForm = ({ partner }) => {
   }
   if (mutation.isSuccess) {
     //alert(partner)
-    router.push(stripeLink[partner]);
+    router.push(stripeLink[region]);
   } else {
     content = (
       <main className=" content-grid">

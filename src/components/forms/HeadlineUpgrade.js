@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 
-const PostJobForm = ({ partner }) => {
+const PostJobForm = ({ partner, jobTitle, employer, jobId, region }) => {
   const [standardMode, setStandardMode] = useState(true);
   const [newContact, setNewContact] = useState(false);
   const [selectedContact, setSelectedContact] = useState(null);
@@ -226,7 +226,7 @@ const PostJobForm = ({ partner }) => {
                   type="text"
                   field="03_Institution_Name"
                   forceClass=" py-3 text-black"
-                  placeholder=""
+                  placeholder="Institution Name (employer)"
                 />
                 <InputBlock
                   register={register}
@@ -235,7 +235,8 @@ const PostJobForm = ({ partner }) => {
                   type="text"
                   field="04_Job_Link_URL"
                   forceClass=" py-3 text-black"
-                  placeholder=""
+                  placeholder="Job Link URL"
+                  disabled={true}
                 />
                 <label className="form-control">
                   <span className="label-text text-xs pb-1">

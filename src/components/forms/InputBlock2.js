@@ -14,11 +14,13 @@ const InputBlock2 = ({
   required,
   colSpan,
   hidden,
+  disabled,
 }) => {
   if (required === undefined) required = false;
   if (hidden === undefined) hidden = false;
   if (colSpan === undefined) colSpan = 1;
   if (name === undefined) name = field;
+  if (disabled === undefined) disabled = false;
   return (
     <div
       className={`relative w-full flex flex-col gap-1 items-start ${forceClass} col-span-2 ${
@@ -37,6 +39,7 @@ const InputBlock2 = ({
         placeholder={placeholder}
         required={required ? true : false}
         hidden={hidden ? true : false}
+        disabled={disabled ? true : false}
       />
       {errors[field] && <span className="error">{errors[field].message}</span>}
       {required ? <i className="required">*</i> : null}
