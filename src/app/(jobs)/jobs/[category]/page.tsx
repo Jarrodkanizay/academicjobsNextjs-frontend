@@ -27,7 +27,7 @@ export default function myPage() {
               */}
 
              <JobSearchBox/>
-              <SearchResults q={{ q: "student" || 0 }} />
+              <SearchResults q={{ q: "u" || 0 }} />
       </main>
    
   );

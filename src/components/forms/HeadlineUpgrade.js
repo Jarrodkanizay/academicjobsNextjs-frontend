@@ -85,10 +85,17 @@ const PostJobForm = ({ partner, jobTitle, employer, jobId, region }) => {
   } else {
     content = (
       <main className=" content-grid">
+        <p className="text-xl font-bold text-gray-500">
+          Great, let’s get this job fully seen by our amazing audience.
+          <br />
+          This is currently a ‘Headline Job’ only, but in 60 seconds, it will be
+          a ‘Priority Listing’.
+        </p>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <h2 className={`text-4xl font-bold mb-8 mt-8 underline-full`}>
-              {partnerName} Quick Post
+              {/* {partnerName} Quick Post */}
+              Activate my ‘Quick Post’ now…
             </h2>
             <form className=" " onSubmit={handleSubmit(onSubmit)}>
               <div className="flex flex-col gap-4 justify-start">
@@ -170,7 +177,7 @@ const PostJobForm = ({ partner, jobTitle, employer, jobId, region }) => {
                     <InputBlock
                       register={register}
                       errors={errors}
-                      label="Organization Name"
+                      label="Organization Posting this Job  (i.e. Agency or University)"
                       type="text"
                       field="01_Organisation_Name"
                       forceClass=" py-3 text-black"
@@ -219,7 +226,7 @@ const PostJobForm = ({ partner, jobTitle, employer, jobId, region }) => {
                     />
                   </div>
                 </div>
-                <InputBlock
+                {/* <InputBlock
                   register={register}
                   errors={errors}
                   label={institutionName}
@@ -235,9 +242,8 @@ const PostJobForm = ({ partner, jobTitle, employer, jobId, region }) => {
                   type="text"
                   field="04_Job_Link_URL"
                   forceClass=" py-3 text-black"
-                  placeholder="Job Link URL"
-                  disabled={true}
-                />
+                  placeholder=""
+                /> */}
                 <label className="form-control">
                   <span className="label-text text-xs pb-1">
                     Notes or Special Instructions
@@ -272,34 +278,31 @@ const PostJobForm = ({ partner, jobTitle, employer, jobId, region }) => {
           </div>
           <div>
             <h3 className={`${textColor} mb-4`}>
-              Welcome to our new {partnerName} Post Job form. <br />
-              Taking you under two minutes per job, saving you
-              6 minutes each time!
+              Let's do this... <br /> We have the full job ready to go, and this
+              form takes ONLY 60 SECONDS!!!
             </h3>
-            <Image
+            {/* <Image
               width={800}
               height={800}
               src={partnerImage}
               className=""
               alt="AcademicJobs and JobElephant Partnership"
-            />
-            <div className="prose">
+            /> */}
+            <div className="prose text-gray-500">
               <p className="mt-4">
-                The average time to Post a Job and fill out a form on the major
-                Job Seeking platforms is 9 min or more. With AcademicJobs we
-                make your life easier and save you time by…
+                Fun Fact: The average time to Post a Job and fill out a form on
+                the major Job Seeking platforms is 9 min or more. At
+                AcademicJobs.com, we make your life easier and save you time …
               </p>
               <ul>
                 <li>
                   Reducing Job Posting times to seconds rather than minutes
                 </li>
                 <li>
-                  We do the heavy lifting for you (just provide a link to the
-                  post)
+                  We do the heavy lifting for you (having your job already
+                  loaded)
                 </li>
-                <li>
-                  Our Rich Text editor is coming soon (just copy and paste)
-                </li>
+                <li>AJ QUICK POSTS = ^ VIEWS = + APLICANTS</li>
               </ul>
             </div>
           </div>
