@@ -12,7 +12,7 @@ import { CloudCog } from 'lucide-react';
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
   if (!job) return { title: 'not found' };
-  const { title, company_name, location } = job?.data
+  const { title, company_name, location } = job?.data;
   return {
     title: `${title} | ${company_name}`,
     description: `Explore our ${title} job opportunities available at ${company_name}! Apply to become a ${title} today. Apply for an academic job today!`,
@@ -27,7 +27,7 @@ async function getJob(id) {
 }
 const JobDetailPage = async ({ params }) => {
   const job = await getJob(params.id);
-  console.log("job", job)
+  console.log('job', job);
   if (!job) notFound();
   const {
     employer_id,
@@ -41,9 +41,8 @@ const JobDetailPage = async ({ params }) => {
     description,
     how_to_apply,
     featured,
-    clientType
+    clientType,
   } = job.data;
-
 
   return (
     <div className="bg-white relative content-grid mx-auto  ">
@@ -126,37 +125,41 @@ const JobDetailPage = async ({ params }) => {
           data-id={jobId}
         >
           {
-            <div className='w-full'>            
-              <div className={`${clientType !== "HeadlineOnly" ? 'block' : 'hidden'}`} dangerouslySetInnerHTML={{ __html: description }} />
-              <div className={`${clientType !== "HeadlineOnly" ? 'hidden' : 'block'} w-full h-full flex flex-col gap-2 justify-center`} >
-                
-               
-              <a
-                     href='/post-a-job'
-                     className="btn  btn-sm  mx-auto my-2"
-                   >
-                    Email Job Post
-                   </a>
+            <div className="w-full">
+              <div
+                className={`${
+                  clientType !== 'HeadlineOnly' ? 'block' : 'hidden'
+                }`}
+                dangerouslySetInnerHTML={{ __html: description }}
+              />
+              <div
+                className={`${
+                  clientType !== 'HeadlineOnly' ? 'hidden' : 'block'
+                } w-full h-full flex flex-col gap-2 justify-center`}
+              >
+                <a href="/post-a-job" className="btn  btn-sm  mx-auto my-2">
+                  Email Job Post
+                </a>
 
                 <details>
-               
-                <div className="grid w-full items-center gap-1.5 mt-4">
-               
-
+                  <div className="grid w-full items-center gap-1.5 mt-4"></div>
+                  <summary class="  px-4 py-2 rounded-md text-center">
+                    Recruiter Information Only
+                    <HeadlineLinks />
+                  </summary>
+                  <div class="px-4 py-2">
+                    <HeadlineUpgrade
+                      clientType={clientType}
+                      jobId={jobId}
+                      employer={company_name}
+                      jobTitle={title}
+                    />
                   </div>
-  <summary class="  px-4 py-2 rounded-md text-center"> Recruiter Information Only
-  <HeadlineLinks/>
-  </summary>
-  <div class="px-4 py-2">
-  <HeadlineUpgrade/>
-  </div>
-</details>
-
+                </details>
               </div>
             </div>
-            
           }
-          
+
           {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
         </article>
         <div className="max-h-screen overflow-y-scroll w-96 hidden md:block">
@@ -177,5 +180,5 @@ const JobDetailPage = async ({ params }) => {
 };
 export default JobDetailPage;
 
-  //  <p className='text-xl font-bold'>Headline only listing, to show full job content, click button below to:</p>
-  //               <Link href={`\headline_upgrade\${company_name}`}>Upgrade to Priority Listing</Link>
+//  <p className='text-xl font-bold'>Headline only listing, to show full job content, click button below to:</p>
+//               <Link href={`\headline_upgrade\${company_name}`}>Upgrade to Priority Listing</Link>
