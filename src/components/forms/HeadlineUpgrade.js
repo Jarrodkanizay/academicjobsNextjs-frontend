@@ -74,167 +74,161 @@ const PostJobForm = ({
           This is currently a ‘Headline Job’ only, but in 60 seconds, it will be
           a ‘Priority Listing’.
         </p>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
-          <div>
-            <h2 className={`text-4xl font-bold mb-8 mt-8 underline-full`}>
-              Activate my ‘Quick Post’ now…
-            </h2>
-            <form className=" " onSubmit={handleSubmit(onSubmit)}>
-              <div className="flex flex-col gap-4 justify-start">
-                <div className={`p-4 border border-sky-200 bg-sky-50`}>
-                  <div className="grid w-full items-center gap-1.5 mb-8">
-                    <InputBlock
-                      register={register}
-                      errors={errors}
-                      label="Job ID"
-                      type="text"
-                      field="00_Job_ID"
-                      forceClass="text-black"
-                      placeholder="Job ID"
-                      hidden={true}
-                    />
-                    <hr />
-                    <p style={{ margin: '0', fontWeight: 'bold' }}>{jobId}</p>
-                  </div>
-                  <div className="grid w-full items-center gap-1.5 mb-8">
-                    <InputBlock
-                      register={register}
-                      errors={errors}
-                      label="Organization Posting this Job (i.e. Agency or University)"
-                      type="text"
-                      field="01_Organisation_Name"
-                      forceClass="text-black"
-                      placeholder="Organization Name"
-                      autoComplete="organization"
-                      hidden={true}
-                    />
-                    <hr />
-                    <p style={{ margin: '0', fontWeight: 'bold' }}>
-                      {employer}
-                    </p>
-                  </div>
-                  <div className="grid w-full items-center gap-1.5 mt-4">
-                    <InputBlock
-                      register={register}
-                      errors={errors}
-                      label="Job Post Title"
-                      type="text"
-                      field="02_Job_Title"
-                      forceClass="text-black"
-                      placeholder="Job Title"
-                      hidden={true}
-                    />
-                    <hr />
-                    <p style={{ margin: '0', fontWeight: 'bold' }}>
-                      {jobTitle}
-                    </p>
-                  </div>
-                </div>
-                <div className="grid w-full items-center gap-1.5">
+        {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16"> */}
+        <div>
+          <h2 className={`text-4xl font-bold mb-8 mt-8 underline-full`}>
+            Activate my ‘Quick Post’ now…
+          </h2>
+          <form className=" " onSubmit={handleSubmit(onSubmit)}>
+            <div className="flex flex-col gap-4 justify-start">
+              <div className={`p-4 border border-sky-200 bg-sky-50`}>
+                <div className="grid w-full items-center gap-1.5 mb-8">
                   <InputBlock
                     register={register}
                     errors={errors}
-                    label="First Name"
+                    label="Job ID"
                     type="text"
-                    field="04_First_Name"
-                    forceClass=" py-3 text-black"
-                    placeholder="First Name"
-                    autoComplete="given-name"
+                    field="00_Job_ID"
+                    forceClass="text-black"
+                    placeholder="Job ID"
+                    hidden={true}
                   />
+                  <hr />
+                  <p style={{ margin: '0', fontWeight: 'bold' }}>{jobId}</p>
                 </div>
-                <div className="grid w-full items-center gap-1.5">
+                <div className="grid w-full items-center gap-1.5 mb-8">
                   <InputBlock
                     register={register}
                     errors={errors}
-                    label="Last Name"
+                    label="Organization Posting this Job (i.e. Agency or University)"
                     type="text"
-                    field="05_Last_Name"
-                    forceClass=" py-3 text-black"
-                    placeholder="Last Name"
-                    autoComplete="family-name"
+                    field="01_Organisation_Name"
+                    forceClass="text-black"
+                    placeholder="Organization Name"
+                    autoComplete="organization"
+                    hidden={true}
                   />
+                  <hr />
+                  <p style={{ margin: '0', fontWeight: 'bold' }}>{employer}</p>
                 </div>
-                <div className="grid w-full items-center gap-1.5">
+                <div className="grid w-full items-center gap-1.5 mt-4">
                   <InputBlock
                     register={register}
                     errors={errors}
-                    label="Position / Role"
+                    label="Job Post Title"
                     type="text"
-                    field="06_Position"
-                    forceClass=" py-3 text-black"
-                    placeholder="Position / Role"
-                    autoComplete="family-name"
+                    field="02_Job_Title"
+                    forceClass="text-black"
+                    placeholder="Job Title"
+                    hidden={true}
                   />
+                  <hr />
+                  <p style={{ margin: '0', fontWeight: 'bold' }}>{jobTitle}</p>
                 </div>
-                <div className="grid w-full items-center gap-1.5">
-                  <InputBlock
-                    register={register}
-                    errors={errors}
-                    label="Email"
-                    type="email"
-                    field="07_Email"
-                    forceClass=" py-3 text-black"
-                    placeholder="email"
-                    autoComplete="email"
-                  />
-                </div>
-                <div className="grid w-full items-center gap-1.5">
-                  <InputBlock
-                    register={register}
-                    errors={errors}
-                    label="Phone"
-                    type="tel"
-                    field="08_Phone"
-                    forceClass=" py-3 text-black"
-                    placeholder="Phone"
-                    autoComplete="phone"
-                  />
-                </div>
-                <label className="form-control mt-6">
-                  <span className="label-text text-xs pb-1">
-                    Notes or Special Instructions
-                  </span>
-                  <textarea
-                    className="textarea textarea-bordered h-32 focus:outline-none focus:border-orange-500"
-                    id="notes"
-                    placeholder="Type your message here."
-                    {...register('03_Notes')}
-                  ></textarea>
-                </label>
-                {/* <QuillEditor
+              </div>
+              <div className="grid w-full items-center gap-1.5">
+                <InputBlock
+                  register={register}
+                  errors={errors}
+                  label="First Name"
+                  type="text"
+                  field="04_First_Name"
+                  forceClass=" py-3 text-black"
+                  placeholder="First Name"
+                  autoComplete="given-name"
+                />
+              </div>
+              <div className="grid w-full items-center gap-1.5">
+                <InputBlock
+                  register={register}
+                  errors={errors}
+                  label="Last Name"
+                  type="text"
+                  field="05_Last_Name"
+                  forceClass=" py-3 text-black"
+                  placeholder="Last Name"
+                  autoComplete="family-name"
+                />
+              </div>
+              <div className="grid w-full items-center gap-1.5">
+                <InputBlock
+                  register={register}
+                  errors={errors}
+                  label="Position / Role"
+                  type="text"
+                  field="06_Position"
+                  forceClass=" py-3 text-black"
+                  placeholder="Position / Role"
+                  autoComplete="family-name"
+                />
+              </div>
+              <div className="grid w-full items-center gap-1.5">
+                <InputBlock
+                  register={register}
+                  errors={errors}
+                  label="Email"
+                  type="email"
+                  field="07_Email"
+                  forceClass=" py-3 text-black"
+                  placeholder="email"
+                  autoComplete="email"
+                />
+              </div>
+              <div className="grid w-full items-center gap-1.5">
+                <InputBlock
+                  register={register}
+                  errors={errors}
+                  label="Phone"
+                  type="tel"
+                  field="08_Phone"
+                  forceClass=" py-3 text-black"
+                  placeholder="Phone"
+                  autoComplete="phone"
+                />
+              </div>
+
+              <label className="form-control mt-6">
+                <span className="label-text text-xs pb-1">
+                  Notes or Special Instructions
+                </span>
+                <textarea
+                  className="textarea textarea-bordered h-32 focus:outline-none focus:border-orange-500"
+                  id="notes"
+                  placeholder="Type your message here."
+                  {...register('03_Notes')}
+                ></textarea>
+              </label>
+              {/* <QuillEditor
             value={content}
             onChange={(value) => {
               setValue("job_description", value)
             }}
             className="w-full h-[70%] mt-10 bg-white" /> */}
-                <button className="btn btn-accent mt-4">Submit & PayNow</button>
-              </div>
-            </form>
-          </div>
-          <div>
-            <h3 className={`text-aj mb-4`}>
-              Let's do this... <br /> We have the full job ready to go, and this
-              form takes ONLY 60 SECONDS!!!
-            </h3>
-            <div className="prose text-gray-500">
-              <p className="mt-4">
-                Fun Fact: The average time to Post a Job and fill out a form on
-                the major Job Seeking platforms is 9 min or more. At
-                AcademicJobs.com, we make your life easier and save you time …
-              </p>
-              <ul>
-                <li>
-                  Reducing Job Posting times to seconds rather than minutes
-                </li>
-                <li>
-                  We do the heavy lifting for you (having your job already
-                  loaded)
-                </li>
-                <li>AJ QUICK POSTS = ^ VIEWS = + APPLICANTS</li>
-              </ul>
+              <button className="btn btn-accent mt-4">Submit & PayNow</button>
             </div>
+          </form>
+        </div>
+        <div>
+          <h3 className={`text-aj mb-4 mt-16`}>
+            Let's do this... <br /> We have the full job ready to go, and this
+            form takes ONLY 60 SECONDS!!!
+          </h3>
+          <div className="prose text-gray-500">
+            <p className="mt-4">
+              Fun Fact: The average time to Post a Job and fill out a form on
+              the major Job Seeking platforms is 9 min or more. At
+              AcademicJobs.com, we make your life easier and save you time …
+            </p>
+            <ul>
+              <li>Reducing Job Posting times to seconds rather than minutes</li>
+              <li>
+                We do the heavy lifting for you (having your job already loaded)
+              </li>
+              <li>AJ QUICK POSTS = ^ VIEWS = + APPLICANTS</li>
+            </ul>
           </div>
         </div>
+        {/* </div> */}
       </>
     );
   }
