@@ -135,6 +135,67 @@ const PostJobForm = ({
                     </p>
                   </div>
                 </div>
+                <div className="grid w-full items-center gap-1.5">
+                  <InputBlock
+                    register={register}
+                    errors={errors}
+                    label="First Name"
+                    type="text"
+                    field="04_First_Name"
+                    forceClass=" py-3 text-black"
+                    placeholder="First Name"
+                    autoComplete="given-name"
+                  />
+                </div>
+                <div className="grid w-full items-center gap-1.5">
+                  <InputBlock
+                    register={register}
+                    errors={errors}
+                    label="Last Name"
+                    type="text"
+                    field="05_Last_Name"
+                    forceClass=" py-3 text-black"
+                    placeholder="Last Name"
+                    autoComplete="family-name"
+                  />
+                </div>
+                <div className="grid w-full items-center gap-1.5">
+                  <InputBlock
+                    register={register}
+                    errors={errors}
+                    label="Position / Role"
+                    type="text"
+                    field="06_Position"
+                    forceClass=" py-3 text-black"
+                    placeholder="Position / Role"
+                    autoComplete="family-name"
+                  />
+                </div>
+                <div className="grid w-full items-center gap-1.5">
+                  <InputBlock
+                    register={register}
+                    errors={errors}
+                    label="Email"
+                    type="email"
+                    field="07_Email"
+                    forceClass=" py-3 text-black"
+                    placeholder="email"
+                    autoComplete="email"
+                  />
+                </div>
+                <div className="grid w-full items-center gap-1.5">
+                  <InputBlock
+                    register={register}
+                    errors={errors}
+                    label="Phone"
+                    type="tel"
+                    field="08_Phone"
+                    forceClass=" py-3 text-black"
+                    placeholder="Phone"
+                    autoComplete="phone"
+                  />
+                </div>
+
                 <label className="form-control mt-6">
                   <span className="label-text text-xs pb-1">
                     Notes or Special Instructions
