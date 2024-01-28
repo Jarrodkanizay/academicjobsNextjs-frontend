@@ -8,7 +8,6 @@ import { useRouter } from 'next/navigation';
 import { jobElephantContacts } from '@/data/jobElephantContacts';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
-
 const PostJobForm = ({
   clientType,
   partner,
@@ -18,10 +17,8 @@ const PostJobForm = ({
   region,
 }) => {
   let lockFields = false;
-
   let content;
   const router = useRouter();
-
   const {
     register,
     handleSubmit,
@@ -36,20 +33,18 @@ const PostJobForm = ({
       // Add other form fields here...
     },
   });
-
   const mutation = useMutation({
     mutationFn: async (data) => {
       return await BaseApi.post('/sendemail', data);
     },
   });
-
   const onSubmit = async (data) => {
     // e.preventDefault();
     // alert()
     console.log('data', data);
     mutation.mutate({
       ...data,
-      '00_formSource': 'Message from: JobElephant Post Form',
+      '00_formSource': 'Message from: Headline Update Form',
     });
   };
   if (mutation.isLoading) {
@@ -69,7 +64,7 @@ const PostJobForm = ({
     return <div>An error occurred: {mutation.error.message}</div>;
   }
   if (mutation.isSuccess) {
-    router.push('https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce');
+    router.push('https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot');
   } else {
     content = (
       <>
@@ -195,7 +190,6 @@ const PostJobForm = ({
                     autoComplete="phone"
                   />
                 </div>
-
                 <label className="form-control mt-6">
                   <span className="label-text text-xs pb-1">
                     Notes or Special Instructions
