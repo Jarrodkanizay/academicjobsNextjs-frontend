@@ -158,9 +158,9 @@ const JobDetailPage = async ({ params }) => {
                       buttonText="Please Email Full Job Post"
                       thankYouMessage="Done! You will receive the full job post shortly."
                       formType="job-request"
-                      jobTitle={title}
-                      employer={company_name}
                       jobId={jobId}
+                      employer={company_name}
+                      jobTitle={title}
                     />
                   </div>
                 </div>
