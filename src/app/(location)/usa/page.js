@@ -27,6 +27,9 @@ export default function Page() {
         />
       </div>
       <JobSearchBox l="USA" />
+     
+      <h3 className="text-center">We Are USA's University Job Website</h3>
+     
       <div className=" mt-[3rem] " >
         <ul className=" flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <li><Link href="/boston/" >	Boston </Link></li>
@@ -72,7 +75,7 @@ export default function Page() {
         <div id="section" className=" full-width py-4 full-width mb-[175px] bg-slate-200">
           <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
             <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
-              <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS USA:</span> < br /> USA's University <br /> Job Website
+              <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS USA:</span> < br /> 
             </h1>
             <div>
               <p className="px-7 mb-4 mt-1">

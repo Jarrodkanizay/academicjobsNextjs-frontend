@@ -34,7 +34,7 @@ export default function Page() {
       <JobSearchBox l="Australia" />
       </div>
 
-      <h3 className="text-center ">Australia's University Job Website</h3>
+      <h3 className="text-center ">We Are Australia's University Job Website</h3>
 
       <div className=" mt-[4rem] ">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">

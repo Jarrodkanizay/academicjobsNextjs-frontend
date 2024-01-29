@@ -35,7 +35,7 @@ export default function Page() {
       </div>
       <JobSearchBox l="India"/>
      
-      <h3 className="text-center ">India's University Job Website</h3>
+      <h3 className="text-center ">We Are India's University Job Website</h3>
      
       <div className=" mt-[5rem] ">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-500 ">

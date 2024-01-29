@@ -26,7 +26,7 @@ export default function Page() {
       <JobSearchBox l="Africa"/>
 
      
-      <h3 className="text-center ">Africa's University Job Website</h3>
+      <h3 className="text-center "> We Are Africa's University Job Website</h3>
      
      
       <div className=" mt-[5rem] " >

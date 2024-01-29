@@ -26,7 +26,7 @@ export const metadata = {
         /></div>
       <JobSearchBox l="South America"/>
 
-      <h3 className="text-center ">South America's University Job Website</h3>
+      <h3 className="text-center ">We Are South America's University Job Website</h3>
       
       <div className=" mt-[5rem] " >
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
