@@ -6,6 +6,9 @@ type FormSubmissionMessageProps = {
   firstName?: string;
   message?: string;
   forceClass?: string;
+  jobTitle?: string;
+  employer?: string;
+  jobId?: string;
 };
 
 const FormSubmissionMessage = ({
@@ -13,6 +16,9 @@ const FormSubmissionMessage = ({
   firstName = '',
   message = '',
   forceClass = '',
+  jobTitle,
+  employer,
+  jobId,
 }: FormSubmissionMessageProps) => {
   return (
     <>
@@ -30,7 +36,11 @@ const FormSubmissionMessage = ({
             request as quickly as possible.
           </p>
           {/* <CTAs /> */}
-          <SubscribeForm />
+          <SubscribeForm
+            jobTitle={jobTitle}
+            employer={employer}
+            jobId={jobId}
+          />
         </div>
       )}
       {status === 'error' && (
