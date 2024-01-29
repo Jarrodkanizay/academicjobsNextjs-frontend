@@ -137,7 +137,11 @@ const JobDetailPage = async ({ params }) => {
                 dangerouslySetInnerHTML={{ __html: description }}
               />
 
-              <div className="flex flex-col">
+              <div
+                className={`flex flex-col ${
+                  clientType === 'HeadlineOnly' ? 'block' : 'hidden'
+                }`}
+              >
                 <div className="flex justify-center items-center flex-wrap">
                   <Image
                     src="/academic-jobs-heart.svg"
