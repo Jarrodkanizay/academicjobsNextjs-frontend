@@ -140,8 +140,8 @@ const JobDetailPage = async ({ params }) => {
                   formName="Request Full Job Post"
                   thankYouMessage="Thanks for your interest! You will receive the full job post shortly."
                 />
-                <details className="mt-[200px]">
-                  <summary class="cursor-pointer px-4 py-2 rounded-md text-center">
+                <details className="mt-[220px]">
+                  <summary class="text-[16px] cursor-pointer px-4 py-2 rounded-md text-center">
                     Recruiter Information Only
                     <HeadlineLinks />
                   </summary>
