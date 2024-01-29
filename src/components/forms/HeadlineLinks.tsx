@@ -4,7 +4,7 @@ import Image from 'next/image';
 const HeadlineJobLinks = () => {
   const iconSize = 40;
   return (
-    <div className="grid grid-cols-1 md:grid-cols-5 gap-6 border-t-2 pt-4">
+    <div className="grid grid-cols-1 md:grid-cols-5 gap-6 border-t-2 pt-4 text-black">
       <div className="grid grid-cols-s items-center justify-center gap-1.5 max-w-[50px] mx-auto sm:mx-0">
         <Image
           className="stat-icon"

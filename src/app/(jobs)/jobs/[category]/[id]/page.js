@@ -123,11 +123,11 @@ const JobDetailPage = async ({ params }) => {
       </div>
       <div className="flex p-4 gap-8">
         <article
-          className="wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg h-screen"
+          className="wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg"
           data-id={jobId}
         >
           {
-            <div className="w-full">
+            <div className="">
               <div
                 className={`${
                   clientType !== 'HeadlineOnly' ? 'block' : 'hidden'
@@ -136,12 +136,31 @@ const JobDetailPage = async ({ params }) => {
               />
 
               <div className="flex flex-col">
-                <SubscribeForm
-                  formName="Request Full Job Post"
-                  thankYouMessage="Thanks for your interest! You will receive the full job post shortly."
-                />
-                <details className="mt-[220px]">
-                  <summary class="text-[16px] cursor-pointer px-4 py-2 rounded-md text-center">
+                <div className="flex justify-center items-center">
+                  <Image
+                    src="/acacdemic-jobs-heart.svg"
+                    width={90}
+                    height={90}
+                    alt="Academic Jobs Heart"
+                  />
+                  <Image
+                    src="/i-love-this-job.svg"
+                    width={90}
+                    height={90}
+                    alt="Academic Jobs Heart"
+                    className="mr-20"
+                  />
+                  <div className="grow">
+                    <SubscribeForm
+                      formName="Request Full Job Post"
+                      buttonText="Please Email Full Job Post"
+                      thankYouMessage="Done! You will receive the full job post shortly."
+                      formType="job-request"
+                    />
+                  </div>
+                </div>
+                <details className="mt-[260px]">
+                  <summary class="text-[16px] text-emerald-500 cursor-pointer px-4 py-2 rounded-md text-center">
                     Recruiter Information Only
                     <HeadlineLinks />
                   </summary>
