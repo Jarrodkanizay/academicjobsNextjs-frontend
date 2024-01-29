@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-const Footer = () => {
+const HeadlineJobLinks = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-5 gap-6 border-t-2 pt-4">
       <div className="flex flex-col items-center justify-center gap-1.5 max-w-[50px] mx-auto sm:mx-0">
@@ -37,7 +37,6 @@ const Footer = () => {
         />
         <div className=" font-bold text-xs  pb-1 text-center">1</div>
         <div className=" text-xs  pb-1 text-center ">Shares</div>
-        {/* <div><a className="footer-nav__divnk" href="/">Home</a></div> */}
       </div>
 
       <div className="flex flex-col items-center justify-center gap-1.5 max-w-[50px] mx-auto sm:mx-0">
@@ -57,4 +56,4 @@ const Footer = () => {
     </div>
   );
 };
-export default Footer;
+export default HeadlineJobLinks;

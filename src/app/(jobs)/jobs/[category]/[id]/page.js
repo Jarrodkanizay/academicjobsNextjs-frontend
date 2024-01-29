@@ -9,6 +9,8 @@ import Image from 'next/image';
 import { BsFillShareFill } from 'react-icons/bs';
 import Button from './Button';
 import { CloudCog } from 'lucide-react';
+import SubscribeForm from '@/components/forms/SubscribeForm';
+
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
   if (!job) return { title: 'not found' };
@@ -94,7 +96,7 @@ const JobDetailPage = async ({ params }) => {
           </div>
         </div>
       </div>
-      <div className='flex flex-wrap bg-white  p-4 mb-4 rounded-lg shadow-lg" '>
+      <div className="flex flex-wrap bg-white p-4 mb-4">
         {/* ... (rest of the component remains unchanged) */}
         <div className="flex justify-between md:gap-16 items-center">
           <div className="text-sm text-gray-600">
@@ -119,9 +121,9 @@ const JobDetailPage = async ({ params }) => {
           </div>
         </div>
       </div>
-      <div className="flex p-4 gap-8 ">
+      <div className="flex p-4 gap-8">
         <article
-          className="wrapper media bg-white border-2  p-4 mb-4 rounded-lg shadow-lg max-w-screen-md"
+          className="wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg h-screen"
           data-id={jobId}
         >
           {
@@ -132,18 +134,14 @@ const JobDetailPage = async ({ params }) => {
                 }`}
                 dangerouslySetInnerHTML={{ __html: description }}
               />
-              <div
-                className={`${
-                  clientType !== 'HeadlineOnly' ? 'hidden' : 'block'
-                } w-full h-full flex flex-col gap-2 justify-center`}
-              >
-                <a href="/post-a-job" className="btn  btn-sm  mx-auto my-2">
-                  Email Job Post
-                </a>
 
-                <details>
-                  <div className="grid w-full items-center gap-1.5 mt-4"></div>
-                  <summary class="  px-4 py-2 rounded-md text-center">
+              <div className="flex flex-col">
+                <SubscribeForm
+                  formName="Request Full Job Post"
+                  thankYouMessage="Thanks for your interest! You will receive the full job post shortly."
+                />
+                <details className="mt-[200px]">
+                  <summary class="cursor-pointer px-4 py-2 rounded-md text-center">
                     Recruiter Information Only
                     <HeadlineLinks />
                   </summary>
@@ -157,6 +155,7 @@ const JobDetailPage = async ({ params }) => {
                   </div>
                 </details>
               </div>
+              {/* </div> */}
             </div>
           }
 
