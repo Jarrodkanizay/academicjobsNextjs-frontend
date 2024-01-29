@@ -138,9 +138,9 @@ const JobDetailPage = async ({ params }) => {
               />
 
               <div className="flex flex-col">
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center flex-wrap">
                   <Image
-                    src="/acacdemic-jobs-heart.svg"
+                    src="/academic-jobs-heart.svg"
                     width={90}
                     height={90}
                     alt="Academic Jobs Heart"
@@ -158,6 +158,9 @@ const JobDetailPage = async ({ params }) => {
                       buttonText="Please Email Full Job Post"
                       thankYouMessage="Done! You will receive the full job post shortly."
                       formType="job-request"
+                      jobTitle={title}
+                      employer={company_name}
+                      jobId={jobId}
                     />
                   </div>
                 </div>
@@ -182,12 +185,12 @@ const JobDetailPage = async ({ params }) => {
 
           {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
         </article>
-        <div className="max-h-screen overflow-y-scroll w-96 hidden md:block">
+        <div className="max-h-screen overflow-y-scroll max-w-96 hidden md:block">
           <h3 className=" pl-4 text-lg text-gray-400">
             This might interest you...{' '}
           </h3>
           <JobSearchBox q={title} />
-          <SearchResults q={title} />
+          <SearchResults q={title} filterOff={true} />
         </div>
       </div>
       {new Date(expiration_date) < new Date() && expiration_date && (

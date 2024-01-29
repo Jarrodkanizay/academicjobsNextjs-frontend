@@ -2,6 +2,7 @@
 import React, { watch } from 'react';
 import countries from '@/data/CountryList.json';
 import InputBlock2 from './InputBlock2';
+import InputBlock from './InputBlock';
 import { useForm } from 'react-hook-form';
 import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
@@ -13,6 +14,9 @@ const SubscribeForm = ({
   buttonText = 'Subscribe',
   thankYouMessage = 'Thanks for subscribing to our newsletter!',
   formType = 'subscribe',
+  jobTitle,
+  employer,
+  jobId,
 }) => {
   const {
     register,
@@ -24,6 +28,9 @@ const SubscribeForm = ({
   } = useForm({
     defaultValues: {
       '00_Form_Name': formName,
+      '00_Job_ID': jobId,
+      '01_Organisation_Name': employer,
+      '02_Job_Title': jobTitle,
     },
   });
 
@@ -89,10 +96,41 @@ const SubscribeForm = ({
         {/* {errors[field] && (
           <span className="error">{errors[field].message}</span>
         )} */}
+        <InputBlock
+          register={register}
+          errors={errors}
+          label="Job ID"
+          type="text"
+          field="00_Job_ID"
+          forceClass="text-black"
+          placeholder="Job ID"
+          hidden={true}
+        />
+        <InputBlock
+          register={register}
+          errors={errors}
+          label="Organization Posting this Job (i.e. Agency or University)"
+          type="text"
+          field="01_Organisation_Name"
+          forceClass="text-black"
+          placeholder="Organization Name"
+          autoComplete="organization"
+          hidden={true}
+        />
+        <InputBlock
+          register={register}
+          errors={errors}
+          label="Job Post Title"
+          type="text"
+          field="02_Job_Title"
+          forceClass="text-black"
+          placeholder="Job Title"
+          hidden={true}
+        />
 
         <InputBlock2
           ID="email-input"
-          name="email"
+          name="01_Email"
           register={register}
           errors={errors}
           tabIndex={1}
