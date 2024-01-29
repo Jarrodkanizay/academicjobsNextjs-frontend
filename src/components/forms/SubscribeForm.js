@@ -6,11 +6,13 @@ import { useForm } from 'react-hook-form';
 import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import FormSubmissionMessage from './FormSubmissionMessage';
+import Link from 'next/link';
 
 const SubscribeForm = ({
   formName = 'Subscribe to Newsletter',
   buttonText = 'Subscribe',
   thankYouMessage = 'Thanks for subscribing to our newsletter!',
+  formType = 'subscribe',
 }) => {
   const {
     register,
@@ -63,7 +65,22 @@ const SubscribeForm = ({
     );
   }
   if (mutation.isSuccess) {
-    return <h3 className="">{thankYouMessage}</h3>;
+    return (
+      <>
+        <h3 className="text-emerald-500">{thankYouMessage}</h3>
+        {formType === 'job-request' ? (
+          <>
+            <p>Now, do you know your academic ranking?</p>
+            <Link
+              className="btn btn-secondary mt-8 float-right mr-8"
+              href="/the-academic-rankings/find-my-rank"
+            >
+              Check My Ranking
+            </Link>
+          </>
+        ) : null}
+      </>
+    );
   }
   //   if (maxWidth === undefined) maxWidth = '800';
   return (
@@ -91,7 +108,7 @@ const SubscribeForm = ({
           type="submit"
           className="btn join-item bg-aj text-white rounded-r-full"
         >
-          Email Full Job Post
+          {buttonText}
         </button>
       </div>
       {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> */}
