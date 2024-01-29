@@ -10,7 +10,7 @@ interface SearchResultsProps {
     q?: string;
     l?: string;
   };
-  filterOff: boolean;
+  filterOff?: boolean;
 }
 export default function SearchResults({
   q,
