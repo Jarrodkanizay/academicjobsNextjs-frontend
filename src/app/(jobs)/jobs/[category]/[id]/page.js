@@ -125,7 +125,7 @@ const JobDetailPage = async ({ params }) => {
       </div>
       <div className="flex p-4 gap-8">
         <article
-          className="wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg"
+          className="md:w-2/3 wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg"
           data-id={jobId}
         >
           {
