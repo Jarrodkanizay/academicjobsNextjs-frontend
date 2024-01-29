@@ -2,7 +2,7 @@
 import React, { watch } from 'react';
 import countries from '@/data/CountryList.json';
 import InputBlock2 from './InputBlock2';
-// import InputBlock from './InputBlock';
+import InputBlock from './InputBlock';
 import { useForm } from 'react-hook-form';
 import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
@@ -111,11 +111,10 @@ const SubscribeForm = ({
           required={false}
           inputClass="input-bordered rounded-r-none"
         />
-        <div style={{ display: 'none' }}>
-          <InputBlock2
+        <div>
+          <InputBlock
             register={register}
             errors={errors}
-            name="00_Job_ID"
             label="Job ID"
             type="text"
             field="00_Job_ID"
@@ -123,9 +122,8 @@ const SubscribeForm = ({
             placeholder="Job ID"
             hidden={true}
           />
-          <InputBlock2
+          <InputBlock
             register={register}
-            name="01_Organisation_Name"
             errors={errors}
             label="Organization Posting this Job (i.e. Agency or University)"
             type="text"
@@ -135,9 +133,8 @@ const SubscribeForm = ({
             autoComplete="organization"
             hidden={true}
           />
-          <InputBlock2
+          <InputBlock
             register={register}
-            name="02_Job_Title"
             errors={errors}
             label="Job Post Title"
             type="text"
