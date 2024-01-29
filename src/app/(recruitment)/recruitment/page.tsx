@@ -210,7 +210,7 @@ export default function myPage() {
                 all university support roles
               </p>
               <div className="card-actions justify-end">
-                <Link href="/job-ads" className="btn btn-aj">
+                <Link href="/post-a-job" className="btn btn-aj">
                   Create a free profile now
                 </Link>
               </div>
@@ -238,7 +238,7 @@ export default function myPage() {
                 best customer service and support.
               </p>
               <div className="card-actions justify-end">
-                <Link href="/job-ads" className="btn btn-aj">
+                <Link href="/post-a-job" className="btn btn-aj">
                   Check out our prices
                 </Link>
               </div>
@@ -410,7 +410,7 @@ export default function myPage() {
                 importantly, we are here to help you every step of the way.
               </p>
               <div className="card-actions justify-end">
-                <Link href="/job-ads" className="btn btn-aj">
+                <Link href="/post-a-job" className="btn btn-aj">
                   Try it for Yourself
                 </Link>
               </div>
