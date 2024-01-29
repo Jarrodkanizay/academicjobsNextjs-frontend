@@ -38,8 +38,8 @@ export default function myPage() {
           <div className="hero-overlay bg-opacity-70"></div>
           <div className="hero-content text-white">
             <div className="max-w-2xl">
-              <h1 className="mb-5 text-2xl md:text-4xl font-bold">
-              The best thing a human being can do is to help another human being know more.
+              <h1 className="mb-5 text-2xl text-white md:text-4xl font-bold">
+              "The best thing a human being can do is to help another human being know more."
               </h1>
               
             </div>
@@ -61,10 +61,10 @@ export default function myPage() {
         Do you wish to develop your own interest areas alongside teaching others?
         </p>
         
-        <div className="items-center justify-center mx-auto max-w-screen-sm content-center align-center">
+        <div className="text-center">
         <Link
                 href=""
-                className="btn btn-aj align-center text-center "
+                className="btn btn-aj"
               >
                 PRESS HERE TO FIND YOUR ACADEMIC RANK….
 

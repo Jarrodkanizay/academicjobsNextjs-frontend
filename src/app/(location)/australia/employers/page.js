@@ -30,7 +30,7 @@ export default function myPage() {
           <div className="hero max-h-fit bg-slate-200 py-8 mx-auto">
             <div className="container mx-auto">
               <div className="hero-content flex-col xl:flex-row gap-8 mx-auto max-w-full">
-                <Image
+                <img
                   src="/academic-job-postings/university-of-sydney.jpg"
                   className="object-none h-60 w-96  rounded-xl shadow-2xl mb-8 lg:mb-0"
                   alt="university of sydney"
@@ -53,12 +53,7 @@ Use university rankings to search for jobs in higher education.
                 <Link href="/academic-talent-pool" className="btn btn-aj">
                   Join our Talent Pool
                 </Link>
-                <Link
-                  href="https://postmyjob.online/"
-                  className="btn btn-aj"
-                >
-                  Create Institutional Profile
-                </Link>
+             
               </div>
                 
                  
@@ -68,6 +63,78 @@ Use university rankings to search for jobs in higher education.
           </div>
         </section>
        
+
+        <div className="flex bg-base-200 shadow-xl rounded-2xl mb-12 max-w-screen-xl mx-auto mt-8 p-4 gap-8">
+        <img
+          className="mx-auto rounded-xl w-2/3 "
+       
+          alt=""
+          src="https://academicjobs.s3.amazonaws.com/img/_misc/maxresdefault.png"
+        />
+
+<div className="w-1/3">
+<div className="grid  gap-4 mt-16 mb-4 text-gray-200">
+           
+
+            {/* Card 2 */}
+            <div className="flex  ">
+           
+            <div className="icon-ai p-2">
+           <p className="text-purple-500 font-bold px-2">
+           ✓
+           </p>
+           </div>
+           
+              <div className="items-center text-center">
+                <p className="text-lg font-bold p-2 ">
+                No. 1 Job Board
+                </p>
+             
+              </div>
+            </div>
+            {/* Card 3 */}
+            <div className="flex ">
+          
+            <div className="icon-ai p-2">
+           <p className="text-purple-500 font-bold px-2">
+           ✓
+           </p>
+           </div>
+               
+         
+              <div className=" items-center text-center ">
+                <p className="text-lg font-bold p-2">
+                The World's Largest Talent Pool
+                </p>
+            
+              </div>
+            </div>
+
+ {/* Card 1 */}
+ <div className=" flex ">
+           
+           <div className="icon-ai p-2">
+           <p className="text-purple-500 font-bold px-2">
+           ✓
+           </p>
+           </div>
+      
+         <div className=" items-center text-center">
+           <p className="text-lg font-bold p-2">
+           A.I. Powered Academic Rankings
+           </p>
+                       </div>
+       </div>
+
+
+            {/* End Cards */}
+          </div>
+         
+              <Link href="/recruitment" className="btn  btn-aj ml-4 text-lg font-bold">
+               Post A Job
+              </Link>
+            </div>
+          </div>
        
               <div className="bg-gradient-to-b to-white from-orange-100 m-8 rounded-3xl  max-w-screen-xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
@@ -213,30 +280,7 @@ Use university rankings to search for jobs in higher education.
         </section>
         {/* Contact us CTA */}
         <section className="container mx-auto px-4 mt-12">
-          <div className="alert mb-10">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              className="stroke-info shrink-0 w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-              ></path>
-            </svg>
-            <span>
-              ​​Try out Academic Jobs today, not because we are number 1 but for
-              the best customer service and support you will ever experience.
-            </span>
-            <div>
-              <Link href="/contact-us" className="btn btn-sm btn-aj">
-                Experience the Difference
-              </Link>
-            </div>
-          </div>
+          
         </section>
     
         <section>
