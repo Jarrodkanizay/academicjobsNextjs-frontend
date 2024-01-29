@@ -49,23 +49,25 @@ const JobDetailPage = async ({ params }) => {
   return (
     <div className="bg-white relative content-grid mx-auto  ">
       <div className="bg-slate-200 full-width">
-        <div className="flex items-center p-4 gap-8   ">
+        <div className="flex items-center p-4 gap-8">
           <div className="md:w-1/4 md:pr-4 md:p-8">
             <Link
               href={`/employers/${company_name
                 ?.replace(/\W+/g, '-')
                 .toLowerCase()}/${employer_id}/`}
             >
-              <Image
-                className="w-full rounded-xl"
-                src={
-                  `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` ||
-                  ''
-                }
-                alt={company_name}
-                width={300}
-                height={200}
-              />
+              <div className="w-full rounded-xl p-4 bg-white">
+                <Image
+                  className="w-full rounded-xl"
+                  src={
+                    `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` ||
+                    ''
+                  }
+                  alt={company_name}
+                  width={300}
+                  height={200}
+                />
+              </div>
             </Link>
           </div>
           <div className="w-3/4">
@@ -115,7 +117,7 @@ const JobDetailPage = async ({ params }) => {
                   })}
                 </time>
               ) : (
-                <p className="text-center">NA</p>
+                <p className="text-center">TBA</p>
               )}
             </div>
           </div>
@@ -136,9 +138,9 @@ const JobDetailPage = async ({ params }) => {
               />
 
               <div className="flex flex-col">
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center flex-wrap">
                   <Image
-                    src="/acacdemic-jobs-heart.svg"
+                    src="/academic-jobs-heart.svg"
                     width={90}
                     height={90}
                     alt="Academic Jobs Heart"
@@ -156,6 +158,9 @@ const JobDetailPage = async ({ params }) => {
                       buttonText="Please Email Full Job Post"
                       thankYouMessage="Done! You will receive the full job post shortly."
                       formType="job-request"
+                      jobId={jobId}
+                      employer={company_name}
+                      jobTitle={title}
                     />
                   </div>
                 </div>
@@ -180,12 +185,12 @@ const JobDetailPage = async ({ params }) => {
 
           {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
         </article>
-        <div className="max-h-screen overflow-y-scroll w-96 hidden md:block">
+        <div className="max-h-screen overflow-y-scroll max-w-96 hidden md:block">
           <h3 className=" pl-4 text-lg text-gray-400">
             This might interest you...{' '}
           </h3>
           <JobSearchBox q={title} />
-          <SearchResults q={title} />
+          <SearchResults q={title} filterOff={true} />
         </div>
       </div>
       {new Date(expiration_date) < new Date() && expiration_date && (

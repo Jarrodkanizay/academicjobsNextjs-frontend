@@ -16,7 +16,7 @@ const InputBlock = ({
 }) => {
   return (
     <div className={`w-full flex flex-col gap-1.5 items-start ${forceClass}`}>
-      <label className="label-text text-xs">{label}</label>
+      {hidden ? null : <label className="label-text text-xs">{label}</label>}
       <input
         tabIndex={tabIndex}
         {...register(field)}
