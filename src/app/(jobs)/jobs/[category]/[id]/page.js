@@ -49,23 +49,25 @@ const JobDetailPage = async ({ params }) => {
   return (
     <div className="bg-white relative content-grid mx-auto  ">
       <div className="bg-slate-200 full-width">
-        <div className="flex items-center p-4 gap-8   ">
+        <div className="flex items-center p-4 gap-8">
           <div className="md:w-1/4 md:pr-4 md:p-8">
             <Link
               href={`/employers/${company_name
                 ?.replace(/\W+/g, '-')
                 .toLowerCase()}/${employer_id}/`}
             >
-              <Image
-                className="w-full rounded-xl"
-                src={
-                  `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` ||
-                  ''
-                }
-                alt={company_name}
-                width={300}
-                height={200}
-              />
+              <div className="w-full rounded-xl p-4 bg-white">
+                <Image
+                  className="w-full rounded-xl"
+                  src={
+                    `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` ||
+                    ''
+                  }
+                  alt={company_name}
+                  width={300}
+                  height={200}
+                />
+              </div>
             </Link>
           </div>
           <div className="w-3/4">
@@ -115,7 +117,7 @@ const JobDetailPage = async ({ params }) => {
                   })}
                 </time>
               ) : (
-                <p className="text-center">NA</p>
+                <p className="text-center">TBA</p>
               )}
             </div>
           </div>
