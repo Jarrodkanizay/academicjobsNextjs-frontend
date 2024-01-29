@@ -26,7 +26,10 @@ export default function Page() {
           height={220}
         /></div>
       <JobSearchBox l="Middle East"/>
-      <div className=" mt-[10rem] " >
+      
+      <h3 className="text-center ">Middle East's University Job Website</h3>
+      
+      <div className=" mt-[5rem] " >
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-500 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li><Link href="/Middle-East/lecturer/" >	Lecturer</Link></li>
@@ -42,7 +45,7 @@ export default function Page() {
       </div>
 
 
-      <div className=" mt-4 " >
+      <div className=" mt-2 " >
         <ul className="faculty-container flex  gap-4 items-center justify-center text-[#922c40] ">
 
           <li><Link href="/online/" >	Online </Link></li>
@@ -54,11 +57,7 @@ export default function Page() {
         </ul>
       </div>
 
-      <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">
-        <a href="#section" class="scroll-smooth md:scroll-auto">
-          ▼
-        </a>
-      </div>
+  
 
       <div className="content-grid mx-auto">
         
@@ -67,11 +66,10 @@ export default function Page() {
             
             
             
-        <div id="section" className=" full-width py-4 mt-[30rem] full-width mb-[175px] bg-slate-200">
+        <div id="section" className=" full-width py-4 full-width mb-[175px] bg-slate-200">
   <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
   <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
-          <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS Middle East:</span> < br /> Academic, research &&nbsp;science positions locally
-          & globally
+          <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS Middle East:</span> < br />
           </h1>
           
         <div>
