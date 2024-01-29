@@ -96,37 +96,6 @@ const SubscribeForm = ({
         {/* {errors[field] && (
           <span className="error">{errors[field].message}</span>
         )} */}
-        <InputBlock
-          register={register}
-          errors={errors}
-          label="Job ID"
-          type="text"
-          field="00_Job_ID"
-          forceClass="text-black"
-          placeholder="Job ID"
-          hidden={true}
-        />
-        <InputBlock
-          register={register}
-          errors={errors}
-          label="Organization Posting this Job (i.e. Agency or University)"
-          type="text"
-          field="01_Organisation_Name"
-          forceClass="text-black"
-          placeholder="Organization Name"
-          autoComplete="organization"
-          hidden={true}
-        />
-        <InputBlock
-          register={register}
-          errors={errors}
-          label="Job Post Title"
-          type="text"
-          field="02_Job_Title"
-          forceClass="text-black"
-          placeholder="Job Title"
-          hidden={true}
-        />
 
         <InputBlock2
           ID="email-input"
@@ -142,6 +111,40 @@ const SubscribeForm = ({
           required={false}
           inputClass="input-bordered rounded-r-none"
         />
+        <div>
+          <InputBlock
+            register={register}
+            errors={errors}
+            label="Job ID"
+            type="text"
+            field="00_Job_ID"
+            forceClass="text-black"
+            placeholder="Job ID"
+            hidden={true}
+          />
+          <InputBlock
+            register={register}
+            errors={errors}
+            label="Organization Posting this Job (i.e. Agency or University)"
+            type="text"
+            field="01_Organisation_Name"
+            forceClass="text-black"
+            placeholder="Organization Name"
+            autoComplete="organization"
+            hidden={true}
+          />
+          <InputBlock
+            register={register}
+            errors={errors}
+            label="Job Post Title"
+            type="text"
+            field="02_Job_Title"
+            forceClass="text-black"
+            placeholder="Job Title"
+            hidden={true}
+          />
+        </div>
+
         <button
           type="submit"
           className="btn join-item bg-aj text-white rounded-r-full"
