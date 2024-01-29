@@ -261,12 +261,17 @@ export default function myPage() {
             </Link>
           </div> */}
           {/* Diverse Roles Card */}
+         
+         
+         
+         
+         
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
               <Image
                 width={2000}
                 height={534}
-                src="/student-jobs-on-campus/diverse-student-jobs.jpg"
+                src="https://academicjobs.s3.amazonaws.com/img/banner/collaboration+over+competition+.jpg"
                 alt="Choose from diverse campus roles"
                 className="w-full lg:max-w-lg rounded-xl m-6"
               />
@@ -297,7 +302,7 @@ export default function myPage() {
               <Image
                 width={2000}
                 height={534}
-                src="/student-jobs-on-campus/flexible-work-hours.jpg"
+                src="https://academicjobs.s3.amazonaws.com/img/banner/analyse+your+academic+progress.jpg"
                 alt="Work Part-Time with Flexible Opportunities for Academics"
                 className="w-full lg:max-w-lg rounded-xl m-6"
               />
