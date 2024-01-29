@@ -15,6 +15,7 @@ const InputBlock2 = ({
   colSpan,
   hidden,
   disabled,
+  inputClass = '',
 }) => {
   if (required === undefined) required = false;
   if (hidden === undefined) hidden = false;
@@ -34,7 +35,7 @@ const InputBlock2 = ({
         tabIndex={tabIndex}
         {...register(field)}
         type={type}
-        className="w-full input input-md focus:outline-none focus:border-orange-500"
+        className={`w-full input input-md focus:outline-none focus:border-orange-500 ${inputClass}`}
         autoComplete={autoComplete}
         placeholder={placeholder}
         required={required ? true : false}
