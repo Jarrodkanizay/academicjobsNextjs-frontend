@@ -31,9 +31,9 @@ async function getJob(id) {
 const JobDetailPage = async ({ params, searchParams }) => {
   //const searchParams = useSearchParams();
   const active = searchParams['active'] || false;
-  console.log("====444444433333333333333333333333active=====")
-  console.log(searchParams)
-  console.log("====active=====",active)
+  console.log('====444444433333333333333333333333active=====');
+  console.log(searchParams);
+  console.log('====active=====', active);
   const job = await getJob(params.id);
   console.log('job', job);
   if (!job) notFound();
@@ -83,11 +83,17 @@ const JobDetailPage = async ({ params, searchParams }) => {
                 </Link> */}
             </div>
             <div className="flex items-center">
-              <Button
-                title={title}
-                company_name={company_name}
-                how_to_apply={how_to_apply}
-              />
+              {clientType === 'HeadlineOnly' ? (
+                <Link href="#request-job-post" className="btn btn-aj">
+                  Apply Now
+                </Link>
+              ) : (
+                <Button
+                  title={title}
+                  company_name={company_name}
+                  how_to_apply={how_to_apply}
+                />
+              )}
               <div className="ml-4">
                 <div className="">
                   <div
@@ -136,13 +142,15 @@ const JobDetailPage = async ({ params, searchParams }) => {
           {
             <div className="">
               <div
-                className={`${(clientType !== 'HeadlineOnly' || active) ? 'block' : 'hidden'
-                  }`}
+                className={`${
+                  clientType !== 'HeadlineOnly' || active ? 'block' : 'hidden'
+                }`}
                 dangerouslySetInnerHTML={{ __html: description }}
               />
               <div
-                className={`flex flex-col ${(clientType === 'HeadlineOnly' && !active) ? 'block' : 'hidden'
-                  }`}
+                className={`flex flex-col ${
+                  clientType === 'HeadlineOnly' && !active ? 'block' : 'hidden'
+                }`}
               >
                 <div className="flex justify-center items-center flex-wrap">
                   <Image
