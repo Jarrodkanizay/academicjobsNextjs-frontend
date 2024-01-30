@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import TalentPoolForm from '@/components/forms/TalentPoolForm';
+import RankingRegistrationFormAcademics from '@/components/forms/RankingRegistrationFormAcademics';
 // import ReactQuill from 'react-quill';
 // import 'react-quill/dist/quill.snow.css';
 // import InputBlock2 from '@/components/forms/InputBlock2';
@@ -29,37 +29,64 @@ export default function Page() {
         Discover how you rank against your fellow academics!
       </h2>
       <div className="flex flex-col lg:flex-row lg:gap-8">
-        <TalentPoolForm maxWidth="700" />
+        <RankingRegistrationFormAcademics
+          maxWidth="700"
+          formName="Academic Ranking Form"
+          detailsHeading="Your Details"
+          academicEmploymentHeading="Previous Academic Employment"
+          academicAwardsHeading="Academic Awards & Achievements"
+        />
         {/* Contact Numbers */}
         <div className="flex flex-col w-full pb-8 bg-slate-100 py-4 px-8 rounded-2xl lg:min-w-[450px] lg:max-w-[500px] mt-8 lg:mt-0">
-          <h2 className="underline-full mb-6">Checkbox Definitions</h2>
+          <h2 className="underline-full mb-6">Why Obtain a Rank</h2>
           <ul className="ul mb-auto">
             <li>
-              <strong>Collaborations: </strong>Engage in high-level academic
-              collaborations and research partnerships.
+              <strong>Gain Credibility:</strong> An academic ranking enhances
+              your professional credibility in your field.
             </li>
             <li>
-              <strong>Keynote Speaking: </strong>
-              Access opportunities for keynote speaking at prestigious
-              conferences and events.
+              <strong>Increased Visibility:</strong> Higher rankings often lead
+              to increased visibility among potential employers and
+              collaborators.
             </li>
             <li>
-              <strong>Media Visibility: </strong>Gain visibility through media
-              features and interviews.
+              <strong>Attract Job Offers:</strong> Employers often seek
+              candidates with strong academic rankings, increasing your chances
+              of receiving job offers.
             </li>
             <li>
-              <strong>Career Progression: </strong>
-              Open doors to career progression and attract attention from
-              headhunters.
+              <strong>Networking Opportunities:</strong> A solid academic
+              ranking opens doors to valuable networking opportunities with
+              experts and professionals.
             </li>
             <li>
-              <strong>Seek IP Investors: </strong>
-              Connect with investors to fund and support your innovative
-              intellectual property projects.
+              <strong>Research Collaboration:</strong> Higher rankings can
+              attract collaborative research opportunities and partnerships with
+              other institutions.
             </li>
             <li>
-              <strong>Academic Rankings: </strong>
-              Become eligible for recognition in academic rankings and awards.
+              <strong>Access to Resources:</strong> Academic rankings may grant
+              you access to exclusive resources, grants, and funding
+              opportunities.
+            </li>
+            <li>
+              <strong>International Recognition:</strong> Improve your chances
+              of international recognition, making you more appealing to global
+              employers.
+            </li>
+            <li>
+              <strong>Career Advancement:</strong> A strong academic ranking can
+              significantly contribute to your career advancement and
+              progression.
+            </li>
+            <li>
+              <strong>Research Impact:</strong> Higher rankings often correlate
+              with greater research impact and influence in your academic field.
+            </li>
+            <li>
+              <strong>Professional Development:</strong> Being recognized
+              academically can lead to various professional development
+              opportunities and continuous learning.
             </li>
           </ul>
           <Image
