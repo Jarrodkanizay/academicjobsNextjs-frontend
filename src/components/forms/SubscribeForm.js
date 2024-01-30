@@ -54,7 +54,7 @@ const SubscribeForm = ({
     console.log('data', data);
     data = {
       ...data,
-      '99_url': `https://www.academicjobs.com/jobs/myjob/${jobId}?active=true`,
+      '99_url': `https://www.academicjobs.com/jobs/myjob/${jobId}`,
     };
     console.log('data', data);
     mutation.mutate(data);
