@@ -21,12 +21,14 @@ export async function generateMetadata({ params }) {
     keywords: `${title} jobs| ${company_name} university jobs| ${location} university jobs`,
   };
 }
+
 async function getJob(id) {
   const response = await fetch(`https://api2.sciencejobs.com.au/api/job/${id}`);
   const res = await response.json();
   // console.log(res);
   return res;
 }
+
 const JobDetailPage = async ({ params }) => {
   const job = await getJob(params.id);
   console.log('job', job);
