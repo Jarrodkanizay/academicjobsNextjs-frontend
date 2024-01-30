@@ -42,6 +42,7 @@ const FormSubmissionMessage = ({
             jobTitle={jobTitle}
             employer={employer}
             jobId={jobId}
+            jobURL={jobURL}
           />
         </div>
       )}
