@@ -1,5 +1,5 @@
 'use client';
-import React, { watch } from 'react';
+import React, { watch, useEffect, useState } from 'react';
 import countries from '@/data/CountryList.json';
 import InputBlock2 from './InputBlock2';
 // import InputBlock from './InputBlock';
@@ -17,6 +17,7 @@ const SubscribeForm = ({
   jobTitle,
   employer,
   jobId,
+  jobURL,
 }) => {
   const {
     register,
@@ -31,8 +32,15 @@ const SubscribeForm = ({
       '00_Job_ID': jobId,
       '01_Organisation_Name': employer,
       '02_Job_Title': jobTitle,
+      '03_Job_URL': jobURL,
     },
   });
+
+  const [fullUrl, setFullUrl] = useState('');
+
+  useEffect(() => {
+    setFullUrl(window.location.href);
+  }, []);
 
   const mutation = useMutation({
     mutationFn: (data) => {
@@ -146,6 +154,17 @@ const SubscribeForm = ({
             field="02_Job_Title"
             forceClass="text-black"
             placeholder="Job Title"
+            hidden={true}
+          />
+          <InputBlock2
+            register={register}
+            name="03_Job_URL"
+            errors={errors}
+            label="Job Post URL"
+            type="text"
+            field="03_Job_URL"
+            forceClass="text-black"
+            placeholder="Job URL"
             hidden={true}
           />
         </div>
