@@ -7,7 +7,15 @@ import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import FormSubmissionMessage from './FormSubmissionMessage';
 
-const TalentPoolForm = ({ maxWidth }) => {
+const TalentPoolForm = ({
+  maxWidth,
+  formName = 'Talent Pool Form',
+  detailsHeading = 'Your Details',
+  workTypeHeading = 'What are you interested in?',
+  academicDetailsHeading = 'Academic Details',
+  academicEmploymentHeading = '',
+  academicAwardsHeading = '',
+}) => {
   const {
     register,
     handleSubmit,
@@ -17,7 +25,7 @@ const TalentPoolForm = ({ maxWidth }) => {
     setError,
   } = useForm({
     defaultValues: {
-      '00_Form_Name': 'Talent Pool Form Submission',
+      '00_Form_Name': formName,
     },
   });
 
@@ -76,7 +84,7 @@ const TalentPoolForm = ({ maxWidth }) => {
       className={`talent-pool mx-auto px-7 pt-4 pb-6 border-[1px] border-slate-500 bg-slate-50 rounded-2xl w-full lg:max-w-[${maxWidth}px] lg:min-w-[640px]`}
       onSubmit={handleSubmit(onSubmit)}
     >
-      <h2 className="underline-full mb-6">Your Details</h2>
+      <h2 className="underline-full mb-6">{detailsHeading}</h2>
       <InputBlock2
         register={register}
         errors={errors}
@@ -156,7 +164,7 @@ const TalentPoolForm = ({ maxWidth }) => {
           colSpan={2}
         />
       </div>
-      <h2 className="underline-full mt-10 mb-6">What are you interested in?</h2>
+      <h2 className="underline-full mt-10 mb-6">{workTypeHeading}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Seeking Opportunities */}
         <div className="form-control">
@@ -237,7 +245,7 @@ const TalentPoolForm = ({ maxWidth }) => {
         </div>
       </div>
       {/* Academic Details Section */}
-      <h2 className="underline-full mt-10 mb-6">Academic Details</h2>
+      <h2 className="underline-full mt-10 mb-6">{academicDetailsHeading}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Institution */}
 
@@ -314,6 +322,117 @@ const TalentPoolForm = ({ maxWidth }) => {
           ))}
         </select>
       </div>
+      {academicEmploymentHeading !== '' && (
+        <>
+          <h2 className="underline-full mt-10 mb-6">
+            {academicEmploymentHeading}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Institution */}
+
+            <InputBlock2
+              register={register}
+              errors={errors}
+              tabIndex={13}
+              type="text"
+              ID="institution-previous-A"
+              field="13_Institution-previous-A"
+              name="13_Institution-previous-A"
+              forceClass=""
+              placeholder="Institution/University (Current, Last or Attended)"
+              required={true}
+              colSpan={2}
+            />
+            <InputBlock2
+              register={register}
+              errors={errors}
+              tabIndex={14}
+              type="text"
+              ID="institution-previous-B"
+              field="14_Institution-previous-B"
+              name="14_Institution-previous-B"
+              forceClass=""
+              placeholder="Institution/University (Current, Last or Attended)"
+              required={true}
+              colSpan={2}
+            />
+            <InputBlock2
+              register={register}
+              errors={errors}
+              tabIndex={15}
+              type="text"
+              ID="institution-previous-C"
+              field="15_Institution-previous-C"
+              name="15_Institution-previous-C"
+              forceClass=""
+              placeholder="Institution/University (Current, Last or Attended)"
+              required={true}
+              colSpan={2}
+            />
+          </div>
+        </>
+      )}
+      {academicAwardsHeading !== '' && (
+        <>
+          <h2 className="underline-full mt-10 mb-6">{academicAwardsHeading}</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Institution */}
+
+            <InputBlock2
+              register={register}
+              errors={errors}
+              tabIndex={12}
+              type="text"
+              ID="award-achievement-input-A"
+              field="16_award-achievement-A"
+              name="16_award-achievement-A"
+              forceClass=""
+              placeholder="Award or Achievement"
+              required={true}
+              colSpan={1}
+            />
+            <InputBlock2
+              register={register}
+              errors={errors}
+              tabIndex={12}
+              type="text"
+              ID="award-achievement-input-B"
+              field="17_award-achievement-B"
+              name="17_award-achievement-B"
+              forceClass=""
+              placeholder="Award or Achievement"
+              required={true}
+              colSpan={1}
+            />
+            <InputBlock2
+              register={register}
+              errors={errors}
+              tabIndex={12}
+              type="text"
+              ID="award-achievement-input-C"
+              field="18_award-achievement-C"
+              name="18_award-achievement-C"
+              forceClass=""
+              placeholder="Award or Achievement"
+              required={true}
+              colSpan={1}
+            />
+            <InputBlock2
+              register={register}
+              errors={errors}
+              tabIndex={12}
+              type="text"
+              ID="award-achievement-input-D"
+              field="19_award-achievement-D"
+              name="19_award-achievement-D"
+              forceClass=""
+              placeholder="Award or Achievement"
+              required={true}
+              colSpan={1}
+            />
+          </div>
+        </>
+      )}
       {/* Profile */}
       <div className="col-span-2 mt-6">
         <textarea

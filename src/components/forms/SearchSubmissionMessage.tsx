@@ -85,14 +85,20 @@ const SearchSubmissionMessage = ({
               <h3>Oh Snap! It looks like you don't have a ranking.</h3>
               <p>
                 Let's get you ranked now,{' '}
-                <Link href="/academic-talent-pool" className="link link-aj">
+                <Link
+                  href="/the-academic-rankings/my-academic-rank"
+                  className="link link-aj"
+                >
                   register
                 </Link>{' '}
                 your details and we will get you sorted and improve your chances
                 when applying for jobs.
               </p>
               {/* <p>{message}</p> */}
-              <Link href="/academic-talent-pool" className="btn btn-aj">
+              <Link
+                href="/the-academic-rankings/my-academic-rank"
+                className="btn btn-aj"
+              >
                 Get Ranked
               </Link>
             </div>

@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import InputBlock from '@/components/forms/InputBlock';
+import SelectBlock2 from '@/components/forms/SelectBlock2';
 import { useForm } from 'react-hook-form';
 import { useMutation } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
@@ -8,6 +9,7 @@ import { useRouter } from 'next/navigation';
 import { jobElephantContacts } from '@/data/jobElephantContacts';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
+import { countries } from "@/utils/data";
 const PostJobForm = ({
   clientType,
   partner,
@@ -25,11 +27,13 @@ const PostJobForm = ({
     watch,
     formState: { errors },
     setError,
+    getValues 
   } = useForm({
     defaultValues: {
       '00_Job_ID': jobId,
       '01_Organisation_Name': employer,
       '02_Job_Title': jobTitle,
+      country: 'Australia',
       // Add other form fields here...
     },
   });
@@ -64,7 +68,13 @@ const PostJobForm = ({
     return <div>An error occurred: {mutation.error.message}</div>;
   }
   if (mutation.isSuccess) {
-    router.push('https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot');
+    if (getValues("country") == "Australia") {
+      router.push('https://buy.stripe.com/dR6eWA6PuaaA7VC6ov');
+    } else {
+      router.push('https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot');
+    }
+     
+    
   } else {
     content = (
       <>
@@ -186,7 +196,9 @@ const PostJobForm = ({
                   autoComplete="phone"
                 />
               </div>
+        
 
+              <SelectBlock2 list={countries} field="country" label="Country" register={register} errors={errors} forceClass="join-item rounded-r-none min-h-[34px]" />
               <label className="form-control mt-6">
                 <span className="label-text text-xs pb-1">
                   Notes or Special Instructions
