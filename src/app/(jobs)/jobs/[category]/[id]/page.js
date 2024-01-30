@@ -10,7 +10,7 @@ import { BsFillShareFill } from 'react-icons/bs';
 import Button from './Button';
 import { CloudCog } from 'lucide-react';
 import SubscribeForm from '@/components/forms/SubscribeForm';
-
+import { useSearchParams } from 'next/navigation';
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
   if (!job) return { title: 'not found' };
@@ -27,7 +27,12 @@ async function getJob(id) {
   // console.log(res);
   return res;
 }
-const JobDetailPage = async ({ params }) => {
+const JobDetailPage = async ({ params, searchParams }) => {
+  //const searchParams = useSearchParams();
+  const active = searchParams['active'] || false;
+  console.log("====444444433333333333333333333333active=====")
+  console.log(searchParams)
+  console.log("====active=====",active)
   const job = await getJob(params.id);
   console.log('job', job);
   if (!job) notFound();
@@ -45,7 +50,6 @@ const JobDetailPage = async ({ params }) => {
     featured,
     clientType,
   } = job.data;
-
   return (
     <div className="bg-white relative content-grid mx-auto  ">
       <div className="bg-slate-200 full-width">
@@ -131,16 +135,13 @@ const JobDetailPage = async ({ params }) => {
           {
             <div className="">
               <div
-                className={`${
-                  clientType !== 'HeadlineOnly' ? 'block' : 'hidden'
-                }`}
+                className={`${(clientType !== 'HeadlineOnly' || active) ? 'block' : 'hidden'
+                  }`}
                 dangerouslySetInnerHTML={{ __html: description }}
               />
-
               <div
-                className={`flex flex-col ${
-                  clientType === 'HeadlineOnly' ? 'block' : 'hidden'
-                }`}
+                className={`flex flex-col ${(clientType === 'HeadlineOnly' && !active) ? 'block' : 'hidden'
+                  }`}
               >
                 <div className="flex justify-center items-center flex-wrap">
                   <Image
@@ -186,7 +187,6 @@ const JobDetailPage = async ({ params }) => {
               {/* </div> */}
             </div>
           }
-
           {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
         </article>
         <div className="max-h-screen overflow-y-scroll max-w-96 hidden md:block">
@@ -206,6 +206,5 @@ const JobDetailPage = async ({ params }) => {
   );
 };
 export default JobDetailPage;
-
 //  <p className='text-xl font-bold'>Headline only listing, to show full job content, click button below to:</p>
 //               <Link href={`\headline_upgrade\${company_name}`}>Upgrade to Priority Listing</Link>

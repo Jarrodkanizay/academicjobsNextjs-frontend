@@ -36,13 +36,15 @@ const SubscribeForm = ({
 
   const mutation = useMutation({
     mutationFn: (data) => {
-      return BaseApi.post('/sendemail', data);
+            return BaseApi.post('/sendemail2', data);
     },
   });
 
   const onSubmit = async (data) => {
     //e.preventDefault();
-    //alert()
+    //alert("aaaa")
+    console.log('data', data);
+    data = { ...data, '99_url': `https://www.academicjobs.com/jobs/myjob/${jobId}` }
     console.log('data', data);
     mutation.mutate(data);
   };
