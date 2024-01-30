@@ -99,7 +99,7 @@ export default function Page() {
               fellow academics globally.
             </li>
           </ul>
-          <p className="p-6">
+          <p className="p-6 pb-0">
             Don't Wait — The Opportunity for Academic Excellence Awaits! Sign Up
             Now and Propel Your Career to New Heights!
           </p>

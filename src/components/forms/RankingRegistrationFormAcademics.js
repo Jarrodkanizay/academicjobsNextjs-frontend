@@ -12,8 +12,6 @@ const RankingRegistrationFormAcademics = ({
   formName = 'Talent Pool Form',
   detailsHeading = 'Your Details',
   academicDetailsHeading = 'Current Academic Details',
-  academicEmploymentHeading = '',
-  academicAwardsHeading = '',
 }) => {
   const {
     register,
@@ -167,6 +165,34 @@ const RankingRegistrationFormAcademics = ({
           required={true}
           colSpan={2}
         />
+        {/* Papers & Publications */}
+        <InputBlock2
+          register={register}
+          errors={errors}
+          tabIndex={3}
+          type="text"
+          ID="papers_publications-input"
+          field="06_Papers_Publications"
+          name="06_Papers"
+          forceClass=""
+          placeholder="Papers & Publications (coma separated)"
+          required={false}
+          colSpan={2}
+        />
+        {/* Degrees - Top Education Levels */}
+        <InputBlock2
+          register={register}
+          errors={errors}
+          tabIndex={4}
+          type="text"
+          ID="degrees-input"
+          field="04_Degrees"
+          name="04_Degrees"
+          forceClass=""
+          placeholder="Top Education Levels: i.e. Phd, Master, etc. (coma separated)"
+          required={false}
+          colSpan={2}
+        />
       </div>
       {/* Academic Details Section */}
       <h2 className="underline-full mt-10 mb-6">{academicDetailsHeading}</h2>
@@ -182,39 +208,9 @@ const RankingRegistrationFormAcademics = ({
           field="20_Institution"
           name="20_Institution"
           forceClass=""
-          placeholder="Institution/University (Current, Last or Attended)"
+          placeholder="Institution/University (Current or most recent)"
           required={true}
           colSpan={2}
-        />
-
-        {/* Department/Faculty */}
-
-        <InputBlock2
-          register={register}
-          errors={errors}
-          tabIndex={21}
-          type="text"
-          ID="department-faculty-input"
-          field="21_Department_Faculty"
-          name="21_Department_Faculty"
-          forceClass=""
-          placeholder="Department/Faculty"
-          required={true}
-        />
-
-        {/* Specialty */}
-
-        <InputBlock2
-          register={register}
-          errors={errors}
-          tabIndex={22}
-          type="text"
-          ID="specialty-input"
-          field="22_Specialty"
-          name="22_Specialty"
-          forceClass=""
-          placeholder="Specialty"
-          required={true}
         />
 
         {/* Location */}
@@ -222,22 +218,22 @@ const RankingRegistrationFormAcademics = ({
         <InputBlock2
           register={register}
           errors={errors}
-          tabIndex={23}
+          tabIndex={21}
           type="text"
           ID="location-input"
-          field="23_Institution_Location"
-          name="23_Institution_Location"
+          field="21_Institution_Location"
+          name="21_Institution_Location"
           forceClass=""
           placeholder="Institution Location"
           required={true}
         />
 
         <select
-          tabIndex={24}
-          {...register('24_Country')}
+          tabIndex={22}
+          {...register('22_Country')}
           id="country-select"
-          field="24_Country"
-          name="24_Country"
+          field="22_Country"
+          name="22_Country"
           className="select select-bordered w-full focus:outline-none focus:border-orange-500"
           required={true}
         >
@@ -250,118 +246,65 @@ const RankingRegistrationFormAcademics = ({
             </option>
           ))}
         </select>
+
+        {/* Department/Faculty */}
+
+        <InputBlock2
+          register={register}
+          errors={errors}
+          tabIndex={23}
+          type="text"
+          ID="department-faculty-input"
+          field="23_Department_Faculty"
+          name="23_Department_Faculty"
+          forceClass=""
+          placeholder="Department/Faculty"
+          required={true}
+        />
+
+        {/* Specialty */}
+        <InputBlock2
+          register={register}
+          errors={errors}
+          tabIndex={24}
+          type="text"
+          ID="specialty-input"
+          field="24_Specialty"
+          name="24_Specialty"
+          forceClass=""
+          placeholder="Specialty"
+          required={false}
+        />
+
+        {/* Split */}
+        <InputBlock2
+          register={register}
+          errors={errors}
+          tabIndex={25}
+          type="text"
+          ID="lecturer-research-split-input"
+          field="25_lecturer-research-split"
+          name="25_lecturer-research-split"
+          forceClass=""
+          placeholder="Lecturer/Teaching Research/Management Split (%)"
+          required={false}
+          colSpan={2}
+        />
+        {/* Notable Awards */}
+        <InputBlock2
+          register={register}
+          errors={errors}
+          tabIndex={26}
+          type="text"
+          ID="name-input"
+          field="26_Academic_Title"
+          name="26_Academic_Title"
+          forceClass=""
+          placeholder="Notable Awards (coma separated)"
+          required={false}
+          colSpan={2}
+        />
       </div>
-      {academicEmploymentHeading !== '' && (
-        <>
-          <h2 className="underline-full mt-10 mb-6">
-            {academicEmploymentHeading}
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Institution */}
-
-            <InputBlock2
-              register={register}
-              errors={errors}
-              tabIndex={30}
-              type="text"
-              ID="institution-previous-A"
-              field="30_Institution-previous-A"
-              name="30_Institution-previous-A"
-              forceClass=""
-              placeholder="Institution/University (Current, Last or Attended)"
-              required={true}
-              colSpan={2}
-            />
-            <InputBlock2
-              register={register}
-              errors={errors}
-              tabIndex={31}
-              type="text"
-              ID="institution-previous-B"
-              field="31_Institution-previous-B"
-              name="31_Institution-previous-B"
-              forceClass=""
-              placeholder="Institution/University (Current, Last or Attended)"
-              required={true}
-              colSpan={2}
-            />
-            <InputBlock2
-              register={register}
-              errors={errors}
-              tabIndex={32}
-              type="text"
-              ID="institution-previous-C"
-              field="32_Institution-previous-C"
-              name="32_Institution-previous-C"
-              forceClass=""
-              placeholder="Institution/University (Current, Last or Attended)"
-              required={true}
-              colSpan={2}
-            />
-          </div>
-        </>
-      )}
-      {academicAwardsHeading !== '' && (
-        <>
-          <h2 className="underline-full mt-10 mb-6">{academicAwardsHeading}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Institution */}
-
-            <InputBlock2
-              register={register}
-              errors={errors}
-              tabIndex={40}
-              type="text"
-              ID="award-achievement-input-A"
-              field="40_award-achievement-A"
-              name="40_award-achievement-A"
-              forceClass=""
-              placeholder="Award or Achievement"
-              required={true}
-              colSpan={1}
-            />
-            <InputBlock2
-              register={register}
-              errors={errors}
-              tabIndex={41}
-              type="text"
-              ID="award-achievement-input-B"
-              field="41_award-achievement-B"
-              name="41_award-achievement-B"
-              forceClass=""
-              placeholder="Award or Achievement"
-              required={true}
-              colSpan={1}
-            />
-            <InputBlock2
-              register={register}
-              errors={errors}
-              tabIndex={42}
-              type="text"
-              ID="award-achievement-input-C"
-              field="42_award-achievement-C"
-              name="42_award-achievement-C"
-              forceClass=""
-              placeholder="Award or Achievement"
-              required={true}
-              colSpan={1}
-            />
-            <InputBlock2
-              register={register}
-              errors={errors}
-              tabIndex={43}
-              type="text"
-              ID="award-achievement-input-D"
-              field="43_award-achievement-D"
-              name="43_award-achievement-D"
-              forceClass=""
-              placeholder="Award or Achievement"
-              required={true}
-              colSpan={1}
-            />
-          </div>
-        </>
-      )}
       {/* Profile */}
       <div className="col-span-2 mt-6">
         <textarea
