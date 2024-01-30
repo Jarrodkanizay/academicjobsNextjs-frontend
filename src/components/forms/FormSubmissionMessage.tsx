@@ -9,6 +9,7 @@ type FormSubmissionMessageProps = {
   jobTitle?: string;
   employer?: string;
   jobId?: string;
+  jobURL?: string;
 };
 
 const FormSubmissionMessage = ({
@@ -16,9 +17,10 @@ const FormSubmissionMessage = ({
   firstName = '',
   message = '',
   forceClass = '',
-  jobTitle,
-  employer,
-  jobId,
+  jobTitle = '',
+  employer = '',
+  jobId = '',
+  jobURL = '',
 }: FormSubmissionMessageProps) => {
   return (
     <>
@@ -53,7 +55,7 @@ const FormSubmissionMessage = ({
             directly.
           </p>
           <p>Error: {message}</p>
-          <CTAs />
+          {/* <CTAs /> */}
         </div>
       )}
     </>
@@ -62,10 +64,10 @@ const FormSubmissionMessage = ({
 
 export default FormSubmissionMessage;
 
-const CTAs: React.FC = () => {
-  return (
-    <div>
-      <p>New features coming soon</p>
-    </div>
-  );
-};
+// const CTAs: React.FC = () => {
+//   return (
+//     <div>
+//       <p>New features coming soon</p>
+//     </div>
+//   );
+// };
