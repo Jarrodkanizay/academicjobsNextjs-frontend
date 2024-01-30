@@ -805,7 +805,7 @@ Use university rankings to search for jobs in higher education.
                     </li>
                     <li>
                       <Link href="/employers/university-of-new-england/3209/">
-                        University of New England England
+                        University of New England
                       </Link>
                     </li>
                     <li>
