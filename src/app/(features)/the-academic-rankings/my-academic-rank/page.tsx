@@ -26,7 +26,7 @@ export default function Page() {
         Do you know your Academic Ranking?
       </h1>
       <h2 className="mb-10">
-        Discover how your rank against your fellow academics!
+        Discover how you rank against your fellow academics!
       </h2>
       <div className="flex flex-col lg:flex-row lg:gap-8">
         <TalentPoolForm maxWidth="700" />
