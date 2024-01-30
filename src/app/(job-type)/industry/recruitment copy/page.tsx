@@ -120,13 +120,13 @@ export default function myPage() {
 
 <div className="mb-12 text-sky-600">
               <li className="hover:underline">
-        <Link href="/industry">Cheif Technical Officier{'  '}</Link>
+        <Link href="/industry">Cheif Technical Officier (From 250K){'  '}</Link>
       </li>
       <li className="hover:underline">
-        <Link href="/industry/">Head of Innovation{'  '}</Link>
+        <Link href="/industry/">Head of Innovation (From 300K){'  '}</Link>
       </li>
       <li className="hover:underline">
-        <Link href="/industry/">Chief Data Scientist{'  '}</Link>
+        <Link href="/industry/">Chief Data Scientist (From 180K){'  '}</Link>
       </li>
       </div>
 
