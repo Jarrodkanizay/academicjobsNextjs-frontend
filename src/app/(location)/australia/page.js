@@ -449,7 +449,7 @@ export default function Page() {
 <a div className="card-title mx-8 mt-8 text-[#3b5683]"> Top 20 HR jobs today</a>
                          <div className=" h-96 ml-8 overflow-y-scroll"> 
         
-          <SearchResults q= "Human Resources" /> </div></div>
+          <SearchResults q={{ q: "human resources", l: "Australia" }} /> </div></div>
 
                        </ul>
           </div>
