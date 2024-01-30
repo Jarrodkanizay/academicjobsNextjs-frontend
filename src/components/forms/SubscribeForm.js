@@ -87,17 +87,19 @@ const SubscribeForm = ({
   if (mutation.isSuccess) {
     return (
       <>
-        <h3 className="text-emerald-500">{thankYouMessage}</h3>
+        <h3 className="text-red-600">{thankYouMessage}</h3>
         {formType === 'job-request' ? (
-          <>
-            <p>Now, do you know your academic ranking?</p>
+          <div className="flex justify-between items-center">
+            <p className="text-[#ff009d]">
+              Now, do you know your academic ranking?
+            </p>
             <Link
-              className="btn btn-secondary mt-8 float-right mr-8"
+              className="btn bg-[#ff009d] hover:bg-pink-600 text-white mt-8 float-right mr-8"
               href="/the-academic-rankings/find-my-rank"
             >
               Check My Ranking
             </Link>
-          </>
+          </div>
         ) : null}
       </>
     );
