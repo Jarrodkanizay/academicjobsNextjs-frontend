@@ -30,7 +30,7 @@ export default function myPage() {
           className="hero h-screen max-h-[480px] md:max-h-[400px]"
           style={{
             backgroundImage:
-              'url(/student-jobs-on-campus/students-working-on-campus.jpg)',
+              'url(/student-jobs-on-campus/mountain.jpg)',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
           }}

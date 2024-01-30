@@ -21,7 +21,7 @@ export default function myPage() {
       All of the best professional casual jobs in Australia. Through higher ed jobs part-time, individuals can actively contribute to the advancement of knowledge, the cultivation of learning environments, and the overall growth of the academic landscape while simultaneously expanding their professional horizons.</p>
       <Link
                       href={'/academic-talent-pool'}
-                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                      className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
                     >
                      Join Our Talent Pool
                     </Link>
