@@ -36,15 +36,15 @@ const SubscribeForm = ({
     },
   });
 
-  const [fullUrl, setFullUrl] = useState('');
+  // const [fullUrl, setFullUrl] = useState('');
 
-  useEffect(() => {
-    setFullUrl(window.location.href);
-  }, []);
+  // useEffect(() => {
+  //   setFullUrl(window.location.href);
+  // }, []);
 
   const mutation = useMutation({
     mutationFn: (data) => {
-            return BaseApi.post('/sendemail2', data);
+      return BaseApi.post('/sendemail2', data);
     },
   });
 
@@ -52,11 +52,14 @@ const SubscribeForm = ({
     //e.preventDefault();
     //alert("aaaa")
     console.log('data', data);
-    data = { ...data, '99_url': `https://www.academicjobs.com/jobs/myjob/${jobId}` }
+    data = {
+      ...data,
+      '99_url': `https://www.academicjobs.com/jobs/myjob/${jobId}?active=true`,
+    };
     console.log('data', data);
     mutation.mutate(data);
   };
-
+  // Sample URL https://www.academicjobs.com/jobs/myJob/83531?active=true
   const firstName = watch('01_First_Name');
 
   if (mutation.isLoading) {

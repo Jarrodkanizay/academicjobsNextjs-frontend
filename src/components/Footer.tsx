@@ -16,7 +16,7 @@ const Footer = () => {
             <Link href="/ai-recruitment">AI Recruitment</Link>
           </li>
           <li>
-            <Link href="/about">About AcademicJobs</Link>
+            <Link href="/about">About Academic Jobs</Link>
           </li>
           <li>
             <Link href="/recruitment">Recruitment Assistance</Link>
