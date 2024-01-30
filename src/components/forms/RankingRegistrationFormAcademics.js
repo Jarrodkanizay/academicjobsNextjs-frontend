@@ -7,12 +7,11 @@ import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import FormSubmissionMessage from './FormSubmissionMessage';
 
-const TalentPoolForm = ({
+const RankingRegistrationFormAcademics = ({
   maxWidth,
   formName = 'Talent Pool Form',
   detailsHeading = 'Your Details',
-  workTypeHeading = 'What are you interested in?',
-  academicDetailsHeading = 'Academic Details',
+  academicDetailsHeading = 'Current Academic Details',
   academicEmploymentHeading = '',
   academicAwardsHeading = '',
 }) => {
@@ -104,6 +103,7 @@ const TalentPoolForm = ({
           type="text"
           ID="first-name-input"
           field="01_First_Name"
+          name="01_First_Name"
           forceClass=""
           placeholder="First Name"
           autoComplete="given-name"
@@ -117,6 +117,7 @@ const TalentPoolForm = ({
           type="text"
           ID="last-name-input"
           field="02_Last_Name"
+          name="02_Last_Name"
           forceClass=""
           placeholder=" Last Name"
           autoComplete="family-name"
@@ -131,6 +132,7 @@ const TalentPoolForm = ({
           type="text"
           ID="name-input"
           field="03_Academic_Title"
+          name="03_Academic_Title"
           forceClass=""
           placeholder="Academic Title (Role or Position)"
           required={true}
@@ -144,6 +146,7 @@ const TalentPoolForm = ({
           type="tel"
           ID="phone-input"
           field="04_phone"
+          name="04_phone"
           forceClass=""
           autoComplete="tel"
           placeholder="Phone Number"
@@ -157,92 +160,13 @@ const TalentPoolForm = ({
           type="email"
           ID="email-input"
           field="05_Email"
+          name="05_Email"
           forceClass=""
           placeholder="Email"
           autoComplete="email"
           required={true}
           colSpan={2}
         />
-      </div>
-      <h2 className="underline-full mt-10 mb-6">{workTypeHeading}</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Seeking Opportunities */}
-        <div className="form-control">
-          <label className="label cursor-pointer">
-            <input
-              tabIndex={6}
-              type="checkbox"
-              {...register(' 06_Collaborations_Checkbox')}
-              className="checkbox checkbox-warning"
-            />
-
-            <span className="label-text ml-2 mr-auto">Collaborations</span>
-          </label>
-        </div>
-        <div className="form-control">
-          <label className="label cursor-pointer">
-            <input
-              tabIndex={7}
-              type="checkbox"
-              {...register(' 07_Keynote_Checkbox')}
-              className="checkbox checkbox-warning"
-            />
-
-            <span className="label-text ml-2 mr-auto">Keynote Speaking</span>
-          </label>
-        </div>
-        <div className="form-control">
-          <label className="label cursor-pointer">
-            <input
-              tabIndex={8}
-              type="checkbox"
-              {...register(' 08_Media_Checkbox')}
-              className="checkbox checkbox-warning"
-            />
-
-            <span className="label-text ml-2 mr-auto">Media Visibility</span>
-          </label>
-        </div>
-        <div className="form-control">
-          <label className="label cursor-pointer">
-            <input
-              tabIndex={9}
-              type="checkbox"
-              {...register(' 09_Career_Job_Opportunities_Checkbox')}
-              className="checkbox checkbox-warning"
-            />
-
-            <span className="label-text ml-2 mr-auto">
-              Career Progression (Open to Job Offers)
-            </span>
-          </label>
-        </div>
-        <div className="form-control">
-          <label className="label cursor-pointer">
-            <input
-              tabIndex={10}
-              type="checkbox"
-              {...register(' 10_Seek_IP_Investors_Checkboxx')}
-              className="checkbox checkbox-warning"
-            />
-
-            <span className="label-text ml-2 mr-auto">Seek IP Investors</span>
-          </label>
-        </div>
-        <div className="form-control">
-          <label className="label cursor-pointer">
-            <input
-              tabIndex={11}
-              type="checkbox"
-              {...register(' 11_Partner_with_Industry_Checkbox')}
-              className="checkbox checkbox-warning"
-            />
-
-            <span className="label-text ml-2 mr-auto">
-              Partner with Industry
-            </span>
-          </label>
-        </div>
       </div>
       {/* Academic Details Section */}
       <h2 className="underline-full mt-10 mb-6">{academicDetailsHeading}</h2>
@@ -252,10 +176,11 @@ const TalentPoolForm = ({
         <InputBlock2
           register={register}
           errors={errors}
-          tabIndex={12}
+          tabIndex={20}
           type="text"
           ID="institution-input"
-          field="12_Institution"
+          field="20_Institution"
+          name="20_Institution"
           forceClass=""
           placeholder="Institution/University (Current, Last or Attended)"
           required={true}
@@ -267,10 +192,11 @@ const TalentPoolForm = ({
         <InputBlock2
           register={register}
           errors={errors}
-          tabIndex={13}
+          tabIndex={21}
           type="text"
           ID="department-faculty-input"
-          field="13_Department_Faculty"
+          field="21_Department_Faculty"
+          name="21_Department_Faculty"
           forceClass=""
           placeholder="Department/Faculty"
           required={true}
@@ -281,10 +207,11 @@ const TalentPoolForm = ({
         <InputBlock2
           register={register}
           errors={errors}
-          tabIndex={14}
+          tabIndex={22}
           type="text"
           ID="specialty-input"
-          field="14_Specialty"
+          field="22_Specialty"
+          name="22_Specialty"
           forceClass=""
           placeholder="Specialty"
           required={true}
@@ -295,20 +222,22 @@ const TalentPoolForm = ({
         <InputBlock2
           register={register}
           errors={errors}
-          tabIndex={15}
+          tabIndex={23}
           type="text"
           ID="location-input"
-          field="15_Institution_Location"
+          field="23_Institution_Location"
+          name="23_Institution_Location"
           forceClass=""
           placeholder="Institution Location"
           required={true}
         />
 
         <select
-          tabIndex={16}
-          {...register('16_Country')}
+          tabIndex={24}
+          {...register('24_Country')}
           id="country-select"
-          field="16_Country"
+          field="24_Country"
+          name="24_Country"
           className="select select-bordered w-full focus:outline-none focus:border-orange-500"
           required={true}
         >
@@ -333,11 +262,11 @@ const TalentPoolForm = ({
             <InputBlock2
               register={register}
               errors={errors}
-              tabIndex={13}
+              tabIndex={30}
               type="text"
               ID="institution-previous-A"
-              field="13_Institution-previous-A"
-              name="13_Institution-previous-A"
+              field="30_Institution-previous-A"
+              name="30_Institution-previous-A"
               forceClass=""
               placeholder="Institution/University (Current, Last or Attended)"
               required={true}
@@ -346,11 +275,11 @@ const TalentPoolForm = ({
             <InputBlock2
               register={register}
               errors={errors}
-              tabIndex={14}
+              tabIndex={31}
               type="text"
               ID="institution-previous-B"
-              field="14_Institution-previous-B"
-              name="14_Institution-previous-B"
+              field="31_Institution-previous-B"
+              name="31_Institution-previous-B"
               forceClass=""
               placeholder="Institution/University (Current, Last or Attended)"
               required={true}
@@ -359,11 +288,11 @@ const TalentPoolForm = ({
             <InputBlock2
               register={register}
               errors={errors}
-              tabIndex={15}
+              tabIndex={32}
               type="text"
               ID="institution-previous-C"
-              field="15_Institution-previous-C"
-              name="15_Institution-previous-C"
+              field="32_Institution-previous-C"
+              name="32_Institution-previous-C"
               forceClass=""
               placeholder="Institution/University (Current, Last or Attended)"
               required={true}
@@ -381,11 +310,11 @@ const TalentPoolForm = ({
             <InputBlock2
               register={register}
               errors={errors}
-              tabIndex={12}
+              tabIndex={40}
               type="text"
               ID="award-achievement-input-A"
-              field="16_award-achievement-A"
-              name="16_award-achievement-A"
+              field="40_award-achievement-A"
+              name="40_award-achievement-A"
               forceClass=""
               placeholder="Award or Achievement"
               required={true}
@@ -394,11 +323,11 @@ const TalentPoolForm = ({
             <InputBlock2
               register={register}
               errors={errors}
-              tabIndex={12}
+              tabIndex={41}
               type="text"
               ID="award-achievement-input-B"
-              field="17_award-achievement-B"
-              name="17_award-achievement-B"
+              field="41_award-achievement-B"
+              name="41_award-achievement-B"
               forceClass=""
               placeholder="Award or Achievement"
               required={true}
@@ -407,11 +336,11 @@ const TalentPoolForm = ({
             <InputBlock2
               register={register}
               errors={errors}
-              tabIndex={12}
+              tabIndex={42}
               type="text"
               ID="award-achievement-input-C"
-              field="18_award-achievement-C"
-              name="18_award-achievement-C"
+              field="42_award-achievement-C"
+              name="42_award-achievement-C"
               forceClass=""
               placeholder="Award or Achievement"
               required={true}
@@ -420,11 +349,11 @@ const TalentPoolForm = ({
             <InputBlock2
               register={register}
               errors={errors}
-              tabIndex={12}
+              tabIndex={43}
               type="text"
               ID="award-achievement-input-D"
-              field="19_award-achievement-D"
-              name="19_award-achievement-D"
+              field="43_award-achievement-D"
+              name="43_award-achievement-D"
               forceClass=""
               placeholder="Award or Achievement"
               required={true}
@@ -436,9 +365,9 @@ const TalentPoolForm = ({
       {/* Profile */}
       <div className="col-span-2 mt-6">
         <textarea
-          tabIndex={17}
+          tabIndex={100}
           id="profile-input"
-          field="17_Profile"
+          field="100_Profile"
           className="w-full textarea textarea-bordered focus:outline-none focus:border-orange-500"
           placeholder="OPTIONAL - Please write a brief profile noting your key skills, experience, and achievements."
         />
@@ -453,11 +382,11 @@ const TalentPoolForm = ({
         </div>
       </div>
       <div className="text-right mt-6">
-        <button tabIndex={30} type="submit" className="btn btn-aj">
-          Join Talent Pool
+        <button tabIndex={200} type="submit" className="btn btn-aj">
+          Get My Ranking
         </button>
       </div>
     </form>
   );
 };
-export default TalentPoolForm;
+export default RankingRegistrationFormAcademics;

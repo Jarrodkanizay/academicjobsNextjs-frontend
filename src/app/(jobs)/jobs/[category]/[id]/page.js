@@ -10,7 +10,7 @@ import { BsFillShareFill } from 'react-icons/bs';
 import Button from './Button';
 import { CloudCog } from 'lucide-react';
 import SubscribeForm from '@/components/forms/SubscribeForm';
-
+import { useSearchParams } from 'next/navigation';
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
   if (!job) return { title: 'not found' };
@@ -21,13 +21,19 @@ export async function generateMetadata({ params }) {
     keywords: `${title} jobs| ${company_name} university jobs| ${location} university jobs`,
   };
 }
+
 async function getJob(id) {
   const response = await fetch(`https://api2.sciencejobs.com.au/api/job/${id}`);
   const res = await response.json();
   // console.log(res);
   return res;
 }
-const JobDetailPage = async ({ params }) => {
+const JobDetailPage = async ({ params, searchParams }) => {
+  //const searchParams = useSearchParams();
+  const active = searchParams['active'] || false;
+  console.log('====444444433333333333333333333333active=====');
+  console.log(searchParams);
+  console.log('====active=====', active);
   const job = await getJob(params.id);
   console.log('job', job);
   if (!job) notFound();
@@ -45,7 +51,6 @@ const JobDetailPage = async ({ params }) => {
     featured,
     clientType,
   } = job.data;
-
   return (
     <div className="bg-white relative content-grid mx-auto  ">
       <div className="bg-slate-200 full-width">
@@ -78,11 +83,17 @@ const JobDetailPage = async ({ params }) => {
                 </Link> */}
             </div>
             <div className="flex items-center">
-              <Button
-                title={title}
-                company_name={company_name}
-                how_to_apply={how_to_apply}
-              />
+              {clientType === 'HeadlineOnly' ? (
+                <Link href="#request-job-post" className="btn btn-aj">
+                  Apply Now
+                </Link>
+              ) : (
+                <Button
+                  title={title}
+                  company_name={company_name}
+                  how_to_apply={how_to_apply}
+                />
+              )}
               <div className="ml-4">
                 <div className="">
                   <div
@@ -132,14 +143,13 @@ const JobDetailPage = async ({ params }) => {
             <div className="">
               <div
                 className={`${
-                  clientType !== 'HeadlineOnly' ? 'block' : 'hidden'
+                  clientType !== 'HeadlineOnly' || active ? 'block' : 'hidden'
                 }`}
                 dangerouslySetInnerHTML={{ __html: description }}
               />
-
               <div
                 className={`flex flex-col ${
-                  clientType === 'HeadlineOnly' ? 'block' : 'hidden'
+                  clientType === 'HeadlineOnly' && !active ? 'block' : 'hidden'
                 }`}
               >
                 <div className="flex justify-center items-center flex-wrap">
@@ -186,7 +196,6 @@ const JobDetailPage = async ({ params }) => {
               {/* </div> */}
             </div>
           }
-
           {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
         </article>
         <div className="max-h-screen overflow-y-scroll max-w-96 hidden md:block">
@@ -206,6 +215,5 @@ const JobDetailPage = async ({ params }) => {
   );
 };
 export default JobDetailPage;
-
 //  <p className='text-xl font-bold'>Headline only listing, to show full job content, click button below to:</p>
 //               <Link href={`\headline_upgrade\${company_name}`}>Upgrade to Priority Listing</Link>

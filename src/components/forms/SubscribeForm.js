@@ -1,5 +1,5 @@
 'use client';
-import React, { watch } from 'react';
+import React, { watch, useEffect, useState } from 'react';
 import countries from '@/data/CountryList.json';
 import InputBlock2 from './InputBlock2';
 // import InputBlock from './InputBlock';
@@ -17,6 +17,7 @@ const SubscribeForm = ({
   jobTitle,
   employer,
   jobId,
+  jobURL,
 }) => {
   const {
     register,
@@ -31,22 +32,34 @@ const SubscribeForm = ({
       '00_Job_ID': jobId,
       '01_Organisation_Name': employer,
       '02_Job_Title': jobTitle,
+      '03_Job_URL': jobURL,
     },
   });
 
+  // const [fullUrl, setFullUrl] = useState('');
+
+  // useEffect(() => {
+  //   setFullUrl(window.location.href);
+  // }, []);
+
   const mutation = useMutation({
     mutationFn: (data) => {
-      return BaseApi.post('/sendemail', data);
+      return BaseApi.post('/sendemail2', data);
     },
   });
 
   const onSubmit = async (data) => {
     //e.preventDefault();
-    //alert()
+    //alert("aaaa")
+    console.log('data', data);
+    data = {
+      ...data,
+      '99_url': `https://www.academicjobs.com/jobs/myjob/${jobId}`,
+    };
     console.log('data', data);
     mutation.mutate(data);
   };
-
+  // Sample URL https://www.academicjobs.com/jobs/myJob/83531?active=true
   const firstName = watch('01_First_Name');
 
   if (mutation.isLoading) {
@@ -74,17 +87,19 @@ const SubscribeForm = ({
   if (mutation.isSuccess) {
     return (
       <>
-        <h3 className="text-emerald-500">{thankYouMessage}</h3>
+        <h3 className="text-red-600">{thankYouMessage}</h3>
         {formType === 'job-request' ? (
-          <>
-            <p>Now, do you know your academic ranking?</p>
+          <div className="flex justify-between items-center">
+            <p className="text-[#ff009d]">
+              Now, do you know your academic ranking?
+            </p>
             <Link
-              className="btn btn-secondary mt-8 float-right mr-8"
+              className="btn bg-[#ff009d] hover:bg-pink-600 text-white mt-8 float-right mr-8"
               href="/the-academic-rankings/find-my-rank"
             >
               Check My Ranking
             </Link>
-          </>
+          </div>
         ) : null}
       </>
     );
@@ -144,6 +159,17 @@ const SubscribeForm = ({
             field="02_Job_Title"
             forceClass="text-black"
             placeholder="Job Title"
+            hidden={true}
+          />
+          <InputBlock2
+            register={register}
+            name="03_Job_URL"
+            errors={errors}
+            label="Job Post URL"
+            type="text"
+            field="03_Job_URL"
+            forceClass="text-black"
+            placeholder="Job URL"
             hidden={true}
           />
         </div>
