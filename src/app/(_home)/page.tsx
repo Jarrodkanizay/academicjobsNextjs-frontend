@@ -124,7 +124,7 @@ export default function myPage() {
       <div className=" mx-auto mt-8">
         <h2 className="underline-full"> Top University Employer Rankings</h2>
         <div className="bg-white flex flex-col">
-          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  px-1 mb-8 text-left px-4">
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  mb-8 text-left px-4">
             <div className="/academic-hub/happiness-and-academics/">
               <div className="card bg-slate-100 shadow-xl">
                 <div className="card-body">

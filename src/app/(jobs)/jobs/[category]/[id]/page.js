@@ -23,7 +23,10 @@ export async function generateMetadata({ params }) {
 }
 
 async function getJob(id) {
-  const response = await fetch(`https://api2.sciencejobs.com.au/api/job/${id}`, { next: { revalidate: 0 }, });
+  const response = await fetch(
+    `https://api2.sciencejobs.com.au/api/job/${id}`,
+    { next: { revalidate: 0 } }
+  );
   const res = await response.json();
   // console.log(res);
   return res;
@@ -178,7 +181,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     />
                   </div>
                 </div>
-                <details className="mt-[260px]">
+                <details className="mt-[80px]">
                   <summary class="text-[16px] text-emerald-500 cursor-pointer px-4 py-2 rounded-md text-center">
                     Recruiter Information Only
                     <HeadlineLinks />
