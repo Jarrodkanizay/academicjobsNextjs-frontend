@@ -42,7 +42,7 @@ export default function myPage() {
           alt="AcademicJobs Job Elephant Client Center"
         />
       </a> */}
-      <h2 className="aus-jobs-heading text-center mt-8 text-[50px] mb-16">
+      <h2 className="aus-jobs-heading text-center mt-8 text-[50px] mb-4">
         Welcome to Australia's University Jobs Website
       </h2>
       <div className="container mb-[50px]">
