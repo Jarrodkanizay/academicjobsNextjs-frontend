@@ -15,7 +15,7 @@ function countryRegionPlural() {
 
 export const metadata: Metadata = {
   title:
-    'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
+    'Industry Jobs in Academia', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
