@@ -45,7 +45,7 @@ export default function myPage() {
       <h2 className="aus-jobs-heading text-center mt-8 text-[50px] mb-16">
         Welcome to Australia's University Jobs Website
       </h2>
-      <div className="container">
+      <div className="container mb-[50px]">
         <Image
           src="/australian-universities.jpg"
           alt="D"
@@ -53,12 +53,12 @@ export default function myPage() {
           height={609}
         />
       </div>
-      <a
+      {/* <a
         href="#section"
-        className="scroll-smooth md:scroll-auto text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16rem]"
+        className="scroll-smooth md:scroll-auto text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16px]"
       >
         ▼
-      </a>
+      </a> */}
 
       {/* Hero Panel */}
       {/* <div
