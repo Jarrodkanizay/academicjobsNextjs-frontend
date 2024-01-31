@@ -36,7 +36,7 @@ export default function myPage() {
 
       <JobCategoryAndLocationLinks />
       {/* Set this to false to show uni logo and welcome to message */}
-      {(showJobElephant = true)}
+      {(showJobElephant = false)}
       {showJobElephant ? (
         <>
           <div className="mb-16">
