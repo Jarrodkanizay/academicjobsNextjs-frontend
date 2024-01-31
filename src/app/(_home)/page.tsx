@@ -33,14 +33,24 @@ export default function myPage() {
 
       <JobCategoryAndLocationLinks />
 
-      <a href="/jobelephant-recruitment"><Image
-              width={180}
-              height={170}
-              src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
-              className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
-              alt="AcademicJobs Job Elephant Client Center"
-                         /> </a>
-
+      {/* <a href="/jobelephant-recruitment">
+        <Image
+          width={180}
+          height={170}
+          src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
+          className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
+          alt="AcademicJobs Job Elephant Client Center"
+        />
+      </a> */}
+      <h2 className="aus-jobs-heading text-center mt-8 text-[50px] mb-16">
+        Welcome to Australia's University Jobs Website
+      </h2>
+      <Image
+        src="/australian-universities.jpg"
+        alt="D"
+        width={1200}
+        height={609}
+      />
       <a
         href="#section"
         className="scroll-smooth md:scroll-auto text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16rem]"
@@ -83,12 +93,10 @@ export default function myPage() {
         <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
           <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 pb-8  md:px-0">
             <span className="md:text-6xl font-bold text-gray-500 pb-4 ">
-              ACADEMIC JOBS: <br/> 
+              ACADEMIC JOBS: <br />
             </span>{' '}
             Academic, research & science positions locally & globally
           </h1>
-
-       
 
           <div>
             <p className="md:px-7 mb-4 mt-1">
@@ -112,115 +120,106 @@ export default function myPage() {
       </div>
 
       <div className=" mx-auto mt-8">
-          <h2 className="underline-full"> Top University Employer Rankings</h2>
-          <div className="bg-white flex flex-col">
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  px-1 mb-8 text-left px-4">
-              <div className="/academic-hub/happiness-and-academics/">
-                <div className="card bg-slate-100 shadow-xl">
-                  <div className="card-body">
-                    <h2 className="card-title">
-                      {' '}
-                     Top University Employers USA{' '}
-                    </h2>
-                    <a className=" text-gray-400"> 10 Aug, 2023</a>
-                  </div>
-                  <figure>
-                    <Image
-                      width={1280}
-                      height={380}
-                      src="/academic-job-postings/harvard-university.jpg"
-                      alt="Happiness and Academics: Scott Galloway's Algebra of hub"
-                    />
-                  </figure>
-
-                  <ul className=" p-4 pl-12 list-disc text-gray-500" >
-                    <li >Harvard University</li>
-                    <li>	Massachusetts Institute of Technology (MIT)</li>
-                    <li> Stanford University</li>
-                    <li> University of California Berkeley (UCB)</li>
-                    <li> California Institute of Technology (Caltech)</li>
-                    </ul>
-
-                  <Link
-                      href={'/academic-hub/'}
-                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
-                    >
-                      View List
-                    </Link>
+        <h2 className="underline-full"> Top University Employer Rankings</h2>
+        <div className="bg-white flex flex-col">
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  px-1 mb-8 text-left px-4">
+            <div className="/academic-hub/happiness-and-academics/">
+              <div className="card bg-slate-100 shadow-xl">
+                <div className="card-body">
+                  <h2 className="card-title"> Top University Employers USA </h2>
+                  <a className=" text-gray-400"> 10 Aug, 2023</a>
                 </div>
-              </div>
-              <div className="/top-10-australian-universities">
-                <div className="card bg-slate-100 shadow-xl">
-                  <div className="card-body">
-                    <h2 className="card-title">
-                      {' '}
-                      Top University Employers Australia{' '}
-                    </h2>
-                    <a className=" text-gray-400"> 10 Aug, 2023</a>
-                  </div>
-                  <figure>
-                    <Image
-                      width={1280}
-                      height={380}
-                      src="/academic-job-postings/university-of-sydney.jpg"
-                      alt="Top Academic Jobs Australia"
-                      className="h-[5rem]"
-                    />
-                  </figure>
-                  <ul className=" p-4 pl-12 list-disc text-gray-500" >
-                    <li >Queensland University of Technology (QUT)</li>
-                    <li>	Bond University</li>
-                    <li> The University of Sydney</li>
-                    <li> Australian National University (ANU)</li>
-                    <li> Monash University</li>
-                    </ul>
-                  <Link
-                      href={'/top-10-australian-universities'}
-                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
-                    >
-                      View List
-                    </Link>
-                </div>
-              </div>
-              <div className="/academic-hub/how-to-land-your-dream-college-job-a-step-by-step-guide/">
-                <div className="card bg-slate-100 shadow-xl">
-                  <div className="card-body">
-                    <h2 className="card-title">
-                      {' '}
-                      Top University Employers UK{' '}
-                    </h2>
-                    <a className=" text-gray-400"> 06 Jul, 2023</a>
-                  </div>
-                  <figure  >
-                    <Image
-                      width={1280}
-                      height={380}
-                      src="/academic-job-postings/top-universities-worldwide.jpg"
-                      alt="How to Land Your Dream College Job: A Step-by-Step Guide"
-                      className="h-[5rem]"
-                    />
-                  </figure>
-                  <ul className=" p-4 pl-12 list-disc text-gray-500" >
-                    <li >University of Oxford</li>
-                    <li>	Imperial College London</li>
-                    <li> University of Cambridge</li>
-                    <li> University of Edinburgh</li>
-                    <li> King’s College London</li>
-                    </ul>
-                  <Link
-                      href={'/academic-hub/'}
-                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
-                    >
-                      View List
-                    </Link>
-                </div>
-              </div>
-           
-            </ul>
-          </div>
+                <figure>
+                  <Image
+                    width={1280}
+                    height={380}
+                    src="/academic-job-postings/harvard-university.jpg"
+                    alt="Happiness and Academics: Scott Galloway's Algebra of hub"
+                  />
+                </figure>
 
-   
+                <ul className=" p-4 pl-12 list-disc text-gray-500">
+                  <li>Harvard University</li>
+                  <li> Massachusetts Institute of Technology (MIT)</li>
+                  <li> Stanford University</li>
+                  <li> University of California Berkeley (UCB)</li>
+                  <li> California Institute of Technology (Caltech)</li>
+                </ul>
+
+                <Link
+                  href={'/academic-hub/'}
+                  className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                >
+                  View List
+                </Link>
+              </div>
+            </div>
+            <div className="/top-10-australian-universities">
+              <div className="card bg-slate-100 shadow-xl">
+                <div className="card-body">
+                  <h2 className="card-title">
+                    {' '}
+                    Top University Employers Australia{' '}
+                  </h2>
+                  <a className=" text-gray-400"> 10 Aug, 2023</a>
+                </div>
+                <figure>
+                  <Image
+                    width={1280}
+                    height={380}
+                    src="/academic-job-postings/university-of-sydney.jpg"
+                    alt="Top Academic Jobs Australia"
+                    className="h-[5rem]"
+                  />
+                </figure>
+                <ul className=" p-4 pl-12 list-disc text-gray-500">
+                  <li>Queensland University of Technology (QUT)</li>
+                  <li> Bond University</li>
+                  <li> The University of Sydney</li>
+                  <li> Australian National University (ANU)</li>
+                  <li> Monash University</li>
+                </ul>
+                <Link
+                  href={'/top-10-australian-universities'}
+                  className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                >
+                  View List
+                </Link>
+              </div>
+            </div>
+            <div className="/academic-hub/how-to-land-your-dream-college-job-a-step-by-step-guide/">
+              <div className="card bg-slate-100 shadow-xl">
+                <div className="card-body">
+                  <h2 className="card-title"> Top University Employers UK </h2>
+                  <a className=" text-gray-400"> 06 Jul, 2023</a>
+                </div>
+                <figure>
+                  <Image
+                    width={1280}
+                    height={380}
+                    src="/academic-job-postings/top-universities-worldwide.jpg"
+                    alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                    className="h-[5rem]"
+                  />
+                </figure>
+                <ul className=" p-4 pl-12 list-disc text-gray-500">
+                  <li>University of Oxford</li>
+                  <li> Imperial College London</li>
+                  <li> University of Cambridge</li>
+                  <li> University of Edinburgh</li>
+                  <li> King’s College London</li>
+                </ul>
+                <Link
+                  href={'/academic-hub/'}
+                  className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                >
+                  View List
+                </Link>
+              </div>
+            </div>
+          </ul>
         </div>
+      </div>
 
       {/* <p className="px-7 text-center mt-5">
             <Link
@@ -333,7 +332,7 @@ export default function myPage() {
             </div>
           </div>
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-          <div className="column">
+            <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
@@ -352,9 +351,12 @@ export default function myPage() {
                     <Link href="">Davis, CA, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Feb 14, 2024</Link> 
+                    <Link href="">Feb 14, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4867143" className="btn btn-sm btn-aj mt-4"> 
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4867143"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
                     More Info
                   </Link>
                 </ul>
@@ -367,7 +369,8 @@ export default function myPage() {
                     href="/jobs/disability-support-programs-and-services-dsps-full-time-tenure-track-counselor/82203"
                     className="text-blue-500 font-bold"
                   >
-                    Disability Support Programs and Services (DSPS) Full-Time Tenure Track Counselor
+                    Disability Support Programs and Services (DSPS) Full-Time
+                    Tenure Track Counselor
                   </Link>
                 </li>
                 <ul className="innerUL">
@@ -380,7 +383,10 @@ export default function myPage() {
                   <li>
                     <Link href="">Feb 19, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4938583" className="btn btn-sm btn-aj mt-4"> 
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4938583"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
                     More Info
                   </Link>
                 </ul>
@@ -393,7 +399,9 @@ export default function myPage() {
                     href="/jobs/postdoctoral-fellow-in-comparative-radiobiology-translational-radiopharmaceutical-development-and-boron-neutron-capture-therapy-bnct-/82181"
                     className="text-blue-500 font-bold"
                   >
-                    Postdoctoral Fellow in Comparative Radiobiology, Translational Radiopharmaceutical Development, and Boron Neutron Capture Therapy (BNCT)
+                    Postdoctoral Fellow in Comparative Radiobiology,
+                    Translational Radiopharmaceutical Development, and Boron
+                    Neutron Capture Therapy (BNCT)
                   </Link>
                 </li>
                 <ul className="innerUL">
@@ -406,7 +414,10 @@ export default function myPage() {
                   <li>
                     <Link href="">Mar 11, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4922759" className="btn btn-sm btn-aj mt-4"> 
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4922759"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
                     More Info
                   </Link>
                 </ul>
@@ -432,7 +443,10 @@ export default function myPage() {
                   <li>
                     <Link href="">Apr 16, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4929143" className="btn btn-sm btn-aj mt-4"> 
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4929143"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
                     More Info
                   </Link>
                 </ul>
@@ -460,7 +474,10 @@ export default function myPage() {
                   <li>
                     <Link href="">Mar 11, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4921373" className="btn btn-sm btn-aj mt-4"> 
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4921373"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
                     More Info
                   </Link>
                 </ul>
@@ -486,7 +503,10 @@ export default function myPage() {
                   <li>
                     <Link href="">Mar 15, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4931492" className="btn btn-sm btn-aj mt-4"> 
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4931492"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
                     More Info
                   </Link>
                 </ul>
@@ -512,13 +532,16 @@ export default function myPage() {
                   <li>
                     <Link href=""> Feb 20, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4931492" className="btn btn-sm btn-aj mt-4"> 
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4931492"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
                     More Info
                   </Link>
                 </ul>
               </ul>
             </div>
-             <div className="column">
+            <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
@@ -538,7 +561,10 @@ export default function myPage() {
                   <li>
                     <Link href="">Mar 10, 2024</Link>
                   </li>
-                  <Link href="https://apptrkr.com/get_redirect.php?id=4918224" className="btn btn-sm btn-aj mt-4"> 
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4918224"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
                     More Info
                   </Link>
                 </ul>
@@ -646,13 +672,13 @@ export default function myPage() {
       <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
         view more top jobs →
       </Link>
-      
+
       {/* <div className="ml-2">
       {/* <Link                 href="https://cportal.jobelephant.com/login"
                  className="btn text-white mt-8 bg-[#265882] px-4"
                >
                   Post Your JobElephant Now
-               </Link></div> */} 
+               </Link></div> */}
 
       <h2 className="underline-full mt-20">Top Cities for Uni Jobs</h2>
       <div className="cate-group section23 ">

@@ -90,12 +90,9 @@ export default function Page() {
                   {/* <a href="#pricing-table-cards" className="btn btn-aj">
                     Post a Job
                   </a> */}
-                  <a
-                    href="/jobelephant/post-job"
-                    className=" btn btn-aj  rounded-xl  text-center text-white font-bold "
-                  >
+                  <Link href="/jobelephant/post-job" className="btn btn-aj">
                     Post A Job
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
