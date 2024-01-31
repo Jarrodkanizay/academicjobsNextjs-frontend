@@ -54,6 +54,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
     featured,
     clientType,
   } = job.data;
+
   return (
     <div className="bg-white relative content-grid mx-auto  ">
       <div className="bg-slate-200 full-width">
@@ -183,7 +184,9 @@ const JobDetailPage = async ({ params, searchParams }) => {
                 </div>
                 <details className="mt-[80px]">
                   <summary class="text-[16px] text-emerald-500 cursor-pointer px-4 py-2 rounded-md text-center">
-                    Recruiter Information Only
+                    <a href="#activate-quick-post">
+                      Recruiter Information Only
+                    </a>
                     <HeadlineLinks />
                   </summary>
                   <div class="px-4 py-2">
@@ -194,7 +197,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                       jobTitle={title}
                     />
                   </div>
-                </details>
+                </details>{' '}
               </div>
               {/* </div> */}
             </div>

@@ -13,10 +13,12 @@ const InputBlock = ({
   tabIndex,
   required,
   hidden,
+  showLabel = false,
 }) => {
   return (
     <div className={`w-full flex flex-col gap-1.5 items-start ${forceClass}`}>
       {hidden ? null : <label className="label-text text-xs">{label}</label>}
+      {showLabel ? <label className="label-text text-xs">{label}</label> : null}
       <input
         tabIndex={tabIndex}
         {...register(field)}

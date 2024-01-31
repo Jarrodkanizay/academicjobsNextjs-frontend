@@ -79,7 +79,10 @@ const HeadlineJobLinks = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center gap-1.5 mx-auto md:mx-0 ">
-        <a className="btn btn-accent btn-sm rounded-full my-2">
+        <a
+          className="btn btn-accent btn-sm rounded-full my-2"
+          href="#activate-quick-post"
+        >
           Activate Full Ad Now
         </a>
       </div>
