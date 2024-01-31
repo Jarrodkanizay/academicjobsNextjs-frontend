@@ -74,7 +74,7 @@ export default function myPage() {
 
                   <Link
                       href={'/academic-hub/'}
-                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                      className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
                     >
                       View List
                     </Link>
@@ -107,7 +107,7 @@ export default function myPage() {
                     </ul>
                   <Link
                       href={'/academic-hub/'}
-                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                      className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
                     >
                       View List
                     </Link>
@@ -140,7 +140,7 @@ export default function myPage() {
                     </ul>
                   <Link
                       href={'/academic-hub/'}
-                      className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                      className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
                     >
                       View List
                     </Link>

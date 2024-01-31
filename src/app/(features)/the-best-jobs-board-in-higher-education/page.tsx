@@ -30,7 +30,7 @@ export default function myPage() {
           className="hero h-screen max-h-[480px] md:max-h-[400px]"
           style={{
             backgroundImage:
-              'url(/student-jobs-on-campus/students-working-on-campus.jpg)',
+              'url(/student-jobs-on-campus/mountain.jpg)',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
           }}
@@ -325,19 +325,19 @@ export default function myPage() {
        
        
         <div
-          className="hero h-screen max-h-[480px] md:max-h-[400px]"
+          className=" h-screen max-h-[480px] md:max-h-[400px]"
           style={{
             backgroundImage:
-              'url(https://academicjobs.s3.amazonaws.com/img/banner/the+best+academic+job+opportunities.jpg)',
+              'url(https://academicjobs.s3.amazonaws.com/img/banner/the+best+academic+job+opportunities.png)',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
           }}
         >
-          <div className="hero-overlay bg-opacity-70"></div>
-          <div className="  text-center text-white py-8">
+          <div className=""></div>
+          <div className="  text-center text-white py-16">
             <div className="mr-[70rem]">
-              <h2 className="  max-w-2xl mb-5 text-2xl md:text-4xl text-white font-bold">
-               "We <span  className="text-6xl">have</span>  created  <br/><span  className="text-6xl">the world's best</span> opportunity platform for all people  <br/><span  className="text-6xl">in higher education"</span> 
+              <h2 className="  max-w-2xl mb-5 text-2xl md:text-4xl text-amber-500 font-bold">
+               "We <span  className="text-6xl">have</span>  created  <span  className="text-6xl"><br/>the world's best</span> opportunity platform for all people  <br/><span  className="text-6xl">in higher education"</span> 
               </h2>
              
               {/* <Link className="btn btn-aj" href="https://www.theacademicrankings.com/">
@@ -353,7 +353,7 @@ export default function myPage() {
 
         
         {/* Breakout Section */}
-        <div className="bg-sky-200 mb-8 mt-16 py-8 px-4">
+        <div className="bg-sky-200  py-8 px-4">
           <div className="container mx-auto">
             <h2 className="text-3xl text-center font-bold mb-8 text-sky-700">
               {countryRegionPlural()} #1 Job Board for Academic Rankings{' '}
