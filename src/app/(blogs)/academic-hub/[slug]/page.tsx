@@ -9,13 +9,13 @@ type Props = {
   params: { slug: string };
 };
 
-export function generateMetadata(
+export async function generateMetadata(
   { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   // Fetch blog data based on the slug
   // const blog = await fetch(`https://yourapi.com/blogs/${params.slug}`)
-  const blog = blogData.find((post) => post.slug === params.slug);
+  const blog = await blogData.find((post) => post.slug === params.slug);
   // Construct the metadata object
   return {
     title: blog.title,
@@ -27,10 +27,8 @@ export function generateMetadata(
           url: blog.image_url,
           alt: blog.alt,
         },
-        // Optionally include additional images or information
       ],
     },
-    // Other metadata fields can be filled here
   };
 }
 
