@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: 'About Academic Jobs', //Option 2 overrides the title in layout.tsx
+    absolute: 'About the number Academic ', //Option 2 overrides the title in layout.tsx
   },
   description:
     'The Number 1 job board for Academic Jobs.  Listing higher ed jobs for faculty at colleges and universities in the United States and around the world.',
