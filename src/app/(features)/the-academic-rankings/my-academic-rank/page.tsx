@@ -23,10 +23,11 @@ export default function Page() {
     <main className="content-grid">
       <h1>
         {/* Unlock Your Academic Potential!  */}
-        Do you know your Academic Ranking?
+        Get your Academic Ranking Today!
       </h1>
       <h2 className="mb-10">
-        Discover how you rank against your fellow academics!
+        Uncover Your Academic Standing: A Beneficial Analysis of Your
+        Performance!
       </h2>
       <p>
         All information will be validated by our team, please check in with us
@@ -133,7 +134,8 @@ export default function Page() {
           </ul>
           <p className="p-6 pb-0">
             Don't Wait — The Opportunity for Academic Excellence Awaits! Sign Up
-            Now and Propel Your Career to New Heights!
+            Now to get your Academic Ranking and Propel Your Career to New
+            Heights!
           </p>
         </div>
       </div>

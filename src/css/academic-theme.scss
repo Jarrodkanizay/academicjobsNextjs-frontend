@@ -284,6 +284,11 @@ html {
     input {
       position: relative;
     }
+    input,
+    select,
+    textarea {
+      background-color: #fff !important;
+    }
 
     .required {
       color: red;
