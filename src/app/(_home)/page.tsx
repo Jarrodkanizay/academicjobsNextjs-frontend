@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import LogoAJ from '@/components/brand/LogoAJ';
@@ -19,6 +20,8 @@ export const metadata: Metadata = {
 
 export default function myPage() {
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
+  let showJobElephant = false;
+
   return (
     <main className="content-grid">
       <div className="flex flex-col items-center justify-center mb-32">
@@ -32,33 +35,43 @@ export default function myPage() {
       </div>
 
       <JobCategoryAndLocationLinks />
-
-      {/* <a href="/jobelephant-recruitment">
-        <Image
-          width={180}
-          height={170}
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
-          className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
-          alt="AcademicJobs Job Elephant Client Center"
-        />
-      </a> */}
-      <h2 className="aus-jobs-heading text-center mt-8 text-[50px] mb-4">
-        Welcome to Australia's University Jobs Website
-      </h2>
-      <div className="container mb-[50px]">
-        <Image
-          src="/australian-universities.jpg"
-          alt="D"
-          width={1200}
-          height={609}
-        />
-      </div>
-      {/* <a
-        href="#section"
-        className="scroll-smooth md:scroll-auto text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16px]"
-      >
-        ▼
-      </a> */}
+      {/* Set this to false to show uni logo and welcome to message */}
+      {(showJobElephant = false)}
+      {showJobElephant ? (
+        <>
+          <div className="mb-16">
+            <a href="/jobelephant-recruitment">
+              <Image
+                width={180}
+                height={170}
+                src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
+                className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
+                alt="AcademicJobs Job Elephant Client Center"
+              />
+            </a>
+          </div>
+          {/* <a
+            href="#section"
+            className="scroll-smooth md:scroll-auto text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16px]"
+          >
+            ▼
+          </a> */}
+        </>
+      ) : (
+        <>
+          <h2 className="aus-jobs-heading text-center mt-8 text-[50px] mb-4">
+            Welcome to Australia's University Jobs Website
+          </h2>
+          <div className="container mb-[50px]">
+            <Image
+              src="/australian-universities.jpg"
+              alt="D"
+              width={1200}
+              height={609}
+            />
+          </div>
+        </>
+      )}
 
       {/* Hero Panel */}
       {/* <div
