@@ -247,7 +247,7 @@ const PostJobForm = ({
               <li>
                 We do the heavy lifting for you (having your job already loaded)
               </li>
-              <li>AJ QUICK POSTS = ^ VIEWS = + APPLICANTS</li>
+              <li>Academic Jobs QUICK POSTS = ^ VIEWS = + APPLICANTS</li>
             </ul>
           </div>
         </div>
