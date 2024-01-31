@@ -9,26 +9,26 @@ type Props = {
   params: { slug: string };
 };
 
-export function generateMetadata(
+export async function generateMetadata(
   { params }: Props,
   parent: ResolvingMetadata
 ): Metadata {
   // Fetch blog data based on the slug
   // const blog = await fetch(`https://yourapi.com/blogs/${params.slug}`)
-  const blog = blogData.find((post) => post.slug === params.slug);
+  const blog = await blogData.find((post) => post.slug === params.slug);
   // Construct the metadata object
   return {
     title: blog.title,
     description: blog.summary,
     keywords: blog.keywords,
-    openGraph: {
-      images: [
-        {
-          url: blog.image_url,
-          alt: blog.alt,
-        },
-      ],
-    },
+    // openGraph: {
+    //   images: [
+    //     {
+    //       url: blog.image_url,
+    //       alt: blog.alt,
+    //     },
+    //   ],
+    // },
   };
 }
 
