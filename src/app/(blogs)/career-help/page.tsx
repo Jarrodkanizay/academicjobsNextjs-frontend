@@ -24,6 +24,8 @@ export default function BlogPosts() {
   //   return date.toLocaleDateString('en-US', options);
   // }
 
+  const blogPath = '/career-help/';
+
   console.log(blogData);
   return (
     <main className="content-grid">
@@ -51,7 +53,7 @@ export default function BlogPosts() {
             {blogData.slice(0, 6).map((post, index) => (
               <article key={index} className="card bg-slate-100 shadow-xl">
                 <figure>
-                  <Link href={'/academic-hub/' + post.slug}>
+                  <Link href={blogPath + post.slug}>
                     <Image
                       src={post.image_url}
                       alt={post.alt}
@@ -64,7 +66,7 @@ export default function BlogPosts() {
                 <div className="card-body">
                   <h2 className="card-title grow">
                     <Link
-                      href={'/academic-hub/' + post.slug}
+                      href={blogPath + post.slug}
                       className="hover:text-orange-500 text-2xl"
                     >
                       {post.title}
@@ -87,7 +89,7 @@ export default function BlogPosts() {
                   </p>
                   <div className="card-actions justify-end">
                     <Link
-                      href={'/academic-hub/' + post.slug}
+                      href={blogPath + post.slug}
                       className="btn btn-aj btn-sm"
                     >
                       Read more
@@ -126,7 +128,7 @@ export default function BlogPosts() {
                 className="card bg-slate-100 shadow-xl image-full items-stretch"
               >
                 <figure>
-                  <Link href={'/academic-hub/' + post.slug}>
+                  <Link href={blogPath + post.slug}>
                     <Image
                       src={post.image_url}
                       alt={post.alt}
@@ -138,7 +140,7 @@ export default function BlogPosts() {
                 <div className="card-body">
                   <h2 className="card-title">
                     <Link
-                      href={'/academic-hub/' + post.slug}
+                      href={blogPath + post.slug}
                       className="text-white hover:text-orange-500 text-lg"
                     >
                       {post.title}
@@ -146,7 +148,7 @@ export default function BlogPosts() {
                   </h2>
                   <div className="card-actions justify-end mt-auto">
                     <Link
-                      href={'/academic-hub/' + post.slug}
+                      href={blogPath + post.slug}
                       className="btn btn-aj btn-sm"
                     >
                       Read more

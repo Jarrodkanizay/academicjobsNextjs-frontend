@@ -877,7 +877,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2023-04-05',
     updated_at: ``,
-    image_url: ``,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: ``,
     summary:
       "Join Bond University's academic staff and collaborate with some of the top higher education professionals in the world to find your future career.",
@@ -929,7 +929,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2023-04-27',
     updated_at: ``,
-    image_url: ``,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: ``,
     summary:
       'Professionals may flourish in a dynamic and cutting-edge higher education setting by pursuing a career in academic roles at Harvard University.',
@@ -982,7 +982,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2023-05-09',
     updated_at: ``,
-    image_url: ``,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: ``,
     summary:
       'Working at Harvard University offers a once-in-a-lifetime chance to join a prestigious organisation recognised for its dedication to global impact, groundbreaking research, and academic achievement.',
@@ -1034,7 +1034,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2023-06-28 ',
     updated_at: ``,
-    image_url: ``,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: ``,
     summary:
       'employment at UCLA University provides access to a rich and active academic community within the context of higher education.',
@@ -1087,7 +1087,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2023-08-24 ',
     updated_at: ``,
-    image_url: ``,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: ``,
     summary:
       'Professionals can flourish in an innovative and dynamic higher education setting by holding academic roles at UCLA.',
