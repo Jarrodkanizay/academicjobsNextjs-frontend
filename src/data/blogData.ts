@@ -1,10 +1,62 @@
 export const blogData = [
   {
+    // To Do
     status: `published`,
     rank: 1,
+    title: 'Start your Career at Harvard University ',
+    slug: `start-your-career-at-harvard-university`,
+    author: `Gabrielle Ryan`,
+    published_at: '2023-04-27',
+    updated_at: ``,
+    image_url: `/blogs/start-your-career-at-harvard-university.jpg`,
+    alt: ``,
+    summary:
+      'Professionals may flourish in a dynamic and cutting-edge higher education setting by pursuing a career in academic roles at Harvard University.',
+    tags: [],
+    keywords: 'Start your Career at Harvard University ',
+    content: `<div class="blog-content">
+    <p><br>A career at Harvard University in academic positions offers an opportunity for professionals to thrive in
+        a stimulating and innovative higher ed environment.</p>
+    <p>Harvard University offers an opportunity to engage in cutting-edge research, inspire the next generation of
+        leaders and contribute to the legacy of excellence that defines Harvard's global impact in the realm of
+        higher education. Harvard provides an intellectually stimulating environment where professionals can engage
+        in ground-breaking research, collaborate with esteemed colleagues, and contribute to the global conversation
+        across various disciplines. </p>
+    <p>Taking on an academic position at Harvard University means embarking on a journey within the pinnacle of
+        higher education. With a commitment to innovation, diversity, and leadership development, a career at
+        Harvard represents not just a job but a transformative journey where individuals can shape the future of
+        education and make a lasting impact on the world.Bottom of Form</p>
+    <p>It's not just a career move; it's an invitation to be part of an institution that has set the standard for
+        academic distinction and leadership in higher education.</p>
+    <p>Harvard offer a diverse range of academic career opportunities. </p>
+    <p>The specific careers available can vary across different faculties and departments. Here is a list of
+        potential careers at Harvard:</p>
+</div>
+
+<ul>
+    <li>Professor</li>
+    <li>Associate Professor</li>
+    <li>Senior Lecturer</li>
+    <li>Lecturer</li>
+    <li>Research Fellow</li>
+    <li>Teaching Fellow</li>
+    <li>Postdoctoral Researcher</li>
+    <li>Assistant Professor</li>
+    <li>Tutor</li>
+    <li>Academic Coordinator</li>
+    <li>Course Convenor</li>
+    <li>Research Assistant</li>
+    <li>Visiting Professor</li>
+    <li>Adjunct Professor</li>
+</ul>
+</div>`,
+  },
+  {
+    status: `published`,
+    rank: 2,
     title: 'How to Land Your Dream College Job: A Step-by-Step Guide',
     slug: `how-to-land-your-dream-college-job-a-step-by-step-guide`,
-    author: `Gabrielle Ryan`,
+    author: `Sarah West`,
     published_at: `2023-07-06`,
     updated_at: ``,
     image_url: `/blogs/dream-job.jpg`,
@@ -103,8 +155,332 @@ export const blogData = [
 `,
   },
   {
+    // To Do
     status: `published`,
-    rank: 2,
+    rank: 3,
+    title: 'Seek all Bond University Jobs Here',
+    slug: `seek-all-bond-university-jobs-here`,
+    author: `Gabrielle Ryan`,
+    published_at: '2023-04-05',
+    updated_at: ``,
+    image_url: `/blogs/exciting-careers-at-bond-university.jpg`,
+    alt: ``,
+    summary:
+      "Join Bond University's academic staff and collaborate with some of the top higher education professionals in the world to find your future career.",
+    tags: [],
+    keywords: 'Seek all Bond University Jobs Here',
+    content: `<div class="blog-content">
+    <p>Find you next job as a part of the academic team at Bond University, working alongside some of the best.
+        Working at Bond University provides an exceptional professional and academic experience, making it an ideal
+        place of employment. The university's commitment to academic excellence is manifested in its cutting-edge
+        facilities and intimate lecture settings, providing lecturers with a conducive environment for impactful
+        teaching. </p>
+    <p>
+        <o:p>&nbsp;</o:p>
+    </p>
+    <p>Bond University&rsquo;s jobs stand out for their commitment to academic excellence and world class higher ed
+        research. Bond offer an academic support system through human resources initiatives, ensuring that higher ed
+        staff receive comprehensive assistance, professional development opportunities, and ongoing training. The
+        inclusive and collaborative culture extends across various faculties, such as business, health sciences,
+        law, and more. Lecturers at Bond not only engage in innovative and research-driven lectures but also
+        contribute to a multidisciplinary academic community. This collaborative ethos, coupled with a global
+        perspective, creates an enriching and diverse workplace, making Bond University an ideal destination for
+        those seeking a fulfilling career in academia.</p>
+    <p></p>
+    <p>
+        <o:p>&nbsp;</o:p>
+    </p>
+    <p>Bond University offers a diverse range of faculties, each specializing in various academic disciplines. </p>
+    <p>The faculties at Bond University include:</p>
+</div>
+
+<ul>
+    <li>Faculty of Business</li>
+    <li>Faculty of Health Sciences and Medicine</li>
+    <li>Faculty of Law</li>
+    <li>Faculty of Society and Design</li>
+    <li>Bond Business School</li>
+    <li>Bond College (providing preparatory and foundation programs)</li>
+</ul>
+</div>
+`,
+  },
+  {
+    status: `published`,
+    rank: 4,
+    title: 'Thriving in Academic Excellence: Your Gateway to QUT Careers',
+    slug: `qut-university-academic-careers`,
+    author: `Gabrielle Ryan`,
+    published_at: `2024-01-01`,
+    updated_at: ``,
+    image_url: `/blogs/lecturer-in-action-at-qut.jpg`,
+    alt: `lecturer educating students at qut (queensland university of technology)`,
+    summary:
+      'Explore diverse academic opportunities at Queensland University of Technology (QUT). This blog unveils the enriching environment, career options, and the vibrant community that make a career at QUT a rewarding journey in higher education.',
+    tags: [
+      'Academic Jobs',
+      'QUT University',
+      'Higher Education Careers',
+      'Academic Excellence',
+      'Career Opportunities',
+      'Brisbane Community',
+    ],
+    keywords: `QUT academic positions, higher education careers, academic excellence, QUT University jobs, Brisbane academic community, diverse academic opportunities, higher ed environment, career growth in academia, QUT faculty positions, academic roles at QUT`,
+    content: `
+<div class="blog-content">
+  <p>Academic Jobs can help you kick start your career at Queensland University of Technology today!</p>
+  <p>A career at QUT University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment.</p>
+  <p>With a strong commitment to academic excellence, QUT provides a platform for educators and researchers to engage in innovative teaching and research that shapes the future of higher education. The university's focus on global perspectives, interdisciplinary collaboration, and state-of-the-art facilities fosters an environment where individuals can contribute significantly to advancements in knowledge and learning.</p>
+  <p>Academic Jobs can find your perfect uni job in the vibrant community of Brisbane. A career at QUT combines the rewards of academic excellence, professional growth, and a diverse, inclusive workplace, making it an ideal destination for those dedicated to making a meaningful impact in the field of higher education.</p>
+  <p>QUT offer a diverse range of academic career opportunities.</p>
+  <p>The specific careers available can vary across different faculties and departments. Here is a list of potential careers at QUT:</p>
+  <ul>
+    <li>Professor</li>
+    <li>Associate Professor</li>
+    <li>Senior Lecturer</li>
+    <li>Lecturer</li>
+    <li>Research Fellow</li>
+    <li>Teaching Fellow</li>
+    <li>Postdoctoral Researcher</li>
+    <li>Assistant Professor</li>
+    <li>Tutor</li>
+    <li>Academic Coordinator</li>
+    <li>Course Convenor</li>
+    <li>Research Assistant</li>
+    <li>Visiting Professor</li>
+    <li>Adjunct Professor</li>
+    <li>Academic Advisor</li>
+  </ul>
+</div>`,
+  },
+  {
+    status: `published`,
+    rank: 5,
+    title: "Happiness and Academics: Scott Galloway's Algebra of Happiness",
+    slug: `happiness-and-academics-scott-galloways-algebra-of-happiness`,
+    author: `Scott Galloway`,
+    published_at: `2023-10-16`,
+    updated_at: ``,
+    image_url: `/blogs/how-to-be-a-happy-academic.jpg`,
+    alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
+    summary:
+      'Learn how to find happiness in academia from Scott Galloway, a renowned professor and author of The Algebra of Happiness. ',
+    tags: [],
+    keywords: 'Academic Happiness. happiness and academics',
+    content: `    <div className="blog-content">
+    <p className="mb-4">
+        Scott Galloway is a professor and author who has written a book called <span className="italic">The
+            Algebra of Happiness</span>, where he shares his insights and advice on how to live a fulfilling
+        life. One of his main themes is that happiness is not a destination, but a process that involves making
+        choices, taking actions, and finding meaning.
+    </p>
+    <p>
+        Academic happiness is a term that refers to the satisfaction and well-being that students and educators
+        experience in their learning and teaching environments. Academic happiness can be influenced by many
+        factors, such as personal goals, interests, motivation, relationships, feedback, support, challenges,
+        and achievements.
+    </p>
+
+    <p>Using Scott Galloway’s algebra of happiness, we can write about academic happiness in the following way:</p>
+    <p style="padding-left: 40px;"><strong>Academic happiness </strong>= (Meaning + Relationships + Skills) x
+        (Gratitude / Expectations)</p>
+    <p style="padding-left: 40px;"><strong>Meaning:</strong> This is the sense of purpose and value that students
+        and educators derive from their academic work. Meaning can be found by pursuing topics that are relevant,
+        engaging, and aligned with one’s passions and values. Meaning can also be enhanced by connecting one’s
+        academic work to larger social issues or personal aspirations.</p>
+    <p style="padding-left: 40px;"><strong>Relationships:</strong> This is the quality and quantity of social
+        connections that students and educators have with their peers, mentors, teachers, and others in their
+        academic community. Relationships can provide support, feedback, collaboration, inspiration, and belonging.
+        Relationships can also foster positive emotions, such as joy, trust, and empathy.</p>
+    <p style="padding-left: 40px;"><strong>Skills:</strong> This is the level of competence and confidence that
+        students and educators have in their academic abilities. Skills can be developed by setting realistic goals,
+        seeking feedback, practicing deliberately, and overcoming challenges. Skills can also lead to mastery,
+        autonomy, and recognition.</p>
+    <p style="padding-left: 40px;"><strong>Gratitude:</strong> This is the appreciation and acknowledgment of the
+        positive aspects of one’s academic life. Gratitude can be expressed by thanking others for their help,
+        celebrating one’s achievements, and reflecting on one’s growth. Gratitude can also increase happiness by
+        reducing stress, enhancing optimism, and improving well-being.</p>
+    <p style="padding-left: 40px;"><strong>Expectations:</strong> This is the level of ambition and aspiration that
+        students and educators have for their academic outcomes. Expectations can be motivating and inspiring, but
+        they can also be unrealistic and stressful. Expectations can also affect happiness by creating a gap between
+        what one wants and what one has.</p>
+
+    <p className="mb-4 mt-8">
+        According to Scott Galloway’s algebra of happiness, academic happiness can be maximized by finding
+        meaning in one’s academic work, building strong relationships with others in one’s academic community,
+        developing skills that match one’s interests and goals, expressing gratitude for the opportunities and
+        achievements in one’s academic life, and adjusting expectations to be realistic and flexible.
+    <p className="mb-4"><strong>
+            Some possible additional sentences are:
+        </strong></p>
+    <ul className="list-disc ml-6">
+        <p style="padding-left: 40px;"><span style="">&gt;This formula is not meant to be a rigid or definitive
+                measure of academic happiness, but rather a guide or a reminder of the factors that can
+                influence it.</span></p>
+        <p style="padding-left: 40px;"><span style="">&gt;Academic happiness is not a static or fixed state, but
+                rather a dynamic and fluctuating process that depends on one’s choices, actions, and
+                circumstances.</span></p>
+        <p style="padding-left: 40px;"><span style="">&gt;Academic happiness is not only beneficial for
+                individual students and educators, but also for the quality and impact of their academic
+                work.</span></p>
+    </ul>
+</div>
+`,
+  },
+
+  {
+    // To Do
+    status: `published`,
+    rank: 6,
+    title: 'Seek all Harvard University Jobs Here',
+    slug: `seek-all-harvard-university-jobs-here`,
+    author: `Gabrielle Ryan`,
+    published_at: '2023-05-09',
+    updated_at: ``,
+    image_url: `/blogs/harvard-university-main.jpg`,
+    alt: ``,
+    summary:
+      'Working at Harvard University offers a once-in-a-lifetime chance to join a prestigious organisation recognised for its dedication to global impact, groundbreaking research, and academic achievement.',
+    tags: [],
+    keywords: 'Seek all Harvard University Jobs Here ',
+    content: `<div class="blog-content">
+    <p>Find you next job as a part of the academic team at Harvard University, working alongside some of the best. A
+        job at Harvard University represents an unparalleled opportunity to be part of an esteemed institution
+        renowned for its commitment to academic excellence, ground-breaking research, and global impact. Whether as
+        a professor, lecturer, researcher, or academic administrator, individuals at Harvard engage in an
+        intellectually stimulating environment where innovation, diversity, and interdisciplinary collaboration
+        flourish. </p>
+    <p>A uni job at Harvard, for those seeking academic positions, is highly desirable as it offers opportunities
+        for professional growth and engagement with a diverse and prestigious academic community, making it an ideal
+        destination for academics passionate about advancing their career in higher education. Contributing to the
+        rich tapestry of higher education, jobs at Harvard involve not only teaching and research but also shaping
+        the next generation of leaders. The university's emphasis on global perspectives, state-of-the-art
+        facilities, and a vibrant academic community makes working at Harvard an inspiring and transformative
+        experience within the realm of higher education.</p>
+    <p></p>
+    <p>Harvard University offers a wide range of academic positions across various faculties and departments. </p>
+    <p>While specific positions may vary, here is a list of academic jobs that one might find at Harvard:</p>
+
+    <ul>
+        <li>&nbsp; Professor</li>
+        <li>&nbsp; Associate Professor</li>
+        <li>&nbsp; Assistant Professor</li>
+        <li>&nbsp; Lecturer</li>
+        <li>&nbsp; Research Scientist</li>
+        <li>&nbsp; Research Fellow</li>
+        <li>&nbsp; Postdoctoral Researcher</li>
+        <li>&nbsp; Academic Advisor</li>
+        <li>&nbsp; Curator</li>
+        <li>&nbsp; Teaching Fellow</li>
+        <li>&nbsp; Visiting Scholar</li>
+        <li>&nbsp; Director of Research</li>
+        <li>&nbsp; Lab Manager</li>
+    </ul>
+</div>
+`,
+  },
+  {
+    status: `published`,
+    rank: 7,
+    title:
+      'Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise',
+    slug: `exploring-the-benefits-of-academic-jobs-online-why-virtual-hiring-is-on-the-rise`,
+    author: `Gabrielle Ryan`,
+    published_at: `2023-06-20`,
+    updated_at: ``,
+    image_url: `/blogs/people-exploring-the-benefits-of-academic-jobs-online-and-virtual-hiring.jpg`,
+    alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
+    summary:
+      'Learn how to find, apply, and succeed in your dream academic position with our expert tips and resources. ',
+    tags: [],
+    keywords: 'benefits of academic jobs online. virtual hiring is on the rise',
+    content: `
+    <div class="blog-content">
+    <p><span>Virtual hiring for academic jobs has gained significant popularity in recent years, and there
+            are several reasons why it is on the rise beyond just coping with a pandemic!</span></p>
+    <p><span>This shift to online platforms for academic job recruitment offers numerous benefits for both
+            employers and job seekers.</span></p>
+
+    <p><span>Let's explore some of these advantages:</span></p>
+
+    <p style="padding-left: 40px;"><span><strong>&gt; Access to a Larger Talent Pool:</strong> Virtual
+            hiring enables institutions to tap into a broader talent pool beyond their geographical limitations.
+            Traditional hiring processes often restrict the search to local or regional candidates. However, with
+            online platforms, universities and colleges can reach out to qualified candidates from around the world,
+            increasing the chances of finding the best fit for a position.</span></p>
+    <p style="padding-left: 40px;"><span><strong>&gt; Cost-Effectiveness:</strong> Conducting academic job
+            searches and interviews online significantly reduces costs associated with in-person interviews.
+            Institutions save money on travel expenses for candidates and search committee members. Moreover,
+            virtual hiring eliminates the need for physical venues and related logistical arrangements, resulting in
+            cost savings for the hiring institution.</span></p>
+    <p style="padding-left: 40px;"><span>&gt; <strong>Time Efficiency:</strong> Virtual hiring streamlines
+            the recruitment process and reduces the time taken to fill academic positions. Coordinating schedules
+            and arranging in-person interviews can be time-consuming, especially when multiple candidates are
+            involved. By leveraging online platforms, institutions can conduct initial screenings, interviews, and
+            even presentations more efficiently, enabling faster decision-making and hiring.</span></p>
+    <p style="padding-left: 40px;"><span><strong>&gt; Enhanced Diversity and Inclusion:</strong> The
+            virtual nature of academic job searches promotes diversity and inclusion in hiring. Geographical
+            limitations can inadvertently limit the diversity of the applicant pool in traditional hiring processes.
+            Online platforms help overcome these barriers, allowing a more diverse range of candidates to apply for
+            academic positions. This, in turn, promotes inclusivity and enriches the intellectual and cultural
+            diversity within institutions.</span></p>
+    <p style="padding-left: 40px;"><span><strong>&gt; Flexibility for Candidates:</strong> Online academic
+            job searches provide flexibility for candidates, eliminating the need to travel for preliminary
+            interviews. This is especially beneficial for individuals who may face constraints due to personal or
+            professional commitments. Virtual hiring allows candidates to participate in interviews from their
+            preferred locations, making it more convenient and accessible for a wider range of applicants.</span>
+    </p>
+    <p style="padding-left: 40px;"><span><strong>&gt; Environmental Impact:</strong> With virtual hiring,
+            there is a reduced carbon footprint associated with travel, as candidates and search committee members
+            do not need to physically commute for interviews. This aligns with the growing focus on sustainability
+            and environmental consciousness, making virtual hiring a more eco-friendly choice.</span></p>
+    <p style="padding-left: 40px;"><span><strong>&gt; Technological Advancements:</strong> Rapid
+            advancements in technology have made virtual hiring easier and more seamless than ever before. Video
+            conferencing, online collaboration tools, and applicant tracking systems have improved the efficiency
+            and effectiveness of online recruitment processes. These technological tools enable effective
+            communication and evaluation of candidates, enhancing the overall hiring experience.</span></p>
+    <p style="padding-left: 40px;"><span><strong>&gt; Metrics:</strong> Virtual recruiting allows for a
+            wide range of KPIs including time to hire, cost per hire, and candidate experience. Virtual recruiting
+            tools allow you to collect more data on candidates and their interactions with you and make it easier to
+            analyze that data in useful ways. For example, illustrating trends from their virtual experience
+            throughout the candidate’s journey. All this data means you can learn what’s really happening, and you
+            can measure the impact of your choices to better influence the outcomes of future virtual career
+            events.</span></p>
+    <p style="padding-left: 40px;"><span><strong>&gt; Scalable and Flexible:</strong> Virtual events are
+            easier to put together than hosting in-person events. Also, you can host virtual events more frequently
+            and for more specific pools of talent, giving you effective strategies for targeting your ideal
+            candidates and talent niches as broadly or as narrowly as you need. One common misconception about
+            virtual recruiting technologies is that they only work for remote positions—but this simply isn’t the
+            case. Even when the majority of positions will be onsite, talent acquisition teams are shifting to
+            digital tools and hybrid recruiting events to gain efficiencies of scale, deliver a quality candidate
+            experience, and shorten time to hire.</span></p>
+    <p style="padding-left: 40px;"><span><strong>&gt; Better Candidate Experience:</strong> According to
+            recent TalentBoard research, candidate resentment saw its largest spike in a decade. Virtual recruiting
+            makes the recruiting process faster, more engaging, and consistent—all of which help boost the overall
+            quality of the interview experience for job seekers and recruiters alike.&nbsp;</span></p>
+    <p style="padding-left: 40px;"><span><strong>&gt; Remote is Part of the New Normal:</strong> Prior to
+            the pandemic, many employers believed that job seekers wouldn’t be comfortable interviewing online. But
+            as we all know, technology played a huge part in maintaining some semblance of ‘normal’ life during the
+            health crisis, from remote work and telehealth to online ordering and contactless pickup. Employers that
+            adopted virtual recruiting early in the pandemic quickly learned that job seekers not only respond
+            positively to this application of technology, but that virtual recruiting enabled them to reach more
+            candidates, meet more diverse talent, and more effectively engage with job seekers throughout the
+            recruiting process.&nbsp;</span></p>
+
+    <p><span>Overall, the rise of virtual hiring for academic jobs offers numerous benefits, including
+            expanded access to talent, cost savings, time efficiency, enhanced diversity, increased satisfaction and
+            flexibility for candidates, environmental sustainability, and leveraging advanced technologies. As these
+            advantages continue to be recognized, it is likely that virtual hiring will become increasingly common
+            in the academic job market.</span></p>
+    <p><span>If you want to talk to us more about virtual hiring, contact us at <a
+                href="https://academicjobs.com/contact-us/">AcademicJobs</a>.</span></p>
+</div>
+  `,
+  },
+
+  {
+    status: `published`,
+    rank: 8,
     title:
       'Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges',
     slug: `exploring-global-landscape-academic-jobs-opportunities-challenges`,
@@ -216,181 +592,7 @@ export const blogData = [
 
   {
     status: `published`,
-    rank: 3,
-    title:
-      'Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise',
-    slug: `exploring-the-benefits-of-academic-jobs-online-why-virtual-hiring-is-on-the-rise`,
-    author: `Gabrielle Ryan`,
-    published_at: `2023-06-20`,
-    updated_at: ``,
-    image_url: `/blogs/people-exploring-the-benefits-of-academic-jobs-online-and-virtual-hiring.jpg`,
-    alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
-    summary:
-      'Learn how to find, apply, and succeed in your dream academic position with our expert tips and resources. ',
-    tags: [],
-    keywords: 'benefits of academic jobs online. virtual hiring is on the rise',
-    content: `
-    <div class="blog-content">
-    <p><span>Virtual hiring for academic jobs has gained significant popularity in recent years, and there
-            are several reasons why it is on the rise beyond just coping with a pandemic!</span></p>
-    <p><span>This shift to online platforms for academic job recruitment offers numerous benefits for both
-            employers and job seekers.</span></p>
-
-    <p><span>Let's explore some of these advantages:</span></p>
-
-    <p style="padding-left: 40px;"><span><strong>&gt; Access to a Larger Talent Pool:</strong> Virtual
-            hiring enables institutions to tap into a broader talent pool beyond their geographical limitations.
-            Traditional hiring processes often restrict the search to local or regional candidates. However, with
-            online platforms, universities and colleges can reach out to qualified candidates from around the world,
-            increasing the chances of finding the best fit for a position.</span></p>
-    <p style="padding-left: 40px;"><span><strong>&gt; Cost-Effectiveness:</strong> Conducting academic job
-            searches and interviews online significantly reduces costs associated with in-person interviews.
-            Institutions save money on travel expenses for candidates and search committee members. Moreover,
-            virtual hiring eliminates the need for physical venues and related logistical arrangements, resulting in
-            cost savings for the hiring institution.</span></p>
-    <p style="padding-left: 40px;"><span>&gt; <strong>Time Efficiency:</strong> Virtual hiring streamlines
-            the recruitment process and reduces the time taken to fill academic positions. Coordinating schedules
-            and arranging in-person interviews can be time-consuming, especially when multiple candidates are
-            involved. By leveraging online platforms, institutions can conduct initial screenings, interviews, and
-            even presentations more efficiently, enabling faster decision-making and hiring.</span></p>
-    <p style="padding-left: 40px;"><span><strong>&gt; Enhanced Diversity and Inclusion:</strong> The
-            virtual nature of academic job searches promotes diversity and inclusion in hiring. Geographical
-            limitations can inadvertently limit the diversity of the applicant pool in traditional hiring processes.
-            Online platforms help overcome these barriers, allowing a more diverse range of candidates to apply for
-            academic positions. This, in turn, promotes inclusivity and enriches the intellectual and cultural
-            diversity within institutions.</span></p>
-    <p style="padding-left: 40px;"><span><strong>&gt; Flexibility for Candidates:</strong> Online academic
-            job searches provide flexibility for candidates, eliminating the need to travel for preliminary
-            interviews. This is especially beneficial for individuals who may face constraints due to personal or
-            professional commitments. Virtual hiring allows candidates to participate in interviews from their
-            preferred locations, making it more convenient and accessible for a wider range of applicants.</span>
-    </p>
-    <p style="padding-left: 40px;"><span><strong>&gt; Environmental Impact:</strong> With virtual hiring,
-            there is a reduced carbon footprint associated with travel, as candidates and search committee members
-            do not need to physically commute for interviews. This aligns with the growing focus on sustainability
-            and environmental consciousness, making virtual hiring a more eco-friendly choice.</span></p>
-    <p style="padding-left: 40px;"><span><strong>&gt; Technological Advancements:</strong> Rapid
-            advancements in technology have made virtual hiring easier and more seamless than ever before. Video
-            conferencing, online collaboration tools, and applicant tracking systems have improved the efficiency
-            and effectiveness of online recruitment processes. These technological tools enable effective
-            communication and evaluation of candidates, enhancing the overall hiring experience.</span></p>
-    <p style="padding-left: 40px;"><span><strong>&gt; Metrics:</strong> Virtual recruiting allows for a
-            wide range of KPIs including time to hire, cost per hire, and candidate experience. Virtual recruiting
-            tools allow you to collect more data on candidates and their interactions with you and make it easier to
-            analyze that data in useful ways. For example, illustrating trends from their virtual experience
-            throughout the candidate’s journey. All this data means you can learn what’s really happening, and you
-            can measure the impact of your choices to better influence the outcomes of future virtual career
-            events.</span></p>
-    <p style="padding-left: 40px;"><span><strong>&gt; Scalable and Flexible:</strong> Virtual events are
-            easier to put together than hosting in-person events. Also, you can host virtual events more frequently
-            and for more specific pools of talent, giving you effective strategies for targeting your ideal
-            candidates and talent niches as broadly or as narrowly as you need. One common misconception about
-            virtual recruiting technologies is that they only work for remote positions—but this simply isn’t the
-            case. Even when the majority of positions will be onsite, talent acquisition teams are shifting to
-            digital tools and hybrid recruiting events to gain efficiencies of scale, deliver a quality candidate
-            experience, and shorten time to hire.</span></p>
-    <p style="padding-left: 40px;"><span><strong>&gt; Better Candidate Experience:</strong> According to
-            recent TalentBoard research, candidate resentment saw its largest spike in a decade. Virtual recruiting
-            makes the recruiting process faster, more engaging, and consistent—all of which help boost the overall
-            quality of the interview experience for job seekers and recruiters alike.&nbsp;</span></p>
-    <p style="padding-left: 40px;"><span><strong>&gt; Remote is Part of the New Normal:</strong> Prior to
-            the pandemic, many employers believed that job seekers wouldn’t be comfortable interviewing online. But
-            as we all know, technology played a huge part in maintaining some semblance of ‘normal’ life during the
-            health crisis, from remote work and telehealth to online ordering and contactless pickup. Employers that
-            adopted virtual recruiting early in the pandemic quickly learned that job seekers not only respond
-            positively to this application of technology, but that virtual recruiting enabled them to reach more
-            candidates, meet more diverse talent, and more effectively engage with job seekers throughout the
-            recruiting process.&nbsp;</span></p>
-
-    <p><span>Overall, the rise of virtual hiring for academic jobs offers numerous benefits, including
-            expanded access to talent, cost savings, time efficiency, enhanced diversity, increased satisfaction and
-            flexibility for candidates, environmental sustainability, and leveraging advanced technologies. As these
-            advantages continue to be recognized, it is likely that virtual hiring will become increasingly common
-            in the academic job market.</span></p>
-    <p><span>If you want to talk to us more about virtual hiring, contact us at <a
-                href="https://academicjobs.com/contact-us/">AcademicJobs</a>.</span></p>
-</div>
-  `,
-  },
-
-  {
-    status: `published`,
-    rank: 4,
-    title: "Happiness and Academics: Scott Galloway's Algebra of Happiness",
-    slug: `happiness-and-academics-scott-galloways-algebra-of-happiness`,
-    author: `Scott Galloway`,
-    published_at: `2023-10-16`,
-    updated_at: ``,
-    image_url: `/blogs/how-to-be-a-happy-academic.jpg`,
-    alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
-    summary:
-      'Learn how to find happiness in academia from Scott Galloway, a renowned professor and author of The Algebra of Happiness. ',
-    tags: [],
-    keywords: 'Academic Happiness. happiness and academics',
-    content: `    <div className="blog-content">
-    <p className="mb-4">
-        Scott Galloway is a professor and author who has written a book called <span className="italic">The
-            Algebra of Happiness</span>, where he shares his insights and advice on how to live a fulfilling
-        life. One of his main themes is that happiness is not a destination, but a process that involves making
-        choices, taking actions, and finding meaning.
-    </p>
-    <p>
-        Academic happiness is a term that refers to the satisfaction and well-being that students and educators
-        experience in their learning and teaching environments. Academic happiness can be influenced by many
-        factors, such as personal goals, interests, motivation, relationships, feedback, support, challenges,
-        and achievements.
-    </p>
-
-    <p>Using Scott Galloway’s algebra of happiness, we can write about academic happiness in the following way:</p>
-    <p style="padding-left: 40px;"><strong>Academic happiness </strong>= (Meaning + Relationships + Skills) x
-        (Gratitude / Expectations)</p>
-    <p style="padding-left: 40px;"><strong>Meaning:</strong> This is the sense of purpose and value that students
-        and educators derive from their academic work. Meaning can be found by pursuing topics that are relevant,
-        engaging, and aligned with one’s passions and values. Meaning can also be enhanced by connecting one’s
-        academic work to larger social issues or personal aspirations.</p>
-    <p style="padding-left: 40px;"><strong>Relationships:</strong> This is the quality and quantity of social
-        connections that students and educators have with their peers, mentors, teachers, and others in their
-        academic community. Relationships can provide support, feedback, collaboration, inspiration, and belonging.
-        Relationships can also foster positive emotions, such as joy, trust, and empathy.</p>
-    <p style="padding-left: 40px;"><strong>Skills:</strong> This is the level of competence and confidence that
-        students and educators have in their academic abilities. Skills can be developed by setting realistic goals,
-        seeking feedback, practicing deliberately, and overcoming challenges. Skills can also lead to mastery,
-        autonomy, and recognition.</p>
-    <p style="padding-left: 40px;"><strong>Gratitude:</strong> This is the appreciation and acknowledgment of the
-        positive aspects of one’s academic life. Gratitude can be expressed by thanking others for their help,
-        celebrating one’s achievements, and reflecting on one’s growth. Gratitude can also increase happiness by
-        reducing stress, enhancing optimism, and improving well-being.</p>
-    <p style="padding-left: 40px;"><strong>Expectations:</strong> This is the level of ambition and aspiration that
-        students and educators have for their academic outcomes. Expectations can be motivating and inspiring, but
-        they can also be unrealistic and stressful. Expectations can also affect happiness by creating a gap between
-        what one wants and what one has.</p>
-
-    <p className="mb-4 mt-8">
-        According to Scott Galloway’s algebra of happiness, academic happiness can be maximized by finding
-        meaning in one’s academic work, building strong relationships with others in one’s academic community,
-        developing skills that match one’s interests and goals, expressing gratitude for the opportunities and
-        achievements in one’s academic life, and adjusting expectations to be realistic and flexible.
-    <p className="mb-4"><strong>
-            Some possible additional sentences are:
-        </strong></p>
-    <ul className="list-disc ml-6">
-        <p style="padding-left: 40px;"><span style="">&gt;This formula is not meant to be a rigid or definitive
-                measure of academic happiness, but rather a guide or a reminder of the factors that can
-                influence it.</span></p>
-        <p style="padding-left: 40px;"><span style="">&gt;Academic happiness is not a static or fixed state, but
-                rather a dynamic and fluctuating process that depends on one’s choices, actions, and
-                circumstances.</span></p>
-        <p style="padding-left: 40px;"><span style="">&gt;Academic happiness is not only beneficial for
-                individual students and educators, but also for the quality and impact of their academic
-                work.</span></p>
-    </ul>
-</div>
-`,
-  },
-
-  {
-    status: `published`,
-    rank: 5,
+    rank: 9,
     title: 'Top Academic Jobs Australia',
     slug: `choosing-the-best-university-in-australia-for-2023`,
     author: `Gabrielle Ryan`,
@@ -455,7 +657,7 @@ export const blogData = [
 
   {
     status: `published`,
-    rank: 6,
+    rank: 10,
     title:
       'The Evolution of University Recruitment: Embracing Digital Platforms',
     slug: `evolution-of-university-recruitment`,
@@ -528,7 +730,7 @@ export const blogData = [
 
   {
     status: `published`,
-    rank: 7,
+    rank: 11,
     title: 'The Highest Paid Academic Jobs Australia for 2023',
     slug: `the-highest-paid-academic-job-of-2023`,
     author: `Gabrielle Ryan`,
@@ -612,7 +814,7 @@ export const blogData = [
 
   {
     status: `published`,
-    rank: 8,
+    rank: 12,
     title:
       'Unveiling the Apex of Academic Leadership: The Chief Research Officer in 2023',
     slug: `chief-research-officer-academic-leadership-2023`,
@@ -672,7 +874,7 @@ export const blogData = [
 
   {
     status: `published`,
-    rank: 9,
+    rank: 13,
     title:
       'Unlocking the Benefits of On-Campus Student Jobs: A Holistic Approach to Education',
     slug: `unlocking-benefits-on-campus-student-jobs`,
@@ -719,56 +921,7 @@ export const blogData = [
 
   {
     status: `published`,
-    rank: 10,
-    title: 'Thriving in Academic Excellence: Your Gateway to QUT Careers',
-    slug: `qut-university-academic-careers`,
-    author: `Gabrielle Ryan`,
-    published_at: `2024-01-01`,
-    updated_at: ``,
-    image_url: `/blogs/lecturer-in-action-at-qut.jpg`,
-    alt: `lecturer educating students at qut (queensland university of technology)`,
-    summary:
-      'Explore diverse academic opportunities at Queensland University of Technology (QUT). This blog unveils the enriching environment, career options, and the vibrant community that make a career at QUT a rewarding journey in higher education.',
-    tags: [
-      'Academic Jobs',
-      'QUT University',
-      'Higher Education Careers',
-      'Academic Excellence',
-      'Career Opportunities',
-      'Brisbane Community',
-    ],
-    keywords: `QUT academic positions, higher education careers, academic excellence, QUT University jobs, Brisbane academic community, diverse academic opportunities, higher ed environment, career growth in academia, QUT faculty positions, academic roles at QUT`,
-    content: `
-<div class="blog-content">
-  <p>Academic Jobs can help you kick start your career at Queensland University of Technology today!</p>
-  <p>A career at QUT University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment.</p>
-  <p>With a strong commitment to academic excellence, QUT provides a platform for educators and researchers to engage in innovative teaching and research that shapes the future of higher education. The university's focus on global perspectives, interdisciplinary collaboration, and state-of-the-art facilities fosters an environment where individuals can contribute significantly to advancements in knowledge and learning.</p>
-  <p>Academic Jobs can find your perfect uni job in the vibrant community of Brisbane. A career at QUT combines the rewards of academic excellence, professional growth, and a diverse, inclusive workplace, making it an ideal destination for those dedicated to making a meaningful impact in the field of higher education.</p>
-  <p>QUT offer a diverse range of academic career opportunities.</p>
-  <p>The specific careers available can vary across different faculties and departments. Here is a list of potential careers at QUT:</p>
-  <ul>
-    <li>Professor</li>
-    <li>Associate Professor</li>
-    <li>Senior Lecturer</li>
-    <li>Lecturer</li>
-    <li>Research Fellow</li>
-    <li>Teaching Fellow</li>
-    <li>Postdoctoral Researcher</li>
-    <li>Assistant Professor</li>
-    <li>Tutor</li>
-    <li>Academic Coordinator</li>
-    <li>Course Convenor</li>
-    <li>Research Assistant</li>
-    <li>Visiting Professor</li>
-    <li>Adjunct Professor</li>
-    <li>Academic Advisor</li>
-  </ul>
-</div>`,
-  },
-
-  {
-    status: `published`,
-    rank: 11,
+    rank: 14,
     title: 'Seek all QUT University Jobs Here',
     slug: `find-all-qut-university-jobs-here`,
     author: `Gabrielle Ryan`,
@@ -812,7 +965,7 @@ export const blogData = [
   {
     // To Do
     status: `published`,
-    rank: 12,
+    rank: 15,
     title: 'Seek all Bond University Careers Here',
     slug: `find-all-bond-university-careers-here`,
     author: `Gabrielle Ryan`,
@@ -871,170 +1024,13 @@ export const blogData = [
   {
     // To Do
     status: `published`,
-    rank: 13,
-    title: 'Seek all Bond University Jobs Here',
-    slug: `seek-all-bond-university-jobs-here`,
-    author: `Gabrielle Ryan`,
-    published_at: '2023-04-05',
-    updated_at: ``,
-    image_url: `/placeholders/placeholder-image.jpg`,
-    alt: ``,
-    summary:
-      "Join Bond University's academic staff and collaborate with some of the top higher education professionals in the world to find your future career.",
-    tags: [],
-    keywords: 'Seek all Bond University Jobs Here',
-    content: `<div class="blog-content">
-    <p>Find you next job as a part of the academic team at Bond University, working alongside some of the best.
-        Working at Bond University provides an exceptional professional and academic experience, making it an ideal
-        place of employment. The university's commitment to academic excellence is manifested in its cutting-edge
-        facilities and intimate lecture settings, providing lecturers with a conducive environment for impactful
-        teaching. </p>
-    <p>
-        <o:p>&nbsp;</o:p>
-    </p>
-    <p>Bond University&rsquo;s jobs stand out for their commitment to academic excellence and world class higher ed
-        research. Bond offer an academic support system through human resources initiatives, ensuring that higher ed
-        staff receive comprehensive assistance, professional development opportunities, and ongoing training. The
-        inclusive and collaborative culture extends across various faculties, such as business, health sciences,
-        law, and more. Lecturers at Bond not only engage in innovative and research-driven lectures but also
-        contribute to a multidisciplinary academic community. This collaborative ethos, coupled with a global
-        perspective, creates an enriching and diverse workplace, making Bond University an ideal destination for
-        those seeking a fulfilling career in academia.</p>
-    <p></p>
-    <p>
-        <o:p>&nbsp;</o:p>
-    </p>
-    <p>Bond University offers a diverse range of faculties, each specializing in various academic disciplines. </p>
-    <p>The faculties at Bond University include:</p>
-</div>
-
-<ul>
-    <li>Faculty of Business</li>
-    <li>Faculty of Health Sciences and Medicine</li>
-    <li>Faculty of Law</li>
-    <li>Faculty of Society and Design</li>
-    <li>Bond Business School</li>
-    <li>Bond College (providing preparatory and foundation programs)</li>
-</ul>
-</div>
-`,
-  },
-
-  {
-    // To Do
-    status: `published`,
-    rank: 14,
-    title: 'Start your Career at Harvard University ',
-    slug: `start-your-career-at-harvard-university`,
-    author: `Gabrielle Ryan`,
-    published_at: '2023-04-27',
-    updated_at: ``,
-    image_url: `/placeholders/placeholder-image.jpg`,
-    alt: ``,
-    summary:
-      'Professionals may flourish in a dynamic and cutting-edge higher education setting by pursuing a career in academic roles at Harvard University.',
-    tags: [],
-    keywords: 'Start your Career at Harvard University ',
-    content: `<div class="blog-content">
-    <p><br>A career at Harvard University in academic positions offers an opportunity for professionals to thrive in
-        a stimulating and innovative higher ed environment.</p>
-    <p>Harvard University offers an opportunity to engage in cutting-edge research, inspire the next generation of
-        leaders and contribute to the legacy of excellence that defines Harvard's global impact in the realm of
-        higher education. Harvard provides an intellectually stimulating environment where professionals can engage
-        in ground-breaking research, collaborate with esteemed colleagues, and contribute to the global conversation
-        across various disciplines. </p>
-    <p>Taking on an academic position at Harvard University means embarking on a journey within the pinnacle of
-        higher education. With a commitment to innovation, diversity, and leadership development, a career at
-        Harvard represents not just a job but a transformative journey where individuals can shape the future of
-        education and make a lasting impact on the world.Bottom of Form</p>
-    <p>It's not just a career move; it's an invitation to be part of an institution that has set the standard for
-        academic distinction and leadership in higher education.</p>
-    <p>Harvard offer a diverse range of academic career opportunities. </p>
-    <p>The specific careers available can vary across different faculties and departments. Here is a list of
-        potential careers at Harvard:</p>
-</div>
-
-<ul>
-    <li>Professor</li>
-    <li>Associate Professor</li>
-    <li>Senior Lecturer</li>
-    <li>Lecturer</li>
-    <li>Research Fellow</li>
-    <li>Teaching Fellow</li>
-    <li>Postdoctoral Researcher</li>
-    <li>Assistant Professor</li>
-    <li>Tutor</li>
-    <li>Academic Coordinator</li>
-    <li>Course Convenor</li>
-    <li>Research Assistant</li>
-    <li>Visiting Professor</li>
-    <li>Adjunct Professor</li>
-</ul>
-</div>`,
-  },
-
-  {
-    // To Do
-    status: `published`,
-    rank: 15,
-    title: 'Seek all Harvard University Jobs Here',
-    slug: `seek-all-harvard-university-jobs-here`,
-    author: `Gabrielle Ryan`,
-    published_at: '2023-05-09',
-    updated_at: ``,
-    image_url: `/placeholders/placeholder-image.jpg`,
-    alt: ``,
-    summary:
-      'Working at Harvard University offers a once-in-a-lifetime chance to join a prestigious organisation recognised for its dedication to global impact, groundbreaking research, and academic achievement.',
-    tags: [],
-    keywords: 'Seek all Harvard University Jobs Here ',
-    content: `<div class="blog-content">
-    <p>Find you next job as a part of the academic team at Harvard University, working alongside some of the best. A
-        job at Harvard University represents an unparalleled opportunity to be part of an esteemed institution
-        renowned for its commitment to academic excellence, ground-breaking research, and global impact. Whether as
-        a professor, lecturer, researcher, or academic administrator, individuals at Harvard engage in an
-        intellectually stimulating environment where innovation, diversity, and interdisciplinary collaboration
-        flourish. </p>
-    <p>A uni job at Harvard, for those seeking academic positions, is highly desirable as it offers opportunities
-        for professional growth and engagement with a diverse and prestigious academic community, making it an ideal
-        destination for academics passionate about advancing their career in higher education. Contributing to the
-        rich tapestry of higher education, jobs at Harvard involve not only teaching and research but also shaping
-        the next generation of leaders. The university's emphasis on global perspectives, state-of-the-art
-        facilities, and a vibrant academic community makes working at Harvard an inspiring and transformative
-        experience within the realm of higher education.</p>
-    <p></p>
-    <p>Harvard University offers a wide range of academic positions across various faculties and departments. </p>
-    <p>While specific positions may vary, here is a list of academic jobs that one might find at Harvard:</p>
-
-    <ul>
-        <li>&nbsp; Professor</li>
-        <li>&nbsp; Associate Professor</li>
-        <li>&nbsp; Assistant Professor</li>
-        <li>&nbsp; Lecturer</li>
-        <li>&nbsp; Research Scientist</li>
-        <li>&nbsp; Research Fellow</li>
-        <li>&nbsp; Postdoctoral Researcher</li>
-        <li>&nbsp; Academic Advisor</li>
-        <li>&nbsp; Curator</li>
-        <li>&nbsp; Teaching Fellow</li>
-        <li>&nbsp; Visiting Scholar</li>
-        <li>&nbsp; Director of Research</li>
-        <li>&nbsp; Lab Manager</li>
-    </ul>
-</div>
-`,
-  },
-
-  {
-    // To Do
-    status: `published`,
     rank: 16,
     title: 'Seek all UCLA Jobs Here ',
     slug: `seek-all-ucla-jobs-here`,
     author: `Gabrielle Ryan`,
     published_at: '2023-06-28 ',
     updated_at: ``,
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/find-all-ucla-jobs-here.jpg`,
     alt: ``,
     summary:
       'employment at UCLA University provides access to a rich and active academic community within the context of higher education.',
@@ -1082,12 +1078,12 @@ export const blogData = [
     // To Do
     status: `published`,
     rank: 17,
-    title: 'Start you Career at UCLA ',
+    title: 'Start your Career at UCLA ',
     slug: `start-your-career-at-ucla`,
     author: `Gabrielle Ryan`,
     published_at: '2023-08-24 ',
     updated_at: ``,
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/start-a-career-at-ucla.jpg`,
     alt: ``,
     summary:
       'Professionals can flourish in an innovative and dynamic higher education setting by holding academic roles at UCLA.',
