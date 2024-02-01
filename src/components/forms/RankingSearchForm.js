@@ -34,7 +34,9 @@ const RankingSearchForm = ({ maxWidth }) => {
     console.log('data', data);
     mutation.mutate(data);
 
-    localStorage.setItem('formRankData', JSON.stringify(data));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('formRankData', JSON.stringify(data));
+    }
   };
 
   const firstName = watch('01_First_Name');
