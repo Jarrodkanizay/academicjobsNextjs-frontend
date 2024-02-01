@@ -27,8 +27,6 @@ const RankingRegistrationFormAcademics = ({
     },
   });
 
-  const formData = JSON.parse(localStorage.getItem('formRankData'));
-
   const mutation = useMutation({
     mutationFn: (data) => {
       return BaseApi.post('/sendemail', data);
