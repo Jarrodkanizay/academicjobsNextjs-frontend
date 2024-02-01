@@ -45,11 +45,13 @@ const RankingRegistrationFormAcademics = ({
   };
 
   useEffect(() => {
-    const formData = JSON.parse(localStorage.getItem('formRankData'));
+    if (typeof window !== 'undefined') {
+      const formData = JSON.parse(localStorage.getItem('formRankData'));
 
-    if (formData) {
-      for (const [key, value] of Object.entries(formData)) {
-        setValue(key, value);
+      if (formData) {
+        for (const [key, value] of Object.entries(formData)) {
+          setValue(key, value);
+        }
       }
     }
   }, [setValue]);
