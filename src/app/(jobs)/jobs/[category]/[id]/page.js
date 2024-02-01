@@ -58,16 +58,16 @@ const JobDetailPage = async ({ params, searchParams }) => {
   return (
     <div className="bg-white relative content-grid mx-auto  ">
       <div className="bg-slate-200 full-width">
-        <div className="flex items-center p-4 gap-8">
+        <div className="md:flex items-center p-4 gap-8">
           <div className="md:w-1/4 md:pr-4 md:p-8">
             <Link
               href={`/employers/${company_name
                 ?.replace(/\W+/g, '-')
                 .toLowerCase()}/${employer_id}/`}
             >
-              <div className="w-full rounded-xl p-4 bg-white">
+              <div className="w-full rounded-lg p-4 bg-white">
                 <Image
-                  className="w-full rounded-xl"
+                  className="w-full "
                   src={
                     `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` ||
                     ''
@@ -115,7 +115,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
       </div>
       <div className="flex flex-wrap bg-white p-4 mb-4">
         {/* ... (rest of the component remains unchanged) */}
-        <div className="flex justify-between md:gap-16 items-center">
+        <div className="flex justify-between gap-4 md:gap-16 items-center">
           <div className="text-sm text-gray-600">
             <div className="mb-1">{company_name}</div>
             <div className="text-gray-700 font-light">{location}</div>
