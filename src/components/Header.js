@@ -126,9 +126,9 @@ export default function Header() {
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url="/academic-hub"
+            url="/career-help"
             icon="/network-icon.svg"
-            navLink="My Academic Hub"
+            navLink="Career Help"
             onClick={() => setIsNavOpen(false)}
           />
           <div

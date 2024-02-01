@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import SubscribeForm from '@/components/forms/SubscribeForm';
 
 const countryRegion = 'World';
 
@@ -26,75 +27,76 @@ export default function myPage() {
     <>
       <main>
         {/* Hero banner */}
+
         <div
-          className="hero h-screen max-h-[480px] md:max-h-[400px]"
-          style={{
-            backgroundImage:
-              'url(/student-jobs-on-campus/students-working-on-campus.jpg)',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-          }}
+          className="hero h-screen max-h-[480px] md:max-h-[400px"
+          // style={{ backgroundColor: 'bg-slate-200' }}
         >
           <div className="hero-overlay bg-opacity-70"></div>
-          <div className="hero-content text-white">
+          <div className="hero-content">
             <div className="max-w-2xl">
-              <h1 className="mb-5 text-2xl text-white md:text-4xl font-bold">
-              "The best thing a human being can do is to help another human being know more."
+              <h1 className="mb-16 text-2xl text-white text-center md:text-4xl font-bold">
+                "The best thing a human being can do is to help another human
+                being know more."
               </h1>
-              
+              <SubscribeForm
+                formName="Subscribe to Newsletter (/the-academic-rankings Page)"
+                buttonText="Let us Help"
+                thankYouMessage="Thanks for joining our help area!"
+                placeholder="Enter your email"
+                formType="subscribe"
+              />
             </div>
           </div>
         </div>
-       
+
         <h2 className="text-4xl font-bold mb-8 mt-20 text-sky-600 text-center">
-        WE SEE YOU </h2>
-  
+          WE SEE YOU{' '}
+        </h2>
+
         <h2 className="text-4xl font-bold mb-8 text-sky-600 text-center">
-        LET YOUR ACADEMIC RANKING TAKE YOU HIGHER </h2>
+          LET YOUR ACADEMIC RANKING TAKE YOU HIGHER{' '}
+        </h2>
+        <p className="text-center">Are you looking for a change in scenery?</p>
         <p className="text-center">
-         Are you looking for a change in scenery?
+          Do you want to collaborate with others with similar interests?
         </p>
         <p className="text-center">
-        Do you want to collaborate with others with similar interests?
+          Do you wish to develop your own interest areas alongside teaching
+          others?
         </p>
-        <p className="text-center">
-        Do you wish to develop your own interest areas alongside teaching others?
-        </p>
-        
+
         <div className="text-center">
-        <Link
-                href=""
-                className="btn btn-aj"
-              >
-                PRESS HERE TO FIND YOUR ACADEMIC RANK….
+          <Link href="" className="btn btn-aj">
+            PRESS HERE TO FIND YOUR ACADEMIC RANK….
+          </Link>
+        </div>
 
-              </Link>
-             </div>
-
-             <div className="bg-sky-200 mb-8 mt-20 py-8 px-4">
+        <div className="bg-sky-200 mb-8 mt-20 py-8 px-4">
           <div className="container mx-auto">
             <h2 className="text-3xl text-center font-bold mb-8 text-sky-700">
-            THE IMPORTANCE OF THE ACADEMIC RANKING: HOW A NUMBER CAN CHANGE YOUR CAREER 
-{' '}
+              THE IMPORTANCE OF THE ACADEMIC RANKING: HOW A NUMBER CAN CHANGE
+              YOUR CAREER{' '}
             </h2>
             <div className="text-col-2">
               <p className="mb-4">
-              A rank can help you establish yourself as a leader in the academic workforce
+                A rank can help you establish yourself as a leader in the
+                academic workforce
               </p>
               <p className="mb-4">
-              Having a numeral position in your career can help you find other academics to collaborate with
+                Having a numeral position in your career can help you find other
+                academics to collaborate with
               </p>
             </div>
           </div>
         </div>
 
         <h2 className="text-4xl font-bold mb-20 mt-20 text-sky-600 text-center">
-        WHY DO YOU NEED A RANKING?
-            </h2>
-  
-  
- {/* Main Content */}
- <section className="container mx-auto px-4 mt-12">
+          WHY DO YOU NEED A RANKING?
+        </h2>
+
+        {/* Main Content */}
+        <section className="container mx-auto px-4 mt-12">
           {/* <h2 className="text-center mb-6">
             Need Cash? Fund your personal life with a Academicjob…
           </h2>
@@ -119,10 +121,9 @@ export default function myPage() {
             </Link>
           </div> */}
           {/* Diverse Roles Card */}
-         
-         
-         {/* Gain Real-World Experience in Academic Settings Card */}
-         <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
+
+          {/* Gain Real-World Experience in Academic Settings Card */}
+          <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
               <Image
                 width={2000}
@@ -133,11 +134,15 @@ export default function myPage() {
               />
             </figure>
             <div className="card-body w-full">
-              <h2 className="card-title">
-              GROW YOURSELF GLOBALLY
-              </h2>
+              <h2 className="card-title">GROW YOURSELF GLOBALLY</h2>
               <p className="max-w-screen-sm">
-              The academic field is one of the most competitive arenas to be involved in, both locally and globally. By establishing an individual rank for an academic, you can position yourself as a top professor in the field, or as an individual who can move up the ranks overtime. This helps academics further develop their career and/or legitimately establish themselves as a leader in academia through a globally recognised system.
+                The academic field is one of the most competitive arenas to be
+                involved in, both locally and globally. By establishing an
+                individual rank for an academic, you can position yourself as a
+                top professor in the field, or as an individual who can move up
+                the ranks overtime. This helps academics further develop their
+                career and/or legitimately establish themselves as a leader in
+                academia through a globally recognised system.
               </p>
               <div className="card-actions justify-center md:justify-end">
                 <Link className="btn btn-aj" href="/student">
@@ -146,10 +151,8 @@ export default function myPage() {
               </div>
             </div>
           </div>
-         
-         
+
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
-          
             <figure className="lg:order-1">
               <Image
                 width={2000}
@@ -158,19 +161,21 @@ export default function myPage() {
                 alt="Choose from diverse campus roles"
                 className="w-full lg:max-w-lg rounded-xl m-6"
               />
-           
             </figure>
-             <div className="card-body w-full">
-              <h2 className="card-title">
-              COLLABORATION OVER COMPETITION
-              </h2>
+            <div className="card-body w-full">
+              <h2 className="card-title">COLLABORATION OVER COMPETITION</h2>
               <p className="max-w-screen-sm">
-              By providing a rank for you, we can set a benchmark that encourages collaboration. Having a number in the academic field allows you to find others with a similar rank, acknowledging a similar skill set, academic history, and research expertise. This knowledge can encourage collaborations on academic projects, expanding both members knowledge set and creativity.
+                By providing a rank for you, we can set a benchmark that
+                encourages collaboration. Having a number in the academic field
+                allows you to find others with a similar rank, acknowledging a
+                similar skill set, academic history, and research expertise.
+                This knowledge can encourage collaborations on academic
+                projects, expanding both members knowledge set and creativity.
               </p>
-        
+
               <div className="card-actions justify-center md:justify-end">
                 <Link className="btn btn-aj" href="/student">
-                Earn Extra Cash
+                  Earn Extra Cash
                 </Link>
               </div>
             </div>
@@ -187,23 +192,26 @@ export default function myPage() {
               />
             </figure>
             <div className="card-body w-full">
-              <h2 className="card-title">
-              ANALYSE YOUR ACADEMIC PROGRESS
-              </h2>
+              <h2 className="card-title">ANALYSE YOUR ACADEMIC PROGRESS</h2>
               <p className="max-w-screen-sm">
-              Academics are known to engage in large depths of analysis behind their journals, reports, and projects. A legitimate rank of the members of academia can allow for further analysis on the performance of modern-day academics and their improvement over the years. In turn, this analysis can describe positive trends on the future of academia and promote further success in the field.
+                Academics are known to engage in large depths of analysis behind
+                their journals, reports, and projects. A legitimate rank of the
+                members of academia can allow for further analysis on the
+                performance of modern-day academics and their improvement over
+                the years. In turn, this analysis can describe positive trends
+                on the future of academia and promote further success in the
+                field.
               </p>
               <div className="card-actions justify-center md:justify-end">
                 <Link className="btn btn-aj" href="/student">
-                Search Academic Rankings
+                  Search Academic Rankings
                 </Link>
               </div>
             </div>
           </div>
-       
-       
-         {/* Build Your Network with On-Campus Employment Card */}
-         <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
+
+          {/* Build Your Network with On-Campus Employment Card */}
+          <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
               <Image
                 width={2000}
@@ -214,26 +222,30 @@ export default function myPage() {
               />
             </figure>
             <div className="card-body w-full">
-              <h2 className="card-title">
-                EMBRACE YOUR INDIVIDUALITY
-              </h2>
+              <h2 className="card-title">EMBRACE YOUR INDIVIDUALITY</h2>
               <p className="max-w-screen-sm">
-              Set yourself apart from your university ranking. Academics often find themselves stuck in a partnership with their university. This may sometimes be great, but your true talent may go unrecognised under the universities rank which lends itself to the academic output and students results rather than your own work. Your own personal rank acts as an identifier of your success and establishment, putting you on the forefront as an academic, and not just a university professor.
+                Set yourself apart from your university ranking. Academics often
+                find themselves stuck in a partnership with their university.
+                This may sometimes be great, but your true talent may go
+                unrecognised under the universities rank which lends itself to
+                the academic output and students results rather than your own
+                work. Your own personal rank acts as an identifier of your
+                success and establishment, putting you on the forefront as an
+                academic, and not just a university professor.
               </p>
               <div className="card-actions justify-center md:justify-start">
                 <Link className="btn btn-aj" href="/student">
-                  Gain Valuable Skills 
+                  Gain Valuable Skills
                 </Link>
               </div>
             </div>
           </div>
-       </section>
+        </section>
 
-
-  {/* Cards
+        {/* Cards
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8"> */}
-            {/* Card 1 */}
-            {/* <div className="card bg-slate-100 shadow-xl">
+        {/* Card 1 */}
+        {/* <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
                   <svg
@@ -268,8 +280,8 @@ export default function myPage() {
               </div>
             </div> */}
 
-            {/* Card 2 */}
-            {/* <div className="card bg-slate-100 shadow-xl">
+        {/* Card 2 */}
+        {/* <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
                   <Image
@@ -294,8 +306,8 @@ export default function myPage() {
               </div>
             </div> */}
 
-            {/* Card 3 */}
-            {/* <div className="card bg-slate-100 shadow-xl">
+        {/* Card 3 */}
+        {/* <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
                   <Image
@@ -315,10 +327,10 @@ export default function myPage() {
                 </p>
               </div>
             </div> */}
-            {/* End Cards */}
-          
-            {/* Card 4 */}
-            {/* <div className="card bg-slate-100 shadow-xl">
+        {/* End Cards */}
+
+        {/* Card 4 */}
+        {/* <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
                   <Image
@@ -339,10 +351,10 @@ export default function myPage() {
                 </p>
               </div>
             </div> */}
-            {/* End Cards */}
-          {/* </div> */}
+        {/* End Cards */}
+        {/* </div> */}
 
-          <div
+        <div
           className="hero h-screen max-h-[480px] md:max-h-[400px]"
           style={{
             backgroundImage:
@@ -355,30 +367,30 @@ export default function myPage() {
           <div className="hero-content text-center text-white py-8">
             <div className="max-w-2xl">
               <h1 className="mb-5 text-2xl md:text-4xl font-bold">
-              WHY DO YOU NEED A RANKING?
+                WHY DO YOU NEED A RANKING?
               </h1>
               <p className="mb-5 text-sm md:text-lg">
-              The academic field is one of the most competitive arenas to be involved in, both locally and globally. By establishing an individual rank for an academic, you can position yourself as a top professor in the field, or as an individual who can move up the ranks overtime. 
+                The academic field is one of the most competitive arenas to be
+                involved in, both locally and globally. By establishing an
+                individual rank for an academic, you can position yourself as a
+                top professor in the field, or as an individual who can move up
+                the ranks overtime.
               </p>
               <p className="mb-5 text-sm md:text-lg">
-              This helps academics further develop their career and/or legitimately establish themselves as a leader in academia through a globally recognised system.
+                This helps academics further develop their career and/or
+                legitimately establish themselves as a leader in academia
+                through a globally recognised system.
               </p>
-              <Link className="btn btn-aj" href="https://www.theacademicrankings.com/">
+              <Link
+                className="btn btn-aj"
+                href="https://www.theacademicrankings.com/"
+              >
                 The Academic Rankings
               </Link>
             </div>
           </div>
         </div>
-       
-       
-       
-       
 
-
-
-
-
-        
         {/* Breakout Section */}
         <div className="bg-sky-200 mb-8 mt-16 py-8 px-4">
           <div className="container mx-auto">
@@ -388,9 +400,9 @@ export default function myPage() {
             <div className="text-col-2">
               <p className="mb-4">
                 Academic Jobs stands out as the {countryRegionPlural()} premier
-                platform for Academic Rankings, celebrated for linking
-                students with valuable on-campus employment opportunities. Our
-                platform is meticulously crafted to meet the specific needs of
+                platform for Academic Rankings, celebrated for linking students
+                with valuable on-campus employment opportunities. Our platform
+                is meticulously crafted to meet the specific needs of
                 Academicemployment within academic settings.
               </p>
               <p className="mb-4">
@@ -405,9 +417,8 @@ export default function myPage() {
             </div>
           </div>
         </div>
-        
-      
-          <section>
+
+        <section>
           <h3 className="container mx-auto text-center py-8 px-4">
             Want opportunities delivered to you?{' '}
             <Link href="/academic-talent-pool" className="btn btn-aj">
