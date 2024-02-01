@@ -590,23 +590,28 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/phd-students-call-for-expressions-of-interest-multiple-topics-faculty-of-law/78929"
+                    href="/jobs/administrative-assistant-ii-student-affairs/84768"
                     className="text-blue-500 font-bold"
                   >
-                    PhD Students- Call for Expressions of Interest - Multiple
-                    Topics, Faculty of Law
+                    Administrative Assistant II - Student Affairs
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Bond University</Link>
+                    <Link href="">Southern Utah University</Link>
                   </li>
                   <li>
-                    <Link href="">Robina QLD, Australia</Link>
+                    <Link href="">Cedar City, UT, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Apr 1, 2024</Link>
+                    <Link href="">Mar 1, 2024</Link>
                   </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4968144"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
@@ -614,23 +619,28 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/lecturer-senior-lecturer-associate-professor-professor-of-structural-engineering-timber/78822"
+                    href="/jobs/video-technician-summer-2024/84765"
                     className="text-blue-500 font-bold"
                   >
-                    Lecturer/Senior Lecturer/Associate Professor/Professor of
-                    Structural Engineering - Timber
+                    Video Technician summer 2024
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">University of Canterbury</Link>
+                    <Link href="">Southern Utah University</Link>
                   </li>
                   <li>
-                    <Link href="">Christchurch, New Zealand</Link>
+                    <Link href="">Cedar City, UT, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Jan 28, 2024</Link>
+                    <Link href="">Mar 1, 2024</Link>
                   </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4968138"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
@@ -664,20 +674,25 @@ export default function myPage() {
                     href="https://www.academicjobs.com/jobs/clinical-positions-in-cardiology-central-coast-2023-2024/73047/"
                     className="text-blue-500 font-bold"
                   >
-                    Clinical Positions in Cardiology (Central Coast) 2023-2024
-                    Apply Now
+                    Assistant Controller (71101)
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">University of California, Los Angeles</Link>
+                    <Link href="">Pratt Institute</Link>
                   </li>
                   <li>
-                    <Link href="">Los Angeles, CA, USA</Link>
+                    <Link href="">Brooklyn, NY, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Jun 29, 2024</Link>
+                    <Link href="">Mar 1, 2024</Link>
                   </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4970008"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
