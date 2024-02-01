@@ -30,15 +30,10 @@ export default function BlogPosts() {
   return (
     <main className="content-grid">
       <HeroBanner
-        h1="Academic Hub & Top Career Advice Today"
-        para1="Are you looking for an academic hub, career advice, tips, and
-        insights from academics and researchers? Check out these
-        academic jobs blogs and learn from the experts in your field.
-        Whether you are a PhD student, a postdoc, or a professor, you
-        will find valuable information and inspiration to advance your
-        academic career. Read these blogs now and discover the best
-        opportunities and practices for academic hub."
-        src="/job-ads/recruitment-post-a-job.jpg"
+        h1="Empowering Your Academic Career: Networking, Collaboration, and Expert Advice"
+        para1="Your ultimate academic career awaits, let us supercharge your academic journey. In today's fast-paced academic world, advancing your career goes beyond just landing the next job; it's about building meaningful connections, engaging in collaborative projects, and gaining insights that pave the way for success."
+        para2="Whether you're embarking on your PhD journey, navigating the postdoctoral landscape, or shaping the minds of the future as a professor, our curated career advice, tips, and insights from seasoned academics and researchers are designed to guide you every step of the way."
+        src="/blogs/career-assistance-networking-and-collaboration.jpg"
         alt="People immersed in academic blogs at our vibrant Academic Hub"
         btnPrimaryText="Join our Talent Pool"
         btnPrimaryURL="/talent-pool"
