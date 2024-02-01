@@ -40,6 +40,25 @@ type BlogPostPageProps = {
   params: Params;
 };
 
+// type MetadataTypes = {
+//   blog{
+//     Name?: string | undefined;
+//     title?: string | undefined;
+//     description?: string | undefined;
+//     seywords?: string | undefined;
+//   }
+// };
+
+export async function generateMetadata({ params }: any) {
+  const blog = await blogData.find((post) => post.slug === params.slug);
+
+  return {
+    title: blog.title,
+    description: blog.summary,
+    keywords: blog.keywords,
+  };
+}
+
 export default function BlogPostPage({ params }: BlogPostPageProps) {
   const post = blogData.find((post) => post.slug === params.slug);
 
