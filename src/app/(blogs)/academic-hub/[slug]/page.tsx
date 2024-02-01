@@ -3,34 +3,34 @@ import { BlogPostTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
 import { formatDate } from '@/utils/utilityScripts';
 
-import type { Metadata, ResolvingMetadata } from 'next';
+// import type { Metadata, ResolvingMetadata } from 'next';
 
-type Props = {
-  params: { slug: string };
-};
+// type Props = {
+//   params: { slug: string };
+// };
 
-export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
-  // Fetch blog data based on the slug
-  // const blog = await fetch(`https://yourapi.com/blogs/${params.slug}`)
-  const blog = await blogData.find((post) => post.slug === params.slug);
-  // Construct the metadata object
-  return {
-    title: blog.title,
-    description: blog.summary,
-    keywords: blog.keywords,
-    openGraph: {
-      images: [
-        {
-          url: blog.image_url,
-          alt: blog.alt,
-        },
-      ],
-    },
-  };
-}
+// export async function generateMetadata(
+//   { params }: Props,
+//   parent: ResolvingMetadata
+// ): Metadata {
+//   // Fetch blog data based on the slug
+//   // const blog = await fetch(`https://yourapi.com/blogs/${params.slug}`)
+//   const blog = await blogData.find((post) => post.slug === params.slug);
+//   // Construct the metadata object
+//   return {
+//     title: blog.title,
+//     description: blog.summary,
+//     keywords: blog.keywords,
+//     // openGraph: {
+//     //   images: [
+//     //     {
+//     //       url: blog.image_url,
+//     //       alt: blog.alt,
+//     //     },
+//     //   ],
+//     // },
+//   };
+// }
 
 type Params = {
   slug: string;

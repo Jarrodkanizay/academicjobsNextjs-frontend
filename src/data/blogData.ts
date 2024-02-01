@@ -545,7 +545,8 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2023-03-12',
     updated_at: ``,
-    image_url: `/blogs/find-your-future-career-at-Queensland-University-of-Technology-QUT.jpg`,
+    image_url:
+      `/blogs/find-your-future-career-at-Queensland-University-of-Technology-QUT.jpg`.toLowerCase(),
     alt: `Join the academic team at Queensland University of Technology`,
     summary:
       'Join the academic team at Queensland University of Technology (QUT) to find your future career.',
