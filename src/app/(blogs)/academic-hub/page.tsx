@@ -5,6 +5,18 @@ import Link from 'next/link';
 import HeroBanner from '@/components/HeroBanner';
 import { formatDate } from '@/utils/utilityScripts';
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Helpful Career Advice, Blogs and Collaboration Tools', //Option 1 replaces the %s in layout.tsx
+  // title: {
+  //   absolute: 'Helpful Career Advice, Blogs and Collaboration Tools', //Option 2 overrides the title in layout.tsx
+  // },
+  description:
+    'Unlock your academic career potential with our expertly curated career advice, insightful blogs, and innovative collaboration tools. Dive into a world of opportunities and guidance tailored for academics seeking to advance their careers. Explore now and take the next step in your academic journey!',
+  keywords: 'About Academicjobs, About Academic Jobs, Academicjobs About',
+};
+
 export default function BlogPosts() {
   // function formatDate(input: string) {
   //   const date = new Date(input);
@@ -86,28 +98,25 @@ export default function BlogPosts() {
             ))}
           </div>
 
-          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-8 mt-10">
+            <iframe
+              className=" aspect-video  rounded-3xl"
+              src="https://www.youtube.com/embed/bEEmo_KhOOk?si=yiNtzXaYyASiWU8W"
+              title="YouTube video player"
+            ></iframe>
 
-<div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-8 mt-10">
-  <iframe
-    className=" aspect-video  rounded-3xl"
-    src="https://www.youtube.com/embed/bEEmo_KhOOk?si=yiNtzXaYyASiWU8W"
-    title="YouTube video player"
-  ></iframe>
+            <iframe
+              className=" aspect-video rounded-3xl"
+              src="https://www.youtube.com/embed/hSbjVkmSIrc?si=qeq_VAZ3ZEQpWhjh"
+              title="YouTube video player"
+            ></iframe>
 
-  <iframe
-    className=" aspect-video rounded-3xl"
-    src="https://www.youtube.com/embed/hSbjVkmSIrc?si=qeq_VAZ3ZEQpWhjh"
-    title="YouTube video player"
-  ></iframe>
-
-  <iframe
-    className=" aspect-video rounded-3xl"
-    src="https://www.youtube.com/embed/yn-ctFDfI60?si=REwYQIJFPBm6NnXm"
-    title="YouTube video player"
-  ></iframe>
-</div>
-
+            <iframe
+              className=" aspect-video rounded-3xl"
+              src="https://www.youtube.com/embed/yn-ctFDfI60?si=REwYQIJFPBm6NnXm"
+              title="YouTube video player"
+            ></iframe>
+          </div>
 
           <h2 className="underline-full mt-16 mb-8">Academic Blog Posts</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">

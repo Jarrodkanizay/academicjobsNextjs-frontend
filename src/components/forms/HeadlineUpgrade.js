@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation';
 import { jobElephantContacts } from '@/data/jobElephantContacts';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
-import { countries } from "@/utils/data";
+import { countries } from '@/utils/data';
 const PostJobForm = ({
   clientType,
   partner,
@@ -27,7 +27,7 @@ const PostJobForm = ({
     watch,
     formState: { errors },
     setError,
-    getValues 
+    getValues,
   } = useForm({
     defaultValues: {
       '00_Job_ID': jobId,
@@ -68,16 +68,15 @@ const PostJobForm = ({
     return <div>An error occurred: {mutation.error.message}</div>;
   }
   if (mutation.isSuccess) {
-    if (getValues("country") == "Australia") {
+    if (getValues('country') == 'Australia') {
       router.push('https://buy.stripe.com/dR6eWA6PuaaA7VC6ov');
     } else {
       router.push('https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot');
     }
-     
-    
   } else {
     content = (
       <>
+        {/* <div className="bg-sky-200">asdgsdfg</div> */}
         <p className="text-xl font-bold text-gray-500">
           Great, let’s get this job fully seen by our amazing audience.
           <br />
@@ -86,7 +85,10 @@ const PostJobForm = ({
         </p>
         {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16"> */}
         <div>
-          <h2 className={`text-4xl font-bold mb-8 mt-8 underline-full`}>
+          <h2
+            id="activate-quick-post"
+            className={`text-4xl font-bold mb-8 mt-8 underline-full`}
+          >
             Activate my ‘Quick Post’ now…
           </h2>
           <form className=" " onSubmit={handleSubmit(onSubmit)}>
@@ -102,6 +104,7 @@ const PostJobForm = ({
                     forceClass="text-black"
                     placeholder="Job ID"
                     hidden={true}
+                    showLabel={true}
                   />
                   <hr />
                   <p style={{ margin: '0', fontWeight: 'bold' }}>{jobId}</p>
@@ -117,6 +120,7 @@ const PostJobForm = ({
                     placeholder="Organization Name"
                     autoComplete="organization"
                     hidden={true}
+                    showLabel={true}
                   />
                   <hr />
                   <p style={{ margin: '0', fontWeight: 'bold' }}>{employer}</p>
@@ -131,6 +135,7 @@ const PostJobForm = ({
                     forceClass="text-black"
                     placeholder="Job Title"
                     hidden={true}
+                    showLabel={true}
                   />
                   <hr />
                   <p style={{ margin: '0', fontWeight: 'bold' }}>{jobTitle}</p>
@@ -196,9 +201,15 @@ const PostJobForm = ({
                   autoComplete="phone"
                 />
               </div>
-        
 
-              <SelectBlock2 list={countries} field="country" label="Country" register={register} errors={errors} forceClass="join-item rounded-r-none min-h-[34px]" />
+              <SelectBlock2
+                list={countries}
+                field="country"
+                label="Country"
+                register={register}
+                errors={errors}
+                forceClass="join-item rounded-r-none min-h-[34px]"
+              />
               <label className="form-control mt-6">
                 <span className="label-text text-xs pb-1">
                   Notes or Special Instructions
@@ -236,7 +247,7 @@ const PostJobForm = ({
               <li>
                 We do the heavy lifting for you (having your job already loaded)
               </li>
-              <li>AJ QUICK POSTS = ^ VIEWS = + APPLICANTS</li>
+              <li>Academic Jobs QUICK POSTS = ^ VIEWS = + APPLICANTS</li>
             </ul>
           </div>
         </div>

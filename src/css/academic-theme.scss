@@ -1,4 +1,6 @@
 @import './logo.scss';
+// @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 :root {
   --color-scheme: light;
@@ -105,6 +107,13 @@ html {
     h6 {
       font-weight: 700;
     }
+    h2.aus-jobs-heading {
+      font-family: 'Dancing Script', cursive, 'Comic Sans MS', cursive,
+        sans-serif;
+      font-family: 'Arial';
+      color: #174f89;
+    }
+
     p,
     a,
     button,
@@ -283,6 +292,11 @@ html {
 
     input {
       position: relative;
+    }
+    input,
+    select,
+    textarea {
+      background-color: #fff !important;
     }
 
     .required {
@@ -692,6 +706,9 @@ html {
       height: auto;
       margin-right: 8px;
       margin-bottom: 8px;
+    }
+    .uni-jobs {
+      margin-right: 6px;
     }
 
     @media (max-width: 1023px) {

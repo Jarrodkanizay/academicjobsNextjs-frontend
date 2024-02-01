@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form';
 import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import FormSubmissionMessage from './FormSubmissionMessage';
+import { facultyDepartments } from '@/data/facultyDepartments';
 
 const RankingRegistrationFormAcademics = ({
   maxWidth,
@@ -70,7 +71,7 @@ const RankingRegistrationFormAcademics = ({
     return (
       <FormSubmissionMessage
         status="success"
-        message="We are excited to welcome you to our Talent Pool and the benefits it will bring to you and your career. We will be in touch with you shortly."
+        message="We are excited to welcome you to The Academic Rankings. The benefits to your career, network and status are far reaching. We will be in touch with you shortly."
         firstName={firstName}
       />
     );
@@ -122,18 +123,20 @@ const RankingRegistrationFormAcademics = ({
           required={true}
         />
 
-        {/* Academic Title */}
+        {/* Email */}
         <InputBlock2
           register={register}
           errors={errors}
           tabIndex={3}
-          type="text"
-          ID="name-input"
-          field="03_Academic_Title"
-          name="03_Academic_Title"
+          type="email"
+          ID="email-input"
+          field="05_Email"
+          name="05_Email"
           forceClass=""
-          placeholder="Academic Title (Role or Position)"
+          placeholder="Email"
+          autoComplete="email"
           required={true}
+          colSpan={2}
         />
 
         {/* phone */}
@@ -150,67 +153,100 @@ const RankingRegistrationFormAcademics = ({
           placeholder="Phone Number"
           required={false}
         />
-        {/* Email */}
+
+        {/* phone */}
         <InputBlock2
           register={register}
           errors={errors}
           tabIndex={5}
-          type="email"
-          ID="email-input"
-          field="05_Email"
-          name="05_Email"
+          type="tel"
+          ID="LinkedIn-input"
+          field="05_LinkedIn"
+          name="05_LinkedIn"
           forceClass=""
-          placeholder="Email"
-          autoComplete="email"
-          required={true}
-          colSpan={2}
-        />
-        {/* Papers & Publications */}
-        <InputBlock2
-          register={register}
-          errors={errors}
-          tabIndex={3}
-          type="text"
-          ID="papers_publications-input"
-          field="06_Papers_Publications"
-          name="06_Papers"
-          forceClass=""
-          placeholder="Papers & Publications (coma separated)"
+          autoComplete="tel"
+          placeholder="LinkedIn"
           required={false}
-          colSpan={2}
-        />
-        {/* Degrees - Top Education Levels */}
-        <InputBlock2
-          register={register}
-          errors={errors}
-          tabIndex={4}
-          type="text"
-          ID="degrees-input"
-          field="04_Degrees"
-          name="04_Degrees"
-          forceClass=""
-          placeholder="Top Education Levels: i.e. Phd, Master, etc. (coma separated)"
-          required={false}
-          colSpan={2}
         />
       </div>
       {/* Academic Details Section */}
       <h2 className="underline-full mt-10 mb-6">{academicDetailsHeading}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Institution */}
+        <div className="flex gap-6 col-span-2">
+          <select
+            tabIndex={20}
+            {...register('20_Years_in_Academia')}
+            id="years-in-academia-select"
+            field="20_Years_in_Academia"
+            name="20_Years_in_Academia"
+            className="select select-bordered w-full focus:outline-none focus:border-orange-500 max-w-[94px]"
+            required={true}
+          >
+            <option value="" disabled selected>
+              Years in Academia...
+            </option>
+            {Array.from({ length: 100 }, (_, i) => i + 1).map((num) => (
+              <option key={num} value={num}>
+                {num}
+              </option>
+            ))}
+          </select>
 
+          {/* Degrees - Top Education Levels */}
+          <InputBlock2
+            register={register}
+            errors={errors}
+            tabIndex={4}
+            type="text"
+            ID="degrees-input"
+            field="04_Degrees"
+            name="04_Degrees"
+            forceClass="grow"
+            placeholder="Top Education Levels: i.e. Phd, Master, etc. (coma separated)"
+            required={false}
+          />
+        </div>
+
+        {/* Papers & Publications */}
         <InputBlock2
           register={register}
           errors={errors}
           tabIndex={20}
           type="text"
+          ID="papers_publications-input"
+          field="20_Papers_Publications"
+          name="20_Papers"
+          forceClass=""
+          placeholder="Papers & Publications (coma separated)"
+          required={false}
+          colSpan={2}
+        />
+        {/* Institution */}
+        <InputBlock2
+          register={register}
+          errors={errors}
+          tabIndex={21}
+          type="text"
           ID="institution-input"
-          field="20_Institution"
-          name="20_Institution"
+          field="21_Institution"
+          name="21_Institution"
           forceClass=""
           placeholder="Institution/University (Current or most recent)"
           required={true}
-          colSpan={2}
+        />
+
+        {/* Academic Title */}
+        <InputBlock2
+          register={register}
+          errors={errors}
+          tabIndex={22}
+          type="text"
+          ID="Academic_Title-input"
+          field="22_Academic_Title"
+          name="22_Academic_Title"
+          forceClass=""
+          placeholder="Academic Title (Role or Position)"
+          required={true}
         />
 
         {/* Location */}
@@ -218,22 +254,22 @@ const RankingRegistrationFormAcademics = ({
         <InputBlock2
           register={register}
           errors={errors}
-          tabIndex={21}
+          tabIndex={23}
           type="text"
           ID="location-input"
-          field="21_Institution_Location"
-          name="21_Institution_Location"
+          field="23_Institution_Location"
+          name="23_Institution_Location"
           forceClass=""
           placeholder="Institution Location"
           required={true}
         />
 
         <select
-          tabIndex={22}
-          {...register('22_Country')}
+          tabIndex={24}
+          {...register('24_Country')}
           id="country-select"
-          field="22_Country"
-          name="22_Country"
+          field="24_Country"
+          name="24_Country"
           className="select select-bordered w-full focus:outline-none focus:border-orange-500"
           required={true}
         >
@@ -248,29 +284,58 @@ const RankingRegistrationFormAcademics = ({
         </select>
 
         {/* Department/Faculty */}
+        <select
+          tabIndex={25}
+          {...register('25_Faculty-Department')}
+          id="Faculty-Department-select"
+          field="25_Faculty-Department"
+          name="25_Faculty-Department"
+          className="select select-bordered w-full focus:outline-none focus:border-orange-500"
+          required={true}
+        >
+          <option value="" disabled selected>
+            Faculty Department...
+          </option>
+          {facultyDepartments.map((department, index) => (
+            <optgroup
+              key={index}
+              label={department.label}
+              style={{ color: 'black' }}
+            >
+              {department.options.map((option, subIndex) => (
+                <option
+                  key={subIndex}
+                  value={option.toLowerCase().replace(/\s+/g, '_')}
+                >
+                  {option}
+                </option>
+              ))}
+            </optgroup>
+          ))}
+        </select>
 
-        <InputBlock2
+        {/* <InputBlock2
           register={register}
           errors={errors}
-          tabIndex={23}
+          tabIndex={25}
           type="text"
           ID="department-faculty-input"
-          field="23_Department_Faculty"
-          name="23_Department_Faculty"
+          field="25_Department_Faculty"
+          name="25_Department_Faculty"
           forceClass=""
           placeholder="Department/Faculty"
           required={true}
-        />
+        /> */}
 
         {/* Specialty */}
         <InputBlock2
           register={register}
           errors={errors}
-          tabIndex={24}
+          tabIndex={26}
           type="text"
           ID="specialty-input"
-          field="24_Specialty"
-          name="24_Specialty"
+          field="26_Specialty"
+          name="26_Specialty"
           forceClass=""
           placeholder="Specialty"
           required={false}
@@ -280,13 +345,13 @@ const RankingRegistrationFormAcademics = ({
         <InputBlock2
           register={register}
           errors={errors}
-          tabIndex={25}
+          tabIndex={27}
           type="text"
           ID="lecturer-research-split-input"
-          field="25_lecturer-research-split"
-          name="25_lecturer-research-split"
+          field="27_lecturer-research-split"
+          name="27_lecturer-research-split"
           forceClass=""
-          placeholder="Lecturer/Teaching Research/Management Split (%)"
+          placeholder="Lecturer/Teaching vs Research/Management Split (%) e.g. 50/50"
           required={false}
           colSpan={2}
         />
@@ -294,11 +359,11 @@ const RankingRegistrationFormAcademics = ({
         <InputBlock2
           register={register}
           errors={errors}
-          tabIndex={26}
+          tabIndex={28}
           type="text"
-          ID="name-input"
-          field="26_Academic_Title"
-          name="26_Academic_Title"
+          ID="notable-awards-input"
+          field="28_notable-awards"
+          name="28_notable-awards"
           forceClass=""
           placeholder="Notable Awards (coma separated)"
           required={false}
@@ -312,7 +377,7 @@ const RankingRegistrationFormAcademics = ({
           id="profile-input"
           field="100_Profile"
           className="w-full textarea textarea-bordered focus:outline-none focus:border-orange-500"
-          placeholder="OPTIONAL - Please write a brief profile noting your key skills, experience, and achievements."
+          placeholder="Please write a brief profile noting your key skills, experience, and achievements."
         />
       </div>
       {/* End form inputs */}

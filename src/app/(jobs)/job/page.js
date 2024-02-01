@@ -108,6 +108,7 @@ const Job = () => {
             >
               Apply Now
             </button>
+
             <div className="ml-4">
               <div className="">
                 <div

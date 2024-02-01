@@ -106,7 +106,7 @@ const SubscribeForm = ({
   }
   //   if (maxWidth === undefined) maxWidth = '800';
   return (
-    <form className={``} onSubmit={handleSubmit(onSubmit)}>
+    <form className={`w-full`} onSubmit={handleSubmit(onSubmit)}>
       <div id="request-job-post" className="join w-full animate-pulse">
         {/* {errors[field] && (
           <span className="error">{errors[field].message}</span>
@@ -121,10 +121,11 @@ const SubscribeForm = ({
           type="email"
           field="01_Email"
           forceClass=""
-          placeholder="Email"
+          placeholder="Enter email to Join mailing list"
           autoComplete="email"
           required={false}
           inputClass="input-bordered rounded-r-none"
+          colSpan={2}
         />
         <div style={{ display: 'none' }}>
           <InputBlock2
