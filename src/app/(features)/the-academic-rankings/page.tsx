@@ -45,6 +45,10 @@ export default function myPage() {
                 thankYouMessage="Thanks for joining our help area!"
                 placeholder="Enter your email"
                 formType="subscribe"
+                jobTitle=""
+                employer=""
+                jobId=""
+                jobURL=""
               />
             </div>
           </div>
