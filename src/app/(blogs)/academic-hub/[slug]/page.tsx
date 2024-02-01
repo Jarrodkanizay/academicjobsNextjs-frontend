@@ -3,35 +3,6 @@ import { BlogPostTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
 import { formatDate } from '@/utils/utilityScripts';
 
-// import type { Metadata, ResolvingMetadata } from 'next';
-
-// type Props = {
-//   params: { slug: string };
-// };
-
-// export async function generateMetadata(
-//   { params }: Props,
-//   parent: ResolvingMetadata
-// ): Metadata {
-//   // Fetch blog data based on the slug
-//   // const blog = await fetch(`https://yourapi.com/blogs/${params.slug}`)
-//   const blog = await blogData.find((post) => post.slug === params.slug);
-//   // Construct the metadata object
-//   return {
-//     title: blog.title,
-//     description: blog.summary,
-//     keywords: blog.keywords,
-//     // openGraph: {
-//     //   images: [
-//     //     {
-//     //       url: blog.image_url,
-//     //       alt: blog.alt,
-//     //     },
-//     //   ],
-//     // },
-//   };
-// }
-
 type Params = {
   slug: string;
 };
@@ -40,17 +11,12 @@ type BlogPostPageProps = {
   params: Params;
 };
 
-// type MetadataTypes = {
-//   blog{
-//     Name?: string | undefined;
-//     title?: string | undefined;
-//     description?: string | undefined;
-//     seywords?: string | undefined;
-//   }
-// };
-
 export async function generateMetadata({ params }: any) {
   const blog = await blogData.find((post) => post.slug === params.slug);
+
+  if (!blog) {
+    throw new Error(`No blog post found for slug: ${params.slug}`);
+  }
 
   return {
     title: blog.title,
