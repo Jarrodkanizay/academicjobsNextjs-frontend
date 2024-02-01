@@ -19,7 +19,7 @@ export default function myPage() {
         <div className="">
           <div className="hero-content flex-col lg:flex-row gap-8 ">
             <Image
-              src="/about-us/about-aj.jpeg"
+              src="/about-us/harvard-university-main.jpg"
               width={1280}
               height={380}
               className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
@@ -27,10 +27,13 @@ export default function myPage() {
             />
             <div>
               <h1 className="text-4xl">
-                AcademicJobs is your #1 Destination for Academic Excellence,
-                Career Advancement and Networking
+                AcademicJobs is your #1 Destination for all your Academic
+                Recruitment needs, Career Advancement and Networking
               </h1>
-              <h2 className="py-6">About AcademicJobs</h2>
+              <h2 className="py-6 leading-tight">
+                Quick Job Post Technology reduces the time to post a job by 90%
+                and cost by 25%
+              </h2>
               {/* <h2 className="py-6">
                 Find the best academic positions in your city,
                 country and worldwide.
@@ -39,10 +42,130 @@ export default function myPage() {
           </div>
         </div>
       </div>
-      <div className="content-grid p-8 ">
-        <div className="full-width"></div>
+      <div className="container my-16">
+        <div className="stats shadow w-full">
+          <div className="stat">
+            <div className="stat-figure">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="inline-block w-8 h-8 stroke-current"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  stroke="red"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                ></path>
+              </svg>
+            </div>
+            <div className="stat-title">Recruiters & Institutions Helped</div>
+            <div className="stat-value text-blue-700">1.3K</div>
+            <div className="stat-desc">
+              Saved Recruiters & Institutions 8 minutes per post
+            </div>
+          </div>
 
+          <div className="stat">
+            <div className="stat-figure text-secondary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="inline-block w-8 h-8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                  stroke="pink"
+                  opacity="1"
+                ></path>
+              </svg>
+            </div>
+            <div className="stat-title">Academic Positions Filled</div>
+            <div className="stat-value text-pink-500">8.6K</div>
+            <div className="stat-desc">
+              Provided Job Seekers with more opportunities than any other Job
+              Board
+            </div>
+          </div>
+
+          <div className="stat">
+            <div className="stat-figure text-secondary">
+              <div className="avatar online">
+                <div className="w-24 rounded-full">
+                  <Image
+                    width={150}
+                    height={150}
+                    src="/about-us/ai-fast-job-posting.jpg"
+                    alt="Fast Job Posting with Exclusive AI assistant"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="stat-value">900%</div>
+            <div className="stat-title">Faster Job Posting</div>
+            <div className="stat-desc">With our Quick Job Post Technology</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container my-16 flex flex-col sm:flex-row gap-20 px-8 sm:px-32">
+        <div className="card bg-base-100 shadow-xl">
+          <figure>
+            <Image
+              width={800}
+              height={534}
+              src="/ai-jop-posting/ai-job-listing-automation.jpg"
+              alt="Let us help you find your next crazy SMART academic employee"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">
+              Let us help you find your next crazy SMART academic employee!
+            </h2>
+            <p>
+              Post a job now and see how easy it is, we do all the heavy lifting
+              for you.
+            </p>
+            <div className="card-actions justify-end">
+              <Link href="/post-a-job" className="btn btn-accent">
+                Post a Job
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="card bg-base-100 shadow-xl">
+          <figure>
+            <Image
+              width={800}
+              height={534}
+              src="/ai-resume-extraction/ai-resume-extraction.jpg"
+              alt="Find your Dream Job Today"
+            />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title">Find your Dream Job Today!</h2>
+            <p>
+              Are you looking for your dream role? Then search all academic jobs
+              now.
+            </p>
+            <div className="card-actions justify-end">
+              <Link href="/jobs" className="btn btn-info">
+                Find Jobs
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="content-grid p-8">
+        {/* <div className="full-width"></div> */}
         <div className="container prose">
+          <h2 className="underline-full">Learn more about Academic Jobs</h2>
           <div className="prose text mt-8 ">
             <h4>Our Mission: Empowering Academics, Connecting Institutions</h4>
             <p>
@@ -69,7 +192,8 @@ export default function myPage() {
             <p>
               Embarking on a journey to find your dream academic job? Look no
               further. AcademicJobs is your trusted companion, offering an
-              extensive range of opportunities in Unijobs, University Jobs,
+              extensive range of opportunities in{' '}
+              <span className="uni-jobs">uni</span>jobs, University Jobs,
               College Jobs, faculty, research, administrative (staff), and
               professional roles.
             </p>
@@ -83,18 +207,20 @@ export default function myPage() {
             <p>
               Are you an institution seeking top-tier academic talent?
               AcademicJobs provides you with a cost-effective, user-friendly
-              platform to showcase your unijobs, University Jobs, and College
-              Jobs to a global talent pool. With over 10,000 active job listings
-              and a network of 500 partner institutions across 50 countries, we
-              connect you with the brightest minds in academia.
+              platform to showcase your <span className="uni-jobs">uni</span>
+              jobs, University Jobs, and College Jobs to a global talent pool.
+              With over 10,000 active job listings and a network of 500 partner
+              institutions across 50 countries, we connect you with the
+              brightest minds in academia.
             </p>
 
             <h4>Why AcademicJobs?</h4>
             <ul>
               <li>
                 <strong>Innovation: </strong>We have redefined academic job
-                platforms, making it easy for you to seek positions for unijobs
-                and institution Jobs more efficiently and transparently.
+                platforms, making it easy for you to seek positions for{' '}
+                <span className="uni-jobs">uni</span>jobs and institution Jobs
+                more efficiently and transparently.
               </li>
               <li>
                 <strong>Global Reach: </strong>With over 1 million registered
