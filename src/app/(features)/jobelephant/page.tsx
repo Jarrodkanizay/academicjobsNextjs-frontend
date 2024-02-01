@@ -307,7 +307,7 @@ export default function Page() {
         </section>
 
        
-        <h2 className="underline-full m-4 text-center mt-4 mb-4">Our latest Job elephant listings</h2>
+        <h2 className="underline-full m-4 text-center mt-4 mb-4">Our latest Job Elephant listings</h2>
       <div className="cate-group section23 m-4">
         <div className="widget__text-block m-4">
        
