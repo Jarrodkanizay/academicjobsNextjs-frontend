@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
-    'With our advanced AI technologies that greatly improve the job posting process, Academic Jobs is the top AI recruitment platform, enabling higher education institutions, the research and development (R&D) industry, and many other industries discover people. ',
+    'Industry Jobs in Academia greatly improve the exerience of academics, Academic Jobs is the top Industry jobs platform, allowing higher education institutions to find the right people for their industries. ',
   keywords:
-    'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
+    'Industry Jobs in Academia, Academic Industry Platform',
 };
 export default function myPage() {
   return (
