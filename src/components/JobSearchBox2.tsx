@@ -35,27 +35,27 @@ export default function JobSearchBox({ q, l }: MyComponentProps) {
     <div className="search-panel py-4">
       <div className="container lg:max-w-screen-lg px-4 mx-auto ">
         <form onSubmit={handleFormSubmit}>
-          <div className="join mx-auto w-full border border-gray-200 shadow-md flex flex-col md:flex-row">
+          <div className="join mx-auto w-full border border-gray-200 shadow-md flex flex-col">
             <input
               type="text"
-              className="input input-bordered join-item w-full md:text-left text-center"
+              className="input input-bordered join-item w-full  text-center"
               placeholder="Keywords"
               ref={keyWordRef}
             />
             <input
               type="text"
-              className="input input-bordered join-item w-full md:text-left text-center"
+              className="input input-bordered join-item w-full  text-center"
               placeholder="Location"
               ref={locationRef}
             />
-            <div className="indicator md:w-fit w-full bg-amber-500 md:bg-0 justify-center items-center animate-pulse">
-              <button
-                type="submit"
-                className="btn join-item bg-amber-500 md:border md:border-gray-300 md:shadow-md border-0 text-white animate-pulse "
+            <button type="submit" className="btn indicator border-0 w-full bg-amber-500  justify-center items-center animate-pulse">
+              <div
+               
+                className=" join-item   border-0 text-white animate-pulse "
               >
                 Search
-              </button>
-            </div>
+              </div>
+            </button>
           </div>
         </form>
       </div>

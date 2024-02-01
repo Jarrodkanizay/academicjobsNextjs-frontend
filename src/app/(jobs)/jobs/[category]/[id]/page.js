@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import SearchResults from '@/components/SearchResults';
-import JobSearchBox from '@/components/JobSearchBox';
+import JobSearchBox2 from '@/components/JobSearchBox2';
 import HeadlineUpgrade from '@/components/forms/HeadlineUpgrade';
 import HeadlineLinks from '@/components/forms/HeadlineLinks';
 import InputBlock from '@/components/forms/InputBlock';
@@ -138,7 +138,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
           </div>
         </div>
       </div>
-      <div className="flex p-4 gap-8">
+      <div className="md:flex p-4 gap-8">
         <article
           className="md:w-2/3 wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg"
           data-id={jobId}
@@ -208,7 +208,9 @@ const JobDetailPage = async ({ params, searchParams }) => {
           <h3 className=" pl-4 text-lg text-gray-400">
             This might interest you...{' '}
           </h3>
-          <JobSearchBox q={title} />
+          <div className="">
+          <JobSearchBox2 q={title} />
+          </div>
           <SearchResults q={title} filterOff={true} />
         </div>
       </div>
