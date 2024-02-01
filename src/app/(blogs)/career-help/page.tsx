@@ -40,7 +40,7 @@ export default function BlogPosts() {
         reorder={false}
       />
 
-      <h2 className="underline-full mb-8"> Top Academic Hub Posts</h2>
+      <h2 className="underline-full mb-8"> Top Academic Career Help</h2>
 
       {blogData ? (
         <>
@@ -115,7 +115,9 @@ export default function BlogPosts() {
             ></iframe>
           </div>
 
-          <h2 className="underline-full mt-16 mb-8">Academic Blog Posts</h2>
+          <h2 className="underline-full mt-16 mb-8">
+            Academic Career Blog Posts
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {blogData.slice(6).map((post, index) => (
               <article
