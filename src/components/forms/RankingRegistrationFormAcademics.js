@@ -27,6 +27,8 @@ const RankingRegistrationFormAcademics = ({
     },
   });
 
+  const formData = JSON.parse(localStorage.getItem('formRankData'));
+
   const mutation = useMutation({
     mutationFn: (data) => {
       return BaseApi.post('/sendemail', data);
@@ -41,6 +43,17 @@ const RankingRegistrationFormAcademics = ({
     console.log('data', data);
     mutation.mutate(data);
   };
+
+  useEffect(() => {
+    const formData = JSON.parse(localStorage.getItem('formRankData'));
+
+    if (formData) {
+      for (const [key, value] of Object.entries(formData)) {
+        setValue(key, value);
+      }
+    }
+  }, [setValue]);
+
   // useEffect(() => {
   //   setValue('00_Form_Name', 'Talent Pool Form Submission');
   // }, [setValue]);
@@ -130,8 +143,8 @@ const RankingRegistrationFormAcademics = ({
           tabIndex={3}
           type="email"
           ID="email-input"
-          field="05_Email"
-          name="05_Email"
+          field="03_Email"
+          name="03_Email"
           forceClass=""
           placeholder="Email"
           autoComplete="email"
@@ -228,8 +241,8 @@ const RankingRegistrationFormAcademics = ({
           tabIndex={21}
           type="text"
           ID="institution-input"
-          field="21_Institution"
-          name="21_Institution"
+          field="05_Current_Employer"
+          name="05_Current_Employer"
           forceClass=""
           placeholder="Institution/University (Current or most recent)"
           required={true}
