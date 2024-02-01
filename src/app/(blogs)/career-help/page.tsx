@@ -24,26 +24,23 @@ export default function BlogPosts() {
   //   return date.toLocaleDateString('en-US', options);
   // }
 
+  const blogPath = '/career-help/';
+
   console.log(blogData);
   return (
     <main className="content-grid">
       <HeroBanner
-        h1="Academic Hub & Top Career Advice Today"
-        para1="Are you looking for an academic hub, career advice, tips, and
-        insights from academics and researchers? Check out these
-        academic jobs blogs and learn from the experts in your field.
-        Whether you are a PhD student, a postdoc, or a professor, you
-        will find valuable information and inspiration to advance your
-        academic career. Read these blogs now and discover the best
-        opportunities and practices for academic hub."
-        src="/job-ads/recruitment-post-a-job.jpg"
+        h1="Empowering Your Academic Career: Networking, Collaboration, and Expert Advice"
+        para1="Your ultimate academic career awaits, let us supercharge your academic journey. In today's fast-paced academic world, advancing your career goes beyond just landing the next job; it's about building meaningful connections, engaging in collaborative projects, and gaining insights that pave the way for success."
+        para2="Whether you're embarking on your PhD journey, navigating the postdoctoral landscape, or shaping the minds of the future as a professor, our curated career advice, tips, and insights from seasoned academics and researchers are designed to guide you every step of the way."
+        src="/blogs/career-assistance-networking-and-collaboration.jpg"
         alt="People immersed in academic blogs at our vibrant Academic Hub"
         btnPrimaryText="Join our Talent Pool"
         btnPrimaryURL="/talent-pool"
         reorder={false}
       />
 
-      <h2 className="underline-full mb-8"> Top Academic Hub Posts</h2>
+      <h2 className="underline-full mb-8"> Top Academic Career Help</h2>
 
       {blogData ? (
         <>
@@ -51,7 +48,7 @@ export default function BlogPosts() {
             {blogData.slice(0, 6).map((post, index) => (
               <article key={index} className="card bg-slate-100 shadow-xl">
                 <figure>
-                  <Link href={'/academic-hub/' + post.slug}>
+                  <Link href={blogPath + post.slug}>
                     <Image
                       src={post.image_url}
                       alt={post.alt}
@@ -64,7 +61,7 @@ export default function BlogPosts() {
                 <div className="card-body">
                   <h2 className="card-title grow">
                     <Link
-                      href={'/academic-hub/' + post.slug}
+                      href={blogPath + post.slug}
                       className="hover:text-orange-500 text-2xl"
                     >
                       {post.title}
@@ -87,7 +84,7 @@ export default function BlogPosts() {
                   </p>
                   <div className="card-actions justify-end">
                     <Link
-                      href={'/academic-hub/' + post.slug}
+                      href={blogPath + post.slug}
                       className="btn btn-aj btn-sm"
                     >
                       Read more
@@ -118,7 +115,9 @@ export default function BlogPosts() {
             ></iframe>
           </div>
 
-          <h2 className="underline-full mt-16 mb-8">Academic Blog Posts</h2>
+          <h2 className="underline-full mt-16 mb-8">
+            Academic Career Blog Posts
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {blogData.slice(6).map((post, index) => (
               <article
@@ -126,7 +125,7 @@ export default function BlogPosts() {
                 className="card bg-slate-100 shadow-xl image-full items-stretch"
               >
                 <figure>
-                  <Link href={'/academic-hub/' + post.slug}>
+                  <Link href={blogPath + post.slug}>
                     <Image
                       src={post.image_url}
                       alt={post.alt}
@@ -138,7 +137,7 @@ export default function BlogPosts() {
                 <div className="card-body">
                   <h2 className="card-title">
                     <Link
-                      href={'/academic-hub/' + post.slug}
+                      href={blogPath + post.slug}
                       className="text-white hover:text-orange-500 text-lg"
                     >
                       {post.title}
@@ -146,7 +145,7 @@ export default function BlogPosts() {
                   </h2>
                   <div className="card-actions justify-end mt-auto">
                     <Link
-                      href={'/academic-hub/' + post.slug}
+                      href={blogPath + post.slug}
                       className="btn btn-aj btn-sm"
                     >
                       Read more

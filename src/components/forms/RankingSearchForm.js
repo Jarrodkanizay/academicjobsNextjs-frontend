@@ -8,7 +8,7 @@ import BaseApi from '@/lib/store/Base';
 import SearchSubmissionMessage from './SearchSubmissionMessage';
 // import { industryTypes } from '@/data/IndustryTypes';
 
-const ContactUsForm = ({ maxWidth }) => {
+const RankingSearchForm = ({ maxWidth }) => {
   const {
     register,
     handleSubmit,
@@ -33,6 +33,10 @@ const ContactUsForm = ({ maxWidth }) => {
     //alert()
     console.log('data', data);
     mutation.mutate(data);
+
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('formRankData', JSON.stringify(data));
+    }
   };
 
   const firstName = watch('01_First_Name');
@@ -233,4 +237,4 @@ const ContactUsForm = ({ maxWidth }) => {
     </form>
   );
 };
-export default ContactUsForm;
+export default RankingSearchForm;

@@ -14,6 +14,7 @@ const SubscribeForm = ({
   buttonText = 'Subscribe',
   thankYouMessage = 'Thanks for subscribing to our newsletter!',
   formType = 'subscribe',
+  placeholder = 'Enter email to Join mailing list',
   jobTitle,
   employer,
   jobId,
@@ -121,7 +122,7 @@ const SubscribeForm = ({
           type="email"
           field="01_Email"
           forceClass=""
-          placeholder="Enter email to Join mailing list"
+          placeholder={placeholder}
           autoComplete="email"
           required={false}
           inputClass="input-bordered rounded-r-none"

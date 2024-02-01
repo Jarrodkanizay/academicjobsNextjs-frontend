@@ -24,6 +24,11 @@ const nextConfig = {
         destination: '/jobs',
         permanent: true,
       },
+      {
+        source: '/academic-hub',
+        destination: '/career-help',
+        permanent: true,
+      },
     ];
   },
 };
