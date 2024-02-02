@@ -4,7 +4,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -31,7 +31,8 @@
     "src/components/Header.js",
     "src/components/forms/TalentPoolForm.js",
     "src/components/forms/InputBlock2qq.js",
-    "src/app/(location)/employers/page.js"
-, "src/app/(jobs)/jobs/[category]/[id]/page.js"  ],
+    "src/app/(location)/employers/page.js",
+    "src/app/(jobs)/jobs/[category]/[id]/page.js"
+  ],
   "exclude": ["node_modules"]
 }
