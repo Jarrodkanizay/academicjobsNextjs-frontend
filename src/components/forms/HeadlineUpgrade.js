@@ -231,8 +231,8 @@ const PostJobForm = ({
             </div>
           </form>
         </div>
-        <div>
-          <h3 className={`text-aj mb-4 mt-16`}>
+        <div className={`mt-8`}>
+          <h3 className={`text-aj mb-4`}>
             Let's do this... <br /> We have the full job ready to go, and this
             form takes ONLY 60 SECONDS!!!
           </h3>
