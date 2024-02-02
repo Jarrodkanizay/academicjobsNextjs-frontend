@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import SubscribeForm from '@/components/forms/SubscribeForm';
@@ -27,80 +27,84 @@ export default function myPage() {
     <>
       <main>
         {/* Hero banner */}
-
         <div
-          className="hero h-screen max-h-[480px] md:max-h-[400px"
-          // style={{ backgroundColor: 'bg-slate-200' }}
+          className="hero h-screen max-h-[480px] md:max-h-[400px]"
+          style={{
+            backgroundImage:
+              'url(/student-jobs-on-campus/students-working-on-campus.jpg)',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+          }}
         >
           <div className="hero-overlay bg-opacity-70"></div>
-          <div className="hero-content">
+          <div className="hero-content text-white">
             <div className="max-w-2xl">
-              <h1 className="mb-16 text-2xl text-white text-center md:text-4xl font-bold">
-                "The best thing a human being can do is to help another human
-                being know more."
+              <h1 className="mb-5 text-2xl text-white md:text-4xl font-bold">
+              "The best thing a human being can do is to help another human being know more."
               </h1>
-              <SubscribeForm
-                formName="Subscribe to Newsletter (/the-academic-rankings Page)"
-                buttonText="Let us Help"
-                thankYouMessage="Thanks for joining our help area!"
-                placeholder="Enter your email"
-                formType="subscribe"
-                jobTitle=""
-                employer=""
-                jobId=""
-                jobURL=""
-              />
+              
             </div>
           </div>
         </div>
-
+       
         <h2 className="text-4xl font-bold mb-8 mt-20 text-sky-600 text-center">
-          WE SEE YOU{' '}
-        </h2>
-
+        WE SEE YOU </h2>
+  
         <h2 className="text-4xl font-bold mb-8 text-sky-600 text-center">
-          LET YOUR ACADEMIC RANKING TAKE YOU HIGHER{' '}
-        </h2>
-        <p className="text-center">Are you looking for a change in scenery?</p>
+        LET YOUR ACADEMIC RANKING TAKE YOU HIGHER </h2>
         <p className="text-center">
-          Do you want to collaborate with others with similar interests?
+         Are you looking for a change in scenery?
         </p>
         <p className="text-center">
-          Do you wish to develop your own interest areas alongside teaching
-          others?
+        Do you want to collaborate with others with similar interests?
         </p>
-
+        <p className="text-center">
+        Do you wish to develop your own interest areas alongside teaching others?
+        </p>
+        
         <div className="text-center">
-          <Link href="" className="btn btn-aj">
-            PRESS HERE TO FIND YOUR ACADEMIC RANK….
-          </Link>
-        </div>
+        <Link
+                href=""
+                className="btn btn-aj"
+              >
+                PRESS HERE TO FIND YOUR ACADEMIC RANK….
 
-        <div className="bg-sky-200 mb-8 mt-20 py-8 px-4">
+              </Link>
+             </div>
+
+             <div className="bg-sky-200 mb-8 mt-20 py-8 px-4">
           <div className="container mx-auto">
             <h2 className="text-3xl text-center font-bold mb-8 text-sky-700">
-              THE IMPORTANCE OF THE ACADEMIC RANKING: HOW A NUMBER CAN CHANGE
-              YOUR CAREER{' '}
+            THE IMPORTANCE OF THE ACADEMIC RANKING: HOW A NUMBER CAN CHANGE YOUR CAREER 
+{' '}
             </h2>
             <div className="text-col-2">
               <p className="mb-4">
-                A rank can help you establish yourself as a leader in the
-                academic workforce
+              A rank can help you establish yourself as a leader in the academic workforce
               </p>
               <p className="mb-4">
-                Having a numeral position in your career can help you find other
-                academics to collaborate with
+              Having a numeral position in your career can help you find other academics to collaborate with
               </p>
             </div>
           </div>
         </div>
+       
 
+
+             <div className="bg-sky-200 mb-8  py-8 px-4">
+          <div className="container mx-auto">
+
+        
+         
+        </div>
+        </div>
         <h2 className="text-4xl font-bold mb-20 mt-20 text-sky-600 text-center">
-          WHY DO YOU NEED A RANKING?
-        </h2>
-
-        {/* Main Content */}
-        <section className="container mx-auto px-4 mt-12">
+        WHY DO YOU NEED A RANKING?
+            </h2>
+  
+  
+ {/* Main Content */}
+ <section className="container mx-auto px-4 mt-12">
           {/* <h2 className="text-center mb-6">
             Need Cash? Fund your personal life with a Academicjob…
           </h2>
@@ -125,11 +129,12 @@ export default function myPage() {
             </Link>
           </div> */}
           {/* Diverse Roles Card */}
-
-          {/* Gain Real-World Experience in Academic Settings Card */}
-          <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
+         
+         
+         {/* Gain Real-World Experience in Academic Settings Card */}
+         <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
-              <Image
+              <img
                 width={2000}
                 height={534}
                 src="https://academicjobs.s3.amazonaws.com/img/banner/grow+yourself+globally.avif"
@@ -138,7 +143,9 @@ export default function myPage() {
               />
             </figure>
             <div className="card-body w-full">
-              <h2 className="card-title">GROW YOURSELF GLOBALLY</h2>
+              <h2 className="card-title">
+              GROW YOURSELF GLOBALLY
+              </h2>
               <p className="max-w-screen-sm">
                 The academic field is one of the most competitive arenas to be
                 involved in, both locally and globally. By establishing an
@@ -149,7 +156,7 @@ export default function myPage() {
                 academia through a globally recognised system.
               </p>
               <div className="card-actions justify-center md:justify-end">
-                <Link className="btn btn-aj" href="/student">
+                <Link className="bg-gray-500 text-white px-4 rounded-3xl font-bold" href="https://www.academicjobs.com/the-academic-rankings/my-academic-rank">
                   Develop Your Network
                 </Link>
               </div>
@@ -158,7 +165,7 @@ export default function myPage() {
 
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
-              <Image
+              <img
                 width={2000}
                 height={534}
                 src="https://academicjobs.s3.amazonaws.com/img/banner/collaboration+over+competition+.jpg"
@@ -166,8 +173,10 @@ export default function myPage() {
                 className="w-full lg:max-w-lg rounded-xl m-6"
               />
             </figure>
-            <div className="card-body w-full">
-              <h2 className="card-title">COLLABORATION OVER COMPETITION</h2>
+             <div className="card-body w-full">
+              <h2 className="card-title">
+              COLLABORATION OVER COMPETITION
+              </h2>
               <p className="max-w-screen-sm">
                 By providing a rank for you, we can set a benchmark that
                 encourages collaboration. Having a number in the academic field
@@ -179,7 +188,7 @@ export default function myPage() {
 
               <div className="card-actions justify-center md:justify-end">
                 <Link className="btn btn-aj" href="/student">
-                  Earn Extra Cash
+                Earn Extra Cash
                 </Link>
               </div>
             </div>
@@ -187,7 +196,7 @@ export default function myPage() {
           {/* Flexible Part-Time Opportunities for Academics Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
-              <Image
+              <img
                 width={2000}
                 height={534}
                 src="https://academicjobs.s3.amazonaws.com/img/banner/analyse+your+academic+competition.png"
@@ -196,7 +205,9 @@ export default function myPage() {
               />
             </figure>
             <div className="card-body w-full">
-              <h2 className="card-title">ANALYSE YOUR ACADEMIC PROGRESS</h2>
+              <h2 className="card-title">
+              ANALYSE YOUR ACADEMIC PROGRESS
+              </h2>
               <p className="max-w-screen-sm">
                 Academics are known to engage in large depths of analysis behind
                 their journals, reports, and projects. A legitimate rank of the
@@ -208,16 +219,17 @@ export default function myPage() {
               </p>
               <div className="card-actions justify-center md:justify-end">
                 <Link className="btn btn-aj" href="/student">
-                  Search Academic Rankings
+                Search Academic Rankings
                 </Link>
               </div>
             </div>
           </div>
-
-          {/* Build Your Network with On-Campus Employment Card */}
-          <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
+       
+       
+         {/* Build Your Network with On-Campus Employment Card */}
+         <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
-              <Image
+              <img
                 width={2000}
                 height={534}
                 src="https://academicjobs.s3.amazonaws.com/img/banner/2+embrace+indiviudality+.png"
@@ -226,7 +238,9 @@ export default function myPage() {
               />
             </figure>
             <div className="card-body w-full">
-              <h2 className="card-title">EMBRACE YOUR INDIVIDUALITY</h2>
+              <h2 className="card-title">
+                EMBRACE YOUR INDIVIDUALITY
+              </h2>
               <p className="max-w-screen-sm">
                 Set yourself apart from your university ranking. Academics often
                 find themselves stuck in a partnership with their university.
@@ -239,17 +253,18 @@ export default function myPage() {
               </p>
               <div className="card-actions justify-center md:justify-start">
                 <Link className="btn btn-aj" href="/student">
-                  Gain Valuable Skills
+                  Gain Valuable Skills 
                 </Link>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Cards
+
+  {/* Cards
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8"> */}
-        {/* Card 1 */}
-        {/* <div className="card bg-slate-100 shadow-xl">
+            {/* Card 1 */}
+            {/* <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
                   <svg
@@ -284,8 +299,8 @@ export default function myPage() {
               </div>
             </div> */}
 
-        {/* Card 2 */}
-        {/* <div className="card bg-slate-100 shadow-xl">
+            {/* Card 2 */}
+            {/* <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
                   <Image
@@ -310,8 +325,8 @@ export default function myPage() {
               </div>
             </div> */}
 
-        {/* Card 3 */}
-        {/* <div className="card bg-slate-100 shadow-xl">
+            {/* Card 3 */}
+            {/* <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
                   <Image
@@ -331,10 +346,10 @@ export default function myPage() {
                 </p>
               </div>
             </div> */}
-        {/* End Cards */}
-
-        {/* Card 4 */}
-        {/* <div className="card bg-slate-100 shadow-xl">
+            {/* End Cards */}
+          
+            {/* Card 4 */}
+            {/* <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
                   <Image
@@ -355,10 +370,10 @@ export default function myPage() {
                 </p>
               </div>
             </div> */}
-        {/* End Cards */}
-        {/* </div> */}
+            {/* End Cards */}
+          {/* </div> */}
 
-        <div
+          <div
           className="hero h-screen max-h-[480px] md:max-h-[400px]"
           style={{
             backgroundImage:
@@ -371,7 +386,7 @@ export default function myPage() {
           <div className="hero-content text-center text-white py-8">
             <div className="max-w-2xl">
               <h1 className="mb-5 text-2xl md:text-4xl font-bold">
-                WHY DO YOU NEED A RANKING?
+              WHY DO YOU NEED A RANKING?
               </h1>
               <p className="mb-5 text-sm md:text-lg">
                 The academic field is one of the most competitive arenas to be
@@ -385,10 +400,7 @@ export default function myPage() {
                 legitimately establish themselves as a leader in academia
                 through a globally recognised system.
               </p>
-              <Link
-                className="btn btn-aj"
-                href="https://www.theacademicrankings.com/"
-              >
+              <Link className="btn btn-aj" href="https://www.theacademicrankings.com/">
                 The Academic Rankings
               </Link>
             </div>
@@ -396,9 +408,45 @@ export default function myPage() {
         </div>
 
         {/* Breakout Section */}
-        <div className="bg-sky-200 mb-8 mt-16 py-8 px-4">
+        <div className="bg-sky-200 mb-8  py-8 px-4">
           <div className="container mx-auto">
-            <h2 className="text-3xl text-center font-bold mb-8 text-sky-700">
+
+          <div className="flex mt-16 text-left gap-16 bg-sky-200 p-4 w-full mb-8">
+
+<div className="p-4 rounded-3xl bg-white">
+          <h2 className="text-4xl font-bold mb-8 mt-8 text-sky-600 ">
+        WE SEE YOU </h2>
+  
+        <h2 className="text-4xl font-bold mb-8 text-sky-600 ">
+        LET YOUR ACADEMIC RANKING TAKE YOU HIGHER </h2>
+        <p className="pb-2">
+         Are you looking for a change in scenery?
+        </p>
+        <p className="pb-2">
+        Do you want to collaborate with others with similar interests?
+        </p>
+        <p className="pb-2">
+        Do you wish to develop your own interest areas alongside teaching others?
+        </p>
+        
+        </div>
+        <div className="p-4 rounded-3xl bg-white pt-16">
+            <h2 className="text-3xl  font-bold mb-8 text-sky-700">
+            THE IMPORTANCE OF THE ACADEMIC RANKING: HOW A NUMBER CAN CHANGE YOUR CAREER 
+{' '}
+            </h2>
+            <div className="text-col-2">
+              <p className="mb-4">
+              A rank can help you establish yourself as a leader in the academic workforce
+              </p>
+              <p className="mb-4">
+              Having a numeral position in your career can help you find other academics to collaborate with
+              </p>
+            </div>
+          </div>
+        </div>
+
+            <h2 className="text-3xl text-left font-bold mb-8 text-sky-700">
               {countryRegionPlural()} #1 Job Board for Academic Rankings{' '}
             </h2>
             <div className="text-col-2">
@@ -411,7 +459,7 @@ export default function myPage() {
               </p>
               <p className="mb-4">
                 Facilitating ideal matches between students and various campus
-                roles. Whether it's part-time positions or work-study
+                roles. Whether its part-time positions or work-study
                 opportunities, we connect you with roles that enhance your
                 academic experience and provide practical work skills. Opt for
                 Academic Jobs for unrivaled access to the{' '}
@@ -425,7 +473,7 @@ export default function myPage() {
         <section>
           <h3 className="container mx-auto text-center py-8 px-4">
             Want opportunities delivered to you?{' '}
-            <Link href="/academic-talent-pool" className="btn btn-aj">
+            <Link href="https://www.academicjobs.com/academic-talent-pool" className="bg-gray-500 text-white px-4 rounded-3xl font-bold mt-4">
               Join our Talent Pool
             </Link>
           </h3>
