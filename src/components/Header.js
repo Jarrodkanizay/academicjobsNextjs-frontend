@@ -217,7 +217,7 @@ export default function Header() {
             </>
           )}
 
-          <div className="ml-auto post-a-job-button z-[-1]">
+          <div className="ml-auto post-a-job-button z-[-1] md:z-[1]">
             <NavItem
               url={`/${
                 countryMappings2[region.toLowerCase()].url
