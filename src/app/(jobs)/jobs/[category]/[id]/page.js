@@ -140,7 +140,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
       </div>
       <div className="md:flex p-4 gap-8">
         <article
-          className="md:w-2/3 wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg"
+          className="job-post md:w-2/3 wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg"
           data-id={jobId}
         >
           {
@@ -209,7 +209,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
             This might interest you...{' '}
           </h3>
           <div className="">
-          <JobSearchBox2 q={title} />
+            <JobSearchBox2 q={title} />
           </div>
           <SearchResults q={title} filterOff={true} />
         </div>

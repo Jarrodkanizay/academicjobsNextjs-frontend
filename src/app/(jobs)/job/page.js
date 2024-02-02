@@ -127,7 +127,7 @@ const Job = () => {
         {/* ... (rest of the component remains unchanged) */}
       </div>
       <article
-        className="wrapper media bg-white border-2 border-2-gray-300 p-4 mb-4 rounded-lg shadow-lg"
+        className="job-post wrapper media bg-white border-2 border-2-gray-300 p-4 mb-4 rounded-lg shadow-lg"
         data-id={jobId}
       >
         <div dangerouslySetInnerHTML={{ __html: description }} />

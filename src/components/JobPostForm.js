@@ -69,7 +69,7 @@ const JobPostForm = ({ partner, region }) => {
     console.log('data', data);
     mutation.mutate({
       ...data,
-      '00_formSource': `Message from: ${partner} Post Form`,
+      '00_formSource': `Message from: ${partnerName} Post Form`,
     });
   };
   if (mutation.isLoading) {
@@ -89,7 +89,6 @@ const JobPostForm = ({ partner, region }) => {
     return <div>An error occurred: {mutation.error.message}</div>;
   }
   if (mutation.isSuccess) {
-    //alert(partner)
     router.push(stripeLink[region]);
   } else {
     content = (
@@ -110,7 +109,7 @@ const JobPostForm = ({ partner, region }) => {
                       className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500"
                       {...register('01_Name_Job_Elephant')}
                       onChange={(e) => {
-                        if (partner === 'JobElephant') {
+                        if (partnerName === 'JobElephant') {
                           setValue('01_Organisation_Name', 'JobElephant');
                         }
                         if (e.target.value === 'Add Contact') {

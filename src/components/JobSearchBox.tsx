@@ -14,10 +14,10 @@ export default function JobSearchBox({ q, l }: MyComponentProps) {
   const locationRef = useRef<HTMLInputElement>(null);
   useEffect(() => {
     if (keyWordRef.current && searchParams.has('q')) {
-      keyWordRef.current.value = searchParams.get('q') || '';
+      keyWordRef.current.value = decodeURIComponent(searchParams.get('q') || '');
     }
     if (locationRef.current && searchParams.has('l')) {
-      locationRef.current.value = searchParams.get('l') || '';
+      locationRef.current.value = decodeURIComponent(searchParams.get('l') || '');
     }
     if (keyWordRef.current && q) keyWordRef.current.value = q;
     if (locationRef.current && l) locationRef.current.value = l;
