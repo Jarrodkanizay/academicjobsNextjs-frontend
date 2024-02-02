@@ -11,7 +11,7 @@ const Button = ({ title, company_name, how_to_apply }: Props) => {
   return (
     <button
       // target="_blank"
-      className="px-4 py-2 bg-[#f4a10c] text-white font-bold rounded-full"
+      className="px-4 py-2 bg-[#f4a10c] text-white font-bold rounded-full animate-pulse"
       data-toggle="modal"
       data-target="#apply-modal"
       data-title={title}
