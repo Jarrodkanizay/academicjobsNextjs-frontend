@@ -154,11 +154,11 @@ export default function myPage() {
                 </figure>
 
                 <ul className=" p-4 pl-12 list-disc text-gray-500">
-                  <li>Harvard University</li>
-                  <li> Massachusetts Institute of Technology (MIT)</li>
-                  <li> Stanford University</li>
-                  <li> University of California Berkeley (UCB)</li>
-                  <li> California Institute of Technology (Caltech)</li>
+                  <a href="https://www.academicjobs.com/employers/harvard-university/3100">Harvard University</a>
+                  <a href="https://www.academicjobs.com/employers/massachusetts-institute-of-technology/3103"> <br/> Massachusetts Institute of Technology (MIT)</a>
+                  <a href="https://www.academicjobs.com/employers/stanford-university/3101"> Stanford University<br/></a>
+                  <a href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105"> University of California Berkeley (UCB)</a>
+                  <a href="https://www.academicjobs.com/employers/caltech/3128"> California Institute of Technology (Caltech)</a>
                 </ul>
 
                 <Link
@@ -188,11 +188,11 @@ export default function myPage() {
                   />
                 </figure>
                 <ul className=" p-4 pl-12 list-disc text-gray-500">
-                  <li>Queensland University of Technology (QUT)</li>
-                  <li> Bond University</li>
-                  <li> The University of Sydney</li>
-                  <li> Australian National University (ANU)</li>
-                  <li> Monash University</li>
+                  <a href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786">Queensland University of Technology (QUT)</a>
+                  <a href="https://www.academicjobs.com/employers/bond-university/3785/"> Bond University<br/></a>
+                  <a href="https://www.academicjobs.com/employers/the-university-of-sydney/3171"> The University of Sydney<br/></a>
+                  <a href="https://www.academicjobs.com/employers/australian-national-university/3739"> Australian National University (ANU)<br/></a>
+                  <a href="https://www.academicjobs.com/employers/monash-university/3182/"> Monash University</a>
                 </ul>
                 <Link
                   href={'/top-10-australian-universities'}
@@ -218,11 +218,11 @@ export default function myPage() {
                   />
                 </figure>
                 <ul className=" p-4 pl-12 list-disc text-gray-500">
-                  <li>University of Oxford</li>
-                  <li> Imperial College London</li>
-                  <li> University of Cambridge</li>
-                  <li> University of Edinburgh</li>
-                  <li> King’s College London</li>
+                  <a href="https://www.academicjobs.com/employers/university-of-oxford/3099">University of Oxford<br/></a>
+                  <a href="https://www.academicjobs.com/employers/imperial-college-london/3129"> Imperial College London<br/></a>
+                  <a href="https://www.academicjobs.com/employers/university-of-cambridge/12635"> University of Cambridge<br/></a>
+                  <a href="https://www.academicjobs.com/employers/university-of-edinburgh/12681"> University of Edinburgh<br/></a>
+                  <a href=""> King’s College London</a>
                 </ul>
                 <Link
                   href={'/academic-hub/'}
