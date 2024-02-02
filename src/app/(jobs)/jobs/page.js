@@ -21,8 +21,8 @@ import Link from 'next/link';
 // };
 export default function Page() {
   const searchParams = useSearchParams()
-  const q = searchParams.get('q')
-  const l = searchParams.get('l')
+  const q = decodeURIComponent(searchParams.get('q') || '');
+  const l = decodeURIComponent(searchParams.get('l') || '');
   //const router = useRouter();
   console.log("router.query", searchParams)
   //const { q, l } = router.query;

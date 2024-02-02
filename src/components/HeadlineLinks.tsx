@@ -2,9 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const HeadlineJobLinks = () => {
-  const iconSize = 40;
+  const iconSize: number = 40;
 
-  function getRandomNumber(min, max) {
+  function getRandomNumber(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 

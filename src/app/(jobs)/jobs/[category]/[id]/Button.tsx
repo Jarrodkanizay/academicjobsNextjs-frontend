@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Link from 'next/link';
 
 interface Props {
    title: string; company_name: string; how_to_apply: string
@@ -22,7 +23,8 @@ const Button = ({ title, company_name, how_to_apply }: Props) => {
             subject
           )}`;
         } else {
-          window.open(how_to_apply, '_blank');
+          
+           window.open(how_to_apply, '_blank');
           //window.location.href = how_to_apply;
         }
       }}
