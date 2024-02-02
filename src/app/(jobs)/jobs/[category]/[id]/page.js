@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 import HeadlineUpgrade from '@/components/forms/HeadlineUpgrade';
-import HeadlineLinks from '@/components/forms/HeadlineLinks';
+import HeadlineLinks from '@/components/HeadlineLinks';
 import InputBlock from '@/components/forms/InputBlock';
 import Link from 'next/link';
 import Image from 'next/image';
