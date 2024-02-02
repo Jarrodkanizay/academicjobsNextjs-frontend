@@ -7,8 +7,8 @@ import { BsHandbag } from 'react-icons/bs';
 import Link from 'next/link';
 interface SearchResultsProps {
   q: {
-    q?: string;
-    l?: string;
+    q?: string | 0;
+    l?: string | 0;
   };
   filterOff?: boolean;
 }

@@ -115,6 +115,7 @@ export default function myPage() {
           <div className="newLine"></div>
         </div> */}
         <JobSearchBox q="student" />
+        {/*  */}
         <SearchResults q={{ q: 'student' || 0 }} />
         {/* <HeroBanner
           mobileMode={true}
