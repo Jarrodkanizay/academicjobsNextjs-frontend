@@ -130,7 +130,9 @@ const Job = () => {
         className="job-post wrapper media bg-white border-2 border-2-gray-300 p-4 mb-4 rounded-lg shadow-lg"
         data-id={jobId}
       >
-        <div dangerouslySetInnerHTML={{ __html: description }} />
+        <div className="job-content">
+          <div dangerouslySetInnerHTML={{ __html: description }} />
+        </div>
         <div className="mt-5 mb-0 text-right">Join Talent Pool</div>
       </article>
       {new Date(expiration_date) < new Date() && expiration_date && (

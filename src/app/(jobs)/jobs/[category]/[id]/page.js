@@ -140,14 +140,16 @@ const JobDetailPage = async ({ params, searchParams }) => {
       </div>
       <div className="md:flex p-4 gap-8">
         <article
-          className="job-post md:w-2/3 wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg"
+          className="job-post wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg"
           data-id={jobId}
         >
           {
             <div className="">
               <div
                 className={`${
-                  clientType !== 'HeadlineOnly' || active ? 'block' : 'hidden'
+                  clientType !== 'HeadlineOnly' || active
+                    ? 'job-content block'
+                    : 'hidden'
                 }`}
                 dangerouslySetInnerHTML={{ __html: description }}
               />
@@ -183,8 +185,8 @@ const JobDetailPage = async ({ params, searchParams }) => {
                   </div>
                 </div>
                 <details className="mt-[80px]">
-                  <summary class="text-[16px] text-emerald-500 cursor-pointer px-4 py-2 rounded-md text-center">
-                    <a href="#activate-quick-post">
+                  <summary class="text-[16px] text-emerald-500 hover:text-sky-500 cursor-pointer px-4 py-2 rounded-md text-center">
+                    <a href="#activate-quick-post ">
                       Recruiter Information Only
                     </a>
                     <HeadlineLinks />

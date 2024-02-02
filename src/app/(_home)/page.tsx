@@ -25,7 +25,7 @@ export default function myPage() {
   return (
     <main className="content-grid">
       <div className="flex flex-col items-center justify-center mb-32">
-        <div className="h-[27vh] flex flex-col items-end justify-end">
+        <div className="h-[15vh] flex flex-col items-end justify-end">
           <LogoAJ forceClass="logo" width={310} height={210} />
         </div>
         {/* Job Search Form */}
@@ -134,10 +134,10 @@ export default function myPage() {
         </div>
       </div>
 
-      <div className=" mx-auto mt-8">
+      <div className=" mx-auto mt-8 mb-8">
         <h2 className="underline-full"> Top University Employer Rankings</h2>
         <div className="bg-white flex flex-col">
-          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  mb-8 text-left px-4">
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch mb-8 text-left">
             <div className="/academic-hub/happiness-and-academics/">
               <div className="card bg-slate-100 shadow-xl">
                 <div className="card-body">
@@ -163,13 +163,14 @@ export default function myPage() {
 
                 <Link
                   href={'/academic-hub/'}
-                  className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                  className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
                 >
                   View List
                 </Link>
               </div>
             </div>
-            <div className="/top-10-australian-universities">
+            {/* /top-10-australian-universities */}
+            <div className="">
               <div className="card bg-slate-100 shadow-xl">
                 <div className="card-body">
                   <h2 className="card-title">
@@ -196,7 +197,7 @@ export default function myPage() {
                 </ul>
                 <Link
                   href={'/top-10-australian-universities'}
-                  className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                  className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
                 >
                   View List
                 </Link>
@@ -226,7 +227,7 @@ export default function myPage() {
                 </ul>
                 <Link
                   href={'/academic-hub/'}
-                  className="btn btn-aj btn-sm w-1/4 mx-auto my-2"
+                  className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
                 >
                   View List
                 </Link>
