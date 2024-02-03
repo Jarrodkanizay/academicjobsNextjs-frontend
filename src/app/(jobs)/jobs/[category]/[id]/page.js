@@ -53,6 +53,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
     how_to_apply,
     featured,
     clientType,
+    headlineOnly
   } = job.data;
 
   return (
@@ -87,7 +88,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                 </Link> */}
             </div>
             <div className="flex items-center">
-              {clientType === 'HeadlineOnly' ? (
+              {headlineOnly ? (
                 <Link href="#request-job-post" className="btn btn-aj">
                   Apply Now
                 </Link>
@@ -147,7 +148,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
             <div className="">
               <div
                 className={`${
-                  clientType !== 'HeadlineOnly' || active
+                  !headlineOnly || active
                     ? 'job-content block'
                     : 'hidden'
                 }`}
@@ -155,7 +156,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
               />
               <div
                 className={`flex flex-col ${
-                  clientType === 'HeadlineOnly' && !active ? 'block' : 'hidden'
+                  headlineOnly && !active ? 'block' : 'hidden'
                 }`}
               >
                 <div className="flex justify-center items-center flex-wrap">
