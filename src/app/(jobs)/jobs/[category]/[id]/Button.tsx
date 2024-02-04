@@ -3,10 +3,18 @@ import React from 'react';
 import Link from 'next/link';
 
 interface Props {
-   title: string; company_name: string; how_to_apply: string
+  title: string;
+  company_name: string;
+  how_to_apply: string;
+  buttonText?: string;
 }
 
-const Button = ({ title, company_name, how_to_apply }: Props) => {
+const Button = ({
+  title,
+  company_name,
+  how_to_apply,
+  buttonText = 'Apply Now',
+}: Props) => {
   // const { title, company_name, how_to_apply } = params;
   return (
     <button
@@ -23,13 +31,12 @@ const Button = ({ title, company_name, how_to_apply }: Props) => {
             subject
           )}`;
         } else {
-          
-           window.open(how_to_apply, '_blank');
+          window.open(how_to_apply, '_blank');
           //window.location.href = how_to_apply;
         }
       }}
     >
-      Apply Now
+      {buttonText}
     </button>
   );
 };

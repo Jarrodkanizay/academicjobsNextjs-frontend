@@ -1,0 +1,173 @@
+:root {
+  --margin-x: 16px; /* if you change this you must change the next two lines */
+  --jobs-post-container-max-width: 1200px; /* if you change this you must change; @media (max-width: 1232px) { */
+  --jobs-filter-container-max-width: 1000px; /* if you change this you must change; @media (max-width: 1032px) { */
+  --mobile-breakpoint: 1024px;
+
+  --listing-panel-height: 3500px;
+  --listing-gap: 36px;
+
+  --box-shadow-color: rgb(0 0 0 / 0.1);
+  --box-shadow: 0 10px 15px -3px var(--box-shadow-color),
+    0 4px 6px -4px var(--box-shadow-color);
+}
+
+.jobs_grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: 'post_panel post_panel post_panel post_panel post_panel post_panel listings_panel listings_panel listings_panel filters_panel filters_panel filters_panel';
+  max-width: var(--jobs-post-container-max-width);
+  margin: auto;
+  gap: 30px;
+  padding: 0;
+}
+
+.job_post_panel_container {
+  grid-template-areas: 'post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel listings_panel listings_panel listings_panel listings_panel';
+}
+
+.job_post_search_container {
+  max-width: var(--jobs-filter-container-max-width);
+  grid-template-areas: 'filters_panel filters_panel filters_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel';
+}
+
+.job_post_header_container {
+  grid-template-areas: 'post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel applications_close_panel applications_close_panel';
+  margin-top: var(--listing-gap);
+  margin-bottom: var(--listing-gap);
+}
+
+.job_post_header_panel {
+  grid-area: post_panel;
+}
+.applications_close_panel {
+  grid-area: applications_close_panel;
+}
+
+.post_panel {
+  grid-area: post_panel;
+}
+
+.listings_panel {
+  grid-area: listings_panel;
+}
+
+.filters_panel {
+  grid-area: filters_panel;
+}
+
+/* Content Panels */
+.post_content {
+  height: auto;
+  box-shadow: var(--box-shadow);
+}
+
+.listings_content {
+  position: relative;
+  min-height: var(--listing-panel-height);
+}
+
+.listing {
+  background-color: white;
+  margin-top: var(--listing-gap);
+  box-shadow: var(--box-shadow);
+}
+
+.listings_content .search_panel {
+  position: sticky;
+  top: 0;
+}
+
+.filters_content {
+  height: auto;
+}
+
+@media (max-width: 1232px) {
+  .jobs_grid.job_post_panel_container {
+    margin-left: var(--margin-x);
+    margin-right: var(--margin-x);
+  }
+}
+@media (max-width: 1032px) {
+  .jobs_grid.job_post_search_container {
+    margin-left: var(--margin-x);
+    margin-right: var(--margin-x);
+  }
+}
+
+@media (max-width: 1024px) {
+  .jobs_grid {
+    margin-left: var(--margin-x);
+    margin-right: var(--margin-x);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'post_panel'
+      'listings_panel'
+      'filters_panel';
+  }
+
+  .job_post_panel_container {
+    grid-template-areas:
+      'post_panel'
+      'listings_panel';
+  }
+
+  .job_post_search_container {
+    grid-template-areas:
+      'filters_panel'
+      'listings_panel';
+  }
+}
+
+// Delete all of the below code
+body > section {
+  margin-bottom: 100px !important;
+}
+
+section > * {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.jobs_grid {
+  border-radius: 8px;
+  background-color: pink;
+}
+
+.post_panel {
+  background-color: rgb(218, 230, 241);
+}
+
+.listings_panel {
+  background-color: rgb(186, 219, 255);
+}
+
+.filters_panel {
+  background-color: rgb(255, 243, 199);
+}
+
+.post_content {
+  padding: 40px;
+  background-color: rgb(100, 240, 151);
+}
+
+.listings_content {
+  background-color: rgb(223, 143, 220);
+}
+
+.listing {
+  padding: 40px;
+}
+
+.filters_content {
+  background-color: rgb(156, 210, 248);
+}
+
+.listings_content .search_panel {
+  padding: 30px;
+  background-color: lightsalmon;
+}
+
+section > * {
+  border: 1px solid black;
+}

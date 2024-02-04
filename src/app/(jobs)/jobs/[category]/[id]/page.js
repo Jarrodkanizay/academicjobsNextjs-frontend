@@ -53,60 +53,63 @@ const JobDetailPage = async ({ params, searchParams }) => {
     how_to_apply,
     featured,
     clientType,
-    headlineOnly
+    headlineOnly,
   } = job.data;
 
   return (
-    <div className="bg-white relative content-grid mx-auto  ">
-      <div className="bg-slate-200 full-width">
-        <div className="md:flex items-center p-4 gap-8">
-          <div className="md:w-1/4 md:pr-4 md:p-8">
-            <Link
-              href={`/employers/${company_name
-                ?.replace(/\W+/g, '-')
-                .toLowerCase()}/${employer_id}/`}
-            >
-              <div className="w-full rounded-lg p-4 bg-white">
-                <Image
-                  className="w-full "
-                  src={
-                    `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` ||
-                    ''
-                  }
-                  alt={company_name}
-                  width={300}
-                  height={200}
-                />
-              </div>
-            </Link>
-          </div>
-          <div className="w-3/4">
-            <h1 className="text-2xl font-bold mb-2 text-black">{title}</h1>
-            <div className="mb-4">
-              {/* <Link href={`/employers/id/${id}`}>
+    <>
+      <div className="bg-white relative content-grid mx-auto  ">
+        <div className="bg-slate-200 full-width">
+          <div className="md:flex items-center p-4 gap-8">
+            <div className="md:w-1/4 md:pr-4 md:p-8">
+              <Link
+                href={`/employers/${company_name
+                  ?.replace(/\W+/g, '-')
+                  .toLowerCase()}/${employer_id}/`}
+              >
+                <div className="w-full rounded-lg p-4 bg-white">
+                  <Image
+                    className="w-full "
+                    src={
+                      `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` ||
+                      ''
+                    }
+                    alt={company_name}
+                    width={300}
+                    height={200}
+                  />
+                </div>
+              </Link>
+            </div>
+            <div className="w-3/4">
+              <h1 className="text-2xl font-bold mb-2 text-black">{title}</h1>
+              <div className="mb-4">
+                {/* <Link href={`/employers/id/${id}`}>
                     {location}
                 </Link> */}
-            </div>
-            <div className="flex items-center">
-              {headlineOnly ? (
-                <Link href="#request-job-post" className="btn btn-aj">
-                  Apply Now
-                </Link>
-              ) : (
-                <Button
-                  title={title}
-                  company_name={company_name}
-                  how_to_apply={how_to_apply}
-                />
-              )}
-              <div className="ml-4">
-                <div className="">
-                  <div
-                  // onClick={() => {
-                  //     setIsOpen(true);
-                  // }}
-                  >
-                    <BsFillShareFill />
+              </div>
+              <div className="flex items-center">
+                {headlineOnly ? (
+                  <Link href="#request-job-post" className="btn btn-aj">
+                    Apply Now
+                  </Link>
+                ) : (
+                  <Button
+                    title={title}
+                    company_name={company_name}
+                    how_to_apply={how_to_apply}
+                    // buttonText="Apply Now /jobs/[category]/[id]/page.js"
+                  />
+                )}
+                <div className="ml-4">
+                  <div className="">
+                    <div
+                    // onClick={() => {
+                    //     setIsOpen(true);
+                    // }}
+                    >
+                      <BsFillShareFill />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -114,32 +117,46 @@ const JobDetailPage = async ({ params, searchParams }) => {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap bg-white p-4 mb-4">
-        {/* ... (rest of the component remains unchanged) */}
-        <div className="flex justify-between gap-4 md:gap-16 items-center">
-          <div className="text-sm text-gray-600">
-            <div className="mb-1">{company_name}</div>
-            <div className="text-gray-700 font-light">{location}</div>
-          </div>
-          <div className="applications-close border-4 rounded p-1 font-bold">
-            <p className="text-gray-400 text-sm mb-1">Applications Close</p>
-            <div className="text-sm">
-              {expiration_date ? (
-                <time>
-                  {new Date(expiration_date).toLocaleDateString('en-US', {
-                    month: 'short',
-                    day: 'numeric',
-                    year: 'numeric',
-                  })}
-                </time>
-              ) : (
-                <p className="text-center">TBA</p>
-              )}
-            </div>
+      {/* organization, location closing date of job post */}
+      <section className="jobs_grid job_post_header_container">
+        <div className="job_post_header_panel">
+          <p className="company_name">{company_name}</p>
+          <p className="location">{location}</p>
+        </div>
+        <div className="applications_close_panel">
+          <h6>Applications Close</h6>
+          <div className="text-sm">
+            {expiration_date ? (
+              <time>
+                {new Date(expiration_date).toLocaleDateString('en-US', {
+                  month: 'short',
+                  day: 'numeric',
+                  year: 'numeric',
+                })}
+              </time>
+            ) : (
+              <p className="text-center">TBA</p>
+            )}
           </div>
         </div>
-      </div>
-      <div className="md:flex p-4 gap-8">
+      </section>
+
+      {/* main body of job post */}
+      <section className="jobs_grid job_post_panel_container">
+        <article className="post_panel">
+          <div className="post_content">Job Post</div>
+        </article>
+        <div className="listings_panel">
+          <div className="listings_content">
+            <div className="search_panel">Search</div>
+            <div className="listing">Job Listings</div>
+            <div className="listing">Job Listings</div>
+            <div className="listing">Job Listings</div>
+          </div>
+        </div>
+      </section>
+
+      <div className="md:flex p-4 gap-8 bg-sky-200">
         <article
           className="job-post wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg"
           data-id={jobId}
@@ -148,9 +165,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
             <div className="">
               <div
                 className={`${
-                  !headlineOnly || active
-                    ? 'job-content block'
-                    : 'hidden'
+                  !headlineOnly || active ? 'job-content block' : 'hidden'
                 }`}
                 dangerouslySetInnerHTML={{ __html: description }}
               />
@@ -222,7 +237,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
           Job Fulfilled By AcademicJobs.com
         </div>
       )}
-    </div>
+    </>
   );
 };
 export default JobDetailPage;
