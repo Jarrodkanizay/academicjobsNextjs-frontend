@@ -36,7 +36,7 @@ export default function myPage() {
 
       <JobCategoryAndLocationLinks />
       {/* Set this to false to show uni logo and welcome to message */}
-      {(showJobElephant = true)}
+      {(showJobElephant = false)}
       {showJobElephant ? (
         <>
           <div className="mb-16">
@@ -154,11 +154,26 @@ export default function myPage() {
                 </figure>
 
                 <ul className=" p-4 pl-12 list-disc text-gray-500">
-                  <a href="https://www.academicjobs.com/employers/harvard-university/3100">Harvard University</a>
-                  <a href="https://www.academicjobs.com/employers/massachusetts-institute-of-technology/3103"> <br/> Massachusetts Institute of Technology (MIT)</a>
-                  <a href="https://www.academicjobs.com/employers/stanford-university/3101"> Stanford University<br/></a>
-                  <a href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105"> University of California Berkeley (UCB)</a>
-                  <a href="https://www.academicjobs.com/employers/caltech/3128"> California Institute of Technology (Caltech)</a>
+                  <a href="https://www.academicjobs.com/employers/harvard-university/3100">
+                    Harvard University
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/massachusetts-institute-of-technology/3103">
+                    {' '}
+                    <br /> Massachusetts Institute of Technology (MIT)
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/stanford-university/3101">
+                    {' '}
+                    Stanford University
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105">
+                    {' '}
+                    University of California Berkeley (UCB)
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/caltech/3128">
+                    {' '}
+                    California Institute of Technology (Caltech)
+                  </a>
                 </ul>
 
                 <Link
@@ -189,11 +204,28 @@ export default function myPage() {
                   />
                 </figure>
                 <ul className=" p-4 pl-12 list-disc text-gray-500">
-                  <a href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786">Queensland University of Technology (QUT)</a>
-                  <a href="https://www.academicjobs.com/employers/bond-university/3785/"> Bond University<br/></a>
-                  <a href="https://www.academicjobs.com/employers/the-university-of-sydney/3171"> The University of Sydney<br/></a>
-                  <a href="https://www.academicjobs.com/employers/australian-national-university/3739"> Australian National University (ANU)<br/></a>
-                  <a href="https://www.academicjobs.com/employers/monash-university/3182/"> Monash University</a>
+                  <a href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786">
+                    Queensland University of Technology (QUT)
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/bond-university/3785/">
+                    {' '}
+                    Bond University
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/the-university-of-sydney/3171">
+                    {' '}
+                    The University of Sydney
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/australian-national-university/3739">
+                    {' '}
+                    Australian National University (ANU)
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/monash-university/3182/">
+                    {' '}
+                    Monash University
+                  </a>
                 </ul>
                 <Link
                   href={'/top-10-australian-universities'}
@@ -219,10 +251,25 @@ export default function myPage() {
                   />
                 </figure>
                 <ul className=" p-4 pl-12 list-disc text-gray-500">
-                  <a href="https://www.academicjobs.com/employers/university-of-oxford/3099">University of Oxford<br/></a>
-                  <a href="https://www.academicjobs.com/employers/imperial-college-london/3129"> Imperial College London<br/></a>
-                  <a href="https://www.academicjobs.com/employers/university-of-cambridge/12635"> University of Cambridge<br/></a>
-                  <a href="https://www.academicjobs.com/employers/university-of-edinburgh/12681"> University of Edinburgh<br/></a>
+                  <a href="https://www.academicjobs.com/employers/university-of-oxford/3099">
+                    University of Oxford
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/imperial-college-london/3129">
+                    {' '}
+                    Imperial College London
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/university-of-cambridge/12635">
+                    {' '}
+                    University of Cambridge
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/university-of-edinburgh/12681">
+                    {' '}
+                    University of Edinburgh
+                    <br />
+                  </a>
                   <a href=""> King’s College London</a>
                 </ul>
                 <Link
