@@ -169,7 +169,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
 
       <div className="md:flex p-4 gap-8 bg-sky-200">
         <article
-          className="job-post wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg"
+          className="job-post wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg md:w-2/3"
           data-id={jobId}
         >
           {
@@ -233,7 +233,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
           }
           {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
         </article>
-        <div className="max-h-screen overflow-y-scroll max-w-96 hidden md:block">
+        <div className="max-h-screen overflow-y-scroll max-w-96 hidden md:block md:w-1/3">
           <h3 className=" pl-4 text-lg text-gray-400">
             This might interest you...{' '}
           </h3>
