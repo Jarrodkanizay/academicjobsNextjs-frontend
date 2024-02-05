@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function myPage() {
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
-  let showJobElephant = false;
+  const showJobElephant = true;
 
   return (
     <main className="content-grid">
@@ -36,7 +36,6 @@ export default function myPage() {
 
       <JobCategoryAndLocationLinks />
       {/* Set this to false to show uni logo and welcome to message */}
-      {(showJobElephant = false)}
       {showJobElephant ? (
         <>
           <div className="mb-16">

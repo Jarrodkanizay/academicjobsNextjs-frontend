@@ -53,7 +53,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
     how_to_apply,
     featured,
     clientType,
-    headlineOnly
+    headlineOnly,
   } = job.data;
 
   return (
@@ -148,9 +148,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
             <div className="">
               <div
                 className={`${
-                  !headlineOnly || active
-                    ? 'job-content block'
-                    : 'hidden'
+                  !headlineOnly || active ? 'job-content block' : 'hidden'
                 }`}
                 dangerouslySetInnerHTML={{ __html: description }}
               />
