@@ -67,7 +67,7 @@ export default function Page() {
               width={180}
               height={170}
               src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
-              className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
+              className="rounded-3xl my-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
               alt="AcademicJobs USA logo"
                          /> </a>
      
