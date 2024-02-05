@@ -11,6 +11,8 @@ import Button from './Button';
 import { CloudCog } from 'lucide-react';
 import SubscribeForm from '@/components/forms/SubscribeForm';
 import { useSearchParams } from 'next/navigation';
+import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
+
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
   if (!job) return { title: 'not found' };
@@ -117,11 +119,20 @@ const JobDetailPage = async ({ params, searchParams }) => {
           </div>
         </div>
       </div>
-      {/* organization, location closing date of job post */}
+      {/* job post header: organization, location closing date of job post */}
       <section className="jobs_grid job_post_header_container">
         <div className="job_post_header_panel">
-          <p className="company_name">{company_name}</p>
-          <p className="location">{location}</p>
+          <h3 className="company_name">{company_name}</h3>
+          <h4 className="location">
+            <Image
+              src={`/icons/map-marker-icon.svg`}
+              alt="Map Marker Icon"
+              width={22}
+              height={22}
+              className="map_marker_icon"
+            />
+            {location}
+          </h4>
         </div>
         <div className="applications_close_panel">
           <h6>Applications Close</h6>
@@ -143,7 +154,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
 
       {/* main body of job post */}
       <section className="jobs_grid job_post_panel_container">
-        <article className="post_panel">
+        <article className="post_panel" data-id={jobId}>
           <div className="post_content">Job Post</div>
         </article>
         <div className="listings_panel">

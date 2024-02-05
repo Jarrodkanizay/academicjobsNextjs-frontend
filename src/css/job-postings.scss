@@ -1,7 +1,7 @@
 :root {
   --margin-x: 16px; /* if you change this you must change the next two lines */
   --jobs-post-container-max-width: 1200px; /* if you change this you must change; @media (max-width: 1232px) { */
-  --jobs-filter-container-max-width: 1000px; /* if you change this you must change; @media (max-width: 1032px) { */
+  --jobs-filter-container-max-width: 1024px; /* if you change this you must change; @media (max-width: 1056px) { */
   --mobile-breakpoint: 1024px;
 
   --listing-panel-height: 3500px;
@@ -12,110 +12,140 @@
     0 4px 6px -4px var(--box-shadow-color);
 }
 
-.jobs_grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-areas: 'post_panel post_panel post_panel post_panel post_panel post_panel listings_panel listings_panel listings_panel filters_panel filters_panel filters_panel';
-  max-width: var(--jobs-post-container-max-width);
-  margin: auto;
-  gap: 30px;
-  padding: 0;
-}
+html {
+  body,
+  body .prose {
+    .jobs_grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas: 'post_panel post_panel post_panel post_panel post_panel post_panel listings_panel listings_panel listings_panel filters_panel filters_panel filters_panel';
+      max-width: var(--jobs-post-container-max-width);
+      margin: auto;
+      gap: 30px;
+      padding: 0;
+    }
 
-.job_post_panel_container {
-  grid-template-areas: 'post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel listings_panel listings_panel listings_panel listings_panel';
-}
+    .job_post_panel_container {
+      grid-template-areas: 'post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel listings_panel listings_panel listings_panel listings_panel';
+    }
 
-.job_post_search_container {
-  max-width: var(--jobs-filter-container-max-width);
-  grid-template-areas: 'filters_panel filters_panel filters_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel';
-}
+    .job_post_search_container {
+      max-width: var(--jobs-filter-container-max-width);
+      grid-template-areas: 'filters_panel filters_panel filters_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel';
+    }
 
-.job_post_header_container {
-  grid-template-areas: 'post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel applications_close_panel applications_close_panel';
-  margin-top: var(--listing-gap);
-  margin-bottom: var(--listing-gap);
-}
+    .job_post_header_container {
+      grid-template-areas: 'post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel applications_close_panel applications_close_panel';
+      margin-top: var(--listing-gap);
+      margin-bottom: var(--listing-gap);
+    }
 
-.job_post_header_panel {
-  grid-area: post_panel;
-}
-.applications_close_panel {
-  grid-area: applications_close_panel;
-}
+    .job_post_header_panel {
+      grid-area: post_panel;
+    }
 
-.post_panel {
-  grid-area: post_panel;
-}
+    .job_post_header_panel .company_name {
+      margin: 0;
+      color: var(--color-gray-blue);
+    }
+    .job_post_header_panel .location {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 4px;
+      margin: 0;
+    }
+    .job_post_header_panel .map_marker_icon {
+      margin-left: -6px;
+    }
 
-.listings_panel {
-  grid-area: listings_panel;
-}
+    .applications_close_panel {
+      text-align: center;
+      padding: 8px 10px;
+      grid-area: applications_close_panel;
+      background-color: white;
+    }
+    .applications_close_panel h6 {
+      font-size: 16px;
+    }
 
-.filters_panel {
-  grid-area: filters_panel;
-}
+    .post_panel {
+      grid-area: post_panel;
+    }
 
-/* Content Panels */
-.post_content {
-  height: auto;
-  box-shadow: var(--box-shadow);
-}
+    .listings_panel {
+      grid-area: listings_panel;
+    }
 
-.listings_content {
-  position: relative;
-  min-height: var(--listing-panel-height);
-}
+    .filters_panel {
+      grid-area: filters_panel;
+    }
 
-.listing {
-  background-color: white;
-  margin-top: var(--listing-gap);
-  box-shadow: var(--box-shadow);
-}
+    /* Content Panels */
+    .post_content {
+      height: auto;
+      box-shadow: var(--box-shadow);
+    }
 
-.listings_content .search_panel {
-  position: sticky;
-  top: 0;
-}
+    .listings_content {
+      position: relative;
+      min-height: var(--listing-panel-height);
+    }
 
-.filters_content {
-  height: auto;
-}
+    .listing {
+      background-color: white;
+      margin-top: var(--listing-gap);
+      box-shadow: var(--box-shadow);
+    }
 
-@media (max-width: 1232px) {
-  .jobs_grid.job_post_panel_container {
-    margin-left: var(--margin-x);
-    margin-right: var(--margin-x);
-  }
-}
-@media (max-width: 1032px) {
-  .jobs_grid.job_post_search_container {
-    margin-left: var(--margin-x);
-    margin-right: var(--margin-x);
-  }
-}
+    .listings_content .search_panel {
+      position: sticky;
+      top: 0;
+    }
 
-@media (max-width: 1024px) {
-  .jobs_grid {
-    margin-left: var(--margin-x);
-    margin-right: var(--margin-x);
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'post_panel'
-      'listings_panel'
-      'filters_panel';
-  }
+    .filters_content {
+      height: auto;
+    }
 
-  .job_post_panel_container {
-    grid-template-areas:
-      'post_panel'
-      'listings_panel';
-  }
+    @media (max-width: 1232px) {
+      .jobs_grid.job_post_panel_container,
+      .jobs_grid.job_post_header_container {
+        margin-left: var(--margin-x);
+        margin-right: var(--margin-x);
+      }
+    }
+    @media (max-width: 1056px) {
+      .jobs_grid.job_post_search_container,
+      .jobs_grid.job_post_header_container {
+        margin-left: var(--margin-x);
+        margin-right: var(--margin-x);
+        background-color: lightcoral;
+      }
+    }
 
-  .job_post_search_container {
-    grid-template-areas:
-      'filters_panel'
-      'listings_panel';
+    @media (max-width: 1024px) {
+      .jobs_grid {
+        margin-left: var(--margin-x);
+        margin-right: var(--margin-x);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          'post_panel'
+          'listings_panel'
+          'filters_panel';
+      }
+
+      .job_post_panel_container {
+        grid-template-areas:
+          'post_panel'
+          'listings_panel';
+      }
+
+      .job_post_search_container {
+        grid-template-areas:
+          'filters_panel'
+          'listings_panel';
+      }
+    }
   }
 }
 
@@ -131,7 +161,6 @@ section > * {
 
 .jobs_grid {
   border-radius: 8px;
-  background-color: pink;
 }
 
 .post_panel {
