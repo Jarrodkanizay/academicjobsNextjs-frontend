@@ -208,6 +208,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                       jobId={jobId}
                       employer={company_name}
                       jobTitle={title}
+                      placeholder="Enter email for full job post"
                     />
                   </div>
                 </div>
