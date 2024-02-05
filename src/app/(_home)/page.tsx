@@ -5,6 +5,7 @@ import LogoAJ from '@/components/brand/LogoAJ';
 import type { Metadata } from 'next';
 import JobSearchBoxHome from '@/components/JobSearchBoxHome';
 import JobCategoryAndLocationLinks from '@/components/links/JobCategoryAndLocationLinks';
+import UniLogos from '@/components/UniLogos';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function myPage() {
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
-  const showJobElephant = true;
+  const showJobElephant = false;
 
   return (
     <main className="content-grid">
@@ -62,12 +63,7 @@ export default function myPage() {
             Welcome to Australia's University Jobs Website
           </h2>
           <div className="container mb-[50px]">
-            <Image
-              src="/australian-universities.jpg"
-              alt="D"
-              width={1200}
-              height={609}
-            />
+            <UniLogos />
           </div>
         </>
       )}
