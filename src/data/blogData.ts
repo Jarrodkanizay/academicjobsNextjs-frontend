@@ -14,7 +14,7 @@ export const blogData = [
       'Professionals may flourish in a dynamic and cutting-edge higher education setting by pursuing a career in academic roles at Harvard University.',
     tags: [],
     keywords: 'Start your Career at Harvard University ',
-    content: `<div class="blog-content">
+    content: `<div className="blog-content">
     <p><br>A career at Harvard University in academic positions offers an opportunity for professionals to thrive in
         a stimulating and innovative higher ed environment.</p>
     <p>Harvard University offers an opportunity to engage in cutting-edge research, inspire the next generation of
@@ -66,7 +66,7 @@ export const blogData = [
     tags: [],
     keywords: 'Academic Dream Jobs. dream college job',
     content: `
-    <div class="blog-content">
+    <div className="blog-content">
         <p style="padding-top: 40px;">
             <span>Securing your dream job in the field of academics requires a strategic and purposeful approach. Just
                 as in any other profession, landing an academic position necessitates careful planning, relevant
@@ -169,7 +169,7 @@ export const blogData = [
       "Join Bond University's academic staff and collaborate with some of the top higher education professionals in the world to find your future career.",
     tags: [],
     keywords: 'Seek all Bond University Jobs Here',
-    content: `<div class="blog-content">
+    content: `<div className="blog-content">
     <p>Find you next job as a part of the academic team at Bond University, working alongside some of the best.
         Working at Bond University provides an exceptional professional and academic experience, making it an ideal
         place of employment. The university's commitment to academic excellence is manifested in its cutting-edge
@@ -227,7 +227,7 @@ export const blogData = [
     ],
     keywords: `QUT academic positions, higher education careers, academic excellence, QUT University jobs, Brisbane academic community, diverse academic opportunities, higher ed environment, career growth in academia, QUT faculty positions, academic roles at QUT`,
     content: `
-<div class="blog-content">
+<div className="blog-content">
   <p>Academic Jobs can help you kick start your career at Queensland University of Technology today!</p>
   <p>A career at QUT University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment.</p>
   <p>With a strong commitment to academic excellence, QUT provides a platform for educators and researchers to engage in innovative teaching and research that shapes the future of higher education. The university's focus on global perspectives, interdisciplinary collaboration, and state-of-the-art facilities fosters an environment where individuals can contribute significantly to advancements in knowledge and learning.</p>
@@ -343,7 +343,7 @@ export const blogData = [
       'Working at Harvard University offers a once-in-a-lifetime chance to join a prestigious organisation recognised for its dedication to global impact, groundbreaking research, and academic achievement.',
     tags: [],
     keywords: 'Seek all Harvard University Jobs Here ',
-    content: `<div class="blog-content">
+    content: `<div className="blog-content">
     <p>Find you next job as a part of the academic team at Harvard University, working alongside some of the best. A
         job at Harvard University represents an unparalleled opportunity to be part of an esteemed institution
         renowned for its commitment to academic excellence, ground-breaking research, and global impact. Whether as
@@ -395,7 +395,7 @@ export const blogData = [
     tags: [],
     keywords: 'benefits of academic jobs online. virtual hiring is on the rise',
     content: `
-    <div class="blog-content">
+    <div className="blog-content">
     <p><span>Virtual hiring for academic jobs has gained significant popularity in recent years, and there
             are several reasons why it is on the rise beyond just coping with a pandemic!</span></p>
     <p><span>This shift to online platforms for academic job recruitment offers numerous benefits for both
@@ -493,7 +493,7 @@ export const blogData = [
       'Find out how to prepare yourself for the future of work in academia and discover the best academic jobs across different regions and disciplines.',
     tags: [],
     keywords: 'Global Landscape of Academic Jobs. opportunities and challenges',
-    content: `<div class="blog-content">
+    content: `<div className="blog-content">
     <p><span>Exploring the global landscape of academic jobs reveals a diverse range of opportunities and
             challenges for individuals pursuing careers in academia. Academic jobs encompass various roles,
             including professors, researchers, postdoctoral fellows, lecturers, and administrative positions within
@@ -604,7 +604,7 @@ export const blogData = [
       'Looking for the best academic jobs in Australia? This blog shows the best of faculty, research, and administrative positions at leading universities. ',
     tags: [],
     keywords: 'Top Academic Jobs Australia. Academic Jobs Australia',
-    content: `<div class="blog-content">
+    content: `<div className="blog-content">
     <div tabindex="0">
   <div>
   <h2><span style="font-weight: bold;">How to Choose the Best University and Career Path in Australia for 2023?</span></h2>
@@ -672,7 +672,7 @@ export const blogData = [
     keywords:
       'evolution of university recruitment. evolution of academic recruitment',
     content: `
-    <div class="blog-content">
+    <div className="blog-content">
     <p><span style="">The evolution of university recruitment has undergone significant changes in recent years, with the increasing adoption and integration of digital platforms. Traditional methods of recruitment, such as on-campus career fairs and job postings, have been supplemented and, in some cases, replaced by innovative digital strategies. This shift has been driven by several factors, including advancements in technology, changing candidate preferences, and the need for more efficient and cost-effective recruitment processes. According to a report by McKinsey, companies can reduce their cost per hire by 60% using digital recruiting methods. The Society for Human Resource Management (SHRM) estimates that recruiters can save up to 80% of their time by using AI-powered recruitment tools.</span></p>
     <p style="padding-left: 40px;"><span style="">&gt; One of the key drivers behind the embrace of digital platforms in university recruitment is the rise of online job boards and professional networking sites. Platforms like AcademicJobs.com, LinkedIn, Indeed, and Glassdoor have become popular destinations for both candidates and employers. These platforms offer a vast pool of talent and provide an efficient way for employers to reach out to potential candidates. Employers can post job openings, search for qualified candidates, and even engage in direct communication through messaging features.</span></p>
     <p style="padding-left: 40px;"><span style="">&gt; Social media platforms have also played a significant role in the evolution of university recruitment. Platforms like Facebook, Twitter, and Instagram have become powerful tools for employers to connect with candidates and build their employer brand. Companies now leverage social media to showcase their company culture, share job openings, and engage with potential candidates. This shift has allowed for more personalized and targeted recruitment efforts.</span></p>
@@ -743,30 +743,30 @@ export const blogData = [
     tags: [],
     keywords: 'highest paid academic jobs Australia 2023 .',
     content: `
-    <div class="blog-content">
+    <div className="blog-content">
     <p style="padding-bottom: 2rem;">If you are looking for a rewarding and lucrative career in academia, you might be interested in knowing which academic jobs pay the best. According to the latest data from the Australian Taxation Office, the highest paid academic jobs in Australia for 2023 are:</p>
   
-    <div class="job">
+    <div className="job">
       <h2 style="font-weight: bold;">Professor of Medicine: $282,212</h2>
       <p style="padding-bottom: 1rem;">Professors of medicine are experts in their fields of medical research and education. They teach medical students, supervise postgraduate researchers, conduct clinical trials, publish papers, and provide leadership in their departments and faculties.</p>
     </div>
   
-    <div class="job">
+    <div className="job">
       <h2 style="font-weight: bold;">Professor of Engineering: $216,388</h2>
       <p style="padding-bottom: 1rem;">Professors of engineering are leaders in their disciplines of engineering research and education. They teach engineering students, supervise postgraduate researchers, conduct applied research, publish papers, and collaborate with industry partners.</p>
     </div>
   
-    <div class="job">
+    <div className="job">
       <h2 style="font-weight: bold;">Professor of Law: $213,844</h2>
       <p style="padding-bottom: 1rem;">Professors of law are authorities in their areas of legal research and education. They teach law students, supervise postgraduate researchers, conduct theoretical and empirical research, publish papers, and provide consultancy services.</p>
     </div>
   
-    <div class="job">
+    <div className="job">
       <h2 style="font-weight: bold;">Professor of Business: $208,788</h2>
       <p style="padding-bottom: 1rem;">Professors of business are experts in their fields of business research and education. They teach business students, supervise postgraduate researchers, conduct quantitative and qualitative research, publish papers, and engage with stakeholders.</p>
     </div>
   
-    <div class="job">
+    <div className="job">
       <h2 style="font-weight: bold;">Professor of Education: $201,688</h2>
       <p style="padding-bottom: 3rem;">Professors of education are specialists in their domains of educational research and education. They teach education students, supervise postgraduate researchers, conduct pedagogical and policy research, publish papers, and contribute to curriculum development.</p>
     </div>
@@ -847,7 +847,7 @@ export const blogData = [
     Research Funding Landscape,
     Strategic Partnerships in academia`,
     content: `
-    <div class="blog-content">
+    <div className="blog-content">
     <p style="text-align: justify;">In the dynamic landscape of academia, where knowledge is not only power but also a lucrative profession, the quest for the highest-paid academic job is a journey many aspire to embark upon. As we step into 2023, let's explore the pinnacle of academic careers, the role that not only commands respect but also an impressive financial reward.</p>
   
     <h2 style="font-size: 20px; font-weight: bold; margin-top: 20px;">The Prestigious Position:</h2>
@@ -888,7 +888,7 @@ export const blogData = [
     tags: [],
     keywords: 'Find Student Jobs on your University Campus .',
     content: `
-    <div class="blog-content">
+    <div className="blog-content">
     <p><strong>Find Student Jobs on your University Campus</strong></p>
     <p>Engaging in part-time or casual student jobs on campus is a holistic experience that integrates work with the
         academic and social fabric of university life. These academic student jobs, spanning various roles within
@@ -935,7 +935,7 @@ export const blogData = [
     tags: [],
     keywords: 'Seek all QUT University Jobs at Academic Jobs.',
     content: `
-    <div class="blog-content">
+    <div className="blog-content">
         <p>Find your next job as a part of the academic team at Queensland University of Technology (QUT), working
             alongside some of the best. Life at QUT offers an enriching experience, positioning it as an ideal place of
             employment, especially for lecturers and academics. As a lecturer at QUT, one can partake in a dynamic
@@ -977,7 +977,7 @@ export const blogData = [
       'Academic careers at Bond University provide professionals with the chance to flourish in a dynamic and cutting-edge higher education setting.',
     tags: [],
     keywords: 'Seek all Bond University Careers Here',
-    content: `<div class="blog-content">
+    content: `<div className="blog-content">
     <p>Academic Jobs can help you kick start your career at Bond Uni today! </p>
     <p><br>A career at Bond University in academic positions offers an opportunity for professionals to thrive in a
         stimulating and innovative higher ed environment. With a commitment to excellence in education and research,
@@ -1036,7 +1036,7 @@ export const blogData = [
       'employment at UCLA University provides access to a rich and active academic community within the context of higher education.',
     tags: [],
     keywords: 'Seek all UCLA Jobs Here ',
-    content: `<div class="blog-content">
+    content: `<div className="blog-content">
     <p>Find you next job as a part of the academic team at the University of California, Los Angeles, working
         alongside some of the best. </p>
     <p>A job at UCLA University, within the realm of higher education and academic positions, opens the door to a
@@ -1089,7 +1089,7 @@ export const blogData = [
       'Professionals can flourish in an innovative and dynamic higher education setting by holding academic roles at UCLA.',
     tags: [],
     keywords: 'Start you Career at UCLA ',
-    content: `<div class="blog-content">
+    content: `<div className="blog-content">
     <p>Academic Jobs can help you kick start your career at UCLA today!</p>
     <p><br>A career at The University of California, Los Angeles (UCLA) in academic positions offers an opportunity
         for professionals to thrive in a stimulating and innovative higher ed environment. Whether in faculty roles

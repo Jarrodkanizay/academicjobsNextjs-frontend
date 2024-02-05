@@ -103,7 +103,7 @@ const RankingSearchForm = ({ maxWidth }) => {
           type="text"
           ID="first-name-input"
           field="01_First_Name"
-          forceClass=""
+          forceclassName=""
           placeholder="First Name"
           autoComplete="given-name"
           required={true}
@@ -116,7 +116,7 @@ const RankingSearchForm = ({ maxWidth }) => {
           type="text"
           ID="last-name-input"
           field="02_Last_Name"
-          forceClass=""
+          forceclassName=""
           placeholder=" Last Name"
           autoComplete="family-name"
           required={true}
@@ -130,7 +130,7 @@ const RankingSearchForm = ({ maxWidth }) => {
           type="email"
           ID="email-input"
           field="03_Email"
-          forceClass=""
+          forceclassName=""
           placeholder="Email"
           autoComplete="email"
           required={true}
@@ -145,7 +145,7 @@ const RankingSearchForm = ({ maxWidth }) => {
           type="tel"
           ID="phone-input"
           field="04_phone"
-          forceClass=""
+          forceclassName=""
           autoComplete="tel"
           placeholder="Phone Number"
           required={false}
@@ -158,7 +158,7 @@ const RankingSearchForm = ({ maxWidth }) => {
           type="text"
           ID="current_employer"
           field="05_Current_Employer"
-          forceClass=""
+          forceclassName=""
           autoComplete="organization"
           placeholder="Current Employer"
           required={false}
@@ -194,7 +194,7 @@ const RankingSearchForm = ({ maxWidth }) => {
           type="text"
           ID="institution_01"
           field="institution_01"
-          forceClass=""
+          forceclassName=""
           placeholder="Institution Name"
           required={false}
           colSpan={2}
@@ -206,7 +206,7 @@ const RankingSearchForm = ({ maxWidth }) => {
           type="text"
           ID="institution_02"
           field="institution_02"
-          forceClass=""
+          forceclassName=""
           placeholder="Institution Name"
           required={false}
           colSpan={2}
@@ -218,7 +218,7 @@ const RankingSearchForm = ({ maxWidth }) => {
           type="text"
           ID="institution_03"
           field="institution_03"
-          forceClass=""
+          forceclassName=""
           placeholder="Institution Name"
           required={false}
           colSpan={2}

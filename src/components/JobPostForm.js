@@ -184,7 +184,7 @@ const JobPostForm = ({ partner, region }) => {
                       label="Organization Name"
                       type="text"
                       field="01_Organisation_Name"
-                      forceClass=" py-3 text-black"
+                      forceclassName=" py-3 text-black"
                       placeholder="Organization Name"
                       autoComplete="organization"
                       hidden={newContact || standardMode ? false : true}
@@ -197,7 +197,7 @@ const JobPostForm = ({ partner, region }) => {
                       label="First Name"
                       type="text"
                       field="01_First_Name"
-                      forceClass=" py-3 text-black"
+                      forceclassName=" py-3 text-black"
                       placeholder="First Name"
                       autoComplete="given-name"
                       hidden={newContact || standardMode ? false : true}
@@ -210,7 +210,7 @@ const JobPostForm = ({ partner, region }) => {
                       label="Last Name"
                       type="text"
                       field="01_Last_Name"
-                      forceClass=" py-3 text-black"
+                      forceclassName=" py-3 text-black"
                       placeholder="Last Name"
                       autoComplete="family-name"
                       hidden={newContact || standardMode ? false : true}
@@ -223,7 +223,7 @@ const JobPostForm = ({ partner, region }) => {
                       label="Email"
                       type="email"
                       field="02_Email"
-                      forceClass=" py-3 text-black"
+                      forceclassName=" py-3 text-black"
                       placeholder="email"
                       autoComplete="email"
                       hidden={newContact || standardMode ? false : true}
@@ -236,7 +236,7 @@ const JobPostForm = ({ partner, region }) => {
                   label={institutionName}
                   type="text"
                   field="03_Institution_Name"
-                  forceClass=" py-3 text-black"
+                  forceclassName=" py-3 text-black"
                   placeholder=""
                 />
                 <InputBlock
@@ -245,7 +245,7 @@ const JobPostForm = ({ partner, region }) => {
                   label="Job Link URL (ie: apptrkr.com/...)"
                   type="text"
                   field="04_Job_Link_URL"
-                  forceClass=" py-3 text-black"
+                  forceclassName=" py-3 text-black"
                   placeholder=""
                 />
                 <label className="form-control">

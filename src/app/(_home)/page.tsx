@@ -26,7 +26,7 @@ export default function myPage() {
     <main className="content-grid">
       <div className="flex flex-col items-center justify-center mb-32">
         <div className="h-[15vh] flex flex-col items-end justify-end">
-          <LogoAJ forceClass="logo" width={310} height={210} />
+          <LogoAJ forceclassName="logo" width={310} height={210} />
         </div>
         {/* Job Search Form */}
         <div className="w-full md:w-3/6 h-[6vh] flex flex-col items-top mt-[-1rem]">

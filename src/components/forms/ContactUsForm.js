@@ -97,7 +97,7 @@ const ContactUsForm = ({ maxWidth }) => {
             type="text"
             ID="first-name-input"
             field="01_First_Name"
-            forceClass=""
+            forceclassName=""
             placeholder="First Name"
             autoComplete="given-name"
             required={true}
@@ -111,7 +111,7 @@ const ContactUsForm = ({ maxWidth }) => {
             type="text"
             ID="last-name-input"
             field="02_Last_Name"
-            forceClass=""
+            forceclassName=""
             placeholder="Last Name"
             autoComplete="family-name"
             required={true}
@@ -126,7 +126,7 @@ const ContactUsForm = ({ maxWidth }) => {
             type="email"
             ID="email-input"
             field="05_Email"
-            forceClass=""
+            forceclassName=""
             placeholder="Email"
             autoComplete="email"
             required={true}
@@ -141,7 +141,7 @@ const ContactUsForm = ({ maxWidth }) => {
             type="tel"
             ID="phone-input"
             field="04_phone"
-            forceClass=""
+            forceclassName=""
             autoComplete="tel"
             placeholder="Phone Number"
             required={false}

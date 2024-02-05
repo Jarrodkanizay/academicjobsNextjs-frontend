@@ -1,6 +1,6 @@
 const data = [
   {
-// Blog 1
+    // Blog 1
     Name: 'how to land your dream college job a step by step guide',
     Title: 'How to Land Your Dream College Job: A Step-by-Step Guide',
     Description:
@@ -9,7 +9,7 @@ const data = [
     content: '06 Jul, 2023',
     content2: `  
   <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/Dream_Job_2.png" alt="How to Land Your Dream College Job: A Step-by-Step Guide">
-  <div class="blog__content">
+  <div className="blog__content">
   <p>&nbsp;</p>
                 <p "padding-top: 40px;  "><span style= >Securing your dream job in the field of academics requires a strategic and purposeful approach. Just as in any other profession, landing an academic position necessitates careful planning, relevant experience, networking, and a strong understanding of the industry. This article aims to guide you through the process of pursuing your dream academic job, building upon the strategies discussed in our previous article on landing a dream job in college. By following these steps, you can increase your chances of achieving your career goals in academia.</span></p>
 <p style="padding-left: 40px; padding-top: 40px; font-weight: bold; "><span >&gt; Step 1 Clarify Your Academic Interests and Aspirations</span></p>
@@ -45,7 +45,7 @@ const data = [
   `,
   },
   {
-// Blog 2
+    // Blog 2
     Name: 'exploring the global landscape of academic jobs opportunities and challenges',
     Title:
       'Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges',
@@ -54,7 +54,7 @@ const data = [
     Keyword: 'Global Landscape of Academic Jobs. opportunities and challenges',
     content: '07 Jul, 2023',
     content2: `  
-  <div class="blog__content">
+  <div className="blog__content">
   <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/Global_Opportunities_2.png" alt="Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges">
   <p>&nbsp;</p>
                 <p><span style="">Exploring the global landscape of academic jobs reveals a diverse range of opportunities and challenges for individuals pursuing careers in academia. Academic jobs encompass various roles, including professors, researchers, postdoctoral fellows, lecturers, and administrative positions within educational institutions.</span></p>
@@ -87,8 +87,8 @@ const data = [
   },
 
   {
-// Blog 3
-Name: 'exploring the benefits of academic jobs online why virtual hiring is on the rise',
+    // Blog 3
+    Name: 'exploring the benefits of academic jobs online why virtual hiring is on the rise',
     Title:
       'Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise',
     Description:
@@ -97,7 +97,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
     content: '20 Jun, 2023',
     content2: `   
   <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/Virtual_Hiring.png" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
-  <div class="blog__content">
+  <div className="blog__content">
   <p>&nbsp;</p>
   <p><span style="">Virtual hiring for academic jobs has gained significant popularity in recent years, and there are several reasons why it is on the rise beyond just coping with a pandemic!</span></p>
 <p><span style="">This shift to online platforms for academic job recruitment offers numerous benefits for both employers and job seekers.</span></p>
@@ -188,7 +188,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 5
+    // Blog 5
     Name: 'top academic jobs australia',
     Title: 'Top Academic Jobs Australia',
     Description:
@@ -198,7 +198,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
     content2: `   
   <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/top-academic-jobs-australia.jpg" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
-  <div class="blog__content">
+  <div className="blog__content">
   <div tabindex="0">
 <div>
 <p>&nbsp;</p>
@@ -252,7 +252,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 6
+    // Blog 6
     Name: 'the evolution of university recruitment',
     Title:
       'The Evolution of University Recruitment: Embracing Digital Platforms',
@@ -264,7 +264,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
     content2: `   
   <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
-  <div class="blog__content">
+  <div className="blog__content">
   <p>&nbsp;</p><p><p><span style="";">The evolution of university recruitment has undergone significant changes in recent years, with the increasing adoption and integration of digital platforms. Traditional methods of recruitment, such as on-campus career fairs and job postings, have been supplemented and, in some cases, replaced by innovative digital strategies. This shift has been driven by several factors, including advancements in technology, changing candidate preferences, and the need for more efficient and cost-effective recruitment processes. According to a report by McKinsey, companies can reduce their cost per hire by 60% using digital recruiting methods. The Society for Human Resource Management (SHRM) estimates that recruiters can save up to 80% of their time by using AI-powered recruitment tools.</span></p>
   <p>&nbsp;</p><p><p style="padding-left: 40px;"><span style="";">&gt; One of the key drivers behind the embrace of digital platforms in university recruitment is the rise of online job boards and professional networking sites. Platforms like AcademicJobs.com, LinkedIn, Indeed, and Glassdoor have become popular destinations for both candidates and employers. These platforms offer a vast pool of talent and provide an efficient way for employers to reach out to potential candidates. Employers can post job openings, search for qualified candidates, and even engage in direct communication through messaging features.</span></p>
   <p>&nbsp;</p><p><p style="padding-left: 40px;"><span style="";">&gt; Social media platforms have also played a significant role in the evolution of university recruitment. Platforms like Facebook, Twitter, and Instagram have become powerful tools for employers to connect with candidates and build their employer brand. Companies now leverage social media to showcase their company culture, share job openings, and engage with potential candidates. This shift has allowed for more personalized and targeted recruitment efforts.</span></p>
@@ -322,7 +322,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 7
+    // Blog 7
     Name: 'highest paid academic jobs australia 2023',
     Title: 'The Highest Paid Academic Jobs Australia for 2023',
     Description:
@@ -332,15 +332,15 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
     content2: `   
   <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
-  <div class="container">
+  <div className="container">
   <p style="padding-bottom: 2rem">If you are looking for a rewarding and lucrative career in academia, you might be interested in knowing which academic jobs pay the best. According to the latest data from the Australian Taxation Office, the highest paid academic jobs in Australia for 2023 are:</p>
   
-  <div class="job">
+  <div className="job">
     <h2 style="font-weight: bold";">Professor of Medicine: $282,212</h2>
     <p style="padding-bottom: 1rem">Professors of medicine are experts in their fields of medical research and education. They teach medical students, supervise postgraduate researchers, conduct clinical trials, publish papers, and provide leadership in their departments and faculties.</p>
   </div>
 
-  <div class="job">
+  <div className="job">
     <h2 style="font-weight: bold">Professor of Engineering: $216,388</h2>
     <p style="padding-bottom: 1rem">Professors of engineering are leaders in their disciplines of engineering research and education. They teach engineering students, supervise postgraduate researchers, conduct applied research, publish papers, and collaborate with industry partners.</p>
   </div>
@@ -350,12 +350,12 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
     <p style="padding-bottom: 1rem"> "Professors of law are authorities in their areas of legal research and education. They teach law students, supervise postgraduate researchers, conduct theoretical and empirical research, publish papers, and provide consultancy services.</p>
   </div>
 
-  <div class="job">
+  <div className="job">
     <h2 style="font-weight: bold">Professor of Business: $208,788</h2>
     <p style="padding-bottom: 1rem">Professors of business are experts in their fields of business research and education. They teach business students, supervise postgraduate researchers, conduct quantitative and qualitative research, publish papers, and engage with stakeholders.</p>
   </div>
 
-  <div class="job">
+  <div className="job">
     <h2 style="font-weight: bold">Professor of Education: $201,688</h2>
     <p style="padding-bottom: 3rem">Professors of education are specialists in their domains of educational research and education. They teach education students, supervise postgraduate researchers, conduct pedagogical and policy research, publish papers, and contribute to curriculum development.</p>
   </div>
@@ -402,7 +402,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 8
+    // Blog 8
     Name: 'the highest paid academic job in 2023',
     Title: 'Unveiling the Pinnacle: The Highest-Paid Academic Job in 2023',
     Description:
@@ -413,7 +413,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
 
-  <div class="container">
+  <div className="container">
   <p style="text-align: justify;">In the dynamic landscape of academia, where knowledge is not only power but also a lucrative profession, the quest for the highest-paid academic job is a journey many aspire to embark upon. As we step into 2023, let's explore the pinnacle of academic careers, the role that not only commands respect but also an impressive financial reward.</p>
 
   <h2 style="font-size: 20px; font-weight: bold; margin-top: 20px;">The Prestigious Position:</h2>
@@ -441,7 +441,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 9
+    // Blog 9
     Name: 'find student jobs on your university campus',
     Title: 'Find Student Jobs on your University Campus',
     Description:
@@ -478,7 +478,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 10
+    // Blog 10
     Name: 'seek all qut university careers here',
     Title: 'Seek all QUT University Careers Here',
     Description:
@@ -523,7 +523,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 11
+    // Blog 11
     Name: 'seek all qut university jobs here',
     Title: 'Seek all QUT University Jobs Here',
     Description:
@@ -555,7 +555,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 12
+    // Blog 12
     Name: 'seek all bond university careers here',
     Title: 'Seek all Bond University Careers Here',
     Description:
@@ -597,7 +597,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 13
+    // Blog 13
     Name: 'seek all bond university jobs here',
     Title: 'Seek all Bond University Jobs Here',
     Description:
@@ -631,7 +631,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 14
+    // Blog 14
     Name: 'start your career at harvard university',
     Title: 'Start your Career at Harvard University ',
     Description:

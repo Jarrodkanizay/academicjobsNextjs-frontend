@@ -35,6 +35,7 @@
     "react-dom": "^18",
     "react-hook-form": "^7.49.3",
     "react-icons": "^4.12.0",
+    "react-modal": "^3.16.1",
     "react-redux": "^9.0.4",
     "sass": "^1.69.7",
     "tailwind-merge": "^2.2.0",

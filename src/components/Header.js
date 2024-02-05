@@ -116,22 +116,22 @@ export default function Header() {
             url={`/${countryMappings2[region.toLowerCase()].url}/jobs`}
             icon="/dotted-arrow.svg"
             navLink="Seek Jobs"
-            forceClass="border-b hover:border-amber-500" //this is optional
-            forceButtonClass="border-b hover:border-amber-500 mr-2 "
+            forceclassName="border-b hover:border-amber-500" //this is optional
+            forceButtonclassName="border-b hover:border-amber-500 mr-2 "
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
             url={`/${countryMappings2[region.toLowerCase()].url}/employers`}
             icon="/upward-arrow.svg"
             navLink="Top Universities"
-            forceButtonClass="border-b hover:border-amber-500 "
+            forceButtonclassName="border-b hover:border-amber-500 "
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
             url="/career-help"
             icon="/network-icon.svg"
             navLink="Career Help"
-            forceButtonClass="border-b hover:border-amber-500 "
+            forceButtonclassName="border-b hover:border-amber-500 "
             onClick={() => setIsNavOpen(false)}
           />
           <div
@@ -190,8 +190,8 @@ export default function Header() {
               >
                 Search Globally
               </a>
-              <details class="w-full text-center bg-gray-300 open:bg-[amber-200] duration-300 rounded-3xl font-bold shadow-xl">
-                <summary class="py-2">Search In Your Country</summary>
+              <details className="w-full text-center bg-gray-300 open:bg-[amber-200] duration-300 rounded-3xl font-bold shadow-xl">
+                <summary className="py-2">Search In Your Country</summary>
                 <a
                   className={`md:w-52  dropdown-content z-[1] menu p-2  bg-slate-100  w-31 } `}
                 >
@@ -224,8 +224,8 @@ export default function Header() {
               }/recruitment/`}
               icon="/post-a-job-icon.svg"
               navLink="Post a Job"
-              forceLinkClass="ml-auto"
-              forceButtonClass="nav-mobile-btn btn btn-aj "
+              forceLinkclassName="ml-auto"
+              forceButtonclassName="nav-mobile-btn btn btn-aj "
               onClick={() => setIsNavOpen(false)}
             />
           </div>

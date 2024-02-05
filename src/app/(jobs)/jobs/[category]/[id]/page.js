@@ -11,6 +11,8 @@ import Button from './Button';
 import { CloudCog } from 'lucide-react';
 import SubscribeForm from '@/components/forms/SubscribeForm';
 import { useSearchParams } from 'next/navigation';
+import ModalTrigger from '@/components/mailToModal/ModalTrigger';
+
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
   if (!job) return { title: 'not found' };
@@ -53,7 +55,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
     how_to_apply,
     featured,
     clientType,
-    headlineOnly
+    headlineOnly,
   } = job.data;
 
   return (
@@ -87,7 +89,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     {location}
                 </Link> */}
             </div>
-            <div className="flex items-center">
+            <div className="flex gap-8 items-center">
               {headlineOnly ? (
                 <Link href="#request-job-post" className="btn btn-aj">
                   Apply Now
@@ -99,17 +101,19 @@ const JobDetailPage = async ({ params, searchParams }) => {
                   how_to_apply={how_to_apply}
                 />
               )}
-              <div className="ml-4">
-                <div className="">
-                  <div
-                  // onClick={() => {
-                  //     setIsOpen(true);
-                  // }}
-                  >
-                    <BsFillShareFill />
-                  </div>
-                </div>
+              <div>
+                <ModalTrigger />
               </div>
+
+              <a className="" href="mailto:">
+                <BsFillShareFill size={32} />
+              </a>
+              <a className="" href="mailto:">
+                <Image width={44} height={44} src="/heart.svg" alt="heart" />
+              </a>
+              <a className="btn btn-info rounded-full " href="mailto:">
+                Join Talent Pool
+              </a>
             </div>
           </div>
         </div>
@@ -148,9 +152,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
             <div className="">
               <div
                 className={`${
-                  !headlineOnly || active
-                    ? 'job-content block'
-                    : 'hidden'
+                  !headlineOnly || active ? 'job-content block' : 'hidden'
                 }`}
                 dangerouslySetInnerHTML={{ __html: description }}
               />
@@ -186,13 +188,13 @@ const JobDetailPage = async ({ params, searchParams }) => {
                   </div>
                 </div>
                 <details className="mt-[80px]">
-                  <summary class="text-[16px] text-emerald-500 hover:text-sky-500 cursor-pointer px-4 py-2 rounded-md text-center">
+                  <summary className="text-[16px] text-emerald-500 hover:text-sky-500 cursor-pointer px-4 py-2 rounded-md text-center">
                     <a href="#activate-quick-post ">
                       Recruiter Information Only
                     </a>
                     <HeadlineLinks />
                   </summary>
-                  <div class="px-4 py-2">
+                  <div className="px-4 py-2">
                     <HeadlineUpgrade
                       clientType={clientType}
                       jobId={jobId}
@@ -226,5 +228,3 @@ const JobDetailPage = async ({ params, searchParams }) => {
   );
 };
 export default JobDetailPage;
-//  <p className='text-xl font-bold'>Headline only listing, to show full job content, click button below to:</p>
-//               <Link href={`\headline_upgrade\${company_name}`}>Upgrade to Priority Listing</Link>

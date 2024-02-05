@@ -28,7 +28,7 @@ export default function myPage() {
             with timely notifications for quick and convenient income boosts."
           src="/student-jobs-on-campus/boost-your-income-handwritten-blackboard.jpg"
           alt="Earn money while studying"
-          // bgColorClass="bg-sky-200"
+          // bgColorclassName="bg-sky-200"
           // imgRight={false}
         />
       </main>

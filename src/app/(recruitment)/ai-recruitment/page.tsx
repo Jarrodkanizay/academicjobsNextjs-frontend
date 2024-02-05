@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   // },
   description:
     'Academic Jobs is the leading AI Recruitment Platform specializing in helping Higher Education Institutions, Research & Development (R&D) Industries, and many other sectors find candidates with our specialized AI tools that significantly enhance the job posting process..',
-  keywords: 'AI Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
+  keywords:
+    'AI Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
 };
 export default function myPage() {
   return (
@@ -37,7 +38,10 @@ export default function myPage() {
                 & Development (R&D) Industries, and many other sectors find the
                 right candidate for the job.
               </p>
-              <Link className="btn btn-aj" href="/ai-recruitment/ai-job-posting-optimization">
+              <Link
+                className="btn btn-aj"
+                href="/ai-recruitment/ai-job-posting-optimization"
+              >
                 Learn more about AI
               </Link>
             </div>
@@ -142,21 +146,21 @@ export default function myPage() {
                   <path
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                     stroke-linejoin="round"
                     d="M6.002 30.384c0 7.794 5.04 12.116 11.01 12.116a8.832 8.832 0 1 0 0-17.664c-5.715 0-11.01-4.32-11.01-9.954v15.502Z"
                   />
                   <path
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                     stroke-linejoin="round"
                     d="M31.936 24.82a9.149 9.149 0 1 0-16.115-.048"
                   />
                   <path
                     fill="none"
                     stroke="currentColor"
-                    stroke-linecap="round"
+                    strokeLinecap="round"
                     stroke-linejoin="round"
                     d="M6.002 14.882c0-5.57 3.537-9.382 8.832-9.382s7.045 3.348 8.552 5.825m.613 16.943a8.817 8.817 0 0 1 6.99-3.432c5.714 0 11.009-4.32 11.009-9.954v15.502c0 7.794-5.04 12.116-11.01 12.116A8.817 8.817 0 0 1 24 39.068m17.998-24.186c0-5.57-3.537-9.382-8.831-9.382c-5.295 0-7.046 3.348-8.553 5.825"
                   />
@@ -201,7 +205,10 @@ export default function myPage() {
               job.
             </p>
             <div className="card-actions justify-end">
-              <Link href="/ai-recruitment/ai-job-posting-optimization" className="btn btn-aj">
+              <Link
+                href="/ai-recruitment/ai-job-posting-optimization"
+                className="btn btn-aj"
+              >
                 Learn about AI Optimization
               </Link>
             </div>
@@ -263,7 +270,10 @@ export default function myPage() {
             Word, PDF & JPEG). Coming soon!
           </span>
           <div>
-            <Link href="/ai-recruitment/ai-resume-extraction" className="btn btn-sm btn-aj">
+            <Link
+              href="/ai-recruitment/ai-resume-extraction"
+              className="btn btn-sm btn-aj"
+            >
               More about Resume Parsing
             </Link>
           </div>
