@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function myPage() {
   return (
     <main>
-      <div className="hero max-h-fit bg-slate-200 py-8">
+      <div className="hero max-h-fit py-8">
         <div className="">
           <div className="hero-content flex-col lg:flex-row gap-8 ">
             <Image
@@ -35,6 +35,42 @@ export default function myPage() {
           </div>
         </div>
       </div>
+
+      <div className="hero max-h-fit bg-slate-200 py-8">
+        <div className=" mx-auto max-w-screen-lg">
+          <div className="hero-content flex-col lg:flex-row gap-8">
+            <Image
+              width={300}
+              height={300}
+              src="https://academicjobs.s3.amazonaws.com/img/_misc/1690109738395.jpg"
+              className="lg:max-w-lg rounded-full shadow-2xl mb-8 lg:mb-0 bg-white"
+              alt="AI Powered Recruitment Platform"
+            />
+            <div>
+              <h1 className="text-3xl font-normal">
+                <span className="text-3xl font-bold text-right pb-4">
+                  Helping Recruiters and Academics
+                </span>{' '}
+                <br />
+                find what they're looking.
+              </h1>
+              <p className="pt-6 italic">
+                "My team and I work really hard to make the Recruiters job super
+                simple and help Academics and Administration Staff find their
+                next role. We are passionate about helping and providing the
+                best job board in the world!"
+              </p>
+              <p className="pt-6 font-bold">
+                Jarrod Kanizay C.E.O - AcademicJobs.com
+              </p>
+              {/* <a href="#pricing-table-cards" className="btn btn-aj">
+                    Post a Job
+                  </a> */}
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="content-grid p-8 ">
         <div className="full-width"></div>
 
