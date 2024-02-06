@@ -18,6 +18,7 @@ interface SearchResultsProps {
 export default function SearchResults({
   q,
   filterOff = false,
+  searchMessage = 'Jobs Found',
 }: SearchResultsProps) {
   console.log('==============SearchResults==================');
   const [page, setPage] = useState(0);
@@ -172,7 +173,7 @@ export default function SearchResults({
 
           <div className="flex justify-center items-center gap-2 my-4 text-sm font-bold text-gray-500 border-2 p-2 rounded-xl mb-8">
             <SearchLightbulbIcon dimensions={22} />
-            {dataQty && <span>{`${dataQty} Jobs Found`}</span>}
+            {dataQty && <span>{`${dataQty} ${searchMessage}`}</span>}
           </div>
 
           <JobList
