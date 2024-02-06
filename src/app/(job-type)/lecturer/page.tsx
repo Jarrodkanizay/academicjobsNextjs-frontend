@@ -50,7 +50,7 @@ export default function Page() {
           <div className="hero-overlay bg-opacity-70 "></div>
           <div className="hero-content text-white ">
             <div className="max-w-2xl mx-auto">
-              <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal"><span className="text-5xl font-bold text-amber-500">Academic Lectuer Jobs </span>
+              <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal"><span className="text-5xl font-bold text-amber-500">Academic Lecturer Jobs </span>
               <br/>
               </h1>
          
