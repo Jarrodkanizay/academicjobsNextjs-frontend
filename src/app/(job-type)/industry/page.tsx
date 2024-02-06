@@ -56,7 +56,7 @@ export default function myPage() {
           </div>
         </div>
        
-        <div className="md:flex bg-base-200 shadow-xl rounded-2xl mb-4 max-w-screen-xl mx-auto mt-4 p-4 gap-8 ">
+        <div className="md:flex bg-gray-800 shadow-xl rounded-2xl mb-4 max-w-screen-xl mx-auto mt-4 p-4 gap-8 ">
         <Image
           className="mx-auto rounded-xl md:w-2/3 h-72 "
           width={880}

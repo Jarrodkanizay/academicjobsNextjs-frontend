@@ -219,7 +219,7 @@ export default function myPage() {
               </p>
         
               <div className="card-actions justify-center md:justify-end">
-                <Link className="btn btn-aj" href="/recruitment">
+                <Link className="btn btn-aj" href="/industry">
                   Top Industry Positions
                 </Link>
               </div>
@@ -246,7 +246,7 @@ export default function myPage() {
 
 <div className="mb-12 text-sky-600">
               <li className="hover:underline">
-        <Link href="/industry">Cheif Technical Officier (From 250K){'  '}</Link>
+        <Link href="/industry">Chief Technical Officier (From 250K){'  '}</Link>
       </li>
       <li className="hover:underline">
         <Link href="/industry/">Head of Innovation (From 300K){'  '}</Link>
@@ -257,7 +257,7 @@ export default function myPage() {
       </div>
 
               <div className="card-actions justify-center md:justify-start">
-                <Link className="btn btn-aj" href="/recruitment">
+                <Link className="btn btn-aj" href="/industry">
                   View Industry Categories
                 </Link>
               </div>
