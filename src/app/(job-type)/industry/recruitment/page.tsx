@@ -12,15 +12,15 @@ function countryRegionPlural() {
 
 export const metadata: Metadata = {
   title:
-    'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
+    'Industry Jobs in Academia Recruitment ', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
-    'With our advanced AI technologies that greatly improve the job posting process, Academic Jobs is the top AI recruitment platform, enabling higher education institutions, the research and development (R&D) industry, and many other industries discover people. ',
+    'View our insanely smart Academics for your Industry Jobs in Higher Education.',
   keywords:
-    'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
-};
+    'Academic Industry Jobs Recruitment',
+}; 
 export default function myPage() {
   return (
     <>

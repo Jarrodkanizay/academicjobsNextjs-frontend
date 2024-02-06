@@ -44,20 +44,21 @@ export default function myPage() {
               <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal"><span className="text-5xl font-bold text-amber-500">Academic Jobs in Industry </span>
               <br/>The World’s #1 Job Board for connecting the brightest minds to cutting-edge institutions.
               </h1>
-              <Link href="/industry/info" className="btn  btn-aj text-lg font-bold item-center justify-center text-center">
+              <div className="md:flex ">
+              <Link href="/industry/info" className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2">
                Learn about Industry 
               </Link>
               <Link href="/academic-talent-pool" className="btn ml-2 btn-aj text-lg font-bold item-center justify-center text-center">
                Join Talent Pool
               </Link>
-             
+              </div>
             </div>
           </div>
         </div>
        
-        <div className="flex bg-base-200 shadow-xl rounded-2xl mb-4 max-w-screen-xl mx-auto mt-4 p-4 gap-8 ">
+        <div className="md:flex bg-gray-800 shadow-xl rounded-2xl mb-4 max-w-screen-xl mx-auto mt-4 p-4 gap-8 ">
         <Image
-          className="mx-auto rounded-xl w-2/3 h-56 "
+          className="mx-auto rounded-xl md:w-2/3 h-72 "
           width={880}
           height={380}
           alt=""
@@ -65,11 +66,11 @@ export default function myPage() {
         />
 
 <div className="w-1/3">
-<div className="grid    text-gray-200 mt-3">
+<div className="md:grid  flex gap-4 text-gray-200 mt-3">
            
 
             {/* Card 2 */}
-            <div className="flex  ">
+            <div className="md:flex  ">
            
             <div className="icon-ai ">
            <p className="text-purple-500 font-bold px-2">
@@ -85,7 +86,7 @@ export default function myPage() {
               </div>
             </div>
             {/* Card 3 */}
-            <div className="flex ">
+            <div className="md:flex ">
           
             <div className="icon-ai ">
            <p className="text-purple-500 font-bold px-2">
@@ -103,7 +104,7 @@ export default function myPage() {
             </div>
 
  {/* Card 1 */}
- <div className=" flex ">
+ <div className=" md:flex ">
            
            <div className="icon-ai ">
            <p className="text-purple-500 font-bold px-2">
@@ -126,8 +127,8 @@ export default function myPage() {
             {/* End Cards */}
           </div>
          
-              <Link href="/recruitment" className="btn  btn-aj ml-4 text-lg font-bold">
-               Post A Job
+              <Link href="/recruitment" className="btn  btn-aj ml-4 text-lg font-bold p-2">
+               Post Job
               </Link>
             </div>
           </div>
