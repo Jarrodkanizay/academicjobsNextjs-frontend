@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
+
 interface MyComponentProps {
   q?: string;
   l?: string;
@@ -32,33 +33,27 @@ export default function JobSearchBox({ q, l }: MyComponentProps) {
     router.push(`/jobs?${params.toString()}`);
   };
   return (
-    <div className="search-panel py-4">
-      <div className="container lg:max-w-screen-lg px-4 mx-auto ">
-        <form onSubmit={handleFormSubmit}>
-          <div className="join mx-auto w-full border border-gray-200 shadow-md flex flex-col">
-            <input
-              type="text"
-              className="input input-bordered join-item w-full  text-center"
-              placeholder="Keywords"
-              ref={keyWordRef}
-            />
-            <input
-              type="text"
-              className="input input-bordered join-item w-full  text-center"
-              placeholder="Location"
-              ref={locationRef}
-            />
-            <button type="submit" className="btn indicator border-0 w-full bg-amber-500  justify-center items-center animate-pulse">
-              <div
-               
-                className=" join-item   border-0 text-white animate-pulse "
-              >
-                Search
-              </div>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
+    <form onSubmit={handleFormSubmit}>
+      <input
+        type="text"
+        className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500 mb-1"
+        placeholder="Keywords"
+        ref={keyWordRef}
+      />
+      <input
+        type="text"
+        className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500 mb-1"
+        placeholder="Location"
+        ref={locationRef}
+      />
+      <button
+        type="submit"
+        className="btn indicator border-0 w-full bg-amber-500  justify-center items-center animate-pulse"
+      >
+        <div className=" join-item   border-0 text-white animate-pulse ">
+          Search
+        </div>
+      </button>
+    </form>
   );
 }

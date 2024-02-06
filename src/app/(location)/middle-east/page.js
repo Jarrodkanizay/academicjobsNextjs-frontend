@@ -59,7 +59,7 @@ export default function Page() {
 
   
 
-      <div className="content-grid mx-auto">
+      <div className="content-grid mx-auto py-5">
         
    
     
