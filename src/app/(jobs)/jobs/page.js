@@ -39,7 +39,7 @@ export default function Page() {
       <section class="jobs_grid job_post_search_container">
         <div class="filters_panel">
           <div class="filters_content">
-            <JobFilter dataQty={dataQty} />
+            <JobFilter dataQty={2} />
           </div>
         </div>
         <div class="listings_panel">
