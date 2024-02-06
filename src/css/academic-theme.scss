@@ -713,6 +713,10 @@ html {
       margin-right: 6px;
     }
 
+    .icon_share:hover > svg {
+      color: #ff0000; /* Replace with your hover color */
+    }
+
     @media (max-width: 1023px) {
       .desktop-mode {
         display: none;

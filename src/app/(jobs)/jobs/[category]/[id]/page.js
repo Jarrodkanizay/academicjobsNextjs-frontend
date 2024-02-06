@@ -56,7 +56,22 @@ const JobDetailPage = async ({ params, searchParams }) => {
     featured,
     clientType,
     headlineOnly,
+    ranking,
   } = job.data;
+
+  const subject = encodeURIComponent('You might like this job posting!');
+  const bccEmail = encodeURIComponent('post@academicjobs.com');
+  const bodyEmail = encodeURIComponent(
+    `I came across this job posting on AcademicJobs and thought you might be interested: https://www.academicjobs.com/jobs/myjob/${jobId}`
+  );
+
+  let employeeRanking = 2;
+  if (company_name === 'Queensland University of Technology (QUT)') {
+    employeeRanking = 5;
+  }
+  if (company_name === 'Bond University') {
+    employeeRanking = 5;
+  }
 
   return (
     <>
@@ -85,12 +100,13 @@ const JobDetailPage = async ({ params, searchParams }) => {
             </div>
             <div className="w-3/4">
               <h1 className="text-2xl font-bold mb-2 text-black">{title}</h1>
+
               <div className="mb-4">
                 {/* <Link href={`/employers/id/${id}`}>
                     {location}
                 </Link> */}
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center gap-8">
                 {headlineOnly ? (
                   <Link href="#request-job-post" className="btn btn-aj">
                     Apply Now
@@ -103,17 +119,24 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     // buttonText="Apply Now /jobs/[category]/[id]/page.js"
                   />
                 )}
-                <div className="ml-4">
-                  <div className="">
-                    <div
-                    // onClick={() => {
-                    //     setIsOpen(true);
-                    // }}
-                    >
-                      <BsFillShareFill />
-                    </div>
-                  </div>
-                </div>
+                <a
+                  className="icon_share"
+                  href={`mailto:?bcc=${bccEmail}&subject=${subject}&body=${bodyEmail}`}
+                >
+                  <BsFillShareFill size={32} color="#2867B2" />
+                </a>
+                <a href="">
+                  <Image
+                    src="/icons/heart.svg"
+                    width={44}
+                    height={44}
+                    alt="Add this Job Post to Favorites"
+                  />
+                </a>
+
+                <a href="/academic-talent-pool" className="btn btn-accent">
+                  Join Talent Pool
+                </a>
               </div>
             </div>
           </div>
@@ -123,16 +146,32 @@ const JobDetailPage = async ({ params, searchParams }) => {
       <section className="jobs_grid job_post_header_container">
         <div className="job_post_header_panel">
           <h3 className="company_name">{company_name}</h3>
-          <h4 className="location">
-            <Image
-              src={`/icons/map-marker-icon.svg`}
-              alt="Map Marker Icon"
-              width={22}
-              height={22}
-              className="map_marker_icon"
-            />
-            {location}
-          </h4>
+          <section className="ranking flex flex-row">
+            {[...Array(5)].map((_, i) => (
+              <svg
+                key={i}
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill={i < employeeRanking ? 'gold' : 'lightgray'}
+                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
+                />
+              </svg>
+            ))}
+            <h4 className="location pl-8">
+              <Image
+                src={`/icons/map-marker-icon.svg`}
+                alt="Map Marker Icon"
+                width={22}
+                height={22}
+                className="map_marker_icon"
+              />
+              {location}
+            </h4>
+          </section>
         </div>
         <div className="applications_close_panel">
           <h6>Applications Close</h6>
