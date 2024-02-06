@@ -69,7 +69,6 @@ html {
       font-size: 16px;
       margin: 0;
     }
-
     .post_panel {
       grid-area: post_panel;
     }
@@ -80,6 +79,11 @@ html {
 
     .filters_panel {
       grid-area: filters_panel;
+      .filters ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
     }
 
     /* Content Panels */
