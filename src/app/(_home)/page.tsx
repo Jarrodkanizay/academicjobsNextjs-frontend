@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function myPage() {
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
-  const showJobElephant = true;
+  const showJobElephant = false;
 
   return (
     <main className="content-grid">
