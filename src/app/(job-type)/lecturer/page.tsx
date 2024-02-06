@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 };
 export default function Page() {
   return (
-    <main className="content-grid">
-      <div className="bg-slate-200 full-width">
+    <main className="">
+      {/* <div className="bg-slate-200 full-width">
         <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
           <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">
             Lecturing Jobs
@@ -36,8 +36,40 @@ export default function Page() {
                     </Link>
           </div>
         </div>
-      </div>
-      <div className="bg-white flex flex-col  ">
+      </div> */}
+
+<div
+          className="hero h-screen max-h-[480px] md:max-h-[400px] mx-auto"
+          style={{
+            backgroundImage:
+              'url(/student-jobs-on-campus/female-scientist_place-her-to-the-right.jpeg)',
+            backgroundSize: '',
+            backgroundRepeat: 'no-repeat',
+          }}
+        >
+          <div className="hero-overlay bg-opacity-70 "></div>
+          <div className="hero-content text-white ">
+            <div className="max-w-2xl mx-auto">
+              <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal"><span className="text-5xl font-bold text-amber-500">Academic Lectuer Jobs </span>
+              <br/>
+              </h1>
+         
+            <p className="font-bold">
+            The No.1 job board for lecturers, Academic Jobs, provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.</p>
+            <p className="font-bold">
+            Find all the best lecturing jobs here…</p>
+              <Link href="/lecturer/guest-lecturing" className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2">
+               Guest Lecturing Jobs 
+              </Link>
+              <Link href="/academic-talent-pool" className="btn ml-2 btn-aj text-lg font-bold item-center justify-center text-center">
+               Join Talent Pool
+              </Link>
+             
+            </div>
+          </div>
+        </div>
+
+      <div className="bg-white flex flex-col  content-grid">
         <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
           {lecturer.map(({ Title, Name }, key) => (
             <li
