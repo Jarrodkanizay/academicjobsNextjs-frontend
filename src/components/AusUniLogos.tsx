@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const UniLogos = () => {
+const AusUniLogos = () => {
   const width = 378;
   const height = 216;
 
@@ -57,20 +57,27 @@ const UniLogos = () => {
     },
   ];
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-10 place-items-center">
-      {logos.map((logo, index) => (
-        <a
-          key={index}
-          href={logo.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ gridColumn: index < 2 ? 'span 2' : 'span 1' }}
-        >
-          <Image src={logo.uni} alt={logo.alt} width={width} height={height} />
-        </a>
-      ))}
-    </section>
+    <div className="container mb-[50px]">
+      <section className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-10 place-items-center">
+        {logos.map((logo, index) => (
+          <a
+            key={index}
+            href={logo.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ gridColumn: index < 2 ? 'span 2' : 'span 1' }}
+          >
+            <Image
+              src={logo.uni}
+              alt={logo.alt}
+              width={width}
+              height={height}
+            />
+          </a>
+        ))}
+      </section>
+    </div>
   );
 };
 
-export default UniLogos;
+export default AusUniLogos;

@@ -5,7 +5,7 @@ import LogoAJ from '@/components/brand/LogoAJ';
 import type { Metadata } from 'next';
 import JobSearchBoxHome from '@/components/JobSearchBoxHome';
 import JobCategoryAndLocationLinks from '@/components/links/JobCategoryAndLocationLinks';
-import UniLogos from '@/components/UniLogos';
+import AusUniLogos from '@/components/AusUniLogos';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -62,9 +62,7 @@ export default function myPage() {
           <h2 className="aus-jobs-heading text-center mt-8 text-[40px] sm:text-[50px] mb-4 leading-tight">
             Welcome to Australia's University Jobs Website
           </h2>
-          <div className="container mb-[50px]">
-            <UniLogos />
-          </div>
+          <AusUniLogos />
         </>
       )}
 
