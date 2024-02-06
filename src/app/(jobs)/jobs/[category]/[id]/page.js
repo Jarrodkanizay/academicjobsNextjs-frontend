@@ -155,95 +155,82 @@ const JobDetailPage = async ({ params, searchParams }) => {
       {/* main body of job post */}
       <section className="jobs_grid job_post_panel_container">
         <article className="post_panel" data-id={jobId}>
-          <div className="post_content">Job Post</div>
+          <div className="post_content bg-white border-2 rounded-lg">
+            <article className="post" data-id={jobId}>
+              {
+                <div className="">
+                  <div
+                    className={`${
+                      !headlineOnly || active ? 'job-content block' : 'hidden'
+                    }`}
+                    dangerouslySetInnerHTML={{ __html: description }}
+                  />
+                  <div
+                    className={`flex flex-col ${
+                      headlineOnly && !active ? 'block' : 'hidden'
+                    }`}
+                  >
+                    <div className="flex justify-center items-center flex-wrap">
+                      <Image
+                        src="/academic-jobs-heart.svg"
+                        width={90}
+                        height={90}
+                        alt="Academic Jobs Heart"
+                      />
+                      <Image
+                        src="/i-love-this-job.svg"
+                        width={90}
+                        height={90}
+                        alt="Academic Jobs Heart"
+                        className="mr-20"
+                      />
+                      <div className="grow">
+                        <SubscribeForm
+                          formName="Request Full Job Post"
+                          buttonText="Please Email Full Job Post"
+                          thankYouMessage="Done! You will receive the full job post shortly."
+                          formType="job-request"
+                          jobId={jobId}
+                          employer={company_name}
+                          jobTitle={title}
+                          placeholder="Enter email for full job post"
+                        />
+                      </div>
+                    </div>
+                    <details className="mt-[80px]">
+                      <summary class="text-[16px] text-emerald-500 hover:text-sky-500 cursor-pointer px-4 py-2 rounded-md text-center">
+                        <a href="#activate-quick-post ">
+                          Recruiter Information Only
+                        </a>
+                        <HeadlineLinks />
+                      </summary>
+                      <div class="px-4 py-2">
+                        <HeadlineUpgrade
+                          clientType={clientType}
+                          jobId={jobId}
+                          employer={company_name}
+                          jobTitle={title}
+                        />
+                      </div>
+                    </details>{' '}
+                  </div>
+                  {/* </div> */}
+                </div>
+              }
+              {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
+            </article>
+          </div>
         </article>
         <div className="listings_panel">
           <div className="listings_content">
-            <div className="search_panel">Search</div>
-            <div className="listing">Job Listings</div>
-            <div className="listing">Job Listings</div>
-            <div className="listing">Job Listings</div>
+            <div className="search_panel">
+              <JobSearchBox2 q={title} />
+            </div>
+            <SearchResults q={title} filterOff={true} />
           </div>
         </div>
       </section>
 
-      <div className="md:flex p-4 gap-8 bg-sky-200">
-        <article
-          className="job-post wrapper media bg-white border-2 p-4 mb-4 rounded-lg shadow-lg md:w-2/3"
-          data-id={jobId}
-        >
-          {
-            <div className="">
-              <div
-                className={`${
-                  !headlineOnly || active ? 'job-content block' : 'hidden'
-                }`}
-                dangerouslySetInnerHTML={{ __html: description }}
-              />
-              <div
-                className={`flex flex-col ${
-                  headlineOnly && !active ? 'block' : 'hidden'
-                }`}
-              >
-                <div className="flex justify-center items-center flex-wrap">
-                  <Image
-                    src="/academic-jobs-heart.svg"
-                    width={90}
-                    height={90}
-                    alt="Academic Jobs Heart"
-                  />
-                  <Image
-                    src="/i-love-this-job.svg"
-                    width={90}
-                    height={90}
-                    alt="Academic Jobs Heart"
-                    className="mr-20"
-                  />
-                  <div className="grow">
-                    <SubscribeForm
-                      formName="Request Full Job Post"
-                      buttonText="Please Email Full Job Post"
-                      thankYouMessage="Done! You will receive the full job post shortly."
-                      formType="job-request"
-                      jobId={jobId}
-                      employer={company_name}
-                      jobTitle={title}
-                      placeholder="Enter email for full job post"
-                    />
-                  </div>
-                </div>
-                <details className="mt-[80px]">
-                  <summary class="text-[16px] text-emerald-500 hover:text-sky-500 cursor-pointer px-4 py-2 rounded-md text-center">
-                    <a href="#activate-quick-post ">
-                      Recruiter Information Only
-                    </a>
-                    <HeadlineLinks />
-                  </summary>
-                  <div class="px-4 py-2">
-                    <HeadlineUpgrade
-                      clientType={clientType}
-                      jobId={jobId}
-                      employer={company_name}
-                      jobTitle={title}
-                    />
-                  </div>
-                </details>{' '}
-              </div>
-              {/* </div> */}
-            </div>
-          }
-          {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
-        </article>
-        <div className="max-h-screen overflow-y-scroll max-w-96 hidden md:block md:w-1/3">
-          <h3 className=" pl-4 text-lg text-gray-400">
-            This might interest you...{' '}
-          </h3>
-          <div className="">
-            <JobSearchBox2 q={title} />
-          </div>
-          <SearchResults q={title} filterOff={true} />
-        </div>
-      </div>
       {new Date(expiration_date) < new Date() && expiration_date && (
         <div className="bg-opacity-50 bg-red-500 text-white text-4xl px-8 py-8 rounded-full absolute top-[200px] left-[50%] transform -translate-x-1/2 -translate-y-1/2 rotate-45 skew-y-0">
           Job Fulfilled By AcademicJobs.com
@@ -253,5 +240,3 @@ const JobDetailPage = async ({ params, searchParams }) => {
   );
 };
 export default JobDetailPage;
-//  <p className='text-xl font-bold'>Headline only listing, to show full job content, click button below to:</p>
-//               <Link href={`\headline_upgrade\${company_name}`}>Upgrade to Priority Listing</Link>

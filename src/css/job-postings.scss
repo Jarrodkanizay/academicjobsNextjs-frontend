@@ -63,10 +63,11 @@ html {
       text-align: center;
       padding: 8px 10px;
       grid-area: applications_close_panel;
-      background-color: white;
+      background-color: rgb(234, 238, 239);
     }
     .applications_close_panel h6 {
       font-size: 16px;
+      margin: 0;
     }
 
     .post_panel {
@@ -122,14 +123,19 @@ html {
     }
 
     .listing {
+      position: relative;
       background-color: white;
       margin-top: var(--listing-gap);
       box-shadow: var(--box-shadow);
+      z-index: 0;
     }
 
     .listings_content .search_panel {
       position: sticky;
       top: 0;
+      background-color: rgba(255, 255, 255, 1);
+      padding-bottom: var(--listing-gap);
+      z-index: 1;
     }
 
     .filters_content {
@@ -148,7 +154,6 @@ html {
       .jobs_grid.job_post_header_container {
         margin-left: var(--margin-x);
         margin-right: var(--margin-x);
-        background-color: lightcoral;
       }
     }
 
@@ -179,53 +184,53 @@ html {
 }
 
 // Delete all of the below code
-body > section {
-  margin-bottom: 100px !important;
-}
+// body > section {
+//   margin-bottom: 100px !important;
+// }
 
-section > * {
-  padding: 20px;
-  border-radius: 8px;
-}
+// section > * {
+//   padding: 20px;
+//   border-radius: 8px;
+// }
 
-.jobs_grid {
-  border-radius: 8px;
-}
+// .jobs_grid {
+//   border-radius: 8px;
+// }
 
-.post_panel {
-  background-color: rgb(218, 230, 241);
-}
+// .post_panel {
+//   background-color: rgb(218, 230, 241);
+// }
 
-.listings_panel {
-  background-color: rgb(186, 219, 255);
-}
+// .listings_panel {
+//   background-color: rgb(186, 219, 255);
+// }
 
-.filters_panel {
-  background-color: rgb(255, 243, 199);
-}
+// .filters_panel {
+//   background-color: rgb(255, 243, 199);
+// }
 
-.post_content {
-  padding: 40px;
-  background-color: rgb(100, 240, 151);
-}
+// .post_content {
+//   padding: 40px;
+//   background-color: rgb(100, 240, 151);
+// }
 
-.listings_content {
-  background-color: rgb(223, 143, 220);
-}
+// .listings_content {
+//   background-color: rgb(223, 143, 220);
+// }
 
-.listing {
-  padding: 40px;
-}
+// .listing {
+//   padding: 40px;
+// }
 
-.filters_content {
-  background-color: rgb(156, 210, 248);
-}
+// .filters_content {
+//   background-color: rgb(156, 210, 248);
+// }
 
-.listings_content .search_panel {
-  padding: 30px;
-  background-color: lightsalmon;
-}
+// .listings_content .search_panel {
+//   padding: 30px;
+//   background-color: lightsalmon;
+// }
 
-section > * {
-  border: 1px solid black;
-}
+// section > * {
+//   border: 1px solid black;
+// }
