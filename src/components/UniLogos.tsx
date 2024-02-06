@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const UniLogos = ({ children, question }: FAQProps) => {
+const UniLogos = () => {
   const width = 378;
   const height = 216;
 

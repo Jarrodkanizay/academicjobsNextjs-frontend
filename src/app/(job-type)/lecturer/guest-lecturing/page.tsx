@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import type { Metadata } from 'next';
+import SearchResults from '@/components/SearchResults';
+import JobSearchBox from '@/components/JobSearchBox';
 import Link from 'next/link';
 
 const countryRegion = 'World';
@@ -11,15 +13,12 @@ function countryRegionPlural() {
 }
 
 export const metadata: Metadata = {
-  title:
-    'Industry Jobs in Academia Information', //Option 1 replaces the %s in layout.tsx
-  // title: {
-  //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
-  // },
+  title: {
+    absolute: 'Academic Guest Lecturer Jobs',
+  },
   description:
-    'With our advanced Academic Industry Jobs, you can find the best industry jobs for your needs today.',
-  keywords:
-    'Academic Industry Jobs Information',
+    'The Best Academic Guest lecturer jobs are all available on AcademicJos, View our open positions on this page. ',
+  keywords: 'Academic Guest Lecturer Jobs. Guest Lecturer positions',
 };
 export default function myPage() {
   return (
@@ -35,12 +34,19 @@ export default function myPage() {
             backgroundRepeat: 'repeat',
           }}
         >
-          <div className="hero-overlay bg-opacity-70 "></div>
+          <div className="hero-overlay bg-opacity-70 p-4"></div>
           <div className=" text-white p-4">
            
               <h1 className="mb-5 text-2xl text-white md:text-4xl font-bold">
-              <span className="text-amber-500 md:text-7xl text-4xl"> Industry Jobs for Academics </span> <br/> "Fortune Favours the Brave."
+              <span className="text-amber-500 md:text-7xl text-4xl"> Guest Lecturing Jobs</span> <br/> 
               </h1>
+              <p className="max-w-screen-md font-bold px-4">
+            Discover your perfect guest lecturing position through the world’s best job board! 
+            </p>
+            <p className="max-w-screen-sm font-bold px-4">
+            A career as an academic guest lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+
+            </p>
               <Link className="btn btn-aj" href="/academic-talent-pool">
                   Join Talent Pool
                 </Link>
@@ -58,10 +64,15 @@ export default function myPage() {
         
         </div> */}
 
+
+<JobSearchBox q="guest lecturer" />
+      <SearchResults q={{ q: 'guest lecturer' || 0 }} />
+
+
 {/* testimonial */}
 <div className="bg-sky-100">
-        <div className="testimonial max-w-screen-xl mx-auto p-4">
-  <h2 className="pt-8 ">Hear from our Academics </h2>
+        <div className="testimonial max-w-screen-xl mx-auto">
+  <h2 className="pt-8">Hear from our Academics </h2>
   
   <p className="">Free to Join. Get Global Academic Exposure. Increase your academic earning</p>
   <div className="flex flex-wrap">
@@ -191,120 +202,7 @@ export default function myPage() {
        
          
          
-         
-        <div className="content-grid">
-         
-          <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
-            <figure>
-              <Image
-                width={2000}
-                height={534}
-                src="https://academicjobs.s3.amazonaws.com/img/_misc/are+academics+on+facebook.jpg"
-                alt="Choose from diverse campus roles"
-                className="w-full lg:max-w-lg rounded-xl m-6"
-              />
-           
-            </figure>
-            
-            
-            
-            
-            <div className="card-body w-full">
-              <h2 className="card-title uppercase">
-           Make more money than you ever imagined. 
-              </h2>
-              <p className="max-w-screen-sm">
-              Connect with the Global top academic talent on the No. 1 Academic Job Board. Posting jobs is simple and affordable, targeting both local and global candidates.
-              Access thousands of top academics without the high costs. We offer the most affordable job listing fees, paired with a comprehensive talent pool. Meaning better results with an exceptional recruiter experience.
-              </p>
-        
-              <div className="card-actions justify-center md:justify-end">
-                <Link className="btn btn-aj" href="/industry">
-                  Top Industry Positions
-                </Link>
-              </div>
-            </div>
-          </div>
-          {/* Flexible Part-Time Opportunities for Academics Card */}
-          <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
-            <figure className="lg:order-1">
-              <Image
-                width={2000}
-                height={534}
-                src="https://academicjobs.s3.amazonaws.com/img/_misc/snow-sampling-DMC%5B73%5D_0.jpeg"
-                alt="Work Part-Time with Flexible Opportunities for Academics"
-                className="w-full lg:max-w-lg rounded-xl m-6"
-              />
-            </figure>
-            <div className="card-body w-full">
-              <h2 className="card-title uppercase">
-             Check out our Industry Positions Today.
-              </h2>
-              <p className="max-w-screen-sm">
-              With the most comprehensive Academic Talent Pool, you can identify the most sought-after candidates and make informed decisions about who will join your organization.
-              </p>
-
-<div className="mb-12 text-sky-600">
-              <li className="hover:underline">
-        <Link href="/industry">Chief Technical Officier (From 250K){'  '}</Link>
-      </li>
-      <li className="hover:underline">
-        <Link href="/industry/">Head of Innovation (From 300K){'  '}</Link>
-      </li>
-      <li className="hover:underline">
-        <Link href="/industry/">Chief Data Scientist (From 180K){'  '}</Link>
-      </li>
-      </div>
-
-              <div className="card-actions justify-center md:justify-start">
-                <Link className="btn btn-aj" href="/industry">
-                  View Industry Categories
-                </Link>
-              </div>
-            </div>
-          </div>
    
-        {/* Breakout Section */}
-
-        <div className="bg-sky-100 mb-8 mt-16 py-8 px-4 full-width"><div className="container mx-auto"><h2 className="text-3xl text-center font-bold mb-8 text-sky-600">#1 Job Board for for ALL University&nbsp;Positions</h2><p className="mb-4 text-center max-w-[500px] mx-auto">Academic Jobs doesn't just find academics, we specialize in finding the best in academia for Industry positions.</p></div></div>
-
-      
-        {/* <div className="bg-teal-100 mb-8 mt-16 py-8 px-4">
-          <div className="container mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-sky-600">
-              Let Academic Jobs buy your next beer or help fund your
-              higher&nbsp;education…
-            </h2>
-            <div className="text-col-2">
-              <p className="mb-4">
-                Unlock Your Potential with Campus Employment Opportunities from
-                Academic Jobs. Our platform is tailored to help students like
-                you find the ideal on-campus job that complements your academic
-                schedule. Academic Rankings can provide the cash you need
-                to go out, buy a new gadget or pay eduction expenses?
-              </p>
-              <p className="mb-4">
-                With Academic Jobs, you get access to a wide array of
-                student-focused positions that not only provide a source of
-                income but also enhance your university experience. From library
-                aides to research assistants, we connect you to roles that align
-                with your study goals and personal interests.
-              </p>
-              <blockquote>
-               The best thing a human being can do is to help another human being know more.
-              </blockquote>
-              <p className="mb-4">
-                Maximize Your College Experience with Academic Jobs. We
-                understand the unique needs of Academiclife, and our service is
-                designed to simplify your job search on campus. Whether you're
-                looking to develop professional skills, build your network, or
-                manage your educational expenses, Academic Jobs is your go-to
-                resource.
-              </p>
-            </div>
-          </div>
-        </div> */}
-        </div>
 
   <section>
           <h3 className="container mx-auto text-center py-8 px-4">
