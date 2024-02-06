@@ -8,8 +8,9 @@ import { useSearchParams } from 'next/navigation';
 interface MyComponentProps {
   q?: string;
   l?: string;
+  forceClass?: string;
 }
-export default function JobSearchBox({ q, l }: MyComponentProps) {
+export default function JobSearchBox({ q, l, forceClass }: MyComponentProps) {
   const searchParams = useSearchParams();
   const keyWordRef = useRef<HTMLInputElement>(null);
   const locationRef = useRef<HTMLInputElement>(null);
@@ -33,7 +34,7 @@ export default function JobSearchBox({ q, l }: MyComponentProps) {
     router.push(`/jobs?${params.toString()}`);
   };
   return (
-    <form onSubmit={handleFormSubmit}>
+    <form onSubmit={handleFormSubmit} className={`${forceClass}`}>
       <input
         type="text"
         className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500 mb-1"

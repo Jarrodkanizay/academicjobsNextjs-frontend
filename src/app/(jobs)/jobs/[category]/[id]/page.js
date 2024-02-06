@@ -88,8 +88,20 @@ const JobDetailPage = async ({ params, searchParams }) => {
 
   // const employerRanking = 2;
   function updateEmployerRanking(topTwentyUnis, companyName) {
+    if (
+      (typeof companyName === 'string' &&
+        companyName.startsWith('Academic Jobs')) ||
+      companyName.startsWith('AcademicJobs')
+    ) {
+      return 5;
+    }
+
     if (Array.isArray(topTwentyUnis)) {
-      return topTwentyUnis.includes(companyName) ? 5 : 2;
+      if (topTwentyUnis.includes(companyName)) {
+        return 5;
+      } else {
+        return 2;
+      }
     } else {
       console.error('topTwentyUnis is not an array');
       return 2; // default value
