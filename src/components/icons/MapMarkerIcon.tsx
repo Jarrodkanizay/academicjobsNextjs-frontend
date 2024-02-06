@@ -1,3 +1,5 @@
+import React, { SVGProps } from 'react';
+
 export function MapMarkerLine(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
