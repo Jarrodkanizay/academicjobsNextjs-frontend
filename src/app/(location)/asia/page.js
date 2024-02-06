@@ -56,7 +56,7 @@ export default function Page() {
     
 
 
-      <div className="content-grid mx-auto">
+      <div className="content-grid mx-auto py-5">
         
    <div id="section" className=" full-width py-4 full-width mb-[175px] bg-slate-200">
    <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">

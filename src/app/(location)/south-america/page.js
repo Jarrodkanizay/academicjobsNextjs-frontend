@@ -59,7 +59,7 @@ export const metadata = {
 
      
 
-      <div className="content-grid mx-auto">
+      <div className="content-grid mx-auto py-5">
         
    
     
