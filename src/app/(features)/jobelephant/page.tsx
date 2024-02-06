@@ -283,7 +283,6 @@ export default function Page() {
             </div>
           </div>
         </div>
-
         <div className=" bg-white p-4 mt-16">
           <Image
             width={1280}
@@ -306,348 +305,345 @@ export default function Page() {
           </picture>
         </section>
 
-       
-        <h2 className="underline-full m-4 text-center mt-4 mb-4">Our latest Job Elephant listings</h2>
-      <div className="cate-group section23 m-4">
-        <div className="widget__text-block m-4">
-       
-       
-       
-       
-        <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/assistant-associate-professor-of-environmental-toxicology-tenure-track-appointment/78925/"
-                    className="text-blue-500 font-bold"
-                  >
-                    Assistant/Associate Professor of Environmental Toxicology
-                    (tenure track appointment)
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">University of California Davis</Link>
+        <h2 className="underline-full m-4 text-center mt-4 mb-4">
+          Our latest Job Elephant listings
+        </h2>
+        <div className="cate-group section23 m-4">
+          <div className="widget__text-block m-4">
+            <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/assistant-associate-professor-of-environmental-toxicology-tenure-track-appointment/78925/"
+                      className="text-blue-500 font-bold"
+                    >
+                      Assistant/Associate Professor of Environmental Toxicology
+                      (tenure track appointment)
+                    </Link>
                   </li>
-                  <li>
-                    <Link href="">Davis, CA, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Feb 14, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4867143"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">University of California Davis</Link>
+                    </li>
+                    <li>
+                      <Link href="">Davis, CA, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Feb 14, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4867143"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
                 </ul>
-              </ul>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/disability-support-programs-and-services-dsps-full-time-tenure-track-counselor/82203"
+                      className="text-blue-500 font-bold"
+                    >
+                      Disability Support Programs and Services (DSPS) Full-Time
+                      Tenure Track Counselor
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Cuesta College</Link>
+                    </li>
+                    <li>
+                      <Link href="">
+                        San Luis Obispo County, California,USA
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="">Feb 19, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4938583"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
+                </ul>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/postdoctoral-fellow-in-comparative-radiobiology-translational-radiopharmaceutical-development-and-boron-neutron-capture-therapy-bnct-/82181"
+                      className="text-blue-500 font-bold"
+                    >
+                      Postdoctoral Fellow in Comparative Radiobiology,
+                      Translational Radiopharmaceutical Development, and Boron
+                      Neutron Capture Therapy (BNCT)
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">University of Missouri System</Link>
+                    </li>
+                    <li>
+                      <Link href="">Columbia, Missouri, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 11, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4922759"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
+                </ul>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/assistant-to-associate-dean-of-undergrad-programs/82206"
+                      className="text-blue-500 font-bold"
+                    >
+                      Assistant to Associate Dean of Undergrad Programs
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Oregon State University</Link>
+                    </li>
+                    <li>
+                      <Link href="">Corvallis, OR, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Apr 16, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4929143"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
+                </ul>
+              </div>
             </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/disability-support-programs-and-services-dsps-full-time-tenure-track-counselor/82203"
-                    className="text-blue-500 font-bold"
-                  >
-                    Disability Support Programs and Services (DSPS) Full-Time
-                    Tenure Track Counselor
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Cuesta College</Link>
+            <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/career-advisor-senior-career-advisor/82180"
+                      className="text-blue-500 font-bold"
+                    >
+                      Career Advisor/Senior Career Advisor
+                    </Link>
                   </li>
-                  <li>
-                    <Link href="">San Luis Obispo County, California,USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Feb 19, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4938583"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">University of the Pacific</Link>
+                    </li>
+                    <li>
+                      <Link href="">Stockton, CA, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 11, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4921373"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
                 </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/postdoctoral-fellow-in-comparative-radiobiology-translational-radiopharmaceutical-development-and-boron-neutron-capture-therapy-bnct-/82181"
-                    className="text-blue-500 font-bold"
-                  >
-                    Postdoctoral Fellow in Comparative Radiobiology,
-                    Translational Radiopharmaceutical Development, and Boron
-                    Neutron Capture Therapy (BNCT)
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">University of Missouri System</Link>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/information-technology-faculty/82182"
+                      className="text-blue-500 font-bold"
+                    >
+                      Information Technology Faculty
+                    </Link>
                   </li>
-                  <li>
-                    <Link href="">Columbia, Missouri, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 11, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4922759"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">North Central State College</Link>
+                    </li>
+                    <li>
+                      <Link href="">
+                        2441 Kenwood Circle, Mansfield, OH, USA
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 15, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4931492"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
                 </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/assistant-to-associate-dean-of-undergrad-programs/82206"
-                    className="text-blue-500 font-bold"
-                  >
-                    Assistant to Associate Dean of Undergrad Programs
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Oregon State University</Link>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/associate-vice-provost-for-teaching-and-learning/82571"
+                      className="text-blue-500 font-bold"
+                    >
+                      Associate Vice Provost for Teaching and Learning
+                    </Link>
                   </li>
-                  <li>
-                    <Link href="">Corvallis, OR, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Apr 16, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4929143"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Oregon State University</Link>
+                    </li>
+                    <li>
+                      <Link href="">Corvallis, OR, USA</Link>
+                    </li>
+                    <li>
+                      <Link href=""> Feb 20, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4931492"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
                 </ul>
-              </ul>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/program-coordinator-pre-professional-programs/82178"
+                      className="text-blue-500 font-bold"
+                    >
+                      Program Coordinator- Pre-Professional Programs
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Southern Utah University</Link>
+                    </li>
+                    <li>
+                      <Link href="">Cedar City, UT, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 10, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4918224"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
+                </ul>
+              </div>
+
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/administrative-assistant-ii-student-affairs/84768"
+                      className="text-blue-500 font-bold"
+                    >
+                      Administrative Assistant II - Student Affairs
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Southern Utah University</Link>
+                    </li>
+                    <li>
+                      <Link href="">Cedar City, UT, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 1, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4968144"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
+                </ul>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/video-technician-summer-2024/84765"
+                      className="text-blue-500 font-bold"
+                    >
+                      Video Technician summer 2024
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Southern Utah University</Link>
+                    </li>
+                    <li>
+                      <Link href="">Cedar City, UT, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 1, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4968138"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
+                </ul>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="https://www.academicjobs.com/jobs/clinical-positions-in-cardiology-central-coast-2023-2024/73047/"
+                      className="text-blue-500 font-bold"
+                    >
+                      Assistant Controller (71101)
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Pratt Institute</Link>
+                    </li>
+                    <li>
+                      <Link href="">Brooklyn, NY, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 1, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4970008"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/career-advisor-senior-career-advisor/82180"
-                    className="text-blue-500 font-bold"
-                  >
-                    Career Advisor/Senior Career Advisor
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">University of the Pacific</Link>
-                  </li>
-                  <li>
-                    <Link href="">Stockton, CA, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 11, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4921373"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/information-technology-faculty/82182"
-                    className="text-blue-500 font-bold"
-                  >
-                    Information Technology Faculty
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">North Central State College</Link>
-                  </li>
-                  <li>
-                    <Link href="">2441 Kenwood Circle, Mansfield, OH, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 15, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4931492"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/associate-vice-provost-for-teaching-and-learning/82571"
-                    className="text-blue-500 font-bold"
-                  >
-                    Associate Vice Provost for Teaching and Learning
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Oregon State University</Link>
-                  </li>
-                  <li>
-                    <Link href="">Corvallis, OR, USA</Link>
-                  </li>
-                  <li>
-                    <Link href=""> Feb 20, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4931492"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/program-coordinator-pre-professional-programs/82178"
-                    className="text-blue-500 font-bold"
-                  >
-                    Program Coordinator- Pre-Professional Programs
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Southern Utah University</Link>
-                  </li>
-                  <li>
-                    <Link href="">Cedar City, UT, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 10, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4918224"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
-
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/administrative-assistant-ii-student-affairs/84768"
-                    className="text-blue-500 font-bold"
-                  >
-                    Administrative Assistant II - Student Affairs
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Southern Utah University</Link>
-                  </li>
-                  <li>
-                    <Link href="">Cedar City, UT, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 1, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4968144"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/video-technician-summer-2024/84765"
-                    className="text-blue-500 font-bold"
-                  >
-                    Video Technician summer 2024
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Southern Utah University</Link>
-                  </li>
-                  <li>
-                    <Link href="">Cedar City, UT, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 1, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4968138"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="https://www.academicjobs.com/jobs/clinical-positions-in-cardiology-central-coast-2023-2024/73047/"
-                    className="text-blue-500 font-bold"
-                  >
-                    Assistant Controller (71101)
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Pratt Institute</Link>
-                  </li>
-                  <li>
-                    <Link href="">Brooklyn, NY, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 1, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4970008"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
-            </div>
-            </div>
-            </div>
-
-
-
-
+        </div>
       </main>
     </>
   );

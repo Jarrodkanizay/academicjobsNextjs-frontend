@@ -35,11 +35,11 @@ export default function myPage() {
             backgroundRepeat: 'repeat',
           }}
         >
-          <div className="hero-overlay bg-opacity-70 "></div>
-          <div className=" text-white">
+          <div className="hero-overlay bg-opacity-70 p-4"></div>
+          <div className=" text-white p-4">
            
               <h1 className="mb-5 text-2xl text-white md:text-4xl font-bold">
-              <span className="text-amber-500 text-7xl"> Industry Jobs for Academics </span> <br/> "Get YOUR next crazy SMART employee HERE."
+              <span className="text-amber-500 md:text-7xl text-4xl"> Industry Jobs for Academics </span> <br/> "Get YOUR next crazy SMART employee HERE."
               </h1>
               <Link className="btn btn-aj" href="/post-a-job">
                   Post A Job

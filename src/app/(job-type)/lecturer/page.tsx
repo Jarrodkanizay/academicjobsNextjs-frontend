@@ -5,7 +5,7 @@ import lecturer from '@/data/lecturer.json';
 import Link from 'next/link';
 export const metadata: Metadata = {
   title: {
-    absolute: '  Academic Lecturer Jobs',
+    absolute: 'Academic Lecturer Jobs',
   },
   description:
     'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',
@@ -69,11 +69,11 @@ export default function Page() {
           </div>
         </div>
 
-      <div className="bg-white flex flex-col  content-grid">
+      <div className="bg-gray-200 flex flex-col  content-grid rounded">
         <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
           {lecturer.map(({ Title, Name }, key) => (
             <li
-              className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
+              className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-500'}`}
               key={key}
             >
               <Link href={`/lecturer/${Name?.replace(/\s+/g, '-')}/`}>

@@ -13,15 +13,12 @@ function countryRegionPlural() {
 }
 
 export const metadata: Metadata = {
-  title: 
-    'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
-  // title: {
-  //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
-  // },
+  title: {
+    absolute: 'Academic Guest Lecturer Jobs',
+  },
   description:
-    'With our advanced AI technologies that greatly improve the job posting process, Academic Jobs is the top AI recruitment platform, enabling higher education institutions, the research and development (R&D) industry, and many other industries discover people. ',
-  keywords:
-    'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
+    'The Best Academic Guest lecturer jobs are all available on AcademicJos, View our open positions on this page. ',
+  keywords: 'Academic Guest Lecturer Jobs. Guest Lecturer positions',
 };
 export default function myPage() {
   return (
@@ -37,11 +34,11 @@ export default function myPage() {
             backgroundRepeat: 'repeat',
           }}
         >
-          <div className="hero-overlay bg-opacity-70 "></div>
-          <div className=" text-white">
+          <div className="hero-overlay bg-opacity-70 p-4"></div>
+          <div className=" text-white p-4">
            
               <h1 className="mb-5 text-2xl text-white md:text-4xl font-bold">
-              <span className="text-amber-500 text-7xl"> Guest Lecturing Jobs</span> <br/> 
+              <span className="text-amber-500 md:text-7xl text-4xl"> Guest Lecturing Jobs</span> <br/> 
               </h1>
               <p className="max-w-screen-md font-bold px-4">
             Discover your perfect guest lecturing position through the world’s best job board! 

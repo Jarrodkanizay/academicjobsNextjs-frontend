@@ -26,6 +26,7 @@
   --clr-accent-400: hsl(358, 72%, 50%);
   --clr-accent-500: hsl(358, 72%, 35%);
 
+  --aj-pink: #ff009d;
   --aj-orange: hsl(29, 100%, 50%);
 
   --color-primary: #f4a10c;
@@ -50,39 +51,6 @@ html {
     // div {
     //   align-self: stretch;
     // }
-
-    // Job Post Rich Text Editor Formatting
-    article.job-post {
-      padding: 24px;
-
-      .job-content {
-        *:first-child {
-          margin-top: 0 !important;
-        }
-        p {
-          margin-top: 20px !important;
-        }
-        ul {
-          list-style-type: disc;
-          margin-left: 20px;
-        }
-        ol {
-          list-style-type: decimal;
-          margin-left: 20px;
-        }
-        ul li,
-        ol li {
-          margin-bottom: 10px;
-        }
-        a {
-          color: var(--color-primary);
-          text-decoration: underline;
-        }
-        a:hover {
-          color: var(--color-primary-hover);
-        }
-      }
-    }
 
     margin: 0;
     font-family: var(--font-family) 'Open Sans', sans-serif;
@@ -743,6 +711,10 @@ html {
     }
     .uni-jobs {
       margin-right: 6px;
+    }
+
+    .icon_share:hover > svg {
+      color: #ff0000; /* Replace with your hover color */
     }
 
     @media (max-width: 1023px) {
