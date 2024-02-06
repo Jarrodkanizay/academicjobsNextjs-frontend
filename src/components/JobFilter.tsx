@@ -9,11 +9,11 @@ type JobFilterProps = {
 export default function JobFilter({ dataQty = '> 1' }: JobFilterProps) {
   return (
     <>
-      <div className="filters bg-slate-100 py-4 pb-8  px-8 rounded m-0 shadow-xl mt-4 border border-t-4 h-fit hidden md:block justify-center items-center ml-4">
-        <div className="flex justify-center items-center gap-2 my-4 text-sm font-bold text-gray-500 border-2 p-1 rounded-xl mb-8">
+      <div className="filters mt-4 bg-slate-100 py-4 pb-8  px-8 rounded m-0 shadow-xl border border-t-4 h-fit hidden md:block justify-center items-center ml-4">
+        {/* <div className="flex justify-center items-center gap-2 my-4 text-sm font-bold text-gray-500 border-2 p-1 rounded-xl mb-8">
           <SearchLightbulbIcon dimensions={22} />
           {dataQty && <span>{`${dataQty} Jobs Found`}</span>}
-        </div>
+        </div> */}
         <h2 className="text-xl ">Filters▾</h2>
         {/* Employment Cat Container */}
         <div className="mt-[1rem] ">

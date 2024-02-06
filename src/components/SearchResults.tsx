@@ -6,6 +6,7 @@ import BaseApi from '@/lib/store/Base';
 import { BsHandbag } from 'react-icons/bs';
 import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
+import SearchLightbulbIcon from '@/components/icons/SearchLightbulbIcon';
 
 interface SearchResultsProps {
   q: {
@@ -165,9 +166,14 @@ export default function SearchResults({
         <>
           {/* mobile filter dropdown */}
           {/* <div className="flex justify-center items-center gap-2 my-4 text-md font-bold text-gray-500  p-1 pb-4 mb-8 md:hidden">
-            <BsHandbag />
+            <SearchLightbulbIcon dimensions={22} />
             {dataQty && <span>{`${dataQty} Jobs Found`}</span>}
           </div> */}
+
+          <div className="flex justify-center items-center gap-2 my-4 text-sm font-bold text-gray-500 border-2 p-2 rounded-xl mb-8">
+            <SearchLightbulbIcon dimensions={22} />
+            {dataQty && <span>{`${dataQty} Jobs Found`}</span>}
+          </div>
 
           <JobList
             data={data}
