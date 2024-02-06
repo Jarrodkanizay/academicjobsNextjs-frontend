@@ -59,9 +59,6 @@ export default function myPage() {
         </>
       ) : (
         <>
-          <h2 className="aus-jobs-heading text-center mt-8 text-[40px] sm:text-[50px] mb-4 leading-tight">
-            Welcome to Australia's University Jobs Website
-          </h2>
           <AusUniLogos />
         </>
       )}

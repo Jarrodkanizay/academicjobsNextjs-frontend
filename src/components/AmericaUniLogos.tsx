@@ -60,6 +60,9 @@ const AmericaUniLogos = () => {
 
   return (
     <div className="container my-[50px]">
+      <h2 className="aus-jobs-heading text-center mt-8 text-[40px] sm:text-[50px] mb-16 leading-tight">
+        Welcome to America's University Jobs Website
+      </h2>
       <section className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-10 place-items-center">
         {logos.map((logo, index) => (
           <a
