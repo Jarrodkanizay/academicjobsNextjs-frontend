@@ -135,11 +135,11 @@ export default function myPage() {
 
           <JobSearchBox q="Industry" />
 
-          <div className="bg-white flex flex-col  max-w-screen-2xl mx-auto">
+          <div className="bg-gray-200 flex flex-col  max-w-screen-2xl mx-auto rounded-md">
         <ul className=" text-left columns-1 md:columns-4 pt-2 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
           {industry.map(({ Title, Name }, key) => (
             <li
-              className={`pb-4 flex ${' md:break'} ${' font-bold text-gray-400'}`}
+              className={`pb-4 flex ${' md:break'} ${' font-bold text-gray-500'}`}
               key={key}
             >
               <Link href={`/industry/${Name?.replace(/\s+/g, '-')}/`}>

@@ -171,7 +171,8 @@ export default function SearchResults({
             {dataQty && <span>{`${dataQty} Jobs Found`}</span>}
           </div> */}
 
-          <div className="flex justify-center items-center gap-2 my-4 text-sm font-bold text-gray-500 border-2 p-2 rounded-xl mb-8">
+<div className="max-w-screen-md mx-auto">
+          <div className="flex justify-center items-center gap-2 my-4 text-sm font-bold text-gray-500 border-2 p-2 rounded-xl mb-8 ">
             <SearchLightbulbIcon dimensions={22} />
             {dataQty && <span>{`${dataQty} ${searchMessage}`}</span>}
           </div>
@@ -182,7 +183,9 @@ export default function SearchResults({
             page={page}
             isPlaceholderData={isPlaceholderData}
           />
+          </div>
         </>
+        
       );
     } else {
       content = (
@@ -203,6 +206,7 @@ export default function SearchResults({
         </p>
         <p className="text-center">{/* <JoinTalentPoolButton /> */}</p>
       </div>
+      
     );
   }
   return <>{content}</>;

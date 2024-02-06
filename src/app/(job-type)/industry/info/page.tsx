@@ -36,10 +36,10 @@ export default function myPage() {
           }}
         >
           <div className="hero-overlay bg-opacity-70 "></div>
-          <div className=" text-white">
+          <div className=" text-white p-4">
            
               <h1 className="mb-5 text-2xl text-white md:text-4xl font-bold">
-              <span className="text-amber-500 text-7xl"> Industry Jobs for Academics </span> <br/> "Fortune Favours the Brave."
+              <span className="text-amber-500 md:text-7xl text-4xl"> Industry Jobs for Academics </span> <br/> "Fortune Favours the Brave."
               </h1>
               <Link className="btn btn-aj" href="/academic-talent-pool">
                   Join Talent Pool
@@ -60,8 +60,8 @@ export default function myPage() {
 
 {/* testimonial */}
 <div className="bg-sky-100">
-        <div className="testimonial max-w-screen-xl mx-auto">
-  <h2 className="pt-8">Hear from our Academics </h2>
+        <div className="testimonial max-w-screen-xl mx-auto p-4">
+  <h2 className="pt-8 ">Hear from our Academics </h2>
   
   <p className="">Free to Join. Get Global Academic Exposure. Increase your academic earning</p>
   <div className="flex flex-wrap">
