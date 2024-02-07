@@ -5,6 +5,7 @@ import HeroBanner from '@/components/HeroBanner';
 import TalentPoolForm from '@/components/forms/TalentPoolForm';
 import LightBulb from '@/components/icons/LightBulb';
 import Speedo from '@/components/icons/Speedo';
+import Stats from '@/components/Stats.tsx';
 
 export const metadata: Metadata = {
   title: 'Higher Ed Quick Job Post Technology', //Option 1 replaces the %s in layout.tsx
@@ -35,6 +36,8 @@ export default function Page() {
         alt="Academic and Higher Education Quick Job Post Technology"
         reorder={false}
       />
+      <Stats />
+
       {/* Main Content */}
       <section className="container mx-auto px-4 mt-12">
         <h2 className="text-center">The End of Traditional Job Posting</h2>
@@ -165,155 +168,109 @@ export default function Page() {
           {/* End Cards */}
         </div>
 
-        {/* Revolutionize Your Recruitment Card */}
+        {/* Ready to Embrace the Future? */}
         <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
           <figure>
             <Image
-              src="/ai-recruitment/ai-driven-job-optimization.jpg"
+              src="/quick-job-post/the-end-of-traditional-job-posting.jpg"
               width={1280}
               height={380}
-              alt="AI Optimized Job Postings"
+              alt="The End of Traditional Job Posting with Quick Job Post Technology"
               className="w-full lg:max-w-lg rounded-xl m-6"
             />
           </figure>
           <div className="card-body w-full">
-            <h2 className="card-title">
-              AI-Enhanced Job Listings for Maximum&nbsp;Impact
-            </h2>
+            <h2 className="card-title">Ready to Embrace the Future?</h2>
             <p className="max-w-screen-sm">
-              Our AI-driven system elevates your job postings by analyzing
-              successful listings across various industries. We provide tailored
-              suggestions for keywords, job titles, and descriptions. This
-              data-driven approach ensures that your listings are not just seen
-              but are compelling to the right candidates. It also saves you time
-              and increases your chances of finding the right candidate for the
-              job.
+              Join the ranks of forward-thinking universities and colleges
+              transforming their recruitment process with Quick Job Post
+              Technology. It's time to streamline your hiring, engage the best
+              talent, and set new standards in academic recruitment.
             </p>
-            <div className="card-actions justify-end">
+            <p className="max-w-screen-sm">
+              Discover the Quick Job Post Technology difference today.
+              Revolutionize your recruitment, one post at a time.
+            </p>
+            <p className="max-w-screen-sm">
+              Step into the new era of academic hiring with higher ed Quick Job
+              Post Technology. This cutting-edge platform offers a seamless,
+              efficient pathway to attract and secure top-tier talent for your
+              institution. With its unparalleled speed and ease of use, you're
+              not just posting job vacancies; you're elevating the entire
+              recruitment experience.
+              {/* Embrace innovation and witness how Quick
+              Job Post Technology can dramatically enhance your recruitment
+              outcomes, ensuring you stay ahead in the competitive landscape of
+              academic excellence. Experience how our technology redefines
+              efficiency, paving the way for a brighter, more successful future
+              in academic staffing. */}
+            </p>
+            {/* <div className="card-actions justify-end">
               <Link
                 href="/ai-recruitment/ai-job-posting-optimization"
                 className="btn btn-aj"
               >
                 Learn about AI Optimization
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
 
-        {/* Enhance Job Listings Card */}
+        {/* Transforming Recruitment One Post at a Time */}
         <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
           <figure className="lg:order-1">
             <Image
-              src="/ai-recruitment/ai-enhanced-job-listing.jpg"
+              src="/quick-job-post/transforming-time-into-money.jpg"
               width={1280}
               height={380}
-              alt="AI Enhanced Job Listings"
+              alt="Transforming Time into Money with Quick Job Post Technology"
               className="w-full lg:max-w-lg rounded-xl m-6"
             />
           </figure>
           <div className="card-body w-full">
             <h2 className="card-title">
-              Revolutionize Your Recruitment with AI-Driven Job Posting
-              Optimization
+              Transforming Recruitment One Post at a Time
             </h2>
             <p className="max-w-screen-sm">
-              In the dynamic landscape of today’s job market, securing top
-              talent demands more than just a standard job posting. Academic
-              Jobs introduces a groundbreaking AI solution – Automated Job
-              Posting Optimization. This innovative tool is transforming the way
-              employers approach job listings, ensuring your vacancies not only
-              reach but resonate with the most qualified candidates.
+              Academic Quick Job Post Technology is not merely a tool; it's a
+              game-changing solution for the academic world. By automating and
+              simplifying the job posting process, it sets a new benchmark for
+              efficiency and effectiveness in academic hiring practices.
+              Institutions that adopt this technology are not only optimizing
+              their recruitment processes but are also showcasing their
+              commitment to innovation and efficiency.
             </p>
-            <div className="card-actions justify-end">
+            <p className="max-w-screen-sm">
+              In a world where every second counts, Higher Education Quick Job
+              Post Technology emerges as an invaluable asset for higher
+              education institutions. It transcends the act of merely posting
+              job vacancies; it revolutionizes recruitment, making every post a
+              testament to the future of academic hiring.
+            </p>
+            {/* <div className="card-actions justify-end">
               <Link
                 href="/ai-recruitment/ai-job-application-sentiment-analysis"
                 className="btn btn-aj"
               >
                 Learn about AI Job Postings
               </Link>
-            </div>
+            </div> */}
           </div>
-        </div>
-
-        <div className="alert mb-10">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            className="stroke-info shrink-0 w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            ></path>
-          </svg>
-          <span>
-            Resume extraction and parsing provides candidates with the ability
-            to create structured data from their uploaded resume (Supports MS
-            Word, PDF & JPEG). Coming soon!
-          </span>
-          <div>
-            <Link
-              href="/ai-recruitment/ai-resume-extraction"
-              className="btn btn-sm btn-aj"
-            >
-              More about Resume Parsing
-            </Link>
-          </div>
-        </div>
-
-        <div className="mb-16 max-w-lg mx-auto">
-          <h3 className="mb-4">
-            Choose Academic Jobs and Gain the Superpowers that AI-Enhanced
-            Recruitment&nbsp;Delivers
-          </h3>
-          <li>
-            Tailored AI Solutions: Customized AI recommendations specific to
-            your industry and company needs.
-          </li>
-          <li>
-            Advanced Candidate Matching: Cutting-edge technology to match the
-            right talent with your job requirements.
-          </li>
-          <li>
-            Efficient Recruitment Process: Save time and resources with
-            automated, AI-driven job posting optimization.
-          </li>
         </div>
       </section>
-      <div className="hero min-h-fit bg-orange-100 mb-8">
-        <div className="container mx-auto text-center py-8 px-4">
-          <h2 className="text-5xl font-bold">Why Choose Academic Jobs?</h2>
-          <p className="py-6 max-w-2xl mx-auto">
-            Elevate your job postings with our intelligent analytics. Our
-            platform transforms listings into data-rich resources, offering
-            continuous performance monitoring and actionable insights to
-            optimize your recruitment strategy.
-          </p>
-          <p className="max-w-2xl mx-auto">
-            Harness AI power for precision-targeted job listings. Our system not
-            only broadcasts but smartly targets your ideal demographic, from
-            specific groups like US citizens to a broader audience. Enhanced
-            with selective visibility, we streamline your recruitment for
-            maximum efficiency. Contact us to discover more.
-          </p>
-        </div>
-      </div>
       <section>
         <h3 className="container mx-auto text-center py-8 px-4">
-          To learn more about this time saving opportunity{' '}
-          <Link href="/contact-us" className="btn btn-aj">
-            Contact us Today
+          Try our quick job post technology today and experience the future…{' '}
+          <Link href="/post-a-job" className="btn btn-aj">
+            Post a Job Now
           </Link>
         </h3>
         <p className="text-center p-4">
           <Link
-            href="/ai-recruitment/ai-job-posting-optimization"
+            href="/career-help/higher-ed-quick-job-post-technology"
             className="link link-warning hover:text-orange-500"
           >
-            AI&nbsp;Job&nbsp;Listings
+            More about Quick Post Tech
           </Link>{' '}
           <Link
             href="/ai-recruitment/ai-job-application-sentiment-analysis"
