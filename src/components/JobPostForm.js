@@ -10,6 +10,7 @@ import { jobElephantContacts } from '@/data/jobElephantContacts';
 import Image from 'next/image';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
+import Speedo from '@/components/icons/Speedo';
 
 const stripeLink = {
   Australia: 'https://buy.stripe.com/dR6eWA6PuaaA7VC6ov',
@@ -281,10 +282,12 @@ const JobPostForm = ({ partner, region }) => {
             ) : null}
           </div>
           <div>
+            <h2 className="mt-8">
+              <Speedo size={60} />
+              Post a job in 32 seconds saving you 8 minutes each time!{' '}
+            </h2>
             <h3 className={`${textColor} mb-4`}>
-              Welcome to our new {partnerName} Post Job form. <br />
-              Taking you under two minutes per job, saving you
-              6 minutes each time!
+              Welcome to the new {partnerName} Quick Job Post Technology form.
             </h3>
             <Image
               width={800}
