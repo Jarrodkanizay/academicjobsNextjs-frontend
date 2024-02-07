@@ -21,6 +21,11 @@ const Footer = () => {
           <li>
             <Link href="/recruitment">Recruitment Assistance</Link>
           </li>
+          <li>
+            <Link href="/quick-job-post-technology">
+              Quick Job Post Technology
+            </Link>
+          </li>
         </ul>
 
         <ul>
