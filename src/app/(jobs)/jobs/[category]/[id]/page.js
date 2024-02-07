@@ -86,6 +86,12 @@ const JobDetailPage = async ({ params, searchParams }) => {
 
   // const employerRanking = updateEmployerRanking(topTwentyUnis, company_name);
 
+  //########################################################################################
+  //########################################################################################
+  //############ Walter I need the employer ranking field passed to the job ################
+  //########################################################################################
+  //########################################################################################
+
   // const employerRanking = 2;
   function updateEmployerRanking(topTwentyUnis, companyName) {
     if (

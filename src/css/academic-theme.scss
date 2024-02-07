@@ -88,9 +88,11 @@ html {
       color: var(--color-primary);
     }
     h2,
-    h2 a {
+    h2 a,
+    .hero h2 {
       font-size: 30px;
       color: var(--color-gray-blue);
+      line-height: 38px;
     }
     .faq h2 {
       font-size: 21px;
