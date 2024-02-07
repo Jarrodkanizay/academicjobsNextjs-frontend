@@ -5,7 +5,7 @@ import HeroBanner from '@/components/HeroBanner';
 import TalentPoolForm from '@/components/forms/TalentPoolForm';
 import LightBulb from '@/components/icons/LightBulb';
 import Speedo from '@/components/icons/Speedo';
-import Stats from '@/components/Stats.tsx';
+import Stats from '@/components/Stats';
 
 export const metadata: Metadata = {
   title: 'Higher Ed Quick Job Post Technology', //Option 1 replaces the %s in layout.tsx
