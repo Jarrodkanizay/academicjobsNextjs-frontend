@@ -108,7 +108,7 @@ export default function Page() {
           <div className="card bg-slate-100 shadow-xl">
             <figure className="px-10 pt-10">
               <div className="icon-ai">
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="80"
                   height="80"
@@ -171,7 +171,7 @@ export default function Page() {
                     fill="currentColor"
                     mask="url(#lineMdSpeedometerLoop0)"
                   />
-                </svg>{' '}
+                </svg>{' '} */}
               </div>
             </figure>
             <div className="card-body items-center">
@@ -201,7 +201,7 @@ export default function Page() {
           <div className="card bg-slate-100 shadow-xl">
             <figure className="px-10 pt-10">
               <div className="icon-ai">
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="80"
                   height="80"
@@ -231,7 +231,7 @@ export default function Page() {
                     fill="#ABBDDB"
                     d="M324.406 402.701H189.423c-6.6 0-12-5.4-12-12v-6.957c0-6.6 5.4-12 12-12h134.983c6.6 0 12 5.4 12 12v6.957c0 6.6-5.4 12-12 12m-7.007 49.915v-6.957c0-6.6-5.4-12-12-12H208.43c-6.6 0-12 5.4-12 12v6.957c0 6.6 5.4 12 12 12h96.969c6.6 0 12-5.4 12-12"
                   />
-                </svg>{' '}
+                </svg>{' '} */}
               </div>
             </figure>
             <div className="card-body items-center">
@@ -329,7 +329,7 @@ export default function Page() {
         </div>
 
         <div className="alert mb-10">
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -341,7 +341,7 @@ export default function Page() {
               strokeWidth="2"
               d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
             ></path>
-          </svg>
+          </svg> */}
           <span>
             Resume extraction and parsing provides candidates with the ability
             to create structured data from their uploaded resume (Supports MS
