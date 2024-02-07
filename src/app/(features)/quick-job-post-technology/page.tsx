@@ -3,18 +3,18 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import HeroBanner from '@/components/HeroBanner';
 import TalentPoolForm from '@/components/forms/TalentPoolForm';
-// import ReactQuill from 'react-quill';
-// import 'react-quill/dist/quill.snow.css';
-// import InputBlock2 from '@/components/forms/InputBlock2';
+import LightBulb from '@/components/icons/LightBulb';
+import Speedo from '@/components/icons/Speedo';
+
 export const metadata: Metadata = {
-  title: 'Academic Talent Pool', //Option 1 replaces the %s in layout.tsx
+  title: 'Higher Ed Quick Job Post Technology', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
-    'Join our exclusive Talent Pool to connect and collaborate with top employers and academics worldwide. Sign up today to explore exciting job opportunities, gain industry exposure, and fast-track your career. Perfect for academics seeking to elevate their career paths.',
+    'Discover Quick Job Post Technology: The game-changer in academic recruitment that lets universities and colleges post job vacancies in just 32 seconds! Embrace the future where efficiency meets innovation, transforming your hiring process and saving invaluable time. Revolutionize your recruitment strategy now!',
   keywords:
-    'talent pool, career opportunities, job seekers, find academic networking, academic exposure, professional networking, industry exposure, employment, career growth, job application, talent database, professional development, sign up, global job market',
+    'higher ed Quick Job Post, higher education Quick Job Post, Quick Job Post Technology, Academic Quick Job Post Technology, Time Saving Job Posts, Save Time Posting Jobs',
 };
 //WIP
 export default function Page() {
@@ -61,7 +61,7 @@ export default function Page() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-16">
           {/* Card 1 */}
           <div className="card bg-slate-100 shadow-xl">
             <figure className="px-10 pt-10">
@@ -108,70 +108,7 @@ export default function Page() {
           <div className="card bg-slate-100 shadow-xl">
             <figure className="px-10 pt-10">
               <div className="icon-ai">
-                {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="80"
-                  height="80"
-                  viewBox="0 0 24 24"
-                >
-                  <mask id="lineMdSpeedometerLoop0">
-                    <path
-                      fill="none"
-                      stroke="#fff"
-                      stroke-dasharray="46"
-                      stroke-dashoffset="46"
-                      stroke-linecap="round"
-                      stroke-width="2"
-                      d="M21 13C21 8.02944 16.9706 4 12 4C7.02944 4 3 8.02944 3 13C3 17.9706 7.02944 22 12 22"
-                      transform="rotate(45 12 13)"
-                    >
-                      <animate
-                        fill="freeze"
-                        attributeName="stroke-dashoffset"
-                        dur="0.6s"
-                        values="46;92"
-                      />
-                    </path>
-                    <g fill-opacity="0" transform="rotate(-100 12 13)">
-                      <path d="M12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14Z">
-                        <animate
-                          fill="freeze"
-                          attributeName="d"
-                          begin="0.4s"
-                          dur="0.2s"
-                          values="M12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14Z;M17 13C17 15.7614 14.7614 18 12 18C9.23858 18 7 15.7614 7 13C7 10.2386 12 -2 12 -2C12 -2 17 10.2386 17 13Z"
-                        />
-                      </path>
-                      <path
-                        fill="#fff"
-                        d="M12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14Z"
-                      >
-                        <animate
-                          fill="freeze"
-                          attributeName="d"
-                          begin="0.4s"
-                          dur="0.2s"
-                          values="M12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14C12 14 12 14 12 14Z;M15 13C15 14.6568 13.6569 16 12 16C10.3431 16 9 14.6568 9 13C9 11.3431 12 2 12 2C12 2 15 11.3431 15 13Z"
-                        />
-                      </path>
-                      <set attributeName="fill-opacity" begin="0.4s" to="1" />
-                      <animateTransform
-                        attributeName="transform"
-                        begin="0.6s"
-                        dur="6s"
-                        repeatCount="indefinite"
-                        type="rotate"
-                        values="-100 12 13;65 12 13;65 12 13;65 12 13;30 12 13;10 12 13;0 12 13;35 12 13;55 12 13;65 12 13;75 12 13;15 12 13;-20 12 13;-100 12 13"
-                      />
-                    </g>
-                  </mask>
-                  <rect
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    mask="url(#lineMdSpeedometerLoop0)"
-                  />
-                </svg>{' '} */}
+                <Speedo size={80} />
               </div>
             </figure>
             <div className="card-body items-center">
@@ -201,37 +138,7 @@ export default function Page() {
           <div className="card bg-slate-100 shadow-xl">
             <figure className="px-10 pt-10">
               <div className="icon-ai">
-                {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="80"
-                  height="80"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    fill="#FFE46A"
-                    d="M411.111 183.926c0-87.791-68.91-158.959-153.914-158.959S103.283 96.136 103.283 183.926c0 39.7 14.093 75.999 37.392 103.856h-.001l33.666 61.027c8.793 16.28 12.057 26.792 26.792 26.792h109.774c14.736 0 19.071-11.07 26.792-26.792l36.022-61.027h-.002c23.299-27.857 37.393-64.156 37.393-103.856"
-                  />
-                  <path
-                    fill="#FFF0B7"
-                    d="M112.805 203.285c0-90.721 68.378-165.701 157.146-177.719a150.851 150.851 0 0 0-13.319-.599c-85.004 0-153.914 71.169-153.914 158.959c0 28.89 7.469 55.974 20.512 79.319c-6.75-18.749-10.425-38.932-10.425-59.96"
-                  />
-                  <path
-                    fill="#FFDA00"
-                    d="M411.111 184.266c0-31.445-8.843-60.755-24.097-85.428a160.416 160.416 0 0 1 4.917 39.416c0 104.454-101.138 189.522-227.481 192.967l9.89 17.929c8.793 16.28 12.057 26.792 26.792 26.792h109.774c14.736 0 19.071-11.07 26.792-26.792l36.022-61.027h-.002c23.299-27.858 37.393-64.157 37.393-103.857"
-                  />
-                  <path
-                    fill="#FAAF63"
-                    d="M321.905 211.203c.149-.131.297-.251.447-.395c2.787-2.667 5.082-6.921 3.161-10.867c-7.879-16.176-31.97-21.308-49.524-15.951c-.889.271-1.751.566-2.588.885c-9.562-5.583-21.434-6.925-32.001-3.569a35.399 35.399 0 0 0-3.678 1.394c-5.785-3.38-12.552-5.066-19.294-4.414c-14.112 1.365-26.375 12.81-28.805 26.752l-1.112.688c9.617 15.541 34.93 60.071 36.552 79.233c2.045 24.174.002 89.793-.019 90.453l11.994.379c.086-2.723 2.086-66.978-.019-91.844c-.938-11.087-7.722-28.758-20.164-52.521c-5.807-11.092-11.445-20.83-14.858-26.576c2.36-7.646 9.61-13.848 17.586-14.619c2.429-.235 4.893.037 7.251.729a22.68 22.68 0 0 0-2.32 3.638c-4.047 7.935-2.356 17.898 3.933 23.176c3.725 3.125 9.137 4.276 14.127 3c4.647-1.188 8.239-4.242 9.854-8.379c1.451-3.718 1.328-8.01-.367-12.756a30.665 30.665 0 0 0-4.05-7.655a28.134 28.134 0 0 1 13.61.744c-1.715 1.975-3.027 4.173-3.89 6.556c-1.844 5.101-1.029 11.163 2.128 15.822c2.721 4.016 6.856 6.403 11.348 6.551c.15.005.301.008.45.008c3.935 0 7.67-1.692 10.562-4.797c3.397-3.647 5.126-8.71 4.624-13.544c-.319-3.073-1.412-6.079-3.172-8.867c12.236-2.223 24.205 1.911 29.383 8.186c-3.125 5.2-9.542 16.11-16.178 28.785c-12.441 23.764-19.227 41.435-20.164 52.521c-2.104 24.866-.104 89.121-.019 91.844l11.994-.379c-.021-.66-2.064-66.275-.019-90.453c1.459-17.251 22.113-55.046 33.237-73.758m-80.657-3.171c-.279.716-1.331 1.035-1.647 1.116c-1.25.319-2.665.086-3.442-.565c-2.015-1.691-2.453-5.599-.957-8.532a11.21 11.21 0 0 1 1.85-2.583c1.611 1.828 2.892 3.926 3.707 6.208c.665 1.86.843 3.449.489 4.356m32.19.654c-.351.375-1.065.992-1.839.976c-.831-.027-1.489-.819-1.808-1.289c-.993-1.467-1.312-3.527-.776-5.009c.618-1.71 1.811-3.109 3.203-4.235c1.55 1.751 2.501 3.634 2.688 5.434c.144 1.371-.447 3.027-1.468 4.123"
-                  />
-                  <path
-                    fill="#6B83A5"
-                    d="M315.932 402.701H197.897c-6.6 0-12 5.4-12 12v6.957c0 6.6 5.4 12 12 12h38.122c-11.367 4.229-23.369 14.285-23.369 25.946v4.68c9.123 10.254 17.619 28.081 33.802 28.081h21.89c12.748 0 21.804-13.762 32.836-28.081v-4.68c0-11.661-11.451-21.717-22.548-25.946h37.302c6.6 0 12-5.4 12-12v-6.957c0-6.6-5.4-12-12-12"
-                  />
-                  <path
-                    fill="#ABBDDB"
-                    d="M324.406 402.701H189.423c-6.6 0-12-5.4-12-12v-6.957c0-6.6 5.4-12 12-12h134.983c6.6 0 12 5.4 12 12v6.957c0 6.6-5.4 12-12 12m-7.007 49.915v-6.957c0-6.6-5.4-12-12-12H208.43c-6.6 0-12 5.4-12 12v6.957c0 6.6 5.4 12 12 12h96.969c6.6 0 12-5.4 12-12"
-                  />
-                </svg>{' '} */}
+                <LightBulb size={80} />
               </div>
             </figure>
             <div className="card-body items-center">
@@ -329,7 +236,7 @@ export default function Page() {
         </div>
 
         <div className="alert mb-10">
-          {/* <svg
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -341,7 +248,7 @@ export default function Page() {
               strokeWidth="2"
               d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
             ></path>
-          </svg> */}
+          </svg>
           <span>
             Resume extraction and parsing provides candidates with the ability
             to create structured data from their uploaded resume (Supports MS
