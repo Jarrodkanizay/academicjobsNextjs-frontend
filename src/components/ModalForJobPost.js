@@ -1,16 +1,17 @@
 import RequestFullJobForm from '@/components/forms/RequestFullJobForm';
 import Image from 'next/image';
 
-type ModalProps = {
-  name: string;
-  heading: string;
-  placeholder: string;
-  buttonText?: string;
-  thankYouMessage?: string;
-  modalReason?: string;
-};
+// type ModalProps = {
+//   name: string;
+//   heading: string;
+//   placeholder: string;
+//   buttonText?: string;
+//   thankYouMessage?: string;
+//   modalReason?: string;
+// };
 
-const ModalForJobPost: React.FC<ModalProps> = ({
+// const ModalForJobPost: React.FC<ModalProps> = ({
+const ModalForJobPost = ({
   name,
   heading,
   placeholder = 'Enter email to Join Talent Pool',
