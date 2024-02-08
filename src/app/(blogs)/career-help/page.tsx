@@ -116,7 +116,7 @@ export default function BlogPosts() {
           </div>
 
           <h2 className="underline-full mt-16 mb-8">
-            Academic Career Blog Posts
+            Academic Recruitment & Career Blog Posts
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
             {blogData.slice(6).map((post, index) => (

@@ -14,10 +14,12 @@ interface SearchResultsProps {
     l?: string | 0;
   };
   filterOff?: boolean;
+  searchMessage?: string;
 }
 export default function SearchResults({
   q,
   filterOff = false,
+  searchMessage = 'Jobs Found',
 }: SearchResultsProps) {
   console.log('==============SearchResults==================');
   const [page, setPage] = useState(0);
@@ -170,17 +172,19 @@ export default function SearchResults({
             {dataQty && <span>{`${dataQty} Jobs Found`}</span>}
           </div> */}
 
-          <div className="flex justify-center items-center gap-2 my-4 text-sm font-bold text-gray-500 border-2 p-2 rounded-xl mb-8">
-            <SearchLightbulbIcon dimensions={22} />
-            {dataQty && <span>{`${dataQty} Jobs Found`}</span>}
-          </div>
+          <div className="max-w-screen-md mx-auto">
+            <div className="flex justify-center items-center gap-2 my-4 text-sm font-bold text-gray-500 border-2 p-2 rounded-xl mb-8 ">
+              <SearchLightbulbIcon dimensions={22} />
+              {dataQty && <span>{`${dataQty} ${searchMessage}`}</span>}
+            </div>
 
-          <JobList
-            data={data}
-            handlePageChange={handlePageChange}
-            page={page}
-            isPlaceholderData={isPlaceholderData}
-          />
+            <JobList
+              data={data}
+              handlePageChange={handlePageChange}
+              page={page}
+              isPlaceholderData={isPlaceholderData}
+            />
+          </div>
         </>
       );
     } else {

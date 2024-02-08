@@ -9,9 +9,11 @@ import Image from 'next/image';
 import { BsFillShareFill } from 'react-icons/bs';
 import Button from './Button';
 import { CloudCog } from 'lucide-react';
-import SubscribeForm from '@/components/forms/SubscribeForm';
+import RequestFullJobForm from '@/components/forms/RequestFullJobForm';
 import { useSearchParams } from 'next/navigation';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
+import FavoriteButton from '@/components/FavoriteButton';
+import { topTwentyUnis } from '@/data/topTwentyUnisData';
 
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
@@ -56,10 +58,121 @@ const JobDetailPage = async ({ params, searchParams }) => {
     featured,
     clientType,
     headlineOnly,
+    ranking,
   } = job.data;
+
+  const subject = encodeURIComponent('You might like this job posting!');
+  const bccEmail = encodeURIComponent('post@academicjobs.com');
+  const bodyEmail = encodeURIComponent(
+    `I came across this job posting on AcademicJobs and thought you might be interested: https://www.academicjobs.com/jobs/myjob/${jobId}`
+  );
+
+  // if (company_name === 'Queensland University of Technology (QUT)') {
+  //   employerRanking = 5;
+  // }
+  // if (company_name === 'Bond University') {
+  //   employerRanking = 5;
+  // }
+
+  // Temporary workaround for employee ranking
+  // function updateEmployerRanking(topTwentyUnis, companyName) {
+  //   if (Array.isArray(topTwentyUnis)) {
+  //     return topTwentyUnis.includes(companyName) ? 5 : 2;
+  //   } else {
+  //     console.error('topTwentyUnis is not an array');
+  //     return 2; // default value
+  //   }
+  // }
+
+  // const employerRanking = updateEmployerRanking(topTwentyUnis, company_name);
+
+  //########################################################################################
+  //########################################################################################
+  //############ Walter I need the employer ranking field passed to the job ################
+  //########################################################################################
+  //########################################################################################
+
+  // const employerRanking = 2;
+  function updateEmployerRanking(topTwentyUnis, companyName) {
+    if (
+      (typeof companyName === 'string' &&
+        companyName.startsWith('Academic Jobs')) ||
+      companyName.startsWith('AcademicJobs')
+    ) {
+      return 5;
+    }
+
+    if (Array.isArray(topTwentyUnis)) {
+      if (topTwentyUnis.includes(companyName)) {
+        return 5;
+      } else {
+        return 2;
+      }
+    } else {
+      console.error('topTwentyUnis is not an array');
+      return 2; // default value
+    }
+  }
+  const employerRanking = updateEmployerRanking(topTwentyUnis, company_name);
+
+  let bgColor = 'rgba(255, 255, 255, 1)';
+  // async function getColorFromTopLeftCorner(imgSrc) {
+  //   return new Promise((resolve, reject) => {
+  //     let img = new Image();
+  //     img.src = imgSrc;
+  //     img.onload = function () {
+  //       let canvas = document.createElement('canvas');
+  //       canvas.width = img.width;
+  //       canvas.height = img.height;
+
+  //       let ctx = canvas.getContext('2d');
+  //       ctx.drawImage(img, 0, 0, img.width, img.height);
+
+  //       let r = 0,
+  //         g = 0,
+  //         b = 0,
+  //         a = 0;
+  //       for (let y = 0; y < 2; y++) {
+  //         for (let x = 0; x < 2; x++) {
+  //           let pixelData = ctx.getImageData(x, y, 1, 1).data;
+  //           r += pixelData[0];
+  //           g += pixelData[1];
+  //           b += pixelData[2];
+  //           a += pixelData[3];
+  //         }
+  //       }
+
+  //       r /= 4;
+  //       g /= 4;
+  //       b /= 4;
+  //       a /= 4;
+
+  //       let rgba = `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(
+  //         b
+  //       )}, ${a / 255})`;
+
+  //       resolve(rgba);
+  //     };
+  //     img.onerror = reject;
+  //   });
+  // }
+  // async function fetchColorAndSetBackground() {
+  //   try {
+  //     bgColor = await getColorFromTopLeftCorner(
+  //       `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}`
+  //     );
+  //     return bgColor;
+  //     // Use the color here
+  //   } catch (error) {
+  //     console.error(error);
+  //     // Handle the error here
+  //   }
+  // }
+  // fetchColorAndSetBackground();
 
   return (
     <>
+      {/* {console.log('Top 20 ' + { topTwentyUnis })} */}
       <div className="bg-white relative content-grid mx-auto  ">
         <div className="bg-slate-200 full-width">
           <div className="md:flex items-center p-4 gap-8">
@@ -69,7 +182,10 @@ const JobDetailPage = async ({ params, searchParams }) => {
                   ?.replace(/\W+/g, '-')
                   .toLowerCase()}/${employer_id}/`}
               >
-                <div className="w-full rounded-lg p-4 bg-white">
+                <div
+                  className="w-full rounded-lg p-4"
+                  style={{ backgroundColor: `${bgColor}` }}
+                >
                   <Image
                     className="w-full "
                     src={
@@ -85,12 +201,13 @@ const JobDetailPage = async ({ params, searchParams }) => {
             </div>
             <div className="w-3/4">
               <h1 className="text-2xl font-bold mb-2 text-black">{title}</h1>
+
               <div className="mb-4">
                 {/* <Link href={`/employers/id/${id}`}>
                     {location}
                 </Link> */}
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center gap-8">
                 {headlineOnly ? (
                   <Link href="#request-job-post" className="btn btn-aj">
                     Apply Now
@@ -103,17 +220,24 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     // buttonText="Apply Now /jobs/[category]/[id]/page.js"
                   />
                 )}
-                <div className="ml-4">
-                  <div className="">
-                    <div
-                    // onClick={() => {
-                    //     setIsOpen(true);
-                    // }}
-                    >
-                      <BsFillShareFill />
-                    </div>
-                  </div>
-                </div>
+                <a
+                  className="icon_share"
+                  href={`mailto:?bcc=${bccEmail}&subject=${subject}&body=${bodyEmail}`}
+                >
+                  <BsFillShareFill size={32} color="#2867B2" />
+                </a>
+                {/* <a href="">
+                  <Image
+                    src="/icons/heart.svg"
+                    width={44}
+                    height={44}
+                    alt="Add this Job Post to Favorites"
+                  />
+                </a> */}
+                <FavoriteButton />
+                <a href="/academic-talent-pool" className="btn btn-accent">
+                  Join Talent Pool
+                </a>
               </div>
             </div>
           </div>
@@ -123,16 +247,32 @@ const JobDetailPage = async ({ params, searchParams }) => {
       <section className="jobs_grid job_post_header_container">
         <div className="job_post_header_panel">
           <h3 className="company_name">{company_name}</h3>
-          <h4 className="location">
-            <Image
-              src={`/icons/map-marker-icon.svg`}
-              alt="Map Marker Icon"
-              width={22}
-              height={22}
-              className="map_marker_icon"
-            />
-            {location}
-          </h4>
+          <section className="ranking flex flex-row">
+            {[...Array(5)].map((_, i) => (
+              <svg
+                key={i}
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill={i < employerRanking ? 'gold' : 'lightgray'}
+                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
+                />
+              </svg>
+            ))}
+            <h4 className="location pl-8">
+              <Image
+                src={`/icons/map-marker-icon.svg`}
+                alt="Map Marker Icon"
+                width={22}
+                height={22}
+                className="map_marker_icon"
+              />
+              {location}
+            </h4>
+          </section>
         </div>
         <div className="applications_close_panel">
           <h6>Applications Close</h6>
@@ -151,7 +291,6 @@ const JobDetailPage = async ({ params, searchParams }) => {
           </div>
         </div>
       </section>
-
       {/* main body of job post */}
       <section className="jobs_grid job_post_panel_container">
         <article className="post_panel" data-id={jobId}>
@@ -185,7 +324,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                         className="mr-20"
                       />
                       <div className="grow">
-                        <SubscribeForm
+                        <RequestFullJobForm
                           formName="Request Full Job Post"
                           buttonText="Please Email Full Job Post"
                           thankYouMessage="Done! You will receive the full job post shortly."
@@ -226,11 +365,14 @@ const JobDetailPage = async ({ params, searchParams }) => {
             <div className="search_panel">
               <JobSearchBox2 q={title} />
             </div>
-            <SearchResults q={title} filterOff={true} />
+            <SearchResults
+              q={title}
+              filterOff={true}
+              searchMessage="Related Jobs Found"
+            />
           </div>
         </div>
       </section>
-
       {new Date(expiration_date) < new Date() && expiration_date && (
         <div className="bg-opacity-50 bg-red-500 text-white text-4xl px-8 py-8 rounded-full absolute top-[200px] left-[50%] transform -translate-x-1/2 -translate-y-1/2 rotate-45 skew-y-0">
           Job Fulfilled By AcademicJobs.com

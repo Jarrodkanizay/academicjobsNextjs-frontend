@@ -3,6 +3,7 @@
 import SearchResults from '@/components/SearchResults';
 import { useSearchParams } from 'next/navigation';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobSearchBox2 from '@/components/JobSearchBox2';
 import JobFilter from '@/components/JobFilter';
 
 import Link from 'next/link';
@@ -32,7 +33,8 @@ export default function Page() {
       <div className="w-full bg-gray-100 py-4 mb-4 mt-8">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-screen-xl mx-auto ">
-            <JobSearchBox />
+            <JobSearchBox forceClass="hidden md:block" />
+            <JobSearchBox2 forceClass="block md:hidden" />
           </div>
         </div>
       </div>
