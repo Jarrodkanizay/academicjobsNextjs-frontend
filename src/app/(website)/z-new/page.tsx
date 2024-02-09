@@ -55,10 +55,11 @@ export default function myPage() {
           <ModalForJobPost
             name="share_job_modal"
             heading="Share this Job Post with a mate"
-            placeholder="Enter your mates email"
+            placeholder="From: (Enter your email)"
             thankYouMessage="Thanks for sharing this job post with your mate!"
             buttonText="Share it!"
             modalReason="share"
+            imagePath="/love-messages/share-this-job.svg"
           />
 
           <label htmlFor="save_to_favorites_modal">

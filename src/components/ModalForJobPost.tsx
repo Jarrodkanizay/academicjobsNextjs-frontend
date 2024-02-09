@@ -1,24 +1,25 @@
 import RequestFullJobForm from '@/components/forms/RequestFullJobForm';
 import Image from 'next/image';
 
-// type ModalProps = {
-//   name: string;
-//   heading: string;
-//   placeholder: string;
-//   buttonText?: string;
-//   thankYouMessage?: string;
-//   modalReason?: string;
-// };
+type ModalProps = {
+  name: string;
+  heading: string;
+  placeholder: string;
+  imagePath?: string;
+  buttonText?: string;
+  thankYouMessage?: string;
+  modalReason?: string;
+};
 
-// const ModalForJobPost: React.FC<ModalProps> = ({
 const ModalForJobPost = ({
   name,
   heading,
   placeholder = 'Enter email to Join Talent Pool',
   modalReason = 'standard',
+  imagePath = '/love-messages/i-love-this-job.svg',
   buttonText = 'Join Now',
   thankYouMessage = 'Thanks for joining our Academic Talent Pool!',
-}) => {
+}: ModalProps) => {
   return (
     <>
       <input type="checkbox" id={name} className="modal-toggle" />
@@ -42,10 +43,10 @@ const ModalForJobPost = ({
               alt="Academic Jobs Heart"
             />
             <Image
-              src="/let-me-share-the-lov.svg"
+              src={imagePath}
               width={170}
-              height={90}
-              alt="Academic Jobs Heart"
+              height={60}
+              alt="Academic Love Message"
             />
           </div>
         </div>
