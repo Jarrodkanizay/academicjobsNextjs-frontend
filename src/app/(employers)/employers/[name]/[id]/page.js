@@ -165,7 +165,7 @@ const Employer = async ({ params }) => {
               </div>
             </div>
           }
-          <div className="md:w-1/2 max-h-screen overflow-y-scroll">
+          <div className="md:w-1/2 ">
             <JobSearchBox />
             <SearchResults q={{ employer_id: id || 0 }} filterOff={true} />
           </div>
