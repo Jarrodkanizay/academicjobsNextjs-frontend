@@ -317,7 +317,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                         alt="Academic Jobs Heart"
                       />
                       <Image
-                        src="/i-love-this-job.svg"
+                        src="/love-messages/i-love-this-job.svg"
                         width={90}
                         height={90}
                         alt="Academic Jobs Heart"
