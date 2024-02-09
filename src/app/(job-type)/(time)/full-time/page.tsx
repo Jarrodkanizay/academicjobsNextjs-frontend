@@ -22,7 +22,7 @@ export default function myPage() {
       The best job board in Australia will help you find your dream full-time position. If you thrive in a collaborative environment, possess a strong work ethic, and are eager to take on new challenges, we invite you to apply. This is more than just a job – it's a chance to grow and excel in a supportive and innovative workplace. Join us on this exciting journey and let's build a successful future together.</p>
       <Link
                       href={'/academic-talent-pool'}
-                      className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
+                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
                     >
                      Join Our Talent Pool
                     </Link>

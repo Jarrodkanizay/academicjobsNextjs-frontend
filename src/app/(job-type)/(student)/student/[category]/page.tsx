@@ -76,7 +76,19 @@ export default function Page({ params, searchParams }: any) {
       </div>
 
       <JobSearchBox q={Name} />
-      <SearchResults q={{ q: Name }} />
+
+      <section className="jobs_grid job_post_search_container">
+        <div className="filters_panel">
+          <div className="filters_content">
+            <JobFilter />
+          </div>
+        </div>
+        <div className="listings_panel">
+          <div className="listings_content">
+          <SearchResults q={{ q: Name }} />
+          </div>
+        </div>
+      </section>
     </div>
   );
   return <div className="overflow-y w-full">{content}</div>;
