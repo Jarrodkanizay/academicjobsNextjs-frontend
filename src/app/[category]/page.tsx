@@ -2,6 +2,7 @@
 import citiesData from '@/data/cities.json';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 // import type { Metadata } from 'next';
 
 type MetadataTypes = {

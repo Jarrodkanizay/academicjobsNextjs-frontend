@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { regionData } from '@/data/canadaPositions';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 // import type { Metadata } from 'next';
 
 const regionName = 'Canada';
@@ -72,24 +73,36 @@ export default function Page({ params, searchParams }: any) {
           <h1 className="md:text-6xl font-bold md:text-right text-gray-500 pb-4 capitalize m-0">
             {Title}
           </h1>
-          <div className="prose text-1-cols">
+          <div className=" prose text-1-cols text-gray-700">
             {paras.map((para, index) => (
               <p key={index} className="">
                 {para}
               </p>
             ))}
-             <Link
+              <Link
                       href={'/academic-talent-pool'}
                       className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
                     >
-                     Join Our Talent Pool
+                     Join Talent Pool
                     </Link>
           </div>
         </div>
       </div>
 
       <JobSearchBox q={Name} l={regionName} />
-      <SearchResults q={{ q: Name, l: regionName }} />
+
+      <section className="jobs_grid job_post_search_container">
+        <div className="filters_panel">
+          <div className="filters_content">
+            <JobFilter />
+          </div>
+        </div>
+        <div className="listings_panel">
+          <div className="listings_content">
+          <SearchResults q={{ q: Name, l: regionName }} />
+          </div>
+        </div>
+      </section>
     </main>
   );
   return <div className="overflow-y w-full">{content}</div>;

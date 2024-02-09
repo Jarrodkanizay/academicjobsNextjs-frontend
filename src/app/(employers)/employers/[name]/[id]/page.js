@@ -3,6 +3,7 @@ import { MdLocationPin } from 'react-icons/md';
 import { AiOutlineGlobal } from 'react-icons/ai';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';

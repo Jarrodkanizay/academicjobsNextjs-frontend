@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 import lecturer from '@/data/lecturer.json';
 import Link from 'next/link';
 export const metadata: Metadata = {

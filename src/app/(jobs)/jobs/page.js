@@ -3,8 +3,9 @@
 import SearchResults from '@/components/SearchResults';
 import { useSearchParams } from 'next/navigation';
 import JobSearchBox from '@/components/JobSearchBox';
-import JobSearchBox2 from '@/components/JobSearchBox2';
 import JobFilter from '@/components/JobFilter';
+import JobSearchBox2 from '@/components/JobSearchBox2';
+
 
 import Link from 'next/link';
 //import { useRouter } from 'next/router';
@@ -50,6 +51,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-    </main>
+    </main> 
   );
 }
