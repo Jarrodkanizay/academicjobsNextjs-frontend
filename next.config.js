@@ -25,6 +25,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/global',
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: '/academic-hub',
         destination: '/career-help',
         permanent: true,
