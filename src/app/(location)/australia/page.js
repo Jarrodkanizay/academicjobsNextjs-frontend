@@ -4,6 +4,7 @@ import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import SearchResults from '@/components/SearchResults';
+import AusUniLogos from '@/components/AusUniLogos';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -11,7 +12,8 @@ export const metadata = {
   },
   description:
     'Browse through hundreds of opportunities in higher education and research across various disciplines and institutions in Australia today. ',
-  keywords: 'Academic Jobs Australia. university jobs Australia, Uni jobs Australia',
+  keywords:
+    'Academic Jobs Australia. university jobs Australia, Uni jobs Australia',
 };
 export default function Page() {
   // useEffect(() => {
@@ -32,10 +34,12 @@ export default function Page() {
         </h2> */}
       </div>
       <div className="max-w-screen-md mx-auto">
-      <JobSearchBox l="Australia" />
+        <JobSearchBox l="Australia" />
       </div>
 
-      <h3 className="text-center ">We Are Australia's University Job Website</h3>
+      <h3 className="text-center ">
+        We Are Australia's University Job Website
+      </h3>
 
       <div className=" mt-[4rem] ">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
@@ -95,44 +99,50 @@ export default function Page() {
           </li>
         </ul>
       </div>
-      <a href="/the-academic-rankings"><Image
-              width={200}
-              height={200}
-              src="https://academicjobs.s3.amazonaws.com/img/_misc/The+Academic+Rankings+Logo4+(002).JPG"
-              className=" mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto text-center"
-              alt="AcademicJobs Job Elephant Client Center"
-                         /> </a>
-<div className="text-center items-center justify-center px-auto mx-auto text-sm text-gray-500 animate-pulse pb-12">View Your Ranking Here</div> 
-
+      <a href="/the-academic-rankings">
+        <Image
+          width={200}
+          height={200}
+          src="https://academicjobs.s3.amazonaws.com/img/_misc/The+Academic+Rankings+Logo4+(002).JPG"
+          className=" mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto text-center"
+          alt="AcademicJobs Job Elephant Client Center"
+        />{' '}
+      </a>
+      <div className="text-center items-center justify-center px-auto mx-auto text-sm text-gray-500 animate-pulse pb-12">
+        View Your Ranking Here
+      </div>
+      <AusUniLogos />
       {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">
         <a href="#section" class="scroll-smooth md:scroll-auto">
           ▼
         </a>
       </div> */}
 
-
-
       <div className="content-grid mx-auto">
-        <div
-          id="section"
-          className="bg-slate-200 full-width py-4 full-width "
-        >
+        <div id="section" className="bg-slate-200 full-width py-4 full-width ">
           <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
             <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
               <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">
                 ACADEMIC&nbsp;JOBS Australia:
               </span>{' '}
-          </h1>
+            </h1>
 
             <div>
               <p className="px-7 mb-4 mt-1">
-              Australia’s No.1 university job website! Seek uni jobs in Australia at Academic Jobs, where we list all the best jobs for academics globally! Academic Jobs provides an extensive list of opportunities for the future of your career in education, carefully sectioning the top Higher Ed jobs to curate the best fitting position for you.
-
+                Australia’s No.1 university job website! Seek uni jobs in
+                Australia at Academic Jobs, where we list all the best jobs for
+                academics globally! Academic Jobs provides an extensive list of
+                opportunities for the future of your career in education,
+                carefully sectioning the top Higher Ed jobs to curate the best
+                fitting position for you.
               </p>
               <p className="px-7">
-              The No.1 job board for academics in Australia for all your uni jobs requirements, from seeking to recruiting, look no further. In just a few simple steps you can be in the running for your dream uni job!</p>
-              <p className="px-7">
-            Find all the best jobs here…</p>
+                The No.1 job board for academics in Australia for all your uni
+                jobs requirements, from seeking to recruiting, look no further.
+                In just a few simple steps you can be in the running for your
+                dream uni job!
+              </p>
+              <p className="px-7">Find all the best jobs here…</p>
             </div>
           </div>
 
@@ -171,208 +181,224 @@ export default function Page() {
           </ul>
           <div className="  flex flex-wrap gap-6 px-7 pb-4 text-gray-400 mx-auto">
             <Link href="/Australia/faq"> Aus FAQ</Link>
-         
           </div>
         </div>
 
-
         <div className="max-w-screen-xl mx-auto mt-4">
-<h2 className="underline-full">
-          Top Australian Universities To Work For
-        </h2>
-        <div className="cate-group section23 ">
-          <div className="widget__text-block">
-            <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-6 py-2 px-7 pb-8">
-              <div className="column">
-                <ul className="  rounded-3xl p-4 shadow-md">
-                  <li className="mb-1 mt-4 flex">
-                  <img
-                      width={100}
-                      height={100}
-                      src="https://www.qut.edu.au/__data/assets/image/0007/909781/qut-logo-og-1200.jpg"
-                      alt="How to Land Your Dream College Job: A Step-by-Step Guide"
-                      className="rounded-3xl"
-                    />
-                    <Link
-                      href="/employers/queensland-university-of-technology-qut-/3786"
-                      className="text-[#003463] font-bold pl-2"
-                    >
-                      Queensland University of Technology (QUT)
-                    </Link>
-                  </li>
-                  <ul className="innerUL pl-4 pt-2 text-gray-400">
-                    <li>
-                      <Link href="/jobs?l=&q=QUT-lecturer">QUT Lecturing Jobs</Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=QUT-research">QUT Research Jobs</Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=QUT-professor">
-                        QUT Professorial Jobs
+          <h2 className="underline-full">
+            Top Australian Universities To Work For
+          </h2>
+          <div className="cate-group section23 ">
+            <div className="widget__text-block">
+              <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-6 py-2 px-7 pb-8">
+                <div className="column">
+                  <ul className="  rounded-3xl p-4 shadow-md">
+                    <li className="mb-1 mt-4 flex">
+                      <img
+                        width={100}
+                        height={100}
+                        src="https://www.qut.edu.au/__data/assets/image/0007/909781/qut-logo-og-1200.jpg"
+                        alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                        className="rounded-3xl"
+                      />
+                      <Link
+                        href="/employers/queensland-university-of-technology-qut-/3786"
+                        className="text-[#003463] font-bold pl-2"
+                      >
+                        Queensland University of Technology (QUT)
                       </Link>
                     </li>
-                    <li>
-                      <Link href="/jobs?l=&q=QUT-Executive">QUT Executive</Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=QUT-Administration">
-                        QUT Administration
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=QUT-Human-Resources">
-                        QUT Human Resources
-                      </Link>
-                    </li>
+                    <ul className="innerUL pl-4 pt-2 text-gray-400">
+                      <li>
+                        <Link href="/jobs?l=&q=QUT-lecturer">
+                          QUT Lecturing Jobs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=QUT-research">
+                          QUT Research Jobs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=QUT-professor">
+                          QUT Professorial Jobs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=QUT-Executive">
+                          QUT Executive
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=QUT-Administration">
+                          QUT Administration
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=QUT-Human-Resources">
+                          QUT Human Resources
+                        </Link>
+                      </li>
+                    </ul>
                   </ul>
-                </ul>
-              </div>
-              <div className="column">
-                <ul className=" rounded-3xl p-4 shadow-md">
-                  
-                  <li className="mb-1 mt-4 flex">
-                  <img
-                      width={100}
-                      height={100}
-                      src="https://www.academicjobs.com/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FBondTwitterIcon_400x400.jpg&w=384&q=75"
-                      alt="How to Land Your Dream College Job: A Step-by-Step Guide"
-                      className="rounded-3xl"
-                    />
-                    <Link
-                      href="/employers/bond-university/3785"
-                      className="text-[#f1b821] font-bold pl-2 pt-6"
-                    >
-                      Bond University
-                    </Link>
-                  </li>
-                  <ul className="innerUL pl-4 pt-2 text-gray-400">
-                    <li>
-                      <Link href="/jobs?l=&q=bond-lecturer">
-                        Bond Lecturing Jobs
+                </div>
+                <div className="column">
+                  <ul className=" rounded-3xl p-4 shadow-md">
+                    <li className="mb-1 mt-4 flex">
+                      <img
+                        width={100}
+                        height={100}
+                        src="https://www.academicjobs.com/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FBondTwitterIcon_400x400.jpg&w=384&q=75"
+                        alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                        className="rounded-3xl"
+                      />
+                      <Link
+                        href="/employers/bond-university/3785"
+                        className="text-[#f1b821] font-bold pl-2 pt-6"
+                      >
+                        Bond University
                       </Link>
                     </li>
-                    <li>
-                      <Link href="/jobs?l=&q=bond-research">
-                        Bond Research Jobs
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=bond-professor">
-                        Bond Professorial Jobs
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=bond-Executive">Bond Executive</Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=bond-Administration">
-                        Bond Administration
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=bond-Human-Resources">
-                        Bond Human Resources
-                      </Link>
-                    </li>
+                    <ul className="innerUL pl-4 pt-2 text-gray-400">
+                      <li>
+                        <Link href="/jobs?l=&q=bond-lecturer">
+                          Bond Lecturing Jobs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=bond-research">
+                          Bond Research Jobs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=bond-professor">
+                          Bond Professorial Jobs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=bond-Executive">
+                          Bond Executive
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=bond-Administration">
+                          Bond Administration
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=bond-Human-Resources">
+                          Bond Human Resources
+                        </Link>
+                      </li>
+                    </ul>
                   </ul>
-                </ul>
-              </div>
-              <div className="column">
-                <ul className=" rounded-3xl p-4 shadow-md">
-                  <li className="mb-1 mt-4 flex">
-                  <img
-                      width={100}
-                      height={100}
-                      src="https://images.all-free-download.com/images/graphiclarge/the_university_of_adelaide_1_111801.jpg"
-                      alt="How to Land Your Dream College Job: A Step-by-Step Guide"
-                      className="rounded-3xl"
-                    />
-                    <Link
-                      href="/employers/the-university-of-adelaide/3737"
-                      className="text-[#A51C30] font-bold pl-2"
-                    >
-                      University of Adelaide
-                    </Link>
-                  </li>
-                  <ul className="innerUL pl-4 pt-2 text-gray-400">
-                    <li>
-                      <Link href="/jobs?l=&q=Adelaide">
-                        Adelaide Lecturing Jobs
+                </div>
+                <div className="column">
+                  <ul className=" rounded-3xl p-4 shadow-md">
+                    <li className="mb-1 mt-4 flex">
+                      <img
+                        width={100}
+                        height={100}
+                        src="https://images.all-free-download.com/images/graphiclarge/the_university_of_adelaide_1_111801.jpg"
+                        alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                        className="rounded-3xl"
+                      />
+                      <Link
+                        href="/employers/the-university-of-adelaide/3737"
+                        className="text-[#A51C30] font-bold pl-2"
+                      >
+                        University of Adelaide
                       </Link>
                     </li>
-                    <li>
-                      <Link href="/jobs?l=&q=Adelaide">Adelaide Research Jobs</Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=Adelaide">
-                        Adelaide Professorial Jobs
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=Adelaide">Adelaide Executive</Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=Adelaide">
-                        Adelaide Administration
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=Adelaide">
-                        Adelaide Human Resources
-                      </Link>
-                    </li>
+                    <ul className="innerUL pl-4 pt-2 text-gray-400">
+                      <li>
+                        <Link href="/jobs?l=&q=Adelaide">
+                          Adelaide Lecturing Jobs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=Adelaide">
+                          Adelaide Research Jobs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=Adelaide">
+                          Adelaide Professorial Jobs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=Adelaide">
+                          Adelaide Executive
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=Adelaide">
+                          Adelaide Administration
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=Adelaide">
+                          Adelaide Human Resources
+                        </Link>
+                      </li>
+                    </ul>
                   </ul>
-                </ul>
-              </div>
-              <div className="column">
-                <ul className=" rounded-3xl p-4 shadow-md">
-                  <li className="mb-1 mt-4 flex">
-                  <img
-                      width={100}
-                      height={100}
-                      src="https://dentalstudents.com.au/wp-content/uploads/2021/04/0001_UWA-logo.jpg"
-                      alt="How to Land Your Dream College Job: A Step-by-Step Guide"
-                      className="rounded-3xl"
-                    />
-                    <Link
-                      href="/employers/university-of-western-australia/3173"
-                      className="text-[#192847] font-bold pl-2"
-                    >
-                      University of Western Australia
-                    </Link>
-                  </li>
-                  <ul className="innerUL pl-4 pt-2 text-gray-400">
-                    <li>
-                      <Link href="/jobs?l=&q=western">UWA Lecturing Jobs</Link>
+                </div>
+                <div className="column">
+                  <ul className=" rounded-3xl p-4 shadow-md">
+                    <li className="mb-1 mt-4 flex">
+                      <img
+                        width={100}
+                        height={100}
+                        src="https://dentalstudents.com.au/wp-content/uploads/2021/04/0001_UWA-logo.jpg"
+                        alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                        className="rounded-3xl"
+                      />
+                      <Link
+                        href="/employers/university-of-western-australia/3173"
+                        className="text-[#192847] font-bold pl-2"
+                      >
+                        University of Western Australia
+                      </Link>
                     </li>
-                    <li>
-                      <Link href="/jobs?l=&q=western">UWA Research Jobs</Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=western">UWA Professorial Jobs</Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=western">UWA Executive</Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=western">UWA Administration</Link>
-                    </li>
-                    <li>
-                      <Link href="/jobs?l=&q=western">UWA Human Resources</Link>
-                    </li>
+                    <ul className="innerUL pl-4 pt-2 text-gray-400">
+                      <li>
+                        <Link href="/jobs?l=&q=western">
+                          UWA Lecturing Jobs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=western">UWA Research Jobs</Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=western">
+                          UWA Professorial Jobs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=western">UWA Executive</Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=western">
+                          UWA Administration
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/jobs?l=&q=western">
+                          UWA Human Resources
+                        </Link>
+                      </li>
+                    </ul>
                   </ul>
-                </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
-       
-          {/* <h2 className="underline-full"> Top University Employer Rankings</h2> */}
-          <div className="bg-white flex flex-col mx-auto mb-4">
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  px-1 mb-8 text-left px-4">
-             
+
+        {/* <h2 className="underline-full"> Top University Employer Rankings</h2> */}
+        <div className="bg-white flex flex-col mx-auto mb-4">
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  px-1 mb-8 text-left px-4">
             <div className="card bg-slate-300 shadow-xl">
                   <div className="card-body">
                     <h2 className="card-title">
@@ -398,9 +424,9 @@ export default function Page() {
                     <li> King’s College London</li>
                     </ul> */}
 
-<ul className=" p-4 pl-12  text-gray-500 text-center font-bold" >
-                    <li >Karen Lamont - Curtin University</li>
-                                       </ul> 
+              <ul className=" p-4 pl-12  text-gray-500 text-center font-bold">
+                <li>Karen Lamont - Curtin University</li>
+              </ul>
 
                   {/* <Link
                       href={'/academic-talent-pool'}

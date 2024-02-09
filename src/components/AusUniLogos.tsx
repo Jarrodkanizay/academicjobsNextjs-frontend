@@ -8,52 +8,52 @@ const AusUniLogos = () => {
     {
       uni: '/university-logos/aus/bond-university.jpg',
       alt: 'Bond University Logo',
-      url: 'https://bond.edu.au/',
+      url: '/employers/bond-university/3785',
     },
     {
       uni: '/university-logos/aus/queensland-university-of-technology.jpg',
       alt: 'Queensland University of Technology (QUT) Logo',
-      url: 'https://www.qut.edu.au/',
+      url: '/employers/queensland-university-of-technology-qut-/3786',
     },
     {
       uni: '/university-logos/aus/university-of-melbourne.jpg',
       alt: 'University of Melbourne Logo',
-      url: 'https://www.unimelb.edu.au/',
+      url: '/employers/university-of-melbourne/3170',
     },
     {
       uni: '/university-logos/aus/monash-university.jpg',
       alt: 'Monash University Logo',
-      url: 'https://www.monash.edu/',
+      url: '/employers/monash-university/3182',
     },
     {
       uni: '/university-logos/aus/university-of-nsw-australia.jpg',
       alt: 'University of NSW Logo',
-      url: 'https://www.unsw.edu.au/',
+      url: '/employers/university-of-new-south-wales/3738',
     },
     {
       uni: '/university-logos/aus/university-of-queensland-australia.jpg',
       alt: 'University of Queensland Logo',
-      url: 'https://www.uq.edu.au/',
+      url: '/employers/university-of-queensland/3172',
     },
     {
       uni: '/university-logos/aus/university-of-sydney.jpg',
       alt: 'University of Sydney Logo',
-      url: 'https://www.sydney.edu.au/',
+      url: '/employers/the-university-of-sydney/3171',
     },
     {
       uni: '/university-logos/aus/university-of-western-australia.jpg',
       alt: 'University of Western Australia Logo',
-      url: 'https://www.uwa.edu.au/',
+      url: '/employers/university-of-western-australia/3173',
     },
     {
       uni: '/university-logos/aus/swinburne-university-of-technology.jpg',
       alt: 'Swinburne University of Technology Logo',
-      url: 'https://www.swinburne.edu.au/',
+      url: '/employers/swimburne-university-of-technology/10541',
     },
     {
       uni: '/university-logos/aus/rmit-university.jpg',
       alt: 'RMIT University Logo',
-      url: 'https://www.rmit.edu.au/',
+      url: '/employers/rmit-university/3869',
     },
   ];
   return (
@@ -67,7 +67,7 @@ const AusUniLogos = () => {
           <a
             key={index}
             href={logo.url}
-            target="_blank"
+            // target="_blank"
             rel="noopener noreferrer"
             style={{ gridColumn: index < 2 ? 'span 2' : 'span 1' }}
           >
