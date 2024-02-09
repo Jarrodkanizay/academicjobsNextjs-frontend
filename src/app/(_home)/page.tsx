@@ -167,12 +167,12 @@ export default function myPage() {
                   </a>
                 </ul>
 
-                <Link
+                {/* <Link
                   href={'/academic-hub/'}
                   className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
                 >
                   View List
-                </Link>
+                </Link> */}
               </div>
             </div>
             {/* /top-10-australian-universities */}
@@ -218,12 +218,12 @@ export default function myPage() {
                     Monash University
                   </a>
                 </ul>
-                <Link
+                {/* <Link
                   href={'/top-10-australian-universities'}
                   className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
                 >
                   View List
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className="/academic-hub/how-to-land-your-dream-college-job-a-step-by-step-guide/">
@@ -263,12 +263,12 @@ export default function myPage() {
                   </a>
                   <a href=""> King’s College London</a>
                 </ul>
-                <Link
+                {/* <Link
                   href={'/academic-hub/'}
                   className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
                 >
                   View List
-                </Link>
+                </Link> */}
               </div>
             </div>
           </ul>

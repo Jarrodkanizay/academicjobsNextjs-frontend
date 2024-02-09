@@ -37,11 +37,11 @@ export default function Page() {
         <JobSearchBox l="Australia" />
       </div>
 
-      <h3 className="text-center ">
+      {/* <h3 className="text-center ">
         We Are Australia's University Job Website
-      </h3>
+      </h3> */}
 
-      <div className=" mt-[4rem] ">
+      <div className=" mt-[2rem] ">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li className="">
@@ -99,7 +99,7 @@ export default function Page() {
           </li>
         </ul>
       </div>
-      <a href="/the-academic-rankings">
+      {/* <a href="/the-academic-rankings">
         <Image
           width={200}
           height={200}
@@ -107,10 +107,10 @@ export default function Page() {
           className=" mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto text-center"
           alt="AcademicJobs Job Elephant Client Center"
         />{' '}
-      </a>
-      <div className="text-center items-center justify-center px-auto mx-auto text-sm text-gray-500 animate-pulse pb-12">
+      </a> */}
+      {/* <div className="text-center items-center justify-center px-auto mx-auto text-sm text-gray-500 animate-pulse pb-12">
         View Your Ranking Here
-      </div>
+      </div> */}
       <AusUniLogos />
       {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">
         <a href="#section" class="scroll-smooth md:scroll-auto">
@@ -446,7 +446,7 @@ export default function Page() {
                     {' '}
                     Top University Employers Australia{' '}
                   </h2>
-                  <a className=" text-gray-400"> 10 Aug, 2023</a>
+                  <a className=" text-gray-400"> 10 Dec, 2023</a>
                 </div>
                 <figure>
                   <Image
