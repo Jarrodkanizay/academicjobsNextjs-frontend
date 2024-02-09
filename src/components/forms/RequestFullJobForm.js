@@ -15,10 +15,10 @@ const SubscribeForm = ({
   thankYouMessage = 'Thanks for subscribing to our newsletter!',
   formType = 'subscribe',
   placeholder = 'Enter email to Join mailing list',
-  jobTitle,
-  employer,
-  jobId,
-  jobURL,
+  jobTitle = '',
+  employer = '',
+  jobId = '',
+  jobURL = '',
 }) => {
   const {
     register,
@@ -119,21 +119,23 @@ const SubscribeForm = ({
         {/* {errors[field] && (
           <span className="error">{errors[field].message}</span>
         )} */}
-        <InputBlock2
-          ID="to-email-input"
-          name="00_Email"
-          register={register}
-          errors={errors}
-          tabIndex={1}
-          type="email"
-          field="00_Email"
-          forceClass=""
-          placeholder={placeholder}
-          autoComplete="email"
-          required={true}
-          inputClass={`input-bordered ${rounded} mb-4`}
-          colSpan={2}
-        />
+        {formType === 'share' && (
+          <InputBlock2
+            ID="to-email-input"
+            name="00_To_Email"
+            register={register}
+            errors={errors}
+            tabIndex={1}
+            type="email"
+            field="00_To_Email"
+            forceClass=""
+            placeholder={`To: (Enter "to email" to share job)`}
+            autoComplete="email"
+            required={true}
+            inputClass={`input-bordered ${rounded} mb-4`}
+            colSpan={2}
+          />
+        )}
         <InputBlock2
           ID="email-input"
           name="01_Email"
