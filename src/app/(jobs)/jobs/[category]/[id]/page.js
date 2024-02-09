@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { BsFillShareFill } from 'react-icons/bs';
 import Button from './Button';
 import { CloudCog } from 'lucide-react';
-import SubscribeForm from '@/components/forms/SubscribeForm';
+import RequestFullJobForm from '@/components/forms/RequestFullJobForm';
 import { useSearchParams } from 'next/navigation';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import FavoriteButton from '@/components/FavoriteButton';
@@ -324,7 +324,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                         className="mr-20"
                       />
                       <div className="grow">
-                        <SubscribeForm
+                        <RequestFullJobForm
                           formName="Request Full Job Post"
                           buttonText="Please Email Full Job Post"
                           thankYouMessage="Done! You will receive the full job post shortly."

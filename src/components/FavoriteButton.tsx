@@ -12,13 +12,11 @@ export default function FavoriteButton() {
   };
 
   return (
-    <a href="#" onClick={handleClick}>
-      <img
-        src="/icons/heart.svg"
-        width="44"
-        height="44"
-        alt="Add this Job Post to Favorites"
-      />
-    </a>
+    <img
+      src="/icons/heart.svg"
+      width="44"
+      height="44"
+      alt="Add this Job Post to Favorites"
+    />
   );
 }
