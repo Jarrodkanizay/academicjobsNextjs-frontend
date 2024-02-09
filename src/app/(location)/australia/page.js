@@ -379,7 +379,7 @@ export default function Page() {
                       {' '}
                       Top HR Professional of the Month{' '}
                     </h2>
-                    <a className=" text-gray-400"> 23 Jan, 2024</a>
+                    <a className=" text-gray-400"> 23 Feb, 2024</a>
                   </div>
                   <figure  >
                     <Image
@@ -402,55 +402,74 @@ export default function Page() {
                     <li >Karen Lamont - Curtin University</li>
                                        </ul> 
 
-                  <Link
+                  {/* <Link
                       href={'/academic-talent-pool'}
                       className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2 "
                     >
                    Nominate HR Award
-                    </Link>
+                    </Link> */}
                          </div>
 
 
              
-                <div className="card bg-slate-100 shadow-xl">
-                  <div className="card-body">
-                    <h2 className="card-title">
-                      {' '}
-                      Top University Employers Australia{' '}
-                    </h2>
-                    <a className=" text-gray-400"> 10 Dec, 2023</a>
-                  </div>
-                  <figure>
-                    <Image
-                      width={1280}
-                      height={380}
-                      src="/academic-job-postings/university-of-sydney.jpg"
-                      alt="Top Academic Jobs Australia"
-                      className="h-[5rem]"
-                    />
-                  </figure>
-                  <ul className=" p-4 pl-12 list-disc text-gray-500" >
-                    <li >Queensland University of Technology (QUT)</li>
-                    <li>	Bond University</li>
-                    <li> The University of Sydney</li>
-                    <li> Australian National University (ANU)</li>
-                    <li> University of Western Australia</li>
-                    </ul>
-                  <Link
-                      href={'/top-10-australian-universities'}
-                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
-                    >
-                      View List
-                    </Link>
+              {/* /top-10-australian-universities */}
+              <div className="">
+              <div className="card bg-slate-100 shadow-xl">
+                <div className="card-body">
+                  <h2 className="card-title">
+                    {' '}
+                    Top University Employers Australia{' '}
+                  </h2>
+                  <a className=" text-gray-400"> 10 Aug, 2023</a>
                 </div>
-         
+                <figure>
+                  <Image
+                    width={1280}
+                    height={380}
+                    src="/academic-job-postings/university-of-sydney.jpg"
+                    alt="Top Academic Jobs Australia"
+                    className="h-[5rem]"
+                  />
+                </figure>
+                <ul className=" p-4 pl-12 list-disc text-gray-500">
+                  <a href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786">
+                    Queensland University of Technology (QUT)
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/bond-university/3785/">
+                    {' '}
+                    Bond University
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/the-university-of-sydney/3171">
+                    {' '}
+                    The University of Sydney
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/australian-national-university/3739">
+                    {' '}
+                    Australian National University (ANU)
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/monash-university/3182/">
+                    {' '}
+                    Monash University
+                  </a>
+                </ul>
+                <Link
+                  href={'/top-10-australian-universities'}
+                  className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
+                >
+                  View List
+                </Link>
+              </div>
+            </div>
            
                
                          <div>
 <a div className="card-title mx-8 mt-8 text-[#3b5683]"> Top 20 HR jobs today</a>
                          <div className=" h-96 ml-8 overflow-y-scroll"> 
         
-          <SearchResults q={{ q: "human resources", l: "Australia" }} /> </div></div>
+          <SearchResults q={{ q: "hr", l: "Australia" }} /> </div></div>
 
                        </ul>
           </div>
