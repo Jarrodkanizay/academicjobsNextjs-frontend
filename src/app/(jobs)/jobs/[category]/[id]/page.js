@@ -60,7 +60,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
     headlineOnly,
     ranking,
   } = job.data;
-
+  console.log("ranking==============", ranking)
   const subject = encodeURIComponent('You might like this job posting!');
   const bccEmail = encodeURIComponent('post@academicjobs.com');
   const bodyEmail = encodeURIComponent(
@@ -257,7 +257,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                 viewBox="0 0 24 24"
               >
                 <path
-                  fill={i < employerRanking ? 'gold' : 'lightgray'}
+                  fill={i < ranking ? 'gold' : 'lightgray'}
                   d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
                 />
               </svg>
