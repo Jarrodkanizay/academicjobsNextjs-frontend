@@ -374,7 +374,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
         </div>
       </section>
       {new Date(expiration_date) < new Date() && expiration_date && (
-        <div className="bg-opacity-50 bg-red-500 text-white text-4xl px-8 py-8 rounded-full absolute top-[200px] left-[50%] transform -translate-x-1/2 -translate-y-1/2 rotate-45 skew-y-0">
+        <div className="bg-opacity-50 bg-red-500 text-white text-4xl px-8 py-8 rounded-full absolute top-[200px] left-[50%] transform -translate-x-1/2 translate-y-1/2 rotate-45 skew-y-0">
           Job Fulfilled By AcademicJobs.com
         </div>
       )}

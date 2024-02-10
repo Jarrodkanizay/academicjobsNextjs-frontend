@@ -2,6 +2,7 @@ import Link from 'next/link';
 import positionData from '@/data/position.json';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 // import type { Metadata } from 'next';
 
 type MetadataTypes = {
@@ -72,7 +73,7 @@ export default function Page({ params, searchParams }: any) {
         </div>
         <Link
                       href={'/academic-talent-pool'}
-                      className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
+                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
                     >
                      Join Our Talent Pool
                     </Link>

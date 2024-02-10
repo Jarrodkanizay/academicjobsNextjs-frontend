@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 import AmericaUniLogos from '@/components/AmericaUniLogos';
 //import { useParams } from 'next/navigation'
 
@@ -32,9 +33,9 @@ export default function Page() {
       </div>
       <JobSearchBox l="USA" />
 
-      <h3 className="text-center">We Are USA's University Job Website</h3>
+      {/* <h3 className="text-center">We Are USA's University Job Website</h3> */}
 
-      <div className=" mt-[3rem] ">
+      <div className=" mt-[2rem] ">
         <ul className=" flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <li>
             <Link href="/boston/"> Boston </Link>

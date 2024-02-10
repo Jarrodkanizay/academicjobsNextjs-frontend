@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
@@ -21,7 +22,7 @@ export default function myPage() {
       All of the best professional casual jobs in Australia. Through higher ed jobs part-time, individuals can actively contribute to the advancement of knowledge, the cultivation of learning environments, and the overall growth of the academic landscape while simultaneously expanding their professional horizons.</p>
       <Link
                       href={'/academic-talent-pool'}
-                      className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
+                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
                     >
                      Join Our Talent Pool
                     </Link>

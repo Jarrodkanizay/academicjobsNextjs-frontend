@@ -2,6 +2,7 @@ import Image from 'next/image';
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 import Link from 'next/link';
 
 const countryRegion = 'World';

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 import HeroBanner from '@/components/HeroBanner';
 
 export const metadata: Metadata = {
