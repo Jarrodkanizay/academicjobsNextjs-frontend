@@ -189,6 +189,7 @@ const ContactUsForm = ({ maxWidth }) => {
             name="contact_us_message"
             className="w-full textarea textarea-bordered focus:outline-none focus:border-orange-500 h-64"
             placeholder="Message, comments, testimonials, etc."
+            required
           />
         </div>
 
