@@ -2,6 +2,7 @@ import Link from 'next/link';
 import executiveData from '@/data/executive.json';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 // import type { Metadata } from 'next';
 
 type MetadataTypes = {
@@ -72,14 +73,26 @@ export default function Page({ params, searchParams }: any) {
         </div>
         <Link
                       href={'/academic-talent-pool'}
-                      className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
+                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
                     >
                      Join Our Talent Pool
                     </Link>
       </div>
 
       <JobSearchBox q={Name} />
-      <SearchResults q={{ q: Name }} />
+
+      <section className="jobs_grid job_post_search_container">
+        <div className="filters_panel">
+          <div className="filters_content">
+            <JobFilter />
+          </div>
+        </div>
+        <div className="listings_panel">
+          <div className="listings_content">
+          <SearchResults q={{ q: Name }} />
+          </div>
+        </div>
+      </section>
     </div>
   );
   return <div className="overflow-y w-full">{content}</div>;

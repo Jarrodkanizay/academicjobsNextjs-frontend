@@ -1,157 +1,291 @@
-import Image from 'next/image';
+
 import type { Metadata } from 'next';
 import Link from 'next/link';
+
+const countryRegion = 'World';
+
+function countryRegionPlural() {
+  return countryRegion.toLowerCase().endsWith('s')
+    ? `${countryRegion}'`
+    : `${countryRegion}'s`;
+}
+
 export const metadata: Metadata = {
-  title: 'Academic hub and Career Advice', //Option 1 replaces the %s in layout.tsx
+  title:
+    'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
-    'Are you looking for hub in academia? Read our blog posts to discover the secrets of well-being, work-life balance, and career satisfaction for academics.Browse through our comprehensive list of universities from around the world and find the best one for you. Whether you want to study in Australia, Canada, UK, USA, or anywhere else, we have the information you need to make an informed decision. ',
-  keywords: 'academic hub, AcademicJobs hub',
+    'With our advanced AI technologies that greatly improve the job posting process, Academic Jobs is the top AI recruitment platform, enabling higher education institutions, the research and development (R&D) industry, and many other industries discover people. ',
+  keywords:
+    'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
 };
 export default function myPage() {
   return (
     <>
-      {/* Hero banner */}
       <main>
-        <div className="hero max-h-fit bg-slate-200 py-8">
-          <div className="container mx-auto">
-            <div className="hero-content flex-col lg:flex-row-reverse">
-              <Image
-                width={1280}
-                height={380}
-                src="/job-ads/recruitment-post-a-job.jpg"
-                className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
-                alt="AI Powered Recruitment Platform"
+        {/* Hero banner */}
+        <div>
+        <figure>
+              <img
+                width={2000}
+                height={534}
+                src="https://academicjobs.s3.amazonaws.com/img/_misc/academic+jobs+uk+usa+NZ+Australia.JPG"
+                alt="Experience the Real-World in Academic Settings"
+                className="w-full "
               />
-              <div>
-                <h1 className="text-7xl font-bold text-aj text-right border-b-2 border-[#3b5683] pb-4 pr-6">
-                  The Top University Employer Rankings
-                </h1>
-                <p className="text-right pr-6">
-                 
-                  Whether you are a PhD student, a postdoc, or a professor, you
-                  will find valuable information and inspiration to advance your
-                  academic career. 
-                </p>
-                {/* <a href="/academic-talent-pool" className="btn btn-aj">
-                  Join our Talent Pool
-                </a> */}
-              </div>
+            </figure>
+          <div className="hero-overlay bg-gray-200 bg-opacity-70 mt-16"></div>
+          <div className=" ">
+            <div className=" mx-auto">
+              <h1 className="mt-[-20rem] text-2xl  md:text-8xl font-bold text-center text-white ">
+                The University Rankings <span  className="text-lg text-white "> <br/>
+              </span>
+              </h1>
+              <div className="text-center">
+        <Link
+                href="https://www.academicjobs.com/the-academic-rankings/find-my-rank"
+                className="bg-amber-500 text-white p-4 rounded-3xl font-bold "
+              >
+                FIND YOUR UNIVERSITY EMPLOYER RANK….
+
+              </Link>
+             </div>
             </div>
           </div>
         </div>
-        <div className="max-w-screen-xl mx-auto mt-8">
-          <h2 className="underline-full"> Top Rankings Today</h2>
-          <div className="bg-white flex flex-col">
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  px-1 mb-8 text-left px-4">
-              <div className="/academic-hub/happiness-and-academics/">
-                <div className="card bg-slate-100 shadow-xl">
-                  <div className="card-body">
-                    <h2 className="card-title">
-                      {' '}
-                     Top University Employers USA{' '}
-                    </h2>
-                    <a className=" text-gray-400"> 10 Aug, 2023</a>
-                  </div>
-                  <figure>
-                    <Image
-                      width={1280}
-                      height={380}
-                      src="/academic-job-postings/harvard-university.jpg"
-                      alt="Happiness and Academics: Scott Galloway's Algebra of hub"
-                    />
-                  </figure>
+       
 
-                  <ul className=" p-4 pl-12 list-disc text-gray-500" >
-                    <li >Harvard University</li>
-                    <li>	Massachusetts Institute of Technology (MIT)</li>
-                    <li> Stanford University</li>
-                    <li> University of California Berkeley (UCB)</li>
-                    <li> California Institute of Technology (Caltech)</li>
-                    </ul>
 
-                  <Link
-                      href={'/academic-hub/'}
-                      className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
-                    >
-                      View List
-                    </Link>
-                </div>
-              </div>
-              <div className="/academic-hub/top-academic-jobs-australia/">
-                <div className="card bg-slate-100 shadow-xl">
-                  <div className="card-body">
-                    <h2 className="card-title">
-                      {' '}
-                      Top University Employers Australia{' '}
-                    </h2>
-                    <a className=" text-gray-400"> 10 Aug, 2023</a>
-                  </div>
-                  <figure>
-                    <Image
-                      width={1280}
-                      height={380}
-                      src="/academic-job-postings/university-of-sydney.jpg"
-                      alt="Top Academic Jobs Australia"
-                      className="h-[5rem]"
-                    />
-                  </figure>
-                  <ul className=" p-4 pl-12 list-disc text-gray-500" >
-                    <li >Queensland University of Technology (QUT)</li>
-                    <li>	Bond University</li>
-                    <li> The University of Sydney</li>
-                    <li> Australian National University (ANU)</li>
-                    <li> Monash University</li>
-                    </ul>
-                  <Link
-                      href={'/academic-hub/'}
-                      className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
-                    >
-                      View List
-                    </Link>
-                </div>
-              </div>
-              <div className="/academic-hub/how-to-land-your-dream-college-job-a-step-by-step-guide/">
-                <div className="card bg-slate-100 shadow-xl">
-                  <div className="card-body">
-                    <h2 className="card-title">
-                      {' '}
-                      Top University Employers UK{' '}
-                    </h2>
-                    <a className=" text-gray-400"> 06 Jul, 2023</a>
-                  </div>
-                  <figure  >
-                    <Image
-                      width={1280}
-                      height={380}
-                      src="/academic-job-postings/top-universities-worldwide.jpg"
-                      alt="How to Land Your Dream College Job: A Step-by-Step Guide"
-                      className="h-[5rem]"
-                    />
-                  </figure>
-                  <ul className=" p-4 pl-12 list-disc text-gray-500" >
-                    <li >University of Oxford</li>
-                    <li>	Imperial College London</li>
-                    <li> University of Cambridge</li>
-                    <li> University of Edinburgh</li>
-                    <li> King’s College London</li>
-                    </ul>
-                  <Link
-                      href={'/academic-hub/'}
-                      className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
-                    >
-                      View List
-                    </Link>
-                </div>
-              </div>
-           
-            </ul>
-          </div>
+             <div className="bg-sky-200 mb-8  py-8 px-4">
+          <div className="container mx-auto">
 
-   
+        
+         
         </div>
+        </div>
+        {/* <h2 className="text-4xl font-bold mb-20 mt-20 text-sky-600 text-center ">
+        WHY DO YOU NEED A RANKING?
+            </h2> */}
+  
+  
+ {/* Main Content */}
+ <section className="container mx-auto px-4 mt-12">
+         
+         <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
+            <figure>
+              <img
+                width={2000}
+                height={2000}
+                src="https://academicjobs.s3.amazonaws.com/img/_misc/ANU+jobs+in+research+(1).jpg"
+                alt="Experience the Real-World in Academic Settings"
+                className="w-full lg:max-w-lg rounded-xl m-6"
+              />
+            </figure>
+            <div className="card-body w-full p-4">
+              <h2 className="card-title font-bold text-amber-500 text-3xl pb-2">
+              WORK FOR THE BEST UNIVERSITIES
+              </h2>
+              <p className="max-w-screen-sm">
+              By selecting a university with a high ranking, you can benefit from the expertise and experience of the faculty and staff. Having a number in the academic field allows you to access the best resources, facilities, and opportunities in your discipline. This knowledge can enhance your learning outcomes, academic performance, and research potential.
+              </p>
+              <div className="card-actions justify-center md:justify-end mt-4">
+                <Link className="bg-gray-500 text-white px-4 rounded-3xl font-bold" href="https://www.academicjobs.com/the-academic-rankings/my-academic-rank">
+                  Develop Your Network
+                </Link>
+              </div>
+            </div>
+          </div>
+         
+         
+          <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
+          
+            <figure className="lg:order-1">
+              <img
+                width={2000}
+                height={534}
+                src="https://academicjobs.s3.amazonaws.com/img/_misc/Harvard_gates.jpg"
+                alt="Choose from diverse campus roles"
+                className="w-full h-fit lg:max-w-lg rounded-xl m-6"
+              />
+           
+            </figure>
+             <div className="card-body w-full p-4">
+              <h2 className="card-title font-bold text-amber-500 text-3xl pb-2">
+              EVALUATE YOUR UNIVERSITY PROGRESS
+              </h2>
+              <p className="max-w-screen-sm">
+              Academics are known to engage in large depths of analysis behind their journals, reports, and projects. A reliable ranking of the universities can allow for further analysis on the quality and impact of their education and research. In turn, this analysis can reveal the strengths and weaknesses of different institutions and help you make informed decisions about your academic future.
+              </p>
+        
+              <div className="card-actions justify-center md:justify-end mt-4">
+                <Link className="bg-gray-500 text-white px-4 rounded-3xl font-bold" href="https://www.academicjobs.com/the-academic-rankings/my-academic-rank">
+                View Progress
+                </Link>
+              </div>
+            </div>
+          </div>
+          {/* Flexible Part-Time Opportunities for Academics Card */}
+          <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
+            <figure>
+              <img
+                width={2000}
+                height={534}
+                src="https://academicjobs.s3.amazonaws.com/img/_misc/Academic+positions+UK.jpeg"
+                alt="Work Part-Time with Flexible Opportunities for Academics"
+                className="w-full lg:max-w-lg rounded-xl m-6"
+              />
+            </figure>
+            <div className="card-body w-full p-4">
+              <h2 className="card-title font-bold text-amber-500 text-3xl pb-2">
+               STAND OUT IN THE GLOBAL MARKET
+              </h2>
+              <p className="max-w-screen-sm">
+              The academic field is one of the most competitive arenas to be involved in, both locally and globally. By choosing a university with a high ranking, you can position yourself as a top candidate in the field, or as an individual who can excel in any environment. This helps you further develop your career and/or legitimately establish yourself as a leader in academia through a globally recognised system.
+              </p>
+              <div className="card-actions justify-center md:justify-end mt-4">
+                <Link className="bg-gray-500 text-white px-4 rounded-3xl font-bold mt-4" href="https://www.academicjobs.com/the-academic-rankings/my-academic-rank">
+                Search Academic Rankings
+                </Link>
+              </div>
+            </div>
+          </div>
+       
+         
+       
+         {/* Build Your Network with On-Campus Employment Card */}
+         {/* <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
+            <figure className="lg:order-1">
+              <img
+                width={2000}
+                height={534}
+                src="https://academicjobs.s3.amazonaws.com/img/_misc/University_of_queensland_green_grass_jobs.JPG"
+                alt="Build Your Network with On-Campus Employment"
+                className="w-full lg:max-w-lg rounded-xl m-6"
+              />
+            </figure>
+            <div className="card-body w-full p-4">
+              <h2 className="pt-4 card-title font-bold text-amber-500 text-3xl pb-2">
+                EMBRACE YOUR INDIVIDUALITY
+              </h2>
+              <p className="max-w-screen-sm">
+              Set yourself apart from your university ranking. Academics often find themselves stuck in a partnership with their university. This may sometimes be great, but your true talent may go unrecognised under the universities rank which lends itself to the academic output and students results rather than your own work. Your own personal rank acts as an identifier of your success and establishment, putting you on the forefront as an academic, and not just a university professor.
+              </p>
+              <div className="card-actions justify-center md:justify-start mt-4">
+                <Link className="bg-gray-500 text-white px-4 rounded-3xl font-bold mt-4" href="https://www.academicjobs.com/the-academic-rankings/my-academic-rank">
+                  View Skills 
+                </Link>
+              </div>
+            </div>
+          </div> */}
+       </section>
+
+
+ 
+
+          <div
+          >
+          <div className="hero-overlay bg-opacity-70 bg-gray-400"></div>
+          <div className="hero-content text-center py-8 bg-gray-200">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="mb-5 text-2xl md:text-4xl font-bold text-3xl pb-2">
+              WHY DO YOU NEED A RANKING?
+              </h2>
+              <p className="mb-5 text-sm md:text-lg">
+              The academic field is one of the most competitive arenas to be involved in, both locally and globally. By establishing an individual rank for an academic, you can position yourself as a top professor in the field, or as an individual who can move up the ranks overtime. 
+              </p>
+              <p className="mb-5 text-sm md:text-lg">
+              This helps academics further develop their career and/or legitimately establish themselves as a leader in academia through a globally recognised system.
+              </p>
+              <Link className="bg-gray-500 text-white px-4 rounded-3xl font-bold mt-4" href="https://www.theacademicrankings.com/">
+                The Academic Rankings
+              </Link>
+            </div>
+          </div>
+        </div>
+       
+       
+       
+       
+
+
+
+
+
+        
+        {/* Breakout Section */}
+        <div className="bg-sky-200 mb-8  py-8 px-4">
+          <div className="container mx-auto">
+
+          <div className="flex mt-16 text-left gap-16 bg-sky-200 p-4 w-full mb-8">
+
+<div className="p-4 rounded-3xl bg-white">
+          <h2 className="text-4xl font-bold mb-8 mt-8 text-sky-600 ">
+        WE SEE YOU </h2>
+  
+        <h2 className="text-4xl font-bold mb-8 text-sky-600 ">
+        LET YOUR ACADEMIC RANKING TAKE YOU HIGHER </h2>
+        <p className="pb-2">
+         Are you looking for a change in scenery?
+        </p>
+        <p className="pb-2">
+        Do you want to collaborate with others with similar interests?
+        </p>
+        <p className="pb-2">
+        Do you wish to develop your own interest areas alongside teaching others?
+        </p>
+        
+        </div>
+        <div className="p-4 rounded-3xl bg-white pt-16">
+            <h2 className="text-3xl  font-bold mb-8 text-sky-700">
+            THE IMPORTANCE OF THE ACADEMIC RANKING: HOW A NUMBER CAN CHANGE YOUR CAREER 
+{' '}
+            </h2>
+            <div className="text-col-2">
+              <p className="mb-4">
+              A rank can help you establish yourself as a leader in the academic workforce
+              </p>
+              <p className="mb-4">
+              Having a numeral position in your career can help you find other academics to collaborate with
+              </p>
+            </div>
+          </div>
+        </div>
+
+            {/* <h2 className="text-3xl text-left font-bold mb-8 text-sky-700">
+              {countryRegionPlural()} #1 Job Board for Academic Rankings{' '}
+            </h2>
+            <div className="text-col-2">
+              <p className="mb-4">
+                Academic Jobs stands out as the {countryRegionPlural()} premier
+                platform for Academic Rankings, celebrated for linking
+                students with valuable on-campus employment opportunities. Our
+                platform is meticulously crafted to meet the specific needs of
+                Academic employment within academic settings.
+              </p>
+              <p className="mb-4">
+                Facilitating ideal matches between students and various campus
+                roles. Whether its part-time positions or work-study
+                opportunities, we connect you with roles that enhance your
+                academic experience and provide practical work skills. Opt for
+                Academic Jobs for unrivaled access to the{' '}
+                {countryRegionPlural()} most sought-after Academicpositions in
+                academia.
+              </p>
+            </div> */}
+          </div>
+        </div>
+        
+      
+          <section>
+          <h3 className="container mx-auto text-center py-8 px-4">
+            Want opportunities delivered to you?{' '}
+            <Link href="https://www.academicjobs.com/academic-talent-pool" className="bg-gray-500 text-white px-4 rounded-3xl font-bold mt-4">
+              Join our Talent Pool
+            </Link>
+          </h3>
+        </section>
       </main>
     </>
   );

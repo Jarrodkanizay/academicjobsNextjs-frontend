@@ -79,7 +79,7 @@ export default function Header() {
         {pathname === '/' ? (
           isNavOpen && (
             <Link
-              href="/"
+              href={`/${countryMappings2[region.toLowerCase()].url}`}
               className={`static-logo mobile`}
               onClick={() => setIsNavOpen(false)}
             >
@@ -87,7 +87,7 @@ export default function Header() {
             </Link>
           )
         ) : (
-          <Link href="/" className={`static-logo mobile`}>
+          <Link href={`/${countryMappings2[region.toLowerCase()].url}`} className={`static-logo mobile`}>
             <LogoAJ width={270} height={60} />{' '}
           </Link>
         )}
@@ -107,7 +107,7 @@ export default function Header() {
       <header className={`header ${isNavOpen ? 'show-menu shadow-xl' : ''} `}>
         <nav>
           {pathname === '/' ? null : (
-            <Link href="/" className="hide-mobile static-logo mr-4">
+            <Link href={`/${countryMappings2[region.toLowerCase()].url}`} className="hide-mobile static-logo mr-4">
               <LogoAJ width={270} height={60} />{' '}
             </Link>
           )}

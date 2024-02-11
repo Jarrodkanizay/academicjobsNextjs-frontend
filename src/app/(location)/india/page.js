@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {

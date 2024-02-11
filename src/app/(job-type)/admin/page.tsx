@@ -37,7 +37,7 @@ export default function myPage() {
             </p>
             <Link
                       href={'/academic-talent-pool'}
-                      className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
+                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
                     >
                      Join Our Talent Pool
                     </Link> 

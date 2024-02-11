@@ -3,6 +3,7 @@ import { MdLocationPin } from 'react-icons/md';
 import { AiOutlineGlobal } from 'react-icons/ai';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
@@ -164,7 +165,7 @@ const Employer = async ({ params }) => {
               </div>
             </div>
           }
-          <div className="md:w-1/2 max-h-screen overflow-y-scroll">
+          <div className="md:w-1/2 ">
             <JobSearchBox />
             <SearchResults q={{ employer_id: id || 0 }} filterOff={true} />
           </div>
