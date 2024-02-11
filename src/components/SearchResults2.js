@@ -7,16 +7,16 @@ import { BsHandbag } from 'react-icons/bs';
 import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
 import SearchLightbulbIcon from '@/components/icons/SearchLightbulbIcon';
-
-
 export default function SearchResults2({
   q,
+  l,
   filterOff = false,
   searchMessage = 'Jobs Found',
+  filter1
 }) {
   console.log('==============SearchResults==================');
   const [page, setPage] = useState(0);
-  console.log('filter1',q, page);
+  console.log('filter1', q, page);
   //useGetQtyQuery({ q: q, l: l || '', filter1 });
   const {
     isPending,
@@ -29,7 +29,7 @@ export default function SearchResults2({
   } = useQuery({
     queryKey: ['jobs', q, page],
     queryFn: async () => {
-      const response = await BaseApi.post('/jobs', { ...q, page });
+      const response = await BaseApi.post('/jobs', { q,l,filter1, page });
       console.log(response.data);
       console.log('response.data.data', response.data.data);
       return response.data.data;
@@ -164,13 +164,11 @@ export default function SearchResults2({
             <SearchLightbulbIcon dimensions={22} />
             {dataQty && <span>{`${dataQty} Jobs Found`}</span>}
           </div> */}
-
           <div className="max-w-screen-md mx-auto">
             <div className="flex justify-center items-center gap-2 my-4 text-sm font-bold text-gray-500 border-2 p-2 rounded-xl mb-8 ">
               <SearchLightbulbIcon dimensions={22} />
               {dataQty && <span>{`${dataQty} ${searchMessage}`}</span>}
             </div>
-
             <JobList
               data={data}
               handlePageChange={handlePageChange}

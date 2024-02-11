@@ -1,44 +1,15 @@
 'use client';
 import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
-//import JobsForm from '@/components/JobsForm';
-import SearchResults1 from '@/components/SearchResults1';
 import { useSearchParams } from 'next/navigation';
-import JobSearchBox from '@/components/JobSearchBox';
-import JobFilter from '@/components/JobFilter';
-import JobSearchBox2 from '@/components/JobSearchBox2';
 import { filterType } from "@/utils/data";
-import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
-//import { useRouter } from 'next/router';
-//import { useRouter } from 'next/navigation';
-// export const metadata = {
-//   title: 'find-jobs',
-//   description:
-//     'Discover academic jobs at all universities today! Explore your next academic positions through visiting our higher ed jobs, with new academic jobs added daily.',
-//   keywords: [
-//     'Academic Jobs',
-//     'Higher Ed Jobs',
-//     'Academic positions',
-//     'University Jobs',
-//     'College Jobs',
-//   ],
-// };
-export default function Page() {
+
+export default function AdvancedSearchBar() {
   const searchParams = useSearchParams();
-  //const allSearchParams = Object.fromEntries(searchParams1);
-  //console.log("searchParams2qqqqq==================", Object.fromEntries(useSearchParams().entries()))
-  //const query = Object.fromEntries(useSearchParams().entries());
   const q = decodeURIComponent(searchParams.get('q') || '');
   const l = decodeURIComponent(searchParams.get('l') || '');
-  // const {
-  //   data: filters,
-  //   isLoading: filtersIsLoading,
-  //   isSuccess: filtersIsSuccess,
-  // } = useGetFiltersQuery(
-  //   { category, filter1, q, l, mode: "normal" },
-  //   { skip: !category }
-  //   );
+
   const [filterTypes, setfilterTypes] = useState(filterType);
   const [category, setCategory] = useState("");
   const [filter1, setfilter] = useState([]);
@@ -53,7 +24,7 @@ export default function Page() {
     isPlaceholderData: isPlaceholderDataQty,
   } = useQuery({
     queryKey: ['filter', { category, filter1, q, l }],
-    queryFn: async () => { //{ ...filter1, category,mode: "normal" }
+    queryFn: async () => { 
       const response = await BaseApi.post('/filters', { category, filter1, q, l, mode: "normal" },);
       console.log(response.data);
       console.log('response.data.data', response.data.data);
@@ -74,22 +45,11 @@ export default function Page() {
     "Salary Range in USD": "Salary Range in USD",
     "Onsite/Remote": "Onsite/Remote",
   };
-  //const region = useSelector((state) => state.posts.region);
-  //const [query, setQuery] = useState(Object.fromEntries(useSearchParams().entries()));
+
   const [isShowFilter, setIsShowFilter] = useState(false);
-  //const filter1 = useSelector((state) => state.posts.filter1);
-  //alert(location?.state?.filter1)
-  ///console.log('router.query', searchParams);
+
   return (
-    <main>
-      <div className="w-full bg-gray-100 py-4 mb-4 mt-8">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-screen-xl mx-auto ">
-            <JobSearchBox forceClass="hidden md:block" />
-            <JobSearchBox2 forceClass="block md:hidden" />
-          </div>
-        </div>
-      </div>
+    <section>
       <div className=" flex flex-col hidden md:block ">
         {
           // 顶层已选X  top
@@ -169,18 +129,6 @@ export default function Page() {
           </div>
         )}
       </div>
-      <section class="jobs_grid job_post_search_container">
-        <div class="filters_panel">
-          <div class="filters_content">
-            <JobFilter />
-          </div>
-        </div>
-        <div class="listings_panel">
-          <div class="listings_content">
-            <SearchResults1 q={{ q: q, l: l || "", filter1 }} />
-          </div>
-        </div>
-      </section>
-    </main>
+    </section>
   );
 }
