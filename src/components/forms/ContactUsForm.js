@@ -183,6 +183,7 @@ const ContactUsForm = ({ maxWidth }) => {
             field="17_Profile"
             className="w-full textarea textarea-bordered focus:outline-none focus:border-orange-500 h-64"
             placeholder="Message, comments, testimonials, etc."
+            {...register('17_Profile')}
           />
         </div>
 
