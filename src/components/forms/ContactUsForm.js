@@ -85,6 +85,7 @@ const ContactUsForm = ({ maxWidth }) => {
           type="text"
           ID="contact-us"
           field="00_Form_Name"
+          name="00_Form_Name"
           placeholder="Contact_Us"
           hidden={true}
         />
@@ -97,6 +98,7 @@ const ContactUsForm = ({ maxWidth }) => {
             type="text"
             ID="first-name-input"
             field="01_First_Name"
+            name="01_First_Name"
             forceClass=""
             placeholder="First Name"
             autoComplete="given-name"
@@ -111,6 +113,7 @@ const ContactUsForm = ({ maxWidth }) => {
             type="text"
             ID="last-name-input"
             field="02_Last_Name"
+            name="02_Last_Name"
             forceClass=""
             placeholder="Last Name"
             autoComplete="family-name"
@@ -126,6 +129,7 @@ const ContactUsForm = ({ maxWidth }) => {
             type="email"
             ID="email-input"
             field="05_Email"
+            name="05_Email"
             forceClass=""
             placeholder="Email"
             autoComplete="email"
@@ -141,6 +145,7 @@ const ContactUsForm = ({ maxWidth }) => {
             type="tel"
             ID="phone-input"
             field="04_phone"
+            name="04_phone"
             forceClass=""
             autoComplete="tel"
             placeholder="Phone Number"
@@ -151,7 +156,7 @@ const ContactUsForm = ({ maxWidth }) => {
           {/* About You */}
           <select
             tabIndex={5}
-            {...register('16_Country')}
+            {...register('about_user')}
             ID="about_you-select"
             field="05_About_You"
             className="select select-bordered w-full col-span-2 focus:outline-none focus:border-orange-500"
@@ -179,8 +184,9 @@ const ContactUsForm = ({ maxWidth }) => {
         <div className="col-span-2">
           <textarea
             tabIndex={6}
-            id="profile-input"
-            field="17_Profile"
+            id="contact_us_message-input"
+            field="contact_us_message"
+            name="contact_us_message"
             className="w-full textarea textarea-bordered focus:outline-none focus:border-orange-500 h-64"
             placeholder="Message, comments, testimonials, etc."
           />
