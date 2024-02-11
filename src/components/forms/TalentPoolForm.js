@@ -442,7 +442,7 @@ const TalentPoolForm = ({
           name="20_Talent_Pool_input"
           className="w-full textarea textarea-bordered focus:outline-none focus:border-orange-500"
           placeholder="OPTIONAL - Please write a brief profile noting your key skills, experience, and achievements."
-          {...register('17_Profile')}
+          {...register('20_Talent_Pool_input')}
         />
       </div>
       {/* End form inputs */}

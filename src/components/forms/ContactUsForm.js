@@ -185,12 +185,13 @@ const ContactUsForm = ({ maxWidth }) => {
         <div className="col-span-2">
           <textarea
             tabIndex={6}
-            id="contact_us_message-input"
+            id="contact_us_message"
             field="contact_us_message"
             name="contact_us_message"
             className="w-full textarea textarea-bordered focus:outline-none focus:border-orange-500 h-64"
             placeholder="Message, comments, testimonials, etc."
             required
+            {...register('contact_us_message')}
           />
         </div>
 
