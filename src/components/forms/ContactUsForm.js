@@ -157,8 +157,9 @@ const ContactUsForm = ({ maxWidth }) => {
           <select
             tabIndex={5}
             {...register('about_user')}
-            ID="about_you-select"
-            field="05_About_You"
+            ID="06_About_You"
+            field="06_About_You"
+            name="06_About_You"
             className="select select-bordered w-full col-span-2 focus:outline-none focus:border-orange-500"
             required={true}
           >

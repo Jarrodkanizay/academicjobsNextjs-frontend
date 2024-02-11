@@ -222,7 +222,7 @@ const TalentPoolForm = ({
             <input
               tabIndex={10}
               type="checkbox"
-              {...register(' 10_Seek_IP_Investors_Checkboxx')}
+              {...register(' 10_Seek_IP_Investors_Checkbox')}
               className="checkbox checkbox-warning"
             />
 
@@ -437,8 +437,9 @@ const TalentPoolForm = ({
       <div className="col-span-2 mt-6">
         <textarea
           tabIndex={17}
-          id="profile-input"
-          field="17_Profile"
+          id="20_Talent_Pool_input"
+          field="20_Talent_Pool_input"
+          name="20_Talent_Pool_input"
           className="w-full textarea textarea-bordered focus:outline-none focus:border-orange-500"
           placeholder="OPTIONAL - Please write a brief profile noting your key skills, experience, and achievements."
         />
