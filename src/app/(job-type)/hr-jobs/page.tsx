@@ -19,7 +19,7 @@ export default function myPage() {
     <main className="content-grid">
       <HeroBanner
         //   bgColorClass?: string; //Optional Tailwind CSS background color class
-        h1="Transform Your Hiring Strategy: Discover Exceptional Talent on Our Premier HR Job Board"
+        h1="Transform Your Hiring Strategy: Use Quick Post Technology to save time and money"
         h2="Job Seekers: Find the best University & College Staff Positions"
         para1="Discover your perfect human resource position through the world’s
         best job board! At Academic Jobs we offer the most renowned HR
@@ -41,12 +41,12 @@ export default function myPage() {
         <p className="px-7 mb-4 mt-1">
           Most importantly, we are passionate about the HR profession and use
           our knowledge and expertise to find you your ideal HR job. We have
-          created a network of HR professionals, join our HR 500 Club to be a
+          created a network of HR professionals, join our <Link className="link link-aj" href="/academic-talent-pool">Talent Pool</Link> to be a
           part of the action.
         </p>
         <p className="px-7 md:flex hidden">
           The No.1 job board for HR professionals in universities. So, if you
-          are looking to advance your career, we are here to help you achieve
+          are looking to advance your career, we can help you achieve
           your ambitions – both in the short term as well as throughout your
           lifelong career.
         </p>
