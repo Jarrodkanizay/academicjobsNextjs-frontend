@@ -43,7 +43,7 @@ html {
     }
 
     .job_post_header_panel {
-      grid-area: post_panel;
+      grid-area: location_panel;
     }
 
     .job_post_header_panel .company_name {
@@ -187,6 +187,11 @@ html {
         grid-template-areas:
           'filters_panel'
           'listings_panel';
+      }
+      .job_post_header_panel {
+        grid-template-areas:
+          'applications_close_panel'    
+          'location_panel';
       }
     }
   }
