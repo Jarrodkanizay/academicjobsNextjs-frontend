@@ -5,5 +5,4 @@ Disallow: /about/diversity-statement/
 Disallow: /about-academic-jobs/
 Disallow: /about/terms-of-use/
 Allow: /
-Allow: /jobs
 Sitemap: https://www.academicjobs.com/sitemap.xml
