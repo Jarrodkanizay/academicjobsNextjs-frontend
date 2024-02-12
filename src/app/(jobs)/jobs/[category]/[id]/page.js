@@ -243,7 +243,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
           </div>
         </div>
       </div>
-      {/* job post header: organization, location closing date of job post */}
+      {/* job post header: organization, location closing date of job post  */}
       <section className="jobs_grid job_post_header_container">
         <div className="job_post_header_panel">
           <h3 className="company_name">{company_name}</h3>
