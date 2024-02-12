@@ -60,7 +60,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
     headlineOnly,
     ranking,
   } = job.data;
-  console.log("ranking==============", ranking)
+  console.log('ranking==============', ranking);
   const subject = encodeURIComponent('You might like this job posting!');
   const bccEmail = encodeURIComponent('post@academicjobs.com');
   const bodyEmail = encodeURIComponent(
