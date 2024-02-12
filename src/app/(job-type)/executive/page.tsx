@@ -56,16 +56,17 @@ export default function myPage() {
           <div className="hero-overlay bg-opacity-70 "></div>
           <div className="hero-content text-white ">
             <div className="max-w-2xl mx-auto">
-              <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal"><span className="text-5xl font-bold text-amber-500">Faculty Jobs </span>
-              <br/>
-              </h1>
+            <h1 className="md:text-6xl font-bold m-0  pb-4"> Executive Jobs</h1> 
          
          
-            <p className="px-7 font-bold">
-            The No.1 job board for Faculty Jobs, Academic Jobs, provides an extensive list of opportunities for the future of your career, carefully sectioning the top faculty jobs to find the best position for you!
+              <p className="px-7 mb-4 mt-1 font-bold">
+            Find your perfect executive position through the world’s best job board! At Academic Jobs we offer the most renowned High Ed jobs at the top universities. Work with some of the brightest minds, and use top-notch facilities & resources.
             </p>
-            <p className="px-7 font-bold">
-            Find all the best academic faculty jobs here…
+            {/* <p className="px-7 md:flex hidden">
+            The No.1 job board for academics, Academic Jobs, provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!
+            </p> */}
+            <p className="px-7 md:flex hidden font-bold">
+            Find all the best executive jobs here…
             </p>
            
               <Link href="/academic-talent-pool" className="btn ml-2 btn-aj text-lg font-bold item-center justify-center text-center">
@@ -78,8 +79,8 @@ export default function myPage() {
       
            
 
-              <div className="bg-white flex flex-col  ">
-               <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
+              <div className="bg-gray-200 flex flex-col  ">
+               <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize max-w-screen-2xl ml-auto">
               {executive.map(({ Title, Name, }, key) => (
                 <li className={`pb-2 flex ${' md:break' } ${ ' font-bold text-gray-400' }`} key={key}>
                   <Link href={`/executive/${Name?.replace(/\s+/g, '-')}/`}>{Name}</Link>

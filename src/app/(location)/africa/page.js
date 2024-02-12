@@ -131,7 +131,7 @@ export default function Page() {
                     University</Link></li>
                   <li><Link href="/employers/university-of-pretoria/12935/">University of
                     Pretoria</Link></li>
-                  <li><Link href="/employers/12787/university-of-kwazulu-natal/">University of
+                  <li><Link href="/employers/university-of-kwazulu-natal/12787">University of
                     KwaZulu-Natal</Link>
                   </li>
                 </ul>

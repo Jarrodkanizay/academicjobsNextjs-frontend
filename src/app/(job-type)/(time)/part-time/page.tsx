@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function myPage() {
   return (
     <main className="content-grid">
-      <h1>Academic part-time Jobs</h1>
+      {/* <h1>Academic part-time Jobs</h1>
       <p>
       Seek all part-time uni jobs through Australia’s best job board. Discover flexibility to align your professional pursuits with your lifestyle choices. Join us in embracing a future where your workspace is as adaptable as your ambitions. From part-time positions to vibrant on-site roles, we've curated diverse part-time opportunities just for you.</p>
       <p className="px-7 md:flex hidden">
@@ -25,10 +25,35 @@ export default function myPage() {
                       className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
                     >
                      Join Our Talent Pool
-                    </Link>
+                    </Link> */}
 
-      <JobSearchBox q="part time" />
-      <SearchResults q={{ q: 'part time' || 0 }} />
+                    <div className="bg-slate-200 full-width">
+      <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
+    
+              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">Academic part-time Jobs</h1> 
+              
+            <div className="">
+            
+      
+
+            <p className="px-7 mb-4 mt-1">
+            Seek all part-time uni jobs through Australia’s best job board. Discover flexibility to align your professional pursuits with your lifestyle choices. Join us in embracing a future where your workspace is as adaptable as your ambitions. From part-time positions to vibrant on-site roles, we've curated diverse part-time opportunities just for you.</p>
+      <p className="px-7 md:flex hidden">
+      All of the best professional casual jobs in Australia. Through higher ed jobs part-time, individuals can actively contribute to the advancement of knowledge, the cultivation of learning environments, and the overall growth of the academic landscape while simultaneously expanding their professional horizons.</p>
+      <Link
+                      href={'/academic-talent-pool'}
+                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
+                    >
+                     Join Our Talent Pool
+                    </Link>
+         
+         
+            </div>
+          </div>
+          </div>
+
+      <JobSearchBox q="part-time" />
+      <SearchResults q={{ q: 'part-time' || 0 }} />
     </main>
   );
 }
