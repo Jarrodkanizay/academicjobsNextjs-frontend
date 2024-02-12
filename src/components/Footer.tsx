@@ -109,7 +109,7 @@ const Footer = () => {
               YouTube
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href="https://www.linkedin.com/company/academic-jobs/"
               target="_blank"
@@ -117,7 +117,7 @@ const Footer = () => {
             >
               Linkedin
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="https://www.instagram.com/academicjobs_/"
