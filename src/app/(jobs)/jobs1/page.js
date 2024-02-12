@@ -90,7 +90,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className=" mx-auto max-w-5xl  flex flex-col hidden md:block ">
+      <div className=" flex flex-col hidden md:block ">
         {
           // 顶层已选X  top
           filter1.length > 0 && (

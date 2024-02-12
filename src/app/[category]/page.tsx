@@ -81,7 +81,7 @@ export default function Page({ params, searchParams }: any) {
         </div>
       </div>
 
-      <JobSearchBox q={Name} />
+      <JobSearchBox l={Name} />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">
@@ -91,7 +91,7 @@ export default function Page({ params, searchParams }: any) {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-          <SearchResults q={{ q: Name }} />
+          <SearchResults q={{ q: '', l:Name }} />
           </div>
         </div>
       </section>

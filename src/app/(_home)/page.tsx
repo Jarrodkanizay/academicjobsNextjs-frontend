@@ -7,6 +7,7 @@ import JobSearchBoxHome from '@/components/JobSearchBoxHome';
 import JobCategoryAndLocationLinks from '@/components/links/JobCategoryAndLocationLinks';
 import AusUniLogos from '@/components/AusUniLogos';
 
+
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
@@ -19,10 +20,12 @@ export const metadata: Metadata = {
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
 
+
 export default function myPage() {
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
   let showJobElephant = true;
   showJobElephant = false;
+
 
   return (
     <main className="content-grid">
@@ -35,6 +38,7 @@ export default function myPage() {
           <JobSearchBoxHome />
         </div>
       </div>
+
 
       <JobCategoryAndLocationLinks />
       {/* Set this to false to show uni logo and welcome to message */}
@@ -64,16 +68,17 @@ export default function myPage() {
         </>
       )}
 
+
       {/* Hero Panel */}
       {/* <div
         id="section"
         className="hero-content flex-col lg:flex-row mx-auto items-start py-12 bg-slate-200 breakout full-width prose w-fit"
       ><div>
         <h1 className="text-3xl md:text-6xl font-normal text-gray-500 mt-12 text-right">
-          ACADEMIC JOBS: Academic, research &&nbsp;science positions locally & globally
+          ACADEMIC JOBS: Academic, research &&nbsp;science positions locally & globally
         </h1>
         <h2 className="mt-0 text-right">
-          Academic, research &&nbsp;science positions locally & globally
+          Academic, research &&nbsp;science positions locally & globally
         </h2>
         </div>
         <div className="text-col-2 mb-12">
@@ -95,6 +100,7 @@ export default function myPage() {
         </div>
       </div> */}
 
+
       <div id="section" className="bg-slate-200 full-width py-4 mb-16">
         <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
           <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 pb-8  md:px-0">
@@ -103,6 +109,7 @@ export default function myPage() {
             </span>{' '}
             Academic, research & science positions locally & globally
           </h1>
+
 
           <div>
             <p className="md:px-7 mb-4 mt-1">
@@ -125,6 +132,7 @@ export default function myPage() {
         </div>
       </div>
 
+
       <div className=" mx-auto mt-8 mb-8">
         <h2 className="underline-full"> Top University Employer Rankings</h2>
         <div className="bg-white flex flex-col">
@@ -143,6 +151,7 @@ export default function myPage() {
                     alt="Happiness and Academics: Scott Galloway's Algebra of hub"
                   />
                 </figure>
+
 
                 <ul className=" p-4 pl-12 list-disc text-gray-500">
                   <a href="https://www.academicjobs.com/employers/harvard-university/3100">
@@ -166,6 +175,7 @@ export default function myPage() {
                     California Institute of Technology (Caltech)
                   </a>
                 </ul>
+
 
                 {/* <Link
                   href={'/academic-hub/'}
@@ -275,6 +285,7 @@ export default function myPage() {
         </div>
       </div>
 
+
       {/* <p className="px-7 text-center mt-5">
             <Link
               className="link  text-[#f4a10c] font-bold text-2xl hover:text-orange-500"
@@ -287,7 +298,7 @@ export default function myPage() {
       <h2 className="underline-full">Top Academic Jobs Today</h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">
-          <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7 ">
+          {/* <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7 ">
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
@@ -384,7 +395,7 @@ export default function myPage() {
                 </ul>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
             <div className="column">
               <ul className="">
@@ -625,6 +636,7 @@ export default function myPage() {
               </ul>
             </div>
 
+
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
@@ -742,12 +754,14 @@ export default function myPage() {
         view more top jobs →
       </Link>
 
+
       {/* <div className="ml-2">
       {/* <Link                 href="https://cportal.jobelephant.com/login"
                  className="btn text-white mt-8 bg-[#265882] px-4"
                >
                   Post Your JobElephant Now
                </Link></div> */}
+
 
       <h2 className="underline-full mt-20">Top Cities for Uni Jobs</h2>
       <div className="cate-group section23 ">
@@ -919,6 +933,7 @@ export default function myPage() {
           </div>
         </div>
       </div>
+
 
       {/* WIP */}
       {/* <h2 className="underline-full mt-20">Top Universities To Work For</h2>
@@ -1098,7 +1113,8 @@ export default function myPage() {
           </div>
         </div>
       </div> */}
-      <h2 className="underline-full mt-20">
+
+      {/* <h2 className="underline-full mt-20">
         The University Rankings/ Top Academic Careers
       </h2>
       <div className="cate-group section23 ">
@@ -1236,7 +1252,8 @@ export default function myPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
 
       {/* These are broken */}
       {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
@@ -1261,3 +1278,4 @@ export default function myPage() {
     </main>
   );
 }
+

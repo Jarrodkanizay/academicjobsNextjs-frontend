@@ -481,12 +481,12 @@ export default function Page() {
                     Monash University
                   </a>
                 </ul>
-                <Link
+                {/* <Link
                   href={'/top-10-australian-universities'}
                   className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
                 >
                   View List
-                </Link>
+                </Link> */}
               </div>
             </div>
            

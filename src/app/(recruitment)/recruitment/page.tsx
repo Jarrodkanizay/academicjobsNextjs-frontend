@@ -511,7 +511,7 @@ export default function myPage() {
             <Link
               className="btn btn-aj"
               target="_blank"
-              href="https://postmyjob.online/academicjobs-job-portal/"
+              href="/post-a-job"
             >
               Post a Job Today
             </Link>
