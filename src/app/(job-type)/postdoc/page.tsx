@@ -23,15 +23,15 @@ export default function myPage() {
               <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4"> PhD Positions</h1> 
               
             <div className="">
-            
+
             <p className="px-7 mb-4 mt-1">
-            Seek your perfect PhD position through the world’s best job board! At Academic Jobs we offer PhD positions at the most renowned universities across the globe. PhD opportunities will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+            Discover your ideal postdoctoral position through the world’s best job board! At Academic Jobs, we offer postdoc opportunities at the most prestigious universities worldwide. Engage with domestic and international partners, collaborate with brilliant minds, and access state-of-the-art facilities and resources in a fulfilling postdoctoral experience.
             </p>
             <p className="px-7 md:flex hidden">
-            The No.1 job board for academics, Academic Jobs, provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programmes.
+            The No.1 job board for academics, Academic Jobs, offers a comprehensive list of opportunities to shape the trajectory of your career. We carefully categorise top Higher Ed fellowships, scholarships, and programs, making it your go-to resource for advancing in academia.
             </p>
             <p className="px-7 md:flex hidden">
-            Find all the best PhD positions here…
+            Explore all the finest postdoctoral positions right here...
             </p>
             <Link
                       href={'/academic-talent-pool'}
@@ -45,11 +45,11 @@ export default function myPage() {
           </div>
 
 
-              <h1>
+              {/* <h1>
               Academic Postdoc Jobs
               </h1>
               <p>
-              View all of the Post Doc jobs that respectable universities now have available on AcademicJobs. Our academic institutions are constantly seeking the greatest, you can apply for fantastic global academic Post Doc positions through our website.</p>
+              View all of the Post Doc jobs that respectable universities now have available on AcademicJobs. Our academic institutions are constantly seeking the greatest, you can apply for fantastic global academic Post Doc positions through our website.</p> */}
 
               
               <JobSearchBox q= "postdoc"/>

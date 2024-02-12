@@ -56,10 +56,26 @@ export default function myPage() {
             </div>
           </div>
         </div>
+
+        <div className="bg-gray-200 flex flex-col  rounded-md">
+        <ul className=" text-left columns-1 md:columns-4 pt-2 pl-8 md:gap-2  h-auto w-full text-transform: capitalize  max-w-screen-2xl mx-auto" >
+          {industry.map(({ Title, Name }, key) => (
+            <li
+              className={`pb-4 flex ${' md:break'} ${' font-bold text-gray-500'}`}
+              key={key}
+            >
+              <Link href={`/industry/${Name?.replace(/\s+/g, '-')}/`}>
+                {Name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+
        
-        <div className="md:flex bg-gray-800 shadow-xl rounded-2xl mb-4 max-w-screen-xl mx-auto mt-4 p-4 gap-8 ">
+        <div className="md:flex bg-gray-800 shadow-xl rounded-2xl mb-4 max-w-screen-lg mx-auto mt-4 p-4 gap-8 ">
         <Image
-          className="mx-auto rounded-xl md:w-2/3 h-72 "
+          className=" rounded-xl md:w-2/3  "
           width={880}
           height={380}
           alt=""
@@ -81,7 +97,7 @@ export default function myPage() {
            
               <div className="items-center text-center">
                 <p className="text-md font-bold  ">
-                No. 1 Job Board
+                No. 1 Higher Ed Job Board
                 </p>
              
               </div>
@@ -98,7 +114,7 @@ export default function myPage() {
          
               <div className=" items-center text-center ">
                 <p className="text-md font-bold ">
-                The World's Largest Talent Pool
+                Best Global Academic Talent Pool
                 </p>
             
               </div>
@@ -115,13 +131,13 @@ export default function myPage() {
       
          <div className=" items-center text-center">
            <p className="text-md font-bold ">
-           A.I. Powered Academic Rankings
+           A.I. Powered Applicant Matching
            </p>
                        </div>
        </div>
 
        <Link href="/industry/recruitment"  className="text-md font-bold underline text-sky-500 mb-4 ">
-         See All Advertising Options
+         See Industry Recruitment Information
            </Link>
 
 
@@ -136,20 +152,7 @@ export default function myPage() {
 
           <JobSearchBox q="Industry" />
 
-          <div className="bg-gray-200 flex flex-col  max-w-screen-2xl mx-auto rounded-md">
-        <ul className=" text-left columns-1 md:columns-4 pt-2 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
-          {industry.map(({ Title, Name }, key) => (
-            <li
-              className={`pb-4 flex ${' md:break'} ${' font-bold text-gray-500'}`}
-              key={key}
-            >
-              <Link href={`/industry/${Name?.replace(/\s+/g, '-')}/`}>
-                {Name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+
 
          
         <SearchResults q={{ q: 'industry' || 0 }} />

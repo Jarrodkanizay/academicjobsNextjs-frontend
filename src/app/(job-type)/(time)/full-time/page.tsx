@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 export default function myPage() {
   return (
     <main className="content-grid">
+      {/* <div className="bg-slate-200 full-width">
       <h1>Academic Full-Time Jobs</h1>
       <p>
       Seek all full-time uni jobs through Australia’s No.1 job board. Are you ready to take the next leap in your career journey? We are actively seeking a dedicated and passionate professional to join our dynamic team in a full-time role. </p>
@@ -26,9 +27,35 @@ export default function myPage() {
                     >
                      Join Our Talent Pool
                     </Link>
+                    </div> */}
 
-      <JobSearchBox q="full time" />
-      <SearchResults q={{ q: 'full time' || 0 }} />
+                    <div className="bg-slate-200 full-width">
+      <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
+    
+              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">Academic Full-Time Jobs</h1> 
+              
+            <div className="">
+            
+      
+
+            <p className="px-7 mb-4 mt-1">
+            Seek all full-time uni jobs through Australia’s No.1 job board. Are you ready to take the next leap in your career journey? We are actively seeking a dedicated and passionate professional to join our dynamic team in a full-time role. </p>
+      <p className="px-7 md:flex hidden">
+      The best job board in Australia will help you find your dream full-time position. If you thrive in a collaborative environment, possess a strong work ethic, and are eager to take on new challenges, we invite you to apply. This is more than just a job – it's a chance to grow and excel in a supportive and innovative workplace. Join us on this exciting journey and let's build a successful future together.</p>
+      <Link
+                      href={'/academic-talent-pool'}
+                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
+                    >
+                     Join Our Talent Pool
+                    </Link>
+         
+         
+            </div>
+          </div>
+          </div>
+
+      <JobSearchBox q="full-time" />
+      <SearchResults q={{ q: 'full-time' || 0 }} />
     </main>
   );
 }
