@@ -60,7 +60,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
     headlineOnly,
     ranking,
   } = job.data;
-  console.log("ranking==============", ranking)
+  console.log('ranking==============', ranking);
   const subject = encodeURIComponent('You might like this job posting!');
   const bccEmail = encodeURIComponent('post@academicjobs.com');
   const bodyEmail = encodeURIComponent(
@@ -207,7 +207,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     {location}
                 </Link> */}
               </div>
-              <div className="flex items-center gap-8">
+              <div className=" grid grid-cols-2 md:flex items-center gap-8">
                 {headlineOnly ? (
                   <Link href="#request-job-post" className="btn btn-aj">
                     Apply Now
@@ -221,7 +221,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                   />
                 )}
                 <a
-                  className="icon_share"
+                  className="icon_share justify-center"
                   href={`mailto:?bcc=${bccEmail}&subject=${subject}&body=${bodyEmail}`}
                 >
                   <BsFillShareFill size={32} color="#2867B2" />
@@ -243,7 +243,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
           </div>
         </div>
       </div>
-      {/* job post header: organization, location closing date of job post */}
+      {/* job post header: organization, location closing date of job post  */}
       <section className="jobs_grid job_post_header_container">
         <div className="job_post_header_panel">
           <h3 className="company_name">{company_name}</h3>
@@ -294,7 +294,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
       {/* main body of job post */}
       <section className="jobs_grid job_post_panel_container">
         <article className="post_panel" data-id={jobId}>
-          <div className="post_content bg-white border-2 rounded-lg">
+          <div className="post_content bg-white border-2 rounded-lg w-full">
             <article className="post" data-id={jobId}>
               {
                 <div className="">

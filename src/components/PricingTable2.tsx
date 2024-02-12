@@ -130,7 +130,7 @@ invoice for $${formatNumberWithCommas(price)}.
             <li className="flex text-lg mb-2">
            
               <a  href="/post-a-job" className="ml-3">
-                Upgrade to <span className="text-black underline">Priority Listing</span>
+                Upgrade to <span className="text-black underline">Featured Listing</span>
               </a>
             </li>
           </ul>

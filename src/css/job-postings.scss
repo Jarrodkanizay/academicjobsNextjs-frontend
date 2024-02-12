@@ -37,13 +37,13 @@ html {
     }
 
     .job_post_header_container {
-      grid-template-areas: 'post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel applications_close_panel applications_close_panel';
+      grid-template-areas: 'location_panel location_panel location_panel location_panel location_panel location_panel location_panel location_panel location_panel location_panel  applications_close_panel applications_close_panel';
       margin-top: var(--listing-gap);
       margin-bottom: var(--listing-gap);
     }
 
     .job_post_header_panel {
-      grid-area: post_panel;
+      grid-area: location_panel;
     }
 
     .job_post_header_panel .company_name {
@@ -187,6 +187,11 @@ html {
         grid-template-areas:
           'filters_panel'
           'listings_panel';
+      }
+      .job_post_header_container {
+        grid-template-areas:
+          'location_panel'
+          'applications_close_panel';
       }
     }
   }

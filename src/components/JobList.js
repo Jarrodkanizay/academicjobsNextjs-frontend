@@ -21,16 +21,16 @@ const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
   return (
     <>
       {content}
-      <div className="flex justify-center gap-4 pt-8">
+      <div className="flex justify-center gap-4 pt-8 text-white ">
         <button
-          className={page === 0 ? 'hidden' : ' font-bold block'}
+          className={page === 0 ? 'hidden' : ' font-bold block bg-sky-500 rounded-3xl py-2'}
           onClick={() => handlePageChange('prev')}
           disabled={page === 0}
         >
-          ◀ Previous Page
+          ◀ 
         </button>
-        <span className={`text-xs ${page === 0 ? 'hidden' : 'block'}`}>
-          Current Page: {page + 1}
+        <span className={`bg-sky-500 rounded-3xl px-2 ${page === 0 ? 'hidden' : 'block'}`}>
+           {page + 1}
         </span>
         <button
           onClick={() => {
@@ -39,11 +39,11 @@ const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
             }
           }}
           className={`${
-            isPlaceholderData || !data?.hasMore ? 'hidden' : 'font-bold block'
+            isPlaceholderData || !data?.hasMore ? 'hidden' : 'font-bold block bg-sky-500 rounded-3xl py-2'
           }`}
           disabled={isPlaceholderData || !data?.hasMore}
         >
-          Next Page ▶
+         ▶
         </button>
       </div>
     </>
