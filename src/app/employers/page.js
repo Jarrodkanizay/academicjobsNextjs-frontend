@@ -1068,7 +1068,7 @@ Use university rankings to search for jobs in higher education.
                   </Link>
                 </li>
                 <li>
-                  <Link href="/employers/12787/university-of-kwazulu-natal/">
+                  <Link href="/employers/university-of-kwazulu-natal/12787/">
                     University of KwaZulu-Natal
                   </Link>
                 </li>

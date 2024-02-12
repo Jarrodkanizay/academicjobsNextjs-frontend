@@ -64,38 +64,39 @@ Use university rankings to search for jobs in higher education.
         </section>
        
 
-        <div className="flex bg-base-200 shadow-xl rounded-2xl mb-12 max-w-screen-xl mx-auto mt-8 p-4 gap-8">
-        <img
-          className="mx-auto rounded-xl w-2/3 "
-       
+        <div className="md:flex bg-gray-800 shadow-xl rounded-2xl mb-4 max-w-screen-lg mx-auto mt-4 p-4 gap-8 ">
+        <Image
+          className=" rounded-xl md:w-2/3  "
+          width={880}
+          height={380}
           alt=""
           src="https://academicjobs.s3.amazonaws.com/img/_misc/maxresdefault.png"
         />
 
 <div className="w-1/3">
-<div className="grid  gap-4 mt-16 mb-4 text-gray-200">
+<div className="md:grid  flex gap-4 text-gray-200 mt-3">
            
 
             {/* Card 2 */}
-            <div className="flex  ">
+            <div className="md:flex  ">
            
-            <div className="icon-ai p-2">
+            <div className="icon-ai ">
            <p className="text-purple-500 font-bold px-2">
            ✓
            </p>
            </div>
            
               <div className="items-center text-center">
-                <p className="text-lg font-bold p-2 ">
-                No. 1 Job Board
+                <p className="text-md font-bold  ">
+                No. 1 Higher Ed Job Board
                 </p>
              
               </div>
             </div>
             {/* Card 3 */}
-            <div className="flex ">
+            <div className="md:flex ">
           
-            <div className="icon-ai p-2">
+            <div className="icon-ai ">
            <p className="text-purple-500 font-bold px-2">
            ✓
            </p>
@@ -103,34 +104,38 @@ Use university rankings to search for jobs in higher education.
                
          
               <div className=" items-center text-center ">
-                <p className="text-lg font-bold p-2">
-                The World's Largest Talent Pool
+                <p className="text-md font-bold ">
+                Best Global Academic Talent Pool
                 </p>
             
               </div>
             </div>
 
  {/* Card 1 */}
- <div className=" flex ">
+ <div className=" md:flex ">
            
-           <div className="icon-ai p-2">
+           <div className="icon-ai ">
            <p className="text-purple-500 font-bold px-2">
            ✓
            </p>
            </div>
       
          <div className=" items-center text-center">
-           <p className="text-lg font-bold p-2">
-           A.I. Powered Academic Rankings
+           <p className="text-md font-bold ">
+           A.I. Powered Applicant Matching
            </p>
                        </div>
        </div>
+
+       {/* <Link href="/industry/recruitment"  className="text-md font-bold underline text-sky-500 mb-4 ">
+         See Industry Recruitment Information
+           </Link> */}
 
 
             {/* End Cards */}
           </div>
          
-              <Link href="/recruitment" className="btn  btn-aj ml-4 text-lg font-bold">
+              <Link href="/recruitment" className="btn  btn-aj ml-4 text-lg font-bold p-2 mt-4">
                Post A Job
               </Link>
             </div>

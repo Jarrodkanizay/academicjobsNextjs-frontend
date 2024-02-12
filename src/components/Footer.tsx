@@ -54,9 +54,9 @@ const Footer = () => {
 
         <ul>
           <li className=" font-bold text-xl pb-1">Institutions</li>
-          <li>
+          {/* <li>
             <Link href="/the-university-rankings">University Rankings</Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/employers">Colleges & Universities</Link>
           </li>
