@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
     description: `Explore our ${title} job opportunities available at ${company_name}! Apply to become a ${title} today. Apply for an academic job today!`,
     keywords: `${title} jobs| ${company_name} university jobs| ${location} university jobs`,
     robots: {
-      index: true, // noindexの設定
+      index: true, 
     },
   };
 }
