@@ -1,20 +1,22 @@
-import img from 'next/image';
+import Image from 'next/image';
 
 import Link from 'next/link';
 import PricingTable2 from '@/components/PricingTable2';
 export const metadata = {
-  title: 'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
+  title:
+    'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
     'With our advanced AI technologies that greatly improve the job posting process, Academic Jobs is the top AI recruitment platform, enabling higher education institutions, the research and development (R&D) industry, and many other industries discover people. ',
-  keywords: 'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
+  keywords:
+    'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
 };
-const countryRegion = "Australia";
+const countryRegion = 'Australia';
 
 function countryRegionPlural() {
-  return countryRegion.toLowerCase().endsWith("s")
+  return countryRegion.toLowerCase().endsWith('s')
     ? `${countryRegion}'`
     : `${countryRegion}'s`;
 }
@@ -28,7 +30,9 @@ export default function myPage() {
           <div className="hero max-h-fit bg-slate-200 py-8">
             <div className="container mx-auto">
               <div className="hero-content flex-col lg:flex-row gap-8">
-                <img
+                <Image
+                  width={800}
+                  height={534}
                   src="/academic-job-postings/academic-jobs-college-professor.jpg"
                   className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
                   alt="academic jobs college professor"
@@ -49,7 +53,11 @@ export default function myPage() {
                     right talent, and we go above and beyond to help you achieve
                     this.
                   </p>
-                  <Link className="btn btn-aj" target="_blank" href="/australia/post-a-job">
+                  <Link
+                    className="btn btn-aj"
+                    target="_blank"
+                    href="/australia/post-a-job"
+                  >
                     Post a Job Today
                   </Link>
                 </div>
@@ -58,10 +66,7 @@ export default function myPage() {
           </div>
         </section>
         {/* Main Content */}
-         <section className="container mx-auto px-4 mt-12">
-
-
-      
+        <section className="container mx-auto px-4 mt-12">
           <h2 className="text-center mb-4">
             Connect with {countryRegionPlural()} Academic Elite on the Premier
             Job Board
@@ -112,7 +117,7 @@ export default function myPage() {
                 <p>
                   Connect with {countryRegionPlural()} top academic talent on
                   the nation's No. 1 Academic Job Board. Posting jobs is simple
-                  and affordable, targeting both local and global candidates.{" "}
+                  and affordable, targeting both local and global candidates.{' '}
                   <span className="hidden">
                     We specialise in matching premier academic professionals
                     with your specific needs, ensuring you find the right talent
@@ -126,7 +131,7 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
-                  <img
+                  <Image
                     width={90}
                     height={90}
                     src="/academic-job-postings/life-saving-customer-service.svg"
@@ -155,7 +160,7 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
-                  <img
+                  <Image
                     width={90}
                     height={90}
                     src="/academic-job-postings/elite-talent.svg"
@@ -181,21 +186,22 @@ export default function myPage() {
         {/* Uni hero image */}
         <div className="bg-gray-200 mt-16">
           <figure className="relative w-full min-h-[237px] max-h-[237px] overflow-hidden">
-            <img
+            <Image
+              width={2400}
+              height={180}
               src="/academic-job-postings/university-of-sydney.jpg"
               alt="university of sydney"
               className="absolute w-full h-full object-cover"
             />
           </figure>
         </div>
-         <section className="container mx-auto px-4 mt-12">
-
-
-        
+        <section className="container mx-auto px-4 mt-12">
           {/* A whole new way to recruit Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
-              <img
+              <Image
+                width={800}
+                height={534}
                 src="/academic-job-postings/academics-networking.jpg"
                 alt="academics networking Australia"
                 className="w-full lg:max-w-lg rounded-xl m-6"
@@ -210,13 +216,10 @@ export default function myPage() {
                 power of AI, we create a pleasurable customer experience that
                 ALL modern platforms have lost. Quickly post jobs for executive
                 jobs in higher education, academic jobs, administrative jobs and
-                all university support roles.
+                all university staff roles.
               </p>
               <div className="card-actions justify-end">
-                <Link
-                  href="/australia/post-a-job"
-                  className="btn btn-aj"
-                >
+                <Link href="/australia/post-a-job" className="btn btn-aj">
                   Create a free profile now
                 </Link>
               </div>
@@ -226,7 +229,9 @@ export default function myPage() {
           {/* Lowest fees Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
-              <img
+              <Image
+                width={800}
+                height={534}
                 src="/academic-job-postings/great-customer-service.jpg"
                 alt="Great Customer Service with the Lowest Prices Australia"
                 className="w-full lg:max-w-lg rounded-xl m-6"
@@ -265,20 +270,17 @@ export default function myPage() {
             {/* </div> */}
           </div>
         </div>
-         <section className="container mx-auto px-4 mt-12">
-
-
-      
+        <section className="container mx-auto px-4 mt-12">
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 mb-16">
             {/* Card 1 */}
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-4">
                 <div className="icon-ai">
-                  <img
+                  <Image
                     width={90}
                     height={90}
-                    src="/academic-job-postings/Top-Executive.jpg"
+                    src="/academic-job-postings/top-executive.jpg"
                     alt="Australia Top Executive"
                   />
                 </div>
@@ -299,10 +301,10 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
-                  <img
+                  <Image
                     width={90}
                     height={90}
-                    src="/academic-job-postings/HR-Jobs.png"
+                    src="/academic-job-postings/hr-jobs.png"
                     alt="Australia HR Jobs"
                   />
                 </div>
@@ -327,10 +329,10 @@ export default function myPage() {
             <div className="card bg-slate-100 shadow-xl">
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
-                  <img
+                  <Image
                     width={90}
                     height={90}
-                    src="/academic-job-postings/Admin-Jobs.png"
+                    src="/academic-job-postings/admin-jobs.png"
                     alt="Australia Admin Jobs"
                   />
                 </div>
@@ -354,12 +356,11 @@ export default function myPage() {
               </figure>
               <div className="card-body items-center text-center pt-14">
                 <h2 className="card-title">
-                  {countryRegionPlural()} Leading Admin & Support Staff Job
-                  Board
+                  {countryRegionPlural()} Leading Admin & Staff Job Board
                 </h2>
                 <p>
                   Academic Jobs shines as the #1&nbsp;Job Board in the World for
-                  Admin and Support roles in academia, renowned for connecting
+                  Admin and Staff positions in academia, renowned for connecting
                   top-tier administrative professionals with leading
                   institutions.
                 </p>
@@ -369,14 +370,13 @@ export default function myPage() {
             {/* End Cards */}
           </div>
         </section>
-         <section className="container mx-auto px-4 mt-12">
-
-
-      
+        <section className="container mx-auto px-4 mt-12">
           {/* Access to thousands of top academics Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
-              <img
+              <Image
+                width={800}
+                height={534}
                 src="/academic-job-postings/global-academic-network.jpg"
                 alt="Access to thousands of top global academics Australia"
                 className="w-full lg:max-w-lg rounded-xl m-6"
@@ -402,7 +402,9 @@ export default function myPage() {
           {/* Helpful tools and AI make it easy to list Card */}
           <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
-              <img
+              <Image
+                width={800}
+                height={534}
                 src="/academic-job-postings/helpful-artificial-intelligence.jpg"
                 alt="Australia Helpful AI tools"
                 className="w-full lg:max-w-lg rounded-xl m-6"
@@ -418,10 +420,7 @@ export default function myPage() {
                 importantly, we are here to help you every step of the way.
               </p>
               <div className="card-actions justify-end">
-                <Link
-                  href="/australia/post-a-job"
-                  className="btn btn-aj"
-                >
+                <Link href="/australia/post-a-job" className="btn btn-aj">
                   Try it for Yourself
                 </Link>
               </div>
@@ -430,10 +429,7 @@ export default function myPage() {
         </section>
 
         {/* Contact us CTA */}
-         <section className="container mx-auto px-4 mt-12">
-
-
-      
+        <section className="container mx-auto px-4 mt-12">
           <div className="alert mb-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -467,11 +463,11 @@ export default function myPage() {
             <div className="text-col-2">
               <p className="mb-4">
                 <blockquote>
-                  Discover the Ease of Academic Recruitment with{" "}
+                  Discover the Ease of Academic Recruitment with{' '}
                   {countryRegionPlural()}
                   Leading Job Board
                 </blockquote>
-                Choosing Academic Jobs means partnering with{" "}
+                Choosing Academic Jobs means partnering with{' '}
                 {countryRegionPlural()}
                 foremost academic job board, renowned for its simplicity,
                 affordability, and unparalleled access to a global talent pool.
@@ -523,11 +519,8 @@ export default function myPage() {
         <section>
           <h3 className="container mx-auto text-center py-8 px-4">
             If you're interested in a great experience while saving time &
-            money…{" "}
-            <Link
-              className="btn btn-aj"
-              href="/australia/post-a-job"
-            >
+            money…{' '}
+            <Link className="btn btn-aj" href="/australia/post-a-job">
               Post a Job Today
             </Link>
           </h3>
@@ -535,4 +528,4 @@ export default function myPage() {
       </main>
     </div>
   );
-};
+}

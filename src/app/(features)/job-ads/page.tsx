@@ -29,12 +29,12 @@ export default function myPage() {
                 />
                 <div>
                   <h1 className="text-4xl font-bold text-aj">
-                    Find your Best Academic & Support Talent
+                    Find all the Best Talent for Academic & Staff Positions
                   </h1>
                   <p className="py-6">
                     Find exactly who you need on AcademicJobs.com… Post your
-                    Academic, Higher Education and Admin/Support Staff ad and be
-                    amazed as the right candidates for the job come to you.
+                    Academic, Higher Education and Admin, Support, Staff ad and
+                    be amazed as the right candidates for the job come to you.
                   </p>
                   <a href="#pricing-table-cards" className="btn btn-aj">
                     Post a Job

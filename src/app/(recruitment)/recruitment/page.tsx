@@ -347,11 +347,11 @@ export default function myPage() {
               </figure>
               <div className="card-body items-left text-left pt-14">
                 <h2 className="card-title">
-                  Global Leading Admin & Support Staff Job Board
+                  Global Leading Admin & Staff Job Board
                 </h2>
                 <p>
                   Academic Jobs shines as the #1&nbsp;Job Board in the World for
-                  Admin and Support roles in academia, renowned for connecting
+                  Admin and Staff positions in academia, renowned for connecting
                   top-tier administrative professionals with leading
                   institutions.
                 </p>
@@ -508,11 +508,7 @@ export default function myPage() {
           <h3 className="container mx-auto text-center py-8 px-4">
             If you're interested in a great experience while saving time &
             money…{' '}
-            <Link
-              className="btn btn-aj"
-              target="_blank"
-              href="/post-a-job"
-            >
+            <Link className="btn btn-aj" target="_blank" href="/post-a-job">
               Post a Job Today
             </Link>
           </h3>
