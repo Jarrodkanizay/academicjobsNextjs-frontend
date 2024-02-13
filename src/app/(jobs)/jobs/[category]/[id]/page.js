@@ -13,7 +13,6 @@ import RequestFullJobForm from '@/components/forms/RequestFullJobForm';
 import { useSearchParams } from 'next/navigation';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import FavoriteButton from '@/components/FavoriteButton';
-import { topTwentyUnis } from '@/data/topTwentyUnisData';
 
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
@@ -69,54 +68,6 @@ const JobDetailPage = async ({ params, searchParams }) => {
   const bodyEmail = encodeURIComponent(
     `I came across this job posting on AcademicJobs and thought you might be interested: https://www.academicjobs.com/jobs/myjob/${jobId}`
   );
-
-  // if (company_name === 'Queensland University of Technology (QUT)') {
-  //   employerRanking = 5;
-  // }
-  // if (company_name === 'Bond University') {
-  //   employerRanking = 5;
-  // }
-
-  // Temporary workaround for employee ranking
-  // function updateEmployerRanking(topTwentyUnis, companyName) {
-  //   if (Array.isArray(topTwentyUnis)) {
-  //     return topTwentyUnis.includes(companyName) ? 5 : 2;
-  //   } else {
-  //     console.error('topTwentyUnis is not an array');
-  //     return 2; // default value
-  //   }
-  // }
-
-  // const employerRanking = updateEmployerRanking(topTwentyUnis, company_name);
-
-  //########################################################################################
-  //########################################################################################
-  //############ Walter I need the employer ranking field passed to the job ################
-  //########################################################################################
-  //########################################################################################
-
-  // const employerRanking = 2;
-  function updateEmployerRanking(topTwentyUnis, companyName) {
-    if (
-      (typeof companyName === 'string' &&
-        companyName.startsWith('Academic Jobs')) ||
-      companyName.startsWith('AcademicJobs')
-    ) {
-      return 5;
-    }
-
-    if (Array.isArray(topTwentyUnis)) {
-      if (topTwentyUnis.includes(companyName)) {
-        return 5;
-      } else {
-        return 2;
-      }
-    } else {
-      console.error('topTwentyUnis is not an array');
-      return 2; // default value
-    }
-  }
-  const employerRanking = updateEmployerRanking(topTwentyUnis, company_name);
 
   let bgColor = 'rgba(255, 255, 255, 1)';
   // async function getColorFromTopLeftCorner(imgSrc) {
