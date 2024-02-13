@@ -1,6 +1,7 @@
 export const topTwentyUnis = [
   'Queensland University of Technology (QUT)',
   'Bond University',
+  'The University of Queensland',
   'Stanford University',
   'Massachusetts Institute of Technology',
   'Harvard University',
