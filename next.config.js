@@ -10,6 +10,16 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/find-jobs',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/find-jobs/:path',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
         source: '/hr',
         destination: '/hr-jobs',
         permanent: true,
