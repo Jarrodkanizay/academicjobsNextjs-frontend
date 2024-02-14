@@ -1,17 +1,48 @@
-export const filterType = [
+export const filterType2 = [
     'Country',
     'State',
     'City',
     'Institution Name',
     'Job Type(i.e. Faculty, Human Resources)',
+    'Executive Jobs(i.e. Directors, Registrars)',
+    'Administration Support Jobs',
     'Faculty/Department(i.e. Science, Business)',
     'Academic Position Type(i.e. Lecturer, Fellow)',
-    'Executive Jobs(i.e. Directors, Registrars)',
     // 'Faculty Jobs(i.e. Dentistry, Geography)',
     'Employment Type(i.e. Full-time, casual)',
-     'Salary Range in USD',
+    'Salary Range in USD',
     'Onsite/Remote',
 ]
+export const filterType3 = [
+    { type: 'Country', show: true },
+    { type: 'State', show: true },
+    { type: 'City', show: true },
+    { type: 'Institution Name', show: true },
+    { type: 'Job Type(i.e. Faculty, Human Resources)', show: true },
+    { type: 'Executive Jobs(i.e. Directors, Registrars)', show: false },
+    { type: 'Administration Support Jobs', show: false },
+    { type: 'HR Jobs', show: false },
+    { type: 'Faculty/Department(i.e. Science, Business)', show: true },
+    { type: 'Academic Position Type(i.e. Lecturer, Fellow)', show: true },
+    { type: 'Employment Type(i.e. Full-time, casual)', show: true },
+    { type: 'Salary Range in USD', show: true },
+    { type: 'Onsite/Remote', show: true },
+];
+export const filterType  = {
+    Country: true,
+    State: true,
+    City: true,
+    InstitutionName: true,
+    JobType: true,
+    ExecutiveJobs: false,
+    AdministrationSupportJobs: false,
+    HRJobs: false,
+    Faculty_Department: true,
+    AcademicPositionType: true,
+    EmploymentType: true,
+    SalaryRange: true,
+    Onsite_Remote: true,
+};
 export const countryMappings = {
     australia: 'Australia',
     asia: 'Asia',
@@ -52,7 +83,6 @@ export const regions = [
     'United Kingdom',
     'United States',
 ]
-
 export const currencies1 = [
     "AUD - Australian dollar",
     "CAD - Canadian dollar",
@@ -77,7 +107,6 @@ export const currencies = [
     "CHF",
     "USD"
 ]
-
 export const countries =
     [
         "",
@@ -330,4 +359,3 @@ export const countries =
         "Zambia",
         "Zimbabwe"
     ]
-

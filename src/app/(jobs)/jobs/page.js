@@ -43,6 +43,24 @@ export default function Page() {
   const [category, setCategory] = useState("");
   const [filter1, setfilter] = useState([]);
   const [page, setPage] = useState(0);
+  useEffect(() => {
+    console.log("===============================", filter1)
+    if (filter1.some(obj => obj.filter.includes("Executive "))) {
+      setfilterTypes(p => ({...p, ExecutiveJobs: true }))
+    } else {
+      setfilterTypes(p => ({ ...p, ExecutiveJobs: false }))
+    }
+    if (filter1.some(obj => obj.filter.includes("Human Resources"))) {
+      setfilterTypes(p => ({ ...p, HRJobs: true }))
+    } else {
+      setfilterTypes(p => ({ ...p, HRJobs: false }))
+    }
+
+   
+    
+
+
+  }, [filter1])
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -65,14 +83,16 @@ export default function Page() {
     Country: "Country",
     State: "State",
     City: "City",
-    "Job Type(i.e. Faculty, Human Resources)": "Job Type",
-    "Faculty/Department(i.e. Science, Business)": "Faculty/Department",
-    "Academic Position Type(i.e. Lecturer, Fellow)": "Academic Position Type",
-    "Executive Jobs(i.e. Directors, Registrars)": "Executive Jobs",
-    "Employment Type(i.e. Full-time, casual)": "Employment Type",
-    "Institution Name": "Institution Name",
-    "Salary Range in USD": "Salary Range in USD",
-    "Onsite/Remote": "Onsite/Remote",
+    JobType: "Job Type",
+    ExecutiveJobs: "Executive Jobs",
+    'AdministrationSupportJobs': "Administration Support Jobs",
+    'HRJobs': 'HR Jobs',
+    "Faculty_Department": "Faculty/Department",
+    "AcademicPositionType": "Academic Position Type",
+    "EmploymentType": "Employment Type",
+    "InstitutionName": "Institution Name",
+    "SalaryRange": "Salary Range in USD",
+    "Onsite_Remote": "Onsite/Remote",
   };
   //const region = useSelector((state) => state.posts.region);
   //const [query, setQuery] = useState(Object.fromEntries(useSearchParams().entries()));
@@ -115,25 +135,30 @@ export default function Page() {
           )
         }
         <div className="flex gap-4 flex-wrap">
-          {filterTypes?.length > 0 && // 中层大目录m
-            filterTypes.map((filterType, i) => (
+          {Object.entries(filterTypes).map(([type, show ], i) => ( // 中层大目录m
               <button
                 key={i}
-                className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
+                className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === type
                   ? "bg-orange-500 text-white border-orange-500"
                   : "bg-white border-gray-500"
-                  }`}
+                  }
+                  ${show 
+                    ? "block"
+                    : "hidden"
+                  }
+                  
+                  `}
                 onClick={() => {
-                  if (category === filterType) {
+                  if (category === type) {
                     setIsShowFilter((prev) => !prev);
                   } else {
                     setIsShowFilter(true);
                   }
-                  console.log(filterType);
-                  setCategory(filterType);
+                  console.log(type);
+                  setCategory(type);
                 }}
               >
-                {filterValues9[filterType]}
+                {filterValues9[type]}
               </button>
             ))}
         </div>
