@@ -28,14 +28,14 @@ const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
             ${
               page === 0
                 ? 'cursor-not-allowed'
-                : 'bg-sky-200 hover:bg-sky-500 hover:text-white'
+                : 'bg-slate-200 hover:bg-slate-500 hover:text-white'
             }`}
             onClick={() => handlePageChange('prev')}
             disabled={page === 0}
           >
             ◀
           </button>
-          <button className="join-item btn bg-sky-200 hover:bg-sky-500 hover:text-white">
+          <button className="join-item btn bg-slate-200 hover:bg-slate-500 hover:text-white">
             <span className={`min-w-[50px]`}>{page + 1}</span>
           </button>
           <button
@@ -47,7 +47,7 @@ const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
             className={`join-item btn ${
               isPlaceholderData || !data?.hasMore
                 ? 'cursor-not-allowed'
-                : 'bg-sky-200 hover:bg-sky-500 hover:text-white'
+                : 'bg-slate-200 hover:bg-slate-500 hover:text-white'
             }`}
             disabled={isPlaceholderData || !data?.hasMore}
           >
