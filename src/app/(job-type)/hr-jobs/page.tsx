@@ -4,6 +4,7 @@ import JobSearchBox from '@/components/JobSearchBox';
 import hr from '@/data/hr.json';
 import Link from 'next/link';
 import HeroBanner from '@/components/HeroBanner';
+import JobFilter from '@/components/JobFilter';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -41,14 +42,17 @@ export default function myPage() {
         <p className="px-7 mb-4 mt-1">
           Most importantly, we are passionate about the HR profession and use
           our knowledge and expertise to find you your ideal HR job. We have
-          created a network of HR professionals, join our <Link className="link link-aj" href="/academic-talent-pool">Talent Pool</Link> to be a
-          part of the action.
+          created a network of HR professionals, join our{' '}
+          <Link className="link link-aj" href="/academic-talent-pool">
+            Talent Pool
+          </Link>{' '}
+          to be a part of the action.
         </p>
         <p className="px-7 md:flex hidden">
           The No.1 job board for HR professionals in universities. So, if you
-          are looking to advance your career, we can help you achieve
-          your ambitions – both in the short term as well as throughout your
-          lifelong career.
+          are looking to advance your career, we can help you achieve your
+          ambitions – both in the short term as well as throughout your lifelong
+          career.
         </p>
       </div>
 
@@ -84,9 +88,21 @@ export default function myPage() {
           title="YouTube video player"
         ></iframe>
       </div>
+      <JobSearchBox q="hr" forceClass="my-6" />
 
-      <JobSearchBox q="hr" />
-      <SearchResults q={{ q: 'hr' || 0 }} />
+      <section class="jobs_grid job_post_search_container">
+        <div class="filters_panel">
+          <div class="filters_content">
+            <JobFilter />
+          </div>
+        </div>
+        <div class="listings_panel">
+          <div class="listings_content">
+            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
+            <SearchResults q={{ q: 'hr' || 0 }} />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
