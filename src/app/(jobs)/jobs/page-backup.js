@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
+//import JobsForm from '@/components/JobsForm';
 import SearchResults1 from '@/components/SearchResults1';
 import { useSearchParams } from 'next/navigation';
 import JobSearchBox from '@/components/JobSearchBox';
@@ -11,6 +12,20 @@ import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import Head from 'next/head';
 
+//import { useRouter } from 'next/router';
+//import { useRouter } from 'next/navigation';
+// export const metadata = {
+//   title: 'find-jobs',
+//   description:
+//     'Discover academic jobs at all universities today! Explore your next academic positions through visiting our higher ed jobs, with new academic jobs added daily.',
+//   keywords: [
+//     'Academic Jobs',
+//     'Higher Ed Jobs',
+//     'Academic positions',
+//     'University Jobs',
+//     'College Jobs',
+//   ],
+// };
 export default function Page() {
   const searchParams = useSearchParams();
   //const allSearchParams = Object.fromEntries(searchParams1);
@@ -76,11 +91,6 @@ export default function Page() {
   ///console.log('router.query', searchParams);
   return (
     <>
-      <Head>
-        <title>Your Page Title</title>
-        <meta name="description" content="Your Page Description" />
-        {/* other metadata here */}
-      </Head>
       <main>
         <div className="w-full bg-gray-100 py-4 mb-4 mt-8">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">

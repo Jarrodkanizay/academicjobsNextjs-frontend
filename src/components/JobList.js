@@ -22,29 +22,38 @@ const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
     <>
       {content}
       <div className="flex justify-center gap-4 pt-8 text-white ">
-        <button
-          className={page === 0 ? 'hidden' : ' font-bold block bg-sky-500 rounded-3xl py-2'}
-          onClick={() => handlePageChange('prev')}
-          disabled={page === 0}
-        >
-          ◀ 
-        </button>
-        <span className={`bg-sky-500 rounded-3xl px-2 ${page === 0 ? 'hidden' : 'block'}`}>
-           {page + 1}
-        </span>
-        <button
-          onClick={() => {
-            if (!isPlaceholderData && data.hasMore) {
-              handlePageChange('next');
-            }
-          }}
-          className={`${
-            isPlaceholderData || !data?.hasMore ? 'hidden' : 'font-bold block bg-sky-500 rounded-3xl py-2'
-          }`}
-          disabled={isPlaceholderData || !data?.hasMore}
-        >
-         ▶
-        </button>
+        <div className="join mx-auto">
+          <button
+            className={`join-item btn 
+            ${
+              page === 0
+                ? 'cursor-not-allowed'
+                : 'bg-slate-200 hover:bg-slate-500 hover:text-white'
+            }`}
+            onClick={() => handlePageChange('prev')}
+            disabled={page === 0}
+          >
+            ◀
+          </button>
+          <button className="join-item btn bg-slate-200 hover:bg-slate-500 hover:text-white">
+            <span className={`min-w-[50px]`}>{page + 1}</span>
+          </button>
+          <button
+            onClick={() => {
+              if (!isPlaceholderData && data.hasMore) {
+                handlePageChange('next');
+              }
+            }}
+            className={`join-item btn ${
+              isPlaceholderData || !data?.hasMore
+                ? 'cursor-not-allowed'
+                : 'bg-slate-200 hover:bg-slate-500 hover:text-white'
+            }`}
+            disabled={isPlaceholderData || !data?.hasMore}
+          >
+            ▶
+          </button>
+        </div>
       </div>
     </>
   );

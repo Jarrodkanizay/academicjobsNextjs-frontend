@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -55,9 +56,21 @@ export default function myPage() {
               </h1>
               <p>
               View all of the Post Doc jobs that respectable universities now have available on AcademicJobs. Our academic institutions are constantly seeking the greatest, you can apply for fantastic global academic Post Doc positions through our website.</p> */}
+      <JobSearchBox q="postdoc" forceClass="my-6" />
 
-      <JobSearchBox q="postdoc" />
-      <SearchResults q={{ q: 'postdoc' || 0 }} />
+      <section className="jobs_grid job_post_search_container">
+        <div className="filters_panel">
+          <div className="filters_content">
+            <JobFilter />
+          </div>
+        </div>
+        <div className="listings_panel">
+          <div className="listings_content">
+            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
+            <SearchResults q={{ q: 'postdoc' || 0 }} />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

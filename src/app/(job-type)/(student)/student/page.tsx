@@ -65,7 +65,7 @@ export default function myPage() {
           btnSecondaryURL="/student/faq/"
           src="/student-jobs-on-campus/student-working-in-campus-cafe.jpg"
           alt="Student Jobs on Campus can be life changing"
-          // bgColorClass="bg-sky-200"
+          // bgColorclassName="bg-sky-200"
           // imgRight={false}
         />
         <div className="order-none max-w-screen-sm mx-auto">
@@ -115,9 +115,24 @@ export default function myPage() {
           </ul>
           <div className="newLine"></div>
         </div> */}
-        <JobSearchBox q="student" />
+
+        <JobSearchBox q="student" forceClass="my-6" />
+
+        <section className="jobs_grid job_post_search_container">
+          <div className="filters_panel">
+            <div className="filters_content">
+              <JobFilter />
+            </div>
+          </div>
+          <div className="listings_panel">
+            <div className="listings_content">
+              {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
+              <SearchResults q={{ q: 'student' || 0 }} />
+            </div>
+          </div>
+        </section>
+
         {/*  */}
-        <SearchResults q={{ q: 'student' || 0 }} />
         {/* <HeroBanner
           mobileMode={true}
           h1="Student Jobs on Campus"
@@ -128,7 +143,7 @@ export default function myPage() {
           btnSecondaryURL="/student/faq/"
           src="/student-jobs-on-campus/student-jobs-on-campus.jpg"
           alt="Student Jobs on Campus can be life changing"
-          // bgColorClass="bg-sky-300"
+          // bgColorclassName="bg-sky-300"
           // imgRight={false}
         /> */}
         <section className="container mx-auto px-4 mt-12 order-1">

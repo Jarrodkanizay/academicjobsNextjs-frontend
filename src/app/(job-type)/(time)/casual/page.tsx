@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -44,9 +45,21 @@ export default function myPage() {
           </div>
         </div>
       </div>
+      <JobSearchBox q="casual" forceClass="my-6" />
 
-      <JobSearchBox />
-      <SearchResults q={{ q: 'casual' || 0 }} />
+      <section className="jobs_grid job_post_search_container">
+        <div className="filters_panel">
+          <div className="filters_content">
+            <JobFilter />
+          </div>
+        </div>
+        <div className="listings_panel">
+          <div className="listings_content">
+            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
+            <SearchResults q={{ q: 'casual' || 0 }} />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
