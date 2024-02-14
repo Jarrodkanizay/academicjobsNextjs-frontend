@@ -34,7 +34,7 @@ const ModalForJobPost = ({
               buttonText={buttonText}
               thankYouMessage={thankYouMessage}
               formContext={formContext}
-              formType={formContext}
+              formType={formType}
               placeholder={placeholder}
             />
           </p>

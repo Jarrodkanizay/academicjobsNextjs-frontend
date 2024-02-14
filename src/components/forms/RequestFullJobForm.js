@@ -121,7 +121,7 @@ const SubscribeForm = ({
           <span className="error">{errors[field].message}</span>
         )} */}
 
-        {formType === 'multi-input' && (
+        {formType == 'share' && (
           <>
             <p className="underline-full">Friends Details</p>
             {/* First name */}
