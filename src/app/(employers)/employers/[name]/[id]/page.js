@@ -73,7 +73,7 @@ const Employer = async ({ params }) => {
         } p-8 mb-4  mx-auto`}
       >
         <div className="md:flex md:justify-start .col-auto mx-auto max-w-screen-xl gap-4">
-          <div className="w-[15rem] h-[15rem] mr-4  ">
+          <div className="w-[15rem] h-[15rem] rounded-md bg-white mr-4 p-3">
             <Image
               src={
                 logo
@@ -84,7 +84,7 @@ const Employer = async ({ params }) => {
               height={300}
               //fill={true}
               alt={`${company_name} Logo`}
-              className="w-full h-full object-contain rounded-md bg-white "
+              className="w-full h-full object-contain "
             />
           </div>
           <div className="md:flex md:flex-col p-4">
