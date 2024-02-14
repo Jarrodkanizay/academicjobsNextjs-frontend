@@ -45,7 +45,7 @@ export default function JobFilter({ dataQty = '> 1' }: JobFilterProps) {
   return (
     <>
       {logoMode ? (
-        <div className=" mt-4">
+        <div className=" mt-4 hidden lg:block">
           {logos.map((logo, index) => (
             <div key={index} className={`${index > 0 ? 'mt-16' : ''}`}>
               <Link href={logo.link}>
