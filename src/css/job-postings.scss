@@ -77,6 +77,7 @@ html {
 
     .listings_panel {
       grid-area: listings_panel;
+      margin-top: 26px;
     }
 
     .filters_panel {
@@ -196,55 +197,3 @@ html {
     }
   }
 }
-
-// Delete all of the below code
-// body > section {
-//   margin-bottom: 100px !important;
-// }
-
-// section > * {
-//   padding: 20px;
-//   border-radius: 8px;
-// }
-
-// .jobs_grid {
-//   border-radius: 8px;
-// }
-
-// .post_panel {
-//   background-color: rgb(218, 230, 241);
-// }
-
-// .listings_panel {
-//   background-color: rgb(186, 219, 255);
-// }
-
-// .filters_panel {
-//   background-color: rgb(255, 243, 199);
-// }
-
-// .post_content {
-//   padding: 40px;
-//   background-color: rgb(100, 240, 151);
-// }
-
-// .listings_content {
-//   background-color: rgb(223, 143, 220);
-// }
-
-// .listing {
-//   padding: 40px;
-// }
-
-// .filters_content {
-//   background-color: rgb(156, 210, 248);
-// }
-
-// .listings_content .search_panel {
-//   padding: 30px;
-//   background-color: lightsalmon;
-// }
-
-// section > * {
-//   border: 1px solid black;
-// }

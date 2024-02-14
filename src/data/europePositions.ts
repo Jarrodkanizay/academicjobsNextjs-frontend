@@ -84,7 +84,7 @@ Find all the best student jobs here…`,
   {
     Name: `phd`,
     Description: `A great number of PhD job postings from Europe and international universities are available on our site`,
-    Title: `Academic faculty Jobs Europe`,
+    Title: `Academic PhD Jobs Europe`,
     Keyword: `Academic PhD Jobs Europe`,
     content: `Our website lists PhD openings from reputable universities. Apply now on our website to be considered for amazing PHD programmes in Europe. The top applicants are constantly sought after by our academic institutions to work on PHDs. For PhD roles on campus in a range of departments and activities inside a university or PHD institution, part-time or temporary labour is required.`,
   },

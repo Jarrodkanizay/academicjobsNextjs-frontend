@@ -1,29 +1,16 @@
 'use client';
-import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
-//import JobsForm from '@/components/JobsForm';
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import SearchResults1 from '@/components/SearchResults1';
 import { useSearchParams } from 'next/navigation';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import JobSearchBox2 from '@/components/JobSearchBox2';
-import { filterType } from "@/utils/data";
+import { filterType } from '@/utils/data';
 import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
-//import { useRouter } from 'next/router';
-//import { useRouter } from 'next/navigation';
-// export const metadata = {
-//   title: 'find-jobs',
-//   description:
-//     'Discover academic jobs at all universities today! Explore your next academic positions through visiting our higher ed jobs, with new academic jobs added daily.',
-//   keywords: [
-//     'Academic Jobs',
-//     'Higher Ed Jobs',
-//     'Academic positions',
-//     'University Jobs',
-//     'College Jobs',
-//   ],
-// };
+import Head from 'next/head';
+
 export default function Page() {
   const searchParams = useSearchParams();
   //const allSearchParams = Object.fromEntries(searchParams1);
@@ -40,7 +27,7 @@ export default function Page() {
   //   { skip: !category }
   //   );
   const [filterTypes, setfilterTypes] = useState(filterType);
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState('');
   const [filter1, setfilter] = useState([]);
   const [page, setPage] = useState(0);
   useEffect(() => {
@@ -71,13 +58,20 @@ export default function Page() {
     isPlaceholderData: isPlaceholderDataQty,
   } = useQuery({
     queryKey: ['filter', { category, filter1, q, l }],
-    queryFn: async () => { //{ ...filter1, category,mode: "normal" }
-      const response = await BaseApi.post('/filters', { category, filter1, q, l, mode: "normal" },);
+    queryFn: async () => {
+      //{ ...filter1, category,mode: "normal" }
+      const response = await BaseApi.post('/filters', {
+        category,
+        filter1,
+        q,
+        l,
+        mode: 'normal',
+      });
       console.log(response.data);
       console.log('response.data.data', response.data.data);
       return response.data.data;
     },
-    enabled: category !== "",
+    enabled: category !== '',
   });
   const filterValues9 = {
     Country: "Country",
@@ -135,30 +129,25 @@ export default function Page() {
           )
         }
         <div className="flex gap-4 flex-wrap">
-          {Object.entries(filterTypes).map(([type, show ], i) => ( // 中层大目录m
+          {filterTypes?.length > 0 && // 中层大目录m
+            filterTypes.map((filterType, i) => (
               <button
                 key={i}
-                className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === type
+                className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
                   ? "bg-orange-500 text-white border-orange-500"
                   : "bg-white border-gray-500"
-                  }
-                  ${show 
-                    ? "block"
-                    : "hidden"
-                  }
-                  
-                  `}
+                  }`}
                 onClick={() => {
-                  if (category === type) {
+                  if (category === filterType) {
                     setIsShowFilter((prev) => !prev);
                   } else {
                     setIsShowFilter(true);
                   }
-                  console.log(type);
-                  setCategory(type);
+                  console.log(filterType);
+                  setCategory(filterType);
                 }}
               >
-                {filterValues9[type]}
+                {filterValues9[filterType]}
               </button>
             ))}
         </div>

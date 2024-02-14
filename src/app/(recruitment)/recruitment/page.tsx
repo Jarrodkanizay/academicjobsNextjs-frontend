@@ -4,14 +4,14 @@ import Link from 'next/link';
 import PricingTable2 from '@/components/PricingTable2';
 export const metadata: Metadata = {
   title:
-    'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
+    'Academic Jobs Recruitment', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
-    'With our advanced AI technologies that greatly improve the job posting process, Academic Jobs is the top AI recruitment platform, enabling higher education institutions, the research and development (R&D) industry, and many other industries discover people. ',
+    'We make the job posting process quick and easy, Academic Jobs is the best  recruitment platform for higher education institutions to discover academics. ',
   keywords:
-    'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
+    'Academic Jobs Recruitment, Academic Recruitment Platform',
 };
 export default function myPage() {
   return (
@@ -347,11 +347,11 @@ export default function myPage() {
               </figure>
               <div className="card-body items-left text-left pt-14">
                 <h2 className="card-title">
-                  Global Leading Admin & Support Staff Job Board
+                  Global Leading Admin & Staff Job Board
                 </h2>
                 <p>
                   Academic Jobs shines as the #1&nbsp;Job Board in the World for
-                  Admin and Support roles in academia, renowned for connecting
+                  Admin and Staff positions in academia, renowned for connecting
                   top-tier administrative professionals with leading
                   institutions.
                 </p>
@@ -508,11 +508,7 @@ export default function myPage() {
           <h3 className="container mx-auto text-center py-8 px-4">
             If you're interested in a great experience while saving time &
             money…{' '}
-            <Link
-              className="btn btn-aj"
-              target="_blank"
-              href="/post-a-job"
-            >
+            <Link className="btn btn-aj" target="_blank" href="/post-a-job">
               Post a Job Today
             </Link>
           </h3>

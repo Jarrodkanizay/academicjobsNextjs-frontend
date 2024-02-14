@@ -12,14 +12,14 @@ function countryRegionPlural() {
 
 export const metadata: Metadata = {
   title:
-    'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
+    'Student Jobs on Campus', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
-    'With our advanced AI technologies that greatly improve the job posting process, Academic Jobs is the top AI recruitment platform, enabling higher education institutions, the research and development (R&D) industry, and many other industries discover people. ',
+    'AcademicJobs has the best student jobs on campus with all types of categories for your needs.',
   keywords:
-    'Academic Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
+    'Student Jobs on Campus, Student Jobs',
 };
 export default function myPage() {
   return (

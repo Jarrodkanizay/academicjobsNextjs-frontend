@@ -29,12 +29,12 @@ export default function myPage() {
                 />
                 <div>
                   <h1 className="text-4xl font-bold text-aj">
-                    Find your Best Academic & Support Talent
+                    Find all the Best Talent for Academic & Staff Positions
                   </h1>
                   <p className="py-6">
                     Find exactly who you need on AcademicJobs.com… Post your
-                    Academic, Higher Education and Admin/Support Staff ad and be
-                    amazed as the right candidates for the job come to you.
+                    Academic, Higher Education and Admin, Support, Staff ad and
+                    be amazed as the right candidates for the job come to you.
                   </p>
                   <a href="#pricing-table-cards" className="btn btn-aj">
                     Post a Job
@@ -642,11 +642,11 @@ export default function myPage() {
           
           
            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-           <iframe class=" aspect-video  " src="https://www.youtube.com/embed/4ULtabQbmPs?si=olef1FK2Ao9Zzdpg" title="YouTube video player"></iframe>
+           <iframe className=" aspect-video  " src="https://www.youtube.com/embed/4ULtabQbmPs?si=olef1FK2Ao9Zzdpg" title="YouTube video player"></iframe>
 
-           <iframe class=" aspect-video " src="https://www.youtube.com/embed/lMKlaQIC8lk?si=bO4_2gP-3UjU1tad" title="YouTube video player"></iframe>
+           <iframe className=" aspect-video " src="https://www.youtube.com/embed/lMKlaQIC8lk?si=bO4_2gP-3UjU1tad" title="YouTube video player"></iframe>
          
-          <iframe class=" aspect-video " src="https://www.youtube.com/embed/QhDUx_05bGc?si=syVHl-FqyM4KLyCx" title="YouTube video player"></iframe>
+          <iframe className=" aspect-video " src="https://www.youtube.com/embed/QhDUx_05bGc?si=syVHl-FqyM4KLyCx" title="YouTube video player"></iframe>
 
 
           </div>
