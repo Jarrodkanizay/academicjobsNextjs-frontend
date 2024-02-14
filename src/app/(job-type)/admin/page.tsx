@@ -3,6 +3,7 @@ import JobSearchBox from '@/components/JobSearchBox';
 import admin from '@/data/admin.json';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import JobFilter from '@/components/JobFilter';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -61,9 +62,21 @@ export default function myPage() {
           ))}
         </ul>
       </div>
+      <JobSearchBox q="admin" forceClass="my-6" />
 
-      <JobSearchBox q="admin" />
-      <SearchResults q={{ q: 'admin' || 0 }} />
+      <section class="jobs_grid job_post_search_container">
+        <div class="filters_panel">
+          <div class="filters_content">
+            <JobFilter />
+          </div>
+        </div>
+        <div class="listings_panel">
+          <div class="listings_content">
+            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
+            <SearchResults q={{ q: 'admin' || 0 }} />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
