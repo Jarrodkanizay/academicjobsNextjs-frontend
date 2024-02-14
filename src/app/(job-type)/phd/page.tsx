@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import SearchResults from '@/components/SearchResults'
-import JobSearchBox from '@/components/JobSearchBox'
+import SearchResults from '@/components/SearchResults';
+import JobSearchBox from '@/components/JobSearchBox';
 import Link from 'next/link';
+import JobFilter from '@/components/JobFilter';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -14,46 +15,57 @@ export const metadata: Metadata = {
 };
 export default function myPage() {
   return (
-    
-      <main className="PHD Jobs">
+    <main className="PHD Jobs">
+      <div className="bg-slate-200 full-width">
+        <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
+          <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">
+            PHD Jobs
+          </h1>
 
-<div className="bg-slate-200 full-width">
-      <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
-    
-              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">PHD Jobs</h1> 
-              
-            <div className="">
-            
-      
-
+          <div className="">
             <p className="px-7 mb-4 mt-1">
-            Seek your perfect PhD position through the world’s best job board! At Academic Jobs we offer PhD positions at the most renowned universities across the globe. PhD opportunities will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+              Seek your perfect PhD position through the world’s best job board!
+              At Academic Jobs we offer PhD positions at the most renowned
+              universities across the globe. PhD opportunities will provide you
+              with the chance to engage with partners domestically and
+              internationally, work with some of the brightest minds, and use
+              top-notch facilities and resources.
             </p>
             <p className="px-7 md:flex hidden">
-            The No.1 job board for academics, Academic Jobs, provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programmes.
+              The No.1 job board for academics, Academic Jobs, provides an
+              extensive list of opportunities for the future of your career,
+              carefully sectioning the top Higher Ed fellowships, scholarships,
+              and programmes.
             </p>
             <p className="px-7 md:flex hidden">
-            Find all the best PhD positions here…
+              Find all the best PhD positions here…
             </p>
-            
+
             <Link
-                      href={'/academic-talent-pool'}
-                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
-                    >
-                     Join Our Talent Pool
-                    </Link>
-         
-         
-            </div>
+              href={'/academic-talent-pool'}
+              className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
+            >
+              Join Our Talent Pool
+            </Link>
           </div>
+        </div>
+      </div>
+
+      <JobSearchBox q="phd" forceClass="my-6" />
+
+      <section class="jobs_grid job_post_search_container">
+        <div class="filters_panel">
+          <div class="filters_content">
+            <JobFilter />
           </div>
-
-
-      
-
-              <JobSearchBox q= "phd"/>
-              <SearchResults q={{ q: "phd" || 0 }} />
-      </main>
-   
+        </div>
+        <div class="listings_panel">
+          <div class="listings_content">
+            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
+            <SearchResults q={{ q: 'phd' || 0 }} />
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
