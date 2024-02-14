@@ -131,7 +131,7 @@ const SubscribeForm = ({
               tabIndex={1}
               type="text"
               ID="first-name-input"
-              field="01_First_Name"
+              field="01_To_First_Name"
               forceClass="mb-4"
               placeholder="First Name"
               autoComplete="given-name"
@@ -146,7 +146,7 @@ const SubscribeForm = ({
               tabIndex={2}
               type="text"
               ID="last-name-input"
-              field="02_Last_Name"
+              field="02_To_Last_Name"
               forceClass="mb-4"
               placeholder="Last Name"
               autoComplete="family-name"
@@ -159,7 +159,7 @@ const SubscribeForm = ({
               name="00_To_Email"
               register={register}
               errors={errors}
-              tabIndex={1}
+              tabIndex={3}
               type="email"
               field="00_To_Email"
               forceClass=""
@@ -178,7 +178,7 @@ const SubscribeForm = ({
             <InputBlock2
               register={register}
               errors={errors}
-              tabIndex={1}
+              tabIndex={4}
               type="text"
               ID="first-name-input"
               field="01_First_Name"
@@ -193,7 +193,7 @@ const SubscribeForm = ({
             <InputBlock2
               register={register}
               errors={errors}
-              tabIndex={2}
+              tabIndex={5}
               type="text"
               ID="last-name-input"
               field="02_Last_Name"
@@ -206,13 +206,12 @@ const SubscribeForm = ({
             />
           </>
         )}
-
         <InputBlock2
           ID="email-input"
           name="01_Email"
           register={register}
           errors={errors}
-          tabIndex={1}
+          tabIndex={6}
           type="email"
           field="01_Email"
           forceClass=""
@@ -222,53 +221,59 @@ const SubscribeForm = ({
           inputClass={`${rounded}`}
           colSpan={2}
         />
-        <div style={{ display: 'none' }}>
-          <InputBlock2
-            register={register}
-            errors={errors}
-            name="00_Job_ID"
-            label="Job ID"
-            type="text"
-            field="00_Job_ID"
-            forceClass="text-black"
-            placeholder="Job ID"
-            hidden={true}
-          />
-          <InputBlock2
-            register={register}
-            name="01_Organisation_Name"
-            errors={errors}
-            label="Organization Posting this Job (i.e. Agency or University)"
-            type="text"
-            field="01_Organisation_Name"
-            forceClass="text-black"
-            placeholder="Organization Name"
-            autoComplete="organization"
-            hidden={true}
-          />
-          <InputBlock2
-            register={register}
-            name="02_Job_Title"
-            errors={errors}
-            label="Job Post Title"
-            type="text"
-            field="02_Job_Title"
-            forceClass="text-black"
-            placeholder="Job Title"
-            hidden={true}
-          />
-          <InputBlock2
-            register={register}
-            name="03_Job_URL"
-            errors={errors}
-            label="Job Post URL"
-            type="text"
-            field="03_Job_URL"
-            forceClass="text-black"
-            placeholder="Job URL"
-            hidden={true}
-          />
-        </div>
+        {formType === 'standard' && (
+          <div style={{ display: 'none' }}>
+            <InputBlock2
+              register={register}
+              errors={errors}
+              name="00_Job_ID"
+              label="Job ID"
+              type="text"
+              field="00_Job_ID"
+              forceClass="text-black"
+              placeholder="Job ID"
+              hidden={true}
+              tabIndex={100}
+            />
+            <InputBlock2
+              register={register}
+              name="01_Organisation_Name"
+              errors={errors}
+              label="Organization Posting this Job (i.e. Agency or University)"
+              type="text"
+              field="01_Organisation_Name"
+              forceClass="text-black"
+              placeholder="Organization Name"
+              autoComplete="organization"
+              hidden={true}
+              tabIndex={101}
+            />
+            <InputBlock2
+              register={register}
+              name="02_Job_Title"
+              errors={errors}
+              label="Job Post Title"
+              type="text"
+              field="02_Job_Title"
+              forceClass="text-black"
+              placeholder="Job Title"
+              hidden={true}
+              tabIndex={102}
+            />
+            <InputBlock2
+              register={register}
+              name="03_Job_URL"
+              errors={errors}
+              label="Job Post URL"
+              type="text"
+              field="03_Job_URL"
+              forceClass="text-black"
+              placeholder="Job URL"
+              hidden={true}
+              tabIndex={103}
+            />
+          </div>
+        )}
         <div className="text-right">
           <button
             type="submit"

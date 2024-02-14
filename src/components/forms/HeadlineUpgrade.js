@@ -76,7 +76,6 @@ const PostJobForm = ({
   } else {
     content = (
       <>
-        {/* <div className="bg-sky-200">asdgsdfg</div> */}
         <p className="text-xl font-bold text-gray-500">
           Great, let’s get this job fully seen by our amazing audience.
           <br />
