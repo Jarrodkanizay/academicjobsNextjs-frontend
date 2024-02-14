@@ -21,7 +21,7 @@ const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
   return (
     <>
       {content}
-      <div className="flex justify-center gap-4 pt-8 text-white ">
+      <div className="flex justify-center gap-4 text-white">
         <div className="join mx-auto">
           <button
             className={`join-item btn 
