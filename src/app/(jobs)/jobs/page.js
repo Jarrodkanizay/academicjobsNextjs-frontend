@@ -10,7 +10,6 @@ import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import Head from 'next/head';
-
 export default function Page() {
   const searchParams = useSearchParams();
   //const allSearchParams = Object.fromEntries(searchParams1);
@@ -33,7 +32,7 @@ export default function Page() {
   useEffect(() => {
     console.log("===============================", filter1)
     if (filter1.some(obj => obj.filter.includes("Executive "))) {
-      setfilterTypes(p => ({...p, ExecutiveJobs: true }))
+      setfilterTypes(p => ({ ...p, ExecutiveJobs: true }))
     } else {
       setfilterTypes(p => ({ ...p, ExecutiveJobs: false }))
     }
@@ -42,11 +41,6 @@ export default function Page() {
     } else {
       setfilterTypes(p => ({ ...p, HRJobs: false }))
     }
-
-   
-    
-
-
   }, [filter1])
   const {
     isPending: isPendingQty,
