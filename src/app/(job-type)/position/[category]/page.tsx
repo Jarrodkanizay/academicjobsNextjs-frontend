@@ -72,16 +72,28 @@ export default function Page({ params, searchParams }: any) {
           <p className="px-7 mb-4 mt-1">{content1}</p>
         </div>
         <Link
-                      href={'/academic-talent-pool'}
-                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
-                    >
-                     Join Our Talent Pool
-                    </Link>
+          href={'/academic-talent-pool'}
+          className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
+        >
+          Join Our Talent Pool
+        </Link>
       </div>
+      <JobSearchBox q={Name} forceClass="my-6" />
 
-      <JobSearchBox q={Name} />
-      <SearchResults q={{ q: 'position' || 0 }} />
+      <section class="jobs_grid job_post_search_container">
+        <div class="filters_panel">
+          <div class="filters_content">
+            <JobFilter />
+          </div>
+        </div>
+        <div class="listings_panel">
+          <div class="listings_content">
+            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
+            <SearchResults q={{ q: 'position' || 0 }} />
+          </div>
+        </div>
+      </section>
     </div>
   );
-  return <div className="overflow-y w-full">{content}</div>;
+  return { content };
 }
