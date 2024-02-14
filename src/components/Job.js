@@ -70,7 +70,7 @@ const Job = ({ job }) => {
             <div className="mb-1">{company_name}</div>
             <div className="text-gray-700 font-light text-sm">{location}</div>
           </div>
-          <div className="applications-close border-2 rounded px-2 mt-1">
+          <div className="applications-close border-2 rounded px-2 mt-1 ml-2">
             <p className="text-center text-gray-400 text-sm mb-0">Closes</p>
             <div className="text-sm">
               {expiration_date ? (

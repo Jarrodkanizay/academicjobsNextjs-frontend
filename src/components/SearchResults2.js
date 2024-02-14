@@ -1,18 +1,24 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { keepPreviousData, queryOptions, useQuery } from '@tanstack/react-query';
+import {
+  keepPreviousData,
+  queryOptions,
+  useQuery,
+} from '@tanstack/react-query';
 import JobList from '@/components/JobList';
 import BaseApi from '@/lib/store/Base';
 import { BsHandbag } from 'react-icons/bs';
 import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
 import SearchLightbulbIcon from '@/components/icons/SearchLightbulbIcon';
+import SearchListResultsLoader from '@/components/loaders/SearchListResultsLoader';
+
 export default function SearchResults2({
   q,
   l,
   filterOff = false,
   searchMessage = 'Jobs Found',
-  filter1
+  filter1,
 }) {
   console.log('==============SearchResults==================');
   const [page, setPage] = useState(0);
@@ -29,7 +35,7 @@ export default function SearchResults2({
   } = useQuery({
     queryKey: ['jobs', q, page],
     queryFn: async () => {
-      const response = await BaseApi.post('/jobs', { q,l,filter1, page });
+      const response = await BaseApi.post('/jobs', { q, l, filter1, page });
       console.log(response.data);
       console.log('response.data.data', response.data.data);
       return response.data.data;
@@ -68,92 +74,7 @@ export default function SearchResults2({
     }
   };
   if (isFetching) {
-    content = (
-      <div className="container mx-auto flex w-full h-screen justify-between">
-        <div
-          role="status"
-          className="w-[40%] h-screen p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700"
-        >
-          <div className="flex items-center justify-between">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <span className="sr-only">Loading...</span>
-        </div>
-        <div
-          role="status"
-          className="w-[60%] h-screen p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700"
-        >
-          <div className="flex items-center justify-between">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <span className="sr-only">Loading...</span>
-        </div>
-      </div>
-    );
+    content = <SearchListResultsLoader />;
   } else if (isSuccess && data.jobs.length > 0) {
     if (data.jobs.length > 0) {
       console.log('data', data);
