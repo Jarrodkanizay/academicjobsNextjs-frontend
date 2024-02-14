@@ -58,14 +58,14 @@ export default function myPage() {
               View all of the Post Doc jobs that respectable universities now have available on AcademicJobs. Our academic institutions are constantly seeking the greatest, you can apply for fantastic global academic Post Doc positions through our website.</p> */}
       <JobSearchBox q="postdoc" forceClass="my-6" />
 
-      <section class="jobs_grid job_post_search_container">
-        <div class="filters_panel">
-          <div class="filters_content">
+      <section className="jobs_grid job_post_search_container">
+        <div className="filters_panel">
+          <div className="filters_content">
             <JobFilter />
           </div>
         </div>
-        <div class="listings_panel">
-          <div class="listings_content">
+        <div className="listings_panel">
+          <div className="listings_content">
             {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
             <SearchResults q={{ q: 'postdoc' || 0 }} />
           </div>
