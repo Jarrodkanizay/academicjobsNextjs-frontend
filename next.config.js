@@ -44,6 +44,46 @@ const nextConfig = {
         destination: '/career-help',
         permanent: true,
       },
+      {
+        source: '/jobs/general-manager-jobs',
+        destination: '/hr-jobs/generalist-hr',
+        permanent: true,  
+      },
+      {
+        source: '/jobs/student-casual',
+        destination: '/student/casual',
+        permanent: true,  
+      },
+      {
+        source: '/jobs/healthcare-managing-director-jobs',
+        destination: '/faculty/healthcare-administration',
+        permanent: true,  
+      },
+      {
+        source: '/jobs/healthcare-managing-director-jobs',
+        destination: '/faculty/healthcare-administration',
+        permanent: true,  
+      },
+      {
+        source: '/jobs/project-delivery-director-jobs',
+        destination: '/executive/directors',
+        permanent: true,  
+      },
+      {
+        source: '/jobs/head-treasury-jobs',
+        destination: '/executive/heads-department-chairs-department-jobs',
+        permanent: true,  
+      },
+      {
+        source: '/jobs/head-sustainability-jobs',
+        destination: '/faculty/other-science-specialities',
+        permanent: true,  
+      },
+      {
+        source: '/jobs/head-sustainability-jobs',
+        destination: '/faculty/other-science-specialities',
+        permanent: true,  
+      },
     ];
   },
 };

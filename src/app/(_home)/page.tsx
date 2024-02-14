@@ -1275,6 +1275,16 @@ export default function myPage() {
           </span>
         </Link>
       </div> */}
+   
+   <div className="card-actions flex mt-4 mx-auto">
+                  <Link href="/academic-talent-pool" className="btn btn-aj">
+                    Join our Talent Pool
+                  </Link>
+                </div>
+   
+   
+   
+   
     </main>
   );
 }
