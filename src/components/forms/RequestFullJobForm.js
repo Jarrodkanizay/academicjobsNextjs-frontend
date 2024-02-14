@@ -13,6 +13,7 @@ const SubscribeForm = ({
   formName = 'Subscribe to Newsletter',
   buttonText = 'Subscribe',
   thankYouMessage = 'Thanks for subscribing to our newsletter!',
+  formContext = 'single-input',
   formType = 'subscribe',
   placeholder = 'Enter email to Join mailing list',
   jobTitle = '',
@@ -119,23 +120,93 @@ const SubscribeForm = ({
         {/* {errors[field] && (
           <span className="error">{errors[field].message}</span>
         )} */}
-        {formType === 'share' && (
-          <InputBlock2
-            ID="to-email-input"
-            name="00_To_Email"
-            register={register}
-            errors={errors}
-            tabIndex={1}
-            type="email"
-            field="00_To_Email"
-            forceClass=""
-            placeholder={`To: (Enter "to email" to share job)`}
-            autoComplete="email"
-            required={true}
-            inputClass={`input-bordered ${rounded} mb-4`}
-            colSpan={2}
-          />
+
+        {formType === 'multi-input' && (
+          <>
+            <p className="underline-full">Friends Details</p>
+            {/* First name */}
+            <InputBlock2
+              register={register}
+              errors={errors}
+              tabIndex={1}
+              type="text"
+              ID="first-name-input"
+              field="01_First_Name"
+              forceClass="mb-4"
+              placeholder="First Name"
+              autoComplete="given-name"
+              required={true}
+              hidden={false}
+              colSpan={2}
+            />
+            {/* Last name */}
+            <InputBlock2
+              register={register}
+              errors={errors}
+              tabIndex={2}
+              type="text"
+              ID="last-name-input"
+              field="02_Last_Name"
+              forceClass="mb-4"
+              placeholder="Last Name"
+              autoComplete="family-name"
+              hidden={false}
+              required={true}
+              colSpan={2}
+            />
+            <InputBlock2
+              ID="to-email-input"
+              name="00_To_Email"
+              register={register}
+              errors={errors}
+              tabIndex={1}
+              type="email"
+              field="00_To_Email"
+              forceClass=""
+              placeholder={`To: (Enter "to email" to share job)`}
+              autoComplete="email"
+              required={true}
+              inputClass={`${rounded} mb-4`}
+              colSpan={2}
+            />
+            <p className="underline-full mt-8">Your Details</p>
+          </>
         )}
+        {formContext === 'multi-input' && (
+          <>
+            {/* First name */}
+            <InputBlock2
+              register={register}
+              errors={errors}
+              tabIndex={1}
+              type="text"
+              ID="first-name-input"
+              field="01_First_Name"
+              forceClass="mb-4"
+              placeholder="First Name"
+              autoComplete="given-name"
+              required={true}
+              hidden={false}
+              colSpan={2}
+            />
+            {/* Last name */}
+            <InputBlock2
+              register={register}
+              errors={errors}
+              tabIndex={2}
+              type="text"
+              ID="last-name-input"
+              field="02_Last_Name"
+              forceClass="mb-4"
+              placeholder="Last Name"
+              autoComplete="family-name"
+              hidden={false}
+              required={true}
+              colSpan={2}
+            />
+          </>
+        )}
+
         <InputBlock2
           ID="email-input"
           name="01_Email"
@@ -148,7 +219,7 @@ const SubscribeForm = ({
           placeholder={placeholder}
           autoComplete="email"
           required={true}
-          inputClass={`input-bordered ${rounded}`}
+          inputClass={`${rounded}`}
           colSpan={2}
         />
         <div style={{ display: 'none' }}>
@@ -212,34 +283,6 @@ const SubscribeForm = ({
         </div>
       </div>
       {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> */}
-      {/* First name */}
-      {/* <InputBlock2
-          register={register}
-          errors={errors}
-          tabIndex={1}
-          type="text"
-          ID="first-name-input"
-          field="01_First_Name"
-          forceClass=""
-          placeholder="First Name"
-          autoComplete="given-name"
-          required={true}
-          colSpan={2}
-        /> */}
-      {/* Last name */}
-      {/* <InputBlock2
-          register={register}
-          errors={errors}
-          tabIndex={2}
-          type="text"
-          ID="last-name-input"
-          field="02_Last_Name"
-          forceClass=""
-          placeholder="Last Name"
-          autoComplete="family-name"
-          required={true}
-          colSpan={2}
-        /> */}
       {/* </div> */}
     </form>
   );

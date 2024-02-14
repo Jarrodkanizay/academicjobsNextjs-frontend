@@ -8,17 +8,19 @@ type ModalProps = {
   imagePath?: string;
   buttonText?: string;
   thankYouMessage?: string;
-  modalReason?: string;
+  formContext?: string;
+  formType?: string;
 };
 
 const ModalForJobPost = ({
   name,
   heading,
   placeholder = 'Enter email to Join Talent Pool',
-  modalReason = 'standard',
+  formContext = 'single-input',
   imagePath = '/love-messages/i-love-this-job.svg',
   buttonText = 'Join Now',
   thankYouMessage = 'Thanks for joining our Academic Talent Pool!',
+  formType = 'subscribe',
 }: ModalProps) => {
   return (
     <>
@@ -28,10 +30,11 @@ const ModalForJobPost = ({
           <h2 className="text-lg font-bold">{heading}</h2>
           <p className="py-4">
             <RequestFullJobForm
-              formName={`${heading} - Job Post Form`}
+              formName={`${heading} - From Job Post`}
               buttonText={buttonText}
               thankYouMessage={thankYouMessage}
-              formType={modalReason}
+              formContext={formContext}
+              formType={formContext}
               placeholder={placeholder}
             />
           </p>

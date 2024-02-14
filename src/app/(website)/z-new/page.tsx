@@ -32,19 +32,6 @@ export default function myPage() {
       <main className="content-grid">
         <h2 className="underline-full">Job Interactions ModalForJobPost</h2>
         <div className="flex items-center gap-8">
-          {headlineOnly ? (
-            <Link href="#request-job-post" className="btn btn-aj">
-              Apply Now
-            </Link>
-          ) : (
-            <Button
-              title={title}
-              company_name={company_name}
-              how_to_apply={how_to_apply}
-              // buttonText="Apply Now /jobs/[category]/[id]/page.js"
-            />
-          )}
-
           <label htmlFor="share_job_modal">
             <BsFillShareFill
               size={32}
@@ -54,12 +41,13 @@ export default function myPage() {
           </label>
           <ModalForJobPost
             name="share_job_modal"
-            heading="Share this Job Post with a mate"
+            heading="Share this Job Post"
             placeholder="From: (Enter your email)"
             thankYouMessage="Thanks for sharing this job post with your mate!"
             buttonText="Share it!"
-            modalReason="share"
-            imagePath="/love-messages/share-this-job.svg"
+            formContext="multi-input"
+            formType="share"
+            imagePath="/love-messages/let-me-share-the-lov.svg"
           />
 
           <label htmlFor="save_to_favorites_modal">
@@ -71,8 +59,10 @@ export default function myPage() {
             name="save_to_favorites_modal"
             heading="Add to Favorites"
             placeholder="Enter email to Save this Job Post"
-            buttonText="Save"
+            buttonText="Add to Favorites"
             thankYouMessage="We have added this job post to your favorites!"
+            formContext="multi-input"
+            imagePath="/love-messages/get-lost-in-what-you-love.svg"
           />
 
           <label htmlFor="join_talent_pool_modal" className="btn btn-accent">
@@ -82,9 +72,10 @@ export default function myPage() {
             name="join_talent_pool_modal"
             heading="Join Academic Talent Pool"
             placeholder="Enter email to Join Talent Pool"
-            modalReason="standard"
-            buttonText="Join Now"
+            formContext="multi-input"
+            buttonText="Join Now"
             thankYouMessage="Thanks for joining our Academic Talent Pool!"
+            imagePath="/love-messages/find-your-true-love.svg"
           />
         </div>
         {/* The button to open modal */}
