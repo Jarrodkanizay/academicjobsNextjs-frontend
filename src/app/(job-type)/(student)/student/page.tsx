@@ -115,9 +115,24 @@ export default function myPage() {
           </ul>
           <div className="newLine"></div>
         </div> */}
-        <JobSearchBox q="student" />
+
+        <JobSearchBox q="student" forceClass="my-6" />
+
+        <section class="jobs_grid job_post_search_container">
+          <div class="filters_panel">
+            <div class="filters_content">
+              <JobFilter />
+            </div>
+          </div>
+          <div class="listings_panel">
+            <div class="listings_content">
+              {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
+              <SearchResults q={{ q: 'student' || 0 }} />
+            </div>
+          </div>
+        </section>
+
         {/*  */}
-        <SearchResults q={{ q: 'student' || 0 }} />
         {/* <HeroBanner
           mobileMode={true}
           h1="Student Jobs on Campus"
