@@ -10,7 +10,6 @@ import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import Head from 'next/head';
-
 export default function Page() {
   const searchParams = useSearchParams();
   //const allSearchParams = Object.fromEntries(searchParams1);
@@ -30,6 +29,39 @@ export default function Page() {
   const [category, setCategory] = useState('');
   const [filter1, setfilter] = useState([]);
   const [page, setPage] = useState(0);
+  useEffect(() => {
+    console.log("===============================", filter1)
+    // if (filter1.some(obj => obj.filter.includes("Executive "))) {
+    //   setfilterTypes(p => ({ ...p, ExecutiveJobs: true }))
+    // } else {
+    //   setfilterTypes(p => ({ ...p, ExecutiveJobs: false }))
+    // }
+    // if (filter1.some(obj => obj.filter.includes("Human Resources"))) {
+    //   setfilterTypes(p => ({ ...p, HRJobs: true }))
+    // } else {
+    //   setfilterTypes(p => ({ ...p, HRJobs: false }))
+    // }
+    setfilterTypes(p => ({ ...p, ExecutiveJobs: false }));
+    setfilterTypes(p => ({ ...p, HRJobs: false }));
+    setfilterTypes(p => ({ ...p, AdministrationSupportJobs: false }));
+    setfilterTypes(p => ({ ...p, FacultyDepartmentJobs: false }));
+    switch (true) {
+      case filter1.some(obj => obj.filter.includes("Executive ")):
+        setfilterTypes(p => ({ ...p, ExecutiveJobs: true }));
+        break;
+      case filter1.some(obj => obj.filter.includes("Human Resources")): 
+        setfilterTypes(p => ({ ...p, HRJobs: true }));
+        break;
+      case filter1.some(obj => obj.filter.includes("Support /Administration")):
+        setfilterTypes(p => ({ ...p, AdministrationSupportJobs: true }));
+        break;
+      case filter1.some(obj => obj.filter.includes("Academic / Faculty")) :
+        setfilterTypes(p => ({ ...p, FacultyDepartmentJobs: true }));
+        break;
+      default:
+        break;
+    }
+  }, [filter1])
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -56,17 +88,19 @@ export default function Page() {
     enabled: category !== '',
   });
   const filterValues9 = {
-    Country: 'Country',
-    State: 'State',
-    City: 'City',
-    'Job Type(i.e. Faculty, Human Resources)': 'Job Type',
-    'Faculty/Department(i.e. Science, Business)': 'Faculty/Department',
-    'Academic Position Type(i.e. Lecturer, Fellow)': 'Academic Position Type',
-    'Executive Jobs(i.e. Directors, Registrars)': 'Executive Jobs',
-    'Employment Type(i.e. Full-time, casual)': 'Employment Type',
-    'Institution Name': 'Institution Name',
-    'Salary Range in USD': 'Salary Range in USD',
-    'Onsite/Remote': 'Onsite/Remote',
+    Country: "Country",
+    State: "State",
+    City: "City",
+    JobType: "Job Type",
+    ExecutiveJobs: "Executive Jobs",
+    'AdministrationSupportJobs': "Administration Support Jobs",
+    'HRJobs': 'HR Jobs',
+    "FacultyDepartmentJobs": "Faculty/Department",
+    "AcademicPositionType": "Academic Position Type",
+    "EmploymentType": "Employment Type",
+    "InstitutionName": "Institution Name",
+    "SalaryRange": "Salary Range in USD",
+    "OnsiteRemote": "Onsite/Remote",
   };
   //const region = useSelector((state) => state.posts.region);
   //const [query, setQuery] = useState(Object.fromEntries(useSearchParams().entries()));
@@ -75,113 +109,110 @@ export default function Page() {
   //alert(location?.state?.filter1)
   ///console.log('router.query', searchParams);
   return (
-    <>
-      <Head>
-        <title>Your Page Title</title>
-        <meta name="description" content="Your Page Description" />
-        {/* other metadata here */}
-      </Head>
-      <main>
-        <div className="w-full bg-gray-100 py-4 mb-4 mt-8">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-screen-xl mx-auto ">
-              <JobSearchBox forceClass="hidden md:block" />
-              <JobSearchBox2 forceClass="block md:hidden" />
-            </div>
+    <main>
+      <div className="w-full bg-gray-100 py-4 mb-4 mt-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-screen-xl mx-auto ">
+            <JobSearchBox forceClass="hidden md:block" />
+            <JobSearchBox2 forceClass="block md:hidden" />
           </div>
         </div>
-        <div className=" mx-auto max-w-5xl  flex flex-col hidden md:block ">
-          {
-            // 顶层已选X  top
-            filter1.length > 0 && (
-              <div className="md:flex md:gap-4 md:flex-wrap pb-2">
-                {filter1.map(({ category, filter }, i) => (
-                  <button
-                    key={i}
-                    className="btn  btn-xs bg-blue-900 text-white "
-                    onClick={() => {
-                      const updatedFilter = filter1.filter(
-                        (_, index) => index !== i
-                      );
-                      setPage(0);
-                      setfilter(updatedFilter);
-                      //dispatch(setfilter(updatedFilter));
-                    }}
-                  >
-                    {`${filter} X`}
-                  </button>
-                ))}
-              </div>
-            )
-          }
-          <div className="flex gap-4 flex-wrap">
-            {filterTypes?.length > 0 && // 中层大目录m
-              filterTypes.map((filterType, i) => (
+      </div>
+      <div className=" mx-auto max-w-5xl  flex flex-col hidden md:block ">
+        {
+          // 顶层已选X  top
+          filter1.length > 0 && (
+            <div className="md:flex md:gap-4 md:flex-wrap pb-2">
+              {filter1.map(({ category, filter }, i) => (
                 <button
                   key={i}
-                  className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${
-                    category === filterType
-                      ? 'bg-orange-500 text-white border-orange-500'
-                      : 'bg-white border-gray-500'
-                  }`}
+                  className="btn  btn-xs bg-blue-900 text-white "
                   onClick={() => {
-                    if (category === filterType) {
-                      setIsShowFilter((prev) => !prev);
-                    } else {
-                      setIsShowFilter(true);
-                    }
-                    console.log(filterType);
-                    setCategory(filterType);
+                    const updatedFilter = filter1.filter(
+                      (_, index) => index !== i
+                    );
+                    setPage(0);
+                    setfilter(updatedFilter);
+                    //dispatch(setfilter(updatedFilter));
                   }}
                 >
-                  {filterValues9[filterType]}
+                  {`${filter} X`}
                 </button>
               ))}
-          </div>
-          {isShowFilter && (
-            <div className="grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
-              {filters?.length > 0 && // 低层小目录b
-                filters.map(({ filter, job_count }, i) => (
-                  <button
-                    key={i}
-                    className="text-left text-gray-500 text-sm truncate"
-                    onClick={() => {
-                      setPage(0);
-                      setfilter([...filter1, { category, filter }]);
-                      //dispatch(setfilter([...filter1, { category, filter }]));
-                      setIsShowFilter(false);
-                    }}
-                  >{`${filter ? filter : 'Others'}  (${job_count})`}</button>
-                ))}
-              {filters?.length == 23 && (
-                <button
-                  className="btn btn-primary btn-xs"
-                  onClick={() => {
-                    // navigate(`/advanced-search/${category}`);
-                    navigate(`/advanced-search/${category}`, {
-                      state: { filter1 },
-                    });
-                  }}
-                >
-                  Show All
-                </button>
-              )}
             </div>
-          )}
+          )
+        }
+        <div className="flex gap-4 flex-wrap">
+          {Object.entries(filterTypes).map(([filterType, showYN], i) => ( // 中层大目录m
+            <button
+              key={i}
+              className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
+                ? "bg-orange-500 text-white border-orange-500"
+                : "bg-white border-gray-500"
+                }
+                  ${showYN
+                  ? "block"
+                  : "hidden"
+                }
+                  `}
+              onClick={() => {
+                if (category === filterType) {
+                  setIsShowFilter((prev) => !prev);
+                } else {
+                  setIsShowFilter(true);
+                }
+                console.log(filterType);
+                setCategory(filterType);
+              }}
+            >
+              {filterValues9[filterType]}
+            </button>
+          ))}
         </div>
-        <section class="jobs_grid job_post_search_container">
-          <div class="filters_panel">
-            <div class="filters_content">
-              <JobFilter />
-            </div>
+        {isShowFilter && (
+          <div className="grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
+            {filters?.length > 0 && // 低层小目录b
+              filters.map(({ filter, job_count }, i) => (
+                <button
+                  key={i}
+                  className="text-left text-gray-500 text-sm truncate"
+                  onClick={() => {
+                    setPage(0);
+                    setfilter([...filter1, { category, filter }]);
+                    //dispatch(setfilter([...filter1, { category, filter }]));
+                    setIsShowFilter(false);
+                  }}
+                >{`${filter ? filter : "Others"
+                  }  (${job_count})`}</button>
+              ))}
+            {filters?.length == 23 && (
+              <button
+                className="btn btn-primary btn-xs"
+                onClick={() => {
+                  // navigate(`/advanced-search/${category}`);
+                  navigate(`/advanced-search/${category}`, {
+                    state: { filter1 },
+                  });
+                }}
+              >
+                Show All
+              </button>
+            )}
           </div>
-          <div class="listings_panel">
-            <div class="listings_content">
-              <SearchResults1 q={{ q: q, l: l || '', filter1 }} />
-            </div>
+        )}
+      </div>
+      <section class="jobs_grid job_post_search_container">
+        <div class="filters_panel">
+          <div class="filters_content">
+            <JobFilter />
           </div>
-        </section>
-      </main>
-    </>
+        </div>
+        <div class="listings_panel">
+          <div class="listings_content">
+            <SearchResults1 q={{ q: q, l: l || "", filter1 }} />
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

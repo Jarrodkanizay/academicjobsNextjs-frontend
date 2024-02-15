@@ -12,7 +12,7 @@ export const blogData = [
     image_url: `/blogs/automated-quick-job-post-technology.jpg`,
     alt: `Revolutionizing Recruitment: How Quick Job Post Technology is Changing the Game for Colleges & Universities`,
     summary:
-      'Professionals may flourish in a dynamic and cutting-edge higher education setting by pursuing a career in academic roles at Harvard University.',
+      'Professionals interested in a career in academia at may thrive in a vibrant and innovative environment for higher learning.',
     tags: [],
     keywords:
       'higher ed Quick Job Post, higher education Quick Job Post, Quick Job Post Technology, Academic Quick Job Post Technology, Time Saving Job Posts, Save Time Posting Jobs',

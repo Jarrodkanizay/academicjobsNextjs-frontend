@@ -2440,12 +2440,6 @@ export default function myPage() {
                   Universidade Federal do Rio Grande do Sul
                 </Link>
               </li>
-
-              <li className="pb-6">
-                <Link href="/employers/universidade-federal-de-são-paulo/11526/">
-                  Universidade Federal de São Paulo (UNIFESP)
-                </Link>
-              </li>
             </ul>
             <ul>
               <li className="mb-2 text-[#f4a10c] font-bold mb-2">Argentina</li>
