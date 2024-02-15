@@ -49,13 +49,13 @@ export default function Page() {
       case filter1.some(obj => obj.filter.includes("Executive ")):
         setfilterTypes(p => ({ ...p, ExecutiveJobs: true }));
         break;
-      case filter1.some(obj => obj.filter.includes("Human Resources")): 
+      case filter1.some(obj => obj.filter.includes("Human Resources")):
         setfilterTypes(p => ({ ...p, HRJobs: true }));
         break;
       case filter1.some(obj => obj.filter.includes("Support /Administration")):
         setfilterTypes(p => ({ ...p, AdministrationSupportJobs: true }));
         break;
-      case filter1.some(obj => obj.filter.includes("Academic / Faculty")) :
+      case filter1.some(obj => obj.filter.includes("Academic / Faculty")):
         setfilterTypes(p => ({ ...p, FacultyDepartmentJobs: true }));
         break;
       default:
@@ -185,7 +185,7 @@ export default function Page() {
                 >{`${filter ? filter : "Others"
                   }  (${job_count})`}</button>
               ))}
-            {filters?.length == 23 && (
+            {/* {filters?.length == 23 && (
               <button
                 className="btn btn-primary btn-xs"
                 onClick={() => {
@@ -197,7 +197,7 @@ export default function Page() {
               >
                 Show All
               </button>
-            )}
+            )} */}
           </div>
         )}
       </div>
