@@ -9,7 +9,7 @@ export const metadata = {
     absolute: 'The Best Universities to work for Globally', //Option 2 overrides the title in layout.tsx
   },
   description:
-    'Browse through our comprehensive list of universities from around the world and find the best one for you. Whether you want to study in Australia, Canada, UK, USA, or anywhere else, we have the information you need to make an informed decision.',
+    'Explore top universities globally, including Australia, Canada, UK, USA, and beyond, to make an informed choice for your studies.',
   keywords: 'Find Universities. Find employers, Find institutions',
 };
 
