@@ -382,6 +382,16 @@ const nextConfig = {
         destination: '/employers/university-of-tasmania/3867',
         permanent: true,
       },
+      {
+        source: '/employers/12787/university-of-kwazulu-natal',
+        destination: '/employers/university-of-kwazulu-natal/12787',
+        permanent: true,
+      },
+      {
+        source: '/employers/universidade-federal-de-são-paulo/11526',
+        destination: '/employers',
+        permanent: true,
+      },
     ];
   },
 };
