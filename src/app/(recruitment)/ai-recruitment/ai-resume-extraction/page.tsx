@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
-    'Academic Jobs is the leading AI Recruitment Platform specializing in helping Higher Education Institutions, Research & Development (R&D) Industries, and many other sectors find candidates with our specialized AI tools that significantly enhance the job posting process..',
-  keywords: 'AI Recruitment Platform, AI Recruitment, Number 1 AI Recruitment Platform',
+    'With its advanced AI technologies that greatly improve the job posting process, Academic Jobs is the top AI recruitment platform, enabling high schools, research and development (R&D) companies, and several other industries discover people.',
+  keywords: 'Worlds Best AI Resume Extraction & Parsing Tool',
 };
 export default function myPage() {
   return (
