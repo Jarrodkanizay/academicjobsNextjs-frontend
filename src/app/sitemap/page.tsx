@@ -675,7 +675,7 @@ export default function myPage() {
           </ul>
         </div>
 
-        <div className="bg-white flex flex-col  ">
+        {/* <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
             <Link href="/position/">Find Academic Positions / Roles</Link>
           </h2>
@@ -691,7 +691,7 @@ export default function myPage() {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
