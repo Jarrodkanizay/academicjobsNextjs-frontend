@@ -72,65 +72,50 @@ Use university rankings to search for jobs in higher education.
         <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl max-w-screen-2xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
-                <li className='mb-1 text-[#f4a10c] font-bold'>England</li>
-                <li><Link href="/employers/university-of-cambridge/12635/">University of
-                  Cambridge</Link></li>
-                <li><Link href="/employers/university-of-oxford/3099/">University of
-                  Oxford</Link>
-                </li>
-                <li><Link href="/employers/university-college-london/12527/">University
-                  College London</Link>
-                </li>
-                <li><Link href="/employers/imperial-college-london/3129/">Imperial
-                  College London</Link></li>
-                <li><Link href="/employers/london-school-of-economics-and-political-science/3153/">London School
-                  of Economics and Political Science</Link>
-                </li>
-                <li><Link href="/employers/university-of-manchester/3833/">University of
-                  Manchester</Link></li>
-                <li><Link href="/employers/university-of-birmingham/12614/">University of
-                  Birmingham</Link></li>
-                <li><Link href="/employers/university-of-leeds/12797/">University of
-                  Leeds</Link>
-                </li>
-              </ul>
-              <ul>
-                <li className='mb-1 text-[#f4a10c] font-bold'>Scotland</li>
-                <li><Link href="/employers/university-of-edinburgh/12681/">University of
-                  Edinburgh</Link></li>
-                <li><Link href="/employers/university-of-glasgow/12713/">University of
-                  Glasgow</Link>
-                </li>
-                <li><Link href="/employers/university-of-aberdeen/12555/">University of
-                  Aberdeen</Link></li>
-                <li><Link href="/employers/university-of-st-andrews/13005/">University of
-                  St Andrews</Link></li>
-                <li><Link href="/employers/university-of-dundee/12669/">University of
-                  Dundee</Link>
-                </li>
-              </ul>
-              <ul>
-                <li className='mb-1 text-[#f4a10c] font-bold'>Wales</li>
-                <li><Link href="/employers/cardiff-university/6252/">Cardiff
-                  University</Link>
-                </li>
-                <li><Link href="/employers/swansea-university/10538/">Swansea
-                  University</Link>
-                </li>
-                <li><Link href="/employers/aberystwyth-university/13115/">Aberystwyth
-                  University</Link></li>
-                <li><Link href="/employers/bangor-university/13116/">Bangor
-                  University</Link>
-                </li>
-              </ul>
-              <ul>
-                <li className='mb-1 text-[#f4a10c] font-bold'>Northern Ireland</li>
-                <li><Link href="/employers/queens-university-belfast/10799/">Queen's
-                  University Belfast</Link>
-                </li>
-                <li><Link href="/employers/ulster-university/13098/">Ulster
-                  University</Link>
-                </li>
+              <li className='mb-1 '><Link href="/jobs/brazil/" className='text-[#f4a10c] font-bold'>Brazil</Link></li>
+                    <li><Link href="/employers/university-of-sao-paulo/11463/">University of São Paulo</Link>
+                    </li>
+                    <li><Link href="/employers/university-of-campinas/11490/">University of Campinas</Link>
+                    </li>
+
+                    <li><Link href="/employers/universidade-federal-do-rio-grande-do-sul/11544/">Universidade Federal do Rio Grande do Sul</Link>
+                    </li>
+
+                  
+
+
+
+                  </ul>
+                  <ul>
+                    <li className='mb-1 '><Link href="/jobs/argentina/" className='text-[#f4a10c] font-bold'>Argentina</Link></li>
+                    <li><Link href="/employers/universidad-de-buenos-aires/11196/">Universidad de Buenos
+                      Aires</Link>
+                    </li>
+
+                    <li className='mb-1 '><Link href="/jobs/colombia/" className='text-[#f4a10c] font-bold'>Colombia</Link></li>
+                    <li><Link href="/employers/universidad-de-los-andes/11308/">Universidad de los
+                      Andes</Link></li>
+
+                    <li><Link href="/employers/icesi-university/11648/">Icesi University</Link></li>
+                  </ul>
+                  <ul>
+                    <li className='mb-1 '><Link href="/jobs/chile/" className='text-[#f4a10c] font-bold'>Chile</Link></li>
+                    <li><Link href="/employers/pontificia-universidad-catolica-de-chile/9739/">Pontificia Universidad
+                      Catolica de Chile</Link></li>
+                    <li><Link href="/employers/universidad-alberto-hurtado/11012/">Universidad Alberto
+                      Hurtado</Link>
+                    </li>
+                    <li><Link href="/employers/universidad-de-santiago-de-chile/11384/">Universidad de
+                      Santiago de Chile</Link></li>
+                    <li><Link href="/employers/university-of-antofagasta/11189/">University of Antofagasta</Link></li>
+                  </ul>
+                  <ul>
+                    <li className='mb-1 '><Link href="/jobs/peru/" className='text-[#f4a10c] font-bold'>Peru</Link></li>
+                    <li><Link href="/employers/universidad-alas-peruanas/11010/">Universidad Alas
+                      Peruanas</Link>
+                    </li>
+                    <li><Link href="/employers/universidad-peruana-cayetano-heredia/11856/">Universidad Peruana Cayetano Heredia</Link>
+                    </li>
               </ul>
             </div>
           </div>

@@ -1528,12 +1528,7 @@ Use university rankings to search for jobs in higher education.
                     Universidade Federal do Rio Grande do Sul
                   </Link>
                 </li>
-                <li>
-                  <Link href="/employers/universidade-federal-de-são-paulo/11526/">
-                    Universidade Federal de São Paulo (UNIFESP)
-                  </Link>
-                </li>
-              </ul>
+                </ul>
               <ul>
                 <li><h3>Argentina</h3></li>
                 <li>

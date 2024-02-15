@@ -10,7 +10,6 @@ import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import Head from 'next/head';
-
 export default function Page() {
   const searchParams = useSearchParams();
   //const allSearchParams = Object.fromEntries(searchParams1);
@@ -32,21 +31,36 @@ export default function Page() {
   const [page, setPage] = useState(0);
   useEffect(() => {
     console.log("===============================", filter1)
-    if (filter1.some(obj => obj.filter.includes("Executive "))) {
-      setfilterTypes(p => ({...p, ExecutiveJobs: true }))
-    } else {
-      setfilterTypes(p => ({ ...p, ExecutiveJobs: false }))
+    // if (filter1.some(obj => obj.filter.includes("Executive "))) {
+    //   setfilterTypes(p => ({ ...p, ExecutiveJobs: true }))
+    // } else {
+    //   setfilterTypes(p => ({ ...p, ExecutiveJobs: false }))
+    // }
+    // if (filter1.some(obj => obj.filter.includes("Human Resources"))) {
+    //   setfilterTypes(p => ({ ...p, HRJobs: true }))
+    // } else {
+    //   setfilterTypes(p => ({ ...p, HRJobs: false }))
+    // }
+    setfilterTypes(p => ({ ...p, ExecutiveJobs: false }));
+    setfilterTypes(p => ({ ...p, HRJobs: false }));
+    setfilterTypes(p => ({ ...p, AdministrationSupportJobs: false }));
+    setfilterTypes(p => ({ ...p, FacultyDepartmentJobs: false }));
+    switch (true) {
+      case filter1.some(obj => obj.filter.includes("Executive ")):
+        setfilterTypes(p => ({ ...p, ExecutiveJobs: true }));
+        break;
+      case filter1.some(obj => obj.filter.includes("Human Resources")): 
+        setfilterTypes(p => ({ ...p, HRJobs: true }));
+        break;
+      case filter1.some(obj => obj.filter.includes("Support /Administration")):
+        setfilterTypes(p => ({ ...p, AdministrationSupportJobs: true }));
+        break;
+      case filter1.some(obj => obj.filter.includes("Academic / Faculty")) :
+        setfilterTypes(p => ({ ...p, FacultyDepartmentJobs: true }));
+        break;
+      default:
+        break;
     }
-    if (filter1.some(obj => obj.filter.includes("Human Resources"))) {
-      setfilterTypes(p => ({ ...p, HRJobs: true }))
-    } else {
-      setfilterTypes(p => ({ ...p, HRJobs: false }))
-    }
-
-   
-    
-
-
   }, [filter1])
   const {
     isPending: isPendingQty,
@@ -81,12 +95,12 @@ export default function Page() {
     ExecutiveJobs: "Executive Jobs",
     'AdministrationSupportJobs': "Administration Support Jobs",
     'HRJobs': 'HR Jobs',
-    "Faculty_Department": "Faculty/Department",
+    "FacultyDepartmentJobs": "Faculty/Department",
     "AcademicPositionType": "Academic Position Type",
     "EmploymentType": "Employment Type",
     "InstitutionName": "Institution Name",
     "SalaryRange": "Salary Range in USD",
-    "Onsite_Remote": "Onsite/Remote",
+    "OnsiteRemote": "Onsite/Remote",
   };
   //const region = useSelector((state) => state.posts.region);
   //const [query, setQuery] = useState(Object.fromEntries(useSearchParams().entries()));
@@ -129,27 +143,31 @@ export default function Page() {
           )
         }
         <div className="flex gap-4 flex-wrap">
-          {filterTypes?.length > 0 && // 中层大目录m
-            filterTypes.map((filterType, i) => (
-              <button
-                key={i}
-                className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
-                  ? "bg-orange-500 text-white border-orange-500"
-                  : "bg-white border-gray-500"
-                  }`}
-                onClick={() => {
-                  if (category === filterType) {
-                    setIsShowFilter((prev) => !prev);
-                  } else {
-                    setIsShowFilter(true);
-                  }
-                  console.log(filterType);
-                  setCategory(filterType);
-                }}
-              >
-                {filterValues9[filterType]}
-              </button>
-            ))}
+          {Object.entries(filterTypes).map(([filterType, showYN], i) => ( // 中层大目录m
+            <button
+              key={i}
+              className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
+                ? "bg-orange-500 text-white border-orange-500"
+                : "bg-white border-gray-500"
+                }
+                  ${showYN
+                  ? "block"
+                  : "hidden"
+                }
+                  `}
+              onClick={() => {
+                if (category === filterType) {
+                  setIsShowFilter((prev) => !prev);
+                } else {
+                  setIsShowFilter(true);
+                }
+                console.log(filterType);
+                setCategory(filterType);
+              }}
+            >
+              {filterValues9[filterType]}
+            </button>
+          ))}
         </div>
         {isShowFilter && (
           <div className="grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
