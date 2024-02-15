@@ -19,7 +19,7 @@ const Button = ({
   return (
     <button
       // target="_blank"
-      className=" py-2 bg-[#f4a10c] text-white font-bold rounded-3xl animate-pulse"
+      className="md:px-4 py-2 bg-[#f4a10c] text-white font-bold rounded-3xl animate-pulse"
       data-toggle="modal"
       data-target="#apply-modal"
       data-title={title}
