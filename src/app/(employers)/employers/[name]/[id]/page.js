@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { MdLocationPin } from 'react-icons/md';
 import { AiOutlineGlobal } from 'react-icons/ai';
 import SearchResults from '@/components/SearchResults';
-import JobSearchBox from '@/components/JobSearchBox';
+import JobSearchBox2 from '@/components/JobSearchBox2';
 import JobFilter from '@/components/JobFilter';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -63,119 +63,111 @@ const Employer = async ({ params }) => {
       To join the  ${company_name} Talent Pool, please <a href="#" style="text-decoration: underline; color: blue" >click here</a>
       `;
   }
+
+  //Theme settings defaults
+  let employerTheme = 'aj';
+  let headerTextColor = 'text-gray-400';
+  let headerBG = 'bg-slate-200';
+  let logoBG = 'bg-white';
+  let profileBG = 'bg-white';
+  let panel = '';
+
+  // Theme settings for Queensland University of Technology (QUT)
+  if (company_name == 'Queensland University of Technology (QUT)') {
+    employerTheme = 'qut';
+    headerTextColor = 'text-white';
+    headerBG = 'bg-blue-950';
+    profileBG = 'bg-blue-950';
+    panel = 'p-4 rounded-lg';
+  }
+
+  // Theme settings for Bond University
+  if (company_name == 'Bond University') {
+    employerTheme = 'bond';
+    logoBG = 'bg-[#011a4d]';
+    profileBG = 'bg-[#f1b821]';
+    panel = 'p-4 rounded-lg';
+  }
+
   content = (
-    <div className="flex-col gap-4  mx-auto">
-      <article
-        className={`media ${
-          company_name == 'Queensland University of Technology (QUT)'
-            ? 'bg-blue-950'
-            : 'bg-slate-200 w-full'
-        } p-8 mb-4  mx-auto`}
-      >
-        <div className="md:flex md:justify-start .col-auto mx-auto max-w-screen-xl gap-4">
-          <div className="w-[15rem] h-[15rem] rounded-md bg-white mr-4 p-3">
-            <Image
-              src={
-                logo
-                  ? `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}`
-                  : '/favicon.png'
-              }
-              width={300}
-              height={300}
-              //fill={true}
-              alt={`${company_name} Logo`}
-              className="w-full h-full object-contain "
-            />
-          </div>
-          <div className="md:flex md:flex-col p-4">
-            <h1 className="text-4xl leading-[2rem] font-bold text-gray-500 ">
-              {company_name}
-            </h1>
-            <div className="flex gap-2">
-              <p className="text-xl  leading-[.75rem]  font-bold text-yellow-500 ">
-                Employer Ranking -
-              </p>
-              <p className="text-2xl  leading-[.75rem]  font-bold text-yellow-500 ">
-                {' '}
-                ★ {ranking}
-              </p>
+    <>
+      <div className="flex-col gap-4">
+        {/* Header Area */}
+        <div className={`media ${headerBG} p-8 mb-4`}>
+          <div className="md:flex md:justify-start mx-auto max-w-screen-xl gap-4">
+            <div
+              className={`w-[15rem] h-[15rem] rounded-md ${logoBG} mr-4 p-3`}
+            >
+              <Image
+                src={
+                  logo
+                    ? `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}`
+                    : '/favicon.png'
+                }
+                width={300}
+                height={300}
+                //fill={true}
+                alt={`${company_name} Logo`}
+                className="w-full h-full object-contain "
+              />
             </div>
-            <div className="md:flex-col  md:gap-6 ml-[-3px] pt-6">
-              <div className="text-gray-400 md:flex md:items-center md:justify-start md:gap-2 .col-auto">
-                <MdLocationPin />
-                {location}
+            <div className="md:flex md:flex-col p-4">
+              <h1
+                className={`text-4xl leading-[2rem] font-bold ${headerTextColor}`}
+              >
+                {company_name}
+              </h1>
+              <div className="flex gap-2">
+                <p className="text-xl leading-[.75rem] font-bold text-yellow-500 ">
+                  Employer Ranking -
+                </p>
+                <p className="text-2xl  leading-[.75rem]  font-bold text-yellow-500 ">
+                  ★ {ranking}
+                </p>
               </div>
-              {website && (
-                <div className="text-gray-400 md:flex md:items-center md:justify-start md:gap-2">
-                  <AiOutlineGlobal />
-                  <a href={website} className="">
-                    {website}
-                  </a>
+              <div
+                className={`md:flex-col md:gap-6 ml-[-3px] pt-6 ${headerTextColor}`}
+              >
+                <div className="md:flex md:items-center md:justify-start md:gap-2">
+                  <MdLocationPin />
+                  {location}
                 </div>
-              )}
+                {website && (
+                  <div className="md:flex md:items-center md:justify-start md:gap-2">
+                    <AiOutlineGlobal />
+                    <a href={website} className="">
+                      {website}
+                    </a>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
-      </article>
-      <div className="content-grid md:mx-auto md:flex">
-        <div className="md:flex">
+      </div>
+      <section className="jobs_grid job_post_panel_container">
+        <div className={`post_panel employer_panel ${employerTheme} mt-6`}>
           {
-            <div
-              className={`max-h-50 overflow-y  p-4 mb-4 rounded-lg  md:w-1/2 ${
-                company_name == 'Bond University' && 'bg-[#f1b821]'
-              } ${
-                company_name == 'Queensland University of Technology (QUT)' &&
-                'bg-blue-950'
-              }`}
-            >
-              <div
-                className={`wrapper  ${
-                  company_name == 'Queensland University of Technology (QUT)' &&
-                  'text-white'
-                }`}
-              >
+            <div className={`${panel} ${profileBG}`}>
+              <div>
                 <div
                   dangerouslySetInnerHTML={{ __html: company_description1 }}
                 />
-                {company_name ===
-                  'Queensland University of Technology (QUT)' && (
-                  <style>
-                    {`
-        .wrapper span {
-          color: white !important;
-        }
-        .wrapper a {
-          color: yellow !important;
-        }
-      `}
-                  </style>
-                )}
-                {company_name === 'Bond University' && (
-                  <style>
-                    {`
-        .wrapper span {
-          color: white !important;
-        }
-        .wrapper a {
-          color: white !important;
-        }
-      `}
-                  </style>
-                )}
               </div>
             </div>
           }
-          <div className="md:w-1/2 ">
-            <JobSearchBox />
+        </div>
+        <div className="listings_panel">
+          <div className="listings_content">
+            <div className="search_panel">
+              <JobSearchBox2 />
+            </div>
             <SearchResults q={{ employer_id: id || 0 }} filterOff={true} />
           </div>
         </div>
-        <div className="hidden" id="my-target">
-          <SearchResults id="about" q={{ employer_id: id || 0 }} />{' '}
-        </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
-  return <div className="overflow-y w-full">{content}</div>;
+  return content;
 };
 export default Employer;
