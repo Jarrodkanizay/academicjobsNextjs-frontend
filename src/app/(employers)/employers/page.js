@@ -73,7 +73,7 @@ export default function myPage() {
             achievements, and cultures to find your perfect match.
           </p>
         </div>
-        <ul className="md:flex flex-wrap gap-8 my-12 justify-center items-center max-w-[900px] mx-auto">
+        <ul className="md:flex flex-wrap gap-8 my-12 justify-center items-center max-w-[980px] mx-auto">
           <li className="region">
             <a href="#section" className="scroll-smooth md:scroll-auto ">
               United States <span className="flag">🇺🇸</span>
