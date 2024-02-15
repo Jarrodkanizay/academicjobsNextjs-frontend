@@ -115,8 +115,7 @@ export const metadata = {
                     <li><Link href="/employers/universidade-federal-do-rio-grande-do-sul/11544/">Universidade Federal do Rio Grande do Sul</Link>
                     </li>
 
-                    <li><Link href="/employers/universidade-federal-de-são-paulo/11526/">Universidade Federal de São Paulo (UNIFESP)</Link>
-                    </li>
+                  
 
 
 

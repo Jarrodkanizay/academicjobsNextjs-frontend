@@ -60,11 +60,11 @@ const HeroBanner = ({
 
   return (
     <section
-      className={`hero full-width max-h-fit py-8 mb-16 ${bgColorClass} ${reorderCss}`}
+      className={`hero max-h-fit py-4 mb-16 ${bgColorClass} ${reorderCss}`}
     >
-      <div className="container mx-auto">
+      <div className="container">
         <div
-          className={`hero-content flex-col lg:flex-row${
+          className={`hero-content flex-col gap-8 lg:flex-row${
             imgRight ? '-reverse' : ''
           }`}
         >

@@ -6,14 +6,14 @@ import RankingRegistrationFormAcademics from '@/components/forms/RankingRegistra
 // import 'react-quill/dist/quill.snow.css';
 // import InputBlock2 from '@/components/forms/InputBlock2';
 export const metadata: Metadata = {
-  title: 'Academic Talent Pool', //Option 1 replaces the %s in layout.tsx
+  title: 'my academic rank', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
-    'Join our exclusive Talent Pool to connect and collaborate with top employers and academics worldwide. Sign up today to explore exciting job opportunities, gain industry exposure, and fast-track your career. Perfect for academics seeking to elevate their career paths.',
+    'Become a member of our exclusive Talent Pool to network and work together with leading companies and scholars globally. Join now to see what fascinating jobs are available, network with professionals in the field, and further your career. ideal for academics looking to advance in their professions.',
   keywords:
-    'talent pool, career opportunities, job seekers, find academic networking, academic exposure, professional networking, industry exposure, employment, career growth, job application, talent database, professional development, sign up, global job market',
+    'my academic rank',
 };
 //WIP
 export default function Page() {
