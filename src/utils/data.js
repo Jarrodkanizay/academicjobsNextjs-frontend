@@ -37,11 +37,11 @@ export const filterType  = {
     ExecutiveJobs: false,
     AdministrationSupportJobs: false,
     HRJobs: false,
-    Faculty_Department: true,
+    FacultyDepartmentJobs: false,
     AcademicPositionType: true,
     EmploymentType: true,
     SalaryRange: true,
-    Onsite_Remote: true,
+    OnsiteRemote: true,
 };
 export const countryMappings = {
     australia: 'Australia',
