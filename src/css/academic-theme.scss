@@ -122,7 +122,6 @@ html {
       font-family: 'Arial';
       color: #174f89;
     }
-
     p,
     a,
     button,
@@ -478,9 +477,46 @@ html {
     }
 
     /* ############################### */
+    /* Top Universities Region Styles */
+    /* ############################### */
+    .regions h3 {
+      margin-top: 30px;
+      margin-bottom: 4px;
+    }
+    .regions li:first-child h3 {
+      margin-top: 0;
+    }
+    .regions * {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .regions li {
+      margin-bottom: 10px;
+      padding: 1px;
+    }
+    .regions li:hover a {
+      background-color: #e5e5e5;
+      text-decoration: underline;
+    }
+    .regions li:last-child {
+    }
+
+    .region {
+      background-color: var(--color-primary-light);
+      padding: 4px 12px;
+      border-radius: 100vmax;
+      border-color: var(--color-primary);
+      border-width: 1px;
+      margin-bottom: 24px;
+    }
+    .region:hover {
+      background-color: var(--aj-pink);
+      border-color: var(--aj-pink);
+      color: white;
+    }
+
     /* ############################### */
     /* Search Listing Styles */
-    /* ############################### */
     /* ############################### */
     .job_result,
     .job_result * {
@@ -762,6 +798,39 @@ html {
     }
     .card {
       background-color: white;
+    }
+  }
+
+  // Employer Themes University Theme
+  .employer_panel {
+    // QUT styles
+    &.qut {
+      * {
+        color: white !important;
+      }
+      a {
+        color: yellow !important;
+        text-decoration: underline;
+      }
+      a:hover {
+        color: white !important;
+      }
+    }
+    // Bond Styles
+    &.bond {
+      * {
+        color: white !important;
+      }
+      a {
+        color: rgb(14, 96, 159) !important;
+        text-decoration: underline;
+      }
+      a:hover {
+        color: white !important;
+      }
+      h2 {
+        color: #3b5683 !important;
+      }
     }
   }
 }
