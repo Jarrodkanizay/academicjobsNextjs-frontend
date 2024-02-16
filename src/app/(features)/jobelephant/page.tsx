@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
-    'All prices are in USD, switch region to change prices. Ads are live for up to 60 days, and include the employer logo and ad performance metrics.',
+    'To alter pricing, select a different area. All prices are shown in USD. The employer logo and ad success indicators are included in the live ads, which run for up to 60 days.',
   keywords: 'Post Academic Jobs, Post a Job AcademicJobs',
 };
 
