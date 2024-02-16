@@ -95,11 +95,11 @@ const nextConfig = {
         destination: '/faculty/other-science-specialities',
         permanent: true,
       },
-      {
-        source: '/jobs/construction-manager-jobs',
-        destination: '/faculty/construction-building-trades/',
-        permanent: true,
-      },
+      // {
+      //   source: '/jobs/construction-manager-jobs',
+      //   destination: '/faculty/construction-building-trades/',
+      //   permanent: true,
+      // },
 
       {
         source: '/jobs/student-full-time',
@@ -107,16 +107,16 @@ const nextConfig = {
         permanent: true,
       },
 
-      {
-        source: '/jobs/chief-technology-officer-jobs',
-        destination: '/faculty/information-systems-technology/',
-        permanent: true,
-      },
-      {
-        source: '/jobs/ceo-md-jobs',
-        destination: '/faculty/business-management/',
-        permanent: true,
-      },
+      // {
+      //   source: '/jobs/chief-technology-officer-jobs',
+      //   destination: '/faculty/information-systems-technology/',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/jobs/ceo-md-jobs',
+      //   destination: '/faculty/business-management/',
+      //   permanent: true,
+      // },
 
       {
         source: '/jobs/student-part-time',
@@ -145,11 +145,11 @@ const nextConfig = {
         destination: '/faculty',
         permanent: true,
       },
-      {
-        source: '/monash-university-jobs',
-        destination: '/employers/monash-university/3182/',
-        permanent: true,
-      },
+      // {
+      //   source: '/monash-university-jobs',
+      //   destination: '/employers/monash-university/3182/',
+      //   permanent: true,
+      // },
 
       {
         source: '/the-university-of-western-australia-jobs',
@@ -184,11 +184,11 @@ const nextConfig = {
         destination: '/employers/university-of-technology-sydney/3864',
         permanent: true,
       },
-      {
-        source: '/the-university-of-melbourne-jobs',
-        destination: '/employers/university-of-melbourne/3170/',
-        permanent: true,
-      },
+      // {
+      //   source: '/the-university-of-melbourne-jobs',
+      //   destination: '/employers/university-of-melbourne/3170/',
+      //   permanent: true,
+      // },
 
       {
         source: '/usa/admin',
@@ -387,6 +387,32 @@ const nextConfig = {
         destination: '/employers/university-of-kwazulu-natal/12787',
         permanent: true,
       },
+      {
+        source: '/position/assistant-professor',
+        destination: '/faculty',
+        permanent: true,
+      },
+      {
+        source: '/position/associate-professor',
+        destination: '/faculty',
+        permanent: true,
+      },
+      {
+        source: '/position/lab-technician',
+        destination: '/faculty',
+        permanent: true,
+      },
+      {
+        source: '/position/other-positions',
+        destination: '/faculty',
+        permanent: true,
+      },
+      {
+        source: '/position/postdoc',
+        destination: '/faculty',
+        permanent: true,
+      },
+  
   
     ];
   },
