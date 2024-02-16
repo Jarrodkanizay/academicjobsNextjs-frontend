@@ -387,6 +387,32 @@ const nextConfig = {
         destination: '/employers/university-of-kwazulu-natal/12787',
         permanent: true,
       },
+      {
+        source: '/position/assistant-professor',
+        destination: '/faculty',
+        permanent: true,
+      },
+      {
+        source: '/position/associate-professor',
+        destination: '/faculty',
+        permanent: true,
+      },
+      {
+        source: '/position/lab-technician',
+        destination: '/faculty',
+        permanent: true,
+      },
+      {
+        source: '/position/other-positions',
+        destination: '/faculty',
+        permanent: true,
+      },
+      {
+        source: '/position/postdoc',
+        destination: '/faculty',
+        permanent: true,
+      },
+  
   
     ];
   },
