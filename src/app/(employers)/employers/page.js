@@ -13,12 +13,6 @@ export const metadata = {
   keywords: 'Find Universities. Find employers, Find institutions',
 };
 
-const countryRegion = 'World';
-function countryRegionPlural() {
-  return countryRegion.toLowerCase().endsWith('s')
-    ? `${countryRegion}'`
-    : `${countryRegion}'s`;
-}
 export default function myPage() {
   return (
     <main className=" mx-auto">
