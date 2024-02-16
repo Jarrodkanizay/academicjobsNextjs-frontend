@@ -168,7 +168,8 @@ export default function myPage() {
           {/* Build Your Network with On-Campus Employment Card */}
           {/* <div className="card card-side bg-sky-50 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure className="lg:order-1">
-              <img
+              <Image width={180}
+                height={170}
                 width={2000}
                 height={534}
                 src="https://academicjobs.s3.amazonaws.com/img/_misc/University_of_queensland_green_grass_jobs.JPG"

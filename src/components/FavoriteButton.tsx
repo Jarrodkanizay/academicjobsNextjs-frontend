@@ -12,7 +12,7 @@ export default function FavoriteButton() {
   };
 
   return (
-    <img
+    <img 
       src="/icons/heart.svg"
       width="44"
       height="44"

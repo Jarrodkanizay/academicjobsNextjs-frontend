@@ -5,6 +5,8 @@ const nextConfig = {
       'academicjobs.s3.amazonaws.com',
       'res.cloudinary.com',
       'iloveacademicjobs.com',
+      'uniiq.com',
+      'qut.edu.au',
     ],
   },
   async redirects() {

@@ -595,7 +595,8 @@ export const blogData = [
     content: `
 
 
-    <div><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip3.png"><br>
+    <div><Image width={180}
+                height={170} src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip3.png"><br>
 <div>
 <p>Academic Jobs can help you kick start your career at Bond Uni today! </p>
 <p><br>A career at Bond University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. With a commitment to excellence in education and research, Bond University provides a platform for employees to contribute meaningfully to the academic community. The small class sizes allow personalised interactions with students, creating a unique and impactful teaching experience. The university's state-of-the-art facilities, global perspective, and interdisciplinary approach to research offer a stimulating environment for continuous learning and professional development. </p>
@@ -645,7 +646,8 @@ export const blogData = [
 
 
       <div>
-<p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip4.png"></p>
+<p><Image width={180}
+                height={170} src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip4.png"></p>
 <p>&nbsp;</p>
 <p>Find you next job as a part of the academic team at Bond University, working alongside some of the best. Working at Bond University provides an exceptional professional and academic experience, making it an ideal place of employment. The university's commitment to academic excellence is manifested in its cutting-edge facilities and intimate lecture settings, providing lecturers with a conducive environment for impactful teaching. </p>
 <p><o:p>&nbsp;</o:p></p>
@@ -686,7 +688,8 @@ export const blogData = [
 
 
         <div>
-<p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip5.png"></p>
+<p><Image width={180}
+                height={170} src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip5.png"></p>
 <p>&nbsp;</p>
 
 <p><br>A career at Harvard University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment.</p>
@@ -741,7 +744,8 @@ export const blogData = [
 
 
           <div>
-<p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip6.png"></p>
+<p><Image width={180}
+                height={170} src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip6.png"></p>
 <p>&nbsp;</p>
 <p>Find you next job as a part of the academic team at Harvard University, working alongside some of the best. A job at Harvard University represents an unparalleled opportunity to be part of an esteemed institution renowned for its commitment to academic excellence, ground-breaking research, and global impact. Whether as a professor, lecturer, researcher, or academic administrator, individuals at Harvard engage in an intellectually stimulating environment where innovation, diversity, and interdisciplinary collaboration flourish. </p>
 <p><o:p>&nbsp;</o:p></p>
@@ -790,7 +794,8 @@ export const blogData = [
 
 
             <div>
-            <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip7.png"></p>
+            <p><Image width={180}
+                height={170} src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip7.png"></p>
             <p>&nbsp;</p>
             <p>Find you next job as a part of the academic team at the University of California, Los Angeles, working alongside some of the best. </p>
             <p><o:p>&nbsp;</o:p></p>
@@ -841,7 +846,8 @@ export const blogData = [
     keywords: 'Start you Career at UCLA ',
     published_at: 'Start you Career at UCLA ',
     content: `<div>
-              <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip8.png"></p>
+              <p><Image width={180}
+                height={170} src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip8.png"></p>
               <p>&nbsp;</p>
               <p>Academic Jobs can help you kick start your career at UCLA today!</p>
               <p><br>A career at The University of California, Los Angeles (UCLA) in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. Whether in faculty roles such as Assistant, Associate, or Full Professors, or engaging in dynamic administrative positions within higher education, UCLA provides a platform for professionals to thrive, fostering a culture of innovation, diversity, and continuous learning. </p>

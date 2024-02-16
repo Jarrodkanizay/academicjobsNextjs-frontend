@@ -81,7 +81,8 @@ export default function myPage() {
 
     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
          <div className="flex gap-4">
-          <div className="uniiq-face rounded-full w-1/3"><img src="https://uniiq.com/wp-content/uploads/2021/05/image-6.jpg" alt="Prof Sarah" className=" rounded-full items mt-8"></img></div>
+          <div className="uniiq-face rounded-full w-1/3"><Image width={180}
+                height={170} src="https://uniiq.com/wp-content/uploads/2021/05/image-6.jpg" alt="Prof Sarah" className=" rounded-full items mt-8"></Image></div>
         
           <div className="uniiq-user-name">
             <h3 className="mb-0">Prof Sarah</h3>
@@ -96,7 +97,8 @@ export default function myPage() {
 
     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
          <div className="flex gap-4">
-          <div className="uniiq-face rounded-full w-1/3"><img src="https://uniiq.com/wp-content/uploads/2021/05/image-2.jpg" alt="Prof Sarah" className=" rounded-full items mt-8"></img></div>
+          <div className="uniiq-face rounded-full w-1/3"><Image width={180}
+                height={170} src="https://uniiq.com/wp-content/uploads/2021/05/image-2.jpg" alt="Prof Sarah" className=" rounded-full items mt-8"></Image></div>
         
           <div className="uniiq-user-name">
             <h3 className="mb-0">Prof Sam</h3>
@@ -111,7 +113,8 @@ export default function myPage() {
 
     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
          <div className="flex gap-4">
-          <div className="uniiq-face rounded-full w-1/3"><img src="https://uniiq.com/wp-content/uploads/2021/06/image3.png" alt="Prof Sarah" className=" rounded-full items mt-8"></img></div>
+          <div className="uniiq-face rounded-full w-1/3"><Image width={180}
+                height={170} src="https://uniiq.com/wp-content/uploads/2021/06/image3.png" alt="Prof Sarah" className=" rounded-full items mt-8"></Image></div>
         
           <div className="uniiq-user-name">
             <h3 className="mb-0">Prof Hayley</h3>
@@ -125,7 +128,8 @@ export default function myPage() {
     </div>
     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
          <div className="flex gap-4">
-          <div className="uniiq-face rounded-full w-1/3"><img src="https://uniiq.com/wp-content/uploads/2021/06/image8.png" alt="Prof Sarah" className=" rounded-full items mt-8"></img></div>
+          <div className="uniiq-face rounded-full w-1/3"><Image width={180}
+                height={170} src="https://uniiq.com/wp-content/uploads/2021/06/image8.png" alt="Prof Sarah" className=" rounded-full items mt-8"></Image></div>
         
           <div className="uniiq-user-name">
             <h3 className="mb-0">Senior Prof John</h3>
@@ -139,7 +143,8 @@ export default function myPage() {
     </div>
     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
          <div className="flex gap-4">
-          <div className="uniiq-face rounded-full w-1/3"><img src="https://uniiq.com/wp-content/uploads/2021/06/image5.png" alt="Prof Sarah" className=" rounded-full items mt-8"></img></div>
+          <div className="uniiq-face rounded-full w-1/3"><Image width={180}
+                height={170} src="https://uniiq.com/wp-content/uploads/2021/06/image5.png" alt="Prof Sarah" className=" rounded-full items mt-8"></Image></div>
         
           <div className="uniiq-user-name">
             <h3 className="mb-0">Assoc Prof Ben</h3>
@@ -153,7 +158,8 @@ export default function myPage() {
     </div>
     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
          <div className="flex gap-4">
-          <div className="uniiq-face rounded-full w-1/3"><img src="https://uniiq.com/wp-content/uploads/2021/05/image-4.jpg" alt="Prof Sarah" className=" rounded-full items mt-8"></img></div>
+          <div className="uniiq-face rounded-full w-1/3"><Image width={180}
+                height={170} src="https://uniiq.com/wp-content/uploads/2021/05/image-4.jpg" alt="Prof Sarah" className=" rounded-full items mt-8"></Image></div>
         
           <div className="uniiq-user-name">
             <h3 className="mb-0">Dr Elisa</h3>
@@ -167,7 +173,8 @@ export default function myPage() {
     </div>
     <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
          <div className="flex gap-4">
-          <div className="uniiq-face rounded-full w-1/3"><img src="https://uniiq.com/wp-content/uploads/2021/05/image.jpg" alt="Prof Sarah" className=" rounded-full items mt-8"></img></div>
+          <div className="uniiq-face rounded-full w-1/3"><Image width={180}
+                height={170} src="https://uniiq.com/wp-content/uploads/2021/05/image.jpg" alt="Prof Sarah" className=" rounded-full items mt-8"></Image></div>
         
           <div className="uniiq-user-name">
             <h3 className="mb-0">Dr Kylie</h3>
@@ -180,7 +187,8 @@ export default function myPage() {
            </div>
     </div>   <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 p-4">
          <div className="flex gap-4">
-          <div className="uniiq-face rounded-full w-1/3"><img src="https://uniiq.com/wp-content/uploads/2021/06/image7.png" alt="Prof Sarah" className=" rounded-full items mt-8"></img></div>
+          <div className="uniiq-face rounded-full w-1/3"><Image width={180}
+                height={170} src="https://uniiq.com/wp-content/uploads/2021/06/image7.png" alt="Prof Sarah" className=" rounded-full items mt-8"></Image></div>
         
           <div className="uniiq-user-name">
             <h3 className="mb-0">Prof Amanda</h3>

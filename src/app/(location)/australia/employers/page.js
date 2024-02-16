@@ -30,7 +30,8 @@ export default function myPage() {
           <div className="hero max-h-fit bg-slate-200 py-8 mx-auto">
             <div className="container mx-auto">
               <div className="hero-content flex-col xl:flex-row gap-8 mx-auto max-w-full">
-                <img
+                <Image width={1280}
+                height={380 }
                   src="/academic-job-postings/university-of-sydney.jpg"
                   className="object-none h-60 w-96  rounded-xl shadow-2xl mb-8 lg:mb-0"
                   alt="university of sydney"
