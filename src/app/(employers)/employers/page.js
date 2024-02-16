@@ -18,6 +18,7 @@ export default function myPage() {
     <main className=" mx-auto">
       {/* Hero banner */}
       <HeroBanner
+        bgColorClass="bg-slate-200"
         h1="Find the best universities and colleges to work for here..."
         h2="Use university rankings to search for jobs in higher education."
         para1="Search for higher ed career opportunities by university rankings worldwide on the number 1 academic job board. Discover academic positions at the world's top universities with current openings through our 'Top Universities' page."
