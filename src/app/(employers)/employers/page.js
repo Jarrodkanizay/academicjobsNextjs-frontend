@@ -9,47 +9,16 @@ export const metadata = {
     absolute: 'The Best Universities to work for Globally', //Option 2 overrides the title in layout.tsx
   },
   description:
-    'Browse through our comprehensive list of universities from around the world and find the best one for you. Whether you want to study in Australia, Canada, UK, USA, or anywhere else, we have the information you need to make an informed decision.',
+    'Explore top universities globally, including Australia, Canada, UK, USA, and beyond, to make an informed choice for your studies.',
   keywords: 'Find Universities. Find employers, Find institutions',
 };
 
-const countryRegion = 'World';
-function countryRegionPlural() {
-  return countryRegion.toLowerCase().endsWith('s')
-    ? `${countryRegion}'`
-    : `${countryRegion}'s`;
-}
 export default function myPage() {
   return (
     <main className=" mx-auto">
       {/* Hero banner */}
-      {/* <section className="full-width h-[300px] bg-sky-200"></section> */}
-      {/* <HeroBanner
-        h1="Find the best universities to work for here... use university
-          rankings to search for jobs in higher education."
-        // h2=""
-        para1=" On AcademicJobs explore higher ed career opportunities at
-          universities worldwide. The find employers page helps you to
-          learn more about the academic jobs that interest you and their
-          current job openings. You can view the employers’s profile,
-          which includes information such as their mission, vision,
-          values, history, achievements, and culture. Find your dream
-          academic job online at the university of your choice with
-          AcademicJobs."
-        // para2=""
-        btnPrimaryText="Learn About Student Jobs"
-        btnPrimaryURL="/student-jobs-on-campus"
-        btnSecondaryText="Student FAQ"
-        btnSecondaryURL="/student/faq/"
-        src="/academic-job-postings/top-universities-worldwide.jpg"
-        alt="Student Jobs on Campus can be life changing"
-        // bgColorClass="bg-sky-200"
-        // imgRight={false}
-      />
- */}
-      {/* <main className=" mx-auto"> */}
-      {/* Hero banner */}
       <HeroBanner
+        bgColorClass="bg-slate-200"
         h1="Find the best universities and colleges to work for here..."
         h2="Use university rankings to search for jobs in higher education."
         para1="Search for higher ed career opportunities by university rankings worldwide on the number 1 academic job board. Discover academic positions at the world's top universities with current openings through our 'Top Universities' page."
@@ -378,10 +347,7 @@ export default function myPage() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/University-of-Rochester/5527/
-                     "
-              >
+              <Link href="/employers/University-of-Rochester/5527/">
                 University of Rochester
               </Link>
             </li>
@@ -417,7 +383,6 @@ export default function myPage() {
             </li>
             <li>
               <Link href="/employers/university-at-buffalo/3609/">
-                {' '}
                 University at Buffalo
               </Link>
             </li>
@@ -425,34 +390,22 @@ export default function myPage() {
               <h3>Pennsylvania</h3>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-pennsylvania/3131/
-                     "
-              >
+              <Link href="/employers/university-of-pennsylvania/3131/">
                 University of Pennsylvania
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/carnegie-mellon-university/3146/
-                     "
-              >
+              <Link href="/employers/carnegie-mellon-university/3146/">
                 Carnegie Mellon University
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/bucknell-university/3309/
-     "
-              >
+              <Link href="/employers/bucknell-university/3309/">
                 Bucknell University
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/duquesne-university/3330/
-                            "
-              >
+              <Link href="/employers/duquesne-university/3330/">
                 Duquesne University
               </Link>
             </li>
@@ -460,34 +413,22 @@ export default function myPage() {
               <h3>Illinois</h3>
             </li>
             <li>
-              <Link
-                href="/employers/University-of-Chicago/3126/
-                     "
-              >
+              <Link href="/employers/University-of-Chicago/3126/">
                 University of Chicago
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/Northwestern-University/3143/
-                     "
-              >
+              <Link href="/employers/Northwestern-University/3143/">
                 Northwestern University
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/northern-illinois-university/3415/
-                         "
-              >
+              <Link href="/employers/northern-illinois-university/3415/">
                 Northern Illinois University
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-illinois-at-urbana-champaign/3164/
-                         "
-              >
+              <Link href="/employers/university-of-illinois-at-urbana-champaign/3164/">
                 University of Illinois at Urbana-Champaign
               </Link>
             </li>
@@ -495,27 +436,17 @@ export default function myPage() {
               <h3>Michigan</h3>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-michigan/3142/
-                             "
-              >
+              <Link href="/employers/university-of-michigan/3142/">
                 University of Michigan
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/michigan-state-university/3654/
-                                 "
-              >
+              <Link href="/employers/michigan-state-university/3654/">
                 Michigan State University
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/wayne-state-university/3499/
- "
-              >
-                {' '}
+              <Link href="/employers/wayne-state-university/3499/">
                 Wayne State University
               </Link>
             </li>
@@ -530,18 +461,12 @@ export default function myPage() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-washington/3145/
-     "
-              >
+              <Link href="/employers/university-of-washington/3145/">
                 University of Washington
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/johns-hopkins-university/3130/
-                     "
-              >
+              <Link href="/employers/johns-hopkins-university/3130/">
                 Johns Hopkins University
               </Link>
             </li>
@@ -556,177 +481,107 @@ export default function myPage() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/vanderbilt-university/5603/
-                     "
-              >
+              <Link href="/employers/vanderbilt-university/5603/">
                 Vanderbilt University
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/washington-university-in-st-louis/3655/
-                     "
-              >
+              <Link href="/employers/washington-university-in-st-louis/3655/">
                 Washington University in St. Louis
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-notre-dame/3879/
-                     "
-              >
+              <Link href="/employers/university-of-notre-dame/3879/">
                 University of Notre Dame
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-virginia/3484/
-                     "
-              >
+              <Link href="/employers/university-of-virginia/3484/">
                 University of Virginia
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/georgetown-University/3522/
-                     "
-              >
+              <Link href="/employers/georgetown-University/3522/">
                 Georgetown University
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-texas-at-austin/3166/
-                     "
-              >
+              <Link href="/employers/university-of-texas-at-austin/3166/">
                 University of Texas at Austin
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-wisconsin-madison/3404/
-                     "
-              >
+              <Link href="/employers/university-of-wisconsin-madison/3404/">
                 University of Wisconsin - Madison
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-mississippi-medical-center/3109/
-                     "
-              >
+              <Link href="/employers/university-of-mississippi-medical-center/3109/">
                 University of Mississippi Medical Center
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-minnesota-twin-cities/3684/
-                         "
-              >
+              <Link href="/employers/university-of-minnesota-twin-cities/3684/">
                 University of Minnesota Twin Cities
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/the-ohio-state-university/3669/
-                             "
-              >
-                {' '}
+              <Link href="/employers/the-ohio-state-university/3669/">
                 The Ohio State University
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-cincinnati/3393/
-                                 "
-              >
-                {' '}
+              <Link href="/employers/university-of-cincinnati/3393/">
                 University of Cincinnati
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-tennessee-knoxville/3401/
-                                 "
-              >
-                {' '}
+              <Link href="/employers/university-of-tennessee-knoxville/3401/">
                 University of Tennessee, Knoxville
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-alabama-at-birmingham/3387/
-     "
-              >
-                {' '}
+              <Link href="/employers/university-of-alabama-at-birmingham/3387/">
                 University of Alabama at Birmingham
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/indiana-university-purdue-university-indianapolis/3658/
-                 "
-              >
-                {' '}
+              <Link href="/employers/indiana-university-purdue-university-indianapolis/3658/">
                 Indiana University Purdue University Indianapolis
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/the-university-of-iowa/3483/
-                     "
-              >
-                {' '}
+              <Link href="/employers/the-university-of-iowa/3483/">
                 The University of Iowa
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-kentucky/3510/
-                         "
-              >
-                {' '}
+              <Link href="/employers/university-of-kentucky/3510/">
                 University of Kentucky
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/oregon-state-university/3813/
-                             "
-              >
-                {' '}
+              <Link href="/employers/oregon-state-university/3813/">
                 Oregon State University
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-nebraska-medical-center/3712/
-                                 "
-              >
+              <Link href="/employers/university-of-nebraska-medical-center/3712/">
                 University of Nebraska Medical Center
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/washington-state-university/3722/
-                                     "
-              >
+              <Link href="/employers/washington-state-university/3722/">
                 Washington State University
               </Link>
             </li>
             <li>
-              <Link
-                href="/employers/university-of-maryland-baltimore-county/3775/
-                                         "
-              >
+              <Link href="/employers/university-of-maryland-baltimore-county/3775/">
                 University of Maryland, Baltimore County
               </Link>
             </li>
           </ul>
         </div>
-        {/* <li className="mb-1 text-[#f4a10c] font-bold">Massachusetts</li>
-                <li> orange colour script */}
 
         <h2 id="section1" className="underline-full">
           AUSTRALIA

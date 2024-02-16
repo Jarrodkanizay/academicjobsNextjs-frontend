@@ -801,6 +801,11 @@ html {
     }
   }
 
+  .bg-slate-200 {
+    background-color: rgb(231, 237, 245); // adjusted tailwind color
+    // background-color: rgb(226 232 240); // actual tailwind color
+  }
+
   // Employer Themes University Theme
   .employer_panel {
     // QUT styles
