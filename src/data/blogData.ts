@@ -667,16 +667,16 @@ export const blogData = [
     <p><span style="">One of the most common ways to compare universities is to look at their rankings. Rankings are based on various indicators, such as academic reputation, research impact, teaching quality, student satisfaction, employability, internationalization, and innovation. Rankings can give you an overview of the strengths and weaknesses of different universities, as well as their reputation and recognition in the global market.</span></p>
     <p><span style="">Australia has 37 top universities, with our top 8 universities in the top 100 worldwide. The top 10 Australian universities are:</span></p>
     <ul>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/The-University-of-Melbourne-Jobs">University of Melbourne (ranked 34th in the world)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/Monash-University-Jobs">Monash University (ranked 44th in the world)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/The-University-of-Queensland-Jobs">The University of Queensland (ranked 53rd in the world)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/The-University-of-Sydney-Jobs">University of Sydney (ranked 54th in the world)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/Australian-National-University-Jobs">Australian National University (ranked 59th in the world)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/University-of-New-South-Wales-Jobs">University of New South Wales (ranked 67th in the world)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/The-University-of-Western-Australia-Jobs">The University of Western Australia (ranked 92nd in the world)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/The-University-of-Adelaide-Jobs">The University of Adelaide (ranked 118th in the world)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/University-of-Technology-Sydney-Jobs">The University of Technology Sydney (ranked 160th in the world)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/Macquarie-University-Jobs">Macquarie University (ranked 195th in the world)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">University of Melbourne (ranked 34th in the world)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">Monash University (ranked 44th in the world)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">The University of Queensland (ranked 53rd in the world)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">University of Sydney (ranked 54th in the world)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">Australian National University (ranked 59th in the world)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">University of New South Wales (ranked 67th in the world)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">The University of Western Australia (ranked 92nd in the world)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">The University of Adelaide (ranked 118th in the world)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">The University of Technology Sydney (ranked 160th in the world)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">Macquarie University (ranked 195th in the world)</a></span></li>
     </ul>
     <p><span style="">These rankings are based on five main categories: teaching (30%), research (30%), citations (30%), international outlook (7.5%), and industry income (2.5%). Each category has several sub-indicators that measure different aspects of university performance. For example, teaching includes indicators such as student-to-staff ratio, doctorate-to-bachelor’s ratio, doctorates awarded-to-academic staff ratio, institutional income, and reputation survey. Research includes indicators such as research income, research productivity, research reputation survey, and research influence. Citations measure how often a university’s research is cited by other scholars around the world. International outlook includes indicators such as international-to-domestic-student ratio, international-to-domestic-staff ratio, international collaboration, and international reputation survey. Industry income measures how much a university earns from its knowledge transfer activities with industry partners.</span></p>
     <p><span style="">While rankings can be useful to compare universities at a glance, they are not the only factor to consider when choosing a university. Rankings do not capture everything that matters to students, such as campus culture, student support services, extracurricular activities, learning environment, social life, and personal fit. Rankings also do not reflect the quality of specific programs or courses within a university. Therefore, it is important to look beyond rankings and do your own research on different universities and their offerings.</span></p>
@@ -684,16 +684,16 @@ export const blogData = [
     </p><p><span style="">Another factor to consider when choosing a university and career path is the job market. What are the skills and qualifications that employers are looking for? What are the industries and sectors that are growing and hiring? What are the salaries and benefits that different jobs offer?</span></p>
     <p><span style="">Some of the highest paying jobs in Australia for 2023 include positions in the legal, executive, retail, accountancy &amp; finance, property, energy, construction, sustainability, technology, and healthcare sectors. The top 10 highest paying jobs in Australia for 2023 according to Hays are:</span></p>
     <ul>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/equity-partner-jobs">Legal: Equity Partner (up to $850,000)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/CEO-MD-jobs">Executive: CEO and MD ($700,000)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/general-manager-jobs">Retail: General Manager (up to $510,000)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/Head-Treasury-jobs">Accountancy &amp; Finance: Head of Treasury ($410,000)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/Development-Director-jobs">Property: Development Director (up to $388,000)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/Project-Delivery-Director-jobs">Energy: Project Delivery Director (up to $357,000)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/Construction-Manager-jobs">Construction: Construction Manager (up to $320,000)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/Head-Sustainability-jobs">Sustainability: Head of Sustainability (up to $310,000)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/Chief-Technology-Officer-jobs">Technology: Chief Technology Officer ($350,000)</a></span></li>
-    <li><span style="padding-left: 40px;"><a style="" href="https://academicjobs.com/jobs/Healthcare-Managing-Director-jobs">Healthcare: Managing Director/Country Manager in Medical Devices/Pharmaceuticals ($300,000)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">Legal: Equity Partner (up to $850,000)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">Executive: CEO and MD ($700,000)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">Retail: General Manager (up to $510,000)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">Accountancy &amp; Finance: Head of Treasury ($410,000)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">Property: Development Director (up to $388,000)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">Energy: Project Delivery Director (up to $357,000)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">Construction: Construction Manager (up to $320,000)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">Sustainability: Head of Sustainability (up to $310,000)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">Technology: Chief Technology Officer ($350,000)</a></span></li>
+    <li><span style="padding-left: 40px;"><a style="" href="">Healthcare: Managing Director/Country Manager in Medical Devices/Pharmaceuticals ($300,000)</a></span></li>
     </ul>
     <p><span style="">These salaries are based on the average annual income for each role across different states and territories in Australia. They may vary depending on the size and type of the organisation, the level of experience and expertise, the location and demand of the role, and the negotiation skills of the candidate.</span></p>
     <p><span style="">These jobs are not only high-paying, but also high-demanding. They require a combination of hard skills, such as technical knowledge, qualifications, and certifications, and soft skills, such as communication, leadership, problem-solving, and creativity. They also require a high level of commitment, responsibility, and performance. Therefore, they are not suitable for everyone, and they may not be aligned with your personal interests, values, and goals.</span></p>
