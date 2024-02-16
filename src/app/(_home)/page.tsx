@@ -386,29 +386,28 @@ export default function myPage() {
             </div>
           </div> */}
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-            <div className="column">
+          <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/assistant-associate-professor-of-environmental-toxicology-tenure-track-appointment/78925/"
+                    href="/jobs/video-technician-summer-2024/84765"
                     className="text-blue-500 font-bold"
                   >
-                    Assistant/Associate Professor of Environmental Toxicology
-                    (tenure track appointment)
+                    Video Technician summer 2024
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">University of California Davis</Link>
+                    <Link href="">Southern Utah University</Link>
                   </li>
                   <li>
-                    <Link href="">Davis, CA, USA</Link>
+                    <Link href="">Cedar City, UT, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Feb 14, 2024</Link>
+                    <Link href="">Mar 1, 2024</Link>
                   </li>
                   <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4867143"
+                    href="https://apptrkr.com/get_redirect.php?id=4968138"
                     className="btn btn-sm btn-aj mt-4"
                   >
                     More Info
@@ -658,28 +657,22 @@ export default function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/video-technician-summer-2024/84765"
+                    href="/jobs/director-of-major-giving-midwest/87777"
                     className="text-blue-500 font-bold"
                   >
-                    Video Technician summer 2024
+                   Director of Major Giving, Midwest
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Southern Utah University</Link>
+                    <Link href="">Villanova University</Link>
                   </li>
                   <li>
-                    <Link href="">Cedar City, UT, USA</Link>
+                    <Link href="">Chicago, IL, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Mar 1, 2024</Link>
+                    <Link href="">Mar 10, 2024</Link>
                   </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4968138"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
                 </ul>
               </ul>
             </div>
