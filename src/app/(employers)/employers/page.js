@@ -1381,11 +1381,7 @@ export default function myPage() {
                   Universidade Federal do Rio Grande do Sul
                 </Link>
               </li>
-              <li>
-                <Link href="/employers/universidade-federal-de-são-paulo/11526/">
-                  Universidade Federal de São Paulo (UNIFESP)
-                </Link>
-              </li>
+              
             </ul>
             <ul>
               <li>

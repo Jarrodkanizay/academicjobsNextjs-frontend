@@ -413,10 +413,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/categories/administration',
+        destination: '/admin',
+        permanent: true,
+      },
+      {
         source: '/blog/how-to-land-your-dream-college-job-a-step-by-step-guide/',
         destination: '/career-help/how-to-land-your-dream-college-job-a-step-by-step-guide',
         permanent: true,
       },
+
   
     ];
   },
