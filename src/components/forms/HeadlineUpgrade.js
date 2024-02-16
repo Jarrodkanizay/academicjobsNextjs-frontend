@@ -48,7 +48,7 @@ const PostJobForm = ({
     console.log('data', data);
     mutation.mutate({
       ...data,
-      '00_formSource': 'Message from: Headline Update Form',
+      '00_formSource': 'Activate Headline Job - Job Post Page',
     });
   };
   if (mutation.isLoading) {
@@ -150,6 +150,7 @@ const PostJobForm = ({
                   forceClass=" py-3 text-black"
                   placeholder="First Name"
                   autoComplete="given-name"
+                  required={true}
                 />
               </div>
               <div className="grid w-full items-center gap-1.5">
@@ -162,6 +163,7 @@ const PostJobForm = ({
                   forceClass=" py-3 text-black"
                   placeholder="Last Name"
                   autoComplete="family-name"
+                  required={true}
                 />
               </div>
               <div className="grid w-full items-center gap-1.5">
@@ -174,6 +176,7 @@ const PostJobForm = ({
                   forceClass=" py-3 text-black"
                   placeholder="Position / Role"
                   autoComplete="family-name"
+                  required={true}
                 />
               </div>
               <div className="grid w-full items-center gap-1.5">
@@ -186,6 +189,7 @@ const PostJobForm = ({
                   forceClass=" py-3 text-black"
                   placeholder="email"
                   autoComplete="email"
+                  required={true}
                 />
               </div>
               <div className="grid w-full items-center gap-1.5">
