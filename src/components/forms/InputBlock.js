@@ -11,7 +11,7 @@ const InputBlock = ({
   autoComplete,
   placeholder,
   tabIndex,
-  required,
+  required = false,
   hidden,
   showLabel = false,
 }) => {
@@ -27,6 +27,7 @@ const InputBlock = ({
         autoComplete={autoComplete}
         placeholder={placeholder}
         hidden={hidden}
+        required={required}
       />
       {errors[field] && <span className="error">{errors[field].message}</span>}
     </div>
