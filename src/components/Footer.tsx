@@ -26,6 +26,11 @@ const Footer = () => {
               Quick Job Post Technology
             </Link>
           </li>
+          <li>
+            <Link href="/create-your-talent-pool">
+              Dynamic Talent Match-Making
+            </Link>
+          </li>
         </ul>
 
         <ul>
@@ -52,7 +57,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul>
+        <ul className="hidden">
           <li className=" font-bold text-xl pb-1">Institutions</li>
           {/* <li>
             <Link href="/the-university-rankings">University Rankings</Link>
