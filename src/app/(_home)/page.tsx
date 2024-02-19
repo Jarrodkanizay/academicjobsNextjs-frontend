@@ -5,7 +5,8 @@ import LogoAJ from '@/components/brand/LogoAJ';
 import type { Metadata } from 'next';
 import JobSearchBoxHome from '@/components/JobSearchBoxHome';
 import JobCategoryAndLocationLinks from '@/components/links/JobCategoryAndLocationLinks';
-import AusUniLogos from '@/components/AusUniLogos';
+// import AusUniLogos from '@/components/AusUniLogos';
+import AmericaUniLogos from '@/components/AmericaUniLogos';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -60,7 +61,8 @@ export default function myPage() {
         </>
       ) : (
         <>
-          <AusUniLogos />
+          <AmericaUniLogos />
+          {/* <AusUniLogos /> */}
         </>
       )}
 
@@ -386,7 +388,7 @@ export default function myPage() {
             </div>
           </div> */}
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-          <div className="column">
+            <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
@@ -660,7 +662,7 @@ export default function myPage() {
                     href="/jobs/director-of-major-giving-midwest/87777"
                     className="text-blue-500 font-bold"
                   >
-                   Director of Major Giving, Midwest
+                    Director of Major Giving, Midwest
                   </Link>
                 </li>
                 <ul className="innerUL">
@@ -1252,16 +1254,12 @@ export default function myPage() {
           </span>
         </Link>
       </div> */}
-   
-   <div className="card-actions flex mt-4 mx-auto">
-                  <Link href="/academic-talent-pool" className="btn btn-aj">
-                    Join our Talent Pool
-                  </Link>
-                </div>
-   
-   
-   
-   
+
+      <div className="card-actions flex mt-4 mx-auto">
+        <Link href="/academic-talent-pool" className="btn btn-aj">
+          Join our Talent Pool
+        </Link>
+      </div>
     </main>
   );
 }
