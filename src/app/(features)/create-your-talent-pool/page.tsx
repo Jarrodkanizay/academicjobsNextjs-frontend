@@ -10,19 +10,23 @@ export default function myPage() {
         <div className="container py-16 flex flex-col lg:flex-row gap-2">
           <div>
             <h1 className="grow">
-              Dynamically Create Your Academic Talent Pool: Watch as Excellence
-              Meets Opportunity
+              Dynamically Create Your Academic Talent Pool: Why wait for
+              candidates to come to you?
+              {/* Watch as Excellence Meets Opportunity */}
             </h1>
             <h2>
-              Empowering Universities & Colleges to Match with Top Academic
-              Talent
+              Empowering Universities & Colleges to Dynamically Find Top
+              Academic Talent
             </h2>
+            <p>
+              Your Global Academic Talent Pool for Top Academics in Higher
+              Education starts here. We offer a revolutionary platform tailored
+              specifically for Universities and Colleges.
+            </p>
             <p className="pb-8">
               In the ever-evolving landscape of higher education, finding the
               perfect blend of talent and opportunity is paramount. Academic
-              Jobs is your premier partner in this journey, providing a Talent
-              Pool of Top Academics offering a revolutionary platform designed
-              specifically for Universities and Colleges.
+              Jobs is your premier partner in this journey!
             </p>
           </div>
           <div className="flex-shrink-0 pb-8">
@@ -61,11 +65,15 @@ export default function myPage() {
         </div>
       </section>
       <p className="text-2xl text-center max-w-[900px] mx-auto leading-relaxed text-gray-700 mb-24">
-        <strong className="font-semibold script_font">
-          Our mission is simple:{' '}
+        <strong className="text-aj-pink">
+          Streamline your talent acquisition process now!{' '}
         </strong>
-        to streamline the talent acquisition process, ensuring a perfect match
-        between academic institutions and outstanding professionals.
+        Ensure a perfect match between academic institutions and outstanding
+        professionals. Call <strong>Jarrod Kanizay</strong> on ‬
+        <a className="text-2xl link link-aj" href="tel:+61 430 017 783">
+          +61 430 017 783
+        </a>{' '}
+        to find out more.
       </p>
       <p>What the Academic Jobs Talent Pool can do for you…</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
@@ -86,7 +94,7 @@ export default function myPage() {
         {/* Card 2 */}
         <Card
           iconPath="/icons/match-scale-indicator.svg"
-          heading="Match Scale Indicator"
+          heading="Candidate Match Score"
         >
           <p>
             Our innovative Match Scale provides a clear, quantifiable measure of
@@ -102,8 +110,9 @@ export default function myPage() {
           iconPath="/icons/handshake.svg"
         >
           <p>
-            Take control of your talent acquisition with our Partner Zone. This
-            dedicated area on our platform enables Universities and Colleges to
+            Use your database and ours to grow your Talent Pool and take control
+            of your talent acquisition in our Partner Zone. This dedicated area
+            on our platform enables Recruiters, Universities and Colleges to
             manage their talent pool effortlessly, creating a seamless
             connection between your institution and prospective candidates.
           </p>
@@ -115,7 +124,7 @@ export default function myPage() {
       <HeroCard
         heading="Transform Your Talent Acquisition Today"
         para1="The Academic Talent Pool is more than just a platform; it's a gateway to unparalleled academic excellence. By specializing in the unique needs of higher education institutions, we offer a bespoke solution that addresses the challenges of talent acquisition in the academic sphere. Whether you're looking to fill faculty positions, administrative roles, or research opportunities, our platform is equipped to connect you with the best in the field."
-        para2=""
+        para2="Engage your Brand Ambassadors to help you find the best talent for your institution. Our platform is designed to help you find the best talent through your network and ours. We have created a platform that is easy to use and will save you time and money."
         imagePath="/talent-pool/dynamic-talent-match-making.jpg"
         alt="Dynamic Talent Match Making"
         btnLink="/academic-talent-pool"
@@ -174,11 +183,12 @@ export default function myPage() {
         </Card>
       </div>
       <blockquote className="mt-16">
-        Your Academic Talent Pool attracts compatible candidates, providing
-        deeper insights into what makes your institution an ideal workplace. By
-        highlighting your strengths and opportunities, you can attract
-        candidates who align with your institution's ethos and aspirations,
-        fostering a more productive and harmonious academic community.
+        Your Global Academic Talent Pool in the Cloud attracts compatible
+        candidates, providing deeper insights into what makes your institution
+        an ideal workplace. By highlighting your strengths and opportunities,
+        you can attract candidates who align with your institution's ethos and
+        aspirations, fostering a more productive and harmonious academic
+        community.
       </blockquote>
       {/* <p>
         Our Quick Job Post technology allows you to post your position in 32
@@ -201,14 +211,26 @@ export default function myPage() {
         </svg>
         <div>
           <h3 className="font-bold">Get Started Now!</h3>
-          <div className="">
-            Unlock the potential of your institution with the Academic Talent
-            Pool. Contact us today to learn more about how we can assist you in
-            finding and nurturing the academic leaders of tomorrow.
-          </div>
+          <ul className="list-disc pl-5 mb-4">
+            <li>Free Access for Academic Jobs Unlimited customers</li>
+            <li>AI Matching Technology helps find the right candidate</li>
+          </ul>
+          <p className="">
+            Unlock the potential of your institution with the Global Academic
+            Talent Pool. Call <strong>Jarrod Kanizay</strong> today on ‬
+            <a className="link link-aj" href="tel:+61 430 017 783">
+              +61 430 017 783
+            </a>{' '}
+            or{' '}
+            <Link href="/contact-us" className="link link-aj">
+              complete our form
+            </Link>{' '}
+            to learn more about how we can assist you in finding and nurturing
+            the academic leaders of tomorrow.
+          </p>
         </div>
         <Link href="/contact-us" className="btn btn-aj">
-          Contact Us
+          Contact Us Form
         </Link>
       </div>
     </main>
