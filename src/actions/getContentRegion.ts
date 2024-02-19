@@ -1,6 +1,6 @@
 'use server';
 export async function getContentRegion() {
-  const auBusinessHours = { start: 8, end: 18 }; // Australia Eastern Time
+  const auBusinessHours = { start: 10, end: 18 }; // Australia Eastern Time
 
   const auTime = getCurrentTime('Australia/Sydney');
 
