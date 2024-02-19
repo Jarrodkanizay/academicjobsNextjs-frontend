@@ -27,7 +27,7 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="/create-your-talent-pool">
+            <Link href="/dynamic-global-talent-pool">
               Dynamic Talent Match-Making
             </Link>
           </li>

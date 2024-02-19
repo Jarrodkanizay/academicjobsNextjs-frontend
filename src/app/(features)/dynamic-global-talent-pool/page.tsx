@@ -211,9 +211,15 @@ export default function myPage() {
         </svg>
         <div>
           <h3 className="font-bold">Get Started Now!</h3>
-          <ul className="list-disc pl-5 mb-4">
-            <li>Free Access for Academic Jobs Unlimited customers</li>
-            <li>AI Matching Technology helps find the right candidate</li>
+          <ul className="mb-4">
+            <li>
+              <span className="text-green-600 text-lg">✓</span> Free Access for
+              Academic Jobs Unlimited customers
+            </li>
+            <li>
+              <span className="text-green-600 text-lg">✓</span> AI Matching
+              Technology helps find the right candidate
+            </li>
           </ul>
           <p className="">
             Unlock the potential of your institution with the Global Academic
