@@ -161,7 +161,7 @@ const AcademicJobsLogo = ({
 		C361.9,108.5,360.4,108.9,358.7,108.9z"
       />
       <path d="M385,108.6h-1.1V93.1h-6.1v-1h13.4v1H385V108.6z" />
-      <g class="st2">
+      <g className="logo-text-color">
         <path d="M55.4,91.8H65v1h-8.4v6.7h7.7v1h-7.7v8.2h-1.1V91.8z" />
         <path d="M79.8,91.8H81v17h-1.1V91.8z" />
         <path
