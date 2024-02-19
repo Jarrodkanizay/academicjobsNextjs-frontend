@@ -27,17 +27,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    title:
-      'Revolutionize Academic Hiring with Our Global Talent Pool | Academic Jobs',
-    description:
-      'Empower your university with Academic Jobs: a leading platform for matching top academic talent globally using innovative AI technology. Transform your talent strategy now!',
-    images: [
-      {
-        url: 'https://www.academicjobs.com/_next/image?url=%2Ftalent-pool%2Fdynamic-talent-match-making.jpg&w=828&q=75',
-      },
-    ],
-  },
 };
 
 export default function myPage() {
