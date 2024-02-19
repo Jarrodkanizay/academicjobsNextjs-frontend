@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     cardType: 'summary_large_image',
-    site: '@YourTwitterHandle', // Optional: if you have a twitter account related to your site
+    // site: '@YourTwitterHandle', // Optional: if you have a twitter account related to your site
     title:
       'Revolutionize Academic Hiring with Our Global Talent Pool | Academic Jobs',
     description:
