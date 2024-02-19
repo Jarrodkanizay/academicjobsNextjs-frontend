@@ -13,7 +13,6 @@ export const metadata: Metadata = {
     'Empower your university with Academic Jobs: a leading platform for matching top academic talent globally using innovative AI technology. Transform your talent strategy now!',
   keywords:
     'Academic Talent Acquisition, Higher Education Recruitment Platform, University Talent Matching, College Recruitment Solutions, Global Academic Talent Pool, Academic Jobs Platform, Educational Institution Hiring, Faculty Recruitment Services, Academic Staffing Solutions, Dynamic Talent Matching for Universities, AI-Powered Academic Recruitment, Higher Ed Talent Search, Academic Professional Networking, Innovative University Hiring, Research Staff Recruitment, Academic Career Opportunities, Educational Talent Management, Higher Education Job Matching, University Faculty Recruitment, College Administrative Hiring',
-  canonical: 'https://www.academicjobs.com/dynamic-global-talent-pool',
 };
 
 export default function myPage() {
