@@ -5,7 +5,7 @@ import LogoAJ from '@/components/brand/LogoAJ';
 import type { Metadata } from 'next';
 import JobSearchBoxHome from '@/components/JobSearchBoxHome';
 import JobCategoryAndLocationLinks from '@/components/links/JobCategoryAndLocationLinks';
-// import AusUniLogos from '@/components/AusUniLogos';
+import AusUniLogos from '@/components/AusUniLogos';
 import AmericaUniLogos from '@/components/AmericaUniLogos';
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function myPage() {
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
   let showJobElephant = true;
-  showJobElephant = false;
+  // showJobElephant = false;
 
   return (
     <main className="content-grid">
@@ -52,6 +52,8 @@ export default function myPage() {
               />
             </a>
           </div>
+          <AmericaUniLogos />
+
           {/* <a
             href="#section"
             className="scroll-smooth md:scroll-auto text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16px]"
@@ -61,8 +63,7 @@ export default function myPage() {
         </>
       ) : (
         <>
-          <AmericaUniLogos />
-          {/* <AusUniLogos /> */}
+          <AusUniLogos />
         </>
       )}
 
