@@ -26,6 +26,11 @@ const Footer = () => {
               Quick Job Post Technology
             </Link>
           </li>
+          <li>
+            <Link href="/create-your-talent-pool">
+              Dynamic Talent Match-Making
+            </Link>
+          </li>
         </ul>
 
         <ul>
