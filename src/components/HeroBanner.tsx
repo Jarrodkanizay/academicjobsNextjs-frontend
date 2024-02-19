@@ -60,7 +60,7 @@ const HeroBanner = ({
 
   return (
     <section
-      className={`hero max-h-fit py-4 mb-16 ${bgColorClass} ${reorderCss}`}
+      className={`hero max-h-fit py-4 mb-16 full-width ${bgColorClass} ${reorderCss}`}
     >
       <div className="container">
         <div
