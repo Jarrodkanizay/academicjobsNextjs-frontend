@@ -2,6 +2,42 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Card from '@/components/Card';
 import HeroCard from '@/components/HeroCard';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: `Revolutionize Academic Hiring with Our Global Talent Pool`, //Option 1 replaces the %s in layout.tsx
+  // title: {
+  //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
+  // },
+  description:
+    'Empower your university with Academic Jobs: a leading platform for matching top academic talent globally using innovative AI technology. Transform your talent strategy now!',
+  keywords:
+    'Academic Talent Acquisition, Higher Education Recruitment Platform, University Talent Matching, College Recruitment Solutions, Global Academic Talent Pool, Academic Jobs Platform, Educational Institution Hiring, Faculty Recruitment Services, Academic Staffing Solutions, Dynamic Talent Matching for Universities, AI-Powered Academic Recruitment, Higher Ed Talent Search, Academic Professional Networking, Innovative University Hiring, Research Staff Recruitment, Academic Career Opportunities, Educational Talent Management, Higher Education Job Matching, University Faculty Recruitment, College Administrative Hiring',
+  canonical: 'https://www.academicjobs.com/dynamic-global-talent-pool',
+  openGraph: {
+    type: 'website',
+    url: 'https://www.academicjobs.com/dynamic-global-talent-pool',
+    title:
+      'Revolutionize Academic Hiring with Our Global Talent Pool | Academic Jobs',
+    description:
+      'Empower your university with Academic Jobs: a leading platform for matching top academic talent globally using innovative AI technology. Transform your talent strategy now!',
+    images: [
+      {
+        url: 'https://www.academicjobs.com/_next/image?url=%2Ftalent-pool%2Fdynamic-talent-match-making.jpg&w=828&q=75',
+      },
+    ],
+  },
+  twitter: {
+    cardType: 'summary_large_image',
+    site: '@YourTwitterHandle', // Optional: if you have a twitter account related to your site
+    title:
+      'Revolutionize Academic Hiring with Our Global Talent Pool | Academic Jobs',
+    description:
+      'Empower your university with Academic Jobs: a leading platform for matching top academic talent globally using innovative AI technology. Transform your talent strategy now!',
+    image:
+      'https://www.academicjobs.com/_next/image?url=%2Ftalent-pool%2Fdynamic-talent-match-making.jpg&w=828&q=75',
+  },
+};
 
 export default function myPage() {
   return (
@@ -9,14 +45,14 @@ export default function myPage() {
       <section className="custom-background full-width mb-16">
         <div className="container py-16 flex flex-col lg:flex-row gap-2">
           <div>
-            <h1 className="grow">
+            <h1>
               Dynamically Create Your Academic Talent Pool: Why wait for
               candidates to come to you?
               {/* Watch as Excellence Meets Opportunity */}
             </h1>
+            {/* <h1>Transform Your Talent Acquisition with the Academic Jobs Talent Pool</h1> */}
             <h2>
-              Empowering Universities & Colleges to Dynamically Find Top
-              Academic Talent
+              Empowering Universities & Colleges with Dynamic Talent Matching
             </h2>
             <p>
               Your Global Academic Talent Pool for Top Academics in Higher
@@ -34,7 +70,7 @@ export default function myPage() {
               width={613}
               height={529}
               src="/talent-pool/create-a-strong-talent-pool.png"
-              alt="Create a Strong Talent Pool for your College or University"
+              alt="Global academic talent pool platform interface"
               className="w-full h-auto"
             />
           </div>
