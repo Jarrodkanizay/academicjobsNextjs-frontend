@@ -7,6 +7,7 @@ import JobSearchBoxHome from '@/components/JobSearchBoxHome';
 import JobCategoryAndLocationLinks from '@/components/links/JobCategoryAndLocationLinks';
 import AusUniLogos from '@/components/AusUniLogos';
 import AmericaUniLogos from '@/components/AmericaUniLogos';
+import { getContentRegion } from '@/actions/getContentRegion';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -20,9 +21,11 @@ export const metadata: Metadata = {
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
 
-export default function myPage() {
+export default async function myPage() {
+  const contentRegion = await getContentRegion();
+
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
-  let showJobElephant = true;
+  // let showJobElephant = true;
   // showJobElephant = false;
 
   return (
@@ -39,7 +42,7 @@ export default function myPage() {
 
       <JobCategoryAndLocationLinks />
       {/* Set this to false to show uni logo and welcome to message */}
-      {showJobElephant ? (
+      {contentRegion === 'USA' ? (
         <>
           <div className="mb-16">
             <a href="/jobelephant-recruitment">
