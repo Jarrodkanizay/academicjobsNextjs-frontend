@@ -57,7 +57,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul>
+        <ul className="hidden">
           <li className=" font-bold text-xl pb-1">Institutions</li>
           {/* <li>
             <Link href="/the-university-rankings">University Rankings</Link>

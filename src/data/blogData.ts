@@ -660,10 +660,10 @@ export const blogData = [
     content: `<article class="blog-content">
       <div tabindex="0">
     <div>
-    <h2><span style="font-weight: bold;">How to Choose the Best University and Career Path in Australia for 2023?</span></h2>
+    <h2><span style="font-weight: bold;">How to Choose the Best University and Career Path in Australia?</span></h2>
     <p><span style="">The top Australian university rankings and their top academic jobs are popular questions for students who want to pursue higher education and enjoy a high quality of life. With a diverse and multicultural society, a strong economy, and a beautiful natural environment, Australia offers many opportunities and benefits for academic jobs.</span></p>
-    <p><span style="">How do you choose the best university and career path in Australia for 2023? There are many factors to consider, such as your academic interests, your career goals, your budget, your location preferences, and your personal preferences. In this blog post, we will provide some tips and insights to help you make an informed decision.</span></p>
-    <h3><span style="font-weight: bold;">Top Australian University Rankings for 2023</span></h3>
+    <p><span style="">How do you choose the best university and career path in Australia? There are many factors to consider, such as your academic interests, your career goals, your budget, your location preferences, and your personal preferences. In this blog post, we will provide some tips and insights to help you make an informed decision.</span></p>
+    <h3><span style="font-weight: bold;">Top Australian University Rankings</span></h3>
     <p><span style="">One of the most common ways to compare universities is to look at their rankings. Rankings are based on various indicators, such as academic reputation, research impact, teaching quality, student satisfaction, employability, internationalization, and innovation. Rankings can give you an overview of the strengths and weaknesses of different universities, as well as their reputation and recognition in the global market.</span></p>
     <p><span style="">Australia has 37 top universities, with our top 8 universities in the top 100 worldwide. The top 10 Australian universities are:</span></p>
     <ul>
@@ -680,9 +680,9 @@ export const blogData = [
     </ul>
     <p><span style="">These rankings are based on five main categories: teaching (30%), research (30%), citations (30%), international outlook (7.5%), and industry income (2.5%). Each category has several sub-indicators that measure different aspects of university performance. For example, teaching includes indicators such as student-to-staff ratio, doctorate-to-bachelor’s ratio, doctorates awarded-to-academic staff ratio, institutional income, and reputation survey. Research includes indicators such as research income, research productivity, research reputation survey, and research influence. Citations measure how often a university’s research is cited by other scholars around the world. International outlook includes indicators such as international-to-domestic-student ratio, international-to-domestic-staff ratio, international collaboration, and international reputation survey. Industry income measures how much a university earns from its knowledge transfer activities with industry partners.</span></p>
     <p><span style="">While rankings can be useful to compare universities at a glance, they are not the only factor to consider when choosing a university. Rankings do not capture everything that matters to students, such as campus culture, student support services, extracurricular activities, learning environment, social life, and personal fit. Rankings also do not reflect the quality of specific programs or courses within a university. Therefore, it is important to look beyond rankings and do your own research on different universities and their offerings.</span></p>
-    <h3><span style="font-weight: bold;">Top Academic Jobs Australia 2023</span></h3>
+    <h3><span style="font-weight: bold;">Top Academic Jobs Australia</span></h3>
     </p><p><span style="">Another factor to consider when choosing a university and career path is the job market. What are the skills and qualifications that employers are looking for? What are the industries and sectors that are growing and hiring? What are the salaries and benefits that different jobs offer?</span></p>
-    <p><span style="">Some of the highest paying jobs in Australia for 2023 include positions in the legal, executive, retail, accountancy &amp; finance, property, energy, construction, sustainability, technology, and healthcare sectors. The top 10 highest paying jobs in Australia for 2023 according to Hays are:</span></p>
+    <p><span style="">Some of the highest paying jobs in Australia include positions in the legal, executive, retail, accountancy &amp; finance, property, energy, construction, sustainability, technology, and healthcare sectors. The top 10 highest paying jobs in Australia according to Hays are:</span></p>
     <ul>
     <li><span style="padding-left: 40px;"><a style="" href="">Legal: Equity Partner (up to $850,000)</a></span></li>
     <li><span style="padding-left: 40px;"><a style="" href="">Executive: CEO and MD ($700,000)</a></span></li>
@@ -699,8 +699,8 @@ export const blogData = [
     <p><span style="">These jobs are not only high-paying, but also high-demanding. They require a combination of hard skills, such as technical knowledge, qualifications, and certifications, and soft skills, such as communication, leadership, problem-solving, and creativity. They also require a high level of commitment, responsibility, and performance. Therefore, they are not suitable for everyone, and they may not be aligned with your personal interests, values, and goals.</span></p>
     <p><span style="">When choosing a career path, it is important to consider not only the salary, but also the job satisfaction, work-life balance, career progression, and social impact. You should also consider your strengths, passions, and personality. What are you good at? What do you enjoy doing? What kind of work environment suits you best? What kind of impact do you want to make in the world?</span></p>
     <h3><span style="font-weight: bold;">Conclusions of Top Academic Jobs Australia</span></h3>
-    </p><p><span style="">Choosing the best university and career path in Australia for 2023 is not an easy task. It requires careful planning, research, and reflection. It also requires flexibility, adaptability, and resilience. The world is changing rapidly, and so are the education and employment landscapes. You may need to update your skills and qualifications, change your direction or goals, or explore new opportunities along the way.</span></p>
-    <p><span style="">However, choosing the best university jobs and career path in Australia for 2023 is also an exciting and rewarding journey. It can help you achieve your academic potential, your professional success, and your personal fulfilment. It can also help you contribute to the society and the world in a positive and meaningful way.</span></p>
+    </p><p><span style="">Choosing the best university and career path in Australia is not an easy task. It requires careful planning, research, and reflection. It also requires flexibility, adaptability, and resilience. The world is changing rapidly, and so are the education and employment landscapes. You may need to update your skills and qualifications, change your direction or goals, or explore new opportunities along the way.</span></p>
+    <p><span style="">However, choosing the best university jobs and career path in Australia is also an exciting and rewarding journey. It can help you achieve your academic potential, your professional success, and your personal fulfilment. It can also help you contribute to the society and the world in a positive and meaningful way.</span></p>
     <p><span style="">We hope this blog post has given you some useful tips and insights to help you make an informed decision about your future education and career in Australia. We wish you all the best in your endeavours!</span></p>
     </div>
     <cib-overlay></cib-overlay></div>
@@ -715,7 +715,7 @@ export const blogData = [
       'The Evolution of University Recruitment: Embracing Digital Platforms',
     slug: `evolution-of-university-recruitment`,
     author: `Gabrielle Ryan`,
-    published_at: `May 15, 2023`,
+    published_at: `2023-05-15`,
     updated_at: ``,
     image_url: `/blogs/recruitment-evolution.jpg`,
     alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
@@ -735,7 +735,7 @@ export const blogData = [
           <ul>
             <li style="list-style-type: none;">
               <ul>
-                <li><span style="padding-left: 80px;"><em>As of January 2021, there are 2.85 billion monthly active users on Facebook.</em></span></li>
+                <li><span style="padding-left: 80px;"><em>As of January 2021, there were 2.85 billion monthly active users on Facebook.</em></span></li>
                 <li><span style="padding-left: 80px;"><em>Twitter has over 330 million monthly active users worldwide.</em></span></li>
                 <li><span style="padding-left: 80px;"><em>Instagram has over 1 billion monthly active users.</em></span></li>
                 <li><span style="padding-left: 80px;"><em>A survey by CareerBuilder found that 70% of employers use social media to screen candidates.</em></span></li>
@@ -784,7 +784,7 @@ export const blogData = [
   {
     status: `published`,
     rank: 11,
-    title: 'The Highest Paid Academic Jobs Australia for 2023',
+    title: 'The Highest Paid Academic Jobs Australia',
     slug: `the-highest-paid-academic-job-of-2023`,
     author: `Gabrielle Ryan`,
     published_at: `2023-05-15`,
@@ -794,10 +794,10 @@ export const blogData = [
     summary:
       'If you are looking for a rewarding and lucrative career in the academic sector, you might be wondering what is the highest paid job in Australian higher education.',
     tags: [],
-    keywords: 'highest paid academic jobs Australia 2023 .',
+    keywords: 'highest paid academic jobs Australia.',
     content: `
       <article class="blog-content">
-      <p style="padding-bottom: 2rem;">If you are looking for a rewarding and lucrative career in academia, you might be interested in knowing which academic jobs pay the best. According to the latest data from the Australian Taxation Office, the highest paid academic jobs in Australia for 2023 are:</p>
+      <p style="padding-bottom: 2rem;">If you are looking for a rewarding and lucrative career in academia, you might be interested in knowing which academic jobs pay the best. According to the latest data from the Australian Taxation Office, the highest paid academic jobs in Australia are:</p>
 
       <div class="job">
         <h2 style="font-weight: bold;">Professor of Medicine: $282,212</h2>
@@ -869,14 +869,14 @@ export const blogData = [
     status: `published`,
     rank: 12,
     title:
-      'Unveiling the Apex of Academic Leadership: The Chief Research Officer in 2023',
+      'Unveiling the Apex of Academic Leadership: The Chief Research Officer',
     slug: `chief-research-officer-academic-leadership-2023`,
     author: `Gabrielle Ryan`,
     published_at: `2023-12-01`,
     updated_at: ``,
     image_url: `/blogs/apex-of-academic-leadership.jpg`,
     alt: `Academic Leader guiding the team to success`,
-    summary: `Explore the dynamic world of academic leadership in 2023 as we delve into the role of a Chief Research Officer (CRO). Discover the responsibilities, financial rewards, and profound impact that make the CRO the pinnacle of academic achievement. Join us on a journey through strategic partnerships, innovative projects, and the shaping of the future of research and innovation.`,
+    summary: `Explore the dynamic world of academic leadership as we delve into the role of a Chief Research Officer (CRO). Discover the responsibilities, financial rewards, and profound impact that make the CRO the pinnacle of academic achievement. Join us on a journey through strategic partnerships, innovative projects, and the shaping of the future of research and innovation.`,
     tags: [
       'Academic Leadership',
       'Chief Research Officer',
@@ -889,19 +889,19 @@ export const blogData = [
       'Research Funding',
       'Academic Landscape',
     ],
-    keywords: `Chief Research Officer 2023,
+    keywords: `Chief Research Officer,
       Academic Leadership trends,
       Research Strategy and Innovation,
       Financial Rewards in academia,
       Academic Achievements and Impact,
       Collaborations in research,
       Shaping the Future of Research,
-      Academic Careers in 2023,
+      Academic Careers,
       Research Funding Landscape,
       Strategic Partnerships in academia`,
     content: `
       <article class="blog-content">
-      <p style="text-align: justify;">In the dynamic landscape of academia, where knowledge is not only power but also a lucrative profession, the quest for the highest-paid academic job is a journey many aspire to embark upon. As we step into 2023, let's explore the pinnacle of academic careers, the role that not only commands respect but also an impressive financial reward.</p>
+      <p style="text-align: justify;">In the dynamic landscape of academia, where knowledge is not only power but also a lucrative profession, the quest for the highest-paid academic job is a journey many aspire to embark upon. As we step into the new year, let's explore the pinnacle of academic careers, the role that not only commands respect but also an impressive financial reward.</p>
 
       <h2 style="font-size: 20px; font-weight: bold; margin-top: 20px;">The Prestigious Position:</h2>
       <p style="text-align: justify;">Topping the charts as the highest-paid academic job today is the role of a Chief Research Officer (CRO) in leading research universities and institutions. The Chief Research Officer plays a pivotal role in shaping the institution's research agenda, fostering innovation, and securing substantial grants and funding.</p>
@@ -920,7 +920,7 @@ export const blogData = [
       <h2 style="font-size: 20px; font-weight: bold; margin-top: 20px;">Financial Rewards:</h2>
       <p style="text-align: justify;">Given the immense responsibilities and the impact of the role, it's no surprise that the Chief Research Officer is handsomely rewarded. Salaries for CROs in top-tier universities and research institutions often surpass those of other academic leadership positions. In addition to a competitive base salary, CROs may enjoy performance-based bonuses, profit-sharing, and other perks that reflect the success of their research endeavors.</p>
 
-      <p style="text-align: justify;">As we delve into the academic landscape of 2023, the role of the Chief Research Officer stands out not only for its financial rewards but also for the profound influence it has on shaping the future of research and innovation. For aspiring academics with a passion for groundbreaking discoveries and strategic leadership, the position of Chief Research Officer represents the zenith of academic achievement.</p>
+      <p style="text-align: justify;">As we delve into the academic landscape, the role of the Chief Research Officer stands out not only for its financial rewards but also for the profound influence it has on shaping the future of research and innovation. For aspiring academics with a passion for groundbreaking discoveries and strategic leadership, the position of Chief Research Officer represents the zenith of academic achievement.</p>
     </div>
     `,
   },
@@ -929,7 +929,7 @@ export const blogData = [
     status: `published`,
     rank: 13,
     title:
-      'Unlocking the Benefits of On-Campus Student Jobs: A Holistic Approach to Education',
+      'The Benefits of On-Campus Student Jobs: A Holistic Approach to Education',
     slug: `unlocking-benefits-on-campus-student-jobs`,
     author: `Gabrielle Ryan`,
     published_at: `2023-12-15`,

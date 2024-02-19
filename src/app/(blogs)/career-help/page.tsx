@@ -24,6 +24,7 @@ export default function BlogPosts() {
   //   return date.toLocaleDateString('en-US', options);
   // }
 
+  const showDates = false;
   const blogPath = '/career-help/';
 
   console.log(blogData);
@@ -68,20 +69,24 @@ export default function BlogPosts() {
                     </Link>
                   </h2>
                   <h3>By {post.author}</h3>
-                  <p>
-                    <time className="mr-4">
-                      {formatDate(post.published_at)}
-                    </time>
-                    {post.updated_at !== '' ? (
-                      <span className="text-slate-400">
-                        Updated: <time>{formatDate(post.updated_at)}</time>
-                      </span>
-                    ) : null}
-                  </p>
-                  <p className="h-[130px] relative">
-                    {post.summary}
-                    <div className="blog-gradient"> </div>
-                  </p>
+                  {showDates ? (
+                    <>
+                      <p>
+                        <time className="mr-4">
+                          {formatDate(post.published_at)}
+                        </time>
+                        {post.updated_at !== '' ? (
+                          <span className="text-slate-400">
+                            Updated: <time>{formatDate(post.updated_at)}</time>
+                          </span>
+                        ) : null}
+                      </p>
+                      <p className="h-[130px] relative">
+                        {post.summary}
+                        <div className="blog-gradient"> </div>
+                      </p>
+                    </>
+                  ) : null}
                   <div className="card-actions justify-end">
                     <Link
                       href={blogPath + post.slug}
