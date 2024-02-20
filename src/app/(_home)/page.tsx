@@ -425,25 +425,25 @@ export default async function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/disability-support-programs-and-services-dsps-full-time-tenure-track-counselor/82203"
+                    href="https://www.academicjobs.com/jobs/professor-in-artificial-intelligence/90020"
                     className="text-blue-500 font-bold"
                   >
-                    Disability Support Programs and Services (DSPS) Full-Time
-                    Tenure Track Counselor
+                    
+Professor in Artificial Intelligence
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Cuesta College</Link>
+                    <Link href="">Queensland University of Technology (QUT)</Link>
                   </li>
                   <li>
-                    <Link href="">San Luis Obispo County, California,USA</Link>
+                    <Link href="">Brisbane QLD, Australia</Link>
                   </li>
                   <li>
-                    <Link href="">Feb 19, 2024</Link>
+                    <Link href="">Apr 1, 2024</Link>
                   </li>
                   <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4938583"
+                    href="/jobs/professor-in-artificial-intelligence/90020"
                     className="btn btn-sm btn-aj mt-4"
                   >
                     More Info

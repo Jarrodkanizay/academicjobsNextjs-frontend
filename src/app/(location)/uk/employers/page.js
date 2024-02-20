@@ -72,7 +72,7 @@ Use university rankings to search for jobs in higher education.
     <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl  max-w-screen-2xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 ">
           <ul>
-            <li className='mb-1 text-[#f4a10c] font-bold'>California</li>
+            <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>California</li>
             <li><Link href="/employers/stanford-university/3101/">Stanford University</Link></li>
             <li><Link href="/employers/california-institute/4133/">California Institute
               of Technology</Link></li>
@@ -119,7 +119,7 @@ Use university rankings to search for jobs in higher education.
               of California Office of the President</Link></li>
           </ul>
           <ul>
-            <li className='mb-1 text-[#f4a10c] font-bold'>Massachusetts</li>
+            <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Massachusetts</li>
             <li><Link href="/employers/massachusetts-institute-of-technology/3103/">Massachusetts
               Institute of Technology</Link></li>
             <li><Link href="/employers/harvard-university/3100/">Harvard University</Link>
@@ -139,12 +139,12 @@ Use university rankings to search for jobs in higher education.
               Hospital</Link></li>
             <li><Link href="/employers/dana-farber-cancer-institute/3108/">Dana-Farber
               Cancer Institute</Link></li>
-            <li className='mb-1 text-[#f4a10c] font-bold'>Georgia</li>
+            <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Georgia</li>
             <li><Link href="/employers/emory-university/3372/">Emory University</Link>
             </li>
             <li><Link href="/employers/georgia-institute-of-technology/3154/">Georgia
               Institute of Technology</Link></li>
-            <li className='mb-1 text-[#f4a10c] font-bold'>Florida</li>
+            <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Florida</li>
             <li><Link href="/employers/university-of-miami/5475/">University of
               Miami</Link>
             </li>
@@ -153,7 +153,7 @@ Use university rankings to search for jobs in higher education.
             <li><Link href="/employers/university-of-florida/3394/">University of
               Florida</Link>
             </li>
-            <li className='mb-1 text-[#f4a10c] font-bold'>North
+            <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>North
               Carolina</li>
             <li><Link href="/employers/duke-university/3139/">Duke University</Link>
             </li>
@@ -168,7 +168,7 @@ Use university rankings to search for jobs in higher education.
             </li>
           </ul>
           <ul>
-            <li className='mb-1 text-[#f4a10c] font-bold'>New york</li>
+            <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>New york</li>
             <li><Link href="/employers/columbia-university/3127/">Columbia University</Link></li>
             <li><Link href="/employers/new-york-university-nyu/3144/">New York
               University NYU</Link></li>
@@ -196,7 +196,7 @@ Use university rankings to search for jobs in higher education.
             </li>
             <li><Link href="/employers/university-at-buffalo/3609/
                                     "> University at Buffalo</Link></li>
-            <li className='mb-1 text-[#f4a10c] font-bold'>Pennsylvania</li>
+            <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Pennsylvania</li>
             <li><Link href="/employers/university-of-pennsylvania/3131/
                                                         ">University of Pennsylvania</Link>
             </li>
@@ -209,7 +209,7 @@ Use university rankings to search for jobs in higher education.
             <li><Link href="/employers/duquesne-university/3330/
                         ">Duquesne University</Link>
             </li>
-            <li className='mb-1 text-[#f4a10c] font-bold'>Illinois</li>
+            <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Illinois</li>
             <li><Link href="/employers/University-of-Chicago/3126/
                                                         ">University of Chicago</Link></li>
             <li><Link href="/employers/Northwestern-University/3143/
@@ -218,7 +218,7 @@ Use university rankings to search for jobs in higher education.
                                                             ">Northern Illinois University</Link></li>
             <li><Link href="/employers/university-of-illinois-at-urbana-champaign/3164/
                                                             ">University of Illinois at Urbana-Champaign</Link></li>
-            <li className='mb-1 text-[#f4a10c] font-bold'>Michigan</li>
+            <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Michigan</li>
             <li><Link href="/employers/university-of-michigan/3142/
                                                                 ">University of Michigan</Link></li>
             <li><Link href="/employers/michigan-state-university/3654/
@@ -227,7 +227,7 @@ Use university rankings to search for jobs in higher education.
                                                                         "> Wayne State University</Link></li>
           </ul>
           <ul>
-            <li className='mb-1 text-[#f4a10c] font-bold'> All States</li>
+            <li className='mb-1 mt-4 text-[#f4a10c] font-bold'> All States</li>
             <li><Link href="/employers/yale-university/3125/">Yale University</Link>
             </li>
             <li><Link href="/employers/university-of-washington/3145/

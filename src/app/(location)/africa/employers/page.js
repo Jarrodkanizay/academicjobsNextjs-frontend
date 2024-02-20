@@ -72,7 +72,7 @@ Use university rankings to search for jobs in higher education.
        <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl max-w-screen-xl mx-auto">
            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7  mb-16">
              <ul>
-               <li className='mb-1 text-[#f4a10c] font-bold'>Egypt</li>
+               <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Egypt</li>
                <li><Link href="/employers/cairo-university/6226/">Cairo
                  University</Link>
                </li>
@@ -84,7 +84,7 @@ Use university rankings to search for jobs in higher education.
                </li>
              </ul>
              <ul>
-               <li className='mb-1 text-[#f4a10c] font-bold'>South Africa</li>
+               <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>South Africa</li>
                <li><Link href="/employers/university-of-cape-town/12637/">University of
                  Cape Town</Link></li>
                <li><Link href="/employers/university-of-the-witwatersrand/13133/">University of
@@ -98,7 +98,7 @@ Use university rankings to search for jobs in higher education.
                </li>
              </ul>
              <ul>
-               <li className='mb-1 text-[#f4a10c] font-bold'>Nigeria</li>
+               <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Nigeria</li>
                <li><Link href="/employers/university-of-ibadan/12743/">University of
                  Ibadan</Link>
                </li>
@@ -115,7 +115,7 @@ Use university rankings to search for jobs in higher education.
                </li>
              </ul>
              <ul>
-               <li className='mb-1 text-[#f4a10c] font-bold'>Kenya</li>
+               <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Kenya</li>
                <li><Link href="/employers/university-of-nairobi/12866/">University of
                  Nairobi</Link>
                </li>
@@ -133,7 +133,7 @@ Use university rankings to search for jobs in higher education.
                </li>
              </ul>
              <ul>
-               <li className='mb-1 text-[#f4a10c] font-bold'>Morocco</li>
+               <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Morocco</li>
                <li><Link href="/employers/university-mohammed-v-of-rabat/12453/">University
                  Mohammed V of Rabat</Link></li>
                <li><Link href="/employers/cadi-ayyad-university/12262/">Cadi Ayyad
@@ -143,7 +143,7 @@ Use university rankings to search for jobs in higher education.
                  University of Casablanca</Link></li>
              </ul>
              <ul>
-               <li className='mb-1 text-[#f4a10c] font-bold'>Ghana</li>
+               <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Ghana</li>
                <li><Link href="/employers/university-of-ghana/12711/">University of
                  Ghana</Link>
                </li>
@@ -154,13 +154,13 @@ Use university rankings to search for jobs in higher education.
                  Cape Coast</Link></li>
              </ul>
              <ul>
-               <li className='mb-1 text-[#f4a10c] font-bold'>Senegal</li>
+               <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Senegal</li>
                <li><Link href="/employers/cheikh-anta-diop-university/12272/">Cheikh Anta
                  Diop University</Link>
                </li>
              </ul>
              <ul>
-               <li className='mb-1 text-[#f4a10c] font-bold'>Tunisia</li>
+               <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Tunisia</li>
                <li><Link href="/employers/university-of-tunis-el-manar/12393/">University of
                  Tunis El Manar</Link>
                </li>
@@ -171,7 +171,7 @@ Use university rankings to search for jobs in higher education.
                  Carthage</Link></li>
              </ul>
              <ul>
-               <li className='mb-1 text-[#f4a10c] font-bold'>Uganda</li>
+               <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Uganda</li>
                <li><Link href="/employers/makerere-university/8875/">Makerere
                  University</Link>
                </li>

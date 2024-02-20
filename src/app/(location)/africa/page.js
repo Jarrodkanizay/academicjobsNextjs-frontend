@@ -110,7 +110,7 @@ export default function Page() {
               </div>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
                 <ul>
-                  <li className='mb-1 '><Link href="/jobs/egypt/" className='text-[#f4a10c] font-bold'>Egypt</Link></li>
+                  <li className='mb-1 mt-4 '><Link href="/jobs/egypt/" className='text-[#f4a10c] font-bold'>Egypt</Link></li>
                   <li><Link href="/employers/cairo-university/6226/">Cairo
                     University</Link>
                   </li>
@@ -122,7 +122,7 @@ export default function Page() {
                   </li>
                 </ul>
                 <ul>
-                  <li className='mb-1 '><Link href="/jobs/south-africa/" className='text-[#f4a10c] font-bold'>South Africa</Link></li>
+                  <li className='mb-1 mt-4 '><Link href="/jobs/south-africa/" className='text-[#f4a10c] font-bold'>South Africa</Link></li>
                   <li><Link href="/employers/university-of-cape-town/12637/">University of
                     Cape Town</Link></li>
                   <li><Link href="/employers/university-of-the-witwatersrand/13133/">University of
@@ -136,7 +136,7 @@ export default function Page() {
                   </li>
                 </ul>
                 <ul>
-                  <li className='mb-1 '><Link href="/jobs/nigeria/" className='text-[#f4a10c] font-bold'>Nigeria</Link></li>
+                  <li className='mb-1 mt-4 '><Link href="/jobs/nigeria/" className='text-[#f4a10c] font-bold'>Nigeria</Link></li>
                   <li><Link href="/employers/university-of-ibadan/12743/">University of
                     Ibadan</Link>
                   </li>
@@ -153,7 +153,7 @@ export default function Page() {
                   </li>
                 </ul>
                 <ul>
-                  <li className='mb-1 '><Link href="/jobs/kenya/" className='text-[#f4a10c] font-bold'>Kenya</Link></li>
+                  <li className='mb-1 mt-4 '><Link href="/jobs/kenya/" className='text-[#f4a10c] font-bold'>Kenya</Link></li>
                   <li><Link href="/employers/university-of-nairobi/12866/">University of
                     Nairobi</Link>
                   </li>
@@ -171,7 +171,7 @@ export default function Page() {
                   </li>
                 </ul>
                 <ul>
-                  <li className='mb-1 '><Link href="/jobs/morocco/" className='text-[#f4a10c] font-bold'>Morocco</Link></li>
+                  <li className='mb-1 mt-4 '><Link href="/jobs/morocco/" className='text-[#f4a10c] font-bold'>Morocco</Link></li>
                   <li><Link href="/employers/university-mohammed-v-of-rabat/12453/">University
                     Mohammed V of Rabat</Link></li>
                   <li><Link href="/employers/cadi-ayyad-university/12262/">Cadi Ayyad
@@ -181,7 +181,7 @@ export default function Page() {
                     University of Casablanca</Link></li>
                 </ul>
                 <ul>
-                  <li className='mb-1 '><Link href="/jobs/ghana/" className='text-[#f4a10c] font-bold'>Ghana</Link></li>
+                  <li className='mb-1 mt-4 '><Link href="/jobs/ghana/" className='text-[#f4a10c] font-bold'>Ghana</Link></li>
                   <li><Link href="/employers/university-of-ghana/12711/">University of
                     Ghana</Link>
                   </li>
@@ -192,13 +192,13 @@ export default function Page() {
                     Cape Coast</Link></li>
                 </ul>
                 <ul>
-                  <li className='mb-1 '><Link href="/jobs/senegal/" className='text-[#f4a10c] font-bold'>Senegal</Link></li>
+                  <li className='mb-1 mt-4 '><Link href="/jobs/senegal/" className='text-[#f4a10c] font-bold'>Senegal</Link></li>
                   <li><Link href="/employers/cheikh-anta-diop-university/12272/">Cheikh Anta
                     Diop University</Link>
                   </li>
                 </ul>
                 <ul>
-                  <li className='mb-1 '><Link href="/jobs/tunisia/" className='text-[#f4a10c] font-bold'>Tunisia</Link></li>
+                  <li className='mb-1 mt-4 '><Link href="/jobs/tunisia/" className='text-[#f4a10c] font-bold'>Tunisia</Link></li>
                   <li><Link href="/employers/university-of-tunis-el-manar/12393/">University of
                     Tunis El Manar</Link>
                   </li>
@@ -209,7 +209,7 @@ export default function Page() {
                     Carthage</Link></li>
                 </ul>
                 <ul>
-                  <li className='mb-1 '><Link href="/jobs/uganda/" className='text-[#f4a10c] font-bold'>Uganda</Link></li>
+                  <li className='mb-1 mt-4 '><Link href="/jobs/uganda/" className='text-[#f4a10c] font-bold'>Uganda</Link></li>
                   <li><Link href="/employers/makerere-university/8875/">Makerere
                     University</Link>
                   </li>

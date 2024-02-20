@@ -72,7 +72,7 @@ Use university rankings to search for jobs in higher education.
     <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl max-w-screen-xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
           <ul>
-            <li className='mb-1 text-[#f4a10c] font-bold'>North Island</li>
+            <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>North Island</li>
             <li><Link href="/employers/the-university-of-auckland/3809/">The
               University of Auckland</Link></li>
             <li><Link href="/employers/victoria-university-of-wellington/3807/">Victoria
@@ -84,7 +84,7 @@ Use university rankings to search for jobs in higher education.
               University of Technology (AUT)</Link></li>
           </ul>
           <ul>
-            <li className='mb-1 text-[#f4a10c] font-bold'>South Island</li>
+            <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>South Island</li>
             <li><Link href="/employers/university-of-otago/3805/">University of
               Otago</Link>
             </li>
