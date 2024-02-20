@@ -133,7 +133,7 @@ export default function myPage() {
               <div className="card bg-slate-100 shadow-xl">
                 <div className="card-body">
                   <h2 className="card-title"> Top University Employers USA </h2>
-                  <a className=" text-gray-400"> 10 Aug, 2023</a>
+                  <a className=" text-gray-400"> 10 Dec, 2023</a>
                 </div>
                 <figure>
                   <Image
@@ -183,7 +183,7 @@ export default function myPage() {
                     {' '}
                     Top University Employers Australia{' '}
                   </h2>
-                  <a className=" text-gray-400"> 10 Aug, 2023</a>
+                  <a className=" text-gray-400"> 10 Dec, 2023</a>
                 </div>
                 <figure>
                   <Image
@@ -230,7 +230,7 @@ export default function myPage() {
               <div className="card bg-slate-100 shadow-xl">
                 <div className="card-body">
                   <h2 className="card-title"> Top University Employers UK </h2>
-                  <a className=" text-gray-400"> 06 Jul, 2023</a>
+                  <a className=" text-gray-400"> 06 Dec, 2023</a>
                 </div>
                 <figure>
                   <Image
@@ -379,7 +379,7 @@ export default function myPage() {
                     <Link href="">Los Angeles, CA, USA</Link>
                   </li>
                   <li>
-                    <Link href=""> Aug 3, 2024</Link>
+                    <Link href=""> Dec 3, 2024</Link>
                   </li>
                 </ul>
               </ul>

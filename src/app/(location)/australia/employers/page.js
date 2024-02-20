@@ -65,7 +65,7 @@ Use university rankings to search for jobs in higher education.
         </section>
        
 
-        <div className="md:flex bg-gray-800 shadow-xl rounded-2xl mb-4 max-w-screen-lg mx-auto mt-4 p-4 gap-8 ">
+        <div className="md:flex bg-gray-800 shadow-xl rounded-2xl mb-4 max-w-screen-lg mx-2 md:auto mt-4 p-4 gap-8 ">
         <Image
           className=" rounded-xl md:w-2/3  "
           width={880}
@@ -74,7 +74,7 @@ Use university rankings to search for jobs in higher education.
           src="https://academicjobs.s3.amazonaws.com/img/_misc/maxresdefault.png"
         />
 
-<div className="w-1/3">
+<div className="md:w-1/3">
 <div className="md:grid  flex gap-4 text-gray-200 mt-3">
            
 
