@@ -70,6 +70,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
   );
 
   let bgColor = 'rgba(255, 255, 255, 1)';
+  if (company_name === 'Bond University') bgColor = 'bg-[#011a4d]';
   // async function getColorFromTopLeftCorner(imgSrc) {
   //   return new Promise((resolve, reject) => {
   //     let img = new Image();
@@ -127,7 +128,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
   return (
     <>
       {/* {console.log('Top 20 ' + { topTwentyUnis })} */}
-      <div className="bg-white relative content-grid mx-auto  ">
+      <div className="bg-white relative content-grid mx-auto">
         <div className="bg-slate-200 full-width">
           <div className="md:flex items-center p-4 gap-8">
             <div className="md:w-1/4 md:pr-4 md:p-8">
@@ -137,8 +138,8 @@ const JobDetailPage = async ({ params, searchParams }) => {
                   .toLowerCase()}/${employer_id}/`}
               >
                 <div
-                  className="w-full rounded-lg p-4"
-                  style={{ backgroundColor: `${bgColor}` }}
+                  className={`w-full rounded-lg p-4 ${bgColor}`}
+                  // style={{ backgroundColor: `${bgColor}` }}
                 >
                   <Image
                     className="w-full "
