@@ -1,6 +1,6 @@
 import Link from 'next/link';
 // import categoryData from '@/data/category.json'; // Old import replace with below
-import { categoryData } from '@/data/category.ts';
+import { categoryData } from '@/data/category';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
