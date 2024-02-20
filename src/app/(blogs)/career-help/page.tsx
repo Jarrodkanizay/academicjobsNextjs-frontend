@@ -60,7 +60,7 @@ export default function BlogPosts() {
                 </figure>
 
                 <div className="card-body">
-                  <h2 className="card-title grow">
+                  <h2 className="card-title grow line-clamp-4 m-0 min-h-[130px]">
                     <Link
                       href={blogPath + post.slug}
                       className="hover:text-orange-500 text-2xl"
@@ -81,12 +81,12 @@ export default function BlogPosts() {
                           </span>
                         ) : null}
                       </p>
-                      <p className="h-[130px] relative">
-                        {post.summary}
-                        <div className="blog-gradient"> </div>
-                      </p>
                     </>
                   ) : null}
+                  <p className="h-[130px] relative line-clamp-4 m-0">
+                    {post.summary}
+                    <div className="blog-gradient"> </div>
+                  </p>
                   <div className="card-actions justify-end">
                     <Link
                       href={blogPath + post.slug}
