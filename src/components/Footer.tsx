@@ -34,9 +34,9 @@ const Footer = () => {
         </ul>
 
         <ul>
-          <li className=" font-bold text-xl pb-1">Academic Opportunitys</li>
+          <li className=" font-bold text-xl pb-1">Academic Opportunities</li>
           <li>
-            <Link href="/jobs">Find All Academic Jobs Here</Link>
+            <Link href="/jobs">Get Job Offers</Link>
           </li>
           <li>
             <Link href="/lecturer">Top Lecturer Jobs</Link>
@@ -45,34 +45,37 @@ const Footer = () => {
             <Link href="/research">Top Research Positions</Link>
           </li>
           <li>
-            <Link href="/employers">Top University Jobs</Link>
-          </li>
-          <li>
-            <Link href="/academic-hub">Academic Hub</Link>
-          </li>
-          <li>
             <Link href="/the-academic-rankings/find-my-rank">
-              View your Academic Rank
+              Get Your Academic Rank
             </Link>
           </li>
           <li>
-            <Link href="/academic-talent-pool">Talent Pool</Link>
+            <Link href="/employers">Top Universities To Work For</Link>
+          </li>
+         
+          
+          <li>
+            <Link href="/academic-talent-pool"> Make Extra Money - See How ...</Link>
           </li>
         </ul>
 
         <ul>
-          <li className=" font-bold text-xl pb-1">Staff</li>
+          <li className=" font-bold text-xl pb-1"> Higher Ed Staff</li>
           <li>
-            <Link href="/admin">Top University Staff Jobs</Link>
-          </li>
-          <li>
-            <Link href="/executive">Higher Ed Executive Roles</Link>
+            <Link href="/phd">PhD Jobs</Link>
           </li>
           <li>
             <Link href="/hr-jobs">Higher Ed HR Jobs</Link>
           </li>
           <li>
-            <Link href="/student">Student Jobs on Campus</Link>
+            <Link href="/admin">All University Staff Jobs</Link>
+          </li>
+          <li>
+            <Link href="/executive">Higher Ed Executive Roles</Link>
+          </li>
+          
+          <li>
+            <Link href="/student">Jobs For Students</Link>
           </li>
          
            </ul>
