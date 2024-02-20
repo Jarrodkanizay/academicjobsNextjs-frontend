@@ -185,6 +185,8 @@ export default function myPage() {
         <div className="bg-gray-200 mt-16">
           <figure className="relative w-full min-h-[237px] max-h-[237px] overflow-hidden">
             <Image
+              width={1280}
+              height={380}
               src="/academic-job-postings/harvard-university.jpg"
               alt="USA harvard university"
               className="absolute w-full h-full object-cover"

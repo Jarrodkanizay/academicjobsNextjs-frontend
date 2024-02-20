@@ -34,28 +34,52 @@ const Footer = () => {
         </ul>
 
         <ul>
-          <li className=" font-bold text-xl pb-1">Job Seekers</li>
+          <li className=" font-bold text-xl pb-1">Academic Opportunities</li>
           <li>
-            <Link href="/jobs">Find Jobs</Link>
+            <Link href="/jobs">Get Job Offers</Link>
           </li>
           <li>
-            <Link href="/student-jobs-on-campus">Student Jobs on Campus</Link>
+            <Link href="/lecturer">Top Lecturer Jobs</Link>
           </li>
           <li>
-            <Link href="/employers">Find Employers</Link>
-          </li>
-          <li>
-            <Link href="/academic-hub">Academic Hub</Link>
+            <Link href="/research">Top Research Positions</Link>
           </li>
           <li>
             <Link href="/the-academic-rankings/find-my-rank">
-              View your Academic Rank
+              Get Your Academic Rank
             </Link>
           </li>
           <li>
-            <Link href="/academic-talent-pool">Talent Pool</Link>
+            <Link href="/employers">Top Universities To Work For</Link>
+          </li>
+         
+          
+          <li>
+            <Link href="/academic-talent-pool"> Make Extra Money - See How ...</Link>
           </li>
         </ul>
+
+        <ul>
+          <li className=" font-bold text-xl pb-1"> Higher Ed Staff</li>
+          <li>
+            <Link href="/phd">PhD Jobs</Link>
+          </li>
+          <li>
+            <Link href="/hr-jobs">Higher Ed HR Jobs</Link>
+          </li>
+          <li>
+            <Link href="/admin">All University Staff Jobs</Link>
+          </li>
+          <li>
+            <Link href="/executive">Higher Ed Executive Roles</Link>
+          </li>
+          
+          <li>
+            <Link href="/student">Jobs For Students</Link>
+          </li>
+         
+           </ul>
+
 
         <ul className="hidden">
           <li className=" font-bold text-xl pb-1">Institutions</li>
@@ -133,6 +157,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
+        
       </div>
     </footer>
   );

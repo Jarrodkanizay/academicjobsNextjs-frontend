@@ -734,6 +734,35 @@ Professor in Artificial Intelligence
                 </ul>
               </ul>
             </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/video-technician-summer-2024/84765"
+                    className="text-blue-500 font-bold"
+                  >
+                    Video Technician summer 2024
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">Southern Utah University</Link>
+                  </li>
+                  <li>
+                    <Link href="">Cedar City, UT, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Mar 1, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4968138"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
