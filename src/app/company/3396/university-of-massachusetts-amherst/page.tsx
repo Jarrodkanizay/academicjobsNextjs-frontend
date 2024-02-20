@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: 'university of massachusetts amherst Jobs', //Option 2 overrides the title in layout.tsx
+    absolute: 'university of massachusetts amherst Careers', //Option 2 overrides the title in layout.tsx
   },
   description:
     'To apply for a job at the University of Massachusetts Amherst, you can use the online application system34. You can browse the current openings by category, location, or keyword. You can also create a profile and upload your resume and cover letter.',

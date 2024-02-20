@@ -96,9 +96,9 @@ const JobPostForm = ({ partner, region }) => {
       <main className=" content-grid">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
-            <h2 className={`text-4xl font-bold mb-8 mt-8 underline-full`}>
+            <h1 className={`text-4xl font-bold mb-8 mt-8 underline-full text-[#3b5683]`}>
               {partnerName} Quick Post
-            </h2>
+            </h1>
             <form className=" " onSubmit={handleSubmit(onSubmit)}>
               <div className="flex flex-col gap-4 justify-start">
                 {standardMode ? null : (

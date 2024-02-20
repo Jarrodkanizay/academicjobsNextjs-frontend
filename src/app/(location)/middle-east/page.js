@@ -107,7 +107,7 @@ export default function Page() {
               <h2 className="underline-full">AcademicJobs Middle East: University Jobs  </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
                   <ul>
-                    <li className='mb-1 '><Link href="/jobs/saudi arabia/" className='text-[#f4a10c] font-bold'>Saudi Arabia</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/saudi arabia/" className='text-[#f4a10c] font-bold'>Saudi Arabia</Link></li>
                     <li><Link href="/employers/king-saud-university-saudi-arabia/8522/">King
                       Saud University</Link>
                     </li>
@@ -117,7 +117,7 @@ export default function Page() {
                       Abdul Aziz University</Link></li>
                   </ul>
                   <ul>
-                    <li className='mb-1 '><Link href="/jobs/uae/" className='text-[#f4a10c] font-bold'>UAE</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/uae/" className='text-[#f4a10c] font-bold'>UAE</Link></li>
                     <li><Link href="/employers/khalifa-university-uae/8481/">Khalifa
                       University</Link>
                     </li>
@@ -129,13 +129,13 @@ export default function Page() {
                       University of Sharjah</Link></li>
                   </ul>
                   <ul>
-                    <li className='mb-1 '><Link href="/jobs/lebanon/" className='text-[#f4a10c] font-bold'>Lebanon</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/lebanon/" className='text-[#f4a10c] font-bold'>Lebanon</Link></li>
                     <li><Link href="/employers/american-university-of-beirut-lebanon/5804/">American
                       University of Beirut</Link></li>
-                    <li className='mb-1 '><Link href="/jobs/jordan/" className='text-[#f4a10c] font-bold'>Jordan</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/jordan/" className='text-[#f4a10c] font-bold'>Jordan</Link></li>
                     <li><Link href="/employers/university-of-jordan-jordan/12763/">University
                       of Jordan</Link></li>
-                    <li className='mb-1 '><Link href="/jobs/qatar/" className='text-[#f4a10c] font-bold'>Qatar</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/qatar/" className='text-[#f4a10c] font-bold'>Qatar</Link></li>
                     <li><Link href="/employers/qatar-university-qatar/12944/">Qatar
                       University</Link>
                     </li>

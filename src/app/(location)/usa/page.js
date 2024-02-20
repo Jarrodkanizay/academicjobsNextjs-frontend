@@ -174,7 +174,7 @@ export default function Page() {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 max-w-screen-xl mx-auto">
         <ul>
-          <li className="mb-1 ">
+          <li className="mb-1 mt-4 ">
             <Link href="/jobs/california/" className="text-[#f4a10c] font-bold">
               California
             </Link>
@@ -290,7 +290,7 @@ export default function Page() {
           </li>
         </ul>
         <ul>
-          <li className="mb-1 ">
+          <li className="mb-1 mt-4 ">
             <Link
               href="/jobs/massachusetts/"
               className="text-[#f4a10c] font-bold"
@@ -341,7 +341,7 @@ export default function Page() {
               Dana-Farber Cancer Institute
             </Link>
           </li>
-          <li className="mb-1 ">
+          <li className="mb-1 mt-4 ">
             <Link href="/jobs/georgia/" className="text-[#f4a10c] font-bold">
               Georgia
             </Link>
@@ -356,7 +356,7 @@ export default function Page() {
               Georgia Institute of Technology
             </Link>
           </li>
-          <li className="mb-1 ">
+          <li className="mb-1 mt-4 ">
             <Link href="/jobs/florida/" className="text-[#f4a10c] font-bold">
               Florida
             </Link>
@@ -376,7 +376,7 @@ export default function Page() {
               University of Florida
             </Link>
           </li>
-          <li className="mb-1 ">
+          <li className="mb-1 mt-4 ">
             <Link
               href="/jobs/north-carolina/"
               className="text-[#f4a10c] font-bold"
@@ -404,7 +404,7 @@ export default function Page() {
           </li>
         </ul>
         <ul>
-          <li className="mb-1 ">
+          <li className="mb-1 mt-4 ">
             <Link href="/jobs/new-york/" className="text-[#f4a10c] font-bold">
               New york
             </Link>
@@ -476,7 +476,7 @@ export default function Page() {
               University at Buffalo
             </Link>
           </li>
-          <li className="mb-1 ">
+          <li className="mb-1 mt-4 ">
             <Link
               href="/jobs/pennsylvania/"
               className="text-[#f4a10c] font-bold"
@@ -516,7 +516,7 @@ export default function Page() {
               Duquesne University
             </Link>
           </li>
-          <li className="mb-1 ">
+          <li className="mb-1 mt-4 ">
             <Link href="/jobs/illinois/" className="text-[#f4a10c] font-bold">
               Illinois
             </Link>
@@ -553,7 +553,7 @@ export default function Page() {
               University of Illinois at Urbana-Champaign
             </Link>
           </li>
-          <li className="mb-1 ">
+          <li className="mb-1 mt-4 ">
             <Link href="/jobs/michigan/" className="text-[#f4a10c] font-bold">
               Michigan
             </Link>
@@ -585,7 +585,7 @@ export default function Page() {
           </li>
         </ul>
         <ul>
-          <li className="mb-1 ">
+          <li className="mb-1 mt-4 ">
             <Link href="/jobs/usa/" className="text-[#f4a10c] font-bold">
               All States
             </Link>

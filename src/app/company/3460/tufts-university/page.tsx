@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: 'Tufts University Jobs', //Option 2 overrides the title in layout.tsx
+    absolute: 'Tufts University Careers', //Option 2 overrides the title in layout.tsx
   },
   description:
     'If you have any questions about the application process or the job requirements, you can contact the Office of Human Resources at hr@tufts.edu or 617-627-3272. You can also visit the Work at Tufts website4 for more information about the benefits, policies, and events related to working at Tufts University. ',

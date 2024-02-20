@@ -72,17 +72,17 @@ Use university rankings to search for jobs in higher education.
         <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl max-w-screen-xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
               <ul>
-                <li className='mb-1 text-[#f4a10c] font-bold'>France</li>
+                <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>France</li>
                 <li><Link href="/employers/paris-sciences-et-lettres/3163/">Paris
 
                   Sciences et Lettres</Link></li>
                 <li><Link href="/employers/ecole-polytechnique/3158/">Ecole Polytechnique</Link></li>
-                <li className='mb-1 text-[#f4a10c] font-bold'>Sweden</li>
+                <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Sweden</li>
                 <li><Link href="/employers/karolinska-institute/3165/">Karolinska Institute</Link>
                 </li>
               </ul>
               <ul>
-                <li className='mb-1 text-[#f4a10c] font-bold'>Germany</li>
+                <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Germany</li>
                 <li><Link href="/employers/heidelberg-university/3160/">Heidelberg
                   University</Link></li>
                 <li><Link href="/employers/lmu-munich-ludwig-maximilians-universitat/3150/">LMU
@@ -90,26 +90,26 @@ Use university rankings to search for jobs in higher education.
                 <li><Link href="/employers/technische-uiniversitat-munchen/10702/">Technische Universität München</Link></li>
               </ul>
               <ul>
-                <li className='mb-1 text-[#f4a10c] font-bold'>Denmark</li>
+                <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Denmark</li>
                 <li><Link href="/employers/the-university-of-copenhagen/3156/">University of
                   Copenhagen</Link>
                 </li>
-                <li className='mb-1 text-[#f4a10c] font-bold'>Switzerland</li>
+                <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Switzerland</li>
                 <li><Link href="/employers/eth-zurich/3132/">ETH
                   Zurich</Link></li>
-                <li className='mb-1 text-[#f4a10c] font-bold'>Belgium</li>
+                <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Belgium</li>
                 <li><Link href="/employers/ku-leuven/3159/">KU Leuven</Link></li>
               </ul>
 
 
               <ul>
-                <li className='mb-1 text-[#f4a10c] font-bold'>Netherlands</li>
+                <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Netherlands</li>
                 <li><Link href="/employers/delft-university-of-technology/3847/">Delft University of Technology</Link>
                 </li>
-                <li className='mb-1 text-[#f4a10c] font-bold'>Italy</li>
+                <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Italy</li>
                 <li><Link href="/employers/University-of-Bologna/12015/">University of Bologna</Link></li>
 
-                <li className='mb-1 text-[#f4a10c] font-bold'>Spain</li>
+                <li className='mb-1 mt-4 text-[#f4a10c] font-bold'>Spain</li>
                 <li><Link href="/employers/universitat-de-barcelona/12195/">Universitat de Barcelona</Link></li>
 
               </ul>

@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: 'Boston College Jobs', //Option 2 overrides the title in layout.tsx
+    absolute: 'Boston College Careers', //Option 2 overrides the title in layout.tsx
   },
   description:
     'Are you looking for a rewarding career at one of the nation’s leading universities? Do you want to work in a diverse and inclusive environment that fosters academic excellence, Jesuit values, and service to others? If so, you might be interested in exploring the job opportunities at Boston College. ',

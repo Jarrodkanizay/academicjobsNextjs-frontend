@@ -34,15 +34,18 @@ const Footer = () => {
         </ul>
 
         <ul>
-          <li className=" font-bold text-xl pb-1">Job Seekers</li>
+          <li className=" font-bold text-xl pb-1">Academic Opportunitys</li>
           <li>
-            <Link href="/jobs">Find Jobs</Link>
+            <Link href="/jobs">Find All Academic Jobs Here</Link>
           </li>
           <li>
-            <Link href="/student-jobs-on-campus">Student Jobs on Campus</Link>
+            <Link href="/lecturer">Top Lecturer Jobs</Link>
           </li>
           <li>
-            <Link href="/employers">Find Employers</Link>
+            <Link href="/research">Top Research Positions</Link>
+          </li>
+          <li>
+            <Link href="/employers">Top University Jobs</Link>
           </li>
           <li>
             <Link href="/academic-hub">Academic Hub</Link>
@@ -56,6 +59,24 @@ const Footer = () => {
             <Link href="/academic-talent-pool">Talent Pool</Link>
           </li>
         </ul>
+
+        <ul>
+          <li className=" font-bold text-xl pb-1">Staff</li>
+          <li>
+            <Link href="/admin">Top University Staff Jobs</Link>
+          </li>
+          <li>
+            <Link href="/executive">Higher Ed Executive Roles</Link>
+          </li>
+          <li>
+            <Link href="/hr-jobs">Higher Ed HR Jobs</Link>
+          </li>
+          <li>
+            <Link href="/student">Student Jobs on Campus</Link>
+          </li>
+         
+           </ul>
+
 
         <ul className="hidden">
           <li className=" font-bold text-xl pb-1">Institutions</li>
@@ -133,6 +154,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
+        
       </div>
     </footer>
   );
