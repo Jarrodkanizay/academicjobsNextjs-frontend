@@ -248,11 +248,11 @@ const JobDetailPage = async ({ params, searchParams }) => {
       </section>
       {/* main body of job post */}
       <section className="jobs_grid job_post_panel_container">
-        <article className="post_panel" data-id={jobId}>
+        <article className="post_panel mt-[26px]" data-id={jobId}>
           <div className="post_content bg-white border-2 rounded-lg">
-            <article className="post" data-id={jobId}>
+            <div className="post" data-id={jobId}>
               {
-                <div className="">
+                <>
                   <div
                     className={`${
                       !headlineOnly || active ? 'job-content block' : 'hidden'
@@ -309,10 +309,10 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     </details>{' '}
                   </div>
                   {/* </div> */}
-                </div>
+                </>
               }
               {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
-            </article>
+            </div>
           </div>
         </article>
         <div className="listings_panel">
