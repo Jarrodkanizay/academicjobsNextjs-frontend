@@ -47,7 +47,7 @@ export default function JobFilter({ dataQty = '> 1' }: JobFilterProps) {
     <>
       {logoMode ? (
         <>
-        {/* <div className="mt-12 rounded-3xl  border-8 mb-12 ">
+        <div className="mt-12 rounded-3xl  border-8 mb-12 hidden md:block">
           <Image
                   src="/about-us/global-academic.png"
                   alt="global"
@@ -56,12 +56,12 @@ export default function JobFilter({ dataQty = '> 1' }: JobFilterProps) {
                   className="rounded-2xl mb-[-4rem]"
                 />
                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4968138"
+                    href="https://www.academicjobs.com/academic-talent-pool"
                     className="btn btn-sm btn-aj m-4 "
                   >
                     Connect Now
                   </Link>
-</div> */}
+</div>
         <div className=" mt-4 hidden lg:block">
           {logos.map((logo, index) => (
             <div key={index} className={`${index > 0 ? 'mt-16' : ''}`}>
