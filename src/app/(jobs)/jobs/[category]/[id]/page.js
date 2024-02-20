@@ -161,10 +161,10 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     {location}
                 </Link> */}
               </div>
-              <div className=" grid grid-cols-3 md:flex items-center gap-4">
+              <div className="flex items-center justify-start gap-6">
                 {headlineOnly ? (
                   <Link href="#request-job-post" className="btn btn-aj">
-                    Apply Now
+                    Apply Now
                   </Link>
                 ) : (
                   <Button
@@ -175,7 +175,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                   />
                 )}
                 <a
-                  className="icon_share justify-center items-center"
+                  className="icon_share items-center min-w-[32px]"
                   href={`mailto:?bcc=${bccEmail}&subject=${subject}&body=${bodyEmail}`}
                 >
                   <BsFillShareFill size={32} color="#2867B2" />
