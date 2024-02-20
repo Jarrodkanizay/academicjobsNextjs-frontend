@@ -69,7 +69,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
     `I came across this job posting on AcademicJobs and thought you might be interested: https://www.academicjobs.com/jobs/myjob/${jobId}`
   );
 
-  let bgColor = 'rgba(255, 255, 255, 1)';
+  let bgColor = 'bg-white';
   if (company_name === 'Bond University') bgColor = 'bg-[#011a4d]';
   // async function getColorFromTopLeftCorner(imgSrc) {
   //   return new Promise((resolve, reject) => {
