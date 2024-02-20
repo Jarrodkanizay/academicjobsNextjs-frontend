@@ -249,7 +249,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
       {/* main body of job post */}
       <section className="jobs_grid job_post_panel_container">
         <article className="post_panel" data-id={jobId}>
-          <div className="post_content bg-white border-2 rounded-lg w-screen md:w-fit">
+          <div className="post_content bg-white border-2 rounded-lg">
             <article className="post" data-id={jobId}>
               {
                 <div className="">

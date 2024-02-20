@@ -75,6 +75,22 @@ html {
       grid-area: post_panel;
     }
 
+    .post_panel .post_content .post {
+      * {
+        border: 1px solid red;
+        width: auto !important;
+        max-width: none !important;
+        min-width: 0 !important;
+      }
+      a {
+        background-color: violet !important;
+        word-break: break-word;
+        overflow-wrap: break-word;
+      }
+      div * {
+      }
+    }
+
     .listings_panel {
       grid-area: listings_panel;
       margin-top: 26px;
