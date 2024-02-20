@@ -12,7 +12,7 @@ export const blogData = [
     image_url: `/blogs/automated-quick-job-post-technology.jpg`,
     alt: `Revolutionizing Recruitment: How Quick Job Post Technology is Changing the Game for Colleges & Universities`,
     summary:
-      'Professionals interested in a career in academia at may thrive in a vibrant and innovative environment for higher learning.',
+      'HR Professionals, Colleges & Universities are discovering the transformative power of Quick Job Post Technology. Learn how this innovative solution is revolutionizing the way job positions are listed and significantly reducing the time and effort required by HR personnel and recruiters to post a job. ',
     tags: [],
     keywords:
       'higher ed Quick Job Post, higher education Quick Job Post, Quick Job Post Technology, Academic Quick Job Post Technology, Time Saving Job Posts, Save Time Posting Jobs',

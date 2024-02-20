@@ -13,6 +13,7 @@ import RequestFullJobForm from '@/components/forms/RequestFullJobForm';
 import { useSearchParams } from 'next/navigation';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import FavoriteButton from '@/components/FavoriteButton';
+import { StarRank } from '@/components/StarRank';
 
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
@@ -71,59 +72,6 @@ const JobDetailPage = async ({ params, searchParams }) => {
 
   let bgColor = 'bg-white';
   if (company_name === 'Bond University') bgColor = 'bg-[#011a4d]';
-  // async function getColorFromTopLeftCorner(imgSrc) {
-  //   return new Promise((resolve, reject) => {
-  //     let img = new Image();
-  //     img.src = imgSrc;
-  //     img.onload = function () {
-  //       let canvas = document.createElement('canvas');
-  //       canvas.width = img.width;
-  //       canvas.height = img.height;
-
-  //       let ctx = canvas.getContext('2d');
-  //       ctx.drawImage(img, 0, 0, img.width, img.height);
-
-  //       let r = 0,
-  //         g = 0,
-  //         b = 0,
-  //         a = 0;
-  //       for (let y = 0; y < 2; y++) {
-  //         for (let x = 0; x < 2; x++) {
-  //           let pixelData = ctx.getImageData(x, y, 1, 1).data;
-  //           r += pixelData[0];
-  //           g += pixelData[1];
-  //           b += pixelData[2];
-  //           a += pixelData[3];
-  //         }
-  //       }
-
-  //       r /= 4;
-  //       g /= 4;
-  //       b /= 4;
-  //       a /= 4;
-
-  //       let rgba = `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(
-  //         b
-  //       )}, ${a / 255})`;
-
-  //       resolve(rgba);
-  //     };
-  //     img.onerror = reject;
-  //   });
-  // }
-  // async function fetchColorAndSetBackground() {
-  //   try {
-  //     bgColor = await getColorFromTopLeftCorner(
-  //       `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}`
-  //     );
-  //     return bgColor;
-  //     // Use the color here
-  //   } catch (error) {
-  //     console.error(error);
-  //     // Handle the error here
-  //   }
-  // }
-  // fetchColorAndSetBackground();
 
   return (
     <>
@@ -203,20 +151,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
         <div className="job_post_header_panel">
           <h3 className="company_name">{company_name}</h3>
           <section className="ranking flex flex-row">
-            {[...Array(5)].map((_, i) => (
-              <svg
-                key={i}
-                xmlns="http://www.w3.org/2000/svg"
-                width="26"
-                height="26"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill={i < ranking ? 'gold' : 'lightgray'}
-                  d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"
-                />
-              </svg>
-            ))}
+            <StarRank ranking={ranking} />
             <h4 className="location pl-8">
               <Image
                 src={`/icons/map-marker-icon.svg`}
@@ -248,11 +183,11 @@ const JobDetailPage = async ({ params, searchParams }) => {
       </section>
       {/* main body of job post */}
       <section className="jobs_grid job_post_panel_container">
-        <article className="post_panel" data-id={jobId}>
-          <div className="post_content bg-white border-2 rounded-lg w-screen md:w-fit">
-            <article className="post" data-id={jobId}>
+        <article className="post_panel mt-[26px]" data-id={jobId}>
+          <div className="post_content bg-white border-2 rounded-lg">
+            <div className="post" data-id={jobId}>
               {
-                <div className="">
+                <>
                   <div
                     className={`${
                       !headlineOnly || active ? 'job-content block' : 'hidden'
@@ -309,10 +244,10 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     </details>{' '}
                   </div>
                   {/* </div> */}
-                </div>
+                </>
               }
               {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
-            </article>
+            </div>
           </div>
         </article>
         <div className="listings_panel">

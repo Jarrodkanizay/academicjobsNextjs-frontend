@@ -45,7 +45,7 @@ export default function myPage() {
       </div>
       <Stats />
       <div className="container my-16 grid grid-cols-1 md:grid-cols-2 md:col-span-2 gap-20 px-8 sm:px-32">
-        <div className="card bg-base-100 shadow-xl">
+        <div className="card bg-slate-50 changed-css shadow-xl">
           <figure>
             <Image
               width={800}
@@ -69,7 +69,7 @@ export default function myPage() {
             </div>
           </div>
         </div>
-        <div className="card bg-base-100 shadow-xl">
+        <div className="card bg-slate-50 changed-css shadow-xl">
           <figure>
             <Image
               width={800}

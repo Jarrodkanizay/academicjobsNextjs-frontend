@@ -7,6 +7,8 @@ import JobFilter from '@/components/JobFilter';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import { StarRank } from '@/components/StarRank';
+
 export async function generateMetadata({ params }) {
   const employer = await getEmployer(params.id);
   if (!employer) return { title: 'not found' };
@@ -118,11 +120,14 @@ const Employer = async ({ params }) => {
                 {company_name}
               </h1>
               <div className="flex gap-2">
-                <p className="text-xl leading-[.75rem] font-bold text-yellow-500 ">
+                {/* <p className="text-xl leading-[.75rem] font-bold text-yellow-500 ">
                   Employer Ranking -
                 </p>
                 <p className="text-2xl  leading-[.75rem]  font-bold text-yellow-500 ">
                   ★ {ranking}
+                </p> */}
+                <p>
+                  <StarRank ranking={ranking} size={30} border="#bbb" />
                 </p>
               </div>
               <div

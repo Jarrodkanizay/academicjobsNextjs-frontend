@@ -106,7 +106,7 @@ export default function myPage() {
         </div>
 
         <div className="container my-16 flex flex-col sm:flex-row gap-20 px-8 sm:px-32">
-          <div className="card bg-base-100 shadow-xl">
+          <div className="card bg-slate-50 changed-css shadow-xl">
             <figure>
               <Image
                 width={800}
@@ -130,7 +130,7 @@ export default function myPage() {
               </div>
             </div>
           </div>
-          <div className="card bg-base-100 shadow-xl">
+          <div className="card bg-slate-50 changed-css shadow-xl">
             <figure>
               <Image
                 width={800}
