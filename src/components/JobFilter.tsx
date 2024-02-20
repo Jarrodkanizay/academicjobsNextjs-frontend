@@ -9,6 +9,7 @@ type JobFilterProps = {
 };
 
 let logos = [
+
   {
     name: 'Bond',
     url: '/university-logos/aus/bond-university.jpg',
@@ -45,6 +46,22 @@ export default function JobFilter({ dataQty = '> 1' }: JobFilterProps) {
   return (
     <>
       {logoMode ? (
+        <>
+        {/* <div className="mt-12 rounded-3xl  border-8 mb-12 ">
+          <Image
+                  src="/about-us/global-academic.png"
+                  alt="global"
+                  width={400}
+                  height={450}
+                  className="rounded-2xl mb-[-4rem]"
+                />
+                 <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4968138"
+                    className="btn btn-sm btn-aj m-4 "
+                  >
+                    Connect Now
+                  </Link>
+</div> */}
         <div className=" mt-4 hidden lg:block">
           {logos.map((logo, index) => (
             <div key={index} className={`${index > 0 ? 'mt-16' : ''}`}>
@@ -60,6 +77,7 @@ export default function JobFilter({ dataQty = '> 1' }: JobFilterProps) {
             </div>
           ))}
         </div>
+       </>
       ) : (
         <>
           <div className="filters mt-4 bg-slate-100 py-4 pb-8  px-8 rounded m-0 shadow-xl border border-t-4 h-fit hidden md:block justify-center items-center ml-4">
