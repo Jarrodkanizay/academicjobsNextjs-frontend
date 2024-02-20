@@ -1677,7 +1677,7 @@ export default function myPage() {
                   </Link>
                 </li>
                 <li className="pb-6">
-                  <Link href="/employers/university-of-new-south-wales/3738/">
+                  <Link href="/employers/university-of-new-south-wales-unsw-/3738/">
                     University of New South Wales
                   </Link>
                 </li>

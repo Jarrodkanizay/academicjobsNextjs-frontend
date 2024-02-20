@@ -155,7 +155,7 @@ Use university rankings to search for jobs in higher education.
 
                     <li><Link href="/employers/the-university-of-sydney/3171/">The
                       University of Sydney</Link></li>
-                    <li><Link href="/employers/university-of-new-south-wales/3738/">University of New
+                    <li><Link href="/employers/university-of-new-south-wales-unsw-/3738/">University of New
                       South Wales</Link></li>
                     <li><Link href="/employers/charles-sturt-university/3855/">Charles Sturt University</Link>
                     </li>
