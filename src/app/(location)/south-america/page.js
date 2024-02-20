@@ -106,7 +106,7 @@ export const metadata = {
               <h2 className="underline-full">AcademicJobs South America: All University Jobs by Country </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
                   <ul>
-                    <li className='mb-1 '><Link href="/jobs/brazil/" className='text-[#f4a10c] font-bold'>Brazil</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/brazil/" className='text-[#f4a10c] font-bold'>Brazil</Link></li>
                     <li><Link href="/employers/university-of-sao-paulo/11463/">University of São Paulo</Link>
                     </li>
                     <li><Link href="/employers/university-of-campinas/11490/">University of Campinas</Link>
@@ -121,19 +121,19 @@ export const metadata = {
 
                   </ul>
                   <ul>
-                    <li className='mb-1 '><Link href="/jobs/argentina/" className='text-[#f4a10c] font-bold'>Argentina</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/argentina/" className='text-[#f4a10c] font-bold'>Argentina</Link></li>
                     <li><Link href="/employers/universidad-de-buenos-aires/11196/">Universidad de Buenos
                       Aires</Link>
                     </li>
 
-                    <li className='mb-1 '><Link href="/jobs/colombia/" className='text-[#f4a10c] font-bold'>Colombia</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/colombia/" className='text-[#f4a10c] font-bold'>Colombia</Link></li>
                     <li><Link href="/employers/universidad-de-los-andes/11308/">Universidad de los
                       Andes</Link></li>
 
                     <li><Link href="/employers/icesi-university/11648/">Icesi University</Link></li>
                   </ul>
                   <ul>
-                    <li className='mb-1 '><Link href="/jobs/chile/" className='text-[#f4a10c] font-bold'>Chile</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/chile/" className='text-[#f4a10c] font-bold'>Chile</Link></li>
                     <li><Link href="/employers/pontificia-universidad-catolica-de-chile/9739/">Pontificia Universidad
                       Catolica de Chile</Link></li>
                     <li><Link href="/employers/universidad-alberto-hurtado/11012/">Universidad Alberto
@@ -144,7 +144,7 @@ export const metadata = {
                     <li><Link href="/employers/university-of-antofagasta/11189/">University of Antofagasta</Link></li>
                   </ul>
                   <ul>
-                    <li className='mb-1 '><Link href="/jobs/peru/" className='text-[#f4a10c] font-bold'>Peru</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/peru/" className='text-[#f4a10c] font-bold'>Peru</Link></li>
                     <li><Link href="/employers/universidad-alas-peruanas/11010/">Universidad Alas
                       Peruanas</Link>
                     </li>

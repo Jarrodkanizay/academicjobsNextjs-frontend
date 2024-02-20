@@ -193,7 +193,7 @@ export default function Page() {
               <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-6 py-2 px-7 pb-8">
                 <div className="column">
                   <ul className="  rounded-3xl p-4 shadow-md">
-                    <li className="mb-1 mt-4 flex">
+                    <li className="mb-1 mt-4 mt-4 flex">
                       <img 
                         width={100}
                         height={100}
@@ -244,7 +244,7 @@ export default function Page() {
                 </div>
                 <div className="column">
                   <ul className=" rounded-3xl p-4 shadow-md">
-                    <li className="mb-1 mt-4 flex">
+                    <li className="mb-1 mt-4 mt-4 flex">
                       <img 
                         width={100}
                         height={100}
@@ -295,7 +295,7 @@ export default function Page() {
                 </div>
                 <div className="column">
                   <ul className=" rounded-3xl p-4 shadow-md">
-                    <li className="mb-1 mt-4 flex">
+                    <li className="mb-1 mt-4 mt-4 flex">
                       <img 
                         width={100}
                         height={100}
@@ -346,7 +346,7 @@ export default function Page() {
                 </div>
                 <div className="column">
                   <ul className=" rounded-3xl p-4 shadow-md">
-                    <li className="mb-1 mt-4 flex">
+                    <li className="mb-1 mt-4 mt-4 flex">
                       <img 
                         width={100}
                         height={100}
@@ -513,7 +513,7 @@ export default function Page() {
               </h2>
               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
                 <ul>
-                  <li className="mb-1 ">
+                  <li className="mb-1 mt-4 ">
                     <Link
                       href="/jobs?l=&q=act"
                       className="text-[#f4a10c] font-bold"
@@ -531,7 +531,7 @@ export default function Page() {
                       University of Canberra
                     </Link>
                   </li>
-                  <li className="mb-1 ">
+                  <li className="mb-1 mt-4 ">
                     <Link
                       href="/jobs?l=&q=new-south-wales"
                       className="text-[#f4a10c] font-bold"
@@ -596,7 +596,7 @@ export default function Page() {
                   </li>
                 </ul>
                 <ul>
-                  <li className="mb-1 ">
+                  <li className="mb-1 mt-4 ">
                     <Link
                       href="/jobs?l=&q=victoria"
                       className="text-[#f4a10c] font-bold"
@@ -676,7 +676,7 @@ export default function Page() {
                       Federation University Australia
                     </Link>
                   </li>
-                  <li className="mb-1 ">
+                  <li className="mb-1 mt-4 ">
                     <Link
                       href="/jobs?l=&q=tasmania"
                       className="text-[#f4a10c] font-bold"
@@ -694,7 +694,7 @@ export default function Page() {
                   </li>
                 </ul>
                 <ul>
-                  <li className="mb-1 ">
+                  <li className="mb-1 mt-4 ">
                     <Link
                       href="/jobs?l=&q=queensland"
                       className="text-[#f4a10c] font-bold"
@@ -745,7 +745,7 @@ export default function Page() {
                       University of Sunshine Coast
                     </Link>
                   </li>
-                  <li className="mb-1 ">
+                  <li className="mb-1 mt-4 ">
                     <Link
                       href="/jobs?l=&q=northern-territory"
                       className="text-[#f4a10c] font-bold"
@@ -760,7 +760,7 @@ export default function Page() {
                   </li>
                 </ul>
                 <ul>
-                  <li className="mb-1 ">
+                  <li className="mb-1 mt-4 ">
                     <Link
                       href="/jobs?l=&q=south-australia"
                       className="text-[#f4a10c] font-bold"
@@ -793,7 +793,7 @@ export default function Page() {
                       Flinders University
                     </Link>
                   </li>
-                  <li className="mb-1 ">
+                  <li className="mb-1 mt-4 ">
                     <Link
                       href="/jobs?l=&q=western-australia"
                       className="text-[#f4a10c] font-bold"

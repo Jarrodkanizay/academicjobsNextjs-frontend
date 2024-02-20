@@ -124,7 +124,7 @@ export default function Page() {
               <h2 className="underline-full">Academic Jobs UK: Jobs in Academia by University </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
                   <ul>
-                    <li className='mb-1 '><Link href="/jobs/england/" className='text-[#f4a10c] font-bold'>England</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/england/" className='text-[#f4a10c] font-bold'>England</Link></li>
                     <li><Link href="/employers/university-of-cambridge/12635/">University of
                       Cambridge</Link></li>
                     <li><Link href="/employers/university-of-oxford/3099/">University of
@@ -159,7 +159,7 @@ export default function Page() {
                     </li>
                   </ul>
                   <ul>
-                    <li className='mb-1 '><Link href="/jobs/scotland/" className='text-[#f4a10c] font-bold'>Scotland</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/scotland/" className='text-[#f4a10c] font-bold'>Scotland</Link></li>
                     <li><Link href="/employers/university-of-edinburgh/12681/">University of
                       Edinburgh</Link></li>
                     <li><Link href="/employers/university-of-glasgow/12713/">University of
@@ -174,7 +174,7 @@ export default function Page() {
                     </li>
                   </ul>
                   <ul>
-                    <li className='mb-1 '><Link href="/jobs/wales/" className='text-[#f4a10c] font-bold'>Wales</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/wales/" className='text-[#f4a10c] font-bold'>Wales</Link></li>
                     <li><Link href="/employers/cardiff-university/6252/">Cardiff
                       University</Link>
                     </li>
@@ -188,7 +188,7 @@ export default function Page() {
                     </li>
                   </ul>
                   <ul>
-                    <li className='mb-1 '><Link href="/jobs/northern-ireland/" className='text-[#f4a10c] font-bold'>Northern Ireland</Link></li>
+                    <li className='mb-1 mt-4 '><Link href="/jobs/northern-ireland/" className='text-[#f4a10c] font-bold'>Northern Ireland</Link></li>
                     <li><Link href="/employers/queens-university-belfast/10799/">Queen's
                       University Belfast</Link>
                     </li>

@@ -78,7 +78,7 @@ const RankingSearchForm = ({ maxWidth }) => {
       className={`talent-pool mx-auto px-7 pt-4 mt-8 pb-6 border-[1px] border-slate-500 bg-slate-50 rounded-2xl w-full lg:max-w-[${maxWidth}px] lg:min-w-[640px]`}
       onSubmit={handleSubmit(onSubmit)}
     >
-      <h2 className="underline-full mb-6">Find your Academic Rank</h2>
+      <h1 className="underline-full mb-6 text-[#3b5683]">Find your Academic Rank</h1>
       <p>
         In order to find your academic ranking we need a few personal details.
         The more information you provide the more accurate we can find your

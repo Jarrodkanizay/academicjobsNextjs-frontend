@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: 'Northeastern University Jobs', //Option 2 overrides the title in layout.tsx
+    absolute: 'Northeastern University Careers', //Option 2 overrides the title in layout.tsx
   },
   description:
     're you interested in working at a dynamic and innovative university that offers a wide range of programs, research opportunities, and benefits? Do you want to join a diverse and collaborative community that values excellence, creativity, and social justice? If so, you might want to check out the job listings at Northeastern University.',

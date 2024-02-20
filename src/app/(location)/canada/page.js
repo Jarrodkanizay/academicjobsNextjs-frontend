@@ -147,7 +147,7 @@ export default function Page() {
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
           <ul>
-            <li className="mb-1 ">
+            <li className="mb-1 mt-4 ">
               <Link href="/JobSearch/" className="text-[#f4a10c] font-bold">
                 Alberta
               </Link>
@@ -164,7 +164,7 @@ export default function Page() {
             </li>
           </ul>
           <ul>
-            <li className="mb-1 ">
+            <li className="mb-1 mt-4 ">
               <Link href="/JobSearch/" className="text-[#f4a10c] font-bold">
                 Quebec
               </Link>
@@ -191,7 +191,7 @@ export default function Page() {
             </li>
           </ul>
           <ul>
-            <li className="mb-1 ">
+            <li className="mb-1 mt-4 ">
               <Link href="/JobSearch/" className="text-[#f4a10c] font-bold">
                 Ontario
               </Link>

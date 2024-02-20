@@ -65,7 +65,7 @@ Use university rankings to search for jobs in higher education.
         </section>
        
 
-        <div className="md:flex bg-gray-800 shadow-xl rounded-2xl mb-4 max-w-screen-lg mx-auto mt-4 p-4 gap-8 ">
+        <div className="md:flex bg-gray-800 shadow-xl rounded-2xl mb-4 max-w-screen-lg mx-2 md:auto mt-4 p-4 gap-8 md:mx-auto ">
         <Image
           className=" rounded-xl md:w-2/3  "
           width={880}
@@ -74,7 +74,7 @@ Use university rankings to search for jobs in higher education.
           src="https://academicjobs.s3.amazonaws.com/img/_misc/maxresdefault.png"
         />
 
-<div className="w-1/3">
+<div className="md:w-1/3">
 <div className="md:grid  flex gap-4 text-gray-200 mt-3">
            
 
@@ -143,15 +143,15 @@ Use university rankings to search for jobs in higher education.
           </div>
        
               <div className="bg-gradient-to-b to-white from-orange-100 m-8 rounded-3xl  max-w-screen-xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mt-4 mb-16">
 
                   <ul>
-                    <li className='mb-1 text-[#f4a10c] font-bold'>ACT</li>
+                    <li className='mt-4 mb-1 text-[#f4a10c] font-bold'>ACT</li>
                     <li><Link href="/employers/australian-national-university/3739/">Australian National
                       University</Link></li>
                     <li><Link href="/employers/university-of-canberra/3821/">University of Canberra</Link>
                     </li>
-                    <li className='mb-1 text-[#f4a10c] font-bold'>New South Wales</li>
+                    <li className='mt-4 mb-1 text-[#f4a10c] font-bold'>New South Wales</li>
 
                     <li><Link href="/employers/the-university-of-sydney/3171/">The
                       University of Sydney</Link></li>
@@ -178,7 +178,7 @@ Use university rankings to search for jobs in higher education.
                     </li>
                   </ul>
                   <ul>
-                    <li className='mb-1 text-[#f4a10c] font-bold'>Victoria</li>
+                    <li className='mt-4 mb-1 text-[#f4a10c] font-bold'>Victoria</li>
                     <li><Link href="/employers/university-of-melbourne/3170/
                                         ">The University of Melbourne</Link>
                     </li>
@@ -205,15 +205,14 @@ Use university rankings to search for jobs in higher education.
                     </li>
                     <li><Link href="/employers/federation-university/3787/
                                     ">Federation University Australia</Link></li>
-                    <li className='mb-1 text-[#f4a10c] font-bold'>Tasmania</li>
+                    <li className='mt-4 mb-1 text-[#f4a10c] font-bold'>Tasmania</li>
                     <li><Link href="/employers/university-of-tasmania/3867/
                                     ">The University of Tasmania</Link>
                     </li>
                   </ul>
                   <ul>
-                    <li className='mb-1 text-[#f4a10c] font-bold'>Queensland</li>
-                    <li className='text-amber-400'><Link href="/employers/bond-university/3785/
-                                    ">Bond University</Link></li>
+                    <li className='mt-4 mb-1 text-[#f4a10c] font-bold'>Queensland</li>
+                   
                     <li><Link href="/employers/university-of-queensland/3172/">The
                       University of Queensland</Link></li>
                     <li><Link href="/employers/cquniversity/3854/">CQUniversity</Link>
@@ -228,19 +227,22 @@ Use university rankings to search for jobs in higher education.
                     <li><Link href="/employers/university-of-southern-queensland/3861/">University of
                       Southern Queensland</Link>
                     </li>
+                    <li><Link href="/employers/university-of-sunshine-coast/3859/">University of Sunshine
+                      Coast</Link></li>
+                      <li className='text-amber-400 font-bold'><Link href="/employers/bond-university/3785/
+                                    ">Bond University</Link></li>
                     <li className='text-[#003463] font-bold' ><Link href="/employers/queensland-university-of-technology-qut-/3786/">Queensland
                       University of Technology</Link>
                     </li>
-                    <li><Link href="/employers/university-of-sunshine-coast/3859/">University of Sunshine
-                      Coast</Link></li>
-                    <li className='mb-1 '><Link href="/find-jobs/northern-territory/" className='text-[#f4a10c] font-bold'>Northern
+                   
+                    <li className='mt-4 mb-1 '><Link href="/find-jobs/northern-territory/" className='text-[#f4a10c] font-bold'>Northern
                       Territory</Link></li>
                     <li><Link href="/employers/charles-darwin-university/3880/">Charles Darwin
                       University</Link>
                     </li>
                   </ul>
                   <ul>
-                    <li className='mb-1 text-[#f4a10c] font-bold'>South
+                    <li className='mt-4 mb-1 text-[#f4a10c] font-bold'>South
                       Australia</li>
                     <li><Link href="/employers/the-university-of-adelaide/3737/">The
                       University of Adelaide</Link>
@@ -254,7 +256,7 @@ Use university rankings to search for jobs in higher education.
                     <li><Link href="/employers/flinders-university/3873/">Flinders
                       University</Link>
                     </li>
-                    <li className='mb-1 text-[#f4a10c] font-bold'>Western
+                    <li className='mt-4 mb-1 text-[#f4a10c] font-bold'>Western
                       Australia</li>
                     <li><Link href="/employers/university-of-western-australia/3173/">The University of
                       Western Australia</Link></li>

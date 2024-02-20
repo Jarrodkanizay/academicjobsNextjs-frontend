@@ -72,7 +72,7 @@ export default function myPage() {
       <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl max-w-screen-xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
           <ul>
-            <li className="mb-1 text-[#f4a10c] font-bold">Alberta</li>
+            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Alberta</li>
             <li>
               <Link href="/employers/university-of-alberta/3837/">
                 University of Alberta
@@ -85,7 +85,7 @@ export default function myPage() {
             </li>
           </ul>
           <ul>
-            <li className="mb-1 text-[#f4a10c] font-bold">Quebec</li>
+            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Quebec</li>
             <li>
               <Link href="/employers/mcgill-university/3162/">
                 McGill University
@@ -108,7 +108,7 @@ export default function myPage() {
             </li>
           </ul>
           <ul>
-            <li className="mb-1 text-[#f4a10c] font-bold">Ontario</li>
+            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Ontario</li>
             <li>
               <Link href="/employers/university-of-toronto//3134/">
                 University of Toronto

@@ -424,7 +424,11 @@ const nextConfig = {
         destination: '/career-help/how-to-land-your-dream-college-job-a-step-by-step-guide',
         permanent: true,
       },
-
+      {
+        source: '/uk/hr',
+        destination: '/uk/hr-jobs',
+        permanent: true,
+      },
   
     ];
   },
