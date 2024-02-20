@@ -7,6 +7,7 @@ interface Props {
   company_name: string;
   how_to_apply: string;
   buttonText?: string;
+  forceClass?: string;
 }
 
 const Button = ({
@@ -14,12 +15,13 @@ const Button = ({
   company_name,
   how_to_apply,
   buttonText = 'Apply Now',
+  forceClass = '',
 }: Props) => {
   // const { title, company_name, how_to_apply } = params;
   return (
     <button
       // target="_blank"
-      className="md:px-4 py-2 bg-[#f4a10c] text-white font-bold rounded-3xl animate-pulse"
+      className={`btn btn-aj ${forceClass}`}
       data-toggle="modal"
       data-target="#apply-modal"
       data-title={title}
