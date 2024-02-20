@@ -709,7 +709,7 @@ Professor in Artificial Intelligence
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="https://www.academicjobs.com/jobs/clinical-positions-in-cardiology-central-coast-2023-2024/73047/"
+                    href="/jobs/assistant-controller-71101-/84760"
                     className="text-blue-500 font-bold"
                   >
                     Assistant Controller (71101)
@@ -738,32 +738,95 @@ Professor in Artificial Intelligence
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/video-technician-summer-2024/84765"
+                    href="/jobs/project-manager/90111"
                     className="text-blue-500 font-bold"
                   >
-                    Video Technician summer 2024
+                    Project Manager
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Southern Utah University</Link>
+                    <Link href="">University of New South Wales (UNSW)</Link>
                   </li>
                   <li>
-                    <Link href="">Cedar City, UT, USA</Link>
+                    <Link href="">Kensington,NSW, Aus</Link>
                   </li>
                   <li>
-                    <Link href="">Mar 1, 2024</Link>
+                    <Link href="">Mar 4, 2024</Link>
                   </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4968138"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
                 </ul>
               </ul>
             </div>
-          </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/research-officer/90096"
+                    className="text-blue-500 font-bold"
+                  >
+                    Research Officer
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of New South Wales (UNSW)</Link>
+                  </li>
+                  <li>
+                    <Link href="">Kensington,NSW, Aus</Link>
+                  </li>
+                  <li>
+                    <Link href="">Mar 10, 2024</Link>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/professor-in-ai-health/90013"
+                    className="text-blue-500 font-bold"
+                  >
+                    Professor in AI Health
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">Queensland University of Technology (QUT)</Link>
+                  </li>
+                  <li>
+                    <Link href="">Brisbane, QLD, Aus</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 1, 2024</Link>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/professor-in-artificial-intelligence/90020"
+                    className="text-blue-500 font-bold"
+                  >
+                    Professor in Artificial Intelligence
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">Queensland University of Technology (QUT)</Link>
+                  </li>
+                  <li>
+                    <Link href="">Brisbane, QLD, Aus</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 1, 2024</Link>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            </div>
         </div>
       </div>
       <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
