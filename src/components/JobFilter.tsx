@@ -59,7 +59,7 @@ export default function JobFilter({ dataQty = '> 1' }: JobFilterProps) {
                     href="https://www.academicjobs.com/academic-talent-pool"
                     className="btn btn-sm btn-aj m-4 "
                   >
-                    Connect Now
+                    Join Now
                   </Link>
 </div>
         <div className=" mt-4 hidden lg:block">
