@@ -218,7 +218,7 @@ invoice for $${formatNumberWithCommas(price)}.
         <Image  width="400"
             height="400"
             alt=""
-              src="https://academicjobs.s3.amazonaws.com/img/_misc/jobelephant.gif"
+              src="https://academicjobs.s3.amazonaws.com/img/_misc/jobelephant-puzzle.png"
              
               className="rounded-3xl"
             />
