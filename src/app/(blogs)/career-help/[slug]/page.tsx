@@ -42,14 +42,14 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         reorder={false}
       />
       <h3>By {post.author}</h3>
-      <p>
+      {/* <p>
         <time className="mr-4">{formatDate(post.published_at)}</time>
         {post.updated_at !== '' ? (
           <span className="text-slate-400">
             Updated: <time>{formatDate(post.updated_at)}</time>
           </span>
         ) : null}
-      </p>
+      </p> */}
       <div
         className={`text-2-cols mt-8 prose`}
         dangerouslySetInnerHTML={{ __html: post.content }}
