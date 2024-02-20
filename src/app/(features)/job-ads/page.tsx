@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import type { Metadata } from 'next';
 import Link from 'next/link';
 import PricingTable from '@/components/PricingTable';
+import type { Metadata } from 'next';
+
 export const metadata: Metadata = {
   title: 'Post a job - Recruit Academics', //Option 1 replaces the %s in layout.tsx
   // title: {
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     'All prices are in USD, switch region to change prices. Ads are live for up to 60 days, and include the employer logo and ad performance metrics.',
   keywords: 'Post Academic Jobs, Post a Job AcademicJobs',
 };
+
 export default function myPage() {
   return (
     <>

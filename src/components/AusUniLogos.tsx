@@ -61,15 +61,16 @@ const AusUniLogos = () => {
       <h2 className="aus-jobs-heading text-center mt-8 text-[40px] sm:text-[50px] mb-4 leading-tight">
         Welcome to Australia's University Jobs Website
       </h2>
-
-      <section className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-10 place-items-center">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 place-items-center">
         {logos.map((logo, index) => (
           <a
             key={index}
             href={logo.url}
             // target="_blank"
             rel="noopener noreferrer"
-            style={{ gridColumn: index < 2 ? 'span 2' : 'span 1' }}
+            className={`sm:col-span-1 ${
+              index < 2 ? 'md:col-span-2' : 'md:col-span-1'
+            }`}
           >
             <Image
               src={logo.uni}

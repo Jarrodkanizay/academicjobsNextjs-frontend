@@ -46,7 +46,7 @@ const HeroCard = ({
       </div>
       <div className={orderText}>
         <div className="card-body w-full">
-          <h2 className="card-title">{heading}</h2>
+          <h2 className="card-title text-2xl">{heading}</h2>
           <p className="max-w-screen-sm">{para1}</p>
           <p className="max-w-screen-sm">{para2}</p>
           {children}

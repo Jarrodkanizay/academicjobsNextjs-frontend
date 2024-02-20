@@ -6,6 +6,8 @@ import type { Metadata } from 'next';
 import JobSearchBoxHome from '@/components/JobSearchBoxHome';
 import JobCategoryAndLocationLinks from '@/components/links/JobCategoryAndLocationLinks';
 import AusUniLogos from '@/components/AusUniLogos';
+import AmericaUniLogos from '@/components/AmericaUniLogos';
+import { getContentRegion } from '@/actions/getContentRegion';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -19,10 +21,12 @@ export const metadata: Metadata = {
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
 
-export default function myPage() {
+export default async function myPage() {
+  const contentRegion = await getContentRegion();
+
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
-  let showJobElephant = true;
-  showJobElephant = false;
+  // let showJobElephant = true;
+  // showJobElephant = false;
 
   return (
     <main className="content-grid">
@@ -38,7 +42,7 @@ export default function myPage() {
 
       <JobCategoryAndLocationLinks />
       {/* Set this to false to show uni logo and welcome to message */}
-      {showJobElephant ? (
+      {contentRegion === 'USA' ? (
         <>
           <div className="mb-16">
             <a href="/jobelephant-recruitment">
@@ -51,6 +55,8 @@ export default function myPage() {
               />
             </a>
           </div>
+          <AmericaUniLogos />
+
           {/* <a
             href="#section"
             className="scroll-smooth md:scroll-auto text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16px]"
@@ -386,7 +392,7 @@ export default function myPage() {
             </div>
           </div> */}
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-          <div className="column">
+            <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
@@ -660,7 +666,7 @@ export default function myPage() {
                     href="/jobs/director-of-major-giving-midwest/87777"
                     className="text-blue-500 font-bold"
                   >
-                   Director of Major Giving, Midwest
+                    Director of Major Giving, Midwest
                   </Link>
                 </li>
                 <ul className="innerUL">
@@ -1252,16 +1258,12 @@ export default function myPage() {
           </span>
         </Link>
       </div> */}
-   
-   <div className="card-actions flex mt-4 mx-auto">
-                  <Link href="/academic-talent-pool" className="btn btn-aj">
-                    Join our Talent Pool
-                  </Link>
-                </div>
-   
-   
-   
-   
+
+      <div className="card-actions flex mt-4 mx-auto">
+        <Link href="/academic-talent-pool" className="btn btn-aj">
+          Join our Talent Pool
+        </Link>
+      </div>
     </main>
   );
 }
