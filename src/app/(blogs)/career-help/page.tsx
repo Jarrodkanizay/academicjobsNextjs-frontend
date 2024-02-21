@@ -139,8 +139,8 @@ export default function BlogPosts() {
                     />
                   </Link>
                 </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
+                <div className="card-body p-6">
+                  <h2 className="card-title line-clamp-3 leading-tight">
                     <Link
                       href={blogPath + post.slug}
                       className="text-white hover:text-orange-500 text-lg"
