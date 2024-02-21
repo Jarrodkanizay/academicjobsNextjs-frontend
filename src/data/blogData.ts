@@ -1,6 +1,5 @@
 export const blogData = [
   {
-    // To Do
     status: `published`,
     rank: 0,
     title:
@@ -58,7 +57,6 @@ export const blogData = [
 </article>`,
   },
   {
-    // To Do
     status: `published`,
     rank: 1,
     title: 'Start your Career at Harvard University ',
@@ -213,7 +211,6 @@ export const blogData = [
 `,
   },
   {
-    // To Do
     status: `published`,
     rank: 3,
     title: 'Seek all Bond University Jobs Here',
@@ -312,7 +309,6 @@ export const blogData = [
 </div>`,
   },
   {
-    // To Do
     status: `published`,
     rank: 5,
     title: 'Seek all Harvard University Jobs Here',
@@ -1016,7 +1012,6 @@ export const blogData = [
   },
 
   {
-    // To Do
     status: `published`,
     rank: 15,
     title: 'Seek all Bond University Careers Here',
@@ -1075,7 +1070,6 @@ export const blogData = [
   },
 
   {
-    // To Do
     status: `published`,
     rank: 16,
     title: 'Seek all UCLA Jobs Here ',
@@ -1128,7 +1122,6 @@ export const blogData = [
   },
 
   {
-    // To Do
     status: `published`,
     rank: 17,
     title: 'Start your Career at UCLA ',
