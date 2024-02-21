@@ -3,12 +3,12 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PricingTable from '@/components/PricingTable';
 export const metadata: Metadata = {
-  title: 'Post a job - Recruit Academics', //Option 1 replaces the %s in layout.tsx
+  title: 'JobElephant Recruitment', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
-    'All prices are in USD, switch region to change prices. Ads are live for up to 60 days, and include the employer logo and ad performance metrics.',
+    'Please choose a different region to view pricing. All prices are in USD. Aside from the employer logo and ad success analytics, the ads run for a maximum of sixty days each.u',
   keywords: 'Post Academic Jobs, Post a Job AcademicJobs',
 };
 

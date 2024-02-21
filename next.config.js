@@ -172,7 +172,7 @@ const nextConfig = {
 
       {
         source: '/university-of-new-south-wales-jobs',
-        destination: '/employers/university-of-new-south-wales/3738',
+        destination: '/employers/university-of-new-south-wales-unsw-/3738',
         permanent: true,
       },
       {

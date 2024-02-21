@@ -28,7 +28,7 @@ const AusUniLogos = () => {
     {
       uni: '/university-logos/aus/university-of-nsw-australia.jpg',
       alt: 'University of NSW Logo',
-      url: '/employers/university-of-new-south-wales/3738',
+      url: '/employers/university-of-new-south-wales-unsw-/3738',
     },
     {
       uni: '/university-logos/aus/university-of-queensland-australia.jpg',
