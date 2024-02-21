@@ -1,5 +1,5 @@
 export const blogData = [
- 
+  {
     // To Do
     status: `published`,
     rank: 0,
@@ -12,7 +12,7 @@ export const blogData = [
     image_url: `/blogs/automated-quick-job-post-technology.jpg`,
     alt: `Revolutionizing Recruitment: How Quick Job Post Technology is Changing the Game for Colleges & Universities`,
     summary:
-      'Professionals interested in a career in academia at may thrive in a vibrant and innovative environment for higher learning.',
+      'HR Professionals, Colleges & Universities are discovering the transformative power of Quick Job Post Technology. Learn how this innovative solution is revolutionizing the way job positions are listed and significantly reducing the time and effort required by HR personnel and recruiters to post a job. ',
     tags: [],
     keywords:
       'higher ed Quick Job Post, higher education Quick Job Post, Quick Job Post Technology, Academic Quick Job Post Technology, Time Saving Job Posts, Save Time Posting Jobs',
@@ -22,93 +22,93 @@ export const blogData = [
     <p>Universities and academic institutions, often burdened with lengthy and complex hiring processes, are now witnessing a transformative change thanks to <strong>Quick Job Post Technology</strong>.</p>
     <p>This innovative solution is not only streamlining the way job positions are listed but is also significantly reducing the time and effort required by HR personnel and recruiters to post a job. In this blog post, we delve into how this technology works and the myriad benefits it brings to the recruitment table.</p>
     
-//     <h2>The word revolutionary is thrown around far too often…</h2>
-//     <p>This is one of those cases where the impact of Quick Job Post Technology is so transformative and the word <em>revolutionize</em> has real meaning. In an era where efficiency and speed are paramount, the ability to overhaul and significantly improve traditional practices cannot be understated. Quick Job Post Technology is not just changing the game; it's rewriting the rules of engagement for academic recruitment.</p>
+    <h2>The word revolutionary is thrown around far too often…</h2>
+    <p>This is one of those cases where the impact of Quick Job Post Technology is so transformative and the word <em>revolutionize</em> has real meaning. In an era where efficiency and speed are paramount, the ability to overhaul and significantly improve traditional practices cannot be understated. Quick Job Post Technology is not just changing the game; it's rewriting the rules of engagement for academic recruitment.</p>
     
-//     <p>For decades, the recruitment process has been mired in procedures that are not only time-consuming but also often ineffective at targeting the right candidates. The advent of this technology marks a pivotal moment, akin to the digital revolution that transformed industries across the globe. It's a leap towards a future where the focus shifts from mundane administrative tasks to strategic human resource management and talent acquisition.</p>
+    <p>For decades, the recruitment process has been mired in procedures that are not only time-consuming but also often ineffective at targeting the right candidates. The advent of this technology marks a pivotal moment, akin to the digital revolution that transformed industries across the globe. It's a leap towards a future where the focus shifts from mundane administrative tasks to strategic human resource management and talent acquisition.</p>
     
-//     <p>Moreover, the revolutionary aspect of Quick Job Post Technology lies not only in its efficiency but also in its inclusivity and accessibility. By simplifying the job posting process, it democratises the recruitment landscape, enabling smaller institutions with limited resources to compete on an equal footing with larger entities. This leveling of the playing field is a testament to the transformative power of technology when applied thoughtfully and innovatively.</p>
+    <p>Moreover, the revolutionary aspect of Quick Job Post Technology lies not only in its efficiency but also in its inclusivity and accessibility. By simplifying the job posting process, it democratises the recruitment landscape, enabling smaller institutions with limited resources to compete on an equal footing with larger entities. This leveling of the playing field is a testament to the transformative power of technology when applied thoughtfully and innovatively.</p>
     
-//     <p>Additionally, the environmental impact cannot be overlooked. By digitizing and streamlining the job posting process, Quick Job Post Technology significantly reduces the need for paper-based applications and advertisements, contributing to a more sustainable and eco-friendly approach to recruitment.</p>
+    <p>Additionally, the environmental impact cannot be overlooked. By digitizing and streamlining the job posting process, Quick Job Post Technology significantly reduces the need for paper-based applications and advertisements, contributing to a more sustainable and eco-friendly approach to recruitment.</p>
     
-//     <p>In conclusion, when we talk about revolutionizing an industry or a process, Quick Job Post Technology embodies this concept in every sense. It's not just about making things faster or easier; it's about creating a more effective, inclusive, and sustainable approach to university recruitment. This is why the term 'revolutionary' is not just appropriate but necessary in describing the impact of Quick Job Post Technology on the academic world.</p>
+    <p>In conclusion, when we talk about revolutionizing an industry or a process, Quick Job Post Technology embodies this concept in every sense. It's not just about making things faster or easier; it's about creating a more effective, inclusive, and sustainable approach to university recruitment. This is why the term 'revolutionary' is not just appropriate but necessary in describing the impact of Quick Job Post Technology on the academic world.</p>
 
-//     <h2>The Challenge of Traditional Job Posting</h2>
-//     <p>Traditionally, posting a job vacancy, especially in the academic sector, has been a time-consuming task. Not even considering the time it takes to draft a detailed job listing, to target suitable candidates, the process could easily take upwards of 9 minutes per post. That is just the time it takes to post your listing on Seek, Indeed, Unijobs and other Academic Job Board Platforms. This 9-minute timeframe not only slows down the recruitment process but also adds to the workload of HR departments and recruiters, who already have their hands full with numerous other tasks.</p>
+    <h2>The Challenge of Traditional Job Posting</h2>
+    <p>Traditionally, posting a job vacancy, especially in the academic sector, has been a time-consuming task. Not even considering the time it takes to draft a detailed job listing, to target suitable candidates, the process could easily take upwards of 9 minutes per post. That is just the time it takes to post your listing on Seek, Indeed, Unijobs and other Academic Job Board Platforms. This 9-minute timeframe not only slows down the recruitment process but also adds to the workload of HR departments and recruiters, who already have their hands full with numerous other tasks.</p>
     
-//     <h2>Enter Quick Job Post Technology</h2>
-//     <p>Quick Job Post Technology is designed to address and eliminate the inefficiencies of traditional job posting methods. By automatically extracting and preparing job positions that universities have on offer, this technology provides a streamlined and user-friendly interface for posting these vacancies. The standout feature of this technology is the creation of a "headline job post," which offers a preview of the listing, making it incredibly easy for HR personnel or recruiters to review and convert/post a job in a mere 32 seconds.</p>
+    <h2>Enter Quick Job Post Technology</h2>
+    <p>Quick Job Post Technology is designed to address and eliminate the inefficiencies of traditional job posting methods. By automatically extracting and preparing job positions that universities have on offer, this technology provides a streamlined and user-friendly interface for posting these vacancies. The standout feature of this technology is the creation of a "headline job post," which offers a preview of the listing, making it incredibly easy for HR personnel or recruiters to review and convert/post a job in a mere 32 seconds.</p>
     
-//     <h2>How It Works</h2>
-//     <p>The technology behind the Higher Ed Quick Job Post is as straightforward as it is innovative. HR personnel or recruiters have a few options:</p>
-//     <ul>
-//         <li>Find their headline listing on the Academic Jobs Website and activate the full job post.</li>
-//         <li>Upload a job listing from a Word document.</li>
-//         <li>Or simply copy and paste the text into a SINGLE FIELD on the platform.</li>
-//     </ul>
-//     <p>The technology then takes over, automatically formatting and posting the job, working out the categories and which candidates to promote the position to. This drastic reduction in time, from over 9 minutes to an average of 32 seconds, not only enhances productivity but also allows recruiters to focus on other critical aspects of their job, such as candidate engagement and selection.</p>
+    <h2>How It Works</h2>
+    <p>The technology behind the Higher Ed Quick Job Post is as straightforward as it is innovative. HR personnel or recruiters have a few options:</p>
+    <ul>
+        <li>Find their headline listing on the Academic Jobs Website and activate the full job post.</li>
+        <li>Upload a job listing from a Word document.</li>
+        <li>Or simply copy and paste the text into a SINGLE FIELD on the platform.</li>
+    </ul>
+    <p>The technology then takes over, automatically formatting and posting the job, working out the categories and which candidates to promote the position to. This drastic reduction in time, from over 9 minutes to an average of 32 seconds, not only enhances productivity but also allows recruiters to focus on other critical aspects of their job, such as candidate engagement and selection.</p>
     
-//     <h2>Benefits Beyond Time-Saving</h2>
-//     <p>While the most apparent advantage of the Higher Education Quick Job Post Technology is the significant time savings it offers, its benefits extend far beyond just efficiency. This technology ensures that job posts are consistent in format and appearance, enhancing the professional look and feel of the university's recruitment page (maintaining its brand). Moreover, by automating the posting process it minimizes the risk of human error, ensuring that all relevant details are accurately captured and displayed.</p>
-//     <p>Furthermore, the headline job post feature acts as a powerful marketing tool, capturing the essence of each job vacancy in a concise and engaging manner. This not only attracts more applicants but also ensures that the vacancies reach the most suitable candidates.</p>
+    <h2>Benefits Beyond Time-Saving</h2>
+    <p>While the most apparent advantage of the Higher Education Quick Job Post Technology is the significant time savings it offers, its benefits extend far beyond just efficiency. This technology ensures that job posts are consistent in format and appearance, enhancing the professional look and feel of the university's recruitment page (maintaining its brand). Moreover, by automating the posting process it minimizes the risk of human error, ensuring that all relevant details are accurately captured and displayed.</p>
+    <p>Furthermore, the headline job post feature acts as a powerful marketing tool, capturing the essence of each job vacancy in a concise and engaging manner. This not only attracts more applicants but also ensures that the vacancies reach the most suitable candidates.</p>
     
-//     <h2>Transforming University Recruitment</h2>
-//     <p>Academic Quick Job Post Technology is not just a tool; it's a game-changer in the realm of university recruitment. Automating and simplifying the job posting process sets a new standard for efficiency and effectiveness in academic hiring practices. Universities & Colleges embracing this technology are not only streamlining their recruitment processes but are also positioning themselves as forward-thinking institutions that value innovation and efficiency.</p>
-//     <p>In a world where time is of the essence, Quick Job Post Technology is proving to be an invaluable asset for universities and academic institutions. It's not just about posting job vacancies; it's about revolutionizing recruitment, one post at a time.</p>
-// </article>`,
-//   },
-//   {
-//     // To Do
-//     status: `published`,
-//     rank: 1,
-//     title: 'Start your Career at Harvard University ',
-//     slug: `start-your-career-at-harvard-university`,
-//     author: `Gabrielle Ryan`,
-//     published_at: '2023-04-27',
-//     updated_at: ``,
-//     image_url: `/blogs/start-your-career-at-harvard-university.jpg`,
-//     alt: ``,
-//     summary:
-//       'Professionals may flourish in a dynamic and cutting-edge higher education setting by pursuing a career in academic roles at Harvard University.',
-//     tags: [],
-//     keywords: 'Start your Career at Harvard University ',
-//     content: `<article class="blog-content">
-//     <p><br>A career at Harvard University in academic positions offers an opportunity for professionals to thrive in
-//         a stimulating and innovative higher ed environment.</p>
-//     <p>Harvard University offers an opportunity to engage in cutting-edge research, inspire the next generation of
-//         leaders and contribute to the legacy of excellence that defines Harvard's global impact in the realm of
-//         higher education. Harvard provides an intellectually stimulating environment where professionals can engage
-//         in ground-breaking research, collaborate with esteemed colleagues, and contribute to the global conversation
-//         across various disciplines. </p>
-//     <p>Taking on an academic position at Harvard University means embarking on a journey within the pinnacle of
-//         higher education. With a commitment to innovation, diversity, and leadership development, a career at
-//         Harvard represents not just a job but a transformative journey where individuals can shape the future of
-//         education and make a lasting impact on the world.Bottom of Form</p>
-//     <p>It's not just a career move; it's an invitation to be part of an institution that has set the standard for
-//         academic distinction and leadership in higher education.</p>
-//     <p>Harvard offer a diverse range of academic career opportunities. </p>
-//     <p>The specific careers available can vary across different faculties and departments. Here is a list of
-//         potential careers at Harvard:</p>
-// </div>
+    <h2>Transforming University Recruitment</h2>
+    <p>Academic Quick Job Post Technology is not just a tool; it's a game-changer in the realm of university recruitment. Automating and simplifying the job posting process sets a new standard for efficiency and effectiveness in academic hiring practices. Universities & Colleges embracing this technology are not only streamlining their recruitment processes but are also positioning themselves as forward-thinking institutions that value innovation and efficiency.</p>
+    <p>In a world where time is of the essence, Quick Job Post Technology is proving to be an invaluable asset for universities and academic institutions. It's not just about posting job vacancies; it's about revolutionizing recruitment, one post at a time.</p>
+</article>`,
+  },
+  {
+    // To Do
+    status: `published`,
+    rank: 1,
+    title: 'Start your Career at Harvard University ',
+    slug: `start-your-career-at-harvard-university`,
+    author: `Gabrielle Ryan`,
+    published_at: '2023-04-27',
+    updated_at: ``,
+    image_url: `/blogs/start-your-career-at-harvard-university.jpg`,
+    alt: ``,
+    summary:
+      'Professionals may flourish in a dynamic and cutting-edge higher education setting by pursuing a career in academic roles at Harvard University.',
+    tags: [],
+    keywords: 'Start your Career at Harvard University ',
+    content: `<article class="blog-content">
+    <p><br>A career at Harvard University in academic positions offers an opportunity for professionals to thrive in
+        a stimulating and innovative higher ed environment.</p>
+    <p>Harvard University offers an opportunity to engage in cutting-edge research, inspire the next generation of
+        leaders and contribute to the legacy of excellence that defines Harvard's global impact in the realm of
+        higher education. Harvard provides an intellectually stimulating environment where professionals can engage
+        in ground-breaking research, collaborate with esteemed colleagues, and contribute to the global conversation
+        across various disciplines. </p>
+    <p>Taking on an academic position at Harvard University means embarking on a journey within the pinnacle of
+        higher education. With a commitment to innovation, diversity, and leadership development, a career at
+        Harvard represents not just a job but a transformative journey where individuals can shape the future of
+        education and make a lasting impact on the world.Bottom of Form</p>
+    <p>It's not just a career move; it's an invitation to be part of an institution that has set the standard for
+        academic distinction and leadership in higher education.</p>
+    <p>Harvard offer a diverse range of academic career opportunities. </p>
+    <p>The specific careers available can vary across different faculties and departments. Here is a list of
+        potential careers at Harvard:</p>
+</div>
 
-// <ul>
-//     <li>Professor</li>
-//     <li>Associate Professor</li>
-//     <li>Senior Lecturer</li>
-//     <li>Lecturer</li>
-//     <li>Research Fellow</li>
-//     <li>Teaching Fellow</li>
-//     <li>Postdoctoral Researcher</li>
-//     <li>Assistant Professor</li>
-//     <li>Tutor</li>
-//     <li>Academic Coordinator</li>
-//     <li>Course Convenor</li>
-//     <li>Research Assistant</li>
-//     <li>Visiting Professor</li>
-//     <li>Adjunct Professor</li>
-// </ul>
-// </div>`,
-//   },
+<ul>
+    <li>Professor</li>
+    <li>Associate Professor</li>
+    <li>Senior Lecturer</li>
+    <li>Lecturer</li>
+    <li>Research Fellow</li>
+    <li>Teaching Fellow</li>
+    <li>Postdoctoral Researcher</li>
+    <li>Assistant Professor</li>
+    <li>Tutor</li>
+    <li>Academic Coordinator</li>
+    <li>Course Convenor</li>
+    <li>Research Assistant</li>
+    <li>Visiting Professor</li>
+    <li>Adjunct Professor</li>
+</ul>
+</div>`,
+  },
   {
     status: `published`,
     rank: 2,
