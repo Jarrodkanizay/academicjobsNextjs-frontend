@@ -29,49 +29,50 @@ export default async function myPage() {
   // showJobElephant = false;
 
   return (
-    <main className="content-grid debug">
-      <div className="flex flex-col items-center justify-center mb-32">
-        <div className="h-[15vh] flex flex-col items-end justify-end">
-          <LogoAJ forceClass="logo" width={310} height={210} />
-        </div>
-        {/* Job Search Form */}
-        <div className="w-full md:w-3/6 h-[6vh] flex flex-col items-top mt-[-1rem]">
-          <JobSearchBoxHome />
-        </div>
-      </div>
-
-      <JobCategoryAndLocationLinks />
-      {/* Set this to false to show uni logo and welcome to message */}
-      {contentRegion === 'USA' ? (
-        <>
-          <div className="mb-16">
-            <a href="/jobelephant-recruitment">
-              <Image
-                width={180}
-                height={170}
-                src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
-                className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
-                alt="AcademicJobs Job Elephant Client Center"
-              />
-            </a>
+    <>
+      <main className="content-grid debug">
+        <div className="flex flex-col items-center justify-center mb-32">
+          <div className="h-[15vh] flex flex-col items-end justify-end">
+            <LogoAJ forceClass="logo" width={310} height={210} />
           </div>
-          <AmericaUniLogos />
+          {/* Job Search Form */}
+          <div className="w-full md:w-3/6 h-[6vh] flex flex-col items-top mt-[-1rem]">
+            <JobSearchBoxHome />
+          </div>
+        </div>
 
-          {/* <a
+        <JobCategoryAndLocationLinks />
+        {/* Set this to false to show uni logo and welcome to message */}
+        {contentRegion === 'USA' ? (
+          <>
+            <div className="mb-16">
+              <a href="/jobelephant-recruitment">
+                <Image
+                  width={180}
+                  height={170}
+                  src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
+                  className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
+                  alt="AcademicJobs Job Elephant Client Center"
+                />
+              </a>
+            </div>
+            <AmericaUniLogos />
+
+            {/* <a
             href="#section"
             className="scroll-smooth md:scroll-auto text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16px]"
           >
             ▼
           </a> */}
-        </>
-      ) : (
-        <>
-          <AusUniLogos />
-        </>
-      )}
+          </>
+        ) : (
+          <>
+            <AusUniLogos />
+          </>
+        )}
 
-      {/* Hero Panel */}
-      {/* <div
+        {/* Hero Panel */}
+        {/* <div
         id="section"
         className="hero-content flex-col lg:flex-row mx-auto items-start py-12 bg-slate-200 breakout full-width prose w-fit"
       ><div>
@@ -101,187 +102,194 @@ export default async function myPage() {
         </div>
       </div> */}
 
-      <div id="section" className="bg-slate-200 full-width py-4 mb-16">
-        <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
-          <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 pb-8  md:px-0">
-            <span className="md:text-6xl font-bold text-gray-500 pb-4 ">
-              ACADEMIC JOBS: <br />
-            </span>{' '}
-            Academic, research & science positions locally & globally
-          </h1>
+        <div id="section" className="bg-slate-200 full-width py-4 mb-16">
+          <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
+            <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 pb-8  md:px-0">
+              <span className="md:text-6xl font-bold text-gray-500 pb-4 ">
+                ACADEMIC JOBS: <br />
+              </span>{' '}
+              Academic, research & science positions locally & globally
+            </h1>
 
-          <div>
-            <p className="md:px-7 mb-4 mt-1">
-              Discover top-tier faculty and administrative roles in the world of
-              higher education. Begin your search for university academic jobs,
-              college faculty positions, and administrative opportunities in
-              higher ed. Explore and apply for a range of roles, including
-              lecturer, researcher, university administrator, and senior
-              academic positions, available nationally and internationally.
-            </p>
-            <p className="md:px-7">
-              Whether you&apos;re an aspiring or established professor,
-              researcher, lecturer, or higher education administrator, our
-              platform offers the most current opportunities in academia
-              globally. Connect with your next career move in the academic
-              sector through our comprehensive online job board. Find your next
-              academic job now!
-            </p>
+            <div>
+              <p className="md:px-7 mb-4 mt-1">
+                Discover top-tier faculty and administrative roles in the world
+                of higher education. Begin your search for university academic
+                jobs, college faculty positions, and administrative
+                opportunities in higher ed. Explore and apply for a range of
+                roles, including lecturer, researcher, university administrator,
+                and senior academic positions, available nationally and
+                internationally.
+              </p>
+              <p className="md:px-7">
+                Whether you&apos;re an aspiring or established professor,
+                researcher, lecturer, or higher education administrator, our
+                platform offers the most current opportunities in academia
+                globally. Connect with your next career move in the academic
+                sector through our comprehensive online job board. Find your
+                next academic job now!
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className=" mx-auto mt-8 mb-8">
-        <h2 className="underline-full"> Top University Employer Rankings</h2>
-        <div className="bg-white flex flex-col">
-          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch mb-8 text-left">
-            <div className="/academic-hub/happiness-and-academics/">
-              <div className="card bg-slate-100 shadow-xl">
-                <div className="card-body">
-                  <h2 className="card-title"> Top University Employers USA </h2>
-                  <a className=" text-gray-400"> 10 Dec, 2023</a>
-                </div>
-                <figure>
-                  <Image
-                    width={1280}
-                    height={380}
-                    src="/academic-job-postings/harvard-university.jpg"
-                    alt="Happiness and Academics: Scott Galloway's Algebra of hub"
-                  />
-                </figure>
+        <div className=" mx-auto mt-8 mb-8">
+          <h2 className="underline-full"> Top University Employer Rankings</h2>
+          <div className="bg-white flex flex-col">
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch mb-8 text-left">
+              <div className="/academic-hub/happiness-and-academics/">
+                <div className="card bg-slate-100 shadow-xl">
+                  <div className="card-body">
+                    <h2 className="card-title">
+                      {' '}
+                      Top University Employers USA{' '}
+                    </h2>
+                    <a className=" text-gray-400"> 10 Dec, 2023</a>
+                  </div>
+                  <figure>
+                    <Image
+                      width={1280}
+                      height={380}
+                      src="/academic-job-postings/harvard-university.jpg"
+                      alt="Happiness and Academics: Scott Galloway's Algebra of hub"
+                    />
+                  </figure>
 
-                <ul className=" p-4 pl-12 list-disc text-gray-500">
-                  <a href="https://www.academicjobs.com/employers/harvard-university/3100">
-                    Harvard University
-                  </a>
-                  <a href="https://www.academicjobs.com/employers/massachusetts-institute-of-technology/3103">
-                    {' '}
-                    <br /> Massachusetts Institute of Technology (MIT)
-                  </a>
-                  <a href="https://www.academicjobs.com/employers/stanford-university/3101">
-                    {' '}
-                    Stanford University
-                    <br />
-                  </a>
-                  <a href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105">
-                    {' '}
-                    University of California Berkeley (UCB)
-                  </a>
-                  <a href="https://www.academicjobs.com/employers/caltech/3128">
-                    {' '}
-                    California Institute of Technology (Caltech)
-                  </a>
-                </ul>
+                  <ul className=" p-4 pl-12 list-disc text-gray-500">
+                    <a href="https://www.academicjobs.com/employers/harvard-university/3100">
+                      Harvard University
+                    </a>
+                    <a href="https://www.academicjobs.com/employers/massachusetts-institute-of-technology/3103">
+                      {' '}
+                      <br /> Massachusetts Institute of Technology (MIT)
+                    </a>
+                    <a href="https://www.academicjobs.com/employers/stanford-university/3101">
+                      {' '}
+                      Stanford University
+                      <br />
+                    </a>
+                    <a href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105">
+                      {' '}
+                      University of California Berkeley (UCB)
+                    </a>
+                    <a href="https://www.academicjobs.com/employers/caltech/3128">
+                      {' '}
+                      California Institute of Technology (Caltech)
+                    </a>
+                  </ul>
 
-                {/* <Link
+                  {/* <Link
                   href={'/academic-hub/'}
                   className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
                 >
                   View List
                 </Link> */}
-              </div>
-            </div>
-            {/* /top-10-australian-universities */}
-            <div className="">
-              <div className="card bg-slate-100 shadow-xl">
-                <div className="card-body">
-                  <h2 className="card-title">
-                    {' '}
-                    Top University Employers Australia{' '}
-                  </h2>
-                  <a className=" text-gray-400"> 10 Dec, 2023</a>
                 </div>
-                <figure>
-                  <Image
-                    width={1280}
-                    height={380}
-                    src="/academic-job-postings/university-of-sydney.jpg"
-                    alt="Top Academic Jobs Australia"
-                    className="h-[5rem]"
-                  />
-                </figure>
-                <ul className=" p-4 pl-12 list-disc text-gray-500">
-                  <a href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786">
-                    Queensland University of Technology (QUT)
-                  </a>
-                  <a href="https://www.academicjobs.com/employers/bond-university/3785/">
-                    {' '}
-                    Bond University
-                    <br />
-                  </a>
-                  <a href="https://www.academicjobs.com/employers/the-university-of-sydney/3171">
-                    {' '}
-                    The University of Sydney
-                    <br />
-                  </a>
-                  <a href="https://www.academicjobs.com/employers/australian-national-university/3739">
-                    {' '}
-                    Australian National University (ANU)
-                    <br />
-                  </a>
-                  <a href="https://www.academicjobs.com/employers/monash-university/3182/">
-                    {' '}
-                    Monash University
-                  </a>
-                </ul>
-                {/* <Link
+              </div>
+              {/* /top-10-australian-universities */}
+              <div className="">
+                <div className="card bg-slate-100 shadow-xl">
+                  <div className="card-body">
+                    <h2 className="card-title">
+                      {' '}
+                      Top University Employers Australia{' '}
+                    </h2>
+                    <a className=" text-gray-400"> 10 Dec, 2023</a>
+                  </div>
+                  <figure>
+                    <Image
+                      width={1280}
+                      height={380}
+                      src="/academic-job-postings/university-of-sydney.jpg"
+                      alt="Top Academic Jobs Australia"
+                      className="h-[5rem]"
+                    />
+                  </figure>
+                  <ul className=" p-4 pl-12 list-disc text-gray-500">
+                    <a href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786">
+                      Queensland University of Technology (QUT)
+                    </a>
+                    <a href="https://www.academicjobs.com/employers/bond-university/3785/">
+                      {' '}
+                      Bond University
+                      <br />
+                    </a>
+                    <a href="https://www.academicjobs.com/employers/the-university-of-sydney/3171">
+                      {' '}
+                      The University of Sydney
+                      <br />
+                    </a>
+                    <a href="https://www.academicjobs.com/employers/australian-national-university/3739">
+                      {' '}
+                      Australian National University (ANU)
+                      <br />
+                    </a>
+                    <a href="https://www.academicjobs.com/employers/monash-university/3182/">
+                      {' '}
+                      Monash University
+                    </a>
+                  </ul>
+                  {/* <Link
                   href={'/top-10-australian-universities'}
                   className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
                 >
                   View List
                 </Link> */}
-              </div>
-            </div>
-            <div className="/academic-hub/how-to-land-your-dream-college-job-a-step-by-step-guide/">
-              <div className="card bg-slate-100 shadow-xl">
-                <div className="card-body">
-                  <h2 className="card-title"> Top University Employers UK </h2>
-                  <a className=" text-gray-400"> 06 Dec, 2023</a>
                 </div>
-                <figure>
-                  <Image
-                    width={1280}
-                    height={380}
-                    src="/academic-job-postings/top-universities-worldwide.jpg"
-                    alt="How to Land Your Dream College Job: A Step-by-Step Guide"
-                    className="h-[5rem]"
-                  />
-                </figure>
-                <ul className=" p-4 pl-12 list-disc text-gray-500">
-                  <a href="https://www.academicjobs.com/employers/university-of-oxford/3099">
-                    University of Oxford
-                    <br />
-                  </a>
-                  <a href="https://www.academicjobs.com/employers/imperial-college-london/3129">
-                    {' '}
-                    Imperial College London
-                    <br />
-                  </a>
-                  <a href="https://www.academicjobs.com/employers/university-of-cambridge/12635">
-                    {' '}
-                    University of Cambridge
-                    <br />
-                  </a>
-                  <a href="https://www.academicjobs.com/employers/university-of-edinburgh/12681">
-                    {' '}
-                    University of Edinburgh
-                    <br />
-                  </a>
-                  <a href=""> King’s College London</a>
-                </ul>
-                {/* <Link
+              </div>
+              <div className="/academic-hub/how-to-land-your-dream-college-job-a-step-by-step-guide/">
+                <div className="card bg-slate-100 shadow-xl">
+                  <div className="card-body">
+                    <h2 className="card-title">
+                      {' '}
+                      Top University Employers UK{' '}
+                    </h2>
+                    <a className=" text-gray-400"> 06 Dec, 2023</a>
+                  </div>
+                  <figure>
+                    <Image
+                      width={1280}
+                      height={380}
+                      src="/academic-job-postings/top-universities-worldwide.jpg"
+                      alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                      className="h-[5rem]"
+                    />
+                  </figure>
+                  <ul className=" p-4 pl-12 list-disc text-gray-500">
+                    <a href="https://www.academicjobs.com/employers/university-of-oxford/3099">
+                      University of Oxford
+                      <br />
+                    </a>
+                    <a href="https://www.academicjobs.com/employers/imperial-college-london/3129">
+                      {' '}
+                      Imperial College London
+                      <br />
+                    </a>
+                    <a href="https://www.academicjobs.com/employers/university-of-cambridge/12635">
+                      {' '}
+                      University of Cambridge
+                      <br />
+                    </a>
+                    <a href="https://www.academicjobs.com/employers/university-of-edinburgh/12681">
+                      {' '}
+                      University of Edinburgh
+                      <br />
+                    </a>
+                    <a href=""> King’s College London</a>
+                  </ul>
+                  {/* <Link
                   href={'/academic-hub/'}
                   className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
                 >
                   View List
                 </Link> */}
+                </div>
               </div>
-            </div>
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      {/* <p className="px-7 text-center mt-5">
+        {/* <p className="px-7 text-center mt-5">
             <Link
               className="link  text-[#f4a10c] font-bold text-2xl hover:text-orange-500"
               href="/global-academic-awards-2023-nominations"
@@ -290,10 +298,10 @@ export default async function myPage() {
               Academic&nbsp;Awards 2023'&nbsp;NOW
             </Link>
           </p> */}
-      <h2 className="underline-full">Top Academic Jobs Today</h2>
-      <div className="cate-group section23 ">
-        <div className="widget__text-block">
-          {/* <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7 ">
+        <h2 className="underline-full">Top Academic Jobs Today</h2>
+        <div className="cate-group section23 ">
+          <div className="widget__text-block">
+            {/* <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7 ">
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
@@ -391,633 +399,638 @@ export default async function myPage() {
               </ul>
             </div>
           </div> */}
-          <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/video-technician-summer-2024/84765"
-                    className="text-blue-500 font-bold"
-                  >
-                    Video Technician summer 2024
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Southern Utah University</Link>
-                  </li>
-                  <li>
-                    <Link href="">Cedar City, UT, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 1, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4968138"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="https://www.academicjobs.com/jobs/professor-in-artificial-intelligence/90020"
-                    className="text-blue-500 font-bold"
-                  >
-                    Professor in Artificial Intelligence
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">
-                      Queensland University of Technology (QUT)
+            <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/video-technician-summer-2024/84765"
+                      className="text-blue-500 font-bold"
+                    >
+                      Video Technician summer 2024
                     </Link>
                   </li>
-                  <li>
-                    <Link href="">Brisbane QLD, Australia</Link>
-                  </li>
-                  <li>
-                    <Link href="">Apr 1, 2024</Link>
-                  </li>
-                  <Link
-                    href="/jobs/professor-in-artificial-intelligence/90020"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Southern Utah University</Link>
+                    </li>
+                    <li>
+                      <Link href="">Cedar City, UT, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 1, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4968138"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
                 </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/postdoctoral-fellow-in-comparative-radiobiology-translational-radiopharmaceutical-development-and-boron-neutron-capture-therapy-bnct-/82181"
-                    className="text-blue-500 font-bold"
-                  >
-                    Postdoctoral Fellow in Comparative Radiobiology,
-                    Translational Radiopharmaceutical Development, and Boron
-                    Neutron Capture Therapy (BNCT)
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">University of Missouri System</Link>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="https://www.academicjobs.com/jobs/professor-in-artificial-intelligence/90020"
+                      className="text-blue-500 font-bold"
+                    >
+                      Professor in Artificial Intelligence
+                    </Link>
                   </li>
-                  <li>
-                    <Link href="">Columbia, Missouri, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 11, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4922759"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">
+                        Queensland University of Technology (QUT)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="">Brisbane QLD, Australia</Link>
+                    </li>
+                    <li>
+                      <Link href="">Apr 1, 2024</Link>
+                    </li>
+                    <Link
+                      href="/jobs/professor-in-artificial-intelligence/90020"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
                 </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/assistant-to-associate-dean-of-undergrad-programs/82206"
-                    className="text-blue-500 font-bold"
-                  >
-                    Assistant to Associate Dean of Undergrad Programs
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Oregon State University</Link>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/postdoctoral-fellow-in-comparative-radiobiology-translational-radiopharmaceutical-development-and-boron-neutron-capture-therapy-bnct-/82181"
+                      className="text-blue-500 font-bold"
+                    >
+                      Postdoctoral Fellow in Comparative Radiobiology,
+                      Translational Radiopharmaceutical Development, and Boron
+                      Neutron Capture Therapy (BNCT)
+                    </Link>
                   </li>
-                  <li>
-                    <Link href="">Corvallis, OR, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Apr 16, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4929143"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">University of Missouri System</Link>
+                    </li>
+                    <li>
+                      <Link href="">Columbia, Missouri, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 11, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4922759"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
                 </ul>
-              </ul>
-            </div>
-          </div>
-          <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/career-advisor-senior-career-advisor/82180"
-                    className="text-blue-500 font-bold"
-                  >
-                    Career Advisor/Senior Career Advisor
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">University of the Pacific</Link>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/assistant-to-associate-dean-of-undergrad-programs/82206"
+                      className="text-blue-500 font-bold"
+                    >
+                      Assistant to Associate Dean of Undergrad Programs
+                    </Link>
                   </li>
-                  <li>
-                    <Link href="">Stockton, CA, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 11, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4921373"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Oregon State University</Link>
+                    </li>
+                    <li>
+                      <Link href="">Corvallis, OR, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Apr 16, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4929143"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
                 </ul>
-              </ul>
+              </div>
             </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/information-technology-faculty/82182"
-                    className="text-blue-500 font-bold"
-                  >
-                    Information Technology Faculty
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">North Central State College</Link>
+            <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/career-advisor-senior-career-advisor/82180"
+                      className="text-blue-500 font-bold"
+                    >
+                      Career Advisor/Senior Career Advisor
+                    </Link>
                   </li>
-                  <li>
-                    <Link href="">2441 Kenwood Circle, Mansfield, OH, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 15, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4931492"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">University of the Pacific</Link>
+                    </li>
+                    <li>
+                      <Link href="">Stockton, CA, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 11, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4921373"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
                 </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/associate-vice-provost-for-teaching-and-learning/82571"
-                    className="text-blue-500 font-bold"
-                  >
-                    Associate Vice Provost for Teaching and Learning
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Oregon State University</Link>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/information-technology-faculty/82182"
+                      className="text-blue-500 font-bold"
+                    >
+                      Information Technology Faculty
+                    </Link>
                   </li>
-                  <li>
-                    <Link href="">Corvallis, OR, USA</Link>
-                  </li>
-                  <li>
-                    <Link href=""> Feb 20, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4931492"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">North Central State College</Link>
+                    </li>
+                    <li>
+                      <Link href="">
+                        2441 Kenwood Circle, Mansfield, OH, USA
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 15, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4931492"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
                 </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/program-coordinator-pre-professional-programs/82178"
-                    className="text-blue-500 font-bold"
-                  >
-                    Program Coordinator- Pre-Professional Programs
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Southern Utah University</Link>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/associate-vice-provost-for-teaching-and-learning/82571"
+                      className="text-blue-500 font-bold"
+                    >
+                      Associate Vice Provost for Teaching and Learning
+                    </Link>
                   </li>
-                  <li>
-                    <Link href="">Cedar City, UT, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 10, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4918224"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Oregon State University</Link>
+                    </li>
+                    <li>
+                      <Link href="">Corvallis, OR, USA</Link>
+                    </li>
+                    <li>
+                      <Link href=""> Feb 20, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4931492"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
                 </ul>
-              </ul>
-            </div>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/program-coordinator-pre-professional-programs/82178"
+                      className="text-blue-500 font-bold"
+                    >
+                      Program Coordinator- Pre-Professional Programs
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Southern Utah University</Link>
+                    </li>
+                    <li>
+                      <Link href="">Cedar City, UT, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 10, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4918224"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
+                </ul>
+              </div>
 
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/administrative-assistant-ii-student-affairs/84768"
-                    className="text-blue-500 font-bold"
-                  >
-                    Administrative Assistant II - Student Affairs
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Southern Utah University</Link>
-                  </li>
-                  <li>
-                    <Link href="">Cedar City, UT, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 1, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4968144"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/director-of-major-giving-midwest/87777"
-                    className="text-blue-500 font-bold"
-                  >
-                    Director of Major Giving, Midwest
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Villanova University</Link>
-                  </li>
-                  <li>
-                    <Link href="">Chicago, IL, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 10, 2024</Link>
-                  </li>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/lecturer-chemical-and-environmental-engineering/80802"
-                    className="text-blue-500 font-bold"
-                  >
-                    Lecturer, Chemical and Environmental Engineering
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Yale University</Link>
-                  </li>
-                  <li>
-                    <Link href="">New Haven, CT, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">May 31, 2024</Link>
-                  </li>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/assistant-controller-71101-/84760"
-                    className="text-blue-500 font-bold"
-                  >
-                    Assistant Controller (71101)
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Pratt Institute</Link>
-                  </li>
-                  <li>
-                    <Link href="">Brooklyn, NY, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 1, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4970008"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/project-manager/90111"
-                    className="text-blue-500 font-bold"
-                  >
-                    Project Manager
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">University of New South Wales (UNSW)</Link>
-                  </li>
-                  <li>
-                    <Link href="">Kensington,NSW, Aus</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 4, 2024</Link>
-                  </li>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/research-officer/90096"
-                    className="text-blue-500 font-bold"
-                  >
-                    Research Officer
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">University of New South Wales (UNSW)</Link>
-                  </li>
-                  <li>
-                    <Link href="">Kensington,NSW, Aus</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 10, 2024</Link>
-                  </li>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/professor-in-ai-health/90013"
-                    className="text-blue-500 font-bold"
-                  >
-                    Professor in AI Health
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">
-                      Queensland University of Technology (QUT)
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/administrative-assistant-ii-student-affairs/84768"
+                      className="text-blue-500 font-bold"
+                    >
+                      Administrative Assistant II - Student Affairs
                     </Link>
                   </li>
-                  <li>
-                    <Link href="">Brisbane, QLD, Aus</Link>
-                  </li>
-                  <li>
-                    <Link href="">Apr 1, 2024</Link>
-                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Southern Utah University</Link>
+                    </li>
+                    <li>
+                      <Link href="">Cedar City, UT, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 1, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4968144"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
                 </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/professor-in-artificial-intelligence/90020"
-                    className="text-blue-500 font-bold"
-                  >
-                    Professor in Artificial Intelligence
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">
-                      Queensland University of Technology (QUT)
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/director-of-major-giving-midwest/87777"
+                      className="text-blue-500 font-bold"
+                    >
+                      Director of Major Giving, Midwest
                     </Link>
                   </li>
-                  <li>
-                    <Link href="">Brisbane, QLD, Aus</Link>
-                  </li>
-                  <li>
-                    <Link href="">Apr 1, 2024</Link>
-                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Villanova University</Link>
+                    </li>
+                    <li>
+                      <Link href="">Chicago, IL, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 10, 2024</Link>
+                    </li>
+                  </ul>
                 </ul>
-              </ul>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/lecturer-chemical-and-environmental-engineering/80802"
+                      className="text-blue-500 font-bold"
+                    >
+                      Lecturer, Chemical and Environmental Engineering
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Yale University</Link>
+                    </li>
+                    <li>
+                      <Link href="">New Haven, CT, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">May 31, 2024</Link>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/assistant-controller-71101-/84760"
+                      className="text-blue-500 font-bold"
+                    >
+                      Assistant Controller (71101)
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">Pratt Institute</Link>
+                    </li>
+                    <li>
+                      <Link href="">Brooklyn, NY, USA</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 1, 2024</Link>
+                    </li>
+                    <Link
+                      href="https://apptrkr.com/get_redirect.php?id=4970008"
+                      className="btn btn-sm btn-aj mt-4"
+                    >
+                      More Info
+                    </Link>
+                  </ul>
+                </ul>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/project-manager/90111"
+                      className="text-blue-500 font-bold"
+                    >
+                      Project Manager
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">University of New South Wales (UNSW)</Link>
+                    </li>
+                    <li>
+                      <Link href="">Kensington,NSW, Aus</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 4, 2024</Link>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/research-officer/90096"
+                      className="text-blue-500 font-bold"
+                    >
+                      Research Officer
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">University of New South Wales (UNSW)</Link>
+                    </li>
+                    <li>
+                      <Link href="">Kensington,NSW, Aus</Link>
+                    </li>
+                    <li>
+                      <Link href="">Mar 10, 2024</Link>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/professor-in-ai-health/90013"
+                      className="text-blue-500 font-bold"
+                    >
+                      Professor in AI Health
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">
+                        Queensland University of Technology (QUT)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="">Brisbane, QLD, Aus</Link>
+                    </li>
+                    <li>
+                      <Link href="">Apr 1, 2024</Link>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4 hover:underline">
+                    <Link
+                      href="/jobs/professor-in-artificial-intelligence/90020"
+                      className="text-blue-500 font-bold"
+                    >
+                      Professor in Artificial Intelligence
+                    </Link>
+                  </li>
+                  <ul className="innerUL">
+                    <li>
+                      <Link href="">
+                        Queensland University of Technology (QUT)
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="">Brisbane, QLD, Aus</Link>
+                    </li>
+                    <li>
+                      <Link href="">Apr 1, 2024</Link>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
-        view more top jobs →
-      </Link>
+        <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
+          view more top jobs →
+        </Link>
 
-      {/* <div className="ml-2">
+        {/* <div className="ml-2">
       {/* <Link                 href="https://cportal.jobelephant.com/login"
                  className="btn text-white mt-8 bg-[#265882] px-4"
                >
                   Post Your JobElephant Now
                </Link></div> */}
 
-      <h2 className="underline-full mt-20">Top Cities for Uni Jobs</h2>
-      <div className="cate-group section23 ">
-        <div className="widget__text-block">
-          <div className="faculty-container grid-cols-2 grid md:grid-cols-4 gap-8 py-2 px-7">
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4">
-                  <Link href="/USA/" className="text-[#f4a10c] font-bold">
-                    USA
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li className="hover:underline">
-                    <Link href="/boston/">Boston</Link>
+        <h2 className="underline-full mt-20">Top Cities for Uni Jobs</h2>
+        <div className="cate-group section23 ">
+          <div className="widget__text-block">
+            <div className="faculty-container grid-cols-2 grid md:grid-cols-4 gap-8 py-2 px-7">
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4">
+                    <Link href="/USA/" className="text-[#f4a10c] font-bold">
+                      USA
+                    </Link>
                   </li>
-                  <li className="hover:underline">
-                    <Link href="/new-york/">New York</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/los-angeles/">Los Angeles</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/san-francisco/">San Francisco</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/chicago/">Chicago</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/san-diego/">San Diego</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/washington-dc/">Washington DC</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/philadelphia/">Philadelphia</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/atlanta/">Atlanta</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/seattle/">Seattle</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/pittsburgh/">Pittsburgh</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/new-haven/">New Haven</Link>
-                  </li>
+                  <ul className="innerUL">
+                    <li className="hover:underline">
+                      <Link href="/boston/">Boston</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/new-york/">New York</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/los-angeles/">Los Angeles</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/san-francisco/">San Francisco</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/chicago/">Chicago</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/san-diego/">San Diego</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/washington-dc/">Washington DC</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/philadelphia/">Philadelphia</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/atlanta/">Atlanta</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/seattle/">Seattle</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/pittsburgh/">Pittsburgh</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/new-haven/">New Haven</Link>
+                    </li>
+                  </ul>
                 </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4">
-                  <Link href="/Australia/" className="text-[#f4a10c] font-bold">
-                    Australia
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li className="hover:underline">
-                    <Link href="/melbourne/">Melbourne</Link>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4">
+                    <Link
+                      href="/Australia/"
+                      className="text-[#f4a10c] font-bold"
+                    >
+                      Australia
+                    </Link>
                   </li>
-                  <li className="hover:underline">
-                    <Link href="/sydney/">Sydney</Link>
+                  <ul className="innerUL">
+                    <li className="hover:underline">
+                      <Link href="/melbourne/">Melbourne</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/sydney/">Sydney</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/brisbane/">Brisbane</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/gold-coast/">Gold Coast</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/canberra/">Canberra</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/perth/">Perth</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/adelaide/">Adelaide</Link>
+                    </li>
+                  </ul>
+                  <li className="mb-1 mt-4">
+                    <Link href="/UK/" className="text-[#f4a10c] font-bold">
+                      UK
+                    </Link>
                   </li>
-                  <li className="hover:underline">
-                    <Link href="/brisbane/">Brisbane</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/gold-coast/">Gold Coast</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/canberra/">Canberra</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/perth/">Perth</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/adelaide/">Adelaide</Link>
-                  </li>
+                  <ul className="innerUL">
+                    <li className="hover:underline">
+                      <Link href="/london/">London</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/edinburgh/">Edinburgh</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/manchester/">Manchester</Link>
+                    </li>
+                  </ul>
                 </ul>
-                <li className="mb-1 mt-4">
-                  <Link href="/UK/" className="text-[#f4a10c] font-bold">
-                    UK
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li className="hover:underline">
-                    <Link href="/london/">London</Link>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4">
+                    <Link href="/Canada/" className="text-[#f4a10c] font-bold">
+                      Canada
+                    </Link>
                   </li>
-                  <li className="hover:underline">
-                    <Link href="/edinburgh/">Edinburgh</Link>
+                  <ul className="innerUL">
+                    <li className="hover:underline">
+                      <Link href="/toronto/">Toronto</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/vancouver/">Vancouver</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/montreal/">Montreal</Link>
+                    </li>
+                  </ul>
+                  <li className="mb-1 mt-4">
+                    <Link href="/Asia/" className="text-[#f4a10c] font-bold">
+                      Asia
+                    </Link>
                   </li>
-                  <li className="hover:underline">
-                    <Link href="/manchester/">Manchester</Link>
-                  </li>
+                  <ul className="innerUL">
+                    <li className="hover:underline">
+                      <Link href="/hong-kong/">Hong Kong</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/beijing/">Beijing</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/tokyo/">Tokyo</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/singapore/">Singapore</Link>
+                    </li>
+                  </ul>
                 </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4">
-                  <Link href="/Canada/" className="text-[#f4a10c] font-bold">
-                    Canada
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li className="hover:underline">
-                    <Link href="/toronto/">Toronto</Link>
+              </div>
+              <div className="column">
+                <ul className="">
+                  <li className="mb-1 mt-4">
+                    <Link href="/Europe/" className="text-[#f4a10c] font-bold">
+                      Europe
+                    </Link>
                   </li>
-                  <li className="hover:underline">
-                    <Link href="/vancouver/">Vancouver</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/montreal/">Montreal</Link>
-                  </li>
+                  <ul className="innerUL">
+                    <li className="hover:underline">
+                      <Link href="/paris/">Paris</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/zurich/">Zurich</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/munich/">Munich</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/amsterdam/">Amsterdam</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/copenhagen/">Copenhagen</Link>
+                    </li>
+                    <li className="hover:underline">
+                      <Link href="/stockholm/">Stockholm</Link>
+                    </li>
+                  </ul>
                 </ul>
-                <li className="mb-1 mt-4">
-                  <Link href="/Asia/" className="text-[#f4a10c] font-bold">
-                    Asia
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li className="hover:underline">
-                    <Link href="/hong-kong/">Hong Kong</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/beijing/">Beijing</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/tokyo/">Tokyo</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/singapore/">Singapore</Link>
-                  </li>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4">
-                  <Link href="/Europe/" className="text-[#f4a10c] font-bold">
-                    Europe
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li className="hover:underline">
-                    <Link href="/paris/">Paris</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/zurich/">Zurich</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/munich/">Munich</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/amsterdam/">Amsterdam</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/copenhagen/">Copenhagen</Link>
-                  </li>
-                  <li className="hover:underline">
-                    <Link href="/stockholm/">Stockholm</Link>
-                  </li>
-                </ul>
-              </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* WIP */}
-      {/* <h2 className="underline-full mt-20">Top Universities To Work For</h2>
+        {/* WIP */}
+        {/* <h2 className="underline-full mt-20">Top Universities To Work For</h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
@@ -1195,7 +1208,7 @@ export default async function myPage() {
         </div>
       </div> */}
 
-      {/* <h2 className="underline-full mt-20">
+        {/* <h2 className="underline-full mt-20">
         The University Rankings/ Top Academic Careers
       </h2>
       <div className="cate-group section23 ">
@@ -1335,8 +1348,8 @@ export default async function myPage() {
         </div>
       </div> */}
 
-      {/* These are broken */}
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+        {/* These are broken */}
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
         <Link
           href="/job-type/"
           className="btn btn-white border-4 shadow-md leading-none"
@@ -1356,11 +1369,169 @@ export default async function myPage() {
         </Link>
       </div> */}
 
-      <div className="card-actions flex mt-4 mx-auto">
-        <Link href="/academic-talent-pool" className="btn btn-aj">
-          Join our Talent Pool
-        </Link>
-      </div>
-    </main>
+        <div className="card-actions flex mt-4 mx-auto">
+          <Link href="/academic-talent-pool" className="btn btn-aj">
+            Join our Talent Pool
+          </Link>
+        </div>
+      </main>
+      <footer className="py-8 px-7 bg-[#f4a10c] debug">
+        <div className="text-white grid grid-cols-1 md:grid-cols-5 gap-10 max-w-[1500px] mx-auto">
+          <ul>
+            <li className="font-bold text-xl pb-1 ">Recruiters</li>
+
+            <li>
+              <Link className="footer-nav__link" href="/post-a-job">
+                Post a Job
+              </Link>
+            </li>
+            <li>
+              <Link href="/ai-recruitment">AI Recruitment</Link>
+            </li>
+            <li>
+              <Link href="/about">About Academic Jobs</Link>
+            </li>
+            <li>
+              <Link href="/recruitment">Recruitment Assistance</Link>
+            </li>
+            <li>
+              <Link href="/quick-job-post-technology">
+                Quick Job Post Technology
+              </Link>
+            </li>
+            <li>
+              <Link href="/dynamic-global-talent-pool">
+                Dynamic Talent Match-Making
+              </Link>
+            </li>
+          </ul>
+
+          <ul>
+            <li className=" font-bold text-xl pb-1">Academic Opportunities</li>
+            <li>
+              <Link href="/jobs">Get Job Offers</Link>
+            </li>
+            <li>
+              <Link href="/lecturer">Top Lecturer Jobs</Link>
+            </li>
+            <li>
+              <Link href="/research">Top Research Positions</Link>
+            </li>
+            <li>
+              <Link href="/the-academic-rankings/find-my-rank">
+                Get Your Academic Rank
+              </Link>
+            </li>
+            <li>
+              <Link href="/employers">Top Universities To Work For</Link>
+            </li>
+
+            <li>
+              <Link href="/academic-talent-pool">
+                {' '}
+                Make Extra Money - See How ...
+              </Link>
+            </li>
+          </ul>
+
+          <ul>
+            <li className=" font-bold text-xl pb-1"> Higher Ed Staff</li>
+            <li>
+              <Link href="/phd">PhD Jobs</Link>
+            </li>
+            <li>
+              <Link href="/hr-jobs">Higher Ed HR Jobs</Link>
+            </li>
+            <li>
+              <Link href="/admin">All University Staff Jobs</Link>
+            </li>
+            <li>
+              <Link href="/executive">Higher Ed Executive Roles</Link>
+            </li>
+
+            <li>
+              <Link href="/student">Jobs For Students</Link>
+            </li>
+          </ul>
+
+          <ul className="hidden">
+            <li className=" font-bold text-xl pb-1">Institutions</li>
+            {/* <li>
+            <Link href="/the-university-rankings">University Rankings</Link>
+          </li> */}
+            <li>
+              <Link href="/employers">Colleges & Universities</Link>
+            </li>
+            {/* <li>
+            <Link href="/the-university-rankings/find-my-rank">
+              Check Academic Rank
+            </Link>
+          </li> */}
+          </ul>
+
+          <ul>
+            <li className=" font-bold text-xl pb-1 ">Navigation</li>
+            {/* <li><a className="footer-nav__link" href="/">Home</a></li> */}
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/faq">FAQ</Link>
+            </li>
+
+            <li>
+              <Link href="/sitemap">Site Map</Link>
+            </li>
+            <li>
+              <Link href="/contact-us">Contact Us</Link>
+            </li>
+          </ul>
+
+          <ul>
+            <li className=" font-bold text-xl pb-1 ">Socials</li>
+            {/* <li><a href="https://academicjobs.com/career-advice">Career Advice</a></li> */}
+            <li>
+              <a
+                className="footer-nav__link"
+                href="https://www.facebook.com/profile.php?id=100088232015128"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Facebook
+              </a>
+            </li>
+
+            <li>
+              <a
+                className="footer-nav__link"
+                href="https://www.youtube.com/channel/UCIaknpVcM_ZijJSWJCYi8aw"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                YouTube
+              </a>
+            </li>
+            {/* <li>
+            <a
+              href="https://www.linkedin.com/company/academic-jobs/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Linkedin
+            </a>
+          </li> */}
+            <li>
+              <a
+                href="https://www.instagram.com/academicjobs_/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </>
   );
 }
