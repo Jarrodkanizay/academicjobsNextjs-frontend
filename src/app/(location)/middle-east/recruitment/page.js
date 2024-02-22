@@ -185,7 +185,7 @@ export default function myPage() {
         <div className="bg-gray-200 mt-16">
           <figure className="relative w-full min-h-[237px] max-h-[237px] overflow-hidden">
             <Image
-              src="/academic-job-postings/Middle-East-qataruniversity.jpg"
+              src="/academic-job-postings/middle-east-qataruniversity.jpg"
               alt="Middle East qatar university"
               className="absolute w-full h-full object-cover"
             />
