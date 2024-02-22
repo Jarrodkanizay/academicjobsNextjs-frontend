@@ -97,9 +97,7 @@ const Employer = async ({ params }) => {
         {/* Header Area */}
         <div className={`media ${headerBG} p-8 mb-4`}>
           <div className="md:flex md:justify-start mx-auto max-w-screen-xl gap-4">
-            <div
-              className={`w-[15rem] h-[15rem] rounded-md ${logoBG} mr-4 p-3`}
-            >
+            <div className={`size-[15rem] rounded-md ${logoBG} mr-4 p-3`}>
               <Image
                 src={
                   logo
