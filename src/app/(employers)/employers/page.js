@@ -33,9 +33,7 @@ export default function myPage() {
 
       <div className="content-grid">
         <div className="max-w-[650px] mx-auto">
-          <h4 className="underline-full">
-            Explore the best universities by region below
-          </h4>
+          <h4 className="underline-full">Explore universities by region</h4>
           <p>
             Discover top university jobs through our detailed employer rankings,
             selecting your ideal academic career at prestigious institutions.
