@@ -72,7 +72,7 @@ const TopUnis = ({ heading }: Props) => {
             </Link>
           </li>
           <li>
-            <Link href="/employers/university-of-california-rrverside/3268">
+            <Link href="/employers/university-of-california-riverside/3268">
               University of California - Riverside
             </Link>
           </li>

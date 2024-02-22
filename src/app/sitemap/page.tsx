@@ -792,7 +792,7 @@ export default function myPage() {
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
-            <Link href="/New-Zealand/">Find New Zealand Jobs</Link>
+            <Link href="/new-zealand/">Find New Zealand Jobs</Link>
           </h2>
           <ul className=" mb-8 text-left xs:columns-1 sm:columns-1 md:columns-4  md:gap-2 py-2 px-7 h-auto w-full text-transform: capitalize ">
             {newzealandPositions.map(({ Name }, key) => (
@@ -800,7 +800,7 @@ export default function myPage() {
                 className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
                 key={key}
               >
-                <Link href={`/New-Zealand/${Name?.replace(/\s+/g, '-')}/`}>
+                <Link href={`/new-zealand/${Name?.replace(/\s+/g, '-')}/`}>
                   {Name}
                 </Link>
               </li>
