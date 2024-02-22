@@ -179,7 +179,7 @@ export default function Page() {
         <div className="bg-gray-200 mt-16">
           <figure className="relative w-full min-h-[237px] max-h-[237px] overflow-hidden">
             <Image
-              src="/academic-job-postings/india-IISc.jpg"
+              src="/academic-job-postings/india-iisc.jpg"
               alt="India AI tools"
               className="absolute w-full h-full object-cover"
             />
