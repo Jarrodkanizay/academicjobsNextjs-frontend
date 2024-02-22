@@ -40,7 +40,7 @@ Find all the best executive jobs here…`,
     Name: `admin`,
     Title: `Admin Jobs in Asia`,
     Description: `Through the presentation of your organization's innovative processes and academic standards, you may work with a bright and diverse team at Admin and Support Academic Jobs Asia.`,
-    Keyword: `Academic Admin Jobs Asia`,
+    Keyword: `University Admin Jobs Asia`,
     content: `Seek your perfect admin job through the home of academic positions, Academic Jobs! At Academic Jobs we offer the most renowned uni jobs at the top Asian universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
 The No.1 job board for academics in Asia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
 Find all the best administrative jobs here…`,

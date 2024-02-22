@@ -79,7 +79,7 @@ export default function Page() {
             <Link href="/USA/executive/"> Executive</Link>
           </li>
           <li>
-            <Link href="/USA/admin/">Admin</Link>
+            <Link href="/USA/staff/">Staff</Link>
           </li>
           <li>
             <Link href="/USA/hr-jobs/"> HR</Link>

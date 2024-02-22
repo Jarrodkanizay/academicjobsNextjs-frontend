@@ -8,12 +8,12 @@ import JobFilter from '@/components/JobFilter';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: 'Academic Admin and Staff Jobs', //Option 2 overrides the title in layout.tsx
+    absolute: 'University Admin and Staff Jobs', //Option 2 overrides the title in layout.tsx
   },
   description:
-    'As an academic admin and staff workers will have the opportunity to work with diverse and talented people, contribute to the academic excellence and innovation of your institution.  ',
+    'As an University admin and staff workers will have the opportunity to work with diverse and talented people, contribute to the academic excellence and innovation of your institution.  ',
   keywords:
-    'Academic Admin and Staff Jobs, Admin and Support Academic Jobs, Academic Staff Jobs, Academic Admin Jobs',
+    'University Admin and Staff Jobs, Admin and Support Academic Jobs, Academic Staff Jobs, University Admin Jobs',
 };
 export default function myPage() {
   return (
