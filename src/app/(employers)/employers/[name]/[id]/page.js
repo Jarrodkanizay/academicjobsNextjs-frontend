@@ -133,13 +133,13 @@ const Employer = async ({ params }) => {
               <div
                 className={`md:flex-col md:gap-6 ml-[-3px] pt-6 ${headerTextColor}`}
               >
-                <div className="md:flex md:items-center md:justify-start md:gap-2">
-                  <MdLocationPin />
+                <div className="flex items-center justify-start gap-2 mb-2">
+                  <MdLocationPin size="26" color="#df0000" />
                   {location}
                 </div>
                 {website && (
-                  <div className="md:flex md:items-center md:justify-start md:gap-2">
-                    <AiOutlineGlobal />
+                  <div className="flex items-center justify-start gap-2.5">
+                    <AiOutlineGlobal size="24" color="#1c2dc7" />
                     <a href={website} className="">
                       {website}
                     </a>
