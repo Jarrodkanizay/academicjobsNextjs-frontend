@@ -1240,7 +1240,7 @@ export default function myPage() {
                 <h3>Italy</h3>
               </li>
               <li>
-                <Link href="/employers/University-of-Bologna/12015/">
+                <Link href="/employers/university-of-bologna/12015">
                   University of Bologna
                 </Link>
               </li>
