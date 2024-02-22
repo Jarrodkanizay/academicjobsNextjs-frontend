@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
   if (!employer) return { title: 'not found' };
   const { company_name } = employer?.data;
   return {
-    title: `All jobs at ${company_name} | `,
+    title: `All jobs at ${company_name} `,
     description: `All the university jobs at ${company_name} Academic and administration jobs.  Lecturer and research higher ed careers.`,
     keywords: `${company_name} jobs, ${company_name} careers, ${company_name} positions,  Work at ${company_name}`,
   };
@@ -97,9 +97,7 @@ const Employer = async ({ params }) => {
         {/* Header Area */}
         <div className={`media ${headerBG} p-8 mb-4`}>
           <div className="md:flex md:justify-start mx-auto max-w-screen-xl gap-4">
-            <div
-              className={`w-[15rem] h-[15rem] rounded-md ${logoBG} mr-4 p-3`}
-            >
+            <div className={`size-[15rem] rounded-md ${logoBG} mr-4 p-3`}>
               <Image
                 src={
                   logo
@@ -133,13 +131,13 @@ const Employer = async ({ params }) => {
               <div
                 className={`md:flex-col md:gap-6 ml-[-3px] pt-6 ${headerTextColor}`}
               >
-                <div className="md:flex md:items-center md:justify-start md:gap-2">
-                  <MdLocationPin />
+                <div className="flex items-center justify-start gap-2 mb-2">
+                  <MdLocationPin size="26" color="#df0000" />
                   {location}
                 </div>
                 {website && (
-                  <div className="md:flex md:items-center md:justify-start md:gap-2">
-                    <AiOutlineGlobal />
+                  <div className="flex items-center justify-start gap-2.5">
+                    <AiOutlineGlobal size="24" color="#1c2dc7" />
                     <a href={website} className="">
                       {website}
                     </a>

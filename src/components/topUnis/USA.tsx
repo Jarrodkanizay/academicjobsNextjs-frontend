@@ -72,7 +72,7 @@ const TopUnis = ({ heading }: Props) => {
             </Link>
           </li>
           <li>
-            <Link href="/employers/university-of-california-Rrverside/3268/">
+            <Link href="/employers/university-of-california-rrverside/3268">
               University of California - Riverside
             </Link>
           </li>
@@ -238,17 +238,17 @@ const TopUnis = ({ heading }: Props) => {
             </Link>
           </li>
           <li>
-            <Link href="/employers/Cornell-University/3138/">
+            <Link href="/employers/cornell-university/3138">
               Cornell University
             </Link>
           </li>
           <li>
-            <Link href="/employers/Brown-University/3308/">
+            <Link href="/employers/brown-university/3308">
               Brown University
             </Link>
           </li>
           <li>
-            <Link href="/employers/University-of-Rochester/5527/">
+            <Link href="/employers/university-of-rochester/5527">
               University of Rochester
             </Link>
           </li>
@@ -314,12 +314,12 @@ const TopUnis = ({ heading }: Props) => {
             <h3>Illinois</h3>
           </li>
           <li>
-            <Link href="/employers/University-of-Chicago/3126/">
+            <Link href="/employers/university-of-chicago/3126">
               University of Chicago
             </Link>
           </li>
           <li>
-            <Link href="/employers/Northwestern-University/3143/">
+            <Link href="/employers/northwestern-university/3143">
               Northwestern University
             </Link>
           </li>
@@ -398,7 +398,7 @@ const TopUnis = ({ heading }: Props) => {
             </Link>
           </li>
           <li>
-            <Link href="/employers/georgetown-University/3522/">
+            <Link href="/employers/georgetown-university/3522">
               Georgetown University
             </Link>
           </li>
