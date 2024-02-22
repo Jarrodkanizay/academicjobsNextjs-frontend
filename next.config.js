@@ -435,36 +435,36 @@ const nextConfig = {
         destination: '/uk/hr-jobs',
         permanent: true,
       },
-      {
-        source: '/Canada',
-        destination: '/canada',
-        permanent: true,
-      },
-      {
-        source: '/Australia',
-        destination: '/australia',
-        permanent: true,
-      },
-      {
-        source: '/UK',
-        destination: '/uk',
-        permanent: true,
-      },
-      {
-        source: '/Europe',
-        destination: '/europe',
-        permanent: true,
-      },
-      {
-        source: '/USA',
-        destination: '/usa',
-        permanent: true,
-      },
-      {
-        source: '/Asia',
-        destination: '/asia',
-        permanent: true,
-      },
+      // {
+      //   source: '/Canada',
+      //   destination: '/canada',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/Australia',
+      //   destination: '/australia',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/UK',
+      //   destination: '/uk',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/Europe',
+      //   destination: '/europe',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/USA',
+      //   destination: '/usa',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/Asia',
+      //   destination: '/asia',
+      //   permanent: true,
+      // },
       
   
     ];
