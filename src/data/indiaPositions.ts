@@ -44,7 +44,7 @@ Find all the best executive jobs here…`,
     Title: `Admin Jobs India`,
     Description:
       "Promoting your company's cutting-edge procedures and academic standards will allow you to collaborate with a clever and diversified workforce at Admin and Support Academic Jobs India. ",
-    Keyword: `Academic Admin Jobs India`,
+    Keyword: `University Admin Jobs India`,
     content: `Seek your perfect admin position through India’s best job board! At Academic Jobs we offer the most renowned Higher Ed jobs at the top Indian universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
 The No.1 job board for jobs in education in India. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
 Find all the best administrative jobs here…`,
