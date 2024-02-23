@@ -3,9 +3,10 @@ import { CityDataTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
 import { formatDate } from '@/utils/utilityScripts';
 import SearchResults from '@/components/SearchResults';
-// import SearchResults1 from '@/components/SearchResults1';
+import SearchResults1 from '@/components/SearchResults1';
 import JobSearchBox2 from '@/components/JobSearchBox2';
 import JobFilter from '@/components/JobFilter';
+import Link from 'next/link';
 
 type Params = {
   slug: string;
@@ -104,23 +105,54 @@ export default function BlogPostPage({ params }: Props) {
           {cityDetails.promo.map((promoPara, index) => (
             <p key={index}>{promoPara}</p>
           ))}
+          <h3>Are you looking for…</h3>
+          <ul>
+            <li>
+              <Link href={`/jobs?q=Research&l=${cityDetails.city}`}>
+                Research jobs in {cityDetails.city}
+              </Link>
+            </li>
+            <li>
+              <Link href={`/jobs?q=Lecturer&l=${cityDetails.city}`}>
+                Lecturer jobs in {cityDetails.city}
+              </Link>
+            </li>
+            <li>
+              <Link href={`/jobs?q=University&l=${cityDetails.city}`}>
+                University jobs in {cityDetails.city}
+              </Link>
+            </li>
+            <li>
+              <Link href={`/jobs?q=Higher%20Ed&l=${cityDetails.city}`}>
+                Higher Ed jobs in {cityDetails.city}
+              </Link>
+            </li>
+            <li>
+              <Link href={`/jobs?q=Dream%20job&l=${cityDetails.city}`}>
+                Dream job in {cityDetails.city}
+              </Link>
+            </li>
+          </ul>
         </div>
         <div className="listings_panel">
           <div className="listings_content">
             <div className="search_panel">
               <JobSearchBox2 l={cityDetails.city} />
             </div>
-            <SearchResults
+            {/* <SearchResults
               q={{ q: '', l: cityDetails.city }}
               filterOff={true}
+            /> */}
+            <SearchResults1
+              q={{
+                filter1: [{ category: 'City', filter: 'Boston' }],
+                q: '',
+                l: '',
+              }}
             />
           </div>
         </div>
       </section>
-      <SearchResults1
-        q={{ filter1: [{ category: 'City', filter: 'Boston' }], q: '', l: '' }}
-      />
-      {/* <SearchResults q="" l={cityDetails.city} /> */}
     </main>
   );
 }
