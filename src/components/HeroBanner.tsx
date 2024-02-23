@@ -19,6 +19,8 @@ type HeroProps = {
   imgHeight?: number; //Image height={534}
   imgRight?: boolean; //Image on right side of text
   reorder?: boolean; //Reorder image and text on mobile
+  externalLink?: boolean; //Use <img instead of <Image if linking to an image on some other site
+  imageShadow?: boolean; //Add shadow to image
 };
 
 const HeroBanner = ({
@@ -37,6 +39,8 @@ const HeroBanner = ({
   imgHeight = 534,
   imgRight = true,
   reorder = true,
+  externalLink = false,
+  imageShadow = true,
 }: HeroProps) => {
   // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [windowWidth, setWindowWidth] = useState(
@@ -69,13 +73,28 @@ const HeroBanner = ({
           }`}
         >
           {src ? (
-            <Image
-              width={imgWidth}
-              height={imgHeight}
-              src={src}
-              className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
-              alt={alt}
-            />
+            <>
+              {externalLink ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={src}
+                  className={`lg:max-w-lg rounded-lg ${
+                    imageShadow ? 'shadow-2xl' : ''
+                  } mb-8 lg:mb-0`}
+                  alt={alt}
+                />
+              ) : (
+                <Image
+                  width={imgWidth}
+                  height={imgHeight}
+                  src={src}
+                  className={`lg:max-w-lg rounded-lg ${
+                    imageShadow ? 'shadow-2xl' : ''
+                  } mb-8 lg:mb-0`}
+                  alt={alt}
+                />
+              )}
+            </>
           ) : null}
           <div>
             <h1 className="text-4xl font-bold text-aj">{h1}</h1>
