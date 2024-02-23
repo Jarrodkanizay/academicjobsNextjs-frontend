@@ -75,7 +75,8 @@ html {
       grid-area: post_panel;
     }
 
-    .post_panel .post_content .post {
+    .post_panel .post_content .post,
+    .post_panel {
       h1,
       h2,
       h3,
@@ -83,6 +84,21 @@ html {
       h5,
       h6 {
         color: rgb(1, 43, 106);
+      }
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: var(--color-gray-blue);
+      }
+
+      h1:first-child,
+      h2:first-child,
+      h3:first-child,
+      h4:first-child,
+      h5:first-child,
+      h6:first-child {
+        margin-top: 0;
       }
       h1,
       h2,
@@ -222,33 +238,34 @@ html {
       height: auto;
       box-shadow: var(--box-shadow);
       padding: 24px;
+    }
 
-      .job-content {
-        *:first-child {
-          margin-top: 0 !important;
-        }
-        p {
-          margin-top: 20px !important;
-        }
-        ul {
-          list-style-type: disc;
-          margin-left: 20px;
-        }
-        ol {
-          list-style-type: decimal;
-          margin-left: 20px;
-        }
-        ul li,
-        ol li {
-          margin-bottom: 10px;
-        }
-        a {
-          color: var(--color-primary);
-          text-decoration: underline;
-        }
-        a:hover {
-          color: var(--color-primary-hover);
-        }
+    .job-content,
+    .employer_panel {
+      *:first-child {
+        margin-top: 0 !important;
+      }
+      p {
+        margin-top: 20px !important;
+      }
+      ul {
+        list-style-type: disc;
+        margin-left: 20px;
+      }
+      ol {
+        list-style-type: decimal;
+        margin-left: 20px;
+      }
+      ul li,
+      ol li {
+        margin-bottom: 10px;
+      }
+      a {
+        color: var(--color-primary);
+        text-decoration: underline;
+      }
+      a:hover {
+        color: var(--color-primary-hover);
       }
     }
 

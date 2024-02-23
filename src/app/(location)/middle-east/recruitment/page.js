@@ -31,7 +31,7 @@ export default function myPage() {
             <div className="container mx-auto">
               <div className="hero-content flex-col lg:flex-row gap-8">
                 <Image
-                  src="/academic-job-postings/Middle-East-Professor.jpg"
+                  src="/academic-job-postings/middle-east-professor.jpg"
                   className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
                   alt="Middle East Professor"
                 />
@@ -185,7 +185,7 @@ export default function myPage() {
         <div className="bg-gray-200 mt-16">
           <figure className="relative w-full min-h-[237px] max-h-[237px] overflow-hidden">
             <Image
-              src="/academic-job-postings/Middle-East-qataruniversity.jpg"
+              src="/academic-job-postings/middle-east-qataruniversity.jpg"
               alt="Middle East qatar university"
               className="absolute w-full h-full object-cover"
             />

@@ -250,7 +250,7 @@ export const categoryData = [
   },
   {
     Name: `educational administration leadership`,
-    Title: `Academic Admin and Leadership Jobs Education`,
+    Title: `University Admin and Leadership Jobs Education`,
     Description: `All the best Edu. Admin and Leadership university jobs are available here. Search for lecturing, research, and faculty positions in the Edu. Admin and Leadership academic field at universities. Go to the Academic jobs Edu. Admin and Leadership website for university jobs and higher ed positions today.`,
     Keyword: `Edu. Admin and Leadership university jobs, Edu. Admin and Leadership jobs, Edu. Admin and Leadership in higher education, Edu. Admin and Leadership in academic jobs`,
     content: `Popular educational administration leadership career paths at top universities! Find educational administration leadership uni jobs through Academic Jobs, where you can browse through the latest vacancies for academic higher ed positions. What is your academic ranking in the educational administration leadership field? Positions in educational administration leadership will provide you with the chance to network with highly ranked partners domestically and internationally, collaborate with some of the brightest minds, and use top-notch facilities and resources in your dream job. Search all educational administration leadership jobs near me……`,

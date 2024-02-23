@@ -33,9 +33,7 @@ export default function myPage() {
 
       <div className="content-grid">
         <div className="max-w-[650px] mx-auto">
-          <h4 className="underline-full">
-            Explore the best universities by region below
-          </h4>
+          <h4 className="underline-full">Explore universities by region</h4>
           <p>
             Discover top university jobs through our detailed employer rankings,
             selecting your ideal academic career at prestigious institutions.
@@ -1242,7 +1240,7 @@ export default function myPage() {
                 <h3>Italy</h3>
               </li>
               <li>
-                <Link href="/employers/University-of-Bologna/12015/">
+                <Link href="/employers/university-of-bologna/12015">
                   University of Bologna
                 </Link>
               </li>

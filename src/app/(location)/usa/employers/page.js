@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroBanner from '@/components/HeroBanner';
+import USA from '@/components/topUnis/USA';
 
 export const metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -21,10 +22,10 @@ function countryRegionPlural() {
 }
 export default function myPage() {
   return (
-    <main>
+    <main >
       {/* Hero banner */}
       <section>
-        <div className="hero max-h-fit bg-slate-200 py-8 mx-auto">
+        <div className="hero max-h-fit bg-slate-200 py-8 mx-auto full-width">
           <div className="container mx-auto">
             <div className="hero-content flex-col xl:flex-row gap-8 mx-auto max-w-full">
               <Image
@@ -72,7 +73,7 @@ export default function myPage() {
         </div>
       </section>
 
-      <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl  max-w-screen-xl mx-auto">
+      {/* <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl  max-w-screen-xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 ">
           <ul>
             <li className="mb-1 mt-4 text-[#f4a10c] font-bold">California</li>
@@ -653,16 +654,21 @@ export default function myPage() {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
-      <section>
+
+
+      <div className="content-grid mt-4">
+
+      <USA />
+
         <h3 className="container mx-auto text-center py-8 px-4 items-end">
           {' '}
           <Link className="border rounded-3xl  p-4" href="/employers/">
             View All
           </Link>
         </h3>
-      </section>
+      </div>
       {/* Contact us CTA */}
       <section className="container mx-auto px-4 mt-12">
         <div className="alert mb-10">

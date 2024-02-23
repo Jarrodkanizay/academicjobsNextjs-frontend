@@ -1,9 +1,9 @@
-import { blogData } from '@/data/blogData';
-import Image from 'next/image';
+import { cityData } from '@/data/cityData';
 import Link from 'next/link';
 // import { BlogPostTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
 import { formatDate } from '@/utils/utilityScripts';
+// import CityLogo from '@/components/CityLogo';
 
 import type { Metadata } from 'next';
 
@@ -18,81 +18,67 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPosts() {
-  // function formatDate(input: string) {
-  //   const date = new Date(input);
-  //   const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  //   return date.toLocaleDateString('en-US', options);
-  // }
+  const cityPath = '/city/';
+  const topList = 6;
 
-  const showDates = false;
-  const blogPath = '/career-help/';
-
-  console.log(blogData);
   return (
     <main className="content-grid">
       <HeroBanner
-        h1="Empowering Your Academic Career: Networking, Collaboration, and Expert Advice"
-        para1="Your ultimate academic career awaits, let us supercharge your academic journey. In today's fast-paced academic world, advancing your career goes beyond just landing the next job; it's about building meaningful connections, engaging in collaborative projects, and gaining insights that pave the way for success."
-        para2="Whether you're embarking on your PhD journey, navigating the postdoctoral landscape, or shaping the minds of the future as a professor, our curated career advice, tips, and insights from seasoned academics and researchers are designed to guide you every step of the way."
-        src="/blogs/career-assistance-networking-and-collaboration.jpg"
-        alt="People immersed in academic blogs at our vibrant Academic Hub"
-        btnPrimaryText="Join our Talent Pool"
-        btnPrimaryURL="/talent-pool"
+        h1="Discover the World's Leading Cities for Academic Excellence and Innovation"
+        h2="Expert Academic Guidance and Resources for Students, Researchers, and Academics"
+        para1="Embark on a journey through the world's most renowned cities, where academic dreams are turned into reality, and the pathways to intellectual achievement are as diverse as they are enriching. In these hubs of knowledge and innovation, students, researchers, and professors alike find a treasure trove of resources, mentorship, and inspiration."
+        // para2="From the historic universities of Europe to the cutting-edge research institutions in North America and Asia, each city offers unique opportunities to delve deeper into your field, collaborate with leading experts, and contribute to groundbreaking discoveries. Whether you're seeking to expand your academic horizons, pursue rigorous research, or find a community of like-minded scholars, our guide to the world's academic cities opens the door to endless possibilities for growth, learning, and professional development. Explore with us and discover the ultimate academic pathway that aligns with your aspirations and goals."
+        src="/cities/cities-of-the-world-for-academics.jpg"
+        alt="The World's Leading Cities for Academic Excellence and Innovation"
+        btnPrimaryText="Find Jobs in Your City"
+        btnPrimaryURL="/jobs"
         reorder={false}
       />
-
-      <h2 className="underline-full mb-8"> Top Academic Career Help</h2>
-
-      {blogData ? (
+      {/* <CityLogo /> */}
+      {/* <Image
+        src={getCityLogo('Melbourne', 'Australia')}
+        alt="People immersed in academic blogs at our vibrant Academic Hub"
+        width={800}
+        height={800}
+      /> */}
+      <h2 className="underline-full mb-8">Top Cities for Higher Ed Jobs</h2>
+      {cityData ? (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {blogData.slice(0, 6).map((post, index) => (
-              <article key={index} className="card bg-slate-100 shadow-xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+            {cityData.slice(0, topList).map((post, index) => (
+              <article
+                key={index}
+                className="card card-side bg-slate-100 shadow-xl"
+              >
                 <figure>
-                  <Link href={blogPath + post.slug}>
-                    <Image
+                  <Link href={cityPath + post.slug}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={post.image_url}
                       alt={post.alt}
-                      width={800}
-                      height={800}
+                      className="max-w-[260px] h-full object-cover"
                     />
                   </Link>
                 </figure>
-
-                <div className="card-body">
-                  <h2 className="card-title grow line-clamp-4 m-0 min-h-[130px]">
+                <div className="card-body max-w-96">
+                  <h2 className="card-title grow line-clamp-3 m-0 mb-8">
                     <Link
-                      href={blogPath + post.slug}
-                      className="hover:text-orange-500 text-2xl"
+                      href={cityPath + post.slug}
+                      className="hover:text-orange-500 text-xl"
                     >
                       {post.title}
                     </Link>
                   </h2>
-                  <h3>By {post.author}</h3>
-                  {showDates ? (
-                    <>
-                      <p>
-                        <time className="mr-4">
-                          {formatDate(post.published_at)}
-                        </time>
-                        {post.updated_at !== '' ? (
-                          <span className="text-slate-400">
-                            Updated: <time>{formatDate(post.updated_at)}</time>
-                          </span>
-                        ) : null}
-                      </p>
-                    </>
-                  ) : null}
-                  <p className="h-[130px] relative line-clamp-4 m-0">
-                    {post.summary}
+                  <p className="h-[100px] relative line-clamp-3 m-0">
+                    {post.description}
                     <div className="blog-gradient"> </div>
                   </p>
                   <div className="card-actions justify-end">
                     <Link
-                      href={blogPath + post.slug}
+                      href={cityPath + post.slug}
                       className="btn btn-aj btn-sm"
                     >
-                      Read more
+                      More about {post.city}
                     </Link>
                   </div>
                 </div>
@@ -100,7 +86,7 @@ export default function BlogPosts() {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-8 mt-10">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-8 mt-10">
             <iframe
               className=" aspect-video  rounded-3xl"
               src="https://www.youtube.com/embed/bEEmo_KhOOk?si=yiNtzXaYyASiWU8W"
@@ -118,31 +104,36 @@ export default function BlogPosts() {
               src="https://www.youtube.com/embed/yn-ctFDfI60?si=REwYQIJFPBm6NnXm"
               title="YouTube video player"
             ></iframe>
-          </div>
+          </div> */}
 
-          <h2 className="underline-full mt-16 mb-8">
-            Academic Recruitment & Career Blog Posts
-          </h2>
+          {cityData.length > topList ? (
+            <>
+              <h2 className="underline-full mt-16 mb-8">
+                Explore Cities in Academia
+              </h2>{' '}
+            </>
+          ) : null}
+
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {blogData.slice(6).map((post, index) => (
+            {cityData.slice(topList).map((post, index) => (
               <article
                 key={index}
                 className="card bg-slate-100 shadow-xl image-full items-stretch"
               >
-                <figure>
-                  <Link href={blogPath + post.slug}>
-                    <Image
+                <figure className="h-[240px]">
+                  <Link href={cityPath + post.slug}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={post.image_url}
                       alt={post.alt}
-                      width={800}
-                      height={800}
+                      className="h-full object-cover"
                     />
                   </Link>
                 </figure>
                 <div className="card-body p-6">
                   <h2 className="card-title line-clamp-3 leading-tight">
                     <Link
-                      href={blogPath + post.slug}
+                      href={cityPath + post.slug}
                       className="text-white hover:text-orange-500 text-lg"
                     >
                       {post.title}
@@ -150,7 +141,7 @@ export default function BlogPosts() {
                   </h2>
                   <div className="card-actions justify-end mt-auto">
                     <Link
-                      href={blogPath + post.slug}
+                      href={cityPath + post.slug}
                       className="btn btn-aj btn-sm"
                     >
                       Read more
@@ -162,7 +153,9 @@ export default function BlogPosts() {
           </div>
         </>
       ) : (
-        <div>Something went wrong loading the Blogs.</div>
+        <div>
+          Something went wrong loading our City content. Please try reloading?
+        </div>
       )}
     </main>
   );

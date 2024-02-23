@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
     absolute:
-      '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
+      '  Academic Jobs: All Higher Ed Positions Locally and Globally.', //Option 2 overrides the title in layout.tsx
   },
   description:
     'Discover academic jobs at all universities today! Explore your next academic positions through visiting our higher ed jobs, with new academic jobs added daily.',

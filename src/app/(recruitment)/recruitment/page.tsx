@@ -3,15 +3,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PricingTable2 from '@/components/PricingTable2';
 export const metadata: Metadata = {
-  title:
-    'Academic Jobs Recruitment', //Option 1 replaces the %s in layout.tsx
+  title: 'Academic Jobs Recruitment', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
     'We make the job posting process quick and easy, Academic Jobs is the best  recruitment platform for higher education institutions to discover academics. ',
-  keywords:
-    'Academic Jobs Recruitment, Academic Recruitment Platform',
+  keywords: 'Academic Jobs Recruitment, Academic Recruitment Platform',
 };
 export default function myPage() {
   return (
@@ -271,7 +269,7 @@ export default function myPage() {
                   <Image
                     width={90}
                     height={90}
-                    src="/academic-job-postings/Top-Executive.jpg"
+                    src="/academic-job-postings/top-executive.jpg"
                     alt="Top Executive"
                   />
                 </div>
@@ -295,7 +293,7 @@ export default function myPage() {
                   <Image
                     width={90}
                     height={90}
-                    src="/academic-job-postings/HR-Jobs.png"
+                    src="/academic-job-postings/hr-jobs.png"
                     alt="HR Jobs"
                   />
                 </div>
@@ -321,15 +319,15 @@ export default function myPage() {
               <figure className="px-10 pt-10">
                 <div className="icon-ai">
                   <Image
-                    width={90}
-                    height={90}
-                    src="/academic-job-postings/Admin-Jobs.png"
+                    width={120}
+                    height={120}
+                    src="/academic-job-postings/admin-jobs.png"
                     alt="Admin Jobs"
                   />
                 </div>
                 <div className="icon-ai hidden">
                   <svg
-                    xmlns="http://www.w3.org/Staff-Jobs.jpg"
+                    xmlns="http://www.w3.org/"
                     width="90"
                     height="90"
                     viewBox="0 0 128 128"
