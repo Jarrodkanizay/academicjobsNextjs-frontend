@@ -108,7 +108,7 @@ export default function BlogPostPage({ params }: Props) {
         <div className="listings_panel">
           <div className="listings_content">
             <div className="search_panel">
-              <JobSearchBox2 />
+              <JobSearchBox2 l={cityDetails.city} />
             </div>
             <SearchResults
               q={{ q: '', l: cityDetails.city }}
