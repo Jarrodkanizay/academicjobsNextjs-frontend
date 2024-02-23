@@ -67,9 +67,9 @@ export default function BlogPostPage({ params }: Props) {
         )}
 
         <h3>Nobel Laureates from {cityDetails.city}</h3>
-        {cityDetails.nobelInfo.map((nobelPara, index) => (
+        {/* {cityDetails.nobelInfo.map((nobelPara, index) => (
           <p key={index}>{nobelPara}</p>
-        ))}
+        ))} */}
 
         {cityDetails.uniList.length > 0 && (
           <>
