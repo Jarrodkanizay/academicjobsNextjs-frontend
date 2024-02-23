@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-type Props = { city?: string; country?: string };
+// type Props = { city?: string; country?: string };
 
-const CityLogo = ({ city = 'Melbourne', country = 'Australia' }: Props) => {
+const CityLogo = ({ city = 'Melbourne', country = 'Australia' }) => {
   const [logoUrl, setLogoUrl] = useState(null);
 
   async function getCityLogo(city, country) {
