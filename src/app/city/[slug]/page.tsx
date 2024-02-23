@@ -3,6 +3,9 @@ import { CityDataTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
 import { formatDate } from '@/utils/utilityScripts';
 import SearchResults from '@/components/SearchResults';
+// import SearchResults1 from '@/components/SearchResults1';
+import JobSearchBox2 from '@/components/JobSearchBox2';
+import JobFilter from '@/components/JobFilter';
 
 type Params = {
   slug: string;
@@ -48,60 +51,72 @@ export default function BlogPostPage({ params }: Props) {
         Learn about Universities, Colleges & Academic in the City of{' '}
         {cityDetails.city}
       </h2>
-      <section className="text-2-cols">
-        <h3 className="mt-0">
-          About the Colleges & Universities in {cityDetails.city}
-        </h3>
-        {cityDetails.cityInfo.map((cityPara, index) => (
-          <p key={index}>{cityPara}</p>
-        ))}
+      <section className="jobs_grid job_post_panel_container">
+        <div className={`post_panel employer_panel aj text-2-cols mt-6 `}>
+          <h3 className="mt-0">
+            About the Colleges & Universities in {cityDetails.city}
+          </h3>
+          {cityDetails.cityInfo.map((cityPara, index) => (
+            <p key={index}>{cityPara}</p>
+          ))}
 
-        {cityDetails.uniList.length > 0 && (
-          <>
-            <ul>
-              {cityDetails.uniList.map((uni, index) => (
-                <li key={index}>{uni}</li>
-              ))}
-            </ul>
-          </>
-        )}
+          {cityDetails.uniList.length > 0 && (
+            <>
+              <ul>
+                {cityDetails.uniList.map((uni, index) => (
+                  <li key={index}>{uni}</li>
+                ))}
+              </ul>
+            </>
+          )}
 
-        <h3>Nobel Laureates from {cityDetails.city}</h3>
-        {cityDetails.nobelInfo.map((nobelPara, index) => (
-          <p key={index}>{nobelPara}</p>
-        ))}
+          <h3>Nobel Laureates from {cityDetails.city}</h3>
+          {cityDetails.nobelInfo.map((nobelPara, index) => (
+            <p key={index}>{nobelPara}</p>
+          ))}
 
-        {cityDetails.uniList.length > 0 && (
-          <>
-            <ul>
-              {cityDetails.nobelList.map((laureate, index) => (
-                <li key={index}>{laureate}</li>
-              ))}
-            </ul>
-          </>
-        )}
+          {cityDetails.uniList.length > 0 && (
+            <>
+              <ul>
+                {cityDetails.nobelList.map((laureate, index) => (
+                  <li key={index}>{laureate}</li>
+                ))}
+              </ul>
+            </>
+          )}
 
-        <h3>Notable Academics Practicing in {cityDetails.city}</h3>
-        {cityDetails.academicInfo.map((academicPara, index) => (
-          <p key={index}>{academicPara}</p>
-        ))}
+          <h3>Notable Academics Practicing in {cityDetails.city}</h3>
+          {cityDetails.academicInfo.map((academicPara, index) => (
+            <p key={index}>{academicPara}</p>
+          ))}
 
-        {cityDetails.academicList.length > 0 && (
-          <>
-            <ul>
-              {cityDetails.academicList.map((academic, index) => (
-                <li key={index}>{academic}</li>
-              ))}
-            </ul>
-          </>
-        )}
+          {cityDetails.academicList.length > 0 && (
+            <>
+              <ul>
+                {cityDetails.academicList.map((academic, index) => (
+                  <li key={index}>{academic}</li>
+                ))}
+              </ul>
+            </>
+          )}
 
-        <h3>Considering moving to {cityDetails.city}? Here's a run down!</h3>
-        {cityDetails.promo.map((promoPara, index) => (
-          <p key={index}>{promoPara}</p>
-        ))}
+          <h3>Considering moving to {cityDetails.city}? Here's a run down!</h3>
+          {cityDetails.promo.map((promoPara, index) => (
+            <p key={index}>{promoPara}</p>
+          ))}
+        </div>
+        <div className="listings_panel">
+          <div className="listings_content">
+            <div className="search_panel">
+              <JobSearchBox2 />
+            </div>
+            <SearchResults
+              q={{ q: '', l: cityDetails.city }}
+              filterOff={true}
+            />
+          </div>
+        </div>
       </section>
-      <SearchResults q="" l={cityDetails.city} />
     </main>
   );
 }
