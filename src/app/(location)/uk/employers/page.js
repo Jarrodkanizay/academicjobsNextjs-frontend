@@ -32,6 +32,8 @@ export default function myPage() {
           <div className="hero-content flex-col xl:flex-row gap-8 mx-auto max-w-full">
             <Image
               src="/academic-job-postings/top-universities-worldwide.jpg"
+              width={1280}
+              height={380}
               className="object-none h-60 w-96  rounded-xl shadow-2xl mb-8 lg:mb-0"
               alt="UK Top Academic Employers"
             />
@@ -68,7 +70,7 @@ Use university rankings to search for jobs in higher education.
       </div>
     </section>
    
-   
+{/*    
     <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl  max-w-screen-2xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 ">
           <ul>
@@ -94,7 +96,7 @@ Use university rankings to search for jobs in higher education.
               of California - Santa Barbara</Link></li>
             <li><Link href="/employers/university-of-california-santa-cruz/3252/">University
               of California - Santa Cruz</Link></li>
-            <li><Link href="/employers/university-of-california-Rrverside/3268/">University
+            <li><Link href="/employers/university-of-california-riverside/3268/">University
               of California - Riverside</Link></li>
             <li><Link href="/employers/california-state-university-stanislaus/3414/">California
               State University Stanislaus</Link></li>
@@ -289,7 +291,131 @@ Use university rankings to search for jobs in higher education.
               University of Maryland, Baltimore County</Link></li>
           </ul>
         </div>
-      </div>
+      </div> */}
+
+<div  className="content-grid mt-4">
+          <h2 id="section2" className="underline-full">
+            UNITED KINGDOM
+          </h2>
+
+          <div className="regions grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mb-16">
+            <ul>
+              <li>
+                <h3>England</h3>
+              </li>
+              <li>
+                <Link href="/employers/university-of-cambridge/12635/">
+                  University of Cambridge
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/university-of-oxford/3099/">
+                  University of Oxford
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/university-college-london/3135/">
+                  University College London
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/imperial-college-london/3129/">
+                  Imperial College London
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/london-school-of-economics-and-political-science/3153/">
+                  London School of Economics and Political Science
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/university-of-manchester/3833/">
+                  University of Manchester
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/university-of-birmingham/12614/">
+                  University of Birmingham
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/university-of-leeds/12797/">
+                  University of Leeds
+                </Link>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <h3>Scotland</h3>
+              </li>
+              <li>
+                <Link href="/employers/university-of-edinburgh/12681/">
+                  University of Edinburgh
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/university-of-glasgow/12713/">
+                  University of Glasgow
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/university-of-aberdeen/12555/">
+                  University of Aberdeen
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/university-of-st-andrews/13005/">
+                  University of St Andrews
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/university-of-dundee/12669/">
+                  University of Dundee
+                </Link>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <h3>Wales</h3>
+              </li>
+              <li>
+                <Link href="/employers/cardiff-university/6252/">
+                  Cardiff University
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/swansea-university/10538/">
+                  Swansea University
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/aberystwyth-university/13115/">
+                  Aberystwyth University
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/bangor-university/13116/">
+                  Bangor University
+                </Link>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <h3>Northern Ireland</h3>
+              </li>
+              <li>
+                <Link href="/employers/queens-university-belfast/10799/">
+                  Queen's University Belfast
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/ulster-university/13098/">
+                  Ulster University
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
    
           <section>
       <h3 className="container mx-auto text-center py-8 px-4 items-end">

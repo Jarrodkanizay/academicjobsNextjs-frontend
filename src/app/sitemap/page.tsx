@@ -1068,7 +1068,7 @@ export default function myPage() {
                 </Link>
               </li>
               <li className="pb-6">
-                <Link href="/employers/university-of-california-Rrverside/3268/">
+                <Link href="/employers/university-of-california-riverside/3268/">
                   University of California - Riverside
                 </Link>
               </li>
