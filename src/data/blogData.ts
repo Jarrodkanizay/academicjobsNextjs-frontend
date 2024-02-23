@@ -699,7 +699,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/plant-soil-jobs.jpg`,
     alt: `Plant Soil Science`,
     summary: `Delve into the fascinating realm of plant soil science, where the mysteries of soil composition and plant nutrition intertwine.`,
     tags: `agriculture, soil science, plant nutrition, agriculture research, plant biology`,
