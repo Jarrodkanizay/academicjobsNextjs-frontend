@@ -2,7 +2,7 @@ import { cityData } from '@/data/cityData';
 import { CityDataTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
 import { formatDate } from '@/utils/utilityScripts';
-import SearchResults from '@/components/SearchResults';
+import SearchResults1 from '@/components/SearchResults1';
 
 type Params = {
   slug: string;
@@ -101,7 +101,10 @@ export default function BlogPostPage({ params }: Props) {
           <p key={index}>{promoPara}</p>
         ))}
       </section>
-      <SearchResults q="" l={cityDetails.city} />
+      <SearchResults1
+        q={{ filter1: [{ category: 'City', filter: 'Boston' }], q: '', l: '' }}
+      />
+      {/* <SearchResults q="" l={cityDetails.city} /> */}
     </main>
   );
 }
