@@ -117,6 +117,10 @@ export default function BlogPostPage({ params }: Props) {
           </div>
         </div>
       </section>
+      <SearchResults1
+        q={{ filter1: [{ category: 'City', filter: 'Boston' }], q: '', l: '' }}
+      />
+      {/* <SearchResults q="" l={cityDetails.city} /> */}
     </main>
   );
 }
