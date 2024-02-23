@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { blogData } from '@/data/blogData';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -23,6 +24,12 @@ export default function BlogPosts() {
   //   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   //   return date.toLocaleDateString('en-US', options);
   // }
+
+  // TODO: Pagination code
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const postsPerPage = 12;
+  // const startIndex = (currentPage - 1) * postsPerPage;
+  // const endIndex = startIndex + postsPerPage;
 
   const showDates = false;
   const blogPath = '/career-help/';
@@ -124,6 +131,7 @@ export default function BlogPosts() {
             Academic Recruitment & Career Blog Posts
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            {/* TODO: {blogData.slice(startIndex, endIndex).map((post, index) => ( */}
             {blogData.slice(6).map((post, index) => (
               <article
                 key={index}
@@ -159,6 +167,12 @@ export default function BlogPosts() {
                 </div>
               </article>
             ))}
+            {/* TODO: <button onClick={() => setCurrentPage(currentPage - 1)}>
+              Previous
+            </button>
+            <button onClick={() => setCurrentPage(currentPage + 1)}>
+              Next
+            </button> */}
           </div>
         </>
       ) : (

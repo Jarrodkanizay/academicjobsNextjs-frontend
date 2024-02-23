@@ -1,4 +1,4 @@
-import { blogData } from '@/data/blogData';
+import { cityData } from '@/data/cityData';
 import { BlogPostTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
 import { formatDate } from '@/utils/utilityScripts';
@@ -12,7 +12,7 @@ type BlogPostPageProps = {
 };
 
 export async function generateMetadata({ params }: any) {
-  const blog = await blogData.find((post) => post.slug === params.slug);
+  const blog = await cityData.find((post) => post.slug === params.slug);
 
   if (!blog) {
     throw new Error(`No blog post found for slug: ${params.slug}`);
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: any) {
 }
 
 export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const post = blogData.find((post) => post.slug === params.slug);
+  const post = cityData.find((post) => post.slug === params.slug);
 
   if (!post) {
     return <div>Post not found</div>;
@@ -36,10 +36,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     <main className="blog-post content-grid">
       <HeroBanner
         h1={post.title || ''}
-        para1={post.summary || ''}
+        para1={post.description || ''}
         src={post.image_url || ''}
         alt={post.alt || ''}
         reorder={false}
+        externalLink={true}
       />
       <h3>By {post.author}</h3>
       {/* <p>
@@ -50,10 +51,6 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           </span>
         ) : null}
       </p> */}
-      <div
-        className={`text-2-cols mt-8 prose`}
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      />
     </main>
   );
 }
