@@ -16,3 +16,23 @@ export type BlogPostTypes = {
   };
   columns?: number | undefined;
 };
+
+export type CityDataTypes = {
+  cityInfo: {
+    title: string;
+    h1: string;
+    slug: string;
+    city: string;
+    description: string;
+    keywords: string;
+    cityInfo: string[];
+    uniList: string[];
+    nobelInfo: string[];
+    nobelList: string[];
+    academicInfo: string[];
+    academicList: string[];
+    promo: string[];
+    image_url: string;
+    alt: string;
+  };
+};

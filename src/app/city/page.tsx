@@ -19,6 +19,7 @@ export const metadata: Metadata = {
 
 export default function BlogPosts() {
   const cityPath = '/city/';
+  const topList = 6;
 
   return (
     <main className="content-grid">
@@ -40,11 +41,11 @@ export default function BlogPosts() {
         width={800}
         height={800}
       /> */}
-      ;<h2 className="underline-full mb-8"> Top Cities in Academia</h2>
+      <h2 className="underline-full mb-8">Top Cities for Higher Ed Jobs</h2>
       {cityData ? (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-            {cityData.slice(0, 6).map((post, index) => (
+            {cityData.slice(0, topList).map((post, index) => (
               <article
                 key={index}
                 className="card card-side bg-slate-100 shadow-xl"
@@ -52,7 +53,11 @@ export default function BlogPosts() {
                 <figure>
                   <Link href={cityPath + post.slug}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={post.image_url} alt={post.alt} />
+                    <img
+                      src={post.image_url}
+                      alt={post.alt}
+                      className="max-w-[260px] h-full object-cover"
+                    />
                   </Link>
                 </figure>
                 <div className="card-body max-w-96">
@@ -77,21 +82,6 @@ export default function BlogPosts() {
                     </Link>
                   </div>
                 </div>
-
-                {/* <div className="card-body">
-                  <p className="h-[130px] relative line-clamp-4 m-0">
-                    {post.summary}
-                    <div className="blog-gradient"> </div>
-                  </p>
-                  <div className="card-actions justify-end">
-                    <Link
-                      href={cityPath + post.slug}
-                      className="btn btn-aj btn-sm"
-                    >
-                      Read more
-                    </Link>
-                  </div>
-                </div> */}
               </article>
             ))}
           </div>
@@ -116,7 +106,7 @@ export default function BlogPosts() {
             ></iframe>
           </div> */}
 
-          {cityData.length > 2 ? (
+          {cityData.length > topList ? (
             <>
               <h2 className="underline-full mt-16 mb-8">
                 Explore Cities in Academia
@@ -125,18 +115,18 @@ export default function BlogPosts() {
           ) : null}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {cityData.slice(6).map((post, index) => (
+            {cityData.slice(topList).map((post, index) => (
               <article
                 key={index}
                 className="card bg-slate-100 shadow-xl image-full items-stretch"
               >
-                <figure>
+                <figure className="h-[240px]">
                   <Link href={cityPath + post.slug}>
-                    <a
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                       src={post.image_url}
                       alt={post.alt}
-                      width={800}
-                      height={800}
+                      className="h-full object-cover"
                     />
                   </Link>
                 </figure>

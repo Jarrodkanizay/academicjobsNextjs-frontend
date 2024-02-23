@@ -20,6 +20,7 @@ type HeroProps = {
   imgRight?: boolean; //Image on right side of text
   reorder?: boolean; //Reorder image and text on mobile
   externalLink?: boolean; //Use <img instead of <Image if linking to an image on some other site
+  imageShadow?: boolean; //Add shadow to image
 };
 
 const HeroBanner = ({
@@ -39,6 +40,7 @@ const HeroBanner = ({
   imgRight = true,
   reorder = true,
   externalLink = false,
+  imageShadow = true,
 }: HeroProps) => {
   // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [windowWidth, setWindowWidth] = useState(
@@ -76,7 +78,9 @@ const HeroBanner = ({
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={src}
-                  className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
+                  className={`lg:max-w-lg rounded-lg ${
+                    imageShadow ? 'shadow-2xl' : ''
+                  } mb-8 lg:mb-0`}
                   alt={alt}
                 />
               ) : (
@@ -84,7 +88,9 @@ const HeroBanner = ({
                   width={imgWidth}
                   height={imgHeight}
                   src={src}
-                  className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
+                  className={`lg:max-w-lg rounded-lg ${
+                    imageShadow ? 'shadow-2xl' : ''
+                  } mb-8 lg:mb-0`}
                   alt={alt}
                 />
               )}
