@@ -1325,43 +1325,6 @@ export const blogData = [
   {
     status: `published`,
     rank: 0,
-    title: `Mastering the Art of Broadcast Journalism: A Guide for Aspiring Journalists`,
-    slug: `broadcast-journalism-guide-aspiring-journalists`,
-    author: `Gabrielle Ryan`,
-    published_at: '2024-02-22',
-    updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
-    alt: `Broadcast Journalism`,
-    summary: `Discover the ins and outs of broadcast journalism and learn how to excel in this dynamic field.`,
-    tags: `broadcast journalism, journalism, media, news, communication`,
-    keywords: `broadcast journalism, journalism career, journalism skills, news reporting, media industry, communication skills`,
-    content: `<article class="blog-content">
-      <h2>The Exciting World of Broadcast Journalism</h2>
-      <p>Are you captivated by breaking news stories, intrigued by investigative journalism, and drawn to the thrill of live reporting? If so, broadcast journalism might be the perfect career path for you.</p>
-      <h2>What is Broadcast Journalism?</h2>
-      <p>Broadcast journalism involves the reporting and dissemination of news and information through television, radio, and online platforms. It encompasses a wide range of formats, including live broadcasts, recorded segments, interviews, and documentaries.</p>
-      <h2>Why Choose Broadcast Journalism?</h2>
-      <p>Broadcast journalism offers a unique opportunity to engage with audiences in real-time and make a meaningful impact through storytelling. Whether you're covering local events, national politics, or global issues, broadcast journalism allows you to bring important stories to life and connect with viewers on a personal level.</p>
-      <h2>Key Skills for Aspiring Broadcast Journalists</h2>
-      <ul>
-        <li>Strong communication skills</li>
-        <li>Ability to work under pressure and meet tight deadlines</li>
-        <li>Excellent research and interviewing skills</li>
-        <li>Proficiency in video and audio editing software</li>
-        <li>Adaptability and flexibility in a fast-paced environment</li>
-      </ul>
-      <h2>Getting Started in Broadcast Journalism</h2>
-      <p>If you're interested in pursuing a career in broadcast journalism, consider gaining hands-on experience through internships, campus media outlets, and community radio or television stations. Building a diverse portfolio of work and networking with industry professionals can also enhance your prospects in this competitive field.</p>
-      <h2>Exploring Career Opportunities</h2>
-      <p>From news anchors and reporters to producers and multimedia journalists, broadcast journalism offers a variety of career paths to explore. Whether you're passionate about sports, politics, entertainment, or investigative reporting, there's a niche for every interest.</p>
-      <h2>Start Your Journey in Broadcast Journalism</h2>
-      <p>Embark on a rewarding career in broadcast journalism and become a voice for the voiceless, a storyteller for the masses, and a catalyst for change. With dedication, perseverance, and a commitment to truth and integrity, you can make your mark in the dynamic world of broadcast journalism.</p>
-    </article>`,
-  },
-
-  {
-    status: `published`,
-    rank: 0,
     title: `Unraveling the Art of Journalism: A Guide to Navigating the Speciality`,
     slug: `unraveling-journalism-specialty-guide`,
     author: `Gabrielle Ryan`,
@@ -1563,40 +1526,6 @@ export const blogData = [
       </article>
     `,
   },
-
-  {
-    status: `published`,
-    rank: 0,
-    title: `Exploring the Diverse World of Other Communications Specialties`,
-    slug: `exploring-diverse-communications-specialties`,
-    author: `Gabrielle Ryan`,
-    published_at: '2024-02-22',
-    updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
-    alt: `Communications Specialties`,
-    summary: `Discover the intriguing facets of other communications specialties, offering insights and opportunities for academics and recruiters alike.`,
-    tags: `communications, specialties, academics, recruiters, career opportunities`,
-    keywords: `communications specialties, academic careers, recruiters, career opportunities, academic lecturers`,
-    content: `<article class="blog-content">
-      <h2>Exploring Other Communications Specialties</h2>
-      <p>Whether you're an academic researcher, a guest lecturer, or a recruiter, the realm of communications specialties extends far beyond the realms of journalism and public relations. In this post, we delve into the diverse landscape of other communications specialties, offering insights and opportunities for individuals in various professional roles.</p>
-  
-      <h2>Understanding Other Communications Specialties</h2>
-      <p>From technical writing to corporate communications, other communications specialties encompass a wide array of disciplines. These fields often require a unique set of skills, including strong writing abilities, strategic thinking, and effective interpersonal communication.</p>
-  
-      <h2>Exploring Career Opportunities</h2>
-      <p>For academics, exploring other communications specialties can open doors to diverse career opportunities. Whether you're interested in pursuing a career in technical writing, content strategy, or digital marketing, acquiring specialized skills in these areas can enhance your professional prospects.</p>
-      <p>Extracurricular work and internships can also provide valuable hands-on experience in other communications specialties, allowing academics to apply their expertise in real-world settings.</p>
-      <p>Earning extra income as a freelance writer or consultant in specialized communication fields is another avenue worth exploring for academics seeking to diversify their income streams.</p>
-  
-      <h2>For Recruiters: Quick Job Post Technology</h2>
-      <p>Recruiters seeking to fill positions in communications specialties can leverage Quick Job Post Technology to streamline the hiring process. This innovative tool allows recruiters to quickly post job openings and connect with qualified candidates in the field of communications. Learn more about Quick Job Post Technology <a href="https://www.academicjobs.com/quick-job-post-technology">here</a>.</p>
-  
-      <h2>Final Thoughts</h2>
-      <p>As the world of communications continues to evolve, exploring other communications specialties can offer exciting opportunities for academics and recruiters alike. Whether you're seeking to expand your skill set or fill positions within your organization, embracing the diversity of communications specialties is key to staying ahead in today's competitive landscape.</p>
-    </article>`,
-  },
-
   {
     status: `published`,
     rank: 0,
