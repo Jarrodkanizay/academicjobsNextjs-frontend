@@ -60,7 +60,6 @@ export default function BlogPostPage({ params }: Props) {
           {cityDetails.cityInfo.map((cityPara, index) => (
             <p key={index}>{cityPara}</p>
           ))}
-
           {cityDetails.uniList.length > 0 && (
             <>
               <ul>
@@ -70,32 +69,41 @@ export default function BlogPostPage({ params }: Props) {
               </ul>
             </>
           )}
-
-          <h3>Nobel Laureates from {cityDetails.city}</h3>
-          {cityDetails.nobelInfo.map((nobelPara, index) => (
-            <p key={index}>{nobelPara}</p>
-          ))}
-
-          {cityDetails.uniList.length > 0 && (
+          {cityDetails.nobelList.length > 0 && (
             <>
-              <ul>
-                {cityDetails.nobelList.map((laureate, index) => (
-                  <li key={index}>{laureate}</li>
-                ))}
-              </ul>
+              <h3>Nobel Laureates from {cityDetails.city}</h3>
+              {cityDetails.nobelInfo.map((nobelPara, index) => (
+                <p key={index}>{nobelPara}</p>
+              ))}
+
+              {cityDetails.uniList.length > 0 && (
+                <>
+                  <ul>
+                    {cityDetails.nobelList.map((laureate, index) => (
+                      <li key={index}>
+                        <strong>{laureate.split(': ')[0]}</strong>
+                        <br />
+                        {laureate.split(': ')[1]}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
             </>
           )}
-
           <h3>Notable Academics Practicing in {cityDetails.city}</h3>
           {cityDetails.academicInfo.map((academicPara, index) => (
             <p key={index}>{academicPara}</p>
           ))}
-
           {cityDetails.academicList.length > 0 && (
             <>
               <ul>
                 {cityDetails.academicList.map((academic, index) => (
-                  <li key={index}>{academic}</li>
+                  <li key={index}>
+                    <strong>{academic.split(': ')[0]}</strong>
+                    <br />
+                    {academic.split(': ')[1]}
+                  </li>
                 ))}
               </ul>
             </>
