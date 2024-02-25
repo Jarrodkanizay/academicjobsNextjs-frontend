@@ -1732,4 +1732,148 @@ export const cityData = [
     image_url: '/cities/cities-of-the-world-for-academics.jpg',
     alt: "Aerial view of Kuala Lumpur's skyline, highlighting the city's modern educational institutions amidst its cultural landmarks, symbolizing a blend of tradition and modernity in education",
   },
+  {
+    title: "Vienna's Academic Heritage: A Beacon of Knowledge and Culture",
+    h1: 'Discover the Rich Educational Landscape of Vienna, Austria',
+    slug: 'educational-vienna',
+    city: 'Vienna',
+    region: 'Vienna',
+    country: 'Austria',
+    description:
+      'Vienna, Austria, stands as a historic center of academic excellence, with its world-renowned universities and colleges shaping the global academic sphere.',
+    keywords:
+      'Vienna universities, higher education in Vienna, study in Vienna, Vienna academic opportunities, colleges in Vienna',
+
+    cityInfo: [
+      "Vienna's academic scene is marked by its historic universities like the University of Vienna, offering a diverse range of programs that cater to students from around the globe.",
+      'This city combines rich cultural heritage with cutting-edge research facilities, making it a unique place for academic and personal growth.',
+    ],
+    uniList: [
+      'University of Vienna',
+      'Vienna University of Technology',
+      'Medical University of Vienna',
+      'University of Natural Resources and Life Sciences, Vienna',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [
+      'Vienna is not only a hub for students but also for academics and researchers, fostering innovation and discovery across disciplines.',
+      'Its institutions are known for significant contributions in various fields, supported by a robust network of research facilities and academic communities.',
+    ],
+    academicList: [],
+    promo: [
+      'Choosing Vienna for education means immersing in a city that values history, arts, and sciences equally, providing a holistic educational experience.',
+      'Professionals and academics find Vienna a vibrant city for collaboration, with numerous conferences, seminars, and workshops happening throughout the year.',
+    ],
+    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    alt: "The historic architecture of Vienna's universities set against the city's skyline, symbolizing the blend of traditional and modern educational values",
+  },
+  {
+    title: 'Exploring the Academic Excellence of Brussels, Belgium',
+    h1: 'Unveiling the Educational Gems of Brussels',
+    slug: 'academic-brussels',
+    city: 'Brussels',
+    region: 'Brussels Capital Region',
+    country: 'Belgium',
+    description:
+      'Brussels, Belgium, is not just the political heart of Europe but also a thriving center for higher education, boasting an array of prestigious universities and colleges.',
+    keywords:
+      'Brussels universities, higher education in Brussels, study in Brussels, Brussels academic institutions, Brussels colleges',
+
+    cityInfo: [
+      'Brussels is home to world-class institutions like the Université Libre de Bruxelles and Vrije Universiteit Brussel, offering a wide range of programs in multiple languages.',
+      "The city's educational landscape is enriched by international partnerships, fostering a vibrant academic community that attracts students and scholars from across the globe.",
+    ],
+    uniList: [
+      'Université Libre de Bruxelles (ULB)',
+      'Vrije Universiteit Brussel (VUB)',
+      'Brussels School of International Studies',
+      'Royal Conservatory of Brussels',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [
+      "Brussels' academic institutions are at the forefront of research and innovation, with faculties and alumni contributing significantly to fields ranging from political science to biomedical research.",
+      "The city's commitment to academic excellence is evident in its support for cutting-edge research facilities and initiatives that drive forward global knowledge.",
+    ],
+    academicList: [],
+    promo: [
+      'Studying in Brussels offers the unique opportunity to engage in a multicultural academic environment, where education goes hand in hand with personal growth and development.',
+      "For professionals seeking employment, Brussels' universities provide a dynamic workplace culture, with ample opportunities for research, collaboration, and career advancement in the heart of Europe.",
+    ],
+    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    alt: "The iconic Atomium structure against Brussels' skyline, symbolizing the city's blend of historical richness and modern academic advancements",
+  },
+  {
+    title: 'Exploring the Academic Landscape of Taipei, Taiwan',
+    h1: "Discovering Taipei's Universities and Colleges",
+    slug: 'academic-taipei',
+    city: 'Taipei',
+    region: 'Taipei City',
+    country: 'Taiwan',
+    description:
+      'Taipei, the vibrant capital of Taiwan, is renowned for its distinguished universities and colleges, offering diverse and high-quality educational opportunities.',
+    keywords:
+      'Taipei universities, higher education in Taipei, study in Taipei, Taipei academic institutions, Taipei colleges',
+
+    cityInfo: [
+      "Taipei boasts prestigious institutions like National Taiwan University and Taipei Medical University, reflecting the city's commitment to academic excellence and innovation.",
+      'These universities offer a broad spectrum of programs, making Taipei a hub for students and researchers from around the world.',
+    ],
+    uniList: [
+      'National Taiwan University (NTU)',
+      'Taipei Medical University (TMU)',
+      'National Taiwan Normal University (NTNU)',
+      'National Taipei University of Technology (Taipei Tech)',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [
+      "Taipei's academic community is recognized for its contributions to science, technology, and humanities, with many faculty members and alumni achieving international acclaim.",
+      "The city's universities are at the forefront of research in areas such as semiconductor technology and public health, contributing significantly to global knowledge.",
+    ],
+    academicList: [],
+    promo: [
+      "Studying in Taipei offers an immersive educational experience, combining rigorous academics with opportunities to explore Taiwan's rich culture and history.",
+      "For those seeking employment, Taipei's universities provide a dynamic and innovative environment for research, teaching, and professional development in various disciplines.",
+    ],
+    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    alt: "The bustling streets of Taipei with the iconic Taipei 101 in the background, symbolizing the city's modern educational facilities and rich cultural heritage",
+  },
+  {
+    title: 'Exploring the Academic Excellence of Milan, Italy',
+    h1: 'Universities and Colleges in Milan',
+    slug: 'universities-colleges-milan',
+    city: 'Milan',
+    region: 'Lombardy',
+    country: 'Italy',
+    description:
+      "Milan, Italy's global fashion and design capital, also shines as a center for higher education, boasting prestigious universities with strong international ties and innovative research.",
+    keywords:
+      'Milan universities, Milan colleges, higher education Milan, study in Milan, Milan academic institutions',
+
+    cityInfo: [
+      'Milan is home to renowned institutions such as the University of Milan and Politecnico di Milano, which offer diverse programs across the arts, sciences, and technology.',
+      "These universities not only contribute to Milan's vibrant academic landscape but also attract students and scholars from across the globe.",
+    ],
+    uniList: [
+      'University of Milan',
+      'Politecnico di Milano',
+      'Bocconi University',
+      'Università Cattolica del Sacro Cuore',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [
+      "Milan's academic community is celebrated for its contributions to research and innovation, with faculty and alumni making notable advancements in fields such as economics, engineering, and fashion design.",
+      "The city's institutions foster a culture of excellence and creativity, contributing significantly to Italy's reputation in the global academic arena.",
+    ],
+    academicList: [],
+    promo: [
+      'Choosing to study in Milan means immersing yourself in an environment that blends historical richness with modern innovation, offering unparalleled educational and personal development opportunities.',
+      "For professionals, Milan's universities offer a dynamic atmosphere for teaching, research, and collaboration, situated in one of the world's most culturally and commercially vibrant cities.",
+    ],
+    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    alt: "A panoramic view of Milan, showcasing its iconic skyline with the Duomo di Milano, symbolizing the city's rich academic heritage and modern educational facilities",
+  },
 ];
