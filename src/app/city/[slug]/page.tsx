@@ -69,7 +69,7 @@ export default function BlogPostPage({ params }: Props) {
               </ul>
             </>
           )}
-          {cityDetails.nobelList.length > 0 && (
+          {cityDetails.nobelList.length > 0 && cityDetails.nobelInfo > 0 && (
             <>
               <h3>Nobel Laureates from {cityDetails.city}</h3>
               {cityDetails.nobelInfo.map((nobelPara, index) => (
