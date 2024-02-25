@@ -73,9 +73,13 @@ export default function BlogPostPage({ params }: Props) {
             cityDetails.nobelInfo.length > 0 && (
               <>
                 <h3>Nobel Laureates from {cityDetails.city}</h3>
-                {cityDetails.nobelInfo.map((nobelPara, index) => (
-                  <p key={index}>{nobelPara}</p>
-                ))}
+                {Array.isArray(cityDetails.nobelInfo) ? (
+                  cityDetails.nobelInfo.map((nobelPara, index) => (
+                    <p key={index}>{nobelPara}</p>
+                  ))
+                ) : (
+                  <p>{cityDetails.nobelInfo}</p>
+                )}
 
                 {cityDetails.uniList.length > 0 && (
                   <>
