@@ -27,7 +27,7 @@ const PaginationControls: FC<PaginationControlProps> = ({
 
   return (
     <div className="join mx-auto">
-      <a
+      <button
         className="join-item btn"
         disabled={!hasPrevPage}
         onClick={() => {
@@ -39,11 +39,11 @@ const PaginationControls: FC<PaginationControlProps> = ({
         }}
       >
         «
-      </a>
-      <a className="join-item btn">
+      </button>
+      <button className="join-item btn">
         Page {page} of {Math.ceil(itemCount / Number(per_page))}
-      </a>
-      <a
+      </button>
+      <button
         className="join-item btn"
         disabled={!hasNextPage}
         onClick={() => {
@@ -55,7 +55,7 @@ const PaginationControls: FC<PaginationControlProps> = ({
         }}
       >
         »
-      </a>
+      </button>
     </div>
   );
 };
