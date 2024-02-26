@@ -3,50 +3,59 @@
 import { FC } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
-interface PaginationControlsProps {
+type PaginationControlProps = {
   hasNextPage: boolean;
   hasPrevPage: boolean;
-}
+  pagePath: string;
+  itemCount: number;
+  limitPerPage?: number;
+};
 
-const PaginationControls: FC<PaginationControlsProps> = ({
+const PaginationControls: FC<PaginationControlProps> = ({
   hasNextPage,
   hasPrevPage,
+  pagePath = '/',
+  itemCount,
+  limitPerPage = 5,
 }) => {
   const router = useRouter();
   const searchParams = useSearchParams();
 
   const page = searchParams.get('page') ?? '1';
-  const per_page = searchParams.get('per_page') ?? '5';
+  //   const per_page = searchParams.get('per_page') ?? limitPerPage.toString();
+  const per_page = limitPerPage.toString();
 
   return (
-    <div className="flex gap-2">
-      <button
-        className="bg-blue-500 text-white p-1"
+    <div className="join mx-auto">
+      <a
+        className="join-item btn"
         disabled={!hasPrevPage}
         onClick={() => {
           router.push(
-            `/pagination/?page=${Number(page) - 1}&per_page=${per_page}`
+            `${pagePath}?page=${
+              Number(page) - 1
+            }&per_page=${per_page}#pagination`
           );
         }}
       >
-        prev page
-      </button>
-
-      <div>
-        {page} / {Math.ceil(10 / Number(per_page))}
-      </div>
-
-      <button
-        className="bg-blue-500 text-white p-1"
+        «
+      </a>
+      <a className="join-item btn">
+        Page {page} of {Math.ceil(itemCount / Number(per_page))}
+      </a>
+      <a
+        className="join-item btn"
         disabled={!hasNextPage}
         onClick={() => {
           router.push(
-            `/pagination/?page=${Number(page) + 1}&per_page=${per_page}`
+            `${pagePath}?page=${
+              Number(page) + 1
+            }&per_page=${per_page}#pagination`
           );
         }}
       >
-        next page
-      </button>
+        »
+      </a>
     </div>
   );
 };

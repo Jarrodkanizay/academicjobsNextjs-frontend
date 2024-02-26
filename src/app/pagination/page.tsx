@@ -14,6 +14,26 @@ const data = [
   'entry 8',
   'entry 9',
   'entry 10',
+  'entry 11',
+  'entry 12',
+  'entry 13',
+  'entry 14',
+  'entry 15',
+  'entry 16',
+  'entry 17',
+  'entry 18',
+  'entry 19',
+  'entry 20',
+  'entry 21',
+  'entry 22',
+  'entry 23',
+  'entry 24',
+  'entry 25',
+  'entry 26',
+  'entry 27',
+  'entry 28',
+  'entry 29',
+  'entry 30',
 ];
 
 export default function Home({
@@ -21,8 +41,9 @@ export default function Home({
 }: {
   searchParams: { [key: string]: string | string[] | undefined };
 }) {
+  const limitPerPage = 12;
   const page = searchParams['page'] ?? '1';
-  const per_page = searchParams['per_page'] ?? '5';
+  const per_page = 15;
 
   // mocked, skipped and limited in the real app
   const start = (Number(page) - 1) * Number(per_page); // 0, 5, 10 ...
@@ -39,6 +60,9 @@ export default function Home({
       <PaginationControls
         hasNextPage={end < data.length}
         hasPrevPage={start > 0}
+        pagePath="/pagination/"
+        itemCount={data.length}
+        limitPerPage={per_page}
       />
     </div>
   );

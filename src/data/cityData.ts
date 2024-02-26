@@ -2283,4 +2283,43 @@ export const cityData = [
     image_url: '/cities/cities-of-the-world-for-academics.jpg',
     alt: "The iconic skyline of Bangkok, reflecting the city's modernity and rich cultural heritage, symbolizing its role as an educational and cultural hub in Southeast Asia.",
   },
+  {
+    title: 'New Delhi, India: A Nexus of Academic Excellence and Heritage',
+    h1: 'Exploring the Academic Landscape of New Delhi',
+    slug: 'universities-colleges-new-delhi',
+    city: 'New Delhi',
+    region: 'National Capital Territory of Delhi',
+    country: 'India',
+    description:
+      'New Delhi, the heart of India, is distinguished by its prestigious universities and rich cultural backdrop, offering a unique blend of educational rigor and heritage.',
+    keywords:
+      'New Delhi universities, New Delhi colleges, study in New Delhi, New Delhi education, higher education New Delhi, academic institutions New Delhi',
+
+    cityInfo: [
+      "New Delhi's educational scene is vibrant, home to renowned institutions like the University of Delhi and Jawaharlal Nehru University, known for their academic excellence and groundbreaking research.",
+      "These universities offer a plethora of courses across disciplines, fostering an environment of learning that is both diverse and inclusive, reflecting the city's cosmopolitan ethos.",
+    ],
+    uniList: [
+      'University of Delhi',
+      'Jawaharlal Nehru University',
+      'Jamia Millia Islamia',
+      'Indian Institute of Technology Delhi',
+    ],
+    nobelInfo: [
+      "While New Delhi itself may not directly be associated with Nobel Laureates, the city's institutions have significantly contributed to fields recognized by the Nobel Committee, supporting scholars and researchers in their pursuit of excellence.",
+      'The academic environment in New Delhi encourages innovation and critical thinking, laying a foundation that may well support future Nobel Laureates.',
+    ],
+    nobelList: [],
+    academicInfo: [
+      'New Delhi boasts a cadre of distinguished academics and scholars, with contributions spanning various fields including sciences, humanities, and arts, thus enriching the academic tapestry of the city.',
+      "Their work not only advances knowledge but also inspires a new generation of thinkers and innovators, securing New Delhi's place on the global academic map.",
+    ],
+    academicList: [],
+    promo: [
+      'Choosing New Delhi for education means immersing oneself in a city of vibrant history and academic fervor, offering students a unique opportunity to grow both intellectually and personally.',
+      "For professionals, the city's universities are beacons of research and development, providing unparalleled opportunities for career advancement in a city that thrives on innovation and cultural richness.",
+    ],
+    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    alt: "The panoramic view of New Delhi, showcasing its iconic landmarks intertwined with modern academic institutions, symbolizing the city's blend of tradition and educational excellence.",
+  },
 ];
