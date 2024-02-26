@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroBanner from '@/components/HeroBanner';
+import Australia from '@/components/topUnis/Australia';
 
 
 export const metadata = {
@@ -142,7 +143,7 @@ Use university rankings to search for jobs in higher education.
             </div>
           </div>
        
-              <div className="bg-gradient-to-b to-white from-orange-100 m-8 rounded-3xl  max-w-screen-xl mx-auto">
+              {/* <div className="bg-gradient-to-b to-white from-orange-100 m-8 rounded-3xl  max-w-screen-xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mt-4 mb-16">
 
                   <ul>
@@ -273,8 +274,10 @@ Use university rankings to search for jobs in higher education.
                     </li>
                   </ul>
                 </div>
-              </div>
-       
+              </div> */}
+<div className="content-grid">
+<Australia id="section1"  />
+</div>
               <section>
           <h3 className="container mx-auto text-center py-8 px-4 items-end">
          {" "}
