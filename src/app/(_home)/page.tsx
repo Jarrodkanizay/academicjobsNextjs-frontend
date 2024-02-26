@@ -98,7 +98,7 @@ export default async function myPage() {
 
           <AusUniLogos />
         </>
-      )}p
+      )}
 
       {/* Hero Panel */}
       {/* <div
