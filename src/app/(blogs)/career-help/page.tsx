@@ -5,6 +5,7 @@ import Link from 'next/link';
 // import { BlogPostTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
 import { formatDate } from '@/utils/utilityScripts';
+import PaginationControls from '@/components/PaginationControls';
 
 import type { Metadata } from 'next';
 
@@ -18,23 +19,32 @@ export const metadata: Metadata = {
   keywords: 'About Academicjobs, About Academic Jobs, Academicjobs About',
 };
 
-export default function BlogPosts() {
+export default function BlogPosts({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined };
+}) {
   // function formatDate(input: string) {
   //   const date = new Date(input);
   //   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   //   return date.toLocaleDateString('en-US', options);
   // }
 
-  // TODO: Pagination code
-  // const [currentPage, setCurrentPage] = useState(1);
-  // const postsPerPage = 12;
-  // const startIndex = (currentPage - 1) * postsPerPage;
-  // const endIndex = startIndex + postsPerPage;
-
+  const topBlogsCount = 6;
   const showDates = false;
   const blogPath = '/career-help/';
 
-  console.log(blogData);
+  // console.log(blogData);
+
+  const page = searchParams['page'] ?? '1';
+  const per_page = 12;
+
+  // Pagination setting
+  const offset = page === '1' ? topBlogsCount : 0;
+  const start = (Number(page) - 1) * Number(per_page) + offset; // 5, 12, 24 ...
+  const end = start + Number(per_page);
+  const entries = blogData.slice(start, end);
+
   return (
     <main className="content-grid">
       <HeroBanner
@@ -53,7 +63,7 @@ export default function BlogPosts() {
       {blogData ? (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {blogData.slice(0, 6).map((post, index) => (
+            {blogData.slice(0, topBlogsCount).map((post, index) => (
               <article key={index} className="card bg-slate-100 shadow-xl">
                 <figure>
                   <Link href={blogPath + post.slug}>
@@ -127,17 +137,22 @@ export default function BlogPosts() {
             ></iframe>
           </div>
 
-          <h2 className="underline-full mt-16 mb-8">
+          <h2 id="pagination" className="underline-full mt-16 mb-8">
             Academic Recruitment & Career Blog Posts
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-8">
             {/* TODO: {blogData.slice(startIndex, endIndex).map((post, index) => ( */}
-            {blogData.slice(6).map((post, index) => (
+            {entries.map((post, index) => (
               <article
                 key={index}
-                className="card bg-slate-100 shadow-xl image-full items-stretch"
+                className="card bg-slate-100 shadow-xl image-full items-stretch relative"
+                style={{
+                  backgroundImage: `url(${post.image_url})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
               >
-                <figure>
+                <figure className="aspect-w-16 aspect-h-9">
                   <Link href={blogPath + post.slug}>
                     <Image
                       src={post.image_url}
@@ -167,6 +182,7 @@ export default function BlogPosts() {
                 </div>
               </article>
             ))}
+
             {/* TODO: <button onClick={() => setCurrentPage(currentPage - 1)}>
               Previous
             </button>
@@ -174,6 +190,13 @@ export default function BlogPosts() {
               Next
             </button> */}
           </div>
+          <PaginationControls
+            hasNextPage={end < blogData.length}
+            hasPrevPage={start > topBlogsCount}
+            pagePath="/career-help/"
+            itemCount={blogData.length}
+            limitPerPage={per_page}
+          />
         </>
       ) : (
         <div>Something went wrong loading the Blogs.</div>

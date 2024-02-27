@@ -8,13 +8,15 @@ import { formatDate } from '@/utils/utilityScripts';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Helpful Career Advice, Blogs and Collaboration Tools', //Option 1 replaces the %s in layout.tsx
+  title:
+    'Helpful Advice on the Best Cities to study and work at as an academic', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: 'Helpful Career Advice, Blogs and Collaboration Tools', //Option 2 overrides the title in layout.tsx
   // },
   description:
-    'Unlock your academic career potential with our expertly curated career advice, insightful blogs, and innovative collaboration tools. Dive into a world of opportunities and guidance tailored for academics seeking to advance their careers. Explore now and take the next step in your academic journey!',
-  keywords: 'About Academicjobs, About Academic Jobs, Academicjobs About',
+    'Unlock your academic career potential with our expertly curated list of city data, insightful information about all the best cities to work and study at!',
+  keywords:
+    'academic career opportunities, best cities for education and work, expert guide to academic cities, top cities for students and professionals, study and work destinations guide, unlock academic potential, curated list of educational cities, global academic city rankings, career advancement in top academic cities, insightful academic city reviews, comprehensive guide to studying abroad, best places for academic growth, international education city guide, academic city comparison, where to study and work globally, exploring academic opportunities worldwide, choosing the right city for your studies, expert recommendations for academic cities, navigating your academic career globally, ultimate guide to global study locations',
 };
 
 export default function BlogPosts() {

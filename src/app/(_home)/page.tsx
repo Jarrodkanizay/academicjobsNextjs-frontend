@@ -38,12 +38,16 @@ export default async function myPage() {
         <div className="w-full md:w-3/6 h-[6vh] flex flex-col items-top mt-[-1rem]">
           <JobSearchBoxHome />
         </div>
+
       </div>
 
       <JobCategoryAndLocationLinks />
       {/* Set this to false to show uni logo and welcome to message */}
       {contentRegion === 'USA' ? (
         <>
+
+
+        
           <div className="mb-16">
             <a href="/jobelephant-recruitment">
               <Image
@@ -55,6 +59,10 @@ export default async function myPage() {
               />
             </a>
           </div>
+
+
+
+
           <AmericaUniLogos />
 
           {/* <a
@@ -66,6 +74,31 @@ export default async function myPage() {
         </>
       ) : (
         <>
+
+<div  className="md:flex gap-4 mt-4"> 
+<article className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold" data-id="59973">
+  <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">Featured</div>
+  <div className="flex items-center mb-2"><div className="w-20 h-20 mr-4"><a href="/employers/university-of-canberra/3821">
+    <img alt="University of Canberra"  width="100" height="100"  className="w-full h-full object-contain rounded-lg" src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2Funiversity-of-canberra-logo-6C82AE8F2B-seeklogo.com.png&amp;w=256&amp;q=75">
+      </img>
+      </a></div><a className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer" href="/jobs/clinical-chair-of-nursing/88066">Clinical Chair of Nursing</a></div>
+      <div className="flex justify-between items-center"><div className="text-sm text-gray-600">
+        <div className="mb-1">University of Canberra</div>
+        <div className="text-gray-700 font-light text-sm">Bruce ACT 2617, Australia</div></div>
+        <div className="applications-close border-2 rounded px-2 mt-1 ml-2"><p className="text-center text-gray-400 text-sm mb-0">Closes</p><div className="text-sm"><time>Mar 11, 2024</time></div></div></div></article>
+        
+        <article className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold" data-id="59973"><div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">Featured</div><div className="flex items-center mb-2"><div className="w-20 h-20 mr-4"><a href="/employers/university-of-canberra/3821"><img alt="University of Canberra"  width="100" height="100"  className="w-full h-full object-contain rounded-lg" src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2Funiversity-of-canberra-logo-6C82AE8F2B-seeklogo.com.png&amp;w=256&amp;q=75"></img></a></div><a className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer" href="/jobs/associate-professor-in-medical-imaging/88073">Associate Professor in Medical Imaging</a></div><div className="flex justify-between items-center"><div className="text-sm text-gray-600"><div className="mb-1">University of Canberra</div><div className="text-gray-700 font-light text-sm">Bruce ACT 2617, Australia</div></div><div className="applications-close border-2 rounded px-2 mt-1 ml-2"><p className="text-center text-gray-400 text-sm mb-0">Closes</p><div className="text-sm"><time>Mar 4, 2024</time></div></div></div></article>
+</div>
+
+<div  className="md:flex gap-4"> 
+
+        
+<article className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold" data-id="59973"><div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">Featured</div><div className="flex items-center mb-2"><div className="w-20 h-20 mr-4"><a href="/employers/bond-university/3785"><img alt="Bond University"  width="100" height="100"  src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FBondTwitterIcon_400x400.jpg&amp;w=256&amp;q=75" ></img></a></div><a className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer" href="/jobs/professor-associate-professor-implementation-science-and-healthcare-innovations/87939">Professor/Associate Professor, Implementation Science and Healthcare Innovations</a></div><div className="flex justify-between items-center"><div className="text-sm text-gray-600"><div className="mb-1">Bond University</div><div className="text-gray-700 font-light text-sm">Robina Gold Coast, QLD</div></div><div className="applications-close border-2 rounded px-2 mt-1 ml-2"><p className="text-center text-gray-400 text-sm mb-0">Closes</p><div className="text-sm"><time>Mar 24, 2024</time></div></div></div></article>
+
+<article className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold" data-id="59973"><div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">Featured</div><div className="flex items-center mb-2"><div className="w-20 h-20 mr-4"><a href="/employers/queensland-university-of-technology-qut-/3786"><img alt="Queensland University of Technology (QUT)"  width="100" height="100"  className="w-full h-full object-contain rounded-lg" src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FQueensland-Univ-Tech-Logo.jpg&amp;w=256&amp;q=75" ></img> </a></div><a className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer" href="/jobs/professor-in-artificial-intelligence/90020">Professor in Artificial Intelligence</a></div><div className="flex justify-between items-center"><div className="text-sm text-gray-600"><div className="mb-1">Queensland University of Technology (QUT)</div><div className="text-gray-700 font-light text-sm">Brisbane QLD, Australia</div></div><div className="applications-close border-2 rounded px-2 mt-1 ml-2"><p className="text-center text-gray-400 text-sm mb-0">Closes</p><div className="text-sm"><time>Apr 1, 2024</time></div></div></div></article>
+
+</div>
+
           <AusUniLogos />
         </>
       )}
