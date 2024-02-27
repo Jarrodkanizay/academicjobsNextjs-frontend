@@ -25,8 +25,19 @@ const PaginationControls: FC<PaginationControlProps> = ({
   //   const per_page = searchParams.get('per_page') ?? limitPerPage.toString();
   const per_page = limitPerPage.toString();
 
+  const totalPages = Math.ceil(itemCount / limitPerPage);
+
   return (
     <div className="join mx-auto">
+      <button
+        disabled={!hasPrevPage}
+        className="join-item btn"
+        onClick={() => {
+          router.push(`${pagePath}?page=1&per_page=${per_page}#pagination`);
+        }}
+      >
+        «
+      </button>
       <button
         className="join-item btn"
         disabled={!hasPrevPage}
@@ -38,7 +49,7 @@ const PaginationControls: FC<PaginationControlProps> = ({
           );
         }}
       >
-        «
+        &lsaquo;
       </button>
       <button className="join-item btn">
         Page {page} of {Math.ceil(itemCount / Number(per_page))}
@@ -54,8 +65,19 @@ const PaginationControls: FC<PaginationControlProps> = ({
           );
         }}
       >
-        »
+        &rsaquo;
       </button>
+      <button
+        className="join-item btn"
+        disabled={!hasNextPage}
+        onClick={() => {
+          router.push(
+            `${pagePath}?page=${totalPages}&per_page=${per_page}#pagination`
+          );
+        }}
+      >
+        »
+      </button>{' '}
     </div>
   );
 };
