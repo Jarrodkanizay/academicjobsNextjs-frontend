@@ -460,11 +460,11 @@ const nextConfig = {
       //   destination: '/usa',
       //   permanent: true,
       // },
-      // {
-      //   source: '/Asia',
-      //   destination: '/asia',
-      //   permanent: true,
-      // },
+      {
+        source: '/Asia',
+        destination: '/asia',
+        permanent: true,
+      },
          {
         source: '/employers/academic-jobs-australia/3328',
         destination: '/australia',
