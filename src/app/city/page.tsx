@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HeroBanner from '@/components/HeroBanner';
 import { formatDate } from '@/utils/utilityScripts';
+import PaginationControls from '@/components/PaginationControls';
+
 // import CityLogo from '@/components/CityLogo';
 
 import type { Metadata } from 'next';
@@ -19,9 +21,22 @@ export const metadata: Metadata = {
     'academic career opportunities, best cities for education and work, expert guide to academic cities, top cities for students and professionals, study and work destinations guide, unlock academic potential, curated list of educational cities, global academic city rankings, career advancement in top academic cities, insightful academic city reviews, comprehensive guide to studying abroad, best places for academic growth, international education city guide, academic city comparison, where to study and work globally, exploring academic opportunities worldwide, choosing the right city for your studies, expert recommendations for academic cities, navigating your academic career globally, ultimate guide to global study locations',
 };
 
-export default function BlogPosts() {
-  const cityPath = '/city/';
-  const topList = 6;
+export default function CityInfo({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined };
+}) {
+  const routeName = 'city';
+  const routePath = `/${routeName}/`;
+  const topListCount = 6; // Number of items to show in the top list
+
+  // Pagination setting
+  const page = searchParams['page'] ?? '1';
+  const per_page = 12;
+  const offset = page === '1' ? topListCount : 0;
+  const start = (Number(page) - 1) * Number(per_page) + offset; // 5, 12, 24 ...
+  const end = start + Number(per_page);
+  const entries = cityData.slice(start, end);
 
   return (
     <main className="content-grid">
@@ -47,13 +62,13 @@ export default function BlogPosts() {
       {cityData ? (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-            {cityData.slice(0, topList).map((post, index) => (
+            {cityData.slice(0, topListCount).map((post, index) => (
               <article
                 key={index}
                 className="card card-side bg-slate-100 shadow-xl"
               >
                 <figure>
-                  <Link href={cityPath + post.slug}>
+                  <Link href={routePath + post.slug}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={post.image_url}
@@ -65,7 +80,7 @@ export default function BlogPosts() {
                 <div className="card-body max-w-96">
                   <h2 className="card-title grow line-clamp-3 m-0 mb-8">
                     <Link
-                      href={cityPath + post.slug}
+                      href={routePath + post.slug}
                       className="hover:text-orange-500 text-xl"
                     >
                       {post.title}
@@ -77,7 +92,7 @@ export default function BlogPosts() {
                   </p>
                   <div className="card-actions justify-end">
                     <Link
-                      href={cityPath + post.slug}
+                      href={routePath + post.slug}
                       className="btn btn-aj btn-sm"
                     >
                       More about {post.city}
@@ -108,16 +123,17 @@ export default function BlogPosts() {
             ></iframe>
           </div> */}
 
-          {cityData.length > topList ? (
+          {cityData.length > topListCount ? (
             <>
-              <h2 className="underline-full mt-16 mb-8">
+              <h2 id="pagination" className="underline-full mt-16 mb-8">
                 Explore Cities in Academia
               </h2>{' '}
             </>
           ) : null}
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {cityData.slice(topList).map((post, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-8">
+            {/* {cityData.slice(topListCount).map((post, index) => ( */}
+            {entries.map((post, index) => (
               <article
                 key={index}
                 className="card bg-slate-100 shadow-xl image-full items-stretch relative"
@@ -128,7 +144,7 @@ export default function BlogPosts() {
                 }}
               >
                 <figure className="aspect-w-16 aspect-h-9">
-                  <Link href={cityPath + post.slug}>
+                  <Link href={routePath + post.slug}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={post.image_url}
@@ -141,7 +157,7 @@ export default function BlogPosts() {
                 <div className="card-body p-6">
                   <h2 className="card-title line-clamp-3 leading-tight">
                     <Link
-                      href={cityPath + post.slug}
+                      href={routePath + post.slug}
                       className="text-white hover:text-orange-500 text-lg"
                     >
                       {post.title}
@@ -149,7 +165,7 @@ export default function BlogPosts() {
                   </h2>
                   <div className="card-actions justify-end mt-auto">
                     <Link
-                      href={cityPath + post.slug}
+                      href={routePath + post.slug}
                       className="btn btn-aj btn-sm"
                     >
                       Read more
@@ -159,6 +175,13 @@ export default function BlogPosts() {
               </article>
             ))}
           </div>
+          <PaginationControls
+            hasNextPage={end < cityData.length}
+            hasPrevPage={start > topListCount}
+            pagePath={routeName}
+            itemCount={cityData.length}
+            limitPerPage={per_page}
+          />
         </>
       ) : (
         <div>

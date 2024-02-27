@@ -29,18 +29,19 @@ export default function BlogPosts({
   //   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   //   return date.toLocaleDateString('en-US', options);
   // }
-
-  const topBlogsCount = 6;
+  if (!blogData) {
+    return <div>Loading...</div>;
+  }
+  const topListCount = 6;
   const showDates = false;
-  const blogPath = '/career-help/';
 
-  // console.log(blogData);
+  // Pagination setting
+  const routeName = 'career-help';
+  const routePath = `/${routeName}/`;
 
   const page = searchParams['page'] ?? '1';
   const per_page = 12;
-
-  // Pagination setting
-  const offset = page === '1' ? topBlogsCount : 0;
+  const offset = page === '1' ? topListCount : 0;
   const start = (Number(page) - 1) * Number(per_page) + offset; // 5, 12, 24 ...
   const end = start + Number(per_page);
   const entries = blogData.slice(start, end);
@@ -63,10 +64,10 @@ export default function BlogPosts({
       {blogData ? (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {blogData.slice(0, topBlogsCount).map((post, index) => (
+            {blogData.slice(0, topListCount).map((post, index) => (
               <article key={index} className="card bg-slate-100 shadow-xl">
                 <figure>
-                  <Link href={blogPath + post.slug}>
+                  <Link href={routePath + post.slug}>
                     <Image
                       src={post.image_url}
                       alt={post.alt}
@@ -79,7 +80,7 @@ export default function BlogPosts({
                 <div className="card-body">
                   <h2 className="card-title grow line-clamp-4 m-0 min-h-[130px]">
                     <Link
-                      href={blogPath + post.slug}
+                      href={routePath + post.slug}
                       className="hover:text-orange-500 text-2xl"
                     >
                       {post.title}
@@ -106,7 +107,7 @@ export default function BlogPosts({
                   </p>
                   <div className="card-actions justify-end">
                     <Link
-                      href={blogPath + post.slug}
+                      href={routePath + post.slug}
                       className="btn btn-aj btn-sm"
                     >
                       Read more
@@ -141,7 +142,6 @@ export default function BlogPosts({
             Academic Recruitment & Career Blog Posts
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-8">
-            {/* TODO: {blogData.slice(startIndex, endIndex).map((post, index) => ( */}
             {entries.map((post, index) => (
               <article
                 key={index}
@@ -153,7 +153,7 @@ export default function BlogPosts({
                 }}
               >
                 <figure className="aspect-w-16 aspect-h-9">
-                  <Link href={blogPath + post.slug}>
+                  <Link href={routePath + post.slug}>
                     <Image
                       src={post.image_url}
                       alt={post.alt}
@@ -165,7 +165,7 @@ export default function BlogPosts({
                 <div className="card-body p-6">
                   <h2 className="card-title line-clamp-3 leading-tight">
                     <Link
-                      href={blogPath + post.slug}
+                      href={routePath + post.slug}
                       className="text-white hover:text-orange-500 text-lg"
                     >
                       {post.title}
@@ -173,7 +173,7 @@ export default function BlogPosts({
                   </h2>
                   <div className="card-actions justify-end mt-auto">
                     <Link
-                      href={blogPath + post.slug}
+                      href={routePath + post.slug}
                       className="btn btn-aj btn-sm"
                     >
                       Read more
@@ -182,18 +182,11 @@ export default function BlogPosts({
                 </div>
               </article>
             ))}
-
-            {/* TODO: <button onClick={() => setCurrentPage(currentPage - 1)}>
-              Previous
-            </button>
-            <button onClick={() => setCurrentPage(currentPage + 1)}>
-              Next
-            </button> */}
           </div>
           <PaginationControls
             hasNextPage={end < blogData.length}
-            hasPrevPage={start > topBlogsCount}
-            pagePath="/career-help/"
+            hasPrevPage={start > topListCount}
+            pagePath={routeName}
             itemCount={blogData.length}
             limitPerPage={per_page}
           />

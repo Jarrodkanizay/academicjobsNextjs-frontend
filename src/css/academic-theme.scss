@@ -262,7 +262,10 @@ html {
       color: white;
       background-color: var(--color-primary-hover);
     }
-
+    .pagination button:hover {
+      background-color: var(--color-primary-hover);
+      color: white;
+    }
     label {
       font-size: 1rem;
     }

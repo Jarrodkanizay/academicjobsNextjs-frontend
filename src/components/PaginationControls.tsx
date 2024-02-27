@@ -14,9 +14,9 @@ type PaginationControlProps = {
 const PaginationControls: FC<PaginationControlProps> = ({
   hasNextPage,
   hasPrevPage,
-  pagePath = '/',
+  pagePath,
   itemCount,
-  limitPerPage = 5,
+  limitPerPage = 4,
 }) => {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -28,12 +28,12 @@ const PaginationControls: FC<PaginationControlProps> = ({
   const totalPages = Math.ceil(itemCount / limitPerPage);
 
   return (
-    <div className="join mx-auto">
+    <div className="pagination join mx-auto">
       <button
         disabled={!hasPrevPage}
         className="join-item btn"
         onClick={() => {
-          router.push(`${pagePath}?page=1&per_page=${per_page}#pagination`);
+          router.push(`/${pagePath}?page=1&per_page=${per_page}#pagination`);
         }}
       >
         «
@@ -43,7 +43,7 @@ const PaginationControls: FC<PaginationControlProps> = ({
         disabled={!hasPrevPage}
         onClick={() => {
           router.push(
-            `${pagePath}?page=${
+            `/${pagePath}?page=${
               Number(page) - 1
             }&per_page=${per_page}#pagination`
           );
@@ -59,7 +59,7 @@ const PaginationControls: FC<PaginationControlProps> = ({
         disabled={!hasNextPage}
         onClick={() => {
           router.push(
-            `${pagePath}?page=${
+            `/${pagePath}?page=${
               Number(page) + 1
             }&per_page=${per_page}#pagination`
           );
@@ -72,12 +72,12 @@ const PaginationControls: FC<PaginationControlProps> = ({
         disabled={!hasNextPage}
         onClick={() => {
           router.push(
-            `${pagePath}?page=${totalPages}&per_page=${per_page}#pagination`
+            `/${pagePath}?page=${totalPages}&per_page=${per_page}#pagination`
           );
         }}
       >
         »
-      </button>{' '}
+      </button>
     </div>
   );
 };
