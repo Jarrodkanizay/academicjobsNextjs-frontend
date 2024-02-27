@@ -440,7 +440,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/agribusiness-jobs-2.jpg`,
     alt: `Agricultural Economics Agribusiness`,
     summary: `Explore the dynamic world of agricultural economics and agribusiness, delving into its intricacies, challenges, and opportunities.`,
     tags: `agricultural economics, agribusiness, agricultural management, farming economics`,
@@ -476,7 +476,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/animal-behaviour-jobs.jpg`,
     alt: `Animal Behavior Study`,
     summary: `Delve into the fascinating world of animal behavior and explore the depths of ethology.`,
     tags: `Animal Science, Ethology, Animal Behavior, Wildlife Studies, Zoology`,
@@ -520,7 +520,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/entomology-jobs-2.webp`,
     alt: `Insect on a leaf`,
     summary: `Explore the captivating realm of entomology and discover the enchanting world of insects.`,
     tags: `entomology, insects, science, biology, research`,
@@ -557,7 +557,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/forest-eclogy-jobs-2.jpg`,
     alt: `forest ecology`,
     summary: `Delve into the intricate world of forest ecology and its profound significance in environmental science.`,
     tags: `environmental science, ecology, forestry, forest ecology, environmental conservation`,
@@ -592,7 +592,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/agriculture-extension-jobs.jpg`,
     alt: `Agricultural Extension`,
     summary: `Explore the dynamic world of agricultural extension and discover how it empowers communities and enhances sustainability. Learn how this specialty field addresses challenges and drives positive change.`,
     tags: `agriculture, extension services, community empowerment, sustainability, agricultural development`,
@@ -631,7 +631,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/food-science-jobs.jpg`,
     alt: `Food Science Culinary Innovation`,
     summary: `Exploring the dynamic world of food science and its role in culinary innovation, uncovering the secrets behind taste, texture, and nutrition.`,
     tags: `food science, culinary innovation, taste, texture, nutrition`,
@@ -663,7 +663,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/landscape-architecture-jobs-2.jpg`,
     alt: `Horticulture Landscape Architecture`,
     summary: `Discover the wonders of horticulture landscape architecture and how it combines creativity with sustainability for a greener future.`,
     tags: `horticulture, landscape architecture, sustainability, green design, creativity`,
@@ -754,7 +754,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/veterinary-medicine-jobs.jpg`,
     alt: `Veterinary Medicine illustration`,
     summary: `Embark on a journey to discover the intricacies of veterinary medicine specialization and explore the opportunities it presents for pet care enthusiasts.`,
     tags: `veterinary medicine, pet care, veterinary specialization, animal health, veterinary careers`,
@@ -813,7 +813,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/modern-accounting-jobs.jpg`,
     alt: `Modern Accounting Dynamics`,
     summary: `Explore the evolving landscape of accounting and delve into the realms of financial insights and expertise.`,
     tags: `accounting, finance, financial insights, modern accounting, accounting trends`,
@@ -836,58 +836,6 @@ export const blogData = [
       <p>Whether you're a seasoned professional or just beginning your accounting journey, embracing the dynamics of modern accounting is essential for success in today's fast-paced business environment. Stay curious, stay innovative, and let financial insights guide your path to excellence.</p>
     </article>`,
   },
-
-  {
-    status: 'published',
-    rank: 0,
-    title:
-      'Mastering Administration: Your Gateway to Organizational Excellence',
-    slug: 'mastering-administration-gateway-organizational-excellence',
-    author: 'Gabrielle Ryan',
-    published_at: '2024-02-22',
-    updated_at: '2024-02-22',
-    image_url: '/placeholders/placeholder-image.jpg',
-    alt: 'administration',
-    summary:
-      'Unlock the potential of administration as we explore its dynamics, benefits, and career prospects.',
-    tags: 'administration, organizational management, career development',
-    keywords:
-      'administration, organizational management, career opportunities, administrative skills, leadership, efficiency, problem-solving, communication',
-    content: `
-      <article class="blog-content">
-        <h2>The Power of Administration: Building Strong Foundations</h2>
-        
-        <p>Welcome to the world of administration, where the gears of organizations turn smoothly, and excellence becomes the norm. Whether you're a seasoned professional or just embarking on your journey, understanding the essence of administration is key to success.</p>
-  
-        <h2>What Makes Administration Tick?</h2>
-        
-        <p>At its core, administration is about effective coordination, resource management, and problem-solving. It involves overseeing operations, streamlining processes, and ensuring that every component works harmoniously towards achieving common goals.</p>
-        
-        <h2>Benefits of Mastering Administration</h2>
-        
-        <ul>
-          <li>Enhanced Efficiency: Proper administration optimizes workflows, reducing redundancy and maximizing output.</li>
-          <li>Improved Communication: Clear channels of communication foster collaboration and alignment across teams.</li>
-          <li>Effective Resource Allocation: Administrators allocate resources judiciously, ensuring optimal utilization without waste.</li>
-          <li>Strategic Decision-Making: Informed decisions backed by data drive organizational growth and innovation.</li>
-        </ul>
-  
-        <h2>Career Opportunities in Administration</h2>
-        
-        <p>For academic researchers and lecturers, mastering administration opens doors to diverse career paths. From project management to academic administration roles, the possibilities are endless. Engage in extracurricular work, hone your administrative skills, and explore avenues to realize your potential.</p>
-  
-        <h2>Quick Job Post Technology for Recruiters</h2>
-        
-        <p>Recruiters, streamline your hiring process with Quick Job Post Technology. Simplify job postings, reach a wider audience, and find top talent effortlessly. Learn more <a href="https://www.academicjobs.com/quick-job-post-technology">here</a>.</p>
-  
-        <h2>Final Thoughts</h2>
-        
-        <p>Administration isn't just a role—it's a mindset. By mastering the art of administration, you become the catalyst for organizational excellence. Embrace the challenges, seize the opportunities, and embark on a journey towards lasting impact.</p>
-        
-      </article>
-    `,
-  },
-
   {
     status: `published`,
     rank: 0,
@@ -896,7 +844,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/legal-specialty-jobs.jpg`,
     alt: `Law books on a desk`,
     summary: `Exploring the nuances of law specialties can help you chart a clearer path in your legal career.`,
     tags: `law, legal specialties, legal career, law students, legal education`,
@@ -941,7 +889,7 @@ export const blogData = [
     author: 'Gabrielle Ryan',
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: '/placeholders/placeholder-image.jpg',
+    image_url: '/blogs/entrepreneurship-jobs.jpg',
     alt: 'Entrepreneurship',
     summary:
       'Learn key strategies and insights to excel in the world of entrepreneurship.',
@@ -987,7 +935,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: '/placeholders/placeholder-image.jpg',
+    image_url: '/blogs/personal-finance-jobs.jpg',
     alt: `College students discussing personal finance`,
     summary: `Navigating personal finance as a college student can be daunting. This blog offers practical tips to help you manage your finances effectively while studying.`,
     tags: `personal finance, college students, financial management, budgeting, savings`,
@@ -1033,7 +981,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: '/placeholders/placeholder-image.jpg',
+    image_url: '/blogs/hotel-resturant-jobs.jpg',
     alt: `Hotel Restaurant Management`,
     summary: `Embark on a journey into the dynamic world of hotel restaurant management, where culinary finesse meets business acumen.`,
     tags: `hospitality, restaurant management, hotel industry, culinary arts, business management`,
@@ -1078,7 +1026,7 @@ export const blogData = [
     author: `Sarah West`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/hr-jobs.jpg`,
     alt: `Human Resources meeting`,
     summary: `As a recruiter, understanding the nuances of Human Resources can significantly enhance your hiring process. Dive into this guide to discover valuable insights and strategies.`,
     tags: `human resources, recruitment, HR strategies`,
@@ -1112,7 +1060,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/information-system-jobs.jpg`,
     alt: `Information Systems Technology`,
     summary: `Explore the dynamic world of Information Systems Technology, where innovation meets practicality.`,
     tags: `technology, information systems, IT, innovation, career`,
@@ -1157,7 +1105,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/international-business-jobs.jpg`,
     alt: `International Business`,
     summary: `International business presents unique challenges and opportunities. Whether you're a student, academic, or recruiter, understanding its intricacies is vital.`,
     tags: `international business, global trade, cross-cultural management, business strategy`,
@@ -1204,7 +1152,7 @@ export const blogData = [
     author: `Gabrielle Ryan`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/business-man-jobs.jpg`,
     alt: `Business Management`,
     summary: `Explore key strategies and insights for excelling in the field of business management, whether you're a student, academic, or recruiter.`,
     tags: `business management, leadership, strategy, career development`,
@@ -1580,7 +1528,7 @@ export const blogData = [
     author: `Sarah West`,
     published_at: '2024-02-22',
     updated_at: '2024-02-22',
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/blogs/counselling-jobs-2.jpg`,
     alt: `Counselor assisting a university student`,
     summary: `Embarking on a journey in the counseling specialty? Discover insights, tips, and career prospects tailored for university students.`,
     tags: `counseling, university students, career advice, mental health, counseling specialty`,
