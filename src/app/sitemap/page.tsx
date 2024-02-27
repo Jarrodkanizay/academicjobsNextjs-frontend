@@ -336,7 +336,7 @@ export default function myPage() {
                       <Link href="/employers/caltech/3128/">Caltech</Link>
                     </li>
                     <li className="pb-6">
-                      <Link href="/employers/University-of-Chicago/3126/">
+                      <Link href="/employers/university-of-chicago/3126/">
                         {' '}
                         University of Chicago
                       </Link>
@@ -354,7 +354,7 @@ export default function myPage() {
                       </Link>
                     </li>
                     <li className="pb-6">
-                      <Link href="/employers/Cornell-University/3138/">
+                      <Link href="/employers/cornell-university/3138/">
                         Cornell University
                       </Link>
                     </li>
@@ -1239,18 +1239,18 @@ export default function myPage() {
                 </Link>
               </li>
               <li className="pb-6">
-                <Link href="/employers/Cornell-University/3138/">
+                <Link href="/employers/cornell-university/3138/">
                   Cornell University
                 </Link>
               </li>
               <li className="pb-6">
-                <Link href="/employers/Brown-University/3308/">
+                <Link href="/employers/brown-university/3308/">
                   Brown University
                 </Link>
               </li>
               <li className="pb-6">
                 <Link
-                  href="/employers/University-of-Rochester/5527/
+                  href="/employers/university-of-rochester/5527/
                                                       "
                 >
                   University of Rochester
@@ -1333,7 +1333,7 @@ export default function myPage() {
               <li className="mb-2 text-[#f4a10c] font-bold mb-2">Illinois</li>
               <li className="pb-6">
                 <Link
-                  href="/employers/University-of-Chicago/3126/
+                  href="/employers/university-of-chicago/3126/
                                                       "
                 >
                   University of Chicago
@@ -1341,7 +1341,7 @@ export default function myPage() {
               </li>
               <li className="pb-6">
                 <Link
-                  href="/employers/Northwestern-University/3143/
+                  href="/employers/northwestern-university/3143/
                                                       "
                 >
                   Northwestern University
@@ -2699,7 +2699,7 @@ export default function myPage() {
               </li>
               <li className="mb-2 text-[#f4a10c] font-bold mb-2">Italy</li>
               <li className="pb-6">
-                <Link href="/employers/University-of-Bologna/12015/">
+                <Link href="/employers/university-of-bologna/12015/">
                   University of Bologna
                 </Link>
               </li>
