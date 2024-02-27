@@ -61,7 +61,6 @@ const nextConfig = {
         destination: '/academic-talent-pool',
         permanent: true,
       },
-
       {
         source: '/jobs/general-manager-jobs',
         destination: '/hr-jobs/generalist-hr',
@@ -70,7 +69,7 @@ const nextConfig = {
       {
         source: '/jobs/student-casual',
         destination: '/student/casual',
-        permanent: true,     
+        permanent: true,
       },
       {
         source: '/jobs/healthcare-managing-director-jobs',
@@ -102,13 +101,11 @@ const nextConfig = {
         destination: '/faculty/construction-building-trades/',
         permanent: true,
       },
-
       {
         source: '/jobs/student-full-time',
         destination: '/student/full-time',
         permanent: true,
       },
-
       {
         source: '/jobs/chief-technology-officer-jobs',
         destination: '/faculty/information-systems-technology/',
@@ -119,7 +116,6 @@ const nextConfig = {
         destination: '/faculty/business-management/',
         permanent: true,
       },
-
       {
         source: '/jobs/student-part-time',
         destination: '/student/part-time',
@@ -130,7 +126,6 @@ const nextConfig = {
         destination: '/faculty/other-business-specialities',
         permanent: true,
       },
-
       {
         source: '/jobs/development-director-jobs',
         destination: '/executive/directors',
@@ -141,7 +136,6 @@ const nextConfig = {
         destination: '/employers/macquarie-university/3881',
         permanent: true,
       },
-
       {
         source: '/position',
         destination: '/faculty',
@@ -152,7 +146,6 @@ const nextConfig = {
         destination: '/employers/monash-university/3182/',
         permanent: true,
       },
-
       {
         source: '/the-university-of-western-australia-jobs',
         destination: '/employers/university-of-western-australia/3173',
@@ -163,13 +156,11 @@ const nextConfig = {
         destination: '/employers/university-of-queensland/3172',
         permanent: true,
       },
-
       {
         source: '/the-university-of-sydney-jobs',
         destination: '/employers/the-university-of-sydney/3171',
         permanent: true,
       },
-
       {
         source: '/university-of-new-south-wales-jobs',
         destination: '/employers/university-of-new-south-wales-unsw-/3738',
@@ -180,7 +171,6 @@ const nextConfig = {
         destination: '/employers/the-university-of-adelaide/3737',
         permanent: true,
       },
-
       {
         source: '/university-of-technology-sydney-jobs',
         destination: '/employers/university-of-technology-sydney/3864',
@@ -191,7 +181,6 @@ const nextConfig = {
         destination: '/employers/university-of-melbourne/3170/',
         permanent: true,
       },
-
       {
         source: '/usa/admin',
         destination: '/usa/staff',
@@ -202,13 +191,11 @@ const nextConfig = {
         destination: '/recruitment',
         permanent: true,
       },
-
       {
         source: '/australian-national-university-jobs',
         destination: '/employers/australian-national-university/3739',
         permanent: true,
       },
-
       {
         source: '/categories/culinary-arts-university-jobs',
         destination: '/faculty',
@@ -429,7 +416,6 @@ const nextConfig = {
         destination: '/uk/hr-jobs',
         permanent: true,
       },
-
       {
         source: '/uk/hr',
         destination: '/uk/hr-jobs',
@@ -465,15 +451,12 @@ const nextConfig = {
         destination: '/asia',
         permanent: true,
       },
-         {
+      {
         source: '/employers/academic-jobs-australia/3328',
         destination: '/australia',
         permanent: true,
       },
-      
-  
     ];
   },
 };
-
 module.exports = nextConfig;
