@@ -2349,7 +2349,8 @@ export const cityData = [
       "Montgomery's universities and colleges provide unparalleled educational experiences, fostering personal and intellectual growth. Students benefit from innovative programs, esteemed faculty, and diverse learning environments, preparing them for successful futures.",
       'For professionals, Montgomery offers abundant research and employment opportunities, with institutions at the forefront of innovation and discovery across various fields. Join a thriving academic community dedicated to excellence and advancement.',
     ],
-    image_url: '/montgomery/montgomery-alabama.jpg',
+    image_url:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Aerial_view_of_Montgomery%2C_Alabama_LCCN2011646683.tif/lossy-page1-1200px-Aerial_view_of_Montgomery%2C_Alabama_LCCN2011646683.tif.jpg',
     alt: 'Montgomery Alabama cityscape skyline',
   },
 
@@ -2381,7 +2382,8 @@ export const cityData = [
     promo: [
       "Immerse yourself in Juneau's academic community, where unparalleled natural landscapes meet scholarly excellence. Whether you're drawn to research opportunities in environmental sciences, cultural studies, or outdoor leadership, Juneau offers a unique setting for personal and intellectual growth. Join us in exploring the intersection of academia and adventure in Alaska's capital city.",
     ],
-    image_url: '/juneau/juneau-alaska-cityscape.jpg',
+    image_url:
+      'https://www.backyardimage.com/wp-content/uploads/2022/07/2022-06-09-Alaska-Heap-1933-1.jpg',
     alt: 'Panoramic view of Juneau, Alaska',
   },
 
@@ -2417,7 +2419,8 @@ export const cityData = [
       "Phoenix's universities and colleges provide a fertile ground for intellectual growth and professional development. With cutting-edge research facilities, esteemed faculty, and a supportive academic environment, attending or working at a university in Phoenix promises transformative educational experiences and exciting career prospects.",
       "Engage in interdisciplinary collaborations, pursue groundbreaking research initiatives, and access a wealth of resources to fuel your academic pursuits. Whether you're a student seeking academic excellence or a researcher aiming to make a meaningful impact, Phoenix's educational institutions offer an unparalleled platform for growth and innovation.",
     ],
-    image_url: '/phoenix/phoenix-education.jpg',
+    image_url:
+      'https://www.appily.com/sites/default/files/styles/max_800/public/images/hero/college/448886_hero.jpg?itok=qWpmRAZU',
     alt: 'Phoenix skyline with educational institutions',
   },
 
@@ -2451,7 +2454,8 @@ export const cityData = [
       'For those seeking educational enrichment, attending a university or college in Little Rock opens doors to academic excellence and personal growth. With a supportive learning environment, cutting-edge research opportunities, and a vibrant campus community, students can cultivate their talents and pursue their passions.',
       "Similarly, professionals looking to advance their careers will find Little Rock's academic institutions to be fertile ground for innovation and collaboration. Whether in teaching, research, or administration, employment opportunities abound, offering rewarding experiences and avenues for professional development.",
     ],
-    image_url: '/cities/little-rock.jpg',
+    image_url:
+      'https://traveler.marriott.com/wp-content/uploads/2023/11/arkansas-river-and-skyline-sunrise-little-rock-arkanasa-1920x1080.jpg',
     alt: 'Downtown Little Rock skyline with riverfront',
   },
 
@@ -2489,7 +2493,8 @@ export const cityData = [
       "Denver's academic institutions provide unparalleled opportunities for educational and personal growth. With a diverse array of programs and resources, students can immerse themselves in a vibrant intellectual community, fostering critical thinking, creativity, and global perspectives.",
       "For professionals, Denver offers a dynamic landscape ripe with research opportunities and collaborative endeavors. Whether in academia or industry, the city's commitment to innovation and excellence makes it an enticing destination for career advancement and scholarly pursuits.",
     ],
-    image_url: '/cities/denver-colorado.jpg',
+    image_url:
+      'https://media.istockphoto.com/id/537215344/photo/denver-colorado-skyscrapers-snowy-longs-peak-rocky-mountains-summer.jpg?s=612x612&w=0&k=20&c=L_TTuniB8C7XlKRPGeVvpZFGSGR3cdRmuDJEBX_3L6Q=',
     alt: 'Denver skyline with Rocky Mountains in the background',
   },
 
@@ -2530,7 +2535,8 @@ export const cityData = [
     promo: [
       "Consider Hartford for unparalleled educational and personal growth opportunities. Its esteemed universities offer a supportive environment for academic exploration, fostering critical thinking, creativity, and cultural exchange. For professionals, Hartford's universities provide abundant research opportunities and collaborations with industry leaders, driving innovation and advancing knowledge across disciplines.",
     ],
-    image_url: '/hartford/hartford-cityscape.jpg',
+    image_url:
+      'https://live.staticflickr.com/8555/30134529580_f3cfd23d86_b.jpg',
     alt: 'Hartford skyline at sunset',
   },
 
@@ -2567,7 +2573,7 @@ export const cityData = [
       'Dover offers a transformative educational experience, blending academic rigor with a supportive community environment. Students thrive in classrooms led by world-class faculty, engage in cutting-edge research, and benefit from robust extracurricular opportunities that nurture holistic growth and development.',
       'For researchers and educators, Dover provides a fertile ground for collaboration and innovation. With state-of-the-art facilities, interdisciplinary initiatives, and a collaborative spirit, the city attracts top talent and fosters a dynamic ecosystem where ideas flourish, leading to impactful discoveries that shape the future.',
     ],
-    image_url: '/cities/dover-usa.jpg',
+    image_url: 'https://hbcuconnect.com/images/blogs/362231',
     alt: 'Dover, Delaware: A Hub of Education and Innovation',
   },
 
@@ -2604,7 +2610,7 @@ export const cityData = [
       `Tallahassee's universities and colleges offer an unparalleled educational experience, fostering intellectual curiosity and personal growth. State-of-the-art facilities, esteemed faculty, and a supportive community create an environment conducive to academic excellence and holistic development.`,
       `For professionals seeking career opportunities, Tallahassee's academic institutions provide a platform for advancement and research collaboration. Whether in teaching, research, or administrative roles, joining Tallahassee's academic community offers avenues for professional growth and meaningful contributions to society.`,
     ],
-    image_url: `https://example.com/tallahassee.jpg`,
+    image_url: `https://www.shutterstock.com/image-photo/tallahassee-florida-usa-downtown-skyline-600nw-359879489.jpg`,
     alt: `Tallahassee skyline with palm trees`,
   },
 
@@ -2655,7 +2661,8 @@ export const cityData = [
       'Atlanta beckons with unparalleled educational and professional opportunities. Its diverse academic programs and research avenues empower students to engage with leading scholars and cutting-edge technologies, fostering intellectual growth and innovation.',
       "For professionals, Atlanta's universities offer a dynamic milieu for research and collaboration, catalyzing transformative change and driving societal progress. Join us in Atlanta and immerse yourself in a vibrant academic community dedicated to excellence and impact.",
     ],
-    image_url: '/cities/atlanta-georgia.jpg',
+    image_url:
+      'https://media.istockphoto.com/id/1311134607/photo/aerial-shot-over-the-downtown-connector-during-sunset.jpg?s=612x612&w=0&k=20&c=TD5UnQqRHwlmSlovgTK4RhYNr2ui-BoZGjBLCPHKuNI=',
     alt: 'Atlanta skyline and cityscape',
   },
 
@@ -2697,7 +2704,8 @@ export const cityData = [
       "Boise's educational institutions offer unparalleled opportunities for personal and professional growth. With state-of-the-art facilities and a supportive academic community, students embark on transformative learning journeys, equipped to tackle global challenges and drive innovation.",
       "For faculty and researchers, Boise's universities provide a collaborative and stimulating environment conducive to groundbreaking discoveries and scholarly pursuits. Joining Boise's academic community means engaging with cutting-edge research, fostering interdisciplinary collaborations, and making a meaningful impact on society.",
     ],
-    image_url: '/boise/boise-idaho-education.jpg',
+    image_url:
+      'https://www.techhelp.org/wp-content/uploads/2022/04/downtown-boise-1000-1.jpg',
     alt: 'Boise, Idaho - A Center of Learning and Innovation',
   },
 
@@ -2738,7 +2746,7 @@ export const cityData = [
       'With a diverse range of academic institutions and a thriving research culture, Indianapolis offers unparalleled opportunities for educational and professional growth. Whether you seek to pursue higher education or embark on a rewarding career in academia, Indianapolis provides the ideal environment to cultivate your aspirations and make meaningful contributions to society.',
       'Indianapolis is not only a center for learning but also a hub for innovation and entrepreneurship. Its collaborative spirit and supportive ecosystem enable individuals to translate knowledge into action, driving economic growth and societal impact.',
     ],
-    image_url: '/indianapolis/indianapolis-education-innovation.jpg',
+    image_url: 'https://live.staticflickr.com/7142/6784455887_5c2cffdf9c_b.jpg',
     alt: 'Indianapolis skyline reflecting in water',
   },
 
@@ -2775,7 +2783,7 @@ export const cityData = [
       'Des Moines offers unparalleled opportunities for educational enrichment and personal growth at its universities and colleges. Students benefit from a supportive academic community, distinguished faculty, and access to cutting-edge research facilities.',
       'Professionals find Des Moines to be a hub of career advancement and research collaboration. From vibrant cultural events to dynamic interdisciplinary initiatives, the city fosters an environment where innovation thrives and intellectual curiosity flourishes.',
     ],
-    image_url: '/des-moines/des-moines-skyline.jpg',
+    image_url: 'https://live.staticflickr.com/5160/8412464698_6bc0f33e7d_b.jpg',
     alt: 'Des Moines skyline with city lights at dusk',
   },
 
@@ -2815,7 +2823,8 @@ export const cityData = [
       'Embark on a transformative educational journey amidst the picturesque landscapes of Topeka, Kansas. With a plethora of academic offerings and research opportunities, students can harness their potential and chart a course towards personal and intellectual growth.',
       "For aspiring educators and researchers, Topeka's institutions provide fertile ground for professional development and collaborative endeavors. Join a community dedicated to scholarly excellence and innovation in the heart of the Midwest.",
     ],
-    image_url: '/topeka/topeka-cityscape.jpg',
+    image_url:
+      'https://st4.depositphotos.com/1035350/41645/i/450/depositphotos_416459412-stock-photo-toledo-ohio-usa-downtown-skyline.jpg',
     alt: "A captivating view of Topeka's skyline against the backdrop of a vibrant sunset",
   },
 ];
