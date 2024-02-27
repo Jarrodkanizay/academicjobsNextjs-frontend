@@ -336,7 +336,7 @@ export default function myPage() {
                       <Link href="/employers/caltech/3128/">Caltech</Link>
                     </li>
                     <li className="pb-6">
-                      <Link href="/employers/University-of-Chicago/3126/">
+                      <Link href="/employers/university-of-chicago/3126/">
                         {' '}
                         University of Chicago
                       </Link>
@@ -354,7 +354,7 @@ export default function myPage() {
                       </Link>
                     </li>
                     <li className="pb-6">
-                      <Link href="/employers/Cornell-University/3138/">
+                      <Link href="/employers/cornell-university/3138/">
                         Cornell University
                       </Link>
                     </li>
