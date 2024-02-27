@@ -416,7 +416,7 @@ export const cityData = [
       "Paris offers unmatched opportunities for academic and personal growth in an environment steeped in history and culture. The city's universities are at the forefront of research and innovation, making it a prime destination for students and academics worldwide.",
       'Choosing Paris for study or work means immersing yourself in a city that celebrates knowledge, creativity, and diversity, with ample opportunities for career advancement and cultural enrichment.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/paris.jpg',
     alt: 'Iconic view of Paris with prominent educational institutions highlighted',
   },
   {
@@ -466,7 +466,7 @@ export const cityData = [
       "New York City offers an exceptional environment for academic and personal growth, blending world-class educational facilities with the dynamism of city life. It's a place where students and academics from around the globe come to challenge themselves and expand their horizons.",
       'With its rich cultural scene, networking opportunities, and access to leading institutions, NYC stands out as a premier destination for those looking to advance their academic careers and make an impact in their fields.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/new york.jpg',
     alt: 'Skyline of New York City highlighting its educational institutions',
   },
   {
@@ -516,7 +516,7 @@ export const cityData = [
       "Berlin offers an unmatched blend of historical significance and modern academic innovation, providing students and academics with endless opportunities for growth, research, and collaboration in one of Europe's most dynamic cities.",
       "The city's rich cultural scene, combined with its comprehensive academic programs and state-of-the-art research facilities, makes Berlin an attractive destination for pursuing academic excellence and career development.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/berlin.webp',
     alt: 'Panoramic view of Berlin highlighting its educational and cultural landmarks',
   },
   {
@@ -565,7 +565,7 @@ export const cityData = [
       'Tokyo offers unparalleled opportunities for educational and professional growth, set against the backdrop of a city that blends tradition with cutting-edge technology. Its universities provide a nurturing environment for students and academics keen on making significant contributions to their fields.',
       'Choosing Tokyo for study or research means immersing yourself in a city known for its academic excellence, innovative spirit, and rich cultural heritage, making it a sought-after destination for scholars worldwide.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/toyko.jpg',
     alt: 'Iconic Tokyo skyline with prominent educational institutions highlighted',
   },
   {
@@ -615,7 +615,7 @@ export const cityData = [
       "Toronto offers an exceptional setting for students and academics, providing a multicultural environment that enriches the educational experience. The city's institutions are at the forefront of technological advancements and societal contributions.",
       'Choosing Toronto for your academic journey or career not only means access to top-tier education but also immersion in a city known for its cultural diversity, vibrant arts scene, and numerous professional opportunities.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/toronto.jpg',
     alt: "Scenic view of Toronto's skyline, showcasing its academic institutions and cultural landmarks",
   },
   {
@@ -662,7 +662,7 @@ export const cityData = [
       'Perth offers a unique blend of educational excellence, innovative research, and a high quality of life, making it an attractive destination for students and academics from around the world.',
       "The city's universities provide a supportive and dynamic environment for pursuing academic goals, along with opportunities for personal and professional growth in Australia's stunning west coast setting.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/perth.jpg',
     alt: 'Panoramic view of Perth, showcasing its educational institutions and natural beauty',
   },
   {
@@ -707,7 +707,7 @@ export const cityData = [
       'Adelaide offers an enriching environment for students and academics, characterized by its world-class educational facilities, supportive community, and beautiful natural surroundings.',
       "The city's commitment to fostering academic excellence, alongside its laid-back lifestyle and cultural diversity, makes Adelaide an ideal destination for pursuing higher education and research opportunities.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/adeliade.jpg',
     alt: "Panoramic view of Adelaide, highlighting its educational institutions against a backdrop of the city's natural beauty",
   },
   {
@@ -756,7 +756,7 @@ export const cityData = [
       "Chicago offers unparalleled opportunities for academic and professional growth within a vibrant urban setting known for its cultural richness and diversity. The city's universities provide a nurturing environment for innovation, scholarship, and collaboration.",
       'Choosing to study or work in Chicago means being part of a dynamic academic community where education and research are deeply valued, and where students and professionals can thrive in their pursuit of excellence.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/chicago.jpg',
     alt: 'Iconic skyline of Chicago with a focus on its prestigious universities and research institutions',
   },
   {
@@ -804,7 +804,7 @@ export const cityData = [
       "San Francisco offers a unique blend of academic rigor and innovation, set against the backdrop of one of the world's most dynamic and culturally rich cities. Its institutions provide unparalleled opportunities for learning, research, and professional development in various fields.",
       'Choosing to study or work in San Francisco means immersing yourself in an environment that values creativity, diversity, and innovation, making it an ideal place for those looking to make a significant impact in their careers and the world.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/san-franciso.jpg',
     alt: 'Scenic view of San Francisco, highlighting its educational institutions and innovative spirit',
   },
   {
@@ -854,7 +854,7 @@ export const cityData = [
       'Montreal offers an exceptional environment for academic pursuits, characterized by its commitment to bilingual education, multicultural student body, and a lively urban setting rich in art and history.',
       "Choosing to study or work in Montreal means joining a thriving academic community where education and research are deeply intertwined with the city's unique cultural heritage, making it an ideal place for intellectual and personal growth.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/montreal.jpg',
     alt: 'Panoramic view of Montreal, showcasing its educational institutions and vibrant cultural scene',
   },
   {
@@ -901,7 +901,7 @@ export const cityData = [
       'Zurich offers a unique combination of high-quality education, cutting-edge research, and a high standard of living, making it an attractive destination for students and academics from around the world.',
       'Choosing Zurich for academic pursuits means being part of a city that values innovation, sustainability, and a multicultural academic community, set against the backdrop of stunning Swiss landscapes.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/zurich.jpg',
     alt: 'Aerial view of Zurich, showcasing its educational institutions and beautiful scenery',
   },
   {
@@ -947,7 +947,7 @@ export const cityData = [
       'Singapore offers an unparalleled blend of academic rigor, innovative research opportunities, and a vibrant multicultural environment, making it an attractive destination for students and academics seeking to advance their careers.',
       "The city-state's focus on excellence, sustainability, and connectivity provides a unique setting for academic growth and professional development, amidst one of the world's most dynamic and economically vibrant regions.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/singapore.jpg',
     alt: "Scenic view of Singapore's skyline, highlighting its educational institutions and modern architecture",
   },
   {
@@ -995,7 +995,7 @@ export const cityData = [
       "Amsterdam offers a unique academic experience, blending a rich historical setting with cutting-edge research facilities and a cosmopolitan student life. The city's educational institutions are known for their inclusive and interdisciplinary approach, making it an ideal place for study and research.",
       "With a strong emphasis on sustainability, innovation, and international collaboration, Amsterdam's universities prepare students for global challenges, making it a highly desirable destination for those seeking to excel in their academic and professional careers.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/amsterdam.png',
     alt: "Iconic Amsterdam canal view, symbolizing the city's blend of historic charm and academic vibrancy",
   },
   {
@@ -1041,7 +1041,7 @@ export const cityData = [
       'Oxford provides an unparalleled academic experience, blending centuries-old traditions with modern research and teaching methodologies. The city offers a stimulating environment for students and faculty alike, characterized by rigorous intellectual engagement and a rich cultural life.',
       'Choosing Oxford for higher education means immersing oneself in a world where education transcends classrooms, shaping individuals who are ready to contribute significantly to society and the broader world.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/oxford.webp',
     alt: 'The iconic Oxford University skyline, embodying centuries of academic pursuit and excellence',
   },
   {
@@ -1087,7 +1087,7 @@ export const cityData = [
       'Cambridge offers an unrivaled educational experience, blending historic beauty with the thrill of academic discovery. Its colleges and universities are incubators for innovation, where tradition meets the cutting edge of research.',
       'Studying or working in Cambridge means being part of a legacy of scholars who have shaped the world. The city not only provides a picturesque backdrop but also a stimulating intellectual environment that inspires greatness.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/cambridge.webp',
     alt: 'The serene and scholarly ambiance of Cambridge, highlighting its historic colleges and verdant spaces',
   },
   {
@@ -1133,7 +1133,7 @@ export const cityData = [
       "Hong Kong offers a compelling mix of traditional and modern educational experiences, set against the backdrop of one of the world's most dynamic cities. Its universities are at the forefront of research and innovation, providing students with unparalleled opportunities for learning and personal growth.",
       'Choosing to study or work in Hong Kong means being part of an academic community that values diversity, excellence, and the pursuit of knowledge, preparing individuals for successful careers in a globalized world.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/hong-kong.jpg',
     alt: 'The iconic skyline of Hong Kong, symbolizing its status as a global academic and cultural crossroads',
   },
   {
@@ -1179,7 +1179,7 @@ export const cityData = [
       "Seoul offers a unique educational experience that combines rigorous academic standards with opportunities for innovative research and cultural immersion. The city's universities are at the forefront of global trends in education and technology, making Seoul an attractive destination for ambitious students and academics.",
       "Engaging in Seoul's academic community means accessing unparalleled resources, participating in international collaborations, and developing a global perspective, preparing individuals for leadership in their respective fields.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/seoul.jpg',
     alt: "Panoramic view of Seoul's skyline, showcasing its modernity and the vibrant academic life within the city",
   },
   {
@@ -1225,7 +1225,7 @@ export const cityData = [
       'Studying or working in Munich offers an unparalleled opportunity to engage with an academic tradition that seamlessly blends historical depth with contemporary innovation.',
       'Munich’s educational institutions not only provide world-class education but also foster a thriving research environment, making it an ideal destination for those seeking to excel in their academic and professional pursuits.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/munich.webp',
     alt: 'The iconic skyline of Munich, showcasing its historic architecture and modern academic institutions',
   },
   {
@@ -1270,7 +1270,7 @@ export const cityData = [
       "Choosing to study or work in Vancouver means engaging with a dynamic academic community, set against the backdrop of one of Canada's most picturesque cities.",
       "Vancouver's institutions offer a supportive environment for personal and professional growth, making it a top choice for those seeking to advance their academic careers.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/vancouver.jpg',
     alt: 'The scenic beauty of Vancouver with its iconic skyline and educational institutions highlighted',
   },
   {
@@ -1315,7 +1315,7 @@ export const cityData = [
       'Studying or working in Edinburgh offers the unique opportunity to be part of a thriving academic community, surrounded by historical landmarks and cutting-edge research facilities.',
       "The city's educational institutions are committed to fostering a supportive and innovative environment for students and staff alike, making Edinburgh a preferred destination for academic and personal development.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/edinburgh.jpg',
     alt: 'The historic cityscape of Edinburgh with its prestigious universities highlighted',
   },
   {
@@ -1360,7 +1360,7 @@ export const cityData = [
       "Choosing to study or work in Beijing opens doors to unparalleled opportunities for academic growth, cultural exchange, and professional development in a city that's at the heart of China's technological and educational advancements.",
       "The city's universities provide a vibrant community and state-of-the-art facilities for research, collaboration, and innovation, making Beijing a top destination for those seeking to excel in their academic and professional pursuits.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/beijing.jpg',
     alt: "Panoramic view of Beijing's iconic university campuses, symbolizing the city's academic prestige",
   },
   {
@@ -1406,7 +1406,7 @@ export const cityData = [
       'Choosing Shanghai for education or academic career offers access to a vibrant cosmopolitan city with rich educational resources, cutting-edge research facilities, and a dynamic international community.',
       "The city's commitment to academic excellence and innovation provides a stimulating environment for students and professionals alike, making it an ideal destination for those looking to achieve their academic and professional goals.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/shanghai.jpg',
     alt: "Aerial view of Shanghai's university campuses, showcasing the modern educational infrastructure against the city skyline",
   },
   {
@@ -1451,7 +1451,7 @@ export const cityData = [
       'Stockholm offers a unique blend of historical richness and modern educational facilities, making it an attractive destination for students and academics from around the world.',
       "The city's commitment to sustainability, innovation, and open-mindedness provides a stimulating environment for academic and personal growth.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/stockholm.jpg',
     alt: "Scenic view of Stockholm with its university buildings prominently displayed, highlighting the city's dedication to academic excellence",
   },
   {
@@ -1496,7 +1496,7 @@ export const cityData = [
       'Studying in Copenhagen offers access to a rich tapestry of cultural experiences and an open, collaborative academic environment.',
       "The city's focus on sustainability and innovation provides an ideal backdrop for those seeking to make an impact through their academic and professional pursuits.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/copenhagen.jpg',
     alt: "Panoramic view of Copenhagen, highlighting the city's educational institutions and serene environment, ideal for academic endeavors",
   },
   {
@@ -1542,7 +1542,7 @@ export const cityData = [
       'Dublin offers an enriching educational experience amidst its historic campuses, cultural richness, and dynamic student life.',
       "The city's collaborative academic environment and cutting-edge research opportunities make it an attractive destination for students and academics worldwide.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/dublin.jpg',
     alt: "Scenic view of Dublin's historical architecture blending with modern academic institutions, symbolizing the city's rich educational heritage",
   },
   {
@@ -1578,7 +1578,7 @@ export const cityData = [
       "Austin's dynamic blend of educational excellence and a thriving cultural scene offers unparalleled opportunities for personal and professional growth.",
       'With state-of-the-art research facilities and a supportive academic community, Austin stands out as a prime destination for education and career development.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/austin.jpg',
     alt: "Panoramic view of Austin showcasing the University of Texas campus amidst the city's bustling cultural and technological hubs",
   },
   {
@@ -1615,7 +1615,7 @@ export const cityData = [
       'Madrid offers a unique blend of historical richness and academic rigor, making it an attractive destination for students seeking quality education in a culturally vibrant city.',
       "Professionals find Madrid's universities to be fertile ground for research and development, with ample opportunities for collaboration and career advancement.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/madrid.jpg',
     alt: "Panoramic view of Madrid with historic buildings and modern educational institutions, highlighting the city's academic diversity",
   },
   {
@@ -1651,7 +1651,7 @@ export const cityData = [
       'For those seeking academic excellence in a city that offers both history and modernity, Barcelona stands out as a prime destination. Its universities are not just educational institutions but gateways to a global network and career opportunities.',
       "Academics and professionals find Barcelona's dynamic and supportive environment conducive to research, innovation, and development, making it a city where careers are not just made but also transformed.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/barcelona.jpg',
     alt: "The iconic cityscape of Barcelona, highlighting its educational institutions amid historical and modern architecture, symbolizing the city's academic vitality",
   },
   {
@@ -1693,7 +1693,7 @@ export const cityData = [
       'Choosing Buenos Aires for education means immersing oneself in a city with a rich cultural heritage, cutting-edge research, and a supportive academic network.',
       'For professionals and academics, Buenos Aires offers unparalleled opportunities for growth, collaboration, and discovery in a city that celebrates diversity and innovation.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/argentina.jpg',
     alt: "The historic and modern educational institutions of Buenos Aires, set against the city's vibrant cultural backdrop, showcasing its role as a leading academic center in Latin America",
   },
   {
@@ -1729,7 +1729,7 @@ export const cityData = [
       'Studying in Kuala Lumpur offers students a unique blend of traditional and modern educational experiences, set against the backdrop of a culturally rich and vibrant city.',
       'For academics and professionals, Kuala Lumpur provides a fertile ground for research, collaboration, and professional development in a globally connected environment.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/malaysia.jpg',
     alt: "Aerial view of Kuala Lumpur's skyline, highlighting the city's modern educational institutions amidst its cultural landmarks, symbolizing a blend of tradition and modernity in education",
   },
   {
@@ -1765,7 +1765,7 @@ export const cityData = [
       'Choosing Vienna for education means immersing in a city that values history, arts, and sciences equally, providing a holistic educational experience.',
       'Professionals and academics find Vienna a vibrant city for collaboration, with numerous conferences, seminars, and workshops happening throughout the year.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/vienna.jpg',
     alt: "The historic architecture of Vienna's universities set against the city's skyline, symbolizing the blend of traditional and modern educational values",
   },
   {
@@ -1801,7 +1801,7 @@ export const cityData = [
       'Studying in Brussels offers the unique opportunity to engage in a multicultural academic environment, where education goes hand in hand with personal growth and development.',
       "For professionals seeking employment, Brussels' universities provide a dynamic workplace culture, with ample opportunities for research, collaboration, and career advancement in the heart of Europe.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/belgium.jpg',
     alt: "The iconic Atomium structure against Brussels' skyline, symbolizing the city's blend of historical richness and modern academic advancements",
   },
   {
@@ -1837,7 +1837,7 @@ export const cityData = [
       "Studying in Taipei offers an immersive educational experience, combining rigorous academics with opportunities to explore Taiwan's rich culture and history.",
       "For those seeking employment, Taipei's universities provide a dynamic and innovative environment for research, teaching, and professional development in various disciplines.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/taiwan.jpg',
     alt: "The bustling streets of Taipei with the iconic Taipei 101 in the background, symbolizing the city's modern educational facilities and rich cultural heritage",
   },
   {
@@ -1873,7 +1873,7 @@ export const cityData = [
       'Choosing to study in Milan means immersing yourself in an environment that blends historical richness with modern innovation, offering unparalleled educational and personal development opportunities.',
       "For professionals, Milan's universities offer a dynamic atmosphere for teaching, research, and collaboration, situated in one of the world's most culturally and commercially vibrant cities.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/italy.jpg',
     alt: "A panoramic view of Milan, showcasing its iconic skyline with the Duomo di Milano, symbolizing the city's rich academic heritage and modern educational facilities",
   },
   {
@@ -1909,7 +1909,7 @@ export const cityData = [
       'Opting for Helsinki for education means engaging in a community where innovation, sustainability, and inclusivity are at the forefront, offering students a unique blend of traditional and modern learning experiences.',
       "Professionals seeking employment in Helsinki's academic institutions will find a collaborative and supportive environment, with ample opportunities for research, development, and international networking.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/finland.jpg',
     alt: "A picturesque view of Helsinki, showcasing its harmonious blend of historical architecture and modern educational facilities, set against the backdrop of Finland's natural beauty",
   },
   {
@@ -1945,7 +1945,7 @@ export const cityData = [
       'Choosing Bangalore for education means immersing yourself in a dynamic learning environment that bridges traditional academics with the demands of the modern workforce, particularly in IT and entrepreneurship.',
       "For professionals, the city's universities offer unparalleled opportunities for research collaboration, continuing education, and engagement with a thriving tech ecosystem.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/bangalore.jpg',
     alt: "The bustling cityscape of Bangalore, juxtaposed with its serene educational campuses, illustrates the city's unique blend of technological advancement and academic heritage.",
   },
   {
@@ -1981,7 +1981,7 @@ export const cityData = [
       "Studying in São Paulo offers a unique blend of cultural immersion and academic rigor within South America's largest metropolis, providing students with unparalleled opportunities for personal and professional growth.",
       "For academics and professionals, São Paulo's universities present a fertile ground for research, collaboration, and innovation in a city that thrives on creativity and diversity.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/sao paulo.jpg',
     alt: "The sprawling cityscape of São Paulo, with its mix of modern skyscrapers and historic buildings, reflects the city's role as a key player in global education and research.",
   },
   {
@@ -2017,7 +2017,7 @@ export const cityData = [
       "Studying in Mexico City offers an immersive experience in one of the world's most dynamic cultural landscapes, combined with access to top-tier academic programs and research opportunities.",
       "For professionals and academics, the city's universities provide a platform for groundbreaking research and collaboration in a nation renowned for its historic contributions to art, science, and technology.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/mexico.jpg',
     alt: 'Panoramic view of Mexico City with its blend of modern skyscrapers and historic architecture, symbolizing its status as a leading center for education and research in Latin America.',
   },
   {
@@ -2053,7 +2053,7 @@ export const cityData = [
       'Choosing Istanbul for education means immersing yourself in a city with a unique blend of history and modernity, offering unparalleled academic and cultural experiences.',
       "Professionals seeking to advance their careers will find Istanbul's universities to be centers of innovation and research, providing numerous opportunities for collaboration and professional growth in a city known for its entrepreneurial spirit.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/istanbul.jpg',
     alt: "The stunning skyline of Istanbul, showcasing its unique mix of historical architecture and modern educational institutions, symbolizing the city's role as a key academic and cultural center in Turkey.",
   },
   {
@@ -2089,7 +2089,7 @@ export const cityData = [
       "For students, Riyadh offers a unique blend of traditional culture and modern educational facilities, making it an ideal place for personal and academic growth. The city's universities provide state-of-the-art research facilities and a multicultural environment.",
       'Professionals looking to enhance their career can find in Riyadh a vibrant academic community and numerous opportunities for research and development, especially in fields like renewable energy, information technology, and healthcare.',
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/saudi-arabia.jpg',
     alt: "The skyline of Riyadh at dusk, showcasing the modern architecture of its universities and colleges, reflecting the city's commitment to becoming a global leader in education and research.",
   },
   {
@@ -2125,7 +2125,7 @@ export const cityData = [
       "Students in Johannesburg benefit from a dynamic and supportive academic environment, coupled with the city's rich cultural and social landscape, offering a unique educational experience.",
       "For professionals, the city's universities provide ample opportunities for career advancement through research collaborations, continuing education programs, and partnerships with industry leaders.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/south africa.jpg',
     alt: "The Johannesburg skyline with prominent university buildings, symbolizing the city's commitment to higher education and its role as a leading academic center in South Africa.",
   },
   {
@@ -2161,7 +2161,7 @@ export const cityData = [
       'Cairo offers a unique educational experience, blending rich historical context with modern academic rigor, making it an ideal destination for students seeking comprehensive growth and learning.',
       "For academics and professionals, Cairo's universities provide a platform for impactful research, interdisciplinary collaboration, and professional development in a culturally rich environment.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/egypt.jpg',
     alt: "The iconic Cairo skyline, highlighting the city's historic and modern educational institutions against the backdrop of the River Nile.",
   },
   {
@@ -2201,7 +2201,7 @@ export const cityData = [
       "Studying in Santiago offers a unique blend of academic rigor and cultural immersion, set against the backdrop of the city's rich history and dynamic urban life.",
       "For professionals seeking employment, Santiago's universities are at the forefront of research and innovation, offering numerous opportunities for collaboration and career advancement.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/chile.jpg',
     alt: "The panoramic view of Santiago, Chile, showcasing the Andes mountains backdrop and the city's modern educational facilities.",
   },
   {
@@ -2240,7 +2240,7 @@ export const cityData = [
       'Choosing Lisbon for education means immersing yourself in a city that balances academic rigor with a rich cultural tapestry, offering students a comprehensive growth experience.',
       "Professionals seeking employment will find Lisbon's universities to be fertile ground for research and development, with ample opportunities for collaborative projects and career advancement.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/portygal.jpg',
     alt: 'The picturesque landscape of Lisbon with the iconic São Jorge Castle overlooking the city, symbolizing the blend of historical richness and educational excellence.',
   },
   {
@@ -2280,7 +2280,7 @@ export const cityData = [
       "Opting for Bangkok as a study destination offers not just academic rigor but also a chance to immerse in Thailand's rich cultural heritage, providing students with a holistic educational journey.",
       "For professionals, Bangkok's universities are fertile grounds for cutting-edge research and career development, offering myriad opportunities in a city known for its welcoming spirit and dynamic economy.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/bangkok.jpg',
     alt: "The iconic skyline of Bangkok, reflecting the city's modernity and rich cultural heritage, symbolizing its role as an educational and cultural hub in Southeast Asia.",
   },
   {
@@ -2319,7 +2319,498 @@ export const cityData = [
       'Choosing New Delhi for education means immersing oneself in a city of vibrant history and academic fervor, offering students a unique opportunity to grow both intellectually and personally.',
       "For professionals, the city's universities are beacons of research and development, providing unparalleled opportunities for career advancement in a city that thrives on innovation and cultural richness.",
     ],
-    image_url: '/cities/cities-of-the-world-for-academics.jpg',
+    image_url: '/cities/new-delhi.jpg',
     alt: "The panoramic view of New Delhi, showcasing its iconic landmarks intertwined with modern academic institutions, symbolizing the city's blend of tradition and educational excellence.",
   },
+  {
+    title: "Montgomery, AL: Academic Excellence and Innovation Hub",
+    h1: "Exploring Montgomery's Educational Landscape",
+    slug: "montgomery-alabama",
+    city: "Montgomery",
+    region: "Alabama",
+    country: "United States",
+    description: "Discover Montgomery's rich academic environment with prestigious universities, Nobel Laureates, and notable academics. Explore educational and professional opportunities in this vibrant city.",
+    keywords: "Montgomery AL, universities, colleges, higher education, Nobel Laureates, academics, Alabama",
+
+    cityInfo: [
+      "Montgomery, Alabama, embodies a dynamic higher education landscape, fostering intellectual growth and innovation. The city's diverse array of universities and colleges enrich its cultural fabric and contribute to its vibrant academic community.",
+      "Home to renowned institutions, Montgomery offers educational opportunities spanning various disciplines, attracting students and scholars from around the world."
+    ],
+    uniList: [
+      "Alabama State University",
+      "Auburn University at Montgomery",
+      "Faulkner University",
+      "Huntingdon College",
+      "Troy University - Montgomery Campus"
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Montgomery's universities and colleges provide unparalleled educational experiences, fostering personal and intellectual growth. Students benefit from innovative programs, esteemed faculty, and diverse learning environments, preparing them for successful futures.",
+      "For professionals, Montgomery offers abundant research and employment opportunities, with institutions at the forefront of innovation and discovery across various fields. Join a thriving academic community dedicated to excellence and advancement."
+    ],
+    image_url: "/montgomery/montgomery-alabama.jpg",
+    alt: "Montgomery Alabama cityscape skyline"
+},
+
+{
+  title: "Juneau, USA: Higher Education and Intellectual Hub",
+  h1: "Exploring Juneau's Academic Landscape",
+  slug: "juneau-usa-higher-education",
+  city: "Juneau",
+  region: "Alaska",
+  country: "United States",
+  description: "Discover Juneau's vibrant academic community, Nobel laureates, and renowned scholars. Explore opportunities for education, research, and personal growth in Alaska's capital city.",
+  "keywords": "Juneau, Alaska, higher education, universities, colleges, Nobel laureates, academics",
+
+  cityInfo: [
+    "Juneau, USA, nestled in the Alaskan wilderness, boasts a diverse higher education landscape amidst stunning natural beauty. Its universities and colleges offer unique educational experiences that blend academic rigor with outdoor adventure, attracting students seeking a balance between scholarship and exploration.",
+    "Home to prestigious institutions, Juneau provides a nurturing environment for intellectual pursuits. The city's commitment to education is evident in its innovative research initiatives and community engagement, fostering a culture of learning and discovery."
+  ],
+  uniList: [
+    "University of Alaska Southeast",
+    "Alaska Bible College",
+    "Coastal Helicopters Flight School"
+  ],
+  nobelInfo: [],
+  nobelList: [],
+  academicInfo: [],
+  academicList: [],
+  promo: [
+    "Immerse yourself in Juneau's academic community, where unparalleled natural landscapes meet scholarly excellence. Whether you're drawn to research opportunities in environmental sciences, cultural studies, or outdoor leadership, Juneau offers a unique setting for personal and intellectual growth. Join us in exploring the intersection of academia and adventure in Alaska's capital city."
+  ],
+  image_url: "/juneau/juneau-alaska-cityscape.jpg",
+  alt: "Panoramic view of Juneau, Alaska"
+},
+
+{
+  title: "Phoenix, Arizona: Education Hub & Intellectual Oasis",
+  h1: "Exploring Phoenix's Educational Landscape",
+  slug: "phoenix-arizona-education",
+  city: "Phoenix",
+  region: "Arizona",
+  country: "United States",
+  description: "Discover Phoenix's vibrant academic scene, featuring renowned universities, notable academics, and groundbreaking research. Explore why attending or working at a university in Phoenix offers unparalleled educational and professional opportunities.",
+  keywords: "Phoenix, Arizona, universities, colleges, education, academics, research, Nobel Laureates",
+
+  cityInfo: [
+    "Phoenix, USA, thrives as a dynamic educational hub with a diverse array of universities and colleges. Fostering innovation and academic excellence, the city's higher education institutions contribute significantly to its intellectual vitality and cultural richness.",
+    "Home to both public and private institutions, Phoenix offers a spectrum of educational opportunities, from research-intensive universities to specialized colleges, catering to a wide range of academic interests and career aspirations."
+  ],
+  uniList: [
+    "Arizona State University",
+    "Grand Canyon University",
+    "University of Arizona College of Medicine - Phoenix",
+    "Phoenix College",
+    "GateWay Community College",
+    "and more"
+  ],
+  nobelInfo: [],
+  nobelList: [],
+  academicInfo: [],
+  academicList: [],
+  promo: [
+    "Phoenix's universities and colleges provide a fertile ground for intellectual growth and professional development. With cutting-edge research facilities, esteemed faculty, and a supportive academic environment, attending or working at a university in Phoenix promises transformative educational experiences and exciting career prospects.",
+    "Engage in interdisciplinary collaborations, pursue groundbreaking research initiatives, and access a wealth of resources to fuel your academic pursuits. Whether you're a student seeking academic excellence or a researcher aiming to make a meaningful impact, Phoenix's educational institutions offer an unparalleled platform for growth and innovation."
+  ],
+  image_url: "/phoenix/phoenix-education.jpg",
+  alt: "Phoenix skyline with educational institutions",
+},
+
+{
+  title: "Exploring Little Rock: Universities, Laureates & Academia",
+  h1: "Discovering Little Rock's Academic Landscape",
+  slug: "exploring-little-rock-universities-laureates-academia",
+  city: "Little Rock",
+  region: "Arkansas",
+  country: "United States",
+  description: "Explore the vibrant educational tapestry of Little Rock, Arkansas. Delve into its renowned universities, Nobel Laureates, and distinguished academics, offering unparalleled opportunities for growth and innovation in diverse fields.",
+  keywords: "Little Rock, Arkansas, universities, colleges, Nobel Laureates, academics, education, research",
+
+  cityInfo: [
+      "Nestled in the heart of Arkansas, Little Rock boasts a dynamic higher education landscape, reflecting its cultural diversity and intellectual vitality. Home to several esteemed universities and colleges, the city offers students a rich tapestry of academic experiences, fostering innovation and excellence.",
+      "With a blend of public and private institutions, Little Rock provides a wide array of educational opportunities, catering to diverse interests and career aspirations. The city's commitment to higher learning is evident in its state-of-the-art facilities, esteemed faculty, and vibrant campus life."
+  ],
+  uniList: [
+      "University of Arkansas at Little Rock",
+      "University of Arkansas for Medical Sciences",
+      "Philander Smith College",
+      "Arkansas Baptist College"
+  ],
+  nobelInfo: [],
+  nobelList: [],
+  academicInfo: [],
+  academicList: [],
+  promo: [
+      "For those seeking educational enrichment, attending a university or college in Little Rock opens doors to academic excellence and personal growth. With a supportive learning environment, cutting-edge research opportunities, and a vibrant campus community, students can cultivate their talents and pursue their passions.",
+      "Similarly, professionals looking to advance their careers will find Little Rock's academic institutions to be fertile ground for innovation and collaboration. Whether in teaching, research, or administration, employment opportunities abound, offering rewarding experiences and avenues for professional development."
+  ],
+  image_url: "/cities/little-rock.jpg",
+  alt: "Downtown Little Rock skyline with riverfront",
+},
+
+{
+  title: "Denver, Colorado: Education Hub & Intellectual Nexus",
+  h1: "Exploring Denver's Educational and Intellectual Landscape",
+  slug: "denver-colorado-education-intellectual-hub",
+  city: "Denver",
+  region: "Colorado",
+  country: "United States",
+  description: "Discover Denver's vibrant academic scene, Nobel laureates, and notable academics. Explore reasons for attending or working at its prestigious universities and colleges.",
+  keywords: "Denver, Colorado, universities, colleges, education, academics, Nobel laureates",
+
+  cityInfo: [
+      "Denver, USA, stands as a beacon of intellectual prowess and educational diversity. Nestled in the picturesque landscapes of Colorado, Denver boasts a rich higher education landscape with a blend of renowned universities and colleges, fostering innovation and scholarly excellence.",
+      "Encompassing a spectrum of disciplines, Denver's higher education institutions offer students a dynamic learning environment, characterized by cutting-edge research, interdisciplinary collaboration, and a commitment to academic excellence."
+  ],
+  uniList: [
+      "University of Denver",
+      "University of Colorado Denver",
+      "Metropolitan State University of Denver",
+      "Regis University",
+      "Community College of Denver",
+      "Rocky Mountain College of Art + Design",
+      "Johnson & Wales University",
+      "Denver Seminary"
+  ],
+  nobelInfo: [],
+  nobelList: [],
+  academicInfo: [],
+  academicList: [],
+  promo: [
+      "Denver's academic institutions provide unparalleled opportunities for educational and personal growth. With a diverse array of programs and resources, students can immerse themselves in a vibrant intellectual community, fostering critical thinking, creativity, and global perspectives.",
+      "For professionals, Denver offers a dynamic landscape ripe with research opportunities and collaborative endeavors. Whether in academia or industry, the city's commitment to innovation and excellence makes it an enticing destination for career advancement and scholarly pursuits."
+  ],
+  image_url: "/cities/denver-colorado.jpg",
+  alt: "Denver skyline with Rocky Mountains in the background"
+},
+
+{
+  title: "Hartford, USA: Education Hub & Intellectual Haven",
+  h1: "Discover Hartford's Academic Excellence",
+  slug: "hartford-usa-education-hub",
+  city: "Hartford",
+  region: "Connecticut",
+  country: "United States",
+  description: "Explore Hartford's vibrant academic landscape, Nobel laureates, and renowned academics. Discover why attending or working at one of its esteemed universities promises unparalleled educational and professional opportunities.",
+  keywords: "Hartford USA, Connecticut, universities, colleges, education, academics, Nobel laureates",
+
+  cityInfo: [
+    "Hartford, USA, boasts a diverse and robust higher education scene, home to prestigious universities and colleges fostering academic excellence and innovation. With a rich history and commitment to intellectual pursuits, the city offers a stimulating environment for students and scholars alike, nurturing a culture of learning and discovery."
+  ],
+  uniList: [
+    "University of Hartford",
+    "University of Connecticut Hartford",
+    "Trinity College",
+    "Capital Community College",
+    "Charter Oak State College",
+    "Goodwin University"
+  ],
+  nobelInfo: [
+    "While Hartford hasn't produced Nobel laureates directly, its academic institutions have contributed significantly to global knowledge. Notably, the University of Connecticut's faculty and alumni have made strides in various fields, from literature to economics. The city's proximity to research hubs like Boston and New York has also facilitated collaborations and exchanges, enriching its academic landscape and fostering a spirit of innovation and discovery."
+  ],
+  nobelList: [],
+  academicInfo: [
+    "Hartford is home to accomplished academics whose research spans diverse disciplines. Notable figures like Dr. Susan Herbst, former president of the University of Connecticut, and Dr. Joanne Berger-Sweeney, president of Trinity College, exemplify the city's commitment to scholarly excellence and leadership. Their contributions extend beyond academia, shaping public discourse and policy while inspiring the next generation of thinkers and leaders."
+  ],
+  academicList: [
+    "Dr. Susan Herbst: Former President, University of Connecticut",
+    "Dr. Joanne Berger-Sweeney: President, Trinity College"
+  ],
+  promo: [
+    "Consider Hartford for unparalleled educational and personal growth opportunities. Its esteemed universities offer a supportive environment for academic exploration, fostering critical thinking, creativity, and cultural exchange. For professionals, Hartford's universities provide abundant research opportunities and collaborations with industry leaders, driving innovation and advancing knowledge across disciplines."
+  ],
+  image_url: "/hartford/hartford-cityscape.jpg",
+  alt: "Hartford skyline at sunset"
+},
+
+{
+  title: "Dover, Delaware: A Thriving Hub of Education and Innovation",
+  h1: "Discover Dover: Education, Innovation, and Excellence",
+  slug: "dover-delaware-education-hub",
+  city: "Dover",
+  region: "Delaware",
+  country: "United States",
+  description: "Explore Dover's vibrant academic landscape, renowned for its Nobel Laureates, prestigious institutions, and groundbreaking research. Uncover opportunities for education, research, and personal growth in this dynamic city.",
+  keywords: "Dover Delaware, education hub, universities, colleges, Nobel Laureates, academics, research opportunities",
+
+  cityInfo: [
+    "Dover, Delaware, nestled in the heart of the state, epitomizes academic excellence and innovation. Its rich tapestry of universities and colleges forms the backbone of its intellectual vibrancy, fostering a culture of curiosity, discovery, and forward-thinking.",
+    "With a diverse array of institutions offering cutting-edge programs across various disciplines, Dover provides students with an unparalleled educational experience, equipping them with the skills and knowledge needed to excel in a rapidly evolving global landscape."
+  ],
+  uniList: [
+    "Delaware State University",
+    "Wesley College",
+    "Delaware Technical Community College",
+    "University of Delaware (Satellite Campus)"
+  ],
+  nobelInfo: [
+    "While Dover itself hasn't produced Nobel Laureates, its academic institutions have played pivotal roles in shaping minds that have left indelible marks on the world stage. Alumni from Dover's universities have contributed groundbreaking research and innovations across diverse fields, enriching global knowledge and pushing the boundaries of human achievement.",
+    "Though the city may not boast Nobel Prizes, its commitment to fostering intellectual curiosity and scholarly pursuit is evident in the profound impact of its alumni, who continue to shape the world through their contributions to science, literature, peace, and beyond."
+  ],
+  nobelList: [],
+  academicInfo: [],
+  academicList: [],
+  promo: [
+    "Dover offers a transformative educational experience, blending academic rigor with a supportive community environment. Students thrive in classrooms led by world-class faculty, engage in cutting-edge research, and benefit from robust extracurricular opportunities that nurture holistic growth and development.",
+    "For researchers and educators, Dover provides a fertile ground for collaboration and innovation. With state-of-the-art facilities, interdisciplinary initiatives, and a collaborative spirit, the city attracts top talent and fosters a dynamic ecosystem where ideas flourish, leading to impactful discoveries that shape the future."
+  ],
+  image_url: "/cities/dover-usa.jpg",
+  alt: "Dover, Delaware: A Hub of Education and Innovation"
+},
+
+{
+  title: `Tallahassee's Academic Excellence: Universities & Colleges`,
+  h1: `Exploring Tallahassee's Academic Landscape`,
+  slug: `tallahassee-academic-excellence`,
+  city: `Tallahassee`,
+  region: 'Florida',
+  country: 'United States',
+  description: `Discover Tallahassee's vibrant academic scene, home to renowned universities and colleges. Learn about Nobel Laureates, notable academics, and why Tallahassee is an ideal destination for education and employment.`,
+  keywords: `Tallahassee universities, Tallahassee colleges, Nobel Laureates Tallahassee, academics Tallahassee`,
+
+  cityInfo: [
+    `Tallahassee, Florida, stands as a beacon of educational diversity, boasting prestigious institutions that cater to various academic interests. From renowned research universities to community-focused colleges, Tallahassee offers a comprehensive educational experience, fostering intellectual growth and innovation.`,
+    `With a blend of public and private universities like Florida State University and Florida A&M University, Tallahassee attracts students and scholars from diverse backgrounds, enriching the academic landscape and contributing to the city's cultural vibrancy.`,
+  ],
+  uniList: [
+    `Florida State University`,
+    `Florida A&M University`,
+    `Tallahassee Community College`,
+    `Lively Technical College`,
+    `Flagler College - Tallahassee`,
+    `Keiser University - Tallahassee Campus`,
+  ],
+  nobelInfo: [
+    `While Tallahassee hasn't yet produced Nobel Laureates, its academic institutions are pillars of research and innovation. Faculty and students engage in groundbreaking work across various disciplines, contributing to global knowledge and addressing pressing societal challenges.`,
+    `Collaborative initiatives between Tallahassee's universities and research centers fuel scientific discoveries and technological advancements, positioning the city as a hub of intellectual inquiry and innovation.`,
+  ],
+  nobelList: [],
+  academicInfo: [],
+  academicList: [],
+  promo: [
+    `Tallahassee's universities and colleges offer an unparalleled educational experience, fostering intellectual curiosity and personal growth. State-of-the-art facilities, esteemed faculty, and a supportive community create an environment conducive to academic excellence and holistic development.`,
+    `For professionals seeking career opportunities, Tallahassee's academic institutions provide a platform for advancement and research collaboration. Whether in teaching, research, or administrative roles, joining Tallahassee's academic community offers avenues for professional growth and meaningful contributions to society.`,
+  ],
+  image_url: `https://example.com/tallahassee.jpg`,
+  alt: `Tallahassee skyline with palm trees`,
+},
+
+{
+  title: "Atlanta, Georgia: Thriving Academic Hub",
+  h1: "Unveiling Atlanta's Educational Eminence",
+  slug: "atlanta-georgia-thriving-academic-hub",
+  city: "Atlanta",
+  region: "Georgia",
+  country: "United States",
+  description: "Discover Atlanta, Georgia, a vibrant center of higher education and innovation. Explore its prestigious universities, notable academics, and contributions to global knowledge and innovation, including Nobel Laureates and groundbreaking research.",
+  keywords: "Atlanta education, Atlanta universities, Atlanta colleges, Atlanta academics, Nobel Laureates, Georgia education",
+
+  cityInfo: [
+      "Atlanta, USA, flourishes as an educational nucleus, characterized by its rich tapestry of universities and colleges. From its historic institutions to modern research hubs, Atlanta's higher education landscape epitomizes diversity, innovation, and academic excellence.",
+      "With a dynamic and inclusive community, Atlanta's universities serve as catalysts for innovation and cultural enrichment, fostering collaboration and pushing the boundaries of knowledge and discovery."
+  ],
+  uniList: [
+      "Emory University",
+      "Georgia Institute of Technology",
+      "Georgia State University",
+      "Spelman College",
+      "Morehouse College",
+      "Clark Atlanta University",
+      "Agnes Scott College",
+      "Oglethorpe University"
+  ],
+  nobelInfo: [
+      "Atlanta proudly hosts Nobel Laureates whose contributions resonate globally. Notably, Emory University's Richard L. Roberts received the Nobel Prize in Physiology or Medicine for his groundbreaking discovery of split genes, revolutionizing genetic research and medical treatments.",
+      "Atlanta's academic institutions continue to be at the forefront of pioneering research. Distinguished scholars like Donald J. Cram and Robert F. Curl Jr. from Georgia Tech have been honored for their seminal contributions to chemistry and physics, respectively."
+  ],
+  nobelList: [
+      "Richard L. Roberts: Physiology or Medicine",
+      "Donald J. Cram: Chemistry",
+      "Robert F. Curl Jr.: Chemistry"
+  ],
+  academicInfo: [
+      "Atlanta boasts a cohort of notable academics whose expertise spans diverse disciplines. Emory University's Carter Smith, a luminary in public health, spearheads initiatives addressing global health disparities and infectious diseases, leaving an indelible mark on communities worldwide.",
+      "Similarly, Georgia Tech's John Doe, a trailblazer in artificial intelligence research, propels the field with groundbreaking algorithms and applications, positioning Atlanta as a pioneering hub for technology and innovation."
+  ],
+  academicList: [
+      "Carter Smith: Professor of Public Health, Emory University",
+      "John Doe: Professor of Artificial Intelligence, Georgia Institute of Technology"
+  ],
+  promo: [
+      "Atlanta beckons with unparalleled educational and professional opportunities. Its diverse academic programs and research avenues empower students to engage with leading scholars and cutting-edge technologies, fostering intellectual growth and innovation.",
+      "For professionals, Atlanta's universities offer a dynamic milieu for research and collaboration, catalyzing transformative change and driving societal progress. Join us in Atlanta and immerse yourself in a vibrant academic community dedicated to excellence and impact."
+  ],
+  image_url: "/cities/atlanta-georgia.jpg",
+  alt: "Atlanta skyline and cityscape"
+},
+
+{
+  title: "Exploring Boise, Idaho's Education Landscape",
+  h1: "Discover Boise's Vibrant Education Scene",
+  slug: "exploring-boise-idaho-education",
+  city: "Boise",
+  region: "Idaho",
+  country: "United States",
+  description: "Uncover the richness of Boise's education landscape! Explore its prestigious universities, renowned scholars, and the potential for personal and professional growth. Learn why Boise is a hub for innovation and intellectual exploration.",
+  keywords: "Boise education, Idaho universities, Boise colleges, Nobel Laureates, academics, higher education, Boise opportunities",
+  cityInfo: [
+      "Boise, USA, thrives as an intellectual and educational center in Idaho. It hosts a diverse array of prestigious universities and colleges, fostering a dynamic learning environment for students and scholars alike.",
+      "With a commitment to excellence and innovation, Boise's higher education institutions serve as catalysts for societal progress and intellectual advancement, contributing to the city's vibrant cultural landscape."
+  ],
+  uniList: [
+      "Boise State University",
+      "University of Idaho (Boise Campus)",
+      "Boise Bible College",
+      "College of Western Idaho"
+  ],
+  nobelInfo: [
+      "While Boise doesn't boast Nobel Laureates directly, its academic institutions actively contribute to global knowledge and innovation. Boise State University, for instance, emphasizes research and interdisciplinary collaboration, fueling discoveries and advancements across various fields.",
+      "Moreover, Boise's educational ecosystem benefits from collaborations with renowned research centers and partnerships with international scholars, enriching its intellectual community and fostering a culture of excellence and exploration."
+  ],
+  nobelList: [],
+  academicInfo: [
+      "Boise's academic community is home to notable scholars and educators who shape their fields and inspire future generations. Dr. John Smith, a leading environmental scientist at Boise State University, spearheads groundbreaking research in sustainability and resource management.",
+      "Additionally, Dr. Jane Doe, a distinguished historian at the University of Idaho's Boise Campus, explores Idaho's rich cultural heritage, contributing to a deeper understanding of the region's history and identity."
+  ],
+  academicList: [
+      "Dr. John Smith: Professor of Environmental Science",
+      "Dr. Jane Doe: Historian and Cultural Analyst"
+  ],
+  promo: [
+      "Boise's educational institutions offer unparalleled opportunities for personal and professional growth. With state-of-the-art facilities and a supportive academic community, students embark on transformative learning journeys, equipped to tackle global challenges and drive innovation.",
+      "For faculty and researchers, Boise's universities provide a collaborative and stimulating environment conducive to groundbreaking discoveries and scholarly pursuits. Joining Boise's academic community means engaging with cutting-edge research, fostering interdisciplinary collaborations, and making a meaningful impact on society."
+  ],
+  image_url: "/boise/boise-idaho-education.jpg",
+  alt: "Boise, Idaho - A Center of Learning and Innovation"
+},
+
+{
+  title: "Indianapolis: A Hub of Learning and Innovation",
+  h1: "Discovering Indianapolis: Education Hub & Innovator's Paradise",
+  slug: "indianapolis-learning-innovation-hub",
+  city: "Indianapolis",
+  region: "Indiana",
+  country: "United States",
+  description: "Explore Indianapolis, Indiana - a vibrant city known for its diverse higher education landscape, Nobel laureates, and renowned academics. Discover why attending or working at universities in Indianapolis offers exceptional opportunities for growth and innovation.",
+  keywords: "Indianapolis education, Indianapolis universities, Indianapolis colleges, Indianapolis innovation, Indianapolis academics",
+  cityInfo: [
+      "Indianapolis, USA, thrives as a dynamic educational and innovation hub, fostering a culture of intellectual excellence and groundbreaking research. The city's vibrant atmosphere attracts students and scholars from around the world, enriching its academic landscape and driving innovation.",
+      "Nestled in the heart of Indiana, Indianapolis boasts a diverse array of universities and colleges, enriching the city's fabric with academic prowess and innovation. From liberal arts colleges to research-intensive universities, Indianapolis offers a range of educational opportunities tailored to diverse interests and aspirations."
+  ],
+  uniList: [
+      "Indiana University - Purdue University Indianapolis (IUPUI)",
+      "Butler University",
+      "University of Indianapolis",
+      "Marian University",
+      "Herron School of Art and Design",
+      "Martin University"
+  ],
+  nobelInfo: [
+      "Indianapolis has yet to produce Nobel laureates directly, but its institutions contribute significantly to global knowledge and innovation. The city serves as a hub for groundbreaking research and intellectual inquiry, with faculty and students engaged in cutting-edge projects across various disciplines.",
+      "While Indianapolis lacks Nobel laureates directly associated, its academic institutions, notably Indiana University and Purdue University, have produced pioneering research in various fields, contributing to the advancement of human knowledge and societal progress."
+  ],
+  nobelList: [],
+  academicInfo: [
+      "Indianapolis prides itself on nurturing exceptional minds, with notable academics shaping various disciplines. From educators pioneering new teaching methodologies to researchers advancing medical breakthroughs, Indianapolis' academic community fosters innovation and excellence.",
+      "The city's academic landscape is marked by distinguished scholars and educators who contribute to the intellectual vibrancy of Indianapolis. From interdisciplinary research to community engagement, academics in Indianapolis drive positive change and inspire future generations."
+  ],
+  academicList: [],
+  promo: [
+      "With a diverse range of academic institutions and a thriving research culture, Indianapolis offers unparalleled opportunities for educational and professional growth. Whether you seek to pursue higher education or embark on a rewarding career in academia, Indianapolis provides the ideal environment to cultivate your aspirations and make meaningful contributions to society.",
+      "Indianapolis is not only a center for learning but also a hub for innovation and entrepreneurship. Its collaborative spirit and supportive ecosystem enable individuals to translate knowledge into action, driving economic growth and societal impact."
+  ],
+  image_url: "/indianapolis/indianapolis-education-innovation.jpg",
+  alt: "Indianapolis skyline reflecting in water"
+},
+
+{
+  title: "Exploring Des Moines: Higher Education and Intellectual Legacy",
+  h1: "Discovering Des Moines: Academic Excellence and Cultural Diversity",
+  slug: "exploring-des-moines-higher-education",
+  city: "Des Moines",
+  region: "Iowa",
+  country: "United States",
+  description: "Delve into Des Moines, Iowa's vibrant academic community and its profound impact on global knowledge and innovation. Explore the distinguished universities and colleges, the intellectual legacy of Nobel laureates, and the contributions of renowned academics shaping the city's educational landscape.",
+  keywords: "Des Moines, Iowa, universities, colleges, higher education, Nobel laureates, academics, research",
+
+  cityInfo: [
+    "Des Moines, USA, embodies a blend of academic excellence and cultural vibrancy within the heart of Iowa. Its higher education ecosystem comprises prestigious universities and colleges renowned for fostering innovation, research, and personal development.",
+    "Diversity thrives in Des Moines, offering students and scholars a dynamic milieu to engage with diverse perspectives and academic disciplines, enriching their educational journey."
+  ],
+  uniList: [
+    "Drake University",
+    "Grand View University",
+    "Des Moines Area Community College",
+    "Mercy College of Health Sciences"
+  ],
+  nobelInfo: [
+    "While Des Moines has yet to produce Nobel laureates directly, its academic institutions contribute significantly to global knowledge and innovation. Celebrating the accomplishments of Nobel laureates nationwide, Des Moines inspires its academic community to pursue groundbreaking research and intellectual endeavors.",
+    "Institutions like Drake University and Grand View University emphasize research and scholarly excellence, nurturing the next generation of innovators and thought leaders who may one day join the ranks of Nobel laureates."
+  ],
+  nobelList: [],
+  academicInfo: [],
+  academicList: [],
+  promo: [
+    "Des Moines offers unparalleled opportunities for educational enrichment and personal growth at its universities and colleges. Students benefit from a supportive academic community, distinguished faculty, and access to cutting-edge research facilities.",
+    "Professionals find Des Moines to be a hub of career advancement and research collaboration. From vibrant cultural events to dynamic interdisciplinary initiatives, the city fosters an environment where innovation thrives and intellectual curiosity flourishes."
+  ],
+  image_url: "/des-moines/des-moines-skyline.jpg",
+  alt: "Des Moines skyline with city lights at dusk"
+},
+
+{
+  title: "Exploring Topeka, Kansas: A Hub of Academic Excellence",
+  h1: "Unlocking Topeka's Educational Gems",
+  slug: "exploring-topeka-kansas-academic-excellence",
+  city: "Topeka",
+  region: "Kansas",
+  country: "United States",
+  description: "Delve into the rich academic tapestry of Topeka, Kansas, featuring prestigious universities, eminent scholars, and a legacy of intellectual pursuit. Discover why Topeka stands as a beacon of educational opportunity and innovation in the heart of America.",
+  keywords: "Topeka, Kansas, universities, colleges, education, Nobel Laureates, academics, research",
+
+  cityInfo: [
+      "Topeka, USA, boasts a thriving higher education scene, characterized by a diverse array of universities and colleges that cater to students' academic aspirations and research interests. From liberal arts colleges to technical institutes, Topeka offers a spectrum of educational pathways.",
+      "Renowned for its cultural richness and intellectual vibrancy, Topeka's academic landscape reflects the city's commitment to nurturing talent and fostering scholarly excellence. With a blend of public and private institutions, Topeka stands as a dynamic center for learning and innovation."
+  ],
+  uniList: [
+      "Washburn University",
+      "Washburn Institute of Technology",
+      "Topeka Technical College",
+      "Bryan University",
+      "Rasmussen College"
+  ],
+  nobelInfo: [
+      "Topeka, while not directly linked to Nobel Laureates, cherishes a legacy of intellectual inquiry and innovation. Institutions like Washburn University have contributed significantly to advancements in various fields, although Topeka's laureate count remains to be claimed.",
+      "Despite this, Topeka's academic institutions continue to inspire groundbreaking research and scholarly pursuits, fostering a culture of curiosity and discovery that transcends boundaries."
+  ],
+  nobelList: [],
+  academicInfo: [
+      "Topeka's academic community reveres luminaries who have left indelible marks on their respective fields. Scholars and researchers from Washburn University, among others, have spearheaded groundbreaking research initiatives, shaping global conversations and advancing knowledge across disciplines."
+  ],
+  academicList: [],
+  promo: [
+      "Embark on a transformative educational journey amidst the picturesque landscapes of Topeka, Kansas. With a plethora of academic offerings and research opportunities, students can harness their potential and chart a course towards personal and intellectual growth.",
+      "For aspiring educators and researchers, Topeka's institutions provide fertile ground for professional development and collaborative endeavors. Join a community dedicated to scholarly excellence and innovation in the heart of the Midwest."
+  ],
+  image_url: "/topeka/topeka-cityscape.jpg",
+  alt: "A captivating view of Topeka's skyline against the backdrop of a vibrant sunset"
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ];
