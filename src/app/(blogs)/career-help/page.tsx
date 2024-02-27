@@ -39,7 +39,7 @@ export default function BlogPosts({
   const page = searchParams['page'] ?? '1';
   const per_page = 12;
 
-  // mocked, skipped and limited in the real app
+  // Pagination setting
   const offset = page === '1' ? topBlogsCount : 0;
   const start = (Number(page) - 1) * Number(per_page) + offset; // 5, 12, 24 ...
   const end = start + Number(per_page);
@@ -145,9 +145,14 @@ export default function BlogPosts({
             {entries.map((post, index) => (
               <article
                 key={index}
-                className="card bg-slate-100 shadow-xl image-full items-stretch"
+                className="card bg-slate-100 shadow-xl image-full items-stretch relative"
+                style={{
+                  backgroundImage: `url(${post.image_url})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
               >
-                <figure>
+                <figure className="aspect-w-16 aspect-h-9">
                   <Link href={blogPath + post.slug}>
                     <Image
                       src={post.image_url}
