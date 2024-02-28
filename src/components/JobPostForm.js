@@ -29,6 +29,7 @@ const JobPostForm = ({ partner, region }) => {
   let partnerImage = '/partners/post-a-job.jpg';
   let partnerPullDown = false;
   let institutionName = `Institution Name (ie: Harvard University)`;
+  let urlExample = `uni-name.edu/job-posting-url`;
 
   if (partner === 'JobElephant') {
     partnerPullDown = true;
@@ -40,6 +41,7 @@ const JobPostForm = ({ partner, region }) => {
     partnerImage =
       'https://academicjobs.s3.amazonaws.com/img/_misc/jobelephant-puzzle.png';
     avatarPath = '/partners/jobelephant/avatars/';
+    urlExample = `apptrkr.com/...`;
   }
   useEffect(() => {
     //alert(partnerName)
@@ -96,7 +98,9 @@ const JobPostForm = ({ partner, region }) => {
       <main className=" content-grid">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
-            <h1 className={`text-4xl font-bold mb-8 mt-8 underline-full text-[#3b5683]`}>
+            <h1
+              className={`text-4xl font-bold mb-8 mt-8 underline-full text-[#3b5683]`}
+            >
               {partnerName} Quick Post
             </h1>
             <form className=" " onSubmit={handleSubmit(onSubmit)}>
@@ -243,7 +247,7 @@ const JobPostForm = ({ partner, region }) => {
                 <InputBlock
                   register={register}
                   errors={errors}
-                  label="Job Link URL (ie: apptrkr.com/...)"
+                  label={`Job Link URL (ie: ${urlExample})`}
                   type="text"
                   field="04_Job_Link_URL"
                   forceClass=" py-3 text-black"
