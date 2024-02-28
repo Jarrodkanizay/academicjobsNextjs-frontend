@@ -284,43 +284,6 @@ export const cityData = [
     alt: 'Panoramic view of Canberra with a focus on its academic institutions',
   },
   {
-    title: 'Wollongong, Australia: A Hub of Academic Innovation and Diversity',
-    h1: 'Wollongong: Fostering Excellence in Education and Research',
-    slug: 'wollongong-academic-innovation-diversity',
-    city: 'Wollongong',
-    region: 'New South Wales',
-    country: 'Australia',
-    description:
-      "Discover Wollongong's dynamic higher education environment, where universities excel in research, innovation, and offering diverse academic programs. Learn about the city's unique advantages for students and academics.",
-    keywords:
-      'Wollongong universities, higher education Wollongong, Wollongong colleges, academic research Wollongong',
-
-    cityInfo: [
-      "Wollongong, nestled between the Illawarra escarpment and the Pacific Ocean, is renowned for its vibrant higher education sector led by the University of Wollongong. The city's academic institutions are celebrated for their commitment to innovation, excellence in research, and a wide range of study options.",
-    ],
-    uniList: [
-      'University of Wollongong (UOW)',
-      'TAFE NSW Wollongong',
-      'Illawarra Institute for Mental Health',
-      'Wollongong College Australia',
-    ],
-    nobelInfo: '',
-    nobelList: [],
-    academicInfo: [
-      "Wollongong's academic community is distinguished by its scholars and researchers who contribute significantly to various fields, including engineering, environmental sciences, and digital technologies. Their work not only advances academic knowledge but also addresses real-world challenges.",
-    ],
-    academicList: [
-      'Gordon Wallace: Leading researcher in electromaterials and nanotechnology',
-      'Justin Yerbury: Renowned for his studies on motor neuron disease',
-      'Sharon Robinson: Climate change biologist',
-    ],
-    promo: [
-      'Wollongong offers an ideal setting for academic pursuits and professional development, with its world-class university, supportive community, and beautiful natural surroundings. Students and staff benefit from high-quality education, groundbreaking research opportunities, and a balanced lifestyle.',
-    ],
-    image_url: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914',
-    alt: 'Panoramic view of Wollongong, highlighting the University campus and surrounding landscape',
-  },
-  {
     title:
       'Sydney, Australia: A World-Class Destination for Higher Education and Research',
     h1: 'Sydney: Excellence in Academia and Innovation',
@@ -364,8 +327,47 @@ export const cityData = [
       "Sydney provides an unparalleled environment for academic growth and professional development, set against the backdrop of a city known for its stunning natural beauty, cultural diversity, and vibrant lifestyle. The city's universities are at the forefront of research and innovation, offering students and staff a world of opportunities.",
     ],
     image_url:
-      'https://www.australia.com/content/australia/en/places/sydney-and-surrounds/guide-to-sydney/jcr:content/image.adapt.800.HIGH.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/6/63/Skylines_of_Sydney_CBD_seen_from_North_Sydney%2C_August_2022%2C_02.jpg',
     alt: "Iconic Sydney Opera House and Harbour Bridge, symbolizing the city's blend of cultural heritage and modern innovation",
+  },
+
+  {
+    title: 'Wollongong, Australia: A Hub of Academic Innovation and Diversity',
+    h1: 'Wollongong: Fostering Excellence in Education and Research',
+    slug: 'wollongong-academic-innovation-diversity',
+    city: 'Wollongong',
+    region: 'New South Wales',
+    country: 'Australia',
+    description:
+      "Discover Wollongong's dynamic higher education environment, where universities excel in research, innovation, and offering diverse academic programs. Learn about the city's unique advantages for students and academics.",
+    keywords:
+      'Wollongong universities, higher education Wollongong, Wollongong colleges, academic research Wollongong',
+
+    cityInfo: [
+      "Wollongong, nestled between the Illawarra escarpment and the Pacific Ocean, is renowned for its vibrant higher education sector led by the University of Wollongong. The city's academic institutions are celebrated for their commitment to innovation, excellence in research, and a wide range of study options.",
+    ],
+    uniList: [
+      'University of Wollongong (UOW)',
+      'TAFE NSW Wollongong',
+      'Illawarra Institute for Mental Health',
+      'Wollongong College Australia',
+    ],
+    nobelInfo: '',
+    nobelList: [],
+    academicInfo: [
+      "Wollongong's academic community is distinguished by its scholars and researchers who contribute significantly to various fields, including engineering, environmental sciences, and digital technologies. Their work not only advances academic knowledge but also addresses real-world challenges.",
+    ],
+    academicList: [
+      'Gordon Wallace: Leading researcher in electromaterials and nanotechnology',
+      'Justin Yerbury: Renowned for his studies on motor neuron disease',
+      'Sharon Robinson: Climate change biologist',
+    ],
+    promo: [
+      'Wollongong offers an ideal setting for academic pursuits and professional development, with its world-class university, supportive community, and beautiful natural surroundings. Students and staff benefit from high-quality education, groundbreaking research opportunities, and a balanced lifestyle.',
+    ],
+    image_url:
+      'https://www.illawarramercury.com.au/images/transform/v1/crop/frm/tSTP9QYGHQpn75NApSSxni/1e22faf9-cba0-43d2-8450-53a2ad72a4c2.jpg/r563_0_5709_2829_w1200_h678_fmax.jpg',
+    alt: 'Panoramic view of Wollongong, highlighting the University campus and surrounding landscape',
   },
   {
     title:
@@ -413,7 +415,7 @@ export const cityData = [
       "Paris offers unmatched opportunities for academic and personal growth in an environment steeped in history and culture. The city's universities are at the forefront of research and innovation, making it a prime destination for students and academics worldwide.",
       'Choosing Paris for study or work means immersing yourself in a city that celebrates knowledge, creativity, and diversity, with ample opportunities for career advancement and cultural enrichment.',
     ],
-    image_url: '/cities/paris.jpg',
+    image_url: 'https://live.staticflickr.com/2463/3598596311_84211f2566_b.jpg',
     alt: 'Iconic view of Paris with prominent educational institutions highlighted',
   },
   {
@@ -463,7 +465,8 @@ export const cityData = [
       "New York City offers an exceptional environment for academic and personal growth, blending world-class educational facilities with the dynamism of city life. It's a place where students and academics from around the globe come to challenge themselves and expand their horizons.",
       'With its rich cultural scene, networking opportunities, and access to leading institutions, NYC stands out as a premier destination for those looking to advance their academic careers and make an impact in their fields.',
     ],
-    image_url: '/cities/new york.jpg',
+    image_url:
+      'https://t3.ftcdn.net/jpg/02/09/70/56/360_F_209705645_b78HGJI1i1mxqLwMYA7z1m3VvCxgxJFO.jpg',
     alt: 'Skyline of New York City highlighting its educational institutions',
   },
   {
