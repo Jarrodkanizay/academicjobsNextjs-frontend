@@ -2864,46 +2864,6 @@ export const cityData = [
 },
 
 {
-  title: "Robina, Australia: Thriving Academic Center on the Gold Coast",
-  h1: "Exploring Robina's Academic Landscape",
-  slug: "robina-australia-academic-center",
-  city: "Robina",
-  region: "Queensland",
-  country: "Australia",
-  description: "Discover the vibrant academic scene in Robina, Australia. Explore renowned universities, notable academics, and the contributions of Nobel Laureates. Learn why Robina is a premier destination for education and research.",
-  keywords: "Robina Australia, universities, colleges, education hub, Nobel Laureates, academics, Queensland, Gold Coast",
-
-  cityInfo: [
-      "Nestled in Queensland's Gold Coast, Robina stands as a beacon of intellectual and cultural vibrancy. The city boasts a rich tapestry of universities and colleges, offering diverse educational pathways and research opportunities.",
-      "Robina's blend of coastal charm and academic excellence creates an unparalleled environment for personal and intellectual growth, attracting students and scholars from across the globe."
-  ],
-  uniList: [
-      "Bond University",
-      "Southern Cross University, Gold Coast Campus",
-      "TAFE Queensland, Gold Coast Region",
-      "Griffith University, Gold Coast Campus"
-  ],
-  nobelInfo: [
-      "Robina proudly celebrates the achievements of Nobel Laureate Professor Peter Doherty, affiliated with Bond University. Professor Doherty's pioneering research in immunology and medicine, particularly in T cell-mediated immunity, earned him the Nobel Prize in Physiology or Medicine in 1996.",
-      "His legacy continues to inspire generations of researchers, shaping Robina's reputation as a global center of excellence in scientific inquiry and medical innovation."
-  ],
-  nobelList: ["Peter Doherty: Physiology or Medicine"],
-  academicInfo: [
-      "Robina is home to a cadre of esteemed academics who have made indelible marks in their fields. Notable among them is Professor Mary Mahoney of Bond University, whose groundbreaking research in environmental science and sustainable development resonates globally.",
-      "Professor Mahoney's dedication to environmental stewardship underscores Robina's commitment to advancing knowledge and addressing pressing societal challenges."
-  ],
-  academicList: [
-      "Mary Mahoney: Professor of Environmental Science"
-  ],
-  promo: [
-      "Robina offers an enriching environment for educational exploration and personal development. Students thrive amidst world-class institutions, fostering intellectual curiosity, critical thinking, and cultural exchange.",
-      "For professionals, Robina presents unparalleled opportunities for career advancement and research collaboration. Join a dynamic community of scholars and innovators shaping the future of education and discovery in Robina, Australia."
-  ],
-  image_url: "/robina/robina-australia-city-photo.jpg",
-  alt: "Scenic view of Robina, Australia - Education Hub of the Gold Coast"
-},
-
-{
   title: "Wagga Wagga, Australia: Education and Innovation Hub",
   h1: "Exploring the Academic Landscape of Wagga Wagga",
   slug: "wagga-wagga-australia-education-hub",
@@ -2922,13 +2882,9 @@ export const cityData = [
       "TAFE NSW - Riverina Institute"
   ],
   nobelInfo: [
-      "",
-      ""
   ],
   nobelList: [],
   academicInfo: [
-      "",
-      ""
   ],
   academicList: [],
   promo: [
@@ -3292,8 +3248,6 @@ export const cityData = [
       "TAFE Queensland Gladstone"
   ],
   nobelInfo: [
-      "",
-      ""
   ],
   nobelList: [],
   academicInfo: [
@@ -3654,8 +3608,6 @@ export const cityData = [
       "Armidale College of TAFE"
   ],
   nobelInfo: [
-      "",
-      ""
   ],
   nobelList: [],
   academicInfo: [
@@ -3804,8 +3756,6 @@ export const cityData = [
       "Monash University, Peninsula Campus"
   ],
   nobelInfo: [
-      "",
-      ""
   ],
   nobelList: [],
   academicInfo: [
