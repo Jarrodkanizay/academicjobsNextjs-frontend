@@ -21,10 +21,48 @@ export default function Page() {
 
   return (
     <main className="content-grid">
-      <h1>
+      <div className="bg-slate-200 mb-8 full-width">
+      <h1 className="mb-0">
         {/* Unlock Your Academic Potential!  */}
         Join Our Talent Pool Today!
       </h1>
+
+      <h3 className="">
+        We are looking for people who want to connect and collaborate!
+      </h3>
+      <div className="text-2-cols mb-6">
+        <p className="mb-6">
+          Our Talent Pool network is a rich community to innovate, and
+          collaborate. We're fostering a dynamic community of passionate
+          academics dedicated to sharing ideas, sparking innovation, and driving
+          academic excellence. Our platform is more than a mere network; it's a
+          thriving space for like-minded scholars to engage, motivate, and forge
+          lasting professional connections.
+        </p>
+        <p>
+          Dive into Academic Jobs' Talent Pool for tailored academic
+          opportunities. Be the first to discover roles that perfectly match
+          your skills and interests. Select your preferred areas, and receive
+          notifications about positions that align with your unique academic
+          profile. Seize the opportunity to find your ideal academic role and
+          become part of a community that truly values your expertise and
+          vision.
+        </p>
+
+        {/* Option 2
+        Elevate your academic journey by becoming part of our vibrant community.
+      We're on the lookout for individuals eager to connect, collaborate, and
+      share their passions. Joining our talent pool offers you a unique space to
+      connect with like-minded academics, exchange ideas, and find inspiration.
+      Connect, Collaborate, and Thrive Are you driven by a passion for academia?
+      We're building a community where your ideas and interests can flourish.
+      Join our talent pool to stay informed about exciting opportunities
+      tailored to your interests. Don't miss out – take the first step towards
+      academic excellence by connecting with us today! */}
+        {/* Suggested new text */}
+      </div>
+      </div>
+
       <div className="flex flex-col lg:flex-row lg:gap-8">
         <TalentPoolForm maxWidth="700" />
         {/* Contact Numbers */}
@@ -109,39 +147,7 @@ export default function Page() {
       <h2 className="underline-full">
         Power-up Your Academic Potential: Join Our Dynamic Talent Pool Today!
       </h2>
-      <h3 className="my-5">
-        We are looking for people who want to connect and collaborate!
-      </h3>
-      <div className="text-2-cols">
-        <p className="mb-6">
-          Our Talent Pool network is a rich community to innovate, and
-          collaborate. We're fostering a dynamic community of passionate
-          academics dedicated to sharing ideas, sparking innovation, and driving
-          academic excellence. Our platform is more than a mere network; it's a
-          thriving space for like-minded scholars to engage, motivate, and forge
-          lasting professional connections.
-        </p>
-        <p>
-          Dive into Academic Jobs' Talent Pool for tailored academic
-          opportunities. Be the first to discover roles that perfectly match
-          your skills and interests. Select your preferred areas, and receive
-          notifications about positions that align with your unique academic
-          profile. Seize the opportunity to find your ideal academic role and
-          become part of a community that truly values your expertise and
-          vision.
-        </p>
-        {/* Option 2
-        Elevate your academic journey by becoming part of our vibrant community.
-      We're on the lookout for individuals eager to connect, collaborate, and
-      share their passions. Joining our talent pool offers you a unique space to
-      connect with like-minded academics, exchange ideas, and find inspiration.
-      Connect, Collaborate, and Thrive Are you driven by a passion for academia?
-      We're building a community where your ideas and interests can flourish.
-      Join our talent pool to stay informed about exciting opportunities
-      tailored to your interests. Don't miss out – take the first step towards
-      academic excellence by connecting with us today! */}
-        {/* Suggested new text */}
-      </div>
+     
       {/* Cards */}
       <h2 className="text-center my-8">Join the community</h2>
       {/* <div className="container mx-auto"> */}

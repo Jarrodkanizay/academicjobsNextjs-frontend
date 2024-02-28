@@ -6,7 +6,10 @@ const nextConfig = {
       'res.cloudinary.com',
       'iloveacademicjobs.com',
       'uniiq.com',
-      'qut.edu.au',
+      'www.qut.edu.au',
+      'www.academicjobs.com',
+      'images.all-free-download.com',
+      'dentalstudents.com.au',
     ],
   },
   async redirects() {

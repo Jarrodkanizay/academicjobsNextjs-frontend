@@ -195,7 +195,7 @@ export default function Page() {
                 <div className="column">
                   <ul className="  rounded-3xl p-4 shadow-md">
                     <li className="mb-1 mt-4 mt-4 flex">
-                      <img
+                      <Image
                         width={100}
                         height={100}
                         src="https://www.qut.edu.au/__data/assets/image/0007/909781/qut-logo-og-1200.jpg"
@@ -246,7 +246,7 @@ export default function Page() {
                 <div className="column">
                   <ul className=" rounded-3xl p-4 shadow-md">
                     <li className="mb-1 mt-4 mt-4 flex">
-                      <img 
+                      <Image 
                         width={100}
                         height={100}
                         src="https://www.academicjobs.com/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FBondTwitterIcon_400x400.jpg&w=384&q=75"
@@ -297,7 +297,7 @@ export default function Page() {
                 <div className="column">
                   <ul className=" rounded-3xl p-4 shadow-md">
                     <li className="mb-1 mt-4 mt-4 flex">
-                      <img 
+                      <Image 
                         width={100}
                         height={100}
                         src="https://images.all-free-download.com/images/graphiclarge/the_university_of_adelaide_1_111801.jpg"
@@ -348,7 +348,7 @@ export default function Page() {
                 <div className="column">
                   <ul className=" rounded-3xl p-4 shadow-md">
                     <li className="mb-1 mt-4 mt-4 flex">
-                      <img 
+                      <Image 
                         width={100}
                         height={100}
                         src="https://dentalstudents.com.au/wp-content/uploads/2021/04/0001_UWA-logo.jpg"
@@ -409,7 +409,7 @@ export default function Page() {
                     <a className=" text-gray-400"> 23 Feb, 2024</a>
                   </div>
                   <figure  >
-                    <img
+                    <Image
                       width={200}
                       height={200}
                       src="https://academicjobs.s3.amazonaws.com/img/_misc/1694053173648.jpg"
@@ -450,7 +450,7 @@ export default function Page() {
                   <a className=" text-gray-400"> 10 Dec, 2023</a>
                 </div>
                 <figure>
-                  <img
+                  <Image
                     width={1280}
                     height={380}
                     src="/academic-job-postings/university-of-sydney.jpg"
