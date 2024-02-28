@@ -46,7 +46,7 @@ export const cityData = [
     promo: [
       "Boston's educational institutions offer unmatched opportunities for academic and personal growth, as well as professional advancement. With its prestigious universities, vibrant student life, and rich history of research and innovation, Boston is an ideal destination for those seeking to learn, teach, and explore.",
     ],
-    image_url: '/cities/boston-city-skyline-badge.png',
+    image_url: 'https://live.staticflickr.com/3194/2578799899_73756bd889_c.jpg',
     alt: 'Illustration of Boston city skyline',
   },
   {
@@ -144,7 +144,8 @@ export const cityData = [
     promo: [
       "Melbourne offers an enriching environment for students and academics alike, characterized by its robust educational infrastructure, cutting-edge research opportunities, and a culturally diverse community. Whether you're looking to advance your academic career or collaborate on innovative projects, Melbourne's institutions provide the perfect setting for personal and professional growth.",
     ],
-    image_url: '/cities/melbourne-flinders-street-station.jpg',
+    image_url:
+      'https://wisatamuda.com/wp-content/uploads/2018/05/9.-Tempat-Wisata-Terbaik-di-Melbourne-Yarra-River.jpg',
     alt: 'Scenic view of a prominent Melbourne university campus',
   },
   {

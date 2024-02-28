@@ -58,26 +58,28 @@ export default function CityInfo({
         width={800}
         height={800}
       /> */}
-      <h2 className="underline-full mb-8">Top Cities for Higher Ed Jobs</h2>
+      <h2 className="underline-full mb-8 text-2xl sm:text-3xl">
+        Top Cities for Higher Ed Jobs
+      </h2>
       {cityData ? (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
             {cityData.slice(0, topListCount).map((post, index) => (
               <article
                 key={index}
-                className="card card-side bg-slate-100 shadow-xl"
+                className="card card-side bg-slate-100 shadow-xl flex flex-col lg:flex-row"
               >
-                <figure>
+                <figure className="rounded-b-none rounded-t-lg lg:rounded-l-lg lg:rounded-r-none overflow-hidden">
                   <Link href={routePath + post.slug}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={post.image_url}
                       alt={post.alt}
-                      className="max-w-[260px] h-full object-cover"
+                      className="w-full h-full object-cover"
                     />
                   </Link>
                 </figure>
-                <div className="card-body max-w-96">
+                <div className="card-body lg:max-w-[380px]">
                   <h2 className="card-title grow line-clamp-3 m-0 mb-8">
                     <Link
                       href={routePath + post.slug}
@@ -125,7 +127,10 @@ export default function CityInfo({
 
           {cityData.length > topListCount ? (
             <>
-              <h2 id="pagination" className="underline-full mt-16 mb-8">
+              <h2
+                id="pagination"
+                className="underline-full mt-16 mb-8 text-2xl sm:text-3xl"
+              >
                 Explore Cities in Academia
               </h2>{' '}
             </>
