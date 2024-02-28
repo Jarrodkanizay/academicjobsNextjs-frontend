@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
+import India from '@/components/topUnis/India';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -144,86 +145,10 @@ export default function Page() {
           <div id="myUniversity" class="myUniversity">
             <div class="widget__text-block1"> */}
               <div>
-              <h2 className="underline-full">
+              <h2 className="">
                   AcademicJobs India: University Jobs by State{' '}
                 </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
-                  <ul>
-                    <li className="mb-1 mt-4 ">
-                      <Link
-                        href="/jobs/mumbai/"
-                        className="text-[#f4a10c] font-bold"
-                      >
-                        Mumbai
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/employers/indian-institute-of-technology-bombay/3844/">
-                        Indian Institute of Technology Bombay
-                      </Link>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="mb-1 mt-4 ">
-                      <Link
-                        href="/jobs/chennai/"
-                        className="text-[#f4a10c] font-bold"
-                      >
-                        Chennai
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/employers/indian-institute-of-technology-madras/3845/">
-                        Indian Institute of Technology Madras
-                      </Link>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="mb-1 mt-4 ">
-                      <Link
-                        href="/jobs/vellore/"
-                        className="text-[#f4a10c] font-bold"
-                      >
-                        Vellore
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/employers/vellore-institute-of-technology/3846/">
-                        Vellore Institute of Technology
-                      </Link>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="mb-1 mt-4 ">
-                      <Link
-                        href="/jobs/bangalore/"
-                        className="text-[#f4a10c] font-bold"
-                      >
-                        Bangalore
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/employers/indian-institute-of-science/7818/">
-                        Indian Institute of Science (IISc)
-                      </Link>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="mb-1 mt-4 ">
-                      <Link
-                        href="/jobs/delhi/"
-                        className="text-[#f4a10c] font-bold"
-                      >
-                        Delhi
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/employers/indian-institute-of-technology-delhi/7822/">
-                        Indian Institute of Technology Delhi
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+                <India heading="" />
               </div>
             </div>
             </div>

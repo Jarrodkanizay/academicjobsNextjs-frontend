@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
+import ME from '@/components/topUnis/ME';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -104,43 +105,8 @@ export default function Page() {
           <div id="myUniversity" class="myUniversity">
             <div class="widget__text-block1"> */}
               <div>
-              <h2 className="underline-full">AcademicJobs Middle East: University Jobs  </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/saudi arabia/" className='text-[#f4a10c] font-bold'>Saudi Arabia</Link></li>
-                    <li><Link href="/employers/king-saud-university-saudi-arabia/8522/">King
-                      Saud University</Link>
-                    </li>
-                    <li><Link href="/employers/king-abdullah-university-of-science-and-technology-saudi-arabia/8513/">King
-                      Abdullah University of Science and Technology</Link></li>
-                    <li><Link href="/employers/king-abdul-aziz-university-saudi-arabia/8512/">King
-                      Abdul Aziz University</Link></li>
-                  </ul>
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/uae/" className='text-[#f4a10c] font-bold'>UAE</Link></li>
-                    <li><Link href="/employers/khalifa-university-uae/8481/">Khalifa
-                      University</Link>
-                    </li>
-                    <li><Link href="/employers/united-arab-emirates-university-uae/10985/">United
-                      Arab Emirates University</Link></li>
-                    <li><Link href="/employers/american-university-in-dubai-uae/5799/">American
-                      University in Dubai</Link></li>
-                    <li><Link href="/employers/american-university-of-sharjah-uae/5815/">American
-                      University of Sharjah</Link></li>
-                  </ul>
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/lebanon/" className='text-[#f4a10c] font-bold'>Lebanon</Link></li>
-                    <li><Link href="/employers/american-university-of-beirut-lebanon/5804/">American
-                      University of Beirut</Link></li>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/jordan/" className='text-[#f4a10c] font-bold'>Jordan</Link></li>
-                    <li><Link href="/employers/university-of-jordan-jordan/12763/">University
-                      of Jordan</Link></li>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/qatar/" className='text-[#f4a10c] font-bold'>Qatar</Link></li>
-                    <li><Link href="/employers/qatar-university-qatar/12944/">Qatar
-                      University</Link>
-                    </li>
-                  </ul>
-                </div>
+              <h2 className="">AcademicJobs Middle East: University Jobs  </h2>
+              <ME heading="" />
               </div>
             </div>
           </div>

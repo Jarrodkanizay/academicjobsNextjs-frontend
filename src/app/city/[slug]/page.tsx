@@ -95,24 +95,30 @@ export default function BlogPostPage({ params }: Props) {
                   </>
                 )}
               </>
-            )}{' '}
-          <h3>Notable Academics Practicing in {cityDetails.city}</h3>
-          {cityDetails.academicInfo.map((academicPara, index) => (
-            <p key={index}>{academicPara}</p>
-          ))}
+            )}
+
           {cityDetails.academicList.length > 0 && (
             <>
-              <ul>
-                {cityDetails.academicList.map((academic, index) => (
-                  <li key={index}>
-                    <strong>{academic.split(': ')[0]}</strong>
-                    <br />
-                    {academic.split(': ')[1]}
-                  </li>
-                ))}
-              </ul>
+              <h3>Notable Academics Practicing in {cityDetails.city}</h3>
+              {cityDetails.academicInfo.map((academicPara, index) => (
+                <p key={index}>{academicPara}</p>
+              ))}
+              {cityDetails.academicList.length > 0 && (
+                <>
+                  <ul>
+                    {cityDetails.academicList.map((academic, index) => (
+                      <li key={index}>
+                        <strong>{academic.split(': ')[0]}</strong>
+                        <br />
+                        {academic.split(': ')[1]}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
             </>
           )}
+
           <h3>Considering moving to {cityDetails.city}? Here's a run down!</h3>
           {cityDetails.promo.map((promoPara, index) => (
             <p key={index}>{promoPara}</p>

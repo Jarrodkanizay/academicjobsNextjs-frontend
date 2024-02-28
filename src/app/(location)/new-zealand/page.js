@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
+import NZ from '@/components/topUnis/NZ';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -138,65 +139,10 @@ export default function Page() {
           <div id="myUniversity" class="myUniversity">
             <div class="widget__text-block1"> */}
         <div>
-          <h2 className="underline-full">
+          <h2 className="">
             AcademicJobs New Zealand: All University Jobs by Region
           </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
-            <ul>
-              <li className="mb-1 mt-4 ">
-                <Link href="/jobs/" className="text-[#f4a10c] font-bold">
-                  North Island
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/the-university-of-auckland/3809/">
-                  The University of Auckland
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/victoria-university-of-wellington/3807/">
-                  Victoria University of Wellington
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/waikato-university/3806/">
-                  Waikato University
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/auckland-university-of-technology/3804/">
-                  Auckland University of Technology (AUT)
-                </Link>
-              </li>
-            </ul>
-            <ul>
-              <li className="mb-1 mt-4 ">
-                <Link href="/jobs/" className="text-[#f4a10c] font-bold">
-                  South Island
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/university-of-otago/3805/">
-                  University of Otago
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/lincoln-university/3808/">
-                  Lincoln University
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/massey-university/3810/">
-                  Massey University
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/university-of-canterbury/3811/">
-                  University of Canterbury
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <NZ heading="" />
         </div>
 
         <h2 className="underline-full">The University of Auckland Jobs</h2>

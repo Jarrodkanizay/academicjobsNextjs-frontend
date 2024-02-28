@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
+import Canada from '@/components/topUnis/Canada';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -142,111 +143,10 @@ export default function Page() {
             <div class="widget__text-block1">
               <div> */}
 
-        <h2 className="underline-full">
+        <h2 className="">
           ALL HIGHER ED JOBS IN CANADA BY UNIVERSITY{' '}
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
-          <ul>
-            <li className="mb-1 mt-4 ">
-              <Link href="/JobSearch/" className="text-[#f4a10c] font-bold">
-                Alberta
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/university-of-alberta/3837/">
-                University of Alberta
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/university-of-calgary/12631/">
-                University of Calgary
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <li className="mb-1 mt-4 ">
-              <Link href="/JobSearch/" className="text-[#f4a10c] font-bold">
-                Quebec
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/mcgill-university/3162/">
-                McGill University
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/universite-de-montreal/3836/">
-                Universite De Montreal
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/university-of-waterloo/3838/">
-                University of Waterloo
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/laval-university/12443">
-                Laval University
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <li className="mb-1 mt-4 ">
-              <Link href="/JobSearch/" className="text-[#f4a10c] font-bold">
-                Ontario
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/university-of-toronto//3134/">
-                University of Toronto
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/university-of-british-columbia/3157/">
-                University of British Columbia
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/simon-fraser-university/10280/">
-                Simon Fraser University
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/mcmaster-university/3835/">
-                McMaster University
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <Link
-              href="/JobSearch/"
-              className="text-[#f4a10c] font-bold"
-            ></Link>
-            <Link
-              href="/JobSearch/"
-              className="text-[#f4a10c] font-bold"
-            ></Link>
-            <Link
-              href="/JobSearch/"
-              className="text-[#f4a10c] font-bold"
-            ></Link>
-            <li>
-              <Link href="/employers/university-of-ottawa/12910/">
-                University of Ottawa
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/york-university/13421/">
-                York University
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/queens-university/9836/">
-                Queen's University
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <Canada id="section3" heading="" />
       </div>
     </div>
   );
