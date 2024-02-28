@@ -97,7 +97,7 @@ export default function BlogPostPage({ params }: Props) {
               </>
             )}
 
-          {cityDetails.nobelList.academicList > 0 && (
+          {cityDetails.academicList > 0 && (
             <>
               <h3>Notable Academics Practicing in {cityDetails.city}</h3>
               {cityDetails.academicInfo.map((academicPara, index) => (
