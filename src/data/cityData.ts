@@ -2860,7 +2860,7 @@ export const cityData = [
       "Gold Coast's universities and colleges provide unparalleled opportunities for educational and personal growth. Students benefit from diverse academic programs, cutting-edge research facilities, and a supportive learning environment that prepares them for success in the global arena.",
       'For professionals, Gold Coast offers rewarding employment opportunities in academia and research. With a focus on innovation and collaboration, the city attracts top talent and fosters groundbreaking discoveries across various fields.',
     ],
-    image_url: '/cities/gold-coast-australia.jpg',
+    image_url: '/cities/gold-coast-uni-1.jpg',
     alt: "A picturesque view of Gold Coast's skyline and coastline",
   },
 
@@ -2889,7 +2889,7 @@ export const cityData = [
       'Wagga Wagga beckons with transformative educational experiences and personal growth opportunities. Immerse yourself in a supportive academic environment where innovation thrives, and intellectual curiosity knows no bounds. Discover your potential and pave the way for a bright future in Wagga Wagga, Australia.',
       "Join Wagga Wagga's esteemed academic community and embark on a journey of professional fulfillment and research excellence. Whether you're an aspiring scholar or seasoned academic, Wagga Wagga offers a dynamic platform to contribute meaningfully to your field and shape the future of education​.",
     ],
-    image_url: '/cities/wagga-wagga-australia.jpg',
+    image_url: '/cities/wagga-wagga-uni.jpg',
     alt: 'Panoramic view of Wagga Wagga, Australia, showcasing its picturesque landscape and urban charm',
   },
 
@@ -2930,7 +2930,7 @@ export const cityData = [
       'Choosing Bathurst for higher education promises a transformative journey of personal growth and academic exploration. Students benefit from hands-on learning experiences, cutting-edge research opportunities, and a supportive community dedicated to nurturing individual talents and aspirations.',
       'For academics and researchers, Bathurst offers a fertile ground for intellectual collaboration, innovative research initiatives, and career advancement. Join a dynamic ecosystem where ideas flourish, boundaries blur, and the pursuit of knowledge knows no bounds.',
     ],
-    image_url: 'https://example.com/bathurst-city-photo.jpg',
+    image_url: '/cities/bathurst-uni.png',
     alt: 'Bathurst, Australia - A Thriving Hub of Education and Innovation',
   },
 
@@ -2969,7 +2969,7 @@ export const cityData = [
     promo: [
       "Embark on a transformative educational odyssey amidst Ballarat's rich academic tapestry. From groundbreaking research endeavors to a nurturing learning environment, the city offers a blend of tradition and innovation, inspiring scholars to push the boundaries of knowledge and redefine intellectual frontiers.",
     ],
-    image_url: '/cities/ballarat.jpg',
+    image_url: '/cities/ballarat-uni.jpg',
     alt: "A panoramic view of Ballarat's historic precinct showcasing its architectural heritage and natural beauty",
   },
 
@@ -3009,7 +3009,7 @@ export const cityData = [
       "Immerse yourself in Bendigo's thriving academic community and unlock a world of opportunity. From cutting-edge research facilities to diverse learning experiences, Bendigo's universities and colleges offer a supportive and enriching environment for personal and professional development.",
       "Whether you're pursuing higher education or seeking career advancement, Bendigo's academic institutions provide the perfect springboard for realizing your aspirations and making a meaningful impact on the world.",
     ],
-    image_url: '/cities/bendigo-australia.jpg',
+    image_url: '/cities/bendigo-uni.webp',
     alt: 'Bendigo skyline showcasing its historic architecture and lush greenery',
   },
 
@@ -3047,7 +3047,7 @@ export const cityData = [
       "Embark on your academic journey or advance your career in Wodonga's vibrant educational landscape. Experience the transformative power of education at La Trobe University and Wodonga Institute of TAFE, where learning transcends boundaries and opens doors to endless possibilities.",
       'Join a community of scholars, researchers, and learners committed to excellence, innovation, and positive change. Whether you seek personal growth or professional advancement, Wodonga offers an enriching environment where your aspirations can flourish.',
     ],
-    image_url: '/wodonga/wodonga-academic-hub.jpg',
+    image_url: '/cities/wodonga-uni.jpg',
     alt: 'Wodonga, Australia - A Vibrant Academic Hub',
   },
 
@@ -3087,7 +3087,7 @@ export const cityData = [
       `Dubbo's academic institutions offer unparalleled opportunities for students and professionals alike. With state-of-the-art facilities, dedicated faculty, and a vibrant community of learners, Dubbo provides a nurturing environment for intellectual growth and personal development.`,
       `Whether you aspire to pursue higher education, engage in cutting-edge research, or advance your career in academia, Dubbo invites you to join its dynamic academic community and be part of a legacy of innovation and excellence.`,
     ],
-    image_url: `/cities/dubbo-australia-academic-landscape.jpg`,
+    image_url: `/cities/dubbo-uni.png`,
     alt: `Dubbo, Australia - A City of Academic Excellence`,
   },
 
@@ -3127,7 +3127,7 @@ export const cityData = [
     promo: [
       'Goulburn beckons with boundless educational and professional prospects. Immerse yourself in a dynamic learning environment where academic curiosity flourishes and groundbreaking research thrives. Whether you seek transformative educational experiences or groundbreaking research endeavors, Goulburn offers an unparalleled platform for intellectual growth and professional advancement​.',
     ],
-    image_url: '/cities/goulburn-australia.jpg',
+    image_url: '/cities/goulburns-uni.jpg',
     alt: 'Goulburn, Australia: A Vibrant Academic Hub',
   },
 
@@ -3164,7 +3164,7 @@ export const cityData = [
       'Prospective students embarking on their educational journey in Orange unlock a world of possibilities. With state-of-the-art facilities, diverse academic programs, and a supportive learning environment, Orange offers an enriching experience for personal and intellectual growth.',
       'For professionals seeking employment, Orange presents a landscape ripe with research opportunities and industry collaborations. From pioneering research projects to community engagement initiatives, Orange cultivates an ecosystem conducive to professional advancement and innovation.',
     ],
-    image_url: '/orange-australia.jpg',
+    image_url: '/cities/ornage-uni.jpg',
     alt: 'Orange, Australia: A Vibrant Hub of Education and Innovation',
   },
 
@@ -3195,7 +3195,7 @@ export const cityData = [
       'Embark on a transformative educational journey in Port Macquarie, where opportunities for academic excellence and personal growth converge. With cutting-edge facilities and a supportive faculty, students engage in experiential learning that prepares them for dynamic careers and global citizenship.',
       'Join a vibrant scholarly community committed to innovation and collaboration. Whether you aspire to undergraduate studies or advanced research, Port Macquarie fosters an environment where curiosity thrives and discoveries abound.',
     ],
-    image_url: '/port-macquarie/port-macquarie-aerial-view.jpg',
+    image_url: '/cities/port-maquarie-uni.jpg',
     alt: 'Aerial view of Port Macquarie, Australia',
   },
 
@@ -3239,7 +3239,7 @@ export const cityData = [
       "Embark on a transformative academic journey in Bundaberg, where possibilities abound and intellectual horizons expand. With state-of-the-art facilities, world-class faculty, and a vibrant cultural tapestry, attending or working at Bundaberg's educational institutions promises unparalleled opportunities for growth, discovery, and fulfillment.",
       "Immerse yourself in Bundaberg's rich heritage and natural splendor, while engaging in cutting-edge research and collaborative learning experiences. Experience the essence of academic excellence amidst a thriving community dedicated to knowledge creation and societal impact.",
     ],
-    image_url: '/bundaberg/bundaberg-australia-education.jpg',
+    image_url: '/cities/bundaberg-uni.jpg',
     alt: 'Bundaberg, Australia - A Hub of Academic Brilliance',
   },
 
@@ -3268,7 +3268,7 @@ export const cityData = [
       "Unlock boundless opportunities for personal and professional development in Gladstone's academic milieu. Experience cutting-edge facilities, world-class faculty, and a vibrant research culture that nurtures innovation and excellence.",
       "For educators and researchers, Gladstone offers a collaborative environment ripe with possibilities. Engage in groundbreaking research, forge industry partnerships, and contribute to the city's thriving academic community.",
     ],
-    image_url: 'https://example.com/gladstone-city-photo.jpg',
+    image_url: '/cities/gladstone-uni.jpg',
     alt: 'Aerial view of Gladstone, Australia',
   },
 
@@ -3304,7 +3304,7 @@ export const cityData = [
     promo: [
       "Experience the vibrant academic community of Mackay, offering unparalleled educational and personal growth opportunities. Whether you're a student seeking innovative programs or a professional aiming for research and career advancement, Mackay's universities and colleges provide a supportive environment to nurture your aspirations.",
     ],
-    image_url: '/mackay-australia.jpg',
+    image_url: '/cities/mackay-uni.jpg',
     alt: 'Aerial view of Mackay, Australia',
   },
 
@@ -3346,7 +3346,7 @@ export const cityData = [
     promo: [
       'Embark on a transformative academic journey in Rockhampton, where tradition meets innovation and curiosity knows no bounds. Experience a vibrant culture of learning and discovery, supported by world-class facilities and a collaborative community of scholars. Whether you seek to advance your education or pursue groundbreaking research, Rockhampton offers endless opportunities for growth and inspiration.',
     ],
-    image_url: '/rockhampton/rockhampton-australia.jpg',
+    image_url: '/cities/rockhampton-uni.jpg',
     alt: 'Panoramic view of Rockhampton, Australia skyline with Fitzroy River',
   },
 
@@ -3387,7 +3387,7 @@ export const cityData = [
       "Ararat offers unparalleled opportunities for personal and professional growth. With cutting-edge facilities, world-class faculty, and a supportive academic community, students and professionals alike thrive in Ararat's vibrant intellectual ecosystem.",
       "Whether you're seeking to expand your knowledge, conduct groundbreaking research, or embark on a rewarding career in academia, Ararat provides the ideal platform to realize your aspirations and make a lasting impact.",
     ],
-    image_url: '/cities/ararat-australia.jpg',
+    image_url: '/cities/alarat-uni.jpg',
     alt: 'Scenic view of Ararat, Australia',
   },
 
@@ -3423,7 +3423,7 @@ export const cityData = [
     promo: [
       'Horsham beckons with a compelling blend of educational opportunities and professional growth. Students thrive in an environment that fosters critical thinking and hands-on learning, while researchers benefit from collaborative initiatives and state-of-the-art facilities, propelling discoveries that shape the future.',
     ],
-    image_url: 'https://example.com/horsham-city.jpg',
+    image_url: '/cities/horsham-uni.jpg',
     alt: "A panoramic view of Horsham's cityscape",
   },
 
@@ -3461,7 +3461,7 @@ export const cityData = [
       "Embark on a transformative journey of learning and discovery in Stawell, Australia. Whether you're a student seeking to expand your horizons or a faculty member eager to engage in cutting-edge research, Stawell's universities and colleges offer a supportive and dynamic environment for academic exploration and growth.",
       "Experience the thrill of intellectual discovery amidst Stawell's breathtaking landscapes and vibrant community. Join us in unlocking the boundless potential of education and innovation, and together, let's shape a brighter future for generations to come.",
     ],
-    image_url: '/cities/stawell-australia.jpg',
+    image_url: '/cities/stawell-uni.jpg',
     alt: 'Stawell, Australia - A hub of academic excellence',
   },
 
@@ -3493,7 +3493,7 @@ export const cityData = [
       "Experience the transformative power of education in Churchill, where every student's journey is nurtured and celebrated. From world-class faculty to innovative research opportunities, the city offers a stimulating environment for intellectual growth and personal development.",
       "Join Churchill's academic community and embark on a journey of discovery and innovation. Whether you're pursuing higher education or seeking professional advancement, Churchill provides the perfect setting to realize your aspirations and make a meaningful impact on the world.",
     ],
-    image_url: '/churchill-australia.jpg',
+    image_url: '/cities/churchill-uni.jpg',
     alt: 'Panoramic view of Churchill, Australia',
   },
 
@@ -3529,7 +3529,7 @@ export const cityData = [
     promo: [
       "Whether you're a student seeking an enriching academic experience or a researcher pursuing innovative solutions to global challenges, Coffs Harbour offers endless possibilities for growth and discovery. With its supportive academic community, world-class facilities, and breathtaking natural surroundings, Coffs Harbour invites you to embark on a journey of learning and exploration.",
     ],
-    image_url: 'https://example.com/coffs-harbour.jpg',
+    image_url: '/cities/coff-harbour-uni.jpg',
     alt: "Scenic view of Coffs Harbour's coastline",
   },
 
@@ -3570,7 +3570,7 @@ export const cityData = [
       'Lismore presents an intellectually enriching environment for students and professionals alike. Its universities and colleges offer academic rigor intertwined with practical experiences, nurturing holistic development and empowering graduates to address contemporary challenges with ingenuity.',
       'For academics, Lismore serves as a fertile ground for research and collaboration, fostering innovation and meaningful scholarship amidst a dynamic community and diverse ecosystems.',
     ],
-    image_url: '/lismore-australia/lismore-cityscape.jpg',
+    image_url: '/cities/lismore-uni.jpg',
     alt: 'Lismore, Australia - Cityscape overlooking lush greenery and buildings',
   },
 
@@ -3605,7 +3605,7 @@ export const cityData = [
       'Embark on a transformative journey in Tweed Heads, where educational opportunities converge with boundless possibilities for personal and professional advancement. Our institutions nurture talent, foster creativity, and cultivate leaders poised to make a difference in a rapidly evolving world.',
       'Join the vibrant academic community of Tweed Heads and immerse yourself in a culture of innovation and discovery. Whether you seek to expand your horizons or make meaningful contributions to society, Tweed Heads offers the ideal platform to turn aspirations into achievements.',
     ],
-    image_url: '/cities/tweed-heads-australia.jpg',
+    image_url: '/cities/tweeds-head-uni.jpg',
     alt: 'Tweed Heads, Australia: Where Education Meets Natural Splendor',
   },
 
@@ -3632,7 +3632,7 @@ export const cityData = [
     academicInfo: [''],
     academicList: [],
     promo: [''],
-    image_url: '/armidale-city.jpg',
+    image_url: '/cities/armidale-uni.jpg',
     alt: 'Panoramic view of Armidale city with lush greenery and historic architecture',
   },
 
@@ -3674,7 +3674,7 @@ export const cityData = [
       "Immerse yourself in the vibrant academic tapestry of Toowoomba, where learning transcends boundaries and innovation knows no limits. Whether you seek to expand your intellectual horizons or embark on a transformative research journey, Toowoomba's institutions offer a nurturing environment where your aspirations can take flight.",
       'Join a community of scholars, visionaries, and changemakers dedicated to shaping a brighter tomorrow. Experience the synergy of intellect and imagination in Toowoomba, where every discovery, every insight, contributes to the collective pursuit of knowledge and human advancement.',
     ],
-    image_url: '/toowoomba/toowoomba-cityscape.jpg',
+    image_url: '/cities/toowoomba-uni.jpg',
     alt: 'Toowoomba cityscape',
   },
 
@@ -3717,7 +3717,7 @@ export const cityData = [
       "Embark on a transformative journey of learning and discovery amidst Springfield's academic allure, where knowledge transcends boundaries and innovation knows no limits. With world-class amenities, diverse programs, and a nurturing ecosystem, Springfield beckons aspirants to chart their academic odyssey amidst the vibrant tapestry of ideas and opportunities.",
       "For professionals and researchers seeking fertile grounds to cultivate their ambitions, Springfield stands as a bastion of possibility and promise. With its collaborative ethos, entrepreneurial spirit, and unwavering commitment to progress, Springfield offers an unparalleled platform to harness one's talents and forge a path of enduring impact and significance.",
     ],
-    image_url: '/springfield-australia/springfield-cityscape.jpg',
+    image_url: '/cities/spring-field-uni.jpg',
     alt: 'Springfield, Australia: Aerial View of the City',
   },
 
@@ -3749,7 +3749,7 @@ export const cityData = [
       "Embark on a journey of intellectual exploration and personal growth in Ipswich's thriving higher education community. Engage with world-class faculty, state-of-the-art resources, and vibrant student life, shaping your future amidst a backdrop of innovation and discovery​.",
       'For educators and researchers, Ipswich offers a fertile ground for collaboration and exploration, where interdisciplinary initiatives flourish, propelling academic inquiry and pushing the boundaries of human knowledge​.',
     ],
-    image_url: '/ipswich/ipswich-australia-higher-education.jpg',
+    image_url: '/cities/ipswich-uni.avif',
     alt: 'Ipswich, Australia - A Nexus of Learning and Innovation',
   },
 
@@ -3779,7 +3779,7 @@ export const cityData = [
     promo: [
       "Frankston offers unparalleled educational and research opportunities, nurturing intellectual curiosity and personal growth. Whether as a student exploring cutting-edge disciplines or a researcher delving into groundbreaking projects, Frankston's academic environment fosters creativity, critical thinking, and lifelong learning.",
     ],
-    image_url: '/frankston/frankston-australia.jpg',
+    image_url: '/cities/frankston-uni.jpg',
     alt: "A panoramic view of Frankston's citysca",
   },
 
@@ -3819,7 +3819,7 @@ export const cityData = [
     promo: [
       "Join Fremantle's vibrant academic community to embark on a journey of intellectual exploration and personal development. Whether pursuing higher education or seeking professional opportunities, Fremantle offers a dynamic environment where innovation and discovery thrive.",
     ],
-    image_url: '/images/fremantle-academic-scene.jpg',
+    image_url: '/cities/fremantle-uni.jpg',
     alt: "Fremantle's academic landscape overlooking the Indian Ocean",
   },
 
@@ -3862,7 +3862,7 @@ export const cityData = [
       "Embark on a transformative academic journey in Gippsland, Australia, where vibrant campuses, pioneering research, and diverse learning opportunities await. Whether pursuing higher education or seeking professional growth, Gippsland's dynamic landscape offers an enriching environment fostering innovation and intellectual exploration.",
       "Experience the synergy of urban amenities and natural beauty while engaging with top-tier academics and cutting-edge research initiatives. Join Gippsland's thriving academic community and contribute to shaping the future of knowledge and innovation.",
     ],
-    image_url: '/cities/gippsland-australia.jpg',
+    image_url: '/cities/gippsland-uni.jpg',
     alt: 'Gippsland Australia - A Melange of Nature and Education',
   },
 
@@ -3902,7 +3902,7 @@ export const cityData = [
     promo: [
       'Emerald beckons seekers of wisdom and visionaries of change to its shores, offering a tapestry of learning opportunities and cultural enrichment. With state-of-the-art facilities, innovative research initiatives, and a nurturing academic ecosystem, Emerald empowers individuals to explore, create, and lead in their chosen fields. Whether igniting minds or catalyzing social transformation, Emerald invites you to embark on a transformative journey of discovery and impact.',
     ],
-    image_url: '/cities/emerald-australia-academics.jpg',
+    image_url: '/cities/emerald-uni.JPG',
     alt: 'A panoramic view of Emerald, Australia, showcasing its lush landscapes and urban charm',
   },
 
