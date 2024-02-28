@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroBanner from '@/components/HeroBanner';
+import India from '@/components/topUnis/India';
 
 export const metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -68,49 +69,8 @@ export default function myPage() {
         </div>
       </section>
 
-      <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl max-w-screen-xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
-          <ul>
-            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Mumbai</li>
-            <li>
-              <Link href="/employers/indian-institute-of-technology-bombay/3844/">
-                Indian Institute of Technology Bombay
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Chennai</li>
-            <li>
-              <Link href="/employers/indian-institute-of-technology-madras/3845/">
-                Indian Institute of Technology Madras
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Vellore</li>
-            <li>
-              <Link href="/employers/vellore-institute-of-technology/3846/">
-                Vellore Institute of Technology
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Bangalore</li>
-            <li>
-              <Link href="/employers/indian-institute-of-science/7818/">
-                Indian Institute of Science (IISc)
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Delhi</li>
-            <li>
-              <Link href="/employers/indian-institute-of-technology-delhi/7822/">
-                Indian Institute of Technology Delhi
-              </Link>
-            </li>
-          </ul>
-        </div>
+      <div className=" m-8 mb-12 rounded-3xl max-w-screen-xl mx-auto">
+      <India heading="" />
       </div>
 
       <section>

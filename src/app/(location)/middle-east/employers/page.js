@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroBanner from '@/components/HeroBanner';
+import ME from '@/components/topUnis/ME';
 
 export const metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -68,70 +69,8 @@ export default function myPage() {
         </div>
       </section>
 
-      <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl max-w-screen-xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
-          <ul>
-            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Saudi Arabia</li>
-            <li>
-              <Link href="/employers/king-saud-university-saudi-arabia/8522/">
-                King Saud University
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/king-abdullah-university-of-science-and-technology-saudi-arabia/8513/">
-                King Abdullah University of Science and Technology
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/king-abdul-aziz-university-saudi-arabia/8512/">
-                King Abdul Aziz University
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">UAE</li>
-            <li>
-              <Link href="/employers/khalifa-university-uae/8481/">
-                Khalifa University
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/united-arab-emirates-university-uae/10985/">
-                United Arab Emirates University
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/american-university-in-dubai-uae/5799/">
-                American University in Dubai
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/american-university-of-sharjah-uae/5815/">
-                American University of Sharjah
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Lebanon</li>
-            <li>
-              <Link href="/employers/american-university-of-beirut-lebanon/5804/">
-                American University of Beirut
-              </Link>
-            </li>
-            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Jordan</li>
-            <li>
-              <Link href="/employers/university-of-jordan-jordan/12763/">
-                University of Jordan
-              </Link>
-            </li>
-            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Qatar</li>
-            <li>
-              <Link href="/employers/qatar-university-qatar/12944/">
-                Qatar University
-              </Link>
-            </li>
-          </ul>
-        </div>
+      <div className=" m-8 mb-12 rounded-3xl max-w-screen-xl mx-auto">
+      <ME heading="" />
       </div>
 
       <section>

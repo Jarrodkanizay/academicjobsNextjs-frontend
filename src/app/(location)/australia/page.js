@@ -1,10 +1,11 @@
 //import type { Metadata } from 'next';
-import img from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import SearchResults from '@/components/SearchResults';
 import AusUniLogos from '@/components/AusUniLogos';
+import Australia from '@/components/topUnis/Australia';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -22,7 +23,7 @@ export default function Page() {
   return (
     <div>
       <div className="pt-[4rem] flex flex-col items-center justify-center">
-        <img
+        <Image
           src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-australia-min.png"
           alt="AcademicJobs Australia Logo"
           className="  mb-[1rem] "
@@ -194,7 +195,7 @@ export default function Page() {
                 <div className="column">
                   <ul className="  rounded-3xl p-4 shadow-md">
                     <li className="mb-1 mt-4 mt-4 flex">
-                      <img 
+                      <Image
                         width={100}
                         height={100}
                         src="https://www.qut.edu.au/__data/assets/image/0007/909781/qut-logo-og-1200.jpg"
@@ -245,7 +246,7 @@ export default function Page() {
                 <div className="column">
                   <ul className=" rounded-3xl p-4 shadow-md">
                     <li className="mb-1 mt-4 mt-4 flex">
-                      <img 
+                      <Image 
                         width={100}
                         height={100}
                         src="https://www.academicjobs.com/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FBondTwitterIcon_400x400.jpg&w=384&q=75"
@@ -296,7 +297,7 @@ export default function Page() {
                 <div className="column">
                   <ul className=" rounded-3xl p-4 shadow-md">
                     <li className="mb-1 mt-4 mt-4 flex">
-                      <img 
+                      <Image 
                         width={100}
                         height={100}
                         src="https://images.all-free-download.com/images/graphiclarge/the_university_of_adelaide_1_111801.jpg"
@@ -347,7 +348,7 @@ export default function Page() {
                 <div className="column">
                   <ul className=" rounded-3xl p-4 shadow-md">
                     <li className="mb-1 mt-4 mt-4 flex">
-                      <img 
+                      <Image 
                         width={100}
                         height={100}
                         src="https://dentalstudents.com.au/wp-content/uploads/2021/04/0001_UWA-logo.jpg"
@@ -408,7 +409,7 @@ export default function Page() {
                     <a className=" text-gray-400"> 23 Feb, 2024</a>
                   </div>
                   <figure  >
-                    <img
+                    <Image
                       width={200}
                       height={200}
                       src="https://academicjobs.s3.amazonaws.com/img/_misc/1694053173648.jpg"
@@ -449,7 +450,7 @@ export default function Page() {
                   <a className=" text-gray-400"> 10 Dec, 2023</a>
                 </div>
                 <figure>
-                  <img
+                  <Image
                     width={1280}
                     height={380}
                     src="/academic-job-postings/university-of-sydney.jpg"
@@ -508,326 +509,10 @@ export default function Page() {
         <div id="myUniversity" class="myUniversity">
           <div class="widget__text-block1">
             <div>
-              <h2 className="underline-full">
+              <h2 className="">
                 Academic Jobs Australia: All University Jobs
               </h2>
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
-                <ul>
-                  <li className="mb-1 mt-4 ">
-                    <Link
-                      href="/jobs?l=&q=act"
-                      className="text-[#f4a10c] font-bold"
-                    >
-                      ACT
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/australian-national-university/3739">
-                      Australian National University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/university-of-canberra/3821">
-                      University of Canberra
-                    </Link>
-                  </li>
-                  <li className="mb-1 mt-4 ">
-                    <Link
-                      href="/jobs?l=&q=new-south-wales"
-                      className="text-[#f4a10c] font-bold"
-                    >
-                      New South Wales
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/the-university-of-sydney/3171">
-                      The University of Sydney
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/university-of-new-south-wales-unsw-/3738">
-                      University of New South Wales
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/charles-sturt-university/3855">
-                      Charles Sturt University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/australian-catholic-university/3853">
-                      Australian Catholic University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/southern-cross-university/3862">
-                      Southern Cross University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/university-of-technology-sydney/3864">
-                      University of Technology, Sydney
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/macquarie-university/3881">
-                      Macquarie University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/university-of-new-england/3209">
-                      University of New England
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/university-of-newcastle/3863">
-                      University of Newcastle
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/university-of-western-sydney/3865">
-                      University of Western Sydney
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/university-of-wollongong/3866">
-                      University of Wollongong
-                    </Link>
-                  </li>
-                </ul>
-                <ul>
-                  <li className="mb-1 mt-4 ">
-                    <Link
-                      href="/jobs?l=&q=victoria"
-                      className="text-[#f4a10c] font-bold"
-                    >
-                      Victoria
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/employers/university-of-melbourne/3170/
-                                        "
-                    >
-                      The University of Melbourne
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/employers/monash-university/3182/
-                                        "
-                    >
-                      Monash University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/employers/victoria-university/3871/
-                                    "
-                    >
-                      Victoria University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/employers/university-of-divinity/3872/
-                                    "
-                    >
-                      University of Divinity
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/employers/swimburne-university-of-technology/10541/
-                                    "
-                    >
-                      Swinburne University of Technology
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/employers/rmit-university/3869/
-                                    "
-                    >
-                      RMIT University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/employers/la-trobe-university/3868/
-                                    "
-                    >
-                      La Trobe University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/employers/deakin-university/3856/
-                                    "
-                    >
-                      Deakin University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/employers/federation-university/3787/
-                                    "
-                    >
-                      Federation University Australia
-                    </Link>
-                  </li>
-                  <li className="mb-1 mt-4 ">
-                    <Link
-                      href="/jobs?l=&q=tasmania"
-                      className="text-[#f4a10c] font-bold"
-                    >
-                      Tasmania
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="h/employers/university-of-tasmania/3867/
-                                    "
-                    >
-                      The University of Tasmania
-                    </Link>
-                  </li>
-                </ul>
-                <ul>
-                  <li className="mb-1 mt-4 ">
-                    <Link
-                      href="/jobs?l=&q=queensland"
-                      className="text-[#f4a10c] font-bold"
-                    >
-                      Queensland
-                    </Link>
-                  </li>
-                  <li className="text-[#003463] ">
-                    <Link href="/employers/queensland-university-of-technology-qut-/3786">
-                      Queensland University of Technology (QUT)
-                    </Link>
-                  </li>
-                  <li className="">
-                    <Link
-                      href="/employers/bond-university/3785/
-                                    "
-                    >
-                      Bond University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/university-of-queensland/3172">
-                      The University of Queensland
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/cquniversity/3854">
-                      CQUniversity
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/griffith-university/3860">
-                      Griffith University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/james-cook-university/3857">
-                      James Cook University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/university-of-southern-queensland/3861">
-                      University of Southern Queensland
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/university-of-sunshine-coast/3859">
-                      University of Sunshine Coast
-                    </Link>
-                  </li>
-                  <li className="mb-1 mt-4 ">
-                    <Link
-                      href="/jobs?l=&q=northern-territory"
-                      className="text-[#f4a10c] font-bold"
-                    >
-                      Northern Territory
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/charles-darwin-university/3880">
-                      Charles Darwin University
-                    </Link>
-                  </li>
-                </ul>
-                <ul>
-                  <li className="mb-1 mt-4 ">
-                    <Link
-                      href="/jobs?l=&q=south-australia"
-                      className="text-[#f4a10c] font-bold"
-                    >
-                      South Australia
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/the-university-of-adelaide/3737">
-                      The University of Adelaide
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/carnegie-mellon-university/3146">
-                      Carnegie Mellon University
-                    </Link>{' '}
-                  </li>
-                  <li>
-                    <Link href="/employers/torrens-university-australia/3875">
-                      Torrens University Australia
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/university-of-south-australia/3874">
-                      University of South Australia
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/flinders-university/3873">
-                      Flinders University
-                    </Link>
-                  </li>
-                  <li className="mb-1 mt-4 ">
-                    <Link
-                      href="/jobs?l=&q=western-australia"
-                      className="text-[#f4a10c] font-bold"
-                    >
-                      Western Australia
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/university-of-western-australia/3173">
-                      The University of Western Australia
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/university-of-notre-dame/3879">
-                      University of Notre Dame
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/murdoch-university/3878">
-                      Murdoch University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/edith-cowan-university/3877">
-                      Edith Cowan University
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/employers/curtin-university/3876">
-                      Curtin University
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+              <Australia id="section1" heading="" />
             </div>
           </div>
         </div>
