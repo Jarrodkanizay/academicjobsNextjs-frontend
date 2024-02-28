@@ -85,7 +85,7 @@ export default async function myPage() {
         </div>
         <div className="text-col-2 mb-12">
           <p>
-            Discover top-tier faculty and administrative roles in the world of
+            Discover top-tier faculty and staff roles in the world of
             higher education. Begin your search for university academic jobs,
             college faculty positions, and administrative opportunities in
             higher ed. Explore and apply for a range of roles, including
@@ -113,13 +113,12 @@ export default async function myPage() {
 
             <div>
               <p className="md:px-7 mb-4 mt-1">
-                Discover top-tier faculty and administrative roles in the world
-                of higher education. Begin your search for university academic
-                jobs, college faculty positions, and administrative
-                opportunities in higher ed. Explore and apply for a range of
-                roles, including lecturer, researcher, university administrator,
-                and senior academic positions, available nationally and
-                internationally.
+                Discover top-tier faculty and staff roles in the world of higher
+                education. Begin your search for university academic jobs,
+                college faculty positions, and administrative opportunities in
+                higher ed. Explore and apply for a range of roles, including
+                lecturer, researcher, university administrator, and senior
+                academic positions, available nationally and internationally.
               </p>
               <p className="md:px-7">
                 Whether you&apos;re an aspiring or established professor,

@@ -204,8 +204,8 @@ export default function myPage() {
                 By bringing back genuine customer service and leveraging the
                 power of AI, we create a pleasurable customer experience that
                 ALL modern platforms have lost. Quickly post jobs for executive
-                jobs in higher education, academic jobs, administrative jobs and
-                all university support roles
+                jobs in higher education, academic jobs, staff jobs and all
+                university support roles
               </p>
               <div className="card-actions justify-end">
                 <Link href="/post-a-job" className="btn btn-aj">

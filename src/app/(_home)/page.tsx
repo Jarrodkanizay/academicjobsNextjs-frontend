@@ -12,8 +12,7 @@ import { getContentRegion } from '@/actions/getContentRegion';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute:
-      '  Academic Jobs: All Higher Ed Positions Locally and Globally.', //Option 2 overrides the title in layout.tsx
+    absolute: '  Academic Jobs: All Higher Ed Positions Locally and Globally.', //Option 2 overrides the title in layout.tsx
   },
   description:
     'Discover academic jobs at all universities today! Explore your next academic positions through visiting our higher ed jobs, with new academic jobs added daily.',
@@ -38,16 +37,12 @@ export default async function myPage() {
         <div className="w-full md:w-3/6 h-[6vh] flex flex-col items-top mt-[-1rem]">
           <JobSearchBoxHome />
         </div>
-
       </div>
 
       <JobCategoryAndLocationLinks />
       {/* Set this to false to show uni logo and welcome to message */}
       {contentRegion === 'USA' ? (
         <>
-
-
-        
           <div className="mb-16">
             <a href="/jobelephant-recruitment">
               <Image
@@ -60,9 +55,6 @@ export default async function myPage() {
             </a>
           </div>
 
-
-
-
           <AmericaUniLogos />
 
           {/* <a
@@ -74,30 +66,187 @@ export default async function myPage() {
         </>
       ) : (
         <>
+          <div className="md:flex gap-4 mt-4">
+            <article
+              className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold"
+              data-id="59973"
+            >
+              <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">
+                Featured
+              </div>
+              <div className="flex items-center mb-2">
+                <div className="w-20 h-20 mr-4">
+                  <a href="/employers/university-of-canberra/3821">
+                    <Image
+                      alt="University of Canberra"
+                      width={100}
+                      height={100}
+                      className="w-full h-full object-contain rounded-lg"
+                      src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2Funiversity-of-canberra-logo-6C82AE8F2B-seeklogo.com.png&amp;w=256&amp;q=75"
+                    ></Image>
+                  </a>
+                </div>
+                <a
+                  className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer"
+                  href="/jobs/clinical-chair-of-nursing/88066"
+                >
+                  Clinical Chair of Nursing
+                </a>
+              </div>
+              <div className="flex justify-between items-center">
+                <div className="text-sm text-gray-600">
+                  <div className="mb-1">University of Canberra</div>
+                  <div className="text-gray-700 font-light text-sm">
+                    Bruce ACT 2617, Australia
+                  </div>
+                </div>
+                <div className="applications-close border-2 rounded px-2 mt-1 ml-2">
+                  <p className="text-center text-gray-400 text-sm mb-0">
+                    Closes
+                  </p>
+                  <div className="text-sm">
+                    <time>Mar 11, 2024</time>
+                  </div>
+                </div>
+              </div>
+            </article>
 
-<div  className="md:flex gap-4 mt-4"> 
-<article className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold" data-id="59973">
-  <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">Featured</div>
-  <div className="flex items-center mb-2"><div className="w-20 h-20 mr-4"><a href="/employers/university-of-canberra/3821">
-    <Image alt="University of Canberra"  width={100} height={100}  className="w-full h-full object-contain rounded-lg" src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2Funiversity-of-canberra-logo-6C82AE8F2B-seeklogo.com.png&amp;w=256&amp;q=75">
-      </Image>
-      </a></div><a className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer" href="/jobs/clinical-chair-of-nursing/88066">Clinical Chair of Nursing</a></div>
-      <div className="flex justify-between items-center"><div className="text-sm text-gray-600">
-        <div className="mb-1">University of Canberra</div>
-        <div className="text-gray-700 font-light text-sm">Bruce ACT 2617, Australia</div></div>
-        <div className="applications-close border-2 rounded px-2 mt-1 ml-2"><p className="text-center text-gray-400 text-sm mb-0">Closes</p><div className="text-sm"><time>Mar 11, 2024</time></div></div></div></article>
-        
-        <article className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold" data-id="59973"><div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">Featured</div><div className="flex items-center mb-2"><div className="w-20 h-20 mr-4"><a href="/employers/university-of-canberra/3821"><Image alt="University of Canberra"  width={100} height={100}  className="w-full h-full object-contain rounded-lg" src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2Funiversity-of-canberra-logo-6C82AE8F2B-seeklogo.com.png&amp;w=256&amp;q=75"></Image></a></div><a className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer" href="/jobs/associate-professor-in-medical-imaging/88073">Associate Professor in Medical Imaging</a></div><div className="flex justify-between items-center"><div className="text-sm text-gray-600"><div className="mb-1">University of Canberra</div><div className="text-gray-700 font-light text-sm">Bruce ACT 2617, Australia</div></div><div className="applications-close border-2 rounded px-2 mt-1 ml-2"><p className="text-center text-gray-400 text-sm mb-0">Closes</p><div className="text-sm"><time>Mar 4, 2024</time></div></div></div></article>
-</div>
+            <article
+              className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold"
+              data-id="59973"
+            >
+              <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">
+                Featured
+              </div>
+              <div className="flex items-center mb-2">
+                <div className="w-20 h-20 mr-4">
+                  <a href="/employers/university-of-canberra/3821">
+                    <Image
+                      alt="University of Canberra"
+                      width={100}
+                      height={100}
+                      className="w-full h-full object-contain rounded-lg"
+                      src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2Funiversity-of-canberra-logo-6C82AE8F2B-seeklogo.com.png&amp;w=256&amp;q=75"
+                    ></Image>
+                  </a>
+                </div>
+                <a
+                  className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer"
+                  href="/jobs/associate-professor-in-medical-imaging/88073"
+                >
+                  Associate Professor in Medical Imaging
+                </a>
+              </div>
+              <div className="flex justify-between items-center">
+                <div className="text-sm text-gray-600">
+                  <div className="mb-1">University of Canberra</div>
+                  <div className="text-gray-700 font-light text-sm">
+                    Bruce ACT 2617, Australia
+                  </div>
+                </div>
+                <div className="applications-close border-2 rounded px-2 mt-1 ml-2">
+                  <p className="text-center text-gray-400 text-sm mb-0">
+                    Closes
+                  </p>
+                  <div className="text-sm">
+                    <time>Mar 4, 2024</time>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
 
-<div  className="md:flex gap-4"> 
+          <div className="md:flex gap-4">
+            <article
+              className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold"
+              data-id="59973"
+            >
+              <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">
+                Featured
+              </div>
+              <div className="flex items-center mb-2">
+                <div className="w-20 h-20 mr-4">
+                  <a href="/employers/bond-university/3785">
+                    <Image
+                      alt="Bond University"
+                      width={100}
+                      height={100}
+                      src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FBondTwitterIcon_400x400.jpg&amp;w=256&amp;q=75"
+                    ></Image>
+                  </a>
+                </div>
+                <a
+                  className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer"
+                  href="/jobs/professor-associate-professor-implementation-science-and-healthcare-innovations/87939"
+                >
+                  Professor/Associate Professor, Implementation Science and
+                  Healthcare Innovations
+                </a>
+              </div>
+              <div className="flex justify-between items-center">
+                <div className="text-sm text-gray-600">
+                  <div className="mb-1">Bond University</div>
+                  <div className="text-gray-700 font-light text-sm">
+                    Robina Gold Coast, QLD
+                  </div>
+                </div>
+                <div className="applications-close border-2 rounded px-2 mt-1 ml-2">
+                  <p className="text-center text-gray-400 text-sm mb-0">
+                    Closes
+                  </p>
+                  <div className="text-sm">
+                    <time>Mar 24, 2024</time>
+                  </div>
+                </div>
+              </div>
+            </article>
 
-        
-<article className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold" data-id="59973"><div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">Featured</div><div className="flex items-center mb-2"><div className="w-20 h-20 mr-4"><a href="/employers/bond-university/3785"><Image alt="Bond University"  width={100} height={100}  src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FBondTwitterIcon_400x400.jpg&amp;w=256&amp;q=75" ></Image></a></div><a className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer" href="/jobs/professor-associate-professor-implementation-science-and-healthcare-innovations/87939">Professor/Associate Professor, Implementation Science and Healthcare Innovations</a></div><div className="flex justify-between items-center"><div className="text-sm text-gray-600"><div className="mb-1">Bond University</div><div className="text-gray-700 font-light text-sm">Robina Gold Coast, QLD</div></div><div className="applications-close border-2 rounded px-2 mt-1 ml-2"><p className="text-center text-gray-400 text-sm mb-0">Closes</p><div className="text-sm"><time>Mar 24, 2024</time></div></div></div></article>
-
-<article className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold" data-id="59973"><div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">Featured</div><div className="flex items-center mb-2"><div className="w-20 h-20 mr-4"><a href="/employers/queensland-university-of-technology-qut-/3786"><Image alt="Queensland University of Technology (QUT)"  width={100} height={100}  className="w-full h-full object-contain rounded-lg" src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FQueensland-Univ-Tech-Logo.jpg&amp;w=256&amp;q=75" ></Image> </a></div><a className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer" href="/jobs/professor-in-artificial-intelligence/90020">Professor in Artificial Intelligence</a></div><div className="flex justify-between items-center"><div className="text-sm text-gray-600"><div className="mb-1">Queensland University of Technology (QUT)</div><div className="text-gray-700 font-light text-sm">Brisbane QLD, Australia</div></div><div className="applications-close border-2 rounded px-2 mt-1 ml-2"><p className="text-center text-gray-400 text-sm mb-0">Closes</p><div className="text-sm"><time>Apr 1, 2024</time></div></div></div></article>
-
-</div>
+            <article
+              className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold"
+              data-id="59973"
+            >
+              <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">
+                Featured
+              </div>
+              <div className="flex items-center mb-2">
+                <div className="w-20 h-20 mr-4">
+                  <a href="/employers/queensland-university-of-technology-qut-/3786">
+                    <Image
+                      alt="Queensland University of Technology (QUT)"
+                      width={100}
+                      height={100}
+                      className="w-full h-full object-contain rounded-lg"
+                      src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FQueensland-Univ-Tech-Logo.jpg&amp;w=256&amp;q=75"
+                    ></Image>{' '}
+                  </a>
+                </div>
+                <a
+                  className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer"
+                  href="/jobs/professor-in-artificial-intelligence/90020"
+                >
+                  Professor in Artificial Intelligence
+                </a>
+              </div>
+              <div className="flex justify-between items-center">
+                <div className="text-sm text-gray-600">
+                  <div className="mb-1">
+                    Queensland University of Technology (QUT)
+                  </div>
+                  <div className="text-gray-700 font-light text-sm">
+                    Brisbane QLD, Australia
+                  </div>
+                </div>
+                <div className="applications-close border-2 rounded px-2 mt-1 ml-2">
+                  <p className="text-center text-gray-400 text-sm mb-0">
+                    Closes
+                  </p>
+                  <div className="text-sm">
+                    <time>Apr 1, 2024</time>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
 
           <AusUniLogos />
         </>
@@ -117,7 +266,7 @@ export default async function myPage() {
         </div>
         <div className="text-col-2 mb-12">
           <p>
-            Discover top-tier faculty and administrative roles in the world of
+            Discover top-tier faculty and staff roles in the world of
             higher education. Begin your search for university academic jobs,
             college faculty positions, and administrative opportunities in
             higher ed. Explore and apply for a range of roles, including
@@ -145,12 +294,12 @@ export default async function myPage() {
 
           <div>
             <p className="md:px-7 mb-4 mt-1">
-              Discover top-tier faculty and administrative roles in the world of
-              higher education. Begin your search for university academic jobs,
-              college faculty positions, and administrative opportunities in
-              higher ed. Explore and apply for a range of roles, including
-              lecturer, researcher, university administrator, and senior
-              academic positions, available nationally and internationally.
+              Discover top-tier faculty and staff roles in the world of higher
+              education. Begin your search for university academic jobs, college
+              faculty positions, and administrative opportunities in higher ed.
+              Explore and apply for a range of roles, including lecturer,
+              researcher, university administrator, and senior academic
+              positions, available nationally and internationally.
             </p>
             <p className="md:px-7">
               Whether you&apos;re an aspiring or established professor,
@@ -461,13 +610,14 @@ export default async function myPage() {
                     href="https://www.academicjobs.com/jobs/professor-in-artificial-intelligence/90020"
                     className="text-blue-500 font-bold"
                   >
-                    
-Professor in Artificial Intelligence
+                    Professor in Artificial Intelligence
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Queensland University of Technology (QUT)</Link>
+                    <Link href="">
+                      Queensland University of Technology (QUT)
+                    </Link>
                   </li>
                   <li>
                     <Link href="">Brisbane QLD, Australia</Link>
@@ -825,7 +975,9 @@ Professor in Artificial Intelligence
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Queensland University of Technology (QUT)</Link>
+                    <Link href="">
+                      Queensland University of Technology (QUT)
+                    </Link>
                   </li>
                   <li>
                     <Link href="">Brisbane, QLD, Aus</Link>
@@ -848,7 +1000,9 @@ Professor in Artificial Intelligence
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Queensland University of Technology (QUT)</Link>
+                    <Link href="">
+                      Queensland University of Technology (QUT)
+                    </Link>
                   </li>
                   <li>
                     <Link href="">Brisbane, QLD, Aus</Link>
@@ -859,7 +1013,7 @@ Professor in Artificial Intelligence
                 </ul>
               </ul>
             </div>
-            </div>
+          </div>
         </div>
       </div>
       <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">

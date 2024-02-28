@@ -124,8 +124,7 @@ export default function myPage() {
               further. AcademicJobs is your trusted companion, offering an
               extensive range of opportunities in{' '}
               <span className="uni-jobs">uni</span>jobs, University Jobs,
-              College Jobs, faculty, research, administrative (staff), and
-              professional roles.
+              College Jobs, faculty, research, staff, and professional roles.
             </p>
             <p>
               With a user-friendly interface and cutting-edge technology, we've

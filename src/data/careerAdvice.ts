@@ -62,7 +62,7 @@ export const blogData = [
     tags: [],
     keywords: 'Global Landscape of Academic Jobs. opportunities and challenges',
     content: `<div class="blog-content">
-<p><span style="">Exploring the global landscape of academic jobs reveals a diverse range of opportunities and challenges for individuals pursuing careers in academia. Academic jobs encompass various roles, including professors, researchers, postdoctoral fellows, lecturers, and administrative positions within educational institutions.</span></p>
+<p><span style="">Exploring the global landscape of academic jobs reveals a diverse range of opportunities and challenges for individuals pursuing careers in academia. Academic jobs encompass various roles, including professors, researchers, postdoctoral fellows, lecturers, and staff positions within educational institutions.</span></p>
 <p><span style="">Let's delve into the opportunities and challenges associated with academic careers on a global scale.</span></p>
 <p style="padding-top: 40px;><span "><strong>Opportunities</strong>:</span></p>
 <p style="padding-left: 40px;"><span style=""><strong>&gt; Global Mobility</strong>: One of the significant advantages of academic careers is the potential for international mobility. Academic jobs provide opportunities for individuals to work in different countries and experience diverse cultures and academic environments. This mobility not only enriches personal and professional experiences but also facilitates collaboration, knowledge exchange, and exposure to different research methodologies and perspectives. Working in different countries allows academics to build a global professional network, fostering collaboration and cross-cultural understanding.</span></p>
@@ -201,7 +201,7 @@ export const blogData = [
     image_url: `/blogs/top-academic-jobs-australia.jpg`,
     alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
     summary:
-      'Looking for the best academic jobs in Australia? This blog shows the best of faculty, research, and administrative positions at leading universities. ',
+      'Looking for the best academic jobs in Australia? This blog shows the best of faculty, research, and staff positions at leading universities. ',
     tags: [],
     keywords: 'Top Academic Jobs Australia. Academic Jobs Australia',
     content: `<div class="blog-content">
@@ -850,7 +850,7 @@ export const blogData = [
                 height={170} src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip8.png"></p>
               <p>&nbsp;</p>
               <p>Academic Jobs can help you kick start your career at UCLA today!</p>
-              <p><br>A career at The University of California, Los Angeles (UCLA) in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. Whether in faculty roles such as Assistant, Associate, or Full Professors, or engaging in dynamic administrative positions within higher education, UCLA provides a platform for professionals to thrive, fostering a culture of innovation, diversity, and continuous learning. </p>
+              <p><br>A career at The University of California, Los Angeles (UCLA) in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. Whether in faculty roles such as Assistant, Associate, or Full Professors, or engaging in dynamic staff positions within higher education, UCLA provides a platform for professionals to thrive, fostering a culture of innovation, diversity, and continuous learning. </p>
               <p><o:p>&nbsp;</o:p></p>
               <p>A career at UCLA opens doors to a vibrant community of scholars, offering academic positions and higher education opportunities that empower individuals to contribute to the excellence of the nation's top public university. Joining UCLA means embracing a commitment to True Bruin Values, upholding ethical standards, and playing a pivotal role in shaping the future of higher education while enjoying the picturesque campus in Westwood, just five miles from the Pacific Ocean.</p>
               <p><o:p>&nbsp;</o:p></p>

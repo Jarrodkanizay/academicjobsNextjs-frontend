@@ -38,7 +38,7 @@ export default function myPage() {
               the top admin jobs to find the best position for you!
             </p>
             <p className="px-7 md:flex hidden">
-              Find all the best administrative jobs here…
+              Find all the best staff jobs here…
             </p>
             <Link
               href={'/academic-talent-pool'}

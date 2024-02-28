@@ -10,7 +10,7 @@ export const metadata = {
     absolute: 'Academic Jobs Canada',
   },
   description:
-    'Explore academic jobs in Canada and discover a range of opportunities in Canada university jobs such as teaching, research or administrative positions.',
+    'Explore academic jobs in Canada and discover a range of opportunities in Canada university jobs such as teaching, research or staff positions.',
   keywords: 'academic jobs in Canada, Canada university jobs',
 };
 export default function Page() {
@@ -143,9 +143,7 @@ export default function Page() {
             <div class="widget__text-block1">
               <div> */}
 
-        <h2 className="">
-          ALL HIGHER ED JOBS IN CANADA BY UNIVERSITY{' '}
-        </h2>
+        <h2 className="">ALL HIGHER ED JOBS IN CANADA BY UNIVERSITY </h2>
         <Canada id="section3" heading="" />
       </div>
     </div>

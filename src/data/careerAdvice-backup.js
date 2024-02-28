@@ -1,6 +1,6 @@
 const data = [
   {
-// Blog 1
+    // Blog 1
     Name: 'how to land your dream college job a step by step guide',
     Title: 'How to Land Your Dream College Job: A Step-by-Step Guide',
     Description:
@@ -45,7 +45,7 @@ const data = [
   `,
   },
   {
-// Blog 2
+    // Blog 2
     Name: 'exploring the global landscape of academic jobs opportunities and challenges',
     Title:
       'Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges',
@@ -57,7 +57,7 @@ const data = [
   <div class="blog__content">
   <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/Global_Opportunities_2.png" alt="Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges">
   <p>&nbsp;</p>
-                <p><span style="">Exploring the global landscape of academic jobs reveals a diverse range of opportunities and challenges for individuals pursuing careers in academia. Academic jobs encompass various roles, including professors, researchers, postdoctoral fellows, lecturers, and administrative positions within educational institutions.</span></p>
+                <p><span style="">Exploring the global landscape of academic jobs reveals a diverse range of opportunities and challenges for individuals pursuing careers in academia. Academic jobs encompass various roles, including professors, researchers, postdoctoral fellows, lecturers, and staff positions within educational institutions.</span></p>
 <p><span style="">Let's delve into the opportunities and challenges associated with academic careers on a global scale.</span></p>
 <p style="padding-top: 40px;><span "><strong>Opportunities</strong>:</span></p>
 <p style="padding-left: 40px;"><span style=""><strong>&gt; Global Mobility</strong>: One of the significant advantages of academic careers is the potential for international mobility. Academic jobs provide opportunities for individuals to work in different countries and experience diverse cultures and academic environments. This mobility not only enriches personal and professional experiences but also facilitates collaboration, knowledge exchange, and exposure to different research methodologies and perspectives. Working in different countries allows academics to build a global professional network, fostering collaboration and cross-cultural understanding.</span></p>
@@ -87,8 +87,8 @@ const data = [
   },
 
   {
-// Blog 3
-Name: 'exploring the benefits of academic jobs online why virtual hiring is on the rise',
+    // Blog 3
+    Name: 'exploring the benefits of academic jobs online why virtual hiring is on the rise',
     Title:
       'Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise',
     Description:
@@ -188,11 +188,11 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 5
+    // Blog 5
     Name: 'top academic jobs australia',
     Title: 'Top Academic Jobs Australia',
     Description:
-      'Looking for the best academic jobs in Australia? This blog shows the best of faculty, research, and administrative positions at leading universities. ',
+      'Looking for the best academic jobs in Australia? This blog shows the best of faculty, research, and staff positions at leading universities. ',
     Keyword: 'Top Academic Jobs Australia. Academic Jobs Australia',
     content: '10 Aug, 2023',
     content2: `   
@@ -252,7 +252,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 6
+    // Blog 6
     Name: 'the evolution of university recruitment',
     Title:
       'The Evolution of University Recruitment: Embracing Digital Platforms',
@@ -322,7 +322,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 7
+    // Blog 7
     Name: 'highest paid academic jobs australia 2023',
     Title: 'The Highest Paid Academic Jobs Australia for 2023',
     Description:
@@ -402,7 +402,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 8
+    // Blog 8
     Name: 'the highest paid academic job in 2023',
     Title: 'Unveiling the Pinnacle: The Highest-Paid Academic Job in 2023',
     Description:
@@ -441,7 +441,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 9
+    // Blog 9
     Name: 'find student jobs on your university campus',
     Title: 'Find Student Jobs on your University Campus',
     Description:
@@ -478,7 +478,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 10
+    // Blog 10
     Name: 'seek all qut university careers here',
     Title: 'Seek all QUT University Careers Here',
     Description:
@@ -523,7 +523,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 11
+    // Blog 11
     Name: 'seek all qut university jobs here',
     Title: 'Seek all QUT University Jobs Here',
     Description:
@@ -555,7 +555,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 12
+    // Blog 12
     Name: 'seek all bond university careers here',
     Title: 'Seek all Bond University Careers Here',
     Description:
@@ -597,7 +597,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 13
+    // Blog 13
     Name: 'seek all bond university jobs here',
     Title: 'Seek all Bond University Jobs Here',
     Description:
@@ -631,7 +631,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
   },
 
   {
-// Blog 14
+    // Blog 14
     Name: 'start your career at harvard university',
     Title: 'Start your Career at Harvard University ',
     Description:
@@ -779,7 +779,7 @@ Name: 'exploring the benefits of academic jobs online why virtual hiring is on t
               <p><Image src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip8.png"></p>
               <p>&nbsp;</p>
               <p>Academic Jobs can help you kick start your career at UCLA today!<o:p></o:p></p>
-              <p><br>A career at The University of California, Los Angeles (UCLA) in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. Whether in faculty roles such as Assistant, Associate, or Full Professors, or engaging in dynamic administrative positions within higher education, UCLA provides a platform for professionals to thrive, fostering a culture of innovation, diversity, and continuous learning. <o:p></o:p></p>
+              <p><br>A career at The University of California, Los Angeles (UCLA) in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. Whether in faculty roles such as Assistant, Associate, or Full Professors, or engaging in dynamic staff positions within higher education, UCLA provides a platform for professionals to thrive, fostering a culture of innovation, diversity, and continuous learning. <o:p></o:p></p>
               <p><o:p>&nbsp;</o:p></p>
               <p>A career at UCLA opens doors to a vibrant community of scholars, offering academic positions and higher education opportunities that empower individuals to contribute to the excellence of the nation's top public university. Joining UCLA means embracing a commitment to True Bruin Values, upholding ethical standards, and playing a pivotal role in shaping the future of higher education while enjoying the picturesque campus in Westwood, just five miles from the Pacific Ocean.<o:p></o:p></p>
               <p><o:p>&nbsp;</o:p></p>

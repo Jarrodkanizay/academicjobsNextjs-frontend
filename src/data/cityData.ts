@@ -2608,7 +2608,7 @@ export const cityData = [
     academicList: [],
     promo: [
       `Tallahassee's universities and colleges offer an unparalleled educational experience, fostering intellectual curiosity and personal growth. State-of-the-art facilities, esteemed faculty, and a supportive community create an environment conducive to academic excellence and holistic development.`,
-      `For professionals seeking career opportunities, Tallahassee's academic institutions provide a platform for advancement and research collaboration. Whether in teaching, research, or administrative roles, joining Tallahassee's academic community offers avenues for professional growth and meaningful contributions to society.`,
+      `For professionals seeking career opportunities, Tallahassee's academic institutions provide a platform for advancement and research collaboration. Whether in teaching, research, or staff roles, joining Tallahassee's academic community offers avenues for professional growth and meaningful contributions to society.`,
     ],
     image_url: `https://www.shutterstock.com/image-photo/tallahassee-florida-usa-downtown-skyline-600nw-359879489.jpg`,
     alt: `Tallahassee skyline with palm trees`,

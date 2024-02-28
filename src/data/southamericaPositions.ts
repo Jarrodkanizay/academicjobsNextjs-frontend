@@ -45,7 +45,7 @@ Find all the best executive jobs here…`,
     Keyword: `University Admin Jobs South America`,
     content: `Seek your perfect admin position through South America’s best academic and teaching job board! At Academic Jobs we offer the most renowned Higher Ed jobs at the top South American universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
 The No.1 job board for academics in South America. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
-Find all the best administrative jobs here…`,
+Find all the best staff jobs here…`,
   },
   {
     Name: `hr jobs`,

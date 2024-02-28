@@ -185,7 +185,8 @@ export default function myPage() {
         <div className="bg-gray-200 mt-16">
           <figure className="relative w-full min-h-[237px] max-h-[237px] overflow-hidden">
             <Image
-            width={1280} height={380}
+              width={1280}
+              height={380}
               src="/academic-job-postings/africa-university-of-pretoria.jpg"
               alt="/Africa University of Pretoria"
               className="absolute w-full h-full object-cover"
@@ -211,8 +212,8 @@ export default function myPage() {
                 By bringing back genuine customer service and leveraging the
                 power of AI, we create a pleasurable customer experience that
                 ALL modern platforms have lost. Quickly post jobs for executive
-                jobs in higher education, academic jobs, administrative jobs and
-                all university staff roles
+                jobs in higher education, academic jobs, staff jobs and all
+                university staff roles
               </p>
               <div className="card-actions justify-end">
                 <Link
@@ -331,7 +332,7 @@ export default function myPage() {
                     width={90}
                     height={90}
                     src="/academic-job-postings/Admin-Jobs.png"
-                    alt="Africa Admin Jobs"
+                    alt="Africa Staff Jobs"
                   />
                 </div>
                 <div className="icon-ai hidden">

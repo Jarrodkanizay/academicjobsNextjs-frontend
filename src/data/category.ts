@@ -76,7 +76,7 @@ export const categoryData = [
     Title: `Academic Business Jobs`,
     Description: `All the best Business university jobs are available here. Search for lecturing, research, and faculty positions in the Business academic field at universities. Go to the Academic jobs Business website for university jobs and higher ed positions today.`,
     Keyword: `Business university jobs, Business jobs, Business in higher education, Business in academic jobs`,
-    content: `Business University Jobs Do you have a university degree in business or a related field and want to pursue an academic career? Whether you are looking for faculty, research, or administrative academic positions, you can find it here. We have a wide range of business university jobs in various disciplines, such as accounting, economics, finance, management, marketing, and more. You can search by location, institution, rank, or keyword and apply online with ease.. Don’t miss this opportunity to find Business University Jobs.`,
+    content: `Business University Jobs Do you have a university degree in business or a related field and want to pursue an academic career? Whether you are looking for faculty, research, or staff academic positions, you can find it here. We have a wide range of business university jobs in various disciplines, such as accounting, economics, finance, management, marketing, and more. You can search by location, institution, rank, or keyword and apply online with ease.. Don’t miss this opportunity to find Business University Jobs.`,
   },
   {
     Name: `accounting`,

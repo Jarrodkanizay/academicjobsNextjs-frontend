@@ -215,8 +215,8 @@ export default function myPage() {
                 By bringing back genuine customer service and leveraging the
                 power of AI, we create a pleasurable customer experience that
                 ALL modern platforms have lost. Quickly post jobs for executive
-                jobs in higher education, academic jobs, administrative jobs and
-                all university staff roles.
+                jobs in higher education, academic jobs, staff jobs and all
+                university staff roles.
               </p>
               <div className="card-actions justify-end">
                 <Link href="/australia/post-a-job" className="btn btn-aj">
@@ -333,7 +333,7 @@ export default function myPage() {
                     width={90}
                     height={90}
                     src="/academic-job-postings/admin-jobs.png"
-                    alt="Australia Admin Jobs"
+                    alt="Australia Staff Jobs"
                   />
                 </div>
                 <div className="icon-ai hidden">

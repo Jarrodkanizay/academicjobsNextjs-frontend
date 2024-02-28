@@ -85,7 +85,7 @@ export const regionData = [
  
     The No.1 job board for academics in the USA. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top staff jobs to find the best position for you!
      
-    Find all the best administrative jobs here…`,
+    Find all the best staff jobs here…`,
   },
 
   {

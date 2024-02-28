@@ -118,7 +118,7 @@ export default function Page() {
           Title: "Explore Academic Opportunities Worldwide"
 
           Introduction:
-          "Discover your next academic adventure with our comprehensive job board tailored for educators, researchers, and administrative professionals. Whether you're seeking faculty positions, post-doctoral fellowships, or administrative roles, our platform connects you with diverse opportunities in universities and research institutions across the globe."
+          "Discover your next academic adventure with our comprehensive job board tailored for educators, researchers, and administrative professionals. Whether you're seeking faculty positions, post-doctoral fellowships, or staff roles, our platform connects you with diverse opportunities in universities and research institutions across the globe."
 
           How It Works:
           "1. Search Efficiently: Use our advanced search filters to narrow down your options by location, discipline, and job type.
@@ -129,9 +129,9 @@ export default function Page() {
           "From prestigious universities in the United States and the United Kingdom to emerging research centers in Asia and Europe, we curate the finest academic positions to propel your career forward. Our resources and guides support you at every step of your job search, ensuring you're well-prepared to seize your next opportunity."
 
           Metadata
-          Title Tag: "Academic Jobs Board - Find Faculty, Research, and Admin Positions"
+          Title Tag: "Academic Jobs Board - Find Faculty, Research, and Staff Positions"
 
-          Meta Description: "Connect with leading academic institutions worldwide on our job board. Discover faculty, research, and administrative positions tailored to your career aspirations. Start your academic job search today."
+          Meta Description: "Connect with leading academic institutions worldwide on our job board. Discover faculty, research, and staff positions tailored to your career aspirations. Start your academic job search today."
 
           Keywords: "academic jobs, faculty positions, research jobs, university careers, higher education employment, academic job search, post-doctoral positions, academic administration"
 
@@ -207,40 +207,40 @@ export default function Page() {
         </div>
 
         <details className="bg-gray-300 open:bg-[amber-200] duration-300 md:hidden">
-            <summary className="bg-inherit px-5 py-3 text-lg cursor-pointer pl-8">
-              Filters
-            </summary>
-        <div className="flex gap-4 flex-wrap md:hidden m-4">
-          {Object.entries(filterTypes).map(
-            (
-              [filterType, showYN],
-              i // 中层大目录m
-            ) => (
-              <button
-                key={i}
-                className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${
-                  category === filterType
-                    ? 'bg-orange-500 text-white border-orange-500'
-                    : 'bg-white border-gray-500'
-                }
+          <summary className="bg-inherit px-5 py-3 text-lg cursor-pointer pl-8">
+            Filters
+          </summary>
+          <div className="flex gap-4 flex-wrap md:hidden m-4">
+            {Object.entries(filterTypes).map(
+              (
+                [filterType, showYN],
+                i // 中层大目录m
+              ) => (
+                <button
+                  key={i}
+                  className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${
+                    category === filterType
+                      ? 'bg-orange-500 text-white border-orange-500'
+                      : 'bg-white border-gray-500'
+                  }
                   ${showYN ? 'block' : 'hidden'}
                   `}
-                onClick={() => {
-                  if (category === filterType) {
-                    setIsShowFilter((prev) => !prev);
-                  } else {
-                    setIsShowFilter(true);
-                  }
-                  console.log(filterType);
-                  setCategory(filterType);
-                }}
-              >
-                {filterValues9[filterType]}
-              </button>
-            )
-          )}
-        </div>
-</details>
+                  onClick={() => {
+                    if (category === filterType) {
+                      setIsShowFilter((prev) => !prev);
+                    } else {
+                      setIsShowFilter(true);
+                    }
+                    console.log(filterType);
+                    setCategory(filterType);
+                  }}
+                >
+                  {filterValues9[filterType]}
+                </button>
+              )
+            )}
+          </div>
+        </details>
 
         {isShowFilter && (
           <div className="grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
@@ -286,45 +286,48 @@ export default function Page() {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto py-8">
-     
-    </div>
+      <div className="max-w-4xl mx-auto py-8"></div>
 
+      <div className="max-w-4xl mx-auto py-8"></div>
 
+      <div className="bg-gray-100">
+        <div className="container mx-auto py-8">
+          <p className="text-lg font-semibold mb-8">
+            Discover your next academic adventure with our comprehensive job
+            board tailored for educators, researchers, and administrative
+            professionals. Whether you're seeking faculty positions,
+            post-doctoral fellowships, or staff roles, our platform connects you
+            with diverse opportunities in universities and research institutions
+            across the globe.
+          </p>
 
-    <div className="max-w-4xl mx-auto py-8">
-    
-    </div>
-
-
-    <div className="bg-gray-100">
-      <div className="container mx-auto py-8">
-        <p className="text-lg font-semibold mb-8">
-          Discover your next academic adventure with our comprehensive job board tailored for educators, researchers, and administrative professionals. Whether you're seeking faculty positions, post-doctoral fellowships, or administrative roles, our platform connects you with diverse opportunities in universities and research institutions across the globe.
-        </p>
-   
-        <h2 className="text-2xl font-bold mb-4">How It Works:</h2>
-      <ol className="list-decimal pl-6 mb-6">
-        <li className="mb-2">
-          <span className="font-bold">Search Efficiently:</span> Use our advanced search filters to narrow down your options by location, discipline, and job type.
-        </li>
-        <li className="mb-2">
-          <span className="font-bold">Stay Informed:</span> Create alerts to get notified about the latest opportunities in your field.
-        </li>
-        <li>
-          <span className="font-bold">Apply with Ease:</span> Directly submit your application through our platform and track your application status.
-        </li>
-      </ol>
-      <h2 className="text-2xl font-bold mb-4">Why Choose Us?:</h2>
-      <p className="mb-4">
-        From prestigious universities in the United States and the United Kingdom to emerging research centers in Asia and Europe, we curate the finest academic positions to propel your career forward.
-    
-        Our resources and guides support you at every step of your job search, ensuring you're well-prepared to seize your next opportunity.
-      </p>
-
+          <h2 className="text-2xl font-bold mb-4">How It Works:</h2>
+          <ol className="list-decimal pl-6 mb-6">
+            <li className="mb-2">
+              <span className="font-bold">Search Efficiently:</span> Use our
+              advanced search filters to narrow down your options by location,
+              discipline, and job type.
+            </li>
+            <li className="mb-2">
+              <span className="font-bold">Stay Informed:</span> Create alerts to
+              get notified about the latest opportunities in your field.
+            </li>
+            <li>
+              <span className="font-bold">Apply with Ease:</span> Directly
+              submit your application through our platform and track your
+              application status.
+            </li>
+          </ol>
+          <h2 className="text-2xl font-bold mb-4">Why Choose Us?:</h2>
+          <p className="mb-4">
+            From prestigious universities in the United States and the United
+            Kingdom to emerging research centers in Asia and Europe, we curate
+            the finest academic positions to propel your career forward. Our
+            resources and guides support you at every step of your job search,
+            ensuring you're well-prepared to seize your next opportunity.
+          </p>
+        </div>
       </div>
-    </div>
-
     </main>
   );
 }

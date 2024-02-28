@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     'Empower your university with Academic Jobs: a leading platform for matching top academic talent globally using innovative AI technology. Transform your talent strategy now!',
   keywords:
-    'Academic Talent Acquisition, Higher Education Recruitment Platform, University Talent Matching, College Recruitment Solutions, Global Academic Talent Pool, Academic Jobs Platform, Educational Institution Hiring, Faculty Recruitment Services, Academic Staffing Solutions, Dynamic Talent Matching for Universities, AI-Powered Academic Recruitment, Higher Ed Talent Search, Academic Professional Networking, Innovative University Hiring, Research Staff Recruitment, Academic Career Opportunities, Educational Talent Management, Higher Education Job Matching, University Faculty Recruitment, College Administrative Hiring',
+    'Academic Talent Acquisition, Higher Education Recruitment Platform, University Talent Matching, College Recruitment Solutions, Global Academic Talent Pool, Academic Jobs Platform, Educational Institution Hiring, Faculty Recruitment Services, Academic Staffing Solutions, Dynamic Talent Matching for Universities, AI-Powered Academic Recruitment, Higher Ed Talent Search, Academic Professional Networking, Innovative University Hiring, Research Staff Recruitment, Academic Career Opportunities, Educational Talent Management, Higher Education Job Matching, University Faculty Recruitment, College Staff Hiring',
 };
 
 export default function myPage() {
@@ -135,7 +135,7 @@ export default function myPage() {
 
       <HeroCard
         heading="Transform Your Talent Acquisition Today"
-        para1="The Academic Talent Pool is more than just a platform; it's a gateway to unparalleled academic excellence. By specializing in the unique needs of higher education institutions, we offer a bespoke solution that addresses the challenges of talent acquisition in the academic sphere. Whether you're looking to fill faculty positions, administrative roles, or research opportunities, our platform is equipped to connect you with the best in the field."
+        para1="The Academic Talent Pool is more than just a platform; it's a gateway to unparalleled academic excellence. By specializing in the unique needs of higher education institutions, we offer a bespoke solution that addresses the challenges of talent acquisition in the academic sphere. Whether you're looking to fill faculty positions, staff roles, or research opportunities, our platform is equipped to connect you with the best in the field."
         para2="Engage your Brand Ambassadors to help you find the best talent for your institution. Our platform is designed to help you find the best talent through your network and ours. We have created a platform that is easy to use and will save you time and money."
         imagePath="/talent-pool/dynamic-talent-match-making.jpg"
         alt="Dynamic Talent Match Making"
