@@ -17,11 +17,11 @@ export default function myPage() {
     <>
       <main className="content-grid">
 
-<div className="full-width bg-slate-200">
-      <h1 className="card-title font-bold text-amber-500 text-3xl pb-2 mb-0">
+<div className="full-width bg-slate-200 px-auto">
+      <h1 className="card-title font-bold text-amber-500 text-5xl pb-2 mb-0 pr-8 mx-auto">
                 FIND MY ACADEMIC RANK
               </h1>
-              <p className="max-w-screen-sm">
+              <p className="max-w-screen-sm mx-auto">
                 By providing a rank for you, we can set a benchmark that
                 encourages collaboration. Having a number in the academic field
                 allows you to find others with a similar rank, acknowledging a
