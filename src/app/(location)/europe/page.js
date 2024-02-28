@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
+import Europe from '@/components/topUnis/Europe';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -98,52 +99,8 @@ export default function Page() {
           {/* <div id="myUniversity" class="myUniversity">
             <div class="widget__text-block1">
               <div> */}
-                    <h2 className="underline-full">AcademicJobs Europe: All Academic Positions by university  </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/france/" className='text-[#f4a10c] font-bold'>France</Link></li>
-                    <li><Link href="/employers/paris-sciences-et-lettres/3163/">Paris
-
-                      Sciences et Lettres</Link></li>
-                    <li><Link href="/employers/ecole-polytechnique/3158/">Ecole Polytechnique</Link></li>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/sweden/" className='text-[#f4a10c] font-bold'>Sweden</Link></li>
-                    <li><Link href="/employers/karolinska-institute/3165/">Karolinska Institute</Link>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/germany/" className='text-[#f4a10c] font-bold'>Germany</Link></li>
-                    <li><Link href="/employers/heidelberg-university/3160/">Heidelberg
-                      University</Link></li>
-                    <li><Link href="/employers/lmu-munich-ludwig-maximilians-universitat/3150/">LMU
-                      Munich (Ludwig Maximilians Universität München)</Link></li>
-                    <li><Link href="/employers/technische-uiniversitat-munchen/10702/">Technische Universität München</Link></li>
-                  </ul>
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/denmark/" className='text-[#f4a10c] font-bold'>Denmark</Link></li>
-                    <li><Link href="/employers/the-university-of-copenhagen/3156/">University of
-                      Copenhagen</Link>
-                    </li>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/switzerland/" className='text-[#f4a10c] font-bold'>Switzerland</Link></li>
-                    <li><Link href="/employers/eth-zurich/3132/">ETH
-                      Zurich</Link></li>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/belgium/" className='text-[#f4a10c] font-bold'>Belgium</Link></li>
-                    <li><Link href="/employers/ku-leuven/3159/">KU Leuven</Link></li>
-                  </ul>
-
-
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/netherlands/" className='text-[#f4a10c] font-bold'>Netherlands</Link></li>
-                    <li><Link href="/employers/delft-university-of-technology/3847/">Delft University of Technology</Link>
-                    </li>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/italy/" className='text-[#f4a10c] font-bold'>Italy</Link></li>
-                    <li><Link href="/employers/University-of-Bologna/12015/">University of Bologna</Link></li>
-
-                    <li className='mb-1 mt-4 '><Link href="/jobs/spain/" className='text-[#f4a10c] font-bold'>Spain</Link></li>
-                    <li><Link href="/employers/universitat-de-barcelona/12195/">Universitat de Barcelona</Link></li>
-
-                  </ul>
-
-                </div>
+                    <h2 className="">AcademicJobs Europe: All Academic Positions by university  </h2>
+                    <Europe heading="" />
               </div>
             </div>
          

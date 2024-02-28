@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
+import UK from '@/components/topUnis/UK';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -121,82 +122,8 @@ export default function Page() {
           <div id="myUniversity" class="myUniversity">
             <div class="widget__text-block1">
               <div>
-              <h2 className="underline-full">Academic Jobs UK: Jobs in Academia by University </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/england/" className='text-[#f4a10c] font-bold'>England</Link></li>
-                    <li><Link href="/employers/university-of-cambridge/12635/">University of
-                      Cambridge</Link></li>
-                    <li><Link href="/employers/university-of-oxford/3099/">University of
-                      Oxford</Link>
-                    </li>
-                    <li><Link href="/employers/university-college-london/12527/">University
-                      College London</Link>
-                    </li>
-                    <li><Link href="/employers/imperial-college-london/3129/">Imperial
-                      College London</Link></li>
-                    <li><Link href="/employers/london-school-of-economics-and-political-science/3153/">London School
-                      of Economics and Political Science</Link>
-                    </li>
-                    <li><Link href="/employers/university-of-manchester/3833/">University of
-                      Manchester</Link></li>
-                    <li><Link href="/employers/university-of-birmingham/12614/">University of
-                      Birmingham</Link></li>
-                    <li><Link href="/employers/university-of-leeds/12797/">University of
-                      Leeds</Link>
-                      <li><Link href="/employers/king's-college-london/13540/" >King's College London</Link></li>
-                      <li><Link href="/employers/durham-university/13541/" >Durham University</Link></li>
-                      <li><Link href="/employers/university-of-bristol/13542/" >University of Bristol</Link></li>
-                      <li><Link href="/employers/university-of-exeter/13543/" >University of Exeter</Link></li>
-                      <li><Link href="/employers/university-of-liverpool/13544/" >University of Liverpool</Link></li>
-                      <li><Link href="/employers/university-of-nottingham/13545/" >University of Nottingham</Link></li>
-                      <li><Link href="/employers/queen-mary-university-of-london/13546/" >Queen Mary University of London</Link></li>
-                      <li><Link href="/employers/university-of-sheffield/13547/" >University of Sheffield</Link></li>
-                      <li><Link href="/employers/university-of-southampton/13548/" >University of Southampton</Link></li>
-                      <li><Link href="/employers/university-of-warwick/13549/" >University of Warwick</Link></li>
-                      <li><Link href="/employers/university-of-york/13550/" >University of York</Link></li>
-                      <li><Link href="/employers/university-of-newcastle/13551/" >University of Newcastle</Link></li>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/scotland/" className='text-[#f4a10c] font-bold'>Scotland</Link></li>
-                    <li><Link href="/employers/university-of-edinburgh/12681/">University of
-                      Edinburgh</Link></li>
-                    <li><Link href="/employers/university-of-glasgow/12713/">University of
-                      Glasgow</Link>
-                    </li>
-                    <li><Link href="/employers/university-of-aberdeen/12555/">University of
-                      Aberdeen</Link></li>
-                    <li><Link href="/employers/university-of-st-andrews/13005/">University of
-                      St Andrews</Link></li>
-                    <li><Link href="/employers/university-of-dundee/12669/">University of
-                      Dundee</Link>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/wales/" className='text-[#f4a10c] font-bold'>Wales</Link></li>
-                    <li><Link href="/employers/cardiff-university/6252/">Cardiff
-                      University</Link>
-                    </li>
-                    <li><Link href="/employers/swansea-university/10538/">Swansea
-                      University</Link>
-                    </li>
-                    <li><Link href="/employers/aberystwyth-university/13115/">Aberystwyth
-                      University</Link></li>
-                    <li><Link href="/employers/bangor-university/13116/">Bangor
-                      University</Link>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/northern-ireland/" className='text-[#f4a10c] font-bold'>Northern Ireland</Link></li>
-                    <li><Link href="/employers/queens-university-belfast/10799/">Queen's
-                      University Belfast</Link>
-                    </li>
-                    <li><Link href="/employers/ulster-university/13098/">Ulster
-                      University</Link>
-                    </li>
-                  </ul>
-                </div>
+              <h2 className="">Academic Jobs UK: Jobs in Academia by University </h2>
+              <UK id="section2" heading="" />
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroBanner from '@/components/HeroBanner';
+import Canada from '@/components/topUnis/Canada';
 
 export const metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -69,85 +70,8 @@ export default function myPage() {
         </div>
       </section>
 
-      <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl max-w-screen-xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
-          <ul>
-            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Alberta</li>
-            <li>
-              <Link href="/employers/university-of-alberta/3837/">
-                University of Alberta
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/university-of-calgary/12631/">
-                University of Calgary
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Quebec</li>
-            <li>
-              <Link href="/employers/mcgill-university/3162/">
-                McGill University
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/universite-de-montreal/3836/">
-                Universite De Montreal
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/university-of-waterloo/3838/">
-                University of Waterloo
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/laval-university/12443">
-                Laval University
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Ontario</li>
-            <li>
-              <Link href="/employers/university-of-toronto//3134/">
-                University of Toronto
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/university-of-british-columbia/3157/">
-                University of British Columbia
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/simon-fraser-university/10280/">
-                Simon Fraser University
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/mcmaster-university/3835/">
-                McMaster University
-              </Link>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <Link href="/employers/university-of-ottawa/12910/">
-                University of Ottawa
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/york-university/13421/">
-                York University
-              </Link>
-            </li>
-            <li>
-              <Link href="/employers/queens-university/9836/">
-                Queen's University
-              </Link>
-            </li>
-          </ul>
-        </div>
+      <div className=" m-8 mb-12 rounded-3xl max-w-screen-xl mx-auto">
+      <Canada id="section3" heading="" />
       </div>
 
       <section>

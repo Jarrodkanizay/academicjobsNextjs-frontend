@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroBanner from '@/components/HeroBanner';
+import Asia from '@/components/topUnis/Asia';
 
 export const metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -29,6 +30,7 @@ export default function myPage() {
             <div className="container mx-auto">
               <div className="hero-content flex-col xl:flex-row gap-8 mx-auto max-w-full">
                 <Image
+                 width={1280} height={380}
                   src="/academic-job-postings/asian-university.jpg"
                   className="object-none h-60 w-96  rounded-xl shadow-2xl mb-8 lg:mb-0"
                   alt="Asian University"
@@ -72,97 +74,8 @@ export default function myPage() {
           </div>
         </section>
 
-        <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl max-w-screen-xl mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
-            <ul>
-              <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Singapore</li>
-              <li>
-                <Link href="/employers/nanyang-technological-university-singapore/3152/">
-                  Nanyang Technological University
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/national-university-of-singapore/3137/">
-                  National University of Singapore
-                </Link>
-              </li>
-              <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Malaysia</li>
-              <li>
-                <Link href="/employers/universiti-ualaya/12499/">
-                  Universiti Malaya (UM)
-                </Link>
-              </li>
-            </ul>
-            <ul>
-              <li className="mb-1 mt-4 text-[#f4a10c] font-bold">China</li>
-              <li>
-                <Link href="/employers/peking-university/3133/">
-                  Peking University
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/tsinghua-university/3840/">
-                  Tsinghua University
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/fudan-university/7289/">
-                  Fudan University
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/shanghai-jiao-tong-university/6876/">
-                  Shanghai Jiao Tong University
-                </Link>
-              </li>
-            </ul>
-            <ul>
-              <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Japan</li>
-              <li>
-                <Link href="/employers/university-of-tokyo/3155/">
-                  University of Tokyo
-                </Link>
-              </li>
-              <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Indonesia</li>
-              <li>
-                <Link href="/employers/the-university-of-indonesia/12068/">
-                  The University of Indonesia
-                </Link>
-              </li>
-              <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Thailand</li>
-              <li>
-                <Link href="/employers/chulalongkorn-university/6615/">
-                  Chulalongkorn University
-                </Link>
-              </li>
-            </ul>
-            <ul>
-              <li className="mb-1 mt-4 text-[#f4a10c] font-bold">Hong Kong</li>
-              <li>
-                <Link href="/employers/university-of-hong-kong/3148/">
-                  University of Hong Kong
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/chinese-university-of-hong-kong/3161/">
-                  Chinese University of Hong Kong
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/the-hong-kong-university-of-science-and-technology/3843/">
-                  The Hong Kong University of Science and Technology
-                </Link>
-              </li>
-              <li className="mb-1 mt-4 text-[#f4a10c] font-bold">
-                South Korea
-              </li>
-              <li>
-                <Link href="/employers/seoul-national-university/10119/">
-                  Seoul National University
-                </Link>
-              </li>
-            </ul>
-          </div>
+        <div className=" m-8 mb-12 rounded-3xl max-w-screen-xl mx-auto">
+        <Asia id="section3" heading="" />
         </div>
 
         <section>

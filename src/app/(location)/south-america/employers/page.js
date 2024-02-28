@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import HeroBanner from '@/components/HeroBanner';
+import SA from '@/components/topUnis/SA';
 
 
 export const metadata = {
@@ -69,55 +70,8 @@ Use university rankings to search for jobs in higher education.
         </section>
        
        
-        <div className="bg-gradient-to-b to-white from-orange-100 m-8 mb-12 rounded-3xl max-w-screen-2xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7 mb-16">
-              <ul>
-              <li className='mb-1 mt-4 '><Link href="/jobs/brazil/" className='text-[#f4a10c] font-bold'>Brazil</Link></li>
-                    <li><Link href="/employers/university-of-sao-paulo/11463/">University of São Paulo</Link>
-                    </li>
-                    <li><Link href="/employers/university-of-campinas/11490/">University of Campinas</Link>
-                    </li>
-
-                    <li><Link href="/employers/universidade-federal-do-rio-grande-do-sul/11544/">Universidade Federal do Rio Grande do Sul</Link>
-                    </li>
-
-                  
-
-
-
-                  </ul>
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/argentina/" className='text-[#f4a10c] font-bold'>Argentina</Link></li>
-                    <li><Link href="/employers/universidad-de-buenos-aires/11196/">Universidad de Buenos
-                      Aires</Link>
-                    </li>
-
-                    <li className='mb-1 mt-4 '><Link href="/jobs/colombia/" className='text-[#f4a10c] font-bold'>Colombia</Link></li>
-                    <li><Link href="/employers/universidad-de-los-andes/11308/">Universidad de los
-                      Andes</Link></li>
-
-                    <li><Link href="/employers/icesi-university/11648/">Icesi University</Link></li>
-                  </ul>
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/chile/" className='text-[#f4a10c] font-bold'>Chile</Link></li>
-                    <li><Link href="/employers/pontificia-universidad-catolica-de-chile/9739/">Pontificia Universidad
-                      Catolica de Chile</Link></li>
-                    <li><Link href="/employers/universidad-alberto-hurtado/11012/">Universidad Alberto
-                      Hurtado</Link>
-                    </li>
-                    <li><Link href="/employers/universidad-de-santiago-de-chile/11384/">Universidad de
-                      Santiago de Chile</Link></li>
-                    <li><Link href="/employers/university-of-antofagasta/11189/">University of Antofagasta</Link></li>
-                  </ul>
-                  <ul>
-                    <li className='mb-1 mt-4 '><Link href="/jobs/peru/" className='text-[#f4a10c] font-bold'>Peru</Link></li>
-                    <li><Link href="/employers/universidad-alas-peruanas/11010/">Universidad Alas
-                      Peruanas</Link>
-                    </li>
-                    <li><Link href="/employers/universidad-peruana-cayetano-heredia/11856/">Universidad Peruana Cayetano Heredia</Link>
-                    </li>
-              </ul>
-            </div>
+        <div className=" m-8 mb-12 rounded-3xl max-w-screen-2xl mx-auto">
+        <SA id="section5" heading="" />
           </div>
        
               <section>
