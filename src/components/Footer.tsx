@@ -78,9 +78,6 @@ const Footer = () => {
           <li>
             <Link href="/student">Jobs For Students</Link>
           </li>
-          <li>
-            <Link href="/city">Popular Cities</Link>
-          </li>
         </ul>
 
         <ul className="hidden">
@@ -111,6 +108,10 @@ const Footer = () => {
           <li>
             <Link href="/sitemap">Site Map</Link>
           </li>
+          <li>
+            <Link href="/city">Popular Cities</Link>
+          </li>
+
           <li>
             <Link href="/contact-us">Contact Us</Link>
           </li>
