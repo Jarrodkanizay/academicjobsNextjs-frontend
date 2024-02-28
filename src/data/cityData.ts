@@ -2967,7 +2967,7 @@ export const cityData = [
   promo: [
       "Embark on a transformative educational odyssey amidst Ballarat's rich academic tapestry. From groundbreaking research endeavors to a nurturing learning environment, the city offers a blend of tradition and innovation, inspiring scholars to push the boundaries of knowledge and redefine intellectual frontiers."
   ],
-  image_url: "/cities/ballarat.jpg",
+  image_url: "/cities/ballarat-uni.jpg",
   alt: "A panoramic view of Ballarat's historic precinct showcasing its architectural heritage and natural beauty"
 },
 
