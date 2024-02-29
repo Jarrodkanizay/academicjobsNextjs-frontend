@@ -333,7 +333,7 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <div className="container alert mt-16 bg-emerald-100 text-xl">
+      <div className="container alert mt-16 bg-emerald-100 text-xl mx-4">
         <span>
           <strong>Are your a recruiter?</strong> Try our{' '}
           <Link
@@ -342,11 +342,11 @@ export default function Page() {
           >
             Quick Job Post Technology
           </Link>{' '}
-          now and see how we make your life easier!
+          now and see how we make your life easier!
         </span>
         <div className="ml-auto">
           <Link href="/post-a-job" className="btn btn-sm btn-aj">
-            Quick Job Post
+            Quick Job Post
           </Link>
         </div>
       </div>
