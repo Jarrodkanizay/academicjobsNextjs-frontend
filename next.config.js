@@ -39,8 +39,14 @@ const nextConfig = {
         destination: '/student-jobs',
         permanent: true,
       },
+      
       {
         source: '/employer',
+        destination: '/jobs-by-top-universities',
+        permanent: true,
+      },
+      {
+        source: '/employers',
         destination: '/jobs-by-top-universities',
         permanent: true,
       },
