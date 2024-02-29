@@ -265,6 +265,9 @@ html {
       color: white;
       background-color: var(--color-primary-hover);
     }
+    .alert {
+      column-span: all;
+    }
     .pagination button:hover {
       background-color: var(--color-primary-hover);
       color: white;
