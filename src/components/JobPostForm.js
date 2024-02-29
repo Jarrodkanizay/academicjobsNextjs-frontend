@@ -70,6 +70,21 @@ const JobPostForm = ({ partner, region }) => {
   }, [partnerName]);
   let content;
   const router = useRouter();
+
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   setValue,
+  //   watch,
+  //   formState: { errors },
+  //   setError,
+  // } = useForm();
+  // const mutation = useMutation({
+  //   mutationFn: async (data) => {
+  //     return await BaseApi.post('/sendemail', data);
+  //   },
+  // });
+
   const {
     register,
     handleSubmit,
@@ -77,7 +92,12 @@ const JobPostForm = ({ partner, region }) => {
     watch,
     formState: { errors },
     setError,
-  } = useForm();
+  } = useForm({
+    defaultValues: {
+      paymentMethod: 'creditCard',
+    },
+  });
+
   const mutation = useMutation({
     mutationFn: async (data) => {
       return await BaseApi.post('/sendemail', data);
