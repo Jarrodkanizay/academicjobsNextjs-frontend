@@ -5840,7 +5840,7 @@ export const cityData = [
         "Embark on a transformative journey of discovery and growth in Manchester, where educational horizons expand amidst a vibrant cultural milieu. Immerse yourself in world-class research facilities, forge invaluable connections with industry leaders, and thrive within a nurturing academic community dedicated to fostering excellence and innovation.",
         "For professionals seeking to advance their careers and spearhead groundbreaking research initiatives, Manchester offers boundless opportunities for collaboration, exploration, and impact. Join a dynamic ecosystem of scholarly inquiry and embark on a trajectory of personal and professional fulfillment."
     ],
-    image_url: "/cities/manchester-academic-scene.jpg",
+    image_url: "/cities/manchester.webp",
     alt: "Manchester skyline with university buildings"
 },
 
@@ -5882,7 +5882,7 @@ export const cityData = [
     "Nottingham offers a vibrant academic milieu with diverse learning opportunities and cutting-edge research initiatives. Whether you seek personal growth through education or professional advancement in research, Nottingham's institutions provide the ideal platform to realize your aspirations.",
     "Join a community of scholars and innovators dedicated to pushing the boundaries of knowledge and making meaningful contributions to society. Experience the dynamic culture and intellectual vibrancy of Nottingham, where learning transcends boundaries."
   ],
-  image_url: "/nottingham/nottingham-cityscape.jpg",
+  image_url: "/cities/nottingham.jpg",
   alt: "Panoramic view of Nottingham cityscape showcasing historic landmarks and modern architecture"
 },
 
@@ -5926,7 +5926,7 @@ export const cityData = [
       "Glasgow beckons students and academics alike with its vibrant tapestry of educational and research opportunities. Dive into a world of academic rigor and cultural richness, where personal growth and professional development converge.",
       "Join Glasgow's thriving academic community, where collaboration knows no bounds and innovation knows no limits. Unleash your potential in a city that inspires creativity and fuels intellectual curiosity​."
   ],
-  image_url: "/cities/glasgow-academic-scene.jpg",
+  image_url: "/cities/glasgow.jpg",
   alt: "Glasgow's vibrant academic scene"
 },
 
@@ -6010,7 +6010,7 @@ export const cityData = [
     "For seekers of knowledge and professional growth, Birmingham offers an unparalleled academic environment brimming with opportunities. Students benefit from world-class education, cutting-edge research facilities, and vibrant campus life, fostering holistic development and global perspectives.",
     "Likewise, academics and researchers thrive in Birmingham's collaborative ecosystem, where interdisciplinary dialogue and innovative partnerships fuel groundbreaking discoveries and societal impact. Join Birmingham's academic community and embark on a transformative journey of learning, discovery, and excellence."
   ],
-  image_url: "/birmingham/birmingham-cityscape.jpg",
+  image_url: "/cities/birmingham.jpg",
   alt: "Birmingham city skyline with vibrant lights"
 },
 
@@ -6045,7 +6045,7 @@ export const cityData = [
       "Embark on a transformative educational journey in Leeds, where academic excellence meets boundless opportunity. Engage with world-renowned scholars, immerse yourself in groundbreaking research, and cultivate the skills and knowledge to thrive in a rapidly evolving global landscape.",
       "Whether you seek personal growth, professional development, or intellectual exploration, Leeds offers a myriad of pathways to success. Join a vibrant community of learners, thinkers, and innovators, and unlock your potential in one of the UK's most dynamic educational hubs."
   ],
-  image_url: "/leeds/leeds-skyline.jpg",
+  image_url: "/cities/leeds.jpg",
   alt: "Leeds skyline against a colorful sunset"
 },
 
@@ -6084,7 +6084,7 @@ export const cityData = [
       "Bristol offers unparalleled opportunities for educational enrichment and personal development, with its dynamic academic community, state-of-the-art facilities, and interdisciplinary approach to learning. Whether you're embarking on your educational journey or seeking to advance your career, Bristol's universities and colleges provide a supportive and stimulating environment for realizing your aspirations.",
       "For those considering employment, Bristol's institutions offer access to cutting-edge research initiatives, collaborative partnerships, and a vibrant cultural scene, making it an ideal destination for academics, researchers, and professionals alike."
   ],
-  image_url: "/cities/bristol-academic-scene.jpg",
+  image_url: "/cities/bristol.jpg",
   alt: "Clifton Suspension Bridge over the River Avon in Bristol"
 },
 
@@ -6125,7 +6125,7 @@ export const cityData = [
       "Unlock boundless opportunities for intellectual exploration and personal growth amidst Brighton's captivating academic tapestry. Whether you're drawn to cutting-edge research or immersive learning experiences, the city's universities and colleges beckon with promise and possibility.",
       "Join a community of scholars and visionaries dedicated to pushing the boundaries of knowledge and driving positive change in the world. In Brighton, education isn't just a journey; it's a transformative odyssey toward a brighter, more enlightened future."
   ],
-  image_url: "/brighton/brighton-academic-excellence.jpg",
+  image_url: "/cities/brighton.jpg",
   alt: "Brighton Academic Excellence"
 },
 
@@ -6164,7 +6164,7 @@ export const cityData = [
   promo: [
     "Aberdeen offers unparalleled educational and professional opportunities. Its renowned universities and colleges provide a nurturing environment for personal growth and academic achievement. Whether you seek groundbreaking research or transformative learning experiences, Aberdeen stands as a beacon of excellence in higher education."
   ],
-  image_url: "/aberdeen/aberdeen-cityscape.jpg",
+  image_url: "/cities/aberdeen.jpg",
   alt: "Aberdeen city skyline with historic buildings and modern architecture"
 },
 
@@ -6204,7 +6204,7 @@ export const cityData = [
   promo: [
     "Durham beckons with unparalleled educational and research prospects, enticing scholars and students alike. From its dynamic academic ecosystem to its cutting-edge facilities, Durham cultivates an environment where intellectual curiosity thrives and innovation flourishes. Join us in shaping the future of knowledge and discovery at Durham's venerable institutions."
   ],
-  image_url: "/durham/durham-cityscape.jpg",
+  image_url: "/cities/durham.jpg",
   alt: "Durham city skyline with historic architecture and river"
 },
 
@@ -6289,7 +6289,7 @@ export const cityData = [
     "Aberystwyth offers unparalleled opportunities for students and faculty alike. With a supportive academic community, state-of-the-art facilities, and collaborative research projects, Aberystwyth is a catalyst for personal growth and professional advancement.",
     "Whether you aspire to pursue higher education or engage in cutting-edge research, Aberystwyth invites you to join its vibrant academic community and embark on a transformative journey of discovery and innovation."
   ],
-  image_url: "/aberystwyth/aberystwyth-cityscape.jpg",
+  image_url: "/cities/aberystwyth.jpg",
   alt: "Aberystwyth Cityscape overlooking the Sea"
 },
 
@@ -6332,7 +6332,7 @@ export const cityData = [
       "Coventry's universities and colleges offer a dynamic environment for personal and professional growth. With state-of-the-art facilities, diverse programs, and vibrant research opportunities, students and faculty alike thrive in Coventry's academic ecosystem. Whether pursuing education or seeking employment, Coventry provides a fertile ground for intellectual exploration and career advancement.",
       "From innovative research projects to dynamic student experiences, Coventry's academic institutions offer a wealth of opportunities for engagement and enrichment. Join the ranks of scholars and visionaries shaping the future of education and research in this vibrant city."
   ],
-  image_url: "/coventry/coventry-skyline.jpg",
+  image_url: "/cities/coventry.jpg",
   alt: "Coventry skyline with historic cathedral and modern buildings"
 },
 
@@ -6375,7 +6375,7 @@ export const cityData = [
       "Sheffield's universities and colleges offer a dynamic environment for intellectual exploration and professional growth. With world-class facilities, innovative teaching methods, and a supportive academic community, Sheffield provides students and researchers with unparalleled opportunities to excel and make meaningful contributions to society.",
       "Whether you're pursuing higher education, conducting groundbreaking research, or seeking to advance your career, Sheffield's academic institutions empower individuals to thrive in an ever-evolving world of knowledge and innovation."
   ],
-  image_url: "/sheffield/sheffield-academic.jpg",
+  image_url: "/cities/sheffield.jpg",
   alt: "Sheffield's vibrant academic scene"
 },
 
@@ -6453,7 +6453,7 @@ export const cityData = [
       "Embrace the opportunity to immerse yourself in Cardiff's dynamic academic environment, where curiosity knows no bounds and innovation thrives. Whether you're a student seeking to expand your horizons or a seasoned scholar pursuing groundbreaking research, Cardiff offers a supportive and stimulating ecosystem for personal and professional growth.",
       "Join the ranks of visionary educators and researchers who call Cardiff home, and experience firsthand the transformative power of knowledge, discovery, and collaboration in shaping a brighter future for generations to come."
   ],
-  image_url: "/images/cardiff-academic-excellence.jpg",
+  image_url: "/cities/cardiff.jpg",
   alt: "Panoramic view of Cardiff's academic institutions against a backdrop of lush greenery and historic architecture"
 },
 
@@ -6492,7 +6492,7 @@ export const cityData = [
   promo: [
       "Embark on a transformative journey of learning and discovery in Portsmouth, where academic excellence intersects with boundless opportunity. Whether you aspire to pursue groundbreaking research, cultivate new skills, or engage with diverse perspectives, Portsmouth's universities and colleges provide an inclusive and supportive environment for personal growth, professional development, and lifelong learning."
   ],
-  image_url: "/cities/portsmouth-academics.jpg",
+  image_url: "/cities/portsmouth.jpg",
   alt: "Aerial view of Portsmouth showcasing its academic institutions and coastal charm"
 },
 
@@ -6534,7 +6534,7 @@ export const cityData = [
       "Embark on a transformative academic journey in Chester, where learning transcends boundaries and fosters holistic development. Dive into state-of-the-art facilities, vibrant research communities, and a supportive environment conducive to realizing your aspirations.",
       "Join Chester's academic fraternity to propel your career to new heights. Engage in cutting-edge research, collaborate with visionary peers, and embark on a fulfilling professional odyssey shaping the future of education and knowledge."
   ],
-  image_url: "/chester/chester-city-skyline.jpg",
+  image_url: "/cities/chester.jpg",
   alt: "A panoramic view of Chester's cityscape"
 },
 
@@ -6574,7 +6574,7 @@ export const cityData = [
     "Join Reading's vibrant academic community to embark on a journey of intellectual exploration and personal growth. Engage with world-class scholars, pursue groundbreaking research, and unlock endless opportunities for learning and innovation.",
     "For professionals seeking enriching environments and cutting-edge research opportunities, Reading's universities and colleges offer a fertile ground to advance careers and make meaningful contributions to society."
   ],
-  image_url: "/reading/reading-education.jpg",
+  image_url: "/cities/reading.jpg",
   alt: "A picturesque view of Reading, UK's academic hub"
 },
 
@@ -6611,7 +6611,7 @@ export const cityData = [
       "",
       ""
   ],
-  image_url: "/plymouth/plymouth-academic.jpg",
+  image_url: "/cities/plymouth.avif",
   alt: "Plymouth Academic Hub Photo"
 },
 
@@ -6652,7 +6652,7 @@ export const cityData = [
   promo: [
       "The allure of Lincoln's academic institutions lies in their unwavering commitment to scholarly excellence and community impact. Whether as a student or faculty member, engaging with Lincoln's intellectual ecosystem offers unparalleled opportunities for personal growth, research innovation, and societal advancement."
   ],
-  image_url: "/cities/lincoln-academic-landscape.jpg",
+  image_url: "/cities/lincoln.jpg",
   alt: "A panoramic view of Lincoln's academic landscape"
 },
 
@@ -6690,7 +6690,7 @@ export const cityData = [
       "Embark on an enriching educational journey amidst Swansea's intellectually stimulating landscape. Whether you seek undergraduate enlightenment, advanced research opportunities, or professional development, Swansea's institutions beckon with a promise of discovery, growth, and boundless possibility.",
       "Immerse yourself in Swansea's scholarly mosaic, where diverse perspectives converge, and innovation thrives. Engage in transformative research endeavors, forge lasting connections, and partake in a vibrant community dedicated to shaping a brighter, more enlightened future."
   ],
-  image_url: "/cities/swansea-education-hub.jpg",
+  image_url: "/cities/swansea.jpg",
   alt: "Swansea: A Resplendent Haven of Learning and Innovation"
 },
 
@@ -6727,7 +6727,7 @@ export const cityData = [
   promo: [
       "Embark on a transformative academic journey in Exeter, where educational excellence meets unparalleled research opportunities. Whether you're a student seeking knowledge or a scholar pursuing innovation, Exeter's universities and colleges offer a supportive ecosystem to realize your aspirations​."
   ],
-  image_url: "/exeter/exeter-cityscape.jpg",
+  image_url: "/cities/exeter.jpg",
   alt: "Exeter city skyline with historic buildings and cathedral spires",
 },
 
@@ -6765,7 +6765,7 @@ export const cityData = [
       "Leicester's universities and colleges offer an unparalleled environment for educational and personal growth. Students thrive in a vibrant academic community that encourages critical thinking, creativity, and exploration. With access to world-class faculty and cutting-edge facilities, Leicester fosters a culture of excellence and discovery.",
       "For professionals seeking employment, Leicester's academic institutions present abundant opportunities for research, collaboration, and career advancement. Join a community of passionate educators and researchers dedicated to pushing the boundaries of knowledge and making a meaningful impact on society."
   ],
-  image_url: "/cities/leicester-academic-scene.jpg",
+  image_url: "/cities/leicester.jpg",
   alt: "Leicester's Academic Landscape"
 },
 
@@ -6802,7 +6802,7 @@ export const cityData = [
       "Wolverhampton's academic landscape presents a plethora of opportunities for both students and academics alike. With state-of-the-art facilities, innovative research centers, and a supportive community, the city fosters an environment conducive to personal and professional growth.",
       "Whether you're seeking to pursue higher education or embark on a research journey, Wolverhampton offers the resources and mentorship necessary to thrive in today's competitive academic landscape."
   ],
-  image_url: "/wolverhampton/wolverhampton-cityscape.jpg",
+  image_url: "/cities/wolverhampton.jpg",
   alt: "Wolverhampton cityscape"
 },
 
@@ -6911,7 +6911,7 @@ export const cityData = [
     `Experience the best of both worlds in Bangor, Wales—a thriving academic hub surrounded by stunning natural landscapes. Immerse yourself in a supportive learning environment where you can pursue your academic passions while exploring the wonders of Snowdonia National Park and the Welsh coastline.`,
     `For academics and researchers, Bangor offers unparalleled opportunities for collaboration and professional growth. Join a community of passionate educators and scholars committed to making a positive impact on society and the world.`,
   ],
-  image_url: `/cities/bangor-wales.jpg`,
+  image_url: `/cities/bangor.jpg`,
   alt: `A scenic view of Bangor, Wales`
 },
 
@@ -6944,7 +6944,7 @@ export const cityData = [
       "Experience the vibrant academic environment of Bradford, where world-class institutions drive innovation and excellence. Whether you're a student seeking educational opportunities or a professional pursuing research endeavors, Bradford offers a supportive ecosystem to nurture your aspirations.",
       "Engage with leading experts in diverse fields, collaborate on groundbreaking projects, and access state-of-the-art facilities. Join a community committed to advancing knowledge and making a positive impact on society."
   ],
-  image_url: "/cities/bradford-city-photo.jpg",
+  image_url: "/cities/bradford.jpg",
   alt: "A picturesque view of Bradford's cityscape with historic architecture and green spaces"
 },
 
@@ -7048,7 +7048,7 @@ export const cityData = [
     "Embark on a transformative academic journey in Stirling, where educational excellence converges with personal growth. Whether you're an aspiring student or a seasoned scholar, Stirling's institutions offer a nurturing ecosystem conducive to intellectual exploration and professional development.",
     "For educators and researchers seeking a stimulating intellectual milieu, Stirling beckons with its state-of-the-art facilities and a vibrant community of thought leaders. Embrace the opportunity to collaborate, innovate, and leave an indelible mark on the global landscape of academia."
   ],
-  image_url: "/cities/stirling-academic-achievement.jpg",
+  image_url: "/cities/stirling.jpg",
   alt: "Stirling: Where history meets innovation amidst lush Scottish landscapes"
 },
 
@@ -7088,7 +7088,7 @@ export const cityData = [
     "Embark on a transformative educational odyssey in Bath, where intellectual curiosity meets cultural heritage. Immerse yourself in a dynamic learning environment that nurtures innovation, critical thinking, and personal growth, propelling you towards academic excellence and lifelong success.",
     "For professionals seeking to shape the future of their fields, Bath's academic institutions offer unparalleled opportunities for career advancement and research breakthroughs. Join a vibrant community of scholars and visionaries dedicated to pushing the boundaries of knowledge and creativity."
   ],
-  image_url: "https://example.com/bath-city-photo.jpg",
+  image_url: "/cities/bath.jpg",
   alt: "Bath Cityscape - Historic Architecture and Scholarly Pursuits"
 },
 
@@ -7128,7 +7128,7 @@ export const cityData = [
   promo: [
       "Embark on an educational odyssey in Southampton, where the past, present, and future converge in a symphony of learning and discovery. Whether delving into groundbreaking research or nurturing the minds of tomorrow, Southampton offers an unrivaled platform for intellectual exploration and professional fulfillment."
   ],
-  image_url: "/cities/southampton-academic.jpg",
+  image_url: "/cities/southampton.jpg",
   alt: "Aerial view of Southampton cityscape"
 },
 
@@ -7162,7 +7162,7 @@ export const cityData = [
   promo: [
     `Elevate your academic journey in Dundee, where tradition meets innovation, and possibilities abound. Immerse yourself in a supportive community of scholars, embrace world-class education, and seize unparalleled research opportunities to carve your path to success and make a difference.`,
   ],
-  image_url: `/cities/dundee-scotland-academic.jpg`,
+  image_url: `/cities/dundee.jpg`,
   alt: `Aerial view of Dundee, Scotland`,
 },
 
@@ -7279,7 +7279,7 @@ export const cityData = [
     "Northampton's universities and colleges offer unparalleled educational and personal growth opportunities for students. With innovative teaching methodologies, state-of-the-art research facilities, and a supportive academic environment, studying in Northampton guarantees a transformative educational journey.",
     "For professionals seeking employment opportunities, Northampton's higher education institutions provide a dynamic environment ripe with prospects for professional growth. Access to cutting-edge facilities, collaborative research projects, and industry partnerships make working in Northampton a rewarding and fulfilling experience."
   ],
-  image_url: "/cities/northampton-cityscape.jpg",
+  image_url: "/cities/northampton.jpg",
   alt: "Aerial view of Northampton cityscape with river and bridges"
 },
 
@@ -7316,7 +7316,7 @@ export const cityData = [
     "Embark on your educational journey or pursue career advancement in East London, where opportunities for growth and discovery abound. Immerse yourself in a vibrant academic community characterized by intellectual curiosity, cultural diversity, and cutting-edge research.",
     "Whether you aspire to push the boundaries of knowledge or make a meaningful impact on society, East London's higher education institutions provide the ideal environment to realize your aspirations and thrive in an ever-evolving world."
   ],
-  image_url: "https://example.com/east-london.jpg",
+  image_url: "/cities/east-london.jpg",
   alt: "Aerial view of East London cityscape"
 },
 
