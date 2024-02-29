@@ -516,7 +516,7 @@ export const cityData = [
       "Berlin offers an unmatched blend of historical significance and modern academic innovation, providing students and academics with endless opportunities for growth, research, and collaboration in one of Europe's most dynamic cities.",
       "The city's rich cultural scene, combined with its comprehensive academic programs and state-of-the-art research facilities, makes Berlin an attractive destination for pursuing academic excellence and career development.",
     ],
-    image_url: '/cities/berlin.webp',
+    image_url: '/cities/berlin.jpg',
     alt: 'Panoramic view of Berlin highlighting its educational and cultural landmarks',
   },
   {
@@ -565,59 +565,9 @@ export const cityData = [
       'Tokyo offers unparalleled opportunities for educational and professional growth, set against the backdrop of a city that blends tradition with cutting-edge technology. Its universities provide a nurturing environment for students and academics keen on making significant contributions to their fields.',
       'Choosing Tokyo for study or research means immersing yourself in a city known for its academic excellence, innovative spirit, and rich cultural heritage, making it a sought-after destination for scholars worldwide.',
     ],
-    image_url: '/cities/toyko.jpg',
+    image_url: '/cities/tokyo.webp',
     alt: 'Iconic Tokyo skyline with prominent educational institutions highlighted',
-  },
-  {
-    title:
-      'Toronto, Canada: A Premier Destination for Higher Education and Research',
-    h1: 'Exploring Academic Excellence in Toronto',
-    slug: 'toronto-higher-education-research',
-    city: 'Toronto',
-    region: 'Ontario',
-    country: 'Canada',
-    description:
-      "Discover the vibrant higher education landscape of Toronto, home to top universities and a hub for international students and researchers. Learn about the city's world-class academic institutions and opportunities.",
-    keywords:
-      'Toronto universities, higher education in Toronto, study in Toronto, Toronto colleges, academic research Toronto',
-
-    cityInfo: [
-      "Toronto, Canada's largest city, is celebrated for its diverse and comprehensive higher education system. The city hosts several prestigious universities known for their academic rigor and innovative research programs.",
-      'With institutions like the University of Toronto leading in global rankings, Toronto offers a dynamic academic environment that fosters intellectual growth and research excellence across various disciplines.',
-    ],
-    uniList: [
-      'University of Toronto',
-      'York University',
-      'Ryerson University',
-      'OCAD University',
-      'George Brown College',
-      'Humber College',
-      'Seneca College',
-      'Centennial College',
-    ],
-    nobelInfo: [
-      "Toronto's academic institutions have been associated with numerous Nobel Laureates, reflecting the city's significant contributions to global knowledge and scholarly excellence.",
-      'Among them, Frederick Banting and John Macleod were awarded the Nobel Prize in Physiology or Medicine in 1923 for the discovery of insulin at the University of Toronto.',
-    ],
-    nobelList: [
-      'Frederick Banting: Physiology or Medicine (1923) - University of Toronto',
-      'John Macleod: Physiology or Medicine (1923) - University of Toronto',
-    ],
-    academicInfo: [
-      "Toronto's universities are home to notable academics who have made significant contributions to their fields, ranging from health sciences to engineering and humanities.",
-      "These scholars contribute to Toronto's reputation as a leading center for academic and research excellence, fostering an environment where innovation and discovery thrive.",
-    ],
-    academicList: [
-      'Geoffrey Hinton: Computer Scientist known for his work on artificial intelligence - University of Toronto',
-      "Donna Strickland: Physicist and Nobel Laureate affiliated with the University of Waterloo, closely collaborating with Toronto's academic community",
-    ],
-    promo: [
-      "Toronto offers an exceptional setting for students and academics, providing a multicultural environment that enriches the educational experience. The city's institutions are at the forefront of technological advancements and societal contributions.",
-      'Choosing Toronto for your academic journey or career not only means access to top-tier education but also immersion in a city known for its cultural diversity, vibrant arts scene, and numerous professional opportunities.',
-    ],
-    image_url: '/cities/toronto.jpg',
-    alt: "Scenic view of Toronto's skyline, showcasing its academic institutions and cultural landmarks",
-  },
+  }, 
   {
     title:
       'Perth, Australia: A Vibrant Hub for Higher Education and Innovation',
@@ -662,7 +612,7 @@ export const cityData = [
       'Perth offers a unique blend of educational excellence, innovative research, and a high quality of life, making it an attractive destination for students and academics from around the world.',
       "The city's universities provide a supportive and dynamic environment for pursuing academic goals, along with opportunities for personal and professional growth in Australia's stunning west coast setting.",
     ],
-    image_url: '/cities/perth.jpg',
+    image_url: '/cities/perth.webp',
     alt: 'Panoramic view of Perth, showcasing its educational institutions and natural beauty',
   },
   {
@@ -804,7 +754,7 @@ export const cityData = [
       "San Francisco offers a unique blend of academic rigor and innovation, set against the backdrop of one of the world's most dynamic and culturally rich cities. Its institutions provide unparalleled opportunities for learning, research, and professional development in various fields.",
       'Choosing to study or work in San Francisco means immersing yourself in an environment that values creativity, diversity, and innovation, making it an ideal place for those looking to make a significant impact in their careers and the world.',
     ],
-    image_url: '/cities/san-franciso.jpg',
+    image_url: '/cities/san-francisico.jpg',
     alt: 'Scenic view of San Francisco, highlighting its educational institutions and innovative spirit',
   },
   {
@@ -1270,7 +1220,7 @@ export const cityData = [
       "Choosing to study or work in Vancouver means engaging with a dynamic academic community, set against the backdrop of one of Canada's most picturesque cities.",
       "Vancouver's institutions offer a supportive environment for personal and professional growth, making it a top choice for those seeking to advance their academic careers.",
     ],
-    image_url: '/cities/vancouver.jpg',
+    image_url: '/cities/vancouver.webp',
     alt: 'The scenic beauty of Vancouver with its iconic skyline and educational institutions highlighted',
   },
   {
@@ -1315,7 +1265,7 @@ export const cityData = [
       'Studying or working in Edinburgh offers the unique opportunity to be part of a thriving academic community, surrounded by historical landmarks and cutting-edge research facilities.',
       "The city's educational institutions are committed to fostering a supportive and innovative environment for students and staff alike, making Edinburgh a preferred destination for academic and personal development.",
     ],
-    image_url: '/cities/edinburgh.jpg',
+    image_url: '/cities/edinburgh.webp',
     alt: 'The historic cityscape of Edinburgh with its prestigious universities highlighted',
   },
   {
@@ -1406,7 +1356,7 @@ export const cityData = [
       'Choosing Shanghai for education or academic career offers access to a vibrant cosmopolitan city with rich educational resources, cutting-edge research facilities, and a dynamic international community.',
       "The city's commitment to academic excellence and innovation provides a stimulating environment for students and professionals alike, making it an ideal destination for those looking to achieve their academic and professional goals.",
     ],
-    image_url: '/cities/shanghai.jpg',
+    image_url: '/cities/shainhai.jpg',
     alt: "Aerial view of Shanghai's university campuses, showcasing the modern educational infrastructure against the city skyline",
   },
   {
@@ -1451,7 +1401,7 @@ export const cityData = [
       'Stockholm offers a unique blend of historical richness and modern educational facilities, making it an attractive destination for students and academics from around the world.',
       "The city's commitment to sustainability, innovation, and open-mindedness provides a stimulating environment for academic and personal growth.",
     ],
-    image_url: '/cities/stockholm.jpg',
+    image_url: '/cities/stockholm.webp',
     alt: "Scenic view of Stockholm with its university buildings prominently displayed, highlighting the city's dedication to academic excellence",
   },
   {
@@ -1496,7 +1446,7 @@ export const cityData = [
       'Studying in Copenhagen offers access to a rich tapestry of cultural experiences and an open, collaborative academic environment.',
       "The city's focus on sustainability and innovation provides an ideal backdrop for those seeking to make an impact through their academic and professional pursuits.",
     ],
-    image_url: '/cities/copenhagen.jpg',
+    image_url: '/cities/copengagen.jpg',
     alt: "Panoramic view of Copenhagen, highlighting the city's educational institutions and serene environment, ideal for academic endeavors",
   },
   {
@@ -1542,7 +1492,7 @@ export const cityData = [
       'Dublin offers an enriching educational experience amidst its historic campuses, cultural richness, and dynamic student life.',
       "The city's collaborative academic environment and cutting-edge research opportunities make it an attractive destination for students and academics worldwide.",
     ],
-    image_url: '/cities/dublin.jpg',
+    image_url: '/cities/dublin.webp',
     alt: "Scenic view of Dublin's historical architecture blending with modern academic institutions, symbolizing the city's rich educational heritage",
   },
   {
@@ -1693,7 +1643,7 @@ export const cityData = [
       'Choosing Buenos Aires for education means immersing oneself in a city with a rich cultural heritage, cutting-edge research, and a supportive academic network.',
       'For professionals and academics, Buenos Aires offers unparalleled opportunities for growth, collaboration, and discovery in a city that celebrates diversity and innovation.',
     ],
-    image_url: '/cities/argentina.jpg',
+    image_url: '/cities/aregentina.jpg',
     alt: "The historic and modern educational institutions of Buenos Aires, set against the city's vibrant cultural backdrop, showcasing its role as a leading academic center in Latin America",
   },
   {
@@ -1729,7 +1679,7 @@ export const cityData = [
       'Studying in Kuala Lumpur offers students a unique blend of traditional and modern educational experiences, set against the backdrop of a culturally rich and vibrant city.',
       'For academics and professionals, Kuala Lumpur provides a fertile ground for research, collaboration, and professional development in a globally connected environment.',
     ],
-    image_url: '/cities/malaysia.jpg',
+    image_url: '/cities/kulala-lumpar.jpg',
     alt: "Aerial view of Kuala Lumpur's skyline, highlighting the city's modern educational institutions amidst its cultural landmarks, symbolizing a blend of tradition and modernity in education",
   },
   {
@@ -1765,7 +1715,7 @@ export const cityData = [
       'Choosing Vienna for education means immersing in a city that values history, arts, and sciences equally, providing a holistic educational experience.',
       'Professionals and academics find Vienna a vibrant city for collaboration, with numerous conferences, seminars, and workshops happening throughout the year.',
     ],
-    image_url: '/cities/vienna.jpg',
+    image_url: '/cities/vienna.webp',
     alt: "The historic architecture of Vienna's universities set against the city's skyline, symbolizing the blend of traditional and modern educational values",
   },
   {
@@ -1837,7 +1787,7 @@ export const cityData = [
       "Studying in Taipei offers an immersive educational experience, combining rigorous academics with opportunities to explore Taiwan's rich culture and history.",
       "For those seeking employment, Taipei's universities provide a dynamic and innovative environment for research, teaching, and professional development in various disciplines.",
     ],
-    image_url: '/cities/taiwan.jpg',
+    image_url: '/cities/taipei.jpg',
     alt: "The bustling streets of Taipei with the iconic Taipei 101 in the background, symbolizing the city's modern educational facilities and rich cultural heritage",
   },
   {
@@ -1981,7 +1931,7 @@ export const cityData = [
       "Studying in São Paulo offers a unique blend of cultural immersion and academic rigor within South America's largest metropolis, providing students with unparalleled opportunities for personal and professional growth.",
       "For academics and professionals, São Paulo's universities present a fertile ground for research, collaboration, and innovation in a city that thrives on creativity and diversity.",
     ],
-    image_url: '/cities/sao paulo.jpg',
+    image_url: '/cities/sao-paulo.jpg',
     alt: "The sprawling cityscape of São Paulo, with its mix of modern skyscrapers and historic buildings, reflects the city's role as a key player in global education and research.",
   },
   {
@@ -2017,7 +1967,7 @@ export const cityData = [
       "Studying in Mexico City offers an immersive experience in one of the world's most dynamic cultural landscapes, combined with access to top-tier academic programs and research opportunities.",
       "For professionals and academics, the city's universities provide a platform for groundbreaking research and collaboration in a nation renowned for its historic contributions to art, science, and technology.",
     ],
-    image_url: '/cities/mexico.jpg',
+    image_url: '/cities/mexico-city.jpg',
     alt: 'Panoramic view of Mexico City with its blend of modern skyscrapers and historic architecture, symbolizing its status as a leading center for education and research in Latin America.',
   },
   {
@@ -2125,7 +2075,7 @@ export const cityData = [
       "Students in Johannesburg benefit from a dynamic and supportive academic environment, coupled with the city's rich cultural and social landscape, offering a unique educational experience.",
       "For professionals, the city's universities provide ample opportunities for career advancement through research collaborations, continuing education programs, and partnerships with industry leaders.",
     ],
-    image_url: '/cities/south africa.jpg',
+    image_url: '/cities/johannesburg.jpg',
     alt: "The Johannesburg skyline with prominent university buildings, symbolizing the city's commitment to higher education and its role as a leading academic center in South Africa.",
   },
   {
@@ -2161,7 +2111,7 @@ export const cityData = [
       'Cairo offers a unique educational experience, blending rich historical context with modern academic rigor, making it an ideal destination for students seeking comprehensive growth and learning.',
       "For academics and professionals, Cairo's universities provide a platform for impactful research, interdisciplinary collaboration, and professional development in a culturally rich environment.",
     ],
-    image_url: '/cities/egypt.jpg',
+    image_url: '/cities/egypt.avif',
     alt: "The iconic Cairo skyline, highlighting the city's historic and modern educational institutions against the backdrop of the River Nile.",
   },
   {
@@ -2201,7 +2151,7 @@ export const cityData = [
       "Studying in Santiago offers a unique blend of academic rigor and cultural immersion, set against the backdrop of the city's rich history and dynamic urban life.",
       "For professionals seeking employment, Santiago's universities are at the forefront of research and innovation, offering numerous opportunities for collaboration and career advancement.",
     ],
-    image_url: '/cities/chile.jpg',
+    image_url: '/cities/santiago.avif',
     alt: "The panoramic view of Santiago, Chile, showcasing the Andes mountains backdrop and the city's modern educational facilities.",
   },
   {
@@ -2240,7 +2190,7 @@ export const cityData = [
       'Choosing Lisbon for education means immersing yourself in a city that balances academic rigor with a rich cultural tapestry, offering students a comprehensive growth experience.',
       "Professionals seeking employment will find Lisbon's universities to be fertile ground for research and development, with ample opportunities for collaborative projects and career advancement.",
     ],
-    image_url: '/cities/portygal.jpg',
+    image_url: '/cities/portugal.jpg',
     alt: 'The picturesque landscape of Lisbon with the iconic São Jorge Castle overlooking the city, symbolizing the blend of historical richness and educational excellence.',
   },
   {
@@ -2319,7 +2269,7 @@ export const cityData = [
       'Choosing New Delhi for education means immersing oneself in a city of vibrant history and academic fervor, offering students a unique opportunity to grow both intellectually and personally.',
       "For professionals, the city's universities are beacons of research and development, providing unparalleled opportunities for career advancement in a city that thrives on innovation and cultural richness.",
     ],
-    image_url: '/cities/new-delhi.jpg',
+    image_url: '/cities/new delhi.jpg',
     alt: "The panoramic view of New Delhi, showcasing its iconic landmarks intertwined with modern academic institutions, symbolizing the city's blend of tradition and educational excellence.",
   },
   {
@@ -2354,7 +2304,7 @@ export const cityData = [
       'For professionals, Montgomery offers abundant research and employment opportunities, with institutions at the forefront of innovation and discovery across various fields. Join a thriving academic community dedicated to excellence and advancement.',
     ],
     image_url:
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Aerial_view_of_Montgomery%2C_Alabama_LCCN2011646683.tif/lossy-page1-1200px-Aerial_view_of_Montgomery%2C_Alabama_LCCN2011646683.tif.jpg',
+      '/cities/montgomery.jpg',
     alt: 'Montgomery Alabama cityscape skyline',
   },
 
