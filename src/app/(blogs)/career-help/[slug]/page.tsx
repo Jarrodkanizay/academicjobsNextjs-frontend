@@ -2,6 +2,7 @@ import { blogData } from '@/data/blogData';
 import { BlogPostTypes } from '@/types/types';
 import HeroBanner from '@/components/HeroBanner';
 import { formatDate } from '@/utils/utilityScripts';
+import TalentPool from '@/components/TalentPoolCTA'; 
 
 type Params = {
   slug: string;
@@ -54,6 +55,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         className={`text-2-cols mt-8 prose`}
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
+       <TalentPool  />
     </main>
   );
 }
