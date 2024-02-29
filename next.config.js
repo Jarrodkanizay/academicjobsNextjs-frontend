@@ -259,17 +259,17 @@ const nextConfig = {
       },
       {
         source: '/company/3105/university-of-california-berkeley',
-        destination: '/employers',
+        destination: '/jobs-by-top-universities',
         permanent: true,
       },
       {
         source: '/company/3781/tarrant-county-college-district',
-        destination: '/employers',
+        destination: '/jobs-by-top-universities',
         permanent: true,
       },
       {
         source: '/employers/company/deakin-university/3856',
-        destination: '/employers',
+        destination: '/jobs-by-top-universities',
         permanent: true,
       },
       {
