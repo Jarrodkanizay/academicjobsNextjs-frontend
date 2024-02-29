@@ -335,7 +335,7 @@ export default function Page() {
       </div>
       <div className="container alert mt-16 bg-emerald-100 text-xl mx-4">
         <span>
-          <strong>Are your a recruiter?</strong> Try our{' '}
+          <strong>Are you a recruiter?</strong> Try our{' '}
           <Link
             className="link link-aj text-xl"
             href="/quick-job-post-technology"
