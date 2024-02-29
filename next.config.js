@@ -30,15 +30,37 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/admin',
+        destination: '/staff-jobs',
+        permanent: true,
+      },
+      {
+        source: '/student',
+        destination: '/student-jobs',
+        permanent: true,
+      },
+      {
         source: '/employer',
-        destination: '/employers',
+        destination: '/jobs-by-top-universities',
         permanent: true,
       },
       {
         source: '/global/employers',
-        destination: '/employers',
+        destination: '/jobs-by-top-universities',
         permanent: true,
       },
+      
+      {
+        source: '/Global/jobs-by-top-universities',
+        destination: '/jobs-by-top-universities',
+        permanent: true,
+      },
+      {
+        source: '/global/jobs-by-top-universities',
+        destination: '/jobs-by-top-universities',
+        permanent: true,
+      },
+
       {
         source: '/global/recruitment',
         destination: '/recruitment',

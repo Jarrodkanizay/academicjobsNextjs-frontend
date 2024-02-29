@@ -26,6 +26,7 @@ export default function myPage() {
 
           <div className="">
             <p className="px-7 mb-4 mt-1">
+              Find all university staff jobs on academic jobs. Search University administration staff and support roles at the best universities.
               Seek your perfect admin position through the world’s best job
               board! At Academic Jobs we offer the most renowned Higher Ed jobs
               at the top universities. Positions in admin will provide you with
@@ -57,7 +58,7 @@ export default function myPage() {
               className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
               key={key}
             >
-              <Link href={`/admin/${Name?.replace(/\s+/g, '-')}/`}>{Name}</Link>
+              <Link href={`/staff-jobs/${Name?.replace(/\s+/g, '-')}/`}>{Name}</Link>
             </li>
           ))}
         </ul>
