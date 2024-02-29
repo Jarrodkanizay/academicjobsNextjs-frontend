@@ -21,7 +21,7 @@ export default function myPage() {
       <div className="bg-slate-200 full-width">
         <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
           <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">
-            Admin Jobs
+            Campus Staff Jobs
           </h1>
 
           <div className="">
