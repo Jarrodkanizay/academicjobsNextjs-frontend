@@ -165,10 +165,10 @@ export default function BlogPostPage({ params }: Props) {
                 d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
               ></path>
             </svg>
-            <span className="text-sm text-sky-500 font-bold">Join the {cityDetails.city} Talent Pool</span>
+            <span className=" text-sky-500 font-bold">Join the {cityDetails.city} Talent Pool</span>
             <div>
               
-              <a className="btn-aj text-white " href="/academic-talent-pool">Join Now</a>
+              <a className="btn-aj text-white p-2 px-4 font-bold" href="/academic-talent-pool">Join Now</a>
             </div>
           </div>
         </div>
