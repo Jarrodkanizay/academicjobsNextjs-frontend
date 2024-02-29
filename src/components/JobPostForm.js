@@ -13,14 +13,31 @@ import { Input } from '@/components/ui/input';
 import Speedo from '@/components/icons/Speedo';
 
 const stripeLink = {
-  Australia: 'https://buy.stripe.com/dR6eWA6PuaaA7VC6ov',
   JobElephant: 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
+  Australia: 'https://buy.stripe.com/dR6eWA6PuaaA7VC6ov',
+  Asia: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
+  Africa: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
+  Canada: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
+  Europe: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
+  India: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
+  'South America': 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
+  'Middle East': 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
+  'New Zealand': 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
+  'United Kingdom': 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
   USA: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
 };
 const JobPostForm = ({ partner, region }) => {
   const [standardMode, setStandardMode] = useState(true);
   const [newContact, setNewContact] = useState(false);
   const [selectedContact, setSelectedContact] = useState(null);
+  const [selectedCurrency, setSelectedCurrency] = React.useState(
+    'Which Region are you from?'
+  );
+  const [paymentMethod, setPaymentMethod] = useState('creditCard');
+
+  const handleChange = (event) => {
+    setSelectedCurrency(event.target.value);
+  };
 
   let avatarPath = '';
   let textColor = 'text-aj';
@@ -66,6 +83,7 @@ const JobPostForm = ({ partner, region }) => {
       return await BaseApi.post('/sendemail', data);
     },
   });
+
   const onSubmit = async (data) => {
     // e.preventDefault();
     // alert()
@@ -183,6 +201,31 @@ const JobPostForm = ({ partner, region }) => {
                   }`}
                 >
                   <div className="grid w-full items-center gap-1.5">
+                    <label htmlFor="currency" className="label-text text-xs">
+                      Region
+                    </label>
+
+                    <select
+                      id="currency"
+                      tabindex="0"
+                      value={selectedCurrency}
+                      onChange={handleChange}
+                      className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500"
+                      required
+                    >
+                      <option value="" selected>
+                        Which Region are you from?
+                      </option>
+
+                      {Object.keys(stripeLink)
+                        .filter((key) => key !== 'JobElephant')
+                        .map((key) => (
+                          <option key={key} value={stripeLink[key]}>
+                            {key}
+                          </option>
+                        ))}
+                    </select>
+
                     <InputBlock
                       register={register}
                       errors={errors}
@@ -193,6 +236,7 @@ const JobPostForm = ({ partner, region }) => {
                       placeholder="Organization Name"
                       autoComplete="organization"
                       hidden={newContact || standardMode ? false : true}
+                      required={true}
                     />
                   </div>
                   <div className="grid w-full items-center gap-1.5">
@@ -206,6 +250,7 @@ const JobPostForm = ({ partner, region }) => {
                       placeholder="First Name"
                       autoComplete="given-name"
                       hidden={newContact || standardMode ? false : true}
+                      required={true}
                     />
                   </div>
                   <div className="grid w-full items-center gap-1.5 mt-4">
@@ -219,6 +264,7 @@ const JobPostForm = ({ partner, region }) => {
                       placeholder="Last Name"
                       autoComplete="family-name"
                       hidden={newContact || standardMode ? false : true}
+                      required={true}
                     />
                   </div>
                   <div className="grid w-full items-center gap-1.5 mt-4">
@@ -232,6 +278,7 @@ const JobPostForm = ({ partner, region }) => {
                       placeholder="email"
                       autoComplete="email"
                       hidden={newContact || standardMode ? false : true}
+                      required={true}
                     />
                   </div>
                 </div>
@@ -243,6 +290,7 @@ const JobPostForm = ({ partner, region }) => {
                   field="03_Institution_Name"
                   forceClass=" py-3 text-black"
                   placeholder=""
+                  required={true}
                 />
                 <InputBlock
                   register={register}
@@ -252,6 +300,7 @@ const JobPostForm = ({ partner, region }) => {
                   field="04_Job_Link_URL"
                   forceClass=" py-3 text-black"
                   placeholder=""
+                  required={true}
                 />
                 <label className="form-control">
                   <span className="label-text text-xs pb-1">
@@ -264,6 +313,31 @@ const JobPostForm = ({ partner, region }) => {
                     {...register('05_Notes')}
                   ></textarea>
                 </label>
+                <div className="flex gap-4">
+                  <label htmlFor="creditCard" className="label cursor-pointer">
+                    Pay via Credit Card
+                    <input
+                      type="radio"
+                      id="creditCard"
+                      name="paymentMethod"
+                      value="creditCard"
+                      {...register('paymentMethod')}
+                      className="radio radio-warning ml-2"
+                    />
+                  </label>
+
+                  <label htmlFor="invoice" className="label cursor-pointer">
+                    Pay via Invoice
+                    <input
+                      type="radio"
+                      id="invoice"
+                      name="paymentMethod"
+                      value="invoice"
+                      {...register('paymentMethod')}
+                      className="radio radio-warning ml-2"
+                    />
+                  </label>
+                </div>
                 {/* <QuillEditor
             value={content}
             onChange={(value) => {
