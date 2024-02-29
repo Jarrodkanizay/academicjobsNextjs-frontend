@@ -246,10 +246,12 @@ html {
     .link-nav:hover {
       text-decoration: underline;
     }
+    .alert .btn-aj,
     .btn-aj {
       background-color: var(--color-primary);
       color: #fff;
       border-radius: 100vmax;
+      text-decoration: none;
     }
     .btn-white {
       background-color: white;

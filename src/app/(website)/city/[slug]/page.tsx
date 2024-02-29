@@ -167,8 +167,7 @@ export default function BlogPostPage({ params }: Props) {
             </svg>
             <span>Join the {cityDetails.city} Talent Pool</span>
             <div>
-              <button className="btn btn-sm">Deny</button>
-              <button className="btn btn-sm btn-primary">Accept</button>
+              <a className="btn btn-sm btn-aj">Accept</a>
             </div>
           </div>
         </div>

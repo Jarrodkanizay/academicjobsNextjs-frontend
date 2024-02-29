@@ -33,6 +33,7 @@ const JobPostForm = ({ partner, region }) => {
   const [selectedCurrency, setSelectedCurrency] = React.useState(
     'Which Region are you from?'
   );
+  const [paymentMethod, setPaymentMethod] = useState('creditCard');
 
   const handleChange = (event) => {
     setSelectedCurrency(event.target.value);
@@ -82,6 +83,7 @@ const JobPostForm = ({ partner, region }) => {
       return await BaseApi.post('/sendemail', data);
     },
   });
+
   const onSubmit = async (data) => {
     // e.preventDefault();
     // alert()
@@ -311,6 +313,31 @@ const JobPostForm = ({ partner, region }) => {
                     {...register('05_Notes')}
                   ></textarea>
                 </label>
+                <div className="flex gap-4">
+                  <label htmlFor="creditCard" className="label cursor-pointer">
+                    Pay via Credit Card
+                    <input
+                      type="radio"
+                      id="creditCard"
+                      name="paymentMethod"
+                      value="creditCard"
+                      {...register('paymentMethod')}
+                      className="radio radio-warning ml-2"
+                    />
+                  </label>
+
+                  <label htmlFor="invoice" className="label cursor-pointer">
+                    Pay via Invoice
+                    <input
+                      type="radio"
+                      id="invoice"
+                      name="paymentMethod"
+                      value="invoice"
+                      {...register('paymentMethod')}
+                      className="radio radio-warning ml-2"
+                    />
+                  </label>
+                </div>
                 {/* <QuillEditor
             value={content}
             onChange={(value) => {
