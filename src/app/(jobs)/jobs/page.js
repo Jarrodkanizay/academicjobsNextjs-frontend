@@ -293,39 +293,61 @@ export default function Page() {
       <div className="bg-gray-100">
         <div className="container mx-auto py-8">
           <p className="text-lg font-semibold mb-8">
-            Discover your next academic adventure with our comprehensive job
-            board tailored for educators, researchers, and administrative
-            professionals. Whether you're seeking faculty positions,
-            post-doctoral fellowships, or staff roles, our platform connects you
-            with diverse opportunities in universities and research institutions
-            across the globe.
+            Search & Find your next academic journey with our cutting-edge job
+            board tailored exclusively for higher education, researchers, and
+            staff professionals. Whether you're pursuing faculty roles,
+            post-doctoral fellowships, or staff positions, our platform
+            seamlessly connects you with an array of exciting opportunities
+            within universities and research institutions worldwide.
           </p>
 
-          <h2 className="text-2xl font-bold mb-4">How It Works:</h2>
+          <h2 className="text-2xl font-bold mb-4">How It Benefits You:</h2>
           <ol className="list-decimal pl-6 mb-6">
             <li className="mb-2">
-              <span className="font-bold">Search Efficiently:</span> Use our
-              advanced search filters to narrow down your options by location,
-              discipline, and job type.
+              <span className="font-bold">Efficient Search Tools:</span> Utilize
+              our advanced search filters to streamline your search based on
+              location, discipline, and job category, ensuring you find the
+              perfect fit for your expertise.
             </li>
             <li className="mb-2">
-              <span className="font-bold">Stay Informed:</span> Create alerts to
-              get notified about the latest opportunities in your field.
+              <span className="font-bold">Stay Ahead of the Curve::</span> Set
+              up customized alerts to stay informed about the latest openings in
+              your field, empowering you to stay ahead of the competition.
             </li>
             <li>
-              <span className="font-bold">Apply with Ease:</span> Directly
-              submit your application through our platform and track your
-              application status.
+              <span className="font-bold">Seamless Application Process:</span>{' '}
+              Submit your applications directly through our platform and
+              effortlessly track your application status, simplifying the entire
+              application process.
             </li>
           </ol>
-          <h2 className="text-2xl font-bold mb-4">Why Choose Us?:</h2>
+          <h2 className="text-2xl font-bold mb-4">Why Choose Our Platform?</h2>
           <p className="mb-4">
-            From prestigious universities in the United States and the United
-            Kingdom to emerging research centers in Asia and Europe, we curate
-            the finest academic positions to propel your career forward. Our
-            resources and guides support you at every step of your job search,
-            ensuring you're well-prepared to seize your next opportunity.
+            From renowned institutions in the United States and the United
+            Kingdom to burgeoning research hubs across Asia and Europe, we
+            meticulously curate a diverse range of academic positions to elevate
+            your career trajectory. Our wealth of resources and expert guides
+            provide invaluable support at every stage of your job search,
+            equipping you with the tools and knowledge needed to seize your next
+            career opportunity with confidence.
           </p>
+        </div>
+      </div>
+      <div className="container alert mt-16 bg-emerald-100 text-xl">
+        <span>
+          <strong>Are your a recruiter?</strong> Try our{' '}
+          <Link
+            className="link link-aj text-xl"
+            href="/quick-job-post-technology"
+          >
+            Quick Job Post Technology
+          </Link>{' '}
+          now and see how we make your life easier!
+        </span>
+        <div className="ml-auto">
+          <Link href="/post-a-job" className="btn btn-sm btn-aj">
+            Quick Job Post
+          </Link>
         </div>
       </div>
     </main>
