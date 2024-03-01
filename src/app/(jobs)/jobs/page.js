@@ -243,26 +243,25 @@ export default function Page() {
             </div>
           </details>
 
-          {isShowFilter && (
-            <div className="grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
-              {filters?.length > 0 && // 低层小目录b
-                filters.map(({ filter, job_count }, i) => (
-                  <button
-                    key={i}
-                    className="text-left text-gray-500 text-sm truncate"
-                    onClick={() => {
-                      setPage(0);
-                      setfilter([...filter1, { category, filter }]);
-                      //dispatch(setfilter([...filter1, { category, filter }]));
-                      setIsShowFilter(false);
-                    }}
-                  >{`${filter ? filter : 'Others'}  (${job_count})`}</button>
-                ))}
-              {/* {filters?.length == 23 && (
+        {isShowFilter && (
+          <div className="grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
+            {filters?.length > 0 && // 低层小目录b
+              filters.map(({ filter, job_count }, i) => (
+                <button
+                  key={i}
+                  className="text-left text-gray-500 text-sm truncate"
+                  onClick={() => {
+                    setPage(0);
+                    setfilter([...filter1, { category, filter }]);
+                    //setIsShowFilter(false);
+                  }}
+                >{`${filter ? filter : 'Others'}  (${job_count})`}</button>
+              ))}
+            {filters?.length == 23 && (
               <button
                 className="btn btn-primary btn-xs"
                 onClick={() => {
-                  // navigate(`/advanced-search/${category}`);
+                  //navigate(`/advanced-search/${category}`);
                   navigate(`/advanced-search/${category}`, {
                     state: { filter1 },
                   });
@@ -271,21 +270,21 @@ export default function Page() {
                 Show All
               </button>
             )} */}
-            </div>
-          )}
+          </div>
+        )}
+      </div>
+      <section class="jobs_grid job_post_search_container">
+        <div class="filters_panel">
+          <div class="filters_content">
+            <JobFilter />
+          </div>
         </div>
-        <section class="jobs_grid job_post_search_container">
-          <div class="filters_panel">
-            <div class="filters_content">
-              <JobFilter />
-            </div>
+        <div class="listings_panel">
+          <div class="listings_content">
+            <SearchResults1 q={{ q: q, l: l || '', filter1 }} />
           </div>
-          <div class="listings_panel">
-            <div class="listings_content">
-              <SearchResults1 q={{ q: q, l: l || '', filter1 }} />
-            </div>
-          </div>
-        </section>
+        </div>
+      </section>
 
         <div className="max-w-4xl mx-auto py-8"></div>
 
