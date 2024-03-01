@@ -252,16 +252,15 @@ export default function Page() {
                   onClick={() => {
                     setPage(0);
                     setfilter([...filter1, { category, filter }]);
-                    //dispatch(setfilter([...filter1, { category, filter }]));
-                    setIsShowFilter(false);
+                    //setIsShowFilter(false);
                   }}
                 >{`${filter ? filter : 'Others'}  (${job_count})`}</button>
               ))}
-            {/* {filters?.length == 23 && (
+            {filters?.length == 23 && (
               <button
                 className="btn btn-primary btn-xs"
                 onClick={() => {
-                  // navigate(`/advanced-search/${category}`);
+                  //navigate(`/advanced-search/${category}`);
                   navigate(`/advanced-search/${category}`, {
                     state: { filter1 },
                   });
@@ -269,7 +268,7 @@ export default function Page() {
               >
                 Show All
               </button>
-            )} */}
+            )}
           </div>
         )}
       </div>
