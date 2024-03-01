@@ -91,10 +91,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                 >
                   <Image
                     className="w-full "
-                    src={
-                      `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` ||
-                      ''
-                    }
+                    src={`https://academicjobs.s3.amazonaws.com/img/university-logo/${logo || 'favicon.jpg'}`}
                     alt={company_name}
                     width={300}
                     height={200}
