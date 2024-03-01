@@ -16,8 +16,23 @@ export default function myPage() {
   return (
     <>
       <main className="content-grid">
-        <div className="prose">
-          <h2 className="underline-full mt-16">Thank you for your Job Post</h2>
+        <div className="prose bg-slate-200 rounded-3xl mt-12">
+          <h2 className="underline-full mt-16">WOO HOO, Thank you for your Job Post</h2>
+          <h3>The AcademicJobs team</h3>
+          <p>Have any questions? </p>
+          <p className='font-bold'>Email our team at support@academicjobs.com to get in touch. </p>
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
         </div>
       </main>
     </>
