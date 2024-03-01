@@ -5,14 +5,14 @@ import HeroCard from '@/components/HeroCard';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: `Science Jobs Recruitment`, //Option 1 replaces the %s in layout.tsx
+  title: `Research Jobs Recruitment`, //Option 1 replaces the %s in layout.tsx
   // title: {
-  //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
+  //   absolute: '  Academic Jobs: Academic, research and research positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
-    'Empower your university with Academic Jobs: a leading platform for matching top academic talent globally using innovative AI technology. Transform your talent strategy now!',
+    'Using cutting-edge research recruitment AI technology, Academic Jobs is a premier platform that connects outstanding academic talent worldwide, enabling your university to thrive. Change your approach to talent right away!',
   keywords:
-    'Academic Talent Acquisition, Higher Education Recruitment Platform, University Talent Matching, College Recruitment Solutions, Global Academic Talent Pool, Academic Jobs Platform, Educational Institution Hiring, Faculty Recruitment Services, Academic Staffing Solutions, Dynamic Talent Matching for Universities, AI-Powered Academic Recruitment, Higher Ed Talent Search, Academic Professional Networking, Innovative University Hiring, Research Staff Recruitment, Academic Career Opportunities, Educational Talent Management, Higher Education Job Matching, University Faculty Recruitment, College Administrative Hiring',
+    'research recruitment',
 };
 
 export default function myPage() {
@@ -22,7 +22,7 @@ export default function myPage() {
         <div className="container py-16 flex flex-col lg:flex-row gap-2">
           <div>
             <h1>
-            Science Jobs Recruitment
+            Research Jobs Recruitment
               {/* Watch as Excellence Meets Opportunity */}
             </h1>
             {/* <h1>Transform Your Talent Acquisition with the Academic Jobs Talent Pool</h1> */}
@@ -30,7 +30,7 @@ export default function myPage() {
               Empowering Universities with Dynamic Talent Matching
             </h2>
             <p>
-            We are a leading science recruitment job board that specialises in finding and placing talented science professionals in various fields and sectors.
+            We are a leading research recruitment job board that specialises in finding and placing talented research professionals in various fields and sectors.
             </p>
             <p className="pb-8">
               In the ever-evolving landscape of higher education, finding the
@@ -42,7 +42,7 @@ export default function myPage() {
             <Image
               width={350}
               height={350}
-              src="/talent-pool/dynamic-talent-match-making.jpg"
+              src="/student-jobs-on-campus/personal-growth-with-campus-jobs.jpg"
               alt="Global academic talent pool platform interface"
               className="w-full h-auto rounded-3xl mr-4"
             />
@@ -118,7 +118,7 @@ export default function myPage() {
           iconPath="/icons/rank-indicator.svg"
         >
           <p>
-          We have a large and diverse database of science jobs, covering all levels and disciplines. You can browse our current vacancies online, or register with us to receive regular job alerts and updates.
+          We have a large and diverse database of research jobs, covering all levels and disciplines. You can browse our current vacancies online, or register with us to receive regular job alerts and updates.
           </p>
         </Card>
         {/* Card 5 */}
@@ -138,7 +138,7 @@ export default function myPage() {
           heading="Our Customer Service"
         >
           <p>
-            Contact us directly and speak to one of our consultants. They will be happy to discuss your career aspirations and help you find the best science jobs for you.
+            Contact us directly and speak to one of our consultants. They will be happy to discuss your career aspirations and help you find the best research jobs for you.
           </p>
         </Card>
       </div>

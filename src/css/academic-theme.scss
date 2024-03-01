@@ -246,10 +246,12 @@ html {
     .link-nav:hover {
       text-decoration: underline;
     }
+    .alert .btn-aj,
     .btn-aj {
       background-color: var(--color-primary);
       color: #fff;
       border-radius: 100vmax;
+      text-decoration: none;
     }
     .btn-white {
       background-color: white;
@@ -257,10 +259,14 @@ html {
       border-radius: 100vmax;
     }
 
+    .alert .btn-aj:hover,
     .btn-aj:hover,
     .btn-white:hover {
       color: white;
       background-color: var(--color-primary-hover);
+    }
+    .alert {
+      column-span: all;
     }
     .pagination button:hover {
       background-color: var(--color-primary-hover);

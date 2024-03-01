@@ -121,7 +121,7 @@ export default function Header() {
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url={`/${countryMappings2[region.toLowerCase()].url}/employers`}
+            url={`/${countryMappings2[region.toLowerCase()].url}/jobs-by-top-universities`}
             icon="/upward-arrow.svg"
             navLink="Top Universities"
             forceButtonClass="border-b hover:border-amber-500 "

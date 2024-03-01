@@ -42,7 +42,7 @@ export default function myPage() {
                     we go above and beyond to help you achieve this.
                   </p>
                   <Link
-                    target="_blank"
+                   
                     className="btn btn-aj"
                     href="/post-a-job"
                     // href="https://www.postmyjob.online/academicjobs-job-portal"
@@ -510,6 +510,12 @@ export default function myPage() {
               Post a Job Today
             </Link>
           </h3>
+
+          <p className="text-center p-4">
+            <a className="link link-warning hover:text-orange-500 font-bold" href="/recruitment/science-recruitment">Science Recruitment</a> 
+            <a className="link link-warning hover:text-orange-500 mx-4 font-bold" href="/recruitment/research-recruitment/">Research Recruitment</a>
+            </p>
+
         </section>
       </main>
     </>

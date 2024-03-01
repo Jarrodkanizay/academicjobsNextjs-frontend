@@ -6,6 +6,7 @@ import SearchResults from '@/components/SearchResults';
 import SearchResults1 from '@/components/SearchResults1';
 import JobSearchBox2 from '@/components/JobSearchBox2';
 import JobFilter from '@/components/JobFilter';
+import TalentPool from '@/components/TalentPoolCTA';
 import Link from 'next/link';
 
 type Params = {
@@ -151,6 +152,9 @@ export default function BlogPostPage({ params }: Props) {
               </Link>
             </li>
           </ul>
+          <TalentPool cta={`Join the ${cityDetails.city} Academic Talent Pool`} />
+     
+
         </div>
         <div className="listings_panel">
           <div className="listings_content">
