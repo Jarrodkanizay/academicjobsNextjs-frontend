@@ -21,11 +21,12 @@ export default function myPage() {
       <div className="bg-slate-200 full-width">
         <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
           <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">
-            Admin Jobs
+            Campus Staff Jobs
           </h1>
 
           <div className="">
             <p className="px-7 mb-4 mt-1">
+              Find all university staff jobs on academic jobs. Search University administration staff and support roles at the best universities.
               Seek your perfect admin position through the world’s best job
               board! At Academic Jobs we offer the most renowned Higher Ed jobs
               at the top universities. Positions in admin will provide you with
@@ -57,7 +58,7 @@ export default function myPage() {
               className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
               key={key}
             >
-              <Link href={`/admin/${Name?.replace(/\s+/g, '-')}/`}>{Name}</Link>
+              <Link href={`/staff-jobs/${Name?.replace(/\s+/g, '-')}/`}>{Name}</Link>
             </li>
           ))}
         </ul>

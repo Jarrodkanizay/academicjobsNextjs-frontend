@@ -30,15 +30,43 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/admin',
+        destination: '/staff-jobs',
+        permanent: true,
+      },
+      {
+        source: '/student',
+        destination: '/student-jobs',
+        permanent: true,
+      },
+      
+      {
         source: '/employer',
-        destination: '/employers',
+        destination: '/jobs-by-top-universities',
+        permanent: true,
+      },
+      {
+        source: '/employers',
+        destination: '/jobs-by-top-universities',
         permanent: true,
       },
       {
         source: '/global/employers',
-        destination: '/employers',
+        destination: '/jobs-by-top-universities',
         permanent: true,
       },
+      
+      {
+        source: '/Global/jobs-by-top-universities',
+        destination: '/jobs-by-top-universities',
+        permanent: true,
+      },
+      {
+        source: '/global/jobs-by-top-universities',
+        destination: '/jobs-by-top-universities',
+        permanent: true,
+      },
+
       {
         source: '/global/recruitment',
         destination: '/recruitment',
@@ -231,17 +259,17 @@ const nextConfig = {
       },
       {
         source: '/company/3105/university-of-california-berkeley',
-        destination: '/employers',
+        destination: '/jobs-by-top-universities',
         permanent: true,
       },
       {
         source: '/company/3781/tarrant-county-college-district',
-        destination: '/employers',
+        destination: '/jobs-by-top-universities',
         permanent: true,
       },
       {
         source: '/employers/company/deakin-university/3856',
-        destination: '/employers',
+        destination: '/jobs-by-top-universities',
         permanent: true,
       },
       {

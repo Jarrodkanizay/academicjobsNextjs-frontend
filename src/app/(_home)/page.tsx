@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     absolute: '  Academic Jobs: All Higher Ed Positions Locally and Globally.', //Option 2 overrides the title in layout.tsx
   },
   description:
-    'Discover academic jobs at all universities today! Explore your next academic positions through visiting our higher ed jobs, with new academic jobs added daily.',
+    'Search for academic positions, research, science and university staff jobs here. Find higher ed jobs at all universities today!',
   keywords:
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
@@ -308,6 +308,8 @@ export default async function myPage() {
               globally. Connect with your next career move in the academic
               sector through our comprehensive online job board. Find your next
               academic job now!
+              
+              
             </p>
           </div>
         </div>
