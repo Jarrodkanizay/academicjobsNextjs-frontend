@@ -3,7 +3,7 @@ import { regionData } from '@/data/asiaPositions';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
-
+import TalentPool from '@/components/TalentPoolCTA';
 // import type { Metadata } from 'next';
 
 const regionName = 'Asia';
@@ -81,12 +81,7 @@ export default function Page({ params, searchParams }: any) {
               </p>
               
             ))}
-               <Link
-                      href={'/academic-talent-pool'}
-                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
-                    >
-                     Join Talent Pool
-                    </Link>
+                 <TalentPool  />
           </div>
         </div>
       </div>
