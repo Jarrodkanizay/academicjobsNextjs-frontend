@@ -343,6 +343,7 @@ const JobPostForm = ({ partner, region }) => {
                 <div className="flex gap-4">
                   <label htmlFor="creditCard" className="label cursor-pointer">
                     <strong className="mr-2">Payment method:</strong>Credit Card
+                    (Pay Now)
                     <input
                       type="radio"
                       id="creditCard"
@@ -355,7 +356,7 @@ const JobPostForm = ({ partner, region }) => {
                   </label>
 
                   <label htmlFor="invoice" className="label cursor-pointer">
-                    Invoice
+                    Invoice (Pay Later)
                     <input
                       type="radio"
                       id="invoice"
