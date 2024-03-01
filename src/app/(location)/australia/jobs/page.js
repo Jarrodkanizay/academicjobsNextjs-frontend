@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { regionData } from '@/data/australiaPositions';
 import SearchResults2 from '@/components/SearchResults2';
 import JobSearchBox from '@/components/JobSearchBox';
+import TalentPool from '@/components/TalentPoolCTA';
 // import type { Metadata } from 'next';
 
 const regionName = 'Australia';
@@ -72,12 +73,7 @@ export default function Page({ params, searchParams }) {
                 {para}
               </p>
             ))}
-            <Link
-              href={'/academic-talent-pool'}
-              className="btn btn-aj btn-sm w-1/2 md:w-1/4 mx-auto my-2"
-            >
-              Join Our Talent Pool
-            </Link>
+         <TalentPool  />
           </div>
         </div>
       </div>
