@@ -50,8 +50,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
   const {
     employer_id,
     id: jobId,
-    company_name,
-    logo,
+   
     title,
     location,
     activation_date,
@@ -62,6 +61,10 @@ const JobDetailPage = async ({ params, searchParams }) => {
     clientType,
     headlineOnly,
     ranking,
+    employer: {
+      company_name,
+      logo,
+    }
   } = job.data;
   console.log('ranking==============', ranking);
   const subject = encodeURIComponent('You might like this job posting!');
