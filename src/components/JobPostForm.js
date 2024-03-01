@@ -34,6 +34,7 @@ const JobPostForm = ({ partner, region }) => {
     'Which Region are you from?'
   );
   const [paymentMethod, setPaymentMethod] = useState('creditCard');
+  const [paymentMessage, setPaymentMessage] = useState('Credit Card');
 
   const handleChange = (event) => {
     setSelectedCurrency(event.target.value);
@@ -98,21 +99,27 @@ const JobPostForm = ({ partner, region }) => {
     },
   });
 
+  const onSubmit = async (data) => {
+    // e.preventDefault();
+    // alert()
+    console.log('data', data);
+    if (paymentMethod === 'invoice') {
+      // Display thank you message
+      alert('Thank you for your payment by invoice.');
+    } else if (paymentMethod === 'creditCard') {
+      mutation.mutate({
+        ...data,
+        '00_formSource': `Message from: ${partnerName} Post Form`,
+      });
+    }
+  };
+
   const mutation = useMutation({
     mutationFn: async (data) => {
       return await BaseApi.post('/sendemail', data);
     },
   });
 
-  const onSubmit = async (data) => {
-    // e.preventDefault();
-    // alert()
-    console.log('data', data);
-    mutation.mutate({
-      ...data,
-      '00_formSource': `Message from: ${partnerName} Post Form`,
-    });
-  };
   if (mutation.isLoading) {
     return (
       <div className="bg-white relative max-w-screen-lg mx-auto pl-2">
@@ -335,36 +342,35 @@ const JobPostForm = ({ partner, region }) => {
                 </label>
                 <div className="flex gap-4">
                   <label htmlFor="creditCard" className="label cursor-pointer">
-                    Pay via Credit Card
+                    <strong className="mr-2">Payment method:</strong>Credit Card
                     <input
                       type="radio"
                       id="creditCard"
                       name="paymentMethod"
                       value="creditCard"
                       {...register('paymentMethod')}
-                      className="radio radio-warning ml-2"
+                      onClick={() => setPaymentMessage('Credit Card')}
+                      className="radio radio-aj ml-2"
                     />
                   </label>
 
                   <label htmlFor="invoice" className="label cursor-pointer">
-                    Pay via Invoice
+                    Invoice
                     <input
                       type="radio"
                       id="invoice"
                       name="paymentMethod"
                       value="invoice"
                       {...register('paymentMethod')}
-                      className="radio radio-warning ml-2"
+                      onClick={() => setPaymentMessage('Invoice')}
+                      className="radio radio-aj ml-2"
                     />
                   </label>
                 </div>
-                {/* <QuillEditor
-            value={content}
-            onChange={(value) => {
-              setValue("job_description", value)
-            }}
-            className="w-full h-[70%] mt-10 bg-white" /> */}
-                <button className="btn btn-accent mt-4">Submit & PayNow</button>
+
+                <button className="btn btn-accent mt-4">
+                  Post & Pay via {paymentMessage}
+                </button>
               </div>
             </form>
             {partnerLogo !== '' ? (
@@ -379,6 +385,7 @@ const JobPostForm = ({ partner, region }) => {
               </picture>
             ) : null}
           </div>
+          {/* Right panel */}
           <div>
             <h2 className="mt-8">
               <Speedo size={60} />

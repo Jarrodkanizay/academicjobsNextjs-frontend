@@ -265,6 +265,12 @@ html {
       color: white;
       background-color: var(--color-primary-hover);
     }
+
+    .radio-aj:checked {
+      background-color: var(--aj-orange) !important;
+      border-color: var(--aj-orange) !important;
+    }
+
     .alert {
       column-span: all;
     }
