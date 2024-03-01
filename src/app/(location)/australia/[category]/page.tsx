@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { regionData } from '@/data/australiaPositions';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
-
+import TalentPool from '@/components/TalentPoolCTA';
 import JobFilter from '@/components/JobFilter';
 // import type { Metadata } from 'next';
 
@@ -80,12 +80,7 @@ export default function Page({ params, searchParams }: any) {
                 {para}
               </p>
             ))}
-             <Link
-                      href={'/academic-talent-pool'}
-                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
-                    >
-                     Join Talent Pool
-                    </Link>
+               <TalentPool  />
           </div>
         </div>
       </div>
