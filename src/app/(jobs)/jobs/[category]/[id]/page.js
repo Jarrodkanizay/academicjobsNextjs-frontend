@@ -14,6 +14,7 @@ import { useSearchParams } from 'next/navigation';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import FavoriteButton from '@/components/FavoriteButton';
 import { StarRank } from '@/components/StarRank';
+import TalentPool from '@/components/TalentPoolCTA';
 
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
@@ -244,6 +245,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                 </>
               }
               {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
+              <TalentPool  />
             </div>
           </div>
         </article>

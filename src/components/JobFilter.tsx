@@ -47,7 +47,7 @@ export default function JobFilter({ dataQty = '> 1' }: JobFilterProps) {
     <>
       {logoMode ? (
         <>
-        <div className="mt-12 rounded-3xl  border-8 mb-12 hidden md:block">
+        <div className="mt-12 rounded-3xl  border-8 mb-12 hidden lg:block">
           <Image
                   src="/about-us/global-academic.png"
                   alt="global"

@@ -238,7 +238,7 @@ export default function Page() {
 
                 <a
                   target="_blank"
-                  href="https://jobelephant.com/what-we-do/college-university/"
+                  href="https://jobelephant.com"
                   className="btn mt-8 bg-[#265882] text-white"
                 >
                   JobElephant Website
