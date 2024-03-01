@@ -121,7 +121,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
     console.log('data', data);
     mutation.mutate({
       ...data,
-      '00_formSource': `Quick Job Post from ${partnerName} Post a Job Page`,
+      '00_formSource': `WOO HOO, ring the bell, WE JUST GOT ANOTHER JOB LISTING from the ${partnerName} Post a Job Page`,
     });
   };
 
@@ -299,7 +299,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                       placeholder="First Name"
                       autoComplete="given-name"
                       hidden={newContact || standardMode ? false : true}
-                      required={true}
+                      required={newContact || standardMode ? true : false}
                     />
                   </div>
                   <div className="grid w-full items-center gap-1.5 mt-4">
@@ -313,7 +313,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                       placeholder="Last Name"
                       autoComplete="family-name"
                       hidden={newContact || standardMode ? false : true}
-                      required={true}
+                      required={newContact || standardMode ? true : false}
                     />
                   </div>
                   <div className="grid w-full items-center gap-1.5 mt-4">
