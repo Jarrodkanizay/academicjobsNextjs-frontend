@@ -49,8 +49,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
   if (!job) notFound();
   const {
     employer_id,
-    id: jobId,
-   
+    id: jobId,   
     title,
     location,
     activation_date,
