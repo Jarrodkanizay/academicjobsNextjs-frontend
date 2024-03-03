@@ -15,29 +15,45 @@ import Speedo from '@/components/icons/Speedo';
 const stripeLink = {
   JobElephant: 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
   Australia: 'https://buy.stripe.com/dR6eWA6PuaaA7VC6ov',
-  Asia: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
-  Africa: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
-  Canada: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
-  Europe: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
-  India: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
-  'South America': 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
-  'Middle East': 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
-  'New Zealand': 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
-  'United Kingdom': 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
-  USA: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot',
+  Asia: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=asia',
+  Africa: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=africa',
+  Canada: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=canada',
+  Europe: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=europe',
+  India: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=india',
+  'South America':
+    'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=south-america',
+  'Middle East': 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=middle-east',
+  'New Zealand': 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=new-zealand',
+  'United Kingdom':
+    'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=united-kingdom',
+  USA: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=usa',
 };
-const JobPostForm = ({ partner, region }) => {
+const JobPostForm = ({ partner, region = 'USA' }) => {
+  const [regionSelected, setRegion] = useState(region);
+
   const [standardMode, setStandardMode] = useState(true);
   const [newContact, setNewContact] = useState(false);
   const [selectedContact, setSelectedContact] = useState(null);
-  const [selectedCurrency, setSelectedCurrency] = React.useState(
+  const [selectedCurrency, setSelectedCurrency] = useState(
     'Which Region are you from?'
   );
   const [paymentMethod, setPaymentMethod] = useState('creditCard');
   const [paymentMessage, setPaymentMessage] = useState('Credit Card');
 
+  useEffect(() => {
+    console.log('Region', regionSelected);
+  }, [regionSelected]); // This effect runs whenever `regionSelected` changes
+
   const handleChange = (event) => {
     setSelectedCurrency(event.target.value);
+
+    // Get the selected option element
+    const selectedOption = event.target.options[event.target.selectedIndex];
+
+    // Get the text of the selected option
+    const selectedRegion = selectedOption.text;
+
+    setRegion(selectedRegion);
   };
 
   let avatarPath = '';
@@ -103,15 +119,10 @@ const JobPostForm = ({ partner, region }) => {
     // e.preventDefault();
     // alert()
     console.log('data', data);
-    if (paymentMethod === 'invoice') {
-      // Display thank you message
-      alert('Thank you for your payment by invoice.');
-    } else if (paymentMethod === 'creditCard') {
-      mutation.mutate({
-        ...data,
-        '00_formSource': `Message from: ${partnerName} Post Form`,
-      });
-    }
+    mutation.mutate({
+      ...data,
+      '00_formSource': `WOO HOO, ring the bell, WE JUST GOT ANOTHER JOB LISTING from the ${partnerName} Post a Job Page`,
+    });
   };
 
   const mutation = useMutation({
@@ -137,7 +148,12 @@ const JobPostForm = ({ partner, region }) => {
     return <div>An error occurred: {mutation.error.message}</div>;
   }
   if (mutation.isSuccess) {
-    router.push(stripeLink[region]);
+    if (paymentMessage === 'Invoice') {
+      router.push('/thank-you');
+    }
+    if (paymentMessage === 'Credit Card') {
+      router.push(stripeLink[regionSelected]);
+    }
   } else {
     content = (
       <main className=" content-grid">
@@ -228,31 +244,37 @@ const JobPostForm = ({ partner, region }) => {
                   }`}
                 >
                   <div className="grid w-full items-center gap-1.5">
-                    <label htmlFor="currency" className="label-text text-xs">
-                      Region
-                    </label>
+                    {partnerName === 'JobElephant' ? null : (
+                      <>
+                        <label
+                          htmlFor="currency"
+                          className="label-text text-xs"
+                        >
+                          Region
+                        </label>
 
-                    <select
-                      id="currency"
-                      tabindex="0"
-                      value={selectedCurrency}
-                      onChange={handleChange}
-                      className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500"
-                      required
-                    >
-                      <option value="" selected>
-                        Which Region are you from?
-                      </option>
-
-                      {Object.keys(stripeLink)
-                        .filter((key) => key !== 'JobElephant')
-                        .map((key) => (
-                          <option key={key} value={stripeLink[key]}>
-                            {key}
+                        <select
+                          id="currency"
+                          value={selectedCurrency}
+                          onChange={handleChange}
+                          name="currency"
+                          className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500"
+                          required
+                        >
+                          <option value="" selected>
+                            Which Region are you from?
                           </option>
-                        ))}
-                    </select>
 
+                          {Object.keys(stripeLink)
+                            .filter((key) => key !== 'JobElephant')
+                            .map((key) => (
+                              <option key={key} value={stripeLink[key]}>
+                                {key}
+                              </option>
+                            ))}
+                        </select>
+                      </>
+                    )}
                     <InputBlock
                       register={register}
                       errors={errors}
@@ -277,7 +299,7 @@ const JobPostForm = ({ partner, region }) => {
                       placeholder="First Name"
                       autoComplete="given-name"
                       hidden={newContact || standardMode ? false : true}
-                      required={true}
+                      required={newContact || standardMode ? true : false}
                     />
                   </div>
                   <div className="grid w-full items-center gap-1.5 mt-4">
@@ -291,7 +313,7 @@ const JobPostForm = ({ partner, region }) => {
                       placeholder="Last Name"
                       autoComplete="family-name"
                       hidden={newContact || standardMode ? false : true}
-                      required={true}
+                      required={newContact || standardMode ? true : false}
                     />
                   </div>
                   <div className="grid w-full items-center gap-1.5 mt-4">
