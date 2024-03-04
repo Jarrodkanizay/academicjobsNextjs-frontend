@@ -34,6 +34,7 @@ export const filterType  = {
     City: true,
     InstitutionName: true,
     JobType: true,
+    PositionType: true,
     ExecutiveJobs: false,
     AdministrationSupportJobs: false,
     HRJobs: false,
