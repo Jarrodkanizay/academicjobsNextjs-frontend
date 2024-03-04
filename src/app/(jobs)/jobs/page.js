@@ -28,6 +28,7 @@ export default function Page() {
   const [filterTypes, setfilterTypes] = useState(filterType);
   const [category, setCategory] = useState('');
   const [filter1, setfilter] = useState([]);
+  const [filter2, setfilter2] = useState([]);
   const [page, setPage] = useState(0);
   useEffect(() => {
     console.log('===============================', filter1);
@@ -64,6 +65,10 @@ export default function Page() {
         break;
     }
   }, [filter1]);
+  useEffect(() => {
+    console.log('===============================', category);
+    setfilter2(filter1)
+  }, [category]);
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -73,7 +78,7 @@ export default function Page() {
     isFetching: isFetchingQty,
     isPlaceholderData: isPlaceholderDataQty,
   } = useQuery({
-    queryKey: ['filter', { category, filter1, q, l }],
+    queryKey: ['filter', { category, filter2, q, l }],
     queryFn: async () => {
       //{ ...filter1, category,mode: "normal" }
       const response = await BaseApi.post('/filters', {
@@ -94,6 +99,8 @@ export default function Page() {
     State: 'State',
     City: 'City',
     JobType: 'Job Type',
+    PositionType: 'Position Type',
+
     ExecutiveJobs: 'Executive Jobs',
     AdministrationSupportJobs: 'Administration Support Jobs',
     HRJobs: 'HR Jobs',
@@ -166,7 +173,9 @@ export default function Page() {
                         (_, index) => index !== i
                       );
                       setPage(0);
+                      
                       setfilter(updatedFilter);
+                      setCategory("")
                       //dispatch(setfilter(updatedFilter));
                     }}
                   >
