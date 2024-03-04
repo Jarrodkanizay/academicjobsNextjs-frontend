@@ -5,7 +5,7 @@ export const cityData = [
     slug: 'boston-academic-excellence-nobel-achievements',
     city: 'Boston',
     region: 'Massachusetts',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Explore Boston's prestigious universities and colleges, home to Nobel Laureates and leading academics. Discover why Boston is a top destination for education and research.",
     keywords:
@@ -47,7 +47,8 @@ export const cityData = [
       "Boston's educational institutions offer unmatched opportunities for academic and personal growth, as well as professional advancement. With its prestigious universities, vibrant student life, and rich history of research and innovation, Boston is an ideal destination for those seeking to learn, teach, and explore.",
     ],
     image_url: 'https://live.staticflickr.com/3194/2578799899_73756bd889_c.jpg',
-    alt: 'Illustration of Boston city skyline',
+    alt: 'Academic Jobs Illustration of Boston city skyline',
+    tags: [],
   },
   {
     title:
@@ -56,7 +57,7 @@ export const cityData = [
     slug: 'london-higher-education-intellectual-prowess',
     city: 'London',
     region: 'Greater London',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Dive into London's esteemed higher education scene, featuring a constellation of universities and colleges known for their diversity, innovation, and academic excellence.",
     keywords:
@@ -97,7 +98,8 @@ export const cityData = [
       "Choosing London for your academic journey offers access to a broad spectrum of disciplines, state-of-the-art research facilities, and a vibrant international community. Whether you're pursuing studies or a career in academia, London's educational institutions provide a dynamic and supportive environment for personal and professional growth.",
     ],
     image_url: '/cities/london-sunset.jpg',
-    alt: 'Panoramic view of London with iconic landmarks',
+    alt: 'Academic Jobs Panoramic view of London with iconic landmarks',
+    tags: [],
   },
   {
     title:
@@ -146,7 +148,8 @@ export const cityData = [
     ],
     image_url:
       'https://wisatamuda.com/wp-content/uploads/2018/05/9.-Tempat-Wisata-Terbaik-di-Melbourne-Yarra-River.jpg',
-    alt: 'Scenic view of a prominent Melbourne university campus',
+    alt: 'Academic Jobs Scenic view of a prominent Melbourne university campus',
+    tags: [],
   },
   {
     title:
@@ -155,7 +158,7 @@ export const cityData = [
     slug: 'los-angeles-academic-diversity-innovation',
     city: 'Los Angeles',
     region: 'California',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Uncover the diverse higher education landscape of Los Angeles, home to leading universities and colleges, Nobel Laureates, and distinguished academics. Explore why LA is a top choice for students and professionals.',
     keywords:
@@ -194,7 +197,8 @@ export const cityData = [
       "Los Angeles offers a unique blend of academic excellence, cutting-edge research, and diverse cultural experiences, making it an attractive destination for students and academics worldwide. The city's institutions provide a supportive environment for learning, innovation, and career development.",
     ],
     image_url: '/cities/lost-angeles-california.webp',
-    alt: 'Aerial view of Los Angeles with prominent university campuses highlighted',
+    alt: 'Academic Jobs Aerial view of Los Angeles with prominent university campuses highlighted',
+    tags: [],
   },
   {
     title:
@@ -237,7 +241,8 @@ export const cityData = [
       "Brisbane offers a unique academic environment with its blend of high-quality education, cutting-edge research, and a supportive community. Students and professionals are drawn to the city for its commitment to innovation, ample opportunities for personal growth, and a lifestyle that balances urban living with nature's tranquility.",
     ],
     image_url: '/cities/brisbane-city-australia.jpg',
-    alt: 'Scenic view of Brisbane skyline with a focus on its educational institutions',
+    alt: 'Academic Jobs Scenic view of Brisbane skyline with a focus on its educational institutions',
+    tags: [],
   },
   {
     title:
@@ -281,7 +286,8 @@ export const cityData = [
       "Studying or working in Canberra offers unparalleled opportunities in research, academic collaboration, and personal growth. The city's universities are not just educational institutions but hubs of innovation and discovery, set against the backdrop of Canberra's cultural richness and natural beauty.",
     ],
     image_url: '/cities/canberra-australia.jpg',
-    alt: 'Panoramic view of Canberra with a focus on its academic institutions',
+    alt: 'Academic Jobs Panoramic view of Canberra with a focus on its academic institutions',
+    tags: [],
   },
   {
     title:
@@ -329,6 +335,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/6/63/Skylines_of_Sydney_CBD_seen_from_North_Sydney%2C_August_2022%2C_02.jpg',
     alt: "Iconic Sydney Opera House and Harbour Bridge, symbolizing the city's blend of cultural heritage and modern innovation",
+    tags: [],
   },
 
   {
@@ -367,7 +374,8 @@ export const cityData = [
     ],
     image_url:
       'https://www.illawarramercury.com.au/images/transform/v1/crop/frm/tSTP9QYGHQpn75NApSSxni/1e22faf9-cba0-43d2-8450-53a2ad72a4c2.jpg/r563_0_5709_2829_w1200_h678_fmax.jpg',
-    alt: 'Panoramic view of Wollongong, highlighting the University campus and surrounding landscape',
+    alt: 'Academic Jobs Panoramic view of Wollongong, highlighting the University campus and surrounding landscape',
+    tags: [],
   },
   {
     title:
@@ -416,7 +424,8 @@ export const cityData = [
       'Choosing Paris for study or work means immersing yourself in a city that celebrates knowledge, creativity, and diversity, with ample opportunities for career advancement and cultural enrichment.',
     ],
     image_url: 'https://live.staticflickr.com/2463/3598596311_84211f2566_b.jpg',
-    alt: 'Iconic view of Paris with prominent educational institutions highlighted',
+    alt: 'Academic Jobs Iconic view of Paris with prominent educational institutions highlighted',
+    tags: [],
   },
   {
     title: 'Exploring Academic Excellence in New York City, USA',
@@ -424,7 +433,7 @@ export const cityData = [
     slug: 'academic-excellence-new-york-city',
     city: 'New York City',
     region: 'New York',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Dive into the vibrant academic landscape of New York City, home to world-renowned universities, Nobel Laureates, and leading academics. Uncover why NYC is a top destination for education and research.',
     keywords:
@@ -467,7 +476,8 @@ export const cityData = [
     ],
     image_url:
       'https://t3.ftcdn.net/jpg/02/09/70/56/360_F_209705645_b78HGJI1i1mxqLwMYA7z1m3VvCxgxJFO.jpg',
-    alt: 'Skyline of New York City highlighting its educational institutions',
+    alt: 'Academic Jobs Skyline of New York City highlighting its educational institutions',
+    tags: [],
   },
   {
     title:
@@ -517,7 +527,8 @@ export const cityData = [
       "The city's rich cultural scene, combined with its comprehensive academic programs and state-of-the-art research facilities, makes Berlin an attractive destination for pursuing academic excellence and career development.",
     ],
     image_url: '/cities/berlin.jpg',
-    alt: 'Panoramic view of Berlin highlighting its educational and cultural landmarks',
+    alt: 'Academic Jobs Panoramic view of Berlin highlighting its educational and cultural landmarks',
+    tags: [],
   },
   {
     title: 'Tokyo, Japan: A Global Leader in Higher Education and Research',
@@ -566,7 +577,8 @@ export const cityData = [
       'Choosing Tokyo for study or research means immersing yourself in a city known for its academic excellence, innovative spirit, and rich cultural heritage, making it a sought-after destination for scholars worldwide.',
     ],
     image_url: '/cities/tokyo.webp',
-    alt: 'Iconic Tokyo skyline with prominent educational institutions highlighted',
+    alt: 'Academic Jobs Iconic Tokyo skyline with prominent educational institutions highlighted',
+    tags: [],
   },
   {
     title:
@@ -613,7 +625,8 @@ export const cityData = [
       "The city's universities provide a supportive and dynamic environment for pursuing academic goals, along with opportunities for personal and professional growth in Australia's stunning west coast setting.",
     ],
     image_url: '/cities/perth.webp',
-    alt: 'Panoramic view of Perth, showcasing its educational institutions and natural beauty',
+    alt: 'Academic Jobs Panoramic view of Perth, showcasing its educational institutions and natural beauty',
+    tags: [],
   },
   {
     title: 'Adelaide, Australia: A Center of Academic Excellence and Research',
@@ -659,6 +672,7 @@ export const cityData = [
     ],
     image_url: '/cities/adeliade.jpg',
     alt: "Panoramic view of Adelaide, highlighting its educational institutions against a backdrop of the city's natural beauty",
+    tags: [],
   },
   {
     title: 'Chicago, USA: A Leading Academic and Research Hub',
@@ -666,7 +680,7 @@ export const cityData = [
     slug: 'chicago-academic-research-hub',
     city: 'Chicago',
     region: 'Illinois',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Dive into Chicago's vibrant higher education scene, home to prestigious universities and a thriving community of scholars. Discover the city's contributions to global knowledge and innovation.",
     keywords:
@@ -707,7 +721,8 @@ export const cityData = [
       'Choosing to study or work in Chicago means being part of a dynamic academic community where education and research are deeply valued, and where students and professionals can thrive in their pursuit of excellence.',
     ],
     image_url: '/cities/chicago.jpg',
-    alt: 'Iconic skyline of Chicago with a focus on its prestigious universities and research institutions',
+    alt: 'Academic Jobs Iconic skyline of Chicago with a focus on its prestigious universities and research institutions',
+    tags: [],
   },
   {
     title:
@@ -716,7 +731,7 @@ export const cityData = [
     slug: 'san-francisco-education-innovation',
     city: 'San Francisco',
     region: 'California',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Explore the dynamic academic landscape of San Francisco, home to leading universities and a vibrant culture of innovation. Discover how this city shapes future leaders and pioneers in various fields.',
     keywords:
@@ -755,7 +770,8 @@ export const cityData = [
       'Choosing to study or work in San Francisco means immersing yourself in an environment that values creativity, diversity, and innovation, making it an ideal place for those looking to make a significant impact in their careers and the world.',
     ],
     image_url: '/cities/san-francisico.jpg',
-    alt: 'Scenic view of San Francisco, highlighting its educational institutions and innovative spirit',
+    alt: 'Academic Jobs Scenic view of San Francisco, highlighting its educational institutions and innovative spirit',
+    tags: [],
   },
   {
     title:
@@ -805,7 +821,8 @@ export const cityData = [
       "Choosing to study or work in Montreal means joining a thriving academic community where education and research are deeply intertwined with the city's unique cultural heritage, making it an ideal place for intellectual and personal growth.",
     ],
     image_url: '/cities/montreal.jpg',
-    alt: 'Panoramic view of Montreal, showcasing its educational institutions and vibrant cultural scene',
+    alt: 'Academic Jobs Panoramic view of Montreal, showcasing its educational institutions and vibrant cultural scene',
+    tags: [],
   },
   {
     title:
@@ -852,7 +869,8 @@ export const cityData = [
       'Choosing Zurich for academic pursuits means being part of a city that values innovation, sustainability, and a multicultural academic community, set against the backdrop of stunning Swiss landscapes.',
     ],
     image_url: '/cities/zurich.jpg',
-    alt: 'Aerial view of Zurich, showcasing its educational institutions and beautiful scenery',
+    alt: 'Academic Jobs Aerial view of Zurich, showcasing its educational institutions and beautiful scenery',
+    tags: [],
   },
   {
     title: 'Singapore: A Global Hub for Higher Education and Innovation',
@@ -899,6 +917,7 @@ export const cityData = [
     ],
     image_url: '/cities/singapore.jpg',
     alt: "Scenic view of Singapore's skyline, highlighting its educational institutions and modern architecture",
+    tags: [],
   },
   {
     title:
@@ -947,6 +966,7 @@ export const cityData = [
     ],
     image_url: '/cities/amsterdam.png',
     alt: "Iconic Amsterdam canal view, symbolizing the city's blend of historic charm and academic vibrancy",
+    tags: [],
   },
   {
     title: 'Oxford, UK: A Timeless Nexus of Knowledge and Learning',
@@ -954,7 +974,7 @@ export const cityData = [
     slug: 'oxford-academic-heritage',
     city: 'Oxford',
     region: 'Oxfordshire',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Oxford is not just a city but an emblem of education and intellectual prowess, home to the world-renowned University of Oxford. Discover the city's rich academic tradition and its role in shaping global thought leaders.",
     keywords:
@@ -992,7 +1012,8 @@ export const cityData = [
       'Choosing Oxford for higher education means immersing oneself in a world where education transcends classrooms, shaping individuals who are ready to contribute significantly to society and the broader world.',
     ],
     image_url: '/cities/oxford.webp',
-    alt: 'The iconic Oxford University skyline, embodying centuries of academic pursuit and excellence',
+    alt: 'Academic Jobs The iconic Oxford University skyline, embodying centuries of academic pursuit and excellence',
+    tags: [],
   },
   {
     title: 'Cambridge, UK: An Epicenter of Academic Prestige and Innovation',
@@ -1000,7 +1021,7 @@ export const cityData = [
     slug: 'cambridge-academic-prestige-innovation',
     city: 'Cambridge',
     region: 'Cambridgeshire',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       'Cambridge, a global landmark for education, offers a storied tapestry of collegiate excellence, historic institutions, and breakthrough research. Explore what makes Cambridge a pinnacle of academic pursuit and intellectual discovery.',
     keywords:
@@ -1038,7 +1059,8 @@ export const cityData = [
       'Studying or working in Cambridge means being part of a legacy of scholars who have shaped the world. The city not only provides a picturesque backdrop but also a stimulating intellectual environment that inspires greatness.',
     ],
     image_url: '/cities/cambridge.webp',
-    alt: 'The serene and scholarly ambiance of Cambridge, highlighting its historic colleges and verdant spaces',
+    alt: 'Academic Jobs The serene and scholarly ambiance of Cambridge, highlighting its historic colleges and verdant spaces',
+    tags: [],
   },
   {
     title: 'Hong Kong SAR: A Fusion of Eastern and Western Academic Traditions',
@@ -1084,7 +1106,8 @@ export const cityData = [
       'Choosing to study or work in Hong Kong means being part of an academic community that values diversity, excellence, and the pursuit of knowledge, preparing individuals for successful careers in a globalized world.',
     ],
     image_url: '/cities/hong-kong.jpg',
-    alt: 'The iconic skyline of Hong Kong, symbolizing its status as a global academic and cultural crossroads',
+    alt: 'Academic Jobs The iconic skyline of Hong Kong, symbolizing its status as a global academic and cultural crossroads',
+    tags: [],
   },
   {
     title: 'Seoul, South Korea: A Hub of Innovation and Academic Excellence',
@@ -1131,6 +1154,7 @@ export const cityData = [
     ],
     image_url: '/cities/seoul.jpg',
     alt: "Panoramic view of Seoul's skyline, showcasing its modernity and the vibrant academic life within the city",
+    tags: [],
   },
   {
     title: 'Munich, Germany: A Beacon of Higher Education and Research',
@@ -1176,7 +1200,8 @@ export const cityData = [
       'Munich’s educational institutions not only provide world-class education but also foster a thriving research environment, making it an ideal destination for those seeking to excel in their academic and professional pursuits.',
     ],
     image_url: '/cities/munich.webp',
-    alt: 'The iconic skyline of Munich, showcasing its historic architecture and modern academic institutions',
+    alt: 'Academic Jobs The iconic skyline of Munich, showcasing its historic architecture and modern academic institutions',
+    tags: [],
   },
   {
     title: 'Vancouver, Canada: A Diverse and Dynamic Academic Hub',
@@ -1221,7 +1246,8 @@ export const cityData = [
       "Vancouver's institutions offer a supportive environment for personal and professional growth, making it a top choice for those seeking to advance their academic careers.",
     ],
     image_url: '/cities/vancouver.webp',
-    alt: 'The scenic beauty of Vancouver with its iconic skyline and educational institutions highlighted',
+    alt: 'Academic Jobs The scenic beauty of Vancouver with its iconic skyline and educational institutions highlighted',
+    tags: [],
   },
   {
     title: 'Edinburgh, UK: A Historic Epicenter of Academic Excellence',
@@ -1229,7 +1255,7 @@ export const cityData = [
     slug: 'edinburgh-academic-heritage',
     city: 'Edinburgh',
     region: 'Scotland',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       'Edinburgh, with its renowned universities and vibrant educational scene, offers a unique blend of historical significance and modern academic innovation. Learn why Edinburgh is a top choice for students and academics worldwide.',
     keywords:
@@ -1266,7 +1292,8 @@ export const cityData = [
       "The city's educational institutions are committed to fostering a supportive and innovative environment for students and staff alike, making Edinburgh a preferred destination for academic and personal development.",
     ],
     image_url: '/cities/edinburgh.webp',
-    alt: 'The historic cityscape of Edinburgh with its prestigious universities highlighted',
+    alt: 'Academic Jobs The historic cityscape of Edinburgh with its prestigious universities highlighted',
+    tags: [],
   },
   {
     title: 'Beijing, China: A Global Hub for Academic and Research Excellence',
@@ -1312,6 +1339,7 @@ export const cityData = [
     ],
     image_url: '/cities/beijing.jpg',
     alt: "Panoramic view of Beijing's iconic university campuses, symbolizing the city's academic prestige",
+    tags: [],
   },
   {
     title:
@@ -1358,6 +1386,7 @@ export const cityData = [
     ],
     image_url: '/cities/shainhai.jpg',
     alt: "Aerial view of Shanghai's university campuses, showcasing the modern educational infrastructure against the city skyline",
+    tags: [],
   },
   {
     title: 'Stockholm, Sweden: A Hub of Academic Excellence and Innovation',
@@ -1403,6 +1432,7 @@ export const cityData = [
     ],
     image_url: '/cities/stockholm.webp',
     alt: "Scenic view of Stockholm with its university buildings prominently displayed, highlighting the city's dedication to academic excellence",
+    tags: [],
   },
   {
     title: 'Copenhagen, Denmark: A Beacon of Academic Excellence',
@@ -1448,6 +1478,7 @@ export const cityData = [
     ],
     image_url: '/cities/copengagen.jpg',
     alt: "Panoramic view of Copenhagen, highlighting the city's educational institutions and serene environment, ideal for academic endeavors",
+    tags: [],
   },
   {
     title:
@@ -1494,6 +1525,7 @@ export const cityData = [
     ],
     image_url: '/cities/dublin.webp',
     alt: "Scenic view of Dublin's historical architecture blending with modern academic institutions, symbolizing the city's rich educational heritage",
+    tags: [],
   },
   {
     title: 'Austin, USA: A Dynamic Center for Higher Education and Innovation',
@@ -1501,7 +1533,7 @@ export const cityData = [
     slug: 'academic-austin',
     city: 'Austin',
     region: 'Texas',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Explore Austin's diverse academic landscape, featuring world-class universities and a vibrant culture that fosters innovation and creativity.",
     keywords:
@@ -1530,6 +1562,7 @@ export const cityData = [
     ],
     image_url: '/cities/austin.jpg',
     alt: "Panoramic view of Austin showcasing the University of Texas campus amidst the city's bustling cultural and technological hubs",
+    tags: [],
   },
   {
     title:
@@ -1567,6 +1600,7 @@ export const cityData = [
     ],
     image_url: '/cities/madrid.jpg',
     alt: "Panoramic view of Madrid with historic buildings and modern educational institutions, highlighting the city's academic diversity",
+    tags: [],
   },
   {
     title: 'Barcelona, Spain: A Beacon of Learning and Innovation',
@@ -1603,6 +1637,7 @@ export const cityData = [
     ],
     image_url: '/cities/barcelona.jpg',
     alt: "The iconic cityscape of Barcelona, highlighting its educational institutions amid historical and modern architecture, symbolizing the city's academic vitality",
+    tags: [],
   },
   {
     title: 'Exploring the Academic Landscape of Buenos Aires, Argentina',
@@ -1645,6 +1680,7 @@ export const cityData = [
     ],
     image_url: '/cities/aregentina.jpg',
     alt: "The historic and modern educational institutions of Buenos Aires, set against the city's vibrant cultural backdrop, showcasing its role as a leading academic center in Latin America",
+    tags: [],
   },
   {
     title: 'Exploring the Educational Excellence of Kuala Lumpur, Malaysia',
@@ -1681,6 +1717,7 @@ export const cityData = [
     ],
     image_url: '/cities/kulala-lumpar.jpg',
     alt: "Aerial view of Kuala Lumpur's skyline, highlighting the city's modern educational institutions amidst its cultural landmarks, symbolizing a blend of tradition and modernity in education",
+    tags: [],
   },
   {
     title: "Vienna's Academic Heritage: A Beacon of Knowledge and Culture",
@@ -1717,6 +1754,7 @@ export const cityData = [
     ],
     image_url: '/cities/vienna.webp',
     alt: "The historic architecture of Vienna's universities set against the city's skyline, symbolizing the blend of traditional and modern educational values",
+    tags: [],
   },
   {
     title: 'Exploring the Academic Excellence of Brussels, Belgium',
@@ -1753,6 +1791,7 @@ export const cityData = [
     ],
     image_url: '/cities/belgium.jpg',
     alt: "The iconic Atomium structure against Brussels' skyline, symbolizing the city's blend of historical richness and modern academic advancements",
+    tags: [],
   },
   {
     title: 'Exploring the Academic Landscape of Taipei, Taiwan',
@@ -1789,6 +1828,7 @@ export const cityData = [
     ],
     image_url: '/cities/taipei.jpg',
     alt: "The bustling streets of Taipei with the iconic Taipei 101 in the background, symbolizing the city's modern educational facilities and rich cultural heritage",
+    tags: [],
   },
   {
     title: 'Exploring the Academic Excellence of Milan, Italy',
@@ -1825,6 +1865,7 @@ export const cityData = [
     ],
     image_url: '/cities/italy.jpg',
     alt: "A panoramic view of Milan, showcasing its iconic skyline with the Duomo di Milano, symbolizing the city's rich academic heritage and modern educational facilities",
+    tags: [],
   },
   {
     title: 'Exploring the Academic Landscape of Helsinki, Finland',
@@ -1861,6 +1902,7 @@ export const cityData = [
     ],
     image_url: '/cities/finland.jpg',
     alt: "A picturesque view of Helsinki, showcasing its harmonious blend of historical architecture and modern educational facilities, set against the backdrop of Finland's natural beauty",
+    tags: [],
   },
   {
     title: 'Exploring the Educational Excellence of Bangalore, India',
@@ -1897,6 +1939,7 @@ export const cityData = [
     ],
     image_url: '/cities/bangalore.jpg',
     alt: "The bustling cityscape of Bangalore, juxtaposed with its serene educational campuses, illustrates the city's unique blend of technological advancement and academic heritage.",
+    tags: [],
   },
   {
     title: 'Exploring the Academic Vibrancy of São Paulo, Brazil',
@@ -1933,6 +1976,7 @@ export const cityData = [
     ],
     image_url: '/cities/sao-paulo.jpg',
     alt: "The sprawling cityscape of São Paulo, with its mix of modern skyscrapers and historic buildings, reflects the city's role as a key player in global education and research.",
+    tags: [],
   },
   {
     title: 'Discovering the Academic Excellence of Mexico City, Mexico',
@@ -1968,7 +2012,8 @@ export const cityData = [
       "For professionals and academics, the city's universities provide a platform for groundbreaking research and collaboration in a nation renowned for its historic contributions to art, science, and technology.",
     ],
     image_url: '/cities/mexico-city.jpg',
-    alt: 'Panoramic view of Mexico City with its blend of modern skyscrapers and historic architecture, symbolizing its status as a leading center for education and research in Latin America.',
+    alt: 'Academic Jobs Panoramic view of Mexico City with its blend of modern skyscrapers and historic architecture, symbolizing its status as a leading center for education and research in Latin America.',
+    tags: [],
   },
   {
     title: 'Exploring the Academic Landscape of Istanbul, Turkey',
@@ -2005,6 +2050,7 @@ export const cityData = [
     ],
     image_url: '/cities/istanbul.jpg',
     alt: "The stunning skyline of Istanbul, showcasing its unique mix of historical architecture and modern educational institutions, symbolizing the city's role as a key academic and cultural center in Turkey.",
+    tags: [],
   },
   {
     title: 'Exploring the Academic Excellence of Riyadh, Saudi Arabia',
@@ -2041,6 +2087,7 @@ export const cityData = [
     ],
     image_url: '/cities/saudi-arabia.jpg',
     alt: "The skyline of Riyadh at dusk, showcasing the modern architecture of its universities and colleges, reflecting the city's commitment to becoming a global leader in education and research.",
+    tags: [],
   },
   {
     title: 'Discover the Academic Landscape of Johannesburg, South Africa',
@@ -2077,6 +2124,7 @@ export const cityData = [
     ],
     image_url: '/cities/johannesburg.jpg',
     alt: "The Johannesburg skyline with prominent university buildings, symbolizing the city's commitment to higher education and its role as a leading academic center in South Africa.",
+    tags: [],
   },
   {
     title: 'Exploring the Academic Excellence of Cairo, Egypt',
@@ -2113,6 +2161,7 @@ export const cityData = [
     ],
     image_url: '/cities/egypt.avif',
     alt: "The iconic Cairo skyline, highlighting the city's historic and modern educational institutions against the backdrop of the River Nile.",
+    tags: [],
   },
   {
     title:
@@ -2153,6 +2202,7 @@ export const cityData = [
     ],
     image_url: '/cities/santiago.avif',
     alt: "The panoramic view of Santiago, Chile, showcasing the Andes mountains backdrop and the city's modern educational facilities.",
+    tags: [],
   },
   {
     title: 'Lisbon, Portugal: A Beacon of Knowledge and Cultural Heritage',
@@ -2191,7 +2241,8 @@ export const cityData = [
       "Professionals seeking employment will find Lisbon's universities to be fertile ground for research and development, with ample opportunities for collaborative projects and career advancement.",
     ],
     image_url: '/cities/portugal.jpg',
-    alt: 'The picturesque landscape of Lisbon with the iconic São Jorge Castle overlooking the city, symbolizing the blend of historical richness and educational excellence.',
+    alt: 'Academic Jobs The picturesque landscape of Lisbon with the iconic São Jorge Castle overlooking the city, symbolizing the blend of historical richness and educational excellence.',
+    tags: [],
   },
   {
     title:
@@ -2232,6 +2283,7 @@ export const cityData = [
     ],
     image_url: '/cities/bangkok.jpg',
     alt: "The iconic skyline of Bangkok, reflecting the city's modernity and rich cultural heritage, symbolizing its role as an educational and cultural hub in Southeast Asia.",
+    tags: [],
   },
   {
     title: 'New Delhi, India: A Nexus of Academic Excellence and Heritage',
@@ -2271,6 +2323,7 @@ export const cityData = [
     ],
     image_url: '/cities/new delhi.jpg',
     alt: "The panoramic view of New Delhi, showcasing its iconic landmarks intertwined with modern academic institutions, symbolizing the city's blend of tradition and educational excellence.",
+    tags: [],
   },
   {
     title: 'Montgomery, AL: Academic Excellence and Innovation Hub',
@@ -2278,7 +2331,7 @@ export const cityData = [
     slug: 'montgomery-alabama',
     city: 'Montgomery',
     region: 'Alabama',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover Montgomery's rich academic environment with prestigious universities, Nobel Laureates, and notable academics. Explore educational and professional opportunities in this vibrant city.",
     keywords:
@@ -2304,7 +2357,8 @@ export const cityData = [
       'For professionals, Montgomery offers abundant research and employment opportunities, with institutions at the forefront of innovation and discovery across various fields. Join a thriving academic community dedicated to excellence and advancement.',
     ],
     image_url: '/cities/montgomery.jpg',
-    alt: 'Montgomery Alabama cityscape skyline',
+    alt: 'Academic Jobs Montgomery Alabama cityscape skyline',
+    tags: [],
   },
 
   {
@@ -2313,7 +2367,7 @@ export const cityData = [
     slug: 'juneau-usa-higher-education',
     city: 'Juneau',
     region: 'Alaska',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover Juneau's vibrant academic community, Nobel laureates, and renowned scholars. Explore opportunities for education, research, and personal growth in Alaska's capital city.",
     keywords:
@@ -2337,7 +2391,8 @@ export const cityData = [
     ],
     image_url:
       'https://www.backyardimage.com/wp-content/uploads/2022/07/2022-06-09-Alaska-Heap-1933-1.jpg',
-    alt: 'Panoramic view of Juneau, Alaska',
+    alt: 'Academic Jobs Panoramic view of Juneau, Alaska',
+    tags: [],
   },
 
   {
@@ -2346,7 +2401,7 @@ export const cityData = [
     slug: 'phoenix-arizona-education',
     city: 'Phoenix',
     region: 'Arizona',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover Phoenix's vibrant academic scene, featuring renowned universities, notable academics, and groundbreaking research. Explore why attending or working at a university in Phoenix offers unparalleled educational and professional opportunities.",
     keywords:
@@ -2374,7 +2429,8 @@ export const cityData = [
     ],
     image_url:
       'https://www.appily.com/sites/default/files/styles/max_800/public/images/hero/college/448886_hero.jpg?itok=qWpmRAZU',
-    alt: 'Phoenix skyline with educational institutions',
+    alt: 'Academic Jobs Phoenix skyline with educational institutions',
+    tags: [],
   },
 
   {
@@ -2383,7 +2439,7 @@ export const cityData = [
     slug: 'exploring-little-rock-universities-laureates-academia',
     city: 'Little Rock',
     region: 'Arkansas',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Explore the vibrant educational tapestry of Little Rock, Arkansas. Delve into its renowned universities, Nobel Laureates, and distinguished academics, offering unparalleled opportunities for growth and innovation in diverse fields.',
     keywords:
@@ -2409,7 +2465,8 @@ export const cityData = [
     ],
     image_url:
       'https://traveler.marriott.com/wp-content/uploads/2023/11/arkansas-river-and-skyline-sunrise-little-rock-arkanasa-1920x1080.jpg',
-    alt: 'Downtown Little Rock skyline with riverfront',
+    alt: 'Academic Jobs Downtown Little Rock skyline with riverfront',
+    tags: [],
   },
 
   {
@@ -2418,7 +2475,7 @@ export const cityData = [
     slug: 'denver-colorado-education-intellectual-hub',
     city: 'Denver',
     region: 'Colorado',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover Denver's vibrant academic scene, Nobel laureates, and notable academics. Explore reasons for attending or working at its prestigious universities and colleges.",
     keywords:
@@ -2448,7 +2505,8 @@ export const cityData = [
     ],
     image_url:
       'https://media.istockphoto.com/id/537215344/photo/denver-colorado-skyscrapers-snowy-longs-peak-rocky-mountains-summer.jpg?s=612x612&w=0&k=20&c=L_TTuniB8C7XlKRPGeVvpZFGSGR3cdRmuDJEBX_3L6Q=',
-    alt: 'Denver skyline with Rocky Mountains in the background',
+    alt: 'Academic Jobs Denver skyline with Rocky Mountains in the background',
+    tags: [],
   },
 
   {
@@ -2457,7 +2515,7 @@ export const cityData = [
     slug: 'hartford-usa-education-hub',
     city: 'Hartford',
     region: 'Connecticut',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Explore Hartford's vibrant academic landscape, Nobel laureates, and renowned academics. Discover why attending or working at one of its esteemed universities promises unparalleled educational and professional opportunities.",
     keywords:
@@ -2490,7 +2548,8 @@ export const cityData = [
     ],
     image_url:
       'https://live.staticflickr.com/8555/30134529580_f3cfd23d86_b.jpg',
-    alt: 'Hartford skyline at sunset',
+    alt: 'Academic Jobs Hartford skyline at sunset',
+    tags: [],
   },
 
   {
@@ -2499,7 +2558,7 @@ export const cityData = [
     slug: 'dover-delaware-education-hub',
     city: 'Dover',
     region: 'Delaware',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Explore Dover's vibrant academic landscape, renowned for its Nobel Laureates, prestigious institutions, and groundbreaking research. Uncover opportunities for education, research, and personal growth in this dynamic city.",
     keywords:
@@ -2527,7 +2586,8 @@ export const cityData = [
       'For researchers and educators, Dover provides a fertile ground for collaboration and innovation. With state-of-the-art facilities, interdisciplinary initiatives, and a collaborative spirit, the city attracts top talent and fosters a dynamic ecosystem where ideas flourish, leading to impactful discoveries that shape the future.',
     ],
     image_url: 'https://hbcuconnect.com/images/blogs/362231',
-    alt: 'Dover, Delaware: A Hub of Education and Innovation',
+    alt: 'Academic Jobs Dover, Delaware: A Hub of Education and Innovation',
+    tags: [],
   },
 
   {
@@ -2536,7 +2596,7 @@ export const cityData = [
     slug: `tallahassee-academic-excellence`,
     city: `Tallahassee`,
     region: 'Florida',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description: `Discover Tallahassee's vibrant academic scene, home to renowned universities and colleges. Learn about Nobel Laureates, notable academics, and why Tallahassee is an ideal destination for education and employment.`,
     keywords: `Tallahassee universities, Tallahassee colleges, Nobel Laureates Tallahassee, academics Tallahassee`,
 
@@ -2565,6 +2625,7 @@ export const cityData = [
     ],
     image_url: `https://www.shutterstock.com/image-photo/tallahassee-florida-usa-downtown-skyline-600nw-359879489.jpg`,
     alt: `Tallahassee skyline with palm trees`,
+    tags: [],
   },
 
   {
@@ -2573,7 +2634,7 @@ export const cityData = [
     slug: 'atlanta-georgia-thriving-academic-hub',
     city: 'Atlanta',
     region: 'Georgia',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Discover Atlanta, Georgia, a vibrant center of higher education and innovation. Explore its prestigious universities, notable academics, and contributions to global knowledge and innovation, including Nobel Laureates and groundbreaking research.',
     keywords:
@@ -2616,7 +2677,8 @@ export const cityData = [
     ],
     image_url:
       'https://media.istockphoto.com/id/1311134607/photo/aerial-shot-over-the-downtown-connector-during-sunset.jpg?s=612x612&w=0&k=20&c=TD5UnQqRHwlmSlovgTK4RhYNr2ui-BoZGjBLCPHKuNI=',
-    alt: 'Atlanta skyline and cityscape',
+    alt: 'Academic Jobs Atlanta skyline and cityscape',
+    tags: [],
   },
 
   {
@@ -2625,7 +2687,7 @@ export const cityData = [
     slug: 'exploring-boise-idaho-education',
     city: 'Boise',
     region: 'Idaho',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Uncover the richness of Boise's education landscape! Explore its prestigious universities, renowned scholars, and the potential for personal and professional growth. Learn why Boise is a hub for innovation and intellectual exploration.",
     keywords:
@@ -2659,7 +2721,8 @@ export const cityData = [
     ],
     image_url:
       'https://www.techhelp.org/wp-content/uploads/2022/04/downtown-boise-1000-1.jpg',
-    alt: 'Boise, Idaho - A Center of Learning and Innovation',
+    alt: 'Academic Jobs Boise, Idaho - A Center of Learning and Innovation',
+    tags: [],
   },
 
   {
@@ -2668,7 +2731,7 @@ export const cityData = [
     slug: 'indianapolis-learning-innovation-hub',
     city: 'Indianapolis',
     region: 'Indiana',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Explore Indianapolis, Indiana - a vibrant city known for its diverse higher education landscape, Nobel laureates, and renowned academics. Discover why attending or working at universities in Indianapolis offers exceptional opportunities for growth and innovation.',
     keywords:
@@ -2700,7 +2763,8 @@ export const cityData = [
       'Indianapolis is not only a center for learning but also a hub for innovation and entrepreneurship. Its collaborative spirit and supportive ecosystem enable individuals to translate knowledge into action, driving economic growth and societal impact.',
     ],
     image_url: 'https://live.staticflickr.com/7142/6784455887_5c2cffdf9c_b.jpg',
-    alt: 'Indianapolis skyline reflecting in water',
+    alt: 'Academic Jobs Indianapolis skyline reflecting in water',
+    tags: [],
   },
 
   {
@@ -2709,7 +2773,7 @@ export const cityData = [
     slug: 'exploring-des-moines-higher-education',
     city: 'Des Moines',
     region: 'Iowa',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Delve into Des Moines, Iowa's vibrant academic community and its profound impact on global knowledge and innovation. Explore the distinguished universities and colleges, the intellectual legacy of Nobel laureates, and the contributions of renowned academics shaping the city's educational landscape.",
     keywords:
@@ -2737,7 +2801,8 @@ export const cityData = [
       'Professionals find Des Moines to be a hub of career advancement and research collaboration. From vibrant cultural events to dynamic interdisciplinary initiatives, the city fosters an environment where innovation thrives and intellectual curiosity flourishes.',
     ],
     image_url: 'https://live.staticflickr.com/5160/8412464698_6bc0f33e7d_b.jpg',
-    alt: 'Des Moines skyline with city lights at dusk',
+    alt: 'Academic Jobs Des Moines skyline with city lights at dusk',
+    tags: [],
   },
 
   {
@@ -2746,7 +2811,7 @@ export const cityData = [
     slug: 'exploring-topeka-kansas-academic-excellence',
     city: 'Topeka',
     region: 'Kansas',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Delve into the rich academic tapestry of Topeka, Kansas, featuring prestigious universities, eminent scholars, and a legacy of intellectual pursuit. Discover why Topeka stands as a beacon of educational opportunity and innovation in the heart of America.',
     keywords:
@@ -2779,6 +2844,7 @@ export const cityData = [
     image_url:
       'https://st4.depositphotos.com/1035350/41645/i/450/depositphotos_416459412-stock-photo-toledo-ohio-usa-downtown-skyline.jpg',
     alt: "A captivating view of Topeka's skyline against the backdrop of a vibrant sunset",
+    tags: [],
   },
 
   {
@@ -2815,6 +2881,7 @@ export const cityData = [
     ],
     image_url: '/cities/gold-coast.jpg',
     alt: "A picturesque view of Gold Coast's skyline and coastline",
+    tags: [],
   },
 
   {
@@ -2843,7 +2910,8 @@ export const cityData = [
       "Join Wagga Wagga's esteemed academic community and embark on a journey of professional fulfillment and research excellence. Whether you're an aspiring scholar or seasoned academic, Wagga Wagga offers a dynamic platform to contribute meaningfully to your field and shape the future of education​.",
     ],
     image_url: '/cities/wagga-wagga.jpg',
-    alt: 'Panoramic view of Wagga Wagga, Australia, showcasing its picturesque landscape and urban charm',
+    alt: 'Academic Jobs Panoramic view of Wagga Wagga, Australia, showcasing its picturesque landscape and urban charm',
+    tags: [],
   },
 
   {
@@ -2884,7 +2952,8 @@ export const cityData = [
       'For academics and researchers, Bathurst offers a fertile ground for intellectual collaboration, innovative research initiatives, and career advancement. Join a dynamic ecosystem where ideas flourish, boundaries blur, and the pursuit of knowledge knows no bounds.',
     ],
     image_url: '/cities/bathurst.jpg',
-    alt: 'Bathurst, Australia - A Thriving Hub of Education and Innovation',
+    alt: 'Academic Jobs Bathurst, Australia - A Thriving Hub of Education and Innovation',
+    tags: [],
   },
 
   {
@@ -2924,6 +2993,7 @@ export const cityData = [
     ],
     image_url: '/cities/ballarat.jpg',
     alt: "A panoramic view of Ballarat's historic precinct showcasing its architectural heritage and natural beauty",
+    tags: [],
   },
 
   {
@@ -2963,7 +3033,8 @@ export const cityData = [
       "Whether you're pursuing higher education or seeking career advancement, Bendigo's academic institutions provide the perfect springboard for realizing your aspirations and making a meaningful impact on the world.",
     ],
     image_url: '/cities/bendigo.avif',
-    alt: 'Bendigo skyline showcasing its historic architecture and lush greenery',
+    alt: 'Academic Jobs Bendigo skyline showcasing its historic architecture and lush greenery',
+    tags: [],
   },
 
   {
@@ -3001,7 +3072,8 @@ export const cityData = [
       'Join a community of scholars, researchers, and learners committed to excellence, innovation, and positive change. Whether you seek personal growth or professional advancement, Wodonga offers an enriching environment where your aspirations can flourish.',
     ],
     image_url: '/cities/wodonga.jpg',
-    alt: 'Wodonga, Australia - A Vibrant Academic Hub',
+    alt: 'Academic Jobs Wodonga, Australia - A Vibrant Academic Hub',
+    tags: [],
   },
 
   {
@@ -3042,6 +3114,7 @@ export const cityData = [
     ],
     image_url: `/cities/dubbo.jpg`,
     alt: `Dubbo, Australia - A City of Academic Excellence`,
+    tags: [],
   },
 
   {
@@ -3081,7 +3154,8 @@ export const cityData = [
       'Goulburn beckons with boundless educational and professional prospects. Immerse yourself in a dynamic learning environment where academic curiosity flourishes and groundbreaking research thrives. Whether you seek transformative educational experiences or groundbreaking research endeavors, Goulburn offers an unparalleled platform for intellectual growth and professional advancement​.',
     ],
     image_url: '/cities/goulburn.jpg',
-    alt: 'Goulburn, Australia: A Vibrant Academic Hub',
+    alt: 'Academic Jobs Goulburn, Australia: A Vibrant Academic Hub',
+    tags: [],
   },
 
   {
@@ -3118,7 +3192,8 @@ export const cityData = [
       'For professionals seeking employment, Orange presents a landscape ripe with research opportunities and industry collaborations. From pioneering research projects to community engagement initiatives, Orange cultivates an ecosystem conducive to professional advancement and innovation.',
     ],
     image_url: '/cities/orange.jpg',
-    alt: 'Orange, Australia: A Vibrant Hub of Education and Innovation',
+    alt: 'Academic Jobs Orange, Australia: A Vibrant Hub of Education and Innovation',
+    tags: [],
   },
 
   {
@@ -3149,7 +3224,8 @@ export const cityData = [
       'Join a vibrant scholarly community committed to innovation and collaboration. Whether you aspire to undergraduate studies or advanced research, Port Macquarie fosters an environment where curiosity thrives and discoveries abound.',
     ],
     image_url: '/cities/port-macquarie.jpg',
-    alt: 'Aerial view of Port Macquarie, Australia',
+    alt: 'Academic Jobs Aerial view of Port Macquarie, Australia',
+    tags: [],
   },
 
   {
@@ -3193,7 +3269,8 @@ export const cityData = [
       "Immerse yourself in Bundaberg's rich heritage and natural splendor, while engaging in cutting-edge research and collaborative learning experiences. Experience the essence of academic excellence amidst a thriving community dedicated to knowledge creation and societal impact.",
     ],
     image_url: '/cities/bundaberg.jpg',
-    alt: 'Bundaberg, Australia - A Hub of Academic Brilliance',
+    alt: 'Academic Jobs Bundaberg, Australia - A Hub of Academic Brilliance',
+    tags: [],
   },
 
   {
@@ -3222,7 +3299,8 @@ export const cityData = [
       "For educators and researchers, Gladstone offers a collaborative environment ripe with possibilities. Engage in groundbreaking research, forge industry partnerships, and contribute to the city's thriving academic community.",
     ],
     image_url: '/cities/gladstone.webp',
-    alt: 'Aerial view of Gladstone, Australia',
+    alt: 'Academic Jobs Aerial view of Gladstone, Australia',
+    tags: [],
   },
 
   {
@@ -3258,7 +3336,8 @@ export const cityData = [
       "Experience the vibrant academic community of Mackay, offering unparalleled educational and personal growth opportunities. Whether you're a student seeking innovative programs or a professional aiming for research and career advancement, Mackay's universities and colleges provide a supportive environment to nurture your aspirations.",
     ],
     image_url: '/cities/mackay.jpg',
-    alt: 'Aerial view of Mackay, Australia',
+    alt: 'Academic Jobs Aerial view of Mackay, Australia',
+    tags: [],
   },
 
   {
@@ -3300,7 +3379,8 @@ export const cityData = [
       'Embark on a transformative academic journey in Rockhampton, where tradition meets innovation and curiosity knows no bounds. Experience a vibrant culture of learning and discovery, supported by world-class facilities and a collaborative community of scholars. Whether you seek to advance your education or pursue groundbreaking research, Rockhampton offers endless opportunities for growth and inspiration.',
     ],
     image_url: '/cities/rockhampton.jpg',
-    alt: 'Panoramic view of Rockhampton, Australia skyline with Fitzroy River',
+    alt: 'Academic Jobs Panoramic view of Rockhampton, Australia skyline with Fitzroy River',
+    tags: [],
   },
 
   {
@@ -3341,7 +3421,8 @@ export const cityData = [
       "Whether you're seeking to expand your knowledge, conduct groundbreaking research, or embark on a rewarding career in academia, Ararat provides the ideal platform to realize your aspirations and make a lasting impact.",
     ],
     image_url: '/cities/ararat.jpg',
-    alt: 'Scenic view of Ararat, Australia',
+    alt: 'Academic Jobs Scenic view of Ararat, Australia',
+    tags: [],
   },
 
   {
@@ -3378,6 +3459,7 @@ export const cityData = [
     ],
     image_url: '/cities/horsham.jpg',
     alt: "A panoramic view of Horsham's cityscape",
+    tags: [],
   },
 
   {
@@ -3415,7 +3497,8 @@ export const cityData = [
       "Experience the thrill of intellectual discovery amidst Stawell's breathtaking landscapes and vibrant community. Join us in unlocking the boundless potential of education and innovation, and together, let's shape a brighter future for generations to come.",
     ],
     image_url: '/cities/stawell.jpg',
-    alt: 'Stawell, Australia - A hub of academic excellence',
+    alt: 'Academic Jobs Stawell, Australia - A hub of academic excellence',
+    tags: [],
   },
 
   {
@@ -3447,7 +3530,8 @@ export const cityData = [
       "Join Churchill's academic community and embark on a journey of discovery and innovation. Whether you're pursuing higher education or seeking professional advancement, Churchill provides the perfect setting to realize your aspirations and make a meaningful impact on the world.",
     ],
     image_url: '/cities/churchill.jpeg',
-    alt: 'Panoramic view of Churchill, Australia',
+    alt: 'Academic Jobs Panoramic view of Churchill, Australia',
+    tags: [],
   },
 
   {
@@ -3484,6 +3568,7 @@ export const cityData = [
     ],
     image_url: '/cities/coffs-harbour.jpg',
     alt: "Scenic view of Coffs Harbour's coastline",
+    tags: [],
   },
 
   {
@@ -3524,7 +3609,8 @@ export const cityData = [
       'For academics, Lismore serves as a fertile ground for research and collaboration, fostering innovation and meaningful scholarship amidst a dynamic community and diverse ecosystems.',
     ],
     image_url: '/cities/lismore.jpg',
-    alt: 'Lismore, Australia - Cityscape overlooking lush greenery and buildings',
+    alt: 'Academic Jobs Lismore, Australia - Cityscape overlooking lush greenery and buildings',
+    tags: [],
   },
 
   {
@@ -3559,7 +3645,8 @@ export const cityData = [
       'Join the vibrant academic community of Tweed Heads and immerse yourself in a culture of innovation and discovery. Whether you seek to expand your horizons or make meaningful contributions to society, Tweed Heads offers the ideal platform to turn aspirations into achievements.',
     ],
     image_url: '/cities/tweed-heads.jpg',
-    alt: 'Tweed Heads, Australia: Where Education Meets Natural Splendor',
+    alt: 'Academic Jobs Tweed Heads, Australia: Where Education Meets Natural Splendor',
+    tags: [],
   },
 
   {
@@ -3586,7 +3673,8 @@ export const cityData = [
     academicList: [],
     promo: [''],
     image_url: '/cities/armidlae.jpg',
-    alt: 'Panoramic view of Armidale city with lush greenery and historic architecture',
+    alt: 'Academic Jobs Panoramic view of Armidale city with lush greenery and historic architecture',
+    tags: [],
   },
 
   {
@@ -3628,7 +3716,8 @@ export const cityData = [
       'Join a community of scholars, visionaries, and changemakers dedicated to shaping a brighter tomorrow. Experience the synergy of intellect and imagination in Toowoomba, where every discovery, every insight, contributes to the collective pursuit of knowledge and human advancement.',
     ],
     image_url: '/cities/toowoomba.jpg',
-    alt: 'Toowoomba cityscape',
+    alt: 'Academic Jobs Toowoomba cityscape',
+    tags: [],
   },
 
   {
@@ -3671,7 +3760,8 @@ export const cityData = [
       "For professionals and researchers seeking fertile grounds to cultivate their ambitions, Springfield stands as a bastion of possibility and promise. With its collaborative ethos, entrepreneurial spirit, and unwavering commitment to progress, Springfield offers an unparalleled platform to harness one's talents and forge a path of enduring impact and significance.",
     ],
     image_url: '/cities/springfield.jpg',
-    alt: 'Springfield, Australia: Aerial View of the City',
+    alt: 'Academic Jobs Springfield, Australia: Aerial View of the City',
+    tags: [],
   },
 
   {
@@ -3703,7 +3793,8 @@ export const cityData = [
       'For educators and researchers, Ipswich offers a fertile ground for collaboration and exploration, where interdisciplinary initiatives flourish, propelling academic inquiry and pushing the boundaries of human knowledge​.',
     ],
     image_url: '/cities/ipswich.jpg',
-    alt: 'Ipswich, Australia - A Nexus of Learning and Innovation',
+    alt: 'Academic Jobs Ipswich, Australia - A Nexus of Learning and Innovation',
+    tags: [],
   },
 
   {
@@ -3734,6 +3825,7 @@ export const cityData = [
     ],
     image_url: '/cities/frankston.jpg',
     alt: "A panoramic view of Frankston's citysca",
+    tags: [],
   },
 
   {
@@ -3774,6 +3866,7 @@ export const cityData = [
     ],
     image_url: '/cities/fremantle.jpg',
     alt: "Fremantle's academic landscape overlooking the Indian Ocean",
+    tags: [],
   },
 
   {
@@ -3816,7 +3909,8 @@ export const cityData = [
       "Experience the synergy of urban amenities and natural beauty while engaging with top-tier academics and cutting-edge research initiatives. Join Gippsland's thriving academic community and contribute to shaping the future of knowledge and innovation.",
     ],
     image_url: '/cities/gippsland.jpg',
-    alt: 'Gippsland Australia - A Melange of Nature and Education',
+    alt: 'Academic Jobs Gippsland Australia - A Melange of Nature and Education',
+    tags: [],
   },
 
   {
@@ -3856,7 +3950,8 @@ export const cityData = [
       'Emerald beckons seekers of wisdom and visionaries of change to its shores, offering a tapestry of learning opportunities and cultural enrichment. With state-of-the-art facilities, innovative research initiatives, and a nurturing academic ecosystem, Emerald empowers individuals to explore, create, and lead in their chosen fields. Whether igniting minds or catalyzing social transformation, Emerald invites you to embark on a transformative journey of discovery and impact.',
     ],
     image_url: '/cities/emerald.jpg',
-    alt: 'A panoramic view of Emerald, Australia, showcasing its lush landscapes and urban charm',
+    alt: 'Academic Jobs A panoramic view of Emerald, Australia, showcasing its lush landscapes and urban charm',
+    tags: [],
   },
 
   {
@@ -3896,7 +3991,8 @@ export const cityData = [
       "Aspiring researchers and educators find ample opportunities for professional growth in Noosa's dynamic academic community. From collaborative research projects to innovative teaching methods, the city nurtures talent and fosters a spirit of inquiry that fuels lifelong learning.",
     ],
     image_url: '/cities/noosa.avif',
-    alt: 'Noosa, Australia: Where Academic Excellence Meets Natural Beauty',
+    alt: 'Academic Jobs Noosa, Australia: Where Academic Excellence Meets Natural Beauty',
+    tags: [],
   },
 
   {
@@ -3938,7 +4034,8 @@ export const cityData = [
       "For those seeking employment, Townsville's universities and colleges provide a supportive and collaborative atmosphere conducive to groundbreaking research and interdisciplinary collaboration.",
     ],
     image_url: '/cities/tonwsvile.jpg',
-    alt: 'Townsville, Australia: A Coastal City with Vibrant Culture and Education',
+    alt: 'Academic Jobs Townsville, Australia: A Coastal City with Vibrant Culture and Education',
+    tags: [],
   },
 
   {
@@ -3981,7 +4078,8 @@ export const cityData = [
       'Discover Cairns, where educational excellence intersects with natural wonder. Immerse yourself in a vibrant academic community, where curiosity thrives and boundaries are transcended. Whether pursuing research or professional growth, Cairns offers boundless opportunities amidst breathtaking landscapes and cultural richness.',
     ],
     image_url: '/cities/cairns.jpg',
-    alt: 'Cairns, Australia: Where Education and Nature Converge',
+    alt: 'Academic Jobs Cairns, Australia: Where Education and Nature Converge',
+    tags: [],
   },
 
   {
@@ -4023,7 +4121,8 @@ export const cityData = [
       'Join a dynamic community of scholars, researchers, and innovators who are shaping the future of education and driving positive change. From state-of-the-art facilities to collaborative research opportunities, Sunshine Coast provides the ideal setting to pursue your academic and professional aspirations.',
     ],
     image_url: '/cities/sunshine-coast.jpg',
-    alt: 'Sunshine Coast skyline with pristine beaches and lush greenery',
+    alt: 'Academic Jobs Sunshine Coast skyline with pristine beaches and lush greenery',
+    tags: [],
   },
 
   {
@@ -4055,7 +4154,8 @@ export const cityData = [
       "For professionals, Shepparton's universities and colleges offer an ideal setting to embark on rewarding careers and engage in groundbreaking research. Join hands with esteemed academics and researchers, and contribute to the global pursuit of knowledge and innovation​.",
     ],
     image_url: '/cities/shepparton.webp',
-    alt: 'Shepparton, Australia: A beacon of academic excellence',
+    alt: 'Academic Jobs Shepparton, Australia: A beacon of academic excellence',
+    tags: [],
   },
 
   {
@@ -4093,7 +4193,8 @@ export const cityData = [
       'Embark on an enriching academic journey in Mildura, where boundless opportunities for learning and growth await. Engage with leading scholars, delve into cutting-edge research, and immerse yourself in a community dedicated to intellectual excellence and innovation. Whether you seek educational enrichment or professional advancement, Mildura offers a vibrant tapestry of academic experiences.',
     ],
     image_url: '/cities/mildura.jpg',
-    alt: 'Mildura, Australia - A Center of Intellectual Exploration',
+    alt: 'Academic Jobs Mildura, Australia - A Center of Intellectual Exploration',
+    tags: [],
   },
 
   {
@@ -4136,7 +4237,8 @@ export const cityData = [
       "For professionals, Geelong's universities and research institutions provide a fertile ground for career advancement. Collaborate with leading experts, engage in cutting-edge research, and contribute to the city's vibrant academic community. Geelong is not just a place to work; it's a destination for meaningful and impactful contributions to your field.",
     ],
     image_url: '/cities/geelong.webp',
-    alt: 'Geelong Cityscape',
+    alt: 'Academic Jobs Geelong Cityscape',
+    tags: [],
   },
 
   {
@@ -4176,7 +4278,8 @@ export const cityData = [
       "Moreover, Launceston's awe-inspiring natural landscapes provide an idyllic backdrop for scholarly exploration and personal enrichment, fostering a holistic learning experience unparalleled in its vibrancy and diversity.",
     ],
     image_url: '/cities/launceston.jpg',
-    alt: 'A breathtaking panorama of Launceston, Australia',
+    alt: 'Academic Jobs A breathtaking panorama of Launceston, Australia',
+    tags: [],
   },
 
   {
@@ -4209,6 +4312,7 @@ export const cityData = [
     ],
     image_url: '/cities/burnie.webp',
     alt: "Burnie Tasmania's coastal charm",
+    tags: [],
   },
 
   {
@@ -4247,7 +4351,8 @@ export const cityData = [
       'Whether you aspire to pursue higher education or seek professional advancement, Wollongong beckons with unparalleled opportunities for academic and personal fulfillment.',
     ],
     image_url: '/cities/wollongong-uni.jpg',
-    alt: 'Wollongong, Australia: Where Education Flourishes',
+    alt: 'Academic Jobs Wollongong, Australia: Where Education Flourishes',
+    tags: [],
   },
   {
     title: 'Discover Darwin: Universities, Notable Figures, and Opportunities',
@@ -4279,7 +4384,8 @@ export const cityData = [
     ],
     image_url:
       'https://www.shutterstock.com/image-photo/scenic-spot-darwin-waterfront-wharf-600nw-648487078.jpg',
-    alt: 'A photo of Darwin, Australia, showcasing the city skyline and waterfront.',
+    alt: 'Academic Jobs A photo of Darwin, Australia, showcasing the city skyline and waterfront.',
+    tags: [],
   },
   {
     title: "Exploring Hobart's Education and Innovation Hub",
@@ -4312,6 +4418,7 @@ export const cityData = [
     image_url:
       'https://www.discovertasmania.com.au/siteassets/places-to-go/hobart-and-south/136474-2.jpg?resize=_tyIA_PHFkTQc0Gn-LZKjh8aWmNhh2enzRbNNG3YH7Fenurt68LB7cJF7wCLj1SR77GEstDZekpr9q8QS4jXhw',
     alt: "A breathtaking view of Hobart's cityscape",
+    tags: [],
   },
   {
     title: 'Montgomery, Alabama Universities and Colleges',
@@ -4319,7 +4426,7 @@ export const cityData = [
     slug: 'montgomery-alabama-universities-colleges',
     city: 'Montgomery',
     region: 'Alabama',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the educational opportunities offered by Montgomery's universities and colleges. Learn about Nobel Laureates associated with the city, notable academics, and reasons to pursue higher education or employment in this vibrant academic community.",
     keywords:
@@ -4345,7 +4452,8 @@ export const cityData = [
     ],
     image_url:
       'https://www.montgomeryadvertiser.com/gcdn/-mm-/0e3716121b058c15a232a8575a74fb8f2521a4e6/c=3-0-2116-1194/local/-/media/2016/08/23/Montgomery/Montgomery/636075507035501696-NEWMGM.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp',
-    alt: 'Montgomery, Alabama skyline',
+    alt: 'Academic Jobs Montgomery, Alabama skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Juneau, Alaska',
@@ -4353,7 +4461,7 @@ export const cityData = [
     slug: 'juneau-alaska-universities-colleges',
     city: 'Juneau',
     region: 'Alaska',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the educational opportunities offered by Juneau's universities and colleges. Learn about notable academics, reasons to attend or work at these institutions, and the city's higher education landscape.",
     keywords:
@@ -4376,7 +4484,8 @@ export const cityData = [
     ],
     image_url:
       'https://media.istockphoto.com/id/1184170868/photo/juneau-downtown-water-traffic.jpg?s=612x612&w=0&k=20&c=QHKKI_t__ml1IebJYATCcr5Uo6U139911VO7KMi05-A=',
-    alt: 'Juneau, Alaska skyline',
+    alt: 'Academic Jobs Juneau, Alaska skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Phoenix, Arizona',
@@ -4384,7 +4493,7 @@ export const cityData = [
     slug: 'phoenix-arizona-universities-colleges',
     city: 'Phoenix',
     region: 'Arizona',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the diverse higher education landscape of Phoenix, Arizona. Learn about universities and colleges, notable academics, reasons to attend or work at these institutions, and the city's strengths in education.",
     keywords:
@@ -4411,7 +4520,8 @@ export const cityData = [
     ],
     image_url:
       'https://skylinespace.nyc3.cdn.digitaloceanspaces.com/media/images/phoenix_01_8651_up.jpg',
-    alt: 'Phoenix, Arizona skyline',
+    alt: 'Academic Jobs Phoenix, Arizona skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Little Rock, Arkansas',
@@ -4419,7 +4529,7 @@ export const cityData = [
     slug: 'little-rock-arkansas-universities-colleges',
     city: 'Little Rock',
     region: 'Arkansas',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the vibrant higher education landscape of Little Rock, Arkansas. Explore the city's universities and colleges, notable academics, and opportunities for academic and professional growth.",
     keywords:
@@ -4446,7 +4556,8 @@ export const cityData = [
     ],
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQ1MWI1LTE2Ny1wbG95LmpwZw.jpg',
-    alt: 'Little Rock, Arkansas skyline',
+    alt: 'Academic Jobs Little Rock, Arkansas skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Denver, Colorado',
@@ -4454,7 +4565,7 @@ export const cityData = [
     slug: 'denver-colorado-universities-colleges',
     city: 'Denver',
     region: 'Colorado',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the dynamic higher education scene in Denver, Colorado. Explore the city's universities and colleges, renowned academics, and opportunities for academic and professional growth.",
     keywords:
@@ -4481,7 +4592,8 @@ export const cityData = [
     ],
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/3/3a/Full_Denver_skyline.jpg',
-    alt: 'Denver, Colorado skyline',
+    alt: 'Academic Jobs Denver, Colorado skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Hartford, Connecticut',
@@ -4489,7 +4601,7 @@ export const cityData = [
     slug: 'hartford-connecticut-universities-colleges',
     city: 'Hartford',
     region: 'Connecticut',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the vibrant higher education landscape in Hartford, Connecticut. Explore the city's diverse universities and colleges, renowned academics, and opportunities for academic and professional growth.",
     keywords:
@@ -4516,7 +4628,8 @@ export const cityData = [
     ],
     image_url:
       'https://live.staticflickr.com/7851/32359133487_d2e289150e_b.jpg',
-    alt: 'Hartford, Connecticut skyline',
+    alt: 'Academic Jobs Hartford, Connecticut skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Dover, Delaware',
@@ -4524,7 +4637,7 @@ export const cityData = [
     slug: 'dover-delaware-universities-colleges',
     city: 'Dover',
     region: 'Delaware',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the diverse higher education landscape in Dover, Delaware. Explore the city's universities and colleges, renowned academics, and opportunities for academic and professional growth.",
     keywords:
@@ -4548,7 +4661,8 @@ export const cityData = [
     ],
     image_url:
       'https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAzL2ZyYmVybGluZXJfYWJlbmRoaW1tZWxfYW5fZGVyLWltYWdlLmpwZw.jpg',
-    alt: 'Dover, Delaware skyline',
+    alt: 'Academic Jobs Dover, Delaware skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Tallahassee, Florida',
@@ -4556,7 +4670,7 @@ export const cityData = [
     slug: 'tallahassee-florida-universities-colleges',
     city: 'Tallahassee',
     region: 'Florida',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the vibrant higher education landscape in Tallahassee, Florida. Explore the city's diverse universities and colleges, renowned academics, and opportunities for academic and professional growth.",
     keywords:
@@ -4580,7 +4694,8 @@ export const cityData = [
     ],
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/a/a8/Tampa_Skyline.jpg',
-    alt: 'Tallahassee, Florida skyline',
+    alt: 'Academic Jobs Tallahassee, Florida skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Atlanta, Georgia',
@@ -4588,7 +4703,7 @@ export const cityData = [
     slug: 'atlanta-georgia-universities-colleges',
     city: 'Atlanta',
     region: 'Georgia',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the vibrant higher education landscape in Atlanta, Georgia. Explore the city's diverse universities and colleges, renowned academics, and opportunities for academic and professional growth.",
     keywords:
@@ -4612,7 +4727,8 @@ export const cityData = [
     ],
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/8/8e/Downtown_Atlanta_skyline%2C_Georgia_Tech.jpg',
-    alt: 'Atlanta, Georgia skyline',
+    alt: 'Academic Jobs Atlanta, Georgia skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Boise, Idaho',
@@ -4620,7 +4736,7 @@ export const cityData = [
     slug: 'boise-idaho-universities-colleges',
     city: 'Boise',
     region: 'Idaho',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the diverse higher education landscape in Boise, Idaho. Explore the city's universities and colleges known for their academic excellence and commitment to student success.",
     keywords:
@@ -4639,7 +4755,8 @@ export const cityData = [
       "Join Boise's higher education community to collaborate with talented faculty, engage in meaningful research, and gain hands-on experience in your field of study. Whether you're pursuing a degree or looking for professional development opportunities, Boise offers the resources and support you need to succeed.",
     ],
     image_url: 'https://live.staticflickr.com/8047/8384643501_be00daac82_b.jpg',
-    alt: 'Boise, Idaho skyline',
+    alt: 'Academic Jobs Boise, Idaho skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Indianapolis, Indiana',
@@ -4647,7 +4764,7 @@ export const cityData = [
     slug: 'indianapolis-indiana-universities-colleges',
     city: 'Indianapolis',
     region: 'Indiana',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the vibrant higher education landscape in Indianapolis, Indiana. Explore the city's renowned universities and colleges known for their diverse programs, cutting-edge research, and commitment to student success.",
     keywords:
@@ -4669,7 +4786,8 @@ export const cityData = [
       "Join Indianapolis' higher education community to collaborate with talented faculty, engage in cutting-edge research, and make a positive impact on the local and global community. Whether you're pursuing a degree or seeking employment opportunities, Indianapolis offers the resources and support you need to succeed.",
     ],
     image_url: 'https://live.staticflickr.com/1146/5155672963_e2b0f4027a_b.jpg',
-    alt: 'Indianapolis, Indiana skyline',
+    alt: 'Academic Jobs Indianapolis, Indiana skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Des Moines, Iowa',
@@ -4677,7 +4795,7 @@ export const cityData = [
     slug: 'des-moines-iowa-universities-colleges',
     city: 'Des Moines',
     region: 'Iowa',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the diverse higher education landscape in Des Moines, Iowa. Explore the city's renowned universities and colleges known for their academic excellence, innovative programs, and commitment to student success.",
     keywords:
@@ -4697,7 +4815,8 @@ export const cityData = [
     ],
     image_url:
       'https://live.staticflickr.com/2816/11921642736_c0edf7831f_b.jpg',
-    alt: 'Des Moines, Iowa skyline',
+    alt: 'Academic Jobs Des Moines, Iowa skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Topeka, Kansas',
@@ -4705,7 +4824,7 @@ export const cityData = [
     slug: 'topeka-kansas-universities-colleges',
     city: 'Topeka',
     region: 'Kansas',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the diverse higher education landscape in Topeka, Kansas. Explore the city's renowned universities and colleges known for their academic excellence, innovative programs, and commitment to student success.",
     keywords:
@@ -4725,7 +4844,8 @@ export const cityData = [
     ],
     image_url:
       'https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL2ZsNDg0NjY4ODc0OTctaW1hZ2Uta3p4dDN1c3EuanBn.jpg',
-    alt: 'Topeka, Kansas skyline',
+    alt: 'Academic Jobs Topeka, Kansas skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Frankfort, Kentucky',
@@ -4733,7 +4853,7 @@ export const cityData = [
     slug: 'frankfort-kentucky-universities-colleges',
     city: 'Frankfort',
     region: 'Kentucky',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the vibrant higher education scene in Frankfort, Kentucky. Explore the city's diverse universities and colleges renowned for their academic excellence, innovative programs, and commitment to student success.",
     keywords:
@@ -4756,7 +4876,8 @@ export const cityData = [
     ],
     image_url:
       'https://media.snl.no/media/59611/standard_compressed_28477525837_9bdfa70aa3_o.jpg',
-    alt: 'Frankfort, Kentucky skyline',
+    alt: 'Academic Jobs Frankfort, Kentucky skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Baton Rouge, Louisiana',
@@ -4764,7 +4885,7 @@ export const cityData = [
     slug: 'baton-rouge-louisiana-universities-colleges',
     city: 'Baton Rouge',
     region: 'Louisiana',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the vibrant higher education scene in Baton Rouge, Louisiana. Explore the city's diverse universities and colleges renowned for their academic excellence, innovative programs, and rich cultural offerings.",
     keywords:
@@ -4788,7 +4909,8 @@ export const cityData = [
     ],
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/1/18/OKC_BatonRougeSkyline.JPG',
-    alt: 'Baton Rouge, Louisiana skyline',
+    alt: 'Academic Jobs Baton Rouge, Louisiana skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Augusta, Maine',
@@ -4796,7 +4918,7 @@ export const cityData = [
     slug: 'augusta-maine-universities-colleges',
     city: 'Augusta',
     region: 'Maine',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the diverse and vibrant higher education landscape in Augusta, Maine. Explore the city's universities and colleges known for their academic excellence, innovative programs, and commitment to student success.",
     keywords:
@@ -4819,7 +4941,8 @@ export const cityData = [
     ],
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvd2s5MDQ4MTI0OS1pbWFnZS1rcDZjM3kxbC5qcGc.jpg',
-    alt: 'Augusta, Maine skyline',
+    alt: 'Academic Jobs Augusta, Maine skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Annapolis, Maryland',
@@ -4827,7 +4950,7 @@ export const cityData = [
     slug: 'annapolis-maryland-universities-colleges',
     city: 'Annapolis',
     region: 'Maryland',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the vibrant higher education scene in Annapolis, Maryland, renowned for its diverse institutions and academic excellence. Explore the city's universities and colleges, offering innovative programs, personalized education, and a supportive learning environment.",
     keywords:
@@ -4847,7 +4970,8 @@ export const cityData = [
     ],
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/d/d2/Southward_View_of_Annapolis_from_the_Navy_Chapel_Dome_%2825326397950%29.jpg',
-    alt: 'Annapolis, Maryland skyline',
+    alt: 'Academic Jobs Annapolis, Maryland skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Lansing, Michigan',
@@ -4855,7 +4979,7 @@ export const cityData = [
     slug: 'lansing-michigan-universities-colleges',
     city: 'Lansing',
     region: 'Michigan',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Explore the dynamic higher education scene in Lansing, Michigan, known for its diverse institutions and innovative programs. Discover why students and professionals choose Lansing for its academic excellence, research opportunities, and vibrant campus life.',
     keywords:
@@ -4875,7 +4999,8 @@ export const cityData = [
     ],
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQxOS0zLTEyMjM5YS5qcGc.jpg',
-    alt: 'Lansing, Michigan skyline',
+    alt: 'Academic Jobs Lansing, Michigan skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Saint Paul, Minnesota',
@@ -4883,7 +5008,7 @@ export const cityData = [
     slug: 'saint-paul-minnesota-universities-colleges',
     city: 'Saint Paul',
     region: 'Minnesota',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Discover the vibrant higher education scene in Saint Paul, Minnesota, featuring diverse institutions known for academic excellence, research innovation, and community engagement. Explore the opportunities for educational growth, personal development, and professional advancement in the heart of the Twin Cities.',
     keywords:
@@ -4903,7 +5028,8 @@ export const cityData = [
     ],
     image_url:
       'https://media.istockphoto.com/id/497232049/photo/st-paul-minnesota-capital-downtown-skyline-with-mississippi-river-boats.jpg?s=612x612&w=0&k=20&c=l1rg6E_-ZaiHeAKZLTCtWYCrw3TRP0Y8F81LYy54wqk=',
-    alt: 'Saint Paul, Minnesota skyline',
+    alt: 'Academic Jobs Saint Paul, Minnesota skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Jackson, Mississippi',
@@ -4911,7 +5037,7 @@ export const cityData = [
     slug: 'jackson-mississippi-universities-colleges',
     city: 'Jackson',
     region: 'Mississippi',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Discover the diverse higher education opportunities in Jackson, Mississippi, offering a blend of academic excellence, cultural enrichment, and career-focused programs. Explore the vibrant campus life, research initiatives, and community engagement opportunities available in the heart of the Magnolia State.',
     keywords:
@@ -4931,7 +5057,8 @@ export const cityData = [
     ],
     image_url:
       'https://media.istockphoto.com/id/592651620/photo/jackson-mississippi-skyline.jpg?s=612x612&w=0&k=20&c=6--cyg2H2VEsGimIghxycqPFapN3S3-KgSnCUog0JJ8=',
-    alt: 'Jackson, Mississippi skyline',
+    alt: 'Academic Jobs Jackson, Mississippi skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Jefferson City, Missouri',
@@ -4939,7 +5066,7 @@ export const cityData = [
     slug: 'jefferson-city-missouri-universities-colleges',
     city: 'Jefferson City',
     region: 'Missouri',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the diverse higher education landscape of Jefferson City, Missouri, offering a range of academic programs, research opportunities, and cultural experiences. Explore the city's universities and colleges known for their academic excellence, community engagement, and commitment to student success.",
     keywords:
@@ -4959,7 +5086,8 @@ export const cityData = [
     ],
     image_url:
       'https://explorestlouis.com/wp-content/uploads/2023/02/Gateway-Arch-National-Park.jpg',
-    alt: 'Jefferson City, Missouri skyline',
+    alt: 'Academic Jobs Jefferson City, Missouri skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Helena, Montana',
@@ -4967,7 +5095,7 @@ export const cityData = [
     slug: 'helena-montana-universities-colleges',
     city: 'Helena',
     region: 'Montana',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the vibrant higher education landscape of Helena, Montana, offering a range of academic programs, research opportunities, and cultural experiences. Explore the city's universities and colleges known for their academic excellence, community engagement, and commitment to student success.",
     keywords:
@@ -4986,7 +5114,8 @@ export const cityData = [
       "Join the vibrant academic community in Helena to explore your passions, expand your horizons, and make meaningful contributions to society. Whether you're interested in pursuing higher education for personal enrichment or career advancement, Helena provides the resources, support, and opportunities you need to achieve your goals and aspirations.",
     ],
     image_url: 'https://live.staticflickr.com/299/19551391324_727d52352c_b.jpg',
-    alt: 'Helena Montana County Building',
+    alt: 'Academic Jobs Helena Montana County Building',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Lincoln, Nebraska',
@@ -4994,7 +5123,7 @@ export const cityData = [
     slug: 'lincoln-nebraska-universities-colleges',
     city: 'Lincoln',
     region: 'Nebraska',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the dynamic higher education landscape of Lincoln, Nebraska, offering a range of academic disciplines, research opportunities, and cultural experiences. Explore the city's universities and colleges known for their academic excellence, innovation, and commitment to student success.",
     keywords:
@@ -5014,7 +5143,8 @@ export const cityData = [
     ],
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/a/a3/Aerial_view_of_downtown_Lincoln%2C_Nebraska%2C_USA_%28looking_southeast%29.jpg',
-    alt: 'Lincoln, Nebraska skyline',
+    alt: 'Academic Jobs Lincoln, Nebraska skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Carson City, Nevada',
@@ -5022,7 +5152,7 @@ export const cityData = [
     slug: 'carson-city-nevada-universities-colleges',
     city: 'Carson City',
     region: 'Nevada',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the dynamic higher education scene in Carson City, Nevada, featuring a range of institutions known for academic excellence, research innovation, and cultural diversity. Explore the city's universities and colleges offering a variety of programs and opportunities for students.",
     keywords:
@@ -5041,7 +5171,8 @@ export const cityData = [
       "Join the dynamic academic community in Carson City to explore your passions, expand your horizons, and prepare for future career opportunities. Whether you're interested in traditional classroom learning or hands-on experiential education, Carson City offers the resources, support, and opportunities you need to succeed.",
     ],
     image_url: 'https://live.staticflickr.com/3243/2850583781_d3092e08ca_b.jpg',
-    alt: 'Carson City, Nevada skyline',
+    alt: 'Academic Jobs Carson City, Nevada skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Concord, New Hampshire',
@@ -5049,7 +5180,7 @@ export const cityData = [
     slug: 'concord-new-hampshire-universities-colleges',
     city: 'Concord',
     region: 'New Hampshire',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the dynamic higher education scene in Concord, New Hampshire, featuring a diverse array of universities and colleges known for academic excellence, innovation, and community engagement. Explore the city's educational institutions offering a wide range of programs and opportunities for students.",
     keywords:
@@ -5069,7 +5200,8 @@ export const cityData = [
     ],
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQyMDctMS00ODNfMS5qcGc.jpg',
-    alt: 'Concord, New Hampshire skyline',
+    alt: 'Academic Jobs Concord, New Hampshire skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Trenton, New Jersey',
@@ -5077,7 +5209,7 @@ export const cityData = [
     slug: 'trenton-new-jersey-universities-colleges',
     city: 'Trenton',
     region: 'New Jersey',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the vibrant higher education landscape in Trenton, New Jersey, characterized by a diverse array of universities and colleges offering innovative programs and opportunities for students. Explore the city's academic institutions known for academic excellence, research, and community engagement.",
     keywords:
@@ -5099,7 +5231,8 @@ export const cityData = [
       "Join the dynamic academic community in Trenton to pursue your passions, expand your knowledge, and prepare for future career opportunities. Whether you're interested in traditional disciplines or emerging fields, Trenton offers the resources, support, and opportunities you need to achieve your educational and professional goals.",
     ],
     image_url: 'https://live.staticflickr.com/3195/2854162078_43bb4b2112_b.jpg',
-    alt: 'Trenton, New Jersey skyline',
+    alt: 'Academic Jobs Trenton, New Jersey skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Santa Fe, New Mexico',
@@ -5107,7 +5240,7 @@ export const cityData = [
     slug: 'santa-fe-new-mexico-universities-colleges',
     city: 'Santa Fe',
     region: 'New Mexico',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Explore the vibrant higher education scene in Santa Fe, New Mexico, home to diverse universities and colleges offering academic excellence, cultural enrichment, and innovative programs. Discover why Santa Fe is an ideal destination for students seeking a unique and enriching educational experience.',
     keywords:
@@ -5130,7 +5263,8 @@ export const cityData = [
     ],
     image_url:
       'https://live.staticflickr.com/2910/33772525535_6936785945_b.jpg',
-    alt: 'Santa Fe, New Mexico skyline',
+    alt: 'Academic Jobs Santa Fe, New Mexico skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Raleigh, North Carolina',
@@ -5138,7 +5272,7 @@ export const cityData = [
     slug: 'raleigh-north-carolina-universities-colleges',
     city: 'Raleigh',
     region: 'North Carolina',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the vibrant higher education landscape in Raleigh, North Carolina, featuring a diverse array of universities and colleges known for academic excellence, innovation, and community engagement. Explore the opportunities available for students in Raleigh's dynamic educational environment.",
     keywords:
@@ -5162,7 +5296,8 @@ export const cityData = [
     ],
     image_url:
       'https://live.staticflickr.com/4808/46107828152_d007d0c5b3_b.jpg',
-    alt: 'Raleigh, North Carolina skyline',
+    alt: 'Academic Jobs Raleigh, North Carolina skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Bismarck, North Dakota',
@@ -5170,7 +5305,7 @@ export const cityData = [
     slug: 'bismarck-north-dakota-universities-colleges',
     city: 'Bismarck',
     region: 'North Dakota',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Discover the dynamic higher education landscape in Bismarck, North Dakota, featuring a range of universities and colleges offering diverse academic programs and opportunities. Explore the educational institutions contributing to the intellectual and economic vitality of the city.',
     keywords:
@@ -5190,7 +5325,8 @@ export const cityData = [
     ],
     image_url:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Mv_pBqqcy_7ulSJ7rdbxVyaD4Zh8UA0n2GjlKbPgM7pz2Zy-gTTMaHE76AokVuYS-bE&usqp=CAU',
-    alt: 'Bismarck, North Dakota skyline',
+    alt: 'Academic Jobs Bismarck, North Dakota skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Columbus, Ohio',
@@ -5198,7 +5334,7 @@ export const cityData = [
     slug: 'columbus-ohio-universities-colleges',
     city: 'Columbus',
     region: 'Ohio',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Discover the diverse higher education landscape in Columbus, Ohio, featuring renowned universities and colleges offering a wide range of academic programs and opportunities. Explore the vibrant educational community contributing to the intellectual and cultural richness of the city.',
     keywords:
@@ -5223,7 +5359,8 @@ export const cityData = [
     ],
     image_url:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ViZuK31U9uqx6THwTfF3Cf0lZIbJEsQuQQu1tlC1Mz5drDByVjPUC1e20EyHt4Qi_qY&usqp=CAU',
-    alt: 'Columbus, Ohio skyline',
+    alt: 'Academic Jobs Columbus, Ohio skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Oklahoma City, Oklahoma',
@@ -5231,7 +5368,7 @@ export const cityData = [
     slug: 'oklahoma-city-oklahoma-universities-colleges',
     city: 'Oklahoma City',
     region: 'Oklahoma',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Discover the diverse higher education landscape in Oklahoma City, Oklahoma, featuring esteemed universities and colleges offering a wide array of academic programs and opportunities. Explore the vibrant educational community contributing to the intellectual and cultural enrichment of the city.',
     keywords:
@@ -5256,7 +5393,8 @@ export const cityData = [
     ],
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/3/35/Oklahoma_City_Skyline_from_I-35_%28cropped%29.jpg',
-    alt: 'Oklahoma City, Oklahoma skyline',
+    alt: 'Academic Jobs Oklahoma City, Oklahoma skyline',
+    tags: [],
   },
   {
     title: 'Universities and Colleges in Salem, Oregon',
@@ -5264,7 +5402,7 @@ export const cityData = [
     slug: 'salem-oregon-universities-colleges',
     city: 'Salem',
     region: 'Oregon',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Discover the diverse higher education landscape in Salem, Oregon, featuring esteemed universities and colleges offering a wide array of academic programs and opportunities. Explore the vibrant educational community contributing to the intellectual and cultural enrichment of the city.',
     keywords:
@@ -5288,7 +5426,8 @@ export const cityData = [
     ],
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/3/32/Portland_Skyline_glow_July_2017_-_Oregon.jpg',
-    alt: 'Salem, Oregon skyline',
+    alt: 'Academic Jobs Salem, Oregon skyline',
+    tags: [],
   },
   {
     title: `Universities in Harrisburg, Pennsylvania: Explore Higher Education Institutions`,
@@ -5296,7 +5435,7 @@ export const cityData = [
     slug: `universities-harrisburg-pennsylvania`,
     city: `Harrisburg`,
     region: 'Pennsylvania',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description: `Explore the diverse higher education landscape in Harrisburg, Pennsylvania. Learn about universities, colleges, and academic opportunities in this vibrant city.`,
     keywords: `Harrisburg universities, colleges, higher education, Pennsylvania, universities in Harrisburg`,
 
@@ -5321,6 +5460,7 @@ export const cityData = [
     ],
     image_url: `https://upload.wikimedia.org/wikipedia/commons/3/30/Harrisburg_as_seen_from_City_Island.jpg`,
     alt: `Harrisburg, Pennsylvania skyline`,
+    tags: [],
   },
   {
     title:
@@ -5329,7 +5469,7 @@ export const cityData = [
     slug: 'universities-providence-rhode-island',
     city: 'Providence',
     region: 'Rhode Island',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Explore the diverse higher education landscape in Providence, Rhode Island. Learn about universities, colleges, and academic opportunities in this vibrant city.',
     keywords:
@@ -5356,7 +5496,8 @@ export const cityData = [
     ],
     image_url:
       'https://live.staticflickr.com/5806/30570117430_5786a38332_b.jpg',
-    alt: 'Providence, Rhode Island skyline',
+    alt: 'Academic Jobs Providence, Rhode Island skyline',
+    tags: [],
   },
   {
     title:
@@ -5365,7 +5506,7 @@ export const cityData = [
     slug: 'universities-columbia-south-carolina',
     city: 'Columbia',
     region: 'South Carolina',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Explore the diverse higher education landscape in Columbia, South Carolina. Learn about universities, colleges, and academic opportunities in this vibrant city.',
     keywords:
@@ -5392,7 +5533,8 @@ export const cityData = [
     ],
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/1/1f/SkylinefromArsenalHill.jpg',
-    alt: 'Columbia, South Carolina skyline',
+    alt: 'Academic Jobs Columbia, South Carolina skyline',
+    tags: [],
   },
   {
     title:
@@ -5401,7 +5543,7 @@ export const cityData = [
     slug: 'universities-pierre-south-dakota',
     city: 'Pierre',
     region: 'South Dakota',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Explore the diverse higher education landscape in Pierre, South Dakota. Learn about universities, colleges, and academic opportunities in this vibrant city.',
     keywords:
@@ -5426,7 +5568,8 @@ export const cityData = [
     ],
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQxOS0zLTA0OTQ1YS5qcGc.jpg',
-    alt: 'Pierre, South Dakota skyline',
+    alt: 'Academic Jobs Pierre, South Dakota skyline',
+    tags: [],
   },
   {
     title:
@@ -5435,7 +5578,7 @@ export const cityData = [
     slug: 'universities-nashville-tennessee',
     city: 'Nashville',
     region: 'Tennessee',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Explore the diverse higher education landscape in Nashville, Tennessee. Learn about universities, colleges, and academic opportunities in this vibrant city.',
     keywords:
@@ -5461,7 +5604,8 @@ export const cityData = [
       "Join Nashville's dynamic academic community and gain the skills, knowledge, and experience you need to excel in today's global marketplace. Whether you're pursuing a degree, furthering your career, or conducting groundbreaking research, Nashville provides endless opportunities for growth and success.",
     ],
     image_url: 'https://live.staticflickr.com/5054/5509324760_5d5238e7ac_b.jpg',
-    alt: 'Nashville, Tennessee skyline',
+    alt: 'Academic Jobs Nashville, Tennessee skyline',
+    tags: [],
   },
   {
     title:
@@ -5470,7 +5614,7 @@ export const cityData = [
     slug: 'universities-salt-lake-city-utah',
     city: 'Salt Lake City',
     region: 'Utah',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Explore the diverse higher education landscape in Salt Lake City, Utah. Learn about universities, colleges, and academic opportunities in this vibrant city.',
     keywords:
@@ -5497,7 +5641,8 @@ export const cityData = [
       "Join Salt Lake City's diverse and welcoming academic community and embark on a journey of discovery and growth. Whether you're pursuing a degree, advancing your career, or conducting groundbreaking research, Salt Lake City provides the resources and support you need to thrive in today's competitive world.",
     ],
     image_url: 'https://live.staticflickr.com/8008/7707261420_9b10631963_b.jpg',
-    alt: 'Salt Lake City, Utah skyline',
+    alt: 'Academic Jobs Salt Lake City, Utah skyline',
+    tags: [],
   },
   {
     title:
@@ -5506,7 +5651,7 @@ export const cityData = [
     slug: 'higher-education-montpelier-vermont',
     city: 'Montpelier',
     region: 'Vermont',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Explore the vibrant higher education scene in Montpelier, Vermont. Learn about the city's universities, colleges, and academic opportunities.",
     keywords:
@@ -5532,7 +5677,8 @@ export const cityData = [
       "Join Montpelier's vibrant academic community and become part of a supportive network of scholars, researchers, and professionals dedicated to making a difference. Whether you're pursuing a degree, advancing your career, or exploring new opportunities, Montpelier offers a welcoming and inspiring environment for personal and intellectual growth.",
     ],
     image_url: 'https://live.staticflickr.com/6117/6254263448_7f0e7f1f6f_b.jpg',
-    alt: 'Montpelier, Vermont skyline',
+    alt: 'Academic Jobs Montpelier, Vermont skyline',
+    tags: [],
   },
   {
     title: 'Education Hub: Universities & Colleges in Richmond, Virginia',
@@ -5540,7 +5686,7 @@ export const cityData = [
     slug: 'education-richmond-virginia',
     city: 'Richmond',
     region: 'Virginia',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Explore the diverse higher education landscape in Richmond, Virginia. Learn about the city's universities, colleges, and academic opportunities.",
     keywords:
@@ -5566,7 +5712,8 @@ export const cityData = [
       "Join Richmond's dynamic academic community and become part of a supportive network of scholars, researchers, and professionals dedicated to making a difference in the world. Whether you're pursuing higher education for personal enrichment or career advancement, Richmond offers a welcoming and inclusive environment for students from all walks of life.",
     ],
     image_url: 'https://live.staticflickr.com/3020/3048513315_9c511334f7_b.jpg',
-    alt: 'Richmond, Virginia skyline',
+    alt: 'Academic Jobs Richmond, Virginia skyline',
+    tags: [],
   },
   {
     title: 'Education Hub: Universities & Colleges in Olympia, Washington',
@@ -5574,7 +5721,7 @@ export const cityData = [
     slug: 'education-olympia-washington',
     city: 'Olympia',
     region: 'Washington',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the diverse higher education opportunities in Olympia, Washington. Learn about the city's universities, colleges, and the unique academic experiences they offer.",
     keywords:
@@ -5597,7 +5744,8 @@ export const cityData = [
       "Join Olympia's diverse community of scholars, researchers, and activists and become part of a movement dedicated to creating positive change in society. Whether you're seeking personal enrichment, career advancement, or social impact, Olympia provides the perfect environment for you to thrive and make a difference.",
     ],
     image_url: 'https://live.staticflickr.com/227/497193646_c64fcd3a9f_b.jpg',
-    alt: 'Olympia, Washington skyline',
+    alt: 'Academic Jobs Olympia, Washington skyline',
+    tags: [],
   },
   {
     title: 'Charleston, West Virginia: Hub of Higher Education',
@@ -5605,7 +5753,7 @@ export const cityData = [
     slug: 'charleston-west-virginia-higher-education',
     city: 'Charleston',
     region: 'West Virginia',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the vibrant academic landscape of Charleston, West Virginia. Explore the city's universities and colleges, renowned for their diverse programs and opportunities for personal and professional growth.",
     keywords:
@@ -5630,7 +5778,8 @@ export const cityData = [
     ],
     image_url:
       'https://live.staticflickr.com/7726/17268752211_f83f04087a_b.jpg',
-    alt: 'Charleston, West Virginia skyline',
+    alt: 'Academic Jobs Charleston, West Virginia skyline',
+    tags: [],
   },
   {
     title: 'Madison, Wisconsin: Thriving Academic Hub',
@@ -5638,7 +5787,7 @@ export const cityData = [
     slug: 'madison-wisconsin-academic-hub',
     city: 'Madison',
     region: 'Wisconsin',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover the vibrant academic scene of Madison, Wisconsin. Explore the city's renowned universities and colleges, renowned for their excellence in education, research, and innovation.",
     keywords:
@@ -5663,7 +5812,8 @@ export const cityData = [
     ],
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/e/ed/Madisonskyline.jpg',
-    alt: 'Madison, Wisconsin skyline',
+    alt: 'Academic Jobs Madison, Wisconsin skyline',
+    tags: [],
   },
   {
     title: 'Cheyenne, Wyoming: Academic Opportunities in the Heart of the West',
@@ -5671,7 +5821,7 @@ export const cityData = [
     slug: 'cheyenne-wyoming-academic-opportunities',
     city: 'Cheyenne',
     region: 'Wyoming',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Explore the educational possibilities in Cheyenne, Wyoming. Learn about the city's universities and colleges, offering diverse programs and opportunities for personal and professional growth.",
     keywords:
@@ -5695,7 +5845,8 @@ export const cityData = [
     ],
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQ1MWI1LTE2Ny1wbG95LmpwZw.jpg',
-    alt: 'Cheyenne, Wyoming skyline',
+    alt: 'Academic Jobs Cheyenne, Wyoming skyline',
+    tags: [],
   },
   {
     title: 'Honolulu, Hawaii: A Hub of Academic Excellence in the Pacific',
@@ -5703,7 +5854,7 @@ export const cityData = [
     slug: 'honolulu-hawaii-academic-excellence',
     city: 'Honolulu',
     region: 'Hawaii',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Discover the educational richness of Honolulu, Hawaii. From world-renowned universities to diverse academic programs, Honolulu offers a dynamic learning environment for students seeking personal and professional growth.',
     keywords:
@@ -5728,14 +5879,15 @@ export const cityData = [
     ],
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/c/c0/Honolulu_Hawaii_View_%2816056359266%29.jpg',
-    alt: 'Honolulu, Hawaii skyline',
+    alt: 'Academic Jobs Honolulu, Hawaii skyline',
+    tags: [],
   },
   {
     title: 'Springfield, USA: A Hub of Learning and Innovation',
     h1: "Exploring Springfield's Educational Landscape",
     slug: 'springfield-usa-education-hub',
     city: 'Springfield',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Discover the educational richness of Springfield, USA. From top-tier universities to specialized colleges, Springfield offers diverse academic opportunities for students seeking personal and professional growth.',
     keywords:
@@ -5761,14 +5913,15 @@ export const cityData = [
     ],
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/4/4e/Street_Scene_with_Capitol_-_Springfield_-_Illinois_-_USA_%2832541552030%29.jpg',
-    alt: 'Springfield, USA skyline',
+    alt: 'Academic Jobs Springfield, USA skyline',
+    tags: [],
   },
   {
     title: 'Sacramento, USA: A Hub of Educational Excellence',
     h1: "Exploring Sacramento's Vibrant Academic Scene",
     slug: 'sacramento-usa-education-hub',
     city: 'Sacramento',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       'Discover the educational vibrancy of Sacramento, USA. From world-class universities to specialized colleges, Sacramento offers diverse academic opportunities for students seeking personal growth and professional success.',
     keywords:
@@ -5794,7 +5947,8 @@ export const cityData = [
     ],
     image_url:
       'https://media.istockphoto.com/id/473594302/photo/sacramento-downtown-skyline-during-autumn.jpg?s=612x612&w=0&k=20&c=xduvxyzKsRZgqfh1Q9LuP46qmK5a0o11Ig_fzvw6p0M=',
-    alt: 'Sacramento, USA skyline',
+    alt: 'Academic Jobs Sacramento, USA skyline',
+    tags: [],
   },
 
   {
@@ -5803,7 +5957,7 @@ export const cityData = [
     slug: 'manchester-academic-nexus',
     city: 'Manchester',
     region: 'North West England',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Delve into Manchester's vibrant academic tapestry, encompassing prestigious universities, groundbreaking research, and illustrious Nobel Laureates. Explore educational prospects, research endeavors, and the city's rich intellectual heritage.",
     keywords:
@@ -5841,7 +5995,8 @@ export const cityData = [
       'For professionals seeking to advance their careers and spearhead groundbreaking research initiatives, Manchester offers boundless opportunities for collaboration, exploration, and impact. Join a dynamic ecosystem of scholarly inquiry and embark on a trajectory of personal and professional fulfillment.',
     ],
     image_url: '/cities/manchester.webp',
-    alt: 'Manchester skyline with university buildings',
+    alt: 'Academic Jobs Manchester skyline with university buildings',
+    tags: [],
   },
 
   {
@@ -5850,7 +6005,7 @@ export const cityData = [
     slug: 'nottingham-academic-excellence',
     city: 'Nottingham',
     region: 'East Midlands',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Delve into Nottingham's academic brilliance, renowned scholars, and vibrant learning environment. Discover the allure of studying and working in Nottingham, a city renowned for its educational diversity and research innovation.",
     keywords:
@@ -5885,7 +6040,8 @@ export const cityData = [
       'Join a community of scholars and innovators dedicated to pushing the boundaries of knowledge and making meaningful contributions to society. Experience the dynamic culture and intellectual vibrancy of Nottingham, where learning transcends boundaries.',
     ],
     image_url: '/cities/nottingham.jpg',
-    alt: 'Panoramic view of Nottingham cityscape showcasing historic landmarks and modern architecture',
+    alt: 'Academic Jobs Panoramic view of Nottingham cityscape showcasing historic landmarks and modern architecture',
+    tags: [],
   },
 
   {
@@ -5894,7 +6050,7 @@ export const cityData = [
     slug: 'glasgow-academic-diversity-excellence',
     city: 'Glasgow',
     region: 'Scotland',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       'Discover the vibrant academic landscape of Glasgow, Scotland. Explore its renowned universities, colleges, and the notable contributions of Nobel Laureates and academics. Uncover educational and career opportunities in this dynamic city.',
     keywords:
@@ -5932,6 +6088,7 @@ export const cityData = [
     ],
     image_url: '/cities/glasgow.jpg',
     alt: "Glasgow's vibrant academic scene",
+    tags: [],
   },
 
   {
@@ -5940,7 +6097,7 @@ export const cityData = [
     slug: 'newcastle-upon-tyne-academic-excellence',
     city: 'Newcastle upon Tyne',
     region: 'Tyne and Wear',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Explore the vibrant academic landscape of Newcastle upon Tyne, renowned for its distinguished universities, groundbreaking research, and intellectual vibrancy. Delve into the city's educational treasures and discover why it's a premier destination for scholars and learners alike.",
     keywords:
@@ -5974,7 +6131,8 @@ export const cityData = [
       "For aspiring researchers and educators, Newcastle offers a fertile ground for exploration and discovery, with access to cutting-edge laboratories, interdisciplinary collaboration, and industry partnerships. Whether you're pursuing higher education or seeking career advancement, Newcastle upon Tyne sets the stage for a bright and promising future.",
     ],
     image_url: '/cities/newcastle-upon-tyne.jpg',
-    alt: 'Newcastle upon Tyne skyline at sunset',
+    alt: 'Academic Jobs Newcastle upon Tyne skyline at sunset',
+    tags: [],
   },
 
   {
@@ -5983,7 +6141,7 @@ export const cityData = [
     slug: 'birmingham-higher-education',
     city: 'Birmingham',
     region: 'West Midlands',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Discover Birmingham's vibrant academic scene, enriched with Nobel laureates, distinguished academics, and diverse educational opportunities. Explore the city's prestigious universities and colleges, and learn why it's a hub for intellectual growth and innovation.",
     keywords:
@@ -6017,7 +6175,8 @@ export const cityData = [
       "Likewise, academics and researchers thrive in Birmingham's collaborative ecosystem, where interdisciplinary dialogue and innovative partnerships fuel groundbreaking discoveries and societal impact. Join Birmingham's academic community and embark on a transformative journey of learning, discovery, and excellence.",
     ],
     image_url: '/cities/birmingham.jpg',
-    alt: 'Birmingham city skyline with vibrant lights',
+    alt: 'Academic Jobs Birmingham city skyline with vibrant lights',
+    tags: [],
   },
 
   {
@@ -6026,7 +6185,7 @@ export const cityData = [
     slug: 'leeds-education',
     city: 'Leeds',
     region: 'West Yorkshire',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Embark on an academic odyssey in Leeds, a vibrant hub of intellectual curiosity and innovation. Discover the city's illustrious universities, pioneering research endeavors, and the profound impact of its scholarly community.",
     keywords:
@@ -6054,7 +6213,8 @@ export const cityData = [
       "Whether you seek personal growth, professional development, or intellectual exploration, Leeds offers a myriad of pathways to success. Join a vibrant community of learners, thinkers, and innovators, and unlock your potential in one of the UK's most dynamic educational hubs.",
     ],
     image_url: '/cities/leeds.jpg',
-    alt: 'Leeds skyline against a colorful sunset',
+    alt: 'Academic Jobs Leeds skyline against a colorful sunset',
+    tags: [],
   },
 
   {
@@ -6063,7 +6223,7 @@ export const cityData = [
     slug: 'bristol-academic-hub',
     city: 'Bristol',
     region: 'South West England',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Discover Bristol's rich academic heritage, Nobel Prize contributions, and notable academics. Explore the diverse educational opportunities and research environments that make Bristol an exceptional destination for both learning and professional growth.",
     keywords:
@@ -6095,7 +6255,8 @@ export const cityData = [
       "For those considering employment, Bristol's institutions offer access to cutting-edge research initiatives, collaborative partnerships, and a vibrant cultural scene, making it an ideal destination for academics, researchers, and professionals alike.",
     ],
     image_url: '/cities/bristol.jpg',
-    alt: 'Clifton Suspension Bridge over the River Avon in Bristol',
+    alt: 'Academic Jobs Clifton Suspension Bridge over the River Avon in Bristol',
+    tags: [],
   },
 
   {
@@ -6104,7 +6265,7 @@ export const cityData = [
     slug: 'brighton-academic-excellence',
     city: 'Brighton',
     region: 'East Sussex',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       'Discover the intellectual heartbeat of Brighton, a coastal city brimming with academic vigor. Explore its prestigious universities, pioneering research, and renowned scholars, shaping the future of knowledge and innovation.',
     keywords:
@@ -6138,7 +6299,8 @@ export const cityData = [
       "Join a community of scholars and visionaries dedicated to pushing the boundaries of knowledge and driving positive change in the world. In Brighton, education isn't just a journey; it's a transformative odyssey toward a brighter, more enlightened future.",
     ],
     image_url: '/cities/brighton.jpg',
-    alt: 'Brighton Academic Excellence',
+    alt: 'Academic Jobs Brighton Academic Excellence',
+    tags: [],
   },
 
   {
@@ -6147,7 +6309,7 @@ export const cityData = [
     slug: 'exploring-aberdeens-educational-landscape',
     city: 'Aberdeen',
     region: 'Scotland',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Explore Aberdeen's rich educational ecosystem, including Nobel laureates, notable academics, and compelling reasons for attending or working in its prestigious universities and colleges.",
     keywords:
@@ -6174,7 +6336,8 @@ export const cityData = [
       'Aberdeen offers unparalleled educational and professional opportunities. Its renowned universities and colleges provide a nurturing environment for personal growth and academic achievement. Whether you seek groundbreaking research or transformative learning experiences, Aberdeen stands as a beacon of excellence in higher education.',
     ],
     image_url: '/cities/aberdeen.jpg',
-    alt: 'Aberdeen city skyline with historic buildings and modern architecture',
+    alt: 'Academic Jobs Aberdeen city skyline with historic buildings and modern architecture',
+    tags: [],
   },
 
   {
@@ -6183,7 +6346,7 @@ export const cityData = [
     slug: 'durham-academic-excellence-and-innovation',
     city: 'Durham',
     region: 'County Durham',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Discover Durham's vibrant academic environment, Nobel laureates, and renowned scholars. Explore compelling reasons for attendance and employment, and delve into the city's educational diversity and strengths.",
     keywords:
@@ -6216,7 +6379,8 @@ export const cityData = [
       "Durham beckons with unparalleled educational and research prospects, enticing scholars and students alike. From its dynamic academic ecosystem to its cutting-edge facilities, Durham cultivates an environment where intellectual curiosity thrives and innovation flourishes. Join us in shaping the future of knowledge and discovery at Durham's venerable institutions.",
     ],
     image_url: '/cities/durham.jpg',
-    alt: 'Durham city skyline with historic architecture and river',
+    alt: 'Academic Jobs Durham city skyline with historic architecture and river',
+    tags: [],
   },
 
   {
@@ -6262,7 +6426,8 @@ export const cityData = [
       "Join a vibrant community dedicated to scholarly excellence and innovation, where the echoes of history harmonize with the symphony of modernity amidst the captivating landscapes of Scotland's ancient heart.",
     ],
     image_url: '/cities/st-andrews.jpg',
-    alt: 'St Andrews, Scotland: A Historic City of Learning',
+    alt: 'Academic Jobs St Andrews, Scotland: A Historic City of Learning',
+    tags: [],
   },
 
   {
@@ -6305,7 +6470,8 @@ export const cityData = [
       'Whether you aspire to pursue higher education or engage in cutting-edge research, Aberystwyth invites you to join its vibrant academic community and embark on a transformative journey of discovery and innovation.',
     ],
     image_url: '/cities/aberystwyth.jpg',
-    alt: 'Aberystwyth Cityscape overlooking the Sea',
+    alt: 'Academic Jobs Aberystwyth Cityscape overlooking the Sea',
+    tags: [],
   },
 
   {
@@ -6314,7 +6480,7 @@ export const cityData = [
     slug: 'discover-coventry-academic-excellence',
     city: 'Coventry',
     region: 'West Midlands',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Explore Coventry's vibrant academic scene, featuring prestigious universities, notable scholars, and groundbreaking research. Uncover the intellectual legacy and professional opportunities in this dynamic city.",
     keywords:
@@ -6350,7 +6516,8 @@ export const cityData = [
       "From innovative research projects to dynamic student experiences, Coventry's academic institutions offer a wealth of opportunities for engagement and enrichment. Join the ranks of scholars and visionaries shaping the future of education and research in this vibrant city.",
     ],
     image_url: '/cities/coventry.jpg',
-    alt: 'Coventry skyline with historic cathedral and modern buildings',
+    alt: 'Academic Jobs Coventry skyline with historic cathedral and modern buildings',
+    tags: [],
   },
 
   {
@@ -6359,7 +6526,7 @@ export const cityData = [
     slug: 'sheffield-academic-landscape',
     city: 'Sheffield',
     region: 'South Yorkshire',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Discover Sheffield's rich academic heritage, Nobel laureates, and renowned academics. Explore the diverse educational opportunities and thriving research environment making Sheffield a premier destination for learning and innovation.",
     keywords:
@@ -6396,6 +6563,7 @@ export const cityData = [
     ],
     image_url: '/cities/sheffield.jpg',
     alt: "Sheffield's vibrant academic scene",
+    tags: [],
   },
 
   {
@@ -6404,7 +6572,7 @@ export const cityData = [
     slug: 'liverpool-academic-excellence',
     city: 'Liverpool',
     region: 'Merseyside',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Explore Liverpool's diverse educational offerings, renowned research institutions, and contributions to global academia. Discover why Liverpool is a top destination for students and professionals alike.",
     keywords:
@@ -6437,7 +6605,8 @@ export const cityData = [
       "For professionals seeking rewarding careers in academia, Liverpool provides a dynamic ecosystem of research, collaboration, and innovation. From early career researchers to seasoned faculty members, Liverpool's academic community thrives on intellectual curiosity and interdisciplinary engagement.",
     ],
     image_url: '/cities/liverpool.jpg',
-    alt: 'Liverpool cityscape overlooking the River Mersey',
+    alt: 'Academic Jobs Liverpool cityscape overlooking the River Mersey',
+    tags: [],
   },
 
   {
@@ -6446,7 +6615,7 @@ export const cityData = [
     slug: 'cardiff-academic-excellence',
     city: 'Cardiff',
     region: 'Wales',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Explore Cardiff's vibrant academic scene, featuring prestigious universities, notable scholars, and innovative research. Discover compelling reasons to pursue education or employment opportunities in this dynamic Welsh city.",
     keywords:
@@ -6478,6 +6647,7 @@ export const cityData = [
     ],
     image_url: '/cities/cardiff.jpg',
     alt: "Panoramic view of Cardiff's academic institutions against a backdrop of lush greenery and historic architecture",
+    tags: [],
   },
 
   {
@@ -6486,7 +6656,7 @@ export const cityData = [
     slug: 'portsmouth-academic-excellence',
     city: 'Portsmouth',
     region: 'Hampshire',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Discover Portsmouth's vibrant academic landscape, featuring prestigious universities and colleges, notable scholars, and promising research initiatives. Uncover opportunities for personal growth and professional advancement in this dynamic educational hub.",
     keywords:
@@ -6516,7 +6686,8 @@ export const cityData = [
       "Embark on a transformative journey of learning and discovery in Portsmouth, where academic excellence intersects with boundless opportunity. Whether you aspire to pursue groundbreaking research, cultivate new skills, or engage with diverse perspectives, Portsmouth's universities and colleges provide an inclusive and supportive environment for personal growth, professional development, and lifelong learning.",
     ],
     image_url: '/cities/portsmouth.jpg',
-    alt: 'Aerial view of Portsmouth showcasing its academic institutions and coastal charm',
+    alt: 'Academic Jobs Aerial view of Portsmouth showcasing its academic institutions and coastal charm',
+    tags: [],
   },
 
   {
@@ -6525,7 +6696,7 @@ export const cityData = [
     slug: 'chester-academic-excellence',
     city: 'Chester',
     region: 'Cheshire',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Discover the rich academic heritage and opportunities for personal and professional growth in Chester's vibrant educational ecosystem.",
     keywords:
@@ -6561,6 +6732,7 @@ export const cityData = [
     ],
     image_url: '/cities/chester.jpg',
     alt: "A panoramic view of Chester's cityscape",
+    tags: [],
   },
 
   {
@@ -6569,7 +6741,7 @@ export const cityData = [
     slug: 'exploring-reading-education-landscape',
     city: 'Reading',
     region: 'Berkshire',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Explore Reading's vibrant academic community, Nobel laureates, and notable academics. Discover compelling reasons to engage with its prestigious institutions, fostering educational and professional growth.",
     keywords:
@@ -6599,6 +6771,7 @@ export const cityData = [
     ],
     image_url: '/cities/reading.jpg',
     alt: "A picturesque view of Reading, UK's academic hub",
+    tags: [],
   },
 
   {
@@ -6607,7 +6780,7 @@ export const cityData = [
     slug: 'exploring-plymouth-academic-landscape',
     city: 'Plymouth',
     region: 'Devon',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Explore Plymouth's vibrant academic scene, showcasing prestigious universities, colleges, and notable scholars. Discover educational opportunities and cultural richness in this dynamic coastal city.",
     keywords:
@@ -6628,7 +6801,8 @@ export const cityData = [
     academicList: [],
     promo: ['', ''],
     image_url: '/cities/plymouth.avif',
-    alt: 'Plymouth Academic Hub Photo',
+    alt: 'Academic Jobs Plymouth Academic Hub Photo',
+    tags: [],
   },
 
   {
@@ -6637,7 +6811,7 @@ export const cityData = [
     slug: 'exploring-lincoln-academic-landscape',
     city: 'Lincoln',
     region: 'Nebraska, Lancaster County',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Discover Lincoln's vibrant academic scene, its distinguished universities, notable Nobel Laureates, and esteemed academics shaping the city's intellectual legacy.",
     keywords:
@@ -6668,6 +6842,7 @@ export const cityData = [
     ],
     image_url: '/cities/lincoln.jpg',
     alt: "A panoramic view of Lincoln's academic landscape",
+    tags: [],
   },
 
   {
@@ -6676,7 +6851,7 @@ export const cityData = [
     slug: 'swansea-beacon-learning-innovation',
     city: 'Swansea',
     region: 'Wales',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Explore the academic vibrancy of Swansea, Wales, renowned for its distinguished universities, prolific scholars, and dynamic research endeavors. Delve into Swansea's educational ethos and its pivotal role in shaping global knowledge and innovation.",
     keywords:
@@ -6707,7 +6882,8 @@ export const cityData = [
       "Immerse yourself in Swansea's scholarly mosaic, where diverse perspectives converge, and innovation thrives. Engage in transformative research endeavors, forge lasting connections, and partake in a vibrant community dedicated to shaping a brighter, more enlightened future.",
     ],
     image_url: '/cities/swansea.jpg',
-    alt: 'Swansea: A Resplendent Haven of Learning and Innovation',
+    alt: 'Academic Jobs Swansea: A Resplendent Haven of Learning and Innovation',
+    tags: [],
   },
 
   {
@@ -6716,7 +6892,7 @@ export const cityData = [
     slug: 'higher-education-exeter',
     city: 'Exeter',
     region: 'Devon',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       'Delve into the academic vibrancy of Exeter, a city known for its prestigious universities, renowned scholars, and rich intellectual heritage. Discover why Exeter is a beacon of educational and research excellence.',
     keywords:
@@ -6743,7 +6919,8 @@ export const cityData = [
       "Embark on a transformative academic journey in Exeter, where educational excellence meets unparalleled research opportunities. Whether you're a student seeking knowledge or a scholar pursuing innovation, Exeter's universities and colleges offer a supportive ecosystem to realize your aspirations​.",
     ],
     image_url: '/cities/exeter.jpg',
-    alt: 'Exeter city skyline with historic buildings and cathedral spires',
+    alt: 'Academic Jobs Exeter city skyline with historic buildings and cathedral spires',
+    tags: [],
   },
 
   {
@@ -6752,7 +6929,7 @@ export const cityData = [
     slug: 'leicester-academic-scene',
     city: 'Leicester',
     region: 'East Midlands',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Discover Leicester's vibrant academic landscape, renowned scholars, and potential for groundbreaking research. Explore the city's educational institutions, their contributions to global knowledge, and opportunities for personal and professional growth.",
     keywords:
@@ -6784,6 +6961,7 @@ export const cityData = [
     ],
     image_url: '/cities/leicester.jpg',
     alt: "Leicester's Academic Landscape",
+    tags: [],
   },
 
   {
@@ -6792,7 +6970,7 @@ export const cityData = [
     slug: 'exploring-wolverhampton-academic-scene',
     city: 'Wolverhampton',
     region: 'West Midlands',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       'Discover the vibrant academic landscape of Wolverhampton, featuring its renowned universities and colleges. Explore educational and research opportunities in this dynamic city.',
     keywords:
@@ -6817,7 +6995,8 @@ export const cityData = [
       "Whether you're seeking to pursue higher education or embark on a research journey, Wolverhampton offers the resources and mentorship necessary to thrive in today's competitive academic landscape.",
     ],
     image_url: '/cities/wolverhampton.jpg',
-    alt: 'Wolverhampton cityscape',
+    alt: 'Academic Jobs Wolverhampton cityscape',
+    tags: [],
   },
 
   {
@@ -6826,7 +7005,7 @@ export const cityData = [
     slug: 'sunderland-beacon-of-knowledge',
     city: 'Sunderland',
     region: 'Tyne and Wear',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Explore Sunderland's thriving academic ecosystem, featuring top-tier universities, groundbreaking research, and a legacy of educational excellence. Delve into the city's diverse higher education landscape, notable academics, and potential for personal and professional growth.",
     keywords:
@@ -6857,7 +7036,8 @@ export const cityData = [
       "Embark on a transformative academic journey in Sunderland, where opportunities for learning, discovery, and growth abound. Whether you're a student seeking a supportive environment to pursue your passions or a professional craving research and career prospects, Sunderland's dynamic higher education landscape promises to enrich your life and expand your horizons.",
     ],
     image_url: '/cities/sunderland.jpg',
-    alt: 'Aerial view of Sunderland cityscape with bridges over River Wear',
+    alt: 'Academic Jobs Aerial view of Sunderland cityscape with bridges over River Wear',
+    tags: [],
   },
 
   {
@@ -6866,7 +7046,7 @@ export const cityData = [
     slug: 'higher-education-chichester',
     city: 'Chichester',
     region: 'West Sussex',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Delve into Chichester's dynamic higher education scene, showcasing a blend of innovation, cultural richness, and academic excellence. Explore the city's contributions to global knowledge and its inviting atmosphere for students and professionals alike.",
     keywords:
@@ -6893,7 +7073,8 @@ export const cityData = [
       'Join a vibrant community of scholars and researchers, where innovation knows no bounds. With access to state-of-the-art facilities and a supportive network of peers and mentors, Chichester offers unparalleled opportunities for academic and professional advancement.',
     ],
     image_url: '/cities/chichester.jpg',
-    alt: 'Chichester Cathedral and city skyline',
+    alt: 'Academic Jobs Chichester Cathedral and city skyline',
+    tags: [],
   },
 
   {
@@ -6931,6 +7112,7 @@ export const cityData = [
     ],
     image_url: `/cities/bangor.jpg`,
     alt: `A scenic view of Bangor, Wales`,
+    tags: [],
   },
 
   {
@@ -6939,7 +7121,7 @@ export const cityData = [
     slug: 'bradford-academic-excellence',
     city: 'Bradford',
     region: 'West Yorkshire',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       'Discover the rich academic heritage of Bradford, its prestigious universities, notable academics, and groundbreaking research. Explore opportunities for education, personal growth, and professional development in this vibrant city.',
     keywords:
@@ -6966,6 +7148,7 @@ export const cityData = [
     ],
     image_url: '/cities/bradford.jpg',
     alt: "A picturesque view of Bradford's cityscape with historic architecture and green spaces",
+    tags: [],
   },
 
   {
@@ -6974,7 +7157,7 @@ export const cityData = [
     slug: `exploring-derby-academic-landscape`,
     city: `Derby`,
     region: 'East Midlands',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description: `Explore Derby's rich academic heritage, from its renowned universities to the pioneering spirit of its educators. Delve into the city's Nobel laureates, vibrant institutions, and compelling opportunities for academic and professional growth.`,
     keywords: `Derby universities, Derby colleges, Nobel laureates Derby, academics Derby, education Derby`,
 
@@ -6999,6 +7182,7 @@ export const cityData = [
     ],
     image_url: `/cities/derby.jpg`,
     alt: `Cityscape of Derby, UK`,
+    tags: [],
   },
 
   {
@@ -7007,7 +7191,7 @@ export const cityData = [
     slug: 'exploring-worcesters-academic-excellence',
     city: 'Worcester',
     region: 'Massachusetts',
-    country: 'United States USA America',
+    country: 'United States (USA)',
     description:
       "Delve into Worcester's thriving academic community, renowned for its prestigious universities, groundbreaking research, and innovative minds. Discover why Worcester is the ideal destination for academic and professional growth.",
     keywords:
@@ -7037,7 +7221,8 @@ export const cityData = [
       'With state-of-the-art facilities, renowned faculty, and a supportive community, Worcester institutions offer unparalleled opportunities for intellectual exploration, personal development, and professional advancement.',
     ],
     image_url: '/cities/worcester.jpg',
-    alt: 'Worcester skyline with cityscape and river',
+    alt: 'Academic Jobs Worcester skyline with cityscape and river',
+    tags: [],
   },
 
   {
@@ -7073,7 +7258,8 @@ export const cityData = [
       'For educators and researchers seeking a stimulating intellectual milieu, Stirling beckons with its state-of-the-art facilities and a vibrant community of thought leaders. Embrace the opportunity to collaborate, innovate, and leave an indelible mark on the global landscape of academia.',
     ],
     image_url: '/cities/stirling.jpg',
-    alt: 'Stirling: Where history meets innovation amidst lush Scottish landscapes',
+    alt: 'Academic Jobs Stirling: Where history meets innovation amidst lush Scottish landscapes',
+    tags: [],
   },
 
   {
@@ -7082,7 +7268,7 @@ export const cityData = [
     slug: 'exploring-bath-academic-excellence',
     city: 'Bath',
     region: 'Somerset',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Embark on a journey through Bath's rich academic legacy and cultural charm. Delve into the vibrant tapestry of universities, colleges, and notable scholars, and discover why Bath stands as a beacon of intellectual inspiration and scholarly pursuit.",
     keywords:
@@ -7115,7 +7301,8 @@ export const cityData = [
       "For professionals seeking to shape the future of their fields, Bath's academic institutions offer unparalleled opportunities for career advancement and research breakthroughs. Join a vibrant community of scholars and visionaries dedicated to pushing the boundaries of knowledge and creativity.",
     ],
     image_url: '/cities/bath.jpg',
-    alt: 'Bath Cityscape - Historic Architecture and Scholarly Pursuits',
+    alt: 'Academic Jobs Bath Cityscape - Historic Architecture and Scholarly Pursuits',
+    tags: [],
   },
 
   {
@@ -7124,7 +7311,7 @@ export const cityData = [
     slug: 'southampton-educational-legacy',
     city: 'Southampton',
     region: 'Hampshire',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Unveil Southampton's educational marvels with its prestigious universities, renowned Nobel Laureates, and visionary academics. Dive into a world of academic vibrancy and innovation in this coastal gem.",
     keywords:
@@ -7153,7 +7340,8 @@ export const cityData = [
       'Embark on an educational odyssey in Southampton, where the past, present, and future converge in a symphony of learning and discovery. Whether delving into groundbreaking research or nurturing the minds of tomorrow, Southampton offers an unrivaled platform for intellectual exploration and professional fulfillment.',
     ],
     image_url: '/cities/southampton.jpg',
-    alt: 'Aerial view of Southampton cityscape',
+    alt: 'Academic Jobs Aerial view of Southampton cityscape',
+    tags: [],
   },
 
   {
@@ -7162,7 +7350,7 @@ export const cityData = [
     slug: `dundee-scotland-academic`,
     city: `Dundee`,
     region: 'Scotland',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description: `Uncover the vibrant academic scene of Dundee, Scotland, home to prestigious universities, groundbreaking research, and a legacy of intellectual excellence. Learn about Nobel laureates, renowned scholars, and the compelling reasons to join this dynamic educational community.`,
     keywords: `Dundee universities, colleges in Dundee, academic excellence Dundee, Nobel laureates Dundee, research opportunities Dundee`,
 
@@ -7185,6 +7373,7 @@ export const cityData = [
     ],
     image_url: `/cities/dundee.jpg`,
     alt: `Aerial view of Dundee, Scotland`,
+    tags: [],
   },
 
   {
@@ -7193,7 +7382,7 @@ export const cityData = [
     slug: 'middlesbrough-academic-excellence',
     city: 'Middlesbrough',
     region: 'North East England',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Delve into Middlesbrough's vibrant academic sphere, where prestigious institutions, pioneering research, and intellectual diversity converge to cultivate a dynamic learning environment. Discover the city's legacy of innovation and scholarly achievement.",
     keywords:
@@ -7225,7 +7414,8 @@ export const cityData = [
       "Whether you aspire to pursue cutting-edge research opportunities or embark on a journey of personal and intellectual growth, Middlesbrough's vibrant educational landscape offers the perfect setting to realize your aspirations and unlock your full potential.",
     ],
     image_url: '/cities/middlesbrough.jpg',
-    alt: 'Middlesbrough skyline overlooking the River Tees',
+    alt: 'Academic Jobs Middlesbrough skyline overlooking the River Tees',
+    tags: [],
   },
 
   {
@@ -7234,7 +7424,7 @@ export const cityData = [
     slug: `buckingham-academic-excellence`,
     city: `Buckingham`,
     region: 'Buckinghamshire',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description: `Explore Buckingham's rich academic heritage, renowned universities, and the pioneering research shaping the future. Discover why students and academics choose Buckingham for unparalleled educational and professional opportunities.`,
     keywords: `Buckingham universities, Buckingham colleges, Nobel Laureates Buckingham, academics Buckingham, research Buckingham`,
 
@@ -7267,6 +7457,7 @@ export const cityData = [
     ],
     image_url: `/cities/buckingham.jpg`,
     alt: `Buckingham cityscape with historic buildings and university campuses`,
+    tags: [],
   },
 
   {
@@ -7305,7 +7496,8 @@ export const cityData = [
       "For professionals seeking employment opportunities, Northampton's higher education institutions provide a dynamic environment ripe with prospects for professional growth. Access to cutting-edge facilities, collaborative research projects, and industry partnerships make working in Northampton a rewarding and fulfilling experience.",
     ],
     image_url: '/cities/northampton.jpg',
-    alt: 'Aerial view of Northampton cityscape with river and bridges',
+    alt: 'Academic Jobs Aerial view of Northampton cityscape with river and bridges',
+    tags: [],
   },
 
   {
@@ -7314,7 +7506,7 @@ export const cityData = [
     slug: 'higher-education-east-london',
     city: 'East London',
     region: 'Greater London',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       'Discover the dynamic landscape of higher education in East London, home to prestigious universities, multicultural campuses, and groundbreaking research. Explore why East London is a top destination for academic and professional growth.',
     keywords:
@@ -7344,7 +7536,8 @@ export const cityData = [
       "Whether you aspire to push the boundaries of knowledge or make a meaningful impact on society, East London's higher education institutions provide the ideal environment to realize your aspirations and thrive in an ever-evolving world.",
     ],
     image_url: '/cities/east-london.jpg',
-    alt: 'Aerial view of East London cityscape',
+    alt: 'Academic Jobs Aerial view of East London cityscape',
+    tags: [],
   },
 
   {
@@ -7353,7 +7546,7 @@ export const cityData = [
     slug: `falmouth-academic-hub`,
     city: `Falmouth`,
     region: 'Cornwall',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description: `Explore Falmouth's vibrant academic ecosystem, from its renowned universities to its stimulating cultural milieu. Delve into the allure of this coastal gem for education and career growth.`,
     keywords: `Falmouth, universities, colleges, academic, Nobel laureates, Cornwall, UK`,
 
@@ -7377,6 +7570,7 @@ export const cityData = [
     ],
     image_url: `/cities/falmouth.jpg`,
     alt: `Falmouth's picturesque coastline overlooking the sea`,
+    tags: [],
   },
 
   {
@@ -7385,7 +7579,7 @@ export const cityData = [
     slug: `unlocking-academic-brilliance-huddersfield`,
     city: `Huddersfield`,
     region: 'West Yorkshire',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description: `Discover the vibrant academic landscape of Huddersfield, featuring prestigious institutions, renowned scholars, and opportunities for intellectual growth and innovation.`,
     keywords: `Huddersfield, higher education, universities, colleges, academics, Nobel Laureates, research`,
 
@@ -7414,6 +7608,7 @@ export const cityData = [
     ],
     image_url: `/cities/huddersfield.jpg`,
     alt: `A panoramic view of Huddersfield's picturesque landscape with historic buildings and lush greenery`,
+    tags: [],
   },
 
   {
@@ -7422,7 +7617,7 @@ export const cityData = [
     slug: 'loughborough-academic-excellence-and-innovation-hub',
     city: 'Loughborough',
     region: 'Leicestershire',
-    country: 'United Kingdom UK',
+    country: 'United Kingdom (UK)',
     description:
       "Discover Loughborough's rich academic heritage and vibrant higher education scene, featuring Nobel Laureates, renowned academics, and unparalleled opportunities for growth and innovation.",
     keywords:
@@ -7448,7 +7643,8 @@ export const cityData = [
       'For academics and researchers, Loughborough offers a stimulating environment for professional development and impactful research collaborations. With access to cutting-edge resources and interdisciplinary initiatives, faculty members thrive in advancing knowledge and addressing global challenges.',
     ],
     image_url: '/cities/loughborough.jpg',
-    alt: 'Loughborough cityscape with university buildings and green spaces',
+    alt: 'Academic Jobs Loughborough cityscape with university buildings and green spaces',
+    tags: [],
   },
 
   {
@@ -7496,7 +7692,8 @@ export const cityData = [
       "For professionals, Auckland's academic institutions serve as incubators of innovation, fostering interdisciplinary collaboration and pioneering research endeavors. Embark on a journey of discovery and professional fulfillment in Auckland's dynamic academic ecosystem.",
     ],
     image_url: '/cities/auckland.avif',
-    alt: 'Auckland skyline reflecting on Waitemata Harbour',
+    alt: 'Academic Jobs Auckland skyline reflecting on Waitemata Harbour',
+    tags: [],
   },
 
   {
@@ -7531,7 +7728,8 @@ export const cityData = [
       "For professionals seeking dynamic career opportunities, Lincoln's universities and colleges provide a fertile ground for research, innovation, and industry collaboration. From agricultural sciences to environmental management, Lincoln offers diverse avenues for career advancement and meaningful contributions to society.",
     ],
     image_url: '/cities/lincoln.png',
-    alt: 'Lincoln, New Zealand: A Center of Academic Excellence and Innovation',
+    alt: 'Academic Jobs Lincoln, New Zealand: A Center of Academic Excellence and Innovation',
+    tags: [],
   },
 
   {
@@ -7564,7 +7762,8 @@ export const cityData = [
       'For professionals, Palmerston North provides a fertile ground for research and career advancement. Collaborate with leading experts, explore cutting-edge technologies, and contribute to groundbreaking discoveries that shape the future of your field.',
     ],
     image_url: '/cities/palmerston-north.jpg',
-    alt: 'Panoramic view of Palmerston North cityscape against a backdrop of rolling hills',
+    alt: 'Academic Jobs Panoramic view of Palmerston North cityscape against a backdrop of rolling hills',
+    tags: [],
   },
 
   {
@@ -7604,7 +7803,8 @@ export const cityData = [
       "Seize the opportunity to traverse uncharted realms of knowledge, engage in spirited discourse, and contribute to humanity's collective wisdom. Join Christchurch's academic fraternity, where every mind finds its canvas, and every dream, its haven.",
     ],
     image_url: '/cities/christchurch.webp',
-    alt: 'Christchurch cityscape by the Avon River',
+    alt: 'Academic Jobs Christchurch cityscape by the Avon River',
+    tags: [],
   },
 
   {
@@ -7641,7 +7841,8 @@ export const cityData = [
       'With state-of-the-art facilities and a supportive ecosystem, Dunedin offers unparalleled opportunities for personal and professional growth, making it an ideal destination for those seeking to embark on a transformative academic journey.',
     ],
     image_url: '/cities/dunedin.jpg',
-    alt: 'Dunedin, New Zealand: Aerial View of the City and Surrounding Landscape',
+    alt: 'Academic Jobs Dunedin, New Zealand: Aerial View of the City and Surrounding Landscape',
+    tags: [],
   },
 
   {
@@ -7674,7 +7875,8 @@ export const cityData = [
       "For professionals, Hamilton presents exciting prospects for career advancement and research collaboration. Access cutting-edge projects, collaborate with esteemed colleagues, and contribute to the city's legacy of academic excellence and innovation.",
     ],
     image_url: '/cities/hamilton.jpg',
-    alt: 'Hamilton, New Zealand - Academic Excellence and Innovation',
+    alt: 'Academic Jobs Hamilton, New Zealand - Academic Excellence and Innovation',
+    tags: [],
   },
 
   {
@@ -7717,6 +7919,7 @@ export const cityData = [
     ],
     image_url: '/cities/wellington.jpg',
     alt: "A panoramic view of Wellington's vibrant cityscape against the backdrop of lush green hills and the sparkling harbor.",
+    tags: [],
   },
 
   {
@@ -7762,7 +7965,8 @@ export const cityData = [
       "Whether you aspire to pursue cutting-edge research, engage in spirited debates with renowned scholars, or simply soak in the city's rich tapestry of culture and history, Geneva offers an unparalleled setting for realizing your academic and professional aspirations.",
     ],
     image_url: '/cities/geneva.webp',
-    alt: 'Aerial view of Geneva, Switzerland',
+    alt: 'Academic Jobs Aerial view of Geneva, Switzerland',
+    tags: [],
   },
 
   {
@@ -7801,6 +8005,7 @@ export const cityData = [
     ],
     image_url: `/cities/lyon.jpg`,
     alt: `Lyon cityscape showcasing historic landmarks and modern architectural marvels`,
+    tags: [],
   },
 
   {
@@ -7845,6 +8050,7 @@ export const cityData = [
     ],
     image_url: '/cities/toulouse.jpg',
     alt: "Toulouse, France: A picturesque view of the city's skyline",
+    tags: [],
   },
 
   {
@@ -7879,6 +8085,7 @@ export const cityData = [
     promo: [],
     image_url: '/cities/bordeaux.jpg',
     alt: "Bordeaux's picturesque cityscape overlooking the Garonne River",
+    tags: [],
   },
 
   {
@@ -7914,6 +8121,7 @@ export const cityData = [
     ],
     image_url: '/cities/marseille.webp',
     alt: "Panoramic view of Marseille's dynamic cityscape and the Mediterranean Sea",
+    tags: [],
   },
 
   {
@@ -7954,7 +8162,8 @@ export const cityData = [
       "For professionals seeking to ignite their careers, Grenoble's vibrant research ecosystem presents a cornucopia of opportunities. Engage with leading-edge research, collaborate with visionary minds, and chart a trajectory of professional fulfillment in the heart of the French Alps.",
     ],
     image_url: '/cities/grenoble.webp',
-    alt: 'Grenoble, France - Where academia meets Alpine allure',
+    alt: 'Academic Jobs Grenoble, France - Where academia meets Alpine allure',
+    tags: [],
   },
 
   {
@@ -8000,7 +8209,8 @@ export const cityData = [
       "Whether you're drawn to pursue higher education or seek to make impactful contributions through research, Nice beckons with its unparalleled blend of academic excellence, coastal charm, and boundless possibilities waiting to be explored.",
     ],
     image_url: '/cities/nice.jpg',
-    alt: 'Nice, France: Coastal cityscape with azure waters and vibrant buildings',
+    alt: 'Academic Jobs Nice, France: Coastal cityscape with azure waters and vibrant buildings',
+    tags: [],
   },
 
   {
@@ -8048,7 +8258,8 @@ export const cityData = [
       'For professionals seeking a stimulating and supportive research environment, Montpellier presents an ideal destination. From access to cutting-edge facilities to collaborative networks and industry partnerships, the city provides a fertile ground for advancing research, driving innovation, and shaping the future of academia.',
     ],
     image_url: '/cities/montpellier.jpg',
-    alt: 'Montpellier, France - A vibrant cityscape with historic architecture and modern amenities',
+    alt: 'Academic Jobs Montpellier, France - A vibrant cityscape with historic architecture and modern amenities',
+    tags: [],
   },
 
   {
@@ -8082,7 +8293,8 @@ export const cityData = [
       'For professionals seeking a dynamic and intellectually stimulating career path, Aix-en-Provence beckons with its vibrant research community, cutting-edge facilities, and collaborative spirit. Join a network of visionary minds, where innovation thrives and ideas flourish, propelling you towards unparalleled success and fulfillment.',
     ],
     image_url: '/cities/aix-en-provence.jpg',
-    alt: 'Aix-en-Provence cityscape with historic buildings and tree-lined streets',
+    alt: 'Academic Jobs Aix-en-Provence cityscape with historic buildings and tree-lined streets',
+    tags: [],
   },
 
   {
@@ -8125,6 +8337,7 @@ export const cityData = [
     ],
     image_url: `/cities/florence.jpg`,
     alt: `Florence, Italy - Renaissance Intellectual Epicenter`,
+    tags: [],
   },
 
   {
@@ -8162,7 +8375,8 @@ export const cityData = [
       "For those seeking employment, Bologna's universities and colleges provide a fertile ground for professional development and research collaboration. Engage with leading scholars and experts in your field, access state-of-the-art facilities, and contribute to groundbreaking research projects. Join a thriving academic community that values creativity, diversity, and excellence, and embark on a fulfilling career path shaped by Bologna's rich heritage and forward-thinking ethos.",
     ],
     image_url: '/cities/bologna.jpg',
-    alt: 'Bologna Italy Educational Hub',
+    alt: 'Academic Jobs Bologna Italy Educational Hub',
+    tags: [],
   },
 
   {
@@ -8205,7 +8419,8 @@ export const cityData = [
       'For academics and researchers, Turin presents a platform for groundbreaking discoveries and collaborative endeavors, with access to state-of-the-art facilities and a vibrant scholarly community. Embrace the spirit of inquiry and innovation in Turin, where intellectual curiosity knows no bounds.',
     ],
     image_url: '/cities/turin.jpg',
-    alt: 'Turin, Italy - A City of Intellectual Pursuits',
+    alt: 'Academic Jobs Turin, Italy - A City of Intellectual Pursuits',
+    tags: [],
   },
 
   {
@@ -8241,7 +8456,8 @@ export const cityData = [
     academicList: [],
     promo: [],
     image_url: '/cities/pisa.jpg',
-    alt: 'Breathtaking aerial view of Pisa, Italy',
+    alt: 'Academic Jobs Breathtaking aerial view of Pisa, Italy',
+    tags: [],
   },
 
   {
@@ -8279,6 +8495,7 @@ export const cityData = [
     ],
     image_url: '/cities/padua.jpg',
     alt: "A captivating view of Padua's historic streets and landmarks",
+    tags: [],
   },
 
   {
@@ -8321,7 +8538,8 @@ export const cityData = [
       "Experience unparalleled personal growth and professional development opportunities amidst the breathtaking backdrop of Venice's iconic canals and historic landmarks. Whether you seek to pursue higher education or advance your career, Venice offers a truly enriching experience.",
     ],
     image_url: '/cities/venice.jpg',
-    alt: 'Venice Italy - City of Canals and Culture',
+    alt: 'Academic Jobs Venice Italy - City of Canals and Culture',
+    tags: [],
   },
 
   {
@@ -8359,6 +8577,7 @@ export const cityData = [
     ],
     image_url: '/cities/genoa.jpg',
     alt: "A panoramic view of Genoa's historic center with colorful buildings and a bustling harbor",
+    tags: [],
   },
 
   {
@@ -8392,7 +8611,8 @@ export const cityData = [
     academicList: [],
     promo: ['', ''],
     image_url: '/cities/salamanca.jpg',
-    alt: 'Historic streets of Salamanca, Spain',
+    alt: 'Academic Jobs Historic streets of Salamanca, Spain',
+    tags: [],
   },
 
   {
@@ -8423,6 +8643,7 @@ export const cityData = [
     promo: [],
     image_url: '/cities/granada.jpg',
     alt: "Granada's picturesque cityscape against a sunset backdrop",
+    tags: [],
   },
 
   {
@@ -8452,7 +8673,8 @@ export const cityData = [
     academicList: [],
     promo: [],
     image_url: '/cities/seville.webp',
-    alt: 'Seville cityscape with historic buildings and river',
+    alt: 'Academic Jobs Seville cityscape with historic buildings and river',
+    tags: [],
   },
 
   {
@@ -8490,7 +8712,8 @@ export const cityData = [
     academicList: [],
     promo: [],
     image_url: '/cities/rome.jpg',
-    alt: 'Rome skyline with ancient ruins and modern buildings',
+    alt: 'Academic Jobs Rome skyline with ancient ruins and modern buildings',
+    tags: [],
   },
 
   {
@@ -8524,7 +8747,8 @@ export const cityData = [
     academicList: [],
     promo: [],
     image_url: '/cities/budapest.jpg',
-    alt: 'Budapest, Hungary - A city of stunning architecture and rich cultural heritage',
+    alt: 'Academic Jobs Budapest, Hungary - A city of stunning architecture and rich cultural heritage',
+    tags: [],
   },
 
   {
@@ -8570,7 +8794,8 @@ export const cityData = [
       'With its rich history, innovative spirit, and diverse student body, Prague invites you to be part of its dynamic academic landscape, where tradition meets innovation and knowledge knows no bounds.',
     ],
     image_url: '/cities/prague.jpg',
-    alt: 'Prague cityscape with historic architecture and river',
+    alt: 'Academic Jobs Prague cityscape with historic architecture and river',
+    tags: [],
   },
 
   {
@@ -8624,6 +8849,7 @@ export const cityData = [
     ],
     image_url: '/cities/warsaw.jpg',
     alt: "Aerial view of Prague and Warsaw's cityscape showcasing their architectural beauty and cultural richness.",
+    tags: [],
   },
 
   {
@@ -8669,7 +8895,8 @@ export const cityData = [
       'Join the vibrant academic community of Athens, Greece, where ancient wisdom meets modern innovation. Experience world-class education, cultural immersion, and groundbreaking research opportunities in a city steeped in history and intellectual excellence.',
     ],
     image_url: '/cities/greece.jpg',
-    alt: 'A panoramic view of Athens, Greece, showcasing ancient ruins juxtaposed with modern architecture.',
+    alt: 'Academic Jobs A panoramic view of Athens, Greece, showcasing ancient ruins juxtaposed with modern architecture.',
+    tags: [],
   },
 
   {
@@ -8717,7 +8944,8 @@ export const cityData = [
       "For professionals, Oslo's dynamic academic environment presents numerous opportunities for career advancement and research collaboration. Whether you're an aspiring scholar or a seasoned academic, Oslo offers a supportive and inspiring community to pursue your academic and professional goals.",
     ],
     image_url: '/cities/oslo.jpg',
-    alt: 'Oslo skyline overlooking the fjord and cityscape',
+    alt: 'Academic Jobs Oslo skyline overlooking the fjord and cityscape',
+    tags: [],
   },
 
   {
@@ -8761,7 +8989,8 @@ export const cityData = [
       "Whether you seek to pursue higher education or advance your career in academia, Moscow provides the resources, mentorship, and collaborative networks necessary to thrive in today's global knowledge economy.",
     ],
     image_url: '/cities/moscow.webp',
-    alt: 'Aerial view of Moscow, Russia',
+    alt: 'Academic Jobs Aerial view of Moscow, Russia',
+    tags: [],
   },
 
   {
@@ -8799,7 +9028,8 @@ export const cityData = [
     academicList: [],
     promo: [],
     image_url: '/cities/bucharest.jpg',
-    alt: 'Bucharest skyline at sunset',
+    alt: 'Academic Jobs Bucharest skyline at sunset',
+    tags: [],
   },
 
   {
@@ -8842,7 +9072,8 @@ export const cityData = [
       "For those seeking employment, Sofia offers a fertile ground for professional advancement, with ample opportunities for collaboration and research in various industries. Whether you're a student or a seasoned academic, Sofia's dynamic ecosystem promises a rewarding experience​.",
     ],
     image_url: '/cities/sofia.jpg',
-    alt: 'Sofia, Bulgaria - A cityscape showcasing academic institutions and landmarks',
+    alt: 'Academic Jobs Sofia, Bulgaria - A cityscape showcasing academic institutions and landmarks',
+    tags: [],
   },
 
   {
@@ -8880,6 +9111,7 @@ export const cityData = [
     ],
     image_url: '/cities/belgrade.jpg',
     alt: "A panoramic view of Belgrade, Serbia's historic and vibrant capital city.",
+    tags: [],
   },
 
   {
@@ -8925,6 +9157,7 @@ export const cityData = [
     ],
     image_url: '/cities/kiev.jpg',
     alt: "A panoramic view of Kiev's skyline with iconic landmarks",
+    tags: [],
   },
 
   {
@@ -8968,7 +9201,8 @@ export const cityData = [
       "Bratislava's universities offer a unique blend of academic excellence, cultural immersion, and research opportunities. Students can immerse themselves in a rich academic environment while exploring the city's vibrant culture and historical landmarks. With a strong emphasis on interdisciplinary collaboration and innovation, Bratislava provides a conducive setting for personal growth and professional development​.",
     ],
     image_url: '/cities/bratislava.jpg',
-    alt: 'View of Bratislava cityscape with the Danube River',
+    alt: 'Academic Jobs View of Bratislava cityscape with the Danube River',
+    tags: [],
   },
 
   {
@@ -9005,7 +9239,8 @@ export const cityData = [
       'Moreover, Vilnius provides ample opportunities for professional development and research collaboration, making it an ideal destination for both education and employment in the heart of the Baltic region.',
     ],
     image_url: '/cities/vilnius.jpg',
-    alt: 'Vilnius skyline at dusk',
+    alt: 'Academic Jobs Vilnius skyline at dusk',
+    tags: [],
   },
 
   {
@@ -9050,6 +9285,7 @@ export const cityData = [
     ],
     image_url: '/cities/riga.jpg',
     alt: "A picturesque view of Riga's old town with colorful buildings and cobblestone streets",
+    tags: [],
   },
 
   {
@@ -9087,7 +9323,8 @@ export const cityData = [
       "For those seeking employment, Tallinn's thriving tech industry, coupled with its status as a UNESCO Creative City of Literature, presents abundant prospects for research collaboration, innovation, and professional advancement. Whether delving into emerging technologies or exploring centuries-old cultural traditions, Tallinn beckons with a myriad of possibilities.",
     ],
     image_url: '/cities/talinn.jpg',
-    alt: 'Tallinn, Estonia: A Blend of Tradition and Innovation',
+    alt: 'Academic Jobs Tallinn, Estonia: A Blend of Tradition and Innovation',
+    tags: [],
   },
 
   {
@@ -9124,7 +9361,8 @@ export const cityData = [
       "For academics and researchers, Ljubljana provides unparalleled opportunities for professional development and collaboration. Whether in the sciences, humanities, or arts, the city's dynamic academic community fosters innovation and excellence, making it an ideal destination for those seeking to make a meaningful impact.",
     ],
     image_url: '/cities/ljubijana.jpg',
-    alt: 'Ljubljana, Slovenia: A cityscape with historic buildings and the Ljubljanica River',
+    alt: 'Academic Jobs Ljubljana, Slovenia: A cityscape with historic buildings and the Ljubljanica River',
+    tags: [],
   },
 
   {
@@ -9165,6 +9403,7 @@ export const cityData = [
     ],
     image_url: `/cities/zagreb.jpg`,
     alt: `Zagreb: A city of spires and academia`,
+    tags: [],
   },
 
   {
@@ -9208,5 +9447,6 @@ export const cityData = [
     ],
     image_url: `/cities/luxembourg.jpg`,
     alt: `Luxembourg City skyline with university buildings and green spaces`,
+    tags: [],
   },
 ];
