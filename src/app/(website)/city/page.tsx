@@ -1,9 +1,12 @@
+// src/app/city/page.tsx
+import { useState, useEffect } from 'react';
 import { cityData } from '@/data/cityData';
 import Link from 'next/link';
 import Image from 'next/image';
 import HeroBanner from '@/components/HeroBanner';
-import { formatDate } from '@/utils/utilityScripts';
+// import { formatDate } from '@/utils/utilityScripts';
 import PaginationControls from '@/components/PaginationControls';
+import SearchFilter from '@/components/searchAndFilter/SearchAndFilter';
 
 // import CityLogo from '@/components/CityLogo';
 
@@ -30,13 +33,24 @@ export default function CityInfo({
   const routePath = `/${routeName}/`;
   const topListCount = 6; // Number of items to show in the top list
 
+  // const [searchTerm, setSearchTerm] = useState('');
+  // const [filteredData, setFilteredData] = useState(cityData);
+
   // Pagination setting
   const page = searchParams['page'] ?? '1';
   const per_page = 12;
   const offset = page === '1' ? topListCount : 0;
-  const start = (Number(page) - 1) * Number(per_page) + offset; // 5, 12, 24 ...
+  // const start = (Number(page) - 1) * Number(per_page) + offset; // 5, 12, 24 ...
+  const start = (Number(page) - 1) * Number(per_page); // 5, 12, 24 ...
   const end = start + Number(per_page);
   const entries = cityData.slice(start, end);
+
+  //   const page = parseInt(searchParams['page'] as string) || 1;
+  // const per_page = 12;
+  // const offset = page === 1 ? 6 : 0; // Adjust if needed
+  // const start = (page - 1) * per_page + offset;
+  // const end = start + per_page;
+  // const paginatedEntries = filteredData.slice(start, end);
 
   return (
     <main className="content-grid">
@@ -61,6 +75,7 @@ export default function CityInfo({
       <h2 className="underline-full mb-8 text-2xl sm:text-3xl">
         Top Cities for Higher Ed Jobs
       </h2>
+
       {cityData ? (
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
@@ -135,18 +150,25 @@ export default function CityInfo({
               </h2>{' '}
             </>
           ) : null}
+          <SearchFilter />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-8">
             {/* {cityData.slice(topListCount).map((post, index) => ( */}
             {entries.map((post, index) => (
               <article
                 key={index}
-                className="card bg-slate-100 shadow-xl image-full items-stretch relative"
+                className={`filter-item card bg-slate-100 shadow-xl image-full items-stretch relative`}
                 style={{
                   backgroundImage: `url(${post.image_url})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                 }}
+                data-city={post.city}
+                // data-categories={post.categories}
+                data-region={post.region}
+                data-country={post.country}
+                data-universities={post.uniList}
+                data-nobel-laureates={post.nobelList}
               >
                 <figure className="aspect-w-16 aspect-h-9">
                   <Link href={routePath + post.slug}>

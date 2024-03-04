@@ -88,20 +88,6 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
   let content;
   const router = useRouter();
 
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   setValue,
-  //   watch,
-  //   formState: { errors },
-  //   setError,
-  // } = useForm();
-  // const mutation = useMutation({
-  //   mutationFn: async (data) => {
-  //     return await BaseApi.post('/sendemail', data);
-  //   },
-  // });
-
   const {
     register,
     handleSubmit,
