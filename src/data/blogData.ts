@@ -120,7 +120,7 @@ export const blogData = [
     alt: `How to Land Your Dream College Job: A Step-by-Step Guide`,
     summary:
       'Follow our step by step guide to learn how to plan, prepare, and apply for the academic position you’ve always wanted.',
-    tags: [],
+    tags: ['Professional Growth, Academic Careers, Academic Jobs'],
     keywords: 'Academic Dream Jobs. dream college job',
     content: `
   <article class="blog-content">
@@ -223,7 +223,7 @@ export const blogData = [
     alt: ``,
     summary:
       "Join Bond University's academic staff and collaborate with some of the top higher education professionals in the world to find your future career.",
-    tags: [],
+    tags: ['Academic Careers, Bond University Jobs, Bond University Careers, Academic Jobs '],
     keywords: 'Seek all Bond University Jobs Here',
     content: `<article class="blog-content">
   <p>Find you next job as a part of the academic team at Bond University, working alongside some of the best.
@@ -321,7 +321,7 @@ export const blogData = [
     alt: ``,
     summary:
       'Working at Harvard University offers a once-in-a-lifetime chance to join a prestigious organisation recognised for its dedication to global impact, groundbreaking research, and academic achievement.',
-    tags: [],
+    tags: ['Harvard University, Academic Jobs, Academic Community, Harvard Careers'],
     keywords: 'Seek all Harvard University Jobs Here ',
     content: `<article class="blog-content">
   <p>Find you next job as a part of the academic team at Harvard University, working alongside some of the best. A
@@ -370,7 +370,7 @@ export const blogData = [
     alt: `Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise`,
     summary:
       'Learn how to find happiness in academia from Scott Galloway, a renowned professor and author of The Algebra of Happiness. ',
-    tags: [],
+    tags: ['Academic Happiness, Personal Growth, Skills Development, Student Success'],
     keywords: 'Academic Happiness. happiness and academics',
     content: `    <div className="blog-content">
     <p className="mb-4">
