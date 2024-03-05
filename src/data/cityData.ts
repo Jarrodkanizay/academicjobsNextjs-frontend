@@ -822,7 +822,7 @@ export const cityData = [
     ],
     image_url: '/cities/montreal.jpg',
     alt: 'Academic Jobs Panoramic view of Montreal, showcasing its educational institutions and vibrant cultural scene',
-    tags: [],
+    tags: ['Concordia University, McGill University, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -870,7 +870,7 @@ export const cityData = [
     ],
     image_url: '/cities/zurich.jpg',
     alt: 'Academic Jobs Aerial view of Zurich, showcasing its educational institutions and beautiful scenery',
-    tags: [],
+    tags: ['University of Zurich, ETH Zurich, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Singapore: A Global Hub for Higher Education and Innovation',
@@ -917,7 +917,7 @@ export const cityData = [
     ],
     image_url: '/cities/singapore.jpg',
     alt: "Scenic view of Singapore's skyline, highlighting its educational institutions and modern architecture",
-    tags: [],
+    tags: ['Singapore Universities, Singapore Polytechnic, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -966,7 +966,7 @@ export const cityData = [
     ],
     image_url: '/cities/amsterdam.png',
     alt: "Iconic Amsterdam canal view, symbolizing the city's blend of historic charm and academic vibrancy",
-    tags: [],
+    tags: ['University of Amsterdam, Netherlands Universities, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Oxford, UK: A Timeless Nexus of Knowledge and Learning',
