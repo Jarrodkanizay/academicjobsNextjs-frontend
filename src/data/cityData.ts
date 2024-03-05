@@ -48,7 +48,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/3194/2578799899_73756bd889_c.jpg',
     alt: 'Academic Jobs Illustration of Boston city skyline',
-    tags: [],
+    tags: ['Boston Colleges, Boston Universities, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -99,7 +99,7 @@ export const cityData = [
     ],
     image_url: '/cities/london-sunset.jpg',
     alt: 'Academic Jobs Panoramic view of London with iconic landmarks',
-    tags: [],
+    tags: ['London Colleges, London Universities, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -149,7 +149,7 @@ export const cityData = [
     image_url:
       'https://wisatamuda.com/wp-content/uploads/2018/05/9.-Tempat-Wisata-Terbaik-di-Melbourne-Yarra-River.jpg',
     alt: 'Academic Jobs Scenic view of a prominent Melbourne university campus',
-    tags: [],
+    tags: ['University of Melbourne, Swinburne Tech, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -198,7 +198,7 @@ export const cityData = [
     ],
     image_url: '/cities/lost-angeles-california.webp',
     alt: 'Academic Jobs Aerial view of Los Angeles with prominent university campuses highlighted',
-    tags: [],
+    tags: ['Nobel Laureates, Higher Education, Caltech, Los Angeles universities'],
   },
   {
     title:
@@ -242,7 +242,7 @@ export const cityData = [
     ],
     image_url: '/cities/brisbane-city-australia.jpg',
     alt: 'Academic Jobs Scenic view of Brisbane skyline with a focus on its educational institutions',
-    tags: [],
+    tags: ['Nobel Laureates, Higher Education, Queensland Universities, Brisbane Universities'],
   },
   {
     title:
@@ -287,7 +287,7 @@ export const cityData = [
     ],
     image_url: '/cities/canberra-australia.jpg',
     alt: 'Academic Jobs Panoramic view of Canberra with a focus on its academic institutions',
-    tags: [],
+    tags: ['Australian Universities, Canberra Universities, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -335,7 +335,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/6/63/Skylines_of_Sydney_CBD_seen_from_North_Sydney%2C_August_2022%2C_02.jpg',
     alt: "Iconic Sydney Opera House and Harbour Bridge, symbolizing the city's blend of cultural heritage and modern innovation",
-    tags: [],
+    tags: ['Sydney Universities, Sydney Research, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -375,7 +375,7 @@ export const cityData = [
     image_url:
       'https://www.illawarramercury.com.au/images/transform/v1/crop/frm/tSTP9QYGHQpn75NApSSxni/1e22faf9-cba0-43d2-8450-53a2ad72a4c2.jpg/r563_0_5709_2829_w1200_h678_fmax.jpg',
     alt: 'Academic Jobs Panoramic view of Wollongong, highlighting the University campus and surrounding landscape',
-    tags: [],
+    tags: ['University of Wollongong, TAFE NSW Wollongong, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -425,7 +425,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/2463/3598596311_84211f2566_b.jpg',
     alt: 'Academic Jobs Iconic view of Paris with prominent educational institutions highlighted',
-    tags: [],
+    tags: ['Paris niversities, Sorbonne University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Exploring Academic Excellence in New York City, USA',
@@ -477,7 +477,7 @@ export const cityData = [
     image_url:
       'https://t3.ftcdn.net/jpg/02/09/70/56/360_F_209705645_b78HGJI1i1mxqLwMYA7z1m3VvCxgxJFO.jpg',
     alt: 'Academic Jobs Skyline of New York City highlighting its educational institutions',
-    tags: [],
+    tags: ['Ivy League Institutions, New York University (NYU), Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -528,7 +528,7 @@ export const cityData = [
     ],
     image_url: '/cities/berlin.jpg',
     alt: 'Academic Jobs Panoramic view of Berlin highlighting its educational and cultural landmarks',
-    tags: [],
+    tags: ['Berlin Universities, Berlin Wall, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Tokyo, Japan: A Global Leader in Higher Education and Research',
@@ -578,7 +578,7 @@ export const cityData = [
     ],
     image_url: '/cities/tokyo.webp',
     alt: 'Academic Jobs Iconic Tokyo skyline with prominent educational institutions highlighted',
-    tags: [],
+    tags: ['University of Tokyo, Tokyo Institute of Technology, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -626,7 +626,7 @@ export const cityData = [
     ],
     image_url: '/cities/perth.webp',
     alt: 'Academic Jobs Panoramic view of Perth, showcasing its educational institutions and natural beauty',
-    tags: [],
+    tags: ['Curtin University, Perth Universities, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Adelaide, Australia: A Center of Academic Excellence and Research',
@@ -672,7 +672,7 @@ export const cityData = [
     ],
     image_url: '/cities/adeliade.jpg',
     alt: "Panoramic view of Adelaide, highlighting its educational institutions against a backdrop of the city's natural beauty",
-    tags: [],
+    tags: ['Torrens University, Flinders University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Chicago, USA: A Leading Academic and Research Hub',
@@ -722,7 +722,7 @@ export const cityData = [
     ],
     image_url: '/cities/chicago.jpg',
     alt: 'Academic Jobs Iconic skyline of Chicago with a focus on its prestigious universities and research institutions',
-    tags: [],
+    tags: ['Chicago Universities, Northwestern University, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -771,7 +771,7 @@ export const cityData = [
     ],
     image_url: '/cities/san-francisico.jpg',
     alt: 'Academic Jobs Scenic view of San Francisco, highlighting its educational institutions and innovative spirit',
-    tags: [],
+    tags: ['San Francisco Universities, Jennifer Aaker, Nobel Laureates, Higher Education'],
   },
   {
     title:
