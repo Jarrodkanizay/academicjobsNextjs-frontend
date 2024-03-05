@@ -12,7 +12,7 @@ export const blogData = [
     alt: `Revolutionizing Recruitment: How Quick Job Post Technology is Changing the Game for Colleges & Universities`,
     summary:
       'HR Professionals, Colleges & Universities are discovering the transformative power of Quick Job Post Technology. Learn how this innovative solution is revolutionizing the way job positions are listed and significantly reducing the time and effort required by HR personnel and recruiters to post a job. ',
-    tags: [],
+    tags: ['HR, Talent Acquisition, Academic Jobs, Higher Ed Tech'],
     keywords:
       'higher ed Quick Job Post, higher education Quick Job Post, Quick Job Post Technology, Academic Quick Job Post Technology, Time Saving Job Posts, Save Time Posting Jobs',
     content: `
@@ -69,7 +69,7 @@ export const blogData = [
     alt: ``,
     summary:
       'Professionals may flourish in a dynamic and cutting-edge higher education setting by pursuing a career in academic roles at Harvard University.',
-    tags: [],
+    tags: ['Harvard University, Academic Positions, Academic Jobs '],
     keywords: 'Start your Career at Harvard University ',
     content: `<article class="blog-content">
   <p><br>A career at Harvard University in academic positions offers an opportunity for professionals to thrive in
