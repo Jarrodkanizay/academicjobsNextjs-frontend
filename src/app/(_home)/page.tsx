@@ -760,24 +760,25 @@ export default async function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/associate-vice-provost-for-teaching-and-learning/82571"
+                    href="/jobs/student-counsellor/93780"
                     className="text-blue-500 font-bold"
                   >
-                    Associate Vice Provost for Teaching and Learning
+                    
+                   Executive Director of System Information Technology
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Oregon State University</Link>
+                    <Link href="">Eastern New Mexico University</Link>
                   </li>
                   <li>
-                    <Link href="">Corvallis, OR, USA</Link>
+                    <Link href="">Portales, NM, USA</Link>
                   </li>
                   <li>
-                    <Link href=""> Feb 20, 2024</Link>
+                    <Link href=""> Mar 29, 2024</Link>
                   </li>
                   <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4931492"
+                    href="https://apptrkr.com/get_redirect.php?id=5064812"
                     className="btn btn-sm btn-aj mt-4"
                   >
                     More Info
@@ -819,24 +820,24 @@ export default async function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/administrative-assistant-ii-student-affairs/84768"
+                    href="/jobs/student-counsellor/93743"
                     className="text-blue-500 font-bold"
                   >
-                    Administrative Assistant II - Student Affairs
+                    Director - UTeach Permian Basin
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Southern Utah University</Link>
+                    <Link href="">University of Texas Permian Basin</Link>
                   </li>
                   <li>
-                    <Link href="">Cedar City, UT, USA</Link>
+                    <Link href="">Odessa, TX, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Mar 1, 2024</Link>
+                    <Link href="">Mar 31, 2024</Link>
                   </li>
                   <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4968144"
+                    href="https://apptrkr.com/get_redirect.php?id=5066019"
                     className="btn btn-sm btn-aj mt-4"
                   >
                     More Info
