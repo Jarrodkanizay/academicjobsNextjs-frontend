@@ -59,10 +59,11 @@ const JobDetailPage = async ({ params, searchParams }) => {
     featured,
     clientType,
     headlineOnly,
-    ranking,
+    
     employer: {
       company_name,
       logo,
+      ranking,
     }
   } = job.data;
   console.log('ranking==============', ranking);
