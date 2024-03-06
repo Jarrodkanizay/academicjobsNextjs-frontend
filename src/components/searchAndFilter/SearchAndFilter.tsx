@@ -17,7 +17,7 @@ const SearchFilterComponent = ({ data, updateFilteredData }) => {
       );
       updateFilteredData(filtered);
     } else {
-      updateFilteredData(data); // No filter applied or reset filter
+      // updateFilteredData(data); // No filter applied or reset filter
     }
   }, [searchTerm, data, updateFilteredData]);
 

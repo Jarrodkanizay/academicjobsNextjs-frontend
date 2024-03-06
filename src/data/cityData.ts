@@ -968,7 +968,7 @@ export const cityData = [
     alt: "Iconic Amsterdam canal view, symbolizing the city's blend of historic charm and academic vibrancy",
     tags: ['University of Amsterdam, Netherlands Universities, Nobel Laureates, Higher Education'],
   },
-  {
+  { 
     title: 'Oxford, UK: A Timeless Nexus of Knowledge and Learning',
     h1: 'Exploring the Academic Heritage of Oxford',
     slug: 'oxford-academic-heritage',
@@ -1013,7 +1013,7 @@ export const cityData = [
     ],
     image_url: '/cities/oxford.webp',
     alt: 'Academic Jobs The iconic Oxford University skyline, embodying centuries of academic pursuit and excellence',
-    tags: [],
+    tags: ['Oxford Universities, Sir Roger Penrose, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Cambridge, UK: An Epicenter of Academic Prestige and Innovation',
@@ -1060,7 +1060,7 @@ export const cityData = [
     ],
     image_url: '/cities/cambridge.webp',
     alt: 'Academic Jobs The serene and scholarly ambiance of Cambridge, highlighting its historic colleges and verdant spaces',
-    tags: [],
+    tags: ['University Of Cambridge, Cambridge Colleges, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Hong Kong SAR: A Fusion of Eastern and Western Academic Traditions',
@@ -1107,7 +1107,7 @@ export const cityData = [
     ],
     image_url: '/cities/hong-kong.jpg',
     alt: 'Academic Jobs The iconic skyline of Hong Kong, symbolizing its status as a global academic and cultural crossroads',
-    tags: [],
+    tags: ['Hong Kong Universities, East Meets West, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Seoul, South Korea: A Hub of Innovation and Academic Excellence',
@@ -1154,7 +1154,7 @@ export const cityData = [
     ],
     image_url: '/cities/seoul.jpg',
     alt: "Panoramic view of Seoul's skyline, showcasing its modernity and the vibrant academic life within the city",
-    tags: [],
+    tags: ['Seoul Universities, Seoul National University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Munich, Germany: A Beacon of Higher Education and Research',
@@ -1201,7 +1201,7 @@ export const cityData = [
     ],
     image_url: '/cities/munich.webp',
     alt: 'Academic Jobs The iconic skyline of Munich, showcasing its historic architecture and modern academic institutions',
-    tags: [],
+    tags: ['Munich Universities, Ludwig Maximilian University of Munich, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Vancouver, Canada: A Diverse and Dynamic Academic Hub',
@@ -1247,7 +1247,7 @@ export const cityData = [
     ],
     image_url: '/cities/vancouver.webp',
     alt: 'Academic Jobs The scenic beauty of Vancouver with its iconic skyline and educational institutions highlighted',
-    tags: [],
+    tags: ['Vancouver Universities, University of British Columbia, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Edinburgh, UK: A Historic Epicenter of Academic Excellence',
@@ -1293,7 +1293,7 @@ export const cityData = [
     ],
     image_url: '/cities/edinburgh.webp',
     alt: 'Academic Jobs The historic cityscape of Edinburgh with its prestigious universities highlighted',
-    tags: [],
+    tags: ['University Of Edinburgh, Heriot-Watt University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Beijing, China: A Global Hub for Academic and Research Excellence',
@@ -1339,7 +1339,7 @@ export const cityData = [
     ],
     image_url: '/cities/beijing.jpg',
     alt: "Panoramic view of Beijing's iconic university campuses, symbolizing the city's academic prestige",
-    tags: [],
+    tags: ['Beijing Universities, Peking University, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -1386,7 +1386,7 @@ export const cityData = [
     ],
     image_url: '/cities/shainhai.jpg',
     alt: "Aerial view of Shanghai's university campuses, showcasing the modern educational infrastructure against the city skyline",
-    tags: [],
+    tags: ['Shanghai Universities, Tongji University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Stockholm, Sweden: A Hub of Academic Excellence and Innovation',
@@ -1432,7 +1432,7 @@ export const cityData = [
     ],
     image_url: '/cities/stockholm.webp',
     alt: "Scenic view of Stockholm with its university buildings prominently displayed, highlighting the city's dedication to academic excellence",
-    tags: [],
+    tags: ['Stockholm Universities, Royal Institute of Technology (KTH), Nobel Laureates, Higher Education'],
   },
   {
     title: 'Copenhagen, Denmark: A Beacon of Academic Excellence',
@@ -1478,7 +1478,7 @@ export const cityData = [
     ],
     image_url: '/cities/copengagen.jpg',
     alt: "Panoramic view of Copenhagen, highlighting the city's educational institutions and serene environment, ideal for academic endeavors",
-    tags: [],
+    tags: ['Copenhagen Universities, Technical University of Denmark, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -1525,7 +1525,7 @@ export const cityData = [
     ],
     image_url: '/cities/dublin.webp',
     alt: "Scenic view of Dublin's historical architecture blending with modern academic institutions, symbolizing the city's rich educational heritage",
-    tags: [],
+    tags: ['University College Dublin, Dublin City University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Austin, USA: A Dynamic Center for Higher Education and Innovation',
@@ -1562,7 +1562,7 @@ export const cityData = [
     ],
     image_url: '/cities/austin.jpg',
     alt: "Panoramic view of Austin showcasing the University of Texas campus amidst the city's bustling cultural and technological hubs",
-    tags: [],
+    tags: ['Austin Universities, University of Texas at Austin, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -1600,7 +1600,7 @@ export const cityData = [
     ],
     image_url: '/cities/madrid.jpg',
     alt: "Panoramic view of Madrid with historic buildings and modern educational institutions, highlighting the city's academic diversity",
-    tags: [],
+    tags: ['Madrid Universities, Universidad Autónoma de Madrid, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Barcelona, Spain: A Beacon of Learning and Innovation',
@@ -1637,7 +1637,7 @@ export const cityData = [
     ],
     image_url: '/cities/barcelona.jpg',
     alt: "The iconic cityscape of Barcelona, highlighting its educational institutions amid historical and modern architecture, symbolizing the city's academic vitality",
-    tags: [],
+    tags: ['Barcelona Universities, Autonomous University of Barcelona, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Exploring the Academic Landscape of Buenos Aires, Argentina',
@@ -1680,7 +1680,7 @@ export const cityData = [
     ],
     image_url: '/cities/aregentina.jpg',
     alt: "The historic and modern educational institutions of Buenos Aires, set against the city's vibrant cultural backdrop, showcasing its role as a leading academic center in Latin America",
-    tags: [],
+    tags: ['University Of Buenos Aires, Universidad Tecnológica Nacional, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Exploring the Educational Excellence of Kuala Lumpur, Malaysia',
@@ -1717,7 +1717,7 @@ export const cityData = [
     ],
     image_url: '/cities/kulala-lumpar.jpg',
     alt: "Aerial view of Kuala Lumpur's skyline, highlighting the city's modern educational institutions amidst its cultural landmarks, symbolizing a blend of tradition and modernity in education",
-    tags: [],
+    tags: ['Malaysia Universities, Universiti Kebangsaan Malaysia, Nobel Laureates, Higher Education'],
   },
   {
     title: "Vienna's Academic Heritage: A Beacon of Knowledge and Culture",
@@ -1754,7 +1754,7 @@ export const cityData = [
     ],
     image_url: '/cities/vienna.webp',
     alt: "The historic architecture of Vienna's universities set against the city's skyline, symbolizing the blend of traditional and modern educational values",
-    tags: [],
+    tags: ['University of Vienna, Medical University of Vienna, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Exploring the Academic Excellence of Brussels, Belgium',
@@ -1791,7 +1791,7 @@ export const cityData = [
     ],
     image_url: '/cities/belgium.jpg',
     alt: "The iconic Atomium structure against Brussels' skyline, symbolizing the city's blend of historical richness and modern academic advancements",
-    tags: [],
+    tags: ['Brussels Universities, Université Libre de Bruxelles (ULB), Nobel Laureates, Higher Education'],
   },
   {
     title: 'Exploring the Academic Landscape of Taipei, Taiwan',
@@ -1828,7 +1828,7 @@ export const cityData = [
     ],
     image_url: '/cities/taipei.jpg',
     alt: "The bustling streets of Taipei with the iconic Taipei 101 in the background, symbolizing the city's modern educational facilities and rich cultural heritage",
-    tags: [],
+    tags: ['Taipei Universities, National Taiwan University (NTU), Nobel Laureates, Higher Education'],
   },
   {
     title: 'Exploring the Academic Excellence of Milan, Italy',
@@ -1865,7 +1865,7 @@ export const cityData = [
     ],
     image_url: '/cities/italy.jpg',
     alt: "A panoramic view of Milan, showcasing its iconic skyline with the Duomo di Milano, symbolizing the city's rich academic heritage and modern educational facilities",
-    tags: [],
+    tags: ['Bocconi University, University Of Milan, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Exploring the Academic Landscape of Helsinki, Finland',
@@ -1902,7 +1902,7 @@ export const cityData = [
     ],
     image_url: '/cities/finland.jpg',
     alt: "A picturesque view of Helsinki, showcasing its harmonious blend of historical architecture and modern educational facilities, set against the backdrop of Finland's natural beauty",
-    tags: [],
+    tags: ['University of Helsinki, Aalto University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Exploring the Educational Excellence of Bangalore, India',
@@ -1939,7 +1939,7 @@ export const cityData = [
     ],
     image_url: '/cities/bangalore.jpg',
     alt: "The bustling cityscape of Bangalore, juxtaposed with its serene educational campuses, illustrates the city's unique blend of technological advancement and academic heritage.",
-    tags: [],
+    tags: ['Christ University, Bangalore University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Exploring the Academic Vibrancy of São Paulo, Brazil',
@@ -1976,7 +1976,7 @@ export const cityData = [
     ],
     image_url: '/cities/sao-paulo.jpg',
     alt: "The sprawling cityscape of São Paulo, with its mix of modern skyscrapers and historic buildings, reflects the city's role as a key player in global education and research.",
-    tags: [],
+    tags: ['São Paulo Universities, Mackenzie Presbyterian University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Discovering the Academic Excellence of Mexico City, Mexico',
@@ -2013,7 +2013,7 @@ export const cityData = [
     ],
     image_url: '/cities/mexico-city.jpg',
     alt: 'Academic Jobs Panoramic view of Mexico City with its blend of modern skyscrapers and historic architecture, symbolizing its status as a leading center for education and research in Latin America.',
-    tags: [],
+    tags: ['Mexico City Universities, Metropolitan Autonomous University (UAM), Nobel Laureates, Higher Education'],
   },
   {
     title: 'Exploring the Academic Landscape of Istanbul, Turkey',
@@ -2050,7 +2050,7 @@ export const cityData = [
     ],
     image_url: '/cities/istanbul.jpg',
     alt: "The stunning skyline of Istanbul, showcasing its unique mix of historical architecture and modern educational institutions, symbolizing the city's role as a key academic and cultural center in Turkey.",
-    tags: [],
+    tags: ['Istanbul Universities, Sabanci University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Exploring the Academic Excellence of Riyadh, Saudi Arabia',
@@ -2087,7 +2087,7 @@ export const cityData = [
     ],
     image_url: '/cities/saudi-arabia.jpg',
     alt: "The skyline of Riyadh at dusk, showcasing the modern architecture of its universities and colleges, reflecting the city's commitment to becoming a global leader in education and research.",
-    tags: [],
+    tags: ['Saudi Arabia Universities, King Saud University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Discover the Academic Landscape of Johannesburg, South Africa',
@@ -2124,7 +2124,7 @@ export const cityData = [
     ],
     image_url: '/cities/johannesburg.jpg',
     alt: "The Johannesburg skyline with prominent university buildings, symbolizing the city's commitment to higher education and its role as a leading academic center in South Africa.",
-    tags: [],
+    tags: ['Johannesburg Universities, University of the Witwatersrand, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Exploring the Academic Excellence of Cairo, Egypt',
@@ -2161,7 +2161,7 @@ export const cityData = [
     ],
     image_url: '/cities/egypt.avif',
     alt: "The iconic Cairo skyline, highlighting the city's historic and modern educational institutions against the backdrop of the River Nile.",
-    tags: [],
+    tags: ['Cairo Universities, American University in Cairo, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -2202,7 +2202,7 @@ export const cityData = [
     ],
     image_url: '/cities/santiago.avif',
     alt: "The panoramic view of Santiago, Chile, showcasing the Andes mountains backdrop and the city's modern educational facilities.",
-    tags: [],
+    tags: ['Chilean Universities, Universidad de Chile, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Lisbon, Portugal: A Beacon of Knowledge and Cultural Heritage',
@@ -2242,7 +2242,7 @@ export const cityData = [
     ],
     image_url: '/cities/portugal.jpg',
     alt: 'Academic Jobs The picturesque landscape of Lisbon with the iconic São Jorge Castle overlooking the city, symbolizing the blend of historical richness and educational excellence.',
-    tags: [],
+    tags: ['Lisbon Universities, NOVA University Lisbon, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -2283,7 +2283,7 @@ export const cityData = [
     ],
     image_url: '/cities/bangkok.jpg',
     alt: "The iconic skyline of Bangkok, reflecting the city's modernity and rich cultural heritage, symbolizing its role as an educational and cultural hub in Southeast Asia.",
-    tags: [],
+    tags: ['Bangkok Universities, Chulalongkorn University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'New Delhi, India: A Nexus of Academic Excellence and Heritage',
@@ -2323,7 +2323,7 @@ export const cityData = [
     ],
     image_url: '/cities/new delhi.jpg',
     alt: "The panoramic view of New Delhi, showcasing its iconic landmarks intertwined with modern academic institutions, symbolizing the city's blend of tradition and educational excellence.",
-    tags: [],
+    tags: ['Indian Universities, University of Delhi, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Montgomery, AL: Academic Excellence and Innovation Hub',
@@ -2358,7 +2358,7 @@ export const cityData = [
     ],
     image_url: '/cities/montgomery.jpg',
     alt: 'Academic Jobs Montgomery Alabama cityscape skyline',
-    tags: [],
+    tags: ['Alabama Universities, Auburn University at Montgomery, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2392,7 +2392,7 @@ export const cityData = [
     image_url:
       'https://www.backyardimage.com/wp-content/uploads/2022/07/2022-06-09-Alaska-Heap-1933-1.jpg',
     alt: 'Academic Jobs Panoramic view of Juneau, Alaska',
-    tags: [],
+    tags: ['Alaska Universities, University of Alaska Southeast, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2430,7 +2430,7 @@ export const cityData = [
     image_url:
       'https://www.appily.com/sites/default/files/styles/max_800/public/images/hero/college/448886_hero.jpg?itok=qWpmRAZU',
     alt: 'Academic Jobs Phoenix skyline with educational institutions',
-    tags: [],
+    tags: ['Arizona Universities, Phoenix College, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2466,7 +2466,7 @@ export const cityData = [
     image_url:
       'https://traveler.marriott.com/wp-content/uploads/2023/11/arkansas-river-and-skyline-sunrise-little-rock-arkanasa-1920x1080.jpg',
     alt: 'Academic Jobs Downtown Little Rock skyline with riverfront',
-    tags: [],
+    tags: ['Little Rock Universities, Philander Smith College, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2506,7 +2506,7 @@ export const cityData = [
     image_url:
       'https://media.istockphoto.com/id/537215344/photo/denver-colorado-skyscrapers-snowy-longs-peak-rocky-mountains-summer.jpg?s=612x612&w=0&k=20&c=L_TTuniB8C7XlKRPGeVvpZFGSGR3cdRmuDJEBX_3L6Q=',
     alt: 'Academic Jobs Denver skyline with Rocky Mountains in the background',
-    tags: [],
+    tags: ['Denver Universities, University of Colorado Denver, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2549,7 +2549,7 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/8555/30134529580_f3cfd23d86_b.jpg',
     alt: 'Academic Jobs Hartford skyline at sunset',
-    tags: [],
+    tags: ['Connecticut Universities, Trinity College, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2587,7 +2587,7 @@ export const cityData = [
     ],
     image_url: 'https://hbcuconnect.com/images/blogs/362231',
     alt: 'Academic Jobs Dover, Delaware: A Hub of Education and Innovation',
-    tags: [],
+    tags: ['Delaware State University, Wesley College, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2625,7 +2625,7 @@ export const cityData = [
     ],
     image_url: `https://www.shutterstock.com/image-photo/tallahassee-florida-usa-downtown-skyline-600nw-359879489.jpg`,
     alt: `Tallahassee skyline with palm trees`,
-    tags: [],
+    tags: ['Tallahassee Universities, Florida State University, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2678,7 +2678,7 @@ export const cityData = [
     image_url:
       'https://media.istockphoto.com/id/1311134607/photo/aerial-shot-over-the-downtown-connector-during-sunset.jpg?s=612x612&w=0&k=20&c=TD5UnQqRHwlmSlovgTK4RhYNr2ui-BoZGjBLCPHKuNI=',
     alt: 'Academic Jobs Atlanta skyline and cityscape',
-    tags: [],
+    tags: ['Atlanta Universities, Emory University, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2722,7 +2722,7 @@ export const cityData = [
     image_url:
       'https://www.techhelp.org/wp-content/uploads/2022/04/downtown-boise-1000-1.jpg',
     alt: 'Academic Jobs Boise, Idaho - A Center of Learning and Innovation',
-    tags: [],
+    tags: ['Idaho Universities, University of Idaho, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2764,7 +2764,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/7142/6784455887_5c2cffdf9c_b.jpg',
     alt: 'Academic Jobs Indianapolis skyline reflecting in water',
-    tags: [],
+    tags: ['Indianapolis Universities, Butler University, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2802,7 +2802,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/5160/8412464698_6bc0f33e7d_b.jpg',
     alt: 'Academic Jobs Des Moines skyline with city lights at dusk',
-    tags: [],
+    tags: ['Drake University, GrandView University, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2844,7 +2844,7 @@ export const cityData = [
     image_url:
       'https://st4.depositphotos.com/1035350/41645/i/450/depositphotos_416459412-stock-photo-toledo-ohio-usa-downtown-skyline.jpg',
     alt: "A captivating view of Topeka's skyline against the backdrop of a vibrant sunset",
-    tags: [],
+    tags: ['Topeka Universities, Washburn University, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2881,7 +2881,7 @@ export const cityData = [
     ],
     image_url: '/cities/gold-coast.jpg',
     alt: "A picturesque view of Gold Coast's skyline and coastline",
-    tags: [],
+    tags: ['GoldCoast Universities, Bond University, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2911,7 +2911,7 @@ export const cityData = [
     ],
     image_url: '/cities/wagga-wagga.jpg',
     alt: 'Academic Jobs Panoramic view of Wagga Wagga, Australia, showcasing its picturesque landscape and urban charm',
-    tags: [],
+    tags: ['Charles Sturt University, TAFE NSW - Riverina Institute, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2953,7 +2953,7 @@ export const cityData = [
     ],
     image_url: '/cities/bathurst.jpg',
     alt: 'Academic Jobs Bathurst, Australia - A Thriving Hub of Education and Innovation',
-    tags: [],
+    tags: ['Charles Sturt University, TAFE NSW - Western Institute (Bathurst Campus), Nobel Laureates, Higher Education'],
   },
 
   {
@@ -2993,7 +2993,7 @@ export const cityData = [
     ],
     image_url: '/cities/ballarat.jpg',
     alt: "A panoramic view of Ballarat's historic precinct showcasing its architectural heritage and natural beauty",
-    tags: [],
+    tags: ['Federation University Australia, Australian Catholic University (Ballarat Campus), Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3034,7 +3034,7 @@ export const cityData = [
     ],
     image_url: '/cities/bendigo.avif',
     alt: 'Academic Jobs Bendigo skyline showcasing its historic architecture and lush greenery',
-    tags: [],
+    tags: ['Bendigo Universities, La Trobe University Bendigo, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3073,7 +3073,7 @@ export const cityData = [
     ],
     image_url: '/cities/wodonga.jpg',
     alt: 'Academic Jobs Wodonga, Australia - A Vibrant Academic Hub',
-    tags: [],
+    tags: ['Wodonga Institute of TAFE, La Trobe University, Albury-Wodonga Campus, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3114,7 +3114,7 @@ export const cityData = [
     ],
     image_url: `/cities/dubbo.jpg`,
     alt: `Dubbo, Australia - A City of Academic Excellence`,
-    tags: [],
+    tags: ['University Of Sydney, Charles Sturt University - Dubbo Campus, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3155,7 +3155,7 @@ export const cityData = [
     ],
     image_url: '/cities/goulburn.jpg',
     alt: 'Academic Jobs Goulburn, Australia: A Vibrant Academic Hub',
-    tags: [],
+    tags: ['Goulburn Universities, Southern Cross University Goulburn Campus, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3193,7 +3193,7 @@ export const cityData = [
     ],
     image_url: '/cities/orange.jpg',
     alt: 'Academic Jobs Orange, Australia: A Vibrant Hub of Education and Innovation',
-    tags: [],
+    tags: ['CharlesSturt University, Orange International College, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3225,7 +3225,7 @@ export const cityData = [
     ],
     image_url: '/cities/port-macquarie.jpg',
     alt: 'Academic Jobs Aerial view of Port Macquarie, Australia',
-    tags: [],
+    tags: ['Charles Sturt University, TAFE NSW - Port Macquarie Campus, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3270,7 +3270,7 @@ export const cityData = [
     ],
     image_url: '/cities/bundaberg.jpg',
     alt: 'Academic Jobs Bundaberg, Australia - A Hub of Academic Brilliance',
-    tags: [],
+    tags: ['CQ University Bundaberg, University of Southern Queensland (USQ), Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3300,7 +3300,7 @@ export const cityData = [
     ],
     image_url: '/cities/gladstone.webp',
     alt: 'Academic Jobs Aerial view of Gladstone, Australia',
-    tags: [],
+    tags: ['CQUniversity Gladstone, TAFE Queensland Gladstone, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3337,7 +3337,7 @@ export const cityData = [
     ],
     image_url: '/cities/mackay.jpg',
     alt: 'Academic Jobs Aerial view of Mackay, Australia',
-    tags: [],
+    tags: ['CQUniversity Mackay, James Cook University, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3380,7 +3380,7 @@ export const cityData = [
     ],
     image_url: '/cities/rockhampton.jpg',
     alt: 'Academic Jobs Panoramic view of Rockhampton, Australia skyline with Fitzroy River',
-    tags: [],
+    tags: ['CQUniversity, Australian Agricultural College Corporation, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3422,7 +3422,7 @@ export const cityData = [
     ],
     image_url: '/cities/ararat.jpg',
     alt: 'Academic Jobs Scenic view of Ararat, Australia',
-    tags: [],
+    tags: ['Federation University Australia, Victorian University - Ararat Campus, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3459,7 +3459,7 @@ export const cityData = [
     ],
     image_url: '/cities/horsham.jpg',
     alt: "A panoramic view of Horsham's cityscape",
-    tags: [],
+    tags: ['Federation University Australia - Horsham Campus, SuniTAFE - Horsham Campus, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3498,7 +3498,7 @@ export const cityData = [
     ],
     image_url: '/cities/stawell.jpg',
     alt: 'Academic Jobs Stawell, Australia - A hub of academic excellence',
-    tags: [],
+    tags: ['Federation University Australia - Wimmera Campus, Stawell Campus, East Grampians Health Service, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3531,7 +3531,7 @@ export const cityData = [
     ],
     image_url: '/cities/churchill.jpeg',
     alt: 'Academic Jobs Panoramic view of Churchill, Australia',
-    tags: [],
+    tags: ['Federation University Australia - Gippsland Campus, Gippsland Institute of TAFE, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3568,7 +3568,7 @@ export const cityData = [
     ],
     image_url: '/cities/coffs-harbour.jpg',
     alt: "Scenic view of Coffs Harbour's coastline",
-    tags: [],
+    tags: ['Southern Cross University - Coffs Harbour Campus, TAFE NSW - Coffs Harbour Education Campus, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3610,7 +3610,7 @@ export const cityData = [
     ],
     image_url: '/cities/lismore.jpg',
     alt: 'Academic Jobs Lismore, Australia - Cityscape overlooking lush greenery and buildings',
-    tags: [],
+    tags: ['Southern Cross University, Nimbins College of Holistic Education and Training,  Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3646,7 +3646,7 @@ export const cityData = [
     ],
     image_url: '/cities/tweed-heads.jpg',
     alt: 'Academic Jobs Tweed Heads, Australia: Where Education Meets Natural Splendor',
-    tags: [],
+    tags: ['Southern Cross University, TAFE NSW - North Coast Institute, Tweed Heads Campus,  Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3674,7 +3674,7 @@ export const cityData = [
     promo: [''],
     image_url: '/cities/armidlae.jpg',
     alt: 'Academic Jobs Panoramic view of Armidale city with lush greenery and historic architecture',
-    tags: [],
+    tags: ['University of New England, Armidale College of TAFE, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3717,7 +3717,7 @@ export const cityData = [
     ],
     image_url: '/cities/toowoomba.jpg',
     alt: 'Academic Jobs Toowoomba cityscape',
-    tags: [],
+    tags: ['University of Southern Queensland (USQ), Southern Queensland Institute of TAFE, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3761,7 +3761,7 @@ export const cityData = [
     ],
     image_url: '/cities/springfield.jpg',
     alt: 'Academic Jobs Springfield, Australia: Aerial View of the City',
-    tags: [],
+    tags: ['University of Southern Queensland (USQ), Springfield City Group of Colleges, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3794,7 +3794,7 @@ export const cityData = [
     ],
     image_url: '/cities/ipswich.jpg',
     alt: 'Academic Jobs Ipswich, Australia - A Nexus of Learning and Innovation',
-    tags: [],
+    tags: ['University of Southern Queensland (USQ), TAFE Queensland - Ipswich Campus, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3825,7 +3825,7 @@ export const cityData = [
     ],
     image_url: '/cities/frankston.jpg',
     alt: "A panoramic view of Frankston's citysca",
-    tags: [],
+    tags: ['Chisholm Institute, Monash University,  Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3866,7 +3866,7 @@ export const cityData = [
     ],
     image_url: '/cities/fremantle.jpg',
     alt: "Fremantle's academic landscape overlooking the Indian Ocean",
-    tags: [],
+    tags: ['University of Notre Dame Australia, South Metropolitan TAFE - Fremantle Campus, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3910,7 +3910,7 @@ export const cityData = [
     ],
     image_url: '/cities/gippsland.jpg',
     alt: 'Academic Jobs Gippsland Australia - A Melange of Nature and Education',
-    tags: [],
+    tags: ['Federation University Australia - Gippsland Campus, Monash University - Gippsland Campus, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3951,7 +3951,7 @@ export const cityData = [
     ],
     image_url: '/cities/emerald.jpg',
     alt: 'Academic Jobs A panoramic view of Emerald, Australia, showcasing its lush landscapes and urban charm',
-    tags: [],
+    tags: ['Central Queensland University, Emerald Campus of TAFE Queensland, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -3992,7 +3992,7 @@ export const cityData = [
     ],
     image_url: '/cities/noosa.avif',
     alt: 'Academic Jobs Noosa, Australia: Where Academic Excellence Meets Natural Beauty',
-    tags: [],
+    tags: ['University of the Sunshine Coast - Noosa Campus, Noosa Christian College, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -4035,7 +4035,7 @@ export const cityData = [
     ],
     image_url: '/cities/tonwsvile.jpg',
     alt: 'Academic Jobs Townsville, Australia: A Coastal City with Vibrant Culture and Education',
-    tags: [],
+    tags: ['James Cook University, Central Queensland University, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -4079,7 +4079,7 @@ export const cityData = [
     ],
     image_url: '/cities/cairns.jpg',
     alt: 'Academic Jobs Cairns, Australia: Where Education and Nature Converge',
-    tags: [],
+    tags: ['James Cook University, Barrier Reef Institute of TAFE, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -4122,7 +4122,7 @@ export const cityData = [
     ],
     image_url: '/cities/sunshine-coast.jpg',
     alt: 'Academic Jobs Sunshine Coast skyline with pristine beaches and lush greenery',
-    tags: [],
+    tags: ['University of the Sunshine Coast (USC), Sunshine Coast Health Institute (SCHI), Nobel Laureates, Higher Education'],
   },
 
   {
@@ -4155,7 +4155,7 @@ export const cityData = [
     ],
     image_url: '/cities/shepparton.webp',
     alt: 'Academic Jobs Shepparton, Australia: A beacon of academic excellence',
-    tags: [],
+    tags: ['La Trobe University - Shepparton Campus, Goulburn Ovens Institute of TAFE, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -4194,7 +4194,7 @@ export const cityData = [
     ],
     image_url: '/cities/mildura.jpg',
     alt: 'Academic Jobs Mildura, Australia - A Center of Intellectual Exploration',
-    tags: [],
+    tags: ['La Trobe University, Mildura Campus, SuniTAFE - Mildura Campus, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -4238,7 +4238,7 @@ export const cityData = [
     ],
     image_url: '/cities/geelong.webp',
     alt: 'Academic Jobs Geelong Cityscape',
-    tags: [],
+    tags: ['Deakin University, Geelong Institute of Technology, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -4279,7 +4279,7 @@ export const cityData = [
     ],
     image_url: '/cities/launceston.jpg',
     alt: 'Academic Jobs A breathtaking panorama of Launceston, Australia',
-    tags: [],
+    tags: ['University of Tasmania, Australian Maritime College, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -4312,7 +4312,7 @@ export const cityData = [
     ],
     image_url: '/cities/burnie.webp',
     alt: "Burnie Tasmania's coastal charm",
-    tags: [],
+    tags: ['University of Tasmania, TasTAFE - Burnie Campus, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -4352,7 +4352,7 @@ export const cityData = [
     ],
     image_url: '/cities/wollongong-uni.jpg',
     alt: 'Academic Jobs Wollongong, Australia: Where Education Flourishes',
-    tags: [],
+    tags: ['University of Wollongong, Illawarra Institute of TAFE, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Discover Darwin: Universities, Notable Figures, and Opportunities',
@@ -4385,7 +4385,7 @@ export const cityData = [
     image_url:
       'https://www.shutterstock.com/image-photo/scenic-spot-darwin-waterfront-wharf-600nw-648487078.jpg',
     alt: 'Academic Jobs A photo of Darwin, Australia, showcasing the city skyline and waterfront.',
-    tags: [],
+    tags: ['Charles Darwin University, Batchelor Institute, Nobel Laureates, Higher Education'],
   },
   {
     title: "Exploring Hobart's Education and Innovation Hub",
@@ -4418,7 +4418,7 @@ export const cityData = [
     image_url:
       'https://www.discovertasmania.com.au/siteassets/places-to-go/hobart-and-south/136474-2.jpg?resize=_tyIA_PHFkTQc0Gn-LZKjh8aWmNhh2enzRbNNG3YH7Fenurt68LB7cJF7wCLj1SR77GEstDZekpr9q8QS4jXhw',
     alt: "A breathtaking view of Hobart's cityscape",
-    tags: [],
+    tags: ['University of Tasmania, Tasmanian Polytechnic, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Montgomery, Alabama Universities and Colleges',
@@ -4453,7 +4453,7 @@ export const cityData = [
     image_url:
       'https://www.montgomeryadvertiser.com/gcdn/-mm-/0e3716121b058c15a232a8575a74fb8f2521a4e6/c=3-0-2116-1194/local/-/media/2016/08/23/Montgomery/Montgomery/636075507035501696-NEWMGM.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp',
     alt: 'Academic Jobs Montgomery, Alabama skyline',
-    tags: [],
+    tags: ['Alabama State University, Auburn University at Montgomery, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Juneau, Alaska',
@@ -4485,7 +4485,7 @@ export const cityData = [
     image_url:
       'https://media.istockphoto.com/id/1184170868/photo/juneau-downtown-water-traffic.jpg?s=612x612&w=0&k=20&c=QHKKI_t__ml1IebJYATCcr5Uo6U139911VO7KMi05-A=',
     alt: 'Academic Jobs Juneau, Alaska skyline',
-    tags: [],
+    tags: ['University of Alaska Southeast, Alaska Vocational Technical Center (AVTEC), Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Phoenix, Arizona',
@@ -4521,7 +4521,7 @@ export const cityData = [
     image_url:
       'https://skylinespace.nyc3.cdn.digitaloceanspaces.com/media/images/phoenix_01_8651_up.jpg',
     alt: 'Academic Jobs Phoenix, Arizona skyline',
-    tags: [],
+    tags: ['Arizona State University, University of Phoenix, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Little Rock, Arkansas',
@@ -4557,7 +4557,7 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQ1MWI1LTE2Ny1wbG95LmpwZw.jpg',
     alt: 'Academic Jobs Little Rock, Arkansas skyline',
-    tags: [],
+    tags: ['University of Arkansas at Little Rock, Arkansas Baptist College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Denver, Colorado',
@@ -4593,7 +4593,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/3/3a/Full_Denver_skyline.jpg',
     alt: 'Academic Jobs Denver, Colorado skyline',
-    tags: [],
+    tags: ['University of Denver, University of Colorado Denver, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Hartford, Connecticut',
@@ -4629,7 +4629,7 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/7851/32359133487_d2e289150e_b.jpg',
     alt: 'Academic Jobs Hartford, Connecticut skyline',
-    tags: [],
+    tags: ['University of Hartford, Trinity College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Dover, Delaware',
@@ -4662,7 +4662,7 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAzL2ZyYmVybGluZXJfYWJlbmRoaW1tZWxfYW5fZGVyLWltYWdlLmpwZw.jpg',
     alt: 'Academic Jobs Dover, Delaware skyline',
-    tags: [],
+    tags: ['Wesley College, Delaware State University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Tallahassee, Florida',
@@ -4695,7 +4695,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/a/a8/Tampa_Skyline.jpg',
     alt: 'Academic Jobs Tallahassee, Florida skyline',
-    tags: [],
+    tags: ['Florida State University, Tallahassee Community College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Atlanta, Georgia',
@@ -4728,7 +4728,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/8/8e/Downtown_Atlanta_skyline%2C_Georgia_Tech.jpg',
     alt: 'Academic Jobs Atlanta, Georgia skyline',
-    tags: [],
+    tags: ['Georgia Institute of Technology, Emory University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Boise, Idaho',
@@ -4756,7 +4756,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/8047/8384643501_be00daac82_b.jpg',
     alt: 'Academic Jobs Boise, Idaho skyline',
-    tags: [],
+    tags: ['Boise State University, College of Western Idaho, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Indianapolis, Indiana',
@@ -4787,7 +4787,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/1146/5155672963_e2b0f4027a_b.jpg',
     alt: 'Academic Jobs Indianapolis, Indiana skyline',
-    tags: [],
+    tags: ['Indiana University–Purdue University Indianapolis (IUPUI), Butler University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Des Moines, Iowa',
@@ -4816,7 +4816,7 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/2816/11921642736_c0edf7831f_b.jpg',
     alt: 'Academic Jobs Des Moines, Iowa skyline',
-    tags: [],
+    tags: ['Drake University, Grand View University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Topeka, Kansas',
@@ -4845,7 +4845,7 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL2ZsNDg0NjY4ODc0OTctaW1hZ2Uta3p4dDN1c3EuanBn.jpg',
     alt: 'Academic Jobs Topeka, Kansas skyline',
-    tags: [],
+    tags: ['Washburn University, Baker University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Frankfort, Kentucky',
@@ -4877,7 +4877,7 @@ export const cityData = [
     image_url:
       'https://media.snl.no/media/59611/standard_compressed_28477525837_9bdfa70aa3_o.jpg',
     alt: 'Academic Jobs Frankfort, Kentucky skyline',
-    tags: [],
+    tags: ['Kentucky State University, Jefferson Community and Technical College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Baton Rouge, Louisiana',
@@ -4910,7 +4910,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/1/18/OKC_BatonRougeSkyline.JPG',
     alt: 'Academic Jobs Baton Rouge, Louisiana skyline',
-    tags: [],
+    tags: ['Louisiana State University, Southern University and A&M College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Augusta, Maine',
@@ -4942,7 +4942,7 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvd2s5MDQ4MTI0OS1pbWFnZS1rcDZjM3kxbC5qcGc.jpg',
     alt: 'Academic Jobs Augusta, Maine skyline',
-    tags: [],
+    tags: ['University of Maine at Augusta, Kennebec Valley Community College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Annapolis, Maryland',
@@ -4971,7 +4971,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/d/d2/Southward_View_of_Annapolis_from_the_Navy_Chapel_Dome_%2825326397950%29.jpg',
     alt: 'Academic Jobs Annapolis, Maryland skyline',
-    tags: [],
+    tags: ['United States Naval Academy, St. Johns College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Lansing, Michigan',
@@ -5000,7 +5000,7 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQxOS0zLTEyMjM5YS5qcGc.jpg',
     alt: 'Academic Jobs Lansing, Michigan skyline',
-    tags: [],
+    tags: ['Michigan State University, Lansing Community College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Saint Paul, Minnesota',
@@ -5029,7 +5029,7 @@ export const cityData = [
     image_url:
       'https://media.istockphoto.com/id/497232049/photo/st-paul-minnesota-capital-downtown-skyline-with-mississippi-river-boats.jpg?s=612x612&w=0&k=20&c=l1rg6E_-ZaiHeAKZLTCtWYCrw3TRP0Y8F81LYy54wqk=',
     alt: 'Academic Jobs Saint Paul, Minnesota skyline',
-    tags: [],
+    tags: ['University of Minnesota, Concordia University Saint Paul, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Jackson, Mississippi',
@@ -5058,7 +5058,7 @@ export const cityData = [
     image_url:
       'https://media.istockphoto.com/id/592651620/photo/jackson-mississippi-skyline.jpg?s=612x612&w=0&k=20&c=6--cyg2H2VEsGimIghxycqPFapN3S3-KgSnCUog0JJ8=',
     alt: 'Academic Jobs Jackson, Mississippi skyline',
-    tags: [],
+    tags: ['Jackson State University, Belhaven University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Jefferson City, Missouri',
@@ -5087,7 +5087,7 @@ export const cityData = [
     image_url:
       'https://explorestlouis.com/wp-content/uploads/2023/02/Gateway-Arch-National-Park.jpg',
     alt: 'Academic Jobs Jefferson City, Missouri skyline',
-    tags: [],
+    tags: ['Lincoln University, Columbia College-Jefferson City, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Helena, Montana',
@@ -5115,7 +5115,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/299/19551391324_727d52352c_b.jpg',
     alt: 'Academic Jobs Helena Montana County Building',
-    tags: [],
+    tags: ['Carroll College, Helena College University of Montana, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Lincoln, Nebraska',
@@ -5144,7 +5144,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/a/a3/Aerial_view_of_downtown_Lincoln%2C_Nebraska%2C_USA_%28looking_southeast%29.jpg',
     alt: 'Academic Jobs Lincoln, Nebraska skyline',
-    tags: [],
+    tags: ['University of Nebraska-Lincoln, Nebraska Wesleyan University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Carson City, Nevada',
@@ -5172,7 +5172,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/3243/2850583781_d3092e08ca_b.jpg',
     alt: 'Academic Jobs Carson City, Nevada skyline',
-    tags: [],
+    tags: ['Western Nevada College, Sierra Nevada University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Concord, New Hampshire',
@@ -5201,7 +5201,7 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQyMDctMS00ODNfMS5qcGc.jpg',
     alt: 'Academic Jobs Concord, New Hampshire skyline',
-    tags: [],
+    tags: ['New Hampshire Technical Institute, Granite State College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Trenton, New Jersey',
@@ -5232,7 +5232,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/3195/2854162078_43bb4b2112_b.jpg',
     alt: 'Academic Jobs Trenton, New Jersey skyline',
-    tags: [],
+    tags: ['Thomas Edison State University, Mercer County Community College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Santa Fe, New Mexico',
@@ -5264,7 +5264,7 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/2910/33772525535_6936785945_b.jpg',
     alt: 'Academic Jobs Santa Fe, New Mexico skyline',
-    tags: [],
+    tags: ['Institute of American Indian Arts, Santa Fe University of Art and Design, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Raleigh, North Carolina',
@@ -5297,7 +5297,7 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/4808/46107828152_d007d0c5b3_b.jpg',
     alt: 'Academic Jobs Raleigh, North Carolina skyline',
-    tags: [],
+    tags: ['North Carolina State University, Duke University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Bismarck, North Dakota',
@@ -5326,7 +5326,7 @@ export const cityData = [
     image_url:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Mv_pBqqcy_7ulSJ7rdbxVyaD4Zh8UA0n2GjlKbPgM7pz2Zy-gTTMaHE76AokVuYS-bE&usqp=CAU',
     alt: 'Academic Jobs Bismarck, North Dakota skyline',
-    tags: [],
+    tags: ['University of Mary, Bismarck State College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Columbus, Ohio',
@@ -5360,7 +5360,7 @@ export const cityData = [
     image_url:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ViZuK31U9uqx6THwTfF3Cf0lZIbJEsQuQQu1tlC1Mz5drDByVjPUC1e20EyHt4Qi_qY&usqp=CAU',
     alt: 'Academic Jobs Columbus, Ohio skyline',
-    tags: [],
+    tags: ['The Ohio State University, Capital University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Oklahoma City, Oklahoma',
@@ -5394,7 +5394,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/3/35/Oklahoma_City_Skyline_from_I-35_%28cropped%29.jpg',
     alt: 'Academic Jobs Oklahoma City, Oklahoma skyline',
-    tags: [],
+    tags: ['University of Oklahoma - Oklahoma City, Oklahoma City Community College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Universities and Colleges in Salem, Oregon',
@@ -5427,7 +5427,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/3/32/Portland_Skyline_glow_July_2017_-_Oregon.jpg',
     alt: 'Academic Jobs Salem, Oregon skyline',
-    tags: [],
+    tags: ['Willamette University, Corban University, Nobel Laureates, Higher Education'],
   },
   {
     title: `Universities in Harrisburg, Pennsylvania: Explore Higher Education Institutions`,
@@ -5460,7 +5460,7 @@ export const cityData = [
     ],
     image_url: `https://upload.wikimedia.org/wikipedia/commons/3/30/Harrisburg_as_seen_from_City_Island.jpg`,
     alt: `Harrisburg, Pennsylvania skyline`,
-    tags: [],
+    tags: ['Penn State Harrisburg, Harrisburg University of Science and Technology, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -5497,7 +5497,7 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/5806/30570117430_5786a38332_b.jpg',
     alt: 'Academic Jobs Providence, Rhode Island skyline',
-    tags: [],
+    tags: ['Brown University, Rhode Island School of Design (RISD), Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -5534,7 +5534,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/1/1f/SkylinefromArsenalHill.jpg',
     alt: 'Academic Jobs Columbia, South Carolina skyline',
-    tags: [],
+    tags: ['University of South Carolina, Columbia College, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -5569,7 +5569,7 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQxOS0zLTA0OTQ1YS5qcGc.jpg',
     alt: 'Academic Jobs Pierre, South Dakota skyline',
-    tags: [],
+    tags: ['University of South Dakota - Pierre, Oahe Technical Institute, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -5605,7 +5605,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/5054/5509324760_5d5238e7ac_b.jpg',
     alt: 'Academic Jobs Nashville, Tennessee skyline',
-    tags: [],
+    tags: ['Vanderbilt University, Belmont University, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -5642,7 +5642,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/8008/7707261420_9b10631963_b.jpg',
     alt: 'Academic Jobs Salt Lake City, Utah skyline',
-    tags: [],
+    tags: ['University of Utah, Brigham Young University, Nobel Laureates, Higher Education'],
   },
   {
     title:
@@ -5678,7 +5678,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/6117/6254263448_7f0e7f1f6f_b.jpg',
     alt: 'Academic Jobs Montpelier, Vermont skyline',
-    tags: [],
+    tags: ['Vermont College of Fine Arts, New England Culinary Institute, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Education Hub: Universities & Colleges in Richmond, Virginia',
@@ -5713,7 +5713,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/3020/3048513315_9c511334f7_b.jpg',
     alt: 'Academic Jobs Richmond, Virginia skyline',
-    tags: [],
+    tags: ['University of Richmond, Virginia Commonwealth University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Education Hub: Universities & Colleges in Olympia, Washington',
@@ -5745,7 +5745,7 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/227/497193646_c64fcd3a9f_b.jpg',
     alt: 'Academic Jobs Olympia, Washington skyline',
-    tags: [],
+    tags: ['The Evergreen State College, South Puget Sound Community College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Charleston, West Virginia: Hub of Higher Education',
@@ -5779,7 +5779,7 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/7726/17268752211_f83f04087a_b.jpg',
     alt: 'Academic Jobs Charleston, West Virginia skyline',
-    tags: [],
+    tags: ['University of Charleston, West Virginia State University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Madison, Wisconsin: Thriving Academic Hub',
@@ -5813,7 +5813,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/e/ed/Madisonskyline.jpg',
     alt: 'Academic Jobs Madison, Wisconsin skyline',
-    tags: [],
+    tags: ['University of Wisconsin-Madison, Edgewood College, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Cheyenne, Wyoming: Academic Opportunities in the Heart of the West',
@@ -5846,7 +5846,7 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQ1MWI1LTE2Ny1wbG95LmpwZw.jpg',
     alt: 'Academic Jobs Cheyenne, Wyoming skyline',
-    tags: [],
+    tags: ['Laramie County Community College, University of Wyoming Outreach, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Honolulu, Hawaii: A Hub of Academic Excellence in the Pacific',
@@ -5880,7 +5880,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/c/c0/Honolulu_Hawaii_View_%2816056359266%29.jpg',
     alt: 'Academic Jobs Honolulu, Hawaii skyline',
-    tags: [],
+    tags: ['University of Hawaii at Manoa, Chaminade University of Honolulu, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Springfield, USA: A Hub of Learning and Innovation',
@@ -5914,7 +5914,7 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/4/4e/Street_Scene_with_Capitol_-_Springfield_-_Illinois_-_USA_%2832541552030%29.jpg',
     alt: 'Academic Jobs Springfield, USA skyline',
-    tags: [],
+    tags: ['Springfield University, Western New England University, Nobel Laureates, Higher Education'],
   },
   {
     title: 'Sacramento, USA: A Hub of Educational Excellence',
@@ -5948,7 +5948,7 @@ export const cityData = [
     image_url:
       'https://media.istockphoto.com/id/473594302/photo/sacramento-downtown-skyline-during-autumn.jpg?s=612x612&w=0&k=20&c=xduvxyzKsRZgqfh1Q9LuP46qmK5a0o11Ig_fzvw6p0M=',
     alt: 'Academic Jobs Sacramento, USA skyline',
-    tags: [],
+    tags: ['University of California, Davis, California State University, Sacramento, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -5996,7 +5996,7 @@ export const cityData = [
     ],
     image_url: '/cities/manchester.webp',
     alt: 'Academic Jobs Manchester skyline with university buildings',
-    tags: [],
+    tags: ['University of Manchester, Royal Northern College of Music, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -6041,7 +6041,7 @@ export const cityData = [
     ],
     image_url: '/cities/nottingham.jpg',
     alt: 'Academic Jobs Panoramic view of Nottingham cityscape showcasing historic landmarks and modern architecture',
-    tags: [],
+    tags: ['University of Nottingham, Confetti Institute of Creative Technologies, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -6088,7 +6088,7 @@ export const cityData = [
     ],
     image_url: '/cities/glasgow.jpg',
     alt: "Glasgow's vibrant academic scene",
-    tags: [],
+    tags: ['University of Glasgow, Royal Conservatoire of Scotland, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -6132,7 +6132,7 @@ export const cityData = [
     ],
     image_url: '/cities/newcastle-upon-tyne.jpg',
     alt: 'Academic Jobs Newcastle upon Tyne skyline at sunset',
-    tags: [],
+    tags: ['Newcastle University, Northumbria University, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -6176,7 +6176,7 @@ export const cityData = [
     ],
     image_url: '/cities/birmingham.jpg',
     alt: 'Academic Jobs Birmingham city skyline with vibrant lights',
-    tags: [],
+    tags: ['University of Birmingham, Aston University, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -6214,7 +6214,7 @@ export const cityData = [
     ],
     image_url: '/cities/leeds.jpg',
     alt: 'Academic Jobs Leeds skyline against a colorful sunset',
-    tags: [],
+    tags: ['University of Leeds, Leeds Trinity University, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -6256,7 +6256,7 @@ export const cityData = [
     ],
     image_url: '/cities/bristol.jpg',
     alt: 'Academic Jobs Clifton Suspension Bridge over the River Avon in Bristol',
-    tags: [],
+    tags: ['University of Bristol, City of Bristol College, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -6300,7 +6300,7 @@ export const cityData = [
     ],
     image_url: '/cities/brighton.jpg',
     alt: 'Academic Jobs Brighton Academic Excellence',
-    tags: [],
+    tags: ['University of Sussex, University of Brighton, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -6337,7 +6337,7 @@ export const cityData = [
     ],
     image_url: '/cities/aberdeen.jpg',
     alt: 'Academic Jobs Aberdeen city skyline with historic buildings and modern architecture',
-    tags: [],
+    tags: ['University of Aberdeen, Robert Gordon University, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -6380,7 +6380,7 @@ export const cityData = [
     ],
     image_url: '/cities/durham.jpg',
     alt: 'Academic Jobs Durham city skyline with historic architecture and river',
-    tags: [],
+    tags: ['Durham University, New College Durham, Nobel Laureates, Higher Education'],
   },
 
   {
@@ -6427,7 +6427,7 @@ export const cityData = [
     ],
     image_url: '/cities/st-andrews.jpg',
     alt: 'Academic Jobs St Andrews, Scotland: A Historic City of Learning',
-    tags: [],
+    tags: ['University of St Andrews, St Andrews College, Laureates, Higher Education'],
   },
 
   {
@@ -6471,7 +6471,7 @@ export const cityData = [
     ],
     image_url: '/cities/aberystwyth.jpg',
     alt: 'Academic Jobs Aberystwyth Cityscape overlooking the Sea',
-    tags: [],
+    tags: ['Aberystwyth University, University of Wales Trinity Saint David (UWTSD), Nobel laureates, higher education, research institutions'],
   },
 
   {
@@ -6517,7 +6517,7 @@ export const cityData = [
     ],
     image_url: '/cities/coventry.jpg',
     alt: 'Academic Jobs Coventry skyline with historic cathedral and modern buildings',
-    tags: [],
+    tags: ['University of Warwick, Coventry University, Nobel laureates, higher education, research institutions'],
   },
 
   {
@@ -6563,7 +6563,7 @@ export const cityData = [
     ],
     image_url: '/cities/sheffield.jpg',
     alt: "Sheffield's vibrant academic scene",
-    tags: [],
+    tags: ['University of Sheffield, Sheffield Hallam University, Nobel laureates, higher education'],
   },
 
   {
@@ -6606,7 +6606,7 @@ export const cityData = [
     ],
     image_url: '/cities/liverpool.jpg',
     alt: 'Academic Jobs Liverpool cityscape overlooking the River Mersey',
-    tags: [],
+    tags: ['University of Liverpool, The City of Liverpool College, Nobel laureates, higher education'],
   },
 
   {
@@ -6647,7 +6647,7 @@ export const cityData = [
     ],
     image_url: '/cities/cardiff.jpg',
     alt: "Panoramic view of Cardiff's academic institutions against a backdrop of lush greenery and historic architecture",
-    tags: [],
+    tags: ['Cardiff University, Royal Welsh College of Music & Drama, Nobel laureates, higher education'],
   },
 
   {
@@ -6687,7 +6687,7 @@ export const cityData = [
     ],
     image_url: '/cities/portsmouth.jpg',
     alt: 'Academic Jobs Aerial view of Portsmouth showcasing its academic institutions and coastal charm',
-    tags: [],
+    tags: ['University of Portsmouth, Highbury College, Nobel laureates, higher education'],
   },
 
   {
@@ -6732,7 +6732,7 @@ export const cityData = [
     ],
     image_url: '/cities/chester.jpg',
     alt: "A panoramic view of Chester's cityscape",
-    tags: [],
+    tags: ['University of Chester, West Cheshire College, Nobel laureates, higher education'],
   },
 
   {
@@ -6771,7 +6771,7 @@ export const cityData = [
     ],
     image_url: '/cities/reading.jpg',
     alt: "A picturesque view of Reading, UK's academic hub",
-    tags: [],
+    tags: ['University of Reading, Royal Berkshire University, Nobel laureates, higher education'],
   },
 
   {
@@ -6802,7 +6802,7 @@ export const cityData = [
     promo: ['', ''],
     image_url: '/cities/plymouth.avif',
     alt: 'Academic Jobs Plymouth Academic Hub Photo',
-    tags: [],
+    tags: ['University of Plymouth, Plymouth College of Art, Nobel laureates, higher education'],
   },
 
   {
@@ -6842,7 +6842,7 @@ export const cityData = [
     ],
     image_url: '/cities/lincoln.jpg',
     alt: "A panoramic view of Lincoln's academic landscape",
-    tags: [],
+    tags: ['University of Nebraska-Lincoln, Union College, Nobel laureates, higher education'],
   },
 
   {
@@ -6883,7 +6883,7 @@ export const cityData = [
     ],
     image_url: '/cities/swansea.jpg',
     alt: 'Academic Jobs Swansea: A Resplendent Haven of Learning and Innovation',
-    tags: [],
+    tags: ['Swansea University, University of Wales Trinity Saint David, Nobel laureates, higher education'],
   },
 
   {
@@ -6920,7 +6920,7 @@ export const cityData = [
     ],
     image_url: '/cities/exeter.jpg',
     alt: 'Academic Jobs Exeter city skyline with historic buildings and cathedral spires',
-    tags: [],
+    tags: ['University of Exeter, Exeter College, Nobel laureates, higher education'],
   },
 
   {
@@ -6961,7 +6961,7 @@ export const cityData = [
     ],
     image_url: '/cities/leicester.jpg',
     alt: "Leicester's Academic Landscape",
-    tags: [],
+    tags: ['University of Leicester, Leicester College, Nobel laureates, higher education'],
   },
 
   {
@@ -6996,7 +6996,7 @@ export const cityData = [
     ],
     image_url: '/cities/wolverhampton.jpg',
     alt: 'Academic Jobs Wolverhampton cityscape',
-    tags: [],
+    tags: ['University of Wolverhampton, Wolverhampton College, Nobel laureates, higher education'],
   },
 
   {
@@ -7037,7 +7037,7 @@ export const cityData = [
     ],
     image_url: '/cities/sunderland.jpg',
     alt: 'Academic Jobs Aerial view of Sunderland cityscape with bridges over River Wear',
-    tags: [],
+    tags: ['University of Sunderland, City of Sunderland College, Nobel laureates, higher education'],
   },
 
   {
@@ -7074,7 +7074,7 @@ export const cityData = [
     ],
     image_url: '/cities/chichester.jpg',
     alt: 'Academic Jobs Chichester Cathedral and city skyline',
-    tags: [],
+    tags: ['University of Chichester, British Institute of Modern Music (BIMM) Chichester, Nobel laureates, higher education'],
   },
 
   {
@@ -7112,7 +7112,7 @@ export const cityData = [
     ],
     image_url: `/cities/bangor.jpg`,
     alt: `A scenic view of Bangor, Wales`,
-    tags: [],
+    tags: ['Bangor University, Coleg Menai, Nobel laureates, higher education'],
   },
 
   {
@@ -7148,7 +7148,7 @@ export const cityData = [
     ],
     image_url: '/cities/bradford.jpg',
     alt: "A picturesque view of Bradford's cityscape with historic architecture and green spaces",
-    tags: [],
+    tags: ['University of Bradford, University Centre Bradford College, Nobel laureates, higher education'],
   },
 
   {
@@ -7182,7 +7182,7 @@ export const cityData = [
     ],
     image_url: `/cities/derby.jpg`,
     alt: `Cityscape of Derby, UK`,
-    tags: [],
+    tags: ['University of Derby, Babington College, Nobel laureates, higher education'],
   },
 
   {
@@ -7222,7 +7222,7 @@ export const cityData = [
     ],
     image_url: '/cities/worcester.jpg',
     alt: 'Academic Jobs Worcester skyline with cityscape and river',
-    tags: [],
+    tags: ['College of the Holy Cross, Worcester Polytechnic Institute (WPI), Nobel laureates, higher education'],
   },
 
   {
@@ -7259,7 +7259,7 @@ export const cityData = [
     ],
     image_url: '/cities/stirling.jpg',
     alt: 'Academic Jobs Stirling: Where history meets innovation amidst lush Scottish landscapes',
-    tags: [],
+    tags: ['University of Stirling, Forth Valley College, Nobel laureates, higher education'],
   },
 
   {
@@ -7302,7 +7302,7 @@ export const cityData = [
     ],
     image_url: '/cities/bath.jpg',
     alt: 'Academic Jobs Bath Cityscape - Historic Architecture and Scholarly Pursuits',
-    tags: [],
+    tags: ['University of Bath, Norland College, Nobel laureates, higher education'],
   },
 
   {
@@ -7341,7 +7341,7 @@ export const cityData = [
     ],
     image_url: '/cities/southampton.jpg',
     alt: 'Academic Jobs Aerial view of Southampton cityscape',
-    tags: [],
+    tags: ['University of Southampton, Solent University, Nobel laureates, higher education'],
   },
 
   {
@@ -7373,7 +7373,7 @@ export const cityData = [
     ],
     image_url: `/cities/dundee.jpg`,
     alt: `Aerial view of Dundee, Scotland`,
-    tags: [],
+    tags: ['University of Dundee, Abertay University, Nobel laureates, higher education'],
   },
 
   {
@@ -7415,7 +7415,7 @@ export const cityData = [
     ],
     image_url: '/cities/middlesbrough.jpg',
     alt: 'Academic Jobs Middlesbrough skyline overlooking the River Tees',
-    tags: [],
+    tags: ['Teesside University, Middlesbrough College, Nobel laureates, higher education'],
   },
 
   {
@@ -7457,7 +7457,7 @@ export const cityData = [
     ],
     image_url: `/cities/buckingham.jpg`,
     alt: `Buckingham cityscape with historic buildings and university campuses`,
-    tags: [],
+    tags: ['University of Buckingham, Royal Latin School, Nobel laureates, higher education'],
   },
 
   {
@@ -7497,7 +7497,7 @@ export const cityData = [
     ],
     image_url: '/cities/northampton.jpg',
     alt: 'Academic Jobs Aerial view of Northampton cityscape with river and bridges',
-    tags: [],
+    tags: ['University of Northampton, Moulton College, Nobel laureates, higher education'],
   },
 
   {
@@ -7537,7 +7537,7 @@ export const cityData = [
     ],
     image_url: '/cities/east-london.jpg',
     alt: 'Academic Jobs Aerial view of East London cityscape',
-    tags: [],
+    tags: ['Queen Mary University of London, London Metropolitan University, Nobel laureates, higher education'],
   },
 
   {
@@ -7570,7 +7570,7 @@ export const cityData = [
     ],
     image_url: `/cities/falmouth.jpg`,
     alt: `Falmouth's picturesque coastline overlooking the sea`,
-    tags: [],
+    tags: ['Falmouth University, University of Exeter (Penryn Campus), Nobel laureates, higher education'],
   },
 
   {
@@ -7608,7 +7608,7 @@ export const cityData = [
     ],
     image_url: `/cities/huddersfield.jpg`,
     alt: `A panoramic view of Huddersfield's picturesque landscape with historic buildings and lush greenery`,
-    tags: [],
+    tags: ['University of Huddersfield, Kirklees College, Nobel laureates, higher education'],
   },
 
   {
@@ -7644,7 +7644,7 @@ export const cityData = [
     ],
     image_url: '/cities/loughborough.jpg',
     alt: 'Academic Jobs Loughborough cityscape with university buildings and green spaces',
-    tags: [],
+    tags: ['Loughborough University, Charnwood College, Nobel laureates, higher education'],
   },
 
   {
@@ -7693,7 +7693,7 @@ export const cityData = [
     ],
     image_url: '/cities/auckland.avif',
     alt: 'Academic Jobs Auckland skyline reflecting on Waitemata Harbour',
-    tags: [],
+    tags: ['University of Auckland, Massey University Auckland Campus, Nobel laureates, higher education'],
   },
 
   {
@@ -7729,7 +7729,7 @@ export const cityData = [
     ],
     image_url: '/cities/lincoln.png',
     alt: 'Academic Jobs Lincoln, New Zealand: A Center of Academic Excellence and Innovation',
-    tags: [],
+    tags: ['Lincoln University, University of Canterbury (Agriculture Campus), Nobel laureates, higher education'],
   },
 
   {
@@ -7763,7 +7763,7 @@ export const cityData = [
     ],
     image_url: '/cities/palmerston-north.jpg',
     alt: 'Academic Jobs Panoramic view of Palmerston North cityscape against a backdrop of rolling hills',
-    tags: [],
+    tags: ['Massey University, Universal College of Learning (UCOL), Nobel laureates, higher education'],
   },
 
   {
@@ -7804,7 +7804,7 @@ export const cityData = [
     ],
     image_url: '/cities/christchurch.webp',
     alt: 'Academic Jobs Christchurch cityscape by the Avon River',
-    tags: [],
+    tags: ['University of Canterbury, Lincoln University, Nobel laureates, higher education'],
   },
 
   {
@@ -7842,7 +7842,7 @@ export const cityData = [
     ],
     image_url: '/cities/dunedin.jpg',
     alt: 'Academic Jobs Dunedin, New Zealand: Aerial View of the City and Surrounding Landscape',
-    tags: [],
+    tags: ['University of Otago, Otago Polytechnic, Nobel laureates, higher education'],
   },
 
   {
@@ -7876,7 +7876,7 @@ export const cityData = [
     ],
     image_url: '/cities/hamilton.jpg',
     alt: 'Academic Jobs Hamilton, New Zealand - Academic Excellence and Innovation',
-    tags: [],
+    tags: ['University of Waikato, Waikato Institute of Technology (Wintec), Nobel laureates, higher education'],
   },
 
   {
@@ -7919,7 +7919,7 @@ export const cityData = [
     ],
     image_url: '/cities/wellington.jpg',
     alt: "A panoramic view of Wellington's vibrant cityscape against the backdrop of lush green hills and the sparkling harbor.",
-    tags: [],
+    tags: ['Victoria University of Wellington, Wellington Institute of Technology, Nobel laureates, higher education'],
   },
 
   {
@@ -7966,7 +7966,7 @@ export const cityData = [
     ],
     image_url: '/cities/geneva.webp',
     alt: 'Academic Jobs Aerial view of Geneva, Switzerland',
-    tags: [],
+    tags: ['University of Geneva, Webster University Geneva, Nobel laureates, higher education'],
   },
 
   {
@@ -8005,7 +8005,7 @@ export const cityData = [
     ],
     image_url: `/cities/lyon.jpg`,
     alt: `Lyon cityscape showcasing historic landmarks and modern architectural marvels`,
-    tags: [],
+    tags: ['University of Lyon, Lumière University Lyon 2, Nobel laureates, higher education'],
   },
 
   {
@@ -8050,7 +8050,7 @@ export const cityData = [
     ],
     image_url: '/cities/toulouse.jpg',
     alt: "Toulouse, France: A picturesque view of the city's skyline",
-    tags: [],
+    tags: ['University of Toulouse, National Institute of Applied Sciences of Toulouse (INSA), Nobel laureates, higher education'],
   },
 
   {
@@ -8085,7 +8085,7 @@ export const cityData = [
     promo: [],
     image_url: '/cities/bordeaux.jpg',
     alt: "Bordeaux's picturesque cityscape overlooking the Garonne River",
-    tags: [],
+    tags: ['University of Bordeaux, Institut Polytechnique de Bordeaux, Nobel laureates, higher education'],
   },
 
   {
@@ -8121,7 +8121,7 @@ export const cityData = [
     ],
     image_url: '/cities/marseille.webp',
     alt: "Panoramic view of Marseille's dynamic cityscape and the Mediterranean Sea",
-    tags: [],
+    tags: ['Aix-Marseille University, Ecole Centrale Marseille, Nobel laureates, higher education'],
   },
 
   {
@@ -8163,7 +8163,7 @@ export const cityData = [
     ],
     image_url: '/cities/grenoble.webp',
     alt: 'Academic Jobs Grenoble, France - Where academia meets Alpine allure',
-    tags: [],
+    tags: ['Grenoble Alpes University, École nationale supérieure darchitecture de Grenoble, Nobel laureates, higher education'],
   },
 
   {
@@ -8210,7 +8210,7 @@ export const cityData = [
     ],
     image_url: '/cities/nice.jpg',
     alt: 'Academic Jobs Nice, France: Coastal cityscape with azure waters and vibrant buildings',
-    tags: [],
+    tags: ['Université Côte dAzur, EDHEC Business School, Nobel laureates, higher education'],
   },
 
   {
@@ -8259,7 +8259,7 @@ export const cityData = [
     ],
     image_url: '/cities/montpellier.jpg',
     alt: 'Academic Jobs Montpellier, France - A vibrant cityscape with historic architecture and modern amenities',
-    tags: [],
+    tags: ['Montpellier Business School, Montpellier SupAgro, Nobel laureates, higher education'],
   },
 
   {
@@ -8294,7 +8294,7 @@ export const cityData = [
     ],
     image_url: '/cities/aix-en-provence.jpg',
     alt: 'Academic Jobs Aix-en-Provence cityscape with historic buildings and tree-lined streets',
-    tags: [],
+    tags: ['Aix-Marseille University, Sciences Po Aix , Nobel laureates, higher education'],
   },
 
   {
@@ -8337,7 +8337,7 @@ export const cityData = [
     ],
     image_url: `/cities/florence.jpg`,
     alt: `Florence, Italy - Renaissance Intellectual Epicenter`,
-    tags: [],
+    tags: ['University of Florence, European University Institute, Nobel laureates, higher education'],
   },
 
   {
@@ -8376,7 +8376,7 @@ export const cityData = [
     ],
     image_url: '/cities/bologna.jpg',
     alt: 'Academic Jobs Bologna Italy Educational Hub',
-    tags: [],
+    tags: ['University of Bologna, University of Modena and Reggio Emilia (Bologna Campus), Nobel laureates, higher education'],
   },
 
   {
@@ -8420,7 +8420,7 @@ export const cityData = [
     ],
     image_url: '/cities/turin.jpg',
     alt: 'Academic Jobs Turin, Italy - A City of Intellectual Pursuits',
-    tags: [],
+    tags: ['University of Turin, Polytechnic University of Turin , Nobel laureates, higher education'],
   },
 
   {
@@ -8457,7 +8457,7 @@ export const cityData = [
     promo: [],
     image_url: '/cities/pisa.jpg',
     alt: 'Academic Jobs Breathtaking aerial view of Pisa, Italy',
-    tags: [],
+    tags: ['University of Pisa, SantAnna School of Advanced Studies, Nobel laureates, higher education'],
   },
 
   {
@@ -8495,7 +8495,7 @@ export const cityData = [
     ],
     image_url: '/cities/padua.jpg',
     alt: "A captivating view of Padua's historic streets and landmarks",
-    tags: [],
+    tags: ['University of Padua, Padua Conservatory of Music, Nobel laureates, higher education'],
   },
 
   {
@@ -8539,7 +8539,7 @@ export const cityData = [
     ],
     image_url: '/cities/venice.jpg',
     alt: 'Academic Jobs Venice Italy - City of Canals and Culture',
-    tags: [],
+    tags: ['IUAV University of Venice, Venice International University, Nobel laureates, higher education'],
   },
 
   {
@@ -8577,7 +8577,7 @@ export const cityData = [
     ],
     image_url: '/cities/genoa.jpg',
     alt: "A panoramic view of Genoa's historic center with colorful buildings and a bustling harbor",
-    tags: [],
+    tags: ['University of Genoa, Genoa School of Fine Arts, Nobel laureates, higher education'],
   },
 
   {
@@ -8612,7 +8612,7 @@ export const cityData = [
     promo: ['', ''],
     image_url: '/cities/salamanca.jpg',
     alt: 'Academic Jobs Historic streets of Salamanca, Spain',
-    tags: [],
+    tags: ['University of Salamanca, Pontifical University of Salamanca , Nobel laureates, higher education'],
   },
 
   {
@@ -8643,7 +8643,7 @@ export const cityData = [
     promo: [],
     image_url: '/cities/granada.jpg',
     alt: "Granada's picturesque cityscape against a sunset backdrop",
-    tags: [],
+    tags: ['University of Granada, Granada Higher School of Computer Engineering, Nobel laureates, higher education'],
   },
 
   {
@@ -8674,7 +8674,7 @@ export const cityData = [
     promo: [],
     image_url: '/cities/seville.webp',
     alt: 'Academic Jobs Seville cityscape with historic buildings and river',
-    tags: [],
+    tags: ['University of Seville, Pablo de Olavide University , Nobel laureates, higher education'],
   },
 
   {
@@ -8713,7 +8713,7 @@ export const cityData = [
     promo: [],
     image_url: '/cities/rome.jpg',
     alt: 'Academic Jobs Rome skyline with ancient ruins and modern buildings',
-    tags: [],
+    tags: ['Sapienza University of Rome, University of Roma Tor Vergata, Nobel laureates, higher education'],
   },
 
   {
@@ -8748,7 +8748,7 @@ export const cityData = [
     promo: [],
     image_url: '/cities/budapest.jpg',
     alt: 'Academic Jobs Budapest, Hungary - A city of stunning architecture and rich cultural heritage',
-    tags: [],
+    tags: ['Eötvös Loránd University, Central European University, Nobel laureates, higher education'],
   },
 
   {
@@ -8795,7 +8795,7 @@ export const cityData = [
     ],
     image_url: '/cities/prague.jpg',
     alt: 'Academic Jobs Prague cityscape with historic architecture and river',
-    tags: [],
+    tags: ['Charles University, Czech Technical University in Prague, Nobel laureates, higher education'],
   },
 
   {
@@ -8849,7 +8849,7 @@ export const cityData = [
     ],
     image_url: '/cities/warsaw.jpg',
     alt: "Aerial view of Prague and Warsaw's cityscape showcasing their architectural beauty and cultural richness.",
-    tags: [],
+    tags: ['Charles University (Prague), University of Warsaw (Warsaw), Nobel laureates, higher education'],
   },
 
   {
@@ -8896,7 +8896,7 @@ export const cityData = [
     ],
     image_url: '/cities/greece.jpg',
     alt: 'Academic Jobs A panoramic view of Athens, Greece, showcasing ancient ruins juxtaposed with modern architecture.',
-    tags: [],
+    tags: ['National and Kapodistrian University of Athens, Athens University of Economics and Business, Nobel laureates, higher education'],
   },
 
   {
@@ -8945,7 +8945,7 @@ export const cityData = [
     ],
     image_url: '/cities/oslo.jpg',
     alt: 'Academic Jobs Oslo skyline overlooking the fjord and cityscape',
-    tags: [],
+    tags: ['University of Oslo, BI Norwegian Business School, Nobel laureates, higher education'],
   },
 
   {
@@ -8990,7 +8990,7 @@ export const cityData = [
     ],
     image_url: '/cities/moscow.webp',
     alt: 'Academic Jobs Aerial view of Moscow, Russia',
-    tags: [],
+    tags: ['Moscow State University, Bauman Moscow State Technical University, Nobel laureates, higher education'],
   },
 
   {
@@ -9029,7 +9029,7 @@ export const cityData = [
     promo: [],
     image_url: '/cities/bucharest.jpg',
     alt: 'Academic Jobs Bucharest skyline at sunset',
-    tags: [],
+    tags: ['University of Bucharest, Politehnica University of Bucharest , Nobel laureates, higher education'],
   },
 
   {
@@ -9073,7 +9073,7 @@ export const cityData = [
     ],
     image_url: '/cities/sofia.jpg',
     alt: 'Academic Jobs Sofia, Bulgaria - A cityscape showcasing academic institutions and landmarks',
-    tags: [],
+    tags: ['Sofia University "St. Kliment Ohridski, Technical University of Sofia, Nobel laureates, higher education'],
   },
 
   {
@@ -9111,7 +9111,7 @@ export const cityData = [
     ],
     image_url: '/cities/belgrade.jpg',
     alt: "A panoramic view of Belgrade, Serbia's historic and vibrant capital city.",
-    tags: [],
+    tags: ['University of Belgrade, Singidunum University, Nobel laureates, higher education'],
   },
 
   {
@@ -9157,7 +9157,7 @@ export const cityData = [
     ],
     image_url: '/cities/kiev.jpg',
     alt: "A panoramic view of Kiev's skyline with iconic landmarks",
-    tags: [],
+    tags: ['Taras Shevchenko National University of Kyiv, National University of Kyiv-Mohyla Academy, Nobel laureates, higher education'],
   },
 
   {
@@ -9202,7 +9202,7 @@ export const cityData = [
     ],
     image_url: '/cities/bratislava.jpg',
     alt: 'Academic Jobs View of Bratislava cityscape with the Danube River',
-    tags: [],
+    tags: ['Comenius University, Slovak University of Technology , Nobel laureates, higher education'],
   },
 
   {
@@ -9240,7 +9240,7 @@ export const cityData = [
     ],
     image_url: '/cities/vilnius.jpg',
     alt: 'Academic Jobs Vilnius skyline at dusk',
-    tags: [],
+    tags: ['Vilnius University, Mykolas Romeris University, Nobel laureates, higher education'],
   },
 
   {
@@ -9285,7 +9285,7 @@ export const cityData = [
     ],
     image_url: '/cities/riga.jpg',
     alt: "A picturesque view of Riga's old town with colorful buildings and cobblestone streets",
-    tags: [],
+    tags: ['University of Latvia, Stockholm School of Economics in Riga, Nobel laureates, higher education'],
   },
 
   {
@@ -9324,7 +9324,7 @@ export const cityData = [
     ],
     image_url: '/cities/talinn.jpg',
     alt: 'Academic Jobs Tallinn, Estonia: A Blend of Tradition and Innovation',
-    tags: [],
+    tags: ['Tallinn University, Estonian Academy of Arts, Nobel laureates, higher education'],
   },
 
   {
@@ -9362,7 +9362,7 @@ export const cityData = [
     ],
     image_url: '/cities/ljubijana.jpg',
     alt: 'Academic Jobs Ljubljana, Slovenia: A cityscape with historic buildings and the Ljubljanica River',
-    tags: [],
+    tags: ['University of Ljubljana, University of Primorska, Nobel laureates, higher education'],
   },
 
   {
@@ -9403,7 +9403,7 @@ export const cityData = [
     ],
     image_url: `/cities/zagreb.jpg`,
     alt: `Zagreb: A city of spires and academia`,
-    tags: [],
+    tags: ['University of Zagreb, University of Applied Sciences Velika Gorica, Nobel laureates, higher education'],
   },
 
   {
@@ -9447,6 +9447,6 @@ export const cityData = [
     ],
     image_url: `/cities/luxembourg.jpg`,
     alt: `Luxembourg City skyline with university buildings and green spaces`,
-    tags: [],
+    tags: ['University of Luxembourg, Sacred Heart University Luxembourg, Nobel laureates, higher education'],
   },
 ];
