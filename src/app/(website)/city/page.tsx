@@ -150,7 +150,7 @@ export default function CityInfo({
               </h2>{' '}
             </>
           ) : null}
-          <SearchFilter />
+          {/* <SearchFilter /> */}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-8">
             {/* {cityData.slice(topListCount).map((post, index) => ( */}
