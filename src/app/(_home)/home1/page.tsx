@@ -80,7 +80,7 @@ export default function myPage() {
               </h2>
             </section>
 
-            <ul className="hero-icons flex gap-8 mx-auto text-center items-center justify-center">
+            <ul className="hero-icons flex flex-wrap gap-8 mx-auto text-center items-center justify-center">
               {items.map((item, index) => (
                 <li key={index}>
                   <Link href={item.link}>
@@ -99,7 +99,7 @@ export default function myPage() {
             </ul>
           </div>
         </div>
-        <div className="temp h-[800px] mt-[120px]">Rest of content…</div>
+        <div className="temp h-[800px] mt-[120px]"></div>
       </main>
     </>
   );

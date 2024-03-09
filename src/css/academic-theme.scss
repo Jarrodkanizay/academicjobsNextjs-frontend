@@ -87,6 +87,30 @@ html {
         color: var(--aj-pink);
       }
     }
+    @media (max-width: 924px) {
+      .hero-icons {
+        position: relative;
+      }
+      .wrapper {
+        .sentence {
+          font-size: 36px;
+        }
+      }
+    }
+    @media (max-width: 724px) {
+      .wrapper {
+        .sentence {
+          font-size: 24px;
+        }
+      }
+    }
+    @media (max-width: 604px) {
+      .wrapper {
+        .sentence {
+          font-size: 14px;
+        }
+      }
+    }
 
     // display: grid;
     // grid-template-rows: auto 1fr auto;
