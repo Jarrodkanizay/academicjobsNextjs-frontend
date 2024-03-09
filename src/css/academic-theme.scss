@@ -75,9 +75,17 @@ html {
       background-color: white;
       border-radius: 100vmax;
     }
-    .hero-icons li div {
-      display: block;
+    .hero-icons li:hover img {
+      color: var(--aj-pink);
+      filter: grayscale(100%);
+    }
+
+    .hero-icons li p {
       margin-top: 8px;
+      color: #9da0a8;
+      &:hover {
+        color: var(--aj-pink);
+      }
     }
 
     // display: grid;

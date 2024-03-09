@@ -92,7 +92,7 @@ export default function myPage() {
                     />
                   </Link>
                   <Link href={item.link}>
-                    <div>{item.label}</div>
+                    <p>{item.label}</p>
                   </Link>
                 </li>
               ))}
