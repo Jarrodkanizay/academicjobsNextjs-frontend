@@ -34,6 +34,9 @@
   --color-primary-light: #fee1ab;
   --color-gray-blue: #3b5683;
   --bg-faq: #e5e7eb;
+
+  --position_type_size: 100px;
+  --position_type_y: calc(-1 * var(--position_type_size) / 2);
 }
 
 html {
@@ -45,6 +48,36 @@ html {
   body .prose {
     .filter-item.hide_filtered {
       display: none;
+    }
+    .gradient-aj {
+      background: rgb(255, 173, 31);
+      background: radial-gradient(
+        circle,
+        rgba(255, 173, 31, 1) 0%,
+        rgba(255, 112, 31, 1) 100%
+      );
+    }
+    .hero-bg {
+      position: relative;
+      background-image: url('/home/woman-with-blond-short-tanned-smiling-cute-gazing-friendly.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .hero-icons {
+      position: absolute;
+      width: 100%;
+      bottom: var(--position_type_y);
+    }
+    .hero-icons li {
+      width: var(--position_type_size);
+      height: var(--position_type_size);
+      background-color: white;
+      border-radius: 100vmax;
+    }
+    .hero-icons li div {
+      display: block;
+      margin-top: 8px;
     }
 
     // display: grid;
