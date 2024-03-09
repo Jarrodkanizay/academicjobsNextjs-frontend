@@ -76,16 +76,14 @@ html {
       border-radius: 100vmax;
     }
     .hero-icons li:hover img {
-      color: var(--aj-pink);
       filter: grayscale(100%);
     }
-
     .hero-icons li p {
       margin-top: 8px;
       color: #9da0a8;
-      &:hover {
-        color: var(--aj-pink);
-      }
+    }
+    .hero-icons li:hover a p {
+      color: var(--aj-pink) !important;
     }
     @media (max-width: 924px) {
       .hero-icons {
