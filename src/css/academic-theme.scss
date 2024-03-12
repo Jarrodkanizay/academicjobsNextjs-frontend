@@ -75,15 +75,15 @@ html {
       background-color: white;
       border-radius: 100vmax;
     }
-    .hero-icons li:hover img {
-      filter: grayscale(100%);
-    }
+    // .hero-icons li:hover img {
+    //   filter: grayscale(100%);
+    // }
     .hero-icons li p {
       margin-top: 8px;
       color: #9da0a8;
     }
     .hero-icons li:hover a p {
-      color: var(--aj-pink) !important;
+      color: #F4A10C !important;
     }
     @media (max-width: 924px) {
       .hero-icons {
