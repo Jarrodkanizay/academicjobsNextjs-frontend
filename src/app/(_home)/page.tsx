@@ -66,95 +66,7 @@ export default async function myPage() {
         </>
       ) : (
         <>
-          <div className="md:flex gap-4 mt-4">
-            <article
-              className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold"
-              data-id="59973"
-            >
-              <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">
-                Featured
-              </div>
-              <div className="flex items-center mb-2">
-                <div className="w-20 h-20 mr-4">
-                  <a href="/employers/university-of-canberra/3821">
-                    <Image
-                      alt="University of Canberra"
-                      width={100}
-                      height={100}
-                      className="w-full h-full object-contain rounded-lg"
-                      src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2Funiversity-of-canberra-logo-6C82AE8F2B-seeklogo.com.png&amp;w=256&amp;q=75"
-                    ></Image>
-                  </a>
-                </div>
-                <a
-                  className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer"
-                  href="/jobs/clinical-chair-of-nursing/88066"
-                >
-                  Clinical Chair of Nursing
-                </a>
-              </div>
-              <div className="flex justify-between items-center">
-                <div className="text-sm text-gray-600">
-                  <div className="mb-1">University of Canberra</div>
-                  <div className="text-gray-700 font-light text-sm">
-                    Bruce ACT 2617, Australia
-                  </div>
-                </div>
-                <div className="applications-close border-2 rounded px-2 mt-1 ml-2">
-                  <p className="text-center text-gray-400 text-sm mb-0">
-                    Closes
-                  </p>
-                  <div className="text-sm">
-                    <time>Mar 11, 2024</time>
-                  </div>
-                </div>
-              </div>
-            </article>
-
-            <article
-              className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold"
-              data-id="59973"
-            >
-              <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">
-                Featured
-              </div>
-              <div className="flex items-center mb-2">
-                <div className="w-20 h-20 mr-4">
-                  <a href="/employers/university-of-canberra/3821">
-                    <Image
-                      alt="University of Canberra"
-                      width={100}
-                      height={100}
-                      className="w-full h-full object-contain rounded-lg"
-                      src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2Funiversity-of-canberra-logo-6C82AE8F2B-seeklogo.com.png&amp;w=256&amp;q=75"
-                    ></Image>
-                  </a>
-                </div>
-                <a
-                  className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer"
-                  href="/jobs/associate-professor-in-medical-imaging/88073"
-                >
-                  Associate Professor in Medical Imaging
-                </a>
-              </div>
-              <div className="flex justify-between items-center">
-                <div className="text-sm text-gray-600">
-                  <div className="mb-1">University of Canberra</div>
-                  <div className="text-gray-700 font-light text-sm">
-                    Bruce ACT 2617, Australia
-                  </div>
-                </div>
-                <div className="applications-close border-2 rounded px-2 mt-1 ml-2">
-                  <p className="text-center text-gray-400 text-sm mb-0">
-                    Closes
-                  </p>
-                  <div className="text-sm">
-                    <time>Mar 4, 2024</time>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
+        
 
           <div className="md:flex gap-4">
             <article
@@ -576,35 +488,7 @@ export default async function myPage() {
             </div>
           </div> */}
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/video-technician-summer-2024/84765"
-                    className="text-blue-500 font-bold"
-                  >
-                    Video Technician summer 2024
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Southern Utah University</Link>
-                  </li>
-                  <li>
-                    <Link href="">Cedar City, UT, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 1, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4968138"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
+          
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
@@ -891,58 +775,8 @@ export default async function myPage() {
                 </ul>
               </ul>
             </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/assistant-controller-71101-/84760"
-                    className="text-blue-500 font-bold"
-                  >
-                    Assistant Controller (71101)
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">Pratt Institute</Link>
-                  </li>
-                  <li>
-                    <Link href="">Brooklyn, NY, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 1, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4970008"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/project-manager/90111"
-                    className="text-blue-500 font-bold"
-                  >
-                    Project Manager
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">University of New South Wales (UNSW)</Link>
-                  </li>
-                  <li>
-                    <Link href="">Kensington,NSW, Aus</Link>
-                  </li>
-                  <li>
-                    <Link href="">Mar 4, 2024</Link>
-                  </li>
-                </ul>
-              </ul>
-            </div>
+         
+     
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
