@@ -58,7 +58,7 @@ export default function myPage() {
       <Link href="/research/faq" className="pt-4 text-sky-500">
         View Research Jobs FAQ
       </Link>
-
+\
       <JobSearchBox q= 'research' />
       <SearchResults q={{ q: 'research' || 0 }} />
     </main>
