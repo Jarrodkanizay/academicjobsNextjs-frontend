@@ -106,7 +106,7 @@ export default function Page() {
     AdministrationSupportJobs: 'Administration Support Jobs',
     HRJobs: 'HR Jobs',
     FacultyDepartmentJobs: 'Faculty/Department',
-    AcademicPositionType: 'Academic Position Type',
+    AcademicPositionType: 'Faculty/Department',
     EmploymentType: 'Employment Type',
     InstitutionName: 'Institution Name',
     SalaryRange: 'Salary Range in USD',
