@@ -6,7 +6,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: 'Boston University jobs', //Option 2 overrides the title in layout.tsx
+    absolute: 'Boston University Careers', //Option 2 overrides the title in layout.tsx
   },
   description:
     'Boston University offers a variety of job opportunities for faculty, staff, and students. Whether you are looking for a full-time or part-time position, a tenure-track or non-tenure-track role, or an on-campus or off-campus location, you can find your ideal job at Boston University. ',

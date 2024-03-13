@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: 'FAQ Academic Jobs Online', //Option 2 overrides the title in layout.tsx
   },
   description:
-    'Discover academic jobs at all universities today! Explore your next academic positions through visiting our higher ed jobs, with new academic jobs added daily.',
+    'Find out about academic positions at all universities right now! Visit our FAQ Academic Jobs Online page to find if your next question has already been answered.',
   keywords: 'FAQ academicjobs, academicjobs FAQ, Frequently Asked Questions',
 };
 export default function myPage() {

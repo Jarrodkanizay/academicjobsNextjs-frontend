@@ -1,7 +1,8 @@
-// import Link from 'next/link';
+import Link from 'next/link';
 import industryData from '@/data/industry.json';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 // import type { Metadata } from 'next';
 
 type MetadataTypes = {
@@ -58,7 +59,7 @@ export default function Page({ params, searchParams }: any) {
   //const { logo, company_name, website, company_description, location } = data
   //console.log(company_description)
   content = (
-    <div className="content-grid flex-col gap-2">
+    <div className="content-grid flex-col md:gap-2">
       {/* <Link className="text-[#f4a10c] " href="/industry/">
         View all Lecturer Jobs →
       </Link> */}
@@ -70,6 +71,12 @@ export default function Page({ params, searchParams }: any) {
           </h1>
           <p className="px-7 mb-4 mt-1">{content1}</p>
         </div>
+        <Link
+                      href={'/academic-talent-pool'}
+                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
+                    >
+                     Join Our Talent Pool
+                    </Link>
       </div>
 
       <JobSearchBox q={Name} />

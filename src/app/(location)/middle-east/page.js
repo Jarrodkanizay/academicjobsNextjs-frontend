@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
+import ME from '@/components/topUnis/ME';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -15,21 +17,21 @@ export default function Page() {
   return (
     <div>
       <div className="pt-[5rem] flex flex-col items-center justify-center" >
-        <img
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/Middle-Leaf.png"
-
-          alt="AcademicJobs Middle East"
-          className=" w-[8rem]  "
-        /></div>
+      </div>
  <div className=" flex flex-col items-center justify-center" >
-        <img
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-middle-east.png"
+        <Image
+          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-middle-east-min.png"
 
-          alt="AcademicJobs Middle East"
+          alt="AcademicJobs Middle East logo"
           className=" w-[20rem] mb-[1rem] mt-[-1rem]"
+          width={330}
+          height={220}
         /></div>
       <JobSearchBox l="Middle East"/>
-      <div className=" mt-[10rem] " >
+      
+      <h3 className="text-center ">We Are Middle East's University Job Website</h3>
+      
+      <div className=" mt-[5rem] " >
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-500 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li><Link href="/Middle-East/lecturer/" >	Lecturer</Link></li>
@@ -45,7 +47,7 @@ export default function Page() {
       </div>
 
 
-      <div className=" mt-4 " >
+      <div className=" mt-2 " >
         <ul className="faculty-container flex  gap-4 items-center justify-center text-[#922c40] ">
 
           <li><Link href="/online/" >	Online </Link></li>
@@ -57,24 +59,19 @@ export default function Page() {
         </ul>
       </div>
 
-      <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">
-        <a href="#section" class="scroll-smooth md:scroll-auto">
-          ▼
-        </a>
-      </div>
+  
 
-      <div className="content-grid mx-auto">
+      <div className="content-grid mx-auto py-5">
         
    
     
             
             
             
-        <div id="section" className=" full-width py-4 mt-[30rem] full-width mb-[175px] bg-slate-200">
+        <div id="section" className=" full-width py-4 full-width mb-[175px] bg-slate-200">
   <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
   <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
-          <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS Middle East:</span> < br /> Academic, research &&nbsp;science positions locally
-          & globally
+          <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS Middle East:</span> < br />
           </h1>
           
         <div>
@@ -108,43 +105,8 @@ export default function Page() {
           <div id="myUniversity" class="myUniversity">
             <div class="widget__text-block1"> */}
               <div>
-              <h2 className="underline-full">AcademicJobs Middle East: University Jobs  </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
-                  <ul>
-                    <li className='mb-1 '><Link href="/jobs/saudi arabia/" className='text-[#f4a10c] font-bold'>Saudi Arabia</Link></li>
-                    <li><Link href="/employers/king-saud-university-saudi-arabia/8522/">King
-                      Saud University</Link>
-                    </li>
-                    <li><Link href="/employers/king-abdullah-university-of-science-and-technology-saudi-arabia/8513/">King
-                      Abdullah University of Science and Technology</Link></li>
-                    <li><Link href="/employers/king-abdul-aziz-university-saudi-arabia/8512/">King
-                      Abdul Aziz University</Link></li>
-                  </ul>
-                  <ul>
-                    <li className='mb-1 '><Link href="/jobs/uae/" className='text-[#f4a10c] font-bold'>UAE</Link></li>
-                    <li><Link href="/employers/khalifa-university-uae/8481/">Khalifa
-                      University</Link>
-                    </li>
-                    <li><Link href="/employers/united-arab-emirates-university-uae/10985/">United
-                      Arab Emirates University</Link></li>
-                    <li><Link href="/employers/american-university-in-dubai-uae/5799/">American
-                      University in Dubai</Link></li>
-                    <li><Link href="/employers/american-university-of-sharjah-uae/5815/">American
-                      University of Sharjah</Link></li>
-                  </ul>
-                  <ul>
-                    <li className='mb-1 '><Link href="/jobs/lebanon/" className='text-[#f4a10c] font-bold'>Lebanon</Link></li>
-                    <li><Link href="/employers/american-university-of-beirut-lebanon/5804/">American
-                      University of Beirut</Link></li>
-                    <li className='mb-1 '><Link href="/jobs/jordan/" className='text-[#f4a10c] font-bold'>Jordan</Link></li>
-                    <li><Link href="/employers/university-of-jordan-jordan/12763/">University
-                      of Jordan</Link></li>
-                    <li className='mb-1 '><Link href="/jobs/qatar/" className='text-[#f4a10c] font-bold'>Qatar</Link></li>
-                    <li><Link href="/employers/qatar-university-qatar/12944/">Qatar
-                      University</Link>
-                    </li>
-                  </ul>
-                </div>
+              <h2 className="">AcademicJobs Middle East: University Jobs  </h2>
+              <ME heading="" />
               </div>
             </div>
           </div>

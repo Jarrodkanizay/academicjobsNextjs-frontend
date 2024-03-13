@@ -42,10 +42,10 @@ Find all the best executive jobs here…`,
     Name: `admin`,
     Title: `Admin Jobs Europe`,
     Description: `You may work with a bright and diverse team at Admin and Support Academic Jobs Europe by promoting your company's innovative practises and academic standards.`,
-    Keyword: `Academic Admin Jobs Europe`,
+    Keyword: `University Admin Jobs Europe`,
     content: `Seek your perfect admin position through Europe’s best job board! At Academic Jobs we offer the most renowned Higher Ed jobs at the top European universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
 The No.1 job board for euro jobs!. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
-Find all the best administrative jobs here…`,
+Find all the best staff jobs here…`,
   },
 
   {
@@ -84,7 +84,7 @@ Find all the best student jobs here…`,
   {
     Name: `phd`,
     Description: `A great number of PhD job postings from Europe and international universities are available on our site`,
-    Title: `Academic faculty Jobs Europe`,
+    Title: `Academic PhD Jobs Europe`,
     Keyword: `Academic PhD Jobs Europe`,
     content: `Our website lists PhD openings from reputable universities. Apply now on our website to be considered for amazing PHD programmes in Europe. The top applicants are constantly sought after by our academic institutions to work on PHDs. For PhD roles on campus in a range of departments and activities inside a university or PHD institution, part-time or temporary labour is required.`,
   },

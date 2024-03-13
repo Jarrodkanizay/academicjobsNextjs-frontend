@@ -1,7 +1,6 @@
 const data = [
   {
-    break1: true,
-
+    // Blog 1
     Name: 'how to land your dream college job a step by step guide',
     Title: 'How to Land Your Dream College Job: A Step-by-Step Guide',
     Description:
@@ -9,7 +8,7 @@ const data = [
     Keyword: 'Academic Dream Jobs. dream college job',
     content: '06 Jul, 2023',
     content2: `  
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Dream_Job_2.png" alt="How to Land Your Dream College Job: A Step-by-Step Guide">
+  <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/Dream_Job_2.png" alt="How to Land Your Dream College Job: A Step-by-Step Guide">
   <div class="blog__content">
   <p>&nbsp;</p>
                 <p "padding-top: 40px;  "><span style= >Securing your dream job in the field of academics requires a strategic and purposeful approach. Just as in any other profession, landing an academic position necessitates careful planning, relevant experience, networking, and a strong understanding of the industry. This article aims to guide you through the process of pursuing your dream academic job, building upon the strategies discussed in our previous article on landing a dream job in college. By following these steps, you can increase your chances of achieving your career goals in academia.</span></p>
@@ -46,7 +45,7 @@ const data = [
   `,
   },
   {
-    break1: true,
+    // Blog 2
     Name: 'exploring the global landscape of academic jobs opportunities and challenges',
     Title:
       'Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges',
@@ -56,9 +55,9 @@ const data = [
     content: '07 Jul, 2023',
     content2: `  
   <div class="blog__content">
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Global_Opportunities_2.png" alt="Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges">
+  <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/Global_Opportunities_2.png" alt="Exploring the Global Landscape of Academic Jobs: Opportunities and Challenges">
   <p>&nbsp;</p>
-                <p><span style="">Exploring the global landscape of academic jobs reveals a diverse range of opportunities and challenges for individuals pursuing careers in academia. Academic jobs encompass various roles, including professors, researchers, postdoctoral fellows, lecturers, and administrative positions within educational institutions.</span></p>
+                <p><span style="">Exploring the global landscape of academic jobs reveals a diverse range of opportunities and challenges for individuals pursuing careers in academia. Academic jobs encompass various roles, including professors, researchers, postdoctoral fellows, lecturers, and staff positions within educational institutions.</span></p>
 <p><span style="">Let's delve into the opportunities and challenges associated with academic careers on a global scale.</span></p>
 <p style="padding-top: 40px;><span "><strong>Opportunities</strong>:</span></p>
 <p style="padding-left: 40px;"><span style=""><strong>&gt; Global Mobility</strong>: One of the significant advantages of academic careers is the potential for international mobility. Academic jobs provide opportunities for individuals to work in different countries and experience diverse cultures and academic environments. This mobility not only enriches personal and professional experiences but also facilitates collaboration, knowledge exchange, and exposure to different research methodologies and perspectives. Working in different countries allows academics to build a global professional network, fostering collaboration and cross-cultural understanding.</span></p>
@@ -88,7 +87,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 3
     Name: 'exploring the benefits of academic jobs online why virtual hiring is on the rise',
     Title:
       'Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise',
@@ -97,7 +96,7 @@ const data = [
     Keyword: 'benefits of academic jobs online. virtual hiring is on the rise',
     content: '20 Jun, 2023',
     content2: `   
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Virtual_Hiring.png" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
+  <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/Virtual_Hiring.png" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
   <div class="blog__content">
   <p>&nbsp;</p>
   <p><span style="">Virtual hiring for academic jobs has gained significant popularity in recent years, and there are several reasons why it is on the rise beyond just coping with a pandemic!</span></p>
@@ -124,7 +123,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 4
     Name: 'happiness and academics',
     Title: "Happiness and Academics: Scott Galloway's Algebra of Happiness",
     Description:
@@ -132,7 +131,7 @@ const data = [
     Keyword: 'Academic Happiness. happiness and academics',
     content: '16 Oct, 2023',
     content2: `   
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/how-to-be-a-happy-academic.jpg" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
+  <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/how-to-be-a-happy-academic.jpg" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
       <div className="container mx-auto py-4">
       
@@ -189,15 +188,15 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 5
     Name: 'top academic jobs australia',
     Title: 'Top Academic Jobs Australia',
     Description:
-      'Looking for the best academic jobs in Australia? This blog shows the best of faculty, research, and administrative positions at leading universities. ',
+      'Looking for the best academic jobs in Australia? This blog shows the best of faculty, research, and staff positions at leading universities. ',
     Keyword: 'Top Academic Jobs Australia. Academic Jobs Australia',
     content: '10 Aug, 2023',
     content2: `   
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/top-academic-jobs-australia.jpg" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
+  <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/top-academic-jobs-australia.jpg" alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
   <div class="blog__content">
   <div tabindex="0">
@@ -253,7 +252,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 6
     Name: 'the evolution of university recruitment',
     Title:
       'The Evolution of University Recruitment: Embracing Digital Platforms',
@@ -263,7 +262,7 @@ const data = [
       'evolution of university recruitment. evolution of academic recruitment',
     content: 'May 15, 2023',
     content2: `   
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
+  <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
   <div class="blog__content">
   <p>&nbsp;</p><p><p><span style="";">The evolution of university recruitment has undergone significant changes in recent years, with the increasing adoption and integration of digital platforms. Traditional methods of recruitment, such as on-campus career fairs and job postings, have been supplemented and, in some cases, replaced by innovative digital strategies. This shift has been driven by several factors, including advancements in technology, changing candidate preferences, and the need for more efficient and cost-effective recruitment processes. According to a report by McKinsey, companies can reduce their cost per hire by 60% using digital recruiting methods. The Society for Human Resource Management (SHRM) estimates that recruiters can save up to 80% of their time by using AI-powered recruitment tools.</span></p>
@@ -323,7 +322,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 7
     Name: 'highest paid academic jobs australia 2023',
     Title: 'The Highest Paid Academic Jobs Australia for 2023',
     Description:
@@ -331,7 +330,7 @@ const data = [
     Keyword: 'highest paid academic jobs Australia 2023 .',
     content: 'May 15, 2023',
     content2: `   
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
+  <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
   <div class="container">
   <p style="padding-bottom: 2rem">If you are looking for a rewarding and lucrative career in academia, you might be interested in knowing which academic jobs pay the best. According to the latest data from the Australian Taxation Office, the highest paid academic jobs in Australia for 2023 are:</p>
@@ -403,7 +402,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 8
     Name: 'the highest paid academic job in 2023',
     Title: 'Unveiling the Pinnacle: The Highest-Paid Academic Job in 2023',
     Description:
@@ -411,7 +410,7 @@ const data = [
     Keyword: 'highest paid academic job 2023 .',
     content: 'May 15, 2023',
     content2: `   
-  <img src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
+  <Image src="https://academicjobs.s3.amazonaws.com/img/_misc/Recruitment_Evolution_2.png " alt="Exploring the Benefits of Academic Jobs Online: Why Virtual Hiring is on the Rise">
  
 
   <div class="container">
@@ -442,7 +441,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 9
     Name: 'find student jobs on your university campus',
     Title: 'Find Student Jobs on your University Campus',
     Description:
@@ -459,7 +458,7 @@ const data = [
 <p>Beyond the professional growth, students working in roles such as those at the university coffee shop or gym find themselves embedded in a vibrant community, building connections with peers, faculty, and the university community. This close-knit engagement within the campus community contributes to the development of a strong work ethic, creating a dynamic environment where shared experiences transcend the workplace and extend into the broader university experience.<o:p></o:p></p>
 <p><o:p>&nbsp;</o:p></p>
 
-<p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip0.png"><!--[endif]--><o:p></o:p></p>
+<p><Image src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip0.png"><!--[endif]--><o:p></o:p></p>
 <p><o:p>&nbsp;</o:p></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -479,7 +478,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 10
     Name: 'seek all qut university careers here',
     Title: 'Seek all QUT University Careers Here',
     Description:
@@ -489,7 +488,7 @@ const data = [
     content2: `   
 
 
-<p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip1.png"></p>
+<p><Image src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip1.png"></p>
 <p>&nbsp;</p>
 <p>Academic Jobs can help you kick start your career at Queensland University of Technology today! <o:p></o:p></p>
 <p><br>A career at QUT University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment.<o:p></o:p></p>
@@ -524,7 +523,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 11
     Name: 'seek all qut university jobs here',
     Title: 'Seek all QUT University Jobs Here',
     Description:
@@ -534,7 +533,7 @@ const data = [
     content2: `   
   
   
-  <div><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip2.png"><br>
+  <div><Image src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip2.png"><br>
 <p><o:p>&nbsp;</o:p></p>
 <p>Find you next job as a part of the academic team at Queensland University of Technology (QUT), working alongside some of the best. Life at QUT offers an enriching experience, positioning it as an ideal place of employment, especially for lecturers and academics. As a lecturer at QUT, one can partake in a dynamic academic environment that emphasises innovative teaching methodologies and fosters close connections with students during engaging lectures. <o:p></o:p></p>
 <p><o:p>&nbsp;</o:p></p>
@@ -556,7 +555,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 12
     Name: 'seek all bond university careers here',
     Title: 'Seek all Bond University Careers Here',
     Description:
@@ -566,7 +565,7 @@ const data = [
     content2: `   
     
     
-    <div><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip3.png"><br><o:p></o:p>
+    <div><Image src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip3.png"><br><o:p></o:p>
 <div>
 <p>Academic Jobs can help you kick start your career at Bond Uni today! <o:p></o:p></p>
 <p><br>A career at Bond University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. With a commitment to excellence in education and research, Bond University provides a platform for employees to contribute meaningfully to the academic community. The small class sizes allow personalised interactions with students, creating a unique and impactful teaching experience. The university's state-of-the-art facilities, global perspective, and interdisciplinary approach to research offer a stimulating environment for continuous learning and professional development. <o:p></o:p></p>
@@ -598,7 +597,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 13
     Name: 'seek all bond university jobs here',
     Title: 'Seek all Bond University Jobs Here',
     Description:
@@ -609,7 +608,7 @@ const data = [
       
       
       <div>
-<p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip4.png"></p>
+<p><Image src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip4.png"></p>
 <p>&nbsp;</p>
 <p>Find you next job as a part of the academic team at Bond University, working alongside some of the best. Working at Bond University provides an exceptional professional and academic experience, making it an ideal place of employment. The university's commitment to academic excellence is manifested in its cutting-edge facilities and intimate lecture settings, providing lecturers with a conducive environment for impactful teaching. <o:p></o:p></p>
 <p><o:p>&nbsp;</o:p></p>
@@ -632,7 +631,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 14
     Name: 'start your career at harvard university',
     Title: 'Start your Career at Harvard University ',
     Description:
@@ -643,7 +642,7 @@ const data = [
         
         
         <div>
-<p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip5.png"></p>
+<p><Image src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip5.png"></p>
 <p>&nbsp;</p>
 
 <p><br>A career at Harvard University in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment.<o:p></o:p></p>
@@ -680,7 +679,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 15
     Name: 'seek all harvard university jobs here',
     Title: 'Seek all Harvard University Jobs Here ',
     Description:
@@ -691,7 +690,7 @@ const data = [
           
           
           <div>
-<p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip6.png"></p>
+<p><Image src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip6.png"></p>
 <p>&nbsp;</p>
 <p>Find you next job as a part of the academic team at Harvard University, working alongside some of the best. A job at Harvard University represents an unparalleled opportunity to be part of an esteemed institution renowned for its commitment to academic excellence, ground-breaking research, and global impact. Whether as a professor, lecturer, researcher, or academic administrator, individuals at Harvard engage in an intellectually stimulating environment where innovation, diversity, and interdisciplinary collaboration flourish. <o:p></o:p></p>
 <p><o:p>&nbsp;</o:p></p>
@@ -722,7 +721,7 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 16
     Name: 'seek all ucla jobs here',
     Title: 'Seek all UCLA Jobs Here ',
     Description:
@@ -733,7 +732,7 @@ const data = [
             
             
             <div>
-            <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip7.png"></p>
+            <p><Image src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip7.png"></p>
             <p>&nbsp;</p>
             <p>Find you next job as a part of the academic team at the University of California, Los Angeles, working alongside some of the best. <o:p></o:p></p>
             <p><o:p>&nbsp;</o:p></p>
@@ -769,21 +768,18 @@ const data = [
   },
 
   {
-    break1: true,
+    // Blog 17
     Name: 'start you career at ucla',
     Title: 'Start you Career at UCLA ',
     Description:
       'Professionals can flourish in an innovative and dynamic higher education setting by holding academic roles at UCLA.',
     Keyword: 'Start you Career at UCLA ',
     content: 'Start you Career at UCLA ',
-    content2: `   
-              
-              
-              <div>
-              <p><img src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip8.png"></p>
+    content2: `              <div>
+              <p><Image src="https://academicjobs.mysmartjobboard.com/files/userfiles/mceclip8.png"></p>
               <p>&nbsp;</p>
               <p>Academic Jobs can help you kick start your career at UCLA today!<o:p></o:p></p>
-              <p><br>A career at The University of California, Los Angeles (UCLA) in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. Whether in faculty roles such as Assistant, Associate, or Full Professors, or engaging in dynamic administrative positions within higher education, UCLA provides a platform for professionals to thrive, fostering a culture of innovation, diversity, and continuous learning. <o:p></o:p></p>
+              <p><br>A career at The University of California, Los Angeles (UCLA) in academic positions offers an opportunity for professionals to thrive in a stimulating and innovative higher ed environment. Whether in faculty roles such as Assistant, Associate, or Full Professors, or engaging in dynamic staff positions within higher education, UCLA provides a platform for professionals to thrive, fostering a culture of innovation, diversity, and continuous learning. <o:p></o:p></p>
               <p><o:p>&nbsp;</o:p></p>
               <p>A career at UCLA opens doors to a vibrant community of scholars, offering academic positions and higher education opportunities that empower individuals to contribute to the excellence of the nation's top public university. Joining UCLA means embracing a commitment to True Bruin Values, upholding ethical standards, and playing a pivotal role in shaping the future of higher education while enjoying the picturesque campus in Westwood, just five miles from the Pacific Ocean.<o:p></o:p></p>
               <p><o:p>&nbsp;</o:p></p>

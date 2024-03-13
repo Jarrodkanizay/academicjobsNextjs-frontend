@@ -19,6 +19,7 @@ import { regionData as middleeastPositions } from '@/data/middleeastPositions';
 import { regionData as newzealandPositions } from '@/data/newzealandPositions';
 import { regionData as southamericaPositions } from '@/data/southamericaPositions';
 import { regionData as ukPositions } from '@/data/ukPositions';
+import USA from '@/components/topUnis/USA';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -335,7 +336,7 @@ export default function myPage() {
                       <Link href="/employers/caltech/3128/">Caltech</Link>
                     </li>
                     <li className="pb-6">
-                      <Link href="/employers/University-of-Chicago/3126/">
+                      <Link href="/employers/university-of-chicago/3126/">
                         {' '}
                         University of Chicago
                       </Link>
@@ -353,7 +354,7 @@ export default function myPage() {
                       </Link>
                     </li>
                     <li className="pb-6">
-                      <Link href="/employers/Cornell-University/3138/">
+                      <Link href="/employers/cornell-university/3138/">
                         Cornell University
                       </Link>
                     </li>
@@ -416,65 +417,17 @@ export default function myPage() {
         <div className="cate-group section23 ">
           <div className="widget__text-block">
             <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-8 py-2 px-7">
-              <div className="column">
-                <ul className="">
-                  <li className="mb-2 mt-4">
-                    <Link
-                      href="/USA/"
-                      className="text-[#f4a10c] font-bold mb-2"
-                    >
-                      USA
-                    </Link>
-                  </li>
-                  <ul className="innerUL">
-                    <li className="pb-6">
-                      <Link href="/boston/">Boston</Link>
-                    </li>
-                    <li className="pb-6">
-                      <Link href="/new-york/">New York</Link>
-                    </li>
-                    <li className="pb-6">
-                      <Link href="/los-angeles/">Los Angeles</Link>
-                    </li>
-                    <li className="pb-6">
-                      <Link href="/san-francisco/">San Francisco</Link>
-                    </li>
-                    <li className="pb-6">
-                      <Link href="/chicago/">Chicago</Link>
-                    </li>
-                    <li className="pb-6">
-                      <Link href="/san-diego/">San Diego</Link>
-                    </li>
-                    <li className="pb-6">
-                      <Link href="/washington-dc/">Washington DC</Link>
-                    </li>
-                    <li className="pb-6">
-                      <Link href="/philadelphia/">Philadelphia</Link>
-                    </li>
-                    <li className="pb-6">
-                      <Link href="/atlanta/">Atlanta</Link>
-                    </li>
-                    <li className="pb-6">
-                      <Link href="/seattle/">Seattle</Link>
-                    </li>
-                    <li className="pb-6">
-                      <Link href="/pittsburgh/">Pittsburgh</Link>
-                    </li>
-                    <li className="pb-6">
-                      <Link href="/new-haven/">New Haven</Link>
-                    </li>
-                  </ul>
-                </ul>
-              </div>
+           
+            <USA heading="UNITED STATES" />
 
               <div className="column">
                 <ul className="">
                   <li className="mb-2 mt-4">
                     <Link
-                      href="/Australia/"
+                      href="/australia/"
                       className="text-[#f4a10c] font-bold mb-2"
                     >
-                      Australia
+                      australia
                     </Link>
                   </li>
                   <ul className="innerUL">
@@ -501,8 +454,8 @@ export default function myPage() {
                     </li>
                   </ul>
                   <li className="mb-2 mt-4">
-                    <Link href="/UK/" className="text-[#f4a10c] font-bold mb-2">
-                      UK
+                    <Link href="/uk/" className="text-[#f4a10c] font-bold mb-2">
+                      uk
                     </Link>
                   </li>
                   <ul className="innerUL">
@@ -524,10 +477,10 @@ export default function myPage() {
                 <ul className="">
                   <li className="mb-2 mt-4">
                     <Link
-                      href="/Canada/"
+                      href="/canada/"
                       className="text-[#f4a10c] font-bold mb-2"
                     >
-                      Canada
+                      canada
                     </Link>
                   </li>
                   <ul className="innerUL">
@@ -544,10 +497,10 @@ export default function myPage() {
 
                   <li className="mb-2 mt-4">
                     <Link
-                      href="/Asia/"
+                      href="/asia/"
                       className="text-[#f4a10c] font-bold mb-2"
                     >
-                      Asia
+                      asia
                     </Link>
                   </li>
                   <ul className="innerUL">
@@ -572,10 +525,10 @@ export default function myPage() {
                 <ul className="">
                   <li className="mb-2 mt-4">
                     <Link
-                      href="/Europe/"
+                      href="/europe/"
                       className="text-[#f4a10c] font-bold mb-2"
                     >
-                      Europe
+                      europe
                     </Link>
                   </li>
                   <ul className="innerUL">
@@ -675,7 +628,7 @@ export default function myPage() {
           </ul>
         </div>
 
-        <div className="bg-white flex flex-col  ">
+        {/* <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
             <Link href="/position/">Find Academic Positions / Roles</Link>
           </h2>
@@ -691,7 +644,7 @@ export default function myPage() {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
@@ -713,7 +666,7 @@ export default function myPage() {
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
-            <Link href="/admin/">Find Academic Admin/Support jobs</Link>
+            <Link href="/staff-jobs/">Find University Admin/Support jobs</Link>
           </h2>
           <ul className=" mb-8 text-left xs:columns-1 sm:columns-1 md:columns-4  md:gap-2 py-2 px-7 h-auto w-full text-transform: capitalize">
             {admin.map(({ Name }, key) => (
@@ -721,7 +674,7 @@ export default function myPage() {
                 className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
                 key={key}
               >
-                <Link href={`/admin/${Name?.replace(/\s+/g, '-')}/`}>
+                <Link href={`/staff-jobs/${Name?.replace(/\s+/g, '-')}/`}>
                   {Name}
                 </Link>
               </li>
@@ -749,7 +702,7 @@ export default function myPage() {
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
-            <Link href="/student/">Find Student jobs on Campus</Link>
+            <Link href="/student-jobs/">Find Student jobs on Campus</Link>
           </h2>
           <ul className=" mb-8 text-left xs:columns-1 sm:columns-1 md:columns-4  md:gap-2 py-2 px-7 h-auto w-full text-transform: capitalize">
             {student.map(({ Name }, key) => (
@@ -757,7 +710,7 @@ export default function myPage() {
                 className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
                 key={key}
               >
-                <Link href={`/student/${Name?.replace(/\s+/g, '-')}/`}>
+                <Link href={`/student-jobs/${Name?.replace(/\s+/g, '-')}/`}>
                   {Name}
                 </Link>
               </li>
@@ -805,7 +758,7 @@ export default function myPage() {
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
-            <Link href="/UK/">Find UK Jobs</Link>
+            <Link href="/uk/">Find uk Jobs</Link>
           </h2>
           <ul className=" mb-8 text-left xs:columns-1 xs:columns-1 sm:columns-1 md:columns-4  md:gap-2 py-2 px-7 h-auto w-full text-transform: capitalize ">
             {ukPositions.map(({ Name }, key) => (
@@ -813,7 +766,7 @@ export default function myPage() {
                 className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
                 key={key}
               >
-                <Link href={`/UK/${Name?.replace(/\s+/g, '-')}/`}>{Name}</Link>
+                <Link href={`/uk/${Name?.replace(/\s+/g, '-')}/`}>{Name}</Link>
               </li>
             ))}
           </ul>
@@ -821,7 +774,7 @@ export default function myPage() {
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
-            <Link href="/South-America/">Find South America Jobs</Link>
+            <Link href="/south-america/">Find South America Jobs</Link>
           </h2>
           <ul className=" mb-8 text-left xs:columns-1 sm:columns-1 md:columns-4  md:gap-2 py-2 px-7 h-auto w-full text-transform: capitalize ">
             {southamericaPositions.map(({ Name }, key) => (
@@ -829,7 +782,7 @@ export default function myPage() {
                 className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
                 key={key}
               >
-                <Link href={`/South-America/${Name?.replace(/\s+/g, '-')}/`}>
+                <Link href={`/south-america/${Name?.replace(/\s+/g, '-')}/`}>
                   {Name}
                 </Link>
               </li>
@@ -839,7 +792,7 @@ export default function myPage() {
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
-            <Link href="/New-Zealand/">Find New Zealand Jobs</Link>
+            <Link href="/new-zealand/">Find New Zealand Jobs</Link>
           </h2>
           <ul className=" mb-8 text-left xs:columns-1 sm:columns-1 md:columns-4  md:gap-2 py-2 px-7 h-auto w-full text-transform: capitalize ">
             {newzealandPositions.map(({ Name }, key) => (
@@ -847,7 +800,7 @@ export default function myPage() {
                 className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
                 key={key}
               >
-                <Link href={`/New-Zealand/${Name?.replace(/\s+/g, '-')}/`}>
+                <Link href={`/new-zealand/${Name?.replace(/\s+/g, '-')}/`}>
                   {Name}
                 </Link>
               </li>
@@ -857,7 +810,7 @@ export default function myPage() {
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
-            <Link href="/Middle-East/">Find Middle East Jobs</Link>
+            <Link href="/middle-east/">Find Middle East Jobs</Link>
           </h2>
           <ul className=" mb-8 text-left xs:columns-1 sm:columns-1 md:columns-4  md:gap-2 py-2 px-7 h-auto w-full text-transform: capitalize ">
             {middleeastPositions.map(({ Name }, key) => (
@@ -865,7 +818,7 @@ export default function myPage() {
                 className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
                 key={key}
               >
-                <Link href={`/Middle-East/${Name?.replace(/\s+/g, '-')}/`}>
+                <Link href={`/middle-east/${Name?.replace(/\s+/g, '-')}/`}>
                   {Name}
                 </Link>
               </li>
@@ -875,7 +828,7 @@ export default function myPage() {
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
-            <Link href="/India/">Find India Jobs</Link>
+            <Link href="/india/">Find india Jobs</Link>
           </h2>
           <ul className=" mb-8 text-left xs:columns-1 sm:columns-1 md:columns-4  md:gap-2 py-2 px-7 h-auto w-full text-transform: capitalize ">
             {indiaPositions.map(({ Name }, key) => (
@@ -883,7 +836,7 @@ export default function myPage() {
                 className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
                 key={key}
               >
-                <Link href={`/India/${Name?.replace(/\s+/g, '-')}/`}>
+                <Link href={`/india/${Name?.replace(/\s+/g, '-')}/`}>
                   {Name}
                 </Link>
               </li>
@@ -893,7 +846,7 @@ export default function myPage() {
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
-            <Link href="/Europe/">Find Europe Jobs</Link>
+            <Link href="/europe/">Find europe Jobs</Link>
           </h2>
           <ul className=" mb-8 text-left xs:columns-1 sm:columns-1 md:columns-4  md:gap-2 py-2 px-7 h-auto w-full text-transform: capitalize ">
             {europePositions.map(({ Name }, key) => (
@@ -901,7 +854,7 @@ export default function myPage() {
                 className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
                 key={key}
               >
-                <Link href={`/Europe/${Name?.replace(/\s+/g, '-')}/`}>
+                <Link href={`/europe/${Name?.replace(/\s+/g, '-')}/`}>
                   {Name}
                 </Link>
               </li>
@@ -911,7 +864,7 @@ export default function myPage() {
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
-            <Link href="/Canada/">Find Canada Jobs</Link>
+            <Link href="/canada/">Find canada Jobs</Link>
           </h2>
           <ul className=" mb-8 text-left xs:columns-1 sm:columns-1 md:columns-4  md:gap-2 py-2 px-7 h-auto w-full text-transform: capitalize ">
             {canadaPositions.map(({ Name }, key) => (
@@ -919,7 +872,7 @@ export default function myPage() {
                 className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
                 key={key}
               >
-                <Link href={`/Canada/${Name?.replace(/\s+/g, '-')}/`}>
+                <Link href={`/canada/${Name?.replace(/\s+/g, '-')}/`}>
                   {Name}
                 </Link>
               </li>
@@ -929,7 +882,7 @@ export default function myPage() {
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
-            <Link href="/Africa/">Find Africa Jobs</Link>
+            <Link href="/africa/">Find africa Jobs</Link>
           </h2>
           <ul className=" mb-8 text-left xs:columns-1 sm:columns-1 md:columns-4  md:gap-2 py-2 px-7 h-auto w-full text-transform: capitalize ">
             {africaPositions.map(({ Name }, key) => (
@@ -937,7 +890,7 @@ export default function myPage() {
                 className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
                 key={key}
               >
-                <Link href={`/Africa/${Name?.replace(/\s+/g, '-')}/`}>
+                <Link href={`/africa/${Name?.replace(/\s+/g, '-')}/`}>
                   {Name}
                 </Link>
               </li>
@@ -947,7 +900,7 @@ export default function myPage() {
 
         <div className="bg-white flex flex-col  ">
           <h2 className="text-1xl font-bold mb-2 py-1 px-7 bg-[#f4a10c] text-white rounded-3xl mt-20 ">
-            <Link href="/Asia/">Find Asia Jobs</Link>
+            <Link href="/asia/">Find asia Jobs</Link>
           </h2>
           <ul className=" mb-8 text-left xs:columns-1 sm:columns-1 md:columns-4  md:gap-2 py-2 px-7 h-auto w-full text-transform: capitalize ">
             {asiaPositions.map(({ Name }, key) => (
@@ -955,7 +908,7 @@ export default function myPage() {
                 className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
                 key={key}
               >
-                <Link href={`/Asia/${Name?.replace(/\s+/g, '-')}/`}>
+                <Link href={`/asia/${Name?.replace(/\s+/g, '-')}/`}>
                   {Name}
                 </Link>
               </li>
@@ -964,41 +917,41 @@ export default function myPage() {
         </div>
 
         <h2 className="py-3 px-7 bg-[#f4a10c] text-white rounded-3xl font-bold mb-2 text-xl md:text-xl lg:text-xl text-transform: uppercase">
-          Academic Jobs Australia
+          Academic Jobs australia
         </h2>
         <div className=" mt-[1rem] pb-8">
           <ul className="faculty-container flex flex-wrap gap-6 items-center justify-center text-[#f4a10c] ">
             <ul className="w-full  md:w-auto flex items-center  justify-center gap-6">
               <li className="">
-                <a href="/Australia/lecturer/"> Lecturer</a>
+                <a href="/australia/lecturer/"> Lecturer</a>
               </li>
               <li className="">
-                <a href="https://www.academicjobs.com/Australia/research/">
+                <a href="https://www.academicjobs.com/australia/research/">
                   {' '}
                   Research{' '}
                 </a>
               </li>
               <li className=" ">
-                <a href="https://www.academicjobs.com/Australia/professor/">
+                <a href="https://www.academicjobs.com/australia/professor/">
                   {' '}
                   Professor
                 </a>
               </li>
             </ul>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/Australia/executive/">
+              <a href="https://www.academicjobs.com/australia/executive/">
                 {' '}
                 Executive
               </a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/Australia/admin/">Admin</a>
+              <a href="https://www.academicjobs.com/australia/admin/">Admin</a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/Australia/hr-jobs/"> HR</a>
+              <a href="https://www.academicjobs.com/australia/hr-jobs/"> HR</a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/Australia/student/">
+              <a href="https://www.academicjobs.com/australia/student/">
                 {' '}
                 Student
               </a>
@@ -1010,41 +963,41 @@ export default function myPage() {
         </div>
 
         <h1 className="py-3 px-7 bg-[#f4a10c] text-white rounded-3xl font-bold mb-2 text-xl md:text-xl lg:text-xl text-transform: uppercase">
-          USA Academic Jobs Online
+          usa Academic Jobs Online
         </h1>
         <div className=" mt-[1rem] pb-8">
           <ul className="faculty-container flex flex-wrap gap-6 items-center justify-center text-[#f4a10c] ">
             <ul className="w-full  md:w-auto flex items-center  justify-center gap-6">
               <li className="pb-6">
-                <a href="/USA/lecturer/"> Lecturer</a>
+                <a href="/usa/lecturer/"> Lecturer</a>
               </li>
               <li className="pb-6">
-                <a href="https://www.academicjobs.com/USA/research/">
+                <a href="https://www.academicjobs.com/usa/research/">
                   {' '}
                   Research{' '}
                 </a>
               </li>
               <li className="pb-6">
-                <a href="https://www.academicjobs.com/USA/professor/">
+                <a href="https://www.academicjobs.com/usa/professor/">
                   {' '}
                   Professor
                 </a>
               </li>
             </ul>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/USA/executive/">
+              <a href="https://www.academicjobs.com/usa/executive/">
                 {' '}
                 Executive
               </a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/USA/admin/">Admin</a>
+              <a href="https://www.academicjobs.com/usa/admin/">Admin</a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/USA/hr-jobs/"> HR</a>
+              <a href="https://www.academicjobs.com/usa/hr-jobs/"> HR</a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/USA/student/"> Student</a>
+              <a href="https://www.academicjobs.com/usa/student/"> Student</a>
             </li>
             <li className="pb-6">
               <a href="https://www.academicjobs.com/online/"> Online </a>
@@ -1115,7 +1068,7 @@ export default function myPage() {
                 </Link>
               </li>
               <li className="pb-6">
-                <Link href="/employers/university-of-california-Rrverside/3268/">
+                <Link href="/employers/university-of-california-riverside/3268/">
                   University of California - Riverside
                 </Link>
               </li>
@@ -1286,18 +1239,18 @@ export default function myPage() {
                 </Link>
               </li>
               <li className="pb-6">
-                <Link href="/employers/Cornell-University/3138/">
+                <Link href="/employers/cornell-university/3138/">
                   Cornell University
                 </Link>
               </li>
               <li className="pb-6">
-                <Link href="/employers/Brown-University/3308/">
+                <Link href="/employers/brown-university/3308/">
                   Brown University
                 </Link>
               </li>
               <li className="pb-6">
                 <Link
-                  href="/employers/University-of-Rochester/5527/
+                  href="/employers/university-of-rochester/5527/
                                                       "
                 >
                   University of Rochester
@@ -1380,7 +1333,7 @@ export default function myPage() {
               <li className="mb-2 text-[#f4a10c] font-bold mb-2">Illinois</li>
               <li className="pb-6">
                 <Link
-                  href="/employers/University-of-Chicago/3126/
+                  href="/employers/university-of-chicago/3126/
                                                       "
                 >
                   University of Chicago
@@ -1388,7 +1341,7 @@ export default function myPage() {
               </li>
               <li className="pb-6">
                 <Link
-                  href="/employers/Northwestern-University/3143/
+                  href="/employers/northwestern-university/3143/
                                                       "
                 >
                   Northwestern University
@@ -1587,7 +1540,7 @@ export default function myPage() {
                                                                                       "
                 >
                   {' '}
-                  Indiana University Purdue University Indianapolis
+                  indiana University Purdue University indianapolis
                 </Link>
               </li>
               <li className="pb-6">
@@ -1654,7 +1607,7 @@ export default function myPage() {
                 <li className="mb-2 text-[#f4a10c] font-bold mb-2">ACT</li>
                 <li className="pb-6">
                   <Link href="/employers/australian-national-university/3739/">
-                    Australian National University
+                    australian National University
                   </Link>
                 </li>
                 <li className="pb-6">
@@ -1677,7 +1630,7 @@ export default function myPage() {
                   </Link>
                 </li>
                 <li className="pb-6">
-                  <Link href="/employers/university-of-new-south-wales/3738/">
+                  <Link href="/employers/university-of-new-south-wales-unsw-/3738/">
                     University of New South Wales
                   </Link>
                 </li>
@@ -1688,7 +1641,7 @@ export default function myPage() {
                 </li>
                 <li className="pb-6">
                   <Link href="/employers/australian-catholic-university/3853/">
-                    Australian Catholic University
+                    australian Catholic University
                   </Link>
                 </li>
                 <li className="pb-6">
@@ -1798,7 +1751,7 @@ export default function myPage() {
                     href="/employers/federation-university/3787/
                               "
                   >
-                    Federation University Australia
+                    Federation University australia
                   </Link>
                 </li>
                 <li className="mb-2 text-[#f4a10c] font-bold mb-2">Tasmania</li>
@@ -1873,7 +1826,7 @@ export default function myPage() {
               </ul>
               <ul>
                 <li className="mb-2 text-[#f4a10c] font-bold mb-2">
-                  South Australia
+                  South australia
                 </li>
                 <li className="pb-6">
                   <Link href="/employers/the-university-of-adelaide/3737/">
@@ -1887,12 +1840,12 @@ export default function myPage() {
                 </li>
                 <li className="pb-6">
                   <Link href="/employers/torrens-university-australia/3875/">
-                    Torrens University Australia
+                    Torrens University australia
                   </Link>
                 </li>
                 <li className="pb-6">
                   <Link href="/employers/university-of-south-australia/3874/">
-                    University of South Australia
+                    University of South australia
                   </Link>
                 </li>
                 <li className="pb-6">
@@ -1901,11 +1854,11 @@ export default function myPage() {
                   </Link>
                 </li>
                 <li className="mb-2 text-[#f4a10c] font-bold mb-2">
-                  Western Australia
+                  Western australia
                 </li>
                 <li className="pb-6">
                   <Link href="/employers/university-of-western-australia/3173/">
-                    The University of Western Australia
+                    The University of Western australia
                   </Link>
                 </li>
                 <li className="pb-6">
@@ -1957,7 +1910,7 @@ export default function myPage() {
             </ul>
             <ul>
               <li className="mb-2 text-[#f4a10c] font-bold mb-2">
-                South Africa
+                South africa
               </li>
               <li className="pb-6">
                 <Link href="/employers/university-of-cape-town/12637/">
@@ -2440,12 +2393,6 @@ export default function myPage() {
                   Universidade Federal do Rio Grande do Sul
                 </Link>
               </li>
-
-              <li className="pb-6">
-                <Link href="/employers/universidade-federal-de-são-paulo/11526/">
-                  Universidade Federal de São Paulo (UNIFESP)
-                </Link>
-              </li>
             </ul>
             <ul>
               <li className="mb-2 text-[#f4a10c] font-bold mb-2">Argentina</li>
@@ -2642,7 +2589,7 @@ export default function myPage() {
               <li className="mb-2 text-[#f4a10c] font-bold mb-2">Mumbai</li>
               <li className="pb-6">
                 <Link href="/employers/indian-institute-of-technology-bombay/3844/">
-                  Indian Institute of Technology Bombay
+                  indian Institute of Technology Bombay
                 </Link>
               </li>
             </ul>
@@ -2650,7 +2597,7 @@ export default function myPage() {
               <li className="mb-2 text-[#f4a10c] font-bold mb-2">Chennai</li>
               <li className="pb-6">
                 <Link href="/employers/indian-institute-of-technology-madras/3845/">
-                  Indian Institute of Technology Madras
+                  indian Institute of Technology Madras
                 </Link>
               </li>
             </ul>
@@ -2666,7 +2613,7 @@ export default function myPage() {
               <li className="mb-2 text-[#f4a10c] font-bold mb-2">Bangalore</li>
               <li className="pb-6">
                 <Link href="/employers/indian-institute-of-science/7818/">
-                  Indian Institute of Science (IISc)
+                  indian Institute of Science (IISc)
                 </Link>
               </li>
             </ul>
@@ -2674,7 +2621,7 @@ export default function myPage() {
               <li className="mb-2 text-[#f4a10c] font-bold mb-2">Delhi</li>
               <li className="pb-6">
                 <Link href="/employers/indian-institute-of-technology-delhi/7822/">
-                  Indian Institute of Technology Delhi
+                  indian Institute of Technology Delhi
                 </Link>
               </li>
             </ul>
@@ -2752,7 +2699,7 @@ export default function myPage() {
               </li>
               <li className="mb-2 text-[#f4a10c] font-bold mb-2">Italy</li>
               <li className="pb-6">
-                <Link href="/employers/University-of-Bologna/12015/">
+                <Link href="/employers/university-of-bologna/12015/">
                   University of Bologna
                 </Link>
               </li>

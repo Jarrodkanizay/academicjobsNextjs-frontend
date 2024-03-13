@@ -5,18 +5,26 @@
   "scss.lint.unknownAtRules": "ignore",
   "cSpell.words": [
     "Academicjobs",
+    "apptrkr",
     "DHSI",
     "École",
     "Essaypro",
+    "hookform",
     "iloveacademicjobs",
+    "jobelephant",
+    "lucide",
     "neurodiversity",
     "Pasifika",
     "Polytechnique",
     "rnaseq",
     "Robina",
+    "sendemail",
     "specialisation",
+    "Speedo",
     "tanstack",
+    "unijobs",
     "vellore",
     "Writessays"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }

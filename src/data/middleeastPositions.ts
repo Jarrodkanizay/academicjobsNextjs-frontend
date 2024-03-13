@@ -42,10 +42,10 @@ Find all the best executive jobs here…`,
     Name: `admin`,
     Title: `Admin Jobs in the Middle East`,
     Description: `At Admin and Support Academic Jobs Middle East, you will get the chance to work with a varied and brilliant group of individuals while elevating the academic standards and state-of-the-art practises of your organisation. `,
-    Keyword: `Academic Admin Jobs Middle East`,
+    Keyword: `University Admin Jobs Middle East`,
     content: `Seek your perfect admin position through the Middle East’s best job board! At Academic Jobs we offer the most renowned Higher Ed jobs at the top Middle Eastern universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
 The No.1 job board for academics in the Middle East. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
-Find all the best administrative jobs here…`,
+Find all the best staff jobs here…`,
   },
 
   {

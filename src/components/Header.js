@@ -16,20 +16,20 @@ import {
 } from '@/lib/data/data';
 export default function Header() {
   const handleFormSubmit = () => {
-    if (region !== "Global") {
-      navigate("/jobs/", {
-        state: { q: "", l: countryMappings1[region].searchLocation },
+    if (region !== 'Global') {
+      navigate('/jobs/', {
+        state: { q: '', l: countryMappings1[region].searchLocation },
       });
     } else {
       const fetchLocation1 = async () => {
         try {
           const response = await fetch(
-            "https://api.geoapify.com/v1/ipinfo?apiKey=ea0e191c22a94bf39e0e58ffbe2d6b66"
+            'https://api.geoapify.com/v1/ipinfo?apiKey=ea0e191c22a94bf39e0e58ffbe2d6b66'
           );
           const result = await response.json();
           return result.country.name;
         } catch (error) {
-          return "";
+          return '';
         }
       };
       fetchLocation1()
@@ -42,9 +42,9 @@ export default function Header() {
           //alert(region)
           //dispatch(setSearchJobCriteria(a))
           //alert(countryMappings1[sessionStorage.getItem("location")].searchLocation)
-          navigate("/jobs/", {
+          navigate('/jobs/', {
             state: {
-              q: "",
+              q: '',
               l: countryMappings1[countryMappings[country.toLowerCase()]]
                 .searchLocation,
             },
@@ -52,7 +52,7 @@ export default function Header() {
           //navigate(`/jobs/${countryMappings1[sessionStorage.getItem("location")].searchLocation}`);
         })
         .catch((error) => {
-          console.log("Error:", error);
+          console.log('Error:', error);
         });
     }
     setIsNavOpen(false);
@@ -69,54 +69,69 @@ export default function Header() {
   const onMouseLeave = () => {
     setDropdown(false);
   };
-  
+  useEffect(() => {
+    setIsNavOpen(isNavOpen);
+  }, [isNavOpen]);
 
   return (
     <>
       <div className="hamburger-wrapper">
         {pathname === '/' ? (
           isNavOpen && (
-            <Link href="/" className={`static-logo mobile`}>
+            <Link
+              href={`/${countryMappings2[region.toLowerCase()].url}`}
+              className={`static-logo mobile`}
+              onClick={() => setIsNavOpen(false)}
+            >
               <LogoAJ width={270} height={60} />{' '}
             </Link>
           )
         ) : (
-          <Link href="/" className={`static-logo mobile`}>
+          <Link href={`/${countryMappings2[region.toLowerCase()].url}`} className={`static-logo mobile`}>
             <LogoAJ width={270} height={60} />{' '}
           </Link>
         )}
         <HamburgerMenuIcon
+          key={isNavOpen}
+          onClick={() => setIsNavOpen(!isNavOpen)}
+          isOpen={isNavOpen}
+        />
+        {/* <HamburgerMenuIcon
           onClick={() => {
             setIsNavOpen(!isNavOpen);
+            
             // setMobileMode(!isNavOpen);
           }}
-        />
+        /> */}
       </div>
-      <header className= {`header ${isNavOpen ? 'show-menu max-h-max' : ''} `}>
+      <header className={`header ${isNavOpen ? 'show-menu shadow-xl' : ''} `}>
         <nav>
           {pathname === '/' ? null : (
-            <Link href="/" className="hide-mobile static-logo mr-4">
+            <Link href={`/${countryMappings2[region.toLowerCase()].url}`} className="hide-mobile static-logo mr-4">
               <LogoAJ width={270} height={60} />{' '}
             </Link>
           )}
 
           <NavItem
-            url="/jobs"
+            url={`/${countryMappings2[region.toLowerCase()].url}/jobs`}
             icon="/dotted-arrow.svg"
             navLink="Seek Jobs"
-            forceClass="" //this is optional
+            forceClass="border-b hover:border-amber-500" //this is optional
+            forceButtonClass="border-b hover:border-amber-500 mr-2 "
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url={`/${countryMappings2[region.toLowerCase()].url}/employers`}
+            url={`/${countryMappings2[region.toLowerCase()].url}/jobs-by-top-universities`}
             icon="/upward-arrow.svg"
             navLink="Top Universities"
+            forceButtonClass="border-b hover:border-amber-500 "
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url="/academic-hub"
+            url="/career-help"
             icon="/network-icon.svg"
-            navLink="My Academic Hub"
+            navLink="Career Help"
+            forceButtonClass="border-b hover:border-amber-500 "
             onClick={() => setIsNavOpen(false)}
           />
           <div
@@ -168,14 +183,15 @@ export default function Header() {
 
           {isNavOpen && (
             <>
-              <button
+              <a
                 className="btn btn-aj w-full mt-4"
-                onClick={handleFormSubmit}
+                // onClick={handleFormSubmit}
+                href="/jobs"
               >
-                Search In Your Country
-              </button>
-              <details class="w-full text-center bg-gray-300 open:bg-[amber-200] duration-300 rounded-3xl ">
-                <summary class="py-2">Search Globally</summary>
+                Search Globally
+              </a>
+              <details class="w-full text-center bg-gray-300 open:bg-[amber-200] duration-300 rounded-3xl font-bold shadow-xl">
+                <summary class="py-2">Search In Your Country</summary>
                 <a
                   className={`md:w-52  dropdown-content z-[1] menu p-2  bg-slate-100  w-31 } `}
                 >
@@ -200,13 +216,16 @@ export default function Header() {
               </details>
             </>
           )}
-          <div className="ml-auto">
+
+          <div className="ml-auto post-a-job-button z-[-1] md:z-[1]">
             <NavItem
-              url={`/${countryMappings2[region.toLowerCase()].url}/recruitment/`}
+              url={`/${
+                countryMappings2[region.toLowerCase()].url
+              }/recruitment/`}
               icon="/post-a-job-icon.svg"
               navLink="Post a Job"
-              forceLinkClass=""
-              forceButtonClass="nav-mobile-btn btn btn-aj"
+              forceLinkClass="ml-auto"
+              forceButtonClass="nav-mobile-btn btn btn-aj "
               onClick={() => setIsNavOpen(false)}
             />
           </div>

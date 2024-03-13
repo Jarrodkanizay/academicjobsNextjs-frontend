@@ -39,10 +39,10 @@ Find all the best executive jobs here…`,
     Name: `admin`,
     Title: `Admin Jobs in Africa`,
     Description: `Through Admin and Support Academic Jobs Africa, you may work with a bright and diverse staff by exhibiting your company's innovative practises and academic standards.   `,
-    Keyword: `Academic Admin Jobs Africa`,
+    Keyword: `University Admin Jobs Africa`,
     content: `Seek your perfect admin job through the home of academic positions, Academic Jobs! At Academic Jobs we offer the most renowned uni jobs at the top African universities. Positions in admin will provide you with the chance to engage with fellow academics, work with some of the brightest minds, and use top-notch facilities and resources.
 The No.1 job board for academics in Africa. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
-Find all the best administrative jobs here…`,
+Find all the best staff jobs here…`,
   },
   {
     Name: `hr jobs`,
@@ -77,7 +77,7 @@ Find all the best student jobs here…`,
     content: `The most recent graduate opportunities from the top colleges in the Africa are available on our website. Whether you wish to work in the United States or overseas, our university partners provide a wide choice of fascinating graduate jobs that are ideal for you. Graduate positions in academic institutions and research centres are flexible, temporary positions with a range of responsibilities. Graduates in these professions can improve their employability skills, make money, network socially and intellectually, and obtain significant job experience.`,
   },
   {
-    Title: `Academic PhD Jobs Africa`,
+    Title: `academic phd jobs africa`,
     Name: `phd`,
     Description: `A wide range of PhD job postings from Africa and foreign universities are available. Apply today to get important skills and job experience!`,
     Keyword: `Academic PhD Jobs Africa`,

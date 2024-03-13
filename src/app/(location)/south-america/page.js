@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
+import SA from '@/components/topUnis/SA';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -16,15 +18,19 @@ export const metadata = {
     <div>
      
       <div className="pt-[8rem] flex flex-col items-center justify-center" >
-        <img
+        <Image
           src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-sa-min.png"
 
-          alt="AcademicJobs South America"
+          alt="AcademicJobs South America Logo"
           className=" w-[20rem] mb-[1rem] "
+          width={330}
+          height={220}
         /></div>
       <JobSearchBox l="South America"/>
 
-      <div className=" mt-[10rem] " >
+      <h3 className="text-center ">We Are South America's University Job Website</h3>
+      
+      <div className=" mt-[5rem] " >
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li><Link href="/South-America/lecturer/" >	Lecturer</Link></li>
@@ -40,7 +46,7 @@ export const metadata = {
       </div>
 
 
-      <div className=" mt-4 " >
+      <div className=" mt-2 " >
         <ul className="faculty-container flex  gap-4 items-center justify-center text-[#f4a10c] ">
 
           <li><Link href="/online/" >	Online </Link></li>
@@ -53,24 +59,19 @@ export const metadata = {
       </div>
 
 
-      <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">
-        <a href="#section" class="scroll-smooth md:scroll-auto">
-          ▼
-        </a>
-      </div>
+     
 
-      <div className="content-grid mx-auto">
+      <div className="content-grid mx-auto py-5">
         
    
     
             
             
             
-        <div id="section" className=" full-width py-4 mt-[30rem] full-width mb-[175px] bg-slate-200">
+        <div id="section" className=" full-width py-4 full-width mb-[175px] bg-slate-200">
   <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
   <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
-          <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS South America:</span> < br /> Academic, research &&nbsp;science positions locally
-          & globally
+          <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS South America:</span> < br />  
           </h1>
           
         <div>
@@ -103,56 +104,8 @@ export const metadata = {
           <div id="myUniversity" class="myUniversity">
             <div class="widget__text-block1"> */}
               <div>
-              <h2 className="underline-full">AcademicJobs South America: All University Jobs by Country </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-7">
-                  <ul>
-                    <li className='mb-1 '><Link href="/jobs/brazil/" className='text-[#f4a10c] font-bold'>Brazil</Link></li>
-                    <li><Link href="/employers/university-of-sao-paulo/11463/">University of São Paulo</Link>
-                    </li>
-                    <li><Link href="/employers/university-of-campinas/11490/">University of Campinas</Link>
-                    </li>
-
-                    <li><Link href="/employers/universidade-federal-do-rio-grande-do-sul/11544/">Universidade Federal do Rio Grande do Sul</Link>
-                    </li>
-
-                    <li><Link href="/employers/universidade-federal-de-são-paulo/11526/">Universidade Federal de São Paulo (UNIFESP)</Link>
-                    </li>
-
-
-
-                  </ul>
-                  <ul>
-                    <li className='mb-1 '><Link href="/jobs/argentina/" className='text-[#f4a10c] font-bold'>Argentina</Link></li>
-                    <li><Link href="/employers/universidad-de-buenos-aires/11196/">Universidad de Buenos
-                      Aires</Link>
-                    </li>
-
-                    <li className='mb-1 '><Link href="/jobs/colombia/" className='text-[#f4a10c] font-bold'>Colombia</Link></li>
-                    <li><Link href="/employers/universidad-de-los-andes/11308/">Universidad de los
-                      Andes</Link></li>
-
-                    <li><Link href="/employers/icesi-university/11648/">Icesi University</Link></li>
-                  </ul>
-                  <ul>
-                    <li className='mb-1 '><Link href="/jobs/chile/" className='text-[#f4a10c] font-bold'>Chile</Link></li>
-                    <li><Link href="/employers/pontificia-universidad-catolica-de-chile/9739/">Pontificia Universidad
-                      Catolica de Chile</Link></li>
-                    <li><Link href="/employers/universidad-alberto-hurtado/11012/">Universidad Alberto
-                      Hurtado</Link>
-                    </li>
-                    <li><Link href="/employers/universidad-de-santiago-de-chile/11384/">Universidad de
-                      Santiago de Chile</Link></li>
-                    <li><Link href="/employers/university-of-antofagasta/11189/">University of Antofagasta</Link></li>
-                  </ul>
-                  <ul>
-                    <li className='mb-1 '><Link href="/jobs/peru/" className='text-[#f4a10c] font-bold'>Peru</Link></li>
-                    <li><Link href="/employers/universidad-alas-peruanas/11010/">Universidad Alas
-                      Peruanas</Link>
-                    </li>
-                    <li><Link href="/employers/universidad-peruana-cayetano-heredia/11856/">Universidad Peruana Cayetano Heredia</Link>
-                    </li>
-                  </ul>
-                </div>
+              <h2 className="">AcademicJobs South America: All University Jobs by Country </h2>
+              <SA id="section5" heading="" />
               </div>
             </div>
           </div>

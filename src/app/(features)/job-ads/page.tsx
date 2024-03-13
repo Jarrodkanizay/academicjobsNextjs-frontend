@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import type { Metadata } from 'next';
 import Link from 'next/link';
 import PricingTable from '@/components/PricingTable';
+import type { Metadata } from 'next';
+
 export const metadata: Metadata = {
   title: 'Post a job - Recruit Academics', //Option 1 replaces the %s in layout.tsx
   // title: {
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
     'All prices are in USD, switch region to change prices. Ads are live for up to 60 days, and include the employer logo and ad performance metrics.',
   keywords: 'Post Academic Jobs, Post a Job AcademicJobs',
 };
+
 export default function myPage() {
   return (
     <>
@@ -29,12 +31,12 @@ export default function myPage() {
                 />
                 <div>
                   <h1 className="text-4xl font-bold text-aj">
-                    Find your Best Academic & Support Talent
+                    Find all the Best Talent for Academic & Staff Positions
                   </h1>
                   <p className="py-6">
                     Find exactly who you need on AcademicJobs.com… Post your
-                    Academic, Higher Education and Admin/Support Staff ad and be
-                    amazed as the right candidates for the job come to you.
+                    Academic, Higher Education and Admin, Support, Staff ad and
+                    be amazed as the right candidates for the job come to you.
                   </p>
                   <a href="#pricing-table-cards" className="btn btn-aj">
                     Post a Job
@@ -642,11 +644,11 @@ export default function myPage() {
           
           
            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-           <iframe class=" aspect-video  " src="https://www.youtube.com/embed/4ULtabQbmPs?si=olef1FK2Ao9Zzdpg" title="YouTube video player"></iframe>
+           <iframe className=" aspect-video  " src="https://www.youtube.com/embed/4ULtabQbmPs?si=olef1FK2Ao9Zzdpg" title="YouTube video player"></iframe>
 
-           <iframe class=" aspect-video " src="https://www.youtube.com/embed/lMKlaQIC8lk?si=bO4_2gP-3UjU1tad" title="YouTube video player"></iframe>
+           <iframe className=" aspect-video " src="https://www.youtube.com/embed/lMKlaQIC8lk?si=bO4_2gP-3UjU1tad" title="YouTube video player"></iframe>
          
-          <iframe class=" aspect-video " src="https://www.youtube.com/embed/QhDUx_05bGc?si=syVHl-FqyM4KLyCx" title="YouTube video player"></iframe>
+          <iframe className=" aspect-video " src="https://www.youtube.com/embed/QhDUx_05bGc?si=syVHl-FqyM4KLyCx" title="YouTube video player"></iframe>
 
 
           </div>

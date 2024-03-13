@@ -2,6 +2,7 @@
 import citiesData from '@/data/cities.json';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 // import type { Metadata } from 'next';
 
 type MetadataTypes = {
@@ -66,7 +67,7 @@ export default function Page({ params, searchParams }: any) {
   //const { logo, company_name, website, company_description, location } = data
   //console.log(company_description)
   content = (
-    <div className="content-grid flex-col gap-2">
+    <div className="content-grid flex-col md:gap-2">
       {/* <Link className="text-[#f4a10c] " href="/cities/">
         View all Lecturer Jobs →
       </Link> */}
@@ -80,8 +81,23 @@ export default function Page({ params, searchParams }: any) {
         </div>
       </div>
 
-      <JobSearchBox q={Name} />
-      <SearchResults q={{ q: Name }} />
+      <JobSearchBox l={Name} />
+
+      <section className="jobs_grid job_post_search_container">
+        <div className="filters_panel">
+          <div className="filters_content">
+            <JobFilter />
+          </div>
+        </div>
+        <div className="listings_panel">
+          <div className="listings_content">
+          <SearchResults q={{ q: '', l:Name }} />
+          </div>
+        </div>
+      </section>
+
+    
+      
     </div>
   );
   return <div className="overflow-y w-full">{content}</div>;

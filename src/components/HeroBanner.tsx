@@ -18,6 +18,9 @@ type HeroProps = {
   imgWidth?: number; //Image width={2000}
   imgHeight?: number; //Image height={534}
   imgRight?: boolean; //Image on right side of text
+  reorder?: boolean; //Reorder image and text on mobile
+  externalLink?: boolean; //Use <img instead of <Image if linking to an image on some other site
+  imageShadow?: boolean; //Add shadow to image
 };
 
 const HeroBanner = ({
@@ -35,6 +38,9 @@ const HeroBanner = ({
   imgWidth = 2000,
   imgHeight = 534,
   imgRight = true,
+  reorder = true,
+  externalLink = false,
+  imageShadow = true,
 }: HeroProps) => {
   // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [windowWidth, setWindowWidth] = useState(
@@ -49,26 +55,46 @@ const HeroBanner = ({
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  let reorderCss = '';
+  if (reorder) {
+    reorderCss = `order-${windowWidth > 1023 ? 'none' : '1'}`;
+  } else {
+    reorderCss = '';
+  }
+
   return (
     <section
-      className={`hero full-width max-h-fit py-8 mb-16 ${bgColorClass} order-${
-        windowWidth > 1023 ? 'none' : '1'
-      }`}
+      className={`hero max-h-fit py-4 mb-16 full-width ${bgColorClass} ${reorderCss}`}
     >
-      <div className="container mx-auto">
+      <div className="container">
         <div
-          className={`hero-content flex-col lg:flex-row${
+          className={`hero-content flex-col gap-8 lg:flex-row${
             imgRight ? '-reverse' : ''
           }`}
         >
           {src ? (
-            <Image
-              width={imgWidth}
-              height={imgHeight}
-              src={src}
-              className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
-              alt={alt}
-            />
+            <>
+              {externalLink ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={src}
+                  className={`lg:max-w-lg rounded-lg ${
+                    imageShadow ? 'shadow-2xl' : ''
+                  } mb-8 lg:mb-0`}
+                  alt={alt}
+                />
+              ) : (
+                <Image
+                  width={imgWidth}
+                  height={imgHeight}
+                  src={src}
+                  className={`lg:max-w-lg rounded-lg ${
+                    imageShadow ? 'shadow-2xl' : ''
+                  } mb-8 lg:mb-0`}
+                  alt={alt}
+                />
+              )}
+            </>
           ) : null}
           <div>
             <h1 className="text-4xl font-bold text-aj">{h1}</h1>

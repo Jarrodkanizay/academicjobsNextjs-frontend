@@ -1,6 +1,8 @@
+import Link from 'next/link';
 import type { Metadata } from 'next';
-import SearchResults from '@/components/SearchResults'
-import JobSearchBox from '@/components/JobSearchBox'
+import SearchResults from '@/components/SearchResults';
+import JobSearchBox from '@/components/JobSearchBox';
+import JobFilter from '@/components/JobFilter';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -13,32 +15,56 @@ export const metadata: Metadata = {
 };
 export default function myPage() {
   return (
-    
-      <main className="content-grid">
-             
+    <main className="content-grid">
+      <div className="bg-slate-200 full-width">
+        <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
+          <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">
+            {' '}
+            Graduate Jobs
+          </h1>
 
-              <div className="bg-slate-200 full-width">
-      <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
-    
-              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4"> Graduate Jobs</h1> 
-              
-            <div className="">
-            
+          <div className="">
             <p className="px-7 mb-4 mt-1">
-            All graduate job openings from the top universities are available on our site. Apply on our website for amazing graduate roles worldwide, since our academic institutions are always looking for the best graduate jobs.
+              Seek your perfect graduate position through the world’s best job
+              board! At Academic Jobs we offer the most renowned graduate jobs
+              at the top universities. For young professionals looking for
+              industry experience, on-field training, personality development
+              and course credit, at Academic Jobs we aim to help find the most
+              exciting opportunities for new graduates.
             </p>
             <p className="px-7 md:flex hidden">
-            Graduate jobs are temporary or part-time positions in a variety of departments and functions in a university or research institute. These positions give graduates the chance to improve their academic and social networks, earn money, obtain useful work experience, and develop employability skills. Graduate positions can be found in a variety of fields, such as research, teaching, administration, customer service, events, marketing, IT, and libraries. You can locate graduate programs, part-time and casual work, and unique internship possibilities in Australia and throughout the world if you're interested in seeking graduate jobs. You can obtain important work experience and abilities that will benefit you in your future career by applying for these opportunities.
+              The No.1 job board for graduates, Academic Jobs, provides an
+              extensive list of opportunities for the next step of your career,
+              carefully sectioning the top jobs to find the best position for
+              you!
             </p>
-         
-            </div>
+            <p className="px-7 md:flex hidden">
+              Find all the best graduate jobs here…
+            </p>
+            <Link
+              href={'/academic-talent-pool'}
+              className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
+            >
+              Join Our Talent Pool
+            </Link>
           </div>
+        </div>
+      </div>
+      <JobSearchBox q="graduate" forceClass="my-6" />
+
+      <section className="jobs_grid job_post_search_container">
+        <div className="filters_panel">
+          <div className="filters_content">
+            <JobFilter />
           </div>
-
-
-              <JobSearchBox q= "graduate"/>
-              <SearchResults q={{ q: "graduate" || 0 }} />
-      </main>
-   
+        </div>
+        <div className="listings_panel">
+          <div className="listings_content">
+            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
+            <SearchResults q={{ q: 'graduate' || 0 }} />
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

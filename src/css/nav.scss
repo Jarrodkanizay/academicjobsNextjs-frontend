@@ -84,16 +84,13 @@ html {
           /* opacity: 0.75; */
           // font-weight: 700;
           /* opacity: 0.75; */
-  
+
           font-size: 14px;
-         
-        
-        
         }
 
         .nav-link:hover {
           color: rgb(244 161 12 / var(--tw-text-opacity));
-                    opacity: 1;
+          opacity: 1;
         }
 
         .nav-link::before,
@@ -102,7 +99,7 @@ html {
           height: 48px;
           transition: 300ms;
           content: '';
-          border-bottom: 3px solid var(--color-primary);
+
           z-index: -1;
           left: 0;
           width: 0%;
@@ -117,19 +114,15 @@ html {
           position: absolute;
           transition: 300ms;
           content: '';
-          border-bottom: 3px solid #ddd;
+
           z-index: -2;
           width: 100%;
         }
 
         .nav-link-ltr:hover::before {
-          background-color: var(--color-primary-light);
-          width: 100%;
         }
 
         .nav-link-ltr.active::before {
-          width: 100%;
-          border-bottom: 3px solid black;
         }
         .nav-link.active {
           color: var(--color-primary);
@@ -140,7 +133,6 @@ html {
           color: var(--color-primary);
         }
         .post-a-job {
-          background-color: var(--color-primary-light);
         }
         .mobile-icons {
           font-size: 20px;
@@ -211,6 +203,22 @@ html {
       }
       .header.show-menu {
         display: block !important;
+        background-color: rgba(255, 255, 255, 1);
+      }
+      .header.show-menu .post-a-job-button {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        max-width: 100vw;
+        inset: auto 16px 26px 16px;
+      }
+      .header.show-menu .post-a-job-button a .nav-link {
+        margin: 0;
+        width: 100%;
+      }
+      .header.show-menu .post-a-job-button a .nav-link span {
+        box-shadow: none;
+        text-shadow: none;
       }
     }
   }

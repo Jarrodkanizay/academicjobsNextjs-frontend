@@ -1,8 +1,8 @@
 export const regionData = [
   {
     Name: `faculty`,
-    Title: `Lecturer Jobs In Australia`,
-    Description: `Look through this page's list of open higher education lecturer positions to learn more about Lecturer Academic Jobs Australia.`,
+    Title: `Faculty Jobs In Australia`,
+    Description: `Look through this page's list of open higher education lecturer positions to learn more about Faculty Academic Jobs Australia.`,
     Keyword: `Lecturer Academic Jobs Australia`,
     content: `Seek your perfect faculty position through Australia’s best job board! At Academic Jobs we offer the most renowned uni jobs at the top Australian universities. Positions in academic faculty will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
   
@@ -44,7 +44,7 @@ export const regionData = [
   Find all the best jobs here…`,
   },
   {
-    Name: `Student`,
+    Name: `student`,
     Title: `Student Jobs on Campus Australia`,
     Description: `Searching for a flexible, fulfilling employment on campus? Examine hundreds of student positions offered by your institution in a range of areas and disciplines. Apply now to get useful job experience and competencies with Student Jobs on Campus Australia.`,
     Keyword: `Student Jobs on Campus Australia, Student Jobs at University Australia`,
@@ -77,6 +77,15 @@ export const regionData = [
   The No.1 job board for HR professionals in Australian universities. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
   },
   {
+    Name: `human_resources`,
+    Title: `Human Resources Jobs In Australia`,
+    Description: `Your eligibility for Human Resources Academic Jobs Australia  is contingent upon holding a bachelor's degree or higher in a related discipline, such as human resources management. `,
+    Keyword: `Human Resources Academic Jobs Australia, Human Resources AcademicJobs `,
+    content: `Seek your perfect human resource position through Australia’s best job board! At Academic Jobs we offer the most renowned HR jobs at the top Australian universities. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
+  
+  The No.1 job board for HR professionals in Australian universities. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
+  },
+  {
     Name: `executive`,
     Title: `Executive Jobs In Australia`,
     Description: `Working with bright and committed faculty, students, alumni, and other stakeholders will provide you the chance to support the vision and purpose in Executive Academic Jobs Australia. `,
@@ -96,7 +105,7 @@ export const regionData = [
   
   The No.1 job board for academics in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
   
-  Find all the best administrative jobs here…`,
+  Find all the best staff jobs here…`,
   },
 
   {

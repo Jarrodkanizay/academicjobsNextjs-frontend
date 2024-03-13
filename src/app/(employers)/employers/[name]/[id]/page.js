@@ -1,187 +1,144 @@
-'use client';
-import React, { useState, useEffect, useRef } from 'react';
+import { notFound } from 'next/navigation';
 import { MdLocationPin } from 'react-icons/md';
 import { AiOutlineGlobal } from 'react-icons/ai';
 import SearchResults from '@/components/SearchResults';
-import { useQuery } from '@tanstack/react-query';
-import axios from 'axios';
+import JobSearchBox2 from '@/components/JobSearchBox2';
+import JobFilter from '@/components/JobFilter';
 import Image from 'next/image';
 import Link from 'next/link';
-import { BsFillShareFill } from 'react-icons/bs';
 import { useParams } from 'next/navigation';
-import BaseApi from '@/lib/store/Base';
-const Employer = () => {
-  const [viewJob, setViewJob] = useState(false);
-  const { id } = useParams();
-  console.log(id);
-  const { data, isSuccess, isLoading, isError, error } = useQuery({
-    queryKey: ['employer', id],
-    queryFn: async () => {
-      const response = await BaseApi.get(`employer/${id}`);
-      console.log(response.data);
-      console.log('response.data.data', response.data.data);
-      return response.data.data;
-    },
-    // enabled: id,
-  });
+import { StarRank } from '@/components/StarRank';
+
+export async function generateMetadata({ params }) {
+  const employer = await getEmployer(params.id);
+  if (!employer) return { title: 'not found' };
+  const { company_name } = employer?.data;
+  return {
+    title: {
+        absolute: `All jobs at ${company_name} `},
+    description: `All the university jobs at ${company_name} Academic and administration jobs.  Lecturer and research higher ed careers.`,
+    keywords: `${company_name} jobs, ${company_name} careers, ${company_name} positions,  Work at ${company_name}`,
+  };
+}
+async function getEmployer(id) {
+  const response = await fetch(
+    `https://api2.sciencejobs.com.au/api/employer/${id}`,
+    { next: { revalidate: 1 } }
+  );
+  const res = await response.json();
+  console.log('===========getEmployer===============', res);
+  return res;
+}
+const Employer = async ({ params }) => {
+  const employer = await getEmployer(params.id);
+  if (!employer) notFound();
   let content;
-  if (isLoading) {
-    content = (
-      <div className="flex  w-full h-screen  justify-between ">
-        <div
-          role="status"
-          className="w-[40%] h-screen p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700"
-        >
-          <div className="flex items-center justify-between">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <span className="sr-only">Loading...</span>
-        </div>
-        <div
-          role="status"
-          className="w-[60%] h-screen p-4 space-y-4 border border-gray-200 divide-y divide-gray-200 rounded shadow animate-pulse dark:divide-gray-700 md:p-6 dark:border-gray-700"
-        >
-          <div className="flex items-center justify-between">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <div className="flex items-center justify-between pt-4">
-            <div>
-              <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-              <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
-            </div>
-            <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
-          </div>
-          <span className="sr-only">Loading...</span>
-        </div>
-      </div>
-    );
-  } else if (isSuccess) {
-    console.log(data);
-    const {
-      logo,
-      company_name,
-      website,
-      company_description,
-      location,
-      Region,
-      country,
-    } = data;
-    console.log(company_description);
-    let location1 = '',
-      company_description1 = '';
-    if (company_description) {
-      company_description1 = company_description;
+  const {
+    id,
+    ranking,
+    logo,
+    company_name,
+    website,
+    company_description,
+    location,
+    Region,
+    country,
+  } = employer.data;
+  console.log(company_description);
+  let location1 = '',
+    company_description1 = '';
+  if (company_description) {
+    company_description1 = company_description;
+  } else {
+    if (Region) location1 = Region;
+    if (country) location1 = country;
+    if (location1) {
+      company_description1 = `${company_name} is located at ${location1}.`;
     } else {
-      if (Region) location1 = Region;
-      if (country) location1 = country;
-      if (location1) {
-        company_description1 = `${company_name} is located at ${location1}.`;
-      } else {
-        company_description1 = `Welcome to ${company_name}. `;
-      }
-      company_description1 = `${company_description1}<br><br>
+      company_description1 = `Welcome to ${company_name}. `;
+    }
+    company_description1 = `${company_description1}<br><br>
       For more information, join our Talent Pool`;
-      if (website)
-        company_description1 = `${company_description1}, or visit our university website at <a href=${website} style="text-decoration: underline; color: blue" >${website}</a>`;
-      company_description1 = `${company_description1}<br><br>
+    if (website)
+      company_description1 = `${company_description1}, or visit our university website at <a href=${website} style="text-decoration: underline; color: blue" >${website}</a>`;
+    company_description1 = `${company_description1}<br><br>
       To advertise a Job for ${company_name}, please <a href="/post-job/" style="text-decoration: underline; color: blue" >click here</a><br><br>
       To join the  ${company_name} Talent Pool, please <a href="#" style="text-decoration: underline; color: blue" >click here</a>
       `;
-    }
-    content = (
-      <div className="flex-col gap-4 max-w-screen-xl mx-auto">
-        <article
-          className={`media ${
-            company_name == 'Queensland University of Technology (QUT)'
-              ? 'bg-blue-950'
-              : 'bg-[#003663]'
-          } border border-gray-300 p-4 mb-4 rounded-lg shadow-lg`}
-        >
-          <div className="md:flex md:justify-start .col-auto ">
-            <div className="w-[8rem] h-[8rem] mr-4  ">
+  }
+
+  //Theme settings defaults
+  let employerTheme = 'aj';
+  let headerTextColor = 'text-gray-400';
+  let headerBG = 'bg-slate-200';
+  let logoBG = 'bg-white';
+  let profileBG = 'bg-white';
+  let panel = '';
+
+  // Theme settings for Queensland University of Technology (QUT)
+  if (company_name == 'Queensland University of Technology (QUT)') {
+    employerTheme = 'qut';
+    headerTextColor = 'text-white';
+    headerBG = 'bg-blue-950';
+    profileBG = 'bg-blue-950';
+    panel = 'p-4 rounded-lg';
+  }
+
+  // Theme settings for Bond University
+  if (company_name == 'Bond University') {
+    employerTheme = 'bond';
+    logoBG = 'bg-[#011a4d]';
+    profileBG = 'bg-[#f1b821]';
+    panel = 'p-4 rounded-lg';
+  }
+
+  content = (
+    <>
+      <div className="flex-col gap-4">
+        {/* Header Area */}
+        <div className={`media ${headerBG} p-8 mb-4`}>
+          <div className="md:flex md:justify-start mx-auto max-w-screen-xl gap-4">
+            <div className={`size-[15rem] rounded-md ${logoBG} mr-4 p-3`}>
               <Image
-                //src={logo || '/favicon.png'}
                 src={
-                  `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}` ||
-                  '/favicon.png'
+                  logo
+                    ? `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}`
+                    : '/favicon.png'
                 }
-                alt={company_name}
-                className="w-full h-full object-contain rounded-md bg-white "
-                onError={(e) => {
-                  e.target.src =
-                    'https://academicjobs.s3.amazonaws.com/img/_misc/uni-profiles.png';
-                }}
+                width={300}
+                height={300}
+                //fill={true}
+                alt={`${company_name} Logo`}
+                className="w-full h-full object-contain "
               />
             </div>
-            <div className="md:flex md:flex-col gap-6 ">
-              <h1 className="text-3xl font-bold text-white pt-4">
+            <div className="md:flex md:flex-col p-4">
+              <h1
+                className={`text-4xl leading-[2rem] font-bold ${headerTextColor}`}
+              >
                 {company_name}
               </h1>
-              <div className="md:flex  md:gap-6 p-4">
-                <div className="text-white md:flex md:items-center md:justify-start md:gap-2 .col-auto p-4">
-                  <MdLocationPin />
+              <div className="flex gap-2">
+                {/* <p className="text-xl leading-[.75rem] font-bold text-yellow-500 ">
+                  Employer Ranking -
+                </p>
+                <p className="text-2xl  leading-[.75rem]  font-bold text-yellow-500 ">
+                  ★ {ranking}
+                </p> */}
+                <p>
+                  <StarRank ranking={ranking} size={30} border="#bbb" />
+                </p>
+              </div>
+              <div
+                className={`md:flex-col md:gap-6 ml-[-3px] pt-6 ${headerTextColor}`}
+              >
+                <div className="flex items-center justify-start gap-2 mb-2">
+                  <MdLocationPin size="26" color="#df0000" />
                   {location}
                 </div>
                 {website && (
-                  <div className="text-white md:flex md:items-center md:justify-start md:gap-2 p-4">
-                    <AiOutlineGlobal />
+                  <div className="flex items-center justify-start gap-2.5">
+                    <AiOutlineGlobal size="24" color="#1c2dc7" />
                     <a href={website} className="">
                       {website}
                     </a>
@@ -190,97 +147,31 @@ const Employer = () => {
               </div>
             </div>
           </div>
-        </article>
-        <div className="flex justify-start gap-4 mt-6 mb-2 pl-4">
-          <div
-            className={` cursor-pointer text-xl text-orange-400    ${
-              viewJob || 'underline'
-            }`}
-            onClick={() => {
-              setViewJob(false);
-            }}
-          >
-            Institution Description
-          </div>
-          <div
-            className={` cursor-pointer text-xl text-orange-400   ${
-              viewJob && 'underline'
-            }`}
-            onClick={() => {
-              setViewJob(true);
-            }}
-          >
-            View Jobs
-          </div>
-          <div
-            className=" hidden cursor-pointer text-xl text-orange-400  "
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({
-                top: document.querySelector('#my-target').offsetTop,
-                behavior: 'smooth',
-              });
-            }}
-          >
-            View Jobs
-          </div>
         </div>
-        <div className="max-w-screen-xl mx-auto">
-          {viewJob ? (
-            <SearchResults q={{ employer_id: id || 0 }} />
-          ) : (
-            <div
-              className={`max-h-50 overflow-y  border border-gray-300 p-4 mb-4 rounded-lg shadow-lg ${
-                company_name == 'Bond University' && 'bg-[#f1b821]'
-              } ${
-                company_name == 'Queensland University of Technology (QUT)' &&
-                'bg-blue-950'
-              }`}
-            >
-              <div
-                className={`wrapper  ${
-                  company_name == 'Queensland University of Technology (QUT)' &&
-                  'text-white'
-                }`}
-              >
+      </div>
+      <section className="jobs_grid job_post_panel_container">
+        <div className={`post_panel employer_panel ${employerTheme} mt-6`}>
+          {
+            <div className={`${panel} ${profileBG}`}>
+              <div>
                 <div
                   dangerouslySetInnerHTML={{ __html: company_description1 }}
                 />
-                {company_name ===
-                  'Queensland University of Technology (QUT)' && (
-                  <style>
-                    {`
-        .wrapper span {
-          color: white !important;
-        }
-        .wrapper a {
-          color: yellow !important;
-        }
-      `}
-                  </style>
-                )}
-                {company_name === 'Bond University' && (
-                  <style>
-                    {`
-        .wrapper span {
-          color: white !important;
-        }
-        .wrapper a {
-          color: white !important;
-        }
-      `}
-                  </style>
-                )}
               </div>
             </div>
-          )}{' '}
-          <div className="hidden" id="my-target">
-            <SearchResults id="about" q={{ employer_id: id || 0 }} />{' '}
+          }
+        </div>
+        <div className="listings_panel">
+          <div className="listings_content">
+            <div className="search_panel">
+              <JobSearchBox2 />
+            </div>
+            <SearchResults q={{ employer_id: id || 0 }} filterOff={true} />
           </div>
         </div>
-      </div>
-    );
-  }
-  return <div className="overflow-y w-full">{content}</div>;
+      </section>
+    </>
+  );
+  return content;
 };
 export default Employer;

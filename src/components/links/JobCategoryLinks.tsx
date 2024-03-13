@@ -23,13 +23,16 @@ const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
         <Link href="/faculty/">Faculty{'  '}</Link>
       </li>
       <li className="hover:underline">
-        <Link href="/admin/">Admin{'  '}</Link>
+        <Link href="/staff-jobs/">Staff{'  '}</Link>
       </li>
       <li className="hover:underline">
         <Link href="/hr-jobs/">HR{'  '}</Link>
       </li>
       <li className="hover:underline">
-        <Link href="/student/">Student{'  '}</Link>
+        <Link href="/student-jobs/">Student{'  '}</Link>
+      </li>
+      <li className="hover:underline">
+        <Link href="/industry/">Industry{'  '}</Link>
       </li>
       {nativeOn ? (
         <li className="hover:underline">
@@ -48,10 +51,7 @@ const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
       <li className="hover:underline md:hidden">
         <Link href="/jobs?l=&q=tenure"> Tenure-Track{'  '}</Link>
       </li>
-      <li className="hover:underline md:hidden">
-        <Link href="/jobs?l=&q=assistant">Assistant</Link>
-      </li>
-   
+ 
   
     </ul>
   );
