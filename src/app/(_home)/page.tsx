@@ -9,6 +9,7 @@ import AusUniLogos from '@/components/AusUniLogos';
 import AmericaUniLogos from '@/components/AmericaUniLogos';
 import { getContentRegion } from '@/actions/getContentRegion';
 
+
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
@@ -20,26 +21,245 @@ export const metadata: Metadata = {
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
 
+
+
+
+
+
+
+
 export default async function myPage() {
+  const size = 180;
+  const items = [
+    {
+      src: '/home/academic-executive-positions.png',
+      alt: 'Academic Executive Positions',
+      label: 'Executive',
+      link: '/executive',
+    },
+    {
+      src: '/home/academic-phd-positions.png',
+      alt: 'Academic Lecturer Positions',
+      label: 'Talent-Pool',
+      link: '/lecturer',
+    },
+   
+    {
+      src: '/home/academic-human-resource-positions.png',
+      alt: 'Academic Human Resource Positions',
+      label: 'HR',
+      link: '/hr-jobs',
+    },
+    {
+      src: '/home/academic-faculty-positions.png',
+      alt: 'Academic Faculty Positions',
+      label: 'Faculty',
+      link: '/faculty',
+    },
+    {
+      src: '/home/academic-graduate-positions.png',
+      alt: 'Academic PhD Positions',
+      label: 'PhD/Student',
+      link: '/phd',
+    },
+    {
+      src: '/home/academic-lecturer-positions.png',
+      alt: 'Academic Graduate Positions',
+      label: 'Collaborate',
+      link: '/graduate',
+    },
+    {
+      src: '/home/academic-staff-positions.png',
+      alt: 'Academic Staff Positions',
+      label: 'Staff',
+      link: '/staff-jobs',
+    },
+ 
+  ];
   const contentRegion = await getContentRegion();
+
 
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
   // let showJobElephant = true;
   // showJobElephant = false;
 
+
   return (
     <main className="content-grid">
-      <div className="flex flex-col items-center justify-center mb-32">
-        <div className="h-[15vh] flex flex-col items-end justify-end">
+      {/* <div className="flex flex-col items-center justify-center mb-32"> */}
+        {/* <div className="h-[15vh] flex flex-col items-end justify-end">
           <LogoAJ forceClass="logo" width={310} height={210} />
         </div>
-        {/* Job Search Form */}
+   
         <div className="w-full md:w-3/6 h-[6vh] flex flex-col items-top mt-[-1rem]">
           <JobSearchBoxHome />
         </div>
-      </div>
+      </div> */}
 
-      <JobCategoryAndLocationLinks />
+
+
+
+
+
+ 
+
+
+     
+
+
+        <div className="full-width h-[400px] gradient-aj">
+          <div className="hero-bg">
+            <section className="wrapper">
+              <h2 className="sentence">
+                Find
+                <div className="slidingVertical">
+                  <span>Opportunity</span>
+                  <span>Connections</span>
+                  <span>Happiness</span>
+                  <span>Opportunity</span>
+                  <span>Connections</span>
+                </div>
+              </h2>
+            </section>
+
+
+            <ul className="hero-icons flex flex-wrap gap-8 mx-auto text-center items-center justify-center">
+              {items.map((item, index) => (
+                <li key={index}>
+                  <Link className="grayscale hover:grayscale-0" href={item.link}>
+                    <Image
+                      src={item.src}
+                      width={size}
+                      height={size}
+                      alt={item.alt}
+                    />
+                  </Link>
+                  <Link href={item.link}>
+                    <p>{item.label}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+
+        <div className="w-full h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-28">
+          <JobSearchBoxHome />
+        </div>
+
+        <div className="mt-12">
+        <JobCategoryAndLocationLinks />
+        </div>
+
+<p className=" text-center mt-20 font-lg font-bold">Search By <span className="text-amber-500">REGION</span></p>
+
+
+
+
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 items-stretch mb-8 text-left mt-4 max-w-screen-lg mx-auto">
+           
+     
+              <div className="card bg-slate-100  hover:grayscale">
+              <figure className="">
+                  <Image
+                    width={1280}
+                    height={380}
+                    src="/home/statue-of-liberty-new-york-city-skyline.jpg"
+                    alt="Happiness and Academics: Scott Galloway's Algebra of hub"
+                    className="rounded-3xl grayscale-0"
+                  />
+                </figure>
+                <div className="pt-2">
+                  <h2 className="text-center text-sm text-gray-500"> United States</h2>
+                             </div>
+                               </div>
+         
+     
+         
+              <div className="card bg-slate-100  hover:grayscale">
+              <figure>
+                  <Image
+                    width={1000}
+                    height={1000}
+                    src="/home/sydney-harbour.jpg"
+                    alt="Top Academic Jobs Australia"
+                    className="rounded-3xl"
+                  />
+                </figure>
+                <div className="pt-2">
+                  <h2 className="text-center text-sm text-gray-500">
+                    {' '}
+                    Australia{' '}
+                  </h2>
+                              </div>
+              </div>
+         
+              <div className="card bg-slate-100  hover:grayscale">
+              <figure>
+                  <Image
+                    width={1280}
+                    height={380}
+                    src="/home/london-phone.jpg"
+                    alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                    className="rounded-3xl"
+                  />
+                </figure>
+                <div className="pt-2">
+                  <h2 className="text-center text-sm text-gray-500"> United Kingdom</h2>
+                            </div>
+                    </div>
+
+
+ 
+              <div className="card bg-slate-100  hover:grayscale">
+              <figure>
+                  <Image
+                    width={1280}
+                    height={380}
+                    src="/home/europe-flags.png"
+                    alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                    className="rounded-3xl"
+                  />
+                </figure>
+                <div className="pt-2">
+                  <h2 className="text-center text-sm text-gray-500"> Europe </h2>
+                            </div>
+                    </div>
+
+
+                   
+
+
+                    <div className="card bg-slate-100  hover:grayscale">
+              <figure>
+                  <Image
+                    width={1280}
+                    height={380}
+                    src="/home/beautiful-canada-flag-waving-front.png"
+                    alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                    className="rounded-3xl"
+                  />
+                </figure>
+                <div className="pt-2">
+                  <h2 className="text-center text-sm text-gray-500"> Canada </h2>
+                            </div>
+                    </div>
+           
+
+
+          </ul>
+
+
+       
+     
+
+
+
+
+
+
+     
       {/* Set this to false to show uni logo and welcome to message */}
       {contentRegion === 'USA' ? (
         <>
@@ -55,7 +275,9 @@ export default async function myPage() {
             </a>
           </div>
 
+
           <AmericaUniLogos />
+
 
           {/* <a
             href="#section"
@@ -66,7 +288,8 @@ export default async function myPage() {
         </>
       ) : (
         <>
-        
+       
+
 
           <div className="md:flex gap-4">
             <article
@@ -112,6 +335,7 @@ export default async function myPage() {
                 </div>
               </div>
             </article>
+
 
             <article
               className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold"
@@ -160,9 +384,11 @@ export default async function myPage() {
             </article>
           </div>
 
+
           <AusUniLogos />
         </>
       )}
+
 
       {/* Hero Panel */}
       {/* <div
@@ -195,6 +421,7 @@ export default async function myPage() {
         </div>
       </div> */}
 
+
       <div id="section" className="bg-slate-200 full-width py-4 mb-16">
         <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
           <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 pb-8  md:px-0">
@@ -203,6 +430,7 @@ export default async function myPage() {
             </span>{' '}
             Academic, research & science positions locally & globally
           </h1>
+
 
           <div>
             <p className="md:px-7 mb-4 mt-1">
@@ -220,12 +448,13 @@ export default async function myPage() {
               globally. Connect with your next career move in the academic
               sector through our comprehensive online job board. Find your next
               academic job now!
-              
-              
+             
+             
             </p>
           </div>
         </div>
       </div>
+
 
       <div className=" mx-auto mt-8 mb-8">
         <h2 className="underline-full"> Top University Employer Rankings</h2>
@@ -245,6 +474,7 @@ export default async function myPage() {
                     alt="Happiness and Academics: Scott Galloway's Algebra of hub"
                   />
                 </figure>
+
 
                 <ul className=" p-4 pl-12 list-disc text-gray-500">
                   <a href="https://www.academicjobs.com/employers/harvard-university/3100">
@@ -268,6 +498,7 @@ export default async function myPage() {
                     California Institute of Technology (Caltech)
                   </a>
                 </ul>
+
 
                 {/* <Link
                   href={'/academic-hub/'}
@@ -376,6 +607,7 @@ export default async function myPage() {
           </ul>
         </div>
       </div>
+
 
       {/* <p className="px-7 text-center mt-5">
             <Link
@@ -488,7 +720,7 @@ export default async function myPage() {
             </div>
           </div> */}
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-          
+         
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
@@ -580,6 +812,31 @@ export default async function myPage() {
                 </ul>
               </ul>
             </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/professor-in-ai-health/90013"
+                    className="text-blue-500 font-bold"
+                  >
+                    Professor in AI Health
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">
+                      Queensland University of Technology (QUT)
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="">Brisbane, QLD, Aus</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 1, 2024</Link>
+                  </li>
+                </ul>
+              </ul>
+            </div>
           </div>
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
             <div className="column">
@@ -647,7 +904,7 @@ export default async function myPage() {
                     href="/jobs/student-counsellor/93780"
                     className="text-blue-500 font-bold"
                   >
-                    
+                   
                    Executive Director of System Information Technology
                   </Link>
                 </li>
@@ -699,6 +956,7 @@ export default async function myPage() {
                 </ul>
               </ul>
             </div>
+
 
             <div className="column">
               <ul className="">
@@ -800,56 +1058,8 @@ export default async function myPage() {
                 </ul>
               </ul>
             </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/professor-in-ai-health/90013"
-                    className="text-blue-500 font-bold"
-                  >
-                    Professor in AI Health
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">
-                      Queensland University of Technology (QUT)
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="">Brisbane, QLD, Aus</Link>
-                  </li>
-                  <li>
-                    <Link href="">Apr 1, 2024</Link>
-                  </li>
-                </ul>
-              </ul>
-            </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/professor-in-artificial-intelligence/90020"
-                    className="text-blue-500 font-bold"
-                  >
-                    Professor in Artificial Intelligence
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">
-                      Queensland University of Technology (QUT)
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="">Brisbane, QLD, Aus</Link>
-                  </li>
-                  <li>
-                    <Link href="">Apr 1, 2024</Link>
-                  </li>
-                </ul>
-              </ul>
-            </div>
+     
+           
           </div>
         </div>
       </div>
@@ -857,12 +1067,14 @@ export default async function myPage() {
         view more top jobs →
       </Link>
 
+
       {/* <div className="ml-2">
       {/* <Link                 href="https://cportal.jobelephant.com/login"
                  className="btn text-white mt-8 bg-[#265882] px-4"
                >
                   Post Your JobElephant Now
                </Link></div> */}
+
 
       <h2 className="underline-full mt-20">Top Cities for Uni Jobs</h2>
       <div className="cate-group section23 ">
@@ -1034,6 +1246,7 @@ export default async function myPage() {
           </div>
         </div>
       </div>
+
 
       {/* WIP */}
       {/* <h2 className="underline-full mt-20">Top Universities To Work For</h2>
@@ -1214,6 +1427,7 @@ export default async function myPage() {
         </div>
       </div> */}
 
+
       {/* <h2 className="underline-full mt-20">
         The University Rankings/ Top Academic Careers
       </h2>
@@ -1354,6 +1568,7 @@ export default async function myPage() {
         </div>
       </div> */}
 
+
       {/* These are broken */}
       {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
         <Link
@@ -1375,6 +1590,7 @@ export default async function myPage() {
         </Link>
       </div> */}
 
+
       <div className="card-actions flex mt-4 mx-auto">
         <Link href="/academic-talent-pool" className="btn btn-aj">
           Join our Talent Pool
@@ -1383,3 +1599,6 @@ export default async function myPage() {
     </main>
   );
 }
+
+
+
