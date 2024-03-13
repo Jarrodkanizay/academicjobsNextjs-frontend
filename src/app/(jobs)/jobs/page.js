@@ -60,7 +60,7 @@ export default function Page() {
         setfilterTypes((p) => ({ ...p, AdministrationSupportJobs: true }));
         break;
       case filter1.some((obj) => obj.filter.includes('Academic / Faculty')):
-        setfilterTypes((p) => ({ ...p, FacultyDepartmentJobs: true }));
+        setfilterTypes((p) => ({ ...p, AcademicPositionType: true }));
         break;
       default:
         break;
@@ -101,7 +101,6 @@ export default function Page() {
     City: 'City',
     JobType: 'Job Type',
     PositionType: 'Position Type',
-
     ExecutiveJobs: 'Executive Jobs',
     AdministrationSupportJobs: 'Administration Support Jobs',
     HRJobs: 'HR Jobs',
