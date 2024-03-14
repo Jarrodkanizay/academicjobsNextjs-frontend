@@ -47,6 +47,7 @@ export default function Page() {
     setfilterTypes((p) => ({ ...p, HRJobs: false }));
     setfilterTypes((p) => ({ ...p, AdministrationSupportJobs: false }));
     setfilterTypes((p) => ({ ...p, FacultyDepartmentJobs: false }));
+    setfilterTypes((p) => ({ ...p, AcademicPositionType: false }));
     switch (true) {
       case filter1.some((obj) => obj.filter.includes('Executive ')):
         setfilterTypes((p) => ({ ...p, ExecutiveJobs: true }));
