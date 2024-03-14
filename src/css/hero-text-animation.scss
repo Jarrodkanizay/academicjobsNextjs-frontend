@@ -1,7 +1,7 @@
 /*Wrapper*/
 .wrapper {
   position: relative;
-  display: flex;
+  
   background-color: transparent;
   height: 90%;
   align-items: center;
@@ -25,8 +25,9 @@
   /*Vertical Sliding*/
   .slidingVertical {
     display: inline;
-    text-indent: 36px;
+   
   }
+ 
   .slidingVertical span {
     animation: topToBottom 12.5s linear infinite 0s;
     -ms-animation: topToBottom 12.5s linear infinite 0s;

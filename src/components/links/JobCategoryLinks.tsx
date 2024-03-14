@@ -6,7 +6,7 @@ type JobCategoryLinksProps = {
 
 const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
   return (
-    <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 px-2">
+    <ul className="faculty-container flex flex-wrap gap-2 md:gap-4 items-center justify-center text-gray-400 px-2">
       <li className="hover:underline">
         <Link href="/lecturer">Lecturer{'  '}</Link>
       </li>
@@ -16,21 +16,21 @@ const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
       <li className="hover:underline">
         <Link href="/professor/">Professor{'  '}</Link>
       </li>
-      {/* <li className="hover:underline">
+      {/* <li className="hover:underline md:hidden">
         <Link href="/executive/">Executive{'  '}</Link>
       </li> */}
-      {/* <li className="hover:underline">
+      {/* <li className="hover:underline md:hidden">
         <Link href="/faculty/">Faculty{'  '}</Link>
       </li> */}
-      {/* <li className="hover:underline">
+      {/* <li className="hover:underline md:hidden">
         <Link href="/staff-jobs/">Staff{'  '}</Link>
-      </li>
-      <li className="hover:underline">
+      </li> */}
+      <li className="hover:underline md:hidden">
         <Link href="/hr-jobs/">HR{'  '}</Link>
-      </li> */}
-      {/* <li className="hover:underline">
+      </li>
+      <li className="hover:underline md:hidden">
         <Link href="/student-jobs/">Student{'  '}</Link>
-      </li> */}
+      </li>
       <li className="hover:underline">
         <Link href="/industry/">Industry{'  '}</Link>
       </li>
@@ -45,12 +45,10 @@ const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
       <li className="hover:underline">
         <Link href="/postdoc"> Postdoc{'  '}</Link>
       </li>
-      {/* <li className="hover:underline">
-        <Link href="/phd">PhD</Link>
-      </li> */}
       <li className="hover:underline md:hidden">
-        <Link href="/jobs?l=&q=tenure"> Tenure-Track{'  '}</Link>
+        <Link href="/phd">PhD</Link>
       </li>
+    
  
   
     </ul>

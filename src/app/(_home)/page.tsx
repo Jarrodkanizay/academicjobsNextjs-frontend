@@ -109,12 +109,12 @@ export default async function myPage() {
      
 
 
-        <div className="full-width h-[400px] gradient-aj">
-          <div className="hero-bg">
-            <section className="wrapper">
+        <div className="full-width md:h-[400px] h-[229px] gradient-aj">
+          <div className="hero-bg md:bg-center">
+            <section className="wrapper md:flex">
               <h2 className="sentence">
-                Find
-                <div className="slidingVertical">
+                <span className="mr-8">Find</span> <span className="md:hidden block"><br/></span>
+                <div className="slidingVertical ">
                   <span>Opportunity</span>
                   <span>Connections</span>
                   <span>Happiness</span>
@@ -125,9 +125,9 @@ export default async function myPage() {
             </section>
 
 
-            <ul className="hero-icons flex flex-wrap gap-8 mx-auto text-center items-center justify-center">
+            <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
               {items.map((item, index) => (
-                <li key={index}>
+                <li  key={index}>
                   <Link className="grayscale hover:grayscale-0" href={item.link}>
                     <Image
                       src={item.src}
@@ -136,21 +136,29 @@ export default async function myPage() {
                       alt={item.alt}
                     />
                   </Link>
-                  <Link href={item.link}>
+                  <Link className="mb-4" href={item.link}>
                     <p>{item.label}</p>
                   </Link>
                 </li>
               ))}
             </ul>
+
+            <ul className="hero-icons flex flex-wrap gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-8rem] md:hidden ">
+                            <li><a className="grayscale hover:grayscale-0" href="/executive"><Image alt="Academic Executive Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"></Image></a>
+            <a className="mb-4" href="/executive"><p>Executive</p></a></li>
+            <li><a className="grayscale hover:grayscale-0" href="/faculty"><Image alt="Academic Faculty Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/hr-jobs"><p>Faculty</p></a></li>
+            <li><a className="grayscale hover:grayscale-0" href="/staff-jobs"><Image alt="Academic Staff Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/staff-jobs"><p>Staff/Admin</p></a></li></ul>
+
+
           </div>
         </div>
 
 
-        <div className="w-full h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-28">
+        <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
           <JobSearchBoxHome />
         </div>
 
-        <div className="mt-12">
+        <div className="md:mt-12 mt-4">
         <JobCategoryAndLocationLinks />
         </div>
 

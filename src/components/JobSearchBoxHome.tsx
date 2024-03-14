@@ -49,7 +49,7 @@ export default function JobSearchBox() {
         <input
           type="text"
           className="flex-grow px-4 py-2 focus:outline-none border rounded-t-lg md:rounded-lg shadow-md md:border-none md:shadow-none text-base bg-white animate-pulse text-center md:text-left"
-          placeholder="Search 22713 Jobs"
+          placeholder="Type Keywords"
           ref={keyWordRef}
         />
         <button
