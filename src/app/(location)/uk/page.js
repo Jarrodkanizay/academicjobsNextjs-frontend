@@ -4,6 +4,8 @@ import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import UK from '@/components/topUnis/UK';
+import JobSearchBoxHome from '@/components/JobSearchBoxHome';
+import { getContentRegion } from '@/actions/getContentRegion';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -13,15 +15,132 @@ export const metadata = {
     'Find your ideal academic jobs in UK and join the vibrant academic community at UK university jobs. We have the perfect opportunity for you whatever the job. ',
   keywords: 'Academic Jobs UK. academicjobs, academia jobs',
 };
-export default function Page() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, []);
- 
-  return (
-    <div>
+export default async function myPage() {
+  const size = 180;
+  const items = [
+    {
+      src: '/home/academic-staff-positions.png',
+      alt: 'Academic Staff Positions',
+      label: 'Staff/Admin',
+      link: '/uk/admin',
+    },
+    {
+      src: '/home/academic-executive-positions.png',
+      alt: 'Academic Executive Positions',
+      label: 'Executive',
+      link: '/uk/executive',
+    },
   
-      <div className="pt-[8rem] flex flex-col items-center justify-center" >
+   
+    {
+      src: '/home/academic-human-resource-positions.png',
+      alt: 'Academic Human Resource Positions',
+      label: 'HR',
+      link: '/uk/hr-jobs',
+    },
+    {
+      src: '/home/academic-faculty-positions.png',
+      alt: 'Academic Faculty Positions',
+      label: 'Faculty',
+      link: '/uk/faculty',
+    },
+    {
+      src: '/home/academic-phd-positions.png',
+      alt: 'Academic PhD Positions',
+      label: 'PhD Jobs',
+      link: '/uk/phd',
+    },
+    {
+      src: '/home/academic-graduate-positions.png',
+      alt: 'Academic PhD Positions',
+      label: 'Student Jobs',
+      link: '/uk/student-jobs',
+    },
+    {
+      src: '/home/academic-lecturer-positions.png',
+      alt: 'Academic Graduate Positions',
+      label: 'Collaborate',
+      link: '/uk/graduate',
+    },
+ 
+ 
+  ];
+  const contentRegion = await getContentRegion();
+
+
+  //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
+  // let showJobElephant = true;
+  // showJobElephant = false;
+
+
+  return (
+
+   
+
+
+
+
+
+
+ 
+
+
+     
+
+<main className="content-grid">
+        <div className="full-width md:h-[400px] h-[229px] gradient-aj">
+          <div className="hero-bg-uk md:bg-center">
+            
+            <section className="wrapper md:flex ">
+              <h2 className="sentence mt-[6rem]">
+              <h2 className="sentence-uk text-amber-500 md:mb-[-5rem] mb-[-10rem]">#1 university job website in the uk</h2>
+                <span className="mr-8">Find</span> <span className="md:hidden block my-[-1rem]"><br/></span>
+                <div className="slidingVertical ">
+                  <span>Opportunity</span>
+                  <span>Connections</span>
+                  <span>Happiness</span>
+                  <span>Opportunity</span>
+                  <span>Connections</span>
+                </div>
+              </h2>
+            
+            </section>
+
+
+            <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
+              {items.map((item, index) => (
+                <li  key={index}>
+                  <Link className="grayscale hover:grayscale-0" href={item.link}>
+                    <Image
+                      src={item.src}
+                      width={size}
+                      height={size}
+                      alt={item.alt}
+                    />
+                  </Link>
+                  <Link className="mb-4" href={item.link}>
+                    <p>{item.label}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <ul className="hero-icons flex flex-wrap gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] md:hidden ">
+                            <li><a className="grayscale hover:grayscale-0" href="/uk/executive"><Image alt="Academic Executive Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"></Image></a>
+            <a className="mb-4" href="/uk/executive"><p>Executive</p></a></li>
+            <li><a className="grayscale hover:grayscale-0" href="/uk/faculty"><Image alt="Academic Faculty Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/hr-jobs"><p>Faculty</p></a></li>
+            <li><a className="grayscale hover:grayscale-0" href="/uk/staff"><Image alt="Academic Staff Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/staff-jobs"><p>Staff/Admin</p></a></li></ul>
+
+
+          </div>
+        </div>
+
+
+        <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
+          <JobSearchBoxHome />
+        </div>
+  
+      {/* <div className="pt-[8rem] flex flex-col items-center justify-center" >
         <Image
           src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-uk-min.png"
 
@@ -29,10 +148,10 @@ export default function Page() {
           className=" w-[20rem] mb-[1rem] "
           width={330}
           height={220}
-        /></div>
-      <JobSearchBox l="United Kingdom"/>
+        /></div> */}
+      {/* <JobSearchBox l="United Kingdom"/>
      
-      <h3 className="text-center ">We Are United Kingdom's University Job Website</h3>
+      <h3 className="text-center ">We Are United Kingdom's University Job Website</h3> */}
      
       <div className=" mt-[5rem] " >
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
@@ -58,7 +177,7 @@ export default function Page() {
 
           <li><Link href="/jobs/full-time/" >Full-Time</Link></li>
           <li><Link href="/jobs/part-time/" >	Part-Time</Link></li>
-          <li><Link href="/jobs/casual/" >	Casual</Link></li>
+          <li><Link className="  hidden md:block" href="/jobs/casual/" >	Casual</Link></li>
         </ul>
       </div>
 
@@ -128,6 +247,6 @@ export default function Page() {
             </div>
           </div>
         </div>
-        </div>
+        </main>
   )
 }

@@ -39,7 +39,7 @@ export const filterType  = {
     AdministrationSupportJobs: false,
     HRJobs: false,
     FacultyDepartmentJobs: false,
-    AcademicPositionType: true,
+    AcademicPositionType: false,
     EmploymentType: true,
     SalaryRange: true,
     OnsiteRemote: true,

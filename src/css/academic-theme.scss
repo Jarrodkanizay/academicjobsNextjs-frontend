@@ -62,10 +62,33 @@ html {
       background-image: url('/home/woman-with-blond-short-tanned-smiling-cute-gazing-friendly.png');
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: center;
+    
     }
+
+    .hero-bg-aus {
+      position: relative;
+      background-image: url('/home/aus-academic.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    
+    }    
+    .hero-bg-usa {
+      position: relative;
+      background-image: url('/home/usa-academic.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    
+    } 
+    .hero-bg-uk {
+      position: relative;
+      background-image: url('/home/uk-academic.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    
+    } 
+
     .hero-icons {
-      position: absolute;
+     
       width: 100%;
       bottom: var(--position_type_y);
     }
@@ -106,6 +129,28 @@ html {
       .wrapper {
         .sentence {
           font-size: 14px;
+        }
+      }
+    }
+
+    @media (max-width: 604px) {
+      .wrapper {
+        .sentence-aus {
+          font-size: 8px;
+        }
+      }
+    }
+    @media (max-width: 604px) {
+      .wrapper {
+        .sentence-usa {
+          font-size: 8px;
+        }
+      }
+    }
+    @media (max-width: 604px) {
+      .wrapper {
+        .sentence-uk {
+          font-size: 8px;
         }
       }
     }

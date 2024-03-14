@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import JobSearchBox2 from '@/components/JobSearchBox2';
+import JobSearchBox3 from '@/components/JobSearchBox3';
 import { filterType } from '@/utils/data';
 import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
@@ -46,6 +47,7 @@ export default function Page() {
     setfilterTypes((p) => ({ ...p, HRJobs: false }));
     setfilterTypes((p) => ({ ...p, AdministrationSupportJobs: false }));
     setfilterTypes((p) => ({ ...p, FacultyDepartmentJobs: false }));
+    setfilterTypes((p) => ({ ...p, AcademicPositionType: false }));
     switch (true) {
       case filter1.some((obj) => obj.filter.includes('Executive ')):
         setfilterTypes((p) => ({ ...p, ExecutiveJobs: true }));
@@ -59,7 +61,7 @@ export default function Page() {
         setfilterTypes((p) => ({ ...p, AdministrationSupportJobs: true }));
         break;
       case filter1.some((obj) => obj.filter.includes('Academic / Faculty')):
-        setfilterTypes((p) => ({ ...p, FacultyDepartmentJobs: true }));
+        setfilterTypes((p) => ({ ...p, AcademicPositionType: true }));
         break;
       default:
         break;
@@ -100,12 +102,11 @@ export default function Page() {
     City: 'City',
     JobType: 'Job Type',
     PositionType: 'Position Type',
-
     ExecutiveJobs: 'Executive Jobs',
     AdministrationSupportJobs: 'Administration Support Jobs',
     HRJobs: 'HR Jobs',
     FacultyDepartmentJobs: 'Faculty/Department',
-    AcademicPositionType: 'Academic Position Type',
+    AcademicPositionType: 'Faculty/Department',
     EmploymentType: 'Employment Type',
     InstitutionName: 'Institution Name',
     SalaryRange: 'Salary Range in USD',
@@ -154,7 +155,7 @@ export default function Page() {
         <div className="w-full bg-gray-100 py-4 mb-4 mt-8">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-screen-xl mx-auto ">
-              <JobSearchBox forceClass="hidden md:block" />
+              <JobSearchBox3 forceClass="hidden md:block" />
               <JobSearchBox2 forceClass="block md:hidden" />
             </div>
           </div>

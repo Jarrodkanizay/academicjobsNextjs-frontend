@@ -6,6 +6,8 @@ import JobFilter from '@/components/JobFilter';
 import SearchResults from '@/components/SearchResults';
 import AusUniLogos from '@/components/AusUniLogos';
 import Australia from '@/components/topUnis/Australia';
+import JobSearchBoxHome from '@/components/JobSearchBoxHome';
+import { getContentRegion } from '@/actions/getContentRegion';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -16,13 +18,132 @@ export const metadata = {
   keywords:
     'Academic Jobs Australia. university jobs Australia, Uni jobs Australia',
 };
-export default function Page() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, []);
+export default async function myPage() {
+  const size = 180;
+  const items = [
+    {
+      src: '/home/academic-staff-positions.png',
+      alt: 'Academic Staff Positions',
+      label: 'Staff/Admin',
+      link: '/australia/admin',
+    },
+    {
+      src: '/home/academic-executive-positions.png',
+      alt: 'Academic Executive Positions',
+      label: 'Executive',
+      link: '/australia/executive',
+    },
+  
+   
+    {
+      src: '/home/academic-human-resource-positions.png',
+      alt: 'Academic Human Resource Positions',
+      label: 'HR',
+      link: '/australia/hr-jobs',
+    },
+    {
+      src: '/home/academic-faculty-positions.png',
+      alt: 'Academic Faculty Positions',
+      label: 'Faculty',
+      link: '/australia/faculty',
+    },
+    {
+      src: '/home/academic-phd-positions.png',
+      alt: 'Academic PhD Positions',
+      label: 'PhD Jobs',
+      link: '/australia/phd',
+    },
+    {
+      src: '/home/academic-graduate-positions.png',
+      alt: 'Academic PhD Positions',
+      label: 'Student Jobs',
+      link: '/australia/student-jobs',
+    },
+    {
+      src: '/home/academic-lecturer-positions.png',
+      alt: 'Academic Graduate Positions',
+      label: 'Collaborate',
+      link: '/australia/graduate',
+    },
+ 
+ 
+  ];
+  const contentRegion = await getContentRegion();
+
+
+  //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
+  // let showJobElephant = true;
+  // showJobElephant = false;
+
+
   return (
-    <div>
-      <div className="pt-[4rem] flex flex-col items-center justify-center">
+
+   
+
+
+
+
+
+
+ 
+
+
+     
+
+<main className="content-grid">
+        <div className="full-width md:h-[400px] h-[229px] gradient-aj">
+          <div className="hero-bg-aus md:bg-center">
+            
+            <section className="wrapper md:flex ">
+              <h2 className="sentence mt-[6rem]">
+              <h2 className="sentence-aus text-black md:mb-[-5rem] mb-[-10rem]">Australia's University Job Website</h2>
+                <span className="mr-8">Find</span> <span className="md:hidden block my-[-1rem]"><br/></span>
+                <div className="slidingVertical ">
+                  <span>Opportunity</span>
+                  <span>Connections</span>
+                  <span>Happiness</span>
+                  <span>Opportunity</span>
+                  <span>Connections</span>
+                </div>
+              </h2>
+            
+            </section>
+
+
+            <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
+              {items.map((item, index) => (
+                <li  key={index}>
+                  <Link className="grayscale hover:grayscale-0" href={item.link}>
+                    <Image
+                      src={item.src}
+                      width={size}
+                      height={size}
+                      alt={item.alt}
+                    />
+                  </Link>
+                  <Link className="mb-4" href={item.link}>
+                    <p>{item.label}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <ul className="hero-icons flex flex-wrap gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] md:hidden ">
+                            <li><a className="grayscale hover:grayscale-0" href="/australia/executive"><Image alt="Academic Executive Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"></Image></a>
+            <a className="mb-4" href="/australia/executive"><p>Executive</p></a></li>
+            <li><a className="grayscale hover:grayscale-0" href="/australia/faculty"><Image alt="Academic Faculty Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/australia/faculty"><p>Faculty</p></a></li>
+            <li><a className="grayscale hover:grayscale-0" href="/australia/admin"><Image alt="Academic Staff Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/australia/admin"><p>Staff/Admin</p></a></li></ul>
+
+
+          </div>
+        </div>
+
+
+        <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
+          <JobSearchBoxHome />
+        </div>
+    
+      {/* <div className="pt-[4rem] flex flex-col items-center justify-center">
         <Image
           src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-australia-min.png"
           alt="AcademicJobs Australia Logo"
@@ -30,19 +151,17 @@ export default function Page() {
           width={330}
           height={220}
         />
-        {/* <h2 className="underline-full text-5xl text-amber-500">
-        Australia's University Job Board
-        </h2> */}
+     
       </div>
       <div className="max-w-screen-md mx-auto">
         <JobSearchBox l="Australia" />
-      </div>
+      </div> */}
 
       {/* <h3 className="text-center ">
         We Are Australia's University Job Website
       </h3> */}
 
-      <div className=" mt-[2rem] ">
+      <div className=" mt-[3rem] ">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li className="">
@@ -54,16 +173,16 @@ export default function Page() {
             <li className=" ">
               <Link href="/Australia/professor"> Professor</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/Australia/faculty"> Faculty</Link>
-            </li>
+            </li> */}
           </ul>
-          <li>
+          {/* <li>
             <Link href="/Australia/executive"> Executive</Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link href="/Australia/admin">Admin</Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/Australia/hr-jobs"> HR</Link>
           </li>
@@ -112,15 +231,15 @@ export default function Page() {
       {/* <div className="text-center items-center justify-center px-auto mx-auto text-sm text-gray-500 animate-pulse pb-12">
         View Your Ranking Here
       </div> */}
-      <AusUniLogos />
+      {/* <AusUniLogos /> */}
       {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">
         <a href="#section" class="scroll-smooth md:scroll-auto">
           ▼
         </a>
       </div> */}
 
-      <div className="content-grid mx-auto">
-        <div id="section" className="bg-slate-200 full-width py-4 full-width ">
+     
+        <div id="section" className="bg-slate-200 py-4 full-width mt-8">
           <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
             <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
               <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">
@@ -406,7 +525,7 @@ export default function Page() {
                       {' '}
                       Top HR Professional of the Month{' '}
                     </h2>
-                    <a className=" text-gray-400"> 23 Feb, 2024</a>
+              
                   </div>
                   <figure  >
                     <Image
@@ -493,7 +612,7 @@ export default function Page() {
            
                
                          <div>
-<a div className="card-title mx-8 mt-8 text-[#3b5683]"> Top 20 HR jobs today</a>
+<a div className="card-title mx-8 mt-8 text-[#3b5683]"> Top HR jobs today</a>
                          <div className=" h-96 ml-8 overflow-y-scroll"> 
         
           <SearchResults q={{ q: "hr", l: "Australia" }} /> </div></div>
@@ -516,7 +635,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      
+    </main>
   );
 }
