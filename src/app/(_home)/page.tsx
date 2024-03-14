@@ -179,7 +179,7 @@ export default async function myPage() {
 
 
 
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 items-stretch mb-8 text-left mt-6 max-w-screen-lg mx-auto">
+        <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 items-stretch mb-8 text-left mt-6 max-w-screen-lg mx-auto">
            
      
              
