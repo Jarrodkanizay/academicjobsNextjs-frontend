@@ -66,7 +66,7 @@ export default async function myPage() {
     {
       src: '/home/academic-graduate-positions.png',
       alt: 'Academic PhD Positions',
-      label: 'Student Jobs',
+      label: 'Student',
       link: '/student-jobs',
     },
     {
