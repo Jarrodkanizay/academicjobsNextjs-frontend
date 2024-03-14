@@ -48,7 +48,7 @@ export default async function myPage() {
     {
       src: '/home/academic-human-resource-positions.png',
       alt: 'Academic Human Resource Positions',
-      label: 'HR',
+      label: 'HR Jobs',
       link: '/hr-jobs',
     },
     {

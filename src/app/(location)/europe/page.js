@@ -94,7 +94,7 @@ export default async function myPage() {
             
             <section className="wrapper md:flex ">
               <h2 className="sentence mt-[6rem]">
-              <h2 className="sentence-eu text-amber-500 md:mb-[-5rem] mb-[-10rem]">#1 university job website in Europe</h2>
+              <h2 className="sentence-eu text-amber-500 md:mb-[-5rem] mb-[-10rem]">All Academic positions in Europe</h2>
                 <span className="mr-8">Find</span> <span className="md:hidden block my-[-1rem]"><br/></span>
                 <div className="slidingVertical ">
                   <span>Opportunity</span>
