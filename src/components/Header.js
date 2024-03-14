@@ -76,7 +76,7 @@ export default function Header() {
   return (
     <>
       <div className="hamburger-wrapper">
-        {pathname === '/' ? (
+        {pathname === '' ? (
           isNavOpen && (
             <Link
               href={`/${countryMappings2[region.toLowerCase()].url}`}
@@ -106,7 +106,7 @@ export default function Header() {
       </div>
       <header className={`header ${isNavOpen ? 'show-menu shadow-xl' : ''} `}>
         <nav>
-          {pathname === '/' ? null : (
+          {pathname === '' ? null : (
             <Link href={`/${countryMappings2[region.toLowerCase()].url}`} className="hide-mobile static-logo mr-4">
               <LogoAJ width={270} height={60} />{' '}
             </Link>
@@ -134,7 +134,7 @@ export default function Header() {
             forceButtonClass="border-b hover:border-amber-500 "
             onClick={() => setIsNavOpen(false)}
           />
-          <div
+          {/* <div
             className={`hide-mobile p-2  md:w-52  dropdown-content z-[1] menu px-4 py-2   rounded-box w-31 } `}
             style={{ maxWidth: '62px' }}
             onMouseLeave={onMouseLeave}
@@ -177,15 +177,14 @@ export default function Header() {
                 ))}
               </ul>
             </div>
-            {/* </div> */}
-            {/* </div> */}
-          </div>
+           
+          </div> */}
 
           {isNavOpen && (
             <>
               <a
                 className="btn btn-aj w-full mt-4"
-                // onClick={handleFormSubmit}
+              
                 href="/jobs"
               >
                 Search Globally

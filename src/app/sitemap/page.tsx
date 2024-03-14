@@ -1017,11 +1017,11 @@ export default function myPage() {
                   Stanford University
                 </Link>
               </li>
-              <li className="pb-6">
+              {/* <li className="pb-6">
                 <Link href="/employers/california-institute/4133/">
                   California Institute of Technology
                 </Link>
-              </li>
+              </li> */}
               <li className="pb-6">
                 <Link href="/employers/university-of-california-san-francisco/3683/">
                   University of California - San Francisco
