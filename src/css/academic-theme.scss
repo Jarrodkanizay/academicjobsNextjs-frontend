@@ -87,6 +87,22 @@ html {
     
     } 
 
+    .hero-bg-eu {
+      position: relative;
+      background-image: url('/home/eu-academic.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    
+    } 
+
+    .hero-bg-ca {
+      position: relative;
+      background-image: url('/home/ca-academic.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    
+    } 
+
     .hero-icons {
      
       width: 100%;
@@ -150,6 +166,22 @@ html {
     @media (max-width: 604px) {
       .wrapper {
         .sentence-uk {
+          font-size: 8px;
+        }
+      }
+    }
+
+    @media (max-width: 604px) {
+      .wrapper {
+        .sentence-eu {
+          font-size: 8px;
+        }
+      }
+    }
+
+    @media (max-width: 604px) {
+      .wrapper {
+        .sentence-ca {
           font-size: 8px;
         }
       }

@@ -4,6 +4,8 @@ import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import Canada from '@/components/topUnis/Canada';
+import JobSearchBoxHome from '@/components/JobSearchBoxHome';
+import { getContentRegion } from '@/actions/getContentRegion';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -13,22 +15,135 @@ export const metadata = {
     'Explore academic jobs in Canada and discover a range of opportunities in Canada university jobs such as teaching, research or staff positions.',
   keywords: 'academic jobs in Canada, Canada university jobs',
 };
-export default function Page() {
-  return (
-    <div>
-      <div className="pt-[5rem] flex flex-col items-center justify-center"></div>
-      <div className=" flex flex-col items-center justify-center">
-        <Image
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-canada-min.png"
-          alt="AcademicJobs Canada Logo"
-          className=" w-[20rem] mb-[1rem] "
-          width={330}
-          height={220}
-        />
-      </div>
-      <JobSearchBox l="Canada" />
+export default async function myPage() {
+  const size = 180;
+  const items = [
+    {
+      src: '/home/academic-staff-positions.png',
+      alt: 'Academic Staff Positions',
+      label: 'Staff/Admin',
+      link: '/canada/admin',
+    },
+    {
+      src: '/home/academic-executive-positions.png',
+      alt: 'Academic Executive Positions',
+      label: 'Executive',
+      link: '/canada/executive',
+    },
+  
+   
+    {
+      src: '/home/academic-human-resource-positions.png',
+      alt: 'Academic Human Resource Positions',
+      label: 'HR',
+      link: '/canada/hr-jobs',
+    },
+    {
+      src: '/home/academic-faculty-positions.png',
+      alt: 'Academic Faculty Positions',
+      label: 'Faculty',
+      link: '/canada/faculty',
+    },
+    {
+      src: '/home/academic-phd-positions.png',
+      alt: 'Academic PhD Positions',
+      label: 'PhD Jobs',
+      link: '/canada/phd',
+    },
+    {
+      src: '/home/academic-graduate-positions.png',
+      alt: 'Academic PhD Positions',
+      label: 'Student Jobs',
+      link: '/canada/student-jobs',
+    },
+    {
+      src: '/home/academic-lecturer-positions.png',
+      alt: 'Academic Graduate Positions',
+      label: 'Collaborate',
+      link: '/canada/graduate',
+    },
+ 
+ 
+  ];
+  const contentRegion = await getContentRegion();
 
-      <h3 className="text-center ">We Are Canada's University Job Website</h3>
+
+  //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
+  // let showJobElephant = true;
+  // showJobElephant = false;
+
+
+  return (
+
+   
+
+
+
+
+
+
+ 
+
+
+     
+
+<main className="content-grid">
+        <div className="full-width md:h-[400px] h-[229px] gradient-aj">
+          <div className="hero-bg-ca md:bg-center">
+            
+            <section className="wrapper md:flex ">
+              <h2 className="sentence mt-[6rem]">
+              <h2 className="sentence-ca text-amber-500 md:mb-[-5rem] mb-[-10rem]">#1 university job website in canada</h2>
+                <span className="mr-8">Find</span> <span className="md:hidden block my-[-1rem]"><br/></span>
+                <div className="slidingVertical ">
+                  <span>Opportunity</span>
+                  <span>Connections</span>
+                  <span>Happiness</span>
+                  <span>Opportunity</span>
+                  <span>Connections</span>
+                </div>
+              </h2>
+            
+            </section>
+
+
+            <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
+              {items.map((item, index) => (
+                <li  key={index}>
+                  <Link className="grayscale hover:grayscale-0" href={item.link}>
+                    <Image
+                      src={item.src}
+                      width={size}
+                      height={size}
+                      alt={item.alt}
+                    />
+                  </Link>
+                  <Link className="mb-4" href={item.link}>
+                    <p>{item.label}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <ul className="hero-icons flex flex-wrap gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] md:hidden ">
+                            <li><a className="grayscale hover:grayscale-0" href="/canada/executive"><Image alt="Academic Executive Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"></Image></a>
+            <a className="mb-4" href="/canada/executive"><p>Executive</p></a></li>
+            <li><a className="grayscale hover:grayscale-0" href="/canada/faculty"><Image alt="Academic Faculty Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/hr-jobs"><p>Faculty</p></a></li>
+            <li><a className="grayscale hover:grayscale-0" href="/canada/staff"><Image alt="Academic Staff Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/staff-jobs"><p>Staff/Admin</p></a></li></ul>
+
+
+          </div>
+        </div>
+
+
+        <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
+          <JobSearchBoxHome />
+        </div>
+
+ 
+
+   
+  
 
       <div className=" mt-[5rem] ">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-500 ">
@@ -89,7 +204,7 @@ export default function Page() {
         />{' '}
       </a>
 
-      <div className="content-grid mx-auto">
+
         <div
           id="section"
           className=" full-width py-4  full-width mb-[175px] bg-slate-200"
@@ -145,7 +260,7 @@ export default function Page() {
 
         <h2 className="">ALL HIGHER ED JOBS IN CANADA BY UNIVERSITY </h2>
         <Canada id="section3" heading="" />
-      </div>
-    </div>
+     
+    </main>
   );
 }

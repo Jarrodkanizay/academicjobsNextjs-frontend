@@ -4,6 +4,8 @@ import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import Europe from '@/components/topUnis/Europe';
+import JobSearchBoxHome from '@/components/JobSearchBoxHome';
+import { getContentRegion } from '@/actions/getContentRegion';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -13,21 +15,137 @@ export const metadata = {
     'Find your ideal academic job in Europe and join the vibrant academic community at Europe university jobs such teaching, research or innovative opportunities.',
   keywords: 'Academic Jobs Europe. academic jobs in Europe, Europe University Jobs',
 };
-export default function Page() {
+
+export default async function myPage() {
+  const size = 180;
+  const items = [
+    {
+      src: '/home/academic-staff-positions.png',
+      alt: 'Academic Staff Positions',
+      label: 'Staff/Admin',
+      link: '/europe/admin',
+    },
+    {
+      src: '/home/academic-executive-positions.png',
+      alt: 'Academic Executive Positions',
+      label: 'Executive',
+      link: '/europe/executive',
+    },
+  
+   
+    {
+      src: '/home/academic-human-resource-positions.png',
+      alt: 'Academic Human Resource Positions',
+      label: 'HR',
+      link: '/europe/hr-jobs',
+    },
+    {
+      src: '/home/academic-faculty-positions.png',
+      alt: 'Academic Faculty Positions',
+      label: 'Faculty',
+      link: '/europe/faculty',
+    },
+    {
+      src: '/home/academic-phd-positions.png',
+      alt: 'Academic PhD Positions',
+      label: 'PhD Jobs',
+      link: '/europe/phd',
+    },
+    {
+      src: '/home/academic-graduate-positions.png',
+      alt: 'Academic PhD Positions',
+      label: 'Student Jobs',
+      link: '/europe/student-jobs',
+    },
+    {
+      src: '/home/academic-lecturer-positions.png',
+      alt: 'Academic Graduate Positions',
+      label: 'Collaborate',
+      link: '/europe/graduate',
+    },
+ 
+ 
+  ];
+  const contentRegion = await getContentRegion();
+
+
+  //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
+  // let showJobElephant = true;
+  // showJobElephant = false;
+
+
   return (
-    <div>
-   <div className="pt-[8rem] flex flex-col items-center justify-center" >
-        <Image
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-europe-min.png"
 
-          alt="AcademicJobs Europe logo"
-          className=" w-[20rem] mb-[1rem] "
-          width={330}
-          height={220}
-        /></div>
-      <JobSearchBox l="Europe"/>
+   
 
-      <h3 className="text-center ">We Are Europe's University Job Website</h3>
+
+
+
+
+
+ 
+
+
+     
+
+<main className="content-grid">
+        <div className="full-width md:h-[400px] h-[229px] gradient-aj">
+          <div className="hero-bg-eu md:bg-center">
+            
+            <section className="wrapper md:flex ">
+              <h2 className="sentence mt-[6rem]">
+              <h2 className="sentence-eu text-amber-500 md:mb-[-5rem] mb-[-10rem]">#1 university job website in Europe</h2>
+                <span className="mr-8">Find</span> <span className="md:hidden block my-[-1rem]"><br/></span>
+                <div className="slidingVertical ">
+                  <span>Opportunity</span>
+                  <span>Connections</span>
+                  <span>Happiness</span>
+                  <span>Opportunity</span>
+                  <span>Connections</span>
+                </div>
+              </h2>
+            
+            </section>
+
+
+            <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
+              {items.map((item, index) => (
+                <li  key={index}>
+                  <Link className="grayscale hover:grayscale-0" href={item.link}>
+                    <Image
+                      src={item.src}
+                      width={size}
+                      height={size}
+                      alt={item.alt}
+                    />
+                  </Link>
+                  <Link className="mb-4" href={item.link}>
+                    <p>{item.label}</p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <ul className="hero-icons flex flex-wrap gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] md:hidden ">
+                            <li><a className="grayscale hover:grayscale-0" href="/europe/executive"><Image alt="Academic Executive Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"></Image></a>
+            <a className="mb-4" href="/europe/executive"><p>Executive</p></a></li>
+            <li><a className="grayscale hover:grayscale-0" href="/europe/faculty"><Image alt="Academic Faculty Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/hr-jobs"><p>Faculty</p></a></li>
+            <li><a className="grayscale hover:grayscale-0" href="/europe/staff"><Image alt="Academic Staff Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/staff-jobs"><p>Staff/Admin</p></a></li></ul>
+
+
+          </div>
+        </div>
+
+
+        <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
+          <JobSearchBoxHome />
+        </div>
+  
+
+  
+
+
+      {/* <h3 className="text-center ">We Are Europe's University Job Website</h3> */}
       
       <div className=" mt-[5rem] " >
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
@@ -58,14 +176,14 @@ export default function Page() {
       </div>
   
 
-      <div className="content-grid mx-auto py-5">
+      
         
    
     
             
             
             
-        <div id="section" className=" full-width py-4  full-width mb-[175px] bg-slate-200">
+        <div id="section" className=" full-width py-4 full-width mb-[175px] bg-slate-200 mt-8">
   <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
   <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
           <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">ACADEMIC&nbsp;JOBS Europe:</span> < br /> 
@@ -101,8 +219,8 @@ export default function Page() {
               <div> */}
                     <h2 className="">AcademicJobs Europe: All Academic Positions by university  </h2>
                     <Europe heading="" />
-              </div>
-            </div>
+          
+            </main>
          
   )
 }
