@@ -32,17 +32,18 @@ export default async function myPage() {
   const size = 180;
   const items = [
     {
+      src: '/home/academic-staff-positions.png',
+      alt: 'Academic Staff Positions',
+      label: 'Staff/Admin',
+      link: '/staff-jobs',
+    },
+    {
       src: '/home/academic-executive-positions.png',
       alt: 'Academic Executive Positions',
       label: 'Executive',
       link: '/executive',
     },
-    {
-      src: '/home/academic-phd-positions.png',
-      alt: 'Academic Lecturer Positions',
-      label: 'Talent-Pool',
-      link: '/lecturer',
-    },
+  
    
     {
       src: '/home/academic-human-resource-positions.png',
@@ -57,10 +58,16 @@ export default async function myPage() {
       link: '/faculty',
     },
     {
+      src: '/home/academic-phd-positions.png',
+      alt: 'Academic PhD Positions',
+      label: 'PhD Jobs',
+      link: '/phd',
+    },
+    {
       src: '/home/academic-graduate-positions.png',
       alt: 'Academic PhD Positions',
-      label: 'PhD/Student',
-      link: '/phd',
+      label: 'Student Jobs',
+      link: '/student-jobs',
     },
     {
       src: '/home/academic-lecturer-positions.png',
@@ -68,12 +75,7 @@ export default async function myPage() {
       label: 'Collaborate',
       link: '/graduate',
     },
-    {
-      src: '/home/academic-staff-positions.png',
-      alt: 'Academic Staff Positions',
-      label: 'Staff',
-      link: '/staff-jobs',
-    },
+ 
  
   ];
   const contentRegion = await getContentRegion();
@@ -152,32 +154,32 @@ export default async function myPage() {
         <JobCategoryAndLocationLinks />
         </div>
 
-<p className=" text-center mt-20 font-lg font-bold">Search By <span className="text-amber-500">REGION</span></p>
+        <div className="">
+            <a href="/jobelephant-recruitment">
+              <Image
+                width={180}
+                height={170}
+                src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
+                className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
+                alt="AcademicJobs Job Elephant Client Center"
+              />
+            </a>
+          </div>
+
+{/* <p className=" text-center mt-20 font-lg font-bold">Search By <span className="text-amber-500">REGION</span></p> */}
 
 
 
 
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 items-stretch mb-8 text-left mt-4 max-w-screen-lg mx-auto">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 items-stretch mb-8 text-left mt-6 max-w-screen-lg mx-auto">
            
      
-              <div className="card bg-slate-100  hover:grayscale">
-              <figure className="">
-                  <Image
-                    width={1280}
-                    height={380}
-                    src="/home/statue-of-liberty-new-york-city-skyline.jpg"
-                    alt="Happiness and Academics: Scott Galloway's Algebra of hub"
-                    className="rounded-3xl grayscale-0"
-                  />
-                </figure>
-                <div className="pt-2">
-                  <h2 className="text-center text-sm text-gray-500"> United States</h2>
-                             </div>
-                               </div>
+             
          
      
          
-              <div className="card bg-slate-100  hover:grayscale">
+              <Link href="/australia" className="card bg-slate-100  hover:grayscale hover:underline">
+              <h2 className="text-center  text-gray-500 font-normal mb-0 text-[16px]"> Australia</h2>
               <figure>
                   <Image
                     width={1000}
@@ -187,15 +189,10 @@ export default async function myPage() {
                     className="rounded-3xl"
                   />
                 </figure>
-                <div className="pt-2">
-                  <h2 className="text-center text-sm text-gray-500">
-                    {' '}
-                    Australia{' '}
-                  </h2>
-                              </div>
-              </div>
+              </Link>
          
-              <div className="card bg-slate-100  hover:grayscale">
+              <Link href="/uk" className="card bg-slate-100  hover:grayscale hover:underline">
+              <h2 className="text-center text-gray-500 font-normal mb-0 text-[16px]"> United Kingdom</h2>
               <figure>
                   <Image
                     width={1280}
@@ -205,14 +202,25 @@ export default async function myPage() {
                     className="rounded-3xl"
                   />
                 </figure>
-                <div className="pt-2">
-                  <h2 className="text-center text-sm text-gray-500"> United Kingdom</h2>
-                            </div>
-                    </div>
+                    </Link>
+
+                    <Link href="/usa" className="card bg-slate-100  hover:grayscale hover:underline ">
+              <h2 className="text-center text-gray-500 font-normal mb-0 text-[16px]"> United States</h2>
+              <figure className="">
+                  <Image
+                    width={1280}
+                    height={380}
+                    src="/home/statue-of-liberty-new-york-city-skyline.jpg"
+                    alt="Happiness and Academics: Scott Galloway's Algebra of hub"
+                    className="rounded-3xl grayscale-0"
+                  />
+                </figure>
+                               </Link>
 
 
  
-              <div className="card bg-slate-100  hover:grayscale">
+              <Link href="/europe" className="card bg-slate-100  hover:grayscale hover:underline">
+              <h2 className="text-center  text-[16px] text-gray-500 font-normal mb-0"> Europe</h2>
               <figure>
                   <Image
                     width={1280}
@@ -222,16 +230,14 @@ export default async function myPage() {
                     className="rounded-3xl"
                   />
                 </figure>
-                <div className="pt-2">
-                  <h2 className="text-center text-sm text-gray-500"> Europe </h2>
-                            </div>
-                    </div>
+                    </Link>
 
 
                    
 
 
-                    <div className="card bg-slate-100  hover:grayscale">
+                    <Link href="/canada" className="card bg-slate-100  hover:grayscale hover:underline">
+                    <h2 className="text-center text-[16px] text-gray-500 font-normal mb-0"> Canada</h2>
               <figure>
                   <Image
                     width={1280}
@@ -241,10 +247,7 @@ export default async function myPage() {
                     className="rounded-3xl"
                   />
                 </figure>
-                <div className="pt-2">
-                  <h2 className="text-center text-sm text-gray-500"> Canada </h2>
-                            </div>
-                    </div>
+                            </Link>
            
 
 
@@ -261,7 +264,7 @@ export default async function myPage() {
 
      
       {/* Set this to false to show uni logo and welcome to message */}
-      {contentRegion === 'USA' ? (
+      {/* {contentRegion === 'USA' ? (
         <>
           <div className="mb-16">
             <a href="/jobelephant-recruitment">
@@ -277,7 +280,7 @@ export default async function myPage() {
 
 
           <AmericaUniLogos />
-
+ */}
 
           {/* <a
             href="#section"
@@ -285,7 +288,7 @@ export default async function myPage() {
           >
             ▼
           </a> */}
-        </>
+        {/* </>
       ) : (
         <>
        
@@ -387,7 +390,7 @@ export default async function myPage() {
 
           <AusUniLogos />
         </>
-      )}
+      )} */}
 
 
       {/* Hero Panel */}
