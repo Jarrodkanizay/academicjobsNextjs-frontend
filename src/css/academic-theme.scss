@@ -72,6 +72,20 @@ html {
       background-repeat: no-repeat;
     
     }    
+    .hero-bg-usa {
+      position: relative;
+      background-image: url('/home/usa-academic.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    
+    } 
+    .hero-bg-uk {
+      position: relative;
+      background-image: url('/home/uk-academic.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    
+    } 
 
     .hero-icons {
      
@@ -122,6 +136,20 @@ html {
     @media (max-width: 604px) {
       .wrapper {
         .sentence-aus {
+          font-size: 8px;
+        }
+      }
+    }
+    @media (max-width: 604px) {
+      .wrapper {
+        .sentence-usa {
+          font-size: 8px;
+        }
+      }
+    }
+    @media (max-width: 604px) {
+      .wrapper {
+        .sentence-uk {
           font-size: 8px;
         }
       }
