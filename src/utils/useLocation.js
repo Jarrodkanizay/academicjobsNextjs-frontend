@@ -11,10 +11,10 @@ const useLocation = () => {
                 );
                 const result = await response.json();
                 //return result.country.name;
-                //console.log("result.country.name1", result.country.name)
-                
-                setRegion(countryMappings[result.country.name.toLowerCase()]) 
-                console.log("result.country.name2", countryMappings[result.country.name.toLowerCase()])
+                //console.log("result.country.name1", result)
+                //console.log("result.country.name2", result.country.name)
+                if (countryMappings[result.country.name.toLowerCase()]) setRegion(countryMappings[result.country.name.toLowerCase()]) 
+                //console.log("result.country.name3", countryMappings[result.country.name.toLowerCase()])
             } catch (error) {
                 //return '';
             }
