@@ -8,8 +8,6 @@ import JobCategoryAndLocationLinks from '@/components/links/JobCategoryAndLocati
 import AusUniLogos from '@/components/AusUniLogos';
 import AmericaUniLogos from '@/components/AmericaUniLogos';
 import { getContentRegion } from '@/actions/getContentRegion';
-
-
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
@@ -20,14 +18,6 @@ export const metadata: Metadata = {
   keywords:
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
-
-
-
-
-
-
-
-
 export default async function myPage() {
   const size = 180;
   const items = [
@@ -43,8 +33,6 @@ export default async function myPage() {
       label: 'Executive',
       link: '/executive',
     },
-  
-   
     {
       src: '/home/academic-human-resource-positions.png',
       alt: 'Academic Human Resource Positions',
@@ -75,202 +63,217 @@ export default async function myPage() {
       label: 'Collaborate',
       link: '/graduate',
     },
- 
- 
   ];
   const contentRegion = await getContentRegion();
-
-
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
   // let showJobElephant = true;
   // showJobElephant = false;
-
-
   return (
     <main className="content-grid">
       {/* <div className="flex flex-col items-center justify-center mb-32"> */}
-        {/* <div className="h-[15vh] flex flex-col items-end justify-end">
+      {/* <div className="h-[15vh] flex flex-col items-end justify-end">
           <LogoAJ forceClass="logo" width={310} height={210} />
         </div>
-   
         <div className="w-full md:w-3/6 h-[6vh] flex flex-col items-top mt-[-1rem]">
           <JobSearchBoxHome />
         </div>
       </div> */}
-
-
-
-
-
-
- 
-
-
-     
-
-
-        <div className="full-width md:h-[400px] h-[229px] gradient-aj">
-          <div className="hero-bg md:bg-center">
-            <section className="wrapper md:flex">
-              <h2 className="sentence">
-                <span className="mr-8">Find</span> <span className="md:hidden block"><br/></span>
-                <div className="slidingVertical ">
-                  <span>Opportunity</span>
-                  <span>Connections</span>
-                  <span>Happiness</span>
-                  <span>Opportunity</span>
-                  <span>Connections</span>
-                </div>
-              </h2>
-            </section>
-
-
-            <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
-              {items.map((item, index) => (
-                <li  key={index}>
-                  <Link className="grayscale hover:grayscale-0" href={item.link}>
-                    <Image
-                      src={item.src}
-                      width={size}
-                      height={size}
-                      alt={item.alt}
-                    />
-                  </Link>
-                  <Link className="mb-4" href={item.link}>
-                    <p>{item.label}</p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            <ul className="hero-icons flex flex-wrap gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-8rem] md:hidden ">
-                            <li><a className="grayscale hover:grayscale-0" href="/executive"><Image alt="Academic Executive Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"></Image></a>
-            <a className="mb-4" href="/executive"><p>Executive</p></a></li>
-            <li><a className="grayscale hover:grayscale-0" href="/faculty"><Image alt="Academic Faculty Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/faculty"><p>Faculty</p></a></li>
-            <li><a className="grayscale hover:grayscale-0" href="/staff-jobs"><Image alt="Academic Staff Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/staff-jobs"><p>Staff/Admin</p></a></li></ul>
-
-
-          </div>
-        </div>
-
-
-        <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
-          <JobSearchBoxHome />
-        </div>
-
-        <div className="md:mt-12 mt-4">
-        <JobCategoryAndLocationLinks />
-        </div>
-
-        <div className="">
-            <a href="/jobelephant-recruitment">
-              <Image
-                width={180}
-                height={170}
-                src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
-                className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
-                alt="AcademicJobs Job Elephant Client Center"
-              />
-            </a>
-          </div>
-
-{/* <p className=" text-center mt-20 font-lg font-bold">Search By <span className="text-amber-500">REGION</span></p> */}
-
-
-
-
-        <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 items-stretch mb-8 text-left mt-6 max-w-screen-lg mx-auto">
-           
-     
-             
-         
-     
-         
-              <Link href="/australia" className="card bg-slate-100  hover:grayscale hover:underline">
-              <h2 className="text-center  text-gray-500 font-normal mb-0 text-[16px]"> Australia</h2>
-              <figure>
+      <div className="full-width md:h-[400px] h-[229px] gradient-aj">
+        <div className="hero-bg md:bg-center">
+          <section className="wrapper md:flex">
+            <h2 className="sentence">
+              <span className="mr-8">Find</span>{' '}
+              <span className="md:hidden block">
+                <br />
+              </span>
+              <div className="slidingVertical ">
+                <span>Opportunity</span>
+                <span>Connections</span>
+                <span>Happiness</span>
+                <span>Opportunity</span>
+                <span>Connections</span>
+              </div>
+            </h2>
+          </section>
+          <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
+            {items.map((item, index) => (
+              <li key={index}>
+                <Link className="grayscale hover:grayscale-0" href={item.link}>
                   <Image
-                    width={1000}
-                    height={1000}
-                    src="/home/sydney-harbour.jpg"
-                    alt="Top Academic Jobs Australia"
-                    className="rounded-3xl"
+                    src={item.src}
+                    width={size}
+                    height={size}
+                    alt={item.alt}
                   />
-                </figure>
-              </Link>
-         
-              <Link href="/uk" className="card bg-slate-100  hover:grayscale hover:underline">
-              <h2 className="text-center text-gray-500 font-normal mb-0 text-[16px]"> United Kingdom</h2>
-              <figure>
-                  <Image
-                    width={1280}
-                    height={380}
-                    src="/home/london-phone.jpg"
-                    alt="How to Land Your Dream College Job: A Step-by-Step Guide"
-                    className="rounded-3xl"
-                  />
-                </figure>
-                    </Link>
-
-                    <Link href="/usa" className="card bg-slate-100  hover:grayscale hover:underline ">
-              <h2 className="text-center text-gray-500 font-normal mb-0 text-[16px]"> United States</h2>
-              <figure className="">
-                  <Image
-                    width={1280}
-                    height={380}
-                    src="/home/statue-of-liberty-new-york-city-skyline.jpg"
-                    alt="Happiness and Academics: Scott Galloway's Algebra of hub"
-                    className="rounded-3xl grayscale-0"
-                  />
-                </figure>
-                               </Link>
-
-
- 
-              <Link href="/europe" className="card bg-slate-100  hover:grayscale hover:underline">
-              <h2 className="text-center  text-[16px] text-gray-500 font-normal mb-0"> Europe</h2>
-              <figure>
-                  <Image
-                    width={1280}
-                    height={380}
-                    src="/home/europe-flags.png"
-                    alt="How to Land Your Dream College Job: A Step-by-Step Guide"
-                    className="rounded-3xl"
-                  />
-                </figure>
-                    </Link>
-
-
-                   
-
-
-                    <Link href="/canada" className="card bg-slate-100  hover:grayscale hover:underline">
-                    <h2 className="text-center text-[16px] text-gray-500 font-normal mb-0"> Canada</h2>
-              <figure>
-                  <Image
-                    width={1280}
-                    height={380}
-                    src="/home/beautiful-canada-flag-waving-front.png"
-                    alt="How to Land Your Dream College Job: A Step-by-Step Guide"
-                    className="rounded-3xl"
-                  />
-                </figure>
-                            </Link>
-           
-
-
+                </Link>
+                <Link className="mb-4" href={item.link}>
+                  <p>{item.label}</p>
+                </Link>
+              </li>
+            ))}
           </ul>
-
-
-       
-     
-
-
-
-
-
-
-     
+          <ul className="hero-icons flex flex-wrap gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-8rem] md:hidden ">
+            <li>
+              <a className="grayscale hover:grayscale-0" href="/executive">
+                <Image
+                  alt="Academic Executive Positions"
+                  loading="lazy"
+                  width="180"
+                  height="180"
+                  decoding="async"
+                  data-nimg="1"
+                  src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"
+                ></Image>
+              </a>
+              <a className="mb-4" href="/executive">
+                <p>Executive</p>
+              </a>
+            </li>
+            <li>
+              <a className="grayscale hover:grayscale-0" href="/faculty">
+                <Image
+                  alt="Academic Faculty Positions"
+                  loading="lazy"
+                  width="180"
+                  height="180"
+                  decoding="async"
+                  data-nimg="1"
+                  src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75"
+                ></Image>
+              </a>
+              <a className="mb-4" href="/faculty">
+                <p>Faculty</p>
+              </a>
+            </li>
+            <li>
+              <a className="grayscale hover:grayscale-0" href="/staff-jobs">
+                <Image
+                  alt="Academic Staff Positions"
+                  loading="lazy"
+                  width="180"
+                  height="180"
+                  decoding="async"
+                  data-nimg="1"
+                  src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"
+                ></Image>
+              </a>
+              <a className="mb-4" href="/staff-jobs">
+                <p>Staff/Admin</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
+        <JobSearchBoxHome />
+      </div>
+      <div className="md:mt-12 mt-4">
+        <JobCategoryAndLocationLinks />
+      </div>
+      <div className="">
+        <a href="/jobelephant-recruitment">
+          <Image
+            width={180}
+            height={170}
+            src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
+            className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
+            alt="AcademicJobs Job Elephant Client Center"
+          />
+        </a>
+      </div>
+      {/* <p className=" text-center mt-20 font-lg font-bold">Search By <span className="text-amber-500">REGION</span></p> */}
+      <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 items-stretch mb-8 text-left mt-6 max-w-screen-lg mx-auto">
+        <Link
+          href="/australia"
+          className="card bg-slate-100  hover:grayscale hover:underline"
+        >
+          <h2 className="text-center  text-gray-500 font-normal mb-0 text-[16px]">
+            {' '}
+            Australia
+          </h2>
+          <figure>
+            <Image
+              width={1000}
+              height={1000}
+              src="/home/sydney-harbour.jpg"
+              alt="Top Academic Jobs Australia"
+              className="rounded-3xl"
+            />
+          </figure>
+        </Link>
+        <Link
+          href="/uk"
+          className="card bg-slate-100  hover:grayscale hover:underline"
+        >
+          <h2 className="text-center text-gray-500 font-normal mb-0 text-[16px]">
+            {' '}
+            United Kingdom
+          </h2>
+          <figure>
+            <Image
+              width={1280}
+              height={380}
+              src="/home/london-phone.jpg"
+              alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+              className="rounded-3xl"
+            />
+          </figure>
+        </Link>
+        <Link
+          href="/usa"
+          className="card bg-slate-100  hover:grayscale hover:underline "
+        >
+          <h2 className="text-center text-gray-500 font-normal mb-0 text-[16px]">
+            {' '}
+            United States
+          </h2>
+          <figure className="">
+            <Image
+              width={1280}
+              height={380}
+              src="/home/statue-of-liberty-new-york-city-skyline.jpg"
+              alt="Happiness and Academics: Scott Galloway's Algebra of hub"
+              className="rounded-3xl grayscale-0"
+            />
+          </figure>
+        </Link>
+        <Link
+          href="/europe"
+          className="card bg-slate-100  hover:grayscale hover:underline"
+        >
+          <h2 className="text-center  text-[16px] text-gray-500 font-normal mb-0">
+            {' '}
+            Europe
+          </h2>
+          <figure>
+            <Image
+              width={1280}
+              height={380}
+              src="/home/europe-flags.png"
+              alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+              className="rounded-3xl"
+            />
+          </figure>
+        </Link>
+        <Link
+          href="/canada"
+          className="card bg-slate-100  hover:grayscale hover:underline"
+        >
+          <h2 className="text-center text-[16px] text-gray-500 font-normal mb-0">
+            {' '}
+            Canada
+          </h2>
+          <figure>
+            <Image
+              width={1280}
+              height={380}
+              src="/home/beautiful-canada-flag-waving-front.png"
+              alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+              className="rounded-3xl"
+            />
+          </figure>
+        </Link>
+      </ul>
       {/* Set this to false to show uni logo and welcome to message */}
       {/* {contentRegion === 'USA' ? (
         <>
@@ -285,23 +288,17 @@ export default async function myPage() {
               />
             </a>
           </div>
-
-
           <AmericaUniLogos />
  */}
-
-          {/* <a
+      {/* <a
             href="#section"
             className="scroll-smooth md:scroll-auto text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16px]"
           >
             ▼
           </a> */}
-        {/* </>
+      {/* </>
       ) : (
         <>
-       
-
-
           <div className="md:flex gap-4">
             <article
               className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold"
@@ -346,8 +343,6 @@ export default async function myPage() {
                 </div>
               </div>
             </article>
-
-
             <article
               className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold"
               data-id="59973"
@@ -394,13 +389,9 @@ export default async function myPage() {
               </div>
             </article>
           </div>
-
-
           <AusUniLogos />
         </>
       )} */}
-
-
       {/* Hero Panel */}
       {/* <div
         id="section"
@@ -431,8 +422,6 @@ export default async function myPage() {
           </p>
         </div>
       </div> */}
-
-
       <div id="section" className="bg-slate-200 full-width py-4 mb-16">
         <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
           <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 pb-8  md:px-0">
@@ -441,8 +430,6 @@ export default async function myPage() {
             </span>{' '}
             Academic, research & science positions locally & globally
           </h1>
-
-
           <div>
             <p className="md:px-7 mb-4 mt-1">
               Discover top-tier faculty and staff roles in the world of higher
@@ -459,14 +446,10 @@ export default async function myPage() {
               globally. Connect with your next career move in the academic
               sector through our comprehensive online job board. Find your next
               academic job now!
-             
-             
             </p>
           </div>
         </div>
       </div>
-
-
       <div className=" mx-auto mt-8 mb-8">
         <h2 className="underline-full"> Top University Employer Rankings</h2>
         <div className="bg-white flex flex-col">
@@ -485,8 +468,6 @@ export default async function myPage() {
                     alt="Happiness and Academics: Scott Galloway's Algebra of hub"
                   />
                 </figure>
-
-
                 <ul className=" p-4 pl-12 list-disc text-gray-500">
                   <a href="https://www.academicjobs.com/employers/harvard-university/3100">
                     Harvard University
@@ -509,8 +490,6 @@ export default async function myPage() {
                     California Institute of Technology (Caltech)
                   </a>
                 </ul>
-
-
                 {/* <Link
                   href={'/academic-hub/'}
                   className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
@@ -618,8 +597,6 @@ export default async function myPage() {
           </ul>
         </div>
       </div>
-
-
       {/* <p className="px-7 text-center mt-5">
             <Link
               className="link  text-[#f4a10c] font-bold text-2xl hover:text-orange-500"
@@ -731,7 +708,6 @@ export default async function myPage() {
             </div>
           </div> */}
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-         
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
@@ -915,8 +891,7 @@ export default async function myPage() {
                     href="/jobs/student-counsellor/93780"
                     className="text-blue-500 font-bold"
                   >
-                   
-                   Executive Director of System Information Technology
+                    Executive Director of System Information Technology
                   </Link>
                 </li>
                 <ul className="innerUL">
@@ -967,8 +942,6 @@ export default async function myPage() {
                 </ul>
               </ul>
             </div>
-
-
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
@@ -1044,8 +1017,6 @@ export default async function myPage() {
                 </ul>
               </ul>
             </div>
-         
-     
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
@@ -1069,24 +1040,18 @@ export default async function myPage() {
                 </ul>
               </ul>
             </div>
-     
-           
           </div>
         </div>
       </div>
       <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
         view more top jobs →
       </Link>
-
-
       {/* <div className="ml-2">
       {/* <Link                 href="https://cportal.jobelephant.com/login"
                  className="btn text-white mt-8 bg-[#265882] px-4"
                >
                   Post Your JobElephant Now
                </Link></div> */}
-
-
       <h2 className="underline-full mt-20">Top Cities for Uni Jobs</h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">
@@ -1257,8 +1222,6 @@ export default async function myPage() {
           </div>
         </div>
       </div>
-
-
       {/* WIP */}
       {/* <h2 className="underline-full mt-20">Top Universities To Work For</h2>
       <div className="cate-group section23 ">
@@ -1437,8 +1400,6 @@ export default async function myPage() {
           </div>
         </div>
       </div> */}
-
-
       {/* <h2 className="underline-full mt-20">
         The University Rankings/ Top Academic Careers
       </h2>
@@ -1578,8 +1539,6 @@ export default async function myPage() {
           </div>
         </div>
       </div> */}
-
-
       {/* These are broken */}
       {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
         <Link
@@ -1600,8 +1559,6 @@ export default async function myPage() {
           </span>
         </Link>
       </div> */}
-
-
       <div className="card-actions flex mt-4 mx-auto">
         <Link href="/academic-talent-pool" className="btn btn-aj">
           Join our Talent Pool
@@ -1610,6 +1567,3 @@ export default async function myPage() {
     </main>
   );
 }
-
-
-
