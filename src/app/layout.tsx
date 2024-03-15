@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import QueryProvider from '@/lib/store/query-provider';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
-
+import { Providers } from './providers';
 // import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -36,10 +36,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-white`}>
         <QueryProvider>
-          <Header />
-          {children}
-          <div className="spacer">&nbsp;</div>
-          <Footer />
+          <Providers>
+            <Header />
+            {children}
+            <div className="spacer">&nbsp;</div>
+            <Footer />
+          </Providers>
         </QueryProvider>
       </body>
       <GoogleAnalytics />

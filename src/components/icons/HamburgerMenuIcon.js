@@ -9,9 +9,9 @@ const HamburgerMenuIcon = ({ onClick, isOpen }) => {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 10 10"
         stroke="black"
-        stroke-width=".6"
+        strokeWidth=".6"
         fill="transparent"
-        stroke-linecap="round"
+        strokeLinecap="round"
       >
         <path
           d={isOpen ? crossIcon : hamburgerIcon}

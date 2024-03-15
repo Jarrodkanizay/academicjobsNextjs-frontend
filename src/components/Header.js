@@ -14,6 +14,9 @@ import {
   countryMappings1,
   countryMappings2,
 } from '@/lib/data/data';
+import SigninButton from '@/components/SigninButton';
+import Button from '@/shadcn/ui/button';
+
 export default function Header() {
   
   // const { fetchLocation } = useLocation();
@@ -227,6 +230,9 @@ export default function Header() {
               forceButtonClass="nav-mobile-btn btn btn-aj "
               onClick={() => setIsNavOpen(false)}
             />
+          </div>
+          <div className="ml-auto post-a-job-button z-[-1] md:z-[1]">
+            {/* <SigninButton /> */}
           </div>
         </nav>
       </header>

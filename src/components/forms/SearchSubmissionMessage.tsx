@@ -37,8 +37,8 @@ const SearchSubmissionMessage = ({
             <g
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeWidth="2"
             >
               <path
                 stroke-dasharray="60"
