@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { regionData } from '@/data/usaPositions';
 import SearchResults from '@/components/SearchResults';
+import SearchResults1 from '@/components/SearchResults1';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import TalentPool from '@/components/TalentPoolCTA';
@@ -96,6 +97,34 @@ export default function Page({ params, searchParams }: any) {
         <div className="listings_panel">
           <div className="listings_content">
           <SearchResults q={{ q: Name, l: regionName }} />
+
+
+           {/* <section className="jobs_grid job_post_search_container">
+         <div className="filters_panel">
+           <div className="filters_content">
+             <JobFilter />
+           </div>
+         </div>
+         <div className="listings_panel">
+           <div className="listings_content">
+        
+
+             <SearchResults1
+               q={{
+                 filter1: [
+                   { category: 'Country', filter: 'United States' },
+                   { category: 'JobType', filter: 'Human Resources' },
+                 ],
+                 q: '',
+                 l: '',
+               }}
+             />
+    
+           </div>
+         </div>
+    </section> */}
+
+
           </div>
         </div>
       </section>
