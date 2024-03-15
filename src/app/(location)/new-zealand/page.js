@@ -68,17 +68,17 @@ export default function Page() {
             <Link href="/online/"> Online </Link>
           </li>
           <li>
-            <Link href="/jobs/remote/"> Remote</Link>
+            <Link href="/remote"> Remote</Link>
           </li>
 
           <li>
-            <Link href="/jobs/full-time/">Full-Time</Link>
+            <Link href="/full-time/">Full-Time</Link>
           </li>
           <li>
-            <Link href="/jobs/part-time/"> Part-Time</Link>
+            <Link href="/part-time"> Part-Time</Link>
           </li>
           <li>
-            <Link href="/jobs/casual/"> Casual</Link>
+            <Link href="/casual"> Casual</Link>
           </li>
         </ul>
       </div>

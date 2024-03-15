@@ -57,7 +57,7 @@ export default async function myPage() {
       src: '/home/academic-graduate-positions.png',
       alt: 'Academic PhD Positions',
       label: 'Student Jobs',
-      link: '/usa/student-jobs',
+      link: '/usa/student',
     },
     {
       src: '/home/academic-lecturer-positions.png',
@@ -214,16 +214,16 @@ export default async function myPage() {
             <Link href="/online/"> Online </Link>
           </li>
           <li>
-            <Link href="/jobs/remote/"> Remote</Link>
+            <Link href="/remote"> Remote</Link>
           </li>
           <li>
-            <Link href="/jobs/full-time/">Full-Time</Link>
+            <Link href="/full-time/">Full-Time</Link>
           </li>
           <li>
-            <Link href="/jobs/part-time/"> Part-Time</Link>
+            <Link href="/part-time"> Part-Time</Link>
           </li>
           <li>
-            <Link className="  hidden md:block" href="/jobs/casual/"> Casual</Link>
+            <Link className="  hidden md:block" href="/casual"> Casual</Link>
           </li>
         </ul>
       </div>
@@ -285,7 +285,7 @@ export default async function myPage() {
           </div>
           <div className="  flex flex-wrap gap-6 px-7 pb-4 text-gray-400 mx-auto">
             <Link href="/USA/faq/"> USA FAQ</Link>
-            <Link href="/ivyleague/"> Ivy League</Link>{' '}
+            {/* <Link href="/ivyleague/"> Ivy League</Link>{' '} */}
           </div>
           <p className="font-semibold"></p>
         </div>

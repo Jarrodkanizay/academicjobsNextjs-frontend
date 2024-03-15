@@ -54,7 +54,7 @@ export default async function myPage() {
       src: '/home/academic-graduate-positions.png',
       alt: 'Academic PhD Positions',
       label: 'Student Jobs',
-      link: '/uk/student-jobs',
+      link: '/uk/student',
     },
     {
       src: '/home/academic-lecturer-positions.png',
@@ -129,7 +129,7 @@ export default async function myPage() {
                             <li><a className="grayscale hover:grayscale-0" href="/uk/executive"><Image alt="Academic Executive Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"></Image></a>
             <a className="mb-4" href="/uk/executive"><p>Executive</p></a></li>
             <li><a className="grayscale hover:grayscale-0" href="/uk/faculty"><Image alt="Academic Faculty Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/hr-jobs"><p>Faculty</p></a></li>
-            <li><a className="grayscale hover:grayscale-0" href="/uk/staff"><Image alt="Academic Staff Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/staff-jobs"><p>Staff/Admin</p></a></li></ul>
+            <li><a className="grayscale hover:grayscale-0" href="/uk/admin"><Image alt="Academic Staff Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-admin-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/admin-jobs"><p>Staff/Admin</p></a></li></ul>
 
 
           </div>
@@ -173,11 +173,11 @@ export default async function myPage() {
         <ul className="faculty-container flex  gap-4 items-center justify-center text-[#f4a10c] ">
 
           <li><Link href="/online/" >	Online </Link></li>
-          <li><Link href="/jobs/remote/" >	Remote</Link></li>
+          <li><Link href="/remote" >	Remote</Link></li>
 
-          <li><Link href="/jobs/full-time/" >Full-Time</Link></li>
-          <li><Link href="/jobs/part-time/" >	Part-Time</Link></li>
-          <li><Link className="  hidden md:block" href="/jobs/casual/" >	Casual</Link></li>
+          <li><Link href="/full-time/" >Full-Time</Link></li>
+          <li><Link href="/part-time" >	Part-Time</Link></li>
+          <li><Link className="  hidden md:block" href="/casual" >	Casual</Link></li>
         </ul>
       </div>
 
@@ -230,8 +230,8 @@ export default async function myPage() {
              
           </div>
 
-          <div className="  flex-wrap text-center gap-6 px-7 pb-4  text-gray-400" >
-            <Link href="/russelgroup/" >	Russel Group</Link> </div>
+          {/* <div className="  flex-wrap text-center gap-6 px-7 pb-4  text-gray-400" >
+            <Link href="/russelgroup/" >	Russel Group</Link> </div> */}
 
             </div>
 

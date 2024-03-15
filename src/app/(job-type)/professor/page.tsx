@@ -63,7 +63,7 @@ export default function myPage() {
           ))}
         </ul>
       </div>
-      <JobSearchBox q="professor" forceClass="my-6" />
+      <JobSearchBox q="" forceClass="my-6" />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">

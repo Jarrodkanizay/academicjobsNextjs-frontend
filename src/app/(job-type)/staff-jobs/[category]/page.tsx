@@ -80,7 +80,7 @@ export default function Page({ params, searchParams }: any) {
                     </Link>
       </div>
 
-      <JobSearchBox q={Name} />
+      <JobSearchBox  />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">

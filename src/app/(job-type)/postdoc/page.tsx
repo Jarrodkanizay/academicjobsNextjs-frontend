@@ -56,7 +56,7 @@ export default function myPage() {
               </h1>
               <p>
               View all of the Post Doc jobs that respectable universities now have available on AcademicJobs. Our academic institutions are constantly seeking the greatest, you can apply for fantastic global academic Post Doc positions through our website.</p> */}
-      <JobSearchBox q="postdoc" forceClass="my-6" />
+      <JobSearchBox q="" forceClass="my-6" />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">

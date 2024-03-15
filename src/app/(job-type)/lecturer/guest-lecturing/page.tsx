@@ -66,7 +66,7 @@ export default function myPage() {
         </div> */}
 
 
-<JobSearchBox q="guest lecturer" />
+<JobSearchBox q="" />
       <SearchResults q={{ q: 'guest lecturer' || 0 }} />
 
 

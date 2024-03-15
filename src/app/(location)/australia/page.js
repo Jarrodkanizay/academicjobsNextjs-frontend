@@ -57,7 +57,7 @@ export default async function myPage() {
       src: '/home/academic-graduate-positions.png',
       alt: 'Academic PhD Positions',
       label: 'Student Jobs',
-      link: '/australia/student-jobs',
+      link: '/australia/student',
     },
     {
       src: '/home/academic-lecturer-positions.png',

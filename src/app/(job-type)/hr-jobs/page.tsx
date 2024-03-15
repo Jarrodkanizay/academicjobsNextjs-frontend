@@ -88,7 +88,7 @@ export default function myPage() {
           title="YouTube video player"
         ></iframe>
       </div>
-      <JobSearchBox q="hr" forceClass="my-6" />
+      <JobSearchBox q="" forceClass="my-6" />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">

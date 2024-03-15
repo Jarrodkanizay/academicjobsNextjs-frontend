@@ -10,8 +10,7 @@ export const metadata: Metadata = {
     absolute: ' Academic Casual Jobs', //Option 2 overrides the title in layout.tsx
   },
   description:
-    'If you are looking for academic jobs online, you can browse through our job board to find the latest opportunities in this flexible and rewarding field.   ',
-  keywords: 'Academic Jobs Online. online positions',
+    'If you are searching online for academic employment, you may uncover the most recent openings in this adaptable and fulfilling industry by browsing through our job board.',
 };
 export default function myPage() {
   return (
@@ -45,7 +44,7 @@ export default function myPage() {
           </div>
         </div>
       </div>
-      <JobSearchBox q="casual" forceClass="my-6" />
+      <JobSearchBox q="" forceClass="my-6" />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">

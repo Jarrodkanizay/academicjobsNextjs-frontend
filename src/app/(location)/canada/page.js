@@ -12,7 +12,7 @@ export const metadata = {
     absolute: 'Academic Jobs Canada',
   },
   description:
-    'Explore academic jobs in Canada and discover a range of opportunities in Canada university jobs such as teaching, research or staff positions.',
+    'Explore academic jobs in Canada and discover a range of opportunities in Canada university jobs such as teaching, research or admin positions.',
   keywords: 'academic jobs in Canada, Canada university jobs',
 };
 export default async function myPage() {
@@ -54,7 +54,7 @@ export default async function myPage() {
       src: '/home/academic-graduate-positions.png',
       alt: 'Academic PhD Positions',
       label: 'Student Jobs',
-      link: '/canada/student-jobs',
+      link: '/canada/student',
     },
     {
       src: '/home/academic-lecturer-positions.png',
@@ -129,7 +129,7 @@ export default async function myPage() {
                             <li><a className="grayscale hover:grayscale-0" href="/canada/executive"><Image alt="Academic Executive Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"></Image></a>
             <a className="mb-4" href="/canada/executive"><p>Executive</p></a></li>
             <li><a className="grayscale hover:grayscale-0" href="/canada/faculty"><Image alt="Academic Faculty Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/hr-jobs"><p>Faculty</p></a></li>
-            <li><a className="grayscale hover:grayscale-0" href="/canada/staff"><Image alt="Academic Staff Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/staff-jobs"><p>Staff/Admin</p></a></li></ul>
+            <li><a className="grayscale hover:grayscale-0" href="/canada/admin"><Image alt="Academic Staff Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/admin-jobs"><p>Staff/Admin</p></a></li></ul>
 
 
           </div>
@@ -179,17 +179,17 @@ export default async function myPage() {
             <Link href="/online/"> Online </Link>
           </li>
           <li>
-            <Link href="/jobs/remote/"> Remote</Link>
+            <Link href="/remote"> Remote</Link>
           </li>
 
           <li>
-            <Link href="/jobs/full-time/">Full-Time</Link>
+            <Link href="/full-time/">Full-Time</Link>
           </li>
           <li>
-            <Link href="/jobs/part-time/"> Part-Time</Link>
+            <Link href="/part-time"> Part-Time</Link>
           </li>
           <li>
-            <Link href="/jobs/casual/"> Casual</Link>
+            <Link href="/casual"> Casual</Link>
           </li>
         </ul>
       </div>

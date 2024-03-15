@@ -78,7 +78,7 @@ export default function Page({ params, searchParams }) {
         </div>
       </div>
 
-      <JobSearchBox q={Name} l={regionName} />
+      <JobSearchBox  />
       <SearchResults2 q={{ filter1, l: regionName }} />
     </main>
   );

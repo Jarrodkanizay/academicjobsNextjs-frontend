@@ -85,7 +85,7 @@ export default function Page({ params, searchParams }: any) {
         </div>
       </div>
 
-      <JobSearchBox q={Name} l={regionName} />
+      <JobSearchBox  />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">

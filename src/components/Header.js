@@ -134,7 +134,7 @@ export default function Header() {
             forceButtonClass="border-b hover:border-amber-500 "
             onClick={() => setIsNavOpen(false)}
           />
-          {/* <div
+          <div
             className={`hide-mobile p-2  md:w-52  dropdown-content z-[1] menu px-4 py-2   rounded-box w-31 } `}
             style={{ maxWidth: '62px' }}
             onMouseLeave={onMouseLeave}
@@ -178,7 +178,7 @@ export default function Header() {
               </ul>
             </div>
            
-          </div> */}
+          </div>
 
           {isNavOpen && (
             <>

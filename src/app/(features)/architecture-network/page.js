@@ -60,11 +60,11 @@ export default function Page() {
         <ul className="faculty-container flex  gap-4 items-center justify-center text-[#f4a10c] ">
 
           <li><Link href="/online/" >	Online </Link></li>
-          <li><Link href="/jobs/remote/" >	Remote</Link></li>
+          <li><Link href="/remote" >	Remote</Link></li>
 
-          <li><Link href="/jobs/full-time/" >Full-Time</Link></li>
-          <li><Link href="/jobs/part-time/" >	Part-Time</Link></li>
-          <li><Link href="/jobs/casual/" >	Casual</Link></li>
+          <li><Link href="/full-time/" >Full-Time</Link></li>
+          <li><Link href="/part-time" >	Part-Time</Link></li>
+          <li><Link href="/casual" >	Casual</Link></li>
         </ul>
       </div>
 

@@ -79,7 +79,7 @@ export default function Page({ params, searchParams }: any) {
                     </Link>
       </div>
 
-      <JobSearchBox q={Name} />
+      <JobSearchBox  />
       <SearchResults q={{ q: 'industry' || 0 }} />
     </div>
   );
