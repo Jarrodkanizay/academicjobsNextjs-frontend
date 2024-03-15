@@ -35,7 +35,7 @@ export default async function myPage() {
     {
       src: '/home/academic-human-resource-positions.png',
       alt: 'Academic Human Resource Positions',
-      label: 'HR',
+      label: 'HR Jobs',
       link: '/canada/hr-jobs',
     },
     {
@@ -53,7 +53,7 @@ export default async function myPage() {
     {
       src: '/home/academic-graduate-positions.png',
       alt: 'Academic PhD Positions',
-      label: 'Student Jobs',
+      label: 'Student',
       link: '/canada/student',
     },
     {
