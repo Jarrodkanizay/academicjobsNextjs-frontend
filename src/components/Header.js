@@ -15,17 +15,15 @@ import {
   countryMappings2,
 } from '@/lib/data/data';
 export default function Header() {
-
-  const { fetchLocation } = useLocation();
-
-  useEffect(() => {
-    const getLocation = async () => {
-      const location = await fetchLocation();
-      //console.log(location);
-    };
-
-    getLocation();
-  }, []);
+  
+  // const { fetchLocation } = useLocation();
+  // useEffect(() => {
+  //   const getLocation = async () => {
+  //     const location = await fetchLocation();
+  //     //console.log(location);
+  //   };
+  //   getLocation();
+  // }, []);
   const handleFormSubmit = () => {
     if (region !== 'Global') {
       navigate('/jobs/', {
@@ -83,7 +81,6 @@ export default function Header() {
   useEffect(() => {
     setIsNavOpen(isNavOpen);
   }, [isNavOpen]);
-
   return (
     <>
       <div className="hamburger-wrapper">
@@ -110,7 +107,6 @@ export default function Header() {
         {/* <HamburgerMenuIcon
           onClick={() => {
             setIsNavOpen(!isNavOpen);
-            
             // setMobileMode(!isNavOpen);
           }}
         /> */}
@@ -122,7 +118,6 @@ export default function Header() {
               <LogoAJ width={270} height={60} />{' '}
             </Link>
           )}
-
           <NavItem
             url={`/${countryMappings2[region.toLowerCase()].url}/jobs`}
             icon="/dotted-arrow.svg"
@@ -168,9 +163,8 @@ export default function Header() {
               )}
               <ul
                 onMouseLeave={onMouseLeave}
-                className={`${
-                  dropdown ? 'block' : 'hidden'
-                } absolute  left-0 text-[0.875rem] z-99  min-w-[10rem] py-1 bg-white rounded-lg shadow-lg shadow-indigo-500/40`}
+                className={`${dropdown ? 'block' : 'hidden'
+                  } absolute  left-0 text-[0.875rem] z-99  min-w-[10rem] py-1 bg-white rounded-lg shadow-lg shadow-indigo-500/40`}
                 ref={ref}
               >
                 {Object.keys(countryMappings1).map((key) => (
@@ -188,14 +182,11 @@ export default function Header() {
                 ))}
               </ul>
             </div>
-           
           </div>
-
           {isNavOpen && (
             <>
               <a
                 className="btn btn-aj w-full mt-4"
-              
                 href="/jobs"
               >
                 Search Globally
@@ -226,12 +217,10 @@ export default function Header() {
               </details>
             </>
           )}
-
           <div className="ml-auto post-a-job-button z-[-1] md:z-[1]">
             <NavItem
-              url={`/${
-                countryMappings2[region.toLowerCase()].url
-              }/recruitment/`}
+              url={`/${countryMappings2[region.toLowerCase()].url
+                }/recruitment/`}
               icon="/post-a-job-icon.svg"
               navLink="Post a Job"
               forceLinkClass="ml-auto"
