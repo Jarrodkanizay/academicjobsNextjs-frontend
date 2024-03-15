@@ -17,7 +17,7 @@ import {
 export default function Header() {
   
   // const { fetchLocation } = useLocation();
-  // useEffect(() => {
+  // useEffect(() => {//
   //   const getLocation = async () => {
   //     const location = await fetchLocation();
   //     //console.log(location);
