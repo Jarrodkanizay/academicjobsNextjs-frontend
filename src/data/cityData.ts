@@ -12408,7 +12408,7 @@ export const cityData = [
       "From world-class education to cutting-edge research, Canterbury offers unparalleled opportunities for both students and academics. Immerse yourself in a vibrant academic environment, where intellectual curiosity meets real-world impact.",
       "Whether you seek personal growth through education or professional advancement through research, Canterbury's universities and colleges provide the ideal platform to pursue your academic aspirations."
   ],
-  image_url: "/cities/canterbury.jpg",
+  image_url: "/cities/canterbury.webp",
   alt: "Canterbury, UK: A Historic City with a Thriving Academic Community"
 },
 
@@ -12449,7 +12449,7 @@ export const cityData = [
       "With state-of-the-art facilities, a supportive academic community, and opportunities for interdisciplinary collaboration, Carlisle's universities and colleges offer an unparalleled platform for educational and personal growth. Whether you're pursuing undergraduate studies or advanced research, Carlisle provides the perfect backdrop for realizing your academic aspirations.",
       "Moreover, with strong ties to industries and research organizations, Carlisle opens doors to rewarding employment opportunities, allowing professionals to thrive in dynamic and intellectually stimulating environments."
   ],
-  image_url: "/cities/carlisle-academic-landscape.jpg",
+  image_url: "/cities/carlisle.jpg",
   alt: "Carlisle skyline overlooking the historic university buildings"
 },
 
@@ -12492,7 +12492,7 @@ export const cityData = [
       "Chatham presents unparalleled opportunities for both academic pursuit and professional advancement. With its esteemed institutions, world-class faculty, and vibrant research environment, the city offers a nurturing ecosystem for students and professionals alike to thrive and excel in their respective fields​.",
       "Whether you're seeking a transformative educational experience or exciting career prospects, Chatham's dynamic academic community has much to offer, providing a solid foundation for success and innovation​."
   ],
-  image_url: "/cities/chatham-uk.jpg",
+  image_url: "/cities/chatham.jpg",
   alt: "Chatham, UK: A Historic Cityscape"
 },
 
@@ -12526,7 +12526,7 @@ export const cityData = [
       "Chelmsford's universities and colleges provide unparalleled opportunities for educational and personal growth. Students can benefit from world-class faculty, state-of-the-art facilities, and a supportive learning environment. Whether pursuing undergraduate or postgraduate studies, Chelmsford offers a vibrant community for intellectual exploration and academic achievement.",
       "For academics and researchers, Chelmsford offers exciting prospects for professional development and groundbreaking research. Collaborate with leading experts in your field, access cutting-edge resources, and contribute to innovative projects that have real-world impact. Join the thriving academic community in Chelmsford and unleash your potential in an environment that fosters creativity and collaboration."
   ],
-  image_url: "/cities/chelmsford-uk.jpg",
+  image_url: "/cities/chelmsford.jpg",
   alt: "Chelmsford cityscape",
 },
 
@@ -12601,7 +12601,7 @@ export const cityData = [
     "Embark on a journey of educational and personal growth in Colchester, where academic excellence meets cultural diversity. From the vibrant campus life to cutting-edge research opportunities, universities and colleges in the city offer an enriching environment for students.",
     "For professionals seeking employment, Colchester provides a fertile ground for career advancement, with robust research infrastructure and collaborative networks driving innovation across various sectors."
   ],
-  image_url: "/colchester/colchester-uk-academic-hub.jpg",
+  image_url: "/cities/colchester.jpg",
   alt: "Colchester skyline with university buildings"
 },
 
@@ -12638,7 +12638,7 @@ export const cityData = [
       "Epsom offers a unique blend of educational and personal growth opportunities. Its diverse range of universities and colleges cater to various interests and disciplines, providing students with an enriching academic experience.",
       "For academics and researchers, Epsom's proximity to London's renowned institutions opens doors to collaboration and access to state-of-the-art facilities, fostering groundbreaking research and professional advancement."
   ],
-  image_url: "/cities/epsom-uk.jpg",
+  image_url: "/cities/epsom.jpg",
   alt: "Epsom, UK: Academic Hub"
 },
 
@@ -12675,7 +12675,7 @@ export const cityData = [
       "Embrace unparalleled educational and personal growth opportunities in Farnham's dynamic academic community. Whether you're a student seeking creative expression or a researcher pursuing groundbreaking discoveries, Farnham's universities and colleges offer a nurturing environment for your academic journey.",
       "Join a diverse community of scholars and professionals, where collaboration thrives and innovation knows no bounds. From cutting-edge research facilities to vibrant cultural experiences, Farnham provides a stimulating backdrop for both learning and professional development."
   ],
-  image_url: "/cities/farnham-academic.jpg",
+  image_url: "/cities/farnham.jpg",
   alt: "Farnham, UK - A Hub of Academic Excellence"
 },
 
@@ -12745,7 +12745,7 @@ export const cityData = [
   academicInfo: [],
   academicList: [],
   promo: [],
-  image_url: "/cities/hatfield-uk.jpg",
+  image_url: "/cities/hatfield.jpg",
   alt: "Aerial view of Hatfield, UK"
 },
 
@@ -12785,7 +12785,7 @@ export const cityData = [
     "Considering attending or working at a university or college in Hertfordshire offers unparalleled opportunities for educational and personal growth. With a vibrant academic community, state-of-the-art facilities, and a supportive learning environment, Hertfordshire institutions nurture creativity, critical thinking, and collaboration.",
     "For employment, Hertfordshire's universities and colleges provide an enriching professional environment, offering opportunities for cutting-edge research, industry partnerships, and career development. Whether you're a student seeking academic excellence or a researcher pursuing innovation, Hertfordshire is the place to be."
   ],
-  image_url: "/cities/hertfordshire-academic-landscape.jpg",
+  image_url: "/cities/hertfordshire.webp",
   alt: "Hertfordshire: A Beacon of Academic Excellence"
 },
 
@@ -12863,7 +12863,7 @@ export const cityData = [
     "Whether you're a student seeking a transformative educational experience or a professional aiming to advance your career, Keele offers unparalleled opportunities. With its diverse academic programs, state-of-the-art facilities, and supportive community, attending or working at a university in Keele opens doors to endless possibilities.",
     "From cutting-edge research projects to enriching extracurricular activities, Keele fosters a dynamic learning environment where individuals can thrive academically, personally, and professionally."
   ],
-  image_url: "/cities/keele-uk.jpg",
+  image_url: "/cities/keele.jpg",
   alt: "Keele UK: A Hub of Academic Excellence"
 },
 
@@ -12895,7 +12895,7 @@ export const cityData = [
       "For those seeking educational enrichment, Lancaster's universities and colleges offer a myriad of opportunities for academic growth and personal development. From state-of-the-art facilities to a supportive learning environment, students can engage with world-class faculty and cutting-edge research, preparing them for success in a rapidly evolving global landscape.",
       "Professionals looking for employment opportunities in academia will find Lancaster to be a fertile ground for their aspirations. With its vibrant research community and collaborative spirit, the city provides ample avenues for career advancement and impactful contributions to knowledge creation​."
   ],
-  image_url: "/cities/lancaster-uk.jpg",
+  image_url: "/cities/lancaster.jpg",
   alt: "Historic Lancaster skyline overlooking the River Lune"
 },
 
@@ -12925,7 +12925,7 @@ export const cityData = [
   academicInfo: [],
   academicList: [],
   promo: [],
-  image_url: "/lichfield-city.jpg",
+  image_url: "/cities/lichfield.jpg",
   alt: "Lichfield cityscape"
 },
 
@@ -12958,7 +12958,7 @@ export const cityData = [
       "Embark on a journey of discovery at Lincoln's prestigious universities and colleges. Experience world-class education combined with a vibrant student life, fostering personal and intellectual growth. Join a dynamic community of scholars and innovators dedicated to shaping the future.",
       "For professionals seeking employment, Lincoln offers exciting prospects in academia and research. Collaborate with renowned experts and contribute to groundbreaking projects in various fields. Unlock your potential and thrive in a stimulating academic environment."
   ],
-  image_url: "https://example.com/lincoln-city-photo.jpg",
+  image_url: "/cities/lincoln.avif",
   alt: "A panoramic view of Lincoln's historic city center"
 },
 
@@ -12990,7 +12990,7 @@ export const cityData = [
       "Embark on a transformative educational journey in Lowestoft, UK, where academic excellence meets coastal charm. Experience world-class education, personalized mentorship, and abundant research opportunities, nurturing both intellectual curiosity and professional growth.",
       "Join a vibrant academic community dedicated to innovation and collaboration, where students and faculty contribute to shaping the future through groundbreaking research and real-world impact."
   ],
-  image_url: "https://example.com/lowestoft-cityscape.jpg",
+  image_url: "/cities/lowestoft.jpg",
   alt: "Lowestoft cityscape overlooking the North Sea"
 },
 
@@ -13029,7 +13029,7 @@ export const cityData = [
   promo: [
     "Experience the dynamic academic environment of Newport, where innovation meets tradition. Whether you're a student seeking world-class education or a researcher pursuing groundbreaking discoveries, Newport's universities and colleges offer unparalleled opportunities for growth and success. Join us in shaping the future of knowledge and innovation in Newport."
   ],
-  image_url: "/newport/newport-uk-academic-hub.jpg",
+  image_url: "/cities/newport.jpg",
   alt: "Aerial view of Newport, UK"
 },
 
@@ -13062,7 +13062,7 @@ export const cityData = [
   promo: [
     "Immerse yourself in Shropshire's vibrant academic community, where educational excellence meets personal growth. With a range of institutions offering diverse programs and research opportunities, Shropshire is the ideal destination for those seeking to expand their horizons and make a meaningful impact in their field. Experience the beauty of Shropshire while advancing your academic and professional journey."
   ],
-  image_url: "https://example.com/shropshire.jpg",
+  image_url: "/cities/shropshire.jpg",
   alt: "Shropshire skyline overlooking rolling hills"
 },
 
@@ -13105,7 +13105,7 @@ export const cityData = [
     "With a rich tapestry of academic institutions and a supportive scholarly community, Norwich beckons seekers of knowledge and seekers of innovation alike. Whether you aspire to pursue cutting-edge research or seek an environment that nurtures intellectual curiosity, Norwich offers a conducive ecosystem for both personal and professional growth.",
     "Joining the academic fraternity in Norwich not only opens doors to top-tier education but also presents unparalleled opportunities for research, collaboration, and making a tangible impact on global challenges."
   ],
-  image_url: "/cities/norwich-uk.jpg",
+  image_url: "/cities/norwich.jpg",
   alt: "Aerial view of Norwich, UK"
 },
 
@@ -13144,7 +13144,7 @@ export const cityData = [
   promo: [
     "Embrace a world of academic possibilities in Penryn. From cutting-edge research to vibrant cultural experiences, our institutions offer a transformative journey of learning and growth. Join our community of scholars and innovators, shaping the future through intellectual curiosity and collaboration."
   ],
-  image_url: "/cities/penryn-uk-academic-hub.jpg",
+  image_url: "/cities/penryn.webp",
   alt: "Penryn, UK - Academic Hub of Cornwall"
 },
 
@@ -13177,7 +13177,7 @@ export const cityData = [
       "Rochester's universities and colleges offer a conducive environment for educational and personal growth. With state-of-the-art facilities, expert faculty, and a supportive community, students can explore their interests, pursue their passions, and develop the skills needed for future success​.",
       "For professionals seeking employment opportunities, Rochester provides a thriving hub for research and innovation. Collaborate with leading academics, engage in cutting-edge research projects, and contribute to the advancement of knowledge in your field​."
   ],
-  image_url: "/rochester/rochester-uk.jpg",
+  image_url: "/cities/rochester.jpg",
   alt: "A scenic view of Rochester, UK"
 },
 
@@ -13216,7 +13216,7 @@ export const cityData = [
   promo: [
       "Experience the rich academic heritage and unparalleled opportunities for personal and professional growth in Kent's vibrant higher education community. Whether you're a student seeking an enriching educational experience or a scholar pursuing cutting-edge research, Kent offers a stimulating environment to thrive and succeed. Join us in shaping the future of knowledge and innovation​."
   ],
-  image_url: "/cities/kent-uk.jpg",
+  image_url: "/cities/kent.jpg",
   alt: "Kent, UK - A blend of historic charm and modern academia"
 },
 
@@ -13250,7 +13250,7 @@ export const cityData = [
     "Stafford's universities and colleges provide a fertile ground for educational and personal growth, offering cutting-edge programs and resources to nurture the next generation of leaders and innovators. Students benefit from a supportive learning environment and opportunities for hands-on experience, preparing them for successful careers in their chosen fields​.",
     "For professionals seeking employment, Stafford's academic institutions present a wealth of opportunities for research, collaboration, and career advancement. With state-of-the-art facilities and a vibrant academic community, working in Stafford offers a stimulating environment to pursue research interests and contribute to meaningful projects​."
   ],
-  image_url: "/cities/stafford-uk.jpg",
+  image_url: "/cities/stafford.jpg",
   alt: "Stafford UK - A bustling city with a rich educational landscape"
 },
 
@@ -13291,7 +13291,7 @@ export const cityData = [
       "Winchester offers unparalleled opportunities for educational and personal growth. Whether you're a student seeking a supportive learning environment or a researcher looking to collaborate with leading experts, the city's institutions provide a platform for transformative experiences and impactful discoveries. Join us in Winchester and be part of a vibrant academic community dedicated to shaping the future​.",
       "With a strong emphasis on research and innovation, Winchester's universities and colleges offer exciting prospects for employment. From access to state-of-the-art facilities to collaborative partnerships with industry leaders, working in Winchester provides a stimulating environment for professional development and advancement​."
   ],
-  image_url: "/winchester/winchester-uk-academic-hub.jpg",
+  image_url: "/cities/winchester.jpg",
   alt: "Winchester, UK: A Historic and Academic Hub"
 },
 
