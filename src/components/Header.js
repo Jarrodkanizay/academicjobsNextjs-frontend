@@ -8,13 +8,24 @@ import NavItem from '@/components/NavItem';
 import DispatchLink from '@/components/DispatchLink';
 import { useStore } from '@/lib/store/store';
 import HamburgerMenuIcon from '@/components/icons/HamburgerMenuIcon';
-
+import useLocation from '@/utils/useLocation';
 import {
   countryMappings,
   countryMappings1,
   countryMappings2,
 } from '@/lib/data/data';
 export default function Header() {
+
+  const { fetchLocation } = useLocation();
+
+  useEffect(() => {
+    const getLocation = async () => {
+      const location = await fetchLocation();
+      //console.log(location);
+    };
+
+    getLocation();
+  }, []);
   const handleFormSubmit = () => {
     if (region !== 'Global') {
       navigate('/jobs/', {

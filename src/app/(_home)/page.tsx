@@ -4,6 +4,7 @@ import Link from 'next/link';
 import LogoAJ from '@/components/brand/LogoAJ';
 import type { Metadata } from 'next';
 import JobSearchBoxHome from '@/components/JobSearchBoxHome';
+import Top7JobTypes from '@/components/Top7JobTypes';
 import JobCategoryAndLocationLinks from '@/components/links/JobCategoryAndLocationLinks';
 import AusUniLogos from '@/components/AusUniLogos';
 import AmericaUniLogos from '@/components/AmericaUniLogos';
@@ -19,51 +20,8 @@ export const metadata: Metadata = {
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
 export default async function myPage() {
-  const size = 180;
-  const items = [
-    {
-      src: '/home/academic-staff-positions.png',
-      alt: 'Academic Staff Positions',
-      label: 'Staff/Admin',
-      link: '/staff-jobs',
-    },
-    {
-      src: '/home/academic-executive-positions.png',
-      alt: 'Academic Executive Positions',
-      label: 'Executive',
-      link: '/executive',
-    },
-    {
-      src: '/home/academic-human-resource-positions.png',
-      alt: 'Academic Human Resource Positions',
-      label: 'HR Jobs',
-      link: '/hr-jobs',
-    },
-    {
-      src: '/home/academic-faculty-positions.png',
-      alt: 'Academic Faculty Positions',
-      label: 'Faculty',
-      link: '/faculty',
-    },
-    {
-      src: '/home/academic-phd-positions.png',
-      alt: 'Academic PhD Positions',
-      label: 'PhD Jobs',
-      link: '/phd',
-    },
-    {
-      src: '/home/academic-graduate-positions.png',
-      alt: 'Academic PhD Positions',
-      label: 'Student',
-      link: '/student-jobs',
-    },
-    {
-      src: '/home/academic-lecturer-positions.png',
-      alt: 'Academic Graduate Positions',
-      label: 'Collaborate',
-      link: '/graduate',
-    },
-  ];
+ 
+ 
   const contentRegion = await getContentRegion();
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
   // let showJobElephant = true;
@@ -79,90 +37,7 @@ export default async function myPage() {
         </div>
       </div> */}
       <div className="full-width md:h-[400px] h-[229px] gradient-aj">
-        <div className="hero-bg md:bg-center">
-          <section className="wrapper md:flex">
-            <h2 className="sentence">
-              <span className="mr-8">Find</span>{' '}
-              <span className="md:hidden block">
-                <br />
-              </span>
-              <div className="slidingVertical ">
-                <span>Opportunity</span>
-                <span>Connections</span>
-                <span>Happiness</span>
-                <span>Opportunity</span>
-                <span>Connections</span>
-              </div>
-            </h2>
-          </section>
-          <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
-            {items.map((item, index) => (
-              <li key={index}>
-                <Link className="grayscale hover:grayscale-0" href={item.link}>
-                  <Image
-                    src={item.src}
-                    width={size}
-                    height={size}
-                    alt={item.alt}
-                  />
-                </Link>
-                <Link className="mb-4" href={item.link}>
-                  <p>{item.label}</p>
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <ul className="hero-icons flex flex-wrap gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-8rem] md:hidden ">
-            <li>
-              <a className="grayscale hover:grayscale-0" href="/executive">
-                <Image
-                  alt="Academic Executive Positions"
-                  loading="lazy"
-                  width="180"
-                  height="180"
-                  decoding="async"
-                  data-nimg="1"
-                  src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"
-                ></Image>
-              </a>
-              <a className="mb-4" href="/executive">
-                <p>Executive</p>
-              </a>
-            </li>
-            <li>
-              <a className="grayscale hover:grayscale-0" href="/faculty">
-                <Image
-                  alt="Academic Faculty Positions"
-                  loading="lazy"
-                  width="180"
-                  height="180"
-                  decoding="async"
-                  data-nimg="1"
-                  src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75"
-                ></Image>
-              </a>
-              <a className="mb-4" href="/faculty">
-                <p>Faculty</p>
-              </a>
-            </li>
-            <li>
-              <a className="grayscale hover:grayscale-0" href="/staff-jobs">
-                <Image
-                  alt="Academic Staff Positions"
-                  loading="lazy"
-                  width="180"
-                  height="180"
-                  decoding="async"
-                  data-nimg="1"
-                  src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"
-                ></Image>
-              </a>
-              <a className="mb-4" href="/staff-jobs">
-                <p>Staff/Admin</p>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <Top7JobTypes/>
       </div>
       <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
         <JobSearchBoxHome />
