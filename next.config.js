@@ -938,7 +938,7 @@ const nextConfig = {
           },
           {
               source: "/USA/faculty/",
-              destination: "/jobs",
+              destination: "/usa/faculty",
               permanent: true
           },
           // {
@@ -951,7 +951,7 @@ const nextConfig = {
           //     destination: "/global",
           //     permanent: true
           // }
-          [
+          
             {
                 source: "/Global/faculty",
                 destination: "/faculty",
@@ -987,7 +987,7 @@ const nextConfig = {
                 destination: "/phd",
                 permanent: true
             }
-        ]
+        
         
 
     ];
