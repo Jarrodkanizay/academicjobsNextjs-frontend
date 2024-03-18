@@ -129,7 +129,7 @@ export default async function myPage() {
                             <li><a className="grayscale hover:grayscale-0" href="/uk/executive"><Image alt="Academic Executive Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"></Image></a>
             <a className="mb-4" href="/uk/executive"><p>Executive</p></a></li>
             <li><a className="grayscale hover:grayscale-0" href="/uk/faculty"><Image alt="Academic Faculty Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/uk/faculty"><p>Faculty</p></a></li>
-            <li><a className="grayscale hover:grayscale-0" href="/uk/admin"><Image alt="Academic Staff Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-admin-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/uk/admin"><p>Staff/Admin</p></a></li></ul>
+            <li><a className="grayscale hover:grayscale-0" href="/uk/admin"><Image alt="Academic Staff Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/uk/admin"><p>Staff/Admin</p></a></li></ul>
 
 
           </div>
