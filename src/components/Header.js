@@ -19,14 +19,14 @@ import Button from '@/shadcn/ui/button';
 
 export default function Header() {
   
-  const { fetchLocation } = useLocation();
-  useEffect(() => {//
-    const getLocation = async () => {
-      const location = await fetchLocation();
-      //console.log(location);
-    };
-    getLocation();
-  }, []);
+  // const { fetchLocation } = useLocation();
+  // useEffect(() => {//
+  //   const getLocation = async () => {
+  //     const location = await fetchLocation();
+  //     //console.log(location);
+  //   };
+  //   getLocation();
+  // }, []);
   const handleFormSubmit = () => {
     if (region !== 'Global') {
       navigate('/jobs/', {
@@ -143,7 +143,7 @@ export default function Header() {
             forceButtonClass="border-b hover:border-amber-500 "
             onClick={() => setIsNavOpen(false)}
           />
-          <div
+          {/* <div
             className={`hide-mobile p-2  md:w-52  dropdown-content z-[1] menu px-4 py-2   rounded-box w-31 } `}
             style={{ maxWidth: '62px' }}
             onMouseLeave={onMouseLeave}
@@ -185,7 +185,7 @@ export default function Header() {
                 ))}
               </ul>
             </div>
-          </div>
+          </div> */}
           {isNavOpen && (
             <>
               <a
@@ -199,7 +199,7 @@ export default function Header() {
                 <a
                   className={`md:w-52  dropdown-content z-[1] menu p-2  bg-slate-100  w-31 } `}
                 >
-                  <div className="  text-gray-900 relative">
+                  {/* <div className="  text-gray-900 relative">
                     <ul className=" text-[0.875rem] z-99  min-w-[10rem] py-1 bg-white rounded-lg ">
                       {Object.keys(countryMappings1).map((key) => (
                         <li className="navbar__item" key={key}>
@@ -215,7 +215,7 @@ export default function Header() {
                         </li>
                       ))}
                     </ul>
-                  </div>
+                  </div> */}
                 </a>
               </details>
             </>
