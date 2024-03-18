@@ -951,7 +951,44 @@ const nextConfig = {
           //     destination: "/global",
           //     permanent: true
           // }
-  
+          [
+            {
+                source: "/Global/faculty",
+                destination: "/faculty",
+                permanent: true
+            },
+            {
+                source: "/Global/staff-jobs",
+                destination: "/staff-jobs",
+                permanent: true
+            },
+            {
+                source: "/Global/graduate",
+                destination: "/graduate",
+                permanent: true
+            },
+            {
+                source: "/Global/student-jobs",
+                destination: "/student-jobs",
+                permanent: true
+            },
+            {
+                source: "/Global/hr-jobs",
+                destination: "/hr-jobs",
+                permanent: true
+            },
+            {
+                source: "/Global/executive",
+                destination: "/executive",
+                permanent: true
+            },
+            {
+                source: "/Global/phd",
+                destination: "/phd",
+                permanent: true
+            }
+        ]
+        
 
     ];
   },
