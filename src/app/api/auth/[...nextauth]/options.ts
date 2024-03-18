@@ -6,7 +6,6 @@ import GoogleProvider from 'next-auth/providers/google';
 import * as bcrypt from 'bcrypt';
 import { User } from '@prisma/client';
 import { FormSchema } from '@/app/schemas/schemas';
-
 export const authOptions: AuthOptions = {
   adapter: PrismaAdapter(prisma),
   pages: {
@@ -28,7 +27,6 @@ export const authOptions: AuthOptions = {
       clientId: process.env.GOOGLE_CLIENT_ID ?? '',
       clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? '',
       idToken: true,
-
       authorization: {
         params: {
           scope: 'openid profile email',
@@ -46,7 +44,6 @@ export const authOptions: AuthOptions = {
     }),
     CredentialsProvider({
       name: 'Credentials',
-
       credentials: {
         email: {
           label: 'User Name',
@@ -60,20 +57,15 @@ export const authOptions: AuthOptions = {
       },
       async authorize(credentials) {
         console.log('credentials', credentials);
-
         const validatedFields = FormSchema.safeParse(credentials);
-
         if (validatedFields.success) {
           const { email, password } = validatedFields.data;
-
           const user = await prisma.user.findUnique({
             where: {
               email,
             },
           });
-
           if (!user) throw new Error('User name or password is not correct');
-
           // This is Naive Way of Comparing The Passwords
           // const isPassowrdCorrect = credentials?.password === user.password;
           if (!password) throw new Error('Please Provide Your Password');
@@ -82,10 +74,8 @@ export const authOptions: AuthOptions = {
             user.hashedPassword!
           );
           // alert(passwordsMatch);
-
           if (!passwordsMatch)
             throw new Error('User name or password is not correct');
-
           // if (!user.emailVerified)
           //   throw new Error('Please verify your email first!');
           user.userRole = 'EMPLOYER';
@@ -97,17 +87,15 @@ export const authOptions: AuthOptions = {
       },
     }),
   ],
-
   callbacks: {
     async jwt({ token, user }) {
       if (user) token.user = user as User;
-      // console.log('jwttoken', token);
+       console.log('jwttoken', token);
       return token;
     },
-
     async session({ token, session }) {
       session.user = token.user;
-      // console.log(session);
+       console.log('session', session);
       return session;
     },
   },

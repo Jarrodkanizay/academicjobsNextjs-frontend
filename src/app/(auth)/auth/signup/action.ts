@@ -12,14 +12,15 @@ import { FormSchema } from '@/app/schemas/schemas';
 
 export const registerUser = async (values: z.infer<typeof FormSchema>) => {
   try {
-    console.log(values);
+    console.log('registerUser action1', values);
     const validatedFields = FormSchema.safeParse(values);
 
     if (!validatedFields.success) {
       return Promise.reject('Invalid fields!');
     }
 
-    const { email, password } = validatedFields.data;
+    const { name, email, password } = validatedFields.data;
+    console.log('registerUser action2', values);
     const hashedPassword = await bcrypt.hash(password, 10);
 
     const existingUser = await prisma.user.findUnique({
@@ -34,6 +35,7 @@ export const registerUser = async (values: z.infer<typeof FormSchema>) => {
 
     await prisma.user.create({
       data: {
+        name,
         email,
         hashedPassword: hashedPassword,
         userRole: 'EMPLOYER',

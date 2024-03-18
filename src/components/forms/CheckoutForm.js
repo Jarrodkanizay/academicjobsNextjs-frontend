@@ -13,7 +13,7 @@ export default function CheckoutForm() {
   const region = useSelector((state) => state.posts.region);
   const userInfo = useSelector((state) => state.auth.userInfo);
   const invoiceId = useSelector((state) => state.posts.invoiceId)
-  //console.log("username", username)
+  //console.log("name", name)
   //console.log("userid, invoiceId", userid, invoiceId)
   const stripe = useStripe();
   const elements = useElements();
