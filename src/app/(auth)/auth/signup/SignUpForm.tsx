@@ -33,7 +33,7 @@ const SignUpForm = (props: SignUpFormProps) => {
   const form = useForm<z.infer<typeof SignUpFormSchema>>({
     resolver: zodResolver(SignUpFormSchema),
     defaultValues: {
-      // username: '',
+      name: '',
       email: '',
       password: '',
       confirmPassword: '',
@@ -43,14 +43,18 @@ const SignUpForm = (props: SignUpFormProps) => {
     const { confirmPassword, ...user } = data;
     try {
       const result = await registerUser(user);
+      console.log('SignUpForm data', data);
+      console.log('SignUpForm user', user);
       if (result.success) {
         toast('successfully signed up');
         router.push('/auth/signin');
+        console.log('result.success data', data);
         await signIn('credentials', {
           redirect: false,
           email: data.email,
           password: data.password,
         });
+
         router.push(callbackUrl);
       }
     } catch (error) {
@@ -75,19 +79,19 @@ const SignUpForm = (props: SignUpFormProps) => {
         <Form {...form}>
           <form onSubmit={form.handleSubmit(saveUser)} className="w-full">
             <div className="space-y-2">
-              {/* <FormField
-                  control={form.control}
-                  name="username"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Username</FormLabel>
-                      <FormControl>
-                        <Input placeholder="johndoe" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                /> */}
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>name</FormLabel>
+                    <FormControl>
+                      <Input placeholder="" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
               <FormField
                 control={form.control}
                 name="email"
@@ -95,7 +99,7 @@ const SignUpForm = (props: SignUpFormProps) => {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="mail@example.com" {...field} />
+                      <Input placeholder="" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

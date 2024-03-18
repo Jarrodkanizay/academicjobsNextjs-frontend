@@ -17,7 +17,7 @@ import { LogoutButton } from './logout-button';
 
 const SigninButton = () => {
   const { data: session } = useSession();
-  console.log(session);
+  console.log("siginbutton session",session);
 
   return (
     <div className="flex items-center gap-2 ">
