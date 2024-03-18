@@ -110,7 +110,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     {location}
                 </Link> */}
               </div>
-              <div className="flex items-center justify-start gap-6">
+              <div className="flex items-center justify-start md:gap-6 gap-2">
                 {headlineOnly ? (
                   <Link href="#request-job-post" className="btn btn-aj">
                     Apply Now
@@ -138,6 +138,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                   />
                 </a> */}
                 <FavoriteButton />
+                
                 <a href="/academic-talent-pool" className="btn btn-accent">
                   Join Talent Pool
                 </a>
