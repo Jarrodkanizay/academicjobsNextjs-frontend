@@ -19,14 +19,14 @@ import Button from '@/shadcn/ui/button';
 
 export default function Header() {
   
-  // const { fetchLocation } = useLocation();
-  // useEffect(() => {//
-  //   const getLocation = async () => {
-  //     const location = await fetchLocation();
-  //     //console.log(location);
-  //   };
-  //   getLocation();
-  // }, []);
+  const { fetchLocation } = useLocation();
+  useEffect(() => {//
+    const getLocation = async () => {
+      const location = await fetchLocation();
+      //console.log(location);
+    };
+    getLocation();
+  }, []);
   const handleFormSubmit = () => {
     if (region !== 'Global') {
       navigate('/jobs/', {
