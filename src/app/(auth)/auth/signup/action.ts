@@ -35,7 +35,7 @@ export const registerUser = async (values: z.infer<typeof FormSchema>) => {
 
     await prisma.user.create({
       data: {
-        name,
+        // name,
         email,
         hashedPassword: hashedPassword,
         userRole: 'EMPLOYER',
