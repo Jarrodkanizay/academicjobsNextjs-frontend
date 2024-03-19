@@ -33,7 +33,7 @@ const SignUpForm = (props: SignUpFormProps) => {
   const form = useForm<z.infer<typeof SignUpFormSchema>>({
     resolver: zodResolver(SignUpFormSchema),
     defaultValues: {
-      name: '',
+      username: '',
       email: '',
       password: '',
       confirmPassword: '',
@@ -81,10 +81,10 @@ const SignUpForm = (props: SignUpFormProps) => {
             <div className="space-y-2">
               <FormField
                 control={form.control}
-                name="name"
+                name="username"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>name</FormLabel>
+                    <FormLabel>First Name</FormLabel>
                     <FormControl>
                       <Input placeholder="" {...field} />
                     </FormControl>
