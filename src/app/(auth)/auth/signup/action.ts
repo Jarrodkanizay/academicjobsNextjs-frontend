@@ -19,7 +19,7 @@ export const registerUser = async (values: z.infer<typeof FormSchema>) => {
       return Promise.reject('Invalid fields!');
     }
 
-    const { name, email, password } = validatedFields.data;
+    const {  email, password } = validatedFields.data;
     console.log('registerUser action2', values);
     const hashedPassword = await bcrypt.hash(password, 10);
 
