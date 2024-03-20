@@ -45,7 +45,7 @@ export default function Page() {
    
       <main>
       <div className=" mx-auto max-w-5xl  flex flex-col  ">
-        {
+        {/* {
          
           filter1.length > 0 && (
             <div className="md:flex md:gap-4 md:flex-wrap pb-2">
@@ -69,7 +69,7 @@ export default function Page() {
               ))}
             </div>
           )
-        }
+        } */}
       </div>
       </main>
    
