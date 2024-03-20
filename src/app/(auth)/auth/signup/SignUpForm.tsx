@@ -36,7 +36,9 @@ const SignUpForm = (props: SignUpFormProps) => {
     },
   });
   const saveUser = async (data: z.infer<typeof SignUpFormSchema>) => {
+     console.log('SignUpForm user=================');
     const { confirmPassword, ...user } = data;
+    console.log('SignUpForm user', user);
     try {
       const result = await registerUser(user);
       console.log('SignUpForm data', data);
