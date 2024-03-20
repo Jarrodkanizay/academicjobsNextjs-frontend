@@ -49,6 +49,12 @@ html {
     .filter-item.hide_filtered {
       display: none;
     }
+    .sign_up_benefits {
+      h5 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+      }
+    }
     .gradient-aj {
       background: rgb(255, 173, 31);
       background: radial-gradient(
@@ -62,7 +68,6 @@ html {
       background-image: url('/home/woman-with-blond-short-tanned-smiling-cute-gazing-friendly.png');
       background-size: contain;
       background-repeat: no-repeat;
-    
     }
 
     .hero-bg-aus {
@@ -70,41 +75,35 @@ html {
       background-image: url('/home/aus-academic.png');
       background-size: contain;
       background-repeat: no-repeat;
-    
-    }    
+    }
     .hero-bg-usa {
       position: relative;
       background-image: url('/home/usa-academic.png');
       background-size: contain;
       background-repeat: no-repeat;
-    
-    } 
+    }
     .hero-bg-uk {
       position: relative;
       background-image: url('/home/uk-academic.png');
       background-size: contain;
       background-repeat: no-repeat;
-    
-    } 
+    }
 
     .hero-bg-eu {
       position: relative;
       background-image: url('/home/eu-academic.png');
       background-size: contain;
       background-repeat: no-repeat;
-    
-    } 
+    }
 
     .hero-bg-ca {
       position: relative;
       background-image: url('/home/ca-academic.png');
       background-size: contain;
       background-repeat: no-repeat;
-    
-    } 
+    }
 
     .hero-icons {
-     
       width: 100%;
       bottom: var(--position_type_y);
     }
@@ -122,7 +121,7 @@ html {
       color: #9da0a8;
     }
     .hero-icons li:hover a p {
-      color: #F4A10C !important;
+      color: #f4a10c !important;
     }
     @media (max-width: 924px) {
       .hero-icons {
@@ -171,7 +170,6 @@ html {
         .sentence-uk {
           font-size: 8px;
           font-weight: 600;
-          
         }
       }
     }
