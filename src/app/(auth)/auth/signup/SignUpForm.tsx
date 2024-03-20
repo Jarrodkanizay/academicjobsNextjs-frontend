@@ -143,7 +143,7 @@ const SignUpForm = (props: SignUpFormProps) => {
           </div>
           {/* <GoogleSignInButton>Sign up with Google</GoogleSignInButton> */}
           <GoogleSignInButton callbackUrl={callbackUrl}>
-            Sign in with Google
+            Continue with Google
           </GoogleSignInButton>
           <p className="text-center text-sm text-gray-600 mt-2">
             Already have an account? please&nbsp;
