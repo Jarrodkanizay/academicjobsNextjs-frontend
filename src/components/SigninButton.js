@@ -41,8 +41,8 @@ const SigninButton = () => {
             <DropdownMenuContent className="w-60" align="end">
               <DropdownMenuItem>{`${session.user.email}`}</DropdownMenuItem>
               <DropdownMenuSeparator />
-              <Link href="/profile">
-                <DropdownMenuItem>Profile</DropdownMenuItem>
+              <Link href="/my_life">
+                <DropdownMenuItem>My Life</DropdownMenuItem>
               </Link>
               <Link href="/settings">
                 <DropdownMenuItem>Settings</DropdownMenuItem>
