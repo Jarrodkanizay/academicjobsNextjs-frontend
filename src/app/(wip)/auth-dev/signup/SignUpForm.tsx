@@ -68,7 +68,7 @@ const SignUpForm = (props: SignUpFormProps) => {
   };
 
   return (
-    <div className="min-h-[500px] flex items-center justify-center">
+    <div className="min-h-screen flex items-center justify-center">
       <Card className="p-10 pt-5">
         <CardHeader className="pb-0">
           <CardTitle className="flex justify-center">Academic Jobs</CardTitle>
