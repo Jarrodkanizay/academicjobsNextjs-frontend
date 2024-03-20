@@ -36,7 +36,9 @@ const SignUpForm = (props: SignUpFormProps) => {
     },
   });
   const saveUser = async (data: z.infer<typeof SignUpFormSchema>) => {
+     console.log('SignUpForm user=================');
     const { confirmPassword, ...user } = data;
+    console.log('SignUpForm user', user);
     try {
       const result = await registerUser(user);
       console.log('SignUpForm data', data);
@@ -62,14 +64,12 @@ const SignUpForm = (props: SignUpFormProps) => {
     }
   };
   return (
-    <div className="min-h-[500px] flex items-center justify-center">
+    <div className="mt-8 flex items-center justify-end">
       <Card className="p-10 pt-5">
-        <CardHeader className="pb-0">
+        {/* <CardHeader className="pb-0">
           <CardTitle className="flex justify-center">Academic Jobs</CardTitle>
-          {/* <CardDescription className="flex justify-center">
-            Sign in
-          </CardDescription> */}
-        </CardHeader>
+          
+        </CardHeader>  */}
         <Form {...form}>
           <form onSubmit={form.handleSubmit(saveUser)} className="w-full">
             <div className="space-y-2">

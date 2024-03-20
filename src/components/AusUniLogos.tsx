@@ -58,9 +58,9 @@ const AusUniLogos = () => {
   ];
   return (
     <div className="container mb-[50px]">
-      <h2 className="aus-jobs-heading text-center mt-8 text-[40px] sm:text-[50px] mb-4 leading-tight">
+      {/* <h2 className="aus-jobs-heading text-center mt-8 text-[40px] sm:text-[50px] mb-4 leading-tight">
         Welcome to Australia's University Jobs Website
-      </h2>
+      </h2> */}
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 place-items-center">
         {logos.map((logo, index) => (
           <a
