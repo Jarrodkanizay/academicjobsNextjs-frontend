@@ -15,30 +15,30 @@ import {  useSession } from 'next-auth/react';
 export default function Page() {
   const { data: session } = useSession();
 
-  const {
-    isPending: isPendingQty,
-    isError: isErrorQty,
-    isSuccess: isSuccessQty,
-    error: errorQty,
-    data: favorites,
-    isFetching: isFetchingQty,
-    isPlaceholderData: isPlaceholderDataQty,
-  } = useQuery({
-    queryKey: ['favorites'],
-    queryFn: async () => {
-      const response = await BaseApi.post('/filters', {
-        category,
-        filter1,
-        q,
-        l,
-        mode: 'normal',
-      });
-      console.log(response.data);
-      console.log('response.data.data', response.data.data);
-      return response.data.data;
-    },
-    enabled: category !== '',
-  });
+  // const {
+  //   isPending: isPendingQty,
+  //   isError: isErrorQty,
+  //   isSuccess: isSuccessQty,
+  //   error: errorQty,
+  //   data: favorites,
+  //   isFetching: isFetchingQty,
+  //   isPlaceholderData: isPlaceholderDataQty,
+  // } = useQuery({
+  //   queryKey: ['favorites'],
+  //   queryFn: async () => {
+  //     const response = await BaseApi.post('/filters', {
+  //       category,
+  //       filter1,
+  //       q,
+  //       l,
+  //       mode: 'normal',
+  //     });
+  //     console.log(response.data);
+  //     console.log('response.data.data', response.data.data);
+  //     return response.data.data;
+  //   },
+  //   enabled: category !== '',
+  // });
 
 
   return (
