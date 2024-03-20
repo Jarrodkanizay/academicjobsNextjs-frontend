@@ -62,12 +62,12 @@ const SignUpForm = (props: SignUpFormProps) => {
     }
   };
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="mt-8 flex items-center justify-end">
       <Card className="p-10 pt-5">
-        <CardHeader className="pb-0">
+        {/* <CardHeader className="pb-0">
           <CardTitle className="flex justify-center">Academic Jobs</CardTitle>
           
-        </CardHeader> */}
+        </CardHeader>  */}
         <Form {...form}>
           <form onSubmit={form.handleSubmit(saveUser)} className="w-full">
             <div className="space-y-2">
