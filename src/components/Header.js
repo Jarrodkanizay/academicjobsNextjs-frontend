@@ -188,6 +188,11 @@ export default function Header() {
           </div> */}
           {isNavOpen && (
             <>
+
+<div className="mt-6 md:mt-0 justify-center ml-4">
+            <SigninButton />
+          </div>
+
               <a
                 className="btn btn-aj w-full mt-4"
                 href="/jobs"
@@ -220,7 +225,7 @@ export default function Header() {
               </details>
             </>
           )}
-          <div className="ml-auto post-a-job-button z-[-1] md:z-[1]">
+          <div className="ml-auto post-a-job-button ">
             <NavItem
               url={`/${countryMappings2[region.toLowerCase()].url
                 }/recruitment/`}
@@ -231,9 +236,11 @@ export default function Header() {
               onClick={() => setIsNavOpen(false)}
             />
           </div>
-          <div className="mt-12 md:mt-0 justify-center ml-4">
+         
+          <div className="mt-8 md:mt-0 justify-center ml-4 hidden md:block">
             <SigninButton />
           </div>
+
         </nav>
       </header>
     </>
