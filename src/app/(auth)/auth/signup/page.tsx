@@ -1,4 +1,6 @@
 import SignUpForm from './SignUpForm';
+import AusUniLogos from '@/components/AusUniLogos';
+import AmericaUniLogos from '@/components/AmericaUniLogos';
 
 const page = () => {
   return (
@@ -73,11 +75,19 @@ const page = () => {
                                      </div>
                                 </div>
 
-
+                                
                             </div>
+                            
+                            
 
    </div>
-
+   
+                        <div className="max-w-screen-md mx-auto">
+                        <h3 className="mx-8">Thousands of top Higher Ed employers,
+                        including...</h3>
+                                <AmericaUniLogos/>
+   <AusUniLogos/>
+   </div>
       
     </div>
   );
