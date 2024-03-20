@@ -231,7 +231,7 @@ export default function Header() {
               onClick={() => setIsNavOpen(false)}
             />
           </div>
-          <div className="ml-auto post-a-job-button z-[-1] md:z-[1]">
+          <div className="mt-12 md:mt-0 justify-center ml-4">
             <SigninButton />
           </div>
         </nav>

@@ -74,7 +74,7 @@ const { region } = useStore();
           </div>
         </h2>
       </section>
-      <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
+      <ul className="hero-icons lg:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
         {items.map((item, index) => (
           <li key={index}>
             <Link className="grayscale hover:grayscale-0" href={item.link}>
@@ -86,7 +86,7 @@ const { region } = useStore();
           </li>
         ))}
       </ul>
-      <ul className="hero-icons flex flex-wrap gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-8rem] md:hidden ">
+      <ul className="hero-icons flex flex-wrap gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-8rem] lg:hidden ">
         <li>
           <a className="grayscale hover:grayscale-0" href="/executive">
             <Image
