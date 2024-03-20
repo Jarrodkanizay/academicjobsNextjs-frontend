@@ -14,7 +14,6 @@ import { useSearchParams } from 'next/navigation';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import FavoriteButton from '@/components/FavoriteButton';
 import { StarRank } from '@/components/StarRank';
-
 export async function generateMetadata({ params }) {
   const job = await getJob(params.id);
   if (!job) return { title: 'not found' };
@@ -28,7 +27,6 @@ export async function generateMetadata({ params }) {
     },
   };
 }
-
 async function getJob(id) {
   const response = await fetch(
     `https://api2.sciencejobs.com.au/api/job/${id}`,
@@ -49,7 +47,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
   if (!job) notFound();
   const {
     employer_id,
-    id: jobId,   
+    id: jobId,
     title,
     location,
     activation_date,
@@ -59,7 +57,6 @@ const JobDetailPage = async ({ params, searchParams }) => {
     featured,
     clientType,
     headlineOnly,
-    
     employer: {
       company_name,
       logo,
@@ -72,10 +69,8 @@ const JobDetailPage = async ({ params, searchParams }) => {
   const bodyEmail = encodeURIComponent(
     `I came across this job posting on AcademicJobs and thought you might be interested: https://www.academicjobs.com/jobs/myjob/${jobId}`
   );
-
   let bgColor = 'bg-white';
   if (company_name === 'Bond University') bgColor = 'bg-[#011a4d]';
-
   return (
     <>
       {/* {console.log('Top 20 ' + { topTwentyUnis })} */}
@@ -90,7 +85,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
               >
                 <div
                   className={`w-full rounded-lg p-4 ${bgColor}`}
-                  // style={{ backgroundColor: `${bgColor}` }}
+                // style={{ backgroundColor: `${bgColor}` }}
                 >
                   <Image
                     className="w-full "
@@ -104,7 +99,6 @@ const JobDetailPage = async ({ params, searchParams }) => {
             </div>
             <div className="w-3/4">
               <h1 className="text-2xl font-bold mb-2 text-black">{title}</h1>
-
               <div className="mb-4">
                 {/* <Link href={`/employers/id/${id}`}>
                     {location}
@@ -120,7 +114,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     title={title}
                     company_name={company_name}
                     how_to_apply={how_to_apply}
-                    // buttonText="Apply Now /jobs/[category]/[id]/page.js"
+                  // buttonText="Apply Now /jobs/[category]/[id]/page.js"
                   />
                 )}
                 <a
@@ -129,16 +123,16 @@ const JobDetailPage = async ({ params, searchParams }) => {
                 >
                   <BsFillShareFill size={32} color="#2867B2" />
                 </a>
-                {/* <a href="">
-                  <Image
-                    src="/icons/heart.svg"
-                    width={44}
-                    height={44}
-                    alt="Add this Job Post to Favorites"
-                  />
-                </a> */}
-                <FavoriteButton />
-                
+                <FavoriteButton jobId={params.id} />
+                {/* <img
+                  src="/icons/heart.svg"
+                  width="44"
+                  height="44"
+                  alt="Add this Job Post to Favorites"
+                  onClick={() => {
+                    alert(params.id)
+                  }}
+                /> */}
                 <a href="/academic-talent-pool" className="btn btn-accent">
                   Join Talent Pool
                 </a>
@@ -190,15 +184,13 @@ const JobDetailPage = async ({ params, searchParams }) => {
               {
                 <>
                   <div
-                    className={`${
-                      !headlineOnly || active ? 'job-content block' : 'hidden'
-                    }`}
+                    className={`${!headlineOnly || active ? 'job-content block' : 'hidden'
+                      }`}
                     dangerouslySetInnerHTML={{ __html: description }}
                   />
                   <div
-                    className={`flex flex-col ${
-                      headlineOnly && !active ? 'block' : 'hidden'
-                    }`}
+                    className={`flex flex-col ${headlineOnly && !active ? 'block' : 'hidden'
+                      }`}
                   >
                     <div className="flex justify-center items-center flex-wrap">
                       <Image
