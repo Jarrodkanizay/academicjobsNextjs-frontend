@@ -13,6 +13,8 @@ export const RegisterSchema = z.object({
 });
 export const SignUpFormSchema = z
   .object({
+    firstName: z.string().min(1, 'First Name is required'),
+    lastName: z.string().min(1, 'Last Name is required'),
     username: z.string().min(1, 'Username is required').max(100),
     email: z.string().min(1, 'Email is required').email('Invalid email'),
     password: z.string().min(1, 'Password is required'),

@@ -2,7 +2,7 @@ import SimpleCard from './SignUpType';
 
 const page = () => {
   return (
-    <section className="flex items-center justify-center gap-16">
+    <section className="flex items-center justify-center gap-16 bg-slate-100 p-10">
       <SimpleCard />
       <SimpleCard
         title="Employers & Recruiters"

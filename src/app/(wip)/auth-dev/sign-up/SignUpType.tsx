@@ -15,12 +15,12 @@ const SimpleCard = ({
   description = `I'm interested in an academic job.`,
   src = '/sign-up/academic-professionals.png',
   btnText = 'Create a free profile',
-  btnLink = '/auth/signup',
+  btnLink = '/auth-dev/signup',
   btnSecondaryText = '',
   btnSecondaryLink = '',
 }) => {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card max-w-96 bg-white shadow-xl">
       <div className="card-body items-center text-center">
         <h2>{title}</h2>
         <figure className="px-10 pt-10">
