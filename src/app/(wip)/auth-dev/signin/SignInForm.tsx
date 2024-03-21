@@ -109,10 +109,7 @@ const SignInForm = (props: Props) => {
           </GoogleSignInButton>
           <p className="text-center text-sm text-gray-600 mt-2">
             If you don&apos;t have an account, please&nbsp;
-            <Link
-              className="text-blue-500 hover:underline"
-              href="/auth-dev/signup"
-            >
+            <Link className="text-blue-500 hover:underline" href="/auth/signup">
               Sign up
             </Link>
           </p>
