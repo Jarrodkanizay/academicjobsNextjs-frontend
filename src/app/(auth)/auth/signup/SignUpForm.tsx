@@ -143,7 +143,7 @@ const SignUpForm = (props: SignUpFormProps) => {
                   </FormItem>
                 )}
               />
-              {/* <FormField
+              <FormField
                 control={form.control}
                 name="confirmPassword"
                 render={({ field }) => (
@@ -159,7 +159,7 @@ const SignUpForm = (props: SignUpFormProps) => {
                     <FormMessage />
                   </FormItem>
                 )}
-              /> */}
+              />
             </div>
             <Button className="w-full mt-6" type="submit">
               Sign up
