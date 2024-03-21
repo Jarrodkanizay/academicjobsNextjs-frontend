@@ -12,7 +12,7 @@ import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import { useSession } from 'next-auth/react';
 export default function Page() {
-  const { data: session} = useSession();
+  const { data: session } = useSession();
   console.log("userId", session.user.id)
   const {
     isPending: isPendingQty,
@@ -34,6 +34,9 @@ export default function Page() {
     },
     // enabled: category !== '',
   });
+  useEffect(() => {
+    console.log("favorites", favorites)
+  }, [favorites])
   return (
     <main>
       <div className="full-width md:h-[120px] h-[120px] gradient-aj">
@@ -58,13 +61,12 @@ export default function Page() {
         {
           favorites?.length > 0 && (
             <div className="md:flex md:gap-4 md:flex-wrap pb-2">
-              {favorites.map(({  jobId }, i) => (
+              {favorites.map(({ jobId, job: { title, employer: { company_name } } }, i) => (
                 <p
                   key={i}
                   className="btn  btn-xs bg-blue-900 text-white "
-           
                 >
-                  {`${jobId}`}
+                  {`${jobId}${title}${company_name}`}
                 </p>
               ))}
             </div>
