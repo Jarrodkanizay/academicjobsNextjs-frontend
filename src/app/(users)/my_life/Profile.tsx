@@ -7,9 +7,16 @@ import Link from 'next/link';
 // import JobSearchBox2 from '@/components/JobSearchBox2';
 // import SearchResults from '@/components/SearchResults';
 
-type SignUpTypeProps = {
+type UserProps = {
+  id: number;
   firstName: string;
   lastName: string;
+  summary: string;
+  expertise: string[];
+  skills: string[];
+  teachingPhilosophy: string;
+  researchPhilosophy: string;
+  qualifications: string[];
   profileStrength: number;
   location: string;
   rank?: number;
@@ -18,20 +25,46 @@ type SignUpTypeProps = {
   description?: string;
   avatar?: string;
   wavesOn?: boolean;
+  bgColor?: string;
 };
 
 const SimpleCard = ({
-  firstName = 'Jane',
-  lastName = 'Doe',
-  profileStrength = 30,
-  location = 'Add your location here.',
-  rank = 3,
-  jobTitle = 'Add your job title here.',
-  organization = 'Add your organization here.',
-  avatar = '/users/avatar.jpg',
+  id = -2,
+  firstName = '',
+  lastName = '',
+  summary = '',
+  expertise = [],
+  skills = [],
+  teachingPhilosophy = '',
+  researchPhilosophy = '',
+  qualifications = [],
+  profileStrength = 0,
+  location = '',
+  rank = 1,
+  jobTitle = '',
+  organization = '',
+  avatar = '/placeholders/generic-headshot.png',
   wavesOn = true,
   bgColor = 'custom-background',
-}) => {
+}: UserProps) => {
+  if (id === -1) {
+    firstName = 'Jane';
+    lastName = 'Doe';
+    summary = '';
+    expertise = [];
+    skills = [];
+    teachingPhilosophy = '';
+    researchPhilosophy = '';
+    qualifications = [];
+    profileStrength = 30;
+    location = 'Add your location here.';
+    rank = 3;
+    jobTitle = 'Add your job title here.';
+    organization = 'Add your organization here.';
+    avatar = '/users/avatar.jpg';
+    wavesOn = true;
+    bgColor = 'custom-background';
+  }
   return (
     <>
       <section className={`${bgColor} full-width mb-16`}>
