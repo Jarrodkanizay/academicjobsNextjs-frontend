@@ -54,13 +54,11 @@ const SignInForm = (props: Props) => {
   };
 
   return (
-    <div className="flex items-center justify-center mt-16">
-      <Card className="p-10">
+    <div className="mt-8 flex items-center justify-center">
+      <Card className="p-10 pt-5">
         {/* <CardHeader className="pb-0">
           <CardTitle className="flex justify-center ">Academic Jobs</CardTitle>
-          <CardDescription className="flex justify-center">
-            For EMPLOYERS
-          </CardDescription>
+          
         </CardHeader> */}
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="w-full">

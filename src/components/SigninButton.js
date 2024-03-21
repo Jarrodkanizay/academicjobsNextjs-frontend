@@ -17,7 +17,7 @@ import { LogoutButton } from './logout-button';
 
 const SigninButton = () => {
   const { data: session } = useSession();
-  console.log("siginbutton session",session);
+  console.log('siginbutton session', session);
 
   return (
     <div className="flex items-center gap-2 ">
@@ -59,7 +59,7 @@ const SigninButton = () => {
       ) : (
         <>
           <Button onClick={() => signIn()}>Sign In</Button>
-          <Link href={'/auth/signup'}>Sign Up</Link>
+          <Link href={'/auth/sign-up'}>Sign Up</Link>
         </>
       )}
       {session && session.user?.userRole == 'EMPLOYER' ? (

@@ -1,5 +1,7 @@
 'use client';
+
 import { SubmitHandler, useForm } from 'react-hook-form';
+
 import * as z from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
@@ -15,20 +17,25 @@ import { Input } from '@/shadcn/ui/input';
 import { Form } from '@/shadcn/ui/form';
 import { Card, CardHeader, CardTitle } from '@/shadcn/ui/card';
 import GoogleSignInButton from '../signin/GoogleSignInButton';
+
 import { toast } from 'react-toastify';
 import { registerUser } from './action';
 import { useRouter } from 'next/navigation';
 import { SignUpFormSchema } from '@/app/schemas/schemas';
 import { signIn } from 'next-auth/react';
+
 interface SignUpFormProps {
   callbackUrl?: string;
 }
+
 const SignUpForm = (props: SignUpFormProps) => {
   let callbackUrl = props.callbackUrl ? props.callbackUrl : '/';
   const router = useRouter();
   const form = useForm<z.infer<typeof SignUpFormSchema>>({
     resolver: zodResolver(SignUpFormSchema),
     defaultValues: {
+      firstName: '',
+      lastName: '',
       username: '',
       email: '',
       password: '',
@@ -36,9 +43,7 @@ const SignUpForm = (props: SignUpFormProps) => {
     },
   });
   const saveUser = async (data: z.infer<typeof SignUpFormSchema>) => {
-     console.log('SignUpForm user=================');
     const { confirmPassword, ...user } = data;
-    console.log('SignUpForm user', user);
     try {
       const result = await registerUser(user);
       console.log('SignUpForm data', data);
@@ -52,6 +57,7 @@ const SignUpForm = (props: SignUpFormProps) => {
           email: data.email,
           password: data.password,
         });
+
         router.push(callbackUrl);
       }
     } catch (error) {
@@ -63,24 +69,32 @@ const SignUpForm = (props: SignUpFormProps) => {
       }
     }
   };
+
   return (
-    <div className="mt-8 flex items-center justify-end">
-      <Card className="p-10 pt-5">
-        {/* <CardHeader className="pb-0">
-          <CardTitle className="flex justify-center">Academic Jobs</CardTitle>
-          
-        </CardHeader>  */}
+    <div className="flex items-center justify-center">
+      <Card className="px-10 pt-0 pb-5 bg-slate-50">
+        <CardHeader className="pb-0">
+          <CardTitle className="text-center">Academics Professionals</CardTitle>
+          <h4 className="text-center pb-8">
+            Be seen and get hired.
+            <br />
+            Create your free profile today.
+          </h4>
+          {/* <CardDescription className="flex justify-center">
+            Sign in
+          </CardDescription> */}
+        </CardHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(saveUser)} className="w-full">
-            <div className="space-y-2">
+            <div className="space-y-4">
               <FormField
                 control={form.control}
-                name="username"
+                name="firstName"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>First Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="" {...field} />
+                      <Input placeholder="" {...field} type="given-name" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -88,12 +102,25 @@ const SignUpForm = (props: SignUpFormProps) => {
               />
               <FormField
                 control={form.control}
-                name="email"
+                name="lastName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Last Name</FormLabel>
+                    <FormControl>
+                      <Input placeholder="" {...field} type="family-name" />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="username"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="" {...field} />
+                      <Input placeholder="" {...field} type="email" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -116,7 +143,7 @@ const SignUpForm = (props: SignUpFormProps) => {
                   </FormItem>
                 )}
               />
-              <FormField
+              {/* <FormField
                 control={form.control}
                 name="confirmPassword"
                 render={({ field }) => (
@@ -132,7 +159,7 @@ const SignUpForm = (props: SignUpFormProps) => {
                     <FormMessage />
                   </FormItem>
                 )}
-              />
+              /> */}
             </div>
             <Button className="w-full mt-6" type="submit">
               Sign up
@@ -141,11 +168,10 @@ const SignUpForm = (props: SignUpFormProps) => {
           <div className="mx-auto my-4 flex w-full items-center justify-evenly before:mr-4 before:block before:h-px before:flex-grow before:bg-stone-400 after:ml-4 after:block after:h-px after:flex-grow after:bg-stone-400">
             or
           </div>
-          {/* <GoogleSignInButton>Sign up with Google</GoogleSignInButton> */}
           <GoogleSignInButton callbackUrl={callbackUrl}>
-            Continue with Google
+            Sign up with Google
           </GoogleSignInButton>
-          <p className="text-center text-sm text-gray-600 mt-2">
+          <p className="text-center text-sm text-gray-600 mt-4">
             Already have an account? please&nbsp;
             <Link className="text-blue-500 hover:underline" href="/auth/signin">
               Sign in
@@ -156,4 +182,5 @@ const SignUpForm = (props: SignUpFormProps) => {
     </div>
   );
 };
+
 export default SignUpForm;
