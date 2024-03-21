@@ -1,7 +1,5 @@
 'use client';
-
 import { SubmitHandler, useForm } from 'react-hook-form';
-
 import * as z from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import Link from 'next/link';
@@ -17,17 +15,14 @@ import { Input } from '@/shadcn/ui/input';
 import { Form } from '@/shadcn/ui/form';
 import { Card, CardHeader, CardTitle } from '@/shadcn/ui/card';
 import GoogleSignInButton from '../signin/GoogleSignInButton';
-
 import { toast } from 'react-toastify';
 import { registerUser } from './action';
 import { useRouter } from 'next/navigation';
 import { SignUpFormSchema } from '@/app/schemas/schemas';
 import { signIn } from 'next-auth/react';
-
 interface SignUpFormProps {
   callbackUrl?: string;
 }
-
 const SignUpForm = (props: SignUpFormProps) => {
   let callbackUrl = props.callbackUrl ? props.callbackUrl : '/';
   const router = useRouter();
@@ -57,7 +52,6 @@ const SignUpForm = (props: SignUpFormProps) => {
           email: data.email,
           password: data.password,
         });
-
         router.push(callbackUrl);
       }
     } catch (error) {
@@ -69,7 +63,6 @@ const SignUpForm = (props: SignUpFormProps) => {
       }
     }
   };
-
   return (
     <div className="flex items-center justify-center">
       <Card className="px-10 pt-0 pb-5 bg-slate-50">
@@ -182,5 +175,4 @@ const SignUpForm = (props: SignUpFormProps) => {
     </div>
   );
 };
-
 export default SignUpForm;
