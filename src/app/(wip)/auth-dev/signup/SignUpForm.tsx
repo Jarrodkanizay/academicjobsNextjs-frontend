@@ -34,6 +34,8 @@ const SignUpForm = (props: SignUpFormProps) => {
   const form = useForm<z.infer<typeof SignUpFormSchema>>({
     resolver: zodResolver(SignUpFormSchema),
     defaultValues: {
+      firstName: '',
+      lastName: '',
       username: '',
       email: '',
       password: '',
@@ -85,7 +87,32 @@ const SignUpForm = (props: SignUpFormProps) => {
         <Form {...form}>
           <form onSubmit={form.handleSubmit(saveUser)} className="w-full">
             <div className="space-y-4">
-        
+              <FormField
+                control={form.control}
+                name="firstName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>First Name</FormLabel>
+                    <FormControl>
+                      <Input placeholder="" {...field} type="given-name" />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="lastName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Last Name</FormLabel>
+                    <FormControl>
+                      <Input placeholder="" {...field} type="family-name" />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
               <FormField
                 control={form.control}
                 name="username"
@@ -116,7 +143,7 @@ const SignUpForm = (props: SignUpFormProps) => {
                   </FormItem>
                 )}
               />
-              <FormField
+              {/* <FormField
                 control={form.control}
                 name="confirmPassword"
                 render={({ field }) => (
@@ -132,7 +159,7 @@ const SignUpForm = (props: SignUpFormProps) => {
                     <FormMessage />
                   </FormItem>
                 )}
-              />
+              /> */}
             </div>
             <Button className="w-full mt-6" type="submit">
               Sign up
@@ -146,10 +173,7 @@ const SignUpForm = (props: SignUpFormProps) => {
           </GoogleSignInButton>
           <p className="text-center text-sm text-gray-600 mt-4">
             Already have an account? please&nbsp;
-            <Link
-              className="text-blue-500 hover:underline"
-              href="/auth-dev/signin"
-            >
+            <Link className="text-blue-500 hover:underline" href="/auth/signin">
               Sign in
             </Link>
           </p>

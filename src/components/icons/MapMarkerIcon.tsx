@@ -1,6 +1,6 @@
 import React, { SVGProps } from 'react';
 
-export function MapMarkerLine(props: SVGProps<SVGSVGElement>) {
+export default function MapMarkerLine(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

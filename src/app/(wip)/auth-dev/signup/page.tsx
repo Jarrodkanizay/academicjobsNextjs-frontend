@@ -53,6 +53,7 @@ const page = () => {
               </p>
             </div>
           </section>
+
           <section className="flex gap-8 mb-16">
             <div>
               <Image
@@ -71,6 +72,7 @@ const page = () => {
               </p>
             </div>
           </section>
+
           <section className="flex gap-8 mb-16">
             <div>
               <Image
@@ -89,49 +91,82 @@ const page = () => {
               </p>
             </div>
           </section>
-          <section className="flex flex-col">
-            <h3 className="text-slate-600 text-center">
-              Thousands of top universities hire on
-              <br />
-              Academic Jobs, including...
-            </h3>
-            <div className="flex gap-8 justify-center items-center">
-              <div>
-                <Image
-                  src="/university-logos/usa/harvard-university.png"
-                  width={300}
-                  height={50}
-                  alt="University Logo"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/university-logos/usa/california-institute-of-technology-caltech.jpg"
-                  width={300}
-                  height={50}
-                  alt="University Logo"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/university-logos/usa/stanford-university.png"
-                  width={300}
-                  height={50}
-                  alt="University Logo"
-                />
-              </div>
-              <div>
-                <Image
-                  src="/university-logos/usa/massachusetts-institute-of-technology-mit.png"
-                  width={300}
-                  height={50}
-                  alt="University Logo"
-                />
-              </div>
-            </div>
-          </section>
         </div>
       </div>
+      <section
+        title="Customer Logos"
+        className="container mx-auto flex flex-col mt-16"
+      >
+        <h3 className="text-slate-600 text-center">
+          Thousands of top universities hire on Academic Jobs, including...
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 justify-items-center items-center">
+          <div>
+            <Image
+              src="/university-logos/usa/harvard-university.png"
+              width={300}
+              height={50}
+              alt="University Logo"
+            />
+          </div>
+          <div>
+            <Image
+              src="/university-logos/usa/california-institute-of-technology-caltech.jpg"
+              width={300}
+              height={50}
+              alt="University Logo"
+            />
+          </div>
+          <div>
+            <Image
+              src="/university-logos/usa/stanford-university.png"
+              width={300}
+              height={50}
+              alt="University Logo"
+            />
+          </div>
+          <div>
+            <Image
+              src="/university-logos/usa/massachusetts-institute-of-technology-mit.png"
+              width={300}
+              height={50}
+              alt="University Logo"
+            />
+          </div>
+          <div>
+            <Image
+              src="/university-logos/misc/oxford-university.webp"
+              width={200}
+              height={40}
+              alt="University Logo"
+            />
+          </div>
+          <div>
+            <Image
+              src="/university-logos/misc/cambridge_at_academicjobs_logo.webp"
+              width={130}
+              height={50}
+              alt="University Logo"
+            />
+          </div>
+          <div>
+            <Image
+              src="/university-logos/misc/nus_academic_jobs_logo.webp"
+              width={300}
+              height={50}
+              alt="University Logo"
+            />
+          </div>
+          <div>
+            <Image
+              src="/university-logos/misc/eth-zurich-academic-jobs-logo.webp"
+              width={300}
+              height={50}
+              alt="University Logo"
+            />
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

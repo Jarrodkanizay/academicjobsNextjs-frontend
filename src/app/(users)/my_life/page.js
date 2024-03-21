@@ -11,55 +11,87 @@ import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import { useSession } from 'next-auth/react';
+import Profile from './Profile';
+import TextRotatorBanner from '@/components/TextRotatorBanner';
+
 export default function Page() {
   const { data: session } = useSession();
-  console.log("userId", session.user.id)
-  const {
-    isPending: isPendingQty,
-    isError: isErrorQty,
-    isSuccess: isSuccessQty,
-    error: errorQty,
-    data: favorites,
-    isFetching: isFetchingQty,
-    isPlaceholderData: isPlaceholderDataQty,
-  } = useQuery({
-    queryKey: ['favorites'],
-    queryFn: async () => {
-      const response = await BaseApi.post('/getFavoriteJobs', {
-        userId: session.user.id,
-      });
-      console.log(response.data);
-      console.log('response.data.data', response.data.data);
-      return response.data.data;
-    },
-    // enabled: category !== '',
-  });
-  useEffect(() => {
-    console.log("favorites", favorites)
-  }, [favorites])
+
+  // const {
+  //   isPending: isPendingQty,
+  //   isError: isErrorQty,
+  //   isSuccess: isSuccessQty,
+  //   error: errorQty,
+  //   data: favorites,
+  //   isFetching: isFetchingQty,
+  //   isPlaceholderData: isPlaceholderDataQty,
+  // } = useQuery({
+  //   queryKey: ['favorites'],
+  //   queryFn: async () => {
+  //     const response = await BaseApi.post('/filters', {
+  //       category,
+  //       filter1,
+  //       q,
+  //       l,
+  //       mode: 'normal',
+  //     });
+  //     console.log(response.data);
+  //     console.log('response.data.data', response.data.data);
+  //     return response.data.data;
+  //   },
+  //   enabled: category !== '',
+  // });
+
   return (
     <main>
-      <div className="full-width md:h-[120px] h-[120px] gradient-aj">
-        <section className="wrapper md:flex">
-          <h2 className="sentence ">
-            <span className="mr-8">Find</span>{' '}
-            <span className="md:hidden block">
-              <br />
-            </span>
-            <div className="slidingVertical ">
-              <span>Opportunity</span>
-              <span>Connections</span>
-              <span>Happiness</span>
-              <span>Opportunity</span>
-              <span>Connections</span>
-            </div>
-          </h2>
-        </section>
-      </div>
-      <h1 className="max-w-5xl mx-auto text-center">My Life, My Profile</h1>
-      <div className=" mx-auto max-w-5xl  flex flex-col  ">
-        {
-          favorites?.length > 0 && (
+      <TextRotatorBanner />
+      <section title="Profile" className="content-grid">
+        <Profile
+          // bgColor="bg-slate-200"
+          wavesOn={true}
+        />
+        <div className="mt-16">
+          <aside>
+            <ul className="menu bg-base-200 w-56 rounded-box">
+              {/* <li>
+                <a>Dashboard</a>
+              </li> */}
+              <li>
+                <details open>
+                  <summary>My Network</summary>
+                  <ul>
+                    <li>
+                      <a>Followers</a>
+                    </li>
+                    <li>
+                      <a>Following</a>
+                    </li>
+                    <li>
+                      <a>Suggested</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <a>Messages</a>
+              </li>
+              <li>
+                <a>Notifications</a>
+              </li>
+              <li>
+                <a>Library</a>
+              </li>
+              <li>
+                <a>Edit Profile</a>
+              </li>
+            </ul>
+          </aside>
+          <div></div>
+          <div></div>
+        </div>
+        {/* {
+         
+          filter1.length > 0 && (
             <div className="md:flex md:gap-4 md:flex-wrap pb-2">
               {favorites.map(({ jobId, job: { title, employer: { company_name } } }, i) => (
                 <p
@@ -71,8 +103,8 @@ export default function Page() {
               ))}
             </div>
           )
-        }
-      </div>
+        } */}
+      </section>
     </main>
   );
 }
