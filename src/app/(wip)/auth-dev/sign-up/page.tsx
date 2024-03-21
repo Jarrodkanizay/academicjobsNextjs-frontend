@@ -9,7 +9,7 @@ const page = () => {
         description={`I'm looking for talent.`}
         src="/sign-up/employers-recruiters.png"
         btnText="Sign up as an employer"
-        btnLink="/post-a-job"
+        btnLink="https://www.iloveacademicjobs.com/signup"
         // btnSecondaryText="Source Talent"
         // btnSecondaryLink="/academic-talent-pool"
       />
