@@ -9,16 +9,16 @@ import Link from 'next/link';
 
 type UserProps = {
   id: number;
-  firstName: string;
-  lastName: string;
-  summary: string;
-  expertise: string[];
-  skills: string[];
-  teachingPhilosophy: string;
-  researchPhilosophy: string;
-  qualifications: string[];
-  profileStrength: number;
-  location: string;
+  firstName?: string;
+  lastName?: string;
+  summary?: string;
+  expertise?: string[];
+  skills?: string[];
+  teachingPhilosophy?: string;
+  researchPhilosophy?: string;
+  qualifications?: string[];
+  profileStrength?: number;
+  location?: string;
   rank?: number;
   jobTitle?: string;
   organization?: string;
@@ -29,7 +29,7 @@ type UserProps = {
 };
 
 const SimpleCard = ({
-  id = -2,
+  id,
   firstName = '',
   lastName = '',
   summary = '',
