@@ -11,7 +11,7 @@ type SignUpTypeProps = {
 };
 
 const SimpleCard = ({
-  title = 'Academics Professionals',
+  title = 'Academics & Professionals',
   description = `I'm interested in an academic job.`,
   src = '/sign-up/academic-professionals.png',
   btnText = 'Create a free profile',

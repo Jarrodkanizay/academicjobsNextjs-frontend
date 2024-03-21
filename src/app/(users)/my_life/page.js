@@ -50,6 +50,45 @@ export default function Page() {
           // bgColor="bg-slate-200"
           wavesOn={true}
         />
+        <div className="mt-16">
+          <aside>
+            <ul className="menu bg-base-200 w-56 rounded-box">
+              {/* <li>
+                <a>Dashboard</a>
+              </li> */}
+              <li>
+                <details open>
+                  <summary>My Network</summary>
+                  <ul>
+                    <li>
+                      <a>Followers</a>
+                    </li>
+                    <li>
+                      <a>Following</a>
+                    </li>
+                    <li>
+                      <a>Suggested</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li>
+                <a>Messages</a>
+              </li>
+              <li>
+                <a>Notifications</a>
+              </li>
+              <li>
+                <a>Library</a>
+              </li>
+              <li>
+                <a>Edit Profile</a>
+              </li>
+            </ul>
+          </aside>
+          <div></div>
+          <div></div>
+        </div>
         {/* {
          
           filter1.length > 0 && (

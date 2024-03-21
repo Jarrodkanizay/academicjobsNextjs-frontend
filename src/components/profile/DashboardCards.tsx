@@ -9,7 +9,11 @@ const DashboardCard = ({
   href = '/my_life',
 }: Props) => {
   return (
-    <Link href={href} role="alert" className="alert bg-slate-1000">
+    <Link
+      href={href}
+      role="alert"
+      className="alert bg-white hover:bg-slate-100 border-solid border-1 border-slate-300"
+    >
       <Image src={iconPath} alt="icon" width={30} height={30} />
       <span>{title}</span>
     </Link>
