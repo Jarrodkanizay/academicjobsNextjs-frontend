@@ -50,17 +50,46 @@ const SimpleCard = ({
   if (id === -1) {
     firstName = 'Jane';
     lastName = 'Doe';
-    summary = '';
-    expertise = [];
-    skills = [];
-    teachingPhilosophy = '';
-    researchPhilosophy = '';
-    qualifications = [];
+    summary =
+      'Dr. Jane Doe is a passionate and experienced marine biologist with a strong research focus on deep-sea ecology and biomimicry. Her research career has involved leading deep-sea exploration missions, discovering and studying fascinating deep-sea creatures, and utilizing biomimicry to develop innovative technologies.  Dr. Doe is committed to fostering a collaborative research environment and inspiring the next generation of marine scientists.';
+    expertise = [
+      'Deep-Sea Ecology',
+      'Biomimicry',
+      'Deep-Sea Invertebrate Zoology',
+      'Hydrothermal Vent Ecosystems',
+      'Bioluminescence',
+      'Deep-Sea Exploration Techniques (ROV Piloting, Sample Collection)',
+    ];
+    skills = [
+      'Research Grant Writing and Management (e.g., NSF, NOAA)',
+      'Scientific Publication (Authored/Co-authored XX peer-reviewed publications)',
+      'Public Outreach and Science Communication',
+      'Mentorship and Supervision of Undergraduate/Graduate Students',
+      'Teaching Experience (e.g., Undergraduate courses in Marine Biology, Deep-Sea Ecology)',
+      'Proficiency in R, MATLAB, and relevant oceanographic software',
+    ];
+    teachingPhilosophy =
+      'Dr. Doe believes in a student-centered learning environment that fosters critical thinking, problem-solving skills, and scientific curiosity.  She utilizes innovative teaching methods, including incorporating real-world research data and case studies from her deep-sea expeditions.';
+    researchPhilosophy = `The vast and unexplored depths of the ocean hold a wealth of mysteries waiting to be unveiled. My research philosophy centers on uncovering these mysteries through a blend of exploration, meticulous scientific analysis, and a drive to translate discoveries into real-world applications.
+
+    Here are the core principles guiding my research:
+    
+    Deep-Sea Exploration and Discovery: I believe that pushing the boundaries of deep-sea exploration is crucial to understanding our planet's biodiversity, ecological processes, and the potential for new resources and technologies. My research focuses on utilizing cutting-edge submersible technology and sample collection techniques to access and study these previously unexplored environments.
+    Focus on Deep-Sea Ecology and Adaptations: The unique pressures, darkness, and limited resources of the deep sea have led to the evolution of fascinating adaptations in its resident organisms. My research dives deep (pun intended) into understanding these adaptations, including bioluminescence, pressure-resistant proteins, and chemosynthesis-based ecosystems.
+    Biomimicry for Innovation: Nature has already perfected solutions to many challenges we face. My research philosophy integrates biomimicry, where I translate the insights gained from studying deep-sea organisms into the development of novel technologies. This could involve creating sustainable lighting solutions inspired by bioluminescent creatures or developing new materials using the pressure-resistant proteins found in deep-sea bacteria.
+    Collaborative Research Environment: I believe in fostering a collaborative research environment where students and colleagues can contribute their expertise and learn from each other. Open communication, teamwork, and mentorship are key to achieving impactful scientific breakthroughs.
+    Public Outreach and Science Communication: Sharing the wonders and importance of the deep sea with the public is essential. I aim to translate complex scientific discoveries into engaging and accessible content through public lectures, educational outreach programs, and media engagement.`;
+    qualifications = [
+      'Earned Ph.D. in Marine Biology from Harvard University',
+      'Served as Principal Investigator on XX funded research projects',
+      'Awarded XX for outstanding research/teaching (optional)',
+      'Active member of professional organizations (e.g., The Oceanography Society, The Marine Technology Society)',
+    ];
     profileStrength = 30;
-    location = 'Add your location here.';
-    rank = 3;
-    jobTitle = 'Add your job title here.';
-    organization = 'Add your organization here.';
+    location = 'Boston, MA, USA';
+    rank = 5;
+    jobTitle = 'Department of Ocean Exploration & Marine Biology';
+    organization = 'Harvard University';
     avatar = '/users/avatar.jpg';
     wavesOn = true;
     bgColor = 'custom-background';

@@ -41,15 +41,34 @@ export default function Page() {
   //   },
   //   enabled: category !== '',
   // });
-
+  const testID = -1;
   return (
     <main>
       <TextRotatorBanner />
       <section title="Profile" className="content-grid">
-        <Profile
-          // bgColor="bg-slate-200"
-          wavesOn={true}
-        />
+        {testID === -1 ? (
+          <Profile id={-1} />
+        ) : (
+          <Profile
+            id={-1}
+            firstName="Jane"
+            lastName="Doe"
+            summary=""
+            expertise={[]}
+            skills={[]}
+            teachingPhilosophy=""
+            researchPhilosophy=""
+            qualifications={[]}
+            profileStrength={30}
+            location="Add your location here."
+            rank={3}
+            jobTitle="Add your job title here."
+            organization="Add your organization here."
+            avatar="/users/avatar.jpg"
+            wavesOn={true}
+            bgColor="custom-background"
+          />
+        )}
         <div className="mt-16">
           <aside>
             <ul className="menu bg-base-200 w-56 rounded-box">
@@ -86,8 +105,8 @@ export default function Page() {
               </li>
             </ul>
           </aside>
-          <div></div>
-          <div></div>
+          <div>Middle</div>
+          <div>Right</div>
         </div>
         {/* {
          
