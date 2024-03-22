@@ -15,7 +15,7 @@ import Profile from './Profile';
 import TextRotatorBanner from '@/components/TextRotatorBanner';
 export default function Page() {
   const { data: session } = useSession();
-  console.log("userId", session.user.id)
+  //console.log("userId", session.user.id)
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
