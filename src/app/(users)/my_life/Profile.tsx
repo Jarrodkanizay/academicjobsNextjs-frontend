@@ -1,7 +1,10 @@
+import SearchResults2 from '@/components/SearchResults';
+import JobSearchBox2 from '@/components/JobSearchBox2';
 import { StarRank } from '@/components/StarRank';
 import WaveBackground from '@/components/WaveBackground';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import DashboardCard from '@/components/profile/DashboardCards';
+import ProfileSideNav from '@/components/profile/ProfileSideNav';
 import Image from 'next/image';
 import Link from 'next/link';
 // import JobSearchBox2 from '@/components/JobSearchBox2';
@@ -29,7 +32,7 @@ type UserProps = {
   savedJobs?: [];
 };
 
-const SimpleCard = ({
+export default function Profile({
   id,
   firstName = '',
   lastName = '',
@@ -48,7 +51,7 @@ const SimpleCard = ({
   wavesOn = true,
   bgColor = 'custom-background',
   savedJobs = [],
-}: UserProps) => {
+}: UserProps) {
   if (id === -1) {
     firstName = 'Jane';
     lastName = 'Doe';
@@ -167,29 +170,122 @@ const SimpleCard = ({
           />
         </div>
       </section>
-      {/* <section className="jobs_grid job_post_panel_container">
-        <div className={`post_panel employer_panel ${employerTheme} mt-6`}>
-          {
-            <div className={`${panel} ${profileBG}`}>
-              <div>
-                <div
-                  dangerouslySetInnerHTML={{ __html: company_description1 }}
-                />
-              </div>
+      <section className="profile_grid">
+        <aside className="side_nav">
+          <ProfileSideNav />
+        </aside>
+
+        <div className="main_content">
+          <div className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
+            <figure>
+              <Image
+                width={100}
+                height={100}
+                src="https://www.academicjobs.com/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FQueensland-Univ-Tech-Logo.jpg&w=384&q=75"
+                alt=""
+              />
+            </figure>
+            <div className="flex flex-col justify-center">
+              <h3 className="m-0 p-0">Saved job listing!</h3>
+              <p className="font-bold">Institution</p>
+              <p className="flex flex-row items-center gap-6">
+                <span className="flex flex-row items-center gap-1">
+                  <Image
+                    src={'/icons/map-marker-icon.svg'}
+                    width={24}
+                    height={24}
+                    alt=""
+                  />
+                  Location
+                </span>
+                <span className="flex flex-row items-center gap-1">
+                  <Image
+                    src={'/icons/dollar-bills.svg'}
+                    width={24}
+                    height={24}
+                    alt=""
+                  />
+                  Salary
+                </span>
+                <span className="flex flex-row items-center gap-1">
+                  <Image
+                    src={'/icons/clock.svg'}
+                    width={24}
+                    height={24}
+                    alt=""
+                  />
+                  14 April 2024
+                </span>
+              </p>
             </div>
-          }
+            <div className="flex flex-col justify-center ml-auto gap-2">
+              <button className="btn btn-error">Remove</button>
+              <button className="btn btn-accent">Apply</button>
+            </div>
+          </div>
+
+          <div className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
+            <figure>
+              <Image
+                width={100}
+                height={100}
+                src="https://www.academicjobs.com/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FQueensland-Univ-Tech-Logo.jpg&w=384&q=75"
+                alt=""
+              />
+            </figure>
+            <div className="flex flex-col justify-center">
+              <h3 className="m-0 p-0">Saved job listing!</h3>
+              <p className="font-bold">Institution</p>
+              <p className="flex flex-row items-center gap-4">
+                <span className="flex flex-row items-center gap-1">
+                  <Image
+                    src={'/icons/map-marker-icon.svg'}
+                    width={24}
+                    height={24}
+                    alt=""
+                  />
+                  Location
+                </span>
+                <span className="flex flex-row items-center gap-1">
+                  <Image
+                    src={'/icons/dollar-bills.svg'}
+                    width={24}
+                    height={24}
+                    alt=""
+                  />
+                  Salary
+                </span>
+                <span className="flex flex-row items-center gap-1">
+                  <Image
+                    src={'/icons/clock.svg'}
+                    width={24}
+                    height={24}
+                    alt=""
+                  />
+                  Closed
+                </span>
+              </p>
+            </div>
+            <div className="flex flex-col justify-center ml-auto gap-2">
+              <button className="btn btn-error">Remove</button>
+              <button className="btn btn-accent" disabled>
+                Expired
+              </button>
+            </div>
+          </div>
         </div>
-        <div className="listings_panel">
+
+        <div className="jobs_panel">
+          {/* <div className="listings_panel"> */}
           <div className="listings_content">
             <div className="search_panel">
               <JobSearchBox2 />
             </div>
-            <SearchResults q={{ employer_id: id || 0 }} filterOff={true} />
+            <SearchResults2 q={{ q: 'qut', l: '' }} />
           </div>
+          {/* </div> */}
         </div>
-      </section> */}
+      </section>
     </>
   );
-};
-
-export default SimpleCard;
+}

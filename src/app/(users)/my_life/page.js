@@ -69,12 +69,12 @@ export default function Page() {
             bgColor="custom-background"
           />
         )}
-        <div className="mt-16">
+        {/* <div className="mt-16">
           <aside>
             <ul className="menu bg-base-200 w-56 rounded-box">
-              {/* <li>
+              <li>
                 <a>Dashboard</a>
-              </li> */}
+              </li>
               <li>
                 <details open>
                   <summary>My Network</summary>
@@ -107,7 +107,7 @@ export default function Page() {
           </aside>
           <div>Middle</div>
           <div>Right</div>
-        </div>
+        </div> */}
         {/* {
          
           filter1.length > 0 && (
