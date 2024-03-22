@@ -39,10 +39,10 @@ export default function Page() {
             researchPhilosophy=""
             qualifications={[]}
             profileStrength={30}
-            location="Melbourne, Australia"
+            location=""
             rank={3}
             jobTitle=""
-            organization="Harvard University"
+            organization=""
             avatar={image || '/favicon.png'}
             wavesOn={true}
             bgColor="custom-background"
