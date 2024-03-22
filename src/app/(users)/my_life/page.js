@@ -13,34 +13,29 @@ import BaseApi from '@/lib/store/Base';
 import { useSession } from 'next-auth/react';
 import Profile from './Profile';
 import TextRotatorBanner from '@/components/TextRotatorBanner';
-
 export default function Page() {
   const { data: session } = useSession();
-
-  // const {
-  //   isPending: isPendingQty,
-  //   isError: isErrorQty,
-  //   isSuccess: isSuccessQty,
-  //   error: errorQty,
-  //   data: favorites,
-  //   isFetching: isFetchingQty,
-  //   isPlaceholderData: isPlaceholderDataQty,
-  // } = useQuery({
-  //   queryKey: ['favorites'],
-  //   queryFn: async () => {
-  //     const response = await BaseApi.post('/filters', {
-  //       category,
-  //       filter1,
-  //       q,
-  //       l,
-  //       mode: 'normal',
-  //     });
-  //     console.log(response.data);
-  //     console.log('response.data.data', response.data.data);
-  //     return response.data.data;
-  //   },
-  //   enabled: category !== '',
-  // });
+  console.log("userId", session.user.id)
+  const {
+    isPending: isPendingQty,
+    isError: isErrorQty,
+    isSuccess: isSuccessQty,
+    error: errorQty,
+    data: favorites,
+    isFetching: isFetchingQty,
+    isPlaceholderData: isPlaceholderDataQty,
+  } = useQuery({
+    queryKey: ['favorites'],
+    queryFn: async () => {
+      const response = await BaseApi.post('/getFavoriteJobs', {
+        userId: session.user.id,
+      });
+      console.log(response.data);
+      console.log('response.data.data', response.data.data);
+      return response.data.data;
+    },
+    cacheTime: 0,
+  });
   const testID = -1;
   return (
     <main>
@@ -69,60 +64,33 @@ export default function Page() {
             bgColor="custom-background"
           />
         )}
-        <div className="mt-16">
-          <aside>
-            <ul className="menu bg-base-200 w-56 rounded-box">
-              {/* <li>
-                <a>Dashboard</a>
-              </li> */}
-              <li>
-                <details open>
-                  <summary>My Network</summary>
-                  <ul>
-                    <li>
-                      <a>Followers</a>
-                    </li>
-                    <li>
-                      <a>Following</a>
-                    </li>
-                    <li>
-                      <a>Suggested</a>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-              <li>
-                <a>Messages</a>
-              </li>
-              <li>
-                <a>Notifications</a>
-              </li>
-              <li>
-                <a>Library</a>
-              </li>
-              <li>
-                <a>Edit Profile</a>
-              </li>
-            </ul>
-          </aside>
-          <div>Middle</div>
-          <div>Right</div>
+    
+        <div className=" mx-auto max-w-5xl  flex flex-col  ">
+          <table>
+            <tbody>
+              <tr className="font-bold border-b-2">
+                <td>Id</td>
+                <td>Title</td>
+                <td>Company Name</td>
+              </tr>
+              {
+                favorites?.length > 0 && (
+                 
+                    favorites.map(({ jobId, job: { title, employer: { company_name } } }, i) => (
+                      <tr className=" border-b border-black-1"
+                        key={i}>
+                        <td className="w-[100px]">{jobId}</td>
+                        <td className="w-[300px]">{title}</td>
+                        <td className="w-[300px]">{company_name}</td>
+                 
+                      </tr>
+                    ))
+                 
+                )
+              }
+            </tbody>
+          </table>
         </div>
-        {/* {
-         
-          filter1.length > 0 && (
-            <div className="md:flex md:gap-4 md:flex-wrap pb-2">
-              {favorites.map(({ jobId, job: { title, employer: { company_name } } }, i) => (
-                <p
-                  key={i}
-                  className="btn  btn-xs bg-blue-900 text-white "
-                >
-                  {`${jobId}${title}${company_name}`}
-                </p>
-              ))}
-            </div>
-          )
-        } */}
       </section>
     </main>
   );
