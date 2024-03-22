@@ -8,8 +8,7 @@ import JobSearchBox2 from '@/components/JobSearchBox2';
 import JobSearchBox3 from '@/components/JobSearchBox3';
 import { filterType } from '@/utils/data';
 import Link from 'next/link';
-import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+
 import { useSession } from 'next-auth/react';
 import Profile from './Profile';
 import TextRotatorBanner from '@/components/TextRotatorBanner';
@@ -19,26 +18,7 @@ export default function Page() {
   const { id, image, name, email, uerRole } = session.user
 
   console.log("mylife: session", session)
-  const {
-    isPending: isPendingQty,
-    isError: isErrorQty,
-    isSuccess: isSuccessQty,
-    error: errorQty,
-    data: favorites,
-    isFetching: isFetchingQty,
-    isPlaceholderData: isPlaceholderDataQty,
-  } = useQuery({
-    queryKey: ['favorites'],
-    queryFn: async () => {
-      const response = await BaseApi.post('/getFavoriteJobs', {
-        userId: session.user.id,
-      });
-      console.log(response.data);
-      console.log('response.data.data', response.data.data);
-      return response.data.data;
-    },
-    staleTime: 0,
-  });
+
   const testID = 1;
   return (
     <main>
@@ -65,7 +45,7 @@ export default function Page() {
               avatar={image || '/favicon.png'}
             wavesOn={true}
             bgColor="custom-background"
-            favorites={favorites}
+        
           />
         )}
 

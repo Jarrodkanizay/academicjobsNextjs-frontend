@@ -9,7 +9,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 // import JobSearchBox2 from '@/components/JobSearchBox2';
 // import SearchResults from '@/components/SearchResults';
-
+  import { keepPreviousData, useQuery } from '@tanstack/react-query';
+  import BaseApi from '@/lib/store/Base';
 type UserProps = {
   id: number;
   firstName?: string;
@@ -51,8 +52,29 @@ export default function Profile({
   avatar = '/placeholders/generic-headshot.png',
   wavesOn = true,
   bgColor = 'custom-background',
-  favorites = [],
+
 }: UserProps) {
+
+  const {
+    isPending: isPendingQty,
+    isError: isErrorQty,
+    isSuccess: isSuccessQty,
+    error: errorQty,
+    data: favorites,
+    isFetching: isFetchingQty,
+    isPlaceholderData: isPlaceholderDataQty,
+  } = useQuery({
+    queryKey: ['favorites'],
+    queryFn: async () => {
+      const response = await BaseApi.post('/getFavoriteJobs', {
+        userId: id,
+      });
+      console.log(response.data);
+      console.log('response.data.data', response.data.data);
+      return response.data.data;
+    },
+    staleTime: 0,
+  });
   if (id === -1) {
     firstName = 'Jane';
     lastName = 'Doe';
