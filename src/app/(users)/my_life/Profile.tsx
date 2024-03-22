@@ -9,12 +9,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 // import JobSearchBox2 from '@/components/JobSearchBox2';
 // import SearchResults from '@/components/SearchResults';
-  import { keepPreviousData, useQuery } from '@tanstack/react-query';
-  import BaseApi from '@/lib/store/Base';
+import { keepPreviousData, useQuery } from '@tanstack/react-query';
+import BaseApi from '@/lib/store/Base';
+import { Span } from 'next/dist/trace';
+type JobProps = {
+  logo?: string;
+};
+
 type UserProps = {
   id: number;
   firstName?: string;
   lastName?: string;
+  email?: string;
   summary?: string;
   expertise?: string[];
   skills?: string[];
@@ -32,12 +38,14 @@ type UserProps = {
   bgColor?: string;
   savedJobs?: [];
   favorites?: [];
+  logo?: JobProps;
 };
 
 export default function Profile({
   id,
   firstName = '',
   lastName = '',
+  email = '',
   summary = '',
   expertise = [],
   skills = [],
@@ -52,9 +60,8 @@ export default function Profile({
   avatar = '/placeholders/generic-headshot.png',
   wavesOn = true,
   bgColor = 'custom-background',
-
+  logo,
 }: UserProps) {
-
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -122,6 +129,12 @@ export default function Profile({
     wavesOn = true;
     bgColor = 'custom-background';
   }
+  if (email === 'dan@zygadox.com') {
+    firstName = 'Dan';
+    lastName = 'Grant';
+    jobTitle = 'Senior Software Engineer';
+    organization = 'Academic Jobs';
+  }
   return (
     <>
       <section className={`${bgColor} full-width mb-16`}>
@@ -142,17 +155,52 @@ export default function Profile({
             </div>
             <div>
               <StarRank ranking={rank} />
-              <h2 className="p-0 m-0">
-                {firstName} {lastName}
+              <h2 className="p-0 m-0 flex gap-6 mt-2">
+                <span className="mt-[-6px]">
+                  {firstName} {lastName}
+                </span>
+                {jobTitle === '' ? null : (
+                  <span>
+                    <p className="text-white flex gap-2 items-end p-0 m-0">
+                      <Image
+                        src={'/icons/job-title.svg'}
+                        width={24}
+                        height={24}
+                        alt=""
+                      />{' '}
+                      <span className="inline_heading">{jobTitle}</span>
+                    </p>
+                  </span>
+                )}
               </h2>
-              <p className="text-white">{jobTitle}</p>
-              <p className="text-white">
-                Institution:{' '}
-                <span className="inline_heading">{organization}</span>
-              </p>
-              <p className="text-white flex">
-                <MapMarkerIcon /> {location}
-              </p>
+              {email === '' ? null : (
+                <p className="text-white flex gap-2 items-center">
+                  <Image
+                    src={'/icons/email-at-symbol.svg'}
+                    width={24}
+                    height={24}
+                    alt=""
+                  />{' '}
+                  <span className="inline_heading">{email}</span>
+                </p>
+              )}
+
+              {organization === '' ? null : (
+                <p className="text-white flex gap-2 items-center">
+                  <Image
+                    src={'/icons/college-icon.svg'}
+                    width={24}
+                    height={24}
+                    alt=""
+                  />{' '}
+                  <span className="inline_heading">{organization}</span>
+                </p>
+              )}
+              {location === '' ? null : (
+                <p className="text-white flex gap-2 items-center">
+                  <MapMarkerIcon width={26} height={26} /> {location}
+                </p>
+              )}
             </div>
             <div className="ml-auto">
               <h2 className="p-0 m-0">Profile Strength {profileStrength}%</h2>
@@ -182,13 +230,18 @@ export default function Profile({
             href="/my_life"
           />
           <DashboardCard
-            title="Recently Viewed"
+            title="Jobs Applied For"
+            iconPath="/icons/folder.svg"
+            href="/my_life"
+          />
+          <DashboardCard
+            title="Recently Viewed Jobs"
             iconPath="/icons/eyeball.svg"
             href="/my_life"
           />
           <DashboardCard
-            title="Applications"
-            iconPath="/icons/network-folder.svg"
+            title="Posts"
+            iconPath="/icons/social-posts.svg"
             href="/my_life"
           />
         </div>
@@ -199,132 +252,78 @@ export default function Profile({
         </aside>
 
         <div className="main_content">
-          <div className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
-            <figure>
-              <Image
-                width={100}
-                height={100}
-                src="https://www.academicjobs.com/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FQueensland-Univ-Tech-Logo.jpg&w=384&q=75"
-                alt=""
-              />
-            </figure>
-            <div className="flex flex-col justify-center">
-              <h3 className="m-0 p-0">Saved job listing!</h3>
-              <p className="font-bold">Institution</p>
-              <p className="flex flex-row items-center gap-6">
-                <span className="flex flex-row items-center gap-1">
-                  <Image
-                    src={'/icons/map-marker-icon.svg'}
-                    width={24}
-                    height={24}
-                    alt=""
-                  />
-                  Location
-                </span>
-                <span className="flex flex-row items-center gap-1">
-                  <Image
-                    src={'/icons/dollar-bills.svg'}
-                    width={24}
-                    height={24}
-                    alt=""
-                  />
-                  Salary
-                </span>
-                <span className="flex flex-row items-center gap-1">
-                  <Image
-                    src={'/icons/clock.svg'}
-                    width={24}
-                    height={24}
-                    alt=""
-                  />
-                  14 April 2024
-                </span>
-              </p>
-            </div>
-            <div className="flex flex-col justify-center ml-auto gap-2">
-              <button className="btn btn-error">Remove</button>
-              <button className="btn btn-accent">Apply</button>
-            </div>
-          </div>
-
-          <div className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
-            <figure>
-              <Image
-                width={100}
-                height={100}
-                src="https://www.academicjobs.com/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FQueensland-Univ-Tech-Logo.jpg&w=384&q=75"
-                alt=""
-              />
-            </figure>
-            <div className="flex flex-col justify-center">
-              <h3 className="m-0 p-0">Saved job listing!</h3>
-              <p className="font-bold">Institution</p>
-              <p className="flex flex-row items-center gap-4">
-                <span className="flex flex-row items-center gap-1">
-                  <Image
-                    src={'/icons/map-marker-icon.svg'}
-                    width={24}
-                    height={24}
-                    alt=""
-                  />
-                  Location
-                </span>
-                <span className="flex flex-row items-center gap-1">
-                  <Image
-                    src={'/icons/dollar-bills.svg'}
-                    width={24}
-                    height={24}
-                    alt=""
-                  />
-                  Salary
-                </span>
-                <span className="flex flex-row items-center gap-1">
-                  <Image
-                    src={'/icons/clock.svg'}
-                    width={24}
-                    height={24}
-                    alt=""
-                  />
-                  Closed
-                </span>
-              </p>
-            </div>
-            <div className="flex flex-col justify-center ml-auto gap-2">
-              <button className="btn btn-error">Remove</button>
-              <button className="btn btn-accent" disabled>
-                Expired
-              </button>
-            </div>
-          </div>
-
-          <table>
-            <tbody>
-              <tr className="font-bold border-b-2">
-                <td>Id</td>
-                <td>Title</td>
-                <td>Company Name</td>
-              </tr>
-              {favorites?.length > 0 &&
-                favorites.map(
-                  (
-                    {
-                      jobId,
-                      job: {
-                        title,
-                        employer: { company_name },
-                      },
-                    },
-                    i
-                  ) => (
-                    <tr className=" border-b border-black-1" key={i}>
-                      <td className="w-[100px]">{jobId}</td>
-                      <td className="w-[300px]">{title}</td>
-                      <td className="w-[300px]">{company_name}</td>
-                    </tr>
-                  )
-                )}
-            </tbody>
-          </table>
+          {favorites?.length > 0 &&
+            favorites.map(
+              (
+                {
+                  jobId,
+                  job: {
+                    title,
+                    employer: { company_name },
+                  },
+                },
+                i
+              ) => (
+                <>
+                  <div className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
+                    <figure className="mr-2">
+                      <Image
+                        width={100}
+                        height={100}
+                        src={logo || '/placeholders/your-school-logo.png'}
+                        alt=""
+                      />
+                    </figure>
+                    <div className="flex flex-col justify-center">
+                      <h3 className="m-0 p-0 pr-6 mb-2 leading-tight text-sky-800">
+                        {title}
+                      </h3>
+                      <p className="font-bold">{company_name}</p>
+                      <p className="flex flex-row items-center gap-6">
+                        <span className="flex flex-row items-center gap-1">
+                          <Image
+                            src={'/icons/map-marker-icon.svg'}
+                            width={24}
+                            height={24}
+                            alt=""
+                          />
+                          Location
+                        </span>
+                        <span className="flex flex-row items-center gap-1">
+                          <Image
+                            src={'/icons/dollar-bills.svg'}
+                            width={24}
+                            height={24}
+                            alt=""
+                          />
+                          Salary
+                        </span>
+                        <span className="flex flex-row items-center gap-1">
+                          <Image
+                            src={'/icons/clock.svg'}
+                            width={24}
+                            height={24}
+                            alt=""
+                          />
+                          14 April 2024
+                        </span>
+                      </p>
+                    </div>
+                    <div className="flex flex-col justify-center ml-auto gap-2">
+                      <button className="btn btn-error">Remove</button>
+                      <Link
+                        className="btn btn-accent"
+                        href={`/jobs/${title
+                          .replace(/[^a-zA-Z0-9 ]/g, '')
+                          .replace(/\s+/g, '-')}/${jobId}`}
+                      >
+                        Job Post
+                      </Link>
+                    </div>
+                  </div>
+                </>
+              )
+            )}
         </div>
 
         <div className="jobs_panel">

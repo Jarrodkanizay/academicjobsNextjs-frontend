@@ -30,7 +30,8 @@ export default function Page() {
           <Profile
             id={id}
             firstName={name}
-            // lastName="Doe"
+            lastName=""
+            email={email}
             summary=""
             expertise={[]}
             skills={[]}
@@ -38,10 +39,10 @@ export default function Page() {
             researchPhilosophy=""
             qualifications={[]}
             profileStrength={30}
-            location=""
+            location="Melbourne, Australia"
             rank={3}
             jobTitle=""
-            organization=""
+            organization="Harvard University"
             avatar={image || '/favicon.png'}
             wavesOn={true}
             bgColor="custom-background"
