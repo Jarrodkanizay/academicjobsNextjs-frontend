@@ -7,6 +7,8 @@ import QueryProvider from '@/lib/store/query-provider';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { Providers } from './providers';
 // import { GoogleAnalytics } from '@next/third-parties/google';
+import { getServerSession } from 'next-auth/next';
+import { authOptions } from '@/app/api/auth/[...nextauth]/options';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,16 +29,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const session = await getServerSession(authOptions);
   return (
     <html lang="en">
       <body className={`${inter.className} bg-white`}>
         <QueryProvider>
-          <Providers>
+          <Providers session={session}>
             <Header />
             {children}
             <div className="spacer">&nbsp;</div>
@@ -48,3 +47,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+

@@ -8,7 +8,7 @@ import { useSession } from 'next-auth/react';
 import { CloudCog } from 'lucide-react';
 export default function FavoriteButton({ jobId }) {
   const { data: session } = useSession();
-  console.log("session", session)
+  console.log("FavoriteButtonsession", session)
   const mutation = useMutation({
     mutationFn: (data) => {
       return BaseApi.post('/favoriteJobId', data);
