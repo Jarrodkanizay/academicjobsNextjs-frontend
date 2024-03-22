@@ -34,7 +34,7 @@ export default function Page() {
       console.log('response.data.data', response.data.data);
       return response.data.data;
     },
-    cacheTime: 0,
+    staleTime: 0,
   });
   const testID = -1;
   return (
