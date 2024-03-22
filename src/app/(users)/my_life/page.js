@@ -15,7 +15,7 @@ import Profile from './Profile';
 import TextRotatorBanner from '@/components/TextRotatorBanner';
 export default function Page() {
   const { data: session } = useSession();
-  
+
   const { id, image, name, email, uerRole } = session.user
 
   console.log("mylife: session", session)
@@ -62,7 +62,7 @@ export default function Page() {
             rank={3}
             jobTitle="Add your job title here."
             organization="Add your organization here."
-            avatar={image}
+              avatar={image || '/favicon.png'}
             wavesOn={true}
             bgColor="custom-background"
             favorites={favorites}
