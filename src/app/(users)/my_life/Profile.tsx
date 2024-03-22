@@ -137,6 +137,16 @@ export default function Profile({
     jobTitle = 'Senior Constable - Police Office Guard';
     organization = 'Victoria Police';
   }
+  if (
+    email === 'jarrod@academicjobs.com' ||
+    email === 'jarrod@kanizay.com' ||
+    email === 'jazzakan@gmail.com'
+  ) {
+    firstName = 'Jarrod';
+    lastName = 'Kanizay';
+    jobTitle = 'CEO';
+    organization = 'Post My Job';
+  }
   return (
     <>
       <section className={`${bgColor} full-width mb-16`}>
