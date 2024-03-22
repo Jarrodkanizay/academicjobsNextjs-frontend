@@ -12,10 +12,6 @@ import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import BaseApi from '@/lib/store/Base';
 import { Span } from 'next/dist/trace';
-type JobProps = {
-  logo?: string;
-};
-
 type UserProps = {
   id: number;
   firstName?: string;
@@ -38,7 +34,7 @@ type UserProps = {
   bgColor?: string;
   savedJobs?: [];
   favorites?: [];
-  logo?: JobProps;
+  logo?: string;
 };
 
 export default function Profile({
@@ -134,6 +130,12 @@ export default function Profile({
     lastName = 'Grant';
     jobTitle = 'Senior Software Engineer';
     organization = 'Academic Jobs';
+  }
+  if (email === 'zander@zygadox.com') {
+    firstName = 'Zander';
+    lastName = 'Grant';
+    jobTitle = 'Senior Constable - Police Office Guard';
+    organization = 'Victoria Police';
   }
   return (
     <>
