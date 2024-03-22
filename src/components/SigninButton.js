@@ -62,13 +62,13 @@ const SigninButton = () => {
           <Link href={'/auth/sign-up'}>Sign Up</Link>
         </>
       )}
-      {session && session.user?.userRole == 'EMPLOYER' ? (
+      {/* {session && session.user?.userRole == 'EMPLOYER' ? (
         <Link href="/post">
           <Button variant="outline">Post a job</Button>
         </Link>
       ) : (
         <></>
-      )}
+      )} */}
     </div>
   );
 };
