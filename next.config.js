@@ -2,6 +2,7 @@
 const nextConfig = {
   images: {
     domains: [
+      'lh3.googleusercontent.com',
       'academicjobs.s3.amazonaws.com',
       'res.cloudinary.com',
       'iloveacademicjobs.com',

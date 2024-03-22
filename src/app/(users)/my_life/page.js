@@ -15,7 +15,10 @@ import Profile from './Profile';
 import TextRotatorBanner from '@/components/TextRotatorBanner';
 export default function Page() {
   const { data: session } = useSession();
-  //console.log("userId", session.user.id)
+  
+  const { id, image, name, email, uerRole } = session.user
+
+  console.log("mylife: session", session)
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -45,9 +48,9 @@ export default function Page() {
           <Profile id={-1} />
         ) : (
           <Profile
-            id={-1}
-            firstName="Jane"
-            lastName="Doe"
+            id={id}
+            firstName={name}
+            // lastName="Doe"
             summary=""
             expertise={[]}
             skills={[]}
@@ -59,7 +62,7 @@ export default function Page() {
             rank={3}
             jobTitle="Add your job title here."
             organization="Add your organization here."
-            avatar="/users/avatar.jpg"
+            avatar={image}
             wavesOn={true}
             bgColor="custom-background"
             favorites={favorites}
