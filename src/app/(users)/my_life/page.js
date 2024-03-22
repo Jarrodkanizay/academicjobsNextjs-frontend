@@ -15,9 +15,9 @@ import TextRotatorBanner from '@/components/TextRotatorBanner';
 export default function Page() {
   const { data: session } = useSession();
 
-  const { id, image, name, email, uerRole } = session.user
+  const { id, image, name, email, uerRole } = session.user;
 
-  console.log("mylife: session", session)
+  console.log('mylife: session', session);
 
   const testID = 1;
   return (
@@ -38,14 +38,13 @@ export default function Page() {
             researchPhilosophy=""
             qualifications={[]}
             profileStrength={30}
-            location="Add your location here."
+            location=""
             rank={3}
-            jobTitle="Add your job title here."
-            organization="Add your organization here."
-              avatar={image || '/favicon.png'}
+            jobTitle=""
+            organization=""
+            avatar={image || '/favicon.png'}
             wavesOn={true}
             bgColor="custom-background"
-        
           />
         )}
 
