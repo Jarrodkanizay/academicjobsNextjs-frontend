@@ -30,6 +30,7 @@ type UserProps = {
   wavesOn?: boolean;
   bgColor?: string;
   savedJobs?: [];
+  favorites?: [];
 };
 
 export default function Profile({
@@ -50,7 +51,7 @@ export default function Profile({
   avatar = '/placeholders/generic-headshot.png',
   wavesOn = true,
   bgColor = 'custom-background',
-  savedJobs = [],
+  favorites = [],
 }: UserProps) {
   if (id === -1) {
     firstName = 'Jane';
@@ -273,6 +274,35 @@ export default function Profile({
               </button>
             </div>
           </div>
+
+          <table>
+            <tbody>
+              <tr className="font-bold border-b-2">
+                <td>Id</td>
+                <td>Title</td>
+                <td>Company Name</td>
+              </tr>
+              {favorites?.length > 0 &&
+                favorites.map(
+                  (
+                    {
+                      jobId,
+                      job: {
+                        title,
+                        employer: { company_name },
+                      },
+                    },
+                    i
+                  ) => (
+                    <tr className=" border-b border-black-1" key={i}>
+                      <td className="w-[100px]">{jobId}</td>
+                      <td className="w-[300px]">{title}</td>
+                      <td className="w-[300px]">{company_name}</td>
+                    </tr>
+                  )
+                )}
+            </tbody>
+          </table>
         </div>
 
         <div className="jobs_panel">

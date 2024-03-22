@@ -36,7 +36,7 @@ export default function Page() {
     },
     staleTime: 0,
   });
-  const testID = -1;
+  const testID = 1;
   return (
     <main>
       <TextRotatorBanner />
@@ -62,10 +62,11 @@ export default function Page() {
             avatar="/users/avatar.jpg"
             wavesOn={true}
             bgColor="custom-background"
+            favorites={favorites}
           />
         )}
 
-        <div className=" mx-auto max-w-5xl  flex flex-col  ">
+        {/* <div className="mx-auto max-w-5xl flex flex-col">
           <table>
             <tbody>
               <tr className="font-bold border-b-2">
@@ -94,7 +95,7 @@ export default function Page() {
                 )}
             </tbody>
           </table>
-        </div>
+        </div> */}
       </section>
     </main>
   );
