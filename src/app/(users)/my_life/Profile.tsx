@@ -26,6 +26,7 @@ type UserProps = {
   avatar?: string;
   wavesOn?: boolean;
   bgColor?: string;
+  savedJobs?: [];
 };
 
 const SimpleCard = ({
@@ -46,6 +47,7 @@ const SimpleCard = ({
   avatar = '/placeholders/generic-headshot.png',
   wavesOn = true,
   bgColor = 'custom-background',
+  savedJobs = [],
 }: UserProps) => {
   if (id === -1) {
     firstName = 'Jane';
