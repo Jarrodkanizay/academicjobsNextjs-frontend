@@ -60,7 +60,7 @@ const Toolbar = ({ editor, content }: Props) => {
         <button
           onClick={(e) => {
             e.preventDefault();
-            editor.chain().focus().toggleUnderline().run();
+            editor.chain().focus().run();
           }}
           className={
             editor.isActive("underline")

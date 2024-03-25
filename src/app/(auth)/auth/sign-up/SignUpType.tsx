@@ -8,6 +8,7 @@ type SignUpTypeProps = {
   btnLink?: string;
   btnSecondaryText?: string;
   btnSecondaryLink?: string;
+  target?: string;
 };
 
 const SimpleCard = ({
@@ -18,6 +19,7 @@ const SimpleCard = ({
   btnLink = '/auth/signup',
   btnSecondaryText = '',
   btnSecondaryLink = '',
+  target = '_self',
 }) => {
   return (
     <div className="card max-w-96 bg-white shadow-xl">
@@ -39,7 +41,7 @@ const SimpleCard = ({
               {btnSecondaryText}
             </a>
           ) : null}
-          <a className="btn btn-aj" href={btnLink}>
+          <a className="btn btn-aj" href={btnLink} target={target}>
             {btnText}
           </a>
         </div>
