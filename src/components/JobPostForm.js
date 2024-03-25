@@ -11,6 +11,7 @@ import Image from 'next/image';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import Speedo from '@/components/icons/Speedo';
+import Tiptap from './Tiptap'
 
 const stripeLink = {
   JobElephant: 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
@@ -29,6 +30,11 @@ const stripeLink = {
   USA: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=usa',
 };
 const JobPostForm = ({ partner, region = 'USA' }) => {
+  const [content1, setContent1] = useState ('')
+  const handleContentChange = (reason) => {
+    //setContent(reason)
+    setValue('06_JobPost', reason);
+  }
   const [regionSelected, setRegion] = useState(region);
 
   const [standardMode, setStandardMode] = useState(true);
@@ -104,7 +110,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
   const onSubmit = async (data) => {
     // e.preventDefault();
     // alert()
-    console.log('data', data);
+    console.log('==========data', data);
     mutation.mutate({
       ...data,
       '00_formSource': `WOO HOO, ring the bell, WE JUST GOT ANOTHER JOB LISTING from the ${partnerName} Post a Job Page`,
@@ -347,6 +353,15 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                     placeholder="Type your message here."
                     {...register('05_Notes')}
                   ></textarea>
+                </label>
+                <label className="form-control">
+                  <span className="label-text text-xs pb-1">
+                    Copy/paste your Job Post here
+                  </span>
+                  <Tiptap
+                    content={content}
+                    onChange={(newContent) => handleContentChange(newContent)}
+                  />
                 </label>
                 <div className="flex gap-4">
                   <label htmlFor="creditCard" className="label cursor-pointer">
