@@ -1227,36 +1227,36 @@ const nextConfig = {
                   destination: '/jobs',
                   permanent: true,
                 },
-                {
-                  source: '/Global/hr-jobs',
-                  destination: '/jobs',
-                  permanent: true,
-                },
-                {
-                  source: '/Global/faculty',
-                  destination: '/jobs',
-                  permanent: true,
-                },
-                {
-                  source: '/Global/phd',
-                  destination: '/jobs',
-                  permanent: true,
-                },
-                {
-                  source: '/Global/executive',
-                  destination: '/jobs',
-                  permanent: true,
-                },
-                {
-                  source: '/Global/graduate',
-                  destination: '/jobs',
-                  permanent: true,
-                },
-                {
-                  source: '/Global/staff-jobs',
-                  destination: '/jobs',
-                  permanent: true,
-                },
+                // {
+                //   source: '/Global/hr-jobs',
+                //   destination: '/jobs',
+                //   permanent: true,
+                // },
+                // {
+                //   source: '/Global/faculty',
+                //   destination: '/jobs',
+                //   permanent: true,
+                // },
+                // {
+                //   source: '/Global/phd',
+                //   destination: '/jobs',
+                //   permanent: true,
+                // },
+                // {
+                //   source: '/Global/executive',
+                //   destination: '/jobs',
+                //   permanent: true,
+                // },
+                // {
+                //   source: '/Global/graduate',
+                //   destination: '/jobs',
+                //   permanent: true,
+                // },
+                // {
+                //   source: '/Global/staff-jobs',
+                //   destination: '/jobs',
+                //   permanent: true,
+                // },
                 {
                   source: '/jobSearch1/school-psychology/',
                   destination: '/jobs',
