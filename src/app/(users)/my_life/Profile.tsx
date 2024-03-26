@@ -10,7 +10,7 @@ import Link from 'next/link';
 // import JobSearchBox2 from '@/components/JobSearchBox2';
 // import SearchResults from '@/components/SearchResults';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 import { Span } from 'next/dist/trace';
 type UserProps = {
   id: number;

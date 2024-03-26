@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { BsFillShareFill } from 'react-icons/bs';
 import { useSearchParams } from 'next/navigation';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 import TalentPool from '@/components/TalentPoolCTA';
 const Job = () => {
   const searchParams = useSearchParams();
@@ -134,7 +134,7 @@ const Job = () => {
         <div className="job-content">
           <div dangerouslySetInnerHTML={{ __html: description }} />
         </div>
-        <TalentPool  />
+        <TalentPool />
       </article>
       {new Date(expiration_date) < new Date() && expiration_date && (
         <div className="bg-opacity-50 bg-red-500 text-white text-4xl px-8 py-8 rounded-full absolute top-[200px] left-[50%] transform -translate-x-1/2 -translate-y-1/2 rotate-45 skew-y-0">
