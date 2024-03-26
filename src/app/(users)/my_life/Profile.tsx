@@ -232,7 +232,7 @@ export default function Profile({
         className={`${wavesOn ? 'mt-[-96px]' : ''}
 `}
       >
-        <h2 className="profile">Hi {firstName}</h2>
+        <h2 className="profile">Hi {email}</h2>
         <div className="flex gap-6">
           <DashboardCard
             title="Saved Jobs"
