@@ -5,11 +5,11 @@ import FAQ from '@/components/FAQ';
   export const metadata: Metadata = {
     // title: 'About', //Option 1 replaces the %s in layout.tsx
     title: {
-      absolute: 'FAQ Academic Jobs Online', //Option 2 overrides the title in layout.tsx
+      absolute: 'FAQ Academic Research Jobs', //Option 2 overrides the title in layout.tsx
     },
     description:
-      'Discover academic jobs at all universities today! Explore your next academic positions through visiting our higher ed jobs, with new academic jobs added daily.',
-    keywords: 'FAQ academicjobs, academicjobs FAQ, Frequently Asked Questions',
+      'Find academic Research jobs at all universities today! Explore your next academic Research positions through visiting our higher ed jobs, with new academic jobs added daily.',
+    keywords: 'FAQ academicjobs Research, academicjobs FAQ, Frequently Asked Questions',
   };
   export default function myPage() {
     return (

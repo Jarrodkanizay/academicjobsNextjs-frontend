@@ -100,7 +100,7 @@ const nextConfig = {
       },
       {
         source: '/jobs/student-casual',
-        destination: '/student/casual',
+        destination: '/student-jobs/casual',
         permanent: true,
       },
       {
@@ -135,7 +135,7 @@ const nextConfig = {
       },
       {
         source: '/jobs/student-full-time',
-        destination: '/student/full-time',
+        destination: '/student-jobs/full-time',
         permanent: true,
       },
       {
@@ -150,7 +150,7 @@ const nextConfig = {
       },
       {
         source: '/jobs/student-part-time',
-        destination: '/student/part-time',
+        destination: '/student-jobs/part-time',
         permanent: true,
       },
       {
