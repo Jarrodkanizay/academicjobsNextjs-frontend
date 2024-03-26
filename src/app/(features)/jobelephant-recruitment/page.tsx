@@ -468,7 +468,123 @@ export default function Page() {
                 </ul>
               </div>
 
-           
+              <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/vice-president-for-finance-strategy/98391"
+                    className="text-blue-500 font-bold"
+                  >
+                    Vice President of Finance and Operations
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">South Central College</Link>
+                  </li>
+                  <li>
+                    <Link href="">North Mankato, MN 56003, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 2, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=5102550"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/indigenous-research-officer/102709"
+                    className="text-blue-500 font-bold"
+                  >
+                    Research Assistant Professor - 525877
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of Hong Kong</Link>
+                  </li>
+                  <li>
+                    <Link href="">Pok Fu Lam, Hong Kong</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 18, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://jobs.hku.hk/en/job/525877/research-assistant-professor"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/indigenous-research-officer/101449"
+                    className="text-blue-500 font-bold"
+                  >
+                    Director - Continuing Education
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of Texas Permian Basin</Link>
+                  </li>
+                  <li>
+                    <Link href="">Odessa, TX 79762, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 20, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=5119689"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/indigenous-research-officer/101433"
+                    className="text-blue-500 font-bold"
+                  >
+                    Dean - College of Education
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of New South Wales (UNSW)</Link>
+                  </li>
+                  <li>
+                    <Link href="">Odessa, TX 79762, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 20, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=5119737"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
             
               <div className="column">
                 <ul className="">

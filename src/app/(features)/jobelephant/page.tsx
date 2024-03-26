@@ -374,7 +374,7 @@ export default function Page() {
                 </ul>
               </div>
             </div>
-            <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
+       
               <div className="column">
                 <ul className="">
                   <li className="mb-1 mt-4 hover:underline">
@@ -465,8 +465,6 @@ export default function Page() {
                   </ul>
                 </ul>
               </div>
-
-           
             
               <div className="column">
                 <ul className="">
@@ -499,7 +497,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-        </div>
+       
       </main>
     </>
   );
