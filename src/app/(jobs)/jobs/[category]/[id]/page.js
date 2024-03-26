@@ -73,6 +73,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
     featured,
     clientType,
     headlineOnly,
+    favoriteJobYN,
     employer: {
       company_name,
       logo,
@@ -139,7 +140,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                 >
                   <BsFillShareFill size={32} color="#2867B2" />
                 </a>
-                <FavoriteButton jobId={params.id} />
+                <FavoriteButton jobId={params.id} favoriteJobYN={favoriteJobYN} />
                 {/* <img
                   src="/icons/heart.svg"
                   width="44"
