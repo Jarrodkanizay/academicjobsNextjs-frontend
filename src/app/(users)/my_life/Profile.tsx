@@ -78,6 +78,31 @@ export default function Profile({
     },
     staleTime: 0,
   });
+
+  /* Dummy data for testing */
+
+  if (email === 'dan@zygadox.com') {
+    firstName = 'Dan';
+    lastName = 'Grant';
+    jobTitle = 'Senior Software Engineer';
+    organization = 'Academic Jobs';
+  }
+  if (email === 'zander@zygadox.com') {
+    firstName = 'Zander';
+    lastName = 'Grant';
+    jobTitle = 'Senior Constable - Police Office Guard';
+    organization = 'Victoria Police';
+  }
+  if (
+    email === 'jarrod@academicjobs.com' ||
+    email === 'jarrod@kanizay.com' ||
+    email === 'jazzakan@gmail.com'
+  ) {
+    firstName = 'Jarrod';
+    lastName = 'Kanizay';
+    jobTitle = 'CEO';
+    organization = 'Post My Job';
+  }
   if (id === -1) {
     firstName = 'Jane';
     lastName = 'Doe';
@@ -116,7 +141,7 @@ export default function Profile({
       'Awarded XX for outstanding research/teaching (optional)',
       'Active member of professional organizations (e.g., The Oceanography Society, The Marine Technology Society)',
     ];
-    profileStrength = 30;
+    profileStrength = 60;
     location = 'Boston, MA, USA';
     rank = 5;
     jobTitle = 'Department of Ocean Exploration & Marine Biology';
@@ -125,28 +150,8 @@ export default function Profile({
     wavesOn = true;
     bgColor = 'custom-background';
   }
-  if (email === 'dan@zygadox.com') {
-    firstName = 'Dan';
-    lastName = 'Grant';
-    jobTitle = 'Senior Software Engineer';
-    organization = 'Academic Jobs';
-  }
-  if (email === 'zander@zygadox.com') {
-    firstName = 'Zander';
-    lastName = 'Grant';
-    jobTitle = 'Senior Constable - Police Office Guard';
-    organization = 'Victoria Police';
-  }
-  if (
-    email === 'jarrod@academicjobs.com' ||
-    email === 'jarrod@kanizay.com' ||
-    email === 'jazzakan@gmail.com'
-  ) {
-    firstName = 'Jarrod';
-    lastName = 'Kanizay';
-    jobTitle = 'CEO';
-    organization = 'Post My Job';
-  }
+  /* End Dummy data for testing */
+
   return (
     <>
       <section className={`${bgColor} full-width mb-16`}>

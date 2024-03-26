@@ -10,7 +10,8 @@ const page = () => {
         src="/sign-up/employers-recruiters.png"
         btnText="Sign up as an employer"
         // btnLink="https://www.iloveacademicjobs.com/signup"
-        btnLink="/under-construction"
+        btnLink="https://www.iloveacademicjobs.com/aj-signup"
+        target="_blank"
         // btnSecondaryText="Source Talent"
         // btnSecondaryLink="/academic-talent-pool"
       />

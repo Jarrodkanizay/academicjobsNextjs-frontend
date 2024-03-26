@@ -18,7 +18,6 @@ import SigninButton from '@/components/SigninButton';
 import Button from '@/shadcn/ui/button';
 
 export default function Header() {
-  
   // const { fetchLocation } = useLocation();
   // useEffect(() => {//
   //   const getLocation = async () => {
@@ -98,7 +97,10 @@ export default function Header() {
             </Link>
           )
         ) : (
-          <Link href={`/${countryMappings2[region.toLowerCase()].url}`} className={`static-logo mobile`}>
+          <Link
+            href={`/${countryMappings2[region.toLowerCase()].url}`}
+            className={`static-logo mobile`}
+          >
             <LogoAJ width={270} height={60} />{' '}
           </Link>
         )}
@@ -117,7 +119,10 @@ export default function Header() {
       <header className={`header ${isNavOpen ? 'show-menu shadow-xl' : ''} `}>
         <nav>
           {pathname === '' ? null : (
-            <Link href={`/${countryMappings2[region.toLowerCase()].url}`} className="hide-mobile static-logo mr-4">
+            <Link
+              href={`/${countryMappings2[region.toLowerCase()].url}`}
+              className="hide-mobile static-logo mr-4"
+            >
               <LogoAJ width={270} height={60} />{' '}
             </Link>
           )}
@@ -130,7 +135,9 @@ export default function Header() {
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url={`/${countryMappings2[region.toLowerCase()].url}/jobs-by-top-universities`}
+            url={`/${
+              countryMappings2[region.toLowerCase()].url
+            }/jobs-by-top-universities`}
             icon="/upward-arrow.svg"
             navLink="Top Universities"
             forceButtonClass="border-b hover:border-amber-500 "
@@ -188,15 +195,11 @@ export default function Header() {
           </div> */}
           {isNavOpen && (
             <>
+              <div className="mt-6 md:mt-0 justify-center ml-4">
+                <SigninButton />
+              </div>
 
-<div className="mt-6 md:mt-0 justify-center ml-4">
-            <SigninButton />
-          </div>
-
-              <a
-                className="btn btn-aj w-full mt-4"
-                href="/jobs"
-              >
+              <a className="btn btn-aj w-full mt-4" href="/jobs">
                 Search Globally
               </a>
               <details class="w-full text-center bg-gray-300 open:bg-[amber-200] duration-300 rounded-3xl font-bold shadow-xl">
@@ -227,8 +230,9 @@ export default function Header() {
           )}
           <div className="ml-auto post-a-job-button ">
             <NavItem
-              url={`/${countryMappings2[region.toLowerCase()].url
-                }/recruitment/`}
+              url={`/${
+                countryMappings2[region.toLowerCase()].url
+              }/recruitment/`}
               icon="/post-a-job-icon.svg"
               navLink="Post a Job"
               forceLinkClass="ml-auto"
@@ -236,11 +240,10 @@ export default function Header() {
               onClick={() => setIsNavOpen(false)}
             />
           </div>
-         
+
           <div className="mt-8 md:mt-0 justify-center ml-4 hidden md:block">
             <SigninButton />
           </div>
-
         </nav>
       </header>
     </>
