@@ -9,7 +9,7 @@ import JobSearchBox3 from '@/components/JobSearchBox3';
 import { filterType } from '@/utils/data';
 import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 
 export default function Page() {
   const searchParams = useSearchParams();
@@ -31,6 +31,16 @@ export default function Page() {
   const [filter1, setfilter] = useState([]);
   const [filter2, setfilter2] = useState([]);
   const [page, setPage] = useState(0);
+  const [metaTitle, setMetaTitle] = useState('');
+  const [metaDescription, setMetaDescription] = useState('');
+
+  // Fetch data and set meta tags based on the fetched data
+  useEffect(() => {
+    // Example: Fetch meta data based on search query or any other relevant data
+    // For now, setting dummy values
+    setMetaTitle(`Search Results for "${q}" in "${l}"`);
+    setMetaDescription(`Search for job results related to "${q}" in "${l}"`);
+  }, [q, l]);
   useEffect(() => {
     console.log('===============================', filter1);
     // if (filter1.some(obj => obj.filter.includes("Executive "))) {
@@ -43,6 +53,7 @@ export default function Page() {
     // } else {
     //   setfilterTypes(p => ({ ...p, HRJobs: false }))
     // }
+
     setfilterTypes((p) => ({ ...p, ExecutiveJobs: false }));
     setfilterTypes((p) => ({ ...p, HRJobs: false }));
     setfilterTypes((p) => ({ ...p, AdministrationSupportJobs: false }));
@@ -120,6 +131,8 @@ export default function Page() {
   ///console.log('router.query', searchParams);
   return (
     <>
+      <title>{metaTitle}</title>
+      <meta name="description" content={metaDescription} />
       <main>
         {/* TODO: Add this to the page…
     
@@ -174,7 +187,7 @@ export default function Page() {
                         (_, index) => index !== i
                       );
                       setPage(0);
-                      
+
                       setfilter(updatedFilter);
                       setCategory("")
                       //dispatch(setfilter(updatedFilter));
@@ -194,11 +207,10 @@ export default function Page() {
               ) => (
                 <button
                   key={i}
-                  className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${
-                    category === filterType
+                  className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
                       ? 'bg-orange-500 text-white border-orange-500'
                       : 'bg-white border-gray-500'
-                  }
+                    }
                   ${showYN ? 'block' : 'hidden'}
                   `}
                   onClick={() => {
@@ -229,11 +241,10 @@ export default function Page() {
                 ) => (
                   <button
                     key={i}
-                    className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${
-                      category === filterType
+                    className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
                         ? 'bg-orange-500 text-white border-orange-500'
                         : 'bg-white border-gray-500'
-                    }
+                      }
                   ${showYN ? 'block' : 'hidden'}
                   `}
                     onClick={() => {
@@ -253,48 +264,48 @@ export default function Page() {
             </div>
           </details>
 
-        {isShowFilter && (
-          <div className="grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
-            {filters?.length > 0 && // 低层小目录b
-              filters.map(({ filter, job_count }, i) => (
+          {isShowFilter && (
+            <div className="grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
+              {filters?.length > 0 && // 低层小目录b
+                filters.map(({ filter, job_count }, i) => (
+                  <button
+                    key={i}
+                    className="text-left text-gray-500 text-sm truncate"
+                    onClick={() => {
+                      setPage(0);
+                      setfilter([...filter1, { category, filter }]);
+                      //setIsShowFilter(false);
+                    }}
+                  >{`${filter ? filter : 'Others'}  (${job_count})`}</button>
+                ))}
+              {filters?.length == 23 && (
                 <button
-                  key={i}
-                  className="text-left text-gray-500 text-sm truncate"
+                  className="btn btn-primary btn-xs"
                   onClick={() => {
-                    setPage(0);
-                    setfilter([...filter1, { category, filter }]);
-                    //setIsShowFilter(false);
+                    //navigate(`/advanced-search/${category}`);
+                    navigate(`/advanced-search/${category}`, {
+                      state: { filter1 },
+                    });
                   }}
-                >{`${filter ? filter : 'Others'}  (${job_count})`}</button>
-              ))}
-            {filters?.length == 23 && (
-              <button
-                className="btn btn-primary btn-xs"
-                onClick={() => {
-                  //navigate(`/advanced-search/${category}`);
-                  navigate(`/advanced-search/${category}`, {
-                    state: { filter1 },
-                  });
-                }}
-              >
-                Show All
-              </button>
-            )}
-          </div>
-        )}
-      </div>
-      <section class="jobs_grid job_post_search_container">
-        <div class="filters_panel">
-          <div class="filters_content">
-            <JobFilter />
-          </div>
+                >
+                  Show All
+                </button>
+              )}
+            </div>
+          )}
         </div>
-        <div class="listings_panel">
-          <div class="listings_content">
-            <SearchResults1 q={{ q: q, l: l || '', filter1 }} />
+        <section class="jobs_grid job_post_search_container">
+          <div class="filters_panel">
+            <div class="filters_content">
+              <JobFilter />
+            </div>
           </div>
-        </div>
-      </section>
+          <div class="listings_panel">
+            <div class="listings_content">
+              <SearchResults1 q={{ q: q, l: l || '', filter1 }} />
+            </div>
+          </div>
+        </section>
 
         <div className="max-w-4xl mx-auto py-8"></div>
 

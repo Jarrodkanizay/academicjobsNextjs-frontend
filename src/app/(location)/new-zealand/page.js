@@ -145,7 +145,7 @@ export default function Page() {
           <NZ heading="" />
         </div>
 
-        <h2 className="underline-full">The University of Auckland Jobs</h2>
+        {/* <h2 className="underline-full">The University of Auckland Jobs</h2>
         <div className="cate-group section23 ">
           <div className="widget__text-block">
             <div className="faculty-container  flex flex-wrap px-7 md:gap-2 py-2  pb-16 text-black">
@@ -220,7 +220,7 @@ export default function Page() {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -243,14 +243,14 @@ export default function myPage() {
         <li className="flex    ">
           <a href="/faculty/school-psychology/">school psychology</a>
         </li>
-        <li className="flex    ">
+        {/* <li className="flex    ">
           <a href="/faculty/special/">special</a>
-        </li>
+        </li> */}
         <li className="flex    ">
           <a href="/faculty/teacher-education/">teacher education</a>
         </li>
         <li className="flex    ">
-          <a href="/faculty/teacher-education-early-childhood/">
+          <a href="/faculty/teacher-education-in-early-childhood/">
             teacher education early childhood
           </a>
         </li>

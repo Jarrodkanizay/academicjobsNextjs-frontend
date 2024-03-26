@@ -5,7 +5,7 @@ import InputBlock2 from './InputBlock2';
 // import InputBlock from './InputBlock';
 import { useForm } from 'react-hook-form';
 import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 import FormSubmissionMessage from './FormSubmissionMessage';
 import Link from 'next/link';
 
@@ -277,11 +277,10 @@ const SubscribeForm = ({
         <div className="text-right">
           <button
             type="submit"
-            className={`btn text-white ${
-              formType === 'standard'
+            className={`btn text-white ${formType === 'standard'
                 ? 'bg-aj join-item rounded-r-full'
                 : 'btn-aj mt-8'
-            }`}
+              }`}
           >
             {buttonText}
           </button>

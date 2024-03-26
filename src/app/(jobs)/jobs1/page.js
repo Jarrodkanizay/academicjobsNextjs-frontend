@@ -9,7 +9,7 @@ import JobSearchBox2 from '@/components/JobSearchBox2';
 import { filterType } from "@/utils/data";
 import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 //import { useRouter } from 'next/router';
 //import { useRouter } from 'next/navigation';
 // export const metadata = {
