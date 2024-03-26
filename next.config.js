@@ -933,11 +933,11 @@ const nextConfig = {
               destination: "/jobs",
               permanent: true
           },
-          {
-              source: "/USA/faculty",
-              destination: "/usa/faculty",
-              permanent: true
-          },
+          // {
+          //     source: "/USA/faculty",
+          //     destination: "/usa/faculty",
+          //     permanent: true
+          // },
           // {
           //     source: "/russelgroup",
           //     destination: "/jobs",

@@ -11,6 +11,7 @@ import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
 
+
 export default function Page() {
   const searchParams = useSearchParams();
   //const allSearchParams = Object.fromEntries(searchParams1);
@@ -129,6 +130,7 @@ export default function Page() {
   //const filter1 = useSelector((state) => state.posts.filter1);
   //alert(location?.state?.filter1)
   ///console.log('router.query', searchParams);
+  
   return (
     <>
       <title>{metaTitle}</title>
