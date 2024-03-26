@@ -31,6 +31,16 @@ export default function Page() {
   const [filter1, setfilter] = useState([]);
   const [filter2, setfilter2] = useState([]);
   const [page, setPage] = useState(0);
+  const [metaTitle, setMetaTitle] = useState('');
+  const [metaDescription, setMetaDescription] = useState('');
+
+  // Fetch data and set meta tags based on the fetched data
+  useEffect(() => {
+    // Example: Fetch meta data based on search query or any other relevant data
+    // For now, setting dummy values
+    setMetaTitle(`Search Results for "${q}" in "${l}"`);
+    setMetaDescription(`Search for job results related to "${q}" in "${l}"`);
+  }, [q, l]);
   useEffect(() => {
     console.log('===============================', filter1);
     // if (filter1.some(obj => obj.filter.includes("Executive "))) {
@@ -43,6 +53,7 @@ export default function Page() {
     // } else {
     //   setfilterTypes(p => ({ ...p, HRJobs: false }))
     // }
+
     setfilterTypes((p) => ({ ...p, ExecutiveJobs: false }));
     setfilterTypes((p) => ({ ...p, HRJobs: false }));
     setfilterTypes((p) => ({ ...p, AdministrationSupportJobs: false }));
@@ -120,6 +131,8 @@ export default function Page() {
   ///console.log('router.query', searchParams);
   return (
     <>
+      <title>{metaTitle}</title>
+      <meta name="description" content={metaDescription} />
       <main>
         {/* TODO: Add this to the page…
     
