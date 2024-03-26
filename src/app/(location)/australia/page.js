@@ -201,7 +201,7 @@ export default async function myPage() {
         </ul>
       </div>
       <div className=" mt-4 ">
-        <ul className=" flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
+        {/* <ul className=" flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
           <li>
             <Link href="/online"> Online </Link>
           </li>
@@ -217,7 +217,7 @@ export default async function myPage() {
           <li>
             <Link href="/jobs?l=&q=casual"> Casual</Link>
           </li>
-        </ul>
+        </ul> */}
       </div>
       {/* <a href="/the-academic-rankings">
         <img
@@ -328,7 +328,7 @@ export default async function myPage() {
                         Queensland University of Technology (QUT)
                       </Link>
                     </li>
-                    <ul className="innerUL pl-4 pt-2 text-gray-400">
+                    {/* <ul className="innerUL pl-4 pt-2 text-gray-400">
                       <li>
                         <Link href="/jobs?l=&q=QUT-lecturer">
                           QUT Lecturing Jobs
@@ -359,7 +359,7 @@ export default async function myPage() {
                           QUT Human Resources
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </ul>
                 </div>
                 <div className="column">
@@ -379,7 +379,7 @@ export default async function myPage() {
                         Bond University
                       </Link>
                     </li>
-                    <ul className="innerUL pl-4 pt-2 text-gray-400">
+                    {/* <ul className="innerUL pl-4 pt-2 text-gray-400">
                       <li>
                         <Link href="/jobs?l=&q=bond-lecturer">
                           Bond Lecturing Jobs
@@ -410,7 +410,7 @@ export default async function myPage() {
                           Bond Human Resources
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </ul>
                 </div>
                 <div className="column">
@@ -430,7 +430,7 @@ export default async function myPage() {
                         University of Adelaide
                       </Link>
                     </li>
-                    <ul className="innerUL pl-4 pt-2 text-gray-400">
+                    {/* <ul className="innerUL pl-4 pt-2 text-gray-400">
                       <li>
                         <Link href="/jobs?l=&q=Adelaide">
                           Adelaide Lecturing Jobs
@@ -461,7 +461,7 @@ export default async function myPage() {
                           Adelaide Human Resources
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </ul>
                 </div>
                 <div className="column">
@@ -481,7 +481,7 @@ export default async function myPage() {
                         University of Western Australia
                       </Link>
                     </li>
-                    <ul className="innerUL pl-4 pt-2 text-gray-400">
+                    {/* <ul className="innerUL pl-4 pt-2 text-gray-400">
                       <li>
                         <Link href="/jobs?l=&q=western">
                           UWA Lecturing Jobs
@@ -508,7 +508,7 @@ export default async function myPage() {
                           UWA Human Resources
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </ul>
                 </div>
               </div>
