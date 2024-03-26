@@ -3324,7 +3324,16 @@ const nextConfig = {
                             destination: '/jobs',
                             permanent: true,
                         },
-                        
+                        {
+                          source: '/job/53257/post-doctoral-fellow-in-computer-science-at-t%C3%A9l%C3%A9com-paris-12-months/',
+                          destination: '/jobs',
+                          permanent: true,
+                      },
+                      {
+                          source: '/employers/universidade-federal-de-s%C3%A3o-paulo/11526',
+                          destination: '/jobs',
+                          permanent: true,
+                      },
                           
                             
                               
