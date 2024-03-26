@@ -1,4 +1,14 @@
 import SimpleCard from './SignUpType';
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  // title: 'About', //Option 1 replaces the %s in layout.tsx
+  title: {
+    absolute: 'Academic Jobs Sign Up', //Option 2 overrides the title in layout.tsx
+  },
+  description:
+    'Sign up with Academic Jobs to easily browse and save our current job vacancies, or Sign up as an recruiter to purcahse and post your jobs. ',
+  keywords: 'Academic Jobs Sign Up',
+};
 
 const page = () => {
   return (

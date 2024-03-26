@@ -7,7 +7,7 @@ import JobFilter from '@/components/JobFilter';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: '  Academic Executive Jobs', //Option 2 overrides the title in layout.tsx
+    absolute: '  Academic Jobs Online', //Option 2 overrides the title in layout.tsx
   },
   description:
     'If you are looking for academic jobs online, you can browse through our job board to find the latest opportunities in this flexible and rewarding field.   ',

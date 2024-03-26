@@ -3,10 +3,14 @@
 'use client';
 import React from 'react';
 import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 import { useSession } from 'next-auth/react';
-import { CloudCog } from 'lucide-react';
-export default function FavoriteButton({ jobId }) {
+import { useRouter } from 'next/navigation'
+
+
+ 
+export default function FavoriteButton({ jobId, favoriteJobYN }) {
+  const router = useRouter();
   const { data: session } = useSession();
   console.log("FavoriteButtonsession", session)
   const mutation = useMutation({
@@ -16,13 +20,15 @@ export default function FavoriteButton({ jobId }) {
   });
   return (
     <img
-      src="/icons/heart.svg"
+      src={favoriteJobYN ? "/icons/heart.svg" : "/icons/heart-outline.svg"}
       width="44"
       height="44"
       alt="Add this Job Post to Favorites"
       onClick={() => {
         console.log(jobId, session.user.id)
-        mutation.mutate({ jobId, userId: session.user.id, mode: 'add' });
+        const mode = favoriteJobYN ? "remove" : "add"
+        mutation.mutate({ jobId, userId: session.user.id, mode });
+        router.refresh();
       }}
     />
   );

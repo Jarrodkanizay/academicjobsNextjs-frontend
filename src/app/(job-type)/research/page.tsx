@@ -1,18 +1,18 @@
-import type { Metadata } from 'next';
+
 import Link from 'next/link';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import research from '@/data/research.json';
-
+import type { Metadata } from 'next';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: '  Academic Lecturer Jobs', //Option 2 overrides the title in layout.tsx
+    absolute: '  Academic Research Jobs', //Option 2 overrides the title in layout.tsx
   },
   description:
-    'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',
-  keywords: 'Academic Lecturer Jobs. Lecturer positions',
+    'To find out more about the academic Research jobs available in higher education, browse our list of current Research job vacancies on this page. ',
+  keywords: 'Academic Research Jobs. Research positions',
 };
 export default function myPage() {
   return (

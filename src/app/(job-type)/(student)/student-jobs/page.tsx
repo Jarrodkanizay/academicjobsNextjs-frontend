@@ -6,7 +6,7 @@ import JobFilter from '@/components/JobFilter';
 import HeroBanner from '@/components/HeroBanner';
 
 export const metadata: Metadata = {
-  title: 'Student Jobs on Campus', //Option 1 replaces the %s in layout.tsx
+  title: 'University Student Jobs', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '', //Option 2 overrides the title in layout.tsx
   // },
@@ -62,7 +62,7 @@ export default function myPage() {
           btnPrimaryText="Learn About Student Jobs"
           btnPrimaryURL="/student-jobs-on-campus"
           btnSecondaryText="Student FAQ"
-          btnSecondaryURL="/student/faq/"
+          btnSecondaryURL="/student-jobs/faq/"
           src="/student-jobs-on-campus/student-working-in-campus-cafe.jpg"
           alt="Student Jobs on Campus can be life changing"
           // bgColorclassName="bg-sky-200"
@@ -74,7 +74,7 @@ export default function myPage() {
             Jump the queue and find student jobs on campus today. Join our
             Income Booster program to get notified of positions immediately.
             <Link
-              href="/student/income-booster"
+              href="/student-jobs/income-booster"
               className="btn btn-aj btn-block mt-4"
             >
               Join Income Booster

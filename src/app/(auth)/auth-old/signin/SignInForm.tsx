@@ -111,9 +111,9 @@ const SignInForm = (props: Props) => {
               Sign up
             </Link>
           </p>
-          <p className="text-center text-sm text-blue-500 mt-2">
+          {/* <p className="text-center text-sm text-blue-500 mt-2">
             <Link href={'/auth/forgotPassword'}>Forgot Your Password?</Link>
-          </p>
+          </p> */}
         </Form>
       </Card>
     </div>
