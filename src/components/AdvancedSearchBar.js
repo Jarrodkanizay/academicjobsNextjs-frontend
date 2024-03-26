@@ -3,7 +3,7 @@ import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { useSearchParams } from 'next/navigation';
 import { filterType } from "@/utils/data";
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 
 export default function AdvancedSearchBar() {
   const searchParams = useSearchParams();
@@ -24,7 +24,7 @@ export default function AdvancedSearchBar() {
     isPlaceholderData: isPlaceholderDataQty,
   } = useQuery({
     queryKey: ['filter', { category, filter1, q, l }],
-    queryFn: async () => { 
+    queryFn: async () => {
       const response = await BaseApi.post('/filters', { category, filter1, q, l, mode: "normal" },);
       console.log(response.data);
       console.log('response.data.data', response.data.data);

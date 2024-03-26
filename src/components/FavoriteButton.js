@@ -3,7 +3,7 @@
 'use client';
 import React from 'react';
 import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 import { useSession } from 'next-auth/react';
 import { CloudCog } from 'lucide-react';
 export default function FavoriteButton({ jobId }) {

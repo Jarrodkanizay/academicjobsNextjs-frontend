@@ -4,7 +4,7 @@ import InputBlock from '@/components/forms/InputBlock';
 import SelectBlock2 from '@/components/forms/SelectBlock2';
 import { useForm } from 'react-hook-form';
 import { useMutation } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 import { useRouter } from 'next/navigation';
 import { jobElephantContacts } from '@/data/jobElephantContacts';
 import { Label } from '@/components/ui/label';

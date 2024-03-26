@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import JobList from '@/components/JobList';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 import { BsHandbag } from 'react-icons/bs';
 import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';

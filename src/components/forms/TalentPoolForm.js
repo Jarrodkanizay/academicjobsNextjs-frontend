@@ -4,7 +4,7 @@ import countries from '@/data/CountryList.json';
 import InputBlock2 from './InputBlock2';
 import { useForm } from 'react-hook-form';
 import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 import FormSubmissionMessage from './FormSubmissionMessage';
 
 const TalentPoolForm = ({

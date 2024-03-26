@@ -14,8 +14,14 @@ import { useSearchParams } from 'next/navigation';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import FavoriteButton from '@/components/FavoriteButton';
 import { StarRank } from '@/components/StarRank';
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/app/api/auth/[...nextauth]/options";
+import { baseURL } from '@/lib/store/Base'; 
 export async function generateMetadata({ params }) {
-  const job = await getJob(params.id);
+ 
+
+  const session = await getServerSession(authOptions);
+  const job = await getJob({ id: params.id, userId: session?.user.id });
   if (!job) return { title: 'not found' };
   const { title, company_name, location } = job?.data;
   return {
@@ -27,10 +33,18 @@ export async function generateMetadata({ params }) {
     },
   };
 }
-async function getJob(id) {
+//{ next: { revalidate: 0 } }
+async function getJob(data) {
+  console.log("0324========data",data)
   const response = await fetch(
-    `https://api2.sciencejobs.com.au/api/job/${id}`,
-    { next: { revalidate: 0 } }
+    `${baseURL}/getJobById1`,
+    {
+      method: 'POST', // Change method to POST
+      headers: {
+        'Content-Type': 'application/json' // Specify content type
+      },
+      body: JSON.stringify(data), // Pass data as JSON string in the body
+    }
   );
   const res = await response.json();
   // console.log(res);
@@ -38,11 +52,13 @@ async function getJob(id) {
 }
 const JobDetailPage = async ({ params, searchParams }) => {
   //const searchParams = useSearchParams();
+  const session = await getServerSession(authOptions);
+  console.log("0324========session", session)
   const active = searchParams['active'] || false;
   console.log('====444444433333333333333333333333active=====');
   console.log(searchParams);
   console.log('====active=====', active);
-  const job = await getJob(params.id);
+  const job = await getJob({ id: params.id, userId: session?.user.id });
   console.log('job', job);
   if (!job) notFound();
   const {
