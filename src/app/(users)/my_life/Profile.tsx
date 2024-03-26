@@ -172,7 +172,7 @@ export default function Profile({
             </div>
             <div>
               <StarRank ranking={rank} />
-              <h2 className="p-0 m-0 flex gap-6 mt-2">
+              <h2 className="profile p-0 m-0 flex gap-6 mt-2">
                 <span className="mt-[-6px]">
                   {firstName} {lastName}
                 </span>
