@@ -9,8 +9,8 @@ export const metadata: Metadata = {
     absolute: 'tufts university employment',
   },
   description:
-    'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',
-  keywords: 'Academic Lecturer Jobs. Lecturer positions',
+    'To find out more about the tufts university employment available in higher education, browse our list of current tufts university employment vacancies on this page. ',
+  keywords: 'tufts university employment',
 };
 export default function Page() {
   return (
@@ -65,7 +65,7 @@ export default function Page() {
             </p>
             <p className="font-bold">Join us to unleash your potential, connect with a vibrant community, embark on a transformative path towards lifelong success, and make a lasting impact in the world. </p>
             {/* <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/tufts-university/3460"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -112,7 +112,7 @@ export default function Page() {
 
 <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
       <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/tufts-university/3460"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
               Careers at Tufts 

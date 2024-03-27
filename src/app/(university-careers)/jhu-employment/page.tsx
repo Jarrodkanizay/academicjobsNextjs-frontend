@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults';
+import SearchResults1 from '@/components/SearchResults1';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import lecturer from '@/data/lecturer.json';
@@ -9,8 +10,8 @@ export const metadata: Metadata = {
     absolute: 'JHU Employment',
   },
   description:
-    'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',
-  keywords: 'Academic Lecturer Jobs. Lecturer positions',
+    'To find out more about the JHU Employment available in higher education, browse our list of current JHU Employment vacancies on this page. ',
+  keywords: 'JHU Employment',
 };
 export default function Page() {
   return (
@@ -65,7 +66,7 @@ export default function Page() {
             </p>
             <p className="font-bold">Accompany us in fulfilling your potential and contributing to a legacy of excellence in research, teaching, and service that spans generations.</p>
             {/* <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/johns-hopkins-university/3130"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -104,15 +105,15 @@ export default function Page() {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'john hopkins' || 0 }} />
+            {/* <SearchResults1 q={{ q: '', l: '' || '', filter1:'John Hopkins University'  }} /> */}
+            <SearchResults q={{ q: 'hopkins' || 0 }} />
           </div>
         </div>
       </section>
 
 <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
       <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/johns-hopkins-university/3130"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
               Careers at John Hopkins

@@ -6,11 +6,11 @@ import lecturer from '@/data/lecturer.json';
 import Link from 'next/link';
 export const metadata: Metadata = {
   title: {
-    absolute: 'Hofstra job openings',
+    absolute: 'North Eastern Jobs',
   },
   description:
-    'To find out more about the Hofstra job openings available in higher education, browse our list of current Hofstra job openings vacancies on this page. ',
-  keywords: 'Hofstra job openings',
+    'Find out more about the North Eastern Jobs available in higher education, browse our list of current North Eastern jobs vacancies on this page. ',
+  keywords: 'North Eastern Jobs',
 };
 export default function Page() {
   return (
@@ -53,19 +53,19 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              Hofstra job openings{' '}
+              North Eastern Jobs{' '}
               </span>
               <br />
             </h1>
 
             <p className="font-bold">
-            Embark on a journey of professional growth and fulfillment at Hofstra University, where we nurture talent and foster innovation. Explore diverse career opportunities tailored to your skills and aspirations, from academia to administration, research to technology. 
+            With the vast resources and expert support provided by North Eastern Jobs, you may explore countless options and receive guidance from discovery to achievement. Whether you're just starting out or want to grow, North Eastern University is your go-to partner for advice in the business sector and reaching your goals. 
 
 
             </p>
-            <p className="font-bold">Join our dynamic community dedicated to excellence and collaboration, where every voice is valued and every idea matters. Discover your potential at Hofstra University today! </p>
+            
             {/* <Link
-              href="https://www.academicjobs.com/employers/hofstra-university/3545"
+              href="https://www.academicjobs.com/employers/northeastern-university/3285"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -105,17 +105,17 @@ export default function Page() {
         <div className="listings_panel">
           <div className="listings_content">
             {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'hofstra' || 0 }} />
+            <SearchResults q={{ q: 'northwestern ' || 0 }} />
           </div>
         </div>
       </section>
 
 <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
       <Link
-              href="https://www.academicjobs.com/employers/hofstra-university/3545"
+              href="https://www.academicjobs.com/employers/northeastern-university/3285"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
-              Careers at Hofstra 
+              Careers at North Eastern
             </Link>
             </div>
 

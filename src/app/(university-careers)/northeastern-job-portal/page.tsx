@@ -6,11 +6,11 @@ import lecturer from '@/data/lecturer.json';
 import Link from 'next/link';
 export const metadata: Metadata = {
   title: {
-    absolute: 'Academic Lecturer Jobs',
+    absolute: 'Northeastern Job Portal',
   },
   description:
-    'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',
-  keywords: 'Academic Lecturer Jobs. Lecturer positions',
+    'To find out more about the Northeastern Job Portal in higher education, browse our Northeastern Job Portal vacancies on this page. ',
+  keywords: 'Northeastern Job Portal',
 };
 export default function Page() {
   return (
@@ -53,24 +53,23 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-                University Careers{' '}
+              Northeastern Job Portal{' '}
               </span>
               <br />
             </h1>
 
             <p className="font-bold">
-              The No.1 job board for lecturers, Academic Jobs, provides an
-              extensive list of opportunities for the future of your career,
-              carefully sectioning the top Higher Ed lecturing jobs to find the
-              best position for you.
+            Northeastern Job Portal has extensive resources and professional support. NorthEastern University is your go-to partner for guidance in the business world and accomplishing your objectives, regardless of whether you're just getting started or want to expand. 
+
+
             </p>
-            <p className="font-bold">Find all the best lecturing jobs here…</p>
-            <Link
-              href="/lecturer/guest-lecturing"
+            <p className="font-bold">Our committed group of career counselors and business specialists is here to offer you individualized advice, networking opportunities, and mentoring that is catered to your particular professional objectives.</p>
+            {/* <Link
+              href="https://www.academicjobs.com/employers/northeastern-university/3285"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
-            </Link>
+            </Link> */}
             <Link
               href="/academic-talent-pool"
               className="btn ml-2 btn-aj text-lg font-bold item-center justify-center text-center"
@@ -106,10 +105,21 @@ export default function Page() {
         <div className="listings_panel">
           <div className="listings_content">
             {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'lecturer' || 0 }} />
+            <SearchResults q={{ q: 'northwestern ' || 0 }} />
           </div>
         </div>
       </section>
+
+<div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
+      <Link
+              href="https://www.academicjobs.com/employers/northeastern-university/3285"
+              className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
+            >
+              Careers at Northeastern
+            </Link>
+            </div>
+
+
     </main>
   );
 }

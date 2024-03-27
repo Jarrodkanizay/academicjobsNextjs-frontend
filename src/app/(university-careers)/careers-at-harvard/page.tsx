@@ -6,10 +6,10 @@ import lecturer from '@/data/lecturer.json';
 import Link from 'next/link';
 export const metadata: Metadata = {
   title: {
-    absolute: 'Duke University job openings',
+    absolute: 'Careers at Harvard',
   },
   description:
-    'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',
+    'To find out more about the Careers at Harvard available in higher education, browse our list of current Careers at Harvard vacancies on this page. ',
   keywords: 'Academic Lecturer Jobs. Lecturer positions',
 };
 export default function Page() {
@@ -53,7 +53,7 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              Duke University job openings{' '}
+              Careers at Harvard{' '}
               </span>
               <br />
             </h1>
@@ -65,7 +65,7 @@ export default function Page() {
             </p>
             <p className="font-bold">Whether launching your career or pursuing advanced studies, Harvard offers an environment where ambitions flourish. Join a dynamic community across diverse fields, from technology to the arts, and redefine success with us.</p>
             {/* <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/harvard-university/3100"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -112,7 +112,7 @@ export default function Page() {
 
 <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
       <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/harvard-university/3100"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
               Careers at Harvard 

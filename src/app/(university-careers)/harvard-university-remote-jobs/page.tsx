@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: 'Harvard University remote jobs',
   },
   description:
-    'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',
+    'To find out more about the Harvard University remote jobs available in higher education, browse our list of current Harvard University remote jobs vacancies on this page. ',
   keywords: 'Academic Lecturer Jobs. Lecturer positions',
 };
 export default function Page() {
@@ -65,7 +65,7 @@ export default function Page() {
             </p>
             <p className="font-bold">Whether you're starting a new job or going back to school, Harvard provides a supportive atmosphere for visionaries. Encounter a vibrant community spanning several industries, such as technology and the arts, and redefine success alongside us.</p>
             {/* <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/harvard-university/3100"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -112,7 +112,7 @@ export default function Page() {
 
 <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
       <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/harvard-university/3100"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
               Careers at Harvard 

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
     absolute: 'Berkeley University careers',
   },
   description:
-    'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',
-  keywords: 'Academic Lecturer Jobs. Lecturer positions',
+    'To find out more about the Berkeley University careers available in higher education, browse our list of current Berkeley University careers vacancies on this page. ',
+  keywords: 'Berkeley University careers',
 };
 export default function Page() {
   return (
@@ -65,7 +65,7 @@ export default function Page() {
             </p>
             <p className="font-bold">Our dedicated team of business experts and career counselors is here to provide you with one-on-one guidance, professional networking opportunities, and mentorship tailored to your specific goals.</p>
             {/* <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -112,7 +112,7 @@ export default function Page() {
 
 <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
       <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
               Careers at Berkeley

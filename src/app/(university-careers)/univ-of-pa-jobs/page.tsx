@@ -6,11 +6,11 @@ import lecturer from '@/data/lecturer.json';
 import Link from 'next/link';
 export const metadata: Metadata = {
   title: {
-    absolute: 'John Hopkins University Jobs',
+    absolute: 'Univ of PA Jobs',
   },
   description:
-    'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',
-  keywords: 'Academic Lecturer Jobs. Lecturer positions',
+    'To find out more about the Univ of PA Jobs available in higher education, browse our list of current Univ of PA Jobs vacancies on this page. ',
+  keywords: 'Univ of PA Jobs',
 };
 export default function Page() {
   return (
@@ -53,19 +53,19 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              John Hopkins University Jobs{' '}
+              Univ of PA Jobs{' '}
               </span>
               <br />
             </h1>
 
             <p className="font-bold">
-            Welcome to Princeton University's Career Page, where academic opportunities abound for all career stages. Our diverse community fosters innovation and collaboration, equipping you with the skills to thrive globally. Explore resources, connect with employers, and start your journey of growth with us. 
+            Univ of PA Jobs allows you to explore countless options and be guided from discovery to accomplishment with the help of wide resources and specialised expertise. Whether you're just starting out or want to grow, Univ of PA Jobs is your go-to for advice in the business world and accomplishing your goals. 
 
 
             </p>
-            <p className="font-bold">Join Princeton University, where every career aspiration finds its perfect match, and embark on a path of lifelong learning and fulfillment.</p>
+            {/* <p className="font-bold">Our committed group of career counselors and business specialists is here to offer you individualized advice, networking opportunities, and mentoring that is catered to your particular professional objectives.</p> */}
             {/* <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/university-of-pennsylvania/3131"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -105,17 +105,17 @@ export default function Page() {
         <div className="listings_panel">
           <div className="listings_content">
             {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'princeton' || 0 }} />
+            <SearchResults q={{ q: 'pennsylvania ' || 0 }} />
           </div>
         </div>
       </section>
 
 <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
       <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/university-of-pennsylvania/3131"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
-              Careers at Princeton 
+              Careers at Pennsylvania
             </Link>
             </div>
 

@@ -9,8 +9,8 @@ export const metadata: Metadata = {
     absolute: 'John Hopkins University Jobs',
   },
   description:
-    'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',
-  keywords: 'Academic Lecturer Jobs. Lecturer positions',
+    'To find out more about the John Hopkins University Jobs available in higher education, browse our list of current John Hopkins University Jobs vacancies on this page. ',
+  keywords: 'John Hopkins University Jobs',
 };
 export default function Page() {
   return (
@@ -65,7 +65,7 @@ export default function Page() {
             </p>
             <p className="font-bold">Unleash your potential with us, and become part of a legacy of excellence in research, education, and service that spans generations.</p>
             {/* <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/johns-hopkins-university/3130"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -105,14 +105,14 @@ export default function Page() {
         <div className="listings_panel">
           <div className="listings_content">
             {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'john hopkins' || 0 }} />
+            <SearchResults q={{ q: 'hopkins' || 0 }} />
           </div>
         </div>
       </section>
 
 <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
       <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/johns-hopkins-university/3130"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
               Careers at John Hopkins

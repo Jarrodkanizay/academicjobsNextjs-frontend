@@ -6,10 +6,10 @@ import lecturer from '@/data/lecturer.json';
 import Link from 'next/link';
 export const metadata: Metadata = {
   title: {
-    absolute: 'Berkeley Uc Jobs',
+    absolute: 'Berkeley UC Jobs',
   },
   description:
-    'To find out more about the academic lecturer jobs available in higher education, browse our list of current lecturer job vacancies on this page. ',
+    'To find out more about the Berkeley Uc Jobs available in higher education, browse our list of current Berkeley Uc Jobs vacancies on this page. ',
   keywords: 'Academic Lecturer Jobs. Lecturer positions',
 };
 export default function Page() {
@@ -53,7 +53,7 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              Berkeley Uc Jobs{' '}
+              Berkeley UC Jobs{' '}
               </span>
               <br />
             </h1>
@@ -65,7 +65,7 @@ export default function Page() {
             </p>
             <p className="font-bold">Our committed group of career counselors and business specialists is here to offer you one-on-one advice, chances for professional networking, and mentorship catered to your individual objectives.</p>
             {/* <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -112,7 +112,7 @@ export default function Page() {
 
 <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
       <Link
-              href="/lecturer/guest-lecturing"
+              href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
               Careers at Berkeley
