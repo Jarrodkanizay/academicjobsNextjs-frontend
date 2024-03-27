@@ -1,5 +1,15 @@
 import Image from 'next/image';
 import SignUpForm from './SignUpForm';
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  // title: 'About', //Option 1 replaces the %s in layout.tsx
+  title: {
+    absolute: 'AcademicJobs SignUp', //Option 2 overrides the title in layout.tsx
+  },
+  description:
+    'Sign up with Academic Jobs to seek and save our current job vacancies today. ',
+  keywords: 'AcademicJobs SignUp',
+};
 
 const page = () => {
   const scale = 1.1;

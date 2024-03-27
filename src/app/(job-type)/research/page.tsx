@@ -1,10 +1,10 @@
-import type { Metadata } from 'next';
+
 import Link from 'next/link';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import research from '@/data/research.json';
-
+import type { Metadata } from 'next';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {

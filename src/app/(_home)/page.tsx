@@ -678,10 +678,10 @@ export default async function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/professor-in-ai-health/90013"
+                    href="/jobs/indigenous-research-officer/99513"
                     className="text-blue-500 font-bold"
                   >
-                    Professor in AI Health
+                    Coast Community College District
                   </Link>
                 </li>
                 <ul className="innerUL">
@@ -691,11 +691,17 @@ export default async function myPage() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="">Brisbane, QLD, Aus</Link>
+                    <Link href="">Costa Mesa, CA, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Apr 1, 2024</Link>
+                    <Link href="">Apr 12, 2024</Link>
                   </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4929143"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
@@ -792,24 +798,24 @@ export default async function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/program-coordinator-pre-professional-programs/82178"
+                    href="/jobs/vice-president-for-finance-strategy/98391"
                     className="text-blue-500 font-bold"
                   >
-                    Program Coordinator- Pre-Professional Programs
+                    Vice President of Finance and Operations
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Southern Utah University</Link>
+                    <Link href="">South Central College</Link>
                   </li>
                   <li>
-                    <Link href="">Cedar City, UT, USA</Link>
+                    <Link href="">North Mankato, MN 56003, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Mar 10, 2024</Link>
+                    <Link href="">Apr 2, 2024</Link>
                   </li>
                   <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4918224"
+                    href="https://apptrkr.com/get_redirect.php?id=5102550"
                     className="btn btn-sm btn-aj mt-4"
                   >
                     More Info
@@ -850,22 +856,28 @@ export default async function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/director-of-major-giving-midwest/87777"
+                    href="/jobs/indigenous-research-officer/102709"
                     className="text-blue-500 font-bold"
                   >
-                    Director of Major Giving, Midwest
+                    Research Assistant Professor - 525877
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Villanova University</Link>
+                    <Link href="">University of Hong Kong</Link>
                   </li>
                   <li>
-                    <Link href="">Chicago, IL, USA</Link>
+                    <Link href="">Pok Fu Lam, Hong Kong</Link>
                   </li>
                   <li>
-                    <Link href="">Mar 10, 2024</Link>
+                    <Link href="">Apr 18, 2024</Link>
                   </li>
+                  <Link
+                    href="https://jobs.hku.hk/en/job/525877/research-assistant-professor"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
@@ -873,22 +885,28 @@ export default async function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/lecturer-chemical-and-environmental-engineering/80802"
+                    href="/jobs/indigenous-research-officer/101449"
                     className="text-blue-500 font-bold"
                   >
-                    Lecturer, Chemical and Environmental Engineering
+                    Director - Continuing Education
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">Yale University</Link>
+                    <Link href="">University of Texas Permian Basin</Link>
                   </li>
                   <li>
-                    <Link href="">New Haven, CT, USA</Link>
+                    <Link href="">Odessa, TX 79762, USA</Link>
                   </li>
                   <li>
-                    <Link href="">May 31, 2024</Link>
+                    <Link href="">Apr 20, 2024</Link>
                   </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=5119689"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>
@@ -896,10 +914,10 @@ export default async function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="/jobs/research-officer/90096"
+                    href="/jobs/indigenous-research-officer/101433"
                     className="text-blue-500 font-bold"
                   >
-                    Research Officer
+                    Dean - College of Education
                   </Link>
                 </li>
                 <ul className="innerUL">
@@ -907,11 +925,17 @@ export default async function myPage() {
                     <Link href="">University of New South Wales (UNSW)</Link>
                   </li>
                   <li>
-                    <Link href="">Kensington,NSW, Aus</Link>
+                    <Link href="">Odessa, TX 79762, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Mar 10, 2024</Link>
+                    <Link href="">Apr 20, 2024</Link>
                   </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=5119737"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
                 </ul>
               </ul>
             </div>

@@ -11,6 +11,8 @@ import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
 
+
+
 export default function Page() {
   const searchParams = useSearchParams();
   //const allSearchParams = Object.fromEntries(searchParams1);
@@ -38,11 +40,11 @@ export default function Page() {
   useEffect(() => {
     // Example: Fetch meta data based on search query or any other relevant data
     // For now, setting dummy values
-    setMetaTitle(`Search Results for "${q}" in "${l}"`);
-    setMetaDescription(`Search for job results related to "${q}" in "${l}"`);
-  }, [q, l]);
-  useEffect(() => {
-    console.log('===============================', filter1);
+  //   setMetaTitle(`Search Results for "${q}" in "${l}"`);
+  //   setMetaDescription(`Search for job results related to "${q}" in "${l}"`);
+  // }, [q, l]);
+  // useEffect(() => {
+  //   console.log('===============================', filter1);
     // if (filter1.some(obj => obj.filter.includes("Executive "))) {
     //   setfilterTypes(p => ({ ...p, ExecutiveJobs: true }))
     // } else {
@@ -129,10 +131,11 @@ export default function Page() {
   //const filter1 = useSelector((state) => state.posts.filter1);
   //alert(location?.state?.filter1)
   ///console.log('router.query', searchParams);
+  
   return (
     <>
-      <title>{metaTitle}</title>
-      <meta name="description" content={metaDescription} />
+      {/* <title>{metaTitle}</title>
+      <meta name="description" content={metaDescription} /> */}
       <main>
         {/* TODO: Add this to the page…
     

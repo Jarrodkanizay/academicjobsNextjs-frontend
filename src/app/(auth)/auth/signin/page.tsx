@@ -3,6 +3,16 @@
 
 import Link from 'next/link';
 import SignInForm from './SignInForm';
+import type { Metadata } from 'next';
+export const metadata: Metadata = {
+  // title: 'About', //Option 1 replaces the %s in layout.tsx
+  title: {
+    absolute: 'Academic Jobs Sign In', //Option 2 overrides the title in layout.tsx
+  },
+  description:
+    'Sign In to Academic Jobs with your existing account to easily browse and save our current job vacancies, or Sign in as an recruiter to purcahse and post your jobs. ',
+  keywords: 'Academic Jobs Sign Up',
+};
 
 // interface Props {
 //   searchParams: {

@@ -124,7 +124,7 @@ export default function BlogPostPage({ params }: Props) {
           {cityDetails.promo.map((promoPara, index) => (
             <p key={index}>{promoPara}</p>
           ))}
-          <h3>Are you looking for…</h3>
+          {/* <h3>Are you looking for…</h3>
           <ul>
             <li>
               <Link href={`/jobs?q=Research&l=${cityDetails.city}`}>
@@ -151,7 +151,7 @@ export default function BlogPostPage({ params }: Props) {
                 Dream job in {cityDetails.city}
               </Link>
             </li>
-          </ul>
+          </ul> */}
           <TalentPool cta={`Join the ${cityDetails.city} Academic Talent Pool`} />
      
 
