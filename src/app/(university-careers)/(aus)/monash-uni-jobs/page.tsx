@@ -6,11 +6,11 @@ import lecturer from '@/data/lecturer.json';
 import Link from 'next/link';
 export const metadata: Metadata = {
   title: {
-    absolute: 'johns hopkins employment',
+    absolute: 'monash uni jobs',
   },
   description:
-    'To find out more about the johns hopkins employment available in higher education, browse our list of current  johns hopkins employment vacancies on this page. ',
-  keywords: ' johns hopkins employment',
+    'To find out more about the monash uni jobs available in higher education, browse our list of current monash uni jobs vacancies on this page. ',
+  keywords: 'monash uni jobs',
 };
 export default function Page() {
   return (
@@ -53,19 +53,19 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              johns hopkins employment{' '}
+              monash uni jobs{' '}
               </span>
               <br />
             </h1>
 
             <p className="font-bold">
-            johns hopkins employment has countless options and guidance from discovery to achievement. Whether you're just starting out or looking to grow, johns hopkins employment has advice on the business world and accomplishing your objectives. 
+            Embark on a journey of professional growth and fulfillment at monash uni jobs, where we nurture talent and foster innovation. Explore diverse career opportunities tailored to your skills and aspirations, from academia to administration, research to technology. 
 
 
             </p>
-            {/* <p className="font-bold">Our committed group of career counselors and business specialists is here to offer you individualized advice, networking opportunities, and mentoring that is catered to your particular professional objectives.</p> */}
+            <p className="font-bold">Join our dynamic community dedicated to excellence and collaboration, where every voice is valued and every idea matters. Discover your potential at monash uni jobs today! </p>
             {/* <Link
-              href="https://www.academicjobs.com/employers/university-of-kentucky/3510"
+              href="https://www.academicjobs.com/employers/hofstra-university/3545"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -105,17 +105,17 @@ export default function Page() {
         <div className="listings_panel">
           <div className="listings_content">
             {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'hopkins' || 0 }} />
+            <SearchResults q={{ q: 'monash' || 0 }} />
           </div>
         </div>
       </section>
 
 <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
       <Link
-              href="https://www.academicjobs.com/employers/johns-hopkins-university/3130"
+              href="https://www.academicjobs.com/employers/monash-university/3182"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
-              Careers at johns hopkins employment
+              Careers at monash uni jobs 
             </Link>
             </div>
 

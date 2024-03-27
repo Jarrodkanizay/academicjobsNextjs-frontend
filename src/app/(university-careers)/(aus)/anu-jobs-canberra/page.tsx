@@ -1,16 +1,17 @@
 import type { Metadata } from 'next';
 import SearchResults from '@/components/SearchResults';
+import SearchResults1 from '@/components/SearchResults1';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import lecturer from '@/data/lecturer.json';
 import Link from 'next/link';
 export const metadata: Metadata = {
   title: {
-    absolute: 'johns hopkins employment',
+    absolute: 'anu jobs canberra',
   },
   description:
-    'To find out more about the johns hopkins employment available in higher education, browse our list of current  johns hopkins employment vacancies on this page. ',
-  keywords: ' johns hopkins employment',
+    'To find out more about the anu jobs canberra available in higher education, browse our list of current anu jobs canberra vacancies on this page. ',
+  keywords: 'anu jobs canberra',
 };
 export default function Page() {
   return (
@@ -53,19 +54,19 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              johns hopkins employment{' '}
+              anu jobs canberra{' '}
               </span>
               <br />
             </h1>
 
             <p className="font-bold">
-            johns hopkins employment has countless options and guidance from discovery to achievement. Whether you're just starting out or looking to grow, johns hopkins employment has advice on the business world and accomplishing your objectives. 
+            Discover fulfilling career opportunities at anu jobs canberra, where innovation and impact meet. Join a diverse group of people who are dedicated to eradicating obstacles and shaping the future. Look at jobs in a variety of industries where you can develop your skills and have a voice.  
 
 
             </p>
-            {/* <p className="font-bold">Our committed group of career counselors and business specialists is here to offer you individualized advice, networking opportunities, and mentoring that is catered to your particular professional objectives.</p> */}
+            <p className="font-bold">Accompany us in fulfilling your potential and contributing to a legacy of excellence in research, teaching, and service that spans generations.</p>
             {/* <Link
-              href="https://www.academicjobs.com/employers/university-of-kentucky/3510"
+              href="https://www.academicjobs.com/employers/johns-hopkins-university/3130"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -104,18 +105,18 @@ export default function Page() {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'hopkins' || 0 }} />
+            {/* <SearchResults1 q={{ q: '', l: '' || '', filter1:'John Hopkins University'  }} /> */}
+            <SearchResults q={{ q: 'anu' || 0 }} />
           </div>
         </div>
       </section>
 
 <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
       <Link
-              href="https://www.academicjobs.com/employers/johns-hopkins-university/3130"
+              href="https://www.academicjobs.com/employers/australian-national-university/3739"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
-              Careers at johns hopkins employment
+              anu jobs canberra
             </Link>
             </div>
 

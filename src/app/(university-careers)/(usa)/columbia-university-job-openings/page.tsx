@@ -9,8 +9,8 @@ export const metadata: Metadata = {
     absolute: 'Columbia university job openings',
   },
   description:
-    'To find out more about the University of Kentucky Jobs available in higher education, browse our list of current  University of Kentucky Jobs vacancies on this page. ',
-  keywords: ' University of Kentucky Jobs',
+    'To find out more about the Columbia university job openings available in higher education, browse our list of current  Columbia university job openings vacancies on this page. ',
+  keywords: ' Columbia university job openings',
 };
 export default function Page() {
   return (
@@ -112,7 +112,7 @@ export default function Page() {
 
 <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
       <Link
-              href="https://www.academicjobs.com/employers/university-of-kentucky/3510"
+              href="https://www.academicjobs.com/employers/columbia-university/3127"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
               Careers at Columbia university

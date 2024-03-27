@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     absolute: 'harvard university jobs',
   },
   description:
-    'To find out more about the Pharvard university jobs available in higher education, browse our list of current  Pharvard university jobs vacancies on this page. ',
+    'To find out more about the harvard university jobs available in higher education, browse our list of current  harvard university jobs vacancies on this page. ',
   keywords: ' Pharvard university jobs',
 };
 export default function Page() {
@@ -53,13 +53,13 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              Pharvard university jobs{' '}
+              harvard university jobs{' '}
               </span>
               <br />
             </h1>
 
             <p className="font-bold">
-            Pharvard university jobs has countless options and guidance from discovery to achievement. Whether you're just starting out or looking to grow, Pharvard university jobs has advice on the business world and accomplishing your objectives. 
+            harvard university jobs has countless options and guidance from discovery to achievement. Whether you're just starting out or looking to grow, harvard university jobs has advice on the business world and accomplishing your objectives. 
 
 
             </p>
@@ -112,7 +112,7 @@ export default function Page() {
 
 <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
       <Link
-              href="https://www.academicjobs.com/employers/university-of-kentucky/3510"
+              href="https://www.academicjobs.com/employers/harvard-university/3100"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
               Careers at harvard university jobs
