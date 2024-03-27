@@ -59,7 +59,7 @@ export default function Page() {
             </h1>
 
             <p className="font-bold">
-            Welcome to Princeton edu jobs Page, where academic opportunities abound for all career stages. Our diverse community fosters innovation and collaboration, equipping you with the skills to thrive globally. Explore resources, connect with employers, and start your journey of growth with us. 
+            Welcome to Princeton edu jobs, where academic opportunities abound for all career stages. Our diverse community fosters innovation and collaboration, equipping you with the skills to thrive globally. Explore resources, connect with employers, and start your journey of growth with us. 
 
 
             </p>
