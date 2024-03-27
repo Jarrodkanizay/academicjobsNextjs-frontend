@@ -206,11 +206,13 @@ export default function Profile({
                   <span className="inline_heading">{organization}</span>
                 </p>
               )}
-              {location === '' ? null : (
-                <p className="text-white flex gap-2 items-center">
-                  <MapMarkerIcon width={26} height={26} /> {location}
-                </p>
-              )}
+
+              <p className="text-white flex gap-2 items-center">
+                <MapMarkerIcon width={26} height={26} />
+                {location === ''
+                  ? 'Add location here'
+                  : location}
+              </p>
             </div>
             <div className="ml-auto">
               <h2 className="p-0 m-0">Profile Strength {profileStrength}%</h2>

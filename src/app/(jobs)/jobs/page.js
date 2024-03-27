@@ -280,7 +280,7 @@ export default function Page() {
                     }}
                   >{`${filter ? filter : 'Others'}  (${job_count})`}</button>
                 ))}
-              {filters?.length == 23 && (
+              {/* {filters?.length == 23 && (
                 <button
                   className="btn btn-primary btn-xs"
                   onClick={() => {
@@ -292,7 +292,7 @@ export default function Page() {
                 >
                   Show All
                 </button>
-              )}
+              )} */}
             </div>
           )}
         </div>
