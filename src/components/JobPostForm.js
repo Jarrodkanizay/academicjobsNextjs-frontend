@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import Speedo from '@/components/icons/Speedo';
-import Tiptap from './Tiptap'
+import Tiptap from './Tiptap';
 
 const stripeLink = {
   JobElephant: 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
@@ -30,11 +30,11 @@ const stripeLink = {
   USA: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=usa',
 };
 const JobPostForm = ({ partner, region = 'USA' }) => {
-  const [content1, setContent1] = useState ('')
+  const [content1, setContent1] = useState('');
   const handleContentChange = (reason) => {
     //setContent(reason)
     setValue('06_JobPost', reason);
-  }
+  };
   const [regionSelected, setRegion] = useState(region);
   const [standardMode, setStandardMode] = useState(true);
   const [newContact, setNewContact] = useState(false);
@@ -218,8 +218,9 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                   )}
                 </div>
                 <div
-                  className={`p-4 border border-sky-200 bg-sky-50 ${newContact || standardMode ? 'show-form' : 'hide-form'
-                    }`}
+                  className={`p-4 border border-sky-200 bg-sky-50 ${
+                    newContact || standardMode ? 'show-form' : 'hide-form'
+                  }`}
                 >
                   <div className="grid w-full items-center gap-1.5">
                     {partnerName === 'JobElephant' ? null : (
