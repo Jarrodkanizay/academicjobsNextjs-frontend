@@ -6,11 +6,11 @@ import lecturer from '@/data/lecturer.json';
 import Link from 'next/link';
 export const metadata: Metadata = {
   title: {
-    absolute: 'anu jobs',
+    absolute: 'UniSC job vacancies',
   },
   description:
-    'To find out more about the anu jobs available in higher education, browse our list of current  anu jobs vacancies on this page. ',
-  keywords: ' anu jobs',
+    'To find out more about the UniSC job vacancies available in higher education, browse our list of current  UniSC job vacancies vacancies on this page. ',
+  keywords: ' UniSC job vacancies',
 };
 export default function Page() {
   return (
@@ -53,13 +53,13 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              anu jobs{' '}
+              UniSC job vacancies{' '}
               </span>
               <br />
             </h1>
 
             <p className="font-bold">
-            anu jobs has countless options and guidance from discovery to achievement. Whether you're just starting out or looking to grow, anu jobs has advice on the business world and accomplishing your objectives. 
+            UniSC job vacancies has countless options and guidance from discovery to achievement. Whether you're just starting out or looking to grow, UniSC job vacancies has advice on the business world and accomplishing your objectives. 
 
 
             </p>
@@ -105,7 +105,7 @@ export default function Page() {
         <div className="listings_panel">
           <div className="listings_content">
             {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'anu' || 0 }} />
+            <SearchResults q={{ q: 'unisc' || 0 }} />
           </div>
         </div>
       </section>
@@ -115,7 +115,7 @@ export default function Page() {
               href="https://www.academicjobs.com/employers/australian-national-university/3739"
               className="hidden btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
             >
-              Careers at anu jobs
+              Careers at UniSC job vacancies
             </Link>
             </div>
 
