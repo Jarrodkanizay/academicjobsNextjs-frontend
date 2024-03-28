@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import Speedo from '@/components/icons/Speedo';
-import Tiptap from './Tiptap'
+import Tiptap from './Tiptap';
 
 const stripeLink = {
   JobElephant: 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
@@ -29,12 +29,13 @@ const stripeLink = {
     'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=united-kingdom',
   USA: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=usa',
 };
+
 const JobPostForm = ({ partner, region = 'USA' }) => {
-  const [content1, setContent1] = useState ('')
+  const [content1, setContent1] = useState('');
   const handleContentChange = (reason) => {
     //setContent(reason)
     setValue('06_JobPost', reason);
-  }
+  };
   const [regionSelected, setRegion] = useState(region);
   const [standardMode, setStandardMode] = useState(true);
   const [newContact, setNewContact] = useState(false);
@@ -57,31 +58,16 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
   };
   let avatarPath = '';
   let textColor = 'text-aj';
-  let partnerName = 'AcademicJobs';
+  let partnerName = 'Post My Job';
   let partnerLogo = '';
-  let partnerImage = '/partners/post-a-job.jpg';
+  let partnerImage = 'https://www.academicjobs.com/partners/post-a-job.jpg';
   let partnerPullDown = false;
   let institutionName = `Institution Name (ie: Harvard University)`;
   let urlExample = `uni-name.edu/job-posting-url`;
-  if (partner === 'JobElephant') {
-    partnerPullDown = true;
-    partnerName = partner;
-    institutionName = `${partnerName} (ie: Utah University)`;
-    textColor = 'text-emerald-600';
-    partnerLogo =
-      'https://academicjobs.s3.amazonaws.com/img/_misc/proudly-working-with.png';
-    partnerImage =
-      'https://academicjobs.s3.amazonaws.com/img/_misc/jobelephant-puzzle.png';
-    avatarPath = '/partners/jobelephant/avatars/';
-    urlExample = `apptrkr.com/...`;
-  }
+
   useEffect(() => {
     //alert(partnerName)
-    if (partnerName === '' || partnerName === 'AcademicJobs') {
-      setStandardMode(true);
-    } else {
-      setStandardMode(false);
-    }
+    setStandardMode(true);
   }, [partnerName]);
   let content;
   const router = useRouter();
@@ -136,134 +122,87 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
     }
   } else {
     content = (
-      <main className=" content-grid">
+      <main className="content-grid">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <h1
               className={`text-4xl font-bold mb-8 mt-8 underline-full text-[#3b5683]`}
             >
-              {partnerName} Quick Post
+              {/* {partnerName}  */}
+              Job Post Confirmation
             </h1>
             <form className=" " onSubmit={handleSubmit(onSubmit)}>
               <div className="flex flex-col gap-4 justify-start">
-                {standardMode ? null : (
-                  <div className="w-full  flex flex-col items-start">
-                    <label className="label-text text-xs mb-1">
-                      Name (JobElephant person posting the job)
-                    </label>
-                    <select
-                      className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500"
-                      {...register('01_Name_Job_Elephant')}
-                      onChange={(e) => {
-                        if (partnerName === 'JobElephant') {
-                          setValue('01_Organisation_Name', 'JobElephant');
-                        }
-                        if (e.target.value === 'Add Contact') {
-                          setNewContact(true);
-                          setSelectedContact(null);
-                          setValue('00_First_Name', '');
-                          setValue('00_Last_Name', '');
-                          setValue('02_Email', '');
-                        } else {
-                          setNewContact(false);
-                          const selectedContact = jobElephantContacts.find(
-                            (contact) =>
-                              `${contact.firstName} ${contact.lastName} - ${contact.email}` ===
-                              e.target.value
-                          );
-                          setSelectedContact(selectedContact);
-                          if (selectedContact) {
-                            setValue(
-                              '00_First_Name',
-                              selectedContact.firstName
-                            );
-                            setValue('00_Last_Name', selectedContact.lastName);
-                            setValue('02_Email', selectedContact.email);
-                          }
-                        }
-                      }}
-                    >
-                      <option value="SelectContact" disabled selected>
-                        Select Contact
-                      </option>
-                      {jobElephantContacts.map((el, index) => (
-                        <>
-                          <option
-                            key={index}
-                            value={`${el.firstName} ${el.lastName} - ${el.email}`}
-                          >
-                            {`${el.firstName} ${el.lastName} - ${el.email}`}
-                          </option>
-                        </>
-                      ))}
-                      <option value="Add Contact">Add Contact</option>
-                    </select>
-                  </div>
-                )}
-                <div className="flex items-center gap-2">
-                  {selectedContact && selectedContact.avatar && (
-                    <>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <Image
-                        src={`${avatarPath}${selectedContact.avatar}`}
-                        alt="Avatar"
-                        width={100} // replace with your desired width
-                        height={100} // replace with your desired height
-                      />
-                      <p className="mt-3">
-                        Hi <b>{selectedContact.firstName}</b>, welcome to your
-                        quick post form.
-                      </p>
-                    </>
-                  )}
-                </div>
                 <div
-                  className={`p-4 border border-sky-200 bg-sky-50 ${newContact || standardMode ? 'show-form' : 'hide-form'
-                    }`}
+                  className={`p-4 border border-sky-200 bg-sky-50 ${
+                    newContact || standardMode ? 'show-form' : 'hide-form'
+                  }`}
                 >
                   <div className="grid w-full items-center gap-1.5">
-                    {partnerName === 'JobElephant' ? null : (
-                      <>
-                        <label
-                          htmlFor="currency"
-                          className="label-text text-xs"
-                        >
-                          Region
-                        </label>
-                        <select
-                          id="currency"
-                          value={selectedCurrency}
-                          onChange={handleChange}
-                          name="currency"
-                          className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500"
-                          required
-                        >
-                          <option value="" selected>
-                            Which Region are you from?
+                    <label htmlFor="currency" className="label-text text-xs">
+                      Region
+                    </label>
+                    <select
+                      id="currency"
+                      value={selectedCurrency}
+                      onChange={handleChange}
+                      name="currency"
+                      className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500"
+                      required
+                    >
+                      <option value="" selected>
+                        Which Region are you from?
+                      </option>
+                      {Object.keys(stripeLink)
+                        .filter((key) => key !== 'JobElephant')
+                        .map((key) => (
+                          <option key={key} value={stripeLink[key]}>
+                            {key}
                           </option>
-                          {Object.keys(stripeLink)
-                            .filter((key) => key !== 'JobElephant')
-                            .map((key) => (
-                              <option key={key} value={stripeLink[key]}>
-                                {key}
-                              </option>
-                            ))}
-                        </select>
-                      </>
-                    )}
+                        ))}
+                    </select>
+
                     <InputBlock
                       register={register}
                       errors={errors}
-                      label="Organization Name"
+                      label="Organization Name (Employer or Recruiter)"
                       type="text"
                       field="01_Organisation_Name"
-                      forceClass=" py-3 text-black"
+                      forceClass="py-3 text-black"
                       placeholder="Organization Name"
                       autoComplete="organization"
                       hidden={newContact || standardMode ? false : true}
                       required={true}
+                      disabled={true}
                     />
                   </div>
+                  <div className="flex w-full items-center gap-4">
+                    <InputBlock
+                      register={register}
+                      errors={errors}
+                      label="Employer ID"
+                      type="text"
+                      field="Employer_ID"
+                      forceClass="py-3 text-black"
+                      placeholder="Employer ID"
+                      hidden={newContact || standardMode ? false : true}
+                      required={true}
+                      disabled={true}
+                    />
+                    <InputBlock
+                      register={register}
+                      errors={errors}
+                      label="Job ID"
+                      type="text"
+                      field="Job_ID"
+                      forceClass="py-3 text-black"
+                      placeholder="Job ID"
+                      hidden={newContact || standardMode ? false : true}
+                      required={true}
+                      disabled={true}
+                    />
+                  </div>
+
                   <div className="grid w-full items-center gap-1.5">
                     <InputBlock
                       register={register}
@@ -307,46 +246,6 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                     />
                   </div>
                 </div>
-                <InputBlock
-                  register={register}
-                  errors={errors}
-                  label={institutionName}
-                  type="text"
-                  field="03_Institution_Name"
-                  forceClass=" py-3 text-black"
-                  placeholder=""
-                  required={true}
-                />
-                <InputBlock
-                  register={register}
-                  errors={errors}
-                  label={`Job Link URL (ie: ${urlExample})`}
-                  type="text"
-                  field="04_Job_Link_URL"
-                  forceClass=" py-3 text-black"
-                  placeholder=""
-                  required={true}
-                />
-                <label className="form-control">
-                  <span className="label-text text-xs pb-1">
-                    Notes or Special Instructions
-                  </span>
-                  <textarea
-                    className="textarea textarea-bordered h-32 focus:outline-none focus:border-orange-500"
-                    id="notes"
-                    placeholder="Type your message here."
-                    {...register('05_Notes')}
-                  ></textarea>
-                </label>
-                <label className="form-control">
-                  <span className="label-text text-xs pb-1">
-                    Copy/paste your Job Post here
-                  </span>
-                  <Tiptap
-                    content={content}
-                    onChange={(newContent) => handleContentChange(newContent)}
-                  />
-                </label>
                 <div className="flex gap-4">
                   <label htmlFor="creditCard" className="label cursor-pointer">
                     <strong className="mr-2">Payment method:</strong>Credit Card
@@ -379,53 +278,6 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                 </button>
               </div>
             </form>
-            {partnerLogo !== '' ? (
-              <picture className="min-w-full max-w-2xl mx-auto mt-16">
-                <Image
-                  width={800}
-                  height={380}
-                  src={partnerLogo ? partnerLogo : ''}
-                  alt={`${partnerName ? partnerLogo : ''} logo`}
-                  className="mx-auto bg-gray-200"
-                />
-              </picture>
-            ) : null}
-          </div>
-          {/* Right panel */}
-          <div>
-            <h2 className="mt-8">
-              <Speedo size={60} />
-              Post a job in 32 seconds saving you 8 minutes each time!{' '}
-            </h2>
-            <h3 className={`${textColor} mb-4`}>
-              Welcome to the new {partnerName} Quick Job Post Technology form.
-            </h3>
-            <Image
-              width={800}
-              height={800}
-              src={partnerImage}
-              className=""
-              alt="AcademicJobs and JobElephant Partnership"
-            />
-            <div className="prose">
-              <p className="mt-4">
-                The average time to Post a Job and fill out a form on the major
-                Job Seeking platforms is 9 min or more. With AcademicJobs we
-                make your life easier and save you time by…
-              </p>
-              <ul>
-                <li>
-                  Reducing Job Posting times to seconds rather than minutes
-                </li>
-                <li>
-                  We do the heavy lifting for you (just provide a link to the
-                  post)
-                </li>
-                <li>
-                  Our Rich Text editor is coming soon (just copy and paste)
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </main>

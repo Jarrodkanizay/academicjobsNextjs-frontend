@@ -14,6 +14,7 @@ const InputBlock = ({
   required = false,
   hidden,
   showLabel = false,
+  disabled = false,
 }) => {
   return (
     <div className={`w-full flex flex-col gap-1.5 items-start ${forceClass}`}>
@@ -28,6 +29,7 @@ const InputBlock = ({
         placeholder={placeholder}
         hidden={hidden}
         required={required}
+        disabled={disabled}
       />
       {errors[field] && <span className="error">{errors[field].message}</span>}
     </div>
