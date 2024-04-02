@@ -53,8 +53,8 @@ const { region } = useStore();
     {
       src: '/home/academic-lecturer-positions.png',
       alt: 'Academic Graduate Positions',
-      label: 'Collaborate',
-      link: `${region}/graduate`,
+      label: 'Industry',
+      link: `${region}/Industry`,
     },
   ];
   return (
