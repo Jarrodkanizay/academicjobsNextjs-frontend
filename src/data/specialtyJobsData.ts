@@ -43,7 +43,6 @@ export const specialtyJobsData = [
       `University of Cambridge, UK`,
       `ETH Zurich, Switzerland`,
       `University of Tokyo, Japan`,
-      `etc.`,
     ],
     nobelInfo: [
       `The Nobel Prize in Physics has been awarded to numerous groundbreaking physicists for their contributions to the field.`,
@@ -59,7 +58,11 @@ export const specialtyJobsData = [
       `Modern physics continues to push the boundaries of our understanding, with research in quantum mechanics, particle physics, cosmology, and beyond.`,
       `Notable physicists like Richard Feynman, Stephen Hawking, and Marie Curie have made significant contributions to the field, inspiring future generations of scientists.`,
     ],
-    academicList: [],
+    academicList: [
+      `Isaac Newton: Laws of Motion`,
+      `Stephen Hawking: Black Hole Theory`,
+      `Neil deGrasse Tyson: Astrophysicist`,
+    ],
     promo: [
       `Physics offers a fascinating journey into the mysteries of the universe, from the smallest particles to the vast expanse of space.`,
       `Whether you're passionate about uncovering the fundamental laws of nature or exploring cutting-edge technologies, a career in physics offers endless opportunities for discovery and innovation.`,
