@@ -7,9 +7,9 @@ export const specialtyJobsData = [
     slug: `physics-specialty-job`,
     description: `Discover the wonders of physics, from subatomic particles to cosmic phenomena. Learn about the education, skills, and career outlook in this captivating field.`,
     keywords: `physics, science, universe, education, career, skills, job outlook`,
-    city: ['Melbourne', 'Sydney'],
-    region: ['Vic', 'NSW'],
-    country: ['Australia', 'NZ'],
+    city: [],
+    region: [],
+    country: [],
     geographicLocation: [],
     locationInfo: [],
     educationRequired: [

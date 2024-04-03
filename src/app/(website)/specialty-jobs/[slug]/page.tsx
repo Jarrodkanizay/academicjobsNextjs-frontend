@@ -72,18 +72,57 @@ export default function BlogPostPage({ params }: Props) {
       </p>
       <section className="jobs_grid job_post_panel_container">
         <div className={`post_panel employer_panel aj text-2-cols mt-6 `}>
-          {specialtyDetails.city.length > 0 ? 'Cities:' : null}
-          {specialtyDetails.region.length > 0 ? 'Country Regions:' : null}
-          {specialtyDetails.country.length > 0 ? 'Country:' : null}
-          {specialtyDetails.geographicLocation.length > 0
-            ? 'World Region:'
-            : null}
-          {specialtyDetails.locationInfo.length > 0
-            ? 'About the location:'
-            : null}
+          {specialtyDetails.city.length > 0 ? (
+            <p>
+              <span className="font-bold">Cities: </span>
+              {specialtyDetails.city.join(', ')}
+            </p>
+          ) : null}
+          {specialtyDetails.region.length > 0 ? (
+            <p>
+              <span className="font-bold">Country Regions: </span>
+              {specialtyDetails.region.join(', ')}
+            </p>
+          ) : null}
+          {specialtyDetails.country.length > 0 ? (
+            <p>
+              <span className="font-bold">Country: </span>
+              {specialtyDetails.country.join(', ')}
+            </p>
+          ) : null}
+          {specialtyDetails.geographicLocation.length > 0 ? (
+            <p>
+              <span className="font-bold">World Region: </span>
+              {specialtyDetails.geographicLocation.join(', ')}
+            </p>
+          ) : null}
+          {specialtyDetails.locationInfo.length > 0 ? (
+            <>
+              <h3>About the location</h3>
+              {Array.isArray(specialtyDetails.locationInfo) ? (
+                specialtyDetails.locationInfo.map((paraData, index) => (
+                  <p key={index}>{paraData}</p>
+                ))
+              ) : (
+                <p>{specialtyDetails.locationInfo}</p>
+              )}
+            </>
+          ) : null}
+          {specialtyDetails.educationRequired.length > 0 ? (
+            <>
+              <h3>What it takes to work in </h3>
+              {Array.isArray(specialtyDetails.educationRequired) ? (
+                specialtyDetails.educationRequired.map((paraData, index) => (
+                  <p key={index}>{paraData}</p>
+                ))
+              ) : (
+                <p>{specialtyDetails.educationRequired}</p>
+              )}
+            </>
+          ) : null}
           <h3 className="mt-0">
             {specialtyDetails.uniList.length > 1
-              ? 'Some of the Colleges & Universities'
+              ? 'Top Universities & Colleges'
               : 'The following institution'}{' '}
             specializing in 
             {specialtyDetails.specialtyJob}
@@ -160,7 +199,7 @@ export default function BlogPostPage({ params }: Props) {
           {specialtyDetails.promo.map((promoPara, index) => (
             <p key={index}>{promoPara}</p>
           ))}
-          {/* <h3>Are you looking for…</h3>
+          <h3>Are you looking for…</h3>
           <ul>
             <li>
               <Link href={`/jobs?q=Research&l=${specialtyDetails.specialty}`}>
@@ -178,16 +217,20 @@ export default function BlogPostPage({ params }: Props) {
               </Link>
             </li>
             <li>
-              <Link href={`/jobs?q=Higher%20Ed&l=${specialtyDetails.specialty}`}>
+              <Link
+                href={`/jobs?q=Higher%20Ed&l=${specialtyDetails.specialty}`}
+              >
                 Higher Ed jobs in {specialtyDetails.specialty}
               </Link>
             </li>
             <li>
-              <Link href={`/jobs?q=Dream%20job&l=${specialtyDetails.specialty}`}>
+              <Link
+                href={`/jobs?q=Dream%20job&l=${specialtyDetails.specialty}`}
+              >
                 Dream job in {specialtyDetails.specialty}
               </Link>
             </li>
-          </ul> */}
+          </ul>
 
           <TalentPool
             cta={`Join the ${specialtyDetails.specialtyJob} Academic Talent Pool`}
