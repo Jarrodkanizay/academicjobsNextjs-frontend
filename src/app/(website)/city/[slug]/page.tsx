@@ -152,9 +152,9 @@ export default function BlogPostPage({ params }: Props) {
               </Link>
             </li>
           </ul> */}
-          <TalentPool cta={`Join the ${cityDetails.city} Academic Talent Pool`} />
-     
-
+          <TalentPool
+            cta={`Join the ${cityDetails.city} Academic Talent Pool`}
+          />
         </div>
         <div className="listings_panel">
           <div className="listings_content">
@@ -167,7 +167,7 @@ export default function BlogPostPage({ params }: Props) {
             /> */}
             <SearchResults1
               q={{
-                filter1: [{ category: 'City', filter: 'Boston' }],
+                filter1: [{ category: 'City', filter: cityDetails.city }],
                 q: '',
                 l: '',
               }}
