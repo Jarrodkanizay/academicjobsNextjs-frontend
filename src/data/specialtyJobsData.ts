@@ -4,7 +4,7 @@ export const specialtyJobsData = [
     specialtyJob: `Physics`,
     title: `Unraveling the Mysteries of the Universe: A Guide to Physics`,
     h1: `Explore the World of Physics: From Quarks to Black Holes`,
-    slug: `physics-specialty-job`,
+    slug: `physics`,
     description: `Discover the wonders of physics, from subatomic particles to cosmic phenomena. Learn about the education, skills, and career outlook in this captivating field.`,
     keywords: `physics, science, universe, education, career, skills, job outlook`,
     city: [],
