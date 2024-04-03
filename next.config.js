@@ -991,11 +991,11 @@ const nextConfig = {
             },
             
 
-              {
-                  source: "/company/3460/tufts-university",
-                  destination: "/employers/tufts-university/3460",
-                  permanent: true
-              },
+              // {
+              //     source: "/company/3460/tufts-university",
+              //     destination: "/employers/tufts-university/3460",
+              //     permanent: true
+              // },
               {
                   source: "/jobs/provost/69027",
                   destination: "/jobs",
