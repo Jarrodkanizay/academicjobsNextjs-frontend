@@ -461,7 +461,7 @@ const nextConfig = {
       //   permanent: true,
       // },
       // {
-      //   source: '/Australia',
+      //   source: "/jobs?q=&l=australia",
       //   destination: '/australia',
       //   permanent: true,
       // },
