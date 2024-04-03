@@ -7,9 +7,9 @@ export const specialtyJobsData = [
     slug: `physics-specialty-job`,
     description: `Discover the wonders of physics, from subatomic particles to cosmic phenomena. Learn about the education, skills, and career outlook in this captivating field.`,
     keywords: `physics, science, universe, education, career, skills, job outlook`,
-    city: [],
-    region: [],
-    country: [],
+    city: ['Melbourne', 'Sydney'],
+    region: ['Vic', 'NSW'],
+    country: ['Australia', 'NZ'],
     geographicLocation: [],
     locationInfo: [],
     educationRequired: [
@@ -79,7 +79,7 @@ export const specialtyJobsData = [
       `Institute of Physics (IOP): https://www.iop.org/`,
     ],
     tags: [`Science`, `Physics`, `Education`, `Research`, `Career`],
-    image_url: `/specialty-jobs/physics.jpg`,
+    image_url: `/specialty-jobs/sir-isaac-newton-the-greatest-scientific-mind-of-all-time.jpg`,
     alt: `Illustration of a physicist conducting experiments in a laboratory`,
   },
 ];
