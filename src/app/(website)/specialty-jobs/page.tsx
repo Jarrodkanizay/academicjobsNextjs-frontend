@@ -55,7 +55,7 @@ export default function SpecialtyJobs({
         para2="Delve into the expansive world of specialty careers and broaden your horizons. With a myriad of options spanning various industries and disciplines, there's something for everyone seeking to carve out a unique niche in their professional journey. Explore, learn, and envision the possibilities that await in specialty careers."
         src="/specialty-jobs/marine-biology-program.jpg"
         alt="The World's Leading Cities for Academic Excellence and Innovation"
-        btnPrimaryText="Find Jobs in Your City"
+        btnPrimaryText="Find Jobs in Your Specialty"
         btnPrimaryURL="/jobs"
         reorder={false}
       />
