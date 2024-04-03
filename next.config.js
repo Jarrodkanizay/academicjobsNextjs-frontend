@@ -955,6 +955,11 @@ const nextConfig = {
                 permanent: true
             },
             {
+              source: "/Global/industry",
+              destination: "/industry",
+              permanent: true
+          },
+            {
                 source: "/Global/staff-jobs",
                 destination: "/staff-jobs",
                 permanent: true
@@ -986,11 +991,11 @@ const nextConfig = {
             },
             
 
-              // {
-              //     source: "/employers/academic-jobs-australia/3328",
-              //     destination: "/jobs",
-              //     permanent: true
-              // },
+              {
+                  source: "/company/3460/tufts-university",
+                  destination: "/employers/tufts-university/3460",
+                  permanent: true
+              },
               {
                   source: "/jobs/provost/69027",
                   destination: "/jobs",
