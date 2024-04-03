@@ -120,11 +120,67 @@ export default function BlogPostPage({ params }: Props) {
               )}
             </>
           ) : null}
+          {specialtyDetails.languageRequirement.length > 0 ? (
+            <>
+              <h3>
+                Language requirements for the {specialtyDetails.specialtyJob}{' '}
+                domain
+              </h3>
+              {Array.isArray(specialtyDetails.languageRequirement) ? (
+                specialtyDetails.languageRequirement.map((paraData, index) => (
+                  <p key={index}>{paraData}</p>
+                ))
+              ) : (
+                <p>{specialtyDetails.languageRequirement}</p>
+              )}
+            </>
+          ) : null}
+          {specialtyDetails.skillSet.length > 0 ? (
+            <>
+              <h3>
+                Skills required to work in {specialtyDetails.specialtyJob}
+              </h3>
+              <ul>
+                {Array.isArray(specialtyDetails.skillSet) ? (
+                  specialtyDetails.skillSet.map((paraData, index) => (
+                    <li key={index}>{paraData}</li>
+                  ))
+                ) : (
+                  <p>{specialtyDetails.skillSet}</p>
+                )}
+              </ul>
+            </>
+          ) : null}
+          {specialtyDetails.careerOutlook.length > 0 ? (
+            <>
+              <h3>Career Path</h3>
+              {Array.isArray(specialtyDetails.careerOutlook) ? (
+                specialtyDetails.careerOutlook.map((paraData, index) => (
+                  <p key={index}>{paraData}</p>
+                ))
+              ) : (
+                <p>{specialtyDetails.careerOutlook}</p>
+              )}
+            </>
+          ) : null}
+
+          {specialtyDetails.workEnvironment.length > 0 ? (
+            <>
+              <h3>Work Environment</h3>
+              {Array.isArray(specialtyDetails.workEnvironment) ? (
+                specialtyDetails.workEnvironment.map((paraData, index) => (
+                  <p key={index}>{paraData}</p>
+                ))
+              ) : (
+                <p>{specialtyDetails.workEnvironment}</p>
+              )}
+            </>
+          ) : null}
+
           <h3 className="mt-0">
             {specialtyDetails.uniList.length > 1
-              ? 'Top Universities & Colleges'
-              : 'The following institution'}{' '}
-            specializing in 
+              ? 'Top Universities & Colleges specializing in'
+              : 'The following institution specializes in'}{' '}
             {specialtyDetails.specialtyJob}
           </h3>
           {/* {specialtyDetails.specialtyInfo.map((specialtyPara, index) => (
@@ -191,6 +247,47 @@ export default function BlogPostPage({ params }: Props) {
               )}
             </>
           )}
+          {specialtyDetails.salaryExpectations.length > 0 ? (
+            <>
+              <h3>Salary Expectations</h3>
+              {Array.isArray(specialtyDetails.salaryExpectations) ? (
+                specialtyDetails.salaryExpectations.map((paraData, index) => (
+                  <p key={index}>{paraData}</p>
+                ))
+              ) : (
+                <p>{specialtyDetails.salaryExpectations}</p>
+              )}
+            </>
+          ) : null}
+          {specialtyDetails.industryAssociations.length > 0 && (
+            <>
+              <h3>{specialtyDetails.specialtyJob} Industry Associations</h3>
+              {specialtyDetails.academicInfo.map((paraData, index) => (
+                <p key={index}>{paraData}</p>
+              ))}
+              {specialtyDetails.industryAssociations.length > 0 && (
+                <>
+                  <ul>
+                    {specialtyDetails.industryAssociations.map(
+                      (data, index) => (
+                        <li key={index}>
+                          <strong>{data.split(': ')[0]}</strong>
+                          <br />
+                          <a
+                            href={data.split(': ')[1]}
+                            target="_blank"
+                            className="link link-aj"
+                          >
+                            {data.split(': ')[1]}
+                          </a>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </>
+              )}
+            </>
+          )}
 
           <h3>
             Considering a career in {specialtyDetails.specialtyJob}? Here's a
@@ -199,35 +296,40 @@ export default function BlogPostPage({ params }: Props) {
           {specialtyDetails.promo.map((promoPara, index) => (
             <p key={index}>{promoPara}</p>
           ))}
-          <h3>Are you looking for…</h3>
           <ul>
             <li>
-              <Link href={`/jobs?q=Research&l=${specialtyDetails.specialty}`}>
-                Research jobs in {specialtyDetails.specialty}
-              </Link>
-            </li>
-            <li>
-              <Link href={`/jobs?q=Lecturer&l=${specialtyDetails.specialty}`}>
-                Lecturer jobs in {specialtyDetails.specialty}
-              </Link>
-            </li>
-            <li>
-              <Link href={`/jobs?q=University&l=${specialtyDetails.specialty}`}>
-                University jobs in {specialtyDetails.specialty}
+              <Link
+                href={`/jobs?q=${encodeURIComponent(
+                  specialtyDetails.specialtyJob
+                )}%20Research`}
+              >
+                Research jobs in {specialtyDetails.specialtyJob}
               </Link>
             </li>
             <li>
               <Link
-                href={`/jobs?q=Higher%20Ed&l=${specialtyDetails.specialty}`}
+                href={`/jobs?q=${specialtyDetails.specialtyJob}%20Lecturer`}
               >
-                Higher Ed jobs in {specialtyDetails.specialty}
+                Lecturer jobs in {specialtyDetails.specialtyJob}
               </Link>
             </li>
             <li>
               <Link
-                href={`/jobs?q=Dream%20job&l=${specialtyDetails.specialty}`}
+                href={`/jobs?q=${specialtyDetails.specialtyJob}%20University`}
               >
-                Dream job in {specialtyDetails.specialty}
+                University jobs in {specialtyDetails.specialtyJob}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/jobs?q=${specialtyDetails.specialtyJob}%20Higher%20Ed`}
+              >
+                Higher Ed jobs in {specialtyDetails.specialtyJob}
+              </Link>
+            </li>
+            <li>
+              <Link href={`/jobs?q=${specialtyDetails.specialtyJob}%20jobs`}>
+                {specialtyDetails.specialtyJob} Jobs
               </Link>
             </li>
           </ul>
@@ -253,7 +355,7 @@ export default function BlogPostPage({ params }: Props) {
                 //     filter: '',
                 //   },
                 // ],
-                q: 'physics',
+                q: specialtyDetails.specialtyJob,
                 l: '',
               }}
             />
