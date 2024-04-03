@@ -247,13 +247,13 @@ export default function BlogPostPage({ params }: Props) {
             /> */}
             <SearchResults1
               q={{
-                filter1: [
-                  {
-                    category: specialtyDetails.jobCategory,
-                    filter: '',
-                  },
-                ],
-                q: '',
+                // filter1: [
+                //   {
+                //     category: specialtyDetails.jobCategory,
+                //     filter: '',
+                //   },
+                // ],
+                q: 'physics',
                 l: '',
               }}
             />
