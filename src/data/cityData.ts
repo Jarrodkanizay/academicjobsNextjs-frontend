@@ -14661,7 +14661,7 @@ export const cityData = [
       "Attending or working at a university or college in Hanoi offers unparalleled opportunities for academic and professional development. Immerse yourself in a vibrant cultural environment, collaborate with top-tier faculty members, and gain hands-on experience through research and internship opportunities. Whether you're a student or a faculty member, Hanoi is the perfect destination for intellectual growth and exploration.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-hanoi.jpeg',
     alt: 'Hanoi skyline',
   },
   {
@@ -14700,7 +14700,7 @@ export const cityData = [
       "Experience the essence of academic excellence by attending or working at a university or college in Kyoto. Immerse yourself in Japan's rich cultural heritage, collaborate with leading scholars in your field, and engage in groundbreaking research that addresses global challenges. Whether you're a student or a faculty member, Kyoto offers a stimulating environment for learning, growth, and innovation.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-kyoto.jpeg',
     alt: 'Kyoto cityscape',
   },
   {
@@ -14739,7 +14739,7 @@ export const cityData = [
       "Discover the boundless opportunities for personal and professional growth by studying or working at a university or college in Ho Chi Minh City. Immerse yourself in a vibrant cultural milieu, engage with esteemed faculty members, and collaborate on innovative research projects that address real-world challenges. Whether you're pursuing higher education or seeking employment opportunities, Ho Chi Minh City offers an enriching environment for academic and professional advancement.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-ho_chi_minh_city.jpeg',
     alt: 'Ho Chi Minh City skyline',
   },
   {
@@ -14778,7 +14778,7 @@ export const cityData = [
       'Experience the blend of tradition and modernity by studying or working at a university or college in Jaipur. Immerse yourself in a city steeped in history and culture while pursuing academic endeavors that propel you towards future success. From world-class faculty to state-of-the-art facilities, Jaipur offers endless opportunities for academic and personal growth.',
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-jaipur.jpeg',
     alt: 'Jaipur City Palace',
   },
   {
@@ -14818,7 +14818,7 @@ export const cityData = [
       'Experience the dynamic educational ecosystem of Mumbai by studying or working at one of its esteemed universities or colleges. Immerse yourself in a city that celebrates diversity, fosters innovation, and encourages intellectual exploration. From world-class faculty to cutting-edge research opportunities, Mumbai offers a conducive environment for academic and professional growth.',
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-mumbai.jpeg',
     alt: 'Mumbai skyline',
   },
   {
@@ -14897,7 +14897,7 @@ export const cityData = [
       "Experience a dynamic academic environment in Phnom Penh, Cambodia, where universities and colleges offer unparalleled opportunities for personal and intellectual growth. Whether you're a student seeking a transformative educational experience or a professional looking for research and career opportunities, Phnom Penh's higher education institutions provide a vibrant platform for academic excellence and cultural exchange.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-phnom_penh.jpeg',
     alt: 'Phnom Penh skyline',
   },
   {
@@ -14936,7 +14936,7 @@ export const cityData = [
       "Experience the academic vibrancy of Xi'an, China, where universities and colleges offer a stimulating environment for personal and intellectual development. Whether you seek traditional wisdom or cutting-edge innovation, Xi'an provides ample opportunities for educational enrichment, cultural immersion, and professional advancement.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-xi_an.jpeg',
     alt: "Xi'an skyline",
   },
   {
@@ -14975,7 +14975,7 @@ export const cityData = [
       "Immerse yourself in the academic excellence of Hyderabad, India, where universities and colleges offer unparalleled opportunities for educational growth and personal development. Whether you aspire to pursue research, entrepreneurship, or creative endeavors, Hyderabad's vibrant academic ecosystem provides the perfect platform to realize your dreams and ambitions.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-hyderabad.jpeg',
     alt: 'Hussain Sagar Lake in Hyderabad',
   },
   {
@@ -15014,7 +15014,7 @@ export const cityData = [
       "Immerse yourself in the academic excellence of Chennai, India, where universities and colleges provide unparalleled opportunities for educational and personal growth. Whether you seek to pursue cutting-edge research, develop practical skills, or foster creative talents, Chennai's dynamic academic community offers a supportive and inspiring environment to achieve your aspirations.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-chennai.jpeg',
     alt: 'Marina Beach in Chennai',
   },
   {
@@ -15053,7 +15053,7 @@ export const cityData = [
       "Experience the academic brilliance of Pune, India, where universities and colleges offer unparalleled opportunities for educational and personal growth. Whether you aspire to pursue research, entrepreneurship, or creative endeavors, Pune's dynamic academic ecosystem provides the perfect platform to realize your ambitions and shape a successful future.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-pune.jpeg',
     alt: 'Pune skyline',
   },
   {
@@ -15092,7 +15092,7 @@ export const cityData = [
       "Immerse yourself in Ahmedabad's dynamic academic environment, where opportunities for learning and growth abound. Whether you seek world-class education, cutting-edge research, or vibrant campus life, Ahmedabad's universities and colleges offer an enriching experience that prepares you for success in your chosen field.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-ahmedabad.jpeg',
     alt: 'Ahmedabad skyline',
   },
   {
@@ -15131,7 +15131,7 @@ export const cityData = [
       "Experience the enriching academic environment of Kolkata, where heritage meets innovation and tradition blends seamlessly with modernity. Whether you aspire to pursue higher education or seek opportunities for research and professional growth, Kolkata's universities and colleges provide a nurturing ecosystem conducive to realizing your dreams and ambitions.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-kolkata.jpeg',
     alt: 'Kolkata skyline',
   },
   {
@@ -15170,7 +15170,7 @@ export const cityData = [
       "Immerse yourself in Lucknow's vibrant educational ecosystem, where heritage meets innovation and academic excellence knows no bounds. Whether you seek to pursue higher studies or advance your career through research and professional development, Lucknow offers a plethora of opportunities for personal growth and academic achievement.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-lucknow.jpeg',
     alt: 'Lucknow montage',
   },
   {
@@ -15209,7 +15209,7 @@ export const cityData = [
       "Experience the vibrant academic community of Jakarta, where learning knows no boundaries and opportunities abound. Whether you aspire to pursue cutting-edge research, gain hands-on experience, or expand your global network, Jakarta's universities and colleges provide the perfect platform for academic and personal growth.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-jakarta.jpeg',
     alt: 'Jakarta skyline',
   },
   {
@@ -15248,7 +15248,7 @@ export const cityData = [
       "Immerse yourself in the vibrant academic community of Dhaka, where learning transcends boundaries and possibilities are endless. Whether you seek a rigorous academic program, hands-on research experience, or a multicultural learning environment, Dhaka's universities and colleges offer the perfect blend of tradition and innovation for your educational journey.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-dhaka.jpeg',
     alt: 'Dhaka skyline',
   },
   {
@@ -15287,7 +15287,7 @@ export const cityData = [
       "Immerse yourself in the vibrant academic community of Chongqing, where learning knows no bounds and opportunities abound. Whether you aspire to pursue cutting-edge research, engage in cultural exchange, or build a rewarding career, Chongqing's universities and colleges offer the perfect platform to turn your academic dreams into reality.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-chongqing.jpeg',
     alt: 'Chongqing skyline',
   },
   {
@@ -15326,7 +15326,7 @@ export const cityData = [
       "Immerse yourself in Karachi's vibrant educational community, where learning transcends boundaries and opportunities abound. Whether you seek to pursue cutting-edge research, engage in community service, or embark on a journey of self-discovery, Karachi's universities and colleges offer the perfect platform to realize your academic aspirations and ambitions.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-karachi.jpeg',
     alt: 'Karachi skyline',
   },
   {
@@ -15365,7 +15365,7 @@ export const cityData = [
       "Immerse yourself in Lagos's vibrant academic community, where education transcends boundaries and possibilities abound. Whether you aspire to pursue cutting-edge research, foster entrepreneurship, or engage in community development, Lagos's universities and colleges offer the perfect platform to realize your academic and professional aspirations.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-lagos_nigeria.jpeg',
     alt: 'Lagos skyline',
   },
   {
@@ -15404,7 +15404,7 @@ export const cityData = [
       "Immerse yourself in Osaka's dynamic academic environment, where diversity sparks innovation and excellence. Whether you aim to pursue groundbreaking research, unleash your creative potential, or embark on an entrepreneurial journey, Osaka's universities and colleges offer endless opportunities for academic and personal fulfillment.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-osaka.jpeg',
     alt: 'Osaka city skyline',
   },
   {
@@ -15443,7 +15443,7 @@ export const cityData = [
       "Immerse yourself in Rio de Janeiro's vibrant academic community, where diversity meets excellence. Whether you seek to pursue cutting-edge research, unleash your creative potential, or expand your professional horizons, Rio's universities and colleges offer unparalleled opportunities for academic and personal growth.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-rio_de_janeiro.jpeg',
     alt: 'Aerial view of Copacabana Beach in Rio de Janeiro',
   },
   {
@@ -15482,7 +15482,7 @@ export const cityData = [
       "Immerse yourself in Guangzhou's vibrant academic community, where diversity meets excellence. Whether you aspire to pursue cutting-edge research, unleash your creative potential, or embark on a journey of personal and professional growth, Guangzhou's universities and colleges offer unparalleled opportunities for academic advancement and career development.",
     ],
 
-    image_url: '',
+    image_url: '/cities/academic-jobs-in-guangzhou.jpeg',
     alt: 'Guangzhou skyline in the evening',
   },
 ];
