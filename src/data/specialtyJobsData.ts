@@ -151,7 +151,7 @@ export const specialtyJobsData = [
       `Signal Processing`,
       `Electrical Systems`,
     ],
-    image_url: `/specialty-jobs/electrical-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An image capturing the essence of Electrical Engineering, showing an engineer working on a complex circuit board, symbolizing innovation and precision`,
   },
   {
@@ -223,7 +223,7 @@ export const specialtyJobsData = [
       `Material Characterization`,
       `Sustainable Materials`,
     ],
-    image_url: `/specialty-jobs/materials-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image showing a materials engineer examining a newly developed material under a microscope, highlighting the innovative and detailed nature of the field`,
   },
   {
@@ -295,7 +295,7 @@ export const specialtyJobsData = [
       `Electronic Devices`,
       `Technology Innovation`,
     ],
-    image_url: `/specialty-jobs/electronics-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An image capturing the essence of Electronics, showcasing an engineer working on an intricate electronic device, symbolizing the meticulous and innovative nature of the field`,
   },
   {
@@ -367,7 +367,7 @@ export const specialtyJobsData = [
       `Technological Innovation`,
       `Interdisciplinary Research`,
     ],
-    image_url: `/specialty-jobs/engineering-physics.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An image illustrating the intersection of physics and engineering, showcasing a professional working on advanced computational models or experimental setups in a high-tech laboratory`,
   },
   {
@@ -439,7 +439,7 @@ export const specialtyJobsData = [
       `Materials Science`,
       `Product Design`,
     ],
-    image_url: `/specialty-jobs/mechanical-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspiring image showing a mechanical engineer working on an innovative project, capturing the essence of creativity and precision in the field`,
   },
   {
@@ -511,7 +511,7 @@ export const specialtyJobsData = [
       `Material Development`,
       `Environmental Sustainability`,
     ],
-    image_url: `/specialty-jobs/chemical-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An image showcasing a chemical engineer at work in a lab, surrounded by advanced equipment, highlighting the blend of science and technology in the field`,
   },
   {
@@ -583,7 +583,7 @@ export const specialtyJobsData = [
       `Quality Management`,
       `Systems Optimization`,
     ],
-    image_url: `/specialty-jobs/systems-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An image depicting a systems engineer at the helm of a complex project, showcasing the integration of multiple engineering disciplines to achieve a unified goal`,
   },
   {
@@ -655,7 +655,7 @@ export const specialtyJobsData = [
       `Machine Learning`,
       `Biomedical Signal Processing`,
     ],
-    image_url: `/specialty-jobs/signal-processing.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image illustrating the complex world of signal processing, showing a professional analyzing waveforms on a monitor, symbolizing the blend of technology and analysis in the field`,
   },
   {
@@ -727,7 +727,7 @@ export const specialtyJobsData = [
       `Healthcare Technologies`,
       `Biomechanics`,
     ],
-    image_url: `/specialty-jobs/biomedical-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An image showcasing a biomedical engineer working on a cutting-edge medical device or conducting research in a lab, highlighting the integration of engineering and life sciences`,
   },
   {
@@ -799,7 +799,7 @@ export const specialtyJobsData = [
       `Regenerative Medicine`,
       `Sustainable Biotechnology`,
     ],
-    image_url: `/specialty-jobs/bioengineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An image capturing the essence of bioengineering, showing a professional in a lab setting working on bio-based materials or technologies, illustrating the intersection of biology and engineering`,
   },
   {
@@ -871,7 +871,7 @@ export const specialtyJobsData = [
       'Audio Technology',
       'Vibration Analysis',
     ],
-    image_url: '/specialty-jobs/acoustic-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An acoustic engineer adjusting advanced audio equipment in a sound testing lab, showcasing the precision and expertise in the field',
   },
   {
@@ -937,7 +937,7 @@ export const specialtyJobsData = [
       'Royal Aeronautical Society (RAeS) - `https://www.aerosociety.com`',
     ],
     tags: ['Aerospace', 'Aircraft Design', 'Aviation', 'Aerodynamics'],
-    image_url: '/specialty-jobs/aeronautical-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An aeronautical engineer reviewing aircraft blueprints with a model plane in the background, symbolizing the blend of theory and practical application in the field',
   },
   {
@@ -1009,7 +1009,7 @@ export const specialtyJobsData = [
       'Astronautics',
       'Aeronautics',
     ],
-    image_url: '/specialty-jobs/aerospace-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An aerospace engineer analyzing aerodynamic data on a computer screen with a model spacecraft in the background, highlighting the innovative nature of the field',
   },
   {
@@ -1081,7 +1081,7 @@ export const specialtyJobsData = [
       'Irrigation Technology',
       'Farm Machinery',
     ],
-    image_url: '/specialty-jobs/agricultural-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An agricultural engineer using advanced technology to monitor crop health in a field, symbolizing the integration of engineering and agriculture',
   },
   {
@@ -1153,7 +1153,7 @@ export const specialtyJobsData = [
       'Audio Technology',
       'Sound Quality',
     ],
-    image_url: '/specialty-jobs/audio-systems-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An audio systems engineer adjusting sound levels on a mixing console, illustrating the precision and expertise required in the field',
   },
   {
@@ -1225,7 +1225,7 @@ export const specialtyJobsData = [
       'Electric Vehicles',
       'Automotive Safety',
     ],
-    image_url: '/specialty-jobs/automotive-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An automotive engineer working on a car prototype in a high-tech lab, reflecting the innovative and hands-on nature of the field',
   },
   {
@@ -1296,7 +1296,7 @@ export const specialtyJobsData = [
       'Autonomous Vehicles',
       'Vehicle Safety Systems',
     ],
-    image_url: '/specialty-jobs/automotive-systems-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: "An automotive systems engineer testing advanced vehicle safety systems in a high-tech lab, highlighting the role's focus on innovation and safety",
   },
   {
@@ -1365,7 +1365,7 @@ export const specialtyJobsData = [
       'Vehicle Safety',
       'Sustainable Mobility',
     ],
-    image_url: '/specialty-jobs/automotive-technology.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Cutting-edge automotive technology in action, showcasing a high-tech electric vehicle undergoing safety tests with engineers in the background',
   },
   {
@@ -1436,7 +1436,7 @@ export const specialtyJobsData = [
       'Environmental Conservation',
       'Bioprocess Engineering',
     ],
-    image_url: '/specialty-jobs/biosystems-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An engineer in the field analyzing crop health as part of a sustainable agricultural system, highlighting the practical application of biosystems engineering',
   },
   {
@@ -1505,7 +1505,7 @@ export const specialtyJobsData = [
       'Green Building',
       'Environmental Protection',
     ],
-    image_url: '/specialty-jobs/civil-environmental-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An engineer surveying a sustainable urban development project, emphasizing the integration of green spaces and modern infrastructure',
   },
   {
@@ -1571,7 +1571,7 @@ export const specialtyJobsData = [
       'Structural Engineering',
       'Urban Planning',
     ],
-    image_url: '/specialty-jobs/civil-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Innovative civil engineering project showcasing a blend of modern architecture and sustainable design in an urban setting',
   },
   {
@@ -1637,7 +1637,7 @@ export const specialtyJobsData = [
       '5G Technology',
       'Telecommunications',
     ],
-    image_url: '/specialty-jobs/communication-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Innovative communication engineering project showcasing cutting-edge technology and connectivity solutions in a modern setting',
   },
   {
@@ -1703,7 +1703,7 @@ export const specialtyJobsData = [
       'Data Analysis',
       'Simulation and Modeling',
     ],
-    image_url: '/specialty-jobs/computational-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Cutting-edge computational engineering project showcasing sophisticated computer simulations and data analysis on multiple monitors',
   },
   {
@@ -1769,7 +1769,7 @@ export const specialtyJobsData = [
       'Software Development',
       'Hardware Engineering',
     ],
-    image_url: '/specialty-jobs/computer-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Innovative computer engineering project with engineers working on advanced computer hardware and software solutions',
   },
   {
@@ -1830,7 +1830,7 @@ export const specialtyJobsData = [
       'International Federation of Automatic Control (IFAC) - `https://www.ifac-control.org`',
     ],
     tags: ['Automation', 'Robotics', 'System Dynamics', 'Feedback Control'],
-    image_url: '/specialty-jobs/control-systems-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Advanced control systems engineering setup showcasing robotics, automation machinery, and engineers at work',
   },
   {
@@ -1896,7 +1896,7 @@ export const specialtyJobsData = [
       'Green Infrastructure',
       'Ecosystem Restoration',
     ],
-    image_url: '/specialty-jobs/ecological-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Innovative ecological engineering projects showcasing sustainable designs and green technologies in harmony with nature',
   },
   {
@@ -1963,7 +1963,7 @@ export const specialtyJobsData = [
       'Green Technology',
       'Energy Efficiency',
     ],
-    image_url: '/specialty-jobs/energy-technology.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Innovative energy technology solutions showcasing renewable energy sources like wind turbines, solar panels, and hydroelectric power plants',
   },
   {
@@ -2033,7 +2033,7 @@ export const specialtyJobsData = [
       'Technology in Education',
       'Academic Research',
     ],
-    image_url: '/specialty-jobs/engineering-education.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Innovative classroom setting with students engaged in a hands-on engineering project, showcasing the integration of technology and practical learning in engineering education',
   },
   {
@@ -2104,7 +2104,7 @@ export const specialtyJobsData = [
       'Green Technology',
       'Renewable Energy',
     ],
-    image_url: '/specialty-jobs/environmental-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Innovative environmental engineering project showcasing sustainable water treatment facility amidst natural landscape',
   },
   {
@@ -2173,7 +2173,7 @@ export const specialtyJobsData = [
       'Building Safety',
       'Fire Prevention',
     ],
-    image_url: '/specialty-jobs/fire-safety-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Dynamic visual of a Fire Safety Engineer inspecting advanced fire protection systems within a modern building',
   },
   {
@@ -2241,7 +2241,7 @@ export const specialtyJobsData = [
       'Slope Stability',
       'Environmental Geotechnics',
     ],
-    image_url: '/specialty-jobs/geotechnical-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'A geotechnical engineer analyzing soil samples in front of a massive construction project, showcasing the blend of nature and engineered safety.',
   },
   {
@@ -2309,7 +2309,7 @@ export const specialtyJobsData = [
       'Sustainable Development',
       'Irrigation Systems',
     ],
-    image_url: '/specialty-jobs/hydraulics-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An engineer in a hard hat examining a massive hydraulic dam structure, representing the monumental impact of hydraulics engineering.',
   },
   {
@@ -2375,7 +2375,7 @@ export const specialtyJobsData = [
       'Artificial Intelligence',
       'Pattern Recognition',
     ],
-    image_url: '/specialty-jobs/image-processing.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'A professional working on advanced image processing software, showcasing the intersection of technology and creativity in this field.',
   },
   {
@@ -2442,7 +2442,7 @@ export const specialtyJobsData = [
       'Quality Control',
       'Operational Excellence',
     ],
-    image_url: '/specialty-jobs/industrial-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An industrial engineer optimizing complex production processes on a digital interface, showcasing the intersection of technology and efficiency.',
   },
   {
@@ -2509,7 +2509,7 @@ export const specialtyJobsData = [
       'Process Engineering',
       'Instrumentation',
     ],
-    image_url: '/specialty-jobs/instrumentation-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An instrumentation engineer calibrating advanced sensor systems in a high-tech laboratory, symbolizing the confluence of technology and precision.',
   },
   {
@@ -2577,7 +2577,7 @@ export const specialtyJobsData = [
       'Process Optimization',
       'CAD/CAM',
     ],
-    image_url: '/specialty-jobs/manufacturing-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'A group of engineers collaborating on the design and optimization of manufacturing processes, symbolizing innovation and efficiency in the field of manufacturing engineering.',
   },
   {
@@ -2645,7 +2645,7 @@ export const specialtyJobsData = [
       'Offshore Engineering',
       'Ocean Technology',
     ],
-    image_url: '/specialty-jobs/marine-engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Illustration of a modern marine vessel with engineers working on its design, symbolizing innovation and expertise in marine engineering.',
   },
   {
@@ -2711,7 +2711,7 @@ export const specialtyJobsData = [
       'Mechanical Systems',
       'Engineering',
     ],
-    image_url: '/specialty-jobs/mechanics.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Illustration of gears, pulleys, and mechanical components symbolizing the principles of mechanics and engineering.',
   },
   {
@@ -2776,7 +2776,7 @@ export const specialtyJobsData = [
       'Electrical Engineering',
       'Mechanical Engineering',
     ],
-    image_url: '/specialty-jobs/mechatronics.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Illustration of a robotic arm assembling electronic components, representing the field of mechatronics and automation.',
   },
   {
@@ -2844,7 +2844,7 @@ export const specialtyJobsData = [
       'Civil Engineering',
       'Mechanical Engineering',
     ],
-    image_url: '/specialty-jobs/military_engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Illustration of military engineers working on defense infrastructure, representing the field of military engineering and security technology.',
   },
   {
@@ -2908,7 +2908,7 @@ export const specialtyJobsData = [
       'Geotechnical Engineering',
       'Environmental Sustainability',
     ],
-    image_url: '/specialty-jobs/mining_engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Illustration of mining engineers working at a mining site, representing the field of mining engineering and resource extraction.',
   },
   {
@@ -2977,7 +2977,7 @@ export const specialtyJobsData = [
       'Radiation Protection',
       'Clean Energy',
     ],
-    image_url: '/specialty-jobs/nuclear_engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Illustration of nuclear engineers working at a nuclear power plant, representing the field of nuclear engineering and atomic energy.',
   },
   {
@@ -3037,7 +3037,7 @@ export const specialtyJobsData = [
       'SPIE - The International Society for Optics and Photonics - `https://www.spie.org`',
     ],
     tags: ['Photonics', 'Light Manipulation', 'Optical Systems', 'Innovation'],
-    image_url: '/specialty-jobs/optical_engineering.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'Illustration of optical engineers working on advanced optical systems, representing the field of optical engineering and innovation.',
   },
   {
@@ -3112,7 +3112,7 @@ export const specialtyJobsData = [
       `Sustainable Energy`,
       `Technology in Energy`,
     ],
-    image_url: `/specialty-jobs/petroleum-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image showcasing petroleum engineers at work, possibly on a drilling platform or analyzing geological data`,
   },
   {
@@ -3185,7 +3185,7 @@ export const specialtyJobsData = [
       `Product Development`,
       `Continuous Improvement`,
     ],
-    image_url: `/specialty-jobs/quality-assurance-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An image depicting a Quality Assurance Engineer analyzing data on a computer screen, symbolizing attention to detail and precision`,
   },
   {
@@ -3257,7 +3257,7 @@ export const specialtyJobsData = [
       `High-Speed Rail`,
       `Railway Systems`,
     ],
-    image_url: `/specialty-jobs/railway-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An image showcasing engineers inspecting rail tracks, symbolizing the blend of fieldwork and technical expertise in Railway Engineering`,
   },
   {
@@ -3330,7 +3330,7 @@ export const specialtyJobsData = [
       `Solar Energy`,
       `Wind Turbines`,
     ],
-    image_url: `/specialty-jobs/renewable-energy.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspirational image showcasing a mix of renewable energy sources like wind turbines, solar panels, and a hydroelectric dam, representing the diverse fields of Renewable Energy Engineering`,
   },
   {
@@ -3402,7 +3402,7 @@ export const specialtyJobsData = [
       `Machine Learning`,
       `Future Technologies`,
     ],
-    image_url: `/specialty-jobs/robotics-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image showcasing a robotics engineer working on a humanoid robot in a high-tech lab, highlighting the innovative and futuristic aspect of the field`,
   },
   {
@@ -3474,7 +3474,7 @@ export const specialtyJobsData = [
       `Risk Management`,
       `Ergonomics`,
     ],
-    image_url: `/specialty-jobs/safety-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An impactful image showing a safety engineer in a hard hat inspecting a manufacturing plant, symbolizing the proactive and preventive nature of the field`,
   },
   {
@@ -3546,7 +3546,7 @@ export const specialtyJobsData = [
       `Strategic IT`,
       `Digital Ecosystems`,
     ],
-    image_url: `/specialty-jobs/technology-management.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An image capturing a technology management professional leading a team meeting, with digital screens displaying data analytics in the background, symbolizing the blend of management and technology`,
   },
   {
@@ -3617,7 +3617,7 @@ export const specialtyJobsData = [
       `5G Technology`,
       `Internet Infrastructure`,
     ],
-    image_url: `/specialty-jobs/telecommunications-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An image showcasing telecommunications engineers working on a network server room, emphasizing the intricate and technical nature of the field`,
   },
   {
@@ -3689,7 +3689,7 @@ export const specialtyJobsData = [
       `Sustainable Transit`,
       `Intelligent Transport Systems`,
     ],
-    image_url: `/specialty-jobs/transportation-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspiring image of a transportation engineer analyzing a complex network of roads and transit systems, symbolizing the intricate and impactful nature of the field`,
   },
   {
@@ -3754,7 +3754,7 @@ export const specialtyJobsData = [
       `Food Security`,
       `Agribusiness Management`,
     ],
-    image_url: `/specialty-jobs/agricultural-economics.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image showcasing diverse aspects of Agricultural Economics and Agribusiness, from field research to economic analysis`,
   },
   {
@@ -3818,7 +3818,7 @@ export const specialtyJobsData = [
       `Food Security`,
       `Environmental Conservation`,
     ],
-    image_url: `/specialty-jobs/agricultural-extension.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspiring image of an Agricultural Extension Officer working in the field, engaging with farmers and showcasing sustainable farming practices.`,
   },
   {
@@ -3883,7 +3883,7 @@ export const specialtyJobsData = [
       `Environmental Stewardship`,
       `Agricultural Research`,
     ],
-    image_url: `/specialty-jobs/agriculture.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A vibrant image capturing the essence of agriculture, from high-tech farm machinery in action to the serene beauty of traditional fields at sunrise.`,
   },
   {
@@ -3948,7 +3948,7 @@ export const specialtyJobsData = [
       `Food Security`,
       `Agricultural Technology`,
     ],
-    image_url: `/specialty-jobs/agronomy.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspiring image of an agronomist in the field, examining crops with a backdrop of advanced agricultural technology and lush farmland.`,
   },
   {
@@ -4012,7 +4012,7 @@ export const specialtyJobsData = [
       `Wildlife Conservation`,
       `Animal Nutrition`,
     ],
-    image_url: `/specialty-jobs/animal-science.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image showcasing an animal scientist in the field, interacting with livestock or conducting research in a laboratory setting, embodying the diverse and impactful nature of the field.`,
   },
   {
@@ -4076,7 +4076,7 @@ export const specialtyJobsData = [
       `Ecosystem Management`,
       `Fisheries Science`,
     ],
-    image_url: `/specialty-jobs/aquaculture.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An immersive image capturing the essence of aquaculture, featuring specialists at work in vibrant aquatic farms or research facilities, highlighting the innovative and sustainable approach to seafood production.`,
   },
   {
@@ -4140,7 +4140,7 @@ export const specialtyJobsData = [
       `Crop Improvement`,
       `Agricultural Biotechnology`,
     ],
-    image_url: `/specialty-jobs/crop-science.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspiring image showing a crop scientist in the field or laboratory, actively engaged in research with a backdrop of lush crops or advanced scientific instruments, symbolizing the blend of nature and technology in crop science.`,
   },
   {
@@ -4204,7 +4204,7 @@ export const specialtyJobsData = [
       `Environmental Advocacy`,
       `Ecological Research`,
     ],
-    image_url: `/specialty-jobs/environmental-science.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image depicting an environmental scientist at work, whether in the field with the backdrop of a vibrant ecosystem or in a lab analyzing data, highlighting the impact and diversity of careers in environmental science.`,
   },
   {
@@ -4269,7 +4269,7 @@ export const specialtyJobsData = [
       `Biodiversity`,
       `Climate Change Mitigation`,
     ],
-    image_url: `/specialty-jobs/environmental-ecology-forestry.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspiring image capturing the essence of careers in Environmental Science, Ecology, and Forestry, showcasing professionals engaged in field research, conservation activities, or sustainable forest management, highlighting their vital role in preserving our natural world.`,
   },
   {
@@ -4333,7 +4333,7 @@ export const specialtyJobsData = [
       `Sustainable Food Systems`,
       `Gastronomic Innovation`,
     ],
-    image_url: `/specialty-jobs/food-science.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image showcasing a food scientist in a lab or a test kitchen, experimenting with food samples or analyzing nutritional content, reflecting the innovative and essential nature of the field.`,
   },
   {
@@ -4397,7 +4397,7 @@ export const specialtyJobsData = [
       `Wildlife Habitat Preservation`,
       `Climate Change Resilience`,
     ],
-    image_url: `/specialty-jobs/forestry.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspiring image showing foresters at work in the field, involved in activities like tree planting, habitat restoration, or conducting ecological research, highlighting the hands-on and impactful nature of forestry work.`,
   },
   {
@@ -4461,7 +4461,7 @@ export const specialtyJobsData = [
       `Landscape Planning`,
       `Environmental Conservation`,
     ],
-    image_url: `/specialty-jobs/horticulture-landscape-architecture.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspiring image showing landscape architects and horticulturists at work, planning a sustainable garden or designing a green urban space, illustrating the blend of nature and design in their professions.`,
   },
   {
@@ -4525,7 +4525,7 @@ export const specialtyJobsData = [
       `Sustainable Agriculture`,
       `Botanical Studies`,
     ],
-    image_url: `/specialty-jobs/horticulture.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspiring image showing a horticulturist at work, either in a lush garden setting, engaged in plant research in a lab, or designing a sustainable landscape, highlighting the diverse aspects of horticulture.`,
   },
   {
@@ -4590,7 +4590,7 @@ export const specialtyJobsData = [
       `Agricultural Technology`,
       `Environmental Conservation`,
     ],
-    image_url: `/specialty-jobs/other-agriculture-faculty.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image capturing the essence of specialized agricultural fields, showing professionals at work in settings like research labs, sustainable farms, or educational institutions, highlighting innovation and sustainability in agriculture.`,
   },
   {
@@ -4654,7 +4654,7 @@ export const specialtyJobsData = [
       `Agricultural Sustainability`,
       `Ecosystem Health`,
     ],
-    image_url: `/specialty-jobs/plant-soil-science.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image showcasing plant and soil scientists at work, whether in the lab analyzing soil samples, in the field examining crops, or using technology to map out sustainable land use, reflecting the innovative and vital nature of their work.`,
   },
   {
@@ -4718,7 +4718,7 @@ export const specialtyJobsData = [
       `Public Health Nutrition`,
       `Food Fortification`,
     ],
-    image_url: `/specialty-jobs/plant-animal-human-nutrition.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image showing experts in nutritional science conducting research in a lab, consulting on dietary plans, or evaluating plant health in an agricultural setting, illustrating the comprehensive scope of the field.`,
   },
   {
@@ -4783,7 +4783,7 @@ export const specialtyJobsData = [
       `Food Safety`,
       `Sustainable Practices`,
     ],
-    image_url: `/specialty-jobs/plant-animal-health.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An impactful image showing specialists in the field inspecting crops for signs of disease or pests and veterinarians caring for animals, highlighting the hands-on and critical nature of work in plant protection and animal health.`,
   },
   {
@@ -4847,7 +4847,7 @@ export const specialtyJobsData = [
       `Geochemistry`,
       `Pedology`,
     ],
-    image_url: `/specialty-jobs/soil-science.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspiring image of a soil scientist in the field, conducting soil sampling or analysis, with the backdrop of a lush agricultural landscape or a state-of-the-art laboratory, showcasing the blend of nature and science in the profession.`,
   },
   {
@@ -4911,7 +4911,7 @@ export const specialtyJobsData = [
       `Green Technologies`,
       `Pollution Prevention`,
     ],
-    image_url: `/specialty-jobs/waste-management.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging and dynamic image showcasing waste management professionals at work, whether they're innovating in recycling plants, conducting community workshops, or implementing sustainable waste solutions in urban environments, highlighting the positive impact of their work on society and the planet.`,
   },
   {
@@ -4975,7 +4975,7 @@ export const specialtyJobsData = [
       `Environmental Sustainability`,
       `Water Resource Management`,
     ],
-    image_url: `/specialty-jobs/water-science.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image of water scientists at work, possibly testing water quality in a natural setting or analyzing data in a high-tech lab, illustrating the balance between fieldwork and technology in preserving aquatic health.`,
   },
   {
@@ -5039,7 +5039,7 @@ export const specialtyJobsData = [
       `Ethnolinguistics`,
       `Language Documentation`,
     ],
-    image_url: `/specialty-jobs/anthropological-linguistics.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image capturing an anthropological linguist in the midst of fieldwork, perhaps recording a conversation with indigenous community members or analyzing linguistic data, highlighting the dynamic interplay between language and culture.`,
   },
   {
@@ -5103,7 +5103,7 @@ export const specialtyJobsData = [
       `Human Evolution`,
       `Social Dynamics`,
     ],
-    image_url: `/specialty-jobs/anthropology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A captivating image depicting an anthropologist in the field, perhaps engaged in an excavation, conducting an interview in a remote village, or analyzing artifacts, showcasing the adventurous and diverse nature of anthropological work.`,
   },
   {
@@ -5167,7 +5167,7 @@ export const specialtyJobsData = [
       `Artifact Conservation`,
       `Historical Research`,
     ],
-    image_url: `/specialty-jobs/archaeology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspiring image of an archaeological dig in progress, with archaeologists meticulously uncovering artifacts, set against the backdrop of a significant historical site, capturing the essence of archaeological discovery and exploration.`,
   },
   {
@@ -5231,7 +5231,7 @@ export const specialtyJobsData = [
       `Forensic Analysis`,
       `Conservation`,
     ],
-    image_url: `/specialty-jobs/biological-anthropology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image showcasing a biological anthropologist at work, perhaps examining primate behavior in a natural habitat or analyzing ancient human remains, encapsulating the essence of discovery and research in the field.`,
   },
   {
@@ -5295,7 +5295,7 @@ export const specialtyJobsData = [
       `Cultural Practices`,
       `Human Societies`,
     ],
-    image_url: `/specialty-jobs/cultural-anthropology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A compelling image showing a cultural anthropologist engaging with a diverse community, highlighting the interactive and immersive nature of their work, embodying the essence of cultural exploration and understanding.`,
   },
   {
@@ -5360,7 +5360,7 @@ export const specialtyJobsData = [
       `Social Research`,
       `Ethnology Careers`,
     ],
-    image_url: `/specialty-jobs/ethnology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image capturing an ethnologist in the midst of field research, interacting with a local community, showcasing the immersive and explorative nature of ethnological work.`,
   },
   {
@@ -5425,7 +5425,7 @@ export const specialtyJobsData = [
       `Cultural Evolution`,
       `Historical Societies`,
     ],
-    image_url: `/specialty-jobs/historical-anthropology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An evocative image of a historical anthropologist examining ancient artifacts or engaging with traditional communities, highlighting the blend of past and present in the field.`,
   },
   {
@@ -5490,7 +5490,7 @@ export const specialtyJobsData = [
       `Ethnography`,
       `Healthcare Policy`,
     ],
-    image_url: `/specialty-jobs/medical-anthropology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image depicting a medical anthropologist in the field, perhaps engaged in a conversation with community members or conducting ethnographic research, emphasizing the human and cultural aspect of health.`,
   },
   {
@@ -5556,7 +5556,7 @@ export const specialtyJobsData = [
       `Human Societies`,
       `Cultural Relativism`,
     ],
-    image_url: `/specialty-jobs/social-anthropology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An image capturing a social anthropologist in the field, possibly engaging in a community gathering or ritual, symbolizing the immersive and interactive nature of their work within diverse cultures.`,
   },
   {
@@ -5619,7 +5619,7 @@ export const specialtyJobsData = [
       `Sustainable Design`,
       `Urban Planning`,
     ],
-    image_url: `/specialty-jobs/architecture.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspiring image of an architect with blueprints in front of a modern building, symbolizing the blend of creativity and technical expertise in the field of architecture.`,
   },
   {
@@ -5682,7 +5682,7 @@ export const specialtyJobsData = [
       `Urban Design`,
       `Interior Design`,
     ],
-    image_url: `/specialty-jobs/architecture-design.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A captivating image showcasing the intersection of architecture and design with a modern building and a sketchbook with design drafts, symbolizing the blend of creativity, innovation, and practical application in this field.`,
   },
   {
@@ -5747,7 +5747,7 @@ export const specialtyJobsData = [
       `Graphic Design`,
       `Creative Communication`,
     ],
-    image_url: `/specialty-jobs/communication-design.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A compelling image showing a designer at work with digital design tools, surrounded by vibrant graphics and brand elements, symbolizing the fusion of art and strategy in Communication Design.`,
   },
   {
@@ -5811,7 +5811,7 @@ export const specialtyJobsData = [
       `Aesthetic Movements`,
       `Artistic Innovations`,
     ],
-    image_url: `/specialty-jobs/design-history.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An intriguing collage of various historical design elements ranging from ancient pottery to Art Deco architecture, symbolizing the diverse and rich history of design across different cultures and eras.`,
   },
   {
@@ -5875,7 +5875,7 @@ export const specialtyJobsData = [
       `Apparel Industry`,
       `Style and Trends`,
     ],
-    image_url: `/specialty-jobs/fashion-textile-design.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A mosaic of vibrant fabric swatches and sleek fashion sketches, symbolizing the fusion of traditional textile craftsmanship with cutting-edge fashion design.`,
   },
   {
@@ -5939,7 +5939,7 @@ export const specialtyJobsData = [
       `Trendsetting`,
       `Cultural Expression`,
     ],
-    image_url: `/specialty-jobs/fashion-design.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A designer's sketchpad filled with vibrant illustrations of avant-garde outfits, surrounded by fabric swatches and sewing tools, capturing the essence of fashion design.`,
   },
   {
@@ -6002,7 +6002,7 @@ export const specialtyJobsData = [
       `Digital Media`,
       `Typography`,
     ],
-    image_url: `/specialty-jobs/graphic-design.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A vibrant graphic design workspace with a high-end computer, digital drawing tablet, color swatches, and creative sketches, depicting the dynamic and colorful world of graphic design.`,
   },
   {
@@ -6065,7 +6065,7 @@ export const specialtyJobsData = [
       `Sustainability`,
       `Ergonomics`,
     ],
-    image_url: `/specialty-jobs/industrial-design.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An industrial designer's workspace with sketches, product models, and design tools, highlighting the creative process of transforming ideas into tangible, user-centric products.`,
   },
   {
@@ -6128,7 +6128,7 @@ export const specialtyJobsData = [
       `Ergonomics`,
       `Aesthetic Spaces`,
     ],
-    image_url: `/specialty-jobs/interior-design.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A modern and stylish interior design workspace featuring a blend of artistic elements, innovative furniture, and vibrant color schemes, reflecting the creative process of designing functional and aesthetically pleasing spaces.`,
   },
   {
@@ -6191,7 +6191,7 @@ export const specialtyJobsData = [
       `Eco-Friendly Design`,
       `Community Well-being`,
     ],
-    image_url: `/specialty-jobs/landscape-architecture.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A beautifully designed public park showcasing innovative landscape architecture, with lush greenery, sustainable water features, and interactive spaces that foster community engagement and environmental stewardship.`,
   },
   {
@@ -6254,7 +6254,7 @@ export const specialtyJobsData = [
       `Sustainability`,
       `Technological Integration`,
     ],
-    image_url: `/specialty-jobs/product-design.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An innovative workspace with a product designer brainstorming over a sustainable, user-friendly product prototype, reflecting the essence of modern product design.`,
   },
   {
@@ -6317,7 +6317,7 @@ export const specialtyJobsData = [
       `User Experience`,
       `Software Development`,
     ],
-    image_url: `/specialty-jobs/software-design.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A creative workspace featuring a software designer brainstorming innovative solutions on a digital interface, symbolizing the fusion of technology and creativity in software design.`,
   },
   {
@@ -6379,7 +6379,7 @@ export const specialtyJobsData = [
       `Environmental Design`,
       `Land Use Planning`,
     ],
-    image_url: `/specialty-jobs/spatial-planning.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A vibrant cityscape illustrating a harmonious blend of green spaces, urban areas, and water bodies, conceptualizing the essence of spatial planning in creating sustainable and livable communities.`,
   },
   {
@@ -6443,7 +6443,7 @@ export const specialtyJobsData = [
       `Fabric Printing`,
       `Textile Technology`,
     ],
-    image_url: `/specialty-jobs/textile-design.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A designer's workspace with colorful fabric swatches, sketches, and a digital tablet, highlighting the creative process in textile design.`,
   },
   {
@@ -6507,7 +6507,7 @@ export const specialtyJobsData = [
       `Public Spaces`,
       `Community Engagement`,
     ],
-    image_url: `/specialty-jobs/urban-design.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An aerial view of a beautifully planned urban space, showcasing green parks, pedestrian pathways, and harmonious building layouts, embodying the essence of modern urban design.`,
   },
   {
@@ -6571,7 +6571,7 @@ export const specialtyJobsData = [
       `Artistic Innovation`,
       `Cultural Impact`,
     ],
-    image_url: `/specialty-jobs/art.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A bustling art studio filled with vibrant canvases, sculptures in progress, and an artist deeply engrossed in painting, embodying the creative spirit of the art world.`,
   },
   {
@@ -6634,7 +6634,7 @@ export const specialtyJobsData = [
       `Artistic Influence`,
       `Historiography`,
     ],
-    image_url: `/specialty-jobs/art-history.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An art historian deeply engrossed in an ancient manuscript, with iconic artworks from various eras adorning the background, symbolizing the journey through art's illustrious past.`,
   },
   {
@@ -6694,7 +6694,7 @@ export const specialtyJobsData = [
       `Arts Funding`,
       `Event Planning`,
     ],
-    image_url: `/specialty-jobs/arts-administration.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An arts administrator coordinating an art exhibition opening, with artists and guests mingling in a gallery adorned with contemporary artworks.`,
   },
   {
@@ -6754,7 +6754,7 @@ export const specialtyJobsData = [
       `Heritage Management`,
       `Creative Direction`,
     ],
-    image_url: `/specialty-jobs/arts-and-culture.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A curator arranging an art exhibit in a gallery, showcasing diverse cultural artifacts and contemporary artworks, with visitors engaging in thoughtful discussion around the pieces.`,
   },
   {
@@ -6814,7 +6814,7 @@ export const specialtyJobsData = [
       `Film Theory`,
       `Visual Arts`,
     ],
-    image_url: `/specialty-jobs/film-studies.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A film studies classroom with students analyzing a classic movie scene, surrounded by posters of iconic films and filmmaking equipment, embodying the essence of cinematic education.`,
   },
   {
@@ -6873,7 +6873,7 @@ export const specialtyJobsData = [
       `Cultural Impact`,
       `Artistic Craftsmanship`,
     ],
-    image_url: `/specialty-jobs/fine-applied-arts.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An artist's studio brimming with canvases and sculptures, juxtaposed with a modern design studio, showcasing the fusion of fine art and applied design, embodying the essence of creativity and functionality.`,
   },
   {
@@ -6932,7 +6932,7 @@ export const specialtyJobsData = [
       `Historical Legacy`,
       `Aesthetic Innovation`,
     ],
-    image_url: `/specialty-jobs/fine-arts.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A captivating artist's studio filled with vibrant canvases, sculptural materials, and the aura of creativity, symbolizing the essence and diversity of Fine Arts.`,
   },
   {
@@ -6991,7 +6991,7 @@ export const specialtyJobsData = [
       `Musical Innovation`,
       `Cultural Impact`,
     ],
-    image_url: `/specialty-jobs/music.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An evocative image capturing the essence of music, from the delicate touch of a pianist to the energetic performance of a rock band, embodying the diverse world of musical careers.`,
   },
   {
@@ -7052,7 +7052,7 @@ export const specialtyJobsData = [
       `Choreography`,
       `Dramaturgy`,
     ],
-    image_url: `/specialty-jobs/performing-arts.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A captivating image showcasing the vibrant world of performing arts, from the intense focus of an actor preparing backstage to the exhilarating moment of a dancer leaping on stage, embodying the diverse and dynamic nature of careers in this field.`,
   },
   {
@@ -7113,7 +7113,7 @@ export const specialtyJobsData = [
       `Gallery Management`,
       `Art Education`,
     ],
-    image_url: `/specialty-jobs/visual-arts.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An inspiring collage of visual arts elements including vibrant paintings, striking sculptures, captivating photographs, and groundbreaking digital art pieces, representing the diverse career paths in the visual arts sector.`,
   },
   {
@@ -7184,7 +7184,7 @@ export const specialtyJobsData = [
       `Wildlife Research`,
       `Conservation`,
     ],
-    image_url: `/specialty-jobs/animal-ethology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `Engaging image of an ethologist in the field, observing the intricate behaviors of wildlife, showcasing the connection between humans and animals.`,
   },
   {
@@ -7260,7 +7260,7 @@ export const specialtyJobsData = [
       `CRISPR`,
       `Bioinformatics`,
     ],
-    image_url: `/specialty-jobs/molecular-biology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A molecular biologist in a lab, surrounded by advanced equipment, deeply focused on an experiment that could unlock new understandings of genetic codes and life itself.`,
   },
   {
@@ -7331,7 +7331,7 @@ export const specialtyJobsData = [
       `Machine Learning`,
       `Personalized Medicine`,
     ],
-    image_url: `/specialty-jobs/bioinformatics.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A bioinformatician analyzing complex genetic data on a computer screen, highlighting the convergence of biology and technology in modern research labs.`,
   },
   {
@@ -7403,7 +7403,7 @@ export const specialtyJobsData = [
       `Bioprocessing`,
       `Bioinformatics`,
     ],
-    image_url: `/specialty-jobs/biological-engineering.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An image depicting the dynamic interplay between biology and engineering, showcasing a biological engineer at work in a lab, surrounded by bioreactors and genetic sequences, symbolizing the fusion of life sciences and technology.`,
   },
   {
@@ -7478,7 +7478,7 @@ export const specialtyJobsData = [
       `Conservation Biology`,
       `Biotechnology`,
     ],
-    image_url: `/specialty-jobs/biology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A biologist in a lab coat examining a DNA model, surrounded by plants and lab equipment, symbolizing the broad scope of biology from genetic to ecosystem level.`,
   },
   {
@@ -7549,7 +7549,7 @@ export const specialtyJobsData = [
       `Public Health`,
       `Data Science`,
     ],
-    image_url: `/specialty-jobs/biostatistics.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A biostatistician analyzing data on a computer, with graphs and biological data visualizations on the screen, highlighting the intersection of statistics and biology.`,
   },
   {
@@ -7624,7 +7624,7 @@ export const specialtyJobsData = [
       `Environmental Biotechnology`,
       `Synthetic Biology`,
     ],
-    image_url: `/specialty-jobs/biotechnology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An innovative biotechnology lab filled with advanced equipment and bioreactors, symbolizing the cutting-edge research and development in the field of biotechnology.`,
   },
   {
@@ -7696,7 +7696,7 @@ export const specialtyJobsData = [
       `Environmental Science`,
       `Phytochemistry`,
     ],
-    image_url: `/specialty-jobs/botany-plant-science.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A botanist in the field, surrounded by a diverse array of plants, meticulously studying and documenting plant species, showcasing the intersection of exploration, science, and nature conservation.`,
   },
   {
@@ -7771,7 +7771,7 @@ export const specialtyJobsData = [
       `Tumor Biology`,
       `Clinical Oncology`,
     ],
-    image_url: `/specialty-jobs/cancer-research.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A cancer researcher observing cancer cell cultures under a microscope, symbolizing the meticulous and impactful work done in the fight against cancer.`,
   },
   {
@@ -7847,7 +7847,7 @@ export const specialtyJobsData = [
       `Bioinformatics`,
       `Immunology`,
     ],
-    image_url: `/specialty-jobs/cell-biology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A cell biologist in a lab, intently studying cultures under a microscope, surrounded by advanced scientific equipment, highlighting the precision and dedication in the field of cell biology.`,
   },
   {
@@ -7921,7 +7921,7 @@ export const specialtyJobsData = [
       `Seasonal Affective Disorder`,
       `Jet Lag`,
     ],
-    image_url: `/specialty-jobs/chronobiology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A chronobiologist analyzing data on biological rhythms, showcasing charts and graphs of circadian patterns, in a lab setting that symbolizes the intersection of time, biology, and health.`,
   },
   {
@@ -7994,7 +7994,7 @@ export const specialtyJobsData = [
       `Computational Genomics`,
       `Biostatistics`,
     ],
-    image_url: `/specialty-jobs/computational-biology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A computational biologist analyzing complex genomic data on multiple computer screens, illustrating the intersection of computer science and biology in modern research labs.`,
   },
   {
@@ -8068,7 +8068,7 @@ export const specialtyJobsData = [
       `Evolutionary Developmental Biology`,
       `Cellular Differentiation`,
     ],
-    image_url: `/specialty-jobs/developmental-biology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A developmental biologist examining embryonic development samples under a microscope, surrounded by images of embryos and molecular models, highlighting the intricate study of life's beginnings.`,
   },
   {
@@ -8141,7 +8141,7 @@ export const specialtyJobsData = [
       `Ecosystem Restoration`,
       `Climate Change Adaptation`,
     ],
-    image_url: `/specialty-jobs/ecology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An ecologist in the field, surrounded by a lush ecosystem, meticulously documenting species and ecological interactions, embodying the spirit of exploration and conservation in ecology.`,
   },
   {
@@ -8213,7 +8213,7 @@ export const specialtyJobsData = [
       `Conservation Entomology`,
       `Agricultural Entomology`,
     ],
-    image_url: `/specialty-jobs/entomology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An entomologist in the field, closely examining a leaf with a magnifying glass, revealing a diverse world of insects, highlighting the intricate and essential role of entomology in understanding nature.`,
   },
   {
@@ -8285,7 +8285,7 @@ export const specialtyJobsData = [
       `Paleontology`,
       `Conservation Genetics`,
     ],
-    image_url: `/specialty-jobs/evolutionary-biology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An evolutionary biologist in the field, examining fossil layers or observing wildlife, symbolizing the quest to connect present biodiversity with past evolutionary events, highlighting the depth and breadth of evolutionary studies.`,
   },
   {
@@ -8361,7 +8361,7 @@ export const specialtyJobsData = [
       `Evolutionary Genetics`,
       `Agricultural Genetics`,
     ],
-    image_url: `/specialty-jobs/genetics.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A geneticist examining DNA sequences on a computer, surrounded by images of chromosomes and molecular models, symbolizing the cutting-edge research and technological advancements in the field of Genetics.`,
   },
   {
@@ -8434,7 +8434,7 @@ export const specialtyJobsData = [
       `Biomedical Science`,
       `Disease Diagnosis`,
     ],
-    image_url: `/specialty-jobs/histology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A histologist meticulously examining tissue slides under a microscope, surrounded by vibrant histological stains, embodying the blend of art and science in Histology.`,
   },
   {
@@ -8506,7 +8506,7 @@ export const specialtyJobsData = [
       `Disease Mechanisms`,
       `Evolutionary Traits`,
     ],
-    image_url: `/specialty-jobs/human-biology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A human biologist examining cellular structures under a microscope, surrounded by models of human anatomy and genetic sequences, symbolizing the integrative approach of Human Biology to understanding the complexities of the human body.`,
   },
   {
@@ -8576,7 +8576,7 @@ export const specialtyJobsData = [
       `Ecological Research`,
       `Sustainable Management`,
     ],
-    image_url: `/specialty-jobs/limnology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A Limnologist at work, analyzing water samples by a serene lake, surrounded by lush nature, reflecting the harmonious blend of science and environmental stewardship in Limnology.`,
   },
   {
@@ -8647,7 +8647,7 @@ export const specialtyJobsData = [
       `Marine Research`,
       `Environmental Stewardship`,
     ],
-    image_url: `/specialty-jobs/marine-biology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A Marine Biologist at sea, conducting research on marine species with a backdrop of the vast ocean, embodying the spirit of adventure and scientific inquiry in the field of Marine Biology.`,
   },
   {
@@ -8718,7 +8718,7 @@ export const specialtyJobsData = [
       `Immunology`,
       `Antibiotics`,
     ],
-    image_url: `/specialty-jobs/microbiology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A microbiologist in a lab, peering into a microscope, surrounded by petri dishes and bacterial cultures, embodying the meticulous and impactful work in the field of Microbiology.`,
   },
   {
@@ -8787,7 +8787,7 @@ export const specialtyJobsData = [
       `Bioinformatics`,
       `CRISPR`,
     ],
-    image_url: `/specialty-jobs/molecular-biology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A molecular biologist conducting an experiment with DNA models and molecular structures in the foreground, illustrating the cutting-edge research in Molecular Biology.`,
   },
   {
@@ -8852,7 +8852,7 @@ export const specialtyJobsData = [
       `Biodiversity`,
       `Mycological Research`,
     ],
-    image_url: `/specialty-jobs/mycology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A mycologist in the field, examining a diverse array of mushrooms and fungi, showcasing the hands-on nature and environmental impact of mycology.`,
   },
   {
@@ -8919,7 +8919,7 @@ export const specialtyJobsData = [
       `Nanomedicine`,
       `Bio-nanoscience`,
     ],
-    image_url: `/specialty-jobs/nanobiology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A nanobiologist in a lab setting, manipulating molecules with advanced nanotechnology equipment, highlighting the innovative and high-tech nature of the field.`,
   },
   {
@@ -8986,7 +8986,7 @@ export const specialtyJobsData = [
       `Neurotechnology`,
       `Behavioral Neuroscience`,
     ],
-    image_url: `/specialty-jobs/neuroscience.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An innovative neuroscience lab with researchers analyzing brain imaging data, showcasing the cutting-edge technology and collaborative nature of the field.`,
   },
   {
@@ -9053,7 +9053,7 @@ export const specialtyJobsData = [
       `Geobiology`,
       `Paleoenvironments`,
     ],
-    image_url: `/specialty-jobs/paleobiology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A paleobiologist carefully excavating a fossil at a dig site, surrounded by tools and brushes, highlighting the meticulous and exciting work in uncovering Earth's ancient past.`,
   },
   {
@@ -9120,7 +9120,7 @@ export const specialtyJobsData = [
       `Biomedical Research`,
       `Disease Control`,
     ],
-    image_url: `/specialty-jobs/parasitology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A close-up image of a scientist examining a parasite sample under a microscope, highlighting the meticulous and impactful work of parasitologists in understanding and combating parasitic diseases.`,
   },
   {
@@ -9193,7 +9193,7 @@ export const specialtyJobsData = [
       `Medical Science`,
       `Life Sciences`,
     ],
-    image_url: `/specialty-jobs/physiology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image of a physiologist working in a state-of-the-art laboratory, surrounded by advanced equipment, illustrating the cutting-edge nature of physiology research.`,
   },
   {
@@ -9266,7 +9266,7 @@ export const specialtyJobsData = [
       `Drug Design`,
       `X-ray Crystallography`,
     ],
-    image_url: `/specialty-jobs/structural-biology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A captivating image showcasing a structural biologist examining molecular models, highlighting the precision and complexity involved in unveiling the structures of life's building blocks.`,
   },
   {
@@ -9335,7 +9335,7 @@ export const specialtyJobsData = [
       `Conservation`,
       `Biological Nomenclature`,
     ],
-    image_url: `/specialty-jobs/taxonomy.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An engaging image capturing a taxonomist at work, surrounded by specimens and biodiversity charts, illustrating the meticulous and fascinating process of classifying life on Earth.`,
   },
   {
@@ -9403,7 +9403,7 @@ export const specialtyJobsData = [
       `Biological Engineering`,
       `Data Analysis`,
     ],
-    image_url: `/specialty-jobs/systems-biology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `An intricate network of nodes and connections representing the complex interplay of biological systems, symbolizing the depth and interconnectedness studied in Systems Biology.`,
   },
   {
@@ -9470,7 +9470,7 @@ export const specialtyJobsData = [
       `Epidemiology`,
       `Pandemic Response`,
     ],
-    image_url: `/specialty-jobs/virology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A detailed illustration of various viruses, highlighting their diverse structures and complexity, embodying the challenge and intrigue of the virology field.`,
   },
   {
@@ -9535,7 +9535,7 @@ export const specialtyJobsData = [
       `Wildlife Biology`,
       `Evolutionary Biology`,
     ],
-    image_url: `/specialty-jobs/zoology.jpg`,
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: `A collage showcasing the diversity of the animal kingdom, including exotic wildlife in natural habitats, researchers in the field, and close-up studies of animal behavior, encapsulating the essence of Zoology.`,
   },
   {
@@ -9615,7 +9615,7 @@ export const specialtyJobsData = [
       'Tax Accounting',
       'Forensic Accounting',
     ],
-    image_url: '/specialty-jobs/accounting.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An engaging image showcasing accounting professionals in action, perhaps analyzing financial data or in a meeting discussing financial strategies.',
   },
   {
@@ -9693,7 +9693,7 @@ export const specialtyJobsData = [
       'Economic Psychology',
       'Nudge Theory',
     ],
-    image_url: '/specialty-jobs/behavioural-economics.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An engaging image showing a brain with various economic and psychological symbols, illustrating the intersection of psychology and economics in behavioural economics.',
   },
   {
@@ -9778,7 +9778,7 @@ export const specialtyJobsData = [
       'Business Ethics',
       'Global Commerce',
     ],
-    image_url: '/specialty-jobs/business-world.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An engaging image showing a bustling corporate environment, with individuals collaborating over a strategic business plan or digital project.',
   },
   {
@@ -9854,7 +9854,7 @@ export const specialtyJobsData = [
       'Corporate Strategy',
       'Administrative Excellence',
     ],
-    image_url: '/specialty-jobs/business-administration.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An engaging image capturing the essence of business administration, such as a strategic meeting in a modern office or a professional presenting a business plan.',
   },
   {
@@ -9933,7 +9933,7 @@ export const specialtyJobsData = [
       'Financial Analysis',
       'Global Economy',
     ],
-    image_url: '/specialty-jobs/business-and-economics.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An imaginative representation of the global economy intertwined with corporate strategy, possibly showcasing a globe with economic graphs and corporate landmarks.',
   },
   {
@@ -10010,7 +10010,7 @@ export const specialtyJobsData = [
       'Economic Policy',
       'Strategic Decision Making',
     ],
-    image_url: '/specialty-jobs/business-economics.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'A creative depiction of the analytical and strategic aspects of Business Economics, such as a chess board with financial charts and graphs in the background.',
   },
   {
@@ -10090,7 +10090,7 @@ export const specialtyJobsData = [
       'Ethical Decision Making',
       'Corporate Governance',
     ],
-    image_url: '/specialty-jobs/business-ethics.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An impactful image that visualizes ethical leadership and corporate responsibility, such as a business professional holding a globe, symbolizing a global commitment to ethical practices.',
   },
   {
@@ -10170,7 +10170,7 @@ export const specialtyJobsData = [
       'Market Design',
       'Policy Analysis',
     ],
-    image_url: '/specialty-jobs/computational-economics.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'A captivating image illustrating the intersection of economics and technology, such as a computer screen displaying economic models and algorithms.',
   },
   {
@@ -10247,7 +10247,7 @@ export const specialtyJobsData = [
       'Consumer Advocacy',
       'Spending Trends',
     ],
-    image_url: '/specialty-jobs/consumer-economics.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'A compelling visual representing the intersection of consumer behavior and economic trends, perhaps showcasing a diverse group of consumers making various purchasing decisions.',
   },
   {
@@ -10320,7 +10320,7 @@ export const specialtyJobsData = [
       'Corporate Finance',
       'Financial Reporting',
     ],
-    image_url: '/specialty-jobs/controlling.jpg',
+    image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An engaging visual depicting the dynamic role of a controller, balancing financial documents and analytical tools, symbolizing the blend of strategy and finance.',
   },
 ];
