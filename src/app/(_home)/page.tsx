@@ -45,7 +45,16 @@ export default async function myPage() {
       <div className="md:mt-12 mt-4">
         <JobCategoryAndLocationLinks />
       </div>
-      <div className="">
+      <div className="flex mx-auto gap-6">
+      <a href="/academic-talent-pool">
+          <Image
+            width={185}
+            height={170}
+            src="https://academicjobs.s3.amazonaws.com/img/_misc/talent-pool-logo.png"
+            className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
+            alt="AcademicJobs Job Elephant Client Center"
+          />
+        </a>
         <a href="/jobelephant-recruitment">
           <Image
             width={180}
