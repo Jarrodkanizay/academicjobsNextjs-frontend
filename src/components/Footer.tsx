@@ -50,7 +50,9 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link href="/jobs-by-top-universities">Jobs by Top Universities</Link>
+            <Link href="/jobs-by-top-universities">
+              Jobs by Top Universities
+            </Link>
           </li>
 
           <li>
@@ -78,6 +80,9 @@ const Footer = () => {
           <li>
             <Link href="/student">Jobs For Students</Link>
           </li>
+          <li>
+            <Link href="/specialty-jobs">Specialty Jobs</Link>
+          </li>
         </ul>
 
         <ul className="hidden">
@@ -86,7 +91,9 @@ const Footer = () => {
             <Link href="/the-university-rankings">University Rankings</Link>
           </li> */}
           <li>
-          <Link href="/jobs-by-top-universities">Jobs by Top Universities</Link>
+            <Link href="/jobs-by-top-universities">
+              Jobs by Top Universities
+            </Link>
           </li>
           {/* <li>
             <Link href="/the-university-rankings/find-my-rank">
@@ -108,7 +115,6 @@ const Footer = () => {
           <li>
             <Link href="/sitemap">Site Map</Link>
           </li>
-        
 
           <li>
             <Link href="/contact-us">Contact Us</Link>
