@@ -7544,7 +7544,7 @@ export const cityData = [
       `Experience a transformative educational journey in Derby, where academic innovation meets cultural vibrancy. Whether you're a prospective student seeking unparalleled learning experiences or a seasoned professional looking to engage with cutting-edge research, Derby offers a nurturing environment for growth and exploration.`,
       `With a focus on interdisciplinary collaboration and real-world application, institutions in Derby empower individuals to excel in their chosen fields, fostering a community of lifelong learners and trailblazers.`,
     ],
-    image_url: `/cities/academic-jobs-in-derby.jpg`,
+    image_url: '/cities/academic-jobs-in-derby.jpg',
     alt: `Cityscape of Derby, UK`,
     tags: [
       'University of Derby, Babington College, Nobel laureates, higher education',
@@ -13921,6 +13921,7 @@ export const cityData = [
       'Choosing Calgary for academic pursuits means being part of a city known for its dynamic culture and strong economy, primarily driven by the energy sector. Institutions like the University of Calgary and SAIT provide students with cutting-edge research opportunities and industry connections, preparing them for successful careers.',
       "For educators and professionals, Calgary's higher education institutions offer collaborative environments with a focus on innovation and sustainability. The city's commitment to educational excellence and its vibrant community life make Calgary an attractive destination for both studying and working.",
     ],
+    image_url: '/cities/academic-jobs-in-calgary.jpeg',
     alt: 'Panoramic view of Calgary, showcasing the iconic skyline and the University of Calgary campus',
   },
   {
@@ -13949,6 +13950,7 @@ export const cityData = [
       'Choosing Waterloo for educational pursuits offers access to a thriving academic community, renowned for groundbreaking research and innovative teaching methodologies. The University of Waterloo, with its expansive range of programs and a global reputation for co-op education, provides students with unparalleled opportunities for learning and career development.',
       "The city's institutions are deeply integrated with the tech industry and entrepreneurial ventures, offering unique opportunities for students and professionals alike to engage with cutting-edge research and business startups. This vibrant academic and professional environment makes Waterloo an attractive destination for both education and employment.",
     ],
+    image_url: 'alt: /cities/academic-jobs-in-waterloo.jpeg',
     alt: "Panoramic view of the University of Waterloo campus, symbolizing Waterloo's educational and innovative spirit",
   },
   {
@@ -13973,6 +13975,7 @@ export const cityData = [
       'Pursuing education in Quebec City means immersing oneself in a unique blend of history, culture, and academic excellence. Université Laval, with its comprehensive programs and innovative research, provides students with exceptional learning opportunities and a gateway to global engagement.',
       "Professionals seeking employment in Quebec City's academic institutions will find a collaborative environment that values innovation and research. The city's rich cultural scene and supportive academic community make it an ideal location for both personal growth and professional development.",
     ],
+    image_url: '/cities/academic-jobs-in-quebec_city.jpeg',
     alt: "Scenic view of Université Laval's campus in Quebec City, showcasing the fusion of historical architecture and modern academic facilities",
   },
   {
@@ -14007,6 +14010,7 @@ export const cityData = [
       "Choosing Toronto for academic pursuits means immersing yourself in a city that not only offers top-tier educational programs but also a dynamic cultural experience. The city's institutions, from the globally recognized University of Toronto to the creative hub at OCAD University, prepare students for success in a globalized world.",
       "Professionals and educators will find Toronto's academic landscape ripe with opportunities for innovation, research, and collaboration across a multitude of disciplines. The city's commitment to diversity and inclusion, coupled with its position as a cultural and economic powerhouse, makes it an ideal setting for both academic and professional growth.",
     ],
+    image_url: '/cities/academic-jobs-in-toronto.jpeg',
     alt: 'Cityscape of Toronto with prominent educational institutions highlighting its status as a hub of academic and cultural diversity',
   },
   {
@@ -14032,6 +14036,7 @@ export const cityData = [
       'Studying in Hamilton means being part of a community that values innovation and practical learning. With institutions like McMaster University leading in research and Mohawk College in skills training, students are well-equipped for success in their respective fields.',
       "For professionals looking to join the academic workforce, Hamilton offers a collaborative and research-driven environment, particularly at McMaster University, renowned for its contributions across various disciplines. The city's educational institutions are known for fostering professional growth and excellence.",
     ],
+    image_url: '/cities/academic-jobs-in-hamilton.jpeg',
     alt: "Panoramic view of McMaster University in Hamilton, showcasing the city's commitment to academic excellence and innovation",
   },
   {
@@ -14065,6 +14070,7 @@ export const cityData = [
       "Engaging in academic pursuits in Ottawa offers students a unique blend of cultural richness and educational excellence. The city's universities and colleges provide not only top-tier education but also practical experience through co-op programs and internships, preparing students for the global workforce.",
       "For professionals seeking to advance their careers in academia or research, Ottawa's institutions offer a collaborative environment that is at the forefront of innovation and discovery. The city's commitment to fostering educational excellence makes it a prime location for academic and professional development.",
     ],
+    image_url: '/cities/academic-jobs-in-ottawa.jpeg',
     alt: "Scenic view of the Parliament Hill in Ottawa, reflecting the city's blend of historical significance and academic prowess",
   },
   {
@@ -14095,6 +14101,7 @@ export const cityData = [
       "Kingston offers an enriching academic experience in a city steeped in history and culture. Institutions like Queen's University and the Royal Military College provide a robust educational foundation, complemented by a myriad of extracurricular and research opportunities, making Kingston a prime destination for students and academics.",
       "Professionals seeking opportunities in Kingston's educational sector will find a welcoming community and a collaborative atmosphere. The city's institutions are known for their innovation, diverse programs, and commitment to excellence, making Kingston an ideal place for academic and professional advancement.",
     ],
+    image_url: '/cities/academic-jobs-in-kingston.jpeg',
     alt: "Collage of Kingston's academic life showcasing Queen's University, St. Lawrence College, and the Royal Military College of Canada",
   },
   {
@@ -14119,6 +14126,7 @@ export const cityData = [
       'Southampton offers a blend of academic excellence and real-world readiness, making it a preferred choice for students seeking comprehensive education and robust career opportunities.',
       "Professionals and educators are drawn to Southampton's collaborative academic environment, fostering innovation and global connectivity.",
     ],
+    image_url: '/cities/academic-jobs-in-southampton.jpeg',
     alt: 'Vibrant campus life and academic excellence at the University of Southampton in the UK',
   },
   {
@@ -14152,8 +14160,7 @@ export const cityData = [
       'Attending a university or college in Belfast not only means receiving a world-class education but also immersing yourself in a city known for its rich history, cultural heritage, and vibrant social scene. The institutions here offer a supportive and dynamic environment conducive to both personal and academic growth.',
       "For professionals considering employment in Belfast's higher education sector, the opportunity to contribute to internationally recognized research and to work alongside esteemed academics could be immensely rewarding. The city's universities are at the forefront of global research, offering excellent facilities and a collaborative atmosphere.",
     ],
-    image_url:
-      '/cities/academic-jobs-in-explore-higher-education-in-belfast.jpg',
+    image_url: '/cities/academic-jobs-in-belfast.jpeg',
     alt: "Aerial view of Queen's University Belfast, showcasing the historic Lanyon Building and surrounding vibrant cityscape",
   },
   {
@@ -14180,8 +14187,7 @@ export const cityData = [
       "Stoke's educational institutions offer a blend of traditional and innovative courses, equipped with modern facilities like the Smart Zone and 3D Printing Bureau at Staffordshire University, designed with future careers in mind.",
       'Considering Stoke for study or work in academia means engaging with a community that values innovation, practical skills, and career readiness, all set within a city known for its cultural richness and industrial history.',
     ],
-    image_url:
-      '/cities/academic-jobs-in-discovering-stokes-academic-landscape.jpg',
+    image_url: '/cities/academic-jobs-in-stoke.jpeg',
     alt: "Aerial view of Staffordshire University's main campus in Stoke, showcasing modern buildings and green spaces",
   },
   {
@@ -14213,63 +14219,8 @@ export const cityData = [
       'Studying or working in Hull offers the unique opportunity to be part of a city that combines rich historical heritage with modern educational facilities. The University of Hull, at the forefront of research and innovation, provides an inspiring environment for both students and academics.',
       "Hull's commitment to academic excellence is evident in its state-of-the-art facilities and diverse course offerings. The city's institutions are dedicated to creating a supportive learning environment, making Hull an ideal destination for those seeking growth and development in their academic and professional journeys.",
     ],
-    image_url:
-      '/cities/academic-jobs-in-unlocking-hulls-academic-excellence.jpg',
+    image_url: '/cities/academic-jobs-in-hull.jpeg',
     alt: 'Panoramic view of the University of Hull campus with modern buildings set against a backdrop of lush greenery',
-  },
-  {
-    title: "Derby's Educational Landscape: Discover Universities and Colleges",
-    h1: 'Exploring Higher Education in Derby',
-    slug: 'derbys-educational-landscape',
-    city: 'Derby',
-    region: 'Derbyshire',
-    country: 'United Kingdom',
-    description:
-      'Derby, a city with a rich industrial heritage, is also known for its vibrant educational scene. Home to the University of Derby and Derby College Group, it offers a wide range of academic and vocational courses.',
-    keywords:
-      'University of Derby, Derby College Group, higher education Derby, Derby colleges, Derby universities',
-    cityInfo: [
-      "Derby's educational sector is anchored by the University of Derby, known for its wide range of undergraduate and postgraduate programs. The city's heritage of innovation is reflected in the university's diverse academic disciplines.",
-      'Complementing the university, Derby College Group offers further and higher education courses, making Derby a comprehensive hub for learners seeking various educational pathways.',
-    ],
-    uniList: ['University of Derby', 'Derby College Group'],
-    nobelInfo: [],
-    nobelList: [],
-    academicInfo: [],
-    academicList: [],
-    promo: [
-      'Derby provides an enriching educational environment with state-of-the-art facilities, such as the Devonshire Dome and the STEM building. These institutions not only focus on academic excellence but also on practical, real-world skills.',
-      'For those considering studying or working in Derby, the city offers a unique blend of historical richness and modern educational facilities, making it an ideal place for personal and professional growth.',
-    ],
-    image_url: '/cities/academic-jobs-in-derbys-educational-landscape.jpg',
-    alt: "The iconic Devonshire Dome, part of the University of Derby's Buxton Campus, symbolizing Derby's educational excellence",
-  },
-  {
-    title: "Derby's Educational Landscape: Discover Universities and Colleges",
-    h1: 'Exploring Higher Education in Derby',
-    slug: 'derbys-educational-landscape',
-    city: 'Derby',
-    region: 'Derbyshire',
-    country: 'United Kingdom',
-    description:
-      'Derby, a city with a rich industrial heritage, is also known for its vibrant educational scene. Home to the University of Derby and Derby College Group, it offers a wide range of academic and vocational courses.',
-    keywords:
-      'University of Derby, Derby College Group, higher education Derby, Derby colleges, Derby universities',
-    cityInfo: [
-      "Derby's educational sector is anchored by the University of Derby, known for its wide range of undergraduate and postgraduate programs. The city's heritage of innovation is reflected in the university's diverse academic disciplines.",
-      'Complementing the university, Derby College Group offers further and higher education courses, making Derby a comprehensive hub for learners seeking various educational pathways.',
-    ],
-    uniList: ['University of Derby', 'Derby College Group'],
-    nobelInfo: [],
-    nobelList: [],
-    academicInfo: [],
-    academicList: [],
-    promo: [
-      'Derby provides an enriching educational environment with state-of-the-art facilities, such as the Devonshire Dome and the STEM building. These institutions not only focus on academic excellence but also on practical, real-world skills.',
-      'For those considering studying or working in Derby, the city offers a unique blend of historical richness and modern educational facilities, making it an ideal place for personal and professional growth.',
-    ],
-    image_url: '/cities/academic-jobs-in-derbys-educational-landscape.jpg',
-    alt: "The iconic Devonshire Dome, part of the University of Derby's Buxton Campus, symbolizing Derby's educational excellence",
   },
   {
     title: 'Exploring Higher Education in Solna, Sweden',
@@ -14304,7 +14255,7 @@ export const cityData = [
       'Solna offers a unique academic setting, mainly through the Karolinska Institute, known for its cutting-edge medical research and education.',
       'The city is ideal for students and professionals aspiring to excel in health sciences, offering vast opportunities for learning and innovation.',
     ],
-    image_url: '/cities/academic-jobs-in-solna-sweden-academic-landscape.jpg',
+    image_url: '/cities/academic-jobs-in-solna.jpeg',
     alt: "Karolinska Institute campus in Solna, showcasing modern educational facilities set against a backdrop of Sweden's natural beauty",
   },
   {
@@ -14339,8 +14290,7 @@ export const cityData = [
       'Heidelberg offers a unique blend of historical ambiance and academic rigor, making it an ideal place for educational pursuits and scholarly activities.',
       "The city's institutions provide a rich ground for research, innovation, and professional development, amidst a backdrop of cultural heritage and high quality of life.",
     ],
-    image_url:
-      '/cities/academic-jobs-in-academic-excellence-in-heidelberg-germany.jpg',
+    image_url: '/cities/academic-jobs-in-heidelberg.jpeg',
     alt: "Panoramic view of Heidelberg with Heidelberg University highlighted, symbolizing the city's rich academic tradition",
   },
   {
@@ -14375,7 +14325,7 @@ export const cityData = [
       "Solna's Karolinska Institute offers a dynamic environment for students and professionals interested in health sciences, providing extensive research opportunities, innovative educational programs, and a commitment to improving human health.",
       "The city's academic atmosphere is enhanced by its focus on practical healthcare training, international collaborations, and a campus that fosters a vibrant community of students and scholars from around the world.",
     ],
-    image_url: '/cities/academic-jobs-in-solna-sweden-medical-excellence.jpg',
+    image_url: '/cities/academic-jobs-in-solna.jpeg',
     alt: 'Karolinska Institute campus in Solna, highlighting its modern facilities and contribution to medical science',
   },
   {
@@ -14406,8 +14356,7 @@ export const cityData = [
       "Lausanne's universities offer a unique blend of tradition and innovation, set against the stunning backdrop of Lake Geneva. This environment is conducive to academic and personal growth, making Lausanne a prime destination for students and academics.",
       "The city's commitment to research and education, combined with its international community and beautiful natural surroundings, provide compelling reasons for attending or working at its universities.",
     ],
-    image_url:
-      '/cities/academic-jobs-in-lausanne-switzerland-academic-excellence.jpg',
+    image_url: '/cities/academic-jobs-in-lausanne.jpeg',
     alt: "Panoramic view of Lausanne's university campuses with Lake Geneva in the background, symbolizing the city's academic excellence",
   },
   {
@@ -14434,8 +14383,7 @@ export const cityData = [
       'TU Delft provides a unique environment for academic and personal growth, with state-of-the-art facilities like the green-roof insulated TU Delft Library, fostering innovation and research.',
       'The international community and diverse programs at TU Delft make it a leading destination for students and academics seeking to engage with cutting-edge technology and engineering challenges.',
     ],
-    image_url:
-      '/cities/academic-jobs-in-delft-netherlands-academic-landscape.jpg',
+    image_url: '/cities/academic-jobs-in-delft.jpeg',
     alt: 'Aerial view of TU Delft campus in Delft, Netherlands, highlighting its modern educational facilities',
   },
   {
@@ -14476,8 +14424,7 @@ export const cityData = [
       'Studying in Porto offers a unique blend of high-quality education, multicultural experiences, and a vibrant city life, making it an ideal destination for students seeking academic and personal growth.',
       "The city's universities are known for their strong academic programs, research opportunities, and commitment to student success, providing a supportive environment for learning and innovation.",
     ],
-    image_url:
-      '/cities/academic-jobs-in-higher-education-in-porto-portugal.jpg',
+    image_url: '/cities/academic-jobs-in-porto.jpeg',
     alt: 'Panoramic view of Porto with highlighted locations of the University of Porto and the Polytechnic Institute of Porto',
   },
   {
@@ -14508,8 +14455,7 @@ export const cityData = [
       "Bruges offers a unique educational experience in the heart of Europe, combining high-quality academic programs with the opportunity to live in one of Europe's most picturesque cities.",
       "With a focus on European studies and applied sciences, Bruges's institutions prepare students for a globalized world, making it an ideal destination for those seeking both academic rigor and cultural richness.",
     ],
-    image_url:
-      '/cities/academic-jobs-in-higher-education-in-bruges-belgium.jpg',
+    image_url: '/cities/academic-jobs-in-bruges.jpeg',
     alt: 'Historic cityscape of Bruges with prominent educational institutions highlighted',
   },
   {
@@ -14541,8 +14487,7 @@ export const cityData = [
       "Studying in Florence allows students to immerse themselves in a city known for its contributions to art, culture, and science, offering a unique educational experience amidst the city's historical and contemporary landmarks.",
       'The diverse range of programs and the presence of various research institutes make Florence an attractive destination for students looking to benefit from a rich academic tradition and cultural heritage.',
     ],
-    image_url:
-      '/cities/academic-jobs-in-higher-education-institutions-in-florence-italy.jpg',
+    image_url: '/cities/academic-jobs-in-florence.jpeg',
     alt: "Panoramic view of Florence with highlighted educational institutions, reflecting the city's blend of historic legacy and modern education.",
   },
   {
@@ -14574,8 +14519,7 @@ export const cityData = [
       'Salzburg offers a unique blend of high-quality education and rich cultural heritage, making it an ideal destination for students and academics seeking both academic and personal growth in a city known for its architectural beauty and musical legacy.',
       "The opportunity to study in Salzburg, with its renowned educational institutions set against the backdrop of the city's historical and cultural landmarks, provides a stimulating and enriching environment for learners and scholars from around the world.",
     ],
-    image_url:
-      '/cities/academic-jobs-in-academic-landscape-salzburg-austria.jpg',
+    image_url: '/cities/academic-jobs-in-salzburg.jpeg',
     alt: "Scenic view of Salzburg with highlights of its universities and cultural landmarks, embodying the city's fusion of education and heritage",
   },
   {
@@ -14622,9 +14566,12 @@ export const cityData = [
       "Joining Lund's universities offers unparalleled opportunities for both students and faculty. Experience a stimulating learning environment, access to cutting-edge research facilities, and the chance to collaborate with world-renowned scholars. Whether you're seeking personal growth or professional development, Lund is the perfect destination for academic excellence.",
     ],
 
-    image_url: '/placeholders/placeholder-image.jpg',
+    image_url:
+      'https://www.lunduniversity.lu.se/sites/default/files/styles/header-image/public/lunds_universitet_0.jpg?h=6e9e5f85&itok=0t1JWYnB',
     alt: 'Lund, Sweden - University Buildings',
   },
+
+  // New cities
   {
     title: 'Exploring Education in Hanoi: A Gateway to Knowledge',
     h1: "Unlocking Hanoi's Educational Potential",
