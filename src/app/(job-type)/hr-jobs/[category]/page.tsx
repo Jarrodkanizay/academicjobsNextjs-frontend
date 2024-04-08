@@ -66,7 +66,7 @@ export default function Page({ params, searchParams }: any) {
 
       <div className="bg-slate-200 full-width">
         <div className="  hero-content flex-col lg:flex-row mx-auto items-start py-12">
-          <h1 className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 capitalize m-0">
+          <h1 className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 uppercase m-0">
             {Name}
           </h1>
           <p className="px-7 mb-4 mt-1">{content1}</p>

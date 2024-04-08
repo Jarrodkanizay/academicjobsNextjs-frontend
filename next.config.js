@@ -996,6 +996,53 @@ const nextConfig = {
               //     destination: "/employers/tufts-university/3460",
               //     permanent: true
               // },
+
+              {
+                source: '/employers/tarneit-p-9-college/16039',
+                destination: '/jobs',
+                permanent: true,
+            },
+            {
+                source: '/jobs/online-education-designer/86938',
+                destination: '/jobs',
+                permanent: true,
+            },
+            {
+                source: '/jobs/:slug*/66803',
+                destination: '/jobs',
+                permanent: true,
+            },
+            {
+                source: '/jobs/research-fellow/84620',
+                destination: '/jobs',
+                permanent: true,
+            },
+            {
+                source: '/jobs/temporary-teaching-assistant/85764',
+                destination: '/jobs',
+                permanent: true,
+            },
+            {
+                source: '/employers/jarrod-kanizay/13553/',
+                destination: '/jobs',
+                permanent: true,
+            },
+            {
+                source: '/jobs/administration-officer-student-placements/90602',
+                destination: '/jobs',
+                permanent: true,
+            },
+            {
+                source: '/jobs/assistant-or-associate-professor-of-industrial-engineering-and-operations-research/85636',
+                destination: '/jobs',
+                permanent: true,
+            },
+            {
+                source: '/jobs/business-manager/84384',
+                destination: '/jobs',
+                permanent: true,
+            },
+
               {
                   source: "/jobs/provost/69027",
                   destination: "/jobs",
@@ -3330,12 +3377,12 @@ const nextConfig = {
                             permanent: true,
                         },
                         {
-                          source: '/job/53257/post-doctoral-fellow-in-computer-science-at-t%C3%A9l%C3%A9com-paris-12-months/',
+                          source: '/job/53257/post-doctoral-fellow-in-computer-science-at-télécom-paris-12-months',
                           destination: '/jobs',
                           permanent: true,
                       },
                       {
-                          source: '/employers/universidade-federal-de-s%C3%A3o-paulo/11526',
+                          source: '/employers/universidade-federal-de-são-paulo/11526',
                           destination: '/jobs',
                           permanent: true,
                       },
