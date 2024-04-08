@@ -1008,7 +1008,7 @@ const nextConfig = {
                 permanent: true,
             },
             {
-                source: '/jobs/College-of-Veterinary-Medicine:-Open-Rank-Academic-(NTT-or-TT)---Equine-Emergency-Services/66803',
+                source: '/jobs/:slug*/66803',
                 destination: '/jobs',
                 permanent: true,
             },
@@ -3377,12 +3377,12 @@ const nextConfig = {
                             permanent: true,
                         },
                         {
-                          source: '/job/53257/post-doctoral-fellow-in-computer-science-at-t%C3%A9l%C3%A9com-paris-12-months/',
+                          source: '/job/53257/post-doctoral-fellow-in-computer-science-at-télécom-paris-12-months',
                           destination: '/jobs',
                           permanent: true,
                       },
                       {
-                          source: '/employers/universidade-federal-de-s%C3%A3o-paulo/11526',
+                          source: '/employers/universidade-federal-de-são-paulo/11526',
                           destination: '/jobs',
                           permanent: true,
                       },
