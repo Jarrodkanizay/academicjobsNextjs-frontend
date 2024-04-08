@@ -309,7 +309,7 @@ export default function myPage() {
             other engineering specialities
           </a>
         </li>
-        <li className="flex   md:pt-[6.001rem] pt-4 font-bold text-[#f4a10c]">
+        <li className="flex   md:pt-[9.001rem] pt-4 font-bold text-[#f4a10c]">
           <a href="/faculty/fine-applied-arts/">fine and applied arts</a>
         </li>
         <li className="flex    ">

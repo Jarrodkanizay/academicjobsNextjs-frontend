@@ -57,7 +57,7 @@ export default function myPage() {
       </div>
 
       <div className="bg-white flex flex-col  ">
-        <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-4  h-auto w-full text-transform:capitalize">
+        <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-4  h-auto w-full uppercase">
           {hr.map(({ Title, Name }, key) => (
             <li
               className={`btn btn-outline btn-secondary rounded-full mb-4 flex font-bold`}
