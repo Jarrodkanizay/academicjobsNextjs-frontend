@@ -296,7 +296,7 @@ export default function BlogPostPage({ params }: Props) {
           {specialtyDetails.promo.map((promoPara, index) => (
             <p key={index}>{promoPara}</p>
           ))}
-          <ul>
+          {/* <ul>
             <li>
               <Link
                 href={`/jobs?q=${encodeURIComponent(
@@ -332,7 +332,7 @@ export default function BlogPostPage({ params }: Props) {
                 {specialtyDetails.specialtyJob} Jobs
               </Link>
             </li>
-          </ul>
+          </ul> */}
 
           <TalentPool
             cta={`Join the ${specialtyDetails.specialtyJob} Academic Talent Pool`}
