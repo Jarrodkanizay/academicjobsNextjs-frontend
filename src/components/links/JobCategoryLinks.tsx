@@ -31,9 +31,9 @@ const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
       <li className="hover:underline md:hidden">
         <Link href="/student-jobs/">Student{'  '}</Link>
       </li>
-      <li className="hover:underline">
+      {/* <li className="hover:underline">
         <Link href="/industry/">Industry{'  '}</Link>
-      </li>
+      </li> */}
       {nativeOn ? (
         <li className="hover:underline">
           <Link href="/Australia/indigenous">Indigenous</Link>

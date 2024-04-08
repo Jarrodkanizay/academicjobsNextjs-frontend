@@ -100,7 +100,7 @@ const nextConfig = {
       },
       {
         source: '/jobs/student-casual',
-        destination: '/student/casual',
+        destination: '/student-jobs/casual',
         permanent: true,
       },
       {
@@ -135,7 +135,7 @@ const nextConfig = {
       },
       {
         source: '/jobs/student-full-time',
-        destination: '/student/full-time',
+        destination: '/student-jobs/full-time',
         permanent: true,
       },
       {
@@ -150,7 +150,7 @@ const nextConfig = {
       },
       {
         source: '/jobs/student-part-time',
-        destination: '/student/part-time',
+        destination: '/student-jobs/part-time',
         permanent: true,
       },
       {
@@ -461,7 +461,7 @@ const nextConfig = {
       //   permanent: true,
       // },
       // {
-      //   source: '/Australia',
+      //   source: "/jobs?q=&l=australia",
       //   destination: '/australia',
       //   permanent: true,
       // },
@@ -933,11 +933,11 @@ const nextConfig = {
               destination: "/jobs",
               permanent: true
           },
-          {
-              source: "/USA/faculty",
-              destination: "/usa/faculty",
-              permanent: true
-          },
+          // {
+          //     source: "/USA/faculty",
+          //     destination: "/usa/faculty",
+          //     permanent: true
+          // },
           // {
           //     source: "/russelgroup",
           //     destination: "/jobs",
@@ -954,6 +954,11 @@ const nextConfig = {
                 destination: "/faculty",
                 permanent: true
             },
+            {
+              source: "/Global/industry",
+              destination: "/industry",
+              permanent: true
+          },
             {
                 source: "/Global/staff-jobs",
                 destination: "/staff-jobs",
@@ -987,8 +992,8 @@ const nextConfig = {
             
 
               // {
-              //     source: "/employers/academic-jobs-australia/3328",
-              //     destination: "/jobs",
+              //     source: "/company/3460/tufts-university",
+              //     destination: "/employers/tufts-university/3460",
               //     permanent: true
               // },
               {

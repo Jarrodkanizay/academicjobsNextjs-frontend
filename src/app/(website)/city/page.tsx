@@ -65,13 +65,6 @@ export default function CityInfo({
         btnPrimaryURL="/jobs"
         reorder={false}
       />
-      {/* <CityLogo /> */}
-      {/* <Image
-        src={getCityLogo('Melbourne', 'Australia')}
-        alt="People immersed in academic blogs at our vibrant Academic Hub"
-        width={800}
-        height={800}
-      /> */}
       <h2 className="underline-full mb-8 text-2xl sm:text-3xl">
         Top Cities for Higher Ed Jobs
       </h2>

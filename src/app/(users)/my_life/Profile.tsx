@@ -10,7 +10,7 @@ import Link from 'next/link';
 // import JobSearchBox2 from '@/components/JobSearchBox2';
 // import SearchResults from '@/components/SearchResults';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 import { Span } from 'next/dist/trace';
 type UserProps = {
   id: number;
@@ -36,7 +36,6 @@ type UserProps = {
   favorites?: [];
   logo?: string;
 };
-
 export default function Profile({
   id,
   firstName = '',
@@ -78,9 +77,7 @@ export default function Profile({
     },
     staleTime: 0,
   });
-
   /* Dummy data for testing */
-
   if (email === 'dan@zygadox.com') {
     firstName = 'Dan';
     lastName = 'Grant';
@@ -127,9 +124,7 @@ export default function Profile({
     teachingPhilosophy =
       'Dr. Doe believes in a student-centered learning environment that fosters critical thinking, problem-solving skills, and scientific curiosity.  She utilizes innovative teaching methods, including incorporating real-world research data and case studies from her deep-sea expeditions.';
     researchPhilosophy = `The vast and unexplored depths of the ocean hold a wealth of mysteries waiting to be unveiled. My research philosophy centers on uncovering these mysteries through a blend of exploration, meticulous scientific analysis, and a drive to translate discoveries into real-world applications.
-
     Here are the core principles guiding my research:
-    
     Deep-Sea Exploration and Discovery: I believe that pushing the boundaries of deep-sea exploration is crucial to understanding our planet's biodiversity, ecological processes, and the potential for new resources and technologies. My research focuses on utilizing cutting-edge submersible technology and sample collection techniques to access and study these previously unexplored environments.
     Focus on Deep-Sea Ecology and Adaptations: The unique pressures, darkness, and limited resources of the deep sea have led to the evolution of fascinating adaptations in its resident organisms. My research dives deep (pun intended) into understanding these adaptations, including bioluminescence, pressure-resistant proteins, and chemosynthesis-based ecosystems.
     Biomimicry for Innovation: Nature has already perfected solutions to many challenges we face. My research philosophy integrates biomimicry, where I translate the insights gained from studying deep-sea organisms into the development of novel technologies. This could involve creating sustainable lighting solutions inspired by bioluminescent creatures or developing new materials using the pressure-resistant proteins found in deep-sea bacteria.
@@ -151,7 +146,6 @@ export default function Profile({
     bgColor = 'custom-background';
   }
   /* End Dummy data for testing */
-
   return (
     <>
       <section className={`${bgColor} full-width mb-16`}>
@@ -172,7 +166,7 @@ export default function Profile({
             </div>
             <div>
               <StarRank ranking={rank} />
-              <h2 className="p-0 m-0 flex gap-6 mt-2">
+              <h2 className="profile p-0 m-0 flex gap-6 mt-2">
                 <span className="mt-[-6px]">
                   {firstName} {lastName}
                 </span>
@@ -201,7 +195,6 @@ export default function Profile({
                   <span className="inline_heading">{email}</span>
                 </p>
               )}
-
               {organization === '' ? null : (
                 <p className="text-white flex gap-2 items-center">
                   <Image
@@ -213,11 +206,13 @@ export default function Profile({
                   <span className="inline_heading">{organization}</span>
                 </p>
               )}
-              {location === '' ? null : (
-                <p className="text-white flex gap-2 items-center">
-                  <MapMarkerIcon width={26} height={26} /> {location}
-                </p>
-              )}
+
+              <p className="text-white flex gap-2 items-center">
+                <MapMarkerIcon width={26} height={26} />
+                {location === ''
+                  ? 'Add location here'
+                  : location}
+              </p>
             </div>
             <div className="ml-auto">
               <h2 className="p-0 m-0">Profile Strength {profileStrength}%</h2>
@@ -239,7 +234,7 @@ export default function Profile({
         className={`${wavesOn ? 'mt-[-96px]' : ''}
 `}
       >
-        <h2 className="profile">Hi {firstName}</h2>
+        <h2 className="profile">Hi {firstName || email}</h2>
         <div className="flex gap-6">
           <DashboardCard
             title="Saved Jobs"
@@ -267,7 +262,6 @@ export default function Profile({
         <aside className="side_nav">
           <ProfileSideNav />
         </aside>
-
         <div className="main_content">
           {favorites?.length > 0 &&
             favorites.map(
@@ -276,7 +270,7 @@ export default function Profile({
                   jobId,
                   job: {
                     title,
-                    employer: { company_name },
+                    employer: { company_name, logo },
                   },
                 },
                 i
@@ -287,7 +281,11 @@ export default function Profile({
                       <Image
                         width={100}
                         height={100}
-                        src={logo || '/placeholders/your-school-logo.png'}
+                        src={
+                          logo
+                            ? `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}`
+                            : '/favicon.png'
+                        }
                         alt=""
                       />
                     </figure>
@@ -342,7 +340,6 @@ export default function Profile({
               )
             )}
         </div>
-
         <div className="jobs_panel">
           {/* <div className="listings_panel"> */}
           <div className="listings_content">

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import InputBlock from '@/components/forms/InputBlock';
 import { useForm } from 'react-hook-form';
 import { useMutation } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { jobElephantContacts } from '@/data/jobElephantContacts';
@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import Speedo from '@/components/icons/Speedo';
-import Tiptap from './Tiptap'
+import Tiptap from './Tiptap';
 
 const stripeLink = {
   JobElephant: 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
@@ -30,13 +30,12 @@ const stripeLink = {
   USA: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=usa',
 };
 const JobPostForm = ({ partner, region = 'USA' }) => {
-  const [content1, setContent1] = useState ('')
+  const [content1, setContent1] = useState('');
   const handleContentChange = (reason) => {
     //setContent(reason)
     setValue('06_JobPost', reason);
-  }
+  };
   const [regionSelected, setRegion] = useState(region);
-
   const [standardMode, setStandardMode] = useState(true);
   const [newContact, setNewContact] = useState(false);
   const [selectedContact, setSelectedContact] = useState(null);
@@ -45,23 +44,17 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
   );
   const [paymentMethod, setPaymentMethod] = useState('creditCard');
   const [paymentMessage, setPaymentMessage] = useState('Credit Card');
-
   useEffect(() => {
     console.log('Region', regionSelected);
   }, [regionSelected]); // This effect runs whenever `regionSelected` changes
-
   const handleChange = (event) => {
     setSelectedCurrency(event.target.value);
-
     // Get the selected option element
     const selectedOption = event.target.options[event.target.selectedIndex];
-
     // Get the text of the selected option
     const selectedRegion = selectedOption.text;
-
     setRegion(selectedRegion);
   };
-
   let avatarPath = '';
   let textColor = 'text-aj';
   let partnerName = 'AcademicJobs';
@@ -70,7 +63,6 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
   let partnerPullDown = false;
   let institutionName = `Institution Name (ie: Harvard University)`;
   let urlExample = `uni-name.edu/job-posting-url`;
-
   if (partner === 'JobElephant') {
     partnerPullDown = true;
     partnerName = partner;
@@ -93,7 +85,6 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
   }, [partnerName]);
   let content;
   const router = useRouter();
-
   const {
     register,
     handleSubmit,
@@ -106,7 +97,6 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
       paymentMethod: 'creditCard',
     },
   });
-
   const onSubmit = async (data) => {
     // e.preventDefault();
     // alert()
@@ -116,13 +106,11 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
       '00_formSource': `WOO HOO, ring the bell, WE JUST GOT ANOTHER JOB LISTING from the ${partnerName} Post a Job Page`,
     });
   };
-
   const mutation = useMutation({
     mutationFn: async (data) => {
       return await BaseApi.post('/sendemail', data);
     },
   });
-
   if (mutation.isLoading) {
     return (
       <div className="bg-white relative max-w-screen-lg mx-auto pl-2">
@@ -184,7 +172,6 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                               e.target.value
                           );
                           setSelectedContact(selectedContact);
-
                           if (selectedContact) {
                             setValue(
                               '00_First_Name',
@@ -244,7 +231,6 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                         >
                           Region
                         </label>
-
                         <select
                           id="currency"
                           value={selectedCurrency}
@@ -256,7 +242,6 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                           <option value="" selected>
                             Which Region are you from?
                           </option>
-
                           {Object.keys(stripeLink)
                             .filter((key) => key !== 'JobElephant')
                             .map((key) => (
@@ -377,7 +362,6 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                       className="radio radio-aj ml-2"
                     />
                   </label>
-
                   <label htmlFor="invoice" className="label cursor-pointer">
                     Invoice (Pay Later)
                     <input
@@ -391,7 +375,6 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                     />
                   </label>
                 </div>
-
                 <button className="btn btn-accent mt-4">
                   Post & Pay via {paymentMessage}
                 </button>

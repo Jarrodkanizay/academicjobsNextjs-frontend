@@ -9,7 +9,7 @@ import JobSearchBox2 from '@/components/JobSearchBox2';
 import { filterType } from "@/utils/data";
 import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 //import { useRouter } from 'next/router';
 //import { useRouter } from 'next/navigation';
 // export const metadata = {
@@ -153,7 +153,7 @@ export default function Page() {
                 >{`${filter ? filter : "Others"
                   }  (${job_count})`}</button>
               ))}
-            {filters?.length == 23 && (
+            {/* {filters?.length == 23 && (
               <button
                 className="btn btn-primary btn-xs"
                 onClick={() => {
@@ -165,7 +165,7 @@ export default function Page() {
               >
                 Show All
               </button>
-            )}
+            )} */}
           </div>
         )}
       </div>

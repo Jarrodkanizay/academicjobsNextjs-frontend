@@ -3,7 +3,7 @@ import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { useSearchParams } from 'next/navigation';
 import { filterType } from "@/utils/data";
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
-import BaseApi from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
 
 export default function AdvancedSearchBar() {
   const searchParams = useSearchParams();
@@ -24,7 +24,7 @@ export default function AdvancedSearchBar() {
     isPlaceholderData: isPlaceholderDataQty,
   } = useQuery({
     queryKey: ['filter', { category, filter1, q, l }],
-    queryFn: async () => { 
+    queryFn: async () => {
       const response = await BaseApi.post('/filters', { category, filter1, q, l, mode: "normal" },);
       console.log(response.data);
       console.log('response.data.data', response.data.data);
@@ -113,7 +113,7 @@ export default function AdvancedSearchBar() {
                 >{`${filter ? filter : "Others"
                   }  (${job_count})`}</button>
               ))}
-            {filters?.length == 23 && (
+            {/* {filters?.length == 23 && (
               <button
                 className="btn btn-primary btn-xs"
                 onClick={() => {
@@ -125,7 +125,7 @@ export default function AdvancedSearchBar() {
               >
                 Show All
               </button>
-            )}
+            )} */}
           </div>
         )}
       </div>

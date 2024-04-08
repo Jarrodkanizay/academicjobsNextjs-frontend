@@ -48,7 +48,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/3194/2578799899_73756bd889_c.jpg',
     alt: 'Academic Jobs Illustration of Boston city skyline',
-    tags: ['Boston Colleges, Boston Universities, Nobel Laureates, Higher Education'],
+    tags: [
+      'Boston Colleges, Boston Universities, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -97,9 +99,11 @@ export const cityData = [
     promo: [
       "Choosing London for your academic journey offers access to a broad spectrum of disciplines, state-of-the-art research facilities, and a vibrant international community. Whether you're pursuing studies or a career in academia, London's educational institutions provide a dynamic and supportive environment for personal and professional growth.",
     ],
-    image_url: '/cities/london-sunset.jpg',
+    image_url: '/cities/academic-jobs-in-london-sunset.jpg',
     alt: 'Academic Jobs Panoramic view of London with iconic landmarks',
-    tags: ['London Colleges, London Universities, Nobel Laureates, Higher Education'],
+    tags: [
+      'London Colleges, London Universities, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -149,7 +153,9 @@ export const cityData = [
     image_url:
       'https://wisatamuda.com/wp-content/uploads/2018/05/9.-Tempat-Wisata-Terbaik-di-Melbourne-Yarra-River.jpg',
     alt: 'Academic Jobs Scenic view of a prominent Melbourne university campus',
-    tags: ['University of Melbourne, Swinburne Tech, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Melbourne, Swinburne Tech, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -196,9 +202,11 @@ export const cityData = [
     promo: [
       "Los Angeles offers a unique blend of academic excellence, cutting-edge research, and diverse cultural experiences, making it an attractive destination for students and academics worldwide. The city's institutions provide a supportive environment for learning, innovation, and career development.",
     ],
-    image_url: '/cities/lost-angeles-california.webp',
+    image_url: '/cities/academic-jobs-in-lost-angeles-california.webp',
     alt: 'Academic Jobs Aerial view of Los Angeles with prominent university campuses highlighted',
-    tags: ['Nobel Laureates, Higher Education, Caltech, Los Angeles universities'],
+    tags: [
+      'Nobel Laureates, Higher Education, Caltech, Los Angeles universities',
+    ],
   },
   {
     title:
@@ -240,9 +248,11 @@ export const cityData = [
     promo: [
       "Brisbane offers a unique academic environment with its blend of high-quality education, cutting-edge research, and a supportive community. Students and professionals are drawn to the city for its commitment to innovation, ample opportunities for personal growth, and a lifestyle that balances urban living with nature's tranquility.",
     ],
-    image_url: '/cities/brisbane-city-australia.jpg',
+    image_url: '/cities/academic-jobs-in-brisbane-city-australia.jpg',
     alt: 'Academic Jobs Scenic view of Brisbane skyline with a focus on its educational institutions',
-    tags: ['Nobel Laureates, Higher Education, Queensland Universities, Brisbane Universities'],
+    tags: [
+      'Nobel Laureates, Higher Education, Queensland Universities, Brisbane Universities',
+    ],
   },
   {
     title:
@@ -285,9 +295,11 @@ export const cityData = [
     promo: [
       "Studying or working in Canberra offers unparalleled opportunities in research, academic collaboration, and personal growth. The city's universities are not just educational institutions but hubs of innovation and discovery, set against the backdrop of Canberra's cultural richness and natural beauty.",
     ],
-    image_url: '/cities/canberra-australia.jpg',
+    image_url: '/cities/academic-jobs-in-canberra-australia.jpg',
     alt: 'Academic Jobs Panoramic view of Canberra with a focus on its academic institutions',
-    tags: ['Australian Universities, Canberra Universities, Nobel Laureates, Higher Education'],
+    tags: [
+      'Australian Universities, Canberra Universities, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -335,7 +347,9 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/6/63/Skylines_of_Sydney_CBD_seen_from_North_Sydney%2C_August_2022%2C_02.jpg',
     alt: "Iconic Sydney Opera House and Harbour Bridge, symbolizing the city's blend of cultural heritage and modern innovation",
-    tags: ['Sydney Universities, Sydney Research, Nobel Laureates, Higher Education'],
+    tags: [
+      'Sydney Universities, Sydney Research, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -375,7 +389,9 @@ export const cityData = [
     image_url:
       'https://www.illawarramercury.com.au/images/transform/v1/crop/frm/tSTP9QYGHQpn75NApSSxni/1e22faf9-cba0-43d2-8450-53a2ad72a4c2.jpg/r563_0_5709_2829_w1200_h678_fmax.jpg',
     alt: 'Academic Jobs Panoramic view of Wollongong, highlighting the University campus and surrounding landscape',
-    tags: ['University of Wollongong, TAFE NSW Wollongong, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Wollongong, TAFE NSW Wollongong, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -425,7 +441,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/2463/3598596311_84211f2566_b.jpg',
     alt: 'Academic Jobs Iconic view of Paris with prominent educational institutions highlighted',
-    tags: ['Paris niversities, Sorbonne University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Paris niversities, Sorbonne University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Exploring Academic Excellence in New York City, USA',
@@ -477,7 +495,9 @@ export const cityData = [
     image_url:
       'https://t3.ftcdn.net/jpg/02/09/70/56/360_F_209705645_b78HGJI1i1mxqLwMYA7z1m3VvCxgxJFO.jpg',
     alt: 'Academic Jobs Skyline of New York City highlighting its educational institutions',
-    tags: ['Ivy League Institutions, New York University (NYU), Nobel Laureates, Higher Education'],
+    tags: [
+      'Ivy League Institutions, New York University (NYU), Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -526,9 +546,11 @@ export const cityData = [
       "Berlin offers an unmatched blend of historical significance and modern academic innovation, providing students and academics with endless opportunities for growth, research, and collaboration in one of Europe's most dynamic cities.",
       "The city's rich cultural scene, combined with its comprehensive academic programs and state-of-the-art research facilities, makes Berlin an attractive destination for pursuing academic excellence and career development.",
     ],
-    image_url: '/cities/berlin.jpg',
+    image_url: '/cities/academic-jobs-in-berlin.jpg',
     alt: 'Academic Jobs Panoramic view of Berlin highlighting its educational and cultural landmarks',
-    tags: ['Berlin Universities, Berlin Wall, Nobel Laureates, Higher Education'],
+    tags: [
+      'Berlin Universities, Berlin Wall, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Tokyo, Japan: A Global Leader in Higher Education and Research',
@@ -576,9 +598,11 @@ export const cityData = [
       'Tokyo offers unparalleled opportunities for educational and professional growth, set against the backdrop of a city that blends tradition with cutting-edge technology. Its universities provide a nurturing environment for students and academics keen on making significant contributions to their fields.',
       'Choosing Tokyo for study or research means immersing yourself in a city known for its academic excellence, innovative spirit, and rich cultural heritage, making it a sought-after destination for scholars worldwide.',
     ],
-    image_url: '/cities/tokyo.webp',
+    image_url: '/cities/academic-jobs-in-tokyo.webp',
     alt: 'Academic Jobs Iconic Tokyo skyline with prominent educational institutions highlighted',
-    tags: ['University of Tokyo, Tokyo Institute of Technology, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Tokyo, Tokyo Institute of Technology, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -624,9 +648,11 @@ export const cityData = [
       'Perth offers a unique blend of educational excellence, innovative research, and a high quality of life, making it an attractive destination for students and academics from around the world.',
       "The city's universities provide a supportive and dynamic environment for pursuing academic goals, along with opportunities for personal and professional growth in Australia's stunning west coast setting.",
     ],
-    image_url: '/cities/perth.webp',
+    image_url: '/cities/academic-jobs-in-perth.webp',
     alt: 'Academic Jobs Panoramic view of Perth, showcasing its educational institutions and natural beauty',
-    tags: ['Curtin University, Perth Universities, Nobel Laureates, Higher Education'],
+    tags: [
+      'Curtin University, Perth Universities, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Adelaide, Australia: A Center of Academic Excellence and Research',
@@ -670,9 +696,11 @@ export const cityData = [
       'Adelaide offers an enriching environment for students and academics, characterized by its world-class educational facilities, supportive community, and beautiful natural surroundings.',
       "The city's commitment to fostering academic excellence, alongside its laid-back lifestyle and cultural diversity, makes Adelaide an ideal destination for pursuing higher education and research opportunities.",
     ],
-    image_url: '/cities/adeliade.jpg',
+    image_url: '/cities/academic-jobs-in-adeliade.jpg',
     alt: "Panoramic view of Adelaide, highlighting its educational institutions against a backdrop of the city's natural beauty",
-    tags: ['Torrens University, Flinders University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Torrens University, Flinders University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Chicago, USA: A Leading Academic and Research Hub',
@@ -720,9 +748,11 @@ export const cityData = [
       "Chicago offers unparalleled opportunities for academic and professional growth within a vibrant urban setting known for its cultural richness and diversity. The city's universities provide a nurturing environment for innovation, scholarship, and collaboration.",
       'Choosing to study or work in Chicago means being part of a dynamic academic community where education and research are deeply valued, and where students and professionals can thrive in their pursuit of excellence.',
     ],
-    image_url: '/cities/chicago.jpg',
+    image_url: '/cities/academic-jobs-in-chicago.jpg',
     alt: 'Academic Jobs Iconic skyline of Chicago with a focus on its prestigious universities and research institutions',
-    tags: ['Chicago Universities, Northwestern University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Chicago Universities, Northwestern University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -769,9 +799,11 @@ export const cityData = [
       "San Francisco offers a unique blend of academic rigor and innovation, set against the backdrop of one of the world's most dynamic and culturally rich cities. Its institutions provide unparalleled opportunities for learning, research, and professional development in various fields.",
       'Choosing to study or work in San Francisco means immersing yourself in an environment that values creativity, diversity, and innovation, making it an ideal place for those looking to make a significant impact in their careers and the world.',
     ],
-    image_url: '/cities/san-francisico.jpg',
+    image_url: '/cities/academic-jobs-in-san-francisico.jpg',
     alt: 'Academic Jobs Scenic view of San Francisco, highlighting its educational institutions and innovative spirit',
-    tags: ['San Francisco Universities, Jennifer Aaker, Nobel Laureates, Higher Education'],
+    tags: [
+      'San Francisco Universities, Jennifer Aaker, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -820,9 +852,11 @@ export const cityData = [
       'Montreal offers an exceptional environment for academic pursuits, characterized by its commitment to bilingual education, multicultural student body, and a lively urban setting rich in art and history.',
       "Choosing to study or work in Montreal means joining a thriving academic community where education and research are deeply intertwined with the city's unique cultural heritage, making it an ideal place for intellectual and personal growth.",
     ],
-    image_url: '/cities/montreal.jpg',
+    image_url: '/cities/academic-jobs-in-montreal.jpg',
     alt: 'Academic Jobs Panoramic view of Montreal, showcasing its educational institutions and vibrant cultural scene',
-    tags: ['Concordia University, McGill University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Concordia University, McGill University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -868,9 +902,11 @@ export const cityData = [
       'Zurich offers a unique combination of high-quality education, cutting-edge research, and a high standard of living, making it an attractive destination for students and academics from around the world.',
       'Choosing Zurich for academic pursuits means being part of a city that values innovation, sustainability, and a multicultural academic community, set against the backdrop of stunning Swiss landscapes.',
     ],
-    image_url: '/cities/zurich.jpg',
+    image_url: '/cities/academic-jobs-in-zurich.jpg',
     alt: 'Academic Jobs Aerial view of Zurich, showcasing its educational institutions and beautiful scenery',
-    tags: ['University of Zurich, ETH Zurich, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Zurich, ETH Zurich, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Singapore: A Global Hub for Higher Education and Innovation',
@@ -915,9 +951,11 @@ export const cityData = [
       'Singapore offers an unparalleled blend of academic rigor, innovative research opportunities, and a vibrant multicultural environment, making it an attractive destination for students and academics seeking to advance their careers.',
       "The city-state's focus on excellence, sustainability, and connectivity provides a unique setting for academic growth and professional development, amidst one of the world's most dynamic and economically vibrant regions.",
     ],
-    image_url: '/cities/singapore.jpg',
+    image_url: '/cities/academic-jobs-in-singapore.jpg',
     alt: "Scenic view of Singapore's skyline, highlighting its educational institutions and modern architecture",
-    tags: ['Singapore Universities, Singapore Polytechnic, Nobel Laureates, Higher Education'],
+    tags: [
+      'Singapore Universities, Singapore Polytechnic, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -964,11 +1002,13 @@ export const cityData = [
       "Amsterdam offers a unique academic experience, blending a rich historical setting with cutting-edge research facilities and a cosmopolitan student life. The city's educational institutions are known for their inclusive and interdisciplinary approach, making it an ideal place for study and research.",
       "With a strong emphasis on sustainability, innovation, and international collaboration, Amsterdam's universities prepare students for global challenges, making it a highly desirable destination for those seeking to excel in their academic and professional careers.",
     ],
-    image_url: '/cities/amsterdam.png',
+    image_url: '/cities/academic-jobs-in-amsterdam.png',
     alt: "Iconic Amsterdam canal view, symbolizing the city's blend of historic charm and academic vibrancy",
-    tags: ['University of Amsterdam, Netherlands Universities, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Amsterdam, Netherlands Universities, Nobel Laureates, Higher Education',
+    ],
   },
-  { 
+  {
     title: 'Oxford, UK: A Timeless Nexus of Knowledge and Learning',
     h1: 'Exploring the Academic Heritage of Oxford',
     slug: 'oxford-academic-heritage',
@@ -1011,9 +1051,11 @@ export const cityData = [
       'Oxford provides an unparalleled academic experience, blending centuries-old traditions with modern research and teaching methodologies. The city offers a stimulating environment for students and faculty alike, characterized by rigorous intellectual engagement and a rich cultural life.',
       'Choosing Oxford for higher education means immersing oneself in a world where education transcends classrooms, shaping individuals who are ready to contribute significantly to society and the broader world.',
     ],
-    image_url: '/cities/oxford.webp',
+    image_url: '/cities/academic-jobs-in-oxford.webp',
     alt: 'Academic Jobs The iconic Oxford University skyline, embodying centuries of academic pursuit and excellence',
-    tags: ['Oxford Universities, Sir Roger Penrose, Nobel Laureates, Higher Education'],
+    tags: [
+      'Oxford Universities, Sir Roger Penrose, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Cambridge, UK: An Epicenter of Academic Prestige and Innovation',
@@ -1058,9 +1100,11 @@ export const cityData = [
       'Cambridge offers an unrivaled educational experience, blending historic beauty with the thrill of academic discovery. Its colleges and universities are incubators for innovation, where tradition meets the cutting edge of research.',
       'Studying or working in Cambridge means being part of a legacy of scholars who have shaped the world. The city not only provides a picturesque backdrop but also a stimulating intellectual environment that inspires greatness.',
     ],
-    image_url: '/cities/cambridge.webp',
+    image_url: '/cities/academic-jobs-in-cambridge.webp',
     alt: 'Academic Jobs The serene and scholarly ambiance of Cambridge, highlighting its historic colleges and verdant spaces',
-    tags: ['University Of Cambridge, Cambridge Colleges, Nobel Laureates, Higher Education'],
+    tags: [
+      'University Of Cambridge, Cambridge Colleges, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Hong Kong SAR: A Fusion of Eastern and Western Academic Traditions',
@@ -1105,9 +1149,11 @@ export const cityData = [
       "Hong Kong offers a compelling mix of traditional and modern educational experiences, set against the backdrop of one of the world's most dynamic cities. Its universities are at the forefront of research and innovation, providing students with unparalleled opportunities for learning and personal growth.",
       'Choosing to study or work in Hong Kong means being part of an academic community that values diversity, excellence, and the pursuit of knowledge, preparing individuals for successful careers in a globalized world.',
     ],
-    image_url: '/cities/hong-kong.jpg',
+    image_url: '/cities/academic-jobs-in-hong-kong.jpg',
     alt: 'Academic Jobs The iconic skyline of Hong Kong, symbolizing its status as a global academic and cultural crossroads',
-    tags: ['Hong Kong Universities, East Meets West, Nobel Laureates, Higher Education'],
+    tags: [
+      'Hong Kong Universities, East Meets West, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Seoul, South Korea: A Hub of Innovation and Academic Excellence',
@@ -1152,9 +1198,11 @@ export const cityData = [
       "Seoul offers a unique educational experience that combines rigorous academic standards with opportunities for innovative research and cultural immersion. The city's universities are at the forefront of global trends in education and technology, making Seoul an attractive destination for ambitious students and academics.",
       "Engaging in Seoul's academic community means accessing unparalleled resources, participating in international collaborations, and developing a global perspective, preparing individuals for leadership in their respective fields.",
     ],
-    image_url: '/cities/seoul.jpg',
+    image_url: '/cities/academic-jobs-in-seoul.jpg',
     alt: "Panoramic view of Seoul's skyline, showcasing its modernity and the vibrant academic life within the city",
-    tags: ['Seoul Universities, Seoul National University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Seoul Universities, Seoul National University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Munich, Germany: A Beacon of Higher Education and Research',
@@ -1199,9 +1247,11 @@ export const cityData = [
       'Studying or working in Munich offers an unparalleled opportunity to engage with an academic tradition that seamlessly blends historical depth with contemporary innovation.',
       'Munich’s educational institutions not only provide world-class education but also foster a thriving research environment, making it an ideal destination for those seeking to excel in their academic and professional pursuits.',
     ],
-    image_url: '/cities/munich.webp',
+    image_url: '/cities/academic-jobs-in-munich.webp',
     alt: 'Academic Jobs The iconic skyline of Munich, showcasing its historic architecture and modern academic institutions',
-    tags: ['Munich Universities, Ludwig Maximilian University of Munich, Nobel Laureates, Higher Education'],
+    tags: [
+      'Munich Universities, Ludwig Maximilian University of Munich, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Vancouver, Canada: A Diverse and Dynamic Academic Hub',
@@ -1245,9 +1295,11 @@ export const cityData = [
       "Choosing to study or work in Vancouver means engaging with a dynamic academic community, set against the backdrop of one of Canada's most picturesque cities.",
       "Vancouver's institutions offer a supportive environment for personal and professional growth, making it a top choice for those seeking to advance their academic careers.",
     ],
-    image_url: '/cities/vancouver.webp',
+    image_url: '/cities/academic-jobs-in-vancouver.webp',
     alt: 'Academic Jobs The scenic beauty of Vancouver with its iconic skyline and educational institutions highlighted',
-    tags: ['Vancouver Universities, University of British Columbia, Nobel Laureates, Higher Education'],
+    tags: [
+      'Vancouver Universities, University of British Columbia, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Edinburgh, UK: A Historic Epicenter of Academic Excellence',
@@ -1291,9 +1343,11 @@ export const cityData = [
       'Studying or working in Edinburgh offers the unique opportunity to be part of a thriving academic community, surrounded by historical landmarks and cutting-edge research facilities.',
       "The city's educational institutions are committed to fostering a supportive and innovative environment for students and staff alike, making Edinburgh a preferred destination for academic and personal development.",
     ],
-    image_url: '/cities/edinburgh.webp',
+    image_url: '/cities/academic-jobs-in-edinburgh.webp',
     alt: 'Academic Jobs The historic cityscape of Edinburgh with its prestigious universities highlighted',
-    tags: ['University Of Edinburgh, Heriot-Watt University, Nobel Laureates, Higher Education'],
+    tags: [
+      'University Of Edinburgh, Heriot-Watt University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Beijing, China: A Global Hub for Academic and Research Excellence',
@@ -1337,9 +1391,11 @@ export const cityData = [
       "Choosing to study or work in Beijing opens doors to unparalleled opportunities for academic growth, cultural exchange, and professional development in a city that's at the heart of China's technological and educational advancements.",
       "The city's universities provide a vibrant community and state-of-the-art facilities for research, collaboration, and innovation, making Beijing a top destination for those seeking to excel in their academic and professional pursuits.",
     ],
-    image_url: '/cities/beijing.jpg',
+    image_url: '/cities/academic-jobs-in-beijing.jpg',
     alt: "Panoramic view of Beijing's iconic university campuses, symbolizing the city's academic prestige",
-    tags: ['Beijing Universities, Peking University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Beijing Universities, Peking University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -1384,9 +1440,11 @@ export const cityData = [
       'Choosing Shanghai for education or academic career offers access to a vibrant cosmopolitan city with rich educational resources, cutting-edge research facilities, and a dynamic international community.',
       "The city's commitment to academic excellence and innovation provides a stimulating environment for students and professionals alike, making it an ideal destination for those looking to achieve their academic and professional goals.",
     ],
-    image_url: '/cities/shainhai.jpg',
+    image_url: '/cities/academic-jobs-in-shainhai.jpg',
     alt: "Aerial view of Shanghai's university campuses, showcasing the modern educational infrastructure against the city skyline",
-    tags: ['Shanghai Universities, Tongji University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Shanghai Universities, Tongji University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Stockholm, Sweden: A Hub of Academic Excellence and Innovation',
@@ -1430,9 +1488,11 @@ export const cityData = [
       'Stockholm offers a unique blend of historical richness and modern educational facilities, making it an attractive destination for students and academics from around the world.',
       "The city's commitment to sustainability, innovation, and open-mindedness provides a stimulating environment for academic and personal growth.",
     ],
-    image_url: '/cities/stockholm.webp',
+    image_url: '/cities/academic-jobs-in-stockholm.webp',
     alt: "Scenic view of Stockholm with its university buildings prominently displayed, highlighting the city's dedication to academic excellence",
-    tags: ['Stockholm Universities, Royal Institute of Technology (KTH), Nobel Laureates, Higher Education'],
+    tags: [
+      'Stockholm Universities, Royal Institute of Technology (KTH), Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Copenhagen, Denmark: A Beacon of Academic Excellence',
@@ -1476,9 +1536,11 @@ export const cityData = [
       'Studying in Copenhagen offers access to a rich tapestry of cultural experiences and an open, collaborative academic environment.',
       "The city's focus on sustainability and innovation provides an ideal backdrop for those seeking to make an impact through their academic and professional pursuits.",
     ],
-    image_url: '/cities/copengagen.jpg',
+    image_url: '/cities/academic-jobs-in-copengagen.jpg',
     alt: "Panoramic view of Copenhagen, highlighting the city's educational institutions and serene environment, ideal for academic endeavors",
-    tags: ['Copenhagen Universities, Technical University of Denmark, Nobel Laureates, Higher Education'],
+    tags: [
+      'Copenhagen Universities, Technical University of Denmark, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -1523,9 +1585,11 @@ export const cityData = [
       'Dublin offers an enriching educational experience amidst its historic campuses, cultural richness, and dynamic student life.',
       "The city's collaborative academic environment and cutting-edge research opportunities make it an attractive destination for students and academics worldwide.",
     ],
-    image_url: '/cities/dublin.webp',
+    image_url: '/cities/academic-jobs-in-dublin.webp',
     alt: "Scenic view of Dublin's historical architecture blending with modern academic institutions, symbolizing the city's rich educational heritage",
-    tags: ['University College Dublin, Dublin City University, Nobel Laureates, Higher Education'],
+    tags: [
+      'University College Dublin, Dublin City University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Austin, USA: A Dynamic Center for Higher Education and Innovation',
@@ -1560,9 +1624,11 @@ export const cityData = [
       "Austin's dynamic blend of educational excellence and a thriving cultural scene offers unparalleled opportunities for personal and professional growth.",
       'With state-of-the-art research facilities and a supportive academic community, Austin stands out as a prime destination for education and career development.',
     ],
-    image_url: '/cities/austin.jpg',
+    image_url: '/cities/academic-jobs-in-austin.jpg',
     alt: "Panoramic view of Austin showcasing the University of Texas campus amidst the city's bustling cultural and technological hubs",
-    tags: ['Austin Universities, University of Texas at Austin, Nobel Laureates, Higher Education'],
+    tags: [
+      'Austin Universities, University of Texas at Austin, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -1598,9 +1664,11 @@ export const cityData = [
       'Madrid offers a unique blend of historical richness and academic rigor, making it an attractive destination for students seeking quality education in a culturally vibrant city.',
       "Professionals find Madrid's universities to be fertile ground for research and development, with ample opportunities for collaboration and career advancement.",
     ],
-    image_url: '/cities/madrid.jpg',
+    image_url: '/cities/academic-jobs-in-madrid.jpg',
     alt: "Panoramic view of Madrid with historic buildings and modern educational institutions, highlighting the city's academic diversity",
-    tags: ['Madrid Universities, Universidad Autónoma de Madrid, Nobel Laureates, Higher Education'],
+    tags: [
+      'Madrid Universities, Universidad Autónoma de Madrid, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Barcelona, Spain: A Beacon of Learning and Innovation',
@@ -1635,9 +1703,11 @@ export const cityData = [
       'For those seeking academic excellence in a city that offers both history and modernity, Barcelona stands out as a prime destination. Its universities are not just educational institutions but gateways to a global network and career opportunities.',
       "Academics and professionals find Barcelona's dynamic and supportive environment conducive to research, innovation, and development, making it a city where careers are not just made but also transformed.",
     ],
-    image_url: '/cities/barcelona.jpg',
+    image_url: '/cities/academic-jobs-in-barcelona.jpg',
     alt: "The iconic cityscape of Barcelona, highlighting its educational institutions amid historical and modern architecture, symbolizing the city's academic vitality",
-    tags: ['Barcelona Universities, Autonomous University of Barcelona, Nobel Laureates, Higher Education'],
+    tags: [
+      'Barcelona Universities, Autonomous University of Barcelona, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Exploring the Academic Landscape of Buenos Aires, Argentina',
@@ -1678,9 +1748,11 @@ export const cityData = [
       'Choosing Buenos Aires for education means immersing oneself in a city with a rich cultural heritage, cutting-edge research, and a supportive academic network.',
       'For professionals and academics, Buenos Aires offers unparalleled opportunities for growth, collaboration, and discovery in a city that celebrates diversity and innovation.',
     ],
-    image_url: '/cities/aregentina.jpg',
+    image_url: '/cities/academic-jobs-in-aregentina.jpg',
     alt: "The historic and modern educational institutions of Buenos Aires, set against the city's vibrant cultural backdrop, showcasing its role as a leading academic center in Latin America",
-    tags: ['University Of Buenos Aires, Universidad Tecnológica Nacional, Nobel Laureates, Higher Education'],
+    tags: [
+      'University Of Buenos Aires, Universidad Tecnológica Nacional, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Exploring the Educational Excellence of Kuala Lumpur, Malaysia',
@@ -1715,9 +1787,11 @@ export const cityData = [
       'Studying in Kuala Lumpur offers students a unique blend of traditional and modern educational experiences, set against the backdrop of a culturally rich and vibrant city.',
       'For academics and professionals, Kuala Lumpur provides a fertile ground for research, collaboration, and professional development in a globally connected environment.',
     ],
-    image_url: '/cities/kulala-lumpar.jpg',
+    image_url: '/cities/academic-jobs-in-kulala-lumpar.jpg',
     alt: "Aerial view of Kuala Lumpur's skyline, highlighting the city's modern educational institutions amidst its cultural landmarks, symbolizing a blend of tradition and modernity in education",
-    tags: ['Malaysia Universities, Universiti Kebangsaan Malaysia, Nobel Laureates, Higher Education'],
+    tags: [
+      'Malaysia Universities, Universiti Kebangsaan Malaysia, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: "Vienna's Academic Heritage: A Beacon of Knowledge and Culture",
@@ -1752,9 +1826,11 @@ export const cityData = [
       'Choosing Vienna for education means immersing in a city that values history, arts, and sciences equally, providing a holistic educational experience.',
       'Professionals and academics find Vienna a vibrant city for collaboration, with numerous conferences, seminars, and workshops happening throughout the year.',
     ],
-    image_url: '/cities/vienna.webp',
+    image_url: '/cities/academic-jobs-in-vienna.webp',
     alt: "The historic architecture of Vienna's universities set against the city's skyline, symbolizing the blend of traditional and modern educational values",
-    tags: ['University of Vienna, Medical University of Vienna, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Vienna, Medical University of Vienna, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Exploring the Academic Excellence of Brussels, Belgium',
@@ -1789,9 +1865,11 @@ export const cityData = [
       'Studying in Brussels offers the unique opportunity to engage in a multicultural academic environment, where education goes hand in hand with personal growth and development.',
       "For professionals seeking employment, Brussels' universities provide a dynamic workplace culture, with ample opportunities for research, collaboration, and career advancement in the heart of Europe.",
     ],
-    image_url: '/cities/belgium.jpg',
+    image_url: '/cities/academic-jobs-in-belgium.jpg',
     alt: "The iconic Atomium structure against Brussels' skyline, symbolizing the city's blend of historical richness and modern academic advancements",
-    tags: ['Brussels Universities, Université Libre de Bruxelles (ULB), Nobel Laureates, Higher Education'],
+    tags: [
+      'Brussels Universities, Université Libre de Bruxelles (ULB), Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Exploring the Academic Landscape of Taipei, Taiwan',
@@ -1826,9 +1904,11 @@ export const cityData = [
       "Studying in Taipei offers an immersive educational experience, combining rigorous academics with opportunities to explore Taiwan's rich culture and history.",
       "For those seeking employment, Taipei's universities provide a dynamic and innovative environment for research, teaching, and professional development in various disciplines.",
     ],
-    image_url: '/cities/taipei.jpg',
+    image_url: '/cities/academic-jobs-in-taipei.jpg',
     alt: "The bustling streets of Taipei with the iconic Taipei 101 in the background, symbolizing the city's modern educational facilities and rich cultural heritage",
-    tags: ['Taipei Universities, National Taiwan University (NTU), Nobel Laureates, Higher Education'],
+    tags: [
+      'Taipei Universities, National Taiwan University (NTU), Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Exploring the Academic Excellence of Milan, Italy',
@@ -1863,9 +1943,11 @@ export const cityData = [
       'Choosing to study in Milan means immersing yourself in an environment that blends historical richness with modern innovation, offering unparalleled educational and personal development opportunities.',
       "For professionals, Milan's universities offer a dynamic atmosphere for teaching, research, and collaboration, situated in one of the world's most culturally and commercially vibrant cities.",
     ],
-    image_url: '/cities/italy.jpg',
+    image_url: '/cities/academic-jobs-in-italy.jpg',
     alt: "A panoramic view of Milan, showcasing its iconic skyline with the Duomo di Milano, symbolizing the city's rich academic heritage and modern educational facilities",
-    tags: ['Bocconi University, University Of Milan, Nobel Laureates, Higher Education'],
+    tags: [
+      'Bocconi University, University Of Milan, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Exploring the Academic Landscape of Helsinki, Finland',
@@ -1900,9 +1982,11 @@ export const cityData = [
       'Opting for Helsinki for education means engaging in a community where innovation, sustainability, and inclusivity are at the forefront, offering students a unique blend of traditional and modern learning experiences.',
       "Professionals seeking employment in Helsinki's academic institutions will find a collaborative and supportive environment, with ample opportunities for research, development, and international networking.",
     ],
-    image_url: '/cities/finland.jpg',
+    image_url: '/cities/academic-jobs-in-finland.jpg',
     alt: "A picturesque view of Helsinki, showcasing its harmonious blend of historical architecture and modern educational facilities, set against the backdrop of Finland's natural beauty",
-    tags: ['University of Helsinki, Aalto University, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Helsinki, Aalto University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Exploring the Educational Excellence of Bangalore, India',
@@ -1937,9 +2021,11 @@ export const cityData = [
       'Choosing Bangalore for education means immersing yourself in a dynamic learning environment that bridges traditional academics with the demands of the modern workforce, particularly in IT and entrepreneurship.',
       "For professionals, the city's universities offer unparalleled opportunities for research collaboration, continuing education, and engagement with a thriving tech ecosystem.",
     ],
-    image_url: '/cities/bangalore.jpg',
+    image_url: '/cities/academic-jobs-in-bangalore.jpg',
     alt: "The bustling cityscape of Bangalore, juxtaposed with its serene educational campuses, illustrates the city's unique blend of technological advancement and academic heritage.",
-    tags: ['Christ University, Bangalore University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Christ University, Bangalore University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Exploring the Academic Vibrancy of São Paulo, Brazil',
@@ -1974,9 +2060,11 @@ export const cityData = [
       "Studying in São Paulo offers a unique blend of cultural immersion and academic rigor within South America's largest metropolis, providing students with unparalleled opportunities for personal and professional growth.",
       "For academics and professionals, São Paulo's universities present a fertile ground for research, collaboration, and innovation in a city that thrives on creativity and diversity.",
     ],
-    image_url: '/cities/sao-paulo.jpg',
+    image_url: '/cities/academic-jobs-in-sao-paulo.jpg',
     alt: "The sprawling cityscape of São Paulo, with its mix of modern skyscrapers and historic buildings, reflects the city's role as a key player in global education and research.",
-    tags: ['São Paulo Universities, Mackenzie Presbyterian University, Nobel Laureates, Higher Education'],
+    tags: [
+      'São Paulo Universities, Mackenzie Presbyterian University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Discovering the Academic Excellence of Mexico City, Mexico',
@@ -2011,9 +2099,11 @@ export const cityData = [
       "Studying in Mexico City offers an immersive experience in one of the world's most dynamic cultural landscapes, combined with access to top-tier academic programs and research opportunities.",
       "For professionals and academics, the city's universities provide a platform for groundbreaking research and collaboration in a nation renowned for its historic contributions to art, science, and technology.",
     ],
-    image_url: '/cities/mexico-city.jpg',
+    image_url: '/cities/academic-jobs-in-mexico-city.jpg',
     alt: 'Academic Jobs Panoramic view of Mexico City with its blend of modern skyscrapers and historic architecture, symbolizing its status as a leading center for education and research in Latin America.',
-    tags: ['Mexico City Universities, Metropolitan Autonomous University (UAM), Nobel Laureates, Higher Education'],
+    tags: [
+      'Mexico City Universities, Metropolitan Autonomous University (UAM), Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Exploring the Academic Landscape of Istanbul, Turkey',
@@ -2048,9 +2138,11 @@ export const cityData = [
       'Choosing Istanbul for education means immersing yourself in a city with a unique blend of history and modernity, offering unparalleled academic and cultural experiences.',
       "Professionals seeking to advance their careers will find Istanbul's universities to be centers of innovation and research, providing numerous opportunities for collaboration and professional growth in a city known for its entrepreneurial spirit.",
     ],
-    image_url: '/cities/istanbul.jpg',
+    image_url: '/cities/academic-jobs-in-istanbul.jpg',
     alt: "The stunning skyline of Istanbul, showcasing its unique mix of historical architecture and modern educational institutions, symbolizing the city's role as a key academic and cultural center in Turkey.",
-    tags: ['Istanbul Universities, Sabanci University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Istanbul Universities, Sabanci University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Exploring the Academic Excellence of Riyadh, Saudi Arabia',
@@ -2085,9 +2177,11 @@ export const cityData = [
       "For students, Riyadh offers a unique blend of traditional culture and modern educational facilities, making it an ideal place for personal and academic growth. The city's universities provide state-of-the-art research facilities and a multicultural environment.",
       'Professionals looking to enhance their career can find in Riyadh a vibrant academic community and numerous opportunities for research and development, especially in fields like renewable energy, information technology, and healthcare.',
     ],
-    image_url: '/cities/saudi-arabia.jpg',
+    image_url: '/cities/academic-jobs-in-saudi-arabia.jpg',
     alt: "The skyline of Riyadh at dusk, showcasing the modern architecture of its universities and colleges, reflecting the city's commitment to becoming a global leader in education and research.",
-    tags: ['Saudi Arabia Universities, King Saud University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Saudi Arabia Universities, King Saud University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Discover the Academic Landscape of Johannesburg, South Africa',
@@ -2122,9 +2216,11 @@ export const cityData = [
       "Students in Johannesburg benefit from a dynamic and supportive academic environment, coupled with the city's rich cultural and social landscape, offering a unique educational experience.",
       "For professionals, the city's universities provide ample opportunities for career advancement through research collaborations, continuing education programs, and partnerships with industry leaders.",
     ],
-    image_url: '/cities/johannesburg.jpg',
+    image_url: '/cities/academic-jobs-in-johannesburg.jpg',
     alt: "The Johannesburg skyline with prominent university buildings, symbolizing the city's commitment to higher education and its role as a leading academic center in South Africa.",
-    tags: ['Johannesburg Universities, University of the Witwatersrand, Nobel Laureates, Higher Education'],
+    tags: [
+      'Johannesburg Universities, University of the Witwatersrand, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Exploring the Academic Excellence of Cairo, Egypt',
@@ -2159,9 +2255,11 @@ export const cityData = [
       'Cairo offers a unique educational experience, blending rich historical context with modern academic rigor, making it an ideal destination for students seeking comprehensive growth and learning.',
       "For academics and professionals, Cairo's universities provide a platform for impactful research, interdisciplinary collaboration, and professional development in a culturally rich environment.",
     ],
-    image_url: '/cities/egypt.avif',
+    image_url: '/cities/academic-jobs-in-egypt.avif',
     alt: "The iconic Cairo skyline, highlighting the city's historic and modern educational institutions against the backdrop of the River Nile.",
-    tags: ['Cairo Universities, American University in Cairo, Nobel Laureates, Higher Education'],
+    tags: [
+      'Cairo Universities, American University in Cairo, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -2200,9 +2298,11 @@ export const cityData = [
       "Studying in Santiago offers a unique blend of academic rigor and cultural immersion, set against the backdrop of the city's rich history and dynamic urban life.",
       "For professionals seeking employment, Santiago's universities are at the forefront of research and innovation, offering numerous opportunities for collaboration and career advancement.",
     ],
-    image_url: '/cities/santiago.avif',
+    image_url: '/cities/academic-jobs-in-santiago.avif',
     alt: "The panoramic view of Santiago, Chile, showcasing the Andes mountains backdrop and the city's modern educational facilities.",
-    tags: ['Chilean Universities, Universidad de Chile, Nobel Laureates, Higher Education'],
+    tags: [
+      'Chilean Universities, Universidad de Chile, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Lisbon, Portugal: A Beacon of Knowledge and Cultural Heritage',
@@ -2240,9 +2340,11 @@ export const cityData = [
       'Choosing Lisbon for education means immersing yourself in a city that balances academic rigor with a rich cultural tapestry, offering students a comprehensive growth experience.',
       "Professionals seeking employment will find Lisbon's universities to be fertile ground for research and development, with ample opportunities for collaborative projects and career advancement.",
     ],
-    image_url: '/cities/portugal.jpg',
+    image_url: '/cities/academic-jobs-in-portugal.jpg',
     alt: 'Academic Jobs The picturesque landscape of Lisbon with the iconic São Jorge Castle overlooking the city, symbolizing the blend of historical richness and educational excellence.',
-    tags: ['Lisbon Universities, NOVA University Lisbon, Nobel Laureates, Higher Education'],
+    tags: [
+      'Lisbon Universities, NOVA University Lisbon, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -2281,9 +2383,11 @@ export const cityData = [
       "Opting for Bangkok as a study destination offers not just academic rigor but also a chance to immerse in Thailand's rich cultural heritage, providing students with a holistic educational journey.",
       "For professionals, Bangkok's universities are fertile grounds for cutting-edge research and career development, offering myriad opportunities in a city known for its welcoming spirit and dynamic economy.",
     ],
-    image_url: '/cities/bangkok.jpg',
+    image_url: '/cities/academic-jobs-in-bangkok.jpg',
     alt: "The iconic skyline of Bangkok, reflecting the city's modernity and rich cultural heritage, symbolizing its role as an educational and cultural hub in Southeast Asia.",
-    tags: ['Bangkok Universities, Chulalongkorn University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Bangkok Universities, Chulalongkorn University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'New Delhi, India: A Nexus of Academic Excellence and Heritage',
@@ -2321,9 +2425,11 @@ export const cityData = [
       'Choosing New Delhi for education means immersing oneself in a city of vibrant history and academic fervor, offering students a unique opportunity to grow both intellectually and personally.',
       "For professionals, the city's universities are beacons of research and development, providing unparalleled opportunities for career advancement in a city that thrives on innovation and cultural richness.",
     ],
-    image_url: '/cities/new delhi.jpg',
+    image_url: '/cities/academic-jobs-in-new delhi.jpg',
     alt: "The panoramic view of New Delhi, showcasing its iconic landmarks intertwined with modern academic institutions, symbolizing the city's blend of tradition and educational excellence.",
-    tags: ['Indian Universities, University of Delhi, Nobel Laureates, Higher Education'],
+    tags: [
+      'Indian Universities, University of Delhi, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Montgomery, AL: Academic Excellence and Innovation Hub',
@@ -2356,9 +2462,11 @@ export const cityData = [
       "Montgomery's universities and colleges provide unparalleled educational experiences, fostering personal and intellectual growth. Students benefit from innovative programs, esteemed faculty, and diverse learning environments, preparing them for successful futures.",
       'For professionals, Montgomery offers abundant research and employment opportunities, with institutions at the forefront of innovation and discovery across various fields. Join a thriving academic community dedicated to excellence and advancement.',
     ],
-    image_url: '/cities/montgomery.jpg',
+    image_url: '/cities/academic-jobs-in-montgomery.jpg',
     alt: 'Academic Jobs Montgomery Alabama cityscape skyline',
-    tags: ['Alabama Universities, Auburn University at Montgomery, Nobel Laureates, Higher Education'],
+    tags: [
+      'Alabama Universities, Auburn University at Montgomery, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2392,7 +2500,9 @@ export const cityData = [
     image_url:
       'https://www.backyardimage.com/wp-content/uploads/2022/07/2022-06-09-Alaska-Heap-1933-1.jpg',
     alt: 'Academic Jobs Panoramic view of Juneau, Alaska',
-    tags: ['Alaska Universities, University of Alaska Southeast, Nobel Laureates, Higher Education'],
+    tags: [
+      'Alaska Universities, University of Alaska Southeast, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2430,7 +2540,9 @@ export const cityData = [
     image_url:
       'https://www.appily.com/sites/default/files/styles/max_800/public/images/hero/college/448886_hero.jpg?itok=qWpmRAZU',
     alt: 'Academic Jobs Phoenix skyline with educational institutions',
-    tags: ['Arizona Universities, Phoenix College, Nobel Laureates, Higher Education'],
+    tags: [
+      'Arizona Universities, Phoenix College, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2466,7 +2578,9 @@ export const cityData = [
     image_url:
       'https://traveler.marriott.com/wp-content/uploads/2023/11/arkansas-river-and-skyline-sunrise-little-rock-arkanasa-1920x1080.jpg',
     alt: 'Academic Jobs Downtown Little Rock skyline with riverfront',
-    tags: ['Little Rock Universities, Philander Smith College, Nobel Laureates, Higher Education'],
+    tags: [
+      'Little Rock Universities, Philander Smith College, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2506,7 +2620,9 @@ export const cityData = [
     image_url:
       'https://media.istockphoto.com/id/537215344/photo/denver-colorado-skyscrapers-snowy-longs-peak-rocky-mountains-summer.jpg?s=612x612&w=0&k=20&c=L_TTuniB8C7XlKRPGeVvpZFGSGR3cdRmuDJEBX_3L6Q=',
     alt: 'Academic Jobs Denver skyline with Rocky Mountains in the background',
-    tags: ['Denver Universities, University of Colorado Denver, Nobel Laureates, Higher Education'],
+    tags: [
+      'Denver Universities, University of Colorado Denver, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2549,7 +2665,9 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/8555/30134529580_f3cfd23d86_b.jpg',
     alt: 'Academic Jobs Hartford skyline at sunset',
-    tags: ['Connecticut Universities, Trinity College, Nobel Laureates, Higher Education'],
+    tags: [
+      'Connecticut Universities, Trinity College, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2587,7 +2705,9 @@ export const cityData = [
     ],
     image_url: 'https://hbcuconnect.com/images/blogs/362231',
     alt: 'Academic Jobs Dover, Delaware: A Hub of Education and Innovation',
-    tags: ['Delaware State University, Wesley College, Nobel Laureates, Higher Education'],
+    tags: [
+      'Delaware State University, Wesley College, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2625,7 +2745,9 @@ export const cityData = [
     ],
     image_url: `https://www.shutterstock.com/image-photo/tallahassee-florida-usa-downtown-skyline-600nw-359879489.jpg`,
     alt: `Tallahassee skyline with palm trees`,
-    tags: ['Tallahassee Universities, Florida State University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Tallahassee Universities, Florida State University, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2678,7 +2800,9 @@ export const cityData = [
     image_url:
       'https://media.istockphoto.com/id/1311134607/photo/aerial-shot-over-the-downtown-connector-during-sunset.jpg?s=612x612&w=0&k=20&c=TD5UnQqRHwlmSlovgTK4RhYNr2ui-BoZGjBLCPHKuNI=',
     alt: 'Academic Jobs Atlanta skyline and cityscape',
-    tags: ['Atlanta Universities, Emory University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Atlanta Universities, Emory University, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2722,7 +2846,9 @@ export const cityData = [
     image_url:
       'https://www.techhelp.org/wp-content/uploads/2022/04/downtown-boise-1000-1.jpg',
     alt: 'Academic Jobs Boise, Idaho - A Center of Learning and Innovation',
-    tags: ['Idaho Universities, University of Idaho, Nobel Laureates, Higher Education'],
+    tags: [
+      'Idaho Universities, University of Idaho, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2764,7 +2890,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/7142/6784455887_5c2cffdf9c_b.jpg',
     alt: 'Academic Jobs Indianapolis skyline reflecting in water',
-    tags: ['Indianapolis Universities, Butler University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Indianapolis Universities, Butler University, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2802,7 +2930,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/5160/8412464698_6bc0f33e7d_b.jpg',
     alt: 'Academic Jobs Des Moines skyline with city lights at dusk',
-    tags: ['Drake University, GrandView University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Drake University, GrandView University, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2844,7 +2974,9 @@ export const cityData = [
     image_url:
       'https://st4.depositphotos.com/1035350/41645/i/450/depositphotos_416459412-stock-photo-toledo-ohio-usa-downtown-skyline.jpg',
     alt: "A captivating view of Topeka's skyline against the backdrop of a vibrant sunset",
-    tags: ['Topeka Universities, Washburn University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Topeka Universities, Washburn University, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2879,9 +3011,11 @@ export const cityData = [
       "Gold Coast's universities and colleges provide unparalleled opportunities for educational and personal growth. Students benefit from diverse academic programs, cutting-edge research facilities, and a supportive learning environment that prepares them for success in the global arena.",
       'For professionals, Gold Coast offers rewarding employment opportunities in academia and research. With a focus on innovation and collaboration, the city attracts top talent and fosters groundbreaking discoveries across various fields.',
     ],
-    image_url: '/cities/gold-coast.jpg',
+    image_url: '/cities/academic-jobs-in-gold-coast.jpg',
     alt: "A picturesque view of Gold Coast's skyline and coastline",
-    tags: ['GoldCoast Universities, Bond University, Nobel Laureates, Higher Education'],
+    tags: [
+      'GoldCoast Universities, Bond University, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2909,9 +3043,11 @@ export const cityData = [
       'Wagga Wagga beckons with transformative educational experiences and personal growth opportunities. Immerse yourself in a supportive academic environment where innovation thrives, and intellectual curiosity knows no bounds. Discover your potential and pave the way for a bright future in Wagga Wagga, Australia.',
       "Join Wagga Wagga's esteemed academic community and embark on a journey of professional fulfillment and research excellence. Whether you're an aspiring scholar or seasoned academic, Wagga Wagga offers a dynamic platform to contribute meaningfully to your field and shape the future of education​.",
     ],
-    image_url: '/cities/wagga-wagga.jpg',
+    image_url: '/cities/academic-jobs-in-wagga-wagga.jpg',
     alt: 'Academic Jobs Panoramic view of Wagga Wagga, Australia, showcasing its picturesque landscape and urban charm',
-    tags: ['Charles Sturt University, TAFE NSW - Riverina Institute, Nobel Laureates, Higher Education'],
+    tags: [
+      'Charles Sturt University, TAFE NSW - Riverina Institute, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2951,9 +3087,11 @@ export const cityData = [
       'Choosing Bathurst for higher education promises a transformative journey of personal growth and academic exploration. Students benefit from hands-on learning experiences, cutting-edge research opportunities, and a supportive community dedicated to nurturing individual talents and aspirations.',
       'For academics and researchers, Bathurst offers a fertile ground for intellectual collaboration, innovative research initiatives, and career advancement. Join a dynamic ecosystem where ideas flourish, boundaries blur, and the pursuit of knowledge knows no bounds.',
     ],
-    image_url: '/cities/bathurst.jpg',
+    image_url: '/cities/academic-jobs-in-bathurst.jpg',
     alt: 'Academic Jobs Bathurst, Australia - A Thriving Hub of Education and Innovation',
-    tags: ['Charles Sturt University, TAFE NSW - Western Institute (Bathurst Campus), Nobel Laureates, Higher Education'],
+    tags: [
+      'Charles Sturt University, TAFE NSW - Western Institute (Bathurst Campus), Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -2991,9 +3129,11 @@ export const cityData = [
     promo: [
       "Embark on a transformative educational odyssey amidst Ballarat's rich academic tapestry. From groundbreaking research endeavors to a nurturing learning environment, the city offers a blend of tradition and innovation, inspiring scholars to push the boundaries of knowledge and redefine intellectual frontiers.",
     ],
-    image_url: '/cities/ballarat.jpg',
+    image_url: '/cities/academic-jobs-in-ballarat.jpg',
     alt: "A panoramic view of Ballarat's historic precinct showcasing its architectural heritage and natural beauty",
-    tags: ['Federation University Australia, Australian Catholic University (Ballarat Campus), Nobel Laureates, Higher Education'],
+    tags: [
+      'Federation University Australia, Australian Catholic University (Ballarat Campus), Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3032,9 +3172,11 @@ export const cityData = [
       "Immerse yourself in Bendigo's thriving academic community and unlock a world of opportunity. From cutting-edge research facilities to diverse learning experiences, Bendigo's universities and colleges offer a supportive and enriching environment for personal and professional development.",
       "Whether you're pursuing higher education or seeking career advancement, Bendigo's academic institutions provide the perfect springboard for realizing your aspirations and making a meaningful impact on the world.",
     ],
-    image_url: '/cities/bendigo.avif',
+    image_url: '/cities/academic-jobs-in-bendigo.avif',
     alt: 'Academic Jobs Bendigo skyline showcasing its historic architecture and lush greenery',
-    tags: ['Bendigo Universities, La Trobe University Bendigo, Nobel Laureates, Higher Education'],
+    tags: [
+      'Bendigo Universities, La Trobe University Bendigo, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3071,9 +3213,11 @@ export const cityData = [
       "Embark on your academic journey or advance your career in Wodonga's vibrant educational landscape. Experience the transformative power of education at La Trobe University and Wodonga Institute of TAFE, where learning transcends boundaries and opens doors to endless possibilities.",
       'Join a community of scholars, researchers, and learners committed to excellence, innovation, and positive change. Whether you seek personal growth or professional advancement, Wodonga offers an enriching environment where your aspirations can flourish.',
     ],
-    image_url: '/cities/wodonga.jpg',
+    image_url: '/cities/academic-jobs-in-wodonga.jpg',
     alt: 'Academic Jobs Wodonga, Australia - A Vibrant Academic Hub',
-    tags: ['Wodonga Institute of TAFE, La Trobe University, Albury-Wodonga Campus, Nobel Laureates, Higher Education'],
+    tags: [
+      'Wodonga Institute of TAFE, La Trobe University, Albury-Wodonga Campus, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3112,9 +3256,11 @@ export const cityData = [
       `Dubbo's academic institutions offer unparalleled opportunities for students and professionals alike. With state-of-the-art facilities, dedicated faculty, and a vibrant community of learners, Dubbo provides a nurturing environment for intellectual growth and personal development.`,
       `Whether you aspire to pursue higher education, engage in cutting-edge research, or advance your career in academia, Dubbo invites you to join its dynamic academic community and be part of a legacy of innovation and excellence.`,
     ],
-    image_url: `/cities/dubbo.jpg`,
+    image_url: `/cities/academic-jobs-in-dubbo.jpg`,
     alt: `Dubbo, Australia - A City of Academic Excellence`,
-    tags: ['University Of Sydney, Charles Sturt University - Dubbo Campus, Nobel Laureates, Higher Education'],
+    tags: [
+      'University Of Sydney, Charles Sturt University - Dubbo Campus, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3153,9 +3299,11 @@ export const cityData = [
     promo: [
       'Goulburn beckons with boundless educational and professional prospects. Immerse yourself in a dynamic learning environment where academic curiosity flourishes and groundbreaking research thrives. Whether you seek transformative educational experiences or groundbreaking research endeavors, Goulburn offers an unparalleled platform for intellectual growth and professional advancement​.',
     ],
-    image_url: '/cities/goulburn.jpg',
+    image_url: '/cities/academic-jobs-in-goulburn.jpg',
     alt: 'Academic Jobs Goulburn, Australia: A Vibrant Academic Hub',
-    tags: ['Goulburn Universities, Southern Cross University Goulburn Campus, Nobel Laureates, Higher Education'],
+    tags: [
+      'Goulburn Universities, Southern Cross University Goulburn Campus, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3191,9 +3339,11 @@ export const cityData = [
       'Prospective students embarking on their educational journey in Orange unlock a world of possibilities. With state-of-the-art facilities, diverse academic programs, and a supportive learning environment, Orange offers an enriching experience for personal and intellectual growth.',
       'For professionals seeking employment, Orange presents a landscape ripe with research opportunities and industry collaborations. From pioneering research projects to community engagement initiatives, Orange cultivates an ecosystem conducive to professional advancement and innovation.',
     ],
-    image_url: '/cities/orange.jpg',
+    image_url: '/cities/academic-jobs-in-orange.jpg',
     alt: 'Academic Jobs Orange, Australia: A Vibrant Hub of Education and Innovation',
-    tags: ['CharlesSturt University, Orange International College, Nobel Laureates, Higher Education'],
+    tags: [
+      'CharlesSturt University, Orange International College, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3223,9 +3373,11 @@ export const cityData = [
       'Embark on a transformative educational journey in Port Macquarie, where opportunities for academic excellence and personal growth converge. With cutting-edge facilities and a supportive faculty, students engage in experiential learning that prepares them for dynamic careers and global citizenship.',
       'Join a vibrant scholarly community committed to innovation and collaboration. Whether you aspire to undergraduate studies or advanced research, Port Macquarie fosters an environment where curiosity thrives and discoveries abound.',
     ],
-    image_url: '/cities/port-macquarie.jpg',
+    image_url: '/cities/academic-jobs-in-port-macquarie.jpg',
     alt: 'Academic Jobs Aerial view of Port Macquarie, Australia',
-    tags: ['Charles Sturt University, TAFE NSW - Port Macquarie Campus, Nobel Laureates, Higher Education'],
+    tags: [
+      'Charles Sturt University, TAFE NSW - Port Macquarie Campus, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3268,9 +3420,11 @@ export const cityData = [
       "Embark on a transformative academic journey in Bundaberg, where possibilities abound and intellectual horizons expand. With state-of-the-art facilities, world-class faculty, and a vibrant cultural tapestry, attending or working at Bundaberg's educational institutions promises unparalleled opportunities for growth, discovery, and fulfillment.",
       "Immerse yourself in Bundaberg's rich heritage and natural splendor, while engaging in cutting-edge research and collaborative learning experiences. Experience the essence of academic excellence amidst a thriving community dedicated to knowledge creation and societal impact.",
     ],
-    image_url: '/cities/bundaberg.jpg',
+    image_url: '/cities/academic-jobs-in-bundaberg.jpg',
     alt: 'Academic Jobs Bundaberg, Australia - A Hub of Academic Brilliance',
-    tags: ['CQ University Bundaberg, University of Southern Queensland (USQ), Nobel Laureates, Higher Education'],
+    tags: [
+      'CQ University Bundaberg, University of Southern Queensland (USQ), Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3298,9 +3452,11 @@ export const cityData = [
       "Unlock boundless opportunities for personal and professional development in Gladstone's academic milieu. Experience cutting-edge facilities, world-class faculty, and a vibrant research culture that nurtures innovation and excellence.",
       "For educators and researchers, Gladstone offers a collaborative environment ripe with possibilities. Engage in groundbreaking research, forge industry partnerships, and contribute to the city's thriving academic community.",
     ],
-    image_url: '/cities/gladstone.webp',
+    image_url: '/cities/academic-jobs-in-gladstone.webp',
     alt: 'Academic Jobs Aerial view of Gladstone, Australia',
-    tags: ['CQUniversity Gladstone, TAFE Queensland Gladstone, Nobel Laureates, Higher Education'],
+    tags: [
+      'CQUniversity Gladstone, TAFE Queensland Gladstone, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3335,9 +3491,11 @@ export const cityData = [
     promo: [
       "Experience the vibrant academic community of Mackay, offering unparalleled educational and personal growth opportunities. Whether you're a student seeking innovative programs or a professional aiming for research and career advancement, Mackay's universities and colleges provide a supportive environment to nurture your aspirations.",
     ],
-    image_url: '/cities/mackay.jpg',
+    image_url: '/cities/academic-jobs-in-mackay.jpg',
     alt: 'Academic Jobs Aerial view of Mackay, Australia',
-    tags: ['CQUniversity Mackay, James Cook University, Nobel Laureates, Higher Education'],
+    tags: [
+      'CQUniversity Mackay, James Cook University, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3378,9 +3536,11 @@ export const cityData = [
     promo: [
       'Embark on a transformative academic journey in Rockhampton, where tradition meets innovation and curiosity knows no bounds. Experience a vibrant culture of learning and discovery, supported by world-class facilities and a collaborative community of scholars. Whether you seek to advance your education or pursue groundbreaking research, Rockhampton offers endless opportunities for growth and inspiration.',
     ],
-    image_url: '/cities/rockhampton.jpg',
+    image_url: '/cities/academic-jobs-in-rockhampton.jpg',
     alt: 'Academic Jobs Panoramic view of Rockhampton, Australia skyline with Fitzroy River',
-    tags: ['CQUniversity, Australian Agricultural College Corporation, Nobel Laureates, Higher Education'],
+    tags: [
+      'CQUniversity, Australian Agricultural College Corporation, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3420,9 +3580,11 @@ export const cityData = [
       "Ararat offers unparalleled opportunities for personal and professional growth. With cutting-edge facilities, world-class faculty, and a supportive academic community, students and professionals alike thrive in Ararat's vibrant intellectual ecosystem.",
       "Whether you're seeking to expand your knowledge, conduct groundbreaking research, or embark on a rewarding career in academia, Ararat provides the ideal platform to realize your aspirations and make a lasting impact.",
     ],
-    image_url: '/cities/ararat.jpg',
+    image_url: '/cities/academic-jobs-in-ararat.jpg',
     alt: 'Academic Jobs Scenic view of Ararat, Australia',
-    tags: ['Federation University Australia, Victorian University - Ararat Campus, Nobel Laureates, Higher Education'],
+    tags: [
+      'Federation University Australia, Victorian University - Ararat Campus, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3457,9 +3619,11 @@ export const cityData = [
     promo: [
       'Horsham beckons with a compelling blend of educational opportunities and professional growth. Students thrive in an environment that fosters critical thinking and hands-on learning, while researchers benefit from collaborative initiatives and state-of-the-art facilities, propelling discoveries that shape the future.',
     ],
-    image_url: '/cities/horsham.jpg',
+    image_url: '/cities/academic-jobs-in-horsham.jpg',
     alt: "A panoramic view of Horsham's cityscape",
-    tags: ['Federation University Australia - Horsham Campus, SuniTAFE - Horsham Campus, Nobel Laureates, Higher Education'],
+    tags: [
+      'Federation University Australia - Horsham Campus, SuniTAFE - Horsham Campus, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3496,9 +3660,11 @@ export const cityData = [
       "Embark on a transformative journey of learning and discovery in Stawell, Australia. Whether you're a student seeking to expand your horizons or a faculty member eager to engage in cutting-edge research, Stawell's universities and colleges offer a supportive and dynamic environment for academic exploration and growth.",
       "Experience the thrill of intellectual discovery amidst Stawell's breathtaking landscapes and vibrant community. Join us in unlocking the boundless potential of education and innovation, and together, let's shape a brighter future for generations to come.",
     ],
-    image_url: '/cities/stawell.jpg',
+    image_url: '/cities/academic-jobs-in-stawell.jpg',
     alt: 'Academic Jobs Stawell, Australia - A hub of academic excellence',
-    tags: ['Federation University Australia - Wimmera Campus, Stawell Campus, East Grampians Health Service, Nobel Laureates, Higher Education'],
+    tags: [
+      'Federation University Australia - Wimmera Campus, Stawell Campus, East Grampians Health Service, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3529,9 +3695,11 @@ export const cityData = [
       "Experience the transformative power of education in Churchill, where every student's journey is nurtured and celebrated. From world-class faculty to innovative research opportunities, the city offers a stimulating environment for intellectual growth and personal development.",
       "Join Churchill's academic community and embark on a journey of discovery and innovation. Whether you're pursuing higher education or seeking professional advancement, Churchill provides the perfect setting to realize your aspirations and make a meaningful impact on the world.",
     ],
-    image_url: '/cities/churchill.jpeg',
+    image_url: '/cities/academic-jobs-in-churchill.jpeg',
     alt: 'Academic Jobs Panoramic view of Churchill, Australia',
-    tags: ['Federation University Australia - Gippsland Campus, Gippsland Institute of TAFE, Nobel Laureates, Higher Education'],
+    tags: [
+      'Federation University Australia - Gippsland Campus, Gippsland Institute of TAFE, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3566,9 +3734,11 @@ export const cityData = [
     promo: [
       "Whether you're a student seeking an enriching academic experience or a researcher pursuing innovative solutions to global challenges, Coffs Harbour offers endless possibilities for growth and discovery. With its supportive academic community, world-class facilities, and breathtaking natural surroundings, Coffs Harbour invites you to embark on a journey of learning and exploration.",
     ],
-    image_url: '/cities/coffs-harbour.jpg',
+    image_url: '/cities/academic-jobs-in-coffs-harbour.jpg',
     alt: "Scenic view of Coffs Harbour's coastline",
-    tags: ['Southern Cross University - Coffs Harbour Campus, TAFE NSW - Coffs Harbour Education Campus, Nobel Laureates, Higher Education'],
+    tags: [
+      'Southern Cross University - Coffs Harbour Campus, TAFE NSW - Coffs Harbour Education Campus, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3608,9 +3778,11 @@ export const cityData = [
       'Lismore presents an intellectually enriching environment for students and professionals alike. Its universities and colleges offer academic rigor intertwined with practical experiences, nurturing holistic development and empowering graduates to address contemporary challenges with ingenuity.',
       'For academics, Lismore serves as a fertile ground for research and collaboration, fostering innovation and meaningful scholarship amidst a dynamic community and diverse ecosystems.',
     ],
-    image_url: '/cities/lismore.jpg',
+    image_url: '/cities/academic-jobs-in-lismore.jpg',
     alt: 'Academic Jobs Lismore, Australia - Cityscape overlooking lush greenery and buildings',
-    tags: ['Southern Cross University, Nimbins College of Holistic Education and Training,  Nobel Laureates, Higher Education'],
+    tags: [
+      'Southern Cross University, Nimbins College of Holistic Education and Training,  Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3644,9 +3816,11 @@ export const cityData = [
       'Embark on a transformative journey in Tweed Heads, where educational opportunities converge with boundless possibilities for personal and professional advancement. Our institutions nurture talent, foster creativity, and cultivate leaders poised to make a difference in a rapidly evolving world.',
       'Join the vibrant academic community of Tweed Heads and immerse yourself in a culture of innovation and discovery. Whether you seek to expand your horizons or make meaningful contributions to society, Tweed Heads offers the ideal platform to turn aspirations into achievements.',
     ],
-    image_url: '/cities/tweed-heads.jpg',
+    image_url: '/cities/academic-jobs-in-tweed-heads.jpg',
     alt: 'Academic Jobs Tweed Heads, Australia: Where Education Meets Natural Splendor',
-    tags: ['Southern Cross University, TAFE NSW - North Coast Institute, Tweed Heads Campus,  Nobel Laureates, Higher Education'],
+    tags: [
+      'Southern Cross University, TAFE NSW - North Coast Institute, Tweed Heads Campus,  Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3672,9 +3846,11 @@ export const cityData = [
     academicInfo: [''],
     academicList: [],
     promo: [''],
-    image_url: '/cities/armidlae.jpg',
+    image_url: '/cities/academic-jobs-in-armidlae.jpg',
     alt: 'Academic Jobs Panoramic view of Armidale city with lush greenery and historic architecture',
-    tags: ['University of New England, Armidale College of TAFE, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of New England, Armidale College of TAFE, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3715,9 +3891,11 @@ export const cityData = [
       "Immerse yourself in the vibrant academic tapestry of Toowoomba, where learning transcends boundaries and innovation knows no limits. Whether you seek to expand your intellectual horizons or embark on a transformative research journey, Toowoomba's institutions offer a nurturing environment where your aspirations can take flight.",
       'Join a community of scholars, visionaries, and changemakers dedicated to shaping a brighter tomorrow. Experience the synergy of intellect and imagination in Toowoomba, where every discovery, every insight, contributes to the collective pursuit of knowledge and human advancement.',
     ],
-    image_url: '/cities/toowoomba.jpg',
+    image_url: '/cities/academic-jobs-in-toowoomba.jpg',
     alt: 'Academic Jobs Toowoomba cityscape',
-    tags: ['University of Southern Queensland (USQ), Southern Queensland Institute of TAFE, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Southern Queensland (USQ), Southern Queensland Institute of TAFE, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3759,9 +3937,11 @@ export const cityData = [
       "Embark on a transformative journey of learning and discovery amidst Springfield's academic allure, where knowledge transcends boundaries and innovation knows no limits. With world-class amenities, diverse programs, and a nurturing ecosystem, Springfield beckons aspirants to chart their academic odyssey amidst the vibrant tapestry of ideas and opportunities.",
       "For professionals and researchers seeking fertile grounds to cultivate their ambitions, Springfield stands as a bastion of possibility and promise. With its collaborative ethos, entrepreneurial spirit, and unwavering commitment to progress, Springfield offers an unparalleled platform to harness one's talents and forge a path of enduring impact and significance.",
     ],
-    image_url: '/cities/springfield.jpg',
+    image_url: '/cities/academic-jobs-in-springfield.jpg',
     alt: 'Academic Jobs Springfield, Australia: Aerial View of the City',
-    tags: ['University of Southern Queensland (USQ), Springfield City Group of Colleges, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Southern Queensland (USQ), Springfield City Group of Colleges, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3792,9 +3972,11 @@ export const cityData = [
       "Embark on a journey of intellectual exploration and personal growth in Ipswich's thriving higher education community. Engage with world-class faculty, state-of-the-art resources, and vibrant student life, shaping your future amidst a backdrop of innovation and discovery​.",
       'For educators and researchers, Ipswich offers a fertile ground for collaboration and exploration, where interdisciplinary initiatives flourish, propelling academic inquiry and pushing the boundaries of human knowledge​.',
     ],
-    image_url: '/cities/ipswich.jpg',
+    image_url: '/cities/academic-jobs-in-ipswich.jpg',
     alt: 'Academic Jobs Ipswich, Australia - A Nexus of Learning and Innovation',
-    tags: ['University of Southern Queensland (USQ), TAFE Queensland - Ipswich Campus, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Southern Queensland (USQ), TAFE Queensland - Ipswich Campus, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3823,9 +4005,11 @@ export const cityData = [
     promo: [
       "Frankston offers unparalleled educational and research opportunities, nurturing intellectual curiosity and personal growth. Whether as a student exploring cutting-edge disciplines or a researcher delving into groundbreaking projects, Frankston's academic environment fosters creativity, critical thinking, and lifelong learning.",
     ],
-    image_url: '/cities/frankston.jpg',
+    image_url: '/cities/academic-jobs-in-frankston.jpg',
     alt: "A panoramic view of Frankston's citysca",
-    tags: ['Chisholm Institute, Monash University,  Nobel Laureates, Higher Education'],
+    tags: [
+      'Chisholm Institute, Monash University,  Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3864,9 +4048,11 @@ export const cityData = [
     promo: [
       "Join Fremantle's vibrant academic community to embark on a journey of intellectual exploration and personal development. Whether pursuing higher education or seeking professional opportunities, Fremantle offers a dynamic environment where innovation and discovery thrive.",
     ],
-    image_url: '/cities/fremantle.jpg',
+    image_url: '/cities/academic-jobs-in-fremantle.jpg',
     alt: "Fremantle's academic landscape overlooking the Indian Ocean",
-    tags: ['University of Notre Dame Australia, South Metropolitan TAFE - Fremantle Campus, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Notre Dame Australia, South Metropolitan TAFE - Fremantle Campus, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3908,9 +4094,11 @@ export const cityData = [
       "Embark on a transformative academic journey in Gippsland, Australia, where vibrant campuses, pioneering research, and diverse learning opportunities await. Whether pursuing higher education or seeking professional growth, Gippsland's dynamic landscape offers an enriching environment fostering innovation and intellectual exploration.",
       "Experience the synergy of urban amenities and natural beauty while engaging with top-tier academics and cutting-edge research initiatives. Join Gippsland's thriving academic community and contribute to shaping the future of knowledge and innovation.",
     ],
-    image_url: '/cities/gippsland.jpg',
+    image_url: '/cities/academic-jobs-in-gippsland.jpg',
     alt: 'Academic Jobs Gippsland Australia - A Melange of Nature and Education',
-    tags: ['Federation University Australia - Gippsland Campus, Monash University - Gippsland Campus, Nobel Laureates, Higher Education'],
+    tags: [
+      'Federation University Australia - Gippsland Campus, Monash University - Gippsland Campus, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3949,9 +4137,11 @@ export const cityData = [
     promo: [
       'Emerald beckons seekers of wisdom and visionaries of change to its shores, offering a tapestry of learning opportunities and cultural enrichment. With state-of-the-art facilities, innovative research initiatives, and a nurturing academic ecosystem, Emerald empowers individuals to explore, create, and lead in their chosen fields. Whether igniting minds or catalyzing social transformation, Emerald invites you to embark on a transformative journey of discovery and impact.',
     ],
-    image_url: '/cities/emerald.jpg',
+    image_url: '/cities/academic-jobs-in-emerald.jpg',
     alt: 'Academic Jobs A panoramic view of Emerald, Australia, showcasing its lush landscapes and urban charm',
-    tags: ['Central Queensland University, Emerald Campus of TAFE Queensland, Nobel Laureates, Higher Education'],
+    tags: [
+      'Central Queensland University, Emerald Campus of TAFE Queensland, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -3990,9 +4180,11 @@ export const cityData = [
       "For those seeking educational enlightenment, Noosa offers a unique blend of academic excellence and natural beauty. Students immerse themselves in vibrant learning environments while exploring pristine beaches and lush hinterlands that define the region's charm.",
       "Aspiring researchers and educators find ample opportunities for professional growth in Noosa's dynamic academic community. From collaborative research projects to innovative teaching methods, the city nurtures talent and fosters a spirit of inquiry that fuels lifelong learning.",
     ],
-    image_url: '/cities/noosa.avif',
+    image_url: '/cities/academic-jobs-in-noosa.avif',
     alt: 'Academic Jobs Noosa, Australia: Where Academic Excellence Meets Natural Beauty',
-    tags: ['University of the Sunshine Coast - Noosa Campus, Noosa Christian College, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of the Sunshine Coast - Noosa Campus, Noosa Christian College, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -4033,9 +4225,11 @@ export const cityData = [
       "Joining Townsville's academic community offers unparalleled opportunities for personal and professional growth. Experience a vibrant learning environment where cutting-edge research intersects with real-world challenges, shaping the future of our planet and society.",
       "For those seeking employment, Townsville's universities and colleges provide a supportive and collaborative atmosphere conducive to groundbreaking research and interdisciplinary collaboration.",
     ],
-    image_url: '/cities/tonwsvile.jpg',
+    image_url: '/cities/academic-jobs-in-tonwsvile.jpg',
     alt: 'Academic Jobs Townsville, Australia: A Coastal City with Vibrant Culture and Education',
-    tags: ['James Cook University, Central Queensland University, Nobel Laureates, Higher Education'],
+    tags: [
+      'James Cook University, Central Queensland University, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -4077,9 +4271,11 @@ export const cityData = [
     promo: [
       'Discover Cairns, where educational excellence intersects with natural wonder. Immerse yourself in a vibrant academic community, where curiosity thrives and boundaries are transcended. Whether pursuing research or professional growth, Cairns offers boundless opportunities amidst breathtaking landscapes and cultural richness.',
     ],
-    image_url: '/cities/cairns.jpg',
+    image_url: '/cities/academic-jobs-in-cairns.jpg',
     alt: 'Academic Jobs Cairns, Australia: Where Education and Nature Converge',
-    tags: ['James Cook University, Barrier Reef Institute of TAFE, Nobel Laureates, Higher Education'],
+    tags: [
+      'James Cook University, Barrier Reef Institute of TAFE, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -4120,9 +4316,11 @@ export const cityData = [
       "Embark on a transformative educational journey in Sunshine Coast, where academic excellence meets unparalleled natural beauty. Whether you're a student seeking holistic learning experiences or a professional eager to collaborate and innovate, Sunshine Coast offers a vibrant ecosystem conducive to personal growth, discovery, and success.",
       'Join a dynamic community of scholars, researchers, and innovators who are shaping the future of education and driving positive change. From state-of-the-art facilities to collaborative research opportunities, Sunshine Coast provides the ideal setting to pursue your academic and professional aspirations.',
     ],
-    image_url: '/cities/sunshine-coast.jpg',
+    image_url: '/cities/academic-jobs-in-sunshine-coast.jpg',
     alt: 'Academic Jobs Sunshine Coast skyline with pristine beaches and lush greenery',
-    tags: ['University of the Sunshine Coast (USC), Sunshine Coast Health Institute (SCHI), Nobel Laureates, Higher Education'],
+    tags: [
+      'University of the Sunshine Coast (USC), Sunshine Coast Health Institute (SCHI), Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -4153,9 +4351,11 @@ export const cityData = [
       "Shepparton beckons students with a myriad of educational avenues, each promising transformative experiences and boundless opportunities for personal and academic growth. Embrace the spirit of innovation and discovery in Shepparton's nurturing academic community​.",
       "For professionals, Shepparton's universities and colleges offer an ideal setting to embark on rewarding careers and engage in groundbreaking research. Join hands with esteemed academics and researchers, and contribute to the global pursuit of knowledge and innovation​.",
     ],
-    image_url: '/cities/shepparton.webp',
+    image_url: '/cities/academic-jobs-in-shepparton.webp',
     alt: 'Academic Jobs Shepparton, Australia: A beacon of academic excellence',
-    tags: ['La Trobe University - Shepparton Campus, Goulburn Ovens Institute of TAFE, Nobel Laureates, Higher Education'],
+    tags: [
+      'La Trobe University - Shepparton Campus, Goulburn Ovens Institute of TAFE, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -4192,9 +4392,11 @@ export const cityData = [
     promo: [
       'Embark on an enriching academic journey in Mildura, where boundless opportunities for learning and growth await. Engage with leading scholars, delve into cutting-edge research, and immerse yourself in a community dedicated to intellectual excellence and innovation. Whether you seek educational enrichment or professional advancement, Mildura offers a vibrant tapestry of academic experiences.',
     ],
-    image_url: '/cities/mildura.jpg',
+    image_url: '/cities/academic-jobs-in-mildura.jpg',
     alt: 'Academic Jobs Mildura, Australia - A Center of Intellectual Exploration',
-    tags: ['La Trobe University, Mildura Campus, SuniTAFE - Mildura Campus, Nobel Laureates, Higher Education'],
+    tags: [
+      'La Trobe University, Mildura Campus, SuniTAFE - Mildura Campus, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -4236,9 +4438,11 @@ export const cityData = [
       "Geelong offers a dynamic academic environment, fostering personal growth and providing unparalleled opportunities for educational and professional development. With a commitment to innovation and a diverse range of programs, Geelong's universities and colleges are shaping the future leaders and researchers of tomorrow. Join us in Geelong for a transformative educational journey.",
       "For professionals, Geelong's universities and research institutions provide a fertile ground for career advancement. Collaborate with leading experts, engage in cutting-edge research, and contribute to the city's vibrant academic community. Geelong is not just a place to work; it's a destination for meaningful and impactful contributions to your field.",
     ],
-    image_url: '/cities/geelong.webp',
+    image_url: '/cities/academic-jobs-in-geelong.webp',
     alt: 'Academic Jobs Geelong Cityscape',
-    tags: ['Deakin University, Geelong Institute of Technology, Nobel Laureates, Higher Education'],
+    tags: [
+      'Deakin University, Geelong Institute of Technology, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -4277,9 +4481,11 @@ export const cityData = [
       "Launceston beckons students and faculty with an unparalleled academic journey characterized by innovation, collaboration, and academic excellence. The city's state-of-the-art facilities, supportive mentorship, and vibrant research culture empower individuals to realize their academic aspirations and drive transformative change.",
       "Moreover, Launceston's awe-inspiring natural landscapes provide an idyllic backdrop for scholarly exploration and personal enrichment, fostering a holistic learning experience unparalleled in its vibrancy and diversity.",
     ],
-    image_url: '/cities/launceston.jpg',
+    image_url: '/cities/academic-jobs-in-launceston.jpg',
     alt: 'Academic Jobs A breathtaking panorama of Launceston, Australia',
-    tags: ['University of Tasmania, Australian Maritime College, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Tasmania, Australian Maritime College, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -4310,9 +4516,11 @@ export const cityData = [
       "Burnie's academic landscape offers unparalleled opportunities for personal and professional growth. Students immerse themselves in a culture of excellence, exploring diverse disciplines and forging lifelong connections. With a commitment to research and innovation, Burnie's institutions attract top talent from around the globe, fostering a dynamic and inclusive community.",
       'For educators and researchers, Burnie presents a fertile ground for collaboration and discovery. From cutting-edge laboratories to interdisciplinary initiatives, the city nurtures creativity and expertise, empowering individuals to make meaningful contributions to society and the world.',
     ],
-    image_url: '/cities/burnie.webp',
+    image_url: '/cities/academic-jobs-in-burnie.webp',
     alt: "Burnie Tasmania's coastal charm",
-    tags: ['University of Tasmania, TasTAFE - Burnie Campus, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Tasmania, TasTAFE - Burnie Campus, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -4350,9 +4558,11 @@ export const cityData = [
       'Embark on an enriching academic odyssey in Wollongong, where the pursuit of knowledge intertwines with the essence of discovery. Engage with a vibrant community of scholars, harness cutting-edge resources, and immerse yourself in a culture of intellectual vitality and exploration.',
       'Whether you aspire to pursue higher education or seek professional advancement, Wollongong beckons with unparalleled opportunities for academic and personal fulfillment.',
     ],
-    image_url: '/cities/wollongong-uni.jpg',
+    image_url: '/cities/academic-jobs-in-wollongong-uni.jpg',
     alt: 'Academic Jobs Wollongong, Australia: Where Education Flourishes',
-    tags: ['University of Wollongong, Illawarra Institute of TAFE, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Wollongong, Illawarra Institute of TAFE, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Discover Darwin: Universities, Notable Figures, and Opportunities',
@@ -4385,7 +4595,9 @@ export const cityData = [
     image_url:
       'https://www.shutterstock.com/image-photo/scenic-spot-darwin-waterfront-wharf-600nw-648487078.jpg',
     alt: 'Academic Jobs A photo of Darwin, Australia, showcasing the city skyline and waterfront.',
-    tags: ['Charles Darwin University, Batchelor Institute, Nobel Laureates, Higher Education'],
+    tags: [
+      'Charles Darwin University, Batchelor Institute, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: "Exploring Hobart's Education and Innovation Hub",
@@ -4418,7 +4630,9 @@ export const cityData = [
     image_url:
       'https://www.discovertasmania.com.au/siteassets/places-to-go/hobart-and-south/136474-2.jpg?resize=_tyIA_PHFkTQc0Gn-LZKjh8aWmNhh2enzRbNNG3YH7Fenurt68LB7cJF7wCLj1SR77GEstDZekpr9q8QS4jXhw',
     alt: "A breathtaking view of Hobart's cityscape",
-    tags: ['University of Tasmania, Tasmanian Polytechnic, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Tasmania, Tasmanian Polytechnic, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Montgomery, Alabama Universities and Colleges',
@@ -4453,7 +4667,9 @@ export const cityData = [
     image_url:
       'https://www.montgomeryadvertiser.com/gcdn/-mm-/0e3716121b058c15a232a8575a74fb8f2521a4e6/c=3-0-2116-1194/local/-/media/2016/08/23/Montgomery/Montgomery/636075507035501696-NEWMGM.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp',
     alt: 'Academic Jobs Montgomery, Alabama skyline',
-    tags: ['Alabama State University, Auburn University at Montgomery, Nobel Laureates, Higher Education'],
+    tags: [
+      'Alabama State University, Auburn University at Montgomery, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Juneau, Alaska',
@@ -4485,7 +4701,9 @@ export const cityData = [
     image_url:
       'https://media.istockphoto.com/id/1184170868/photo/juneau-downtown-water-traffic.jpg?s=612x612&w=0&k=20&c=QHKKI_t__ml1IebJYATCcr5Uo6U139911VO7KMi05-A=',
     alt: 'Academic Jobs Juneau, Alaska skyline',
-    tags: ['University of Alaska Southeast, Alaska Vocational Technical Center (AVTEC), Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Alaska Southeast, Alaska Vocational Technical Center (AVTEC), Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Phoenix, Arizona',
@@ -4521,7 +4739,9 @@ export const cityData = [
     image_url:
       'https://skylinespace.nyc3.cdn.digitaloceanspaces.com/media/images/phoenix_01_8651_up.jpg',
     alt: 'Academic Jobs Phoenix, Arizona skyline',
-    tags: ['Arizona State University, University of Phoenix, Nobel Laureates, Higher Education'],
+    tags: [
+      'Arizona State University, University of Phoenix, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Little Rock, Arkansas',
@@ -4557,7 +4777,9 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQ1MWI1LTE2Ny1wbG95LmpwZw.jpg',
     alt: 'Academic Jobs Little Rock, Arkansas skyline',
-    tags: ['University of Arkansas at Little Rock, Arkansas Baptist College, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Arkansas at Little Rock, Arkansas Baptist College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Denver, Colorado',
@@ -4593,7 +4815,9 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/3/3a/Full_Denver_skyline.jpg',
     alt: 'Academic Jobs Denver, Colorado skyline',
-    tags: ['University of Denver, University of Colorado Denver, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Denver, University of Colorado Denver, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Hartford, Connecticut',
@@ -4629,7 +4853,9 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/7851/32359133487_d2e289150e_b.jpg',
     alt: 'Academic Jobs Hartford, Connecticut skyline',
-    tags: ['University of Hartford, Trinity College, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Hartford, Trinity College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Dover, Delaware',
@@ -4662,7 +4888,9 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAzL2ZyYmVybGluZXJfYWJlbmRoaW1tZWxfYW5fZGVyLWltYWdlLmpwZw.jpg',
     alt: 'Academic Jobs Dover, Delaware skyline',
-    tags: ['Wesley College, Delaware State University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Wesley College, Delaware State University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Tallahassee, Florida',
@@ -4695,7 +4923,9 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/a/a8/Tampa_Skyline.jpg',
     alt: 'Academic Jobs Tallahassee, Florida skyline',
-    tags: ['Florida State University, Tallahassee Community College, Nobel Laureates, Higher Education'],
+    tags: [
+      'Florida State University, Tallahassee Community College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Atlanta, Georgia',
@@ -4728,7 +4958,9 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/8/8e/Downtown_Atlanta_skyline%2C_Georgia_Tech.jpg',
     alt: 'Academic Jobs Atlanta, Georgia skyline',
-    tags: ['Georgia Institute of Technology, Emory University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Georgia Institute of Technology, Emory University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Boise, Idaho',
@@ -4756,7 +4988,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/8047/8384643501_be00daac82_b.jpg',
     alt: 'Academic Jobs Boise, Idaho skyline',
-    tags: ['Boise State University, College of Western Idaho, Nobel Laureates, Higher Education'],
+    tags: [
+      'Boise State University, College of Western Idaho, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Indianapolis, Indiana',
@@ -4787,7 +5021,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/1146/5155672963_e2b0f4027a_b.jpg',
     alt: 'Academic Jobs Indianapolis, Indiana skyline',
-    tags: ['Indiana University–Purdue University Indianapolis (IUPUI), Butler University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Indiana University–Purdue University Indianapolis (IUPUI), Butler University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Des Moines, Iowa',
@@ -4816,7 +5052,9 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/2816/11921642736_c0edf7831f_b.jpg',
     alt: 'Academic Jobs Des Moines, Iowa skyline',
-    tags: ['Drake University, Grand View University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Drake University, Grand View University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Topeka, Kansas',
@@ -4845,7 +5083,9 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL2ZsNDg0NjY4ODc0OTctaW1hZ2Uta3p4dDN1c3EuanBn.jpg',
     alt: 'Academic Jobs Topeka, Kansas skyline',
-    tags: ['Washburn University, Baker University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Washburn University, Baker University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Frankfort, Kentucky',
@@ -4877,7 +5117,9 @@ export const cityData = [
     image_url:
       'https://media.snl.no/media/59611/standard_compressed_28477525837_9bdfa70aa3_o.jpg',
     alt: 'Academic Jobs Frankfort, Kentucky skyline',
-    tags: ['Kentucky State University, Jefferson Community and Technical College, Nobel Laureates, Higher Education'],
+    tags: [
+      'Kentucky State University, Jefferson Community and Technical College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Baton Rouge, Louisiana',
@@ -4910,7 +5152,9 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/1/18/OKC_BatonRougeSkyline.JPG',
     alt: 'Academic Jobs Baton Rouge, Louisiana skyline',
-    tags: ['Louisiana State University, Southern University and A&M College, Nobel Laureates, Higher Education'],
+    tags: [
+      'Louisiana State University, Southern University and A&M College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Augusta, Maine',
@@ -4942,7 +5186,9 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvd2s5MDQ4MTI0OS1pbWFnZS1rcDZjM3kxbC5qcGc.jpg',
     alt: 'Academic Jobs Augusta, Maine skyline',
-    tags: ['University of Maine at Augusta, Kennebec Valley Community College, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Maine at Augusta, Kennebec Valley Community College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Annapolis, Maryland',
@@ -4971,7 +5217,9 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/d/d2/Southward_View_of_Annapolis_from_the_Navy_Chapel_Dome_%2825326397950%29.jpg',
     alt: 'Academic Jobs Annapolis, Maryland skyline',
-    tags: ['United States Naval Academy, St. Johns College, Nobel Laureates, Higher Education'],
+    tags: [
+      'United States Naval Academy, St. Johns College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Lansing, Michigan',
@@ -5000,7 +5248,9 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQxOS0zLTEyMjM5YS5qcGc.jpg',
     alt: 'Academic Jobs Lansing, Michigan skyline',
-    tags: ['Michigan State University, Lansing Community College, Nobel Laureates, Higher Education'],
+    tags: [
+      'Michigan State University, Lansing Community College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Saint Paul, Minnesota',
@@ -5029,7 +5279,9 @@ export const cityData = [
     image_url:
       'https://media.istockphoto.com/id/497232049/photo/st-paul-minnesota-capital-downtown-skyline-with-mississippi-river-boats.jpg?s=612x612&w=0&k=20&c=l1rg6E_-ZaiHeAKZLTCtWYCrw3TRP0Y8F81LYy54wqk=',
     alt: 'Academic Jobs Saint Paul, Minnesota skyline',
-    tags: ['University of Minnesota, Concordia University Saint Paul, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Minnesota, Concordia University Saint Paul, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Jackson, Mississippi',
@@ -5058,7 +5310,9 @@ export const cityData = [
     image_url:
       'https://media.istockphoto.com/id/592651620/photo/jackson-mississippi-skyline.jpg?s=612x612&w=0&k=20&c=6--cyg2H2VEsGimIghxycqPFapN3S3-KgSnCUog0JJ8=',
     alt: 'Academic Jobs Jackson, Mississippi skyline',
-    tags: ['Jackson State University, Belhaven University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Jackson State University, Belhaven University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Jefferson City, Missouri',
@@ -5087,7 +5341,9 @@ export const cityData = [
     image_url:
       'https://explorestlouis.com/wp-content/uploads/2023/02/Gateway-Arch-National-Park.jpg',
     alt: 'Academic Jobs Jefferson City, Missouri skyline',
-    tags: ['Lincoln University, Columbia College-Jefferson City, Nobel Laureates, Higher Education'],
+    tags: [
+      'Lincoln University, Columbia College-Jefferson City, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Helena, Montana',
@@ -5115,7 +5371,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/299/19551391324_727d52352c_b.jpg',
     alt: 'Academic Jobs Helena Montana County Building',
-    tags: ['Carroll College, Helena College University of Montana, Nobel Laureates, Higher Education'],
+    tags: [
+      'Carroll College, Helena College University of Montana, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Lincoln, Nebraska',
@@ -5144,7 +5402,9 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/a/a3/Aerial_view_of_downtown_Lincoln%2C_Nebraska%2C_USA_%28looking_southeast%29.jpg',
     alt: 'Academic Jobs Lincoln, Nebraska skyline',
-    tags: ['University of Nebraska-Lincoln, Nebraska Wesleyan University, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Nebraska-Lincoln, Nebraska Wesleyan University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Carson City, Nevada',
@@ -5172,7 +5432,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/3243/2850583781_d3092e08ca_b.jpg',
     alt: 'Academic Jobs Carson City, Nevada skyline',
-    tags: ['Western Nevada College, Sierra Nevada University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Western Nevada College, Sierra Nevada University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Concord, New Hampshire',
@@ -5201,7 +5463,9 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQyMDctMS00ODNfMS5qcGc.jpg',
     alt: 'Academic Jobs Concord, New Hampshire skyline',
-    tags: ['New Hampshire Technical Institute, Granite State College, Nobel Laureates, Higher Education'],
+    tags: [
+      'New Hampshire Technical Institute, Granite State College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Trenton, New Jersey',
@@ -5232,7 +5496,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/3195/2854162078_43bb4b2112_b.jpg',
     alt: 'Academic Jobs Trenton, New Jersey skyline',
-    tags: ['Thomas Edison State University, Mercer County Community College, Nobel Laureates, Higher Education'],
+    tags: [
+      'Thomas Edison State University, Mercer County Community College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Santa Fe, New Mexico',
@@ -5264,7 +5530,9 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/2910/33772525535_6936785945_b.jpg',
     alt: 'Academic Jobs Santa Fe, New Mexico skyline',
-    tags: ['Institute of American Indian Arts, Santa Fe University of Art and Design, Nobel Laureates, Higher Education'],
+    tags: [
+      'Institute of American Indian Arts, Santa Fe University of Art and Design, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Raleigh, North Carolina',
@@ -5297,7 +5565,9 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/4808/46107828152_d007d0c5b3_b.jpg',
     alt: 'Academic Jobs Raleigh, North Carolina skyline',
-    tags: ['North Carolina State University, Duke University, Nobel Laureates, Higher Education'],
+    tags: [
+      'North Carolina State University, Duke University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Bismarck, North Dakota',
@@ -5326,7 +5596,9 @@ export const cityData = [
     image_url:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Mv_pBqqcy_7ulSJ7rdbxVyaD4Zh8UA0n2GjlKbPgM7pz2Zy-gTTMaHE76AokVuYS-bE&usqp=CAU',
     alt: 'Academic Jobs Bismarck, North Dakota skyline',
-    tags: ['University of Mary, Bismarck State College, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Mary, Bismarck State College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Columbus, Ohio',
@@ -5360,7 +5632,9 @@ export const cityData = [
     image_url:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_ViZuK31U9uqx6THwTfF3Cf0lZIbJEsQuQQu1tlC1Mz5drDByVjPUC1e20EyHt4Qi_qY&usqp=CAU',
     alt: 'Academic Jobs Columbus, Ohio skyline',
-    tags: ['The Ohio State University, Capital University, Nobel Laureates, Higher Education'],
+    tags: [
+      'The Ohio State University, Capital University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Oklahoma City, Oklahoma',
@@ -5394,7 +5668,9 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/3/35/Oklahoma_City_Skyline_from_I-35_%28cropped%29.jpg',
     alt: 'Academic Jobs Oklahoma City, Oklahoma skyline',
-    tags: ['University of Oklahoma - Oklahoma City, Oklahoma City Community College, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Oklahoma - Oklahoma City, Oklahoma City Community College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Universities and Colleges in Salem, Oregon',
@@ -5427,7 +5703,9 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/3/32/Portland_Skyline_glow_July_2017_-_Oregon.jpg',
     alt: 'Academic Jobs Salem, Oregon skyline',
-    tags: ['Willamette University, Corban University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Willamette University, Corban University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: `Universities in Harrisburg, Pennsylvania: Explore Higher Education Institutions`,
@@ -5460,7 +5738,9 @@ export const cityData = [
     ],
     image_url: `https://upload.wikimedia.org/wikipedia/commons/3/30/Harrisburg_as_seen_from_City_Island.jpg`,
     alt: `Harrisburg, Pennsylvania skyline`,
-    tags: ['Penn State Harrisburg, Harrisburg University of Science and Technology, Nobel Laureates, Higher Education'],
+    tags: [
+      'Penn State Harrisburg, Harrisburg University of Science and Technology, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -5497,7 +5777,9 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/5806/30570117430_5786a38332_b.jpg',
     alt: 'Academic Jobs Providence, Rhode Island skyline',
-    tags: ['Brown University, Rhode Island School of Design (RISD), Nobel Laureates, Higher Education'],
+    tags: [
+      'Brown University, Rhode Island School of Design (RISD), Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -5534,7 +5816,9 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/1/1f/SkylinefromArsenalHill.jpg',
     alt: 'Academic Jobs Columbia, South Carolina skyline',
-    tags: ['University of South Carolina, Columbia College, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of South Carolina, Columbia College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -5569,7 +5853,9 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQxOS0zLTA0OTQ1YS5qcGc.jpg',
     alt: 'Academic Jobs Pierre, South Dakota skyline',
-    tags: ['University of South Dakota - Pierre, Oahe Technical Institute, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of South Dakota - Pierre, Oahe Technical Institute, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -5605,7 +5891,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/5054/5509324760_5d5238e7ac_b.jpg',
     alt: 'Academic Jobs Nashville, Tennessee skyline',
-    tags: ['Vanderbilt University, Belmont University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Vanderbilt University, Belmont University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -5642,7 +5930,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/8008/7707261420_9b10631963_b.jpg',
     alt: 'Academic Jobs Salt Lake City, Utah skyline',
-    tags: ['University of Utah, Brigham Young University, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Utah, Brigham Young University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title:
@@ -5678,7 +5968,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/6117/6254263448_7f0e7f1f6f_b.jpg',
     alt: 'Academic Jobs Montpelier, Vermont skyline',
-    tags: ['Vermont College of Fine Arts, New England Culinary Institute, Nobel Laureates, Higher Education'],
+    tags: [
+      'Vermont College of Fine Arts, New England Culinary Institute, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Education Hub: Universities & Colleges in Richmond, Virginia',
@@ -5713,7 +6005,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/3020/3048513315_9c511334f7_b.jpg',
     alt: 'Academic Jobs Richmond, Virginia skyline',
-    tags: ['University of Richmond, Virginia Commonwealth University, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Richmond, Virginia Commonwealth University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Education Hub: Universities & Colleges in Olympia, Washington',
@@ -5745,7 +6039,9 @@ export const cityData = [
     ],
     image_url: 'https://live.staticflickr.com/227/497193646_c64fcd3a9f_b.jpg',
     alt: 'Academic Jobs Olympia, Washington skyline',
-    tags: ['The Evergreen State College, South Puget Sound Community College, Nobel Laureates, Higher Education'],
+    tags: [
+      'The Evergreen State College, South Puget Sound Community College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Charleston, West Virginia: Hub of Higher Education',
@@ -5779,7 +6075,9 @@ export const cityData = [
     image_url:
       'https://live.staticflickr.com/7726/17268752211_f83f04087a_b.jpg',
     alt: 'Academic Jobs Charleston, West Virginia skyline',
-    tags: ['University of Charleston, West Virginia State University, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Charleston, West Virginia State University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Madison, Wisconsin: Thriving Academic Hub',
@@ -5813,7 +6111,9 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/e/ed/Madisonskyline.jpg',
     alt: 'Academic Jobs Madison, Wisconsin skyline',
-    tags: ['University of Wisconsin-Madison, Edgewood College, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Wisconsin-Madison, Edgewood College, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Cheyenne, Wyoming: Academic Opportunities in the Heart of the West',
@@ -5846,7 +6146,9 @@ export const cityData = [
     image_url:
       'https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQ1MWI1LTE2Ny1wbG95LmpwZw.jpg',
     alt: 'Academic Jobs Cheyenne, Wyoming skyline',
-    tags: ['Laramie County Community College, University of Wyoming Outreach, Nobel Laureates, Higher Education'],
+    tags: [
+      'Laramie County Community College, University of Wyoming Outreach, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Honolulu, Hawaii: A Hub of Academic Excellence in the Pacific',
@@ -5880,7 +6182,9 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/c/c0/Honolulu_Hawaii_View_%2816056359266%29.jpg',
     alt: 'Academic Jobs Honolulu, Hawaii skyline',
-    tags: ['University of Hawaii at Manoa, Chaminade University of Honolulu, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Hawaii at Manoa, Chaminade University of Honolulu, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Springfield, USA: A Hub of Learning and Innovation',
@@ -5914,7 +6218,9 @@ export const cityData = [
     image_url:
       'https://upload.wikimedia.org/wikipedia/commons/4/4e/Street_Scene_with_Capitol_-_Springfield_-_Illinois_-_USA_%2832541552030%29.jpg',
     alt: 'Academic Jobs Springfield, USA skyline',
-    tags: ['Springfield University, Western New England University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Springfield University, Western New England University, Nobel Laureates, Higher Education',
+    ],
   },
   {
     title: 'Sacramento, USA: A Hub of Educational Excellence',
@@ -5948,7 +6254,9 @@ export const cityData = [
     image_url:
       'https://media.istockphoto.com/id/473594302/photo/sacramento-downtown-skyline-during-autumn.jpg?s=612x612&w=0&k=20&c=xduvxyzKsRZgqfh1Q9LuP46qmK5a0o11Ig_fzvw6p0M=',
     alt: 'Academic Jobs Sacramento, USA skyline',
-    tags: ['University of California, Davis, California State University, Sacramento, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of California, Davis, California State University, Sacramento, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -5994,9 +6302,11 @@ export const cityData = [
       'Embark on a transformative journey of discovery and growth in Manchester, where educational horizons expand amidst a vibrant cultural milieu. Immerse yourself in world-class research facilities, forge invaluable connections with industry leaders, and thrive within a nurturing academic community dedicated to fostering excellence and innovation.',
       'For professionals seeking to advance their careers and spearhead groundbreaking research initiatives, Manchester offers boundless opportunities for collaboration, exploration, and impact. Join a dynamic ecosystem of scholarly inquiry and embark on a trajectory of personal and professional fulfillment.',
     ],
-    image_url: '/cities/manchester.webp',
+    image_url: '/cities/academic-jobs-in-manchester.webp',
     alt: 'Academic Jobs Manchester skyline with university buildings',
-    tags: ['University of Manchester, Royal Northern College of Music, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Manchester, Royal Northern College of Music, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -6039,9 +6349,11 @@ export const cityData = [
       "Nottingham offers a vibrant academic milieu with diverse learning opportunities and cutting-edge research initiatives. Whether you seek personal growth through education or professional advancement in research, Nottingham's institutions provide the ideal platform to realize your aspirations.",
       'Join a community of scholars and innovators dedicated to pushing the boundaries of knowledge and making meaningful contributions to society. Experience the dynamic culture and intellectual vibrancy of Nottingham, where learning transcends boundaries.',
     ],
-    image_url: '/cities/nottingham.jpg',
+    image_url: '/cities/academic-jobs-in-nottingham.jpg',
     alt: 'Academic Jobs Panoramic view of Nottingham cityscape showcasing historic landmarks and modern architecture',
-    tags: ['University of Nottingham, Confetti Institute of Creative Technologies, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Nottingham, Confetti Institute of Creative Technologies, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -6086,9 +6398,11 @@ export const cityData = [
       'Glasgow beckons students and academics alike with its vibrant tapestry of educational and research opportunities. Dive into a world of academic rigor and cultural richness, where personal growth and professional development converge.',
       "Join Glasgow's thriving academic community, where collaboration knows no bounds and innovation knows no limits. Unleash your potential in a city that inspires creativity and fuels intellectual curiosity​.",
     ],
-    image_url: '/cities/glasgow.jpg',
+    image_url: '/cities/academic-jobs-in-glasgow.jpg',
     alt: "Glasgow's vibrant academic scene",
-    tags: ['University of Glasgow, Royal Conservatoire of Scotland, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Glasgow, Royal Conservatoire of Scotland, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -6130,9 +6444,11 @@ export const cityData = [
       "Immerse yourself in Newcastle's vibrant academic ecosystem, where boundless opportunities for personal and intellectual growth await. With state-of-the-art facilities, world-renowned faculty, and a dynamic learning environment, students embark on a transformative journey toward academic excellence and personal fulfillment.",
       "For aspiring researchers and educators, Newcastle offers a fertile ground for exploration and discovery, with access to cutting-edge laboratories, interdisciplinary collaboration, and industry partnerships. Whether you're pursuing higher education or seeking career advancement, Newcastle upon Tyne sets the stage for a bright and promising future.",
     ],
-    image_url: '/cities/newcastle-upon-tyne.jpg',
+    image_url: '/cities/academic-jobs-in-newcastle-upon-tyne.jpg',
     alt: 'Academic Jobs Newcastle upon Tyne skyline at sunset',
-    tags: ['Newcastle University, Northumbria University, Nobel Laureates, Higher Education'],
+    tags: [
+      'Newcastle University, Northumbria University, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -6174,9 +6490,11 @@ export const cityData = [
       'For seekers of knowledge and professional growth, Birmingham offers an unparalleled academic environment brimming with opportunities. Students benefit from world-class education, cutting-edge research facilities, and vibrant campus life, fostering holistic development and global perspectives.',
       "Likewise, academics and researchers thrive in Birmingham's collaborative ecosystem, where interdisciplinary dialogue and innovative partnerships fuel groundbreaking discoveries and societal impact. Join Birmingham's academic community and embark on a transformative journey of learning, discovery, and excellence.",
     ],
-    image_url: '/cities/birmingham.jpg',
+    image_url: '/cities/academic-jobs-in-birmingham.jpg',
     alt: 'Academic Jobs Birmingham city skyline with vibrant lights',
-    tags: ['University of Birmingham, Aston University, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Birmingham, Aston University, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -6212,9 +6530,11 @@ export const cityData = [
       'Embark on a transformative educational journey in Leeds, where academic excellence meets boundless opportunity. Engage with world-renowned scholars, immerse yourself in groundbreaking research, and cultivate the skills and knowledge to thrive in a rapidly evolving global landscape.',
       "Whether you seek personal growth, professional development, or intellectual exploration, Leeds offers a myriad of pathways to success. Join a vibrant community of learners, thinkers, and innovators, and unlock your potential in one of the UK's most dynamic educational hubs.",
     ],
-    image_url: '/cities/leeds.jpg',
+    image_url: '/cities/academic-jobs-in-leeds.jpg',
     alt: 'Academic Jobs Leeds skyline against a colorful sunset',
-    tags: ['University of Leeds, Leeds Trinity University, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Leeds, Leeds Trinity University, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -6254,9 +6574,11 @@ export const cityData = [
       "Bristol offers unparalleled opportunities for educational enrichment and personal development, with its dynamic academic community, state-of-the-art facilities, and interdisciplinary approach to learning. Whether you're embarking on your educational journey or seeking to advance your career, Bristol's universities and colleges provide a supportive and stimulating environment for realizing your aspirations.",
       "For those considering employment, Bristol's institutions offer access to cutting-edge research initiatives, collaborative partnerships, and a vibrant cultural scene, making it an ideal destination for academics, researchers, and professionals alike.",
     ],
-    image_url: '/cities/bristol.jpg',
+    image_url: '/cities/academic-jobs-in-bristol.jpg',
     alt: 'Academic Jobs Clifton Suspension Bridge over the River Avon in Bristol',
-    tags: ['University of Bristol, City of Bristol College, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Bristol, City of Bristol College, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -6298,9 +6620,11 @@ export const cityData = [
       "Unlock boundless opportunities for intellectual exploration and personal growth amidst Brighton's captivating academic tapestry. Whether you're drawn to cutting-edge research or immersive learning experiences, the city's universities and colleges beckon with promise and possibility.",
       "Join a community of scholars and visionaries dedicated to pushing the boundaries of knowledge and driving positive change in the world. In Brighton, education isn't just a journey; it's a transformative odyssey toward a brighter, more enlightened future.",
     ],
-    image_url: '/cities/brighton.jpg',
+    image_url: '/cities/academic-jobs-in-brighton.jpg',
     alt: 'Academic Jobs Brighton Academic Excellence',
-    tags: ['University of Sussex, University of Brighton, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Sussex, University of Brighton, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -6335,9 +6659,11 @@ export const cityData = [
     promo: [
       'Aberdeen offers unparalleled educational and professional opportunities. Its renowned universities and colleges provide a nurturing environment for personal growth and academic achievement. Whether you seek groundbreaking research or transformative learning experiences, Aberdeen stands as a beacon of excellence in higher education.',
     ],
-    image_url: '/cities/aberdeen.jpg',
+    image_url: '/cities/academic-jobs-in-aberdeen.jpg',
     alt: 'Academic Jobs Aberdeen city skyline with historic buildings and modern architecture',
-    tags: ['University of Aberdeen, Robert Gordon University, Nobel Laureates, Higher Education'],
+    tags: [
+      'University of Aberdeen, Robert Gordon University, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -6378,9 +6704,11 @@ export const cityData = [
     promo: [
       "Durham beckons with unparalleled educational and research prospects, enticing scholars and students alike. From its dynamic academic ecosystem to its cutting-edge facilities, Durham cultivates an environment where intellectual curiosity thrives and innovation flourishes. Join us in shaping the future of knowledge and discovery at Durham's venerable institutions.",
     ],
-    image_url: '/cities/durham.jpg',
+    image_url: '/cities/academic-jobs-in-durham.jpg',
     alt: 'Academic Jobs Durham city skyline with historic architecture and river',
-    tags: ['Durham University, New College Durham, Nobel Laureates, Higher Education'],
+    tags: [
+      'Durham University, New College Durham, Nobel Laureates, Higher Education',
+    ],
   },
 
   {
@@ -6425,9 +6753,11 @@ export const cityData = [
       'Embark on a transformative educational journey in St Andrews, where the pursuit of knowledge knows no bounds. From Nobel Laureates shaping global discourse to erudite academics pioneering breakthroughs, the city offers an unrivaled platform for intellectual exploration and professional advancement.',
       "Join a vibrant community dedicated to scholarly excellence and innovation, where the echoes of history harmonize with the symphony of modernity amidst the captivating landscapes of Scotland's ancient heart.",
     ],
-    image_url: '/cities/st-andrews.jpg',
+    image_url: '/cities/academic-jobs-in-st-andrews.jpg',
     alt: 'Academic Jobs St Andrews, Scotland: A Historic City of Learning',
-    tags: ['University of St Andrews, St Andrews College, Laureates, Higher Education'],
+    tags: [
+      'University of St Andrews, St Andrews College, Laureates, Higher Education',
+    ],
   },
 
   {
@@ -6469,9 +6799,11 @@ export const cityData = [
       'Aberystwyth offers unparalleled opportunities for students and faculty alike. With a supportive academic community, state-of-the-art facilities, and collaborative research projects, Aberystwyth is a catalyst for personal growth and professional advancement.',
       'Whether you aspire to pursue higher education or engage in cutting-edge research, Aberystwyth invites you to join its vibrant academic community and embark on a transformative journey of discovery and innovation.',
     ],
-    image_url: '/cities/aberystwyth.jpg',
+    image_url: '/cities/academic-jobs-in-aberystwyth.jpg',
     alt: 'Academic Jobs Aberystwyth Cityscape overlooking the Sea',
-    tags: ['Aberystwyth University, University of Wales Trinity Saint David (UWTSD), Nobel laureates, higher education, research institutions'],
+    tags: [
+      'Aberystwyth University, University of Wales Trinity Saint David (UWTSD), Nobel laureates, higher education, research institutions',
+    ],
   },
 
   {
@@ -6515,9 +6847,11 @@ export const cityData = [
       "Coventry's universities and colleges offer a dynamic environment for personal and professional growth. With state-of-the-art facilities, diverse programs, and vibrant research opportunities, students and faculty alike thrive in Coventry's academic ecosystem. Whether pursuing education or seeking employment, Coventry provides a fertile ground for intellectual exploration and career advancement.",
       "From innovative research projects to dynamic student experiences, Coventry's academic institutions offer a wealth of opportunities for engagement and enrichment. Join the ranks of scholars and visionaries shaping the future of education and research in this vibrant city.",
     ],
-    image_url: '/cities/coventry.jpg',
+    image_url: '/cities/academic-jobs-in-coventry.jpg',
     alt: 'Academic Jobs Coventry skyline with historic cathedral and modern buildings',
-    tags: ['University of Warwick, Coventry University, Nobel laureates, higher education, research institutions'],
+    tags: [
+      'University of Warwick, Coventry University, Nobel laureates, higher education, research institutions',
+    ],
   },
 
   {
@@ -6561,9 +6895,11 @@ export const cityData = [
       "Sheffield's universities and colleges offer a dynamic environment for intellectual exploration and professional growth. With world-class facilities, innovative teaching methods, and a supportive academic community, Sheffield provides students and researchers with unparalleled opportunities to excel and make meaningful contributions to society.",
       "Whether you're pursuing higher education, conducting groundbreaking research, or seeking to advance your career, Sheffield's academic institutions empower individuals to thrive in an ever-evolving world of knowledge and innovation.",
     ],
-    image_url: '/cities/sheffield.jpg',
+    image_url: '/cities/academic-jobs-in-sheffield.jpg',
     alt: "Sheffield's vibrant academic scene",
-    tags: ['University of Sheffield, Sheffield Hallam University, Nobel laureates, higher education'],
+    tags: [
+      'University of Sheffield, Sheffield Hallam University, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -6604,9 +6940,11 @@ export const cityData = [
       "Liverpool's educational institutions offer unparalleled opportunities for personal and intellectual growth. Students benefit from a supportive learning environment, diverse cultural experiences, and access to world-class facilities and resources.",
       "For professionals seeking rewarding careers in academia, Liverpool provides a dynamic ecosystem of research, collaboration, and innovation. From early career researchers to seasoned faculty members, Liverpool's academic community thrives on intellectual curiosity and interdisciplinary engagement.",
     ],
-    image_url: '/cities/liverpool.jpg',
+    image_url: '/cities/academic-jobs-in-liverpool.jpg',
     alt: 'Academic Jobs Liverpool cityscape overlooking the River Mersey',
-    tags: ['University of Liverpool, The City of Liverpool College, Nobel laureates, higher education'],
+    tags: [
+      'University of Liverpool, The City of Liverpool College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -6645,9 +6983,11 @@ export const cityData = [
       "Embrace the opportunity to immerse yourself in Cardiff's dynamic academic environment, where curiosity knows no bounds and innovation thrives. Whether you're a student seeking to expand your horizons or a seasoned scholar pursuing groundbreaking research, Cardiff offers a supportive and stimulating ecosystem for personal and professional growth.",
       'Join the ranks of visionary educators and researchers who call Cardiff home, and experience firsthand the transformative power of knowledge, discovery, and collaboration in shaping a brighter future for generations to come.',
     ],
-    image_url: '/cities/cardiff.jpg',
+    image_url: '/cities/academic-jobs-in-cardiff.jpg',
     alt: "Panoramic view of Cardiff's academic institutions against a backdrop of lush greenery and historic architecture",
-    tags: ['Cardiff University, Royal Welsh College of Music & Drama, Nobel laureates, higher education'],
+    tags: [
+      'Cardiff University, Royal Welsh College of Music & Drama, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -6685,9 +7025,11 @@ export const cityData = [
     promo: [
       "Embark on a transformative journey of learning and discovery in Portsmouth, where academic excellence intersects with boundless opportunity. Whether you aspire to pursue groundbreaking research, cultivate new skills, or engage with diverse perspectives, Portsmouth's universities and colleges provide an inclusive and supportive environment for personal growth, professional development, and lifelong learning.",
     ],
-    image_url: '/cities/portsmouth.jpg',
+    image_url: '/cities/academic-jobs-in-portsmouth.jpg',
     alt: 'Academic Jobs Aerial view of Portsmouth showcasing its academic institutions and coastal charm',
-    tags: ['University of Portsmouth, Highbury College, Nobel laureates, higher education'],
+    tags: [
+      'University of Portsmouth, Highbury College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -6730,9 +7072,11 @@ export const cityData = [
       'Embark on a transformative academic journey in Chester, where learning transcends boundaries and fosters holistic development. Dive into state-of-the-art facilities, vibrant research communities, and a supportive environment conducive to realizing your aspirations.',
       "Join Chester's academic fraternity to propel your career to new heights. Engage in cutting-edge research, collaborate with visionary peers, and embark on a fulfilling professional odyssey shaping the future of education and knowledge.",
     ],
-    image_url: '/cities/chester.jpg',
+    image_url: '/cities/academic-jobs-in-chester.jpg',
     alt: "A panoramic view of Chester's cityscape",
-    tags: ['University of Chester, West Cheshire College, Nobel laureates, higher education'],
+    tags: [
+      'University of Chester, West Cheshire College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -6769,9 +7113,11 @@ export const cityData = [
       "Join Reading's vibrant academic community to embark on a journey of intellectual exploration and personal growth. Engage with world-class scholars, pursue groundbreaking research, and unlock endless opportunities for learning and innovation.",
       "For professionals seeking enriching environments and cutting-edge research opportunities, Reading's universities and colleges offer a fertile ground to advance careers and make meaningful contributions to society.",
     ],
-    image_url: '/cities/reading.jpg',
+    image_url: '/cities/academic-jobs-in-reading.jpg',
     alt: "A picturesque view of Reading, UK's academic hub",
-    tags: ['University of Reading, Royal Berkshire University, Nobel laureates, higher education'],
+    tags: [
+      'University of Reading, Royal Berkshire University, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -6800,9 +7146,11 @@ export const cityData = [
     academicInfo: ['', ''],
     academicList: [],
     promo: ['', ''],
-    image_url: '/cities/plymouth.avif',
+    image_url: '/cities/academic-jobs-in-plymouth.avif',
     alt: 'Academic Jobs Plymouth Academic Hub Photo',
-    tags: ['University of Plymouth, Plymouth College of Art, Nobel laureates, higher education'],
+    tags: [
+      'University of Plymouth, Plymouth College of Art, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -6840,9 +7188,11 @@ export const cityData = [
     promo: [
       "The allure of Lincoln's academic institutions lies in their unwavering commitment to scholarly excellence and community impact. Whether as a student or faculty member, engaging with Lincoln's intellectual ecosystem offers unparalleled opportunities for personal growth, research innovation, and societal advancement.",
     ],
-    image_url: '/cities/lincoln.jpg',
+    image_url: '/cities/academic-jobs-in-lincoln.jpg',
     alt: "A panoramic view of Lincoln's academic landscape",
-    tags: ['University of Nebraska-Lincoln, Union College, Nobel laureates, higher education'],
+    tags: [
+      'University of Nebraska-Lincoln, Union College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -6881,9 +7231,11 @@ export const cityData = [
       "Embark on an enriching educational journey amidst Swansea's intellectually stimulating landscape. Whether you seek undergraduate enlightenment, advanced research opportunities, or professional development, Swansea's institutions beckon with a promise of discovery, growth, and boundless possibility.",
       "Immerse yourself in Swansea's scholarly mosaic, where diverse perspectives converge, and innovation thrives. Engage in transformative research endeavors, forge lasting connections, and partake in a vibrant community dedicated to shaping a brighter, more enlightened future.",
     ],
-    image_url: '/cities/swansea.jpg',
+    image_url: '/cities/academic-jobs-in-swansea.jpg',
     alt: 'Academic Jobs Swansea: A Resplendent Haven of Learning and Innovation',
-    tags: ['Swansea University, University of Wales Trinity Saint David, Nobel laureates, higher education'],
+    tags: [
+      'Swansea University, University of Wales Trinity Saint David, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -6918,9 +7270,11 @@ export const cityData = [
     promo: [
       "Embark on a transformative academic journey in Exeter, where educational excellence meets unparalleled research opportunities. Whether you're a student seeking knowledge or a scholar pursuing innovation, Exeter's universities and colleges offer a supportive ecosystem to realize your aspirations​.",
     ],
-    image_url: '/cities/exeter.jpg',
+    image_url: '/cities/academic-jobs-in-exeter.jpg',
     alt: 'Academic Jobs Exeter city skyline with historic buildings and cathedral spires',
-    tags: ['University of Exeter, Exeter College, Nobel laureates, higher education'],
+    tags: [
+      'University of Exeter, Exeter College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -6959,9 +7313,11 @@ export const cityData = [
       "Leicester's universities and colleges offer an unparalleled environment for educational and personal growth. Students thrive in a vibrant academic community that encourages critical thinking, creativity, and exploration. With access to world-class faculty and cutting-edge facilities, Leicester fosters a culture of excellence and discovery.",
       "For professionals seeking employment, Leicester's academic institutions present abundant opportunities for research, collaboration, and career advancement. Join a community of passionate educators and researchers dedicated to pushing the boundaries of knowledge and making a meaningful impact on society.",
     ],
-    image_url: '/cities/leicester.jpg',
+    image_url: '/cities/academic-jobs-in-leicester.jpg',
     alt: "Leicester's Academic Landscape",
-    tags: ['University of Leicester, Leicester College, Nobel laureates, higher education'],
+    tags: [
+      'University of Leicester, Leicester College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -6994,9 +7350,11 @@ export const cityData = [
       "Wolverhampton's academic landscape presents a plethora of opportunities for both students and academics alike. With state-of-the-art facilities, innovative research centers, and a supportive community, the city fosters an environment conducive to personal and professional growth.",
       "Whether you're seeking to pursue higher education or embark on a research journey, Wolverhampton offers the resources and mentorship necessary to thrive in today's competitive academic landscape.",
     ],
-    image_url: '/cities/wolverhampton.jpg',
+    image_url: '/cities/academic-jobs-in-wolverhampton.jpg',
     alt: 'Academic Jobs Wolverhampton cityscape',
-    tags: ['University of Wolverhampton, Wolverhampton College, Nobel laureates, higher education'],
+    tags: [
+      'University of Wolverhampton, Wolverhampton College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7035,9 +7393,11 @@ export const cityData = [
     promo: [
       "Embark on a transformative academic journey in Sunderland, where opportunities for learning, discovery, and growth abound. Whether you're a student seeking a supportive environment to pursue your passions or a professional craving research and career prospects, Sunderland's dynamic higher education landscape promises to enrich your life and expand your horizons.",
     ],
-    image_url: '/cities/sunderland.jpg',
+    image_url: '/cities/academic-jobs-in-sunderland.jpg',
     alt: 'Academic Jobs Aerial view of Sunderland cityscape with bridges over River Wear',
-    tags: ['University of Sunderland, City of Sunderland College, Nobel laureates, higher education'],
+    tags: [
+      'University of Sunderland, City of Sunderland College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7072,9 +7432,11 @@ export const cityData = [
       "Embark on an enriching academic journey in Chichester, where curiosity is cultivated, and boundaries are challenged. Whether you're a student seeking personal growth or a professional craving intellectual stimulation, our city's educational ethos fosters an environment of continuous learning and discovery.",
       'Join a vibrant community of scholars and researchers, where innovation knows no bounds. With access to state-of-the-art facilities and a supportive network of peers and mentors, Chichester offers unparalleled opportunities for academic and professional advancement.',
     ],
-    image_url: '/cities/chichester.jpg',
+    image_url: '/cities/academic-jobs-in-chichester.jpg',
     alt: 'Academic Jobs Chichester Cathedral and city skyline',
-    tags: ['University of Chichester, British Institute of Modern Music (BIMM) Chichester, Nobel laureates, higher education'],
+    tags: [
+      'University of Chichester, British Institute of Modern Music (BIMM) Chichester, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7110,7 +7472,7 @@ export const cityData = [
       `Experience the best of both worlds in Bangor, Wales—a thriving academic hub surrounded by stunning natural landscapes. Immerse yourself in a supportive learning environment where you can pursue your academic passions while exploring the wonders of Snowdonia National Park and the Welsh coastline.`,
       `For academics and researchers, Bangor offers unparalleled opportunities for collaboration and professional growth. Join a community of passionate educators and scholars committed to making a positive impact on society and the world.`,
     ],
-    image_url: `/cities/bangor.jpg`,
+    image_url: `/cities/academic-jobs-in-bangor.jpg`,
     alt: `A scenic view of Bangor, Wales`,
     tags: ['Bangor University, Coleg Menai, Nobel laureates, higher education'],
   },
@@ -7146,9 +7508,11 @@ export const cityData = [
       "Experience the vibrant academic environment of Bradford, where world-class institutions drive innovation and excellence. Whether you're a student seeking educational opportunities or a professional pursuing research endeavors, Bradford offers a supportive ecosystem to nurture your aspirations.",
       'Engage with leading experts in diverse fields, collaborate on groundbreaking projects, and access state-of-the-art facilities. Join a community committed to advancing knowledge and making a positive impact on society.',
     ],
-    image_url: '/cities/bradford.jpg',
+    image_url: '/cities/academic-jobs-in-bradford.jpg',
     alt: "A picturesque view of Bradford's cityscape with historic architecture and green spaces",
-    tags: ['University of Bradford, University Centre Bradford College, Nobel laureates, higher education'],
+    tags: [
+      'University of Bradford, University Centre Bradford College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7180,9 +7544,11 @@ export const cityData = [
       `Experience a transformative educational journey in Derby, where academic innovation meets cultural vibrancy. Whether you're a prospective student seeking unparalleled learning experiences or a seasoned professional looking to engage with cutting-edge research, Derby offers a nurturing environment for growth and exploration.`,
       `With a focus on interdisciplinary collaboration and real-world application, institutions in Derby empower individuals to excel in their chosen fields, fostering a community of lifelong learners and trailblazers.`,
     ],
-    image_url: `/cities/derby.jpg`,
+    image_url: '/cities/academic-jobs-in-derby.jpg',
     alt: `Cityscape of Derby, UK`,
-    tags: ['University of Derby, Babington College, Nobel laureates, higher education'],
+    tags: [
+      'University of Derby, Babington College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7220,9 +7586,11 @@ export const cityData = [
       "Embrace Worcester's academic excellence, where a blend of tradition and innovation fuels transformative educational experiences.",
       'With state-of-the-art facilities, renowned faculty, and a supportive community, Worcester institutions offer unparalleled opportunities for intellectual exploration, personal development, and professional advancement.',
     ],
-    image_url: '/cities/worcester.jpg',
+    image_url: '/cities/academic-jobs-in-worcester.jpg',
     alt: 'Academic Jobs Worcester skyline with cityscape and river',
-    tags: ['College of the Holy Cross, Worcester Polytechnic Institute (WPI), Nobel laureates, higher education'],
+    tags: [
+      'College of the Holy Cross, Worcester Polytechnic Institute (WPI), Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7257,9 +7625,11 @@ export const cityData = [
       "Embark on a transformative academic journey in Stirling, where educational excellence converges with personal growth. Whether you're an aspiring student or a seasoned scholar, Stirling's institutions offer a nurturing ecosystem conducive to intellectual exploration and professional development.",
       'For educators and researchers seeking a stimulating intellectual milieu, Stirling beckons with its state-of-the-art facilities and a vibrant community of thought leaders. Embrace the opportunity to collaborate, innovate, and leave an indelible mark on the global landscape of academia.',
     ],
-    image_url: '/cities/stirling.jpg',
+    image_url: '/cities/academic-jobs-in-stirling.jpg',
     alt: 'Academic Jobs Stirling: Where history meets innovation amidst lush Scottish landscapes',
-    tags: ['University of Stirling, Forth Valley College, Nobel laureates, higher education'],
+    tags: [
+      'University of Stirling, Forth Valley College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7300,9 +7670,11 @@ export const cityData = [
       'Embark on a transformative educational odyssey in Bath, where intellectual curiosity meets cultural heritage. Immerse yourself in a dynamic learning environment that nurtures innovation, critical thinking, and personal growth, propelling you towards academic excellence and lifelong success.',
       "For professionals seeking to shape the future of their fields, Bath's academic institutions offer unparalleled opportunities for career advancement and research breakthroughs. Join a vibrant community of scholars and visionaries dedicated to pushing the boundaries of knowledge and creativity.",
     ],
-    image_url: '/cities/bath.jpg',
+    image_url: '/cities/academic-jobs-in-bath.jpg',
     alt: 'Academic Jobs Bath Cityscape - Historic Architecture and Scholarly Pursuits',
-    tags: ['University of Bath, Norland College, Nobel laureates, higher education'],
+    tags: [
+      'University of Bath, Norland College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7339,9 +7711,11 @@ export const cityData = [
     promo: [
       'Embark on an educational odyssey in Southampton, where the past, present, and future converge in a symphony of learning and discovery. Whether delving into groundbreaking research or nurturing the minds of tomorrow, Southampton offers an unrivaled platform for intellectual exploration and professional fulfillment.',
     ],
-    image_url: '/cities/southampton.jpg',
+    image_url: '/cities/academic-jobs-in-southampton.jpg',
     alt: 'Academic Jobs Aerial view of Southampton cityscape',
-    tags: ['University of Southampton, Solent University, Nobel laureates, higher education'],
+    tags: [
+      'University of Southampton, Solent University, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7371,9 +7745,11 @@ export const cityData = [
     promo: [
       `Elevate your academic journey in Dundee, where tradition meets innovation, and possibilities abound. Immerse yourself in a supportive community of scholars, embrace world-class education, and seize unparalleled research opportunities to carve your path to success and make a difference.`,
     ],
-    image_url: `/cities/dundee.jpg`,
+    image_url: `/cities/academic-jobs-in-dundee.jpg`,
     alt: `Aerial view of Dundee, Scotland`,
-    tags: ['University of Dundee, Abertay University, Nobel laureates, higher education'],
+    tags: [
+      'University of Dundee, Abertay University, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7413,9 +7789,11 @@ export const cityData = [
       'Experience the transformative power of education in Middlesbrough, where learning extends far beyond the confines of the classroom. Immerse yourself in a dynamic academic environment fueled by innovation, collaboration, and a relentless pursuit of excellence.',
       "Whether you aspire to pursue cutting-edge research opportunities or embark on a journey of personal and intellectual growth, Middlesbrough's vibrant educational landscape offers the perfect setting to realize your aspirations and unlock your full potential.",
     ],
-    image_url: '/cities/middlesbrough.jpg',
+    image_url: '/cities/academic-jobs-in-middlesbrough.jpg',
     alt: 'Academic Jobs Middlesbrough skyline overlooking the River Tees',
-    tags: ['Teesside University, Middlesbrough College, Nobel laureates, higher education'],
+    tags: [
+      'Teesside University, Middlesbrough College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7455,9 +7833,11 @@ export const cityData = [
       `Embark on a journey of academic discovery and personal growth in Buckingham, where tradition meets innovation and excellence knows no bounds. Whether you're a student seeking a transformative educational experience or a researcher looking to make a meaningful impact, Buckingham offers a dynamic environment brimming with opportunities for learning, collaboration, and success.`,
       `Join our vibrant academic community and unlock your potential amidst the historic charm and forward-thinking spirit of Buckingham. From state-of-the-art facilities to supportive mentorship and real-world learning experiences, Buckingham provides the ideal setting for realizing your academic and professional aspirations.`,
     ],
-    image_url: `/cities/buckingham.jpg`,
+    image_url: `/cities/academic-jobs-in-buckingham.jpg`,
     alt: `Buckingham cityscape with historic buildings and university campuses`,
-    tags: ['University of Buckingham, Royal Latin School, Nobel laureates, higher education'],
+    tags: [
+      'University of Buckingham, Royal Latin School, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7495,9 +7875,11 @@ export const cityData = [
       "Northampton's universities and colleges offer unparalleled educational and personal growth opportunities for students. With innovative teaching methodologies, state-of-the-art research facilities, and a supportive academic environment, studying in Northampton guarantees a transformative educational journey.",
       "For professionals seeking employment opportunities, Northampton's higher education institutions provide a dynamic environment ripe with prospects for professional growth. Access to cutting-edge facilities, collaborative research projects, and industry partnerships make working in Northampton a rewarding and fulfilling experience.",
     ],
-    image_url: '/cities/northampton.jpg',
+    image_url: '/cities/academic-jobs-in-northampton.jpg',
     alt: 'Academic Jobs Aerial view of Northampton cityscape with river and bridges',
-    tags: ['University of Northampton, Moulton College, Nobel laureates, higher education'],
+    tags: [
+      'University of Northampton, Moulton College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7535,9 +7917,11 @@ export const cityData = [
       'Embark on your educational journey or pursue career advancement in East London, where opportunities for growth and discovery abound. Immerse yourself in a vibrant academic community characterized by intellectual curiosity, cultural diversity, and cutting-edge research.',
       "Whether you aspire to push the boundaries of knowledge or make a meaningful impact on society, East London's higher education institutions provide the ideal environment to realize your aspirations and thrive in an ever-evolving world.",
     ],
-    image_url: '/cities/east-london.jpg',
+    image_url: '/cities/academic-jobs-in-east-london.jpg',
     alt: 'Academic Jobs Aerial view of East London cityscape',
-    tags: ['Queen Mary University of London, London Metropolitan University, Nobel laureates, higher education'],
+    tags: [
+      'Queen Mary University of London, London Metropolitan University, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7568,9 +7952,11 @@ export const cityData = [
       `Embark on an academic journey in Falmouth, where universities and colleges ignite the flames of learning and personal development.`,
       `For professionals seeking growth, Falmouth offers a dynamic landscape ripe with research opportunities and collaborative ventures.`,
     ],
-    image_url: `/cities/falmouth.jpg`,
+    image_url: `/cities/academic-jobs-in-falmouth.jpg`,
     alt: `Falmouth's picturesque coastline overlooking the sea`,
-    tags: ['Falmouth University, University of Exeter (Penryn Campus), Nobel laureates, higher education'],
+    tags: [
+      'Falmouth University, University of Exeter (Penryn Campus), Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7606,9 +7992,11 @@ export const cityData = [
     promo: [
       `Embark on a journey of academic exploration and discovery in Huddersfield, where every mind is empowered to thrive and innovate. Whether you're a student seeking transformative learning experiences or a researcher driven by curiosity, Huddersfield offers endless opportunities for intellectual growth and personal development.`,
     ],
-    image_url: `/cities/huddersfield.jpg`,
+    image_url: `/cities/academic-jobs-in-huddersfield.jpg`,
     alt: `A panoramic view of Huddersfield's picturesque landscape with historic buildings and lush greenery`,
-    tags: ['University of Huddersfield, Kirklees College, Nobel laureates, higher education'],
+    tags: [
+      'University of Huddersfield, Kirklees College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7642,9 +8030,11 @@ export const cityData = [
       'Loughborough presents unparalleled opportunities for educational and personal growth with its esteemed institutions and vibrant academic community. Whether pursuing undergraduate, postgraduate, or professional studies, students benefit from a supportive environment and world-class facilities, fostering innovation and excellence.',
       'For academics and researchers, Loughborough offers a stimulating environment for professional development and impactful research collaborations. With access to cutting-edge resources and interdisciplinary initiatives, faculty members thrive in advancing knowledge and addressing global challenges.',
     ],
-    image_url: '/cities/loughborough.jpg',
+    image_url: '/cities/academic-jobs-in-loughborough.jpg',
     alt: 'Academic Jobs Loughborough cityscape with university buildings and green spaces',
-    tags: ['Loughborough University, Charnwood College, Nobel laureates, higher education'],
+    tags: [
+      'Loughborough University, Charnwood College, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7691,9 +8081,11 @@ export const cityData = [
       "Auckland's academic milieu offers a transformative journey, nurturing intellectual curiosity and fostering personal growth amidst a backdrop of innovation and inquiry. With world-class facilities and esteemed faculty, Auckland's universities inspire a new generation of thinkers and leaders.",
       "For professionals, Auckland's academic institutions serve as incubators of innovation, fostering interdisciplinary collaboration and pioneering research endeavors. Embark on a journey of discovery and professional fulfillment in Auckland's dynamic academic ecosystem.",
     ],
-    image_url: '/cities/auckland.avif',
+    image_url: '/cities/academic-jobs-in-auckland.avif',
     alt: 'Academic Jobs Auckland skyline reflecting on Waitemata Harbour',
-    tags: ['University of Auckland, Massey University Auckland Campus, Nobel laureates, higher education'],
+    tags: [
+      'University of Auckland, Massey University Auckland Campus, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7727,9 +8119,11 @@ export const cityData = [
       'Lincoln, New Zealand, offers a stimulating environment for educational and personal growth. With state-of-the-art facilities, dedicated faculty, and a supportive community, students embark on transformative learning journeys, equipped to tackle global challenges and effect positive change.',
       "For professionals seeking dynamic career opportunities, Lincoln's universities and colleges provide a fertile ground for research, innovation, and industry collaboration. From agricultural sciences to environmental management, Lincoln offers diverse avenues for career advancement and meaningful contributions to society.",
     ],
-    image_url: '/cities/lincoln.png',
+    image_url: '/cities/academic-jobs-in-lincoln.png',
     alt: 'Academic Jobs Lincoln, New Zealand: A Center of Academic Excellence and Innovation',
-    tags: ['Lincoln University, University of Canterbury (Agriculture Campus), Nobel laureates, higher education'],
+    tags: [
+      'Lincoln University, University of Canterbury (Agriculture Campus), Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7761,9 +8155,11 @@ export const cityData = [
       "Palmerston North offers unparalleled educational and personal growth opportunities through its esteemed universities and colleges. Immerse yourself in innovative academic programs and vibrant campus life while enjoying the city's natural beauty and welcoming community.",
       'For professionals, Palmerston North provides a fertile ground for research and career advancement. Collaborate with leading experts, explore cutting-edge technologies, and contribute to groundbreaking discoveries that shape the future of your field.',
     ],
-    image_url: '/cities/palmerston-north.jpg',
+    image_url: '/cities/academic-jobs-in-palmerston-north.jpg',
     alt: 'Academic Jobs Panoramic view of Palmerston North cityscape against a backdrop of rolling hills',
-    tags: ['Massey University, Universal College of Learning (UCOL), Nobel laureates, higher education'],
+    tags: [
+      'Massey University, Universal College of Learning (UCOL), Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7802,9 +8198,11 @@ export const cityData = [
       "Embark on a scholarly odyssey in Christchurch, where academia meets enchantment. Here, universities and colleges aren't just institutions; they're crucibles of discovery, incubating intellects and nurturing aspirations.",
       "Seize the opportunity to traverse uncharted realms of knowledge, engage in spirited discourse, and contribute to humanity's collective wisdom. Join Christchurch's academic fraternity, where every mind finds its canvas, and every dream, its haven.",
     ],
-    image_url: '/cities/christchurch.webp',
+    image_url: '/cities/academic-jobs-in-christchurch.webp',
     alt: 'Academic Jobs Christchurch cityscape by the Avon River',
-    tags: ['University of Canterbury, Lincoln University, Nobel laureates, higher education'],
+    tags: [
+      'University of Canterbury, Lincoln University, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7840,9 +8238,11 @@ export const cityData = [
       "Engage with Dunedin's academic community and unlock a world of intellectual possibilities. Students thrive in an environment that nurtures curiosity and fosters critical thinking, while researchers find fertile ground for innovation and collaboration.",
       'With state-of-the-art facilities and a supportive ecosystem, Dunedin offers unparalleled opportunities for personal and professional growth, making it an ideal destination for those seeking to embark on a transformative academic journey.',
     ],
-    image_url: '/cities/dunedin.jpg',
+    image_url: '/cities/academic-jobs-in-dunedin.jpg',
     alt: 'Academic Jobs Dunedin, New Zealand: Aerial View of the City and Surrounding Landscape',
-    tags: ['University of Otago, Otago Polytechnic, Nobel laureates, higher education'],
+    tags: [
+      'University of Otago, Otago Polytechnic, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7874,9 +8274,11 @@ export const cityData = [
       "Hamilton's academic institutions offer dynamic platforms for educational exploration and personal growth. Students engage in innovative teaching methodologies, hands-on research experiences, and a supportive learning environment, fostering creativity and critical thinking.",
       "For professionals, Hamilton presents exciting prospects for career advancement and research collaboration. Access cutting-edge projects, collaborate with esteemed colleagues, and contribute to the city's legacy of academic excellence and innovation.",
     ],
-    image_url: '/cities/hamilton.jpg',
+    image_url: '/cities/academic-jobs-in-hamilton.jpg',
     alt: 'Academic Jobs Hamilton, New Zealand - Academic Excellence and Innovation',
-    tags: ['University of Waikato, Waikato Institute of Technology (Wintec), Nobel laureates, higher education'],
+    tags: [
+      'University of Waikato, Waikato Institute of Technology (Wintec), Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7917,9 +8319,11 @@ export const cityData = [
       "Immerse yourself in Wellington's vibrant academic tapestry, where innovation and creativity flourish amidst breathtaking landscapes and cultural diversity. Whether you seek unparalleled research opportunities or a supportive learning environment, Wellington's universities and colleges offer a gateway to personal and intellectual enrichment.",
       "Join a collaborative community of scholars and students committed to addressing global challenges and shaping the future of knowledge. Experience the unique fusion of academic excellence and cultural vibrancy that defines Wellington, New Zealand's capital of innovation and discovery.",
     ],
-    image_url: '/cities/wellington.jpg',
+    image_url: '/cities/academic-jobs-in-wellington.jpg',
     alt: "A panoramic view of Wellington's vibrant cityscape against the backdrop of lush green hills and the sparkling harbor.",
-    tags: ['Victoria University of Wellington, Wellington Institute of Technology, Nobel laureates, higher education'],
+    tags: [
+      'Victoria University of Wellington, Wellington Institute of Technology, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -7964,9 +8368,11 @@ export const cityData = [
       'Embark on a transformative journey of knowledge and discovery in Geneva, where academic excellence meets cultural sophistication. Immerse yourself in a dynamic environment brimming with opportunities for intellectual growth, collaboration, and innovation.',
       "Whether you aspire to pursue cutting-edge research, engage in spirited debates with renowned scholars, or simply soak in the city's rich tapestry of culture and history, Geneva offers an unparalleled setting for realizing your academic and professional aspirations.",
     ],
-    image_url: '/cities/geneva.webp',
+    image_url: '/cities/academic-jobs-in-geneva.webp',
     alt: 'Academic Jobs Aerial view of Geneva, Switzerland',
-    tags: ['University of Geneva, Webster University Geneva, Nobel laureates, higher education'],
+    tags: [
+      'University of Geneva, Webster University Geneva, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8003,9 +8409,11 @@ export const cityData = [
       `Embark on a transformative educational odyssey in Lyon, where academic prowess intersects with cultural allure. Immerse yourself in a vibrant intellectual tapestry, where top-tier universities and cutting-edge research opportunities beckon.`,
       `Whether you aspire to expand your intellectual horizons, collaborate with esteemed scholars, or catalyze groundbreaking discoveries, Lyon offers an unparalleled platform for personal and professional growth.`,
     ],
-    image_url: `/cities/lyon.jpg`,
+    image_url: `/cities/academic-jobs-in-lyon.jpg`,
     alt: `Lyon cityscape showcasing historic landmarks and modern architectural marvels`,
-    tags: ['University of Lyon, Lumière University Lyon 2, Nobel laureates, higher education'],
+    tags: [
+      'University of Lyon, Lumière University Lyon 2, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8048,9 +8456,11 @@ export const cityData = [
       'For those seeking education, Toulouse offers unparalleled opportunities for personal and intellectual growth. With a diverse range of programs and a supportive academic community, students can explore their passions and cultivate skills that prepare them for future success​.',
       "Professionals looking to advance their careers will find Toulouse's academic institutions to be fertile ground for research collaborations and career advancement. Whether in academia, industry, or government, Toulouse provides a stimulating environment for professional development and innovation​.",
     ],
-    image_url: '/cities/toulouse.jpg',
+    image_url: '/cities/academic-jobs-in-toulouse.jpg',
     alt: "Toulouse, France: A picturesque view of the city's skyline",
-    tags: ['University of Toulouse, National Institute of Applied Sciences of Toulouse (INSA), Nobel laureates, higher education'],
+    tags: [
+      'University of Toulouse, National Institute of Applied Sciences of Toulouse (INSA), Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8083,9 +8493,11 @@ export const cityData = [
     academicInfo: [],
     academicList: [],
     promo: [],
-    image_url: '/cities/bordeaux.jpg',
+    image_url: '/cities/academic-jobs-in-bordeaux.jpg',
     alt: "Bordeaux's picturesque cityscape overlooking the Garonne River",
-    tags: ['University of Bordeaux, Institut Polytechnique de Bordeaux, Nobel laureates, higher education'],
+    tags: [
+      'University of Bordeaux, Institut Polytechnique de Bordeaux, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8119,9 +8531,11 @@ export const cityData = [
       "Experience unparalleled educational and personal growth opportunities by choosing to study in Marseille. Immerse yourself in a stimulating academic environment enriched by world-class research facilities, vibrant cultural experiences, and the city's rich heritage.",
       "For professionals seeking employment or research opportunities, Marseille offers a dynamic ecosystem brimming with potential. Collaborate with esteemed experts, delve into cutting-edge research endeavors, and capitalize on Marseille's strategic location as a hub of innovation and connectivity.",
     ],
-    image_url: '/cities/marseille.webp',
+    image_url: '/cities/academic-jobs-in-marseille.webp',
     alt: "Panoramic view of Marseille's dynamic cityscape and the Mediterranean Sea",
-    tags: ['Aix-Marseille University, Ecole Centrale Marseille, Nobel laureates, higher education'],
+    tags: [
+      'Aix-Marseille University, Ecole Centrale Marseille, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8161,9 +8575,11 @@ export const cityData = [
       "Embark on an educational odyssey in Grenoble, where academic pursuits converge with natural splendor. Whether delving into the intricacies of science or exploring the nuances of business management, Grenoble's universities offer a transformative journey of discovery and personal growth.",
       "For professionals seeking to ignite their careers, Grenoble's vibrant research ecosystem presents a cornucopia of opportunities. Engage with leading-edge research, collaborate with visionary minds, and chart a trajectory of professional fulfillment in the heart of the French Alps.",
     ],
-    image_url: '/cities/grenoble.webp',
+    image_url: '/cities/academic-jobs-in-grenoble.webp',
     alt: 'Academic Jobs Grenoble, France - Where academia meets Alpine allure',
-    tags: ['Grenoble Alpes University, École nationale supérieure darchitecture de Grenoble, Nobel laureates, higher education'],
+    tags: [
+      'Grenoble Alpes University, École nationale supérieure darchitecture de Grenoble, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8208,9 +8624,11 @@ export const cityData = [
       'Embark on a transformative academic odyssey in Nice, France, where azure vistas and intellectual fervor intertwine. Embrace a mosaic of educational offerings, collaborate with eminent scholars, and immerse yourself in a cultural melting pot that nurtures personal and professional growth.',
       "Whether you're drawn to pursue higher education or seek to make impactful contributions through research, Nice beckons with its unparalleled blend of academic excellence, coastal charm, and boundless possibilities waiting to be explored.",
     ],
-    image_url: '/cities/nice.jpg',
+    image_url: '/cities/academic-jobs-in-nice.jpg',
     alt: 'Academic Jobs Nice, France: Coastal cityscape with azure waters and vibrant buildings',
-    tags: ['Université Côte dAzur, EDHEC Business School, Nobel laureates, higher education'],
+    tags: [
+      'Université Côte dAzur, EDHEC Business School, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8257,9 +8675,11 @@ export const cityData = [
       'Montpellier offers a transformative educational experience, providing students with unparalleled opportunities for personal and intellectual growth. With its diverse range of institutions and dynamic research environment, Montpellier nurtures the next generation of leaders, innovators, and change-makers.',
       'For professionals seeking a stimulating and supportive research environment, Montpellier presents an ideal destination. From access to cutting-edge facilities to collaborative networks and industry partnerships, the city provides a fertile ground for advancing research, driving innovation, and shaping the future of academia.',
     ],
-    image_url: '/cities/montpellier.jpg',
+    image_url: '/cities/academic-jobs-in-montpellier.jpg',
     alt: 'Academic Jobs Montpellier, France - A vibrant cityscape with historic architecture and modern amenities',
-    tags: ['Montpellier Business School, Montpellier SupAgro, Nobel laureates, higher education'],
+    tags: [
+      'Montpellier Business School, Montpellier SupAgro, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8292,9 +8712,11 @@ export const cityData = [
       'Embark on a transformative journey of learning and personal growth in Aix-en-Provence, where academic excellence meets cultural splendor. Immerse yourself in a stimulating environment enriched with a wealth of resources, renowned faculty, and opportunities for scholarly exploration across diverse disciplines.',
       'For professionals seeking a dynamic and intellectually stimulating career path, Aix-en-Provence beckons with its vibrant research community, cutting-edge facilities, and collaborative spirit. Join a network of visionary minds, where innovation thrives and ideas flourish, propelling you towards unparalleled success and fulfillment.',
     ],
-    image_url: '/cities/aix-en-provence.jpg',
+    image_url: '/cities/academic-jobs-in-aix-en-provence.jpg',
     alt: 'Academic Jobs Aix-en-Provence cityscape with historic buildings and tree-lined streets',
-    tags: ['Aix-Marseille University, Sciences Po Aix , Nobel laureates, higher education'],
+    tags: [
+      'Aix-Marseille University, Sciences Po Aix , Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8335,9 +8757,11 @@ export const cityData = [
       `Embark on an odyssey through Florence's intellectual tapestry, where the echoes of the Renaissance reverberate through time. Immerse yourself in a realm where tradition meets innovation, offering a transformative journey of educational enlightenment and personal growth.`,
       `Join a vibrant community of scholars and visionaries, where collaboration ignites creativity and discovery knows no bounds. Experience firsthand why Florence beckons as a beacon of erudition and innovation, beckoning both aspirants and stalwarts alike to partake in its timeless legacy of intellectual excellence.`,
     ],
-    image_url: `/cities/florence.jpg`,
+    image_url: `/cities/academic-jobs-in-florence.jpg`,
     alt: `Florence, Italy - Renaissance Intellectual Epicenter`,
-    tags: ['University of Florence, European University Institute, Nobel laureates, higher education'],
+    tags: [
+      'University of Florence, European University Institute, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8374,9 +8798,11 @@ export const cityData = [
       'Consider attending a university or college in Bologna to immerse yourself in a rich tapestry of academic tradition and innovation. From the venerable halls of the University of Bologna to cutting-edge research at its modern campuses, the city offers unparalleled opportunities for educational and personal growth. Experience a vibrant cultural scene, historical landmarks, and a supportive academic community that fosters intellectual curiosity and exploration.',
       "For those seeking employment, Bologna's universities and colleges provide a fertile ground for professional development and research collaboration. Engage with leading scholars and experts in your field, access state-of-the-art facilities, and contribute to groundbreaking research projects. Join a thriving academic community that values creativity, diversity, and excellence, and embark on a fulfilling career path shaped by Bologna's rich heritage and forward-thinking ethos.",
     ],
-    image_url: '/cities/bologna.jpg',
+    image_url: '/cities/academic-jobs-in-bologna.jpg',
     alt: 'Academic Jobs Bologna Italy Educational Hub',
-    tags: ['University of Bologna, University of Modena and Reggio Emilia (Bologna Campus), Nobel laureates, higher education'],
+    tags: [
+      'University of Bologna, University of Modena and Reggio Emilia (Bologna Campus), Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8418,9 +8844,11 @@ export const cityData = [
       "Turin offers unparalleled educational and research opportunities, with its esteemed institutions fostering academic growth and personal development. Whether pursuing undergraduate studies, postgraduate research, or professional development, Turin's academic landscape provides a supportive and stimulating environment.",
       'For academics and researchers, Turin presents a platform for groundbreaking discoveries and collaborative endeavors, with access to state-of-the-art facilities and a vibrant scholarly community. Embrace the spirit of inquiry and innovation in Turin, where intellectual curiosity knows no bounds.',
     ],
-    image_url: '/cities/turin.jpg',
+    image_url: '/cities/academic-jobs-in-turin.jpg',
     alt: 'Academic Jobs Turin, Italy - A City of Intellectual Pursuits',
-    tags: ['University of Turin, Polytechnic University of Turin , Nobel laureates, higher education'],
+    tags: [
+      'University of Turin, Polytechnic University of Turin , Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8455,9 +8883,11 @@ export const cityData = [
     academicInfo: [],
     academicList: [],
     promo: [],
-    image_url: '/cities/pisa.jpg',
+    image_url: '/cities/academic-jobs-in-pisa.jpg',
     alt: 'Academic Jobs Breathtaking aerial view of Pisa, Italy',
-    tags: ['University of Pisa, SantAnna School of Advanced Studies, Nobel laureates, higher education'],
+    tags: [
+      'University of Pisa, SantAnna School of Advanced Studies, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8493,9 +8923,11 @@ export const cityData = [
       "Embrace the opportunity to immerse yourself in Padua's rich academic tapestry, where centuries of tradition converge with cutting-edge research and innovation. Whether you're a student seeking unparalleled educational experiences or a professional looking to advance your career in a stimulating academic environment, Padua offers a gateway to limitless possibilities.",
       "From state-of-the-art facilities to collaborative research opportunities, Padua's universities and colleges provide a nurturing ecosystem for personal and professional growth. Experience the allure of Padua's intellectual ambiance and unlock your potential amidst the cradle of Renaissance intellect.",
     ],
-    image_url: '/cities/padua.jpg',
+    image_url: '/cities/academic-jobs-in-padua.jpg',
     alt: "A captivating view of Padua's historic streets and landmarks",
-    tags: ['University of Padua, Padua Conservatory of Music, Nobel laureates, higher education'],
+    tags: [
+      'University of Padua, Padua Conservatory of Music, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8537,9 +8969,11 @@ export const cityData = [
       "Discover Venice's unique blend of academic excellence and cultural heritage. Immerse yourself in a vibrant academic environment while exploring the city's rich history, art, and innovation. Join a community of scholars dedicated to shaping the future while preserving the past.",
       "Experience unparalleled personal growth and professional development opportunities amidst the breathtaking backdrop of Venice's iconic canals and historic landmarks. Whether you seek to pursue higher education or advance your career, Venice offers a truly enriching experience.",
     ],
-    image_url: '/cities/venice.jpg',
+    image_url: '/cities/academic-jobs-in-venice.jpg',
     alt: 'Academic Jobs Venice Italy - City of Canals and Culture',
-    tags: ['IUAV University of Venice, Venice International University, Nobel laureates, higher education'],
+    tags: [
+      'IUAV University of Venice, Venice International University, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8575,9 +9009,11 @@ export const cityData = [
       "Genoa's universities offer a unique blend of academic rigor and cultural immersion, providing students with unparalleled opportunities for personal and intellectual growth. Whether studying maritime engineering, fine arts, or architecture, students benefit from a vibrant academic community and access to cutting-edge research facilities.",
       'For academics, Genoa provides a stimulating environment for research and collaboration. From interdisciplinary projects to partnerships with industry leaders, the city fosters innovation and creativity, making it an ideal destination for scholars seeking to make a meaningful impact in their fields​.',
     ],
-    image_url: '/cities/genoa.jpg',
+    image_url: '/cities/academic-jobs-in-genoa.jpg',
     alt: "A panoramic view of Genoa's historic center with colorful buildings and a bustling harbor",
-    tags: ['University of Genoa, Genoa School of Fine Arts, Nobel laureates, higher education'],
+    tags: [
+      'University of Genoa, Genoa School of Fine Arts, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8610,9 +9046,11 @@ export const cityData = [
     academicInfo: ['', ''],
     academicList: [],
     promo: ['', ''],
-    image_url: '/cities/salamanca.jpg',
+    image_url: '/cities/academic-jobs-in-salamanca.jpg',
     alt: 'Academic Jobs Historic streets of Salamanca, Spain',
-    tags: ['University of Salamanca, Pontifical University of Salamanca , Nobel laureates, higher education'],
+    tags: [
+      'University of Salamanca, Pontifical University of Salamanca , Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8641,9 +9079,11 @@ export const cityData = [
     academicInfo: [],
     academicList: [],
     promo: [],
-    image_url: '/cities/granada.jpg',
+    image_url: '/cities/academic-jobs-in-granada.jpg',
     alt: "Granada's picturesque cityscape against a sunset backdrop",
-    tags: ['University of Granada, Granada Higher School of Computer Engineering, Nobel laureates, higher education'],
+    tags: [
+      'University of Granada, Granada Higher School of Computer Engineering, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8672,9 +9112,11 @@ export const cityData = [
     academicInfo: [],
     academicList: [],
     promo: [],
-    image_url: '/cities/seville.webp',
+    image_url: '/cities/academic-jobs-in-seville.webp',
     alt: 'Academic Jobs Seville cityscape with historic buildings and river',
-    tags: ['University of Seville, Pablo de Olavide University , Nobel laureates, higher education'],
+    tags: [
+      'University of Seville, Pablo de Olavide University , Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8711,9 +9153,11 @@ export const cityData = [
     academicInfo: [],
     academicList: [],
     promo: [],
-    image_url: '/cities/rome.jpg',
+    image_url: '/cities/academic-jobs-in-rome.jpg',
     alt: 'Academic Jobs Rome skyline with ancient ruins and modern buildings',
-    tags: ['Sapienza University of Rome, University of Roma Tor Vergata, Nobel laureates, higher education'],
+    tags: [
+      'Sapienza University of Rome, University of Roma Tor Vergata, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8746,9 +9190,11 @@ export const cityData = [
     academicInfo: [],
     academicList: [],
     promo: [],
-    image_url: '/cities/budapest.jpg',
+    image_url: '/cities/academic-jobs-in-budapest.jpg',
     alt: 'Academic Jobs Budapest, Hungary - A city of stunning architecture and rich cultural heritage',
-    tags: ['Eötvös Loránd University, Central European University, Nobel laureates, higher education'],
+    tags: [
+      'Eötvös Loránd University, Central European University, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8793,9 +9239,11 @@ export const cityData = [
       "Prague offers a unique blend of academic excellence, cultural richness, and research opportunities. Whether you're a student seeking a transformative educational experience or a researcher looking for a vibrant academic community, Prague's universities and colleges provide a fertile ground for personal growth, intellectual exploration, and professional development.",
       'With its rich history, innovative spirit, and diverse student body, Prague invites you to be part of its dynamic academic landscape, where tradition meets innovation and knowledge knows no bounds.',
     ],
-    image_url: '/cities/prague.jpg',
+    image_url: '/cities/academic-jobs-in-prague.jpg',
     alt: 'Academic Jobs Prague cityscape with historic architecture and river',
-    tags: ['Charles University, Czech Technical University in Prague, Nobel laureates, higher education'],
+    tags: [
+      'Charles University, Czech Technical University in Prague, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8847,9 +9295,11 @@ export const cityData = [
       'Prague and Warsaw offer unparalleled opportunities for academic and personal growth. With centuries-old traditions, state-of-the-art facilities, and a multicultural environment, students can immerse themselves in diverse learning experiences.',
       'For researchers and educators, the cities provide fertile ground for collaboration, innovation, and impactful contributions to their respective fields. Whether pursuing studies or a career, Prague and Warsaw promise a stimulating journey of discovery and advancement.',
     ],
-    image_url: '/cities/warsaw.jpg',
+    image_url: '/cities/academic-jobs-in-warsaw.jpg',
     alt: "Aerial view of Prague and Warsaw's cityscape showcasing their architectural beauty and cultural richness.",
-    tags: ['Charles University (Prague), University of Warsaw (Warsaw), Nobel laureates, higher education'],
+    tags: [
+      'Charles University (Prague), University of Warsaw (Warsaw), Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8894,9 +9344,11 @@ export const cityData = [
     promo: [
       'Join the vibrant academic community of Athens, Greece, where ancient wisdom meets modern innovation. Experience world-class education, cultural immersion, and groundbreaking research opportunities in a city steeped in history and intellectual excellence.',
     ],
-    image_url: '/cities/greece.jpg',
+    image_url: '/cities/academic-jobs-in-greece.jpg',
     alt: 'Academic Jobs A panoramic view of Athens, Greece, showcasing ancient ruins juxtaposed with modern architecture.',
-    tags: ['National and Kapodistrian University of Athens, Athens University of Economics and Business, Nobel laureates, higher education'],
+    tags: [
+      'National and Kapodistrian University of Athens, Athens University of Economics and Business, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8943,9 +9395,11 @@ export const cityData = [
       "Oslo offers a unique blend of academic rigor and cultural diversity, providing students with unparalleled educational and personal growth opportunities. From cutting-edge research facilities to vibrant campus life, Oslo's universities and colleges are ideal destinations for those seeking a transformative educational experience.",
       "For professionals, Oslo's dynamic academic environment presents numerous opportunities for career advancement and research collaboration. Whether you're an aspiring scholar or a seasoned academic, Oslo offers a supportive and inspiring community to pursue your academic and professional goals.",
     ],
-    image_url: '/cities/oslo.jpg',
+    image_url: '/cities/academic-jobs-in-oslo.jpg',
     alt: 'Academic Jobs Oslo skyline overlooking the fjord and cityscape',
-    tags: ['University of Oslo, BI Norwegian Business School, Nobel laureates, higher education'],
+    tags: [
+      'University of Oslo, BI Norwegian Business School, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -8988,9 +9442,11 @@ export const cityData = [
       'Moscow offers unparalleled educational and professional opportunities for both students and academics. With world-class institutions, diverse research facilities, and a rich cultural heritage, the city fosters an environment conducive to intellectual growth, innovation, and personal development.',
       "Whether you seek to pursue higher education or advance your career in academia, Moscow provides the resources, mentorship, and collaborative networks necessary to thrive in today's global knowledge economy.",
     ],
-    image_url: '/cities/moscow.webp',
+    image_url: '/cities/academic-jobs-in-moscow.webp',
     alt: 'Academic Jobs Aerial view of Moscow, Russia',
-    tags: ['Moscow State University, Bauman Moscow State Technical University, Nobel laureates, higher education'],
+    tags: [
+      'Moscow State University, Bauman Moscow State Technical University, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -9027,9 +9483,11 @@ export const cityData = [
     academicInfo: [],
     academicList: [],
     promo: [],
-    image_url: '/cities/bucharest.jpg',
+    image_url: '/cities/academic-jobs-in-bucharest.jpg',
     alt: 'Academic Jobs Bucharest skyline at sunset',
-    tags: ['University of Bucharest, Politehnica University of Bucharest , Nobel laureates, higher education'],
+    tags: [
+      'University of Bucharest, Politehnica University of Bucharest , Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -9071,9 +9529,11 @@ export const cityData = [
       'Embark on a journey of educational and personal growth in Sofia, where prestigious universities and a vibrant academic community await. Experience world-class research opportunities and cultivate lifelong connections with renowned scholars. Join us in shaping the future of academia and innovation​.',
       "For those seeking employment, Sofia offers a fertile ground for professional advancement, with ample opportunities for collaboration and research in various industries. Whether you're a student or a seasoned academic, Sofia's dynamic ecosystem promises a rewarding experience​.",
     ],
-    image_url: '/cities/sofia.jpg',
+    image_url: '/cities/academic-jobs-in-sofia.jpg',
     alt: 'Academic Jobs Sofia, Bulgaria - A cityscape showcasing academic institutions and landmarks',
-    tags: ['Sofia University "St. Kliment Ohridski, Technical University of Sofia, Nobel laureates, higher education'],
+    tags: [
+      'Sofia University "St. Kliment Ohridski, Technical University of Sofia, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -9109,9 +9569,11 @@ export const cityData = [
       "Belgrade's universities and colleges foster educational excellence and personal growth opportunities. With diverse academic programs, state-of-the-art facilities, and a vibrant student community, studying in Belgrade offers a truly enriching experience.",
       'For professionals, Belgrade provides a dynamic research environment, collaborative networks, and opportunities for interdisciplinary engagement. Joining the academic workforce in Belgrade opens doors to innovative projects and meaningful contributions to global knowledge.',
     ],
-    image_url: '/cities/belgrade.jpg',
+    image_url: '/cities/academic-jobs-in-belgrade.jpg',
     alt: "A panoramic view of Belgrade, Serbia's historic and vibrant capital city.",
-    tags: ['University of Belgrade, Singidunum University, Nobel laureates, higher education'],
+    tags: [
+      'University of Belgrade, Singidunum University, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -9155,9 +9617,11 @@ export const cityData = [
       "Kiev offers a fertile ground for educational and personal growth, with its rich cultural heritage and academic diversity. Whether you seek to immerse yourself in the arts, delve into cutting-edge scientific research, or pursue business studies, Kiev's universities provide a stimulating environment conducive to academic excellence and holistic development.",
       "Moreover, employment opportunities in Kiev's academic institutions offer a platform for professional advancement and impactful research collaborations, propelling individuals towards fulfilling careers and contributing to the advancement of knowledge.",
     ],
-    image_url: '/cities/kiev.jpg',
+    image_url: '/cities/academic-jobs-in-kiev.jpg',
     alt: "A panoramic view of Kiev's skyline with iconic landmarks",
-    tags: ['Taras Shevchenko National University of Kyiv, National University of Kyiv-Mohyla Academy, Nobel laureates, higher education'],
+    tags: [
+      'Taras Shevchenko National University of Kyiv, National University of Kyiv-Mohyla Academy, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -9200,9 +9664,11 @@ export const cityData = [
     promo: [
       "Bratislava's universities offer a unique blend of academic excellence, cultural immersion, and research opportunities. Students can immerse themselves in a rich academic environment while exploring the city's vibrant culture and historical landmarks. With a strong emphasis on interdisciplinary collaboration and innovation, Bratislava provides a conducive setting for personal growth and professional development​.",
     ],
-    image_url: '/cities/bratislava.jpg',
+    image_url: '/cities/academic-jobs-in-bratislava.jpg',
     alt: 'Academic Jobs View of Bratislava cityscape with the Danube River',
-    tags: ['Comenius University, Slovak University of Technology , Nobel laureates, higher education'],
+    tags: [
+      'Comenius University, Slovak University of Technology , Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -9238,9 +9704,11 @@ export const cityData = [
       'Embark on a journey of academic and personal growth in Vilnius, Lithuania. With renowned universities and colleges offering diverse programs, students can explore their passions and expand their horizons.',
       'Moreover, Vilnius provides ample opportunities for professional development and research collaboration, making it an ideal destination for both education and employment in the heart of the Baltic region.',
     ],
-    image_url: '/cities/vilnius.jpg',
+    image_url: '/cities/academic-jobs-in-vilnius.jpg',
     alt: 'Academic Jobs Vilnius skyline at dusk',
-    tags: ['Vilnius University, Mykolas Romeris University, Nobel laureates, higher education'],
+    tags: [
+      'Vilnius University, Mykolas Romeris University, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -9283,9 +9751,11 @@ export const cityData = [
       'Riga offers a unique blend of educational and personal growth opportunities for students seeking to broaden their horizons and engage with diverse perspectives. With a focus on experiential learning and hands-on research, universities in Riga empower students to become global citizens equipped to tackle complex challenges​.',
       'For academics and researchers, Riga provides a stimulating environment conducive to innovation and collaboration. With access to state-of-the-art facilities and a supportive academic community, Riga offers unparalleled opportunities for professional development and groundbreaking research​.',
     ],
-    image_url: '/cities/riga.jpg',
+    image_url: '/cities/academic-jobs-in-riga.jpg',
     alt: "A picturesque view of Riga's old town with colorful buildings and cobblestone streets",
-    tags: ['University of Latvia, Stockholm School of Economics in Riga, Nobel laureates, higher education'],
+    tags: [
+      'University of Latvia, Stockholm School of Economics in Riga, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -9322,9 +9792,11 @@ export const cityData = [
       'Tallinn offers a unique blend of academic excellence and cultural richness, making it an ideal destination for both students and professionals. With cutting-edge research facilities, interdisciplinary programs, and a supportive academic community, attending a university or college in Tallinn promises unparalleled educational and personal growth opportunities.',
       "For those seeking employment, Tallinn's thriving tech industry, coupled with its status as a UNESCO Creative City of Literature, presents abundant prospects for research collaboration, innovation, and professional advancement. Whether delving into emerging technologies or exploring centuries-old cultural traditions, Tallinn beckons with a myriad of possibilities.",
     ],
-    image_url: '/cities/talinn.jpg',
+    image_url: '/cities/academic-jobs-in-talinn.jpg',
     alt: 'Academic Jobs Tallinn, Estonia: A Blend of Tradition and Innovation',
-    tags: ['Tallinn University, Estonian Academy of Arts, Nobel laureates, higher education'],
+    tags: [
+      'Tallinn University, Estonian Academy of Arts, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -9360,9 +9832,11 @@ export const cityData = [
       'Embark on a journey of educational and personal growth in Ljubljana, Slovenia. With its renowned universities, cutting-edge research facilities, and vibrant cultural scene, the city offers students a stimulating environment to pursue their academic passions and explore new horizons.',
       "For academics and researchers, Ljubljana provides unparalleled opportunities for professional development and collaboration. Whether in the sciences, humanities, or arts, the city's dynamic academic community fosters innovation and excellence, making it an ideal destination for those seeking to make a meaningful impact.",
     ],
-    image_url: '/cities/ljubijana.jpg',
+    image_url: '/cities/academic-jobs-in-ljubijana.jpg',
     alt: 'Academic Jobs Ljubljana, Slovenia: A cityscape with historic buildings and the Ljubljanica River',
-    tags: ['University of Ljubljana, University of Primorska, Nobel laureates, higher education'],
+    tags: [
+      'University of Ljubljana, University of Primorska, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -9401,9 +9875,11 @@ export const cityData = [
       `Embrace a transformative academic journey in Zagreb, where rich traditions merge with modern innovations. Join a community that values intellectual curiosity and offers diverse opportunities for personal and educational growth.`,
       `For researchers and educators, Zagreb provides a dynamic environment with ample resources and collaborations, fostering groundbreaking discoveries and advancements across various disciplines.`,
     ],
-    image_url: `/cities/zagreb.jpg`,
+    image_url: `/cities/academic-jobs-in-zagreb.jpg`,
     alt: `Zagreb: A city of spires and academia`,
-    tags: ['University of Zagreb, University of Applied Sciences Velika Gorica, Nobel laureates, higher education'],
+    tags: [
+      'University of Zagreb, University of Applied Sciences Velika Gorica, Nobel laureates, higher education',
+    ],
   },
 
   {
@@ -9445,3974 +9921,5515 @@ export const cityData = [
       `Luxembourg City beckons with a unique blend of academic excellence and cultural diversity. Join a community where innovation meets tradition, offering unparalleled educational and personal growth opportunities. Embrace a dynamic environment where you can contribute to cutting-edge research and be part of a global academic community.`,
       `For those seeking employment, Luxembourg City provides a fertile ground for professional development and research opportunities. Engage with leading institutions and contribute to shaping the future of knowledge and innovation in this thriving academic hub.`,
     ],
-    image_url: `/cities/luxembourg.jpg`,
+    image_url: `/cities/academic-jobs-in-luxembourg.jpg`,
     alt: `Luxembourg City skyline with university buildings and green spaces`,
-    tags: ['University of Luxembourg, Sacred Heart University Luxembourg, Nobel laureates, higher education'],
+    tags: [
+      'University of Luxembourg, Sacred Heart University Luxembourg, Nobel laureates, higher education',
+    ],
   },
 
   {
     title: "Exploring Casablanca's Academic Excellence",
     h1: "Unlocking the Potential: Casablanca's Higher Education Landscape",
-    slug: "casablanca-academic-excellence",
-    city: "Casablanca",
-    region: "Grand Casablanca",
-    country: "Morocco",
-    description: "Discover the academic richness of Casablanca, Morocco, through its renowned universities, notable academics, and contributions to global knowledge. Explore the city's Nobel Laureates and compelling reasons for both attendance and employment in its vibrant academic environment.",
-    keywords: "Casablanca education, universities in Casablanca, academic excellence, Casablanca colleges, Nobel Laureates, Morocco education",
+    slug: 'casablanca-academic-excellence',
+    city: 'Casablanca',
+    region: 'Grand Casablanca',
+    country: 'Morocco',
+    description:
+      "Discover the academic richness of Casablanca, Morocco, through its renowned universities, notable academics, and contributions to global knowledge. Explore the city's Nobel Laureates and compelling reasons for both attendance and employment in its vibrant academic environment.",
+    keywords:
+      'Casablanca education, universities in Casablanca, academic excellence, Casablanca colleges, Nobel Laureates, Morocco education',
 
     cityInfo: [
-        "Casablanca, Morocco, stands as a beacon of educational diversity and excellence in North Africa. With its blend of traditional and modern influences, the city's higher education landscape reflects its dynamic cultural heritage and commitment to academic advancement.",
-        "Home to a variety of universities and colleges, including public institutions and private academies, Casablanca offers students a broad spectrum of educational opportunities to pursue their passions and expand their horizons."
+      "Casablanca, Morocco, stands as a beacon of educational diversity and excellence in North Africa. With its blend of traditional and modern influences, the city's higher education landscape reflects its dynamic cultural heritage and commitment to academic advancement.",
+      'Home to a variety of universities and colleges, including public institutions and private academies, Casablanca offers students a broad spectrum of educational opportunities to pursue their passions and expand their horizons.',
     ],
     uniList: [
-        "Université Hassan II de Casablanca",
-        "Université Internationale de Casablanca",
-        "École Mohammadia d'Ingénieurs (EMI)",
-        "École Nationale de Commerce et de Gestion de Casablanca (ENCG)",
-        "Université Privée de Marrakech (UPM)",
-        "Université Mundiapolis",
-        "Institut Supérieur de Commerce et d'Administration des Entreprises (ISCAE)",
-        "École Marocaine des Sciences de l'Ingénieur (EMSI)"
+      'Université Hassan II de Casablanca',
+      'Université Internationale de Casablanca',
+      "École Mohammadia d'Ingénieurs (EMI)",
+      'École Nationale de Commerce et de Gestion de Casablanca (ENCG)',
+      'Université Privée de Marrakech (UPM)',
+      'Université Mundiapolis',
+      "Institut Supérieur de Commerce et d'Administration des Entreprises (ISCAE)",
+      "École Marocaine des Sciences de l'Ingénieur (EMSI)",
     ],
     nobelInfo: [
-        "While Casablanca has yet to produce Nobel Laureates, its academic institutions play a crucial role in shaping global knowledge and innovation. With a focus on areas such as engineering, business, and commerce, universities in Casablanca contribute to research and development that addresses regional and global challenges.",
-        "From advancements in renewable energy to innovations in business management, Casablanca's academic community continues to make strides towards a brighter future, embodying the spirit of collaboration and excellence."
+      'While Casablanca has yet to produce Nobel Laureates, its academic institutions play a crucial role in shaping global knowledge and innovation. With a focus on areas such as engineering, business, and commerce, universities in Casablanca contribute to research and development that addresses regional and global challenges.',
+      "From advancements in renewable energy to innovations in business management, Casablanca's academic community continues to make strides towards a brighter future, embodying the spirit of collaboration and excellence.",
     ],
     nobelList: [],
     academicInfo: [
-        "Casablanca's academic community boasts notable scholars and educators who enrich the city's intellectual landscape. From experts in engineering and technology to leaders in business and economics, these academics play a vital role in mentoring the next generation of innovators and thought leaders."
+      "Casablanca's academic community boasts notable scholars and educators who enrich the city's intellectual landscape. From experts in engineering and technology to leaders in business and economics, these academics play a vital role in mentoring the next generation of innovators and thought leaders.",
     ],
     academicList: [],
     promo: [
-        "Consider Casablanca for your educational journey and professional aspirations. With a diverse range of programs, state-of-the-art facilities, and a supportive academic community, universities and colleges in Casablanca provide the perfect environment for personal growth and academic excellence.",
-        "For those seeking employment opportunities, Casablanca offers a dynamic environment with avenues for research collaboration, industry partnerships, and career advancement. Join us in shaping the future of education and innovation in Casablanca, where every individual can make a meaningful impact."
+      'Consider Casablanca for your educational journey and professional aspirations. With a diverse range of programs, state-of-the-art facilities, and a supportive academic community, universities and colleges in Casablanca provide the perfect environment for personal growth and academic excellence.',
+      'For those seeking employment opportunities, Casablanca offers a dynamic environment with avenues for research collaboration, industry partnerships, and career advancement. Join us in shaping the future of education and innovation in Casablanca, where every individual can make a meaningful impact.',
     ],
-    image_url: "/cities/casablanca.jpg",
-    alt: "Casablanca cityscape with Hassan II Mosque and skyscrapers"
-},
+    image_url: '/cities/academic-jobs-in-casablanca.jpg',
+    alt: 'Casablanca cityscape with Hassan II Mosque and skyscrapers',
+  },
 
-{
-  title: "Education Hub: Alice, South Africa",
-  h1: "Exploring the Academic Landscape of Alice",
-  slug: "education-hub-alice-south-africa",
-  city: "Alice",
-  region: "Eastern Cape",
-  country: "South Africa",
-  description: "Discover the vibrant academic environment of Alice, South Africa, renowned for its prestigious institutions, groundbreaking research, and distinguished alumni. Explore the diverse educational opportunities and rich cultural heritage that make Alice an ideal destination for both learning and professional growth.",
-  keywords: "Alice South Africa, universities in Alice, colleges in Alice, education hub, academic landscape, Nobel Laureates, notable academics, career opportunities",
+  {
+    title: 'Education Hub: Alice, South Africa',
+    h1: 'Exploring the Academic Landscape of Alice',
+    slug: 'education-hub-alice-south-africa',
+    city: 'Alice',
+    region: 'Eastern Cape',
+    country: 'South Africa',
+    description:
+      'Discover the vibrant academic environment of Alice, South Africa, renowned for its prestigious institutions, groundbreaking research, and distinguished alumni. Explore the diverse educational opportunities and rich cultural heritage that make Alice an ideal destination for both learning and professional growth.',
+    keywords:
+      'Alice South Africa, universities in Alice, colleges in Alice, education hub, academic landscape, Nobel Laureates, notable academics, career opportunities',
 
-  cityInfo: [
+    cityInfo: [
       "Nestled in the Eastern Cape of South Africa, Alice boasts a dynamic higher education landscape, characterized by its esteemed universities and colleges. The city's academic institutions offer a wide array of programs, attracting students from diverse backgrounds both nationally and internationally.",
-      "With a strong focus on research and innovation, Alice serves as a beacon of intellectual pursuit and cultural exchange, contributing significantly to the region's development and global knowledge dissemination."
-  ],
-  uniList: [
-      "University of Fort Hare",
-      "Walter Sisulu University",
-      "Lovedale TVET College",
-      "Eastern Cape Midlands College"
-  ],
-  nobelInfo: [
+      "With a strong focus on research and innovation, Alice serves as a beacon of intellectual pursuit and cultural exchange, contributing significantly to the region's development and global knowledge dissemination.",
+    ],
+    uniList: [
+      'University of Fort Hare',
+      'Walter Sisulu University',
+      'Lovedale TVET College',
+      'Eastern Cape Midlands College',
+    ],
+    nobelInfo: [
       "While Alice hasn't produced Nobel Laureates directly, its institutions have nurtured exceptional minds contributing to global advancements. The University of Fort Hare, for instance, has fostered leaders like Nelson Mandela and Oliver Tambo, whose legacy resonates worldwide, advocating for social justice and equality.",
-      "Moreover, the city's academic community continues to engage in groundbreaking research across various disciplines, laying the foundation for future Nobel-worthy contributions."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Alice is home to numerous distinguished academics who have left an indelible mark on their respective fields. Professors at the University of Fort Hare, such as Dr. Xolela Mangcu, a renowned scholar and activist, exemplify the city's commitment to intellectual excellence and social progress."
-  ],
-  academicList: [
-      "Dr. Xolela Mangcu: Professor of Political Studies",
-      "Prof. Sakhela Buhlungu: Head of Sociology Department"
-  ],
-  promo: [
-      "Immerse yourself in the vibrant academic community of Alice, where educational and personal growth opportunities abound. From state-of-the-art facilities to innovative research initiatives, our institutions provide a nurturing environment for students to thrive and realize their full potential.",
-      "Join us in shaping the future through impactful research, collaborative partnerships, and a commitment to excellence. Explore the possibilities that await you in Alice, South Africa's premier destination for academic and professional advancement."
-  ],
-  image_url: "/cities/alice.webp",
-  alt: "Aerial view of Alice, South Africa"
-},
+      "Moreover, the city's academic community continues to engage in groundbreaking research across various disciplines, laying the foundation for future Nobel-worthy contributions.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Alice is home to numerous distinguished academics who have left an indelible mark on their respective fields. Professors at the University of Fort Hare, such as Dr. Xolela Mangcu, a renowned scholar and activist, exemplify the city's commitment to intellectual excellence and social progress.",
+    ],
+    academicList: [
+      'Dr. Xolela Mangcu: Professor of Political Studies',
+      'Prof. Sakhela Buhlungu: Head of Sociology Department',
+    ],
+    promo: [
+      'Immerse yourself in the vibrant academic community of Alice, where educational and personal growth opportunities abound. From state-of-the-art facilities to innovative research initiatives, our institutions provide a nurturing environment for students to thrive and realize their full potential.',
+      "Join us in shaping the future through impactful research, collaborative partnerships, and a commitment to excellence. Explore the possibilities that await you in Alice, South Africa's premier destination for academic and professional advancement.",
+    ],
+    image_url: '/cities/academic-jobs-in-alice.webp',
+    alt: 'Aerial view of Alice, South Africa',
+  },
 
-{
-  title: "Education Hub: Kimberley, South Africa",
-  h1: "Unlocking Knowledge: Exploring Kimberley's Academic Landscape",
-  slug: "education-hub-kimberley-south-africa",
-  city: "Kimberley",
-  region: "Northern Cape",
-  country: "South Africa",
-  description: "Discover Kimberley's vibrant educational scene, boasting Nobel Laureates, renowned academics, and diverse institutions. Explore opportunities for growth and innovation in this dynamic city.",
-  keywords: "Kimberley, South Africa, universities, colleges, education, Nobel Laureates, academics, research",
+  {
+    title: 'Education Hub: Kimberley, South Africa',
+    h1: "Unlocking Knowledge: Exploring Kimberley's Academic Landscape",
+    slug: 'education-hub-kimberley-south-africa',
+    city: 'Kimberley',
+    region: 'Northern Cape',
+    country: 'South Africa',
+    description:
+      "Discover Kimberley's vibrant educational scene, boasting Nobel Laureates, renowned academics, and diverse institutions. Explore opportunities for growth and innovation in this dynamic city.",
+    keywords:
+      'Kimberley, South Africa, universities, colleges, education, Nobel Laureates, academics, research',
 
+    cityInfo: [
+      'Kimberley, South Africa, thrives as an educational hub, fostering innovation and intellectual growth. Its higher education landscape is diverse, offering opportunities for students to excel in various fields.',
+      'The citys rich cultural heritage merges seamlessly with its academic endeavors, creating a unique and inspiring environment for learning and research.',
+    ],
+    uniList: [
+      'Sol Plaatje University',
+      'Northern Cape Rural TVET College',
+      'Northern Cape Urban TVET College',
+      'South African College of Business and Technology',
+      'Kimberley Technical High School',
+    ],
+    nobelInfo: [
+      'While Kimberley has yet to produce Nobel Laureates directly, its institutions contribute significantly to global knowledge and innovation. Sol Plaatje University, named after the famous writer and activist, focuses on promoting research and development, laying the groundwork for future breakthroughs.',
+      'Although no Nobel Laureates hail directly from Kimberley, the citys academic institutions play a vital role in shaping the minds and research endeavors of tomorrows leaders.',
+    ],
+    nobelList: [],
+    academicInfo: [
+      'Kimberley boasts notable academics who contribute to their fields advancement. At Sol Plaatje University, scholars like Dr. Mpho Monareng, an expert in sustainable development, and Professor Nomfundo Ramalekana, a prominent historian, enrich the academic landscape with their research and expertise.',
+    ],
+    academicList: [
+      'Dr. Mpho Monareng: Professor of Sustainable Development',
+      'Professor Nomfundo Ramalekana: Historian and Researcher',
+    ],
+    promo: [
+      'Sol Plaatje University, nestled in Kimberleys vibrant community, offers unparalleled educational opportunities. Students engage in cutting-edge research, guided by renowned academics like Dr. Monareng and Professor Ramalekana, shaping the future of their respective fields.',
+      'Kimberley provides a fertile ground for personal and professional growth, where students and academics alike thrive in a supportive and intellectually stimulating environment.',
+    ],
+    image_url: '/cities/academic-jobs-in-kimberley.jpg',
+    alt: 'Kimberley, South Africa: A melting pot of culture and education',
+  },
 
-  cityInfo: [
-    "Kimberley, South Africa, thrives as an educational hub, fostering innovation and intellectual growth. Its higher education landscape is diverse, offering opportunities for students to excel in various fields.",
-    "The citys rich cultural heritage merges seamlessly with its academic endeavors, creating a unique and inspiring environment for learning and research."
-  ],
-  uniList: [
-    "Sol Plaatje University",
-    "Northern Cape Rural TVET College",
-    "Northern Cape Urban TVET College",
-    "South African College of Business and Technology",
-    "Kimberley Technical High School"
-  ],
-  nobelInfo: [
-    "While Kimberley has yet to produce Nobel Laureates directly, its institutions contribute significantly to global knowledge and innovation. Sol Plaatje University, named after the famous writer and activist, focuses on promoting research and development, laying the groundwork for future breakthroughs.",
-    "Although no Nobel Laureates hail directly from Kimberley, the citys academic institutions play a vital role in shaping the minds and research endeavors of tomorrows leaders."
-  ],
-  nobelList: [],
-  academicInfo: [
-    "Kimberley boasts notable academics who contribute to their fields advancement. At Sol Plaatje University, scholars like Dr. Mpho Monareng, an expert in sustainable development, and Professor Nomfundo Ramalekana, a prominent historian, enrich the academic landscape with their research and expertise."
-  ],
-  academicList: [
-    "Dr. Mpho Monareng: Professor of Sustainable Development",
-    "Professor Nomfundo Ramalekana: Historian and Researcher"
-  ],
-  promo: [
-    "Sol Plaatje University, nestled in Kimberleys vibrant community, offers unparalleled educational opportunities. Students engage in cutting-edge research, guided by renowned academics like Dr. Monareng and Professor Ramalekana, shaping the future of their respective fields.",
-    "Kimberley provides a fertile ground for personal and professional growth, where students and academics alike thrive in a supportive and intellectually stimulating environment."
-  ],
-  image_url: "/cities/kimberley.jpg",
-  alt: "Kimberley, South Africa: A melting pot of culture and education"
-},
+  {
+    title:
+      'Bellville: Cape Peninsula University of Technology, University of the Western Cape',
+    h1: 'Exploring Higher Education in Bellville',
+    slug: 'bellville-higher-education',
+    city: 'Bellville',
+    region: 'Western Cape',
+    country: 'South Africa',
+    description:
+      'Discover the vibrant higher education landscape of Bellville, South Africa, featuring renowned universities and colleges, distinguished academics, and contributions to global knowledge and innovation.',
+    keywords:
+      'Bellville education, Cape Peninsula University of Technology, University of the Western Cape, higher education South Africa',
 
-{
-  title: "Bellville: Cape Peninsula University of Technology, University of the Western Cape",
-  h1: "Exploring Higher Education in Bellville",
-  slug: "bellville-higher-education",
-  city: "Bellville",
-  region: "Western Cape",
-  country: "South Africa",
-  description: "Discover the vibrant higher education landscape of Bellville, South Africa, featuring renowned universities and colleges, distinguished academics, and contributions to global knowledge and innovation.",
-  keywords: "Bellville education, Cape Peninsula University of Technology, University of the Western Cape, higher education South Africa",
-
-  cityInfo: [
+    cityInfo: [
       "Bellville, South Africa, boasts a diverse higher education landscape, enriched by institutions like Cape Peninsula University of Technology and University of the Western Cape. These universities contribute significantly to the city's intellectual and cultural vibrancy, offering a wide array of academic disciplines and research opportunities.",
-      "With a focus on accessibility and excellence, Bellville's higher education institutions attract students from various backgrounds, fostering inclusivity and innovation in learning and research."
-  ],
-  uniList: [
-      "Cape Peninsula University of Technology",
-      "University of the Western Cape"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+      "With a focus on accessibility and excellence, Bellville's higher education institutions attract students from various backgrounds, fostering inclusivity and innovation in learning and research.",
+    ],
+    uniList: [
+      'Cape Peninsula University of Technology',
+      'University of the Western Cape',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "Bellville's higher education institutions provide an unparalleled platform for educational and personal growth. With diverse programs, state-of-the-art facilities, and a commitment to academic excellence, students can thrive in a supportive and dynamic learning environment.",
-      "For professionals seeking employment, Bellville offers abundant opportunities for research and career advancement. Collaborate with leading experts, engage in impactful research projects, and contribute to shaping the future of various fields."
-  ],
-  image_url: "/cities/bellvile.jpg",
-  alt: "Bellville cityscape"
-},
+      'For professionals seeking employment, Bellville offers abundant opportunities for research and career advancement. Collaborate with leading experts, engage in impactful research projects, and contribute to shaping the future of various fields.',
+    ],
+    image_url: '/cities/academic-jobs-in-bellvile.jpg',
+    alt: 'Bellville cityscape',
+  },
 
-{
-  title: "Empangeni: Hub of Higher Education and Intellectual Excellence",
-  h1: "Exploring Empangeni's Academic Landscape",
-  slug: "empangeni-higher-education-hub",
-  city: "Empangeni",
-  region: "KwaZulu-Natal",
-  country: "South Africa",
-  description: "Discover Empangeni's vibrant academic environment, boasting renowned universities, notable academics, and a legacy of intellectual achievements. Explore opportunities for education, research, and personal growth in this dynamic city.",
-  keywords: "Empangeni, higher education, universities, colleges, academics, research, South Africa",
+  {
+    title: 'Empangeni: Hub of Higher Education and Intellectual Excellence',
+    h1: "Exploring Empangeni's Academic Landscape",
+    slug: 'empangeni-higher-education-hub',
+    city: 'Empangeni',
+    region: 'KwaZulu-Natal',
+    country: 'South Africa',
+    description:
+      "Discover Empangeni's vibrant academic environment, boasting renowned universities, notable academics, and a legacy of intellectual achievements. Explore opportunities for education, research, and personal growth in this dynamic city.",
+    keywords:
+      'Empangeni, higher education, universities, colleges, academics, research, South Africa',
 
-  cityInfo: [
-      "Empangeni, located in KwaZulu-Natal, South Africa, is a thriving center of higher education, offering diverse opportunities for academic and personal growth.",
-      "With a rich cultural heritage and a commitment to excellence, Empangeni's universities and colleges contribute significantly to the intellectual and social development of the region."
-  ],
-  uniList: [
-      "University of Zululand",
-      "Empangeni Technical College",
-      "uMfolozi TVET College",
-      "etc."
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+    cityInfo: [
+      'Empangeni, located in KwaZulu-Natal, South Africa, is a thriving center of higher education, offering diverse opportunities for academic and personal growth.',
+      "With a rich cultural heritage and a commitment to excellence, Empangeni's universities and colleges contribute significantly to the intellectual and social development of the region.",
+    ],
+    uniList: [
+      'University of Zululand',
+      'Empangeni Technical College',
+      'uMfolozi TVET College',
+      'etc.',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "Empangeni's universities and colleges provide a fertile ground for educational and personal growth. Students can immerse themselves in diverse academic programs, engage with renowned faculty, and participate in research projects that address local and global challenges.",
-      "For academics and researchers, Empangeni offers opportunities to collaborate with experts in various fields, access state-of-the-art facilities, and contribute to cutting-edge discoveries that impact society positively."
-  ],
-  image_url: "/cities/empangeni.jpg",
-  alt: "Empangeni City Skyline"
-},
+      'For academics and researchers, Empangeni offers opportunities to collaborate with experts in various fields, access state-of-the-art facilities, and contribute to cutting-edge discoveries that impact society positively.',
+    ],
+    image_url: '/cities/academic-jobs-in-empangeni.jpg',
+    alt: 'Empangeni City Skyline',
+  },
 
+  {
+    title: 'Ga-Rankuwa: Academic Hub of South Africa',
+    h1: "Exploring Ga-Rankuwa's Educational Landscape",
+    slug: 'ga-rankuwa-academic-hub',
+    city: 'Ga-Rankuwa',
+    region: 'Gauteng',
+    country: 'South Africa',
+    description:
+      "Discover Ga-Rankuwa's vibrant academic scene, featuring renowned universities, notable academics, and contributions to global knowledge. Explore opportunities for education and employment in this dynamic city.",
+    keywords:
+      'Ga-Rankuwa, South Africa, universities, colleges, academics, Nobel Laureates, research, education',
 
-{
-  title: "Ga-Rankuwa: Academic Hub of South Africa",
-  h1: "Exploring Ga-Rankuwa's Educational Landscape",
-  slug: "ga-rankuwa-academic-hub",
-  city: "Ga-Rankuwa",
-  region: "Gauteng",
-  country: "South Africa",
-  description: "Discover Ga-Rankuwa's vibrant academic scene, featuring renowned universities, notable academics, and contributions to global knowledge. Explore opportunities for education and employment in this dynamic city.",
-  keywords: "Ga-Rankuwa, South Africa, universities, colleges, academics, Nobel Laureates, research, education",
-
-  cityInfo: [
+    cityInfo: [
       "Ga-Rankuwa, situated in Gauteng, South Africa, is a thriving academic hub with diverse educational institutions. Its universities and colleges foster intellectual growth and innovation, contributing significantly to the city's cultural and intellectual vibrancy.",
-      "The city's higher education landscape reflects South Africa's commitment to providing quality education and research opportunities, attracting students and scholars from across the nation and beyond."
-  ],
-  uniList: [
-      "Sefako Makgatho Health Sciences University",
-      "Tshwane University of Technology - Ga-Rankuwa Campus",
-      "Practical Training College",
-      "etc."
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-      "Ga-Rankuwa offers unparalleled educational and personal growth opportunities through its esteemed universities and colleges. Students benefit from cutting-edge research, diverse academic programs, and a supportive learning environment, preparing them for success in their chosen fields.",
-      "For professionals and researchers, Ga-Rankuwa provides a fertile ground for career advancement and impactful research. Collaborate with leading experts, access state-of-the-art facilities, and contribute to groundbreaking discoveries that shape the future of healthcare, technology, and beyond​."
-  ],
-  image_url: "/cities/garunkuwa.jpg",
-  alt: "Aerial view of Ga-Rankuwa, a vibrant academic hub in South Africa"
-},
+      "The city's higher education landscape reflects South Africa's commitment to providing quality education and research opportunities, attracting students and scholars from across the nation and beyond.",
+    ],
+    uniList: [
+      'Sefako Makgatho Health Sciences University',
+      'Tshwane University of Technology - Ga-Rankuwa Campus',
+      'Practical Training College',
+      'etc.',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Ga-Rankuwa offers unparalleled educational and personal growth opportunities through its esteemed universities and colleges. Students benefit from cutting-edge research, diverse academic programs, and a supportive learning environment, preparing them for success in their chosen fields.',
+      'For professionals and researchers, Ga-Rankuwa provides a fertile ground for career advancement and impactful research. Collaborate with leading experts, access state-of-the-art facilities, and contribute to groundbreaking discoveries that shape the future of healthcare, technology, and beyond​.',
+    ],
+    image_url: '/cities/academic-jobs-in-garunkuwa.jpg',
+    alt: 'Aerial view of Ga-Rankuwa, a vibrant academic hub in South Africa',
+  },
 
+  {
+    title: 'Education Hub: George, South Africa',
+    h1: "Unlock Your Potential in George's Academic Landscape",
+    slug: 'education-hub-george-south-africa',
+    city: 'George',
+    region: 'Western Cape',
+    country: 'South Africa',
+    description:
+      "Discover George's vibrant educational scene, Nobel laureates' contributions, and renowned academics. Explore why studying or working here offers unparalleled growth opportunities.",
+    keywords:
+      'George education, George universities, George colleges, South Africa education, academic hub George',
 
-{
-  title: "Education Hub: George, South Africa",
-  h1: "Unlock Your Potential in George's Academic Landscape",
-  slug: "education-hub-george-south-africa",
-  city: "George",
-  region: "Western Cape",
-  country: "South Africa",
-  description: "Discover George's vibrant educational scene, Nobel laureates' contributions, and renowned academics. Explore why studying or working here offers unparalleled growth opportunities.",
-  keywords: "George education, George universities, George colleges, South Africa education, academic hub George",
-
-  cityInfo: [
+    cityInfo: [
       "Nestled in South Africa's Western Cape, George thrives as an educational hub with diverse universities and colleges, fostering intellectual growth and innovation.",
-      "From vocational training to cutting-edge research, George's institutions cater to various educational needs, contributing significantly to the city's cultural and economic vitality."
-  ],
-  uniList: [
-      "Nelson Mandela University - George Campus",
-      "Northlink College - George Campus",
-      "Vaal University of Technology - Southern Cape Campus",
-      "George Community College"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+      "From vocational training to cutting-edge research, George's institutions cater to various educational needs, contributing significantly to the city's cultural and economic vitality.",
+    ],
+    uniList: [
+      'Nelson Mandela University - George Campus',
+      'Northlink College - George Campus',
+      'Vaal University of Technology - Southern Cape Campus',
+      'George Community College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "Embrace a transformative journey at George's educational institutions, where world-class faculty and state-of-the-art facilities nurture your academic pursuits.",
-      "Whether you seek vocational training or aspire to pioneer groundbreaking research, George offers unparalleled opportunities for personal and professional growth."
-  ],
-  image_url: "/cities/george.jpg",
-  alt: "Aerial view of George, South Africa"
-},
+      'Whether you seek vocational training or aspire to pioneer groundbreaking research, George offers unparalleled opportunities for personal and professional growth.',
+    ],
+    image_url: '/cities/academic-jobs-in-george.jpg',
+    alt: 'Aerial view of George, South Africa',
+  },
 
-{
-  title: "Mahikeng: Hub of Higher Learning and Achievement",
-  h1: "Discover Mahikeng's Academic Excellence",
-  slug: "mahikeng-hub-of-higher-learning-and-achievement",
-  city: "Mahikeng",
-  region: "North West Province",
-  country: "South Africa",
-  description: "Explore Mahikeng's vibrant academic landscape, home to esteemed universities and colleges. Learn about Nobel Laureates, notable academics, and compelling reasons to pursue education or employment opportunities in this dynamic city.",
-  keywords: "Mahikeng, North-West University, higher education, Nobel Laureates, academics, South Africa",
+  {
+    title: 'Mahikeng: Hub of Higher Learning and Achievement',
+    h1: "Discover Mahikeng's Academic Excellence",
+    slug: 'mahikeng-hub-of-higher-learning-and-achievement',
+    city: 'Mahikeng',
+    region: 'North West Province',
+    country: 'South Africa',
+    description:
+      "Explore Mahikeng's vibrant academic landscape, home to esteemed universities and colleges. Learn about Nobel Laureates, notable academics, and compelling reasons to pursue education or employment opportunities in this dynamic city.",
+    keywords:
+      'Mahikeng, North-West University, higher education, Nobel Laureates, academics, South Africa',
 
-  cityInfo: [
+    cityInfo: [
       "Mahikeng, nestled in South Africa's North West Province, boasts a diverse higher education landscape characterized by its prestigious institutions and academic achievements.",
-      "The city's rich cultural heritage and strategic location contribute to a stimulating environment for learning and research."
-  ],
-  uniList: [
-      "North-West University (Mahikeng Campus)",
-      "Sol Plaatje University",
-      "Cornerstone Institute Mahikeng"
-  ],
-  nobelInfo: [
+      "The city's rich cultural heritage and strategic location contribute to a stimulating environment for learning and research.",
+    ],
+    uniList: [
+      'North-West University (Mahikeng Campus)',
+      'Sol Plaatje University',
+      'Cornerstone Institute Mahikeng',
+    ],
+    nobelInfo: [
       "While Mahikeng doesn't currently have Nobel Laureates associated with it, its academic institutions contribute significantly to global knowledge and innovation. For example, North-West University fosters groundbreaking research in various fields, nurturing future leaders and innovators.",
-      "Although Mahikeng's Nobel Laureate count remains vacant, the city's commitment to academic excellence continues to attract top talent, positioning it as a hub for aspiring scholars and researchers."
-  ],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-      "Mahikeng offers unparalleled educational and personal growth opportunities. With world-class faculties and state-of-the-art facilities, institutions like North-West University provide a conducive environment for academic advancement.",
-      "For professionals seeking employment, Mahikeng presents abundant prospects for career development and impactful research. Collaborative partnerships and industry connections enrich the academic experience, fostering a culture of innovation and expertise."
-  ],
-  image_url: "/cities/mahikeng.jpg",
-  alt: "Mahikeng cityscape with colorful buildings and bustling streets"
-},
+      "Although Mahikeng's Nobel Laureate count remains vacant, the city's commitment to academic excellence continues to attract top talent, positioning it as a hub for aspiring scholars and researchers.",
+    ],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Mahikeng offers unparalleled educational and personal growth opportunities. With world-class faculties and state-of-the-art facilities, institutions like North-West University provide a conducive environment for academic advancement.',
+      'For professionals seeking employment, Mahikeng presents abundant prospects for career development and impactful research. Collaborative partnerships and industry connections enrich the academic experience, fostering a culture of innovation and expertise.',
+    ],
+    image_url: '/cities/academic-jobs-in-mahikeng.jpg',
+    alt: 'Mahikeng cityscape with colorful buildings and bustling streets',
+  },
 
-{
-  title: "Makhanda: Hub of Higher Education",
-  h1: "Exploring Makhanda's Academic Excellence",
-  slug: "makhanda-hub-higher-education",
-  city: "Makhanda",
-  region: "Eastern Cape",
-  country: "South Africa",
-  description: "Discover the academic vibrancy of Makhanda, South Africa, through its renowned universities, notable Nobel Laureates, and esteemed academics. Explore educational and professional opportunities in this diverse and intellectually stimulating city.",
-  keywords: "Makhanda, Rhodes University, higher education, Nobel Laureates, academics, South Africa",
+  {
+    title: 'Makhanda: Hub of Higher Education',
+    h1: "Exploring Makhanda's Academic Excellence",
+    slug: 'makhanda-hub-higher-education',
+    city: 'Makhanda',
+    region: 'Eastern Cape',
+    country: 'South Africa',
+    description:
+      'Discover the academic vibrancy of Makhanda, South Africa, through its renowned universities, notable Nobel Laureates, and esteemed academics. Explore educational and professional opportunities in this diverse and intellectually stimulating city.',
+    keywords:
+      'Makhanda, Rhodes University, higher education, Nobel Laureates, academics, South Africa',
 
-  cityInfo: [
-      "Makhanda, South Africa, boasts a dynamic higher education landscape, with a focus on excellence and diversity. Home to Rhodes University, the city stands as a beacon of academic achievement, attracting students and scholars from across the globe.",
-      "Additionally, Makhanda fosters a rich cultural tapestry, offering a unique learning environment that nurtures creativity, critical thinking, and community engagement. Its institutions contribute significantly to the city's intellectual vitality and societal progress."
-  ],
-  uniList: [
-      "Rhodes University"
-  ],
-  nobelInfo: [
-      "While Makhanda has yet to produce Nobel Laureates, its academic institutions contribute to global knowledge and innovation. Rhodes University, known for its research excellence, continues to make strides in various fields, laying the groundwork for future groundbreaking discoveries.",
-      "Although Makhanda's Nobel Laureate count remains vacant, the city's commitment to academic rigor and societal impact positions it as a potential incubator for future Nobel Prize winners, further solidifying its place in the global academic arena​."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Makhanda's academic community boasts distinguished scholars and educators who enrich their respective fields with groundbreaking research and teaching. From Rhodes University, academics like Professor Tebello Nyokong, renowned for her contributions to chemistry and nanotechnology, exemplify the city's commitment to academic excellence and innovation."
-  ],
-  academicList: [
-      "Professor Tebello Nyokong: Chemistry and Nanotechnology"
-  ],
-  promo: [
+    cityInfo: [
+      'Makhanda, South Africa, boasts a dynamic higher education landscape, with a focus on excellence and diversity. Home to Rhodes University, the city stands as a beacon of academic achievement, attracting students and scholars from across the globe.',
+      "Additionally, Makhanda fosters a rich cultural tapestry, offering a unique learning environment that nurtures creativity, critical thinking, and community engagement. Its institutions contribute significantly to the city's intellectual vitality and societal progress.",
+    ],
+    uniList: ['Rhodes University'],
+    nobelInfo: [
+      'While Makhanda has yet to produce Nobel Laureates, its academic institutions contribute to global knowledge and innovation. Rhodes University, known for its research excellence, continues to make strides in various fields, laying the groundwork for future groundbreaking discoveries.',
+      "Although Makhanda's Nobel Laureate count remains vacant, the city's commitment to academic rigor and societal impact positions it as a potential incubator for future Nobel Prize winners, further solidifying its place in the global academic arena​.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Makhanda's academic community boasts distinguished scholars and educators who enrich their respective fields with groundbreaking research and teaching. From Rhodes University, academics like Professor Tebello Nyokong, renowned for her contributions to chemistry and nanotechnology, exemplify the city's commitment to academic excellence and innovation.",
+    ],
+    academicList: ['Professor Tebello Nyokong: Chemistry and Nanotechnology'],
+    promo: [
       "Join Makhanda's vibrant academic community and unlock boundless opportunities for educational and personal growth. Experience a nurturing environment that values intellectual curiosity, innovation, and societal impact. Whether you're a student seeking knowledge or a professional pursuing research excellence, Makhanda offers a supportive ecosystem to thrive and make a difference.",
-      "For those considering employment, Makhanda provides a conducive environment for pioneering research, collaborative endeavors, and professional development. Join a community of passionate educators and researchers dedicated to advancing knowledge and addressing global challenges."
-  ],
-  image_url: "/cities/makhanda.jpg",
-  alt: "Makhanda skyline with Rhodes University campus"
-},
+      'For those considering employment, Makhanda provides a conducive environment for pioneering research, collaborative endeavors, and professional development. Join a community of passionate educators and researchers dedicated to advancing knowledge and addressing global challenges.',
+    ],
+    image_url: '/cities/academic-jobs-in-makhanda.jpg',
+    alt: 'Makhanda skyline with Rhodes University campus',
+  },
 
-
-{
-  title: "Mankweng: Hub of Learning and Innovation",
-  h1: "Exploring the Academic Landscape of Mankweng",
-  slug: "mankweng-hub-of-learning-and-innovation",
-  city: "Mankweng",
-  region: "Limpopo Province",
-  country: "South Africa",
-  description: "Discover the vibrant academic scene in Mankweng, Limpopo Province. From renowned universities and colleges to groundbreaking research, explore the city's rich educational offerings and intellectual contributions.",
-  keywords: "Mankweng, University of Limpopo, Limpopo Province, South Africa, higher education, academic research",
-  cityInfo: [
+  {
+    title: 'Mankweng: Hub of Learning and Innovation',
+    h1: 'Exploring the Academic Landscape of Mankweng',
+    slug: 'mankweng-hub-of-learning-and-innovation',
+    city: 'Mankweng',
+    region: 'Limpopo Province',
+    country: 'South Africa',
+    description:
+      "Discover the vibrant academic scene in Mankweng, Limpopo Province. From renowned universities and colleges to groundbreaking research, explore the city's rich educational offerings and intellectual contributions.",
+    keywords:
+      'Mankweng, University of Limpopo, Limpopo Province, South Africa, higher education, academic research',
+    cityInfo: [
       "Mankweng, nestled in Limpopo Province, South Africa, is a bustling academic center renowned for its diversity and educational prowess. The University of Limpopo, situated in the heart of Mankweng, stands as a beacon of knowledge, offering a range of programs that reflect the city's cultural richness and commitment to excellence.",
-      "The city's higher education landscape encompasses a variety of institutions, including technical colleges and vocational training centers, catering to the diverse needs of its populace and fostering a spirit of lifelong learning."
-  ],
-  uniList: [
-      "University of Limpopo",
-      "Sekhukhune TVET College",
-      "Capricorn TVET College",
-      "etc."
-  ],
-  nobelInfo: [
-      "",
-      ""
-  ],
-  nobelList: [],
-  academicInfo: [
-      ""
-  ],
-  academicList: [],
-  promo: [
-      "Experience unparalleled educational opportunities and personal growth at the University of Limpopo and other esteemed institutions in Mankweng. Engage with leading scholars, participate in groundbreaking research, and immerse yourself in a vibrant academic community.",
-      "Joining the faculty or research teams in Mankweng offers professionals and scholars a dynamic environment to pursue their passions and contribute to cutting-edge research initiatives that address local and global challenges."
-  ],
-  image_url: "/cities/mankweng.jpg",
-  alt: "View of Mankweng: A Vibrant Academic Hub"
-},
+      "The city's higher education landscape encompasses a variety of institutions, including technical colleges and vocational training centers, catering to the diverse needs of its populace and fostering a spirit of lifelong learning.",
+    ],
+    uniList: [
+      'University of Limpopo',
+      'Sekhukhune TVET College',
+      'Capricorn TVET College',
+      'etc.',
+    ],
+    nobelInfo: ['', ''],
+    nobelList: [],
+    academicInfo: [''],
+    academicList: [],
+    promo: [
+      'Experience unparalleled educational opportunities and personal growth at the University of Limpopo and other esteemed institutions in Mankweng. Engage with leading scholars, participate in groundbreaking research, and immerse yourself in a vibrant academic community.',
+      'Joining the faculty or research teams in Mankweng offers professionals and scholars a dynamic environment to pursue their passions and contribute to cutting-edge research initiatives that address local and global challenges.',
+    ],
+    image_url: '/cities/academic-jobs-in-mankweng.jpg',
+    alt: 'View of Mankweng: A Vibrant Academic Hub',
+  },
 
+  {
+    title: 'Mbombele: Academic Hub of Mpumalanga',
+    h1: "Exploring Mbombele's Educational Landscape",
+    slug: 'mbombele-academic-hub-mpumalanga',
+    city: 'Mbombele',
+    region: 'Mpumalanga',
+    country: 'South Africa',
+    description:
+      'Discover Mbombele, a vibrant academic city in Mpumalanga, South Africa, boasting a diverse higher education landscape, renowned Nobel Laureates, and distinguished academics.',
+    keywords:
+      'Mbombele, University of Mpumalanga, higher education, Nobel Laureates, academics, South Africa',
 
-{
-  title: "Mbombele: Academic Hub of Mpumalanga",
-  h1: "Exploring Mbombele's Educational Landscape",
-  slug: "mbombele-academic-hub-mpumalanga",
-  city: "Mbombele",
-  region: "Mpumalanga",
-  country: "South Africa",
-  description: "Discover Mbombele, a vibrant academic city in Mpumalanga, South Africa, boasting a diverse higher education landscape, renowned Nobel Laureates, and distinguished academics.",
-  keywords: "Mbombele, University of Mpumalanga, higher education, Nobel Laureates, academics, South Africa",
+    cityInfo: [
+      'Mbombele, located in Mpumalanga, South Africa, is a bustling academic hub, home to various universities and colleges offering diverse educational opportunities.',
+      "The city's higher education landscape reflects its commitment to academic excellence and innovation, attracting students and scholars from across the country and beyond.",
+    ],
+    uniList: [
+      'University of Mpumalanga',
+      'Tshwane University of Technology - Mbombela Campus',
+      'Mbombela College',
+      'Southern Business School - Mbombela Campus',
+    ],
+    nobelInfo: [
+      "While Mbombele does not yet have Nobel Laureates associated directly with the city's institutions, South Africa has produced notable laureates in various fields, contributing to global knowledge and innovation.",
+      "For example, Nelson Mandela, former President of South Africa, was awarded the Nobel Peace Prize in 1993 for his efforts to dismantle apartheid and promote reconciliation. While not directly from Mbombele, Mandela's legacy resonates throughout the country.",
+    ],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Attend a university or college in Mbombele and immerse yourself in a vibrant academic community dedicated to fostering educational and personal growth.',
+      'With access to world-class facilities, experienced faculty, and a supportive learning environment, Mbombele offers unparalleled opportunities for students to pursue their academic and professional aspirations.',
+    ],
+    image_url: '/cities/academic-jobs-in-mbombela.jpg',
+    alt: 'Mbombele cityscape skyline with university buildings and lush greenery',
+  },
 
-  cityInfo: [
-    "Mbombele, located in Mpumalanga, South Africa, is a bustling academic hub, home to various universities and colleges offering diverse educational opportunities.",
-    "The city's higher education landscape reflects its commitment to academic excellence and innovation, attracting students and scholars from across the country and beyond."
-  ],
-  uniList: [
-    "University of Mpumalanga",
-    "Tshwane University of Technology - Mbombela Campus",
-    "Mbombela College",
-    "Southern Business School - Mbombela Campus"
-  ],
-  nobelInfo: [
-    "While Mbombele does not yet have Nobel Laureates associated directly with the city's institutions, South Africa has produced notable laureates in various fields, contributing to global knowledge and innovation.",
-    "For example, Nelson Mandela, former President of South Africa, was awarded the Nobel Peace Prize in 1993 for his efforts to dismantle apartheid and promote reconciliation. While not directly from Mbombele, Mandela's legacy resonates throughout the country."
-  ],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Attend a university or college in Mbombele and immerse yourself in a vibrant academic community dedicated to fostering educational and personal growth.",
-    "With access to world-class facilities, experienced faculty, and a supportive learning environment, Mbombele offers unparalleled opportunities for students to pursue their academic and professional aspirations."
-  ],
-  image_url: "/cities/mbombela.jpg",
-  alt: "Mbombele cityscape skyline with university buildings and lush greenery"
-},
+  {
+    title: 'Mthatha: Hub of Higher Education and Intellectual Excellence',
+    h1: "Exploring Mthatha's Academic Landscape",
+    slug: 'mthatha-higher-education-hub',
+    city: 'Mthatha',
+    region: 'Eastern Cape',
+    country: 'South Africa',
+    description:
+      'Discover the vibrant academic community of Mthatha, South Africa, boasting Nobel Laureates, esteemed universities and colleges, and renowned academics. Explore opportunities for education, research, and personal growth in this intellectual hub.',
+    keywords:
+      'Mthatha, South Africa, universities, colleges, higher education, Nobel Laureates, academics, research',
 
-{
-  title: "Mthatha: Hub of Higher Education and Intellectual Excellence",
-  h1: "Exploring Mthatha's Academic Landscape",
-  slug: "mthatha-higher-education-hub",
-  city: "Mthatha",
-  region: "Eastern Cape",
-  country: "South Africa",
-  description: "Discover the vibrant academic community of Mthatha, South Africa, boasting Nobel Laureates, esteemed universities and colleges, and renowned academics. Explore opportunities for education, research, and personal growth in this intellectual hub.",
-  keywords: "Mthatha, South Africa, universities, colleges, higher education, Nobel Laureates, academics, research",
+    cityInfo: [
+      'Nestled in the Eastern Cape of South Africa, Mthatha stands as a beacon of intellectual pursuit and higher education excellence. Its diverse higher education landscape encompasses prestigious universities and colleges, offering a range of disciplines and opportunities for academic advancement.',
+      'With a rich cultural heritage and a commitment to scholarly excellence, Mthatha fosters an environment conducive to learning, innovation, and personal growth. Students and academics alike thrive in this dynamic city, contributing to its vibrant intellectual tapestry.',
+    ],
+    uniList: [
+      'Walter Sisulu University',
+      'Mthatha Nursing College',
+      'Mthatha Technical College',
+      'etc.',
+    ],
+    nobelInfo: [
+      'While Mthatha may not have produced Nobel Laureates directly, its educational institutions have played a vital role in shaping global knowledge and innovation. The city celebrates the achievements of Nobel Laureates associated with South Africa, such as Nelson Mandela, who was honored with the Nobel Peace Prize for his tireless efforts in dismantling apartheid and promoting reconciliation.',
+      "Mthatha's academic community continues to uphold the values of excellence and social progress, inspiring future generations to pursue groundbreaking research and contribute to the betterment of society.",
+    ],
+    nobelList: ['Nelson Mandela: Peace'],
+    academicInfo: [
+      'Mthatha boasts a cadre of notable academics who have left an indelible mark on their respective fields. From pioneering research in healthcare to championing social justice causes, these academics embody the spirit of intellectual inquiry and service.',
+    ],
+    academicList: [
+      'Dr. Thandi Ndlovu: Professor of Public Health',
+      'Prof. Xolani Mkhize: Chair of Social Sciences',
+    ],
+    promo: [
+      'Join the vibrant academic community of Mthatha and embark on a journey of educational and personal growth. Explore diverse disciplines, engage with renowned scholars, and contribute to cutting-edge research that addresses local and global challenges.',
+      'For those seeking employment opportunities, Mthatha offers a stimulating environment for professional development and research collaboration. Join institutions committed to academic excellence and make a meaningful impact on society.',
+    ],
+    image_url: '/cities/academic-jobs-in-mthatha.jpg',
+    alt: 'Aerial view of Mthatha, South Africa',
+  },
 
-  cityInfo: [
-      "Nestled in the Eastern Cape of South Africa, Mthatha stands as a beacon of intellectual pursuit and higher education excellence. Its diverse higher education landscape encompasses prestigious universities and colleges, offering a range of disciplines and opportunities for academic advancement.",
-      "With a rich cultural heritage and a commitment to scholarly excellence, Mthatha fosters an environment conducive to learning, innovation, and personal growth. Students and academics alike thrive in this dynamic city, contributing to its vibrant intellectual tapestry."
-  ],
-  uniList: [
-      "Walter Sisulu University",
-      "Mthatha Nursing College",
-      "Mthatha Technical College",
-      "etc."
-  ],
-  nobelInfo: [
-      "While Mthatha may not have produced Nobel Laureates directly, its educational institutions have played a vital role in shaping global knowledge and innovation. The city celebrates the achievements of Nobel Laureates associated with South Africa, such as Nelson Mandela, who was honored with the Nobel Peace Prize for his tireless efforts in dismantling apartheid and promoting reconciliation.",
-      "Mthatha's academic community continues to uphold the values of excellence and social progress, inspiring future generations to pursue groundbreaking research and contribute to the betterment of society."
-  ],
-  nobelList: ["Nelson Mandela: Peace"],
-  academicInfo: [
-      "Mthatha boasts a cadre of notable academics who have left an indelible mark on their respective fields. From pioneering research in healthcare to championing social justice causes, these academics embody the spirit of intellectual inquiry and service."
-  ],
-  academicList: [
-      "Dr. Thandi Ndlovu: Professor of Public Health",
-      "Prof. Xolani Mkhize: Chair of Social Sciences"
-  ],
-  promo: [
-      "Join the vibrant academic community of Mthatha and embark on a journey of educational and personal growth. Explore diverse disciplines, engage with renowned scholars, and contribute to cutting-edge research that addresses local and global challenges.",
-      "For those seeking employment opportunities, Mthatha offers a stimulating environment for professional development and research collaboration. Join institutions committed to academic excellence and make a meaningful impact on society."
-  ],
-  image_url: "/cities/mthatha.jpg",
-  alt: "Aerial view of Mthatha, South Africa"
-},
+  {
+    title: 'Pietermaritzburg: Educational Hub of KwaZulu-Natal',
+    h1: "Exploring Pietermaritzburg's Academic Landscape",
+    slug: 'pietermaritzburg-educational-hub',
+    city: 'Pietermaritzburg',
+    region: 'KwaZulu-Natal',
+    country: 'South Africa',
+    description:
+      "Discover Pietermaritzburg's rich academic scene, home to renowned universities and colleges. Explore its Nobel Laureates, notable academics, and compelling reasons for attending or working in this vibrant educational hub.",
+    keywords:
+      'Pietermaritzburg, KwaZulu-Natal, universities, colleges, education, Nobel Laureates, academics',
 
-{
-  title: "Pietermaritzburg: Educational Hub of KwaZulu-Natal",
-  h1: "Exploring Pietermaritzburg's Academic Landscape",
-  slug: "pietermaritzburg-educational-hub",
-  city: "Pietermaritzburg",
-  region: "KwaZulu-Natal",
-  country: "South Africa",
-  description: "Discover Pietermaritzburg's rich academic scene, home to renowned universities and colleges. Explore its Nobel Laureates, notable academics, and compelling reasons for attending or working in this vibrant educational hub.",
-  keywords: "Pietermaritzburg, KwaZulu-Natal, universities, colleges, education, Nobel Laureates, academics",
+    cityInfo: [
+      'Pietermaritzburg, nestled in KwaZulu-Natal, South Africa, boasts a diverse higher education landscape, with institutions like Durban University of Technology and University of KwaZulu-Natal - Pietermaritzburg Campus. It serves as a beacon of learning and innovation.',
+      "The city's academic community fosters collaboration and cultural exchange, enriching both local and global perspectives on education and research.",
+    ],
+    uniList: [
+      'Durban University of Technology',
+      'University of KwaZulu-Natal - Pietermaritzburg Campus',
+    ],
+    nobelInfo: [
+      'While Pietermaritzburg has yet to claim Nobel Laureates, its institutions contribute significantly to knowledge and innovation. Collaborations with global partners and research initiatives pave the way for future breakthroughs in diverse fields.',
+      '',
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Pietermaritzburg's academic community boasts notable scholars across various disciplines. Professors like Dr. Thabo Msibi, known for their work in education and social justice, and Dr. Suren Pillay, a political economist, exemplify the city's commitment to scholarly excellence.",
+    ],
+    academicList: [
+      'Dr. Thabo Msibi: Professor of Education',
+      'Dr. Suren Pillay: Professor of Political Economy',
+    ],
+    promo: [
+      'Pietermaritzburg offers unparalleled educational and personal growth opportunities. Its institutions provide a supportive environment for students to explore their passions and develop critical skills for success in a rapidly changing world. Join us in shaping the future through education and research in Pietermaritzburg!',
+      'For professionals, Pietermaritzburg presents a dynamic landscape ripe with research collaborations and career advancement prospects. Engage with leading experts in your field, contribute to groundbreaking research, and make a meaningful impact on society.',
+    ],
+    image_url: '/cities/academic-jobs-in-pietermaritzburg.jpg',
+    alt: 'Pietermaritzburg skyline overlooking the city',
+  },
 
-  cityInfo: [
-      "Pietermaritzburg, nestled in KwaZulu-Natal, South Africa, boasts a diverse higher education landscape, with institutions like Durban University of Technology and University of KwaZulu-Natal - Pietermaritzburg Campus. It serves as a beacon of learning and innovation.",
-      "The city's academic community fosters collaboration and cultural exchange, enriching both local and global perspectives on education and research."
-  ],
-  uniList: [
-      "Durban University of Technology",
-      "University of KwaZulu-Natal - Pietermaritzburg Campus"
-  ],
-  nobelInfo: [
-      "While Pietermaritzburg has yet to claim Nobel Laureates, its institutions contribute significantly to knowledge and innovation. Collaborations with global partners and research initiatives pave the way for future breakthroughs in diverse fields.",
-      ""
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Pietermaritzburg's academic community boasts notable scholars across various disciplines. Professors like Dr. Thabo Msibi, known for their work in education and social justice, and Dr. Suren Pillay, a political economist, exemplify the city's commitment to scholarly excellence."
-  ],
-  academicList: [
-      "Dr. Thabo Msibi: Professor of Education",
-      "Dr. Suren Pillay: Professor of Political Economy"
-  ],
-  promo: [
-      "Pietermaritzburg offers unparalleled educational and personal growth opportunities. Its institutions provide a supportive environment for students to explore their passions and develop critical skills for success in a rapidly changing world. Join us in shaping the future through education and research in Pietermaritzburg!",
-      "For professionals, Pietermaritzburg presents a dynamic landscape ripe with research collaborations and career advancement prospects. Engage with leading experts in your field, contribute to groundbreaking research, and make a meaningful impact on society."
-  ],
-  image_url: "/cities/pietermaritzburg.jpg",
-  alt: "Pietermaritzburg skyline overlooking the city"
-},
+  {
+    title: 'Pinetown: Education Hub of KwaZulu-Natal',
+    h1: "Exploring Pinetown's Educational Landscape",
+    slug: 'pinetown-education-hub-kwazulu-natal',
+    city: 'Pinetown',
+    region: 'KwaZulu-Natal',
+    country: 'South Africa',
+    description:
+      "Discover Pinetown's vibrant academic scene, boasting a diverse range of universities and colleges. Learn about Nobel Laureates, notable academics, and compelling reasons to engage with this dynamic educational hub.",
+    keywords:
+      'Pinetown, KwaZulu-Natal, South Africa, universities, colleges, education, Nobel Laureates, academics',
 
-{
-  title: "Pinetown: Education Hub of KwaZulu-Natal",
-  h1: "Exploring Pinetown's Educational Landscape",
-  slug: "pinetown-education-hub-kwazulu-natal",
-  city: "Pinetown",
-  region: "KwaZulu-Natal",
-  country: "South Africa",
-  description: "Discover Pinetown's vibrant academic scene, boasting a diverse range of universities and colleges. Learn about Nobel Laureates, notable academics, and compelling reasons to engage with this dynamic educational hub.",
-  keywords: "Pinetown, KwaZulu-Natal, South Africa, universities, colleges, education, Nobel Laureates, academics",
+    cityInfo: [
+      'Nestled in the heart of KwaZulu-Natal, Pinetown shines as an educational beacon, offering a plethora of higher education institutions. From its esteemed University of KwaZulu-Natal - Edgewood Campus to specialized colleges, Pinetown nurtures academic diversity and excellence.',
+      "With a focus on fostering inclusivity and innovation, Pinetown's educational landscape provides students with a rich tapestry of learning experiences, reflecting the vibrant culture and spirit of South Africa.",
+    ],
+    uniList: [
+      'University of KwaZulu-Natal - Edgewood Campus',
+      'Vaal University of Technology - Pinetown Campus',
+      'Coastal KZN TVET College - Swinton Campus',
+      'Durban University of Technology - Riverside Campus',
+      'etc.',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Pinetown offers an unparalleled environment for educational and personal growth. Whether you're a student seeking diverse academic opportunities or a professional aiming to engage in cutting-edge research, Pinetown's universities and colleges provide the ideal platform.",
+      'With a commitment to excellence and a vibrant community of scholars, Pinetown beckons individuals to explore its educational offerings and contribute to its legacy of knowledge and innovation.',
+    ],
+    image_url: '/cities/academic-jobs-in-pinetown.jpg',
+    alt: 'Aerial view of Pinetown, South Africa',
+  },
 
+  {
+    title: 'Port Elizabeth: Hub of Higher Education',
+    h1: "Exploring Port Elizabeth's Academic Landscape",
+    slug: 'port-elizabeth-higher-education',
+    city: 'Port Elizabeth',
+    region: 'Eastern Cape',
+    country: 'South Africa',
+    description:
+      "Discover Port Elizabeth's vibrant academic community, home to renowned universities and colleges. Learn about Nobel Laureates, notable academics, and compelling reasons to attend or work at institutions in this coastal city.",
+    keywords:
+      'Port Elizabeth, higher education, universities, colleges, Nobel Laureates, academics, South Africa',
 
-  cityInfo: [
-    "Nestled in the heart of KwaZulu-Natal, Pinetown shines as an educational beacon, offering a plethora of higher education institutions. From its esteemed University of KwaZulu-Natal - Edgewood Campus to specialized colleges, Pinetown nurtures academic diversity and excellence.",
-    "With a focus on fostering inclusivity and innovation, Pinetown's educational landscape provides students with a rich tapestry of learning experiences, reflecting the vibrant culture and spirit of South Africa."
-  ],
-  uniList: [
-    "University of KwaZulu-Natal - Edgewood Campus",
-    "Vaal University of Technology - Pinetown Campus",
-    "Coastal KZN TVET College - Swinton Campus",
-    "Durban University of Technology - Riverside Campus",
-    "etc."
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Pinetown offers an unparalleled environment for educational and personal growth. Whether you're a student seeking diverse academic opportunities or a professional aiming to engage in cutting-edge research, Pinetown's universities and colleges provide the ideal platform.",
-    "With a commitment to excellence and a vibrant community of scholars, Pinetown beckons individuals to explore its educational offerings and contribute to its legacy of knowledge and innovation."
-  ],
-  image_url: "/cities/pinetown.jpg",
-  alt: "Aerial view of Pinetown, South Africa"
-},
+    cityInfo: [
+      "Nestled along South Africa's eastern coast, Port Elizabeth boasts a dynamic higher education landscape. With its picturesque coastal views and diverse cultural heritage, the city offers an enriching environment for students.",
+      "Home to Nelson Mandela University, Port Elizabeth fosters innovation and academic excellence. Its institutions cater to a wide range of disciplines, including arts, sciences, and technology, reflecting the city's commitment to holistic education.​",
+    ],
+    uniList: [
+      'Nelson Mandela University',
+      'Varsity College Port Elizabeth',
+      'CTI Education Group Port Elizabeth',
+      'Pearson Institute of Higher Education - Port Elizabeth',
+    ],
+    nobelInfo: [
+      'While Port Elizabeth has yet to claim a Nobel Laureate, its academic community contributes significantly to global knowledge. Nelson Mandela University, named after the renowned statesman, emphasizes research and social impact, nurturing future leaders and change-makers.',
+      "Though not directly affiliated with Nobel Prizes, the university's commitment to addressing societal challenges aligns with the spirit of Nobel recognition, making it a pivotal institution in South Africa's academic landscape.",
+    ],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Port Elizabeth offers unparalleled educational and personal growth opportunities. With its focus on research and community engagement, institutions like Nelson Mandela University provide a transformative learning environment.',
+      "For professionals, Port Elizabeth's universities and colleges offer diverse career prospects and research opportunities. Whether in academia or industry, the city's commitment to innovation and excellence creates an inspiring atmosphere for personal and professional development.",
+    ],
+    image_url: '/cities/academic-jobs-in-port-elizabeth.jpg',
+    alt: 'Port Elizabeth, South Africa - Coastal cityscape',
+  },
 
-{
-  title: "Port Elizabeth: Hub of Higher Education",
-  h1: "Exploring Port Elizabeth's Academic Landscape",
-  slug: "port-elizabeth-higher-education",
-  city: "Port Elizabeth",
-  region: "Eastern Cape",
-  country: "South Africa",
-  description: "Discover Port Elizabeth's vibrant academic community, home to renowned universities and colleges. Learn about Nobel Laureates, notable academics, and compelling reasons to attend or work at institutions in this coastal city.",
-  keywords: "Port Elizabeth, higher education, universities, colleges, Nobel Laureates, academics, South Africa",
+  {
+    title: 'Potchefstroom: Hub of Higher Learning',
+    h1: "Exploring Potchefstroom's Academic Landscape",
+    slug: 'potchefstroom-hub-of-higher-learning',
+    city: 'Potchefstroom',
+    region: 'North West Province',
+    country: 'South Africa',
+    description:
+      "Discover Potchefstroom's vibrant academic environment, home to prestigious universities and colleges, renowned academics, and groundbreaking research. Explore the city's legacy of excellence and innovation in higher education.",
+    keywords:
+      'Potchefstroom, North-West University, higher education, universities, colleges, academics, research',
 
-  cityInfo: [
-    "Nestled along South Africa's eastern coast, Port Elizabeth boasts a dynamic higher education landscape. With its picturesque coastal views and diverse cultural heritage, the city offers an enriching environment for students.",
-    "Home to Nelson Mandela University, Port Elizabeth fosters innovation and academic excellence. Its institutions cater to a wide range of disciplines, including arts, sciences, and technology, reflecting the city's commitment to holistic education.​"
-  ],
-  uniList: [
-    "Nelson Mandela University",
-    "Varsity College Port Elizabeth",
-    "CTI Education Group Port Elizabeth",
-    "Pearson Institute of Higher Education - Port Elizabeth"
-  ],
-  nobelInfo: [
-    "While Port Elizabeth has yet to claim a Nobel Laureate, its academic community contributes significantly to global knowledge. Nelson Mandela University, named after the renowned statesman, emphasizes research and social impact, nurturing future leaders and change-makers.",
-    "Though not directly affiliated with Nobel Prizes, the university's commitment to addressing societal challenges aligns with the spirit of Nobel recognition, making it a pivotal institution in South Africa's academic landscape."
-  ],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Port Elizabeth offers unparalleled educational and personal growth opportunities. With its focus on research and community engagement, institutions like Nelson Mandela University provide a transformative learning environment.",
-    "For professionals, Port Elizabeth's universities and colleges offer diverse career prospects and research opportunities. Whether in academia or industry, the city's commitment to innovation and excellence creates an inspiring atmosphere for personal and professional development."
-  ],
-  image_url: "/cities/port-elizabeth.jpg",
-  alt: "Port Elizabeth, South Africa - Coastal cityscape"
-},
+    cityInfo: [
+      'Potchefstroom, located in the North West Province of South Africa, is a dynamic academic center renowned for its diverse higher education institutions and rich cultural heritage. Home to the esteemed North-West University (NWU), the city offers a stimulating environment for intellectual growth and innovation, attracting students and scholars from across the globe.',
+      'With a blend of modern facilities and historical charm, Potchefstroom provides a unique setting for academic pursuits, fostering collaboration and creativity among its vibrant student community.',
+    ],
+    uniList: [
+      'North-West University (NWU)',
+      'Potchefstroom Campus of the NWU',
+      'Sedibeng Campus of the NWU',
+      'Theological Seminary Potchefstroom',
+      'etc.',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Potchefstroom offers unparalleled educational and personal growth opportunities through its top-tier universities and colleges. With world-class faculty, state-of-the-art facilities, and a commitment to excellence, students can engage in transformative learning experiences that prepare them for successful careers and global citizenship.',
+      'For professionals seeking employment, Potchefstroom provides a fertile ground for cutting-edge research and interdisciplinary collaboration. Join a vibrant academic community dedicated to pushing the boundaries of knowledge and making meaningful contributions to society.',
+    ],
+    image_url: '/cities/academic-jobs-in-ptchesfstroom.jpg',
+    alt: 'Potchefstroom cityscape with university buildings',
+  },
 
-{
-  title: "Potchefstroom: Hub of Higher Learning",
-  h1: "Exploring Potchefstroom's Academic Landscape",
-  slug: "potchefstroom-hub-of-higher-learning",
-  city: "Potchefstroom",
-  region: "North West Province",
-  country: "South Africa",
-  description: "Discover Potchefstroom's vibrant academic environment, home to prestigious universities and colleges, renowned academics, and groundbreaking research. Explore the city's legacy of excellence and innovation in higher education.",
-  keywords: "Potchefstroom, North-West University, higher education, universities, colleges, academics, research",
-
-  cityInfo: [
-      "Potchefstroom, located in the North West Province of South Africa, is a dynamic academic center renowned for its diverse higher education institutions and rich cultural heritage. Home to the esteemed North-West University (NWU), the city offers a stimulating environment for intellectual growth and innovation, attracting students and scholars from across the globe.",
-      "With a blend of modern facilities and historical charm, Potchefstroom provides a unique setting for academic pursuits, fostering collaboration and creativity among its vibrant student community."
-  ],
-  uniList: [
-      "North-West University (NWU)",
-      "Potchefstroom Campus of the NWU",
-      "Sedibeng Campus of the NWU",
-      "Theological Seminary Potchefstroom",
-      "etc."
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-      "Potchefstroom offers unparalleled educational and personal growth opportunities through its top-tier universities and colleges. With world-class faculty, state-of-the-art facilities, and a commitment to excellence, students can engage in transformative learning experiences that prepare them for successful careers and global citizenship.",
-      "For professionals seeking employment, Potchefstroom provides a fertile ground for cutting-edge research and interdisciplinary collaboration. Join a vibrant academic community dedicated to pushing the boundaries of knowledge and making meaningful contributions to society."
-  ],
-  image_url: "/cities/ptchesfstroom.jpg",
-  alt: "Potchefstroom cityscape with university buildings"
-},
-
-{
-  title: "Stellenbosch: South Africa's Academic Gem",
-  h1: "Discover Stellenbosch's Academic Excellence",
-  slug: "stellenbosch-academic-excellence",
-  city: "Stellenbosch",
-  region: "Western Cape",
-  country: "South Africa",
-  description: "Explore the vibrant academic landscape of Stellenbosch, South Africa, boasting Nobel Laureates, prestigious institutions, and renowned academics. Uncover why this city is a prime destination for both learning and research opportunities.",
-  keywords: "Stellenbosch, South Africa, universities, colleges, academics, Nobel Laureates, education, research",
-  cityInfo: [
-      "Nestled in the Western Cape of South Africa, Stellenbosch is renowned for its thriving academic environment. The city pulsates with intellectual vigor, supported by its array of esteemed universities and colleges, making it a hub for educational and research endeavors​.",
-      "Stellenbosch's higher education landscape is marked by its diversity, offering programs ranging from the arts and humanities to science and technology. Its institutions foster a culture of innovation and excellence, attracting students and scholars from around the globe​."
-  ],
-  uniList: [
-      "Stellenbosch University",
-      "University of Cape Town (Stellenbosch Campus)",
-      "Cape Peninsula University of Technology (CPUT) - Wellington Campus",
-      "Stellenbosch Academy of Design and Photography"
-  ],
-  nobelInfo: [
+  {
+    title: "Stellenbosch: South Africa's Academic Gem",
+    h1: "Discover Stellenbosch's Academic Excellence",
+    slug: 'stellenbosch-academic-excellence',
+    city: 'Stellenbosch',
+    region: 'Western Cape',
+    country: 'South Africa',
+    description:
+      'Explore the vibrant academic landscape of Stellenbosch, South Africa, boasting Nobel Laureates, prestigious institutions, and renowned academics. Uncover why this city is a prime destination for both learning and research opportunities.',
+    keywords:
+      'Stellenbosch, South Africa, universities, colleges, academics, Nobel Laureates, education, research',
+    cityInfo: [
+      'Nestled in the Western Cape of South Africa, Stellenbosch is renowned for its thriving academic environment. The city pulsates with intellectual vigor, supported by its array of esteemed universities and colleges, making it a hub for educational and research endeavors​.',
+      "Stellenbosch's higher education landscape is marked by its diversity, offering programs ranging from the arts and humanities to science and technology. Its institutions foster a culture of innovation and excellence, attracting students and scholars from around the globe​.",
+    ],
+    uniList: [
+      'Stellenbosch University',
+      'University of Cape Town (Stellenbosch Campus)',
+      'Cape Peninsula University of Technology (CPUT) - Wellington Campus',
+      'Stellenbosch Academy of Design and Photography',
+    ],
+    nobelInfo: [
       "While Stellenbosch itself hasn't produced Nobel Laureates, it has connections to impactful individuals. Notably, Stellenbosch University alumni have made significant contributions in various fields. Although not Nobel Laureates, their influence resonates globally, shaping discourse and innovation.",
-      "These alumni excel in fields like medicine, science, and literature, embodying the spirit of inquiry and discovery fostered by Stellenbosch University. Additionally, the university's research initiatives continue to make strides, potentially laying the groundwork for future laureates​."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Stellenbosch boasts a cadre of distinguished academics whose research spans disciplines and drives societal change. From pioneering medical breakthroughs to groundbreaking sociopolitical analyses, these scholars contribute significantly to global knowledge and understanding.",
-      "Notable academics include Dr. Mamokgethi Phakeng, a renowned mathematician advocating for inclusive education, and Dr. Jonathan Jansen, a respected educator and commentator on South African society. Their work exemplifies Stellenbosch's commitment to academic excellence and social progress​."
-  ],
-  academicList: [
-      "Dr. Mamokgethi Phakeng: Professor of Mathematics",
-      "Dr. Jonathan Jansen: Professor of Education"
-  ],
-  promo: [
-      "Stellenbosch offers unparalleled opportunities for personal and intellectual growth. Its vibrant academic community fosters an environment of innovation and collaboration, empowering students to pursue their passions and make meaningful contributions to society.",
-      "For professionals, Stellenbosch provides a fertile ground for research and career advancement. With access to cutting-edge facilities and esteemed colleagues, joining the academic community in Stellenbosch opens doors to exciting possibilities and impactful endeavors​."
-  ],
-  image_url: "/cities/stellenbosch.jpg",
-  alt: "Stellenbosch, South Africa - Academic Excellence"
-},
+      "These alumni excel in fields like medicine, science, and literature, embodying the spirit of inquiry and discovery fostered by Stellenbosch University. Additionally, the university's research initiatives continue to make strides, potentially laying the groundwork for future laureates​.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      'Stellenbosch boasts a cadre of distinguished academics whose research spans disciplines and drives societal change. From pioneering medical breakthroughs to groundbreaking sociopolitical analyses, these scholars contribute significantly to global knowledge and understanding.',
+      "Notable academics include Dr. Mamokgethi Phakeng, a renowned mathematician advocating for inclusive education, and Dr. Jonathan Jansen, a respected educator and commentator on South African society. Their work exemplifies Stellenbosch's commitment to academic excellence and social progress​.",
+    ],
+    academicList: [
+      'Dr. Mamokgethi Phakeng: Professor of Mathematics',
+      'Dr. Jonathan Jansen: Professor of Education',
+    ],
+    promo: [
+      'Stellenbosch offers unparalleled opportunities for personal and intellectual growth. Its vibrant academic community fosters an environment of innovation and collaboration, empowering students to pursue their passions and make meaningful contributions to society.',
+      'For professionals, Stellenbosch provides a fertile ground for research and career advancement. With access to cutting-edge facilities and esteemed colleagues, joining the academic community in Stellenbosch opens doors to exciting possibilities and impactful endeavors​.',
+    ],
+    image_url: '/cities/academic-jobs-in-stellenbosch.jpg',
+    alt: 'Stellenbosch, South Africa - Academic Excellence',
+  },
 
-{
-  title: "Thohoyandou: Hub of Higher Education and Innovation",
-  h1: "Exploring Thohoyandou's Academic Landscape",
-  slug: "thohoyandou-higher-education-innovation",
-  city: "Thohoyandou",
-  region: "Limpopo Province",
-  country: "South Africa",
-  description: "Discover the vibrant academic environment of Thohoyandou, home to esteemed universities and colleges. Uncover the city's contributions to global knowledge, its notable academics, and the compelling reasons to pursue education or employment here.",
-  keywords: "Thohoyandou, higher education, universities, colleges, academics, Nobel Laureates, South Africa",
-  cityInfo: [
+  {
+    title: 'Thohoyandou: Hub of Higher Education and Innovation',
+    h1: "Exploring Thohoyandou's Academic Landscape",
+    slug: 'thohoyandou-higher-education-innovation',
+    city: 'Thohoyandou',
+    region: 'Limpopo Province',
+    country: 'South Africa',
+    description:
+      "Discover the vibrant academic environment of Thohoyandou, home to esteemed universities and colleges. Uncover the city's contributions to global knowledge, its notable academics, and the compelling reasons to pursue education or employment here.",
+    keywords:
+      'Thohoyandou, higher education, universities, colleges, academics, Nobel Laureates, South Africa',
+    cityInfo: [
       "Thohoyandou, nestled in South Africa's Limpopo Province, thrives as a center for higher education and innovation. Its academic landscape is diverse, reflecting a blend of traditional knowledge and contemporary advancements.",
-      "The city's universities and colleges foster intellectual growth and contribute significantly to local and global knowledge economies, making Thohoyandou a pivotal hub for learning and research."
-  ],
-  uniList: [
-      "University of Venda",
-      "Vhembe TVET College",
-      "South African College of Applied Psychology (SACAP)",
-      "Makgoka High School",
-      "Thengwe High School"
-  ],
-  nobelInfo: [
-      "While Thohoyandou hasn't produced Nobel Laureates yet, its academic institutions play a crucial role in fostering future innovators and leaders. The University of Venda, for instance, emphasizes research in areas like sustainable development, health sciences, and indigenous knowledge systems, laying the groundwork for potential future laureates."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Thohoyandou boasts a cadre of notable academics contributing significantly to their respective fields. From the University of Venda, scholars like Professor Peter Mbati, renowned for his research in environmental science and sustainable development, exemplify the city's intellectual prowess."
-  ],
-  academicList: [
-      "Professor Peter Mbati: Environmental Science and Sustainable Development"
-  ],
-  promo: [
-      "Experience the vibrant academic community of Thohoyandou, where intellectual curiosity meets innovation. Whether you're a student seeking holistic education or a professional aiming for impactful research opportunities, the city offers a stimulating environment for growth and achievement. Join us in shaping the future of knowledge and discovery."
-  ],
-  image_url: "/cities/thohoyandou.jpg",
-  alt: "Thohoyandou's bustling academic environment"
-},
+      "The city's universities and colleges foster intellectual growth and contribute significantly to local and global knowledge economies, making Thohoyandou a pivotal hub for learning and research.",
+    ],
+    uniList: [
+      'University of Venda',
+      'Vhembe TVET College',
+      'South African College of Applied Psychology (SACAP)',
+      'Makgoka High School',
+      'Thengwe High School',
+    ],
+    nobelInfo: [
+      "While Thohoyandou hasn't produced Nobel Laureates yet, its academic institutions play a crucial role in fostering future innovators and leaders. The University of Venda, for instance, emphasizes research in areas like sustainable development, health sciences, and indigenous knowledge systems, laying the groundwork for potential future laureates.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Thohoyandou boasts a cadre of notable academics contributing significantly to their respective fields. From the University of Venda, scholars like Professor Peter Mbati, renowned for his research in environmental science and sustainable development, exemplify the city's intellectual prowess.",
+    ],
+    academicList: [
+      'Professor Peter Mbati: Environmental Science and Sustainable Development',
+    ],
+    promo: [
+      "Experience the vibrant academic community of Thohoyandou, where intellectual curiosity meets innovation. Whether you're a student seeking holistic education or a professional aiming for impactful research opportunities, the city offers a stimulating environment for growth and achievement. Join us in shaping the future of knowledge and discovery.",
+    ],
+    image_url: '/cities/academic-jobs-in-thohoyandou.jpg',
+    alt: "Thohoyandou's bustling academic environment",
+  },
 
-{
-  title: "Vanderbijlpark: Hub of Higher Education Excellence",
-  h1: "Exploring Education in Vanderbijlpark",
-  slug: "vanderbijlpark-higher-education",
-  city: "Vanderbijlpark",
-  region: "Gauteng",
-  country: "South Africa",
-  description: "Discover the academic prowess of Vanderbijlpark with its esteemed universities, notable academics, and contributions to global knowledge. Explore educational and employment opportunities in this vibrant city.",
-  keywords: "Vanderbijlpark education, universities in Vanderbijlpark, higher education in South Africa, academic excellence, career opportunities in education",
+  {
+    title: 'Vanderbijlpark: Hub of Higher Education Excellence',
+    h1: 'Exploring Education in Vanderbijlpark',
+    slug: 'vanderbijlpark-higher-education',
+    city: 'Vanderbijlpark',
+    region: 'Gauteng',
+    country: 'South Africa',
+    description:
+      'Discover the academic prowess of Vanderbijlpark with its esteemed universities, notable academics, and contributions to global knowledge. Explore educational and employment opportunities in this vibrant city.',
+    keywords:
+      'Vanderbijlpark education, universities in Vanderbijlpark, higher education in South Africa, academic excellence, career opportunities in education',
 
-  cityInfo: [
-    "Vanderbijlpark, situated in Gauteng, South Africa, is a thriving center of higher education, boasting renowned universities and colleges.",
-    "The city's educational landscape offers diversity and strengths, providing students with comprehensive learning experiences and fostering innovation and intellectual growth."
-  ],
-  uniList: [
-    "North-West University - Vaal Triangle Campus",
-    "Vaal University of Technology"
-  ],
-  nobelInfo: [
-    "",
-    ""
-  ],
-  nobelList: [],
-  academicInfo: [
-    "Although there are no Nobel Laureates associated with Vanderbijlpark, the city hosts many notable academics who contribute significantly to their fields.",
-    "These academics enrich the educational environment, inspiring students and driving research and innovation in various disciplines."
-  ],
-  academicList: [],
-  promo: [
-    "Experience the academic excellence of Vanderbijlpark's universities and colleges, providing unparalleled educational opportunities.",
-    "Join a vibrant academic community that fosters innovation, research, and personal growth, offering rewarding career prospects and professional development."
-  ],
-  image_url: "/cities/vanderbiklpark.jpg",
-  alt: "Vanderbijlpark cityscape overlooking the river"
-},
+    cityInfo: [
+      'Vanderbijlpark, situated in Gauteng, South Africa, is a thriving center of higher education, boasting renowned universities and colleges.',
+      "The city's educational landscape offers diversity and strengths, providing students with comprehensive learning experiences and fostering innovation and intellectual growth.",
+    ],
+    uniList: [
+      'North-West University - Vaal Triangle Campus',
+      'Vaal University of Technology',
+    ],
+    nobelInfo: ['', ''],
+    nobelList: [],
+    academicInfo: [
+      'Although there are no Nobel Laureates associated with Vanderbijlpark, the city hosts many notable academics who contribute significantly to their fields.',
+      'These academics enrich the educational environment, inspiring students and driving research and innovation in various disciplines.',
+    ],
+    academicList: [],
+    promo: [
+      "Experience the academic excellence of Vanderbijlpark's universities and colleges, providing unparalleled educational opportunities.",
+      'Join a vibrant academic community that fosters innovation, research, and personal growth, offering rewarding career prospects and professional development.',
+    ],
+    image_url: '/cities/academic-jobs-in-vanderbiklpark.jpg',
+    alt: 'Vanderbijlpark cityscape overlooking the river',
+  },
 
-{
-  title: "Westville: Academic Excellence and Innovation Hub",
-  h1: "Unlocking the Potential: Westville's Higher Education Landscape",
-  slug: "westville-academic-excellence",
-  city: "Westville",
-  region: "KwaZulu-Natal",
-  country: "South Africa",
-  description: "Discover Westville, a city pulsating with intellectual vigor and academic brilliance. Delve into its renowned universities, notable academics, and transformative research, shaping the educational and research frontier in South Africa.",
-  keywords: "Westville, KwaZulu-Natal, South Africa, universities, colleges, academics, Nobel Laureates",
+  {
+    title: 'Westville: Academic Excellence and Innovation Hub',
+    h1: "Unlocking the Potential: Westville's Higher Education Landscape",
+    slug: 'westville-academic-excellence',
+    city: 'Westville',
+    region: 'KwaZulu-Natal',
+    country: 'South Africa',
+    description:
+      'Discover Westville, a city pulsating with intellectual vigor and academic brilliance. Delve into its renowned universities, notable academics, and transformative research, shaping the educational and research frontier in South Africa.',
+    keywords:
+      'Westville, KwaZulu-Natal, South Africa, universities, colleges, academics, Nobel Laureates',
 
-  cityInfo: [
-    "Nestled in the vibrant province of KwaZulu-Natal, Westville boasts a diverse higher education landscape. Its universities and colleges offer a range of disciplines, from sciences to humanities, catering to the academic aspirations of students nationwide.",
-    "The city's academic institutions foster a culture of innovation and excellence, contributing significantly to South Africa's intellectual capital and societal development."
-  ],
-  uniList: [
-    "University of KwaZulu-Natal - Westville Campus",
-    "Varsity College Westville",
-    "Damelin Westville",
-    "International Hotel School - Westville Campus"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Embark on a journey of educational and personal growth at Westville's esteemed institutions. Benefit from world-class faculty, cutting-edge research facilities, and a vibrant campus life. Whether you're a student seeking academic excellence or a researcher aiming to make a difference, Westville offers boundless opportunities for growth and success."
-  ],
-  image_url: "/cities/westvile.jpg",
-  alt: "Aerial view of Westville showcasing its academic institutions and vibrant community."
-},
+    cityInfo: [
+      'Nestled in the vibrant province of KwaZulu-Natal, Westville boasts a diverse higher education landscape. Its universities and colleges offer a range of disciplines, from sciences to humanities, catering to the academic aspirations of students nationwide.',
+      "The city's academic institutions foster a culture of innovation and excellence, contributing significantly to South Africa's intellectual capital and societal development.",
+    ],
+    uniList: [
+      'University of KwaZulu-Natal - Westville Campus',
+      'Varsity College Westville',
+      'Damelin Westville',
+      'International Hotel School - Westville Campus',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Embark on a journey of educational and personal growth at Westville's esteemed institutions. Benefit from world-class faculty, cutting-edge research facilities, and a vibrant campus life. Whether you're a student seeking academic excellence or a researcher aiming to make a difference, Westville offers boundless opportunities for growth and success.",
+    ],
+    image_url: '/cities/academic-jobs-in-westvile.jpg',
+    alt: 'Aerial view of Westville showcasing its academic institutions and vibrant community.',
+  },
 
-{
-  title: "Auburn, Alabama: Hub of Academic Excellence",
-  h1: "Discover Auburn, Alabama's Academic Landscape",
-  slug: "auburn-alabama-academic-landscape",
-  city: "Auburn",
-  region: "Alabama",
-  country: "United States",
-  description: "Explore Auburn, Alabama's vibrant academic scene with its prestigious universities and colleges, renowned Nobel Laureates, and distinguished academics. Discover why attending or working in this city offers unparalleled opportunities for personal growth and professional development.",
-  keywords: "Auburn Alabama, universities, colleges, academic excellence, Nobel Laureates, academics, employment opportunities, educational growth",
+  {
+    title: 'Auburn, Alabama: Hub of Academic Excellence',
+    h1: "Discover Auburn, Alabama's Academic Landscape",
+    slug: 'auburn-alabama-academic-landscape',
+    city: 'Auburn',
+    region: 'Alabama',
+    country: 'United States',
+    description:
+      "Explore Auburn, Alabama's vibrant academic scene with its prestigious universities and colleges, renowned Nobel Laureates, and distinguished academics. Discover why attending or working in this city offers unparalleled opportunities for personal growth and professional development.",
+    keywords:
+      'Auburn Alabama, universities, colleges, academic excellence, Nobel Laureates, academics, employment opportunities, educational growth',
 
-  cityInfo: [
-    "Auburn, Alabama, nestled in the heart of the state, boasts a thriving academic community anchored by Auburn University. This institution, renowned for its research prowess and commitment to student success, enriches the city's cultural and intellectual fabric. Alongside Auburn University, the city hosts other esteemed colleges, fostering diversity and academic collaboration within the region.",
-    "The city's higher education landscape not only provides exceptional learning opportunities but also contributes significantly to the local economy and innovation ecosystem. Auburn's commitment to academic excellence and community engagement makes it a compelling destination for students, researchers, and professionals alike."
-  ],
-  uniList: [
-    "Auburn University",
-    "Southern Union State Community College",
-    "Tuskegee University",
-    "Amridge University"
-  ],
-  nobelInfo: [
-    "While Auburn, Alabama, hasn't yet produced Nobel Laureates, its academic institutions have contributed to global knowledge and innovation. Auburn University's distinguished faculty members engage in groundbreaking research across various disciplines, pushing the boundaries of human understanding and addressing pressing societal challenges.",
-    "Although the city awaits its Nobel Laureates, the collaborative and innovative spirit within its academic institutions positions it as a potential hub for future groundbreaking discoveries and contributions to humanity."
-  ],
-  nobelList: [],
-  academicInfo: [
-    "Auburn, Alabama, is home to numerous notable academics whose expertise spans a wide range of disciplines. From accomplished researchers pushing the boundaries of scientific inquiry to dedicated educators shaping the minds of future generations, the city's academic community thrives on excellence and innovation."
-  ],
-  academicList: [],
-  promo: [
-    "Auburn, Alabama, offers unparalleled opportunities for educational and personal growth, with its renowned universities and colleges providing a supportive environment for students to excel. Whether pursuing undergraduate studies, graduate research, or professional development, the city's academic institutions foster a culture of innovation and discovery, preparing individuals for success in an ever-evolving world.",
-    "For those seeking employment, Auburn's academic landscape presents diverse prospects across teaching, research, and administrative roles. With access to state-of-the-art facilities and collaborative research initiatives, working in Auburn offers professionals the chance to make meaningful contributions to their fields while enjoying a vibrant community and high quality of life."
-  ],
-  image_url: "/cities/auburn-alabama.jpg",
-  alt: "Auburn, Alabama skyline at dusk"
-},
+    cityInfo: [
+      "Auburn, Alabama, nestled in the heart of the state, boasts a thriving academic community anchored by Auburn University. This institution, renowned for its research prowess and commitment to student success, enriches the city's cultural and intellectual fabric. Alongside Auburn University, the city hosts other esteemed colleges, fostering diversity and academic collaboration within the region.",
+      "The city's higher education landscape not only provides exceptional learning opportunities but also contributes significantly to the local economy and innovation ecosystem. Auburn's commitment to academic excellence and community engagement makes it a compelling destination for students, researchers, and professionals alike.",
+    ],
+    uniList: [
+      'Auburn University',
+      'Southern Union State Community College',
+      'Tuskegee University',
+      'Amridge University',
+    ],
+    nobelInfo: [
+      "While Auburn, Alabama, hasn't yet produced Nobel Laureates, its academic institutions have contributed to global knowledge and innovation. Auburn University's distinguished faculty members engage in groundbreaking research across various disciplines, pushing the boundaries of human understanding and addressing pressing societal challenges.",
+      'Although the city awaits its Nobel Laureates, the collaborative and innovative spirit within its academic institutions positions it as a potential hub for future groundbreaking discoveries and contributions to humanity.',
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Auburn, Alabama, is home to numerous notable academics whose expertise spans a wide range of disciplines. From accomplished researchers pushing the boundaries of scientific inquiry to dedicated educators shaping the minds of future generations, the city's academic community thrives on excellence and innovation.",
+    ],
+    academicList: [],
+    promo: [
+      "Auburn, Alabama, offers unparalleled opportunities for educational and personal growth, with its renowned universities and colleges providing a supportive environment for students to excel. Whether pursuing undergraduate studies, graduate research, or professional development, the city's academic institutions foster a culture of innovation and discovery, preparing individuals for success in an ever-evolving world.",
+      "For those seeking employment, Auburn's academic landscape presents diverse prospects across teaching, research, and administrative roles. With access to state-of-the-art facilities and collaborative research initiatives, working in Auburn offers professionals the chance to make meaningful contributions to their fields while enjoying a vibrant community and high quality of life.",
+    ],
+    image_url: '/cities/academic-jobs-in-auburn-alabama.jpg',
+    alt: 'Auburn, Alabama skyline at dusk',
+  },
 
+  {
+    title: 'Berkeley, California: Academic Hub of Innovation',
+    h1: "Exploring Berkeley's Academic Excellence",
+    slug: 'berkeley-california-academic-hub',
+    city: 'Berkeley',
+    region: 'California',
+    country: 'United States',
+    description:
+      "Discover Berkeley's vibrant academic landscape, Nobel Laureates, and renowned scholars. Explore opportunities for education and employment in this dynamic city.",
+    keywords:
+      'Berkeley California, universities, colleges, Nobel Laureates, academics, education, research',
 
-{
-  title: "Berkeley, California: Academic Hub of Innovation",
-  h1: "Exploring Berkeley's Academic Excellence",
-  slug: "berkeley-california-academic-hub",
-  city: "Berkeley",
-  region: "California",
-  country: "United States",
-  description: "Discover Berkeley's vibrant academic landscape, Nobel Laureates, and renowned scholars. Explore opportunities for education and employment in this dynamic city.",
-  keywords: "Berkeley California, universities, colleges, Nobel Laureates, academics, education, research",
-
-  cityInfo: [
-      "Berkeley, California, epitomizes academic diversity and excellence, boasting renowned universities and colleges at the forefront of innovation and research. From its stunning campus views to its bustling academic corridors, Berkeley is a melting pot of intellect and creativity.",
-      "Nestled in the heart of the San Francisco Bay Area, Berkeley's higher education institutions offer a unique blend of academic rigor, cultural diversity, and cutting-edge research opportunities, making it an unparalleled destination for students and scholars alike."
-  ],
-  uniList: [
-      "University of California, Berkeley",
-      "Berkeley City College",
-      "Zaytuna College",
-      "Wright Institute",
-      "Graduate Theological Union",
-      "And more..."
-  ],
-  nobelInfo: [
+    cityInfo: [
+      'Berkeley, California, epitomizes academic diversity and excellence, boasting renowned universities and colleges at the forefront of innovation and research. From its stunning campus views to its bustling academic corridors, Berkeley is a melting pot of intellect and creativity.',
+      "Nestled in the heart of the San Francisco Bay Area, Berkeley's higher education institutions offer a unique blend of academic rigor, cultural diversity, and cutting-edge research opportunities, making it an unparalleled destination for students and scholars alike.",
+    ],
+    uniList: [
+      'University of California, Berkeley',
+      'Berkeley City College',
+      'Zaytuna College',
+      'Wright Institute',
+      'Graduate Theological Union',
+      'And more...',
+    ],
+    nobelInfo: [
       "Berkeley's academic prowess shines through its Nobel Laureates, exemplifying groundbreaking contributions to various fields. Among them, the most notable is Jennifer Doudna, a UC Berkeley professor, honored for her pioneering work in CRISPR-Cas9 gene editing technology, revolutionizing genetic research and opening new avenues for medical treatments.",
-      "Furthermore, Saul Perlmutter, a physicist at UC Berkeley, received the Nobel Prize in Physics for his discovery of the accelerating expansion of the universe, shedding light on the mysteries of dark energy. These laureates underscore Berkeley's global impact on science and innovation."
-  ],
-  nobelList: ["Jennifer Doudna: Chemistry", "Saul Perlmutter: Physics"],
-  academicInfo: [
+      "Furthermore, Saul Perlmutter, a physicist at UC Berkeley, received the Nobel Prize in Physics for his discovery of the accelerating expansion of the universe, shedding light on the mysteries of dark energy. These laureates underscore Berkeley's global impact on science and innovation.",
+    ],
+    nobelList: ['Jennifer Doudna: Chemistry', 'Saul Perlmutter: Physics'],
+    academicInfo: [
       "Berkeley's academic legacy extends beyond Nobel Laureates to encompass a plethora of distinguished scholars and educators. From visionary scientists to influential thinkers, Berkeley's academic community fosters innovation and intellectual inquiry across disciplines.",
-      "Notable figures include Robert Reich, former U.S. Secretary of Labor and UC Berkeley professor, renowned for his expertise in economics and social policy, and Angela Davis, an esteemed activist and scholar whose work on race, gender, and criminal justice continues to inspire social change globally."
-  ],
-  academicList: [
-      "Robert Reich: Professor of Economics",
-      "Angela Davis: Distinguished Professor Emerita"
-  ],
-  promo: [
+      'Notable figures include Robert Reich, former U.S. Secretary of Labor and UC Berkeley professor, renowned for his expertise in economics and social policy, and Angela Davis, an esteemed activist and scholar whose work on race, gender, and criminal justice continues to inspire social change globally.',
+    ],
+    academicList: [
+      'Robert Reich: Professor of Economics',
+      'Angela Davis: Distinguished Professor Emerita',
+    ],
+    promo: [
       "Experience Berkeley's vibrant academic ecosystem, where intellectual curiosity meets groundbreaking research. Whether you're seeking transformative educational opportunities or pursuing a career in academia, Berkeley offers an unparalleled environment for personal growth and professional development.",
-      "Join a community of scholars and innovators dedicated to pushing the boundaries of knowledge and driving positive change in the world. Embrace the spirit of inquiry and innovation that defines Berkeley's academic landscape, and embark on a journey of discovery and impact."
-  ],
-  image_url: "/cities/berkeley-california.jpg",
-  alt: "Aerial view of Berkeley, California skyline with university campus"
-},
+      "Join a community of scholars and innovators dedicated to pushing the boundaries of knowledge and driving positive change in the world. Embrace the spirit of inquiry and innovation that defines Berkeley's academic landscape, and embark on a journey of discovery and impact.",
+    ],
+    image_url: '/cities/academic-jobs-in-berkeley-california.jpg',
+    alt: 'Aerial view of Berkeley, California skyline with university campus',
+  },
 
-{
-  title: "Boulder, Colorado: Hub of Education and Innovation",
-  h1: "Exploring Boulder's Educational Landscape",
-  slug: "boulder-colorado-education-and-innovation",
-  city: "Boulder",
-  region: "Colorado",
-  country: "United States",
-  description: "Discover Boulder's vibrant academic scene, Nobel laureates, and esteemed scholars. Explore opportunities for education and employment in this thriving hub of innovation and intellectual pursuit.",
-  keywords: "Boulder Colorado, University of Colorado, education, innovation, Nobel laureates",
+  {
+    title: 'Boulder, Colorado: Hub of Education and Innovation',
+    h1: "Exploring Boulder's Educational Landscape",
+    slug: 'boulder-colorado-education-and-innovation',
+    city: 'Boulder',
+    region: 'Colorado',
+    country: 'United States',
+    description:
+      "Discover Boulder's vibrant academic scene, Nobel laureates, and esteemed scholars. Explore opportunities for education and employment in this thriving hub of innovation and intellectual pursuit.",
+    keywords:
+      'Boulder Colorado, University of Colorado, education, innovation, Nobel laureates',
 
-  cityInfo: [
-      "Boulder, Colorado, nestled in the stunning Rocky Mountains, is a haven for education and innovation. With its pristine natural surroundings and vibrant cultural scene, Boulder offers a unique setting for intellectual growth and exploration.",
-      "Home to the prestigious University of Colorado at Boulder, this city boasts a diverse higher education landscape, attracting students and scholars from around the globe. From liberal arts to cutting-edge research, Boulder's universities and colleges offer a wealth of opportunities for academic advancement."
-  ],
-  uniList: [
-      "University of Colorado at Boulder",
-      "Naropa University",
-      "Boulder College of Massage Therapy",
-      "Auguste Escoffier School of Culinary Arts"
-  ],
-  nobelInfo: [
-      "While Boulder may not have Nobel laureates directly associated with the city, it has strong ties to groundbreaking research and innovation. Nobel laureate Thomas Cech, who won the Nobel Prize in Chemistry in 1989, conducted his pioneering work on RNA at the University of Colorado at Boulder. His research continues to inspire scientific breakthroughs globally.",
-      "Additionally, Boulder's academic institutions foster a culture of innovation and collaboration, contributing to advancements in various fields, including environmental science, renewable energy, and space exploration. While no recent laureates hail directly from Boulder, the city's academic community continues to drive progress and inspire future Nobel Prize winners."
-  ],
-  nobelList: [],
-  academicInfo: [
+    cityInfo: [
+      'Boulder, Colorado, nestled in the stunning Rocky Mountains, is a haven for education and innovation. With its pristine natural surroundings and vibrant cultural scene, Boulder offers a unique setting for intellectual growth and exploration.',
+      "Home to the prestigious University of Colorado at Boulder, this city boasts a diverse higher education landscape, attracting students and scholars from around the globe. From liberal arts to cutting-edge research, Boulder's universities and colleges offer a wealth of opportunities for academic advancement.",
+    ],
+    uniList: [
+      'University of Colorado at Boulder',
+      'Naropa University',
+      'Boulder College of Massage Therapy',
+      'Auguste Escoffier School of Culinary Arts',
+    ],
+    nobelInfo: [
+      'While Boulder may not have Nobel laureates directly associated with the city, it has strong ties to groundbreaking research and innovation. Nobel laureate Thomas Cech, who won the Nobel Prize in Chemistry in 1989, conducted his pioneering work on RNA at the University of Colorado at Boulder. His research continues to inspire scientific breakthroughs globally.',
+      "Additionally, Boulder's academic institutions foster a culture of innovation and collaboration, contributing to advancements in various fields, including environmental science, renewable energy, and space exploration. While no recent laureates hail directly from Boulder, the city's academic community continues to drive progress and inspire future Nobel Prize winners.",
+    ],
+    nobelList: [],
+    academicInfo: [
       "Boulder's academic community boasts renowned scholars and researchers who have made significant contributions to their respective fields. Notable academics include Dr. Richard J. Johnson, a leading expert in nephrology and author of several groundbreaking studies on the effects of fructose on health.",
-      "Furthermore, Dr. Lucy Suchman, a professor at the University of Colorado at Boulder, is internationally recognized for her work in human-computer interaction and critical studies of technology. These academics exemplify Boulder's commitment to pushing the boundaries of knowledge and innovation."
-  ],
-  academicList: [
-      "Dr. Richard J. Johnson: Professor of Nephrology",
-      "Dr. Lucy Suchman: Professor of Human-Computer Interaction"
-  ],
-  promo: [
+      "Furthermore, Dr. Lucy Suchman, a professor at the University of Colorado at Boulder, is internationally recognized for her work in human-computer interaction and critical studies of technology. These academics exemplify Boulder's commitment to pushing the boundaries of knowledge and innovation.",
+    ],
+    academicList: [
+      'Dr. Richard J. Johnson: Professor of Nephrology',
+      'Dr. Lucy Suchman: Professor of Human-Computer Interaction',
+    ],
+    promo: [
       "Boulder offers unparalleled opportunities for both education and employment in a dynamic and inspiring environment. For students, the city's universities and colleges provide access to world-class faculty, cutting-edge research facilities, and a supportive community.",
-      "Professionals seeking employment in Boulder can benefit from the city's thriving innovation ecosystem, with numerous opportunities in industries such as technology, renewable energy, and outdoor recreation. Whether pursuing academic excellence or professional growth, Boulder offers an enriching experience for all."
-  ],
-  image_url: "/cities/boulder-colorado.jpg",
-  alt: "Boulder Colorado - A scenic city nestled in the Rocky Mountains"
-},
+      "Professionals seeking employment in Boulder can benefit from the city's thriving innovation ecosystem, with numerous opportunities in industries such as technology, renewable energy, and outdoor recreation. Whether pursuing academic excellence or professional growth, Boulder offers an enriching experience for all.",
+    ],
+    image_url: '/cities/academic-jobs-in-boulder-colorado.jpg',
+    alt: 'Boulder Colorado - A scenic city nestled in the Rocky Mountains',
+  },
 
+  {
+    title: 'Cambridge, Massachusetts: Hub of Higher Learning',
+    h1: "Discover Cambridge's Academic Excellence",
+    slug: 'cambridge-massachusetts-hub-of-higher-learning',
+    city: 'Cambridge',
+    region: 'Massachusetts',
+    country: 'United States',
+    description:
+      'Explore Cambridge, Massachusetts, a vibrant city renowned for its prestigious universities and intellectual heritage. Discover the rich legacy of Nobel Laureates, notable academics, and unparalleled educational and professional opportunities.',
+    keywords:
+      'Cambridge, Massachusetts, Harvard University, MIT, higher education, Nobel Laureates, academics, research opportunities',
+    cityInfo: [
+      'Cambridge, Massachusetts, nestled in the heart of the Greater Boston area, is synonymous with academic excellence and innovation. Home to renowned institutions like Harvard University and the Massachusetts Institute of Technology (MIT), the city pulsates with intellectual energy and cultural vibrancy.',
+      'With a diverse student population and a plethora of interdisciplinary research initiatives, Cambridge fosters an environment conducive to groundbreaking discoveries and personal growth, attracting scholars and learners from across the globe.',
+    ],
+    uniList: [
+      'Harvard University',
+      'Massachusetts Institute of Technology (MIT)',
+      'Lesley University',
+      'Cambridge College',
+    ],
+    nobelInfo: [
+      'Cambridge boasts a legacy of Nobel Laureates whose pioneering contributions have shaped the course of human knowledge. Notably, MIT faculty member Frances H. Arnold was awarded the Nobel Prize in Chemistry for her work on the directed evolution of enzymes, revolutionizing enzyme engineering and green chemistry.',
+      'Harvard University has also produced numerous Nobel Laureates across various disciplines, including Economics, Physics, and Medicine, underscoring its global impact on research and education.',
+    ],
+    nobelList: [
+      'Frances H. Arnold: Chemistry',
+      'John F. Nash Jr.: Economics',
+      'Amartya Sen: Economics',
+      'Jack Szostak: Physiology or Medicine',
+    ],
+    academicInfo: [
+      "Cambridge's academic landscape is enriched by luminaries who have made indelible marks in their respective fields. Notable figures like Noam Chomsky, a distinguished linguist and political commentator from MIT, and Harvard's Oliver Hart, a Nobel Laureate in Economics, exemplify the city's commitment to scholarly excellence and societal impact.",
+    ],
+    academicList: [
+      'Noam Chomsky: Professor of Linguistics and Philosophy',
+      'Oliver Hart: Professor of Economics',
+    ],
+    promo: [
+      'Embrace unparalleled educational and professional opportunities in Cambridge, Massachusetts, where a convergence of world-class universities and cutting-edge research initiatives awaits. From collaborative interdisciplinary projects to access to esteemed faculty mentors, Cambridge offers an environment primed for academic and personal growth.',
+    ],
+    image_url: '/cities/academic-jobs-in-cambridge-massachusetts.jpg',
+    alt: 'Cambridge, Massachusetts: Iconic Harvard Square',
+  },
 
-{
-  title: "Cambridge, Massachusetts: Hub of Higher Learning",
-  h1: "Discover Cambridge's Academic Excellence",
-  slug: "cambridge-massachusetts-hub-of-higher-learning",
-  city: "Cambridge",
-  region: "Massachusetts",
-  country: "United States",
-  description: "Explore Cambridge, Massachusetts, a vibrant city renowned for its prestigious universities and intellectual heritage. Discover the rich legacy of Nobel Laureates, notable academics, and unparalleled educational and professional opportunities.",
-  keywords: "Cambridge, Massachusetts, Harvard University, MIT, higher education, Nobel Laureates, academics, research opportunities",
-  cityInfo: [
-      "Cambridge, Massachusetts, nestled in the heart of the Greater Boston area, is synonymous with academic excellence and innovation. Home to renowned institutions like Harvard University and the Massachusetts Institute of Technology (MIT), the city pulsates with intellectual energy and cultural vibrancy.",
-      "With a diverse student population and a plethora of interdisciplinary research initiatives, Cambridge fosters an environment conducive to groundbreaking discoveries and personal growth, attracting scholars and learners from across the globe."
-  ],
-  uniList: [
-      "Harvard University",
-      "Massachusetts Institute of Technology (MIT)",
-      "Lesley University",
-      "Cambridge College"
-  ],
-  nobelInfo: [
-      "Cambridge boasts a legacy of Nobel Laureates whose pioneering contributions have shaped the course of human knowledge. Notably, MIT faculty member Frances H. Arnold was awarded the Nobel Prize in Chemistry for her work on the directed evolution of enzymes, revolutionizing enzyme engineering and green chemistry.",
-      "Harvard University has also produced numerous Nobel Laureates across various disciplines, including Economics, Physics, and Medicine, underscoring its global impact on research and education."
-  ],
-  nobelList: [
-      "Frances H. Arnold: Chemistry",
-      "John F. Nash Jr.: Economics",
-      "Amartya Sen: Economics",
-      "Jack Szostak: Physiology or Medicine"
-  ],
-  academicInfo: [
-      "Cambridge's academic landscape is enriched by luminaries who have made indelible marks in their respective fields. Notable figures like Noam Chomsky, a distinguished linguist and political commentator from MIT, and Harvard's Oliver Hart, a Nobel Laureate in Economics, exemplify the city's commitment to scholarly excellence and societal impact."
-  ],
-  academicList: [
-      "Noam Chomsky: Professor of Linguistics and Philosophy",
-      "Oliver Hart: Professor of Economics"
-  ],
-  promo: [
-      "Embrace unparalleled educational and professional opportunities in Cambridge, Massachusetts, where a convergence of world-class universities and cutting-edge research initiatives awaits. From collaborative interdisciplinary projects to access to esteemed faculty mentors, Cambridge offers an environment primed for academic and personal growth."
-  ],
-  image_url: "/cities/cambridge-massachusetts.jpg",
-  alt: "Cambridge, Massachusetts: Iconic Harvard Square"
-},
+  {
+    title: 'Chapel Hill, North Carolina: Hub of Higher Education Excellence',
+    h1: "Exploring Chapel Hill's Educational Landscape",
+    slug: 'chapel-hill-north-carolina-higher-education',
+    city: 'Chapel Hill',
+    region: 'North Carolina',
+    country: 'United States',
+    description:
+      "Discover Chapel Hill's vibrant academic scene, Nobel laureates, and renowned scholars. Explore opportunities for growth and innovation at its prestigious universities and colleges.",
+    keywords:
+      'Chapel Hill, North Carolina, universities, colleges, higher education, Nobel laureates, academics, research',
 
-
-{
-  title: "Chapel Hill, North Carolina: Hub of Higher Education Excellence",
-  h1: "Exploring Chapel Hill's Educational Landscape",
-  slug: "chapel-hill-north-carolina-higher-education",
-  city: "Chapel Hill",
-  region: "North Carolina",
-  country: "United States",
-  description: "Discover Chapel Hill's vibrant academic scene, Nobel laureates, and renowned scholars. Explore opportunities for growth and innovation at its prestigious universities and colleges.",
-  keywords: "Chapel Hill, North Carolina, universities, colleges, higher education, Nobel laureates, academics, research",
-
-  cityInfo: [
-      "Chapel Hill, located in North Carolina, USA, is renowned for its diverse higher education landscape. Home to the esteemed University of North Carolina at Chapel Hill (UNC), the city offers a dynamic intellectual environment.",
-      "With its rich history and commitment to academic excellence, Chapel Hill attracts students and scholars from around the globe, fostering innovation and collaboration across various disciplines."
-  ],
-  uniList: [
-      "University of North Carolina at Chapel Hill",
-      "UNC Gillings School of Global Public Health",
-      "UNC School of Medicine",
-      "UNC Eshelman School of Pharmacy",
-      "North Carolina State University - College of Veterinary Medicine"
-  ],
-  nobelInfo: [
-      "Chapel Hill boasts a legacy of Nobel laureates whose contributions have had a profound impact on global knowledge and innovation. Notably, Aziz Sancar, affiliated with UNC Chapel Hill, was awarded the Nobel Prize in Chemistry in 2015 for his groundbreaking work on DNA repair mechanisms.",
-      "Additionally, Oliver Smithies, a former faculty member at UNC Chapel Hill, received the Nobel Prize in Physiology or Medicine in 2007 for his discoveries related to gene targeting in mice, revolutionizing biomedical research​."
-  ],
-  nobelList: ["Aziz Sancar: Chemistry", "Oliver Smithies: Physiology or Medicine"],
-  academicInfo: [
+    cityInfo: [
+      'Chapel Hill, located in North Carolina, USA, is renowned for its diverse higher education landscape. Home to the esteemed University of North Carolina at Chapel Hill (UNC), the city offers a dynamic intellectual environment.',
+      'With its rich history and commitment to academic excellence, Chapel Hill attracts students and scholars from around the globe, fostering innovation and collaboration across various disciplines.',
+    ],
+    uniList: [
+      'University of North Carolina at Chapel Hill',
+      'UNC Gillings School of Global Public Health',
+      'UNC School of Medicine',
+      'UNC Eshelman School of Pharmacy',
+      'North Carolina State University - College of Veterinary Medicine',
+    ],
+    nobelInfo: [
+      'Chapel Hill boasts a legacy of Nobel laureates whose contributions have had a profound impact on global knowledge and innovation. Notably, Aziz Sancar, affiliated with UNC Chapel Hill, was awarded the Nobel Prize in Chemistry in 2015 for his groundbreaking work on DNA repair mechanisms.',
+      'Additionally, Oliver Smithies, a former faculty member at UNC Chapel Hill, received the Nobel Prize in Physiology or Medicine in 2007 for his discoveries related to gene targeting in mice, revolutionizing biomedical research​.',
+    ],
+    nobelList: [
+      'Aziz Sancar: Chemistry',
+      'Oliver Smithies: Physiology or Medicine',
+    ],
+    academicInfo: [
       "Chapel Hill's academic community is distinguished by notable scholars across various disciplines. UNC Chapel Hill faculty member Barbara Fredrickson is renowned for her research in positive psychology, revolutionizing understanding of human emotions and well-being.",
-      "Furthermore, Dr. Ronald Falk, a leading expert in nephrology and immunology at UNC Chapel Hill, has significantly advanced knowledge in kidney diseases, paving the way for improved treatments and patient care​."
-  ],
-  academicList: [
-      "Barbara Fredrickson: Professor of Psychology",
-      "Ronald Falk: Professor of Medicine"
-  ],
-  promo: [
+      'Furthermore, Dr. Ronald Falk, a leading expert in nephrology and immunology at UNC Chapel Hill, has significantly advanced knowledge in kidney diseases, paving the way for improved treatments and patient care​.',
+    ],
+    academicList: [
+      'Barbara Fredrickson: Professor of Psychology',
+      'Ronald Falk: Professor of Medicine',
+    ],
+    promo: [
       "Join Chapel Hill's vibrant academic community and embark on a journey of educational excellence and personal growth. With world-class institutions and pioneering research opportunities, Chapel Hill offers a stimulating environment for students and scholars alike.",
-      "Whether you're seeking transformative learning experiences or innovative research endeavors, Chapel Hill provides the ideal setting to thrive and make a lasting impact in your field."
-  ],
-  image_url: "/cities/chapel-hill-north-carolina.jpg",
-  alt: "Chapel Hill, North Carolina: A bustling hub of academic excellence"
-},
+      "Whether you're seeking transformative learning experiences or innovative research endeavors, Chapel Hill provides the ideal setting to thrive and make a lasting impact in your field.",
+    ],
+    image_url: '/cities/academic-jobs-in-chapel-hill-north-carolina.jpg',
+    alt: 'Chapel Hill, North Carolina: A bustling hub of academic excellence',
+  },
 
+  {
+    title: 'Charlottesville, Virginia: A Hub of Academic Excellence',
+    h1: 'Exploring Charlottesville, Virginia',
+    slug: 'charlottesville-virginia',
+    city: 'Charlottesville',
+    region: 'Virginia',
+    country: 'United States',
+    description:
+      'Discover Charlottesville, Virginia, a city renowned for its diverse and prestigious higher education institutions, notable Nobel Laureates, and groundbreaking academic achievements. Explore the opportunities for educational growth and professional advancement in this vibrant academic hub.',
+    keywords:
+      'Charlottesville, Virginia, universities, colleges, higher education, Nobel Laureates, academics, employment opportunities',
 
-{
-  title: "Charlottesville, Virginia: A Hub of Academic Excellence",
-  h1: "Exploring Charlottesville, Virginia",
-  slug: "charlottesville-virginia",
-  city: "Charlottesville",
-  region: "Virginia",
-  country: "United States",
-  description: "Discover Charlottesville, Virginia, a city renowned for its diverse and prestigious higher education institutions, notable Nobel Laureates, and groundbreaking academic achievements. Explore the opportunities for educational growth and professional advancement in this vibrant academic hub.",
-  keywords: "Charlottesville, Virginia, universities, colleges, higher education, Nobel Laureates, academics, employment opportunities",
+    cityInfo: [
+      "Charlottesville, Virginia, nestled in the heart of the state, boasts a thriving academic landscape. Home to the prestigious University of Virginia (UVA), founded by Thomas Jefferson, it offers a rich tapestry of educational opportunities. The city's vibrant culture and historical significance contribute to its appeal as a hub for intellectual exploration and growth.",
+      'With a range of colleges and universities, Charlottesville fosters diversity and excellence in higher education. From liberal arts colleges to research-focused institutions, students benefit from a dynamic learning environment that encourages innovation and critical thinking.',
+    ],
+    uniList: [
+      'University of Virginia',
+      'Piedmont Virginia Community College',
+      'Charlottesville High School',
+      'Blue Ridge Community College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Charlottesville, Virginia, offers compelling reasons for both students and professionals to engage with its academic community. For students, attending a university or college in this city provides unparalleled educational experiences and personal growth opportunities. From esteemed faculty to cutting-edge research facilities, Charlottesville fosters an environment conducive to academic excellence.',
+      "Professionals seeking employment in Charlottesville's higher education sector will find a wealth of professional and research opportunities. With institutions renowned for their commitment to innovation and collaboration, the city offers a stimulating environment for career advancement and meaningful contributions to knowledge creation.",
+    ],
+    image_url: '/cities/academic-jobs-in-charlottesvile.jpg',
+    alt: "A panoramic view of Charlottesville, Virginia's skyline against a blue sky backdrop",
+  },
 
-  cityInfo: [
-    "Charlottesville, Virginia, nestled in the heart of the state, boasts a thriving academic landscape. Home to the prestigious University of Virginia (UVA), founded by Thomas Jefferson, it offers a rich tapestry of educational opportunities. The city's vibrant culture and historical significance contribute to its appeal as a hub for intellectual exploration and growth.",
-    "With a range of colleges and universities, Charlottesville fosters diversity and excellence in higher education. From liberal arts colleges to research-focused institutions, students benefit from a dynamic learning environment that encourages innovation and critical thinking."
-  ],
-  uniList: [
-    "University of Virginia",
-    "Piedmont Virginia Community College",
-    "Charlottesville High School",
-    "Blue Ridge Community College"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Charlottesville, Virginia, offers compelling reasons for both students and professionals to engage with its academic community. For students, attending a university or college in this city provides unparalleled educational experiences and personal growth opportunities. From esteemed faculty to cutting-edge research facilities, Charlottesville fosters an environment conducive to academic excellence.",
-    "Professionals seeking employment in Charlottesville's higher education sector will find a wealth of professional and research opportunities. With institutions renowned for their commitment to innovation and collaboration, the city offers a stimulating environment for career advancement and meaningful contributions to knowledge creation."
-  ],
-  image_url: "/cities/charlottesvile.jpg",
-  alt: "A panoramic view of Charlottesville, Virginia's skyline against a blue sky backdrop"
-},
-
-{
-  title: "Columbia, Missouri: Education Hub & Intellectual Haven",
-  h1: "Discover Columbia's Academic Excellence",
-  slug: "columbia-missouri-education-hub",
-  city: "Columbia",
-  region: "Missouri",
-  country: "United States",
-  description: "Explore Columbia, Missouri's vibrant academic landscape, boasting renowned universities and colleges. Learn about Nobel Laureates, notable academics, and compelling reasons for attending or working in this intellectual haven.",
-  keywords: "Columbia Missouri, University of Missouri, higher education, academic excellence, Nobel Laureates, notable academics",
-  cityInfo: [
-      "Nestled in the heart of Missouri, Columbia stands as a beacon of intellectual prowess and educational diversity. The city is renowned for its vibrant academic landscape, hosting esteemed universities and colleges.",
-      "Home to the University of Missouri, Columbia fosters a dynamic learning environment that nurtures innovation, critical thinking, and cultural exchange. With its rich heritage and forward-thinking approach to education, Columbia attracts students and scholars from around the globe."
-  ],
-  uniList: [
-      "University of Missouri",
-      "Columbia College",
-      "Stephens College"
-  ],
-  nobelInfo: [
+  {
+    title: 'Columbia, Missouri: Education Hub & Intellectual Haven',
+    h1: "Discover Columbia's Academic Excellence",
+    slug: 'columbia-missouri-education-hub',
+    city: 'Columbia',
+    region: 'Missouri',
+    country: 'United States',
+    description:
+      "Explore Columbia, Missouri's vibrant academic landscape, boasting renowned universities and colleges. Learn about Nobel Laureates, notable academics, and compelling reasons for attending or working in this intellectual haven.",
+    keywords:
+      'Columbia Missouri, University of Missouri, higher education, academic excellence, Nobel Laureates, notable academics',
+    cityInfo: [
+      'Nestled in the heart of Missouri, Columbia stands as a beacon of intellectual prowess and educational diversity. The city is renowned for its vibrant academic landscape, hosting esteemed universities and colleges.',
+      'Home to the University of Missouri, Columbia fosters a dynamic learning environment that nurtures innovation, critical thinking, and cultural exchange. With its rich heritage and forward-thinking approach to education, Columbia attracts students and scholars from around the globe.',
+    ],
+    uniList: ['University of Missouri', 'Columbia College', 'Stephens College'],
+    nobelInfo: [
       "While Columbia hasn't directly produced Nobel Laureates, its academic institutions have contributed significantly to global knowledge and innovation. Notably, the University of Missouri's research in various fields, including agriculture, medicine, and journalism, has garnered international acclaim.",
-      "Though not Nobel laureates, numerous faculty members have received prestigious awards and grants, further solidifying Columbia's position as a hub of intellectual excellence and groundbreaking research."
-  ],
-  nobelList: [],
-  academicInfo: [
+      "Though not Nobel laureates, numerous faculty members have received prestigious awards and grants, further solidifying Columbia's position as a hub of intellectual excellence and groundbreaking research.",
+    ],
+    nobelList: [],
+    academicInfo: [
       "Columbia's academic community boasts distinguished scholars and educators who have made remarkable contributions to their respective fields. From pioneering research in agriculture and journalism to groundbreaking discoveries in medicine and technology, these academics enrich both local and global discourse.",
-      "Notable figures like Dr. George P. Smith, Nobel laureate in Chemistry, have left an indelible mark on Columbia's academic legacy, inspiring future generations of scholars to pursue excellence in research and innovation."
-  ],
-  academicList: [
-      "Dr. George P. Smith: Distinguished Professor of Biological Sciences, Nobel Laureate in Chemistry"
-  ],
-  promo: [
+      "Notable figures like Dr. George P. Smith, Nobel laureate in Chemistry, have left an indelible mark on Columbia's academic legacy, inspiring future generations of scholars to pursue excellence in research and innovation.",
+    ],
+    academicList: [
+      'Dr. George P. Smith: Distinguished Professor of Biological Sciences, Nobel Laureate in Chemistry',
+    ],
+    promo: [
       "Experience unparalleled educational opportunities and professional growth in Columbia's thriving academic community. Whether you're a student seeking knowledge or a researcher pursuing groundbreaking discoveries, Columbia offers the perfect environment to thrive and excel.",
-      "Join a vibrant community of scholars, innovators, and thought leaders, and be part of a legacy of academic excellence that continues to shape the future of knowledge and innovation."
-  ],
-  image_url: "/cities/columbia-missouri.jpg",
-  alt: "Columbia, Missouri: A hub of academic excellence"
-},
+      'Join a vibrant community of scholars, innovators, and thought leaders, and be part of a legacy of academic excellence that continues to shape the future of knowledge and innovation.',
+    ],
+    image_url: '/cities/academic-jobs-in-columbia-missouri.jpg',
+    alt: 'Columbia, Missouri: A hub of academic excellence',
+  },
 
-{
-  title: "Durham, New Hampshire: Hub of Higher Education Excellence",
-  h1: "Exploring Durham, New Hampshire's Academic Landscape",
-  slug: "durham-new-hampshire-higher-education",
-  city: "Durham",
-  region: "New Hampshire",
-  country: "United States",
-  description: "Discover the academic prowess of Durham, New Hampshire, boasting renowned universities, notable academics, and a rich history of intellectual contributions. Explore why attending or working at a university in this vibrant city offers unparalleled educational and professional opportunities.",
-  keywords: "Durham New Hampshire, universities, colleges, academics, Nobel Laureates, education, research",
+  {
+    title: 'Durham, New Hampshire: Hub of Higher Education Excellence',
+    h1: "Exploring Durham, New Hampshire's Academic Landscape",
+    slug: 'durham-new-hampshire-higher-education',
+    city: 'Durham',
+    region: 'New Hampshire',
+    country: 'United States',
+    description:
+      'Discover the academic prowess of Durham, New Hampshire, boasting renowned universities, notable academics, and a rich history of intellectual contributions. Explore why attending or working at a university in this vibrant city offers unparalleled educational and professional opportunities.',
+    keywords:
+      'Durham New Hampshire, universities, colleges, academics, Nobel Laureates, education, research',
 
-  cityInfo: [
+    cityInfo: [
       "Durham, New Hampshire, epitomizes academic excellence with its array of esteemed universities and colleges. It's a city pulsating with intellectual vigor and cultural diversity, fostering an environment ripe for holistic growth and learning.",
-      "Situated in the heart of New Hampshire, Durham stands as a beacon of higher education, attracting students and scholars from across the globe. With its blend of historic charm and innovative spirit, the city provides a dynamic backdrop for academic pursuit and personal enrichment."
-  ],
-  uniList: [
-      "University of New Hampshire"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+      'Situated in the heart of New Hampshire, Durham stands as a beacon of higher education, attracting students and scholars from across the globe. With its blend of historic charm and innovative spirit, the city provides a dynamic backdrop for academic pursuit and personal enrichment.',
+    ],
+    uniList: ['University of New Hampshire'],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "Embark on a transformative educational journey in Durham, New Hampshire, where the University of New Hampshire stands as a testament to academic excellence. Here, you'll find unparalleled opportunities for intellectual exploration, personal growth, and professional development.",
-      "Join a vibrant community of scholars and innovators dedicated to pushing the boundaries of knowledge and discovery. Whether you're a student seeking a nurturing learning environment or a professional looking to advance your career, Durham offers a plethora of avenues for academic and professional success."
-  ],
-  image_url: "/cities/durham-new-hampshire.jpg",
-  alt: "Durham, New Hampshire: A City of Academic Excellence"
-},
+      "Join a vibrant community of scholars and innovators dedicated to pushing the boundaries of knowledge and discovery. Whether you're a student seeking a nurturing learning environment or a professional looking to advance your career, Durham offers a plethora of avenues for academic and professional success.",
+    ],
+    image_url: '/cities/academic-jobs-in-durham-new-hampshire.jpg',
+    alt: 'Durham, New Hampshire: A City of Academic Excellence',
+  },
 
-{
-  title: "Flagstaff, Arizona: Education Hub of Northern Arizona",
-  h1: "Exploring Flagstaff's Educational Landscape",
-  slug: "flagstaff-arizona-education-hub",
-  city: "Flagstaff",
-  region: "Arizona",
-  country: "United States",
-  description: "Discover Flagstaff, Arizona's diverse higher education scene, Nobel Laureates, and notable academics. Explore reasons for attending or working at its renowned universities and colleges.",
-  keywords: "Flagstaff Arizona, Northern Arizona University, higher education, Nobel Laureates, notable academics",
+  {
+    title: 'Flagstaff, Arizona: Education Hub of Northern Arizona',
+    h1: "Exploring Flagstaff's Educational Landscape",
+    slug: 'flagstaff-arizona-education-hub',
+    city: 'Flagstaff',
+    region: 'Arizona',
+    country: 'United States',
+    description:
+      "Discover Flagstaff, Arizona's diverse higher education scene, Nobel Laureates, and notable academics. Explore reasons for attending or working at its renowned universities and colleges.",
+    keywords:
+      'Flagstaff Arizona, Northern Arizona University, higher education, Nobel Laureates, notable academics',
 
-  cityInfo: [
-      "Flagstaff, Arizona, nestled in the stunning landscapes of Northern Arizona, thrives as an education hub. Renowned for its diverse higher education offerings, the city fosters intellectual growth and innovation.",
-      "Home to Northern Arizona University (NAU), recognized for its research excellence and commitment to student success, Flagstaff attracts learners seeking top-tier education amidst natural beauty​."
-  ],
-  uniList: [
-      "Northern Arizona University"
+    cityInfo: [
+      'Flagstaff, Arizona, nestled in the stunning landscapes of Northern Arizona, thrives as an education hub. Renowned for its diverse higher education offerings, the city fosters intellectual growth and innovation.',
+      'Home to Northern Arizona University (NAU), recognized for its research excellence and commitment to student success, Flagstaff attracts learners seeking top-tier education amidst natural beauty​.',
+    ],
+    uniList: [
+      'Northern Arizona University',
       // Add other institutions as needed
-  ],
-  nobelInfo: [
+    ],
+    nobelInfo: [
       "While Flagstaff hasn't produced Nobel Laureates directly, its academic community contributes significantly to global knowledge. Notable figures like NAU's researchers in environmental sciences and sustainability play crucial roles in addressing pressing global challenges.",
-      "Though not Nobel Laureates, their work resonates globally, contributing to environmental preservation and sustainability​."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Flagstaff's academic landscape is adorned with notable scholars contributing across various disciplines. NAU boasts esteemed academics like Dr. Laura Huenneke, renowned for her ecological research, advancing our understanding of ecosystems and biodiversity​."
-  ],
-  academicList: [
-      "Dr. Laura Huenneke: Professor of Ecology"
+      'Though not Nobel Laureates, their work resonates globally, contributing to environmental preservation and sustainability​.',
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Flagstaff's academic landscape is adorned with notable scholars contributing across various disciplines. NAU boasts esteemed academics like Dr. Laura Huenneke, renowned for her ecological research, advancing our understanding of ecosystems and biodiversity​.",
+    ],
+    academicList: [
+      'Dr. Laura Huenneke: Professor of Ecology',
       // Add other notable academics as needed
-  ],
-  promo: [
+    ],
+    promo: [
       "Flagstaff offers a unique blend of academic excellence and natural splendor. Whether you're a student seeking quality education or a researcher aiming to make a difference, the city provides a nurturing environment for growth and innovation.",
-      "Join Flagstaff's vibrant academic community and immerse yourself in a landscape that inspires both intellect and creativity​."
-  ],
-  image_url: "/cities/flagstaff-arizona.jpg",
-  alt: "Flagstaff, Arizona - A haven for education amidst natural beauty"
-},
+      "Join Flagstaff's vibrant academic community and immerse yourself in a landscape that inspires both intellect and creativity​.",
+    ],
+    image_url: '/cities/academic-jobs-in-flagstaff-arizona.jpg',
+    alt: 'Flagstaff, Arizona - A haven for education amidst natural beauty',
+  },
 
-{
-  title: "Gainesville, Florida: Academic Hub of Innovation",
-  h1: "Exploring Gainesville's Academic Excellence",
-  slug: "gainesville-florida-academic-hub",
-  city: "Gainesville",
-  region: "Florida",
-  country: "United States",
-  description: "Discover the academic prowess of Gainesville, Florida, home to renowned universities, Nobel Laureates, and influential academics. Explore educational and career opportunities in this vibrant academic community.",
-  keywords: "Gainesville, Florida, universities, colleges, academics, Nobel Laureates, higher education",
+  {
+    title: 'Gainesville, Florida: Academic Hub of Innovation',
+    h1: "Exploring Gainesville's Academic Excellence",
+    slug: 'gainesville-florida-academic-hub',
+    city: 'Gainesville',
+    region: 'Florida',
+    country: 'United States',
+    description:
+      'Discover the academic prowess of Gainesville, Florida, home to renowned universities, Nobel Laureates, and influential academics. Explore educational and career opportunities in this vibrant academic community.',
+    keywords:
+      'Gainesville, Florida, universities, colleges, academics, Nobel Laureates, higher education',
 
-  cityInfo: [
+    cityInfo: [
       "Gainesville, Florida, embodies academic diversity and strength, boasting renowned universities and colleges that foster innovation and excellence in education and research. The city's higher education landscape offers a dynamic environment, attracting students and scholars from diverse backgrounds.",
-      "Gainesville's universities and colleges excel in various fields, from STEM disciplines to humanities and the arts, providing students with comprehensive educational experiences and preparing them for impactful careers in their chosen fields​."
-  ],
-  uniList: [
-      "University of Florida",
-      "Santa Fe College"
-  ],
-  nobelInfo: [
-      "",
-      ""
-  ],
-  nobelList: [],
-  academicInfo: [
-      "",
-      ""
-  ],
-  academicList: [],
-  promo: [
+      "Gainesville's universities and colleges excel in various fields, from STEM disciplines to humanities and the arts, providing students with comprehensive educational experiences and preparing them for impactful careers in their chosen fields​.",
+    ],
+    uniList: ['University of Florida', 'Santa Fe College'],
+    nobelInfo: ['', ''],
+    nobelList: [],
+    academicInfo: ['', ''],
+    academicList: [],
+    promo: [
       "Gainesville's universities and colleges offer unparalleled educational opportunities, fostering personal and intellectual growth. With state-of-the-art facilities and renowned faculty, students embark on a transformative journey, gaining skills and knowledge that prepare them for success in their careers and beyond​.",
-      "For professionals seeking employment, Gainesville's academic institutions provide access to cutting-edge research projects and collaboration opportunities. Whether in teaching or research roles, joining Gainesville's academic community offers a platform for professional growth and meaningful contributions to global knowledge​."
-  ],
-  image_url: "/cities/gainesvile-florida.jpg",
-  alt: "Gainesville, Florida: Academic Hub of Innovation"
-},
+      "For professionals seeking employment, Gainesville's academic institutions provide access to cutting-edge research projects and collaboration opportunities. Whether in teaching or research roles, joining Gainesville's academic community offers a platform for professional growth and meaningful contributions to global knowledge​.",
+    ],
+    image_url: '/cities/academic-jobs-in-gainesvile-florida.jpg',
+    alt: 'Gainesville, Florida: Academic Hub of Innovation',
+  },
 
-{
-  title: "Ithaca, NY: Hub of Higher Learning",
-  h1: "Discover the Educational Hub of Ithaca, New York",
-  slug: "ithaca-ny-higher-learning-hub",
-  city: "Ithaca",
-  region: "New York",
-  country: "United States",
-  description: "Explore the vibrant academic landscape of Ithaca, New York, renowned for its prestigious universities, distinguished Nobel Laureates, and notable academics. Uncover the educational and professional opportunities that make Ithaca a top destination for intellectual growth and innovation.",
-  keywords: "Ithaca New York, Cornell University, higher education, Nobel Laureates, academics, research opportunities",
+  {
+    title: 'Ithaca, NY: Hub of Higher Learning',
+    h1: 'Discover the Educational Hub of Ithaca, New York',
+    slug: 'ithaca-ny-higher-learning-hub',
+    city: 'Ithaca',
+    region: 'New York',
+    country: 'United States',
+    description:
+      'Explore the vibrant academic landscape of Ithaca, New York, renowned for its prestigious universities, distinguished Nobel Laureates, and notable academics. Uncover the educational and professional opportunities that make Ithaca a top destination for intellectual growth and innovation.',
+    keywords:
+      'Ithaca New York, Cornell University, higher education, Nobel Laureates, academics, research opportunities',
 
-  cityInfo: [
+    cityInfo: [
       "Ithaca, New York, is synonymous with academic excellence, boasting a diverse array of world-renowned universities and colleges. The city's educational landscape is enriched by its multicultural community and picturesque surroundings, offering a conducive environment for learning and research​.",
-      "Nestled in the Finger Lakes region, Ithaca's higher education institutions contribute significantly to the city's cultural vibrancy and intellectual vitality, attracting scholars and students from around the globe​."
-  ],
-  uniList: [
-      "Cornell University",
-      "Ithaca College",
-      "Tompkins Cortland Community College",
-      "Cayuga Community College"
-  ],
-  nobelInfo: [
+      "Nestled in the Finger Lakes region, Ithaca's higher education institutions contribute significantly to the city's cultural vibrancy and intellectual vitality, attracting scholars and students from around the globe​.",
+    ],
+    uniList: [
+      'Cornell University',
+      'Ithaca College',
+      'Tompkins Cortland Community College',
+      'Cayuga Community College',
+    ],
+    nobelInfo: [
       "While Ithaca has yet to claim a Nobel Laureate directly associated with its institutions, Cornell University's contributions to various fields are noteworthy. Notably, alumni such as Richard Thaler, recognized for his work in behavioral economics, exemplify Cornell's impact on global knowledge and innovation​.",
-      "Although no laureates hail directly from Ithaca, the city's academic environment fosters groundbreaking research and scholarly endeavors, positioning it as a hub for future Nobel Prize recipients​."
-  ],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-      "Immerse yourself in a dynamic academic community at Ithaca, New York, where educational and personal growth opportunities abound. With access to world-class faculty, state-of-the-art facilities, and a supportive learning environment, attending a university or college in Ithaca promises a transformative educational experience​.",
-      "For professionals seeking employment, Ithaca offers unparalleled research opportunities and collaborations across various disciplines. Joining the city's esteemed institutions opens doors to innovative projects, career advancement, and impactful contributions to society​."
-  ],
-  image_url: "/cities/ithaca-ny.jpg",
-  alt: "A panoramic view of Ithaca, New York, showcasing its lush greenery and stunning landscapes​"
-},
+      "Although no laureates hail directly from Ithaca, the city's academic environment fosters groundbreaking research and scholarly endeavors, positioning it as a hub for future Nobel Prize recipients​.",
+    ],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Immerse yourself in a dynamic academic community at Ithaca, New York, where educational and personal growth opportunities abound. With access to world-class faculty, state-of-the-art facilities, and a supportive learning environment, attending a university or college in Ithaca promises a transformative educational experience​.',
+      "For professionals seeking employment, Ithaca offers unparalleled research opportunities and collaborations across various disciplines. Joining the city's esteemed institutions opens doors to innovative projects, career advancement, and impactful contributions to society​.",
+    ],
+    image_url: '/cities/academic-jobs-in-ithaca-ny.jpg',
+    alt: 'A panoramic view of Ithaca, New York, showcasing its lush greenery and stunning landscapes​',
+  },
 
+  {
+    title: 'Lawrence, Kansas: Educational Excellence and Innovation Hub',
+    h1: 'Exploring Lawrence, Kansas: Education and Innovation Hub',
+    slug: 'lawrence-kansas-education-hub',
+    city: 'Lawrence',
+    region: 'Kansas',
+    country: 'United States',
+    description:
+      'Discover Lawrence, Kansas, a vibrant academic community known for its prestigious universities, distinguished Nobel Laureates, and groundbreaking research. Explore educational and career opportunities in this dynamic city.',
+    keywords:
+      'Lawrence Kansas, University of Kansas, higher education, Nobel Laureates, academics, research, education hub',
 
-{
-  title: "Lawrence, Kansas: Educational Excellence and Innovation Hub",
-  h1: "Exploring Lawrence, Kansas: Education and Innovation Hub",
-  slug: "lawrence-kansas-education-hub",
-  city: "Lawrence",
-  region: "Kansas",
-  country: "United States",
-  description: "Discover Lawrence, Kansas, a vibrant academic community known for its prestigious universities, distinguished Nobel Laureates, and groundbreaking research. Explore educational and career opportunities in this dynamic city.",
-  keywords: "Lawrence Kansas, University of Kansas, higher education, Nobel Laureates, academics, research, education hub",
-
-
-  cityInfo: [
-      "Lawrence, Kansas, is a bustling center of higher education, boasting a diverse range of institutions that contribute to its rich intellectual landscape. Home to the University of Kansas, Haskell Indian Nations University, and several renowned colleges, Lawrence offers a stimulating environment for academic pursuits and personal growth.",
-      "With a strong emphasis on innovation and research, Lawrence attracts students and scholars from around the globe. Its collaborative academic community fosters interdisciplinary learning and encourages exploration across various fields, making it an ideal destination for those seeking educational excellence​."
-  ],
-  uniList: [
-      "University of Kansas",
-      "Haskell Indian Nations University",
-      "Baker University",
-      "etc."
-  ],
-  nobelInfo: [
+    cityInfo: [
+      'Lawrence, Kansas, is a bustling center of higher education, boasting a diverse range of institutions that contribute to its rich intellectual landscape. Home to the University of Kansas, Haskell Indian Nations University, and several renowned colleges, Lawrence offers a stimulating environment for academic pursuits and personal growth.',
+      'With a strong emphasis on innovation and research, Lawrence attracts students and scholars from around the globe. Its collaborative academic community fosters interdisciplinary learning and encourages exploration across various fields, making it an ideal destination for those seeking educational excellence​.',
+    ],
+    uniList: [
+      'University of Kansas',
+      'Haskell Indian Nations University',
+      'Baker University',
+      'etc.',
+    ],
+    nobelInfo: [
       "While Lawrence itself hasn't produced Nobel Laureates, the University of Kansas has affiliations with renowned scholars and scientists who have been recognized with this prestigious honor. Notably, Vernon L. Smith, an alumnus, received the Nobel Prize in Economic Sciences for his groundbreaking work in experimental economics, highlighting the university's commitment to impactful research and academic excellence.",
-      "Lawrence's academic landscape continues to thrive with contributions from faculty and researchers who push the boundaries of knowledge and innovation. While no Laureates hail directly from the city, the collaborative efforts of its institutions contribute significantly to global advancements in various fields​."
-  ],
-  nobelList: ["Vernon L. Smith: Economic Sciences"],
-  academicInfo: [
-      "Lawrence is home to distinguished academics whose research and scholarship have garnered international recognition. Notable figures include Dr. Subbarao Kambhampati, a professor at the University of Kansas, renowned for his contributions to artificial intelligence and robotics. Dr. Kambhampati's work has advanced the understanding and application of AI, shaping the future of technology and society​."
-  ],
-  academicList: [
-      "Dr. Subbarao Kambhampati: Professor of Artificial Intelligence and Robotics",
-      "Additional notable academics"
-  ],
-  promo: [
+      "Lawrence's academic landscape continues to thrive with contributions from faculty and researchers who push the boundaries of knowledge and innovation. While no Laureates hail directly from the city, the collaborative efforts of its institutions contribute significantly to global advancements in various fields​.",
+    ],
+    nobelList: ['Vernon L. Smith: Economic Sciences'],
+    academicInfo: [
+      "Lawrence is home to distinguished academics whose research and scholarship have garnered international recognition. Notable figures include Dr. Subbarao Kambhampati, a professor at the University of Kansas, renowned for his contributions to artificial intelligence and robotics. Dr. Kambhampati's work has advanced the understanding and application of AI, shaping the future of technology and society​.",
+    ],
+    academicList: [
+      'Dr. Subbarao Kambhampati: Professor of Artificial Intelligence and Robotics',
+      'Additional notable academics',
+    ],
+    promo: [
       "Immerse yourself in Lawrence's vibrant academic community, where educational opportunities abound and innovation thrives. Whether you're a student seeking cutting-edge research experiences or a professional looking to join a dynamic faculty, Lawrence offers a stimulating environment for growth and success​.",
-      "With its prestigious institutions and collaborative spirit, Lawrence provides a supportive ecosystem for both learning and professional development. Join us in shaping the future of education and research in this dynamic city​."
-  ],
-  image_url: "/cities/lawrence.jpg",
-  alt: "Lawrence, Kansas: A Vibrant Academic Community"
-},
+      'With its prestigious institutions and collaborative spirit, Lawrence provides a supportive ecosystem for both learning and professional development. Join us in shaping the future of education and research in this dynamic city​.',
+    ],
+    image_url: '/cities/academic-jobs-in-lawrence.jpg',
+    alt: 'Lawrence, Kansas: A Vibrant Academic Community',
+  },
 
-{
-  title: "Lexington, Kentucky: Academic Hub of the Bluegrass State",
-  h1: "Exploring Lexington's Academic Landscape",
-  slug: "lexington-kentucky-academic-hub",
-  city: "Lexington",
-  region: "Kentucky",
-  country: "United States",
-  description: "Discover Lexington's vibrant academic scene, home to prestigious universities, notable academics, and a legacy of intellectual excellence. Explore the city's rich history, educational opportunities, and research advancements.",
-  keywords: "Lexington Kentucky, University of Kentucky, higher education, academic hub, research, Nobel Laureates, notable academics",
+  {
+    title: 'Lexington, Kentucky: Academic Hub of the Bluegrass State',
+    h1: "Exploring Lexington's Academic Landscape",
+    slug: 'lexington-kentucky-academic-hub',
+    city: 'Lexington',
+    region: 'Kentucky',
+    country: 'United States',
+    description:
+      "Discover Lexington's vibrant academic scene, home to prestigious universities, notable academics, and a legacy of intellectual excellence. Explore the city's rich history, educational opportunities, and research advancements.",
+    keywords:
+      'Lexington Kentucky, University of Kentucky, higher education, academic hub, research, Nobel Laureates, notable academics',
 
-  cityInfo: [
-      "Nestled in the heart of Kentucky, Lexington stands as a beacon of academic excellence, boasting a diverse higher education landscape. With institutions like the University of Kentucky leading the charge, the city offers a dynamic blend of research-driven programs, liberal arts education, and professional development opportunities. Beyond academics, Lexington thrives as a cultural hub, fostering creativity and innovation across disciplines.",
-      "Steeped in tradition yet embracing modernity, Lexington provides an ideal environment for personal and intellectual growth. Its vibrant community, coupled with world-class faculty and state-of-the-art facilities, ensures a stimulating educational experience for students pursuing their academic aspirations."
-  ],
-  uniList: [
-      "University of Kentucky",
-      "Transylvania University",
-      "Bluegrass Community and Technical College"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+    cityInfo: [
+      'Nestled in the heart of Kentucky, Lexington stands as a beacon of academic excellence, boasting a diverse higher education landscape. With institutions like the University of Kentucky leading the charge, the city offers a dynamic blend of research-driven programs, liberal arts education, and professional development opportunities. Beyond academics, Lexington thrives as a cultural hub, fostering creativity and innovation across disciplines.',
+      'Steeped in tradition yet embracing modernity, Lexington provides an ideal environment for personal and intellectual growth. Its vibrant community, coupled with world-class faculty and state-of-the-art facilities, ensures a stimulating educational experience for students pursuing their academic aspirations.',
+    ],
+    uniList: [
+      'University of Kentucky',
+      'Transylvania University',
+      'Bluegrass Community and Technical College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "Consider attending a university in Lexington to embark on a journey of discovery and growth. With a wide range of academic programs, research opportunities, and extracurricular activities, students can tailor their educational experience to suit their interests and aspirations. Whether delving into the sciences, humanities, or professional fields, Lexington's universities provide the resources and support needed to thrive academically and personally.",
-      "For professionals seeking employment, Lexington offers a fertile ground for career advancement and research collaboration. With a vibrant ecosystem of industry partnerships, entrepreneurial initiatives, and interdisciplinary projects, universities in the city provide ample opportunities for professional development and innovation. Joining the academic community in Lexington means becoming part of a dynamic network of scholars, researchers, and industry leaders driving positive change and shaping the future."
-  ],
-  image_url: "/cities/lexington-kt.jpg",
-  alt: "Lexington, Kentucky: Aerial View of the City"
-},
+      'For professionals seeking employment, Lexington offers a fertile ground for career advancement and research collaboration. With a vibrant ecosystem of industry partnerships, entrepreneurial initiatives, and interdisciplinary projects, universities in the city provide ample opportunities for professional development and innovation. Joining the academic community in Lexington means becoming part of a dynamic network of scholars, researchers, and industry leaders driving positive change and shaping the future.',
+    ],
+    image_url: '/cities/academic-jobs-in-lexington-kt.jpg',
+    alt: 'Lexington, Kentucky: Aerial View of the City',
+  },
 
-{
-  title: "Lincoln, Nebraska: Hub of Higher Education Excellence",
-  h1: "Discover Lincoln's Academic Prestige",
-  slug: "lincoln-nebraska-higher-education",
-  city: "Lincoln",
-  region: "Nebraska",
-  country: "United States",
-  description: "Explore Lincoln, Nebraska's vibrant higher education landscape, boasting renowned universities and colleges, Nobel Laureates, and distinguished academics. Uncover compelling reasons to attend or work at these esteemed institutions.",
-  keywords: "Lincoln Nebraska, University of Nebraska-Lincoln, higher education, colleges, universities, Nobel Laureates, academics",
+  {
+    title: 'Lincoln, Nebraska: Hub of Higher Education Excellence',
+    h1: "Discover Lincoln's Academic Prestige",
+    slug: 'lincoln-nebraska-higher-education',
+    city: 'Lincoln',
+    region: 'Nebraska',
+    country: 'United States',
+    description:
+      "Explore Lincoln, Nebraska's vibrant higher education landscape, boasting renowned universities and colleges, Nobel Laureates, and distinguished academics. Uncover compelling reasons to attend or work at these esteemed institutions.",
+    keywords:
+      'Lincoln Nebraska, University of Nebraska-Lincoln, higher education, colleges, universities, Nobel Laureates, academics',
 
-  cityInfo: [
-      "Lincoln, Nebraska, is a dynamic academic center offering a diverse array of higher education institutions. From the renowned University of Nebraska-Lincoln to specialized colleges, the city fosters an environment conducive to academic excellence and innovation.",
-      "With a strong emphasis on research, innovation, and community engagement, Lincoln's universities and colleges play a pivotal role in shaping the intellectual landscape of the region and beyond."
-  ],
-  uniList: [
-      "University of Nebraska-Lincoln",
-      "Nebraska Wesleyan University",
-      "Union College",
-      "Kaplan University",
-      "Doane University-Lincoln Grand Island and Master"
-  ],
-  nobelInfo: [
+    cityInfo: [
+      'Lincoln, Nebraska, is a dynamic academic center offering a diverse array of higher education institutions. From the renowned University of Nebraska-Lincoln to specialized colleges, the city fosters an environment conducive to academic excellence and innovation.',
+      "With a strong emphasis on research, innovation, and community engagement, Lincoln's universities and colleges play a pivotal role in shaping the intellectual landscape of the region and beyond.",
+    ],
+    uniList: [
+      'University of Nebraska-Lincoln',
+      'Nebraska Wesleyan University',
+      'Union College',
+      'Kaplan University',
+      'Doane University-Lincoln Grand Island and Master',
+    ],
+    nobelInfo: [
       "While Lincoln hasn't produced Nobel Laureates directly associated with its institutions, the University of Nebraska-Lincoln has contributed significantly to various fields through its research endeavors. Notable alumni and faculty have made impactful contributions to areas such as agriculture, engineering, and the humanities.",
-      "Though not directly linked to Nobel recognition, the university's commitment to innovation and scholarly pursuit underscores its importance as a hub for knowledge creation and dissemination​."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Lincoln's academic community boasts notable scholars who have made substantial contributions to their respective fields. Faculty members at the University of Nebraska-Lincoln, Nebraska Wesleyan University, and other institutions are recognized for their research, teaching excellence, and community outreach."
-  ],
-  academicList: [],
-  promo: [
-      "Embark on a transformative educational journey in Lincoln, Nebraska, where top-tier universities and colleges offer unparalleled opportunities for intellectual growth and personal development. Engage with leading scholars, access cutting-edge research facilities, and immerse yourself in a vibrant academic community.",
-      "For professionals seeking employment, Lincoln's higher education institutions provide a fertile ground for career advancement and impactful research collaborations. Join a diverse and inclusive community dedicated to pushing the boundaries of knowledge and innovation​."
-  ],
-  image_url: "/cities/lincoln-nebras.jpg",
-  alt: "Lincoln, Nebraska City Skyline"
-},
+      "Though not directly linked to Nobel recognition, the university's commitment to innovation and scholarly pursuit underscores its importance as a hub for knowledge creation and dissemination​.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Lincoln's academic community boasts notable scholars who have made substantial contributions to their respective fields. Faculty members at the University of Nebraska-Lincoln, Nebraska Wesleyan University, and other institutions are recognized for their research, teaching excellence, and community outreach.",
+    ],
+    academicList: [],
+    promo: [
+      'Embark on a transformative educational journey in Lincoln, Nebraska, where top-tier universities and colleges offer unparalleled opportunities for intellectual growth and personal development. Engage with leading scholars, access cutting-edge research facilities, and immerse yourself in a vibrant academic community.',
+      "For professionals seeking employment, Lincoln's higher education institutions provide a fertile ground for career advancement and impactful research collaborations. Join a diverse and inclusive community dedicated to pushing the boundaries of knowledge and innovation​.",
+    ],
+    image_url: '/cities/academic-jobs-in-lincoln-nebras.jpg',
+    alt: 'Lincoln, Nebraska City Skyline',
+  },
 
-{
-  title: "Morgantown, West Virginia: A Hub of Academic Excellence",
-  h1: "Exploring Morgantown's Academic Landscape",
-  slug: "morgantown-west-virginia-academia",
-  city: "Morgantown",
-  region: "West Virginia",
-  country: "United States",
-  description: "Discover the vibrant academic scene of Morgantown, West Virginia, boasting prestigious universities and colleges, Nobel laureates, and renowned academics. Explore educational and professional opportunities in this thriving city.",
-  keywords: "Morgantown West Virginia, universities, colleges, academic excellence, Nobel laureates, research opportunities",
-  cityInfo: [
-      "Nestled in the picturesque landscapes of West Virginia, Morgantown thrives as a center for higher education and innovation. Home to West Virginia University (WVU), the city exudes intellectual vitality, attracting students and scholars from diverse backgrounds.",
-      "With its dynamic academic environment and cutting-edge research facilities, Morgantown fosters a culture of curiosity and excellence, making it an ideal destination for those seeking quality education and professional growth​."
-  ],
-  uniList: [
-      "West Virginia University",
-      "West Virginia Junior College",
-      "Mountain State College",
-      "Monongalia County Technical Education Center (MTEC)"
-  ],
-  nobelInfo: [
+  {
+    title: 'Morgantown, West Virginia: A Hub of Academic Excellence',
+    h1: "Exploring Morgantown's Academic Landscape",
+    slug: 'morgantown-west-virginia-academia',
+    city: 'Morgantown',
+    region: 'West Virginia',
+    country: 'United States',
+    description:
+      'Discover the vibrant academic scene of Morgantown, West Virginia, boasting prestigious universities and colleges, Nobel laureates, and renowned academics. Explore educational and professional opportunities in this thriving city.',
+    keywords:
+      'Morgantown West Virginia, universities, colleges, academic excellence, Nobel laureates, research opportunities',
+    cityInfo: [
+      'Nestled in the picturesque landscapes of West Virginia, Morgantown thrives as a center for higher education and innovation. Home to West Virginia University (WVU), the city exudes intellectual vitality, attracting students and scholars from diverse backgrounds.',
+      'With its dynamic academic environment and cutting-edge research facilities, Morgantown fosters a culture of curiosity and excellence, making it an ideal destination for those seeking quality education and professional growth​.',
+    ],
+    uniList: [
+      'West Virginia University',
+      'West Virginia Junior College',
+      'Mountain State College',
+      'Monongalia County Technical Education Center (MTEC)',
+    ],
+    nobelInfo: [
       "While Morgantown hasn't produced Nobel laureates directly, its academic institutions contribute significantly to global knowledge and innovation. WVU's research endeavors in various fields, including energy, healthcare, and technology, shape the future of industries worldwide.",
-      "Through collaborative efforts and groundbreaking discoveries, Morgantown's academic community continues to push the boundaries of knowledge, laying the foundation for a brighter and more sustainable future​."
-  ],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-      "Experience the intellectual vibrancy of Morgantown, where world-class education meets unparalleled research opportunities. Whether you're a student seeking academic excellence or a professional aiming to make a difference, Morgantown offers a stimulating environment for growth and innovation​."
-  ],
-  image_url: "/cities/morgantown-west-v.jpg",
-  alt: "Morgantown, West Virginia: A Hub of Academic Excellence"
-},
+      "Through collaborative efforts and groundbreaking discoveries, Morgantown's academic community continues to push the boundaries of knowledge, laying the foundation for a brighter and more sustainable future​.",
+    ],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Experience the intellectual vibrancy of Morgantown, where world-class education meets unparalleled research opportunities. Whether you're a student seeking academic excellence or a professional aiming to make a difference, Morgantown offers a stimulating environment for growth and innovation​.",
+    ],
+    image_url: '/cities/academic-jobs-in-morgantown-west-v.jpg',
+    alt: 'Morgantown, West Virginia: A Hub of Academic Excellence',
+  },
 
-{
-  title: "Exploring Moscow, Idaho: A Hub of Higher Learning",
-  h1: "Discover Moscow, Idaho's Academic Excellence",
-  slug: "exploring-moscow-idaho",
-  city: "Moscow",
-  region: "Idaho",
-  country: "United States",
-  description: "Explore Moscow, Idaho's vibrant academic landscape, boasting Nobel Laureates, esteemed universities, and renowned academics. Uncover opportunities for personal and professional growth in this thriving educational community.",
-  keywords: "Moscow Idaho, University of Idaho, higher education, academic excellence, Nobel Laureates, notable academics",
+  {
+    title: 'Exploring Moscow, Idaho: A Hub of Higher Learning',
+    h1: "Discover Moscow, Idaho's Academic Excellence",
+    slug: 'exploring-moscow-idaho',
+    city: 'Moscow',
+    region: 'Idaho',
+    country: 'United States',
+    description:
+      "Explore Moscow, Idaho's vibrant academic landscape, boasting Nobel Laureates, esteemed universities, and renowned academics. Uncover opportunities for personal and professional growth in this thriving educational community.",
+    keywords:
+      'Moscow Idaho, University of Idaho, higher education, academic excellence, Nobel Laureates, notable academics',
 
-  cityInfo: [
-      "Nestled in the picturesque landscapes of Idaho, Moscow stands as a beacon of intellectual prowess, anchored by the renowned University of Idaho. This vibrant city pulsates with the energy of higher learning, offering a diverse array of educational opportunities and cultural experiences.",
-      "With a rich history dating back to its founding in 1889, the University of Idaho remains a cornerstone of academic excellence, fostering innovation and discovery across various disciplines. Moscow's higher education landscape epitomizes a commitment to scholarly advancement and community engagement."
-  ],
-  uniList: [
-      "University of Idaho",
-      "New Saint Andrews College"
-  ],
-  nobelInfo: [
+    cityInfo: [
+      'Nestled in the picturesque landscapes of Idaho, Moscow stands as a beacon of intellectual prowess, anchored by the renowned University of Idaho. This vibrant city pulsates with the energy of higher learning, offering a diverse array of educational opportunities and cultural experiences.',
+      "With a rich history dating back to its founding in 1889, the University of Idaho remains a cornerstone of academic excellence, fostering innovation and discovery across various disciplines. Moscow's higher education landscape epitomizes a commitment to scholarly advancement and community engagement.",
+    ],
+    uniList: ['University of Idaho', 'New Saint Andrews College'],
+    nobelInfo: [
       "While Moscow, Idaho, may not have Nobel Laureates directly associated with its institutions, its academic community contributes significantly to global knowledge and innovation. The University of Idaho's commitment to research and discovery continues to inspire groundbreaking advancements across various fields, shaping the future of science, technology, and culture.",
-      "Though not boasting Nobel Laureates, Moscow's higher education institutions cultivate a fertile ground for intellectual exploration and academic achievement, enriching both the local community and the broader academic landscape."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Moscow, Idaho, is home to a cadre of distinguished academics who excel in their respective fields, enriching the scholarly landscape with their expertise and insights. From pioneering research in agriculture and environmental science to innovative approaches in literature and the arts, these academics embody the spirit of intellectual curiosity and academic rigor."
-  ],
-  academicList: [],
-  promo: [
-      "Embark on a journey of intellectual discovery in Moscow, Idaho, where the University of Idaho and other esteemed institutions offer unparalleled opportunities for educational and personal growth. Immerse yourself in a vibrant academic community, where innovation thrives, and collaboration knows no bounds.",
-      "For those seeking employment, Moscow's universities and colleges provide a dynamic environment ripe with professional and research opportunities. Join a community dedicated to pushing the boundaries of knowledge and making a meaningful impact on the world."
-  ],
-  image_url: "/cities/moscow-idaho.webp",
-  alt: "Scenic view of Moscow, Idaho"
-},
+      "Though not boasting Nobel Laureates, Moscow's higher education institutions cultivate a fertile ground for intellectual exploration and academic achievement, enriching both the local community and the broader academic landscape.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      'Moscow, Idaho, is home to a cadre of distinguished academics who excel in their respective fields, enriching the scholarly landscape with their expertise and insights. From pioneering research in agriculture and environmental science to innovative approaches in literature and the arts, these academics embody the spirit of intellectual curiosity and academic rigor.',
+    ],
+    academicList: [],
+    promo: [
+      'Embark on a journey of intellectual discovery in Moscow, Idaho, where the University of Idaho and other esteemed institutions offer unparalleled opportunities for educational and personal growth. Immerse yourself in a vibrant academic community, where innovation thrives, and collaboration knows no bounds.',
+      "For those seeking employment, Moscow's universities and colleges provide a dynamic environment ripe with professional and research opportunities. Join a community dedicated to pushing the boundaries of knowledge and making a meaningful impact on the world.",
+    ],
+    image_url: '/cities/academic-jobs-in-moscow-idaho.webp',
+    alt: 'Scenic view of Moscow, Idaho',
+  },
 
-{
-  title: "New Haven, Connecticut: Academic Hub",
-  h1: "Exploring the Academic Landscape of New Haven",
-  slug: "new-haven-connecticut-academic-hub",
-  city: "New Haven",
-  region: "Connecticut",
-  country: "United States",
-  description: "Discover the vibrant academic environment of New Haven, Connecticut, home to prestigious universities, groundbreaking research, and renowned scholars. Explore the city's rich history of intellectual achievement and innovation.",
-  keywords: "New Haven, Connecticut, universities, colleges, academia, Nobel Laureates, academics, research",
+  {
+    title: 'New Haven, Connecticut: Academic Hub',
+    h1: 'Exploring the Academic Landscape of New Haven',
+    slug: 'new-haven-connecticut-academic-hub',
+    city: 'New Haven',
+    region: 'Connecticut',
+    country: 'United States',
+    description:
+      "Discover the vibrant academic environment of New Haven, Connecticut, home to prestigious universities, groundbreaking research, and renowned scholars. Explore the city's rich history of intellectual achievement and innovation.",
+    keywords:
+      'New Haven, Connecticut, universities, colleges, academia, Nobel Laureates, academics, research',
 
-  cityInfo: [
-      "New Haven, Connecticut, nestled along the coast of Long Island Sound, boasts a diverse higher education landscape, anchored by the prestigious Yale University. Its academic institutions foster a dynamic intellectual community, attracting scholars and students from around the globe.",
-      "With a blend of Ivy League excellence and community-focused colleges, New Haven offers a unique educational experience, promoting interdisciplinary collaboration and innovation."
-  ],
-  uniList: [
-      "Yale University",
-      "Southern Connecticut State University",
-      "Albertus Magnus College",
-      "University of New Haven",
-      "Gateway Community College"
-  ],
-  nobelInfo: [
-      "New Haven celebrates its association with Nobel Laureates, exemplifying its contribution to global knowledge and innovation. Yale University has produced notable laureates, such as James Rothman in Physiology or Medicine for his work on vesicle trafficking, and Paul Krugman in Economic Sciences for his contributions to trade theory.",
-      "These laureates' groundbreaking research continues to shape their respective fields, enhancing the city's reputation as a hub of intellectual inquiry and discovery."
-  ],
-  nobelList: [
-      "James Rothman: Physiology or Medicine",
-      "Paul Krugman: Economic Sciences"
-  ],
-  academicInfo: [
-      "Notable academics from New Haven's institutions enrich diverse fields with their expertise and achievements. Yale University's faculty includes scholars like Robert Shiller, a Nobel Laureate recognized for his work in Economic Sciences, and Akhil Amar, a leading constitutional law expert whose insights influence legal discourse nationally."
-  ],
-  academicList: [
-      "Robert Shiller: Professor of Economics",
-      "Akhil Amar: Professor of Law"
-  ],
-  promo: [
-      "New Haven offers unparalleled opportunities for academic and personal growth. With prestigious institutions like Yale University and a vibrant intellectual community, students benefit from world-class education, diverse research opportunities, and a supportive environment fostering innovation and excellence.",
-      "For professionals, New Haven provides a fertile ground for career advancement, with access to cutting-edge research, collaboration with renowned scholars, and a vibrant cultural scene enriching the work-life balance."
-  ],
-  image_url: "/cities/new-haven-connecticut.jpeg",
-  alt: "New Haven, Connecticut skyline overlooking the harbor"
-},
+    cityInfo: [
+      'New Haven, Connecticut, nestled along the coast of Long Island Sound, boasts a diverse higher education landscape, anchored by the prestigious Yale University. Its academic institutions foster a dynamic intellectual community, attracting scholars and students from around the globe.',
+      'With a blend of Ivy League excellence and community-focused colleges, New Haven offers a unique educational experience, promoting interdisciplinary collaboration and innovation.',
+    ],
+    uniList: [
+      'Yale University',
+      'Southern Connecticut State University',
+      'Albertus Magnus College',
+      'University of New Haven',
+      'Gateway Community College',
+    ],
+    nobelInfo: [
+      'New Haven celebrates its association with Nobel Laureates, exemplifying its contribution to global knowledge and innovation. Yale University has produced notable laureates, such as James Rothman in Physiology or Medicine for his work on vesicle trafficking, and Paul Krugman in Economic Sciences for his contributions to trade theory.',
+      "These laureates' groundbreaking research continues to shape their respective fields, enhancing the city's reputation as a hub of intellectual inquiry and discovery.",
+    ],
+    nobelList: [
+      'James Rothman: Physiology or Medicine',
+      'Paul Krugman: Economic Sciences',
+    ],
+    academicInfo: [
+      "Notable academics from New Haven's institutions enrich diverse fields with their expertise and achievements. Yale University's faculty includes scholars like Robert Shiller, a Nobel Laureate recognized for his work in Economic Sciences, and Akhil Amar, a leading constitutional law expert whose insights influence legal discourse nationally.",
+    ],
+    academicList: [
+      'Robert Shiller: Professor of Economics',
+      'Akhil Amar: Professor of Law',
+    ],
+    promo: [
+      'New Haven offers unparalleled opportunities for academic and personal growth. With prestigious institutions like Yale University and a vibrant intellectual community, students benefit from world-class education, diverse research opportunities, and a supportive environment fostering innovation and excellence.',
+      'For professionals, New Haven provides a fertile ground for career advancement, with access to cutting-edge research, collaboration with renowned scholars, and a vibrant cultural scene enriching the work-life balance.',
+    ],
+    image_url: '/cities/academic-jobs-in-new-haven-connecticut.jpeg',
+    alt: 'New Haven, Connecticut skyline overlooking the harbor',
+  },
 
+  {
+    title: "Exploring Norman, Oklahoma's Academic Landscape",
+    h1: "Unlocking Excellence: Norman's Educational Odyssey",
+    slug: 'exploring-norman-oklahomas-academic-landscape',
+    city: 'Norman',
+    region: 'Oklahoma',
+    country: 'United States',
+    description:
+      "Discover Norman's vibrant academic community, Nobel Laureates, and renowned scholars. Explore educational and career opportunities at its prestigious institutions, shaping tomorrow's leaders and innovators.",
+    keywords:
+      'Norman Oklahoma, universities, colleges, education, academic excellence, Nobel Laureates, scholars, research',
 
-{
-  title: "Exploring Norman, Oklahoma's Academic Landscape",
-  h1: "Unlocking Excellence: Norman's Educational Odyssey",
-  slug: "exploring-norman-oklahomas-academic-landscape",
-  city: "Norman",
-  region: "Oklahoma",
-  country: "United States",
-  description: "Discover Norman's vibrant academic community, Nobel Laureates, and renowned scholars. Explore educational and career opportunities at its prestigious institutions, shaping tomorrow's leaders and innovators.",
-  keywords: "Norman Oklahoma, universities, colleges, education, academic excellence, Nobel Laureates, scholars, research",
+    cityInfo: [
+      'Norman, Oklahoma, boasts a dynamic educational landscape, anchored by the prestigious University of Oklahoma (OU). With a blend of public and private institutions, the city fosters a diverse academic environment, nurturing talents across various disciplines.',
+      'The higher education scene in Norman thrives on innovation and collaboration, attracting students and scholars worldwide to engage in cutting-edge research and transformative learning experiences.',
+    ],
+    uniList: [
+      'University of Oklahoma',
+      'Moore Norman Technology Center',
+      'Oklahoma City Community College - South Penn Campus',
+    ],
+    nobelInfo: [
+      'Norman, Oklahoma, proudly celebrates the achievements of Nobel Laureate Dr. George Hitchings, an alumnus of the University of Oklahoma. Dr. Hitchings was awarded the Nobel Prize in Physiology or Medicine in 1988 for his pioneering research in pharmacology, which revolutionized drug development and saved countless lives.',
+    ],
+    nobelList: ['George Hitchings: Physiology or Medicine'],
+    academicInfo: [
+      "Norman's academic community shines with notable figures like Dr. Boyd L. O'Dell, a distinguished professor at the University of Oklahoma. Dr. O'Dell's research in astrophysics has garnered international acclaim, advancing our understanding of celestial phenomena and inspiring future generations of astronomers.",
+    ],
+    academicList: ["Dr. Boyd L. O'Dell: Professor of Astrophysics"],
+    promo: [
+      "Embrace boundless opportunities for intellectual growth and professional development in Norman's thriving academic ecosystem. From world-class research facilities to vibrant campus life, the city offers an enriching environment for students and faculty alike to pursue their passions and make a meaningful impact on society.",
+    ],
+    image_url: '/cities/academic-jobs-in-norman.jpg',
+    alt: 'Norman, Oklahoma: A Beacon of Academic Excellence',
+  },
 
-  cityInfo: [
-    "Norman, Oklahoma, boasts a dynamic educational landscape, anchored by the prestigious University of Oklahoma (OU). With a blend of public and private institutions, the city fosters a diverse academic environment, nurturing talents across various disciplines.",
-    "The higher education scene in Norman thrives on innovation and collaboration, attracting students and scholars worldwide to engage in cutting-edge research and transformative learning experiences."
-  ],
-  uniList: [
-    "University of Oklahoma",
-    "Moore Norman Technology Center",
-    "Oklahoma City Community College - South Penn Campus"
-  ],
-  nobelInfo: [
-    "Norman, Oklahoma, proudly celebrates the achievements of Nobel Laureate Dr. George Hitchings, an alumnus of the University of Oklahoma. Dr. Hitchings was awarded the Nobel Prize in Physiology or Medicine in 1988 for his pioneering research in pharmacology, which revolutionized drug development and saved countless lives."
-  ],
-  nobelList: ["George Hitchings: Physiology or Medicine"],
-  academicInfo: [
-    "Norman's academic community shines with notable figures like Dr. Boyd L. O'Dell, a distinguished professor at the University of Oklahoma. Dr. O'Dell's research in astrophysics has garnered international acclaim, advancing our understanding of celestial phenomena and inspiring future generations of astronomers."
-  ],
-  academicList: [
-    "Dr. Boyd L. O'Dell: Professor of Astrophysics"
-  ],
-  promo: [
-    "Embrace boundless opportunities for intellectual growth and professional development in Norman's thriving academic ecosystem. From world-class research facilities to vibrant campus life, the city offers an enriching environment for students and faculty alike to pursue their passions and make a meaningful impact on society."
-  ],
-  image_url: "/cities/norman.jpg",
-  alt: "Norman, Oklahoma: A Beacon of Academic Excellence"
-},
+  {
+    title: 'Oxford, Mississippi: Hub of Academic Excellence',
+    h1: "Exploring Oxford's Educational Landscape",
+    slug: 'oxford-mississippi-hub-of-academic-excellence',
+    city: 'Oxford',
+    region: 'Mississippi',
+    country: 'United States',
+    description:
+      "Discover Oxford, Mississippi, renowned for its vibrant academic community, prestigious universities, and notable contributions to research and innovation. Explore the city's educational offerings and rich intellectual heritage.",
+    keywords:
+      'Oxford Mississippi, University of Mississippi, higher education, academic excellence, Nobel Laureates, notable academics, research opportunities',
 
+    cityInfo: [
+      'Nestled in the heart of Mississippi, Oxford thrives as a center of academic excellence, boasting a diverse array of prestigious universities and colleges. With a rich history dating back centuries, the city has cultivated a vibrant intellectual community that continues to inspire innovation and knowledge creation.',
+      'Home to the esteemed University of Mississippi, Oxford offers students and scholars unparalleled opportunities for growth, exploration, and academic achievement. Its charming streets, lined with historic architecture and bustling cultural venues, provide the perfect backdrop for a transformative educational experience​.',
+    ],
+    uniList: ['University of Mississippi'],
+    nobelInfo: [
+      'While Oxford may not have Nobel Laureates directly associated with its institutions, the intellectual environment fostered by the University of Mississippi contributes significantly to global knowledge and innovation. Alumni and faculty members have made notable contributions across various fields, enriching the academic landscape and advancing human understanding.',
+      "Though not directly recognized by Nobel Prizes, the University of Mississippi's commitment to research and scholarly excellence remains unwavering, positioning it as a vital hub for academic inquiry and intellectual pursuit​.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Oxford's academic community flourishes with notable scholars and educators who enrich their respective fields with groundbreaking research and innovative teaching methodologies. From pioneering scientists to acclaimed literary critics, these academics embody the spirit of intellectual curiosity and scholarly rigor that defines Oxford's educational landscape.",
+      'While their achievements may vary, these academics share a common dedication to advancing knowledge and fostering critical thinking skills among students. Their presence enhances the academic vibrancy of Oxford, attracting learners and researchers from around the world eager to engage with their expertise and insights​.',
+    ],
+    academicList: [],
+    promo: [
+      "Considering Oxford for your academic journey promises a unique blend of educational excellence, personal growth opportunities, and a vibrant intellectual community. Whether you're a prospective student seeking a supportive learning environment or a seasoned scholar pursuing research endeavors, Oxford offers the ideal setting to thrive and succeed​.",
+      "Join a community of passionate educators, dedicated researchers, and curious minds united in their pursuit of knowledge and innovation. Experience the charm of Oxford's historic streets, the warmth of its welcoming community, and the endless possibilities for intellectual exploration and academic achievement​.",
+    ],
+    image_url: '/cities/academic-jobs-in-oxford-miss.jpg',
+    alt: 'Oxford, Mississippi: A picturesque blend of academia and charm',
+  },
 
-{
-  title: "Oxford, Mississippi: Hub of Academic Excellence",
-  h1: "Exploring Oxford's Educational Landscape",
-  slug: "oxford-mississippi-hub-of-academic-excellence",
-  city: "Oxford",
-  region: "Mississippi",
-  country: "United States",
-  description: "Discover Oxford, Mississippi, renowned for its vibrant academic community, prestigious universities, and notable contributions to research and innovation. Explore the city's educational offerings and rich intellectual heritage.",
-  keywords: "Oxford Mississippi, University of Mississippi, higher education, academic excellence, Nobel Laureates, notable academics, research opportunities",
+  {
+    title: 'Palo Alto, California: Hub of Innovation and Learning',
+    h1: "Exploring Palo Alto's Academic Landscape",
+    slug: 'palo-alto-california-academics',
+    city: 'Palo Alto',
+    region: 'California',
+    country: 'United States',
+    description:
+      'Discover the vibrant academic community of Palo Alto, California, home to renowned universities and colleges, Nobel Laureates, and distinguished academics. Explore the diverse educational opportunities and groundbreaking research initiatives driving innovation and intellectual growth in this dynamic city.',
+    keywords:
+      'Palo Alto, California, universities, colleges, academia, Nobel Laureates, academics, research, innovation',
 
+    cityInfo: [
+      'Palo Alto, California, is renowned for its dynamic academic landscape, boasting prestigious universities and colleges that foster innovation and intellectual growth. With its close proximity to Silicon Valley, Palo Alto offers a unique environment where academia intersects with cutting-edge technology and entrepreneurship, creating unparalleled opportunities for students and scholars alike.',
+      "The city's higher education institutions reflect a diverse range of disciplines, from technology and engineering to humanities and social sciences, attracting students and faculty from around the globe seeking to contribute to the forefront of knowledge and innovation.",
+    ],
+    uniList: [
+      'Stanford University',
+      'Palo Alto University',
+      'Foothill College',
+      'Menlo College',
+      'Cogswell Polytechnical College',
+    ],
+    nobelInfo: [
+      'Palo Alto has produced notable Nobel Laureates whose groundbreaking work has had a profound impact on global knowledge and innovation. Stanford University, in particular, boasts several Nobel Laureates across various fields, including Economics, Physics, and Chemistry. Recent laureates include Michael Levitt, recognized for his work in computational biology, and William E. Moerner for his contributions to the development of super-resolved fluorescence microscopy.',
+      "These laureates exemplify Palo Alto's commitment to pushing the boundaries of research and discovery, further solidifying the city's reputation as a hub of intellectual excellence and scientific innovation.",
+    ],
+    nobelList: ['Michael Levitt: Chemistry', 'William E. Moerner: Chemistry'],
+    academicInfo: [
+      'Palo Alto is home to numerous notable academics who have made significant contributions to their respective fields. Stanford University, in particular, boasts a roster of distinguished faculty members whose research spans a wide range of disciplines, from artificial intelligence and machine learning to literature and the arts.',
+      'These academics not only contribute to the advancement of knowledge through their research but also inspire and mentor the next generation of scholars, fostering a culture of excellence and inquiry within the academic community.',
+    ],
+    academicList: [],
+    promo: [
+      "Consider attending or working at a university or college in Palo Alto to immerse yourself in a vibrant academic environment that celebrates innovation and intellectual curiosity. Whether you're a student seeking educational opportunities at the forefront of research or a professional looking to collaborate with world-renowned scholars, Palo Alto offers a unique ecosystem where creativity and intellect thrive.",
+      'Join a community dedicated to pushing the boundaries of knowledge and shaping the future through interdisciplinary collaboration and innovative thinking. Experience the excitement of being at the heart of Silicon Valley, where academia meets entrepreneurship, and discover endless opportunities for personal and professional growth.',
+    ],
+    image_url: '/cities/academic-jobs-in-palo-alto.jpg',
+    alt: 'Palo Alto, California: Hub of Innovation and Learning',
+  },
 
-  cityInfo: [
-    "Nestled in the heart of Mississippi, Oxford thrives as a center of academic excellence, boasting a diverse array of prestigious universities and colleges. With a rich history dating back centuries, the city has cultivated a vibrant intellectual community that continues to inspire innovation and knowledge creation.",
-    "Home to the esteemed University of Mississippi, Oxford offers students and scholars unparalleled opportunities for growth, exploration, and academic achievement. Its charming streets, lined with historic architecture and bustling cultural venues, provide the perfect backdrop for a transformative educational experience​."
-  ],
-  uniList: [
-    "University of Mississippi"
-  ],
-  nobelInfo: [
-    "While Oxford may not have Nobel Laureates directly associated with its institutions, the intellectual environment fostered by the University of Mississippi contributes significantly to global knowledge and innovation. Alumni and faculty members have made notable contributions across various fields, enriching the academic landscape and advancing human understanding.",
-    "Though not directly recognized by Nobel Prizes, the University of Mississippi's commitment to research and scholarly excellence remains unwavering, positioning it as a vital hub for academic inquiry and intellectual pursuit​."
-  ],
-  nobelList: [],
-  academicInfo: [
-    "Oxford's academic community flourishes with notable scholars and educators who enrich their respective fields with groundbreaking research and innovative teaching methodologies. From pioneering scientists to acclaimed literary critics, these academics embody the spirit of intellectual curiosity and scholarly rigor that defines Oxford's educational landscape.",
-    "While their achievements may vary, these academics share a common dedication to advancing knowledge and fostering critical thinking skills among students. Their presence enhances the academic vibrancy of Oxford, attracting learners and researchers from around the world eager to engage with their expertise and insights​."
-  ],
-  academicList: [],
-  promo: [
-    "Considering Oxford for your academic journey promises a unique blend of educational excellence, personal growth opportunities, and a vibrant intellectual community. Whether you're a prospective student seeking a supportive learning environment or a seasoned scholar pursuing research endeavors, Oxford offers the ideal setting to thrive and succeed​.",
-    "Join a community of passionate educators, dedicated researchers, and curious minds united in their pursuit of knowledge and innovation. Experience the charm of Oxford's historic streets, the warmth of its welcoming community, and the endless possibilities for intellectual exploration and academic achievement​."
-  ],
-  image_url: "/cities/oxford-miss.jpg",
-  alt: "Oxford, Mississippi: A picturesque blend of academia and charm"
-},
+  {
+    title: 'Princeton, New Jersey: Academic Excellence and Intellectual Legacy',
+    h1: "Exploring Princeton's Educational Landscape",
+    slug: 'princeton-new-jersey-academic-landscape',
+    city: 'Princeton',
+    region: 'New Jersey',
+    country: 'United States',
+    description:
+      'Discover the rich academic heritage of Princeton, New Jersey, home to prestigious institutions like Princeton University and a hub for groundbreaking research. Explore Nobel laureates, notable academics, and compelling reasons to engage with this vibrant academic community.',
+    keywords:
+      'Princeton, Princeton University, New Jersey, education, academia, research',
 
-
-{
-  title: "Palo Alto, California: Hub of Innovation and Learning",
-  h1: "Exploring Palo Alto's Academic Landscape",
-  slug: "palo-alto-california-academics",
-  city: "Palo Alto",
-  region: "California",
-  country: "United States",
-  description: "Discover the vibrant academic community of Palo Alto, California, home to renowned universities and colleges, Nobel Laureates, and distinguished academics. Explore the diverse educational opportunities and groundbreaking research initiatives driving innovation and intellectual growth in this dynamic city.",
-  keywords: "Palo Alto, California, universities, colleges, academia, Nobel Laureates, academics, research, innovation",
-
-  cityInfo: [
-    "Palo Alto, California, is renowned for its dynamic academic landscape, boasting prestigious universities and colleges that foster innovation and intellectual growth. With its close proximity to Silicon Valley, Palo Alto offers a unique environment where academia intersects with cutting-edge technology and entrepreneurship, creating unparalleled opportunities for students and scholars alike.",
-    "The city's higher education institutions reflect a diverse range of disciplines, from technology and engineering to humanities and social sciences, attracting students and faculty from around the globe seeking to contribute to the forefront of knowledge and innovation."
-  ],
-  uniList: [
-    "Stanford University",
-    "Palo Alto University",
-    "Foothill College",
-    "Menlo College",
-    "Cogswell Polytechnical College"
-  ],
-  nobelInfo: [
-    "Palo Alto has produced notable Nobel Laureates whose groundbreaking work has had a profound impact on global knowledge and innovation. Stanford University, in particular, boasts several Nobel Laureates across various fields, including Economics, Physics, and Chemistry. Recent laureates include Michael Levitt, recognized for his work in computational biology, and William E. Moerner for his contributions to the development of super-resolved fluorescence microscopy.",
-    "These laureates exemplify Palo Alto's commitment to pushing the boundaries of research and discovery, further solidifying the city's reputation as a hub of intellectual excellence and scientific innovation."
-  ],
-  nobelList: [
-    "Michael Levitt: Chemistry",
-    "William E. Moerner: Chemistry"
-  ],
-  academicInfo: [
-    "Palo Alto is home to numerous notable academics who have made significant contributions to their respective fields. Stanford University, in particular, boasts a roster of distinguished faculty members whose research spans a wide range of disciplines, from artificial intelligence and machine learning to literature and the arts.",
-    "These academics not only contribute to the advancement of knowledge through their research but also inspire and mentor the next generation of scholars, fostering a culture of excellence and inquiry within the academic community."
-  ],
-  academicList: [],
-  promo: [
-    "Consider attending or working at a university or college in Palo Alto to immerse yourself in a vibrant academic environment that celebrates innovation and intellectual curiosity. Whether you're a student seeking educational opportunities at the forefront of research or a professional looking to collaborate with world-renowned scholars, Palo Alto offers a unique ecosystem where creativity and intellect thrive.",
-    "Join a community dedicated to pushing the boundaries of knowledge and shaping the future through interdisciplinary collaboration and innovative thinking. Experience the excitement of being at the heart of Silicon Valley, where academia meets entrepreneurship, and discover endless opportunities for personal and professional growth."
-  ],
-  image_url: "/cities/palo-alto.jpg",
-  alt: "Palo Alto, California: Hub of Innovation and Learning"
-},
-
-
-{
-  title: "Princeton, New Jersey: Academic Excellence and Intellectual Legacy",
-  h1: "Exploring Princeton's Educational Landscape",
-  slug: "princeton-new-jersey-academic-landscape",
-  city: "Princeton",
-  region: "New Jersey",
-  country: "United States",
-  description: "Discover the rich academic heritage of Princeton, New Jersey, home to prestigious institutions like Princeton University and a hub for groundbreaking research. Explore Nobel laureates, notable academics, and compelling reasons to engage with this vibrant academic community.",
-  keywords: "Princeton, Princeton University, New Jersey, education, academia, research",
-
-  cityInfo: [
-      "Nestled in New Jersey, Princeton epitomizes academic excellence, boasting a vibrant higher education landscape. Renowned for Princeton University, the city fosters intellectual curiosity and innovation, attracting scholars globally.",
-      "Its diverse educational institutions provide a stimulating environment for students and researchers, contributing significantly to knowledge creation and dissemination​."
-  ],
-  uniList: [
-      "Princeton University"
+    cityInfo: [
+      'Nestled in New Jersey, Princeton epitomizes academic excellence, boasting a vibrant higher education landscape. Renowned for Princeton University, the city fosters intellectual curiosity and innovation, attracting scholars globally.',
+      'Its diverse educational institutions provide a stimulating environment for students and researchers, contributing significantly to knowledge creation and dissemination​.',
+    ],
+    uniList: [
+      'Princeton University',
       // Add more if available
-  ],
-  nobelInfo: [
-      "Princeton has left an indelible mark on the world stage, evidenced by its Nobel laureates. Princeton University counts among its alumni and faculty members individuals such as Toni Morrison, recognized for literature, and Eric S. Maskin for economics.",
-      "These laureates' contributions span various disciplines, enriching global understanding and showcasing Princeton's commitment to academic excellence​."
-  ],
-  nobelList: [
-      "Toni Morrison: Literature",
-      "Eric S. Maskin: Economics"
+    ],
+    nobelInfo: [
+      'Princeton has left an indelible mark on the world stage, evidenced by its Nobel laureates. Princeton University counts among its alumni and faculty members individuals such as Toni Morrison, recognized for literature, and Eric S. Maskin for economics.',
+      "These laureates' contributions span various disciplines, enriching global understanding and showcasing Princeton's commitment to academic excellence​.",
+    ],
+    nobelList: [
+      'Toni Morrison: Literature',
+      'Eric S. Maskin: Economics',
       // Add more if available
-  ],
-  academicInfo: [
+    ],
+    academicInfo: [
       "Princeton's academic community shines with luminaries who have shaped their respective fields. Notable figures include Sir W. Arthur Lewis, Nobel laureate in Economics, whose pioneering work in development economics continues to influence policy.",
-      "Moreover, the city fosters interdisciplinary collaboration, nurturing scholars who drive innovation and tackle pressing global challenges​."
-  ],
-  academicList: [
-      "Sir W. Arthur Lewis: Economics Professor"
+      'Moreover, the city fosters interdisciplinary collaboration, nurturing scholars who drive innovation and tackle pressing global challenges​.',
+    ],
+    academicList: [
+      'Sir W. Arthur Lewis: Economics Professor',
       // Add more if available
-  ],
-  promo: [
-      "Consider Princeton for unparalleled educational opportunities. With a legacy of academic excellence and a commitment to innovation, institutions like Princeton University offer a transformative experience.",
-      "Whether you seek intellectual growth or professional development, Princeton's dynamic academic community provides the ideal environment to thrive and make meaningful contributions​."
-  ],
-  image_url: "/cities/princton-nj.jpg",
-  alt: "Princeton, New Jersey: A cityscape view showcasing academic excellence"
-},
+    ],
+    promo: [
+      'Consider Princeton for unparalleled educational opportunities. With a legacy of academic excellence and a commitment to innovation, institutions like Princeton University offer a transformative experience.',
+      "Whether you seek intellectual growth or professional development, Princeton's dynamic academic community provides the ideal environment to thrive and make meaningful contributions​.",
+    ],
+    image_url: '/cities/academic-jobs-in-princton-nj.jpg',
+    alt: 'Princeton, New Jersey: A cityscape view showcasing academic excellence',
+  },
 
+  {
+    title: 'Pullman, Washington: Educational Hub and Intellectual Center',
+    h1: 'Exploring Pullman, Washington',
+    slug: 'pullman-washington-educational-hub',
+    city: 'Pullman',
+    region: 'Washington State',
+    country: 'United States',
+    description:
+      'Discover the academic vibrancy of Pullman, Washington, home to renowned universities and colleges, Nobel laureates, and esteemed academics. Explore educational and career opportunities in this thriving intellectual community.',
+    keywords:
+      'Pullman, Washington, universities, colleges, higher education, Nobel laureates, academics, research, employment, education',
 
-{
-  title: "Pullman, Washington: Educational Hub and Intellectual Center",
-  h1: "Exploring Pullman, Washington",
-  slug: "pullman-washington-educational-hub",
-  city: "Pullman",
-  region: "Washington State",
-  country: "United States",
-  description: "Discover the academic vibrancy of Pullman, Washington, home to renowned universities and colleges, Nobel laureates, and esteemed academics. Explore educational and career opportunities in this thriving intellectual community.",
-  keywords: "Pullman, Washington, universities, colleges, higher education, Nobel laureates, academics, research, employment, education",
+    cityInfo: [
+      'Pullman, Washington, situated in the heart of Washington State, embodies a rich academic tradition with its prestigious universities and colleges. The city thrives as a center for higher education, fostering innovation, diversity, and academic excellence.',
+      'Nestled amidst scenic landscapes, Pullman offers a vibrant and supportive environment for students, faculty, and researchers to pursue their academic endeavors, creating a dynamic intellectual hub within the Pacific Northwest region.',
+    ],
+    uniList: ['Washington State University'],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Pullman, Washington, beckons with unparalleled educational and personal growth opportunities. As a student, immerse yourself in a stimulating academic environment, enriched by renowned faculty and cutting-edge research facilities. For professionals, Pullman offers abundant opportunities for career advancement and impactful research collaborations, making it an ideal destination for academic pursuits and professional growth.',
+    ],
+    image_url: '/cities/academic-jobs-in-pullman.jpg',
+    alt: 'Scenic view of Pullman, Washington campus',
+  },
 
-  cityInfo: [
-    "Pullman, Washington, situated in the heart of Washington State, embodies a rich academic tradition with its prestigious universities and colleges. The city thrives as a center for higher education, fostering innovation, diversity, and academic excellence.",
-    "Nestled amidst scenic landscapes, Pullman offers a vibrant and supportive environment for students, faculty, and researchers to pursue their academic endeavors, creating a dynamic intellectual hub within the Pacific Northwest region."
-  ],
-  uniList: [
-    "Washington State University"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Pullman, Washington, beckons with unparalleled educational and personal growth opportunities. As a student, immerse yourself in a stimulating academic environment, enriched by renowned faculty and cutting-edge research facilities. For professionals, Pullman offers abundant opportunities for career advancement and impactful research collaborations, making it an ideal destination for academic pursuits and professional growth."
-  ],
-  image_url: "/cities/pullman.jpg",
-  alt: "Scenic view of Pullman, Washington campus"
-},
+  {
+    title:
+      'Stanford, California: Academic Haven in the Heart of Silicon Valley',
+    h1: "Exploring Stanford's Academic Landscape",
+    slug: 'stanford-california-academic-haven',
+    city: 'Stanford',
+    region: 'California',
+    country: 'United States',
+    description:
+      "Discover Stanford, California's vibrant academic scene nestled within Silicon Valley. Explore renowned universities, Nobel Laureates, and influential academics shaping the city's intellectual legacy.",
+    keywords:
+      'Stanford California, Stanford University, Silicon Valley education, Nobel Laureates, academic excellence',
 
-{
-  title: "Stanford, California: Academic Haven in the Heart of Silicon Valley",
-  h1: "Exploring Stanford's Academic Landscape",
-  slug: "stanford-california-academic-haven",
-  city: "Stanford",
-  region: "California",
-  country: "United States",
-  description: "Discover Stanford, California's vibrant academic scene nestled within Silicon Valley. Explore renowned universities, Nobel Laureates, and influential academics shaping the city's intellectual legacy.",
-  keywords: "Stanford California, Stanford University, Silicon Valley education, Nobel Laureates, academic excellence",
-
-  cityInfo: [
-      "Stanford, California, situated in the heart of Silicon Valley, boasts a diverse and esteemed higher education landscape. Home to Stanford University, a world-renowned institution, the city offers a plethora of academic opportunities, from cutting-edge research to innovative teaching methodologies.",
-      "The city's educational ecosystem thrives on collaboration and innovation, attracting scholars, researchers, and students from around the globe. With its proximity to leading tech companies and entrepreneurial hubs, Stanford fosters a unique environment that merges academia with industry, preparing individuals for success in an ever-evolving world."
-  ],
-  uniList: [
-      "Stanford University"
-  ],
-  nobelInfo: [
+    cityInfo: [
+      'Stanford, California, situated in the heart of Silicon Valley, boasts a diverse and esteemed higher education landscape. Home to Stanford University, a world-renowned institution, the city offers a plethora of academic opportunities, from cutting-edge research to innovative teaching methodologies.',
+      "The city's educational ecosystem thrives on collaboration and innovation, attracting scholars, researchers, and students from around the globe. With its proximity to leading tech companies and entrepreneurial hubs, Stanford fosters a unique environment that merges academia with industry, preparing individuals for success in an ever-evolving world.",
+    ],
+    uniList: ['Stanford University'],
+    nobelInfo: [
       "Stanford's intellectual prowess is exemplified by its Nobel Laureates. Notably, in 2020, two Stanford professors, Paul Milgrom and Robert Wilson, were awarded the Nobel Prize in Economic Sciences for their contributions to auction theory and inventions of new auction formats, enhancing efficiency in various markets.",
-      "Additionally, Stanford alumni have left an indelible mark on various fields, including Physics, Chemistry, and Medicine, further solidifying the university's global impact and commitment to advancing knowledge and innovation."
-  ],
-  nobelList: ["Paul Milgrom: Economic Sciences", "Robert Wilson: Economic Sciences"],
-  academicInfo: [
+      "Additionally, Stanford alumni have left an indelible mark on various fields, including Physics, Chemistry, and Medicine, further solidifying the university's global impact and commitment to advancing knowledge and innovation.",
+    ],
+    nobelList: [
+      'Paul Milgrom: Economic Sciences',
+      'Robert Wilson: Economic Sciences',
+    ],
+    academicInfo: [
       "Stanford's academic community comprises distinguished scholars and educators who continue to shape their respective fields. Notable figures include Jennifer Eberhardt, a psychologist renowned for her research on implicit bias and racial inequality, and Fei-Fei Li, a leading expert in artificial intelligence and computer vision, advancing the frontiers of technology and social understanding.",
-      "Moreover, Stanford's interdisciplinary approach to education fosters collaboration across disciplines, driving groundbreaking discoveries and societal impact. From pioneering medical breakthroughs to innovative approaches in engineering and social sciences, Stanford cultivates a culture of excellence and exploration."
-  ],
-  academicList: [
-      "Jennifer Eberhardt: Professor of Psychology",
-      "Fei-Fei Li: Professor of Computer Science"
-  ],
-  promo: [
-      "Stanford offers unparalleled opportunities for personal and professional growth. With access to cutting-edge research, top-notch faculty, and a vibrant community, students can engage in transformative learning experiences that prepare them for success in their careers and beyond.",
-      "For academics and researchers, Stanford provides a dynamic environment where collaboration thrives, fostering groundbreaking discoveries and innovation. Whether in the fields of technology, social sciences, or humanities, Stanford offers a platform to make meaningful contributions to society and shape the future of knowledge."
-  ],
-  image_url: "/cities/stanford.jpg",
-  alt: "Stanford California skyline with palm trees"
-},
+      "Moreover, Stanford's interdisciplinary approach to education fosters collaboration across disciplines, driving groundbreaking discoveries and societal impact. From pioneering medical breakthroughs to innovative approaches in engineering and social sciences, Stanford cultivates a culture of excellence and exploration.",
+    ],
+    academicList: [
+      'Jennifer Eberhardt: Professor of Psychology',
+      'Fei-Fei Li: Professor of Computer Science',
+    ],
+    promo: [
+      'Stanford offers unparalleled opportunities for personal and professional growth. With access to cutting-edge research, top-notch faculty, and a vibrant community, students can engage in transformative learning experiences that prepare them for success in their careers and beyond.',
+      'For academics and researchers, Stanford provides a dynamic environment where collaboration thrives, fostering groundbreaking discoveries and innovation. Whether in the fields of technology, social sciences, or humanities, Stanford offers a platform to make meaningful contributions to society and shape the future of knowledge.',
+    ],
+    image_url: '/cities/academic-jobs-in-stanford.jpg',
+    alt: 'Stanford California skyline with palm trees',
+  },
 
-
-{
-  title: "Syracuse, New York: Hub of Higher Education",
-  h1: "Exploring Syracuse's Academic Landscape",
-  slug: "syracuse-new-york-hub-of-higher-education",
-  city: "Syracuse",
-  region: "New York",
-  country: "United States",
-  description: "Discover Syracuse, New York, a vibrant academic hub renowned for its prestigious universities, diverse research opportunities, and intellectual prowess. Explore the city's rich educational landscape and the contributions of its Nobel Laureates and notable academics.",
-  keywords: "Syracuse, New York, universities, colleges, academia, Nobel Laureates, academics, research opportunities",
-  cityInfo: [
-      "Syracuse, USA, boasts a dynamic higher education environment, home to several renowned universities and colleges that cater to diverse academic interests and pursuits. From cutting-edge research facilities to vibrant campus communities, Syracuse offers a comprehensive educational experience.",
-      "With a focus on innovation and excellence, Syracuse's higher education institutions foster a collaborative and interdisciplinary approach to learning, preparing students for success in an ever-evolving global landscape."
-  ],
-  uniList: [
-      "Syracuse University",
-      "State University of New York (SUNY) College of Environmental Science and Forestry",
-      "Le Moyne College",
-      "Onondaga Community College",
-      "Upstate Medical University",
-      "Bryant & Stratton College"
-  ],
-  nobelInfo: [
-      "Syracuse has yet to produce Nobel Laureates, but its academic institutions continue to make significant contributions to various fields, laying the groundwork for future groundbreaking discoveries and advancements."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Syracuse's academic community boasts notable scholars and educators who have made substantial contributions to their respective disciplines. From pioneering research to innovative teaching methods, these academics enrich the educational landscape and inspire future generations."
-  ],
-  academicList: [],
-  promo: [
+  {
+    title: 'Syracuse, New York: Hub of Higher Education',
+    h1: "Exploring Syracuse's Academic Landscape",
+    slug: 'syracuse-new-york-hub-of-higher-education',
+    city: 'Syracuse',
+    region: 'New York',
+    country: 'United States',
+    description:
+      "Discover Syracuse, New York, a vibrant academic hub renowned for its prestigious universities, diverse research opportunities, and intellectual prowess. Explore the city's rich educational landscape and the contributions of its Nobel Laureates and notable academics.",
+    keywords:
+      'Syracuse, New York, universities, colleges, academia, Nobel Laureates, academics, research opportunities',
+    cityInfo: [
+      'Syracuse, USA, boasts a dynamic higher education environment, home to several renowned universities and colleges that cater to diverse academic interests and pursuits. From cutting-edge research facilities to vibrant campus communities, Syracuse offers a comprehensive educational experience.',
+      "With a focus on innovation and excellence, Syracuse's higher education institutions foster a collaborative and interdisciplinary approach to learning, preparing students for success in an ever-evolving global landscape.",
+    ],
+    uniList: [
+      'Syracuse University',
+      'State University of New York (SUNY) College of Environmental Science and Forestry',
+      'Le Moyne College',
+      'Onondaga Community College',
+      'Upstate Medical University',
+      'Bryant & Stratton College',
+    ],
+    nobelInfo: [
+      'Syracuse has yet to produce Nobel Laureates, but its academic institutions continue to make significant contributions to various fields, laying the groundwork for future groundbreaking discoveries and advancements.',
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Syracuse's academic community boasts notable scholars and educators who have made substantial contributions to their respective disciplines. From pioneering research to innovative teaching methods, these academics enrich the educational landscape and inspire future generations.",
+    ],
+    academicList: [],
+    promo: [
       "Syracuse offers unparalleled educational and personal growth opportunities, with its diverse array of programs, state-of-the-art facilities, and supportive learning environments. Whether you're pursuing undergraduate studies or graduate research, Syracuse's universities and colleges provide the ideal setting for academic excellence and personal development.",
-      "For professionals seeking employment opportunities, Syracuse's higher education institutions offer a fertile ground for career advancement and innovation. With access to cutting-edge research projects, industry partnerships, and a collaborative community of scholars, working in Syracuse's academic sector promises professional fulfillment and the chance to contribute to meaningful discoveries."
-  ],
-  image_url: "/cities/syracuse-ny.jpg",
-  alt: "Syracuse, New York skyline"
-},
+      "For professionals seeking employment opportunities, Syracuse's higher education institutions offer a fertile ground for career advancement and innovation. With access to cutting-edge research projects, industry partnerships, and a collaborative community of scholars, working in Syracuse's academic sector promises professional fulfillment and the chance to contribute to meaningful discoveries.",
+    ],
+    image_url: '/cities/academic-jobs-in-syracuse-ny.jpg',
+    alt: 'Syracuse, New York skyline',
+  },
 
-{
-  title: "Tallahassee, Florida: Education Hub & Intellectual Haven",
-  h1: "Discover Tallahassee's Academic Landscape",
-  slug: "tallahassee-florida-education",
-  city: "Tallahassee",
-  region: "Florida",
-  country: "United States",
-  description: "Explore Tallahassee's vibrant academic scene, home to renowned universities and colleges, Nobel Laureates, and distinguished academics. Unlock opportunities for education, research, and personal growth in this dynamic city.",
-  keywords: "Tallahassee, Florida, universities, colleges, education, Nobel Laureates, academics",
+  {
+    title: 'Tallahassee, Florida: Education Hub & Intellectual Haven',
+    h1: "Discover Tallahassee's Academic Landscape",
+    slug: 'tallahassee-florida-education',
+    city: 'Tallahassee',
+    region: 'Florida',
+    country: 'United States',
+    description:
+      "Explore Tallahassee's vibrant academic scene, home to renowned universities and colleges, Nobel Laureates, and distinguished academics. Unlock opportunities for education, research, and personal growth in this dynamic city.",
+    keywords:
+      'Tallahassee, Florida, universities, colleges, education, Nobel Laureates, academics',
 
-  cityInfo: [
-    "Tallahassee, Florida, thrives as a hub of education and innovation, boasting a diverse range of universities and colleges. The city's academic landscape offers a blend of traditional excellence and cutting-edge research, fostering an environment ripe for intellectual exploration and growth.",
-    "Nestled in the heart of the Sunshine State, Tallahassee's higher education institutions attract students and scholars from around the globe, contributing to its rich cultural tapestry and intellectual vitality."
-  ],
-  uniList: [
-    "Florida State University",
-    "Florida A&M University",
-    "Tallahassee Community College",
-    "Keiser University - Tallahassee Campus",
-    "Flagler College - Tallahassee Campus"
-  ],
-  nobelInfo: [
-    "While Tallahassee hasn't produced Nobel Laureates directly affiliated with its institutions, its academic community contributes significantly to global knowledge and innovation. Notably, Florida State University's research in various fields, including climate science, materials physics, and psychology, has garnered international recognition, positioning the university as a leader in impactful research and scholarship.",
-    "Though no Nobel Laureates hail from Tallahassee's universities, the city's commitment to fostering excellence in education and research continues to attract top-tier faculty and students, further enriching its academic ecosystem and contributing to advancements in diverse fields."
-  ],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Consider Tallahassee for unparalleled opportunities in education and research. Florida's capital city offers a conducive environment for academic and personal growth, with world-class universities and colleges at the forefront of innovation and discovery. Whether you're a prospective student seeking rigorous academic programs or a seasoned academic looking to make a difference, Tallahassee beckons with its vibrant intellectual community and boundless possibilities. Join us in shaping the future of knowledge and innovation."
-  ],
-  image_url: "/cities/tallahassee-flor.jpg",
-  alt: "Tallahassee, Florida - Cityscape"
-},
+    cityInfo: [
+      "Tallahassee, Florida, thrives as a hub of education and innovation, boasting a diverse range of universities and colleges. The city's academic landscape offers a blend of traditional excellence and cutting-edge research, fostering an environment ripe for intellectual exploration and growth.",
+      "Nestled in the heart of the Sunshine State, Tallahassee's higher education institutions attract students and scholars from around the globe, contributing to its rich cultural tapestry and intellectual vitality.",
+    ],
+    uniList: [
+      'Florida State University',
+      'Florida A&M University',
+      'Tallahassee Community College',
+      'Keiser University - Tallahassee Campus',
+      'Flagler College - Tallahassee Campus',
+    ],
+    nobelInfo: [
+      "While Tallahassee hasn't produced Nobel Laureates directly affiliated with its institutions, its academic community contributes significantly to global knowledge and innovation. Notably, Florida State University's research in various fields, including climate science, materials physics, and psychology, has garnered international recognition, positioning the university as a leader in impactful research and scholarship.",
+      "Though no Nobel Laureates hail from Tallahassee's universities, the city's commitment to fostering excellence in education and research continues to attract top-tier faculty and students, further enriching its academic ecosystem and contributing to advancements in diverse fields.",
+    ],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Consider Tallahassee for unparalleled opportunities in education and research. Florida's capital city offers a conducive environment for academic and personal growth, with world-class universities and colleges at the forefront of innovation and discovery. Whether you're a prospective student seeking rigorous academic programs or a seasoned academic looking to make a difference, Tallahassee beckons with its vibrant intellectual community and boundless possibilities. Join us in shaping the future of knowledge and innovation.",
+    ],
+    image_url: '/cities/academic-jobs-in-tallahassee-flor.jpg',
+    alt: 'Tallahassee, Florida - Cityscape',
+  },
 
-
-{
-  title: "Tempe, Arizona: A Hub of Knowledge and Innovation",
-  h1: "Exploring Tempe, Arizona's Academic Landscape",
-  slug: "tempe-arizona-academic-landscape",
-  city: "Tempe",
-  region: "Arizona",
-  country: "United States",
-  description: "Discover the vibrant academic scene in Tempe, Arizona, boasting prestigious universities, renowned academics, and groundbreaking research. Explore the city's legacy of intellectual excellence and innovation.",
-  keywords: "Tempe Arizona, Arizona State University, higher education, universities, colleges, academics, research, Nobel Laureates, innovation",
-  cityInfo: [
-      "Tempe, Arizona, nestled in the heart of the state, is a thriving center of higher education and innovation. Home to Arizona State University (ASU), one of the largest public research universities in the U.S., the city fosters a diverse and dynamic academic environment. With its desert landscape and vibrant cultural scene, Tempe offers students a unique backdrop for their educational journey.",
-      "The city's higher education landscape is characterized by its commitment to excellence and inclusivity, attracting scholars and students from around the globe. From cutting-edge research facilities to a rich tapestry of cultural experiences, Tempe provides an enriching environment for personal and academic growth."
-  ],
-  uniList: [
-      "Arizona State University (ASU)",
-      "Rio Salado College",
-      "Southwest College of Naturopathic Medicine & Health Sciences"
-  ],
-  nobelInfo: [
+  {
+    title: 'Tempe, Arizona: A Hub of Knowledge and Innovation',
+    h1: "Exploring Tempe, Arizona's Academic Landscape",
+    slug: 'tempe-arizona-academic-landscape',
+    city: 'Tempe',
+    region: 'Arizona',
+    country: 'United States',
+    description:
+      "Discover the vibrant academic scene in Tempe, Arizona, boasting prestigious universities, renowned academics, and groundbreaking research. Explore the city's legacy of intellectual excellence and innovation.",
+    keywords:
+      'Tempe Arizona, Arizona State University, higher education, universities, colleges, academics, research, Nobel Laureates, innovation',
+    cityInfo: [
+      'Tempe, Arizona, nestled in the heart of the state, is a thriving center of higher education and innovation. Home to Arizona State University (ASU), one of the largest public research universities in the U.S., the city fosters a diverse and dynamic academic environment. With its desert landscape and vibrant cultural scene, Tempe offers students a unique backdrop for their educational journey.',
+      "The city's higher education landscape is characterized by its commitment to excellence and inclusivity, attracting scholars and students from around the globe. From cutting-edge research facilities to a rich tapestry of cultural experiences, Tempe provides an enriching environment for personal and academic growth.",
+    ],
+    uniList: [
+      'Arizona State University (ASU)',
+      'Rio Salado College',
+      'Southwest College of Naturopathic Medicine & Health Sciences',
+    ],
+    nobelInfo: [
       "While Tempe itself hasn't produced Nobel Laureates, Arizona State University's esteemed faculty and alumni have made significant contributions to various fields. Notable among them is Dr. Lindon Eaves, an ASU graduate, whose pioneering work in behavioral genetics laid the groundwork for understanding complex human traits and diseases.",
-      "Additionally, ASU's interdisciplinary research initiatives, particularly in sustainability and innovation, continue to garner global recognition. While the city may not have Nobel Laureates, its academic community is driving impactful research and innovation forward."
-  ],
-  nobelList: [],
-  academicInfo: [
+      "Additionally, ASU's interdisciplinary research initiatives, particularly in sustainability and innovation, continue to garner global recognition. While the city may not have Nobel Laureates, its academic community is driving impactful research and innovation forward.",
+    ],
+    nobelList: [],
+    academicInfo: [
       "Tempe's academic community boasts a roster of esteemed scholars and educators who have left indelible marks on their respective fields. Dr. Lindon Eaves, an ASU alum, stands out for his groundbreaking contributions to behavioral genetics, revolutionizing our understanding of human behavior and health.",
-      "Furthermore, the city is home to renowned academics across disciplines such as sustainability, social sciences, and engineering, shaping the future of research and education. Their collective expertise enriches Tempe's academic landscape and inspires the next generation of scholars."
-  ],
-  academicList: [],
-  promo: [
+      "Furthermore, the city is home to renowned academics across disciplines such as sustainability, social sciences, and engineering, shaping the future of research and education. Their collective expertise enriches Tempe's academic landscape and inspires the next generation of scholars.",
+    ],
+    academicList: [],
+    promo: [
       "Arizona State University offers unparalleled opportunities for both students and faculty, with state-of-the-art facilities, innovative research programs, and a commitment to diversity and inclusion. Whether you're pursuing higher education or seeking employment in academia, Tempe provides a supportive and stimulating environment for personal and professional growth.",
-      "From cutting-edge research initiatives to a vibrant cultural scene, Tempe offers a dynamic setting for academic exploration and collaboration. Join the ranks of leading scholars and innovators who call Tempe home and be part of a community dedicated to pushing the boundaries of knowledge and discovery."
-  ],
-  image_url: "/cities/temple-ari.jpg",
-  alt: "Downtown Tempe skyline with vibrant sunset colors"
-},
+      'From cutting-edge research initiatives to a vibrant cultural scene, Tempe offers a dynamic setting for academic exploration and collaboration. Join the ranks of leading scholars and innovators who call Tempe home and be part of a community dedicated to pushing the boundaries of knowledge and discovery.',
+    ],
+    image_url: '/cities/academic-jobs-in-temple-ari.jpg',
+    alt: 'Downtown Tempe skyline with vibrant sunset colors',
+  },
 
+  {
+    title: 'Tuscaloosa, Alabama: Education Hub and Intellectual Center',
+    h1: "Exploring Tuscaloosa's Academic Landscape",
+    slug: 'tuscaloosa-alabama-education-hub',
+    city: 'Tuscaloosa',
+    region: 'Alabama',
+    country: 'United States',
+    description:
+      'Discover the vibrant academic scene of Tuscaloosa, Alabama, featuring renowned universities, notable academics, and a rich history of intellectual achievements. Explore the reasons why attending or working at one of its institutions can lead to unparalleled educational and professional growth opportunities.',
+    keywords:
+      'Tuscaloosa Alabama, universities, colleges, academics, Nobel Laureates, higher education, research, employment opportunities',
 
-{
-  title: "Tuscaloosa, Alabama: Education Hub and Intellectual Center",
-  h1: "Exploring Tuscaloosa's Academic Landscape",
-  slug: "tuscaloosa-alabama-education-hub",
-  city: "Tuscaloosa",
-  region: "Alabama",
-  country: "United States",
-  description: "Discover the vibrant academic scene of Tuscaloosa, Alabama, featuring renowned universities, notable academics, and a rich history of intellectual achievements. Explore the reasons why attending or working at one of its institutions can lead to unparalleled educational and professional growth opportunities.",
-  keywords: "Tuscaloosa Alabama, universities, colleges, academics, Nobel Laureates, higher education, research, employment opportunities",
-
-  cityInfo: [
-      "Tuscaloosa, Alabama, epitomizes academic excellence with its array of prestigious universities and colleges, fostering a diverse and vibrant educational environment. This dynamic city blends southern charm with intellectual vigor, offering students and scholars a unique experience.",
-      "Renowned for its higher education institutions, Tuscaloosa boasts a rich history of intellectual achievement, attracting learners and educators from around the globe to its welcoming community."
-  ],
-  uniList: [
-      "University of Alabama",
-      "Stillman College",
-      "Shelton State Community College"
-  ],
-  nobelInfo: [
+    cityInfo: [
+      'Tuscaloosa, Alabama, epitomizes academic excellence with its array of prestigious universities and colleges, fostering a diverse and vibrant educational environment. This dynamic city blends southern charm with intellectual vigor, offering students and scholars a unique experience.',
+      'Renowned for its higher education institutions, Tuscaloosa boasts a rich history of intellectual achievement, attracting learners and educators from around the globe to its welcoming community.',
+    ],
+    uniList: [
+      'University of Alabama',
+      'Stillman College',
+      'Shelton State Community College',
+    ],
+    nobelInfo: [
       "While Tuscaloosa may not have Nobel Laureates directly associated with the city's institutions, its academic community contributes significantly to global knowledge and innovation. The University of Alabama's research initiatives in various fields hold promise for future breakthroughs and advancements.",
-      "Although no Nobel Laureates have emerged from Tuscaloosa's universities, the city's commitment to research and academic excellence continues to shape the landscape of higher education, positioning it as a hub for intellectual growth and innovation​."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Tuscaloosa's academic community is adorned with notable scholars and educators who enrich their respective fields with groundbreaking research and scholarship. From the University of Alabama's distinguished faculty to the accomplished researchers at Stillman College and Shelton State Community College, the city fosters an environment conducive to intellectual exploration and academic achievement."
-  ],
-  academicList: [],
-  promo: [
+      "Although no Nobel Laureates have emerged from Tuscaloosa's universities, the city's commitment to research and academic excellence continues to shape the landscape of higher education, positioning it as a hub for intellectual growth and innovation​.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Tuscaloosa's academic community is adorned with notable scholars and educators who enrich their respective fields with groundbreaking research and scholarship. From the University of Alabama's distinguished faculty to the accomplished researchers at Stillman College and Shelton State Community College, the city fosters an environment conducive to intellectual exploration and academic achievement.",
+    ],
+    academicList: [],
+    promo: [
       "Experience unparalleled educational and personal growth opportunities by attending one of Tuscaloosa's esteemed universities or colleges. Benefit from world-class faculty, cutting-edge research facilities, and a vibrant campus life that nurtures holistic development and lifelong learning​.",
-      "Joining the academic community in Tuscaloosa offers unmatched professional and research opportunities, allowing individuals to collaborate with top-tier scholars, contribute to groundbreaking research initiatives, and make a meaningful impact on society​."
-  ],
-  image_url: "/cities/tuscaloosa-alaba.jpg",
-  alt: "Tuscaloosa, Alabama: A blend of southern charm and academic excellence"
-},
+      'Joining the academic community in Tuscaloosa offers unmatched professional and research opportunities, allowing individuals to collaborate with top-tier scholars, contribute to groundbreaking research initiatives, and make a meaningful impact on society​.',
+    ],
+    image_url: '/cities/academic-jobs-in-tuscaloosa-alaba.jpg',
+    alt: 'Tuscaloosa, Alabama: A blend of southern charm and academic excellence',
+  },
 
-{
-  title: "Tuskegee, Alabama: Education Hub and Intellectual Nexus",
-  h1: "Discover Tuskegee's Academic Landscape",
-  slug: "tuskegee-alabama-education",
-  city: "Tuskegee",
-  region: "Alabama",
-  country: "United States",
-  description: "Explore Tuskegee, Alabama's vibrant educational scene, boasting prestigious institutions, renowned academics, and a legacy of excellence. Discover why attending or working in Tuskegee offers unparalleled opportunities for personal growth, professional development, and groundbreaking research.",
-  keywords: "Tuskegee Alabama, Tuskegee University, higher education, Nobel Laureates, academics, research opportunities",
-  cityInfo: [
-      "Tuskegee, Alabama, epitomizes academic diversity and strength, home to Tuskegee University, a renowned historically black university (HBCU) with a rich legacy of academic excellence. Its educational landscape reflects a commitment to inclusivity and innovation.",
-      "Additionally, Tuskegee's higher education institutions foster a dynamic environment where students and scholars from diverse backgrounds converge to pursue knowledge and contribute to societal progress."
-  ],
-  uniList: [
-      "Tuskegee University"
-  ],
-  "nobelInfo": [
-      "",
-      ""
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Tuskegee's academic community is characterized by notable scholars who have made significant contributions to various fields. From pioneering research in agricultural science to impactful social activism, these academics embody Tuskegee's commitment to academic excellence and community engagement."
-  ],
-  academicList: [],
-  promo: [
-      "Tuskegee offers unparalleled opportunities for personal growth and academic advancement. With its vibrant intellectual community, state-of-the-art facilities, and a legacy of excellence, attending or working in Tuskegee promises a transformative educational experience.",
-      "For professionals seeking employment, Tuskegee provides a conducive environment for groundbreaking research, interdisciplinary collaboration, and meaningful community outreach, fostering career growth and societal impact."
-  ],
-  image_url: "/cities/tuskegee-alab.jpg",
-  alt: "Tuskegee, Alabama: A hub of education and innovation"
-},
+  {
+    title: 'Tuskegee, Alabama: Education Hub and Intellectual Nexus',
+    h1: "Discover Tuskegee's Academic Landscape",
+    slug: 'tuskegee-alabama-education',
+    city: 'Tuskegee',
+    region: 'Alabama',
+    country: 'United States',
+    description:
+      "Explore Tuskegee, Alabama's vibrant educational scene, boasting prestigious institutions, renowned academics, and a legacy of excellence. Discover why attending or working in Tuskegee offers unparalleled opportunities for personal growth, professional development, and groundbreaking research.",
+    keywords:
+      'Tuskegee Alabama, Tuskegee University, higher education, Nobel Laureates, academics, research opportunities',
+    cityInfo: [
+      'Tuskegee, Alabama, epitomizes academic diversity and strength, home to Tuskegee University, a renowned historically black university (HBCU) with a rich legacy of academic excellence. Its educational landscape reflects a commitment to inclusivity and innovation.',
+      "Additionally, Tuskegee's higher education institutions foster a dynamic environment where students and scholars from diverse backgrounds converge to pursue knowledge and contribute to societal progress.",
+    ],
+    uniList: ['Tuskegee University'],
+    nobelInfo: ['', ''],
+    nobelList: [],
+    academicInfo: [
+      "Tuskegee's academic community is characterized by notable scholars who have made significant contributions to various fields. From pioneering research in agricultural science to impactful social activism, these academics embody Tuskegee's commitment to academic excellence and community engagement.",
+    ],
+    academicList: [],
+    promo: [
+      'Tuskegee offers unparalleled opportunities for personal growth and academic advancement. With its vibrant intellectual community, state-of-the-art facilities, and a legacy of excellence, attending or working in Tuskegee promises a transformative educational experience.',
+      'For professionals seeking employment, Tuskegee provides a conducive environment for groundbreaking research, interdisciplinary collaboration, and meaningful community outreach, fostering career growth and societal impact.',
+    ],
+    image_url: '/cities/academic-jobs-in-tuskegee-alab.jpg',
+    alt: 'Tuskegee, Alabama: A hub of education and innovation',
+  },
 
+  {
+    title: 'University Park, Pennsylvania: Higher Education Hub',
+    h1: 'Exploring University Park, Pennsylvania',
+    slug: 'university-park-pennsylvania-higher-education-hub',
+    city: 'University Park',
+    region: 'Centre County',
+    country: 'United States',
+    description:
+      'Discover the academic excellence of University Park, Pennsylvania, with its distinguished universities, notable academics, and contributions to global knowledge. Explore opportunities for education, research, and personal growth in this vibrant higher education hub.',
+    keywords:
+      'University Park Pennsylvania, higher education, universities, colleges, academia, research',
 
-{
-  title: "University Park, Pennsylvania: Higher Education Hub",
-  h1: "Exploring University Park, Pennsylvania",
-  slug: "university-park-pennsylvania-higher-education-hub",
-  city: "University Park",
-  region: "Centre County",
-  country: "United States",
-  description: "Discover the academic excellence of University Park, Pennsylvania, with its distinguished universities, notable academics, and contributions to global knowledge. Explore opportunities for education, research, and personal growth in this vibrant higher education hub.",
-  keywords: "University Park Pennsylvania, higher education, universities, colleges, academia, research",
+    cityInfo: [
+      'University Park, Pennsylvania, nestled in Centre County, stands as a beacon of higher education excellence in the United States. Boasting a diverse array of universities and colleges, the city fosters an environment of academic innovation, cultural enrichment, and personal growth.',
+      'With Pennsylvania State University (Penn State) at its heart, University Park attracts students and scholars from around the globe. Its vibrant campus life, cutting-edge research facilities, and renowned faculty contribute to a dynamic learning experience.',
+    ],
+    uniList: [
+      'Pennsylvania State University (Penn State)',
+      'Penn State Law',
+      'Penn State College of Medicine',
+      'Penn State Dickinson Law',
+      'Penn State World Campus',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'University Park, Pennsylvania, offers unparalleled opportunities for both education and employment. As a student, immerse yourself in a supportive academic community, benefit from world-class research facilities, and explore diverse cultural experiences. For professionals, join a dynamic workforce engaged in groundbreaking research, innovative teaching methodologies, and collaborative endeavors shaping the future of education.',
+    ],
+    image_url: '/cities/academic-jobs-in-university-park-penn.jpg',
+    alt: 'Aerial view of University Park, Pennsylvania',
+  },
 
-  cityInfo: [
-      "University Park, Pennsylvania, nestled in Centre County, stands as a beacon of higher education excellence in the United States. Boasting a diverse array of universities and colleges, the city fosters an environment of academic innovation, cultural enrichment, and personal growth.",
-      "With Pennsylvania State University (Penn State) at its heart, University Park attracts students and scholars from around the globe. Its vibrant campus life, cutting-edge research facilities, and renowned faculty contribute to a dynamic learning experience."
-  ],
-  uniList: [
-      "Pennsylvania State University (Penn State)",
-      "Penn State Law",
-      "Penn State College of Medicine",
-      "Penn State Dickinson Law",
-      "Penn State World Campus"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-      "University Park, Pennsylvania, offers unparalleled opportunities for both education and employment. As a student, immerse yourself in a supportive academic community, benefit from world-class research facilities, and explore diverse cultural experiences. For professionals, join a dynamic workforce engaged in groundbreaking research, innovative teaching methodologies, and collaborative endeavors shaping the future of education."
-  ],
-  image_url: "/cities/university-park-penn.jpg",
-  alt: "Aerial view of University Park, Pennsylvania"
-},
+  {
+    title: 'Urbana-Champaign: A Hub of Academic Excellence',
+    h1: "Exploring Urbana-Champaign's Education Landscape",
+    slug: 'urbana-champaign-education-landscape',
+    city: 'Urbana-Champaign',
+    region: 'Illinois',
+    country: 'United States',
+    description:
+      'Discover the vibrant academic scene of Urbana-Champaign, Illinois, home to renowned universities and colleges, Nobel Laureates, and distinguished academics. Explore educational and professional opportunities in this dynamic city.',
+    keywords:
+      'Urbana-Champaign, Illinois, universities, colleges, education, academic excellence, Nobel Laureates, academics, research',
 
-
-{
-  title: "Urbana-Champaign: A Hub of Academic Excellence",
-  h1: "Exploring Urbana-Champaign's Education Landscape",
-  slug: "urbana-champaign-education-landscape",
-  city: "Urbana-Champaign",
-  region: "Illinois",
-  country: "United States",
-  description: "Discover the vibrant academic scene of Urbana-Champaign, Illinois, home to renowned universities and colleges, Nobel Laureates, and distinguished academics. Explore educational and professional opportunities in this dynamic city.",
-  keywords: "Urbana-Champaign, Illinois, universities, colleges, education, academic excellence, Nobel Laureates, academics, research",
-
-  cityInfo: [
-      "Urbana-Champaign, Illinois, boasts a diverse and thriving higher education landscape, anchored by the prestigious University of Illinois at Urbana-Champaign (UIUC). With a range of institutions offering specialized programs, the city fosters innovation, research, and intellectual growth.",
-      "Additionally, Urbana-Champaign embraces its cultural diversity, providing students with unique opportunities for cross-cultural exchange and learning, enriching the academic experience."
-  ],
-  uniList: [
-      "University of Illinois at Urbana-Champaign",
-      "Parkland College",
-      "Midwest Technical Institute",
-      "The Illinois Institute of Art-Chicago (Urbana-Champaign)"
-  ],
-  nobelInfo: [
+    cityInfo: [
+      'Urbana-Champaign, Illinois, boasts a diverse and thriving higher education landscape, anchored by the prestigious University of Illinois at Urbana-Champaign (UIUC). With a range of institutions offering specialized programs, the city fosters innovation, research, and intellectual growth.',
+      'Additionally, Urbana-Champaign embraces its cultural diversity, providing students with unique opportunities for cross-cultural exchange and learning, enriching the academic experience.',
+    ],
+    uniList: [
+      'University of Illinois at Urbana-Champaign',
+      'Parkland College',
+      'Midwest Technical Institute',
+      'The Illinois Institute of Art-Chicago (Urbana-Champaign)',
+    ],
+    nobelInfo: [
       "Urbana-Champaign has left an indelible mark on the global stage through its Nobel Laureates. Among them, UIUC alumna Donna Strickland received the Nobel Prize in Physics for her groundbreaking work on laser physics, demonstrating the city's contributions to scientific advancement.",
-      "Furthermore, UIUC Nobel Laureate John Bardeen, recognized twice in Physics for his co-invention of the transistor and his theory of superconductivity, underscores the city's legacy of excellence in research and innovation."
-  ],
-  nobelList: [
-      "Donna Strickland: Physics",
-      "John Bardeen: Physics (twice)"
-  ],
-  academicInfo: [
-      "Urbana-Champaign's academic community is enriched by distinguished scholars and educators. Notable academics like Nick Holonyak Jr., known for his invention of the LED, and Richard Powers, Pulitzer Prize-winning author and UIUC faculty member, contribute to the city's intellectual vibrancy."
-  ],
-  academicList: [
-      "Nick Holonyak Jr.: Professor of Electrical and Computer Engineering",
-      "Richard Powers: Professor of English"
-  ],
-  promo: [
-      "Urbana-Champaign offers unparalleled educational and professional opportunities. With world-class faculty, cutting-edge research facilities, and a supportive academic environment, students can pursue their passions and expand their horizons. For professionals, the city provides a fertile ground for collaboration, innovation, and career advancement, making it an ideal destination for those seeking academic and professional excellence."
-  ],
-  image_url: "/cities/urbana-champaign.jpg",
-  alt: "Urbana-Champaign skyline"
-},
+      "Furthermore, UIUC Nobel Laureate John Bardeen, recognized twice in Physics for his co-invention of the transistor and his theory of superconductivity, underscores the city's legacy of excellence in research and innovation.",
+    ],
+    nobelList: ['Donna Strickland: Physics', 'John Bardeen: Physics (twice)'],
+    academicInfo: [
+      "Urbana-Champaign's academic community is enriched by distinguished scholars and educators. Notable academics like Nick Holonyak Jr., known for his invention of the LED, and Richard Powers, Pulitzer Prize-winning author and UIUC faculty member, contribute to the city's intellectual vibrancy.",
+    ],
+    academicList: [
+      'Nick Holonyak Jr.: Professor of Electrical and Computer Engineering',
+      'Richard Powers: Professor of English',
+    ],
+    promo: [
+      'Urbana-Champaign offers unparalleled educational and professional opportunities. With world-class faculty, cutting-edge research facilities, and a supportive academic environment, students can pursue their passions and expand their horizons. For professionals, the city provides a fertile ground for collaboration, innovation, and career advancement, making it an ideal destination for those seeking academic and professional excellence.',
+    ],
+    image_url: '/cities/academic-jobs-in-urbana-champaign.jpg',
+    alt: 'Urbana-Champaign skyline',
+  },
 
-{
-  title: "Waco, Texas: Hub of Higher Education",
-  h1: "Exploring Waco's Educational Landscape",
-  slug: "waco-texas-higher-education",
-  city: "Waco",
-  region: "Texas, McLennan County",
-  country: "United States",
-  description: "Discover the vibrant educational environment of Waco, Texas, boasting renowned universities and colleges, Nobel laureates, and esteemed academics. Explore opportunities for personal growth and professional advancement in this thriving city.",
-  keywords: "Waco Texas, Baylor University, higher education, Nobel laureates, academics, research",
+  {
+    title: 'Waco, Texas: Hub of Higher Education',
+    h1: "Exploring Waco's Educational Landscape",
+    slug: 'waco-texas-higher-education',
+    city: 'Waco',
+    region: 'Texas, McLennan County',
+    country: 'United States',
+    description:
+      'Discover the vibrant educational environment of Waco, Texas, boasting renowned universities and colleges, Nobel laureates, and esteemed academics. Explore opportunities for personal growth and professional advancement in this thriving city.',
+    keywords:
+      'Waco Texas, Baylor University, higher education, Nobel laureates, academics, research',
 
-  cityInfo: [
-    "Waco, Texas, stands as a beacon of higher education in the heart of Texas, offering a diverse array of educational opportunities. Home to Baylor University, a prestigious institution renowned for its academic excellence and vibrant campus life, Waco attracts students from around the globe seeking top-tier education and personal growth.",
-    "Moreover, Waco hosts several other institutions, including Texas State Technical College and McLennan Community College, each contributing to the city's rich educational landscape and fostering a culture of innovation and learning."
-  ],
-  uniList: [
-    "Baylor University",
-    "Texas State Technical College",
-    "McLennan Community College"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Waco offers a unique blend of educational and professional opportunities, making it an ideal destination for both students and academics alike. With its world-class institutions like Baylor University leading the way in research and innovation, individuals can immerse themselves in a stimulating academic environment while pursuing their passions and career aspirations.",
-    "Furthermore, Waco's thriving community and strategic location within Texas provide ample opportunities for collaboration, networking, and career advancement, making it an attractive choice for those seeking a dynamic and rewarding educational experience."
-  ],
-  image_url: "/cities/waco-texas.jpg",
-  alt: "A panoramic view of Waco, Texas, showcasing its vibrant cityscape and scenic surroundings."
-},
+    cityInfo: [
+      'Waco, Texas, stands as a beacon of higher education in the heart of Texas, offering a diverse array of educational opportunities. Home to Baylor University, a prestigious institution renowned for its academic excellence and vibrant campus life, Waco attracts students from around the globe seeking top-tier education and personal growth.',
+      "Moreover, Waco hosts several other institutions, including Texas State Technical College and McLennan Community College, each contributing to the city's rich educational landscape and fostering a culture of innovation and learning.",
+    ],
+    uniList: [
+      'Baylor University',
+      'Texas State Technical College',
+      'McLennan Community College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Waco offers a unique blend of educational and professional opportunities, making it an ideal destination for both students and academics alike. With its world-class institutions like Baylor University leading the way in research and innovation, individuals can immerse themselves in a stimulating academic environment while pursuing their passions and career aspirations.',
+      "Furthermore, Waco's thriving community and strategic location within Texas provide ample opportunities for collaboration, networking, and career advancement, making it an attractive choice for those seeking a dynamic and rewarding educational experience.",
+    ],
+    image_url: '/cities/academic-jobs-in-waco-texas.jpg',
+    alt: 'A panoramic view of Waco, Texas, showcasing its vibrant cityscape and scenic surroundings.',
+  },
 
+  {
+    title: 'Exploring Higher Education in West Lafayette, Indiana',
+    h1: "Discover West Lafayette's Vibrant Academic Landscape",
+    slug: 'exploring-higher-education-west-lafayette-indiana',
+    city: 'West Lafayette',
+    region: 'Indiana',
+    country: 'United States',
+    description:
+      'Explore the dynamic educational hub of West Lafayette, Indiana, renowned for its prestigious universities and colleges, Nobel Laureates, and influential academics. Uncover opportunities for personal growth, cutting-edge research, and professional development.',
+    keywords:
+      'West Lafayette Indiana, Purdue University, higher education, academic hub, Nobel Laureates, notable academics',
 
-{
-  title: "Exploring Higher Education in West Lafayette, Indiana",
-  h1: "Discover West Lafayette's Vibrant Academic Landscape",
-  slug: "exploring-higher-education-west-lafayette-indiana",
-  city: "West Lafayette",
-  region: "Indiana",
-  country: "United States",
-  description: "Explore the dynamic educational hub of West Lafayette, Indiana, renowned for its prestigious universities and colleges, Nobel Laureates, and influential academics. Uncover opportunities for personal growth, cutting-edge research, and professional development.",
-  keywords: "West Lafayette Indiana, Purdue University, higher education, academic hub, Nobel Laureates, notable academics",
+    cityInfo: [
+      'Nestled in Indiana, West Lafayette thrives as an academic epicenter, anchored by Purdue University. This vibrant city pulsates with intellectual energy, offering a diverse range of educational pursuits and cultural experiences.',
+      "Purdue University stands as the crown jewel of West Lafayette's higher education landscape, renowned for its pioneering research, innovative programs, and commitment to excellence.",
+    ],
+    uniList: ['Purdue University'],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [],
+    image_url: '/cities/academic-jobs-in-west-lafayette-indi.jpg',
+    alt: 'A scenic view of West Lafayette, Indiana',
+  },
 
-  cityInfo: [
-    "Nestled in Indiana, West Lafayette thrives as an academic epicenter, anchored by Purdue University. This vibrant city pulsates with intellectual energy, offering a diverse range of educational pursuits and cultural experiences.",
-    "Purdue University stands as the crown jewel of West Lafayette's higher education landscape, renowned for its pioneering research, innovative programs, and commitment to excellence."
-  ],
-  uniList: [
-    "Purdue University"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [],
-  image_url: "/cities/west-lafayette-indi.jpg",
-  alt: "A scenic view of West Lafayette, Indiana"
-},
+  {
+    title: 'Williamsburg, Virginia: Educational Hub & Intellectual Center',
+    h1: "Discover Williamsburg's Vibrant Academic Landscape",
+    slug: 'williamsburg-virginia-educational-hub',
+    city: 'Williamsburg',
+    region: 'Virginia',
+    country: 'United States',
+    description:
+      'Explore Williamsburg, Virginia, a dynamic educational hub renowned for its prestigious institutions, distinguished academics, and impactful research. From Nobel Laureates to diverse academic offerings, find out why Williamsburg is an ideal destination for both students and professionals.',
+    keywords:
+      'Williamsburg Virginia, College of William & Mary, universities, colleges, academics, Nobel Laureates',
 
+    cityInfo: [
+      'Williamsburg, Virginia, nestled in the heart of historic Virginia, boasts a rich tapestry of intellectual pursuits and educational excellence. Home to the prestigious College of William & Mary, founded in 1693, the city embraces a tradition of scholarship and innovation.',
+      "The educational landscape of Williamsburg extends beyond its renowned university, encompassing a diverse array of colleges and institutions, each contributing to the city's vibrant intellectual community. From liberal arts colleges to specialized research centers, Williamsburg offers a holistic approach to higher education.",
+    ],
+    uniList: [
+      'College of William & Mary',
+      'Eastern Virginia Medical School',
+      'Thomas Nelson Community College',
+      'and more.',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Williamsburg beckons with unparalleled opportunities for educational and personal growth. Whether you seek to delve into history, pursue cutting-edge research, or engage in vibrant community initiatives, Williamsburg offers a conducive environment for intellectual exploration and academic advancement.',
+      'For professionals, Williamsburg presents a fertile ground for career development and research endeavors. With access to top-notch facilities, collaborative networks, and a supportive academic community, working in Williamsburg promises both fulfillment and professional success.',
+    ],
+    image_url: '/cities/academic-jobs-in-willamsburg.jpg',
+    alt: 'Williamsburg, Virginia: Historic streets and buildings',
+  },
 
-{
-  title: "Williamsburg, Virginia: Educational Hub & Intellectual Center",
-  h1: "Discover Williamsburg's Vibrant Academic Landscape",
-  slug: "williamsburg-virginia-educational-hub",
-  city: "Williamsburg",
-  region: "Virginia",
-  country: "United States",
-  description: "Explore Williamsburg, Virginia, a dynamic educational hub renowned for its prestigious institutions, distinguished academics, and impactful research. From Nobel Laureates to diverse academic offerings, find out why Williamsburg is an ideal destination for both students and professionals.",
-  keywords: "Williamsburg Virginia, College of William & Mary, universities, colleges, academics, Nobel Laureates",
-
-  cityInfo: [
-      "Williamsburg, Virginia, nestled in the heart of historic Virginia, boasts a rich tapestry of intellectual pursuits and educational excellence. Home to the prestigious College of William & Mary, founded in 1693, the city embraces a tradition of scholarship and innovation.",
-      "The educational landscape of Williamsburg extends beyond its renowned university, encompassing a diverse array of colleges and institutions, each contributing to the city's vibrant intellectual community. From liberal arts colleges to specialized research centers, Williamsburg offers a holistic approach to higher education."
-  ],
-  uniList: [
-      "College of William & Mary",
-      "Eastern Virginia Medical School",
-      "Thomas Nelson Community College",
-      "and more."
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-      "Williamsburg beckons with unparalleled opportunities for educational and personal growth. Whether you seek to delve into history, pursue cutting-edge research, or engage in vibrant community initiatives, Williamsburg offers a conducive environment for intellectual exploration and academic advancement.",
-      "For professionals, Williamsburg presents a fertile ground for career development and research endeavors. With access to top-notch facilities, collaborative networks, and a supportive academic community, working in Williamsburg promises both fulfillment and professional success."
-  ],
-  image_url: "/cities/willamsburg.jpg",
-  alt: "Williamsburg, Virginia: Historic streets and buildings"
-},
-
-
-{
-  title: "Ann Arbor, Michigan: Academic Hub of Innovation",
-  h1: "Exploring Ann Arbor's Academic Landscape",
-  slug: "ann-arbor-michigan-academic-hub",
-  city: "Ann Arbor",
-  region: "Michigan",
-  country: "United States",
-  description: "Discover the vibrant academic community of Ann Arbor, Michigan, renowned for its prestigious universities, groundbreaking research, and intellectual diversity. Explore Nobel Laureates, notable academics, and compelling reasons to engage with this dynamic educational hub.",
-  keywords: "Ann Arbor, Michigan, universities, colleges, education, research, Nobel Laureates, academics",
-  cityInfo: [
+  {
+    title: 'Ann Arbor, Michigan: Academic Hub of Innovation',
+    h1: "Exploring Ann Arbor's Academic Landscape",
+    slug: 'ann-arbor-michigan-academic-hub',
+    city: 'Ann Arbor',
+    region: 'Michigan',
+    country: 'United States',
+    description:
+      'Discover the vibrant academic community of Ann Arbor, Michigan, renowned for its prestigious universities, groundbreaking research, and intellectual diversity. Explore Nobel Laureates, notable academics, and compelling reasons to engage with this dynamic educational hub.',
+    keywords:
+      'Ann Arbor, Michigan, universities, colleges, education, research, Nobel Laureates, academics',
+    cityInfo: [
       "Nestled in Michigan, USA, Ann Arbor boasts a thriving academic ecosystem characterized by its prestigious universities and colleges. The University of Michigan, a world-renowned institution, anchors the city's intellectual prowess, fostering innovation and excellence in research and education. Alongside its academic institutions, Ann Arbor embraces a rich cultural tapestry, attracting scholars and students from diverse backgrounds, contributing to a vibrant learning environment.",
-      "With a blend of top-tier research facilities, esteemed faculty, and a commitment to interdisciplinary collaboration, Ann Arbor stands as a beacon of academic excellence, driving forward progress and discovery across various fields."
-  ],
-  uniList: [
-      "University of Michigan",
-      "Concordia University Ann Arbor",
-      "Cleary University",
-      "Ross School of Business",
-      "Michigan Medicine"
-  ],
-  nobelInfo: [
+      'With a blend of top-tier research facilities, esteemed faculty, and a commitment to interdisciplinary collaboration, Ann Arbor stands as a beacon of academic excellence, driving forward progress and discovery across various fields.',
+    ],
+    uniList: [
+      'University of Michigan',
+      'Concordia University Ann Arbor',
+      'Cleary University',
+      'Ross School of Business',
+      'Michigan Medicine',
+    ],
+    nobelInfo: [
       "Ann Arbor's academic landscape has been enriched by notable Nobel Laureates, exemplifying the city's global impact in research and innovation. Among them, the University of Michigan proudly counts Melvin Calvin, awarded the Nobel Prize in Chemistry for unraveling the carbon dioxide assimilation in plants, revolutionizing our understanding of photosynthesis and its implications for agriculture and ecology.",
-      "Furthermore, the University of Michigan has continued to produce groundbreaking research, with recent Nobel Laureate alumna Emmanuelle Charpentier receiving the Nobel Prize in Chemistry for her pioneering work on the CRISPR-Cas9 gene-editing technology, shaping the future of genetic engineering and medicine."
-  ],
-  nobelList: ["Melvin Calvin: Chemistry", "Emmanuelle Charpentier: Chemistry"],
-  academicInfo: [
-      "Ann Arbor's academic community boasts a roster of distinguished scholars and educators, contributing significantly to their respective fields. Notable academics such as James S. House, a renowned sociologist and demographer at the University of Michigan, have made profound impacts on public health and social policy through their innovative research and interdisciplinary collaborations."
-  ],
-  academicList: ["James S. House: Professor of Sociology and Public Health"],
-  promo: [
-      "Join the vibrant academic community of Ann Arbor, Michigan, and embark on a journey of intellectual growth and discovery. Whether you're a student seeking world-class education or a professional pursuing groundbreaking research opportunities, Ann Arbor's renowned universities and colleges offer unparalleled resources and support to fuel your academic aspirations. With a commitment to excellence and innovation, Ann Arbor provides the ideal environment to thrive and make meaningful contributions to society."
-  ],
-  image_url: "/cities/ann-arbour-michi.jpeg",
-  alt: "Ann Arbor, Michigan: A hub of academic excellence"
-},
+      'Furthermore, the University of Michigan has continued to produce groundbreaking research, with recent Nobel Laureate alumna Emmanuelle Charpentier receiving the Nobel Prize in Chemistry for her pioneering work on the CRISPR-Cas9 gene-editing technology, shaping the future of genetic engineering and medicine.',
+    ],
+    nobelList: [
+      'Melvin Calvin: Chemistry',
+      'Emmanuelle Charpentier: Chemistry',
+    ],
+    academicInfo: [
+      "Ann Arbor's academic community boasts a roster of distinguished scholars and educators, contributing significantly to their respective fields. Notable academics such as James S. House, a renowned sociologist and demographer at the University of Michigan, have made profound impacts on public health and social policy through their innovative research and interdisciplinary collaborations.",
+    ],
+    academicList: ['James S. House: Professor of Sociology and Public Health'],
+    promo: [
+      "Join the vibrant academic community of Ann Arbor, Michigan, and embark on a journey of intellectual growth and discovery. Whether you're a student seeking world-class education or a professional pursuing groundbreaking research opportunities, Ann Arbor's renowned universities and colleges offer unparalleled resources and support to fuel your academic aspirations. With a commitment to excellence and innovation, Ann Arbor provides the ideal environment to thrive and make meaningful contributions to society.",
+    ],
+    image_url: '/cities/academic-jobs-in-ann-arbour-michi.jpeg',
+    alt: 'Ann Arbor, Michigan: A hub of academic excellence',
+  },
 
+  {
+    title: 'Blacksburg, Virginia: Hub of Higher Learning and Innovation',
+    h1: 'Exploring the Educational Landscape of Blacksburg, VA',
+    slug: 'blacksburg-virginia-higher-education',
+    city: 'Blacksburg',
+    region: 'Virginia',
+    country: 'United States',
+    description:
+      "Discover the vibrant educational environment of Blacksburg, Virginia, renowned for its prestigious universities, groundbreaking research, and intellectual diversity. Explore the city's rich academic heritage and the myriad opportunities it offers for both personal growth and professional development.",
+    keywords:
+      'Blacksburg, Virginia, higher education, universities, colleges, Nobel Laureates, academics',
 
-{
-  title: "Blacksburg, Virginia: Hub of Higher Learning and Innovation",
-  h1: "Exploring the Educational Landscape of Blacksburg, VA",
-  slug: "blacksburg-virginia-higher-education",
-  city: "Blacksburg",
-  region: "Virginia",
-  country: "United States",
-  description: "Discover the vibrant educational environment of Blacksburg, Virginia, renowned for its prestigious universities, groundbreaking research, and intellectual diversity. Explore the city's rich academic heritage and the myriad opportunities it offers for both personal growth and professional development.",
-  keywords: "Blacksburg, Virginia, higher education, universities, colleges, Nobel Laureates, academics",
+    cityInfo: [
+      'Nestled in the heart of Virginia, Blacksburg is a beacon of intellectual prowess, home to esteemed universities and colleges that foster innovation and excellence. Its educational landscape reflects a rich tapestry of disciplines, catering to diverse interests and aspirations.',
+      'The city pulsates with the energy of intellectual curiosity, offering a nurturing environment where students and scholars alike thrive, propelled by a shared passion for knowledge and discovery.',
+    ],
+    uniList: [
+      'Virginia Tech (Virginia Polytechnic Institute and State University)',
+      'New River Community College',
+      'Radford University Carilion',
+      'Edward Via College of Osteopathic Medicine',
+      'National Institute of Aerospace at Virginia Tech',
+      'Bluefield College - South College Blacksburg Campus',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [],
+    image_url: '/cities/academic-jobs-in-blacksburg.jpg',
+    alt: 'Blacksburg, Virginia: A Hub of Higher Learning and Innovation',
+  },
 
-  cityInfo: [
-    "Nestled in the heart of Virginia, Blacksburg is a beacon of intellectual prowess, home to esteemed universities and colleges that foster innovation and excellence. Its educational landscape reflects a rich tapestry of disciplines, catering to diverse interests and aspirations.",
-    "The city pulsates with the energy of intellectual curiosity, offering a nurturing environment where students and scholars alike thrive, propelled by a shared passion for knowledge and discovery."
-  ],
-  uniList: [
-    "Virginia Tech (Virginia Polytechnic Institute and State University)",
-    "New River Community College",
-    "Radford University Carilion",
-    "Edward Via College of Osteopathic Medicine",
-    "National Institute of Aerospace at Virginia Tech",
-    "Bluefield College - South College Blacksburg Campus"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [],
-  image_url: "/cities/blacksburg.jpg",
-  alt: "Blacksburg, Virginia: A Hub of Higher Learning and Innovation"
-},
-
-{
-  title: "Bloomington, Indiana: Hub of Academic Excellence",
-  h1: "Exploring Bloomington's Academic Landscape",
-  slug: "bloomington-indiana-academic-hub",
-  city: "Bloomington",
-  region: "Indiana",
-  country: "United States",
-  description: "Discover Bloomington, Indiana's vibrant academic scene, home to renowned universities and colleges, Nobel laureates, and influential academics. Explore educational opportunities and research potential in this dynamic city.",
-  keywords: "Bloomington Indiana, Indiana University, higher education, academic hub, Nobel laureates, research opportunities",
-  cityInfo: [
-      "Bloomington, Indiana, boasts a diverse and thriving higher education ecosystem. At its heart lies Indiana University Bloomington, a prestigious institution renowned for its academic excellence and vibrant campus life.",
-      "Additionally, Ivy Tech Community College provides accessible and quality education, catering to a broad spectrum of learners. Together, these institutions foster a rich intellectual environment, attracting students and scholars from around the globe."
-  ],
-  uniList: [
-      "Indiana University Bloomington",
-      "Ivy Tech Community College"
-  ],
-  nobelInfo: [
+  {
+    title: 'Bloomington, Indiana: Hub of Academic Excellence',
+    h1: "Exploring Bloomington's Academic Landscape",
+    slug: 'bloomington-indiana-academic-hub',
+    city: 'Bloomington',
+    region: 'Indiana',
+    country: 'United States',
+    description:
+      "Discover Bloomington, Indiana's vibrant academic scene, home to renowned universities and colleges, Nobel laureates, and influential academics. Explore educational opportunities and research potential in this dynamic city.",
+    keywords:
+      'Bloomington Indiana, Indiana University, higher education, academic hub, Nobel laureates, research opportunities',
+    cityInfo: [
+      'Bloomington, Indiana, boasts a diverse and thriving higher education ecosystem. At its heart lies Indiana University Bloomington, a prestigious institution renowned for its academic excellence and vibrant campus life.',
+      'Additionally, Ivy Tech Community College provides accessible and quality education, catering to a broad spectrum of learners. Together, these institutions foster a rich intellectual environment, attracting students and scholars from around the globe.',
+    ],
+    uniList: ['Indiana University Bloomington', 'Ivy Tech Community College'],
+    nobelInfo: [
       "While Bloomington hasn't produced Nobel laureates directly, its proximity to renowned research institutions like Indiana University has contributed significantly to global knowledge. IU's faculty and alumni have made notable advancements in various fields, laying the groundwork for groundbreaking discoveries.",
-      "Although no laureates hail directly from Bloomington, the city's academic community continues to drive innovation and shape the future through its dedication to research and education."
-  ],
-  nobelList: [],
-  academicInfo: [
+      "Although no laureates hail directly from Bloomington, the city's academic community continues to drive innovation and shape the future through its dedication to research and education.",
+    ],
+    nobelList: [],
+    academicInfo: [
       "Bloomington's academic landscape is enriched by notable scholars and researchers across diverse disciplines. Professors at Indiana University Bloomington are globally recognized for their contributions to fields such as psychology, music, literature, and political science.",
-      "Additionally, Ivy Tech Community College faculty members bring practical expertise to their classrooms, preparing students for success in their chosen fields. Collectively, these academics foster a culture of learning and innovation, inspiring the next generation of leaders and thinkers."
-  ],
-  academicList: [],
-  promo: [
+      'Additionally, Ivy Tech Community College faculty members bring practical expertise to their classrooms, preparing students for success in their chosen fields. Collectively, these academics foster a culture of learning and innovation, inspiring the next generation of leaders and thinkers.',
+    ],
+    academicList: [],
+    promo: [
       "Enrich your academic journey in Bloomington, where top-tier institutions like Indiana University Bloomington and Ivy Tech Community College offer unparalleled educational opportunities. Whether you're a student seeking intellectual growth or a professional pursuing research endeavors, Bloomington provides a supportive environment to thrive and excel.",
-      "Join a community of scholars and innovators dedicated to pushing the boundaries of knowledge and making a meaningful impact on society. Experience the vibrant culture, world-class facilities, and collaborative spirit that define Bloomington's academic landscape."
-  ],
-  image_url: "/cities/bloomington.jpg",
-  alt: "Bloomington, Indiana: A vibrant academic hub"
-},
+      "Join a community of scholars and innovators dedicated to pushing the boundaries of knowledge and making a meaningful impact on society. Experience the vibrant culture, world-class facilities, and collaborative spirit that define Bloomington's academic landscape.",
+    ],
+    image_url: '/cities/academic-jobs-in-bloomington.jpg',
+    alt: 'Bloomington, Indiana: A vibrant academic hub',
+  },
 
-
-{
-  title: "Boone, NC: Education Hub in the Heart of the Appalachians",
-  h1: "Discover Boone, NC's Academic Landscape",
-  slug: "boone-nc-education-hub",
-  city: "Boone",
-  region: "North Carolina",
-  country: "United States",
-  description: "Explore Boone, NC's vibrant academic scene, featuring Appalachian State University and other institutions. Learn about Nobel Laureates, renowned academics, and compelling reasons to attend or work in this picturesque city.",
-  keywords: "Boone NC, Appalachian State University, education, academics, higher education, Nobel Laureates, research, employment, North Carolina",
-  cityInfo: [
-      "Nestled in the Appalachian Mountains, Boone, NC, boasts a thriving academic community anchored by Appalachian State University (ASU). ASU offers a diverse range of undergraduate and graduate programs, attracting students from around the globe.",
-      "Beyond ASU, Boone is home to several smaller colleges and technical institutes, contributing to the city's reputation as an education hub in western North Carolina. The scenic beauty of the region provides a conducive environment for learning and research​.​"
-  ],
-  uniList: [
-      "Appalachian State University",
-      "Caldwell Community College & Technical Institute",
-      "Wilkes Community College - Ashe Campus",
-      "Mayland Community College - Avery Campus"
-  ],
-  nobelInfo: [
+  {
+    title: 'Boone, NC: Education Hub in the Heart of the Appalachians',
+    h1: "Discover Boone, NC's Academic Landscape",
+    slug: 'boone-nc-education-hub',
+    city: 'Boone',
+    region: 'North Carolina',
+    country: 'United States',
+    description:
+      "Explore Boone, NC's vibrant academic scene, featuring Appalachian State University and other institutions. Learn about Nobel Laureates, renowned academics, and compelling reasons to attend or work in this picturesque city.",
+    keywords:
+      'Boone NC, Appalachian State University, education, academics, higher education, Nobel Laureates, research, employment, North Carolina',
+    cityInfo: [
+      'Nestled in the Appalachian Mountains, Boone, NC, boasts a thriving academic community anchored by Appalachian State University (ASU). ASU offers a diverse range of undergraduate and graduate programs, attracting students from around the globe.',
+      "Beyond ASU, Boone is home to several smaller colleges and technical institutes, contributing to the city's reputation as an education hub in western North Carolina. The scenic beauty of the region provides a conducive environment for learning and research​.​",
+    ],
+    uniList: [
+      'Appalachian State University',
+      'Caldwell Community College & Technical Institute',
+      'Wilkes Community College - Ashe Campus',
+      'Mayland Community College - Avery Campus',
+    ],
+    nobelInfo: [
       "While Boone hasn't produced Nobel Laureates, its academic institutions have made significant contributions to knowledge and innovation. Appalachian State University, known for its focus on sustainability and environmental studies, has nurtured groundbreaking research in renewable energy and climate change adaptation.",
-      "Additionally, faculty members at ASU have received prestigious awards and grants for their scholarly work, further enhancing the university's reputation as a center for academic excellence and innovation."
-  ],
-  nobelList: [],
-  academicInfo: [
+      "Additionally, faculty members at ASU have received prestigious awards and grants for their scholarly work, further enhancing the university's reputation as a center for academic excellence and innovation.",
+    ],
+    nobelList: [],
+    academicInfo: [
       "Boone's academic landscape is enriched by notable scholars and educators committed to advancing their respective fields. Faculty members at Appalachian State University are actively engaged in research across disciplines such as sustainable development, education, and healthcare.",
-      "These academics not only contribute to the academic community through their publications and research but also play an integral role in mentoring the next generation of scholars and professionals​.​"
-  ],
-  academicList: [],
-  promo: [
-      "Appalachian State University offers a dynamic educational experience, blending rigorous academics with unparalleled outdoor adventures in the picturesque Appalachian region. With state-of-the-art facilities and a supportive community, students can explore their passions while preparing for successful careers.",
-      "For professionals seeking employment opportunities, Boone provides a unique blend of academic innovation and natural beauty. Whether it's teaching, research, or administrative roles, working in Boone offers a fulfilling career path in a vibrant academic environment​.​"
-  ],
-  image_url: "/cities/boone-nc.jpg",
-  alt: "Boone, NC: A picturesque town nestled in the Appalachian Mountains"
-},
+      'These academics not only contribute to the academic community through their publications and research but also play an integral role in mentoring the next generation of scholars and professionals​.​',
+    ],
+    academicList: [],
+    promo: [
+      'Appalachian State University offers a dynamic educational experience, blending rigorous academics with unparalleled outdoor adventures in the picturesque Appalachian region. With state-of-the-art facilities and a supportive community, students can explore their passions while preparing for successful careers.',
+      "For professionals seeking employment opportunities, Boone provides a unique blend of academic innovation and natural beauty. Whether it's teaching, research, or administrative roles, working in Boone offers a fulfilling career path in a vibrant academic environment​.​",
+    ],
+    image_url: '/cities/academic-jobs-in-boone-nc.jpg',
+    alt: 'Boone, NC: A picturesque town nestled in the Appalachian Mountains',
+  },
 
+  {
+    title: 'Bowling Green, Ohio: A Hub of Academic Excellence',
+    h1: 'Exploring Bowling Green, Ohio',
+    slug: 'bowling-green-ohio-academic-excellence',
+    city: 'Bowling Green',
+    region: 'Ohio, Wood County',
+    country: 'United States',
+    description:
+      'Discover Bowling Green, Ohio, a city renowned for its vibrant academic landscape, prestigious institutions, and groundbreaking research. Explore the diverse educational opportunities and notable achievements shaping this dynamic community.',
+    keywords:
+      'Bowling Green Ohio, Bowling Green State University, universities, colleges, academic excellence, Nobel Laureates, notable academics',
 
-{
-  title: "Bowling Green, Ohio: A Hub of Academic Excellence",
-  h1: "Exploring Bowling Green, Ohio",
-  slug: "bowling-green-ohio-academic-excellence",
-  city: "Bowling Green",
-  region: "Ohio, Wood County",
-  country: "United States",
-  description: "Discover Bowling Green, Ohio, a city renowned for its vibrant academic landscape, prestigious institutions, and groundbreaking research. Explore the diverse educational opportunities and notable achievements shaping this dynamic community.",
-  keywords: "Bowling Green Ohio, Bowling Green State University, universities, colleges, academic excellence, Nobel Laureates, notable academics",
+    cityInfo: [
+      'Bowling Green, Ohio, nestled in Wood County, boasts a vibrant academic community anchored by Bowling Green State University (BGSU). With a rich history and commitment to excellence, the city offers diverse educational opportunities and fosters intellectual growth and innovation.',
+      "Home to BGSU, one of Ohio's top public universities, Bowling Green attracts students from around the globe seeking a supportive environment for learning and research, complemented by a thriving cultural scene and a strong sense of community.",
+    ],
+    uniList: ['Bowling Green State University'],
+    nobelInfo: [
+      "While Bowling Green itself has no Nobel Laureates, its academic institutions contribute significantly to global knowledge and innovation. Alumni from Bowling Green State University have made notable contributions to various fields, exemplifying the city's impact on shaping future leaders and thinkers.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Bowling Green's academic landscape is enriched by the presence of distinguished scholars and researchers. Faculty members at BGSU and affiliated institutions are recognized for their groundbreaking work in areas ranging from education and psychology to the arts and sciences, fostering a culture of excellence and inquiry.",
+    ],
+    academicList: [],
+    promo: [
+      'Consider attending or working at Bowling Green State University for unparalleled educational and professional opportunities. As a student, immerse yourself in a supportive learning environment with access to cutting-edge resources and a diverse community of scholars.',
+      'For employment, join a dynamic team of educators and researchers dedicated to advancing knowledge and making a positive impact locally and globally. Experience the collaborative spirit and innovative spirit that define Bowling Green, Ohio.',
+    ],
+    image_url: '/cities/academic-jobs-in-bowling-green.webp',
+    alt: 'A panoramic view of Bowling Green, Ohio, showcasing its vibrant academic and cultural landscape',
+  },
 
-  cityInfo: [
-      "Bowling Green, Ohio, nestled in Wood County, boasts a vibrant academic community anchored by Bowling Green State University (BGSU). With a rich history and commitment to excellence, the city offers diverse educational opportunities and fosters intellectual growth and innovation.",
-      "Home to BGSU, one of Ohio's top public universities, Bowling Green attracts students from around the globe seeking a supportive environment for learning and research, complemented by a thriving cultural scene and a strong sense of community."
-  ],
-  uniList: [
-      "Bowling Green State University"
-  ],
-  nobelInfo: [
-      "While Bowling Green itself has no Nobel Laureates, its academic institutions contribute significantly to global knowledge and innovation. Alumni from Bowling Green State University have made notable contributions to various fields, exemplifying the city's impact on shaping future leaders and thinkers."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Bowling Green's academic landscape is enriched by the presence of distinguished scholars and researchers. Faculty members at BGSU and affiliated institutions are recognized for their groundbreaking work in areas ranging from education and psychology to the arts and sciences, fostering a culture of excellence and inquiry."
-  ],
-  academicList: [],
-  promo: [
-      "Consider attending or working at Bowling Green State University for unparalleled educational and professional opportunities. As a student, immerse yourself in a supportive learning environment with access to cutting-edge resources and a diverse community of scholars.",
-      "For employment, join a dynamic team of educators and researchers dedicated to advancing knowledge and making a positive impact locally and globally. Experience the collaborative spirit and innovative spirit that define Bowling Green, Ohio."
-  ],
-  image_url: "/cities/bowling-green.webp",
-  alt: "A panoramic view of Bowling Green, Ohio, showcasing its vibrant academic and cultural landscape"
-},
+  {
+    title:
+      'Chapel Hill, North Carolina: Academic Excellence and Innovation Hub',
+    h1: "Exploring Chapel Hill's Academic Landscape",
+    slug: 'chapel-hill-north-carolina',
+    city: 'Chapel Hill',
+    region: 'North Carolina',
+    country: 'United States',
+    description:
+      "Discover Chapel Hill's vibrant academic scene, Nobel laureates, and renowned academics. Explore the educational and professional opportunities offered by the city's prestigious universities and colleges.",
+    keywords:
+      'Chapel Hill, North Carolina, universities, colleges, academic excellence, Nobel laureates, notable academics',
 
-
-{
-  title: "Chapel Hill, North Carolina: Academic Excellence and Innovation Hub",
-  h1: "Exploring Chapel Hill's Academic Landscape",
-  slug: "chapel-hill-north-carolina",
-  city: "Chapel Hill",
-  region: "North Carolina",
-  country: "United States",
-  description: "Discover Chapel Hill's vibrant academic scene, Nobel laureates, and renowned academics. Explore the educational and professional opportunities offered by the city's prestigious universities and colleges.",
-  keywords: "Chapel Hill, North Carolina, universities, colleges, academic excellence, Nobel laureates, notable academics",
-
-  cityInfo: [
-      "Chapel Hill, located in North Carolina, is renowned for its diverse and dynamic higher education landscape. Home to the prestigious University of North Carolina at Chapel Hill (UNC), the city offers a vibrant academic community with a rich history of innovation and excellence.",
-      "With a focus on interdisciplinary collaboration and cutting-edge research, Chapel Hill's universities and colleges provide students with unparalleled opportunities for academic and personal growth, fostering creativity and critical thinking across various disciplines."
-  ],
-  uniList: [
-      "University of North Carolina at Chapel Hill (UNC)",
-      "Chapel Hill College",
-      "Carolina Seminary",
-      "Hilltop University"
-  ],
-  nobelInfo: [
+    cityInfo: [
+      'Chapel Hill, located in North Carolina, is renowned for its diverse and dynamic higher education landscape. Home to the prestigious University of North Carolina at Chapel Hill (UNC), the city offers a vibrant academic community with a rich history of innovation and excellence.',
+      "With a focus on interdisciplinary collaboration and cutting-edge research, Chapel Hill's universities and colleges provide students with unparalleled opportunities for academic and personal growth, fostering creativity and critical thinking across various disciplines.",
+    ],
+    uniList: [
+      'University of North Carolina at Chapel Hill (UNC)',
+      'Chapel Hill College',
+      'Carolina Seminary',
+      'Hilltop University',
+    ],
+    nobelInfo: [
       "While Chapel Hill itself hasn't produced Nobel laureates, its academic institutions have played a significant role in advancing knowledge and innovation. UNC Chapel Hill has been a breeding ground for groundbreaking research in various fields, contributing to global advancements in medicine, science, and social sciences.",
-      "Notable UNC alumni and faculty members have made significant contributions to their respective fields, although they haven't received Nobel recognition. Their work continues to impact society positively, further solidifying Chapel Hill's position as an academic powerhouse."
-  ],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+      "Notable UNC alumni and faculty members have made significant contributions to their respective fields, although they haven't received Nobel recognition. Their work continues to impact society positively, further solidifying Chapel Hill's position as an academic powerhouse.",
+    ],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "Chapel Hill offers a unique blend of academic excellence, research opportunities, and a vibrant campus life. Whether you're a student seeking top-tier education or a professional looking for a dynamic work environment, Chapel Hill's universities and colleges provide an ideal setting for growth and success.",
-      "Join a community of scholars and innovators dedicated to making a difference in the world. From state-of-the-art facilities to renowned faculty members, Chapel Hill offers a stimulating environment where creativity thrives, and ideas flourish."
-  ],
-  image_url: "/cities/chapil-hill-northc.avif",
-  alt: "Chapel Hill skyline with vibrant trees and historic buildings"
-},
+      'Join a community of scholars and innovators dedicated to making a difference in the world. From state-of-the-art facilities to renowned faculty members, Chapel Hill offers a stimulating environment where creativity thrives, and ideas flourish.',
+    ],
+    image_url: '/cities/academic-jobs-in-chapil-hill-northc.avif',
+    alt: 'Chapel Hill skyline with vibrant trees and historic buildings',
+  },
 
-
-
-{
-  title: "Exploring Higher Education in Clemson, South Carolina",
-  h1: "Discover Clemson's Academic Landscape",
-  slug: "exploring-higher-education-clemson-south-carolina",
-  city: "Clemson",
-  region: "South Carolina",
-  country: "United States",
-  description: "Explore Clemson, South Carolina's vibrant academic scene, renowned for its prestigious institutions, notable Nobel Laureates, and groundbreaking research contributions. Discover why attending or working at one of Clemson's universities or colleges promises unparalleled educational and professional growth opportunities.",
-  keywords: "Clemson, South Carolina, universities, colleges, higher education, Nobel Laureates, academics, research",
-  cityInfo: [
-      "Clemson, South Carolina, epitomizes a hub of diverse intellectual pursuits with its prestigious universities and colleges. Nestled in the vibrant heart of South Carolina, Clemson boasts a dynamic academic landscape that fosters innovation, research, and cultural exchange.",
-      "With its commitment to excellence, Clemson offers a rich tapestry of educational experiences, attracting students and scholars from across the globe."
-  ],
-  uniList: [
-      "Clemson University",
-      "Tri-County Technical College",
-      "Southern Wesleyan University",
-      "Anderson University",
-      "South Carolina Botanical Garden (affiliated with Clemson University)"
-  ],
-  nobelInfo: [
+  {
+    title: 'Exploring Higher Education in Clemson, South Carolina',
+    h1: "Discover Clemson's Academic Landscape",
+    slug: 'exploring-higher-education-clemson-south-carolina',
+    city: 'Clemson',
+    region: 'South Carolina',
+    country: 'United States',
+    description:
+      "Explore Clemson, South Carolina's vibrant academic scene, renowned for its prestigious institutions, notable Nobel Laureates, and groundbreaking research contributions. Discover why attending or working at one of Clemson's universities or colleges promises unparalleled educational and professional growth opportunities.",
+    keywords:
+      'Clemson, South Carolina, universities, colleges, higher education, Nobel Laureates, academics, research',
+    cityInfo: [
+      'Clemson, South Carolina, epitomizes a hub of diverse intellectual pursuits with its prestigious universities and colleges. Nestled in the vibrant heart of South Carolina, Clemson boasts a dynamic academic landscape that fosters innovation, research, and cultural exchange.',
+      'With its commitment to excellence, Clemson offers a rich tapestry of educational experiences, attracting students and scholars from across the globe.',
+    ],
+    uniList: [
+      'Clemson University',
+      'Tri-County Technical College',
+      'Southern Wesleyan University',
+      'Anderson University',
+      'South Carolina Botanical Garden (affiliated with Clemson University)',
+    ],
+    nobelInfo: [
       "While Clemson doesn't have Nobel Laureates directly associated with its institutions, the city reverberates with intellectual vigor. However, neighboring universities like the University of South Carolina have produced Nobel Laureates such as the renowned chemist, Ada Yonath, recognized for her groundbreaking work in ribosomal structure and antibiotic resistance​.",
-      "The absence of Nobel Laureates within Clemson's institutions doesn't diminish their academic prowess, as they continue to make significant contributions to research and innovation across various disciplines."
-  ],
-  nobelList: ["Ada Yonath: Chemistry"],
-  academicInfo: [
-      "Clemson's academic community boasts numerous esteemed scholars and researchers who have significantly impacted their respective fields. Notable figures include Dr. Eric M. Reiman, a leading neuroscientist recognized for his pioneering research in Alzheimer's disease prevention and treatment strategies."
-  ],
-  academicList: ["Dr. Eric M. Reiman: Professor of Neuroscience"],
-  promo: [
-      "Clemson offers an unparalleled academic experience, fostering a vibrant community of scholars and researchers. Whether you're a student seeking top-notch education or a professional looking for research and career opportunities, Clemson's institutions provide a nurturing environment for growth and success."
-  ],
-  image_url: "/cities/clemson.jpg",
-  alt: "Clemson, South Carolina: A vibrant hub of education and research"
-},
+      "The absence of Nobel Laureates within Clemson's institutions doesn't diminish their academic prowess, as they continue to make significant contributions to research and innovation across various disciplines.",
+    ],
+    nobelList: ['Ada Yonath: Chemistry'],
+    academicInfo: [
+      "Clemson's academic community boasts numerous esteemed scholars and researchers who have significantly impacted their respective fields. Notable figures include Dr. Eric M. Reiman, a leading neuroscientist recognized for his pioneering research in Alzheimer's disease prevention and treatment strategies.",
+    ],
+    academicList: ['Dr. Eric M. Reiman: Professor of Neuroscience'],
+    promo: [
+      "Clemson offers an unparalleled academic experience, fostering a vibrant community of scholars and researchers. Whether you're a student seeking top-notch education or a professional looking for research and career opportunities, Clemson's institutions provide a nurturing environment for growth and success.",
+    ],
+    image_url: '/cities/academic-jobs-in-clemson.jpg',
+    alt: 'Clemson, South Carolina: A vibrant hub of education and research',
+  },
 
-
-{
-  title: "College Park, Maryland: Hub of Academic Excellence",
-  h1: "Exploring the Intellectual Landscape of College Park",
-  slug: "college-park-maryland-hub-of-academic-excellence",
-  city: "College Park",
-  region: "Maryland, Prince George's County",
-  country: "United States",
-  description: "Discover College Park, Maryland's vibrant higher education scene, including Nobel Laureates, renowned academics, and compelling reasons for attending or working at its prestigious institutions.",
-  keywords: "College Park Maryland, University of Maryland, higher education, academic excellence, Nobel Laureates, research opportunities",
-  cityInfo: [
-      "Nestled in Maryland, College Park boasts a diverse and vibrant higher education landscape. Home to the renowned University of Maryland, College Park, the city fosters innovation, research, and academic excellence.",
-      "With its proximity to Washington, D.C., College Park offers unique opportunities for interdisciplinary studies, cultural engagement, and professional development, enriching the educational experience for students and faculty alike."
-  ],
-  uniList: [
-      "University of Maryland, College Park"
-  ],
-  nobelInfo: [
+  {
+    title: 'College Park, Maryland: Hub of Academic Excellence',
+    h1: 'Exploring the Intellectual Landscape of College Park',
+    slug: 'college-park-maryland-hub-of-academic-excellence',
+    city: 'College Park',
+    region: "Maryland, Prince George's County",
+    country: 'United States',
+    description:
+      "Discover College Park, Maryland's vibrant higher education scene, including Nobel Laureates, renowned academics, and compelling reasons for attending or working at its prestigious institutions.",
+    keywords:
+      'College Park Maryland, University of Maryland, higher education, academic excellence, Nobel Laureates, research opportunities',
+    cityInfo: [
+      'Nestled in Maryland, College Park boasts a diverse and vibrant higher education landscape. Home to the renowned University of Maryland, College Park, the city fosters innovation, research, and academic excellence.',
+      'With its proximity to Washington, D.C., College Park offers unique opportunities for interdisciplinary studies, cultural engagement, and professional development, enriching the educational experience for students and faculty alike.',
+    ],
+    uniList: ['University of Maryland, College Park'],
+    nobelInfo: [
       "While College Park hasn't produced Nobel Laureates directly, the nearby University of Maryland has contributed significantly to global knowledge and innovation. Notable alumni include Raymond Davis Jr., recognized for his work in astrophysics, and Thomas Schelling, awarded the Nobel Memorial Prize in Economic Sciences for his contributions to game theory.",
-      "Furthermore, the University of Maryland's research in fields such as cybersecurity, climate science, and public health continues to impact society and drive progress worldwide, reflecting College Park's commitment to academic excellence and societal impact."
-  ],
-  nobelList: [
-      "Raymond Davis Jr.: Physics",
-      "Thomas Schelling: Economic Sciences"
-  ],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+      "Furthermore, the University of Maryland's research in fields such as cybersecurity, climate science, and public health continues to impact society and drive progress worldwide, reflecting College Park's commitment to academic excellence and societal impact.",
+    ],
+    nobelList: [
+      'Raymond Davis Jr.: Physics',
+      'Thomas Schelling: Economic Sciences',
+    ],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "Immerse yourself in College Park's dynamic academic community, where opportunities for educational and personal growth abound. Whether you're a student seeking a transformative learning experience or a researcher pursuing groundbreaking discoveries, College Park offers a supportive environment and unparalleled resources to fuel your intellectual journey.",
-      "Join a vibrant community of scholars, innovators, and changemakers, and contribute to shaping the future through collaborative research, interdisciplinary initiatives, and meaningful engagement with pressing global challenges."
-  ],
-  image_url: "/cities/college-park-maryland.jpg",
-  alt: "Aerial view of College Park, Maryland"
-},
+      'Join a vibrant community of scholars, innovators, and changemakers, and contribute to shaping the future through collaborative research, interdisciplinary initiatives, and meaningful engagement with pressing global challenges.',
+    ],
+    image_url: '/cities/academic-jobs-in-college-park-maryland.jpg',
+    alt: 'Aerial view of College Park, Maryland',
+  },
 
-
-{
-  title: "College Station, Texas: Education Hub of Innovation",
-  h1: "Exploring College Station's Academic Landscape",
-  slug: "college-station-texas-education-hub",
-  city: "College Station",
-  region: "Texas",
-  country: "United States",
-  description: "Discover College Station's vibrant academic community, home to prestigious universities, Nobel Laureates, and pioneering academics. Explore educational opportunities and professional growth prospects in this thriving Texas city.",
-  keywords: "College Station, Texas A&M University, higher education, academic hub, Nobel Laureates, research opportunities",
-  cityInfo: [
-      "Nestled in Texas, College Station thrives as a dynamic academic center, hosting renowned universities and colleges. With Texas A&M University at its core, the city fosters innovation, research, and cultural diversity, shaping global leaders and thinkers.",
-      "Its educational landscape, featuring a mix of public and private institutions, reflects a commitment to excellence, offering a rich tapestry of academic programs and opportunities for students."
-  ],
-  uniList: [
-      "Texas A&M University",
-      "Blinn College",
-      "Rellis Campus"
-  ],
-  nobelInfo: [
+  {
+    title: 'College Station, Texas: Education Hub of Innovation',
+    h1: "Exploring College Station's Academic Landscape",
+    slug: 'college-station-texas-education-hub',
+    city: 'College Station',
+    region: 'Texas',
+    country: 'United States',
+    description:
+      "Discover College Station's vibrant academic community, home to prestigious universities, Nobel Laureates, and pioneering academics. Explore educational opportunities and professional growth prospects in this thriving Texas city.",
+    keywords:
+      'College Station, Texas A&M University, higher education, academic hub, Nobel Laureates, research opportunities',
+    cityInfo: [
+      'Nestled in Texas, College Station thrives as a dynamic academic center, hosting renowned universities and colleges. With Texas A&M University at its core, the city fosters innovation, research, and cultural diversity, shaping global leaders and thinkers.',
+      'Its educational landscape, featuring a mix of public and private institutions, reflects a commitment to excellence, offering a rich tapestry of academic programs and opportunities for students.',
+    ],
+    uniList: ['Texas A&M University', 'Blinn College', 'Rellis Campus'],
+    nobelInfo: [
       "While College Station itself hasn't produced Nobel Laureates, its institutions contribute significantly to global knowledge. Texas A&M University boasts esteemed faculty engaged in groundbreaking research, from agriculture to engineering, driving innovation and societal impact.",
-      "Moreover, collaborations with other institutions and industries amplify the city's influence, reinforcing its reputation as a hub for scientific discovery and technological advancement."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "College Station is home to notable academics shaping diverse fields of study. Texas A&M University hosts esteemed scholars like Dr. Carol A. Fierke, renowned for her contributions to biochemistry and molecular biology, enriching academic discourse and advancing scientific frontiers."
-  ],
-  academicList: [
-      "Dr. Carol A. Fierke: Professor of Biochemistry and Molecular Biology"
-  ],
-  promo: [
-      "Embark on a journey of intellectual growth and professional development in College Station. With top-tier institutions, cutting-edge research facilities, and a supportive academic community, opportunities abound for students and faculty alike to excel, innovate, and make a lasting impact on the world."
-  ],
-  image_url: "/cities/college-station.jpg",
-  alt: "Aerial view of College Station, Texas at sunset"
-},
+      "Moreover, collaborations with other institutions and industries amplify the city's influence, reinforcing its reputation as a hub for scientific discovery and technological advancement.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      'College Station is home to notable academics shaping diverse fields of study. Texas A&M University hosts esteemed scholars like Dr. Carol A. Fierke, renowned for her contributions to biochemistry and molecular biology, enriching academic discourse and advancing scientific frontiers.',
+    ],
+    academicList: [
+      'Dr. Carol A. Fierke: Professor of Biochemistry and Molecular Biology',
+    ],
+    promo: [
+      'Embark on a journey of intellectual growth and professional development in College Station. With top-tier institutions, cutting-edge research facilities, and a supportive academic community, opportunities abound for students and faculty alike to excel, innovate, and make a lasting impact on the world.',
+    ],
+    image_url: '/cities/academic-jobs-in-college-station.jpg',
+    alt: 'Aerial view of College Station, Texas at sunset',
+  },
 
+  {
+    title: 'Corvallis, Oregon: Hub of Academic Excellence',
+    h1: 'Exploring the Academic Landscape of Corvallis, Oregon',
+    slug: 'corvallis-oregon-academic-excellence',
+    city: 'Corvallis',
+    region: 'Oregon',
+    country: 'United States',
+    description:
+      'Discover the vibrant academic ecosystem of Corvallis, Oregon, home to renowned universities and colleges, distinguished Nobel Laureates, and notable academics. Explore the educational and professional opportunities this city offers amidst its picturesque surroundings.',
+    keywords:
+      'Corvallis Oregon, Oregon State University, higher education, Nobel Laureates, academics, research opportunities',
 
-{
-  title: "Corvallis, Oregon: Hub of Academic Excellence",
-  h1: "Exploring the Academic Landscape of Corvallis, Oregon",
-  slug: "corvallis-oregon-academic-excellence",
-  city: "Corvallis",
-  region: "Oregon",
-  country: "United States",
-  description: "Discover the vibrant academic ecosystem of Corvallis, Oregon, home to renowned universities and colleges, distinguished Nobel Laureates, and notable academics. Explore the educational and professional opportunities this city offers amidst its picturesque surroundings.",
-  keywords: "Corvallis Oregon, Oregon State University, higher education, Nobel Laureates, academics, research opportunities",
+    cityInfo: [
+      'Nestled in the heart of Oregon, Corvallis boasts a dynamic higher education landscape characterized by its diverse array of universities and colleges. Oregon State University, a flagship institution renowned for its research prowess and commitment to innovation, stands as the cornerstone of academic excellence in the city. Additionally, Corvallis is home to other esteemed institutions such as Linn-Benton Community College, providing comprehensive educational opportunities for students of all backgrounds and interests.',
+      "With a backdrop of natural beauty and a supportive community, Corvallis fosters an environment conducive to academic success and personal growth. The city's commitment to education and research is evident in its collaborative efforts between academia, industry, and the community, ensuring that students and scholars alike have access to cutting-edge resources and opportunities for interdisciplinary exploration.",
+    ],
+    uniList: ['Oregon State University', 'Linn-Benton Community College'],
+    nobelInfo: [
+      "Corvallis, Oregon, celebrates its association with Nobel Laureates, exemplifying the city's contributions to global knowledge and innovation. Linus Pauling, a distinguished alumnus of Oregon State University, received the Nobel Prize in Chemistry for his groundbreaking work in the chemical bond and molecular structure, leaving an indelible mark on the scientific community. His legacy continues to inspire generations of researchers and students, embodying the spirit of inquiry and discovery nurtured in Corvallis.",
+      "While Corvallis may not currently boast recent Nobel Laureates, its commitment to excellence in research and education ensures a fertile ground for future groundbreaking discoveries. The city's academic institutions continue to cultivate a culture of innovation and intellectual curiosity, laying the foundation for future laureates to emerge and make their mark on the world stage.",
+    ],
+    nobelList: ['Linus Pauling: Chemistry'],
+    academicInfo: [
+      'Corvallis, Oregon, is proud to be home to a host of notable academics whose contributions span a myriad of disciplines. At Oregon State University, esteemed scholars such as Jane Lubchenco, former NOAA Administrator, and renowned marine biologist, have made significant advancements in environmental science, shaping policies and practices to address pressing global challenges.',
+      "Furthermore, the city's academic community is enriched by the presence of thought leaders and innovators across various fields, from engineering to the arts, who contribute to the vibrant intellectual tapestry of Corvallis. Their dedication to scholarship and research not only enriches the academic landscape of the city but also inspires future generations of learners and leaders.",
+    ],
+    academicList: [
+      'Jane Lubchenco: Environmental Scientist',
+      'John Doe: Professor of Engineering',
+    ],
+    promo: [
+      'Corvallis, Oregon, offers unparalleled opportunities for both students and professionals seeking to engage in a vibrant academic community. With a focus on innovation, collaboration, and interdisciplinary exploration, universities and colleges in Corvallis provide a stimulating environment for educational and personal growth.',
+      "Additionally, the city's robust research infrastructure and close ties to industry offer abundant opportunities for employment and professional development, allowing individuals to make meaningful contributions to their fields while enjoying the unparalleled quality of life that Corvallis has to offer.",
+    ],
+    image_url: '/cities/academic-jobs-in-corvallis-oregon.jpg',
+    alt: 'Aerial view of Corvallis, Oregon',
+  },
 
-  cityInfo: [
-    "Nestled in the heart of Oregon, Corvallis boasts a dynamic higher education landscape characterized by its diverse array of universities and colleges. Oregon State University, a flagship institution renowned for its research prowess and commitment to innovation, stands as the cornerstone of academic excellence in the city. Additionally, Corvallis is home to other esteemed institutions such as Linn-Benton Community College, providing comprehensive educational opportunities for students of all backgrounds and interests.",
-    "With a backdrop of natural beauty and a supportive community, Corvallis fosters an environment conducive to academic success and personal growth. The city's commitment to education and research is evident in its collaborative efforts between academia, industry, and the community, ensuring that students and scholars alike have access to cutting-edge resources and opportunities for interdisciplinary exploration."
-  ],
-  uniList: [
-    "Oregon State University",
-    "Linn-Benton Community College"
-  ],
-  nobelInfo: [
-    "Corvallis, Oregon, celebrates its association with Nobel Laureates, exemplifying the city's contributions to global knowledge and innovation. Linus Pauling, a distinguished alumnus of Oregon State University, received the Nobel Prize in Chemistry for his groundbreaking work in the chemical bond and molecular structure, leaving an indelible mark on the scientific community. His legacy continues to inspire generations of researchers and students, embodying the spirit of inquiry and discovery nurtured in Corvallis.",
-    "While Corvallis may not currently boast recent Nobel Laureates, its commitment to excellence in research and education ensures a fertile ground for future groundbreaking discoveries. The city's academic institutions continue to cultivate a culture of innovation and intellectual curiosity, laying the foundation for future laureates to emerge and make their mark on the world stage."
-  ],
-  nobelList: ["Linus Pauling: Chemistry"],
-  academicInfo: [
-    "Corvallis, Oregon, is proud to be home to a host of notable academics whose contributions span a myriad of disciplines. At Oregon State University, esteemed scholars such as Jane Lubchenco, former NOAA Administrator, and renowned marine biologist, have made significant advancements in environmental science, shaping policies and practices to address pressing global challenges.",
-    "Furthermore, the city's academic community is enriched by the presence of thought leaders and innovators across various fields, from engineering to the arts, who contribute to the vibrant intellectual tapestry of Corvallis. Their dedication to scholarship and research not only enriches the academic landscape of the city but also inspires future generations of learners and leaders."
-  ],
-  academicList: [
-    "Jane Lubchenco: Environmental Scientist",
-    "John Doe: Professor of Engineering"
-  ],
-  promo: [
-    "Corvallis, Oregon, offers unparalleled opportunities for both students and professionals seeking to engage in a vibrant academic community. With a focus on innovation, collaboration, and interdisciplinary exploration, universities and colleges in Corvallis provide a stimulating environment for educational and personal growth.",
-    "Additionally, the city's robust research infrastructure and close ties to industry offer abundant opportunities for employment and professional development, allowing individuals to make meaningful contributions to their fields while enjoying the unparalleled quality of life that Corvallis has to offer."
-  ],
-  image_url: "/cities/corvallis-oregon.jpg",
-  alt: "Aerial view of Corvallis, Oregon"
-},
+  {
+    title: 'Davis, California: A Hub of Academic Excellence',
+    h1: 'Discover Davis, California',
+    slug: 'davis-california-academic-hub',
+    city: 'Davis',
+    region: 'California',
+    country: 'United States',
+    description:
+      'Explore Davis, California, renowned for its academic prowess and intellectual vibrancy. Learn about its prestigious universities and colleges, notable Nobel Laureates, and the compelling reasons for attending or working in this dynamic educational hub.',
+    keywords:
+      'Davis California, UC Davis, universities, colleges, Nobel Laureates, academics, research, education',
 
+    cityInfo: [
+      'Davis, California, nestled in the heart of the Golden State, is a vibrant academic center boasting renowned universities and colleges.',
+      'Home to the University of California, Davis, known for its excellence in research and education, Davis offers a diverse and intellectually stimulating environment for students and scholars alike.',
+    ],
+    uniList: ['University of California, Davis (UC Davis)'],
+    nobelInfo: [
+      "While Davis doesn't have Nobel Laureates directly associated with the city, the University of California, Davis, contributes significantly to global knowledge and innovation through its research endeavors.",
+      'Many UC Davis faculty members have received prestigious awards and grants, contributing to advancements in various fields such as agriculture, veterinary medicine, environmental science, and more.',
+    ],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'UC Davis offers unparalleled educational and personal growth opportunities, with cutting-edge research facilities, renowned faculty, and a supportive academic community.',
+      'For professionals, UC Davis provides a fertile ground for career advancement and research collaboration, with access to industry partnerships and a thriving ecosystem of innovation.',
+    ],
+    image_url: '/cities/academic-jobs-in-davis.jpg',
+    alt: 'Davis, California: A hub of academic excellence',
+  },
 
- {
-  title: "Davis, California: A Hub of Academic Excellence",
-  h1: "Discover Davis, California",
-  slug: "davis-california-academic-hub",
-  city: "Davis",
-  region: "California",
-  country: "United States",
-  description: "Explore Davis, California, renowned for its academic prowess and intellectual vibrancy. Learn about its prestigious universities and colleges, notable Nobel Laureates, and the compelling reasons for attending or working in this dynamic educational hub.",
-  keywords: "Davis California, UC Davis, universities, colleges, Nobel Laureates, academics, research, education",
+  {
+    title: 'Education Hub: DeKalb, Illinois',
+    h1: "Exploring DeKalb's Educational Landscape",
+    slug: 'education-hub-dekalb-illinois',
+    city: 'DeKalb',
+    region: 'Illinois',
+    country: 'United States',
+    description:
+      "Discover the vibrant academic environment of DeKalb, Illinois, home to renowned universities and colleges, notable academics, and a rich history of educational excellence. Explore the city's Nobel Laureates, diverse academic offerings, and compelling reasons for both attendance and employment.",
+    keywords:
+      'DeKalb Illinois, higher education, universities, colleges, academics, Nobel Laureates',
 
-  cityInfo: [
-    "Davis, California, nestled in the heart of the Golden State, is a vibrant academic center boasting renowned universities and colleges.",
-    "Home to the University of California, Davis, known for its excellence in research and education, Davis offers a diverse and intellectually stimulating environment for students and scholars alike."
-  ],
-  uniList: [
-    "University of California, Davis (UC Davis)"
-  ],
-  nobelInfo: [
-    "While Davis doesn't have Nobel Laureates directly associated with the city, the University of California, Davis, contributes significantly to global knowledge and innovation through its research endeavors.",
-    "Many UC Davis faculty members have received prestigious awards and grants, contributing to advancements in various fields such as agriculture, veterinary medicine, environmental science, and more."
-  ],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "UC Davis offers unparalleled educational and personal growth opportunities, with cutting-edge research facilities, renowned faculty, and a supportive academic community.",
-    "For professionals, UC Davis provides a fertile ground for career advancement and research collaboration, with access to industry partnerships and a thriving ecosystem of innovation."
-  ],
-  image_url: "/cities/davis.jpg",
-  alt: "Davis, California: A hub of academic excellence"
-},
-
-
-{
-  title: "Education Hub: DeKalb, Illinois",
-  h1: "Exploring DeKalb's Educational Landscape",
-  slug: "education-hub-dekalb-illinois",
-  city: "DeKalb",
-  region: "Illinois",
-  country: "United States",
-  description: "Discover the vibrant academic environment of DeKalb, Illinois, home to renowned universities and colleges, notable academics, and a rich history of educational excellence. Explore the city's Nobel Laureates, diverse academic offerings, and compelling reasons for both attendance and employment.",
-  keywords: "DeKalb Illinois, higher education, universities, colleges, academics, Nobel Laureates",
-
-  cityInfo: [
+    cityInfo: [
       "Nestled in northern Illinois, DeKalb boasts a dynamic higher education scene, anchored by Northern Illinois University (NIU). Beyond NIU, the city hosts a variety of institutions, fostering a diverse academic environment. DeKalb's educational landscape contributes significantly to its cultural vibrancy and intellectual pursuits.",
-      "From community colleges to research universities, DeKalb offers educational opportunities catering to diverse interests and career aspirations. The city's commitment to academic excellence and innovation attracts students and scholars from around the globe, enriching its educational tapestry."
-  ],
-  uniList: [
-      "Northern Illinois University (NIU)",
-      "Kishwaukee College",
-      "DeVry University",
-      "Waubonsee Community College"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-      "DeKalb's educational institutions provide a fertile ground for personal and professional growth. Whether pursuing undergraduate studies or advanced research, students benefit from a supportive academic community and state-of-the-art facilities. Additionally, faculty and researchers thrive in an environment that encourages interdisciplinary collaboration and innovation, fostering groundbreaking discoveries and meaningful contributions to society."
-  ],
-  image_url: "/cities/dekalb-illi.jpg",
-  alt: "DeKalb, Illinois: A Hub of Learning"
-},
+      "From community colleges to research universities, DeKalb offers educational opportunities catering to diverse interests and career aspirations. The city's commitment to academic excellence and innovation attracts students and scholars from around the globe, enriching its educational tapestry.",
+    ],
+    uniList: [
+      'Northern Illinois University (NIU)',
+      'Kishwaukee College',
+      'DeVry University',
+      'Waubonsee Community College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "DeKalb's educational institutions provide a fertile ground for personal and professional growth. Whether pursuing undergraduate studies or advanced research, students benefit from a supportive academic community and state-of-the-art facilities. Additionally, faculty and researchers thrive in an environment that encourages interdisciplinary collaboration and innovation, fostering groundbreaking discoveries and meaningful contributions to society.",
+    ],
+    image_url: '/cities/academic-jobs-in-dekalb-illi.jpg',
+    alt: 'DeKalb, Illinois: A Hub of Learning',
+  },
 
+  {
+    title: 'East Lansing, Michigan: Academic Hub of Innovation',
+    h1: 'Unlocking Excellence in East Lansing',
+    slug: 'east-lansing-michigan-academic-hub',
+    city: 'East Lansing',
+    region: 'Michigan',
+    country: 'United States',
+    description:
+      "Explore the vibrant academic landscape of East Lansing, Michigan, home to renowned universities, groundbreaking research, and intellectual diversity. Discover the city's legacy of excellence and innovation, attracting scholars and learners worldwide.",
+    keywords:
+      'East Lansing, Michigan State University, education, research, innovation',
 
-{
-  title: "East Lansing, Michigan: Academic Hub of Innovation",
-  h1: "Unlocking Excellence in East Lansing",
-  slug: "east-lansing-michigan-academic-hub",
-  city: "East Lansing",
-  region: "Michigan",
-  country: "United States",
-  description: "Explore the vibrant academic landscape of East Lansing, Michigan, home to renowned universities, groundbreaking research, and intellectual diversity. Discover the city's legacy of excellence and innovation, attracting scholars and learners worldwide.",
-  keywords: "East Lansing, Michigan State University, education, research, innovation",
+    cityInfo: [
+      'East Lansing, Michigan, nestled in the heart of the state, is a beacon of educational brilliance. Boasting a diverse range of prestigious universities and colleges, including the acclaimed Michigan State University (MSU), the city fosters an environment ripe for intellectual growth and exploration.',
+      'With its vibrant academic community and state-of-the-art research facilities, East Lansing stands as a testament to the power of higher education in driving innovation and shaping the future​.',
+    ],
+    uniList: [
+      'Michigan State University',
+      'Thomas M. Cooley Law School',
+      'Great Lakes Christian College',
+      'Davenport University - Lansing Campus',
+    ],
+    nobelInfo: ['', ''],
+    nobelList: [],
+    academicInfo: [''],
+    academicList: [],
+    promo: [
+      'East Lansing offers unparalleled educational and personal growth opportunities for students. From cutting-edge research initiatives to a rich tapestry of cultural and extracurricular activities, attending a university in East Lansing opens doors to endless possibilities.',
+      "For professionals seeking employment, East Lansing's universities provide a dynamic environment ripe with research opportunities and industry connections. Whether in academia, healthcare, or technology, the city offers a platform for career advancement and impactful contributions​.",
+    ],
+    image_url: '/cities/academic-jobs-in-east-lansing.jpg',
+    alt: 'East Lansing, Michigan: Aerial view of the city skyline and Michigan State University campus',
+  },
 
-  cityInfo: [
-    "East Lansing, Michigan, nestled in the heart of the state, is a beacon of educational brilliance. Boasting a diverse range of prestigious universities and colleges, including the acclaimed Michigan State University (MSU), the city fosters an environment ripe for intellectual growth and exploration.",
-    "With its vibrant academic community and state-of-the-art research facilities, East Lansing stands as a testament to the power of higher education in driving innovation and shaping the future​."
-  ],
-  uniList: [
-    "Michigan State University",
-    "Thomas M. Cooley Law School",
-    "Great Lakes Christian College",
-    "Davenport University - Lansing Campus"
-  ],
-  nobelInfo: [
-    "",
-    ""
-  ],
-  nobelList: [],
-  academicInfo: [
-    ""
-  ],
-  academicList: [],
-  promo: [
-    "East Lansing offers unparalleled educational and personal growth opportunities for students. From cutting-edge research initiatives to a rich tapestry of cultural and extracurricular activities, attending a university in East Lansing opens doors to endless possibilities.",
-    "For professionals seeking employment, East Lansing's universities provide a dynamic environment ripe with research opportunities and industry connections. Whether in academia, healthcare, or technology, the city offers a platform for career advancement and impactful contributions​."
-  ],
-  image_url: "/cities/east-lansing.jpg",
-  alt: "East Lansing, Michigan: Aerial view of the city skyline and Michigan State University campus"
-},
+  {
+    title: 'Eugene, Oregon: Hub of Academic Excellence',
+    h1: "Exploring Eugene's Academic Landscape",
+    slug: 'eugene-oregon-academic-excellence',
+    city: 'Eugene',
+    region: 'Oregon',
+    country: 'United States',
+    description:
+      "Discover Eugene, Oregon's vibrant academic scene, boasting prestigious universities, Nobel laureates, and renowned academics. Explore educational and career opportunities in this thriving city.",
+    keywords:
+      'Eugene Oregon, University of Oregon, academic excellence, higher education, Nobel laureates, notable academics',
 
+    cityInfo: [
+      'Eugene, Oregon, is a haven for academic pursuits, known for its diverse higher education landscape. From the iconic University of Oregon to smaller colleges, the city offers a rich tapestry of educational opportunities.',
+      "With a strong emphasis on innovation and research, Eugene's universities and colleges foster intellectual growth and community engagement, shaping future leaders across various disciplines.",
+    ],
+    uniList: [
+      'University of Oregon',
+      'Lane Community College',
+      'Northwest Christian University',
+      'New Hope Christian College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Eugene beckons with unparalleled educational and personal growth opportunities. At the University of Oregon and other institutions, students delve into cutting-edge research and diverse academic programs, nurturing a lifelong pursuit of knowledge and excellence.',
+      "For professionals, Eugene offers a dynamic environment ripe with collaborative research initiatives and career advancement prospects. Joining the city's academic institutions means being part of a vibrant community dedicated to intellectual exploration and societal impact.",
+    ],
+    image_url: '/cities/academic-jobs-in-eugene-oregon.jpg',
+    alt: "Aerial view of Eugene, Oregon's lush landscape and University of Oregon campus",
+  },
 
-{
-  title: "Eugene, Oregon: Hub of Academic Excellence",
-  h1: "Exploring Eugene's Academic Landscape",
-  slug: "eugene-oregon-academic-excellence",
-  city: "Eugene",
-  region: "Oregon",
-  country: "United States",
-  description: "Discover Eugene, Oregon's vibrant academic scene, boasting prestigious universities, Nobel laureates, and renowned academics. Explore educational and career opportunities in this thriving city.",
-  keywords: "Eugene Oregon, University of Oregon, academic excellence, higher education, Nobel laureates, notable academics",
+  {
+    title: 'Fort Collins, Colorado: Academic Excellence and Innovation Hub',
+    h1: 'Exploring Fort Collins, Colorado',
+    slug: 'fort-collins-colorado',
+    city: 'Fort Collins',
+    region: 'Colorado',
+    country: 'United States',
+    description:
+      'Discover Fort Collins, Colorado, a vibrant academic city known for its prestigious universities, groundbreaking research, and intellectual diversity. Explore the educational opportunities, notable laureates, and renowned academics shaping this innovative hub.',
+    keywords:
+      'Fort Collins, Colorado, universities, colleges, academics, Nobel Laureates, education, research',
 
-  cityInfo: [
-      "Eugene, Oregon, is a haven for academic pursuits, known for its diverse higher education landscape. From the iconic University of Oregon to smaller colleges, the city offers a rich tapestry of educational opportunities.",
-      "With a strong emphasis on innovation and research, Eugene's universities and colleges foster intellectual growth and community engagement, shaping future leaders across various disciplines."
-  ],
-  uniList: [
-      "University of Oregon",
-      "Lane Community College",
-      "Northwest Christian University",
-      "New Hope Christian College"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-      "Eugene beckons with unparalleled educational and personal growth opportunities. At the University of Oregon and other institutions, students delve into cutting-edge research and diverse academic programs, nurturing a lifelong pursuit of knowledge and excellence.",
-      "For professionals, Eugene offers a dynamic environment ripe with collaborative research initiatives and career advancement prospects. Joining the city's academic institutions means being part of a vibrant community dedicated to intellectual exploration and societal impact."
-  ],
-  image_url: "/cities/eugene-oregon.jpg",
-  alt: "Aerial view of Eugene, Oregon's lush landscape and University of Oregon campus"
-},
+    cityInfo: [
+      "Nestled in the heart of Colorado, Fort Collins boasts a thriving academic landscape, encompassing renowned universities and colleges. The city's educational institutions foster a diverse learning environment, attracting students and scholars globally.",
+      'With a strong emphasis on innovation and research, Fort Collins stands as a beacon of academic excellence in the region, offering unparalleled opportunities for intellectual growth and professional development.',
+    ],
+    uniList: [
+      'Colorado State University',
+      'Front Range Community College',
+      'Institute of Business & Medical Careers',
+      'Regis University',
+      'University of Northern Colorado',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Immerse yourself in Fort Collins' dynamic academic community, where you'll engage with leading scholars and groundbreaking research. Whether you're a student seeking educational enrichment or a professional aiming to advance your career, Fort Collins offers a vibrant ecosystem for intellectual exploration and innovation.",
+      "Join the ranks of visionary educators and researchers shaping the future across various disciplines. Experience the collaborative spirit and entrepreneurial mindset that define Fort Collins' academic institutions, propelling individuals towards impactful contributions and transformative discoveries.",
+    ],
+    image_url: '/cities/academic-jobs-in-fort-collins.jpg',
+    alt: 'Scenic view of Fort Collins, Colorado',
+  },
 
+  {
+    title: 'Gainesville, Georgia: Education Hub',
+    h1: "Discover Gainesville's Academic Excellence",
+    slug: 'gainesville-georgia-education-hub',
+    city: 'Gainesville',
+    region: 'Georgia',
+    country: 'United States',
+    description:
+      "Explore Gainesville, Georgia's vibrant educational landscape, boasting renowned universities and colleges, notable academics, and a legacy of intellectual achievement. Discover why attending or working at one of Gainesville's institutions offers unparalleled opportunities for personal growth, research, and professional development.",
+    keywords:
+      'Gainesville Georgia, University of North Georgia, education hub, academic excellence, higher education, research opportunities, professional development',
 
-{
-  title: "Fort Collins, Colorado: Academic Excellence and Innovation Hub",
-  h1: "Exploring Fort Collins, Colorado",
-  slug: "fort-collins-colorado",
-  city: "Fort Collins",
-  region: "Colorado",
-  country: "United States",
-  description: "Discover Fort Collins, Colorado, a vibrant academic city known for its prestigious universities, groundbreaking research, and intellectual diversity. Explore the educational opportunities, notable laureates, and renowned academics shaping this innovative hub.",
-  keywords: "Fort Collins, Colorado, universities, colleges, academics, Nobel Laureates, education, research",
+    cityInfo: [
+      'Gainesville, Georgia, is a dynamic educational center nestled in the heart of the state. With its diverse higher education landscape, including the University of North Georgia (UNG), this city fosters a rich intellectual environment conducive to learning and innovation.',
+      "Gainesville's education ecosystem thrives on the strengths of its institutions, offering a wide range of programs, research opportunities, and community engagement initiatives, making it an ideal destination for students and academics alike.​",
+    ],
+    uniList: ['University of North Georgia'],
+    nobelInfo: ['', ''],
+    nobelList: [],
+    academicInfo: [''],
+    academicList: [],
+    promo: [
+      'The University of North Georgia, situated in Gainesville, Georgia, provides a unique blend of academic rigor and supportive community, fostering personal growth and intellectual exploration. Whether pursuing undergraduate or graduate studies, students benefit from small class sizes, dedicated faculty, and access to cutting-edge research facilities.',
+      "For professionals seeking employment, Gainesville's institutions offer exciting opportunities for collaboration, innovation, and career advancement. From faculty positions to research partnerships, joining the academic community in Gainesville opens doors to impactful work and meaningful contributions to knowledge​​.",
+    ],
+    image_url: '/cities/academic-jobs-in-gainseville-georgia.webp',
+    alt: 'Gainesville, Georgia: City Skyline',
+  },
 
-  cityInfo: [
-    "Nestled in the heart of Colorado, Fort Collins boasts a thriving academic landscape, encompassing renowned universities and colleges. The city's educational institutions foster a diverse learning environment, attracting students and scholars globally.",
-    "With a strong emphasis on innovation and research, Fort Collins stands as a beacon of academic excellence in the region, offering unparalleled opportunities for intellectual growth and professional development."
-  ],
-  uniList: [
-    "Colorado State University",
-    "Front Range Community College",
-    "Institute of Business & Medical Careers",
-    "Regis University",
-    "University of Northern Colorado"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Immerse yourself in Fort Collins' dynamic academic community, where you'll engage with leading scholars and groundbreaking research. Whether you're a student seeking educational enrichment or a professional aiming to advance your career, Fort Collins offers a vibrant ecosystem for intellectual exploration and innovation.",
-    "Join the ranks of visionary educators and researchers shaping the future across various disciplines. Experience the collaborative spirit and entrepreneurial mindset that define Fort Collins' academic institutions, propelling individuals towards impactful contributions and transformative discoveries."
-  ],
-  image_url: "/cities/fort-collins.jpg",
-  alt: "Scenic view of Fort Collins, Colorado"
-},
+  {
+    title: 'Greeley, Colorado: Academic Hub of Innovation',
+    h1: "Exploring Greeley's Academic Landscape",
+    slug: 'greeley-colorado-academic-hub',
+    city: 'Greeley',
+    region: 'Colorado',
+    country: 'United States',
+    description:
+      'Discover Greeley, Colorado, a vibrant academic community boasting Nobel Laureates, prestigious universities, and notable academics. Explore educational and professional opportunities in this thriving city.',
+    keywords:
+      'Greeley Colorado, University of Northern Colorado, academic hub, higher education, Nobel Laureates, academics',
 
+    cityInfo: [
+      'Nestled in the heart of Colorado, Greeley embodies a dynamic intellectual ecosystem, fostering innovation and academic excellence. Renowned for the University of Northern Colorado (UNC), the city attracts scholars and students seeking diverse educational experiences and vibrant community engagement.',
+      'With a rich tapestry of cultural events, outdoor adventures, and a supportive academic environment, Greeley offers an unparalleled collegiate experience. From cutting-edge research to cultural immersion, the city celebrates diversity and fosters personal growth.',
+    ],
+    uniList: [
+      'University of Northern Colorado',
+      'Aims Community College',
+      'Noble Academy',
+      'Institute of Business and Medical Careers',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Experience a transformative educational journey in Greeley, Colorado, where academic rigor meets unparalleled personal growth. Whether you're a student seeking innovative learning opportunities or a professional aiming to advance your career, Greeley's academic institutions provide a fertile ground for success and discovery.",
+      'Join a vibrant community of scholars and educators dedicated to pushing the boundaries of knowledge and creativity. With access to state-of-the-art facilities, diverse research opportunities, and a supportive network of mentors, Greeley offers an enriching environment for both educational and professional endeavors.',
+    ],
+    image_url: '/cities/academic-jobs-in-greeley-col.jpg',
+    alt: 'Greeley, Colorado: Academic Hub',
+  },
 
-{
-  title: "Gainesville, Georgia: Education Hub",
-  h1: "Discover Gainesville's Academic Excellence",
-  slug: "gainesville-georgia-education-hub",
-  city: "Gainesville",
-  region: "Georgia",
-  country: "United States",
-  description: "Explore Gainesville, Georgia's vibrant educational landscape, boasting renowned universities and colleges, notable academics, and a legacy of intellectual achievement. Discover why attending or working at one of Gainesville's institutions offers unparalleled opportunities for personal growth, research, and professional development.",
-  keywords: "Gainesville Georgia, University of North Georgia, education hub, academic excellence, higher education, research opportunities, professional development",
+  {
+    title: 'Hattiesburg, Mississippi: Hub of Education and Innovation',
+    h1: "Unlocking Hattiesburg's Educational Potential",
+    slug: 'hattiesburg-mississippi-hub-of-education-and-innovation',
+    city: 'Hattiesburg',
+    region: 'Mississippi',
+    country: 'United States',
+    description:
+      'Discover the vibrant academic landscape of Hattiesburg, Mississippi, renowned for its diverse universities and colleges, Nobel laureates, and esteemed academics. Explore the educational and professional opportunities that make Hattiesburg an ideal destination for students and researchers alike.',
+    keywords:
+      'Hattiesburg Mississippi, universities, colleges, education, Nobel laureates, academics, research',
 
-  cityInfo: [
-    "Gainesville, Georgia, is a dynamic educational center nestled in the heart of the state. With its diverse higher education landscape, including the University of North Georgia (UNG), this city fosters a rich intellectual environment conducive to learning and innovation.",
-    "Gainesville's education ecosystem thrives on the strengths of its institutions, offering a wide range of programs, research opportunities, and community engagement initiatives, making it an ideal destination for students and academics alike.​"
-  ],
-  uniList: [
-    "University of North Georgia"
-  ],
-  nobelInfo: [
-    "",
-    ""
-  ],
-  nobelList: [],
-  academicInfo: [
-    ""
-  ],
-  academicList: [],
-  promo: [
-    "The University of North Georgia, situated in Gainesville, Georgia, provides a unique blend of academic rigor and supportive community, fostering personal growth and intellectual exploration. Whether pursuing undergraduate or graduate studies, students benefit from small class sizes, dedicated faculty, and access to cutting-edge research facilities.",
-    "For professionals seeking employment, Gainesville's institutions offer exciting opportunities for collaboration, innovation, and career advancement. From faculty positions to research partnerships, joining the academic community in Gainesville opens doors to impactful work and meaningful contributions to knowledge​​."
-  ],
-  image_url: "/cities/gainseville-georgia.webp",
-  alt: "Gainesville, Georgia: City Skyline"
-},
+    cityInfo: [
+      'Nestled in the heart of Mississippi, Hattiesburg exudes academic excellence with its array of universities and colleges. From the vibrant campus life at the University of Southern Mississippi to specialized institutions fostering innovation, the city offers a diverse educational landscape.',
+      "Hattiesburg's higher education institutions not only cater to traditional academic disciplines but also embrace emerging fields, reflecting the city's commitment to fostering intellectual curiosity and innovation.",
+    ],
+    uniList: [
+      'University of Southern Mississippi',
+      'William Carey University',
+      'Pearl River Community College',
+      'Antonelli College',
+      'The University of Southern Mississippi - Gulf Coast',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Hattiesburg, Mississippi, offers unparalleled educational and research opportunities, attracting students and professionals from around the globe. With world-class faculty, state-of-the-art facilities, and a collaborative academic environment, the city fosters personal growth and professional advancement.',
+    ],
+    image_url: '/cities/academic-jobs-in-hattiesburg.jpg',
+    alt: 'Hattiesburg, Mississippi: A bustling academic hub',
+  },
 
+  {
+    title: 'Education Hub: Iowa City, IA',
+    h1: "Discover Iowa City's Vibrant Academic Landscape",
+    slug: 'education-hub-iowa-city-ia',
+    city: 'Iowa City',
+    region: 'Iowa',
+    country: 'United States',
+    description:
+      'Explore the diverse higher education scene in Iowa City, Iowa, home to renowned universities and colleges, Nobel Laureates, and notable academics. Uncover compelling reasons for attending or working at these esteemed institutions.',
+    keywords:
+      'Iowa City, Iowa, universities, colleges, higher education, Nobel Laureates, academics, employment opportunities, educational growth',
 
-{
-  title: "Greeley, Colorado: Academic Hub of Innovation",
-  h1: "Exploring Greeley's Academic Landscape",
-  slug: "greeley-colorado-academic-hub",
-  city: "Greeley",
-  region: "Colorado",
-  country: "United States",
-  description: "Discover Greeley, Colorado, a vibrant academic community boasting Nobel Laureates, prestigious universities, and notable academics. Explore educational and professional opportunities in this thriving city.",
-  keywords: "Greeley Colorado, University of Northern Colorado, academic hub, higher education, Nobel Laureates, academics",
+    cityInfo: [
+      'Nestled in the heart of Iowa, Iowa City boasts a dynamic academic landscape characterized by its prestigious universities and colleges. Renowned for its vibrant cultural scene and intellectual fervor, the city fosters a stimulating environment for both students and scholars alike.',
+      'With a rich history dating back to its founding in 1847, Iowa City has emerged as a hub of higher education excellence, attracting individuals from diverse backgrounds and disciplines to engage in innovative research, scholarship, and creative endeavors.',
+    ],
+    uniList: ['University of Iowa', 'Kirkwood Community College'],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Iowa City offers unparalleled educational and professional opportunities within its esteemed universities and colleges. Whether you're seeking a transformative academic experience or pursuing groundbreaking research, the city's vibrant intellectual community fosters growth, innovation, and collaboration.",
+      "From world-class faculty to state-of-the-art facilities, Iowa City's institutions provide a supportive environment where students and faculty alike can thrive, contributing to the advancement of knowledge and the betterment of society.",
+    ],
+    image_url: '/cities/academic-jobs-in-iowa-city-iowa.jpg',
+    alt: 'Iowa City skyline overlooking the university campus',
+  },
 
-  cityInfo: [
-    "Nestled in the heart of Colorado, Greeley embodies a dynamic intellectual ecosystem, fostering innovation and academic excellence. Renowned for the University of Northern Colorado (UNC), the city attracts scholars and students seeking diverse educational experiences and vibrant community engagement.",
-    "With a rich tapestry of cultural events, outdoor adventures, and a supportive academic environment, Greeley offers an unparalleled collegiate experience. From cutting-edge research to cultural immersion, the city celebrates diversity and fosters personal growth."
-  ],
-  uniList: [
-    "University of Northern Colorado",
-    "Aims Community College",
-    "Noble Academy",
-    "Institute of Business and Medical Careers"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Experience a transformative educational journey in Greeley, Colorado, where academic rigor meets unparalleled personal growth. Whether you're a student seeking innovative learning opportunities or a professional aiming to advance your career, Greeley's academic institutions provide a fertile ground for success and discovery.",
-    "Join a vibrant community of scholars and educators dedicated to pushing the boundaries of knowledge and creativity. With access to state-of-the-art facilities, diverse research opportunities, and a supportive network of mentors, Greeley offers an enriching environment for both educational and professional endeavors."
-  ],
-  image_url: "/cities/greeley-col.jpg",
-  alt: "Greeley, Colorado: Academic Hub"
-},
+  {
+    title: 'Jacksonville, Alabama: Education Hub of the South',
+    h1: "Exploring Jacksonville's Academic Excellence",
+    slug: 'jacksonville-alabama-education-hub',
+    city: 'Jacksonville',
+    region: 'Alabama',
+    country: 'United States',
+    description:
+      'Discover the vibrant academic landscape of Jacksonville, Alabama, boasting renowned universities, notable academics, and a legacy of excellence. Explore opportunities for education and employment in this thriving educational hub.',
+    keywords:
+      'Jacksonville Alabama, universities, colleges, education, academics, employment opportunities',
 
-
-{
-  title: "Hattiesburg, Mississippi: Hub of Education and Innovation",
-  h1: "Unlocking Hattiesburg's Educational Potential",
-  slug: "hattiesburg-mississippi-hub-of-education-and-innovation",
-  city: "Hattiesburg",
-  region: "Mississippi",
-  country: "United States",
-  description: "Discover the vibrant academic landscape of Hattiesburg, Mississippi, renowned for its diverse universities and colleges, Nobel laureates, and esteemed academics. Explore the educational and professional opportunities that make Hattiesburg an ideal destination for students and researchers alike.",
-  keywords: "Hattiesburg Mississippi, universities, colleges, education, Nobel laureates, academics, research",
-
-  cityInfo: [
-    "Nestled in the heart of Mississippi, Hattiesburg exudes academic excellence with its array of universities and colleges. From the vibrant campus life at the University of Southern Mississippi to specialized institutions fostering innovation, the city offers a diverse educational landscape.",
-    "Hattiesburg's higher education institutions not only cater to traditional academic disciplines but also embrace emerging fields, reflecting the city's commitment to fostering intellectual curiosity and innovation."
-  ],
-  uniList: [
-    "University of Southern Mississippi",
-    "William Carey University",
-    "Pearl River Community College",
-    "Antonelli College",
-    "The University of Southern Mississippi - Gulf Coast"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Hattiesburg, Mississippi, offers unparalleled educational and research opportunities, attracting students and professionals from around the globe. With world-class faculty, state-of-the-art facilities, and a collaborative academic environment, the city fosters personal growth and professional advancement."
-  ],
-  image_url: "/cities/hattiesburg.jpg",
-  alt: "Hattiesburg, Mississippi: A bustling academic hub"
-},
-
-
-{
-  title: "Education Hub: Iowa City, IA",
-  h1: "Discover Iowa City's Vibrant Academic Landscape",
-  slug: "education-hub-iowa-city-ia",
-  city: "Iowa City",
-  region: "Iowa",
-  country: "United States",
-  description: "Explore the diverse higher education scene in Iowa City, Iowa, home to renowned universities and colleges, Nobel Laureates, and notable academics. Uncover compelling reasons for attending or working at these esteemed institutions.",
-  keywords: "Iowa City, Iowa, universities, colleges, higher education, Nobel Laureates, academics, employment opportunities, educational growth",
-
-  cityInfo: [
-    "Nestled in the heart of Iowa, Iowa City boasts a dynamic academic landscape characterized by its prestigious universities and colleges. Renowned for its vibrant cultural scene and intellectual fervor, the city fosters a stimulating environment for both students and scholars alike.",
-    "With a rich history dating back to its founding in 1847, Iowa City has emerged as a hub of higher education excellence, attracting individuals from diverse backgrounds and disciplines to engage in innovative research, scholarship, and creative endeavors."
-  ],
-  uniList: [
-    "University of Iowa",
-    "Kirkwood Community College"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Iowa City offers unparalleled educational and professional opportunities within its esteemed universities and colleges. Whether you're seeking a transformative academic experience or pursuing groundbreaking research, the city's vibrant intellectual community fosters growth, innovation, and collaboration.",
-    "From world-class faculty to state-of-the-art facilities, Iowa City's institutions provide a supportive environment where students and faculty alike can thrive, contributing to the advancement of knowledge and the betterment of society."
-  ],
-  image_url: "/cities/iowa-city-iowa.jpg",
-  alt: "Iowa City skyline overlooking the university campus"
-},
-
-
-{
-  title: "Jacksonville, Alabama: Education Hub of the South",
-  h1: "Exploring Jacksonville's Academic Excellence",
-  slug: "jacksonville-alabama-education-hub",
-  city: "Jacksonville",
-  region: "Alabama",
-  country: "United States",
-  description: "Discover the vibrant academic landscape of Jacksonville, Alabama, boasting renowned universities, notable academics, and a legacy of excellence. Explore opportunities for education and employment in this thriving educational hub.",
-  keywords: "Jacksonville Alabama, universities, colleges, education, academics, employment opportunities",
-
-  cityInfo: [
+    cityInfo: [
       "Nestled in the heart of Alabama, Jacksonville shines as an educational beacon, housing a diverse array of universities and colleges. Its higher education landscape offers a rich tapestry of disciplines, catering to students' diverse interests and career aspirations.",
-      "From liberal arts institutions to specialized research universities, Jacksonville fosters a culture of academic excellence, drawing students and scholars from across the nation."
-  ],
-  uniList: [
-      "Jacksonville State University",
-      "Gadsden State Community College - Ayers Campus",
-      "JSU McClellan Center"
-  ],
-  nobelInfo: [
-      "",
-      ""
-  ],
-  nobelList: [],
-  academicInfo: [
-      "While Jacksonville may not boast Nobel Laureates, its academic community thrives with notable scholars and educators. Professors at Jacksonville State University, such as Dr. John Smith in History and Dr. Jane Doe in Biology, exemplify excellence in teaching and research, enriching the academic landscape."
-  ],
-  academicList: [
-      "Dr. John Smith: Professor of History",
-      "Dr. Jane Doe: Professor of Biology"
-  ],
-  promo: [
+      'From liberal arts institutions to specialized research universities, Jacksonville fosters a culture of academic excellence, drawing students and scholars from across the nation.',
+    ],
+    uniList: [
+      'Jacksonville State University',
+      'Gadsden State Community College - Ayers Campus',
+      'JSU McClellan Center',
+    ],
+    nobelInfo: ['', ''],
+    nobelList: [],
+    academicInfo: [
+      'While Jacksonville may not boast Nobel Laureates, its academic community thrives with notable scholars and educators. Professors at Jacksonville State University, such as Dr. John Smith in History and Dr. Jane Doe in Biology, exemplify excellence in teaching and research, enriching the academic landscape.',
+    ],
+    academicList: [
+      'Dr. John Smith: Professor of History',
+      'Dr. Jane Doe: Professor of Biology',
+    ],
+    promo: [
       "Jacksonville offers unparalleled educational and personal growth opportunities. Whether through hands-on research experiences, interdisciplinary studies, or community engagement initiatives, students at Jacksonville's institutions are empowered to excel academically and professionally.",
-      "For faculty and researchers, Jacksonville provides a collaborative environment conducive to groundbreaking discoveries and impactful scholarship. With state-of-the-art facilities and supportive networks, educators thrive in advancing knowledge and shaping future generations."
-  ],
-  image_url: "/cities/jacksonvile-alab.jpg",
-  alt: "Jacksonville, Alabama: A City of Academic Excellence"
-},
+      'For faculty and researchers, Jacksonville provides a collaborative environment conducive to groundbreaking discoveries and impactful scholarship. With state-of-the-art facilities and supportive networks, educators thrive in advancing knowledge and shaping future generations.',
+    ],
+    image_url: '/cities/academic-jobs-in-jacksonvile-alab.jpg',
+    alt: 'Jacksonville, Alabama: A City of Academic Excellence',
+  },
 
+  {
+    title: 'Jonesboro, Arkansas: Hub of Higher Education',
+    h1: "Exploring Jonesboro's Academic Landscape",
+    slug: 'jonesboro-arkansas-hub-higher-education',
+    city: 'Jonesboro',
+    region: 'Arkansas',
+    country: 'United States',
+    description:
+      'Discover Jonesboro, Arkansas, a vibrant academic center boasting prestigious universities, notable academics, and a rich history of intellectual achievement. Explore opportunities for education, research, and personal growth in this dynamic city.',
+    keywords:
+      'Jonesboro Arkansas, universities, colleges, academics, higher education, Nobel Laureates, research opportunities',
 
+    cityInfo: [
+      'Jonesboro, Arkansas, is a thriving educational hub, home to Arkansas State University (ASU), a renowned institution offering diverse academic programs and fostering innovation and excellence in education.',
+      "The city's higher education landscape is characterized by its commitment to student success, cutting-edge research, and community engagement, making it an ideal destination for aspiring scholars.",
+    ],
+    uniList: ['Arkansas State University'],
+    nobelInfo: ['', ''],
+    nobelList: [],
+    academicInfo: [
+      "Jonesboro's academic community boasts esteemed scholars and researchers dedicated to advancing knowledge and addressing societal challenges. Notable academics like Dr. John Smith, renowned for his contributions to environmental science, and Dr. Jane Doe, a leading expert in public health, exemplify the city's commitment to academic excellence and innovation.",
+    ],
+    academicList: [
+      'Dr. John Smith: Professor of Environmental Science',
+      'Dr. Jane Doe: Professor of Public Health',
+    ],
+    promo: [
+      "Jonesboro offers unparalleled opportunities for both students and academics. With a focus on academic excellence, cutting-edge research facilities, and a supportive community, universities and colleges in Jonesboro provide an ideal environment for personal and professional growth. Whether you're seeking top-notch education or innovative research opportunities, Jonesboro has it all.",
+    ],
+    image_url: '/cities/academic-jobs-in-jonesboro.jpg',
+    alt: 'Jonesboro, Arkansas: A City of Learning',
+  },
 
-{
-  title: "Jonesboro, Arkansas: Hub of Higher Education",
-  h1: "Exploring Jonesboro's Academic Landscape",
-  slug: "jonesboro-arkansas-hub-higher-education",
-  city: "Jonesboro",
-  region: "Arkansas",
-  country: "United States",
-  description: "Discover Jonesboro, Arkansas, a vibrant academic center boasting prestigious universities, notable academics, and a rich history of intellectual achievement. Explore opportunities for education, research, and personal growth in this dynamic city.",
-  keywords: "Jonesboro Arkansas, universities, colleges, academics, higher education, Nobel Laureates, research opportunities",
+  {
+    title: 'Higher Education Hub: Kalamazoo, Michigan',
+    h1: 'Exploring the Academic Landscape of Kalamazoo, MI',
+    slug: 'higher-education-hub-kalamazoo-michigan',
+    city: 'Kalamazoo',
+    region: 'Michigan',
+    country: 'United States',
+    description:
+      'Discover the vibrant academic scene of Kalamazoo, Michigan, home to esteemed universities and colleges, Nobel Laureates, and renowned academics. Explore opportunities for education, research, and personal growth in this dynamic city.',
+    keywords:
+      'Kalamazoo Michigan, universities, colleges, higher education, Nobel Laureates, academics, research',
 
-
-  cityInfo: [
-    "Jonesboro, Arkansas, is a thriving educational hub, home to Arkansas State University (ASU), a renowned institution offering diverse academic programs and fostering innovation and excellence in education.",
-    "The city's higher education landscape is characterized by its commitment to student success, cutting-edge research, and community engagement, making it an ideal destination for aspiring scholars."
-  ],
-  uniList: [
-    "Arkansas State University"
-  ],
-  nobelInfo: [
-    "",
-    ""
-  ],
-  nobelList: [],
-  academicInfo: [
-    "Jonesboro's academic community boasts esteemed scholars and researchers dedicated to advancing knowledge and addressing societal challenges. Notable academics like Dr. John Smith, renowned for his contributions to environmental science, and Dr. Jane Doe, a leading expert in public health, exemplify the city's commitment to academic excellence and innovation."
-  ],
-  academicList: [
-    "Dr. John Smith: Professor of Environmental Science",
-    "Dr. Jane Doe: Professor of Public Health"
-  ],
-  promo: [
-    "Jonesboro offers unparalleled opportunities for both students and academics. With a focus on academic excellence, cutting-edge research facilities, and a supportive community, universities and colleges in Jonesboro provide an ideal environment for personal and professional growth. Whether you're seeking top-notch education or innovative research opportunities, Jonesboro has it all."
-  ],
-  image_url: "/cities/jonesboro.jpg",
-  alt: "Jonesboro, Arkansas: A City of Learning"
-},
-
-
-
-{
-  title: "Higher Education Hub: Kalamazoo, Michigan",
-  h1: "Exploring the Academic Landscape of Kalamazoo, MI",
-  slug: "higher-education-hub-kalamazoo-michigan",
-  city: "Kalamazoo",
-  region: "Michigan",
-  country: "United States",
-  description: "Discover the vibrant academic scene of Kalamazoo, Michigan, home to esteemed universities and colleges, Nobel Laureates, and renowned academics. Explore opportunities for education, research, and personal growth in this dynamic city.",
-  keywords: "Kalamazoo Michigan, universities, colleges, higher education, Nobel Laureates, academics, research",
-
-  cityInfo: [
-      "Nestled in Michigan, Kalamazoo thrives as an academic haven with its diverse higher education institutions. Known for its innovative programs and research initiatives, the city fosters a dynamic learning environment.",
-      "With a rich tapestry of colleges and universities, including Western Michigan University, Kalamazoo College, and Kalamazoo Valley Community College, students here benefit from a range of academic disciplines and extracurricular opportunities."
-  ],
-  uniList: [
-      "Western Michigan University",
-      "Kalamazoo College",
-      "Kalamazoo Valley Community College"
-  ],
-  nobelInfo: [
+    cityInfo: [
+      'Nestled in Michigan, Kalamazoo thrives as an academic haven with its diverse higher education institutions. Known for its innovative programs and research initiatives, the city fosters a dynamic learning environment.',
+      'With a rich tapestry of colleges and universities, including Western Michigan University, Kalamazoo College, and Kalamazoo Valley Community College, students here benefit from a range of academic disciplines and extracurricular opportunities.',
+    ],
+    uniList: [
+      'Western Michigan University',
+      'Kalamazoo College',
+      'Kalamazoo Valley Community College',
+    ],
+    nobelInfo: [
       "While Kalamazoo doesn't claim Nobel Laureates directly associated with its institutions, its academic landscape reverberates with impactful research. Notably, Nobel Laureate Dr. Paul L. Modrich, an alumnus of the University of Michigan, exemplifies the region's commitment to groundbreaking science.",
-      "Dr. Modrich was awarded the Nobel Prize in Chemistry for his discoveries in DNA repair mechanisms, underscoring the caliber of education and research fostered in the Michigan academic community."
-  ],
-  nobelList: ["Paul L. Modrich: Chemistry"],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-      "Embark on a transformative educational journey in Kalamazoo, Michigan, where academic excellence meets personal growth. With top-tier universities and colleges offering diverse programs, students immerse themselves in an environment primed for intellectual exploration and innovation.",
-      "For professionals seeking rewarding careers, Kalamazoo's academic institutions provide unparalleled research opportunities and industry connections. Whether in education, healthcare, or technology, the city's thriving academic scene promises a fulfilling path to success."
-  ],
-  image_url: "/cities/kalamazoo.jpg",
-  alt: "Kalamazoo, Michigan - A vibrant cityscape with a backdrop of academia"
-},
+      'Dr. Modrich was awarded the Nobel Prize in Chemistry for his discoveries in DNA repair mechanisms, underscoring the caliber of education and research fostered in the Michigan academic community.',
+    ],
+    nobelList: ['Paul L. Modrich: Chemistry'],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Embark on a transformative educational journey in Kalamazoo, Michigan, where academic excellence meets personal growth. With top-tier universities and colleges offering diverse programs, students immerse themselves in an environment primed for intellectual exploration and innovation.',
+      "For professionals seeking rewarding careers, Kalamazoo's academic institutions provide unparalleled research opportunities and industry connections. Whether in education, healthcare, or technology, the city's thriving academic scene promises a fulfilling path to success.",
+    ],
+    image_url: '/cities/academic-jobs-in-kalamazoo.jpg',
+    alt: 'Kalamazoo, Michigan - A vibrant cityscape with a backdrop of academia',
+  },
 
+  {
+    title: 'Knoxville, Tennessee - Academic Hub of the South',
+    h1: "Exploring Knoxville's Academic Excellence",
+    slug: 'knoxville-tennessee-academic-hub',
+    city: 'Knoxville',
+    region: 'Tennessee',
+    country: 'United States',
+    description:
+      "Discover Knoxville, Tennessee's vibrant academic landscape, boasting prestigious universities, notable academics, and groundbreaking research. Explore opportunities for education, research, and personal growth in this dynamic city.",
+    keywords:
+      'Knoxville Tennessee, University of Tennessee, higher education, academia, research, Knoxville universities',
 
+    cityInfo: [
+      'Knoxville, Tennessee, nestled in the heart of the Volunteer State, thrives as a beacon of higher education. Home to the renowned University of Tennessee, Knoxville, the city fosters a diverse and intellectually stimulating environment.',
+      'Its educational landscape extends beyond UT Knoxville, with several colleges and institutions offering a wide range of academic disciplines, attracting scholars and students from around the globe​.',
+    ],
+    uniList: [
+      'University of Tennessee, Knoxville',
+      'Pellissippi State Community College',
+      'Johnson University',
+      'South College',
+      'Knoxville College',
+    ],
+    nobelInfo: [
+      'While Knoxville has yet to claim a Nobel Laureate, its contributions to academia and research are profound. The University of Tennessee, Knoxville, stands at the forefront of innovation in various fields, including engineering, agriculture, and environmental sciences.',
+      "Though not awarded a Nobel Prize, the university's faculty and alumni have made significant strides in advancing knowledge and driving societal impact, further solidifying Knoxville's position as an academic powerhouse in the South.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Knoxville's academic community boasts numerous notable scholars and educators, enriching the city's intellectual landscape. From pioneering research in renewable energy to groundbreaking discoveries in healthcare, academics like Dr. John Doe and Professor Jane Smith continue to shape their respective fields with their expertise and dedication.",
+    ],
+    academicList: [
+      'Dr. John Doe: Professor of Renewable Energy Engineering at UT Knoxville',
+      'Professor Jane Smith: Leading Researcher in Healthcare Innovation at Pellissippi State Community College',
+    ],
+    promo: [
+      "Experience the limitless possibilities for education and personal growth in Knoxville's vibrant academic community. Whether you're a student seeking world-class education or a researcher pursuing groundbreaking discoveries, Knoxville offers a nurturing environment for intellectual exploration and professional development. Join us in shaping the future of knowledge and innovation​.",
+    ],
+    image_url: '/cities/academic-jobs-in-knoxvile-tenee.webp',
+    alt: 'Aerial view of Knoxville, Tennessee - Academic Hub of the South',
+  },
 
-{
-  title: "Knoxville, Tennessee - Academic Hub of the South",
-  h1: "Exploring Knoxville's Academic Excellence",
-  slug: "knoxville-tennessee-academic-hub",
-  city: "Knoxville",
-  region: "Tennessee",
-  country: "United States",
-  description: "Discover Knoxville, Tennessee's vibrant academic landscape, boasting prestigious universities, notable academics, and groundbreaking research. Explore opportunities for education, research, and personal growth in this dynamic city.",
-  keywords: "Knoxville Tennessee, University of Tennessee, higher education, academia, research, Knoxville universities",
+  {
+    title: 'Milledgeville, Georgia: Hub of Higher Learning',
+    h1: "Exploring Milledgeville's Academic Landscape",
+    slug: 'milledgeville-georgia-higher-learning',
+    city: 'Milledgeville',
+    region: 'Georgia',
+    country: 'United States',
+    description:
+      'Discover Milledgeville, Georgia, a vibrant academic hub renowned for its prestigious institutions, groundbreaking research, and intellectual diversity.',
+    keywords:
+      'Milledgeville, Georgia College & State University, higher education, academics, Nobel Laureates, research',
 
-  cityInfo: [
-      "Knoxville, Tennessee, nestled in the heart of the Volunteer State, thrives as a beacon of higher education. Home to the renowned University of Tennessee, Knoxville, the city fosters a diverse and intellectually stimulating environment.",
-      "Its educational landscape extends beyond UT Knoxville, with several colleges and institutions offering a wide range of academic disciplines, attracting scholars and students from around the globe​."
-  ],
-  uniList: [
-      "University of Tennessee, Knoxville",
-      "Pellissippi State Community College",
-      "Johnson University",
-      "South College",
-      "Knoxville College"
-  ],
-  nobelInfo: [
-      "While Knoxville has yet to claim a Nobel Laureate, its contributions to academia and research are profound. The University of Tennessee, Knoxville, stands at the forefront of innovation in various fields, including engineering, agriculture, and environmental sciences.",
-      "Though not awarded a Nobel Prize, the university's faculty and alumni have made significant strides in advancing knowledge and driving societal impact, further solidifying Knoxville's position as an academic powerhouse in the South."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Knoxville's academic community boasts numerous notable scholars and educators, enriching the city's intellectual landscape. From pioneering research in renewable energy to groundbreaking discoveries in healthcare, academics like Dr. John Doe and Professor Jane Smith continue to shape their respective fields with their expertise and dedication."
-  ],
-  academicList: [
-      "Dr. John Doe: Professor of Renewable Energy Engineering at UT Knoxville",
-      "Professor Jane Smith: Leading Researcher in Healthcare Innovation at Pellissippi State Community College"
-  ],
-  promo: [
-      "Experience the limitless possibilities for education and personal growth in Knoxville's vibrant academic community. Whether you're a student seeking world-class education or a researcher pursuing groundbreaking discoveries, Knoxville offers a nurturing environment for intellectual exploration and professional development. Join us in shaping the future of knowledge and innovation​."
-  ],
-  image_url: "/cities/knoxvile-tenee.webp",
-  alt: "Aerial view of Knoxville, Tennessee - Academic Hub of the South"
-},
-
-
-
-{
-  title: "Milledgeville, Georgia: Hub of Higher Learning",
-  h1: "Exploring Milledgeville's Academic Landscape",
-  slug: "milledgeville-georgia-higher-learning",
-  city: "Milledgeville",
-  region: "Georgia",
-  country: "United States",
-  description: "Discover Milledgeville, Georgia, a vibrant academic hub renowned for its prestigious institutions, groundbreaking research, and intellectual diversity.",
-  keywords: "Milledgeville, Georgia College & State University, higher education, academics, Nobel Laureates, research",
-
-  cityInfo: [
-      "Milledgeville, Georgia, is a dynamic academic center boasting a rich tapestry of educational institutions. At the heart of its higher education landscape is Georgia College & State University, recognized for its commitment to academic excellence and innovation.",
-      "Nestled amidst the historic charm of Milledgeville, this city offers a conducive environment for learning and research, attracting students and scholars from diverse backgrounds."
-  ],
-  uniList: [
-      "Georgia College & State University"
-  ],
-  nobelInfo: [
-      "",
-      ""
-  ],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+    cityInfo: [
+      'Milledgeville, Georgia, is a dynamic academic center boasting a rich tapestry of educational institutions. At the heart of its higher education landscape is Georgia College & State University, recognized for its commitment to academic excellence and innovation.',
+      'Nestled amidst the historic charm of Milledgeville, this city offers a conducive environment for learning and research, attracting students and scholars from diverse backgrounds.',
+    ],
+    uniList: ['Georgia College & State University'],
+    nobelInfo: ['', ''],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "Georgia College & State University in Milledgeville offers unparalleled educational opportunities, fostering intellectual growth and personal development. With cutting-edge research facilities and a supportive academic community, it's the perfect place to embark on a journey of discovery.",
-      "For professionals seeking employment, Milledgeville provides a conducive environment for career advancement. Join a vibrant community of scholars and researchers dedicated to pushing the boundaries of knowledge and innovation."
-  ],
-  image_url: "/cities/milledgevile.jpg",
-  alt: "Historic streets of Milledgeville, Georgia"
-},
+      'For professionals seeking employment, Milledgeville provides a conducive environment for career advancement. Join a vibrant community of scholars and researchers dedicated to pushing the boundaries of knowledge and innovation.',
+    ],
+    image_url: '/cities/academic-jobs-in-milledgevile.jpg',
+    alt: 'Historic streets of Milledgeville, Georgia',
+  },
 
+  {
+    title: 'Missoula, Montana - Academic Hub of the Rockies',
+    h1: "Exploring Missoula's Academic Landscape",
+    slug: 'missoula-montana-academic-hub',
+    city: 'Missoula',
+    region: 'Montana',
+    country: 'United States',
+    description:
+      "Discover Missoula, Montana's vibrant academic scene, boasting renowned universities and colleges, distinguished Nobel Laureates, and esteemed academics. Explore opportunities for education, research, and professional growth in this dynamic city nestled in the heart of the Rockies.",
+    keywords:
+      'Missoula Montana, University of Montana, higher education, academics, Nobel Laureates',
 
+    cityInfo: [
+      'Missoula, nestled in the Rocky Mountains of Montana, offers a rich tapestry of higher education. Home to the University of Montana, known for its stunning campus and diverse academic programs, the city also hosts institutions like Missoula College, renowned for its vocational training and community engagement. This blend of academic offerings fosters a vibrant intellectual community, attracting students and scholars from across the globe​.',
+      "Moreover, Missoula's educational landscape extends beyond traditional academia, with opportunities for outdoor education, environmental studies, and sustainable living deeply ingrained in the city's ethos. This unique combination of academic excellence and environmental stewardship makes Missoula an ideal destination for those seeking holistic learning experiences​.",
+    ],
+    uniList: ['University of Montana', 'Missoula College'],
+    nobelInfo: [
+      "While Missoula hasn't produced Nobel Laureates directly, its academic institutions contribute significantly to global knowledge and innovation. Notably, University of Montana researchers have made groundbreaking discoveries in fields like environmental science, wildlife biology, and conservation. Although not Nobel Prize winners, their contributions have had profound impacts on addressing pressing global challenges.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Missoula's academic community boasts notable scholars and researchers across various disciplines. From environmental scientists studying the impacts of climate change on mountain ecosystems to sociologists examining rural community dynamics, these academics contribute valuable insights to their fields. Additionally, the University of Montana's faculty includes esteemed authors, artists, and historians, enriching both academic discourse and cultural vibrancy​.",
+    ],
+    academicList: [
+      'Dr. John Smith: Professor of Environmental Science',
+      'Dr. Jane Doe: Sociologist and Rural Studies Expert',
+    ],
+    promo: [
+      "Embark on a journey of academic discovery in Missoula, where educational excellence meets natural beauty. Whether you're a student seeking rigorous academic programs or a researcher passionate about environmental sustainability, Missoula offers endless opportunities for growth and exploration. Join a community of scholars dedicated to making a difference in the world while surrounded by the breathtaking landscapes of the Rocky Mountains​.",
+    ],
+    image_url: '/cities/academic-jobs-in-missoula.jpg',
+    alt: 'Missoula Montana - Nestled in the Rocky Mountains',
+  },
 
-{
-  title: "Missoula, Montana - Academic Hub of the Rockies",
-  h1: "Exploring Missoula's Academic Landscape",
-  slug: "missoula-montana-academic-hub",
-  city: "Missoula",
-  region: "Montana",
-  country: "United States",
-  description: "Discover Missoula, Montana's vibrant academic scene, boasting renowned universities and colleges, distinguished Nobel Laureates, and esteemed academics. Explore opportunities for education, research, and professional growth in this dynamic city nestled in the heart of the Rockies.",
-  keywords: "Missoula Montana, University of Montana, higher education, academics, Nobel Laureates",
+  {
+    title: 'Morgantown, WV: Hub of Academic Excellence',
+    h1: 'Exploring Morgantown, WV',
+    slug: 'morgantown-wv-hub-of-academic-excellence',
+    city: 'Morgantown',
+    region: 'West Virginia',
+    country: 'United States',
+    description:
+      'Discover the vibrant academic landscape of Morgantown, WV, home to renowned universities and colleges, Nobel Laureates, and notable academics. Explore educational and professional opportunities in this thriving city.',
+    keywords:
+      'Morgantown WV, West Virginia University, higher education, Nobel Laureates, academics, research',
 
-  cityInfo: [
-    "Missoula, nestled in the Rocky Mountains of Montana, offers a rich tapestry of higher education. Home to the University of Montana, known for its stunning campus and diverse academic programs, the city also hosts institutions like Missoula College, renowned for its vocational training and community engagement. This blend of academic offerings fosters a vibrant intellectual community, attracting students and scholars from across the globe​.",
-    "Moreover, Missoula's educational landscape extends beyond traditional academia, with opportunities for outdoor education, environmental studies, and sustainable living deeply ingrained in the city's ethos. This unique combination of academic excellence and environmental stewardship makes Missoula an ideal destination for those seeking holistic learning experiences​."
-  ],
-  uniList: [
-    "University of Montana",
-    "Missoula College"
-  ],
-  nobelInfo: [
-    "While Missoula hasn't produced Nobel Laureates directly, its academic institutions contribute significantly to global knowledge and innovation. Notably, University of Montana researchers have made groundbreaking discoveries in fields like environmental science, wildlife biology, and conservation. Although not Nobel Prize winners, their contributions have had profound impacts on addressing pressing global challenges."
-  ],
-  nobelList: [],
-  academicInfo: [
-    "Missoula's academic community boasts notable scholars and researchers across various disciplines. From environmental scientists studying the impacts of climate change on mountain ecosystems to sociologists examining rural community dynamics, these academics contribute valuable insights to their fields. Additionally, the University of Montana's faculty includes esteemed authors, artists, and historians, enriching both academic discourse and cultural vibrancy​."
-  ],
-  academicList: [
-    "Dr. John Smith: Professor of Environmental Science",
-    "Dr. Jane Doe: Sociologist and Rural Studies Expert"
-  ],
-  promo: [
-    "Embark on a journey of academic discovery in Missoula, where educational excellence meets natural beauty. Whether you're a student seeking rigorous academic programs or a researcher passionate about environmental sustainability, Missoula offers endless opportunities for growth and exploration. Join a community of scholars dedicated to making a difference in the world while surrounded by the breathtaking landscapes of the Rocky Mountains​."
-  ],
-  image_url: "/cities/missoula.jpg",
-  alt: "Missoula Montana - Nestled in the Rocky Mountains"
-},
-
-
-
-{
-  title: "Morgantown, WV: Hub of Academic Excellence",
-  h1: "Exploring Morgantown, WV",
-  slug: "morgantown-wv-hub-of-academic-excellence",
-  city: "Morgantown",
-  region: "West Virginia",
-  country: "United States",
-  description: "Discover the vibrant academic landscape of Morgantown, WV, home to renowned universities and colleges, Nobel Laureates, and notable academics. Explore educational and professional opportunities in this thriving city.",
-  keywords: "Morgantown WV, West Virginia University, higher education, Nobel Laureates, academics, research",
-
-  cityInfo: [
+    cityInfo: [
       "Morgantown, nestled in the picturesque landscapes of West Virginia, shines as a beacon of academic excellence. It hosts a diverse range of universities and colleges, enriching the city's cultural and intellectual fabric.",
-      "From the renowned West Virginia University (WVU) to specialized institutions, Morgantown offers a dynamic learning environment, attracting students and scholars from across the globe."
-  ],
-  uniList: [
-      "West Virginia University",
-      "Mountain State University",
-      "Monongalia County Technical Education Center"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+      'From the renowned West Virginia University (WVU) to specialized institutions, Morgantown offers a dynamic learning environment, attracting students and scholars from across the globe.',
+    ],
+    uniList: [
+      'West Virginia University',
+      'Mountain State University',
+      'Monongalia County Technical Education Center',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "Consider attending or working at a university in Morgantown for unparalleled educational and professional growth. WVU's extensive research facilities and collaborative environment foster innovation, while the city's vibrant community provides a rich backdrop for personal development.",
-      "Employment opportunities in Morgantown's academic institutions offer a platform for cutting-edge research and collaboration. Whether in teaching, research, or administration, joining the city's academic community promises a fulfilling career path."
-  ],
-  image_url: "/cities/morgantown-west-v.jpg",
-  alt: "Morgantown, WV: Vibrant cityscape surrounded by rolling hills"
-},
+      "Employment opportunities in Morgantown's academic institutions offer a platform for cutting-edge research and collaboration. Whether in teaching, research, or administration, joining the city's academic community promises a fulfilling career path.",
+    ],
+    image_url: '/cities/academic-jobs-in-morgantown-west-v.jpg',
+    alt: 'Morgantown, WV: Vibrant cityscape surrounded by rolling hills',
+  },
 
-{
-  title: "Mount Vernon, Iowa - Home to Cornell College",
-  h1: "Exploring Mount Vernon's Educational Landscape",
-  slug: "mount-vernon-iowa-cornell-college",
-  city: "Mount Vernon",
-  region: "Iowa",
-  country: "United States",
-  description: "Discover the vibrant educational ecosystem of Mount Vernon, Iowa, anchored by Cornell College and enriched by its diverse institutions, notable academics, and contributions to global knowledge.",
-  keywords: "Mount Vernon Iowa, Cornell College, higher education, universities, colleges, Nobel Laureates, academics, research",
+  {
+    title: 'Mount Vernon, Iowa - Home to Cornell College',
+    h1: "Exploring Mount Vernon's Educational Landscape",
+    slug: 'mount-vernon-iowa-cornell-college',
+    city: 'Mount Vernon',
+    region: 'Iowa',
+    country: 'United States',
+    description:
+      'Discover the vibrant educational ecosystem of Mount Vernon, Iowa, anchored by Cornell College and enriched by its diverse institutions, notable academics, and contributions to global knowledge.',
+    keywords:
+      'Mount Vernon Iowa, Cornell College, higher education, universities, colleges, Nobel Laureates, academics, research',
 
-  cityInfo: [
-      "Mount Vernon, Iowa, situated in the heart of the state, thrives on its educational prowess, notably Cornell College, offering a dynamic learning environment within a tight-knit community.",
-      "With its strong emphasis on liberal arts education, Mount Vernon fosters intellectual growth and personal development, attracting students and scholars from diverse backgrounds."
-  ],
-  uniList: [
-      "Cornell College"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-      "Consider attending Cornell College in Mount Vernon, Iowa, for a transformative educational experience. Engage in small classes, experiential learning opportunities, and a supportive community that nurtures intellectual curiosity and personal growth.",
-      "For employment, Mount Vernon offers a stimulating academic environment with opportunities for research, mentorship, and professional development, making it an ideal destination for educators and researchers alike. Join a community dedicated to academic excellence and innovation at Cornell College."
-  ],
-  image_url: "/cities/mount-vernon-iowa.jpg",
-  alt: "Scenic view of Mount Vernon, Iowa"
-},
+    cityInfo: [
+      'Mount Vernon, Iowa, situated in the heart of the state, thrives on its educational prowess, notably Cornell College, offering a dynamic learning environment within a tight-knit community.',
+      'With its strong emphasis on liberal arts education, Mount Vernon fosters intellectual growth and personal development, attracting students and scholars from diverse backgrounds.',
+    ],
+    uniList: ['Cornell College'],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Consider attending Cornell College in Mount Vernon, Iowa, for a transformative educational experience. Engage in small classes, experiential learning opportunities, and a supportive community that nurtures intellectual curiosity and personal growth.',
+      'For employment, Mount Vernon offers a stimulating academic environment with opportunities for research, mentorship, and professional development, making it an ideal destination for educators and researchers alike. Join a community dedicated to academic excellence and innovation at Cornell College.',
+    ],
+    image_url: '/cities/academic-jobs-in-mount-vernon-iowa.jpg',
+    alt: 'Scenic view of Mount Vernon, Iowa',
+  },
 
+  {
+    title: 'Higher Education in Bury St Edmunds',
+    h1: 'Exploring Bury St Edmunds: Academic Excellence and Innovation',
+    slug: 'bury-st-edmunds-higher-education',
+    city: 'Bury St Edmunds',
+    region: 'Suffolk',
+    country: 'United Kingdom',
+    description:
+      'Discover the vibrant academic landscape of Bury St Edmunds, with its rich history, Nobel laureates, and renowned institutions. Explore educational and career opportunities in this dynamic city.',
+    keywords:
+      'Bury St Edmunds, universities, colleges, education, Nobel laureates, academics, employment opportunities',
 
+    cityInfo: [
+      'Nestled in Suffolk, UK, Bury St Edmunds boasts a diverse higher education scene. From its historic roots to modern innovations, the city offers a dynamic learning environment enriched by its esteemed universities and colleges.',
+      'With a blend of tradition and innovation, Bury St Edmunds fosters academic excellence across various disciplines, attracting students and scholars from around the globe.',
+    ],
+    uniList: [
+      'West Suffolk College',
+      'University of Suffolk at West Suffolk College',
+      'The University of Cambridge (Distance Learning)',
+      'Easton & Otley College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [],
+    image_url: '/cities/academic-jobs-in-bury-st-edmunds.jpg',
+    alt: 'A charming street view of Bury St Edmunds',
+  },
 
-{
-  title: "Higher Education in Bury St Edmunds",
-  h1: "Exploring Bury St Edmunds: Academic Excellence and Innovation",
-  slug: "bury-st-edmunds-higher-education",
-  city: "Bury St Edmunds",
-  region: "Suffolk",
-  country: "United Kingdom",
-  description: "Discover the vibrant academic landscape of Bury St Edmunds, with its rich history, Nobel laureates, and renowned institutions. Explore educational and career opportunities in this dynamic city.",
-  "keywords": "Bury St Edmunds, universities, colleges, education, Nobel laureates, academics, employment opportunities",
+  {
+    title: 'Canterbury: Academic Hub of the UK',
+    h1: "Exploring Canterbury's Educational Landscape",
+    slug: 'canterbury-academic-hub',
+    city: 'Canterbury',
+    region: 'Kent',
+    country: 'United Kingdom',
+    description:
+      "Discover Canterbury's vibrant academic community, featuring prestigious universities, Nobel laureates, and distinguished academics. Explore educational and professional opportunities in this historic city known for its rich intellectual heritage.",
+    keywords:
+      'Canterbury, universities, colleges, higher education, Nobel laureates, academics, academic hub, UK',
 
-  cityInfo: [
-    "Nestled in Suffolk, UK, Bury St Edmunds boasts a diverse higher education scene. From its historic roots to modern innovations, the city offers a dynamic learning environment enriched by its esteemed universities and colleges.",
-    "With a blend of tradition and innovation, Bury St Edmunds fosters academic excellence across various disciplines, attracting students and scholars from around the globe."
-  ],
-  uniList: [
-    "West Suffolk College",
-    "University of Suffolk at West Suffolk College",
-    "The University of Cambridge (Distance Learning)",
-    "Easton & Otley College"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [],
-  image_url: "/cities/bury-st-edmunds.jpg",
-  alt: "A charming street view of Bury St Edmunds"
-},
+    cityInfo: [
+      'Canterbury, UK, boasts a dynamic higher education landscape, characterized by a blend of tradition and innovation. Home to world-renowned universities and colleges, the city offers diverse academic programs and research opportunities, attracting students and scholars from around the globe.',
+      "Nestled in the picturesque county of Kent, Canterbury's historic streets resonate with centuries of intellectual pursuit, fostering an inspiring environment for learning and scholarly endeavors.",
+    ],
+    uniList: [
+      'University of Kent',
+      'Canterbury Christ Church University',
+      'University for the Creative Arts',
+      'Kent College Canterbury',
+      'etc.',
+    ],
+    nobelInfo: [
+      'While Canterbury may not have produced Nobel laureates directly, its academic institutions contribute significantly to global knowledge and innovation. Scholars from the University of Kent and Canterbury Christ Church University excel in various fields, from arts and humanities to sciences and social sciences, enriching the academic discourse and impacting society positively.',
+      "Though no Nobel laureates hail directly from Canterbury, the city's academic landscape is vibrant and diverse, nurturing talent and fostering groundbreaking research that shapes the future of education and beyond.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Canterbury's academic community boasts esteemed scholars whose contributions transcend disciplines. Notable academics like Dr. Sarah Harper from the University of Kent, a leading authority on population aging, and Professor David Bates from Canterbury Christ Church University, an expert in Victorian literature, exemplify the city's intellectual depth and scholarly excellence.",
+    ],
+    academicList: [
+      'Dr. Sarah Harper: Professor of Gerontology',
+      'Professor David Bates: Professor of English Literature',
+    ],
+    promo: [
+      'From world-class education to cutting-edge research, Canterbury offers unparalleled opportunities for both students and academics. Immerse yourself in a vibrant academic environment, where intellectual curiosity meets real-world impact.',
+      "Whether you seek personal growth through education or professional advancement through research, Canterbury's universities and colleges provide the ideal platform to pursue your academic aspirations.",
+    ],
+    image_url: '/cities/academic-jobs-in-canterbury.webp',
+    alt: 'Canterbury, UK: A Historic City with a Thriving Academic Community',
+  },
 
+  {
+    title: "Exploring Carlisle's Academic Landscape",
+    h1: "Unlocking Carlisle's Academic Gems",
+    slug: 'exploring-carlisles-academic-landscape',
+    city: 'Carlisle',
+    region: 'Cumbria',
+    country: 'United Kingdom',
+    description:
+      'Discover the rich educational tapestry of Carlisle, UK, through its esteemed universities and colleges, renowned Nobel Laureates, and distinguished academics.',
+    keywords:
+      'Carlisle universities, Carlisle colleges, Nobel Laureates Carlisle, academics Carlisle, education opportunities Carlisle',
 
-{
-  title: "Canterbury: Academic Hub of the UK",
-  h1: "Exploring Canterbury's Educational Landscape",
-  slug: "canterbury-academic-hub",
-  city: "Canterbury",
-  region: "Kent",
-  country: "United Kingdom",
-  description: "Discover Canterbury's vibrant academic community, featuring prestigious universities, Nobel laureates, and distinguished academics. Explore educational and professional opportunities in this historic city known for its rich intellectual heritage.",
-  keywords: "Canterbury, universities, colleges, higher education, Nobel laureates, academics, academic hub, UK",
-
-  cityInfo: [
-      "Canterbury, UK, boasts a dynamic higher education landscape, characterized by a blend of tradition and innovation. Home to world-renowned universities and colleges, the city offers diverse academic programs and research opportunities, attracting students and scholars from around the globe.",
-      "Nestled in the picturesque county of Kent, Canterbury's historic streets resonate with centuries of intellectual pursuit, fostering an inspiring environment for learning and scholarly endeavors."
-  ],
-  uniList: [
-      "University of Kent",
-      "Canterbury Christ Church University",
-      "University for the Creative Arts",
-      "Kent College Canterbury",
-      "etc."
-  ],
-  nobelInfo: [
-      "While Canterbury may not have produced Nobel laureates directly, its academic institutions contribute significantly to global knowledge and innovation. Scholars from the University of Kent and Canterbury Christ Church University excel in various fields, from arts and humanities to sciences and social sciences, enriching the academic discourse and impacting society positively.",
-      "Though no Nobel laureates hail directly from Canterbury, the city's academic landscape is vibrant and diverse, nurturing talent and fostering groundbreaking research that shapes the future of education and beyond."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Canterbury's academic community boasts esteemed scholars whose contributions transcend disciplines. Notable academics like Dr. Sarah Harper from the University of Kent, a leading authority on population aging, and Professor David Bates from Canterbury Christ Church University, an expert in Victorian literature, exemplify the city's intellectual depth and scholarly excellence."
-  ],
-  academicList: [
-      "Dr. Sarah Harper: Professor of Gerontology",
-      "Professor David Bates: Professor of English Literature"
-  ],
-  promo: [
-      "From world-class education to cutting-edge research, Canterbury offers unparalleled opportunities for both students and academics. Immerse yourself in a vibrant academic environment, where intellectual curiosity meets real-world impact.",
-      "Whether you seek personal growth through education or professional advancement through research, Canterbury's universities and colleges provide the ideal platform to pursue your academic aspirations."
-  ],
-  image_url: "/cities/canterbury.webp",
-  alt: "Canterbury, UK: A Historic City with a Thriving Academic Community"
-},
-
-
-{
-  title: "Exploring Carlisle's Academic Landscape",
-  h1: "Unlocking Carlisle's Academic Gems",
-  slug: "exploring-carlisles-academic-landscape",
-  city: "Carlisle",
-  region: "Cumbria",
-  country: "United Kingdom",
-  description: "Discover the rich educational tapestry of Carlisle, UK, through its esteemed universities and colleges, renowned Nobel Laureates, and distinguished academics.",
-  keywords: "Carlisle universities, Carlisle colleges, Nobel Laureates Carlisle, academics Carlisle, education opportunities Carlisle",
-
-  cityInfo: [
-      "Carlisle, UK, stands as a beacon of higher education, boasting diverse institutions that cater to various academic pursuits. From cutting-edge research facilities to vibrant campus life, the city offers an enriching environment for students and scholars alike.",
-      "Nestled amidst picturesque landscapes, Carlisle's universities and colleges provide not only top-tier education but also opportunities for personal growth and cultural immersion, making it an ideal destination for those seeking holistic academic experiences."
-  ],
-  uniList: [
-      "University of Cumbria",
-      "Carlisle College",
-      "Newton Rigg College",
-      "etc."
-  ],
-  nobelInfo: [
-      "While Carlisle may not have produced Nobel Laureates directly, its academic institutions contribute significantly to global knowledge and innovation. The University of Cumbria, for instance, fosters groundbreaking research in various fields, nurturing future leaders and innovators.",
-      "Additionally, collaborations with renowned institutions worldwide further enhance Carlisle's academic prowess, creating avenues for impactful discoveries and advancements in diverse disciplines."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Carlisle's academic community is home to notable scholars and educators who have left indelible marks in their respective fields. From pioneering research in environmental science to transformative contributions in education policy, these academics embody the spirit of innovation and excellence."
-  ],
-  academicList: [
-      "Dr. Sarah Thompson: Professor of Environmental Science",
-      "Professor James Carter: Chair of Education Policy Studies"
-  ],
-  promo: [
+    cityInfo: [
+      'Carlisle, UK, stands as a beacon of higher education, boasting diverse institutions that cater to various academic pursuits. From cutting-edge research facilities to vibrant campus life, the city offers an enriching environment for students and scholars alike.',
+      "Nestled amidst picturesque landscapes, Carlisle's universities and colleges provide not only top-tier education but also opportunities for personal growth and cultural immersion, making it an ideal destination for those seeking holistic academic experiences.",
+    ],
+    uniList: [
+      'University of Cumbria',
+      'Carlisle College',
+      'Newton Rigg College',
+      'etc.',
+    ],
+    nobelInfo: [
+      'While Carlisle may not have produced Nobel Laureates directly, its academic institutions contribute significantly to global knowledge and innovation. The University of Cumbria, for instance, fosters groundbreaking research in various fields, nurturing future leaders and innovators.',
+      "Additionally, collaborations with renowned institutions worldwide further enhance Carlisle's academic prowess, creating avenues for impactful discoveries and advancements in diverse disciplines.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Carlisle's academic community is home to notable scholars and educators who have left indelible marks in their respective fields. From pioneering research in environmental science to transformative contributions in education policy, these academics embody the spirit of innovation and excellence.",
+    ],
+    academicList: [
+      'Dr. Sarah Thompson: Professor of Environmental Science',
+      'Professor James Carter: Chair of Education Policy Studies',
+    ],
+    promo: [
       "With state-of-the-art facilities, a supportive academic community, and opportunities for interdisciplinary collaboration, Carlisle's universities and colleges offer an unparalleled platform for educational and personal growth. Whether you're pursuing undergraduate studies or advanced research, Carlisle provides the perfect backdrop for realizing your academic aspirations.",
-      "Moreover, with strong ties to industries and research organizations, Carlisle opens doors to rewarding employment opportunities, allowing professionals to thrive in dynamic and intellectually stimulating environments."
-  ],
-  image_url: "/cities/carlisle.jpg",
-  alt: "Carlisle skyline overlooking the historic university buildings"
-},
+      'Moreover, with strong ties to industries and research organizations, Carlisle opens doors to rewarding employment opportunities, allowing professionals to thrive in dynamic and intellectually stimulating environments.',
+    ],
+    image_url: '/cities/academic-jobs-in-carlisle.jpg',
+    alt: 'Carlisle skyline overlooking the historic university buildings',
+  },
 
+  {
+    title: 'Chatham, UK: Hub of Intellectual Excellence',
+    h1: 'Exploring the Academic Landscape of Chatham',
+    slug: 'chatham-uk-academia',
+    city: 'Chatham',
+    region: 'Kent',
+    country: 'United Kingdom',
+    description:
+      'Discover the vibrant academic ecosystem of Chatham, UK, home to renowned universities and colleges, celebrated Nobel Laureates, and distinguished academics. Explore educational and professional opportunities in this historic city.',
+    keywords:
+      'Chatham UK, universities, colleges, academics, Nobel Laureates, higher education',
 
-{
-  title: "Chatham, UK: Hub of Intellectual Excellence",
-  h1: "Exploring the Academic Landscape of Chatham",
-  slug: "chatham-uk-academia",
-  city: "Chatham",
-  region: "Kent",
-  country: "United Kingdom",
-  description: "Discover the vibrant academic ecosystem of Chatham, UK, home to renowned universities and colleges, celebrated Nobel Laureates, and distinguished academics. Explore educational and professional opportunities in this historic city.",
-  keywords: "Chatham UK, universities, colleges, academics, Nobel Laureates, higher education",
-
-  cityInfo: [
+    cityInfo: [
       "Nestled in Kent, UK, Chatham boasts a dynamic higher education scene characterized by its diverse range of universities and colleges. From cutting-edge research to innovative teaching methodologies, the city's academic institutions foster an environment of intellectual growth and exploration.",
-      "With a rich history dating back centuries, Chatham offers students a unique blend of traditional academia and modern innovation, making it an ideal destination for those seeking a comprehensive educational experience​."
-  ],
-  uniList: [
-      "University of Greenwich, Medway Campus",
-      "MidKent College",
-      "University of Kent, Medway Campus",
-      "Holcombe Grammar School Sixth Form",
-      "Medway UTC (University Technical College)"
-  ],
-  nobelInfo: [
-      "Chatham celebrates its association with Nobel Laureates who have made groundbreaking contributions to various fields of knowledge. Notable among them is Sir Peter J. Ratcliffe, a physiologist and Nobel Prize winner in Physiology or Medicine in 2019 for his discoveries of how cells sense and adapt to oxygen availability.",
-      "His research, conducted at the University of Oxford, has profound implications for understanding diseases like cancer and anemia, offering new avenues for treatment and prevention​."
-  ],
-  nobelList: [
-      "Sir Peter J. Ratcliffe: Physiology or Medicine"
-  ],
-  academicInfo: [
-      "Chatham's academic community is enriched by the presence of distinguished scholars and educators who shape the intellectual landscape of the city. One such figure is Professor Karen Cox, Vice-Chancellor and President of the University of Kent, whose leadership has propelled the institution to new heights of excellence​."
-  ],
-  academicList: [
-      "Professor Karen Cox: Vice-Chancellor of the University of Kent"
-  ],
-  promo: [
-      "Chatham presents unparalleled opportunities for both academic pursuit and professional advancement. With its esteemed institutions, world-class faculty, and vibrant research environment, the city offers a nurturing ecosystem for students and professionals alike to thrive and excel in their respective fields​.",
-      "Whether you're seeking a transformative educational experience or exciting career prospects, Chatham's dynamic academic community has much to offer, providing a solid foundation for success and innovation​."
-  ],
-  image_url: "/cities/chatham.jpg",
-  alt: "Chatham, UK: A Historic Cityscape"
-},
+      'With a rich history dating back centuries, Chatham offers students a unique blend of traditional academia and modern innovation, making it an ideal destination for those seeking a comprehensive educational experience​.',
+    ],
+    uniList: [
+      'University of Greenwich, Medway Campus',
+      'MidKent College',
+      'University of Kent, Medway Campus',
+      'Holcombe Grammar School Sixth Form',
+      'Medway UTC (University Technical College)',
+    ],
+    nobelInfo: [
+      'Chatham celebrates its association with Nobel Laureates who have made groundbreaking contributions to various fields of knowledge. Notable among them is Sir Peter J. Ratcliffe, a physiologist and Nobel Prize winner in Physiology or Medicine in 2019 for his discoveries of how cells sense and adapt to oxygen availability.',
+      'His research, conducted at the University of Oxford, has profound implications for understanding diseases like cancer and anemia, offering new avenues for treatment and prevention​.',
+    ],
+    nobelList: ['Sir Peter J. Ratcliffe: Physiology or Medicine'],
+    academicInfo: [
+      "Chatham's academic community is enriched by the presence of distinguished scholars and educators who shape the intellectual landscape of the city. One such figure is Professor Karen Cox, Vice-Chancellor and President of the University of Kent, whose leadership has propelled the institution to new heights of excellence​.",
+    ],
+    academicList: [
+      'Professor Karen Cox: Vice-Chancellor of the University of Kent',
+    ],
+    promo: [
+      'Chatham presents unparalleled opportunities for both academic pursuit and professional advancement. With its esteemed institutions, world-class faculty, and vibrant research environment, the city offers a nurturing ecosystem for students and professionals alike to thrive and excel in their respective fields​.',
+      "Whether you're seeking a transformative educational experience or exciting career prospects, Chatham's dynamic academic community has much to offer, providing a solid foundation for success and innovation​.",
+    ],
+    image_url: '/cities/academic-jobs-in-chatham.jpg',
+    alt: 'Chatham, UK: A Historic Cityscape',
+  },
 
+  {
+    title: 'Chelmsford, UK: A Hub of Academic Excellence',
+    h1: "Exploring Chelmsford's Educational Landscape",
+    slug: 'chelmsford-uk-academic-excellence',
+    city: 'Chelmsford',
+    region: 'Essex',
+    country: 'United Kingdom',
+    description:
+      "Discover the vibrant academic community of Chelmsford, UK, home to prestigious universities and colleges, renowned academics, and groundbreaking research. Explore the city's rich history of educational excellence and find compelling reasons to join this dynamic environment.",
+    keywords:
+      'Chelmsford UK, universities, colleges, academics, Nobel Laureates, research, education',
 
-{
-  title: "Chelmsford, UK: A Hub of Academic Excellence",
-  h1: "Exploring Chelmsford's Educational Landscape",
-  slug: "chelmsford-uk-academic-excellence",
-  city: "Chelmsford",
-  region: "Essex",
-  country: "United Kingdom",
-  description: "Discover the vibrant academic community of Chelmsford, UK, home to prestigious universities and colleges, renowned academics, and groundbreaking research. Explore the city's rich history of educational excellence and find compelling reasons to join this dynamic environment.",
-  keywords: "Chelmsford UK, universities, colleges, academics, Nobel Laureates, research, education",
-
-  cityInfo: [
-      "Chelmsford, located in Essex, UK, boasts a diverse higher education landscape, offering a range of educational opportunities for students. With its proximity to London, the city provides a unique blend of urban amenities and a close-knit community feel, attracting students from around the globe seeking quality education.",
-      "The city's educational institutions foster innovation and intellectual growth, contributing to Chelmsford's reputation as a center for academic excellence in the UK. From cutting-edge research facilities to vibrant cultural offerings, Chelmsford offers a stimulating environment for personal and academic development."
-  ],
-  uniList: [
-      "Anglia Ruskin University",
-      "Writtle University College",
-      "Chelmsford College",
+    cityInfo: [
+      'Chelmsford, located in Essex, UK, boasts a diverse higher education landscape, offering a range of educational opportunities for students. With its proximity to London, the city provides a unique blend of urban amenities and a close-knit community feel, attracting students from around the globe seeking quality education.',
+      "The city's educational institutions foster innovation and intellectual growth, contributing to Chelmsford's reputation as a center for academic excellence in the UK. From cutting-edge research facilities to vibrant cultural offerings, Chelmsford offers a stimulating environment for personal and academic development.",
+    ],
+    uniList: [
+      'Anglia Ruskin University',
+      'Writtle University College',
+      'Chelmsford College',
       "The Bishops' Church of England and Roman Catholic High School",
-      "Moulsham High School"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+      'Moulsham High School',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "Chelmsford's universities and colleges provide unparalleled opportunities for educational and personal growth. Students can benefit from world-class faculty, state-of-the-art facilities, and a supportive learning environment. Whether pursuing undergraduate or postgraduate studies, Chelmsford offers a vibrant community for intellectual exploration and academic achievement.",
-      "For academics and researchers, Chelmsford offers exciting prospects for professional development and groundbreaking research. Collaborate with leading experts in your field, access cutting-edge resources, and contribute to innovative projects that have real-world impact. Join the thriving academic community in Chelmsford and unleash your potential in an environment that fosters creativity and collaboration."
-  ],
-  image_url: "/cities/chelmsford.jpg",
-  alt: "Chelmsford cityscape",
-},
+      'For academics and researchers, Chelmsford offers exciting prospects for professional development and groundbreaking research. Collaborate with leading experts in your field, access cutting-edge resources, and contribute to innovative projects that have real-world impact. Join the thriving academic community in Chelmsford and unleash your potential in an environment that fosters creativity and collaboration.',
+    ],
+    image_url: '/cities/academic-jobs-in-chelmsford.jpg',
+    alt: 'Chelmsford cityscape',
+  },
 
+  {
+    title: 'Cirencester: Academic Hub of Gloucestershire',
+    h1: 'Exploring the Academic Landscape of Cirencester',
+    slug: 'cirencester-academic-hub',
+    city: 'Cirencester',
+    region: 'Gloucestershire',
+    country: 'United Kingdom',
+    description:
+      'Discover the vibrant academic scene of Cirencester, UK, with renowned universities and colleges nurturing intellectual growth and innovation. Explore Nobel laureates, notable academics, and compelling reasons for attending or working in this dynamic city.',
+    keywords:
+      'Cirencester, UK, universities, colleges, education, academic hub, Nobel laureates, academics, employment opportunities',
 
-{
-  title: "Cirencester: Academic Hub of Gloucestershire",
-  h1: "Exploring the Academic Landscape of Cirencester",
-  slug: "cirencester-academic-hub",
-  city: "Cirencester",
-  region: "Gloucestershire",
-  country: "United Kingdom",
-  description: "Discover the vibrant academic scene of Cirencester, UK, with renowned universities and colleges nurturing intellectual growth and innovation. Explore Nobel laureates, notable academics, and compelling reasons for attending or working in this dynamic city.",
-  keywords: "Cirencester, UK, universities, colleges, education, academic hub, Nobel laureates, academics, employment opportunities",
-
-  cityInfo: [
+    cityInfo: [
       "Cirencester, UK, boasts a diverse higher education landscape, enriched by prestigious universities and colleges. From fostering innovation in technology to nurturing creativity in the arts, Cirencester's academic institutions cater to a wide range of disciplines, offering students a holistic learning experience.",
-      "Nestled in the heart of Gloucestershire, Cirencester serves as a cultural and intellectual hub, attracting scholars and learners from around the world. Its academic excellence, coupled with a vibrant community atmosphere, makes it an ideal destination for those seeking quality education and intellectual stimulation."
-  ],
-  uniList: [
-      "Royal Agricultural University",
-      "Cirencester College",
-      "The University of Gloucestershire - Cirencester Campus"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+      'Nestled in the heart of Gloucestershire, Cirencester serves as a cultural and intellectual hub, attracting scholars and learners from around the world. Its academic excellence, coupled with a vibrant community atmosphere, makes it an ideal destination for those seeking quality education and intellectual stimulation.',
+    ],
+    uniList: [
+      'Royal Agricultural University',
+      'Cirencester College',
+      'The University of Gloucestershire - Cirencester Campus',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "Cirencester offers unparalleled opportunities for educational and personal growth. With a rich academic heritage and state-of-the-art facilities, students can immerse themselves in diverse learning experiences, fostering critical thinking and innovation. Moreover, the city's close-knit academic community encourages collaboration and mentorship, preparing individuals for success in their chosen fields.",
-      "For professionals seeking employment, Cirencester provides a fertile ground for research and career advancement. From cutting-edge laboratories to interdisciplinary projects, universities and colleges in the city offer stimulating environments where faculty and staff can make meaningful contributions to their respective fields while shaping the future of education and innovation."
-  ],
-  image_url: "/cities/cirencester.jpg",
-  alt: "A panoramic view of Cirencester's historic streets and architecture"
-},
+      'For professionals seeking employment, Cirencester provides a fertile ground for research and career advancement. From cutting-edge laboratories to interdisciplinary projects, universities and colleges in the city offer stimulating environments where faculty and staff can make meaningful contributions to their respective fields while shaping the future of education and innovation.',
+    ],
+    image_url: '/cities/academic-jobs-in-cirencester.jpg',
+    alt: "A panoramic view of Cirencester's historic streets and architecture",
+  },
 
+  {
+    title: 'Colchester: Hub of Knowledge and Innovation',
+    h1: "Exploring Colchester's Academic Excellence",
+    slug: 'colchester-hub-of-knowledge-and-innovation',
+    city: 'Colchester',
+    region: 'Essex',
+    country: 'United Kingdom',
+    description:
+      'Discover the vibrant academic landscape of Colchester, UK, boasting Nobel Laureates, renowned universities, and notable academics. Explore opportunities for education and research in this dynamic city.',
+    keywords:
+      'Colchester, UK, universities, colleges, Nobel Laureates, academics, education, research',
 
-{
-  title: "Colchester: Hub of Knowledge and Innovation",
-  h1: "Exploring Colchester's Academic Excellence",
-  slug: "colchester-hub-of-knowledge-and-innovation",
-  city: "Colchester",
-  region: "Essex",
-  country: "United Kingdom",
-  description: "Discover the vibrant academic landscape of Colchester, UK, boasting Nobel Laureates, renowned universities, and notable academics. Explore opportunities for education and research in this dynamic city.",
-  keywords: "Colchester, UK, universities, colleges, Nobel Laureates, academics, education, research",
+    cityInfo: [
+      'Colchester, UK, epitomizes intellectual vigor, home to a diverse array of educational institutions fostering innovation and academic excellence. With a rich historical backdrop and a forward-looking approach, the city is a melting pot of cultures and ideas.',
+      "Its higher education landscape includes esteemed universities and colleges, offering a wide range of disciplines and fostering interdisciplinary collaboration. Colchester's academic institutions play a pivotal role in shaping global knowledge and innovation.",
+    ],
+    uniList: [
+      'University of Essex',
+      'Colchester Institute',
+      'Writtle University College',
+      'South Essex College',
+      'Academy of Music and Sound',
+      'London Institute of Banking & Finance',
+    ],
+    nobelInfo: [
+      'Colchester celebrates its contributions to global knowledge with Nobel Laureates like Sir John Gurdon, an alumnus of the University of Essex, awarded the Nobel Prize in Physiology or Medicine for his groundbreaking research in stem cell biology. His work paved the way for advancements in regenerative medicine and cell therapy.',
+      "The University of Essex's research prowess extends across various fields, reflected in the accomplishments of its faculty and alumni, enriching society and driving positive change globally.",
+    ],
+    nobelList: ['Sir John Gurdon: Physiology or Medicine'],
+    academicInfo: [
+      'Colchester boasts a host of distinguished academics, contributing significantly to their respective fields. Notable figures include Professor Frances Ashcroft, renowned for her pioneering research in physiology, particularly in understanding the role of ATP-sensitive potassium channels in insulin secretion.',
+      "Professor Ashcroft's work has had profound implications for the treatment of diabetes, exemplifying the city's commitment to impactful research and academic excellence.",
+    ],
+    academicList: ['Professor Frances Ashcroft: Physiology'],
+    promo: [
+      'Embark on a journey of educational and personal growth in Colchester, where academic excellence meets cultural diversity. From the vibrant campus life to cutting-edge research opportunities, universities and colleges in the city offer an enriching environment for students.',
+      'For professionals seeking employment, Colchester provides a fertile ground for career advancement, with robust research infrastructure and collaborative networks driving innovation across various sectors.',
+    ],
+    image_url: '/cities/academic-jobs-in-colchester.jpg',
+    alt: 'Colchester skyline with university buildings',
+  },
 
-  cityInfo: [
-    "Colchester, UK, epitomizes intellectual vigor, home to a diverse array of educational institutions fostering innovation and academic excellence. With a rich historical backdrop and a forward-looking approach, the city is a melting pot of cultures and ideas.",
-    "Its higher education landscape includes esteemed universities and colleges, offering a wide range of disciplines and fostering interdisciplinary collaboration. Colchester's academic institutions play a pivotal role in shaping global knowledge and innovation."
-  ],
-  uniList: [
-    "University of Essex",
-    "Colchester Institute",
-    "Writtle University College",
-    "South Essex College",
-    "Academy of Music and Sound",
-    "London Institute of Banking & Finance"
-  ],
-  nobelInfo: [
-    "Colchester celebrates its contributions to global knowledge with Nobel Laureates like Sir John Gurdon, an alumnus of the University of Essex, awarded the Nobel Prize in Physiology or Medicine for his groundbreaking research in stem cell biology. His work paved the way for advancements in regenerative medicine and cell therapy.",
-    "The University of Essex's research prowess extends across various fields, reflected in the accomplishments of its faculty and alumni, enriching society and driving positive change globally."
-  ],
-  nobelList: ["Sir John Gurdon: Physiology or Medicine"],
-  academicInfo: [
-    "Colchester boasts a host of distinguished academics, contributing significantly to their respective fields. Notable figures include Professor Frances Ashcroft, renowned for her pioneering research in physiology, particularly in understanding the role of ATP-sensitive potassium channels in insulin secretion.",
-    "Professor Ashcroft's work has had profound implications for the treatment of diabetes, exemplifying the city's commitment to impactful research and academic excellence."
-  ],
-  academicList: [
-    "Professor Frances Ashcroft: Physiology",
-  ],
-  promo: [
-    "Embark on a journey of educational and personal growth in Colchester, where academic excellence meets cultural diversity. From the vibrant campus life to cutting-edge research opportunities, universities and colleges in the city offer an enriching environment for students.",
-    "For professionals seeking employment, Colchester provides a fertile ground for career advancement, with robust research infrastructure and collaborative networks driving innovation across various sectors."
-  ],
-  image_url: "/cities/colchester.jpg",
-  alt: "Colchester skyline with university buildings"
-},
+  {
+    title: 'Epsom, UK: Academic Excellence and Intellectual Hub',
+    h1: 'Discover Epsom: Academic Hub of the UK',
+    slug: 'epsom-uk-academic-hub',
+    city: 'Epsom',
+    region: 'Surrey',
+    country: 'United Kingdom',
+    description:
+      "Explore Epsom, a vibrant academic center renowned for its prestigious universities and colleges, Nobel laureates, and esteemed academics. Discover the city's rich educational landscape and compelling opportunities for both learning and research.",
+    keywords:
+      'Epsom, UK, universities, colleges, education, Nobel laureates, academics',
 
-
-{
-  title: "Epsom, UK: Academic Excellence and Intellectual Hub",
-  h1: "Discover Epsom: Academic Hub of the UK",
-  slug: "epsom-uk-academic-hub",
-  city: "Epsom",
-  region: "Surrey",
-  country: "United Kingdom",
-  description: "Explore Epsom, a vibrant academic center renowned for its prestigious universities and colleges, Nobel laureates, and esteemed academics. Discover the city's rich educational landscape and compelling opportunities for both learning and research.",
-  keywords: "Epsom, UK, universities, colleges, education, Nobel laureates, academics",
-
-  cityInfo: [
-      "Epsom, located in Surrey, UK, is a thriving academic and intellectual hub, boasting a diverse range of universities and colleges that foster innovation and excellence in education.",
-      "With a rich history dating back centuries, Epsom continues to attract scholars and researchers from around the world, contributing to its dynamic intellectual community."
-  ],
-  uniList: [
-      "University for the Creative Arts",
-      "Nescot (North East Surrey College of Technology)",
-      "Epsom College",
-      "Laine Theatre Arts",
-      "City of London Freemen's School"
-  ],
-  nobelInfo: [
+    cityInfo: [
+      'Epsom, located in Surrey, UK, is a thriving academic and intellectual hub, boasting a diverse range of universities and colleges that foster innovation and excellence in education.',
+      'With a rich history dating back centuries, Epsom continues to attract scholars and researchers from around the world, contributing to its dynamic intellectual community.',
+    ],
+    uniList: [
+      'University for the Creative Arts',
+      'Nescot (North East Surrey College of Technology)',
+      'Epsom College',
+      'Laine Theatre Arts',
+      "City of London Freemen's School",
+    ],
+    nobelInfo: [
       "While Epsom itself hasn't produced Nobel laureates, it has been closely associated with London-based institutions that have. For example, Imperial College London, just a short distance away, has had several Nobel laureates in fields like physics, chemistry, and medicine, further enriching Epsom's academic environment.",
-      "Additionally, Epsom's proximity to London's academic institutions provides students and researchers with unparalleled access to cutting-edge research and intellectual exchange."
-  ],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-      "Epsom offers a unique blend of educational and personal growth opportunities. Its diverse range of universities and colleges cater to various interests and disciplines, providing students with an enriching academic experience.",
-      "For academics and researchers, Epsom's proximity to London's renowned institutions opens doors to collaboration and access to state-of-the-art facilities, fostering groundbreaking research and professional advancement."
-  ],
-  image_url: "/cities/epsom.jpg",
-  alt: "Epsom, UK: Academic Hub"
-},
+      "Additionally, Epsom's proximity to London's academic institutions provides students and researchers with unparalleled access to cutting-edge research and intellectual exchange.",
+    ],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Epsom offers a unique blend of educational and personal growth opportunities. Its diverse range of universities and colleges cater to various interests and disciplines, providing students with an enriching academic experience.',
+      "For academics and researchers, Epsom's proximity to London's renowned institutions opens doors to collaboration and access to state-of-the-art facilities, fostering groundbreaking research and professional advancement.",
+    ],
+    image_url: '/cities/academic-jobs-in-epsom.jpg',
+    alt: 'Epsom, UK: Academic Hub',
+  },
 
+  {
+    title: "Exploring Farnham's Academic Landscape",
+    h1: "Unlocking Farnham's Educational Excellence",
+    slug: 'farnham-academic-landscape',
+    city: 'Farnham',
+    region: 'Surrey',
+    country: 'United Kingdom',
+    description:
+      'Discover the vibrant educational hub of Farnham, UK, boasting prestigious universities, celebrated academics, and groundbreaking research. Explore the rich history and innovative spirit driving academic excellence in this charming town.',
+    keywords:
+      'Farnham, UK, universities, colleges, academics, Nobel Laureates, research, education',
 
-{
-  title: "Exploring Farnham's Academic Landscape",
-  h1: "Unlocking Farnham's Educational Excellence",
-  slug: "farnham-academic-landscape",
-  city: "Farnham",
-  region: "Surrey",
-  country: "United Kingdom",
-  description: "Discover the vibrant educational hub of Farnham, UK, boasting prestigious universities, celebrated academics, and groundbreaking research. Explore the rich history and innovative spirit driving academic excellence in this charming town.",
-  keywords: "Farnham, UK, universities, colleges, academics, Nobel Laureates, research, education",
-
-  cityInfo: [
-      "Nestled in Surrey, Farnham exudes academic vibrancy with its renowned universities and colleges, fostering a diverse learning environment. From traditional institutions to specialized academies, the city offers a wide array of educational opportunities, enriching both students and the community.",
-      "Farnham's higher education landscape reflects a commitment to excellence, attracting scholars from around the globe. With a blend of historical charm and modern innovation, the city provides a stimulating backdrop for intellectual growth and exploration."
-  ],
-  uniList: [
-      "University for the Creative Arts",
-      "Farnborough College of Technology",
-      "Merrist Wood College"
-  ],
-  nobelInfo: [
+    cityInfo: [
+      'Nestled in Surrey, Farnham exudes academic vibrancy with its renowned universities and colleges, fostering a diverse learning environment. From traditional institutions to specialized academies, the city offers a wide array of educational opportunities, enriching both students and the community.',
+      "Farnham's higher education landscape reflects a commitment to excellence, attracting scholars from around the globe. With a blend of historical charm and modern innovation, the city provides a stimulating backdrop for intellectual growth and exploration.",
+    ],
+    uniList: [
+      'University for the Creative Arts',
+      'Farnborough College of Technology',
+      'Merrist Wood College',
+    ],
+    nobelInfo: [
       "While Farnham hasn't produced Nobel Laureates directly, its academic institutions contribute significantly to global knowledge and innovation. For example, the University for the Creative Arts fosters creativity and artistic expression, impacting diverse fields such as design, media, and performing arts.",
-      "Furthermore, Farnborough College of Technology's emphasis on vocational training and practical skills development plays a crucial role in addressing contemporary challenges, contributing to advancements in technology and industry."
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Farnham boasts a cadre of notable academics shaping various disciplines. From pioneering artists at the University for the Creative Arts to industry leaders at Farnborough College of Technology, these educators inspire innovation and drive scholarly inquiry."
-  ],
-  academicList: [],
-  promo: [
+      "Furthermore, Farnborough College of Technology's emphasis on vocational training and practical skills development plays a crucial role in addressing contemporary challenges, contributing to advancements in technology and industry.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      'Farnham boasts a cadre of notable academics shaping various disciplines. From pioneering artists at the University for the Creative Arts to industry leaders at Farnborough College of Technology, these educators inspire innovation and drive scholarly inquiry.',
+    ],
+    academicList: [],
+    promo: [
       "Embrace unparalleled educational and personal growth opportunities in Farnham's dynamic academic community. Whether you're a student seeking creative expression or a researcher pursuing groundbreaking discoveries, Farnham's universities and colleges offer a nurturing environment for your academic journey.",
-      "Join a diverse community of scholars and professionals, where collaboration thrives and innovation knows no bounds. From cutting-edge research facilities to vibrant cultural experiences, Farnham provides a stimulating backdrop for both learning and professional development."
-  ],
-  image_url: "/cities/farnham.jpg",
-  alt: "Farnham, UK - A Hub of Academic Excellence"
-},
+      'Join a diverse community of scholars and professionals, where collaboration thrives and innovation knows no bounds. From cutting-edge research facilities to vibrant cultural experiences, Farnham provides a stimulating backdrop for both learning and professional development.',
+    ],
+    image_url: '/cities/academic-jobs-in-farnham.jpg',
+    alt: 'Farnham, UK - A Hub of Academic Excellence',
+  },
 
+  {
+    title: 'Exploring Guildford: A Hub of Academic Excellence',
+    h1: "Unlocking Guildford's Educational Gems",
+    slug: 'exploring-guildford-academic-hub',
+    city: 'Guildford',
+    region: 'Surrey',
+    country: 'United Kingdom',
+    description:
+      'Discover Guildford, UK, a vibrant city renowned for its diverse higher education landscape, Nobel laureates, and esteemed academics. Explore the opportunities for personal growth and professional development in this thriving academic community.',
+    keywords:
+      'Guildford, UK, universities, colleges, higher education, Nobel laureates, academics, research opportunities, personal growth, professional development',
 
-{
-  title: "Exploring Guildford: A Hub of Academic Excellence",
-  h1: "Unlocking Guildford's Educational Gems",
-  slug: "exploring-guildford-academic-hub",
-  city: "Guildford",
-  region: "Surrey",
-  country: "United Kingdom",
-  description: "Discover Guildford, UK, a vibrant city renowned for its diverse higher education landscape, Nobel laureates, and esteemed academics. Explore the opportunities for personal growth and professional development in this thriving academic community.",
-  keywords: "Guildford, UK, universities, colleges, higher education, Nobel laureates, academics, research opportunities, personal growth, professional development",
+    cityInfo: [
+      'Guildford, UK, is a dynamic center of learning, boasting a rich tapestry of universities and colleges. From its historic institutions to modern campuses, the city offers a diverse array of educational opportunities.',
+      "Nestled in the picturesque county of Surrey, Guildford's higher education landscape is characterized by academic excellence and innovation, attracting students and scholars from around the globe.",
+    ],
+    uniList: [
+      'University of Surrey',
+      'Guildford College',
+      'Guildford School of Acting',
+      'Academy of Contemporary Music',
+      'Guildford Conservatoire',
+    ],
+    nobelInfo: [
+      'Guildford has contributed significantly to global knowledge and innovation through its Nobel laureates. Notably, Sir Martin Evans, a graduate of the University of Surrey, was awarded the Nobel Prize in Physiology or Medicine for his pioneering work in stem cell research, revolutionizing regenerative medicine.',
+      "Additionally, Professor John Pople, associated with the University of Surrey, received the Nobel Prize in Chemistry for his groundbreaking contributions to computational chemistry, further enhancing Guildford's reputation as a hub of scientific excellence.",
+    ],
+    nobelList: [
+      'Sir Martin Evans: Physiology or Medicine',
+      'Professor John Pople: Chemistry',
+    ],
+    academicInfo: [
+      "Guildford's academic community comprises distinguished scholars who have made profound impacts in their respective fields. Notable figures include Dr. Sue Black, renowned for her pioneering work in forensic anthropology and computer science at the University of Surrey, and Professor Trevor Cox, an esteemed acoustics expert from the same institution, whose research has influenced architectural design and audio engineering.",
+    ],
+    academicList: [
+      'Dr. Sue Black: Professor of Forensic Anthropology and Computer Science',
+      'Professor Trevor Cox: Acoustics Expert',
+    ],
+    promo: [
+      "Guildford offers unparalleled opportunities for both students and professionals. Whether you seek cutting-edge research facilities, world-class faculty, or a vibrant academic community, Guildford's universities and colleges provide the ideal environment for personal growth and professional advancement. Join us in shaping the future of knowledge and innovation.",
+    ],
+    image_url: '/cities/academic-jobs-in-guildford.jpg',
+    alt: 'Guildford cityscape with historic architecture and greenery',
+  },
 
-  cityInfo: [
-      "Guildford, UK, is a dynamic center of learning, boasting a rich tapestry of universities and colleges. From its historic institutions to modern campuses, the city offers a diverse array of educational opportunities.",
-      "Nestled in the picturesque county of Surrey, Guildford's higher education landscape is characterized by academic excellence and innovation, attracting students and scholars from around the globe."
-  ],
-  uniList: [
-      "University of Surrey",
-      "Guildford College",
-      "Guildford School of Acting",
-      "Academy of Contemporary Music",
-      "Guildford Conservatoire"
-  ],
-  nobelInfo: [
-      "Guildford has contributed significantly to global knowledge and innovation through its Nobel laureates. Notably, Sir Martin Evans, a graduate of the University of Surrey, was awarded the Nobel Prize in Physiology or Medicine for his pioneering work in stem cell research, revolutionizing regenerative medicine.",
-      "Additionally, Professor John Pople, associated with the University of Surrey, received the Nobel Prize in Chemistry for his groundbreaking contributions to computational chemistry, further enhancing Guildford's reputation as a hub of scientific excellence."
-  ],
-  nobelList: ["Sir Martin Evans: Physiology or Medicine", "Professor John Pople: Chemistry"],
-  academicInfo: [
-      "Guildford's academic community comprises distinguished scholars who have made profound impacts in their respective fields. Notable figures include Dr. Sue Black, renowned for her pioneering work in forensic anthropology and computer science at the University of Surrey, and Professor Trevor Cox, an esteemed acoustics expert from the same institution, whose research has influenced architectural design and audio engineering."
-  ],
-  academicList: [
-      "Dr. Sue Black: Professor of Forensic Anthropology and Computer Science",
-      "Professor Trevor Cox: Acoustics Expert"
-  ],
-  promo: [
-      "Guildford offers unparalleled opportunities for both students and professionals. Whether you seek cutting-edge research facilities, world-class faculty, or a vibrant academic community, Guildford's universities and colleges provide the ideal environment for personal growth and professional advancement. Join us in shaping the future of knowledge and innovation."
-  ],
-  image_url: "/cities/guildford.jpg",
-  alt: "Guildford cityscape with historic architecture and greenery"
-},
+  {
+    title: 'Exploring Hatfield: Education and Innovation Hub',
+    h1: "Discover Hatfield's Educational Landscape",
+    slug: 'exploring-hatfield-education-and-innovation-hub',
+    city: 'Hatfield',
+    region: 'Hertfordshire',
+    country: 'United Kingdom',
+    description:
+      'Unlock the potential of Hatfield, UK, as an academic haven. Explore its renowned universities, notable laureates, and exceptional research opportunities, propelling personal and professional growth.',
+    keywords:
+      'Hatfield UK, universities, colleges, Nobel Laureates, academics, education, research opportunities',
 
+    cityInfo: [
+      'Hatfield, located in Hertfordshire, UK, thrives as an education and innovation hub. Its diverse higher education landscape comprises prestigious universities and colleges, offering a wide array of disciplines and research opportunities.',
+      "The city's academic prowess is complemented by its vibrant culture, fostering creativity and collaboration among students and scholars alike.",
+    ],
+    uniList: [
+      'University of Hertfordshire',
+      'Oaklands College',
+      'Hertford Regional College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [],
+    image_url: '/cities/academic-jobs-in-hatfield.jpg',
+    alt: 'Aerial view of Hatfield, UK',
+  },
 
-{
-  title: "Exploring Hatfield: Education and Innovation Hub",
-  h1: "Discover Hatfield's Educational Landscape",
-  slug: "exploring-hatfield-education-and-innovation-hub",
-  city: "Hatfield",
-  region: "Hertfordshire",
-  country: "United Kingdom",
-  description: "Unlock the potential of Hatfield, UK, as an academic haven. Explore its renowned universities, notable laureates, and exceptional research opportunities, propelling personal and professional growth.",
-  keywords: "Hatfield UK, universities, colleges, Nobel Laureates, academics, education, research opportunities",
+  {
+    title: 'Hertfordshire: Hub of Knowledge and Innovation',
+    h1: 'Exploring the Academic Landscape of Hertfordshire',
+    slug: 'hertfordshire-academic-landscape',
+    city: 'Hertfordshire',
+    region: 'East of England',
+    country: 'United Kingdom',
+    description:
+      'Discover the vibrant academic environment of Hertfordshire, UK, with its renowned universities, distinguished Nobel Laureates, and notable academics. Explore opportunities for education, research, and personal growth in this hub of knowledge and innovation.',
+    keywords:
+      'Hertfordshire universities, Hertfordshire colleges, Hertfordshire academics, Nobel Laureates Hertfordshire',
 
-  cityInfo: [
-      "Hatfield, located in Hertfordshire, UK, thrives as an education and innovation hub. Its diverse higher education landscape comprises prestigious universities and colleges, offering a wide array of disciplines and research opportunities.",
-      "The city's academic prowess is complemented by its vibrant culture, fostering creativity and collaboration among students and scholars alike."
-  ],
-  uniList: [
-      "University of Hertfordshire",
-      "Oaklands College",
-      "Hertford Regional College"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [],
-  image_url: "/cities/hatfield.jpg",
-  alt: "Aerial view of Hatfield, UK"
-},
+    cityInfo: [
+      "Hertfordshire, nestled in the East of England, boasts a diverse higher education landscape with institutions known for their excellence in various fields. From cutting-edge research to innovative teaching methodologies, Hertfordshire's universities and colleges offer a rich tapestry of academic opportunities.",
+      "The city's academic institutions foster collaboration, entrepreneurship, and creativity, contributing significantly to regional development and global knowledge exchange. With a focus on academic excellence and student success, Hertfordshire remains a sought-after destination for both domestic and international learners.",
+    ],
+    uniList: [
+      'University of Hertfordshire',
+      'Oaklands College',
+      'Hertford Regional College',
+      'West Herts College',
+      'North Hertfordshire College',
+    ],
+    nobelInfo: [
+      "While Hertfordshire may not have Nobel Laureates directly associated with its institutions, the city's academic community contributes to global advancements in various fields. Collaborations with neighboring research centers and universities enrich the scholarly landscape, fostering innovation and interdisciplinary research.",
+      "Hertfordshire's focus on cutting-edge research and knowledge transfer underscores its commitment to addressing societal challenges and shaping the future of education and industry. While Nobel Laureates may not be in its immediate history, the city's contributions to academia are profound and ongoing.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      'Notable academics from Hertfordshire institutions have made significant contributions to their respective fields, shaping scholarly discourse and driving innovation. These academics engage in groundbreaking research, mentor the next generation of scholars, and play pivotal roles in advancing knowledge and understanding across disciplines.',
+      "Their expertise ranges from STEM fields to humanities and social sciences, reflecting the diverse intellectual landscape of Hertfordshire. Through their work, these academics elevate the city's academic reputation and inspire future generations to pursue excellence in scholarship and research.",
+    ],
+    academicList: [],
+    promo: [
+      'Considering attending or working at a university or college in Hertfordshire offers unparalleled opportunities for educational and personal growth. With a vibrant academic community, state-of-the-art facilities, and a supportive learning environment, Hertfordshire institutions nurture creativity, critical thinking, and collaboration.',
+      "For employment, Hertfordshire's universities and colleges provide an enriching professional environment, offering opportunities for cutting-edge research, industry partnerships, and career development. Whether you're a student seeking academic excellence or a researcher pursuing innovation, Hertfordshire is the place to be.",
+    ],
+    image_url: '/cities/academic-jobs-in-hertfordshire.webp',
+    alt: 'Hertfordshire: A Beacon of Academic Excellence',
+  },
 
+  {
+    title: 'Ipswich: Education Hub of Diversity and Excellence',
+    h1: "Discover Ipswich's Educational Landscape",
+    slug: 'ipswich-education-hub',
+    city: 'Ipswich',
+    region: 'Suffolk',
+    country: 'United Kingdom',
+    description:
+      'Explore Ipswich, a vibrant city in Suffolk known for its rich educational heritage, Nobel laureates, and esteemed academic community. Discover why attending or working at universities and colleges in Ipswich offers unparalleled opportunities for growth and innovation.',
+    keywords:
+      'Ipswich education, universities Ipswich, colleges Ipswich, academic excellence, Nobel laureates, Suffolk UK',
 
-{
-  title: "Hertfordshire: Hub of Knowledge and Innovation",
-  h1: "Exploring the Academic Landscape of Hertfordshire",
-  slug: "hertfordshire-academic-landscape",
-  city: "Hertfordshire",
-  region: "East of England",
-  country: "United Kingdom",
-  description: "Discover the vibrant academic environment of Hertfordshire, UK, with its renowned universities, distinguished Nobel Laureates, and notable academics. Explore opportunities for education, research, and personal growth in this hub of knowledge and innovation.",
-  keywords: "Hertfordshire universities, Hertfordshire colleges, Hertfordshire academics, Nobel Laureates Hertfordshire",
+    cityInfo: [
+      'Ipswich, located in Suffolk, UK, boasts a diverse and thriving educational landscape. Home to a mix of prestigious universities and colleges, the city offers a dynamic environment for students and academics alike to engage in learning, research, and innovation.',
+      'With a history steeped in academic excellence, Ipswich nurtures a culture of intellectual curiosity and innovation, making it an ideal destination for those seeking quality higher education in a vibrant and supportive community.',
+    ],
+    uniList: [
+      'University of Suffolk',
+      'Suffolk New College',
+      'East Coast College',
+      'And more...',
+    ],
+    nobelInfo: [
+      "While Ipswich doesn't currently have Nobel laureates associated with the city, its academic institutions contribute significantly to global knowledge and innovation. The University of Suffolk, for instance, focuses on research areas such as sustainability, social sciences, and technology, fostering a culture of discovery and collaboration.",
+      "Although there aren't Nobel laureates from Ipswich, the city's educational institutions play a vital role in advancing research and knowledge across various fields, ensuring that students and academics contribute meaningfully to society's challenges and opportunities.",
+    ],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Attending a university or college in Ipswich offers unparalleled opportunities for educational and personal growth. With a diverse range of programs and a supportive academic community, students can explore their passions, engage in cutting-edge research, and develop the skills needed to thrive in today's global workforce.",
+      "For academics, working in Ipswich provides access to professional development opportunities, collaborative research projects, and state-of-the-art facilities. Whether you're a student or a faculty member, Ipswich's vibrant educational ecosystem fosters creativity, innovation, and lifelong learning.",
+    ],
+    image_url: '/cities/academic-jobs-in-ipswich-uk.jpg',
+    alt: 'Ipswich, UK - A cityscape showing its vibrant educational landscape',
+  },
 
-  cityInfo: [
-    "Hertfordshire, nestled in the East of England, boasts a diverse higher education landscape with institutions known for their excellence in various fields. From cutting-edge research to innovative teaching methodologies, Hertfordshire's universities and colleges offer a rich tapestry of academic opportunities.",
-    "The city's academic institutions foster collaboration, entrepreneurship, and creativity, contributing significantly to regional development and global knowledge exchange. With a focus on academic excellence and student success, Hertfordshire remains a sought-after destination for both domestic and international learners."
-  ],
-  uniList: [
-    "University of Hertfordshire",
-    "Oaklands College",
-    "Hertford Regional College",
-    "West Herts College",
-    "North Hertfordshire College"
-  ],
-  nobelInfo: [
-    "While Hertfordshire may not have Nobel Laureates directly associated with its institutions, the city's academic community contributes to global advancements in various fields. Collaborations with neighboring research centers and universities enrich the scholarly landscape, fostering innovation and interdisciplinary research.",
-    "Hertfordshire's focus on cutting-edge research and knowledge transfer underscores its commitment to addressing societal challenges and shaping the future of education and industry. While Nobel Laureates may not be in its immediate history, the city's contributions to academia are profound and ongoing."
-  ],
-  nobelList: [],
-  academicInfo: [
-    "Notable academics from Hertfordshire institutions have made significant contributions to their respective fields, shaping scholarly discourse and driving innovation. These academics engage in groundbreaking research, mentor the next generation of scholars, and play pivotal roles in advancing knowledge and understanding across disciplines.",
-    "Their expertise ranges from STEM fields to humanities and social sciences, reflecting the diverse intellectual landscape of Hertfordshire. Through their work, these academics elevate the city's academic reputation and inspire future generations to pursue excellence in scholarship and research."
-  ],
-  academicList: [],
-  promo: [
-    "Considering attending or working at a university or college in Hertfordshire offers unparalleled opportunities for educational and personal growth. With a vibrant academic community, state-of-the-art facilities, and a supportive learning environment, Hertfordshire institutions nurture creativity, critical thinking, and collaboration.",
-    "For employment, Hertfordshire's universities and colleges provide an enriching professional environment, offering opportunities for cutting-edge research, industry partnerships, and career development. Whether you're a student seeking academic excellence or a researcher pursuing innovation, Hertfordshire is the place to be."
-  ],
-  image_url: "/cities/hertfordshire.webp",
-  alt: "Hertfordshire: A Beacon of Academic Excellence"
-},
+  {
+    title: 'Keele, UK: Academic Excellence and Intellectual Hub',
+    h1: 'Discover Keele: A Hub of Academic Excellence',
+    slug: 'keele-uk-academic-excellence',
+    city: 'Keele',
+    region: 'Staffordshire',
+    country: 'United Kingdom',
+    description:
+      "Explore Keele's rich academic landscape, home to prestigious universities and colleges, Nobel Laureates, and notable academics. Discover why attending or working at a university in Keele offers unparalleled educational and professional opportunities.",
+    keywords:
+      'Keele UK, universities, colleges, academic excellence, Nobel Laureates, notable academics',
 
+    cityInfo: [
+      'Nestled in Staffordshire, UK, Keele boasts a vibrant academic community renowned for its diversity and intellectual rigor. Its universities and colleges offer a range of disciplines, attracting students and scholars from around the globe.',
+      'With a legacy of excellence, Keele is not just a city but an intellectual hub, fostering innovation, research, and academic collaboration across various fields.',
+    ],
+    uniList: [
+      'Keele University',
+      'Royal College of Veterinary Surgeons',
+      'Westwood College',
+      'etc.',
+    ],
+    nobelInfo: [
+      "Although Keele hasn't produced Nobel Laureates, its academic institutions have contributed significantly to global knowledge and innovation. Notable individuals associated with Keele have made groundbreaking contributions in various fields.",
+      'For instance, Professor John Doe, a renowned physicist at Keele University, has pioneered research in quantum mechanics, laying the groundwork for future advancements in the field.',
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Keele's academic community boasts renowned scholars who have made significant contributions to their respective fields. From literature to science, these academics enrich the intellectual landscape of the city and inspire future generations.",
+      'One such figure is Dr. Emily Smith, an esteemed historian at Westwood College, whose groundbreaking research on medieval England has reshaped our understanding of the period.',
+    ],
+    academicList: [
+      'Professor John Doe: Quantum Physicist at Keele University',
+      'Dr. Emily Smith: Historian at Westwood College',
+    ],
+    promo: [
+      "Whether you're a student seeking a transformative educational experience or a professional aiming to advance your career, Keele offers unparalleled opportunities. With its diverse academic programs, state-of-the-art facilities, and supportive community, attending or working at a university in Keele opens doors to endless possibilities.",
+      'From cutting-edge research projects to enriching extracurricular activities, Keele fosters a dynamic learning environment where individuals can thrive academically, personally, and professionally.',
+    ],
+    image_url: '/cities/academic-jobs-in-keele.jpg',
+    alt: 'Keele UK: A Hub of Academic Excellence',
+  },
 
-{
-  title: "Ipswich: Education Hub of Diversity and Excellence",
-  h1: "Discover Ipswich's Educational Landscape",
-  slug: "ipswich-education-hub",
-  city: "Ipswich",
-  region: "Suffolk",
-  country: "United Kingdom",
-  description: "Explore Ipswich, a vibrant city in Suffolk known for its rich educational heritage, Nobel laureates, and esteemed academic community. Discover why attending or working at universities and colleges in Ipswich offers unparalleled opportunities for growth and innovation.",
-  keywords: "Ipswich education, universities Ipswich, colleges Ipswich, academic excellence, Nobel laureates, Suffolk UK",
-
-  cityInfo: [
-    "Ipswich, located in Suffolk, UK, boasts a diverse and thriving educational landscape. Home to a mix of prestigious universities and colleges, the city offers a dynamic environment for students and academics alike to engage in learning, research, and innovation.",
-    "With a history steeped in academic excellence, Ipswich nurtures a culture of intellectual curiosity and innovation, making it an ideal destination for those seeking quality higher education in a vibrant and supportive community."
-  ],
-  uniList: [
-    "University of Suffolk",
-    "Suffolk New College",
-    "East Coast College",
-    "And more..."
-  ],
-  nobelInfo: [
-    "While Ipswich doesn't currently have Nobel laureates associated with the city, its academic institutions contribute significantly to global knowledge and innovation. The University of Suffolk, for instance, focuses on research areas such as sustainability, social sciences, and technology, fostering a culture of discovery and collaboration.",
-    "Although there aren't Nobel laureates from Ipswich, the city's educational institutions play a vital role in advancing research and knowledge across various fields, ensuring that students and academics contribute meaningfully to society's challenges and opportunities."
-  ],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Attending a university or college in Ipswich offers unparalleled opportunities for educational and personal growth. With a diverse range of programs and a supportive academic community, students can explore their passions, engage in cutting-edge research, and develop the skills needed to thrive in today's global workforce.",
-    "For academics, working in Ipswich provides access to professional development opportunities, collaborative research projects, and state-of-the-art facilities. Whether you're a student or a faculty member, Ipswich's vibrant educational ecosystem fosters creativity, innovation, and lifelong learning."
-  ],
-  image_url: "/cities/ipswich-uk.jpg",
-  alt: "Ipswich, UK - A cityscape showing its vibrant educational landscape"
-},
-
-
-{
-  title: "Keele, UK: Academic Excellence and Intellectual Hub",
-  h1: "Discover Keele: A Hub of Academic Excellence",
-  slug: "keele-uk-academic-excellence",
-  city: "Keele",
-  region: "Staffordshire",
-  country: "United Kingdom",
-  description: "Explore Keele's rich academic landscape, home to prestigious universities and colleges, Nobel Laureates, and notable academics. Discover why attending or working at a university in Keele offers unparalleled educational and professional opportunities.",
-  keywords: "Keele UK, universities, colleges, academic excellence, Nobel Laureates, notable academics",
-
-  cityInfo: [
-    "Nestled in Staffordshire, UK, Keele boasts a vibrant academic community renowned for its diversity and intellectual rigor. Its universities and colleges offer a range of disciplines, attracting students and scholars from around the globe.",
-    "With a legacy of excellence, Keele is not just a city but an intellectual hub, fostering innovation, research, and academic collaboration across various fields."
-  ],
-  uniList: [
-    "Keele University",
-    "Royal College of Veterinary Surgeons",
-    "Westwood College",
-    "etc."
-  ],
-  nobelInfo: [
-    "Although Keele hasn't produced Nobel Laureates, its academic institutions have contributed significantly to global knowledge and innovation. Notable individuals associated with Keele have made groundbreaking contributions in various fields.",
-    "For instance, Professor John Doe, a renowned physicist at Keele University, has pioneered research in quantum mechanics, laying the groundwork for future advancements in the field."
-  ],
-  nobelList: [],
-  academicInfo: [
-    "Keele's academic community boasts renowned scholars who have made significant contributions to their respective fields. From literature to science, these academics enrich the intellectual landscape of the city and inspire future generations.",
-    "One such figure is Dr. Emily Smith, an esteemed historian at Westwood College, whose groundbreaking research on medieval England has reshaped our understanding of the period."
-  ],
-  academicList: [
-    "Professor John Doe: Quantum Physicist at Keele University",
-    "Dr. Emily Smith: Historian at Westwood College"
-  ],
-  promo: [
-    "Whether you're a student seeking a transformative educational experience or a professional aiming to advance your career, Keele offers unparalleled opportunities. With its diverse academic programs, state-of-the-art facilities, and supportive community, attending or working at a university in Keele opens doors to endless possibilities.",
-    "From cutting-edge research projects to enriching extracurricular activities, Keele fosters a dynamic learning environment where individuals can thrive academically, personally, and professionally."
-  ],
-  image_url: "/cities/keele.jpg",
-  alt: "Keele UK: A Hub of Academic Excellence"
-},
-
-
-{
-  title: "Lancaster: A Hub of Learning and Innovation",
-  h1: "Discover Lancaster's Academic Excellence",
-  slug: "lancaster-uk-higher-education",
-  city: "Lancaster",
-  region: "Lancashire",
-  country: "United Kingdom",
-  description: "Explore the vibrant academic landscape of Lancaster, UK, renowned for its distinguished universities and colleges, notable Nobel Laureates, and groundbreaking research. Uncover compelling reasons to pursue education or employment opportunities in this intellectually rich city.",
-  keywords: "Lancaster UK, universities, colleges, education, Nobel Laureates, academics, research",
-  cityInfo: [
+  {
+    title: 'Lancaster: A Hub of Learning and Innovation',
+    h1: "Discover Lancaster's Academic Excellence",
+    slug: 'lancaster-uk-higher-education',
+    city: 'Lancaster',
+    region: 'Lancashire',
+    country: 'United Kingdom',
+    description:
+      'Explore the vibrant academic landscape of Lancaster, UK, renowned for its distinguished universities and colleges, notable Nobel Laureates, and groundbreaking research. Uncover compelling reasons to pursue education or employment opportunities in this intellectually rich city.',
+    keywords:
+      'Lancaster UK, universities, colleges, education, Nobel Laureates, academics, research',
+    cityInfo: [
       "Nestled in the heart of Lancashire, Lancaster, UK, boasts a diverse and thriving higher education sector. With its historic charm and forward-thinking ethos, the city offers a unique blend of academic excellence and cultural richness. From cutting-edge research to innovative teaching methods, Lancaster's universities and colleges cater to a broad spectrum of disciplines, fostering intellectual growth and innovation​.",
-      "Lancaster's higher education landscape is characterized by its inclusivity and commitment to excellence. Students from around the globe are drawn to its renowned institutions, where they encounter a stimulating academic environment and opportunities for personal and professional development​."
-  ],
-  uniList: [
-      "Lancaster University",
-      "University of Cumbria - Lancaster Campus",
-      "Lancaster & Morecambe College",
-      "etc."
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+      "Lancaster's higher education landscape is characterized by its inclusivity and commitment to excellence. Students from around the globe are drawn to its renowned institutions, where they encounter a stimulating academic environment and opportunities for personal and professional development​.",
+    ],
+    uniList: [
+      'Lancaster University',
+      'University of Cumbria - Lancaster Campus',
+      'Lancaster & Morecambe College',
+      'etc.',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "For those seeking educational enrichment, Lancaster's universities and colleges offer a myriad of opportunities for academic growth and personal development. From state-of-the-art facilities to a supportive learning environment, students can engage with world-class faculty and cutting-edge research, preparing them for success in a rapidly evolving global landscape.",
-      "Professionals looking for employment opportunities in academia will find Lancaster to be a fertile ground for their aspirations. With its vibrant research community and collaborative spirit, the city provides ample avenues for career advancement and impactful contributions to knowledge creation​."
-  ],
-  image_url: "/cities/lancaster.jpg",
-  alt: "Historic Lancaster skyline overlooking the River Lune"
-},
+      'Professionals looking for employment opportunities in academia will find Lancaster to be a fertile ground for their aspirations. With its vibrant research community and collaborative spirit, the city provides ample avenues for career advancement and impactful contributions to knowledge creation​.',
+    ],
+    image_url: '/cities/academic-jobs-in-lancaster.jpg',
+    alt: 'Historic Lancaster skyline overlooking the River Lune',
+  },
 
+  {
+    title: 'Universities and Colleges in Lichfield, UK',
+    h1: "Exploring Lichfield's Higher Education Landscape",
+    slug: 'universities-colleges-lichfield-uk',
+    city: 'Lichfield',
+    region: 'Staffordshire',
+    country: 'United Kingdom',
+    description:
+      'Discover the vibrant higher education scene in Lichfield, UK, with its diverse universities and colleges. Learn about Nobel Laureates associated with the city, notable academics, and compelling reasons for both attending and working at institutions here.',
+    keywords:
+      'Lichfield, UK, universities, colleges, higher education, Nobel Laureates, academics, employment opportunities',
 
+    cityInfo: [
+      'Nestled in the heart of Staffordshire, Lichfield boasts a thriving higher education landscape characterized by its prestigious universities and colleges. With a rich history and a commitment to academic excellence, the city offers diverse opportunities for students to pursue their educational aspirations.',
+      "Lichfield's higher education institutions foster innovation, critical thinking, and personal growth, providing students with the skills and knowledge necessary to thrive in today's competitive global landscape.",
+    ],
+    uniList: ['Lichfield College', 'Lichfield University'],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [],
+    image_url: '/cities/academic-jobs-in-lichfield.jpg',
+    alt: 'Lichfield cityscape',
+  },
 
-{
-  title: "Universities and Colleges in Lichfield, UK",
-  h1: "Exploring Lichfield's Higher Education Landscape",
-  slug: "universities-colleges-lichfield-uk",
-  city: "Lichfield",
-  region: "Staffordshire",
-  country: "United Kingdom",
-  description: "Discover the vibrant higher education scene in Lichfield, UK, with its diverse universities and colleges. Learn about Nobel Laureates associated with the city, notable academics, and compelling reasons for both attending and working at institutions here.",
-  keywords: "Lichfield, UK, universities, colleges, higher education, Nobel Laureates, academics, employment opportunities",
+  {
+    title: 'Exploring Higher Education in Lincoln, UK',
+    h1: 'Discovering Lincoln: Education and Innovation Hub',
+    slug: 'exploring-higher-education-lincoln-uk',
+    city: 'Lincoln',
+    region: 'East Midlands',
+    country: 'United Kingdom',
+    description:
+      "Explore Lincoln's vibrant academic landscape, featuring prestigious universities, renowned academics, and groundbreaking research. Uncover the city's legacy of innovation and educational excellence.",
+    keywords:
+      'Lincoln, UK, higher education, universities, colleges, academics, Nobel Laureates',
 
-
-  cityInfo: [
-    "Nestled in the heart of Staffordshire, Lichfield boasts a thriving higher education landscape characterized by its prestigious universities and colleges. With a rich history and a commitment to academic excellence, the city offers diverse opportunities for students to pursue their educational aspirations.",
-    "Lichfield's higher education institutions foster innovation, critical thinking, and personal growth, providing students with the skills and knowledge necessary to thrive in today's competitive global landscape."
-  ],
-  uniList: [
-    "Lichfield College",
-    "Lichfield University"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [],
-  image_url: "/cities/lichfield.jpg",
-  alt: "Lichfield cityscape"
-},
-
-
-{
-  title: "Exploring Higher Education in Lincoln, UK",
-  h1: "Discovering Lincoln: Education and Innovation Hub",
-  slug: "exploring-higher-education-lincoln-uk",
-  city: "Lincoln",
-  region: "East Midlands",
-  country: "United Kingdom",
-  description: "Explore Lincoln's vibrant academic landscape, featuring prestigious universities, renowned academics, and groundbreaking research. Uncover the city's legacy of innovation and educational excellence.",
-  keywords: "Lincoln, UK, higher education, universities, colleges, academics, Nobel Laureates",
-
-  cityInfo: [
-      "Nestled in the heart of the East Midlands, Lincoln, UK, boasts a diverse higher education scene, attracting students and scholars worldwide. With its historic charm and modern amenities, Lincoln provides a conducive environment for academic pursuit and cultural exploration.",
-      "Home to top-notch universities and colleges, Lincoln offers a rich tapestry of educational opportunities, fostering innovation and intellectual growth."
-  ],
-  uniList: [
-      "University of Lincoln",
-      "Lincoln College",
-      "Bishop Grosseteste University",
-      "etc."
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+    cityInfo: [
+      'Nestled in the heart of the East Midlands, Lincoln, UK, boasts a diverse higher education scene, attracting students and scholars worldwide. With its historic charm and modern amenities, Lincoln provides a conducive environment for academic pursuit and cultural exploration.',
+      'Home to top-notch universities and colleges, Lincoln offers a rich tapestry of educational opportunities, fostering innovation and intellectual growth.',
+    ],
+    uniList: [
+      'University of Lincoln',
+      'Lincoln College',
+      'Bishop Grosseteste University',
+      'etc.',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "Embark on a journey of discovery at Lincoln's prestigious universities and colleges. Experience world-class education combined with a vibrant student life, fostering personal and intellectual growth. Join a dynamic community of scholars and innovators dedicated to shaping the future.",
-      "For professionals seeking employment, Lincoln offers exciting prospects in academia and research. Collaborate with renowned experts and contribute to groundbreaking projects in various fields. Unlock your potential and thrive in a stimulating academic environment."
-  ],
-  image_url: "/cities/lincoln.avif",
-  alt: "A panoramic view of Lincoln's historic city center"
-},
+      'For professionals seeking employment, Lincoln offers exciting prospects in academia and research. Collaborate with renowned experts and contribute to groundbreaking projects in various fields. Unlock your potential and thrive in a stimulating academic environment.',
+    ],
+    image_url: '/cities/academic-jobs-in-lincoln.avif',
+    alt: "A panoramic view of Lincoln's historic city center",
+  },
 
+  {
+    title: 'Exploring Education in Lowestoft, UK',
+    h1: 'Unlocking Education in Lowestoft',
+    slug: 'education-in-lowestoft',
+    city: 'Lowestoft',
+    region: 'Suffolk',
+    country: 'United Kingdom',
+    description:
+      'Discover the academic richness of Lowestoft, UK, through its renowned universities, notable academics, and contributions to global knowledge. Explore educational and employment opportunities in this vibrant city.',
+    keywords:
+      'Lowestoft, UK, universities, colleges, education, Nobel Laureates, academics, employment opportunities',
 
-{
-  title: "Exploring Education in Lowestoft, UK",
-  h1: "Unlocking Education in Lowestoft",
-  slug: "education-in-lowestoft",
-  city: "Lowestoft",
-  region: "Suffolk",
-  country: "United Kingdom",
-  description: "Discover the academic richness of Lowestoft, UK, through its renowned universities, notable academics, and contributions to global knowledge. Explore educational and employment opportunities in this vibrant city.",
-  keywords: "Lowestoft, UK, universities, colleges, education, Nobel Laureates, academics, employment opportunities",
+    cityInfo: [
+      'Nestled in Suffolk, UK, Lowestoft offers a diverse higher education landscape, boasting prestigious universities and colleges catering to various fields of study.',
+      'With its rich maritime heritage and proximity to the scenic Suffolk coastline, Lowestoft provides an enriching environment for academic pursuit and personal growth.',
+    ],
+    uniList: [
+      'East Coast College',
+      'University of Suffolk at East Coast College',
+      'Lowestoft College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Embark on a transformative educational journey in Lowestoft, UK, where academic excellence meets coastal charm. Experience world-class education, personalized mentorship, and abundant research opportunities, nurturing both intellectual curiosity and professional growth.',
+      'Join a vibrant academic community dedicated to innovation and collaboration, where students and faculty contribute to shaping the future through groundbreaking research and real-world impact.',
+    ],
+    image_url: '/cities/academic-jobs-in-lowestoft.jpg',
+    alt: 'Lowestoft cityscape overlooking the North Sea',
+  },
 
-  cityInfo: [
-      "Nestled in Suffolk, UK, Lowestoft offers a diverse higher education landscape, boasting prestigious universities and colleges catering to various fields of study.",
-      "With its rich maritime heritage and proximity to the scenic Suffolk coastline, Lowestoft provides an enriching environment for academic pursuit and personal growth."
-  ],
-  uniList: [
-      "East Coast College",
-      "University of Suffolk at East Coast College",
-      "Lowestoft College"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-      "Embark on a transformative educational journey in Lowestoft, UK, where academic excellence meets coastal charm. Experience world-class education, personalized mentorship, and abundant research opportunities, nurturing both intellectual curiosity and professional growth.",
-      "Join a vibrant academic community dedicated to innovation and collaboration, where students and faculty contribute to shaping the future through groundbreaking research and real-world impact."
-  ],
-  image_url: "/cities/lowestoft.jpg",
-  alt: "Lowestoft cityscape overlooking the North Sea"
-},
+  {
+    title: 'Newport, UK: Academic Excellence and Innovation Hub',
+    h1: "Exploring Newport's Academic Landscape",
+    slug: 'newport-uk-academic-landscape',
+    city: 'Newport',
+    region: 'Wales',
+    country: 'United Kingdom',
+    description:
+      "Discover Newport's thriving academic community, boasting renowned universities and colleges, Nobel Laureates, and esteemed academics. Explore educational opportunities, research prospects, and reasons for attending or working in this dynamic city.",
+    keywords:
+      'Newport UK, universities, colleges, higher education, Nobel Laureates, academics, research, Wales',
 
+    cityInfo: [
+      'Nestled in Wales, Newport is a vibrant academic hub celebrated for its diverse higher education institutions. From cutting-edge research to innovative teaching methods, Newport fosters an environment conducive to intellectual growth and exploration.',
+      "With a rich history and a commitment to academic excellence, Newport's universities and colleges offer a range of disciplines, attracting students and scholars from around the globe.",
+    ],
+    uniList: [
+      'University of South Wales',
+      'Coleg Gwent',
+      'Newport College (TBA)',
+    ],
+    nobelInfo: [
+      "While Newport hasn't produced Nobel Laureates to date, its academic institutions contribute significantly to global knowledge and innovation. Collaborative research initiatives and academic partnerships pave the way for potential future laureates.",
+      "The city's emphasis on interdisciplinary studies and groundbreaking research serves as a catalyst for aspiring academics, fostering an environment ripe for future Nobel-worthy discoveries.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Newport's academic community boasts esteemed scholars and educators dedicated to pushing the boundaries of knowledge. From pioneering research in renewable energy to innovative teaching methodologies, these academics play a pivotal role in shaping the city's intellectual landscape.",
+    ],
+    academicList: [
+      'Dr. Sarah Evans: Professor of Renewable Energy',
+      'Professor David Hughes: Expert in Digital Learning Technologies',
+    ],
+    promo: [
+      "Experience the dynamic academic environment of Newport, where innovation meets tradition. Whether you're a student seeking world-class education or a researcher pursuing groundbreaking discoveries, Newport's universities and colleges offer unparalleled opportunities for growth and success. Join us in shaping the future of knowledge and innovation in Newport.",
+    ],
+    image_url: '/cities/academic-jobs-in-newport.jpg',
+    alt: 'Aerial view of Newport, UK',
+  },
 
-{
-  title: "Newport, UK: Academic Excellence and Innovation Hub",
-  h1: "Exploring Newport's Academic Landscape",
-  slug: "newport-uk-academic-landscape",
-  city: "Newport",
-  region: "Wales",
-  country: "United Kingdom",
-  description: "Discover Newport's thriving academic community, boasting renowned universities and colleges, Nobel Laureates, and esteemed academics. Explore educational opportunities, research prospects, and reasons for attending or working in this dynamic city.",
-  keywords: "Newport UK, universities, colleges, higher education, Nobel Laureates, academics, research, Wales",
+  {
+    title: 'Higher Education in Shropshire, UK',
+    h1: 'Exploring the Academic Landscape of Shropshire',
+    slug: 'higher-education-shropshire-uk',
+    city: 'Shropshire',
+    region: '',
+    country: 'United Kingdom',
+    description:
+      'Discover the vibrant academic scene of Shropshire, UK, boasting prestigious universities, notable Nobel Laureates, and influential academics. Explore opportunities for education, research, and personal growth in this historic city.',
+    keywords:
+      'Shropshire UK, universities, colleges, higher education, Nobel Laureates, academics',
 
-  cityInfo: [
-    "Nestled in Wales, Newport is a vibrant academic hub celebrated for its diverse higher education institutions. From cutting-edge research to innovative teaching methods, Newport fosters an environment conducive to intellectual growth and exploration.",
-    "With a rich history and a commitment to academic excellence, Newport's universities and colleges offer a range of disciplines, attracting students and scholars from around the globe."
-  ],
-  uniList: [
-    "University of South Wales",
-    "Coleg Gwent",
-    "Newport College (TBA)"
-  ],
-  nobelInfo: [
-    "While Newport hasn't produced Nobel Laureates to date, its academic institutions contribute significantly to global knowledge and innovation. Collaborative research initiatives and academic partnerships pave the way for potential future laureates.",
-    "The city's emphasis on interdisciplinary studies and groundbreaking research serves as a catalyst for aspiring academics, fostering an environment ripe for future Nobel-worthy discoveries."
-  ],
-  nobelList: [],
-  academicInfo: [
-    "Newport's academic community boasts esteemed scholars and educators dedicated to pushing the boundaries of knowledge. From pioneering research in renewable energy to innovative teaching methodologies, these academics play a pivotal role in shaping the city's intellectual landscape."
-  ],
-  academicList: [
-    "Dr. Sarah Evans: Professor of Renewable Energy",
-    "Professor David Hughes: Expert in Digital Learning Technologies"
-  ],
-  promo: [
-    "Experience the dynamic academic environment of Newport, where innovation meets tradition. Whether you're a student seeking world-class education or a researcher pursuing groundbreaking discoveries, Newport's universities and colleges offer unparalleled opportunities for growth and success. Join us in shaping the future of knowledge and innovation in Newport."
-  ],
-  image_url: "/cities/newport.jpg",
-  alt: "Aerial view of Newport, UK"
-},
+    cityInfo: [
+      'Nestled in the picturesque countryside of the United Kingdom, Shropshire combines its rich history with a diverse higher education landscape. With its quaint charm and academic excellence, Shropshire offers a unique environment for students and scholars alike.',
+      "The city's educational institutions foster innovation and intellectual growth, contributing to both local and global knowledge economies.",
+    ],
+    uniList: [
+      'University Centre Shrewsbury',
+      'Harper Adams University',
+      'Shrewsbury College',
+      'Ludlow College',
+      'New College Telford',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Immerse yourself in Shropshire's vibrant academic community, where educational excellence meets personal growth. With a range of institutions offering diverse programs and research opportunities, Shropshire is the ideal destination for those seeking to expand their horizons and make a meaningful impact in their field. Experience the beauty of Shropshire while advancing your academic and professional journey.",
+    ],
+    image_url: '/cities/academic-jobs-in-shropshire.jpg',
+    alt: 'Shropshire skyline overlooking rolling hills',
+  },
 
+  {
+    title: 'Norwich, UK - A Hub of Academic Excellence',
+    h1: "Exploring Norwich's Academic Landscape",
+    slug: 'norwich-uk-academic-hub',
+    city: 'Norwich',
+    region: 'Norfolk',
+    country: 'United Kingdom',
+    description:
+      "Discover Norwich's vibrant academic scene, boasting prestigious universities and colleges, renowned Nobel Laureates, and a wealth of notable academics. Explore educational and professional opportunities in this thriving city.",
+    keywords:
+      'Norwich, UK, universities, colleges, Nobel Laureates, academics, education, research',
 
-{
-  title: "Higher Education in Shropshire, UK",
-  h1: "Exploring the Academic Landscape of Shropshire",
-  slug: "higher-education-shropshire-uk",
-  city: "Shropshire",
-  region: "",
-  country: "United Kingdom",
-  description: "Discover the vibrant academic scene of Shropshire, UK, boasting prestigious universities, notable Nobel Laureates, and influential academics. Explore opportunities for education, research, and personal growth in this historic city.",
-  keywords: "Shropshire UK, universities, colleges, higher education, Nobel Laureates, academics",
+    cityInfo: [
+      'Nestled in Norfolk, UK, Norwich stands as a beacon of academic excellence, pulsating with intellectual vibrancy. Its higher education landscape encompasses a diverse range of institutions, offering world-class education across various disciplines.',
+      "From historic universities dating back centuries to contemporary colleges nurturing cutting-edge research, Norwich's academic institutions foster innovation, critical thinking, and cultural exchange.",
+    ],
+    uniList: [
+      'University of East Anglia',
+      'Norwich University of the Arts',
+      'City College Norwich',
+      'Easton College',
+      'Norfolk and Suffolk Aviation Museum',
+    ],
+    nobelInfo: [
+      'While Norwich might not have Nobel Laureates directly affiliated, its academic community contributes significantly to global knowledge and innovation. Institutions like the University of East Anglia have produced impactful research in areas like climate change, literature, and environmental sciences.',
+      'Though no laureates originate from Norwich, the city serves as an incubator for pioneering minds, fostering collaborations and breakthroughs that resonate globally.',
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Norwich's academic landscape is adorned with notable figures enriching diverse fields. Scholars like Professor Tim O'Riordan, a leading environmentalist from the University of East Anglia, have made substantial contributions to understanding and mitigating climate change, shaping policies and perspectives globally.",
+    ],
+    academicList: [
+      "Professor Tim O'Riordan: Environmental Scientist",
+      'Dr. Jane Smith: Art Historian',
+    ],
+    promo: [
+      'With a rich tapestry of academic institutions and a supportive scholarly community, Norwich beckons seekers of knowledge and seekers of innovation alike. Whether you aspire to pursue cutting-edge research or seek an environment that nurtures intellectual curiosity, Norwich offers a conducive ecosystem for both personal and professional growth.',
+      'Joining the academic fraternity in Norwich not only opens doors to top-tier education but also presents unparalleled opportunities for research, collaboration, and making a tangible impact on global challenges.',
+    ],
+    image_url: '/cities/academic-jobs-in-norwich.jpg',
+    alt: 'Aerial view of Norwich, UK',
+  },
 
-  cityInfo: [
-    "Nestled in the picturesque countryside of the United Kingdom, Shropshire combines its rich history with a diverse higher education landscape. With its quaint charm and academic excellence, Shropshire offers a unique environment for students and scholars alike.",
-    "The city's educational institutions foster innovation and intellectual growth, contributing to both local and global knowledge economies."
-  ],
-  uniList: [
-    "University Centre Shrewsbury",
-    "Harper Adams University",
-    "Shrewsbury College",
-    "Ludlow College",
-    "New College Telford"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Immerse yourself in Shropshire's vibrant academic community, where educational excellence meets personal growth. With a range of institutions offering diverse programs and research opportunities, Shropshire is the ideal destination for those seeking to expand their horizons and make a meaningful impact in their field. Experience the beauty of Shropshire while advancing your academic and professional journey."
-  ],
-  image_url: "/cities/shropshire.jpg",
-  alt: "Shropshire skyline overlooking rolling hills"
-},
+  {
+    title: 'Penryn, UK - Academic Hub of Cornwall',
+    h1: "Exploring Penryn's Academic Landscape",
+    slug: 'penryn-uk-academic-hub',
+    city: 'Penryn',
+    region: 'Cornwall',
+    country: 'United Kingdom',
+    description:
+      "Discover Penryn's vibrant academic scene, boasting world-class universities and colleges. Explore the city's Nobel laureates, notable academics, and compelling reasons for attending or working in its esteemed institutions.",
+    keywords:
+      'Penryn UK, Penryn universities, Penryn colleges, academic hub Cornwall',
 
+    cityInfo: [
+      'Nestled in Cornwall, Penryn is a dynamic academic hub known for its rich educational offerings. Its universities and colleges offer diverse programs, attracting students from across the globe seeking quality education and research opportunities.',
+      "Penryn's higher education landscape is characterized by innovation and excellence, fostering a stimulating environment for intellectual growth and discovery.",
+    ],
+    uniList: ['Falmouth University', 'University of Exeter (Penryn Campus)'],
+    nobelInfo: [
+      "Penryn celebrates its connection to global knowledge through Nobel laureates. While there are no laureates directly associated with the city's institutions, the broader region has produced remarkable minds. For instance, the University of Exeter, with its Penryn campus, contributes to groundbreaking research in various fields, nurturing potential future laureates.",
+      "The city's commitment to academic excellence positions it as a vital contributor to the intellectual fabric of the UK and beyond. Collaborations between institutions further enrich the research landscape, fostering innovation and societal impact.",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Penryn has a legacy of nurturing remarkable academics across disciplines. Notable figures like Professor Mick Aston, renowned archaeologist and television presenter, and Dr. Rachel Hammersley, esteemed historian and author, have left indelible marks on their respective fields, enriching Penryn's academic legacy.",
+    ],
+    academicList: [
+      'Professor Mick Aston: Archaeology',
+      'Dr. Rachel Hammersley: History',
+    ],
+    promo: [
+      'Embrace a world of academic possibilities in Penryn. From cutting-edge research to vibrant cultural experiences, our institutions offer a transformative journey of learning and growth. Join our community of scholars and innovators, shaping the future through intellectual curiosity and collaboration.',
+    ],
+    image_url: '/cities/academic-jobs-in-penryn.webp',
+    alt: 'Penryn, UK - Academic Hub of Cornwall',
+  },
 
-{
-  title: "Norwich, UK - A Hub of Academic Excellence",
-  h1: "Exploring Norwich's Academic Landscape",
-  slug: "norwich-uk-academic-hub",
-  city: "Norwich",
-  region: "Norfolk",
-  country: "United Kingdom",
-  description: "Discover Norwich's vibrant academic scene, boasting prestigious universities and colleges, renowned Nobel Laureates, and a wealth of notable academics. Explore educational and professional opportunities in this thriving city.",
-  keywords: "Norwich, UK, universities, colleges, Nobel Laureates, academics, education, research",
-
-
-  cityInfo: [
-    "Nestled in Norfolk, UK, Norwich stands as a beacon of academic excellence, pulsating with intellectual vibrancy. Its higher education landscape encompasses a diverse range of institutions, offering world-class education across various disciplines.",
-    "From historic universities dating back centuries to contemporary colleges nurturing cutting-edge research, Norwich's academic institutions foster innovation, critical thinking, and cultural exchange."
-  ],
-  uniList: [
-    "University of East Anglia",
-    "Norwich University of the Arts",
-    "City College Norwich",
-    "Easton College",
-    "Norfolk and Suffolk Aviation Museum"
-  ],
-  nobelInfo: [
-    "While Norwich might not have Nobel Laureates directly affiliated, its academic community contributes significantly to global knowledge and innovation. Institutions like the University of East Anglia have produced impactful research in areas like climate change, literature, and environmental sciences.",
-    "Though no laureates originate from Norwich, the city serves as an incubator for pioneering minds, fostering collaborations and breakthroughs that resonate globally."
-  ],
-  nobelList: [],
-  academicInfo: [
-    "Norwich's academic landscape is adorned with notable figures enriching diverse fields. Scholars like Professor Tim O'Riordan, a leading environmentalist from the University of East Anglia, have made substantial contributions to understanding and mitigating climate change, shaping policies and perspectives globally."
-  ],
-  academicList: [
-    "Professor Tim O'Riordan: Environmental Scientist",
-    "Dr. Jane Smith: Art Historian"
-  ],
-  promo: [
-    "With a rich tapestry of academic institutions and a supportive scholarly community, Norwich beckons seekers of knowledge and seekers of innovation alike. Whether you aspire to pursue cutting-edge research or seek an environment that nurtures intellectual curiosity, Norwich offers a conducive ecosystem for both personal and professional growth.",
-    "Joining the academic fraternity in Norwich not only opens doors to top-tier education but also presents unparalleled opportunities for research, collaboration, and making a tangible impact on global challenges."
-  ],
-  image_url: "/cities/norwich.jpg",
-  alt: "Aerial view of Norwich, UK"
-},
-
-
-{
-  title: "Penryn, UK - Academic Hub of Cornwall",
-  h1: "Exploring Penryn's Academic Landscape",
-  slug: "penryn-uk-academic-hub",
-  city: "Penryn",
-  region: "Cornwall",
-  country: "United Kingdom",
-  description: "Discover Penryn's vibrant academic scene, boasting world-class universities and colleges. Explore the city's Nobel laureates, notable academics, and compelling reasons for attending or working in its esteemed institutions.",
-  keywords: "Penryn UK, Penryn universities, Penryn colleges, academic hub Cornwall",
-
-
-  cityInfo: [
-    "Nestled in Cornwall, Penryn is a dynamic academic hub known for its rich educational offerings. Its universities and colleges offer diverse programs, attracting students from across the globe seeking quality education and research opportunities.",
-    "Penryn's higher education landscape is characterized by innovation and excellence, fostering a stimulating environment for intellectual growth and discovery."
-  ],
-  uniList: [
-    "Falmouth University",
-    "University of Exeter (Penryn Campus)"
-  ],
-  nobelInfo: [
-    "Penryn celebrates its connection to global knowledge through Nobel laureates. While there are no laureates directly associated with the city's institutions, the broader region has produced remarkable minds. For instance, the University of Exeter, with its Penryn campus, contributes to groundbreaking research in various fields, nurturing potential future laureates.",
-    "The city's commitment to academic excellence positions it as a vital contributor to the intellectual fabric of the UK and beyond. Collaborations between institutions further enrich the research landscape, fostering innovation and societal impact."
-  ],
-  nobelList: [],
-  academicInfo: [
-    "Penryn has a legacy of nurturing remarkable academics across disciplines. Notable figures like Professor Mick Aston, renowned archaeologist and television presenter, and Dr. Rachel Hammersley, esteemed historian and author, have left indelible marks on their respective fields, enriching Penryn's academic legacy."
-  ],
-  academicList: [
-    "Professor Mick Aston: Archaeology",
-    "Dr. Rachel Hammersley: History"
-  ],
-  promo: [
-    "Embrace a world of academic possibilities in Penryn. From cutting-edge research to vibrant cultural experiences, our institutions offer a transformative journey of learning and growth. Join our community of scholars and innovators, shaping the future through intellectual curiosity and collaboration."
-  ],
-  image_url: "/cities/penryn.webp",
-  alt: "Penryn, UK - Academic Hub of Cornwall"
-},
-
-
-{
-  title: "Higher Education in Rochester, UK",
-  h1: "Exploring Rochester's Academic Landscape",
-  slug: "higher-education-rochester-uk",
-  city: "Rochester",
-  region: "Kent",
-  country: "United Kingdom",
-  description: "Discover the vibrant higher education scene in Rochester, UK, showcasing its prestigious universities and colleges, distinguished Nobel Laureates, and renowned academics. Explore educational and professional opportunities in this historic city.",
-  keywords: "Rochester UK, universities, colleges, higher education, Nobel Laureates, academics",
-  cityInfo: [
-      "Rochester, UK, boasts a diverse higher education landscape, characterized by its renowned universities and colleges. With a rich historical backdrop and a forward-looking approach to education, the city offers a stimulating environment for intellectual growth and academic excellence.",
-      "The educational institutions in Rochester cater to a wide range of disciplines, from humanities and social sciences to STEM fields, ensuring a well-rounded learning experience for students from various backgrounds. This diversity fosters interdisciplinary collaboration and innovation, making Rochester an ideal destination for higher education​."
-  ],
-  uniList: [
-      "University of Kent - Medway Campus",
-      "University for the Creative Arts - Rochester Campus",
-      "MidKent College",
-      "Rochester Independent College",
-      "King's School Rochester"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
+  {
+    title: 'Higher Education in Rochester, UK',
+    h1: "Exploring Rochester's Academic Landscape",
+    slug: 'higher-education-rochester-uk',
+    city: 'Rochester',
+    region: 'Kent',
+    country: 'United Kingdom',
+    description:
+      'Discover the vibrant higher education scene in Rochester, UK, showcasing its prestigious universities and colleges, distinguished Nobel Laureates, and renowned academics. Explore educational and professional opportunities in this historic city.',
+    keywords:
+      'Rochester UK, universities, colleges, higher education, Nobel Laureates, academics',
+    cityInfo: [
+      'Rochester, UK, boasts a diverse higher education landscape, characterized by its renowned universities and colleges. With a rich historical backdrop and a forward-looking approach to education, the city offers a stimulating environment for intellectual growth and academic excellence.',
+      'The educational institutions in Rochester cater to a wide range of disciplines, from humanities and social sciences to STEM fields, ensuring a well-rounded learning experience for students from various backgrounds. This diversity fosters interdisciplinary collaboration and innovation, making Rochester an ideal destination for higher education​.',
+    ],
+    uniList: [
+      'University of Kent - Medway Campus',
+      'University for the Creative Arts - Rochester Campus',
+      'MidKent College',
+      'Rochester Independent College',
+      "King's School Rochester",
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
       "Rochester's universities and colleges offer a conducive environment for educational and personal growth. With state-of-the-art facilities, expert faculty, and a supportive community, students can explore their interests, pursue their passions, and develop the skills needed for future success​.",
-      "For professionals seeking employment opportunities, Rochester provides a thriving hub for research and innovation. Collaborate with leading academics, engage in cutting-edge research projects, and contribute to the advancement of knowledge in your field​."
-  ],
-  image_url: "/cities/rochester.jpg",
-  alt: "A scenic view of Rochester, UK"
-},
+      'For professionals seeking employment opportunities, Rochester provides a thriving hub for research and innovation. Collaborate with leading academics, engage in cutting-edge research projects, and contribute to the advancement of knowledge in your field​.',
+    ],
+    image_url: '/cities/academic-jobs-in-rochester.jpg',
+    alt: 'A scenic view of Rochester, UK',
+  },
 
+  {
+    title: 'Higher Education in Kent, UK',
+    h1: "Exploring Kent's Academic Landscape",
+    slug: 'higher-education-kent-uk',
+    city: 'Kent',
+    region: 'England',
+    country: 'United Kingdom',
+    description:
+      'Discover the vibrant higher education scene in Kent, UK, featuring prestigious universities, notable academics, and contributions to global knowledge and innovation.',
+    keywords:
+      'Kent universities, colleges Kent, Nobel Laureates Kent, academics Kent, education Kent',
 
-{
-  title: "Higher Education in Kent, UK",
-  h1: "Exploring Kent's Academic Landscape",
-  slug: "higher-education-kent-uk",
-  city: "Kent",
-  region: "England",
-  country: "United Kingdom",
-  description: "Discover the vibrant higher education scene in Kent, UK, featuring prestigious universities, notable academics, and contributions to global knowledge and innovation.",
-  keywords: "Kent universities, colleges Kent, Nobel Laureates Kent, academics Kent, education Kent",
-
-  cityInfo: [
-      "Kent, located in southeastern England, boasts a diverse higher education landscape renowned for its academic excellence and innovation. With a mix of historic institutions and modern campuses, Kent offers a dynamic environment for learning and research.",
-      "Home to world-class universities and colleges, Kent attracts students and scholars from around the globe, fostering cultural exchange and interdisciplinary collaboration​."
-  ],
-  uniList: [
-      "University of Kent",
-      "Canterbury Christ Church University",
-      "University of Greenwich (Medway campus)",
-      "University for the Creative Arts",
-      "MidKent College",
-      "Hadlow College"
-  ],
-  nobelInfo: [
+    cityInfo: [
+      'Kent, located in southeastern England, boasts a diverse higher education landscape renowned for its academic excellence and innovation. With a mix of historic institutions and modern campuses, Kent offers a dynamic environment for learning and research.',
+      'Home to world-class universities and colleges, Kent attracts students and scholars from around the globe, fostering cultural exchange and interdisciplinary collaboration​.',
+    ],
+    uniList: [
+      'University of Kent',
+      'Canterbury Christ Church University',
+      'University of Greenwich (Medway campus)',
+      'University for the Creative Arts',
+      'MidKent College',
+      'Hadlow College',
+    ],
+    nobelInfo: [
       "While Kent hasn't produced Nobel Laureates directly associated with its institutions, its academic community has contributed significantly to global knowledge and innovation. Collaborations with neighboring universities and research institutions have led to breakthroughs in various fields.",
-      "Kent's strength lies in its commitment to cutting-edge research and fostering a collaborative spirit, positioning it as a hub for innovation and intellectual exchange.​"
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Kent is home to numerous distinguished academics who have made remarkable contributions to their respective fields. From pioneering research in environmental science to groundbreaking advancements in literature and the arts, Kent's scholars continue to shape the academic landscape both locally and globally."
-  ],
-  academicList: [],
-  promo: [
-      "Experience the rich academic heritage and unparalleled opportunities for personal and professional growth in Kent's vibrant higher education community. Whether you're a student seeking an enriching educational experience or a scholar pursuing cutting-edge research, Kent offers a stimulating environment to thrive and succeed. Join us in shaping the future of knowledge and innovation​."
-  ],
-  image_url: "/cities/kent.jpg",
-  alt: "Kent, UK - A blend of historic charm and modern academia"
-},
+      "Kent's strength lies in its commitment to cutting-edge research and fostering a collaborative spirit, positioning it as a hub for innovation and intellectual exchange.​",
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Kent is home to numerous distinguished academics who have made remarkable contributions to their respective fields. From pioneering research in environmental science to groundbreaking advancements in literature and the arts, Kent's scholars continue to shape the academic landscape both locally and globally.",
+    ],
+    academicList: [],
+    promo: [
+      "Experience the rich academic heritage and unparalleled opportunities for personal and professional growth in Kent's vibrant higher education community. Whether you're a student seeking an enriching educational experience or a scholar pursuing cutting-edge research, Kent offers a stimulating environment to thrive and succeed. Join us in shaping the future of knowledge and innovation​.",
+    ],
+    image_url: '/cities/academic-jobs-in-kent.jpg',
+    alt: 'Kent, UK - A blend of historic charm and modern academia',
+  },
 
+  {
+    title: 'Stafford, UK: Education Hub and Intellectual Haven',
+    h1: "Exploring Stafford's Educational Landscape",
+    slug: 'stafford-uk-education-hub',
+    city: 'Stafford',
+    region: 'Staffordshire',
+    country: 'United Kingdom',
+    description:
+      "Discover Stafford's vibrant academic scene, including its prestigious universities and colleges, Nobel laureates, and influential academics. Explore opportunities for education and employment in this dynamic city.",
+    keywords:
+      'Stafford UK, universities, colleges, education, Nobel laureates, academics, employment opportunities',
 
+    cityInfo: [
+      'Nestled in Staffordshire, UK, Stafford embodies a dynamic intellectual landscape with its array of universities and colleges. Renowned for its commitment to academic excellence and innovation, the city offers diverse educational opportunities catering to various fields of study and interests​.',
+      "Stafford's higher education institutions foster a culture of inclusivity and collaboration, enriching the academic experience for students and faculty alike​.",
+    ],
+    uniList: [
+      'Staffordshire University',
+      'Stafford College',
+      'University College Birmingham - Stafford Centre',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Stafford's universities and colleges provide a fertile ground for educational and personal growth, offering cutting-edge programs and resources to nurture the next generation of leaders and innovators. Students benefit from a supportive learning environment and opportunities for hands-on experience, preparing them for successful careers in their chosen fields​.",
+      "For professionals seeking employment, Stafford's academic institutions present a wealth of opportunities for research, collaboration, and career advancement. With state-of-the-art facilities and a vibrant academic community, working in Stafford offers a stimulating environment to pursue research interests and contribute to meaningful projects​.",
+    ],
+    image_url: '/cities/academic-jobs-in-stafford.jpg',
+    alt: 'Stafford UK - A bustling city with a rich educational landscape',
+  },
 
-{
-  title: "Stafford, UK: Education Hub and Intellectual Haven",
-  h1: "Exploring Stafford's Educational Landscape",
-  slug: "stafford-uk-education-hub",
-  city: "Stafford",
-  region: "Staffordshire",
-  country: "United Kingdom",
-  description: "Discover Stafford's vibrant academic scene, including its prestigious universities and colleges, Nobel laureates, and influential academics. Explore opportunities for education and employment in this dynamic city.",
-  keywords: "Stafford UK, universities, colleges, education, Nobel laureates, academics, employment opportunities",
+  {
+    title: 'Winchester, UK: Academic Excellence and Innovation Hub',
+    h1: 'Winchester, UK: Academic Excellence and Innovation Hub',
+    slug: 'winchester-uk-academic-hub',
+    city: 'Winchester',
+    region: 'Hampshire',
+    country: 'United Kingdom',
+    description:
+      'Explore Winchester, UK, a vibrant academic city renowned for its rich history, diverse educational landscape, and groundbreaking research. Discover Nobel Laureates, renowned academics, and compelling reasons for attending or working at its prestigious institutions.',
+    keywords:
+      'Winchester UK, universities, colleges, Nobel Laureates, academics, education, research',
 
-
-  cityInfo: [
-    "Nestled in Staffordshire, UK, Stafford embodies a dynamic intellectual landscape with its array of universities and colleges. Renowned for its commitment to academic excellence and innovation, the city offers diverse educational opportunities catering to various fields of study and interests​.",
-    "Stafford's higher education institutions foster a culture of inclusivity and collaboration, enriching the academic experience for students and faculty alike​."
-  ],
-  uniList: [
-    "Staffordshire University",
-    "Stafford College",
-    "University College Birmingham - Stafford Centre"
-  ],
-  nobelInfo: [],
-  nobelList: [],
-  academicInfo: [],
-  academicList: [],
-  promo: [
-    "Stafford's universities and colleges provide a fertile ground for educational and personal growth, offering cutting-edge programs and resources to nurture the next generation of leaders and innovators. Students benefit from a supportive learning environment and opportunities for hands-on experience, preparing them for successful careers in their chosen fields​.",
-    "For professionals seeking employment, Stafford's academic institutions present a wealth of opportunities for research, collaboration, and career advancement. With state-of-the-art facilities and a vibrant academic community, working in Stafford offers a stimulating environment to pursue research interests and contribute to meaningful projects​."
-  ],
-  image_url: "/cities/stafford.jpg",
-  alt: "Stafford UK - A bustling city with a rich educational landscape"
-},
-
-
-{
-  title: "Winchester, UK: Academic Excellence and Innovation Hub",
-  h1: "Winchester, UK: Academic Excellence and Innovation Hub",
-  slug: "winchester-uk-academic-hub",
-  city: "Winchester",
-  region: "Hampshire",
-  country: "United Kingdom",
-  description: "Explore Winchester, UK, a vibrant academic city renowned for its rich history, diverse educational landscape, and groundbreaking research. Discover Nobel Laureates, renowned academics, and compelling reasons for attending or working at its prestigious institutions.",
-  keywords: "Winchester UK, universities, colleges, Nobel Laureates, academics, education, research",
-
-  cityInfo: [
-      "Winchester, UK, stands as a beacon of academic excellence with its diverse range of universities and colleges, fostering innovation and intellectual growth. Nestled in the picturesque county of Hampshire, this historic city offers a vibrant learning environment that attracts students and scholars from around the world.",
-      "Home to esteemed institutions such as the University of Winchester, renowned for its focus on social justice and sustainability, and the renowned Winchester School of Art, known for its cutting-edge creative programs, Winchester provides a dynamic educational landscape that caters to a wide array of interests and disciplines​."
-  ],
-  uniList: [
-      "University of Winchester",
-      "Winchester School of Art",
-      "Sparsholt College Hampshire",
-      "Peter Symonds College"
-  ],
-  nobelInfo: [
+    cityInfo: [
+      'Winchester, UK, stands as a beacon of academic excellence with its diverse range of universities and colleges, fostering innovation and intellectual growth. Nestled in the picturesque county of Hampshire, this historic city offers a vibrant learning environment that attracts students and scholars from around the world.',
+      'Home to esteemed institutions such as the University of Winchester, renowned for its focus on social justice and sustainability, and the renowned Winchester School of Art, known for its cutting-edge creative programs, Winchester provides a dynamic educational landscape that caters to a wide array of interests and disciplines​.',
+    ],
+    uniList: [
+      'University of Winchester',
+      'Winchester School of Art',
+      'Sparsholt College Hampshire',
+      'Peter Symonds College',
+    ],
+    nobelInfo: [
       "While Winchester may not have produced Nobel Laureates directly, its academic community has contributed significantly to global knowledge and innovation. Many Winchester alumni have gone on to make groundbreaking discoveries and advancements in various fields, exemplifying the city's commitment to excellence and research​.",
-      ""
-  ],
-  nobelList: [],
-  academicInfo: [
-      "Winchester boasts a rich history of notable academics whose contributions have shaped their respective fields. From pioneering educators to innovative researchers, individuals like Dr. Jane Smith, a leading expert in environmental science at the University of Winchester, and Professor John Doe, renowned for his groundbreaking work in literature at Winchester School of Art, showcase the city's dedication to academic excellence."
-  ],
-  academicList: [
-      "Dr. Jane Smith: Professor of Environmental Science",
-      "Professor John Doe: Expert in Literature"
-  ],
-  promo: [
+      '',
+    ],
+    nobelList: [],
+    academicInfo: [
+      "Winchester boasts a rich history of notable academics whose contributions have shaped their respective fields. From pioneering educators to innovative researchers, individuals like Dr. Jane Smith, a leading expert in environmental science at the University of Winchester, and Professor John Doe, renowned for his groundbreaking work in literature at Winchester School of Art, showcase the city's dedication to academic excellence.",
+    ],
+    academicList: [
+      'Dr. Jane Smith: Professor of Environmental Science',
+      'Professor John Doe: Expert in Literature',
+    ],
+    promo: [
       "Winchester offers unparalleled opportunities for educational and personal growth. Whether you're a student seeking a supportive learning environment or a researcher looking to collaborate with leading experts, the city's institutions provide a platform for transformative experiences and impactful discoveries. Join us in Winchester and be part of a vibrant academic community dedicated to shaping the future​.",
-      "With a strong emphasis on research and innovation, Winchester's universities and colleges offer exciting prospects for employment. From access to state-of-the-art facilities to collaborative partnerships with industry leaders, working in Winchester provides a stimulating environment for professional development and advancement​."
-  ],
-  image_url: "/cities/winchester.jpg",
-  alt: "Winchester, UK: A Historic and Academic Hub"
-},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      "With a strong emphasis on research and innovation, Winchester's universities and colleges offer exciting prospects for employment. From access to state-of-the-art facilities to collaborative partnerships with industry leaders, working in Winchester provides a stimulating environment for professional development and advancement​.",
+    ],
+    image_url: '/cities/academic-jobs-in-winchester.jpg',
+    alt: 'Winchester, UK: A Historic and Academic Hub',
+  },
+  {
+    title: 'Wellington, New Zealand: A Beacon of Academic Excellence',
+    description:
+      "Explore Wellington's vibrant higher education scene, featuring world-class universities like Victoria University of Wellington and Massey University, known for their comprehensive research and diverse academic offerings.",
+    keywords:
+      'Wellington New Zealand education, Victoria University Wellington, Massey University, Wellington Institute of Technology, Wellington colleges, Wellington academic opportunities',
+    city: 'Wellington',
+    region: 'Wellington Region',
+    country: 'New Zealand',
+    cityInfo: [
+      'Wellington, the capital city of New Zealand, boasts a rich academic environment with a strong emphasis on research and international connectivity. The city is home to top-tier institutions like Victoria University of Wellington, which is renowned for its extensive research initiatives and vibrant student community.',
+      "In addition to Victoria University, Wellington's educational landscape includes Massey University, known for its specialized programs such as veterinary medicine and nanoscience, and the Wellington Institute of Technology, which offers practical degree programs in engineering, IT, and business management.",
+    ],
+    uniList: [
+      'Victoria University of Wellington',
+      'Massey University',
+      'Wellington Institute of Technology',
+      'New Zealand School of Music',
+      'MRINZ',
+      'TOI Whakaari New Zealand Drama School',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Choosing Wellington for your academic journey means immersing yourself in a city celebrated for its liveability and cultural vibrancy. With institutions like Victoria University of Wellington and Massey University at the forefront, students and faculty are part of a dynamic, research-driven community.',
+      "Wellington's academic institutions not only offer world-class education but also foster strong connections with local and international industries. This, coupled with the city's scenic beauty and high living standards, makes Wellington an ideal place for academic pursuit and professional development.",
+    ],
+    image_url: '/cities/academic-jobs-in-wellington.jpg',
+    alt: "Aerial view of Wellington, New Zealand, showcasing the city's stunning landscape and educational institutions",
+  },
+  {
+    title: 'Auckland, New Zealand: A Hub of Academic Diversity and Excellence',
+    description:
+      'Discover the vibrant higher education scene in Auckland, New Zealand, led by the prestigious University of Auckland with its wide array of faculties and strong research orientation.',
+    keywords:
+      'Auckland New Zealand education, University of Auckland, Auckland universities, Auckland academic excellence, Auckland research institutions',
+    city: 'Auckland',
+    region: 'Auckland Region',
+    country: 'New Zealand',
+    cityInfo: [
+      "Auckland's higher education landscape is epitomized by the University of Auckland, known for its diverse range of faculties and a strong emphasis on research. The city's academic environment is further enriched by other institutes, offering students a myriad of study options and research opportunities.",
+      "The University of Auckland, as a beacon of academic diversity, boasts faculties in Arts, Business, Creative Arts and Industries, Education and Social Work, Engineering, Law, Medical and Health Sciences, and Science. This diversity underlines Auckland's role as a key player in New Zealand's education sector.",
+    ],
+    uniList: ['University of Auckland'],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Attending a university in Auckland means being part of New Zealand's largest and most diverse academic community. The city's universities, especially the University of Auckland, offer unparalleled educational and personal growth opportunities in a supportive and vibrant environment.",
+      "For professionals considering employment, Auckland's universities provide a dynamic workplace with a focus on innovative research and international collaboration. The city's academic institutions are not just about education but also about making a significant impact on the global stage.",
+    ],
+    image_url: '/cities/academic-jobs-in-auckland.jpg',
+
+    alt: "Auckland's skyline with the University of Auckland in the foreground, representing the city's educational excellence",
+  },
+  {
+    title: 'Edmonton, Canada: A Gateway to Innovative Higher Education',
+    description:
+      'Edmonton, a vibrant city in Alberta, Canada, is known for its esteemed universities like the University of Alberta, offering a wide range of programs and a dynamic student life, making it an ideal destination for higher education.',
+    keywords:
+      'Edmonton universities, University of Alberta, higher education in Edmonton, Edmonton colleges, student life in Edmonton',
+    city: 'Edmonton',
+    region: 'Alberta',
+    country: 'Canada',
+    cityInfo: [
+      "Edmonton's higher education landscape is characterized by a blend of innovation and tradition, with the University of Alberta leading the way as one of Canada's top research-intensive universities. This institution is celebrated for its diverse program offerings across various disciplines and a commitment to fostering a vibrant student community.",
+      "Beyond the University of Alberta, Edmonton is home to other notable institutions that contribute to the city's dynamic higher education scene, providing students with ample opportunities for growth and learning in a supportive environment.",
+    ],
+    uniList: [
+      'University of Alberta',
+      'Concordia University of Edmonton',
+      'MacEwan University',
+      'NorQuest College',
+      'The King’s University',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [
+      'The University of Alberta is renowned for its outstanding programs in engineering, business, and the health sciences, among others. It is a hub for international students seeking a top-tier education in Canada, with a vast array of undergraduate and graduate programs.',
+      "Concordia University of Edmonton is known for its strong sense of community and commitment to sustainability, offering a range of undergraduate and graduate programs. MacEwan University and NorQuest College further enrich Edmonton's academic offerings with a focus on inclusive and accessible education.",
+    ],
+    academicList: [],
+    promo: [
+      "Studying in Edmonton opens doors to a world of opportunities, from engaging in cutting-edge research at the University of Alberta to being part of close-knit campus communities. The city's educational institutions are known for their global outlook and diverse program offerings, catering to a wide range of interests and career aspirations.",
+      "For professionals considering employment, Edmonton's universities offer vibrant and collaborative environments, with ample opportunities for research, teaching, and community engagement. The city's focus on innovation and inclusivity makes it an attractive place for academic and professional growth.",
+    ],
+    image_url: '/cities/academic-jobs-in-edmonton.jpeg',
+    alt: "Scenic view of the University of Alberta campus, highlighting Edmonton's educational excellence",
+  },
+  {
+    title:
+      'Calgary, Canada: A Flourishing Hub for Higher Education and Innovation',
+    description:
+      'Discover the vibrant higher education environment in Calgary, Canada, home to renowned institutions like the University of Calgary, fostering a culture of innovation, diversity, and academic excellence.',
+    keywords:
+      'Calgary universities, University of Calgary, higher education in Calgary, Calgary colleges, Calgary academic community',
+    city: 'Calgary',
+    region: 'Alberta',
+    country: 'Canada',
+    cityInfo: [
+      "Calgary's higher education sector is highlighted by prestigious institutions such as the University of Calgary, known for its significant contributions to research and innovation. The city's educational landscape is diverse, offering a wide range of programs and specialized institutions that cater to various academic and professional interests.",
+      'In addition to the University of Calgary, Calgary is home to other notable institutions like Mount Royal University and Southern Alberta Institute of Technology, each providing unique educational experiences and opportunities for students to engage in practical, hands-on learning.',
+    ],
+    uniList: [
+      'University of Calgary',
+      'Mount Royal University',
+      'Southern Alberta Institute of Technology (SAIT)',
+      'St. Mary’s University',
+      'Ambrose University',
+      'Alberta University of the Arts',
+      'Bow Valley College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Choosing Calgary for academic pursuits means being part of a city known for its dynamic culture and strong economy, primarily driven by the energy sector. Institutions like the University of Calgary and SAIT provide students with cutting-edge research opportunities and industry connections, preparing them for successful careers.',
+      "For educators and professionals, Calgary's higher education institutions offer collaborative environments with a focus on innovation and sustainability. The city's commitment to educational excellence and its vibrant community life make Calgary an attractive destination for both studying and working.",
+    ],
+    image_url: '/cities/academic-jobs-in-calgary.jpeg',
+    alt: 'Panoramic view of Calgary, showcasing the iconic skyline and the University of Calgary campus',
+  },
+  {
+    title: 'Waterloo, Canada: A Center for Innovation and Higher Learning',
+    description:
+      'Waterloo, Canada, stands out as a beacon of academic excellence, hosting esteemed institutions like the University of Waterloo, renowned for its innovative programs and vibrant student life, making it an ideal locale for higher education.',
+    keywords:
+      'Waterloo universities, University of Waterloo, higher education in Waterloo, Waterloo colleges, academic excellence in Waterloo',
+    city: 'Waterloo',
+    region: 'Ontario',
+    country: 'Canada',
+    cityInfo: [
+      'Waterloo, located in Ontario, Canada, is a city known for its dynamic educational landscape, primarily highlighted by the University of Waterloo. This institution is celebrated for being at the forefront of innovation, with a strong emphasis on experiential learning and cooperative education programs, making it a magnet for students globally.',
+      "The educational ecosystem in Waterloo is further enriched by Wilfrid Laurier University, known for its commitment to academic excellence and community engagement. The presence of Conestoga College adds to the city's academic diversity, offering a wide range of programs focused on career readiness and practical skills.",
+    ],
+    uniList: [
+      'University of Waterloo',
+      'Wilfrid Laurier University',
+      'Conestoga College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Choosing Waterloo for educational pursuits offers access to a thriving academic community, renowned for groundbreaking research and innovative teaching methodologies. The University of Waterloo, with its expansive range of programs and a global reputation for co-op education, provides students with unparalleled opportunities for learning and career development.',
+      "The city's institutions are deeply integrated with the tech industry and entrepreneurial ventures, offering unique opportunities for students and professionals alike to engage with cutting-edge research and business startups. This vibrant academic and professional environment makes Waterloo an attractive destination for both education and employment.",
+    ],
+    image_url: 'alt: /cities/academic-jobs-in-waterloo.jpeg',
+    alt: "Panoramic view of the University of Waterloo campus, symbolizing Waterloo's educational and innovative spirit",
+  },
+  {
+    title: 'Quebec City, Canada: A Hub of Cultural and Educational Excellence',
+    description:
+      "Quebec City's rich academic landscape, led by Université Laval, offers a blend of historic roots and modern innovation, creating a vibrant community for students and professionals alike.",
+    keywords:
+      'Quebec City education, Université Laval, higher education in Quebec City, Quebec City colleges, academic community in Quebec City',
+    city: 'Quebec City',
+    region: 'Quebec',
+    country: 'Canada',
+    cityInfo: [
+      "Quebec City, renowned for its historic charm and French cultural heritage, is also a distinguished center for higher education. At the heart of this academic landscape stands Université Laval, one of Canada's leading research universities, offering a wide array of programs and fostering a vibrant university community within the city.",
+      "The educational environment in Quebec City is further enhanced by various specialized colleges and institutions that complement the university's offerings. Together, these institutions contribute to the city's reputation as an academic hub, attracting students and professionals from around the globe.",
+    ],
+    uniList: ['Université Laval'],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Pursuing education in Quebec City means immersing oneself in a unique blend of history, culture, and academic excellence. Université Laval, with its comprehensive programs and innovative research, provides students with exceptional learning opportunities and a gateway to global engagement.',
+      "Professionals seeking employment in Quebec City's academic institutions will find a collaborative environment that values innovation and research. The city's rich cultural scene and supportive academic community make it an ideal location for both personal growth and professional development.",
+    ],
+    image_url: '/cities/academic-jobs-in-quebec_city.jpeg',
+    alt: "Scenic view of Université Laval's campus in Quebec City, showcasing the fusion of historical architecture and modern academic facilities",
+  },
+  {
+    title: 'Toronto, Canada: A Beacon of Academic and Cultural Diversity',
+    description:
+      'Toronto, a city known for its vibrant educational environment, hosts prestigious institutions like the University of Toronto, Ryerson University, and OCAD University, fostering innovation and inclusivity.',
+    keywords:
+      'Toronto education, University of Toronto, Ryerson University, OCAD University, colleges in Toronto, academic opportunities in Toronto',
+    city: 'Toronto',
+    region: 'Ontario',
+    country: 'Canada',
+    cityInfo: [
+      'Toronto stands as a vibrant and multicultural hub in Canada, renowned for its diverse array of educational institutions. The city is home to renowned universities and colleges that offer a broad spectrum of educational opportunities, embracing the cultural diversity that defines Toronto.',
+      'Educational institutions in Toronto are celebrated for their academic excellence and commitment to inclusivity, providing students with a rich learning environment where cross-cultural exchange and understanding are highly encouraged. This makes Toronto not just a center for higher education but also a place where students can gain global perspectives and appreciate different cultures.',
+    ],
+    uniList: [
+      'University of Toronto',
+      'Ryerson University (Toronto Metropolitan University)',
+      'OCAD University',
+      'Université de l’Ontario français',
+      'Northeastern University Toronto',
+      'Humber College',
+      'George Brown College',
+      'Centennial College',
+      'Seneca College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Choosing Toronto for academic pursuits means immersing yourself in a city that not only offers top-tier educational programs but also a dynamic cultural experience. The city's institutions, from the globally recognized University of Toronto to the creative hub at OCAD University, prepare students for success in a globalized world.",
+      "Professionals and educators will find Toronto's academic landscape ripe with opportunities for innovation, research, and collaboration across a multitude of disciplines. The city's commitment to diversity and inclusion, coupled with its position as a cultural and economic powerhouse, makes it an ideal setting for both academic and professional growth.",
+    ],
+    image_url: '/cities/academic-jobs-in-toronto.jpeg',
+    alt: 'Cityscape of Toronto with prominent educational institutions highlighting its status as a hub of academic and cultural diversity',
+  },
+  {
+    title:
+      'Hamilton, Canada: An Emerging Hub for Higher Education and Research',
+    description:
+      'Hamilton, Ontario, is home to prestigious institutions like McMaster University, Mohawk College, and Redeemer University, each offering unique programs tailored to student success and innovation.',
+    keywords:
+      'Hamilton education, McMaster University, Mohawk College, Redeemer University, colleges in Hamilton, universities in Hamilton',
+    city: 'Hamilton',
+    region: 'Ontario',
+    country: 'Canada',
+    cityInfo: [
+      'Hamilton is known for its robust higher education system, marked by the presence of McMaster University, a leading research institution. This city offers students a blend of rigorous academic programs and practical learning opportunities, making it an attractive destination for higher education.',
+      "Alongside McMaster, Mohawk College and Redeemer University complement the city's academic offerings, providing a range of programs from vocational training to liberal arts education. This mix of institutions contributes to a vibrant educational environment, catering to a diverse student population.",
+    ],
+    uniList: ['McMaster University', 'Mohawk College', 'Redeemer University'],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Studying in Hamilton means being part of a community that values innovation and practical learning. With institutions like McMaster University leading in research and Mohawk College in skills training, students are well-equipped for success in their respective fields.',
+      "For professionals looking to join the academic workforce, Hamilton offers a collaborative and research-driven environment, particularly at McMaster University, renowned for its contributions across various disciplines. The city's educational institutions are known for fostering professional growth and excellence.",
+    ],
+    image_url: '/cities/academic-jobs-in-hamilton.jpeg',
+    alt: "Panoramic view of McMaster University in Hamilton, showcasing the city's commitment to academic excellence and innovation",
+  },
+  {
+    title: 'Ottawa, Canada: A Focal Point for Higher Learning and Innovation',
+    description:
+      'Ottawa is celebrated for its prestigious educational institutions like the University of Ottawa and Carleton University, offering a spectrum of programs and fostering a nexus between academic rigor and career readiness.',
+    keywords:
+      'Ottawa education, University of Ottawa, Carleton University, colleges in Ottawa, universities in Ottawa, academic opportunities in Ottawa',
+    city: 'Ottawa',
+    region: 'Ontario',
+    country: 'Canada',
+    cityInfo: [
+      "Ottawa, Canada's capital, is not only the political heart of the nation but also a significant center for higher education. The city is home to world-renowned universities such as the University of Ottawa and Carleton University, both known for their comprehensive programs and research opportunities.",
+      "The academic fabric of Ottawa is further enriched by specialized institutions like Algonquin College and La Cité collégiale, offering vocational training and applied arts education. This diverse educational landscape, coupled with the city's vibrant culture and numerous career opportunities, makes Ottawa an ideal destination for students and academics.",
+    ],
+    uniList: [
+      'University of Ottawa',
+      'Carleton University',
+      'Algonquin College',
+      'La Cité collégiale',
+      'Augustine College',
+      'Herzing College',
+      'Ottawa Ladies College',
+      'Willis College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Engaging in academic pursuits in Ottawa offers students a unique blend of cultural richness and educational excellence. The city's universities and colleges provide not only top-tier education but also practical experience through co-op programs and internships, preparing students for the global workforce.",
+      "For professionals seeking to advance their careers in academia or research, Ottawa's institutions offer a collaborative environment that is at the forefront of innovation and discovery. The city's commitment to fostering educational excellence makes it a prime location for academic and professional development.",
+    ],
+    image_url: '/cities/academic-jobs-in-ottawa.jpeg',
+    alt: "Scenic view of the Parliament Hill in Ottawa, reflecting the city's blend of historical significance and academic prowess",
+  },
+  {
+    title: 'Kingston, Canada: A Nexus of Academic Excellence and Heritage',
+    description:
+      "Kingston, with its prestigious institutions like Queen's University, Royal Military College, and St. Lawrence College, offers a unique blend of top-tier education, historic ambiance, and vibrant student life.",
+    keywords:
+      "Kingston education, Queen's University, Royal Military College, St. Lawrence College, colleges in Kingston, universities in Kingston",
+    city: 'Kingston',
+    region: 'Ontario',
+    country: 'Canada',
+    cityInfo: [
+      "Kingston, Ontario, is renowned for its rich historical backdrop and vibrant academic environment, anchored by Queen's University. This city offers a dynamic mix of traditional and modern educational settings, fostering a community dedicated to academic and personal growth.",
+      "Beyond Queen's University, Kingston's higher education landscape includes the esteemed Royal Military College and St. Lawrence College, enriching the city's academic diversity with specialized programs and innovative learning opportunities.",
+    ],
+    uniList: [
+      "Queen's University",
+      'Royal Military College of Canada',
+      'St. Lawrence College',
+    ],
+    nobelInfo: [
+      "Kingston is proud to be associated with Nobel Laureate Dr. Arthur B. McDonald, affiliated with Queen's University. His groundbreaking work in neutrino physics, particularly in the discovery of neutrino oscillations, earned him the Nobel Prize in Physics in 2015, highlighting the city's contribution to global scientific research.",
+    ],
+    nobelList: ['Arthur B. McDonald: Physics, 2015'],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Kingston offers an enriching academic experience in a city steeped in history and culture. Institutions like Queen's University and the Royal Military College provide a robust educational foundation, complemented by a myriad of extracurricular and research opportunities, making Kingston a prime destination for students and academics.",
+      "Professionals seeking opportunities in Kingston's educational sector will find a welcoming community and a collaborative atmosphere. The city's institutions are known for their innovation, diverse programs, and commitment to excellence, making Kingston an ideal place for academic and professional advancement.",
+    ],
+    image_url: '/cities/academic-jobs-in-kingston.jpeg',
+    alt: "Collage of Kingston's academic life showcasing Queen's University, St. Lawrence College, and the Royal Military College of Canada",
+  },
+  {
+    title: 'Southampton, UK: A Beacon of Academic Achievement',
+    description:
+      'Southampton, known for its high graduate employment rates, hosts the University of Southampton among other institutions, offering a wide range of programs in a vibrant community.',
+    keywords:
+      'Southampton education, University of Southampton, graduate employment, Southampton colleges, UK universities',
+    city: 'Southampton',
+    region: 'Hampshire',
+    country: 'United Kingdom',
+    cityInfo: [
+      "Southampton stands out for its vibrant, friendly atmosphere and high graduate employment rates, showcasing the city's commitment to student success.",
+      "The University of Southampton is a cornerstone of the city's higher education, known for its diverse programs and contributions to student and alumni success.",
+    ],
+    uniList: ['University of Southampton'],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Southampton offers a blend of academic excellence and real-world readiness, making it a preferred choice for students seeking comprehensive education and robust career opportunities.',
+      "Professionals and educators are drawn to Southampton's collaborative academic environment, fostering innovation and global connectivity.",
+    ],
+    image_url: '/cities/academic-jobs-in-southampton.jpeg',
+    alt: 'Vibrant campus life and academic excellence at the University of Southampton in the UK',
+  },
+  {
+    title: 'Explore Higher Education in Belfast: A Gateway to Excellence',
+    h1: "Belfast's Prestigious Universities and Colleges",
+    slug: 'explore-higher-education-in-belfast',
+    city: 'Belfast',
+    region: 'Northern Ireland',
+    country: 'United Kingdom',
+    description:
+      'Discover the vibrant academic landscape of Belfast, home to renowned universities and colleges. Dive into a world of opportunities for growth, innovation, and learning in this historic city.',
+    keywords:
+      "Belfast universities, higher education Belfast, Queen's University Belfast, Ulster University, St Mary's University College, Union Theological College, Belfast colleges",
+    cityInfo: [
+      'Belfast, the capital city of Northern Ireland, is a hub of academic excellence and cultural diversity, offering a rich array of higher education options. The city is renowned for its historic institutions, vibrant student community, and commitment to research and innovation.',
+      "The higher education landscape in Belfast is distinguished by its variety, with institutions like Queen's University Belfast and Ulster University leading the way in numerous fields of study. These universities, along with specialized colleges, provide a comprehensive range of programs catering to a wide array of interests and careers.",
+    ],
+    uniList: [
+      "Queen's University Belfast",
+      'Ulster University',
+      "St Mary's University College",
+      'Stranmillis University College',
+      'Belfast Metropolitan College',
+      'Union Theological College',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Attending a university or college in Belfast not only means receiving a world-class education but also immersing yourself in a city known for its rich history, cultural heritage, and vibrant social scene. The institutions here offer a supportive and dynamic environment conducive to both personal and academic growth.',
+      "For professionals considering employment in Belfast's higher education sector, the opportunity to contribute to internationally recognized research and to work alongside esteemed academics could be immensely rewarding. The city's universities are at the forefront of global research, offering excellent facilities and a collaborative atmosphere.",
+    ],
+    image_url: '/cities/academic-jobs-in-belfast.jpeg',
+    alt: "Aerial view of Queen's University Belfast, showcasing the historic Lanyon Building and surrounding vibrant cityscape",
+  },
+  {
+    title: "Discovering Stoke's Academic Landscape: Universities and Colleges",
+    h1: "Stoke's Higher Education Institutions: A Comprehensive Guide",
+    slug: 'discovering-stokes-academic-landscape',
+    city: 'Stoke',
+    region: 'Staffordshire',
+    country: 'United Kingdom',
+    description:
+      'Stoke, a city known for its rich industrial heritage, also boasts a vibrant higher education scene. Explore the opportunities at Staffordshire University and Stoke-on-Trent College.',
+    keywords:
+      'Stoke universities, Staffordshire University, Stoke-on-Trent College, higher education Stoke, Stoke academic institutions',
+    cityInfo: [
+      "Stoke, a city with a dynamic vibe, is home to Staffordshire University and Stoke-on-Trent College. These institutions are central to Stoke's higher education landscape, offering a wide range of courses and state-of-the-art facilities.",
+      'Staffordshire University, with its main campus in Stoke-on-Trent, provides diverse programs in law, business, sciences, arts, and more. Stoke-on-Trent College complements this educational offering with further and higher education courses.',
+    ],
+    uniList: ['Staffordshire University', 'Stoke-on-Trent College'],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Stoke's educational institutions offer a blend of traditional and innovative courses, equipped with modern facilities like the Smart Zone and 3D Printing Bureau at Staffordshire University, designed with future careers in mind.",
+      'Considering Stoke for study or work in academia means engaging with a community that values innovation, practical skills, and career readiness, all set within a city known for its cultural richness and industrial history.',
+    ],
+    image_url: '/cities/academic-jobs-in-stoke.jpeg',
+    alt: "Aerial view of Staffordshire University's main campus in Stoke, showcasing modern buildings and green spaces",
+  },
+  {
+    title:
+      "Unlocking Hull's Academic Excellence: A Guide to Its Universities and Colleges",
+    h1: "Hull's Prestigious Higher Education Institutions",
+    slug: 'unlocking-hulls-academic-excellence',
+    city: 'Hull',
+    region: 'East Riding of Yorkshire',
+    country: 'United Kingdom',
+    description:
+      'Hull, a city with a rich maritime history, is also a beacon of academic excellence with renowned institutions like the University of Hull. Explore the vibrant higher education landscape of Hull and its contributions to global knowledge.',
+    keywords:
+      'University of Hull, Hull York Medical School, Hull University Business School, higher education Hull, Hull colleges',
+    cityInfo: [
+      'Hull, known for its maritime history, also boasts a vibrant higher education sector. The city is home to the University of Hull, a key institution that has been fostering innovation and academic excellence for nearly a century.',
+      "Hull's higher education landscape is further enriched by specialized institutions like the Hull York Medical School and Hull University Business School, offering a diverse range of programs and research opportunities.",
+    ],
+    uniList: [
+      'University of Hull',
+      'Hull York Medical School',
+      'Hull University Business School',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Studying or working in Hull offers the unique opportunity to be part of a city that combines rich historical heritage with modern educational facilities. The University of Hull, at the forefront of research and innovation, provides an inspiring environment for both students and academics.',
+      "Hull's commitment to academic excellence is evident in its state-of-the-art facilities and diverse course offerings. The city's institutions are dedicated to creating a supportive learning environment, making Hull an ideal destination for those seeking growth and development in their academic and professional journeys.",
+    ],
+    image_url: '/cities/academic-jobs-in-hull.jpeg',
+    alt: 'Panoramic view of the University of Hull campus with modern buildings set against a backdrop of lush greenery',
+  },
+  {
+    title: 'Exploring Higher Education in Solna, Sweden',
+    h1: "Solna's Academic Excellence",
+    slug: 'higher-education-in-solna-sweden',
+    city: 'Solna',
+    region: 'Stockholm County',
+    country: 'Sweden',
+    description:
+      "Solna, a city near Stockholm, is home to the prestigious Karolinska Institute, renowned for its medical research and education. This city's academic landscape is defined by its commitment to improving human health.",
+    keywords:
+      'Karolinska Institute, Solna education, medical research Sweden, Solna universities',
+    cityInfo: [
+      'Solna, adjacent to Stockholm, is distinguished by the Karolinska Institute, a global leader in medical research.',
+      "The institute's focus on health sciences and its role in the Nobel Prize in Physiology or Medicine highlight Solna's academic prominence.",
+    ],
+    uniList: ['Karolinska Institute'],
+    nobelInfo: [
+      'The Karolinska Institute in Solna boasts several Nobel Laureates, underlining its significant contributions to medical science.',
+      'Nobel Laureates affiliated with the institute include Hugo Theorell and Ragnar Granit, recognized for their groundbreaking work in medicine.',
+    ],
+    nobelList: [
+      'Hugo Theorell: Physiology or Medicine',
+      'Ragnar Granit: Physiology or Medicine',
+      'Ulf von Euler: Physiology or Medicine',
+      'Torsten Wiesel: Physiology or Medicine',
+      'Sune Bergström: Physiology or Medicine',
+    ],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Solna offers a unique academic setting, mainly through the Karolinska Institute, known for its cutting-edge medical research and education.',
+      'The city is ideal for students and professionals aspiring to excel in health sciences, offering vast opportunities for learning and innovation.',
+    ],
+    image_url: '/cities/academic-jobs-in-solna.jpeg',
+    alt: "Karolinska Institute campus in Solna, showcasing modern educational facilities set against a backdrop of Sweden's natural beauty",
+  },
+  {
+    title: 'Academic Excellence in Heidelberg, Germany: A Comprehensive Guide',
+    h1: 'Exploring Higher Education in Heidelberg',
+    slug: 'academic-excellence-in-heidelberg-germany',
+    city: 'Heidelberg',
+    region: 'Baden-Württemberg',
+    country: 'Germany',
+    description:
+      'Heidelberg, with its rich academic heritage, hosts prestigious institutions like Heidelberg University, Schiller International University, and SRH University Heidelberg, making it a beacon of knowledge and innovation.',
+    keywords:
+      'Heidelberg University, Schiller International University, SRH University Heidelberg, higher education Heidelberg, Nobel laureates Heidelberg',
+    cityInfo: [
+      "Heidelberg is celebrated for its historic and prestigious academic institutions, notably Heidelberg University, Germany's oldest university, recognized for its contribution across various disciplines.",
+      "The city's academic landscape is further enriched by Schiller International University and SRH University Heidelberg, offering diverse programs and fostering an environment of innovation and excellence.",
+    ],
+    uniList: [
+      'Heidelberg University',
+      'Schiller International University',
+      'SRH University Heidelberg',
+    ],
+    nobelInfo: [
+      "Heidelberg's intellectual legacy is underscored by its association with numerous Nobel Prize laureates, particularly through Heidelberg University, highlighting the city's global impact in academia and research.",
+    ],
+    nobelList: [
+      'Affiliated with Heidelberg University: 33 Nobel laureates in various fields',
+    ],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Heidelberg offers a unique blend of historical ambiance and academic rigor, making it an ideal place for educational pursuits and scholarly activities.',
+      "The city's institutions provide a rich ground for research, innovation, and professional development, amidst a backdrop of cultural heritage and high quality of life.",
+    ],
+    image_url: '/cities/academic-jobs-in-heidelberg.jpeg',
+    alt: "Panoramic view of Heidelberg with Heidelberg University highlighted, symbolizing the city's rich academic tradition",
+  },
+  {
+    title: 'Solna, Sweden: A Hub of Medical Excellence and Innovation',
+    h1: "Discovering Solna's Academic Landscape",
+    slug: 'solna-sweden-medical-excellence',
+    city: 'Solna',
+    region: 'Stockholm County',
+    country: 'Sweden',
+    description:
+      'Solna is distinguished by the Karolinska Institute, a world-leading medical university known for its significant contributions to health science research and education, making the city a focal point of medical excellence.',
+    keywords:
+      'Karolinska Institute, Solna universities, medical research Sweden, Nobel Prize Physiology Medicine, academic excellence Solna',
+    cityInfo: [
+      'Solna, a city within Stockholm County in Sweden, is celebrated for hosting the Karolinska Institute, a preeminent medical university globally recognized for its contributions to medical research and education.',
+      "Established in 1810, the Karolinska Institute is not only one of Sweden's oldest medical schools but also a major center for academic medical and life science research in the country.",
+    ],
+    uniList: ['Karolinska Institute'],
+    nobelInfo: [
+      'The Karolinska Institute is renowned for housing the Nobel Assembly, responsible for awarding the Nobel Prize in Physiology or Medicine, showcasing its pivotal role in the global medical and scientific community.',
+    ],
+    nobelList: [
+      'Hugo Theorell: Physiology or Medicine',
+      'Ragnar Granit: Physiology or Medicine',
+      'Ulf von Euler: Physiology or Medicine',
+      'Torsten Wiesel and David H. Hubel: Physiology or Medicine',
+      'Sune Bergström and Bengt Samuelsson: Physiology or Medicine',
+    ],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Solna's Karolinska Institute offers a dynamic environment for students and professionals interested in health sciences, providing extensive research opportunities, innovative educational programs, and a commitment to improving human health.",
+      "The city's academic atmosphere is enhanced by its focus on practical healthcare training, international collaborations, and a campus that fosters a vibrant community of students and scholars from around the world.",
+    ],
+    image_url: '/cities/academic-jobs-in-solna.jpeg',
+    alt: 'Karolinska Institute campus in Solna, highlighting its modern facilities and contribution to medical science',
+  },
+  {
+    title:
+      'Lausanne, Switzerland: A Beacon of Academic and Research Excellence',
+    h1: "Lausanne's Renowned Higher Education Institutions",
+    slug: 'lausanne-switzerland-academic-excellence',
+    city: 'Lausanne',
+    region: 'Vaud',
+    country: 'Switzerland',
+    description:
+      'Lausanne, home to the University of Lausanne and EPFL, is a key player in global academia, known for its vibrant educational environment and groundbreaking research.',
+    keywords:
+      'University of Lausanne, EPFL, higher education Lausanne, academic research Lausanne, Lausanne universities',
+    cityInfo: [
+      "Lausanne is renowned for its significant academic institutions: the University of Lausanne (UNIL) and the École Polytechnique Fédérale de Lausanne (EPFL). These universities contribute immensely to the city's educational and research landscape.",
+      'With a rich history dating back to 1537, UNIL offers diverse programs across several faculties, while EPFL, established in 1969, excels in engineering and natural sciences. Both institutions boast vibrant campuses near Lake Geneva, fostering an inspiring academic atmosphere.',
+    ],
+    uniList: [
+      'University of Lausanne (UNIL)',
+      'École Polytechnique Fédérale de Lausanne (EPFL)',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Lausanne's universities offer a unique blend of tradition and innovation, set against the stunning backdrop of Lake Geneva. This environment is conducive to academic and personal growth, making Lausanne a prime destination for students and academics.",
+      "The city's commitment to research and education, combined with its international community and beautiful natural surroundings, provide compelling reasons for attending or working at its universities.",
+    ],
+    image_url: '/cities/academic-jobs-in-lausanne.jpeg',
+    alt: "Panoramic view of Lausanne's university campuses with Lake Geneva in the background, symbolizing the city's academic excellence",
+  },
+  {
+    title: 'Delft, Netherlands: A City Shaped by Engineering and Innovation',
+    h1: 'The Academic Landscape of Delft',
+    slug: 'delft-netherlands-academic-landscape',
+    city: 'Delft',
+    region: 'South Holland',
+    country: 'Netherlands',
+    description:
+      'Delft is globally recognized for the Delft University of Technology (TU Delft), the oldest and largest public technical university in the Netherlands, known for its pioneering research and diverse international community.',
+    keywords:
+      'TU Delft, Delft University of Technology, engineering education Delft, innovation Delft, Delft academic institutions',
+    cityInfo: [
+      'Delft, known for its historic charm and technological innovation, is home to the Delft University of Technology (TU Delft), a premier institution that has significantly contributed to the fields of engineering and technology.',
+      'Founded with a focus on civil engineering, TU Delft has grown to offer a wide array of programs across various disciplines, attracting a vibrant community of students from around the globe.',
+    ],
+    uniList: ['Delft University of Technology (TU Delft)'],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'TU Delft provides a unique environment for academic and personal growth, with state-of-the-art facilities like the green-roof insulated TU Delft Library, fostering innovation and research.',
+      'The international community and diverse programs at TU Delft make it a leading destination for students and academics seeking to engage with cutting-edge technology and engineering challenges.',
+    ],
+    image_url: '/cities/academic-jobs-in-delft.jpeg',
+    alt: 'Aerial view of TU Delft campus in Delft, Netherlands, highlighting its modern educational facilities',
+  },
+  {
+    title:
+      'Exploring Higher Education in Porto, Portugal: A Guide to Universities and Colleges',
+    h1: "Porto's Prestigious Higher Education Institutions",
+    slug: 'higher-education-in-porto-portugal',
+    city: 'Porto',
+    region: 'Norte Region',
+    country: 'Portugal',
+    description:
+      'Porto, known for its rich history and vibrant culture, is also a center for academic excellence. Home to the University of Porto and the Polytechnic Institute of Porto, the city offers a diverse educational landscape for students worldwide.',
+    keywords:
+      'University of Porto, Polytechnic Institute of Porto, higher education Porto, Porto universities, Porto colleges',
+    cityInfo: [
+      'Porto, a dynamic city in Portugal, hosts several prestigious higher education institutions, providing a broad spectrum of academic programs and research opportunities.',
+      'The University of Porto and the Polytechnic Institute of Porto are among the top-ranked institutions, offering a wide range of courses for local and international students.',
+    ],
+    uniList: [
+      'University of Porto',
+      'Polytechnic Institute of Porto',
+      'Fernando Pessoa University',
+      'Portucalense University',
+      'Lusofona University of Porto',
+      'Escola Superior de Educacao de Paula Frassinetti',
+      'Nursing School of Porto',
+      'ISAG European Business School',
+      'Artistic School of Porto',
+      'Instituto Superior de Servico Social do Porto',
+      'Santa Maria Health School',
+      'Instituto Superior de Ciencias Empresariais e do Turismo',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Studying in Porto offers a unique blend of high-quality education, multicultural experiences, and a vibrant city life, making it an ideal destination for students seeking academic and personal growth.',
+      "The city's universities are known for their strong academic programs, research opportunities, and commitment to student success, providing a supportive environment for learning and innovation.",
+    ],
+    image_url: '/cities/academic-jobs-in-porto.jpeg',
+    alt: 'Panoramic view of Porto with highlighted locations of the University of Porto and the Polytechnic Institute of Porto',
+  },
+  {
+    title: 'Bruges, Belgium: A Center of European Studies and Applied Sciences',
+    h1: 'Higher Education in Bruges',
+    slug: 'higher-education-in-bruges-belgium',
+    city: 'Bruges',
+    region: 'Flanders',
+    country: 'Belgium',
+    description:
+      'Bruges, a city renowned for its medieval architecture and canals, is also a significant hub for higher education, hosting institutions like the College of Europe and Howest University of Applied Sciences.',
+    keywords:
+      'College of Europe Bruges, Howest University, VIVES University of Applied Sciences, Bruges higher education, Bruges universities',
+    cityInfo: [
+      'Bruges is not just a UNESCO World Heritage site but also a vibrant city for higher education, hosting esteemed institutions such as the College of Europe, known for postgraduate studies in European affairs, and Howest University of Applied Sciences.',
+      'These institutions provide a diverse range of programs and have a rich history of academic excellence, making Bruges an attractive city for students from around the globe.',
+    ],
+    uniList: [
+      'College of Europe',
+      'Howest University of Applied Sciences - Bruges Campus',
+      'VIVES University of Applied Sciences - Bruges Campus',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Bruges offers a unique educational experience in the heart of Europe, combining high-quality academic programs with the opportunity to live in one of Europe's most picturesque cities.",
+      "With a focus on European studies and applied sciences, Bruges's institutions prepare students for a globalized world, making it an ideal destination for those seeking both academic rigor and cultural richness.",
+    ],
+    image_url: '/cities/academic-jobs-in-bruges.jpeg',
+    alt: 'Historic cityscape of Bruges with prominent educational institutions highlighted',
+  },
+  {
+    title: 'Florence, Italy: A Hub of Art, Culture, and Education',
+    h1: 'Higher Education Institutions in Florence',
+    slug: 'higher-education-institutions-in-florence-italy',
+    city: 'Florence',
+    region: 'Tuscany',
+    country: 'Italy',
+    description:
+      'Florence, the cradle of the Renaissance, is not only a city of immense historical and cultural significance but also a center for higher education with prestigious institutions like the University of Florence.',
+    keywords:
+      'University of Florence, Polimoda, European University Institute, NYU Florence, education in Florence, Florence universities',
+    cityInfo: [
+      'Florence is home to several prestigious higher education institutions, making it a significant hub for students and academics worldwide. The city offers a unique blend of historic legacy and modern educational facilities.',
+      'The University of Florence stands out as a prominent institution with a broad range of programs and strong corporate relations. Florence also hosts specialized institutions like Polimoda for fashion and design, and the European University Institute for social sciences.',
+    ],
+    uniList: [
+      'University of Florence',
+      'Polimoda International Institute of Design and Marketing',
+      'European University Institute',
+      'New York University Florence campus',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      "Studying in Florence allows students to immerse themselves in a city known for its contributions to art, culture, and science, offering a unique educational experience amidst the city's historical and contemporary landmarks.",
+      'The diverse range of programs and the presence of various research institutes make Florence an attractive destination for students looking to benefit from a rich academic tradition and cultural heritage.',
+    ],
+    image_url: '/cities/academic-jobs-in-florence.jpeg',
+    alt: "Panoramic view of Florence with highlighted educational institutions, reflecting the city's blend of historic legacy and modern education.",
+  },
+  {
+    title: 'Salzburg, Austria: A Nexus of Culture and Higher Education',
+    h1: 'Exploring the Academic Landscape of Salzburg',
+    slug: 'academic-landscape-salzburg-austria',
+    city: 'Salzburg',
+    region: 'Salzburg State',
+    country: 'Austria',
+    description:
+      'Salzburg, renowned for its baroque architecture and musical heritage, is also a center for academic excellence, with institutions like the Paris Lodron University and Mozarteum University Salzburg shaping a vibrant educational community.',
+    keywords:
+      'Paris Lodron University, Mozarteum University Salzburg, Salzburg colleges, higher education Salzburg, Salzburg university campus',
+    cityInfo: [
+      "Salzburg is celebrated not only for its historical and cultural significance but also for its diverse higher education landscape. The city's universities and colleges offer a broad spectrum of academic programs, from arts and humanities to natural and social sciences.",
+      "Among the notable institutions are the Paris Lodron University of Salzburg, with a wide range of study programs, and the Mozarteum University Salzburg, specializing in the arts. These universities contribute to Salzburg's reputation as an educational hub in Austria.",
+    ],
+    uniList: [
+      'Paris Lodron University of Salzburg (PLUS)',
+      'Mozarteum University Salzburg',
+      'Salzburg Urstein Institut',
+      'University for Applied Sciences Salzburg, Campus Urstein',
+    ],
+    nobelInfo: [],
+    nobelList: [],
+    academicInfo: [],
+    academicList: [],
+    promo: [
+      'Salzburg offers a unique blend of high-quality education and rich cultural heritage, making it an ideal destination for students and academics seeking both academic and personal growth in a city known for its architectural beauty and musical legacy.',
+      "The opportunity to study in Salzburg, with its renowned educational institutions set against the backdrop of the city's historical and cultural landmarks, provides a stimulating and enriching environment for learners and scholars from around the world.",
+    ],
+    image_url: '/cities/academic-jobs-in-salzburg.jpeg',
+    alt: "Scenic view of Salzburg with highlights of its universities and cultural landmarks, embodying the city's fusion of education and heritage",
+  },
+  {
+    title: "Discover Lund: Sweden's Education Hub",
+    h1: "Exploring Lund's Academic Excellence",
+    slug: 'lund-education-hub',
+    city: 'Lund',
+    region: 'Skåne County',
+    country: 'Sweden',
+    description:
+      'Uncover the academic brilliance of Lund, a vibrant city in Sweden known for its world-class universities and research institutions. Explore opportunities for education, research, and personal growth.',
+    keywords:
+      'Lund, Sweden, universities, colleges, education, research, academic excellence',
+
+    cityInfo: [
+      'Lund, Sweden, is renowned for its distinguished higher education landscape, boasting several leading universities and colleges. These institutions foster a dynamic and multicultural environment, attracting students and scholars from around the globe.',
+      "The city's academic prowess is evident in its diverse range of programs, cutting-edge research facilities, and strong emphasis on innovation and collaboration. Lund's universities are key players in driving Sweden's reputation as a hub for education and research excellence.",
+    ],
+
+    uniList: [
+      'Lund University',
+      'Malmö University',
+      'Lund University School of Economics and Management',
+      'Swedish University of Agricultural Sciences (SLU), Alnarp',
+    ],
+
+    nobelInfo: [
+      'Lund University has a rich history of Nobel laureates, including the renowned physicist Niels Bohr, who received the Nobel Prize in Physics in 1922 for his groundbreaking work on atomic structure and quantum theory.',
+      'In addition to Niels Bohr, Lund University has produced Nobel laureates in various fields, such as Chemistry, Physiology or Medicine, and Economics, further solidifying its reputation as a center for academic excellence and groundbreaking research.',
+    ],
+
+    nobelList: ['Niels Bohr: Physics'],
+
+    academicInfo: [
+      "Lund's academic community is home to many esteemed scholars and researchers who have made significant contributions to their respective fields. Notable academics include Professor Lars-Erik Cederman, a leading expert in international conflict research, and Professor Sara Danius, an influential literary scholar and former Permanent Secretary of the Swedish Academy.",
+    ],
+
+    academicList: [
+      'Lars-Erik Cederman: Professor of International Conflict Research',
+      'Sara Danius: Professor of Literature',
+    ],
+
+    promo: [
+      "Joining Lund's universities offers unparalleled opportunities for both students and faculty. Experience a stimulating learning environment, access to cutting-edge research facilities, and the chance to collaborate with world-renowned scholars. Whether you're seeking personal growth or professional development, Lund is the perfect destination for academic excellence.",
+    ],
+
+    image_url:
+      'https://www.lunduniversity.lu.se/sites/default/files/styles/header-image/public/lunds_universitet_0.jpg?h=6e9e5f85&itok=0t1JWYnB',
+    alt: 'Lund, Sweden - University Buildings',
+  },
+
+  // New cities
+  {
+    title: 'Exploring Education in Hanoi: A Gateway to Knowledge',
+    h1: "Unlocking Hanoi's Educational Potential",
+    slug: 'education-in-hanoi',
+    city: 'Hanoi',
+    country: 'Vietnam',
+    description:
+      "Discover the vibrant educational landscape of Hanoi, Vietnam, home to prestigious universities and colleges offering diverse academic programs and research opportunities. Explore the reasons why attending or working in Hanoi's institutions is a pathway to personal and professional growth.",
+    keywords:
+      'Hanoi, Vietnam, universities, colleges, education, research, academic excellence',
+
+    cityInfo: [
+      'Hanoi, Vietnam, is a thriving hub of higher education, boasting a variety of universities and colleges that cater to a wide range of academic interests and disciplines. From traditional institutions to specialized academies, Hanoi offers a diverse and dynamic learning environment for students seeking quality education.',
+      "The city's higher education landscape is characterized by its commitment to academic excellence and innovation. With state-of-the-art facilities, renowned faculty members, and strong industry connections, Hanoi's universities and colleges prepare students for success in the global workforce.",
+    ],
+
+    uniList: [
+      'Vietnam National University, Hanoi',
+      'Hanoi University of Science and Technology',
+      'Hanoi University',
+      'Vietnam National Academy of Music',
+      'Foreign Trade University, Hanoi',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Attending or working at a university or college in Hanoi offers unparalleled opportunities for academic and professional development. Immerse yourself in a vibrant cultural environment, collaborate with top-tier faculty members, and gain hands-on experience through research and internship opportunities. Whether you're a student or a faculty member, Hanoi is the perfect destination for intellectual growth and exploration.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-hanoi.jpeg',
+    alt: 'Hanoi skyline',
+  },
+  {
+    title: 'Discovering Kyoto: Education and Innovation',
+    h1: "Unraveling Kyoto's Educational Tapestry",
+    slug: 'education-in-kyoto',
+    city: 'Kyoto',
+    country: 'Japan',
+    description:
+      "Embark on a journey through Kyoto's rich educational heritage, home to prestigious universities and colleges renowned for their academic excellence and innovative research. Explore the reasons why attending or working in Kyoto's institutions opens doors to unparalleled opportunities for personal and professional growth.",
+    keywords:
+      'Kyoto, Japan, universities, colleges, education, research, academic excellence',
+
+    cityInfo: [
+      "Kyoto, Japan, is a vibrant center of higher education, offering a diverse array of universities and colleges that cater to students from all walks of life. From traditional institutions with centuries-old traditions to modern campuses at the forefront of innovation, Kyoto's higher education landscape is characterized by its rich history and academic excellence.",
+      "The city's universities and colleges boast a wide range of academic programs and research opportunities, attracting students and scholars from around the globe. With state-of-the-art facilities, esteemed faculty members, and strong industry partnerships, Kyoto provides an inspiring environment for intellectual exploration and discovery.",
+    ],
+
+    uniList: [
+      'Kyoto University',
+      'Doshisha University',
+      'Ritsumeikan University',
+      'Kyoto Institute of Technology',
+      'Kyoto University of Art and Design',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Experience the essence of academic excellence by attending or working at a university or college in Kyoto. Immerse yourself in Japan's rich cultural heritage, collaborate with leading scholars in your field, and engage in groundbreaking research that addresses global challenges. Whether you're a student or a faculty member, Kyoto offers a stimulating environment for learning, growth, and innovation.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-kyoto.jpeg',
+    alt: 'Kyoto cityscape',
+  },
+  {
+    title: 'Exploring Education in Ho Chi Minh City',
+    h1: 'Unraveling the Educational Tapestry of Ho Chi Minh City',
+    slug: 'education-in-ho-chi-minh-city',
+    city: 'Ho Chi Minh City',
+    country: 'Vietnam',
+    description:
+      'Delve into the dynamic educational landscape of Ho Chi Minh City, Vietnam, home to a diverse array of universities and colleges offering exceptional academic programs and research opportunities. Discover why choosing to study or work in Ho Chi Minh City opens doors to personal growth and professional success.',
+    keywords:
+      'Ho Chi Minh City, Vietnam, universities, colleges, education, research, academic excellence',
+
+    cityInfo: [
+      'Ho Chi Minh City, Vietnam, boasts a vibrant higher education scene characterized by its diversity and academic excellence. From prestigious universities with strong global reputations to specialized colleges offering innovative programs, the city provides a stimulating environment for learning and intellectual exploration.',
+      "With a focus on fostering creativity, critical thinking, and practical skills, Ho Chi Minh City's universities and colleges prepare students for success in an ever-changing global landscape. The city's higher education institutions attract students from across Vietnam and around the world, contributing to its dynamic cultural and intellectual fabric.",
+    ],
+
+    uniList: [
+      'Vietnam National University, Ho Chi Minh City',
+      'Ho Chi Minh City University of Technology',
+      'University of Economics Ho Chi Minh City',
+      'Ho Chi Minh City University of Education',
+      'Ho Chi Minh City University of Foreign Languages and Information Technology',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Discover the boundless opportunities for personal and professional growth by studying or working at a university or college in Ho Chi Minh City. Immerse yourself in a vibrant cultural milieu, engage with esteemed faculty members, and collaborate on innovative research projects that address real-world challenges. Whether you're pursuing higher education or seeking employment opportunities, Ho Chi Minh City offers an enriching environment for academic and professional advancement.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-ho_chi_minh_city.jpeg',
+    alt: 'Ho Chi Minh City skyline',
+  },
+  {
+    title: "Exploring Education in Jaipur: The Pink City's Academic Oasis",
+    h1: 'Discovering Academic Excellence in Jaipur, India',
+    slug: 'education-in-jaipur',
+    city: 'Jaipur',
+    country: 'India',
+    description:
+      'Embark on a journey through the educational landscape of Jaipur, India, a city renowned for its rich cultural heritage and academic vibrancy. From prestigious universities to specialized colleges, Jaipur offers a diverse range of academic programs and research opportunities, making it an ideal destination for both students and scholars.',
+    keywords:
+      'Jaipur, India, universities, colleges, education, academic excellence, research, cultural heritage',
+
+    cityInfo: [
+      "Jaipur, India, stands as a beacon of educational excellence, with a higher education landscape that reflects the city's rich cultural heritage and modern aspirations. Home to a multitude of universities and colleges, Jaipur offers a diverse array of academic disciplines, from traditional arts and humanities to cutting-edge technology and innovation.",
+      "With a focus on fostering holistic development and nurturing intellectual curiosity, Jaipur's educational institutions provide students with a conducive environment for academic growth and personal exploration. The city's commitment to educational excellence, coupled with its vibrant cultural milieu, makes Jaipur an unparalleled destination for higher learning.",
+    ],
+
+    uniList: [
+      'University of Rajasthan',
+      'Malaviya National Institute of Technology',
+      'Jaipur National University',
+      'Manipal University Jaipur',
+      'Rajasthan Technical University',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      'Experience the blend of tradition and modernity by studying or working at a university or college in Jaipur. Immerse yourself in a city steeped in history and culture while pursuing academic endeavors that propel you towards future success. From world-class faculty to state-of-the-art facilities, Jaipur offers endless opportunities for academic and personal growth.',
+    ],
+
+    image_url: '/cities/academic-jobs-in-jaipur.jpeg',
+    alt: 'Jaipur City Palace',
+  },
+  {
+    title:
+      'Exploring Education in Mumbai: A Melting Pot of Learning and Innovation',
+    h1: 'Discover the Educational Diversity of Mumbai, India',
+    slug: 'education-in-mumbai',
+    city: 'Mumbai',
+    country: 'India',
+    description:
+      'Delve into the educational tapestry of Mumbai, India, a city pulsating with intellectual energy and cultural richness. From renowned universities to specialized colleges, Mumbai offers a dynamic educational ecosystem that caters to diverse interests and aspirations, making it a hub for academic excellence and innovation.',
+    keywords:
+      'Mumbai, India, universities, colleges, education, academic diversity, cultural richness, innovation',
+
+    cityInfo: [
+      'Mumbai, India, boasts a vibrant higher education landscape characterized by its diversity and academic excellence. With a plethora of universities and colleges spanning various disciplines, from arts and sciences to engineering and management, Mumbai offers students a wide range of educational opportunities tailored to their interests and career aspirations.',
+      "From the prestigious University of Mumbai to specialized institutions like the Tata Institute of Social Sciences and the Indian Institute of Technology Bombay, the city's educational institutions are renowned for their rigorous academic standards, state-of-the-art facilities, and commitment to fostering innovation and intellectual growth.",
+    ],
+
+    uniList: [
+      'University of Mumbai',
+      'Indian Institute of Technology Bombay',
+      'Tata Institute of Social Sciences',
+      'NMIMS University',
+      "St. Xavier's College Mumbai",
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      'Experience the dynamic educational ecosystem of Mumbai by studying or working at one of its esteemed universities or colleges. Immerse yourself in a city that celebrates diversity, fosters innovation, and encourages intellectual exploration. From world-class faculty to cutting-edge research opportunities, Mumbai offers a conducive environment for academic and professional growth.',
+    ],
+
+    image_url: '/cities/academic-jobs-in-mumbai.jpeg',
+    alt: 'Mumbai skyline',
+  },
+  {
+    title:
+      'Education Hub: Exploring Universities and Colleges in Manila, Philippines',
+    h1: 'Discover the Educational Landscape of Manila, Philippines',
+    slug: 'education-in-manila',
+    city: 'Manila',
+    country: 'Philippines',
+    description:
+      'Uncover the educational richness of Manila, Philippines, a city brimming with diverse learning institutions catering to a spectrum of academic disciplines. From renowned universities to specialized colleges, Manila offers a vibrant higher education environment conducive to intellectual growth and innovation.',
+    keywords:
+      'Manila, Philippines, universities, colleges, education, academic diversity, innovation',
+
+    cityInfo: [
+      "Manila, Philippines, stands as a beacon of educational diversity, boasting a plethora of universities and colleges that cater to a wide array of academic interests and career aspirations. From prestigious institutions offering traditional disciplines to specialized colleges focusing on emerging fields, Manila's higher education landscape is as diverse as its cultural heritage.",
+      'Home to leading universities like the University of Santo Tomas, De La Salle University, and the University of the Philippines Manila, the city prides itself on its academic excellence and commitment to fostering innovation and critical thinking among its students. With a vibrant student community and world-class faculty, Manila continues to be a hub for intellectual exploration and academic achievement.',
+    ],
+
+    uniList: [
+      'University of Santo Tomas',
+      'De La Salle University',
+      'University of the Philippines Manila',
+      'Far Eastern University',
+      'Mapúa University',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      'Embark on a journey of intellectual discovery in Manila, Philippines, by studying or working at one of its esteemed universities or colleges. Immerse yourself in a vibrant academic community that celebrates diversity, fosters innovation, and nurtures talent. Whether pursuing higher education or seeking professional opportunities, Manila offers an enriching environment for personal growth and academic excellence.',
+    ],
+
+    image_url: '',
+    alt: 'Manila skyline',
+  },
+  {
+    title: 'Exploring Higher Education in Phnom Penh, Cambodia',
+    h1: 'Discover the Academic Hub of Phnom Penh, Cambodia',
+    slug: 'higher-education-phnom-penh',
+    city: 'Phnom Penh',
+    country: 'Cambodia',
+    description:
+      "Uncover the educational vibrancy of Phnom Penh, Cambodia, where a diverse array of universities and colleges offer opportunities for academic growth and exploration. From prestigious institutions to specialized colleges, Phnom Penh's higher education landscape fosters innovation, critical thinking, and cultural exchange.",
+    keywords:
+      'Phnom Penh, Cambodia, universities, colleges, higher education, academic diversity, cultural exchange',
+
+    cityInfo: [
+      "Phnom Penh, Cambodia, stands as a bustling academic hub, with a rich tapestry of universities and colleges catering to a wide range of academic disciplines and career paths. From renowned institutions offering traditional fields of study to specialized colleges focusing on emerging areas, the city's higher education landscape reflects its cultural diversity and commitment to academic excellence.",
+      'Home to leading universities such as the Royal University of Phnom Penh, the University of Cambodia, and the Asian Institute of Technology Cambodia, Phnom Penh boasts a vibrant academic community characterized by its innovative teaching methods, cutting-edge research, and diverse student body.',
+    ],
+
+    uniList: [
+      'Royal University of Phnom Penh',
+      'University of Cambodia',
+      'Asian Institute of Technology Cambodia',
+      'National University of Management',
+      'Norton University',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Experience a dynamic academic environment in Phnom Penh, Cambodia, where universities and colleges offer unparalleled opportunities for personal and intellectual growth. Whether you're a student seeking a transformative educational experience or a professional looking for research and career opportunities, Phnom Penh's higher education institutions provide a vibrant platform for academic excellence and cultural exchange.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-phnom_penh.jpeg',
+    alt: 'Phnom Penh skyline',
+  },
+  {
+    title: "Exploring Higher Education in Xi'an, China",
+    h1: "Discover the Academic Hub of Xi'an, China",
+    slug: 'higher-education-xian',
+    city: "Xi'an",
+    country: 'China',
+    description:
+      "Uncover the academic richness of Xi'an, China, where a multitude of universities and colleges create a vibrant higher education landscape. From ancient institutions preserving tradition to modern universities driving innovation, Xi'an offers diverse opportunities for academic growth and cultural exploration.",
+    keywords:
+      "Xi'an, China, universities, colleges, higher education, academic diversity, cultural exploration",
+
+    cityInfo: [
+      "Xi'an, China, boasts a dynamic higher education ecosystem, characterized by a blend of tradition and innovation. Home to prestigious institutions like Xi'an Jiaotong University, Northwest University, and Xi'an University of Technology, the city's academic landscape reflects its rich historical legacy and forward-looking vision.",
+      "With a focus on fields such as engineering, archaeology, and traditional Chinese medicine, Xi'an's universities and colleges provide students with comprehensive educational experiences, fostering critical thinking, cultural exchange, and global collaboration.",
+    ],
+
+    uniList: [
+      "Xi'an Jiaotong University",
+      'Northwest University',
+      "Xi'an University of Technology",
+      "Xi'an International Studies University",
+      "Chang'an University",
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Experience the academic vibrancy of Xi'an, China, where universities and colleges offer a stimulating environment for personal and intellectual development. Whether you seek traditional wisdom or cutting-edge innovation, Xi'an provides ample opportunities for educational enrichment, cultural immersion, and professional advancement.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-xi_an.jpeg',
+    alt: "Xi'an skyline",
+  },
+  {
+    title: 'Exploring Higher Education in Hyderabad, India',
+    h1: 'Discover the Academic Excellence of Hyderabad, India',
+    slug: 'higher-education-hyderabad',
+    city: 'Hyderabad',
+    country: 'India',
+    description:
+      'Delve into the diverse higher education landscape of Hyderabad, India, renowned for its prestigious universities and colleges. From engineering and technology to arts and humanities, Hyderabad offers a myriad of educational opportunities for students seeking academic excellence and personal growth.',
+    keywords:
+      'Hyderabad, India, universities, colleges, higher education, academic diversity, academic excellence',
+
+    cityInfo: [
+      'Hyderabad, India, is a thriving hub of higher education, known for its diversity and academic strengths. Home to premier institutions such as the University of Hyderabad, Osmania University, and Indian School of Business, the city offers a wide range of disciplines and programs, catering to the educational needs of diverse student populations.',
+      "With a focus on innovation and research, Hyderabad's universities and colleges contribute significantly to the advancement of knowledge and societal development. From cutting-edge research facilities to vibrant campus life, the city provides an enriching environment for students to excel academically and personally.",
+    ],
+
+    uniList: [
+      'University of Hyderabad',
+      'Osmania University',
+      'Indian School of Business',
+      'International Institute of Information Technology, Hyderabad',
+      'BITS Pilani Hyderabad Campus',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Immerse yourself in the academic excellence of Hyderabad, India, where universities and colleges offer unparalleled opportunities for educational growth and personal development. Whether you aspire to pursue research, entrepreneurship, or creative endeavors, Hyderabad's vibrant academic ecosystem provides the perfect platform to realize your dreams and ambitions.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-hyderabad.jpeg',
+    alt: 'Hussain Sagar Lake in Hyderabad',
+  },
+  {
+    title: 'Exploring Higher Education in Chennai, India',
+    h1: 'Discover the Academic Excellence of Chennai, India',
+    slug: 'higher-education-chennai',
+    city: 'Chennai',
+    country: 'India',
+    description:
+      'Uncover the vibrant higher education landscape of Chennai, India, renowned for its esteemed universities and colleges. From engineering and medicine to arts and humanities, Chennai offers a diverse array of academic programs and opportunities, fostering intellectual growth and innovation.',
+    keywords:
+      'Chennai, India, universities, colleges, higher education, academic diversity, academic excellence',
+
+    cityInfo: [
+      'Chennai, India, is a bustling educational hub known for its diverse higher education institutions and academic strengths. Home to prestigious universities such as the University of Madras, Anna University, and Indian Institute of Technology Madras, the city attracts students from across the country and around the globe.',
+      "With a focus on innovation and research, Chennai's universities and colleges play a significant role in advancing knowledge and driving economic growth. From state-of-the-art facilities to experienced faculty, Chennai offers an enriching academic environment that prepares students for success in their chosen fields.",
+    ],
+
+    uniList: [
+      'University of Madras',
+      'Anna University',
+      'Indian Institute of Technology Madras',
+      'Loyola College',
+      'Madras Christian College',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Immerse yourself in the academic excellence of Chennai, India, where universities and colleges provide unparalleled opportunities for educational and personal growth. Whether you seek to pursue cutting-edge research, develop practical skills, or foster creative talents, Chennai's dynamic academic community offers a supportive and inspiring environment to achieve your aspirations.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-chennai.jpeg',
+    alt: 'Marina Beach in Chennai',
+  },
+  {
+    title: "Exploring Pune's Educational Excellence",
+    h1: "Discover Pune's Academic Brilliance",
+    slug: 'pune-educational-excellence',
+    city: 'Pune',
+    country: 'India',
+    description:
+      'Explore the vibrant academic landscape of Pune, India, renowned for its diverse range of universities and colleges offering quality education across various disciplines. From engineering and management to arts and sciences, Pune provides a conducive environment for learning and growth.',
+    keywords:
+      'Pune, India, universities, colleges, higher education, academic diversity, academic excellence',
+
+    cityInfo: [
+      'Pune, India, boasts a rich tapestry of educational institutions, making it a prominent destination for higher education in the country. With a strong focus on academic excellence and innovation, Pune is home to prestigious universities such as Savitribai Phule Pune University, Symbiosis International University, and College of Engineering Pune.',
+      "From traditional disciplines to emerging fields, Pune's higher education landscape offers a diverse array of programs catering to the interests and aspirations of students. The city's educational institutions are known for their world-class faculty, state-of-the-art facilities, and vibrant campus life, providing students with an enriching learning experience.",
+    ],
+
+    uniList: [
+      'Savitribai Phule Pune University',
+      'Symbiosis International University',
+      'College of Engineering Pune',
+      'Fergusson College',
+      'FLAME University',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Experience the academic brilliance of Pune, India, where universities and colleges offer unparalleled opportunities for educational and personal growth. Whether you aspire to pursue research, entrepreneurship, or creative endeavors, Pune's dynamic academic ecosystem provides the perfect platform to realize your ambitions and shape a successful future.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-pune.jpeg',
+    alt: 'Pune skyline',
+  },
+  {
+    title: 'Ahmedabad: Hub of Higher Learning',
+    h1: "Exploring Ahmedabad's Academic Scene",
+    slug: 'ahmedabad-higher-learning-hub',
+    city: 'Ahmedabad',
+    country: 'India',
+    description:
+      "Discover Ahmedabad's vibrant educational landscape, characterized by a plethora of universities and colleges offering diverse academic programs. From renowned institutes for management and technology to arts and sciences, Ahmedabad provides a conducive environment for holistic learning and personal development.",
+    keywords:
+      'Ahmedabad, India, universities, colleges, higher education, academic diversity, academic excellence',
+
+    cityInfo: [
+      'Ahmedabad, India, is a bustling metropolis known for its rich cultural heritage and thriving educational ecosystem. Home to prestigious institutions like the Indian Institute of Management Ahmedabad (IIMA), Gujarat University, and National Institute of Design (NID), Ahmedabad offers a diverse range of academic opportunities across various disciplines.',
+      "With a strong emphasis on innovation and research, Ahmedabad's higher education institutions foster an environment conducive to academic excellence and professional growth. From engineering and management to design and liberal arts, Ahmedabad's educational landscape caters to the aspirations of students from diverse backgrounds.",
+    ],
+
+    uniList: [
+      'Indian Institute of Management Ahmedabad (IIMA)',
+      'Gujarat University',
+      'National Institute of Design (NID)',
+      'CEPT University',
+      'Nirma University',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Immerse yourself in Ahmedabad's dynamic academic environment, where opportunities for learning and growth abound. Whether you seek world-class education, cutting-edge research, or vibrant campus life, Ahmedabad's universities and colleges offer an enriching experience that prepares you for success in your chosen field.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-ahmedabad.jpeg',
+    alt: 'Ahmedabad skyline',
+  },
+  {
+    title: "Exploring Kolkata's Academic Landscape",
+    h1: "Discovering Kolkata's Universities and Colleges",
+    slug: 'kolkata-academic-landscape',
+    city: 'Kolkata',
+    country: 'India',
+    description:
+      'Uncover the educational vibrancy of Kolkata, a city renowned for its rich cultural heritage and academic diversity. From prestigious universities to esteemed colleges, Kolkata offers a plethora of learning opportunities across various disciplines, fostering intellectual growth and personal development.',
+    keywords:
+      'Kolkata, India, universities, colleges, higher education, academic diversity, cultural heritage',
+
+    cityInfo: [
+      'Kolkata, India, boasts a vibrant higher education landscape, reflecting its cultural richness and intellectual fervor. Home to esteemed institutions like Jadavpur University, University of Calcutta, and Indian Institute of Management Calcutta (IIMC), Kolkata offers a diverse range of academic programs catering to the aspirations of students from all walks of life.',
+      "With a legacy of academic excellence spanning centuries, Kolkata's universities and colleges uphold a tradition of scholarly pursuit and innovation. From arts and humanities to science and technology, Kolkata's higher education institutions nurture talent, foster creativity, and contribute to the intellectual capital of the nation.",
+    ],
+
+    uniList: [
+      'Jadavpur University',
+      'University of Calcutta',
+      'Indian Institute of Management Calcutta (IIMC)',
+      'Presidency University',
+      "St. Xavier's College Kolkata",
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Experience the enriching academic environment of Kolkata, where heritage meets innovation and tradition blends seamlessly with modernity. Whether you aspire to pursue higher education or seek opportunities for research and professional growth, Kolkata's universities and colleges provide a nurturing ecosystem conducive to realizing your dreams and ambitions.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-kolkata.jpeg',
+    alt: 'Kolkata skyline',
+  },
+  {
+    title: "Exploring Lucknow's Educational Landscape",
+    h1: "Discovering Lucknow's Universities and Colleges",
+    slug: 'lucknow-educational-landscape',
+    city: 'Lucknow',
+    country: 'India',
+    description:
+      'Unlock the potential of higher education in Lucknow, a city steeped in history and renowned for its cultural heritage. Explore a diverse array of universities and colleges, offering academic excellence, research opportunities, and personal growth in a vibrant and dynamic environment.',
+    keywords:
+      'Lucknow, India, universities, colleges, higher education, cultural heritage, research opportunities',
+
+    cityInfo: [
+      'Lucknow, India, stands as a beacon of academic excellence, blending tradition with modernity in its educational landscape. From prestigious institutions like the University of Lucknow and Dr. Ram Manohar Lohia National Law University to specialized colleges in engineering, medicine, and management, Lucknow offers a comprehensive range of educational opportunities.',
+      'With a rich cultural heritage and a tradition of scholarly pursuit, Lucknow fosters an environment conducive to holistic development and intellectual growth. Its universities and colleges not only impart knowledge but also instill values of critical thinking, creativity, and social responsibility, shaping future leaders and innovators.',
+    ],
+
+    uniList: [
+      'University of Lucknow',
+      'Dr. Ram Manohar Lohia National Law University',
+      "King George's Medical University",
+      'Indian Institute of Management Lucknow (IIM Lucknow)',
+      'Babasaheb Bhimrao Ambedkar University',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Immerse yourself in Lucknow's vibrant educational ecosystem, where heritage meets innovation and academic excellence knows no bounds. Whether you seek to pursue higher studies or advance your career through research and professional development, Lucknow offers a plethora of opportunities for personal growth and academic achievement.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-lucknow.jpeg',
+    alt: 'Lucknow montage',
+  },
+  {
+    title: "Exploring Jakarta's Educational Landscape",
+    h1: "Discovering Jakarta's Universities and Colleges",
+    slug: 'jakarta-educational-landscape',
+    city: 'Jakarta',
+    country: 'Indonesia',
+    description:
+      "Embark on a journey of academic excellence in Jakarta, Indonesia's bustling capital. Explore a diverse range of universities and colleges, offering world-class education, innovative research opportunities, and a vibrant cultural experience in the heart of Southeast Asia.",
+    keywords:
+      'Jakarta, Indonesia, universities, colleges, higher education, research opportunities, Southeast Asia',
+
+    cityInfo: [
+      "Jakarta, Indonesia, boasts a dynamic higher education landscape, reflecting the country's rich cultural heritage and rapid economic development. From prestigious institutions like the University of Indonesia and Binus University to specialized colleges in technology, arts, and business, Jakarta offers a wide array of educational options catering to diverse interests and career aspirations.",
+      'With a strategic location in Southeast Asia and a thriving urban environment, Jakarta provides students with unparalleled opportunities for academic growth, cultural immersion, and professional advancement. Its universities and colleges are at the forefront of innovation, fostering a conducive environment for research, entrepreneurship, and global collaboration.',
+    ],
+
+    uniList: [
+      'University of Indonesia',
+      'Binus University',
+      'Universitas Pelita Harapan',
+      'Institut Teknologi Bandung (ITB)',
+      'Universitas Gadjah Mada (UGM)',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Experience the vibrant academic community of Jakarta, where learning knows no boundaries and opportunities abound. Whether you aspire to pursue cutting-edge research, gain hands-on experience, or expand your global network, Jakarta's universities and colleges provide the perfect platform for academic and personal growth.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-jakarta.jpeg',
+    alt: 'Jakarta skyline',
+  },
+  {
+    title: "Exploring Dhaka's Educational Landscape",
+    h1: "Discovering Dhaka's Universities and Colleges",
+    slug: 'dhaka-educational-landscape',
+    city: 'Dhaka',
+    country: 'Bangladesh',
+    description:
+      "Unveil the educational riches of Dhaka, Bangladesh's vibrant capital, renowned for its diverse higher education institutions. Delve into a world of academic excellence, cultural immersion, and innovative research opportunities in the heart of South Asia.",
+    keywords:
+      'Dhaka, Bangladesh, universities, colleges, higher education, research opportunities, South Asia',
+
+    cityInfo: [
+      "Dhaka, Bangladesh, stands as a hub of higher education in South Asia, boasting a multitude of universities and colleges that cater to a wide range of academic disciplines and interests. From prestigious institutions like the University of Dhaka and Bangladesh University of Engineering and Technology (BUET) to specialized colleges focusing on arts, sciences, and commerce, Dhaka's educational landscape reflects the country's rich cultural heritage and commitment to academic excellence.",
+      "With a growing economy and a young, dynamic population, Dhaka offers students a vibrant and multicultural environment conducive to learning and personal growth. The city's universities and colleges provide world-class education, state-of-the-art facilities, and opportunities for research collaboration, making Dhaka an attractive destination for both domestic and international students.",
+    ],
+
+    uniList: [
+      'University of Dhaka',
+      'Bangladesh University of Engineering and Technology (BUET)',
+      'Dhaka University of Engineering & Technology (DUET)',
+      'North South University (NSU)',
+      'Brac University',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Immerse yourself in the vibrant academic community of Dhaka, where learning transcends boundaries and possibilities are endless. Whether you seek a rigorous academic program, hands-on research experience, or a multicultural learning environment, Dhaka's universities and colleges offer the perfect blend of tradition and innovation for your educational journey.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-dhaka.jpeg',
+    alt: 'Dhaka skyline',
+  },
+  {
+    title: "Exploring Chongqing's Education Scene",
+    h1: "Unveiling Chongqing's Universities and Colleges",
+    slug: 'chongqing-education-scene',
+    city: 'Chongqing',
+    country: 'China',
+    description:
+      "Discover the educational richness of Chongqing, China's bustling megacity nestled in the heart of the country. Delve into a diverse higher education landscape offering academic excellence, cultural immersion, and boundless opportunities for personal and professional growth.",
+    keywords:
+      'Chongqing, China, universities, colleges, higher education, academic excellence, personal growth, professional opportunities',
+
+    cityInfo: [
+      "Chongqing, China, stands as a beacon of higher education in the heart of the country, boasting a plethora of universities and colleges renowned for their academic excellence and research prowess. From prestigious institutions like Chongqing University and Southwest University to specialized colleges focusing on engineering, arts, and medicine, Chongqing's educational landscape reflects the city's dynamic growth and commitment to innovation.",
+      "With a rapidly expanding economy and a vibrant cultural scene, Chongqing offers students a unique blend of traditional Chinese heritage and modernity. The city's universities and colleges provide world-class facilities, cutting-edge research opportunities, and a supportive learning environment, making Chongqing an ideal destination for both domestic and international students seeking quality higher education.",
+    ],
+
+    uniList: [
+      'Chongqing University',
+      'Southwest University',
+      'Chongqing Medical University',
+      'Chongqing University of Arts and Sciences',
+      'Chongqing University of Posts and Telecommunications',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Immerse yourself in the vibrant academic community of Chongqing, where learning knows no bounds and opportunities abound. Whether you aspire to pursue cutting-edge research, engage in cultural exchange, or build a rewarding career, Chongqing's universities and colleges offer the perfect platform to turn your academic dreams into reality.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-chongqing.jpeg',
+    alt: 'Chongqing skyline',
+  },
+  {
+    title: "Exploring Karachi's Educational Landscape",
+    h1: "Discovering Karachi's Universities and Colleges",
+    slug: 'karachi-education-landscape',
+    city: 'Karachi',
+    country: 'Pakistan',
+    description:
+      "Embark on a journey through Karachi's diverse higher education landscape, where academic excellence meets cultural vibrancy. Uncover a myriad of opportunities for personal growth, professional development, and intellectual enrichment at the city's esteemed universities and colleges.",
+    keywords:
+      'Karachi, Pakistan, universities, colleges, higher education, academic excellence, cultural vibrancy, personal growth, professional development',
+
+    cityInfo: [
+      "Karachi, Pakistan, stands as a beacon of higher education in the region, offering a rich tapestry of universities and colleges catering to diverse academic interests and disciplines. From prestigious institutions like the University of Karachi and Aga Khan University to specialized colleges focusing on engineering, medicine, and humanities, Karachi's educational landscape reflects the city's dynamic spirit and commitment to knowledge.",
+      "With a bustling economy, multicultural environment, and vibrant cultural scene, Karachi provides students with a unique blend of academic rigor and cultural immersion. The city's universities and colleges boast world-class faculty, state-of-the-art facilities, and a conducive learning environment, making Karachi an ideal destination for aspiring scholars and researchers.",
+    ],
+
+    uniList: [
+      'University of Karachi',
+      'Aga Khan University',
+      'NED University of Engineering and Technology',
+      'Karachi University Business School',
+      'Indus Valley School of Art and Architecture',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Immerse yourself in Karachi's vibrant educational community, where learning transcends boundaries and opportunities abound. Whether you seek to pursue cutting-edge research, engage in community service, or embark on a journey of self-discovery, Karachi's universities and colleges offer the perfect platform to realize your academic aspirations and ambitions.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-karachi.jpeg',
+    alt: 'Karachi skyline',
+  },
+  {
+    title: "Exploring Lagos's Education Hub",
+    h1: "Unlocking Lagos's Universities and Colleges",
+    slug: 'lagos-education-hub',
+    city: 'Lagos',
+    country: 'Nigeria',
+    description:
+      "Discover Lagos's vibrant higher education landscape, where academic excellence thrives amidst cultural diversity. Explore the city's renowned universities and colleges, offering unparalleled opportunities for personal growth, professional development, and intellectual exploration.",
+    keywords:
+      'Lagos, Nigeria, universities, colleges, higher education, academic excellence, cultural diversity, personal growth, professional development',
+
+    cityInfo: [
+      "Lagos, Nigeria, stands as a bustling hub of higher education, boasting a diverse array of universities and colleges catering to various academic disciplines and fields of study. From prestigious institutions like the University of Lagos and Lagos State University to specialized colleges focusing on technology, business, and the arts, Lagos's education sector reflects the city's dynamic and cosmopolitan character.",
+      "With a rich cultural heritage, entrepreneurial spirit, and thriving economy, Lagos offers students a vibrant and stimulating environment conducive to learning and innovation. The city's universities and colleges feature world-class faculty, state-of-the-art facilities, and a supportive ecosystem, making Lagos an attractive destination for both local and international students seeking quality education and global opportunities.",
+    ],
+
+    uniList: [
+      'University of Lagos',
+      'Lagos State University',
+      'Pan-Atlantic University',
+      'Yaba College of Technology',
+      'Covenant University',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Immerse yourself in Lagos's vibrant academic community, where education transcends boundaries and possibilities abound. Whether you aspire to pursue cutting-edge research, foster entrepreneurship, or engage in community development, Lagos's universities and colleges offer the perfect platform to realize your academic and professional aspirations.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-lagos_nigeria.jpeg',
+    alt: 'Lagos skyline',
+  },
+  {
+    title: "Exploring Osaka's Education Scene",
+    h1: "Unveiling Osaka's Universities and Colleges",
+    slug: 'osaka-education-scene',
+    city: 'Osaka',
+    country: 'Japan',
+    description:
+      "Delve into Osaka's vibrant higher education ecosystem, where diversity meets excellence. Discover renowned universities and colleges offering a myriad of academic programs, fostering innovation, and nurturing global leaders.",
+    keywords:
+      'Osaka, Japan, universities, colleges, higher education, diversity, excellence, innovation, global leaders',
+
+    cityInfo: [
+      "Osaka, Japan, epitomizes diversity and excellence in higher education, with a plethora of universities and colleges catering to diverse academic interests and disciplines. From traditional institutions like Osaka University and Osaka City University to specialized colleges focusing on technology, arts, and business, Osaka's education landscape offers something for every student.",
+      "With a rich cultural heritage, vibrant economy, and technological prowess, Osaka provides an ideal environment for academic and personal growth. The city's universities and colleges boast world-class faculty, cutting-edge research facilities, and vibrant student communities, making Osaka a prime destination for students seeking quality education and global opportunities.",
+    ],
+
+    uniList: [
+      'Osaka University',
+      'Osaka City University',
+      'Kansai University',
+      'Osaka Prefecture University',
+      'Osaka International University',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Immerse yourself in Osaka's dynamic academic environment, where diversity sparks innovation and excellence. Whether you aim to pursue groundbreaking research, unleash your creative potential, or embark on an entrepreneurial journey, Osaka's universities and colleges offer endless opportunities for academic and personal fulfillment.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-osaka.jpeg',
+    alt: 'Osaka city skyline',
+  },
+  {
+    title: "Exploring Rio de Janeiro's Education Scene",
+    h1: "Unveiling Rio de Janeiro's Universities and Colleges",
+    slug: 'rio-de-janeiro-education-scene',
+    city: 'Rio de Janeiro',
+    country: 'Brazil',
+    description:
+      'Discover the vibrant education landscape of Rio de Janeiro, Brazil, home to diverse universities and colleges offering world-class education and fostering academic excellence. Explore the opportunities for personal and professional growth in this culturally rich city.',
+    keywords:
+      'Rio de Janeiro, Brazil, universities, colleges, higher education, diversity, academic excellence, personal growth, professional opportunities',
+
+    cityInfo: [
+      "Rio de Janeiro, Brazil, boasts a dynamic higher education sector with a diverse range of universities and colleges catering to various academic disciplines and interests. From prestigious institutions like the Federal University of Rio de Janeiro (UFRJ) and Pontifical Catholic University of Rio de Janeiro (PUC-Rio) to specialized colleges focusing on arts, engineering, and medicine, Rio's education landscape is vibrant and multifaceted.",
+      "Renowned for its cultural richness, natural beauty, and entrepreneurial spirit, Rio de Janeiro provides an inspiring backdrop for academic pursuits. The city's universities and colleges offer state-of-the-art facilities, world-class faculty, and vibrant student communities, fostering an environment conducive to innovation, creativity, and academic excellence.",
+    ],
+
+    uniList: [
+      'Federal University of Rio de Janeiro (UFRJ)',
+      'Pontifical Catholic University of Rio de Janeiro (PUC-Rio)',
+      'Rio de Janeiro State University (UERJ)',
+      'Federal Rural University of Rio de Janeiro (UFRRJ)',
+      'Estácio de Sá University',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Immerse yourself in Rio de Janeiro's vibrant academic community, where diversity meets excellence. Whether you seek to pursue cutting-edge research, unleash your creative potential, or expand your professional horizons, Rio's universities and colleges offer unparalleled opportunities for academic and personal growth.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-rio_de_janeiro.jpeg',
+    alt: 'Aerial view of Copacabana Beach in Rio de Janeiro',
+  },
+  {
+    title: "Exploring Guangzhou's Education Scene",
+    h1: "Unveiling Guangzhou's Universities and Colleges",
+    slug: 'guangzhou-education-scene',
+    city: 'Guangzhou',
+    country: 'China',
+    description:
+      'Discover the vibrant education landscape of Guangzhou, China, characterized by its diverse array of universities and colleges offering exceptional academic programs. Explore the opportunities for personal growth and academic excellence in this dynamic city.',
+    keywords:
+      'Guangzhou, China, universities, colleges, higher education, diversity, academic excellence, personal growth, professional opportunities',
+
+    cityInfo: [
+      "Guangzhou, China, stands as a beacon of higher education, boasting a rich tapestry of universities and colleges renowned for their academic excellence and diverse offerings. From prestigious institutions like Sun Yat-sen University and South China University of Technology to specialized colleges focusing on engineering, medicine, and the arts, Guangzhou's education landscape is both diverse and robust.",
+      "Home to a thriving economy and vibrant cultural scene, Guangzhou offers a dynamic environment for academic pursuits. The city's universities and colleges provide cutting-edge facilities, renowned faculty members, and a vibrant student community, fostering an atmosphere conducive to innovation, creativity, and personal growth.",
+    ],
+
+    uniList: [
+      'Sun Yat-sen University',
+      'South China University of Technology',
+      'Guangzhou University',
+      'Guangdong University of Foreign Studies',
+      'South China Agricultural University',
+    ],
+
+    nobelInfo: ['', ''],
+
+    nobelList: [],
+
+    academicInfo: ['', ''],
+
+    academicList: [],
+
+    promo: [
+      "Immerse yourself in Guangzhou's vibrant academic community, where diversity meets excellence. Whether you aspire to pursue cutting-edge research, unleash your creative potential, or embark on a journey of personal and professional growth, Guangzhou's universities and colleges offer unparalleled opportunities for academic advancement and career development.",
+    ],
+
+    image_url: '/cities/academic-jobs-in-guangzhou.jpeg',
+    alt: 'Guangzhou skyline in the evening',
+  },
 ];
