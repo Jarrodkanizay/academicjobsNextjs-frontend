@@ -151,7 +151,7 @@ export const specialtyJobsData = [
       `Signal Processing`,
       `Electrical Systems`,
     ],
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/placeholders/specialty-jobs/electrical-engineering.jpeg`,
     alt: `An image capturing the essence of Electrical Engineering, showing an engineer working on a complex circuit board, symbolizing innovation and precision`,
   },
   {
@@ -10330,5 +10330,5 @@ export const specialtyJobsData = [
 
 
 
-  
+
 ];
