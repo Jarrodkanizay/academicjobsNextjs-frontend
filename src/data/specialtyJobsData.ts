@@ -10323,4 +10323,12 @@ export const specialtyJobsData = [
     image_url: `/placeholders/placeholder-image.jpg`,
     alt: 'An engaging visual depicting the dynamic role of a controller, balancing financial documents and analytical tools, symbolizing the blend of strategy and finance.',
   },
+
+
+
+
+
+
+
+  
 ];
