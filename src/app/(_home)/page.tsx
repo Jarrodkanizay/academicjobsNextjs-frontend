@@ -48,10 +48,10 @@ export default async function myPage() {
       <div className="flex mx-auto gap-6">
       <a href="/academic-talent-pool">
           <Image
-            width={185}
-            height={170}
-            src="https://academicjobs.s3.amazonaws.com/img/_misc/talent-pool-logo.png"
-            className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
+            width={100}
+            height={100}
+            src="https://academicjobs.s3.amazonaws.com/img/_misc/aca-talent-pool.png"
+            className=" mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
             alt="AcademicJobs Job Elephant Client Center"
           />
         </a>
