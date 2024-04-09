@@ -151,7 +151,7 @@ export const specialtyJobsData = [
       `Signal Processing`,
       `Electrical Systems`,
     ],
-    image_url: `/placeholders/specialty-jobs/electrical-engineering.jpeg`,
+    image_url: `/specialty-jobs/electrical-engineering.jpeg`,
     alt: `An image capturing the essence of Electrical Engineering, showing an engineer working on a complex circuit board, symbolizing innovation and precision`,
   },
   {
@@ -223,7 +223,7 @@ export const specialtyJobsData = [
       `Material Characterization`,
       `Sustainable Materials`,
     ],
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/specialty-jobs/material-engineering.jpeg`,
     alt: `An engaging image showing a materials engineer examining a newly developed material under a microscope, highlighting the innovative and detailed nature of the field`,
   },
   {
@@ -295,7 +295,7 @@ export const specialtyJobsData = [
       `Electronic Devices`,
       `Technology Innovation`,
     ],
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/specialty-jobs/engineering-and-electronics.jpeg`,
     alt: `An image capturing the essence of Electronics, showcasing an engineer working on an intricate electronic device, symbolizing the meticulous and innovative nature of the field`,
   },
   {
@@ -367,7 +367,7 @@ export const specialtyJobsData = [
       `Technological Innovation`,
       `Interdisciplinary Research`,
     ],
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/specialty-jobs/engineering-physics.jpeg`,
     alt: `An image illustrating the intersection of physics and engineering, showcasing a professional working on advanced computational models or experimental setups in a high-tech laboratory`,
   },
   {
@@ -439,7 +439,7 @@ export const specialtyJobsData = [
       `Materials Science`,
       `Product Design`,
     ],
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/specialty-jobs/mechanical-engineering.jpeg`,
     alt: `An inspiring image showing a mechanical engineer working on an innovative project, capturing the essence of creativity and precision in the field`,
   },
   {
@@ -511,7 +511,7 @@ export const specialtyJobsData = [
       `Material Development`,
       `Environmental Sustainability`,
     ],
-    image_url: `/placeholders/placeholder-image.jpg`,
+    image_url: `/specialty-jobs/chemical-engineering.jpeg`,
     alt: `An image showcasing a chemical engineer at work in a lab, surrounded by advanced equipment, highlighting the blend of science and technology in the field`,
   },
   {
