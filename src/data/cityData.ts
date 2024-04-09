@@ -2,7 +2,7 @@ export const cityData = [
   {
     title: 'Boston, USA: A Hub of Academic Excellence and Nobel Achievements',
     h1: 'Boston: Unveiling Opportunities in Education and Research',
-    slug: 'boston-academic-excellence-nobel-achievements',
+    slug: 'boston-academic-excellence-nobel-achievements', 
     city: 'Boston',
     region: 'Massachusetts',
     country: 'United States (USA)',
