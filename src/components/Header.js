@@ -241,7 +241,7 @@ export default function Header() {
             />
           </div>
 
-          <div className="mt-8 md:mt-0 justify-center ml-4 hidden md:block">
+          <div className="mt-8 md:mt-0 justify-center ml-4 hidden lg:block">
             <SigninButton />
           </div>
         </nav>
