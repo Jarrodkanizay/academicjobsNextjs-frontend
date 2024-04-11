@@ -31,7 +31,7 @@ export default function myPage() {
                   <h1 className="text-3xl font-bold text-aj">
                     Join the Global No. 1 Academic Job Board & Community
                   </h1>
-                  <h4 className="">
+                  <h4 className="mb-0">
                     Academic Jobs is the Premier Destination for Academic and
                     University staff Recruitment
                   </h4>
@@ -55,7 +55,7 @@ export default function myPage() {
           </div>
         </section>
         {/* Main Content */}
-        <section className="container mx-auto px-4 mt-12">
+        <section className="container mx-auto px-4">
           <PricingTable2 />
 
           <h2 className="text-left mb-4 md:px-10 text-xl font-bold">
@@ -245,10 +245,10 @@ export default function myPage() {
         </section>
 
         {/* Breakout Section */}
-        <div className="bg-sky-100 mb-8 mt-16 py-8 px-4">
+        <div className="bg-slate-200 mb-8 mt-16 py-8 px-4">
           <div className="container mx-auto">
-            <h2 className="text-3xl text-center font-bold mb-8 text-sky-600">
-              #1 Job Board for for ALL University&nbsp;Positions
+            <h2 className="text-3xl text-center font-bold mb-8 text-aj">
+              #1 Job Board for ALL University&nbsp;Positions
             </h2>
             {/* <div className="text-col-2"> */}
             <p className="mb-4 text-center max-w-[500px] mx-auto">

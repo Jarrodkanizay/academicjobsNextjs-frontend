@@ -334,7 +334,7 @@ export default function Page() {
                 find the perfect fit for your expertise.
               </li>
               <li className="mb-2">
-                <span className="font-bold">Stay Ahead of the Curve::</span> Set
+                <span className="font-bold">Stay Ahead of the Curve:</span> Set
                 up customized alerts to stay informed about the latest openings
                 in your field, empowering you to stay ahead of the competition.
               </li>

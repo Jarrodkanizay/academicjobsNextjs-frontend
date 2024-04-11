@@ -114,7 +114,7 @@ export default function myPage() {
    
         {/* Breakout Section */}
 
-        <div className="bg-sky-100 mb-8 mt-16 py-8 px-4 full-width"><div className="container mx-auto"><h2 className="text-3xl text-center font-bold mb-8 text-sky-600">#1 Job Board for for ALL University&nbsp;Positions</h2><p className="mb-4 text-center max-w-[500px] mx-auto">Academic Jobs doesn't just find academics, we specialize in finding the best in academia for Industry positions.</p></div></div>
+        <div className="bg-sky-100 mb-8 mt-16 py-8 px-4 full-width"><div className="container mx-auto"><h2 className="text-3xl text-center font-bold mb-8 text-sky-600">#1 Job Board for ALL University&nbsp;Positions</h2><p className="mb-4 text-center max-w-[500px] mx-auto">Academic Jobs doesn't just find academics, we specialize in finding the best in academia for Industry positions.</p></div></div>
 
         <section className="container mx-auto px-4 mt-12">
           {/* Gain Real-World Experience in Academic Settings Card */}
