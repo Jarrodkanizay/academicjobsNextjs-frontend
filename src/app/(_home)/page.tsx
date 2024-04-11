@@ -596,26 +596,27 @@ export default async function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
-                    href="https://www.academicjobs.com/jobs/professor-in-artificial-intelligence/90020"
+                    href="/jobs/vice-president-for-mission-ministry/105455"
                     className="text-blue-500 font-bold"
                   >
-                    Professor in Artificial Intelligence
+                    
+Vice President for Mission & Ministry
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
                     <Link href="">
-                      Queensland University of Technology (QUT)
+                    Santa Clara University
                     </Link>
                   </li>
                   <li>
-                    <Link href="">Brisbane QLD, Australia</Link>
+                    <Link href="">Santa Clara, CA 95053, USA</Link>
                   </li>
                   <li>
-                    <Link href="">Apr 1, 2024</Link>
+                    <Link href="">May 3, 2024</Link>
                   </li>
                   <Link
-                    href="/jobs/professor-in-artificial-intelligence/90020"
+                    href="https://apptrkr.com/get_redirect.php?id=5152108"
                     className="btn btn-sm btn-aj mt-4"
                   >
                     More Info
@@ -623,7 +624,7 @@ export default async function myPage() {
                 </ul>
               </ul>
             </div>
-            <div className="column">
+            {/* <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
@@ -653,7 +654,7 @@ export default async function myPage() {
                   </Link>
                 </ul>
               </ul>
-            </div>
+            </div> */}
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
@@ -714,8 +715,8 @@ export default async function myPage() {
                 </ul>
               </ul>
             </div>
-          </div>
-          <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
+          {/* </div> */}
+          {/* <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
@@ -831,8 +832,8 @@ export default async function myPage() {
                   </Link>
                 </ul>
               </ul>
-            </div>
-            <div className="column">
+            </div> */}
+            {/* <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
@@ -860,7 +861,7 @@ export default async function myPage() {
                   </Link>
                 </ul>
               </ul>
-            </div>
+            </div> */}
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
