@@ -10,9 +10,7 @@ export default function JobSearchBox() {
  
 const { region } = useStore();
 
-          
-
-  const size = 180;
+  const size = 120
   const items = [
     {
       src: '/home/academic-staff-positions.png',
@@ -44,18 +42,6 @@ const { region } = useStore();
       label: 'PhD Jobs',
       link: `${region}/phd`,
     },
-    {
-      src: '/home/academic-graduate-positions.png',
-      alt: 'Academic PhD Positions',
-      label: 'Student',
-      link: `${region}/student-jobs`,
-    },
-    {
-      src: '/home/academic-lecturer-positions.png',
-      alt: 'Academic Graduate Positions',
-      label: 'Industry',
-      link: `${region}/Industry`,
-    },
   ];
   return (
     <div className="hero-bg md:bg-center">
@@ -74,7 +60,7 @@ const { region } = useStore();
           </div>
         </h2>
       </section>
-      <ul className="hero-icons lg:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
+      <ul className="hero-icons lg:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-[-2rem] mt-[-11rem] hidden ">
         {items.map((item, index) => (
           <li key={index}>
             <Link className="grayscale hover:grayscale-0" href={item.link}>
@@ -86,7 +72,7 @@ const { region } = useStore();
           </li>
         ))}
       </ul>
-      <ul className="hero-icons flex flex-wrap gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-8rem] lg:hidden ">
+      <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-8rem] lg:hidden ">
         <li>
           <a className="grayscale hover:grayscale-0" href="/executive">
             <Image
