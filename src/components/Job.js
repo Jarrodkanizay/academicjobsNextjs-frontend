@@ -87,7 +87,7 @@ const Job = ({ job }) => {
             </div>
           </div>
           {new Date(expiration_date) < new Date() && expiration_date && (
-            <div className="bg-opacity-50 bg-red-500 text-white  text-sm px-1 py-1 rounded-full absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 rotate-[35deg] skew-y-0">
+            <div className="bg-opacity-50 bg-red-500 text-white  text-sm px-1 py-1 rounded-full absolute top-[2%] left-[66%] transform -translate-y-1/2 skew-y-0">
               Job Fulfilled By AcademicJobs.com
             </div>
           )}
