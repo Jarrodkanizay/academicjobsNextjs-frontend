@@ -64,7 +64,7 @@ const { region } = useStore();
         {items.map((item, index) => (
           <li key={index}>
             <Link className="grayscale hover:grayscale-0" href={item.link}>
-              <Image src={item.src} width={size} height={size} alt={item.alt} />
+              <Image className='rounded-full' src={item.src} width={size} height={size} alt={item.alt} />
             </Link>
             <Link className="mb-4" href={item.link}>
               <p>{item.label}</p>
