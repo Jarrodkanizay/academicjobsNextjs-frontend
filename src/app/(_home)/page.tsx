@@ -684,37 +684,7 @@ Vice President for Mission & Ministry
                 </ul>
               </ul>
             </div>
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/indigenous-research-officer/99513"
-                    className="text-blue-500 font-bold"
-                  >
-                    Coast Community College District
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">
-                      Queensland University of Technology (QUT)
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="">Costa Mesa, CA, USA</Link>
-                  </li>
-                  <li>
-                    <Link href="">Apr 12, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://apptrkr.com/get_redirect.php?id=4929143"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
+            
           {/* </div> */}
           {/* <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
             <div className="column">
@@ -932,7 +902,7 @@ Vice President for Mission & Ministry
                 </li>
                 <ul className="innerUL">
                   <li>
-                    <Link href="">University of New South Wales (UNSW)</Link>
+                    <Link href="">University of Texas Permian Basin</Link>
                   </li>
                   <li>
                     <Link href="">Odessa, TX 79762, USA</Link>
