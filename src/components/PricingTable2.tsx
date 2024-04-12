@@ -60,7 +60,7 @@ invoice for $${formatNumberWithCommas(price)}.
 
 
   return (
-    <div className="max-w-6xl mx-auto pt-4 pb-10 px-8">
+    <div className="max-w-6xl mx-auto pt-4 px-8">
       {/* <div className="max-w-md mx-auto mb-14 text-center">
         <h1 className="text-4xl text-slate-600 font-semibold  lg:text-5xl">
           Find Your <span className="text-aj">Best</span>
@@ -78,7 +78,7 @@ invoice for $${formatNumberWithCommas(price)}.
       >
         {/* Pricing Card 1 */}
         <div className="w-full flex-1 mt-8 mb-8 p-8 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:rounded-r-none">
-          <div className="mb-7 pb-7 flex items-center border-b border-gray-300">
+          <div className="mb-7 pb-7 flex items-center border-b border-gray-600">
             <Image  width="150"
             height="150"
             alt=""
@@ -147,7 +147,7 @@ invoice for $${formatNumberWithCommas(price)}.
 
         {/* Pricing Card 2 */}
         <div className="w-full flex-1 mt-8 mb-8 p-8 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:rounded">
-          <div className="mb-8 pb-8 flex items-center border-b border-gray-600">
+          <div className="mb-7 pb-7 flex items-center border-b border-gray-600">
             <Image  width="150"
             height="150"
             alt=""
@@ -169,8 +169,8 @@ invoice for $${formatNumberWithCommas(price)}.
               </span>
             </div>
           </div>
-          <ul className="mb-5 font-medium text-xl">
-            <li className="flex ">
+          <ul className="mb-7 font-medium text-gray-500">
+            <li className="flex text-lg mb-2">
               <Image  width="20"
             height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
@@ -178,7 +178,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 30 day<span className="text-black"> job listings</span>
               </span>
             </li>
-            <li className="flex ">
+            <li className="flex text-lg mb-2">
               <Image  width="20"
             height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
@@ -187,7 +187,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 <span className="text-black"> anytime</span>
               </span>
             </li>
-            <li className="flex ">
+            <li className="flex text-lg mb-2">
               <Image  width="20"
             height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
@@ -195,12 +195,12 @@ invoice for $${formatNumberWithCommas(price)}.
                 Job credits<span className="text-black"> do not expire</span>
               </span>
             </li>
-            <li className="flex">
+            <li className="flex text-lg mb-2">
               <Image  width="20"
             height="20"
             alt="" src="https://res.cloudinary.com/williamsondesign/check-grey.svg" />
               <span className="ml-3">
-                Save<span className="text-black"> Save $315</span>
+                <span className="text-black"> Save $315</span>
               </span>
             </li>
           </ul>
