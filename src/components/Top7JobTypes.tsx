@@ -51,7 +51,7 @@ const { region } = useStore();
           <span className="md:hidden block">
             <br />
           </span>
-          <div className="slidingVertical ">
+          <div className="slidingVertical">
             <span>Opportunity</span>
             <span>Connections</span>
             <span>Happiness</span>
