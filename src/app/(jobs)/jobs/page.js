@@ -202,7 +202,7 @@ export default function Page() {
               </div>
             )
           }
-          <div className="md:flex gap-4 flex-wrap hidden ">
+          <div className="md:flex gap-4 flex-wrap hidden p-6 mb-[-55px]">
             {Object.entries(filterTypes).map(
               (
                 [filterType, showYN],

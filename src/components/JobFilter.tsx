@@ -47,7 +47,7 @@ export default function JobFilter({ dataQty = '> 1' }: JobFilterProps) {
     <>
       {logoMode ? (
         <>
-        <div className="mt-12 rounded-3xl  border-8 mb-12 hidden lg:block">
+        <div className="mt-12 rounded-3xl  border-8 mb-12 hidden xl:block">
           <Image
                   src="/about-us/global-academic.png"
                   alt="global"
@@ -62,7 +62,7 @@ export default function JobFilter({ dataQty = '> 1' }: JobFilterProps) {
                     Join Now
                   </Link>
 </div>
-        <div className=" mt-4 hidden lg:block">
+        <div className=" mt-4 hidden xl:block">
           {logos.map((logo, index) => (
             <div key={index} className={`${index > 0 ? 'mt-16' : ''}`}>
               <Link href={logo.link}>

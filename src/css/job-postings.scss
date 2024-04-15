@@ -1,7 +1,10 @@
 :root {
-  --margin-x: 16px; /* if you change this you must change the next two lines */
-  --jobs-post-container-max-width: 1400px; /* if you change this you must change; @media (max-width: 1432px) { */
-  --jobs-filter-container-max-width: 1024px; /* if you change this you must change; @media (max-width: 1056px) { */
+  --margin-x: 16px;
+  /* if you change this you must change the next two lines */
+  --jobs-post-container-max-width: 1400px;
+  /* if you change this you must change; @media (max-width: 1432px) { */
+  --jobs-filter-container-max-width: 1024px;
+  /* if you change this you must change; @media (max-width: 1056px) { */
   --mobile-breakpoint: 1024px;
 
   --listing-panel-height: 3500px;
@@ -50,6 +53,7 @@ html {
       margin: 0;
       color: var(--color-gray-blue);
     }
+
     .job_post_header_panel .location {
       display: flex;
       align-items: center;
@@ -57,6 +61,7 @@ html {
       gap: 4px;
       margin: 0;
     }
+
     .job_post_header_panel .map_marker_icon {
       margin-left: -6px;
     }
@@ -67,16 +72,19 @@ html {
       grid-area: applications_close_panel;
       background-color: rgb(234, 237, 239);
     }
+
     .applications_close_panel h6 {
       font-size: 16px;
       margin: 0;
     }
+
     .post_panel {
       grid-area: post_panel;
     }
 
     .post_panel .post_content .post,
     .post_panel {
+
       h1,
       h2,
       h3,
@@ -85,6 +93,7 @@ html {
       h6 {
         color: rgb(1, 43, 106);
       }
+
       h3,
       h4,
       h5,
@@ -100,6 +109,7 @@ html {
       h6:first-child {
         margin-top: 0;
       }
+
       h1,
       h2,
       h3,
@@ -226,6 +236,7 @@ html {
 
     .filters_panel {
       grid-area: filters_panel;
+
       .filters ul {
         list-style-type: none;
         padding: 0;
@@ -245,25 +256,31 @@ html {
       *:first-child {
         margin-top: 0 !important;
       }
+
       p {
         margin-top: 20px !important;
       }
+
       ul {
         list-style-type: disc;
         margin-left: 20px;
       }
+
       ol {
         list-style-type: decimal;
         margin-left: 20px;
       }
+
       ul li,
       ol li {
         margin-bottom: 10px;
       }
+
       a {
         color: var(--color-primary);
         text-decoration: underline;
       }
+
       a:hover {
         color: var(--color-primary-hover);
       }
@@ -298,13 +315,16 @@ html {
     }
 
     @media (max-width: 1432px) {
+
       .jobs_grid.job_post_panel_container,
       .jobs_grid.job_post_header_container {
         margin-left: var(--margin-x);
         margin-right: var(--margin-x);
       }
     }
+
     @media (max-width: 1056px) {
+
       .jobs_grid.job_post_search_container,
       .jobs_grid.job_post_header_container {
         margin-left: var(--margin-x);
@@ -334,11 +354,13 @@ html {
           'filters_panel'
           'listings_panel';
       }
+
       .job_post_header_container {
         grid-template-areas:
           'location_panel'
           'applications_close_panel';
       }
     }
+
   }
 }
