@@ -72,7 +72,7 @@ const { region } = useStore();
           </li>
         ))}
       </ul>
-      <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-8rem] lg:hidden ">
+      <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-[-75px] mt-[-8rem] lg:hidden ">
         <li>
           <a className="grayscale hover:grayscale-0" href="/executive">
             <Image
@@ -114,7 +114,7 @@ const { region } = useStore();
               height="180"
               decoding="async"
               data-nimg="1"
-              src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"
+              src="/home/academic-phd-positions.png"
             ></Image>
           </a>
           <a className="mb-4" href="/staff-jobs">
