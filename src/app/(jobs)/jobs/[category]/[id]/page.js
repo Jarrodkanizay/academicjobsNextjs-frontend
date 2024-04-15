@@ -122,7 +122,6 @@ const JobDetailPage = async ({ params, searchParams }) => {
                 </Link> */}
               </div>
 
-
               <div className="flex items-center justify-start md:gap-6 gap-2 max-[395px]:ml-[-17px]">
                 {headlineOnly ? (
                   <Link href="#request-job-post" className="btn btn-aj">
