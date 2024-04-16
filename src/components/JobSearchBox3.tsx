@@ -48,35 +48,35 @@ export default function JobSearchBox({ q, l, forceClass }: MyComponentProps) {
               placeholder="Keywords"
               ref={keyWordRef}
             />
-            <Autocomplete
+            {/* <Autocomplete
               className="input input-bordered join-item w-full md:text-left text-center"
-              // defaultValue="Start typing job location & allow Google to auto-complete"
-              //defaultValue={employer?.location}
+                                      // defaultValue="Start typing job location & allow Google to auto-complete"
+                                      //defaultValue={employer?.location}
               style={{ width: '100%' }}
               ref={locationRef}
               apiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
               onPlaceSelected={(place) => {
                 console.log('Selected Place:', place);
               }}
-              // onPlaceSelected={(selected, a, c) => {
-              //   console.log(selected,a,c);
-              //   setValue("location", selected)
-              // }}
+                                    // onPlaceSelected={(selected, a, c) => {
+                                    //   console.log(selected,a,c);
+                                    //   setValue("location", selected)
+                                    // }}
               options={{
                 types: ['geocode', 'establishment'],
-                //componentRestrictions: { country: "Australia" },
+                                   //componentRestrictions: { country: "Australia" },
               }}
-              //onPlaceSelected={(place) =>
-              //formik.setFieldValue("countryAnother", place.formatted_address)
-              //}
-              //onChange={(e) => setValue('location', e.target.value)}
-            />
-            {/* <input
+                              //onPlaceSelected={(place) =>
+                              //formik.setFieldValue("countryAnother", place.formatted_address)
+                              //}
+                              //onChange={(e) => setValue('location', e.target.value)}
+            /> */}
+             <input
               type="text"
               className="input input-bordered join-item w-full md:text-left text-center"
               placeholder="Location"
               ref={locationRef}
-            /> */}
+            />
             <button
               type="submit"
               className="indicator md:w-fit w-full bg-amber-500 md:bg-0 justify-center items-center animate-pulse"
