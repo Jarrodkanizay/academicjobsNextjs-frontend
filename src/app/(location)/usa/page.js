@@ -53,18 +53,18 @@ export default async function myPage() {
       label: 'PhD Jobs',
       link: '/usa/phd',
     },
-    {
-      src: '/home/academic-graduate-positions.png',
-      alt: 'Academic PhD Positions',
-      label: 'Student',
-      link: '/usa/student',
-    },
-    {
-      src: '/home/academic-lecturer-positions.png',
-      alt: 'Academic Graduate Positions',
-      label: 'Collaborate',
-      link: '/usa/graduate',
-    },
+    // {
+    //   src: '/home/academic-graduate-positions.png',
+    //   alt: 'Academic PhD Positions',
+    //   label: 'Student',
+    //   link: '/usa/student',
+    // },
+    // {
+    //   src: '/home/academic-lecturer-positions.png',
+    //   alt: 'Academic Graduate Positions',
+    //   label: 'Collaborate',
+    //   link: '/usa/graduate',
+    // },
  
  
   ];
@@ -77,19 +77,6 @@ export default async function myPage() {
 
 
   return (
-
-   
-
-
-
-
-
-
- 
-
-
-     
-
 <main className="content-grid">
         <div className="full-width md:h-[400px] h-[229px] gradient-aj">
           <div className="hero-bg-usa md:bg-center">
@@ -128,13 +115,53 @@ export default async function myPage() {
               ))}
             </ul>
 
-            <ul className="hero-icons flex flex-wrap gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] md:hidden ">
-                            <li><a className="grayscale hover:grayscale-0" href="/usa/executive"><Image alt="Academic Executive Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"></Image></a>
-            <a className="mb-4" href="/usa/executive"><p>Executive</p></a></li>
-            <li><a className="grayscale hover:grayscale-0" href="/usa/faculty"><Image alt="Academic Faculty Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/usa/faculty"><p>Faculty</p></a></li>
-            <li><a className="grayscale hover:grayscale-0" href="/usa/staff"><Image alt="Academic Staff Positions" loading="lazy" width="180" height="180" decoding="async" data-nimg="1" src="/_next/image?url=%2Fhome%2Facademic-staff-positions.png&amp;w=384&amp;q=75"></Image></a><a className="mb-4" href="/usa/staff"><p>Staff/Admin</p></a></li></ul>
-
-
+            <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-[-75px] mt-[-11rem] lg:hidden ">
+            <li>
+              <a className="grayscale hover:grayscale-0" href="/australia/executive">
+                <Image
+                  alt="Academic Executive Positions"
+                  loading="lazy"
+                  width="180"
+                  height="180"
+                  decoding="async"
+                  data-nimg="1"
+                  src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75">
+                </Image></a>
+              <a className="mb-4" href="/australia/executive">
+                <p>Executive</p>
+              </a></li>
+            <li>
+              <a className="grayscale hover:grayscale-0" href="/australia/faculty">
+                <Image
+                  alt="Academic Faculty Positions"
+                  loading="lazy"
+                  width="180"
+                  height="180"
+                  decoding="async"
+                  data-nimg="1"
+                  src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75">
+                </Image></a>
+              <a className="mb-4" href="/australia/faculty">
+                <p>Faculty</p>
+              </a>
+            </li>
+            <li>
+              <a className="grayscale hover:grayscale-0" href="/australia/admin">
+                <Image
+                  alt="Academic Staff Positions"
+                  loading="lazy"
+                  width="180"
+                  height="180"
+                  decoding="async"
+                  data-nimg="1"
+                  src="/home/academic-faculty-positions.png">
+                </Image>
+              </a>
+              <a className="mb-4" href="/australia/admin">
+                <p>Staff/Admin</p>
+              </a>
+            </li>
+          </ul>
           </div>
         </div>
 

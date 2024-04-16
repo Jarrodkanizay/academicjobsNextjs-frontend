@@ -195,7 +195,7 @@ export default function Header() {
           </div> */}
           {isNavOpen && (
             <>
-              <div className="mt-6 md:mt-0 justify-center ml-4">
+              <div className="mt-6 md:mt-0 justify-center ml-4 hidden">
                 <SigninButton />
               </div>
 
@@ -241,7 +241,7 @@ export default function Header() {
             />
           </div>
 
-          <div className="mt-8 md:mt-0 justify-center ml-4 hidden lg:block">
+          <div className="mt-8 md:mt-0 justify-center ml-4 hidden">
             <SigninButton />
           </div>
         </nav>

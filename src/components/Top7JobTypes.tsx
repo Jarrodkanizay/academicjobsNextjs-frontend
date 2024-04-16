@@ -31,7 +31,7 @@ const { region } = useStore();
       link: `${region}/hr-jobs`,
     },
     {
-      src: '/home/academic-lecturer-positions.png',
+      src: '/home/academic-faculty-positions.png',
       alt: 'Academic Faculty Positions',
       label: 'Faculty',
       link: `${region}/faculty`,
