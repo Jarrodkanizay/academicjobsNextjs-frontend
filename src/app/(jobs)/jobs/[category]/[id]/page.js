@@ -116,7 +116,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
             <div className="w-3/4">
               <div className="flex">        
               <h1 className="flex-1 text-2xl font-bold mb-2 text-black">{title}</h1>      
-                <div className="applications_close_panel w-[13rem] h-[4rem] mt-3 hidden sm:block">
+                <div className="applications_close_panel w-[13rem] h-[4rem] mt-3 hidden lg:block">
                 <h6>Applications Close</h6>
                 <div className="text-sm">
                   {expiration_date ? (
@@ -192,7 +192,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
         </div>
       </div>
       {/* job post header: organization, location closing date of job post  */}
-      <div className="sm:hidden block flex justify-center">
+      <div className="lg:hidden block flex justify-center">
       <section className="mt-4 gap-2 w-[20rem] h-[4rem]">
         <div className="applications_close_panel">
           <h6>Applications Close</h6>
