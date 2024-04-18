@@ -16,9 +16,9 @@ import FavoriteButton from '@/components/FavoriteButton';
 import { StarRank } from '@/components/StarRank';
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/options";
-import { baseURL } from '@/lib/store/Base'; 
+import { baseURL } from '@/lib/store/Base';
 export async function generateMetadata({ params }) {
- 
+
 
   const session = await getServerSession(authOptions);
   const job = await getJob({ id: params.id, userId: session?.user.id });
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
 }
 //{ next: { revalidate: 0 } }
 async function getJob(data) {
-  console.log("0324========data",data)
+  console.log("0324========data", data)
   const response = await fetch(
     `${baseURL}/getJobById1`,
     {
@@ -92,34 +92,67 @@ const JobDetailPage = async ({ params, searchParams }) => {
     <>
       {/* {console.log('Top 20 ' + { topTwentyUnis })} */}
       <div className="bg-white relative content-grid mx-auto">
-        <div className="bg-slate-200 full-width">
+        <div className="border-b  full-width">
           <div className="md:flex items-center p-4 gap-8">
-            <div className="md:w-1/4 md:pr-4 md:p-8">
+            <div className="flex justify-center">
               <Link
                 href={`/employers/${company_name
                   ?.replace(/\W+/g, '-')
                   .toLowerCase()}/${employer_id}/`}
               >
                 <div
-                  className={`w-full rounded-lg p-4 ${bgColor}`}
+                  className={`rounded-lg p-4 ${bgColor}`}
                 // style={{ backgroundColor: `${bgColor}` }}
                 >
                   <Image
-                    className="w-full "
+                    className="w-full"
                     src={`https://academicjobs.s3.amazonaws.com/img/university-logo/${logo || 'favicon.jpg'}`}
                     alt={company_name}
-                    width={300}
+                    width={200}
                     height={200}
                   />
                 </div>
               </Link>
             </div>
             <div className="w-3/4">
-              <h1 className="text-2xl font-bold mb-2 text-black">{title}</h1>
-              <div className="mb-4">
-                {/* <Link href={`/employers/id/${id}`}>
+              <div className="flex">        
+              <h1 className="flex-1 text-2xl font-bold mb-2 text-black">{title}</h1>      
+                <div className="applications_close_panel w-[13rem] h-[4rem] mt-3 hidden sm:block">
+                <h6>Applications Close</h6>
+                <div className="text-sm">
+                  {expiration_date ? (
+                    <time>
+                      {new Date(expiration_date).toLocaleDateString('en-US', {
+                        month: 'short',
+                        day: 'numeric',
+                        year: 'numeric',
+                      })}
+                    </time>
+                  ) : (
+                    <p className="text-center">TBA</p>
+                  )}
+                </div>
+              </div></div>
+
+              <div className="job_post_header_panel text-sm text-gray-600">
+                <h3 className="company_name">{company_name}</h3>
+                <section>
+                  <h4 className="text-gray-700 font-light text-sm m-0">
+                    {/* <Image
+                      src={`/icons/map-marker-icon.svg`}
+                      alt="Map Marker Icon"
+                      width={22}
+                      height={22}
+                      className="map_marker_icon"
+                    /> */}
                     {location}
-                </Link> */}
+                  </h4>
+                </section>
+                <section className="ranking flex flex-row pb-6">
+                  <StarRank ranking={ranking} />
+
+                </section>
+
               </div>
 
               <div className="flex items-center justify-start md:gap-6 gap-2 max-[395px]:ml-[-17px]">
@@ -160,23 +193,8 @@ const JobDetailPage = async ({ params, searchParams }) => {
         </div>
       </div>
       {/* job post header: organization, location closing date of job post  */}
-      <section className="jobs_grid job_post_header_container">
-        <div className="job_post_header_panel">
-          <h3 className="company_name">{company_name}</h3>
-          <section className="ranking flex flex-row">
-            <StarRank ranking={ranking} />
-            <h4 className="location pl-8">
-              <Image
-                src={`/icons/map-marker-icon.svg`}
-                alt="Map Marker Icon"
-                width={22}
-                height={22}
-                className="map_marker_icon"
-              />
-              {location}
-            </h4>
-          </section>
-        </div>
+      <div className="sm:hidden block flex justify-center">
+      <section className="mt-4 gap-2 w-[20rem] h-[4rem]">
         <div className="applications_close_panel">
           <h6>Applications Close</h6>
           <div className="text-sm">
@@ -194,6 +212,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
           </div>
         </div>
       </section>
+      </div>
       {/* main body of job post */}
       <section className="jobs_grid job_post_panel_container">
         <article className="post_panel mt-[26px]" data-id={jobId}>
