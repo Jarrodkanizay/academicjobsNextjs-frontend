@@ -113,7 +113,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                 </div>
               </Link>
             </div>
-            <div className="w-3/4">
+            <div className="w-[85%]">
               <div className="flex">        
               <h1 className="flex-1 text-2xl font-bold mb-2 text-black">{title}</h1>      
                 <div className="applications_close_panel w-[13rem] h-[4rem] mt-3 hidden lg:block">
@@ -147,7 +147,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     {location}
                   </h4>
                 </section>
-                <section className="ranking flex flex-row pb-6">
+                <section className="ranking flex flex-row pb-2">
                   <StarRank ranking={ranking} />
 
                 </section>
