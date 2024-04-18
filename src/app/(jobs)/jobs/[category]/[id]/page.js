@@ -105,11 +105,10 @@ const JobDetailPage = async ({ params, searchParams }) => {
                 // style={{ backgroundColor: `${bgColor}` }}
                 >
                   <Image
-                    className="w-full"
                     src={`https://academicjobs.s3.amazonaws.com/img/university-logo/${logo || 'favicon.jpg'}`}
                     alt={company_name}
-                    width={200}
-                    height={200}
+                    width={170}
+                    height={170}
                   />
                 </div>
               </Link>
