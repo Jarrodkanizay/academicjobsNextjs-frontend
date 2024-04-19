@@ -228,20 +228,9 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     className={`flex flex-col ${headlineOnly && !active ? 'block' : 'hidden'
                       }`}
                   >
+                    <span className = "text-gray-700 font-bold text-md m-0 mb-6">Hey there job seeker, we haven't paid for this job posting, but you can get our job sent to you from Academic Jobs.</span>
+
                     <div className="flex justify-center items-center flex-wrap">
-                      <Image
-                        src="/academic-jobs-heart.svg"
-                        width={90}
-                        height={90}
-                        alt="Academic Jobs Heart"
-                      />
-                      <Image
-                        src="/love-messages/i-love-this-job.svg"
-                        width={90}
-                        height={90}
-                        alt="Academic Jobs Heart"
-                        className="mr-20"
-                      />
                       <div className="grow">
                         <RequestFullJobForm
                           formName="Request Full Job Post"
@@ -256,7 +245,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                       </div>
                     </div>
                     <details className="mt-[80px]">
-                      <summary class="text-[16px] text-emerald-500 hover:text-sky-500 cursor-pointer px-4 py-2 rounded-md text-center">
+                      <summary class="text-[16px] text-emerald-500 hover:text-sky-500 cursor-pointer px-4 pb-2 rounded-md text-center">
                         <a href="#activate-quick-post ">
                           Recruiter Information Only
                         </a>

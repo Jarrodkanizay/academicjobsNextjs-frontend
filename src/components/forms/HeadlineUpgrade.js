@@ -76,11 +76,9 @@ const PostJobForm = ({
   } else {
     content = (
       <>
-        <p className="text-xl font-bold text-gray-500">
-          Great, let’s get this job fully seen by our amazing audience.
-          <br />
-          This is currently a ‘Headline Job’ only, but in 60 seconds, it will be
-          a ‘Priority Listing’.
+        <p className="text-gray-700 font-bold text-md">
+          Hey Recruiters, let's get your FULL JOB live now, beacause it's already getting loads of views, hits and clicks.
+
         </p>
         {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16"> */}
         <div>

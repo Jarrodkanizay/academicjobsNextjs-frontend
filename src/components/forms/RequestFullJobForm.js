@@ -206,21 +206,32 @@ const SubscribeForm = ({
             />
           </>
         )}
-        <InputBlock2
-          ID="email-input"
-          name="01_Email"
-          register={register}
-          errors={errors}
-          tabIndex={6}
-          type="email"
-          field="01_Email"
-          forceClass=""
-          placeholder={placeholder}
-          autoComplete="email"
-          required={true}
-          inputClass={`${rounded}`}
-          colSpan={2}
-        />
+        <div className="flex items-center mt-2">
+          <InputBlock2
+            ID="email-input"
+            name="01_Email"
+            register={register}
+            errors={errors}
+            tabIndex={6}
+            type="email"
+            field="01_Email"
+            forceClass=""
+            placeholder={placeholder}
+            autoComplete="email"
+            required={true}
+            inputClass={`${rounded}`}
+            colSpan={2}
+          />
+          <button
+            type="submit"
+            className={`btn text-white ${formType === 'standard'
+              ? 'bg-aj join-item rounded-r-full'
+              : 'btn-aj ml-2'
+              }`}
+          >
+            {buttonText}
+          </button>
+        </div>
         {formType === 'standard' && (
           <div style={{ display: 'none' }}>
             <InputBlock2
@@ -272,19 +283,20 @@ const SubscribeForm = ({
               hidden={true}
               tabIndex={103}
             />
+            <div className="text-right">
+              <button
+                type="submit"
+                className={`btn text-white ${formType === 'standard'
+                  ? 'bg-aj join-item rounded-r-full'
+                  : 'btn-aj mt-8'
+                  }`}
+              >
+                {buttonText}
+              </button>
+            </div>
           </div>
         )}
-        <div className="text-right">
-          <button
-            type="submit"
-            className={`btn text-white ${formType === 'standard'
-                ? 'bg-aj join-item rounded-r-full'
-                : 'btn-aj mt-8'
-              }`}
-          >
-            {buttonText}
-          </button>
-        </div>
+
       </div>
       {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6"> */}
       {/* </div> */}
