@@ -21,8 +21,8 @@ export default function FavoriteButton({ jobId, favoriteJobYN }) {
   return (
     <img
       src={favoriteJobYN ? "/icons/heart.svg" : "/icons/heart-outline.svg"}
-      width="44"
-      height="44"
+      width="28"
+      height="28"
       alt="Add this Job Post to Favorites"
       onClick={() => {
         console.log(jobId, session.user.id)
@@ -30,6 +30,6 @@ export default function FavoriteButton({ jobId, favoriteJobYN }) {
         mutation.mutate({ jobId, userId: session.user.id, mode });
         router.refresh();
       }}
-    />
+    /> 
   );
 }

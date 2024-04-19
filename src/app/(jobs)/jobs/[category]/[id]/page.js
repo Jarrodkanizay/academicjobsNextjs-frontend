@@ -102,7 +102,6 @@ const JobDetailPage = async ({ params, searchParams }) => {
               >
                 <div
                   className={`rounded-lg p-4 ${bgColor}`}
-                // style={{ backgroundColor: `${bgColor}` }}
                 >
                   <Image
                     src={`https://academicjobs.s3.amazonaws.com/img/university-logo/${logo || 'favicon.jpg'}`}
@@ -114,24 +113,25 @@ const JobDetailPage = async ({ params, searchParams }) => {
               </Link>
             </div>
             <div className="w-[85%]">
-              <div className="flex">        
-              <h1 className="flex-1 text-2xl font-bold mb-2 text-black">{title}</h1>      
+              <div className="flex">
+                <h1 className="flex-1 text-2xl font-bold mb-2 text-black">{title}</h1>
                 <div className="applications_close_panel w-[13rem] h-[4rem] mt-3 hidden lg:block">
-                <h6>Applications Close</h6>
-                <div className="text-sm">
-                  {expiration_date ? (
-                    <time>
-                      {new Date(expiration_date).toLocaleDateString('en-US', {
-                        month: 'short',
-                        day: 'numeric',
-                        year: 'numeric',
-                      })}
-                    </time>
-                  ) : (
-                    <p className="text-center">TBA</p>
-                  )}
+                  <h6>Applications Close</h6>
+                  <div className="text-sm">
+                    {expiration_date ? (
+                      <time>
+                        {new Date(expiration_date).toLocaleDateString('en-US', {
+                          month: 'short',
+                          day: 'numeric',
+                          year: 'numeric',
+                        })}
+                      </time>
+                    ) : (
+                      <p className="text-center">TBA</p>
+                    )}
+                  </div>
                 </div>
-              </div></div>
+              </div>
 
               <div className="job_post_header_panel text-sm text-gray-600">
                 <h3 className="company_name">{company_name}</h3>
@@ -154,7 +154,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
 
               </div>
 
-              <div className="flex items-center justify-start md:gap-6 gap-2 max-[395px]:ml-[-17px]">
+              <div className="flex items-center justify-start md:gap-[0.5rem] gap-2 max-[395px]:ml-[-17px]">
                 {headlineOnly ? (
                   <Link href="#request-job-post" className="btn btn-aj">
                     Apply Now
@@ -171,7 +171,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                   className="icon_share items-center min-w-[32px]"
                   href={`mailto:?bcc=${bccEmail}&subject=${subject}&body=${bodyEmail}`}
                 >
-                  <BsFillShareFill size={32} color="#2867B2" />
+                  <BsFillShareFill size={20} color="#2867B2" />
                 </a>
                 <FavoriteButton jobId={params.id} favoriteJobYN={favoriteJobYN} />
                 {/* <img
@@ -183,7 +183,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     alert(params.id)
                   }}
                 /> */}
-                <a href="/academic-talent-pool" className="btn btn-accent rounded-full">
+                <a href="/academic-talent-pool" className="bg-[#d9d9d9] text-gray-700 rounded-full btn">
                   Join Talent Pool
                 </a>
               </div>
@@ -193,24 +193,24 @@ const JobDetailPage = async ({ params, searchParams }) => {
       </div>
       {/* job post header: organization, location closing date of job post  */}
       <div className="lg:hidden block flex justify-center">
-      <section className="mt-4 gap-2 w-[20rem] h-[4rem]">
-        <div className="applications_close_panel">
-          <h6>Applications Close</h6>
-          <div className="text-sm">
-            {expiration_date ? (
-              <time>
-                {new Date(expiration_date).toLocaleDateString('en-US', {
-                  month: 'short',
-                  day: 'numeric',
-                  year: 'numeric',
-                })}
-              </time>
-            ) : (
-              <p className="text-center">TBA</p>
-            )}
+        <section className="mt-4 gap-2 w-[20rem] h-[4rem]">
+          <div className="applications_close_panel">
+            <h6>Applications Close</h6>
+            <div className="text-sm">
+              {expiration_date ? (
+                <time>
+                  {new Date(expiration_date).toLocaleDateString('en-US', {
+                    month: 'short',
+                    day: 'numeric',
+                    year: 'numeric',
+                  })}
+                </time>
+              ) : (
+                <p className="text-center">TBA</p>
+              )}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
       </div>
       {/* main body of job post */}
       <section className="jobs_grid job_post_panel_container">
