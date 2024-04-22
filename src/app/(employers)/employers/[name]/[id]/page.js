@@ -139,7 +139,7 @@ const Employer = async ({ params }) => {
                 {website && (
                   <div className="flex items-center justify-start gap-2.5">
                     <AiOutlineGlobal size="24" color="#1c2dc7" />
-                    <a href={website} className="">
+                    <a href={website} className="" target="_blank">
                       {website}
                     </a>
                   </div>
