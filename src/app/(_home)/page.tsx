@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
 export default async function myPage() {
- 
- 
+
+
   const contentRegion = await getContentRegion();
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
   // let showJobElephant = true;
@@ -37,7 +37,7 @@ export default async function myPage() {
         </div>
       </div> */}
       <div className="full-width md:h-[400px] h-[229px] gradient-aj">
-        <Top7JobTypes/>
+        <Top7JobTypes />
       </div>
       <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
         <JobSearchBoxHome />
@@ -46,7 +46,7 @@ export default async function myPage() {
         <JobCategoryAndLocationLinks />
       </div>
       <div className="flex mx-auto gap-6">
-      <a href="/academic-talent-pool">
+        <a href="/academic-talent-pool">
           <Image
             width={100}
             height={100}
@@ -599,14 +599,14 @@ export default async function myPage() {
                     href="/jobs/vice-president-for-mission-ministry/105455"
                     className="text-blue-500 font-bold"
                   >
-                    
-Vice President for Mission & Ministry
+
+                    Vice President for Mission & Ministry
                   </Link>
                 </li>
                 <ul className="innerUL">
                   <li>
                     <Link href="">
-                    Santa Clara University
+                      Santa Clara University
                     </Link>
                   </li>
                   <li>
@@ -684,9 +684,9 @@ Vice President for Mission & Ministry
                 </ul>
               </ul>
             </div>
-            
-          {/* </div> */}
-          {/* <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
+
+            {/* </div> */}
+            {/* <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
@@ -832,35 +832,7 @@ Vice President for Mission & Ministry
                 </ul>
               </ul>
             </div> */}
-            <div className="column">
-              <ul className="">
-                <li className="mb-1 mt-4 hover:underline">
-                  <Link
-                    href="/jobs/indigenous-research-officer/102709"
-                    className="text-blue-500 font-bold"
-                  >
-                    Research Assistant Professor - 525877
-                  </Link>
-                </li>
-                <ul className="innerUL">
-                  <li>
-                    <Link href="">University of Hong Kong</Link>
-                  </li>
-                  <li>
-                    <Link href="">Pok Fu Lam, Hong Kong</Link>
-                  </li>
-                  <li>
-                    <Link href="">Apr 18, 2024</Link>
-                  </li>
-                  <Link
-                    href="https://jobs.hku.hk/en/job/525877/research-assistant-professor"
-                    className="btn btn-sm btn-aj mt-4"
-                  >
-                    More Info
-                  </Link>
-                </ul>
-              </ul>
-            </div>
+
             <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
@@ -912,6 +884,64 @@ Vice President for Mission & Ministry
                   </li>
                   <Link
                     href="https://apptrkr.com/get_redirect.php?id=5119737"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/company_name/108701"
+                    className="text-blue-500 font-bold"
+                  >
+                    Dean - College of Arts & Humanities
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of Texas Permian Basin</Link>
+                  </li>
+                  <li>
+                    <Link href="">Odessa, TX, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 22, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=5176084"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/company_name/108717"
+                    className="text-blue-500 font-bold"
+                  >
+                    Vice President of Academic Affairs
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">Nicolet College</Link>
+                  </li>
+                  <li>
+                    <Link href="">5364 College Dr, Rhinelander, WI 54501, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 22, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/5145101"
                     className="btn btn-sm btn-aj mt-4"
                   >
                     More Info
