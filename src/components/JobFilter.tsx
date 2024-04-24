@@ -47,37 +47,37 @@ export default function JobFilter({ dataQty = '> 1' }: JobFilterProps) {
     <>
       {logoMode ? (
         <>
-        <div className="mt-12 rounded-3xl  border-8 mb-12 hidden xl:block">
-          <Image
-                  src="/about-us/global-academic.png"
-                  alt="global"
-                  width={400}
-                  height={450}
-                  className="rounded-2xl mb-[-4rem]"
-                />
-                 <Link
-                    href="https://www.academicjobs.com/academic-talent-pool"
-                    className="btn btn-sm btn-aj m-4 "
-                  >
-                    Join Now
-                  </Link>
-</div>
-        <div className=" mt-4 hidden xl:block">
-          {logos.map((logo, index) => (
-            <div key={index} className={`${index > 0 ? 'mt-16' : ''}`}>
-              <Link href={logo.link}>
-                <Image
-                  src={logo.url}
-                  alt={logo.intro}
-                  width={300}
-                  height={250}
-                />
-                <p className="text-[12px]">{logo.intro}</p>
-              </Link>
-            </div>
-          ))}
-        </div>
-       </>
+          <div className="mt-12 rounded-3xl  border-8 mb-12 hidden xl:block">
+            <Image
+              src="/about-us/global-academic.png"
+              alt="global"
+              width={400}
+              height={450}
+              className="rounded-2xl mb-[-4rem]"
+            />
+            <Link
+              href="https://www.academicjobs.com/academic-talent-pool"
+              className="btn btn-sm btn-aj m-4 "
+            >
+              Join Now
+            </Link>
+          </div>
+          <div className=" mt-4 hidden xl:block">
+            {logos.map((logo, index) => (
+              <div key={index} className={`${index > 0 ? 'mt-16' : ''}`}>
+                <Link href={logo.link}>
+                  <Image
+                    src={logo.url}
+                    alt={logo.intro}
+                    width={300}
+                    height={250}
+                  />
+                  <p className="text-[12px]">{logo.intro}</p>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </>
       ) : (
         <>
           <div className="filters mt-4 bg-slate-100 py-4 pb-8  px-8 rounded m-0 shadow-xl border border-t-4 h-fit hidden md:block justify-center items-center ml-4">

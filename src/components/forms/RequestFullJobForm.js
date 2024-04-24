@@ -224,7 +224,7 @@ const SubscribeForm = ({
           />
           <button
             type="submit"
-            className={`btn text-white ${formType === 'standard'
+            className={`btn hidden md:block text-white ${formType === 'standard'
               ? 'bg-aj join-item rounded-r-full'
               : 'btn-aj ml-2'
               }`}
@@ -232,6 +232,15 @@ const SubscribeForm = ({
             {buttonText}
           </button>
         </div>
+        <button
+          type="submit"
+          className={`btn w-full md:hidden blockw-full text-white ${formType === 'standard'
+            ? 'bg-aj join-item rounded-r-full  '
+            : 'btn-aj mt-6'
+            }`}
+        >
+          {buttonText}
+        </button>
         {formType === 'standard' && (
           <div style={{ display: 'none' }}>
             <InputBlock2
