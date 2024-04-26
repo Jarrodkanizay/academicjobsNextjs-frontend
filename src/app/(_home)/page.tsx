@@ -495,7 +495,464 @@ export default async function myPage() {
       <h2 className="underline-full">Top Academic Jobs Today</h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">
-            <TopJobs />
+                    {/* <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7 ">
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/postdoctoral-position-in-multiplexed-single-cell-rnaseq-based-antibody-discovery/81986"
+                    className="text-blue-500 font-bold"
+                  >
+                    Postdoctoral position in multiplexed single-cell
+                    RNAseq-based antibody discovery
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">École Polytechnique</Link>
+                  </li>
+                  <li>
+                    <Link href="">Lausanne, Switzerland</Link>
+                  </li>
+                  <li>
+                    <Link href="">Feb 5, 2024</Link>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/assistant-professor-associate-professor-of-economics/81980/"
+                    className="text-blue-500 font-bold"
+                  >
+                    Assistant Professor/Associate Professor of Economics
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of North Carolina Wilmington</Link>
+                  </li>
+                  <li>
+                    <Link href="">Wilmington, North Carolina, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Feb 5, 2024</Link>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/tenured-professor-epidemiology/81981"
+                    className="text-blue-500 font-bold"
+                  >
+                    Tenured Professor - Epidemiology
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">
+                      Rutgers, The State University of New Jersey
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="">New Brunswick, New Jersey, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Feb 5, 2024</Link>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="https://www.academicjobs.com/jobs/immunogenetics-and-histocompatibility-laboratory-director-health-sciences-open-rank-clinical-professor/73108/"
+                    className="text-blue-500 font-bold"
+                  >
+                    Immunogenetics and Histocompatibility Laboratory
+                    Director/Health Sciences Open Rank Clinical Professor
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of California, Los Angeles</Link>
+                  </li>
+                  <li>
+                    <Link href="">Los Angeles, CA, USA</Link>
+                  </li>
+                  <li>
+                    <Link href=""> Dec 3, 2024</Link>
+                  </li>
+                </ul>
+              </ul>
+            </div>
+          </div> */}
+          <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/vice-president-for-mission-ministry/105455"
+                    className="text-blue-500 font-bold"
+                  >
+
+                    Vice President for Mission & Ministry
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">
+                      Santa Clara University
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="">Santa Clara, CA 95053, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">May 3, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=5152108"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+            {/* <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/postdoctoral-fellow-in-comparative-radiobiology-translational-radiopharmaceutical-development-and-boron-neutron-capture-therapy-bnct-/82181"
+                    className="text-blue-500 font-bold"
+                  >
+                    Postdoctoral Fellow in Comparative Radiobiology,
+                    Translational Radiopharmaceutical Development, and Boron
+                    Neutron Capture Therapy (BNCT)
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of Missouri System</Link>
+                  </li>
+                  <li>
+                    <Link href="">Columbia, Missouri, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Mar 11, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4922759"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div> */}
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/assistant-to-associate-dean-of-undergrad-programs/82206"
+                    className="text-blue-500 font-bold"
+                  >
+                    Assistant to Associate Dean of Undergrad Programs
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">Oregon State University</Link>
+                  </li>
+                  <li>
+                    <Link href="">Corvallis, OR, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 16, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4929143"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+
+            {/* </div> */}
+            {/* <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/career-advisor-senior-career-advisor/82180"
+                    className="text-blue-500 font-bold"
+                  >
+                    Career Advisor/Senior Career Advisor
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of the Pacific</Link>
+                  </li>
+                  <li>
+                    <Link href="">Stockton, CA, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Mar 11, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4921373"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/information-technology-faculty/82182"
+                    className="text-blue-500 font-bold"
+                  >
+                    Information Technology Faculty
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">North Central State College</Link>
+                  </li>
+                  <li>
+                    <Link href="">2441 Kenwood Circle, Mansfield, OH, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Mar 15, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4931492"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/student-counsellor/93780"
+                    className="text-blue-500 font-bold"
+                  >
+                    Executive Director of System Information Technology
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">Eastern New Mexico University</Link>
+                  </li>
+                  <li>
+                    <Link href="">Portales, NM, USA</Link>
+                  </li>
+                  <li>
+                    <Link href=""> Mar 29, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=5064812"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/vice-president-for-finance-strategy/98391"
+                    className="text-blue-500 font-bold"
+                  >
+                    Vice President of Finance and Operations
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">South Central College</Link>
+                  </li>
+                  <li>
+                    <Link href="">North Mankato, MN 56003, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 2, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=5102550"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div> */}
+            {/* <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/student-counsellor/93743"
+                    className="text-blue-500 font-bold"
+                  >
+                    Director - UTeach Permian Basin
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of Texas Permian Basin</Link>
+                  </li>
+                  <li>
+                    <Link href="">Odessa, TX, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Mar 31, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=5066019"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div> */}
+
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/indigenous-research-officer/101449"
+                    className="text-blue-500 font-bold"
+                  >
+                    Director - Continuing Education
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of Texas Permian Basin</Link>
+                  </li>
+                  <li>
+                    <Link href="">Odessa, TX 79762, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 20, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=5119689"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/indigenous-research-officer/101433"
+                    className="text-blue-500 font-bold"
+                  >
+                    Dean - College of Education
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of Texas Permian Basin</Link>
+                  </li>
+                  <li>
+                    <Link href="">Odessa, TX 79762, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 20, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=5119737"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/company_name/108701"
+                    className="text-blue-500 font-bold"
+                  >
+                    Dean - College of Arts & Humanities
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of Texas Permian Basin</Link>
+                  </li>
+                  <li>
+                    <Link href="">Odessa, TX, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 22, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=5176084"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/company_name/108717"
+                    className="text-blue-500 font-bold"
+                  >
+                    Vice President of Academic Affairs
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">Nicolet College</Link>
+                  </li>
+                  <li>
+                    <Link href="">5364 College Dr, Rhinelander, WI 54501, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Apr 22, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/5145101"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+          </div>
+            {/* <TopJobs /> */}
         </div>
       </div>
       <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
