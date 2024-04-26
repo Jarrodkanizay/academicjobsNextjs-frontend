@@ -12,13 +12,13 @@ const HeadlineJobLinks = () => {
     <div className="flex flex-wrap gap-4 justify-between border-t-2 pt-4 text-black">
       <div className="grid grid-cols-1 items-center justify-center max-w-[80px] mx-auto sm:mx-0">
         <Image
-          className="stat-icon"
+          className=""
           width={iconSize}
           height={iconSize}
           alt=""
-          src="https://academicjobs.s3.amazonaws.com/icon/1738704.png"
+          src="/headline-icons/applyattempts.png"
         />
-        <div className="text-[16px] w-[18px] text-center">
+        <div className="text-[16px] w-[22px] text-center">
           {getRandomNumber(2, 12)}
         </div>
         <div className="text-[10px] leading-tight col-span-2 pb-1 text-center ">
@@ -28,13 +28,13 @@ const HeadlineJobLinks = () => {
 
       <div className="grid grid-cols-1 items-center justify-center max-w-[80px] mx-auto sm:mx-0">
         <Image
-          className="stat-icon"
+          className=""
           width={iconSize}
           height={iconSize}
           alt=""
-          src="https://academicjobs.s3.amazonaws.com/icon/8178947.png"
+          src="/headline-icons/views.png"
         />
-        <div className="text-[16px] w-[18px] text-center">
+        <div className="text-[16px] w-[22px]">
           {getRandomNumber(12, 50)}
         </div>
         <div className="text-[10px] leading-tight col-span-2  pb-1 text-center">
@@ -44,13 +44,13 @@ const HeadlineJobLinks = () => {
 
       <div className="grid grid-cols-1 items-center justify-center max-w-[80px] mx-auto sm:mx-0">
         <Image
-          className="stat-icon"
+          className=""
           width={iconSize}
           height={iconSize}
           alt=""
-          src="https://academicjobs.s3.amazonaws.com/icon/logored.png"
+          src="/headline-icons/shares.png"
         />
-        <div className="text-[16px] w-[18px] text-center">
+        <div className="text-[16px] w-[22px] text-center">
           {getRandomNumber(1, 6)}
         </div>
         <div className="text-[10px] leading-tight col-span-2  pb-1 text-center ">
@@ -60,13 +60,13 @@ const HeadlineJobLinks = () => {
 
       <div className="grid grid-cols-1 items-center justify-center max-w-[80px] mx-auto sm:mx-0">
         <Image
-          className="stat-icon"
+          className=""
           width={iconSize}
           height={iconSize}
           alt=""
-          src="https://academicjobs.s3.amazonaws.com/icon/9005728.png"
+          src="/headline-icons/fullpost.png"
         />
-        <div className="text-[16px] w-[18px] text-center">
+        <div className="text-[16px] w-[22px] text-center">
           {getRandomNumber(3, 20)}
         </div>
         <div className="text-[10px] leading-tight col-span-2  pb-1 text-center ">
@@ -76,27 +76,18 @@ const HeadlineJobLinks = () => {
 
       <div className="grid grid-cols-1 items-center justify-center max-w-[80px] mx-auto sm:mx-0">
         <Image
-          className="stat-icon"
+          className=""
           width={iconSize}
           height={iconSize}
           alt=""
-          src="/tick-green.svg"
+          src="/headline-icons/time.png"
         />
-        <div className="text-[16px] w-[18px] text-center">32</div>
-        <div className="text-[10px] leading-tight col-span-2  pb-1 text-center text-green-500">
+        <div className="text-[16px] w-[22px] text-center">32</div>
+        <div className="text-[10px] leading-tight col-span-2  pb-1 text-center ">
           Only 32 seconds
           <br />
           to post this job
         </div>
-      </div>
-
-      <div className="flex flex-col items-center justify-center gap-1.5 mx-auto md:mx-0 ">
-        <a
-          className="btn btn-accent btn-sm rounded-full my-2"
-          href="#activate-quick-post"
-        >
-          Activate Full Ad Now
-        </a>
       </div>
     </div>
   );

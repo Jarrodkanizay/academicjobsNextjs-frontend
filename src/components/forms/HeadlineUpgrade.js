@@ -10,6 +10,8 @@ import { jobElephantContacts } from '@/data/jobElephantContacts';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { countries } from '@/utils/data';
+import HeadlineLinks from '@/components/HeadlineLinks';
+
 const PostJobForm = ({
   clientType,
   partner,
@@ -76,15 +78,11 @@ const PostJobForm = ({
   } else {
     content = (
       <>
-        <p className="text-gray-700 font-bold text-md">
-          Hey Recruiters, let's get your FULL JOB live now, beacause it's already getting loads of views, hits and clicks.
+        <HeadlineLinks />
 
-        </p>
-        {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16"> */}
-        <div>
+        <div className="mt-8">
           <h2
-            id="activate-quick-post"
-            className={`text-4xl font-bold mb-8 mt-8 underline-full`}
+            className="text-2xl mb-8"
           >
             Activate my ‘Quick Post’ now…
           </h2>
@@ -228,7 +226,7 @@ const PostJobForm = ({
               setValue("job_description", value)
             }}
             className="w-full h-[70%] mt-10 bg-white" /> */}
-              <button className="btn btn-accent mt-4">Submit & PayNow</button>
+              <button className="btn btn-accent mt-4 hover:bg-gray-400 hover:border-gray-200 bg-gray-300 border-gray-200">Submit & PayNow</button>
             </div>
           </form>
         </div>
