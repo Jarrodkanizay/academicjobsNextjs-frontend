@@ -39,8 +39,8 @@ const jobs = [
 const TopJobs = () => {
   return (
     <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-    {jobs.map((job, index) => (
-        <div className="column">
+      {jobs.map((job, index) => (
+        <div className="column" key={index}>
           <ul>
             <li className="mb-1 mt-4 hover:underline">
               <Link
@@ -69,10 +69,9 @@ const TopJobs = () => {
               </Link>
             </ul>
           </ul>
-          </div>
-
+        </div>
       ))}
-      </div>
+    </div>
   );
 };
 
