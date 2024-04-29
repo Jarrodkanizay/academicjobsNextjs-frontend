@@ -835,7 +835,7 @@ export default async function myPage() {
               </ul>
             </div> */}
 
-            <div className="column">
+            {/* <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
@@ -950,9 +950,9 @@ export default async function myPage() {
                   </Link>
                 </ul>
               </ul>
-            </div>
+            </div> */}
           </div>
-            {/* <TopJobs /> */}
+            <TopJobs />
         </div>
       </div>
       <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
