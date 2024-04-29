@@ -594,7 +594,7 @@ export default async function myPage() {
             </div>
           </div> */}
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-            <div className="column">
+            {/* <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
@@ -625,7 +625,7 @@ export default async function myPage() {
                   </Link>
                 </ul>
               </ul>
-            </div>
+            </div> */}
             {/* <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
@@ -657,7 +657,7 @@ export default async function myPage() {
                 </ul>
               </ul>
             </div> */}
-            <div className="column">
+            {/* <div className="column">
               <ul className="">
                 <li className="mb-1 mt-4 hover:underline">
                   <Link
@@ -685,7 +685,7 @@ export default async function myPage() {
                   </Link>
                 </ul>
               </ul>
-            </div>
+            </div> */}
 
             {/* </div> */}
             {/* <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
