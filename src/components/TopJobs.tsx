@@ -6,41 +6,6 @@ import { BaseApi } from '@/lib/store/Base';
 import Link from 'next/link';
 import React from 'react';
 
-// const jobs = [
-//   {
-//     id: 108717,
-//     title: 'Vice President of Academic Affairs',
-//     company_name: 'Nicolet College',
-//     address: '5364 College Dr, Rhinelander, WI 54501, USA',
-//     date: 'Apr 22, 2024',
-//     more_info_link: 'https://apptrkr.com/5145101',
-//   },
-//   {
-//     id: 108717,
-//     title: 'Vice President of Academic Affairs',
-//     company_name: 'Nicolet College',
-//     address: '5364 College Dr, Rhinelander, WI 54501, USA',
-//     date: 'Apr 22, 2024',
-//     more_info_link: 'https://apptrkr.com/5145101',
-//   },
-//   {
-//     id: 108717,
-//     title: 'Vice President of Academic Affairs',
-//     company_name: 'Nicolet College',
-//     address: '5364 College Dr, Rhinelander, WI 54501, USA',
-//     date: 'Apr 22, 2024',
-//     more_info_link: 'https://apptrkr.com/5145101',
-//   },
-//   {
-//     id: 108717,
-//     title: 'Vice President of Academic Affairs',
-//     company_name: 'Nicolet College',
-//     address: '5364 College Dr, Rhinelander, WI 54501, USA',
-//     date: 'Apr 22, 2024',
-//     more_info_link: 'https://apptrkr.com/5145101',
-//   },
-// ];
-
 const TopJobs = () => {
     const {
     data: jobs,
@@ -79,7 +44,7 @@ const TopJobs = () => {
                 <span>{job.location}</span>
               </li>
               <li>
-                <span>{job.activation_date}</span>
+              <span>{new Date(job.activation_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
               </li>
               <Link
                 href={job.how_to_apply}
