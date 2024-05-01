@@ -21,26 +21,16 @@ const TopJobs = () => {
     },
   });
 
-  useEffect(() => {
-    const handleButtonClick = () => {
-      // Send event to Google Analytics
-      window.gtag('event', 'click', {
-        'event_category': 'Button Click',
-        'event_label': 'More Info Button Click'
-      });
-    };
-
-    const buttons = document.querySelectorAll('.more-info-btn');
-    buttons.forEach(button => {
-      button.addEventListener('click', handleButtonClick);
+  const handleButtonClick = () => {
+    // Send event to Google Analytics
+    window.gtag('event', 'click', {
+      'event_category': 'Button Click',
+      'event_label': 'More Info Button Click'
     });
-
-    return () => {
-      buttons.forEach(button => {
-        button.removeEventListener('click', handleButtonClick);
-      });
-    };
-  }, []);
+    
+    console.log("Button clicked");
+  };
+  
 
   return (
     <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
@@ -69,6 +59,7 @@ const TopJobs = () => {
                 className="btn btn-sm btn-aj mt-4 more-info-btn"
                 onClick={() => {
                   window.open(job.how_to_apply, '_blank');
+                  handleButtonClick(); 
                 }}
               >
                 More Info
