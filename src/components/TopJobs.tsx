@@ -21,11 +21,11 @@ const TopJobs = () => {
     },
   });
 
-  const handleButtonClick = () => {
+  const handleButtonClick = (jobId) => {
     // Send event to Google Analytics
     window.gtag('event', 'click', {
       'event_category': 'Button Click',
-      'event_label': 'More Info Button Click'
+      'event_label': `More Info Button Click - ${jobId}`
     });
     
     console.log("Button clicked");
@@ -59,7 +59,7 @@ const TopJobs = () => {
                 className="btn btn-sm btn-aj mt-4 more-info-btn"
                 onClick={() => {
                   window.open(job.how_to_apply, '_blank');
-                  handleButtonClick(); 
+                  handleButtonClick(job.id); 
                 }}
               >
                 More Info
