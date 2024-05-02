@@ -13,11 +13,12 @@ const { region } = useStore();
   const size = 120
   const items = [
     {
-      src: '/home/academic-staff-positions.png',
-      alt: 'Academic Staff Positions',
-      label: 'Staff/Admin',
-      link: `${region}/staff-jobs`,
+      src: '/home/academic-faculty-positions.png',
+      alt: 'Academic Faculty Positions',
+      label: 'Faculty',
+      link: `${region}/faculty`,
     },
+
     {
       src: '/home/academic-executive-positions.png',
       alt: 'Academic Executive Positions',
@@ -30,17 +31,18 @@ const { region } = useStore();
       label: 'HR Jobs',
       link: `${region}/hr-jobs`,
     },
-    {
-      src: '/home/academic-faculty-positions.png',
-      alt: 'Academic Faculty Positions',
-      label: 'Faculty',
-      link: `${region}/faculty`,
-    },
+
     {
       src: '/home/academic-phd-positions.png',
       alt: 'Academic PhD Positions',
       label: 'PhD Jobs',
       link: `${region}/phd`,
+    },
+    {
+      src: '/home/academic-staff-positions.png',
+      alt: 'Academic Staff Positions',
+      label: 'Staff/Admin',
+      link: `${region}/staff-jobs`,
     },
   ];
   return (
@@ -76,6 +78,22 @@ const { region } = useStore();
         <li>
           <a className="grayscale hover:grayscale-0" href="/executive">
             <Image
+              alt="Academic Faculty Positions"
+              loading="lazy"
+              width="180"
+              height="180"
+              decoding="async"
+              data-nimg="1"
+              src="/home/academic-faculty-positions.png"
+            ></Image>
+          </a>
+          <a className="mb-4" href="/executive">
+            <p>Faculty</p>
+          </a>
+        </li>
+        <li>
+          <a className="grayscale hover:grayscale-0" href="/faculty">
+            <Image
               alt="Academic Executive Positions"
               loading="lazy"
               width="180"
@@ -83,42 +101,27 @@ const { region } = useStore();
               decoding="async"
               data-nimg="1"
               src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"
-            ></Image>
-          </a>
-          <a className="mb-4" href="/executive">
-            <p>Executive</p>
-          </a>
-        </li>
-        <li>
-          <a className="grayscale hover:grayscale-0" href="/faculty">
-            <Image
-              alt="Academic Faculty Positions"
-              loading="lazy"
-              width="180"
-              height="180"
-              decoding="async"
-              data-nimg="1"
-              src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75"
+
             ></Image>
           </a>
           <a className="mb-4" href="/faculty">
-            <p>Faculty</p>
+            <p>Executive</p>
           </a>
         </li>
         <li>
           <a className="grayscale hover:grayscale-0" href="/staff-jobs">
             <Image
-              alt="Academic Staff Positions"
+              alt="Academic HR Positions"
               loading="lazy"
               width="180"
               height="180"
               decoding="async"
               data-nimg="1"
-              src="/home/academic-phd-positions.png"
+              src="/home/academic-human-resource-positions.png"
             ></Image>
           </a>
           <a className="mb-4" href="/staff-jobs">
-            <p>Staff/Admin</p>
+            <p>HR Jobs</p>
           </a>
         </li>
       </ul>
