@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { BsFillShareFill } from 'react-icons/bs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const ShareButton = ({ jobId }) => {
@@ -19,7 +19,7 @@ const ShareButton = ({ jobId }) => {
     const shareOptions = [
         { name: 'Email', url: `mailto:?bcc=${bccEmail}&subject=${subject}&body=${bodyEmail}`, icon: faEnvelope},
         { name: 'Facebook', url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, icon: faFacebookF },
-        { name: 'Twitter', url: `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}`, icon: faTwitter },
+        { name: 'Twitter', url: `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}`, icon: faXTwitter },
         { name: 'LinkedIn', url: `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}`, icon: faLinkedinIn },
     ];
 
