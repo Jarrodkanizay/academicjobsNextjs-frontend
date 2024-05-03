@@ -11,7 +11,7 @@ const ShareButton = ({ jobId }) => {
     const subject = encodeURIComponent('You might like this job posting!');
     const bccEmail = encodeURIComponent('post@academicjobs.com');
     const bodyEmail = encodeURIComponent(
-      `I came across this job posting on AcademicJobs and thought you might be interested: ${url}`
+      `I came across this job posting on AcademicJobs and thought you might be interested: https://www.academicjobs.com/jobs/myjob/${jobId}`
     );
     const widgetRef = useRef(null);
     const buttonRef = useRef(null);
