@@ -4,7 +4,7 @@ import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import UK from '@/components/topUnis/UK';
-import JobSearchBoxHome from '@/components/JobSearchBoxHome';
+import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 import { getContentRegion } from '@/actions/getContentRegion';
 //import { useParams } from 'next/navigation'
 export const metadata = {
@@ -171,7 +171,7 @@ export default async function myPage() {
 
 
         <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
-          <JobSearchBoxHome />
+          <JobSearchBoxCountry country={"UK"} />
         </div>
   
       {/* <div className="pt-[8rem] flex flex-col items-center justify-center" >

@@ -6,7 +6,7 @@ import JobFilter from '@/components/JobFilter';
 import SearchResults from '@/components/SearchResults';
 import AusUniLogos from '@/components/AusUniLogos';
 import Australia from '@/components/topUnis/Australia';
-import JobSearchBoxHome from '@/components/JobSearchBoxHome';
+import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 import { getContentRegion } from '@/actions/getContentRegion';
 //import { useParams } from 'next/navigation'
 export const metadata = {
@@ -148,7 +148,7 @@ export default async function myPage() {
       </div>
 
       <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
-        <JobSearchBoxHome />
+        <JobSearchBoxCountry country={"Australia"} />
       </div>
 
       {/* <div className="pt-[4rem] flex flex-col items-center justify-center">
