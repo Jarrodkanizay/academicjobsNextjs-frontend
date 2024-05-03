@@ -17,6 +17,8 @@ import { StarRank } from '@/components/StarRank';
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/options";
 import { baseURL } from '@/lib/store/Base';
+import ShareButton from '@/components/ShareButton';
+
 export async function generateMetadata({ params }) {
 
 
@@ -81,11 +83,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
     }
   } = job.data;
   console.log('ranking==============', ranking);
-  const subject = encodeURIComponent('You might like this job posting!');
-  const bccEmail = encodeURIComponent('post@academicjobs.com');
-  const bodyEmail = encodeURIComponent(
-    `I came across this job posting on AcademicJobs and thought you might be interested: https://www.academicjobs.com/jobs/myjob/${jobId}`
-  );
+
   let bgColor = 'bg-white';
   if (company_name === 'Bond University') bgColor = 'bg-[#011a4d]';
   return (
@@ -181,25 +179,10 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     title={title}
                     company_name={company_name}
                     how_to_apply={how_to_apply}
-                  // buttonText="Apply Now /jobs/[category]/[id]/page.js"
                   />
                 )}
-                <a
-                  className="icon_share items-center min-w-[32px]"
-                  href={`mailto:?bcc=${bccEmail}&subject=${subject}&body=${bodyEmail}`}
-                >
-                  <BsFillShareFill size={20} color="#2867B2" />
-                </a>
+                <ShareButton jobId={jobId}/>
                 <FavoriteButton jobId={params.id} favoriteJobYN={favoriteJobYN} />
-                {/* <img
-                  src="/icons/heart.svg"
-                  width="44"
-                  height="44"
-                  alt="Add this Job Post to Favorites"
-                  onClick={() => {
-                    alert(params.id)
-                  }}
-                /> */}
                 <a href="/academic-talent-pool" className="bg-[#d9d9d9] text-gray-700 rounded-full btn">
                   Join Talent Pool
                 </a>
