@@ -13,6 +13,7 @@ import RequestFullJobForm from '@/components/forms/RequestFullJobForm';
 import { useSearchParams } from 'next/navigation';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import FavoriteButton from '@/components/FavoriteButton';
+import JoinTalentPoolButton from '@/components/JoinTalentPoolButton';
 import { StarRank } from '@/components/StarRank';
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/options";
@@ -183,9 +184,8 @@ const JobDetailPage = async ({ params, searchParams }) => {
                 )}
                 <ShareButton jobId={jobId}/>
                 <FavoriteButton jobId={params.id} favoriteJobYN={favoriteJobYN} />
-                <a href="/academic-talent-pool" className="bg-[#d9d9d9] text-gray-700 rounded-full btn">
-                  Join Talent Pool
-                </a>
+                <JoinTalentPoolButton />
+            
               </div>
             </div>
           </div>
