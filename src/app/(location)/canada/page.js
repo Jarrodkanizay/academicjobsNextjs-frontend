@@ -4,7 +4,7 @@ import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import Canada from '@/components/topUnis/Canada';
-import JobSearchBoxHome from '@/components/JobSearchBoxHome';
+import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 import { getContentRegion } from '@/actions/getContentRegion';
 //import { useParams } from 'next/navigation'
 export const metadata = {
@@ -19,36 +19,36 @@ export default async function myPage() {
   const size = 180;
   const items = [
     {
-      src: '/home/academic-staff-positions.png',
-      alt: 'Academic Staff Positions',
-      label: 'Staff/Admin',
-      link: '/canada/admin',
+      src: '/home/academic-faculty-positions.png',
+      alt: 'Academic Faculty Positions',
+      label: 'Faculty',
+      link: `canada/faculty`,
     },
+
     {
       src: '/home/academic-executive-positions.png',
       alt: 'Academic Executive Positions',
       label: 'Executive',
-      link: '/canada/executive',
+      link: `canada/executive`,
     },
-
-
     {
       src: '/home/academic-human-resource-positions.png',
       alt: 'Academic Human Resource Positions',
       label: 'HR Jobs',
-      link: '/canada/hr-jobs',
+      link: `canada/hr-jobs`,
     },
-    {
-      src: '/home/academic-faculty-positions.png',
-      alt: 'Academic Faculty Positions',
-      label: 'Faculty',
-      link: '/canada/faculty',
-    },
+
     {
       src: '/home/academic-phd-positions.png',
       alt: 'Academic PhD Positions',
       label: 'PhD Jobs',
-      link: '/canada/phd',
+      link: `canada/phd`,
+    },
+    {
+      src: '/home/academic-staff-positions.png',
+      alt: 'Academic Staff Positions',
+      label: 'Staff/Admin',
+      link: `canada/staff-jobs`,
     },
     // {
     //   src: '/home/academic-graduate-positions.png',
@@ -114,21 +114,7 @@ export default async function myPage() {
 
           <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-[-75px] mt-[-11rem] lg:hidden ">
             <li>
-              <a className="grayscale hover:grayscale-0" href="/australia/executive">
-                <Image
-                  alt="Academic Executive Positions"
-                  loading="lazy"
-                  width="180"
-                  height="180"
-                  decoding="async"
-                  data-nimg="1"
-                  src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75">
-                </Image></a>
-              <a className="mb-4" href="/australia/executive">
-                <p>Executive</p>
-              </a></li>
-            <li>
-              <a className="grayscale hover:grayscale-0" href="/australia/faculty">
+              <a className="grayscale hover:grayscale-0" href="canada/faculty">
                 <Image
                   alt="Academic Faculty Positions"
                   loading="lazy"
@@ -136,26 +122,44 @@ export default async function myPage() {
                   height="180"
                   decoding="async"
                   data-nimg="1"
-                  src="/_next/image?url=%2Fhome%2Facademic-human-resource-positions.png&amp;w=384&amp;q=75">
-                </Image></a>
-              <a className="mb-4" href="/australia/faculty">
+                  src="/home/academic-faculty-positions.png"
+                ></Image>
+              </a>
+              <a className="mb-4" href="canada/faculty">
                 <p>Faculty</p>
               </a>
             </li>
             <li>
-              <a className="grayscale hover:grayscale-0" href="/australia/admin">
+              <a className="grayscale hover:grayscale-0" href="canada/executive">
                 <Image
-                  alt="Academic Staff Positions"
+                  alt="Academic Executive Positions"
                   loading="lazy"
                   width="180"
                   height="180"
                   decoding="async"
                   data-nimg="1"
-                  src="/home/academic-faculty-positions.png">
-                </Image>
+                  src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"
+
+                ></Image>
               </a>
-              <a className="mb-4" href="/australia/admin">
-                <p>Staff/Admin</p>
+              <a className="mb-4" href="canada/executive">
+                <p>Executive</p>
+              </a>
+            </li>
+            <li>
+              <a className="grayscale hover:grayscale-0" href="canada/hr-jobs">
+                <Image
+                  alt="Academic HR Positions"
+                  loading="lazy"
+                  width="180"
+                  height="180"
+                  decoding="async"
+                  data-nimg="1"
+                  src="/home/academic-human-resource-positions.png"
+                ></Image>
+              </a>
+              <a className="mb-4" href="canada/hr-jobs">
+                <p>HR Jobs</p>
               </a>
             </li>
           </ul>
@@ -164,7 +168,7 @@ export default async function myPage() {
 
 
       <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
-        <JobSearchBoxHome />
+        <JobSearchBoxCountry country={"Canada"} />
       </div>
 
 
