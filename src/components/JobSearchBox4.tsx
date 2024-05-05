@@ -37,7 +37,7 @@ export default function JobSearchBox({ q, l, forceClass }: MyComponentProps) {
       lat: encodeURIComponent(lonlat.current?.lat),
       q: encodeURIComponent(keyWordRef.current?.value.trim() || ''),
     });
-    router.push(`/jobs2?${params.toString()}`);
+    router.push(`/jobs?${params.toString()}`);
   };
   return (
     <div className={`search-panel py-4 ${forceClass}`}>
