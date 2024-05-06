@@ -1,7 +1,8 @@
 import Jobs from "./jobs";
 export async function generateMetadata({ params, searchParams }) {
+
     return {
-        title: `${searchParams.l} | ${searchParams.q}`,
+        title: `${searchParams.l != "" || searchParams.q != "" ? searchParams.l + ' ' + searchParams.q : ""}`,
     };
 }
 export default function Page({ searchParams }) {
