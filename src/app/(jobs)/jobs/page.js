@@ -1,9 +1,13 @@
 import Jobs from "./jobs";
-
-export const metadata = {
-    title: 'Demo - ModalJS',
-};
-
-export default function Page() {
-    return <div><Jobs /></div>;
+export async function generateMetadata({ params, searchParams }) {
+    return {
+        title: `${searchParams.l} | ${searchParams.q}`,
+    };
+}
+export default function Page({ searchParams }) {
+    return (
+        <div>
+            <Jobs />
+        </div>
+    );
 }
