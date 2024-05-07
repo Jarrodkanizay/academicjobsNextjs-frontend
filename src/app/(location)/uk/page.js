@@ -9,7 +9,7 @@ import { getContentRegion } from '@/actions/getContentRegion';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
-    absolute: '  Academic Jobs UK',
+    absolute: 'Academic Jobs UK',
   },
   description:
     'Find your ideal academic jobs in UK and join the vibrant academic community at UK university jobs. We have the perfect opportunity for you whatever the job. ',
@@ -50,20 +50,7 @@ export default async function myPage() {
       label: 'Staff/Admin',
       link: `uk/staff-jobs`,
     },
-    // {
-    //   src: '/home/academic-graduate-positions.png',
-    //   alt: 'Academic PhD Positions',
-    //   label: 'Student',
-    //   link: '/uk/student',
-    // },
-    // {
-    //   src: '/home/academic-lecturer-positions.png',
-    //   alt: 'Academic Graduate Positions',
-    //   label: 'Collaborate',
-    //   link: '/uk/graduate',
-    // },
- 
- 
+
   ];
   const contentRegion = await getContentRegion();
 

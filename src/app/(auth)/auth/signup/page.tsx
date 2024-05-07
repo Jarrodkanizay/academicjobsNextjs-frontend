@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import SignUpForm from './SignUpForm';
+import SignUpForm from '../../../../components/SignUpForm';
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx

@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.scss';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import CompetitionForm from '@/components/CompetitionForm';
 import QueryProvider from '@/lib/store/query-provider';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { Providers } from './providers';
@@ -38,6 +39,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-white`}>
+        <CompetitionForm />
         <QueryProvider>
           <Providers session={session}>
             <Header />
