@@ -10,7 +10,7 @@ function ModalForm() {
 
         if (firstVisit) {
             setIsOpen(true);
-            // localStorage.setItem('firstVisit', 'no');
+            localStorage.setItem('firstVisit', 'no');
         }
     }, []);
 
