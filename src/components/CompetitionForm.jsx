@@ -10,7 +10,7 @@ function ModalForm() {
 
         if (firstVisit) {
             setIsOpen(true);
-            localStorage.setItem('firstVisit', 'no');
+            // localStorage.setItem('firstVisit', 'no');
         }
     }, []);
 
@@ -19,16 +19,16 @@ function ModalForm() {
             {isOpen && (
                 <div className="modal modal-open ">
 
-                    <div className="modal-box max-w-none w-[370px] md:w-[1300px]"> {/* Override max-width to none */}
-                        <div className="flex flex-col sm:flex-row"> {/* Use flexbox and flex-column for mobile */}
+                    <div className="modal-box max-w-none w-[370px] md:w-[1300px]"> 
+                        <div className="flex flex-col sm:flex-row">
                             <img
-                                src={"compImageMobile.jpg"}
+                                src="/comp-image-mobile.jpg"
                                 width="600"
                                 height="100"
                                 alt="comp image mobile"
                                 className='mb-3 md:hidden block'
                             />
-                            <div className="w-full sm:w-1/2 mb-4 sm:mb-0"> {/* Full width on mobile, half width on larger screens */}
+                            <div className="w-full sm:w-1/2 mb-4 sm:mb-0"> 
                                 <div>
                                     <div className="flex">
                                         <img
@@ -45,7 +45,7 @@ function ModalForm() {
                                     <SignUpFormComp />
                                 </div>
                             </div>
-                            <div className=" hidden md:block md:w-1/2 bg-cover bg-center relative" style={{ backgroundImage: "url('compImageDesktop.jpg')" }}>
+                            <div className=" hidden md:block md:w-1/2 bg-cover bg-center relative" style={{ backgroundImage: "url('/comp-image-desktop.jpg')" }}>
                             </div>
                         </div>
                         <div className="modal-action">
