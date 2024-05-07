@@ -13,10 +13,13 @@ import RequestFullJobForm from '@/components/forms/RequestFullJobForm';
 import { useSearchParams } from 'next/navigation';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import FavoriteButton from '@/components/FavoriteButton';
+import JoinTalentPoolButton from '@/components/JoinTalentPoolButton';
 import { StarRank } from '@/components/StarRank';
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/options";
 import { baseURL } from '@/lib/store/Base';
+import ShareButton from '@/components/ShareButton';
+
 export async function generateMetadata({ params }) {
 
 
@@ -81,11 +84,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
     }
   } = job.data;
   console.log('ranking==============', ranking);
-  const subject = encodeURIComponent('You might like this job posting!');
-  const bccEmail = encodeURIComponent('post@academicjobs.com');
-  const bodyEmail = encodeURIComponent(
-    `I came across this job posting on AcademicJobs and thought you might be interested: https://www.academicjobs.com/jobs/myjob/${jobId}`
-  );
+
   let bgColor = 'bg-white';
   if (company_name === 'Bond University') bgColor = 'bg-[#011a4d]';
   return (
@@ -147,10 +146,27 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     {location}
                   </h4>
                 </section>
+
                 <section className="ranking flex flex-row pb-2">
                   <StarRank ranking={ranking} />
 
                 </section>
+                <div className="lg:hidden block">
+                  <div className=" ">
+                    <p className="text-sm underline font-light"> Applications Close: {expiration_date ? (
+                      <time>
+                        {new Date(expiration_date).toLocaleDateString('en-US', {
+                          month: 'short',
+                          day: 'numeric',
+                          year: 'numeric',
+                        })}
+                      </time>
+                    ) : (
+                      <p className="text-center">TBA</p>
+                    )}</p>
+
+                  </div>
+                </div>
 
               </div>
 
@@ -164,54 +180,19 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     title={title}
                     company_name={company_name}
                     how_to_apply={how_to_apply}
-                  // buttonText="Apply Now /jobs/[category]/[id]/page.js"
                   />
                 )}
-                <a
-                  className="icon_share items-center min-w-[32px]"
-                  href={`mailto:?bcc=${bccEmail}&subject=${subject}&body=${bodyEmail}`}
-                >
-                  <BsFillShareFill size={20} color="#2867B2" />
-                </a>
+                <ShareButton jobId={jobId}/>
                 <FavoriteButton jobId={params.id} favoriteJobYN={favoriteJobYN} />
-                {/* <img
-                  src="/icons/heart.svg"
-                  width="44"
-                  height="44"
-                  alt="Add this Job Post to Favorites"
-                  onClick={() => {
-                    alert(params.id)
-                  }}
-                /> */}
-                <a href="/academic-talent-pool" className="bg-[#d9d9d9] text-gray-700 rounded-full btn">
-                  Join Talent Pool
-                </a>
+                <JoinTalentPoolButton />
+            
               </div>
             </div>
           </div>
         </div>
       </div>
       {/* job post header: organization, location closing date of job post  */}
-      <div className="lg:hidden block flex justify-center">
-        <section className="mt-4 gap-2 w-[20rem] h-[4rem]">
-          <div className="applications_close_panel">
-            <h6>Applications Close</h6>
-            <div className="text-sm">
-              {expiration_date ? (
-                <time>
-                  {new Date(expiration_date).toLocaleDateString('en-US', {
-                    month: 'short',
-                    day: 'numeric',
-                    year: 'numeric',
-                  })}
-                </time>
-              ) : (
-                <p className="text-center">TBA</p>
-              )}
-            </div>
-          </div>
-        </section>
-      </div>
+
       {/* main body of job post */}
       <section className="jobs_grid job_post_panel_container">
         <article className="post_panel mt-[26px]" data-id={jobId}>
@@ -228,7 +209,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     className={`flex flex-col ${headlineOnly && !active ? 'block' : 'hidden'
                       }`}
                   >
-                    <span className = "text-gray-700 text-[16px] m-0 mb-6">This job posting has not been sponsored, enter your email below to be sent the full post.</span>
+                    <span className="text-gray-700 text-[16px] m-0 mb-6">This job posting has not been sponsored, enter your email below to be sent the full post.</span>
 
                     <div className="flex justify-center items-center flex-wrap">
                       <div className="grow">
@@ -246,9 +227,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     </div>
                     <details className="mt-[80px]">
                       <summary class="text-[16px] text-sky-500  hover:text-gray-600 cursor-pointer px-4 pb-2 rounded-md text-center">
-                        <a href="#activate-quick-post ">
-                          Recruiter Information Only
-                        </a>
+                        Recruiter Information Only
                       </summary>
                       <div class="px-4 py-2">
                         <HeadlineUpgrade
