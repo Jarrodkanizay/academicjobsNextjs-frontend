@@ -28,25 +28,36 @@ function ModalForm() {
                                 alt="comp image mobile"
                                 className='mb-3 md:hidden block'
                             />
-                            <div className="w-full sm:w-1/2 mb-4 sm:mb-0"> 
+                            <div className="sm:w-1/2 mb-4 sm:mb-0"> 
                                 <div>
                                     <div className="flex">
                                         <img
-                                            src={"/icons/heart-outline.svg"}
-                                            width="40"
-                                            height="40"
+                                            src={"/icons/heart.svg"}
+                                            width="80"
+                                            height="80"
                                             alt="heart outline"
-                                            className='mb-4 hidden md:block'
+                                            className='mb-8 hidden md:block'
                                         />
-                                        <p className="text-black p-2">Sign up and browse jobs,
-                                            the more jobs you heart the
-                                            more chances to win!</p>
+                                        <img
+                                            src={"/icons/heart.svg"}
+                                            width="50"
+                                            height="50"
+                                            alt="heart outline"
+                                            className='md:hidden block'
+                                        />
+                                        <h3 className="text-black font-light p-2 md:hidden block">Sign Up! and The more jobs you like (save), the more chances to win.</h3>
+                                        <h2 className="text-black font-light p-2 hidden md:block">Sign Up! and The more jobs you like (save), the more chances to win.</h2>
                                     </div>
                                     <SignUpFormComp />
                                 </div>
                             </div>
-                            <div className=" hidden md:block md:w-1/2 bg-cover bg-center relative" style={{ backgroundImage: "url('/comp-image-desktop.jpg')" }}>
-                            </div>
+                            <img
+                                src="/comp-image-desktop.png"
+                                width="600"
+                                height="200"
+                                alt="comp image desktop"
+                                className='hidden md:block'
+                            />
                         </div>
                         <div className="modal-action">
                             <button type="button" className="btn" onClick={() => setIsOpen(false)}>Close</button>

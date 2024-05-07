@@ -64,7 +64,7 @@ const SignUpForm = (props: SignUpFormProps) => {
     }
   };
   return (
-      <div className="md:px-6 pt-0 pb-5">
+      <div className="md:px-6">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(saveUser)} className="w-full">
             <div className="space-y-4">
