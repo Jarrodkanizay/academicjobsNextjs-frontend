@@ -45,7 +45,7 @@ export default function Home({
   const page = searchParams['page'] ?? '1';
   const per_page = 15;
 
-  // mocked, skipped and limited in the real app
+  // mocked, skipped and limited in the real app//
   const start = (Number(page) - 1) * Number(per_page); // 0, 5, 10 ...
   const end = start + Number(per_page); // 5, 10, 15 ...
 
