@@ -63,7 +63,7 @@ export default async function myPage() {
             height={110}
             src="/signup.png"
             className="mt-2  bg-white border-2 border-[#265882] items-center justify-center mx-auto"
-            alt="Academic Jobs sign up competition"
+            alt="Academic Jobs sign up competition test"
           />
         </a>
         <a href="/jobelephant-recruitment">
