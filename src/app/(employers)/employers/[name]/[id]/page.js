@@ -8,6 +8,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { StarRank } from '@/components/StarRank';
+import FavoriteEmployerButton from '@/components/FavoriteEmployerButton';
+import { baseURL } from '@/lib/store/Base';
+
 
 export async function generateMetadata({ params }) {
   const employer = await getEmployer(params.id);
@@ -22,7 +25,7 @@ export async function generateMetadata({ params }) {
 }
 async function getEmployer(id) {
   const response = await fetch(
-    `https://api2.sciencejobs.com.au/api/employer/${id}`,
+    `${baseURL}/employer/${id}`,
     { next: { revalidate: 1 } }
   );
   const res = await response.json();
@@ -43,6 +46,7 @@ const Employer = async ({ params }) => {
     location,
     Region,
     country,
+    favoriteEmployerYN
   } = employer.data;
   console.log(company_description);
   let location1 = '',
@@ -128,6 +132,7 @@ const Employer = async ({ params }) => {
                 <p>
                   <StarRank ranking={ranking} size={30} border="#bbb" />
                 </p>
+                <FavoriteEmployerButton jobId={params.id} favoriteEmployerYN={favoriteEmployerYN} />
               </div>
               <div
                 className={`md:flex-col md:gap-6 ml-[-3px] pt-6 ${headerTextColor}`}
