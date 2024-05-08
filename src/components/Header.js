@@ -129,7 +129,7 @@ export default function Header() {
           <NavItem
             url={`/${countryMappings2[region.toLowerCase()].url}/jobs`}
             icon="/dotted-arrow.svg"
-            navLink="Seek1 Jobs"
+            navLink="Seek Jobs"
             forceClass="border-b hover:border-amber-500" //this is optional
             forceButtonClass="border-b hover:border-amber-500 mr-2 "
             onClick={() => setIsNavOpen(false)}
