@@ -53,8 +53,17 @@ export default async function myPage() {
             width={100}
             height={100}
             src="https://academicjobs.s3.amazonaws.com/img/_misc/aca-talent-pool.png"
-            className=" mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
+            className=" mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto hidden"
             alt="AcademicJobs Job Elephant Client Center"
+          />
+        </a>
+        <a href="/auth/signup">
+          <Image
+            width={140}
+            height={110}
+            src="/signup.png"
+            className="mt-2  bg-white border-2 border-[#265882] items-center justify-center mx-auto"
+            alt="Academic Jobs sign up competition"
           />
         </a>
         <a href="/jobelephant-recruitment">
