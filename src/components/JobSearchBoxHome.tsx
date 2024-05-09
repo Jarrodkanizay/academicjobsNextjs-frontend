@@ -59,24 +59,44 @@ export default function JobSearchBox() {
           Search In Your Country
         </button>
       </div>
-      <button
-        className=" text-gray-400 text-base md:pr-6 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l from-green-400 via-green-400 to-sky-300"
-        onClick={async (event: React.FormEvent) => {
-          event.preventDefault();
-          const a: { q?: string; l?: string } = {};
-          if (keyWordRef.current && keyWordRef.current.value.trim()) {
-            a.q = keyWordRef.current.value.trim();
-          }
-          setRegion('Global');
-          const params = new URLSearchParams({
-            l: '',
-            q: encodeURIComponent(a.q || ''),
-          });
-          router.push(`/jobs?${params.toString()}`);
-        }}
-      >
-        Or Search Globally
-      </button>
+      <div className='w-full flex justify-between'>
+        <button
+          className=" underline text-gray-400 text-base md:pr-6 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l from-green-400 via-green-400 to-sky-300"
+          onClick={async (event: React.FormEvent) => {
+            event.preventDefault();
+            const a: { q?: string; l?: string } = {};
+            if (keyWordRef.current && keyWordRef.current.value.trim()) {
+              a.q = keyWordRef.current.value.trim();
+            }
+            setRegion('Global');
+            const params = new URLSearchParams({
+              l: '',
+              q: encodeURIComponent(a.q || ''),
+            });
+            router.push(`/jobs-advanced-search?${params.toString()}`);
+          }}
+        >
+          Advanced Search
+        </button>
+        <button
+          className=" text-gray-400 text-base md:pr-6 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l from-green-400 via-green-400 to-sky-300"
+          onClick={async (event: React.FormEvent) => {
+            event.preventDefault();
+            const a: { q?: string; l?: string } = {};
+            if (keyWordRef.current && keyWordRef.current.value.trim()) {
+              a.q = keyWordRef.current.value.trim();
+            }
+            setRegion('Global');
+            const params = new URLSearchParams({
+              l: '',
+              q: encodeURIComponent(a.q || ''),
+            });
+            router.push(`/jobs?${params.toString()}`);
+          }}
+        >
+          Or Search Globally
+        </button>
+      </div>
     </form>
   );
 }
