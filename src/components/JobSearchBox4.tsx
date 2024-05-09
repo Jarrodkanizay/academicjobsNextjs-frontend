@@ -9,8 +9,14 @@ interface MyComponentProps {
   q?: string;
   l?: string;
   forceClass?: string;
+  type?: string;
 }
-export default function JobSearchBox({ q, l, forceClass }: MyComponentProps) {
+export default function JobSearchBox({
+  q,
+  l,
+  forceClass,
+  type,
+}: MyComponentProps) {
   const searchParams = useSearchParams();
   const keyWordRef = useRef<HTMLInputElement>(null);
   const locationRef = useRef<HTMLInputElement>(null);
@@ -37,12 +43,16 @@ export default function JobSearchBox({ q, l, forceClass }: MyComponentProps) {
       lat: encodeURIComponent(lonlat.current?.lat),
       q: encodeURIComponent(keyWordRef.current?.value.trim() || ''),
     });
-    router.push(`/jobs?${params.toString()}`);
+    if (type === 'advancedSearch') {
+      router.push(`/jobs-advanced-search?${params.toString()}`);
+    } else {
+      router.push(`/jobs?${params.toString()}`);
+    }
   };
   return (
     <div className={`search-panel py-4 ${forceClass}`}>
       <div className="container lg:max-w-screen-lg px-4 mx-auto ">
-        <form onSubmit={handleFormSubmit}>
+        <form onSubmit={handleFormSubmit} className="flex flex-col gap-2">
           <div className="join mx-auto w-full border border-gray-200 shadow-md flex flex-col md:flex-row">
             <input
               type="text"
@@ -94,6 +104,22 @@ export default function JobSearchBox({ q, l, forceClass }: MyComponentProps) {
               </div>
             </button>
           </div>
+          {type != 'advancedSearch' && (
+            <button
+              className=" self-end underline text-gray-400 text-base md:pr-6 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l from-green-400 via-green-400 to-sky-300"
+              onClick={async (e) => {
+                e.preventDefault();
+                const params = new URLSearchParams({
+                  lon: encodeURIComponent(lonlat.current?.lon),
+                  lat: encodeURIComponent(lonlat.current?.lat),
+                  q: encodeURIComponent(keyWordRef.current?.value.trim() || ''),
+                });
+                router.push(`/jobs-advanced-search?${params.toString()}`);
+              }}
+            >
+              Advanced Search
+            </button>
+          )}
         </form>
       </div>
     </div>
