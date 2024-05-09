@@ -140,7 +140,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <h1
-              className={`text-4xl font-bold mb-8 mt-8 underline-full text-[#3b5683]`}
+              className={`text-4xl font-bold mt-12 underline-full text-[#3b5683]`}
             >
               {partnerName} Quick Post
             </h1>
@@ -218,11 +218,63 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                   )}
                 </div>
                 <div
-                  className={`p-4 border border-sky-200 bg-sky-50 ${
-                    newContact || standardMode ? 'show-form' : 'hide-form'
-                  }`}
+
+                  className={`  ${newContact || standardMode ? 'show-form' : 'hide-form'
+                    }`}
                 >
                   <div className="grid w-full items-center gap-1.5">
+                    <div className="flex gap-3">
+                      <InputBlock
+                        register={register}
+                        errors={errors}
+                        label="First Name"
+                        type="text"
+                        field="01_First_Name"
+                        forceClass="py-1 text-black"
+                        placeholder="First Name"
+                        autoComplete="given-name"
+                        hidden={newContact || standardMode ? false : true}
+                        required={newContact || standardMode ? true : false}
+                      />
+                      <InputBlock
+                        register={register}
+                        errors={errors}
+                        label="Last Name"
+                        type="text"
+                        field="01_Last_Name"
+                        forceClass="py-1 text-black"
+                        placeholder="Last Name"
+                        autoComplete="family-name"
+                        hidden={newContact || standardMode ? false : true}
+                        required={newContact || standardMode ? true : false}
+                      />
+
+                    </div>
+
+                    <InputBlock
+                      register={register}
+                      errors={errors}
+                      label="Email"
+                      type="email"
+                      field="02_Email"
+                      forceClass="py-1 text-black"
+                      placeholder="email"
+                      autoComplete="email"
+                      hidden={newContact || standardMode ? false : true}
+                      required={true}
+                    />
+                    <InputBlock
+                      register={register}
+                      errors={errors}
+                      label="Organization Name"
+                      type="text"
+                      field="01_Organisation_Name"
+                      forceClass="py-1 text-black"
+                      placeholder="Organization Name"
+                      autoComplete="organization"
+                      hidden={newContact || standardMode ? false : true}
+                      required={true}
+                    />
                     {partnerName === 'JobElephant' ? null : (
                       <>
                         <label
@@ -252,60 +304,10 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                         </select>
                       </>
                     )}
-                    <InputBlock
-                      register={register}
-                      errors={errors}
-                      label="Organization Name"
-                      type="text"
-                      field="01_Organisation_Name"
-                      forceClass=" py-3 text-black"
-                      placeholder="Organization Name"
-                      autoComplete="organization"
-                      hidden={newContact || standardMode ? false : true}
-                      required={true}
-                    />
-                  </div>
-                  <div className="grid w-full items-center gap-1.5">
-                    <InputBlock
-                      register={register}
-                      errors={errors}
-                      label="First Name"
-                      type="text"
-                      field="01_First_Name"
-                      forceClass=" py-3 text-black"
-                      placeholder="First Name"
-                      autoComplete="given-name"
-                      hidden={newContact || standardMode ? false : true}
-                      required={newContact || standardMode ? true : false}
-                    />
-                  </div>
-                  <div className="grid w-full items-center gap-1.5 mt-4">
-                    <InputBlock
-                      register={register}
-                      errors={errors}
-                      label="Last Name"
-                      type="text"
-                      field="01_Last_Name"
-                      forceClass=" py-3 text-black"
-                      placeholder="Last Name"
-                      autoComplete="family-name"
-                      hidden={newContact || standardMode ? false : true}
-                      required={newContact || standardMode ? true : false}
-                    />
-                  </div>
-                  <div className="grid w-full items-center gap-1.5 mt-4">
-                    <InputBlock
-                      register={register}
-                      errors={errors}
-                      label="Email"
-                      type="email"
-                      field="02_Email"
-                      forceClass=" py-3 text-black"
-                      placeholder="email"
-                      autoComplete="email"
-                      hidden={newContact || standardMode ? false : true}
-                      required={true}
-                    />
+
+
+
+
                   </div>
                 </div>
                 <InputBlock
@@ -314,7 +316,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                   label={institutionName}
                   type="text"
                   field="03_Institution_Name"
-                  forceClass=" py-3 text-black"
+                  forceClass=" py-1 text-black"
                   placeholder=""
                   required={true}
                 />
@@ -324,7 +326,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                   label={`Job Link URL (ie: ${urlExample})`}
                   type="text"
                   field="04_Job_Link_URL"
-                  forceClass=" py-3 text-black"
+                  forceClass=" py-1 text-black"
                   placeholder=""
                   required={true}
                 />
@@ -339,7 +341,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                     {...register('05_Notes')}
                   ></textarea>
                 </label>
-                <label className="form-control">
+                <label className="form-control ">
                   <span className="label-text text-xs pb-1">
                     Copy/paste your Job Post here
                   </span>
