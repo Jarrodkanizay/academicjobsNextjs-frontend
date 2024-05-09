@@ -10,10 +10,14 @@ import { useParams } from 'next/navigation';
 import { StarRank } from '@/components/StarRank';
 import FavoriteEmployerButton from '@/components/FavoriteEmployerButton';
 import { baseURL } from '@/lib/store/Base';
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/app/api/auth/[...nextauth]/options";
 
 
 export async function generateMetadata({ params }) {
-  const employer = await getEmployer(params.id);
+
+  const session = await getServerSession(authOptions);
+  const employer = await getEmployer({ id: params.id, userId: session?.user.id });
   if (!employer) return { title: 'not found' };
   const { company_name } = employer?.data;
   return {
@@ -23,17 +27,25 @@ export async function generateMetadata({ params }) {
     keywords: `${company_name} jobs, ${company_name} careers, ${company_name} positions,  Work at ${company_name}`,
   };
 }
-async function getEmployer(id) {
+async function getEmployer(data) {
   const response = await fetch(
-    `${baseURL}/employer/${id}`,
-    { next: { revalidate: 1 } }
+    `${baseURL}/employer`,
+    { 
+      next: { revalidate: 1 },
+      method: 'POST', // Change method to POST
+      headers: {
+        'Content-Type': 'application/json' // Specify content type
+      },
+      body: JSON.stringify(data), // Pass data as JSON string in the body
+    }
   );
   const res = await response.json();
   console.log('===========getEmployer===============', res);
   return res;
 }
 const Employer = async ({ params }) => {
-  const employer = await getEmployer(params.id);
+  const session = await getServerSession(authOptions);
+  const employer = await getEmployer({ id: params.id, userId: session?.user.id });
   if (!employer) notFound();
   let content;
   const {
@@ -132,8 +144,9 @@ const Employer = async ({ params }) => {
                 <p>
                   <StarRank ranking={ranking} size={30} border="#bbb" />
                 </p>
-                <FavoriteEmployerButton jobId={params.id} favoriteEmployerYN={favoriteEmployerYN} />
+            
               </div>
+              <FavoriteEmployerButton employerId={params.id} favoriteEmployerYN={favoriteEmployerYN} />
               <div
                 className={`md:flex-col md:gap-6 ml-[-3px] pt-6 ${headerTextColor}`}
               >

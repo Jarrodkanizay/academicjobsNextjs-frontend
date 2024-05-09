@@ -77,6 +77,20 @@ export default function Profile({
     },
     staleTime: 0,
   });
+  const {
+      data: favoriteEmployers
+  } = useQuery({
+    queryKey: ['favorites'],
+    queryFn: async () => {
+      const response = await BaseApi.post('/getFavoriteEmployers', {
+        userId: id,
+      });
+      console.log(response.data);
+      console.log('response.data.data', response.data.data);
+      return response.data.data;
+    },
+    staleTime: 0,
+  });
   /* Dummy data for testing */
   if (email === 'dan@zygadox.com') {
     firstName = 'Dan';
@@ -237,7 +251,7 @@ export default function Profile({
         <h2 className="profile">Hi {firstName || email}</h2>
         <div className="flex gap-6">
           <DashboardCard
-            title="Saved Jobs"
+            title="Saved Items"
             iconPath="/icons/heart.svg"
             href="/my_life"
           />
@@ -334,6 +348,80 @@ export default function Profile({
                       >
                         Job Post
                       </Link>
+                    </div>
+                  </div>
+                </>
+              )
+            )}
+            {favoriteEmployers?.length > 0 &&
+            favoriteEmployers.map(
+              (
+                {
+                  employerId,
+                  employer: { company_name, logo },
+
+                },
+                i
+              ) => (
+                <>
+                  <div className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
+                    <figure className="mr-2">
+                      <Image
+                        width={100}
+                        height={100}
+                        src={
+                          logo
+                            ? `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}`
+                            : '/favicon.png'
+                        }
+                        alt=""
+                      />
+                    </figure>
+                    <div className="flex flex-col justify-center">
+                      <h3 className="m-0 p-0 pr-6 mb-2 leading-tight text-sky-800">
+                        {company_name}
+                      </h3>
+                      <p className="font-bold">{company_name}</p>
+                      <p className="flex flex-row items-center gap-6">
+                        <span className="flex flex-row items-center gap-1">
+                          <Image
+                            src={'/icons/map-marker-icon.svg'}
+                            width={24}
+                            height={24}
+                            alt=""
+                          />
+                          Location
+                        </span>
+                        <span className="flex flex-row items-center gap-1">
+                          <Image
+                            src={'/icons/dollar-bills.svg'}
+                            width={24}
+                            height={24}
+                            alt=""
+                          />
+                          Salary
+                        </span>
+                        <span className="flex flex-row items-center gap-1">
+                          <Image
+                            src={'/icons/clock.svg'}
+                            width={24}
+                            height={24}
+                            alt=""
+                          />
+                          14 April 2024
+                        </span>
+                      </p>
+                    </div>
+                    <div className="flex flex-col justify-center ml-auto gap-2">
+                      {/* <button className="btn btn-error">Remove</button>
+                      <Link
+                        className="btn btn-accent"
+                        href={`/jobs/${company_name
+                          .replace(/[^a-zA-Z0-9 ]/g, '')
+                          .replace(/\s+/g, '-')}/${employerId}`}
+                      >
+                        Job Post
+                      </Link> */}
                     </div>
                   </div>
                 </>
