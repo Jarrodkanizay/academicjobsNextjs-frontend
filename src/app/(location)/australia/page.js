@@ -8,6 +8,8 @@ import AusUniLogos from '@/components/AusUniLogos';
 import Australia from '@/components/topUnis/Australia';
 import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 import { getContentRegion } from '@/actions/getContentRegion';
+import JobOfTheWeek from '@/components/JobOfTheWeek';
+
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -527,44 +529,16 @@ export default async function myPage() {
       {/* <h2 className="underline-full"> Top University Employer Rankings</h2> */}
       <div className="bg-white flex flex-col mx-auto mb-4">
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  px-1 mb-8 text-left px-4">
-          <div className="card bg-slate-300 shadow-xl">
+        <div className="card bg-slate-300 shadow-xl">
             <div className="card-body">
               <h2 className="card-title">
                 {' '}
-                Top HR Professional of the Month{' '}
+                Job Of The Week{' '}
               </h2>
 
-            </div>
-            <figure  >
-              <Image
-                width={200}
-                height={200}
-                src="https://academicjobs.s3.amazonaws.com/img/_misc/1694053173648.jpg"
-                alt="How to Land Your Dream College Job: A Step-by-Step Guide"
-                className="rounded-full"
-              />
-            </figure>
-            {/* <ul className=" p-4 pl-12 list-disc text-gray-500" >
-                    <li >University of Oxford</li>
-                    <li>	Imperial College London</li>
-                    <li> University of Cambridge</li>
-                    <li> University of Edinburgh</li>
-                    <li> King’s College London</li>
-                    </ul> */}
-
-            <ul className=" p-4 pl-12  text-gray-500 text-center font-bold">
-              <li>Karen Lamont - Curtin University</li>
-            </ul>
-
-            {/* <Link
-                      href={'/academic-talent-pool'}
-                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2 "
-                    >
-                   Nominate HR Award
-                    </Link> */}
+            </div>    
+          <JobOfTheWeek />
           </div>
-
-
 
           {/* /top-10-australian-universities */}
           <div className="">
