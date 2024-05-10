@@ -62,8 +62,8 @@ export default function JobSearchBox({ q, l, forceClass,type }: MyComponentProps
           onClick={async (e) => {
             e.preventDefault();
             const params = new URLSearchParams({
-              lon: encodeURIComponent(lonlat.current?.lon),
-              lat: encodeURIComponent(lonlat.current?.lat),
+              // lon: encodeURIComponent(lonlat.current?.lon),
+              // lat: encodeURIComponent(lonlat.current?.lat),
               q: encodeURIComponent(keyWordRef.current?.value.trim() || ''),
             });
             router.push(`/jobs-advanced-search?${params.toString()}`);
