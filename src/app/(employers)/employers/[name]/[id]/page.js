@@ -113,11 +113,14 @@ const Employer = async ({ params }) => {
               />
             </div>
             <div className="md:flex md:flex-col p-4">
+              <div className="flex">
               <h1
                 className={`text-4xl leading-[2rem] font-bold ${headerTextColor}`}
               >
                 {company_name}
               </h1>
+              <FavoriteEmployerButton className="" employerId={params.id} favoriteEmployerYN={favoriteEmployerYN} />
+              </div>
               <div className="flex gap-2">
                 {/* <p className="text-xl leading-[.75rem] font-bold text-yellow-500 ">
                   Employer Ranking -

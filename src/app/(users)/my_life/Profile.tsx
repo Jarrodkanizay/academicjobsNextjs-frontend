@@ -86,7 +86,7 @@ export default function Profile({
         userId: id,
       });
       console.log(response.data);
-      console.log('response.data.data', response.data.data);
+      console.log('Employers', response.data.data);
       return response.data.data;
     },
     staleTime: 0,
@@ -277,6 +277,7 @@ export default function Profile({
           <ProfileSideNav />
         </aside>
         <div className="main_content">
+        <h2>Jobs</h2>
           {favorites?.length > 0 &&
             favorites.map(
               (
@@ -353,12 +354,14 @@ export default function Profile({
                 </>
               )
             )}
+            <h2>Employers</h2>
             {favoriteEmployers?.length > 0 &&
             favoriteEmployers.map(
               (
                 {
                   employerId,
-                  employer: { company_name, logo },
+                  company_name,
+                  logo
 
                 },
                 i
@@ -413,15 +416,13 @@ export default function Profile({
                       </p>
                     </div>
                     <div className="flex flex-col justify-center ml-auto gap-2">
-                      {/* <button className="btn btn-error">Remove</button>
+                      {/* <button className="btn btn-error">Remove</button>*/}
                       <Link
                         className="btn btn-accent"
-                        href={`/jobs/${company_name
-                          .replace(/[^a-zA-Z0-9 ]/g, '')
-                          .replace(/\s+/g, '-')}/${employerId}`}
+                        href={`/employer/${employerId}`}
                       >
                         Job Post
-                      </Link> */}
+                      </Link> 
                     </div>
                   </div>
                 </>
