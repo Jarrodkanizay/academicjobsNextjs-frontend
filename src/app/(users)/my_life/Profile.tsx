@@ -15,6 +15,7 @@ import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
 import { Span } from 'next/dist/trace';
 import { useState } from 'react';
+import SavedItems from '@/components/profile/SavedItems'
 
 type UserProps = {
   id: number;
@@ -95,74 +96,7 @@ export default function Profile({
     },
     staleTime: 0,
   });
-  /* Dummy data for testing */
-  if (email === 'dan@zygadox.com') {
-    firstName = 'Dan';
-    lastName = 'Grant';
-    jobTitle = 'Senior Software Engineer';
-    organization = 'Academic Jobs';
-  }
-  if (email === 'zander@zygadox.com') {
-    firstName = 'Zander';
-    lastName = 'Grant';
-    jobTitle = 'Senior Constable - Police Office Guard';
-    organization = 'Victoria Police';
-  }
-  if (
-    email === 'jarrod@academicjobs.com' ||
-    email === 'jarrod@kanizay.com' ||
-    email === 'jazzakan@gmail.com'
-  ) {
-    firstName = 'Jarrod';
-    lastName = 'Kanizay';
-    jobTitle = 'CEO';
-    organization = 'Post My Job';
-  }
-  if (id === -1) {
-    firstName = 'Jane';
-    lastName = 'Doe';
-    summary =
-      'Dr. Jane Doe is a passionate and experienced marine biologist with a strong research focus on deep-sea ecology and biomimicry. Her research career has involved leading deep-sea exploration missions, discovering and studying fascinating deep-sea creatures, and utilizing biomimicry to develop innovative technologies.  Dr. Doe is committed to fostering a collaborative research environment and inspiring the next generation of marine scientists.';
-    expertise = [
-      'Deep-Sea Ecology',
-      'Biomimicry',
-      'Deep-Sea Invertebrate Zoology',
-      'Hydrothermal Vent Ecosystems',
-      'Bioluminescence',
-      'Deep-Sea Exploration Techniques (ROV Piloting, Sample Collection)',
-    ];
-    skills = [
-      'Research Grant Writing and Management (e.g., NSF, NOAA)',
-      'Scientific Publication (Authored/Co-authored XX peer-reviewed publications)',
-      'Public Outreach and Science Communication',
-      'Mentorship and Supervision of Undergraduate/Graduate Students',
-      'Teaching Experience (e.g., Undergraduate courses in Marine Biology, Deep-Sea Ecology)',
-      'Proficiency in R, MATLAB, and relevant oceanographic software',
-    ];
-    teachingPhilosophy =
-      'Dr. Doe believes in a student-centered learning environment that fosters critical thinking, problem-solving skills, and scientific curiosity.  She utilizes innovative teaching methods, including incorporating real-world research data and case studies from her deep-sea expeditions.';
-    researchPhilosophy = `The vast and unexplored depths of the ocean hold a wealth of mysteries waiting to be unveiled. My research philosophy centers on uncovering these mysteries through a blend of exploration, meticulous scientific analysis, and a drive to translate discoveries into real-world applications.
-    Here are the core principles guiding my research:
-    Deep-Sea Exploration and Discovery: I believe that pushing the boundaries of deep-sea exploration is crucial to understanding our planet's biodiversity, ecological processes, and the potential for new resources and technologies. My research focuses on utilizing cutting-edge submersible technology and sample collection techniques to access and study these previously unexplored environments.
-    Focus on Deep-Sea Ecology and Adaptations: The unique pressures, darkness, and limited resources of the deep sea have led to the evolution of fascinating adaptations in its resident organisms. My research dives deep (pun intended) into understanding these adaptations, including bioluminescence, pressure-resistant proteins, and chemosynthesis-based ecosystems.
-    Biomimicry for Innovation: Nature has already perfected solutions to many challenges we face. My research philosophy integrates biomimicry, where I translate the insights gained from studying deep-sea organisms into the development of novel technologies. This could involve creating sustainable lighting solutions inspired by bioluminescent creatures or developing new materials using the pressure-resistant proteins found in deep-sea bacteria.
-    Collaborative Research Environment: I believe in fostering a collaborative research environment where students and colleagues can contribute their expertise and learn from each other. Open communication, teamwork, and mentorship are key to achieving impactful scientific breakthroughs.
-    Public Outreach and Science Communication: Sharing the wonders and importance of the deep sea with the public is essential. I aim to translate complex scientific discoveries into engaging and accessible content through public lectures, educational outreach programs, and media engagement.`;
-    qualifications = [
-      'Earned Ph.D. in Marine Biology from Harvard University',
-      'Served as Principal Investigator on XX funded research projects',
-      'Awarded XX for outstanding research/teaching (optional)',
-      'Active member of professional organizations (e.g., The Oceanography Society, The Marine Technology Society)',
-    ];
-    profileStrength = 60;
-    location = 'Boston, MA, USA';
-    rank = 5;
-    jobTitle = 'Department of Ocean Exploration & Marine Biology';
-    organization = 'Harvard University';
-    avatar = '/users/avatar.jpg';
-    wavesOn = true;
-    bgColor = 'custom-background';
-  }
+
 
   const [selectedCard, setSelectedCard] = useState('Saved Items');
 
@@ -280,10 +214,10 @@ export default function Profile({
             onClick={() => handleCardClick('Saved Items')}
           />
           <DashboardCard
-            title="Jobs For You"
+            title="Jobs Alerts - coming soon!"
             iconPath="/icons/eyeball.svg"
             href="/my_life"
-            onClick={() => handleCardClick('Jobs For You')}
+            onClick={() => handleCardClick('Jobs Alerts')}
           />
           <DashboardCard
             title="Jobs Applied For"
@@ -302,178 +236,10 @@ export default function Profile({
 
       {/* Section below Dashboard cards */}
       {selectedCard === 'Saved Items' && (
-        // Render content for Saved Items
-        <div>
-          <section className='flex'>
-            {/* <aside className="side_nav hidden">
-          <ProfileSideNav />
-        </aside> */}
-            <div className="w-2/3">
-              <h2>Jobs</h2>
-              {favorites?.length > 0 &&
-                favorites.map(
-                  (
-                    {
-                      jobId,
-                      job: {
-                        title,
-                        employer: { company_name, logo },
-                      },
-                    },
-                    i
-                  ) => (
-                    <>
-                      <div className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
-                        <figure className="mr-2">
-                          <Image
-                            width={100}
-                            height={100}
-                            src={
-                              logo
-                                ? `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}`
-                                : '/favicon.png'
-                            }
-                            alt=""
-                          />
-                        </figure>
-                        <div className="flex flex-col justify-center">
-                          <h3 className="m-0 p-0 pr-6 mb-2 leading-tight text-sky-800">
-                            {title}
-                          </h3>
-                          <p className="font-bold">{company_name}</p>
-                          <p className="flex flex-row items-center gap-6">
-                            <span className="flex flex-row items-center gap-1">
-                              <Image
-                                src={'/icons/map-marker-icon.svg'}
-                                width={24}
-                                height={24}
-                                alt=""
-                              />
-                              Location
-                            </span>
-                            <span className="flex flex-row items-center gap-1">
-                              <Image
-                                src={'/icons/dollar-bills.svg'}
-                                width={24}
-                                height={24}
-                                alt=""
-                              />
-                              Salary
-                            </span>
-                            <span className="flex flex-row items-center gap-1">
-                              <Image
-                                src={'/icons/clock.svg'}
-                                width={24}
-                                height={24}
-                                alt=""
-                              />
-                              14 April 2024
-                            </span>
-                          </p>
-                        </div>
-                        <div className="flex flex-col justify-center ml-auto gap-2">
-                          <button className="btn btn-error">Remove</button>
-                          <Link
-                            className="btn btn-accent"
-                            href={`/jobs/${title
-                              .replace(/[^a-zA-Z0-9 ]/g, '')
-                              .replace(/\s+/g, '-')}/${jobId}`}
-                          >
-                            Job Post
-                          </Link>
-                        </div>
-                      </div>
-                    </>
-                  )
-                )}
-              <h2>Employers</h2>
-              {favoriteEmployers?.length > 0 &&
-                favoriteEmployers.map(
-                  (
-                    {
-                      employerId,
-                      company_name,
-                      logo
+          <SavedItems favorites = {favorites} favoriteEmployers = {favoriteEmployers} />
 
-                    },
-                    i
-                  ) => (
-                    <>
-                      <div className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
-                        <figure className="mr-2">
-                          <Image
-                            width={100}
-                            height={100}
-                            src={
-                              logo
-                                ? `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}`
-                                : '/favicon.png'
-                            }
-                            alt=""
-                          />
-                        </figure>
-                        <div className="flex flex-col justify-center">
-                          <h3 className="m-0 p-0 pr-6 mb-2 leading-tight text-sky-800">
-                            {company_name}
-                          </h3>
-                          <p className="font-bold">{company_name}</p>
-                          <p className="flex flex-row items-center gap-6">
-                            <span className="flex flex-row items-center gap-1">
-                              <Image
-                                src={'/icons/map-marker-icon.svg'}
-                                width={24}
-                                height={24}
-                                alt=""
-                              />
-                              Location
-                            </span>
-                            <span className="flex flex-row items-center gap-1">
-                              <Image
-                                src={'/icons/dollar-bills.svg'}
-                                width={24}
-                                height={24}
-                                alt=""
-                              />
-                              Salary
-                            </span>
-                            <span className="flex flex-row items-center gap-1">
-                              <Image
-                                src={'/icons/clock.svg'}
-                                width={24}
-                                height={24}
-                                alt=""
-                              />
-                              14 April 2024
-                            </span>
-                          </p>
-                        </div>
-                        <div className="flex flex-col justify-center ml-auto gap-2">
-                          {/* <button className="btn btn-error">Remove</button>*/}
-                          <Link
-                            className="btn btn-accent"
-                            href={`/employer/${employerId}`}
-                          >
-                            Job Post
-                          </Link>
-                        </div>
-                      </div>
-                    </>
-                  )
-                )}
-            </div>
-            <div className="w-1/3 m-4 p-2">
-              {/* <div className="listings_panel"> */}
-              <div className="listings_content">
-                <div className="search_panel">
-                  <JobSearchBox2 />
-                </div>
-                <SearchResults2 q={{ q: '', l: '' }} />
-              </div>
-              {/* </div> */}
-            </div>
-          </section>        </div>
       )}
-      {selectedCard === 'Jobs For You' && (
+      {selectedCard === 'Jobs Alerts' && (
         // Render content for Jobs For You
         <div>
           {/* Content for Jobs For You */}
@@ -487,12 +253,20 @@ export default function Profile({
       )}
       {selectedCard === 'My Profile' && (
         // Render content for Jobs Applied For
-        <div>
+        <div className="flex gap-5">
+          <div className="w-1/2">
           <h2>My Details</h2>
-          <UserProfile id={id} username={firstName} email={email} location={location}/>
+          <UserProfile
+              id={id}
+              firstName={firstName}
+              lastName={lastName}
+              email={email}
+              location={location}
+            />
+          </div>
         </div>
-      )}
 
+      )}
     </>
   );
 }
