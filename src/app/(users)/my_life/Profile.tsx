@@ -4,6 +4,8 @@ import { StarRank } from '@/components/StarRank';
 import WaveBackground from '@/components/WaveBackground';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import DashboardCard from '@/components/profile/DashboardCards';
+import UserProfile from '@/components/profile/UserProfile';
+
 import ProfileSideNav from '@/components/profile/ProfileSideNav';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,6 +14,8 @@ import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
 import { Span } from 'next/dist/trace';
+import { useState } from 'react';
+
 type UserProps = {
   id: number;
   firstName?: string;
@@ -78,7 +82,7 @@ export default function Profile({
     staleTime: 0,
   });
   const {
-      data: favoriteEmployers
+    data: favoriteEmployers
   } = useQuery({
     queryKey: ['favorites'],
     queryFn: async () => {
@@ -159,6 +163,13 @@ export default function Profile({
     wavesOn = true;
     bgColor = 'custom-background';
   }
+
+  const [selectedCard, setSelectedCard] = useState('Saved Items');
+
+  const handleCardClick = (cardTitle) => {
+    setSelectedCard(cardTitle);
+  };
+
   /* End Dummy data for testing */
   return (
     <>
@@ -166,8 +177,20 @@ export default function Profile({
         <div
           className={`container pt-0 pb-10 ${wavesOn ? 'min-h-[380px]' : ''}`}
         >
-          <h1 className="text-center">My Life, My Profile</h1>
-          <div className="flex gap-8">
+          <section className="wrapper" style={{ height: '20%', marginTop: '30px' }}>
+            <h2 className="sentence p-0 m-0">
+              <span className="mr-8">Find</span>{' '}
+
+              <div className="slidingVertical">
+                <span>Opportunity</span>
+                <span>Connections</span>
+                <span>Happiness</span>
+                <span>Opportunity</span>
+                <span>Connections</span>
+              </div>
+            </h2>
+          </section>
+          <div className="flex gap-8 mt-8">
             <div className="avatar">
               <div className="w-40 rounded-full">
                 <Image
@@ -179,9 +202,9 @@ export default function Profile({
               </div>
             </div>
             <div>
-              <StarRank ranking={rank} />
+              {/* <StarRank ranking={rank} /> */}
               <h2 className="profile p-0 m-0 flex gap-6 mt-2">
-                <span className="mt-[-6px]">
+                <span className="mt-[-6px] text-white font font-light">
                   {firstName} {lastName}
                 </span>
                 {jobTitle === '' ? null : (
@@ -228,7 +251,7 @@ export default function Profile({
                   : location}
               </p>
             </div>
-            <div className="ml-auto">
+            <div className="ml-auto hidden">
               <h2 className="p-0 m-0">Profile Strength {profileStrength}%</h2>
               <progress
                 className="progress progress-secondary"
@@ -254,192 +277,222 @@ export default function Profile({
             title="Saved Items"
             iconPath="/icons/heart.svg"
             href="/my_life"
+            onClick={() => handleCardClick('Saved Items')}
+          />
+          <DashboardCard
+            title="Jobs For You"
+            iconPath="/icons/eyeball.svg"
+            href="/my_life"
+            onClick={() => handleCardClick('Jobs For You')}
           />
           <DashboardCard
             title="Jobs Applied For"
             iconPath="/icons/folder.svg"
             href="/my_life"
+            onClick={() => handleCardClick('Jobs Applied For')}
           />
           <DashboardCard
-            title="Recently Viewed Jobs"
-            iconPath="/icons/eyeball.svg"
+            title="My Profile"
+            iconPath="/icons/users.svg"
             href="/my_life"
-          />
-          <DashboardCard
-            title="Posts"
-            iconPath="/icons/social-posts.svg"
-            href="/my_life"
+            onClick={() => handleCardClick('My Profile')}
           />
         </div>
       </section>
-      <section className="profile_grid">
-        <aside className="side_nav">
-          <ProfileSideNav />
-        </aside>
-        <div className="main_content">
-        <h2>Jobs</h2>
-          {favorites?.length > 0 &&
-            favorites.map(
-              (
-                {
-                  jobId,
-                  job: {
-                    title,
-                    employer: { company_name, logo },
-                  },
-                },
-                i
-              ) => (
-                <>
-                  <div className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
-                    <figure className="mr-2">
-                      <Image
-                        width={100}
-                        height={100}
-                        src={
-                          logo
-                            ? `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}`
-                            : '/favicon.png'
-                        }
-                        alt=""
-                      />
-                    </figure>
-                    <div className="flex flex-col justify-center">
-                      <h3 className="m-0 p-0 pr-6 mb-2 leading-tight text-sky-800">
-                        {title}
-                      </h3>
-                      <p className="font-bold">{company_name}</p>
-                      <p className="flex flex-row items-center gap-6">
-                        <span className="flex flex-row items-center gap-1">
-                          <Image
-                            src={'/icons/map-marker-icon.svg'}
-                            width={24}
-                            height={24}
-                            alt=""
-                          />
-                          Location
-                        </span>
-                        <span className="flex flex-row items-center gap-1">
-                          <Image
-                            src={'/icons/dollar-bills.svg'}
-                            width={24}
-                            height={24}
-                            alt=""
-                          />
-                          Salary
-                        </span>
-                        <span className="flex flex-row items-center gap-1">
-                          <Image
-                            src={'/icons/clock.svg'}
-                            width={24}
-                            height={24}
-                            alt=""
-                          />
-                          14 April 2024
-                        </span>
-                      </p>
-                    </div>
-                    <div className="flex flex-col justify-center ml-auto gap-2">
-                      <button className="btn btn-error">Remove</button>
-                      <Link
-                        className="btn btn-accent"
-                        href={`/jobs/${title
-                          .replace(/[^a-zA-Z0-9 ]/g, '')
-                          .replace(/\s+/g, '-')}/${jobId}`}
-                      >
-                        Job Post
-                      </Link>
-                    </div>
-                  </div>
-                </>
-              )
-            )}
-            <h2>Employers</h2>
-            {favoriteEmployers?.length > 0 &&
-            favoriteEmployers.map(
-              (
-                {
-                  employerId,
-                  company_name,
-                  logo
 
-                },
-                i
-              ) => (
-                <>
-                  <div className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
-                    <figure className="mr-2">
-                      <Image
-                        width={100}
-                        height={100}
-                        src={
-                          logo
-                            ? `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}`
-                            : '/favicon.png'
-                        }
-                        alt=""
-                      />
-                    </figure>
-                    <div className="flex flex-col justify-center">
-                      <h3 className="m-0 p-0 pr-6 mb-2 leading-tight text-sky-800">
-                        {company_name}
-                      </h3>
-                      <p className="font-bold">{company_name}</p>
-                      <p className="flex flex-row items-center gap-6">
-                        <span className="flex flex-row items-center gap-1">
+      {/* Section below Dashboard cards */}
+      {selectedCard === 'Saved Items' && (
+        // Render content for Saved Items
+        <div>
+          <section className='flex'>
+            {/* <aside className="side_nav hidden">
+          <ProfileSideNav />
+        </aside> */}
+            <div className="w-2/3">
+              <h2>Jobs</h2>
+              {favorites?.length > 0 &&
+                favorites.map(
+                  (
+                    {
+                      jobId,
+                      job: {
+                        title,
+                        employer: { company_name, logo },
+                      },
+                    },
+                    i
+                  ) => (
+                    <>
+                      <div className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
+                        <figure className="mr-2">
                           <Image
-                            src={'/icons/map-marker-icon.svg'}
-                            width={24}
-                            height={24}
+                            width={100}
+                            height={100}
+                            src={
+                              logo
+                                ? `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}`
+                                : '/favicon.png'
+                            }
                             alt=""
                           />
-                          Location
-                        </span>
-                        <span className="flex flex-row items-center gap-1">
+                        </figure>
+                        <div className="flex flex-col justify-center">
+                          <h3 className="m-0 p-0 pr-6 mb-2 leading-tight text-sky-800">
+                            {title}
+                          </h3>
+                          <p className="font-bold">{company_name}</p>
+                          <p className="flex flex-row items-center gap-6">
+                            <span className="flex flex-row items-center gap-1">
+                              <Image
+                                src={'/icons/map-marker-icon.svg'}
+                                width={24}
+                                height={24}
+                                alt=""
+                              />
+                              Location
+                            </span>
+                            <span className="flex flex-row items-center gap-1">
+                              <Image
+                                src={'/icons/dollar-bills.svg'}
+                                width={24}
+                                height={24}
+                                alt=""
+                              />
+                              Salary
+                            </span>
+                            <span className="flex flex-row items-center gap-1">
+                              <Image
+                                src={'/icons/clock.svg'}
+                                width={24}
+                                height={24}
+                                alt=""
+                              />
+                              14 April 2024
+                            </span>
+                          </p>
+                        </div>
+                        <div className="flex flex-col justify-center ml-auto gap-2">
+                          <button className="btn btn-error">Remove</button>
+                          <Link
+                            className="btn btn-accent"
+                            href={`/jobs/${title
+                              .replace(/[^a-zA-Z0-9 ]/g, '')
+                              .replace(/\s+/g, '-')}/${jobId}`}
+                          >
+                            Job Post
+                          </Link>
+                        </div>
+                      </div>
+                    </>
+                  )
+                )}
+              <h2>Employers</h2>
+              {favoriteEmployers?.length > 0 &&
+                favoriteEmployers.map(
+                  (
+                    {
+                      employerId,
+                      company_name,
+                      logo
+
+                    },
+                    i
+                  ) => (
+                    <>
+                      <div className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
+                        <figure className="mr-2">
                           <Image
-                            src={'/icons/dollar-bills.svg'}
-                            width={24}
-                            height={24}
+                            width={100}
+                            height={100}
+                            src={
+                              logo
+                                ? `https://academicjobs.s3.amazonaws.com/img/university-logo/${logo}`
+                                : '/favicon.png'
+                            }
                             alt=""
                           />
-                          Salary
-                        </span>
-                        <span className="flex flex-row items-center gap-1">
-                          <Image
-                            src={'/icons/clock.svg'}
-                            width={24}
-                            height={24}
-                            alt=""
-                          />
-                          14 April 2024
-                        </span>
-                      </p>
-                    </div>
-                    <div className="flex flex-col justify-center ml-auto gap-2">
-                      {/* <button className="btn btn-error">Remove</button>*/}
-                      <Link
-                        className="btn btn-accent"
-                        href={`/employer/${employerId}`}
-                      >
-                        Job Post
-                      </Link> 
-                    </div>
-                  </div>
-                </>
-              )
-            )}
-        </div>
-        <div className="jobs_panel">
-          {/* <div className="listings_panel"> */}
-          <div className="listings_content">
-            <div className="search_panel">
-              <JobSearchBox2 />
+                        </figure>
+                        <div className="flex flex-col justify-center">
+                          <h3 className="m-0 p-0 pr-6 mb-2 leading-tight text-sky-800">
+                            {company_name}
+                          </h3>
+                          <p className="font-bold">{company_name}</p>
+                          <p className="flex flex-row items-center gap-6">
+                            <span className="flex flex-row items-center gap-1">
+                              <Image
+                                src={'/icons/map-marker-icon.svg'}
+                                width={24}
+                                height={24}
+                                alt=""
+                              />
+                              Location
+                            </span>
+                            <span className="flex flex-row items-center gap-1">
+                              <Image
+                                src={'/icons/dollar-bills.svg'}
+                                width={24}
+                                height={24}
+                                alt=""
+                              />
+                              Salary
+                            </span>
+                            <span className="flex flex-row items-center gap-1">
+                              <Image
+                                src={'/icons/clock.svg'}
+                                width={24}
+                                height={24}
+                                alt=""
+                              />
+                              14 April 2024
+                            </span>
+                          </p>
+                        </div>
+                        <div className="flex flex-col justify-center ml-auto gap-2">
+                          {/* <button className="btn btn-error">Remove</button>*/}
+                          <Link
+                            className="btn btn-accent"
+                            href={`/employer/${employerId}`}
+                          >
+                            Job Post
+                          </Link>
+                        </div>
+                      </div>
+                    </>
+                  )
+                )}
             </div>
-            <SearchResults2 q={{ q: 'qut', l: '' }} />
-          </div>
-          {/* </div> */}
+            <div className="w-1/3 m-4 p-2">
+              {/* <div className="listings_panel"> */}
+              <div className="listings_content">
+                <div className="search_panel">
+                  <JobSearchBox2 />
+                </div>
+                <SearchResults2 q={{ q: '', l: '' }} />
+              </div>
+              {/* </div> */}
+            </div>
+          </section>        </div>
+      )}
+      {selectedCard === 'Jobs For You' && (
+        // Render content for Jobs For You
+        <div>
+          {/* Content for Jobs For You */}
         </div>
-      </section>
+      )}
+      {selectedCard === 'Jobs Applied For' && (
+        // Render content for Jobs Applied For
+        <div>
+          {/* Content for Jobs Applied For */}
+        </div>
+      )}
+      {selectedCard === 'My Profile' && (
+        // Render content for Jobs Applied For
+        <div>
+          <h2>My Details</h2>
+          <UserProfile id={id} username={firstName} email={email} location={location}/>
+        </div>
+      )}
+
     </>
   );
 }

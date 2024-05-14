@@ -481,8 +481,11 @@ export default async function myPage() {
             <div className="/academic-hub/how-to-land-your-dream-college-job-a-step-by-step-guide/">
               <div className="card bg-slate-100 shadow-xl">
                 <div className="card-body">
-                  <h2 className="card-title"> Top University Employers UK </h2>
-                </div>
+                <h2 className="mb-0 card-title">
+                    {' '}
+                    Top University Employers UK{' '}
+                  </h2>                
+                  </div>
                 <figure>
                   <Image
                     width={1280}
@@ -512,7 +515,27 @@ export default async function myPage() {
                     University of Edinburgh
                     <br />
                   </a>
-                  <a href=""> King’s College London</a>
+                  <a href="https://www.academicjobs.com/employers/king-s-college-london/3151">
+                    {' '}
+                    Kings College London
+                    <br />
+                  </a>
+                  
+                  <a href="https://www.academicjobs.com/employers/university-college-london-ucl/3135">
+                    {' '}
+                    University College London (UCL)
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/university-of-manchester/3833">
+                    {' '}
+                    University of Manchester
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/university-of-glasgow/12713">
+                    {' '}
+                    University of Glasgow
+                    <br />
+                  </a>
                 </ul>
                 {/* <Link
                   href={'/academic-hub/'}

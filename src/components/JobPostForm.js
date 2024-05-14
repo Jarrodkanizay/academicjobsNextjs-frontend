@@ -140,12 +140,12 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <h1
-              className={`text-4xl font-bold mb-8 mt-8 underline-full text-[#3b5683]`}
+              className={`text-4xl font-bold mt-8 underline-full text-[#3b5683]`}
             >
               {partnerName} Quick Post
             </h1>
             <form className=" " onSubmit={handleSubmit(onSubmit)}>
-              <div className="flex flex-col gap-4 justify-start">
+              <div className="flex flex-col gap-1 justify-start">
                 {standardMode ? null : (
                   <div className="w-full  flex flex-col items-start">
                     <label className="label-text text-xs mb-1">
@@ -217,11 +217,8 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                     </>
                   )}
                 </div>
-                <div
-                  className={`p-4 border border-sky-200 bg-sky-50 ${
-                    newContact || standardMode ? 'show-form' : 'hide-form'
-                  }`}
-                >
+                <div className={`${newContact || standardMode ? 'show-form' : 'hide-form'
+                  }`}>
                   <div className="grid w-full items-center gap-1.5">
                     {partnerName === 'JobElephant' ? null : (
                       <>
@@ -258,49 +255,51 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                       label="Organization Name"
                       type="text"
                       field="01_Organisation_Name"
-                      forceClass=" py-3 text-black"
+                      forceClass=" text-black"
                       placeholder="Organization Name"
                       autoComplete="organization"
                       hidden={newContact || standardMode ? false : true}
                       required={true}
                     />
                   </div>
-                  <div className="grid w-full items-center gap-1.5">
-                    <InputBlock
-                      register={register}
-                      errors={errors}
-                      label="First Name"
-                      type="text"
-                      field="01_First_Name"
-                      forceClass=" py-3 text-black"
-                      placeholder="First Name"
-                      autoComplete="given-name"
-                      hidden={newContact || standardMode ? false : true}
-                      required={newContact || standardMode ? true : false}
-                    />
+                  <div className="flex gap-2 mt-1">
+                    <div className="grid w-full items-center">
+                      <InputBlock
+                        register={register}
+                        errors={errors}
+                        label="First Name"
+                        type="text"
+                        field="01_First_Name"
+                        forceClass=" text-black"
+                        placeholder="First Name"
+                        autoComplete="given-name"
+                        hidden={newContact || standardMode ? false : true}
+                        required={newContact || standardMode ? true : false}
+                      />
+                    </div>
+                    <div className="grid w-full items-center">
+                      <InputBlock
+                        register={register}
+                        errors={errors}
+                        label="Last Name"
+                        type="text"
+                        field="01_Last_Name"
+                        forceClass=" text-black"
+                        placeholder="Last Name"
+                        autoComplete="family-name"
+                        hidden={newContact || standardMode ? false : true}
+                        required={newContact || standardMode ? true : false}
+                      />
+                    </div>
                   </div>
-                  <div className="grid w-full items-center gap-1.5 mt-4">
-                    <InputBlock
-                      register={register}
-                      errors={errors}
-                      label="Last Name"
-                      type="text"
-                      field="01_Last_Name"
-                      forceClass=" py-3 text-black"
-                      placeholder="Last Name"
-                      autoComplete="family-name"
-                      hidden={newContact || standardMode ? false : true}
-                      required={newContact || standardMode ? true : false}
-                    />
-                  </div>
-                  <div className="grid w-full items-center gap-1.5 mt-4">
+                  <div className="grid w-full items-center gap-1.5 mt-1">
                     <InputBlock
                       register={register}
                       errors={errors}
                       label="Email"
                       type="email"
                       field="02_Email"
-                      forceClass=" py-3 text-black"
+                      forceClass=" text-black"
                       placeholder="email"
                       autoComplete="email"
                       hidden={newContact || standardMode ? false : true}
@@ -314,7 +313,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                   label={institutionName}
                   type="text"
                   field="03_Institution_Name"
-                  forceClass=" py-3 text-black"
+                  forceClass=" text-black"
                   placeholder=""
                   required={true}
                 />
@@ -324,7 +323,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                   label={`Job Link URL (ie: ${urlExample})`}
                   type="text"
                   field="04_Job_Link_URL"
-                  forceClass=" py-3 text-black"
+                  forceClass=" text-black"
                   placeholder=""
                   required={true}
                 />
@@ -393,21 +392,25 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
             ) : null}
           </div>
           {/* Right panel */}
-          <div>
-            <h2 className="mt-8">
-              <Speedo size={60} />
-              Post a job in 32 seconds saving you 8 minutes each time!{' '}
-            </h2>
-            <h3 className={`${textColor} mb-4`}>
+          <div className='relative'>
+            <div className="flex mt-8">
+              <Speedo size={80} />
+              <h2 className="ml-4">
+                Post a job in 32 seconds saving you 8 minutes each time!{' '}
+              </h2>
+            </div>
+            {/* <h3 className={`${textColor} mb-4`}>
               Welcome to the new {partnerName} Quick Job Post Technology form.
-            </h3>
-            <Image
-              width={800}
-              height={800}
-              src={partnerImage}
-              className=""
-              alt="AcademicJobs and JobElephant Partnership"
-            />
+            </h3> */}
+            <div className='=absolute inset-0 flex justify-center items-center'>
+              <Image
+                width={500}
+                height={500}
+                src={partnerImage}
+                className="object-containr"
+                alt="AcademicJobs and JobElephant Partnership"
+              />
+            </div>
             <div className="prose">
               <p className="mt-4">
                 The average time to Post a Job and fill out a form on the major
