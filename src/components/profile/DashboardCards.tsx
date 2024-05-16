@@ -17,7 +17,7 @@ const DashboardCard = ({
       onClick={onClick}
     >
       <Image src={iconPath} alt="icon" width={30} height={30} />
-      <span>{title}</span>
+      <span className="md:block hidden">{title}</span>
     </Link>
   );
 };

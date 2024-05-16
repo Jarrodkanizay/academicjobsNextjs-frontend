@@ -4,11 +4,12 @@ import { StarRank } from '@/components/StarRank';
 import WaveBackground from '@/components/WaveBackground';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import DashboardCard from '@/components/profile/DashboardCards';
-import UserProfile from '@/components/profile/UserProfile';
 
 import ProfileSideNav from '@/components/profile/ProfileSideNav';
 import Image from 'next/image';
 import Link from 'next/link';
+import UserProfile from '@/components/profile/UserProfile';
+
 // import JobSearchBox2 from '@/components/JobSearchBox2';
 // import SearchResults from '@/components/SearchResults';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
@@ -16,6 +17,8 @@ import { BaseApi } from '@/lib/store/Base';
 import { Span } from 'next/dist/trace';
 import { useState } from 'react';
 import SavedItems from '@/components/profile/SavedItems'
+import DashboardMenu from '@/components/DashboardMenu'
+
 
 type UserProps = {
   id: number;
@@ -104,14 +107,13 @@ export default function Profile({
     setSelectedCard(cardTitle);
   };
 
-  /* End Dummy data for testing */
   return (
     <>
       <section className={`${bgColor} full-width mb-16`}>
         <div
           className={`container pt-0 pb-10 ${wavesOn ? 'min-h-[380px]' : ''}`}
         >
-          <section className="wrapper" style={{ height: '20%', marginTop: '30px' }}>
+          <section className="wrapper hidden md:block" style={{ height: '20%', marginTop: '30px' }}>
             <h2 className="sentence p-0 m-0">
               <span className="mr-8">Find</span>{' '}
 
@@ -128,14 +130,15 @@ export default function Profile({
             <div className="avatar">
               <div className="w-40 rounded-full">
                 <Image
-                  width={160}
-                  height={160}
+                  width={140}
+                  height={140}
                   src={avatar}
                   alt="User Avatar"
                 />
+                
               </div>
             </div>
-            <div>
+            <div className="hidden md:block">
               {/* <StarRank ranking={rank} /> */}
               <h2 className="profile p-0 m-0 flex gap-6 mt-2">
                 <span className="mt-[-6px] text-white font font-light">
@@ -185,7 +188,7 @@ export default function Profile({
                   : location}
               </p>
             </div>
-            <div className="ml-auto hidden">
+            {/* <div className="ml-auto">
               <h2 className="p-0 m-0">Profile Strength {profileStrength}%</h2>
               <progress
                 className="progress progress-secondary"
@@ -195,68 +198,127 @@ export default function Profile({
               <Link href="/settings" className="p-0 m-0">
                 Edit Profile
               </Link>
-            </div>
+            </div> */}
           </div>
+          <div className="md:hidden block">
+              {/* <StarRank ranking={rank} /> */}
+              <h2 className="profile p-0 m-0 flex gap-6 mt-2">
+                <span className="mt-[-6px] text-white font font-light">
+                  {firstName} {lastName}
+                </span>
+                {jobTitle === '' ? null : (
+                  <span>
+                    <p className="text-white flex gap-2 items-end p-0 m-0">
+                      <Image
+                        src={'/icons/job-title.svg'}
+                        width={24}
+                        height={24}
+                        alt=""
+                      />{' '}
+                      <span className="inline_heading">{jobTitle}</span>
+                    </p>
+                  </span>
+                )}
+              </h2>
+              {email === '' ? null : (
+                <p className="text-white flex gap-2 items-center">
+                  <Image
+                    src={'/icons/email-at-symbol.svg'}
+                    width={24}
+                    height={24}
+                    alt=""
+                  />{' '}
+                  <span className="inline_heading">{email}</span>
+                </p>
+              )}
+              {organization === '' ? null : (
+                <p className="text-white flex gap-2 items-center">
+                  <Image
+                    src={'/icons/college-icon.svg'}
+                    width={24}
+                    height={24}
+                    alt=""
+                  />{' '}
+                  <span className="inline_heading">{organization}</span>
+                </p>
+              )}
+
+              <p className="text-white flex gap-2 items-center">
+                <MapMarkerIcon width={26} height={26} />
+                {location === ''
+                  ? 'Add location here'
+                  : location}
+              </p>
+            </div>
         </div>
         {wavesOn ? <WaveBackground /> : null}
       </section>
       <section
         title="dashboard"
-        className={`${wavesOn ? 'mt-[-96px]' : ''}
-`}
+        className={`${wavesOn ? 'mt-[-96px]' : ''}`}
       >
-        <h2 className="profile">Hi {firstName || email}</h2>
-        <div className="flex gap-6">
-          <DashboardCard
+        {/* <h2 className="profile">Hi {firstName || email}</h2> */}
+        <div className="flex gap-6 mt-10">
+        <DashboardCard
             title="Saved Items"
             iconPath="/icons/heart.svg"
             href="/my_life"
             onClick={() => handleCardClick('Saved Items')}
           />
           <DashboardCard
-            title="Jobs Alerts - coming soon!"
+            title="Jobs Alerts - Coming Soon!"
             iconPath="/icons/eyeball.svg"
             href="/my_life"
             onClick={() => handleCardClick('Jobs Alerts')}
+
           />
           <DashboardCard
             title="Jobs Applied For"
             iconPath="/icons/folder.svg"
             href="/my_life"
             onClick={() => handleCardClick('Jobs Applied For')}
+
           />
+
           <DashboardCard
             title="My Profile"
             iconPath="/icons/users.svg"
             href="/my_life"
             onClick={() => handleCardClick('My Profile')}
+
           />
         </div>
       </section>
 
       {/* Section below Dashboard cards */}
       {selectedCard === 'Saved Items' && (
-          <SavedItems favorites = {favorites} favoriteEmployers = {favoriteEmployers} />
+        <div>
+          <h2 className="md:hidden block">Saved Items</h2>
+          <SavedItems favorites={favorites} favoriteEmployers={favoriteEmployers} />
+        </div>
+        
 
       )}
       {selectedCard === 'Jobs Alerts' && (
         // Render content for Jobs For You
         <div>
+          <h2 className="md:hidden block">Job Alerts</h2>
           {/* Content for Jobs For You */}
         </div>
       )}
       {selectedCard === 'Jobs Applied For' && (
         // Render content for Jobs Applied For
         <div>
+          <h2 className="md:hidden block">Jobs Applied For</h2>
           {/* Content for Jobs Applied For */}
         </div>
       )}
       {selectedCard === 'My Profile' && (
         // Render content for Jobs Applied For
         <div className="flex gap-5">
-          <div className="w-1/2">
-          <h2>My Details</h2>
-          <UserProfile
+          <div className="w-full md:w-1/2">
+            <h2>My Details</h2>
+            <UserProfile
               id={id}
               firstName={firstName}
               lastName={lastName}
@@ -265,8 +327,7 @@ export default function Profile({
             />
           </div>
         </div>
-
       )}
-    </>
-  );
-}
+      </>
+    );
+  }

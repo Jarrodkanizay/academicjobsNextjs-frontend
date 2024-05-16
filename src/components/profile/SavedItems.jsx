@@ -7,11 +7,11 @@ import SearchResults2 from '@/components/SearchResults2';
 const SavedItems = ({ favorites, favoriteEmployers }) => {
   return (
     <div>
-      <section className="flex">
+      <section className="md:flex">
         {/* <aside className="side_nav hidden">
           <ProfileSideNav />
         </aside> */}
-        <div className="w-2/3">
+        <div className="md:w-2/3 w-full">
           
           {favorites?.length > 0 &&
             favorites.map(
@@ -25,7 +25,7 @@ const SavedItems = ({ favorites, favoriteEmployers }) => {
                 },
                 i
               ) => (
-                <><h2>Jobs</h2>
+                <><h3>Jobs</h3>
                 <div key={i} className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
                         <figure className="mr-2">
                             <Image
@@ -42,7 +42,7 @@ const SavedItems = ({ favorites, favoriteEmployers }) => {
                             </h3>
                             <p className="font-bold">{company_name}</p>
                             <p className="flex flex-row items-center gap-6">
-                                <span className="flex flex-row items-center gap-1">
+                                {/* <span className="flex flex-row items-center gap-1">
                                     <Image
                                         src={'/icons/map-marker-icon.svg'}
                                         width={24}
@@ -65,7 +65,7 @@ const SavedItems = ({ favorites, favoriteEmployers }) => {
                                         height={24}
                                         alt="" />
                                     14 April 2024
-                                </span>
+                                </span> */}
                             </p>
                         </div>
                         <div className="flex flex-col justify-center ml-auto gap-2">
@@ -90,7 +90,8 @@ const SavedItems = ({ favorites, favoriteEmployers }) => {
                 },
                 i
               ) => (
-                <><h2>Employers</h2><div key={i} className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
+                <><h3>Employers</h3>
+                <div key={i} className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
                         <figure className="mr-2">
                             <Image
                                 width={100}
@@ -106,7 +107,7 @@ const SavedItems = ({ favorites, favoriteEmployers }) => {
                             </h3>
                             <p className="font-bold">{company_name}</p>
                             <p className="flex flex-row items-center gap-6">
-                                <span className="flex flex-row items-center gap-1">
+                                {/* <span className="flex flex-row items-center gap-1">
                                     <Image
                                         src={'/icons/map-marker-icon.svg'}
                                         width={24}
@@ -129,7 +130,7 @@ const SavedItems = ({ favorites, favoriteEmployers }) => {
                                         height={24}
                                         alt="" />
                                     14 April 2024
-                                </span>
+                                </span> */}
                             </p>
                         </div>
                         <div className="flex flex-col justify-center ml-auto gap-2">
@@ -145,9 +146,9 @@ const SavedItems = ({ favorites, favoriteEmployers }) => {
               )
             )}
         </div>
-        <div className="w-1/3 m-4 p-2">
+        <div className="md:w-1/3 w-full md:m-4 p-2">
           <div className="listings_content">
-            <div className="search_panel">
+            <div className="">
               <JobSearchBox2 />
             </div>
             <SearchResults2 q={{ q: '', l: '' }} />
