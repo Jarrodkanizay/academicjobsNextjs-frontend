@@ -10,6 +10,8 @@ import AusUniLogos from '@/components/AusUniLogos';
 import AmericaUniLogos from '@/components/AmericaUniLogos';
 import { getContentRegion } from '@/actions/getContentRegion';
 import TopJobs from '@/components/TopJobs';
+import JobOfTheWeek from '@/components/JobOfTheWeek';
+
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -345,6 +347,8 @@ export default async function myPage() {
           </div>
         </div>
       </div>
+      <h2 className="underline-full">Job of the week</h2>
+      <JobOfTheWeek />
       <div className=" mx-auto mt-8 mb-8">
         <h2 className="underline-full"> Top University Employer Rankings</h2>
         <div className="bg-white flex flex-col">
@@ -352,8 +356,7 @@ export default async function myPage() {
             <div className="/academic-hub/happiness-and-academics/">
               <div className="card bg-slate-100 shadow-xl">
                 <div className="card-body">
-                  <h2 className="card-title"> Top University Employers USA </h2>
-                  <a className=" text-gray-400"> 10 Dec, 2023</a>
+                  <h2 className="mb-0 card-title"> Top University Employers USA </h2>
                 </div>
                 <figure>
                   <Image
@@ -379,11 +382,28 @@ export default async function myPage() {
                   <a href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105">
                     {' '}
                     University of California Berkeley (UCB)
+                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/caltech/3128">
                     {' '}
                     California Institute of Technology (Caltech)
+                    <br />
                   </a>
+                  <a href="https://www.academicjobs.com/employers/yale-university/3125">
+                    {' '}
+                    Yale University
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/princeton-university/3104">
+                    {' '}
+                    Princeton University
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/columbia-university/3127">
+                    {' '}
+                    Columbia University
+                  </a>
+
                 </ul>
                 {/* <Link
                   href={'/academic-hub/'}
@@ -397,11 +417,10 @@ export default async function myPage() {
             <div className="">
               <div className="card bg-slate-100 shadow-xl">
                 <div className="card-body">
-                  <h2 className="card-title">
+                  <h2 className="mb-0 card-title">
                     {' '}
                     Top University Employers Australia{' '}
                   </h2>
-                  <a className=" text-gray-400"> 10 Dec, 2023</a>
                 </div>
                 <figure>
                   <Image
@@ -434,6 +453,21 @@ export default async function myPage() {
                   <a href="https://www.academicjobs.com/employers/monash-university/3182/">
                     {' '}
                     Monash University
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/the-university-of-western-australia/3173">
+                    {' '}
+                    University Western Australia (UWA)
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/the-university-of-queensland/3172">
+                    {' '}
+                    The University of Queensland
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/the-university-of-tasmania-utas-/3867">
+                    {' '}
+                    The University of Tasmania (UTAS)
                   </a>
                 </ul>
                 {/* <Link
@@ -447,9 +481,11 @@ export default async function myPage() {
             <div className="/academic-hub/how-to-land-your-dream-college-job-a-step-by-step-guide/">
               <div className="card bg-slate-100 shadow-xl">
                 <div className="card-body">
-                  <h2 className="card-title"> Top University Employers UK </h2>
-                  <a className=" text-gray-400"> 06 Dec, 2023</a>
-                </div>
+                <h2 className="mb-0 card-title">
+                    {' '}
+                    Top University Employers UK{' '}
+                  </h2>                
+                  </div>
                 <figure>
                   <Image
                     width={1280}
@@ -479,7 +515,27 @@ export default async function myPage() {
                     University of Edinburgh
                     <br />
                   </a>
-                  <a href=""> King’s College London</a>
+                  <a href="https://www.academicjobs.com/employers/king-s-college-london/3151">
+                    {' '}
+                    Kings College London
+                    <br />
+                  </a>
+                  
+                  <a href="https://www.academicjobs.com/employers/university-college-london-ucl/3135">
+                    {' '}
+                    University College London (UCL)
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/university-of-manchester/3833">
+                    {' '}
+                    University of Manchester
+                    <br />
+                  </a>
+                  <a href="https://www.academicjobs.com/employers/university-of-glasgow/12713">
+                    {' '}
+                    University of Glasgow
+                    <br />
+                  </a>
                 </ul>
                 {/* <Link
                   href={'/academic-hub/'}

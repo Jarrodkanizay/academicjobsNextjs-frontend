@@ -4,6 +4,8 @@ import { StarRank } from '@/components/StarRank';
 import WaveBackground from '@/components/WaveBackground';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import DashboardCard from '@/components/profile/DashboardCards';
+import UserProfile from '@/components/profile/UserProfile';
+
 import ProfileSideNav from '@/components/profile/ProfileSideNav';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -85,7 +87,7 @@ export default function Profile({
     staleTime: 0,
   });
   const {
-      data: favoriteEmployers
+    data: favoriteEmployers
   } = useQuery({
     queryKey: ['favorites'],
     queryFn: async () => {
@@ -93,7 +95,7 @@ export default function Profile({
         userId: id,
       });
       console.log(response.data);
-      console.log('response.data.data', response.data.data);
+      console.log('Employers', response.data.data);
       return response.data.data;
     },
     staleTime: 0,
@@ -140,7 +142,7 @@ export default function Profile({
             <div className="hidden md:block">
               {/* <StarRank ranking={rank} /> */}
               <h2 className="profile p-0 m-0 flex gap-6 mt-2">
-                <span className="mt-[-6px]">
+                <span className="mt-[-6px] text-white font font-light">
                   {firstName} {lastName}
                 </span>
                 {jobTitle === '' ? null : (
@@ -257,8 +259,8 @@ export default function Profile({
         className={`${wavesOn ? 'mt-[-96px]' : ''}`}
       >
         {/* <h2 className="profile">Hi {firstName || email}</h2> */}
-        <div className="flex md:gap-6 gap-2 mt-10">
-          <DashboardCard
+        <div className="flex gap-6">
+        <DashboardCard
             title="Saved Items"
             iconPath="/icons/heart.svg"
             href="/my_life"
@@ -278,6 +280,7 @@ export default function Profile({
             iconPath="/icons/social-posts.svg"
             href="/my_life"
           />
+        </div>
         </div>
       </section>
 
@@ -317,7 +320,6 @@ export default function Profile({
               location={location}
             />
           </div>
-          {/* </div> */}
         </div>
       )}
       </>
