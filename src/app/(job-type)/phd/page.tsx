@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import SearchResults from '@/components/SearchResults';
+import SearchResults1 from '@/components/SearchResults1';
 import JobSearchBox from '@/components/JobSearchBox';
 import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
@@ -62,7 +62,19 @@ export default function myPage() {
         <div className="listings_panel">
           <div className="listings_content">
             {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'phd' || 0 }} />
+            {/* <SearchResults q={{ q: 'phd' || 0 }} /> */}
+            <SearchResults1
+              q={{
+                filter1: [
+                  {
+                    category: 'master_category_job_type',
+                    filter: 'Student / Phd Jobs',
+                  },
+                ],
+                q: '',
+                l: '',
+              }}
+            />
           </div>
         </div>
       </section>

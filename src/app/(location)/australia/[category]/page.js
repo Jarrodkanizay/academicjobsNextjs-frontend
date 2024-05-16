@@ -1,46 +1,33 @@
 import Link from 'next/link';
 import { regionData } from '@/data/australiaPositions';
-import SearchResults from '@/components/SearchResults';
+import SearchResults1 from '@/components/SearchResults1';
 import JobSearchBox from '@/components/JobSearchBox';
 import TalentPool from '@/components/TalentPoolCTA';
 import JobFilter from '@/components/JobFilter';
 // import type { Metadata } from 'next';
-
 const regionName = 'Australia';
-
-type MetadataTypes = {
-  Name?: string | undefined;
-  Title?: string | undefined;
-  Description?: string | undefined;
-  Keyword?: string | undefined;
-  content?: any | undefined;
-};
-
-export async function generateMetadata({ params, searchParams }: any) {
+export async function generateMetadata({ params, searchParams }) {
   // console.log(params)
   let { category } = params;
   // console.log(regionData)
   // console.log(category);
   category = category?.replace(/-/g, ' ');
   // console.log(category);
-
   const {
     Name = '',
     Title = '',
     Description = '',
     Keyword = '',
-    content: content1 = '',
+    content: content1 = ''
   } = regionData.find((item) => item.Name === category) || {};
-
   return {
     title: Title,
     description: Description,
     keywords: Keyword,
   };
 }
-
 //const Lecturer = () => {
-export default function Page({ params, searchParams }: any) {
+export default function Page({ params, searchParams }) {
   // console.log('````````````````````params````````````````````');
   // console.log(params);
   let { category } = params;
@@ -48,17 +35,22 @@ export default function Page({ params, searchParams }: any) {
   // console.log(category);
   category = category?.replace(/-/g, ' ');
   // console.log(category);
-
-  const {
+  let {
     Name = '',
     Title = '',
     Description = '',
     Keyword = '',
     content: content1 = '',
+    category2 = '',
+    filter2 = '',
   } = regionData.find((item) => item.Name === category) || {};
-
+  console.log("-------------------------------------------------------------------")
+  console.log(category2, filter2)
+  console.log(Name, category)
+  if (category2 && filter2) {
+    Name = ''
+  }
   const paras = content1.split('\n');
-
   let content;
   //console.log(Name);
   //const { logo, company_name, website, company_description, location } = data
@@ -68,7 +60,6 @@ export default function Page({ params, searchParams }: any) {
       {/* <Link className="text-[#f4a10c] " href="/canada-positions/">
         View all Lecturer Jobs →
       </Link> */}
-
       <div className="bg-slate-200 full-width">
         <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
           <h1 className="md:text-6xl font-bold md:text-right text-gray-500 pb-4 capitalize m-0">
@@ -80,13 +71,11 @@ export default function Page({ params, searchParams }: any) {
                 {para}
               </p>
             ))}
-               <TalentPool  />
+            <TalentPool />
           </div>
         </div>
       </div>
-
-      <JobSearchBox  />
-
+      <JobSearchBox />
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">
           <div className="filters_content">
@@ -95,12 +84,22 @@ export default function Page({ params, searchParams }: any) {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-          <SearchResults q={{ q: Name, l: regionName }} />
+            {/* <SearchResults q={{ q: Name, l: regionName }} /> */}
+            <SearchResults1
+              q={{
+                filter1: [
+                  {
+                    category: category2,
+                    filter: filter2,
+                  },
+                ],
+                q: Name,
+                l: regionName,
+              }}
+            />
           </div>
         </div>
       </section>
-
-    
     </main>
   );
   return <div className="overflow-y w-full">{content}</div>;

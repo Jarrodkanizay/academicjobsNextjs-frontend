@@ -75,6 +75,8 @@ export const regionData = [
     content: `Seek your perfect human resource position through Australia’s best job board! At Academic Jobs we offer the most renowned HR jobs at the top Australian universities. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
   
   The No.1 job board for HR professionals in Australian universities. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
+    category2: 'master_category_job_type',
+    filter2: 'Human Resources',
   },
   {
     Name: `human_resources`,
