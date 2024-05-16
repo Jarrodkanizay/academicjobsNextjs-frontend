@@ -236,16 +236,16 @@ export default function Header() {
 
               }
 
-              <a className="btn btn-aj w-full mt-4" href="/jobs">
+              <a className="btn btn-aj w-full mt-4 h820:hidden" href="/jobs">
                 Search Globally
               </a>
-              <details class="w-full text-center bg-gray-300 open:bg-[amber-200] duration-300 rounded-3xl font-bold shadow-xl">
-                <summary class="py-2">Search In Your Country</summary>
+              <details className="w-full text-center bg-gray-300 open:bg-[amber-200] duration-300 rounded-3xl font-bold shadow-xl h820:hidden">
+                <summary className="py-2">Search In Your Country</summary>
                 <a
-                  className={`md:w-52  dropdown-content z-[1] menu p-2  bg-slate-100  w-31 } `}
+                  className="md:w-52 dropdown-content z-[1] menu p-2 bg-slate-100 w-31"
                 >
-                  <div className="  text-gray-900 relative z-10">
-                    <ul className=" font-light text-[0.875rem] z-99  min-w-[10rem] overflow-y-auto h-[200px] py-1 bg-white rounded-lg ">
+                  <div className="text-gray-900 relative z-10">
+                    <ul className="font-light text-[0.875rem] z-99 min-w-[10rem] overflow-y-auto h-[200px] py-1 bg-white rounded-lg">
                       {Object.keys(countryMappings1).map((key) => (
                         <li className="navbar__item" key={key}>
                           <DispatchLink
