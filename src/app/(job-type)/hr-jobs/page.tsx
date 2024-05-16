@@ -72,7 +72,7 @@ export default function myPage() {
         </ul>
       </div>
 
-      <div className="md:flex hidden grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
+      {/* <div className="md:flex hidden grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
         <iframe
           className=" aspect-video  "
           src="https://www.youtube.com/embed/zA4K1-QmrO4?si=FeSGIGczCj2ZZkwL"
@@ -88,7 +88,7 @@ export default function myPage() {
           src="https://www.youtube.com/embed/xiCacfu7Y7Y?si=iC3XrZQZ6o1cCluc"
           title="YouTube video player"
         ></iframe>
-      </div>
+      </div> */}
       <JobSearchBox q="" forceClass="my-6" />
 
       <section className="jobs_grid job_post_search_container">

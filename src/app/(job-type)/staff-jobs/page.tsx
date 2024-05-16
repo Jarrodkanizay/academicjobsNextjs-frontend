@@ -1,4 +1,4 @@
-import SearchResults from '@/components/SearchResults';
+import SearchResults1 from '@/components/SearchResults1';
 import JobSearchBox from '@/components/JobSearchBox';
 import admin from '@/data/admin.json';
 import Link from 'next/link';
@@ -26,7 +26,8 @@ export default function myPage() {
 
           <div className="">
             <p className="px-7 mb-4 mt-1">
-              Find all university staff jobs on academic jobs. Search University administration staff and support roles at the best universities.
+              Find all university staff jobs on academic jobs. Search University
+              administration staff and support roles at the best universities.
               Seek your perfect admin position through the world’s best job
               board! At Academic Jobs we offer the most renowned Higher Ed jobs
               at the top universities. Positions in admin will provide you with
@@ -58,7 +59,9 @@ export default function myPage() {
               className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
               key={key}
             >
-              <Link href={`/staff-jobs/${Name?.replace(/\s+/g, '-')}/`}>{Name}</Link>
+              <Link href={`/staff-jobs/${Name?.replace(/\s+/g, '-')}/`}>
+                {Name}
+              </Link>
             </li>
           ))}
         </ul>
@@ -74,7 +77,20 @@ export default function myPage() {
         <div className="listings_panel">
           <div className="listings_content">
             {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'admin' || 0 }} />
+            {/* <SearchResults q={{ q: 'admin' || 0 }} /> */}
+
+            <SearchResults1
+              q={{
+                filter1: [
+                  {
+                    category: 'master_category_job_type',
+                    filter: 'Staff / Administration',
+                  },
+                ],
+                q: '',
+                l: '',
+              }}
+            />
           </div>
         </div>
       </section>
