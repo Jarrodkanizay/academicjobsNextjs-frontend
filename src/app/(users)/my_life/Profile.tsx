@@ -4,7 +4,6 @@ import { StarRank } from '@/components/StarRank';
 import WaveBackground from '@/components/WaveBackground';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import DashboardCard from '@/components/profile/DashboardCards';
-import UserProfile from '@/components/profile/UserProfile';
 
 import ProfileSideNav from '@/components/profile/ProfileSideNav';
 import Image from 'next/image';
@@ -259,28 +258,35 @@ export default function Profile({
         className={`${wavesOn ? 'mt-[-96px]' : ''}`}
       >
         {/* <h2 className="profile">Hi {firstName || email}</h2> */}
-        <div className="flex gap-6">
+        <div className="flex gap-6 mt-10">
         <DashboardCard
             title="Saved Items"
             iconPath="/icons/heart.svg"
             href="/my_life"
+            onClick={() => handleCardClick('Saved Items')}
+          />
+          <DashboardCard
+            title="Jobs Alerts - Coming Soon!"
+            iconPath="/icons/eyeball.svg"
+            href="/my_life"
+            onClick={() => handleCardClick('Jobs Alerts')}
+
           />
           <DashboardCard
             title="Jobs Applied For"
             iconPath="/icons/folder.svg"
             href="/my_life"
+            onClick={() => handleCardClick('Jobs Applied For')}
+
           />
+
           <DashboardCard
-            title="Recently Viewed Jobs"
-            iconPath="/icons/eyeball.svg"
+            title="My Profile"
+            iconPath="/icons/users.svg"
             href="/my_life"
+            onClick={() => handleCardClick('My Profile')}
+
           />
-          <DashboardCard
-            title="Posts"
-            iconPath="/icons/social-posts.svg"
-            href="/my_life"
-          />
-        </div>
         </div>
       </section>
 
@@ -310,7 +316,7 @@ export default function Profile({
       {selectedCard === 'My Profile' && (
         // Render content for Jobs Applied For
         <div className="flex gap-5">
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <h2>My Details</h2>
             <UserProfile
               id={id}
