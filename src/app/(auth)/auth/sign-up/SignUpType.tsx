@@ -34,7 +34,7 @@ const SimpleCard = ({
             className="rounded-xl mb-8"
           />
         </figure>
-        <h4>{description}</h4>
+        <h4 className="md:block hidden">{description}</h4>
         <div className="card-actions flex gap-4">
           {btnSecondaryText !== '' ? (
             <a className="btn btn-outline rounded-full" href={btnSecondaryLink}>
