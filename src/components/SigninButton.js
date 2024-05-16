@@ -1,5 +1,4 @@
 'use client';
-
 import { signIn, useSession } from 'next-auth/react';
 import Link from 'next/link';
 import { Button } from './ui/button';
@@ -36,16 +35,12 @@ const SigninButton = () => {
                 </AvatarFallback>
               </Avatar>
             </DropdownMenuTrigger>
-            {/* <DropdownMenuLabel>My Account</DropdownMenuLabel> */}
 
-            <DropdownMenuContent className="w-60" align="end">
+            <DropdownMenuContent className="w-60 z-99999" align="end">
               <DropdownMenuItem>{`${session.user.email}`}</DropdownMenuItem>
               <DropdownMenuSeparator />
               <Link href="/my_life">
                 <DropdownMenuItem>My Life</DropdownMenuItem>
-              </Link>
-              <Link href="/settings">
-                <DropdownMenuItem>Settings</DropdownMenuItem>
               </Link>
               <LogoutButton>
                 <DropdownMenuItem>
@@ -62,13 +57,6 @@ const SigninButton = () => {
           <Link href={'/auth/sign-up'}>Sign Up</Link>
         </>
       )}
-      {/* {session && session.user?.userRole == 'EMPLOYER' ? (
-        <Link href="/post">
-          <Button variant="outline">Post a job</Button>
-        </Link>
-      ) : (
-        <></>
-      )} */}
     </div>
   );
 };

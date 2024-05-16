@@ -9,6 +9,8 @@ import DispatchLink from '@/components/DispatchLink';
 import { useStore } from '@/lib/store/store';
 import HamburgerMenuIcon from '@/components/icons/HamburgerMenuIcon';
 import useLocation from '@/utils/useLocation';
+import { signIn, signOut, useSession } from 'next-auth/react';
+
 import {
   countryMappings,
   countryMappings1,
@@ -68,6 +70,7 @@ export default function Header() {
     }
     setIsNavOpen(false);
   };
+  const { data: session } = useSession();
   const { region } = useStore();
   const pathname = usePathname();
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -83,6 +86,10 @@ export default function Header() {
   useEffect(() => {
     setIsNavOpen(isNavOpen);
   }, [isNavOpen]);
+  const handleLogoutMobile = async () => {
+    setIsNavOpen(false);
+    await signOut();
+  };
   return (
     <>
       <div className="hamburger-wrapper">
@@ -135,9 +142,8 @@ export default function Header() {
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url={`/${
-              countryMappings2[region.toLowerCase()].url
-            }/jobs-by-top-universities`}
+            url={`/${countryMappings2[region.toLowerCase()].url
+              }/jobs-by-top-universities`}
             icon="/upward-arrow.svg"
             navLink="Top Universities"
             forceButtonClass="border-b hover:border-amber-500 "
@@ -195,9 +201,40 @@ export default function Header() {
           </div> */}
           {isNavOpen && (
             <>
-              <div className="mt-6 md:mt-0 justify-center ml-4 hidden">
-                <SigninButton />
-              </div>
+              {session && session.user ? (
+                <>
+                  <NavItem
+                    url="/my_life"
+                    icon="/icons/users.svg"
+                    navLink="My profile"
+                    forceButtonClass="border-b hover:border-amber-500 "
+                    onClick={() => setIsNavOpen(false)} />
+                  <NavItem
+                    url="/"
+                    icon="/icons/logout.svg"
+                    navLink="Logout"
+                    forceButtonClass="border-b hover:border-amber-500 "
+                    onClick={handleLogoutMobile} />
+                </>
+              ) : (
+                <>
+                  <NavItem
+                    url="/my_life"
+                    icon="/icons/signin.svg"
+                    navLink="Sign In"
+                    forceButtonClass="border-b hover:border-amber-500 "
+                    onClick={() => signIn()} />
+                  <NavItem
+                    url="/auth/sign-up"
+                    icon="/icons/signup.svg"
+                    navLink="Sign Up"
+                    forceButtonClass="border-b hover:border-amber-500 "
+                    forceImageClass='text-amber-500'
+                    onClick={() => setIsNavOpen(false)} />
+                </>
+              )
+
+              }
 
               <a className="btn btn-aj w-full mt-4" href="/jobs">
                 Search Globally
@@ -229,10 +266,10 @@ export default function Header() {
             </>
           )}
           <div className="ml-auto post-a-job-button ">
+
             <NavItem
-              url={`/${
-                countryMappings2[region.toLowerCase()].url
-              }/recruitment/`}
+              url={`/${countryMappings2[region.toLowerCase()].url
+                }/recruitment/`}
               icon="/post-a-job-icon.svg"
               navLink="Post a Job"
               forceLinkClass="ml-auto"
@@ -241,7 +278,7 @@ export default function Header() {
             />
           </div>
 
-          <div className="mt-8 md:mt-0 justify-center ml-4">
+          <div className="mt-8 lg:block hidden md:mt-0 justify-center ml-4">
             <SigninButton />
           </div>
         </nav>

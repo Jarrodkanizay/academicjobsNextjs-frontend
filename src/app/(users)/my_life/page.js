@@ -1,17 +1,8 @@
 'use client';
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
-import SearchResults1 from '@/components/SearchResults1';
-import { useSearchParams } from 'next/navigation';
-import JobSearchBox from '@/components/JobSearchBox';
-import JobFilter from '@/components/JobFilter';
-import JobSearchBox2 from '@/components/JobSearchBox2';
-import JobSearchBox3 from '@/components/JobSearchBox3';
-import { filterType } from '@/utils/data';
-import Link from 'next/link';
 
 import { useSession } from 'next-auth/react';
 import Profile from './Profile';
-import TextRotatorBanner from '@/components/TextRotatorBanner';
 export default function Page() {
   const { data: session } = useSession();
 
