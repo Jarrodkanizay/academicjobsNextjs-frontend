@@ -1,6 +1,5 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import LogoAJ from '@/components/brand/LogoAJ';
@@ -8,7 +7,6 @@ import NavItem from '@/components/NavItem';
 import DispatchLink from '@/components/DispatchLink';
 import { useStore } from '@/lib/store/store';
 import HamburgerMenuIcon from '@/components/icons/HamburgerMenuIcon';
-import useLocation from '@/utils/useLocation';
 import { signIn, signOut, useSession } from 'next-auth/react';
 
 import {
@@ -17,7 +15,6 @@ import {
   countryMappings2,
 } from '@/lib/data/data';
 import SigninButton from '@/components/SigninButton';
-import Button from '@/shadcn/ui/button';
 
 export default function Header() {
   // const { fetchLocation } = useLocation();
@@ -88,7 +85,7 @@ export default function Header() {
   }, [isNavOpen]);
   const handleLogoutMobile = async () => {
     setIsNavOpen(false);
-    await signOut();
+    await signOut({ callbackUrl: '/' });
   };
   return (
     <>
@@ -210,7 +207,7 @@ export default function Header() {
                     forceButtonClass="border-b hover:border-amber-500 "
                     onClick={() => setIsNavOpen(false)} />
                   <NavItem
-                    url="/"
+                    url="./"
                     icon="/icons/logout.svg"
                     navLink="Logout"
                     forceButtonClass="border-b hover:border-amber-500 "
@@ -219,7 +216,7 @@ export default function Header() {
               ) : (
                 <>
                   <NavItem
-                    url="/my_life"
+                    url=""
                     icon="/icons/signin.svg"
                     navLink="Sign In"
                     forceButtonClass="border-b hover:border-amber-500 "
