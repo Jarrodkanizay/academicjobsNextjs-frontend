@@ -8,12 +8,9 @@ export default function Page() {
 
   const { id, image, name, email, uerRole } = session.user;
 
-  console.log('mylife: session', session);
-
   const testID = 1;
   return (
     <main>
-      {/* <TextRotatorBanner /> */}
       <section title="Profile" className="content-grid">
         {testID === -1 ? (
           <Profile id={-1} />

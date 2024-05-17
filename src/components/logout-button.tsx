@@ -10,7 +10,7 @@ export const LogoutButton = ({ children }: LogoutButtonProps) => {
   return (
     <span
       onClick={async () => {
-        await signOut();
+        await signOut({ callbackUrl: '/' });
       }}
       className="cursor-pointer"
     >
