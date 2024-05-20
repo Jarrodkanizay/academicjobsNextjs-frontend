@@ -5,9 +5,8 @@ import { useRef } from 'react';
 import { useStore } from '@/lib/store/store';
 import { countryMappings, countryMappings1 } from '@/lib/data/data';
 import job_category from '@/data/JobCategories1.json';
-
 export default function JobSearchBoxHome() {
-  const keyWordRef = useRef<HTMLInputElement>(null);
+  const keyWordRef = useRef < HTMLInputElement > (null);
   const router = useRouter();
   let region = 'Australia';
   const { setRegion, setSearchJobCriteria } = useStore();
@@ -18,7 +17,7 @@ export default function JobSearchBoxHome() {
       a.q = keyWordRef.current.value.trim();
     }
     if (region !== 'Global') {
-      const location = (countryMappings1 )[region]?.searchLocation || '';
+      const location = (countryMappings1)[region]?.searchLocation || '';
       const params = new URLSearchParams({
         l: encodeURIComponent(location),
         q: encodeURIComponent(a.q || ''),
@@ -31,7 +30,7 @@ export default function JobSearchBoxHome() {
         );
         const result = await response.json();
         const country = result.country.name;
-        setRegion((countryMappings1 )[country.toLowerCase()]);
+        setRegion((countryMappings1)[country.toLowerCase()]);
         const qValue = a.q || '';
         const lValue = (countryMappings1)[
           (countryMappings)[country.toLowerCase()]
@@ -48,12 +47,10 @@ export default function JobSearchBoxHome() {
       onSubmit={handleFormSubmit}
     >
       <div className="flex flex-col md:gap-2 md:flex-row md:gap-0 mx-18 w-full mt-5 md:border rounded-t-lg md:rounded-lg p-2 md:shadow-md">
-   
         <select
           className="w-full px-4 py-3 0 rounded-lg text-black focus:outline-none focus:border-orange-500"
           placeholder="Select a category"
-          // onChange={handleChange}
-
+        // onChange={handleChange}
         >
           {/* <option value="" disabled selected>
             Select a country...
@@ -63,9 +60,7 @@ export default function JobSearchBoxHome() {
               <option key={index} value={position}>
                 {position}
               </option>
-            ))}  
-  
-      
+            ))}
         </select>
         <button
           className="px-4 py-2 bg-[#f4a10c] text-white md:rounded-md rounded-b-lg hover:bg-orange-600 animate-pulse font-bold shadow-md"
