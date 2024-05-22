@@ -1,4 +1,5 @@
 'use client';
+import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -20,10 +21,15 @@ import { registerUser } from '../app/(auth)/auth/signup/action';
 import { useRouter } from 'next/navigation';
 import { SignUpFormSchema } from '@/app/schemas/schemas';
 import { signIn } from 'next-auth/react';
+
 interface SignUpFormProps {
   callbackUrl?: string;
 }
+
 const SignUpForm = (props: SignUpFormProps) => {
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+
   let callbackUrl = props.callbackUrl ? props.callbackUrl : '/';
   const router = useRouter();
   const form = useForm<z.infer<typeof SignUpFormSchema>>({
@@ -37,6 +43,7 @@ const SignUpForm = (props: SignUpFormProps) => {
       confirmPassword: '',
     },
   });
+
   const saveUser = async (data: z.infer<typeof SignUpFormSchema>) => {
     const { confirmPassword, ...user } = data;
     try {
@@ -63,6 +70,7 @@ const SignUpForm = (props: SignUpFormProps) => {
       }
     }
   };
+
   return (
     <div className="flex items-center justify-center">
       <Card className="px-10 pt-0 pb-5 bg-slate-50">
@@ -73,9 +81,6 @@ const SignUpForm = (props: SignUpFormProps) => {
             <br />
             Create your free profile today.
           </h4>
-          {/* <CardDescription className="flex justify-center">
-            Sign in
-          </CardDescription> */}
         </CardHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(saveUser)} className="w-full">
@@ -113,11 +118,28 @@ const SignUpForm = (props: SignUpFormProps) => {
                   <FormItem>
                     <FormLabel>Password</FormLabel>
                     <FormControl>
-                      <Input
-                        type="password"
-                        placeholder="Enter your password"
-                        {...field}
-                      />
+                      <div style={{ position: 'relative' }}>
+                        <Input
+                          type={showPassword ? 'text' : 'password'}
+                          placeholder="Enter your password"
+                          {...field}
+                        />
+                        <button
+                          type="button"
+                          onClick={() => setShowPassword(prev => !prev)}
+                          style={{
+                            position: 'absolute',
+                            right: '10px',
+                            top: '50%',
+                            transform: 'translateY(-50%)',
+                            background: 'none',
+                            border: 'none',
+                            cursor: 'pointer',
+                          }}
+                        >
+                          {showPassword ? 'Hide' : 'Show'}
+                        </button>
+                      </div>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -130,11 +152,28 @@ const SignUpForm = (props: SignUpFormProps) => {
                   <FormItem>
                     <FormLabel>Confirm password</FormLabel>
                     <FormControl>
-                      <Input
-                        placeholder="Re-Enter your password"
-                        type="password"
-                        {...field}
-                      />
+                      <div style={{ position: 'relative' }}>
+                        <Input
+                          type={showConfirmPassword ? 'text' : 'password'}
+                          placeholder="Re-Enter your password"
+                          {...field}
+                        />
+                        <button
+                          type="button"
+                          onClick={() => setShowConfirmPassword(prev => !prev)}
+                          style={{
+                            position: 'absolute',
+                            right: '10px',
+                            top: '50%',
+                            transform: 'translateY(-50%)',
+                            background: 'none',
+                            border: 'none',
+                            cursor: 'pointer',
+                          }}
+                        >
+                          {showConfirmPassword ? 'Hide' : 'Show'}
+                        </button>
+                      </div>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -159,8 +198,8 @@ const SignUpForm = (props: SignUpFormProps) => {
           </p>
         </Form>
       </Card>
-
     </div>
   );
 };
+
 export default SignUpForm;
