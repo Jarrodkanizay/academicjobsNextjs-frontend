@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import SearchResults from '@/components/SearchResults';
+import SearchResults1 from '@/components/SearchResults1';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 
@@ -72,7 +72,19 @@ export default function myPage() {
         <div className="listings_panel">
           <div className="listings_content">
             {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'full-time' || 0 }} />
+            {/* <SearchResults q={{ q: 'full-time' || 0 }} /> */}
+            <SearchResults1
+              q={{
+                filter1: [
+                  {
+                    category: 'job_type',
+                    filter: 'Full time',
+                  },
+                ],
+                q: '',
+                l: '',
+              }}
+            />
           </div>
         </div>
       </section>

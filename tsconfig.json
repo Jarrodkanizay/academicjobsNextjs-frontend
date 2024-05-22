@@ -35,6 +35,6 @@
     "src/app/(jobs)/jobs/[category]/[id]/page.js",
     "src/app/(location)/australia/jobs/page.js",
     "src/components/SearchResults2.js"
-, "src/components/FavoriteButton.js", "src/components/profile/UserProfile.jsx", "src/app/(location)/australia/[category]/page.js"  ],
+, "src/components/FavoriteButton.js", "src/components/profile/UserProfile.jsx", "src/app/(location)/australia/[category]/page.js", "src/components/JobSearchBoxHome1.js"  ],
   "exclude": ["node_modules"]
 }
