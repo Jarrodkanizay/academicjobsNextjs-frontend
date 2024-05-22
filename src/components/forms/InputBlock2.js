@@ -19,13 +19,22 @@ const InputBlock2 = ({
 }) => {
   return (
     <div
-      className={`relative w-full flex flex-col gap-1 items-start ${forceClass} col-span-2 ${
-        colSpan === 1
-          ? 'md:col-span-1'
-          : `md:col-span-${colSpan} ${hidden ? 'hide-item' : 'show-item'}`
-      }`}
+      className={`relative w-full flex flex-col gap-1 items-start ${forceClass} col-span-2 ${colSpan === 1
+        ? 'md:col-span-1'
+        : `md:col-span-${colSpan} ${hidden ? 'hide-item' : 'show-item'}`
+        }`}
     >
-      {label ? <label className="label-text text-xs">{label}</label> : null}
+      <div className="flex">
+        <div className="label-container" style={{ position: 'relative', display: 'inline-block' }}>
+          {label && (
+            <label htmlFor={ID} className="label-text text-xs" style={{ display: 'inline-block' }}>
+              {label}
+              {required && <span className="required" style={{ position: 'absolute', top: '0', right: '-10px' }}>*</span>}
+            </label>
+          )}
+        </div>
+
+      </div>
       <input
         tabIndex={tabIndex}
         {...register(field)}
@@ -38,7 +47,6 @@ const InputBlock2 = ({
         disabled={disabled ? true : false}
       />
       {errors[field] && <span className="error">{errors[field].message}</span>}
-      {required ? <i className="required">*</i> : null}
     </div>
   );
 };

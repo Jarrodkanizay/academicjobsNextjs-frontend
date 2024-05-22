@@ -18,6 +18,7 @@ import { Span } from 'next/dist/trace';
 import { useState } from 'react';
 import SavedItems from '@/components/profile/SavedItems'
 import DashboardMenu from '@/components/DashboardMenu'
+import TalentPool from '@/components/TalentPool';
 
 
 type UserProps = {
@@ -273,10 +274,10 @@ export default function Profile({
 
           />
           <DashboardCard
-            title="Jobs Applied For"
-            iconPath="/icons/folder.svg"
+            title="Talent Pool"
+            iconPath="/icons/talent-search-svgrepo-com.svg"
             href="/my_life"
-            onClick={() => handleCardClick('Jobs Applied For')}
+            onClick={() => handleCardClick('Talent Pool')}
 
           />
 
@@ -306,11 +307,11 @@ export default function Profile({
           {/* Content for Jobs For You */}
         </div>
       )}
-      {selectedCard === 'Jobs Applied For' && (
-        // Render content for Jobs Applied For
+      {selectedCard === 'Talent Pool' && (
+        // Render content for Jobs For You
         <div>
-          <h2 className="md:hidden block">Jobs Applied For</h2>
-          {/* Content for Jobs Applied For */}
+          <h2 className="md:hidden block">Job Alerts</h2>
+          <TalentPool userId={id}/>
         </div>
       )}
       {selectedCard === 'My Profile' && (
