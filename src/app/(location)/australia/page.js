@@ -150,7 +150,7 @@ export default async function myPage() {
       </div>
 
       <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
-        <JobSearchBoxCountry country={"Australia"} />
+        <JobSearchBoxCountry country={"australia"} />
       </div>
 
       {/* <div className="pt-[4rem] flex flex-col items-center justify-center">
