@@ -101,6 +101,14 @@ const SavedItems = ({ favoriteJobs, favoriteEmployers }) => {
             </>
           )}
         </div>
+        <div className="md:w-1/3 w-full md:m-4 p-2">
+          <div className="listings_content">
+            <div className="">
+              <JobSearchBox2 />
+            </div>
+            <SearchResults2 q={{ q: '', l: '' }} />
+          </div>
+          </div>
       </section>
     </div>
   );
