@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
-// components/FavoriteButton.client.jsx
 'use client';
 import React from 'react';
 import { keepPreviousData, useQuery, useMutation } from '@tanstack/react-query';

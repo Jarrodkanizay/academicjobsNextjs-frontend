@@ -67,21 +67,13 @@ export default function Profile({
   logo,
 }: UserProps) {
   const {
-    isPending: isPendingQty,
-    isError: isErrorQty,
-    isSuccess: isSuccessQty,
-    error: errorQty,
-    data: favorites,
-    isFetching: isFetchingQty,
-    isPlaceholderData: isPlaceholderDataQty,
+    data: favoritejobs,
   } = useQuery({
-    queryKey: ['favorites'],
+    queryKey: ['favoriteJobs'],
     queryFn: async () => {
       const response = await BaseApi.post('/getFavoriteJobs', {
         userId: id,
       });
-      console.log(response.data);
-      console.log('response.data.data', response.data.data);
       return response.data.data;
     },
     staleTime: 0,
@@ -89,13 +81,11 @@ export default function Profile({
   const {
     data: favoriteEmployers
   } = useQuery({
-    queryKey: ['favorites'],
+    queryKey: ['favoriteEmployers'],
     queryFn: async () => {
       const response = await BaseApi.post('/getFavoriteEmployers', {
         userId: id,
       });
-      console.log(response.data);
-      console.log('Employers', response.data.data);
       return response.data.data;
     },
     staleTime: 0,
@@ -295,7 +285,7 @@ export default function Profile({
       {selectedCard === 'Saved Items' && (
         <div>
           <h2 className="md:hidden block">Saved Items</h2>
-          <SavedItems favorites={favorites} favoriteEmployers={favoriteEmployers} />
+          <SavedItems favoriteJobs={favoritejobs} favoriteEmployers={favoriteEmployers} />
         </div>
         
 
