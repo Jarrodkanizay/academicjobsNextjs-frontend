@@ -17,12 +17,13 @@ import { StarRank } from '@/components/StarRank';
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/options";
 import { baseURL } from '@/lib/store/Base';
+import { BaseApi } from '@/lib/store/Base';
+
 export async function generateMetadata({ params }) {
-
-
   const session = await getServerSession(authOptions);
   const job = await getJob({ id: params.id, userId: session?.user.id });
   if (!job) return { title: 'not found' };
+  if (job) {incrementJobViewCount(params)};
   const { title, company_name, location } = job?.data;
   return {
     title: `${title} | ${company_name}`,
@@ -33,6 +34,16 @@ export async function generateMetadata({ params }) {
     },
   };
 }
+
+async function incrementJobViewCount(data) {
+  try {
+    const response = await BaseApi.post(`/incrementJobViewCount/${data.id}`);
+    console.log(response.message);
+  } catch (error) {
+    console.error("Error incrementing view count:", error);
+  }
+}
+
 //{ next: { revalidate: 0 } }
 async function getJob(data) {
   console.log("0324========data", data)
@@ -47,7 +58,6 @@ async function getJob(data) {
     }
   );
   const res = await response.json();
-  // console.log(res);
   return res;
 }
 const JobDetailPage = async ({ params, searchParams }) => {
@@ -86,6 +96,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
   const bodyEmail = encodeURIComponent(
     `I came across this job posting on AcademicJobs and thought you might be interested: https://www.academicjobs.com/jobs/myjob/${jobId}`
   );
+
   let bgColor = 'bg-white';
   if (company_name === 'Bond University') bgColor = 'bg-[#011a4d]';
   return (
