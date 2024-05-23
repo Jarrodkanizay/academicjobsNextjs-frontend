@@ -84,9 +84,10 @@ export default function Page() {
     isFetching: isFetchingQty,
     isPlaceholderData: isPlaceholderDataQty,
   } = useQuery({
-    queryKey: ['filter', { category, filter2, q, l, lon, lat }],
+    queryKey: ['filter', { currentMiddleCategory, category, filter2, q, l, lon, lat }],
     queryFn: async () => {
       const response = await BaseApi.post('/filters', {
+        currentMiddleCategory,
         category,
         filter1,
         q,
@@ -131,7 +132,7 @@ export default function Page() {
           {  // 顶层已选X  top
             filter1.length > 0 && (
               <div className="md:flex md:gap-4 md:flex-wrap pb-2">
-                {filter1.map(({ category, filter }, i) => (
+                {filter1.map(({ category1, filter }, i) => (
                   <button
                     key={i}
                     className="btn  btn-xs bg-blue-900 text-white "
@@ -142,6 +143,7 @@ export default function Page() {
                       setPage(0);
                       setfilter(updatedFilter);
                       setCategory("")
+                      setCurrentMiddleCategory("")
                     }}
                   >
                     {`${filter} X`}

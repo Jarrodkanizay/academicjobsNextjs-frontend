@@ -48,7 +48,7 @@ function ModalForm() {
                                         <h3 className="text-black font-light p-2 md:hidden block">Sign Up! and The more jobs you like (save), the more chances to win.</h3>
                                         <h2 className="text-black font-light p-2 hidden md:block">Sign Up! and The more jobs you like (save), the more chances to win.</h2>
                                     </div>
-                                    <SignUpFormComp />
+                                    <SignUpFormComp setIsOpen={setIsOpen} />
                                 </div>
                             </div>
                             <img
