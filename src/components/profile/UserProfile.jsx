@@ -75,7 +75,8 @@ const UserProfile = ({ id, firstName, lastName, email, location }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <><h2>My Details</h2>
+    <form onSubmit={handleSubmit} className="">
       <div className="mb-1">
         <label className="block mb-1">First Name:</label>
         <input
@@ -84,8 +85,7 @@ const UserProfile = ({ id, firstName, lastName, email, location }) => {
           placeholder="Enter your first name"
           value={formData.firstName}
           onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-        />
+          className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500" />
       </div>
       <div className="mb-1">
         <label className="block mb-1">Last Name:</label>
@@ -95,8 +95,7 @@ const UserProfile = ({ id, firstName, lastName, email, location }) => {
           placeholder="Enter your last name"
           value={formData.lastName}
           onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-        />
+          className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500" />
       </div>
       <div className="mb-1">
         <label className="block mb-1">Email:</label>
@@ -106,8 +105,7 @@ const UserProfile = ({ id, firstName, lastName, email, location }) => {
           placeholder="Enter your email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-        />
+          className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500" />
       </div>
       <div className="mb-1">
         <label className="block mb-1">Location:</label>
@@ -117,8 +115,7 @@ const UserProfile = ({ id, firstName, lastName, email, location }) => {
           placeholder="Enter your location"
           value={formData.location}
           onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-        />
+          className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500" />
       </div>
       <div className="mb-1">
         <label className="block mb-1">Profile Picture:</label>
@@ -126,13 +123,12 @@ const UserProfile = ({ id, firstName, lastName, email, location }) => {
           type="file"
           accept="image/*"
           onChange={handleFileChange}
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-        />
+          className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500" />
       </div>
       <div>
-        <button type="submit" className="py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600">Save Changes</button>
+        <button type="submit" className="py-2 px-4 btn btn-aj">Save Changes</button>
       </div>
-    </form>
+    </form></>
   );
 };
 

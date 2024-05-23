@@ -27,9 +27,9 @@ const InputBlock2 = ({
       <div className="flex">
         <div className="label-container" style={{ position: 'relative', display: 'inline-block' }}>
           {label && (
-            <label htmlFor={ID} className="label-text text-xs" style={{ display: 'inline-block' }}>
+            <label htmlFor={ID} className="block mb-1" style={{ display: 'inline-block' }}>
               {label}
-              {required && <span className="required" style={{ position: 'absolute', top: '0', right: '-10px' }}>*</span>}
+              {required && <span className="required" style={{ position: 'absolute', top: '-10px', right: '-10px' }}>*</span>}
             </label>
           )}
         </div>

@@ -5,10 +5,8 @@ import { BaseApi } from '@/lib/store/Base';
 import { signIn, useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation'
 export default function FavoriteEmployerButton({ employerId, favoriteEmployerYN }) {
-  console.log("favvvv", favoriteEmployerYN)
   const router = useRouter();
   const { data: session } = useSession();
-  console.log("FavoriteButtonsession", session)
   const mutation = useMutation({
     mutationFn: (data) => {
       return BaseApi.post('/favoriteEmployerId', data);
