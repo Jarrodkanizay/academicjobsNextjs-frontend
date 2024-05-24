@@ -96,7 +96,8 @@ const SavedItems = ({ favoriteJobs, favoriteEmployers }) => {
                       className="btn btn-error"
                       onClick={() => {
                         const mode = 'remove';
-                        mutationEmployer.mutate({ employerId, userId, mode });
+                        const type = 'FAVORITE'
+                        mutationEmployer.mutate({ employerId, userId, mode, type });
                       }}
                     >
                       Remove

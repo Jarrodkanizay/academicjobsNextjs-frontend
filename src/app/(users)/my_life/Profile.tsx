@@ -90,6 +90,21 @@ export default function Profile({
     queryFn: async () => {
       const response = await BaseApi.post('/getFavoriteEmployers', {
         userId: id,
+        type: 'FAVORITE'
+      });
+      return response.data.data;
+    },
+    staleTime: 0,
+  });
+
+  const {
+    data: talentPoolEmployers
+  } = useQuery({
+    queryKey: ['talentPoolEmployers'],
+    queryFn: async () => {
+      const response = await BaseApi.post('/getFavoriteEmployers', {
+        userId: id,
+        type: 'TALENTPOOL'
       });
       return response.data.data;
     },
@@ -303,7 +318,7 @@ export default function Profile({
         // Render content for Jobs For You
         <div>
           <h2 className="md:hidden block">Job Alerts</h2>
-          <TalentPool userId={id} />
+          <TalentPool talentPool={talentPoolEmployers} />
         </div>
       )}
       {selectedCard === 'My Profile' && (

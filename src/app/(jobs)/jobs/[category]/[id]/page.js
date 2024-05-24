@@ -18,6 +18,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/options";
 import { baseURL } from '@/lib/store/Base';
 import { BaseApi } from '@/lib/store/Base';
+import JoinTalentPool from '@/components/JoinTalentPool'
 
 export async function generateMetadata({ params }) {
   const session = await getServerSession(authOptions);
@@ -84,6 +85,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
     clientType,
     headlineOnly,
     favoriteJobYN,
+    talentPoolYN,
     employer: {
       company_name,
       logo,
@@ -194,9 +196,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     alert(params.id)
                   }}
                 /> */}
-                <a href="/academic-talent-pool" className="bg-[#d9d9d9] text-gray-700 rounded-full btn">
-                  Join Talent Pool
-                </a>
+              <JoinTalentPool employerId={employer_id} talentPoolYN={talentPoolYN}/>
               </div>
             </div>
           </div>

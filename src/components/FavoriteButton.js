@@ -7,7 +7,6 @@ import { useRouter } from 'next/navigation'
 export default function FavoriteButton({ jobId, favoriteJobYN }) {
   const router = useRouter();
   const { data: session } = useSession();
-  console.log("FavoriteButtonsession", session)
   const mutation = useMutation({
     mutationFn: (data) => {
       return BaseApi.post('/favoriteJobId', data);

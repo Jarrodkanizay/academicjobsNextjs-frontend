@@ -23,7 +23,8 @@ export default function FavoriteEmployerButton({ employerId, favoriteEmployerYN 
         if (session) {
           console.log(employerId, session.user.id)
           const mode = favoriteEmployerYN ? "remove" : "add"
-          mutation.mutate({ employerId, userId: session.user.id, mode });
+          const type =  "FAVORITE";
+          mutation.mutate({ employerId, userId: session.user.id, mode, type});
           router.refresh();
         } else {
           signIn()
