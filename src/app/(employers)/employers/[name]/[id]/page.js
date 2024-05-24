@@ -8,6 +8,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { StarRank } from '@/components/StarRank';
+import FavoriteEmployerButton from '@/components/FavoriteEmployerButton';
+import { authOptions } from "@/app/api/auth/[...nextauth]/options";
+import { getServerSession } from "next-auth";
+import { baseURL } from '@/lib/store/Base';
 
 export async function generateMetadata({ params }) {
   const employer = await getEmployer(params.id);
@@ -15,22 +19,43 @@ export async function generateMetadata({ params }) {
   const { company_name } = employer?.data;
   return {
     title: {
-        absolute: `All jobs at ${company_name} `},
+      absolute: `All jobs at ${company_name} `
+    },
     description: `All the university jobs at ${company_name} Academic and administration jobs.  Lecturer and research higher ed careers.`,
     keywords: `${company_name} jobs, ${company_name} careers, ${company_name} positions,  Work at ${company_name}`,
   };
 }
-async function getEmployer(id) {
-  const response = await fetch(
-    `https://api2.sciencejobs.com.au/api/employer/${id}`,
-    { next: { revalidate: 1 } }
-  );
-  const res = await response.json();
-  console.log('===========getEmployer===============', res);
-  return res;
+async function getEmployer(id, userId) {
+  try {
+    const response = await fetch(
+      `${baseURL}/employer/${id}`,
+      {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-user-id': userId, // Include user ID in headers
+        },
+      }
+    );
+
+    if (!response.ok) {
+      // Handle non-200 responses
+      console.error("Failed to fetch employer:", response.statusText);
+      return null;
+    }
+
+    const res = await response.json();
+    console.log('===========getEmployer===============', res);
+    return res;
+  } catch (error) {
+    console.error("Error fetching employer:", error);
+    return null;
+  }
 }
+
 const Employer = async ({ params }) => {
-  const employer = await getEmployer(params.id);
+  const session = await getServerSession(authOptions);
+  const employer = await getEmployer(params.id, session?.user.id);
   if (!employer) notFound();
   let content;
   const {
@@ -43,6 +68,7 @@ const Employer = async ({ params }) => {
     location,
     Region,
     country,
+    favoriteEmployerYN
   } = employer.data;
   console.log(company_description);
   let location1 = '',
@@ -113,11 +139,15 @@ const Employer = async ({ params }) => {
               />
             </div>
             <div className="md:flex md:flex-col p-4">
-              <h1
-                className={`text-4xl leading-[2rem] font-bold ${headerTextColor}`}
-              >
-                {company_name}
-              </h1>
+              <div className="flex items-center">
+                <h1
+                  className={`text-4xl leading-[2rem] font-bold ${headerTextColor}`}
+                >
+                  {company_name}
+                </h1>
+                <FavoriteEmployerButton employerId={params.id} favoriteEmployerYN={favoriteEmployerYN} />
+              </div>
+
               <div className="flex gap-2">
                 {/* <p className="text-xl leading-[.75rem] font-bold text-yellow-500 ">
                   Employer Ranking -

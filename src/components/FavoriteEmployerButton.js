@@ -7,7 +7,6 @@ import { useRouter } from 'next/navigation'
 export default function FavoriteEmployerButton({ employerId, favoriteEmployerYN }) {
   const router = useRouter();
   const { data: session } = useSession();
-  console.log("FavoriteButtonsession", session)
   const mutation = useMutation({
     mutationFn: (data) => {
       return BaseApi.post('/favoriteEmployerId', data);
@@ -16,9 +15,10 @@ export default function FavoriteEmployerButton({ employerId, favoriteEmployerYN 
   return (
     <img
       src={favoriteEmployerYN ? "/icons/heart.svg" : "/icons/heart-outline.svg"}
-      width="28"
+      width="40"
       height="28"
       alt="Add this employer to Favorites"
+      className='ml-6'
       onClick={() => {
         if (session) {
           console.log(employerId, session.user.id)

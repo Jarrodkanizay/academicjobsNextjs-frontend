@@ -19,6 +19,7 @@ import { useState } from 'react';
 import SavedItems from '@/components/profile/SavedItems'
 import DashboardMenu from '@/components/DashboardMenu'
 import TalentPool from '@/components/TalentPool';
+import TalentPoolForm from '@/components/forms/TalentPoolForm';
 
 
 type UserProps = {
@@ -44,6 +45,8 @@ type UserProps = {
   savedJobs?: [];
   favorites?: [];
   logo?: string;
+  image?: string;
+
 };
 export default function Profile({
   id,
@@ -65,49 +68,38 @@ export default function Profile({
   wavesOn = true,
   bgColor = 'custom-background',
   logo,
+  image = '/placeholders/generic-headshot.png'
 }: UserProps) {
   const {
-    isPending: isPendingQty,
-    isError: isErrorQty,
-    isSuccess: isSuccessQty,
-    error: errorQty,
-    data: favorites,
-    isFetching: isFetchingQty,
-    isPlaceholderData: isPlaceholderDataQty,
+    data: favoritejobs,
   } = useQuery({
-    queryKey: ['favorites'],
+    queryKey: ['favoriteJobs'],
     queryFn: async () => {
       const response = await BaseApi.post('/getFavoriteJobs', {
         userId: id,
       });
-      console.log(response.data);
-      console.log('response.data.data', response.data.data);
       return response.data.data;
     },
     staleTime: 0,
   });
+
   const {
     data: favoriteEmployers
   } = useQuery({
-    queryKey: ['favorites'],
+    queryKey: ['favoriteEmployers'],
     queryFn: async () => {
       const response = await BaseApi.post('/getFavoriteEmployers', {
         userId: id,
       });
-      console.log(response.data);
-      console.log('Employers', response.data.data);
       return response.data.data;
     },
     staleTime: 0,
   });
 
-
-  const [selectedCard, setSelectedCard] = useState('Saved Items');
-
+  const [selectedCard, setSelectedCard] = useState('Saved Jobs');
   const handleCardClick = (cardTitle) => {
     setSelectedCard(cardTitle);
   };
-
   return (
     <>
       <section className={`${bgColor} full-width mb-16`}>
@@ -133,10 +125,10 @@ export default function Profile({
                 <Image
                   width={140}
                   height={140}
-                  src={avatar}
+                  src={image ? image : avatar}
                   alt="User Avatar"
                 />
-                
+
               </div>
             </div>
             <div className="hidden md:block">
@@ -202,55 +194,55 @@ export default function Profile({
             </div> */}
           </div>
           <div className="md:hidden block">
-              {/* <StarRank ranking={rank} /> */}
-              <h2 className="profile p-0 m-0 flex gap-6 mt-2">
-                <span className="mt-[-6px] text-white font font-light">
-                  {firstName} {lastName}
+            {/* <StarRank ranking={rank} /> */}
+            <h2 className="profile p-0 m-0 flex gap-6 mt-2">
+              <span className="mt-[-6px] text-white font font-light">
+                {firstName} {lastName}
+              </span>
+              {jobTitle === '' ? null : (
+                <span>
+                  <p className="text-white flex gap-2 items-end p-0 m-0">
+                    <Image
+                      src={'/icons/job-title.svg'}
+                      width={24}
+                      height={24}
+                      alt=""
+                    />{' '}
+                    <span className="inline_heading">{jobTitle}</span>
+                  </p>
                 </span>
-                {jobTitle === '' ? null : (
-                  <span>
-                    <p className="text-white flex gap-2 items-end p-0 m-0">
-                      <Image
-                        src={'/icons/job-title.svg'}
-                        width={24}
-                        height={24}
-                        alt=""
-                      />{' '}
-                      <span className="inline_heading">{jobTitle}</span>
-                    </p>
-                  </span>
-                )}
-              </h2>
-              {email === '' ? null : (
-                <p className="text-white flex gap-2 items-center">
-                  <Image
-                    src={'/icons/email-at-symbol.svg'}
-                    width={24}
-                    height={24}
-                    alt=""
-                  />{' '}
-                  <span className="inline_heading">{email}</span>
-                </p>
               )}
-              {organization === '' ? null : (
-                <p className="text-white flex gap-2 items-center">
-                  <Image
-                    src={'/icons/college-icon.svg'}
-                    width={24}
-                    height={24}
-                    alt=""
-                  />{' '}
-                  <span className="inline_heading">{organization}</span>
-                </p>
-              )}
-
+            </h2>
+            {email === '' ? null : (
               <p className="text-white flex gap-2 items-center">
-                <MapMarkerIcon width={26} height={26} />
-                {location === ''
-                  ? 'Add location here'
-                  : location}
+                <Image
+                  src={'/icons/email-at-symbol.svg'}
+                  width={24}
+                  height={24}
+                  alt=""
+                />{' '}
+                <span className="inline_heading">{email}</span>
               </p>
-            </div>
+            )}
+            {organization === '' ? null : (
+              <p className="text-white flex gap-2 items-center">
+                <Image
+                  src={'/icons/college-icon.svg'}
+                  width={24}
+                  height={24}
+                  alt=""
+                />{' '}
+                <span className="inline_heading">{organization}</span>
+              </p>
+            )}
+
+            <p className="text-white flex gap-2 items-center">
+              <MapMarkerIcon width={26} height={26} />
+              {location === ''
+                ? 'Add location here'
+                : location}
+            </p>
+          </div>
         </div>
         {wavesOn ? <WaveBackground /> : null}
       </section>
@@ -261,43 +253,43 @@ export default function Profile({
         {/* <h2 className="profile">Hi {firstName || email}</h2> */}
         <div className="flex gap-6 mt-10">
         <DashboardCard
-            title="Saved Items"
+            title="Saved Jobs"
             iconPath="/icons/heart.svg"
             href="/my_life"
-            onClick={() => handleCardClick('Saved Items')}
+            onClick={() => handleCardClick('Saved Jobs')}
+            forceClass={selectedCard === 'Saved Jobs' ? 'bg-gray-200' : 'bg-white'}
           />
           <DashboardCard
             title="Jobs Alerts - Coming Soon!"
             iconPath="/icons/eyeball.svg"
             href="/my_life"
             onClick={() => handleCardClick('Jobs Alerts')}
-
+            forceClass={selectedCard === 'Jobs Alerts' ? 'bg-gray-200' : 'bg-white'}
           />
           <DashboardCard
             title="Talent Pool"
             iconPath="/icons/talent-search-svgrepo-com.svg"
             href="/my_life"
             onClick={() => handleCardClick('Talent Pool')}
-
+            forceClass={selectedCard === 'Talent Pool' ? 'bg-gray-200' : 'bg-white'}
           />
-
           <DashboardCard
             title="My Profile"
             iconPath="/icons/users.svg"
             href="/my_life"
             onClick={() => handleCardClick('My Profile')}
-
+            forceClass={selectedCard === 'My Profile' ? 'bg-gray-200' : 'bg-white'}
           />
         </div>
       </section>
 
       {/* Section below Dashboard cards */}
-      {selectedCard === 'Saved Items' && (
+      {selectedCard === 'Saved Jobs' && (
         <div>
-          <h2 className="md:hidden block">Saved Items</h2>
-          <SavedItems favorites={favorites} favoriteEmployers={favoriteEmployers} />
+          <h2 className="md:hidden block">Saved Jobs</h2>
+          <SavedItems favoriteJobs={favoritejobs} favoriteEmployers={favoriteEmployers} />
         </div>
-        
+
 
       )}
       {selectedCard === 'Jobs Alerts' && (
@@ -311,14 +303,13 @@ export default function Profile({
         // Render content for Jobs For You
         <div>
           <h2 className="md:hidden block">Job Alerts</h2>
-          <TalentPool userId={id}/>
+          <TalentPool userId={id} />
         </div>
       )}
       {selectedCard === 'My Profile' && (
         // Render content for Jobs Applied For
-        <div className="flex gap-5">
-          <div className="w-full md:w-1/2">
-            <h2>My Details</h2>
+        <div className="flex gap-5 mt-6">
+          <div className="w-1/2 md:w-full  rounded-2xl mx-auto px-7 pt-4 pb-6 border-[1px] border-slate-500">
             <UserProfile
               id={id}
               firstName={firstName}
@@ -327,8 +318,15 @@ export default function Profile({
               location={location}
             />
           </div>
+
+          <div className="w-1/2 md:w-full">
+            <TalentPoolForm userId={id} maxWidth="700" />
+          </div>
+
         </div>
       )}
-      </>
-    );
-  }
+      
+    </>
+    
+  );
+}
