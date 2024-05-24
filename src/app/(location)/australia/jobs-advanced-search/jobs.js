@@ -16,7 +16,7 @@ export default function Page() {
     State: true,
     InstitutionName: true,
     JobType: true,
-    PositionType: true,
+    
     ExecutiveJobs: false,
     AdministrationSupportJobs: false,
     HRJobs: false,
@@ -24,6 +24,7 @@ export default function Page() {
     AcademicPositionType: false,
     thirdcategory: false,
     EmploymentType: true,
+    PositionType: false,
     SalaryRange: true,
     OnsiteRemote: true,
   };
@@ -63,6 +64,7 @@ export default function Page() {
         break;
       case filter1.some((obj) => obj.filter.includes('Academic / Faculty')):
         setfilterTypes((p) => ({ ...p, AcademicPositionType: true }));
+        setfilterTypes((p) => ({ ...p, PositionType: true }));
         break;
      
       default:
