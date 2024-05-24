@@ -45,6 +45,8 @@ type UserProps = {
   savedJobs?: [];
   favorites?: [];
   logo?: string;
+  image?: string;
+
 };
 export default function Profile({
   id,
@@ -66,6 +68,7 @@ export default function Profile({
   wavesOn = true,
   bgColor = 'custom-background',
   logo,
+  image = '/placeholders/generic-headshot.png'
 }: UserProps) {
   const {
     data: favoritejobs,
@@ -79,6 +82,7 @@ export default function Profile({
     },
     staleTime: 0,
   });
+
   const {
     data: favoriteEmployers
   } = useQuery({
@@ -92,13 +96,10 @@ export default function Profile({
     staleTime: 0,
   });
 
-
-  const [selectedCard, setSelectedCard] = useState('Saved Items');
-
+  const [selectedCard, setSelectedCard] = useState('Saved Jobs');
   const handleCardClick = (cardTitle) => {
     setSelectedCard(cardTitle);
   };
-
   return (
     <>
       <section className={`${bgColor} full-width mb-16`}>
@@ -124,7 +125,7 @@ export default function Profile({
                 <Image
                   width={140}
                   height={140}
-                  src={avatar}
+                  src={image ? image : avatar}
                   alt="User Avatar"
                 />
 
@@ -251,33 +252,33 @@ export default function Profile({
       >
         {/* <h2 className="profile">Hi {firstName || email}</h2> */}
         <div className="flex gap-6 mt-10">
-          <DashboardCard
+        <DashboardCard
             title="Saved Jobs"
             iconPath="/icons/heart.svg"
             href="/my_life"
             onClick={() => handleCardClick('Saved Jobs')}
+            forceClass={selectedCard === 'Saved Jobs' ? 'bg-gray-200' : 'bg-white'}
           />
           <DashboardCard
             title="Jobs Alerts - Coming Soon!"
             iconPath="/icons/eyeball.svg"
             href="/my_life"
             onClick={() => handleCardClick('Jobs Alerts')}
-
+            forceClass={selectedCard === 'Jobs Alerts' ? 'bg-gray-200' : 'bg-white'}
           />
           <DashboardCard
             title="Talent Pool"
             iconPath="/icons/talent-search-svgrepo-com.svg"
             href="/my_life"
             onClick={() => handleCardClick('Talent Pool')}
-
+            forceClass={selectedCard === 'Talent Pool' ? 'bg-gray-200' : 'bg-white'}
           />
-
           <DashboardCard
             title="My Profile"
             iconPath="/icons/users.svg"
             href="/my_life"
             onClick={() => handleCardClick('My Profile')}
-
+            forceClass={selectedCard === 'My Profile' ? 'bg-gray-200' : 'bg-white'}
           />
         </div>
       </section>

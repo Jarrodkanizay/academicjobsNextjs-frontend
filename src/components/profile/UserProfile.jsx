@@ -1,27 +1,26 @@
 import React, { useState } from 'react';
-import axios from 'axios'; // Import Axios for making HTTP requests
+import axios from 'axios';
 import { baseURL } from '@/lib/store/Base';
 import { useSession } from 'next-auth/react';
+import { BaseApi } from '@/lib/store/Base';
 
-// Function to initiate a new session with the updated user data
 const initiateNewSession = (userData, session) => {
-  // Create a new session object with the updated user data
   const newSession = {
     user: userData,
-    expires: session.expires // Keep the expires property unchanged
+    expires: session.expires
   };
   console.log("New session object created:", newSession);
   return newSession;
 };
 
 const UserProfile = ({ id, firstName, lastName, email, location }) => {
-  const { data: session, update: setSession } = useSession(); // Use the useSession hook to get session data and update function
+  const { data: session, update: setSession } = useSession();
   const [formData, setFormData] = useState({
-    name: firstName || '',
-    name: lastName || '',
+    firstName: firstName || '',
+    lastName: lastName || '',
     email: email || '',
     location: location || '',
-    profilePicture: null,
+    image: null,
   });
 
   const handleChange = (e) => {
@@ -36,20 +35,58 @@ const UserProfile = ({ id, firstName, lastName, email, location }) => {
     const file = e.target.files[0];
     setFormData({
       ...formData,
-      profilePicture: file,
+      image: file,
     });
+  };
+
+  const getSignedUrl = async (fileName, targetDir) => {
+    try {
+      const response = await BaseApi.post(`/generate-upload-url`, {
+        fileName: fileName,
+        directory: targetDir,
+      }, {
+        headers: {
+          "Content-Type": "application/json",
+        }
+      });
+      console.log('Signed URL response:', response.data.presignedUploadUrl); // Debugging log
+      return response.data.presignedUploadUrl;
+    } catch (error) {
+      console.error('Error getting signed URL:', error);
+      throw new Error('Could not get signed URL');
+    }
+  };
+
+  const uploadToS3 = async (signedUrl, file) => {
+    try {
+      await axios.put(signedUrl, file);
+    } catch (error) {
+      console.error('Error uploading file to S3:', error);
+      throw new Error('Could not upload file to S3');
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const formDataToSend = new FormData();
-    formDataToSend.append('id', id);
-    formDataToSend.append('name', formData.name);
-    formDataToSend.append('firstName', formData.firstName);
-    formDataToSend.append('lastName', formData.lastName);
-    formDataToSend.append('email', formData.email);
-    formDataToSend.append('address', formData.location);
-    formDataToSend.append('image', formData.profilePicture);
+
+    let fileName = null;
+    if (formData.image) {
+      const file = formData.image;
+      fileName = `${file.name}`;
+
+      const signedUrl = await getSignedUrl(fileName, 'users');
+      await uploadToS3(signedUrl, file);
+    }
+    console.log("hello", fileName);
+
+    const formDataToSend = {
+      id,
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      location: formData.location,
+      image: `https://academicjobs.s3.amazonaws.com/img/users/${fileName}`,
+    };
 
     try {
       const response = await axios.post(`${baseURL}/auth/updateUserById`, formDataToSend, {
@@ -62,11 +99,8 @@ const UserProfile = ({ id, firstName, lastName, email, location }) => {
       const updatedUserData = response.data.user;
       console.log('Updated user data:', updatedUserData);
 
-      // Step 3: Initiate a new session with the updated user data
       const newSession = initiateNewSession(updatedUserData, session);
-
-      // Step 4: Update client-side session data
-      await setSession(newSession.user); // Update session using next-auth's update function
+      await setSession(newSession.user);
       console.log('Session successfully updated:', newSession);
 
     } catch (error) {
@@ -123,7 +157,7 @@ const UserProfile = ({ id, firstName, lastName, email, location }) => {
           type="file"
           accept="image/*"
           onChange={handleFileChange}
-          className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500" />
+          className="w-full input input-md" />
       </div>
       <div>
         <button type="submit" className="py-2 px-4 btn btn-aj">Save Changes</button>

@@ -1,25 +1,32 @@
-
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import JobSearchBox2 from '@/components/JobSearchBox2';
 import SearchResults2 from '@/components/SearchResults2';
 import { BaseApi } from '@/lib/store/Base';
-import {useMutation } from '@tanstack/react-query';
-import { useRouter } from 'next/navigation'
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 
 const SavedItems = ({ favoriteJobs, favoriteEmployers }) => {
-  const router = useRouter();
+  const queryClient = useQueryClient();
+
   const mutationJob = useMutation({
     mutationFn: (data) => {
       return BaseApi.post('/favoriteJobId', data);
     },
+    onSuccess: () => {
+      queryClient.invalidateQueries('favoriteJobs');
+    },
   });
+
   const mutationEmployer = useMutation({
     mutationFn: (data) => {
       return BaseApi.post('/favoriteEmployerId', data);
     },
+    onSuccess: () => {
+      queryClient.invalidateQueries('favoriteEmployers');
+    },
   });
+
   return (
     <div>
       <section className="md:flex">
@@ -42,32 +49,30 @@ const SavedItems = ({ favoriteJobs, favoriteEmployers }) => {
                     <p className="font-bold">{company_name}</p>
                   </div>
                   <div className="flex flex-col justify-center ml-auto gap-2">
-                    <div className="favorite-job-item">
-
-                    </div>
                     <Link
                       className="btn btn-accent"
                       href={`/jobs/${title.replace(/[^a-zA-Z0-9 ]/g, '').replace(/\s+/g, '-')}/${jobId}`}
                     >
                       Job Post
                     </Link>
-                    <button className="btn btn-error"       
-                               onClick={() => {
-                                  const mode = "remove"
-                                  mutationJob.mutate({ jobId, userId, mode });
-                                  router.refresh();
-                              }}>
-                        Remove
-                      </button>
+                    <button
+                      className="btn btn-error"
+                      onClick={() => {
+                        const mode = 'remove';
+                        mutationJob.mutate({ jobId, userId, mode });
+                      }}
+                    >
+                      Remove
+                    </button>
                   </div>
                 </div>
               ))}
             </>
           )}
-           {favoriteEmployers?.length > 0 && (
+          {favoriteEmployers?.length > 0 && (
             <>
               <h3>Employers</h3>
-              {favoriteEmployers.map(({ userId, employer: {id: employerId, company_name, logo } }, i) => (
+              {favoriteEmployers.map(({ userId, employer: { id: employerId, company_name, logo } }, i) => (
                 <div key={i} className="card card-side bg-white shadow-xl border border-slate-300 p-4 mb-8">
                   <figure className="mr-2">
                     <Image
@@ -87,14 +92,15 @@ const SavedItems = ({ favoriteJobs, favoriteEmployers }) => {
                     >
                       Employer Profile
                     </Link>
-                    <button className="btn btn-error"       
-                               onClick={() => {
-                                  const mode = "remove"
-                                  mutationEmployer.mutate({ employerId, userId, mode });
-                                  router.refresh();
-                              }}>
-                        Remove
-                      </button>
+                    <button
+                      className="btn btn-error"
+                      onClick={() => {
+                        const mode = 'remove';
+                        mutationEmployer.mutate({ employerId, userId, mode });
+                      }}
+                    >
+                      Remove
+                    </button>
                   </div>
                 </div>
               ))}
@@ -108,7 +114,7 @@ const SavedItems = ({ favoriteJobs, favoriteEmployers }) => {
             </div>
             <SearchResults2 q={{ q: '', l: '' }} />
           </div>
-          </div>
+        </div>
       </section>
     </div>
   );

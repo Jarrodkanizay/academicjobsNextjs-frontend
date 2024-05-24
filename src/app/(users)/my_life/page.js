@@ -5,8 +5,9 @@ import { useSession } from 'next-auth/react';
 import Profile from './Profile';
 export default function Page() {
   const { data: session } = useSession();
+  console.log("sessssion", session);
 
-  const { id, image, name, email, uerRole } = session.user;
+  const { id, image, name, email } = session.user;
 
   const testID = 1;
   return (
@@ -35,6 +36,7 @@ export default function Page() {
             wavesOn={true}
             bgColor="custom-background"
             session={session} 
+            image = {image}
           />
         )}
       </section>
