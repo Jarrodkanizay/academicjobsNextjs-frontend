@@ -49,7 +49,7 @@ export default function JobSearchBoxCountry({ country }) {
             q: encodeURIComponent(keyWordRef.current?.value.trim() || ''),
           });
           setRegion(country);
-          setFilter1([])
+          setFilter1([{ category: 'Country', filter: 'Australia' }]);
           router.push(`/australia/jobs-advanced-search?l=${country}`);
         }}
       >
