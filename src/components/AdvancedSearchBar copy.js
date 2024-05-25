@@ -7,19 +7,10 @@ import { BaseApi } from '@/lib/store/Base';
 import JobSearchBox6 from '@/components/JobSearchBox6';
 import { useStore } from '@/lib/store/store';
 import { regionData } from "@/data/africaPositions";
-export default function Page({
-  p,
-}) {
- 
+export default function Page() {
   const keyWordRef = useRef(null);
-  const { q, l, lon, lat, category, country, currentMiddleCategory, filter1,setRegion,setFilter1,setCategory,setCountry,setCurrentMiddleCategory } = useStore();
-  const [page, setPage] = useState(0);
-
-  useEffect(() => {
-    if (p?.filter1) {
-      setFilter1(p.filter1)
-    }
-  }, []);
+  const { setSearchJobQuery } = useStore();
+  const { searchJobQuery, region } = useStore();
   const searchParams = useSearchParams();
   const filterType = {
     State: true,
@@ -36,17 +27,20 @@ export default function Page({
     SalaryRange: true,
     OnsiteRemote: true,
   };
-
+  // const q = decodeURIComponent(searchParams.get('q') || '');
+  // const l = decodeURIComponent(searchParams.get('l') || '');
+  // const lon = decodeURIComponent(searchParams.get('lon') || 0);
+  // const lat = decodeURIComponent(searchParams.get('lat') || 0);
   const [filterTypes, setfilterTypes] = useState(filterType);
-  // const [category, setCategory] = useState('');
-  // const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
-  // const [filter1, setfilter] = useState([{ category:'country', filter: region}]);
+  const [category, setCategory] = useState('');
+  const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
+  const [filter1, setfilter] = useState([{ category:'country', filter: region}]);
   const [filter2, setfilter2] = useState([]);
   useEffect(() => {
     //alert(category)
     //setCurrentMiddleCategory('')
-    //setSearchJobQuery({ filter1 })
-    console.log("filter1", filter1)
+    setSearchJobQuery({ filter1 })
+    console.log("setSearchJobQuery1", searchJobQuery)
     setfilterTypes((p) => ({ ...p, ExecutiveJobs: false }));
     setfilterTypes((p) => ({ ...p, HRJobs: false }));
     setfilterTypes((p) => ({ ...p, AdministrationSupportJobs: false }));
@@ -75,15 +69,19 @@ export default function Page({
     }
   }, [filter1]);
   useEffect(() => {
-
+    console.log("setSearchJobQuery2", searchJobQuery)
     console.log("category", category)
-
+    let category1 = category
+    setSearchJobQuery({ category: category1 })
+    console.log("setSearchJobQuery3", searchJobQuery)
+    setTimeout(() => {
+      console.log("setSearchJobQuery4", searchJobQuery)
+    }, 0);
     setfilter2(filter1)
   }, [category, currentMiddleCategory]);
   // useEffect(() => {
   //   alert(currentMiddleCategory)
   // }, [currentMiddleCategory]);
-  //alert()
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -93,13 +91,10 @@ export default function Page({
     isFetching: isFetchingQty,
     isPlaceholderData: isPlaceholderDataQty,
   } = useQuery({
-    queryKey: ['filter', { currentMiddleCategory, category, filter2, q, l, lon, lat }],
+    queryKey: ['filter', { ...searchJobQuery, country: region }],
     queryFn: async () => {
-      const response = await BaseApi.post('/filters', {
-        currentMiddleCategory,
-        category,
-        filter1, q, l, lon, lat
-      });
+      const response = await BaseApi.post('/filters', { ...searchJobQuery, country: region } );
+        // { currentMiddleCategory, category, filter1, q, l, mode: 'normal', lon, lat }
       return response.data.data;
     },
     enabled: category !== '',
