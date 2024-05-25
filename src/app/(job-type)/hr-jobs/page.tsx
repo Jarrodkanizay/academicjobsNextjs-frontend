@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
-import SearchResults3 from '@/components/SearchResults3';
-import AdvancedSearchBar from '@/components/AdvancedSearchBar';
+import SearchResults from '@/components/SearchResults';
+import SearchResults1 from '@/components/SearchResults1';
+import JobSearchBox from '@/components/JobSearchBox';
 import hr from '@/data/hr.json';
 import Link from 'next/link';
 import HeroBanner from '@/components/HeroBanner';
@@ -71,7 +72,24 @@ export default function myPage() {
         </ul>
       </div>
 
-      <AdvancedSearchBar forceClass="hidden md:block" type="advancedSearch" />
+      {/* <div className="md:flex hidden grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
+        <iframe
+          className=" aspect-video  "
+          src="https://www.youtube.com/embed/zA4K1-QmrO4?si=FeSGIGczCj2ZZkwL"
+          title="YouTube video player"
+        ></iframe>
+        <iframe
+          className=" aspect-video "
+          src="https://www.youtube.com/embed/pqjW3uCtswE?si=CxYxWGXqILlP4TlQ"
+          title="YouTube video player"
+        ></iframe>
+        <iframe
+          className=" aspect-video "
+          src="https://www.youtube.com/embed/xiCacfu7Y7Y?si=iC3XrZQZ6o1cCluc"
+          title="YouTube video player"
+        ></iframe>
+      </div> */}
+      <JobSearchBox q="" forceClass="my-6" />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">
@@ -81,8 +99,9 @@ export default function myPage() {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-            <SearchResults3 />
-            {/* <SearchResults1
+            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
+            {/* <SearchResults q={{ q: 'hr' || 0 }} /> */}
+            <SearchResults1
               q={{
                 filter1: [
                   {
@@ -93,7 +112,7 @@ export default function myPage() {
                 q: '',
                 l: '',
               }}
-            /> */}
+            />
           </div>
         </div>
       </section>
