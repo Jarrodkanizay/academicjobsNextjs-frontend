@@ -145,7 +145,7 @@ export default function Page({
                         (_, index) => index !== i
                       );
                       setPage(0);
-                      setfilter1(updatedFilter);
+                      setFilter1(updatedFilter);
                       setCategory("")
                       setCurrentMiddleCategory("")
                     }}
@@ -235,7 +235,7 @@ export default function Page({
                     className="text-left text-gray-500 text-sm truncate"
                     onClick={() => {
                       setPage(0);
-                      setfilter1([...filter1, { category, filter }]);
+                      setFilter1([...filter1, { category, filter }]);
                       //setIsShowFilter(false);
                       setCurrentMiddleCategory(filter)
                     }}
