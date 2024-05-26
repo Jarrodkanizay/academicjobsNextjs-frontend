@@ -23,8 +23,6 @@ export default function JobSearchBox({
           <div className="join mx-auto w-full border border-gray-200 shadow-md flex flex-col md:flex-row">
             <Autocomplete
               className="input input-bordered join-item w-full md:text-left text-center"
-              // defaultValue="Start typing job location & allow Google to auto-complete"
-              //defaultValue={employer?.location}
               style={{ width: '100%' }}
               ref={locationRef}
               apiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
@@ -34,18 +32,11 @@ export default function JobSearchBox({
                 const lon = place.geometry.location.lng();
                 console.log('lat:', lat);
                 console.log('lon:', lon);
-  
                 setLon(lon)
                 setLat(lat)
-             
               }}
-              // onPlaceSelected={(selected, a, c) => {
-              //   console.log(selected,a,c);
-              //   setValue("location", selected)
-              // }}
               options={{
                 types: ['geocode', 'establishment'],
-                //componentRestrictions: { country: "Australia" },
               }}
             />
             <button

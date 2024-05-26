@@ -7,14 +7,14 @@ import { BaseApi } from '@/lib/store/Base';
 import JobSearchBox6 from '@/components/JobSearchBox6';
 import { useStore } from '@/lib/store/store';
 import { regionData } from "@/data/africaPositions";
-import Autocomplete, { usePlacesWidget } from 'react-google-autocomplete';
 export default function Page({
   p,
-  forceClass,
 }) {
-  const { setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
+ 
   const keyWordRef = useRef(null);
+  const { q, l, lon, lat, category, country, currentMiddleCategory, filter1,setRegion,setFilter1,setCategory,setCountry,setCurrentMiddleCategory } = useStore();
   const [page, setPage] = useState(0);
+
   useEffect(() => {
     if (p?.filter1) {
       setFilter1(p.filter1)
@@ -36,6 +36,7 @@ export default function Page({
     SalaryRange: true,
     OnsiteRemote: true,
   };
+
   const [filterTypes, setfilterTypes] = useState(filterType);
   // const [category, setCategory] = useState('');
   // const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
@@ -74,7 +75,9 @@ export default function Page({
     }
   }, [filter1]);
   useEffect(() => {
+
     console.log("category", category)
+
     setfilter2(filter1)
   }, [category, currentMiddleCategory]);
   // useEffect(() => {
@@ -125,44 +128,7 @@ export default function Page({
         <div className="w-full bg-gray-100 py-4 mb-4 mt-8">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-screen-xl mx-auto ">
-              <div className={` py-4 `}>
-                <div className="container lg:max-w-screen-lg px-4 mx-auto ">
-                  <div className="join mx-auto w-full border border-gray-200 shadow-md flex flex-col md:flex-row">
-                    <Autocomplete
-                      className="input input-bordered join-item w-full md:text-left text-center"
-                      style={{ width: '100%' }}
-                      apiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
-                      onPlaceSelected={(place) => {
-                        console.log('Selected Place:', place);
-                        const lat = place.geometry.location.lat();
-                        const lon = place.geometry.location.lng();
-                        console.log('lat:', lat);
-                        console.log('lon:', lon);
-                        setLon(lon)
-                        setLat(lat)
-                      }}
-                      options={{
-                        types: ['geocode', 'establishment'],
-                      }}
-                    />
-                    <button
-                      type="submit"
-                      className="indicator md:w-fit w-full bg-amber-500 md:bg-0 justify-center items-center animate-pulse"
-                      onClick={() => {
-                        // const inputValue = keyWordRef.current.value.trim();
-                        // alert(inputValue);
-                        console.log(keyWordRef.current?.value.trim())
-                        console.log(keyWordRef.current)
-                        setQ(keyWordRef.current?.value.trim() || '')
-                      }}
-                    >
-                      <div className="btn join-item bg-amber-500 md:border md:border-gray-300 md:shadow-md border-0 text-white animate-pulse ">
-                        Search
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
+              <JobSearchBox6 forceClass="hidden md:block" type="advancedSearch" />
             </div>
           </div>
         </div>
@@ -195,8 +161,8 @@ export default function Page({
               <button
                 key={i}
                 className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
-                  ? 'bg-orange-500 text-white border-orange-500'
-                  : 'bg-white border-gray-500'
+                    ? 'bg-orange-500 text-white border-orange-500'
+                    : 'bg-white border-gray-500'
                   }
                   ${showYN ? 'block' : 'hidden'} `}
                 onClick={() => {
@@ -207,6 +173,7 @@ export default function Page({
                   }
                   setCategory(filterType);
                 }}
+
               >
                 {filterValues9[filterType] == 'thirdcategory' ? currentMiddleCategory : filterValues9[filterType]}
               </button>
@@ -219,7 +186,7 @@ export default function Page({
               ref={keyWordRef}
             />
           </div>
-          {/* <details className="bg-gray-300 open:bg-[amber-200] duration-300 md:hidden">
+          <details className="bg-gray-300 open:bg-[amber-200] duration-300 md:hidden">
             <summary className="bg-inherit px-5 py-3 text-lg cursor-pointer pl-8">
               Filters
             </summary>
@@ -232,8 +199,8 @@ export default function Page({
                   <button
                     key={i}
                     className={`px - 2 py - 1 text - gray - 500  border  rounded - md text - sm font - bold ${category === filterType
-                      ? 'bg-orange-500 text-white border-orange-500'
-                      : 'bg-white border-gray-500'
+                        ? 'bg-orange-500 text-white border-orange-500'
+                        : 'bg-white border-gray-500'
                       }
                   ${showYN ? 'block' : 'hidden'}
   `}
@@ -255,9 +222,10 @@ export default function Page({
                 type="text"
                 className="input input-bordered join-item w-full md:text-left text-center"
                 placeholder="Keywords"
+                ref={keyWordRef}
               />
             </div>
-          </details> */}
+          </details>
           {isShowFilter && (
             <div className="grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
               {filters?.length > 0 && // 低层小目录b
