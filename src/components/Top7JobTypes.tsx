@@ -42,7 +42,7 @@ const { region } = useStore();
       src: '/home/academic-staff-positions.png',
       alt: 'Academic Staff Positions',
       label: 'Staff/Admin',
-      link: `${region}/staff-jobs`,
+      link: `${region}/admin`,
     },
   ];
   return (
