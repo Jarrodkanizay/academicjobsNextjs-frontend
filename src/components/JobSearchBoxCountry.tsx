@@ -6,6 +6,8 @@ export default function JobSearchBoxCountry({ country }) {
   const countryMap = {
     UK: 'United Kingdom',
     Australia: 'Australia',
+    Canada: 'Canada',
+    USA: 'United States',
   };
   const { setRegion,setFilter1,reset } = useStore();
   const keyWordRef = useRef<HTMLInputElement>(null);
@@ -55,7 +57,7 @@ export default function JobSearchBoxCountry({ country }) {
           setRegion(country);
           reset()
           setFilter1([{ category: 'Country', filter: countryMap[country] }]);
-          router.push(`/australia/jobs-advanced-search?l=${country}`);
+          router.push(`/jobs-advanced-search?l=${country}`);
         }}
       >
         Advanced Search
