@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
 import { useStore } from '@/lib/store/store';
 export default function JobSearchBoxCountry({ country }) {
-  const { setRegion,setFilter1 } = useStore();
+  const { setRegion,setFilter1,reset } = useStore();
   const keyWordRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
   const handleFormSubmit = async (event: React.FormEvent) => {
@@ -49,7 +49,8 @@ export default function JobSearchBoxCountry({ country }) {
             q: encodeURIComponent(keyWordRef.current?.value.trim() || ''),
           });
           setRegion(country);
-          setFilter1([{ category: 'Country', filter: 'Australia' }]);
+          reset()
+          //setFilter1([{ category: 'Country', filter: 'Australia' }]);
           router.push(`/australia/jobs-advanced-search?l=${country}`);
         }}
       >
