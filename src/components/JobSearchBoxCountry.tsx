@@ -3,6 +3,10 @@ import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
 import { useStore } from '@/lib/store/store';
 export default function JobSearchBoxCountry({ country }) {
+  const countryMap = {
+    UK: 'United Kingdom',
+    Australia: 'Australia',
+  };
   const { setRegion,setFilter1,reset } = useStore();
   const keyWordRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
@@ -50,7 +54,7 @@ export default function JobSearchBoxCountry({ country }) {
           });
           setRegion(country);
           reset()
-          //setFilter1([{ category: 'Country', filter: 'Australia' }]);
+          setFilter1([{ category: 'Country', filter: countryMap[country] }]);
           router.push(`/australia/jobs-advanced-search?l=${country}`);
         }}
       >

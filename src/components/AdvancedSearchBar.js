@@ -145,7 +145,7 @@ export default function Page({
                         types: ['geocode', 'establishment'],
                       }}
                     />
-                    <button
+                    {/* <button
                       type="submit"
                       className="indicator md:w-fit w-full bg-amber-500 md:bg-0 justify-center items-center animate-pulse"
                       onClick={() => {
@@ -159,7 +159,7 @@ export default function Page({
                       <div className="btn join-item bg-amber-500 md:border md:border-gray-300 md:shadow-md border-0 text-white animate-pulse ">
                         Search
                       </div>
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
@@ -212,12 +212,12 @@ export default function Page({
               </button>
             )
             )}
-            <input
+            {/* <input
               type="text"
               className="input input-sm input-bordered  w-[200px] md:text-left text-center"
               placeholder="Keywords"
               ref={keyWordRef}
-            />
+            /> */}
           </div>
           {/* <details className="bg-gray-300 open:bg-[amber-200] duration-300 md:hidden">
             <summary className="bg-inherit px-5 py-3 text-lg cursor-pointer pl-8">
