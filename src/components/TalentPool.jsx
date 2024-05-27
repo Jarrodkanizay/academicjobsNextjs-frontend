@@ -45,7 +45,7 @@ const TalentPool = ({talentPool: talentPool}) => {
                     <div className="absolute top-2 right-2">
                     <button
                       className="btn"
-                      onClick={() => {
+                      onClick={(e) => {
                         e.stopPropagation();
                         const mode = 'remove';
                         const type = 'TALENTPOOL'
