@@ -347,7 +347,7 @@ export default async function myPage() {
           </div>
         </div>
       </div>
-      <h2 className="underline-full">Job of the week</h2>
+      <h2 className="underline-full">Jobs of the week</h2>
       <JobOfTheWeek />
       <div className=" mx-auto mt-8 mb-8">
         <h2 className="underline-full"> Top University Employer Rankings</h2>
