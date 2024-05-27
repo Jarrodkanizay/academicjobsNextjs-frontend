@@ -317,28 +317,27 @@ export default function Profile({
       {selectedCard === 'Talent Pool' && (
         // Render content for Jobs For You
         <div>
-          <h2 className="md:hidden block">Job Alerts</h2>
+          <h2 className="md:hidden block">Talent Pool</h2>
           <TalentPool talentPool={talentPoolEmployers} />
         </div>
       )}
       {selectedCard === 'My Profile' && (
         // Render content for Jobs Applied For
-        <div className="flex gap-5 mt-6">
-          <div className="w-1/2 md:w-full  rounded-2xl mx-auto px-7 pt-4 pb-6 border-[1px] border-slate-500">
-            <UserProfile
-              id={id}
-              firstName={firstName}
-              lastName={lastName}
-              email={email}
-              location={location}
-            />
-          </div>
-
-          <div className="w-1/2 md:w-full">
-            <TalentPoolForm userId={id} maxWidth="700" />
-          </div>
-
+      <div className="gap-5 mt-6 grid grid-cols-1 md:grid-cols-2">
+        <div className="md:mb-6 rounded-2xl px-7 pt-4 pb-6 border-[1px] border-slate-500">
+          <UserProfile
+            id={id}
+            firstName={firstName}
+            lastName={lastName}
+            email={email}
+            location={location}
+          />
         </div>
+
+        <div className="rounded-2xl px-7 pt-4 pb-6 border-[1px] border-slate-500">
+          <TalentPoolForm userId={id} />
+        </div>
+      </div>
       )}
       
     </>

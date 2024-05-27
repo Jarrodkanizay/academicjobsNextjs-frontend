@@ -76,7 +76,7 @@ export default function JobSearchBox() {
       </ul>
       <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-[-75px] mt-[-8rem] lg:hidden ">
         <li>
-          <a className="grayscale hover:grayscale-0" href="/executive">
+          <a className="grayscale hover:grayscale-0" href="/faculty">
             <Image
               alt="Academic Faculty Positions"
               loading="lazy"
@@ -92,7 +92,7 @@ export default function JobSearchBox() {
           </a>
         </li>
         <li>
-          <a className="grayscale hover:grayscale-0" href="/faculty">
+          <a className="grayscale hover:grayscale-0" href="/executive">
             <Image
               alt="Academic Executive Positions"
               loading="lazy"

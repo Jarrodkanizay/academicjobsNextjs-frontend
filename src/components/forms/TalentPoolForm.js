@@ -9,7 +9,6 @@ import FormSubmissionMessage from './FormSubmissionMessage';
 
 const TalentPoolForm = ({
   userId: userId,
-  maxWidth,
   formName = 'Talent Pool Form',
   workTypeHeading = 'What excites you?',
   academicDetailsHeading = 'Academic Details',
@@ -109,10 +108,8 @@ const TalentPoolForm = ({
     );
   }
 
-  if (maxWidth === undefined) maxWidth = '800';
   return (
     <form
-      className={`talent-pool mx-auto px-7 pt-4 pb-6 border-[1px] border-slate-500  rounded-2xl w-full lg:max-w-[${maxWidth}px] lg:min-w-[640px]`}
       onSubmit={handleSubmit(onSubmit)}
     >
       <InputBlock2

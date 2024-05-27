@@ -122,14 +122,14 @@ export default function Page({
   return (
     <>
       <main>
-        <div className="w-full bg-gray-100 py-4 mb-4 mt-8">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full bg-gray-100 pt-2 ">
+          <div className="container mx-auto px-4 md:px-6 lg:px-8">
             <div className="max-w-screen-xl mx-auto ">
               <div className={` py-4 `}>
-                <div className="container lg:max-w-screen-lg px-4 mx-auto ">
+                <div className=" lg:max-w-screen-lg mx-auto ">
                   <div className="join mx-auto w-full border border-gray-200 shadow-md flex flex-col md:flex-row">
                     <Autocomplete
-                      className="input input-bordered join-item w-full md:text-left text-center"
+                      className="input input-bordered join-item w-full md:text-left text-center rounded-xl"
                       style={{ width: '100%' }}
                       apiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
                       onPlaceSelected={(place) => {
@@ -169,7 +169,7 @@ export default function Page({
         <div className=" mx-auto max-w-5xl  flex flex-col  ">
           {  // 顶层已选X  top
             filter1.length > 0 && (
-              <div className="md:flex md:gap-4 md:flex-wrap pb-2">
+              <div className="md:flex md:gap-4 md:flex-wrap pb-2 p-2">
                 {filter1.map(({ category1, filter }, i) => (
                   <button
                     key={i}
@@ -190,7 +190,7 @@ export default function Page({
               </div>
             )
           }
-          <div className="flex gap-4 flex-wrap  p-6 ">
+          <div className="flex gap-4 flex-wrap p-2 ">
             {Object.entries(filterTypes).map(([filterType, showYN], i) => (// 中层大目录m
               <button
                 key={i}
@@ -259,22 +259,44 @@ export default function Page({
             </div>
           </details> */}
           {isShowFilter && (
-            <div className="grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
-              {filters?.length > 0 && // 低层小目录b
-                filters.map(({ filter, job_count }, i) => (
-                  <button
-                    key={i}
-                    className="text-left text-gray-500 text-sm truncate"
-                    onClick={() => {
-                      setPage(0);
-                      setFilter1([...filter1, { category, filter }]);
-                      //setIsShowFilter(false);
-                      setCurrentMiddleCategory(filter)
-                    }}
-                  >{`${filter ? filter : 'Others'} (${job_count})`}</button>
-                ))}
+            <><div className="p-2 w-full">
+              <select
+                className="md:hidden block text-left text-gray-500 text-sm rounded-xl p-2 w-full mb-4"
+                onChange={(e) => {
+                  const selectedFilter = filters.find(f => f.filter === e.target.value);
+                  setPage(0);
+                  setFilter1([...filter1, { category, filter: selectedFilter.filter }]);
+                  setCurrentMiddleCategory(selectedFilter.filter);
+                } }
+              >
+                {filters?.length > 0 &&
+                  filters.map(({ filter, job_count }, i) => (
+                    <option
+                      key={i}
+                      value={filter}
+                    >
+                      {`${filter ? filter : 'Others'} (${job_count})`}
+                    </option>
+                  ))}
+              </select>
             </div>
+            <div className="hidden md:grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
+                {filters?.length > 0 && // 低层小目录b
+                  filters.map(({ filter, job_count }, i) => (
+                    <button
+                      key={i}
+                      className="text-left text-gray-500 text-sm truncate"
+                      onClick={() => {
+                        setPage(0);
+                        setFilter1([...filter1, { category, filter }]);
+                        //setIsShowFilter(false);
+                        setCurrentMiddleCategory(filter);
+                      } }
+                    >{`${filter ? filter : 'Others'} (${job_count})`}</button>
+                  ))}
+              </div></>
           )}
+
         </div>
       </main>
     </>

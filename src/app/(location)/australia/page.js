@@ -66,7 +66,7 @@ export default async function myPage() {
 
           <section className="wrapper md:flex ">
             <h2 className="sentence mt-[6rem]">
-              <h2 className="sentence-aus text-black md:mb-[-5rem] mb-[-10rem]">Australia's University Job Website</h2>
+              <h2 className="sentence-aus md:mb-[-5rem] mb-[-10rem]">Australia's University Job Website</h2>
               <span className="mr-8">Find</span> <span className="md:hidden block my-[-1rem]"><br /></span>
               <div className="slidingVertical ">
                 <span>Opportunity</span>
@@ -527,9 +527,8 @@ export default async function myPage() {
       </div>
 
       {/* <h2 className="underline-full"> Top University Employer Rankings</h2> */}
-      <div className="bg-white flex flex-col mx-auto mb-4">
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch  px-1 mb-8 text-left px-4">
-        <div className="card bg-slate-300 shadow-xl">
+      <div className="bg-white flex flex-col md:flex-row mx-auto mb-4">
+        {/* <div className="card bg-slate-300 shadow-xl">
             <div className="card-body">
               <h2 className="card-title">
                 {' '}
@@ -537,11 +536,10 @@ export default async function myPage() {
               </h2>
 
             </div>    
-          <JobOfTheWeek />
-          </div>
+          </div> */}
 
           {/* /top-10-australian-universities */}
-          <div className="">
+          <div className="md:w-1/3 w-full">
             <div className="card bg-slate-100 shadow-xl">
               <div className="card-body">
                 <h2 className="card-title">
@@ -591,16 +589,18 @@ export default async function myPage() {
                 </Link> */}
             </div>
           </div>
+        
+          <div className="md:w-2/3 w-full">
+            <a className="card-title md:ml-4 mt-8 text-[#3b5683]"> Top HR jobs today</a>
+            <div className=" h-96 md:ml-4 overflow-y-scroll custom-scrollbar">
 
+              <SearchResults q={{ q: "hr", l: "Australia" }} /> </div>
+          </div>
 
-          <div>
-            <a div className="card-title mx-8 mt-8 text-[#3b5683]"> Top HR jobs today</a>
-            <div className=" h-96 ml-8 overflow-y-scroll">
-
-              <SearchResults q={{ q: "hr", l: "Australia" }} /> </div></div>
-
-        </ul>
       </div>
+      <h2 className="underline-full">Jobs of the week</h2>
+      <JobOfTheWeek />
+
 
 
 
