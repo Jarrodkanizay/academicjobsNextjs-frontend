@@ -4,6 +4,8 @@ import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import lecturer from '@/data/lecturer.json';
 import Link from 'next/link';
+import SearchResults3 from '@/components/SearchResults3';
+import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 export const metadata: Metadata = {
   title: {
     absolute: 'Academic Lecturer Jobs',
@@ -15,30 +17,6 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className="">
-      {/* <div className="bg-slate-200 full-width">
-        <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
-          <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">
-            Lecturing Jobs
-          </h1>
-          <div>
-            <p className="px-7 mb-4 mt-1">
-            Discover your perfect lecturing position through the world’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top universities. A career as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
-
-            </p>
-            <p className="px-7 md:flex hidden">
-            The No.1 job board for lecturers, Academic Jobs, provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.</p>
-            <p className="px-7 md:flex hidden">
-            Find all the best lecturing jobs here…</p>
-            <Link
-                      href={'/academic-talent-pool'}
-                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
-                    >
-                     Join Our Talent Pool
-                    </Link>
-          </div>
-        </div>
-      </div> */}
-
       <div
         className="hero h-screen max-h-[480px] md:max-h-[400px] mx-auto"
         style={{
@@ -95,7 +73,16 @@ export default function Page() {
           ))}
         </ul>
       </div>
-      <JobSearchBox q="" forceClass="my-6" />
+      <AdvancedSearchBar
+        p={{
+          filter1: [
+            {
+              category: 'PositionType',
+              filter: 'Lecturer/Instructor',
+            },
+          ],
+        }}
+      />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">
@@ -105,8 +92,7 @@ export default function Page() {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'lecturer' || 0 }} />
+            <SearchResults3 />
           </div>
         </div>
       </section>
