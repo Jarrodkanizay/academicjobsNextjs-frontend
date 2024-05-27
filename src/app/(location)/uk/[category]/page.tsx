@@ -4,7 +4,8 @@ import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import TalentPool from '@/components/TalentPoolCTA';
-// import type { Metadata } from 'next';
+import SearchResults3 from '@/components/SearchResults3';
+import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 
 const regionName = 'United Kingdom';
 
@@ -55,6 +56,8 @@ export default function Page({ params, searchParams }: any) {
     Description = '',
     Keyword = '',
     content: content1 = '',
+    category2 = '',
+    filter2 = '',
   } = regionData.find((item) => item.Name === category) || {};
 
   const paras = content1.split('\n');
@@ -80,12 +83,27 @@ export default function Page({ params, searchParams }: any) {
                 {para}
               </p>
             ))}
-                <TalentPool  />
+            <TalentPool />
           </div>
         </div>
       </div>
 
-      <JobSearchBox  />
+      <AdvancedSearchBar
+        p={{
+          filter1: [
+            {
+              category: 'Country',
+              filter: 'United Kingdom',
+            },
+            {
+              category: category2,
+              filter: filter2,
+            },
+          ],
+          q: Name,
+          l: regionName,
+        }}
+      />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">
@@ -95,7 +113,8 @@ export default function Page({ params, searchParams }: any) {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-          <SearchResults q={{ q: Name, l: regionName }} />
+            {/* <SearchResults q={{ q: Name, l: regionName }} /> */}
+            <SearchResults3 />
           </div>
         </div>
       </section>

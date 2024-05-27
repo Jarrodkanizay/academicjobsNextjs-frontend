@@ -9,6 +9,8 @@ export const regionData = [
     The No.1 job board for uni jobs in the United States of America. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top faculty jobs to find the best position for you!
      
     Find all the best academic faculty jobs here…`,
+    category2: 'master_category_job_type',
+    filter2: 'Academic / Faculty',
   },
   {
     Name: `lecturer`,
@@ -64,6 +66,8 @@ export const regionData = [
     content: `Discover your perfect human resource position through the United States of America best job board! At Academic Jobs we offer the most renowned HR jobs at the top universities in the USA. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
  
     The No.1 job board for HR professionals in universities in the USA. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
+    category2: 'master_category_job_type',
+    filter2: 'Human Resources',
   },
   {
     Name: `executive`,
@@ -75,9 +79,11 @@ export const regionData = [
     The No.1 job board for academics in the USA. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!
      
     Find all the best executive jobs here…`,
+    category2: 'master_category_job_type',
+    filter2: 'Executive',
   },
   {
-    Name: `staff`,
+    Name: `admin`,
     Title: `All staff Jobs in USA`,
     Description: `Admin and Support Academic Jobs USA will provide you the chance to collaborate with a varied and skilled group of individuals while advancing the academic standards and innovative practices of your organisation.`,
     Keyword: `Admin and Support Academic Jobs USA, Admin and Support AcademicJobs `,
@@ -86,6 +92,8 @@ export const regionData = [
     The No.1 job board for academics in the USA. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top staff jobs to find the best position for you!
      
     Find all the best staff jobs here…`,
+    category2: 'master_category_job_type',
+    filter2: 'Staff / Administration',
   },
 
   {
@@ -109,5 +117,7 @@ export const regionData = [
   The No.1 job board for academics in United States of America. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programs.
   
   Find all the best PhD positions here…`,
+    category2: 'master_category_job_type',
+    filter2: 'Student / Phd Jobs',
   },
 ];

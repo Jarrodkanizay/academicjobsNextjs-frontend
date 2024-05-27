@@ -51,7 +51,7 @@ export default async function myPage() {
       src: '/home/academic-staff-positions.png',
       alt: 'Academic Staff Positions',
       label: 'Staff/Admin',
-      link: `usa/staff-jobs`,
+      link: `usa/admin`,
     },
     // {
     //   src: '/home/academic-graduate-positions.png',

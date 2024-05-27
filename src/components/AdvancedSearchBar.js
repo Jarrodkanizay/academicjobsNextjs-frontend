@@ -10,7 +10,7 @@ import { regionData } from "@/data/africaPositions";
 import Autocomplete, { usePlacesWidget } from 'react-google-autocomplete';
 export default function Page({
   p,
-  forceClass,
+  forceClass='',
 }) {
   const { setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
   const keyWordRef = useRef(null);
