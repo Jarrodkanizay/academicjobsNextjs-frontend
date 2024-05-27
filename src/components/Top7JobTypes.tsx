@@ -2,14 +2,10 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-
 import { useState, useEffect } from 'react';
 import { useStore } from '@/lib/store/store';
-
 export default function JobSearchBox() {
- 
 const { region } = useStore();
-
   const size = 120
   const items = [
     {
@@ -18,7 +14,6 @@ const { region } = useStore();
       label: 'Faculty',
       link: `${region}/faculty`,
     },
-
     {
       src: '/home/academic-executive-positions.png',
       alt: 'Academic Executive Positions',
@@ -31,7 +26,6 @@ const { region } = useStore();
       label: 'HR Jobs',
       link: `${region}/hr-jobs`,
     },
-
     {
       src: '/home/academic-phd-positions.png',
       alt: 'Academic PhD Positions',
@@ -101,7 +95,6 @@ const { region } = useStore();
               decoding="async"
               data-nimg="1"
               src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"
-
             ></Image>
           </a>
           <a className="mb-4" href="/faculty">
