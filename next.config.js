@@ -213,11 +213,11 @@ const nextConfig = {
         destination: '/employers/university-of-melbourne/3170/',
         permanent: true,
       },
-      {
-        source: '/usa/admin',
-        destination: '/usa/staff',
-        permanent: true,
-      },
+      // {
+      //   source: '/usa/admin',
+      //   destination: '/usa/staff',
+      //   permanent: true,
+      // },
       {
         source: '/post-job',
         destination: '/recruitment',
