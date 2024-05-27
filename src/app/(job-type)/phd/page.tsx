@@ -3,7 +3,8 @@ import SearchResults1 from '@/components/SearchResults1';
 import JobSearchBox from '@/components/JobSearchBox';
 import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
-
+import SearchResults3 from '@/components/SearchResults3';
+import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
@@ -51,7 +52,16 @@ export default function myPage() {
         </div>
       </div>
 
-      <JobSearchBox q="" forceClass="my-6" />
+      <AdvancedSearchBar
+        p={{
+          filter1: [
+            {
+              category: 'master_category_job_type',
+              filter: 'Student / Phd Jobs',
+            },
+          ],
+        }}
+      />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">
@@ -61,20 +71,7 @@ export default function myPage() {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            {/* <SearchResults q={{ q: 'phd' || 0 }} /> */}
-            <SearchResults1
-              q={{
-                filter1: [
-                  {
-                    category: 'master_category_job_type',
-                    filter: 'Student / Phd Jobs',
-                  },
-                ],
-                q: '',
-                l: '',
-              }}
-            />
+            <SearchResults3 />
           </div>
         </div>
       </section>

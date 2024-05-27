@@ -5,10 +5,11 @@ import { useRef } from 'react';
 import { useStore } from '@/lib/store/store';
 import { countryMappings, countryMappings1 } from '@/lib/data/data';
 export default function JobSearchBox() {
+
   const keyWordRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
   let region = 'Australia';
-  const { setRegion, setSearchJobCriteria } = useStore();
+  const { setRegion, setFilter1 } = useStore();
   const handleFormSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     const a: { q?: string; l?: string } = {};
@@ -87,10 +88,12 @@ export default function JobSearchBox() {
               a.q = keyWordRef.current.value.trim();
             }
             setRegion('Global');
+           setFilter1([])
             const params = new URLSearchParams({
               l: '',
               q: encodeURIComponent(a.q || ''),
             });
+
             router.push(`/jobs?${params.toString()}`);
           }}
         >

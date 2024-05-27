@@ -4,7 +4,8 @@ import JobSearchBox from '@/components/JobSearchBox';
 import category from '@/data/category.json';
 import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
-
+import SearchResults3 from '@/components/SearchResults3';
+import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
@@ -17,33 +18,6 @@ export const metadata: Metadata = {
 export default function myPage() {
   return (
     <main className="">
-      {/* <div className="bg-slate-200 full-width">
-      <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
-    
-              <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">Faculty Jobs</h1> 
-              
-            <div>
-            
-            <p className="px-7 mb-4 mt-1">
-            Seek your perfect faculty position through the world’s best job board! At Academic Jobs we offer the most renowned uni jobs at the top universities. Positions in academic faculty will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
-            </p>
-            <p className="px-7">
-            The No.1 job board for uni jobs, Academic Jobs, provides an extensive list of opportunities for the future of your career, carefully sectioning the top faculty jobs to find the best position for you!
-            </p>
-            <p className="px-7">
-            Find all the best academic faculty jobs here…
-            </p>
-            <Link
-                      href={'/academic-talent-pool'}
-                      className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
-                    >
-                     Join Our Talent Pool
-                    </Link>
-         
-            </div>
-          </div>
-          </div> */}
-
       <div
         className="hero h-screen max-h-[480px] md:max-h-[400px] mx-auto"
         style={{
@@ -62,7 +36,6 @@ export default function myPage() {
               </span>
               <br />
             </h1>
-
             <p className="px-7 font-bold">
               The No.1 job board for Faculty Jobs, Academic Jobs, provides an
               extensive list of opportunities for the future of your career,
@@ -72,7 +45,6 @@ export default function myPage() {
             <p className="px-7 font-bold">
               Find all the best academic faculty jobs here…
             </p>
-
             <Link
               href="/academic-talent-pool"
               className="btn ml-2 btn-aj text-lg font-bold item-center justify-center text-center"
@@ -82,17 +54,6 @@ export default function myPage() {
           </div>
         </div>
       </div>
-
-      {/* <div className="bg-white flex flex-col  ">
-               <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
-              {category.map(({ Title, Name, break1, isBold }, key) => (
-                <li className={`pb-2 flex ${' md:break' } ${ ' font-bold text-gray-400' }`} key={key}>
-                  <Link href={`/faculty/${Name?.replace(/\s+/g, '-')}/`}>{Name}</Link>
-                </li>
-              ))}
-            </ul>
-          </div> */}
-
       <div className="regions grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mb-16 py-4 px-7 mb-8 text-left h-auto w-full text-transform: capitalize bg-gray-200">
         <ul>
           <li className="flex mt-4 font-bold text-[#f4a10c]">
@@ -248,7 +209,6 @@ export default function myPage() {
               instructional technology design
             </a>
           </li>
-
           <li className="flex    ">
             <a href="/faculty/reading-literacy/">reading literacy</a>
           </li>
@@ -666,9 +626,16 @@ export default function myPage() {
           </li>
         </ul>
       </div>
-
-      <JobSearchBox q="" forceClass="my-6" />
-
+      <AdvancedSearchBar
+        p={{
+          filter1: [
+            {
+              category: 'master_category_job_type',
+              filter: 'Academic / Faculty',
+            },
+          ],
+        }}
+      />
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">
           <div className="filters_content">
@@ -677,20 +644,7 @@ export default function myPage() {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            {/* <SearchResults q={{ q: 'faculty' || 0 }} /> */}
-            <SearchResults1
-              q={{
-                filter1: [
-                  {
-                    category: 'master_category_job_type',
-                    filter: 'Academic / Faculty',
-                  },
-                ],
-                q: '',
-                l: '',
-              }}
-            />
+            <SearchResults3 />
           </div>
         </div>
       </section>

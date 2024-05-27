@@ -6,7 +6,8 @@ import hr from '@/data/hr.json';
 import Link from 'next/link';
 import HeroBanner from '@/components/HeroBanner';
 import JobFilter from '@/components/JobFilter';
-
+import SearchResults3 from '@/components/SearchResults3';
+import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
@@ -89,7 +90,16 @@ export default function myPage() {
           title="YouTube video player"
         ></iframe>
       </div> */}
-      <JobSearchBox q="" forceClass="my-6" />
+      <AdvancedSearchBar
+        p={{
+          filter1: [
+            {
+              category: 'master_category_job_type',
+              filter: 'Human Resources',
+            },
+          ],
+        }}
+      />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">
@@ -99,20 +109,7 @@ export default function myPage() {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            {/* <SearchResults q={{ q: 'hr' || 0 }} /> */}
-            <SearchResults1
-              q={{
-                filter1: [
-                  {
-                    category: 'master_category_job_type',
-                    filter: 'Human Resources',
-                  },
-                ],
-                q: '',
-                l: '',
-              }}
-            />
+            <SearchResults3 />
           </div>
         </div>
       </section>

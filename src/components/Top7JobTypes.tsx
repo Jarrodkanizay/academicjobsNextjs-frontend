@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useStore } from '@/lib/store/store';
 export default function JobSearchBox() {
-const { region } = useStore();
-  const size = 120
+  const { region } = useStore();
+  const size = 120;
   const items = [
     {
       src: '/home/academic-faculty-positions.png',
@@ -60,7 +60,13 @@ const { region } = useStore();
         {items.map((item, index) => (
           <li key={index}>
             <Link className="grayscale hover:grayscale-0" href={item.link}>
-              <Image className='rounded-full' src={item.src} width={size} height={size} alt={item.alt} />
+              <Image
+                className="rounded-full"
+                src={item.src}
+                width={size}
+                height={size}
+                alt={item.alt}
+              />
             </Link>
             <Link className="mb-4" href={item.link}>
               <p>{item.label}</p>
