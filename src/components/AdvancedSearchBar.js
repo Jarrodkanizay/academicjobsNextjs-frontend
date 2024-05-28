@@ -22,9 +22,7 @@ export default function Page({
   }, []);
   const searchParams = useSearchParams();
   const filterType = {
-    Country: false,
-    State: true,
-    InstitutionName: true,
+
     JobType: false,
     ExecutiveJobs: false,
     AdministrationSupportJobs: false,
@@ -32,6 +30,9 @@ export default function Page({
     FacultyDepartmentJobs: false,
     AcademicPositionType: false,
     thirdcategory: false,
+    Country: false,
+    State: true,
+    InstitutionName: true,
     EmploymentType: true,
     PositionType: false,
     SalaryRange: true,
@@ -116,7 +117,7 @@ export default function Page({
       const response = await BaseApi.post('/filters', {
         currentMiddleCategory,
         category: 'JobType',
-         q, l, lon, lat
+        q, l, lon, lat
       });
       return response.data.data;
     },
@@ -196,24 +197,23 @@ export default function Page({
               </div>
             )
           }
-     
-          <div className=" md:grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
-            {filters9?.length > 0 && // 低层小目录b
+
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 p-6">
+            {filters9?.length > 0 &&
               filters9.map(({ filter, job_count }, i) => (
                 <button
                   key={i}
-                  className="text-left text-gray-500 text-sm truncate"
+                  className="btn bg-gray-300 text-left text-gray-500 text-sm truncate"
                   onClick={() => {
                     setPage(0);
                     setFilter1([...filter1, { category, filter }]);
-                    //setIsShowFilter(false);
                     setCurrentMiddleCategory(filter);
                   }}
-                >{`${filter ? filter : 'Others'} (${job_count})`}</button>
+                >{`${filter ? filter : 'Others'}`}</button>
               ))}
           </div>
 
-          <div className="flex gap-4 flex-wrap p-2 ">
+          <div className="flex gap-4 flex-wrap p-2 ml-4">
             {Object.entries(filterTypes).map(([filterType, showYN], i) => (// 中层大目录m
               <button
                 key={i}
@@ -265,7 +265,7 @@ export default function Page({
                     ))}
                 </select>
               </div>
-              <div className=" md:grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
+              <div className="hidden md:grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
                 {filters?.length > 0 && // 低层小目录b
                   filters.map(({ filter, job_count }, i) => (
                     <button
