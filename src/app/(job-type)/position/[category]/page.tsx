@@ -3,7 +3,8 @@ import positionData from '@/data/position.json';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
-// import type { Metadata } from 'next';
+import SearchResults3 from '@/components/SearchResults3';
+import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 
 type MetadataTypes = {
   Name?: string | undefined;

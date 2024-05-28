@@ -4,7 +4,8 @@ import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import HeroBanner from '@/components/HeroBanner';
-
+import SearchResults3 from '@/components/SearchResults3';
+import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 export const metadata: Metadata = {
   title: 'University Student Jobs', //Option 1 replaces the %s in layout.tsx
   // title: {
@@ -115,8 +116,16 @@ export default function myPage() {
           </ul>
           <div className="newLine"></div>
         </div> */}
-
-        <JobSearchBox q="" forceClass="my-6" />
+        <AdvancedSearchBar
+          p={{
+            filter1: [
+              {
+                category: 'master_category_job_type',
+                filter: 'Student / Phd Jobs',
+              },
+            ],
+          }}
+        />
 
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
@@ -127,11 +136,10 @@ export default function myPage() {
           <div className="listings_panel">
             <div className="listings_content">
               {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-              <SearchResults q={{ q: 'student' || 0 }} />
+              <SearchResults3 />
             </div>
           </div>
         </section>
-
         {/*  */}
         {/* <HeroBanner
           mobileMode={true}
