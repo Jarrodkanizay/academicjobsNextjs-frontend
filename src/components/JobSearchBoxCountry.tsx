@@ -1,6 +1,6 @@
 'use client';
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
-import { useRef } from 'react';
 import { useStore } from '@/lib/store/store';
 export default function JobSearchBoxCountry({ country }) {
   const countryMap = {
@@ -9,7 +9,10 @@ export default function JobSearchBoxCountry({ country }) {
     Canada: 'Canada',
     USA: 'United States',
   };
-  const { setRegion,setFilter1,reset } = useStore();
+  const { setRegion, setFilter1, reset } = useStore();
+    useEffect(() => {
+      setRegion(countryMap[country]);
+    }, []);
   const keyWordRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
   const handleFormSubmit = async (event: React.FormEvent) => {

@@ -12,7 +12,7 @@ export default function Page({
   p,
   forceClass='',
 }) {
-  const { setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
+  const { region,setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
   useEffect(() => {
@@ -22,6 +22,7 @@ export default function Page({
   }, []);
   const searchParams = useSearchParams();
   const filterType = {
+    Country: false,
     State: true,
     InstitutionName: true,
     JobType: true,
@@ -77,9 +78,9 @@ export default function Page({
     console.log("category", category)
     setfilter2(filter1)
   }, [category, currentMiddleCategory]);
-  // useEffect(() => {
-  //   alert(currentMiddleCategory)
-  // }, [currentMiddleCategory]);
+  useEffect(() => {
+    if (region=='Global')    setfilterTypes((p) => ({ ...p, Country: true }));
+  }, []);
   //alert()
   const {
     isPending: isPendingQty,
