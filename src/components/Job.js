@@ -66,9 +66,30 @@ const Job = ({ job }) => {
           </div> */}
         </div>
         <div className="flex justify-between items-center">
+          {/* <div className="text-sm text-gray-600">
+            <div className="mb-1">{company_name}</div>
+            <div className="text-gray-700 font-light text-sm">
+              <img src="/address-pin-location-svgrepo-com.svg" alt="icon" className="inline-block mr-1 h-5 w-5" />
+              {location.split(',').length > 2 ? location.substring(location.indexOf(',') + 1).trim() : location}
+            </div>
+            {salary_from !== 0 && salary_to !== 0 && (<div className="text-gray-700 font-light text-sm">
+              <img src="/money-svgrepo-com.svg" alt="icon" className="inline-block mr-1 h-5 w-5" />
+              ${salary_from} - ${salary_to}
+            </div>)}
+            <div className="text-gray-700 font-light text-sm">
+              <img src="/job-profile-svgrepo-com.svg" alt="icon" className="inline-block mr-1 h-6 w-6" />
+              {master_category_job_type}</div>
+          </div> */}
           <div className="text-sm text-gray-600">
             <div className="mb-1">{company_name}</div>
-            <div className="text-gray-700 font-light text-sm">{location}</div>
+            <div className="text-gray-700 font-light text-sm">
+              &#8226; {location.split(',').length > 2 ? location.substring(location.indexOf(',') + 1).trim() : location}
+            </div>
+              {salary_from !== 0 && salary_to !== 0 && (<div className="text-gray-700 font-light text-sm">
+              &#8226; ${salary_from} - ${salary_to}
+            </div>)}
+            <div className="text-gray-700 font-light text-sm">
+              &#8226; {master_category_job_type}</div>
           </div>
           <div className="applications-close border-2 rounded px-2 mt-1 ml-2">
             <p className="text-center text-gray-400 text-sm mb-0">Closes</p>
