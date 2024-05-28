@@ -19,6 +19,7 @@ const Job = ({ job }) => {
     salary_from,
     salary_to,
     master_category_job_type,
+    currency,
     featured,
     id,
   } = job;
@@ -74,13 +75,28 @@ const Job = ({ job }) => {
             {location && (<div className="text-gray-700 font-light text-sm">
               &#8226; {location.split(',').length > 2 ? location.substring(location.indexOf(',') + 1).trim() : location}
             </div>)}
-            {(salary_from && salary_from !== 0) || (salary_to && salary_to !== 0) ? (
-              <div className="text-gray-700 font-light text-sm">
-                &#8226; {(salary_from && salary_from !== 0 & salary_from>1000) ? `$${salary_from}` : ''}
-                {(salary_from && salary_from !== 0) && (salary_to && salary_to !== 0) ? ' - ' : ''}
-                {(salary_to && salary_to !== 0) ? `$${salary_to}` : ''}
-              </div>
-            ) : null}
+            {
+              (salary_from && salary_from !== 0) || (salary_to && salary_to !== 0) ? (
+                <div className="text-gray-700 font-light text-sm">
+                  {(salary_from && salary_from !== 0 && salary_from > 1000) || (salary_to && salary_to !== 0) ? (
+                    <>
+                      &#8226;
+                      {(salary_from && salary_from !== 0 && salary_from > 1000) ? (
+                        currency === 'GBP' ? `£${salary_from.toLocaleString()}` :
+                          currency === 'EUR' ? `€${salary_from.toLocaleString()}` :
+                            ` $${salary_from.toLocaleString()}`
+                      ) : ''}
+                      {(salary_from && salary_from !== 0) && (salary_to && salary_to !== 0) ? ' - ' : ''}
+                      {(salary_to && salary_to !== 0) ? (
+                        currency === 'GBP' ? `£${salary_to.toLocaleString()}` :
+                          currency === 'EUR' ? `€${salary_to.toLocaleString()}` :
+                            ` $${salary_to.toLocaleString()}`
+                      ) : ''}
+                    </>
+                  ) : null}
+                </div>
+              ) : null
+            }
 
             {master_category_job_type && (<div className="text-gray-700 font-light text-sm">
               &#8226; {master_category_job_type}</div>)}
