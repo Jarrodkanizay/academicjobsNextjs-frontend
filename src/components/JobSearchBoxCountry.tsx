@@ -1,7 +1,15 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
-export default function JobSearchBoxCountry({country}) {
+import { useStore } from '@/lib/store/store';
+export default function JobSearchBoxCountry({ country }) {
+  const countryMap = {
+    UK: 'United Kingdom',
+    Australia: 'Australia',
+    Canada: 'Canada',
+    USA: 'United States',
+  };
+  const { setRegion,setFilter1,reset } = useStore();
   const keyWordRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
   const handleFormSubmit = async (event: React.FormEvent) => {
@@ -11,14 +19,13 @@ export default function JobSearchBoxCountry({country}) {
       a.q = keyWordRef.current.value.trim();
     }
     const params = new URLSearchParams({
-    l: encodeURIComponent(country),
-    q: encodeURIComponent(a.q || ''),
+      l: encodeURIComponent(country),
+      q: encodeURIComponent(a.q || ''),
     });
     router.push(`/jobs?${params.toString()}`);
-    
   };
   return (
-    <div className='flex flex-col gap-2'>
+    <div className="flex flex-col gap-2">
       <form
         className="flex flex-col gap-1 items-center md:items-end w-full"
         onSubmit={handleFormSubmit}
@@ -47,9 +54,10 @@ export default function JobSearchBoxCountry({country}) {
             // lat: encodeURIComponent(lonlat.current?.lat),
             q: encodeURIComponent(keyWordRef.current?.value.trim() || ''),
           });
-          router.push(
-            `/australia/jobs-advanced-search?l=${country}`
-          );
+          setRegion(country);
+          reset()
+          setFilter1([{ category: 'Country', filter: countryMap[country] }]);
+          router.push(`/jobs-advanced-search?l=${country}`);
         }}
       >
         Advanced Search

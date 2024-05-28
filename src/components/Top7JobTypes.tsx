@@ -2,15 +2,11 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-
 import { useState, useEffect } from 'react';
 import { useStore } from '@/lib/store/store';
-
 export default function JobSearchBox() {
- 
-const { region } = useStore();
-
-  const size = 120
+  const { region } = useStore();
+  const size = 120;
   const items = [
     {
       src: '/home/academic-faculty-positions.png',
@@ -18,7 +14,6 @@ const { region } = useStore();
       label: 'Faculty',
       link: `${region}/faculty`,
     },
-
     {
       src: '/home/academic-executive-positions.png',
       alt: 'Academic Executive Positions',
@@ -31,7 +26,6 @@ const { region } = useStore();
       label: 'HR Jobs',
       link: `${region}/hr-jobs`,
     },
-
     {
       src: '/home/academic-phd-positions.png',
       alt: 'Academic PhD Positions',
@@ -42,7 +36,7 @@ const { region } = useStore();
       src: '/home/academic-staff-positions.png',
       alt: 'Academic Staff Positions',
       label: 'Staff/Admin',
-      link: `${region}/staff-jobs`,
+      link: `${region}/admin`,
     },
   ];
   return (
@@ -66,7 +60,13 @@ const { region } = useStore();
         {items.map((item, index) => (
           <li key={index}>
             <Link className="grayscale hover:grayscale-0" href={item.link}>
-              <Image className='rounded-full' src={item.src} width={size} height={size} alt={item.alt} />
+              <Image
+                className="rounded-full"
+                src={item.src}
+                width={size}
+                height={size}
+                alt={item.alt}
+              />
             </Link>
             <Link className="mb-4" href={item.link}>
               <p>{item.label}</p>
@@ -76,7 +76,7 @@ const { region } = useStore();
       </ul>
       <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-[-75px] mt-[-8rem] lg:hidden ">
         <li>
-          <a className="grayscale hover:grayscale-0" href="/executive">
+          <a className="grayscale hover:grayscale-0" href="/faculty">
             <Image
               alt="Academic Faculty Positions"
               loading="lazy"
@@ -92,7 +92,7 @@ const { region } = useStore();
           </a>
         </li>
         <li>
-          <a className="grayscale hover:grayscale-0" href="/faculty">
+          <a className="grayscale hover:grayscale-0" href="/executive">
             <Image
               alt="Academic Executive Positions"
               loading="lazy"
@@ -101,7 +101,6 @@ const { region } = useStore();
               decoding="async"
               data-nimg="1"
               src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"
-
             ></Image>
           </a>
           <a className="mb-4" href="/faculty">

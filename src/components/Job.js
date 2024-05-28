@@ -16,10 +16,10 @@ const Job = ({ job }) => {
     how_to_apply,
     logo,
     company_name,
-    featured,
     salary_from,
     salary_to,
     master_category_job_type,
+    featured,
     id,
   } = job;
   content = (

@@ -7,19 +7,10 @@ import { BaseApi } from '@/lib/store/Base';
 import JobSearchBox6 from '@/components/JobSearchBox6';
 import { useStore } from '@/lib/store/store';
 import { regionData } from "@/data/africaPositions";
-import Autocomplete, { usePlacesWidget } from 'react-google-autocomplete';
-export default function Page({
-  p,
-  forceClass='',
-}) {
-  const { setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
+export default function Page() {
   const keyWordRef = useRef(null);
-  const [page, setPage] = useState(0);
-  useEffect(() => {
-    if (p?.filter1) {
-      setFilter1(p.filter1)
-    }
-  }, []);
+  const { setSearchJobQuery } = useStore();
+  const { searchJobQuery, region } = useStore();
   const searchParams = useSearchParams();
   const filterType = {
     State: true,
@@ -36,16 +27,20 @@ export default function Page({
     SalaryRange: true,
     OnsiteRemote: true,
   };
+  // const q = decodeURIComponent(searchParams.get('q') || '');
+  // const l = decodeURIComponent(searchParams.get('l') || '');
+  // const lon = decodeURIComponent(searchParams.get('lon') || 0);
+  // const lat = decodeURIComponent(searchParams.get('lat') || 0);
   const [filterTypes, setfilterTypes] = useState(filterType);
-  // const [category, setCategory] = useState('');
-  // const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
-  // const [filter1, setfilter] = useState([{ category:'country', filter: region}]);
+  const [category, setCategory] = useState('');
+  const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
+  const [filter1, setfilter] = useState([{ category:'country', filter: region}]);
   const [filter2, setfilter2] = useState([]);
   useEffect(() => {
     //alert(category)
     //setCurrentMiddleCategory('')
-    //setSearchJobQuery({ filter1 })
-    console.log("filter1", filter1)
+    setSearchJobQuery({ filter1 })
+    console.log("setSearchJobQuery1", searchJobQuery)
     setfilterTypes((p) => ({ ...p, ExecutiveJobs: false }));
     setfilterTypes((p) => ({ ...p, HRJobs: false }));
     setfilterTypes((p) => ({ ...p, AdministrationSupportJobs: false }));
@@ -74,13 +69,19 @@ export default function Page({
     }
   }, [filter1]);
   useEffect(() => {
+    console.log("setSearchJobQuery2", searchJobQuery)
     console.log("category", category)
+    let category1 = category
+    setSearchJobQuery({ category: category1 })
+    console.log("setSearchJobQuery3", searchJobQuery)
+    setTimeout(() => {
+      console.log("setSearchJobQuery4", searchJobQuery)
+    }, 0);
     setfilter2(filter1)
   }, [category, currentMiddleCategory]);
   // useEffect(() => {
   //   alert(currentMiddleCategory)
   // }, [currentMiddleCategory]);
-  //alert()
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -90,13 +91,10 @@ export default function Page({
     isFetching: isFetchingQty,
     isPlaceholderData: isPlaceholderDataQty,
   } = useQuery({
-    queryKey: ['filter', { currentMiddleCategory, category, filter2, q, l, lon, lat }],
+    queryKey: ['filter', { ...searchJobQuery, country: region }],
     queryFn: async () => {
-      const response = await BaseApi.post('/filters', {
-        currentMiddleCategory,
-        category,
-        filter1, q, l, lon, lat
-      });
+      const response = await BaseApi.post('/filters', { ...searchJobQuery, country: region } );
+        // { currentMiddleCategory, category, filter1, q, l, mode: 'normal', lon, lat }
       return response.data.data;
     },
     enabled: category !== '',
@@ -122,54 +120,17 @@ export default function Page({
   return (
     <>
       <main>
-        <div className="w-full bg-gray-100 pt-2 ">
-          <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <div className="w-full bg-gray-100 py-4 mb-4 mt-8">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-screen-xl mx-auto ">
-              <div className={` py-4 `}>
-                <div className=" lg:max-w-screen-lg mx-auto ">
-                  <div className="join mx-auto w-full border border-gray-200 shadow-md flex flex-col md:flex-row">
-                    <Autocomplete
-                      className="input input-bordered join-item w-full md:text-left text-center rounded-xl"
-                      style={{ width: '100%' }}
-                      apiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
-                      onPlaceSelected={(place) => {
-                        console.log('Selected Place:', place);
-                        const lat = place.geometry.location.lat();
-                        const lon = place.geometry.location.lng();
-                        console.log('lat:', lat);
-                        console.log('lon:', lon);
-                        setLon(lon)
-                        setLat(lat)
-                      }}
-                      options={{
-                        types: ['geocode', 'establishment'],
-                      }}
-                    />
-                    {/* <button
-                      type="submit"
-                      className="indicator md:w-fit w-full bg-amber-500 md:bg-0 justify-center items-center animate-pulse"
-                      onClick={() => {
-                        // const inputValue = keyWordRef.current.value.trim();
-                        // alert(inputValue);
-                        console.log(keyWordRef.current?.value.trim())
-                        console.log(keyWordRef.current)
-                        setQ(keyWordRef.current?.value.trim() || '')
-                      }}
-                    >
-                      <div className="btn join-item bg-amber-500 md:border md:border-gray-300 md:shadow-md border-0 text-white animate-pulse ">
-                        Search
-                      </div>
-                    </button> */}
-                  </div>
-                </div>
-              </div>
+              <JobSearchBox6 forceClass="hidden md:block" type="advancedSearch" />
             </div>
           </div>
         </div>
         <div className=" mx-auto max-w-5xl  flex flex-col  ">
           {  // 顶层已选X  top
             filter1.length > 0 && (
-              <div className="md:flex md:gap-4 md:flex-wrap pb-2 p-2">
+              <div className="md:flex md:gap-4 md:flex-wrap pb-2">
                 {filter1.map(({ category1, filter }, i) => (
                   <button
                     key={i}
@@ -179,7 +140,7 @@ export default function Page({
                         (_, index) => index !== i
                       );
                       setPage(0);
-                      setFilter1(updatedFilter);
+                      setfilter(updatedFilter);
                       setCategory("")
                       setCurrentMiddleCategory("")
                     }}
@@ -190,13 +151,13 @@ export default function Page({
               </div>
             )
           }
-          <div className="flex gap-4 flex-wrap p-2 ">
+          <div className="flex gap-4 flex-wrap  p-6 ">
             {Object.entries(filterTypes).map(([filterType, showYN], i) => (// 中层大目录m
               <button
                 key={i}
                 className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
-                  ? 'bg-orange-500 text-white border-orange-500'
-                  : 'bg-white border-gray-500'
+                    ? 'bg-orange-500 text-white border-orange-500'
+                    : 'bg-white border-gray-500'
                   }
                   ${showYN ? 'block' : 'hidden'} `}
                 onClick={() => {
@@ -207,19 +168,20 @@ export default function Page({
                   }
                   setCategory(filterType);
                 }}
+
               >
                 {filterValues9[filterType] == 'thirdcategory' ? currentMiddleCategory : filterValues9[filterType]}
               </button>
             )
             )}
-            {/* <input
+            <input
               type="text"
               className="input input-sm input-bordered  w-[200px] md:text-left text-center"
               placeholder="Keywords"
               ref={keyWordRef}
-            /> */}
+            />
           </div>
-          {/* <details className="bg-gray-300 open:bg-[amber-200] duration-300 md:hidden">
+          <details className="bg-gray-300 open:bg-[amber-200] duration-300 md:hidden">
             <summary className="bg-inherit px-5 py-3 text-lg cursor-pointer pl-8">
               Filters
             </summary>
@@ -232,8 +194,8 @@ export default function Page({
                   <button
                     key={i}
                     className={`px - 2 py - 1 text - gray - 500  border  rounded - md text - sm font - bold ${category === filterType
-                      ? 'bg-orange-500 text-white border-orange-500'
-                      : 'bg-white border-gray-500'
+                        ? 'bg-orange-500 text-white border-orange-500'
+                        : 'bg-white border-gray-500'
                       }
                   ${showYN ? 'block' : 'hidden'}
   `}
@@ -255,48 +217,27 @@ export default function Page({
                 type="text"
                 className="input input-bordered join-item w-full md:text-left text-center"
                 placeholder="Keywords"
+                ref={keyWordRef}
               />
             </div>
-          </details> */}
+          </details>
           {isShowFilter && (
-            <><div className="p-2 w-full">
-              <select
-                className="md:hidden block text-left text-gray-500 text-sm rounded-xl p-2 w-full mb-4"
-                onChange={(e) => {
-                  const selectedFilter = filters.find(f => f.filter === e.target.value);
-                  setPage(0);
-                  setFilter1([...filter1, { category, filter: selectedFilter.filter }]);
-                  setCurrentMiddleCategory(selectedFilter.filter);
-                } }
-              >
-                {filters?.length > 0 &&
-                  filters.map(({ filter, job_count }, i) => (
-                    <option
-                      key={i}
-                      value={filter}
-                    >
-                      {`${filter ? filter : 'Others'} (${job_count})`}
-                    </option>
-                  ))}
-              </select>
+            <div className="grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
+              {filters?.length > 0 && // 低层小目录b
+                filters.map(({ filter, job_count }, i) => (
+                  <button
+                    key={i}
+                    className="text-left text-gray-500 text-sm truncate"
+                    onClick={() => {
+                      setPage(0);
+                      setfilter([...filter1, { category, filter }]);
+                      //setIsShowFilter(false);
+                      setCurrentMiddleCategory(filter)
+                    }}
+                  >{`${filter ? filter : 'Others'} (${job_count})`}</button>
+                ))}
             </div>
-            <div className="hidden md:grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
-                {filters?.length > 0 && // 低层小目录b
-                  filters.map(({ filter, job_count }, i) => (
-                    <button
-                      key={i}
-                      className="text-left text-gray-500 text-sm truncate"
-                      onClick={() => {
-                        setPage(0);
-                        setFilter1([...filter1, { category, filter }]);
-                        //setIsShowFilter(false);
-                        setCurrentMiddleCategory(filter);
-                      } }
-                    >{`${filter ? filter : 'Others'} (${job_count})`}</button>
-                  ))}
-              </div></>
           )}
-
         </div>
       </main>
     </>

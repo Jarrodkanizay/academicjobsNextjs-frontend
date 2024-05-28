@@ -36,6 +36,8 @@ Find all the best jobs here…`,
     content: `Find your perfect euro job executive position through Europe’s best job board! At Academic Jobs we offer the most renowned High Ed jobs at the top European universities. Positions in executive roles will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
 The No.1 job board for academics in Europe. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!
 Find all the best executive jobs here…`,
+    category2: 'master_category_job_type',
+    filter2: 'Executive',
   },
   {
     break1: true,
@@ -46,6 +48,8 @@ Find all the best executive jobs here…`,
     content: `Seek your perfect admin position through Europe’s best job board! At Academic Jobs we offer the most renowned Higher Ed jobs at the top European universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
 The No.1 job board for euro jobs!. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
 Find all the best staff jobs here…`,
+    category2: 'master_category_job_type',
+    filter2: 'Staff / Administration',
   },
 
   {
@@ -55,6 +59,8 @@ Find all the best staff jobs here…`,
     Keyword: `Academic HR Jobs Europe`,
     content: `Discover your dream human resource position through Europe’s best uni job board! At Academic Jobs we offer the most renowned HR jobs at the top European universities. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
 The No.1 job board for HR professionals in European universities. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
+    category2: 'master_category_job_type',
+    filter2: 'Human Resources',
   },
   {
     break1: true,
@@ -73,6 +79,8 @@ Find all the best student jobs here…`,
     Description: `The most recent faculty positions from top Europe colleges are available on our website`,
     Keyword: `faculty Academic Jobs Europe, faculty AcademicJobs Europe`,
     content: ` Discover academic possibilities in Europe according on your field of study, college, and specialism. Find the most recent positions available in Europe in the fields of science, research, and education.`,
+    category2: 'master_category_job_type',
+    filter2: 'Academic / Faculty',
   },
   {
     Name: `graduate`,
@@ -87,5 +95,7 @@ Find all the best student jobs here…`,
     Title: `Academic PhD Jobs Europe`,
     Keyword: `Academic PhD Jobs Europe`,
     content: `Our website lists PhD openings from reputable universities. Apply now on our website to be considered for amazing PHD programmes in Europe. The top applicants are constantly sought after by our academic institutions to work on PHDs. For PhD roles on campus in a range of departments and activities inside a university or PHD institution, part-time or temporary labour is required.`,
+    category2: 'master_category_job_type',
+    filter2: 'Student / Phd Jobs',
   },
 ];

@@ -36,6 +36,8 @@ Find all the best jobs here…`,
     content: `Find your perfect executive position through Canada’s best job board! At Academic Jobs we offer the most renowned High Ed jobs at the top Canadian universities. Positions in executive roles will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
 Find all Canadian executive job opportunities for your key academic affairs through the best job board in Canada. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!
 Find all the best executive jobs here…`,
+    category2: 'master_category_job_type',
+    filter2: 'Executive',
   },
   {
     break1: true,
@@ -46,6 +48,8 @@ Find all the best executive jobs here…`,
     content: `Seek your perfect admin position through Canada’s best job board! At Academic Jobs we offer the most renowned Higher Ed jobs at the top Canadian universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
 The No. 1 job board in Canada will help find all admin job opportunities for your key academic affairs.Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
 Find all the best staff jobs here…`,
+    category2: 'master_category_job_type',
+    filter2: 'Staff / Administration',
   },
 
   {
@@ -55,6 +59,8 @@ Find all the best staff jobs here…`,
     Keyword: `Academic HR Jobs Canada`,
     content: `Discover your perfect human resource position through Canada’s best job board! At Academic Jobs we offer the most renowned HR jobs at the top Canadian universities. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
 The No.1 job board for HR professionals in Canadian universities. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
+    category2: 'master_category_job_type',
+    filter2: 'Human Resources',
   },
   {
     break1: true,
@@ -73,6 +79,8 @@ Find all the best student jobs here…`,
     Description: `The most recent faculty positions from top Canada colleges are available on our website`,
     Keyword: `faculty Academic Jobs Canada, faculty AcademicJobs Canada`,
     content: `Discover academic opportunities in Canada based on your field of study, college, and specialisation. Discover the most recent job openings in science, research, and teaching in Canada.`,
+    category2: 'master_category_job_type',
+    filter2: 'Academic / Faculty',
   },
   {
     Name: `graduate`,
@@ -87,5 +95,7 @@ Find all the best student jobs here…`,
     Title: `PhD Opportunities in Canada Apply right now to get useful skills and job experience!`,
     Keyword: `Academic PhD Jobs Canada`,
     content: `PhD opportunities from recognised colleges are listed on our website. Apply on our website for fantastic PHD opportunities in Canada. Our academic institutions are always looking for the best candidates to work on PHDs. Part-time or temporary labour is needed for PhD positions on campus in a variety of departments and activities within a university or PHD institution.`,
+    category2: 'master_category_job_type',
+    filter2: 'Student / Phd Jobs',
   },
 ];

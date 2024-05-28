@@ -4,7 +4,8 @@ import SearchResults1 from '@/components/SearchResults1';
 import JobSearchBox from '@/components/JobSearchBox';
 import TalentPool from '@/components/TalentPoolCTA';
 import JobFilter from '@/components/JobFilter';
-// import type { Metadata } from 'next';
+import SearchResults3 from '@/components/SearchResults3';
+import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 const regionName = 'Australia';
 export async function generateMetadata({ params, searchParams }) {
   // console.log(params)
@@ -75,7 +76,20 @@ export default function Page({ params, searchParams }) {
           </div>
         </div>
       </div>
-      <JobSearchBox />
+      <AdvancedSearchBar p={{
+        filter1: [
+          {
+            category: "Country",
+            filter: 'Australia',
+          },
+          {
+            category: category2,
+            filter: filter2,
+          },
+        ],
+        q: Name,
+        l: regionName,
+      }} />
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">
           <div className="filters_content">
@@ -84,8 +98,8 @@ export default function Page({ params, searchParams }) {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-            {/* <SearchResults q={{ q: Name, l: regionName }} /> */}
-            <SearchResults1
+            <SearchResults3  />
+            {/* <SearchResults1
               q={{
                 filter1: [
                   {
@@ -96,7 +110,7 @@ export default function Page({ params, searchParams }) {
                 q: Name,
                 l: regionName,
               }}
-            />
+            /> */}
           </div>
         </div>
       </section>

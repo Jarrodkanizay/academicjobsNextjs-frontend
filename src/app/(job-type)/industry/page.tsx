@@ -5,15 +5,14 @@ import SearchResults1 from '@/components/SearchResults1';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import industry from '@/data/industry.json';
-
+import SearchResults3 from '@/components/SearchResults3';
+import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 const countryRegion = 'World';
-
 function countryRegionPlural() {
   return countryRegion.toLowerCase().endsWith('s')
     ? `${countryRegion}'`
     : `${countryRegion}'s`;
 }
-
 export const metadata: Metadata = {
   title: 'Industry Jobs in Academia', //Option 1 replaces the %s in layout.tsx
   // title: {
@@ -65,7 +64,6 @@ export default function myPage() {
             </div>
           </div>
         </div>
-
         <div className="bg-gray-200 flex flex-col  rounded-md">
           <ul className=" text-left columns-1 md:columns-4 pt-2 pl-8 md:gap-2  h-auto w-full text-transform: capitalize  max-w-screen-2xl mx-auto">
             {industry.map(({ Title, Name }, key) => (
@@ -80,7 +78,6 @@ export default function myPage() {
             ))}
           </ul>
         </div>
-
         <div className="md:flex bg-gray-800 shadow-xl rounded-2xl mb-4 max-w-screen-lg mx-auto mt-4 p-4 gap-8 ">
           <Image
             className=" rounded-xl md:w-2/3  "
@@ -89,7 +86,6 @@ export default function myPage() {
             alt=""
             src="https://academicjobs.s3.amazonaws.com/img/_misc/maxresdefault.png"
           />
-
           <div className="w-1/3">
             <div className="md:grid  flex gap-4 text-gray-200 mt-3">
               {/* Card 2 */}
@@ -97,7 +93,6 @@ export default function myPage() {
                 <div className="icon-ai ">
                   <p className="text-purple-500 font-bold px-2">✓</p>
                 </div>
-
                 <div className="items-center text-center">
                   <p className="text-md font-bold  ">
                     No. 1 Higher Ed Job Board
@@ -109,37 +104,31 @@ export default function myPage() {
                 <div className="icon-ai ">
                   <p className="text-purple-500 font-bold px-2">✓</p>
                 </div>
-
                 <div className=" items-center text-center ">
                   <p className="text-md font-bold ">
                     Best Global Academic Talent Pool
                   </p>
                 </div>
               </div>
-
               {/* Card 1 */}
               <div className=" md:flex ">
                 <div className="icon-ai ">
                   <p className="text-purple-500 font-bold px-2">✓</p>
                 </div>
-
                 <div className=" items-center text-center">
                   <p className="text-md font-bold ">
                     A.I. Powered Applicant Matching
                   </p>
                 </div>
               </div>
-
               <Link
                 href="/industry/recruitment"
                 className="text-md font-bold underline text-sky-500 mb-4 "
               >
                 See Industry Recruitment Information
               </Link>
-
               {/* End Cards */}
             </div>
-
             <Link
               href="/recruitment"
               className="btn  btn-aj ml-4 text-lg font-bold p-2"
@@ -148,8 +137,16 @@ export default function myPage() {
             </Link>
           </div>
         </div>
-        <JobSearchBox q="" forceClass="my-6" />
-
+        <AdvancedSearchBar
+          p={{
+            filter1: [
+              {
+                category: 'master_category_job_type',
+                filter: 'Industry Jobs',
+              },
+            ],
+          }}
+        />
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
             <div className="filters_content">
@@ -158,20 +155,7 @@ export default function myPage() {
           </div>
           <div className="listings_panel">
             <div className="listings_content">
-              {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-              {/* <SearchResults q={{ q: 'industry' || 0 }} /> */}
-              <SearchResults1
-                q={{
-                  filter1: [
-                    {
-                      category: 'master_category_job_type',
-                      filter: 'Industry Jobs',
-                    },
-                  ],
-                  q: '',
-                  l: '',
-                }}
-              />
+              <SearchResults3 />
             </div>
           </div>
         </section>

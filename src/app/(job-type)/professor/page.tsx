@@ -4,7 +4,8 @@ import JobSearchBox from '@/components/JobSearchBox';
 import professor from '@/data/professor.json';
 import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
-
+import SearchResults3 from '@/components/SearchResults3';
+import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
@@ -63,7 +64,16 @@ export default function myPage() {
           ))}
         </ul>
       </div>
-      <JobSearchBox q="" forceClass="my-6" />
+      <AdvancedSearchBar
+        p={{
+          filter1: [
+            {
+              category: 'PositionType',
+              filter: 'Professor',
+            },
+          ],
+        }}
+      />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">

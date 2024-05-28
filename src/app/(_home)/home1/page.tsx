@@ -56,7 +56,7 @@ export default function myPage() {
       src: '/home/academic-staff-positions.png',
       alt: 'Academic Staff Positions',
       label: 'Staff',
-      link: '/staff-jobs',
+      link: '/admin',
     },
  
   ];
