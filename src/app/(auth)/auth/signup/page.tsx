@@ -23,9 +23,9 @@ const page = () => {
         <br />
         opportunities and prospects in one spot.
       </h2>
-      <div className="grid grid-cols-2">
+      <div className="grid md:grid-cols-2 grid-cols-1">
         <SignUpForm />
-        <div className="sign_up_benefits">
+        <div className="sign_up_benefits mt-8 md:mt-0">
           <section className="flex gap-8 mb-16">
             <div>
               <Image
