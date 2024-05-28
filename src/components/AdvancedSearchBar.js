@@ -13,6 +13,9 @@ export default function Page({
   forceClass = '',
 }) {
   const { region, setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
+  
+  let region1
+  if (region.length > 0 && region != "Gloabal") region1=region
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
   useEffect(() => {
@@ -78,7 +81,7 @@ export default function Page({
   useEffect(() => {
     console.log("category", category)
     setfilter2(filter1)
-  }, [category, currentMiddleCategory]);
+  }, [category]);
   useEffect(() => {
     if (region == 'Global') setfilterTypes((p) => ({ ...p, Country: true }));
   }, []);
@@ -92,7 +95,7 @@ export default function Page({
     isFetching: isFetchingQty,
     isPlaceholderData: isPlaceholderDataQty,
   } = useQuery({
-    queryKey: ['filter', { currentMiddleCategory, category, filter2, q, l, lon, lat }],
+    queryKey: ['filter', {  category, filter2, q, l, lon, lat }],
     queryFn: async () => {
       const response = await BaseApi.post('/filters', {
         currentMiddleCategory,
@@ -117,7 +120,11 @@ export default function Page({
       const response = await BaseApi.post('/filters', {
         currentMiddleCategory,
         category: 'JobType',
-        q, l, lon, lat
+        filter1: [{
+          category: 'Country',
+          filter: region1,
+        }],
+         q, l, lon, lat
       });
       return response.data.data;
     },
