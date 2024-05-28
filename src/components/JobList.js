@@ -7,7 +7,6 @@ import Job from './Job';
 const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
   let content;
   const [isOpen, setIsOpen] = useState(false);
-  console.log(data);
   content = data.jobs.map((job, index) => {
     return (
       <div
