@@ -10,9 +10,9 @@ import { regionData } from "@/data/africaPositions";
 import Autocomplete, { usePlacesWidget } from 'react-google-autocomplete';
 export default function Page({
   p,
-  forceClass = '',
+  forceClass='',
 }) {
-  const { region, setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
+  const { region,setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function Page({
     Country: false,
     State: true,
     InstitutionName: true,
-    JobType: false,
+    JobType: true,
     ExecutiveJobs: false,
     AdministrationSupportJobs: false,
     HRJobs: false,
@@ -79,7 +79,7 @@ export default function Page({
     setfilter2(filter1)
   }, [category, currentMiddleCategory]);
   useEffect(() => {
-    if (region == 'Global') setfilterTypes((p) => ({ ...p, Country: true }));
+    if (region=='Global')    setfilterTypes((p) => ({ ...p, Country: true }));
   }, []);
   //alert()
   const {
@@ -101,26 +101,6 @@ export default function Page({
       return response.data.data;
     },
     enabled: category !== '',
-  });
-  const {
-    isPending: isPendingQty9,
-    isError: isErrorQty9,
-    isSuccess: isSuccessQty9,
-    error: errorQty9,
-    data: filters9,
-    isFetching: isFetchingQty9,
-    isPlaceholderData: isPlaceholderDataQty9,
-  } = useQuery({
-    queryKey: ['filter9', { currentMiddleCategory, category, filter2, q, l, lon, lat }],
-    queryFn: async () => {
-      const response = await BaseApi.post('/filters', {
-        currentMiddleCategory,
-        category: 'JobType',
-         q, l, lon, lat
-      });
-      return response.data.data;
-    },
-    enabled: true,
   });
   const filterValues9 = {
     Country: 'Country',
@@ -166,6 +146,21 @@ export default function Page({
                         types: ['geocode', 'establishment'],
                       }}
                     />
+                    {/* <button
+                      type="submit"
+                      className="indicator md:w-fit w-full bg-amber-500 md:bg-0 justify-center items-center animate-pulse"
+                      onClick={() => {
+                        // const inputValue = keyWordRef.current.value.trim();
+                        // alert(inputValue);
+                        console.log(keyWordRef.current?.value.trim())
+                        console.log(keyWordRef.current)
+                        setQ(keyWordRef.current?.value.trim() || '')
+                      }}
+                    >
+                      <div className="btn join-item bg-amber-500 md:border md:border-gray-300 md:shadow-md border-0 text-white animate-pulse ">
+                        Search
+                      </div>
+                    </button> */}
                   </div>
                 </div>
               </div>
@@ -196,23 +191,6 @@ export default function Page({
               </div>
             )
           }
-     
-          <div className=" md:grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
-            {filters9?.length > 0 && // 低层小目录b
-              filters9.map(({ filter, job_count }, i) => (
-                <button
-                  key={i}
-                  className="text-left text-gray-500 text-sm truncate"
-                  onClick={() => {
-                    setPage(0);
-                    setFilter1([...filter1, { category, filter }]);
-                    //setIsShowFilter(false);
-                    setCurrentMiddleCategory(filter);
-                  }}
-                >{`${filter ? filter : 'Others'} (${job_count})`}</button>
-              ))}
-          </div>
-
           <div className="flex gap-4 flex-wrap p-2 ">
             {Object.entries(filterTypes).map(([filterType, showYN], i) => (// 中层大目录m
               <button
@@ -243,29 +221,28 @@ export default function Page({
             /> */}
           </div>
           {isShowFilter && (
-            <>
-              <div className="p-2 w-full">
-                <select
-                  className="md:hidden block text-left text-gray-500 text-sm rounded-xl p-2 w-full mb-4"
-                  onChange={(e) => {
-                    const selectedFilter = filters.find(f => f.filter === e.target.value);
-                    setPage(0);
-                    setFilter1([...filter1, { category, filter: selectedFilter.filter }]);
-                    setCurrentMiddleCategory(selectedFilter.filter);
-                  }}
-                >
-                  {filters?.length > 0 &&
-                    filters.map(({ filter, job_count }, i) => (
-                      <option
-                        key={i}
-                        value={filter}
-                      >
-                        {`${filter ? filter : 'Others'} (${job_count})`}
-                      </option>
-                    ))}
-                </select>
-              </div>
-              <div className=" md:grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
+            <><div className="p-2 w-full">
+              <select
+                className="md:hidden block text-left text-gray-500 text-sm rounded-xl p-2 w-full mb-4"
+                onChange={(e) => {
+                  const selectedFilter = filters.find(f => f.filter === e.target.value);
+                  setPage(0);
+                  setFilter1([...filter1, { category, filter: selectedFilter.filter }]);
+                  setCurrentMiddleCategory(selectedFilter.filter);
+                } }
+              >
+                {filters?.length > 0 &&
+                  filters.map(({ filter, job_count }, i) => (
+                    <option
+                      key={i}
+                      value={filter}
+                    >
+                      {`${filter ? filter : 'Others'} (${job_count})`}
+                    </option>
+                  ))}
+              </select>
+            </div>
+            <div className="hidden md:grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
                 {filters?.length > 0 && // 低层小目录b
                   filters.map(({ filter, job_count }, i) => (
                     <button
@@ -276,12 +253,12 @@ export default function Page({
                         setFilter1([...filter1, { category, filter }]);
                         //setIsShowFilter(false);
                         setCurrentMiddleCategory(filter);
-                      }}
+                      } }
                     >{`${filter ? filter : 'Others'} (${job_count})`}</button>
                   ))}
-              </div>
-            </>
+              </div></>
           )}
+
         </div>
       </main>
     </>
