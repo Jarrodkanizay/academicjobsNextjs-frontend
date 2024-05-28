@@ -121,7 +121,7 @@ export default function Page({
         category: 'JobType',
         filter1: [{
           category: 'Country',
-          filter: 'United Kingdom',
+          filter: region1,
         }],
          q, l, lon, lat
       });
