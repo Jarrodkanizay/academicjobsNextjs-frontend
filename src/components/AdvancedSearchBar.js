@@ -77,7 +77,7 @@ export default function Page({
   useEffect(() => {
     console.log("category", category)
     setfilter2(filter1)
-  }, [category, currentMiddleCategory]);
+  }, [category]);
   useEffect(() => {
     if (region == 'Global') setfilterTypes((p) => ({ ...p, Country: true }));
   }, []);
@@ -91,7 +91,7 @@ export default function Page({
     isFetching: isFetchingQty,
     isPlaceholderData: isPlaceholderDataQty,
   } = useQuery({
-    queryKey: ['filter', { currentMiddleCategory, category, filter2, q, l, lon, lat }],
+    queryKey: ['filter', {  category, filter2, q, l, lon, lat }],
     queryFn: async () => {
       const response = await BaseApi.post('/filters', {
         currentMiddleCategory,

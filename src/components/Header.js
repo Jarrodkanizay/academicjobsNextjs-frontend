@@ -93,7 +93,7 @@ export default function Header() {
         {pathname === '' ? (
           isNavOpen && (
             <Link
-              href={`/${countryMappings2[region.toLowerCase()].url}`}
+              href={`/${countryMappings2[region.toLowerCase()]?.url}`}
               className={`static-logo mobile`}
               onClick={() => setIsNavOpen(false)}
             >
@@ -102,7 +102,7 @@ export default function Header() {
           )
         ) : (
           <Link
-            href={`/${countryMappings2[region.toLowerCase()].url}`}
+            href={`/${countryMappings2[region.toLowerCase()]?.url}`}
             className={`static-logo mobile`}
           >
             <LogoAJ width={270} height={60} />{' '}
@@ -124,14 +124,14 @@ export default function Header() {
         <nav>
           {pathname === '' ? null : (
             <Link
-              href={`/${countryMappings2[region.toLowerCase()].url}`}
+              href={`/${countryMappings2[region.toLowerCase()]?.url}`}
               className="hide-mobile static-logo mr-4"
             >
               <LogoAJ width={270} height={60} />{' '}
             </Link>
           )}
           <NavItem
-            url={`/${countryMappings2[region.toLowerCase()].url}/jobs`}
+            url={`/${countryMappings2[region.toLowerCase()]?.url}/jobs`}
             icon="/dotted-arrow.svg"
             navLink="Seek Jobs"
             forceClass="border-b hover:border-amber-500" //this is optional
@@ -139,7 +139,7 @@ export default function Header() {
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url={`/${countryMappings2[region.toLowerCase()].url
+            url={`/${countryMappings2[region.toLowerCase()]?.url
               }/jobs-by-top-universities`}
             icon="/upward-arrow.svg"
             navLink="Top Universities"
@@ -265,7 +265,7 @@ export default function Header() {
           <div className="ml-auto post-a-job-button ">
 
             <NavItem
-              url={`/${countryMappings2[region.toLowerCase()].url
+              url={`/${countryMappings2[region.toLowerCase()]?.url
                 }/recruitment/`}
               icon="/post-a-job-icon.svg"
               navLink="Post a Job"
