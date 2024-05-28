@@ -13,6 +13,9 @@ export default function Page({
   forceClass = '',
 }) {
   const { region, setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
+  
+  let region1
+  if (region.length > 0 && region != "Gloabal") region1=region
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
   useEffect(() => {
@@ -116,6 +119,10 @@ export default function Page({
       const response = await BaseApi.post('/filters', {
         currentMiddleCategory,
         category: 'JobType',
+        filter1: [{
+          category: 'Country',
+          filter: 'United Kingdom',
+        }],
          q, l, lon, lat
       });
       return response.data.data;
