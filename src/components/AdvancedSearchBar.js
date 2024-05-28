@@ -117,16 +117,14 @@ export default function Page({
     isFetching: isFetchingQty9,
     isPlaceholderData: isPlaceholderDataQty9,
   } = useQuery({
-    queryKey: ['filter9', { currentMiddleCategory, category, filter2, q, l, lon, lat }],
+    queryKey: ['filter9', { category, filter2, }],
     queryFn: async () => {
       const response = await BaseApi.post('/filters', {
-        currentMiddleCategory,
         category: 'JobType',
         filter1: [{
           category: 'Country',
           filter: region1,
         }],
-         q, l, lon, lat
       });
       return response.data.data;
     },
