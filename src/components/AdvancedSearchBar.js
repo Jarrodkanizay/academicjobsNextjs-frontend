@@ -15,10 +15,12 @@ export default function Page({
   const { region, setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
   
   let region1
-  if (region.length > 0 && region != "Gloabal") region1=region
+  if (region.length > 0 && region != "Global") region1 = region
+  //alert(region1)
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
   useEffect(() => {
+    
     if (p?.filter1) {
       setFilter1(p.filter1)
     }
