@@ -17,6 +17,9 @@ const Job = ({ job }) => {
     logo,
     company_name,
     featured,
+    salary_from,
+    salary_to,
+    master_category_job_type,
     id,
   } = job;
   content = (
@@ -24,12 +27,12 @@ const Job = ({ job }) => {
       <article
         className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg"
         data-id="59973"
-        // onClick={() => {
-        //   const params = new URLSearchParams({
-        //     id: encodeURIComponent(id),
-        //   });
-        //   router.push(`/job?${params.toString()}`)
-        // }}
+      // onClick={() => {
+      //   const params = new URLSearchParams({
+      //     id: encodeURIComponent(id),
+      //   });
+      //   router.push(`/job?${params.toString()}`)
+      // }}
       >
         {featured ? (
           <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">
@@ -82,14 +85,19 @@ const Job = ({ job }) => {
           </div> */}
           <div className="text-sm text-gray-600">
             <div className="mb-1">{company_name}</div>
-            <div className="text-gray-700 font-light text-sm">
+            {location && (<div className="text-gray-700 font-light text-sm">
               &#8226; {location.split(',').length > 2 ? location.substring(location.indexOf(',') + 1).trim() : location}
-            </div>
-              {salary_from !== 0 && salary_to !== 0 && (<div className="text-gray-700 font-light text-sm">
-              &#8226; ${salary_from} - ${salary_to}
             </div>)}
-            <div className="text-gray-700 font-light text-sm">
-              &#8226; {master_category_job_type}</div>
+            {(salary_from && salary_from !== 0) || (salary_to && salary_to !== 0) ? (
+              <div className="text-gray-700 font-light text-sm">
+                &#8226; {(salary_from && salary_from !== 0) ? `$${salary_from}` : ''}
+                {(salary_from && salary_from !== 0) && (salary_to && salary_to !== 0) ? ' - ' : ''}
+                {(salary_to && salary_to !== 0) ? `$${salary_to}` : ''}
+              </div>
+            ) : null}
+
+            {master_category_job_type && (<div className="text-gray-700 font-light text-sm">
+              &#8226; {master_category_job_type}</div>)}
           </div>
           <div className="applications-close border-2 rounded px-2 mt-1 ml-2">
             <p className="text-center text-gray-400 text-sm mb-0">Closes</p>

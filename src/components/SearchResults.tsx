@@ -45,7 +45,6 @@ export default function SearchResults({
     // enabled: q && Object.keys(q).length > 0,
     placeholderData: keepPreviousData,
   });
-  console.log('data', data);
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -79,7 +78,6 @@ export default function SearchResults({
     content = <SearchListResultsLoader />;
   } else if (isSuccess && data.jobs.length > 0) {
     if (data.jobs.length > 0) {
-      console.log('data', data);
       content = (
         <>
           {/* mobile filter dropdown */}
