@@ -17,15 +17,16 @@ const page = () => {
   const height = 138 / scale;
   return (
     <main className="content-grid mt-16">
-      <h1 className="text-center">Find your best</h1>
-      <h2 className="text-center mb-12 text-slate-600">
-        Exclusive access to the best communities,
-        <br />
-        opportunities and prospects in one spot.
-      </h2>
       <div className="grid md:grid-cols-2 grid-cols-1">
         <SignUpForm />
         <div className="sign_up_benefits mt-8 md:mt-0">
+          <h1 className="text-center">Find your best</h1>
+          <h2 className="text-center mb-16 text-slate-600">
+            Exclusive access to the best communities,
+            <br />
+            opportunities and prospects in one spot.
+          </h2>
+
           <section className="flex gap-8 mb-16">
             <div>
               <Image
