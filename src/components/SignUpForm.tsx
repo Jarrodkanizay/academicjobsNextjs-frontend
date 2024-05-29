@@ -75,12 +75,7 @@ const SignUpForm = (props: SignUpFormProps) => {
     <div className="flex items-center justify-center">
       <Card className="px-10 pt-0 pb-5 bg-slate-50">
         <CardHeader className="pb-0">
-          <CardTitle className="text-center">Academics Professionals</CardTitle>
-          <h4 className="text-center pb-8">
-            Be seen and get hired.
-            <br />
-            Create your free profile today.
-          </h4>
+          <CardTitle className="text-center">Sign up</CardTitle>
         </CardHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(saveUser)} className="w-full">
@@ -126,7 +121,7 @@ const SignUpForm = (props: SignUpFormProps) => {
                         />
                         <button
                           type="button"
-                          onClick={() => setShowPassword(prev => !prev)}
+                          onClick={() => setShowPassword((prev) => !prev)}
                           style={{
                             position: 'absolute',
                             right: '10px',
@@ -160,7 +155,9 @@ const SignUpForm = (props: SignUpFormProps) => {
                         />
                         <button
                           type="button"
-                          onClick={() => setShowConfirmPassword(prev => !prev)}
+                          onClick={() =>
+                            setShowConfirmPassword((prev) => !prev)
+                          }
                           style={{
                             position: 'absolute',
                             right: '10px',
@@ -197,6 +194,11 @@ const SignUpForm = (props: SignUpFormProps) => {
             </Link>
           </p>
         </Form>
+        <h4 className="text-center pt-8 pb-0">
+          Be seen and get hired.
+          <br />
+          Create your free profile today.
+        </h4>
       </Card>
     </div>
   );

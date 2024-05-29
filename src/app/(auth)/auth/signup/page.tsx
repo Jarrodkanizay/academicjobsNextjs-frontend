@@ -16,7 +16,7 @@ const page = () => {
   const width = 176 / scale;
   const height = 138 / scale;
   return (
-    <main className="content-grid mt-16">
+    <main className="content-grid mt-0">
       <div className="grid md:grid-cols-2 grid-cols-1">
         <SignUpForm />
         <div className="sign_up_benefits mt-8 md:mt-0">
