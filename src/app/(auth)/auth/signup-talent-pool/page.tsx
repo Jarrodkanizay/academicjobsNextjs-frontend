@@ -20,7 +20,7 @@ const page = () => {
       <div className="grid md:grid-cols-2 grid-cols-1">
         <SignUpForm />
         <div className="sign_up_benefits mt-8 md:mt-0">
-          <h1 className="text-center">Find your best</h1>
+          <h1 className="text-center">Talent Pool</h1>
           <h2 className="text-center mb-16 text-slate-600">
             Exclusive access to the best communities,
             <br />
