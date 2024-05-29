@@ -75,7 +75,7 @@ const SignUpForm = (props: SignUpFormProps) => {
     <div className="flex items-center justify-center">
       <Card className="px-10 pt-0 pb-5 bg-slate-50">
         <CardHeader className="pb-0">
-          <CardTitle className="text-center">Sign up</CardTitle>
+          <CardTitle className="text-center">Talent Pool Sign up</CardTitle>
         </CardHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(saveUser)} className="w-full">

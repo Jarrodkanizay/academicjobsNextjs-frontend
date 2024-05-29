@@ -18,9 +18,11 @@ const page = () => {
   return (
     <main className="content-grid mt-0">
       <div className="grid md:grid-cols-2 grid-cols-1">
+        {/* TODO See Dan: Take in details from the page that was used to sign up and store them in the database. 
+        For example if the user was on a QUT job then pass the details about the job and use them in the sign up process */}
         <SignUpForm />
         <div className="sign_up_benefits mt-8 md:mt-0">
-          <h1 className="text-center">Talent Pool</h1>
+          <h1 className="text-center">Best Talent Pool Connections</h1>
           <h2 className="text-center mb-16 text-slate-600">
             Exclusive access to the best communities,
             <br />
@@ -38,10 +40,11 @@ const page = () => {
               />
             </div>
             <div className="grow">
-              <h5>Collaborate globally with specialists</h5>
+              <h5>Dive into a World of Opportunities</h5>
               <p>
-                Network, meet and collaborate with the best academics from
-                around the world in your specialty.
+                Sign up today and connect with prestigious academic institutions
+                worldwide. Explore cutting-edge job openings and collaborate
+                with world-renowned academics.
               </p>
             </div>
           </section>
@@ -57,10 +60,11 @@ const page = () => {
               />
             </div>
             <div className="grow">
-              <h5>Discover 100k jobs posted weekly</h5>
+              <h5>Elevate Your Career</h5>
               <p>
-                Get matched with roles that fit your skills and interests — then
-                Easy Apply in just a few clicks.
+                Whether you're seeking groundbreaking research projects or
+                looking to shape the minds of the next generation, our platform
+                is your gateway to extraordinary possibilities.
               </p>
             </div>
           </section>
@@ -76,10 +80,11 @@ const page = () => {
               />
             </div>
             <div className="grow">
-              <h5>Find your ideal tech culture</h5>
+              <h5>Expand Your Network</h5>
               <p>
-                Get a firsthand look at an institution's culture (and how you
-                fit into it) before you ever apply.
+                Collaborate, innovate, and grow with the best in academia. Be
+                part of a vibrant community where ideas flourish and careers
+                soar.
               </p>
             </div>
           </section>
@@ -95,10 +100,10 @@ const page = () => {
               />
             </div>
             <div className="grow">
-              <h5>Get tech career advice</h5>
+              <h5>Find Your Perfect Match</h5>
               <p>
-                Level up with free industry insights and career tools to help
-                you stand out and get hired.
+                Our tailored job matching system brings you opportunities that
+                align perfectly with your expertise and aspirations.
               </p>
             </div>
           </section>
