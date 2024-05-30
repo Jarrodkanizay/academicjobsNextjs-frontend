@@ -4,23 +4,15 @@ import { baseURL } from '@/lib/store/Base';
 import { useSession } from 'next-auth/react';
 import { BaseApi } from '@/lib/store/Base';
 
-const initiateNewSession = (userData, session) => {
-  const newSession = {
-    user: userData,
-    expires: session.expires
-  };
-  console.log("New session object created:", newSession);
-  return newSession;
-};
 
-const UserProfile = ({ id, firstName, lastName, email, location }) => {
-  const { data: session, update: setSession } = useSession();
+const UserProfile = ({ id, updateProfile, userProfile }) => {
+  console.log(userProfile.image);
   const [formData, setFormData] = useState({
-    firstName: firstName || '',
-    lastName: lastName || '',
-    email: email || '',
-    location: location || '',
-    image: null,
+    firstName: userProfile.firstName || '',
+    lastName: userProfile.lastName || '',
+    email: userProfile.email || '',
+    address: userProfile.address || '',
+    image: userProfile.image || null,
   });
 
   const handleChange = (e) => {
@@ -39,6 +31,7 @@ const UserProfile = ({ id, firstName, lastName, email, location }) => {
     });
   };
 
+
   const getSignedUrl = async (fileName, targetDir) => {
     try {
       const response = await BaseApi.post(`/generate-upload-url`, {
@@ -49,7 +42,7 @@ const UserProfile = ({ id, firstName, lastName, email, location }) => {
           "Content-Type": "application/json",
         }
       });
-      console.log('Signed URL response:', response.data.presignedUploadUrl); // Debugging log
+      console.log('Signed URL response:', response.data.presignedUploadUrl); 
       return response.data.presignedUploadUrl;
     } catch (error) {
       console.error('Error getting signed URL:', error);
@@ -77,35 +70,39 @@ const UserProfile = ({ id, firstName, lastName, email, location }) => {
       const signedUrl = await getSignedUrl(fileName, 'users');
       await uploadToS3(signedUrl, file);
     }
-    console.log("hello", fileName);
 
     const formDataToSend = {
       id,
       firstName: formData.firstName,
       lastName: formData.lastName,
       email: formData.email,
-      location: formData.location,
+      address: formData.address,
       image: `https://academicjobs.s3.amazonaws.com/img/users/${fileName}`,
     };
 
+    updateProfile(() => ({
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      address: formData.address,
+      image: `https://academicjobs.s3.amazonaws.com/img/users/${fileName}`
+    }));
+    
     try {
       const response = await axios.post(`${baseURL}/auth/updateUserById`, formDataToSend, {
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${session.accessToken}`
         },
       });
 
       const updatedUserData = response.data.user;
       console.log('Updated user data:', updatedUserData);
 
-      const newSession = initiateNewSession(updatedUserData, session);
-      await setSession(newSession.user);
-      console.log('Session successfully updated:', newSession);
-
     } catch (error) {
       console.error('Error updating user data:', error);
     }
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -142,12 +139,12 @@ const UserProfile = ({ id, firstName, lastName, email, location }) => {
           className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500" />
       </div>
       <div className="mb-1">
-        <label className="block mb-1">Location:</label>
+        <label className="block mb-1">Address:</label>
         <input
-          type="text"
-          name="location"
-          placeholder="Enter your location"
-          value={formData.location}
+          type="input"
+          name="address"
+          placeholder="Enter your address"
+          value={formData.address}
           onChange={handleChange}
           className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500" />
       </div>

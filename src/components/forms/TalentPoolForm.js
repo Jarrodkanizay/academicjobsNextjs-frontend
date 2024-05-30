@@ -40,11 +40,13 @@ const TalentPoolForm = ({
   const firstName = watch('01_First_Name');
 
 
-
   useEffect(() => {
     const fetchTalentPoolDetails = async () => {
       try {
-        const response = await BaseApi.get(`/getUserTalentPoolDetailsById/${userId}`);
+        const requestBody = {
+          userId: userId,
+        };
+        const response = await BaseApi.post(`/getUserTalentPoolDetailsById`, requestBody);
         const talentPool = response.data.talentPool;
         if (talentPool) {
           // Loop through the talentPool object and set values in the form

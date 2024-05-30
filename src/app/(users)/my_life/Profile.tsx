@@ -1,3 +1,4 @@
+'use client';
 import SearchResults2 from '@/components/SearchResults';
 import JobSearchBox2 from '@/components/JobSearchBox2';
 import { StarRank } from '@/components/StarRank';
@@ -10,23 +11,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import UserProfile from '@/components/profile/UserProfile';
 
-// import JobSearchBox2 from '@/components/JobSearchBox2';
-// import SearchResults from '@/components/SearchResults';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
-import { Span } from 'next/dist/trace';
-import { useState } from 'react';
-import SavedItems from '@/components/profile/SavedItems'
-import DashboardMenu from '@/components/DashboardMenu'
+import React, { createContext, useEffect, useState } from 'react';
+import SavedItems from '@/components/profile/SavedItems';
+import DashboardMenu from '@/components/DashboardMenu';
 import TalentPool from '@/components/TalentPool';
 import TalentPoolForm from '@/components/forms/TalentPoolForm';
 
-
 type UserProps = {
   id: number;
-  firstName?: string;
-  lastName?: string;
-  email?: string;
   summary?: string;
   expertise?: string[];
   skills?: string[];
@@ -34,7 +28,6 @@ type UserProps = {
   researchPhilosophy?: string;
   qualifications?: string[];
   profileStrength?: number;
-  location?: string;
   rank?: number;
   jobTitle?: string;
   organization?: string;
@@ -46,13 +39,14 @@ type UserProps = {
   favorites?: [];
   logo?: string;
   image?: string;
-
+  firstName?: string; 
+  lastName?: string;    
+  email?: string;      
+  address?: string;  
 };
+
 export default function Profile({
   id,
-  firstName = '',
-  lastName = '',
-  email = '',
   summary = '',
   expertise = [],
   skills = [],
@@ -60,7 +54,6 @@ export default function Profile({
   researchPhilosophy = '',
   qualifications = [],
   profileStrength = 0,
-  location = '',
   rank = 1,
   jobTitle = '',
   organization = '',
@@ -68,11 +61,9 @@ export default function Profile({
   wavesOn = true,
   bgColor = 'custom-background',
   logo,
-  image = '/placeholders/generic-headshot.png'
+  image = '/placeholders/generic-headshot.png',
 }: UserProps) {
-  const {
-    data: favoritejobs,
-  } = useQuery({
+  const { data: favoritejobs } = useQuery({
     queryKey: ['favoriteJobs'],
     queryFn: async () => {
       const response = await BaseApi.post('/getFavoriteJobs', {
@@ -83,48 +74,98 @@ export default function Profile({
     staleTime: 0,
   });
 
-  const {
-    data: favoriteEmployers
-  } = useQuery({
+  const { data: favoriteEmployers } = useQuery({
     queryKey: ['favoriteEmployers'],
     queryFn: async () => {
       const response = await BaseApi.post('/getFavoriteEmployers', {
         userId: id,
-        type: 'FAVORITE'
+        type: 'FAVORITE',
       });
       return response.data.data;
     },
     staleTime: 0,
   });
 
-  const {
-    data: talentPoolEmployers
-  } = useQuery({
+  const { data: talentPoolEmployers } = useQuery({
     queryKey: ['talentPoolEmployers'],
     queryFn: async () => {
       const response = await BaseApi.post('/getFavoriteEmployers', {
         userId: id,
-        type: 'TALENTPOOL'
+        type: 'TALENTPOOL',
       });
       return response.data.data;
     },
     staleTime: 0,
   });
+
+  const { data: userDetails, isLoading: userDetailsLoading, error: userDetailsError } = useQuery({
+    queryKey: ['userDetails'],
+    queryFn: async () => {
+      const response = await BaseApi.post('/auth/getUserDetailsById', {
+        userId: id,
+      });
+      const userProfile: UserProps = {
+        id,
+        summary,
+        expertise,
+        skills,
+        teachingPhilosophy,
+        researchPhilosophy,
+        qualifications,
+        profileStrength,
+        rank,
+        jobTitle,
+        organization,
+        avatar,
+        wavesOn,
+        bgColor,
+        logo,
+        image: response.data.image,
+        firstName: response.data.firstName,
+        lastName: response.data.lastName,
+        email: response.data.email,
+        address: response.data.address,
+      };
+      return userProfile;
+    },
+  });
+
+  const [profile, setProfile] = useState<UserProps | null>(null);
+
+  useEffect(() => {
+    if (userDetails) {
+      setProfile(userDetails);
+    }
+  }, [userDetails]);
+
+  const updateProfile = (profile: any) => {
+    setProfile(profile);
+  };
 
   const [selectedCard, setSelectedCard] = useState('Saved Jobs');
   const handleCardClick = (cardTitle) => {
     setSelectedCard(cardTitle);
   };
+
+  if (userDetailsLoading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <div className="spinner"></div>
+      </div>
+    );
+  }
+
+  if (userDetailsError) {
+    return <div>Error loading user details</div>;
+  }
+
   return (
     <>
       <section className={`${bgColor} full-width mb-16`}>
-        <div
-          className={`container pt-0 pb-10 ${wavesOn ? 'min-h-[380px]' : ''}`}
-        >
+        <div className={`container pt-0 pb-10 ${wavesOn ? 'min-h-[380px]' : ''}`}>
           <section className="wrapper hidden md:block" style={{ height: '20%', marginTop: '30px' }}>
             <h2 className="sentence p-0 m-0">
               <span className="mr-8">Find</span>{' '}
-
               <div className="slidingVertical">
                 <span>Opportunity</span>
                 <span>Connections</span>
@@ -140,134 +181,80 @@ export default function Profile({
                 <Image
                   width={140}
                   height={140}
-                  src={image ? image : avatar}
-                  alt="User Avatar"
+                  src={profile?.image}
+                  alt= {avatar}
                 />
-
               </div>
             </div>
             <div className="hidden md:block">
-              {/* <StarRank ranking={rank} /> */}
               <h2 className="profile p-0 m-0 flex gap-6 mt-2">
                 <span className="mt-[-6px] text-white font font-light">
-                  {firstName} {lastName}
+                  {profile?.firstName} {profile?.lastName}
                 </span>
                 {jobTitle === '' ? null : (
                   <span>
                     <p className="text-white flex gap-2 items-end p-0 m-0">
-                      <Image
-                        src={'/icons/job-title.svg'}
-                        width={24}
-                        height={24}
-                        alt=""
-                      />{' '}
+                      <Image src={'/icons/job-title.svg'} width={24} height={24} alt="" />{' '}
                       <span className="inline_heading">{jobTitle}</span>
                     </p>
                   </span>
                 )}
               </h2>
-              {email === '' ? null : (
+              {profile?.email === '' ? null : (
                 <p className="text-white flex gap-2 items-center">
-                  <Image
-                    src={'/icons/email-at-symbol.svg'}
-                    width={24}
-                    height={24}
-                    alt=""
-                  />{' '}
-                  <span className="inline_heading">{email}</span>
+                  <Image src={'/icons/email-at-symbol.svg'} width={24} height={24} alt="" />{' '}
+                  <span className="inline_heading">{profile?.email}</span>
                 </p>
               )}
               {organization === '' ? null : (
                 <p className="text-white flex gap-2 items-center">
-                  <Image
-                    src={'/icons/college-icon.svg'}
-                    width={24}
-                    height={24}
-                    alt=""
-                  />{' '}
+                  <Image src={'/icons/college-icon.svg'} width={24} height={24} alt="" />{' '}
                   <span className="inline_heading">{organization}</span>
                 </p>
               )}
-
               <p className="text-white flex gap-2 items-center">
                 <MapMarkerIcon width={26} height={26} />
-                {location === ''
-                  ? 'Add location here'
-                  : location}
+                {profile?.address === '' ? 'Add location here' : profile?.address}
               </p>
             </div>
-            {/* <div className="ml-auto">
-              <h2 className="p-0 m-0">Profile Strength {profileStrength}%</h2>
-              <progress
-                className="progress progress-secondary"
-                value={profileStrength}
-                max="100"
-              ></progress>
-              <Link href="/settings" className="p-0 m-0">
-                Edit Profile
-              </Link>
-            </div> */}
           </div>
           <div className="md:hidden block">
-            {/* <StarRank ranking={rank} /> */}
             <h2 className="profile p-0 m-0 flex gap-6 mt-2">
               <span className="mt-[-6px] text-white font font-light">
-                {firstName} {lastName}
+                {profile?.firstName} {profile?.lastName}
               </span>
               {jobTitle === '' ? null : (
                 <span>
                   <p className="text-white flex gap-2 items-end p-0 m-0">
-                    <Image
-                      src={'/icons/job-title.svg'}
-                      width={24}
-                      height={24}
-                      alt=""
-                    />{' '}
+                    <Image src={'/icons/job-title.svg'} width={24} height={24} alt="" />{' '}
                     <span className="inline_heading">{jobTitle}</span>
                   </p>
                 </span>
               )}
             </h2>
-            {email === '' ? null : (
+            {profile?.email === '' ? null : (
               <p className="text-white flex gap-2 items-center">
-                <Image
-                  src={'/icons/email-at-symbol.svg'}
-                  width={24}
-                  height={24}
-                  alt=""
-                />{' '}
-                <span className="inline_heading">{email}</span>
+                <Image src={'/icons/email-at-symbol.svg'} width={24} height={24} alt="" />{' '}
+                <span className="inline_heading">{profile?.email}</span>
               </p>
             )}
             {organization === '' ? null : (
               <p className="text-white flex gap-2 items-center">
-                <Image
-                  src={'/icons/college-icon.svg'}
-                  width={24}
-                  height={24}
-                  alt=""
-                />{' '}
+                <Image src={'/icons/college-icon.svg'} width={24} height={24} alt="" />{' '}
                 <span className="inline_heading">{organization}</span>
               </p>
             )}
-
             <p className="text-white flex gap-2 items-center">
               <MapMarkerIcon width={26} height={26} />
-              {location === ''
-                ? 'Add location here'
-                : location}
+              {profile?.address === '' ? 'Add location here' : profile?.address}
             </p>
           </div>
         </div>
         {wavesOn ? <WaveBackground /> : null}
       </section>
-      <section
-        title="dashboard"
-        className={`${wavesOn ? 'mt-[-96px]' : ''}`}
-      >
-        {/* <h2 className="profile">Hi {firstName || email}</h2> */}
+      <section title="dashboard" className={`${wavesOn ? 'mt-[-96px]' : ''}`}>
         <div className="flex gap-6 mt-10">
-        <DashboardCard
+          <DashboardCard
             title="Saved Jobs"
             iconPath="/icons/heart.svg"
             href="/my_life"
@@ -304,43 +291,32 @@ export default function Profile({
           <h2 className="md:hidden block">Saved Jobs</h2>
           <SavedItems favoriteJobs={favoritejobs} favoriteEmployers={favoriteEmployers} />
         </div>
-
-
       )}
       {selectedCard === 'Jobs Alerts' && (
-        // Render content for Jobs For You
         <div>
           <h2 className="md:hidden block">Job Alerts</h2>
-          {/* Content for Jobs For You */}
         </div>
       )}
       {selectedCard === 'Talent Pool' && (
-        // Render content for Jobs For You
         <div>
           <h2 className="md:hidden block">Talent Pool</h2>
           <TalentPool talentPool={talentPoolEmployers} />
         </div>
       )}
       {selectedCard === 'My Profile' && (
-        // Render content for Jobs Applied For
-      <div className="gap-5 mt-6 grid grid-cols-1 md:grid-cols-2">
-        <div className="md:mb-6 rounded-2xl px-7 pt-4 pb-6 border-[1px] border-slate-500">
-          <UserProfile
-            id={id}
-            firstName={firstName}
-            lastName={lastName}
-            email={email}
-            location={location}
-          />
+        <div className="gap-5 mt-6 grid grid-cols-1 md:grid-cols-2">
+          <div className="md:mb-6 rounded-2xl px-7 pt-4 pb-6 border-[1px] border-slate-500">
+            <UserProfile
+              id={id}
+              updateProfile={updateProfile}
+              userProfile={profile}
+            />
+          </div>
+          <div className="rounded-2xl px-7 pt-4 pb-6 border-[1px] border-slate-500">
+            <TalentPoolForm userId={id} />
+          </div>
         </div>
-
-        <div className="rounded-2xl px-7 pt-4 pb-6 border-[1px] border-slate-500">
-          <TalentPoolForm userId={id} />
-        </div>
-      </div>
       )}
-      
     </>
-    
   );
 }

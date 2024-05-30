@@ -10,6 +10,8 @@ export default function Page() {
   const { id, image, name, email } = session.user;
 
   const testID = 1;
+
+
   return (
     <main>
       <section title="Profile" className="content-grid">
