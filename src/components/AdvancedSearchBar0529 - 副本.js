@@ -4,7 +4,7 @@ import { useSearchParams } from 'next/navigation';
 import { filterType } from "@/utils/data";
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
-import JobKeywordSearchBlock from '@/components/JobKeywordSearchBlock';
+import JobSearchBox6 from '@/components/JobSearchBox6';
 import { useStore } from '@/lib/store/store';
 import { regionData } from "@/data/africaPositions";
 import Autocomplete, { usePlacesWidget } from 'react-google-autocomplete';
@@ -13,36 +13,37 @@ export default function Page({
   forceClass = '',
 }) {
   const { region, setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
+  
   let region1
   if (region.length > 0 && region != "Global") region1 = region
   //alert(region1)
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
   useEffect(() => {
+    
     if (p?.filter1) {
       setFilter1(p.filter1)
     }
   }, []);
   const searchParams = useSearchParams();
   const filterType = {
-    JobType: true,
-    EmploymentType: true,
-    Country: false,
-    State: true,
-    InstitutionName: true,
+
+    JobType: false,
     ExecutiveJobs: false,
     AdministrationSupportJobs: false,
     HRJobs: false,
     FacultyDepartmentJobs: false,
     AcademicPositionType: false,
     thirdcategory: false,
+    Country: false,
+    State: true,
+    InstitutionName: true,
+    EmploymentType: true,
     PositionType: false,
     SalaryRange: true,
     OnsiteRemote: true,
   };
   const [filterTypes, setfilterTypes] = useState(filterType);
-  const onEditorStateChange1 = (suggestion) => {
-  };
   // const [category, setCategory] = useState('');
   // const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
   // const [filter1, setfilter] = useState([{ category:'country', filter: region}]);
@@ -84,9 +85,6 @@ export default function Page({
     setfilter2(filter1)
   }, [category]);
   useEffect(() => {
-    console.log("keywordSuggestion21", q)
-  }, [q]);
-  useEffect(() => {
     if (region == 'Global') setfilterTypes((p) => ({ ...p, Country: true }));
   }, []);
   //alert()
@@ -99,7 +97,7 @@ export default function Page({
     isFetching: isFetchingQty,
     isPlaceholderData: isPlaceholderDataQty,
   } = useQuery({
-    queryKey: ['filter', { category, filter2, q, l, lon, lat }],
+    queryKey: ['filter', {  category, filter2, q, l, lon, lat }],
     queryFn: async () => {
       const response = await BaseApi.post('/filters', {
         currentMiddleCategory,
@@ -109,6 +107,28 @@ export default function Page({
       return response.data.data;
     },
     enabled: category !== '',
+  });
+  const {
+    isPending: isPendingQty9,
+    isError: isErrorQty9,
+    isSuccess: isSuccessQty9,
+    error: errorQty9,
+    data: filters9,
+    isFetching: isFetchingQty9,
+    isPlaceholderData: isPlaceholderDataQty9,
+  } = useQuery({
+    queryKey: ['filter9', { category, filter2, }],
+    queryFn: async () => {
+      const response = await BaseApi.post('/filters', {
+        category: 'JobType',
+        filter1: [{
+          category: 'Country',
+          filter: region1,
+        }],
+      });
+      return response.data.data;
+    },
+    enabled: true,
   });
   const filterValues9 = {
     Country: 'Country',
@@ -184,9 +204,24 @@ export default function Page({
               </div>
             )
           }
+
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 p-6">
+            {filters9?.length > 0 &&
+              filters9.map(({ filter, job_count }, i) => (
+                <button
+                  key={i}
+                  className="btn bg-gray-300 text-left text-gray-500 text-sm truncate"
+                  onClick={() => {
+                    setPage(0);
+                    setFilter1([...filter1, { category, filter }]);
+                    setCurrentMiddleCategory(filter);
+                  }}
+                >{`${filter ? filter : 'Others'}`}</button>
+              ))}
+          </div>
+
           <div className="flex gap-4 flex-wrap p-2 ml-4">
             {Object.entries(filterTypes).map(([filterType, showYN], i) => (// 中层大目录m
-              <React.Fragment key={i}>
               <button
                 key={i}
                 className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
@@ -205,17 +240,14 @@ export default function Page({
               >
                 {filterValues9[filterType] == 'thirdcategory' ? currentMiddleCategory : filterValues9[filterType]}
               </button>
-                {filterType == "EmploymentType" &&  <div className="w-full"></div>}
-              </React.Fragment>
             )
             )}
-            <JobKeywordSearchBlock
-              field="Enter a keyword"
-              customKey="Enter a keyword"
-              label="Enter a keyword"
-              forceClass="mb-6"
-              onChange={onEditorStateChange1}
-            />
+            {/* <input
+              type="text"
+              className="input input-sm input-bordered  w-[200px] md:text-left text-center"
+              placeholder="Keywords"
+              ref={keyWordRef}
+            /> */}
           </div>
           {isShowFilter && (
             <>
