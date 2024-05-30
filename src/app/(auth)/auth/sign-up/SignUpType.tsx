@@ -13,8 +13,8 @@ type SignUpTypeProps = {
 
 const SimpleCard = ({
   title = 'Academics & Professionals',
-  description = `I'm interested in an academic job.`,
-  src = '/sign-up/academic-professionals.png',
+  description = `I'm interested in working at a university.`,
+  src = '/sign-up-academic.png',
   btnText = 'Create a free profile',
   btnLink = '/auth/signup',
   btnSecondaryText = '',
@@ -25,16 +25,16 @@ const SimpleCard = ({
     <div className="card max-w-96 bg-white shadow-xl">
       <div className="card-body items-center text-center">
         <h2>{title}</h2>
-        <figure className="px-10 pt-10">
+        <figure className="">
           <Image
-            width={150}
-            height={150}
+            width={300}
+            height={300}
             src={src}
             alt={title}
-            className="rounded-xl mb-8"
+            className="rounded-xl"
           />
         </figure>
-        <h4 className="md:block hidden">{description}</h4>
+        <h4 className="md:block hidden text-black">{description}</h4>
         <div className="card-actions flex gap-4">
           {btnSecondaryText !== '' ? (
             <a className="btn btn-outline rounded-full" href={btnSecondaryLink}>
