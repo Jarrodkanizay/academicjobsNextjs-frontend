@@ -29,7 +29,15 @@ const SigninButton = () => {
           <DropdownMenu>
             <DropdownMenuTrigger>
               <Avatar>
-                <AvatarImage src={session.user?.image || ''} />
+                <AvatarImage
+                  src={
+                    session.user?.image?.includes('https://lh3.googleusercontent')
+                      ? session.user.image
+                      : session.user?.image
+                        ? `https://academicjobs.s3.amazonaws.com/img/users/${session.user.image}`
+                        : ''
+                  }
+                />                
                 <AvatarFallback className="bg-sky-500">
                   <User className="text-white" />
                 </AvatarFallback>

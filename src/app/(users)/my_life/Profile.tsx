@@ -38,7 +38,6 @@ type UserProps = {
   savedJobs?: [];
   favorites?: [];
   logo?: string;
-  image?: string;
   firstName?: string; 
   lastName?: string;    
   email?: string;      
@@ -57,11 +56,9 @@ export default function Profile({
   rank = 1,
   jobTitle = '',
   organization = '',
-  avatar = '/placeholders/generic-headshot.png',
   wavesOn = true,
   bgColor = 'custom-background',
   logo,
-  image = '/placeholders/generic-headshot.png',
 }: UserProps) {
   const { data: favoritejobs } = useQuery({
     queryKey: ['favoriteJobs'],
@@ -116,11 +113,10 @@ export default function Profile({
         rank,
         jobTitle,
         organization,
-        avatar,
         wavesOn,
         bgColor,
         logo,
-        image: response.data.image,
+        avatar: response.data.image,
         firstName: response.data.firstName,
         lastName: response.data.lastName,
         email: response.data.email,
@@ -181,9 +177,16 @@ export default function Profile({
                 <Image
                   width={140}
                   height={140}
-                  src={profile?.image}
-                  alt= {avatar}
+                  src={
+                    profile?.avatar.includes('https://lh3.googleusercontent')
+                      ? profile?.avatar
+                      : profile?.avatar
+                        ? `https://academicjobs.s3.amazonaws.com/img/users/${profile?.avatar}`
+                        : '/favicon.png'
+                  }
+                  alt="Avatar"
                 />
+                
               </div>
             </div>
             <div className="hidden md:block">

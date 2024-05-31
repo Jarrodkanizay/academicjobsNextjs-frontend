@@ -12,7 +12,7 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
     lastName: userProfile.lastName || '',
     email: userProfile.email || '',
     address: userProfile.address || '',
-    image: userProfile.image || null,
+    image: userProfile.avatar || null,
   });
 
   const handleChange = (e) => {
@@ -62,7 +62,7 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    let fileName = null;
+    let fileName = UserProfile.avatar;
     if (formData.image) {
       const file = formData.image;
       fileName = `${file.name}`;
@@ -77,7 +77,7 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
       lastName: formData.lastName,
       email: formData.email,
       address: formData.address,
-      image: `https://academicjobs.s3.amazonaws.com/img/users/${fileName}`,
+      image: fileName,
     };
 
     updateProfile(() => ({
@@ -85,7 +85,7 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
       lastName: formData.lastName,
       email: formData.email,
       address: formData.address,
-      image: `https://academicjobs.s3.amazonaws.com/img/users/${fileName}`
+      avatar: fileName
     }));
     
     try {
