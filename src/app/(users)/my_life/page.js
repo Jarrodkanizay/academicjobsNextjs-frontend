@@ -15,9 +15,6 @@ export default function Page() {
   return (
     <main>
       <section title="Profile" className="content-grid">
-        {testID === -1 ? (
-          <Profile id={-1} />
-        ) : (
           <Profile
             id={id}
             firstName={name}
@@ -34,13 +31,11 @@ export default function Page() {
             rank={3}
             jobTitle=""
             organization=""
-            avatar={image || '/favicon.png'}
+            avatar={image}
             wavesOn={true}
             bgColor="custom-background"
             session={session} 
-            image = {image}
           />
-        )}
       </section>
     </main>
   );
