@@ -24,25 +24,22 @@ export default function Page({
     }
   }, []);
   const searchParams = useSearchParams();
-  const filterType1 = {
+  const filterType = {
     JobType: true,
     EmploymentType: true,
+    Country: false,
+    State: true,
+    InstitutionName: true,
     ExecutiveJobs: false,
     AdministrationSupportJobs: false,
     HRJobs: false,
     FacultyDepartmentJobs: false,
     AcademicPositionType: false,
-    PositionType: false,
-  };
-  const filterType = {
-    Country: false,
-    State: true,
-    InstitutionName: true,
     thirdcategory: false,
+    PositionType: false,
     SalaryRange: true,
     OnsiteRemote: true,
   };
-  const [filterTypes1, setfilterTypes1] = useState(filterType1);
   const [filterTypes, setfilterTypes] = useState(filterType);
   const onEditorStateChange1 = (suggestion) => {
   };
@@ -55,30 +52,29 @@ export default function Page({
     //setCurrentMiddleCategory('')
     //setSearchJobQuery({ filter1 })
     console.log("filter1", filter1)
-    setfilterTypes1((p) => ({ ...p, ExecutiveJobs: false }));
-    setfilterTypes1((p) => ({ ...p, PositionType: false }));
-    setfilterTypes1((p) => ({ ...p, HRJobs: false }));
-    setfilterTypes1((p) => ({ ...p, AdministrationSupportJobs: false }));
-    setfilterTypes1((p) => ({ ...p, FacultyDepartmentJobs: false }));
-    setfilterTypes1((p) => ({ ...p, AcademicPositionType: false }));
-    setfilterTypes1((p) => ({ ...p, thirdcategory: false }));
+    setfilterTypes((p) => ({ ...p, ExecutiveJobs: false }));
+    setfilterTypes((p) => ({ ...p, HRJobs: false }));
+    setfilterTypes((p) => ({ ...p, AdministrationSupportJobs: false }));
+    setfilterTypes((p) => ({ ...p, FacultyDepartmentJobs: false }));
+    setfilterTypes((p) => ({ ...p, AcademicPositionType: false }));
+    setfilterTypes((p) => ({ ...p, thirdcategory: false }));
     if (category == "AcademicPositionType") setfilterTypes((p) => ({ ...p, thirdcategory: true }));
     switch (true) {
       case filter1.some((obj) => obj.filter.includes('Executive ')):
-        setfilterTypes1((p) => ({ ...p, ExecutiveJobs: true }));
-        //break;
+        setfilterTypes((p) => ({ ...p, ExecutiveJobs: true }));
+        break;
       case filter1.some((obj) => obj.filter.includes('Human Resources')):
-        setfilterTypes1((p) => ({ ...p, HRJobs: true }));
-        //break;
+        setfilterTypes((p) => ({ ...p, HRJobs: true }));
+        break;
       case filter1.some((obj) =>
         obj.filter.includes('Support /Administration')
       ):
-        setfilterTypes1((p) => ({ ...p, AdministrationSupportJobs: true }));
-        //break;
+        setfilterTypes((p) => ({ ...p, AdministrationSupportJobs: true }));
+        break;
       case filter1.some((obj) => obj.filter.includes('Academic / Faculty')):
-        setfilterTypes1((p) => ({ ...p, AcademicPositionType: true }));
-        setfilterTypes1((p) => ({ ...p, PositionType: true }));
-       // break;
+        setfilterTypes((p) => ({ ...p, AcademicPositionType: true }));
+        setfilterTypes((p) => ({ ...p, PositionType: true }));
+        break;
       default:
         break;
     }
@@ -189,52 +185,30 @@ export default function Page({
             )
           }
           <div className="flex gap-4 flex-wrap p-2 ml-4">
-            {Object.entries(filterTypes1).map(([filterType, showYN], i) => (// 中层大目录上
+            {Object.entries(filterTypes).map(([filterType, showYN], i) => (// 中层大目录m
               <React.Fragment key={i}>
-                <button
-                  key={i}
-                  className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
-                    ? 'bg-orange-500 text-white border-orange-500'
-                    : 'bg-white border-gray-500'
-                    }
+              <button
+                key={i}
+                className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
+                  ? 'bg-orange-500 text-white border-orange-500'
+                  : 'bg-white border-gray-500'
+                  }
                   ${showYN ? 'block' : 'hidden'} `}
-                  onClick={() => {
-                    if (category === filterType) {
-                      setIsShowFilter((prev) => !prev);
-                    } else {
-                      setIsShowFilter(true);
-                    }
-                    setCategory(filterType);
-                  }}
-                >
-                  {filterValues9[filterType] == 'thirdcategory' ? currentMiddleCategory : filterValues9[filterType]}
-                </button>
+                onClick={() => {
+                  if (category === filterType) {
+                    setIsShowFilter((prev) => !prev);
+                  } else {
+                    setIsShowFilter(true);
+                  }
+                  setCategory(filterType);
+                }}
+              >
+                {filterValues9[filterType] == 'thirdcategory' ? currentMiddleCategory : filterValues9[filterType]}
+              </button>
+                {filterType == "EmploymentType" &&  <div className="w-full"></div>}
               </React.Fragment>
-            ))}
-            </div>
-            <div className="flex gap-4 flex-wrap p-2 ml-4">
-            {Object.entries(filterTypes).map(([filterType, showYN], i) => (// 中层大目录下
-              <React.Fragment key={i}>
-                <button
-                  key={i}
-                  className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
-                    ? 'bg-orange-500 text-white border-orange-500'
-                    : 'bg-white border-gray-500'
-                    }
-                  ${showYN ? 'block' : 'hidden'} `}
-                  onClick={() => {
-                    if (category === filterType) {
-                      setIsShowFilter((prev) => !prev);
-                    } else {
-                      setIsShowFilter(true);
-                    }
-                    setCategory(filterType);
-                  }}
-                >
-                  {filterValues9[filterType] == 'thirdcategory' ? currentMiddleCategory : filterValues9[filterType]}
-                </button>
-              </React.Fragment>
-            ))}
+            )
+            )}
             <JobKeywordSearchBlock
               field="Enter a keyword"
               customKey="Enter a keyword"
