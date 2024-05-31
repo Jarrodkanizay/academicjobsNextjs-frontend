@@ -1002,5 +1002,50 @@ html {
         color: #3b5683 !important;
       }
     }
+
+    .sign_up_banner {
+      height: 160px;
+      width: 1000px;
+    }
+    
+    /* Media query for mobile devices */
+    @media (max-width: 767px) {
+      .sign_up_banner {
+        height: 200px;
+        width: 600px;
+      }
+    }
+    
+    .image-container {
+      width: 400px;
+      height: 150px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .responsive-img {
+      width: 100%;
+      height: auto;
+    }
+    
+    @media (max-width: 768px) {
+      .sign_up_benefits .flex {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .image-container {
+        width: 50%;
+        height: auto;
+      }
+    
+      .responsive-img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    
   }
 }

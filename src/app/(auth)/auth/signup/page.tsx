@@ -17,88 +17,86 @@ const page = () => {
   const height = 138 / scale;
   return (
     <main className="content-grid mt-0">
-      <div className="grid md:grid-cols-2 grid-cols-1">
+      <div className="hidden md:flex parent-div items-center justify-center" >
+        <img
+          src="/banner-signup.png"
+          alt="Networking & Collaborating"
+          className="sign_up_banner flex items-center justify-center p-2"
+        />
+      </div>
+      <div className="grid md:grid-cols-2 grid-cols-1 mt-4">
         <SignUpForm />
-        <div className="sign_up_benefits mt-8 md:mt-0">
-          <h1 className="text-center">Find your best</h1>
-          <h2 className="text-center mb-16 text-slate-600">
-            Exclusive access to the best communities,
-            <br />
-            opportunities and prospects in one spot.
-          </h2>
 
-          <section className="flex gap-8 mb-16">
-            <div>
+        <div className="sign_up_benefits mt-8 md:mt-0">
+
+          <section className="flex gap-8 mb-4">
+            <div className="image-container">
               <Image
-                src="/sign-up/networking-collaborating.png"
+                src="/collaboration.png"
                 width={width}
                 height={height}
                 alt="Networking & Collaborating"
-                className="sign_up_icons"
+                className="responsive-img"
               />
             </div>
             <div className="grow">
-              <h5>Collaborate globally with specialists</h5>
+              <h5>Global Collaboration and Networking</h5>
               <p>
-                Network, meet and collaborate with the best academics from
-                around the world in your specialty.
+                Engage with top academics and institutions worldwide.
               </p>
             </div>
           </section>
 
-          <section className="flex gap-8 mb-16">
-            <div>
+          <section className="flex gap-8 mb-4">
+          <div className="image-container">
               <Image
-                src="/sign-up/startup.png"
+                src="/opportunities.png"
                 width={width}
                 height={height}
                 alt="Launch your career."
-                className="sign_up_icons"
+                className="responsive-img"
               />
             </div>
             <div className="grow">
-              <h5>Discover 100k jobs posted weekly</h5>
+              <h5>New Career Opportunities</h5>
               <p>
-                Get matched with roles that fit your skills and interests — then
-                Easy Apply in just a few clicks.
+                Find job listings tailored to your field and expertise
               </p>
             </div>
           </section>
 
-          <section className="flex gap-8 mb-16">
-            <div>
+          <section className="flex gap-8 mb-4">
+          <div className="image-container">
               <Image
-                src="/sign-up/email-marketing.png"
+                src="/culture.png"
                 width={width}
                 height={height}
                 alt="Find the right fit for you."
-                className="sign_up_icons"
+                className="responsive-img"
               />
             </div>
             <div className="grow">
-              <h5>Find your ideal tech culture</h5>
+              <h5>Ideal Culture Match</h5>
               <p>
-                Get a firsthand look at an institution's culture (and how you
-                fit into it) before you ever apply.
+                Discover institutions that align with your professional values.
               </p>
             </div>
           </section>
 
-          <section className="flex gap-8 mb-16">
-            <div>
+          <section className="flex gap-8 mb-4">
+            <div className="image-container">
               <Image
-                src="/sign-up/career-advice.png"
+                src="/market-comparison.png"
                 width={width}
                 height={height}
                 alt="Get the career advice your are looking for."
-                className="sign_up_icons"
+                className="responsive-img"
               />
             </div>
             <div className="grow">
-              <h5>Get tech career advice</h5>
+              <h5>Global Market Comparison</h5>
               <p>
-                Level up with free industry insights and career tools to help
-                you stand out and get hired.
+                Understand academic job trends and opportunities across countries.
               </p>
             </div>
           </section>
