@@ -178,7 +178,7 @@ export default function Profile({
                   width={140}
                   height={140}
                   src={
-                    profile?.avatar.includes('https://lh3.googleusercontent')
+                    profile?.avatar?.includes('https://lh3.googleusercontent')
                       ? profile?.avatar
                       : profile?.avatar
                         ? `https://academicjobs.s3.amazonaws.com/img/users/${profile?.avatar}`

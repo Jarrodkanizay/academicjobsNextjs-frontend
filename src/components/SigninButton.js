@@ -17,7 +17,7 @@ import { LogoutButton } from './logout-button';
 const SigninButton = () => {
   const { data: session } = useSession();
   console.log('siginbutton session', session);
-
+  //console.log("(session.user?.image",session.user?.image)
   return (
     <div className="flex items-center gap-2 ">
       {session && session.user ? (

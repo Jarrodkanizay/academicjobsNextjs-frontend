@@ -3,9 +3,12 @@ import axios from 'axios';
 import { baseURL } from '@/lib/store/Base';
 import { useSession } from 'next-auth/react';
 import { BaseApi } from '@/lib/store/Base';
+import { useRouter } from 'next/navigation';
 
 
 const UserProfile = ({ id, updateProfile, userProfile }) => {
+  const router = useRouter();
+  const { data: session } = useSession();
   console.log(userProfile.image);
   const [formData, setFormData] = useState({
     firstName: userProfile.firstName || '',
@@ -26,11 +29,10 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     setFormData({
-      ...formData,
+      ...formData,  
       image: file,
     });
   };
-
 
   const getSignedUrl = async (fileName, targetDir) => {
     try {
@@ -101,7 +103,7 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
     } catch (error) {
       console.error('Error updating user data:', error);
     }
-
+    if (session) router.refresh();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

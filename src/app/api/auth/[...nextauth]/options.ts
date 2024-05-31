@@ -38,7 +38,7 @@ export const authOptions: AuthOptions = {
           id: profile.sub,
           name: profile.name,
           email: profile.email,
-          image: profile.picture,
+          image: profile.image,
           userRole: 'JOBSEEKER',
         };
       },
@@ -82,7 +82,15 @@ export const authOptions: AuthOptions = {
           user.userRole = 'EMPLOYER';
           const { hashedPassword, ...userWithoutPass } = user;
           // console.log('userWithoutPass', userWithoutPass);
-          return userWithoutPass as User;
+          //return userWithoutPass as User;
+          return {
+                ...userWithoutPass,
+               id: user.id,
+               name: user.name,
+               email: user.email,
+               image: user.image,
+               userRole: user.userRole,
+             };
         }
         throw new Error('Invalid credentials');
       },

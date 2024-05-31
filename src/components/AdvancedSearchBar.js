@@ -12,7 +12,7 @@ export default function Page({
   p,
   forceClass = '',
 }) {
-  const { region, setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
+  
   let region1
   if (region.length > 0 && region != "Global") region1 = region
   //alert(region1)
@@ -25,20 +25,20 @@ export default function Page({
   }, []);
   const searchParams = useSearchParams();
   const filterType1 = {
-    JobType: true,
-    EmploymentType: true,
+    JobType: true,   
     ExecutiveJobs: false,
     AdministrationSupportJobs: false,
     HRJobs: false,
     FacultyDepartmentJobs: false,
     AcademicPositionType: false,
     PositionType: false,
+    thirdcategory: false,
   };
   const filterType = {
     Country: false,
     State: true,
     InstitutionName: true,
-    thirdcategory: false,
+    EmploymentType: true,    
     SalaryRange: true,
     OnsiteRemote: true,
   };
@@ -62,7 +62,7 @@ export default function Page({
     setfilterTypes1((p) => ({ ...p, FacultyDepartmentJobs: false }));
     setfilterTypes1((p) => ({ ...p, AcademicPositionType: false }));
     setfilterTypes1((p) => ({ ...p, thirdcategory: false }));
-    if (category == "AcademicPositionType") setfilterTypes((p) => ({ ...p, thirdcategory: true }));
+    if (category == "AcademicPositionType") setfilterTypes1((p) => ({ ...p, thirdcategory: true }));
     switch (true) {
       case filter1.some((obj) => obj.filter.includes('Executive ')):
         setfilterTypes1((p) => ({ ...p, ExecutiveJobs: true }));
