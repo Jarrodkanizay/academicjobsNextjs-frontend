@@ -12,7 +12,7 @@ export default function Page({
   p,
   forceClass = '',
 }) {
-  
+  const { region, setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
   let region1
   if (region.length > 0 && region != "Global") region1 = region
   //alert(region1)
