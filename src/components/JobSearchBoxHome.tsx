@@ -14,7 +14,7 @@ export default function JobSearchBox() {
     event.preventDefault();
     const a: { q?: string; l?: string } = {};
     if (keyWordRef.current && keyWordRef.current.value.trim()) {
-      a.q = keyWordRef.current.value.trim();Global
+      a.q = keyWordRef.current.value.trim();
     }
     if (region !== 'Global') {
       const location = (countryMappings1 as any)[region]?.searchLocation || 'Global';
