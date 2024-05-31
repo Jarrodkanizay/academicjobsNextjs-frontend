@@ -17,7 +17,7 @@ const page = () => {
         <SimpleCard
           title="Employers & Recruiters"
           description={`I'm looking for talent.`}
-          src="/sign-up/employers-recruiters.png"
+          src="/sign-up-recruiter.png"
           btnText="Sign up as an employer"
           btnLink="https://www.iloveacademicjobs.com/aj-signup"
           target="_blank"
