@@ -29,7 +29,7 @@ export default function JobSearchBox() {
         );
         const result = await response.json();
         const country = result.country.name;
-        setRegion((countryMappings1 as any)[country.toLowerCase()]);
+        setRegion((countryMappings1 as any)[country.toLowerCase()] || 'Global');
         const qValue = a.q || '';
         const lValue = (countryMappings1 as any)[
           (countryMappings as any)[country.toLowerCase()]
