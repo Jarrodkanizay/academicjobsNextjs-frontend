@@ -207,7 +207,7 @@ export default function Page({
                     setCategory(filterType);
                   }}
                 >
-                  {filterValues9[filterType] == 'thirdcategory' ? currentMiddleCategory : filterValues9[filterType]}
+                  {filterValues9[filterType] == 'thirdcategory' ? `${currentMiddleCategory} Specialty` : filterValues9[filterType]}
                 </button>
               </React.Fragment>
             ))}
