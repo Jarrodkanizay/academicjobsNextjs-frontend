@@ -5,11 +5,17 @@ import { useRef } from 'react';
 import { useStore } from '@/lib/store/store';
 import { countryMappings, countryMappings1 } from '@/lib/data/data';
 export default function JobSearchBox() {
-
+  const countryMap = {
+    UK: 'United Kingdom',
+    Australia: 'Australia',
+    Canada: 'Canada',
+    USA: 'United States',
+  };
   const keyWordRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
   let region = 'Australia';
-  const { setRegion, setFilter1 } = useStore();
+    const { setRegion, setFilter1, reset } = useStore();
+
   const handleFormSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     const a: { q?: string; l?: string } = {};
@@ -17,12 +23,17 @@ export default function JobSearchBox() {
       a.q = keyWordRef.current.value.trim();
     }
     if (region !== 'Global') {
-      const location = (countryMappings1 as any)[region]?.searchLocation || 'Global';
-      const params = new URLSearchParams({
-        l: encodeURIComponent(location),
-        q: encodeURIComponent(a.q || ''),
-      });
-      router.push(`/jobs?${params.toString()}`);
+      // const location = (countryMappings1 as any)[region]?.searchLocation || 'Global';
+      // const params = new URLSearchParams({
+      //   l: encodeURIComponent(location),
+      //   q: encodeURIComponent(a.q || ''),
+      // });
+      // router.push(`/jobs?${params.toString()}`);
+      const country=region
+        setRegion(country);
+        reset();
+        setFilter1([{ category: 'Country', filter: countryMap[country] }]);
+        router.push(`/jobs-advanced-search?l=${country}`);
     } else {
       try {
         const response = await fetch(
@@ -35,7 +46,10 @@ export default function JobSearchBox() {
         const lValue = (countryMappings1 as any)[
           (countryMappings as any)[country.toLowerCase()]
         ]?.searchLocation;
-        router.push(`/jobs?q=${qValue}&l=${lValue}`);
+        //router.push(`/jobs?q=${qValue}&l=${lValue}`);
+        reset();
+        setFilter1([{ category: 'Country', filter: countryMap[country] }]);
+        router.push(`/jobs-advanced-search?l=${country}`);
       } catch (error) {
         console.log('Error:', error);
       }
@@ -60,8 +74,8 @@ export default function JobSearchBox() {
           Search In Your Country
         </button>
       </div>
-      <div className='w-full flex justify-between'>
-        <button
+      <div className='w-full flex justify-end'>
+        {/* <button
           className=" underline text-gray-400 text-base md:pr-6 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l from-green-400 via-green-400 to-sky-300"
           onClick={async (event: React.FormEvent) => {
             event.preventDefault();
@@ -78,7 +92,7 @@ export default function JobSearchBox() {
           }}
         >
           Advanced Search
-        </button>
+        </button> */}
         <button
           className=" text-gray-400 text-base md:pr-6 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l from-green-400 via-green-400 to-sky-300"
           onClick={async (event: React.FormEvent) => {
@@ -93,8 +107,11 @@ export default function JobSearchBox() {
               l: '',
               q: encodeURIComponent(a.q || ''),
             });
-
-            router.push(`/jobs?${params.toString()}`);
+        setRegion('Global');
+        reset();
+        setFilter1([]);
+        router.push(`/jobs-advanced-search`);
+            // router.push(`/jobs?${params.toString()}`);
           }}
         >
           Or Search Globally

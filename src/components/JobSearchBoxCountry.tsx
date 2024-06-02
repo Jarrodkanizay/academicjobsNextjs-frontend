@@ -25,7 +25,11 @@ export default function JobSearchBoxCountry({ country }) {
       l: encodeURIComponent(country),
       q: encodeURIComponent(a.q || ''),
     });
-    router.push(`/jobs?${params.toString()}`);
+    // router.push(`/jobs?${params.toString()}`);
+          setRegion(country);
+          reset();
+          setFilter1([{ category: 'Country', filter: countryMap[country] }]);
+          router.push(`/jobs-advanced-search?l=${country}`);
   };
   return (
     <div className="flex flex-col gap-2">
@@ -57,13 +61,13 @@ export default function JobSearchBoxCountry({ country }) {
             // lat: encodeURIComponent(lonlat.current?.lat),
             q: encodeURIComponent(keyWordRef.current?.value.trim() || ''),
           });
-          setRegion(country);
-          reset()
-          setFilter1([{ category: 'Country', filter: countryMap[country] }]);
-          router.push(`/jobs-advanced-search?l=${country}`);
+          setRegion("Global");
+          reset();
+          setFilter1([]);
+          router.push(`/jobs-advanced-search`);
         }}
       >
-        Advanced Search
+        Or Search Globally
       </button>
     </div>
   );
