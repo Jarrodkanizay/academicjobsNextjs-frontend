@@ -5,7 +5,6 @@ import { useSession } from 'next-auth/react';
 import { BaseApi } from '@/lib/store/Base';
 import { useRouter } from 'next/navigation';
 
-
 const UserProfile = ({ id, updateProfile, userProfile }) => {
   const router = useRouter();
   const { data: session } = useSession();
@@ -29,22 +28,26 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     setFormData({
-      ...formData,  
+      ...formData,
       image: file,
     });
   };
 
   const getSignedUrl = async (fileName, targetDir) => {
     try {
-      const response = await BaseApi.post(`/generate-upload-url`, {
-        fileName: fileName,
-        directory: targetDir,
-      }, {
-        headers: {
-          "Content-Type": "application/json",
+      const response = await BaseApi.post(
+        `/generate-upload-url`,
+        {
+          fileName: fileName,
+          directory: targetDir,
+        },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
         }
-      });
-      console.log('Signed URL response:', response.data.presignedUploadUrl); 
+      );
+      console.log('Signed URL response:', response.data.presignedUploadUrl);
       return response.data.presignedUploadUrl;
     } catch (error) {
       console.error('Error getting signed URL:', error);
@@ -87,19 +90,22 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
       lastName: formData.lastName,
       email: formData.email,
       address: formData.address,
-      avatar: fileName
+      avatar: fileName,
     }));
-    
+
     try {
-      const response = await axios.post(`${baseURL}/auth/updateUserById`, formDataToSend, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
+      const response = await axios.post(
+        `${baseURL}/auth/updateUserById`,
+        formDataToSend,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
 
       const updatedUserData = response.data.user;
       console.log('Updated user data:', updatedUserData);
-
     } catch (error) {
       console.error('Error updating user data:', error);
     }
@@ -108,60 +114,69 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
   };
 
   return (
-    <><h2>My Details</h2>
-    <form onSubmit={handleSubmit} className="">
-      <div className="mb-1">
-        <label className="block mb-1">First Name:</label>
-        <input
-          type="text"
-          name="firstName"
-          placeholder="Enter your first name"
-          value={formData.firstName}
-          onChange={handleChange}
-          className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500" />
-      </div>
-      <div className="mb-1">
-        <label className="block mb-1">Last Name:</label>
-        <input
-          type="text"
-          name="lastName"
-          placeholder="Enter your last name"
-          value={formData.lastName}
-          onChange={handleChange}
-          className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500" />
-      </div>
-      <div className="mb-1">
-        <label className="block mb-1">Email:</label>
-        <input
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-          value={formData.email}
-          onChange={handleChange}
-          className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500" />
-      </div>
-      <div className="mb-1">
-        <label className="block mb-1">Address:</label>
-        <input
-          type="input"
-          name="address"
-          placeholder="Enter your address"
-          value={formData.address}
-          onChange={handleChange}
-          className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500" />
-      </div>
-      <div className="mb-1">
-        <label className="block mb-1">Profile Picture:</label>
-        <input
-          type="file"
-          accept="image/*"
-          onChange={handleFileChange}
-          className="w-full input input-md" />
-      </div>
-      <div>
-        <button type="submit" className="py-2 px-4 btn btn-aj">Save Changes</button>
-      </div>
-    </form></>
+    <>
+      <h2>My Details??</h2>
+      <form onSubmit={handleSubmit} className="">
+        <div className="mb-1">
+          <label className="block mb-1">First Name:</label>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="Enter your first name"
+            value={formData.firstName}
+            onChange={handleChange}
+            className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500"
+          />
+        </div>
+        <div className="mb-1">
+          <label className="block mb-1">Last Name:</label>
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Enter your last name"
+            value={formData.lastName}
+            onChange={handleChange}
+            className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500"
+          />
+        </div>
+        <div className="mb-1">
+          <label className="block mb-1">Email:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            value={formData.email}
+            onChange={handleChange}
+            className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500"
+          />
+        </div>
+        <div className="mb-1">
+          <label className="block mb-1">Address:</label>
+          <input
+            type="input"
+            name="address"
+            placeholder="Enter your address"
+            value={formData.address}
+            onChange={handleChange}
+            className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500"
+          />
+        </div>
+        <div className="mb-1">
+          <label className="block mb-1">Profile Picture:</label>
+          <input
+            type="file"
+            accept="image/*"
+            onChange={handleFileChange}
+            className="w-full input input-md"
+          />
+        </div>
+        <div>
+          <button type="submit" className="py-2 px-4 btn btn-aj">
+            Save Changes
+          </button>
+        </div>
+      </form>
+    </>
   );
 };
 
