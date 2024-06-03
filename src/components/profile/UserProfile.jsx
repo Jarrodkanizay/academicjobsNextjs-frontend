@@ -8,7 +8,6 @@ import nationalities from '@/data/CountryList.json';
 
 const UserProfile = ({ id, updateProfile, userProfile }) => {
   const router = useRouter();
-  const { data: session } = useSession();
   const [formData, setFormData] = useState({
     firstName: userProfile.firstName || '',
     lastName: userProfile.lastName || '',
@@ -76,29 +75,32 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     let fileName = userProfile.avatar;
+    let imageUpdated = false;
+  
     if (formData.image && formData.image !== userProfile.avatar) {
       const file = formData.image;
       fileName = `${file.name}`;
-
+      imageUpdated = true;
+  
       const signedUrl = await getSignedUrl(fileName, 'users');
       await uploadToS3(signedUrl, file);
     }
-
+  
     const formDataToSend = {};
     Object.keys(formData).forEach((key) => {
       if (formData[key] !== userProfile[key]) {
         formDataToSend[key] = formData[key];
       }
     });
-
+  
     if (formDataToSend.image) {
       formDataToSend.image = fileName;
     }
-
+  
     formDataToSend.id = id;
-
+  
     updateProfile(() => ({
       firstName: formData.firstName,
       lastName: formData.lastName,
@@ -108,7 +110,7 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
       nationality: formData.nationality,
       indigenous: formData.indigenous,
     }));
-
+  
     try {
       const response = await axios.post(
         `${baseURL}/auth/updateUserById`,
@@ -119,15 +121,21 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
           },
         }
       );
-
+  
       const updatedUserData = response.data.user;
       console.log('Updated user data:', updatedUserData);
     } catch (error) {
       console.error('Error updating user data:', error);
     }
-    if (session) router.refresh();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    console.log("image update", imageUpdated);
+    if (imageUpdated) {
+      window.location.reload();
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    }
   };
+  
 
   return (
     <>

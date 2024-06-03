@@ -13,28 +13,45 @@ import {
 } from '@/shadcn/ui/dropdown-menu';
 import { Avatar, AvatarImage, AvatarFallback } from '@/shadcn/ui/avatar';
 import { LogoutButton } from './logout-button';
+import { useQuery } from '@tanstack/react-query';
+import { BaseApi } from '@/lib/store/Base';
+import { useEffect, useState } from 'react';
 
 const SigninButton = () => {
   const { data: session } = useSession();
-  console.log('siginbutton session', session);
-  //console.log("(session.user?.image",session.user?.image)
+  const [userDetails, setUserDetails] = useState(null);
+
+  useEffect(() => {
+    const fetchUserDetails = async () => {
+      if (session && session.user) {
+        try {
+          const response = await BaseApi.post('/auth/getUserDetailsById', {
+            userId: session.user.id,
+          });
+          setUserDetails(response.data);
+          console.log('user profile', response.data);
+        } catch (error) {
+          console.error('Error fetching user details:', error);
+        }
+      }
+    };
+
+    fetchUserDetails();
+  }, [session]);
+
   return (
     <div className="flex items-center gap-2 ">
       {session && session.user ? (
         <>
-          {/* <Link
-            href={'/profile'}
-          >{`${session.user.firstName} ${session.user.lastName}`}</Link> */}
-
           <DropdownMenu>
             <DropdownMenuTrigger>
               <Avatar>
                 <AvatarImage
                   src={
-                    session.user?.image
-                      ? session.user.image.includes('https://lh3.googleusercontent')
-                        ? session.user.image
-                        : `https://academicjobs.s3.amazonaws.com/img/users/${session.user.image}`
+                    userDetails?.image?.includes('https://lh3.googleusercontent')
+                      ? userDetails.image
+                      : userDetails?.image
+                      ? `https://academicjobs.s3.amazonaws.com/img/users/${userDetails.image}`
                       : ''
                   }
                 />
