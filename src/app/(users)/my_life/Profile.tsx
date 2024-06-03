@@ -41,7 +41,9 @@ type UserProps = {
   firstName?: string; 
   lastName?: string;    
   email?: string;      
-  address?: string;  
+  address?: string;
+  indigenous?: boolean;
+  nationality?: string;
 };
 
 export default function Profile({
@@ -121,6 +123,8 @@ export default function Profile({
         lastName: response.data.lastName,
         email: response.data.email,
         address: response.data.address,
+        indigenous: response.data.indigenous,
+        nationality: response.data.nationality
       };
       return userProfile;
     },

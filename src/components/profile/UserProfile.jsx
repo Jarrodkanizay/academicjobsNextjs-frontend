@@ -4,17 +4,20 @@ import { baseURL } from '@/lib/store/Base';
 import { useSession } from 'next-auth/react';
 import { BaseApi } from '@/lib/store/Base';
 import { useRouter } from 'next/navigation';
+import nationalities from '@/data/CountryList.json';
+
 
 const UserProfile = ({ id, updateProfile, userProfile }) => {
   const router = useRouter();
   const { data: session } = useSession();
-  console.log(userProfile.image);
   const [formData, setFormData] = useState({
     firstName: userProfile.firstName || '',
     lastName: userProfile.lastName || '',
     email: userProfile.email || '',
     address: userProfile.address || '',
     image: userProfile.avatar || null,
+    nationality: userProfile.nationality || '',
+    indigenous: userProfile.indigenous || false,
   });
 
   const handleChange = (e) => {
@@ -30,6 +33,14 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
     setFormData({
       ...formData,
       image: file,
+    });
+  };
+
+  const handleCheckboxChange = (e) => {
+    const { checked } = e.target;
+    setFormData({
+      ...formData,
+      indigenous: checked,
     });
   };
 
@@ -83,6 +94,8 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
       email: formData.email,
       address: formData.address,
       image: fileName,
+      nationality: formData.nationality,
+      indigenous: formData.indigenous,
     };
 
     updateProfile(() => ({
@@ -91,6 +104,8 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
       email: formData.email,
       address: formData.address,
       avatar: fileName,
+      nationality: formData.nationality,
+      indigenous: formData.indigenous,
     }));
 
     try {
@@ -115,7 +130,7 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
 
   return (
     <>
-      <h2>My Details??</h2>
+      <h2>My Details</h2>
       <form onSubmit={handleSubmit} className="">
         <div className="mb-1">
           <label className="block mb-1">First Name:</label>
@@ -170,23 +185,45 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
             className="w-full input input-md"
           />
         </div>
-        <h3 className="mb-4">Indigenous Australian Heritage</h3>
-        <p>
-          We acknowledge and respect the diverse cultures and identities of
-          Indigenous Australians. If you feel comfortable, please let us know if
-          you identify as an Indigenous Australian. This information can help us
-          to provide more relevant and tailored services.
-        </p>
-        <label className="cursor-pointer label mb-8">
-          <input
-            type="checkbox"
-            defaultChecked
-            className="checkbox checkbox-warning"
-          />
-          <span className="label-text grow ml-4">
-            I identify as an Indigenous Australian.
-          </span>
-        </label>
+        <div className="mb-1">
+          <label className="block mb-1">Nationality:</label>
+          <select
+            name="nationality"
+            value={formData.nationality}
+            onChange={handleChange}
+            className="w-full input input-md input-bordered focus:outline-none focus:border-orange-500"
+          >
+            <option value="">Select your nationality</option>
+            {nationalities.map((country) => (
+              <option key={country.code} value={country.name}>
+                {country.name}
+              </option>
+            ))}
+          </select>
+        </div>
+        {formData.nationality === 'Australia' && (
+          <>
+            {/* <h3 className="mb-4">Indigenous Australian Heritage</h3> */}
+            {/* <p>
+              We acknowledge and respect the diverse cultures and identities of
+              Indigenous Australians. If you feel comfortable, please let us know if
+              you identify as an Indigenous Australian. This information can help us
+              to provide more relevant and tailored services.
+            </p> */}
+            <label className="cursor-pointer label mb-8">
+              <input
+                type="checkbox"
+                name="indigenous"
+                checked={formData.indigenous}  // Add this line
+                onChange={handleCheckboxChange}
+                className="checkbox checkbox-warning"
+              />
+              <span className="label-text grow ml-4">
+                I identify as an Indigenous Australian.
+              </span>
+            </label>
+          </>
+        )}
         <div>
           <button type="submit" className="py-2 px-4 btn btn-aj">
             Save Changes
