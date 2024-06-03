@@ -63,11 +63,15 @@ export default async function myPage() {
     <main className="content-grid">
       <div className="full-width md:h-[400px] h-[229px] gradient-aj">
         <div className="hero-bg-aus md:bg-center">
-
           <section className="wrapper md:flex ">
             <h2 className="sentence mt-[6rem]">
-              <h2 className="sentence-aus md:mb-[-5rem] mb-[-10rem]">Australia's University Job Website</h2>
-              <span className="mr-8">Find</span> <span className="md:hidden block my-[-1rem]"><br /></span>
+              <h2 className="sentence-aus md:mb-[-5rem] mb-[-10rem]">
+                Australia's University Job Website
+              </h2>
+              <span className="mr-8">Find</span>{' '}
+              <span className="md:hidden block my-[-1rem]">
+                <br />
+              </span>
               <div className="slidingVertical ">
                 <span>Opportunity</span>
                 <span>Connections</span>
@@ -97,7 +101,10 @@ export default async function myPage() {
           </ul>
           <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-[-75px] mt-[-11rem] lg:hidden ">
             <li>
-              <a className="grayscale hover:grayscale-0" href="australia/faculty">
+              <a
+                className="grayscale hover:grayscale-0"
+                href="australia/faculty"
+              >
                 <Image
                   alt="Academic Faculty Positions"
                   loading="lazy"
@@ -113,7 +120,10 @@ export default async function myPage() {
               </a>
             </li>
             <li>
-              <a className="grayscale hover:grayscale-0" href="australia/executive">
+              <a
+                className="grayscale hover:grayscale-0"
+                href="australia/executive"
+              >
                 <Image
                   alt="Academic Executive Positions"
                   loading="lazy"
@@ -122,7 +132,6 @@ export default async function myPage() {
                   decoding="async"
                   data-nimg="1"
                   src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"
-
                 ></Image>
               </a>
               <a className="mb-4" href="australia/executive">
@@ -130,7 +139,10 @@ export default async function myPage() {
               </a>
             </li>
             <li>
-              <a className="grayscale hover:grayscale-0" href="australia/hr-jobs">
+              <a
+                className="grayscale hover:grayscale-0"
+                href="australia/hr-jobs"
+              >
                 <Image
                   alt="Academic HR Positions"
                   loading="lazy"
@@ -150,7 +162,7 @@ export default async function myPage() {
       </div>
 
       <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
-        <JobSearchBoxCountry country={"Australia"} />
+        <JobSearchBoxCountry country={'Australia'} />
       </div>
 
       {/* <div className="pt-[4rem] flex flex-col items-center justify-center">
@@ -248,7 +260,6 @@ export default async function myPage() {
         </a>
       </div> */}
 
-
       <div id="section" className="bg-slate-200 py-4 full-width mt-8">
         <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
           <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
@@ -268,9 +279,9 @@ export default async function myPage() {
             </p>
             <p className="px-7">
               The No.1 job board for academics in Australia for all your uni
-              jobs requirements, from seeking to recruiting, look no further.
-              In just a few simple steps you can be in the running for your
-              dream uni job!
+              jobs requirements, from seeking to recruiting, look no further. In
+              just a few simple steps you can be in the running for your dream
+              uni job!
             </p>
             <p className="px-7">Find all the best jobs here…</p>
           </div>
@@ -524,11 +535,9 @@ export default async function myPage() {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* <h2 className="underline-full"> Top University Employer Rankings</h2> */}
-      <div className="bg-white flex flex-col md:flex-row mx-auto mb-4">
-        {/* <div className="card bg-slate-300 shadow-xl">
+        {/* <h2 className="underline-full"> Top University Employer Rankings</h2> */}
+        <div className="bg-white flex flex-col md:flex-row mx-auto mb-4">
+          {/* <div className="card bg-slate-300 shadow-xl">
             <div className="card-body">
               <h2 className="card-title">
                 {' '}
@@ -540,47 +549,54 @@ export default async function myPage() {
 
           {/* /top-10-australian-universities */}
           <div className="md:w-1/3 w-full">
-            <div className="card bg-slate-100 shadow-xl">
+            <div className="card bg-slate-100 shadow-xl border">
               <div className="card-body">
-                <h2 className="card-title">
-                  {' '}
-                  Top University Employers Australia{' '}
+                <h2 className="card-title m-0 underline-full">
+                  Job of the Week
                 </h2>
-                <a className=" text-gray-400"> 10 Dec, 2023</a>
+                <h3 className="m-0 text-lg">
+                  Professor in Indigenous Knowledges
+                </h3>
+                <h4 className="m-0 text-sm">
+                  University of New England (UNE):{' '}
+                  <span className="font-normal">
+                    School of Humanities, Arts and Social Sciences (HASS)
+                  </span>
+                </h4>
+                <p className="text-sm m-0 text-gray-400">
+                  Closes 09 June, 2024
+                </p>
+                <ul className=" p-4 pl-12 list-disc text-gray-500">
+                  <li className="text-sm">Continuing, full-time</li>
+                  <li className="text-sm">$197,560 per annum (Level E)</li>
+                  <li className="text-sm">Plus 17% employer superannuation</li>
+                  {/* <li>Salary packaging options are available</li>
+                  <li className='text-sm'>
+                    4 weeks annual leave plus Christmas week shutdown, per annum
+                  </li>
+                  <li className='text-sm'>Relocation assistance provided</li> */}
+                </ul>
+                <p className="text-sm">
+                  This role leads Indigenous Knowledges initiatives and
+                  curriculum updates. The ideal candidate has experience in
+                  digital course design and a strong research background.
+                </p>
+                <Link
+                  className="btn btn-aj btn-sm ml-auto"
+                  href="/jobs/professor-in-indigenous-knowledges/115187"
+                >
+                  Learn more
+                </Link>
               </div>
-              <figure>
-                <Image
-                  width={1280}
-                  height={380}
-                  src="/academic-job-postings/university-of-sydney.jpg"
-                  alt="Top Academic Jobs Australia"
-                  className="h-[5rem]"
-                />
-              </figure>
-              <ul className=" p-4 pl-12 list-disc text-gray-500">
-                <a href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786">
-                  Queensland University of Technology (QUT)
-                </a>
-                <a href="https://www.academicjobs.com/employers/bond-university/3785/">
-                  {' '}
-                  Bond University
-                  <br />
-                </a>
-                <a href="https://www.academicjobs.com/employers/the-university-of-sydney/3171">
-                  {' '}
-                  The University of Sydney
-                  <br />
-                </a>
-                <a href="https://www.academicjobs.com/employers/australian-national-university/3739">
-                  {' '}
-                  Australian National University (ANU)
-                  <br />
-                </a>
-                <a href="https://www.academicjobs.com/employers/monash-university/3182/">
-                  {' '}
-                  Monash University
-                </a>
-              </ul>
+              {/* <figure>
+              <Image
+                width={1280}
+                height={380}
+                src="/academic-job-postings/university-of-sydney.jpg"
+                alt="Top Academic Jobs Australia"
+                className="h-[5rem]"
+              />
+            </figure> */}
               {/* <Link
                   href={'/top-10-australian-universities'}
                   className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
@@ -589,35 +605,78 @@ export default async function myPage() {
                 </Link> */}
             </div>
           </div>
-        
+
           <div className="md:w-2/3 w-full">
-            <a className="card-title md:ml-4 mt-8 text-[#3b5683]"> Top HR jobs today</a>
+            <a className="card-title md:ml-4 mt-8 text-[#3b5683]">
+              {' '}
+              Top HR jobs today
+            </a>
             <div className=" h-96 md:ml-4 overflow-y-scroll custom-scrollbar">
-
-              <SearchResults q={{ q: "hr", l: "Australia" }} /> </div>
-          </div>
-
-      </div>
-      <h2 className="underline-full">Jobs of the week</h2>
-      <JobOfTheWeek />
-
-
-
-
-
-
-
-      <div id="myUniversity" class="myUniversity">
-        <div class="widget__text-block1">
-          <div>
-            <h2 className="">
-              Academic Jobs Australia: All University Jobs
-            </h2>
-            <Australia id="section1" heading="" />
+              <SearchResults q={{ q: 'hr', l: 'Australia' }} />{' '}
+            </div>
           </div>
         </div>
       </div>
 
+      <h2 className="underline-full">Jobs of the week</h2>
+      <JobOfTheWeek />
+
+      <div id="myUniversity" class="myUniversity">
+        <div class="widget__text-block1">
+          <div>
+            <h2 className="">Academic Jobs Australia: All University Jobs</h2>
+            <Australia id="section1" heading="" />
+          </div>
+        </div>
+      </div>
+      {/* /top-10-australian-universities */}
+      <div className="md:w-1/3 w-full">
+        <div className="card bg-slate-100 shadow-xl">
+          <div className="card-body">
+            <h2 className="card-title"> Top University Employers Australia </h2>
+            <a className=" text-gray-400"> 10 Dec, 2023</a>
+          </div>
+          <figure>
+            <Image
+              width={1280}
+              height={380}
+              src="/academic-job-postings/university-of-sydney.jpg"
+              alt="Top Academic Jobs Australia"
+              className="h-[5rem]"
+            />
+          </figure>
+          <ul className=" p-4 pl-12 list-disc text-gray-500">
+            <a href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786">
+              Queensland University of Technology (QUT)
+            </a>
+            <a href="https://www.academicjobs.com/employers/bond-university/3785/">
+              {' '}
+              Bond University
+              <br />
+            </a>
+            <a href="https://www.academicjobs.com/employers/the-university-of-sydney/3171">
+              {' '}
+              The University of Sydney
+              <br />
+            </a>
+            <a href="https://www.academicjobs.com/employers/australian-national-university/3739">
+              {' '}
+              Australian National University (ANU)
+              <br />
+            </a>
+            <a href="https://www.academicjobs.com/employers/monash-university/3182/">
+              {' '}
+              Monash University
+            </a>
+          </ul>
+          {/* <Link
+                  href={'/top-10-australian-universities'}
+                  className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
+                >
+                  View List
+                </Link> */}
+        </div>
+      </div>
     </main>
   );
 }
