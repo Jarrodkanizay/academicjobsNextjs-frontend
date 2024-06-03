@@ -170,6 +170,23 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
             className="w-full input input-md"
           />
         </div>
+        <h3 className="mb-4">Indigenous Australian Heritage</h3>
+        <p>
+          We acknowledge and respect the diverse cultures and identities of
+          Indigenous Australians. If you feel comfortable, please let us know if
+          you identify as an Indigenous Australian. This information can help us
+          to provide more relevant and tailored services.
+        </p>
+        <label className="cursor-pointer label mb-8">
+          <input
+            type="checkbox"
+            defaultChecked
+            className="checkbox checkbox-warning"
+          />
+          <span className="label-text grow ml-4">
+            I identify as an Indigenous Australian.
+          </span>
+        </label>
         <div>
           <button type="submit" className="py-2 px-4 btn btn-aj">
             Save Changes
