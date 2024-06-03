@@ -19,7 +19,7 @@ export async function generateMetadata({ params, searchParams }) {
     Title = '',
     Description = '',
     Keyword = '',
-    content: content1 = ''
+    content: content1 = '',
   } = regionData.find((item) => item.Name === category) || {};
   return {
     title: Title,
@@ -45,11 +45,13 @@ export default function Page({ params, searchParams }) {
     category2 = '',
     filter2 = '',
   } = regionData.find((item) => item.Name === category) || {};
-  console.log("-------------------------------------------------------------------")
-  console.log(category2, filter2)
-  console.log(Name, category)
+  console.log(
+    '-------------------------------------------------------------------'
+  );
+  console.log(category2, filter2);
+  console.log(Name, category);
   if (category2 && filter2) {
-    Name = ''
+    Name = '';
   }
   const paras = content1.split('\n');
   let content;
@@ -76,20 +78,22 @@ export default function Page({ params, searchParams }) {
           </div>
         </div>
       </div>
-      <AdvancedSearchBar p={{
-        filter1: [
-          {
-            category: "Country",
-            filter: 'Australia',
-          },
-          {
-            category: category2,
-            filter: filter2,
-          },
-        ],
-        q: Name,
-        l: regionName,
-      }} />
+      <AdvancedSearchBar
+        p={{
+          filter1: [
+            {
+              category: 'Country',
+              filter: 'Australia',
+            },
+            {
+              category: category2,
+              filter: filter2,
+            },
+          ],
+          q: Name,
+          l: regionName,
+        }}
+      />
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">
           <div className="filters_content">
@@ -98,7 +102,7 @@ export default function Page({ params, searchParams }) {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-            <SearchResults3  />
+            <SearchResults3 />
             {/* <SearchResults1
               q={{
                 filter1: [

@@ -6,27 +6,52 @@ import TalentPool from '@/components/TalentPoolCTA';
 import JobFilter from '@/components/JobFilter';
 import SearchResults3 from '@/components/SearchResults3';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
+// import type { Metadata } from 'next';
+
 const regionName = 'Australia';
-export async function generateMetadata({ params, searchParams }) {
-  // console.log(params)
-  let { category } = params;
-  // console.log(regionData)
-  // console.log(category);
-  category = category?.replace(/-/g, ' ');
-  // console.log(category);
-  const {
-    Name = '',
-    Title = '',
-    Description = '',
-    Keyword = '',
-    content: content1 = ''
-  } = regionData.find((item) => item.Name === category) || {};
-  return {
-    title: Title,
-    description: Description,
-    keywords: Keyword,
-  };
-}
+
+const regionContent = {
+  Name: 'indigenous',
+  Title: 'Indigenous Australia Jobs',
+  Description:
+    'Do you want to work in a diverse and inclusive environment that supports Indigenous research, teaching and community engagement? If so, you have come to the right place!',
+  Keyword: 'indigenous Academic Jobs Australia, indigenous AcademicJobs',
+  content: `Seek all the best Indigenous Australian jobs at universities listed to advance your career in academics! At Academic Jobs we offer the most renowned uni jobs at the top Australian universities.
+  Discover university jobs for First Nations peoples at the most renowned Australian universities. We are dedicated to ensuring that everyone is accepted and has equal opportunities to gain the best possible employment and job opportunities. Academic Jobs is committed to promoting First Nations people’s excellence in academia and fostering a culture of respect and recognition.
+  The No.1 job board for Aboriginals and Torres Strait Islander academics in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed jobs to find the best position for you.
+  Find all the best jobs here…`,
+};
+
+const paras = regionContent.content.split('\n');
+
+export const metadata = {
+  title: {
+    absolute: regionContent.Title,
+  },
+  description: regionContent.Description,
+  keywords: regionContent.Keyword,
+};
+
+// export async function generateMetadata({ params, searchParams }) {
+//   // console.log(params)
+//   let { category } = params;
+//   // console.log(regionData)
+//   // console.log(category);
+//   category = category?.replace(/-/g, ' ');
+//   // console.log(category);
+//   const {
+//     Name = '',
+//     Title = '',
+//     Description = '',
+//     Keyword = '',
+//     content: content1 = '',
+//   } = regionData.find((item) => item.Name === category) || {};
+//   return {
+//     title: Title,
+//     description: Description,
+//     keywords: Keyword,
+//   };
+// }
 //const Lecturer = () => {
 export default function Page({ params, searchParams }) {
   // console.log('````````````````````params````````````````````');
@@ -45,13 +70,14 @@ export default function Page({ params, searchParams }) {
     category2 = '',
     filter2 = '',
   } = regionData.find((item) => item.Name === category) || {};
-  console.log("-------------------------------------------------------------------")
-  console.log(category2, filter2)
-  console.log(Name, category)
+  console.log(
+    '-------------------------------------------------------------------'
+  );
+  console.log(category2, filter2);
+  console.log(Name, category);
   if (category2 && filter2) {
-    Name = ''
+    Name = '';
   }
-  const paras = content1.split('\n');
   let content;
   //console.log(Name);
   //const { logo, company_name, website, company_description, location } = data
@@ -64,7 +90,7 @@ export default function Page({ params, searchParams }) {
       <div className="bg-slate-200 full-width">
         <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
           <h1 className="md:text-6xl font-bold md:text-right text-gray-500 pb-4 capitalize m-0">
-            {Title}
+            {regionContent.Title}
           </h1>
           <div className=" prose text-1-cols text-gray-700">
             {paras.map((para, index) => (
@@ -77,8 +103,7 @@ export default function Page({ params, searchParams }) {
         </div>
       </div>
       <JobSearchBox />
-     
-   
+
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">
           <div className="filters_content">
