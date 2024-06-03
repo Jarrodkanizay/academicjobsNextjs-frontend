@@ -6,7 +6,6 @@ import { BaseApi } from '@/lib/store/Base';
 import { useRouter } from 'next/navigation';
 import nationalities from '@/data/CountryList.json';
 
-
 const UserProfile = ({ id, updateProfile, userProfile }) => {
   const router = useRouter();
   const { data: session } = useSession();
@@ -78,8 +77,8 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    let fileName = UserProfile.avatar;
-    if (formData.image) {
+    let fileName = userProfile.avatar;
+    if (formData.image && formData.image !== userProfile.avatar) {
       const file = formData.image;
       fileName = `${file.name}`;
 
@@ -87,16 +86,18 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
       await uploadToS3(signedUrl, file);
     }
 
-    const formDataToSend = {
-      id,
-      firstName: formData.firstName,
-      lastName: formData.lastName,
-      email: formData.email,
-      address: formData.address,
-      image: fileName,
-      nationality: formData.nationality,
-      indigenous: formData.indigenous,
-    };
+    const formDataToSend = {};
+    Object.keys(formData).forEach((key) => {
+      if (formData[key] !== userProfile[key]) {
+        formDataToSend[key] = formData[key];
+      }
+    });
+
+    if (formDataToSend.image) {
+      formDataToSend.image = fileName;
+    }
+
+    formDataToSend.id = id;
 
     updateProfile(() => ({
       firstName: formData.firstName,
@@ -214,7 +215,7 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
               <input
                 type="checkbox"
                 name="indigenous"
-                checked={formData.indigenous}  // Add this line
+                checked={formData.indigenous}
                 onChange={handleCheckboxChange}
                 className="checkbox checkbox-warning"
               />
