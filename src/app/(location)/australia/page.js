@@ -184,7 +184,7 @@ export default async function myPage() {
       </h3> */}
 
       <div className=" mt-[3rem] ">
-        <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
+        <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 mb-2">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li className="">
               <Link href="/Australia/lecturer"> Lecturer</Link>
@@ -222,25 +222,39 @@ export default async function myPage() {
           </li>
         </ul>
       </div>
-      <div className=" mt-4 ">
-        {/* <ul className=" flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
-          <li>
-            <Link href="/online"> Online </Link>
-          </li>
-          <li>
-            <Link href="/jobs?l=&q=remote"> Remote</Link>
-          </li>
-          <li>
-            <Link href="/jobs?l=&q=full-time">Full-Time</Link>
-          </li>
-          <li>
-            <Link href="/jobs?l=&q=part-time"> Part-Time</Link>
-          </li>
-          <li>
-            <Link href="/jobs?l=&q=casual"> Casual</Link>
-          </li>
-        </ul> */}
-      </div>
+      <ul className="flex flex-wrap text-justify space-between gap-6 px-7 pb-4  text-[#f4a10c] mx-auto">
+        <li>
+          <Link href="/melbourne"> Melboune </Link>
+        </li>
+        <li>
+          <Link href="/sydney"> Sydney</Link>
+        </li>
+        <li>
+          <Link href="/brisbane">Brisbane</Link>
+        </li>
+        <li>
+          <Link href="/gold-coast"> Gold Coast</Link>
+        </li>
+        <li>
+          <Link href="/canberra"> Canberra</Link>
+        </li>
+        <li>
+          <Link href="/perth"> Perth</Link>
+        </li>
+        <li>
+          <Link href="/adelaide"> Adelaide</Link>
+        </li>
+        <li>
+          <Link href="/tasmania"> Tasmania</Link>
+        </li>
+        <li>
+          <Link href="/hobart"> Hobart</Link>
+        </li>
+        {/* <li>
+              <Link href="/adelaide"> Adelaide</Link>
+            </li> */}
+      </ul>
+
       {/* <a href="/the-academic-rankings">
         <img
           width={200}
@@ -287,39 +301,6 @@ export default async function myPage() {
           </div>
         </div>
 
-        <p className="font-semibold"></p>
-        <ul className="flex flex-wrap text-justify space-between gap-6 px-7 pb-4  text-[#f4a10c] mx-auto">
-          <li>
-            <Link href="/melbourne"> Melboune </Link>
-          </li>
-          <li>
-            <Link href="/sydney"> Sydney</Link>
-          </li>
-          <li>
-            <Link href="/brisbane">Brisbane</Link>
-          </li>
-          <li>
-            <Link href="/gold-coast"> Gold Coast</Link>
-          </li>
-          <li>
-            <Link href="/canberra"> Canberra</Link>
-          </li>
-          <li>
-            <Link href="/perth"> Perth</Link>
-          </li>
-          <li>
-            <Link href="/adelaide"> Adelaide</Link>
-          </li>
-          <li>
-            <Link href="/tasmania"> Tasmania</Link>
-          </li>
-          <li>
-            <Link href="/hobart"> Hobart</Link>
-          </li>
-          {/* <li>
-              <Link href="/adelaide"> Adelaide</Link>
-            </li> */}
-        </ul>
         <div className="  flex flex-wrap gap-6 px-7 pb-4 text-gray-400 mx-auto">
           <Link href="/Australia/faq"> Aus FAQ</Link>
         </div>
@@ -554,9 +535,21 @@ export default async function myPage() {
                 <h2 className="card-title m-0 underline-full">
                   Job of the Week
                 </h2>
-                <h3 className="m-0 text-lg">
-                  Professor in Indigenous Knowledges
-                </h3>
+                <div className="flex">
+                  <div>
+                    <Image
+                      src="https://www.academicjobs.com/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2F461011bcaf5b5e723e897c33f049f169_XL.jpg&w=256&q=75"
+                      width={120}
+                      height={120}
+                      alt="University of New England (UNE) Logo"
+                    />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="m-0 text-[22px]">
+                      Professor in Indigenous Knowledges
+                    </h3>
+                  </div>
+                </div>
                 <h4 className="m-0 text-sm">
                   University of New England (UNE):{' '}
                   <span className="font-normal">
@@ -566,6 +559,7 @@ export default async function myPage() {
                 <p className="text-sm m-0 text-gray-400">
                   Closes 09 June, 2024
                 </p>
+
                 <ul className=" p-4 pl-12 list-disc text-gray-500">
                   <li className="text-sm">Continuing, full-time</li>
                   <li className="text-sm">$197,560 per annum (Level E)</li>
