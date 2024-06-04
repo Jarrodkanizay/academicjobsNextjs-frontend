@@ -20,11 +20,13 @@ export async function generateMetadata({ params, searchParams }) {
     Description = '',
     Keyword = '',
     content: content1 = '',
+    Image = ''
   } = regionData.find((item) => item.Name === category) || {};
   return {
     title: Title,
     description: Description,
     keywords: Keyword,
+    image: Image
   };
 }
 
@@ -54,6 +56,7 @@ export default function Page({ params, searchParams }) {
     content: content1 = '',
     category2 = '',
     filter2 = '',
+    Image = ''
   } = regionData.find((item) => item.Name === category) || {};
   console.log(
     '-------------------------------------------------------------------'
@@ -89,7 +92,7 @@ export default function Page({ params, searchParams }) {
               ))}
         </div> */}
         <div className="absolute inset-0 z-0 bottom-0 left-0 flex justify-center w-full h-full" style={{ transform: 'translateX(25%)' }}>
-          <img src="/hr-jobs-banner-image.png" alt="Description of image" className="h-full object-cover" style={{ width: 'auto' }} />
+          <img src={Image} alt="Description of image" className="h-full object-cover" style={{ width: 'auto' }} />
         </div>
       </div>
 

@@ -9,6 +9,8 @@ export const regionData = [
   Find all the best academic faculty jobs here…`,
     category2: 'master_category_job_type',
     filter2: 'Academic / Faculty',
+    Image: '/banner-icons/hr-jobs-banner-image.png'
+
   },
   {
     Name: `lecturer`,
@@ -18,6 +20,8 @@ export const regionData = [
     content: `Seek your perfect lecturing position through Australia’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top Australian universities. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
   The No.1 job board for lecturers in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.
   Find all the best lecturing jobs here…`,
+  Image: '/banner-icons/lecturer-banner.png'
+
   },
   {
     Name: `research`,
@@ -27,6 +31,8 @@ export const regionData = [
     content: `Seek your perfect research position through Australia’s best job board! At Academic Jobs we offer the most renowned research jobs at the top Australian universities. Positions as an academic researcher will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
   The No.1 job board for researchers in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you!
   Find all the best research jobs here…`,
+  Image: '/banner-icons/research-banner.png'
+
   },
   {
     Name: `professor`,
@@ -36,6 +42,8 @@ export const regionData = [
     content: `Seek your perfect professor position through Australia’s best job board! At Academic Jobs we offer the most renowned professor jobs at the top Australian universities. Positions as an academic professor will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
   The No.1 job board for professors in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you!
   Find all the best jobs here…`,
+  Image: '/banner-icons/professor-banner.png'
+
   },
   {
     Name: `student`,
@@ -45,6 +53,8 @@ export const regionData = [
     content: `Find the perfect student job near you through Academic Jobs Australia. At Academic Jobs we offer the most exciting student jobs, for young professionals looking for some extra cash for the weekends. Our job listings offer great hourly rates, flexible hours, and access to many perks and opportunities.
   The No.1 job board for students in Australia. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
   Find all the best student jobs here…`,
+  Image: '/banner-icons/student-banner.png'
+
   },
   {
     Name: `indigenous`,
@@ -55,6 +65,8 @@ export const regionData = [
   Discover university jobs for First Nations peoples at the most renowned Australian universities. We are dedicated to ensuring that everyone is accepted and has equal opportunities to gain the best possible employment and job opportunities. Academic Jobs is committed to promoting First Nations people’s excellence in academia and fostering a culture of respect and recognition.
   The No.1 job board for Aboriginals and Torres Strait Islander academics in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed jobs to find the best position for you.
   Find all the best jobs here…`,
+  Image: '/banner-icons/hr-jobs-banner-image.png'
+
   },
   {
     Name: `hr jobs`,
@@ -66,6 +78,8 @@ export const regionData = [
   The No.1 job board for HR professionals in Australian universities. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
     category2: 'master_category_job_type',
     filter2: 'Human Resources',
+    Image: '/banner-icons/hr-jobs-banner-image.png'
+
   },
   {
     Name: `human_resources`,
@@ -74,7 +88,9 @@ export const regionData = [
     Keyword: `Human Resources Academic Jobs Australia, Human Resources AcademicJobs `,
     content: `Seek your perfect human resource position through Australia’s best job board! At Academic Jobs we offer the most renowned HR jobs at the top Australian universities. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
   The No.1 job board for HR professionals in Australian universities. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
-  },
+    Image: '/banner-icons/hr-jobs-banner-image.png'
+
+    },
   {
     Name: `executive`,
     Title: `Executive Jobs In Australia`,
@@ -85,6 +101,8 @@ export const regionData = [
   Find all the best executive jobs here…`,
     category2: 'master_category_job_type',
     filter2: 'Executive',
+    Image: '/banner-icons/hr-jobs-banner-image.png'
+
   },
   {
     Name: `admin`,
@@ -96,6 +114,8 @@ export const regionData = [
   Find all the best staff jobs here…`,
     category2: 'master_category_job_type',
     filter2: 'Staff / Administration',
+    Image: '/banner-icons/hr-jobs-banner-image.png'
+
   },
   {
     Name: `graduate`,
@@ -105,6 +125,8 @@ export const regionData = [
     content: `Seek your perfect graduate position through Australia’s best job board! At Academic Jobs we offer the most renowned graduate jobs at the top Australian universities. For young professionals looking for industry experience, on-field training, personality development and course credit, at Academic Jobs we aim to help find the most exciting opportunities for new graduates.
   The No.1 job board for graduates in Australia. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
   Find all the best graduate jobs here…`,
+    Image: '/banner-icons/graduate-banner.png'
+
   },
   {
     Name: `phd`,
@@ -116,5 +138,6 @@ export const regionData = [
   Find all the best PhD positions here…`,
     category2: 'master_category_job_type',
     filter2: 'Student / Phd Jobs',
+    Image: '/banner-icons/phd-banner.png'
   },
 ];
