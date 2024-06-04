@@ -224,7 +224,7 @@ export default async function myPage() {
       </div>
       <ul className="flex flex-wrap text-justify space-between gap-6 px-7 pb-4  text-[#f4a10c] mx-auto">
         <li>
-          <Link href="/melbourne"> Melboune </Link>
+          <Link href="/melbourne"> Melbourne </Link>
         </li>
         <li>
           <Link href="/sydney"> Sydney</Link>
@@ -315,7 +315,7 @@ export default async function myPage() {
             <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-6 py-2 px-7 pb-8">
               <div className="column">
                 <ul className="  rounded-3xl p-4 shadow-md">
-                  <li className="mb-1 mt-4 mt-4 flex">
+                  <li className="mb-1 mt-4 flex">
                     <Image
                       width={100}
                       height={100}
@@ -366,7 +366,7 @@ export default async function myPage() {
               </div>
               <div className="column">
                 <ul className=" rounded-3xl p-4 shadow-md">
-                  <li className="mb-1 mt-4 mt-4 flex">
+                  <li className="mb-1 mt-4 flex">
                     <Image
                       width={100}
                       height={100}
@@ -417,7 +417,7 @@ export default async function myPage() {
               </div>
               <div className="column">
                 <ul className=" rounded-3xl p-4 shadow-md">
-                  <li className="mb-1 mt-4 mt-4 flex">
+                  <li className="mb-1 mt-4 flex">
                     <Image
                       width={100}
                       height={100}
@@ -468,7 +468,7 @@ export default async function myPage() {
               </div>
               <div className="column">
                 <ul className=" rounded-3xl p-4 shadow-md">
-                  <li className="mb-1 mt-4 mt-4 flex">
+                  <li className="mb-1 mt-4 flex">
                     <Image
                       width={100}
                       height={100}
