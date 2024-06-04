@@ -137,7 +137,7 @@ export default function Page({
   return (
     <>
       <main>
-        <div className="w-full bg-gray-100 pt-2 ">
+        <div className="w-full  pt-2 ">
           <div className="container mx-auto px-4 md:px-6 lg:px-8">
             <div className="max-w-screen-xl mx-auto ">
               <div className={` py-4 `}>
