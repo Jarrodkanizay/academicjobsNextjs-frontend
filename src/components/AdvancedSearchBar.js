@@ -64,29 +64,7 @@ export default function Page({
     setfilterTypes1((p) => ({ ...p, AcademicPositionType: false }));
     setfilterTypes1((p) => ({ ...p, thirdcategory: false }));
     if (category == "AcademicPositionType") setfilterTypes1((p) => ({ ...p, thirdcategory: true }));
-    // switch (true) {
-    //   case filter1.some((obj) => obj.filter.includes('Executive ')):
-    //     setfilterTypes1((p) => ({ ...p, ExecutiveJobs: true }));
-    //     //break;
-    //   case filter1.some((obj) => obj.filter.includes('Human Resources')):
-    //     setfilterTypes1((p) => ({ ...p, HRJobs: true }));
-    //     //break;
-    //   case filter1.some((obj) =>
-    //     obj.filter.includes('Support /Administration')
-    //   ):
-    //     setfilterTypes1((p) => ({ ...p, AdministrationSupportJobs: true }));
-    //   //break;
-    //     console.log('Testing Academic / Faculty1', filter1);
-    //     console.log('Testing Academic / Faculty2', filter1.some((obj) => obj.filter.includes('Academic / Faculty')));
-    //   case filter1.some((obj) => obj.filter.includes('Academic / Faculty')):
-    //     console.log('Testing Academic / Faculty3', filter1);
-    //     //alert(JSON.stringify(filter1))
-    //     setfilterTypes1((p) => ({ ...p, AcademicPositionType: true }));
-    //     setfilterTypes1((p) => ({ ...p, PositionType: true }));
-    //    // break;
-    //   default:
-    //     break;
-     // }
+
      if (filter1.some((obj) => obj.filter.includes('Executive '))) {
        setfilterTypes1((p) => ({ ...p, ExecutiveJobs: true }));
      }
