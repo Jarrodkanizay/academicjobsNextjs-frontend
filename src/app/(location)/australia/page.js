@@ -224,7 +224,7 @@ export default async function myPage() {
       </div>
       <ul className="flex flex-wrap text-justify space-between gap-6 px-7 pb-4  text-[#f4a10c] mx-auto">
         <li>
-          <Link href="/melbourne"> Melboune </Link>
+          <Link href="/melbourne"> Melbourne </Link>
         </li>
         <li>
           <Link href="/sydney"> Sydney</Link>
@@ -233,20 +233,15 @@ export default async function myPage() {
           <Link href="/brisbane">Brisbane</Link>
         </li>
         <li>
+          <Link href="/perth"> Perth</Link>
+        </li>
+        <li>
           <Link href="/gold-coast"> Gold Coast</Link>
         </li>
         <li>
           <Link href="/canberra"> Canberra</Link>
         </li>
-        <li>
-          <Link href="/perth"> Perth</Link>
-        </li>
-        <li>
-          <Link href="/adelaide"> Adelaide</Link>
-        </li>
-        <li>
-          <Link href="/tasmania"> Tasmania</Link>
-        </li>
+
         <li>
           <Link href="/hobart"> Hobart</Link>
         </li>
