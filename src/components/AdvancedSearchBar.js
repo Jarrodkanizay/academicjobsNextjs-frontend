@@ -29,6 +29,7 @@ export default function Page({
     ExecutiveJobs: false,
     AdministrationSupportJobs: false,
     HRJobs: false,
+    StaffAdministration: false,
     FacultyDepartmentJobs: false,
     AcademicPositionType: false,
     PositionType: false,
@@ -94,7 +95,7 @@ export default function Page({
        setfilterTypes1((p) => ({ ...p, HRJobs: true }));
      }
 
-     if (filter1.some((obj) => obj.filter.includes('Support /Administration'))) {
+     if (filter1.some((obj) => obj.filter.includes('Staff / Administration'))) {
        setfilterTypes1((p) => ({ ...p, AdministrationSupportJobs: true }));
        console.log('Testing Academic / Faculty1', filter1);
        console.log('Testing Academic / Faculty2', filter1.some((obj) => obj.filter.includes('Academic / Faculty')));
@@ -144,7 +145,7 @@ export default function Page({
     JobType: 'Job Type',
     PositionType: 'Position Type',
     ExecutiveJobs: 'Executive Jobs',
-    AdministrationSupportJobs: 'Administration Support Jobs',
+    AdministrationSupportJobs: 'Staff/Administration Jobs',
     HRJobs: 'HR Specialty',
     FacultyDepartmentJobs: 'Faculty/Department',
     AcademicPositionType: 'Faculty/Department',
