@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <>
       <main>
-        <div className="w-full bg-gray-100 py-4 mb-4 mt-8">
+        <div className="w-full gradient-aj py-4 mb-4 mt-8">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-screen-xl mx-auto ">
               <AdvancedSearchBar forceClass="hidden md:block" type="advancedSearch" />

@@ -30,7 +30,7 @@ export default function Page({
 
   const searchParams = useSearchParams();
   const filterType1 = {
-    JobType: true,   
+    JobType: true,
     ExecutiveJobs: false,
     AdministrationSupportJobs: false,
     HRJobs: false,
@@ -45,7 +45,7 @@ export default function Page({
     Country: false,
     State: true,
     InstitutionName: true,
-    EmploymentType: true,    
+    EmploymentType: true,
     SalaryRange: true,
     OnsiteRemote: true,
   };
@@ -58,7 +58,7 @@ export default function Page({
   // const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
   // const [filter1, setfilter] = useState([{ category:'country', filter: region}]);
   const [filter2, setfilter2] = useState([]);
-   useEffect(() => {
+  useEffect(() => {
     //alert(category)
     //setCurrentMiddleCategory('')
     //setSearchJobQuery({ filter1 })
@@ -71,19 +71,19 @@ export default function Page({
     setfilterTypes1((p) => ({ ...p, thirdcategory: false }));
     if (category == "AcademicPositionType") setfilterTypes1((p) => ({ ...p, thirdcategory: true }));
 
-     if (filter1.some((obj) => obj.filter.includes('Executive '))) {
-       setfilterTypes1((p) => ({ ...p, ExecutiveJobs: true }));
-     }
+    if (filter1.some((obj) => obj.filter.includes('Executive '))) {
+      setfilterTypes1((p) => ({ ...p, ExecutiveJobs: true }));
+    }
 
     if (filter1.some((obj) => obj.filter.includes('Human Resources'))) {
       setfilterTypes1((p) => ({ ...p, HRJobs: true }));
     }
 
-     if (filter1.some((obj) => obj.filter.includes('Staff / Administration'))) {
-       setfilterTypes1((p) => ({ ...p, AdministrationSupportJobs: true }));
-       console.log('Testing Academic / Faculty1', filter1);
-       console.log('Testing Academic / Faculty2', filter1.some((obj) => obj.filter.includes('Academic / Faculty')));
-     }
+    if (filter1.some((obj) => obj.filter.includes('Staff / Administration'))) {
+      setfilterTypes1((p) => ({ ...p, AdministrationSupportJobs: true }));
+      console.log('Testing Academic / Faculty1', filter1);
+      console.log('Testing Academic / Faculty2', filter1.some((obj) => obj.filter.includes('Academic / Faculty')));
+    }
 
     if (filter1.some((obj) => obj.filter.includes('Academic / Faculty'))) {
       setfilterTypes1((p) => ({ ...p, AcademicPositionType: true }));
@@ -163,13 +163,12 @@ export default function Page({
 
   return (
     <>
-      <main>
-        <div className="w-full  pt-2 ">
-          <div className="container mx-auto px-4 md:px-6 lg:px-8">
-            <div className="max-w-screen-xl mx-auto ">
+          <div className="w-full  pt-2">
+          <div className=" mx-auto ">
+            <div className="max-w-screen-xl ">
               <div className={` py-4 `}>
                 <div className=" lg:max-w-screen-lg mx-auto ">
-                  <div className="join mx-auto w-full border border-gray-200 shadow-md flex flex-col md:flex-row">
+                  <div className="join mx-auto w-full shadow-xl flex flex-col md:flex-row">
                     <Autocomplete
                       className="input input-bordered join-item w-full md:text-left text-center rounded-xl"
                       style={{ width: '100%' }}
@@ -185,41 +184,46 @@ export default function Page({
                       }}
                     />
                   </div>
+                  {filter1.length > 0 && (
+                    <div className="md:flex md:flex-wrap pb-2 p-2">
+                      {filter1.map(({ category1, filter }, i) => (
+                        <button
+                          key={i}
+                          className="btn btn-xs bg-sky-900 text-white mr-2 "
+                          onClick={() => {
+                            const updatedFilter = filter1.filter(
+                              (_, index) => index !== i
+                            );
+                            setPage(0);
+                            setFilter1(updatedFilter);
+                            setCategory("");
+                            setCurrentMiddleCategory("");
+                            setSelectedFilters(selectedFilters.filter(item => item !== filter));
+                          }}
+                        >
+                          {`${filter} X`}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
+
               </div>
+
             </div>
           </div>
+
         </div>
-        <div className=" mx-auto max-w-5xl  flex flex-col  ">
-          {filter1.length > 0 && (
-            <div className="md:flex md:gap-4 md:flex-wrap pb-2 p-2">
-              {filter1.map(({ category1, filter }, i) => (
-                <button
-                  key={i}
-                  className="btn  btn-xs bg-blue-900 text-white "
-                  onClick={() => {
-                    const updatedFilter = filter1.filter(
-                      (_, index) => index !== i
-                    );
-                    setPage(0);
-                    setFilter1(updatedFilter);
-                    setCategory("");
-                    setCurrentMiddleCategory("");
-                    setSelectedFilters(selectedFilters.filter(item => item !== filter));
-                  }}
-                >
-                  {`${filter} X`}
-                </button>
-              ))}
-            </div>
-          )}
-          <div className="flex gap-4 flex-wrap p-2 ml-4">
+      <main>
+        <div className=" mx-auto bg-white rounded-xl shadow-xl p-4 max-w-5xl  flex flex-col  ">
+
+          <div className="flex gap-4 flex-wrap p-2 border-b border-grey">
             {Object.entries(filterTypes1).map(([filterType, showYN], i) => (
               <React.Fragment key={i}>
                 <button
                   key={i}
                   className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
-                    ? 'bg-orange-500 text-white border-orange-500'
+                    ? 'bg-amber-500 text-white border-amber-500'
                     : 'bg-white border-gray-500'
                     }
                   ${showYN ? 'block' : 'hidden'} `}
@@ -237,13 +241,13 @@ export default function Page({
               </React.Fragment>
             ))}
           </div>
-          <div className="flex gap-4 flex-wrap p-2 ml-4">
+          <div className="flex gap-4 flex-wrap p-2">
             {Object.entries(filterTypes).map(([filterType, showYN], i) => (
               <React.Fragment key={i}>
                 <button
                   key={i}
                   className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
-                    ? 'bg-orange-500 text-white border-orange-500'
+                    ? 'bg-amber-500 text-white border-amber-500'
                     : 'bg-white border-gray-500'
                     }
                   ${showYN ? 'block' : 'hidden'} `}
@@ -260,17 +264,17 @@ export default function Page({
                 </button>
               </React.Fragment>
             ))}
-            <JobKeywordSearchBlock
+            {/* <JobKeywordSearchBlock
               field="Enter a keyword"
               customKey="Enter a keyword"
               label="Enter a keyword"
               forceClass="mb-6"
               onChange={onEditorStateChange1}
-            />
+            /> */}
           </div>
           {isShowFilter && (
             <>
-              <div className="p-2 w-full max-h-64 overflow-y-scroll custom-scrollbar bg-white rounded-xl">
+              <div className="p-2 w-full max-h-64 overflow-y-scroll custom-scrollbar rounded-xl">
                 {filters?.length > 0 &&
                   filters.map(({ filter, job_count }, i) => (
                     <label key={i} className="block text-left text-gray-500 text-sm p-2">
