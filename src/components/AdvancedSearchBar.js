@@ -21,9 +21,11 @@ export default function Page({
   const [selectedFilters, setSelectedFilters] = useState([]);
 
   useEffect(() => {
+    setQ('')
     if (p?.filter1) {
       setFilter1(p.filter1)
     }
+    if (p?.q) setQ(p?.q)
   }, []);
 
   const searchParams = useSearchParams();

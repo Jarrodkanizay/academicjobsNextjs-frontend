@@ -63,8 +63,18 @@ export default function Page({ params, searchParams }) {
   );
   console.log(category2, filter2);
   console.log(Name, category);
-  if (category2 && filter2) {
+  let filter1 =[
+    {
+      category: 'Country',
+      filter: 'Australia',
+    },
+  ]
+  if (category2 !='' && filter2 !="")  {
     Name = '';
+    filter1.push({
+      category: category2,
+      filter: filter2,
+    })
   }
   const paras = content1.split('\n');
   let content;
@@ -102,16 +112,7 @@ export default function Page({ params, searchParams }) {
 
         <AdvancedSearchBar
           p={{
-            filter1: [
-              {
-                category: 'Country',
-                filter: 'Australia',
-              },
-              {
-                category: category2,
-                filter: filter2,
-              },
-            ],
+            filter1,
             q: Name,
             l: regionName,
           }} />
