@@ -18,6 +18,8 @@ export const regionData = [
     content: `Seek your perfect lecturing position through Australia’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top Australian universities. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
   The No.1 job board for lecturers in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.
   Find all the best lecturing jobs here…`,
+    category2: 'PositionType',
+    filter2: 'Lecturer/Instructor',
   },
   {
     Name: `research`,

@@ -103,18 +103,6 @@ export default function Page({ params, searchParams }) {
         <div className="listings_panel">
           <div className="listings_content">
             <SearchResults3 />
-            {/* <SearchResults1
-              q={{
-                filter1: [
-                  {
-                    category: category2,
-                    filter: filter2,
-                  },
-                ],
-                q: Name,
-                l: regionName,
-              }}
-            /> */}
           </div>
         </div>
       </section>
