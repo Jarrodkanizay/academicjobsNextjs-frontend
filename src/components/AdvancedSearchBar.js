@@ -158,7 +158,7 @@ export default function Page({
     }
 
     setSelectedFilters(updatedFilters);
-    setCurrentMiddleCategory(updatedFilters.join(", "));
+    setCurrentMiddleCategory(filter);
   };
 
   return (
