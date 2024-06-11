@@ -39,7 +39,7 @@ export default function myPage() {
               width={613}
               height={529}
               src="/blogs/become-a-university-lecturer-earn-115k/become-a-university-lecturer-earn-115k.png"
-              alt="Global academic talent pool platform interface"
+              alt="Considering becoming a university lecturer in Australia? Learn about the rewarding career path, growth opportunities, required skills, and salary expectations"
               className="w-full h-auto"
             />
           </div>
@@ -76,7 +76,7 @@ export default function myPage() {
           width={3000}
           height={2002}
           src="/blogs/become-a-university-lecturer-earn-115k/university-lecturer.jpg"
-          alt=""
+          alt="A university lecturer delivering lectures and teaching students in seminars related to their field, with primary responsibilities outlined"
           className="max-h-[380px] w-auto mr-8"
         />
         <div>
@@ -215,7 +215,7 @@ export default function myPage() {
         heading="Average Salary and Job Growth"
         para1="The average salary for a university lecturer in Australia is approximately AUD 115,000 per year. The job market is looking promising, with a projected growth rate of 16.6% over the next few years​. Entry-level lecturers can expect to earn around AUD 79,970, while those with more experience might earn upwards of AUD 140,000​."
         imagePath="/talent-pool/dynamic-talent-match-making.jpg"
-        alt=""
+        alt="University lecturer salary in Australia: average AUD 115,000 per year, with entry-level at AUD 79,970 and experienced up to AUD 140,000."
         btnLink="https://www.ozstudies.com/"
         btnText="Learn more…"
         externalLink={true}
@@ -227,7 +227,7 @@ export default function myPage() {
         para1="University lecturers in Australia typically enjoy a balanced mix of teaching, research, and administrative responsibilities. The work environment is generally stimulating, with opportunities to attend conferences, collaborate with peers, and engage in continuous learning. University lecturers enjoy academic freedom, allowing them to explore their research interests. "
         para2="However, be prepared for the challenge of managing workloads, meeting publication deadlines, and balancing teaching with research commitments. Given the demanding nature of the job, maintaining a work-life balance is crucial."
         imagePath="/blogs/become-a-university-lecturer-earn-115k/work-life-balance.jpg"
-        alt=""
+        alt="Australian university lecturers balancing teaching, research, and administrative tasks, collaborating, and attending conferences."
         imagePosition="right"
       ></HeroCard>
 
