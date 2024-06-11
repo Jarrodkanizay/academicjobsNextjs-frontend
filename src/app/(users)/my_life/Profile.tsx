@@ -18,6 +18,7 @@ import SavedItems from '@/components/profile/SavedItems';
 import DashboardMenu from '@/components/DashboardMenu';
 import TalentPool from '@/components/TalentPool';
 import TalentPoolForm from '@/components/forms/TalentPoolForm';
+import PrivacySettings from '@/components/profile/PrivacySettings';
 
 type UserProps = {
   id: number;
@@ -38,9 +39,9 @@ type UserProps = {
   savedJobs?: [];
   favorites?: [];
   logo?: string;
-  firstName?: string; 
-  lastName?: string;    
-  email?: string;      
+  firstName?: string;
+  lastName?: string;
+  email?: string;
   address?: string;
   indigenous?: boolean;
   nationality?: string;
@@ -190,7 +191,7 @@ export default function Profile({
                   }
                   alt="Avatar"
                 />
-                
+
               </div>
             </div>
             <div className="hidden md:block">
@@ -312,12 +313,19 @@ export default function Profile({
       )}
       {selectedCard === 'My Profile' && (
         <div className="gap-5 mt-6 grid grid-cols-1 md:grid-cols-2">
-          <div className="md:mb-6 rounded-2xl px-7 pt-4 pb-6 border-[1px] border-slate-500">
+          <div>
+            <div className="md:mb-6 mb-4 rounded-2xl px-7 pt-4 pb-6 border-[1px] border-slate-500">
             <UserProfile
               id={id}
               updateProfile={updateProfile}
               userProfile={profile}
             />
+            </div>
+            <div className="md:mb-6 rounded-2xl px-7 pt-4 pb-6 border-[1px] border-slate-500">
+            <PrivacySettings
+              userId={id}
+            />
+            </div>
           </div>
           <div className="rounded-2xl px-7 pt-4 pb-6 border-[1px] border-slate-500">
             <TalentPoolForm userId={id} />

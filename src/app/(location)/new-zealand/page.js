@@ -16,25 +16,29 @@ export const metadata = {
 };
 export default function Page() {
   return (
-    <div>
-      <div className="pt-[5rem] flex flex-col items-center justify-center"></div>
-      <div className=" flex flex-col items-center justify-center">
-        <Image
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-nz.png"
-          alt="AcademicJobs New Zealand Logo"
-          className=" w-[20rem] mb-[1rem] "
-          width={330}
-          height={220}
-        />
+      <><div className="full-width md:h-[400px] h-[229px] gradient-aj">
+      <div className="hero-bg-aus h-full md:bg-center">
+        <section className="wrapper md:flex ">
+          <h2 className="sentence mt-[6rem]">
+            <h2 className="sentence-aus md:mb-[-5rem] mb-[-10rem]">
+              New Zealands University Job Website
+            </h2>
+            <span className="mr-8">Find</span>{' '}
+            <span className="md:hidden block my-[-1rem]">
+              <br />
+            </span>
+            <div className="slidingVertical ">
+              <span>Opportunity</span>
+              <span>Connections</span>
+              <span>Happiness</span>
+              <span>Opportunity</span>
+              <span>Connections</span>
+            </div>
+          </h2>
+        </section>
       </div>
-
-      <JobSearchBox l="New Zealand" />
-
-      <h3 className="text-center ">
-        We Are New Zealand's University Job Website
-      </h3>
-
-      <div className=" mt-[5rem] ">
+    </div><JobSearchBox l="New Zealand" />
+    <div className="my-4">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li>
@@ -60,9 +64,7 @@ export default function Page() {
             <Link href="/New-Zealand/student/"> Student</Link>
           </li>
         </ul>
-      </div>
-
-      <div className=" mt-2 ">
+      </div><div className=" mt-2 ">
         <ul className="faculty-container flex  gap-4 items-center justify-center text-[#f4a10c] ">
           <li>
             <Link href="/online/"> Online </Link>
@@ -81,9 +83,7 @@ export default function Page() {
             <Link href="/casual"> Casual</Link>
           </li>
         </ul>
-      </div>
-
-      <div className="content-grid mx-auto py-5">
+      </div><div className="content-grid mx-auto py-5">
         <div
           id="section"
           className=" full-width py-4  full-width mb-[175px] bg-slate-200"
@@ -121,23 +121,23 @@ export default function Page() {
         </div>
 
         {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
-        <a>▼</a></div> */}
+    <a>▼</a></div> */}
         {/* <div className="bg-gradient-to-b to-white from-gray-300 rounded-t-[3rem] mt-[-1rem]"> */}
         {/* <div className=" max-w-screen-xl mx-auto">
-          <div className="blurb text-left py-8 mt-[30rem] ">
-            <h1 className="py-3 px-7 bg-[#f4a10c] text-white rounded-3xl font-bold text-2xl md:text-2xl lg:text-2xl  shadow-xl">Academic Jobs New Zealand</h1>
-            <div className="newLine mb-4">
-              <p className="font-semibold"></p>
-              <p className="font-semibold"></p> */}
+      <div className="blurb text-left py-8 mt-[30rem] ">
+        <h1 className="py-3 px-7 bg-[#f4a10c] text-white rounded-3xl font-bold text-2xl md:text-2xl lg:text-2xl  shadow-xl">Academic Jobs New Zealand</h1>
+        <div className="newLine mb-4">
+          <p className="font-semibold"></p>
+          <p className="font-semibold"></p> */}
         {/* </div> */}
         {/* <div className="newLine">
-            <p className="newLine px-7 pb-2">On Academic Jobs New Zealand, you will find all  the best academic positions at highly regarded New Zealand universities. Our academic employment platform enables academics to pursue excellent careers in New Zealand, and our universities are always on the lookout for the greatest New Zealand Academics.</p>
-              <p className="px-7 pb-8">New Zealand is a beautiful and diverse country that offers a high quality of life and a supportive academic environment. Whether you are looking for teaching, research, or leadership positions, you can find a range of academic jobs in New Zealand that match your skills and interests. You can browse through hundreds of academic jobs in New Zealand on this page, covering various fields and disciplines such as education, science, arts, business, and more.</p>
-              <p className="font-semibold"></p>
-            </div>
-          </div>
-          <div id="myUniversity" class="myUniversity">
-            <div class="widget__text-block1"> */}
+        <p className="newLine px-7 pb-2">On Academic Jobs New Zealand, you will find all  the best academic positions at highly regarded New Zealand universities. Our academic employment platform enables academics to pursue excellent careers in New Zealand, and our universities are always on the lookout for the greatest New Zealand Academics.</p>
+          <p className="px-7 pb-8">New Zealand is a beautiful and diverse country that offers a high quality of life and a supportive academic environment. Whether you are looking for teaching, research, or leadership positions, you can find a range of academic jobs in New Zealand that match your skills and interests. You can browse through hundreds of academic jobs in New Zealand on this page, covering various fields and disciplines such as education, science, arts, business, and more.</p>
+          <p className="font-semibold"></p>
+        </div>
+      </div>
+      <div id="myUniversity" class="myUniversity">
+        <div class="widget__text-block1"> */}
         <div>
           <h2 className="">
             AcademicJobs New Zealand: All University Jobs by Region
@@ -146,82 +146,81 @@ export default function Page() {
         </div>
 
         {/* <h2 className="underline-full">The University of Auckland Jobs</h2>
-        <div className="cate-group section23 ">
-          <div className="widget__text-block">
-            <div className="faculty-container  flex flex-wrap px-7 md:gap-2 py-2  pb-16 text-black">
-              <ul className=" flex flex-wrap gap-8">
-                <li className="mb-1 mt-4 mt-4 ">
-                  <a
-                    href="/jobs/auckland-lecturer/"
-                    class="scroll-smooth md:scroll-auto "
-                  >
-                    {' '}
-                    UOA Lecturing Jobs
-                  </a>
-                </li>
-                <li className="mb-1 mt-4 mt-4 ">
-                  <a
-                    href="/jobs/auckland-research/"
-                    class="scroll-smooth md:scroll-auto"
-                  >
-                    {' '}
-                    UOA Research Jobs
-                  </a>
-                </li>
+    <div className="cate-group section23 ">
+      <div className="widget__text-block">
+        <div className="faculty-container  flex flex-wrap px-7 md:gap-2 py-2  pb-16 text-black">
+          <ul className=" flex flex-wrap gap-8">
+            <li className="mb-1 mt-4 mt-4 ">
+              <a
+                href="/jobs/auckland-lecturer/"
+                class="scroll-smooth md:scroll-auto "
+              >
+                {' '}
+                UOA Lecturing Jobs
+              </a>
+            </li>
+            <li className="mb-1 mt-4 mt-4 ">
+              <a
+                href="/jobs/auckland-research/"
+                class="scroll-smooth md:scroll-auto"
+              >
+                {' '}
+                UOA Research Jobs
+              </a>
+            </li>
 
-                <li className="mb-1 mt-4 mt-4">
-                  <a
-                    href="/jobs/auckland-professor/"
-                    class="scroll-smooth md:scroll-auto"
-                  >
-                    {' '}
-                    UOA Professorial Jobs
-                  </a>
-                </li>
-                <li className="mb-1 mt-4 mt-4">
-                  <a
-                    href="/jobs/auckland-executive/"
-                    class="scroll-smooth md:scroll-auto"
-                  >
-                    {' '}
-                    UOA Executive
-                  </a>
-                </li>
+            <li className="mb-1 mt-4 mt-4">
+              <a
+                href="/jobs/auckland-professor/"
+                class="scroll-smooth md:scroll-auto"
+              >
+                {' '}
+                UOA Professorial Jobs
+              </a>
+            </li>
+            <li className="mb-1 mt-4 mt-4">
+              <a
+                href="/jobs/auckland-executive/"
+                class="scroll-smooth md:scroll-auto"
+              >
+                {' '}
+                UOA Executive
+              </a>
+            </li>
 
-                <li className="mb-1 mt-4 mt-4">
-                  {' '}
-                  <a
-                    href="/jobs/auckland-admin/"
-                    class="scroll-smooth md:scroll-auto"
-                  >
-                    {' '}
-                    UOA Administration{' '}
-                  </a>
-                </li>
-                <li className="mb-1 mt-4 mt-4">
-                  <a
-                    href="/jobs/auckland-hr/"
-                    class="scroll-smooth md:scroll-auto"
-                  >
-                    {' '}
-                    UOA Human Resources Jobs{' '}
-                  </a>
-                </li>
+            <li className="mb-1 mt-4 mt-4">
+              {' '}
+              <a
+                href="/jobs/auckland-admin/"
+                class="scroll-smooth md:scroll-auto"
+              >
+                {' '}
+                UOA Administration{' '}
+              </a>
+            </li>
+            <li className="mb-1 mt-4 mt-4">
+              <a
+                href="/jobs/auckland-hr/"
+                class="scroll-smooth md:scroll-auto"
+              >
+                {' '}
+                UOA Human Resources Jobs{' '}
+              </a>
+            </li>
 
-                <li className="mb-1 mt-4 mt-4">
-                  <a
-                    href="/jobs/auckland/"
-                    class="scroll-smooth md:scroll-auto"
-                  >
-                    {' '}
-                    All UOA Jobs{' '}
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div> */}
+            <li className="mb-1 mt-4 mt-4">
+              <a
+                href="/jobs/auckland/"
+                class="scroll-smooth md:scroll-auto"
+              >
+                {' '}
+                All UOA Jobs{' '}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </div> */}
+      </div></>
   );
 }

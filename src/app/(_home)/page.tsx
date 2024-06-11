@@ -79,7 +79,7 @@ export default async function myPage() {
         </a>
       </div>
       {/* <p className=" text-center mt-20 font-lg font-bold">Search By <span className="text-amber-500">REGION</span></p> */}
-      <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 items-stretch mb-8 text-left mt-6 max-w-screen-lg mx-auto">
+      <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-8 items-stretch mb-8 text-left mt-6 max-w-screen-lg mx-auto">
         <Link
           href="/australia"
           className="card bg-slate-100  hover:grayscale hover:underline"
@@ -94,6 +94,25 @@ export default async function myPage() {
               height={1000}
               src="/home/sydney-harbour.jpg"
               alt="Top Academic Jobs Australia"
+              className="rounded-3xl"
+            />
+          </figure>
+        </Link>
+        
+        <Link
+          href="/new-zealand"
+          className="card bg-slate-100  hover:grayscale hover:underline"
+        >
+          <h2 className="text-center text-[16px] text-gray-500 font-normal mb-0">
+            {' '}
+            New Zealand
+          </h2>
+          <figure>
+            <Image
+              width={1280}
+              height={380}
+              src="/home/new-zealand-scenic.jpg"
+              alt="How to Land Your Dream College Job: A Step-by-Step Guide"
               className="rounded-3xl"
             />
           </figure>
@@ -170,6 +189,7 @@ export default async function myPage() {
             />
           </figure>
         </Link>
+
       </ul>
       {/* Set this to false to show uni logo and welcome to message */}
       {/* {contentRegion === 'USA' ? (
