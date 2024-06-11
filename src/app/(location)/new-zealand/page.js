@@ -4,6 +4,7 @@ import Link from 'next/link';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import NZ from '@/components/topUnis/NZ';
+import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -16,18 +17,18 @@ export const metadata = {
 };
 export default function Page() {
   return (
-      <><div className="full-width md:h-[400px] h-[229px] gradient-aj">
-      <div className="hero-bg-aus h-full md:bg-center">
-        <section className="wrapper md:flex ">
-          <h2 className="sentence mt-[6rem]">
-            <h2 className="sentence-aus md:mb-[-5rem] mb-[-10rem]">
-              New Zealands University Job Website
-            </h2>
-            <span className="mr-8">Find</span>{' '}
+    <><div className="full-width md:h-[400px] h-[229px] gradient-aj">
+      <div className="hero-bg-aus h-full md:bg-center mb-4">
+        <section className="wrapper flex">
+          <h2 className="sentence ">
+            <h3 className="sentence-aus md:mb-[-5rem] mb-[-10rem] p-2">
+              New Zealand's University Job Website
+            </h3>
+            <span className="mr-8 p-2">Find</span>{' '}
             <span className="md:hidden block my-[-1rem]">
               <br />
             </span>
-            <div className="slidingVertical ">
+            <div className="slidingVertical p-2">
               <span>Opportunity</span>
               <span>Connections</span>
               <span>Happiness</span>
@@ -37,8 +38,13 @@ export default function Page() {
           </h2>
         </section>
       </div>
-    </div><JobSearchBox l="New Zealand" />
-    <div className="my-4">
+
+    </div>
+
+    <div className="w-full  max-w-[700px] flex flex-col items-top my-4 mx-auto">
+          <JobSearchBoxCountry country={"New Zealand"} />
+        </div>
+      <div className="my-4">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li>
@@ -64,7 +70,7 @@ export default function Page() {
             <Link href="/New-Zealand/student/"> Student</Link>
           </li>
         </ul>
-      </div><div className=" mt-2 ">
+      </div><div className=" mt-2 mb-4">
         <ul className="faculty-container flex  gap-4 items-center justify-center text-[#f4a10c] ">
           <li>
             <Link href="/online/"> Online </Link>
@@ -83,10 +89,11 @@ export default function Page() {
             <Link href="/casual"> Casual</Link>
           </li>
         </ul>
-      </div><div className="content-grid mx-auto py-5">
+      </div>
+      <div className="content-grid mx-auto ">
         <div
           id="section"
-          className=" full-width py-4  full-width mb-[175px] bg-slate-200"
+          className=" full-width py-4 full-width mb-4 bg-slate-200"
         >
           <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
             <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
@@ -140,7 +147,7 @@ export default function Page() {
         <div class="widget__text-block1"> */}
         <div>
           <h2 className="">
-            AcademicJobs New Zealand: All University Jobs by Region
+            New Zealand: All University Jobs by Region
           </h2>
           <NZ heading="" />
         </div>

@@ -30,6 +30,9 @@ export default function JobSearchBoxCountry({ country }) {
     reset();
     if (country == "Europe") {
        setFilter1([{ category: 'region', filter: 'Europe' }]);
+    } else if (country == "New Zealand") {
+      setFilter1([{ category: 'region', filter: 'New Zealand' }]);
+
     } else {
       setFilter1([{ category: 'Country', filter: countryMap[country] }]);
     }
