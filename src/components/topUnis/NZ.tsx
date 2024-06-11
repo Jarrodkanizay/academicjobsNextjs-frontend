@@ -27,7 +27,7 @@ const TopUnis = ({ heading }: Props) => {
 
           <Link href="/employers/waikato-university/3806/">
             <div>
-              <img className="w-34 h-32 mx-auto" src="https://academicjobs.s3.amazonaws.com/img/university-logo/academic jobs University of Waikato logo.jpeg" alt="Waikato University" />
+              <img className="w-34 h-31 mx-auto" src="https://academicjobs.s3.amazonaws.com/img/university-logo/academic jobs University of Waikato logo.jpeg" alt="Waikato University" />
             </div>
           </Link>
 

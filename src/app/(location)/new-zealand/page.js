@@ -15,6 +15,44 @@ export const metadata = {
   keywords:
     'Academic Jobs New Zealand. academic job in New Zealand, New Zealand university jobs',
 };
+
+const size = 180;
+
+const items = [
+  {
+    src: '/home/academic-faculty-positions.png',
+    alt: 'Academic Faculty Positions',
+    label: 'Faculty',
+    link: `new-zealand/faculty`,
+  },
+
+  {
+    src: '/home/academic-executive-positions.png',
+    alt: 'Academic Executive Positions',
+    label: 'Executive',
+    link: `new-zealand/executive`,
+  },
+  {
+    src: '/home/academic-human-resource-positions.png',
+    alt: 'Academic Human Resource Positions',
+    label: 'HR Jobs',
+    link: `new-zealand/hr-jobs`,
+  },
+
+  {
+    src: '/home/academic-phd-positions.png',
+    alt: 'Academic PhD Positions',
+    label: 'PhD Jobs',
+    link: `new-zealand/phd`,
+  },
+  {
+    src: '/home/academic-staff-positions.png',
+    alt: 'Academic Staff Positions',
+    label: 'Staff/Admin',
+    link: `/new-zealand/admin`,
+  },
+];
+
 export default function Page() {
   return (
     <><div className="full-width md:h-[400px] h-[229px] gradient-aj">
@@ -37,13 +75,49 @@ export default function Page() {
             </div>
           </h2>
         </section>
+        <ul className="hero-icons md:hidden flex-wrap md:gap-8 mx-auto text-center items-center justify-center mt-[-5rem] flex">
+          {items.slice(0, 3).map((item, index) => (
+            <li key={index}>
+              <Link className="grayscale hover:grayscale-0" href={item.link}>
+                <Image
+                  src={item.src}
+                  width={size}
+                  height={size}
+                  alt={item.alt}
+                />
+              </Link>
+              <Link className="mb-4" href={item.link}>
+                <p>{item.label}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center mt-[-2rem] hidden">
+          {items.map((item, index) => (
+            <li key={index}>
+              <Link className="grayscale hover:grayscale-0" href={item.link}>
+                <Image
+                  src={item.src}
+                  width={size}
+                  height={size}
+                  alt={item.alt}
+                />
+              </Link>
+              <Link className="mb-4" href={item.link}>
+                <p>{item.label}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+
       </div>
 
     </div>
 
-    <div className="w-full  max-w-[700px] flex flex-col items-top my-4 mx-auto">
-          <JobSearchBoxCountry country={"New Zealand"} />
-        </div>
+      <div className="w-full  max-w-[700px] flex flex-col p-2 items-top my-4 mx-auto mt-20">
+        <JobSearchBoxCountry country={"New Zealand"} />
+      </div>
       <div className="my-4">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
@@ -71,22 +145,32 @@ export default function Page() {
           </li>
         </ul>
       </div><div className=" mt-2 mb-4">
-        <ul className="faculty-container flex  gap-4 items-center justify-center text-[#f4a10c] ">
+        <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
+          <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
+            <li>
+              <Link href="/employers/massey-university/3810"> Massey </Link>
+            </li>
+            <li>
+              <Link href="/employers/auckland-university-of-technology/3804"> AUT</Link>
+            </li>
+            <li>
+              <Link href="/employers/the-university-of-auckland/3809">UOA</Link>
+            </li>
+            <li>
+              <Link href="/employers/waikato-university/3806"> UOW</Link>
+            </li>
+          </ul>
           <li>
-            <Link href="/online/"> Online </Link>
+            <Link href="/employers/victoria-university-of-wellington/3807"> VUW </Link>
           </li>
           <li>
-            <Link href="/remote"> Remote</Link>
-          </li>
-
-          <li>
-            <Link href="/full-time/">Full-Time</Link>
+            <Link href="/employers/university-of-otago/3805"> UOO</Link>
           </li>
           <li>
-            <Link href="/part-time"> Part-Time</Link>
+            <Link href="/employers/lincoln-university/3808">LU</Link>
           </li>
           <li>
-            <Link href="/casual"> Casual</Link>
+            <Link href="/employers/university-of-canterbury/3811"> UOC</Link>
           </li>
         </ul>
       </div>
