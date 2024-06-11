@@ -5,47 +5,40 @@ import HeroCard from '@/components/HeroCard';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: `Revolutionize Academic Hiring with Our Global Talent Pool`, //Option 1 replaces the %s in layout.tsx
-  // title: {
-  //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
-  // },
+  // title: `Become a University Lecturer in Australia: Earn $115k!`, //Option 1 replaces the %s in layout.tsx
+  title: {
+    absolute: 'Become a University Lecturer in Australia: Earn $115k plus!', //Option 2 overrides the title in layout.tsx
+  },
   description:
-    'Empower your university with Academic Jobs: a leading platform for matching top academic talent globally using innovative AI technology. Transform your talent strategy now!',
+    'Discover how to become a university lecturer in Australia and earn up to $115k! Explore the essential steps, skills, and qualifications needed to excel in this rewarding career. Learn about teaching duties, research responsibilities, and the promising job market. Ready to shape the future? Start your journey now!',
   keywords:
-    'Academic Talent Acquisition, Higher Education Recruitment Platform, University Talent Matching, College Recruitment Solutions, Global Academic Talent Pool, Academic Jobs Platform, Educational Institution Hiring, Faculty Recruitment Services, Academic Staffing Solutions, Dynamic Talent Matching for Universities, AI-Powered Academic Recruitment, Higher Ed Talent Search, Academic Professional Networking, Innovative University Hiring, Research Staff Recruitment, Academic Career Opportunities, Educational Talent Management, Higher Education Job Matching, University Faculty Recruitment, College Staff Hiring',
+    'university lecturer, university lecturer salary, university jobs, lecturer jobs',
 };
 
 export default function myPage() {
   return (
     <main className="content-grid">
+      {/* Hero */}
       <section className="custom-background full-width mb-16">
         <div className="container py-16 flex flex-col lg:flex-row gap-2">
-          <div>
-            <h1>
-              Dynamically Create Your Academic Talent Pool: Why wait for
-              candidates to come to you?
-              {/* Watch as Excellence Meets Opportunity */}
-            </h1>
-            {/* <h1>Transform Your Talent Acquisition with the Academic Jobs Talent Pool</h1> */}
-            <h2>
-              Empowering Universities & Colleges with Dynamic Talent Matching
-            </h2>
+          <div className="flex flex-col justify-center">
+            <h1>Become a University Lecturer in Australia: Earn $115k!</h1>
             <p>
-              Your Global Academic Talent Pool for Top Academics in Higher
-              Education starts here. We offer a revolutionary platform tailored
-              specifically for Universities and Colleges.
+              Thinking of becoming a university lecturer in Australia? Fantastic
+              choice! This career path is not only rewarding but also offers
+              numerous opportunities for growth and professional development.
             </p>
             <p className="pb-8">
-              In the ever-evolving landscape of higher education, finding the
-              perfect blend of talent and opportunity is paramount. Academic
-              Jobs is your premier partner in this journey!
+              Let's dive into the steps you need to take, the skills you'll
+              need, and what to expect in terms of salary and working
+              conditions.
             </p>
           </div>
           <div className="flex-shrink-0 pb-8">
             <Image
               width={613}
               height={529}
-              src="/talent-pool/create-a-strong-talent-pool.png"
+              src="/blogs/become-a-university-lecturer-earn-115k/become-a-university-lecturer-earn-115k.png"
               alt="Global academic talent pool platform interface"
               className="w-full h-auto"
             />
@@ -76,137 +69,264 @@ export default function myPage() {
           </svg>
         </div>
       </section>
-      <p className="text-2xl text-center max-w-[900px] mx-auto leading-relaxed text-gray-700 mb-24">
-        <strong className="text-aj-pink">
-          Streamline your talent acquisition process now!{' '}
-        </strong>
-        Ensure a perfect match between academic institutions and outstanding
-        professionals. Call <strong>Jarrod Kanizay</strong> on ‬
-        <a className="text-2xl link link-aj" href="tel:+61 430 017 783">
-          +61 430 017 783
-        </a>{' '}
-        to find out more.
-      </p>
-      <p>What the Academic Jobs Talent Pool can do for you…</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
-        {/* Card 1 */}
-        <Card
-          //   iconPath="/talent-pool/keyword-optimization.svg"
-          heading="Dynamic Match-Making"
-        >
-          <p>
-            Say goodbye to the one-size-fits-all approach. Our platform utilizes
-            cutting-edge technology to dynamically match candidates with
-            available positions, ensuring that you find the right talent quickly
-            and efficiently. We looked at the passive approach and created a
-            dynamic match-making process that save Human Resources time and
-            money.
-          </p>
-        </Card>
-        {/* Card 2 */}
-        <Card
-          iconPath="/icons/match-scale-indicator.svg"
-          heading="Candidate Match Score"
-        >
-          <p>
-            Our innovative Match Scale provides a clear, quantifiable measure of
-            how well a candidate fits your position. This feature allows you to
-            make informed decisions, saving time and resources in the selection
-            process.
-          </p>
-        </Card>
-        {/* Card 3 */}
-        <Card
-          //   iconPath="/talent-pool/keyword-optimization.svg"
-          heading="Partner Zone"
-          iconPath="/icons/handshake.svg"
-        >
-          <p>
-            Use your database and ours to grow your Talent Pool and take control
-            of your talent acquisition in our Partner Zone. This dedicated area
-            on our platform enables Recruiters, Universities and Colleges to
-            manage their talent pool effortlessly, creating a seamless
-            connection between your institution and prospective candidates.
-          </p>
-        </Card>
-      </div>
 
-      <h2 className="mt-28 underline-full">We just make it easy!</h2>
+      {/* Intro */}
+      <section className="flex mb-16">
+        <Image
+          width={3000}
+          height={2002}
+          src="/blogs/become-a-university-lecturer-earn-115k/university-lecturer.jpg"
+          alt=""
+          className="max-h-[380px] w-auto mr-8"
+        />
+        <div>
+          <h2 className="m-0 leading-relaxed underline-full text-aj-pink mb-8">
+            Role of a University Lecturer: Tasks and Duties
+          </h2>
+          <p>
+            Lecturer is an instructor appointed by universities and other
+            tertiary education provider to deliver lectures and teach students
+            in seminars that pertain to their particular field. Their primary
+            responsibilities will include:
+          </p>
+          <ul>
+            <li>
+              <strong>Teaching:</strong> Delivering lectures, leading seminars
+              and conducting tutorials.
+            </li>
+            <li>
+              <strong>Research:</strong> Conducting original research, including
+              your own research, publishing papers to academic publications and
+              presenting findings at academic conferences.
+            </li>
+            <li>
+              <strong>Administrative Tasks:</strong> Participating in
+              departmental and faculty meetings, curriculum revision and
+              development, academic planning, student assessments, and
+              maintaining a teaching portfolio to document teaching practices
+              and student feedback.
+            </li>
+            <li>
+              <strong>Student Support:</strong> Providing guidance and mentoring
+              students on academic and related matters.
+            </li>
+          </ul>
+        </div>
+      </section>
 
+      {/* How to */}
+      <section>
+        <h2 className="gray-blue underline-full">
+          How to Become a University Lecturer: Course and Degree Requirements
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+          {/* Card 1 */}
+          <Card
+            iconPath="none"
+            heading="1. Complete a Bachelor’s Degree"
+            h2Class="text-left w-full"
+          >
+            <p className="text-left">
+              Your journey begins with earning a bachelor degree in your field
+              of interest. For example, you might pursue a Bachelor of Computer
+              Science, which is offered by various universities with options to
+              study on campus or online, and typically takes three to four years
+              to complete.
+            </p>
+          </Card>
+
+          {/* Card 2 */}
+          <Card
+            iconPath="none"
+            heading="2. Pursue Postgraduate Studies"
+            h2Class="text-left w-full"
+          >
+            <p className="text-left">
+              Most universities will require lecturers to have a postgraduate
+              degree, such as a master’s degree at minimum, but a PhD is often
+              preferred or required, especially for permanent positions.
+            </p>
+          </Card>
+
+          {/* Card 3 */}
+          <Card
+            //   iconPath="/talent-pool/keyword-optimization.svg"
+            iconPath="none"
+            heading="3. Obtain a Graduate Certificate in Higher Education"
+            h2Class="text-left w-full"
+          >
+            <p className="text-left">
+              This qualification can be crucial for developing the skills
+              necessary for effective teaching at the university level.
+              Completing relevant courses at the postgraduate or doctorate level
+              can also be beneficial for this occupation. Developing a teaching
+              philosophy to guide your instructional methods is also essential.
+            </p>
+          </Card>
+
+          {/* Card 4 */}
+          <Card
+            //   iconPath="/talent-pool/keyword-optimization.svg"
+            iconPath="none"
+            heading="4. Gain Teaching Experience"
+            h2Class="text-left w-full"
+          >
+            <p className="text-left">
+              Practical experience, including previous teaching, is invaluable.
+              You might start as a tutor or teaching assistant during your
+              postgraduate studies to get relevant industry experience. The
+              importance of ongoing professional development to stay current in
+              the field cannot be overstated.
+            </p>
+          </Card>
+
+          {/* Card 5 */}
+          <Card
+            //   iconPath="/talent-pool/keyword-optimization.svg"
+            iconPath="none"
+            heading="5. Build a Research Portfolio"
+            h2Class="text-left w-full"
+          >
+            <p className="text-left">
+              Engage in original research and strive to get your work published
+              in reputable academic journals.
+            </p>
+          </Card>
+
+          {/* Card 6 */}
+          <Card
+            //   iconPath="/talent-pool/keyword-optimization.svg"
+            iconPath="none"
+            heading="6. Earn 115k Plus"
+            h2Class="text-left w-full"
+          >
+            <p className="text-left">
+              Start reaping the rewards of your efforts with a highly
+              prestigious job in Higher Education as an Academic Lecturer.
+            </p>
+          </Card>
+        </div>
+      </section>
+
+      {/* <h2 className="mt-28 underline-full">Average Salary and Job Growth</h2> */}
+
+      {/* Average Salary and Job Growth */}
       <HeroCard
-        heading="Transform Your Talent Acquisition Today"
-        para1="The Academic Talent Pool is more than just a platform; it's a gateway to unparalleled academic excellence. By specializing in the unique needs of higher education institutions, we offer a bespoke solution that addresses the challenges of talent acquisition in the academic sphere. Whether you're looking to fill faculty positions, staff roles, or research opportunities, our platform is equipped to connect you with the best in the field."
-        para2="Engage your Brand Ambassadors to help you find the best talent for your institution. Our platform is designed to help you find the best talent through your network and ours. We have created a platform that is easy to use and will save you time and money."
+        heading="Average Salary and Job Growth"
+        para1="The average salary for a university lecturer in Australia is approximately AUD 115,000 per year. The job market is looking promising, with a projected growth rate of 16.6% over the next few years​. Entry-level lecturers can expect to earn around AUD 79,970, while those with more experience might earn upwards of AUD 140,000​."
         imagePath="/talent-pool/dynamic-talent-match-making.jpg"
-        alt="Dynamic Talent Match Making"
-        btnLink="/academic-talent-pool"
-        btnText="Try for Yourself"
+        alt=""
+        btnLink="https://www.ozstudies.com/"
+        btnText="Learn more…"
+        externalLink={true}
       ></HeroCard>
 
+      {/* Working Conditions */}
       <HeroCard
-        heading="Join Us and Shape the Future"
-        para1="Embark on a journey of discovery and opportunity with the Academic Talent Pool. Our commitment to innovation, quality, and partnership positions us as the go-to resource for Universities and Colleges aiming to excel in talent acquisition. Let's redefine the future of academic staffing together."
-        para2="Posting a job with Academic Jobs is so easy! Give it a try now and see how we can help you find the perfect candidate for your academic institution."
-        imagePath="/talent-pool/teamwork-makes-the-dream-work.jpg"
-        alt="See how Teamwork Makes the Dream Work"
-        btnLink="/post-a-job"
-        btnText="Post a Job Now"
+        heading="Working Conditions"
+        para1="University lecturers in Australia typically enjoy a balanced mix of teaching, research, and administrative responsibilities. The work environment is generally stimulating, with opportunities to attend conferences, collaborate with peers, and engage in continuous learning. University lecturers enjoy academic freedom, allowing them to explore their research interests. "
+        para2="However, be prepared for the challenge of managing workloads, meeting publication deadlines, and balancing teaching with research commitments. Given the demanding nature of the job, maintaining a work-life balance is crucial."
+        imagePath="/blogs/become-a-university-lecturer-earn-115k/work-life-balance.jpg"
+        alt=""
         imagePosition="right"
       ></HeroCard>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
-        {/* Card 4 */}
-        <Card
-          //   iconPath="/talent-pool/keyword-optimization.svg"
-          heading="Integrated Ranking System"
-          iconPath="/icons/rank-indicator.svg"
-        >
-          <p>
-            Leverage our unique ranking system that showcases both candidates'
-            and employers' ranks. This transparency ensures that excellence is
-            recognized and rewarded, attracting top-tier talent to your
-            institution.
-          </p>
-        </Card>
-        {/* Card 5 */}
-        <Card
-          //   iconPath="/talent-pool/keyword-optimization.svg"
-          iconPath="/icons/notification-bell.svg"
-          heading="Real-Time Notifications"
-        >
-          <p>
-            Stay ahead of the curve with our tailored notification system.
-            Receive instant updates on relevant matches and opportunities,
-            ensuring you never miss out on the perfect candidate.
-          </p>
-        </Card>
-        {/* Card 6 */}
-        <Card
-          //   iconPath="/talent-pool/keyword-optimization.svg"
-          iconPath="/icons/advanced-customization.svg"
-          heading="Enhanced Profile Customization"
-        >
-          <p>
-            Elevate your institution's visibility and appeal with Enhanced
-            Profile Customization. Our platform allows Universities and Colleges
-            to create detailed, engaging profiles showcasing their unique
-            culture, values, and academic environment.
-          </p>
-        </Card>
-      </div>
-      <blockquote className="mt-16">
-        Your Global Academic Talent Pool in the Cloud attracts compatible
-        candidates, providing deeper insights into what makes your institution
-        an ideal workplace. By highlighting your strengths and opportunities,
-        you can attract candidates who align with your institution's ethos and
-        aspirations, fostering a more productive and harmonious academic
-        community.
-      </blockquote>
-      {/* <p>
-        Our Quick Job Post technology allows you to post your position in 32
-        seconds, and our Talent Pool dynamically seeks out the best candidates
-        for the role.
-      </p> */}
+      {/* Essential Skills */}
+      <section>
+        <h2 className="gray-blue underline-full">
+          Essential Skills for Success with Postgraduate and Honours Students
+        </h2>
+        <p>
+          Lecturer will need a wide range of skills and abilities to excel in
+          their position as experts in higher education:
+        </p>
+        <ul>
+          <li>
+            <strong>Communication and Presentation Skills:</strong> Being able
+            to convey complex ideas clearly and engagingly is crucial.
+            Participating in public speaking workshops can be highly beneficial
+            (
+            <a
+              href="https://aussiecareerinsights.com/becoming-a-uni-lecturer/"
+              target="_blank"
+              className="link link-aj"
+            >
+              Aussie Career Insights
+            </a>
+            ). Engaging students in lectures and seminars is essential for
+            effective learning.
+          </li>
+          <li>
+            <strong>Time Management:</strong> Balancing research, teaching, and
+            administrative duties requires excellent organizational skills.
+          </li>
+          <li>
+            <strong>Research Skills:</strong> Conducting and publishing original
+            research is a core component of the role.
+          </li>
+          <li>
+            <strong>Adaptability:</strong> The ability to adapt your teaching
+            methods to suit diverse learning styles and stay updated with the
+            latest academic trends. Employing various pedagogical strategies is
+            necessary to meet diverse learning needs.
+          </li>
+        </ul>
+      </section>
+
+      {/* Tips for growing */}
+      <section>
+        <h2 className="gray-blue underline-full mt-16">
+          Tips for growing your career
+        </h2>
+        <p className="text-slate-500 font-normal text-2xl">
+          Promotion opportunities are available as you gain experience and
+          demonstrate your capabilities. <strong>University lecturers</strong>{' '}
+          can progress to senior lecturer positions, earning as high as AUD 150k
+          a year. Here are some ways to advance your career prospects as you
+          become a lecturer.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
+          {/* Card 4 */}
+          <Card
+            //   iconPath="/talent-pool/keyword-optimization.svg"
+            heading="Write for academic publications"
+            iconPath="/icons/rank-indicator.svg"
+          >
+            <p>
+              Publishing research articles in scholarly journals can distinguish
+              you as a leader and expert in your field. Academic institutions
+              often recognise such contributions and may invite you to present
+              your findings to colleagues.
+            </p>
+          </Card>
+          {/* Card 5 */}
+          <Card
+            //   iconPath="/talent-pool/keyword-optimization.svg"
+            iconPath="/icons/notification-bell.svg"
+            heading="Secure a tenured positions"
+          >
+            <p>
+              Securing tenure can provide job security and the freedom to pursue
+              long-term research projects. As a tenured university lecturer, you
+              may also take on supervisory roles over students and faculty.
+            </p>
+          </Card>
+          {/* Card 6 */}
+          <Card
+            //   iconPath="/talent-pool/keyword-optimization.svg"
+            iconPath="/icons/advanced-customization.svg"
+            heading="Publish your own books"
+          >
+            <p>
+              Many university lecturers choose to share their extensive
+              knowledge by writing textbooks or nonfiction books. Publishing
+              your own books can further establish your expertise and contribute
+              significantly to your academic and professional reputation.
+            </p>
+          </Card>
+        </div>
+      </section>
+
       <div role="alert" className="alert shadow-lg mt-16">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -222,35 +342,41 @@ export default function myPage() {
           ></path>
         </svg>
         <div>
-          <h3 className="font-bold">Get Started Now!</h3>
+          <h3 className="font-bold">Finding Lecturer Job Openings</h3>
           <ul className="mb-4">
             <li>
-              <span className="text-green-600 text-lg">✓</span> Free Access for
-              Academic Jobs Unlimited customers
-            </li>
-            <li>
-              <span className="text-green-600 text-lg">✓</span> AI Matching
-              Technology helps find the right candidate
+              <span className="text-green-600 text-lg">✓</span> Ready to start
+              applying? Visit our{' '}
+              <a href="/lecturer" className="link link-aj">
+                university lecturer job openings in Australia
+              </a>{' '}
+              page to find current vacancies that suit your qualifications and
+              career goals.
             </li>
           </ul>
-          <p className="">
-            Unlock the potential of your institution with the Global Academic
-            Talent Pool. Call <strong>Jarrod Kanizay</strong> today on ‬
-            <a className="link link-aj" href="tel:+61 430 017 783">
-              +61 430 017 783
-            </a>{' '}
-            or{' '}
-            <Link href="/contact-us" className="link link-aj">
-              complete our form
-            </Link>{' '}
-            to learn more about how we can assist you in finding and nurturing
-            the academic leaders of tomorrow.
-          </p>
         </div>
-        <Link href="/contact-us" className="btn btn-aj">
-          Contact Us Form
+        <Link href="/lecturer" className="btn btn-aj">
+          Lecturer Jobs
         </Link>
       </div>
+
+      {/* Final Thoughts */}
+      <section>
+        <h2 className="gray-blue underline-full mt-16">Final Thoughts</h2>
+        <p className="text-slate-500 font-normal text-2xl mb-8">
+          Becoming a university lecturer in Australia is a fulfilling career
+          path that offers the chance to shape future generations while
+          continuing to grow academically and professionally. With dedication,
+          the right qualifications, and a passion for education and research,
+          you can embark on a rewarding academic career.
+        </p>
+        <p className="text-slate-500 font-normal text-2xl">
+          For more detailed information on specific qualifications, application
+          tips, and career advice, feel free to reach out or explore our other
+          resources. Good luck on your journey to becoming a{' '}
+          <strong>university lecturer</strong>!
+        </p>
+      </section>
     </main>
   );
 }

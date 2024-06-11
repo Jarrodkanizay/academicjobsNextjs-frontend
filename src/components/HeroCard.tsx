@@ -11,6 +11,7 @@ type Props = {
   children?: any;
   btnLink?: string;
   btnText?: string;
+  externalLink?: boolean;
 };
 
 const HeroCard = ({
@@ -23,6 +24,7 @@ const HeroCard = ({
   children,
   btnLink = '',
   btnText = 'Learn More',
+  externalLink = false,
 }: Props) => {
   let orderImage = '';
   let orderText = '';
@@ -52,7 +54,11 @@ const HeroCard = ({
           {children}
           {btnLink !== '' && (
             <div className="card-actions justify-end">
-              <Link href={btnLink} className="btn btn-aj">
+              <Link
+                href={btnLink}
+                className="btn btn-aj"
+                target={externalLink ? '_blank' : ''}
+              >
                 {btnText}
               </Link>
             </div>
