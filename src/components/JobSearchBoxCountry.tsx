@@ -27,8 +27,12 @@ export default function JobSearchBoxCountry({ country }) {
     });
     // router.push(`/jobs?${params.toString()}`);
           setRegion(country);
-          reset();
-          setFilter1([{ category: 'Country', filter: countryMap[country] }]);
+    reset();
+    if (country == "Europe") {
+       setFilter1([{ category: 'region', filter: 'Europe' }]);
+    } else {
+      setFilter1([{ category: 'Country', filter: countryMap[country] }]);
+    }
           router.push(`/jobs-advanced-search?l=${country}`);
   };
   return (
