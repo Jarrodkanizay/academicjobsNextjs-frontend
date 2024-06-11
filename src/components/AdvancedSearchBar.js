@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useSearchParams } from 'next/navigation';
 import { filterType } from "@/utils/data";
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
@@ -8,6 +8,7 @@ import JobKeywordSearchBlock from '@/components/JobKeywordSearchBlock';
 import { useStore } from '@/lib/store/store';
 import { regionData } from "@/data/africaPositions";
 import Autocomplete, { usePlacesWidget } from 'react-google-autocomplete';
+
 export default function Page({
   p,
   forceClass = '',
@@ -15,33 +16,40 @@ export default function Page({
   const { region, setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
   let region1
   if (region.length > 0 && region != "Global") region1 = region
-  //alert(region1)
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
+  const [selectedFilters, setSelectedFilters] = useState([]);
+
   useEffect(() => {
+    setQ('')
     if (p?.filter1) {
       setFilter1(p.filter1)
     }
+    if (p?.q) setQ(p?.q)
   }, []);
+
   const searchParams = useSearchParams();
   const filterType1 = {
-    JobType: true,   
+    JobType: true,
     ExecutiveJobs: false,
     AdministrationSupportJobs: false,
     HRJobs: false,
+    StaffAdministration: false,
     FacultyDepartmentJobs: false,
     AcademicPositionType: false,
     PositionType: false,
     thirdcategory: false,
   };
+
   const filterType = {
     Country: false,
     State: true,
     InstitutionName: true,
-    EmploymentType: true,    
+    EmploymentType: true,
     SalaryRange: true,
     OnsiteRemote: true,
   };
+
   const [filterTypes1, setfilterTypes1] = useState(filterType1);
   const [filterTypes, setfilterTypes] = useState(filterType);
   const onEditorStateChange1 = (suggestion) => {
@@ -50,11 +58,10 @@ export default function Page({
   // const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
   // const [filter1, setfilter] = useState([{ category:'country', filter: region}]);
   const [filter2, setfilter2] = useState([]);
-   useEffect(() => {
+  useEffect(() => {
     //alert(category)
     //setCurrentMiddleCategory('')
     //setSearchJobQuery({ filter1 })
-    console.log("filter1", filter1)
     setfilterTypes1((p) => ({ ...p, ExecutiveJobs: false }));
     setfilterTypes1((p) => ({ ...p, PositionType: false }));
     setfilterTypes1((p) => ({ ...p, HRJobs: false }));
@@ -63,60 +70,39 @@ export default function Page({
     setfilterTypes1((p) => ({ ...p, AcademicPositionType: false }));
     setfilterTypes1((p) => ({ ...p, thirdcategory: false }));
     if (category == "AcademicPositionType") setfilterTypes1((p) => ({ ...p, thirdcategory: true }));
-    // switch (true) {
-    //   case filter1.some((obj) => obj.filter.includes('Executive ')):
-    //     setfilterTypes1((p) => ({ ...p, ExecutiveJobs: true }));
-    //     //break;
-    //   case filter1.some((obj) => obj.filter.includes('Human Resources')):
-    //     setfilterTypes1((p) => ({ ...p, HRJobs: true }));
-    //     //break;
-    //   case filter1.some((obj) =>
-    //     obj.filter.includes('Support /Administration')
-    //   ):
-    //     setfilterTypes1((p) => ({ ...p, AdministrationSupportJobs: true }));
-    //   //break;
-    //     console.log('Testing Academic / Faculty1', filter1);
-    //     console.log('Testing Academic / Faculty2', filter1.some((obj) => obj.filter.includes('Academic / Faculty')));
-    //   case filter1.some((obj) => obj.filter.includes('Academic / Faculty')):
-    //     console.log('Testing Academic / Faculty3', filter1);
-    //     //alert(JSON.stringify(filter1))
-    //     setfilterTypes1((p) => ({ ...p, AcademicPositionType: true }));
-    //     setfilterTypes1((p) => ({ ...p, PositionType: true }));
-    //    // break;
-    //   default:
-    //     break;
-     // }
-     if (filter1.some((obj) => obj.filter.includes('Executive '))) {
-       setfilterTypes1((p) => ({ ...p, ExecutiveJobs: true }));
-     }
 
-     if (filter1.some((obj) => obj.filter.includes('Human Resources'))) {
-       setfilterTypes1((p) => ({ ...p, HRJobs: true }));
-     }
+    if (filter1.some((obj) => obj.filter.includes('Executive '))) {
+      setfilterTypes1((p) => ({ ...p, ExecutiveJobs: true }));
+    }
 
-     if (filter1.some((obj) => obj.filter.includes('Support /Administration'))) {
-       setfilterTypes1((p) => ({ ...p, AdministrationSupportJobs: true }));
-       console.log('Testing Academic / Faculty1', filter1);
-       console.log('Testing Academic / Faculty2', filter1.some((obj) => obj.filter.includes('Academic / Faculty')));
-     }
+    if (filter1.some((obj) => obj.filter.includes('Human Resources'))) {
+      setfilterTypes1((p) => ({ ...p, HRJobs: true }));
+    }
 
-     if (filter1.some((obj) => obj.filter.includes('Academic / Faculty'))) {
-       console.log('Testing Academic / Faculty3', filter1);
-       setfilterTypes1((p) => ({ ...p, AcademicPositionType: true }));
-       setfilterTypes1((p) => ({ ...p, PositionType: true }));
-     }
+    if (filter1.some((obj) => obj.filter.includes('Staff / Administration'))) {
+      setfilterTypes1((p) => ({ ...p, AdministrationSupportJobs: true }));
+      console.log('Testing Academic / Faculty1', filter1);
+      console.log('Testing Academic / Faculty2', filter1.some((obj) => obj.filter.includes('Academic / Faculty')));
+    }
+
+    if (filter1.some((obj) => obj.filter.includes('Academic / Faculty'))) {
+      setfilterTypes1((p) => ({ ...p, AcademicPositionType: true }));
+      setfilterTypes1((p) => ({ ...p, PositionType: true }));
+    }
   }, [filter1]);
+
   useEffect(() => {
-    console.log("category", category)
-    setfilter2(filter1)
+    setfilter2(filter1);
   }, [category]);
+
   useEffect(() => {
-    console.log("keywordSuggestion21", q)
+    console.log("keywordSuggestion21", q);
   }, [q]);
+
   useEffect(() => {
     if (region == 'Global') setfilterTypes((p) => ({ ...p, Country: true }));
   }, []);
-  //alert()
+
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -137,6 +123,7 @@ export default function Page({
     },
     enabled: category !== '',
   });
+
   const filterValues9 = {
     Country: 'Country',
     State: 'State',
@@ -144,7 +131,7 @@ export default function Page({
     JobType: 'Job Type',
     PositionType: 'Position Type',
     ExecutiveJobs: 'Executive Jobs',
-    AdministrationSupportJobs: 'Administration Support Jobs',
+    AdministrationSupportJobs: 'Staff/Administration Jobs',
     HRJobs: 'HR Specialty',
     FacultyDepartmentJobs: 'Faculty/Department',
     AcademicPositionType: 'Faculty/Department',
@@ -154,70 +141,89 @@ export default function Page({
     OnsiteRemote: 'Onsite/Remote',
     thirdcategory: 'thirdcategory',
   };
+
   const [isShowFilter, setIsShowFilter] = useState(false);
+
+  const handleCheckboxChange = (filter) => {
+    const isChecked = selectedFilters.includes(filter);
+    let updatedFilters;
+
+    if (isChecked) {
+      updatedFilters = selectedFilters.filter(item => item !== filter);
+      const updatedFilter1 = filter1.filter(f => f.filter !== filter);
+      setFilter1(updatedFilter1);
+    } else {
+      updatedFilters = [...selectedFilters, filter];
+      setFilter1([...filter1, { category, filter }]);
+    }
+
+    setSelectedFilters(updatedFilters);
+    setCurrentMiddleCategory(filter);
+  };
+
   return (
     <>
-      <main>
-        <div className="w-full bg-gray-100 pt-2 ">
-          <div className="container mx-auto px-4 md:px-6 lg:px-8">
-            <div className="max-w-screen-xl mx-auto ">
+          <div className="w-full  pt-2">
+          <div className=" mx-auto ">
+            <div className="max-w-screen-xl ">
               <div className={` py-4 `}>
                 <div className=" lg:max-w-screen-lg mx-auto ">
-                  <div className="join mx-auto w-full border border-gray-200 shadow-md flex flex-col md:flex-row">
+                  <div className="join mx-auto w-full shadow-xl flex flex-col md:flex-row">
                     <Autocomplete
                       className="input input-bordered join-item w-full md:text-left text-center rounded-xl"
                       style={{ width: '100%' }}
                       apiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
                       onPlaceSelected={(place) => {
-                        console.log('Selected Place:', place);
                         const lat = place.geometry.location.lat();
                         const lon = place.geometry.location.lng();
-                        console.log('lat:', lat);
-                        console.log('lon:', lon);
-                        setLon(lon)
-                        setLat(lat)
+                        setLon(lon);
+                        setLat(lat);
                       }}
                       options={{
                         types: ['geocode', 'establishment'],
                       }}
                     />
                   </div>
+                  {filter1.length > 0 && (
+                    <div className="md:flex md:flex-wrap pb-2 p-2">
+                      {filter1.map(({ category1, filter }, i) => (
+                        <button
+                          key={i}
+                          className="btn btn-xs bg-sky-900 text-white mr-2 "
+                          onClick={() => {
+                            const updatedFilter = filter1.filter(
+                              (_, index) => index !== i
+                            );
+                            setPage(0);
+                            setFilter1(updatedFilter);
+                            setCategory("");
+                            setCurrentMiddleCategory("");
+                            setSelectedFilters(selectedFilters.filter(item => item !== filter));
+                          }}
+                        >
+                          {`${filter} X`}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
+
               </div>
+
             </div>
           </div>
+
         </div>
-        <div className=" mx-auto max-w-5xl  flex flex-col  ">
-          {  // 顶层已选X  top
-            filter1.length > 0 && (
-              <div className="md:flex md:gap-4 md:flex-wrap pb-2 p-2">
-                {filter1.map(({ category1, filter }, i) => (
-                  <button
-                    key={i}
-                    className="btn  btn-xs bg-blue-900 text-white "
-                    onClick={() => {
-                      const updatedFilter = filter1.filter(
-                        (_, index) => index !== i
-                      );
-                      setPage(0);
-                      setFilter1(updatedFilter);
-                      setCategory("")
-                      setCurrentMiddleCategory("")
-                    }}
-                  >
-                    {`${filter} X`}
-                  </button>
-                ))}
-              </div>
-            )
-          }
-          <div className="flex gap-4 flex-wrap p-2 ml-4">
-            {Object.entries(filterTypes1).map(([filterType, showYN], i) => (// 中层大目录上
+      <main>
+        <div className=" mx-auto bg-white rounded-xl shadow-xl p-4 max-w-5xl  flex flex-col  ">
+
+          <div className="flex gap-4 flex-wrap p-2 border-b border-grey">
+            {Object.entries(filterTypes1).map(([filterType, showYN], i) => (
               <React.Fragment key={i}>
                 <button
                   key={i}
                   className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
-                    ? 'bg-orange-500 text-white border-orange-500'
+                    ? 'bg-amber-500 text-white border-amber-500'
                     : 'bg-white border-gray-500'
                     }
                   ${showYN ? 'block' : 'hidden'} `}
@@ -230,18 +236,18 @@ export default function Page({
                     setCategory(filterType);
                   }}
                 >
-                  {filterValues9[filterType] == 'thirdcategory' ? `${currentMiddleCategory} Specialty` : filterValues9[filterType]}
+                  {filterValues9[filterType] === 'thirdcategory' ? `${currentMiddleCategory} Specialty` : filterValues9[filterType]}
                 </button>
               </React.Fragment>
             ))}
-            </div>
-            <div className="flex gap-4 flex-wrap p-2 ml-4">
-            {Object.entries(filterTypes).map(([filterType, showYN], i) => (// 中层大目录下
+          </div>
+          <div className="flex gap-4 flex-wrap p-2">
+            {Object.entries(filterTypes).map(([filterType, showYN], i) => (
               <React.Fragment key={i}>
                 <button
                   key={i}
                   className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
-                    ? 'bg-orange-500 text-white border-orange-500'
+                    ? 'bg-amber-500 text-white border-amber-500'
                     : 'bg-white border-gray-500'
                     }
                   ${showYN ? 'block' : 'hidden'} `}
@@ -254,54 +260,33 @@ export default function Page({
                     setCategory(filterType);
                   }}
                 >
-                  {filterValues9[filterType] == 'thirdcategory' ? currentMiddleCategory : filterValues9[filterType]}
+                  {filterValues9[filterType] === 'thirdcategory' ? currentMiddleCategory : filterValues9[filterType]}
                 </button>
               </React.Fragment>
             ))}
-            <JobKeywordSearchBlock
+            {/* <JobKeywordSearchBlock
               field="Enter a keyword"
               customKey="Enter a keyword"
               label="Enter a keyword"
               forceClass="mb-6"
               onChange={onEditorStateChange1}
-            />
+            /> */}
           </div>
           {isShowFilter && (
             <>
-              <div className="p-2 w-full">
-                <select
-                  className="md:hidden block text-left text-gray-500 text-sm rounded-xl p-2 w-full mb-4"
-                  onChange={(e) => {
-                    const selectedFilter = filters.find(f => f.filter === e.target.value);
-                    setPage(0);
-                    setFilter1([...filter1, { category, filter: selectedFilter.filter }]);
-                    setCurrentMiddleCategory(selectedFilter.filter);
-                  }}
-                >
-                  {filters?.length > 0 &&
-                    filters.map(({ filter, job_count }, i) => (
-                      <option
-                        key={i}
-                        value={filter}
-                      >
-                        {`${filter ? filter : 'Others'} (${job_count})`}
-                      </option>
-                    ))}
-                </select>
-              </div>
-              <div className="hidden md:grid md:grid-cols-4 gap-1 grid-cols-2 pl-6 py-2">
-                {filters?.length > 0 && // 低层小目录b
+              <div className="p-2 w-full max-h-64 overflow-y-scroll custom-scrollbar rounded-xl">
+                {filters?.length > 0 &&
                   filters.map(({ filter, job_count }, i) => (
-                    <button
-                      key={i}
-                      className="text-left text-gray-500 text-sm truncate"
-                      onClick={() => {
-                        setPage(0);
-                        setFilter1([...filter1, { category, filter }]);
-                        //setIsShowFilter(false);
-                        setCurrentMiddleCategory(filter);
-                      }}
-                    >{`${filter ? filter : 'Others'} (${job_count})`}</button>
+                    <label key={i} className="block text-left text-gray-500 text-sm p-2">
+                      <input
+                        type="checkbox"
+                        value={filter}
+                        checked={selectedFilters.includes(filter)}
+                        onChange={() => handleCheckboxChange(filter)}
+                        className="mr-2"
+                      />
+                      {`${filter ? filter : 'Others'} (${job_count})`}
+                    </label>
                   ))}
               </div>
             </>

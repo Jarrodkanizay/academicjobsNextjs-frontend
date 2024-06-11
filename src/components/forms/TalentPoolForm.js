@@ -130,7 +130,7 @@ const TalentPoolForm = ({
         {/* Institution */}
 
         <InputBlock2
-          label= "Institution/University (Current, Last or Attended)"
+          label="Institution/University (Current, Last or Attended)"
           register={register}
           errors={errors}
           tabIndex={12}
@@ -147,7 +147,7 @@ const TalentPoolForm = ({
 
 
         <InputBlock2
-          label= "Department/Faculty"
+          label="Department/Faculty"
           register={register}
           errors={errors}
           tabIndex={13}
@@ -161,7 +161,7 @@ const TalentPoolForm = ({
 
         {/* Specialty */}
         <InputBlock2
-        label="Specialty"
+          label="Specialty"
           register={register}
           errors={errors}
           tabIndex={14}
@@ -188,6 +188,8 @@ const TalentPoolForm = ({
           required={true}
         />
 
+
+
         {/* <select
           tabIndex={16}
           {...register('country')}
@@ -206,6 +208,18 @@ const TalentPoolForm = ({
           ))}
         </select> */}
       </div>
+      <div className="form-control mt-8">
+          <label className="label cursor-pointer">
+            <input
+              tabIndex={6}
+              type="checkbox"
+              {...register("indigenousAcademic")}
+              className="checkbox checkbox-warning"
+            />
+            <span className="label-text ml-2 mr-auto">Are you an indigenous academic?</span>
+          </label>
+        </div>
+
       <h2 className=" mt-10 mb-6">{workTypeHeading}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Seeking Opportunities */}

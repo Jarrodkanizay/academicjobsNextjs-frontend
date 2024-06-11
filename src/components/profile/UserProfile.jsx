@@ -228,7 +228,7 @@ const UserProfile = ({ id, updateProfile, userProfile }) => {
                 className="checkbox checkbox-warning"
               />
               <span className="label-text grow ml-4">
-                I identify as an Indigenous Australian.
+                I am an Indigenous Australian.
               </span>
             </label>
           </>

@@ -27,6 +27,7 @@ export async function generateMetadata({ params, searchParams }: any) {
     Description = '',
     Keyword = '',
     content: content1 = '',
+    image = ''
   } = citiesData.find((item) => item.Name === category) || {};
 
   return {
@@ -60,18 +61,27 @@ export default function Page({ params, searchParams }: any) {
     Description,
     Keyword,
     content: content1,
+    image: image
   } = city;
 
+  let ausHeader;
+  let otherHeader;
   let content;
-  //console.log(Name);
-  //const { logo, company_name, website, company_description, location } = data
-  //console.log(company_description)
-  content = (
-    <div className="content-grid flex-col md:gap-2">
-      {/* <Link className="text-[#f4a10c] " href="/cities/">
-        View all Lecturer Jobs →
-      </Link> */}
 
+  ausHeader =
+    <div className="w-full" style={{ backgroundImage: `url('${image}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="hero-content flex-col lg:flex-row mx-auto items-start justify-start py-12">
+        <h1 className="md:text-6xl font-bold md:text-left text-white pb-4 capitalize m-0">
+          {Name}
+        </h1>
+        {/* <p className="px-7 mb-4 mt-1 text-white rounded-lg" style={{ backgroundColor: 'rgba(211, 211, 211, 0.3)' }}>
+      {content1}
+    </p> */}
+      </div>
+    </div>
+
+  otherHeader =
+    <div className="content-grid flex-col md:gap-2">
       <div className="bg-slate-200 full-width">
         <div className="  hero-content flex-col lg:flex-row mx-auto items-start py-12">
           <h1 className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 capitalize m-0">
@@ -80,25 +90,29 @@ export default function Page({ params, searchParams }: any) {
           <p className="px-7 mb-4 mt-1">{content1}</p>
         </div>
       </div>
-
-      <JobSearchBox l={Name} />
-
-      <section className="jobs_grid job_post_search_container">
-        <div className="filters_panel">
-          <div className="filters_content">
-            <JobFilter />
-          </div>
-        </div>
-        <div className="listings_panel">
-          <div className="listings_content">
-          <SearchResults q={{ q: '', l:Name }} />
-          </div>
-        </div>
-      </section>
-
-    
-      
     </div>
+
+  const ausCities = ["melbourne", "sydney", "brisbane", "perth", "adelaide", "canberra", "gold coast", "hobart"]
+
+  content = (
+    <>{ausCities.includes(Name) ? ausHeader : otherHeader}
+      <div className="content-grid flex-col md:gap-2">
+        <JobSearchBox l={Name} />
+
+        <section className="jobs_grid job_post_search_container">
+          <div className="filters_panel">
+            <div className="filters_content">
+              <JobFilter />
+            </div>
+          </div>
+          <div className="listings_panel">
+            <div className="listings_content">
+              <SearchResults q={{ q: '', l: Name }} />
+            </div>
+          </div>
+        </section>
+
+      </div></>
   );
   return <div className="overflow-y w-full">{content}</div>;
 }
