@@ -21,7 +21,7 @@ export default function Page({
   const [selectedFilters, setSelectedFilters] = useState([]);
 
   useEffect(() => {
-    setQ('')
+    //setQ('')
     if (p?.filter1) {
       setFilter1(p.filter1)
     }
