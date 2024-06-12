@@ -57,28 +57,33 @@ export default function Page({ params, searchParams }: any) {
 
   const {
     Name,
-    Title,
+    Title: Title,
     Description,
     Keyword,
     content: content1,
-    image: image
+    image: image,
+    alt: alt
   } = city;
 
-  let ausHeader;
-  let otherHeader;
-  let content;
+  let ausHeader, otherHeader, content;
 
   ausHeader =
-    <div className="w-full" style={{ backgroundImage: `url('${image}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="hero-content flex-col lg:flex-row mx-auto items-start justify-start py-12">
-        <h1 className="md:text-6xl font-bold md:text-left text-white pb-4 capitalize m-0">
-          {Name}
+    <div className="w-full relative">
+      <img
+        src={image}
+        alt={alt}
+        className="w-full h-full object-cover object-center absolute top-0 left-0"
+      />
+      <div className="hero-content mx-auto items-start justify-start py-12 relative z-10">
+        <h1 className="md:text-5xl font-bold md:text-left text-white pb-4 m-0">
+          {Title}
+          <p className="mt-4 text-white rounded-lg">
+            {content1}
+          </p>
         </h1>
-        {/* <p className="px-7 mb-4 mt-1 text-white rounded-lg" style={{ backgroundColor: 'rgba(211, 211, 211, 0.3)' }}>
-      {content1}
-    </p> */}
       </div>
     </div>
+
 
   otherHeader =
     <div className="content-grid flex-col md:gap-2">
