@@ -365,13 +365,25 @@ export default async function myPage() {
       </div>
       <h2 className="underline-full">Jobs of the week</h2>
       <JobOfTheWeek />
-      <Link
+      {/* <Link
         href="https://www.aheia.edu.au/events/conferences/aheia-conference-2024"
         target="_blank"
       >
         <Image
           src="/partners/aheia/aheia-conference-2024.png"
           alt="AHEIA Conference 2024"
+          width={1875}
+          height={625}
+          className="w-full"
+        />
+      </Link> */}
+      <Link
+        href="/become-a-university-lecturer-earn-115k"
+        target="_blank"
+      >
+        <Image
+          src="/become-university-lecturer.png"
+          alt="become-university-lecturer"
           width={1875}
           height={625}
           className="w-full"
