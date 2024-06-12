@@ -12,7 +12,6 @@ import { getContentRegion } from '@/actions/getContentRegion';
 import TopJobs from '@/components/TopJobs';
 import JobOfTheWeek from '@/components/JobOfTheWeek';
 
-
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
@@ -24,8 +23,6 @@ export const metadata: Metadata = {
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
 export default async function myPage() {
-
-
   const contentRegion = await getContentRegion();
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
   // let showJobElephant = true;
@@ -98,7 +95,7 @@ export default async function myPage() {
             />
           </figure>
         </Link>
-        
+
         <Link
           href="/new-zealand"
           className="card bg-slate-100  hover:grayscale hover:underline"
@@ -189,7 +186,6 @@ export default async function myPage() {
             />
           </figure>
         </Link>
-
       </ul>
       {/* Set this to false to show uni logo and welcome to message */}
       {/* {contentRegion === 'USA' ? (
@@ -369,6 +365,18 @@ export default async function myPage() {
       </div>
       <h2 className="underline-full">Jobs of the week</h2>
       <JobOfTheWeek />
+      <Link
+        href="https://www.aheia.edu.au/events/conferences/aheia-conference-2024"
+        target="_blank"
+      >
+        <Image
+          src="/partners/aheia/aheia-conference-2024.png"
+          alt="AHEIA Conference 2024"
+          width={1875}
+          height={625}
+          className="w-full"
+        />
+      </Link>
       <div className=" mx-auto mt-8 mb-8">
         <h2 className="underline-full"> Top University Employer Rankings</h2>
         <div className="bg-white flex flex-col">
@@ -376,7 +384,10 @@ export default async function myPage() {
             <div className="/academic-hub/happiness-and-academics/">
               <div className="card bg-slate-100 shadow-xl">
                 <div className="card-body">
-                  <h2 className="mb-0 card-title"> Top University Employers USA </h2>
+                  <h2 className="mb-0 card-title">
+                    {' '}
+                    Top University Employers USA{' '}
+                  </h2>
                 </div>
                 <figure>
                   <Image
@@ -423,7 +434,6 @@ export default async function myPage() {
                     {' '}
                     Columbia University
                   </a>
-
                 </ul>
                 {/* <Link
                   href={'/academic-hub/'}
@@ -501,11 +511,11 @@ export default async function myPage() {
             <div className="/academic-hub/how-to-land-your-dream-college-job-a-step-by-step-guide/">
               <div className="card bg-slate-100 shadow-xl">
                 <div className="card-body">
-                <h2 className="mb-0 card-title">
+                  <h2 className="mb-0 card-title">
                     {' '}
                     Top University Employers UK{' '}
-                  </h2>                
-                  </div>
+                  </h2>
+                </div>
                 <figure>
                   <Image
                     width={1280}
@@ -540,7 +550,7 @@ export default async function myPage() {
                     Kings College London
                     <br />
                   </a>
-                  
+
                   <a href="https://www.academicjobs.com/employers/university-college-london-ucl/3135">
                     {' '}
                     University College London (UCL)
@@ -580,9 +590,8 @@ export default async function myPage() {
       <h2 className="underline-full">Top Academic Jobs Today</h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">
-          <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-          </div>
-            <TopJobs />
+          <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7"></div>
+          <TopJobs />
         </div>
       </div>
       <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
