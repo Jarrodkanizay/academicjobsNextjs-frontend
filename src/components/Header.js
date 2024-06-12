@@ -144,7 +144,7 @@ export default function Header() {
         <nav>
           {pathname === '' ? null : (
             <Link
-              href={`/${countryMappings2[region?.toLowerCase()]?.url}`}
+              href={region ? `/${countryMappings2[region?.toLowerCase()]?.url}` : '/'}
               className="hide-mobile static-logo mr-4"
             >
               <LogoAJ width={270} height={60} />{' '}
