@@ -62,17 +62,8 @@ export default function Page() {
             <h3 className="sentence-aus md:mb-[-5rem] mb-[-10rem] p-2">
               New Zealand's University Job Website
             </h3>
-            <span className="mr-8 p-2">Find</span>{' '}
-            <span className="md:hidden block my-[-1rem]">
-              <br />
-            </span>
-            <div className="slidingVertical p-2">
-              <span>Opportunity</span>
-              <span>Connections</span>
-              <span>Happiness</span>
-              <span>Opportunity</span>
-              <span>Connections</span>
-            </div>
+            <span className="mr-8 p-2">Kia ora</span>{' '}
+
           </h2>
         </section>
         <ul className="hero-icons md:hidden flex-wrap md:gap-8 mx-auto text-center items-center justify-center mt-[-5rem] flex">

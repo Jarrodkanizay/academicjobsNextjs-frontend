@@ -8,7 +8,6 @@ import DispatchLink from '@/components/DispatchLink';
 import { useStore } from '@/lib/store/store';
 import HamburgerMenuIcon from '@/components/icons/HamburgerMenuIcon';
 import { signIn, signOut, useSession } from 'next-auth/react';
-
 import {
   countryMappings,
   countryMappings1,
@@ -17,7 +16,7 @@ import {
 import SigninButton from '@/components/SigninButton';
 
 export default function Header() {
-  // const { fetchLocation } = useLocation();
+    // const { fetchLocation } = useLocation();
   // useEffect(() => {//
   //   const getLocation = async () => {
   //     const location = await fetchLocation();
@@ -25,7 +24,37 @@ export default function Header() {
   //   };
   //   getLocation();
   // }, []);
-  const handleFormSubmit = () => {
+  const { data: session } = useSession();
+  const { region, setRegion, setFilter1, reset } = useStore();
+  const pathname = usePathname();
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
+  const ref = useRef(null);
+
+  const onMouseEnter = () => setDropdown(true);
+  const onMouseLeave = () => setDropdown(false);
+
+  useEffect(() => {
+    const countryMap = {
+      UK: 'United Kingdom',
+      Australia: 'Australia',
+      Canada: 'Canada',
+      USA: 'United States',
+    };
+    setRegion(countryMap[region]);
+    reset();
+    if (region === 'Europe') {
+      setFilter1([{ category: 'region', filter: 'Europe' }]);
+    } else if (region === 'New Zealand') {
+      setFilter1([{ category: 'region', filter: 'New Zealand' }]);
+    } else {
+      setFilter1([{ category: 'Country', filter: countryMap[region] }]);
+    }
+  }, [region, setRegion, setFilter1, reset]);
+
+  console.log(region);
+
+  const handleFormSubmit = async () => {
     if (region !== 'Global') {
       navigate('/jobs/', {
         state: { q: '', l: countryMappings1[region].searchLocation },
@@ -67,27 +96,12 @@ export default function Header() {
     }
     setIsNavOpen(false);
   };
-  const { data: session } = useSession();
-  const { region } = useStore();
-  //alert(region)
-  const pathname = usePathname();
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  // const [mobileMode, setMobileMode] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
-  const ref = useRef(null);
-  const onMouseEnter = (e) => {
-    setDropdown(true);
-  };
-  const onMouseLeave = () => {
-    setDropdown(false);
-  };
-  useEffect(() => {
-    setIsNavOpen(isNavOpen);
-  }, [isNavOpen]);
+
   const handleLogoutMobile = async () => {
     setIsNavOpen(false);
     await signOut({ callbackUrl: '/' });
   };
+
   return (
     <>
       <div className="hamburger-wrapper">
@@ -132,7 +146,7 @@ export default function Header() {
             </Link>
           )}
           <NavItem
-            url={`/${countryMappings2[region?.toLowerCase()]?.url}/jobs`}
+            url={`/jobs-advanced-search?l=${countryMappings2[region?.toLowerCase()]?.url}`}
             icon="/dotted-arrow.svg"
             navLink="Seek Jobs"
             forceClass="border-b hover:border-amber-500" //this is optional
