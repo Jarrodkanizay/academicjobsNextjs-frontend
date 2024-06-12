@@ -27,7 +27,6 @@ export default function JobSearchBoxCountry({ country }) {
     });
     // router.push(`/jobs?${params.toString()}`);
     setRegion(country);
-    reset();
     if (country == 'Europe') {
       setFilter1([{ category: 'region', filter: 'Europe' }]);
     } else if (country == 'New Zealand') {

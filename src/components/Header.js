@@ -14,9 +14,10 @@ import {
   countryMappings2,
 } from '@/lib/data/data';
 import SigninButton from '@/components/SigninButton';
+import { setFilter } from '@/app/store/postsSlice';
 
 export default function Header() {
-    // const { fetchLocation } = useLocation();
+  // const { fetchLocation } = useLocation();
   // useEffect(() => {//
   //   const getLocation = async () => {
   //     const location = await fetchLocation();
@@ -25,7 +26,7 @@ export default function Header() {
   //   getLocation();
   // }, []);
   const { data: session } = useSession();
-  const { region, setRegion, setFilter1, reset } = useStore();
+  const { region, setRegion, setFilter1 } = useStore();
   const pathname = usePathname();
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -36,23 +37,27 @@ export default function Header() {
 
   useEffect(() => {
     const countryMap = {
-      UK: 'United Kingdom',
-      Australia: 'Australia',
-      Canada: 'Canada',
-      USA: 'United States',
+      'United Kingdom': 'UK',
+      'Australia': 'Australia',
+      'Canada': 'Canada',
+      'United States': 'USA',
     };
-    setRegion(countryMap[region]);
-    reset();
+
+    const mappedRegion = countryMap[region];
+    if (mappedRegion) {
+      setRegion(mappedRegion);
+    }
+
+
     if (region === 'Europe') {
       setFilter1([{ category: 'region', filter: 'Europe' }]);
     } else if (region === 'New Zealand') {
       setFilter1([{ category: 'region', filter: 'New Zealand' }]);
-    } else {
-      setFilter1([{ category: 'Country', filter: countryMap[region] }]);
+    } else if (mappedRegion) {
+      setFilter1([{ category: 'Country', filter: region }]);
     }
-  }, [region, setRegion, setFilter1, reset]);
+  }, [region, setRegion, setFilter1]);
 
-  console.log(region);
 
   const handleFormSubmit = async () => {
     if (region !== 'Global') {
@@ -146,7 +151,7 @@ export default function Header() {
             </Link>
           )}
           <NavItem
-            url={`/jobs-advanced-search?l=${countryMappings2[region?.toLowerCase()]?.url}`}
+            url={region ? `/jobs-advanced-search?l=${countryMappings2[region?.toLowerCase()]?.url}` : '/jobs-advanced-search'}
             icon="/dotted-arrow.svg"
             navLink="Seek Jobs"
             forceClass="border-b hover:border-amber-500" //this is optional
