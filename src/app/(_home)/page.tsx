@@ -46,7 +46,7 @@ export default async function myPage() {
       <div className="md:mt-12 mt-4">
         <JobCategoryAndLocationLinks />
       </div>
-      <div className="flex mx-auto gap-6">
+      {/* <div className="flex mx-auto gap-6">
         <a href="/academic-talent-pool">
           <Image
             width={100}
@@ -74,7 +74,7 @@ export default async function myPage() {
             alt="AcademicJobs Job Elephant Client Center"
           />
         </a>
-      </div>
+      </div> */}
       {/* <p className=" text-center mt-20 font-lg font-bold">Search By <span className="text-amber-500">REGION</span></p> */}
       <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-8 items-stretch mb-8 text-left mt-6 max-w-screen-lg mx-auto">
         <Link
