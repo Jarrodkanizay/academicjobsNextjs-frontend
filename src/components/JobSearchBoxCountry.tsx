@@ -9,7 +9,8 @@ export default function JobSearchBoxCountry({ country }) {
     Canada: 'Canada',
     USA: 'United States',
   };
-  const { setRegion, setFilter1, reset } = useStore();
+  const { setQ, q, setRegion, setFilter1, reset } = useStore();
+
   useEffect(() => {
     setRegion(countryMap[country]);
   }, []);
@@ -27,6 +28,12 @@ export default function JobSearchBoxCountry({ country }) {
     });
     // router.push(`/jobs?${params.toString()}`);
     setRegion(country);
+    reset();
+         if (keyWordRef.current && keyWordRef.current.value.trim()) {
+                   setQ(keyWordRef.current.value.trim());
+         } else {
+           setQ('');
+         }
     if (country == 'Europe') {
       setFilter1([{ category: 'region', filter: 'Europe' }]);
     } else if (country == 'New Zealand') {
@@ -68,6 +75,12 @@ export default function JobSearchBoxCountry({ country }) {
           });
           setRegion('Global');
           reset();
+               if (keyWordRef.current && keyWordRef.current.value.trim()) {
+            
+                 setQ(keyWordRef.current.value.trim());
+               } else {
+                 setQ('');
+               }
           setFilter1([]);
           router.push(`/jobs-advanced-search`);
         }}
