@@ -13,17 +13,14 @@ import JobFilter from '@/components/JobFilter';
 import SearchLightbulbIcon from '@/components/icons/SearchLightbulbIcon';
 import SearchListResultsLoader from '@/components/loaders/SearchListResultsLoader';
 import { useStore } from '@/lib/store/store';
-
 export default function SearchResults2({
-
   filterOff = false,
   searchMessage = 'Jobs Found',
 }) {
-  console.log('==============SearchResults==================');
   const [page, setPage] = useState(0);
-
   const { q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
-
+  console.log('==============SearchResults2222222', q);
+  //alert(q);
   const {
     isPending,
     isError,
@@ -40,7 +37,8 @@ export default function SearchResults2({
       const response = await BaseApi.post('/jobs', {
         currentMiddleCategory,
         category,
-        filter1, page, q, l, lon, lat, });
+        filter1, page, q, l, lon, lat,
+      });
       console.log(response.data);
       console.log('response.data.data', response.data.data);
       return response.data.data;
@@ -61,13 +59,13 @@ export default function SearchResults2({
     queryKey: ['qty', currentMiddleCategory,
       category,
       filter1, page, q, l, lon, lat,
-     ],
+    ],
     queryFn: async () => {
       const response = await BaseApi.post('/jobQty', {
         currentMiddleCategory,
         category,
-        filter1, page ,q, l, lon, lat,
-});
+        filter1, page, q, l, lon, lat,
+      });
       console.log(response.data);
       console.log('response.data.data', response.data.data);
       return response.data.data;
