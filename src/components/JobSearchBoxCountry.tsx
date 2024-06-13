@@ -28,7 +28,7 @@ export default function JobSearchBoxCountry({ country }) {
     });
     // router.push(`/jobs?${params.toString()}`);
     setRegion(country);
-    reset();
+    // reset();
          if (keyWordRef.current && keyWordRef.current.value.trim()) {
                    setQ(keyWordRef.current.value.trim());
          } else {

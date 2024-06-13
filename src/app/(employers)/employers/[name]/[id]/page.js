@@ -193,9 +193,9 @@ const Employer = async ({ params }) => {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-            <div className="search_panel">
+            {/* <div className="search_panel">
               <JobSearchBox2 />
-            </div>
+            </div> */}
             <SearchResults q={{ employer_id: id || 0 }} filterOff={true} />
           </div>
         </div>

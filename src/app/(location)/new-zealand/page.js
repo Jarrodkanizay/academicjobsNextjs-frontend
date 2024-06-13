@@ -56,7 +56,7 @@ const items = [
 export default function Page() {
   return (
     <><div className="full-width md:h-[400px] h-[229px] gradient-aj">
-      <div className="hero-bg-aus h-full md:bg-center mb-4">
+      <div className="hero-bg-nz h-full md:bg-center mb-4">
         <section className="wrapper flex">
           <h2 className="sentence ">
             <h3 className="sentence-aus md:mb-[-5rem] mb-[-10rem] p-2">
