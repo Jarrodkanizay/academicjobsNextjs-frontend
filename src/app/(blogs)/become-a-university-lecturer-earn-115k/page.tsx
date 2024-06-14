@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Card from '@/components/Card';
 import HeroCard from '@/components/HeroCard';
 import type { Metadata } from 'next';
+import SearchResults2 from '@/components/SearchResults3';
 
 export const metadata: Metadata = {
   // title: `Become a University Lecturer in Australia: Earn $115k!`, //Option 1 replaces the %s in layout.tsx
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     absolute: 'Become a University Lecturer in Australia: Earn $115k plus!', //Option 2 overrides the title in layout.tsx
   },
   description:
-    'Discover how to become a university lecturer in Australia and earn up to $115k! Explore the essential steps, skills, and qualifications needed to excel in this rewarding career. Learn about teaching duties, research responsibilities, and the promising job market. Ready to shape the future? Start your journey now!',
+    'How to become a university lecturer in Australia: Earn up to 150k. 1. Complete a bachelor degree 2. Pursue postgraduate studies 3. Gain teaching experience.',
   keywords:
     'university lecturer, university lecturer salary, university jobs, lecturer jobs',
 };
@@ -117,279 +118,296 @@ export default function myPage() {
         </div>
       </section>
 
-      {/* How to */}
-      <section>
-        <h2 className="gray-blue underline-full">
-          How to Become a University Lecturer: Course and Degree Requirements
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          {/* Card 1 */}
-          <Card
-            iconPath="none"
-            heading="1. Complete a Bachelor’s Degree"
-            h2Class="text-left w-full"
-          >
-            <p className="text-left">
-              Your journey begins with earning a bachelor degree in your field
-              of interest. For example, you might pursue a Bachelor of Computer
-              Science, which is offered by various universities with options to
-              study on campus or online, and typically takes three to four years
-              to complete.
+      <div className="lg:flex gap-10">
+        <div className="grow mb-16">
+          {/* How to */}
+          <section>
+            <h2 className="gray-blue underline-full">
+              How to Become a University Lecturer: Course and Degree
+              Requirements
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+              {/* Card 1 */}
+              <Card
+                iconPath="none"
+                heading="1. Complete a Bachelor’s Degree"
+                h2Class="text-left w-full"
+              >
+                <p className="text-left">
+                  Your journey begins with earning a bachelor degree in your
+                  field of interest. For example, you might pursue a Bachelor of
+                  Computer Science, which is offered by various universities
+                  with options to study on campus or online, and typically takes
+                  three to four years to complete.
+                </p>
+              </Card>
+
+              {/* Card 2 */}
+              <Card
+                iconPath="none"
+                heading="2. Pursue Postgraduate Studies"
+                h2Class="text-left w-full"
+              >
+                <p className="text-left">
+                  Most universities will require lecturers to have a
+                  postgraduate degree, such as a master’s degree at minimum, but
+                  a PhD is often preferred or required, especially for permanent
+                  positions.
+                </p>
+              </Card>
+
+              {/* Card 3 */}
+              <Card
+                //   iconPath="/talent-pool/keyword-optimization.svg"
+                iconPath="none"
+                heading="3. Obtain a Graduate Certificate in Higher Education"
+                h2Class="text-left w-full"
+              >
+                <p className="text-left">
+                  This qualification can be crucial for developing the skills
+                  necessary for effective teaching at the university level.
+                  Completing relevant courses at the postgraduate or doctorate
+                  level can also be beneficial for this occupation. Developing a
+                  teaching philosophy to guide your instructional methods is
+                  also essential.
+                </p>
+              </Card>
+
+              {/* Card 4 */}
+              <Card
+                //   iconPath="/talent-pool/keyword-optimization.svg"
+                iconPath="none"
+                heading="4. Gain Teaching Experience"
+                h2Class="text-left w-full"
+              >
+                <p className="text-left">
+                  Practical experience, including previous teaching, is
+                  invaluable. You might start as a tutor or teaching assistant
+                  during your postgraduate studies to get relevant industry
+                  experience. The importance of ongoing professional development
+                  to stay current in the field cannot be overstated.
+                </p>
+              </Card>
+
+              {/* Card 5 */}
+              <Card
+                //   iconPath="/talent-pool/keyword-optimization.svg"
+                iconPath="none"
+                heading="5. Build a Research Portfolio"
+                h2Class="text-left w-full"
+              >
+                <p className="text-left">
+                  Engage in original research and strive to get your work
+                  published in reputable academic journals.
+                </p>
+              </Card>
+
+              {/* Card 6 */}
+              <Card
+                //   iconPath="/talent-pool/keyword-optimization.svg"
+                iconPath="none"
+                heading="6. Earn 115k Plus"
+                h2Class="text-left w-full"
+              >
+                <p className="text-left">
+                  Start reaping the rewards of your efforts with a highly
+                  prestigious job in Higher Education as an Academic Lecturer.
+                </p>
+              </Card>
+            </div>
+          </section>
+
+          {/* <h2 className="mt-28 underline-full">Average Salary and Job Growth</h2> */}
+          <section className="my-16">
+            <p>
+              Are you ready to become a university lecturer in Australia?{' '}
+              <Link href="/lecturer" className="link link-aj">
+                Look for Lecturer Jobs here!
+              </Link>
             </p>
-          </Card>
+          </section>
 
-          {/* Card 2 */}
-          <Card
-            iconPath="none"
-            heading="2. Pursue Postgraduate Studies"
-            h2Class="text-left w-full"
-          >
-            <p className="text-left">
-              Most universities will require lecturers to have a postgraduate
-              degree, such as a master’s degree at minimum, but a PhD is often
-              preferred or required, especially for permanent positions.
+          {/* Average Salary and Job Growth */}
+          <HeroCard
+            heading="Average Salary and Job Growth"
+            para1="The average salary for a university lecturer in Australia is approximately AUD 115,000 per year. The job market is looking promising, with a projected growth rate of 16.6% over the next few years​. Entry-level lecturers can expect to earn around AUD 79,970, while those with more experience might earn upwards of AUD 140,000​."
+            imagePath="/talent-pool/dynamic-talent-match-making.jpg"
+            alt="University lecturer salary in Australia: average AUD 115,000 per year, with entry-level at AUD 79,970 and experienced up to AUD 140,000."
+            btnLink="https://www.ozstudies.com/"
+            btnText="Learn more…"
+            externalLink={true}
+          ></HeroCard>
+
+          {/* Working Conditions */}
+          <HeroCard
+            heading="Working Conditions"
+            para1="University lecturers in Australia typically enjoy a balanced mix of teaching, research, and administrative responsibilities. The work environment is generally stimulating, with opportunities to attend conferences, collaborate with peers, and engage in continuous learning. University lecturers enjoy academic freedom, allowing them to explore their research interests. "
+            para2="However, be prepared for the challenge of managing workloads, meeting publication deadlines, and balancing teaching with research commitments. Given the demanding nature of the job, maintaining a work-life balance is crucial."
+            imagePath="/blogs/become-a-university-lecturer-earn-115k/work-life-balance.jpg"
+            alt="Australian university lecturers balancing teaching, research, and administrative tasks, collaborating, and attending conferences."
+            imagePosition="right"
+            btnLink="/lecturer"
+            btnText="View Lecturer Jobs"
+          ></HeroCard>
+
+          {/* Essential Skills */}
+          <section>
+            <h2 className="gray-blue underline-full">
+              Essential Skills for Success with Postgraduate and Honours
+              Students
+            </h2>
+            <p>
+              Lecturer will need a wide range of skills and abilities to excel
+              in their position as experts in higher education:
             </p>
-          </Card>
+            <ul>
+              <li>
+                <strong>Communication and Presentation Skills:</strong> Being
+                able to convey complex ideas clearly and engagingly is crucial.
+                Participating in public speaking workshops can be highly
+                beneficial (
+                <a
+                  href="https://aussiecareerinsights.com/becoming-a-uni-lecturer/"
+                  target="_blank"
+                  className="link link-aj"
+                >
+                  Aussie Career Insights
+                </a>
+                ). Engaging students in lectures and seminars is essential for
+                effective learning.
+              </li>
+              <li>
+                <strong>Time Management:</strong> Balancing research, teaching,
+                and administrative duties requires excellent organizational
+                skills.
+              </li>
+              <li>
+                <strong>Research Skills:</strong> Conducting and publishing
+                original research is a core component of the role.
+              </li>
+              <li>
+                <strong>Adaptability:</strong> The ability to adapt your
+                teaching methods to suit diverse learning styles and stay
+                updated with the latest academic trends. Employing various
+                pedagogical strategies is necessary to meet diverse learning
+                needs.
+              </li>
+            </ul>
+          </section>
 
-          {/* Card 3 */}
-          <Card
-            //   iconPath="/talent-pool/keyword-optimization.svg"
-            iconPath="none"
-            heading="3. Obtain a Graduate Certificate in Higher Education"
-            h2Class="text-left w-full"
-          >
-            <p className="text-left">
-              This qualification can be crucial for developing the skills
-              necessary for effective teaching at the university level.
-              Completing relevant courses at the postgraduate or doctorate level
-              can also be beneficial for this occupation. Developing a teaching
-              philosophy to guide your instructional methods is also essential.
+          {/* Tips for growing */}
+          <section>
+            <h2 className="gray-blue underline-full mt-16">
+              Tips for growing your career
+            </h2>
+            <p className="text-slate-500 font-normal text-2xl">
+              Promotion opportunities are available as you gain experience and
+              demonstrate your capabilities.{' '}
+              <strong>University lecturers</strong> can progress to senior
+              lecturer positions, earning as high as AUD 150k a year. Here are
+              some ways to advance your career prospects as you become a
+              lecturer.
             </p>
-          </Card>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
+              {/* Card 4 */}
+              <Card
+                //   iconPath="/talent-pool/keyword-optimization.svg"
+                heading="Write for academic publications"
+                iconPath="/icons/rank-indicator.svg"
+              >
+                <p>
+                  Publishing research articles in scholarly journals can
+                  distinguish you as a leader and expert in your field. Academic
+                  institutions often recognise such contributions and may invite
+                  you to present your findings to colleagues.
+                </p>
+              </Card>
+              {/* Card 5 */}
+              <Card
+                //   iconPath="/talent-pool/keyword-optimization.svg"
+                iconPath="/icons/notification-bell.svg"
+                heading="Secure a tenured positions"
+              >
+                <p>
+                  Securing tenure can provide job security and the freedom to
+                  pursue long-term research projects. As a tenured university
+                  lecturer, you may also take on supervisory roles over students
+                  and faculty.
+                </p>
+              </Card>
+              {/* Card 6 */}
+              <Card
+                //   iconPath="/talent-pool/keyword-optimization.svg"
+                iconPath="/icons/advanced-customization.svg"
+                heading="Publish your own books"
+              >
+                <p>
+                  Many university lecturers choose to share their extensive
+                  knowledge by writing textbooks or nonfiction books. Publishing
+                  your own books can further establish your expertise and
+                  contribute significantly to your academic and professional
+                  reputation.
+                </p>
+              </Card>
+            </div>
+          </section>
 
-          {/* Card 4 */}
-          <Card
-            //   iconPath="/talent-pool/keyword-optimization.svg"
-            iconPath="none"
-            heading="4. Gain Teaching Experience"
-            h2Class="text-left w-full"
-          >
-            <p className="text-left">
-              Practical experience, including previous teaching, is invaluable.
-              You might start as a tutor or teaching assistant during your
-              postgraduate studies to get relevant industry experience. The
-              importance of ongoing professional development to stay current in
-              the field cannot be overstated.
-            </p>
-          </Card>
-
-          {/* Card 5 */}
-          <Card
-            //   iconPath="/talent-pool/keyword-optimization.svg"
-            iconPath="none"
-            heading="5. Build a Research Portfolio"
-            h2Class="text-left w-full"
-          >
-            <p className="text-left">
-              Engage in original research and strive to get your work published
-              in reputable academic journals.
-            </p>
-          </Card>
-
-          {/* Card 6 */}
-          <Card
-            //   iconPath="/talent-pool/keyword-optimization.svg"
-            iconPath="none"
-            heading="6. Earn 115k Plus"
-            h2Class="text-left w-full"
-          >
-            <p className="text-left">
-              Start reaping the rewards of your efforts with a highly
-              prestigious job in Higher Education as an Academic Lecturer.
-            </p>
-          </Card>
-        </div>
-      </section>
-
-      {/* <h2 className="mt-28 underline-full">Average Salary and Job Growth</h2> */}
-      <section className="my-16">
-        <p>
-          Are you ready to become a university lecturer in Australia?{' '}
-          <Link href="/lecturer" className="link link-aj">
-            Look for Lecturer Jobs here!
-          </Link>
-        </p>
-      </section>
-
-      {/* Average Salary and Job Growth */}
-      <HeroCard
-        heading="Average Salary and Job Growth"
-        para1="The average salary for a university lecturer in Australia is approximately AUD 115,000 per year. The job market is looking promising, with a projected growth rate of 16.6% over the next few years​. Entry-level lecturers can expect to earn around AUD 79,970, while those with more experience might earn upwards of AUD 140,000​."
-        imagePath="/talent-pool/dynamic-talent-match-making.jpg"
-        alt="University lecturer salary in Australia: average AUD 115,000 per year, with entry-level at AUD 79,970 and experienced up to AUD 140,000."
-        btnLink="https://www.ozstudies.com/"
-        btnText="Learn more…"
-        externalLink={true}
-      ></HeroCard>
-
-      {/* Working Conditions */}
-      <HeroCard
-        heading="Working Conditions"
-        para1="University lecturers in Australia typically enjoy a balanced mix of teaching, research, and administrative responsibilities. The work environment is generally stimulating, with opportunities to attend conferences, collaborate with peers, and engage in continuous learning. University lecturers enjoy academic freedom, allowing them to explore their research interests. "
-        para2="However, be prepared for the challenge of managing workloads, meeting publication deadlines, and balancing teaching with research commitments. Given the demanding nature of the job, maintaining a work-life balance is crucial."
-        imagePath="/blogs/become-a-university-lecturer-earn-115k/work-life-balance.jpg"
-        alt="Australian university lecturers balancing teaching, research, and administrative tasks, collaborating, and attending conferences."
-        imagePosition="right"
-        btnLink="/lecturer"
-        btnText="View Lecturer Jobs"
-      ></HeroCard>
-
-      {/* Essential Skills */}
-      <section>
-        <h2 className="gray-blue underline-full">
-          Essential Skills for Success with Postgraduate and Honours Students
-        </h2>
-        <p>
-          Lecturer will need a wide range of skills and abilities to excel in
-          their position as experts in higher education:
-        </p>
-        <ul>
-          <li>
-            <strong>Communication and Presentation Skills:</strong> Being able
-            to convey complex ideas clearly and engagingly is crucial.
-            Participating in public speaking workshops can be highly beneficial
-            (
-            <a
-              href="https://aussiecareerinsights.com/becoming-a-uni-lecturer/"
-              target="_blank"
-              className="link link-aj"
+          <div role="alert" className="alert shadow-lg mt-16">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              className="stroke-info shrink-0 w-12 h-12"
             >
-              Aussie Career Insights
-            </a>
-            ). Engaging students in lectures and seminars is essential for
-            effective learning.
-          </li>
-          <li>
-            <strong>Time Management:</strong> Balancing research, teaching, and
-            administrative duties requires excellent organizational skills.
-          </li>
-          <li>
-            <strong>Research Skills:</strong> Conducting and publishing original
-            research is a core component of the role.
-          </li>
-          <li>
-            <strong>Adaptability:</strong> The ability to adapt your teaching
-            methods to suit diverse learning styles and stay updated with the
-            latest academic trends. Employing various pedagogical strategies is
-            necessary to meet diverse learning needs.
-          </li>
-        </ul>
-      </section>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <div>
+              <h3 className="font-bold">Finding Lecturer Job Openings</h3>
+              <ul className="mb-4">
+                <li>
+                  <span className="text-green-600 text-lg">✓</span> Ready to
+                  start applying? Visit our{' '}
+                  <a href="/lecturer" className="link link-aj">
+                    university lecturer job openings in Australia
+                  </a>{' '}
+                  page to find current vacancies that suit your qualifications
+                  and career goals.
+                </li>
+              </ul>
+            </div>
+            <Link href="/lecturer" className="btn btn-aj">
+              Lecturer Jobs
+            </Link>
+          </div>
 
-      {/* Tips for growing */}
-      <section>
-        <h2 className="gray-blue underline-full mt-16">
-          Tips for growing your career
-        </h2>
-        <p className="text-slate-500 font-normal text-2xl">
-          Promotion opportunities are available as you gain experience and
-          demonstrate your capabilities. <strong>University lecturers</strong>{' '}
-          can progress to senior lecturer positions, earning as high as AUD 150k
-          a year. Here are some ways to advance your career prospects as you
-          become a lecturer.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
-          {/* Card 4 */}
-          <Card
-            //   iconPath="/talent-pool/keyword-optimization.svg"
-            heading="Write for academic publications"
-            iconPath="/icons/rank-indicator.svg"
-          >
-            <p>
-              Publishing research articles in scholarly journals can distinguish
-              you as a leader and expert in your field. Academic institutions
-              often recognise such contributions and may invite you to present
-              your findings to colleagues.
+          {/* Final Thoughts */}
+          <section>
+            <h2 className="gray-blue underline-full mt-16">Final Thoughts</h2>
+            <p className="text-slate-500 font-normal text-2xl mb-8">
+              Becoming a university lecturer in Australia is a fulfilling career
+              path that offers the chance to shape future generations while
+              continuing to grow academically and professionally. With
+              dedication, the right qualifications, and a passion for education
+              and research, you can embark on a rewarding academic career.
             </p>
-          </Card>
-          {/* Card 5 */}
-          <Card
-            //   iconPath="/talent-pool/keyword-optimization.svg"
-            iconPath="/icons/notification-bell.svg"
-            heading="Secure a tenured positions"
-          >
-            <p>
-              Securing tenure can provide job security and the freedom to pursue
-              long-term research projects. As a tenured university lecturer, you
-              may also take on supervisory roles over students and faculty.
+            <p className="text-slate-500 font-normal text-2xl">
+              For more detailed information on specific qualifications,
+              application tips, and career advice, feel free to reach out or
+              explore our other resources. Good luck on your journey to becoming
+              a <strong>university lecturer</strong>!
             </p>
-          </Card>
-          {/* Card 6 */}
-          <Card
-            //   iconPath="/talent-pool/keyword-optimization.svg"
-            iconPath="/icons/advanced-customization.svg"
-            heading="Publish your own books"
-          >
-            <p>
-              Many university lecturers choose to share their extensive
-              knowledge by writing textbooks or nonfiction books. Publishing
-              your own books can further establish your expertise and contribute
-              significantly to your academic and professional reputation.
-            </p>
-          </Card>
+          </section>
         </div>
-      </section>
-
-      <div role="alert" className="alert shadow-lg mt-16">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          className="stroke-info shrink-0 w-12 h-12"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          ></path>
-        </svg>
-        <div>
-          <h3 className="font-bold">Finding Lecturer Job Openings</h3>
-          <ul className="mb-4">
-            <li>
-              <span className="text-green-600 text-lg">✓</span> Ready to start
-              applying? Visit our{' '}
-              <a href="/lecturer" className="link link-aj">
-                university lecturer job openings in Australia
-              </a>{' '}
-              page to find current vacancies that suit your qualifications and
-              career goals.
-            </li>
-          </ul>
+        <div className="lg:min-w-[400px]">
+          {/* @ts-ignore */}
+          <SearchResults2 q={{ q: 'lecturer', l: 'Australia' }} />
         </div>
-        <Link href="/lecturer" className="btn btn-aj">
-          Lecturer Jobs
-        </Link>
       </div>
-
-      {/* Final Thoughts */}
-      <section>
-        <h2 className="gray-blue underline-full mt-16">Final Thoughts</h2>
-        <p className="text-slate-500 font-normal text-2xl mb-8">
-          Becoming a university lecturer in Australia is a fulfilling career
-          path that offers the chance to shape future generations while
-          continuing to grow academically and professionally. With dedication,
-          the right qualifications, and a passion for education and research,
-          you can embark on a rewarding academic career.
-        </p>
-        <p className="text-slate-500 font-normal text-2xl">
-          For more detailed information on specific qualifications, application
-          tips, and career advice, feel free to reach out or explore our other
-          resources. Good luck on your journey to becoming a{' '}
-          <strong>university lecturer</strong>!
-        </p>
-      </section>
     </main>
   );
 }
