@@ -33,6 +33,9 @@ export default function myPage() {
               need, and what to expect in terms of salary and working
               conditions.
             </p>
+            <Link href="/lecturer" className="btn btn-aj w-44">
+              Find Lecturer Jobs
+            </Link>
           </div>
           <div className="flex-shrink-0 pb-8">
             <Image
@@ -71,13 +74,13 @@ export default function myPage() {
       </section>
 
       {/* Intro */}
-      <section className="flex mb-16">
+      <section className="lg:flex mb-16">
         <Image
           width={3000}
           height={2002}
           src="/blogs/become-a-university-lecturer-earn-115k/university-lecturer.jpg"
           alt="A university lecturer delivering lectures and teaching students in seminars related to their field, with primary responsibilities outlined"
-          className="max-h-[380px] w-auto mr-8"
+          className="w-auto lg:h-[380px] lg:w-auto mr-8 mb-8"
         />
         <div>
           <h2 className="m-0 leading-relaxed underline-full text-aj-pink mb-8">
@@ -209,6 +212,14 @@ export default function myPage() {
       </section>
 
       {/* <h2 className="mt-28 underline-full">Average Salary and Job Growth</h2> */}
+      <section className="my-16">
+        <p>
+          Are you ready to become a university lecturer in Australia?{' '}
+          <Link href="/lecturer" className="link link-aj">
+            Look for Lecturer Jobs here!
+          </Link>
+        </p>
+      </section>
 
       {/* Average Salary and Job Growth */}
       <HeroCard
@@ -229,6 +240,8 @@ export default function myPage() {
         imagePath="/blogs/become-a-university-lecturer-earn-115k/work-life-balance.jpg"
         alt="Australian university lecturers balancing teaching, research, and administrative tasks, collaborating, and attending conferences."
         imagePosition="right"
+        btnLink="/lecturer"
+        btnText="View Lecturer Jobs"
       ></HeroCard>
 
       {/* Essential Skills */}
