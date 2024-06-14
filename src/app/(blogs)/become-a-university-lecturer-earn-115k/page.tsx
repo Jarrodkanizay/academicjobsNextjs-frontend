@@ -4,6 +4,7 @@ import Card from '@/components/Card';
 import HeroCard from '@/components/HeroCard';
 import type { Metadata } from 'next';
 import SearchResults2 from '@/components/SearchResults3';
+import { url } from 'inspector';
 
 export const metadata: Metadata = {
   // title: `Become a University Lecturer in Australia: Earn $115k!`, //Option 1 replaces the %s in layout.tsx
@@ -33,6 +34,7 @@ export default function myPage() {
       {
         '@type': 'Person',
         name: 'Academic Jobs',
+        url: 'https://www.academicjobs.com/about',
       },
     ],
   };
