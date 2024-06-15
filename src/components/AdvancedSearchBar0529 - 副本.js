@@ -47,6 +47,7 @@ export default function Page({
   // const [category, setCategory] = useState('');
   // const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
   // const [filter1, setfilter] = useState([{ category:'country', filter: region}]);
+  const [category, setCategory] = useState("")
   const [filter2, setfilter2] = useState([]);
   useEffect(() => {
     //alert(category)
@@ -59,6 +60,7 @@ export default function Page({
     setfilterTypes((p) => ({ ...p, FacultyDepartmentJobs: false }));
     setfilterTypes((p) => ({ ...p, AcademicPositionType: false }));
     setfilterTypes((p) => ({ ...p, thirdcategory: false }));
+    setfilterTypes((p) => ({ ...p, ExcutiveJobs: false }));
     if (category == "AcademicPositionType") setfilterTypes((p) => ({ ...p, thirdcategory: true }));
     switch (true) {
       case filter1.some((obj) => obj.filter.includes('Executive ')):

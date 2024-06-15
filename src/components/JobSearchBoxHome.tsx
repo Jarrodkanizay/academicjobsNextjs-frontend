@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
 import { useStore } from '@/lib/store/store';
 import { countryMappings, countryMappings1 } from '@/lib/data/data';
+import useURLParams from '@/utils/urlParams';
 export default function JobSearchBox() {
   const countryMap = {
     UK: 'United Kingdom',
@@ -14,30 +15,35 @@ export default function JobSearchBox() {
   const keyWordRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
   let region = 'Australia';
-  const { setQ, q, setRegion, setFilter1, reset } = useStore();
-  //alert(q);
+  const { r = 'Global' } = useURLParams();
+  
   const handleFormSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     const a: { q?: string; l?: string } = {};
-    if (region !== 'Global') {
+    // alert('1' + r);
+    // alert('21' + r);
+    // if (  r == "") { alert('3' + r);}
+    if (r !== 'Global' && r!=="" ) {
+      //alert(r)
       // const location = (countryMappings1 as any)[region]?.searchLocation || 'Global';
       // const params = new URLSearchParams({
       //   l: encodeURIComponent(location),
       //   q: encodeURIComponent(a.q || ''),
       // });
       // router.push(`/jobs?${params.toString()}`);
-      const country = region;
-      setRegion(country);
-      reset();
-      //alert(1);
-      if (keyWordRef.current && keyWordRef.current.value.trim()) {
-        a.q = keyWordRef.current.value.trim();
-        setQ(keyWordRef.current.value.trim());
-      } else {
-        setQ('');
-      }
-      setFilter1([{ category: 'Country', filter: countryMap[country] }]);
-      router.push(`/jobs-advanced-search?l=${country}`);
+      // const country = region;
+      // setRegion(country);
+      // reset();
+      // //alert(1);
+      // if (keyWordRef.current && keyWordRef.current.value.trim()) {
+      //   a.q = keyWordRef.current.value.trim();
+      //   setQ(keyWordRef.current.value.trim());
+      // } else {
+      //   setQ('');
+      // }
+      // setFilter1([{ category: 'Country', filter: countryMap[country] }]);
+      // router.push(`/jobs-advanced-search?l=${country}`);
+      router.push(`/jobs-advanced-search?r=${r}`);
     } else {
       try {
         const response = await fetch(
@@ -45,22 +51,24 @@ export default function JobSearchBox() {
         );
         const result = await response.json();
         const country = result.country.name;
-        setRegion((countryMappings1 as any)[country.toLowerCase()] || 'Global');
-        const qValue = a.q || '';
-        const lValue = (countryMappings1 as any)[
-          (countryMappings as any)[country.toLowerCase()]
-        ]?.searchLocation;
-        //router.push(`/jobs?q=${qValue}&l=${lValue}`);
-        reset();
-        //alert(2);
-        if (keyWordRef.current && keyWordRef.current.value.trim()) {
-          a.q = keyWordRef.current.value.trim();
-          setQ(keyWordRef.current.value.trim());
-        } else {
-          setQ("")
-        }
-        setFilter1([{ category: 'Country', filter: countryMap[country] }]);
-        router.push(`/jobs-advanced-search?l=${country}`);
+        // setRegion((countryMappings1 as any)[country.toLowerCase()] || 'Global');
+        // const qValue = a.q || '';
+        // const lValue = (countryMappings1 as any)[
+        //   (countryMappings as any)[country.toLowerCase()]
+        // ]?.searchLocation;
+        // //router.push(`/jobs?q=${qValue}&l=${lValue}`);
+        // reset();
+        // if (keyWordRef.current && keyWordRef.current.value.trim()) {
+        //   a.q = keyWordRef.current.value.trim();
+        //   setQ(keyWordRef.current.value.trim());
+        // } else {
+        //   setQ('');
+        // }
+        // setFilter1([{ category: 'Country', filter: countryMap[country] }]);
+        //alert(country);
+        router.push(
+          `/jobs-advanced-search?r=${country}&q=${keyWordRef.current.value.trim()}`
+        );
       } catch (error) {
         console.log('Error:', error);
       }
@@ -108,29 +116,29 @@ export default function JobSearchBox() {
           className=" text-gray-400 text-base md:pr-6 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l from-green-400 via-green-400 to-sky-300"
           onClick={async (event: React.FormEvent) => {
             event.preventDefault();
-            const a: { q?: string; l?: string } = {};
-            if (keyWordRef.current && keyWordRef.current.value.trim()) {
-              a.q = keyWordRef.current.value.trim();
-            }
-            setRegion('Global');
-            setFilter1([]);
-            const params = new URLSearchParams({
-              l: '',
-              q: encodeURIComponent(a.q || ''),
-            });
-            //alert(3);
-            setRegion('Global');
-            reset();
-            if (keyWordRef.current && keyWordRef.current.value.trim()) {
-              a.q = keyWordRef.current.value.trim();
-              //alert(3);
-              setQ(keyWordRef.current.value.trim());
-            } else {
-              setQ('');
-            }
-            setFilter1([]);
-            router.push(`/jobs-advanced-search`);
-            // router.push(`/jobs?${params.toString()}`);
+            // const a: { q?: string; l?: string } = {};
+            // if (keyWordRef.current && keyWordRef.current.value.trim()) {
+            //   a.q = keyWordRef.current.value.trim();
+            // }
+            // setRegion('Global');
+            // setFilter1([]);
+            // const params = new URLSearchParams({
+            //   l: '',
+            //   q: encodeURIComponent(a.q || ''),
+            // });
+            // setRegion('Global');
+            // reset();
+            // if (keyWordRef.current && keyWordRef.current.value.trim()) {
+            //   a.q = keyWordRef.current.value.trim();
+            //   setQ(keyWordRef.current.value.trim());
+            // } else {
+            //   setQ('');
+            // }
+            // setFilter1([]);
+            //router.push(`/jobs-advanced-search`);
+            router.push(
+              `/jobs-advanced-search?r=Global&q=${keyWordRef.current.value.trim()}`
+            );
           }}
         >
           Or Search Globally

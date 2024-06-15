@@ -13,12 +13,26 @@ import JobFilter from '@/components/JobFilter';
 import SearchLightbulbIcon from '@/components/icons/SearchLightbulbIcon';
 import SearchListResultsLoader from '@/components/loaders/SearchListResultsLoader';
 import { useStore } from '@/lib/store/store';
+import { useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
+import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
 export default function SearchResults2({
   filterOff = false,
   searchMessage = 'Jobs Found',
 }) {
+  const router = useRouter();
+  console.log("loadFromURLParams(searchParams)", loadFromURLParams(useSearchParams()))
+  const searchParams = loadFromURLParams(useSearchParams())
+
   const [page, setPage] = useState(0);
-  const { q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
+  const { r = "", q = "", l = "", lon = 0, lat = 0, filter0 = [], currentMiddleCategory, category } = searchParams
+  let filter1 = [...filter0]
+  const filteredData = filter1.filter(item => {
+    return item.category !== "region"
+  });
+  filter1 = [...filteredData, { category: "region", filter: r || "Global" }]
+
+  //const { q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
   console.log('==============SearchResults2222222', q);
   //alert(q);
   const {

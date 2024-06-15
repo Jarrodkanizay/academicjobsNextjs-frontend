@@ -78,7 +78,7 @@ export default async function myPage() {
       {/* <p className=" text-center mt-20 font-lg font-bold">Search By <span className="text-amber-500">REGION</span></p> */}
       <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-8 items-stretch mb-8 text-left mt-6 max-w-screen-lg mx-auto">
         <Link
-          href="/australia"
+          href="/australia?r=Australia"
           className="card bg-slate-100  hover:grayscale hover:underline"
         >
           <h2 className="text-center  text-gray-500 font-normal mb-0 text-[16px]">
@@ -97,7 +97,7 @@ export default async function myPage() {
         </Link>
 
         <Link
-          href="/new-zealand"
+          href="/new-zealand?r=New Zealand"
           className="card bg-slate-100  hover:grayscale hover:underline"
         >
           <h2 className="text-center text-[16px] text-gray-500 font-normal mb-0">
@@ -115,7 +115,7 @@ export default async function myPage() {
           </figure>
         </Link>
         <Link
-          href="/uk"
+          href="/uk?r=United Kingdom"
           className="card bg-slate-100  hover:grayscale hover:underline"
         >
           <h2 className="text-center text-gray-500 font-normal mb-0 text-[16px]">
@@ -133,7 +133,7 @@ export default async function myPage() {
           </figure>
         </Link>
         <Link
-          href="/usa"
+          href="/usa?r=United States"
           className="card bg-slate-100  hover:grayscale hover:underline "
         >
           <h2 className="text-center text-gray-500 font-normal mb-0 text-[16px]">
@@ -151,7 +151,7 @@ export default async function myPage() {
           </figure>
         </Link>
         <Link
-          href="/europe"
+          href="/europe?r=Europe"
           className="card bg-slate-100  hover:grayscale hover:underline"
         >
           <h2 className="text-center  text-[16px] text-gray-500 font-normal mb-0">
@@ -169,7 +169,7 @@ export default async function myPage() {
           </figure>
         </Link>
         <Link
-          href="/canada"
+          href="/canada?r=Canada"
           className="card bg-slate-100  hover:grayscale hover:underline"
         >
           <h2 className="text-center text-[16px] text-gray-500 font-normal mb-0">
@@ -187,154 +187,6 @@ export default async function myPage() {
           </figure>
         </Link>
       </ul>
-      {/* Set this to false to show uni logo and welcome to message */}
-      {/* {contentRegion === 'USA' ? (
-        <>
-          <div className="mb-16">
-            <a href="/jobelephant-recruitment">
-              <Image
-                width={180}
-                height={170}
-                src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
-                className="rounded-3xl mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto"
-                alt="AcademicJobs Job Elephant Client Center"
-              />
-            </a>
-          </div>
-          <AmericaUniLogos />
- */}
-      {/* <a
-            href="#section"
-            className="scroll-smooth md:scroll-auto text-[#f4a10c] flex flex-col items-center justify-center text-2xl animate-bounce h-6 pt-12 mb-[16px]"
-          >
-            ▼
-          </a> */}
-      {/* </>
-      ) : (
-        <>
-          <div className="md:flex gap-4">
-            <article
-              className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold"
-              data-id="59973"
-            >
-              <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">
-                Featured
-              </div>
-              <div className="flex items-center mb-2">
-                <div className="w-20 h-20 mr-4">
-                  <a href="/employers/bond-university/3785">
-                    <Image
-                      alt="Bond University"
-                      width={100}
-                      height={100}
-                      src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FBondTwitterIcon_400x400.jpg&amp;w=256&amp;q=75"
-                    ></Image>
-                  </a>
-                </div>
-                <a
-                  className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer"
-                  href="/jobs/professor-associate-professor-implementation-science-and-healthcare-innovations/87939"
-                >
-                  Professor/Associate Professor, Implementation Science and
-                  Healthcare Innovations
-                </a>
-              </div>
-              <div className="flex justify-between items-center">
-                <div className="text-sm text-gray-600">
-                  <div className="mb-1">Bond University</div>
-                  <div className="text-gray-700 font-light text-sm">
-                    Robina Gold Coast, QLD
-                  </div>
-                </div>
-                <div className="applications-close border-2 rounded px-2 mt-1 ml-2">
-                  <p className="text-center text-gray-400 text-sm mb-0">
-                    Closes
-                  </p>
-                  <div className="text-sm">
-                    <time>Mar 24, 2024</time>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article
-              className="listing bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg md:w-1/2 font-bold"
-              data-id="59973"
-            >
-              <div className="badge badge-sm badge-featured bg-[#f4a10c] text-white absolute top-[-0.3rem] right-[-0.3rem] border-transparent items-end pt-4 shadow-md">
-                Featured
-              </div>
-              <div className="flex items-center mb-2">
-                <div className="w-20 h-20 mr-4">
-                  <a href="/employers/queensland-university-of-technology-qut-/3786">
-                    <Image
-                      alt="Queensland University of Technology (QUT)"
-                      width={100}
-                      height={100}
-                      className="w-full h-full object-contain rounded-lg"
-                      src="/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FQueensland-Univ-Tech-Logo.jpg&amp;w=256&amp;q=75"
-                    ></Image>{' '}
-                  </a>
-                </div>
-                <a
-                  className="flex-1 block text-blue-500 text-xl font-bold leading-tight hover:underline  cursor-pointer"
-                  href="/jobs/professor-in-artificial-intelligence/90020"
-                >
-                  Professor in Artificial Intelligence
-                </a>
-              </div>
-              <div className="flex justify-between items-center">
-                <div className="text-sm text-gray-600">
-                  <div className="mb-1">
-                    Queensland University of Technology (QUT)
-                  </div>
-                  <div className="text-gray-700 font-light text-sm">
-                    Brisbane QLD, Australia
-                  </div>
-                </div>
-                <div className="applications-close border-2 rounded px-2 mt-1 ml-2">
-                  <p className="text-center text-gray-400 text-sm mb-0">
-                    Closes
-                  </p>
-                  <div className="text-sm">
-                    <time>Apr 1, 2024</time>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <AusUniLogos />
-        </>
-      )} */}
-      {/* Hero Panel */}
-      {/* <div
-        id="section"
-        className="hero-content flex-col lg:flex-row mx-auto items-start py-12 bg-slate-200 breakout full-width prose w-fit"
-      ><div>
-        <h1 className="text-3xl md:text-6xl font-normal text-gray-500 mt-12 text-right">
-          ACADEMIC JOBS: Academic, research &&nbsp;science positions locally & globally
-        </h1>
-        <h2 className="mt-0 text-right">
-          Academic, research &&nbsp;science positions locally & globally
-        </h2>
-        </div>
-        <div className="text-col-2 mb-12">
-          <p>
-            Discover top-tier faculty and staff roles in the world of
-            higher education. Begin your search for university academic jobs,
-            college faculty positions, and administrative opportunities in
-            higher ed. Explore and apply for a range of roles, including
-            lecturer, researcher, university administrator, and senior academic
-            positions, available nationally and internationally.
-          </p>
-          <p>
-            Whether you&apos;re an aspiring or established professor,
-            researcher, lecturer, or higher education administrator, our
-            platform offers the most current opportunities in academia globally.
-            Connect with your next career move in the academic sector through
-            our comprehensive online job board. Find your next academic job now!
-          </p>
-        </div>
-      </div> */}
       <div id="section" className="bg-slate-200 full-width py-4 mb-16">
         <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
           <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 pb-8  md:px-0">
