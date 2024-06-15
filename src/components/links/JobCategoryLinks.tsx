@@ -6,7 +6,7 @@ type JobCategoryLinksProps = {
 
 const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
   return (
-    <ul className="faculty-container flex flex-wrap gap-2 md:gap-4 items-center justify-center text-gray-400 px-2">
+    <ul className="faculty-container flex flex-wrap gap-3 md:gap-4 items-center justify-center text-[#f4a10c] px-2 mb-2">
       <li className="hover:underline">
         {/* <Link href='/lecturer'>Lecturer{'  '}</Link> */}
         <Link href='/lecturer'>Lecturer{'  '}</Link>

@@ -28,86 +28,88 @@ const page = () => {
             <br />
             opportunities and prospects in one spot.
           </h2>
+          <div className="sign_up_benefits mt-8 md:mt-0">
+            <section className="flex gap-8 mb-4 items-start">
+              <div className="image-container" style={{ flexShrink: 0 }}>
+                <Image
+                  src="/collaboration.png"
+                  width={width}
+                  height={height}
+                  alt="Networking & Collaborating"
+                  className="responsive-img"
+                />
+              </div>
+              <div className="grow">
+                <h5>Dive into a World of Opportunities</h5>
+                <p>
+                  Sign up today and connect with prestigious academic institutions
+                  worldwide. Explore cutting-edge job openings and collaborate
+                  with world-renowned academics.
+                </p>
+              </div>
+            </section>
 
-          <section className="flex gap-8 mb-16">
-            <div>
-              <Image
-                src="/sign-up/networking-collaborating.png"
-                width={width}
-                height={height}
-                alt="Networking & Collaborating"
-                className="sign_up_icons"
-              />
-            </div>
-            <div className="grow">
-              <h5>Dive into a World of Opportunities</h5>
-              <p>
-                Sign up today and connect with prestigious academic institutions
-                worldwide. Explore cutting-edge job openings and collaborate
-                with world-renowned academics.
-              </p>
-            </div>
-          </section>
+            <section className="flex gap-8 mb-4 items-start">
+              <div className="image-container" style={{ flexShrink: 0 }}>
+                <Image
+                  src="/opportunities.png"
+                  width={width}
+                  height={height}
+                  alt="Launch your career."
+                  className="responsive-img"
+                />
+              </div>
+              <div className="grow">
+                <h5>Elevate Your Career</h5>
+                <p>
+                  Whether you're seeking groundbreaking research projects or
+                  looking to shape the minds of the next generation, our platform
+                  is your gateway to extraordinary possibilities.
+                </p>
+              </div>
+            </section>
 
-          <section className="flex gap-8 mb-16">
-            <div>
-              <Image
-                src="/sign-up/startup.png"
-                width={width}
-                height={height}
-                alt="Launch your career."
-                className="sign_up_icons"
-              />
-            </div>
-            <div className="grow">
-              <h5>Elevate Your Career</h5>
-              <p>
-                Whether you're seeking groundbreaking research projects or
-                looking to shape the minds of the next generation, our platform
-                is your gateway to extraordinary possibilities.
-              </p>
-            </div>
-          </section>
+            <section className="flex gap-8 mb-4 items-start">
+              <div className="image-container" style={{ flexShrink: 0 }}>
+                <Image
+                  src="/culture.png"
+                  width={width}
+                  height={height}
+                  alt="Find the right fit for you."
+                  className="responsive-img"
+                />
+              </div>
+              <div className="grow">
+                <h5>Expand Your Network</h5>
+                <p>
+                  Collaborate, innovate, and grow with the best in academia. Be
+                  part of a vibrant community where ideas flourish and careers
+                  soar.
+                </p>
+              </div>
+            </section>
 
-          <section className="flex gap-8 mb-16">
-            <div>
-              <Image
-                src="/sign-up/email-marketing.png"
-                width={width}
-                height={height}
-                alt="Find the right fit for you."
-                className="sign_up_icons"
-              />
-            </div>
-            <div className="grow">
-              <h5>Expand Your Network</h5>
-              <p>
-                Collaborate, innovate, and grow with the best in academia. Be
-                part of a vibrant community where ideas flourish and careers
-                soar.
-              </p>
-            </div>
-          </section>
-
-          <section className="flex gap-8 mb-16">
-            <div>
-              <Image
-                src="/sign-up/career-advice.png"
-                width={width}
-                height={height}
-                alt="Get the career advice your are looking for."
-                className="sign_up_icons"
-              />
-            </div>
-            <div className="grow">
-              <h5>Find Your Perfect Match</h5>
-              <p>
-                Our tailored job matching system brings you opportunities that
-                align perfectly with your expertise and aspirations.
-              </p>
-            </div>
-          </section>
+            <section className="flex gap-8 mb-4 items-start">
+              <div className="image-container" style={{ flexShrink: 0 }}>
+                <Image
+                  src="/market-comparison.png"
+                  width={width}
+                  height={height}
+                  alt="Get the career advice your are looking for."
+                  className="responsive-img"
+                />
+              </div>
+              <div className="grow">
+                <h5>Find Your Perfect Match</h5>
+                <p>
+                  Our tailored job matching system brings you opportunities that
+                  align perfectly with your expertise and aspirations.
+                </p>
+              </div>
+            </section>
+          </div>
         </div>
+
       </div>
       <section
         title="Customer Logos"

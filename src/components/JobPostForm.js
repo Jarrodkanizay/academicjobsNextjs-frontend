@@ -31,6 +31,8 @@ const stripeLink = {
 };
 const JobPostForm = ({ partner, region = 'USA' }) => {
   const [content1, setContent1] = useState('');
+  const [jobURLLink, setJobURLLink] = useState(false);
+
   const handleContentChange = (reason) => {
     //setContent(reason)
     setValue('06_JobPost', reason);
@@ -145,7 +147,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
               {partnerName} Quick Post
             </h1>
             <form className=" " onSubmit={handleSubmit(onSubmit)}>
-              <div className="flex flex-col gap-1 justify-start">
+              <div className="flex flex-col gap-4 justify-start">
                 {standardMode ? null : (
                   <div className="w-full  flex flex-col items-start">
                     <label className="label-text text-xs mb-1">
@@ -200,7 +202,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                     </select>
                   </div>
                 )}
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-4">
                   {selectedContact && selectedContact.avatar && (
                     <>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -217,61 +219,12 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                     </>
                   )}
                 </div>
-                <div className={`${newContact || standardMode ? 'show-form' : 'hide-form'
-                  }`}>
+                <div
+                  className={`${
+                    newContact || standardMode ? 'show-form' : 'hide-form'
+                  }`}
+                >
                   <div className="grid w-full items-center gap-1.5">
-                    <div className="flex gap-3">
-                      <InputBlock
-                        register={register}
-                        errors={errors}
-                        label="First Name"
-                        type="text"
-                        field="01_First_Name"
-                        forceClass="py-1 text-black"
-                        placeholder="First Name"
-                        autoComplete="given-name"
-                        hidden={newContact || standardMode ? false : true}
-                        required={newContact || standardMode ? true : false}
-                      />
-                      <InputBlock
-                        register={register}
-                        errors={errors}
-                        label="Last Name"
-                        type="text"
-                        field="01_Last_Name"
-                        forceClass="py-1 text-black"
-                        placeholder="Last Name"
-                        autoComplete="family-name"
-                        hidden={newContact || standardMode ? false : true}
-                        required={newContact || standardMode ? true : false}
-                      />
-
-                    </div>
-
-                    <InputBlock
-                      register={register}
-                      errors={errors}
-                      label="Email"
-                      type="email"
-                      field="02_Email"
-                      forceClass="py-1 text-black"
-                      placeholder="email"
-                      autoComplete="email"
-                      hidden={newContact || standardMode ? false : true}
-                      required={true}
-                    />
-                    <InputBlock
-                      register={register}
-                      errors={errors}
-                      label="Organization Name"
-                      type="text"
-                      field="01_Organisation_Name"
-                      forceClass="py-1 text-black"
-                      placeholder="Organization Name"
-                      autoComplete="organization"
-                      hidden={newContact || standardMode ? false : true}
-                      required={true}
-                    />
                     {partnerName === 'JobElephant' ? null : (
                       <>
                         <label
@@ -285,7 +238,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                           value={selectedCurrency}
                           onChange={handleChange}
                           name="currency"
-                          className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500"
+                          className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500 mb-4"
                           required
                         >
                           <option value="" selected>
@@ -307,14 +260,14 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                       label="Organization Name"
                       type="text"
                       field="01_Organisation_Name"
-                      forceClass=" text-black"
+                      forceClass="text-black"
                       placeholder="Organization Name"
                       autoComplete="organization"
                       hidden={newContact || standardMode ? false : true}
                       required={true}
                     />
                   </div>
-                  <div className="flex gap-2 mt-1">
+                  <div className="flex gap-2 mt-4">
                     <div className="grid w-full items-center">
                       <InputBlock
                         register={register}
@@ -344,7 +297,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                       />
                     </div>
                   </div>
-                  <div className="grid w-full items-center gap-1.5 mt-1">
+                  <div className="grid w-full items-center gap-1.5 mt-4">
                     <InputBlock
                       register={register}
                       errors={errors}
@@ -369,16 +322,47 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                   placeholder=""
                   required={true}
                 />
-                <InputBlock
-                  register={register}
-                  errors={errors}
-                  label={`Job Link URL (ie: ${urlExample})`}
-                  type="text"
-                  field="04_Job_Link_URL"
-                  forceClass=" text-black"
-                  placeholder=""
-                  required={true}
-                />
+                <div className="form-control">
+                  <label className="cursor-pointer label justify-start">
+                    <input
+                      type="checkbox"
+                      className="checkbox checkbox-secondary mr-2"
+                      onChange={(e) => setJobURLLink(e.target.checked)}
+                    />
+                    <span className="label-text">
+                      Would you prefer to provide a link to your job post
+                      instead?
+                    </span>
+                  </label>
+                </div>
+                {jobURLLink ? (
+                  <InputBlock
+                    register={register}
+                    errors={errors}
+                    label={`Provide a link to your job and we will copy the job from there (ie: ${urlExample})`}
+                    type="text"
+                    field="04_Job_Link_URL"
+                    forceClass=" text-black"
+                    placeholder=""
+                    required={true}
+                  />
+                ) : (
+                  <>
+                    <label className="form-control ">
+                      <span className="label-text text-xs pb-1">
+                        Copy & Paste your job here, and AcademicJobs will take
+                        care of the rest.
+                      </span>
+                      <Tiptap
+                        content={content}
+                        onChange={(newContent) =>
+                          handleContentChange(newContent)
+                        }
+                      />
+                    </label>
+                  </>
+                )}
+
                 <label className="form-control">
                   <span className="label-text text-xs pb-1">
                     Notes or Special Instructions
@@ -390,15 +374,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                     {...register('05_Notes')}
                   ></textarea>
                 </label>
-                <label className="form-control ">
-                  <span className="label-text text-xs pb-1">
-                    Copy/paste your Job Post here
-                  </span>
-                  <Tiptap
-                    content={content}
-                    onChange={(newContent) => handleContentChange(newContent)}
-                  />
-                </label>
+
                 <div className="flex gap-4">
                   <label htmlFor="creditCard" className="label cursor-pointer">
                     <strong className="mr-2">Payment method:</strong>Credit Card
@@ -444,7 +420,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
             ) : null}
           </div>
           {/* Right panel */}
-          <div className='relative'>
+          <div className="relative">
             <div className="flex mt-8">
               <Speedo size={80} />
               <h2 className="ml-4">
@@ -454,7 +430,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
             {/* <h3 className={`${textColor} mb-4`}>
               Welcome to the new {partnerName} Quick Job Post Technology form.
             </h3> */}
-            <div className='=absolute inset-0 flex justify-center items-center'>
+            <div className="=absolute inset-0 flex justify-center items-center">
               <Image
                 width={500}
                 height={500}

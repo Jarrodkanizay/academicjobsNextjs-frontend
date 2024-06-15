@@ -15,7 +15,10 @@ import {
 } from '@/lib/data/data';
 import SigninButton from '@/components/SigninButton';
 import useURLParams from '@/utils/urlParams';
+import { setFilter } from '@/app/store/postsSlice';
+
 export default function Header() {
+  // const { fetchLocation } = useLocation();
   // const { fetchLocation } = useLocation();
   // useEffect(() => {//
   //   const getLocation = async () => {
@@ -142,7 +145,7 @@ export default function Header() {
             </Link>
           )}
           <NavItem
-            url={`/jobs-advanced-search?l=${countryMappings2[region?.toLowerCase()]?.url}`}
+            url={region ? `/jobs-advanced-search?l=${countryMappings2[region?.toLowerCase()]?.url}` : '/jobs-advanced-search'}
             icon="/dotted-arrow.svg"
             navLink="Seek Jobs"
             forceClass="border-b hover:border-amber-500" //this is optional
