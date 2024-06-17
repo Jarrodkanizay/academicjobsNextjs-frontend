@@ -16,11 +16,11 @@ const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
         <Link href='/research/'>Research{'  '}</Link>
       </li>
       <li className="hover:underline">
-        <Link href='/professor/'>Professor{'  '}</Link>
-        {/* <Link href='/australia/professor?r=Global&filter0=[{"category":"PositionType","filter":"Professor"}]'>
+        {/* <Link href='/professor/'>Professor{'  '}</Link> */}
+        <Link href='/australia/professor?r=Global&filter0=[{"category":"PositionType","filter":"Professor"}]'>
           {' '}
           Professor
-        </Link> */}
+        </Link>
       </li>
       <li className="hover:underline md:hidden">
         {/* <Link href='/hr-jobs/'>HR{'  '}</Link> */}
