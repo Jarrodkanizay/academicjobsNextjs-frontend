@@ -8,10 +8,10 @@ import { url } from 'inspector';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'How to Excel as a Research Assistant in Australia',
+    absolute: 'Guide to Research Assistant Jobs: Earn up to 85k!',
   },
   description:
-    'How to Excel as a Research Assistant in Australia. 1. Complete a bachelor degree 2. Consider Advanced Degrees 3. Gaining Experience.',
+    'Unlock top secrets to landing research assistant jobs! Get insider tips to boost your career success. Click here to learn more!',
   keywords:
     'research assistant, research assistant salary, university jobs, research assistant jobs',
 };
