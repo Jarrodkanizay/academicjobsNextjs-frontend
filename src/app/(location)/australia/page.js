@@ -222,10 +222,11 @@ export default async function myPage() {
           </li> */}
           <li>
             {/* <Link href="/australia/hr-jobs"> HR</Link> */}
-            <Link href='/australia/professor?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]'> HR</Link>
+            <Link href='/australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]'> HR</Link>
           </li>
           <li>
-            <Link href="/australia/student"> Student</Link>
+            {/* <Link href="/australia/student"> Student</Link> */}
+            <Link href='/australia/hr-jobs?r=Australia&q=Student'> Student</Link>
           </li>
           <li>
             <Link href="/australia/indigenous">Indigenous</Link>
@@ -235,7 +236,7 @@ export default async function myPage() {
           </li>
           <li>
             {/* <Link href="/australia/phd">PhD</Link> */}
-            <Link href='/australia/professor?r=Australia&filter0=[{"category":"PositionType","filter":"Student / Phd Jobs"}]'> PhD</Link>
+            <Link href='/australia/phd?r=Australia&filter0=[{"category":"PositionType","filter":"Student / Phd Jobs"}]'> PhD</Link>
           </li>
         </ul>
       </div>
