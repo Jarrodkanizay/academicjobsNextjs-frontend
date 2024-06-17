@@ -1,34 +1,38 @@
 'use client';
 import React, { useState, useEffect, useRef } from "react";
-import { useSearchParams } from 'next/navigation';
 import { filterType } from "@/utils/data";
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
 import JobKeywordSearchBlock from '@/components/JobKeywordSearchBlock';
-import { useStore } from '@/lib/store/store';
 import { regionData } from "@/data/africaPositions";
 import Autocomplete, { usePlacesWidget } from 'react-google-autocomplete';
-
+import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
+import { useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 export default function Page({
   p,
   forceClass = '',
 }) {
-  const { region, setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
-  let region1
-  if (region && region.length > 0 && region != "Global") region1 = region
+  const router = useRouter();
+  const searchParams = loadFromURLParams(useSearchParams())
+  const { r = "", q = "", l = "", lon = 0, lat = 0, filter0 = [], currentMiddleCategory } = searchParams
+  let filter1 = [...filter0]
+  const filteredData = filter1.filter(item => {
+    return item.category !== "region"
+  });
+  filter1 = [...filteredData, { category: "region", filter: r || "Global" }]
+  // const { region, setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
+  // let region1
+  // if (region.length > 0 && region != "Global") region1 = region
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
   const [selectedFilters, setSelectedFilters] = useState([]);
-
-  useEffect(() => {
-    //setQ('')
-    if (p?.filter1) {
-      setFilter1(p.filter1)
-    }
-    if (p?.q) setQ(p?.q)
-  }, []);
-
-  const searchParams = useSearchParams();
+  // useEffect(() => {
+  //   if (p?.filter1) {
+  //     setFilter1(p.filter1)
+  //   }
+  //   if (p?.q) setQ(p?.q)
+  // }, []);
   const filterType1 = {
     JobType: true,
     ExecutiveJobs: false,
@@ -40,7 +44,6 @@ export default function Page({
     PositionType: false,
     thirdcategory: false,
   };
-
   const filterType = {
     Country: false,
     State: true,
@@ -49,14 +52,12 @@ export default function Page({
     SalaryRange: true,
     OnsiteRemote: true,
   };
-
   const [filterTypes1, setfilterTypes1] = useState(filterType1);
   const [filterTypes, setfilterTypes] = useState(filterType);
   const onEditorStateChange1 = (suggestion) => {
   };
-  // const [category, setCategory] = useState('');
-  // const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
-  // const [filter1, setfilter] = useState([{ category:'country', filter: region}]);
+  const [category, setCategory] = useState('');
+  //const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
   const [filter2, setfilter2] = useState([]);
   useEffect(() => {
     //alert(category)
@@ -70,39 +71,31 @@ export default function Page({
     setfilterTypes1((p) => ({ ...p, AcademicPositionType: false }));
     setfilterTypes1((p) => ({ ...p, thirdcategory: false }));
     if (category == "AcademicPositionType") setfilterTypes1((p) => ({ ...p, thirdcategory: true }));
-
-    if (filter1.some((obj) => obj.filter.includes('Executive '))) {
+    if (filter1?.some((obj) => obj.filter?.includes('Executive '))) {
       setfilterTypes1((p) => ({ ...p, ExecutiveJobs: true }));
     }
-
-    if (filter1.some((obj) => obj.filter.includes('Human Resources'))) {
+    if (filter1?.some((obj) => obj.filter?.includes('Human Resources'))) {
       setfilterTypes1((p) => ({ ...p, HRJobs: true }));
     }
-
-    if (filter1.some((obj) => obj.filter.includes('Staff / Administration'))) {
+    if (filter1?.some((obj) => obj.filter?.includes('Staff / Administration'))) {
       setfilterTypes1((p) => ({ ...p, AdministrationSupportJobs: true }));
       console.log('Testing Academic / Faculty1', filter1);
       console.log('Testing Academic / Faculty2', filter1.some((obj) => obj.filter.includes('Academic / Faculty')));
     }
-
-    if (filter1.some((obj) => obj.filter.includes('Academic / Faculty'))) {
+    if (filter1?.some((obj) => obj.filter?.includes('Academic / Faculty'))) {
       setfilterTypes1((p) => ({ ...p, AcademicPositionType: true }));
       setfilterTypes1((p) => ({ ...p, PositionType: true }));
     }
-  }, [filter1]);
-
+  }, [JSON.stringify(filter1)]);
   useEffect(() => {
     setfilter2(filter1);
   }, [category]);
-
-  useEffect(() => {
-    console.log("keywordSuggestion21", q);
-  }, [q]);
-
-  useEffect(() => {
-    if (region == 'Global') setfilterTypes((p) => ({ ...p, Country: true }));
-  }, []);
-
+  // useEffect(() => {
+  //   console.log("keywordSuggestion21", q);
+  // }, [q]);
+  // useEffect(() => {
+  //   if (region == 'Global') setfilterTypes((p) => ({ ...p, Country: true }));
+  // }, []);
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -123,7 +116,6 @@ export default function Page({
     },
     enabled: category !== '',
   });
-
   const filterValues9 = {
     Country: 'Country',
     State: 'State',
@@ -141,29 +133,33 @@ export default function Page({
     OnsiteRemote: 'Onsite/Remote',
     thirdcategory: 'thirdcategory',
   };
-
   const [isShowFilter, setIsShowFilter] = useState(false);
-
   const handleCheckboxChange = (filter) => {
     const isChecked = selectedFilters.includes(filter);
     let updatedFilters;
-
+    if (!Array.isArray(searchParams.filter1)) {
+      searchParams.filter1 = []; // Initialize as an array if it's not already
+    }
     if (isChecked) {
       updatedFilters = selectedFilters.filter(item => item !== filter);
       const updatedFilter1 = filter1.filter(f => f.filter !== filter);
-      setFilter1(updatedFilter1);
+      //setFilter1(updatedFilter1);
+      router.push(`/jobs-advanced-search?${toURLParams({ ...searchParams, currentMiddleCategory: filter, filter0: updatedFilter1 })}`, { scroll: false });
     } else {
       updatedFilters = [...selectedFilters, filter];
-      setFilter1([...filter1, { category, filter }]);
+      //setFilter1([...filter1, { category, filter }]);
+      router.push(`/jobs-advanced-search?${toURLParams({ ...searchParams, currentMiddleCategory: filter, filter0: [...searchParams.filter0, { category, filter }] })}`, { scroll: false });
     }
-
     setSelectedFilters(updatedFilters);
-    setCurrentMiddleCategory(filter);
+    //setCurrentMiddleCategory(filter);
   };
-
   return (
     <>
-          <div className="w-full  pt-2">
+
+      <main>
+        
+        <div className=" mx-auto bg-white rounded-xl shadow-xl p-4 max-w-5xl  flex flex-col  ">
+        <div className="w-full  pt-2">
           <div className=" mx-auto ">
             <div className="max-w-screen-xl ">
               <div className={` py-4 `}>
@@ -214,11 +210,8 @@ export default function Page({
           </div>
 
         </div>
-      <main>
-        <div className=" mx-auto bg-white rounded-xl shadow-xl p-4 max-w-5xl  flex flex-col  ">
-
           <div className="flex gap-4 flex-wrap p-2 border-b border-grey">
-            {Object.entries(filterTypes1).map(([filterType, showYN], i) => (
+            {Object.entries(filterTypes1).map(([filterType, showYN], i) => ( // 中层大目录上
               <React.Fragment key={i}>
                 <button
                   key={i}
@@ -242,7 +235,7 @@ export default function Page({
             ))}
           </div>
           <div className="flex gap-4 flex-wrap p-2">
-            {Object.entries(filterTypes).map(([filterType, showYN], i) => (
+            {Object.entries(filterTypes).map(([filterType, showYN], i) => ( // 中层大目录下
               <React.Fragment key={i}>
                 <button
                   key={i}
@@ -275,7 +268,7 @@ export default function Page({
           {isShowFilter && (
             <>
               <div className="p-2 w-full max-h-64 overflow-y-scroll custom-scrollbar rounded-xl">
-                {filters?.length > 0 &&
+                {filters?.length > 0 &&  // 低层小目录b
                   filters.map(({ filter, job_count }, i) => (
                     <label key={i} className="block text-left text-gray-500 text-sm p-2">
                       <input

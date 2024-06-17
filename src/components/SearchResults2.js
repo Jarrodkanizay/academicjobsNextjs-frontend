@@ -12,18 +12,18 @@ import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
 import SearchLightbulbIcon from '@/components/icons/SearchLightbulbIcon';
 import SearchListResultsLoader from '@/components/loaders/SearchListResultsLoader';
+import useURLParams from '@/utils/urlParams';
 
 export default function SearchResults2({
-  q,
-  l,
   filterOff = false,
   searchMessage = 'Jobs Found',
-  filter1,
 }) {
   console.log('==============SearchResults==================');
   const [page, setPage] = useState(0);
-  console.log('filter1', q, page);
+  //console.log('filter1', q, page);
   //useGetQtyQuery({ q: q, l: l || '', filter1 });
+  const { r = "", q = "", l = "", lon = 0, lat = 0, filter0 = [], currentMiddleCategory, category } = useURLParams()
+  let filter1 = [...filter0]
   const {
     isPending,
     isError,

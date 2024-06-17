@@ -45,7 +45,7 @@ export default function Page({ params, searchParams }) {
   // console.log(params);
   let { category } = params;
   // console.log(regionData);
-  // console.log(category);
+  console.log("category", category);
   category = category?.replace(/-/g, ' ');
   // console.log(category);
   let {
@@ -110,12 +110,7 @@ export default function Page({ params, searchParams }) {
       <main className="content-grid flex-col md:gap-2">
 
 
-        <AdvancedSearchBar
-          p={{
-            filter1,
-            q: Name,
-            l: regionName,
-          }} />
+        <AdvancedSearchBar />
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
             <div className="filters_content">

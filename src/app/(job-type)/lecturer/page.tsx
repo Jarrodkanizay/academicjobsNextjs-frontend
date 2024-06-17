@@ -35,7 +35,6 @@ export default function Page() {
               </span>
               <br />
             </h1>
-
             <p className="font-bold">
               The No.1 job board for lecturers, Academic Jobs, provides an
               extensive list of opportunities for the future of your career,
@@ -58,7 +57,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-
       <div className="bg-gray-200 flex flex-col  content-grid rounded">
         <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
           {lecturer.map(({ Title, Name }, key) => (
@@ -73,17 +71,18 @@ export default function Page() {
           ))}
         </ul>
       </div>
-      <AdvancedSearchBar
-        p={{
-          filter1: [
-            {
-              category: 'PositionType',
-              filter: 'Lecturer/Instructor',
-            },
-          ],
-        }}
-      />
-
+      <div className="flex justify-center">
+        <AdvancedSearchBar
+          p={{
+            filter1: [
+              {
+                category: 'PositionType',
+                filter: 'Lecturer/Instructor',
+              },
+            ],
+          }}
+        />
+      </div>
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">
           <div className="filters_content">

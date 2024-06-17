@@ -37,5 +37,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-src/lib/store/Base/index.tsx
+# src/lib/store/Base/index.tsx
 

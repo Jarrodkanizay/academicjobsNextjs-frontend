@@ -222,7 +222,7 @@ export default async function myPage() {
               <Link href="/USA/research/"> Research </Link>
             </li>
             <li>
-              <Link href="/USA/professor/"> Professor</Link>
+              <Link href="/USA/professor?r=United States"> Professor</Link>
             </li>
           </ul>
           <li>

@@ -1,8 +1,20 @@
 'use client';
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
-import { useRouter } from 'next/navigation';
 import { useStore } from '@/lib/store/store';
+import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
+import { useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 export default function JobSearchBoxCountry({ country }) {
+  const router = useRouter();
+  console.log(
+    'loadFromURLParams(searchParams)',
+    loadFromURLParams(useSearchParams())
+  );
+  const searchParams = loadFromURLParams(useSearchParams());
+  console.log(
+    'loadFromURLParams(searchParams)',
+    loadFromURLParams(useSearchParams())
+  );
   const countryMap = {
     UK: 'United Kingdom',
     Australia: 'Australia',
@@ -15,7 +27,6 @@ export default function JobSearchBoxCountry({ country }) {
     setRegion(countryMap[country]);
   }, []);
   const keyWordRef = useRef<HTMLInputElement>(null);
-  const router = useRouter();
   const handleFormSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     const a: { q?: string; l?: string } = {};
@@ -26,22 +37,31 @@ export default function JobSearchBoxCountry({ country }) {
       l: encodeURIComponent(country),
       q: encodeURIComponent(a.q || ''),
     });
-    // router.push(`/jobs?${params.toString()}`);
-    setRegion(country);
+    // setRegion(country);
     // reset();
-         if (keyWordRef.current && keyWordRef.current.value.trim()) {
-                   setQ(keyWordRef.current.value.trim());
-         } else {
-           setQ('');
-         }
-    if (country == 'Europe') {
-      setFilter1([{ category: 'region', filter: 'Europe' }]);
-    } else if (country == 'New Zealand') {
-      setFilter1([{ category: 'region', filter: 'New Zealand' }]);
-    } else {
-      setFilter1([{ category: 'Country', filter: countryMap[country] }]);
-    }
-    router.push(`/jobs-advanced-search?l=${country}`);
+    // if (country == 'Europe') {
+    //   setFilter1([{ category: 'region', filter: 'Europe' }]);
+    // } else if (country == 'New Zealand') {
+    //   setFilter1([{ category: 'region', filter: 'New Zealand' }]);
+    // } else {
+    //   router.push(
+    //     `/jobs-advanced-search?${toURLParams({
+    //       ...searchParams,
+    //       filter1: [{ category: 'Country', filter: countryMap[country] }],
+    //     })}`,
+    //     { scroll: false }
+    //   );
+    // }
+    //alert(searchParams);
+     //router.push(`/jobs-advanced-search?r=${r}`);
+    router.push(
+      `/jobs-advanced-search?${toURLParams({
+        ...searchParams,
+        q: keyWordRef.current.value.trim(),
+      })}`,
+      { scroll: false }
+    );
+    //router.push(`/jobs-advanced-search?l=${country}`);
   };
   return (
     <div className="flex flex-col gap-2">

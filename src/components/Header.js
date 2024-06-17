@@ -14,9 +14,11 @@ import {
   countryMappings2,
 } from '@/lib/data/data';
 import SigninButton from '@/components/SigninButton';
+import useURLParams from '@/utils/urlParams';
 import { setFilter } from '@/app/store/postsSlice';
 
 export default function Header() {
+  // const { fetchLocation } = useLocation();
   // const { fetchLocation } = useLocation();
   // useEffect(() => {//
   //   const getLocation = async () => {
@@ -26,39 +28,33 @@ export default function Header() {
   //   getLocation();
   // }, []);
   const { data: session } = useSession();
-  const { region, setRegion, setFilter1 } = useStore();
+  const { r = 'Global' } = useURLParams();
+  const region = r
+  //const { region, setRegion, setFilter1, reset } = useStore();
   const pathname = usePathname();
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const ref = useRef(null);
-
   const onMouseEnter = () => setDropdown(true);
   const onMouseLeave = () => setDropdown(false);
-
-  useEffect(() => {
-    const countryMap = {
-      'United Kingdom': 'UK',
-      'Australia': 'Australia',
-      'Canada': 'Canada',
-      'United States': 'USA',
-    };
-
-    const mappedRegion = countryMap[region];
-    if (mappedRegion) {
-      setRegion(mappedRegion);
-    }
-
-
-    if (region === 'Europe') {
-      setFilter1([{ category: 'region', filter: 'Europe' }]);
-    } else if (region === 'New Zealand') {
-      setFilter1([{ category: 'region', filter: 'New Zealand' }]);
-    } else if (mappedRegion) {
-      setFilter1([{ category: 'Country', filter: region }]);
-    }
-  }, [region, setRegion, setFilter1]);
-
-
+  // useEffect(() => {
+  //   const countryMap = {
+  //     UK: 'United Kingdom',
+  //     Australia: 'Australia',
+  //     Canada: 'Canada',
+  //     USA: 'United States',
+  //   };
+  //   setRegion(countryMap[region]);
+  //   reset();
+  //   if (region === 'Europe') {
+  //     setFilter1([{ category: 'region', filter: 'Europe' }]);
+  //   } else if (region === 'New Zealand') {
+  //     setFilter1([{ category: 'region', filter: 'New Zealand' }]);
+  //   } else {
+  //     setFilter1([{ category: 'Country', filter: countryMap[region] }]);
+  //   }
+  // }, [region, setRegion, setFilter1, reset]);
+  //console.log(region);
   const handleFormSubmit = async () => {
     if (region !== 'Global') {
       navigate('/jobs/', {
@@ -101,19 +97,17 @@ export default function Header() {
     }
     setIsNavOpen(false);
   };
-
   const handleLogoutMobile = async () => {
     setIsNavOpen(false);
     await signOut({ callbackUrl: '/' });
   };
-
   return (
     <>
       <div className="hamburger-wrapper">
         {pathname === '' ? (
           isNavOpen && (
             <Link
-              href={`/${countryMappings2[region?.toLowerCase()]?.url}`}
+              href={`/${countryMappings2[region?.toLowerCase()]?.url}?r=${r}`}
               className={`static-logo mobile`}
               onClick={() => setIsNavOpen(false)}
             >
@@ -122,7 +116,7 @@ export default function Header() {
           )
         ) : (
           <Link
-            href={`/${countryMappings2[region?.toLowerCase()]?.url}`}
+              href={`/${countryMappings2[region?.toLowerCase()]?.url}?r=${r}`}
             className={`static-logo mobile`}
           >
             <LogoAJ width={270} height={60} />{' '}
@@ -144,7 +138,7 @@ export default function Header() {
         <nav>
           {pathname === '' ? null : (
             <Link
-              href={region ? `/${countryMappings2[region?.toLowerCase()]?.url}` : '/'}
+              href={`/${countryMappings2[region?.toLowerCase()]?.url}?r=${r}`}
               className="hide-mobile static-logo mr-4"
             >
               <LogoAJ width={270} height={60} />{' '}
@@ -250,9 +244,7 @@ export default function Header() {
                     onClick={() => setIsNavOpen(false)} />
                 </>
               )
-
               }
-
               <a className="btn btn-aj w-full mt-4 h820:hidden" href="/jobs">
                 Search Globally
               </a>
@@ -283,7 +275,6 @@ export default function Header() {
             </>
           )}
           <div className="ml-auto post-a-job-button ">
-
             <NavItem
               url={`/${countryMappings2[region?.toLowerCase()]?.url
                 }/recruitment/`}
@@ -294,7 +285,6 @@ export default function Header() {
               onClick={() => setIsNavOpen(false)}
             />
           </div>
-
           <div className="mt-8 lg:block hidden md:mt-0 justify-center ml-4">
             <SigninButton />
           </div>

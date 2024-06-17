@@ -187,38 +187,56 @@ export default async function myPage() {
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 mb-2">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li className="">
-              <Link href="/Australia/lecturer"> Lecturer</Link>
+              {/* <Link href="/Australia/lecturer"> Lecturer</Link> */}
+              <Link href="/australia/lecturer?r=Australia&filter0=%5B%7B%22category%22%3A%22PositionType%22%2C%22filter%22%3A%22Lecturer%2FInstructor%22%7D%5D"> Lecturer</Link>
             </li>
             <li className="">
-              <Link href="/Australia/research"> Research </Link>
+              {/* <Link href="/Australia/research"> Research </Link> */}
+              <Link href="/australia/research?r=Australia&filter0=%255B%257B%2522category%2522%253A%2522PositionType%2522%252C%2522filter%2522%253A%2522Research%2522%257D%255D"> Research </Link>
+            </li>
+            {/* <li className=" ">
+              <Link href={{ pathname: "/faq", query: { r: "Australia" } }}>Professor1</Link>           
             </li>
             <li className=" ">
-              <Link href="/Australia/professor"> Professor</Link>
+              <Link href="/faq?r=Australia"> Professor2</Link>
             </li>
+            <li className=" ">
+              <Link href="/australia/research?r=Australia"> Professor3</Link>
+            </li> */}
+            {/* australia/research?r=Australia&filter0=[{"category":"PositionType","filter":"Research"}] */}
+            <li className=" ">
+              {/* <Link href="/Australia/professor"> Professor</Link> */}
+              <Link href='/australia/professor?r=Australia&filter0=[{"category":"PositionType","filter":"Professor"}]'> Professor</Link>
+            </li>
+
+           
             {/* <li>
-              <Link href="/Australia/faculty"> Faculty</Link>
+              <Link href="/australia/faculty"> Faculty</Link>
             </li> */}
           </ul>
           {/* <li>
-            <Link href="/Australia/executive"> Executive</Link>
+            <Link href="/australia/executive"> Executive</Link>
           </li> */}
           {/* <li>
-            <Link href="/Australia/admin">Admin</Link>
+            <Link href="/australia/admin">Admin</Link>
           </li> */}
           <li>
-            <Link href="/Australia/hr-jobs"> HR</Link>
+            {/* <Link href="/australia/hr-jobs"> HR</Link> */}
+            <Link href='/australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]'> HR</Link>
           </li>
           <li>
-            <Link href="/Australia/student"> Student</Link>
+            {/* <Link href="/australia/student"> Student</Link> */}
+            <Link href='/australia/hr-jobs?r=Australia&q=Student'> Student</Link>
           </li>
           <li>
-            <Link href="/Australia/indigenous">Indigenous</Link>
+            <Link href="/australia/indigenous">Indigenous</Link>
           </li>
           <li>
-            <Link href="/Australia/graduate">Graduate</Link>
+            <Link href="/australia/graduate">Graduate</Link>
           </li>
           <li>
-            <Link href="/Australia/phd">PhD</Link>
+            {/* <Link href="/australia/phd">PhD</Link> */}
+            <Link href='/australia/phd?r=Australia&filter0=[{"category":"PositionType","filter":"Student / Phd Jobs"}]'> PhD</Link>
           </li>
         </ul>
       </div>
@@ -319,7 +337,7 @@ export default async function myPage() {
         </div>
 
         <div className="  flex flex-wrap gap-6 px-7 pb-4 text-gray-400 mx-auto">
-          <Link href="/Australia/faq"> Aus FAQ</Link>
+          <Link href="/australia/faq"> Aus FAQ</Link>
         </div>
       </div>
 
