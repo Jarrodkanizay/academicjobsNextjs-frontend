@@ -9,11 +9,15 @@ const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
     <ul className="faculty-container flex flex-wrap gap-3 md:gap-4 items-center justify-center text-[#f4a10c] px-2 mb-2">
       <li className="hover:underline">
         {/* <Link href='/lecturer'>Lecturer{'  '}</Link> */}
-        <Link href='/lecturer'>Lecturer{'  '}</Link>
+        <Link href='/lecturer?r=Global&filter0=[{"category":"PositionType","filter":"Lecturer/Instructor"}]'>
+          Lecturer{'  '}
+        </Link>
       </li>
       <li className="hover:underline">
         {/* <Link href='/research/'>Research{'  '}</Link> */}
-        <Link href='/research/'>Research{'  '}</Link>
+        <Link href='/research?r=Global&?r=Global&filter0=[{"category":"PositionType","filter":"Lecturer/Instructor"}]'>
+          Research{'  '}
+        </Link>
       </li>
       <li className="hover:underline">
         {/* <Link href='/professor/'>Professor{'  '}</Link> */}
@@ -49,7 +53,7 @@ const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
         <Link href='/phd'>PhD</Link>
       </li>
       <li className="hover:underline">
-         {/* <Link href='/student-jobs'>Student</Link> */}
+        {/* <Link href='/student-jobs'>Student</Link> */}
         <Link href='/student-jobs'>Student</Link>
       </li>
       <li className="hover:underline">
