@@ -11,6 +11,7 @@ import AmericaUniLogos from '@/components/AmericaUniLogos';
 import { getContentRegion } from '@/actions/getContentRegion';
 import TopJobs from '@/components/TopJobs';
 import JobOfTheWeek from '@/components/JobOfTheWeek';
+import ScrollableCard from '@/components/ScrollableCard'
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -228,9 +229,11 @@ export default async function myPage() {
           height={625}
           className="w-full"
         />
-      </Link> */}
+      </Link> 
       <Link
         href="/become-a-university-lecturer-earn-115k?r=Australia&filter0=%5B%7B%22category%22%3A+%22PositionType%22%2C+%22filter%22%3A+%22Lecturer%2FInstructor%22%7D%5D"
+      /* <Link
+        href="/become-a-university-lecturer-earn-115k"
         target="_blank"
       >
         <Image
@@ -240,7 +243,9 @@ export default async function myPage() {
           height={625}
           className="w-full"
         />
-      </Link>
+      </Link> */}
+      <h2 className="underline-full">Academic Tips Of The Week</h2>
+      <ScrollableCard />
       <div className=" mx-auto mt-8 mb-8">
         <h2 className="underline-full"> Top University Employer Rankings</h2>
         <div className="bg-white flex flex-col">

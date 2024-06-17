@@ -155,61 +155,61 @@ export default function Page({
   };
   return (
     <>
-      <div className="w-full  pt-2">
-        <div className="mx-auto  ">
-          <div className="max-w-screen-xl mx-auto ">
-            <div className={`mx-auto  py-4 `}>
-              <div className=" lg:max-w-screen-lg mx-auto ">
-                <div className="join mx-auto w-full shadow-xl flex flex-col md:flex-row">
-                  <Autocomplete
-                    className="input input-bordered join-item w-full md:text-left text-center rounded-xl"
-                    style={{ width: '100%' }}
-                    apiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
-                    onPlaceSelected={(place) => {
-                      const lat = place.geometry.location.lat();
-                      const lon = place.geometry.location.lng();
-                      router.push(`/jobs-advanced-search?${toURLParams({ ...searchParams, lon, lat })}`, { scroll: false });
-                      //setLon(lon);
-                      //setLat(lat);
-                    }}
-                    options={{
-                      types: ['geocode', 'establishment'],
-                    }}
-                  />
-                </div>
-                {filter1?.length > 0 && (
-                  <div className="md:flex md:flex-wrap pb-2 p-2">
-                    {filter1.map(({ category1, filter }, i) => (
-                      <button
-                        key={i}
-                        className="btn btn-xs bg-sky-900 text-white mr-2 "
-                        onClick={() => {
-                          const updatedFilter = filter1.filter(
-                            (f, index) => index !== i
-                          );
-                          console.log("updatedFilter", updatedFilter)
-                          router.push(`/jobs-advanced-search?${toURLParams({ ...searchParams, filter0: updatedFilter })}`, { scroll: false });
-                          //const updatedFilter1 = filter1.filter(f => f.filter !== filter);
-                          //router.push(`/jobs-advanced-search?${toURLParams({ ...searchParams, filter0: updatedFilter1 })}`, { scroll: false });
-                          // setPage(0);
-                          // setFilter1(updatedFilter);
-                          setCategory("");
-                          //setCurrentMiddleCategory("");
-                          setSelectedFilters(selectedFilters.filter(item => item !== filter));
-                        }}
-                      >
-                        {`${filter} X`}
-                      </button>
-                    ))}
+
+      <main>
+        
+        <div className=" mx-auto bg-white rounded-xl shadow-xl p-4 max-w-5xl  flex flex-col  ">
+        <div className="w-full  pt-2">
+          <div className=" mx-auto ">
+            <div className="max-w-screen-xl ">
+              <div className={` py-4 `}>
+                <div className=" lg:max-w-screen-lg mx-auto ">
+                  <div className="join mx-auto w-full shadow-xl flex flex-col md:flex-row">
+                    <Autocomplete
+                      className="input input-bordered join-item w-full md:text-left text-center rounded-xl"
+                      style={{ width: '100%' }}
+                      apiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
+                      onPlaceSelected={(place) => {
+                        const lat = place.geometry.location.lat();
+                        const lon = place.geometry.location.lng();
+                        setLon(lon);
+                        setLat(lat);
+                      }}
+                      options={{
+                        types: ['geocode', 'establishment'],
+                      }}
+                    />
                   </div>
-                )}
+                  {filter1.length > 0 && (
+                    <div className="md:flex md:flex-wrap pb-2 p-2">
+                      {filter1.map(({ category1, filter }, i) => (
+                        <button
+                          key={i}
+                          className="btn btn-xs bg-sky-900 text-white mr-2 "
+                          onClick={() => {
+                            const updatedFilter = filter1.filter(
+                              (_, index) => index !== i
+                            );
+                            setPage(0);
+                            setFilter1(updatedFilter);
+                            setCategory("");
+                            setCurrentMiddleCategory("");
+                            setSelectedFilters(selectedFilters.filter(item => item !== filter));
+                          }}
+                        >
+                          {`${filter} X`}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
               </div>
+
             </div>
           </div>
+
         </div>
-      </div>
-      <main>
-        <div className=" mx-auto bg-white rounded-xl shadow-xl p-4 max-w-5xl  flex flex-col  ">
           <div className="flex gap-4 flex-wrap p-2 border-b border-grey">
             {Object.entries(filterTypes1).map(([filterType, showYN], i) => ( // 中层大目录上
               <React.Fragment key={i}>
