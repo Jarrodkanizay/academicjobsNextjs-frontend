@@ -26,7 +26,7 @@ export default async function myPage() {
     {
       src: '/home/academic-faculty-positions.png',
       alt: 'Academic Faculty Positions',
-      label: 'Faculty111111',
+      label: 'Faculty',
       link: `australia/faculty`,
     },
 
