@@ -15,11 +15,8 @@ import SearchListResultsLoader from '@/components/loaders/SearchListResultsLoade
 import useURLParams from '@/utils/urlParams';
 
 export default function SearchResults2({
-  q,
-  l,
   filterOff = false,
   searchMessage = 'Jobs Found',
-  filter1,
 }) {
   console.log('==============SearchResults==================');
   const [page, setPage] = useState(0);
