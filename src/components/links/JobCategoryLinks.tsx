@@ -33,33 +33,33 @@ const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
       </li>
       <li className="hover:underline md:hidden">
         {/* <Link href='/student-jobs/'>Student{'  '}</Link> */}
-        <Link href="/student-jobs/">Student{'  '}</Link>
+        <Link href='/student-jobs/'>Student{'  '}</Link>
       </li>
 
       {nativeOn ? (
         <li className="hover:underline">
-          <Link href="/Australia/indigenous">Indigenous</Link>
+          <Link href='/Australia/indigenous'>Indigenous</Link>
         </li>
       ) : null}
       <li className="hover:underline">
         {/* <Link href='/graduate'> Graduate{'  '}</Link> */}
-        <Link href="/graduate"> Graduate{'  '}</Link>
+        <Link href='/graduate'> Graduate{'  '}</Link>
       </li>
       <li className="hover:underline">
         {/* <Link href='/postdoc'> Postdoc{'  '}</Link> */}
-        <Link href="/postdoc"> Postdoc{'  '}</Link>
+        <Link href='/postdoc'> Postdoc{'  '}</Link>
       </li>
       <li className="hover:underline md:hidden">
         {/* <Link href='/phd'>PhD</Link> */}
-        <Link href="/phd">PhD</Link>
+        <Link href='/phd'>PhD</Link>
       </li>
       <li className="hover:underline">
         {/* <Link href='/student-jobs'>Student</Link> */}
-        <Link href="/student-jobs">Student</Link>
+        <Link href='/student-jobs'>Student</Link>
       </li>
       <li className="hover:underline">
         {/* <Link href='/industry'>Industry</Link> */}
-        <Link href="/industry">Industry</Link>
+        <Link href='/industry'>Industry</Link>
       </li>
     </ul>
   );
