@@ -248,7 +248,7 @@ export default async function myPage() {
       <h2 className="underline-full">Academic Tips Of The Week</h2>
       <ScrollableCard />
       <div className=" mx-auto mt-8 mb-8">
-        <h2 className="underline-full"> Top University Employer Rankings</h2>
+        <h2 className="underline-full">Top University Employer Rankings</h2>
         <div className="bg-white flex flex-col">
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch mb-8 text-left">
             <div className="/academic-hub/happiness-and-academics/">
