@@ -187,12 +187,12 @@ export default async function myPage() {
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 mb-2">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li className="">
-              <Link href="/Australia/lecturer"> Lecturer</Link>
-              {/* <Link href="/australia/lecturer?r=Australia&filter0=%5B%7B%22category%22%3A%22PositionType%22%2C%22filter%22%3A%22Lecturer%2FInstructor%22%7D%5D"> Lecturer</Link> */}
+              {/* <Link href="/Australia/lecturer"> Lecturer</Link> */}
+              <Link href="/australia/lecturer?r=Australia&filter0=%5B%7B%22category%22%3A%22PositionType%22%2C%22filter%22%3A%22Lecturer%2FInstructor%22%7D%5D"> Lecturer</Link>
             </li>
             <li className="">
-              <Link href="/Australia/research"> Research </Link>
-              {/* <Link href="/australia/research?r=Australia&filter0=%255B%257B%2522category%2522%253A%2522PositionType%2522%252C%2522filter%2522%253A%2522Research%2522%257D%255D"> Research </Link> */}
+              {/* <Link href="/Australia/research"> Research </Link> */}
+              <Link href="/australia/research?r=Australia&filter0=%255B%257B%2522category%2522%253A%2522PositionType%2522%252C%2522filter%2522%253A%2522Research%2522%257D%255D"> Research </Link>
             </li>
             {/* <li className=" ">
               <Link href={{ pathname: "/faq", query: { r: "Australia" } }}>Professor1</Link>           
