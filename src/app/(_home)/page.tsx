@@ -230,7 +230,7 @@ export default async function myPage() {
         />
       </Link> */}
       <Link
-        href="/become-a-university-lecturer-earn-115k"
+        href="/become-a-university-lecturer-earn-115k?r=Australia&filter0=%5B%7B%22category%22%3A+%22PositionType%22%2C+%22filter%22%3A+%22Lecturer%2FInstructor%22%7D%5D"
         target="_blank"
       >
         <Image
