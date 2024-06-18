@@ -209,7 +209,7 @@ export default async function myPage() {
               <Link href='/australia/professor?r=Australia&filter0=[{"category":"PositionType","filter":"Professor"}]'> Professor</Link>
             </li>
 
-           
+
             {/* <li>
               <Link href="/australia/faculty"> Faculty</Link>
             </li> */}
@@ -312,7 +312,7 @@ export default async function myPage() {
       <div id="section" className="bg-slate-200 py-4 full-width mt-8">
         <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
           <h1 className="text-3xl md:text-6xl font-bold md:text-right text-gray-500 m-0 pb-8 px-7 md:px-0 ">
-              Academic & University Jobs&nbsp;Australia 
+            Academic & University Jobs&nbsp;Australia
           </h1>
 
           <div>
@@ -571,7 +571,7 @@ export default async function myPage() {
                 <div className="flex">
                   <div>
                     <Image
-                      src="https://www.academicjobs.com/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2F461011bcaf5b5e723e897c33f049f169_XL.jpg&w=256&q=75"
+                      src="https://www.academicjobs.com/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FAcademic%20Jobs%20Southern%20Cross%20University.png&w=256&q=75"
                       width={120}
                       height={120}
                       alt="University of New England (UNE) Logo"
@@ -579,24 +579,24 @@ export default async function myPage() {
                   </div>
                   <div className="ml-4">
                     <h3 className="m-0 text-[22px]">
-                      Professor in Indigenous Knowledges
+
+                      Workplace Relations Specialist
                     </h3>
                   </div>
                 </div>
                 <h4 className="m-0 text-sm">
-                  University of New England (UNE):{' '}
-                  <span className="font-normal">
-                    School of Humanities, Arts and Social Sciences (HASS)
-                  </span>
+                  Southern Cross University (SCU){' '}
+                  {/* <span className="font-normal">
+                  </span> */}
                 </h4>
                 <p className="text-sm m-0 text-gray-400">
-                  Closes 09 June, 2024
+                  Closes 07 July, 2024
                 </p>
 
                 <ul className=" p-4 pl-12 list-disc text-gray-500">
-                  <li className="text-sm">Continuing, full-time</li>
-                  <li className="text-sm">$197,560 per annum (Level E)</li>
-                  <li className="text-sm">Plus 17% employer superannuation</li>
+                  <li className="text-sm">Great salary with outstanding additional employment benefits and entitlements</li>
+                  <li className="text-sm">Full-time or part-time twelve (12) month opportunity</li>
+                  <li className="text-sm">17% superannuation, 17.5% leave loading, flexible work arrangements</li>
                   {/* <li>Salary packaging options are available</li>
                   <li className='text-sm'>
                     4 weeks annual leave plus Christmas week shutdown, per annum
@@ -604,13 +604,11 @@ export default async function myPage() {
                   <li className='text-sm'>Relocation assistance provided</li> */}
                 </ul>
                 <p className="text-sm">
-                  This role leads Indigenous Knowledges initiatives and
-                  curriculum updates. The ideal candidate has experience in
-                  digital course design and a strong research background.
+
                 </p>
                 <Link
                   className="btn btn-aj btn-sm ml-auto"
-                  href="/jobs/professor-in-indigenous-knowledges/115187"
+                  href="/jobs/workplace-relations-specialist/129758"
                 >
                   Learn more
                 </Link>
