@@ -177,7 +177,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 <span className="text-3xl font-bold text-black">
                   {formatNumberWithCommas(pricing.businessPrice)}
                 </span>
-                <p className="m-0 mt-[-4px] text-[12px]">/monthly</p>
+                <p className="m-0 mt-[-4px] text-[12px]">/per purchase</p>
               </span>
             </div>
           </div>
@@ -190,7 +190,30 @@ invoice for $${formatNumberWithCommas(price)}.
                 src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
               />
               <span className="ml-3">
-                Custom<span className="text-black"> end date</span>
+                30 day<span className="text-black"> job listings</span>
+              </span>
+            </li>
+            <li className="flex text-lg mb-2">
+              <Image
+                width="20"
+                height="20"
+                alt=""
+                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+              />
+              <span className="ml-3">
+                <span className="text-black">Free </span>employer account
+              </span>
+            </li>
+            <li className="flex text-lg mb-2">
+              <Image
+                width="20"
+                height="20"
+                alt=""
+                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+              />
+              <span className="ml-3">
+                Post<span className="text-black"> anytime </span>
+                <span className="text-[12px]">no expiry</span>
               </span>
             </li>
             <li className="flex text-lg mb-2">
@@ -213,10 +236,11 @@ invoice for $${formatNumberWithCommas(price)}.
                 src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
               />
               <span className="ml-3">
-                Post <span className="text-black"> 1-3 jobs per month</span>
+                23%
+                <span className="text-black"> cheaper</span> than Seek
               </span>
             </li>
-            <li className="flex text-lg mb-2">
+            {/* <li className="flex text-lg mb-2">
               <Image
                 width="20"
                 height="20"
@@ -232,16 +256,10 @@ invoice for $${formatNumberWithCommas(price)}.
                   )}
                 </span>
               </span>
-            </li>
-            <li className="flex text-lg mb-2">
-              ⭐{' '}
-              <span className="ml-3">
-                <span className="text-black">AHEIA Members Only</span>
-              </span>
-            </li>
+            </li> */}
           </ul>
           <a
-            href="https://buy.stripe.com/9AQbKofm04Qg0tafZk"
+            href="https://buy.stripe.com/dR629O4HmgyY1xe6oM"
             target="_blank"
             className="flex justify-center items-center bg-aj rounded-xl py-5 px-4 text-center text-white font-bold text-xl"
           >
@@ -283,8 +301,9 @@ invoice for $${formatNumberWithCommas(price)}.
                 src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
               />
               <span className="ml-3">
-                All
-                <span className="text-black"> {pricing.business} </span>features
+                EOFY
+                <span className="text-black"> special</span>{' '}
+                <span className="text-[12px]">(ends soon)</span>
               </span>
             </li>
             <li className="flex text-lg mb-2">
@@ -295,9 +314,8 @@ invoice for $${formatNumberWithCommas(price)}.
                 src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
               />
               <span className="ml-3">
-                EOFY
-                <span className="text-black"> special</span>{' '}
-                <span className="text-[12px]">(ends soon)</span>
+                All
+                <span className="text-black"> {pricing.business} </span>features
               </span>
             </li>
             <li className="flex text-lg mb-2">
