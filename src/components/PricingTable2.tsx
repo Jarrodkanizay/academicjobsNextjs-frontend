@@ -177,7 +177,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 <span className="text-3xl font-bold text-black">
                   {formatNumberWithCommas(pricing.businessPrice)}
                 </span>
-                <p className="m-0 mt-[-4px] text-[12px]">/per purchase</p>
+                <p className="m-0 mt-[-4px] text-[12px]">/per job pack</p>
               </span>
             </div>
           </div>
