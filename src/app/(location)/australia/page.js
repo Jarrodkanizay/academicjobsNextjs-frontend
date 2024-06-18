@@ -13,10 +13,10 @@ import JobOfTheWeek from '@/components/JobOfTheWeek';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
-    absolute: '  Academic Jobs Australia',
+    absolute: 'University and Academic Jobs Australia',
   },
   description:
-    'Browse through hundreds of opportunities in higher education and research across various disciplines and institutions in Australia today. ',
+    'Australia’s no 1 university jobs website! Seek 1,251 jobs in research, lecturer, science and faculty positions from leading universities in Australia.',
   keywords:
     'Academic Jobs Australia. university jobs Australia, Uni jobs Australia',
 };
@@ -311,10 +311,8 @@ export default async function myPage() {
 
       <div id="section" className="bg-slate-200 py-4 full-width mt-8">
         <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
-          <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
-            <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">
-              ACADEMIC&nbsp;JOBS Australia:
-            </span>{' '}
+          <h1 className="text-3xl md:text-6xl font-bold md:text-right text-gray-500 m-0 pb-8 px-7 md:px-0 ">
+              Academic & University Jobs&nbsp;Australia 
           </h1>
 
           <div>

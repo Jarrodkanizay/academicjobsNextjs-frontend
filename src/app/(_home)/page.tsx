@@ -11,15 +11,15 @@ import AmericaUniLogos from '@/components/AmericaUniLogos';
 import { getContentRegion } from '@/actions/getContentRegion';
 import TopJobs from '@/components/TopJobs';
 import JobOfTheWeek from '@/components/JobOfTheWeek';
-import ScrollableCard from '@/components/ScrollableCard'
+import ScrollableCard from '@/components/ScrollableCard';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: '  Academic Jobs: All Higher Ed Positions Locally and Globally.', //Option 2 overrides the title in layout.tsx
+    absolute: 'University and Academic Jobs: All Higher Ed Positions', //Option 2 overrides the title in layout.tsx
   },
   description:
-    'Search for academic positions, research, science and university staff jobs here. Find higher ed jobs at all universities today!',
+    'Find more than 11,000 uni jobs in research, postdoctoral, science, lecturer and university staff positions. New Higher Ed jobs added daily.',
   keywords:
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
@@ -190,11 +190,12 @@ export default async function myPage() {
       </ul>
       <div id="section" className="bg-slate-200 full-width py-4 mb-16">
         <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
-          <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 pb-8  md:px-0">
-            <span className="md:text-6xl font-bold text-gray-500 pb-4 ">
-              ACADEMIC JOBS: <br />
+          <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 md:px-0">
+            <span className="md:text-4xl font-bold text-gray-500 pb-4 inline-block">
+              University & Academic Jobs:
+              <br />
             </span>{' '}
-            Academic, research & science positions locally & globally
+            All Higher Ed positions
           </h1>
           <div>
             <p className="md:px-7 mb-4 mt-1">
@@ -247,7 +248,7 @@ export default async function myPage() {
       <h2 className="underline-full">Academic Tips Of The Week</h2>
       <ScrollableCard />
       <div className=" mx-auto mt-8 mb-8">
-        <h2 className="underline-full"> Top University Employer Rankings</h2>
+        <h2 className="underline-full">Top University Employer Rankings</h2>
         <div className="bg-white flex flex-col">
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch mb-8 text-left">
             <div className="/academic-hub/happiness-and-academics/">
