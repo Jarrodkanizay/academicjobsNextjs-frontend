@@ -40,7 +40,7 @@ export default async function myPage() {
       src: '/home/academic-human-resource-positions.png',
       alt: 'Academic Human Resource Positions',
       label: 'HR Jobs',
-      link: `australia/hr-jobs`,
+      link: `australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human%20Resources"}]`,
     },
 
     {
