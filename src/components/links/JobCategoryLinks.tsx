@@ -1,9 +1,7 @@
 import Link from 'next/link';
-
 type JobCategoryLinksProps = {
   nativeOn?: boolean;
 };
-
 const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
   return (
     <ul className="faculty-container flex flex-wrap gap-3 md:gap-4 items-center justify-center text-[#f4a10c] px-2 mb-2">
@@ -33,36 +31,38 @@ const JobCategoryLinks = ({ nativeOn }: JobCategoryLinksProps) => {
       </li>
       <li className="hover:underline md:hidden">
         {/* <Link href='/student-jobs/'>Student{'  '}</Link> */}
-        <Link href='/student-jobs/'>Student{'  '}</Link>
+        <Link href="/student-jobs/">Student{'  '}</Link>
       </li>
-
       {nativeOn ? (
         <li className="hover:underline">
-          <Link href='/Australia/indigenous'>Indigenous</Link>
+          <Link href="/Australia/indigenous">Indigenous</Link>
         </li>
       ) : null}
       <li className="hover:underline">
         {/* <Link href='/graduate'> Graduate{'  '}</Link> */}
-        <Link href='/graduate'> Graduate{'  '}</Link>
+        <Link href="/graduate"> Graduate{'  '}</Link>
       </li>
       <li className="hover:underline">
         {/* <Link href='/postdoc'> Postdoc{'  '}</Link> */}
-        <Link href='/postdoc'> Postdoc{'  '}</Link>
+        {/* <Link href='/postdoc?r=Global&filter0=[{"category":"thirdcategory","filter":"Postdoctoral Jobs"}]'></Link> */}
+        <Link href='/postdoc?r=Global&q=postdoc'>
+          {' '}
+          Postdoc{'  '}
+        </Link>
       </li>
       <li className="hover:underline md:hidden">
         {/* <Link href='/phd'>PhD</Link> */}
-        <Link href='/phd'>PhD</Link>
+        <Link href="/phd">PhD</Link>
       </li>
       <li className="hover:underline">
         {/* <Link href='/student-jobs'>Student</Link> */}
-        <Link href='/student-jobs'>Student</Link>
+        <Link href="/student-jobs">Student</Link>
       </li>
       <li className="hover:underline">
         {/* <Link href='/industry'>Industry</Link> */}
-        <Link href='/industry'>Industry</Link>
+        <Link href="/industry">Industry</Link>
       </li>
     </ul>
   );
 };
-
 export default JobCategoryLinks;
