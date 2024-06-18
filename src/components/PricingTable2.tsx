@@ -26,6 +26,20 @@ const PricingTable = () => {
     enterprisePrice: 888,
   };
 
+  const stripeLink = {
+    Australia: 'TBA',
+    Asia: 'TBA?region=asia',
+    Africa: 'TBA?region=africa',
+    Canada: 'TBA?region=canada',
+    Europe: 'TBA?region=europe',
+    India: 'TBA?region=india',
+    'South America': 'TBA?region=south-america',
+    'Middle East': 'TBA?region=middle-east',
+    'New Zealand': 'TBA?region=new-zealand',
+    'United Kingdom': 'TBA?region=united-kingdom',
+    USA: 'TBA?region=usa',
+  };
+
   const emailAJ = 'advertise@academicjobs.com';
 
   const subjectBasic = `I would like to buy a ${pricing.basic}`;
@@ -74,7 +88,7 @@ invoice for $${formatNumberWithCommas(price)}.
               width="150"
               height="150"
               alt=""
-              src="https://res.cloudinary.com/williamsondesign/abstract-3.jpg"
+              src="/icons/abstract-orange.jpg"
               className="rounded-3xl w-20 h-20"
             />
             <div className="ml-5">
@@ -98,7 +112,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 30 day single<span className="text-black"> job listing</span>
@@ -109,7 +123,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 <span className="text-black">Free </span>employer account
@@ -121,7 +135,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 Edit job postings
@@ -133,7 +147,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 Academic
@@ -163,7 +177,7 @@ invoice for $${formatNumberWithCommas(price)}.
               width="150"
               height="150"
               alt=""
-              src="https://res.cloudinary.com/williamsondesign/abstract-2.jpg"
+              src="/icons/abstract-blue.jpg"
               className="rounded-3xl w-20 h-20"
             />
             <div className="ml-5">
@@ -187,7 +201,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 30 day<span className="text-black"> job listings</span>
@@ -198,7 +212,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 <span className="text-black">Free </span>employer account
@@ -209,7 +223,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 Post<span className="text-black"> anytime </span>
@@ -221,7 +235,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 Edit job postings
@@ -233,7 +247,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 23%
@@ -245,7 +259,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 <span className="text-black">
@@ -274,7 +288,7 @@ invoice for $${formatNumberWithCommas(price)}.
               width="150"
               height="150"
               alt=""
-              src="https://res.cloudinary.com/williamsondesign/abstract-1.jpg"
+              src="/icons/abstract-green.jpg"
               className="rounded-3xl w-20 h-20"
             />
             <div className="ml-5">
@@ -298,7 +312,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 EOFY
@@ -311,7 +325,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 All
@@ -323,7 +337,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 1 <span className="text-black"> featured listing </span>
@@ -335,7 +349,7 @@ invoice for $${formatNumberWithCommas(price)}.
                 width="20"
                 height="20"
                 alt=""
-                src="https://res.cloudinary.com/williamsondesign/check-grey.svg"
+                src="/icons/check-grey.svg"
               />
               <span className="ml-3">
                 Talent Acquisition <span className="text-black"> support</span>
