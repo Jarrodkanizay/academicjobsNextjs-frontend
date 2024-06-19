@@ -56,8 +56,8 @@ export default function myPage() {
             <div className="flex-shrink-0 pb-8">
               <a href="https://www.vecteezy.com/free-png/education" target="_blank">
                 <Image
-                  width={613}
-                  height={529}
+                  width={550}
+                  height={400}
                   alt="Considering becoming a university lecturer in Australia? Learn about the rewarding career path, growth opportunities, required skills, and salary expectations"
                   className="w-full h-auto"
                   src="/blogs/postdoctoral-success-how-to-thrive-in-your-research-role/postdoc-banner.png"

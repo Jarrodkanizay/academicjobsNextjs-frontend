@@ -91,15 +91,12 @@ const Carousel = () => {
           <div className="ml-0 md:ml-4 mt-4 md:mt-0 p-6 md:p-16">
             <a href="/how-to-excel-as-a-research-assistant-in-australia">
               <h2 style={{ color: 'white' }}>
-                How to excel as a research assistant in Australia?
+                Ready for a Postdoc? Here’s How to Stand Out!
               </h2>
             </a>
             <p className="block text-base mb-4">
-              Thinking about a career as a research assistant in Australia?
-              You’re in the right place! This exciting opportunity provides
-              valuable experience and opens doors in both academic and industry
-              research. Here’s everything you need to know to get started and
-              excel as a research assistant in Australia.
+                Are you nearing the end of your PhD and wondering what the next step in your academic career should be? A postdoctoral position could be a great way to expand your research expertise and enhance your academic credentials.            
+                In this article, we’ll dive into what it means to be a postdoc, how to secure a position, and how to thrive in this role. We’ll also introduce you to a valuable resource for finding postdoctoral opportunities.
             </p>
             <button
               className="btn btn-aj"
