@@ -26,19 +26,19 @@ const PricingTable = () => {
     enterprisePrice: 888,
   };
 
-  const stripeLink = {
-    Australia: 'TBA',
-    Asia: 'TBA?region=asia',
-    Africa: 'TBA?region=africa',
-    Canada: 'TBA?region=canada',
-    Europe: 'TBA?region=europe',
-    India: 'TBA?region=india',
-    'South America': 'TBA?region=south-america',
-    'Middle East': 'TBA?region=middle-east',
-    'New Zealand': 'TBA?region=new-zealand',
-    'United Kingdom': 'TBA?region=united-kingdom',
-    USA: 'TBA?region=usa',
-  };
+  // const stripeLink3JobPack = {
+  //   Australia: 'TBA',
+  //   Asia: 'TBA?region=asia',
+  //   Africa: 'TBA?region=africa',
+  //   Canada: 'TBA?region=canada',
+  //   Europe: 'TBA?region=europe',
+  //   India: 'TBA?region=india',
+  //   'South America': 'TBA?region=south-america',
+  //   'Middle East': 'TBA?region=middle-east',
+  //   'New Zealand': 'TBA?region=new-zealand',
+  //   'United Kingdom': 'TBA?region=united-kingdom',
+  //   USA: 'TBA?region=usa',
+  // };
 
   const emailAJ = 'advertise@academicjobs.com';
 
