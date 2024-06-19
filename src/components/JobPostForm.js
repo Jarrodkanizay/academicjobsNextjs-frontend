@@ -1,20 +1,15 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import InputBlock from '@/components/forms/InputBlock';
 import { useForm } from 'react-hook-form';
 import { useMutation } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { jobElephantContacts } from '@/data/jobElephantContacts';
 import Image from 'next/image';
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
 import Speedo from '@/components/icons/Speedo';
 import Tiptap from './Tiptap';
 
 const stripeLink = {
-  JobElephant: 'https://buy.stripe.com/6oE3dSddS3Mc6Ry3ce',
   Australia: 'https://buy.stripe.com/dR6eWA6PuaaA7VC6ov',
   Asia: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=asia',
   Africa: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=africa',
@@ -29,8 +24,7 @@ const stripeLink = {
     'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=united-kingdom',
   USA: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=usa',
 };
-const JobPostForm = ({ partner, region = 'USA' }) => {
-  const [content1, setContent1] = useState('');
+const JobPostForm = ({ region = 'USA' }) => {
   const [jobURLLink, setJobURLLink] = useState(false);
 
   const handleContentChange = (reason) => {
@@ -57,26 +51,10 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
     const selectedRegion = selectedOption.text;
     setRegion(selectedRegion);
   };
-  let avatarPath = '';
-  let textColor = 'text-aj';
   let partnerName = 'AcademicJobs';
-  let partnerLogo = '';
   let partnerImage = '/partners/post-a-job.jpg';
-  let partnerPullDown = false;
   let institutionName = `Institution Name (ie: Harvard University)`;
   let urlExample = `uni-name.edu/job-posting-url`;
-  if (partner === 'JobElephant') {
-    partnerPullDown = true;
-    partnerName = partner;
-    institutionName = `${partnerName} (ie: Utah University)`;
-    textColor = 'text-emerald-600';
-    partnerLogo =
-      'https://academicjobs.s3.amazonaws.com/img/_misc/proudly-working-with.png';
-    partnerImage =
-      'https://academicjobs.s3.amazonaws.com/img/_misc/jobelephant-puzzle.png';
-    avatarPath = '/partners/jobelephant/avatars/';
-    urlExample = `apptrkr.com/...`;
-  }
   useEffect(() => {
     //alert(partnerName)
     if (partnerName === '' || partnerName === 'AcademicJobs') {
@@ -148,112 +126,12 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
             </h1>
             <form className=" " onSubmit={handleSubmit(onSubmit)}>
               <div className="flex flex-col gap-4 justify-start">
-                {standardMode ? null : (
-                  <div className="w-full  flex flex-col items-start">
-                    <label className="label-text text-xs mb-1">
-                      Name (JobElephant person posting the job)
-                    </label>
-                    <select
-                      className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500"
-                      {...register('01_Name_Job_Elephant')}
-                      onChange={(e) => {
-                        if (partnerName === 'JobElephant') {
-                          setValue('01_Organisation_Name', 'JobElephant');
-                        }
-                        if (e.target.value === 'Add Contact') {
-                          setNewContact(true);
-                          setSelectedContact(null);
-                          setValue('00_First_Name', '');
-                          setValue('00_Last_Name', '');
-                          setValue('02_Email', '');
-                        } else {
-                          setNewContact(false);
-                          const selectedContact = jobElephantContacts.find(
-                            (contact) =>
-                              `${contact.firstName} ${contact.lastName} - ${contact.email}` ===
-                              e.target.value
-                          );
-                          setSelectedContact(selectedContact);
-                          if (selectedContact) {
-                            setValue(
-                              '00_First_Name',
-                              selectedContact.firstName
-                            );
-                            setValue('00_Last_Name', selectedContact.lastName);
-                            setValue('02_Email', selectedContact.email);
-                          }
-                        }
-                      }}
-                    >
-                      <option value="SelectContact" disabled selected>
-                        Select Contact
-                      </option>
-                      {jobElephantContacts.map((el, index) => (
-                        <>
-                          <option
-                            key={index}
-                            value={`${el.firstName} ${el.lastName} - ${el.email}`}
-                          >
-                            {`${el.firstName} ${el.lastName} - ${el.email}`}
-                          </option>
-                        </>
-                      ))}
-                      <option value="Add Contact">Add Contact</option>
-                    </select>
-                  </div>
-                )}
-                <div className="flex items-center gap-4">
-                  {selectedContact && selectedContact.avatar && (
-                    <>
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <Image
-                        src={`${avatarPath}${selectedContact.avatar}`}
-                        alt="Avatar"
-                        width={100} // replace with your desired width
-                        height={100} // replace with your desired height
-                      />
-                      <p className="mt-3">
-                        Hi <b>{selectedContact.firstName}</b>, welcome to your
-                        quick post form.
-                      </p>
-                    </>
-                  )}
-                </div>
                 <div
                   className={`${
                     newContact || standardMode ? 'show-form' : 'hide-form'
                   }`}
                 >
                   <div className="grid w-full items-center gap-1.5">
-                    {partnerName === 'JobElephant' ? null : (
-                      <>
-                        <label
-                          htmlFor="currency"
-                          className="label-text text-xs"
-                        >
-                          Region
-                        </label>
-                        <select
-                          id="currency"
-                          value={selectedCurrency}
-                          onChange={handleChange}
-                          name="currency"
-                          className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500 mb-4"
-                          required
-                        >
-                          <option value="" selected>
-                            Which Region are you from?
-                          </option>
-                          {Object.keys(stripeLink)
-                            .filter((key) => key !== 'JobElephant')
-                            .map((key) => (
-                              <option key={key} value={stripeLink[key]}>
-                                {key}
-                              </option>
-                            ))}
-                        </select>
-                      </>
-                    )}
                     <InputBlock
                       register={register}
                       errors={errors}
@@ -407,17 +285,6 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                 </button>
               </div>
             </form>
-            {partnerLogo !== '' ? (
-              <picture className="min-w-full max-w-2xl mx-auto mt-16">
-                <Image
-                  width={800}
-                  height={380}
-                  src={partnerLogo ? partnerLogo : ''}
-                  alt={`${partnerName ? partnerLogo : ''} logo`}
-                  className="mx-auto bg-gray-200"
-                />
-              </picture>
-            ) : null}
           </div>
           {/* Right panel */}
           <div className="relative">
@@ -427,16 +294,13 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
                 Post a job in 32 seconds saving you 8 minutes each time!{' '}
               </h2>
             </div>
-            {/* <h3 className={`${textColor} mb-4`}>
-              Welcome to the new {partnerName} Quick Job Post Technology form.
-            </h3> */}
             <div className="=absolute inset-0 flex justify-center items-center">
               <Image
                 width={500}
                 height={500}
                 src={partnerImage}
-                className="object-containr"
-                alt="AcademicJobs and JobElephant Partnership"
+                className="object-container"
+                alt="Academic Jobs Quick Post Technology"
               />
             </div>
             <div className="prose">

@@ -15,6 +15,11 @@ export default function myPage() {
   return (
     <>
       <main>
+        {/* Pricing Table */}
+        <section className="container mx-auto px-4">
+          <PricingTable2 />
+        </section>
+
         {/* Hero banner */}
         <section>
           <div className="hero max-h-fit bg-slate-200 py-8 mx-auto">
@@ -41,22 +46,13 @@ export default function myPage() {
                     understand the importance of finding the right talent, and
                     we go above and beyond to help you achieve this.
                   </p>
-                  <Link
-                    className="btn btn-aj"
-                    href="/post-a-job"
-                    // href="https://www.postmyjob.online/academicjobs-job-portal"
-                  >
-                    Post a Job Today
-                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
         {/* Main Content */}
-        <section className="container mx-auto px-4">
-          <PricingTable2 />
-
+        <section className="container mx-auto px-4 mt-24">
           <h2 className="text-left mb-4 md:px-10 text-xl font-bold">
             Connect with the Global Academic Elite on the Premier Job Board
           </h2>
