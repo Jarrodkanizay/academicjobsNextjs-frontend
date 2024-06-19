@@ -1,4 +1,4 @@
-import JobPostForm from '@/components/JobPostForm';
+import JobPostJobElephantForm from '@/components/JobPostJobElephantForm';
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
   // title: 'Jobelephant post a job form', //Option 1 replaces the %s in layout.tsx
@@ -11,6 +11,6 @@ export const metadata: Metadata = {
 };
 
 const PostJobPage = () => {
-  return <JobPostForm partner="JobElephant" region="JobElephant" />;
+  return <JobPostJobElephantForm partner="JobElephant" region="JobElephant" />;
 };
 export default PostJobPage;
