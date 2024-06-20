@@ -137,7 +137,7 @@ const Carousel = () => {
               </h2>
             </a>
             <p className="hidden text-base mb-4  md:block">
-              Don’t let your academic resume fall to the bottom of the stack. Whether you're aiming for a or a role, having the right academic resume can make all the difference. Here’s how to make sure your resume stands out for you to land that perfect academic job.
+              Don’t let your academic resume fall to the bottom of the stack. Whether you're aiming for a research position or a teaching role, having the right academic resume can make all the difference. Here’s how to make sure your resume stands out for you to land that perfect academic job.
             </p>
             <p className='block text-base mb-4  md:hidden'>Here’s how to make sure your resume stands out for you to land that perfect academic job.</p>
             <button
