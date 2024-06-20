@@ -8,45 +8,23 @@ import { StarRank } from '@/components/StarRank';
 const JobOfTheWeek = () => {
     const jobData = [
         {
-            company_name: "Bond University",
-            logo: "bond-logo.webp",
-            title: "Appointment of Executive Dean (Level E) | Bond Business School",
+            company_name: "Australian National University (ANU)",
+            title: "Associate Research Fellow",
             ranking: 5,
-            location: "14 University Dr, Robina QLD 4226, Australia",
-            jobPostLink: "/jobs/appointment-of-executive-dean-level-e-bond-business-school/111856",
-            employerLink: "/employers/bond-university/3785",
-            applyNowLink: "https://www.academicjobs.com/jobs/appointment-of-executive-dean-level-e-bond-business-school/111856"
+            location: "Canberra ACT 2601, Australia",
+            jobPostLink: "/jobs/associate-research-fellow/123216",
+            employerLink: "/employers/australian-national-university-anu-/3739",
+            applyNowLink: "https://jobs.anu.edu.au/jobs/associate-research-fellow-canberra-act-act-australia"
         },
         {
-            company_name: "Bond University",
-            logo: "bond-logo.webp",
-            title: "Professor / Associate Professor of Genetics (Level E / Level D)",
+            company_name: "Australian National University (ANU)",
+            title: "Software Engineer",
             ranking: 5,
-            location: "14 University Dr, Robina QLD 4226, Australia",
-            jobPostLink: "/jobs/professor-associate-professor-of-genetics-level-e-level-d-/115945",
-            employerLink: "/employers/bond-university/3785",
-            applyNowLink: "https://bond.edu.au/jobs/8139/professor-associate-professor-of-genetics-level-e-level-d"
-        },
-        {
-            company_name: "Bond University",
-            logo: "bond-logo.webp",
-            title: "Student Administration and Compliance Officer",
-            ranking: 5,
-            location: "14 University Dr, Robina QLD 4226, Australia",
-            jobPostLink: "/jobs/student-administration-and-compliance-officer/117741",
-            employerLink: "/employers/bond-university/3785",
-            applyNowLink: "https://bond.edu.au/jobs/7811/student-administration-and-compliance-officer"
-        },
-        {
-            company_name: "Bond University",
-            logo: "bond-logo.webp",
-            title: "International Student Transition Project Officer",
-            ranking: 5,
-            location: "14 University Dr, Robina QLD 4226, Australia",
-            jobPostLink: "/jobs/international-student-transition-project-officer/117740",
-            employerLink: "/employers/bond-university/3785",
-            applyNowLink: "https://bond.edu.au/jobs/8146/international-student-transition-project-officer"
-        },    ];
+            location: "Canberra ACT 2601, Australia",
+            jobPostLink: "/jobs/software-engineer/128794",
+            employerLink: "/employers/australian-national-university-anu-/3739",
+            applyNowLink: "https://jobs.anu.edu.au/jobs/software-engineer-canberra-act-act-australia-ac84064d-620a-4215-9a97-760674b12eb8"
+        } ];
 
         return (
             <div className="w-full mx-auto mb-8">
@@ -68,6 +46,7 @@ const JobOfTheWeek = () => {
                                         </Link> */}
                                         <div className="w-full flex-1">
                                             <a href={job.jobPostLink} className="flex">
+                                                <h3 className="flex-1 text-2xl font-bold mb-2 text-black">{job.title}</h3>
                                                 <h2 className="flex-1 text-2xl font-bold mb-2 text-black">{job.title}</h2>
                                             </a>
     
