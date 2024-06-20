@@ -31,7 +31,7 @@ export default function myPage() {
       {
         '@type': 'Person',
         name: 'Raymond',
-        url: 'https://www.academicjobs.com/about',
+        url: 'https://www.academicjobs.com/about/team/raymond-mulyawan',
       },
     ],
   };
@@ -46,8 +46,9 @@ export default function myPage() {
               <h1 className="m-0">
                 How to Excel as a Research Assistant in Australia
               </h1>
-              <h3 className="m-0 mb-10 text-pink-600">By Raymond Mulyawan</h3>
-
+              <a href="/about/team/raymond-mulyawan">
+                <h3 className="m-0 mb-10 text-pink-600">By Raymond Mulyawan</h3>
+              </a>
               <p>
                 Thinking about a career as a{' '}
                 <a

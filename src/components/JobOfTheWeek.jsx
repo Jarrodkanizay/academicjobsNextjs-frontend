@@ -47,7 +47,6 @@ const JobOfTheWeek = () => {
                                         <div className="w-full flex-1">
                                             <a href={job.jobPostLink} className="flex">
                                                 <h3 className="flex-1 text-2xl font-bold mb-2 text-black">{job.title}</h3>
-                                                <h2 className="flex-1 text-2xl font-bold mb-2 text-black">{job.title}</h2>
                                             </a>
     
                                             <div className="job_post_header_panel text-sm text-gray-600 mb-16">

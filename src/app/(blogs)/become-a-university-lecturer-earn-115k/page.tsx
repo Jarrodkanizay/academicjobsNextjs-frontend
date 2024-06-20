@@ -7,9 +7,8 @@ import SearchResults2 from '@/components/SearchResults3';
 import { url } from 'inspector';
 
 export const metadata: Metadata = {
-  // title: `Become a University Lecturer in Australia: Earn $115k!`, //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: 'Become a University Lecturer in Australia: Earn $115k!', //Option 2 overrides the title in layout.tsx
+    absolute: 'Become a University Lecturer in Australia: Earn $115k!', 
   },
   description:
     'How to become a university lecturer in Australia: Earn up to 150k. 1. Complete a bachelor degree 2. Pursue postgraduate studies 3. Gain teaching experience.',
@@ -34,7 +33,7 @@ export default function myPage() {
       {
         '@type': 'Person',
         name: 'Academic Jobs',
-        url: 'https://www.academicjobs.com/about',
+        url: 'https://www.academicjobs.com/about/team/raymond-mulyawan',
       },
     ],
   };
@@ -49,8 +48,9 @@ export default function myPage() {
               <h1 className="m-0">
                 Become a University Lecturer in Australia: Earn $115k!
               </h1>
-              <h3 className="m-0 mb-10 text-pink-600">By Raymond Mulyawan</h3>
-
+              <a href="/about/team/raymond-mulyawan">
+                <h3 className="m-0 mb-10 text-pink-600">By Raymond Mulyawan</h3>
+              </a>
               <p>
                 Thinking of becoming a university lecturer in Australia?
                 Fantastic choice! This career path is not only rewarding but

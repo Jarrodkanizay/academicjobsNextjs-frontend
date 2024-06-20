@@ -30,8 +30,8 @@ export default function myPage() {
     author: [
       {
         '@type': 'Person',
-        name: 'Raymond',
-        url: 'https://www.academicjobs.com/about',
+        name: 'Raymond Mulyawan',
+        url: 'https://www.academicjobs.com/about/team/raymond-mulyawan',
       },
     ],
   };
@@ -46,8 +46,9 @@ export default function myPage() {
               <h1 className="m-0">
                 Ready for a Postdoc? Here’s How to Stand Out!
               </h1>
-              <h3 className="m-0 mb-10 text-pink-600">By Raymond Mulyawan</h3>
-
+              <a href="/about/team/raymond-mulyawan">
+                <h3 className="m-0 mb-10 text-pink-600">By Raymond Mulyawan</h3>
+              </a>
               <p>
                 Are you nearing the end of your PhD and wondering what the next
                 step in your academic career should be? A postdoctoral position
