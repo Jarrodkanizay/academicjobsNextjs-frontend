@@ -64,8 +64,8 @@ export default function JobSearchBox() {
         //   q3 = `filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
         // }
         // router.push(`/jobs-advanced-search?r=${country}&${q3}`
-                  let q3 = ""
-            if (cfRef.current) {
+        let q3 = ""
+        if (cfRef.current) {
           q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
         } else {
           if (keyWordRef.current.trim()) {
@@ -73,7 +73,6 @@ export default function JobSearchBox() {
           }
         }
         router.push(`/jobs-advanced-search?r=${country}&${q3}`);
-
       } catch (error) {
         console.log('Error:', error);
       }
@@ -91,8 +90,7 @@ export default function JobSearchBox() {
             onSelect={onEditorStateSelect}
             onInputChange={onInputChange}
             className="w-full"
-            ref={keyWordRef}
-          />
+             />
         </div>
         <button
           className="h-[50px] ml-auto px-4 py-2 bg-[#f4a10c] w-full md:w-auto text-white rounded-md rounded-b-lg hover:bg-orange-600 animate-pulse font-bold shadow-md"
