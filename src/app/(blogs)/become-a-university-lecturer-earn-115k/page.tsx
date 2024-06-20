@@ -46,7 +46,11 @@ export default function myPage() {
         <section className="custom-background full-width mb-16">
           <div className="container py-16 flex flex-col lg:flex-row gap-2">
             <div className="flex flex-col justify-center">
-              <h1>Become a University Lecturer in Australia: Earn $115k!</h1>
+              <h1 className="m-0">
+                Become a University Lecturer in Australia: Earn $115k!
+              </h1>
+              <h3 className="m-0 mb-10 text-pink-600">By Raymond Mulyawan</h3>
+
               <p>
                 Thinking of becoming a university lecturer in Australia?
                 Fantastic choice! This career path is not only rewarding but

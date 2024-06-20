@@ -23,7 +23,7 @@ export default function myPage() {
     image: [
       'https://www.academicjobs.com/blogs/postdoctoral-success-how-to-thrive-in-your-research-role/authentic-book-club-scene.jpg',
       'https://www.academicjobs.com/blogs/postdoctoral-success-how-to-thrive-in-your-research-role/postdoc-banner.png',
-      'https://www.academicjobs.com/blogs/postdoctoral-success-how-to-thrive-in-your-research-role/postdoc-funding.png'
+      'https://www.academicjobs.com/blogs/postdoctoral-success-how-to-thrive-in-your-research-role/postdoc-funding.png',
     ],
     datePublished: '2024-06-19T19:00:00+10:00',
     dateModified: '2024-06-19T18:05:00+10:00',
@@ -43,18 +43,32 @@ export default function myPage() {
         <section className="custom-background full-width mb-16">
           <div className="container py-16 flex flex-col lg:flex-row gap-2">
             <div className="flex flex-col justify-center">
-              <h1>Ready for a Postdoc? Here’s How to Stand Out!</h1>
+              <h1 className="m-0">
+                Ready for a Postdoc? Here’s How to Stand Out!
+              </h1>
+              <h3 className="m-0 mb-10 text-pink-600">By Raymond Mulyawan</h3>
+
               <p>
-                Are you nearing the end of your PhD and wondering what the next step in your academic career should be? A postdoctoral position could be a great way to expand your research expertise and enhance your academic credentials.              </p>
+                Are you nearing the end of your PhD and wondering what the next
+                step in your academic career should be? A postdoctoral position
+                could be a great way to expand your research expertise and
+                enhance your academic credentials.{' '}
+              </p>
               <p className="pb-8">
-                In this article, we’ll dive into what it means to be a postdoc, how to secure a position, and how to thrive in this role. We’ll also introduce you to a valuable resource for finding postdoctoral opportunities.
+                In this article, we’ll dive into what it means to be a postdoc,
+                how to secure a position, and how to thrive in this role. We’ll
+                also introduce you to a valuable resource for finding
+                postdoctoral opportunities.
               </p>
               <Link href="/postdoc" className="btn btn-aj w-44">
                 Find Post Doc Jobs
               </Link>
             </div>
             <div className="flex-shrink-0 pb-8">
-              <a href="https://www.vecteezy.com/free-png/education" target="_blank">
+              <a
+                href="https://www.vecteezy.com/free-png/education"
+                target="_blank"
+              >
                 <Image
                   width={550}
                   height={400}
@@ -112,15 +126,21 @@ export default function myPage() {
               What is Postdoctoral Research?
             </h2>
             <p>
-              A postdoctoral research, or postdoc, is a training-focused fellowship for someone who has completed their PhD. During a postdoc, individuals engage in further academic research to deepen their expertise and prepare them for high-level research roles in the future.
+              A postdoctoral research, or postdoc, is a training-focused
+              fellowship for someone who has completed their PhD. During a
+              postdoc, individuals engage in further academic research to deepen
+              their expertise and prepare them for high-level research roles in
+              the future.
             </p>
             <p>
-              For instance, a person who has completed a doctorate program in virology can choose to become a research fellow and research more on the effects and spread of viruses.
+              For instance, a person who has completed a doctorate program in
+              virology can choose to become a research fellow and research more
+              on the effects and spread of viruses.
             </p>
             <p>
-              While a majority of postdocs are in the STEM field, positions in social sciences and humanity are becoming more common.
+              While a majority of postdocs are in the STEM field, positions in
+              social sciences and humanity are becoming more common.
             </p>
-
           </div>
         </section>
 
@@ -134,20 +154,29 @@ export default function myPage() {
               <p>A postdoc research fellow perform various duties:</p>
               <ul>
                 <li>
-                  <strong>Research and Experimentation: </strong> Contributing independent research projects or to larger research teams. This involves designing experiments, collecting data and analysing results.
+                  <strong>Research and Experimentation: </strong> Contributing
+                  independent research projects or to larger research teams.
+                  This involves designing experiments, collecting data and
+                  analysing results.
                 </li>
                 <li>
-                  <strong>Publishing findings:</strong>  Using data from experimentation and research, postdocs often publish articles for academic journals and members of the industry. Regular publications are crucial to build a good reputation and secure tenure track position.
+                  <strong>Publishing findings:</strong> Using data from
+                  experimentation and research, postdocs often publish articles
+                  for academic journals and members of the industry. Regular
+                  publications are crucial to build a good reputation and secure
+                  tenure track position.
                 </li>
                 <li>
-                  <strong>Mentorship and teaching:</strong> Supervising graduate students and assisting in teaching responsibilities.
+                  <strong>Mentorship and teaching:</strong> Supervising graduate
+                  students and assisting in teaching responsibilities.
                 </li>
                 <li>
-                  <strong>Grant writing:</strong>  Postdoc fellows may help professors and education leaders to prepare grant applications to secure research fundings.
+                  <strong>Grant writing:</strong> Postdoc fellows may help
+                  professors and education leaders to prepare grant applications
+                  to secure research fundings.
                 </li>
               </ul>
             </section>
-
 
             {/* How to */}
             <section>
@@ -162,7 +191,10 @@ export default function myPage() {
                   h2Class="text-left w-full"
                 >
                   <p className="text-left">
-                    The pre-requisite to become a postdoc researcher is to obtain a doctoral degree. You can obtain a Doctor of Philosophy (PHD), Doctor of Medicine (MD) or Doctor of Dental Surgery (D.D.S).
+                    The pre-requisite to become a postdoc researcher is to
+                    obtain a doctoral degree. You can obtain a Doctor of
+                    Philosophy (PHD), Doctor of Medicine (MD) or Doctor of
+                    Dental Surgery (D.D.S).
                   </p>
                 </Card>
 
@@ -173,7 +205,11 @@ export default function myPage() {
                   h2Class="text-left w-full"
                 >
                   <p className="text-left">
-                    To be competitive for postdoc positions, you need more than just a completed PHD. You need to demonstrate strong research skills of between 2-5 years. Consider obtaining research experience from an education or professional program.
+                    To be competitive for postdoc positions, you need more than
+                    just a completed PHD. You need to demonstrate strong
+                    research skills of between 2-5 years. Consider obtaining
+                    research experience from an education or professional
+                    program.
                   </p>
                 </Card>
 
@@ -185,8 +221,11 @@ export default function myPage() {
                   h2Class="text-left w-full"
                 >
                   <p className="text-left">
-                    When selecting a postdoc, consider factors such as the research focus, the reputation of the institution, and the potential for professional growth. Align the postdoc with your long-term career goals to ensure it enhances your professional trajectory
-
+                    When selecting a postdoc, consider factors such as the
+                    research focus, the reputation of the institution, and the
+                    potential for professional growth. Align the postdoc with
+                    your long-term career goals to ensure it enhances your
+                    professional trajectory
                   </p>
                 </Card>
 
@@ -198,56 +237,102 @@ export default function myPage() {
                   h2Class="text-left w-full"
                 >
                   <p className="text-left">
-                    It is important to craft a strong CV and cover letter: Tailor these documents to highlight your research achievements and alignment with the postdoc position.
+                    It is important to craft a strong CV and cover letter:
+                    Tailor these documents to highlight your research
+                    achievements and alignment with the postdoc position.
                   </p>
                   <p className="text-left">
-                    Consider writing a compelling research proposal: Clearly outline your research plans and how they fit with the prospective mentor’s lab​.
+                    Consider writing a compelling research proposal: Clearly
+                    outline your research plans and how they fit with the
+                    prospective mentor’s lab​.
                   </p>
                   <p className="text-left">
-                    Finally, preparing for interviews: Be ready to discuss your previous research, your future plans, and how you can contribute to the lab​.
+                    Finally, preparing for interviews: Be ready to discuss your
+                    previous research, your future plans, and how you can
+                    contribute to the lab​.
                   </p>
                 </Card>
               </div>
             </section>
 
             <section>
-              <h2 className="gray-blue underline-full">Finding Postdoctoral Opportunities</h2>
-              <p>For those seeking postdoc positions, <a href="/" target="_blank">AcademicJobs</a> is a valuable resource. This platform offers a comprehensive list of postdoctoral job openings across various disciplines. It provides an easy-to-navigate interface where you can filter positions by location, field, and keywords.
+              <h2 className="gray-blue underline-full">
+                Finding Postdoctoral Opportunities
+              </h2>
+              <p>
+                For those seeking postdoc positions,{' '}
+                <a href="/" target="_blank">
+                  AcademicJobs
+                </a>{' '}
+                is a valuable resource. This platform offers a comprehensive
+                list of postdoctoral job openings across various disciplines. It
+                provides an easy-to-navigate interface where you can filter
+                positions by location, field, and keywords.
               </p>
             </section>
 
             <section>
-              <h2 className="gray-blue underline-full">How to maximise your postdoctoral experience?</h2>
+              <h2 className="gray-blue underline-full">
+                How to maximise your postdoctoral experience?
+              </h2>
               <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
                 <div className="card-content">
-                  <h3 className="text-xl font-semibold mb-2">1. Managing Research and Projects</h3>
-                  <p>Success in a postdoc requires effective management of research projects. Set clear objectives and create a timeline for achieving your goals. Regularly communicate with your mentor and collaborators to ensure alignment on project expectations and deliverables​ </p>
+                  <h3 className="text-xl font-semibold mb-2">
+                    1. Managing Research and Projects
+                  </h3>
+                  <p>
+                    Success in a postdoc requires effective management of
+                    research projects. Set clear objectives and create a
+                    timeline for achieving your goals. Regularly communicate
+                    with your mentor and collaborators to ensure alignment on
+                    project expectations and deliverables​{' '}
+                  </p>
                 </div>
               </div>
 
               <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
                 <div className="card-content">
-                  <h3 className="text-xl font-semibold mb-2">2. Mentorship and Professional Development</h3>
-                  <p>A good mentor can make a significant difference in your postdoc experience. Seek multiple mentors to gain diverse perspectives on your research and career development. Regular feedback and mentorship can provide invaluable guidance and open doors to new opportunities​.</p>
+                  <h3 className="text-xl font-semibold mb-2">
+                    2. Mentorship and Professional Development
+                  </h3>
+                  <p>
+                    A good mentor can make a significant difference in your
+                    postdoc experience. Seek multiple mentors to gain diverse
+                    perspectives on your research and career development.
+                    Regular feedback and mentorship can provide invaluable
+                    guidance and open doors to new opportunities​.
+                  </p>
                 </div>
               </div>
 
               <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
                 <div className="card-content">
-                  <h3 className="text-xl font-semibold mb-2">3. Writing and Submitting Papers</h3>
-                  <p>Publishing your research is a cornerstone of the postdoctoral experience. Focus on writing clear, impactful papers and choose appropriate journals for submission. Engage with the peer-review process actively and be open to constructive criticism​ </p>
-
+                  <h3 className="text-xl font-semibold mb-2">
+                    3. Writing and Submitting Papers
+                  </h3>
+                  <p>
+                    Publishing your research is a cornerstone of the
+                    postdoctoral experience. Focus on writing clear, impactful
+                    papers and choose appropriate journals for submission.
+                    Engage with the peer-review process actively and be open to
+                    constructive criticism​{' '}
+                  </p>
                 </div>
               </div>
 
               <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
                 <div className="card-content">
-                  <h3 className="text-xl font-semibold mb-2">4. Presenting at Conferences</h3>
-                  <p>Regularly presenting your work at conferences helps build your academic reputation and receive feedback from the broader research community. Practise your presentation skills and be prepared to discuss your findings in detail​ </p>
-
+                  <h3 className="text-xl font-semibold mb-2">
+                    4. Presenting at Conferences
+                  </h3>
+                  <p>
+                    Regularly presenting your work at conferences helps build
+                    your academic reputation and receive feedback from the
+                    broader research community. Practise your presentation
+                    skills and be prepared to discuss your findings in detail​{' '}
+                  </p>
                 </div>
               </div>
-
             </section>
 
             <HeroCard
@@ -282,9 +367,13 @@ export default function myPage() {
                     <a href="/postdoc" className="link link-aj">
                       post-doc job openings in Australia
                     </a>{' '}
-                    to find current vacancies from top Universities around the world that
-                    will suit your qualification and career goals. You can also find other
-                    <a href="/" className="link link-aj"> higher education jobs</a>
+                    to find current vacancies from top Universities around the
+                    world that will suit your qualification and career goals.
+                    You can also find other
+                    <a href="/" className="link link-aj">
+                      {' '}
+                      higher education jobs
+                    </a>
                     from top universities based on your interest.
                   </li>
                 </ul>
@@ -298,15 +387,30 @@ export default function myPage() {
             <section>
               <h2 className="gray-blue underline-full mt-16">Conclusion</h2>
               <p className="text-slate-500 font-normal text-xl mb-8">
-                Becoming a postdoctoral researcher is a significant step in an academic career, offering opportunities to deepen research expertise and build a strong professional network. By carefully selecting a postdoc position, actively engaging in research and professional development, and utilising resources like AcademicJobs, you can set yourself up for success in your postdoctoral journey and beyond.
+                Becoming a postdoctoral researcher is a significant step in an
+                academic career, offering opportunities to deepen research
+                expertise and build a strong professional network. By carefully
+                selecting a postdoc position, actively engaging in research and
+                professional development, and utilising resources like
+                AcademicJobs, you can set yourself up for success in your
+                postdoctoral journey and beyond.
               </p>
             </section>
             <section>
-              <h2 className="gray-blue underline-full mt-16">Other related articles</h2>
-              <a className="link-aj" href="/become-a-university-lecturer-earn-115k">
+              <h2 className="gray-blue underline-full mt-16">
+                Other related articles
+              </h2>
+              <a
+                className="link-aj"
+                href="/become-a-university-lecturer-earn-115k"
+              >
                 How to become a university lecturer
-              </a><br></br>
-              <a className="link-aj" href="/how-to-excel-as-a-research-assistant-in-australia">
+              </a>
+              <br></br>
+              <a
+                className="link-aj"
+                href="/how-to-excel-as-a-research-assistant-in-australia"
+              >
                 How to become a research assistant
               </a>
             </section>

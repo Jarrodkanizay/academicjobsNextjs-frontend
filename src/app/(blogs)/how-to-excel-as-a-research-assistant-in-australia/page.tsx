@@ -43,19 +43,36 @@ export default function myPage() {
         <section className="custom-background full-width mb-16">
           <div className="container py-16 flex flex-col lg:flex-row gap-2">
             <div className="flex flex-col justify-center">
-              <h1>How to Excel as a Research Assistant in Australia</h1>
+              <h1 className="m-0">
+                How to Excel as a Research Assistant in Australia
+              </h1>
+              <h3 className="m-0 mb-10 text-pink-600">By Raymond Mulyawan</h3>
+
               <p>
-                Thinking about a career as a <a className="underline hover:text-white" href="https://www.academicjobs.com/research">research assistant </a> in Australia? You’re in the right place! This exciting opportunity provides valuable experience and opens doors in both academic and industry research.
+                Thinking about a career as a{' '}
+                <a
+                  className="underline hover:text-white"
+                  href="https://www.academicjobs.com/research"
+                >
+                  research assistant{' '}
+                </a>{' '}
+                in Australia? You’re in the right place! This exciting
+                opportunity provides valuable experience and opens doors in both
+                academic and industry research.
               </p>
               <p className="pb-8">
-                Here’s everything you need to know to get started and excel as a research assistant in Australia.
+                Here’s everything you need to know to get started and excel as a
+                research assistant in Australia.
               </p>
               <Link href="/research" className="btn btn-aj w-44">
                 Find Research Jobs
               </Link>
             </div>
             <div className="flex-shrink-0 pb-8">
-              <a href="https://www.vecteezy.com/free-png/scientist" target="_blank">
+              <a
+                href="https://www.vecteezy.com/free-png/scientist"
+                target="_blank"
+              >
                 <Image
                   width={613}
                   height={529}
@@ -94,17 +111,18 @@ export default function myPage() {
 
         {/* Intro */}
         <section className="lg:flex mb-16">
-        <div className="flex-shrink-0 pb-8">
-        <a href="https://www.freepik.com/" target="_blank">
-          <Image
-            width={3000}
-            height={2002}
-            src="/blogs/how-to-excel-as-a-research-assistant-in-australia/research-assistant.jpg"
-            alt="A university lecturer delivering lectures and teaching students in seminars related to their field, with primary responsibilities outlined"
-            className="w-auto lg:h-[380px] lg:w-auto mr-8 mb-8"
-          />
-          </a></div>
-          
+          <div className="flex-shrink-0 pb-8">
+            <a href="https://www.freepik.com/" target="_blank">
+              <Image
+                width={3000}
+                height={2002}
+                src="/blogs/how-to-excel-as-a-research-assistant-in-australia/research-assistant.jpg"
+                alt="A university lecturer delivering lectures and teaching students in seminars related to their field, with primary responsibilities outlined"
+                className="w-auto lg:h-[380px] lg:w-auto mr-8 mb-8"
+              />
+            </a>
+          </div>
+
           {/* Image by Freepik - www.freepik.com */}
 
           <div>
@@ -112,20 +130,33 @@ export default function myPage() {
               Role of a Research Assistant in a Research Team
             </h2>
             <p>
-              A research assistant in Australia supports various research projects by collecting and analysing data, conducting literature reviews, and preparing reports. Whether in a university, a private company, or a government body, they are essential to the success of research activities. Research assistant usually work under the supervision of research fellow.
+              A research assistant in Australia supports various research
+              projects by collecting and analysing data, conducting literature
+              reviews, and preparing reports. Whether in a university, a private
+              company, or a government body, they are essential to the success
+              of research activities. Research assistant usually work under the
+              supervision of research fellow.
             </p>
             <ul>
               <li>
-                <strong>Data Collection:</strong> Performing experiments, conducting surveys, or gathering data in alignment with data set by the senior team members. Research assistants may work in specific divisions such as the Immunology division.
+                <strong>Data Collection:</strong> Performing experiments,
+                conducting surveys, or gathering data in alignment with data set
+                by the senior team members. Research assistants may work in
+                specific divisions such as the Immunology division.
               </li>
               <li>
-                <strong>Data Analysis:</strong> Utilising tools like SPSS, R, or Python to analyse dataset while also preparing models to display the results.
+                <strong>Data Analysis:</strong> Utilising tools like SPSS, R, or
+                Python to analyse dataset while also preparing models to display
+                the results.
               </li>
               <li>
-                <strong>Literature Review:</strong> Reviewing and summarising existing research to support new studies.
+                <strong>Literature Review:</strong> Reviewing and summarising
+                existing research to support new studies.
               </li>
               <li>
-                <strong>Report Preparation:</strong> Writing up findings and preparing presentations for stakeholders. Research assistants may support specific projects like a history project.
+                <strong>Report Preparation:</strong> Writing up findings and
+                preparing presentations for stakeholders. Research assistants
+                may support specific projects like a history project.
               </li>
             </ul>
           </div>
@@ -146,7 +177,11 @@ export default function myPage() {
                   h2Class="text-left w-full"
                 >
                   <p className="text-left">
-                    Choose a subject related to your research interests. To start as a research assistant in Australia, a bachelor’s degree in a relevant field is typically required. Fields such as psychology, biology, sociology, and health sciences are commonly pursued.
+                    Choose a subject related to your research interests. To
+                    start as a research assistant in Australia, a bachelor’s
+                    degree in a relevant field is typically required. Fields
+                    such as psychology, biology, sociology, and health sciences
+                    are commonly pursued.
                   </p>
                 </Card>
 
@@ -157,7 +192,8 @@ export default function myPage() {
                   h2Class="text-left w-full"
                 >
                   <p className="text-left">
-                    Pursuing an honours year or a master’s degree can enhance your qualifications and job prospects
+                    Pursuing an honours year or a master’s degree can enhance
+                    your qualifications and job prospects
                   </p>
                 </Card>
 
@@ -169,12 +205,13 @@ export default function myPage() {
                   h2Class="text-left w-full"
                 >
                   <p className="text-left">
-                    Practical experience is crucial for becoming a successful research assistant. Internships, volunteering, or part-time roles provide hands-on experience in research settings
+                    Practical experience is crucial for becoming a successful
+                    research assistant. Internships, volunteering, or part-time
+                    roles provide hands-on experience in research settings
                   </p>
                 </Card>
               </div>
             </section>
-
 
             {/* How to */}
             <section>
@@ -189,7 +226,14 @@ export default function myPage() {
                   h2Class="text-left w-full"
                 >
                   <p className="text-left">
-                    Apply for <a className="link-aj" href="https://gradresearch.unimelb.edu.au/developing-my-skills/graduate-research-internships">internships</a> in academic or industry settings.
+                    Apply for{' '}
+                    <a
+                      className="link-aj"
+                      href="https://gradresearch.unimelb.edu.au/developing-my-skills/graduate-research-internships"
+                    >
+                      internships
+                    </a>{' '}
+                    in academic or industry settings.
                   </p>
                 </Card>
 
@@ -219,24 +263,43 @@ export default function myPage() {
             </section>
 
             <section>
-              <h2 className="gray-blue underline-full">How much do research assistants make?</h2>
-              <p>The salary for a research assistant in Australia varies depending on location, experience, and research field.</p>
+              <h2 className="gray-blue underline-full">
+                How much do research assistants make?
+              </h2>
+              <p>
+                The salary for a research assistant in Australia varies
+                depending on location, experience, and research field.
+              </p>
 
               <h3>By Experience:</h3>
               <ul>
-                <li><strong>Early Career (1-4 years):</strong> AU$65,000 - AU$75,000 per year</li>
-                <li><strong>Mid-Career (5-9 years):</strong> AU$75,000 - AU$85,000 per year</li>
-                <li><strong>Experienced (10+ years):</strong> AU$90,000 - AU$100,000 per year</li>
+                <li>
+                  <strong>Early Career (1-4 years):</strong> AU$65,000 -
+                  AU$75,000 per year
+                </li>
+                <li>
+                  <strong>Mid-Career (5-9 years):</strong> AU$75,000 - AU$85,000
+                  per year
+                </li>
+                <li>
+                  <strong>Experienced (10+ years):</strong> AU$90,000 -
+                  AU$100,000 per year
+                </li>
               </ul>
 
               <h3>By Location:</h3>
               <ul>
-                <li><strong>Sydney:</strong> AU$98,000 - AU$100,000 per year</li>
-                <li><strong>Melbourne:</strong> AU$95,000 - AU$97,000 per year</li>
-                <li><strong>Brisbane:</strong> AU$90,000 - AU$92,000 per year</li>
+                <li>
+                  <strong>Sydney:</strong> AU$98,000 - AU$100,000 per year
+                </li>
+                <li>
+                  <strong>Melbourne:</strong> AU$95,000 - AU$97,000 per year
+                </li>
+                <li>
+                  <strong>Brisbane:</strong> AU$90,000 - AU$92,000 per year
+                </li>
               </ul>
             </section>
-
 
             {/* <h2 className="mt-28 underline-full">Average Salary and Job Growth</h2> */}
             <section className="my-16">
@@ -249,79 +312,165 @@ export default function myPage() {
             </section>
 
             {/* Average Salary and Job Growth */}
-            <h2 className="gray-blue underline-full">In-Demand Research Fields: Clinical Trials</h2>
+            <h2 className="gray-blue underline-full">
+              In-Demand Research Fields: Clinical Trials
+            </h2>
             <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
               <div className="card-content">
                 <ul className="list-disc list-inside">
-                  <li><strong>Biomedical Research:</strong> Focused on medical advancements and public health. Research assistants often contribute to medical research projects.</li>
-                  <li><strong>Data Science:</strong> Leveraging big data and analytics across sectors.</li>
-                  <li><strong>Environmental Science:</strong> Addressing climate change and sustainability.</li>
-                  <li><strong>Social Sciences:</strong> Studying human behaviour and societal trends.</li>
-                  <li><strong>Clinical Trials:</strong> Essential for the development and testing of new medical treatments.</li>
+                  <li>
+                    <strong>Biomedical Research:</strong> Focused on medical
+                    advancements and public health. Research assistants often
+                    contribute to medical research projects.
+                  </li>
+                  <li>
+                    <strong>Data Science:</strong> Leveraging big data and
+                    analytics across sectors.
+                  </li>
+                  <li>
+                    <strong>Environmental Science:</strong> Addressing climate
+                    change and sustainability.
+                  </li>
+                  <li>
+                    <strong>Social Sciences:</strong> Studying human behaviour
+                    and societal trends.
+                  </li>
+                  <li>
+                    <strong>Clinical Trials:</strong> Essential for the
+                    development and testing of new medical treatments.
+                  </li>
                 </ul>
               </div>
             </div>
 
             <section>
-              <h2 className="gray-blue underline-full">Tips for Those Starting Out</h2>
-              <p className="mb-6">Here’s how to make a strong start as a research assistant in Australia:</p>
+              <h2 className="gray-blue underline-full">
+                Tips for Those Starting Out
+              </h2>
+              <p className="mb-6">
+                Here’s how to make a strong start as a research assistant in
+                Australia:
+              </p>
               <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
                 <div className="card-content">
-                  <h3 className="text-xl font-semibold mb-2">1. Develop Key Skills</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    1. Develop Key Skills
+                  </h3>
                   <ul className="list-disc list-inside">
-                    <li><strong>Analytical Skills:</strong> Master data analysis and use of statistical tools.</li>
-                    <li><strong>Attention to Detail:</strong> Ensure precision and accuracy in research tasks.</li>
-                    <li><strong>Technical Proficiency:</strong> Get comfortable with research software like SPSS, R, or Python.</li>
-                    <li><strong>Communication:</strong> Develop strong written and verbal communication skills for reporting.</li>
-                    <li><strong>Organisational Skills:</strong> Efficiently manage tasks and maintain detailed records.</li>
+                    <li>
+                      <strong>Analytical Skills:</strong> Master data analysis
+                      and use of statistical tools.
+                    </li>
+                    <li>
+                      <strong>Attention to Detail:</strong> Ensure precision and
+                      accuracy in research tasks.
+                    </li>
+                    <li>
+                      <strong>Technical Proficiency:</strong> Get comfortable
+                      with research software like SPSS, R, or Python.
+                    </li>
+                    <li>
+                      <strong>Communication:</strong> Develop strong written and
+                      verbal communication skills for reporting.
+                    </li>
+                    <li>
+                      <strong>Organisational Skills:</strong> Efficiently manage
+                      tasks and maintain detailed records.
+                    </li>
                   </ul>
                 </div>
               </div>
 
               <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
                 <div className="card-content">
-                  <h3 className="text-xl font-semibold mb-2">2. Build a Strong Network</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    2. Build a Strong Network
+                  </h3>
                   <ul className="list-disc list-inside">
-                    <li><strong>Attend Conferences:</strong> Engage with professionals and learn about new developments.</li>
-                    <li><strong>Join Professional Groups:</strong> Become part of organisations like the Australasian Research Management Society (ARMS).</li>
-                    <li><strong>Online Engagement:</strong> Use forums and LinkedIn to connect with peers and experts. Networking helps you become a valuable member of a research team.</li>
+                    <li>
+                      <strong>Attend Conferences:</strong> Engage with
+                      professionals and learn about new developments.
+                    </li>
+                    <li>
+                      <strong>Join Professional Groups:</strong> Become part of
+                      organisations like the Australasian Research Management
+                      Society (ARMS).
+                    </li>
+                    <li>
+                      <strong>Online Engagement:</strong> Use forums and
+                      LinkedIn to connect with peers and experts. Networking
+                      helps you become a valuable member of a research team.
+                    </li>
                   </ul>
                 </div>
               </div>
 
               <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
                 <div className="card-content">
-                  <h3 className="text-xl font-semibold mb-2">3. Craft a Stellar Application</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    3. Craft a Stellar Application
+                  </h3>
                   <ul className="list-disc list-inside">
-                    <li><strong>Tailor Your Resume:</strong> Highlight relevant skills, experiences, and coursework. Tailoring your resume to match the position description is crucial.</li>
-                    <li><strong>Write a Compelling Cover Letter:</strong> Express your enthusiasm for the role and how you fit the position.</li>
-                    <li><strong>Include Recommendations:</strong> Provide strong references from professors or previous employers.</li>
+                    <li>
+                      <strong>Tailor Your Resume:</strong> Highlight relevant
+                      skills, experiences, and coursework. Tailoring your resume
+                      to match the position description is crucial.
+                    </li>
+                    <li>
+                      <strong>Write a Compelling Cover Letter:</strong> Express
+                      your enthusiasm for the role and how you fit the position.
+                    </li>
+                    <li>
+                      <strong>Include Recommendations:</strong> Provide strong
+                      references from professors or previous employers.
+                    </li>
                   </ul>
                 </div>
               </div>
 
               <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
                 <div className="card-content">
-                  <h3 className="text-xl font-semibold mb-2">4. Ace the Interview</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    4. Ace the Interview
+                  </h3>
                   <ul className="list-disc list-inside">
-                    <li><strong>Research the Project:</strong> Understand the project’s goals and recent developments.</li>
-                    <li><strong>Prepare Answers:</strong> Be ready to discuss your research experience and skills.</li>
-                    <li><strong>Ask Insightful Questions:</strong> Show your understanding and interest in the research.</li>
+                    <li>
+                      <strong>Research the Project:</strong> Understand the
+                      project’s goals and recent developments.
+                    </li>
+                    <li>
+                      <strong>Prepare Answers:</strong> Be ready to discuss your
+                      research experience and skills.
+                    </li>
+                    <li>
+                      <strong>Ask Insightful Questions:</strong> Show your
+                      understanding and interest in the research.
+                    </li>
                   </ul>
                 </div>
               </div>
 
               <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
                 <div className="card-content">
-                  <h3 className="text-xl font-semibold mb-2">5. Commit to Continuous Learning</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    5. Commit to Continuous Learning
+                  </h3>
                   <ul className="list-disc list-inside">
-                    <li><strong>Attending Workshops:</strong> Learn new research methodologies and techniques.</li>
-                    <li><strong>Seeking Feedback:</strong> Regularly ask for input to improve your work.</li>
-                    <li><strong>Documenting Your Work:</strong> Keep detailed records and build a strong portfolio.</li>
+                    <li>
+                      <strong>Attending Workshops:</strong> Learn new research
+                      methodologies and techniques.
+                    </li>
+                    <li>
+                      <strong>Seeking Feedback:</strong> Regularly ask for input
+                      to improve your work.
+                    </li>
+                    <li>
+                      <strong>Documenting Your Work:</strong> Keep detailed
+                      records and build a strong portfolio.
+                    </li>
                   </ul>
                 </div>
               </div>
-
             </section>
 
             <div role="alert" className="alert shadow-lg mt-16">
@@ -347,9 +496,13 @@ export default function myPage() {
                     <a href="/research" className="link link-aj">
                       research assistant job openings in Australia
                     </a>{' '}
-                    to find current vacancies from top Universities around the world that
-                    will suit your qualification and career goals. You can also find other
-                    <a href="/" className="link link-aj"> higher education jobs</a>
+                    to find current vacancies from top Universities around the
+                    world that will suit your qualification and career goals.
+                    You can also find other
+                    <a href="/" className="link link-aj">
+                      {' '}
+                      higher education jobs
+                    </a>
                     from top universities based on your interest.
                   </li>
                 </ul>
@@ -363,18 +516,30 @@ export default function myPage() {
             <section>
               <h2 className="gray-blue underline-full mt-16">Conclusion</h2>
               <p className="text-slate-500 font-normal text-xl mb-8">
-                Starting a career as a research assistant in Australia is a promising path that opens various opportunities in the research field. With the right education, practical experience, and essential skills, you can build a successful and rewarding career.
+                Starting a career as a research assistant in Australia is a
+                promising path that opens various opportunities in the research
+                field. With the right education, practical experience, and
+                essential skills, you can build a successful and rewarding
+                career.
               </p>
               <p className="text-slate-500 font-normal text-xl">
-                Remember, continuous learning and effective networking are key to advancing in this dynamic field. Research assistants receive substantial research support in their roles, which includes attractive remuneration packages and benefits, which makes it an interesting field to pursue.
+                Remember, continuous learning and effective networking are key
+                to advancing in this dynamic field. Research assistants receive
+                substantial research support in their roles, which includes
+                attractive remuneration packages and benefits, which makes it an
+                interesting field to pursue.
               </p>
             </section>
             <section>
-              <h2 className="gray-blue underline-full mt-16">Other related articles</h2>
-              <a className="link-aj" href="/become-a-university-lecturer-earn-115k">
+              <h2 className="gray-blue underline-full mt-16">
+                Other related articles
+              </h2>
+              <a
+                className="link-aj"
+                href="/become-a-university-lecturer-earn-115k"
+              >
                 How to become a university lecturer in Australia
               </a>
-
             </section>
           </div>
           <div className="lg:min-w-[400px]">
