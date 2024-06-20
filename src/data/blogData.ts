@@ -36,8 +36,8 @@ export const blogData = [
     <p>Traditionally, posting a job vacancy, especially in the academic sector, has been a time-consuming task. Not even considering the time it takes to draft a detailed job listing, to target suitable candidates, the process could easily take upwards of 9 minutes per post. That is just the time it takes to post your listing on Seek, Indeed, Unijobs and other Academic Job Board Platforms. This 9-minute timeframe not only slows down the recruitment process but also adds to the workload of HR departments and recruiters, who already have their hands full with numerous other tasks.</p>
     
     <h2>Enter Quick Job Post Technology</h2>
-    <p>Quick Job Post Technology is designed to address and eliminate the inefficiencies of traditional job posting methods. By automatically extracting and preparing job positions that universities have on offer, this technology provides a streamlined and user-friendly interface for posting these vacancies. The standout feature of this technology is the creation of a "headline job post," which offers a preview of the listing, making it incredibly easy for HR personnel or recruiters to review and convert/post a job in a mere 32 seconds.</p>
-    
+    <p>Quick Job Post Technology is designed to address and eliminate the inefficiencies of traditional job posting methods. By automatically extracting and preparing job positions that universities have on offer, this technology provides a streamlined and user-friendly interface for posting these vacancies.</p>
+<p>The standout feature of this technology is the creation of a "headline job post," which offers a preview of the listing, making it incredibly easy for HR personnel or recruiters to review and convert/post a job in a mere 32 seconds.</p>    
     <h2>How It Works</h2>
     <p>The technology behind the Higher Ed Quick Job Post is as straightforward as it is innovative. HR personnel or recruiters have a few options:</p>
     <ul>

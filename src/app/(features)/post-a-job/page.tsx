@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   keywords: 'Post Academic Jobs, Post a Job AcademicJobs',
 };
 
-const PostJobPage = () => {
+const PostJobPage = ({ params }) => {
   return <JobPostForm region="USA" />; //Leave this blank for AcademicJobs
 };
 export default PostJobPage;

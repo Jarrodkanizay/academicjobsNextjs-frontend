@@ -26,53 +26,12 @@ const PricingTable = () => {
     enterprisePrice: 888,
   };
 
-  // const stripeLink3JobPack = {
-  //   Australia: 'TBA',
-  //   Asia: 'TBA?region=asia',
-  //   Africa: 'TBA?region=africa',
-  //   Canada: 'TBA?region=canada',
-  //   Europe: 'TBA?region=europe',
-  //   India: 'TBA?region=india',
-  //   'South America': 'TBA?region=south-america',
-  //   'Middle East': 'TBA?region=middle-east',
-  //   'New Zealand': 'TBA?region=new-zealand',
-  //   'United Kingdom': 'TBA?region=united-kingdom',
-  //   USA: 'TBA?region=usa',
-  // };
-
-  const emailAJ = 'advertise@academicjobs.com';
-
-  const subjectBasic = `I would like to buy a ${pricing.basic}`;
-  const subjectBusiness = `I would like to subscribe to the ${pricing.business}`;
-  const subjectEnterprise = `I would like to subscribe to the ${pricing.enterprise}`;
-
   function formatNumberWithCommas(number: number) {
     return number.toLocaleString();
   }
 
-  function createMessage(productName: string, price: number) {
-    return encodeURIComponent(`Hi Academic Jobs,
-
-
-I would like to purchase the ${productName}. Please send me an
-invoice for $${formatNumberWithCommas(price)}.
-         
----Please Post the following for money…
-
-`);
-  }
-
   return (
     <div className="max-w-6xl mx-auto pt-4 px-8">
-      {/* <div className="max-w-md mx-auto mb-14 text-center">
-        <h1 className="text-4xl text-slate-600 font-semibold  lg:text-5xl">
-          Find Your <span className="text-aj">Best</span>
-        </h1>
-        <p className="text-xl text-gray-500 font-medium">
-          Attract top-tier academics and all Higher Ed staff with the Worlds
-          #1&nbsp;job&nbsp;board.
-        </p>
-      </div> */}
       <h2 className="underline-full gray-blue">
         EOFY Special (AHEIA Members Only)
       </h2>

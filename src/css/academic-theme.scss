@@ -277,6 +277,11 @@ html {
       font-family: 'Arial';
       color: #174f89;
     }
+
+    .text-gray-blue {
+      color: var(--color-gray-blue) !important;
+    }
+
     p,
     a,
     button,
