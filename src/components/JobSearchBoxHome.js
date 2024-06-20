@@ -15,21 +15,15 @@ export default function JobSearchBox() {
   };
   const keyWordRef = useRef(null);
   const cfRef = useRef(null);
- 
   const router = useRouter();
   let region = 'Australia';
   const { r = 'Global' } = useURLParams();
   const onEditorStateSelect = (category, filter) => {
     cfRef.current = { category, filter }
     console.log(category, filter)
-
-
   };
   const onInputChange = (inputText) => {
     keyWordRef.current = inputText
-
-
-
   };
   const handleFormSubmit = async () => {
     event.preventDefault();
@@ -37,7 +31,7 @@ export default function JobSearchBox() {
     // alert('1' + r);
     // alert('21' + r);
     // if (  r == "") { alert('3' + r);}
-    if (r !== 'Global' && r!=="" ) {
+    if (r !== 'Global' && r !== "") {
       //alert(r)
       // const location = (countryMappings1 as any)[region]?.searchLocation || 'Global';
       // const params = new URLSearchParams({
@@ -80,14 +74,21 @@ export default function JobSearchBox() {
         // }
         // setFilter1([{ category: 'Country', filter: countryMap[country] }]);
         //alert(country);
-        let q3
-        if (cfRef.current) {
-          q3 = `filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
+        // let q3
+        // if (cfRef.current) {
+        //   q3 = `filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
+        // }
+        // router.push(`/jobs-advanced-search?r=${country}&${q3}`
+                  let q3 = ""
+            if (cfRef.current) {
+          q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
+        } else {
+          if (keyWordRef.current.trim()) {
+            q3 = `&q=${keyWordRef.current.trim()}`
+          }
         }
-        //alert()
-        router.push(
-          `/jobs-advanced-search?r=${country}&${q3}`
-        );
+        router.push(`/jobs-advanced-search?r=${country}&${q3}`);
+
       } catch (error) {
         console.log('Error:', error);
       }
@@ -115,14 +116,13 @@ export default function JobSearchBox() {
           Search In Your Country
         </button>
       </div>
-
       <div className="w-full flex justify-end">
         <button
           className="text-gray-400 text-base md:pr-6 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l from-green-400 via-green-400 to-sky-300"
-          onClick={ () => {
+          onClick={() => {
             event.preventDefault();
             //alert(keyWordRef.current)
-            let q3=""
+            let q3 = ""
             if (cfRef.current) {
               q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
             } else {
@@ -130,7 +130,6 @@ export default function JobSearchBox() {
                 q3 = `&q=${keyWordRef.current.trim()}`
               }
             }
-        
             router.push(`/jobs-advanced-search?r=Global&${q3}`);
             //alert(`/jobs-advanced-search?r=Global&${q3}`)
           }}
@@ -139,9 +138,5 @@ export default function JobSearchBox() {
         </button>
       </div>
     </form>
-
-
-
-
   );
 }
