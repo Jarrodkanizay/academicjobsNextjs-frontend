@@ -10,9 +10,9 @@ const UniSearchBlock = ({
   label,
   customKey,
   value1,
-  onChange,
-  forceClass,
   onSelect,
+  onInputChange,
+  forceClass,
 }) => {
   const { region, setQ } = useStore();
   const countryRef = useRef("");
@@ -55,14 +55,14 @@ const UniSearchBlock = ({
     //inputRef.current.value = e.target.value;
     setShowSuggestions(true);
     setQuery(e.target.value);
-    onChange(e.target.value, 0, "", "", "");
+    onInputChange(e.target.value);
   };
   useEffect(() => {
     //inputRef.current.value = value1 || '';
     setQuery(value1 || "");
   }, [value1]);
   return (
-    <div className="w-full">
+    <div className="w-full bg-white ">
       <input
         ref={inputRef}
         type="text"
@@ -71,7 +71,7 @@ const UniSearchBlock = ({
         onClick={handleInputClick}
         //placeholder="Type at least 3 characters..."
         // className="w-full font-normal py-1 px-1 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-        className={`w-full input input-md input-bordered focus:outline-none focus:border-orange-500 ${forceClass}`}
+        className={`w-full input input-md input-bordered focus:outline-none focus:border-orange-500 `}
         autoComplete="one-time-code"
         name={customKey}
         placeholder={label}
@@ -82,20 +82,22 @@ const UniSearchBlock = ({
           {suggestions.map(
             (
               {
+                category1,
                 keywordSuggestion,
               },
               index
             ) => (
               <li
                 key={index}
-                className="w-full py-1 px-1 border-b border-gray-300 hover:bg-gray-100 cursor-pointer"
+                className="bg-white  w-full py-1 px-1 border-b border-gray-300 hover:bg-gray-100 cursor-pointer"
                 onClick={() => {
                   console.log("keywordSuggestion1",keywordSuggestion)
                   setQuery(keywordSuggestion);
                   setQ(keywordSuggestion)
+                  onSelect(category1, keywordSuggestion)
                 }                }
               >
-                <div className="w-[100%]">{keywordSuggestion}</div>
+                <div className="w-[100%]"><span className="text-sm font-bold">{keywordSuggestion}</span><span className="text-xs">{` (${category1})`}</span></div>
               </li>
             )
           )}
