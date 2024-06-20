@@ -28,7 +28,7 @@ export default function myPage() {
             </figure>
             <div>
               <h1 className="text-5xl font-bold">SEO Specialist</h1>
-              <p className="py-6">
+              <p className="py-6 pr-16 max-w-[700px]">
                 As an SEO specialist and content writer at Academicjobs.com,
                 Raymond excels in creating engaging blog articles that rank high
                 on Google. With a strong foundation in marketing, editorial work
