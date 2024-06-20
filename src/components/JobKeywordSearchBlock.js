@@ -84,6 +84,7 @@ const UniSearchBlock = ({
               {
                 category1,
                 keywordSuggestion,
+                realCtg
               },
               index
             ) => (
@@ -94,7 +95,7 @@ const UniSearchBlock = ({
                   console.log("keywordSuggestion1",keywordSuggestion)
                   setQuery(keywordSuggestion);
                   setQ(keywordSuggestion)
-                  onSelect(category1, keywordSuggestion)
+                  onSelect(realCtg, keywordSuggestion)
                 }                }
               >
                 <div className="w-[100%]"><span className="text-sm font-bold">{keywordSuggestion}</span><span className="text-xs">{` (${category1})`}</span></div>

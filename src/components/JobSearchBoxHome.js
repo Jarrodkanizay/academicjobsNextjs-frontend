@@ -59,21 +59,6 @@ export default function JobSearchBox() {
         );
         const result = await response.json();
         const country = result.country.name;
-        // setRegion((countryMappings1 as any)[country.toLowerCase()] || 'Global');
-        // const qValue = a.q || '';
-        // const lValue = (countryMappings1 as any)[
-        //   (countryMappings as any)[country.toLowerCase()]
-        // ]?.searchLocation;
-        // //router.push(`/jobs?q=${qValue}&l=${lValue}`);
-        // reset();
-        // if (keyWordRef.current && keyWordRef.current.value.trim()) {
-        //   a.q = keyWordRef.current.value.trim();
-        //   setQ(keyWordRef.current.value.trim());
-        // } else {
-        //   setQ('');
-        // }
-        // setFilter1([{ category: 'Country', filter: countryMap[country] }]);
-        //alert(country);
         // let q3
         // if (cfRef.current) {
         //   q3 = `filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
