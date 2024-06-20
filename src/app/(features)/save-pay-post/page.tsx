@@ -11,6 +11,6 @@ export const metadata: Metadata = {
 };
 
 const PostJobPage = () => {
-  return <JobPostForm partner="Post My Job" region="USA" />; //Leave this blank for AcademicJobs
+  return <JobPostForm region="USA" />; //Leave this blank for AcademicJobs
 };
 export default PostJobPage;
