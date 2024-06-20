@@ -22,9 +22,7 @@ export default function JobSearchBox() {
     cfRef.current = { category, filter }
     console.log(category, filter)
   };
-  const onInputChange = (inputText) => {
-    keyWordRef.current = inputText
-  };
+
   const handleFormSubmit = async () => {
     event.preventDefault();
     const a = {};
@@ -52,6 +50,7 @@ export default function JobSearchBox() {
       // setFilter1([{ category: 'Country', filter: countryMap[country] }]);
       // router.push(`/jobs-advanced-search?l=${country}`);
       router.push(`/jobs-advanced-search?r=${r}`);
+
     } else {
       try {
         const response = await fetch(
@@ -64,12 +63,13 @@ export default function JobSearchBox() {
         //   q3 = `filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
         // }
         // router.push(`/jobs-advanced-search?r=${country}&${q3}`
+        //alert(country)
         let q3 = ""
         if (cfRef.current) {
           q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
         } else {
-          if (keyWordRef.current.trim()) {
-            q3 = `&q=${keyWordRef.current.trim()}`
+          if (keyWordRef?.current?.trim()) {
+            q3 = `&q=${keyWordRef?.current?.trim()}`
           }
         }
         router.push(`/jobs-advanced-search?r=${country}&${q3}`);
@@ -88,7 +88,7 @@ export default function JobSearchBox() {
             label="Enter a keyword"
             forceClass="mb-6"
             onSelect={onEditorStateSelect}
-            onInputChange={onInputChange}
+     
             className="w-full"
              />
         </div>
@@ -109,8 +109,8 @@ export default function JobSearchBox() {
             if (cfRef.current) {
               q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
             } else {
-              if (keyWordRef.current.trim()) {
-                q3 = `&q=${keyWordRef.current.trim()}`
+              if (keyWordRef?.current.trim()) {
+                q3 = `&q=${keyWordRef?.current.trim()}`
               }
             }
             router.push(`/jobs-advanced-search?r=Global&${q3}`);
