@@ -87,7 +87,7 @@ const Carousel = () => {
             alt="Carousel item 3"
           />
           <div className="ml-0 md:ml-4 mt-4 md:mt-0 p-6 md:p-16">
-            <a href="/how-to-excel-as-a-research-assistant-in-australia">
+            <a href="/postdoctoral-success-how-to-thrive-in-your-research-role">
               <h2 style={{ color: 'white' }}>
                 Ready for a Postdoc? Here’s How to Stand Out!
               </h2>
