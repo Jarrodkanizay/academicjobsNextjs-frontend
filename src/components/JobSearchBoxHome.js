@@ -22,6 +22,10 @@ export default function JobSearchBox() {
     cfRef.current = { category, filter }
     console.log(category, filter)
   };
+  const onInputChange = (inputText) => {
+    keyWordRef.current = inputText
+   
+  };
 
   const handleFormSubmit = async () => {
     event.preventDefault();
@@ -88,7 +92,7 @@ export default function JobSearchBox() {
             label="Enter a keyword"
             forceClass="mb-6"
             onSelect={onEditorStateSelect}
-     
+            onInputChange={onInputChange}
             className="w-full"
              />
         </div>
