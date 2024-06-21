@@ -15,10 +15,9 @@ import SearchListResultsLoader from '@/components/loaders/SearchListResultsLoade
 
 export default function SearchResults4({
   q,
-  l='',
   filterOff = false,
   searchMessage = 'Jobs Found',
-  filter1=[],
+
 }) {
   //alert(q.q)
   console.log('==============SearchResults==================');
@@ -36,7 +35,7 @@ export default function SearchResults4({
   } = useQuery({
     queryKey: ['jobs', q, page],
     queryFn: async () => {
-      const response = await BaseApi.post('/jobs', { ...q, l, filter1, page });
+      const response = await BaseApi.post('/jobs', { ...q,  page });
       console.log(response.data);
       console.log('response.data.data', response.data.data);
       return response.data.data;

@@ -4,9 +4,7 @@ import Card from '@/components/Card';
 import HeroCard from '@/components/HeroCard';
 import type { Metadata } from 'next';
 import SearchResults4 from '@/components/SearchResults4';
-
 import { url } from 'inspector';
-
 export const metadata: Metadata = {
   title: {
     absolute: 'Guide to Research Assistant Jobs: Earn up to 85k!',
@@ -16,7 +14,6 @@ export const metadata: Metadata = {
   keywords:
     'research assistant, research assistant salary, university jobs, research assistant jobs',
 };
-
 export default function myPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -36,7 +33,6 @@ export default function myPage() {
       },
     ],
   };
-
   return (
     <>
       <main className="content-grid">
@@ -110,7 +106,6 @@ export default function myPage() {
             </svg>
           </div>
         </section>
-
         {/* Intro */}
         <section className="lg:flex mb-16">
           <div className="flex-shrink-0 pb-8">
@@ -124,9 +119,7 @@ export default function myPage() {
               />
             </a>
           </div>
-
           {/* Image by Freepik - www.freepik.com */}
-
           <div>
             <h2 className="m-0 leading-relaxed underline-full gray-blue mb-8">
               Role of a Research Assistant in a Research Team
@@ -163,7 +156,6 @@ export default function myPage() {
             </ul>
           </div>
         </section>
-
         <div className="lg:flex gap-10">
           <div className="grow mb-16">
             {/* How to */}
@@ -186,7 +178,6 @@ export default function myPage() {
                     are commonly pursued.
                   </p>
                 </Card>
-
                 {/* Card 2 */}
                 <Card
                   iconPath="none"
@@ -198,7 +189,6 @@ export default function myPage() {
                     your qualifications and job prospects
                   </p>
                 </Card>
-
                 {/* Card 3 */}
                 <Card
                   //   iconPath="/talent-pool/keyword-optimization.svg"
@@ -214,7 +204,6 @@ export default function myPage() {
                 </Card>
               </div>
             </section>
-
             {/* How to */}
             <section>
               <h2 className="gray-blue underline-full">
@@ -238,7 +227,6 @@ export default function myPage() {
                     in academic or industry settings.
                   </p>
                 </Card>
-
                 {/* Card 2 */}
                 <Card
                   iconPath="none"
@@ -249,7 +237,6 @@ export default function myPage() {
                     Volunteer on research projects or assist professors.
                   </p>
                 </Card>
-
                 {/* Card 3 */}
                 <Card
                   //   iconPath="/talent-pool/keyword-optimization.svg"
@@ -263,7 +250,6 @@ export default function myPage() {
                 </Card>
               </div>
             </section>
-
             <section>
               <h2 className="gray-blue underline-full">
                 How much do research assistants make?
@@ -272,7 +258,6 @@ export default function myPage() {
                 The salary for a research assistant in Australia varies
                 depending on location, experience, and research field.
               </p>
-
               <h3>By Experience:</h3>
               <ul>
                 <li>
@@ -288,7 +273,6 @@ export default function myPage() {
                   AU$100,000 per year
                 </li>
               </ul>
-
               <h3>By Location:</h3>
               <ul>
                 <li>
@@ -302,7 +286,6 @@ export default function myPage() {
                 </li>
               </ul>
             </section>
-
             {/* <h2 className="mt-28 underline-full">Average Salary and Job Growth</h2> */}
             <section className="my-16">
               <p>
@@ -312,7 +295,6 @@ export default function myPage() {
                 </Link>
               </p>
             </section>
-
             {/* Average Salary and Job Growth */}
             <h2 className="gray-blue underline-full">
               In-Demand Research Fields: Clinical Trials
@@ -344,7 +326,6 @@ export default function myPage() {
                 </ul>
               </div>
             </div>
-
             <section>
               <h2 className="gray-blue underline-full">
                 Tips for Those Starting Out
@@ -382,7 +363,6 @@ export default function myPage() {
                   </ul>
                 </div>
               </div>
-
               <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
                 <div className="card-content">
                   <h3 className="text-xl font-semibold mb-2">
@@ -406,7 +386,6 @@ export default function myPage() {
                   </ul>
                 </div>
               </div>
-
               <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
                 <div className="card-content">
                   <h3 className="text-xl font-semibold mb-2">
@@ -429,7 +408,6 @@ export default function myPage() {
                   </ul>
                 </div>
               </div>
-
               <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
                 <div className="card-content">
                   <h3 className="text-xl font-semibold mb-2">
@@ -451,7 +429,6 @@ export default function myPage() {
                   </ul>
                 </div>
               </div>
-
               <div className="card bg-white p-6 rounded-lg shadow-lg relative mb-6">
                 <div className="card-content">
                   <h3 className="text-xl font-semibold mb-2">
@@ -474,7 +451,6 @@ export default function myPage() {
                 </div>
               </div>
             </section>
-
             <div role="alert" className="alert shadow-lg mt-16">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -513,7 +489,6 @@ export default function myPage() {
                 Research Jobs
               </Link>
             </div>
-
             {/* Final Thoughts */}
             <section>
               <h2 className="gray-blue underline-full mt-16">Conclusion</h2>
@@ -550,6 +525,7 @@ export default function myPage() {
             {/* <SearchResults4 q={{ q: 'research' }} />; */}
             <SearchResults4
               q={{
+                l: 'Australia',
                 filter1: [
                   { category: 'PositionType', filter: 'Research Assistant' },
                 ],
