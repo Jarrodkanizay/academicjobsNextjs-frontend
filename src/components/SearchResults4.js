@@ -20,7 +20,7 @@ export default function SearchResults4({
   searchMessage = 'Jobs Found',
   filter1,
 }) {
-  alert(q.q)
+  //alert(q.q)
   console.log('==============SearchResults==================');
   const [page, setPage] = useState(0);
   console.log('filter1', q, page);
