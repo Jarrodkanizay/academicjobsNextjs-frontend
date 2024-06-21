@@ -3,7 +3,8 @@ import Image from 'next/image';
 import Card from '@/components/Card';
 import HeroCard from '@/components/HeroCard';
 import type { Metadata } from 'next';
-import SearchResults2 from '@/components/SearchResults3';
+import SearchResults4 from '@/components/SearchResults4';
+
 
 export const metadata: Metadata = {
   title: {
@@ -418,7 +419,13 @@ export default function myPage() {
           </div>
           <div className="lg:min-w-[400px]">
             {/* @ts-ignore */}
-            <SearchResults2 q={{ q: 'postdoc', l: 'Australia' }} />
+            <SearchResults4
+              q={{
+                l: 'Australia',
+                filter1: [{ category: 'PositionType', filter: 'Post-Doc' }],
+              }}
+            />
+            ;
           </div>
         </div>
       </main>

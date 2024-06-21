@@ -13,13 +13,13 @@ import JobFilter from '@/components/JobFilter';
 import SearchLightbulbIcon from '@/components/icons/SearchLightbulbIcon';
 import SearchListResultsLoader from '@/components/loaders/SearchListResultsLoader';
 
-export default function SearchResults2({
+export default function SearchResults4({
   q,
-  l,
   filterOff = false,
   searchMessage = 'Jobs Found',
-  filter1,
+
 }) {
+  //alert(q.q)
   console.log('==============SearchResults==================');
   const [page, setPage] = useState(0);
   console.log('filter1', q, page);
@@ -35,7 +35,7 @@ export default function SearchResults2({
   } = useQuery({
     queryKey: ['jobs', q, page],
     queryFn: async () => {
-      const response = await BaseApi.post('/jobs', { q, l, filter1, page });
+      const response = await BaseApi.post('/jobs', { ...q,  page });
       console.log(response.data);
       console.log('response.data.data', response.data.data);
       return response.data.data;

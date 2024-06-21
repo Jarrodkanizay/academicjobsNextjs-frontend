@@ -659,7 +659,6 @@ export default async function myPage() {
         <div className="card bg-slate-100 shadow-xl">
           <div className="card-body">
             <h2 className="card-title"> Top University Employers Australia </h2>
-            <a className=" text-gray-400"> 10 Dec, 2023</a>
           </div>
           <figure>
             <Image

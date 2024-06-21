@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Card from '@/components/Card';
 import HeroCard from '@/components/HeroCard';
 import type { Metadata } from 'next';
-import SearchResults2 from '@/components/SearchResults3';
+import SearchResults4 from '@/components/SearchResults4';
 import { url } from 'inspector';
 
 export const metadata: Metadata = {
@@ -435,7 +435,7 @@ export default function myPage() {
           </div>
           <div className="lg:min-w-[400px]">
             {/* @ts-ignore */}
-            <SearchResults2 q={{ q: 'lecturer', l: 'Australia' }} />
+            <SearchResults4 q={{ q: 'lecturer', l: 'Australia' }} />
           </div>
         </div>
       </main>

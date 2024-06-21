@@ -38,7 +38,7 @@ export default async function myPage() {
           <JobSearchBoxHome />
         </div>
       </div> */}
-      <div className="full-width md:h-[400px] h-[229px] gradient-aj">
+      <div className="full-width md:h-[400px] h-[220px] gradient-aj">
         <Top7JobTypes />
       </div>
       <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">

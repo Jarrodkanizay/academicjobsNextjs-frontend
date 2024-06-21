@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { faFacebookF, faYoutube, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   return (
@@ -136,10 +138,12 @@ const Footer = () => {
               className="footer-nav__link"
               href="https://www.facebook.com/profile.php?id=100088232015128"
               target="_blank"
-              rel="noopener noreferrer"
-            >
-              Facebook
-            </a>
+              rel="noopener noreferrer"              
+              style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}
+              >
+                <FontAwesomeIcon icon={faFacebookF} style={{ width: '20px', height: '20px', marginRight: '8px' }} />
+                Facebook
+              </a>
           </li>
 
           <li>
@@ -147,10 +151,12 @@ const Footer = () => {
               className="footer-nav__link"
               href="https://www.youtube.com/channel/UCIaknpVcM_ZijJSWJCYi8aw"
               target="_blank"
-              rel="noopener noreferrer"
-            >
-              YouTube
-            </a>
+              rel="noopener noreferrer"              
+              style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}
+              >
+                <FontAwesomeIcon icon={faYoutube} style={{ width: '20px', height: '20px', marginRight: '8px' }} />
+                YouTube
+              </a>
           </li>
           {/* <li>
             <a
@@ -166,8 +172,21 @@ const Footer = () => {
               href="https://www.instagram.com/academicjobs_/"
               target="_blank"
               rel="noopener noreferrer"
+              style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}
             >
+              <FontAwesomeIcon icon={faInstagram} style={{ width: '20px', height: '20px', marginRight: '8px' }} />
               Instagram
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/academic-jobs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} style={{ width: '20px', height: '20px', marginRight: '8px' }} />
+              Linkedin
             </a>
           </li>
         </ul>
