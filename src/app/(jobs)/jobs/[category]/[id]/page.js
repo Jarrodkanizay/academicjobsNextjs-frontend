@@ -26,11 +26,12 @@ export async function generateMetadata({ params }) {
   const job = await getJob({ id: params.id, userId: session?.user.id });
   if (!job) return { title: 'not found' };
   if (job) {incrementJobViewCount(params)};
-  const { title, company_name, location } = job?.data;
+  const { title, company_name1, region } = job?.data;
+
   return {
-    title: `${title} | ${company_name}`,
-    description: `Explore our ${title} job opportunities available at ${company_name}! Apply to become a ${title} today. Apply for an academic job today!`,
-    keywords: `${title} jobs| ${company_name} university jobs| ${location} university jobs`,
+    title: `${title} | ${company_name1}`,
+    description: `Explore our ${title} job opportunities available at ${company_name1}! Apply to become a ${title} today. Apply for an academic job today!`,
+    keywords: `${title} jobs, ${company_name1} university jobs, ${region} university jobs`,
     robots: {
       index: true,
     },
