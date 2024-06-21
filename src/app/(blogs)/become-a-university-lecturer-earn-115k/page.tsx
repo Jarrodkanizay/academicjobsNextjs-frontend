@@ -435,7 +435,7 @@ export default function myPage() {
           </div>
           <div className="lg:min-w-[400px]">
             {/* @ts-ignore */}
-            <SearchResults4 q={{ q: 'lecturer' }} />
+            <SearchResults4 q={{ q: 'lecturer', l: 'Australia' }} />
           </div>
         </div>
       </main>

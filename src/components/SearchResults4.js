@@ -15,10 +15,10 @@ import SearchListResultsLoader from '@/components/loaders/SearchListResultsLoade
 
 export default function SearchResults4({
   q,
-  l,
+  l='',
   filterOff = false,
   searchMessage = 'Jobs Found',
-  filter1,
+  filter1=[],
 }) {
   //alert(q.q)
   console.log('==============SearchResults==================');
