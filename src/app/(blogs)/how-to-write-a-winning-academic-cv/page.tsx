@@ -59,7 +59,7 @@ export default function myPage() {
             <div className="flex flex-col justify-center">
               <h1>How to Write a Winning Academic CV</h1>
               <p>
-                Don’t let your academic resume fall to the bottom of the stack. Whether you're aiming for a or a role, having the right academic resume can make all the difference. Here’s how to make sure your resume stands out for you to land that perfect academic job.
+                Don’t let your academic resume fall to the bottom of the stack.  Whether you're aiming for a research position or a teaching role, having the right academic resume can make all the difference. Here’s how to make sure your resume stands out for you to land that perfect academic job.
               </p>
               <a href="/about/team/raymond-mulyawan">
                 <h3 className="m-0 mb-10 text-pink-600">By Raymond Mulyawan</h3>
