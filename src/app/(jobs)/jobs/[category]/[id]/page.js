@@ -19,6 +19,7 @@ import { authOptions } from "@/app/api/auth/[...nextauth]/options";
 import { baseURL } from '@/lib/store/Base';
 import { BaseApi } from '@/lib/store/Base';
 import JoinTalentPool from '@/components/JoinTalentPool'
+import ShareButton from '@/components/ShareButton';
 
 export async function generateMetadata({ params }) {
   const session = await getServerSession(authOptions);
@@ -180,23 +181,9 @@ const JobDetailPage = async ({ params, searchParams }) => {
                   // buttonText="Apply Now /jobs/[category]/[id]/page.js"
                   />
                 )}
-                <a
-                  className="icon_share items-center min-w-[32px]"
-                  href={`mailto:?bcc=${bccEmail}&subject=${subject}&body=${bodyEmail}`}
-                >
-                  <BsFillShareFill size={20} color="#2867B2" />
-                </a>
+                <ShareButton jobId={jobId}/>
                 <FavoriteButton jobId={params.id} favoriteJobYN={favoriteJobYN} />
-                {/* <img
-                  src="/icons/heart.svg"
-                  width="44"
-                  height="44"
-                  alt="Add this Job Post to Favorites"
-                  onClick={() => {
-                    alert(params.id)
-                  }}
-                /> */}
-              <JoinTalentPool employerId={employer_id} talentPoolYN={talentPoolYN}/>
+                <JoinTalentPool employerId={employer_id} talentPoolYN={talentPoolYN}/>
               </div>
             </div>
           </div>
