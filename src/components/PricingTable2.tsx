@@ -30,6 +30,19 @@ const PricingTable = () => {
     return number.toLocaleString();
   }
 
+  // const [regionSelected, setRegion] = useState(region);
+
+  // const [selectedCurrency, setSelectedCurrency] = useState(
+  //   'Which Region are you from?'
+  // );
+
+  // const handleChange = (event) => {
+  //   setSelectedCurrency(event.target.value); // Get the selected option element
+  //   const selectedOption = event.target.options[event.target.selectedIndex]; // Get the text of the selected option
+  //   const selectedRegion = selectedOption.text;
+  //   setRegion(selectedRegion);
+  // };
+
   return (
     <div className="max-w-6xl mx-auto pt-4 px-8">
       <h2 className="underline-full gray-blue">

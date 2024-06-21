@@ -24,8 +24,9 @@ const stripeLink = {
     'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=united-kingdom',
   USA: 'https://buy.stripe.com/4gw8ycc9ObeE2Bi6ot?region=usa',
 };
-const JobPostForm = ({ region = 'USA' }) => {
+const JobPostForm = ({ product }) => {
   const [jobURLLink, setJobURLLink] = useState(false);
+  const region = product.currency;
 
   const handleContentChange = (reason) => {
     //setContent(reason)
@@ -118,11 +119,6 @@ const JobPostForm = ({ region = 'USA' }) => {
       <main className=" content-grid">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
-            <h1
-              className={`text-4xl font-bold mt-8 underline-full text-[#3b5683]`}
-            >
-              {partnerName} Quick Post
-            </h1>
             <form className=" " onSubmit={handleSubmit(onSubmit)}>
               <div className="flex flex-col gap-4 justify-start">
                 <div
@@ -131,29 +127,6 @@ const JobPostForm = ({ region = 'USA' }) => {
                   }`}
                 >
                   <div className="grid w-full items-center gap-1.5">
-                    <label htmlFor="currency" className="label-text text-xs">
-                      Region
-                    </label>
-                    <select
-                      id="currency"
-                      value={selectedCurrency}
-                      onChange={handleChange}
-                      name="currency"
-                      className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500 mb-4"
-                      required
-                    >
-                      <option value="" selected>
-                        Which Region are you from?
-                      </option>
-                      {Object.keys(stripeLink)
-                        .filter((key) => key !== 'JobElephant')
-                        .map((key) => (
-                          <option key={key} value={stripeLink[key]}>
-                            {key}
-                          </option>
-                        ))}
-                    </select>
-
                     <InputBlock
                       register={register}
                       errors={errors}
@@ -308,6 +281,7 @@ const JobPostForm = ({ region = 'USA' }) => {
               </div>
             </form>
           </div>
+
           {/* Right panel */}
           <div className="relative">
             <div className="flex mt-8">
