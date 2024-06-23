@@ -1,4 +1,8 @@
+'use client';
 import Image from 'next/image';
+import { useState } from 'react';
+import { productData } from '@/data/productData';
+
 // type Props = {
 //   productName: string
 // }
@@ -26,27 +30,69 @@ const PricingTable = () => {
     enterprisePrice: 888,
   };
 
+  const region = {
+    Australia: 'AUD',
+    // Asia: 'JPY',
+    // Africa: 'ZAR',
+    // Canada: 'CAD',
+    // Europe: 'EUR',
+    // India: 'INR',
+    // 'South America': 'BRL',
+    // 'Middle East': 'SAR',
+    'New Zealand': 'NZD',
+    // 'United Kingdom': 'GBP',
+    USA: 'USD',
+    Other: 'USD',
+  };
+  const regionMessage = 'Which Region are you from?';
+
   function formatNumberWithCommas(number: number) {
     return number.toLocaleString();
   }
+  const [regionSelected, setRegion] = useState(region);
 
-  // const [regionSelected, setRegion] = useState(region);
+  const [selectedCurrency, setSelectedCurrency] = useState(regionMessage);
+  const [products, getProducts] = useState(productData.aud);
 
-  // const [selectedCurrency, setSelectedCurrency] = useState(
-  //   'Which Region are you from?'
-  // );
-
-  // const handleChange = (event) => {
-  //   setSelectedCurrency(event.target.value); // Get the selected option element
-  //   const selectedOption = event.target.options[event.target.selectedIndex]; // Get the text of the selected option
-  //   const selectedRegion = selectedOption.text;
-  //   setRegion(selectedRegion);
-  // };
+  const handleChange = (event) => {
+    setSelectedCurrency(event.target.value); // Get the selected option element
+    const selectedOption = event.target.options[event.target.selectedIndex]; // Get the text of the selected option
+    const selectedRegion = selectedOption.text;
+    setRegion(selectedRegion);
+  };
 
   return (
     <div className="max-w-6xl mx-auto pt-4 px-8">
+      <label htmlFor="currency" className="label-text text-xs">
+        {selectedCurrency === regionMessage
+          ? 'Please select a region?'
+          : 'Region'}
+      </label>
+      <select
+        id="currency"
+        value={selectedCurrency}
+        onChange={handleChange}
+        name="currency"
+        className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500 mb-4"
+        required
+      >
+        <option value="" selected>
+          Which Region are you from?
+        </option>
+        {Object.keys(region)
+          .filter((key) => key !== 'JobElephant')
+          .map((key) => (
+            <option key={key} value={region[key]}>
+              {key}
+            </option>
+          ))}
+      </select>
+
       <h2 className="underline-full gray-blue">
-        EOFY Special (AHEIA Members Only)
+        {selectedCurrency === 'AUD'
+          ? 'EOFY Special (AHEIA Members Only)'
+          : 'Pricing'}{' '}
+        {selectedCurrency === regionMessage ? '' : selectedCurrency}
       </h2>
 
       <div
@@ -63,16 +109,17 @@ const PricingTable = () => {
               src="/icons/abstract-orange.jpg"
               className="rounded-3xl w-20 h-20"
             />
+
             <div className="ml-5">
               <span className="block text-2xl font-semibold">
-                {pricing.basic}
+                {products[0].name}
               </span>
               <span>
                 <span className="font-medium text-gray-500 text-xl align-top">
-                  {pricing.currencySymbol}&thinsp;
+                  {products[0].currencySymbol}&thinsp;
                 </span>
                 <span className="text-3xl font-bold">
-                  {formatNumberWithCommas(pricing.basicPrice)}
+                  {formatNumberWithCommas(products[0].price)}
                 </span>{' '}
                 <p className="m-0 mt-[-4px] text-[12px]">/per purchase</p>
               </span>
@@ -135,10 +182,10 @@ const PricingTable = () => {
           </ul>
 
           <a
-            href="/post-a-job"
+            href={`/purchase/${products[0].slug}`}
             className="flex justify-center items-center bg-aj rounded-xl py-5 px-4 text-center text-white font-bold text-xl"
           >
-            Buy {pricing.basic}
+            Buy {products[0].name}
           </a>
         </div>
 
@@ -154,14 +201,14 @@ const PricingTable = () => {
             />
             <div className="ml-5">
               <span className="block text-2xl font-semibold text-black">
-                {pricing.business}
+                {products[1].name}
               </span>
               <span>
                 <span className="font-medium text-gray-500 text-xl align-top">
-                  {pricing.currencySymbol}&thinsp;
+                  {products[1].currencySymbol}&thinsp;
                 </span>
                 <span className="text-3xl font-bold text-black">
-                  {formatNumberWithCommas(pricing.businessPrice)}
+                  {formatNumberWithCommas(products[1].price)}
                 </span>
                 <p className="m-0 mt-[-4px] text-[12px]">/per job pack</p>
               </span>
@@ -245,11 +292,10 @@ const PricingTable = () => {
             </li> */}
           </ul>
           <a
-            href="https://buy.stripe.com/dR629O4HmgyY1xe6oM"
-            target="_blank"
+            href={`/purchase/${products[1].slug}`}
             className="flex justify-center items-center bg-aj rounded-xl py-5 px-4 text-center text-white font-bold text-xl"
           >
-            Subscribe to {pricing.business}
+            Buy {products[1].name}
           </a>
         </div>
 
@@ -265,14 +311,14 @@ const PricingTable = () => {
             />
             <div className="ml-5">
               <span className="block text-2xl font-semibold text-black">
-                {pricing.enterprise}
+                {products[2].name}
               </span>
               <span>
                 <span className="font-medium text-gray-500 text-xl align-top">
-                  {pricing.currencySymbol}&thinsp;
+                  {products[2].currencySymbol}&thinsp;
                 </span>
                 <span className="text-3xl font-bold text-black">
-                  {formatNumberWithCommas(pricing.enterprisePrice)}
+                  {formatNumberWithCommas(products[2].price)}
                 </span>
                 <p className="m-0 mt-[-4px] text-[12px]">/monthly</p>
               </span>
@@ -335,11 +381,10 @@ const PricingTable = () => {
             </li>
           </ul>
           <a
-            href="https://buy.stripe.com/fZeaGk1vaaaAdfWeVh"
-            target="_blank"
+            href={`/purchase/${products[2].slug}`}
             className="flex justify-center items-center bg-aj rounded-xl py-5 px-4 text-center text-white font-bold text-xl"
           >
-            Subscribe to {pricing.enterprise}
+            Subscribe to {products[2].name}
           </a>
         </div>
       </div>

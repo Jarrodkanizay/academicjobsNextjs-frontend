@@ -11,7 +11,10 @@ export const metadata: Metadata = {
 };
 
 const PostJobPage = ({ params }) => {
-  const product = productData.find((product) => product.slug === params.slug);
+  const currency = params.slug.split('-').pop();
+  const products = productData[currency];
+  const product = products.find((product) => product.slug === params.slug);
+  // const product = productData.find((product) => product.slug === params.slug);
   // const product = params.slug;
 
   if (!product) {
