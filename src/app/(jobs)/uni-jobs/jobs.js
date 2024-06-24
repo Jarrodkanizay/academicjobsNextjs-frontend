@@ -4,6 +4,7 @@ import SearchResults3 from '@/components/SearchResults3';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
+import JobTypeFaces from '@/components/JobTypeFaces';
 export default function Page() {
   return (
     <>
@@ -18,8 +19,9 @@ export default function Page() {
             </p>
           </div>
         </div>
+        <JobTypeFaces />
         <AdvancedSearchBar
-          forceClass="hidden md:block mb-16"
+          forceClass="hidden md:block my-16"
           type="advancedSearch"
         />
         <section class="jobs_grid job_post_search_container">
