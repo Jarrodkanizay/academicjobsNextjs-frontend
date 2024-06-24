@@ -145,7 +145,7 @@ export default function Header() {
             </Link>
           )}
           <NavItem
-            url={region ? `/jobs-advanced-search?r=${countryMappings2[region?.toLowerCase()]?.url}` : '/jobs-advanced-search'}
+            url={region ? `/jobs-advanced-search?r=${region?.toLowerCase()}` : '/jobs-advanced-search'}
             icon="/dotted-arrow.svg"
             navLink="Seek Jobs"
             forceClass="border-b hover:border-amber-500" //this is optional

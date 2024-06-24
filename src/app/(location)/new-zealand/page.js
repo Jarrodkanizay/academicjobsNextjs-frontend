@@ -23,33 +23,33 @@ const items = [
     src: '/home/academic-faculty-positions.png',
     alt: 'Academic Faculty Positions',
     label: 'Faculty',
-    link: `new-zealand/faculty`,
+    link: `new-zealand/faculty?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`,
   },
 
   {
     src: '/home/academic-executive-positions.png',
     alt: 'Academic Executive Positions',
     label: 'Executive',
-    link: `new-zealand/executive`,
+    link: `new-zealand/executive?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`,
   },
   {
     src: '/home/academic-human-resource-positions.png',
     alt: 'Academic Human Resource Positions',
     label: 'HR Jobs',
-    link: `new-zealand/hr-jobs`,
+    link: `/new-zealand/hr-jobs?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`,
   },
 
   {
     src: '/home/academic-phd-positions.png',
     alt: 'Academic PhD Positions',
     label: 'PhD Jobs',
-    link: `new-zealand/phd`,
+    link: `new-zealand/phd?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]`,
   },
   {
     src: '/home/academic-staff-positions.png',
     alt: 'Academic Staff Positions',
     label: 'Staff/Admin',
-    link: `/new-zealand/admin`,
+    link: `/new-zealand/admin?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`,
   },
 ];
 
@@ -113,26 +113,26 @@ export default function Page() {
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li>
-              <Link href="/New-Zealand/lecturer/"> Lecturer</Link>
+              <Link href={`/New-Zealand/lecturer?r=New Zealand&filter0=[{"category":"PositionType","filter":"Lecturer/Instructor"}]`}> Lecturer</Link>
             </li>
             <li>
-              <Link href="/New-Zealand/research/"> Research </Link>
+              <Link href={`/New-Zealand/research?r=New Zealand&filter0=[{"category":"PositionType","filter":"Research"}]`}> Research </Link>
             </li>
             <li>
-              <Link href="/New-Zealand/professor/"> Professor</Link>
+              <Link href={`/New-Zealand/professor?r=New Zealand&filter0=[{"category":"PositionType","filter":"Professor"}]`}> Professor</Link>
             </li>
           </ul>
           <li>
-            <Link href="/New-Zealand/executive/"> Executive</Link>
+            <Link href={`/New-Zealand/executive?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`}> Executive</Link>
           </li>
           <li>
-            <Link href="/New-Zealand/admin/">Admin</Link>
+            <Link href={`/new-zealand/admin?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`}>Admin</Link>
           </li>
           <li>
-            <Link href="/New-Zealand/hr-jobs/"> HR</Link>
+            <Link href={`/new-zealand/hr-jobs?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`}> HR</Link>
           </li>
           <li>
-            <Link href="/New-Zealand/student/"> Student</Link>
+            <Link href={`/New-Zealand/student?r=New Zealand&filter0=[{"category":"PositionType","filter":"Graduate"}]`}> Student</Link>
           </li>
         </ul>
       </div><div className=" mt-2 mb-4">

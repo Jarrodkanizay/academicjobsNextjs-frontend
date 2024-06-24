@@ -10,7 +10,7 @@ import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 export default function Page({
-  p,
+  p = {},
   forceClass = '',
 }) {
   const router = useRouter();
@@ -172,8 +172,8 @@ export default function Page({
                       onPlaceSelected={(place) => {
                         const lat = place.geometry.location.lat();
                         const lon = place.geometry.location.lng();
-                        setLon(lon);
-                        setLat(lat);
+                        router.push(`/jobs-advanced-search?${toURLParams({ ...searchParams, lon, lat })}`, { scroll: false });
+
                       }}
                       options={{
                         types: ['geocode', 'establishment'],
@@ -191,9 +191,11 @@ export default function Page({
                               (_, index) => index !== i
                             );
                             setPage(0);
-                            setFilter1(updatedFilter);
+                            console.log("updatedFilter", updatedFilter)
+                            router.push(`/jobs-advanced-search?${toURLParams({ ...searchParams, filter0: updatedFilter })}`, { scroll: false });
+                            // setFilter1(updatedFilter);
                             setCategory("");
-                            setCurrentMiddleCategory("");
+                            // setCurrentMiddleCategory("");
                             setSelectedFilters(selectedFilters.filter(item => item !== filter));
                           }}
                         >

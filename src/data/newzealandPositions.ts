@@ -9,11 +9,11 @@ export const regionData = [
     The No.1 job board for uni jobs in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top faculty jobs to find the best position for you!
      
     Find all the best academic faculty jobs here…`,
+    image: '/banner-icons/hr-jobs-banner-image.png',
   },
   {
     Name: `lecturer`,
-    Title: `
-    Lecturing Jobs in New Zealand`,
+    Title: `Lecturing Jobs in New Zealand`,
     Description: `For further information about Lecturer Academic Jobs New Zealand, browse the list of available higher education lecturer roles on this website.`,
     Keyword: `Lecturer Jobs In New Zealand`,
     content: `Seek your perfect lecturing position through New Zealand’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top universities in New Zealand. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
@@ -21,6 +21,8 @@ export const regionData = [
     The No.1 job board for lecturers in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.
      
     Find all the best lecturing jobs here…`,
+    image: '/banner-icons/lecturer-banner.png',
+
   },
   {
     Name: `research`,
@@ -32,6 +34,8 @@ export const regionData = [
     The No.1 job board for researchers in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you!
      
     Find all the best research jobs here…`,
+    image: '/banner-icons/research-banner.png',
+
   },
   {
     Name: `professor`,
@@ -43,6 +47,8 @@ export const regionData = [
     The No.1 job board for professors in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you!
      
     Find all the best jobs here…`,
+    image: '/banner-icons/professor-banner.png',
+
   },
   {
     Name: `student`,
@@ -54,6 +60,7 @@ export const regionData = [
     The No.1 job board for students in New Zealand. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
      
     Find all the best student jobs here…`,
+    image: '/banner-icons/student-banner.png',
   },
   {
     Name: `hr jobs`,
@@ -63,6 +70,7 @@ export const regionData = [
     content: `Seek your perfect human resource position through New Zealand’s best job board! At Academic Jobs we offer the most renowned HR jobs at the top universities in New Zealand. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
  
     The No.1 job board for HR professionals in universities in New Zealand. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
+    image: '/banner-icons/hr-jobs-banner-image.png',
   },
   {
     Name: `executive`,
@@ -74,6 +82,7 @@ export const regionData = [
     The No.1 job board for academics in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!
      
     Find all the best executive jobs here…`,
+    image: '/banner-icons/hr-jobs-banner-image.png',
   },
   {
     Name: `admin`,
@@ -86,6 +95,7 @@ export const regionData = [
     The No.1 job board for academics in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
      
     Find all the best staff jobs here…`,
+    image: '/banner-icons/hr-jobs-banner-image.png',
   },
 
   {
@@ -98,6 +108,8 @@ export const regionData = [
   The No.1 job board for graduates in New Zealand. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
   
   Find all the best graduate jobs here…`,
+  image: '/banner-icons/graduate-banner.png',
+
   },
   {
     Name: `phd`,
@@ -109,5 +121,7 @@ export const regionData = [
   The No.1 job board for academics in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programs.
   
   Find all the best PhD positions here…`,
+  image: '/banner-icons/phd-banner.png',
+
   },
 ];
