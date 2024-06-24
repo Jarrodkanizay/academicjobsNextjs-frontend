@@ -19,17 +19,6 @@ type PricingTypes = {
 };
 
 const PricingTable = () => {
-  const pricing: PricingTypes = {
-    cta: '',
-    currencySymbol: '$',
-    basic: 'Single Job Post',
-    basicPrice: 315,
-    business: '3 Job Pack',
-    businessPrice: 888,
-    enterprise: 'Unlimited',
-    enterprisePrice: 888,
-  };
-
   const region = {
     Australia: 'AUD',
     // Asia: 'JPY',
@@ -50,6 +39,10 @@ const PricingTable = () => {
     return number.toLocaleString();
   }
   const [regionSelected, setRegion] = useState(region);
+
+  // TODO - Add validation for region, users should be able to proceed without selecting a region!
+  // TODO - Customize the features for AHEIA versus other regions
+  // TODO - Setup other pricing for other regions in stripe
 
   const [selectedCurrency, setSelectedCurrency] = useState(regionMessage);
   const [products, getProducts] = useState(productData.aud);
@@ -347,7 +340,8 @@ const PricingTable = () => {
               />
               <span className="ml-3">
                 All
-                <span className="text-black"> {pricing.business} </span>features
+                <span className="text-black"> {products[1].name} </span>
+                features
               </span>
             </li>
             <li className="flex text-lg mb-2">
