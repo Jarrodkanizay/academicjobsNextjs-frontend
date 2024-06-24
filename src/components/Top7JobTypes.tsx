@@ -34,7 +34,7 @@ export default function JobSearchBox() {
       alt: 'Academic PhD Positions',
       label: 'PhD Jobs',
       //link: `/phd`,
-      link: `/phd?r=Global&filter0=[{"category":"PositionType","filter":"Student / Phd Jobs"}]`,
+      link: `/phd?r=Global&filter0=[{"category":"PositionType","filter":"PhD"}]`,
     },
     {
       src: '/home/academic-staff-positions.png',

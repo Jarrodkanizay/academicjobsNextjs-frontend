@@ -28,14 +28,14 @@ export default async function myPage() {
       src: '/home/academic-faculty-positions.png',
       alt: 'Academic Faculty Positions',
       label: 'Faculty',
-      link: `australia/faculty`,
+      link: `australia/faculty?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`,
     },
 
     {
       src: '/home/academic-executive-positions.png',
       alt: 'Academic Executive Positions',
       label: 'Executive',
-      link: `australia/executive`,
+      link: `australia/executive?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`,
     },
     {
       src: '/home/academic-human-resource-positions.png',
@@ -48,13 +48,13 @@ export default async function myPage() {
       src: '/home/academic-phd-positions.png',
       alt: 'Academic PhD Positions',
       label: 'PhD Jobs',
-      link: `australia/phd`,
+      link: `australia/phd?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]`,
     },
     {
       src: '/home/academic-staff-positions.png',
       alt: 'Academic Staff Positions',
       label: 'Staff/Admin',
-      link: `/australia/admin`,
+      link: `/australia/admin?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`,
     },
   ];
 
@@ -89,7 +89,7 @@ export default async function myPage() {
             <li>
               <a
                 className="grayscale hover:grayscale-0"
-                href="australia/faculty"
+                href={`australia/faculty?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`}
               >
                 <Image
                   alt="Academic Faculty Positions"
@@ -101,14 +101,14 @@ export default async function myPage() {
                   src="/home/academic-faculty-positions.png"
                 ></Image>
               </a>
-              <a className="mb-4" href="australia/faculty">
+              <a className="mb-4" href={`australia/faculty?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`}>
                 <p>Faculty</p>
               </a>
             </li>
             <li>
               <a
                 className="grayscale hover:grayscale-0"
-                href="australia/executive"
+                href={`australia/executive?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`}
               >
                 <Image
                   alt="Academic Executive Positions"
@@ -120,14 +120,14 @@ export default async function myPage() {
                   src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"
                 ></Image>
               </a>
-              <a className="mb-4" href="australia/executive">
+              <a className="mb-4" href={`australia/executive?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`}>
                 <p>Executive</p>
               </a>
             </li>
             <li>
               <a
                 className="grayscale hover:grayscale-0"
-                href="australia/hr-jobs"
+                href={`australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human%20Resources"}]`}
               >
                 <Image
                   alt="Academic HR Positions"
@@ -139,7 +139,7 @@ export default async function myPage() {
                   src="/home/academic-human-resource-positions.png"
                 ></Image>
               </a>
-              <a className="mb-4" href="australia/hr-jobs">
+              <a className="mb-4" href={`australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human%20Resources"}]`}>
                 <p>HR Jobs</p>
               </a>
             </li>

@@ -82,8 +82,8 @@ export default function myPage() {
         </div>
       </div>
 
-      <div className="bg-gray-200 flex flex-col  ">
-        <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize max-w-screen-2xl ml-auto">
+      <div className="bg-gray-200 flex flex-col ">
+        {/* <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize max-w-screen-2xl ml-auto">
           {executive.map(({ Title, Name }, key) => (
             <li
               className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
@@ -94,7 +94,7 @@ export default function myPage() {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
       <AdvancedSearchBar
         p={{
