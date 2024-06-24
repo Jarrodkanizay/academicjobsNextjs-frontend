@@ -35,62 +35,9 @@ export default function myPage() {
         alt="Academic and Higher Education Quick Job Post Technology"
         reorder={false}
       />
-      {/* <Stats /> */}
 
-      <h2 className="underline-full mb-4 text-center">
-        The place HR professional come to find and post jobs
-      </h2>
-      <div className="text-2-cols mb-8">
-        <p className="px-7 mb-4 mt-1">
-          Most importantly, we are passionate about the HR profession and use
-          our knowledge and expertise to find you your ideal HR job. We have
-          created a network of HR professionals, join our{' '}
-          <Link className="link link-aj" href="/academic-talent-pool">
-            Talent Pool
-          </Link>{' '}
-          to be a part of the action.
-        </p>
-        <p className="px-7 md:flex hidden">
-          The No.1 job board for HR professionals in universities. So, if you
-          are looking to advance your career, we can help you achieve your
-          ambitions – both in the short term as well as throughout your lifelong
-          career.
-        </p>
-      </div>
 
-      <div className="bg-white flex flex-col  ">
-        <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-4  h-auto w-full uppercase">
-          {hr.map(({ Title, Name }, key) => (
-            <li
-              className={`btn btn-outline btn-secondary rounded-full mb-4 flex font-bold`}
-              key={key}
-            >
-              <Link href={`/hr-jobs/${Name?.replace(/\s+/g, '-')}/`}>
-                {Name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* <div className="md:flex hidden grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
-        <iframe
-          className=" aspect-video  "
-          src="https://www.youtube.com/embed/zA4K1-QmrO4?si=FeSGIGczCj2ZZkwL"
-          title="YouTube video player"
-        ></iframe>
-        <iframe
-          className=" aspect-video "
-          src="https://www.youtube.com/embed/pqjW3uCtswE?si=CxYxWGXqILlP4TlQ"
-          title="YouTube video player"
-        ></iframe>
-        <iframe
-          className=" aspect-video "
-          src="https://www.youtube.com/embed/xiCacfu7Y7Y?si=iC3XrZQZ6o1cCluc"
-          title="YouTube video player"
-        ></iframe>
-      </div> */}
-      <AdvancedSearchBar
+<AdvancedSearchBar
         p={{
           filter1: [
             {
@@ -100,8 +47,8 @@ export default function myPage() {
           ],
         }}
       />
-
       <section className="jobs_grid job_post_search_container">
+        
         <div className="filters_panel">
           <div className="filters_content">
             <JobFilter />

@@ -4,17 +4,26 @@ import SearchResults3 from '@/components/SearchResults3';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
+import JobTypeFaces from '@/components/JobTypeFaces';
 export default function Page() {
   return (
     <>
       <main>
         <div className="w-full gradient-aj py-4 mb-4 mt-8">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-screen-xl mx-auto ">
-              <AdvancedSearchBar forceClass="hidden md:block" type="advancedSearch" />
-            </div>
+            <h1 className="text-white">University & Higher Ed Jobs</h1>
+            <p>
+              Seek all university & higher ed jobs in prestigious universities
+              around the world. You can find all university lecturer, professor,
+              academic instructors, here…
+            </p>
           </div>
         </div>
+        <JobTypeFaces />
+        <AdvancedSearchBar
+          forceClass="hidden md:block my-16"
+          type="advancedSearch"
+        />
         <section class="jobs_grid job_post_search_container">
           <div class="filters_panel">
             <div class="filters_content">
@@ -23,7 +32,7 @@ export default function Page() {
           </div>
           <div class="listings_panel">
             <div class="listings_content">
-              <SearchResults3   />
+              <SearchResults3 />
               {/* <SearchResults1 q={{ q: q, l: l || '', lon, lat, filter1 }} /> */}
             </div>
           </div>

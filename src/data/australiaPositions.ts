@@ -93,7 +93,7 @@ export const regionData = [
   The No.1 job board for HR professionals in Australian universities. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
     category2: 'PositionType',
     filter2: 'Professor',
-    Image: '/banner-icons/hr-jobs-banner-image.png',
+    Image: '/banner-icons/indigenous-banner.png',
   },
   {
     Name: `executive`,

@@ -29,7 +29,7 @@ export default function Header() {
   // }, []);
   const { data: session } = useSession();
   const { r = 'Global' } = useURLParams();
-  const region = r
+  const region = r;
   //const { region, setRegion, setFilter1, reset } = useStore();
   const pathname = usePathname();
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -116,7 +116,7 @@ export default function Header() {
           )
         ) : (
           <Link
-              href={`/${countryMappings2[region?.toLowerCase()]?.url}?r=${r}`}
+            href={`/${countryMappings2[region?.toLowerCase()]?.url}?r=${r}`}
             className={`static-logo mobile`}
           >
             <LogoAJ width={270} height={60} />{' '}
@@ -145,16 +145,21 @@ export default function Header() {
             </Link>
           )}
           <NavItem
-            url={region ? `/jobs-advanced-search?r=${countryMappings2[region?.toLowerCase()]?.url}` : '/jobs-advanced-search'}
+            url={
+              region
+                ? `/jobs-advanced-search?r=${region?.toLowerCase()}`
+                : '/jobs-advanced-search'
+            }
             icon="/dotted-arrow.svg"
-            navLink="Seek Jobs"
+            navLink="Find Uni Jobs"
             forceClass="border-b hover:border-amber-500" //this is optional
             forceButtonClass="border-b hover:border-amber-500 mr-2 "
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url={`/${countryMappings2[region?.toLowerCase()]?.url
-              }/jobs-by-top-universities`}
+            url={`/${
+              countryMappings2[region?.toLowerCase()]?.url
+            }/jobs-by-top-universities`}
             icon="/upward-arrow.svg"
             navLink="Top Universities"
             forceButtonClass="border-b hover:border-amber-500 "
@@ -219,13 +224,15 @@ export default function Header() {
                     icon="/icons/users.svg"
                     navLink="My profile"
                     forceButtonClass="border-b hover:border-amber-500 "
-                    onClick={() => setIsNavOpen(false)} />
+                    onClick={() => setIsNavOpen(false)}
+                  />
                   <NavItem
                     url="./"
                     icon="/icons/logout.svg"
                     navLink="Logout"
                     forceButtonClass="border-b hover:border-amber-500 "
-                    onClick={handleLogoutMobile} />
+                    onClick={handleLogoutMobile}
+                  />
                 </>
               ) : (
                 <>
@@ -234,25 +241,24 @@ export default function Header() {
                     icon="/icons/signin.svg"
                     navLink="Sign In"
                     forceButtonClass="border-b hover:border-amber-500 "
-                    onClick={() => signIn()} />
+                    onClick={() => signIn()}
+                  />
                   <NavItem
                     url="/auth/sign-up"
                     icon="/icons/signup.svg"
                     navLink="Sign Up"
                     forceButtonClass="border-b hover:border-amber-500 "
-                    forceImageClass='text-amber-500'
-                    onClick={() => setIsNavOpen(false)} />
+                    forceImageClass="text-amber-500"
+                    onClick={() => setIsNavOpen(false)}
+                  />
                 </>
-              )
-              }
+              )}
               <a className="btn btn-aj w-full mt-4 h820:hidden" href="/jobs">
                 Search Globally
               </a>
               <details className="w-full text-center bg-gray-300 open:bg-[amber-200] duration-300 rounded-3xl font-bold shadow-xl h820:hidden">
                 <summary className="py-2">Search In Your Country</summary>
-                <a
-                  className="md:w-52 dropdown-content z-[1] menu p-2 bg-slate-100 w-31"
-                >
+                <a className="md:w-52 dropdown-content z-[1] menu p-2 bg-slate-100 w-31">
                   <div className="text-gray-900 relative z-10">
                     <ul className="font-light text-[0.875rem] z-99 min-w-[10rem] overflow-y-auto h-[200px] py-1 bg-white rounded-lg">
                       {Object.keys(countryMappings1).map((key) => (
@@ -276,8 +282,9 @@ export default function Header() {
           )}
           <div className="ml-auto post-a-job-button ">
             <NavItem
-              url={`/${countryMappings2[region?.toLowerCase()]?.url
-                }/recruitment/`}
+              url={`/${
+                countryMappings2[region?.toLowerCase()]?.url
+              }/recruitment/`}
               icon="/post-a-job-icon.svg"
               navLink="Post a Job"
               forceLinkClass="ml-auto"
