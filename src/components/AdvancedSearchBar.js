@@ -10,10 +10,7 @@ import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 
-export default function Page({
-  p = {},
-  forceClass = '',
-}) {
+export default function Page({ p = {}, forceClass = '' }) {
   const router = useRouter();
   const searchParams = loadFromURLParams(useSearchParams());
   const {
@@ -78,7 +75,8 @@ export default function Page({
     setfilterTypes1((p) => ({ ...p, FacultyDepartmentJobs: false }));
     setfilterTypes1((p) => ({ ...p, AcademicPositionType: false }));
     setfilterTypes1((p) => ({ ...p, thirdcategory: false }));
-    if (category === "AcademicPositionType") setfilterTypes1((p) => ({ ...p, thirdcategory: true }));
+    if (category === 'AcademicPositionType')
+      setfilterTypes1((p) => ({ ...p, thirdcategory: true }));
     if (filter1?.some((obj) => obj.filter?.includes('Executive '))) {
       setfilterTypes1((p) => ({ ...p, ExecutiveJobs: true }));
     }
@@ -157,94 +155,124 @@ export default function Page({
     }
     const currentURL = window.location.pathname;
     if (isChecked) {
-      updatedFilters = selectedFilters.filter(item => item !== filter);
-      const updatedFilter1 = filter1.filter(f => f.filter !== filter);
-      router.push(`${currentURL}?${toURLParams({ ...searchParams, currentMiddleCategory: filter, filter0: updatedFilter1 })}`, { scroll: false });
+      updatedFilters = selectedFilters.filter((item) => item !== filter);
+      const updatedFilter1 = filter1.filter((f) => f.filter !== filter);
+      router.push(
+        `${currentURL}?${toURLParams({
+          ...searchParams,
+          currentMiddleCategory: filter,
+          filter0: updatedFilter1,
+        })}`,
+        { scroll: false }
+      );
     } else {
       updatedFilters = [...selectedFilters, filter];
-      router.push(`${currentURL}?${toURLParams({ ...searchParams, currentMiddleCategory: filter, filter0: [...searchParams.filter0, { category, filter }] })}`, { scroll: false });
+      router.push(
+        `${currentURL}?${toURLParams({
+          ...searchParams,
+          currentMiddleCategory: filter,
+          filter0: [...searchParams.filter0, { category, filter }],
+        })}`,
+        { scroll: false }
+      );
     }
     setSelectedFilters(updatedFilters);
   };
 
   return (
     <>
-      <main>
-        <div className=" mx-auto bg-white rounded-xl shadow-xl p-4 max-w-5xl flex flex-col">
-          <div className="w-full pt-2">
-            <div className=" mx-auto">
-              <div className="max-w-screen-xl">
-                <div className={` py-4`}>
-                  <div className="lg:max-w-screen-lg mx-auto">
-                    <div className="join mx-auto w-full shadow-xl flex flex-col md:flex-row">
-                      <Autocomplete
-                        className="input input-bordered join-item w-full md:text-left text-center rounded-xl"
-                        style={{ width: '100%' }}
-                        apiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
-                        onPlaceSelected={(place) => {
-                          const lat = place.geometry.location.lat();
-                          const lon = place.geometry.location.lng();
-                          const currentURL = window.location.pathname;
-                          router.push(`${currentURL}?${toURLParams({ ...searchParams, lon, lat })}`, { scroll: false });
-                        }}
-                        options={{
-                          types: ['geocode', 'establishment'],
-                        }}
-                      />
-                    </div>
-                    {filter1.length > 0 && (
-                      <div className="md:flex md:flex-wrap pb-2 p-2">
-                        {filter1.map(({ category1, filter }, i) => (
-                          <button
-                            key={i}
-                            className="btn btn-xs bg-sky-900 text-white mr-2"
-                            onClick={() => {
-                              const updatedFilter = filter1.filter(
-                                (_, index) => index !== i
-                              );
-                              setPage(0);
-                              const currentURL = window.location.pathname;
-                              router.push(`${currentURL}?${toURLParams({ ...searchParams, filter0: updatedFilter })}`, { scroll: false });
-                              setCategory("");
-                              setSelectedFilters(selectedFilters.filter(item => item !== filter));
-                            }}
-                          >
-                            {`${filter} X`}
-                          </button>
-                        ))}
-                      </div>
-                    )}
+      <div
+        className={`mx-auto bg-white rounded-xl shadow-xl p-4 max-w-5xl  flex flex-col ${forceClass}`}
+      >
+        <div className="w-full pt-2">
+          <div className=" mx-auto">
+            <div className="max-w-screen-xl">
+              <div className={` py-4`}>
+                <div className="lg:max-w-screen-lg mx-auto">
+                  <div className="join mx-auto w-full shadow-xl flex flex-col md:flex-row">
+                    <Autocomplete
+                      className="input input-bordered join-item w-full md:text-left text-center rounded-xl"
+                      style={{ width: '100%' }}
+                      apiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
+                      onPlaceSelected={(place) => {
+                        const lat = place.geometry.location.lat();
+                        const lon = place.geometry.location.lng();
+                        const currentURL = window.location.pathname;
+                        router.push(
+                          `${currentURL}?${toURLParams({
+                            ...searchParams,
+                            lon,
+                            lat,
+                          })}`,
+                          { scroll: false }
+                        );
+                      }}
+                      options={{
+                        types: ['geocode', 'establishment'],
+                      }}
+                    />
                   </div>
+                  {filter1.length > 0 && (
+                    <div className="md:flex md:flex-wrap pb-2 p-2">
+                      {filter1.map(({ category1, filter }, i) => (
+                        <button
+                          key={i}
+                          className="btn btn-xs bg-sky-900 text-white mr-2"
+                          onClick={() => {
+                            const updatedFilter = filter1.filter(
+                              (_, index) => index !== i
+                            );
+                            setPage(0);
+                            const currentURL = window.location.pathname;
+                            router.push(
+                              `${currentURL}?${toURLParams({
+                                ...searchParams,
+                                filter0: updatedFilter,
+                              })}`,
+                              { scroll: false }
+                            );
+                            setCategory('');
+                            setSelectedFilters(
+                              selectedFilters.filter((item) => item !== filter)
+                            );
+                          }}
+                        >
+                          {`${filter} X`}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex gap-4 flex-wrap p-2 border-b border-grey">
-            {Object.entries(filterTypes1).map(([filterType, showYN], i) => (
-              <React.Fragment key={i}>
-                <button
-                  key={i}
-                  className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${category === filterType
+        </div>
+        <div className="flex gap-4 flex-wrap p-2 border-b border-grey">
+          {Object.entries(filterTypes1).map(([filterType, showYN], i) => (
+            <React.Fragment key={i}>
+              <button
+                key={i}
+                className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${
+                  category === filterType
                     ? 'bg-amber-500 text-white border-amber-500'
                     : 'bg-white border-gray-500'
-                    }
+                }
                   ${showYN ? 'block' : 'hidden'}`}
-                  onClick={() => {
-                    if (category === filterType) {
-                      setIsShowFilter((prev) => !prev);
-                    } else {
-                      setIsShowFilter(true);
-                    }
-                    setCategory(filterType);
-                  }}
-                >
-                  {filterValues9[filterType] === 'thirdcategory'
-                    ? `${currentMiddleCategory} Specialty`
-                    : filterValues9[filterType]}
-                </button>
-              </React.Fragment>
-            )
-          )}
+                onClick={() => {
+                  if (category === filterType) {
+                    setIsShowFilter((prev) => !prev);
+                  } else {
+                    setIsShowFilter(true);
+                  }
+                  setCategory(filterType);
+                }}
+              >
+                {filterValues9[filterType] === 'thirdcategory'
+                  ? `${currentMiddleCategory} Specialty`
+                  : filterValues9[filterType]}
+              </button>
+            </React.Fragment>
+          ))}
         </div>
         <div className="flex gap-4 flex-wrap p-2">
           {Object.entries(filterTypes).map(
@@ -255,10 +283,11 @@ export default function Page({
               <React.Fragment key={i}>
                 <button
                   key={i}
-                  className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${category === filterType
-                    ? 'bg-amber-500 text-white border-amber-500'
-                    : 'bg-white border-gray-500'
-                    }
+                  className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${
+                    category === filterType
+                      ? 'bg-amber-500 text-white border-amber-500'
+                      : 'bg-white border-gray-500'
+                  }
                   ${showYN ? 'block' : 'hidden'}`}
                   onClick={() => {
                     if (category === filterType) {
