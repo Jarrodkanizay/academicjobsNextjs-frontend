@@ -9,6 +9,7 @@ import Australia from '@/components/topUnis/Australia';
 import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 import { getContentRegion } from '@/actions/getContentRegion';
 import JobOfTheWeek from '@/components/JobOfTheWeek';
+import JobTypeFaces from '@/components/JobTypeFaces';
 
 //import { useParams } from 'next/navigation'
 export const metadata = {
@@ -82,23 +83,8 @@ export default async function myPage() {
             </h2>
           </section>
 
-          <ul className="hero-icons lg:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-[-2rem] mt-[-11rem] hidden">
-            {items.map((item, index) => (
-              <li key={index}>
-                <Link className="grayscale hover:grayscale-0" href={item.link}>
-                  <Image
-                    src={item.src}
-                    width={size}
-                    height={size}
-                    alt={item.alt}
-                  />
-                </Link>
-                <Link className="mb-4" href={item.link}>
-                  <p>{item.label}</p>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <JobTypeFaces items={items} size={size} />
+
           <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-[-75px] mt-[-11rem] lg:hidden ">
             <li>
               <a
@@ -188,11 +174,17 @@ export default async function myPage() {
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li className="">
               {/* <Link href="/Australia/lecturer"> Lecturer</Link> */}
-              <Link href="/australia/lecturer?r=Australia&filter0=%5B%7B%22category%22%3A%22PositionType%22%2C%22filter%22%3A%22Lecturer%2FInstructor%22%7D%5D"> Lecturer</Link>
+              <Link href="/australia/lecturer?r=Australia&filter0=%5B%7B%22category%22%3A%22PositionType%22%2C%22filter%22%3A%22Lecturer%2FInstructor%22%7D%5D">
+                {' '}
+                Lecturer
+              </Link>
             </li>
             <li className="">
               {/* <Link href="/Australia/research"> Research </Link> */}
-              <Link href="/australia/research?r=Australia&filter0=%255B%257B%2522category%2522%253A%2522PositionType%2522%252C%2522filter%2522%253A%2522Research%2522%257D%255D"> Research </Link>
+              <Link href="/australia/research?r=Australia&filter0=%255B%257B%2522category%2522%253A%2522PositionType%2522%252C%2522filter%2522%253A%2522Research%2522%257D%255D">
+                {' '}
+                Research{' '}
+              </Link>
             </li>
             {/* <li className=" ">
               <Link href={{ pathname: "/faq", query: { r: "Australia" } }}>Professor1</Link>           
@@ -206,9 +198,11 @@ export default async function myPage() {
             {/* australia/research?r=Australia&filter0=[{"category":"PositionType","filter":"Research"}] */}
             <li className=" ">
               {/* <Link href="/Australia/professor"> Professor</Link> */}
-              <Link href='/australia/professor?r=Australia&filter0=[{"category":"PositionType","filter":"Professor"}]'> Professor</Link>
+              <Link href='/australia/professor?r=Australia&filter0=[{"category":"PositionType","filter":"Professor"}]'>
+                {' '}
+                Professor
+              </Link>
             </li>
-
 
             {/* <li>
               <Link href="/australia/faculty"> Faculty</Link>
@@ -222,11 +216,17 @@ export default async function myPage() {
           </li> */}
           <li>
             {/* <Link href="/australia/hr-jobs"> HR</Link> */}
-            <Link href='/australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]'> HR</Link>
+            <Link href='/australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]'>
+              {' '}
+              HR
+            </Link>
           </li>
           <li>
             {/* <Link href="/australia/student"> Student</Link> */}
-            <Link href='/australia/hr-jobs?r=Australia&q=Student'> Student</Link>
+            <Link href="/australia/hr-jobs?r=Australia&q=Student">
+              {' '}
+              Student
+            </Link>
           </li>
           <li>
             <Link href="/australia/indigenous">Indigenous</Link>
@@ -236,7 +236,10 @@ export default async function myPage() {
           </li>
           <li>
             {/* <Link href="/australia/phd">PhD</Link> */}
-            <Link href='/australia/phd?r=Australia&filter0=[{"category":"PositionType","filter":"Student / Phd Jobs"}]'> PhD</Link>
+            <Link href='/australia/phd?r=Australia&filter0=[{"category":"PositionType","filter":"Student / Phd Jobs"}]'>
+              {' '}
+              PhD
+            </Link>
           </li>
         </ul>
       </div>
@@ -579,7 +582,6 @@ export default async function myPage() {
                   </div>
                   <div className="ml-4">
                     <h3 className="m-0 text-[22px]">
-
                       Workplace Relations Specialist
                     </h3>
                   </div>
@@ -594,18 +596,24 @@ export default async function myPage() {
                 </p>
 
                 <ul className=" p-4 pl-12 list-disc text-gray-500">
-                  <li className="text-sm">Great salary with outstanding additional employment benefits and entitlements</li>
-                  <li className="text-sm">Full-time or part-time twelve (12) month opportunity</li>
-                  <li className="text-sm">17% superannuation, 17.5% leave loading, flexible work arrangements</li>
+                  <li className="text-sm">
+                    Great salary with outstanding additional employment benefits
+                    and entitlements
+                  </li>
+                  <li className="text-sm">
+                    Full-time or part-time twelve (12) month opportunity
+                  </li>
+                  <li className="text-sm">
+                    17% superannuation, 17.5% leave loading, flexible work
+                    arrangements
+                  </li>
                   {/* <li>Salary packaging options are available</li>
                   <li className='text-sm'>
                     4 weeks annual leave plus Christmas week shutdown, per annum
                   </li>
                   <li className='text-sm'>Relocation assistance provided</li> */}
                 </ul>
-                <p className="text-sm">
-
-                </p>
+                <p className="text-sm"></p>
                 <Link
                   className="btn btn-aj btn-sm ml-auto"
                   href="/jobs/workplace-relations-specialist/129758"
