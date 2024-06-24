@@ -41,6 +41,7 @@ const PricingTable = () => {
   const [regionSelected, setRegion] = useState(region);
 
   // TODO - Add validation for region, users should be able to proceed without selecting a region!
+  // TODO - Display a modal or highlight the region selector
   // TODO - Customize the features for AHEIA versus other regions
   // TODO - Setup other pricing for other regions in stripe
 
