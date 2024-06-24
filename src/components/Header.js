@@ -147,9 +147,7 @@ export default function Header() {
           <NavItem
             url={
               region
-                ? `/jobs-advanced-search?r=${
-                    countryMappings2[region?.toLowerCase()]?.url
-                  }`
+                ? `/jobs-advanced-search?r=${region?.toLowerCase()}`
                 : '/jobs-advanced-search'
             }
             icon="/dotted-arrow.svg"

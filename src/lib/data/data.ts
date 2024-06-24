@@ -60,19 +60,19 @@ export const countryMappings2 = {
     searchLocation: "Middle East",
     hasPic: false,
   },
-  "new-zealand": {
+  "new zealand": {
     url: 'New-Zealand', 
     menu: "New Zealand",
     searchLocation: "New Zealand",
     hasPic: true,
   },
-  "uk": {
+  "united kingdom": {
     url: 'UK', 
     menu: "United Kingdom",
     searchLocation: "United Kingdom",
     hasPic: true,
   },
-  "usa": {
+  "united states": {
     url: 'USA', 
     menu: "USA",
     searchLocation: "United States",

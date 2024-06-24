@@ -245,48 +245,48 @@ export default async function myPage() {
       </div>
       <ul className="flex flex-wrap justify-center items-center md:gap-6 gap-3 px-7 pb-4 text-[#f4a10c] mx-auto">
         <li>
-          <Link className="text-center" href="/melbourne">
+          <Link className="text-center" href="/melbourne?r=Australia&l=Melbourne">
             {' '}
             Melbourne{' '}
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/sydney">
+          <Link className="text-center" href="/sydney?r=Australia&l=sydney">
             {' '}
             Sydney
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/brisbane">
+          <Link className="text-center" href="/brisbane?r=Australia&l=brisbane">
             Brisbane
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/perth">
+          <Link className="text-center" href="/perth?r=Australia&l=perth">
             {' '}
             Perth
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/adelaide">
+          <Link className="text-center" href="/adelaide?r=Australia&l=adelaide">
             {' '}
             Adelaide
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/canberra">
+          <Link className="text-center" href="/canberra?r=Australia&l=canberra">
             {' '}
             Canberra
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/gold-coast">
+          <Link className="text-center" href="/gold-coast?r=Australia&l=gold-coast">
             {' '}
             Gold Coast
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/hobart">
+          <Link className="text-center" href="/hobart?r=Australia&l=hobart">
             {' '}
             Hobart
           </Link>
