@@ -41,7 +41,7 @@ export default function Page({
     StaffAdministration: false,
     FacultyDepartmentJobs: false,
     AcademicPositionType: false,
-    PositionType: false,
+    PositionType: true,
     thirdcategory: false,
   };
   const filterType = {
