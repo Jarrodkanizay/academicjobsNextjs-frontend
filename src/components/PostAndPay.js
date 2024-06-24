@@ -26,6 +26,11 @@ const stripeLink = {
 };
 const JobPostForm = ({ product }) => {
   const [jobURLLink, setJobURLLink] = useState(false);
+  const [organisationName, setOrganisationName] = useState('');
+  const handleInputChange = (event) => {
+    setOrganisationName(event.target.value);
+  };
+
   const region = product.currency;
 
   const handleContentChange = (reason) => {
@@ -138,6 +143,8 @@ const JobPostForm = ({ product }) => {
                       autoComplete="organization"
                       hidden={newContact || standardMode ? false : true}
                       required={true}
+                      value={organisationName}
+                      onChange={handleInputChange}
                     />
                   </div>
                   <div className="flex gap-2 mt-4">
@@ -247,6 +254,32 @@ const JobPostForm = ({ product }) => {
                     {...register('05_Notes')}
                   ></textarea>
                 </label>
+                {/* <p>{product.id}</p> */}
+                <p className="m-0 text-xl">
+                  Purchase <strong>{product.name}</strong> for{' '}
+                  <strong className="text-emerald-600">
+                    {product.currencySymbol}
+                    {product.price}
+                  </strong>{' '}
+                  {product.currency}
+                </p>
+                <p className="m-0">
+                  {product.credits === -1
+                    ? 'Unlimited credits will be added '
+                    : `${product.credits} credit${
+                        product.credits === 1 ? '' : 's'
+                      } will be added `}
+                  {organisationName !== '' ? (
+                    <>
+                      to <strong>{organisationName}</strong>
+                    </>
+                  ) : (
+                    ''
+                  )}
+                </p>
+                {/* <p>{product.description}</p> */}
+                {/* <p>{product.credits}</p> */}
+                {/* <p>{product.slug}</p> */}
 
                 <div className="flex gap-4">
                   <label htmlFor="creditCard" className="label cursor-pointer">
@@ -262,21 +295,27 @@ const JobPostForm = ({ product }) => {
                       className="radio radio-aj ml-2"
                     />
                   </label>
-                  <label htmlFor="invoice" className="label cursor-pointer">
-                    Invoice (Pay Later)
-                    <input
-                      type="radio"
-                      id="invoice"
-                      name="paymentMethod"
-                      value="invoice"
-                      {...register('paymentMethod')}
-                      onClick={() => setPaymentMessage('Invoice')}
-                      className="radio radio-aj ml-2"
-                    />
-                  </label>
+                  {product.credits > 0 ? (
+                    <>
+                      <label htmlFor="invoice" className="label cursor-pointer">
+                        Invoice (Pay Later)
+                        <input
+                          type="radio"
+                          id="invoice"
+                          name="paymentMethod"
+                          value="invoice"
+                          {...register('paymentMethod')}
+                          onClick={() => setPaymentMessage('Invoice')}
+                          className="radio radio-aj ml-2"
+                        />
+                      </label>
+                    </>
+                  ) : null}
                 </div>
                 <button className="btn btn-accent mt-4">
-                  Post & Pay via {paymentMessage}
+                  {product.credits < 0
+                    ? 'Pay Now'
+                    : 'Post & Pay via ' + paymentMessage}
                 </button>
               </div>
             </form>
