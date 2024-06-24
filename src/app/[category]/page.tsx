@@ -3,6 +3,8 @@ import citiesData from '@/data/cities.json';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
+import AdvancedSearchBar from '@/components/AdvancedSearchBar';
+import SearchResults3 from '@/components/SearchResults3';
 // import type { Metadata } from 'next';
 
 type MetadataTypes = {
@@ -102,7 +104,8 @@ export default function Page({ params, searchParams }: any) {
   content = (
     <>{ausCities.includes(Name) ? ausHeader : otherHeader}
       <div className="content-grid flex-col md:gap-2">
-        <JobSearchBox l={Name} />
+
+        <AdvancedSearchBar />
 
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
@@ -112,7 +115,7 @@ export default function Page({ params, searchParams }: any) {
           </div>
           <div className="listings_panel">
             <div className="listings_content">
-              <SearchResults q={{ q: '', l: Name }} />
+              <SearchResults3 />
             </div>
           </div>
         </section>
