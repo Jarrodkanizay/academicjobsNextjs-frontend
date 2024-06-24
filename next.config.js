@@ -16,6 +16,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/jobs-advanced-search',
+        destination: '/uni-jobs',
+        permanent: true,
+      },
+      {
         source: '/academic-talent-pool',
         destination: '/auth/signup-talent-pool',
         permanent: true,

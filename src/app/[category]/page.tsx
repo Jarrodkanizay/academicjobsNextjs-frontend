@@ -27,7 +27,7 @@ export async function generateMetadata({ params, searchParams }: any) {
     Description = '',
     Keyword = '',
     content: content1 = '',
-    image = ''
+    image = '',
   } = citiesData.find((item) => item.Name === category) || {};
 
   return {
@@ -41,11 +41,11 @@ export async function generateMetadata({ params, searchParams }: any) {
 export default function Page({ params, searchParams }: any) {
   // console.log("````````````````````params````````````````````")
   // console.log(params)
-  let { category } = params
+  let { category } = params;
   // console.log(citiesData)
   // console.log(category);
-  category = category?.replace(/-/g, " ");
-  // console.log(category);   
+  category = category?.replace(/-/g, ' ');
+  // console.log(category);
 
   const city = citiesData.find((item) => item.Name === category);
 
@@ -54,7 +54,6 @@ export default function Page({ params, searchParams }: any) {
     return null; // or return an error component, or handle this situation in another appropriate way
   }
 
-
   const {
     Name,
     Title: Title,
@@ -62,12 +61,12 @@ export default function Page({ params, searchParams }: any) {
     Keyword,
     content: content1,
     image: image,
-    alt: alt
+    alt: alt,
   } = city;
 
   let ausHeader, otherHeader, content;
 
-  ausHeader =
+  ausHeader = (
     <div className="w-full relative">
       <img
         src={image}
@@ -77,15 +76,13 @@ export default function Page({ params, searchParams }: any) {
       <div className="hero-content mx-auto items-start justify-start py-12 relative z-10">
         <h1 className="md:text-5xl font-bold md:text-left text-white pb-4 m-0">
           {Title}
-          <p className="mt-4 text-white rounded-lg">
-            {content1}
-          </p>
+          <p className="mt-4 text-white rounded-lg">{content1}</p>
         </h1>
       </div>
     </div>
+  );
 
-
-  otherHeader =
+  otherHeader = (
     <div className="content-grid flex-col md:gap-2">
       <div className="bg-slate-200 full-width">
         <div className="  hero-content flex-col lg:flex-row mx-auto items-start py-12">
@@ -96,11 +93,22 @@ export default function Page({ params, searchParams }: any) {
         </div>
       </div>
     </div>
+  );
 
-  const ausCities = ["melbourne", "sydney", "brisbane", "perth", "adelaide", "canberra", "gold coast", "hobart"]
+  const ausCities = [
+    'melbourne',
+    'sydney',
+    'brisbane',
+    'perth',
+    'adelaide',
+    'canberra',
+    'gold coast',
+    'hobart',
+  ];
 
   content = (
-    <>{ausCities.includes(Name) ? ausHeader : otherHeader}
+    <>
+      {ausCities.includes(Name) ? ausHeader : otherHeader}
       <div className="content-grid flex-col md:gap-2">
         <JobSearchBox l={Name} />
 
@@ -116,8 +124,8 @@ export default function Page({ params, searchParams }: any) {
             </div>
           </div>
         </section>
-
-      </div></>
+      </div>
+    </>
   );
   return <div className="overflow-y w-full">{content}</div>;
 }
