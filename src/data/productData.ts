@@ -1,6 +1,6 @@
 // cSpell:disable
 export const productData = {
-  aud: [
+  AUD: [
     {
       id: 'prod_PQqDcoljVuzlC9', //Stripe ID
       name: 'Single Job Post',
@@ -35,7 +35,7 @@ export const productData = {
       stripeLink: 'https://buy.stripe.com/fZeaGk1vaaaAdfWeVh',
     },
   ],
-  usd: [
+  USD: [
     {
       id: 'prod_PQqDcoljVuzlC9', //Stripe ID
       name: 'Single Job Post',
@@ -67,7 +67,7 @@ export const productData = {
       credits: -1,
     },
   ],
-  nzd: [
+  NZD: [
     {
       id: 'prod_PQqDcoljVuzlC9', //Stripe ID
       name: 'Single Job Post',

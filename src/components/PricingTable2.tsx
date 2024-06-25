@@ -18,6 +18,12 @@ type PricingTypes = {
   enterprisePrice: number;
 };
 
+// type Props = {
+//   currency?: '' | 'AUD' | 'USD' | 'NZD';
+//   regionSelector?: boolean;
+// };
+
+// const PricingTable = ({ currency = '', regionSelector = false }: Props) => {
 const PricingTable = () => {
   const region = {
     Australia: 'AUD',
@@ -46,7 +52,16 @@ const PricingTable = () => {
   // TODO - Setup other pricing for other regions in stripe
 
   const [selectedCurrency, setSelectedCurrency] = useState(regionMessage);
-  const [products, getProducts] = useState(productData.aud);
+
+  // let productList = [];
+
+  // if (currency === '') {
+  //   productList = productData.AUD;
+  // } else {
+  //   productList = productData[currency];
+  // }
+
+  const [products, getProducts] = useState(productData.AUD);
 
   const handleChange = (event) => {
     setSelectedCurrency(event.target.value); // Get the selected option element
@@ -57,30 +72,34 @@ const PricingTable = () => {
 
   return (
     <div className="max-w-6xl mx-auto pt-4 px-8">
-      <label htmlFor="currency" className="label-text text-xs">
-        {selectedCurrency === regionMessage
-          ? 'Please select a region?'
-          : 'Region'}
-      </label>
-      <select
-        id="currency"
-        value={selectedCurrency}
-        onChange={handleChange}
-        name="currency"
-        className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500 mb-4"
-        required
-      >
-        <option value="" selected>
-          Which Region are you from?
-        </option>
-        {Object.keys(region)
-          .filter((key) => key !== 'JobElephant')
-          .map((key) => (
-            <option key={key} value={region[key]}>
-              {key}
-            </option>
-          ))}
-      </select>
+      {/* {regionSelector ? ( */}
+      <>
+        <label htmlFor="currency" className="label-text text-xs">
+          {selectedCurrency === regionMessage
+            ? 'Please select a region?'
+            : 'Region'}
+        </label>
+        <select
+          id="currency"
+          value={selectedCurrency}
+          onChange={handleChange}
+          name="currency"
+          className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500 mb-4"
+          required
+        >
+          <option value="" selected>
+            Which Region are you from?
+          </option>
+          {Object.keys(region)
+            .filter((key) => key !== 'JobElephant')
+            .map((key) => (
+              <option key={key} value={region[key]}>
+                {key}
+              </option>
+            ))}
+        </select>
+      </>
+      {/* ) : null} */}
 
       <h2 className="underline-full gray-blue">
         {selectedCurrency === 'AUD'

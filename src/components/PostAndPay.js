@@ -143,8 +143,8 @@ const JobPostForm = ({ product }) => {
                       autoComplete="organization"
                       hidden={newContact || standardMode ? false : true}
                       required={true}
-                      value={organisationName}
-                      onChange={handleInputChange}
+                      // value={organisationName}
+                      // onChange={handleInputChange}
                     />
                   </div>
                   <div className="flex gap-2 mt-4">
