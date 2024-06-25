@@ -28,11 +28,11 @@ export default function myPage() {
         <div className="hero max-h-fit bg-slate-200 py-8 mx-auto">
           <div className="container mx-auto">
             <div className="hero-content flex-col xl:flex-row gap-8 mx-auto max-w-full">
-              <Image
+              {/* <Image
                 src="/academic-job-postings/university-of-toronto.jpg"
                 className="object-none h-60 w-96  rounded-xl shadow-2xl mb-8 lg:mb-0"
                 alt="university of toronto"
-              />
+              /> */}
               <div>
                 <h1 className="text-3xl font-bold text-aj">
                   Find the best Canada universities to work for here... Use
