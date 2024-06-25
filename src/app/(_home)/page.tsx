@@ -16,10 +16,10 @@ import ScrollableCard from '@/components/ScrollableCard';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: 'University and Academic Jobs: All Higher Ed Positions', //Option 2 overrides the title in layout.tsx
+    absolute: 'Academic & University Jobs: All Higher Ed Positions', //Option 2 overrides the title in layout.tsx
   },
   description:
-    'Find more than 11,000 uni jobs in research, postdoctoral, science, lecturer and university staff positions. New Higher Ed jobs added daily.',
+    'Search more than 11,000 university Jobs in research, postdoctoral, science, lecturer and university faculty positions. New university jobs added daily.',
   keywords:
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
