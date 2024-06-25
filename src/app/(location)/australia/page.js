@@ -101,7 +101,10 @@ export default async function myPage() {
                   src="/home/academic-faculty-positions.png"
                 ></Image>
               </a>
-              <a className="mb-4" href={`australia/faculty?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`}>
+              <a
+                className="mb-4"
+                href={`australia/faculty?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`}
+              >
                 <p>Faculty</p>
               </a>
             </li>
@@ -120,7 +123,10 @@ export default async function myPage() {
                   src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"
                 ></Image>
               </a>
-              <a className="mb-4" href={`australia/executive?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`}>
+              <a
+                className="mb-4"
+                href={`australia/executive?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`}
+              >
                 <p>Executive</p>
               </a>
             </li>
@@ -139,7 +145,10 @@ export default async function myPage() {
                   src="/home/academic-human-resource-positions.png"
                 ></Image>
               </a>
-              <a className="mb-4" href={`australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human%20Resources"}]`}>
+              <a
+                className="mb-4"
+                href={`australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human%20Resources"}]`}
+              >
                 <p>HR Jobs</p>
               </a>
             </li>
@@ -245,7 +254,10 @@ export default async function myPage() {
       </div>
       <ul className="flex flex-wrap justify-center items-center md:gap-6 gap-3 px-7 pb-4 text-[#f4a10c] mx-auto">
         <li>
-          <Link className="text-center" href="/melbourne?r=Australia&l=Melbourne">
+          <Link
+            className="text-center"
+            href="/melbourne?r=Australia&l=Melbourne"
+          >
             {' '}
             Melbourne{' '}
           </Link>
@@ -280,7 +292,10 @@ export default async function myPage() {
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/gold-coast?r=Australia&l=gold-coast">
+          <Link
+            className="text-center"
+            href="/gold-coast?r=Australia&l=gold-coast"
+          >
             {' '}
             Gold Coast
           </Link>
@@ -508,15 +523,15 @@ export default async function myPage() {
                     <Image
                       width={100}
                       height={100}
-                      src="https://dentalstudents.com.au/wp-content/uploads/2021/04/0001_UWA-logo.jpg"
+                      src="https://academicjobs.s3.amazonaws.com/img/university-logo/Academic%20Jobs%20University%20of%20canberra.png"
                       alt="How to Land Your Dream College Job: A Step-by-Step Guide"
                       className="rounded-3xl"
                     />
                     <Link
-                      href="/employers/university-of-western-australia/3173"
+                      href="/employers/university-of-canberra-uc-/3821"
                       className="text-[#192847] font-bold pl-2"
                     >
-                      University of Western Australia
+                      University of Canberra (UC)
                     </Link>
                   </li>
                   {/* <ul className="innerUL pl-4 pt-2 text-gray-400">
@@ -663,35 +678,77 @@ export default async function myPage() {
         </div>
       </div>
       {/* /top-10-australian-universities */}
-      <div className="md:w-1/3 w-full">
+      <div className="w-full">
         <div className="card bg-slate-100 shadow-xl">
           <div className="card-body">
-            <h2 className="card-title"> Top University Employers Australia </h2>
+            <h2 className="card-title m-0 text-4xl">
+              {' '}
+              Top University Employers Australia{' '}
+            </h2>
           </div>
           <figure>
             <Image
-              width={1280}
-              height={380}
+              width={2560}
+              height={760}
               src="/academic-job-postings/university-of-sydney.jpg"
               alt="Top Academic Jobs Australia"
-              className="h-[5rem]"
+              className=""
             />
           </figure>
-          <ul className=" p-4 pl-12 list-disc text-gray-500">
-            <a href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786">
-              Queensland University of Technology (QUT)
-            </a>
-            <a href="https://www.academicjobs.com/employers/bond-university/3785/">
-              {' '}
-              Bond University
-              <br />
-            </a>
-            <a href="https://www.academicjobs.com/employers/the-university-of-sydney/3171">
+          <ul className="p-8 text-gray-500 flex justify-between">
+            <li>
+              <Link
+                className="flex flex-col items-center"
+                href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786"
+              >
+                <Image
+                  width={100}
+                  height={100}
+                  src="https://www.qut.edu.au/__data/assets/image/0007/909781/qut-logo-og-1200.jpg"
+                  alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                  className="rounded-3xl mb-4"
+                />
+                Queensland University of Technology (QUT)
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="flex flex-col items-center"
+                href="https://www.academicjobs.com/employers/bond-university/3785/"
+              >
+                <Image
+                  width={100}
+                  height={100}
+                  src="https://www.academicjobs.com/_next/image?url=https%3A%2F%2Facademicjobs.s3.amazonaws.com%2Fimg%2Funiversity-logo%2FBondTwitterIcon_400x400.jpg&w=384&q=75"
+                  alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                  className="rounded-3xl mb-4"
+                />
+                Bond University
+                <br />
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="flex flex-col items-center"
+                href="/employers/university-of-canberra/3821"
+              >
+                <Image
+                  width={100}
+                  height={100}
+                  src="https://academicjobs.s3.amazonaws.com/img/university-logo/Academic%20Jobs%20University%20of%20canberra.png"
+                  alt="How to Land Your Dream College Job: A Step-by-Step Guide"
+                  className="rounded-3xl mb-4"
+                />
+                University of Canberra (UC)
+                <br />
+              </Link>
+            </li>
+            {/* <a href="https://www.academicjobs.com/employers/the-university-of-sydney/3171">
               {' '}
               The University of Sydney
               <br />
-            </a>
-            <a href="https://www.academicjobs.com/employers/australian-national-university/3739">
+            </a> */}
+            {/* <a href="https://www.academicjobs.com/employers/australian-national-university/3739">
               {' '}
               Australian National University (ANU)
               <br />
@@ -699,7 +756,7 @@ export default async function myPage() {
             <a href="https://www.academicjobs.com/employers/monash-university/3182/">
               {' '}
               Monash University
-            </a>
+            </a> */}
           </ul>
           {/* <Link
                   href={'/top-10-australian-universities'}
