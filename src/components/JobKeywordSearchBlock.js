@@ -83,7 +83,7 @@ const UniSearchBlock = ({
             (
               {
                 category1,
-                keywordSuggestion,
+                category2,
                 realCtg
               },
               index
@@ -92,13 +92,13 @@ const UniSearchBlock = ({
                 key={index}
                 className="bg-white  w-full py-1 px-1 border-b border-gray-300 hover:bg-gray-100 cursor-pointer"
                 onClick={() => {
-                  console.log("keywordSuggestion1",keywordSuggestion)
-                  setQuery(keywordSuggestion);
-                  setQ(keywordSuggestion)
-                  onSelect(realCtg, keywordSuggestion)
+                  console.log("category21",category2)
+                  setQuery(category2);
+                  setQ(category2)
+                  onSelect(realCtg, category2)
                 }                }
               >
-                <div className="w-[100%]"><span className="text-sm font-bold">{keywordSuggestion}</span><span className="text-xs">{` (${category1})`}</span></div>
+                <div className="w-[100%]"><span className="text-sm font-bold">{category2}</span><span className="text-xs">{` (${category1})`}</span></div>
               </li>
             )
           )}
