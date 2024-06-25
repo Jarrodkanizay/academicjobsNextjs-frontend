@@ -16,10 +16,10 @@ import ScrollableCard from '@/components/ScrollableCard';
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
   title: {
-    absolute: 'University and Academic Jobs: All Higher Ed Positions', //Option 2 overrides the title in layout.tsx
+    absolute: 'Academic & University Jobs: All Higher Ed Positions', //Option 2 overrides the title in layout.tsx
   },
   description:
-    'Find more than 11,000 uni jobs in research, postdoctoral, science, lecturer and university staff positions. New Higher Ed jobs added daily.',
+    'Search more than 11,000 university Jobs in research, postdoctoral, science, lecturer and university faculty positions. New university jobs added daily.',
   keywords:
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
 };
@@ -192,32 +192,22 @@ export default async function myPage() {
         <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
           <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 md:px-0">
             <span className="md:text-4xl font-bold text-gray-500 pb-4 inline-block">
-              University & Academic Jobs:
-              <br />
-            </span>{' '}
-            All Higher Ed positions
+              Academic & University Jobs:
+            </span>
+            <span className="block md:inline-block">All Higher Ed positions</span>
           </h1>
+
           <div>
             <p className="md:px-7 mb-4 mt-1">
-              Discover top-tier faculty and staff roles in the world of higher
-              education. Begin your search for university academic jobs, college
-              faculty positions, and administrative opportunities in higher ed.
-              Explore and apply for a range of roles, including lecturer,
-              researcher, university administrator, and senior academic
-              positions, available nationally and internationally.
+              Discover top-tier faculty positions and university staff roles in the world of higher education. Begin your search for <a className="link-aj" href="/university-jobs?r=global" target="_blank">university jobs</a>, academic jobs, college faculty positions and administrative opportunities in higher ed. Explore and apply for a range of uni jobs, including lecturer jobs, research jobs, postdoctoral positions, university administrator and senior academic positions, available nationally and internationally.
             </p>
             <p className="md:px-7">
-              Whether you&apos;re an aspiring or established professor,
-              researcher, lecturer, or higher education administrator, our
-              platform offers the most current opportunities in academia
-              globally. Connect with your next career move in the academic
-              sector through our comprehensive online job board. Find your next
-              academic job now!
+              Whether you're an aspiring or established professor, researcher, lecturer, or higher education administrator, our comprehensive online job board offers the most current opportunities in academia globally.  Stay updated with the latest university job openings, job listings, and job vacancies in the higher education employment sector. Find your next university jobs now and join a collaborative environment dedicated to intellectual growth, professional development and research excellence.
             </p>
           </div>
         </div>
       </div>
-      <h2 className="underline-full">Jobs of the week</h2>
+      <h2 className="underline-full">University Jobs of the week</h2>
       <JobOfTheWeek />
       {/* <Link
         href="https://www.aheia.edu.au/events/conferences/aheia-conference-2024"
@@ -245,7 +235,7 @@ export default async function myPage() {
           className="w-full"
         />
       </Link> */}
-      <h2 className="underline-full">Academic Tips Of The Week</h2>
+      <h2 className="underline-full">Higher Education & Academic Employment tips</h2>
       <ScrollableCard />
       <div className=" mx-auto mt-8 mb-8">
         <h2 className="underline-full">Top University Employer Rankings</h2>
@@ -457,7 +447,7 @@ export default async function myPage() {
               Academic&nbsp;Awards 2023'&nbsp;NOW
             </Link>
           </p> */}
-      <h2 className="underline-full">Top Academic Jobs Today</h2>
+      <h2 className="underline-full">Top Faculty Positions: Lecturer, Postdoc and Research Jobs </h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">
           <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7"></div>
