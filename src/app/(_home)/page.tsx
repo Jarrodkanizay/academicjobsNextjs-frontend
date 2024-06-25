@@ -281,44 +281,32 @@ export default async function myPage() {
                     alt="Happiness and Academics: Scott Galloway's Algebra of hub"
                   />
                 </figure>
-                <ul className=" p-4 pl-12 list-disc text-gray-500">
+                <div className="p-4 pl-6 text-gray-500 flex flex-col gap-2.5">
                   <a href="https://www.academicjobs.com/employers/harvard-university/3100">
                     Harvard University
                   </a>
                   <a href="https://www.academicjobs.com/employers/massachusetts-institute-of-technology/3103">
-                    {' '}
-                    <br /> Massachusetts Institute of Technology (MIT)
+                    Massachusetts Institute of Technology (MIT)
                   </a>
                   <a href="https://www.academicjobs.com/employers/stanford-university/3101">
-                    {' '}
                     Stanford University
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105">
-                    {' '}
                     University of California Berkeley (UCB)
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/caltech/3128">
-                    {' '}
                     California Institute of Technology (Caltech)
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/yale-university/3125">
-                    {' '}
                     Yale University
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/princeton-university/3104">
-                    {' '}
                     Princeton University
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/columbia-university/3127">
-                    {' '}
                     Columbia University
                   </a>
-                </ul>
+                </div>
                 {/* <Link
                   href={'/academic-hub/'}
                   className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
@@ -345,48 +333,35 @@ export default async function myPage() {
                     className="h-[5rem]"
                   />
                 </figure>
-                <ul className=" p-4 pl-12 list-disc text-gray-500">
+                <div className="p-4 pl-6 text-gray-500 flex flex-col gap-2.5">
                   <a href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786">
                     Queensland University of Technology (QUT)
                   </a>
                   <a href="https://www.academicjobs.com/employers/bond-university/3785/">
                     Bond University
-                    <br />
                   </a>
                   <a href="/employers/university-of-canberra/3821">
                     University of Canberra (UC)
-                    <br />
                   </a>
                   {/* <a href="https://www.academicjobs.com/employers/the-university-of-sydney/3171">
-                    {' '}
                     The University of Sydney
-                    <br />
                   </a> */}
                   <a href="https://www.academicjobs.com/employers/australian-national-university/3739">
-                    {' '}
                     Australian National University (ANU)
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/monash-university/3182/">
-                    {' '}
                     Monash University
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/the-university-of-western-australia/3173">
-                    {' '}
                     University Western Australia (UWA)
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/the-university-of-queensland/3172">
-                    {' '}
                     The University of Queensland
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/the-university-of-tasmania-utas-/3867">
-                    {' '}
                     The University of Tasmania (UTAS)
                   </a>
-                </ul>
+                </div>
                 {/* <Link
                   href={'/top-10-australian-universities'}
                   className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
@@ -399,8 +374,7 @@ export default async function myPage() {
               <div className="card bg-slate-100 shadow-xl">
                 <div className="card-body">
                   <h2 className="mb-0 card-title">
-                    {' '}
-                    Top University Employers UK{' '}
+                    Top University Employers UK
                   </h2>
                 </div>
                 <figure>
@@ -412,48 +386,33 @@ export default async function myPage() {
                     className="h-[5rem]"
                   />
                 </figure>
-                <ul className=" p-4 pl-12 list-disc text-gray-500">
+                <div className="p-4 pl-6 text-gray-500 flex flex-col gap-2.5">
                   <a href="https://www.academicjobs.com/employers/university-of-oxford/3099">
                     University of Oxford
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/imperial-college-london/3129">
-                    {' '}
                     Imperial College London
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/university-of-cambridge/12635">
-                    {' '}
                     University of Cambridge
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/university-of-edinburgh/12681">
-                    {' '}
                     University of Edinburgh
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/king-s-college-london/3151">
-                    {' '}
                     Kings College London
-                    <br />
                   </a>
 
                   <a href="https://www.academicjobs.com/employers/university-college-london-ucl/3135">
-                    {' '}
                     University College London (UCL)
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/university-of-manchester/3833">
-                    {' '}
                     University of Manchester
-                    <br />
                   </a>
                   <a href="https://www.academicjobs.com/employers/university-of-glasgow/12713">
-                    {' '}
                     University of Glasgow
-                    <br />
                   </a>
-                </ul>
+                </div>
                 {/* <Link
                   href={'/academic-hub/'}
                   className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
