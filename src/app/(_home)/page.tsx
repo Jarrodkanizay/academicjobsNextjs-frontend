@@ -192,17 +192,17 @@ export default async function myPage() {
         <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
           <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 md:px-0">
             <span className="md:text-4xl font-bold text-gray-500 pb-4 inline-block">
-              University & Academic Jobs:
-              <br />
-            </span>{' '}
-            All Higher Ed positions
+              Academic & University Jobs:
+            </span>
+            <span className="block md:inline-block">All Higher Ed positions</span>
           </h1>
+
           <div>
             <p className="md:px-7 mb-4 mt-1">
-            Discover top-tier faculty positions and university staff roles in the world of higher education. Begin your search for <a className="link-aj" href="/university-jobs?r=global" target="_blank">university jobs</a>, academic jobs, college faculty positions and administrative opportunities in higher ed. Explore and apply for a range of uni jobs, including lecturer jobs, research jobs, postdoctoral positions, university administrator and senior academic positions, available nationally and internationally.
+              Discover top-tier faculty positions and university staff roles in the world of higher education. Begin your search for <a className="link-aj" href="/university-jobs?r=global" target="_blank">university jobs</a>, academic jobs, college faculty positions and administrative opportunities in higher ed. Explore and apply for a range of uni jobs, including lecturer jobs, research jobs, postdoctoral positions, university administrator and senior academic positions, available nationally and internationally.
             </p>
             <p className="md:px-7">
-            Whether you're an aspiring or established professor, researcher, lecturer, or higher education administrator, our comprehensive online job board offers the most current opportunities in academia globally.  Stay updated with the latest university job openings, job listings, and job vacancies in the higher education employment sector. Find your next university jobs now and join a collaborative environment dedicated to intellectual growth, professional development and research excellence. 
+              Whether you're an aspiring or established professor, researcher, lecturer, or higher education administrator, our comprehensive online job board offers the most current opportunities in academia globally.  Stay updated with the latest university job openings, job listings, and job vacancies in the higher education employment sector. Find your next university jobs now and join a collaborative environment dedicated to intellectual growth, professional development and research excellence.
             </p>
           </div>
         </div>
