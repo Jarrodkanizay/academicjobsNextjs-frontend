@@ -15,6 +15,7 @@ const InputBlock = ({
   hidden,
   showLabel = false,
   disabled = false,
+  defaultValue = '',
   // value = '',
   // onChange = () => {},
 }) => {
@@ -32,6 +33,8 @@ const InputBlock = ({
         hidden={hidden}
         required={required}
         disabled={disabled}
+        defaultValue={defaultValue}
+
         // value={value}
         // onChange={onChange}
       />

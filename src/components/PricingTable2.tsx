@@ -18,13 +18,13 @@ type PricingTypes = {
   enterprisePrice: number;
 };
 
-// type Props = {
-//   currency?: '' | 'AUD' | 'USD' | 'NZD';
-//   regionSelector?: boolean;
-// };
+type Props = {
+  currency?: '' | 'AUD' | 'USD' | 'NZD';
+  regionSelector?: boolean;
+};
 
-// const PricingTable = ({ currency = '', regionSelector = false }: Props) => {
-const PricingTable = () => {
+const PricingTable = ({ currency = '', regionSelector = false }: Props) => {
+  // const PricingTable = () => {
   const region = {
     Australia: 'AUD',
     // Asia: 'JPY',
@@ -53,13 +53,13 @@ const PricingTable = () => {
 
   const [selectedCurrency, setSelectedCurrency] = useState(regionMessage);
 
-  // let productList = [];
+  let productList = [];
 
-  // if (currency === '') {
-  //   productList = productData.AUD;
-  // } else {
-  //   productList = productData[currency];
-  // }
+  if (currency === '') {
+    productList = productData.AUD;
+  } else {
+    productList = productData[currency];
+  }
 
   const [products, getProducts] = useState(productData.AUD);
 

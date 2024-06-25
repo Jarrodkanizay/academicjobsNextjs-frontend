@@ -117,8 +117,13 @@ const JobPostForm = ({ product }) => {
       router.push('/thank-you');
     }
     if (paymentMessage === 'Credit Card') {
-      router.push(stripeLink[regionSelected]);
+      router.push('/thank-you');
+
+      // router.push(stripeLink[regionSelected]);
     }
+    // if (paymentMessage === 'Credit Card') {
+    //   router.push(stripeLink[regionSelected]);
+    // }
   } else {
     content = (
       <main className=" content-grid">
@@ -215,6 +220,9 @@ const JobPostForm = ({ product }) => {
                     </span>
                   </label>
                 </div>
+                <h2 className="underline-full text-[20px]">
+                  Provide Job Details to Post a Job or leave blank to use later
+                </h2>
                 {jobURLLink ? (
                   <InputBlock
                     register={register}
@@ -223,8 +231,8 @@ const JobPostForm = ({ product }) => {
                     type="text"
                     field="04_Job_Link_URL"
                     forceClass=" text-black"
-                    placeholder=""
-                    required={true}
+                    placeholder="Link to your job post"
+                    required={false}
                   />
                 ) : (
                   <>
@@ -242,7 +250,6 @@ const JobPostForm = ({ product }) => {
                     </label>
                   </>
                 )}
-
                 <label className="form-control">
                   <span className="label-text text-xs pb-1">
                     Notes or Special Instructions
@@ -254,6 +261,19 @@ const JobPostForm = ({ product }) => {
                     {...register('05_Notes')}
                   ></textarea>
                 </label>
+                <InputBlock
+                  ID={product.id}
+                  register={register}
+                  errors={errors}
+                  label={`Product`}
+                  type="text"
+                  field="06_Product"
+                  forceClass="text-black"
+                  placeholder=""
+                  required={true}
+                  defaultValue={`${product.name} - ${product.currency}${product.price}`}
+                  hidden={true}
+                />{' '}
                 {/* <p>{product.id}</p> */}
                 <p className="m-0 text-xl">
                   Purchase <strong>{product.name}</strong> for{' '}
@@ -263,7 +283,7 @@ const JobPostForm = ({ product }) => {
                   </strong>{' '}
                   {product.currency}
                 </p>
-                <p className="m-0">
+                {/* <p className="m-0">
                   {product.credits === -1
                     ? 'Unlimited credits will be added '
                     : `${product.credits} credit${
@@ -276,11 +296,10 @@ const JobPostForm = ({ product }) => {
                   ) : (
                     ''
                   )}
-                </p>
+                </p> */}
                 {/* <p>{product.description}</p> */}
                 {/* <p>{product.credits}</p> */}
                 {/* <p>{product.slug}</p> */}
-
                 <div className="flex gap-4">
                   <label htmlFor="creditCard" className="label cursor-pointer">
                     <strong className="mr-2">Payment method:</strong>Credit Card
@@ -312,15 +331,18 @@ const JobPostForm = ({ product }) => {
                     </>
                   ) : null}
                 </div>
-                <a
+                <button
                   className="btn btn-accent mt-4"
-                  href={product.stripeLink}
-                  target="_blank"
+                  onClick={() => {
+                    product.credits < 0
+                      ? window.open(product.stripeLink, '_blank')
+                      : window.open('https://your-new-page-url', '_blank');
+                  }}
                 >
                   {product.credits < 0
                     ? 'Pay Now'
                     : 'Post & Pay via ' + paymentMessage}
-                </a>
+                </button>{' '}
               </div>
             </form>
           </div>
@@ -330,7 +352,7 @@ const JobPostForm = ({ product }) => {
             <div className="flex mt-8">
               <Speedo size={80} />
               <h2 className="ml-4">
-                Post a job in 32 seconds saving you 8 minutes each time!{' '}
+                Academic Jobs is the fastest way to post a Job.{' '}
               </h2>
             </div>
             <div className="=absolute inset-0 flex justify-center items-center">
@@ -342,7 +364,7 @@ const JobPostForm = ({ product }) => {
                 alt="Academic Jobs Quick Post Technology"
               />
             </div>
-            <div className="prose">
+            {/* <div className="prose">
               <p className="mt-4">
                 The average time to Post a Job and fill out a form on the major
                 Job Seeking platforms is 9 min or more. With AcademicJobs we
@@ -360,7 +382,7 @@ const JobPostForm = ({ product }) => {
                   Our Rich Text editor is coming soon (just copy and paste)
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>
