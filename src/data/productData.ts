@@ -10,6 +10,7 @@ export const productData = {
       price: 315,
       currencySymbol: '$',
       credits: 1,
+      stripeLink: 'https://buy.stripe.com/dR6eWA6PuaaA7VC6ov',
     },
     {
       id: 'prod_QJYO5siOzxegVU', //Stripe ID
@@ -20,6 +21,7 @@ export const productData = {
       price: 888,
       currencySymbol: '$',
       credits: 3,
+      stripeLink: 'https://buy.stripe.com/dR629O4HmgyY1xe6oM',
     },
     {
       id: 'prod_QJYANJaIsM8Awo', //Stripe ID
@@ -30,6 +32,7 @@ export const productData = {
       price: 888,
       currencySymbol: '$',
       credits: -1,
+      stripeLink: 'https://buy.stripe.com/fZeaGk1vaaaAdfWeVh',
     },
   ],
   usd: [

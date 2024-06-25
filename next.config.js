@@ -65,7 +65,17 @@ const nextConfig = {
     return [
       {
         source: '/jobs-advanced-search',
-        destination: '/uni-jobs',
+        destination: '/university-jobs',
+        permanent: true,
+      },
+      {
+        source: '/career-help',
+        destination: '/higher-ed-job-advice',
+        permanent: true,
+      },
+      {
+        source: '/career-help/:slug',
+        destination: '/higher-ed-job-advice/:slug',
         permanent: true,
       },
       {
@@ -98,29 +108,54 @@ const nextConfig = {
         destination: '/student-jobs',
         permanent: true,
       },
+      // {
+      //   source: '/employer',
+      //   destination: '/jobs-by-top-universities',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/employers',
+      //   destination: '/jobs-by-top-universities',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/global/employers',
+      //   destination: '/jobs-by-top-universities',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/Global/jobs-by-top-universities',
+      //   destination: '/jobs-by-top-universities',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/global/jobs-by-top-universities',
+      //   destination: '/jobs-by-top-universities',
+      //   permanent: true,
+      // },
       {
         source: '/employer',
-        destination: '/jobs-by-top-universities',
+        destination: '/university-rankings',
         permanent: true,
       },
       {
         source: '/employers',
-        destination: '/jobs-by-top-universities',
+        destination: '/university-rankings',
         permanent: true,
       },
       {
         source: '/global/employers',
-        destination: '/jobs-by-top-universities',
+        destination: '/university-rankings',
         permanent: true,
       },
       {
-        source: '/Global/jobs-by-top-universities',
-        destination: '/jobs-by-top-universities',
+        source: '/Global/university-rankings',
+        destination: '/university-rankings',
         permanent: true,
       },
       {
-        source: '/global/jobs-by-top-universities',
-        destination: '/jobs-by-top-universities',
+        source: '/global/university-rankings',
+        destination: '/university-rankings',
         permanent: true,
       },
       {

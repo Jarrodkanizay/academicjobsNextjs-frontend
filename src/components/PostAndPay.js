@@ -312,11 +312,15 @@ const JobPostForm = ({ product }) => {
                     </>
                   ) : null}
                 </div>
-                <button className="btn btn-accent mt-4">
+                <a
+                  className="btn btn-accent mt-4"
+                  href={product.stripeLink}
+                  target="_blank"
+                >
                   {product.credits < 0
                     ? 'Pay Now'
                     : 'Post & Pay via ' + paymentMessage}
-                </button>
+                </a>
               </div>
             </form>
           </div>
