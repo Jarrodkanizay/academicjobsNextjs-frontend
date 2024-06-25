@@ -117,9 +117,9 @@ const JobPostForm = ({ product }) => {
       router.push('/thank-you');
     }
     if (paymentMessage === 'Credit Card') {
-      router.push('/thank-you');
+      // router.push('/thank-you');
 
-      // router.push(stripeLink[regionSelected]);
+      router.push(product.stripeLink);
     }
     // if (paymentMessage === 'Credit Card') {
     //   router.push(stripeLink[regionSelected]);
@@ -331,14 +331,7 @@ const JobPostForm = ({ product }) => {
                     </>
                   ) : null}
                 </div>
-                <button
-                  className="btn btn-accent mt-4"
-                  onClick={() => {
-                    product.credits < 0
-                      ? window.open(product.stripeLink, '_blank')
-                      : window.open('https://your-new-page-url', '_blank');
-                  }}
-                >
+                <button className="btn btn-accent mt-4">
                   {product.credits < 0
                     ? 'Pay Now'
                     : 'Post & Pay via ' + paymentMessage}
