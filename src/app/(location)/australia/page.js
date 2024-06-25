@@ -695,7 +695,7 @@ export default async function myPage() {
               className=""
             />
           </figure>
-          <ul className="p-8 text-gray-500 flex justify-between">
+          <ul className="p-8 text-gray-500 flex justify-between px-16">
             <li>
               <Link
                 className="flex flex-col items-center"
@@ -708,7 +708,9 @@ export default async function myPage() {
                   alt="How to Land Your Dream College Job: A Step-by-Step Guide"
                   className="rounded-3xl mb-4"
                 />
-                Queensland University of Technology (QUT)
+                Queensland University
+                <br />
+                of Technology (QUT)
               </Link>
             </li>
             <li>
