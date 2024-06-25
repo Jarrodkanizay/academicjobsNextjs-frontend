@@ -140,11 +140,11 @@ const JobPostForm = ({ product }) => {
                     <InputBlock
                       register={register}
                       errors={errors}
-                      label="Organization Name"
+                      label="Organization/Institution Name"
                       type="text"
                       field="01_Organisation_Name"
                       forceClass="text-black"
-                      placeholder="Organization Name"
+                      placeholder="Organization or Institution Name"
                       autoComplete="organization"
                       hidden={newContact || standardMode ? false : true}
                       required={true}
@@ -204,63 +204,66 @@ const JobPostForm = ({ product }) => {
                   type="text"
                   field="03_Institution_Name"
                   forceClass=" text-black"
-                  placeholder=""
+                  placeholder="Institution Name (Agents and Resellers Only)"
                   required={true}
                 />
-                <div className="form-control">
-                  <label className="cursor-pointer label justify-start">
-                    <input
-                      type="checkbox"
-                      className="checkbox checkbox-secondary mr-2"
-                      onChange={(e) => setJobURLLink(e.target.checked)}
-                    />
-                    <span className="label-text">
-                      Would you prefer to provide a link to your job post
-                      instead?
-                    </span>
-                  </label>
-                </div>
-                <h2 className="underline-full text-[20px]">
-                  Provide Job Details to Post a Job or leave blank to use later
-                </h2>
-                {jobURLLink ? (
-                  <InputBlock
-                    register={register}
-                    errors={errors}
-                    label={`Provide a link to your job and we will copy the job from there (ie: ${urlExample})`}
-                    type="text"
-                    field="04_Job_Link_URL"
-                    forceClass=" text-black"
-                    placeholder="Link to your job post"
-                    required={false}
-                  />
-                ) : (
-                  <>
-                    <label className="form-control ">
-                      <span className="label-text text-xs pb-1">
-                        Copy & Paste your job here, and AcademicJobs will take
-                        care of the rest.
-                      </span>
-                      <Tiptap
-                        content={content}
-                        onChange={(newContent) =>
-                          handleContentChange(newContent)
-                        }
+                {product.credits === 1 ? (
+                  <div className="form-control">
+                    <label className="cursor-pointer label justify-start">
+                      <input
+                        type="checkbox"
+                        className="checkbox checkbox-secondary mr-2"
+                        onChange={(e) => setJobURLLink(e.target.checked)}
                       />
+                      <span className="label-text">
+                        Would you prefer to provide a link to your job post
+                        instead?
+                      </span>
                     </label>
-                  </>
-                )}
-                <label className="form-control">
-                  <span className="label-text text-xs pb-1">
-                    Notes or Special Instructions
-                  </span>
-                  <textarea
-                    className="textarea textarea-bordered h-32 focus:outline-none focus:border-orange-500"
-                    id="notes"
-                    placeholder="Type your message here."
-                    {...register('05_Notes')}
-                  ></textarea>
-                </label>
+                  </div>
+                ) : null}
+                {product.credits === 1 ? (
+                  jobURLLink ? (
+                    <InputBlock
+                      register={register}
+                      errors={errors}
+                      label={`Provide a link to your job and we will copy the job from there (ie: ${urlExample})`}
+                      type="text"
+                      field="04_Job_Link_URL"
+                      forceClass=" text-black"
+                      placeholder="Link to your job post"
+                      required={false}
+                    />
+                  ) : (
+                    <>
+                      <label className="form-control ">
+                        <span className="label-text text-xs pb-1">
+                          Copy & Paste your job here, and AcademicJobs will take
+                          care of the rest.
+                        </span>
+                        <Tiptap
+                          content={content}
+                          onChange={(newContent) =>
+                            handleContentChange(newContent)
+                          }
+                        />
+                      </label>
+                    </>
+                  )
+                ) : null}
+                {product.credits === 1 ? (
+                  <label className="form-control">
+                    <span className="label-text text-xs pb-1">
+                      Notes or Special Instructions
+                    </span>
+                    <textarea
+                      className="textarea textarea-bordered h-32 focus:outline-none focus:border-orange-500"
+                      id="notes"
+                      placeholder="Type your message here."
+                      {...register('05_Notes')}
+                    ></textarea>
+                  </label>
+                ) : null}
                 <InputBlock
                   ID={product.id}
                   register={register}
@@ -342,7 +345,7 @@ const JobPostForm = ({ product }) => {
 
           {/* Right panel */}
           <div className="relative">
-            <div className="flex mt-8">
+            <div className="flex">
               <Speedo size={80} />
               <h2 className="ml-4">
                 Academic Jobs is the fastest way to post a Job.{' '}
