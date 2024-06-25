@@ -27,17 +27,17 @@ export default function NavLink({
       <div
         className={`nav-link nav-link-ltr whitespace-nowrap text-gray-900 ${forceButtonClass}`}
       >
-        <span className=" flex flex-row items-center justify-center gap-1 m-auto    ">
+        <span className="flex flex-row items-center justify-center">
           {icon && (
-            <div className="text-amber-500">
-            <Image
-              className={`nav-icon text-amber-500 ${forceImageClass}`}
-              src={icon ? icon : '#'}
-              alt={navLink}
-              width={iconWidth}
-              height={iconHeight}
-              style={{ height: `${iconHeight}px`, marginLeft: '-12px' }}
-            />
+            <div className="text-amber-500 hidden md:block">
+              <Image
+                className={`nav-icon text-amber-500 ${forceImageClass}`}
+                src={icon ? icon : '#'}
+                alt={navLink}
+                width={iconWidth}
+                height={iconHeight}
+                style={{ height: `${iconHeight}px`, marginLeft: '-12px' }}
+              />
             </div>
           )}
           <span className="flex flex-col">
