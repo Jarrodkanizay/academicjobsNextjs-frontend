@@ -26,7 +26,7 @@ export default function myPage() {
     <main>
       {/* Pricing Table */}
       <section className="container mx-auto px-4">
-        <PricingTable2 currency={'AUD'} />
+        <PricingTable2 currency={'AUD'} hideRegionSelector={true} />
       </section>
 
       {/* Hero banner */}
