@@ -72,7 +72,6 @@ export default function myPage() {
         </section>
         {/* Main Content */}
         <section className="container mx-auto px-4 mt-12">
-          <PricingTable2 />
           <h2 className="text-center mb-4">
             Connect with {countryRegionPlural()} Academic Elite on the Premier
             Job Board
@@ -202,7 +201,6 @@ export default function myPage() {
           </figure>
         </div>
         <section className="container mx-auto px-4 mt-12">
-          <PricingTable2 />
           {/* A whole new way to recruit Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
@@ -281,7 +279,6 @@ export default function myPage() {
           </div>
         </div>
         <section className="container mx-auto px-4 mt-12">
-          <PricingTable2 />
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 mb-16">
             {/* Card 1 */}
@@ -382,7 +379,6 @@ export default function myPage() {
           </div>
         </section>
         <section className="container mx-auto px-4 mt-12">
-          <PricingTable2 />
           {/* Access to thousands of top academics Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
@@ -445,7 +441,6 @@ export default function myPage() {
 
         {/* Contact us CTA */}
         <section className="container mx-auto px-4 mt-12">
-          <PricingTable2 />
           <div className="alert mb-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
