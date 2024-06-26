@@ -166,9 +166,9 @@ export default function Header() {
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url="/higher-ed-job-advice"
+            url="/higher-ed-jobs-advice"
             icon="/network-icon.svg"
-            navLink="Higher Ed Job Advice"
+            navLink="Higher Ed Jobs Advice"
             forceButtonClass="border-b hover:border-amber-500 "
             onClick={() => setIsNavOpen(false)}
           />

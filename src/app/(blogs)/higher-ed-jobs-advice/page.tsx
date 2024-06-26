@@ -36,7 +36,7 @@ export default function BlogPosts({
   const showDates = false;
 
   // Pagination setting
-  const routeName = 'higher-ed-job-advice';
+  const routeName = 'higher-ed-jobs-advice';
   const routePath = `/${routeName}/`;
 
   const page = searchParams['page'] ?? '1';
@@ -118,24 +118,31 @@ export default function BlogPosts({
             ))}
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 px-8 mt-10">
-            <iframe
-              className=" aspect-video  rounded-3xl"
-              src="https://www.youtube.com/embed/bEEmo_KhOOk?si=yiNtzXaYyASiWU8W"
-              title="YouTube video player"
-            ></iframe>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-16">
+            <div className="relative aspect-w-16 aspect-h-9">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/bEEmo_KhOOk?si=yiNtzXaYyASiWU8W"
+                title="YouTube video player"
+              ></iframe>
+            </div>
 
-            <iframe
-              className=" aspect-video rounded-3xl"
-              src="https://www.youtube.com/embed/hSbjVkmSIrc?si=qeq_VAZ3ZEQpWhjh"
-              title="YouTube video player"
-            ></iframe>
-
-            <iframe
-              className=" aspect-video rounded-3xl"
-              src="https://www.youtube.com/embed/yn-ctFDfI60?si=REwYQIJFPBm6NnXm"
-              title="YouTube video player"
-            ></iframe>
+            <div className="relative aspect-w-16 aspect-h-9">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/u15zK5HS3bA?si=3ZxDhalY-GRWIvG1"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
+            </div>
+            <div className="relative aspect-w-16 aspect-h-9">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/9bU70Uh6uLw?si=rbHsDfRlW6JliW-c"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
+            </div>
           </div>
 
           <h2 id="pagination" className="underline-full mt-16 mb-8">

@@ -70,12 +70,12 @@ const nextConfig = {
       },
       {
         source: '/career-help',
-        destination: '/higher-ed-job-advice',
+        destination: '/higher-ed-jobs-advice',
         permanent: true,
       },
       {
         source: '/career-help/:slug',
-        destination: '/higher-ed-job-advice/:slug',
+        destination: '/higher-ed-jobs-advice/:slug',
         permanent: true,
       },
       {
