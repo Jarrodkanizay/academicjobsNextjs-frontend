@@ -5,22 +5,36 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faXTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-const ShareButton = ({ jobId }) => {
+import ShareJob from '@/components/ShareJob';
+
+const ShareButton = ({ jobId, employerId, title, company_name }) => {
     const [showOptions, setShowOptions] = useState(false);
+    const [showEmailModal, setShowEmailModal] = useState(false); 
     const url = typeof window !== 'undefined' ? window.location.href : '';
-    const subject = encodeURIComponent('You might like this job posting!');
-    const bccEmail = encodeURIComponent('post@academicjobs.com');
-    const bodyEmail = encodeURIComponent(
-      `I came across this job posting on AcademicJobs and thought you might be interested: https://www.academicjobs.com/jobs/myjob/${jobId}`
-    );
     const widgetRef = useRef(null);
     const buttonRef = useRef(null);
 
     const shareOptions = [
-        { name: 'Email', url: `mailto:?bcc=${bccEmail}&subject=${subject}&body=${bodyEmail}`, icon: faEnvelope},
-        { name: 'Facebook', url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, icon: faFacebookF },
-        { name: 'Twitter', url: `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}`, icon: faXTwitter },
-        { name: 'LinkedIn', url: `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}`, icon: faLinkedinIn },
+        { 
+            name: 'Email', 
+            onClick: () => setShowEmailModal(true), 
+            icon: faEnvelope 
+        },
+        { 
+            name: 'Facebook', 
+            url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, 
+            icon: faFacebookF 
+        },
+        { 
+            name: 'Twitter', 
+            url: `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}`, 
+            icon: faXTwitter 
+        },
+        { 
+            name: 'LinkedIn', 
+            url: `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}`, 
+            icon: faLinkedinIn 
+        },
     ];
 
     useEffect(() => {
@@ -46,14 +60,30 @@ const ShareButton = ({ jobId }) => {
                     <ul>
                         {shareOptions.map(option => (
                             <li key={option.name}>
-                                <a href={option.url} target="_blank" className="font-light" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={option.icon} className="mr-2" />
-                                    {option.name}
-                                </a>
+                                {option.url ? (
+                                    <a href={option.url} target="_blank" className="font-light" rel="noopener noreferrer">
+                                        <FontAwesomeIcon icon={option.icon} className="mr-2" />
+                                        {option.name}
+                                    </a>
+                                ) : (
+                                    <button onClick={option.onClick} className="font-light">
+                                        <FontAwesomeIcon icon={option.icon} className="mr-2" />
+                                        {option.name}
+                                    </button>
+                                )}
                             </li>
                         ))}
                     </ul>
                 </div>
+            )}
+            {showEmailModal && (
+                <ShareJob
+                    jobId={ jobId}
+                    employerId={ employerId }
+                    title={ title }
+                    company_name={ company_name }
+                    onClose={() => setShowEmailModal(false)} 
+                />
             )}
         </div>
     );
