@@ -147,11 +147,12 @@ export default function Header() {
           <NavItem
             url={
               region
-                ? `/jobs-advanced-search?r=${region?.toLowerCase()}`
-                : '/jobs-advanced-search'
+                ? `/university-jobs?r=${region?.toLowerCase()}`
+                : '/university-jobs'
             }
             icon="/dotted-arrow.svg"
-            navLink="All University Jobs"
+            // navLink="All University Jobs"
+            navLink="University Jobs Search"
             forceClass="border-b hover:border-amber-500" //this is optional
             forceButtonClass="border-b hover:border-amber-500 mr-2 "
             onClick={() => setIsNavOpen(false)}
