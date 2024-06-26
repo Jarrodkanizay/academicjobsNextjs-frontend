@@ -75,6 +75,9 @@ export default function Page({ p = {}, forceClass = '' }) {
     setfilterTypes1((p) => ({ ...p, FacultyDepartmentJobs: false }));
     setfilterTypes1((p) => ({ ...p, AcademicPositionType: false }));
     setfilterTypes1((p) => ({ ...p, thirdcategory: false }));
+    
+    if (r === 'Global')
+      setfilterTypes((p) => ({ ...p, Country: true }));
     if (category === 'AcademicPositionType')
       setfilterTypes1((p) => ({ ...p, thirdcategory: true }));
     if (filter1?.some((obj) => obj.filter?.includes('Executive '))) {
