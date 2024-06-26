@@ -111,7 +111,7 @@ export default function Header() {
               className={`static-logo mobile`}
               onClick={() => setIsNavOpen(false)}
             >
-              <LogoAJ width={270} height={60} />{' '}
+              <LogoAJ width={270} height={60} />
             </Link>
           )
         ) : (
@@ -119,7 +119,7 @@ export default function Header() {
             href={`/${countryMappings2[region?.toLowerCase()]?.url}?r=${r}`}
             className={`static-logo mobile`}
           >
-            <LogoAJ width={270} height={60} />{' '}
+            <LogoAJ width={270} height={60} />
           </Link>
         )}
         <HamburgerMenuIcon
@@ -139,9 +139,9 @@ export default function Header() {
           {pathname === '' ? null : (
             <Link
               href={`/${countryMappings2[region?.toLowerCase()]?.url}?r=${r}`}
-              className="hide-mobile static-logo mr-4"
+              className="hide-mobile static-logo mr-0"
             >
-              <LogoAJ width={270} height={60} />{' '}
+              <LogoAJ width={270} height={60} />
             </Link>
           )}
           <NavItem
@@ -287,7 +287,7 @@ export default function Header() {
               }/recruitment/`}
               icon="/post-a-job-icon.svg"
               navLink="Post a Job"
-              forceLinkClass="ml-auto"
+              forceLinkClass=""
               forceButtonClass="nav-mobile-btn btn btn-aj "
               onClick={() => setIsNavOpen(false)}
             />

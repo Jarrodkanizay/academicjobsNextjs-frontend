@@ -20,10 +20,10 @@ type PricingTypes = {
 
 type Props = {
   currency?: '' | 'AUD' | 'USD' | 'NZD';
-  regionSelector?: boolean;
+  hideRegionSelector?: boolean;
 };
 
-const PricingTable = ({ currency = '', regionSelector = false }: Props) => {
+const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
   // const PricingTable = () => {
   const region = {
     Australia: 'AUD',
@@ -39,72 +39,73 @@ const PricingTable = ({ currency = '', regionSelector = false }: Props) => {
     USA: 'USD',
     Other: 'USD',
   };
-  const regionMessage = 'Which Region are you from?';
 
   function formatNumberWithCommas(number: number) {
     return number.toLocaleString();
   }
-  const [regionSelected, setRegion] = useState(region);
 
   // TODO - Add validation for region, users should be able to proceed without selecting a region!
   // TODO - Display a modal or highlight the region selector
   // TODO - Customize the features for AHEIA versus other regions
   // TODO - Setup other pricing for other regions in stripe
+  // TODO - Refactor to remove excess region and currency management
 
-  const [selectedCurrency, setSelectedCurrency] = useState(regionMessage);
+  let regionMessage = 'Which Region are you from?';
 
-  let productList = [];
-
-  if (currency === '') {
-    productList = productData.AUD;
-  } else {
-    productList = productData[currency];
+  let currentCurrency = currency;
+  if (currentCurrency === '' || currentCurrency === 'USD') {
+    currentCurrency = 'USD';
+    regionMessage = 'USD';
   }
 
-  const [products, getProducts] = useState(productData.AUD);
+  if (currentCurrency === 'AUD') regionMessage = 'AUD';
+  if (currentCurrency === 'NZD') regionMessage = 'NZD';
+
+  const [selectedCurrency, setSelectedCurrency] = useState(regionMessage);
+  const [regionSelected, setRegion] = useState(regionMessage);
+  const [products, getProducts] = useState(productData[currentCurrency]);
 
   const handleChange = (event) => {
     setSelectedCurrency(event.target.value); // Get the selected option element
     const selectedOption = event.target.options[event.target.selectedIndex]; // Get the text of the selected option
     const selectedRegion = selectedOption.text;
     setRegion(selectedRegion);
+    getProducts(productData[event.target.value]);
   };
 
   return (
     <div className="max-w-6xl mx-auto pt-4 px-8">
-      {/* {regionSelector ? ( */}
-      <>
+      {!hideRegionSelector ? (
         <label htmlFor="currency" className="label-text text-xs">
           {selectedCurrency === regionMessage
             ? 'Please select a region?'
             : 'Region'}
         </label>
-        <select
-          id="currency"
-          value={selectedCurrency}
-          onChange={handleChange}
-          name="currency"
-          className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500 mb-4"
-          required
-        >
-          <option value="" selected>
-            Which Region are you from?
+      ) : null}
+
+      <select
+        id="currency"
+        value={regionSelected}
+        onChange={handleChange}
+        name="currency"
+        className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500 mb-4"
+        hidden={hideRegionSelector}
+        required
+      >
+        <option value="" selected>
+          Which Region are you from?
+        </option>
+        {Object.keys(region).map((key) => (
+          <option key={key} value={region[key]}>
+            {key}
           </option>
-          {Object.keys(region)
-            .filter((key) => key !== 'JobElephant')
-            .map((key) => (
-              <option key={key} value={region[key]}>
-                {key}
-              </option>
-            ))}
-        </select>
-      </>
-      {/* ) : null} */}
+        ))}
+      </select>
 
       <h2 className="underline-full gray-blue">
         {selectedCurrency === 'AUD'
           ? 'EOFY Special (AHEIA Members Only)'
-          : 'Pricing'}{' '}
+          : 'Pricing '}
         {selectedCurrency === regionMessage ? '' : selectedCurrency}
       </h2>
 

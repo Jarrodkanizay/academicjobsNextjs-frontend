@@ -1,7 +1,7 @@
 import Image from 'next/image';
-
 import Link from 'next/link';
 import PricingTable2 from '@/components/PricingTable2';
+
 export const metadata = {
   title:
     'Fastest growing Academic Job Board with the best customer service & support', //Option 1 replaces the %s in layout.tsx
@@ -25,6 +25,11 @@ export default function myPage() {
   return (
     <div className="">
       <main>
+        {/* Pricing Table NZD */}
+        <section className="container mx-auto px-4">
+          <PricingTable2 currency={'NZD'} hideRegionSelector={true} />
+        </section>
+
         {/* Hero banner */}
         <section>
           <div className="hero max-h-fit bg-slate-200 py-8">
@@ -34,6 +39,8 @@ export default function myPage() {
                   src="/academic-job-postings/peter-hunter.jpg"
                   className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
                   alt="New Zealand peter hunter"
+                  width={800}
+                  height={600}
                 />
                 <div>
                   <h1 className="text-3xl font-bold text-aj">
@@ -65,7 +72,6 @@ export default function myPage() {
         </section>
         {/* Main Content */}
         <section className="container mx-auto px-4 mt-12">
-          <PricingTable2 />
           <h2 className="text-center mb-4">
             Connect with {countryRegionPlural()} Academic Elite on the Premier
             Job Board
@@ -189,11 +195,12 @@ export default function myPage() {
               src="/academic-job-postings/massey-university-auckland.jpg"
               alt="New Zealand massey university auckland"
               className="absolute w-full h-full object-cover"
+              width={1920}
+              height={237}
             />
           </figure>
         </div>
         <section className="container mx-auto px-4 mt-12">
-          <PricingTable2 />
           {/* A whole new way to recruit Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
@@ -201,6 +208,8 @@ export default function myPage() {
                 src="/academic-job-postings/academics-networking.jpg"
                 alt="New Zealand academics networking"
                 className="w-full lg:max-w-lg rounded-xl m-6"
+                width={1920}
+                height={1080}
               />
             </figure>
             <div className="card-body w-full">
@@ -232,6 +241,8 @@ export default function myPage() {
                 src="/academic-job-postings/great-customer-service.jpg"
                 alt="Great Customer Service with the Lowest Prices New Zealand"
                 className="w-full lg:max-w-lg rounded-xl m-6"
+                width={1920}
+                height={1080}
               />
             </figure>
             <div className="card-body w-full">
@@ -268,7 +279,6 @@ export default function myPage() {
           </div>
         </div>
         <section className="container mx-auto px-4 mt-12">
-          <PricingTable2 />
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 mb-16">
             {/* Card 1 */}
@@ -369,7 +379,6 @@ export default function myPage() {
           </div>
         </section>
         <section className="container mx-auto px-4 mt-12">
-          <PricingTable2 />
           {/* Access to thousands of top academics Card */}
           <div className="card card-side bg-slate-100 shadow-xl my-16 px-6 grid sm:grid-cols-1 md:grid-cols-2">
             <figure>
@@ -377,6 +386,8 @@ export default function myPage() {
                 src="/academic-job-postings/global-academic-network.jpg"
                 alt="Access to thousands of top global academics New Zealand"
                 className="w-full lg:max-w-lg rounded-xl m-6"
+                width={1200}
+                height={800}
               />
             </figure>
             <div className="card-body w-full">
@@ -403,6 +414,8 @@ export default function myPage() {
                 src="/academic-job-postings/helpful-artificial-intelligence.jpg"
                 alt="New Zealand AI tools"
                 className="w-full lg:max-w-lg rounded-xl m-6"
+                width={1200}
+                height={800}
               />
             </figure>
             <div className="card-body w-full">
@@ -428,7 +441,6 @@ export default function myPage() {
 
         {/* Contact us CTA */}
         <section className="container mx-auto px-4 mt-12">
-          <PricingTable2 />
           <div className="alert mb-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
