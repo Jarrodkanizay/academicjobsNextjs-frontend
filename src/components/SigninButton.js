@@ -48,7 +48,9 @@ const SigninButton = () => {
               <Avatar>
                 <AvatarImage
                   src={
-                    userDetails?.image?.includes('https://lh3.googleusercontent')
+                    userDetails?.image?.includes(
+                      'https://lh3.googleusercontent'
+                    )
                       ? userDetails.image
                       : userDetails?.image
                       ? `https://academicjobs.s3.amazonaws.com/img/users/${userDetails.image}`
@@ -71,7 +73,7 @@ const SigninButton = () => {
               <LogoutButton>
                 <DropdownMenuItem>
                   <LogOut className="h-4 w-4 mr-2" />
-                  Sign Out
+                  Sign Out
                 </DropdownMenuItem>
               </LogoutButton>
             </DropdownMenuContent>
@@ -79,8 +81,8 @@ const SigninButton = () => {
         </>
       ) : (
         <>
-          <Button onClick={() => signIn()}>Sign In</Button>
-          <Link href={'/auth/sign-up'}>Sign Up</Link>
+          <Button onClick={() => signIn()}>Sign In</Button>
+          <Link href={'/auth/sign-up'}>Sign Up</Link>
         </>
       )}
     </div>

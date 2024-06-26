@@ -36,7 +36,7 @@ export default function BlogPosts({
   const showDates = false;
 
   // Pagination setting
-  const routeName = 'career-help';
+  const routeName = 'higher-ed-job-advice';
   const routePath = `/${routeName}/`;
 
   const page = searchParams['page'] ?? '1';

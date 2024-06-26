@@ -18,14 +18,15 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/options";
 import { baseURL } from '@/lib/store/Base';
 import { BaseApi } from '@/lib/store/Base';
-import JoinTalentPool from '@/components/JoinTalentPool'
+import JoinTalentPool from '@/components/JoinTalentPool';
 import ShareButton from '@/components/ShareButton';
+import AcademicConnections from '@/components/forms/AcademicConnectionForm';
 
 export async function generateMetadata({ params }) {
   const session = await getServerSession(authOptions);
   const job = await getJob({ id: params.id, userId: session?.user.id });
   if (!job) return { title: 'not found' };
-  if (job) {incrementJobViewCount(params)};
+  if (job) { incrementJobViewCount(params) };
   const { title, company_name1, region } = job?.data;
 
   return {
@@ -47,33 +48,29 @@ async function incrementJobViewCount(data) {
   }
 }
 
-//{ next: { revalidate: 0 } }
 async function getJob(data) {
-  console.log("0324========data", data)
   const response = await fetch(
     `${baseURL}/getJobById1`,
     {
-      method: 'POST', // Change method to POST
+      method: 'POST',
       headers: {
-        'Content-Type': 'application/json' // Specify content type
+        'Content-Type': 'application/json'
       },
-      body: JSON.stringify(data), // Pass data as JSON string in the body
+      body: JSON.stringify(data),
     }
   );
   const res = await response.json();
   return res;
 }
+
 const JobDetailPage = async ({ params, searchParams }) => {
-  //const searchParams = useSearchParams();
   const session = await getServerSession(authOptions);
-  console.log("0324========session", session)
   const active = searchParams['active'] || false;
-  console.log('====444444433333333333333333333333active=====');
-  console.log(searchParams);
-  console.log('====active=====', active);
+  const mode = searchParams['mode'] || 'default';
+
   const job = await getJob({ id: params.id, userId: session?.user.id });
-  console.log('job', job);
   if (!job) notFound();
+
   const {
     employer_id,
     id: jobId,
@@ -94,7 +91,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
       ranking,
     }
   } = job.data;
-  console.log('ranking==============', ranking);
+
   const subject = encodeURIComponent('You might like this job posting!');
   const bccEmail = encodeURIComponent('post@academicjobs.com');
   const bodyEmail = encodeURIComponent(
@@ -105,7 +102,6 @@ const JobDetailPage = async ({ params, searchParams }) => {
   if (company_name === 'Bond University') bgColor = 'bg-[#011a4d]';
   return (
     <>
-      {/* {console.log('Top 20 ' + { topTwentyUnis })} */}
       <div className="bg-white relative content-grid mx-auto">
         <div className="border-b  full-width">
           <div className="md:flex items-center p-4 gap-8">
@@ -152,21 +148,12 @@ const JobDetailPage = async ({ params, searchParams }) => {
                 <h3 className="company_name">{company_name}</h3>
                 <section>
                   <h4 className="text-gray-700 font-light text-sm m-0">
-                    {/* <Image
-                      src={`/icons/map-marker-icon.svg`}
-                      alt="Map Marker Icon"
-                      width={22}
-                      height={22}
-                      className="map_marker_icon"
-                    /> */}
                     {location}
                   </h4>
                 </section>
                 <section className="ranking flex flex-row pb-2">
                   <StarRank ranking={ranking} />
-
                 </section>
-
               </div>
 
               <div className="flex items-center justify-start md:gap-[0.5rem] gap-2 max-[395px]:ml-[-17px]">
@@ -179,18 +166,16 @@ const JobDetailPage = async ({ params, searchParams }) => {
                     title={title}
                     company_name={company_name}
                     how_to_apply={how_to_apply}
-                  // buttonText="Apply Now /jobs/[category]/[id]/page.js"
                   />
                 )}
-                <ShareButton jobId={jobId}/>
+                <ShareButton jobId={jobId} employerId={employer_id} title={title} company_name={company_name} />
                 <FavoriteButton jobId={params.id} favoriteJobYN={favoriteJobYN} />
-                <JoinTalentPool employerId={employer_id} talentPoolYN={talentPoolYN}/>
+                <JoinTalentPool employerId={employer_id} talentPoolYN={talentPoolYN} />
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* job post header: organization, location closing date of job post  */}
       <div className="lg:hidden block flex justify-center">
         <section className="mt-4 gap-2 w-[20rem] h-[4rem]">
           <div className="applications_close_panel">
@@ -213,59 +198,56 @@ const JobDetailPage = async ({ params, searchParams }) => {
       </div>
       {/* main body of job post */}
       <section className="jobs_grid job_post_panel_container">
-        <article className="post_panel mt-[26px]" data-id={jobId}>
-          <div className="post_content bg-white border-2 rounded-lg">
-            <div className="post" data-id={jobId}>
-              {
-                <>
-                  <div
-                    className={`${!headlineOnly || active ? 'job-content block' : 'hidden'
-                      }`}
-                    dangerouslySetInnerHTML={{ __html: description }}
-                  />
-                  <div
-                    className={`flex flex-col ${headlineOnly && !active ? 'block' : 'hidden'
-                      }`}
-                  >
-                    <span className = "text-gray-700 text-[16px] m-0 mb-6">This job posting has not been sponsored, enter your email below to be sent the full post.</span>
-
-                    <div className="flex justify-center items-center flex-wrap">
-                      <div className="grow">
-                        <RequestFullJobForm
-                          formName="Request Full Job Post"
-                          buttonText="Please Email Full Job Post"
-                          thankYouMessage="Done! You will receive the full job post shortly."
-                          formType="job-request"
-                          jobId={jobId}
-                          employer={company_name}
-                          jobTitle={title}
-                          placeholder="Enter email for full job post"
-                        />
-                      </div>
+        {mode === 'share' ? (
+          <><AcademicConnections jobId={jobId} title={title} company_name={company_name} employerId={employer_id} /></>
+        ) : (
+          <article className="post_panel mt-[26px]" data-id={jobId}>
+            <div className="post_content bg-white border-2 rounded-lg">
+              <div className="post" data-id={jobId}>
+                <div
+                  className={`${!headlineOnly || active ? 'job-content block' : 'hidden'
+                    }`}
+                  dangerouslySetInnerHTML={{ __html: description }}
+                />
+                <div
+                  className={`flex flex-col ${headlineOnly && !active ? 'block' : 'hidden'
+                    }`}
+                >
+                  <span className="text-gray-700 text-[16px] m-0 mb-6">This job posting has not been sponsored, enter your email below to be sent the full post.</span>
+                  <div className="flex justify-center items-center flex-wrap">
+                    <div className="grow">
+                      <RequestFullJobForm
+                        formName="Request Full Job Post"
+                        buttonText="Please Email Full Job Post"
+                        thankYouMessage="Done! You will receive the full job post shortly."
+                        formType="job-request"
+                        jobId={jobId}
+                        employer={company_name}
+                        jobTitle={title}
+                        placeholder="Enter email for full job post"
+                      />
                     </div>
-                    <details className="mt-[80px]">
-                      <summary class="text-[16px] text-sky-500  hover:text-gray-600 cursor-pointer px-4 pb-2 rounded-md text-center">
-                        <a href="#activate-quick-post ">
-                          Recruiter Information Only
-                        </a>
-                      </summary>
-                      <div class="px-4 py-2">
-                        <HeadlineUpgrade
-                          clientType={clientType}
-                          jobId={jobId}
-                          employer={company_name}
-                          jobTitle={title}
-                        />
-                      </div>
-                    </details>{' '}
                   </div>
-                  {/* </div> */}
-                </>
-              }
-              {/* <div className="mt-5 mb-0 text-right">Join Talent Pool</div> */}
+                  <details className="mt-[80px]">
+                    <summary className="text-[16px] text-sky-500 hover:text-gray-600 cursor-pointer px-4 pb-2 rounded-md text-center">
+                      <a href="#activate-quick-post ">
+                        Recruiter Information Only
+                      </a>
+                    </summary>
+                    <div className="px-4 py-2">
+                      <HeadlineUpgrade
+                        clientType={clientType}
+                        jobId={jobId}
+                        employer={company_name}
+                        jobTitle={title}
+                      />
+                    </div>
+                  </details>
+                </div>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        )}
         <div className="listings_panel">
           <div className="listings_content">
             <div className="search_panel">

@@ -65,8 +65,8 @@ export default async function RootLayout({
             <Footer />
           </Providers>
         </QueryProvider>
+        <GoogleAnalytics />
       </body>
-      <GoogleAnalytics />
     </html>
   );
 }

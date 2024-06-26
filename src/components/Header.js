@@ -111,7 +111,7 @@ export default function Header() {
               className={`static-logo mobile`}
               onClick={() => setIsNavOpen(false)}
             >
-              <LogoAJ width={270} height={60} />{' '}
+              <LogoAJ width={270} height={60} />
             </Link>
           )
         ) : (
@@ -119,7 +119,7 @@ export default function Header() {
             href={`/${countryMappings2[region?.toLowerCase()]?.url}?r=${r}`}
             className={`static-logo mobile`}
           >
-            <LogoAJ width={270} height={60} />{' '}
+            <LogoAJ width={270} height={60} />
           </Link>
         )}
         <HamburgerMenuIcon
@@ -139,9 +139,9 @@ export default function Header() {
           {pathname === '' ? null : (
             <Link
               href={`/${countryMappings2[region?.toLowerCase()]?.url}?r=${r}`}
-              className="hide-mobile static-logo mr-4"
+              className="hide-mobile static-logo mr-0"
             >
-              <LogoAJ width={270} height={60} />{' '}
+              <LogoAJ width={270} height={60} />
             </Link>
           )}
           <NavItem
@@ -151,7 +151,7 @@ export default function Header() {
                 : '/jobs-advanced-search'
             }
             icon="/dotted-arrow.svg"
-            navLink="Find Uni Jobs"
+            navLink="All University Jobs"
             forceClass="border-b hover:border-amber-500" //this is optional
             forceButtonClass="border-b hover:border-amber-500 mr-2 "
             onClick={() => setIsNavOpen(false)}
@@ -159,16 +159,16 @@ export default function Header() {
           <NavItem
             url={`/${
               countryMappings2[region?.toLowerCase()]?.url
-            }/jobs-by-top-universities`}
+            }/university-rankings`}
             icon="/upward-arrow.svg"
-            navLink="Top Universities"
+            navLink="University Rankings"
             forceButtonClass="border-b hover:border-amber-500 "
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url="/career-help"
+            url="/higher-ed-job-advice"
             icon="/network-icon.svg"
-            navLink="Career Help"
+            navLink="Higher Ed Job Advice"
             forceButtonClass="border-b hover:border-amber-500 "
             onClick={() => setIsNavOpen(false)}
           />
@@ -287,7 +287,7 @@ export default function Header() {
               }/recruitment/`}
               icon="/post-a-job-icon.svg"
               navLink="Post a Job"
-              forceLinkClass="ml-auto"
+              forceLinkClass=""
               forceButtonClass="nav-mobile-btn btn btn-aj "
               onClick={() => setIsNavOpen(false)}
             />

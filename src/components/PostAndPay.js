@@ -117,8 +117,13 @@ const JobPostForm = ({ product }) => {
       router.push('/thank-you');
     }
     if (paymentMessage === 'Credit Card') {
-      router.push(stripeLink[regionSelected]);
+      // router.push('/thank-you');
+
+      router.push(product.stripeLink);
     }
+    // if (paymentMessage === 'Credit Card') {
+    //   router.push(stripeLink[regionSelected]);
+    // }
   } else {
     content = (
       <main className=" content-grid">
@@ -135,16 +140,16 @@ const JobPostForm = ({ product }) => {
                     <InputBlock
                       register={register}
                       errors={errors}
-                      label="Organization Name"
+                      label="Organization/Institution Name"
                       type="text"
                       field="01_Organisation_Name"
                       forceClass="text-black"
-                      placeholder="Organization Name"
+                      placeholder="Organization or Institution Name"
                       autoComplete="organization"
                       hidden={newContact || standardMode ? false : true}
                       required={true}
-                      value={organisationName}
-                      onChange={handleInputChange}
+                      // value={organisationName}
+                      // onChange={handleInputChange}
                     />
                   </div>
                   <div className="flex gap-2 mt-4">
@@ -199,61 +204,79 @@ const JobPostForm = ({ product }) => {
                   type="text"
                   field="03_Institution_Name"
                   forceClass=" text-black"
-                  placeholder=""
+                  placeholder="Institution Name (Agents and Resellers Only)"
                   required={true}
                 />
-                <div className="form-control">
-                  <label className="cursor-pointer label justify-start">
-                    <input
-                      type="checkbox"
-                      className="checkbox checkbox-secondary mr-2"
-                      onChange={(e) => setJobURLLink(e.target.checked)}
-                    />
-                    <span className="label-text">
-                      Would you prefer to provide a link to your job post
-                      instead?
-                    </span>
-                  </label>
-                </div>
-                {jobURLLink ? (
-                  <InputBlock
-                    register={register}
-                    errors={errors}
-                    label={`Provide a link to your job and we will copy the job from there (ie: ${urlExample})`}
-                    type="text"
-                    field="04_Job_Link_URL"
-                    forceClass=" text-black"
-                    placeholder=""
-                    required={true}
-                  />
-                ) : (
-                  <>
-                    <label className="form-control ">
-                      <span className="label-text text-xs pb-1">
-                        Copy & Paste your job here, and AcademicJobs will take
-                        care of the rest.
-                      </span>
-                      <Tiptap
-                        content={content}
-                        onChange={(newContent) =>
-                          handleContentChange(newContent)
-                        }
+                {product.credits === 1 ? (
+                  <div className="form-control">
+                    <label className="cursor-pointer label justify-start">
+                      <input
+                        type="checkbox"
+                        className="checkbox checkbox-secondary mr-2"
+                        onChange={(e) => setJobURLLink(e.target.checked)}
                       />
+                      <span className="label-text">
+                        Would you prefer to provide a link to your job post
+                        instead?
+                      </span>
                     </label>
-                  </>
-                )}
-
-                <label className="form-control">
-                  <span className="label-text text-xs pb-1">
-                    Notes or Special Instructions
-                  </span>
-                  <textarea
-                    className="textarea textarea-bordered h-32 focus:outline-none focus:border-orange-500"
-                    id="notes"
-                    placeholder="Type your message here."
-                    {...register('05_Notes')}
-                  ></textarea>
-                </label>
+                  </div>
+                ) : null}
+                {product.credits === 1 ? (
+                  jobURLLink ? (
+                    <InputBlock
+                      register={register}
+                      errors={errors}
+                      label={`Provide a link to your job and we will copy the job from there (ie: ${urlExample})`}
+                      type="text"
+                      field="04_Job_Link_URL"
+                      forceClass=" text-black"
+                      placeholder="Link to your job post"
+                      required={false}
+                    />
+                  ) : (
+                    <>
+                      <label className="form-control ">
+                        <span className="label-text text-xs pb-1">
+                          Copy & Paste your job here, and AcademicJobs will take
+                          care of the rest.
+                        </span>
+                        <Tiptap
+                          content={content}
+                          onChange={(newContent) =>
+                            handleContentChange(newContent)
+                          }
+                        />
+                      </label>
+                    </>
+                  )
+                ) : null}
+                {product.credits === 1 ? (
+                  <label className="form-control">
+                    <span className="label-text text-xs pb-1">
+                      Notes or Special Instructions
+                    </span>
+                    <textarea
+                      className="textarea textarea-bordered h-32 focus:outline-none focus:border-orange-500"
+                      id="notes"
+                      placeholder="Type your message here."
+                      {...register('05_Notes')}
+                    ></textarea>
+                  </label>
+                ) : null}
+                <InputBlock
+                  ID={product.id}
+                  register={register}
+                  errors={errors}
+                  label={`Product`}
+                  type="text"
+                  field="06_Product"
+                  forceClass="text-black"
+                  placeholder=""
+                  required={true}
+                  defaultValue={`${product.name} - ${product.currency}${product.price}`}
+                  hidden={true}
+                />{' '}
                 {/* <p>{product.id}</p> */}
                 <p className="m-0 text-xl">
                   Purchase <strong>{product.name}</strong> for{' '}
@@ -263,7 +286,7 @@ const JobPostForm = ({ product }) => {
                   </strong>{' '}
                   {product.currency}
                 </p>
-                <p className="m-0">
+                {/* <p className="m-0">
                   {product.credits === -1
                     ? 'Unlimited credits will be added '
                     : `${product.credits} credit${
@@ -276,11 +299,10 @@ const JobPostForm = ({ product }) => {
                   ) : (
                     ''
                   )}
-                </p>
+                </p> */}
                 {/* <p>{product.description}</p> */}
                 {/* <p>{product.credits}</p> */}
                 {/* <p>{product.slug}</p> */}
-
                 <div className="flex gap-4">
                   <label htmlFor="creditCard" className="label cursor-pointer">
                     <strong className="mr-2">Payment method:</strong>Credit Card
@@ -316,17 +338,17 @@ const JobPostForm = ({ product }) => {
                   {product.credits < 0
                     ? 'Pay Now'
                     : 'Post & Pay via ' + paymentMessage}
-                </button>
+                </button>{' '}
               </div>
             </form>
           </div>
 
           {/* Right panel */}
           <div className="relative">
-            <div className="flex mt-8">
+            <div className="flex">
               <Speedo size={80} />
               <h2 className="ml-4">
-                Post a job in 32 seconds saving you 8 minutes each time!{' '}
+                Academic Jobs is the fastest way to post a Job.{' '}
               </h2>
             </div>
             <div className="=absolute inset-0 flex justify-center items-center">
@@ -338,7 +360,7 @@ const JobPostForm = ({ product }) => {
                 alt="Academic Jobs Quick Post Technology"
               />
             </div>
-            <div className="prose">
+            {/* <div className="prose">
               <p className="mt-4">
                 The average time to Post a Job and fill out a form on the major
                 Job Seeking platforms is 9 min or more. With AcademicJobs we
@@ -356,7 +378,7 @@ const JobPostForm = ({ product }) => {
                   Our Rich Text editor is coming soon (just copy and paste)
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>

@@ -1,23 +1,81 @@
+// cSpell:disable
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      'lh3.googleusercontent.com',
-      'academicjobs.s3.amazonaws.com',
-      'res.cloudinary.com',
-      'iloveacademicjobs.com',
-      'uniiq.com',
-      'www.qut.edu.au',
-      'www.academicjobs.com',
-      'images.all-free-download.com',
-      'dentalstudents.com.au',
+    // domains: [
+    //   'lh3.googleusercontent.com',
+    //   'academicjobs.s3.amazonaws.com',
+    //   'res.cloudinary.com',
+    //   'iloveacademicjobs.com',
+    //   'uniiq.com',
+    //   'www.qut.edu.au',
+    //   'www.academicjobs.com',
+    //   'images.all-free-download.com',
+    //   'dentalstudents.com.au',
+    // ],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'academicjobs.s3.amazonaws.com',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'iloveacademicjobs.com',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'uniiq.com',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.qut.edu.au',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.academicjobs.com',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.all-free-download.com',
+        port: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'dentalstudents.com.au',
+        port: '',
+      },
     ],
   },
   async redirects() {
     return [
       {
         source: '/jobs-advanced-search',
-        destination: '/uni-jobs',
+        destination: '/university-jobs',
+        permanent: true,
+      },
+      {
+        source: '/career-help',
+        destination: '/higher-ed-job-advice',
+        permanent: true,
+      },
+      {
+        source: '/career-help/:slug',
+        destination: '/higher-ed-job-advice/:slug',
         permanent: true,
       },
       {
@@ -50,29 +108,54 @@ const nextConfig = {
         destination: '/student-jobs',
         permanent: true,
       },
+      // {
+      //   source: '/employer',
+      //   destination: '/jobs-by-top-universities',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/employers',
+      //   destination: '/jobs-by-top-universities',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/global/employers',
+      //   destination: '/jobs-by-top-universities',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/Global/jobs-by-top-universities',
+      //   destination: '/jobs-by-top-universities',
+      //   permanent: true,
+      // },
+      // {
+      //   source: '/global/jobs-by-top-universities',
+      //   destination: '/jobs-by-top-universities',
+      //   permanent: true,
+      // },
       {
         source: '/employer',
-        destination: '/jobs-by-top-universities',
+        destination: '/university-rankings',
         permanent: true,
       },
       {
         source: '/employers',
-        destination: '/jobs-by-top-universities',
+        destination: '/university-rankings',
         permanent: true,
       },
       {
         source: '/global/employers',
-        destination: '/jobs-by-top-universities',
+        destination: '/university-rankings',
         permanent: true,
       },
       {
-        source: '/Global/jobs-by-top-universities',
-        destination: '/jobs-by-top-universities',
+        source: '/Global/university-rankings',
+        destination: '/university-rankings',
         permanent: true,
       },
       {
-        source: '/global/jobs-by-top-universities',
-        destination: '/jobs-by-top-universities',
+        source: '/global/university-rankings',
+        destination: '/university-rankings',
         permanent: true,
       },
       {
