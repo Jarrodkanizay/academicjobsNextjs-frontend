@@ -2,51 +2,43 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { BaseApi } from '@/lib/store/Base';
 
-const ShareJob = ( { jobId, employerId, title, company_name, onClose } ) => {
-
+const ShareJob = ({ jobId, employerId, title, company_name, onClose }) => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
+    inviterFirstName: '',
+    inviterLastName: '',
     indigenousAcademic: false,
   });
 
-
-  function generateGenericEmail(id, title, company_name, firstName) {
-    const emailTemplateGeneric =
-      `<!DOCTYPE html>
+  function generateGenericEmail(id, title, company_name, firstName, inviterFirstName, inviterLastName) {
+    const emailTemplateGeneric = `<!DOCTYPE html>
       <html>
       <body style="font-family: Arial, sans-serif; margin-top: 50px;">
           <div style="width: 80%; max-width: 800px; margin: auto; padding: 20px; border-radius: 5px;">
             <p>Hello ${firstName},</p>
             <p><br></p>
-            <p>I hope this email finds you well.</p>
+            <p>I thought I would share this new opportunity with ${company_name}.</p>
             <p><br></p>
-            <p>We are excited to inform you about a job opportunity that aligns perfectly with your skills and experience.
-                ${company_name} is currently seeking to fill the position of ${title}. Based on your profile and
-                background, we believe this role could be an excellent fit for you.</p>
-            <p><br></p>
-            <p>We encourage you to review the full job description and consider applying for this position. You can find more
-                details and submit your application through the following link:  <a href="https://www.academicjobs.com/jobs/myjob/${id}"
+            <p>You (or a colleague) might be interested.</p>
+            <p>Click and check it out - <a href="https://www.academicjobs.com/jobs/myjob/${id}"
                 rel="noopener noreferrer" target="_blank">${company_name}: ${title}</a></p>
             <p><br></p>
             <p>Also, an account has been created for you to join our network with your email and the password provided below, sign in <a href="https://www.academicjobs.com/auth/signin" rel="noopener noreferrer" target="_blank">here</a> 
             </p>
-            <b>password:</b> dfxg9CIqip
-            <p><br></p>
-            <p>Best regards,</p>
-            <p>Jarrod</p>
-            <p><img src="https://academicjobs.s3.amazonaws.com/img/_misc/jarrod-email-signature-generic.png" height="218" width="434" alt="Jarrod"></p>
+            <p>regards,</p>
+            <p>The AcademicJobs Team</p>
+            <p>(On behalf of ${inviterFirstName} ${inviterLastName})</p>
+            <a href="https://www.academicjobs.com/jobs/myjob/${id}?mode=share" target="_blank">Refer a friend or colleague for this job here./a>
         </div>
       </body>
-      </html>
-      `;
+      </html>`;
     return emailTemplateGeneric;
   }
 
-
   const handleCloseForm = () => {
-    setFormData({ firstName: '', lastName: '', email: '', indigenousAcademic: false });
+    setFormData({ firstName: '', lastName: '', email: '', inviterFirstName: '', inviterLastName: '', indigenousAcademic: false });
     onClose(); // Close the modal
   };
 
@@ -60,89 +52,78 @@ const ShareJob = ( { jobId, employerId, title, company_name, onClose } ) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     try {
       await BaseApi.post('/shareJobEmail', {
         ...formData,
-        subject: "subject",
-        data: generateGenericEmail(jobId, title, company_name, formData.firstName),
+        subject: "We need your help to spread the word about our new job opportunity",
+        data: generateGenericEmail(jobId, title, company_name, formData.firstName, formData.inviterFirstName, formData.inviterLastName),
       });
       swal("Success", `We've shared this job with ${formData.firstName} ${formData.lastName}!`, "success");
     } catch (error) {
       console.error('Error sending email:', error);
       alert('Failed to send email.');
     }
-  
-    // let response;
-    // try {
-    //   response = await BaseApi.post('/addUser', {
-    //     ...formData,
-    //     indigenousAcademic: formData.indigenousAcademic,
-    //   });
-  
-    //   if (response && response.data && response.data.id) {
-    //     try {
-    //       await BaseApi.post('/favoriteJobId', {
-    //         mode: "add",
-    //         jobId: jobId,
-    //         userId: response.data.id
-    //       });
-      
-    //     } catch (favoriteJobError) {
-    //       console.error('Setting favorite job failed:', favoriteJobError);
-    //     }
-      
-    //     try {
-    //       await BaseApi.post('/favoriteEmployerId', {
-    //         mode: "add",
-    //         employerId: employerId, 
-    //         userId: response.data.id,
-    //         type: "FAVORITE"
-    //       });
-      
-    //     } catch (favoriteEmployerError) {
-    //       console.error('Setting favorite employer failed:', favoriteEmployerError);
-    //     }
-    //   }
-      
-  
-    // } catch (error) {
-    //   console.error('User add failed:', error);
-    // }
-  
+
     handleCloseForm();
   };
-  
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex z-50 items-center justify-center">
       <div className="bg-white p-6 rounded shadow-lg" style={{ width: '90%', maxWidth: '500px' }}>
         <h2 className="text-xl font-bold mb-4">Share this job!</h2>
         <form onSubmit={handleSubmit}>
-            <div className='flex gap-2'>
+          <h3 className="text-lg font-semibold mb-2">Your Information</h3>
+          <div className='flex gap-2'>
             <label className="block mb-2">
-            First Name:
-            <input
-              type="text"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              required
-              className="w-full px-2 py-1 border rounded mt-1"
-            />
-          </label>
-          <label className="block mb-2">
-            Last Name:
-            <input
-              type="text"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              required
-              className="w-full px-2 py-1 border rounded mt-1"
-            />
-          </label>
-            </div>
+              First Name:
+              <input
+                type="text"
+                name="inviterFirstName"
+                value={formData.inviterFirstName}
+                onChange={handleChange}
+                required
+                className="w-full px-2 py-1 border rounded mt-1"
+              />
+            </label>
+            <label className="block mb-2">
+              Last Name:
+              <input
+                type="text"
+                name="inviterLastName"
+                value={formData.inviterLastName}
+                onChange={handleChange}
+                required
+                className="w-full px-2 py-1 border rounded mt-1"
+              />
+            </label>
+          </div>
+
+          <h3 className="text-lg font-semibold mb-2">Invitee Information</h3>
+          <div className='flex gap-2'>
+            <label className="block mb-2">
+              First Name:
+              <input
+                type="text"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                required
+                className="w-full px-2 py-1 border rounded mt-1"
+              />
+            </label>
+            <label className="block mb-2">
+              Last Name:
+              <input
+                type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+                className="w-full px-2 py-1 border rounded mt-1"
+              />
+            </label>
+          </div>
 
           <label className="block mb-2">
             Email:
@@ -155,16 +136,6 @@ const ShareJob = ( { jobId, employerId, title, company_name, onClose } ) => {
               className="w-full px-2 py-1 border rounded mt-1"
             />
           </label>
-          {/* <label className="block mb-2">
-            Is this person an indigenous academic:
-            <input
-              type="checkbox"
-              name="indigenousAcademic"
-              checked={formData.indigenousAcademic}
-              onChange={handleChange}
-              className="ml-2"
-            />
-          </label> */}
           <div className="flex justify-end mt-4">
             <button
               type="button"

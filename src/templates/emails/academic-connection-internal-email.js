@@ -41,7 +41,7 @@ export const internalEmail = `
 <body>
   <div class="container">
     <p>Hello \${firstName},</p>
-    <p>Our <a href="https://www.academicjobs.com/jobs/myjob/\${id}" rel="noopener noreferrer" target="_blank">\${title}</a> job campaign is underway.</p>
+    <p>Our <a href="https://www.academicjobs.com/jobs/myjob/\${id}?active=true" rel="noopener noreferrer" target="_blank">\${title}</a> job campaign is underway.</p>
     <p>We want to FIND OUR BEST, and need you to spread the word to your peers and respected colleagues abroad.</p>
     <p><a href="https://www.academicjobs.com/jobs/myjob/\${id}?mode=share" rel="noopener noreferrer" target="_blank">Click here</a> to use ‘Academic Connect’ that appropriately informs your connections of our job and workplace opportunities.</p>
     <p>Here's why:</p>

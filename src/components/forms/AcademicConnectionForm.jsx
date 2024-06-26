@@ -50,9 +50,13 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
           ? generateEmail(jobId, title, company_name, form.firstName, `${inviter.firstNameInviter} ${inviter.lastNameInviter}`, internalEmail)
           : generateEmail(jobId, title, company_name, form.firstName, `${inviter.firstNameInviter} ${inviter.lastNameInviter}`, externalEmail);
 
+        const subject = form.internalEmployee
+        ? `Our job listing '${title}' needs your help...`
+        : `${company_name} Opportunity`;
+
         await BaseApi.post("/shareJobEmail", {
           ...form,
-          subject: "Job Opportunity",
+          subject: subject,
           data: emailTemplate,
         });
         swal("Success", `Thank you for sharing!`, "success");
