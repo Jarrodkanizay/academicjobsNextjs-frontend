@@ -396,7 +396,7 @@ export default function myPage() {
                       id="Academic Interview Presentation Tips"
                       className="card-content"
                     >
-                      <h2 className="text-xl font-semibold mb-2 text-gray-blue ">
+                      <h2 className="mb-2 underline-full text-gray-blue ">
                         Academic Interview Presentation Tips
                       </h2>
                       <p>
