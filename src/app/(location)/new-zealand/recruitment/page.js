@@ -25,7 +25,7 @@ export default function myPage() {
   return (
     <div className="">
       <main>
-        {/* Pricing Table */}
+        {/* Pricing Table NZD */}
         <section className="container mx-auto px-4">
           <PricingTable2 currency={'NZD'} hideRegionSelector={true} />
         </section>
