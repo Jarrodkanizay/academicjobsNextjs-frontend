@@ -472,7 +472,7 @@ export default function myPage() {
             </div>
             <div className="lg:min-w-[400px]">
               {/* @ts-ignore */}
-              <SearchResults2 q={{ q: 'research', l: 'Australia' }} />
+              <SearchResults2 q={{ q: 'lecturer', l: 'Australia' }} />
             </div>
           </div>
         </section>
