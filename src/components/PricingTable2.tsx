@@ -48,31 +48,29 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
   // TODO - Display a modal or highlight the region selector
   // TODO - Customize the features for AHEIA versus other regions
   // TODO - Setup other pricing for other regions in stripe
+  // TODO - Refactor to remove excess region and currency management
 
   let regionMessage = 'Which Region are you from?';
 
-  if (currency === 'AUD') {
-    regionMessage = 'AUD';
+  let currentCurrency = currency;
+  if (currentCurrency === '' || currentCurrency === 'USD') {
+    currentCurrency = 'USD';
+    regionMessage = 'USD';
   }
+
+  if (currentCurrency === 'AUD') regionMessage = 'AUD';
+  if (currentCurrency === 'NZD') regionMessage = 'NZD';
 
   const [selectedCurrency, setSelectedCurrency] = useState(regionMessage);
   const [regionSelected, setRegion] = useState(regionMessage);
-
-  let productList = [];
-
-  if (currency === '') {
-    productList = productData.AUD;
-  } else {
-    productList = productData[currency];
-  }
-
-  const [products, getProducts] = useState(productData.AUD);
+  const [products, getProducts] = useState(productData[currentCurrency]);
 
   const handleChange = (event) => {
     setSelectedCurrency(event.target.value); // Get the selected option element
     const selectedOption = event.target.options[event.target.selectedIndex]; // Get the text of the selected option
     const selectedRegion = selectedOption.text;
     setRegion(selectedRegion);
+    getProducts(productData[event.target.value]);
   };
 
   return (
@@ -97,19 +95,17 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
         <option value="" selected>
           Which Region are you from?
         </option>
-        {Object.keys(region)
-          .filter((key) => key !== 'JobElephant')
-          .map((key) => (
-            <option key={key} value={region[key]}>
-              {key}
-            </option>
-          ))}
+        {Object.keys(region).map((key) => (
+          <option key={key} value={region[key]}>
+            {key}
+          </option>
+        ))}
       </select>
 
       <h2 className="underline-full gray-blue">
         {selectedCurrency === 'AUD'
           ? 'EOFY Special (AHEIA Members Only)'
-          : 'Pricing'}{' '}
+          : 'Pricing '}
         {selectedCurrency === regionMessage ? '' : selectedCurrency}
       </h2>
 

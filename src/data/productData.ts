@@ -37,7 +37,7 @@ export const productData = {
   ],
   USD: [
     {
-      id: 'prod_PQqDcoljVuzlC9', //Stripe ID
+      id: 'prod_QMUFGgxEotLfrh', //Stripe ID
       name: 'Single Job Post',
       slug: 'single-job-post-usd',
       currency: 'USD',
@@ -45,9 +45,10 @@ export const productData = {
       price: 315,
       currencySymbol: '$',
       credits: 1,
+      stripeLink: 'https://buy.stripe.com/5kA29O0r6aaAgs85kP',
     },
     {
-      id: 'prod_QJYO5siOzxegVU', //Stripe ID
+      id: 'prod_QMTYh7tPUjL36m', //Stripe ID
       name: '3 Job Pack',
       slug: '3-job-pack-usd',
       currency: 'USD',
@@ -55,6 +56,7 @@ export const productData = {
       price: 888,
       currencySymbol: '$',
       credits: 3,
+      stripeLink: 'https://buy.stripe.com/9AQaGkddSbeEdfWdRm',
     },
     {
       id: 'prod_QJYANJaIsM8Awo', //Stripe ID
@@ -65,11 +67,12 @@ export const productData = {
       price: 888,
       currencySymbol: '$',
       credits: -1,
+      stripeLink: 'https://buy.stripe.com/4gwdSw1va6Yo7VC3cJ',
     },
   ],
   NZD: [
     {
-      id: 'prod_PQqDcoljVuzlC9', //Stripe ID
+      id: 'prod_Q4UhHuD9LEI2yP', //Stripe ID
       name: 'Single Job Post',
       slug: 'single-job-post-nzd',
       currency: 'NZD',
@@ -77,9 +80,10 @@ export const productData = {
       price: 315,
       currencySymbol: '$',
       credits: 1,
+      stripeLink: 'https://buy.stripe.com/fZebKo1va2I82BiaF4',
     },
     {
-      id: 'prod_QJYO5siOzxegVU', //Stripe ID
+      id: 'prod_QMUtpv6vUiRi8F', //Stripe ID
       name: '3 Job Pack',
       slug: '3-job-pack-nzd',
       currency: 'NZD',
@@ -87,9 +91,10 @@ export const productData = {
       price: 888,
       currencySymbol: '$',
       credits: 3,
+      stripeLink: 'https://buy.stripe.com/cN229O2ze3Mcek000z',
     },
     {
-      id: 'prod_QJYANJaIsM8Awo', //Stripe ID
+      id: 'prod_QMUoeYTEfkg9lb', //Stripe ID
       name: 'Unlimited',
       slug: 'unlimited-job-posts-subscription-nzd',
       currency: 'NZD',
@@ -97,6 +102,7 @@ export const productData = {
       price: 888,
       currencySymbol: '$',
       credits: -1,
+      stripeLink: 'https://buy.stripe.com/eVa5m05Lq5Uk3FmeVs',
     },
   ],
 };
