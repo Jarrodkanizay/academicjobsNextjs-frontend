@@ -173,7 +173,7 @@ export default function myPage() {
 
                   <Accordion
                     question="1. Tell me about yourself?"
-                    anchor={tableOfContents[0].anchor}
+                    anchor={tableOfContents[2].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Tailor your response to the specific
@@ -197,7 +197,7 @@ export default function myPage() {
 
                   <Accordion
                     question="2. Why should we hire you?"
-                    anchor={tableOfContents[1].anchor}
+                    anchor={tableOfContents[3].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Craft a concise narrative that
@@ -220,7 +220,7 @@ export default function myPage() {
 
                   <Accordion
                     question="3. What interdisciplinary courses can you teach?"
-                    anchor={tableOfContents[2].anchor}
+                    anchor={tableOfContents[4].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Highlight your flexibility and the
@@ -242,7 +242,7 @@ export default function myPage() {
 
                   <Accordion
                     question="4. How do you approach your research?"
-                    anchor={tableOfContents[3].anchor}
+                    anchor={tableOfContents[5].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Share your future research goals and
@@ -263,7 +263,7 @@ export default function myPage() {
 
                   <Accordion
                     question="5. What plans do you have for your research?"
-                    anchor={tableOfContents[4].anchor}
+                    anchor={tableOfContents[6].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Share your future research goals and
@@ -284,7 +284,7 @@ export default function myPage() {
 
                   <Accordion
                     question="6. Describe your experience in teaching?"
-                    anchor={tableOfContents[5].anchor}
+                    anchor={tableOfContents[7].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Provide specific examples of your
@@ -305,7 +305,7 @@ export default function myPage() {
 
                   <Accordion
                     question="7. Have you instructed college courses previously?"
-                    anchor={tableOfContents[6].anchor}
+                    anchor={tableOfContents[8].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Highlight your direct teaching
@@ -326,7 +326,7 @@ export default function myPage() {
 
                   <Accordion
                     question="8. What are your current research interests?"
-                    anchor={tableOfContents[7].anchor}
+                    anchor={tableOfContents[9].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Align your research interests with
@@ -347,7 +347,7 @@ export default function myPage() {
 
                   <Accordion
                     question="9. Describe your teaching philosophy?"
-                    anchor={tableOfContents[8].anchor}
+                    anchor={tableOfContents[10].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Articulate a clear and coherent
@@ -368,7 +368,7 @@ export default function myPage() {
 
                   <Accordion
                     question="10. How would you mentor graduate students?"
-                    anchor={tableOfContents[9].anchor}
+                    anchor={tableOfContents[11].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Discuss your mentoring style and how
