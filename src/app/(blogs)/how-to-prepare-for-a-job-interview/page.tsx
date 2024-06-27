@@ -138,7 +138,7 @@ export default function myPage() {
               <div className="grow mb-16">
                 <section>
                   <h2
-                    id="Preparation for Interview"
+                    id={tableOfContents[0].anchor}
                     className="gray-blue underline-full"
                   >
                     Preparation for Interview
@@ -165,7 +165,7 @@ export default function myPage() {
                 </section>
                 <section>
                   <h2
-                    id="Common Interview Questions and Answers"
+                    id={tableOfContents[1].anchor}
                     className="gray-blue underline-full"
                   >
                     Common Interview Questions and Answers
