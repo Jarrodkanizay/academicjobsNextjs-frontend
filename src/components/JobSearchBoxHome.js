@@ -87,9 +87,9 @@ export default function JobSearchBox() {
       <div className="relative flex flex-col md:flex-row md:gap-2 md:gap-0 mx-18 w-full mt-5 md:border rounded-t-lg md:rounded-lg p-2 md:shadow-md">
         <div className="relative z-50 flex-grow flex items-center"> {/* Ensure the container is flex and items-center */}
           <JobKeywordSearchBlock
-            field="Enter a keyword"
-            customKey="Enter a keyword"
-            label="Enter a keyword"
+            // field="Enter a keyword"
+            // customKey="Enter a keyword"
+            // label="Enter a keyword"
             forceClass="mb-6"
             onSelect={onEditorStateSelect}
             onInputChange={onInputChange}
@@ -106,14 +106,14 @@ export default function JobSearchBox() {
       <div className="w-full flex justify-end">
         <button
           className="text-gray-400 text-base md:pr-6 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l from-green-400 via-green-400 to-sky-300"
-          onClick={() => {
-            event.preventDefault();
+          onClick={(e) => {
+            e.preventDefault();
             //alert(keyWordRef.current)
             let q3 = ""
             if (cfRef.current) {
               q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
             } else {
-              if (keyWordRef?.current.trim()) {
+              if (keyWordRef?.current) {
                 q3 = `&q=${keyWordRef?.current.trim()}`
               }
             }
