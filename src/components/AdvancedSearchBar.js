@@ -62,7 +62,7 @@ export default function Page({ p = {}, forceClass = '' }) {
   };
   const [filterTypes1, setfilterTypes1] = useState(filterType1);
   const [filterTypes, setfilterTypes] = useState(filterType);
-  const onEditorStateChange1 = (suggestion) => {};
+  const onEditorStateChange1 = (suggestion) => { };
   const [category, setCategory] = useState('');
   const [filter2, setfilter2] = useState([]);
   
@@ -74,8 +74,7 @@ export default function Page({ p = {}, forceClass = '' }) {
     setfilterTypes1((p) => ({ ...p, FacultyDepartmentJobs: false }));
     setfilterTypes1((p) => ({ ...p, AcademicPositionType: false }));
     setfilterTypes1((p) => ({ ...p, thirdcategory: false }));
-    
-    if (r === 'global')
+    if (r === 'global' || r === 'Global')
       setfilterTypes((p) => ({ ...p, Country: true }));
     if (category === 'AcademicPositionType')
       setfilterTypes1((p) => ({ ...p, thirdcategory: true }));
@@ -95,7 +94,6 @@ export default function Page({ p = {}, forceClass = '' }) {
       setfilterTypes1((p) => ({ ...p, PositionType: true }));
     }
   }, [JSON.stringify(filter1)]);
-
   useEffect(() => {
     setfilter2(filter1);
   }, [category]);
@@ -124,7 +122,6 @@ export default function Page({ p = {}, forceClass = '' }) {
     },
     enabled: category !== '',
   });
-
   const filterValues9 = {
     Country: 'Country',
     State: 'State',
@@ -142,7 +139,6 @@ export default function Page({ p = {}, forceClass = '' }) {
     OnsiteRemote: 'Onsite/Remote',
     thirdcategory: 'thirdcategory',
   };
-
   const [isShowFilter, setIsShowFilter] = useState(false);
   const [isFormVisible, setIsFormVisible] = useState(false); // State for form visibility
 
@@ -177,7 +173,6 @@ export default function Page({ p = {}, forceClass = '' }) {
     }
     setSelectedFilters(updatedFilters);
   };
-
   return (
     <>
       <div
@@ -258,11 +253,10 @@ export default function Page({ p = {}, forceClass = '' }) {
             <React.Fragment key={i}>
               <button
                 key={i}
-                className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${
-                  category === filterType
+                className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${category === filterType
                     ? 'bg-amber-500 text-white border-amber-500'
                     : 'bg-white border-gray-500'
-                }
+                  }
                   ${showYN ? 'block' : 'hidden'}`}
                 onClick={() => {
                   if (category === filterType) {
@@ -289,11 +283,10 @@ export default function Page({ p = {}, forceClass = '' }) {
               <React.Fragment key={i}>
                 <button
                   key={i}
-                  className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${
-                    category === filterType
+                  className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${category === filterType
                       ? 'bg-amber-500 text-white border-amber-500'
                       : 'bg-white border-gray-500'
-                  }
+                    }
                   ${showYN ? 'block' : 'hidden'}`}
                   onClick={() => {
                     if (category === filterType) {

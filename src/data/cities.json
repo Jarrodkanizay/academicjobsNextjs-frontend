@@ -71,10 +71,12 @@
   {
     "break1": true,
     "Name": "tasmania",
-    "Title": "Academic & University jobs Tasmania",
-    "Description": " On Academic Jobs Tasmania You can filter by discipline, level, type, location, and more. You can also sign up for email alerts to get notified of new opportunities as they arise.  ",
-    "Keyword": "Academic Jobs Tasmania",
-    "alt": "tasmania academic jobs",
+    "h1": "Academic & University jobs Tasmania",
+    "Title": "University Jobs in Tasmania",
+    "Description": "Find 88 university jobs in Tasmania from top universities such as University of Tasmania (UTAS). View academic job vacancies in lecturer, research and faculty jobs.",
+    "Keyword": "Academic Jobs Tasmania, University jobs Tasmania",
+    "image": "/banner-icons/hobart.png",
+    "alt": "Tasmania University jobs",
     "content": "Seek university jobs from Tasmania’s top institutions, such as University of Tasmania (UTAS), Australian Maritime College and Jane Franklin hall."
   },
 
