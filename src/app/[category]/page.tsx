@@ -9,6 +9,7 @@ import SearchResults3 from '@/components/SearchResults3';
 
 type MetadataTypes = {
   Name?: string | undefined;
+  h1?: string | undefined;
   Title?: string | undefined;
   Description?: string | undefined;
   Keyword?: string | undefined;
@@ -58,6 +59,7 @@ export default function Page({ params, searchParams }: any) {
 
   const {
     Name,
+    h1,
     Title: Title,
     Description,
     Keyword,
@@ -77,7 +79,7 @@ export default function Page({ params, searchParams }: any) {
       />
       <div className="hero-content mx-auto items-start justify-start py-12 relative z-10">
         <h1 className="md:text-5xl font-bold md:text-left text-white pb-4 m-0">
-          {Title}
+          {h1 ? h1 : Title}
           <p className="mt-4 text-white rounded-lg">{content1}</p>
         </h1>
       </div>
