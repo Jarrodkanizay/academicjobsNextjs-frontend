@@ -1,10 +1,9 @@
-import { position } from '@/data/position.json';
 // cSpell:disable
 export const teamData = [
   {
     name: 'Jarrod Kanizay',
     slug: 'jarrod-kanizay',
-    position: 'Founder & CEO',
+    position: 'Founder & Job Advertising Guru',
     headshot: 'jarrod-kanizay.jpg',
     mainImage: 'jarrod-kanizay-main.png',
     bio: `Jarrod Kanizay is our trailblazing leader at AcedmicJobs.com and the higher education job market. In 2006, he founded UniJobs.com.au, which quickly became the leading Australian university job portal. It was renowned for its exceptional customer service, user-friendly interface, and affordable advertising rates. By 2015, UniJobs had expanded to 40 countries, becoming the largest university job network globally.
