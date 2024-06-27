@@ -1,0 +1,84 @@
+[
+    {
+      "Executive": [
+        "Dean (Department Head)",
+        "Provost",
+        "Heads Department Chairs Department Jobs",
+        "President / Vice Chancellor",
+        "Other"
+      ]
+    },
+    {
+      "Human Resources": [
+        "General HR",
+        "Industrial Employee Relations",
+        "Management Internal",
+        "Occupational Health Safety",
+        "Organisational Development",
+        "Recruitment Internal",
+        "Remuneration Benefits",
+        "Training Development",
+        "Other"
+      ]
+    },
+    {
+      "Staff / Administration": [
+        "Administrative",
+        "Estates Facilities Management",
+        "Alumni Fundraising",
+        "Health Wellbeing",
+        "Hospitality Retail Conferences Events",
+        "International Activities",
+        "IT Services",
+        "Laboratory Clinical Technician",
+        "Legal Compliance Policy",
+        "Library Services Data Information Management",
+        "Pr Marketing Sales Communication",
+        "Project Management Consulting",
+        "Senior Management",
+        "Sports Leisure",
+        "Student Services",
+        "Sustainability",
+        "Web Design Development",
+        "Other"
+      ]
+    },
+    {
+      "Industry Jobs": [
+        "biological biomedical sciences",
+        "biotechnology genetics",
+        "chemistry physics",
+        "environmental earth geosciences",
+        "laboratory technical services",
+        "materials sciences",
+        "materials sciences",
+        "energy",
+        "Other"
+      ]
+    },
+    {
+      "Academic / Faculty": [
+        "Dean (Department Head)",
+        "Science",
+        "Health Sciences",
+        "Medicine",
+        "Fine & Applied Arts ( i.e. Architecture, Theatre)",
+        "Engineering",
+        "Liberal Arts ( i.e. Anthropology, Criminal Justice)",
+        "Business",
+        "Education",
+        "Agriculture",
+        "Communications",
+        "Law And Legal Studies",
+        "Technical Career",
+        "Assistant/Associate Dean",
+        "No Specific Faculty"
+      ]
+    },
+    {
+      "Other": [
+        "No subfields available"
+      ]
+    }
+  ]
+  

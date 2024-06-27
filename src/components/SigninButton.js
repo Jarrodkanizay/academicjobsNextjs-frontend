@@ -29,7 +29,6 @@ const SigninButton = () => {
             userId: session.user.id,
           });
           setUserDetails(response.data);
-          console.log('user profile', response.data);
         } catch (error) {
           console.error('Error fetching user details:', error);
         }

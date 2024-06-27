@@ -1,0 +1,32 @@
+{
+  "USA": {
+      "California": {
+          "cities": ["Los Angeles", "San Francisco", "San Diego"],
+          "universities": ["Stanford University", "University of California, Berkeley", "California Institute of Technology"]
+      },
+      "Texas": {
+          "cities": ["Houston", "Dallas", "Austin"],
+          "universities": ["University of Texas at Austin", "Rice University", "Southern Methodist University"]
+      }
+  },
+  "Canada": {
+      "Ontario": {
+          "cities": ["Toronto", "Ottawa", "Hamilton"],
+          "universities": ["University of Toronto", "Carleton University", "McMaster University"]
+      },
+      "Quebec": {
+          "cities": ["Montreal", "Quebec City", "Laval"],
+          "universities": ["McGill University", "Université de Montréal", "Université Laval"]
+      }
+  },
+  "Australia": {
+      "New South Wales": {
+          "cities": ["Sydney", "Newcastle", "Wollongong"],
+          "universities": ["University of Sydney", "University of Newcastle", "University of Wollongong"]
+      },
+      "Victoria": {
+          "cities": ["Melbourne", "Geelong", "Ballarat"],
+          "universities": ["University of Melbourne", "Deakin University", "Federation University Australia"]
+      }
+  }
+}

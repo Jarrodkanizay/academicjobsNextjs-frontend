@@ -9,6 +9,7 @@ import Autocomplete, { usePlacesWidget } from 'react-google-autocomplete';
 import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
+import JobAlertsForm from '@/components/profile/JobAlertsForm'; // Import the JobAlertsForm component
 
 export default function Page({ p = {}, forceClass = '' }) {
   const router = useRouter();
@@ -27,18 +28,19 @@ export default function Page({ p = {}, forceClass = '' }) {
     return item.category !== 'region';
   });
   filter1 = [...filteredData, { category: 'region', filter: r || 'Global' }];
-  // const { region, setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
-  // let region1
-  // if (region.length > 0 && region != "Global") region1 = region
+  
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
   const [selectedFilters, setSelectedFilters] = useState([]);
-  // useEffect(() => {
-  //   if (p?.filter1) {
-  //     setFilter1(p.filter1)
-  //   }
-  //   if (p?.q) setQ(p?.q)
-  // }, []);
+
+  useEffect(() => {
+    const initialFilters = filter1.map(({ category, filter }) => ({
+      category,
+      filter
+    }));
+    setSelectedFilters(initialFilters);
+  }, []);
+
   const filterType1 = {
     JobType: true,
     ExecutiveJobs: false,
@@ -62,13 +64,9 @@ export default function Page({ p = {}, forceClass = '' }) {
   const [filterTypes, setfilterTypes] = useState(filterType);
   const onEditorStateChange1 = (suggestion) => {};
   const [category, setCategory] = useState('');
-  //const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
   const [filter2, setfilter2] = useState([]);
-  //alert(r)
+  
   useEffect(() => {
-    //alert(category)
-    //setCurrentMiddleCategory('')
-    //setSearchJobQuery({ filter1 })
     setfilterTypes1((p) => ({ ...p, ExecutiveJobs: false }));
     setfilterTypes1((p) => ({ ...p, PositionType: false }));
     setfilterTypes1((p) => ({ ...p, HRJobs: false }));
@@ -101,12 +99,7 @@ export default function Page({ p = {}, forceClass = '' }) {
   useEffect(() => {
     setfilter2(filter1);
   }, [category]);
-  // useEffect(() => {
-  //   console.log("keywordSuggestion21", q);
-  // }, [q]);
-  // useEffect(() => {
-  //   if (region == 'Global') setfilterTypes((p) => ({ ...p, Country: true }));
-  // }, []);
+
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -151,15 +144,17 @@ export default function Page({ p = {}, forceClass = '' }) {
   };
 
   const [isShowFilter, setIsShowFilter] = useState(false);
+  const [isFormVisible, setIsFormVisible] = useState(false); // State for form visibility
+
   const handleCheckboxChange = (filter) => {
-    const isChecked = selectedFilters.includes(filter);
+    const isChecked = selectedFilters.some((item) => item.filter === filter);
     let updatedFilters;
     if (!Array.isArray(searchParams.filter1)) {
       searchParams.filter1 = []; // Initialize as an array if it's not already
     }
     const currentURL = window.location.pathname;
     if (isChecked) {
-      updatedFilters = selectedFilters.filter((item) => item !== filter);
+      updatedFilters = selectedFilters.filter((item) => item.filter !== filter);
       const updatedFilter1 = filter1.filter((f) => f.filter !== filter);
       router.push(
         `${currentURL}?${toURLParams({
@@ -170,7 +165,7 @@ export default function Page({ p = {}, forceClass = '' }) {
         { scroll: false }
       );
     } else {
-      updatedFilters = [...selectedFilters, filter];
+      updatedFilters = [...selectedFilters, { category, filter }];
       router.push(
         `${currentURL}?${toURLParams({
           ...searchParams,
@@ -215,6 +210,13 @@ export default function Page({ p = {}, forceClass = '' }) {
                         types: ['geocode', 'establishment'],
                       }}
                     />
+                    {/* Job alert create button here */}
+                    <button
+                      className="btn bg-amber-500 text-white ml-2"
+                      onClick={() => setIsFormVisible(true)} // Set form visibility to true on button click
+                    >
+                      Create Job Alert
+                    </button>
                   </div>
                   {filter1.length > 0 && (
                     <div className="md:flex md:flex-wrap pb-2 p-2">
@@ -237,7 +239,7 @@ export default function Page({ p = {}, forceClass = '' }) {
                             );
                             setCategory('');
                             setSelectedFilters(
-                              selectedFilters.filter((item) => item !== filter)
+                              selectedFilters.filter((item) => item.filter !== filter)
                             );
                           }}
                         >
@@ -309,13 +311,6 @@ export default function Page({ p = {}, forceClass = '' }) {
               </React.Fragment>
             )
           )}
-          {/* <JobKeywordSearchBlock
-              field="Enter a keyword"
-              customKey="Enter a keyword"
-              label="Enter a keyword"
-              forceClass="mb-6"
-              onChange={onEditorStateChange1}
-            /> */}
         </div>
         {isShowFilter && (
           <>
@@ -329,7 +324,7 @@ export default function Page({ p = {}, forceClass = '' }) {
                     <input
                       type="checkbox"
                       value={filter}
-                      checked={selectedFilters.includes(filter)}
+                      checked={selectedFilters.some((item) => item.filter === filter)}
                       onChange={() => handleCheckboxChange(filter)}
                       className="mr-2"
                     />
@@ -340,6 +335,12 @@ export default function Page({ p = {}, forceClass = '' }) {
           </>
         )}
       </div>
+      {isFormVisible && (
+        <JobAlertsForm
+          filters={[...selectedFilters]} // Include region filter
+          onClose={() => setIsFormVisible(false)}
+        />
+      )} {/* Conditionally render JobAlertsForm with filters */}
     </>
   );
 }

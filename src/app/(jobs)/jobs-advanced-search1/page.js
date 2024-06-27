@@ -8,7 +8,7 @@ export async function generateMetadata({ params, searchParams }) {
 export default function Page({ searchParams }) {
     return (
         <div>
-            <Jobs />
+        <Jobs />
         </div>
     );
 }

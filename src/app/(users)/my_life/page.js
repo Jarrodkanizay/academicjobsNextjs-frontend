@@ -5,7 +5,8 @@ import { useSession } from 'next-auth/react';
 import Profile from './Profile';
 export default function Page() {
   const { data: session } = useSession();
-  console.log("sessssion", session);
+  
+
 
   const { id, image, name, email } = session.user;
 
