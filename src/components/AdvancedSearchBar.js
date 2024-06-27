@@ -64,6 +64,7 @@ export default function Page({ p = {}, forceClass = '' }) {
   const [category, setCategory] = useState('');
   //const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
   const [filter2, setfilter2] = useState([]);
+  //alert(r)
   useEffect(() => {
     //alert(category)
     //setCurrentMiddleCategory('')
@@ -76,7 +77,7 @@ export default function Page({ p = {}, forceClass = '' }) {
     setfilterTypes1((p) => ({ ...p, AcademicPositionType: false }));
     setfilterTypes1((p) => ({ ...p, thirdcategory: false }));
     
-    if (r === 'Global')
+    if (r === 'global')
       setfilterTypes((p) => ({ ...p, Country: true }));
     if (category === 'AcademicPositionType')
       setfilterTypes1((p) => ({ ...p, thirdcategory: true }));

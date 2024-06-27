@@ -112,8 +112,16 @@ export default function Page({ params, searchParams }: any) {
     <>
       {ausCities.includes(Name) ? ausHeader : otherHeader}
       <div className="content-grid flex-col md:gap-2">
-
-        <AdvancedSearchBar />
+        <AdvancedSearchBar
+          p={{
+            filter1: [
+            {
+              category: 'Country',
+              filter: 'Australia',
+            }],
+            l: Name,
+          }}
+        />
 
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
