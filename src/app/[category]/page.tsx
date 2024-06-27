@@ -115,10 +115,11 @@ export default function Page({ params, searchParams }: any) {
         <AdvancedSearchBar
           p={{
             filter1: [
-            {
-              category: 'Country',
-              filter: 'Australia',
-            }],
+              {
+                category: 'Country',
+                filter: 'Australia',
+              },
+            ],
             l: Name,
           }}
         />

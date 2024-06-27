@@ -3,17 +3,16 @@
     "Name": "melbourne",
     "Title": "Academic Jobs in Melbourne",
     "Description": "Search 110 university and higher education jobs in Melbourne. View our academic vacancies and join our talent pool. New academic jobs added daily.",
-    "Keyword": "Academic Jobs Melbourne, Uni jobs Melbourne, Higher education jobs, university jobs" ,
+    "Keyword": "Academic Jobs Melbourne, Uni jobs Melbourne, Higher education jobs, university jobs",
     "content": "Seek university jobs from Melbourne's top institutions, such as University of Melbourne, Monash University, RMIT and more.",
     "image": "/banner-icons/melbourne.png",
     "alt": "melbourne academic jobs"
-
   },
   {
     "Name": "sydney",
     "Title": "Academic jobs in Sydney",
     "Description": "Search 200 university and higher education jobs in Sydney. View our academic vacancies and join our talent pool. New academic jobs added daily.",
-    "Keyword": "Academic Jobs Sydney, Uni jobs Sydney, Higher education jobs, university jobs" ,
+    "Keyword": "Academic Jobs Sydney, Uni jobs Sydney, Higher education jobs, university jobs",
     "image": "/banner-icons/sydney.png",
     "alt": "sydney academic jobs",
     "content": "Seek university jobs from Sydney's top institutions, such as University of Sydney, University of New South Wales, UTS, Macquarie and more."
@@ -72,11 +71,11 @@
   {
     "break1": true,
     "Name": "tasmania",
-    "Title": "Academic Jobs Tasmania",
+    "Title": "Academic & University jobs Tasmania",
     "Description": " On Academic Jobs Tasmania You can filter by discipline, level, type, location, and more. You can also sign up for email alerts to get notified of new opportunities as they arise.  ",
     "Keyword": "Academic Jobs Tasmania",
     "alt": "tasmania academic jobs",
-    "content": "Seek university jobs in Tasmania at Academic Jobs, where we list the best jobs for academics in all of Australia! University of Tasmania campuses span the entirety of Tasmania, from Launceston in the north to Hobart in the south. U Tas offers a diverse range of academic disciplines, from arts and humanities to engineering and technology, to medicine and health sciences. The No.1 job board for academics in Hobart for all your uni jobs requirements, from seeking to recruiting, look no further. In just a few simple steps you can be in the running for your dream position! Find all the best university jobs here…"
+    "content": "Seek university jobs from Tasmania’s top institutions, such as University of Tasmania (UTAS), Australian Maritime College and Jane Franklin hall."
   },
 
   {

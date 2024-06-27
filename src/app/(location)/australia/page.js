@@ -301,9 +301,9 @@ export default async function myPage() {
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/hobart?r=Australia&l=hobart">
+          <Link className="text-center" href="/tasmania?r=Australia&l=tasmania">
             {' '}
-            Hobart
+            Tasmania
           </Link>
         </li>
       </ul>
