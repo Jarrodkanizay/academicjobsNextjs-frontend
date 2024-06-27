@@ -77,7 +77,7 @@ export default function Page({ p = {}, forceClass = '' }) {
     setfilterTypes1((p) => ({ ...p, AcademicPositionType: false }));
     setfilterTypes1((p) => ({ ...p, thirdcategory: false }));
     
-    if (r === 'global')
+    if (r === 'global' || r === 'Global' )
       setfilterTypes((p) => ({ ...p, Country: true }));
     if (category === 'AcademicPositionType')
       setfilterTypes1((p) => ({ ...p, thirdcategory: true }));
