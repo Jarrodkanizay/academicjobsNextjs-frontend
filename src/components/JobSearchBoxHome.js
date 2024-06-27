@@ -114,7 +114,7 @@ export default function JobSearchBox() {
               q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
             } else {
               if (keyWordRef?.current) {
-                q3 = `&q=${keyWordRef?.current.trim()}`
+                q3 = `&q=${keyWordRef?.current}`
               }
             }
             router.push(`/jobs-advanced-search?r=Global&${q3}`);
