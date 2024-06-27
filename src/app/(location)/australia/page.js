@@ -301,7 +301,11 @@ export default async function myPage() {
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/tasmania?r=Australia&l=tasmania">
+          {/* <Link className="text-center" href="/tasmania?r=Australia&l=tasmania"> */}
+          <Link
+            className="text-center"
+            href="/tasmania?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=Tasmania&filter0=%255B%257B%2522category%2522%253A%2522State%2522%252C%2522filter%2522%253A%2522Tasmania%2522%257D%255D"
+          >
             {' '}
             Tasmania
           </Link>
