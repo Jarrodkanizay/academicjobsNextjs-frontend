@@ -106,14 +106,14 @@ export default function JobSearchBox() {
       <div className="w-full flex justify-end">
         <button
           className="text-gray-400 text-base md:pr-6 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l from-green-400 via-green-400 to-sky-300"
-          onClick={(e) => {e
+          onClick={(e) => {
             e.preventDefault();
             //alert(keyWordRef.current)
             let q3 = ""
             if (cfRef.current) {
               q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
             } else {
-              if (keyWordRef?.current?.trim()) {
+              if (keyWordRef?.current) {
                 q3 = `&q=${keyWordRef?.current.trim()}`
               }
             }
