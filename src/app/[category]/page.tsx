@@ -105,7 +105,7 @@ export default function Page({ params, searchParams }: any) {
     'adelaide',
     'canberra',
     'gold coast',
-    'hobart',
+    'tasmania',
   ];
 
   content = (
