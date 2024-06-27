@@ -9,20 +9,26 @@ type JobFilterProps = {
 };
 
 let logos = [
-
   {
     name: 'Bond',
-    url: '/university-logos/aus/bond-university.jpg',
+    image: '/university-logos/aus/bond-university.jpg',
     alt: 'Bond University',
     intro: `Bond University, Australia's first private non-profit university, is renowned for its personalised teaching approach and strong focus on graduate outcomes, set within a vibrant campus on the Gold Coast.`,
     link: '/employers/bond-university/3785',
   },
   {
     name: 'QUT',
-    url: '/university-logos/aus/queensland-university-of-technology.jpg',
+    image: '/university-logos/aus/queensland-university-of-technology.jpg',
     alt: 'Queensland University of Technology',
     intro: `Queensland University of Technology (QUT) is a leading Australian university with a global outlook, renowned for its cutting-edge research and innovative approach to teaching and learning.`,
     link: '/employers/queensland-university-of-technology-qut-/3786',
+  },
+  {
+    name: 'UC',
+    image: '/university-logos/aus/university-of-canberra-uc.png',
+    alt: 'University of Canberra (UC)',
+    intro: `University of Canberra is a dynamic university recognised for its impactful research & practical approach to education. Known for fostering innovation & industry connections, UC equips students with real-world skills and knowledge.`,
+    link: '/employers/university-of-canberra-uc-/3821',
   },
 ];
 
@@ -67,7 +73,7 @@ export default function JobFilter({ dataQty = '> 1' }: JobFilterProps) {
               <div key={index} className={`${index > 0 ? 'mt-16' : ''}`}>
                 <Link href={logo.link}>
                   <Image
-                    src={logo.url}
+                    src={logo.image}
                     alt={logo.intro}
                     width={300}
                     height={250}
