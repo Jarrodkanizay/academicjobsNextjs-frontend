@@ -65,7 +65,7 @@ export default function Page({ p = {}, forceClass = '' }) {
   const [filter2, setfilter2] = useState([]);
   //alert(r)
   useEffect(() => {
-    ///////alert(category)
+    ///////////alert(category)
     //setCurrentMiddleCategory('')
     //setSearchJobQuery({ filter1 })
     setfilterTypes1((p) => ({ ...p, ExecutiveJobs: false }));
