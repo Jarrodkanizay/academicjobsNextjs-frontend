@@ -12,6 +12,13 @@ import { useRouter } from 'next/navigation';
 export default function Page({ p = {}, forceClass = '' }) {
   const router = useRouter();
   const searchParams = loadFromURLParams(useSearchParams());
+
+  let searchParams1={}
+  if (Object.keys(p).length !== 0) {
+    searchParams1 = { ...searchParams,...p }
+  } else {
+    searchParams1 = { ...searchParams }
+  }
   const {
     r = '',
     q = '',
@@ -20,7 +27,8 @@ export default function Page({ p = {}, forceClass = '' }) {
     lat = 0,
     filter0 = [],
     currentMiddleCategory,
-  } = searchParams;
+  } = searchParams1;
+  //alert(r)
   let filter1 = [...filter0];
   const filteredData = filter1.filter((item) => {
     return item.category !== 'region';
