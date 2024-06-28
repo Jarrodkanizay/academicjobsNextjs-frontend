@@ -21,7 +21,7 @@ export default function Page() {
         </div>
         <JobTypeFaces />
         <AdvancedSearchBar
-          forceClass="hidden md:block my-16"
+          forceClass="block"
           type="advancedSearch"
         />
         <section class="jobs_grid job_post_search_container">

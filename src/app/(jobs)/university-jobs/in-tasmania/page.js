@@ -5,27 +5,12 @@ import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 import SearchResults3 from '@/components/SearchResults3';
-import Image from 'next/image';
-
 // import type { Metadata } from 'next';
 
-type MetadataTypes = {
-  Name?: string | undefined;
-  h1?: string | undefined;
-  Title?: string | undefined;
-  Description?: string | undefined;
-  Keyword?: string | undefined;
-  content?: any | undefined;
-};
-
-export async function generateMetadata({ params, searchParams }: any) {
-  // console.log(params)
-  let { category } = params;
-  // console.log(citiesData)
-  // console.log(category);
-  category = category?.replace(/-/g, ' ');
-  // console.log(category);
-
+export async function generateMetadata({ params, searchParams }) {
+  // let { category } = params;
+  // category = category?.replace(/-/g, ' ');
+  let category = 'tasmania';
   const {
     Name = '',
     Title = '',
@@ -34,31 +19,23 @@ export async function generateMetadata({ params, searchParams }: any) {
     content: content1 = '',
     image = '',
   } = citiesData.find((item) => item.Name === category) || {};
-
   return {
     title: Title,
     description: Description,
     keywords: Keyword,
   };
 }
-
 //const Lecturer = () => {
-export default function Page({ params, searchParams }: any) {
+export default function Page({ params, searchParams }) {
   // console.log("````````````````````params````````````````````")
   // console.log(params)
-  let { category } = params;
-  // console.log(citiesData)
+  let category = 'tasmania';
   // console.log(category);
-  category = category?.replace(/-/g, ' ');
-  // console.log(category);
-
   const city = citiesData.find((item) => item.Name === category);
-
   if (!city) {
     console.error('City not found');
     return null; // or return an error component, or handle this situation in another appropriate way
   }
-
   const {
     Name,
     h1,
@@ -69,17 +46,13 @@ export default function Page({ params, searchParams }: any) {
     image: image,
     alt: alt,
   } = city;
-
   let ausHeader, otherHeader, content;
-
   ausHeader = (
     <div className="w-full relative">
-      <Image
+      <img
         src={image}
         alt={alt}
         className="w-full h-full object-cover object-center absolute top-0 left-0"
-        width={1920}
-        height={1080}
       />
       <div className="hero-content mx-auto items-start justify-start py-12 relative z-10">
         <h1 className="md:text-5xl font-bold md:text-left text-white pb-4 m-0">
@@ -89,7 +62,6 @@ export default function Page({ params, searchParams }: any) {
       </div>
     </div>
   );
-
   otherHeader = (
     <div className="content-grid flex-col md:gap-2">
       <div className="bg-slate-200 full-width">
@@ -102,7 +74,6 @@ export default function Page({ params, searchParams }: any) {
       </div>
     </div>
   );
-
   const ausCities = [
     'melbourne',
     'sydney',
@@ -113,23 +84,22 @@ export default function Page({ params, searchParams }: any) {
     'gold coast',
     'tasmania',
   ];
-
   content = (
     <>
       {ausCities.includes(Name) ? ausHeader : otherHeader}
       <div className="content-grid flex-col md:gap-2">
         <AdvancedSearchBar
           p={{
-            filter1: [
+            r:'Australia',
+            filter0: [
               {
                 category: 'Country',
                 filter: 'Australia',
               },
+              { category: 'State', filter: 'Tasmania' },
             ],
-            l: Name,
           }}
         />
-
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
             <div className="filters_content">
@@ -138,7 +108,18 @@ export default function Page({ params, searchParams }: any) {
           </div>
           <div className="listings_panel">
             <div className="listings_content">
-              <SearchResults3 />
+              <SearchResults3
+                p={{
+                  r: 'Australia',
+                  filter0: [
+                    {
+                      category: 'Country',
+                      filter: 'Australia',
+                    },
+                    { category: 'State', filter: 'Tasmania' },
+                  ],
+                }}
+              />
             </div>
           </div>
         </section>
