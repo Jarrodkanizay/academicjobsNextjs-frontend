@@ -7,12 +7,10 @@ import SearchResults4 from '@/components/SearchResults4';
 import { url } from 'inspector';
 export const metadata: Metadata = {
   title: {
-    absolute: 'Guide to Research Assistant Jobs: Earn up to 85k!',
+    absolute: 'How to become a research assistant?',
   },
-  description:
-    'Unlock top secrets to landing research assistant jobs! Get insider tips to boost your career success. Click here to learn more!',
-  keywords:
-    'research assistant, research assistant salary, university jobs, research assistant jobs',
+  description: `A guide to become a research assistant and earn up to $95k! 1. Complete a Bachelor's Degree · 2. Consider Advanced Degrees · 3. Gaining Experience`,
+  keywords: 'Research assistant, Research assistant salary',
 };
 export default function myPage() {
   const jsonLd = {
@@ -24,7 +22,7 @@ export default function myPage() {
       'https://www.academicjobs.com/blogs/how-to-excel-as-a-research-assistant-in-australia/research-assistant.jpg',
     ],
     datePublished: '2024-06-17T19:00:00+10:00',
-    dateModified: '2024-06-17T18:05:00+10:00',
+    dateModified: '2024-06-28T18:05:00+10:00',
     author: [
       {
         '@type': 'Person',
