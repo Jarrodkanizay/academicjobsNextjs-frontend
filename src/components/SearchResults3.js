@@ -16,7 +16,7 @@ import { useStore } from '@/lib/store/store';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
-export default function SearchResults2({
+export default function SearchResults2({p={},
   filterOff = false,
   searchMessage = 'Jobs Found',
 }) {
@@ -25,7 +25,13 @@ export default function SearchResults2({
   const searchParams = loadFromURLParams(useSearchParams())
 
   const [page, setPage] = useState(0);
-  const { r = "", q = "", l = "", lon = 0, lat = 0, filter0 = [], currentMiddleCategory, category } = searchParams
+  let searchParams1 = {}
+  if (Object.keys(p).length !== 0) {
+    searchParams1 = { ...searchParams, ...p }
+  } else {
+    searchParams1 = { ...searchParams }
+  }
+  const { r = "", q = "", l = "", lon = 0, lat = 0, filter0 = [], currentMiddleCategory, category } = searchParams1
   let filter1 = [...filter0]
   const filteredData = filter1.filter(item => {
     return item.category !== "region"

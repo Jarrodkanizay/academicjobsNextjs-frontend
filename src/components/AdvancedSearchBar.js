@@ -9,10 +9,16 @@ import Autocomplete, { usePlacesWidget } from 'react-google-autocomplete';
 import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
-
 export default function Page({ p = {}, forceClass = '' }) {
   const router = useRouter();
   const searchParams = loadFromURLParams(useSearchParams());
+
+  let searchParams1={}
+  if (Object.keys(p).length !== 0) {
+    searchParams1 = { ...searchParams,...p }
+  } else {
+    searchParams1 = { ...searchParams }
+  }
   const {
     r = '',
     q = '',
@@ -21,7 +27,8 @@ export default function Page({ p = {}, forceClass = '' }) {
     lat = 0,
     filter0 = [],
     currentMiddleCategory,
-  } = searchParams;
+  } = searchParams1;
+  //alert(r)
   let filter1 = [...filter0];
   const filteredData = filter1.filter((item) => {
     return item.category !== 'region';
@@ -60,13 +67,13 @@ export default function Page({ p = {}, forceClass = '' }) {
   };
   const [filterTypes1, setfilterTypes1] = useState(filterType1);
   const [filterTypes, setfilterTypes] = useState(filterType);
-  const onEditorStateChange1 = (suggestion) => {};
+  const onEditorStateChange1 = (suggestion) => { };
   const [category, setCategory] = useState('');
   //const [currentMiddleCategory, setCurrentMiddleCategory] = useState('');
   const [filter2, setfilter2] = useState([]);
   //alert(r)
   useEffect(() => {
-    //alert(category)
+    ///////////alert(category)
     //setCurrentMiddleCategory('')
     //setSearchJobQuery({ filter1 })
     setfilterTypes1((p) => ({ ...p, ExecutiveJobs: false }));
@@ -76,8 +83,7 @@ export default function Page({ p = {}, forceClass = '' }) {
     setfilterTypes1((p) => ({ ...p, FacultyDepartmentJobs: false }));
     setfilterTypes1((p) => ({ ...p, AcademicPositionType: false }));
     setfilterTypes1((p) => ({ ...p, thirdcategory: false }));
-    
-    if (r === 'global')
+    if (r === 'global' || r === 'Global')
       setfilterTypes((p) => ({ ...p, Country: true }));
     if (category === 'AcademicPositionType')
       setfilterTypes1((p) => ({ ...p, thirdcategory: true }));
@@ -97,7 +103,6 @@ export default function Page({ p = {}, forceClass = '' }) {
       setfilterTypes1((p) => ({ ...p, PositionType: true }));
     }
   }, [JSON.stringify(filter1)]);
-
   useEffect(() => {
     setfilter2(filter1);
   }, [category]);
@@ -131,7 +136,6 @@ export default function Page({ p = {}, forceClass = '' }) {
     },
     enabled: category !== '',
   });
-
   const filterValues9 = {
     Country: 'Country',
     State: 'State',
@@ -149,7 +153,6 @@ export default function Page({ p = {}, forceClass = '' }) {
     OnsiteRemote: 'Onsite/Remote',
     thirdcategory: 'thirdcategory',
   };
-
   const [isShowFilter, setIsShowFilter] = useState(false);
   const handleCheckboxChange = (filter) => {
     const isChecked = selectedFilters.includes(filter);
@@ -182,7 +185,6 @@ export default function Page({ p = {}, forceClass = '' }) {
     }
     setSelectedFilters(updatedFilters);
   };
-
   return (
     <>
       <div
@@ -256,11 +258,10 @@ export default function Page({ p = {}, forceClass = '' }) {
             <React.Fragment key={i}>
               <button
                 key={i}
-                className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${
-                  category === filterType
+                className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${category === filterType
                     ? 'bg-amber-500 text-white border-amber-500'
                     : 'bg-white border-gray-500'
-                }
+                  }
                   ${showYN ? 'block' : 'hidden'}`}
                 onClick={() => {
                   if (category === filterType) {
@@ -287,11 +288,10 @@ export default function Page({ p = {}, forceClass = '' }) {
               <React.Fragment key={i}>
                 <button
                   key={i}
-                  className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${
-                    category === filterType
+                  className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${category === filterType
                       ? 'bg-amber-500 text-white border-amber-500'
                       : 'bg-white border-gray-500'
-                  }
+                    }
                   ${showYN ? 'block' : 'hidden'}`}
                   onClick={() => {
                     if (category === filterType) {

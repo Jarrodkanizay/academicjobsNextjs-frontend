@@ -303,13 +303,13 @@ export default async function myPage() {
         <li>
           <Link
             className="text-center"
-            href='/tasmania?r=Australia&filter0=[{"category":"State","filter":"Tasmania"}]'
+            href='/university-jobs/in-tasmania'
           >
             Tasmania
           </Link>
         </li>
       </ul>
-
+      {/* href='/tasmania?r=Australia&filter0=[{"category":"State","filter":"Tasmania"}]' */}
       {/* <a href="/the-academic-rankings">
         <img
           width={200}
