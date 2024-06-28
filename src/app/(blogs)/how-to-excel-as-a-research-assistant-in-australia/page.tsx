@@ -26,7 +26,7 @@ export default function myPage() {
     author: [
       {
         '@type': 'Person',
-        name: 'Raymond',
+        name: 'Raymond Mulyawan',
         url: 'https://www.academicjobs.com/about/team/raymond-mulyawan',
       },
     ],

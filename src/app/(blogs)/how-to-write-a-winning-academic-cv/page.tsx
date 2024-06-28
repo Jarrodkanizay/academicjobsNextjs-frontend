@@ -56,8 +56,8 @@ export default function myPage() {
       url: 'https://www.academicjobs.com/about/team/raymond-mulyawan',
     },
     publisher: {
-      '@type': 'Organization',
-      name: 'Academic Jobs',
+      '@type': 'Person',
+      name: 'Raymond Mulyawan',
       logo: {
         '@type': 'ImageObject',
         url: '',

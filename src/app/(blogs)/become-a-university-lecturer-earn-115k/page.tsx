@@ -8,7 +8,7 @@ import { url } from 'inspector';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Become a University Lecturer in Australia: Earn $115k!', 
+    absolute: 'Become a University Lecturer in Australia: Earn $115k!',
   },
   description:
     'How to become a university lecturer in Australia: Earn up to 150k. 1. Complete a bachelor degree 2. Pursue postgraduate studies 3. Gain teaching experience.',
@@ -32,7 +32,7 @@ export default function myPage() {
     author: [
       {
         '@type': 'Person',
-        name: 'Academic Jobs',
+        name: 'Raymond Mulyawan',
         url: 'https://www.academicjobs.com/about/team/raymond-mulyawan',
       },
     ],
