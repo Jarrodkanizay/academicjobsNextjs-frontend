@@ -5,6 +5,8 @@ import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 import SearchResults3 from '@/components/SearchResults3';
+import Image from 'next/image';
+
 // import type { Metadata } from 'next';
 
 type MetadataTypes = {
@@ -72,10 +74,12 @@ export default function Page({ params, searchParams }: any) {
 
   ausHeader = (
     <div className="w-full relative">
-      <img
+      <Image
         src={image}
         alt={alt}
         className="w-full h-full object-cover object-center absolute top-0 left-0"
+        width={1920}
+        height={1080}
       />
       <div className="hero-content mx-auto items-start justify-start py-12 relative z-10">
         <h1 className="md:text-5xl font-bold md:text-left text-white pb-4 m-0">
