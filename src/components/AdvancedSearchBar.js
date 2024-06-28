@@ -33,7 +33,12 @@ export default function Page({ p = {}, forceClass = '' }) {
   const filteredData = filter1.filter((item) => {
     return item.category !== 'region';
   });
-  filter1 = [...filteredData, { category: 'region', filter: r || 'Global' }];
+  if (r === 'global' || r === 'Global' || r == null || r == '') {
+    filter1 = [...filteredData];
+  } else {
+    filter1 = [...filteredData, { category: 'region', filter: r || 'Global' }];
+  }
+  
   // const { region, setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
   // let region1
   // if (region.length > 0 && region != "Global") region1 = region
