@@ -8,31 +8,33 @@ import Accordion from '@/components/Accordion';
 
 export const metadata: Metadata = {
   title: {
-    absolute: '',
+    absolute: 'Top 10 Job Interview Questions and Answers',
   },
-  description: '',
-  keywords: '',
+  description:
+    'Ace your interview with these top 10 job interview questions and expert tips to answer. Learn how to impress and land your dream academic position today!',
+  keywords:
+    'Job interview, Academic Job Interview, Job interview questions and answers',
 };
 
 const tableOfContents = [
   { anchor: 'Preparation for Interview' },
   { anchor: 'Common Interview Questions and Answers' },
-  { anchor: '1. Tell me about yourself' },
-  { anchor: '2. Why should we hire you' },
-  { anchor: '3. What interdisciplinary courses can you teach' },
-  { anchor: '4. How do you approach your research' },
-  { anchor: '5. What plans do you have for your research' },
-  { anchor: '6. Describe your experience in teaching' },
-  { anchor: '7. Have you instructed college courses previously' },
-  { anchor: '8. What are your current research interests' },
-  { anchor: '9. Describe your teaching philosophy' },
-  { anchor: '10. How would you mentor graduate students' },
+  // { anchor: '1. Tell me about yourself' },
+  // { anchor: '2. Why should we hire you' },
+  // { anchor: '3. What interdisciplinary courses can you teach' },
+  // { anchor: '4. How do you approach your research' },
+  // { anchor: '5. What plans do you have for your research' },
+  // { anchor: '6. Describe your experience in teaching' },
+  // { anchor: '7. Have you instructed college courses previously' },
+  // { anchor: '8. What are your current research interests' },
+  // { anchor: '9. Describe your teaching philosophy' },
+  // { anchor: '10. How would you mentor graduate students' },
   { anchor: 'Academic Interview Presentation Tips' },
 ];
 
 const generateTableOfContents = (
   <>
-    <h2 className="text-2xl">Table of Contents</h2>
+    <h2 className="text-2xl mb-4">Table of Contents</h2>
     <ul className="list-none p-0">
       {tableOfContents.map((item, index) => (
         <a href={`#${item.anchor}`} key={index}>
@@ -173,7 +175,7 @@ export default function myPage() {
 
                   <Accordion
                     question="1. Tell me about yourself?"
-                    anchor={tableOfContents[2].anchor}
+                    // anchor={tableOfContents[2].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Tailor your response to the specific
@@ -197,7 +199,7 @@ export default function myPage() {
 
                   <Accordion
                     question="2. Why should we hire you?"
-                    anchor={tableOfContents[3].anchor}
+                    // anchor={tableOfContents[3].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Craft a concise narrative that
@@ -220,7 +222,7 @@ export default function myPage() {
 
                   <Accordion
                     question="3. What interdisciplinary courses can you teach?"
-                    anchor={tableOfContents[4].anchor}
+                    // anchor={tableOfContents[4].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Highlight your flexibility and the
@@ -242,7 +244,7 @@ export default function myPage() {
 
                   <Accordion
                     question="4. How do you approach your research?"
-                    anchor={tableOfContents[5].anchor}
+                    // anchor={tableOfContents[5].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Share your future research goals and
@@ -263,7 +265,7 @@ export default function myPage() {
 
                   <Accordion
                     question="5. What plans do you have for your research?"
-                    anchor={tableOfContents[6].anchor}
+                    // anchor={tableOfContents[6].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Share your future research goals and
@@ -284,7 +286,7 @@ export default function myPage() {
 
                   <Accordion
                     question="6. Describe your experience in teaching?"
-                    anchor={tableOfContents[7].anchor}
+                    // anchor={tableOfContents[7].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Provide specific examples of your
@@ -305,7 +307,7 @@ export default function myPage() {
 
                   <Accordion
                     question="7. Have you instructed college courses previously?"
-                    anchor={tableOfContents[8].anchor}
+                    // anchor={tableOfContents[8].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Highlight your direct teaching
@@ -326,7 +328,7 @@ export default function myPage() {
 
                   <Accordion
                     question="8. What are your current research interests?"
-                    anchor={tableOfContents[9].anchor}
+                    // anchor={tableOfContents[9].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Align your research interests with
@@ -347,7 +349,7 @@ export default function myPage() {
 
                   <Accordion
                     question="9. Describe your teaching philosophy?"
-                    anchor={tableOfContents[10].anchor}
+                    // anchor={tableOfContents[10].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Articulate a clear and coherent
@@ -368,7 +370,7 @@ export default function myPage() {
 
                   <Accordion
                     question="10. How would you mentor graduate students?"
-                    anchor={tableOfContents[11].anchor}
+                    anchor={tableOfContents[2].anchor}
                   >
                     <p>
                       <strong>Tip:</strong> Discuss your mentoring style and how
