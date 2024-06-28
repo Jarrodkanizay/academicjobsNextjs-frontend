@@ -5,7 +5,6 @@ import HeroCard from '@/components/HeroCard';
 import type { Metadata } from 'next';
 import SearchResults4 from '@/components/SearchResults4';
 
-
 export const metadata: Metadata = {
   title: {
     absolute: 'Postdoc Success: How to Thrive in Your Research Role',
@@ -22,12 +21,11 @@ export default function myPage() {
     '@type': 'NewsArticle',
     headline: 'Postdoc Success: How to Thrive in Your Research Role',
     image: [
-      'https://www.academicjobs.com/blogs/postdoctoral-success-how-to-thrive-in-your-research-role/authentic-book-club-scene.jpg',
       'https://www.academicjobs.com/blogs/postdoctoral-success-how-to-thrive-in-your-research-role/postdoc-banner.png',
-      'https://www.academicjobs.com/blogs/postdoctoral-success-how-to-thrive-in-your-research-role/postdoc-funding.png',
+      'https://www.academicjobs.com/blogs/postdoctoral-success-how-to-thrive-in-your-research-role/authentic-book-club-scene.jpg',
     ],
-    datePublished: '2024-06-19T19:00:00+10:00',
-    dateModified: '2024-06-19T18:05:00+10:00',
+    datePublished: '2024-06-19',
+    dateModified: '2024-06-28',
     author: [
       {
         '@type': 'Person',

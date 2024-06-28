@@ -21,8 +21,8 @@ export default function myPage() {
       'https://www.academicjobs.com/blogs/how-to-excel-as-a-research-assistant-in-australia/how-to-excel-as-a-research-assistant-in-australia.png',
       'https://www.academicjobs.com/blogs/how-to-excel-as-a-research-assistant-in-australia/research-assistant.jpg',
     ],
-    datePublished: '2024-06-17T19:00:00+10:00',
-    dateModified: '2024-06-28T18:05:00+10:00',
+    datePublished: '2024-06-17',
+    dateModified: '2024-06-28',
     author: [
       {
         '@type': 'Person',
