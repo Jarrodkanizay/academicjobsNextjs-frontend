@@ -2,8 +2,11 @@ import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import fieldsData from '@/data/jobCatgeories.json';
 import locationData from '@/data/locationData.json';
+import { useSession } from "next-auth/react";
+import { BaseApi } from '@/lib/store/Base';
 
 const JobAlertForm = ({ filters, alert, onClose }) => {
+  const { data: session } = useSession();
   const [mainField, setMainField] = useState('');
   const [subFields, setSubFields] = useState([]);
   const [selectedSubFields, setSelectedSubFields] = useState([]);
@@ -11,22 +14,22 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
   const [selectedStates, setSelectedStates] = useState([]);
   const [selectedInstitutions, setSelectedInstitutions] = useState([]);
   const [salaryRange, setSalaryRange] = useState(null);
-  const [remote, setRemote] = useState(null);
+  // const [remote, setRemote] = useState(null);
   const [frequency, setFrequency] = useState(null);
-  const [employmentType, setEmploymentType] = useState(null);
+  // const [employmentType, setEmploymentType] = useState(null);
   const [showSubFieldDropdown, setShowSubFieldDropdown] = useState(false);
 
   useEffect(() => {
     if (alert) {
       setMainField(alert.mainField);
-      setSubFields(alert.subFields);
-      setSelectedCountry(alert.country);
-      setSelectedStates(alert.states || []);
+      setSelectedSubFields(JSON.parse(alert.subFields || '[]').map(subField => ({ value: subField, label: subField })));
+      setSelectedCountry({ value: alert.country, label: alert.country });
+      setSelectedStates(JSON.parse(alert.states || '[]').map(state => ({ value: state, label: state })));
       setFrequency(alert.frequency || null);
       setSalaryRange(alert.salaryRange || null);
-      setRemote(alert.remote || null);
-      setSelectedInstitutions(alert.institutions || []);
-      setEmploymentType(alert.employmentType || null);
+      // setRemote(alert.remote || null);
+      setSelectedInstitutions(JSON.parse(alert.institutions || '[]').map(institution => ({ value: institution, label: institution })));
+      // setEmploymentType(alert.employmentType || null);
     }
   }, [alert]);
 
@@ -40,9 +43,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
       const uniqueStates = [];
       const uniqueInstitutions = [];
       filters.forEach(({ category, filter }) => {
-        if (category === 'region') {
-          setSelectedCountry({ value: filter, label: filter });
-        } else if (category === 'Country') {
+        if (category === 'region' || category === 'Country') {
           setSelectedCountry({ value: filter, label: filter });
         } else if (category === 'State') {
           if (!uniqueStates.find(state => state.value === filter)) {
@@ -54,18 +55,16 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
           }
         } else if (category === 'JobType') {
           setMainField(filter);
-        } else if (category === 'HRJobs' || category === 'AdministrationSupportJobs' || category === 'FacultyDepartmentJobs' || category === 'ExecutiveJobs' || category === 'PositionType') {
+        } else if (['HRJobs', 'AdministrationSupportJobs', 'FacultyDepartmentJobs', 'ExecutiveJobs', 'PositionType'].includes(category)) {
           setSelectedSubFields(prev => {
-            if (!prev.includes(filter)) {
-              return [...prev, filter];
+            if (!prev.some(item => item.value === filter)) {
+              return [...prev, { value: filter, label: filter }];
             }
             return prev;
           });
         } else if (category === 'Salary Range') {
           setSalaryRange(filter);
-        } else if (category === 'Remote') {
-          setRemote(filter);
-        }
+        } 
       });
       setSelectedStates(uniqueStates);
       setSelectedInstitutions(uniqueInstitutions);
@@ -74,7 +73,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
 
   const handleSubFieldChange = (subField) => {
     setSelectedSubFields(prev => (
-      prev.includes(subField) ? prev.filter(item => item !== subField) : [...prev, subField]
+      prev.some(item => item.value === subField.value) ? prev.filter(item => item.value !== subField.value) : [...prev, subField]
     ));
   };
 
@@ -93,22 +92,41 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
     setSelectedInstitutions(institutions || []);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+  
+    if (!session || !session.user || !session.user.id) {
+      window.location.href = '/auth/signin';
+      return;
+    }
+  
     const formData = {
       mainField,
-      subFields: selectedSubFields,
+      subFields: JSON.stringify(selectedSubFields.map(item => item.value)),
       country: selectedCountry ? selectedCountry.value : null,
-      states: selectedStates.map(state => state.value),
-      institutions: selectedInstitutions.map(institution => institution.value),
+      states: JSON.stringify(selectedStates.map(state => state.value)),
+      institutions: JSON.stringify(selectedInstitutions.map(institution => institution.value)),
       frequency,
       salaryRange,
-      remote,
-      employmentType
+      userId: session.user.id
     };
-    console.log('Form Data:', formData);
+  
+    try {
+      if (alert) {
+        // Update existing job alert
+        const response = await BaseApi.put(`/updateJobAlert/${alert.id}`, formData);
+        console.log('Success:', response.data);
+      } else {
+        // Create new job alert
+        const response = await BaseApi.post('/createJobAlert', formData);
+        console.log('Success:', response.data);
+      }
+      onClose();
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
-
+  
   const getStateOptions = () => {
     if (selectedCountry) {
       return Object.keys(locationData[selectedCountry.value] || {}).map(state => ({ value: state, label: state }));
@@ -120,7 +138,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
     if (selectedCountry && selectedStates.length > 0) {
       let institutions = [];
       selectedStates.forEach(state => {
-        const stateData = locationData[selectedCountry.value][state.value];
+        const stateData = locationData[selectedCountry.value]?.[state.value];
         if (stateData && stateData.universities) {
           institutions = institutions.concat(stateData.universities.map(university => ({ value: university, label: university })));
         }
@@ -139,7 +157,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
         >
           &times;
         </button>
-        <h2 className="text-2xl font-semibold mb-4">Edit job alert</h2>
+        <h3 className="text-2xl font-semibold mb-4">{alert ? 'Edit job alert' : 'Create job alert'}</h3>
         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="mb-4">
             <label htmlFor="country" className="block text-sm font-medium text-gray-700">Country</label>
@@ -191,7 +209,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
             <label htmlFor="subField" className="block text-sm font-medium text-gray-700">Subfields</label>
             <div className="mt-1 p-2 block w-full border border-gray-300 rounded-md cursor-pointer"
               onClick={() => setShowSubFieldDropdown(!showSubFieldDropdown)}>
-              {selectedSubFields.length > 0 ? selectedSubFields.join(', ') : 'Select subfields'}
+              {selectedSubFields.length > 0 ? selectedSubFields.map(item => item.label).join(', ') : 'Select subfields'}
             </div>
             {showSubFieldDropdown && (
               <div className="absolute z-10 mt-1 w-full bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-y-auto">
@@ -199,10 +217,10 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
                   <div
                     key={index}
                     className="px-4 py-2 cursor-pointer flex justify-between items-center hover:bg-gray-100"
-                    onClick={() => handleSubFieldChange(subField)}
+                    onClick={() => handleSubFieldChange({ value: subField, label: subField })}
                   >
                     <span>{subField}</span>
-                    {selectedSubFields.includes(subField) && <span>&#10003;</span>}
+                    {selectedSubFields.some(item => item.value === subField) && <span>&#10003;</span>}
                   </div>
                 ))}
               </div>
@@ -226,7 +244,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
               <option value="$200,000 and up">$200,000 and up</option>
             </select>
           </div>
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label htmlFor="remote" className="block text-sm font-medium text-gray-700">Remote</label>
             <select
               id="remote"
@@ -239,7 +257,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
               <option value="Onsite">Onsite</option>
               <option value="Hybrid">Hybrid</option>
             </select>
-          </div>
+          </div> */}
           <div className="mb-4">
             <label htmlFor="frequency" className="block text-sm font-medium text-gray-700">Select Frequency</label>
             <select
@@ -248,13 +266,12 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
               onChange={(e) => setFrequency(e.target.value)}
               className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
             >
-              <option value="">Select Frequency</option>
+              <option value="3Days">Every 3 days</option>
               <option value="Weekly">Weekly</option>
               <option value="Fortnightly">Fortnightly</option>
-              <option value="Monthly">Monthly</option>
             </select>
           </div>
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label htmlFor="employmentType" className="block text-sm font-medium text-gray-700">Employment Type</label>
             <select
               id="employmentType"
@@ -262,14 +279,17 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
               onChange={(e) => setEmploymentType(e.target.value)}
               className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
             >
-              <option value="">Select Employment Type</option>
               <option value="Full Time">Full Time</option>
+              <option value="Part time">Part Time</option>
               <option value="Sessional">Sessional</option>
+              <option value="Contractor">Contractor</option>
+              <option value="Others">Others</option>
             </select>
-          </div>
+          </div> */}
           <div className="col-span-1 md:col-span-2">
-            <button type="submit" className="w-full py-2 px-4 bg-blue-500 text-white rounded-md hover:bg-blue-600">
-              Save job alert
+            <button type="submit" className="mx-auto block text-center py-2 px-4 bg-amber-500 text-white rounded-md hover:bg-gray-600">
+            Save job alert
+
             </button>
           </div>
         </form>

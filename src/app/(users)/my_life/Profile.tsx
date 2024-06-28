@@ -164,36 +164,6 @@ export default function Profile({
 
 
 
-  const alerts = [
-    {
-      title: "Job alert 1",
-      searchQuery: "research unit",
-      jobType: "Management / Leadership",
-      region: "Any",
-      field: "Systems Engineering",
-      language: "English",
-      frequency: "Daily",
-      remoteJobs: true,
-      createdDaysAgo: 2,
-      viewJobsLink: "#",
-      editJobAlertLink: "#",
-      removeJobAlertLink: "#"
-    },
-    {
-      title: "Job alert 2",
-      searchQuery: "",
-      jobType: "Any",
-      region: "Morocco",
-      field: "Biology",
-      language: "English",
-      frequency: "Weekly",
-      remoteJobs: true,
-      createdDaysAgo: 2,
-      viewJobsLink: "#",
-      editJobAlertLink: "#",
-      removeJobAlertLink: "#"
-    }
-  ];
 
   return (
     <>
@@ -340,7 +310,7 @@ export default function Profile({
         // Render content for Jobs For You
         <div className='mt-8'>
           <h2 className="md:hidden block">Job Alerts</h2>
-          <JobAlerts alerts={alerts}/>
+          <JobAlerts />
         </div>
       )}
       {selectedCard === 'Talent Pool' && (

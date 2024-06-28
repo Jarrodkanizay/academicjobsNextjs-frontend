@@ -198,7 +198,7 @@ export default function Page({ p = {}, forceClass = '' }) {
             <div className="max-w-screen-xl">
               <div className={` py-4`}>
                 <div className="lg:max-w-screen-lg mx-auto">
-                  <div className="join mx-auto w-full shadow-xl flex flex-col md:flex-row">
+                  <div className="join mx-auto w-full flex flex-col md:flex-row">
                     <Autocomplete
                       className="input input-bordered join-item w-full md:text-left text-center rounded-xl"
                       style={{ width: '100%' }}
@@ -222,7 +222,7 @@ export default function Page({ p = {}, forceClass = '' }) {
                     />
                     {/* Job alert create button here */}
                     <button
-                      className="btn bg-amber-500 text-white ml-2"
+                      className="btn bg-amber-500 text-white mt-4 md:ml-2 md:mt-0"
                       onClick={() => setIsFormVisible(true)} // Set form visibility to true on button click
                     >
                       Create Job Alert
