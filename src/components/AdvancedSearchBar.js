@@ -265,9 +265,15 @@ export default function Page({ p = {}, forceClass = '' }) {
                 key={i}
                 className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${category === filterType
                     ? 'bg-amber-500 text-white border-amber-500'
-                    : 'bg-white border-gray-500'
+                    : ' border-gray-500'
                   }
-                  ${showYN ? 'block' : 'hidden'}`}
+                  ${showYN ? 'block' : 'hidden'}
+                  ${filterType === 'JobType'
+                  ? 'bg-[#f4a10c]  md:w-auto text-white  animate-pulse font-bold shadow-md '
+                  : ' border-gray-500'
+                  }
+                  
+                  `}
                 onClick={() => {
                   if (category === filterType) {
                     setIsShowFilter((prev) => !prev);
