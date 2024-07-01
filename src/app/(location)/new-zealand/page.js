@@ -217,35 +217,37 @@ export default function Page() {
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li>
-              <Link href="/employers/massey-university/3810"> Massey </Link>
+              <Link href="/employers/massey-university/3810">Massey</Link>
             </li>
             <li>
               <Link href="/employers/auckland-university-of-technology/3804">
-                {' '}
                 AUT
               </Link>
             </li>
             <li>
-              <Link href="/employers/the-university-of-auckland/3809">UOA</Link>
+              <Link href="/employers/the-university-of-auckland/3809">
+                Auckland
+              </Link>
             </li>
             <li>
-              <Link href="/employers/waikato-university/3806"> UOW</Link>
+              <Link href="/employers/waikato-university/3806">Waikato</Link>
             </li>
           </ul>
           <li>
             <Link href="/employers/victoria-university-of-wellington/3807">
-              {' '}
-              VUW{' '}
+              VUW
             </Link>
           </li>
           <li>
-            <Link href="/employers/university-of-otago/3805"> UOO</Link>
+            <Link href="/employers/university-of-otago/3805">Otago</Link>
           </li>
           <li>
-            <Link href="/employers/lincoln-university/3808">LU</Link>
+            <Link href="/employers/lincoln-university/3808">Lincoln</Link>
           </li>
           <li>
-            <Link href="/employers/university-of-canterbury/3811"> UOC</Link>
+            <Link href="/employers/university-of-canterbury/3811">
+              Canterbury
+            </Link>
           </li>
         </ul>
       </div>
