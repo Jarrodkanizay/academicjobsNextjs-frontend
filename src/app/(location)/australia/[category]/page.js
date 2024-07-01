@@ -20,13 +20,13 @@ export async function generateMetadata({ params, searchParams }) {
     Description = '',
     Keyword = '',
     content: content1 = '',
-    Image = ''
+    Image = '',
   } = regionData.find((item) => item.Name === category) || {};
   return {
     title: Title,
     description: Description,
     keywords: Keyword,
-    image: Image
+    image: Image,
   };
 }
 
@@ -45,7 +45,7 @@ export default function Page({ params, searchParams }) {
   // console.log(params);
   let { category } = params;
   // console.log(regionData);
-  console.log("category", category);
+  console.log('category', category);
   category = category?.replace(/-/g, ' ');
   // console.log(category);
   let {
@@ -56,25 +56,25 @@ export default function Page({ params, searchParams }) {
     content: content1 = '',
     category2 = '',
     filter2 = '',
-    Image = ''
+    Image = '',
   } = regionData.find((item) => item.Name === category) || {};
   console.log(
     '-------------------------------------------------------------------'
   );
   console.log(category2, filter2);
   console.log(Name, category);
-  let filter1 =[
+  let filter1 = [
     {
       category: 'Country',
       filter: 'Australia',
     },
-  ]
-  if (category2 !='' && filter2 !="")  {
+  ];
+  if (category2 != '' && filter2 != '') {
     Name = '';
     filter1.push({
       category: category2,
       filter: filter2,
-    })
+    });
   }
   const paras = content1.split('\n');
   let content;
@@ -84,13 +84,16 @@ export default function Page({ params, searchParams }) {
   //console.log(company_description)
   content = (
     <>
-      <div className="flex flex-col md:flex-row items-center text-white px-6 md:px-12 lg:px-24 py-12 w-full custom-gradient-pages relative" >
-
-
+      <div className="flex flex-col md:flex-row items-center text-white px-6 md:px-12 lg:px-24 py-12 w-full custom-gradient-pages relative">
         <div className="ml-[15%] relative z-10 md:w-1/2 text-center md:text-left mb-6 md:mb-0">
-          <h1 className="text-4xl md:text-5xl font-medium mb-6 text-[#fcecab]" style={{ letterSpacing: '0.3em' }}>
+          <h1
+            className="text-4xl md:text-5xl font-medium mb-6 text-[#fcecab]"
+            style={{ letterSpacing: '0.3em' }}
+          >
             {titleParts.map((part, index) => (
-              <span key={index} className="block">{part}</span>
+              <span key={index} className="block">
+                {part}
+              </span>
             ))}
           </h1>
         </div>
@@ -101,15 +104,20 @@ export default function Page({ params, searchParams }) {
                 </p>
               ))}
         </div> */}
-        <div className="absolute inset-0 z-0 bottom-0 left-0 flex justify-center w-full h-full" style={{ transform: 'translateX(25%)' }}>
-          <img src={Image} alt="Description of image" className="h-full object-cover" style={{ width: 'auto' }} />
+        <div
+          className="absolute inset-0 z-0 bottom-0 left-0 flex justify-center w-full h-full"
+          style={{ transform: 'translateX(25%)' }}
+        >
+          <img
+            src={Image}
+            alt="Description of image"
+            className="h-full object-cover"
+            style={{ width: 'auto' }}
+          />
         </div>
       </div>
 
-
       <main className="content-grid flex-col md:gap-2">
-
-
         <AdvancedSearchBar />
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
@@ -135,7 +143,8 @@ export default function Page({ params, searchParams }) {
             </div>
           </div>
         </section>
-      </main></>
+      </main>
+    </>
   );
   return <div className="overflow-y w-full">{content}</div>;
 }
