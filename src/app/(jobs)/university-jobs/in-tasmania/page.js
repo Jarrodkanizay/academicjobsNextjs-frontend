@@ -1,4 +1,4 @@
-// import Link from 'next/link';
+import Image from 'next/link';
 import citiesData from '@/data/cities.json';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
@@ -49,10 +49,12 @@ export default function Page({ params, searchParams }) {
   let ausHeader, otherHeader, content;
   ausHeader = (
     <div className="w-full relative">
-      <img
+      <Image
         src={image}
         alt={alt}
         className="w-full h-full object-cover object-center absolute top-0 left-0"
+        width={2000}
+        height={1000}
       />
       <div className="hero-content mx-auto items-start justify-start py-12 relative z-10">
         <h1 className="md:text-5xl font-bold md:text-left text-white pb-4 m-0">
@@ -90,7 +92,7 @@ export default function Page({ params, searchParams }) {
       <div className="content-grid flex-col md:gap-2">
         <AdvancedSearchBar
           p={{
-            r:'Australia',
+            r: 'Australia',
             filter0: [
               {
                 category: 'Country',

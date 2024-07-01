@@ -131,6 +131,12 @@ html {
       margin-top: 8px;
       color: #9da0a8;
     }
+    .wrapper {
+      .sentence.text-center {
+        text-align: center;
+      }
+    }
+
     .hero-icons li:hover a p {
       color: #f4a10c !important;
     }

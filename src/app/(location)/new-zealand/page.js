@@ -8,12 +8,12 @@ import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
-    absolute: 'Academic Jobs New Zealand',
+    absolute: 'University & Academic Jobs NZ',
   },
   description:
-    'Find your dream academic job in New Zealand and join the leading universities at New Zealand university jobs with professor, researcher or manager roles.',
+    'Find 200 university jobs in NZ. Apply for jobs in lecturer, research, science and postdoc jobs from UK top universities, such as Massey, AUT, UOA.',
   keywords:
-    'Academic Jobs New Zealand. academic job in New Zealand, New Zealand university jobs',
+    'Academic Jobs New Zealand, University job New Zealand, New Zealand university jobs',
 };
 
 const size = 180;
@@ -55,94 +55,131 @@ const items = [
 
 export default function Page() {
   return (
-    <><div className="full-width md:h-[400px] h-[229px] gradient-aj">
-      <div className="hero-bg-nz h-full md:bg-center mb-4">
-        <section className="wrapper flex">
-          <h2 className="sentence ">
-            <h3 className="sentence-aus md:mb-[-5rem] mb-[-10rem] p-2">
-              New Zealand's University Job Website
+    <>
+      <div className="full-width md:h-[400px] h-[229px] gradient-aj">
+        <div className="hero-bg-nz h-full md:bg-center mb-4">
+          <section className="wrapper flex flex-col items-center justify-center">
+            <h1 className="sentence text-center m-0 p-0">
+              University and Academic Jobs NZ
+            </h1>
+            {/* <h2 className="sentence m-0 p-0">Kia ora</h2> */}
+            <h3 className="sentence-aus m-0 p-0">
+              New Zealand's University Jobs Website
             </h3>
-            <span className="mr-8 p-2">Kia ora</span>{' '}
+          </section>
+          <ul className="hero-icons md:hidden flex-wrap md:gap-8 mx-auto text-center items-center justify-center mt-[-5rem] flex">
+            {items.slice(0, 3).map((item, index) => (
+              <li key={index}>
+                <Link className="grayscale hover:grayscale-0" href={item.link}>
+                  <Image
+                    src={item.src}
+                    width={size}
+                    height={size}
+                    alt={item.alt}
+                  />
+                </Link>
+                <Link className="mb-4" href={item.link}>
+                  <p>{item.label}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
 
-          </h2>
-        </section>
-        <ul className="hero-icons md:hidden flex-wrap md:gap-8 mx-auto text-center items-center justify-center mt-[-5rem] flex">
-          {items.slice(0, 3).map((item, index) => (
-            <li key={index}>
-              <Link className="grayscale hover:grayscale-0" href={item.link}>
-                <Image
-                  src={item.src}
-                  width={size}
-                  height={size}
-                  alt={item.alt}
-                />
-              </Link>
-              <Link className="mb-4" href={item.link}>
-                <p>{item.label}</p>
-              </Link>
-            </li>
-          ))}
-        </ul>
-
-        <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center mt-[-2rem] hidden">
-          {items.map((item, index) => (
-            <li key={index}>
-              <Link className="grayscale hover:grayscale-0" href={item.link}>
-                <Image
-                  src={item.src}
-                  width={size}
-                  height={size}
-                  alt={item.alt}
-                />
-              </Link>
-              <Link className="mb-4" href={item.link}>
-                <p>{item.label}</p>
-              </Link>
-            </li>
-          ))}
-        </ul>
-
+          <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center mt-[-2rem] hidden">
+            {items.map((item, index) => (
+              <li key={index}>
+                <Link className="grayscale hover:grayscale-0" href={item.link}>
+                  <Image
+                    src={item.src}
+                    width={size}
+                    height={size}
+                    alt={item.alt}
+                  />
+                </Link>
+                <Link className="mb-4" href={item.link}>
+                  <p>{item.label}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
-    </div>
-
       <div className="w-full  max-w-[700px] flex flex-col p-2 items-top my-4 mx-auto mt-20">
-        <JobSearchBoxCountry country={"New Zealand"} />
+        <JobSearchBoxCountry country={'New Zealand'} />
       </div>
       <div className="my-4">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li>
-              <Link href={`/New-Zealand/lecturer?r=New Zealand&filter0=[{"category":"PositionType","filter":"Lecturer/Instructor"}]`}> Lecturer</Link>
+              <Link
+                href={`/New-Zealand/lecturer?r=New Zealand&filter0=[{"category":"PositionType","filter":"Lecturer/Instructor"}]`}
+              >
+                {' '}
+                Lecturer
+              </Link>
             </li>
             <li>
-              <Link href={`/New-Zealand/research?r=New Zealand&filter0=[{"category":"PositionType","filter":"Research"}]`}> Research </Link>
+              <Link
+                href={`/New-Zealand/research?r=New Zealand&filter0=[{"category":"PositionType","filter":"Research"}]`}
+              >
+                {' '}
+                Research{' '}
+              </Link>
             </li>
             <li>
-              <Link href={`/New-Zealand/professor?r=New Zealand&filter0=[{"category":"PositionType","filter":"Professor"}]`}> Professor</Link>
+              <Link
+                href={`/New-Zealand/professor?r=New Zealand&filter0=[{"category":"PositionType","filter":"Professor"}]`}
+              >
+                {' '}
+                Professor
+              </Link>
             </li>
           </ul>
           <li>
-            <Link href={`/New-Zealand/executive?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`}> Executive</Link>
+            <Link
+              href={`/New-Zealand/executive?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`}
+            >
+              {' '}
+              Executive
+            </Link>
           </li>
           <li>
-            <Link href={`/new-zealand/admin?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`}>Admin</Link>
+            <Link
+              href={`/new-zealand/admin?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`}
+            >
+              Admin
+            </Link>
           </li>
           <li>
-            <Link href={`/new-zealand/hr-jobs?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`}> HR</Link>
+            <Link
+              href={`/new-zealand/hr-jobs?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`}
+            >
+              {' '}
+              HR
+            </Link>
           </li>
           <li>
-            <Link href={`/New-Zealand/student?r=New Zealand&filter0=[{"category":"PositionType","filter":"Graduate"}]`}> Student</Link>
+            <Link
+              href={`/New-Zealand/student?r=New Zealand&filter0=[{"category":"PositionType","filter":"Graduate"}]`}
+            >
+              {' '}
+              Student
+            </Link>
           </li>
         </ul>
-      </div><div className=" mt-2 mb-4">
+      </div>
+      <div className=" mt-2 mb-4">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li>
               <Link href="/employers/massey-university/3810"> Massey </Link>
             </li>
             <li>
-              <Link href="/employers/auckland-university-of-technology/3804"> AUT</Link>
+              <Link href="/employers/auckland-university-of-technology/3804">
+                {' '}
+                AUT
+              </Link>
             </li>
             <li>
               <Link href="/employers/the-university-of-auckland/3809">UOA</Link>
@@ -152,7 +189,10 @@ export default function Page() {
             </li>
           </ul>
           <li>
-            <Link href="/employers/victoria-university-of-wellington/3807"> VUW </Link>
+            <Link href="/employers/victoria-university-of-wellington/3807">
+              {' '}
+              VUW{' '}
+            </Link>
           </li>
           <li>
             <Link href="/employers/university-of-otago/3805"> UOO</Link>
@@ -171,29 +211,33 @@ export default function Page() {
           className=" full-width py-4 full-width mb-4 bg-slate-200"
         >
           <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
-            <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
+            <h2 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
               <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">
                 ACADEMIC&nbsp;JOBS New Zealand:
               </span>{' '}
-              <br />{' '}
-            </h1>
+            </h2>
 
             <div>
               <p className="px-7 mb-4 mt-1">
-                Seek university jobs in New Zealand at Academic Jobs, where we
-                list all the best jobs for academics globally! We value the
-                importance of an easy to navigate website where your future
-                academic career path is one click away. Academic Jobs provides
-                an extensive list of opportunities for the future of your career
-                in education, carefully sectioning the top Higher Ed jobs to
-                curate the best fitting position for you.
+                Discover top university employment opportunities across New
+                Zealand. Our platform is your gateway to a wide range of
+                university jobs, from top-tier faculty positions and academic
+                jobs to administrative roles at leading universities and
+                colleges. Whether you're seeking lecturer jobs, research jobs,
+                or senior academic positions, we provide a comprehensive listing
+                of opportunities to advance your career in higher education.
+                Explore postdoctoral jobs, professor roles, and university
+                vacancies to find the perfect fit for your professional journey.
               </p>
               <p className="px-7 md:flex hidden">
-                The number 1 job board for academics can help you find your
-                dream Higher Ed job through our services. At Academic Jobs, we
-                value our customers interests by providing the best career
-                choices possible, making us the best job board for higher
-                education positions globally!
+                Our job board is tailored for aspiring and established
+                professionals in the academic sector. Stay informed with the
+                latest university job openings, including academic careers,
+                student support jobs, and university staff positions. Join a
+                collaborative academic environment dedicated to intellectual
+                growth, professional development, and research excellence. Begin
+                your search for university jobs search in NZ top universities
+                today!
               </p>
               <p className="px-7 md:flex hidden">
                 Find all the best jobs here…
@@ -221,9 +265,7 @@ export default function Page() {
       <div id="myUniversity" class="myUniversity">
         <div class="widget__text-block1"> */}
         <div>
-          <h2 className="">
-            New Zealand: All University Jobs by Region
-          </h2>
+          <h2 className="">New Zealand: All University Jobs by Region</h2>
           <NZ heading="" />
         </div>
 
@@ -303,6 +345,7 @@ export default function Page() {
         </div>
       </div>
     </div> */}
-      </div></>
+      </div>
+    </>
   );
 }
