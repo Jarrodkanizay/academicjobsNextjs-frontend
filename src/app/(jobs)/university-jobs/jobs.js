@@ -1,9 +1,11 @@
 'use client';
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import SearchResults3 from '@/components/SearchResults3';
+import SearchResults from '@/components/SearchResults';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
+//import IntenationalJobs from '@/components/IntenationalJobs';
 import JobTypeFaces from '@/components/JobTypeFaces';
 export default function Page() {
   return (
@@ -27,6 +29,7 @@ export default function Page() {
         <section class="jobs_grid job_post_search_container">
           <div class="filters_panel">
             <div class="filters_content">
+              <SearchResults q={{ filter1: [{ category: 'postRegion', filter: 'Australia' }] }} filterOff={true} />
               <JobFilter />
             </div>
           </div>

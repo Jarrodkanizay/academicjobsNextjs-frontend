@@ -11,7 +11,7 @@ const JobOfTheWeek = ({ jobData }) => {
       <div className="bg-white relative content-grid mx-auto">
         <div className="full-width">
           <div className="flex flex-wrap -mx-4">
-            {jobData.map((job, index) => (
+            {jobData?.map((job, index) => (
               <div key={index} className="w-full md:w-1/4 px-4 mb-8">
                 <div className="bg-white rounded-lg shadow-md p-4 h-full flex flex-col justify-between relative">
                   {/* <Link href={job.employerLink}>
