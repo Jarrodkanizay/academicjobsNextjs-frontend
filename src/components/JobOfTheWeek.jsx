@@ -5,9 +5,9 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { StarRank } from '@/components/StarRank';
 
-const JobOfTheWeek = ({ jobsList: any }) => {
+const JobOfTheWeek = ({ jobsList }) => {
   let jobData;
-  if (jobsList) {
+  if (jobsList !== undefined) {
     jobData = jobsList;
   } else {
     jobData = [
