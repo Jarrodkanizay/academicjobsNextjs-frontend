@@ -54,7 +54,7 @@ const items = [
   },
 ];
 
-const jobsList = [
+const jobData = [
   {
     company_name: 'Auckland University of Technology AUT',
     title: 'Professor and Deputy Head of School, Science',
@@ -292,7 +292,7 @@ export default function Page() {
           </div>
         </div>
         <h2 className="underline-full">University Jobs of the week</h2>
-        <JobOfTheWeek jobsList={jobsList} />
+        <JobOfTheWeek jobData={jobData} />
 
         {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
     <a>▼</a></div> */}
