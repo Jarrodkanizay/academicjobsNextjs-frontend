@@ -294,7 +294,8 @@ export default async function myPage() {
         <li>
           <Link
             className="text-center"
-            href="/melbourne?r=Australia&l=Melbourne"
+            href="/university-jobs/melbourne"
+            // href="/melbourne?r=Australia&l=Melbourne"
           >
             Melbourne
           </Link>
