@@ -32,7 +32,10 @@
     "Keyword": "Academic Jobs Melbourne, Uni jobs Melbourne, Higher education jobs, university jobs",
     "content": "Seek university jobs from Melbourne's top institutions, such as University of Melbourne, Monash University, RMIT and more.",
     "image": "/banner-icons/melbourne.png",
-    "alt": "melbourne academic jobs"
+    "alt": "melbourne academic jobs",
+     "filter": {     
+            "l":"Melbourne"
+          }
   },
   {
     "Name": "sydney",
