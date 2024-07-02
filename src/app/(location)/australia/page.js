@@ -66,7 +66,6 @@ const jobData = [
   },
 ];
 
-
 export default async function myPage() {
   const size = 180;
   const items = [
@@ -230,15 +229,13 @@ export default async function myPage() {
             <li className="">
               {/* <Link href="/Australia/lecturer"> Lecturer</Link> */}
               <Link href="/australia/lecturer?r=Australia&filter0=%5B%7B%22category%22%3A%22PositionType%22%2C%22filter%22%3A%22Lecturer%2FInstructor%22%7D%5D">
-                {' '}
                 Lecturer
               </Link>
             </li>
             <li className="">
               {/* <Link href="/Australia/research"> Research </Link> */}
               <Link href="/australia/research?r=Australia&filter0=%255B%257B%2522category%2522%253A%2522PositionType%2522%252C%2522filter%2522%253A%2522Research%2522%257D%255D">
-                {' '}
-                Research{' '}
+                Research
               </Link>
             </li>
             {/* <li className=" ">
@@ -272,16 +269,12 @@ export default async function myPage() {
           <li>
             {/* <Link href="/australia/hr-jobs"> HR</Link> */}
             <Link href='/australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]'>
-              {' '}
               HR
             </Link>
           </li>
           <li>
             {/* <Link href="/australia/student"> Student</Link> */}
-            <Link href="/australia/hr-jobs?r=Australia&q=Student">
-              {' '}
-              Student
-            </Link>
+            <Link href="/australia/hr-jobs?r=Australia&q=Student">Student</Link>
           </li>
           <li>
             <Link href="/australia/indigenous">Indigenous</Link>
@@ -292,7 +285,6 @@ export default async function myPage() {
           <li>
             {/* <Link href="/australia/phd">PhD</Link> */}
             <Link href='/australia/phd?r=Australia&filter0=[{"category":"PositionType","filter":"Student / Phd Jobs"}]'>
-              {' '}
               PhD
             </Link>
           </li>
@@ -304,13 +296,11 @@ export default async function myPage() {
             className="text-center"
             href="/melbourne?r=Australia&l=Melbourne"
           >
-            {' '}
-            Melbourne{' '}
+            Melbourne
           </Link>
         </li>
         <li>
           <Link className="text-center" href="/sydney?r=Australia&l=sydney">
-            {' '}
             Sydney
           </Link>
         </li>
@@ -321,19 +311,16 @@ export default async function myPage() {
         </li>
         <li>
           <Link className="text-center" href="/perth?r=Australia&l=perth">
-            {' '}
             Perth
           </Link>
         </li>
         <li>
           <Link className="text-center" href="/adelaide?r=Australia&l=adelaide">
-            {' '}
             Adelaide
           </Link>
         </li>
         <li>
           <Link className="text-center" href="/canberra?r=Australia&l=canberra">
-            {' '}
             Canberra
           </Link>
         </li>
@@ -342,15 +329,11 @@ export default async function myPage() {
             className="text-center"
             href="/gold-coast?r=Australia&l=gold-coast"
           >
-            {' '}
             Gold Coast
           </Link>
         </li>
         <li>
-          <Link
-            className="text-center"
-            href='/university-jobs/in-tasmania'
-          >
+          <Link className="text-center" href="/university-jobs/in-tasmania">
             Tasmania
           </Link>
         </li>
@@ -714,7 +697,7 @@ export default async function myPage() {
         </div>
       </div>
 
-      <h2 className="underline-full">Jobs of the week</h2>
+      <h2 className="underline-full mt-16">Jobs of the week for Australia</h2>
       <JobOfTheWeek jobData={jobData} />
 
       <div id="myUniversity" class="myUniversity">

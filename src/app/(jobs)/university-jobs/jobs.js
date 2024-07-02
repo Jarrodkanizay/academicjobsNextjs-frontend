@@ -7,6 +7,7 @@ import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
 //import IntenationalJobs from '@/components/IntenationalJobs';
 import JobTypeFaces from '@/components/JobTypeFaces';
+
 export default function Page() {
   return (
     <>
@@ -22,10 +23,7 @@ export default function Page() {
           </div>
         </div>
         <JobTypeFaces />
-        <AdvancedSearchBar
-          forceClass="block"
-          type="advancedSearch"
-        />
+        <AdvancedSearchBar forceClass="block" type="advancedSearch" />
         <section class="jobs_grid job_post_search_container">
           <div class="filters_panel">
             <div class="filters_content">
