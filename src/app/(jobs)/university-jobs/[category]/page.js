@@ -47,7 +47,7 @@ export default function Page({ params, searchParams }) {
     content: content1,
     image="",
     alt: alt,
-    filter=""
+    filter: filter6 =""
   } = city;
   let ausHeader, otherHeader, content;
   ausHeader = (
@@ -94,7 +94,7 @@ export default function Page({ params, searchParams }) {
       {ausCities.includes(Name) ? ausHeader : otherHeader}
       <div className="content-grid flex-col md:gap-2">
         <AdvancedSearchBar
-          p={filter}
+          p={filter6}
         />
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
@@ -105,7 +105,7 @@ export default function Page({ params, searchParams }) {
           <div className="listings_panel">
             <div className="listings_content">
               <SearchResults3
-                p={filter}
+                p={filter6}
               />
             </div>
           </div>

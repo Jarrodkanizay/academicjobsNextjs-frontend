@@ -26,7 +26,7 @@ export default function SearchResults2({p={},
 
   const [page, setPage] = useState(0);
   let searchParams1 = {}
- // alert(JSON.stringify(p))
+  //alert(JSON.stringify(p))
   if (Object.keys(p).length !== 0) {
     searchParams1 = { ...searchParams, ...p }
   } else {
@@ -45,7 +45,7 @@ export default function SearchResults2({p={},
   //filter1 = [...filteredData, { category: "region", filter: r || "Global" }]
 
   //const { q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
-  console.log('==============SearchResults2222222', q);
+  //console.log('==============SearchResults2222222', q);
   //alert(q);
   const {
     isPending,
@@ -58,7 +58,7 @@ export default function SearchResults2({p={},
   } = useQuery({
     queryKey: ['jobs', currentMiddleCategory,
       category,
-      filter1, page, q, l, lon, lat,],
+      filter1, page, q, l, lon, lat,  employer_id],
     queryFn: async () => {
       const response = await BaseApi.post('/jobs', {
         currentMiddleCategory,
@@ -84,7 +84,7 @@ export default function SearchResults2({p={},
   } = useQuery({
     queryKey: ['qty', currentMiddleCategory,
       category,
-      filter1, page, q, l, lon, lat,
+      filter1, page, q, l, lon, lat, employer_id
     ],
     queryFn: async () => {
       const response = await BaseApi.post('/jobQty', {
