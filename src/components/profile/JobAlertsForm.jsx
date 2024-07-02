@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
-import fieldsData from '@/data/jobCatgeories.json';
+import Slider from 'rc-slider';
+import 'rc-slider/assets/index.css';
+import fieldsData from '@/data/jobCategories1.json';
 import locationData from '@/data/locationData.json';
 import { useSession } from "next-auth/react";
 import { BaseApi } from '@/lib/store/Base';
@@ -13,11 +15,12 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [selectedStates, setSelectedStates] = useState([]);
   const [selectedInstitutions, setSelectedInstitutions] = useState([]);
-  const [salaryRange, setSalaryRange] = useState(null);
-  // const [remote, setRemote] = useState(null);
+  const [salaryRange, setSalaryRange] = useState([10000, 250000]);
   const [frequency, setFrequency] = useState(null);
-  // const [employmentType, setEmploymentType] = useState(null);
-  const [showSubFieldDropdown, setShowSubFieldDropdown] = useState(false);
+  const options = fieldsData.master_category_job_type.map((category) => ({
+    value: category,
+    label: category,
+  }));
 
   useEffect(() => {
     if (alert) {
@@ -26,20 +29,22 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
       setSelectedCountry({ value: alert.country, label: alert.country });
       setSelectedStates(JSON.parse(alert.states || '[]').map(state => ({ value: state, label: state })));
       setFrequency(alert.frequency || null);
-      setSalaryRange(alert.salaryRange || null);
-      // setRemote(alert.remote || null);
+      setSalaryRange([alert.salaryFrom || 10000, alert.salaryTo || 250000]);
       setSelectedInstitutions(JSON.parse(alert.institutions || '[]').map(institution => ({ value: institution, label: institution })));
-      // setEmploymentType(alert.employmentType || null);
     }
   }, [alert]);
 
   useEffect(() => {
-    const field = fieldsData.find(field => field[mainField]);
-    setSubFields(field ? field[mainField] : []);
+    if (mainField) {
+      setSubFields(fieldsData[mainField]?.map(subField => ({ value: subField, label: subField })) || []);
+    } else {
+      setSubFields([]);
+    }
   }, [mainField]);
 
   useEffect(() => {
     if (filters) {
+      console.log("filters", filters)
       const uniqueStates = [];
       const uniqueInstitutions = [];
       filters.forEach(({ category, filter }) => {
@@ -49,7 +54,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
           if (!uniqueStates.find(state => state.value === filter)) {
             uniqueStates.push({ value: filter, label: filter });
           }
-        } else if (category === 'Institution') {
+        } else if (category === 'InstitutionName') {
           if (!uniqueInstitutions.find(institution => institution.value === filter)) {
             uniqueInstitutions.push({ value: filter, label: filter });
           }
@@ -62,19 +67,20 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
             }
             return prev;
           });
-        } else if (category === 'Salary Range') {
-          setSalaryRange(filter);
-        } 
+        } else if (category === 'SalaryRange') {
+          const regex = /\$\d+(,\d{3})*/g;
+          const matches = filter.match(regex);
+          const values = matches.map(match => match.replace(/[$,]/g, ''));
+          setSalaryRange([values[0], values[1]]);
+        }
       });
       setSelectedStates(uniqueStates);
       setSelectedInstitutions(uniqueInstitutions);
     }
   }, [filters]);
 
-  const handleSubFieldChange = (subField) => {
-    setSelectedSubFields(prev => (
-      prev.some(item => item.value === subField.value) ? prev.filter(item => item.value !== subField.value) : [...prev, subField]
-    ));
+  const handleSubFieldChange = (selectedOptions) => {
+    setSelectedSubFields(selectedOptions || []);
   };
 
   const handleCountryChange = (country) => {
@@ -92,14 +98,18 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
     setSelectedInstitutions(institutions || []);
   };
 
+  const handleSliderChange = (value) => {
+    setSalaryRange(value);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     if (!session || !session.user || !session.user.id) {
       window.location.href = '/auth/signin';
       return;
     }
-  
+
     const formData = {
       mainField,
       subFields: JSON.stringify(selectedSubFields.map(item => item.value)),
@@ -107,17 +117,16 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
       states: JSON.stringify(selectedStates.map(state => state.value)),
       institutions: JSON.stringify(selectedInstitutions.map(institution => institution.value)),
       frequency,
-      salaryRange,
+      salaryFrom: salaryRange[0],
+      salaryTo: salaryRange[1],
       userId: session.user.id
     };
-  
+
     try {
       if (alert) {
-        // Update existing job alert
         const response = await BaseApi.put(`/updateJobAlert/${alert.id}`, formData);
         console.log('Success:', response.data);
       } else {
-        // Create new job alert
         const response = await BaseApi.post('/createJobAlert', formData);
         console.log('Success:', response.data);
       }
@@ -126,7 +135,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
       console.error('Error:', error);
     }
   };
-  
+
   const getStateOptions = () => {
     if (selectedCountry) {
       return Object.keys(locationData[selectedCountry.value] || {}).map(state => ({ value: state, label: state }));
@@ -166,7 +175,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
               value={selectedCountry}
               onChange={handleCountryChange}
               options={Object.keys(locationData).map(country => ({ value: country, label: country }))}
-              className="mt-1"
+              className="mt-1 custom-select"
             />
           </div>
           <div className="mb-4">
@@ -177,7 +186,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
               value={selectedStates}
               onChange={handleStateChange}
               options={getStateOptions()}
-              className="mt-1"
+              className="mt-1 custom-select"
             />
           </div>
           <div className="mb-4">
@@ -188,76 +197,48 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
               value={selectedInstitutions}
               onChange={handleInstitutionChange}
               options={getInstitutionOptions()}
-              className="mt-1"
+              className="mt-1 custom-select"
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="mainField" className="block text-sm font-medium text-gray-700">Job Type</label>
-            <select
+            <label htmlFor="mainField" className="block text-sm font-medium text-gray-700">
+              Job Type
+            </label>
+            <Select
               id="mainField"
-              value={mainField}
-              onChange={(e) => setMainField(e.target.value)}
-              className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
-            >
-              <option value="">Select Job Type</option>
-              {fieldsData.map((field, index) => (
-                <option key={index} value={Object.keys(field)[0]}>{Object.keys(field)[0]}</option>
-              ))}
-            </select>
+              value={options.find(option => option.value === mainField)}
+              onChange={(selectedOption) => setMainField(selectedOption ? selectedOption.value : '')}
+              options={options}
+              className="mt-1 custom-select"
+            />
           </div>
-          <div className="mb-4 relative">
+          <div className="mb-4">
             <label htmlFor="subField" className="block text-sm font-medium text-gray-700">Subfields</label>
-            <div className="mt-1 p-2 block w-full border border-gray-300 rounded-md cursor-pointer"
-              onClick={() => setShowSubFieldDropdown(!showSubFieldDropdown)}>
-              {selectedSubFields.length > 0 ? selectedSubFields.map(item => item.label).join(', ') : 'Select subfields'}
-            </div>
-            {showSubFieldDropdown && (
-              <div className="absolute z-10 mt-1 w-full bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-y-auto">
-                {subFields.map((subField, index) => (
-                  <div
-                    key={index}
-                    className="px-4 py-2 cursor-pointer flex justify-between items-center hover:bg-gray-100"
-                    onClick={() => handleSubFieldChange({ value: subField, label: subField })}
-                  >
-                    <span>{subField}</span>
-                    {selectedSubFields.some(item => item.value === subField) && <span>&#10003;</span>}
-                  </div>
-                ))}
-              </div>
-            )}
+            <Select
+              id="subField"
+              isMulti
+              value={selectedSubFields}
+              onChange={handleSubFieldChange}
+              options={subFields}
+              className="mt-1 custom-select"
+            />
           </div>
           <div className="mb-4">
             <label htmlFor="salaryRange" className="block text-sm font-medium text-gray-700">Salary Range</label>
-            <select
-              id="salaryRange"
+            <Slider
+              range
+              min={10000}
+              max={250000}
+              step={10000}
               value={salaryRange}
-              onChange={(e) => setSalaryRange(e.target.value)}
-              className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
-            >
-              <option value="">Select Salary Range</option>
-              <option value="up to $20,000">up to $20,000</option>
-              <option value="$20,000 - $40,000">$20,000 - $40,000</option>
-              <option value="$40,000 - $75,000">$40,000 - $75,000</option>
-              <option value="$75,000 - $120,000">$75,000 - $120,000</option>
-              <option value="$100,000 - $150,000">$100,000 - $150,000</option>
-              <option value="$150,000 - $200,000">$150,000 - $200,000</option>
-              <option value="$200,000 and up">$200,000 and up</option>
-            </select>
+              onChange={handleSliderChange}
+              className="mt-1 custom-slider"
+            />
+            <div className="mt-2 flex justify-between text-sm text-gray-600">
+              <span>{`$${salaryRange[0].toLocaleString()}`}</span>
+              <span>{`$${salaryRange[1].toLocaleString()}`}</span>
+            </div>
           </div>
-          {/* <div className="mb-4">
-            <label htmlFor="remote" className="block text-sm font-medium text-gray-700">Remote</label>
-            <select
-              id="remote"
-              value={remote}
-              onChange={(e) => setRemote(e.target.value)}
-              className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
-            >
-              <option value="">Select Remote Option</option>
-              <option value="Remote">Remote</option>
-              <option value="Onsite">Onsite</option>
-              <option value="Hybrid">Hybrid</option>
-            </select>
-          </div> */}
           <div className="mb-4">
             <label htmlFor="frequency" className="block text-sm font-medium text-gray-700">Select Frequency</label>
             <select
@@ -266,30 +247,14 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
               onChange={(e) => setFrequency(e.target.value)}
               className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
             >
-              <option value="3Days">Every 3 days</option>
+              <option value="twiceWeekly">Twice a week</option>
               <option value="Weekly">Weekly</option>
               <option value="Fortnightly">Fortnightly</option>
             </select>
           </div>
-          {/* <div className="mb-4">
-            <label htmlFor="employmentType" className="block text-sm font-medium text-gray-700">Employment Type</label>
-            <select
-              id="employmentType"
-              value={employmentType}
-              onChange={(e) => setEmploymentType(e.target.value)}
-              className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
-            >
-              <option value="Full Time">Full Time</option>
-              <option value="Part time">Part Time</option>
-              <option value="Sessional">Sessional</option>
-              <option value="Contractor">Contractor</option>
-              <option value="Others">Others</option>
-            </select>
-          </div> */}
           <div className="col-span-1 md:col-span-2">
             <button type="submit" className="mx-auto block text-center py-2 px-4 bg-amber-500 text-white rounded-md hover:bg-gray-600">
-            Save job alert
-
+              Save job alert
             </button>
           </div>
         </form>

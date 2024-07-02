@@ -16,10 +16,8 @@ const JobAlert = ({ alert, onEdit, onDelete }) => {
             { category: 'JobType', filter: alert.mainField },
             ...subFields.map(subField => ({ category: 'SubField', filter: subField })),
             ...states.map(state => ({ category: 'State', filter: state })),
-            ...institutions.map(institution => ({ category: 'Institution', filter: institution })),
-            { category: 'SalaryRange', filter: alert.salaryRange },
-            // { category: 'Remote', filter: alert.remote ? 'Yes' : 'No' },
-            // { category: 'EmploymentType', filter: alert.employmentType },
+            ...institutions.map(institution => ({ category: 'InstitutionName', filter: institution })),
+            { category: 'SalaryRange', filter: `\$${alert.salaryFrom.toLocaleString()} - \$${alert.salaryTo.toLocaleString()}` },
         ].filter(item => item.filter);
 
         const queryParams = new URLSearchParams({
@@ -49,7 +47,7 @@ const JobAlert = ({ alert, onEdit, onDelete }) => {
                 {institutions.length > 0 && <p><strong>Institutions:</strong> {institutions.join(', ')}</p>}
                 {alert.mainField && <p><strong>Field:</strong> {alert.mainField}</p>}
                 {/* {alert.remote !== undefined && <p><strong>Remote:</strong> {alert.remote ? 'Yes' : 'No'}</p>} */}
-                {alert.salaryRange && <p><strong>Salary Range:</strong> {alert.salaryRange}</p>}
+                {alert.salaryFrom && alert.salaryTo && <p><strong>Salary Range:</strong> ${alert.salaryFrom} - ${alert.salaryTo}</p>}
                 {states.length > 0 && <p><strong>States:</strong> {states.join(', ')}</p>}
                 {subFields.length > 0 && <p><strong>Sub Fields:</strong> {subFields.join(', ')}</p>}
             </div>
@@ -105,9 +103,11 @@ const JobAlerts = () => {
             {editingAlert ? (
                 <JobAlertForm alert={editingAlert} onClose={handleClose} />
             ) : (
-                alerts.map((alert, index) => (
-                    <JobAlert key={index} alert={alert} onEdit={handleEdit} onDelete={handleDelete} />
-                ))
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {alerts.map((alert, index) => (
+                        <JobAlert key={index} alert={alert} onEdit={handleEdit} onDelete={handleDelete} />
+                    ))}
+                </div>
             )}
         </div>
     );
