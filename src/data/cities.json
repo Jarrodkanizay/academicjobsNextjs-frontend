@@ -1,15 +1,21 @@
 [
   {
     "Name": "massey university",
-    "Title": "Massey University Jobs",
-    "Description": "massey-university",
-    "Keyword": "massey-university",
+    "Title": "Massey University Jobs in New Zealand. Job Vacancies today!",
+    "Description": "Find 20 Massey University jobs found in Albany Auckland. View all Massey University vacancies: vet nurse, administrator and more. New jobs updated daily.",
+    "Keyword": "Massey University Jobs, Massey University Jobs Vacancies",
     "image": "/banner-icons/adelaide.png",
     "alt": "massey-university",
     "content": "massey-university",
     "filter": {     
             "employer_id":"3810"
-          }
+          },
+          "footer-h2":"Careers Opportunities in Massey University",
+          "footer-content": `Massey University is a public research university with campuses in Auckland, Palmerston North and Wellington, New Zealand. The university is known for its ground-breaking research, commitment to innovation, inclusivity and diversity and close bond to local communities. Massey University currently employs over 3,500 people both full and part time across three main campuses.
+<br/>
+<br/>
+Massey University offers a wide range of employee benefits, such as additional entitlement on leave, personal development assistance, flexible work arrangement and benefits and support for parents.` 
+
   },
   {
     "Name": "university of otago",
