@@ -13,12 +13,13 @@ import UserProfile from '@/components/profile/UserProfile';
 
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
-import React, { createContext, useEffect, useState } from 'react';
+import React, { useEffect, createContext, use, useContext, useState } from 'react';
 import SavedItems from '@/components/profile/SavedItems';
 import DashboardMenu from '@/components/DashboardMenu';
 import TalentPool from '@/components/TalentPool';
 import TalentPoolForm from '@/components/forms/TalentPoolForm';
 import PrivacySettings from '@/components/profile/PrivacySettings';
+import JobAlerts from '@/components/profile/JobAlerts';
 
 type UserProps = {
   id: number;
@@ -159,6 +160,10 @@ export default function Profile({
   if (userDetailsError) {
     return <div>Error loading user details</div>;
   }
+
+
+
+
 
   return (
     <>
@@ -301,8 +306,11 @@ export default function Profile({
         </div>
       )}
       {selectedCard === 'Jobs Alerts' && (
-        <div>
+        
+        // Render content for Jobs For You
+        <div className='mt-8'>
           <h2 className="md:hidden block">Job Alerts</h2>
+          <JobAlerts />
         </div>
       )}
       {selectedCard === 'Talent Pool' && (

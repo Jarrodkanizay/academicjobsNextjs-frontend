@@ -1,0 +1,2331 @@
+{
+    "Australia": {
+        "Tasmania": {
+            "universities": [
+                "The University of Tasmania (UTAS)"
+            ]
+        },
+        "Victoria": {
+            "universities": [
+                "Victoria University (VU)",
+                "Monash University",
+                "RMIT University",
+                "The University of Melbourne (UniMelb)",
+                "Federation University Australia (Fed Uni)",
+                "La Trobe University",
+                "University of Divinity",
+                "Wesley College",
+                "Deakin University",
+                "Australian Catholic University (ACU)",
+                "Stuart Kollmorgen",
+                "Swinburne University of Technology"
+            ]
+        },
+        "Queensland": {
+            "universities": [
+                "Griffith University",
+                "University of Southern Queensland (UniSQ)",
+                "The University of Queensland (UQ)",
+                "CQUniversity",
+                "University of the Sunshine Coast (UniSC)",
+                "James Cook University (JCU)",
+                "Bond University",
+                "Queensland University of Technology (QUT)"
+            ]
+        },
+        "New South Wales": {
+            "universities": [
+                "Macquarie University",
+                "University of Newcastle (UniNC)",
+                "University of Technology Sydney",
+                "Southern Cross University (SCU)",
+                "University of New England (UNE)",
+                "Charles Darwin University (CDU)",
+                "University of Wollongong",
+                "University of New South Wales (UNSW)",
+                "Western Sydney University (WSU)",
+                "Charles Sturt University (CSU)",
+                "The University of Sydney (USYD)",
+                "University of Technology Sydney (UTS)"
+            ]
+        },
+        "South Australia": {
+            "universities": [
+                "University of South Australia (UniSA)",
+                "The University of Adelaide",
+                "Torrens University Australia",
+                "Flinders University"
+            ]
+        },
+        "Western Australia": {
+            "universities": [
+                "Curtin University",
+                "Edith Cowan University (ECU)",
+                "Murdoch University",
+                "The University of Notre Dame Australia (UND)",
+                "The University of Western Australia"
+            ]
+        },
+        "Australian Capital Territory": {
+            "universities": [
+                "University of Canberra (UC)",
+                "Australian National University (ANU)"
+            ]
+        }
+    },
+    "Bangladesh": {
+        "Dhaka Division": {
+            "universities": [
+                "University of Asia Pacific",
+                "Ahsanullah University of Science & Technology"
+            ]
+        }
+    },
+    "Belgium": {
+        "Bruxelles": {
+            "universities": [
+                "KU Leuven"
+            ]
+        }
+    },
+    "Canada": {
+        "Alberta": {
+            "universities": [
+                "University of Alberta",
+                "University of Calgary",
+                "Lakeland College"
+            ]
+        },
+        "Halifax": {
+            "universities": [
+                "Dalhousie University"
+            ]
+        },
+        "Ontario": {
+            "universities": [
+                "McMaster University",
+                "University of Guelph",
+                "Queens University",
+                "University Of Waterloo",
+                "University of Ottawa",
+                "University of Toronto",
+                "Western University"
+            ]
+        },
+        "Québec": {
+            "universities": [
+                "UniversitÃ© Laval",
+                "Universite De Montreal",
+                "Champlain College",
+                "McGill University"
+            ]
+        },
+        "Toronto": {
+            "universities": [
+                "York University"
+            ]
+        },
+        "Manitoba": {
+            "universities": [
+                "University of Manitoba"
+            ]
+        },
+        "Victoria": {
+            "universities": [
+                "University of Victoria"
+            ]
+        },
+        "Saskatoon": {
+            "universities": [
+                "University of Saskatchewan"
+            ]
+        },
+        "Nova Scotia": {
+            "universities": [
+                "Eastern College"
+            ]
+        },
+        "British Columbia": {
+            "universities": [
+                "University of British Columbia",
+                "Simon Fraser University"
+            ]
+        }
+    },
+    "China": {
+        "Jiangxi": {
+            "universities": [
+                "East China Jiao Tong University"
+            ]
+        },
+        "Hangzhou": {
+            "universities": [
+                "Zhejiang University"
+            ]
+        },
+        "Shanghai": {
+            "universities": [
+                "Shanghai Jiao Tong University"
+            ]
+        },
+        "Hong Kong": {
+            "universities": [
+                "City University of Hong Kong",
+                "Hong Kong Polytechnic University"
+            ]
+        },
+        "Bei Jing Shi": {
+            "universities": [
+                "Tsinghua University\tChina",
+                "Peking University"
+            ]
+        },
+        "Shan Xi Sheng": {
+            "universities": [
+                "The Forth Military Medical University"
+            ]
+        },
+        "Shang Hai Shi": {
+            "universities": [
+                "Fudan University"
+            ]
+        },
+        "Chong Qing Shi": {
+            "universities": [
+                "Third Military Medical University"
+            ]
+        }
+    },
+    "Fiji": {
+        "Northern Division": {
+            "universities": [
+                "University of the South Pacific"
+            ]
+        }
+    },
+    "France": {
+        "Île-de-France": {
+            "universities": [
+                "Paris Sciences et Lettres – PSL Research University Paris",
+                "American Graduate School in Paris",
+                "Institut Polytechnique de Paris"
+            ]
+        }
+    },
+    "Germany": {
+        "Bayern": {
+            "universities": [
+                "Technische Universitat Munchen",
+                "LMU Munich (Ludwig-Maximilians-Universität München)"
+            ]
+        },
+        "berlin": {
+            "universities": [
+                "Freie UniversitÃ¤t Berlin"
+            ]
+        },
+        "Bavaria": {
+            "universities": [
+                "Technical University of Munich"
+            ]
+        }
+    },
+    "Ghana": {
+        "Ashanti Region": {
+            "universities": [
+                "Kwame Nkrumah University of Science and Technology"
+            ]
+        },
+        "Central Region": {
+            "universities": [
+                "University of Cape Coast"
+            ]
+        },
+        "Greater Accra Region": {
+            "universities": [
+                "Akrofi-Christaller Institute of Theeology, Mission and  Culture",
+                "Heritage Christian University",
+                "University of Ghana"
+            ]
+        }
+    },
+    "Hong Kong": {
+        "New Territories": {
+            "universities": [
+                "The Hong Kong University of Science and Technology",
+                "Chinese University of Hong Kong"
+            ]
+        },
+        "Hong Kong Island": {
+            "universities": [
+                "University of Hong Kong"
+            ]
+        }
+    },
+    "India": {
+        "Delhi": {
+            "universities": [
+                "Indian Institute of Technology, Delhi",
+                "Academy of Economics \"Dimitur A. Tscenov\"",
+                "Academy of Arts \"George Enescu\" Iasi"
+            ]
+        },
+        "Odisha": {
+            "universities": [
+                "Excelsior College"
+            ]
+        },
+        "Aligarh": {
+            "universities": [
+                "Aligarh Muslim University"
+            ]
+        },
+        "Manipal": {
+            "universities": [
+                "Manipal Academy of Higher Education"
+            ]
+        },
+        "Amingaon": {
+            "universities": [
+                "Indian Institute of Technology, Guwahati"
+            ]
+        },
+        "Kottayam": {
+            "universities": [
+                "Mahatma Gandhi University Kerala"
+            ]
+        },
+        "Rourkela": {
+            "universities": [
+                "National Institute of Technology, Rourkela"
+            ]
+        },
+        "Varanasi": {
+            "universities": [
+                "Banaras Hindu University"
+            ]
+        },
+        "Karnataka": {
+            "universities": [
+                "University of Agricultural Sciences, Dharwad",
+                "Indian Institute of Science"
+            ]
+        },
+        "New Delhi": {
+            "universities": [
+                "Jamia Hamdard University",
+                "Jamia Millia Islamia University",
+                "Jawaharlal Nehru University"
+            ]
+        },
+        "Rajasthan": {
+            "universities": [
+                "Rajasthan Agricultural University, Bikaner"
+            ]
+        },
+        "Coimbatore": {
+            "universities": [
+                "Bharathiar University"
+            ]
+        },
+        "Tamil Nadu": {
+            "universities": [
+                "Indian Institute of Technology Madras",
+                "Vellore Institute of Technology",
+                "Alagappa University"
+            ]
+        },
+        "Bhubaneswar": {
+            "universities": [
+                "Kamrah International Institute of Technology (KIIT)"
+            ]
+        },
+        "Maharashtra": {
+            "universities": [
+                "Indian Institute of Technology Bombay"
+            ]
+        },
+        "West Bengal": {
+            "universities": [
+                "Al-Islah University"
+            ]
+        },
+        "Chhattisgarh": {
+            "universities": [
+                "Maharishi University of Management"
+            ]
+        },
+        "Uttar Pradesh": {
+            "universities": [
+                "Allahabad Agricultural Institute, Deemed University",
+                "Abdul Kalam Technical University",
+                "Allahabad University"
+            ]
+        },
+        "Dayalpur Daulatpur": {
+            "universities": [
+                "Indian Institute of Technology Patna "
+            ]
+        }
+    },
+    "Ireland": {
+        "Dublin": {
+            "universities": [
+                "University of Dublin, Trinity College"
+            ]
+        }
+    },
+    "Japan": {
+        "Kyoto": {
+            "universities": [
+                "Kyoto University"
+            ]
+        },
+        "Tokyo": {
+            "universities": [
+                "The University of Tokyo"
+            ]
+        }
+    },
+    "Malaysia": {
+        "Sarawak": {
+            "universities": [
+                "American University College of Technology"
+            ]
+        },
+        "Wilayah Persekutuan Kuala Lumpur": {
+            "universities": [
+                "Universiti Malaya"
+            ]
+        }
+    },
+    "Netherlands": {
+        "Zuid-Holland": {
+            "universities": [
+                "Delft University of Technology"
+            ]
+        },
+        "North Holland": {
+            "universities": [
+                "University of Amsterdam"
+            ]
+        }
+    },
+    "New Zealand": {
+        "Otago": {
+            "universities": [
+                "University of Otago"
+            ]
+        },
+        "Waikato": {
+            "universities": [
+                "University of Waikato",
+                "Waikato uni careers"
+            ]
+        },
+        "Auckland": {
+            "universities": [
+                "The University of Auckland",
+                "Massey University",
+                "Auckland University of Technology AUT"
+            ]
+        },
+        "Canterbury": {
+            "universities": [
+                "Lincoln University",
+                "University of Canterbury"
+            ]
+        },
+        "Wellington": {
+            "universities": [
+                "Victoria University of Wellington"
+            ]
+        }
+    },
+    "Peru": {
+        "Provincia de Lima": {
+            "universities": [
+                "Universidad Alas Peruanas",
+                "Universidad Peruana Cayetano Heredia"
+            ]
+        }
+    },
+    "Philippines": {
+        "Davao Region": {
+            "universities": [
+                "Assumption College"
+            ]
+        },
+        "Northern Mindanao": {
+            "universities": [
+                "Lourdes College"
+            ]
+        },
+        "Cordillera Administrative Region": {
+            "universities": [
+                "University of Baguio"
+            ]
+        }
+    },
+    "South Africa": {
+        "Gauteng": {
+            "universities": [
+                "University of Pretoria",
+                "University of Witwatersrand"
+            ]
+        },
+        "Western Cape": {
+            "universities": [
+                "University of Cape Town",
+                "Stellenbosch University"
+            ]
+        },
+        "KwaZulu-Natal": {
+            "universities": [
+                "University of KwaZulu-Natal"
+            ]
+        }
+    },
+    "South Korea": {
+        "Seoul": {
+            "universities": [
+                "Korea University",
+                "Yonsei University",
+                "Seoul National University"
+            ]
+        }
+    },
+    "Spain": {
+        "Catalunya": {
+            "universities": [
+                "Universitat de Barcelona"
+            ]
+        },
+        "Comunidad de Madrid": {
+            "universities": [
+                "Universidad Pontificia Comillas"
+            ]
+        }
+    },
+    "Switzerland": {
+        "Vaud": {
+            "universities": [
+                "Ecole polytechnique fédérale de Lausanne (EPFL)"
+            ]
+        },
+        "Zürich": {
+            "universities": [
+                "ETH Zurich"
+            ]
+        }
+    },
+    "United Arab Emirates": {
+        "Dubai": {
+            "universities": [
+                "American University in Dubai",
+                "American College of Dubai"
+            ]
+        },
+        "Sharjah": {
+            "universities": [
+                "American University of Sharjah"
+            ]
+        },
+        "Abu Dhabi": {
+            "universities": [
+                "Abu Dhabi University",
+                "New York University, Abu Dhabi",
+                "Khalifa University",
+                "United Arab Emirates University"
+            ]
+        }
+    },
+    "United Kingdom": {
+        "Wales": {
+            "universities": [
+                "Cardiff Metropolitan University",
+                "Aberystwyth University"
+            ]
+        },
+        "England": {
+            "universities": [
+                "University of Sheffield",
+                "University of Worcester",
+                "Falmouth University",
+                "University of York",
+                "University of Warwick",
+                "Imperial College School of Medicine",
+                "University of Oxford",
+                "London School of Economics and Political Science",
+                "King’s College London",
+                "Queen Mary University of London",
+                "University College London UCL",
+                "Imperial College London",
+                "St George's University of London",
+                "Camberwell College of Arts",
+                "Buckinghamshire New University",
+                "Brunel University Uxbridge",
+                "BPP University",
+                "Cambridge University",
+                "University of Ulster",
+                "University of East London",
+                "University of Chester",
+                "St. George's University",
+                "Staffordshire University",
+                "University of Huddersfield",
+                "University of Manchester",
+                "Royal College of Art",
+                "Royal Academy of Music, University of London",
+                "University of Bristol",
+                "Lancaster University",
+                "University of Leeds",
+                "The Open University",
+                "University of Lincoln",
+                "University of Liverpool",
+                "University of Birmingham",
+                "University of Nottingham",
+                "Teesside University",
+                "London School of Hygiene & Tropical Medicine, University of London",
+                "London School of Economics and Political Science, University of London",
+                "University of Sunderland",
+                "University of Plymouth",
+                "Newman University",
+                "University of Southampton",
+                "Excel College"
+            ]
+        },
+        "Scotland": {
+            "universities": [
+                "Scotland's Rural College SRUC ",
+                "University of Edinburgh (UoE)"
+            ]
+        }
+    },
+    "United States": {
+        "Iowa": {
+            "universities": [
+                "University of Dubuque",
+                "Grinnell College",
+                "William Penn College",
+                "Grand View College",
+                "Iowa State University Foundation",
+                "Buena Vista University",
+                "Luther College",
+                "Kirkwood Community College",
+                "University of Northern Iowa",
+                "Loras College",
+                "The University of Iowa",
+                "Upper Iowa University",
+                "Des Moines University",
+                "Des Moines University - Iowa Health Sciences University",
+                "Drake University",
+                "Wartburg College",
+                "Coe College",
+                "Briar Cliff University",
+                "Northwestern College Iowa",
+                "Emmaus Bible College",
+                "UNIVERSITY OF IOWA"
+            ]
+        },
+        "Ohio": {
+            "universities": [
+                "Central State University",
+                "Ohio Northern University",
+                "Ohio State University - Marion",
+                "Capital University",
+                "Capital University Law School",
+                "Xavier University",
+                "Wright State University",
+                "Otterbein College",
+                "Cleveland Institute of Music",
+                "Denison University",
+                "Cleveland State University",
+                "Case Western Reserve University",
+                "University of Findlay",
+                "Mount Carmel College of Nursing",
+                "The College of Wooster",
+                "Kent State University",
+                "Malone College",
+                "The Ohio State University",
+                "Kettering College",
+                "Franciscan University of Steubenville",
+                "Youngstown State University",
+                "Muskingum College",
+                "Lake Erie College",
+                "Mount Vernon Nazarene University",
+                "Mount Union College",
+                "Cincinnati Christian University",
+                "Mount St. Joseph University",
+                "Ohio University",
+                "Wilberforce University",
+                "Hiram College",
+                "Marietta College",
+                "Walsh University",
+                "Cedarville College",
+                "Miami University",
+                "Bowling Green State University, Firelands",
+                "Bowling Green State University",
+                "The University of Toledo",
+                "Bluffton College",
+                "Miami University of Ohio",
+                "Columbus State Community College",
+                "Wittenberg University",
+                "Ohio Christian University",
+                "Heidelberg University",
+                "Central College",
+                "University of Cincinnati",
+                "Art Academy of Cincinnati",
+                "Ashland University",
+                "Cuyahoga Community College",
+                "God's Bible School and College",
+                "Oberlin College",
+                "Northeast Ohio Medical University",
+                "Air Force Institute of Technology",
+                "North Central State College",
+                "Kenyon College",
+                "Franklin University",
+                "Baldwin-Wallace College",
+                "University of Rio Grande",
+                "The University of Findlay",
+                "John Carroll University",
+                "Ohio Dominican University",
+                "Wilmington College"
+            ]
+        },
+        "Utah": {
+            "universities": [
+                "Dixie State University",
+                "Westminster College of Salt Lake City",
+                "Weber State University",
+                "Salt Lake Community College",
+                "University of Utah",
+                "Brigham Young University",
+                "Utah State University",
+                "Utah Valley University",
+                "Southern Utah University",
+                "Western Governors University"
+            ]
+        },
+        "Idaho": {
+            "universities": [
+                "Lewis-Clark State College",
+                "Boise State University",
+                "University of Idaho",
+                "College of Idaho",
+                "Idaho State University",
+                "Northwest Nazarene University",
+                "Caldwell College",
+                "Boise Bible College"
+            ]
+        },
+        "Maine": {
+            "universities": [
+                "University of Maine, Augusta",
+                "Husson College",
+                "St. Joseph's College of Maine",
+                "Central Maine Community College",
+                "University of Maine, Farmington",
+                "University of Maine, Fort Kent",
+                "University of Maine, Machias",
+                "University of Maine, Orono",
+                "University of Maine, Presque Isle",
+                "University of Maine (System)",
+                "Maine College of Art",
+                "Maine Maritime Academy",
+                "College of the Atlantic",
+                "Bates College",
+                "University of Southern Maine",
+                "Bowdoin College",
+                "University of New England, Westbrook College Campus",
+                "Colby College"
+            ]
+        },
+        "Texas": {
+            "universities": [
+                "Texas Christian University",
+                "University of St. Thomas - Houston",
+                "Wharton County Junior College",
+                "Lubbock Christian University",
+                "Howard Payne University",
+                "Houston Baptist University",
+                "University of Texas at Austin",
+                "University of Texas Permian Basin",
+                "Texas Tech University Health Science Center",
+                "West Texas A&M University",
+                "Baylor College of Dentistry",
+                "Abilene Christian University",
+                "Tyler Junior College",
+                "Trinity Valley Community College",
+                "Lamar University - Port Arthur",
+                "Lamar University",
+                "Baylor University",
+                "Letourneau University",
+                "Texas Southmost College",
+                "University of North Texas",
+                "Hardin-Simmons University",
+                "Tarrant County College District",
+                "Wiley College",
+                "Alamo Colleges",
+                "Austin College",
+                "Jarvis Christian College",
+                "Amberton University",
+                "Schreiner University",
+                "Tarrant County College District Office",
+                "University of Texas at San Antonio",
+                "The University of Texas at Dallas",
+                "University of Texas at Brownsville",
+                "University of St. Thomas, Houston",
+                "Lone Star College",
+                "Bryan College",
+                "Sul Ross State University",
+                "Oblate School of Theology",
+                "Texas Southern University",
+                "Our Lady of the Lake University",
+                "Texas Woman's University",
+                "Dallas Christian College",
+                "Dallas Baptist University",
+                "Texas A&M University - Kingsville",
+                "Paul Quinn College",
+                "Huston-Tillotson University",
+                "Dallas College",
+                "Midland College",
+                "University of Mary Hardin-Baylor",
+                "University of North Texas System",
+                "Prairie View A&M University",
+                "Southern Methodist University",
+                "University of Texas at Tyler",
+                "Southwestern Adventist University",
+                "St. Edwards University",
+                "University of Houston - Victoria",
+                "University of Houston - Downtown",
+                "University of Houston - Clear Lake",
+                "Concordia University, Austin",
+                "Angelo State University",
+                "University of Dallas",
+                "St. Mary's University of San Antonio",
+                "Texas Tech University",
+                "Sam Houston State University",
+                "Wayland Baptist University",
+                "Texas Wesleyan University",
+                "Texas Lutheran University",
+                "University of Houston",
+                "McMurry University",
+                "Odessa College",
+                "Texas A&M University",
+                "Midwestern State University",
+                "Lee College",
+                "Houston Community College",
+                "University of Texas at El Paso",
+                "Trinity University",
+                "Texas A&M University - Texarkana",
+                "Texas A&M University - Corpus Christi",
+                "University of Texas Pan American",
+                "University of Texas Health Center at Houston",
+                "Texas Tech University Health Sciences Center",
+                "University of Texas Health Center at Tyler",
+                "University of Texas Health Science Center at San Antonio",
+                "University of Texas Medical Branch Galveston",
+                "Tarleton State University",
+                "University of Texas at Arlington",
+                "University of the Incarnate World",
+                "University of Texas Southwestern Medical Center at Dallas"
+            ]
+        },
+        "Alaska": {
+            "universities": [
+                "University of Alaska - Southeast",
+                "Alaska Pacific University",
+                "Alaska Bible College",
+                "University of Alaska (System)",
+                "University of Alaska - Fairbanks"
+            ]
+        },
+        "Hawaii": {
+            "universities": [
+                "Atlantic International University",
+                "University of Hawai`i at Hilo",
+                "Chaminade University of Honolulu",
+                "Brigham Young University Hawaii",
+                "Hawaii Pacific University",
+                "University of Hawaii - Hilo"
+            ]
+        },
+        "Kansas": {
+            "universities": [
+                "Fort Hays State University",
+                "Fort Scott Community College",
+                "Johnson County Community College",
+                "Wichita State University",
+                "Washburn University",
+                "Baker University",
+                "Friends University",
+                "Barclay College",
+                "Kansas State University",
+                "Bethany College Kansas",
+                "Manhattan Christian College",
+                "Sterling College",
+                "Southwestern College Kansas",
+                "Emporia State University",
+                "Mid-America Nazarene University",
+                "McPherson College",
+                "Bethel College Newton"
+            ]
+        },
+        "Nevada": {
+            "universities": [
+                "Sierra Nevada College",
+                "College of Southern Nevada",
+                "University of Nevada Las Vegas",
+                "University of Nevada, Reno",
+                "University of Nevada - Reno",
+                "University of Nevada - Las Vegas",
+                "Nevada System of Higher Education"
+            ]
+        },
+        "Oregon": {
+            "universities": [
+                "Chemeketa Community College",
+                "Oregon Health and Science University",
+                "National College of Natural Medicine",
+                "Multnomah Bible College",
+                "Oregon Health Sciences University",
+                "University of Portland",
+                "Oregon State University",
+                "George Fox University",
+                "Lewis and Clark College",
+                "Western Oregon University",
+                "Tillamook Bay Community College",
+                "Corban University",
+                "Linfield College",
+                "University of Oregon",
+                "University of Western States",
+                "Southern Oregon University",
+                "Southwestern Oregon Community College",
+                "Eastern Oregon University",
+                "Mt. Hood Community College",
+                "Warner Pacific College",
+                "Portland Community College",
+                "Pacific University",
+                "Portland State University",
+                "Willamette University"
+            ]
+        },
+        "Alabama": {
+            "universities": [
+                "Jacksonville State University",
+                "Tuskegee University",
+                "Oakwood College",
+                "University of Mobile",
+                "University of Alabama - Tuscaloosa",
+                "Miles College",
+                "University of Montevallo",
+                "Talladega College",
+                "Auburn University at Montgomery",
+                "University of West Alabama",
+                "University of South Alabama",
+                "University of North Alabama",
+                "Auburn University",
+                "Faulkner University",
+                "Shelton State Community College",
+                "Alabama Agricultural and Mechanical University",
+                "Alabama State University",
+                "University of Alabama at Birmingham",
+                "The University of Alabama"
+            ]
+        },
+        "Arizona": {
+            "universities": [
+                "Arizona State University",
+                "Grand Canyon University",
+                "University of Phoenix",
+                "The University of Arizona",
+                "Northern Arizona University",
+                "Northcentral University",
+                "Embry Riddle Aeronautical University, Prescott",
+                "Northland Pioneer College",
+                "Midwestern University - Arizona",
+                "Maricopa Community Colleges"
+            ]
+        },
+        "Florida": {
+            "universities": [
+                "Embry-Riddle Aeronautical University",
+                "Central Bible College",
+                "University of South Florida",
+                "Valencia College",
+                "University of West Florida",
+                "Barry University",
+                "St. Thomas University",
+                "Miami Dade College",
+                "Jacksonville University",
+                "Florida Southern College",
+                "University of Central Florida",
+                "Florida Gulf Coast University",
+                "Florida International University",
+                "Bethune-Cookman University",
+                "Ave Maria University",
+                "Palm Beach State College",
+                "Florida Atlantic University",
+                "Broward College",
+                "University of North Florida",
+                "Pasco-Hernando State College",
+                "Palmer College of Chiropractic",
+                "Flagler College",
+                "Lynn University",
+                "Gulf Coast State College",
+                "Florida Memorial University",
+                "Lake-Sumter State College",
+                "Florida Institute of Technology",
+                "University of Florida",
+                "Carlos Albizu University",
+                "Florida Agricultural and Mechanical University",
+                "Indian River State College",
+                "Warner Southern College",
+                "Southeastern University",
+                "Hodges University",
+                "Hobe Sound Bible College",
+                "Nova Southeastern University",
+                "New College of Florida",
+                "University of Tampa",
+                "Palm Beach Atlantic University"
+            ]
+        },
+        "Georgia": {
+            "universities": [
+                "Toccoa Falls College",
+                "Savannah College of Art and Design",
+                "Morehouse College",
+                "Georgia State University",
+                "Valdosta State University",
+                "Morris Brown College",
+                "Life University",
+                "Clark Atlanta University",
+                "Brewton-Parker College",
+                "Wesleyan College",
+                "Savannah State University",
+                "American InterContinental University - Atlanta",
+                "Georgia Institute of Technology",
+                "Columbus University",
+                "Emory University",
+                "Savannah Technical College",
+                "University System of Georgia",
+                "Morehouse School of Medicine",
+                "Oglethorpe University",
+                "Emmanuel College Georgia",
+                "Clayton College & State University",
+                "Berry College",
+                "Georgia Gwinnett College",
+                "Agnes Scott College",
+                "Augusta University",
+                "Georgia Southern University",
+                "American InterContinental University - Georgia",
+                "American InterContinental University - Ft. Lauderdale",
+                "Brenau University",
+                "Paine College",
+                "Albany State University",
+                "Georgia Southwestern University",
+                "Kennesaw State University",
+                "Bauder College",
+                "University of North Georgia",
+                "Covenant College",
+                "Columbus State University",
+                "Augusta State University",
+                "Mercer University",
+                "Atlanta Metropolitan State College",
+                "Spelman College",
+                "Lagrange College"
+            ]
+        },
+        "Indiana": {
+            "universities": [
+                "Franklin College",
+                "Huntington College",
+                "Grace College",
+                "Indiana University at South Bend",
+                "Ball State University",
+                "Holy Cross College",
+                "Indiana University - East",
+                "Indiana University at Kokomo",
+                "Indiana University - Northwest",
+                "Hanover College",
+                "Indiana State University",
+                "University of Southern Indiana",
+                "Indiana University Purdue University Indianapolis",
+                "St. Mary-of-the-Woods College",
+                "St. Mary's College Indiana",
+                "University of Evansville",
+                "Purdue University",
+                "University of Indianapolis",
+                "DePauw University",
+                "Butler University",
+                "Indiana University-Purdue University at Fort Wayne",
+                "Valparaiso University",
+                "Wabash College",
+                "Calumet College of St. Joseph",
+                "Indiana University Bloomington",
+                "Independent Colleges of Indiana",
+                "Indiana Wesleyan University",
+                "Indiana Institute of Technology",
+                "Manchester College",
+                "Indiana University-Purdue University at Columbus",
+                "Bethel College Mishawaka",
+                "Martin University",
+                "Indiana University - Southeast"
+            ]
+        },
+        "Montana": {
+            "universities": [
+                "Great Falls College Montana State University",
+                "Montana State University",
+                "Carroll College Helena",
+                "Montana State University - Billings",
+                "Montana State University - Northern",
+                "Montana Tech",
+                "University of Montana Western",
+                "University of Montana"
+            ]
+        },
+        "Vermont": {
+            "universities": [
+                "Green Mountain College",
+                "Bennington College",
+                "Middlebury College",
+                "St. Michael's College",
+                "Castleton State College",
+                "Norwich University",
+                "Goddard College",
+                "Vermont Law School",
+                "University of Vermont"
+            ]
+        },
+        "Wyoming": {
+            "universities": [
+                "Western Wyoming Community College",
+                "University of Wyoming"
+            ]
+        },
+        "Arkansas": {
+            "universities": [
+                "Southern Arkansas University",
+                "Arkansas State University, Beebe",
+                "Arkansas State University, Mountain Home",
+                "Arkansas State University",
+                "Southern Arkansas University in Magnolia",
+                "Ouachita Baptist University",
+                "University of Arkansas at Little Rock",
+                "Arkansas State University, Newport",
+                "Shorter College",
+                "University of Arkansas at Fayetteville",
+                "Hendrix College",
+                "Henderson State Univerisity",
+                "University of Central Arkansas",
+                "University of Arkansas (System)",
+                "Central Baptist College",
+                "Harding University",
+                "John Brown University",
+                "University of the Ozarks",
+                "Arkansas Tech University",
+                "University of Arkansas for Medical Sciences",
+                "Lyon College",
+                "Williams Baptist College"
+            ]
+        },
+        "Colorado": {
+            "universities": [
+                "Western State Colorado University",
+                "IntelliTec College - Grand Junction",
+                "American Indian College",
+                "University of Colorado Colorado Springs",
+                "Adams State College",
+                "Denver Seminary",
+                "Naropa University",
+                "Community College of Denver",
+                "Metropolitan State University of Denver",
+                "Colorado Christian University",
+                "Colorado College",
+                "Colorado Mesa University",
+                "Colorado School of Mines",
+                "Colorado Mountain College",
+                "University of Colorado Denver",
+                "University of Colorado Anschutz Medical Campus",
+                "University of Colorado at Colorado Springs",
+                "Front Range Community College",
+                "Fort Lewis College",
+                "University of Denver",
+                "University of Northern Colorado",
+                "Western Colorado University"
+            ]
+        },
+        "Delaware": {
+            "universities": [
+                "University of Delaware"
+            ]
+        },
+        "Illinois": {
+            "universities": [
+                "VanderCook College of Music",
+                "Rush University",
+                "University of Illinois, Chicago",
+                "City Colleges of Chicago",
+                "Elmhurst College",
+                "Quincy University",
+                "Harper College",
+                "Academy of Art College",
+                "Adler School of Professional Psychology",
+                "Danville Area Community College",
+                "Greenville College",
+                "John Marshall Law School",
+                "Judson University",
+                "Kankakee Community College",
+                "University of Illinois at Springfield",
+                "University of Illinois at Chicago",
+                "Olivet Nazarene University",
+                "Lake Forest College",
+                "College of DuPage",
+                "University of Chicago",
+                "Chicago State University",
+                "University of Health Sciences",
+                "North Central College",
+                "Northwestern University",
+                "University of Illinois at Urbana-Champaign",
+                "Illinois College",
+                "Northern Illinois University",
+                "North Park University",
+                "Adler University",
+                "Elgin Community College",
+                "Illinois Wesleyan University",
+                "Moraine Valley Community College",
+                "Augustana College",
+                "Moody Bible Institute",
+                "Concordia University Chicago",
+                "Illinois State University",
+                "Illinois Institute of Technology",
+                "Eureka College",
+                "Midwestern University",
+                "Southern Illinois University",
+                "Blessing-Rieman College of Nursing",
+                "Wheaton College",
+                "McKendree College",
+                "Blackburn College",
+                "Southern Illinois University at Edwardsville",
+                "Mennonite College of Nursing",
+                "University of Illinois Springfield",
+                "Black Hawk College",
+                "Aurora University",
+                "Governors State University",
+                "Northeastern Illinois University",
+                "Bradley University",
+                "Dominican University",
+                "Lake Forest Graduate School of Management",
+                "Catholic Theological Union",
+                "Knox College",
+                "Eastern Illinois University",
+                "Millikin University",
+                "University of St. Francis",
+                "The Art Institute of Chicago",
+                "Western Illinois University",
+                "Benedictine University",
+                "National-Louis University",
+                "National University of Health Sciences",
+                "St. Xavier University",
+                "East West University"
+            ]
+        },
+        "Kentucky": {
+            "universities": [
+                "Bellarmine College",
+                "Berea College",
+                "Campbellsville University",
+                "Eastern Kentucky University",
+                "Brescia University",
+                "Centre College",
+                "Kentucky State University",
+                "Asbury College",
+                "Morehead State University",
+                "University of the Cumberlands",
+                "Murray State University",
+                "Alice Lloyd College",
+                "University of Kentucky",
+                "Kentucky Wesleyan College",
+                "University of Louisville",
+                "Lindsey Wilson College",
+                "Northern Kentucky University",
+                "Frontier Nursing University",
+                "Maysville Community & Technical College (KCTCS)",
+                "Western Kentucky University"
+            ]
+        },
+        "Maryland": {
+            "universities": [
+                "University of Maryland Medical System",
+                "University of Maryland at College Park",
+                "Baltimore City Community College",
+                "Webber College",
+                "Coppin State College",
+                "Towson University, PAGS Dept",
+                "Prince George's Community College",
+                "University of Maryland Baltimore County",
+                "University of Maryland (System)",
+                "Capitol College",
+                "Frederick Community College",
+                "Anne Arundel Community College",
+                "Johns Hopkins University",
+                "University of Maryland, Baltimore County",
+                "Morgan State University",
+                "Mount St. Mary's College Maryland",
+                "Bowie State University",
+                "Loyola University Maryland",
+                "University of Maryland, Baltimore",
+                "College of Notre Dame of Maryland",
+                "Community College of Baltimore County",
+                "Notre Dame of Maryland University",
+                "Stevenson University",
+                "St. Mary's College of Maryland",
+                "Harford Community College",
+                "University of Maryland",
+                "Washington College",
+                "University of Baltimore",
+                "University of Maryland at Baltimore"
+            ]
+        },
+        "Michigan": {
+            "universities": [
+                "Lake Superior State University",
+                "Oakland University",
+                "University of Detroit Mercy",
+                "Macomb Community College",
+                "Northern Michigan University",
+                "Cranbrook Academy of Art",
+                "Michigan Technological University",
+                "Schoolcraft College",
+                "Michigan State University",
+                "Western Michigan University",
+                "Eastern Michigan University",
+                "Siena Heights University",
+                "University of Michigan",
+                "Northwood University, Michigan",
+                "Washtenaw Community College",
+                "Olivet College",
+                "Henry Ford College",
+                "Andrews University",
+                "Hillsdale College",
+                "Center for Humanistic Studies",
+                "Lansing Community College",
+                "Hope College",
+                "Alma College",
+                "Wayne State University",
+                "Albion College",
+                "Cleary College",
+                "Adrian College",
+                "St. Clair County Community College",
+                "Kalamazoo College",
+                "University of Michigan - Flint",
+                "University of Michigan - Dearborn",
+                "Grand Rapids Community College",
+                "University of Michigan - Ann Arbor",
+                "Kettering University (GMI)",
+                "Calvin College",
+                "Central Michigan University",
+                "Kellogg Community College",
+                "Lawrence Technological University",
+                "Ferris State University"
+            ]
+        },
+        "Missouri": {
+            "universities": [
+                "State Fair Community College",
+                "University of Missouri - Saint Louis",
+                "Missouri Western State College",
+                "Westminster College Fulton",
+                "St. Louis Community College",
+                "University of Missouri - Columbia",
+                "American Business & Technology University",
+                "Saint Louis University",
+                "William Jewell College",
+                "William Woods University",
+                "Hannibal-Lagrange College",
+                "Missouri Baptist College",
+                "Central Methodist College",
+                "University of Missouri - Kansas City",
+                "Washington University in St. Louis",
+                "Northwest Missouri State University",
+                "Webster University",
+                "Missouri University of Science and Technology",
+                "Park College",
+                "Southeast Missouri State University",
+                "Jefferson College",
+                "Maryville University",
+                "Southwest Baptist University",
+                "University of Central Missouri",
+                "Stephens College",
+                "St. Louis College of Pharmacy",
+                "St. Louis University",
+                "Logan College of Chiropractic",
+                "University of Missouri System",
+                "Fontbonne College",
+                "Culver-Stockton College",
+                "Evangel University",
+                "Avila University",
+                "Columbia College of Missouri",
+                "Drury College",
+                "Central Christian College of the Bible"
+            ]
+        },
+        "Nebraska": {
+            "universities": [
+                "Chadron State College",
+                "Peru State College",
+                "Concordia College, Seward",
+                "University of Nebraska - Kearney",
+                "Hastings College",
+                "University of Nebraska - Omaha",
+                "University of Nebraska (System)",
+                "Midland Lutheran College",
+                "York College Nebraska",
+                "Creighton University",
+                "Nebraska Wesleyan University",
+                "University of Nebraska Medical Center",
+                "College of St. Mary",
+                "Doane College",
+                "Clarkson College",
+                "Wayne State College"
+            ]
+        },
+        "New York": {
+            "universities": [
+                "Binghamton University",
+                "City University of New York, Queens College",
+                "Pacific College of Oriental Medicine",
+                "Brooklyn Law School",
+                "Boricua College",
+                "College of Mount St. Vincent",
+                "Iona College",
+                "Elmira College",
+                "Schenectady County Community College",
+                "Molloy College",
+                "Adelphi University",
+                "Albany College of Pharmacy",
+                "Columbia University",
+                "Albany Law School",
+                "SUNY Buffalo State",
+                "City University of New York (CUNY)",
+                "Utica College",
+                "Sarah Lawrence College",
+                "City University of New York, New York City Technical College",
+                "Brookhaven National Laboratory",
+                "St. Joseph's University",
+                "Pace University",
+                "Cornell University",
+                "SUNY - The State University of New York",
+                "Vassar College",
+                "Mercy College",
+                "Siena College",
+                "Suffolk County Community College",
+                "New York Institute of Technology",
+                "Clarkson University",
+                "Hartwick College",
+                "New York University",
+                "New York Medical College",
+                "New York Law School",
+                "New York Film Academy",
+                "New York College of Podiatric Medicine",
+                "New York Chiropractic College",
+                "New York Academy of Art, Graduate School of Figurative Art",
+                "Queensborough Community College (CUNY)",
+                "Hobart and William Smith Colleges",
+                "Audrey Cohen College",
+                "Genesee Community College",
+                "Hilbert College",
+                "Canisius College",
+                "Nazareth College",
+                "Niagara University",
+                "D'Youville College",
+                "Yeshiva University",
+                "City College of New York",
+                "Houghton College",
+                "Alfred University",
+                "The New School",
+                "State University of New York College at Plattsburgh",
+                "Weill Cornell Medicine",
+                "Mount St. Mary College",
+                "Michael Page",
+                "University of Rochester",
+                "Fordham University",
+                "Albany Medical Center",
+                "Colgate University",
+                "Pratt Institute",
+                "State University of New York College at Fredonia",
+                "Rochester Institute of Technology",
+                "City University of New York, Bernard M. Baruch College",
+                "Wagner College",
+                "St. John's University",
+                "Rockland Community College",
+                "College of St. Rose",
+                "University at Buffalo",
+                "State University of New York at Stony Brook",
+                "State University of New York College of Agriculture and Technology at Cobleskill",
+                "Long Island University",
+                "Cold Spring Harbor Laboratory",
+                "State University of New York College at Cortland",
+                "Manhattan College",
+                "St. Bonaventure University",
+                "State University of New York Upstate Medical University",
+                "Barnard College - Columbia University",
+                "State University of New York College at Brockport",
+                "Stony Brook University",
+                "City University of New York, Graduate School and University Center",
+                "Daemen College",
+                "Le Moyne College",
+                "City University of New York, Hunter College",
+                "Weill Medical College of Cornell University",
+                "City University of New York, Medgar Evers College",
+                "City University of New York, Lehman College",
+                "SUNY Brockport",
+                "Keuka College",
+                "SUNY Westchester Community College",
+                "State University of NY at Oneonta",
+                "Albert Einstein College of Medicine",
+                "State University of New York College at Old Westbury",
+                "Bank Street College of Education",
+                "State University of New York College at Oneonta",
+                "State University of New York at Binghamton",
+                "Hunter College",
+                "Marymount Manhattan College",
+                "City University of New York, John Jay College of Criminal Justice",
+                "Bard College",
+                "Laboratory Institute of Merchandising",
+                "Teachers College, Columbia University",
+                "Hofstra University",
+                "New York University (NYU)",
+                "Syracuse University",
+                "State University of New York at New Paltz",
+                "Marist College",
+                "Ithaca College",
+                "College of Staten Island, City University of New York",
+                "Manhattanville College",
+                "State University of New York at Oswego",
+                "Manhattan School of Music"
+            ]
+        },
+        "Oklahoma": {
+            "universities": [
+                "Oklahoma State University",
+                "Oklahoma City Community College",
+                "Northeastern State University",
+                "Southern Nazarene University",
+                "Tulsa Community College",
+                "University of Oklahoma",
+                "Cameron University",
+                "Southeastern Oklahoma State University",
+                "University of Science and Arts of Oklahoma",
+                "Oral Roberts University",
+                "Oklahoma State University - Tulsa",
+                "Oklahoma State University Center for Health Sciences",
+                "East Central University",
+                "Oklahoma Panhandle State University",
+                "Oklahoma City University",
+                "Oklahoma Christian University",
+                "Northwestern Oklahoma State University",
+                "Oklahoma Baptist University"
+            ]
+        },
+        "Virginia": {
+            "universities": [
+                "Old Dominion University",
+                "Virginia Tech",
+                "George Mason University",
+                "James Madison University  Dept. of Biology",
+                "Strayer University",
+                "Mary Baldwin University",
+                "Marymount University",
+                "National American University, Colorado Campuses",
+                "Norfolk State University",
+                "Northern Virginia Community College",
+                "Southside Va Community College",
+                "Radford University",
+                "Southern Virginia University",
+                "Lynchburg College",
+                "Sweet Briar College",
+                "Virginia Union University",
+                "Hampton University",
+                "Virginia Commonwealth University",
+                "University of Mary Washington",
+                "University of Virginia",
+                "University of Virginia, College at Wise",
+                "James Madison University",
+                "Longwood University",
+                "University of Richmond",
+                "Hollins University",
+                "Hampden-Sydney College",
+                "Atlantic University",
+                "Averett University",
+                "Ferrum College",
+                "Bluefield College",
+                "Emory & Henry College",
+                "Eastern Virginia Medical School",
+                "Eastern Mennonite University",
+                "Bridgewater College",
+                "Bryant and Stratton College",
+                "Christopher Newport University",
+                "Virginia Military Institute",
+                "Virginia State University",
+                "Washington and Lee University",
+                "Liberty University",
+                "Virginia Wesleyan College",
+                "William & Mary"
+            ]
+        },
+        "Louisiana": {
+            "universities": [
+                "Grambling State University",
+                "Nicholls State University",
+                "The Tulane University of New Orleans",
+                "Franciscan Missionaries of Our Lady University",
+                "Southeastern Louisiana University",
+                "Southern University - New Orleans",
+                "University of Louisiana at Lafayette",
+                "Northwestern State University of Louisiana",
+                "Dillard University",
+                "University of Louisiana at Monroe",
+                "Xavier University of Louisiana",
+                "University of New Orleans",
+                "Tulane University",
+                "South Louisiana Community College",
+                "Loyola University New Orleans",
+                "Louisiana State University in Shreveport",
+                "McNeese State University",
+                "Centenary College of Louisiana",
+                "Louisiana State University at Alexandria",
+                "Louisiana State University and Agricultural and Mechanical College",
+                "Louisiana State University"
+            ]
+        },
+        "Minnesota": {
+            "universities": [
+                "Minneapolis College of Art and Design",
+                "Hamline University",
+                "Grace University",
+                "Augsburg College",
+                "Augsburg University",
+                "St. Catherine University",
+                "Gustavus Adolphus College",
+                "University of Minnesota Crookston",
+                "Alfred Adler Graduate School",
+                "Martin Luther College",
+                "Minnesota State University, Mankato",
+                "Carleton College",
+                "College of Saint Benedict & Saint John's University",
+                "Concordia College",
+                "Northwestern College of Chiropractic",
+                "Concordia College, St. Paul",
+                "St. Mary's University of Minnesota",
+                "Concordia College, Moorhead",
+                "St. Olaf College",
+                "The College of St. Scholastica",
+                "Capella University",
+                "Fond du Lac Tribal and Community College",
+                "College of St. Scholastica",
+                "College of St. Catherine",
+                "University of Minnesota - Crookston",
+                "University of Minnesota - Duluth",
+                "Northwestern College St. Paul",
+                "University of Minnesota - Morris",
+                "St. Cloud Technical & Community College",
+                "South Central College ",
+                "University of Minnesota Twin Cities",
+                "University of St. Thomas, St. Paul",
+                "Winona State University",
+                "Metropolitan State University"
+            ]
+        },
+        "New Haven": {
+            "universities": [
+                "Albertus Magnus College"
+            ]
+        },
+        "Tennessee": {
+            "universities": [
+                "Middle Tennessee State University",
+                "University of Tennessee - Chattanooga",
+                "Meharry Medical College",
+                "Lee University",
+                "Tennessee State University",
+                "University of Tennessee, Knoxville",
+                "Le Moyne-Owen College",
+                "Tennessee Technological University",
+                "Vanderbilt University",
+                "Fisk University",
+                "Jackson State Community College",
+                "Maryville College",
+                "Lipscomb University",
+                "Milligan College",
+                "Tennessee Wesleyan College",
+                "University of Tennessee Health Science Center",
+                "University of Tennessee - Knoxville",
+                "Cumberland University",
+                "Volunteer State Community College",
+                "Austin Peay State University",
+                "Southern Adventist University",
+                "Freed-Hardeman University",
+                "University of Tennessee at Martin",
+                "Carson-Newman College",
+                "University of Tennessee - Martin",
+                "University of Tennessee - Memphis",
+                "University of Tennessee Space Institute",
+                "Christian Brothers University",
+                "University of Memphis",
+                "Lane College"
+            ]
+        },
+        "Wisconsin": {
+            "universities": [
+                "Edgewood College",
+                "Wisconsin Lutheran College",
+                "Concordia University, Mequon",
+                "Carthage College",
+                "Nicolet College",
+                "University of Wisconsin - Stevens Point, Diversity and College Access",
+                "University of Wisconsin - La Crosse",
+                "University of Wisconsin - Madison",
+                "University of Wisconsin-Stout",
+                "University of Wisconsin - Green Bay",
+                "University of Wisconsin - Eau Claire",
+                "University of Wisconsin - Milwaukee",
+                "University of Wisconsin - Oshkosh",
+                "University of Wisconsin - Parkside",
+                "Carroll University",
+                "University of Wisconsin - Platteville",
+                "University of Wisconsin - Stevens Point",
+                "University of Wisconsin - Superior",
+                "University of Wisconsin - Whitewater",
+                "Northland College",
+                "University of Wisconsin-Parkside",
+                "Viterbo College",
+                "Mount Mary College",
+                "Milwaukee School of Engineering",
+                "Medical College of Wisconsin",
+                "Marquette University",
+                "Marian College",
+                "Maranatha Baptist Bible College",
+                "University of Wisconsin - River Falls",
+                "Alverno College"
+            ]
+        },
+        "California": {
+            "universities": [
+                "Grand River Solutions",
+                "Keck Graduate Institute of Applied Life Sciences",
+                "Norco College",
+                "University of California Merced",
+                "Biola University",
+                "Azusa Pacific University",
+                "Dominican School of Philosophy and Theology",
+                "Alliant International University",
+                "The Scripps Research Institute",
+                "San Mateo County Community College District",
+                "Touro University California",
+                "Menlo College",
+                "Cerritos College",
+                "Southwestern Community College District",
+                "American World University",
+                "San Diego Community College District",
+                "Cal Poly Pomona",
+                "Saint Mary's College of California",
+                "California College of the Arts",
+                "Samuel Merritt University",
+                "University of California, Hastings College of Law",
+                "University of California, Santa Barbara",
+                "University of California, Santa Cruz",
+                "University of California Office of the President",
+                "Mt. San Antonio College",
+                "Foothill-De Anza Community College District",
+                "Glendale Community College",
+                "Charles R. Drew University of Medicine and Science",
+                "San Jose State University",
+                "University of La Verne",
+                "Ohlone College",
+                "Job Elephant",
+                "Otis College of Art & Design",
+                "Pacific Union College",
+                "Pacific Oaks College",
+                "Life Chiropractic College West",
+                "Pacifica Graduate Institute",
+                "Cuesta College",
+                "University of California San Francisco",
+                "Mount St. Mary's University California",
+                "Sonoma State University",
+                "Coast Community College District",
+                "National University",
+                "Occidental College",
+                "MiraCosta College",
+                "Notre Dame de Namur University",
+                "University of San Diego",
+                "University of Southern California",
+                "Naval Postgraduate School",
+                "Grossmont–Cuyamaca Community College District",
+                "Harvey Mudd College",
+                "College of the Canyons",
+                "California State University, Northridge",
+                "University of the Pacific",
+                "Hope International University",
+                "University of San Francisco",
+                "Minerva University",
+                "American Jewish University",
+                "La Sierra University",
+                "San Diego State University",
+                "Palomar College",
+                "University of California Irvine",
+                "Loma Linda University",
+                "Phillips Graduate University",
+                "Pepperdine University",
+                "Palo Alto University",
+                "Golden Gate University",
+                "Strata Information Group",
+                "University of California, Davis",
+                "Wright Institute",
+                "California State University, San Bernadino",
+                "Los Rios Community College District",
+                "Cal Poly Humboldt",
+                "University of California Agriculture and Natural Resources",
+                "Kern Community College District",
+                "California State University, Long Beach",
+                "University of Redlands",
+                "Chapman University",
+                "Western University of Health Sciences",
+                "California State University, Fresno",
+                "California State University, East Bay",
+                "California University of Science and Medicine (CUSM)",
+                "California State University, Chico",
+                "California State University, San Bernardino",
+                "California State University, Sacramento",
+                "Concordia University, Irvine",
+                "California Western School of Law",
+                "San Francisco State University",
+                "California University of Management and Sciences",
+                "California State University, Bakersfield",
+                "Vanguard University",
+                "California Institute of Integral Studies",
+                "Calvary Bible College",
+                "West Coast University",
+                "Butte College",
+                "California State University, Los Angeles",
+                "California State University, Fullerton",
+                "Westmont College",
+                "California State University, Stanislaus",
+                "California State University, San Marcos",
+                "Fresno Pacific University",
+                "Whittier College",
+                "Art Center College of Design",
+                "Southwestern College",
+                "Riverside Community College District",
+                "Rancho Santiago Community College District",
+                "California Polytechnic State University",
+                "University of California, San Diego",
+                "University of California - Los Angeles",
+                "Santa Barbara City College",
+                "California Coast University",
+                "University of California, Los Angeles",
+                "California Baptist University",
+                "California State Polytechnic University - Pomona",
+                "California Institute of Technology (Caltech)",
+                "Contra Costa College",
+                "International American University",
+                "City of Hope ",
+                "University of California, Berkeley",
+                "Stanford University",
+                "Gemological Institute of America",
+                "Santa Clara University",
+                "California Institute of the Arts",
+                "California State University, Monterey Bay",
+                "South Orange County Community College District",
+                "California Maritime Academy",
+                "Santa Monica College",
+                "California College San Diego",
+                "Claremont McKenna College",
+                "Claremont Lincoln University",
+                "California Lutheran University",
+                "California Polytechnic State University - San Luis Obispo",
+                "Los Angeles Community College District",
+                "Northeastern University",
+                "University of California, Riverside",
+                "California State University, Channel Islands",
+                "Claremont Graduate University"
+            ]
+        },
+        "New Jersey": {
+            "universities": [
+                "Rowan University",
+                "New Jersey City University",
+                "Saint Peter's University",
+                "Rutgers, The State University of New Jersey",
+                "Bergen Community College",
+                "Saint Elizabeth University",
+                "Felician College",
+                "Mercer County Community College",
+                "New Jersey Institute of Technology",
+                "Bloomfield College",
+                "The College of New Jersey",
+                "Caldwell University",
+                "County College of Morris",
+                "Montclair State University",
+                "Richard Stockton College of New Jersey",
+                "New Jersey Institute of Technology (NJIT)",
+                "Monmouth University",
+                "Drew University",
+                "Passaic County Community College",
+                "Essex County College",
+                "Stevens Institute of Technology",
+                "Stockton University",
+                "Kean University",
+                "Princeton University",
+                "William Paterson University",
+                "Kean University of New Jersey",
+                "Georgian Court College",
+                "Union College"
+            ]
+        },
+        "New Mexico": {
+            "universities": [
+                "University of the Southwest",
+                "New Mexico Highlands University",
+                "Eastern New Mexico University",
+                "University of New Mexico",
+                "Santa Fe Community College",
+                "Western New Mexico University",
+                "New Mexico Institute of Mining and Technology",
+                "Clovis Community College",
+                "The College of Santa Fe"
+            ]
+        },
+        "Washington": {
+            "universities": [
+                "Washington State University, Vancouver",
+                "Seattle University",
+                "University of Washington - Information School",
+                "Pacific Lutheran University",
+                "Seattle Colleges District",
+                "Northwest University",
+                "Whitman College",
+                "Shoreline Community College",
+                "University of Washington",
+                "Central Washington University",
+                "Walla Walla University",
+                "Washington State University",
+                "Gonzaga University",
+                "Bellevue College",
+                "Washington State University, Spokane",
+                "Bastyr University",
+                "Cornish College of the Arts",
+                "Antioch University",
+                "University of Washington, Tacoma",
+                "Antioch University Seattle",
+                "Skagit Valley College",
+                "Walla Walla Community College",
+                "University of Puget Sound",
+                "Western Washington University",
+                "Yakima Valley College",
+                "Eastern Washington University",
+                "Columbia Basin College",
+                "Cascadia College",
+                "Pierce College District",
+                "Fred Hutch Cancer Center",
+                "Whitworth College"
+            ]
+        },
+        "Connecticut": {
+            "universities": [
+                "University of Bridgeport",
+                "Job Target",
+                "Connecticut College",
+                "Central Connecticut State University",
+                "University of Connecticut",
+                "Wesleyan University",
+                "Western Connecticut State University",
+                "Eastern Connecticut State University",
+                "Fairfield University",
+                "Southern Connecticut State University",
+                "Quinnipiac University",
+                "University of New Haven",
+                "University of Saint Joseph",
+                "Northwestern Connecticut Community College",
+                "Charter Oak State College",
+                "Yale University"
+            ]
+        },
+        "Mississippi": {
+            "universities": [
+                "Mississippi Valley State University",
+                "Jackson State University",
+                "Jones College",
+                "University of Mississippi",
+                "Alcorn State University",
+                "University of Southern Mississippi",
+                "William Carey College",
+                "University of Mississippi Medical Center",
+                "Belhaven University",
+                "Mississippi University for Women",
+                "Millsaps College",
+                "Blue Mountain College",
+                "Mississippi State University",
+                "Mississippi College"
+            ]
+        },
+        "North Dakota": {
+            "universities": [
+                "University of North Dakota",
+                "Lake Region State College",
+                "University of Mary",
+                "Dakota College at Bottineau",
+                "Valley City State University",
+                "Mayville State University",
+                "Dickinson State University",
+                "University of Jamestown",
+                "Williston State College",
+                "Minot State University",
+                "North Dakota University System",
+                "North Dakota State University"
+            ]
+        },
+        "Pennsylvania": {
+            "universities": [
+                "Wilkes University",
+                "University of Pittsburgh at Johnstown",
+                "Lehigh University",
+                "University of Pittsburgh at Bradford",
+                "Wilson College",
+                "University Of Pennsylvania, The Wharton School",
+                "Chatham College",
+                "Haverford College",
+                "Carlow College",
+                "Arcadia University",
+                "Alvernia University",
+                "Ursinus College",
+                "East Stroudsburg University",
+                "Community College of Beaver County",
+                "Cedar Crest College",
+                "Clarion University",
+                "Waynesburg College",
+                "Grove City College",
+                "Clarks Summit University",
+                "West Chester University of Pennsylvania",
+                "Chestnut Hill College",
+                "Penn State",
+                "Westminster College New Wilmington",
+                "University of Valley Forge",
+                "Central Penn College",
+                "Moravian University",
+                "Duquesne University",
+                "University of Scranton",
+                "Harrisburg University of Science and Technology",
+                "Cheyney University of Pennsylvania",
+                "Pennsylvania Institute of Technology",
+                "Franklin and Marshall College",
+                "Albright College",
+                "Juniata College",
+                "Dickinson College",
+                "Widener University",
+                "DeSales University",
+                "Gannon University",
+                "Bryn Athyn College",
+                "Cabrini College",
+                "Millersville University",
+                "Indiana University of Pennsylvania",
+                "Geneva College",
+                "Pennsylvania Academy of the Fine Arts",
+                "Luzerne County Community College",
+                "Pennsylvania State University - Abington",
+                "Pennsylvania State University - Altoona",
+                "Pennsylvania State University at Erie - Behrend College",
+                "Pennsylvania State University at Harrisburg - The Capital College",
+                "Pennsylvania State University - Berks-Lehigh Valley College",
+                "Immaculata University",
+                "Pennsylvania State University - Dickinson Law",
+                "Pennsylvania State University Great Valley",
+                "Pennsylvania State University - Milton S. Hershey Medical Center",
+                "Pennsylvania State University - Schuylkill",
+                "Philadelphia College of Osteopathic Medicine",
+                "Point Park University",
+                "Elizabethtown College",
+                "Lycoming College",
+                "Pennsylvania State University",
+                "Community College of Philadelphia",
+                "Marywood University",
+                "Bloomsburg University of Pennsylvania",
+                "University of Pittsburgh",
+                "Mercyhurst College",
+                "Messiah College",
+                "Commonwealth University of Pennsylvania - Lock Haven",
+                "Millersville University of Pennsylvania",
+                "Lincoln University Pennsylvania",
+                "Misericordia University",
+                "Gwynedd Mercy University",
+                "Edinboro University of Pennsylvania",
+                "University of Pennsylvania",
+                "Moore College of Art and Design",
+                "La Salle University",
+                "Mount Aloysius College",
+                "Lebanon Valley College",
+                "La Roche College",
+                "Muhlenberg College",
+                "Lancaster Bible College",
+                "Neumann College",
+                "King's College",
+                "Drexel University",
+                "Bucknell University",
+                "Gettysburg College",
+                "Curtis Institute of Music",
+                "Holy Family University",
+                "Allegheny College",
+                "Cairn University",
+                "Alvernia College",
+                "Temple University",
+                "California University of Pennsylvania",
+                "Gratz College",
+                "Kutztown University of Pennsylvania",
+                "Swarthmore College",
+                "Susquehanna University",
+                "Carnegie Mellon University",
+                "Franklin & Marshall College"
+            ]
+        },
+        "Rhode Island": {
+            "universities": [
+                "Johnson & Wales University",
+                "University of Rhode Island",
+                "Bryant University",
+                "Rhode Island College",
+                "Brown University",
+                "Providence College",
+                "Community College of Rhode Island"
+            ]
+        },
+        "South Dakota": {
+            "universities": [
+                "Mount Marty College",
+                "University of Sioux Falls",
+                "National American University",
+                "Dakota Wesleyan University",
+                "Dakota State University",
+                "University of South Dakota",
+                "South Dakota School of Mines and Technology",
+                "South Dakota State University",
+                "Sinte Gleska University",
+                "Oglala Lakota College",
+                "Northern State University"
+            ]
+        },
+        "Massachusetts": {
+            "universities": [
+                "Wheaton College Massachusetts",
+                "Gordon College",
+                "Worcester State College",
+                "Amherst College",
+                "Quinsigamond Community College ",
+                "Montserrat College of Art",
+                "Gordon Conwell Theological Seminary",
+                "Framingham State College",
+                "Hampshire College",
+                "Hebrew College",
+                "Lasell College",
+                "Fisher College",
+                "Massachusetts College of Art",
+                "Massachusetts College of Pharmacy and Allied Health Sciences",
+                "Massachusetts Maritime Academy",
+                "Merrimack College",
+                "MGH Institute of Health Professions",
+                "Western New England College",
+                "New England College of Optometry",
+                "New England Conservatory of Music",
+                "Emmanuel College",
+                "Elms College",
+                "Eastern Nazarene College",
+                "Stonehill College",
+                "University of Massachusetts at Amherst",
+                "University of Massachusetts at Boston",
+                "University of Massachusetts at Dartmouth",
+                "University of Massachusetts at Lowell",
+                "Wentworth Institute of Technology",
+                "Brandeis University",
+                "Emerson College",
+                "Bentley University",
+                "Bridgewater State University",
+                "Dana-Farber Cancer Institute",
+                "Harvard University",
+                "University of Massachusetts - Boston",
+                "Worcester Polytechnic Institute",
+                "College of the Holy Cross",
+                "Lesley University",
+                "Williams College",
+                "Boston Architectural College",
+                "Berklee College of Music",
+                "University of Massachusetts - Amherst",
+                "Berkshire Community College",
+                "Bristol Community College",
+                "Bentley College",
+                "Bunker Hill Community College",
+                "William James College",
+                "Cambridge College",
+                "Springfield College",
+                "Massachusetts Institute of Technology (MIT)",
+                "Northern Essex Community College",
+                "Fitchburg State University",
+                "Boston College",
+                "Suffolk University",
+                "University of Massachusetts - Medical School",
+                "Clark University",
+                "Wellesley College",
+                "Boston University",
+                "Anna Maria College",
+                "Worcester State University",
+                "Boston Architectural Center",
+                "Thayer Academy",
+                "American International College",
+                "Babson College",
+                "Springfield Technical Community College",
+                "Smith College",
+                "Salem State University",
+                "Tufts University",
+                "Curry College",
+                "Mount Holyoke College",
+                "Westfield State University",
+                "Simmons University",
+                "Massachusetts College of Liberal Arts",
+                "Bridgewater State College",
+                "Massachusetts College of Art and Design"
+            ]
+        },
+        "New Hampshire": {
+            "universities": [
+                "Colby-Sawyer College",
+                "New England College",
+                "University of New Hampshire at Manchester",
+                "Community College System of New Hampshire",
+                "Franklin Pierce University",
+                "Plymouth State College",
+                "Keene State College",
+                "University of New Hampshire",
+                "Dartmouth College",
+                "Southern New Hampshire University",
+                "Plymouth State University"
+            ]
+        },
+        "West Virginia": {
+            "universities": [
+                "West Virginia School of Osteopathic Medicine",
+                "Appalachian Bible College",
+                "West Liberty State College",
+                "West Virginia State University",
+                "Fairmont State University",
+                "American Public University",
+                "West Virginia University Institute of Technology",
+                "West Virginia Wesleyan College",
+                "Bethany College West Virginia",
+                "Wheeling Jesuit University",
+                "Bluefield State College",
+                "Shepherd College",
+                "University of Charleston",
+                "Marshall University"
+            ]
+        },
+        "North Carolina": {
+            "universities": [
+                "East Carolina University",
+                "Catawba College",
+                "Barton College",
+                "Lenoir-Rhyne College",
+                "High Point University",
+                "Winston-Salem State University",
+                "Lees-McRae College",
+                "William Peace University",
+                "North Carolina Central University",
+                "North Carolina School of the Arts",
+                "North Carolina Wesleyan College",
+                "Campbell University",
+                "Wake Forest University",
+                "University of North Carolina at Chapel Hill",
+                "University of North Carolina at Charlotte",
+                "Brunswick Community College",
+                "Greensboro College",
+                "University of North Carolina at Greensboro",
+                "Guilford College",
+                "University of North Carolina at Pembroke",
+                "Lenoir-Rhyne University",
+                "Pfeiffer University",
+                "Brevard College",
+                "Barber-Scotia College",
+                "Bennett College",
+                "Montreat College",
+                "Chowan College",
+                "Wingate University",
+                "Guilford Technical Community College",
+                "Warren Wilson College",
+                "Appalachian State University",
+                "Davidson College",
+                "Gardner Webb University",
+                "Elizabeth City State University",
+                "Elon University",
+                "Mars Hill College",
+                "Fayetteville State University",
+                "University Of North Carolina At Asheville",
+                "The University of North Carolina at Chapel Hill",
+                "Johnson C. Smith University",
+                "Western Carolina University",
+                "Livingstone College",
+                "Duke University",
+                "Peace College",
+                "North Carolina State University",
+                "University of North Carolina Wilmington",
+                "North Carolina A&T State University",
+                "University of Mount Olive",
+                "Meredith College"
+            ]
+        },
+        "South Carolina": {
+            "universities": [
+                "North Greenville College",
+                "College of Charleston",
+                "Allen University",
+                "Winthrop University",
+                "Coker College",
+                "Sherman College of Straight Chiropractic",
+                "University of Charleston South Carolina",
+                "Newberry College",
+                "Coastal Carolina University",
+                "Bob Jones University",
+                "Medical University of South Carolina",
+                "University of South Carolina - Aiken",
+                "University of South Carolina - Spartanburg",
+                "University of South Carolina - Sumter",
+                "Francis Marion University",
+                "University of South Carolina",
+                "Anderson University",
+                "Charleston Southern University",
+                "Horry-Georgetown Technical College",
+                "Southern Wesleyan University",
+                "Central Carolina Technical College",
+                "Voorhees College",
+                "Columbia International University",
+                "Lander University",
+                "Erskine College",
+                "Clemson University",
+                "Furman University",
+                "Limestone College",
+                "Columbia College South Carolina",
+                "Wofford College"
+            ]
+        },
+        "District of Columbia": {
+            "universities": [
+                "Howard University",
+                "National Defense University",
+                "American University",
+                "The Rockefeller University",
+                "The Catholic University of America",
+                "University of the District of Columbia",
+                "Bay Atlantic University",
+                "Georgetown University"
+            ]
+        }
+    }
+}
+

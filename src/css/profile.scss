@@ -41,6 +41,17 @@ html {
       grid-area: jobs_panel;
     }
 
+    .custom-select .css-qbdosj-Input {
+      grid-area: 1; 
+    }
+    .custom-slider {
+      z-index: 0;
+    }
+    .custom-slider .rc-slider-handle {
+      z-index: 0 !important;
+    }
+
+
     //     @media (max-width: 1432px) {
     //       .profile_grid.side_nav_container,
     //       .profile_grid.job_post_header_container {

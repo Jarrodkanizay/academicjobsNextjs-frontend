@@ -1,29 +1,64 @@
 [
   {
+    "Name": "the university of auckland",
+    "h1": "University of Auckland Jobs",
+    "Title": "Apply University of Auckland (UOA) Jobs ",
+    "Description": "Find 40 Uni jobs in University of Auckland. View uni job vacancies for lecturer, research and postdocs in UOA. New Jobs added daily.",
+    "Keyword": "",
+    "image": "",
+    "alt": "",
+    "content": "",
+    "filter": {
+      "employer_id": "3809"
+    },
+    "footer_h2": "Careers at University of Auckland",
+    "footer_content": "The University of Auckland is a public research university based in Auckland, New Zealand. It is the largest, most comprehensive and highest-ranked university in New Zealand and consistently places among the top 100 universities. Employees working in University of Auckland enjoy many <a href= 'https://www.careers.auckland.ac.nz/' className='link-aj'>employee benefits</a>, such as special leaves schemes, employee assistance programmes, discounted medical insurance and funds for professional development. "
+  },
+  {
+    "Name": "auckland university of technology",
+    "h1": "Auckland University of Technology Jobs",
+    "Title": "Apply Auckland University of Technology (AUT) Jobs",
+    "Description": "Find 139 University jobs in New Zealand. View uni job vacancies for lecturer, research and postdocs in Auckland University of Technology.",
+    "Keyword": "",
+    "image": "",
+    "alt": "",
+    "content": "",
+    "filter": {
+      "employer_id": "3804"
+    },
+    "footer_h2": "Careers at AUT",
+    "footer_content": "AUT is the second largest university in Aotearoa New Zealand. AUT  attracts bright, positive and ambitious staff, and supports achievement. Their values – tika, pono and aroha (integrity, respect and compassion) – are at the heart of everything they do. Employee in AUT enjoy many employee benefits, such as special leaves schemes, AUT free gym membership, employee assistance programme, discounted medical insurance and funds for professional development. "
+  },
+  {
     "Name": "massey university",
-    "Title": "Massey University Jobs",
-    "Description": "massey-university",
-    "Keyword": "massey-university",
-    "image": "/banner-icons/adelaide.png",
+    "h1": "Massey University Jobs",
+    "Title": "Massey University Jobs in New Zealand. Job Vacancies today!",
+    "Description": "Find 20 Massey University jobs found in Albany Auckland. View all Massey University vacancies: vet nurse, administrator and more. New jobs updated daily.",
+    "Keyword": "Massey University Jobs, Massey University Job Vacancies, uni jobs",
+    "image": "",
     "alt": "massey-university",
-    "content": "massey-university",
+    "content": "",
     "filter": {
       "employer_id": "3810"
-    }
+    },
+    "footer_h2": "Careers Opportunities in Massey University",
+    "footer_content": "Massey University is a public research university with campuses in Auckland, Palmerston North and Wellington, New Zealand. The university is known for its ground-breaking research, commitment to innovation, inclusivity and diversity and close bond to local communities. Massey University currently employs over 3,500 people both full and part time across three main campuses.<br/><br/>Massey University offers a wide range of employee benefits, such as additional entitlement on leave, personal development assistance, flexible work arrangement and benefits and support for parents."
   },
   {
     "Name": "university of otago",
-    "Title": "University of Otago Jobs",
-    "Description": "University of Otago",
-    "Keyword": "University of Otago",
-    "image": "/banner-icons/adelaide.png",
+    "h1": "University of Otago Jobs",
+    "Title": "Apply University of Otago Jobs in New Zealand. Job Vacancies",
+    "Description": "Find 50 University of Otago jobs found in Dunedin, Otago. View all Otago University vacancies: lecturer, dean and more",
+    "Keyword": "University of Otago Jobs,University of Otago Job Vacancies",
+    "image": "",
     "alt": "University of Otago",
-    "content": "The University of Otago is home to the 4 largest medical schools in Australasia with more than 195 different programmes of study. The university employs over 4,000 employees which collectively contribute to their outstanding reputation as one of the best research universities in the world. The Dunedin campus is also ranked one of the top 16 most beautiful in the world.",
+    "content": "",
     "filter": {
       "employer_id": "3805"
-    }
+    },
+    "footer_h2": "Career Opportunities in University of Otago",
+    "footer_content": "The University of Otago is home to the 4 largest medical schools in Australasia with more than 195 different programmes of study.The university employs over 4,000 employees which collectively contribute to their outstanding reputation as one of the best research universities in the world. The Dunedin campus is also ranked one of the top 16 most beautiful in the world.<br><br>University of Otago offers many employee benefits, such as professional development, flexible work arrangement, extended leaves, travel insurance, diverse and inclusive work culture and many more. "
   },
-
   {
     "Name": "melbourne",
     "Title": "Academic Jobs in Melbourne",
@@ -31,7 +66,10 @@
     "Keyword": "Academic Jobs Melbourne, Uni jobs Melbourne, Higher education jobs, university jobs",
     "content": "Seek university jobs from Melbourne's top institutions, such as University of Melbourne, Monash University, RMIT and more.",
     "image": "/banner-icons/melbourne.png",
-    "alt": "melbourne academic jobs"
+    "alt": "melbourne academic jobs",
+    "filter": {
+      "l": "Melbourne"
+    }
   },
   {
     "Name": "sydney",
@@ -51,7 +89,6 @@
     "alt": "adelaide academic jobs",
     "content": "Seek University jobs from Sydney's top institutions, such as Adelaide uni, Carnegie Mellon, Tarren’s, UNISA and more."
   },
-
   {
     "break1": true,
     "Name": "brisbane",
@@ -62,7 +99,6 @@
     "alt": "brisbane academic jobs",
     "content": "Seek university jobs from Brisbane's top institutions, such as University of Queensland, QUT, CQU and more."
   },
-
   {
     "break1": true,
     "Name": "gold coast",
@@ -73,7 +109,6 @@
     "alt": "gold coast academic jobs",
     "content": "Seek university jobs from Brisbane's top institutions Bond, Griffith, Southern Cross University and more."
   },
-
   {
     "Name": "canberra",
     "Title": "Academic Jobs in Canberra",
@@ -104,7 +139,6 @@
     "alt": "Tasmania University jobs",
     "content": "Seek university jobs from Tasmania’s top institutions, such as University of Tasmania (UTAS), Australian Maritime College and Jane Franklin hall."
   },
-
   {
     "break1": true,
     "Name": "hobart",
@@ -116,7 +150,6 @@
     "alt": "hobart academic jobs",
     "content": "Seek university jobs from Hobart's top institutions, such as UOT"
   },
-
   {
     "break1": true,
     "Name": "singapore",
@@ -125,7 +158,6 @@
     "Keyword": "Academic Jobs Singapore",
     "content": "Some of the best institutions in Asia and the globe, include Singapore Management University, Nanyang Technological University, and National University of Singapore. Numerous academic jobs are offered by these institutions, ranging from the humanities and arts to science and engineering, and from business and law to health and medical. You may become a part of their outstanding and cooperative academic communities and support their superior research, instruction, and impact."
   },
-
   {
     "break1": true,
     "Name": "london",
@@ -134,7 +166,6 @@
     "Keyword": "Academic Jobs london",
     "content": "Several of the best universities in the world and the UK are located in London, including King's College London, University College London, and Imperial College London. These universities provide a broad spectrum of academic programs, spanning from business and law to science and engineering, health and medical, and the arts and humanities. To support their brilliance in research, teaching, and impact, you can become a member of their outstanding and cooperative academic communities."
   },
-
   {
     "break1": true,
     "Name": "boston",
@@ -143,7 +174,6 @@
     "Keyword": "Academic Jobs Boston",
     "content": "Find all job opportunities in Boston at Academic Jobs, where we list the best jobs for Higher Ed in all of Massachusetts! Peruse your academic career at one of the worlds most renowned universities, including Harvard, MIT, Boston University and more… The No.1 job board for academics in Boston for all your university job requirements, from seeking to recruiting, look no further. Become a part of the exceptional academic communities by pursuing a career in academia, whether that be lecturing, researching, or teaching! Find all the best university jobs here…"
   },
-
   {
     "break1": true,
     "Name": "new york",
@@ -160,7 +190,6 @@
     "Keyword": "Academic Jobs Philadelphia",
     "content": "Find all job opportunities in Philadelphia at Academic Jobs, where we list the best jobs for Higher Ed in all the United States! Peruse your academic career at one of the worlds most renowned universities, including U Penn, Temple University, and more… The No.1 job board for academics in Philadelphia, for all your university job requirements, from seeking to recruiting, look no further. At Academic Jobs, we value our customers interests by providing the best career choices possible, making us the best job board for higher education positions globally. Find all the best university jobs here…"
   },
-
   {
     "break1": true,
     "Name": "los angeles",
@@ -169,7 +198,6 @@
     "Keyword": "Academic Jobs Los Angeles",
     "content": "Explore all job opportunities in Los Angeles at Academic Jobs, where we list the best jobs for Higher Ed in all the United States! Peruse your academic career at one of the worlds most renowned universities, including UCLA, USC, Cal Tech and more… The No.1 job board for academics in LA, for all your university job requirements, from seeking to recruiting, look no further. Become a part of the exceptional and cooperative academic communities by pursuing a career in academia, whether that be lecturing, researching, or teaching! Find all the best university jobs here…"
   },
-
   {
     "break1": true,
     "Name": "new haven",
@@ -178,7 +206,6 @@
     "Keyword": "Academic Jobs New Haven",
     "content": "Discover all job opportunities in New Haven at Academic Jobs, where we list the best jobs for Higher Ed in all the United States! Experience rewarding careers across the worlds most renowned universities, including Yale, University of New Haven, and Southern Connecticut State University and more… The No.1 job board for academics in New Haven, for all your university job requirements, from seeking to recruiting, look no further. At Academic Jobs, we value our customers interests by providing the best career choices possible, making us the best job board for higher education positions globally. Find all the best university jobs here…"
   },
-
   {
     "break1": true,
     "Name": "cambridge",
@@ -187,7 +214,6 @@
     "Keyword": "Academic Jobs Cambridge",
     "content": "Cambridge, Massachusetts is a centre of innovation and brilliance, home to several esteemed and varied universities, including Harvard University, MIT, Tufts University, and others. The universities and colleges in Cambridge, Massachusetts provide a wide range of programs in many subjects and specialisations, including computer science, engineering, biotechnology, humanities, and social sciences."
   },
-
   {
     "break1": true,
     "Name": "paris",
@@ -196,7 +222,6 @@
     "Keyword": "Academic Jobs Paris",
     "content": "Paris is home to several well-known higher education institutions, including Sciences Po, École Polytechnique, Sorbonne University, and others. It is a city known for its variety and quality. The advantages of working in Paris include competitive pay, ample perks, and a friendly local community. "
   },
-
   {
     "break1": true,
     "Name": "hong kong",
@@ -205,7 +230,6 @@
     "Keyword": "Academic Jobs Hong Kong",
     "content": "With several great universities, including the University of Hong Kong, the Hong Kong Polytechnic University, Lingnan University, Hong Kong is a hub for innovation and quality with their uni jobs. These institutions and colleges offer possibilities for you to support their purpose of high-quality teaching and research by working as faculty, staff, or administrators."
   },
-
   {
     "break1": true,
     "Name": "beijing",
@@ -214,7 +238,6 @@
     "Keyword": "Academic Jobs Beijing",
     "content": "Beijing is a centre of uni jobs, home to several esteemed universities, including Beijing Normal University, Tsinghua University, and Peking University. These universities and colleges provide possibilities for you to work as a faculty member, staff member, or administrator and support their purpose of offering top-notch instruction and research."
   },
-
   {
     "break1": true,
     "Name": "san francisco",
@@ -223,7 +246,6 @@
     "Keyword": "Academic Jobs San Francisco",
     "content": "Find all job opportunities in San Francisco at Academic Jobs, where we list the best jobs for Higher Ed in all the United States! Peruse your academic career at one of the worlds most renowned universities, including USF, the University of California, San Francisco, and UC Berkeley Extension. At Academic Jobs, we value our customers' interests by providing the best career choices possible, making us the best job board for higher education positions globally. The No.1 job board for academics in San Fran, for all your university job requirements, from seeking to recruiting, look no further. Become a part of the exceptional and cooperative academic communities by pursuing a career in academia, whether that be lecturing, researching, or teaching!"
   },
-
   {
     "break1": true,
     "Name": "seoul",
@@ -232,7 +254,6 @@
     "Keyword": "Academic Jobs Seoul",
     "content": "Yonsei University, Korea University, Seoul National University (SNU), and other universities in Seoul have contributed positions in academia that we have listed. Part-time lecturers, postdoctoral researchers, research assistants, and full-time professorships are among these positions. A employment that fits your interests and capabilities can be found regardless of your subject of study—humanities, social sciences, natural sciences, engineering, or something else entirely.."
   },
-
   {
     "break1": true,
     "Name": "berlin",
@@ -249,7 +270,6 @@
     "Keyword": "Academic Jobs Munich",
     "content": "We've put together uni jobs and academic positions from Munich's several institutions, such as Hochschule München (HM), Technische Universität München (TUM), and Ludwig-Maximilians-Universität München (LMU). These positions include postdoctoral research positions, research assistant positions, and full-time professorships in addition to part-time lecturers."
   },
-
   {
     "break1": true,
     "Name": "tokyo",
@@ -282,7 +302,6 @@
     "Keyword": "Academic Jobs Zurich",
     "content": "Our uni jobs from Zurich's universities are ETH Zurich, Zurich University, and Zurich University of Applied Sciences. In addition to part-time lecturers, these roles also include postdoctoral researchers, research assistants, and full-time professorships."
   },
-
   {
     "break1": true,
     "Name": "edinburgh",

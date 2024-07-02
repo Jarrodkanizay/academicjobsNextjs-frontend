@@ -47,7 +47,9 @@ export default function Page({ params, searchParams }) {
     content: content1,
     image = '',
     alt: alt,
-    filter = '',
+    filter: filter6 = '',
+    footer_h2 = '',
+    footer_content = '',
   } = city;
   let ausHeader, otherHeader, content;
   ausHeader = (
@@ -100,7 +102,7 @@ export default function Page({ params, searchParams }) {
     <>
       {ausCities.includes(Name) ? ausHeader : otherHeader}
       <div className="content-grid flex-col md:gap-2">
-        <AdvancedSearchBar p={filter} />
+        <AdvancedSearchBar p={filter6} />
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
             <div className="filters_content">
@@ -109,10 +111,14 @@ export default function Page({ params, searchParams }) {
           </div>
           <div className="listings_panel">
             <div className="listings_content">
-              <SearchResults3 p={filter} />
+              <SearchResults3 p={filter6} />
             </div>
           </div>
         </section>
+        <div>
+          <h2>{footer_h2}</h2>
+          <div dangerouslySetInnerHTML={{ __html: footer_content }} />
+        </div>
       </div>
     </>
   );
