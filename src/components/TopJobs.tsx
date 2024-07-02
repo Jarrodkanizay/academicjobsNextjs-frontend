@@ -2,7 +2,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
 import Link from 'next/link';
-import React, { useEffect } from 'react';
 
 const TopJobs = () => {
   const {
@@ -24,50 +23,52 @@ const TopJobs = () => {
   const handleButtonClick = (jobId) => {
     // Send event to Google Analytics
     window.gtag('event', 'click', {
-      'event_category': 'Button Click',
-      'event_label': `More Info Button Click - ${jobId}`
+      event_category: 'Button Click',
+      event_label: `More Info Button Click - ${jobId}`,
     });
-    
-    console.log("Button clicked");
+
+    console.log('Button clicked');
   };
-  
 
   return (
-    <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-      {jobs?.length > 0 && jobs.map((job, index) => (
-        <div className="column" key={index}>
-          <ul>
-            <li className="mb-1 mt-4 hover:underline">
-              <Link
-                href={`/jobs/${job.company_name}/${job.id}`}
-                className="text-blue-500 font-bold"
-              >
-                {job.title}
-              </Link>
-            </li>
-            <ul className="innerUL">
-              <li>
-                <span>{job.company_name}</span>
-              </li>
-              <li>
-                <span>{job.location}</span>
-              </li>
-              <li>
-                <span>{new Date(job.activation_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
-              </li>
-              <button
-                className="btn btn-sm btn-aj mt-4 more-info-btn"
-                onClick={() => {
-                  window.open(job.how_to_apply, '_blank');
-                  handleButtonClick(job.id); 
-                }}
-              >
-                More Info
-              </button>
-            </ul>
-          </ul>
-        </div>
-      ))}
+    <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-6">
+      {jobs?.length > 0 &&
+        jobs.map((job, index) => (
+          <div className="card shadow-xl" key={index}>
+            <div className="card-body">
+              <h3 className="card-title">
+                <Link
+                  href={`/jobs/${job.company_name}/${job.id}`}
+                  className="text-gray-blue font-bold"
+                >
+                  {job.title}
+                </Link>
+              </h3>
+              <p>
+                {job.company_name}
+                <br />
+                {job.location}
+                <br />
+                {new Date(job.activation_date).toLocaleDateString('en-US', {
+                  month: 'short',
+                  day: 'numeric',
+                  year: 'numeric',
+                })}
+              </p>
+              <div className="card-actions justify-end m-0">
+                <button
+                  className="btn btn-aj"
+                  onClick={() => {
+                    window.open(job.how_to_apply, '_blank');
+                    handleButtonClick(job.id);
+                  }}
+                >
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+        ))}
     </div>
   );
 };

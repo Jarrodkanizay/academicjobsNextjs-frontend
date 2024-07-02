@@ -333,7 +333,7 @@ export default async function myPage() {
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/university-jobs/in-tasmania">
+          <Link className="text-center" href="/university-jobs/tasmania">
             Tasmania
           </Link>
         </li>

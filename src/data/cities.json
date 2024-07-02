@@ -7,21 +7,21 @@
     "image": "/banner-icons/adelaide.png",
     "alt": "massey-university",
     "content": "massey-university",
-    "filter": {     
-            "employer_id":"3810"
-          }
+    "filter": {
+      "employer_id": "3810"
+    }
   },
   {
     "Name": "university of otago",
-    "Title": "University of Otago",
+    "Title": "University of Otago Jobs",
     "Description": "University of Otago",
     "Keyword": "University of Otago",
     "image": "/banner-icons/adelaide.png",
     "alt": "University of Otago",
-    "content": "University of Otago",
-    "filter": {     
-            "employer_id":"3805"
-          }
+    "content": "The University of Otago is home to the 4 largest medical schools in Australasia with more than 195 different programmes of study. The university employs over 4,000 employees which collectively contribute to their outstanding reputation as one of the best research universities in the world. The Dunedin campus is also ranked one of the top 16 most beautiful in the world.",
+    "filter": {
+      "employer_id": "3805"
+    }
   },
 
   {

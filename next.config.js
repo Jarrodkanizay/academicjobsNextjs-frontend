@@ -64,6 +64,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/university-jobs/in-tasmania',
+        destination: '/university-jobs/tasmanina',
+        permanent: true,
+      },
+      {
         source: '/jobs-advanced-search',
         destination: '/university-jobs',
         permanent: true,
