@@ -223,12 +223,12 @@ export default function Page() {
               <Link href="/university-jobs/massey-university">Massey</Link>
             </li>
             <li>
-              <Link href="/employers/auckland-university-of-technology/3804">
+              <Link href="/university-jobs/auckland-university-of-technology">
                 AUT
               </Link>
             </li>
             <li>
-              <Link href="/employers/the-university-of-auckland/3809">
+              <Link href="/university-jobs/the-university-of-auckland">
                 Auckland
               </Link>
             </li>

@@ -1,12 +1,43 @@
 [
   {
+    "Name": "the university of auckland",
+    "h1" : "University of Auckland Jobs",
+    "Title": "Apply University of Auckland (UOA) Jobs ",
+    "Description": "Find 40 Uni jobs in University of Auckland. View uni job vacancies for lecturer, research and postdocs in UOA. New Jobs added daily.",
+    "Keyword": "",
+    "image": "",
+    "alt": "",
+    "content": "",
+    "filter": {
+      "employer_id": "3809"
+    },
+    "footer_h2": "Careers at University of Auckland",
+    "footer_content": "The University of Auckland is a public research university based in Auckland, New Zealand. It is the largest, most comprehensive and highest-ranked university in New Zealand and consistently places among the top 100 universities. Employees working in University of Auckland enjoy many <a href= 'https://www.careers.auckland.ac.nz/' className='link-aj'>employee benefits</a>, such as special leaves schemes, employee assistance programmes, discounted medical insurance and funds for professional development. "
+  },
+  {
+    "Name": "auckland university of technology",
+    "h1" : "Auckland University of Technology Jobs",
+    "Title": "Apply Auckland University of Technology (AUT) Jobs",
+    "Description": "Find 139 University jobs in New Zealand. View uni job vacancies for lecturer, research and postdocs in Auckland University of Technology.",
+    "Keyword": "",
+    "image": "",
+    "alt": "",
+    "content": "",
+    "filter": {
+      "employer_id": "3804"
+    },
+    "footer_h2": "Careers at AUT",
+    "footer_content": "AUT is the second largest university in Aotearoa New Zealand. AUT  attracts bright, positive and ambitious staff, and supports achievement. Their values – tika, pono and aroha (integrity, respect and compassion) – are at the heart of everything they do. Employee in AUT enjoy many employee benefits, such as special leaves schemes, AUT free gym membership, employee assistance programme, discounted medical insurance and funds for professional development. "
+  },
+  {
     "Name": "massey university",
+    "h1" : "Massey University Jobs",
     "Title": "Massey University Jobs in New Zealand. Job Vacancies today!",
     "Description": "Find 20 Massey University jobs found in Albany Auckland. View all Massey University vacancies: vet nurse, administrator and more. New jobs updated daily.",
-    "Keyword": "Massey University Jobs, Massey University Jobs Vacancies",
-    "image": "/banner-icons/adelaide.png",
+    "Keyword": "Massey University Jobs, Massey University Job Vacancies, uni jobs",
+    "image": "",
     "alt": "massey-university",
-    "content": "massey-university",
+    "content": "",
     "filter": {
       "employer_id": "3810"
     },
@@ -14,13 +45,14 @@
     "footer_content": "Massey University is a public research university with campuses in Auckland, Palmerston North and Wellington, New Zealand. The university is known for its ground-breaking research, commitment to innovation, inclusivity and diversity and close bond to local communities. Massey University currently employs over 3,500 people both full and part time across three main campuses.<br/><br/>Massey University offers a wide range of employee benefits, such as additional entitlement on leave, personal development assistance, flexible work arrangement and benefits and support for parents."
   },
   {
-    "Name": "University of Otago Jobs",
+    "Name": "university of otago",
+    "h1" : "University of Otago Jobs",
     "Title": "Apply University of Otago Jobs in New Zealand. Job Vacancies",
     "Description": "Find 50 University of Otago jobs found in Dunedin, Otago. View all Otago University vacancies: lecturer, dean and more",
     "Keyword": "University of Otago Jobs,University of Otago Job Vacancies",
-    "image": "/banner-icons/adelaide.png",
+    "image": "",
     "alt": "University of Otago",
-    "content": "University of Otago",
+    "content": "",
     "filter": {
       "employer_id": "3805"
     },
