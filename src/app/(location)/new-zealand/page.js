@@ -315,7 +315,7 @@ export default function Page() {
       <div id="myUniversity" class="myUniversity">
         <div class="widget__text-block1"> */}
         <div>
-          <h2 className="">New Zealand: All University Jobs by Region</h2>
+          {/* <h2 className="">New Zealand: All University Jobs by Region</h2> */}
           <NZ heading="" />
         </div>
 
