@@ -14,16 +14,18 @@
     "footer_content": "Massey University is a public research university with campuses in Auckland, Palmerston North and Wellington, New Zealand. The university is known for its ground-breaking research, commitment to innovation, inclusivity and diversity and close bond to local communities. Massey University currently employs over 3,500 people both full and part time across three main campuses.<br/><br/>Massey University offers a wide range of employee benefits, such as additional entitlement on leave, personal development assistance, flexible work arrangement and benefits and support for parents."
   },
   {
-    "Name": "university of otago",
-    "Title": "University of Otago",
-    "Description": "University of Otago",
-    "Keyword": "University of Otago",
+    "Name": "University of Otago Jobs",
+    "Title": "Apply University of Otago Jobs in New Zealand. Job Vacancies",
+    "Description": "Find 50 University of Otago jobs found in Dunedin, Otago. View all Otago University vacancies: lecturer, dean and more",
+    "Keyword": "University of Otago Jobs,University of Otago Job Vacancies",
     "image": "/banner-icons/adelaide.png",
     "alt": "University of Otago",
     "content": "University of Otago",
-    "filter": {     
-            "employer_id":"3805"
-          }
+    "filter": {
+      "employer_id": "3805"
+    },
+    "footer_h2": "Career Opportunities in University of Otago",
+    "footer_content": "The University of Otago is home to the 4 largest medical schools in Australasia with more than 195 different programmes of study.The university employs over 4,000 employees which collectively contribute to their outstanding reputation as one of the best research universities in the world. The Dunedin campus is also ranked one of the top 16 most beautiful in the world.<br><br>University of Otago offers many employee benefits, such as professional development, flexible work arrangement, extended leaves, travel insurance, diverse and inclusive work culture and many more. "
   },
   {
     "Name": "melbourne",
