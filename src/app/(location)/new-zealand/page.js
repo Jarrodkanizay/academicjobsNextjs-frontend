@@ -12,10 +12,10 @@ import TopJobs from '@/components/TopJobs';
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
-    absolute: 'University & Academic Jobs NZ',
+    absolute: 'University & Academic Jobs New Zealand',
   },
   description:
-    'Find 200 university jobs in NZ. Apply for jobs in lecturer, research, science and postdoc jobs from UK top universities, such as Massey, AUT, UOA.',
+    'Find 200 uni jobs in New Zealand. Apply for jobs in lecturer, research, science and postdoc jobs from NZ top universities: Massey, AUT, UOA, Otago.',
   keywords:
     'Academic Jobs New Zealand, University job New Zealand, New Zealand university jobs',
 };
