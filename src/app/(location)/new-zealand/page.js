@@ -217,7 +217,7 @@ export default function Page() {
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li>
-              <Link href="/employers/massey-university/3810">Massey</Link>
+              <Link href="/university-jobs/massey-university">Massey</Link>
             </li>
             <li>
               <Link href="/employers/auckland-university-of-technology/3804">
@@ -239,7 +239,7 @@ export default function Page() {
             </Link>
           </li>
           <li>
-            <Link href="/employers/university-of-otago/3805">Otago</Link>
+            <Link href="/university-jobs/university-of-otago">Otago</Link>
           </li>
           <li>
             <Link href="/employers/lincoln-university/3808">Lincoln</Link>
