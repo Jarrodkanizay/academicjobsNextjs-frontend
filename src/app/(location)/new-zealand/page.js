@@ -239,7 +239,7 @@ export default function Page() {
             </Link>
           </li>
           <li>
-            <Link href="/employers/university-of-otago/3805">Otago</Link>
+            <Link href="/university-jobs/university-of-otago">Otago</Link>
           </li>
           <li>
             <Link href="/employers/lincoln-university/3808">Lincoln</Link>

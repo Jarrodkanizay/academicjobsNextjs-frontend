@@ -11,6 +11,18 @@
             "employer_id":"3810"
           }
   },
+  {
+    "Name": "university of otago",
+    "Title": "University of Otago",
+    "Description": "University of Otago",
+    "Keyword": "University of Otago",
+    "image": "/banner-icons/adelaide.png",
+    "alt": "University of Otago",
+    "content": "University of Otago",
+    "filter": {     
+            "employer_id":"3805"
+          }
+  },
 
   {
     "Name": "melbourne",
