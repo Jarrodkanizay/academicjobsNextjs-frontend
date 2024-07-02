@@ -53,13 +53,10 @@ export default function myPage() {
     '@type': 'NewsArticle',
     headline: 'Craft an Academic CV: 8 tips to get hired!',
     image: [
-      'https://www.academicjobs.com/blogs/how-to-write-a-winning-academic-cv/cv-banner-image.png',
-      'https://www.academicjobs.com/blogs/how-to-write-a-winning-academic-cv/cv-template-1.png',
-      'https://www.academicjobs.com/blogs/how-to-write-a-winning-academic-cv/cv-template-2.png',
-      'https://www.academicjobs.com/blogs/how-to-write-a-winning-academic-cv/cv-template-3.png',
+      'https://www.academicjobs.com/blogs/how-to-prepare-for-a-job-interview/job-interview.png',
     ],
-    datePublished: '2024-06-20T19:00:00+10:00',
-    dateModified: '2024-06-20T18:05:00+10:00',
+    datePublished: '2024-06-20',
+    dateModified: '2024-06-28',
     author: [
       {
         '@type': 'Person',

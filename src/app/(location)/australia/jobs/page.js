@@ -7,8 +7,6 @@ import TalentPool from '@/components/TalentPoolCTA';
 
 const regionName = 'Australia';
 
-
-
 export async function generateMetadata({ params, searchParams }) {
   // console.log(params)
   let { category } = params;
@@ -23,7 +21,8 @@ export async function generateMetadata({ params, searchParams }) {
     Description = '',
     Keyword = '',
     content: content1 = '',
-  } = regionData.find((item) => item.Name === searchParams.mastercategory) || {};
+  } = regionData.find((item) => item.Name === searchParams.mastercategory) ||
+  {};
 
   return {
     title: Title,
@@ -48,7 +47,8 @@ export default function Page({ params, searchParams }) {
     Description = '',
     Keyword = '',
     content: content1 = '',
-  } = regionData.find((item) => item.Name === searchParams.mastercategory) || {};
+  } = regionData.find((item) => item.Name === searchParams.mastercategory) ||
+  {};
   const filter1 = [{ mastercategory: searchParams.mastercategory }];
   const paras = content1.split('\n');
   console.log('filter1=========', filter1, searchParams.mastercategory);
@@ -73,12 +73,12 @@ export default function Page({ params, searchParams }) {
                 {para}
               </p>
             ))}
-         <TalentPool  />
+            <TalentPool />
           </div>
         </div>
       </div>
 
-      <JobSearchBox  />
+      <JobSearchBox />
       <SearchResults2 q={{ filter1, l: regionName }} />
     </main>
   );
