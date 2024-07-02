@@ -29,7 +29,7 @@ export default function Page() {
         <section class="jobs_grid job_post_search_container">
           <div class="filters_panel">
             <div class="filters_content">
-              {/* <SearchResults q={{ filter1: [{ category: 'postRegion', filter: 'Australia' }] }} filterOff={true} /> */}
+              <SearchResults q={{ filter1: [{ category: 'postRegion', filter: 'Australia' }] }} filterOff={true} />
               <JobFilter />
             </div>
           </div>

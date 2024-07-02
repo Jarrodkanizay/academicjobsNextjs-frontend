@@ -1,4 +1,4 @@
-import Image from 'next/link';
+import Image from 'next/image';
 import citiesData from '@/data/cities.json';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
@@ -32,18 +32,19 @@ export default function Page({ params, searchParams }) {
   let category = 'tasmania';
   // console.log(category);
   const city = citiesData.find((item) => item.Name === category);
+  console.log(city);
   if (!city) {
     console.error('City not found');
     return null; // or return an error component, or handle this situation in another appropriate way
   }
   const {
-    Name,
-    h1,
-    Title: Title,
-    Description,
-    Keyword,
+    Name="",
+    h1="",
+    Title="",
+    Description="",
+    Keyword="",
     content: content1,
-    image: image,
+    image="",
     alt: alt,
   } = city;
   let ausHeader, otherHeader, content;
