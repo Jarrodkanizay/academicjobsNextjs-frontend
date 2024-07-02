@@ -18,6 +18,7 @@ export async function generateMetadata({ params, searchParams }) {
     Keyword = '',
     content: content1 = '',
     image = '',
+
   } = citiesData.find((item) => item.Name === category) || {};
   return {
     title: Title,
@@ -47,7 +48,9 @@ export default function Page({ params, searchParams }) {
     content: content1,
     image="",
     alt: alt,
-    filter: filter6 =""
+    filter: filter6 = "",
+    footer_h2="",
+    footer_content=""
   } = city;
   let ausHeader, otherHeader, content;
   ausHeader = (
@@ -108,8 +111,14 @@ export default function Page({ params, searchParams }) {
                 p={filter6}
               />
             </div>
-          </div>
+          </div>      
+
         </section>
+        <div>
+          <h2>{footer_h2}</h2>
+          <div dangerouslySetInnerHTML={{ __html: footer_content }} />
+        </div>
+    
       </div>
     </>
   );
