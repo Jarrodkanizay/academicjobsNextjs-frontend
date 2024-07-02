@@ -21,6 +21,51 @@ export const metadata = {
   keywords:
     'Academic Jobs Australia. university jobs Australia, Uni jobs Australia',
 };
+
+const jobData = [
+  {
+    company_name: 'Australian National University (ANU)',
+    title: 'Associate Research Fellow',
+    ranking: 5,
+    location: 'Canberra ACT 2601, Australia',
+    jobPostLink: '/jobs/associate-research-fellow/123216',
+    employerLink: '/employers/australian-national-university-anu-/3739',
+    applyNowLink:
+      'https://jobs.anu.edu.au/jobs/associate-research-fellow-canberra-act-act-australia',
+  },
+  {
+    company_name: 'Queensland University of Technology (QUT)',
+    title: 'Executive Dean, Faculty of Indigenous Knowledges and Culture',
+    ranking: 5,
+    location: 'Kelvin Grove QLD 4059, Australia',
+    jobPostLink:
+      '/jobs/executive-dean-faculty-of-indigenous-knowledges-and-culture/129914',
+    employerLink: '/employers/queensland-university-of-technology-qut-/3786',
+    applyNowLink:
+      '/jobs/executive-dean-faculty-of-indigenous-knowledges-and-culture/129914',
+  },
+  {
+    company_name: 'Queensland University of Technology (QUT)',
+    title: 'Principal HR Partner',
+    ranking: 5,
+    location: 'Kelvin Grove QLD 4059, Australia',
+    jobPostLink: '/jobs/principal-hr-partner/131056',
+    employerLink: '/employers/queensland-university-of-technology-qut-/3786',
+    applyNowLink:
+      'https://qut.nga.net.au/cp/index.cfm?event=jobs.checkJobDetailsNewApplication&returnToEvent=jobs.listJobs&jobid=C63CB99A-2266-9C42-1B0D-DAD5A7949E07&CurATC=EXT&CurBID=1877E01E%2D78DD%2D4ED2%2D9D7A%2D9DB40135CFF4&JobListID=22fc4f47%2De994%2D46a3%2Db8c9%2D9bc901269f43&jobsListKey=88db6b26%2D44b9%2D4904%2D9ea3%2De03326670378&persistVariables=CurATC,CurBID,JobListID,jobsListKey,JobID&lid=64736390058&rmuh=3D3CDB0C501CD287054F6AE8883D5D502AF87D53',
+  },
+  {
+    company_name: 'Queensland University of Technology (QUT)',
+    title: 'Sessional Academic Pool (Law)',
+    ranking: 5,
+    location: 'Kelvin Grove QLD 4059, Australia',
+    jobPostLink: '/jobs/sessional-academic-pool-law-/131064',
+    employerLink: '/employers/queensland-university-of-technology-qut-/3786',
+    applyNowLink:
+      'https://qut.nga.net.au/cp/index.cfm?event=jobs.viewDisplayOnlyJobDetails&returnToEvent=jobs.listJobs&jobid=80E2854B-378B-4CCF-AD0F-B18B00EBABB5&CurATC=EXT&CurBID=1877E01E%2D78DD%2D4ED2%2D9D7A%2D9DB40135CFF4&JobListID=22fc4f47%2De994%2D46a3%2Db8c9%2D9bc901269f43&jobsListKey=88db6b26%2D44b9%2D4904%2D9ea3%2De03326670378&persistVariables=CurATC,CurBID,JobListID,jobsListKey&lid=64736390008&rmuh=18B96F13A08A836AB65C97B087F13A078C0C7823',
+  },
+];
+
 export default async function myPage() {
   const size = 180;
   const items = [
@@ -184,15 +229,13 @@ export default async function myPage() {
             <li className="">
               {/* <Link href="/Australia/lecturer"> Lecturer</Link> */}
               <Link href="/australia/lecturer?r=Australia&filter0=%5B%7B%22category%22%3A%22PositionType%22%2C%22filter%22%3A%22Lecturer%2FInstructor%22%7D%5D">
-                {' '}
                 Lecturer
               </Link>
             </li>
             <li className="">
               {/* <Link href="/Australia/research"> Research </Link> */}
               <Link href="/australia/research?r=Australia&filter0=%255B%257B%2522category%2522%253A%2522PositionType%2522%252C%2522filter%2522%253A%2522Research%2522%257D%255D">
-                {' '}
-                Research{' '}
+                Research
               </Link>
             </li>
             {/* <li className=" ">
@@ -226,16 +269,12 @@ export default async function myPage() {
           <li>
             {/* <Link href="/australia/hr-jobs"> HR</Link> */}
             <Link href='/australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]'>
-              {' '}
               HR
             </Link>
           </li>
           <li>
             {/* <Link href="/australia/student"> Student</Link> */}
-            <Link href="/australia/hr-jobs?r=Australia&q=Student">
-              {' '}
-              Student
-            </Link>
+            <Link href="/australia/hr-jobs?r=Australia&q=Student">Student</Link>
           </li>
           <li>
             <Link href="/australia/indigenous">Indigenous</Link>
@@ -246,7 +285,6 @@ export default async function myPage() {
           <li>
             {/* <Link href="/australia/phd">PhD</Link> */}
             <Link href='/australia/phd?r=Australia&filter0=[{"category":"PositionType","filter":"Student / Phd Jobs"}]'>
-              {' '}
               PhD
             </Link>
           </li>
@@ -258,13 +296,11 @@ export default async function myPage() {
             className="text-center"
             href="/melbourne?r=Australia&l=Melbourne"
           >
-            {' '}
-            Melbourne{' '}
+            Melbourne
           </Link>
         </li>
         <li>
           <Link className="text-center" href="/sydney?r=Australia&l=sydney">
-            {' '}
             Sydney
           </Link>
         </li>
@@ -275,19 +311,16 @@ export default async function myPage() {
         </li>
         <li>
           <Link className="text-center" href="/perth?r=Australia&l=perth">
-            {' '}
             Perth
           </Link>
         </li>
         <li>
           <Link className="text-center" href="/adelaide?r=Australia&l=adelaide">
-            {' '}
             Adelaide
           </Link>
         </li>
         <li>
           <Link className="text-center" href="/canberra?r=Australia&l=canberra">
-            {' '}
             Canberra
           </Link>
         </li>
@@ -296,15 +329,11 @@ export default async function myPage() {
             className="text-center"
             href="/gold-coast?r=Australia&l=gold-coast"
           >
-            {' '}
             Gold Coast
           </Link>
         </li>
         <li>
-          <Link
-            className="text-center"
-            href='/university-jobs/in-tasmania'
-          >
+          <Link className="text-center" href="/university-jobs/in-tasmania">
             Tasmania
           </Link>
         </li>
@@ -668,8 +697,8 @@ export default async function myPage() {
         </div>
       </div>
 
-      <h2 className="underline-full">Jobs of the week</h2>
-      <JobOfTheWeek />
+      <h2 className="underline-full mt-16">Jobs of the week for Australia</h2>
+      <JobOfTheWeek jobData={jobData} />
 
       <div id="myUniversity" class="myUniversity">
         <div class="widget__text-block1">

@@ -251,7 +251,7 @@ export default function Page() {
           </li>
         </ul>
       </div>
-      <div className="content-grid mx-auto ">
+      <div className="content-grid mx-auto mt-16">
         <div
           id="section"
           className=" full-width py-4 full-width mb-4 bg-slate-200"
@@ -291,7 +291,9 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <h2 className="underline-full">University Jobs of the week</h2>
+        <h2 className="underline-full mt-16">
+          University Jobs of the week for New Zealand
+        </h2>
         <JobOfTheWeek jobData={jobData} />
 
         {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >

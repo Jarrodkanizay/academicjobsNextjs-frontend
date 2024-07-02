@@ -1,4 +1,4 @@
-import Image from 'next/link';
+import Image from 'next/image';
 import citiesData from '@/data/cities.json';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
