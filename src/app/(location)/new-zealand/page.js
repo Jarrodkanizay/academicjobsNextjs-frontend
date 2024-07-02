@@ -6,6 +6,9 @@ import JobFilter from '@/components/JobFilter';
 import NZ from '@/components/topUnis/NZ';
 import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 import JobOfTheWeek from '@/components/JobOfTheWeek';
+import ScrollableCardNZ from '@/components/ScrollableCardNZ';
+import TopJobs from '@/components/TopJobs';
+
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -292,6 +295,25 @@ export default function Page() {
           University Jobs of the week for New Zealand
         </h2>
         <JobOfTheWeek jobData={jobData} />
+
+        <h2 className="underline-full">
+          Higher Education & Academic Employment tips
+        </h2>
+        <ScrollableCardNZ />
+
+        <h2 className="underline-full mt-16">
+          Top Faculty Positions: Lecturer, Postdoc and Research Jobs in
+          New Zealand
+        </h2>
+        <div className="cate-group section23 ">
+          <div className="widget__text-block">
+            <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7"></div>
+            <TopJobs />
+          </div>
+        </div>
+        <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
+          view more top jobs →
+        </Link>
 
         {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
     <a>▼</a></div> */}
