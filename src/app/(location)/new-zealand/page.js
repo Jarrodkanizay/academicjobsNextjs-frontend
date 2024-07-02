@@ -285,9 +285,6 @@ export default function Page() {
                 your search for university jobs search in NZ top universities
                 today!
               </p>
-              <p className="px-7 md:flex hidden">
-                Find all the best jobs here…
-              </p>
             </div>
           </div>
         </div>

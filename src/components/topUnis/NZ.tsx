@@ -76,7 +76,7 @@ const TopUnis = ({ heading }: Props) => {
   return (
     <>
       <h2 id="section" className="underline-full mb-10">
-        New Zealand: All University Jobs by Region
+        New Zealand: All Universities
       </h2>
 
       {uniList.map((uni) => (
