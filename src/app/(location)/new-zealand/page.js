@@ -6,13 +6,16 @@ import JobFilter from '@/components/JobFilter';
 import NZ from '@/components/topUnis/NZ';
 import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 import JobOfTheWeek from '@/components/JobOfTheWeek';
+import ScrollableCardNZ from '@/components/ScrollableCardNZ';
+import TopJobs from '@/components/TopJobs';
+
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
-    absolute: 'University & Academic Jobs NZ',
+    absolute: 'University & Academic Jobs New Zealand',
   },
   description:
-    'Find 200 university jobs in NZ. Apply for jobs in lecturer, research, science and postdoc jobs from UK top universities, such as Massey, AUT, UOA.',
+    'Find 200 uni jobs in New Zealand. Apply for jobs in lecturer, research, science and postdoc jobs from NZ top universities: Massey, AUT, UOA, Otago.',
   keywords:
     'Academic Jobs New Zealand, University job New Zealand, New Zealand university jobs',
 };
@@ -75,26 +78,26 @@ const jobData = [
     applyNowLink:
       'https://jobs.smartrecruiters.com/TheUniversityOfAuckland/743999996263977-human-resources-manager',
   },
-  // {
-  //   company_name: 'Queensland University of Technology (QUT)',
-  //   title: 'Principal HR Partner',
-  //   ranking: 5,
-  //   location: 'Kelvin Grove QLD 4059, Australia',
-  //   jobPostLink: '/jobs/principal-hr-partner/131056',
-  //   employerLink: '/employers/queensland-university-of-technology-qut-/3786',
-  //   applyNowLink:
-  //     'https://qut.nga.net.au/cp/index.cfm?event=jobs.checkJobDetailsNewApplication&returnToEvent=jobs.listJobs&jobid=C63CB99A-2266-9C42-1B0D-DAD5A7949E07&CurATC=EXT&CurBID=1877E01E%2D78DD%2D4ED2%2D9D7A%2D9DB40135CFF4&JobListID=22fc4f47%2De994%2D46a3%2Db8c9%2D9bc901269f43&jobsListKey=88db6b26%2D44b9%2D4904%2D9ea3%2De03326670378&persistVariables=CurATC,CurBID,JobListID,jobsListKey,JobID&lid=64736390058&rmuh=3D3CDB0C501CD287054F6AE8883D5D502AF87D53',
-  // },
-  // {
-  //   company_name: 'Queensland University of Technology (QUT)',
-  //   title: 'Sessional Academic Pool (Law)',
-  //   ranking: 5,
-  //   location: 'Kelvin Grove QLD 4059, Australia',
-  //   jobPostLink: '/jobs/sessional-academic-pool-law-/131064',
-  //   employerLink: '/employers/queensland-university-of-technology-qut-/3786',
-  //   applyNowLink:
-  //     'https://qut.nga.net.au/cp/index.cfm?event=jobs.viewDisplayOnlyJobDetails&returnToEvent=jobs.listJobs&jobid=80E2854B-378B-4CCF-AD0F-B18B00EBABB5&CurATC=EXT&CurBID=1877E01E%2D78DD%2D4ED2%2D9D7A%2D9DB40135CFF4&JobListID=22fc4f47%2De994%2D46a3%2Db8c9%2D9bc901269f43&jobsListKey=88db6b26%2D44b9%2D4904%2D9ea3%2De03326670378&persistVariables=CurATC,CurBID,JobListID,jobsListKey&lid=64736390008&rmuh=18B96F13A08A836AB65C97B087F13A078C0C7823',
-  // },
+  {
+    company_name: 'The University of Auckland',
+    title: 'Senior Research Fellow',
+    ranking: 5,
+    location: 'Auckland, New Zealand',
+    jobPostLink: '/jobs/senior-research-fellow/135382',
+    employerLink: '/employers/the-university-of-auckland/3809',
+    applyNowLink: '/jobs/senior-research-fellow/135382#request-job-post',
+  },
+  {
+    company_name: 'University of Waikato',
+    title: 'Postdoctoral Fellow in Greenhouse Gases Emissions from Peat Soils',
+    ranking: 5,
+    location: 'Hamilton, New Zealand',
+    jobPostLink:
+      '/jobs/postdoctoral-fellow-in-greenhouse-gases-emissions-from-peat-soils/133183',
+    employerLink: '/employers/university-of-waikato/3806',
+    applyNowLink:
+      '/jobs/postdoctoral-fellow-in-greenhouse-gases-emissions-from-peat-soils/133183#request-job-post',
+  },
 ];
 
 export default function Page() {
@@ -217,7 +220,7 @@ export default function Page() {
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li>
-              <Link href="/employers/massey-university/3810">Massey</Link>
+              <Link href="/university-jobs/massey-university">Massey</Link>
             </li>
             <li>
               <Link href="/employers/auckland-university-of-technology/3804">
@@ -239,7 +242,7 @@ export default function Page() {
             </Link>
           </li>
           <li>
-            <Link href="/employers/university-of-otago/3805">Otago</Link>
+            <Link href="/university-jobs/university-of-otago">Otago</Link>
           </li>
           <li>
             <Link href="/employers/lincoln-university/3808">Lincoln</Link>
@@ -251,7 +254,7 @@ export default function Page() {
           </li>
         </ul>
       </div>
-      <div className="content-grid mx-auto ">
+      <div className="content-grid mx-auto mt-16">
         <div
           id="section"
           className=" full-width py-4 full-width mb-4 bg-slate-200"
@@ -285,14 +288,32 @@ export default function Page() {
                 your search for university jobs search in NZ top universities
                 today!
               </p>
-              <p className="px-7 md:flex hidden">
-                Find all the best jobs here…
-              </p>
             </div>
           </div>
         </div>
-        <h2 className="underline-full">University Jobs of the week</h2>
+        <h2 className="underline-full mt-16">
+          University Jobs of the week for New Zealand
+        </h2>
         <JobOfTheWeek jobData={jobData} />
+
+        <h2 className="underline-full">
+          Higher Education & Academic Employment tips
+        </h2>
+        <ScrollableCardNZ />
+
+        <h2 className="underline-full mt-16">
+          Top Faculty Positions: Lecturer, Postdoc and Research Jobs in
+          New Zealand
+        </h2>
+        <div className="cate-group section23 ">
+          <div className="widget__text-block">
+            <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7"></div>
+            <TopJobs />
+          </div>
+        </div>
+        <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
+          view more top jobs →
+        </Link>
 
         {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
     <a>▼</a></div> */}
@@ -313,7 +334,7 @@ export default function Page() {
       <div id="myUniversity" class="myUniversity">
         <div class="widget__text-block1"> */}
         <div>
-          <h2 className="">New Zealand: All University Jobs by Region</h2>
+          {/* <h2 className="">New Zealand: All University Jobs by Region</h2> */}
           <NZ heading="" />
         </div>
 

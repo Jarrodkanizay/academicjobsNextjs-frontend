@@ -8,9 +8,9 @@ import SearchResults3 from '@/components/SearchResults3';
 // import type { Metadata } from 'next';
 
 export async function generateMetadata({ params, searchParams }) {
-  // let { category } = params;
-  // category = category?.replace(/-/g, ' ');
-  let category = 'tasmania';
+   let { category } = params;
+   category = category?.replace(/-/g, ' ');
+  //let category = 'tasmania';
   const {
     Name = '',
     Title = '',
@@ -18,6 +18,7 @@ export async function generateMetadata({ params, searchParams }) {
     Keyword = '',
     content: content1 = '',
     image = '',
+
   } = citiesData.find((item) => item.Name === category) || {};
   return {
     title: Title,
@@ -29,7 +30,8 @@ export async function generateMetadata({ params, searchParams }) {
 export default function Page({ params, searchParams }) {
   // console.log("````````````````````params````````````````````")
   // console.log(params)
-  let category = 'tasmania';
+  let { category } = params;
+  category = category?.replace(/-/g, ' ');
   // console.log(category);
   const city = citiesData.find((item) => item.Name === category);
   console.log(city);
@@ -46,6 +48,9 @@ export default function Page({ params, searchParams }) {
     content: content1,
     image="",
     alt: alt,
+    filter: filter6 = "",
+    footer_h2="",
+    footer_content=""
   } = city;
   let ausHeader, otherHeader, content;
   ausHeader = (
@@ -92,16 +97,7 @@ export default function Page({ params, searchParams }) {
       {ausCities.includes(Name) ? ausHeader : otherHeader}
       <div className="content-grid flex-col md:gap-2">
         <AdvancedSearchBar
-          p={{
-            r: 'Australia',
-            filter0: [
-              {
-                category: 'Country',
-                filter: 'Australia',
-              },
-              { category: 'State', filter: 'Tasmania' },
-            ],
-          }}
+          p={filter6}
         />
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
@@ -112,20 +108,17 @@ export default function Page({ params, searchParams }) {
           <div className="listings_panel">
             <div className="listings_content">
               <SearchResults3
-                p={{
-                  r: 'Australia',
-                  filter0: [
-                    {
-                      category: 'Country',
-                      filter: 'Australia',
-                    },
-                    { category: 'State', filter: 'Tasmania' },
-                  ],
-                }}
+                p={filter6}
               />
             </div>
-          </div>
+          </div>      
+
         </section>
+        <div>
+          <h2>{footer_h2}</h2>
+          <div dangerouslySetInnerHTML={{ __html: footer_content }} />
+        </div>
+    
       </div>
     </>
   );

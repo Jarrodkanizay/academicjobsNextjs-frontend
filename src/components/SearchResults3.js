@@ -26,12 +26,13 @@ export default function SearchResults2({p={},
 
   const [page, setPage] = useState(0);
   let searchParams1 = {}
+  //alert(JSON.stringify(p))
   if (Object.keys(p).length !== 0) {
     searchParams1 = { ...searchParams, ...p }
   } else {
     searchParams1 = { ...searchParams }
   }
-  const { r = "", q = "", l = "", lon = 0, lat = 0, filter0 = [], currentMiddleCategory, category } = searchParams1
+  const { employer_id=-1, r = "", q = "", l = "", lon = 0, lat = 0, filter0 = [], currentMiddleCategory, category } = searchParams1
   let filter1 = [...filter0]
   const filteredData = filter1.filter(item => {
     return item.category !== "region"
@@ -44,7 +45,7 @@ export default function SearchResults2({p={},
   //filter1 = [...filteredData, { category: "region", filter: r || "Global" }]
 
   //const { q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
-  console.log('==============SearchResults2222222', q);
+  //console.log('==============SearchResults2222222', q);
   //alert(q);
   const {
     isPending,
@@ -57,12 +58,12 @@ export default function SearchResults2({p={},
   } = useQuery({
     queryKey: ['jobs', currentMiddleCategory,
       category,
-      filter1, page, q, l, lon, lat,],
+      filter1, page, q, l, lon, lat,  employer_id],
     queryFn: async () => {
       const response = await BaseApi.post('/jobs', {
         currentMiddleCategory,
         category,
-        filter1, page, q, l, lon, lat,
+        filter1, page, q, l, lon, lat, employer_id
       });
       console.log(response.data);
       console.log('response.data.data', response.data.data);
@@ -83,13 +84,13 @@ export default function SearchResults2({p={},
   } = useQuery({
     queryKey: ['qty', currentMiddleCategory,
       category,
-      filter1, page, q, l, lon, lat,
+      filter1, page, q, l, lon, lat, employer_id
     ],
     queryFn: async () => {
       const response = await BaseApi.post('/jobQty', {
         currentMiddleCategory,
         category,
-        filter1, page, q, l, lon, lat,
+        filter1, page, q, l, lon, lat, employer_id
       });
       console.log(response.data);
       console.log('response.data.data', response.data.data);
