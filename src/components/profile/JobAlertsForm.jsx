@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Select from 'react-select';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
-import fieldsData from "@/data/jobCategories1.json";
+import fieldsData from "@/data/JobCategories1.json";
 import locationData from '@/data/locationData.json';
 import { useSession } from "next-auth/react";
 import { BaseApi } from '@/lib/store/Base';
