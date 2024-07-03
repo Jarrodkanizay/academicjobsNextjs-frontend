@@ -143,7 +143,7 @@ export default async function myPage() {
         </Link>
 
         <Link
-          href="/new-zealand?r=New Zealand"
+          href="/new-zealand"
           className="card bg-slate-100  hover:grayscale hover:underline"
         >
           <h2 className="text-center text-[16px] text-gray-500 font-normal mb-0">
