@@ -1,13 +1,16 @@
 'use client';
-import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
+import React from 'react';
 import SearchResults3 from '@/components/SearchResults3';
 import SearchResults from '@/components/SearchResults';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
-//import IntenationalJobs from '@/components/IntenationalJobs';
+import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
+import { useSearchParams } from 'next/navigation';
+
 import JobTypeFaces from '@/components/JobTypeFaces';
 export default function Page() {
+  const searchParams = loadFromURLParams(useSearchParams());
   return (
     <>
       <main>
@@ -31,7 +34,7 @@ export default function Page() {
                   Gl<span className="font-extrabold text-xl text-yellow-500 inline-block">o</span>bal Jobs Here!
                 </span>
               </div>
-              <SearchResults q={{ filter1: [{ category: 'postRegion', filter: 'Australia' }] }} filterOff={true} />
+              <SearchResults q={{ filter1: [{ category: 'postRegion', filter: searchParams.r }] }} filterOff={true} />
               <JobFilter />
             </div>
           </div>
