@@ -7,6 +7,44 @@ import { useStore } from '@/lib/store/store';
 import JobTypeFaces from './JobTypeFaces';
 export default function JobSearchBox() {
   const { region } = useStore();
+    const size = 180;
+    const items = [
+      {
+        src: '/home/academic-faculty-positions.png',
+        alt: 'Academic Faculty Positions',
+        label: 'Faculty',
+        //link: `/faculty`,
+        link: `/faculty?r=Global&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`,
+      },
+      {
+        src: '/home/academic-executive-positions.png',
+        alt: 'Academic Executive Positions',
+        label: 'Executive',
+        link: `/executive?r=Global&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`,
+        // link: `/executive?r=Global&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`,
+      },
+      {
+        src: '/home/academic-human-resource-positions.png',
+        alt: 'Academic Human Resource Positions',
+        label: 'HR Jobs',
+        //link: `/hr-jobs`,
+        link: `/hr-jobs?r=Global&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`,
+      },
+      {
+        src: '/home/academic-phd-positions.png',
+        alt: 'Academic PhD Positions',
+        label: 'PhD Jobs',
+        //link: `/phd`,
+        link: `/phd?r=Global&filter0=[{"category":"PositionType","filter":"Student / Phd Jobs"}]`,
+      },
+      {
+        src: '/home/academic-staff-positions.png',
+        alt: 'Academic Staff Positions',
+        label: 'Staff/Admin',
+        //link: `/admin`,
+        link: `/admin?r=Global&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`,
+      },
+    ];
   return (
     <div className="hero-bg md:bg-center">
       <section className="wrapper md:flex">
@@ -25,7 +63,7 @@ export default function JobSearchBox() {
         </h2>
       </section>
       {/* Headshot's of Faculty, Executive, HR, PhD, Staff/Admin */}
-      <JobTypeFaces />
+      <JobTypeFaces items={items} size={size} />
       <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-[-75px] mt-[-8rem] lg:hidden ">
         <li>
           <a className="grayscale hover:grayscale-0" href="/faculty">
@@ -44,7 +82,10 @@ export default function JobSearchBox() {
           </a>
         </li>
         <li>
-          <a className="grayscale hover:grayscale-0" href='/executive?r=Global&filter0=[{"category":"master_category_job_type","filter":"Executive"}]'>
+          <a
+            className="grayscale hover:grayscale-0"
+            href='/executive?r=Global&filter0=[{"category":"master_category_job_type","filter":"Executive"}]'
+          >
             <Image
               alt="Academic Executive Positions"
               loading="lazy"

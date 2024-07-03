@@ -108,14 +108,14 @@ export default function Page({ params, searchParams }) {
           className="absolute inset-0 z-0 bottom-0 left-0 flex justify-center w-full h-full"
           style={{ transform: 'translateX(25%)' }}
         >
-          <Image
+          {/* <Image
             src={Image}
             alt="Description of image"
             className="h-full object-cover"
             style={{ width: 'auto' }}
             width={1000}
             height={1000}
-          />
+          /> */}
         </div>
       </div>
 
