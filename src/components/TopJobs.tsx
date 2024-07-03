@@ -3,7 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
 import Link from 'next/link';
 
-const TopJobs = () => {
+const TopJobs = ({ country }) => {
   const {
     data: jobs,
     isSuccess,
@@ -13,7 +13,7 @@ const TopJobs = () => {
   } = useQuery({
     queryKey: ['job'],
     queryFn: async () => {
-      const response = await BaseApi.get(`/getTopJobs`);
+      const response = await BaseApi.get(`/getTopJobs/${country}`);
       console.log(response.data);
       console.log('response.data.data', response.data.data);
       return response.data.data;
@@ -49,7 +49,7 @@ const TopJobs = () => {
                 <br />
                 {job.location}
                 <br />
-                {new Date(job.activation_date).toLocaleDateString('en-US', {
+                exp: {new Date(job.expiration_date).toLocaleDateString('en-US', {
                   month: 'short',
                   day: 'numeric',
                   year: 'numeric',
