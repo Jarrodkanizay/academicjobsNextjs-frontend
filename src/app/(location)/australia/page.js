@@ -274,13 +274,13 @@ export default async function myPage() {
           </li>
           <li>
             {/* <Link href="/australia/student"> Student</Link> */}
-            <Link href="/australia/hr-jobs?r=Australia&q=Student">Student</Link>
+            <Link href="/australia/student?r=Australia&q=Student">Student</Link>
           </li>
           <li>
-            <Link href="/australia/indigenous">Indigenous</Link>
+            <Link href="/australia/indigenous?r=Australia&q=indigenous">Indigenous</Link>
           </li>
           <li>
-            <Link href="/australia/graduate">Graduate</Link>
+            <Link href="/australia/graduate?r=Australia&q=graduate">Graduate</Link>
           </li>
           <li>
             {/* <Link href="/australia/phd">PhD</Link> */}
