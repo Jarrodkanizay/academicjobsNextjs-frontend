@@ -102,7 +102,7 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
 
       <h2 className="underline-full gray-blue">
         {selectedCurrency === 'AUD'
-          ? 'Special: AHEIA Members Only'
+          ? 'Special: AHEIA Members Only '
           : 'Pricing '}
         {selectedCurrency === regionMessage ? '' : selectedCurrency}
       </h2>
@@ -132,7 +132,8 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
                 </span>
                 <span className="text-3xl font-bold">
                   {formatNumberWithCommas(products[0].price)}
-                </span>{' '}
+                </span>
+                <span className="text-[12px]">{selectedCurrency}</span>
                 <p className="m-0 mt-[-4px] text-[12px]">/per purchase</p>
               </span>
             </div>
@@ -222,6 +223,8 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
                 <span className="text-3xl font-bold text-black">
                   {formatNumberWithCommas(products[1].price)}
                 </span>
+                <span className="text-[12px]">{selectedCurrency}</span>
+
                 <p className="m-0 mt-[-4px] text-[12px]">/per job pack</p>
               </span>
             </div>
@@ -332,6 +335,7 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
                 <span className="text-3xl font-bold text-black">
                   {formatNumberWithCommas(products[2].price)}
                 </span>
+                <span className="text-[12px]">{selectedCurrency}</span>
                 <p className="m-0 mt-[-4px] text-[12px]">/monthly</p>
               </span>
             </div>
