@@ -7,12 +7,12 @@
     "Keyword": "",
     "image": "",
     "alt": "",
-    "content": "",
+    "content": "The University of Auckland is a public research university based in Auckland, New Zealand.",
     "filter": {
       "employer_id": "3809"
     },
     "footer_h2": "Careers at University of Auckland",
-    "footer_content": "The University of Auckland is a public research university based in Auckland, New Zealand. It is the largest, most comprehensive and highest-ranked university in New Zealand and consistently places among the top 100 universities. Employees working in University of Auckland enjoy many <a href= 'https://www.careers.auckland.ac.nz/' className='link-aj'>employee benefits</a>, such as special leaves schemes, employee assistance programmes, discounted medical insurance and funds for professional development. "
+    "footer_content": "The University of Auckland is a public research university based in Auckland, New Zealand. It is the largest, most comprehensive and highest-ranked university in New Zealand and consistently places among the top 100 universities. Employees working in University of Auckland enjoy many <a href= 'https://www.careers.auckland.ac.nz/' className='link link-aj'>employee benefits</a>, such as special leaves schemes, employee assistance programmes, discounted medical insurance and funds for professional development. "
   },
   {
     "Name": "auckland university of technology",
@@ -22,12 +22,12 @@
     "Keyword": "",
     "image": "",
     "alt": "",
-    "content": "",
+    "content": "AUT is the second largest university in Aotearoa New Zealand. AUT  attracts bright, positive and ambitious staff, and supports achievement.",
     "filter": {
       "employer_id": "3804"
     },
     "footer_h2": "Careers at AUT",
-    "footer_content": "AUT is the second largest university in Aotearoa New Zealand. AUT  attracts bright, positive and ambitious staff, and supports achievement. Their values – tika, pono and aroha (integrity, respect and compassion) – are at the heart of everything they do. Employee in AUT enjoy many employee benefits, such as special leaves schemes, AUT free gym membership, employee assistance programme, discounted medical insurance and funds for professional development. "
+    "footer_content": "AUT is the second largest university in Aotearoa New Zealand. AUT  attracts bright, positive and ambitious staff, and supports achievement. Their values – tika, pono and aroha (integrity, respect and compassion) – are at the heart of everything they do.<br /><br />Employees working in AUT enjoy many employee benefits, such as special leaves schemes, AUT free gym membership, employee assistance programme, discounted medical insurance and funds for professional development."
   },
   {
     "Name": "massey university",
@@ -52,7 +52,7 @@
     "Keyword": "University of Otago Jobs,University of Otago Job Vacancies",
     "image": "",
     "alt": "University of Otago",
-    "content": "",
+    "content": "The University of Otago is home to the 4 largest medical schools in Australasia with more than 195 different programmes of study.",
     "filter": {
       "employer_id": "3805"
     },

@@ -55,7 +55,7 @@ export default function Page({ params, searchParams }) {
 
   // FIXME: Convert this to a component
   ausHeader = (
-    <div className="w-full relative">
+    <div className="w-full relative mb-8">
       <Image
         src={image || image !== '' ? image : '/banner-icons/global.png'}
         alt={alt}
@@ -72,7 +72,7 @@ export default function Page({ params, searchParams }) {
     </div>
   );
   otherHeader = (
-    <div className="w-full relative">
+    <div className="w-full relative mb-8">
       <Image
         src={image || image !== '' ? image : '/banner-icons/global.png'}
         alt={alt}

@@ -84,7 +84,6 @@ html {
 
     .post_panel .post_content .post,
     .post_panel {
-
       h1,
       h2,
       h3,
@@ -288,7 +287,8 @@ html {
 
     .listings_content {
       position: relative;
-      min-height: var(--listing-panel-height);
+      padding-bottom: 50px;
+      // min-height: var(--listing-panel-height);
     }
 
     .listing {
@@ -315,7 +315,6 @@ html {
     }
 
     @media (max-width: 1432px) {
-
       .jobs_grid.job_post_panel_container,
       .jobs_grid.job_post_header_container {
         margin-left: var(--margin-x);
@@ -324,7 +323,6 @@ html {
     }
 
     @media (max-width: 1056px) {
-
       .jobs_grid.job_post_search_container,
       .jobs_grid.job_post_header_container {
         margin-left: var(--margin-x);
@@ -361,6 +359,5 @@ html {
           'applications_close_panel';
       }
     }
-
   }
 }
