@@ -61,7 +61,7 @@ const JobPostForm = ({ partner, region = 'USA' }) => {
   let textColor = 'text-aj';
   let partnerName = 'AcademicJobs';
   let partnerLogo = '';
-  let partnerImage = '/partners/post-a-job.jpg';
+  let partnerImage = '/partners/post-a-job.png';
   let partnerPullDown = false;
   let institutionName = `Institution Name (ie: Harvard University)`;
   let urlExample = `uni-name.edu/job-posting-url`;
