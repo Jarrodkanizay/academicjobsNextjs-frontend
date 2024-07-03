@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { productData } from '@/data/productData';
+import { Span } from 'next/dist/trace';
 
 // type Props = {
 //   productName: string
@@ -44,9 +45,6 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
     return number.toLocaleString();
   }
 
-  // TODO - Add validation for region, users should be able to proceed without selecting a region!
-  // TODO - Display a modal or highlight the region selector
-  // TODO - Customize the features for AHEIA versus other regions
   // TODO - Setup other pricing for other regions in stripe
   // TODO - Refactor to remove excess region and currency management
 
@@ -85,16 +83,16 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
 
       <select
         id="currency"
-        value={regionSelected}
+        value={selectedCurrency}
         onChange={handleChange}
         name="currency"
         className="select select-bordered w-full bg-white focus:outline-none focus:border-orange-500 mb-4"
         hidden={hideRegionSelector}
         required
       >
-        <option value="" selected>
+        {/* <option value="" selected>
           Which Region are you from?
-        </option>
+        </option> */}
         {Object.keys(region).map((key) => (
           <option key={key} value={region[key]}>
             {key}
@@ -104,7 +102,7 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
 
       <h2 className="underline-full gray-blue">
         {selectedCurrency === 'AUD'
-          ? 'EOFY Special (AHEIA Members Only)'
+          ? 'Special: AHEIA Members Only'
           : 'Pricing '}
         {selectedCurrency === regionMessage ? '' : selectedCurrency}
       </h2>
@@ -347,9 +345,9 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
                 src="/icons/check-grey.svg"
               />
               <span className="ml-3">
-                EOFY
-                <span className="text-black"> special</span>{' '}
-                <span className="text-[12px]">(ends soon)</span>
+                Unlimited
+                <span className="text-black"> Job Ads</span>{' '}
+                {/* <span className="text-[12px]">(ends soon)</span> */}
               </span>
             </li>
             <li className="flex text-lg mb-2">
@@ -389,10 +387,27 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
               </span>
             </li>
             <li className="flex text-lg mb-2">
-              ⭐{' '}
-              <span className="ml-3">
-                <span className="text-black">AHEIA Members Only</span>
-              </span>
+              {selectedCurrency === 'AUD' ? (
+                <>
+                  ⭐{' '}
+                  <span className="ml-3 pt-1">
+                    <span className="text-black">AHEIA Members Only</span>
+                  </span>
+                </>
+              ) : (
+                <>
+                  <Image
+                    width="20"
+                    height="20"
+                    alt=""
+                    src="/icons/check-grey.svg"
+                  />
+                  <span className="ml-3">
+                    Save <span className="text-black"> 20k+ </span>
+                    <span className="text-[12px]">per year</span>
+                  </span>
+                </>
+              )}
             </li>
           </ul>
           <a
