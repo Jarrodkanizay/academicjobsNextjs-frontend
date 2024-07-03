@@ -304,7 +304,7 @@ export default function Page() {
         <div className="cate-group section23 ">
           <div className="widget__text-block">
             <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7"></div>
-            <TopJobs />
+            <TopJobs country="New Zealand" />
           </div>
         </div>
         <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">

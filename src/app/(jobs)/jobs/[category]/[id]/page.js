@@ -10,7 +10,6 @@ import { BsFillShareFill } from 'react-icons/bs';
 import Button from './Button';
 import { CloudCog } from 'lucide-react';
 import RequestFullJobForm from '@/components/forms/RequestFullJobForm';
-import { useSearchParams } from 'next/navigation';
 import MapMarkerIcon from '@/components/icons/MapMarkerIcon';
 import FavoriteButton from '@/components/FavoriteButton';
 import { StarRank } from '@/components/StarRank';
