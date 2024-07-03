@@ -65,11 +65,6 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/new-zealand?r=new+zealand',
-        destination: '/new-zealand',
-        permanent: true,
-      },
-      {
         source: '/university-jobs/in-tasmania',
         destination: '/university-jobs/tasmanina',
         permanent: true,
