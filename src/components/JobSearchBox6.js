@@ -3,7 +3,6 @@ import { NextPage } from 'next';
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useRef } from 'react';
-import { useSearchParams } from 'next/navigation';
 import Autocomplete, { usePlacesWidget } from 'react-google-autocomplete';
 import { useStore } from '@/lib/store/store';
 export default function JobSearchBox({
