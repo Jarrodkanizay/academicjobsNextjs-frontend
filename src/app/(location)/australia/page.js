@@ -328,7 +328,7 @@ export default async function myPage() {
         <li>
           <Link
             className="text-center"
-            href="/gold-coast?r=Australia&l=gold-coast"
+            href="/gold-coast?r=Australia&l=gold coast"
           >
             Gold Coast
           </Link>
