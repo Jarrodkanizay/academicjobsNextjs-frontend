@@ -7,7 +7,6 @@ import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
 //import IntenationalJobs from '@/components/IntenationalJobs';
 import JobTypeFaces from '@/components/JobTypeFaces';
-
 export default function Page() {
   return (
     <>
@@ -27,6 +26,11 @@ export default function Page() {
         <section class="jobs_grid job_post_search_container">
           <div class="filters_panel">
             <div class="filters_content">
+              <div className="mt-10 flex justify-center items-center ">
+                <span className="font-extrabold text-xl font-handwritten bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-orange-500 inline-block animate-pulse-gradient">
+                  Gl<span className="font-extrabold text-xl text-yellow-500 inline-block">o</span>bal Jobs Here!
+                </span>
+              </div>
               <SearchResults q={{ filter1: [{ category: 'postRegion', filter: 'Australia' }] }} filterOff={true} />
               <JobFilter />
             </div>
