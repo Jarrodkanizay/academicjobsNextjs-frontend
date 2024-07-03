@@ -44,7 +44,7 @@ export default function JobSearchBox() {
           </a>
         </li>
         <li>
-          <a className="grayscale hover:grayscale-0" href="/executive">
+          <a className="grayscale hover:grayscale-0" href='/executive?r=Global&filter0=[{"category":"master_category_job_type","filter":"Executive"}]'>
             <Image
               alt="Academic Executive Positions"
               loading="lazy"
