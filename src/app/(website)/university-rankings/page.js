@@ -13,6 +13,7 @@ import NZ from '@/components/topUnis/NZ';
 import ME from '@/components/topUnis/ME';
 import India from '@/components/topUnis/India';
 import Europe from '@/components/topUnis/Europe';
+import TopUniversities from '@/components/TopUniversities';
 
 export const metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -40,8 +41,8 @@ export default function myPage() {
         reorder={false}
         imgRight={false}
       />
-
       <div className="content-grid">
+        <TopUniversities />
         <div className="max-w-[650px] mx-auto">
           <h4 className="underline-full">Explore universities by region</h4>
           <p>
@@ -112,36 +113,35 @@ export default function myPage() {
         <USA id="section" heading="UNITED STATES" />
 
         <h2 id="section1" className="-full">
-        AUSTRALIA
-          </h2>
+          AUSTRALIA
+        </h2>
         <Australia id="section1" heading="" />
 
         <h2 id="section9" className="-full">
-        AFRICA
-          </h2>
-        <Africa id="section9"heading="" />
+          AFRICA
+        </h2>
+        <Africa id="section9" heading="" />
 
         <h2 id="section3" className="-full">
-        ASIA
-          </h2>
+          ASIA
+        </h2>
         <Asia id="section3" heading="" />
 
         <h2 id="section3" className="-full">
-        CANADA
-          </h2>
+          CANADA
+        </h2>
         <Canada id="section3" heading="" />
 
         <h2 id="section2" className="-full">
-        UNITED KINGDOM
-          </h2>
+          UNITED KINGDOM
+        </h2>
         <UK id="section2" heading="" />
 
         <h2 id="section5" className="-full">
-        SOUTH AMERICA
-          </h2>
+          SOUTH AMERICA
+        </h2>
         <SA id="section5" heading="" />
- 
-        
+
         <div>
           <h2 id="section6" className="-full">
             NEW ZEALAND
@@ -162,7 +162,7 @@ export default function myPage() {
           </h2>
           <India heading="" />
         </div>
-       
+
         <div>
           <h2 id="section4" className="-full">
             EUROPE

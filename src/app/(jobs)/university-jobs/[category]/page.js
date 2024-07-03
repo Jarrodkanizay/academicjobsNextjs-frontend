@@ -52,10 +52,12 @@ export default function Page({ params, searchParams }) {
     footer_content = '',
   } = city;
   let ausHeader, otherHeader, content;
+
+  // FIXME: Convert this to a component
   ausHeader = (
     <div className="w-full relative">
       <Image
-        src={image}
+        src={image || image !== '' ? image : '/banner-icons/global.png'}
         alt={alt}
         className="w-full h-full object-cover object-center absolute top-0 left-0"
         width={2000}
@@ -71,15 +73,13 @@ export default function Page({ params, searchParams }) {
   );
   otherHeader = (
     <div className="w-full relative">
-      {image ? (
-        <Image
-          src={image}
-          alt={alt}
-          className="w-full h-full object-cover object-center absolute top-0 left-0"
-          width={2000}
-          height={1000}
-        />
-      ) : null}
+      <Image
+        src={image || image !== '' ? image : '/banner-icons/global.png'}
+        alt={alt}
+        className="w-full h-full object-cover object-center absolute top-0 left-0"
+        width={2000}
+        height={1000}
+      />
       <div className="hero-content mx-auto items-start justify-start py-12 relative z-10">
         <h1 className="md:text-5xl font-bold md:text-left text-white pb-4 m-0">
           {h1 ? h1 : Title}
