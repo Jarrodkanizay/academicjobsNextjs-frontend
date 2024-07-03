@@ -1,8 +1,8 @@
 //import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import JobSearchBox from '@/components/JobSearchBox';
-import JobFilter from '@/components/JobFilter';
+// import JobSearchBox from '@/components/JobSearchBox';
+// import JobFilter from '@/components/JobFilter';
 import NZ from '@/components/topUnis/NZ';
 import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 import JobOfTheWeek from '@/components/JobOfTheWeek';
@@ -229,11 +229,11 @@ export default function Page() {
               </Link>
             </li>
             <li>
-              <Link href="/employers/waikato-university/3806">Waikato</Link>
+              <Link href="/university-jobs/university-of-waikato">Waikato</Link>
             </li>
           </ul>
           <li>
-            <Link href="/employers/victoria-university-of-wellington/3807">
+            <Link href="/university-jobs/victoria-university-of-wellington">
               VUW
             </Link>
           </li>
@@ -241,10 +241,10 @@ export default function Page() {
             <Link href="/university-jobs/university-of-otago">Otago</Link>
           </li>
           <li>
-            <Link href="/employers/lincoln-university/3808">Lincoln</Link>
+            <Link href="/university-jobs/lincoln-university">Lincoln</Link>
           </li>
           <li>
-            <Link href="/employers/university-of-canterbury/3811">
+            <Link href="/university-jobs/university-of-canterbury">
               Canterbury
             </Link>
           </li>
@@ -307,7 +307,10 @@ export default function Page() {
             <TopJobs country="New Zealand" />
           </div>
         </div>
-        <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
+        <Link
+          className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold"
+          href="/university-jobs?r=New%2520Zealand&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D"
+        >
           view more top jobs →
         </Link>
 

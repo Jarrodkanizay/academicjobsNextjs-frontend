@@ -843,7 +843,10 @@ export default async function myPage() {
             </div>
           </div>
         </div>
-        <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
+        <Link
+          className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold"
+          href="/university-jobs"
+        >
           view more top jobs →
         </Link>
 

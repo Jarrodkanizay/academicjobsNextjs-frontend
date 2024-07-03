@@ -330,7 +330,10 @@ export default async function myPage() {
           <TopJobs country="United States" />
         </div>
       </div>
-      <Link className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold" href="/jobs/">
+      <Link
+        className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold"
+        href="/university-jobs?r=united%20states"
+      >
         view more top jobs →
       </Link>
       {/* <div className="ml-2">
