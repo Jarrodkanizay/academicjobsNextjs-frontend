@@ -155,67 +155,63 @@ export default function Page() {
       <div className="w-full  max-w-[700px] flex flex-col p-2 items-top my-4 mx-auto mt-20">
         <JobSearchBoxCountry country={'New Zealand'} />
       </div>
-      <div className="my-4">
-        <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
-          <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
-            <li>
-              <Link
-                href={`/New-Zealand/lecturer?r=New Zealand&filter0=[{"category":"PositionType","filter":"Lecturer/Instructor"}]`}
-              >
-                {' '}
-                Lecturer
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/New-Zealand/research?r=New Zealand&filter0=[{"category":"PositionType","filter":"Research"}]`}
-              >
-                {' '}
-                Research{' '}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/New-Zealand/professor?r=New Zealand&filter0=[{"category":"PositionType","filter":"Professor"}]`}
-              >
-                {' '}
-                Professor
-              </Link>
-            </li>
-          </ul>
-          <li>
-            <Link
-              href={`/New-Zealand/executive?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`}
-            >
-              {' '}
-              Executive
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={`/new-zealand/admin?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`}
-            >
-              Admin
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={`/new-zealand/hr-jobs?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`}
-            >
-              {' '}
-              HR
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={`/New-Zealand/student?r=New Zealand&filter0=[{"category":"PositionType","filter":"Graduate"}]`}
-            >
-              {' '}
-              Student
-            </Link>
-          </li>
-        </ul>
-      </div>
+      {/* <ul className="faculty-container w-full  md:w-auto flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
+        <li>
+          <Link
+            href={`/New-Zealand/lecturer?r=New Zealand&filter0=[{"category":"PositionType","filter":"Lecturer/Instructor"}]`}
+          >
+            {' '}
+            Lecturer
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={`/New-Zealand/research?r=New Zealand&filter0=[{"category":"PositionType","filter":"Research"}]`}
+          >
+            {' '}
+            Research{' '}
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={`/New-Zealand/professor?r=New Zealand&filter0=[{"category":"PositionType","filter":"Professor"}]`}
+          >
+            {' '}
+            Professor
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={`/New-Zealand/executive?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`}
+          >
+            {' '}
+            Executive
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={`/new-zealand/admin?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`}
+          >
+            Admin
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={`/new-zealand/hr-jobs?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`}
+          >
+            {' '}
+            HR
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={`/New-Zealand/student?r=New Zealand&filter0=[{"category":"PositionType","filter":"Graduate"}]`}
+          >
+            {' '}
+            Student
+          </Link>
+        </li>
+      </ul> */}
       <div className=" mt-2 mb-4">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">

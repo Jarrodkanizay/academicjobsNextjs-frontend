@@ -1,7 +1,7 @@
 [
   {
     "Name": "the university of auckland",
-    "h1" : "University of Auckland Jobs",
+    "h1": "University of Auckland Jobs",
     "Title": "Apply University of Auckland (UOA) Jobs ",
     "Description": "Find 40 Uni jobs in University of Auckland. View uni job vacancies for lecturer, research and postdocs in UOA. New Jobs added daily.",
     "Keyword": "",
@@ -16,7 +16,7 @@
   },
   {
     "Name": "auckland university of technology",
-    "h1" : "Auckland University of Technology Jobs",
+    "h1": "Auckland University of Technology Jobs",
     "Title": "Apply Auckland University of Technology (AUT) Jobs",
     "Description": "Find 139 University jobs in New Zealand. View uni job vacancies for lecturer, research and postdocs in Auckland University of Technology.",
     "Keyword": "",
@@ -31,13 +31,13 @@
   },
   {
     "Name": "massey university",
-    "h1" : "Massey University Jobs",
+    "h1": "Massey University Jobs",
     "Title": "Massey University Jobs in New Zealand. Job Vacancies today!",
     "Description": "Find 20 Massey University jobs found in Albany Auckland. View all Massey University vacancies: vet nurse, administrator and more. New jobs updated daily.",
     "Keyword": "Massey University Jobs, Massey University Job Vacancies, uni jobs",
     "image": "",
     "alt": "massey-university",
-    "content": "",
+    "content": "Massey University is a public research university with campuses in Auckland, Palmerston North and Wellington, New Zealand.",
     "filter": {
       "employer_id": "3810"
     },
@@ -46,7 +46,7 @@
   },
   {
     "Name": "university of otago",
-    "h1" : "University of Otago Jobs",
+    "h1": "University of Otago Jobs",
     "Title": "Apply University of Otago Jobs in New Zealand. Job Vacancies",
     "Description": "Find 50 University of Otago jobs found in Dunedin, Otago. View all Otago University vacancies: lecturer, dean and more",
     "Keyword": "University of Otago Jobs,University of Otago Job Vacancies",
@@ -67,9 +67,9 @@
     "content": "Seek university jobs from Melbourne's top institutions, such as University of Melbourne, Monash University, RMIT and more.",
     "image": "/banner-icons/melbourne.png",
     "alt": "melbourne academic jobs",
-     "filter": {     
-            "l":"Melbourne"
-          }
+    "filter": {
+      "l": "Melbourne"
+    }
   },
   {
     "Name": "sydney",

@@ -8,8 +8,8 @@ import SearchResults3 from '@/components/SearchResults3';
 // import type { Metadata } from 'next';
 
 export async function generateMetadata({ params, searchParams }) {
-   let { category } = params;
-   category = category?.replace(/-/g, ' ');
+  let { category } = params;
+  category = category?.replace(/-/g, ' ');
   //let category = 'tasmania';
   const {
     Name = '',
@@ -18,7 +18,6 @@ export async function generateMetadata({ params, searchParams }) {
     Keyword = '',
     content: content1 = '',
     image = '',
-
   } = citiesData.find((item) => item.Name === category) || {};
   return {
     title: Title,
@@ -40,23 +39,25 @@ export default function Page({ params, searchParams }) {
     return null; // or return an error component, or handle this situation in another appropriate way
   }
   const {
-    Name="",
-    h1="",
-    Title="",
-    Description="",
-    Keyword="",
+    Name = '',
+    h1 = '',
+    Title = '',
+    Description = '',
+    Keyword = '',
     content: content1,
-    image="",
+    image = '',
     alt: alt,
-    filter: filter6 = "",
-    footer_h2="",
-    footer_content=""
+    filter: filter6 = '',
+    footer_h2 = '',
+    footer_content = '',
   } = city;
   let ausHeader, otherHeader, content;
+
+  // FIXME: Convert this to a component
   ausHeader = (
     <div className="w-full relative">
       <Image
-        src={image}
+        src={image || image !== '' ? image : '/banner-icons/global.png'}
         alt={alt}
         className="w-full h-full object-cover object-center absolute top-0 left-0"
         width={2000}
@@ -71,14 +72,19 @@ export default function Page({ params, searchParams }) {
     </div>
   );
   otherHeader = (
-    <div className="content-grid flex-col md:gap-2">
-      <div className="bg-slate-200 full-width">
-        <div className="  hero-content flex-col lg:flex-row mx-auto items-start py-12">
-          <h1 className="md:text-5xl font-bold text-gray-500 pb-4 capitalize m-0">
-            {Name}
-          </h1>
-          <p className="px-7 mb-4 mt-1">{content1}</p>
-        </div>
+    <div className="w-full relative">
+      <Image
+        src={image || image !== '' ? image : '/banner-icons/global.png'}
+        alt={alt}
+        className="w-full h-full object-cover object-center absolute top-0 left-0"
+        width={2000}
+        height={1000}
+      />
+      <div className="hero-content mx-auto items-start justify-start py-12 relative z-10">
+        <h1 className="md:text-5xl font-bold md:text-left text-white pb-4 m-0">
+          {h1 ? h1 : Title}
+          <p className="mt-4 text-white rounded-lg leading-6">{content1}</p>
+        </h1>
       </div>
     </div>
   );
@@ -96,9 +102,7 @@ export default function Page({ params, searchParams }) {
     <>
       {ausCities.includes(Name) ? ausHeader : otherHeader}
       <div className="content-grid flex-col md:gap-2">
-        <AdvancedSearchBar
-          p={filter6}
-        />
+        <AdvancedSearchBar p={filter6} />
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
             <div className="filters_content">
@@ -107,18 +111,14 @@ export default function Page({ params, searchParams }) {
           </div>
           <div className="listings_panel">
             <div className="listings_content">
-              <SearchResults3
-                p={filter6}
-              />
+              <SearchResults3 p={filter6} />
             </div>
-          </div>      
-
+          </div>
         </section>
         <div>
           <h2>{footer_h2}</h2>
           <div dangerouslySetInnerHTML={{ __html: footer_content }} />
         </div>
-    
       </div>
     </>
   );
