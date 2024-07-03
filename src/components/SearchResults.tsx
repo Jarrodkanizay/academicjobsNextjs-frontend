@@ -16,11 +16,13 @@ interface SearchResultsProps {
   };
   filterOff?: boolean;
   searchMessage?: string;
+  lefthandView?: boolean;
 }
 export default function SearchResults({
   q,
   filterOff = false,
   searchMessage = 'Jobs Found',
+  lefthandView = false
 }: SearchResultsProps) {
   console.log('==============SearchResults==================');
   const [page, setPage] = useState(0);
@@ -97,6 +99,7 @@ export default function SearchResults({
               handlePageChange={handlePageChange}
               page={page}
               isPlaceholderData={isPlaceholderData}
+              lefthandView={lefthandView}
             />
           </div>
         </>
@@ -109,18 +112,23 @@ export default function SearchResults({
       );
     }
   } else {
-    content = (
-      <div className="container mx-auto">
-        <p className="text-center text-xl font-bold mt-12 px-8">
-          Sorry! We couldn't find any jobs matching&nbsp;your&nbsp;request.
-        </p>
-        <p className="text-center text-md py-10 px-8">
-          Please consider expanding your search and joining our Talent&nbsp;Pool
-          to get notified of jobs matching your&nbsp;unique&nbsp;skills.
-        </p>
-        <p className="text-center">{/* <JoinTalentPoolButton /> */}</p>
-      </div>
-    );
+    if (!lefthandView) {
+      content = (
+        <div className="container mx-auto">
+          <p className="text-center text-xl font-bold mt-12 px-8">
+            Sorry! We couldn't find any jobs matching&nbsp;your&nbsp;request.
+          </p>
+          <p className="text-center text-md py-10 px-8">
+            Please consider expanding your search and joining our Talent&nbsp;Pool
+            to get notified of jobs matching your&nbsp;unique&nbsp;skills.
+          </p>
+          <p className="text-center">{/* <JoinTalentPoolButton /> */}</p>
+        </div>
+      );
+    } else {
+      return null
+    }
+
   }
   return <>{content}</>;
 }

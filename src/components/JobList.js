@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setJob, setId, setStatusId } from '@/app/store/postsSlice';
 import Job from './Job';
 
-const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
+const JobList = ({ data, handlePageChange, page, isPlaceholderData, lefthandView }) => {
   let content;
   const [isOpen, setIsOpen] = useState(false);
   content = data.jobs.map((job, index) => {
@@ -13,22 +13,24 @@ const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
         className={`font-bold ${index % 2 === 0 ? 'bg-white' : 'bg-white'}`}
         key={index}
       >
-        <Job job={job} />
+        <Job job={job} lefthandView={lefthandView} />
       </div>
     );
   });
   return (
     <>
+      <div className={`flex justify-center items-center ${lefthandView ? 'block' : 'hidden'}`}>
+        <h3 className="text-gray-blue underline-full leading-tight">International Opportuninties</h3>
+      </div>
       {content}
       <div className="flex justify-center gap-4 text-white">
         <div className="join mx-auto">
           <button
             className={`join-item btn 
-            ${
-              page === 0
+            ${page === 0
                 ? 'cursor-not-allowed'
                 : 'bg-slate-200 hover:bg-slate-500 hover:text-white'
-            }`}
+              }`}
             onClick={() => handlePageChange('prev')}
             disabled={page === 0}
           >
@@ -43,11 +45,10 @@ const JobList = ({ data, handlePageChange, page, isPlaceholderData }) => {
                 handlePageChange('next');
               }
             }}
-            className={`join-item btn ${
-              isPlaceholderData || !data?.hasMore
+            className={`join-item btn ${isPlaceholderData || !data?.hasMore
                 ? 'cursor-not-allowed'
                 : 'bg-slate-200 hover:bg-slate-500 hover:text-white'
-            }`}
+              }`}
             disabled={isPlaceholderData || !data?.hasMore}
           >
             ▶

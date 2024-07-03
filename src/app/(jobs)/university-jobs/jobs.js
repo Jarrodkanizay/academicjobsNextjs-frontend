@@ -29,12 +29,9 @@ export default function Page() {
         <section class="jobs_grid job_post_search_container">
           <div class="filters_panel">
             <div class="filters_content">
-              <div className="mt-10 flex justify-center items-center ">
-                <span className="font-extrabold text-xl font-handwritten bg-clip-text text-transparent bg-gradient-to-br from-blue-500 to-orange-500 inline-block animate-pulse-gradient">
-                  Gl<span className="font-extrabold text-xl text-yellow-500 inline-block">o</span>bal Jobs Here!
-                </span>
+              <div className="md:block hidden">
+              <SearchResults q={{ filter1: [{ category: 'postRegion', filter: searchParams.r }] }} filterOff={true} lefthandView={true} />
               </div>
-              <SearchResults q={{ filter1: [{ category: 'postRegion', filter: searchParams.r }] }} filterOff={true} />
               <JobFilter />
             </div>
           </div>
@@ -43,6 +40,9 @@ export default function Page() {
               <SearchResults3 />
               {/* <SearchResults1 q={{ q: q, l: l || '', lon, lat, filter1 }} /> */}
             </div>
+            <div className="block md:hidden">
+              <SearchResults q={{ filter1: [{ category: 'postRegion', filter: searchParams.r }] }} filterOff={true} lefthandView={true} />
+              </div>
           </div>
         </section>
         <div className="max-w-4xl mx-auto py-8"></div>
