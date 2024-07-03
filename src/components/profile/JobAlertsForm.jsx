@@ -7,6 +7,7 @@ import locationData from '@/data/locationData.json';
 import { useSession } from "next-auth/react";
 import { BaseApi } from '@/lib/store/Base';
 
+
 const JobAlertForm = ({ filters, alert, onClose }) => {
   const { data: session } = useSession();
   const [mainField, setMainField] = useState('');
@@ -21,6 +22,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
     value: category,
     label: category,
   }));
+  
 
   useEffect(() => {
     if (alert) {
@@ -158,8 +160,8 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center z-50 overflow-y-auto">
-      <div className="bg-white p-6 rounded-lg shadow-lg max-w-4xl w-full relative">
+    <div className="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center z-50 justify-center overflow-y-auto">
+      <div className={`bg-white p-6 rounded-lg shadow-lg max-w-4xl w-full relative z-50 ${window.innerHeight < 680 ? 'top-[80px]' : ''} md:top-0 overflow-y-auto`}>
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-700 hover:text-gray-900 text-2xl"

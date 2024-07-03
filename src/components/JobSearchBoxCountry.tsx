@@ -56,7 +56,7 @@ export default function JobSearchBoxCountry({ country }) {
      //router.push(`/jobs-advanced-search?r=${r}`);
     router.push(
       `/jobs-advanced-search?${toURLParams({
-        ...searchParams,
+        ...searchParams, r:country,
         q: keyWordRef.current.value.trim(),
       })}`,
       { scroll: false }
