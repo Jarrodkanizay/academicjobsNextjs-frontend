@@ -309,8 +309,14 @@ export default async function myPage() {
       <ScrollableCard />
 
       {/* New banner for employer rankings */}
-      <Link href={'/university-rankings'} className="btn btn-aj my-16">
-        Check out the Top University Rankings
+      <Link href={'/university-rankings'} className="my-16">
+        <Image
+          src="/banners/top-universities.png"
+          alt="University Rankings"
+          width={1875}
+          height={625}
+          className="block hover:opacity-70"
+        />
       </Link>
       {/* <p className="px-7 text-center mt-5">
             <Link
