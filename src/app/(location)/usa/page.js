@@ -25,33 +25,33 @@ export default async function myPage() {
       src: '/home/academic-faculty-positions.png',
       alt: 'Academic Faculty Positions',
       label: 'Faculty',
-      link: `usa/faculty`,
+      link: `usa/faculty?r=United States&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`,
     },
 
     {
       src: '/home/academic-executive-positions.png',
       alt: 'Academic Executive Positions',
       label: 'Executive',
-      link: `usa/executive`,
+      link: `usa/executive?r=United States&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`,
     },
     {
       src: '/home/academic-human-resource-positions.png',
       alt: 'Academic Human Resource Positions',
       label: 'HR Jobs',
-      link: `usa/hr-jobs`,
+      link: `usa/hr-jobs?r=United States&filter0=[{"category":"master_category_job_type","filter":"Human%20Resources"}]`,
     },
 
     {
       src: '/home/academic-phd-positions.png',
       alt: 'Academic PhD Positions',
       label: 'PhD Jobs',
-      link: `usa/phd`,
+      link: `usa/phd?r=United States&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]`,
     },
     {
       src: '/home/academic-staff-positions.png',
       alt: 'Academic Staff Positions',
       label: 'Staff/Admin',
-      link: `usa/admin`,
+      link: `usa/admin?r=United States&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`,
     },
     // {
     //   src: '/home/academic-graduate-positions.png',
@@ -186,25 +186,25 @@ export default async function myPage() {
       <div className=" mt-[3rem] ">
         <ul className=" flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <li>
-            <Link href="/boston/"> Boston </Link>
+            <Link href={`boston?r=United States&l=boston`}> Boston </Link>
           </li>
           <li>
-            <Link href="/new-york/"> New York</Link>
+            <Link href={`new-york?r=United States&l=new york`}> New York</Link>
           </li>
           <li>
-            <Link href="/philadelphia/">Philadelphia</Link>
+            <Link href={`philadelphia?r=United States&l=philadelphia`}>Philadelphia</Link>
           </li>
           <li>
-            <Link href="/new-haven/"> New Haven</Link>
+            <Link href={`new-haven?r=United States&l=new haven`}>New Haven</Link>
           </li>
           <li>
-            <Link href="/los-angeles/">Los Angeles </Link>
+            <Link href={`los-angeles?r=United States&l=los angeles`}>Los Angeles </Link>
           </li>
           <li>
-            <Link href="/san-francisco/"> San Francisco</Link>
+            <Link href={`san-francisco?r=United States&l=san francisco`}> San Francisco</Link>
           </li>
           <li>
-            <Link href="/chicago/"> Chicago</Link>
+            <Link href={`chicago?r=United States&l=chicago`}> Chicago</Link>
           </li>
         </ul>
       </div>
