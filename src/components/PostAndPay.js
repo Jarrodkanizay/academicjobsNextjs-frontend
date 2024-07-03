@@ -57,7 +57,7 @@ const JobPostForm = ({ product }) => {
   };
   let newContact = false;
   let partnerName = 'AcademicJobs';
-  let partnerImage = '/partners/post-a-job.jpg';
+  let partnerImage = '/partners/post-a-job.png';
   let institutionName = `Institution Name (ie: Harvard University)`;
   let urlExample = `uni-name.edu/job-posting-url`;
   useEffect(() => {
@@ -212,7 +212,7 @@ const JobPostForm = ({ product }) => {
                     <label className="cursor-pointer label justify-start">
                       <input
                         type="checkbox"
-                        className="checkbox checkbox-secondary mr-2"
+                        className="checkbox mr-2"
                         onChange={(e) => setJobURLLink(e.target.checked)}
                       />
                       <span className="label-text">
@@ -347,14 +347,14 @@ const JobPostForm = ({ product }) => {
           <div className="relative">
             <div className="flex">
               <Speedo size={80} />
-              <h2 className="ml-4">
+              <h2 className="ml-4 mb-0">
                 Academic Jobs is the fastest way to post a Job.{' '}
               </h2>
             </div>
             <div className="=absolute inset-0 flex justify-center items-center">
               <Image
-                width={500}
-                height={500}
+                width={600}
+                height={600}
                 src={partnerImage}
                 className="object-container"
                 alt="Academic Jobs Quick Post Technology"

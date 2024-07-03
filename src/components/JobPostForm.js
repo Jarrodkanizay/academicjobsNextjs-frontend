@@ -51,7 +51,7 @@ const JobPostForm = ({ region = 'USA' }) => {
   };
   let newContact = false;
   let partnerName = 'AcademicJobs';
-  let partnerImage = '/partners/post-a-job.jpg';
+  let partnerImage = '/partners/post-a-job.png';
   let institutionName = `Institution Name (ie: Harvard University)`;
   let urlExample = `uni-name.edu/job-posting-url`;
   useEffect(() => {

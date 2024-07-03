@@ -25,7 +25,7 @@ export default function myPage() {
                 <Image
                   width={800}
                   height={534}
-                  src="/job-ads/recruitment-post-a-job.jpg"
+                  src="/job-ads/recruitment-post-a-job.png"
                   className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
                   alt="AI Powered Recruitment Platform"
                 />
