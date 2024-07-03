@@ -6,7 +6,6 @@ import JobSearchBox2 from '@/components/JobSearchBox2';
 import JobFilter from '@/components/JobFilter';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
 import { StarRank } from '@/components/StarRank';
 import FavoriteEmployerButton from '@/components/FavoriteEmployerButton';
 import { authOptions } from "@/app/api/auth/[...nextauth]/options";
