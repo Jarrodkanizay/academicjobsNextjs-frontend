@@ -186,25 +186,25 @@ export default async function myPage() {
       <div className=" mt-[3rem] ">
         <ul className=" flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <li>
-            <Link href={`boston?r=United States&l=boston`}> Boston </Link>
+            <Link href='/boston?r=United States&filter0=[{"category":"City","filter":"Boston"}]'> Boston </Link>
           </li>
           <li>
-            <Link href={`new-york?r=United States&l=new york`}> New York</Link>
+            <Link href='/new-york?r=United States&filter0=[{"category":"City","filter":"New York"}]'> New York</Link>
           </li>
           <li>
-            <Link href={`philadelphia?r=United States&l=philadelphia`}>Philadelphia</Link>
+            <Link href='philadelphia?r=United States&filter0=[{"category":"City","filter":"Philadelphia"}]'>Philadelphia</Link>
           </li>
           <li>
-            <Link href={`new-haven?r=United States&l=new haven`}>New Haven</Link>
+            <Link href='new-haven?r=United States&filter0=[{"category":"City","filter":"New Haven"}]'>New Haven</Link>
           </li>
           <li>
-            <Link href={`los-angeles?r=United States&l=los angeles`}>Los Angeles </Link>
+            <Link href='los-angeles?r=United States&filter0=[{"category":"City","filter":"Los Angeles"}]'>Los Angeles </Link>
           </li>
           <li>
-            <Link href={`san-francisco?r=United States&l=san francisco`}> San Francisco</Link>
+            <Link href='san-francisco?r=United States&filter0=[{"category":"City","filter":"San Francisco"}]'> San Francisco</Link>
           </li>
           <li>
-            <Link href={`chicago?r=United States&l=chicago`}> Chicago</Link>
+            <Link href='chicago?r=United States&filter0=[{"category":"City","filter":"Chicago"}]'> Chicago</Link>
           </li>
         </ul>
       </div>
