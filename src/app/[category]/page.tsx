@@ -16,6 +16,7 @@ type MetadataTypes = {
   Description?: string | undefined;
   Keyword?: string | undefined;
   content?: any | undefined;
+  country?: string | undefined;
 };
 
 export async function generateMetadata({ params, searchParams }: any) {
@@ -33,6 +34,7 @@ export async function generateMetadata({ params, searchParams }: any) {
     Keyword = '',
     content: content1 = '',
     image = '',
+    country = ''
   } = citiesData.find((item) => item.Name === category) || {};
 
   return {
@@ -68,6 +70,7 @@ export default function Page({ params, searchParams }: any) {
     content: content1,
     image: image,
     alt: alt,
+    country
   } = city;
 
   let ausHeader, otherHeader, content;
@@ -123,7 +126,7 @@ export default function Page({ params, searchParams }: any) {
             filter1: [
               {
                 category: 'Country',
-                filter: 'Australia',
+                filter: country,
               },
             ],
             l: Name,

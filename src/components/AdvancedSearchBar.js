@@ -1,49 +1,86 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
+import axios from 'axios';
 import { filterType } from '@/utils/data';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
 import JobKeywordSearchBlock from '@/components/JobKeywordSearchBlock';
 import { regionData } from '@/data/africaPositions';
-import Autocomplete, { usePlacesWidget } from 'react-google-autocomplete';
+import Autocomplete from 'react-google-autocomplete';
 import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 import JobAlertsForm from '@/components/profile/JobAlertsForm'; // Import the JobAlertsForm component
 
+const GOOGLE_GEOCODING_API_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
+
 export default function Page({ p = {}, forceClass = '' }) {
+  console.log("hello", p)
   const router = useRouter();
   const searchParams = loadFromURLParams(useSearchParams());
 
-  let searchParams1={}
+  let searchParams1 = {};
   if (Object.keys(p).length !== 0) {
-    searchParams1 = { ...searchParams,...p }
+    searchParams1 = { ...searchParams, ...p };
   } else {
-    searchParams1 = { ...searchParams }
+    searchParams1 = { ...searchParams };
   }
+
   const {
-    r = '',
     q = '',
-    l = '',
     lon = 0,
     lat = 0,
     filter0 = [],
     currentMiddleCategory,
   } = searchParams1;
-  //alert(r)
+
+  // Extract r and l from p object
+  const r = p.filter1 && p.filter1.length > 0 ? p.filter1[0].filter : '';
+  const l = p.l || '';
+
+useEffect(() => {
+  const updateURLParams = async () => {
+    if (l && l.toLowerCase() !== 'tasmania') { // Add this check
+      try {
+        const response = await axios.get(GOOGLE_GEOCODING_API_URL, {
+          params: {
+            address: l,
+            key: 'AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA', // Replace with your Google API key
+          },
+        });
+        const { results } = response.data;
+        if (results.length > 0) {
+          const { lat, lng } = results[0].geometry.location;
+          const currentURL = window.location.pathname;
+          const newSearchParams = {
+            ...searchParams1,
+            r,
+            l,
+            lon: lng,
+            lat,
+          };
+          router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, { scroll: false });
+        } else {
+          console.warn('No results found for the specified location');
+        }
+      } catch (error) {
+        console.error('Error fetching coordinates:', error);
+      }
+    }
+  };
+
+  updateURLParams();
+}, [l]);
+
+
   let filter1 = [...filter0];
-  const filteredData = filter1.filter((item) => {
-    return item.category !== 'region';
-  });
-  if (r === 'global' || r === 'Global' || r == null || r == '') {
+  const filteredData = filter1.filter((item) => item.category !== 'region');
+  if (!r || r === 'global' || r === 'Global') {
     filter1 = [...filteredData];
   } else {
-    filter1 = [...filteredData, { category: 'region', filter: r || 'Global' }];
+    filter1 = [...filteredData, { category: 'region', filter: r }];
   }
-  
-  // const { region, setQ, setL, setLon, setLat, q, l, lon, lat, category, country, currentMiddleCategory, filter1, setRegion, setFilter1, setCategory, setCountry, setCurrentMiddleCategory } = useStore();
-  // let region1
-  // if (region.length > 0 && region != "Global") region1 = region
+
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
   const [selectedFilters, setSelectedFilters] = useState([]);
@@ -51,10 +88,10 @@ export default function Page({ p = {}, forceClass = '' }) {
   useEffect(() => {
     const initialFilters = filter1.map(({ category, filter }) => ({
       category,
-      filter
+      filter,
     }));
     setSelectedFilters(initialFilters);
-  }, []);
+  }, []); // Remove isUrlLoaded dependency
 
   const filterType1 = {
     JobType: true,
@@ -77,10 +114,10 @@ export default function Page({ p = {}, forceClass = '' }) {
   };
   const [filterTypes1, setfilterTypes1] = useState(filterType1);
   const [filterTypes, setfilterTypes] = useState(filterType);
-  const onEditorStateChange1 = (suggestion) => { };
+  const onEditorStateChange1 = (suggestion) => {};
   const [category, setCategory] = useState('');
   const [filter2, setfilter2] = useState([]);
-  
+
   useEffect(() => {
     setfilterTypes1((p) => ({ ...p, ExecutiveJobs: false }));
     setfilterTypes1((p) => ({ ...p, PositionType: false }));
@@ -124,19 +161,25 @@ export default function Page({ p = {}, forceClass = '' }) {
   } = useQuery({
     queryKey: ['filter', { category, filter2, q, l, lon, lat }],
     queryFn: async () => {
-      const response = await BaseApi.post('/filters', {
-        currentMiddleCategory,
-        category,
-        filter1,
-        q,
-        l,
-        lon,
-        lat,
-      });
-      return response.data.data;
+      try {
+        const response = await BaseApi.post('/filters', {
+          currentMiddleCategory,
+          category,
+          filter1,
+          q,
+          l,
+          lon,
+          lat,
+        });
+        return response.data.data || []; 
+      } catch (error) {
+        console.error('Error fetching filters:', error);
+        return []; 
+      }
     },
     enabled: category !== '',
   });
+  
   const filterValues9 = {
     Country: 'Country',
     State: 'State',
@@ -167,27 +210,32 @@ export default function Page({ p = {}, forceClass = '' }) {
     if (isChecked) {
       updatedFilters = selectedFilters.filter((item) => item.filter !== filter);
       const updatedFilter1 = filter1.filter((f) => f.filter !== filter);
-      router.push(
-        `${currentURL}?${toURLParams({
-          ...searchParams,
-          currentMiddleCategory: filter,
-          filter0: updatedFilter1,
-        })}`,
+      const newSearchParams = {
+        ...searchParams,
+        r,
+        l,
+        filter0: updatedFilter1,
+      };
+      router.replace(
+        `${currentURL}?${toURLParams(newSearchParams)}`,
         { scroll: false }
       );
     } else {
       updatedFilters = [...selectedFilters, { category, filter }];
-      router.push(
-        `${currentURL}?${toURLParams({
-          ...searchParams,
-          currentMiddleCategory: filter,
-          filter0: [...searchParams.filter0, { category, filter }],
-        })}`,
+      const newSearchParams = {
+        ...searchParams,
+        r,
+        l,
+        filter0: [...searchParams.filter0, { category, filter }],
+      };
+      router.replace(
+        `${currentURL}?${toURLParams(newSearchParams)}`,
         { scroll: false }
       );
     }
     setSelectedFilters(updatedFilters);
   };
+
   return (
     <>
       <div
@@ -200,26 +248,35 @@ export default function Page({ p = {}, forceClass = '' }) {
                 <div className="lg:max-w-screen-lg mx-auto">
                   <div className="join mx-auto w-full flex flex-col md:flex-row">
                     <Autocomplete
+                      id="autocomplete"
                       className="input input-bordered join-item w-full md:text-left text-center rounded-xl"
                       style={{ width: '100%' }}
                       apiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
                       onPlaceSelected={(place) => {
-                        const lat = place.geometry.location.lat();
-                        const lon = place.geometry.location.lng();
-                        const currentURL = window.location.pathname;
-                        router.push(
-                          `${currentURL}?${toURLParams({
+                        if (place.geometry && place.geometry.location) {
+                          const lat = place.geometry.location.lat();
+                          const lon = place.geometry.location.lng();
+                          const currentURL = window.location.pathname;
+                          const newSearchParams = {
                             ...searchParams,
+                            r,
+                            l,
                             lon,
                             lat,
-                          })}`,
-                          { scroll: false }
-                        );
+                          };
+                          router.replace(
+                            `${currentURL}?${toURLParams(newSearchParams)}`,
+                            { scroll: false }
+                          );
+                        } else {
+                          console.warn('Selected place does not have geometry information');
+                        }
                       }}
                       options={{
                         types: ['geocode', 'establishment'],
                       }}
                     />
+
                     {/* Job alert create button here */}
                     <button
                       className="btn bg-amber-500 text-white mt-4 md:ml-2 md:mt-0"
@@ -240,11 +297,14 @@ export default function Page({ p = {}, forceClass = '' }) {
                             );
                             setPage(0);
                             const currentURL = window.location.pathname;
-                            router.push(
-                              `${currentURL}?${toURLParams({
-                                ...searchParams,
-                                filter0: updatedFilter,
-                              })}`,
+                            const newSearchParams = {
+                              ...searchParams,
+                              r,
+                              l,
+                              filter0: updatedFilter,
+                            };
+                            router.replace(
+                              `${currentURL}?${toURLParams(newSearchParams)}`,
                               { scroll: false }
                             );
                             setCategory('');
@@ -269,13 +329,13 @@ export default function Page({ p = {}, forceClass = '' }) {
               <button
                 key={i}
                 className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${category === filterType
-                    ? 'bg-amber-500 text-white border-amber-500'
-                    : ' border-gray-500'
+                  ? 'bg-amber-500 text-white border-amber-500'
+                  : ' border-gray-500'
                   }
                   ${showYN ? 'block' : 'hidden'}
                   ${filterType === 'JobType'
-                  ? 'bg-[#f4a10c]  md:w-auto text-white  animate-pulse font-bold shadow-md '
-                  : ' border-gray-500'
+                    ? 'bg-[#f4a10c]  md:w-auto text-white  animate-pulse font-bold shadow-md '
+                    : ' border-gray-500'
                   }
                   
                   `}
@@ -305,8 +365,8 @@ export default function Page({ p = {}, forceClass = '' }) {
                 <button
                   key={i}
                   className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${category === filterType
-                      ? 'bg-amber-500 text-white border-amber-500'
-                      : 'bg-white border-gray-500'
+                    ? 'bg-amber-500 text-white border-amber-500'
+                    : 'bg-white border-gray-500'
                     }
                   ${showYN ? 'block' : 'hidden'}`}
                   onClick={() => {

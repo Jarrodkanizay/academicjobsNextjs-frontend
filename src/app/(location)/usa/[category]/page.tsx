@@ -8,7 +8,7 @@ import TalentPool from '@/components/TalentPoolCTA';
 import SearchResults3 from '@/components/SearchResults3';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 
-const regionName = 'USA';
+const regionName = 'United States';
 
 type MetadataTypes = {
   Name?: string | undefined;
@@ -104,7 +104,6 @@ export default function Page({ params, searchParams }: any) {
             },
           ],
           q: Name,
-          l: regionName,
         }}
       />
 
