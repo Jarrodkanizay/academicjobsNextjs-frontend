@@ -274,7 +274,7 @@ export default async function myPage() {
           </li>
           <li>
             {/* <Link href="/australia/student"> Student</Link> */}
-            <Link href="/australia/student?r=Australia&q=Student">Student</Link>
+            <Link href='/australia/student?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]'>Student</Link>
           </li>
           <li>
             <Link href="/australia/indigenous?r=Australia&q=indigenous">Indigenous</Link>
@@ -284,7 +284,7 @@ export default async function myPage() {
           </li>
           <li>
             {/* <Link href="/australia/phd">PhD</Link> */}
-            <Link href='/australia/phd?r=Australia&filter0=[{"category":"PositionType","filter":"Student / Phd Jobs"}]'>
+            <Link href='/australia/phd?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]'>
               PhD
             </Link>
           </li>
@@ -294,47 +294,47 @@ export default async function myPage() {
         <li>
           <Link
             className="text-center"
-            href="/university-jobs/melbourne"
+            href='/melbourne?r=Australia&filter0=[{"category":"City","filter":"Melbourne"}]'
             // href="/melbourne?r=Australia&l=Melbourne"
           >
             Melbourne
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/sydney?r=Australia&l=sydney">
+          <Link className="text-center" href='/sydney?r=Australia&filter0=[{"category":"City","filter":"Sydney"}]'>
             Sydney
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/brisbane?r=Australia&l=brisbane">
+          <Link className="text-center" href='/brisbane?r=Australia&filter0=[{"category":"City","filter":"Brisbane"}]'>
             Brisbane
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/perth?r=Australia&l=perth">
+          <Link className="text-center" href='/perth?r=Australia&filter0=[{"category":"City","filter":"Perth"}]'>
             Perth
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/adelaide?r=Australia&l=adelaide">
+          <Link className="text-center" href='/adelaide?r=Australia&filter0=[{"category":"City","filter":"Adelaide"}]'>
             Adelaide
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/canberra?r=Australia&l=canberra">
+          <Link className="text-center" href='/canberra?r=Australia&filter0=[{"category":"City","filter":"Canberra"}]'>
             Canberra
           </Link>
         </li>
         <li>
           <Link
             className="text-center"
-            href="/gold-coast?r=Australia&l=gold coast"
+            href='/gold-coast?r=Australia&filter0=[{"category":"City","filter":"Gold Coast"}]'
           >
             Gold Coast
           </Link>
         </li>
         <li>
-          <Link className="text-center" href="/university-jobs/tasmania">
+          <Link className="text-center" href='/tasmania?r=Australia&filter0=[{"category":"State","filter":"Tasmania"}]'>
             Tasmania
           </Link>
         </li>
