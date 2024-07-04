@@ -212,26 +212,26 @@ export default async function myPage() {
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li>
-              <Link href="/USA/lecturer/"> Lecturer</Link>
+              <Link href={`usa/lecturer?r=United States&filter0=[{"category":"PositionType","filter":"Lecturer/Instructor"}]`}> Lecturer</Link>
             </li>
             <li>
-              <Link href="/USA/research/"> Research </Link>
+              <Link href={`usa/research?r=United States&filter0=[{"category":"PositionType","filter":"Research"}]`}> Research </Link>
             </li>
             <li>
-              <Link href="/USA/professor?r=United States"> Professor</Link>
+              <Link href={`usa/professor?r=United States&filter0=[{"category":"PositionType","filter":"Professor"}]`}> Professor</Link>
             </li>
           </ul>
           <li>
-            <Link href="/USA/executive/"> Executive</Link>
+            <Link href={`usa/executive?r=United States&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`}> Executive</Link>
           </li>
           <li>
-            <Link href="/USA/staff/">Staff</Link>
+            <Link href={`usa/staff?r=United States&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`}>Staff</Link>
           </li>
           <li>
-            <Link href="/USA/hr-jobs/"> HR</Link>
+            <Link href={`usa/hr-jobs?r=United States&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`}> HR</Link>
           </li>
           <li>
-            <Link href="/USA/student/"> Student</Link>
+            <Link href={`usa/student?r=United States&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]`}> Student</Link>
           </li>
         </ul>
       </div>
