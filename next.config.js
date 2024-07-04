@@ -90,16 +90,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/find-jobs',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
-        source: '/find-jobs/:path',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
         source: '/hr',
         destination: '/hr-jobs',
         permanent: true,
@@ -367,6 +357,16 @@ const nextConfig = {
       {
         source: '/employers/company/deakin-university/3856',
         destination: '/jobs-by-top-universities',
+        permanent: true,
+      },
+      {
+        source: '/find-jobs',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/find-jobs/:path',
+        destination: '/jobs',
         permanent: true,
       },
       {
@@ -2070,16 +2070,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/find-jobs/QUT-professor/',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
-        source: '/find-jobs/Postdoctoral-Fellow',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
         source: '/job/19297/postdoctoral-associate-oettingen-lab/',
         destination: '/jobs',
         permanent: true,
@@ -2247,11 +2237,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/find-jobs/QUT-research/',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
         source: '/job/28118/research-fellow-in-protein-science/',
         destination: '/jobs',
         permanent: true,
@@ -2277,16 +2262,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/find-jobs/industry/',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
-        source: '/find-jobs/harvard-university-lecturer/',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
         source: '/job/63684/head-of-school-public-health-and-social-work/',
         destination: '/jobs',
         permanent: true,
@@ -2296,18 +2271,9 @@ const nextConfig = {
         destination: '/jobs',
         permanent: true,
       },
-      {
-        source: '/find-jobs/harvard-university-Executive/',
-        destination: '/jobs',
-        permanent: true,
-      },
+
       {
         source: '/business/international-business/',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
-        source: '/find-jobs/QUT-university-Executive/',
         destination: '/jobs',
         permanent: true,
       },
@@ -2348,11 +2314,6 @@ const nextConfig = {
       },
       {
         source: '/category/healthcare-administration/',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
-        source: '/find-jobs/bond-university-Executive',
         destination: '/jobs',
         permanent: true,
       },
@@ -2552,11 +2513,6 @@ const nextConfig = {
       },
       {
         source: '/category/healthcare-administration/',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
-        source: '/find-jobs/bond-university-Executive',
         destination: '/jobs',
         permanent: true,
       },
@@ -2836,21 +2792,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/find-jobs/harvard-university-Executive',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
-        source: '/h/employers/university-of-tasmania/3867/',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
-        source: '/find-jobs/northern-territory',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
         source: '/job/29473/senior-research-officer/',
         destination: '/jobs',
         permanent: true,
@@ -2897,7 +2838,62 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/company/3285/northeastern-university',
+        source: '/find-jobs/QUT-professor/',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/find-jobs/Postdoctoral-Fellow',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/find-jobs/QUT-research/',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/find-jobs/industry/',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/find-jobs/harvard-university-lecturer/',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/find-jobs/harvard-university-Executive/',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/find-jobs/QUT-university-Executive/',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/find-jobs/bond-university-Executive',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/find-jobs/bond-university-Executive',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/find-jobs/harvard-university-Executive',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/h/employers/university-of-tasmania/3867/',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/find-jobs/northern-territory',
         destination: '/jobs',
         permanent: true,
       },
@@ -2953,6 +2949,11 @@ const nextConfig = {
       },
       {
         source: '/find-jobs/harvard-university-professor',
+        destination: '/jobs',
+        permanent: true,
+      },
+      {
+        source: '/company/3285/northeastern-university',
         destination: '/jobs',
         permanent: true,
       },
