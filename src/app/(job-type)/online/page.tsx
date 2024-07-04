@@ -49,7 +49,16 @@ export default function myPage() {
           Join Our Talent Pool
         </Link>
       </div>
-      <JobSearchBox q="" forceClass="my-6" />
+      <AdvancedSearchBar
+        p={{
+          filter1: [
+            {
+              category: 'job_type',
+              filter: 'Full time',
+            },
+          ],
+        }}
+      />
 
       <section className="jobs_grid job_post_search_container">
         <div className="filters_panel">
@@ -59,8 +68,7 @@ export default function myPage() {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'online' || 0 }} />
+            <SearchResults3 />
           </div>
         </div>
       </section>
