@@ -281,11 +281,7 @@ export default async function myPage() {
 
       <ul className="flex flex-wrap justify-center items-center md:gap-6 gap-3 px-7 pb-4 text-[#f4a10c] mx-auto">
         <li>
-          <Link
-            className="text-center"
-            href="/melbourne"
-            // href="/melbourne?r=Australia&l=Melbourne"
-          >
+          <Link className="text-center" href="/melbourne">
             Melbourne
           </Link>
         </li>
