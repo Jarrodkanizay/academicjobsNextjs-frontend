@@ -223,141 +223,128 @@ export default async function myPage() {
         We Are Australia's University Job Website
       </h3> */}
 
-      <div className=" mt-[3rem] ">
-        <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 mb-2">
-          <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
-            <li className="">
-              {/* <Link href="/Australia/lecturer"> Lecturer</Link> */}
-              <Link href="/australia/lecturer?r=Australia&filter0=%5B%7B%22category%22%3A%22PositionType%22%2C%22filter%22%3A%22Lecturer%2FInstructor%22%7D%5D">
-                Lecturer
-              </Link>
-            </li>
-            <li className="">
-              {/* <Link href="/Australia/research"> Research </Link> */}
-              <Link href="/australia/research?r=Australia&filter0=%255B%257B%2522category%2522%253A%2522PositionType%2522%252C%2522filter%2522%253A%2522Research%2522%257D%255D">
-                Research
-              </Link>
-            </li>
-            {/* <li className=" ">
-              <Link href={{ pathname: "/faq", query: { r: "Australia" } }}>Professor1</Link>           
-            </li>
-            <li className=" ">
-              <Link href="/faq?r=Australia"> Professor2</Link>
-            </li>
-            <li className=" ">
-              <Link href="/australia/research?r=Australia"> Professor3</Link>
-            </li> */}
-            {/* australia/research?r=Australia&filter0=[{"category":"PositionType","filter":"Research"}] */}
-            <li className=" ">
-              {/* <Link href="/Australia/professor"> Professor</Link> */}
-              <Link href='/australia/professor?r=Australia&filter0=[{"category":"PositionType","filter":"Professor"}]'>
-                {' '}
-                Professor
-              </Link>
-            </li>
+      {/* <div className=" mt-[3rem] "> */}
+      <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 mb-2 w-full  md:w-auto">
+        <li>
+          <Link
+            href={`/australia/lecturer?r=Australia&filter0=[{"category":"PositionType","filter":"Lecturer/Instructor"}]`}
+          >
+            Lecturer
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={`/australia/research?r=Australia&filter0=[{"category":"PositionType","filter":"Research"}]`}
+          >
+            Researcher
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={`/australia/professor?r=Australia&filter0=[{"category":"PositionType","filter":"Professor"}]`}
+          >
+            Professor
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={`/australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`}
+          >
+            HR
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={`/australia/phd?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]`}
+          >
+            PhD
+          </Link>
+        </li>
+        <li>
+          <Link
+            href={`/australia/indigenous?r=Australia&q=indigenous`}
+            className="flex gap-2 items-center"
+          >
+            Indigenous
+            <figure>
+              <Image
+                src={'/flags/australian-aboriginal-flag.png'}
+                alt="Indigenous Australian Flag"
+                width={1000}
+                height={600}
+                className="max-w-7"
+              />
+            </figure>
+          </Link>
+        </li>
+      </ul>
 
-            {/* <li>
-              <Link href="/australia/faculty"> Faculty</Link>
-            </li> */}
-          </ul>
-          {/* <li>
-            <Link href="/australia/executive"> Executive</Link>
-          </li> */}
-          {/* <li>
-            <Link href="/australia/admin">Admin</Link>
-          </li> */}
-          <li>
-            {/* <Link href="/australia/hr-jobs"> HR</Link> */}
-            <Link href='/australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]'>
-              HR
-            </Link>
-          </li>
-          <li>
-            {/* <Link href="/australia/student"> Student</Link> */}
-            <Link href='/australia/student?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]'>Student</Link>
-          </li>
-          <li>
-            <Link href="/australia/indigenous?r=Australia&q=indigenous">Indigenous</Link>
-          </li>
-          <li>
-            <Link href="/australia/graduate?r=Australia&q=graduate">Graduate</Link>
-          </li>
-          <li>
-            {/* <Link href="/australia/phd">PhD</Link> */}
-            <Link href='/australia/phd?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]'>
-              PhD
-            </Link>
-          </li>
-        </ul>
-      </div>
       <ul className="flex flex-wrap justify-center items-center md:gap-6 gap-3 px-7 pb-4 text-[#f4a10c] mx-auto">
         <li>
           <Link
             className="text-center"
-            href='/melbourne?r=Australia&filter0=[{"category":"City","filter":"Melbourne"}]'
-            // href="/melbourne?r=Australia&l=Melbourne"
+            href={`/melbourne?r=Australia&filter0=[{"category":"City","filter":"Melbourne"}]`}
           >
             Melbourne
           </Link>
         </li>
         <li>
-          <Link className="text-center" href='/sydney?r=Australia&filter0=[{"category":"City","filter":"Sydney"}]'>
+          <Link
+            className="text-center"
+            href={`/sydney?r=Australia&filter0=[{"category":"City","filter":"Sydney"}]`}
+          >
             Sydney
           </Link>
         </li>
         <li>
-          <Link className="text-center" href='/brisbane?r=Australia&filter0=[{"category":"City","filter":"Brisbane"}]'>
+          <Link
+            className="text-center"
+            href={`/brisbane?r=Australia&filter0=[{"category":"City","filter":"Brisbane"}]`}
+          >
             Brisbane
           </Link>
         </li>
         <li>
-          <Link className="text-center" href='/perth?r=Australia&filter0=[{"category":"City","filter":"Perth"}]'>
+          <Link
+            className="text-center"
+            href={`/perth?r=Australia&filter0=[{"category":"City","filter":"Perth"}]`}
+          >
             Perth
           </Link>
         </li>
         <li>
-          <Link className="text-center" href='/adelaide?r=Australia&filter0=[{"category":"City","filter":"Adelaide"}]'>
+          <Link
+            className="text-center"
+            href={`/adelaide?r=Australia&filter0=[{"category":"City","filter":"Adelaide"}]`}
+          >
             Adelaide
           </Link>
         </li>
         <li>
-          <Link className="text-center" href='/canberra?r=Australia&filter0=[{"category":"City","filter":"Canberra"}]'>
+          <Link
+            className="text-center"
+            href={`/canberra?r=Australia&filter0=[{"category":"City","filter":"Canberra"}]`}
+          >
             Canberra
           </Link>
         </li>
         <li>
           <Link
             className="text-center"
-            href='/gold-coast?r=Australia&filter0=[{"category":"City","filter":"Gold Coast"}]'
+            href={`/gold-coast?r=Australia&filter0=[{"category":"City","filter":"Gold Coast"}]`}
           >
             Gold Coast
           </Link>
         </li>
         <li>
-          <Link className="text-center" href='/tasmania?r=Australia&filter0=[{"category":"State","filter":"Tasmania"}]'>
+          <Link
+            className="text-center"
+            href={`/tasmania?r=Australia&filter0=[{"category":"State","filter":"Tasmania"}]`}
+          >
             Tasmania
           </Link>
         </li>
       </ul>
-      {/* href='/tasmania?r=Australia&filter0=[{"category":"State","filter":"Tasmania"}]' */}
-      {/* <a href="/the-academic-rankings">
-        <img
-          width={200}
-          height={200}
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/The+Academic+Rankings+Logo4+(002).JPG"
-          className=" mt-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto text-center"
-          alt="AcademicJobs Job Elephant Client Center"
-        />{' '}
-      </a> */}
-      {/* <div className="text-center items-center justify-center px-auto mx-auto text-sm text-gray-500 animate-pulse pb-12">
-        View Your Ranking Here
-      </div> */}
-      {/* <AusUniLogos /> */}
-      {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6 ">
-        <a href="#section" class="scroll-smooth md:scroll-auto">
-          ▼
-        </a>
-      </div> */}
 
       <div id="section" className="bg-slate-200 py-4 full-width mt-8">
         <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
@@ -777,27 +764,7 @@ export default async function myPage() {
                 <br />
               </Link>
             </li>
-            {/* <a href="https://www.academicjobs.com/employers/the-university-of-sydney/3171">
-              {' '}
-              The University of Sydney
-              <br />
-            </a> */}
-            {/* <a href="https://www.academicjobs.com/employers/australian-national-university/3739">
-              {' '}
-              Australian National University (ANU)
-              <br />
-            </a>
-            <a href="https://www.academicjobs.com/employers/monash-university/3182/">
-              {' '}
-              Monash University
-            </a> */}
           </ul>
-          {/* <Link
-                  href={'/top-10-australian-universities'}
-                  className="btn btn-aj btn-sm w-1/4 mx-auto my-2 mb-5"
-                >
-                  View List
-                </Link> */}
         </div>
       </div>
     </main>

@@ -66,7 +66,12 @@ const nextConfig = {
     return [
       {
         source: '/university-jobs/in-tasmania',
-        destination: '/university-jobs/tasmanina',
+        destination: '/tasmania',
+        permanent: true,
+      },
+      {
+        source: '/university-jobs/tasmania',
+        destination: '/tasmania',
         permanent: true,
       },
       {
@@ -499,6 +504,11 @@ const nextConfig = {
         destination: '/employers/university-of-tasmania/3867',
         permanent: true,
       },
+      // {
+      //   source: '/h/employers/university-of-tasmania/3867/',
+      //   destination: '/jobs',
+      //   permanent: true,
+      // },
       {
         source: '/employers/12787/university-of-kwazulu-natal',
         destination: '/employers/university-of-kwazulu-natal/12787',
@@ -2884,11 +2894,6 @@ const nextConfig = {
       },
       {
         source: '/find-jobs/harvard-university-Executive',
-        destination: '/jobs',
-        permanent: true,
-      },
-      {
-        source: '/h/employers/university-of-tasmania/3867/',
         destination: '/jobs',
         permanent: true,
       },
