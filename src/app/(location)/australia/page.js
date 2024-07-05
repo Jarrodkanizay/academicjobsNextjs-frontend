@@ -283,56 +283,39 @@ export default async function myPage() {
         <li>
           <Link
             className="text-center"
-            href={`/melbourne?r=Australia&filter0=[{"category":"City","filter":"Melbourne"}]`}
+            href="/melbourne"
+            // href="/melbourne?r=Australia&l=Melbourne"
           >
             Melbourne
           </Link>
         </li>
         <li>
-          <Link
-            className="text-center"
-            href={`/sydney?r=Australia&filter0=[{"category":"City","filter":"Sydney"}]`}
-          >
+          <Link className="text-center" href="/sydney">
             Sydney
           </Link>
         </li>
         <li>
-          <Link
-            className="text-center"
-            href={`/brisbane?r=Australia&filter0=[{"category":"City","filter":"Brisbane"}]`}
-          >
+          <Link className="text-center" href="/brisbane">
             Brisbane
           </Link>
         </li>
         <li>
-          <Link
-            className="text-center"
-            href={`/perth?r=Australia&filter0=[{"category":"City","filter":"Perth"}]`}
-          >
+          <Link className="text-center" href="/perth">
             Perth
           </Link>
         </li>
         <li>
-          <Link
-            className="text-center"
-            href={`/adelaide?r=Australia&filter0=[{"category":"City","filter":"Adelaide"}]`}
-          >
+          <Link className="text-center" href="/adelaide">
             Adelaide
           </Link>
         </li>
         <li>
-          <Link
-            className="text-center"
-            href={`/canberra?r=Australia&filter0=[{"category":"City","filter":"Canberra"}]`}
-          >
+          <Link className="text-center" href="/canberra">
             Canberra
           </Link>
         </li>
         <li>
-          <Link
-            className="text-center"
-            href={`/gold-coast?r=Australia&filter0=[{"category":"City","filter":"Gold Coast"}]`}
-          >
+          <Link className="text-center" href="/gold-coast">
             Gold Coast
           </Link>
         </li>
