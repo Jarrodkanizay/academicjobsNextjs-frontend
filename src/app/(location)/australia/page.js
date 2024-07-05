@@ -146,10 +146,7 @@ export default async function myPage() {
                   src="/home/academic-faculty-positions.png"
                 ></Image>
               </a>
-              <a
-                className="mb-4"
-                href={`australia/faculty`}
-              >
+              <a className="mb-4" href={`australia/faculty`}>
                 <p>Faculty</p>
               </a>
             </li>
@@ -168,10 +165,7 @@ export default async function myPage() {
                   src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"
                 ></Image>
               </a>
-              <a
-                className="mb-4"
-                href={`australia/executive`}
-              >
+              <a className="mb-4" href={`australia/executive`}>
                 <p>Executive</p>
               </a>
             </li>
@@ -190,10 +184,7 @@ export default async function myPage() {
                   src="/home/academic-human-resource-positions.png"
                 ></Image>
               </a>
-              <a
-                className="mb-4"
-                href={`australia/hr-jobs`}
-              >
+              <a className="mb-4" href={`australia/hr-jobs`}>
                 <p>HR Jobs</p>
               </a>
             </li>
@@ -201,10 +192,9 @@ export default async function myPage() {
         </div>
       </div>
 
-      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top mx-auto mt-24 mb-8">
+      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top mx-auto mt-24 mb-24">
         <JobSearchBoxCountry country={'Australia'} />
       </div>
-      <div className="container mx-auto"> </div>
       <ul className="position_type_links faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 mb-2 w-full md:w-auto">
         <li>
           <Link
@@ -214,32 +204,16 @@ export default async function myPage() {
           </Link>
         </li>
         <li>
-          <Link
-            href={`/australia/research`}
-          >
-            Research
-          </Link>
+          <Link href={`/australia/research`}>Research</Link>
         </li>
         <li>
-          <Link
-            href={`/australia/professor`}
-          >
-            Professor
-          </Link>
+          <Link href={`/australia/professor`}>Professor</Link>
         </li>
         <li>
-          <Link
-            href={`/australia/hr-jobs`}
-          >
-            HR
-          </Link>
+          <Link href={`/australia/hr-jobs`}>HR</Link>
         </li>
         <li>
-          <Link
-            href={`/australia/phd`}
-          >
-            PhD
-          </Link>
+          <Link href={`/australia/phd`}>PhD</Link>
         </li>
         <li>
           <Link
