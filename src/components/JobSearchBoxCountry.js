@@ -69,9 +69,9 @@ export default function JobSearchBoxCountry({ country }) {
     router.push(`/jobs-advanced-search?r=${country}&${q3}`);
   };
   return (
-    <div className="flex flex-col gap-2">
+    <div className="relative z-50  flex flex-col gap-2">
       <form className="flex flex-col gap-1 items-center md:items-end w-full" onSubmit={handleFormSubmit}>
-        <div className="relative flex flex-col md:flex-row md:gap-2 md:gap-0 mx-18 w-full mt-5 md:border rounded-t-lg md:rounded-lg p-2 md:shadow-md">
+        <div className="bg-white relative flex flex-col md:flex-row md:gap-2 md:gap-0 mx-18 w-full mt-5 md:border rounded-t-lg md:rounded-lg p-2 md:shadow-md">
           <div className="relative z-50 flex-grow flex items-center"> {/* Ensure the container is flex and items-center */}
             <JobKeywordSearchBlock
               forceClass="mb-6"
