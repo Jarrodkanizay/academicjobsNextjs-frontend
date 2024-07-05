@@ -6,7 +6,6 @@ import JobFilter from '@/components/JobFilter';
 import TalentPool from '@/components/TalentPoolCTA';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 import SearchResults3 from '@/components/SearchResults3';
-import filterMapping from '@/data/jobCategoryMapping'; // Import filter mapping
 
 const regionName = 'New Zealand';
 
@@ -48,19 +47,11 @@ export default function Page({ params, searchParams }: any) {
     Description = '',
     Keyword = '',
     content: content1 = '',
-    image = ''
+    image = '',
+    category2 = '',
+    filter2 = ''
   } = regionData.find((item) => item.Name === category) || {};
 
-  const filters = {
-    r: "New Zealand", // Set the region name for the filters
-    filter1: []
-  };
-
-  if (filterMapping[category]) {
-    if (filterMapping[category].filter1) {
-      filters.filter1 = filters.filter1.concat(filterMapping[category].filter1);
-    }
-  }
 
   const splitTitle = (title) => {
     const words = title.split(' ');
@@ -90,8 +81,17 @@ export default function Page({ params, searchParams }: any) {
         </div>
       </div>
       <main className="content-grid flex-col md:gap-2">
-        <AdvancedSearchBar p={filters} />
-        <section className="jobs_grid job_post_search_container">
+      <AdvancedSearchBar
+          p={{
+            r: "New Zealand",
+            filter1: [
+              {
+                category: category2,
+                filter: filter2,
+              },
+            ],
+          }}
+        />        <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
             <div className="filters_content">
               <JobFilter />

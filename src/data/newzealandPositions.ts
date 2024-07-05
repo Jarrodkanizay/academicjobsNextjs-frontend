@@ -10,6 +10,8 @@ export const regionData = [
      
     Find all the best academic faculty jobs here…`,
     image: '/banner-icons/hr-jobs-banner-image.png',
+    category2: "master_category_job_type",
+    filter2: "Academic / Faculty"
   },
   {
     Name: `lecturer`,
@@ -22,6 +24,8 @@ export const regionData = [
      
     Find all the best lecturing jobs here…`,
     image: '/banner-icons/lecturer-banner.png',
+    category2: "PositionType",
+    filter2: "Lecturer/Instructor"
 
   },
   {
@@ -35,6 +39,8 @@ export const regionData = [
      
     Find all the best research jobs here…`,
     image: '/banner-icons/research-banner.png',
+    category2: "PositionType",
+    filter2: "Research"
 
   },
   {
@@ -48,6 +54,8 @@ export const regionData = [
      
     Find all the best jobs here…`,
     image: '/banner-icons/professor-banner.png',
+    category2: "PositionType",
+    filter2: "Professor"
 
   },
   {
@@ -71,6 +79,8 @@ export const regionData = [
  
     The No.1 job board for HR professionals in universities in New Zealand. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
     image: '/banner-icons/hr-jobs-banner-image.png',
+    category2: "master_category_job_type",
+    filter2: "Human Resources"
   },
   {
     Name: `executive`,
@@ -83,6 +93,8 @@ export const regionData = [
      
     Find all the best executive jobs here…`,
     image: '/banner-icons/hr-jobs-banner-image.png',
+    category2: "master_category_job_type",
+    filter2: "Executive"
   },
   {
     Name: `admin`,
@@ -96,6 +108,8 @@ export const regionData = [
      
     Find all the best staff jobs here…`,
     image: '/banner-icons/hr-jobs-banner-image.png',
+    category2: "master_category_job_type",
+    filter2: "Staff / Administration"
   },
 
   {
@@ -109,7 +123,6 @@ export const regionData = [
   
   Find all the best graduate jobs here…`,
   image: '/banner-icons/graduate-banner.png',
-
   },
   {
     Name: `phd`,
@@ -117,11 +130,12 @@ export const regionData = [
     Description: `Numerous PhD job advertisements from institutions in New Zealand and other countries are available. Apply now to gain important job experience and skills!`,
     Keyword: `Academic PhD Jobs New Zealand`,
     content: `Seek your perfect PhD position through New Zealand’s best job board! At Academic Jobs we offer PhD positions at the most renowned universities across New Zealand and the globe. PhD opportunities will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
-  
-  The No.1 job board for academics in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programs.
-  
-  Find all the best PhD positions here…`,
-  image: '/banner-icons/phd-banner.png',
-
+    
+    The No.1 job board for academics in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programs.
+    
+    Find all the best PhD positions here…`,
+    image: '/banner-icons/phd-banner.png',
+    category2: "master_category_job_type",
+    filter2: "Student / Phd Jobs"
   },
 ];
