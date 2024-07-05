@@ -44,6 +44,6 @@
     "src/components/JobSearchBoxHome.js",
     "src/app/(_home)/page.js",
     "src/app/(jobs)/university-jobs/dep-tasmania/page.js"
-  ],
+, "src/components/JobSearchBoxCountry.js"  ],
   "exclude": ["node_modules"]
 }

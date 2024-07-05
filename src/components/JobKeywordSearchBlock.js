@@ -78,7 +78,7 @@ const UniSearchBlock = ({
       //onChange={handleInputChange}
       />
       {showSuggestions && (
-        <ul className="mt-2 list-none z-10">
+        <ul className="mt-2 list-none z-10 bg-white">
           {suggestions.map(
             (
               {

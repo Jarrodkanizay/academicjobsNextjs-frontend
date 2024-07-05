@@ -2,7 +2,7 @@
 import React from 'react';
 import SearchResults3 from '@/components/SearchResults3';
 import SearchResults from '@/components/SearchResults';
-import AdvancedSearchBar from '@/components/AdvancedSearchBar';
+import AdvancedSearchBar from '@/components/AdvancedSearchBar1';
 import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
 import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
