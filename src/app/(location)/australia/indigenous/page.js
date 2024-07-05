@@ -12,7 +12,7 @@ const regionName = 'Australia';
 
 const regionContent = {
   Name: 'indigenous',
-  Title: 'Indigenous Jobs Australia',
+  Title: 'University Indigenous Jobs Australia',
   Description:
     'Do you want to work in a diverse and inclusive environment that supports Indigenous research, teaching and community engagement? If so, you have come to the right place!',
   Keyword: 'indigenous Academic Jobs Australia, indigenous AcademicJobs',
