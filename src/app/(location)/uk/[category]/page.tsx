@@ -90,18 +90,13 @@ export default function Page({ params, searchParams }: any) {
 
       <AdvancedSearchBar
         p={{
+          r: "United Kingdom",
           filter1: [
-            {
-              category: 'Country',
-              filter: 'United Kingdom',
-            },
             {
               category: category2,
               filter: filter2,
             },
           ],
-          q: Name,
-          l: regionName,
         }}
       />
 

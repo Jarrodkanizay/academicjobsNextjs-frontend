@@ -132,7 +132,7 @@ export default function Page({ params, searchParams }) {
         {/* <Link className="text-[#f4a10c] " href="/canada-positions/">
       View all Lecturer Jobs →
     </Link> */}
-        <JobSearchBox />
+        <AdvancedSearchBar />
 
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">

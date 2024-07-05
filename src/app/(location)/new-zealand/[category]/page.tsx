@@ -6,8 +6,7 @@ import JobFilter from '@/components/JobFilter';
 import TalentPool from '@/components/TalentPoolCTA';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 import SearchResults3 from '@/components/SearchResults3';
-
-// import type { Metadata } from 'next';
+import filterMapping from '@/data/jobCategoryMapping'; // Import filter mapping
 
 const regionName = 'New Zealand';
 
@@ -20,12 +19,8 @@ type MetadataTypes = {
 };
 
 export async function generateMetadata({ params, searchParams }: any) {
-  // console.log(params)
   let { category } = params;
-  // console.log(regionData)
-  // console.log(category);
   category = category?.replace(/-/g, ' ');
-  // console.log(category);
 
   const {
     Name = '',
@@ -42,15 +37,10 @@ export async function generateMetadata({ params, searchParams }: any) {
   };
 }
 
-//const Lecturer = () => {
 export default function Page({ params, searchParams }: any) {
-  // console.log('````````````````````params````````````````````');
-  // console.log(params);
-  let { category } = params;
-  // console.log(regionData);
-  // console.log(category);
+  let { category, location } = params;
   category = category?.replace(/-/g, ' ');
-  // console.log(category);
+  location = location?.replace(/-/g, ' ');
 
   const {
     Name = '',
@@ -61,7 +51,16 @@ export default function Page({ params, searchParams }: any) {
     image = ''
   } = regionData.find((item) => item.Name === category) || {};
 
+  const filters = {
+    r: "New Zealand", // Set the region name for the filters
+    filter1: []
+  };
 
+  if (filterMapping[category]) {
+    if (filterMapping[category].filter1) {
+      filters.filter1 = filters.filter1.concat(filterMapping[category].filter1);
+    }
+  }
 
   const splitTitle = (title) => {
     const words = title.split(' ');
@@ -76,33 +75,22 @@ export default function Page({ params, searchParams }: any) {
   const paras = content1.split('\n');
   const titleParts = splitTitle(Title);
 
-  let content;
-  //console.log(Name);
-  //const { logo, company_name, website, company_description, location } = data
-  //console.log(company_description)
-  content = (
-
-    <><div className="flex flex-col md:flex-row items-center text-white px-6 md:px-12 lg:px-24 py-12 w-full custom-gradient-pages relative">
-
-
-      <div className="ml-[15%] relative z-10 md:w-1/2 text-center md:text-left mb-6 md:mb-0">
-        <h1 className="text-4xl md:text-5xl font-medium mb-6 text-[#fcecab]" style={{ letterSpacing: '0.3em' }}>
-          {titleParts.map((part, index) => (
-            <span key={index} className="block">{part}</span>
-          ))}
-        </h1>
-
+  let content = (
+    <>
+      <div className="flex flex-col md:flex-row items-center text-white px-6 md:px-12 lg:px-24 py-12 w-full custom-gradient-pages relative">
+        <div className="ml-[15%] relative z-10 md:w-1/2 text-center md:text-left mb-6 md:mb-0">
+          <h1 className="text-4xl md:text-5xl font-medium mb-6 text-[#fcecab]" style={{ letterSpacing: '0.3em' }}>
+            {titleParts.map((part, index) => (
+              <span key={index} className="block">{part}</span>
+            ))}
+          </h1>
+        </div>
+        <div className="absolute inset-0 z-0 bottom-0 left-0 flex justify-center w-full h-full" style={{ transform: 'translateX(25%)' }}>
+          <img src={image} alt="Description of image" className="h-full object-cover" style={{ width: 'auto' }} />
+        </div>
       </div>
-      <div className="absolute inset-0 z-0 bottom-0 left-0 flex justify-center w-full h-full" style={{ transform: 'translateX(25%)' }}>
-        <img src={image} alt="Description of image" className="h-full object-cover" style={{ width: 'auto' }} />
-      </div>
-    </div><main className="content-grid flex-col md:gap-2">
-        {/* <Link className="text-[#f4a10c] " href="/canada-positions/">
-      View all Lecturer Jobs →
-    </Link> */}
-
-        <AdvancedSearchBar />
-
+      <main className="content-grid flex-col md:gap-2">
+        <AdvancedSearchBar p={filters} />
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
             <div className="filters_content">
@@ -115,7 +103,9 @@ export default function Page({ params, searchParams }: any) {
             </div>
           </div>
         </section>
-      </main></>
+      </main>
+    </>
   );
+
   return <div className="overflow-y w-full">{content}</div>;
 }

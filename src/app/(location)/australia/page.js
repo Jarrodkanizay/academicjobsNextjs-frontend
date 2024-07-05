@@ -73,33 +73,33 @@ export default async function myPage() {
       src: '/home/academic-faculty-positions.png',
       alt: 'Academic Faculty Positions',
       label: 'Faculty',
-      link: `/australia/faculty?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`,
+      link: `/australia/faculty`,
     },
 
     {
       src: '/home/academic-executive-positions.png',
       alt: 'Academic Executive Positions',
       label: 'Executive',
-      link: `/australia/executive?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`,
+      link: `/australia/executive`,
     },
     {
       src: '/home/academic-human-resource-positions.png',
       alt: 'Academic Human Resource Positions',
       label: 'HR Jobs',
-      link: `/australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human%20Resources"}]`,
+      link: `/australia/hr-jobs`,
     },
 
     {
       src: '/home/academic-phd-positions.png',
       alt: 'Academic PhD Positions',
       label: 'PhD Jobs',
-      link: `/australia/phd?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]`,
+      link: `/australia/phd`,
     },
     {
       src: '/home/academic-staff-positions.png',
       alt: 'Academic Staff Positions',
       label: 'Staff/Admin',
-      link: `/australia/admin?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`,
+      link: `/australia/admin`,
     },
   ];
 
@@ -134,7 +134,7 @@ export default async function myPage() {
             <li>
               <a
                 className="grayscale hover:grayscale-0"
-                href={`australia/faculty?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`}
+                href={`australia/faculty`}
               >
                 <Image
                   alt="Academic Faculty Positions"
@@ -148,7 +148,7 @@ export default async function myPage() {
               </a>
               <a
                 className="mb-4"
-                href={`australia/faculty?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`}
+                href={`australia/faculty`}
               >
                 <p>Faculty</p>
               </a>
@@ -156,7 +156,7 @@ export default async function myPage() {
             <li>
               <a
                 className="grayscale hover:grayscale-0"
-                href={`australia/executive?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`}
+                href={`australia/executive`}
               >
                 <Image
                   alt="Academic Executive Positions"
@@ -170,7 +170,7 @@ export default async function myPage() {
               </a>
               <a
                 className="mb-4"
-                href={`australia/executive?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`}
+                href={`australia/executive`}
               >
                 <p>Executive</p>
               </a>
@@ -178,7 +178,7 @@ export default async function myPage() {
             <li>
               <a
                 className="grayscale hover:grayscale-0"
-                href={`australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human%20Resources"}]`}
+                href={`australia/hr-jobs`}
               >
                 <Image
                   alt="Academic HR Positions"
@@ -192,7 +192,7 @@ export default async function myPage() {
               </a>
               <a
                 className="mb-4"
-                href={`australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human%20Resources"}]`}
+                href={`australia/hr-jobs`}
               >
                 <p>HR Jobs</p>
               </a>
@@ -214,28 +214,28 @@ export default async function myPage() {
         </li>
         <li>
           <Link
-            href={`/australia/research?r=Australia&filter0=[{"category":"PositionType","filter":"Research"}]`}
+            href={`/australia/research`}
           >
             Researcher
           </Link>
         </li>
         <li>
           <Link
-            href={`/australia/professor?r=Australia&filter0=[{"category":"PositionType","filter":"Professor"}]`}
+            href={`/australia/professor`}
           >
             Professor
           </Link>
         </li>
         <li>
           <Link
-            href={`/australia/hr-jobs?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`}
+            href={`/australia/hr-jobs`}
           >
             HR
           </Link>
         </li>
         <li>
           <Link
-            href={`/australia/phd?r=Australia&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]`}
+            href={`/australia/phd`}
           >
             PhD
           </Link>

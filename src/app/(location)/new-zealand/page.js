@@ -27,33 +27,33 @@ const items = [
     src: '/home/academic-faculty-positions.png',
     alt: 'Academic Faculty Positions',
     label: 'Faculty',
-    link: `new-zealand/faculty?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`,
+    link: `new-zealand/faculty`,
   },
 
   {
     src: '/home/academic-executive-positions.png',
     alt: 'Academic Executive Positions',
     label: 'Executive',
-    link: `new-zealand/executive?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`,
+    link: `new-zealand/executive`,
   },
   {
     src: '/home/academic-human-resource-positions.png',
     alt: 'Academic Human Resource Positions',
     label: 'HR Jobs',
-    link: `/new-zealand/hr-jobs?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`,
+    link: `/new-zealand/hr-jobs`,
   },
 
   {
     src: '/home/academic-phd-positions.png',
     alt: 'Academic PhD Positions',
     label: 'PhD Jobs',
-    link: `new-zealand/phd?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]`,
+    link: `new-zealand/phd`,
   },
   {
     src: '/home/academic-staff-positions.png',
     alt: 'Academic Staff Positions',
     label: 'Staff/Admin',
-    link: `/new-zealand/admin?r=New Zealand&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`,
+    link: `/new-zealand/admin`,
   },
 ];
 

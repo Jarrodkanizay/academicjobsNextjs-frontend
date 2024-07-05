@@ -23,6 +23,8 @@ export const regionData = [
     The No.1 job board for lecturers in the UK. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.
      
     Find all the best lecturing jobs here…`,
+    category2: 'PositionType',
+    filter2: 'Lecturer/Instructor',
   },
   {
     Name: `research`,
@@ -34,6 +36,8 @@ export const regionData = [
     The No.1 job board for researchers in the UK. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you!
      
     Find all the best research jobs here…`,
+    category2: 'PositionType',
+    filter2: 'Research',
   },
   {
     Name: `professor`,
@@ -45,6 +49,8 @@ export const regionData = [
     The No.1 job board for professors in the UK. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you!
      
     Find all the best jobs here…`,
+    category2: 'PositionType',
+    filter2: 'Professor',
   },
   {
     Name: `student`,

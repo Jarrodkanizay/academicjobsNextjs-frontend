@@ -95,15 +95,11 @@ export default function Page({ params, searchParams }: any) {
         p={{
           filter1: [
             {
-              category: 'Country',
-              filter: 'United States',
-            },
-            {
               category: category2,
               filter: filter2,
             },
           ],
-          q: Name,
+          r: "United States",
         }}
       />
 

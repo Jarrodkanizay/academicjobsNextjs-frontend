@@ -188,8 +188,6 @@ export default async function myPage() {
           <li><Link href="/Europe/executive/" >	Executive</Link></li>
           <li><Link href="/Europe/admin/" >Admin</Link></li>
           <li><Link href="/Europe/hr-jobs/" >	HR</Link></li>
-          <li><Link href="/Europe/student/" >	Student</Link></li>
-
         </ul>
       </div>
 
