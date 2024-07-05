@@ -224,7 +224,7 @@ export default async function myPage() {
       </h3> */}
 
       {/* <div className=" mt-[3rem] "> */}
-      <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 mb-2 w-full  md:w-auto">
+      <ul className="position_type_links faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 mb-2 w-full  md:w-auto">
         <li>
           <Link
             href={`/australia/lecturer?r=Australia&filter0=[{"category":"PositionType","filter":"Lecturer/Instructor"}]`}
@@ -279,7 +279,7 @@ export default async function myPage() {
         </li>
       </ul>
 
-      <ul className="flex flex-wrap justify-center items-center md:gap-6 gap-3 px-7 pb-4 text-[#f4a10c] mx-auto">
+      <ul className="city_links flex flex-wrap justify-center items-center md:gap-6 gap-3 px-7 pb-4 text-[#f4a10c] mx-auto">
         <li>
           <Link className="text-center" href="/melbourne">
             Melbourne

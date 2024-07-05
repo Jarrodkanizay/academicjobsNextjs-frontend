@@ -1,12 +1,12 @@
-import Image from 'next/image';
+import Img from 'next/image';
 import { regionData } from '@/data/australiaPositions';
-import SearchResults1 from '@/components/SearchResults1';
-import JobSearchBox from '@/components/JobSearchBox';
-import TalentPool from '@/components/TalentPoolCTA';
+// import SearchResults1 from '@/components/SearchResults1';
+// import JobSearchBox from '@/components/JobSearchBox';
+// import TalentPool from '@/components/TalentPoolCTA';
 import JobFilter from '@/components/JobFilter';
 import SearchResults3 from '@/components/SearchResults3';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
-const regionName = 'Australia';
+// const regionName = 'Australia';
 export async function generateMetadata({ params, searchParams }) {
   // console.log(params)
   let { category } = params;
@@ -108,14 +108,14 @@ export default function Page({ params, searchParams }) {
           className="absolute inset-0 z-0 bottom-0 left-0 flex justify-center w-full h-full"
           style={{ transform: 'translateX(25%)' }}
         >
-          {/* <Image
+          <Img
             src={Image}
             alt="Description of image"
             className="h-full object-cover"
             style={{ width: 'auto' }}
             width={1000}
             height={1000}
-          /> */}
+          />
         </div>
       </div>
 

@@ -46,6 +46,13 @@ html {
 html {
   body,
   body .prose {
+    .position_type_links li:hover {
+      color: black;
+    }
+    .city_links li:hover {
+      color: rgb(255, 132, 0);
+    }
+
     .filter-item.hide_filtered {
       display: none;
     }
