@@ -198,9 +198,6 @@ export default async function myPage() {
           <li>
             <Link href="/Canada/hr-jobs/"> HR</Link>
           </li>
-          <li>
-            <Link href="/Canada/student/"> Student</Link>
-          </li>
         </ul>
       </div>
 

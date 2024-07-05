@@ -7,6 +7,8 @@ export const regionData = [
     content: `Discover your perfect lecturing position through Canada’s No. 1 board! At Academic Jobs we offer the most renowned lecturing jobs at the top Canadian universities. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
 Find all lecturing job opportunities for your key academic affairs. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.
 Find all the best lecturing jobs here…`,
+    category2: 'PositionType',
+    filter2: 'Lecturer/Instructor',
   },
   {
     Name: `research`,
@@ -16,6 +18,8 @@ Find all the best lecturing jobs here…`,
     content: `Find your perfect research position through Canada’s best job board! At Academic Jobs we offer the most renowned research jobs at the top Canadian universities. Positions as an academic researcher will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
 Find all research job opportunities for your key academic affairs in Canada. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you!
 Find all the best research jobs here…`,
+    category2: 'PositionType',
+    filter2: 'Research',
   },
 
   {
@@ -27,6 +31,8 @@ Find all the best research jobs here…`,
     content: `Discover your perfect professor position through Canada’s best job board! At Academic Jobs we offer the most renowned professor jobs at the top Canadian universities. Positions as an academic professor will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
 The best job board in Canada will help find all professional job opportunities for your key academic affairs. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you!
 Find all the best jobs here…`,
+    category2: 'PositionType',
+    filter2: 'Professor',
   },
   {
     Name: `executive`,

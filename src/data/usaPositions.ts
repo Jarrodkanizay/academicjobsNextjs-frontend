@@ -23,6 +23,8 @@ export const regionData = [
     The No.1 job board for lecturers in the USA. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.
      
     Find all the best lecturing jobs here…`,
+    category2: 'PositionType',
+    filter2: 'Lecturer/Instructor',
   },
   {
     Name: `research`,
@@ -34,6 +36,8 @@ export const regionData = [
     The No.1 job board for researchers in the USA. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you!
      
     Find all the best research jobs here…`,
+    category2: 'PositionType',
+    filter2: 'Research',
   },
   {
     Name: `professor`,
@@ -46,6 +50,8 @@ export const regionData = [
      
     Find all the best jobs here…
     `,
+    category2: 'PositionType',
+    filter2: 'Professor',
   },
   {
     Name: `student`,
@@ -83,7 +89,7 @@ export const regionData = [
     filter2: 'Executive',
   },
   {
-    Name: `admin`,
+    Name: `staff`,
     Title: `All staff Jobs in USA`,
     Description: `Admin and Support Academic Jobs USA will provide you the chance to collaborate with a varied and skilled group of individuals while advancing the academic standards and innovative practices of your organisation.`,
     Keyword: `Admin and Support Academic Jobs USA, Admin and Support AcademicJobs `,

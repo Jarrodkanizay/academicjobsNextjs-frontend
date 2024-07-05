@@ -22,33 +22,33 @@ export default async function myPage() {
       src: '/home/academic-faculty-positions.png',
       alt: 'Academic Faculty Positions',
       label: 'Faculty',
-      link: `uk/faculty?r=United Kingdom&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`,
+      link: `uk/faculty`,
     },
 
     {
       src: '/home/academic-executive-positions.png',
       alt: 'Academic Executive Positions',
       label: 'Executive',
-      link: `uk/executive?r=United Kingdom&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`,
+      link: `uk/executive`,
     },
     {
       src: '/home/academic-human-resource-positions.png',
       alt: 'Academic Human Resource Positions',
       label: 'HR Jobs',
-      link: `uk/hr-jobs?r=United Kingdom&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`,
+      link: `uk/hr-jobs`,
     },
 
     {
       src: '/home/academic-phd-positions.png',
       alt: 'Academic PhD Positions',
       label: 'PhD Jobs',
-      link: `uk/phd?r=United Kingdom&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]`,
+      link: `uk/phd`,
     },
     {
       src: '/home/academic-staff-positions.png',
       alt: 'Academic Staff Positions',
       label: 'Staff/Admin',
-      link: `uk/admin?r=United Kingdom&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`,
+      link: `uk/admin`,
     },
 
   ];
@@ -103,7 +103,7 @@ export default async function myPage() {
 
             <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-[-75px] mt-[-11rem] lg:hidden ">
             <li>
-              <a className="grayscale hover:grayscale-0" href='uk/faculty?r=United Kingdom&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]'>
+              <a className="grayscale hover:grayscale-0" href='uk/faculty'>
                 <Image
                   alt="Academic Faculty Positions"
                   loading="lazy"
@@ -119,7 +119,7 @@ export default async function myPage() {
               </a>
             </li>
             <li>
-              <a className="grayscale hover:grayscale-0" href='uk/executive?r=United Kingdom&filter0=[{"category":"master_category_job_type","filter":"Executive"}]'>
+              <a className="grayscale hover:grayscale-0" href='uk/executive'>
                 <Image
                   alt="Academic Executive Positions"
                   loading="lazy"
@@ -136,7 +136,7 @@ export default async function myPage() {
               </a>
             </li>
             <li>
-              <a className="grayscale hover:grayscale-0" href='uk/hr-jobs?r=United Kingdom&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]'>
+              <a className="grayscale hover:grayscale-0" href='uk/hr-jobs'>
                 <Image
                   alt="Academic HR Positions"
                   loading="lazy"
@@ -177,14 +177,13 @@ export default async function myPage() {
       <div className=" mt-[5rem] " >
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
-            <li><Link href='uk/lecturer?r=United Kingdom&filter0=[{"category":"PositionType","filter":"Lecturer/Instructor"}]' >	Lecturer</Link></li>
-            <li><Link href='/uk/research?r=United Kingdom&filter0=[{"category":"PositionType","filter":"Research"}]' >	Research </Link></li>
-            <li><Link href='/uk/professor?r=United Kingdom&filter0=[{"category":"PositionType","filter":"Professor"}]' >	Professor</Link></li>
+            <li><Link href='uk/lecturer' >	Lecturer</Link></li>
+            <li><Link href='/uk/research' >	Research </Link></li>
+            <li><Link href='/uk/professor' >	Professor</Link></li>
           </ul>
-          <li><Link href='uk/executive?r=United Kingdom&filter0=[{"category":"master_category_job_type","filter":"Executive"}]' >	Executive</Link></li>
-          <li><Link href='uk/admin?r=United Kingdom&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]' >Admin</Link></li>
-          <li><Link href='uk/hr-jobs?r=United Kingdom&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]' >	HR</Link></li>
-          <li><Link href='uk/student?r=United Kingdom&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]' >	Student</Link></li>
+          <li><Link href='uk/executive' >	Executive</Link></li>
+          <li><Link href='uk/admin' >Admin</Link></li>
+          <li><Link href='uk/hr-jobs' >	HR</Link></li>
 
         </ul>
       </div>

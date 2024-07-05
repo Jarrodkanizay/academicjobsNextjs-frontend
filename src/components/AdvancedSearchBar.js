@@ -1,21 +1,17 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import { filterType } from '@/utils/data';
-import { keepPreviousData, useQuery } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
-import JobKeywordSearchBlock from '@/components/JobKeywordSearchBlock';
-import { regionData } from '@/data/africaPositions';
-import Autocomplete from 'react-google-autocomplete';
 import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
-import JobAlertsForm from '@/components/profile/JobAlertsForm'; // Import the JobAlertsForm component
+import Autocomplete from 'react-google-autocomplete';
+import JobAlertsForm from '@/components/profile/JobAlertsForm';
 
 const GOOGLE_GEOCODING_API_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
 
 export default function Page({ p = {}, forceClass = '' }) {
-  console.log("hello", p)
   const router = useRouter();
   const searchParams = loadFromURLParams(useSearchParams());
 
@@ -26,26 +22,19 @@ export default function Page({ p = {}, forceClass = '' }) {
     searchParams1 = { ...searchParams };
   }
 
-  const {
-    q = '',
-    lon = 0,
-    lat = 0,
-    filter0 = [],
-    currentMiddleCategory,
-  } = searchParams1;
+  const { q = '', lon = 0, lat = 0, currentMiddleCategory } = searchParams1;
 
-  // Extract r and l from p object
-  const r = p.filter1 && p.filter1.length > 0 ? p.filter1[0].filter : '';
+  const r = p.r || 'Global';
+  const filter0 = p.filter1 && p.filter1.length > 0 ? p.filter1 : [];
   const l = p.l || '';
 
-useEffect(() => {
   const updateURLParams = async () => {
-    if (l && l.toLowerCase() !== 'tasmania') { // Add this check
+    if (l && l.toLowerCase() !== 'tasmania') {
       try {
         const response = await axios.get(GOOGLE_GEOCODING_API_URL, {
           params: {
             address: l,
-            key: 'AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA', // Replace with your Google API key
+            key: 'AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA',
           },
         });
         const { results } = response.data;
@@ -69,9 +58,22 @@ useEffect(() => {
     }
   };
 
-  updateURLParams();
-}, [l]);
-
+  useEffect(() => {
+    if (l) {
+      updateURLParams();
+    } else {
+      const currentURL = window.location.pathname;
+      const newSearchParams = {
+        ...searchParams1,
+        r,
+        l,
+        lon,
+        lat,
+        filter0
+      };
+      router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, { scroll: false });
+    }
+  }, [l]);
 
   let filter1 = [...filter0];
   const filteredData = filter1.filter((item) => item.category !== 'region');
@@ -114,7 +116,7 @@ useEffect(() => {
   };
   const [filterTypes1, setfilterTypes1] = useState(filterType1);
   const [filterTypes, setfilterTypes] = useState(filterType);
-  const onEditorStateChange1 = (suggestion) => {};
+  const onEditorStateChange1 = (suggestion) => { };
   const [category, setCategory] = useState('');
   const [filter2, setfilter2] = useState([]);
 
@@ -171,15 +173,15 @@ useEffect(() => {
           lon,
           lat,
         });
-        return response.data.data || []; 
+        return response.data.data || [];
       } catch (error) {
         console.error('Error fetching filters:', error);
-        return []; 
+        return [];
       }
     },
     enabled: category !== '',
   });
-  
+
   const filterValues9 = {
     Country: 'Country',
     State: 'State',
@@ -198,7 +200,7 @@ useEffect(() => {
     thirdcategory: 'thirdcategory',
   };
   const [isShowFilter, setIsShowFilter] = useState(false);
-  const [isFormVisible, setIsFormVisible] = useState(false); // State for form visibility
+  const [isFormVisible, setIsFormVisible] = useState(false);
 
   const handleCheckboxChange = (filter) => {
     const isChecked = selectedFilters.some((item) => item.filter === filter);
@@ -239,12 +241,12 @@ useEffect(() => {
   return (
     <>
       <div
-        className={`mx-auto bg-white rounded-xl shadow-xl p-4 max-w-5xl  flex flex-col ${forceClass}`}
+        className={`mx-auto bg-white rounded-xl shadow-xl p-4 max-w-5xl flex flex-col mb-8 mt-4 ${forceClass}`}
       >
         <div className="w-full pt-2">
-          <div className=" mx-auto">
+          <div className="mx-auto">
             <div className="max-w-screen-xl">
-              <div className={` py-4`}>
+              <div className="py-4">
                 <div className="lg:max-w-screen-lg mx-auto">
                   <div className="join mx-auto w-full flex flex-col md:flex-row">
                     <Autocomplete
@@ -285,17 +287,23 @@ useEffect(() => {
                       Create Job Alert
                     </button>
                   </div>
-                  {filter1.length > 0 && (
+                  {selectedFilters.length > 0 && (
                     <div className="md:flex md:flex-wrap pb-2 p-2">
-                      {filter1.map(({ category1, filter }, i) => (
+                      {selectedFilters.map(({ category, filter }, i) => (
                         <button
                           key={i}
                           className="btn btn-xs bg-sky-900 text-white mr-2"
                           onClick={() => {
-                            const updatedFilter = filter1.filter(
+                            const updatedFilters = selectedFilters.filter(
                               (_, index) => index !== i
                             );
                             setPage(0);
+
+                            // Update filter0 by filtering out the removed filter
+                            const updatedFilter = filter1.filter(
+                              (filterItem) => filterItem.filter !== filter
+                            );
+
                             const currentURL = window.location.pathname;
                             const newSearchParams = {
                               ...searchParams,
@@ -308,9 +316,7 @@ useEffect(() => {
                               { scroll: false }
                             );
                             setCategory('');
-                            setSelectedFilters(
-                              selectedFilters.filter((item) => item.filter !== filter)
-                            );
+                            setSelectedFilters(updatedFilters);
                           }}
                         >
                           {`${filter} X`}
@@ -334,7 +340,7 @@ useEffect(() => {
                   }
                   ${showYN ? 'block' : 'hidden'}
                   ${filterType === 'JobType'
-                    ? 'bg-[#f4a10c]  md:w-auto text-white  animate-pulse font-bold shadow-md '
+                    ? 'bg-[#f4a10c] md:w-auto text-white animate-pulse font-bold shadow-md'
                     : ' border-gray-500'
                   }
                   
@@ -399,7 +405,7 @@ useEffect(() => {
                       type="checkbox"
                       value={filter}
                       checked={selectedFilters.some((item) => item.filter === filter)}
-                      onChange={() => handleCheckboxChange(filter)}
+                      onChange={() => handleCheckboxChange(filter, category)}
                       className="mr-2"
                     />
                     {`${filter ? filter : 'Others'} (${job_count})`}

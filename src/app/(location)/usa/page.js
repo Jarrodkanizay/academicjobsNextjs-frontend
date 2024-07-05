@@ -25,33 +25,33 @@ export default async function myPage() {
       src: '/home/academic-faculty-positions.png',
       alt: 'Academic Faculty Positions',
       label: 'Faculty',
-      link: `usa/faculty?r=United States&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`,
+      link: `usa/faculty`,
     },
 
     {
       src: '/home/academic-executive-positions.png',
       alt: 'Academic Executive Positions',
       label: 'Executive',
-      link: `usa/executive?r=United States&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`,
+      link: `usa/executive`,
     },
     {
       src: '/home/academic-human-resource-positions.png',
       alt: 'Academic Human Resource Positions',
       label: 'HR Jobs',
-      link: `usa/hr-jobs?r=United States&filter0=[{"category":"master_category_job_type","filter":"Human%20Resources"}]`,
+      link: `usa/hr-jobs`,
     },
 
     {
       src: '/home/academic-phd-positions.png',
       alt: 'Academic PhD Positions',
       label: 'PhD Jobs',
-      link: `usa/phd?r=United States&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]`,
+      link: `usa/phd`,
     },
     {
       src: '/home/academic-staff-positions.png',
       alt: 'Academic Staff Positions',
       label: 'Staff/Admin',
-      link: `usa/admin?r=United States&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`,
+      link: `usa/admin`,
     },
     // {
     //   src: '/home/academic-graduate-positions.png',
@@ -212,27 +212,25 @@ export default async function myPage() {
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li>
-              <Link href={`usa/lecturer?r=United States&filter0=[{"category":"PositionType","filter":"Lecturer/Instructor"}]`}> Lecturer</Link>
+              <Link href={`usa/lecturer`}> Lecturer</Link>
             </li>
             <li>
-              <Link href={`usa/research?r=United States&filter0=[{"category":"PositionType","filter":"Research"}]`}> Research </Link>
+              <Link href={`usa/research`}> Research </Link>
             </li>
             <li>
-              <Link href={`usa/professor?r=United States&filter0=[{"category":"PositionType","filter":"Professor"}]`}> Professor</Link>
+              <Link href={`usa/professor`}> Professor</Link>
             </li>
           </ul>
           <li>
-            <Link href={`usa/executive?r=United States&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`}> Executive</Link>
+            <Link href={`usa/executive`}> Executive</Link>
           </li>
           <li>
-            <Link href={`usa/staff?r=United States&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`}>Staff</Link>
+            <Link href={`usa/staff`}>Staff</Link>
           </li>
           <li>
-            <Link href={`usa/hr-jobs?r=United States&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`}> HR</Link>
+            <Link href={`usa/hr-jobs`}> HR</Link>
           </li>
-          <li>
-            <Link href={`usa/student?r=United States&filter0=[{"category":"master_category_job_type","filter":"Student / Phd Jobs"}]`}> Student</Link>
-          </li>
+
         </ul>
       </div>
       <div className=" mt-2 ">

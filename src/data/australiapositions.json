@@ -13,21 +13,27 @@
     "Title": "Lecturer Jobs Australia",
     "Description": "Look through this page's list of open higher education lecturer positions to learn more about Lecturer Academic Jobs Australia.",
     "Keyword": "Lecturer Jobs In Australia",
-    "content": "Seek your perfect lecturing position through Australia’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top Australian universities. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources. The No.1 job board for lecturers in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you. Find all the best lecturing jobs here…"
+    "content": "Seek your perfect lecturing position through Australia’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top Australian universities. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources. The No.1 job board for lecturers in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you. Find all the best lecturing jobs here…",
+    "category2": "PositionType",
+    "filter2": "Lecturer/Instructor"
   },
   {
     "Name": "research",
     "Title": "Research Jobs In Australia",
     "Description": "Do you enjoy learning new things and finding solutions to practical issues? If yes, you may consider applying to one of the best institutions for a researcher post onResearch Academic Jobs Australia.",
     "Keyword": "Academic Jobs Australia Research. Researcher positions",
-    "content": "Seek your perfect research position through Australia’s best job board! At Academic Jobs we offer the most renowned research jobs at the top Australian universities. Positions as an academic researcher will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources. The No.1 job board for researchers in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you! Find all the best research jobs here…"
+    "content": "Seek your perfect research position through Australia’s best job board! At Academic Jobs we offer the most renowned research jobs at the top Australian universities. Positions as an academic researcher will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources. The No.1 job board for researchers in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you! Find all the best research jobs here…",
+    "category2": "PositionType",
+    "filter2": "Research"
   },
   {
     "Name": "professor",
     "Title": "Professor Jobs In Australia",
     "Description": "Depending on the institution and the area of specialisation, Professor Academic Jobs Australia might encompass a broad range of subjects and disciplines.",
     "Keyword": "Professor Academic Jobs Australia. professor positions Australia",
-    "content": "Seek your perfect professor position through Australia’s best job board! At Academic Jobs we offer the most renowned professor jobs at the top Australian universities. Positions as an academic professor will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources. The No.1 job board for professors in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you! Find all the best jobs here…"
+    "content": "Seek your perfect professor position through Australia’s best job board! At Academic Jobs we offer the most renowned professor jobs at the top Australian universities. Positions as an academic professor will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources. The No.1 job board for professors in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you! Find all the best jobs here…",
+    "category2": "PositionType",
+    "filter2": "Professor"
   },
   {
     "Name": "student",
@@ -84,6 +90,6 @@
     "Keyword": "Academic PhD Jobs Australia",
     "content": "Seek your perfect PhD position through Australia’s best job board! At Academic Jobs we offer PhD positions at the most renowned universities across Australia and the globe. PhD opportunities will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources. The No.1 job board for academics in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programs. Find all the best PhD positions here…",
     "category2": "master_category_job_type",
-    "filter2": "Human Resources"
+    "filter2": "Student / Phd Jobs"
   }
 ]

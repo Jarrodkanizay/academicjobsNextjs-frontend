@@ -14,13 +14,13 @@ export default function JobSearchBox() {
         alt: 'Academic Faculty Positions',
         label: 'Faculty',
         //link: `/faculty`,
-        link: `/faculty?r=Global&filter0=[{"category":"master_category_job_type","filter":"Academic / Faculty"}]`,
+        link: `/faculty`,
       },
       {
         src: '/home/academic-executive-positions.png',
         alt: 'Academic Executive Positions',
         label: 'Executive',
-        link: `/executive?r=Global&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`,
+        link: `/executive`,
         // link: `/executive?r=Global&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`,
       },
       {
@@ -28,21 +28,21 @@ export default function JobSearchBox() {
         alt: 'Academic Human Resource Positions',
         label: 'HR Jobs',
         //link: `/hr-jobs`,
-        link: `/hr-jobs?r=Global&filter0=[{"category":"master_category_job_type","filter":"Human Resources"}]`,
+        link: `/hr-jobs`,
       },
       {
         src: '/home/academic-phd-positions.png',
         alt: 'Academic PhD Positions',
         label: 'PhD Jobs',
         //link: `/phd`,
-        link: `/phd?r=Global&filter0=[{"category":"PositionType","filter":"Student / Phd Jobs"}]`,
+        link: `/phd`,
       },
       {
         src: '/home/academic-staff-positions.png',
         alt: 'Academic Staff Positions',
         label: 'Staff/Admin',
         //link: `/admin`,
-        link: `/admin?r=Global&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`,
+        link: `/admin`,
       },
     ];
   return (
@@ -84,7 +84,7 @@ export default function JobSearchBox() {
         <li>
           <a
             className="grayscale hover:grayscale-0"
-            href='/executive?r=Global&filter0=[{"category":"master_category_job_type","filter":"Executive"}]'
+            href='/executive'
           >
             <Image
               alt="Academic Executive Positions"
