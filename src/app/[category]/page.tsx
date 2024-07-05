@@ -123,12 +123,7 @@ export default function Page({ params, searchParams }: any) {
       <div className="content-grid flex-col md:gap-2">
         <AdvancedSearchBar
           p={{
-            filter1: [
-              {
-                category: 'Country',
-                filter: country,
-              },
-            ],
+            r: country,
             l: Name,
           }}
         />
