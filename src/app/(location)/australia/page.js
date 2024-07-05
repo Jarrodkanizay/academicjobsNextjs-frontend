@@ -201,10 +201,11 @@ export default async function myPage() {
         </div>
       </div>
 
-      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24 mb-10">
+      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top mx-auto mt-24 mb-8">
         <JobSearchBoxCountry country={'Australia'} />
       </div>
-      <ul className="position_type_links faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 mb-2 w-full  md:w-auto">
+      <div className="container mx-auto"> </div>
+      <ul className="position_type_links faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 mb-2 w-full md:w-auto">
         <li>
           <Link
             href={`/australia/lecturer?r=Australia&filter0=[{"category":"PositionType","filter":"Lecturer/Instructor"}]`}
@@ -216,7 +217,7 @@ export default async function myPage() {
           <Link
             href={`/australia/research?r=Australia&filter0=[{"category":"PositionType","filter":"Research"}]`}
           >
-            Researcher
+            Research
           </Link>
         </li>
         <li>
