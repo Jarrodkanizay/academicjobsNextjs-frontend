@@ -87,9 +87,6 @@ export default function JobSearchBox() {
       <div className="relative flex flex-col md:flex-row md:gap-2 md:gap-0 mx-18 w-full mt-5 md:border rounded-t-lg md:rounded-lg p-2 md:shadow-md">
         <div className="relative z-50 flex-grow flex items-center"> {/* Ensure the container is flex and items-center */}
           <JobKeywordSearchBlock
-            // field="Enter a keyword"
-            // customKey="Enter a keyword"
-            // label="Enter a keyword"
             forceClass="mb-6"
             onSelect={onEditorStateSelect}
             onInputChange={onInputChange}
