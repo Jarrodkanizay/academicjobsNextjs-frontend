@@ -1,14 +1,10 @@
 import Image from 'next/image';
 import { regionData } from '@/data/australiaPositions';
-// import SearchResults1 from '@/components/SearchResults1';
-// import JobSearchBox from '@/components/JobSearchBox';
-// import TalentPool from '@/components/TalentPoolCTA';
 import JobFilter from '@/components/JobFilter';
 import SearchResults3 from '@/components/SearchResults3';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
-// const regionName = 'Australia';
+
 export async function generateMetadata({ params, searchParams }) {
-  // console.log(params)
   let { category } = params;
   category = category?.replace(/-/g, ' ');
 
@@ -18,14 +14,14 @@ export async function generateMetadata({ params, searchParams }) {
     Description = '',
     Keyword = '',
     content: content1 = '',
-    Image = '',
+    Image: imageSrc = '',
   } = regionData.find((item) => item.Name === category) || {};
 
   return {
     title: Title,
     description: Description,
     keywords: Keyword,
-    image: Image,
+    image: imageSrc,
   };
 }
 
@@ -52,8 +48,8 @@ export default function Page({ params }) {
     content: content1 = '',
     category2 = '',
     filter2 = '',
+    Image: imageSrc = '',
   } = regionData.find((item) => item.Name === category) || {};
-
 
   const titleParts = splitTitle(Title);
 
@@ -76,14 +72,14 @@ export default function Page({ params }) {
           className="absolute inset-0 z-0 bottom-0 left-0 flex justify-center w-full h-full"
           style={{ transform: 'translateX(25%)' }}
         >
-          {/* <Img
-            src={Image}
+          <Image
+            src={imageSrc}
             alt="Description of image"
             className="h-full object-cover"
             style={{ width: 'auto' }}
             width={1000}
             height={1000}
-          /> */}
+          />
         </div>
       </div>
 
