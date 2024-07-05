@@ -201,29 +201,9 @@ export default async function myPage() {
         </div>
       </div>
 
-      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
+      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24 mb-24">
         <JobSearchBoxCountry country={'Australia'} />
       </div>
-
-      {/* <div className="pt-[4rem] flex flex-col items-center justify-center">
-        <Image
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-australia-min.png"
-          alt="AcademicJobs Australia Logo"
-          className="  mb-[1rem] "
-          width={330}
-          height={220}
-        />
-     
-      </div>
-      <div className="max-w-screen-md mx-auto">
-        <JobSearchBox l="Australia" />
-      </div> */}
-
-      {/* <h3 className="text-center ">
-        We Are Australia's University Job Website
-      </h3> */}
-
-      {/* <div className=" mt-[3rem] "> */}
       <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 mb-2 w-full  md:w-auto">
         <li>
           <Link
