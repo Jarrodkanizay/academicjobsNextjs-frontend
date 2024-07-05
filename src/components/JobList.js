@@ -20,7 +20,7 @@ const JobList = ({ data, handlePageChange, page, isPlaceholderData, lefthandView
   return (
     <>
       <div className={`flex justify-center items-center ${lefthandView ? 'block' : 'hidden'}`}>
-        <h3 className="text-gray-blue underline-full leading-tight">International Opportuninties</h3>
+        <h3 className="text-gray-blue underline-full leading-tight">International Opportunities</h3>
       </div>
       {content}
       <div className="flex justify-center gap-4 text-white">
