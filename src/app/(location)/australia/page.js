@@ -703,38 +703,41 @@ export default async function myPage() {
         </div>
       </main>
       <section
-        className="mt-16 mb-[-100px] bg-[#f4a10c] breakout h-[68px]"
+        className="mt-16 mb-[-100px] bg-[#f4a10c] breakout"
         style={{
-          backgroundImage: `url('/banners/indigenous-acknowledgment-background.jpg')`,
+          backgroundImage: `url('/banners/indigenous-acknowledgment-background.png')`,
           backgroundPosition: 'left center',
           backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
         }}
       >
-        <div className="container w-full h-full flex items-center gap-4 max-w-[920px]">
-          <figure>
-            <Image
-              src={'/flags/australian-aboriginal-flag.svg'}
-              alt="Indigenous Australian Aboriginal Flag"
-              width={1000}
-              height={600}
-              className="max-w-10"
-            />
-          </figure>
-          <figure>
-            <Image
-              src={'/flags/torres-strait-islanders.svg'}
-              alt="Indigenous Australian Aboriginal Flag"
-              width={1000}
-              height={600}
-              className="max-w-10"
-            />
-          </figure>
-          <p className="leading-tight text-sm font-semibold m-0">
-            Academic Jobs acknowledges and respects Aboriginal and Torres Strait
-            Islander peoples as First Australians, whose knowledge, cultures,
-            histories and languages have been created and shared for at least
-            65,000 years.
-          </p>
+        <div style={{ backgroundColor: 'rgba(255, 123, 0, 0.5)' }}>
+          <div className="container w-full h-full flex items-center gap-4 max-w-[920px] py-3">
+            <p className="leading-tight text-sm font-semibold m-0 text-white">
+              Academic Jobs acknowledges and respects Aboriginal and Torres
+              Strait Islander peoples as First Australians, whose knowledge,
+              cultures, histories and languages have been created and shared for
+              at least 65,000 years.
+            </p>
+            <figure>
+              <Image
+                src={'/flags/australian-aboriginal-flag.svg'}
+                alt="Indigenous Australian Aboriginal Flag"
+                width={1000}
+                height={600}
+                className="max-w-10"
+              />
+            </figure>
+            <figure>
+              <Image
+                src={'/flags/torres-strait-islanders.svg'}
+                alt="Indigenous Australian Aboriginal Flag"
+                width={1000}
+                height={600}
+                className="max-w-10"
+              />
+            </figure>
+          </div>
         </div>
       </section>
     </>
