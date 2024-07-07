@@ -609,10 +609,9 @@ export default async function myPage() {
 
           <div className="md:w-2/3 w-full">
             <a className="card-title md:ml-4 mt-8 text-[#3b5683]">
-              {' '}
               Top HR jobs today
             </a>
-            <div className=" h-96 md:ml-4 overflow-y-scroll custom-scrollbar">
+            <div className="md:h-96 md:ml-4 md:overflow-y-scroll md:custom-scrollbar">
               <SearchResults q={{ q: 'hr', l: 'Australia' }} />{' '}
             </div>
           </div>
@@ -648,7 +647,7 @@ export default async function myPage() {
               className=""
             />
           </figure>
-          <ul className="p-8 text-gray-500 flex justify-between px-16">
+          <ul className="p-8 text-gray-500 flex flex-col md:flex md:flex-row gap-16 justify-between px-16">
             <li>
               <Link
                 className="flex flex-col items-center"
