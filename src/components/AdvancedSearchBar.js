@@ -22,11 +22,18 @@ export default function Page({ p = {}, forceClass = '' }) {
     searchParams1 = { ...searchParams };
   }
 
-  const { q = '', lon = 0, lat = 0, currentMiddleCategory, r: paramR } = searchParams1;
+  const { q = '', lon = 0, lat = 0, currentMiddleCategory, r: paramR, filter0: searchFilter0 } = searchParams1;
   const r = paramR || 'Global';
-  const [filter0, setFilter0] = useState(p.filter1 && p.filter1.length > 0 ? p.filter1 : []);
+  const [filter0, setFilter0] = useState(
+    searchFilter0 && searchFilter0.length > 0 
+      ? searchFilter0 
+      : (p.filter1 && p.filter1.length > 0 
+          ? p.filter1 
+          : []
+        )
+  );
   const l = p.l || '';
-
+  
   const updateURLParams = async () => {
     if (l && l.toLowerCase() !== 'tasmania') {
       try {
