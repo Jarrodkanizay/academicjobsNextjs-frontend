@@ -44,14 +44,15 @@ html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-left: 4px;
   }
+
   .sticky_list {
-    position: -webkit-sticky;
+position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1000;
     align-self: start;
   }
-
+  
   .content {
     padding: 0 20px;
   }
@@ -101,6 +102,10 @@ html {
 
     .search-box {
       padding-left: 0;
+    }
+
+    .sticky_list {
+      position: relative;
     }
   }
 }
