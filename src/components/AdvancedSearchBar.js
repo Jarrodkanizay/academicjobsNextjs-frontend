@@ -22,10 +22,9 @@ export default function Page({ p = {}, forceClass = '' }) {
     searchParams1 = { ...searchParams };
   }
 
-  const { q = '', lon = 0, lat = 0, currentMiddleCategory } = searchParams1;
-
-  const r = p.r || 'Global';
-  const filter0 = p.filter1 && p.filter1.length > 0 ? p.filter1 : [];
+  const { q = '', lon = 0, lat = 0, currentMiddleCategory, r: paramR } = searchParams1;
+  const r = paramR || 'Global';
+  const [filter0, setFilter0] = useState(p.filter1 && p.filter1.length > 0 ? p.filter1 : []);
   const l = p.l || '';
 
   const updateURLParams = async () => {
@@ -65,6 +64,7 @@ export default function Page({ p = {}, forceClass = '' }) {
       const currentURL = window.location.pathname;
       const newSearchParams = {
         ...searchParams1,
+        currentMiddleCategory,
         r,
         l,
         lon,
@@ -73,7 +73,7 @@ export default function Page({ p = {}, forceClass = '' }) {
       };
       router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, { scroll: false });
     }
-  }, [l]);
+  }, [l, filter0]);
 
   let filter1 = [...filter0];
   const filteredData = filter1.filter((item) => item.category !== 'region');
@@ -116,7 +116,7 @@ export default function Page({ p = {}, forceClass = '' }) {
   };
   const [filterTypes1, setfilterTypes1] = useState(filterType1);
   const [filterTypes, setfilterTypes] = useState(filterType);
-  const onEditorStateChange1 = (suggestion) => { };
+const onEditorStateChange1 = (suggestion) => { };
   const [category, setCategory] = useState('');
   const [filter2, setfilter2] = useState([]);
 
@@ -211,12 +211,13 @@ export default function Page({ p = {}, forceClass = '' }) {
     const currentURL = window.location.pathname;
     if (isChecked) {
       updatedFilters = selectedFilters.filter((item) => item.filter !== filter);
-      const updatedFilter1 = filter1.filter((f) => f.filter !== filter);
+      const updatedFilter0 = filter0.filter((f) => f.filter !== filter);
+      setFilter0(updatedFilter0);
       const newSearchParams = {
         ...searchParams,
         r,
         l,
-        filter0: updatedFilter1,
+        filter0: updatedFilter0,
       };
       router.replace(
         `${currentURL}?${toURLParams(newSearchParams)}`,
@@ -224,11 +225,13 @@ export default function Page({ p = {}, forceClass = '' }) {
       );
     } else {
       updatedFilters = [...selectedFilters, { category, filter }];
+      const updatedFilter0 = [...filter0, { category, filter }];
+      setFilter0(updatedFilter0);
       const newSearchParams = {
         ...searchParams,
         r,
         l,
-        filter0: [...searchParams.filter0, { category, filter }],
+        filter0: updatedFilter0,
       };
       router.replace(
         `${currentURL}?${toURLParams(newSearchParams)}`,
