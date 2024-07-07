@@ -703,7 +703,7 @@ export default async function myPage() {
         </div>
       </main>
       <section
-        className="mt-16 mb-[-100px] bg-[#f4a10c] breakout"
+        className="mt-20 mb-[-100px] bg-[#f4a10c] breakout"
         style={{
           backgroundImage: `url('/banners/indigenous-acknowledgment-background.png')`,
           backgroundPosition: 'left center',
