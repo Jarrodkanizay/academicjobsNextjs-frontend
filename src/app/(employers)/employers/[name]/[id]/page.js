@@ -8,8 +8,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { StarRank } from '@/components/StarRank';
 import FavoriteEmployerButton from '@/components/FavoriteEmployerButton';
-import { authOptions } from "@/app/api/auth/[...nextauth]/options";
-import { getServerSession } from "next-auth";
+import { authOptions } from '@/app/api/auth/[...nextauth]/options';
+import { getServerSession } from 'next-auth';
 import { baseURL } from '@/lib/store/Base';
 
 export async function generateMetadata({ params }) {
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
   const { company_name } = employer?.data;
   return {
     title: {
-      absolute: `All jobs at ${company_name} `
+      absolute: `All jobs at ${company_name} `,
     },
     description: `All the university jobs at ${company_name} Academic and administration jobs.  Lecturer and research higher ed careers.`,
     keywords: `${company_name} jobs, ${company_name} careers, ${company_name} positions,  Work at ${company_name}`,
@@ -26,20 +26,17 @@ export async function generateMetadata({ params }) {
 }
 async function getEmployer(id, userId) {
   try {
-    const response = await fetch(
-      `${baseURL}/employer/${id}`,
-      {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-user-id': userId, // Include user ID in headers
-        },
-      }
-    );
+    const response = await fetch(`${baseURL}/employer/${id}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-user-id': userId, // Include user ID in headers
+      },
+    });
 
     if (!response.ok) {
       // Handle non-200 responses
-      console.error("Failed to fetch employer:", response.statusText);
+      console.error('Failed to fetch employer:', response.statusText);
       return null;
     }
 
@@ -47,7 +44,7 @@ async function getEmployer(id, userId) {
     console.log('===========getEmployer===============', res);
     return res;
   } catch (error) {
-    console.error("Error fetching employer:", error);
+    console.error('Error fetching employer:', error);
     return null;
   }
 }
@@ -67,7 +64,7 @@ const Employer = async ({ params }) => {
     location,
     Region,
     country,
-    favoriteEmployerYN
+    favoriteEmployerYN,
   } = employer.data;
   console.log(company_description);
   let location1 = '',
@@ -139,12 +136,15 @@ const Employer = async ({ params }) => {
             </div>
             <div className="md:flex md:flex-col p-4">
               <div className="flex items-center">
-                <h1
+                <h2
                   className={`text-4xl leading-[2rem] font-bold ${headerTextColor}`}
                 >
                   {company_name}
-                </h1>
-                <FavoriteEmployerButton employerId={params.id} favoriteEmployerYN={favoriteEmployerYN} />
+                </h2>
+                <FavoriteEmployerButton
+                  employerId={params.id}
+                  favoriteEmployerYN={favoriteEmployerYN}
+                />
               </div>
 
               <div className="flex gap-2">
@@ -193,11 +193,16 @@ const Employer = async ({ params }) => {
         <div className="listings_panel">
           <div className="relative pb-16">
             <div className="search_panel">
-            <AdvancedSearchBar sidebarView={true} p={{ filter1: [{ category: 'InstitutionName', filter: company_name }] }} />
+              <AdvancedSearchBar
+                sidebarView={true}
+                p={{
+                  filter1: [
+                    { category: 'InstitutionName', filter: company_name },
+                  ],
+                }}
+              />
             </div>
-            <SearchResults3
-              searchMessage="Related Jobs Found"
-            />
+            <SearchResults3 searchMessage="Related Jobs Found" />
           </div>
         </div>
       </section>
