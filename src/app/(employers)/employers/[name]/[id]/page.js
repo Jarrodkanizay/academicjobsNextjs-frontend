@@ -18,9 +18,9 @@ export async function generateMetadata({ params }) {
   const { company_name } = employer?.data;
   return {
     title: {
-      absolute: `All jobs at ${company_name} `,
+      absolute: `All jobs and careers at ${company_name} `,
     },
-    description: `All university jobs at ${company_name} Academic and staff jobs. Lecturer and research higher ed careers.`,
+    description: `Find all university jobs at ${company_name} Academic and staff jobs. Lecturer, science and research higher ed careers.`,
     keywords: `${company_name} jobs, ${company_name} careers, ${company_name} positions,  Work at ${company_name}`,
   };
 }

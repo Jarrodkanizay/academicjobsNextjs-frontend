@@ -17,6 +17,20 @@ type ProductProps = {
 const ProductCards = () => {
   return (
     <section className="flex flex-col gap-1 my-24">
+      <div className="container mb-16">
+        <h2 className="text-gray-blue underline-full mt-0">
+          Automate your sourcing efforts
+        </h2>
+        <p>
+          In today's digital age, maximise your reach and enhance your
+          visibility with our targeted advertising solutions. Whether it's a
+          prominent banner ad on our website, Google programmatic advertising,
+          or leveraging our employee referral program, we ensure your job
+          postings stand out. Engage top talent where they are, whether they are
+          checking emails or browsing job sites, and secure the best candidates
+          for your critical positions.
+        </p>
+      </div>
       {productCards.map((product) => (
         <div
           key={product.id}
@@ -29,7 +43,7 @@ const ProductCards = () => {
           >
             <div className="max-w-[700px]">
               {/* <p>{product.title}</p> */}
-              <h2 className="text-gray-blue mt-0">{product.headline}</h2>
+              <h3 className="text-gray-blue mt-0">{product.headline}</h3>
               <p>{product.description}</p>
               <ul>
                 {product.benefits.map((benefit, index) => (
