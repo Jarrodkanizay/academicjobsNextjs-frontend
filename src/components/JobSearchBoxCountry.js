@@ -17,10 +17,13 @@ export default function JobSearchBoxCountry({ country }) {
     loadFromURLParams(useSearchParams())
   );
   const countryMap = {
+    'United Kingdom': 'United Kingdom',
     UK: 'United Kingdom',
     Australia: 'Australia',
     Canada: 'Canada',
     USA: 'United States',
+    'United States': 'United States', 
+    'New Zealand': 'New Zealand'
   };
   const { setQ, q, setRegion, setFilter1, reset } = useStore();
   useEffect(() => {
@@ -39,6 +42,8 @@ export default function JobSearchBoxCountry({ country }) {
   const onInputChange = (inputText) => {
     keyWordRef.current = inputText;
   };
+  //alert(country)
+  //alert(countryMap[country])
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     // const a = {};
@@ -66,7 +71,9 @@ export default function JobSearchBoxCountry({ country }) {
         q3 = `&q=${keyWordRef?.current?.trim()}`
       }
     }
-    router.push(`/jobs-advanced-search?r=${country}&${q3}`);
+    //alert(country)
+    //alert(`/jobs-advanced-search?r=${countryMap[country]}&${q3}`)
+    router.push(`/jobs-advanced-search?r=${countryMap[country]}&${q3}`);
   };
   return (
     <div className="relative z-50  flex flex-col gap-2">
