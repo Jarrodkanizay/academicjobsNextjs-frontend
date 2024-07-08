@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import citiesData from '@/data/cities.json';
-import SearchResults from '@/components/SearchResults';
-import JobSearchBox from '@/components/JobSearchBox';
+import citiesAndUniversitiesData from '@/data/citiesAndUniversities.json';
+// import SearchResults from '@/components/SearchResults';
+// import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 import SearchResults3 from '@/components/SearchResults3';
@@ -18,7 +18,7 @@ export async function generateMetadata({ params, searchParams }) {
     Keyword = '',
     content: content1 = '',
     image = '',
-  } = citiesData.find((item) => item.Name === category) || {};
+  } = citiesAndUniversitiesData.find((item) => item.Name === category) || {};
   return {
     title: Title,
     description: Description,
@@ -32,7 +32,7 @@ export default function Page({ params, searchParams }) {
   let { category } = params;
   category = category?.replace(/-/g, ' ');
   // console.log(category);
-  const city = citiesData.find((item) => item.Name === category);
+  const city = citiesAndUniversitiesData.find((item) => item.Name === category);
   console.log(city);
   if (!city) {
     console.error('City not found');
@@ -50,7 +50,7 @@ export default function Page({ params, searchParams }) {
     filter: filter6 = '',
     footer_h2 = '',
     footer_content = '',
-    country = ''
+    country = '',
   } = city;
   let ausHeader, otherHeader, content;
 
@@ -103,7 +103,7 @@ export default function Page({ params, searchParams }) {
     <>
       {ausCities.includes(Name) ? ausHeader : otherHeader}
       <div className="content-grid flex-col md:gap-2">
-        <AdvancedSearchBar p={{r:country}} />
+        <AdvancedSearchBar p={{ r: country }} />
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
             <div className="filters_content">
