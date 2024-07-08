@@ -9,7 +9,8 @@ import { useRouter } from 'next/navigation';
 import Autocomplete from 'react-google-autocomplete';
 import JobAlertsForm from '@/components/profile/JobAlertsForm';
 const GOOGLE_GEOCODING_API_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
-export default function Page({ p = {}, forceClass = '' }) {
+
+export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
   const router = useRouter();
   const searchParams = loadFromURLParams(useSearchParams());
   let searchParams1 = {};
@@ -48,6 +49,7 @@ export default function Page({ p = {}, forceClass = '' }) {
             l,
             lon: lng,
             lat,
+            filter0
           };
           router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, { scroll: false });
         } else {
@@ -260,6 +262,7 @@ export default function Page({ p = {}, forceClass = '' }) {
                             l,
                             lon,
                             lat,
+                            filter0
                           };
                           router.replace(
                             `${currentURL}?${toURLParams(newSearchParams)}`,
@@ -281,7 +284,7 @@ export default function Page({ p = {}, forceClass = '' }) {
                       Create Job Alert
                     </button>
                   </div>
-                  {selectedFilters.length > 0 && (
+                  {selectedFilters.length > 0 && !sidebarView && (
                     <div className="md:flex md:flex-wrap pb-2 p-2">
                       {selectedFilters.map(({ category, filter }, i) => (
                         <button
@@ -321,7 +324,7 @@ export default function Page({ p = {}, forceClass = '' }) {
             </div>
           </div>
         </div>
-        <div className="flex gap-4 flex-wrap p-2 border-b border-grey">
+        {!sidebarView && <div className="flex gap-4 flex-wrap p-2 border-b border-grey">
           {Object.entries(filterTypes1).map(([filterType, showYN], i) => (
             <React.Fragment key={i}>
               <button
@@ -351,8 +354,8 @@ export default function Page({ p = {}, forceClass = '' }) {
               </button>
             </React.Fragment>
           ))}
-        </div>
-        <div className="flex gap-4 flex-wrap p-2">
+        </div>}
+        {!sidebarView && <div className="flex gap-4 flex-wrap p-2">
           {Object.entries(filterTypes).map(
             (
               [filterType, showYN],
@@ -382,7 +385,7 @@ export default function Page({ p = {}, forceClass = '' }) {
               </React.Fragment>
             )
           )}
-        </div>
+        </div>}
         {isShowFilter && (
           <>
             <div className="p-2 w-full max-h-64 overflow-y-scroll custom-scrollbar rounded-xl">
