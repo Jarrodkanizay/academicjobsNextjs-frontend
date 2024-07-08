@@ -23,7 +23,8 @@ export default function JobSearchBoxCountry({ country }) {
     Canada: 'Canada',
     USA: 'United States',
     'United States': 'United States', 
-    'New Zealand': 'New Zealand'
+    'New Zealand': 'New Zealand',
+    Europe: 'Europe'
   };
   const { setQ, q, setRegion, setFilter1, reset } = useStore();
   useEffect(() => {
