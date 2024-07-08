@@ -8,6 +8,7 @@ import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 import Autocomplete from 'react-google-autocomplete';
 import JobAlertsForm from '@/components/profile/JobAlertsForm';
+
 const GOOGLE_GEOCODING_API_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
 
 export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
@@ -29,7 +30,13 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
         : []
       )
   );
+  const filter0Ref = useRef(filter0); // Use useRef to keep a reference to filter0
   const l = p.l || '';
+
+  useEffect(() => {
+    filter0Ref.current = filter0; // Update the ref whenever filter0 changes
+  }, [filter0]);
+
   const updateURLParams = async () => {
     if (l && l.toLowerCase() !== 'tasmania') {
       try {
@@ -49,7 +56,7 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
             l,
             lon: lng,
             lat,
-            filter0
+            filter0: filter0Ref.current // Use the ref to get the latest value
           };
           router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, { scroll: false });
         } else {
@@ -60,6 +67,7 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
       }
     }
   };
+
   useEffect(() => {
     if (l) {
       updateURLParams();
@@ -72,11 +80,12 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
         l,
         lon,
         lat,
-        filter0
+        filter0: filter0Ref.current // Use the ref to get the latest value
       };
       router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, { scroll: false });
     }
   }, [l, filter0]);
+
   let filter1 = [...filter0];
   const filteredData = filter1.filter((item) => item.category !== 'region');
   if (!r || r === 'global' || r === 'Global') {
@@ -84,9 +93,11 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
   } else {
     filter1 = [...filteredData, { category: 'region', filter: r }];
   }
+
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
   const [selectedFilters, setSelectedFilters] = useState([]);
+
   useEffect(() => {
     const initialFilters = filter1.map(({ category, filter }) => ({
       category,
@@ -94,6 +105,7 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
     }));
     setSelectedFilters(initialFilters);
   }, []); // Remove isUrlLoaded dependency
+
   const filterType1 = {
     JobType: true,
     ExecutiveJobs: false,
@@ -105,6 +117,7 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
     PositionType: true,
     thirdcategory: false,
   };
+
   const filterType = {
     Country: false,
     State: true,
@@ -113,11 +126,15 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
     SalaryRange: true,
     OnsiteRemote: true,
   };
+
   const [filterTypes1, setfilterTypes1] = useState(filterType1);
   const [filterTypes, setfilterTypes] = useState(filterType);
+
   const onEditorStateChange1 = (suggestion) => { };
+
   const [category, setCategory] = useState('');
   const [filter2, setfilter2] = useState([]);
+
   useEffect(() => {
     setfilterTypes1((p) => ({ ...p, ExecutiveJobs: false }));
     setfilterTypes1((p) => ({ ...p, PositionType: false }));
@@ -146,9 +163,11 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
       setfilterTypes1((p) => ({ ...p, PositionType: true }));
     }
   }, [JSON.stringify(filter1)]);
+
   useEffect(() => {
     setfilter2(filter1);
   }, [category]);
+
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -178,6 +197,7 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
     },
     enabled: category !== '',
   });
+
   const filterValues9 = {
     Country: 'Country',
     State: 'State',
@@ -195,8 +215,10 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
     OnsiteRemote: 'Onsite/Remote',
     thirdcategory: 'thirdcategory',
   };
+
   const [isShowFilter, setIsShowFilter] = useState(false);
   const [isFormVisible, setIsFormVisible] = useState(false);
+
   const handleCheckboxChange = (filter) => {
     const isChecked = selectedFilters.some((item) => item.filter === filter);
     let updatedFilters;
@@ -235,6 +257,7 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
     }
     setSelectedFilters(updatedFilters);
   };
+
   return (
     <>
       <div
@@ -249,7 +272,7 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
                     <Autocomplete
                       id="autocomplete"
                       className="input input-bordered join-item w-full md:text-left text-center rounded-xl"
-                      style={{ width: '100%' }}
+                      style={{ width: '100%', borderTopRightRadius: '0.75rem', borderBottomRightRadius: '0.75rem' }}
                       apiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
                       onPlaceSelected={(place) => {
                         if (place.geometry && place.geometry.location) {
@@ -262,12 +285,9 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
                             l,
                             lon,
                             lat,
-                            filter0
+                            filter0: filter0Ref.current // Use the ref to get the latest value
                           };
-                          router.replace(
-                            `${currentURL}?${toURLParams(newSearchParams)}`,
-                            { scroll: false }
-                          );
+                          router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, { scroll: false });
                         } else {
                           console.warn('Selected place does not have geometry information');
                         }
@@ -276,14 +296,16 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
                         types: ['geocode', 'establishment'],
                       }}
                     />
+
                     {/* Job alert create button here */}
                     <button
-                      className="btn bg-amber-500 text-white mt-4 md:ml-2 md:mt-0"
+                      className="btn bg-amber-500 text-white mt-4 md:ml-2 md:mt-0 rounded-xl"
                       onClick={() => setIsFormVisible(true)} // Set form visibility to true on button click
                     >
                       Create Job Alert
                     </button>
                   </div>
+
                   {selectedFilters.length > 0 && !sidebarView && (
                     <div className="md:flex md:flex-wrap pb-2 p-2">
                       {selectedFilters.map(({ category, filter }, i) => (
@@ -407,6 +429,22 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
                 ))}
             </div>
           </>
+        )}
+        {sidebarView && (
+          <button
+            className=" self-end underline text-gray-400 text-base md:pr-6 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-l from-green-400 via-green-400 to-sky-300"
+            onClick={async (e) => {
+              e.preventDefault();
+              const params = new URLSearchParams({
+                q: encodeURIComponent(keyWordRef.current?.value.trim() || ''),
+                ...searchParams1,
+                filter0: JSON.stringify(filter0),
+              });
+              router.push(`/university-jobs?${params.toString()}`);
+            }}
+          >
+            Advanced Search
+          </button>
         )}
       </div>
       {isFormVisible && (
