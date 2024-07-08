@@ -8,32 +8,27 @@ import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 import Autocomplete from 'react-google-autocomplete';
 import JobAlertsForm from '@/components/profile/JobAlertsForm';
-
 const GOOGLE_GEOCODING_API_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
-
 export default function Page({ p = {}, forceClass = '' }) {
   const router = useRouter();
   const searchParams = loadFromURLParams(useSearchParams());
-
   let searchParams1 = {};
   if (Object.keys(p).length !== 0) {
     searchParams1 = { ...searchParams, ...p };
   } else {
     searchParams1 = { ...searchParams };
   }
-
   const { q = '', lon = 0, lat = 0, currentMiddleCategory, r: paramR, filter0: searchFilter0 } = searchParams1;
   const r = paramR || 'Global';
   const [filter0, setFilter0] = useState(
-    searchFilter0 && searchFilter0.length > 0 
-      ? searchFilter0 
-      : (p.filter1 && p.filter1.length > 0 
-          ? p.filter1 
-          : []
-        )
+    searchFilter0 && searchFilter0.length > 0
+      ? searchFilter0
+      : (p.filter1 && p.filter1.length > 0
+        ? p.filter1
+        : []
+      )
   );
   const l = p.l || '';
-  
   const updateURLParams = async () => {
     if (l && l.toLowerCase() !== 'tasmania') {
       try {
@@ -63,7 +58,6 @@ export default function Page({ p = {}, forceClass = '' }) {
       }
     }
   };
-
   useEffect(() => {
     if (l) {
       updateURLParams();
@@ -81,7 +75,6 @@ export default function Page({ p = {}, forceClass = '' }) {
       router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, { scroll: false });
     }
   }, [l, filter0]);
-
   let filter1 = [...filter0];
   const filteredData = filter1.filter((item) => item.category !== 'region');
   if (!r || r === 'global' || r === 'Global') {
@@ -89,11 +82,9 @@ export default function Page({ p = {}, forceClass = '' }) {
   } else {
     filter1 = [...filteredData, { category: 'region', filter: r }];
   }
-
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
   const [selectedFilters, setSelectedFilters] = useState([]);
-
   useEffect(() => {
     const initialFilters = filter1.map(({ category, filter }) => ({
       category,
@@ -101,7 +92,6 @@ export default function Page({ p = {}, forceClass = '' }) {
     }));
     setSelectedFilters(initialFilters);
   }, []); // Remove isUrlLoaded dependency
-
   const filterType1 = {
     JobType: true,
     ExecutiveJobs: false,
@@ -123,10 +113,9 @@ export default function Page({ p = {}, forceClass = '' }) {
   };
   const [filterTypes1, setfilterTypes1] = useState(filterType1);
   const [filterTypes, setfilterTypes] = useState(filterType);
-const onEditorStateChange1 = (suggestion) => { };
+  const onEditorStateChange1 = (suggestion) => { };
   const [category, setCategory] = useState('');
   const [filter2, setfilter2] = useState([]);
-
   useEffect(() => {
     setfilterTypes1((p) => ({ ...p, ExecutiveJobs: false }));
     setfilterTypes1((p) => ({ ...p, PositionType: false }));
@@ -158,7 +147,6 @@ const onEditorStateChange1 = (suggestion) => { };
   useEffect(() => {
     setfilter2(filter1);
   }, [category]);
-
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -188,7 +176,6 @@ const onEditorStateChange1 = (suggestion) => { };
     },
     enabled: category !== '',
   });
-
   const filterValues9 = {
     Country: 'Country',
     State: 'State',
@@ -208,7 +195,6 @@ const onEditorStateChange1 = (suggestion) => { };
   };
   const [isShowFilter, setIsShowFilter] = useState(false);
   const [isFormVisible, setIsFormVisible] = useState(false);
-
   const handleCheckboxChange = (filter) => {
     const isChecked = selectedFilters.some((item) => item.filter === filter);
     let updatedFilters;
@@ -247,7 +233,6 @@ const onEditorStateChange1 = (suggestion) => { };
     }
     setSelectedFilters(updatedFilters);
   };
-
   return (
     <>
       <div
@@ -288,7 +273,6 @@ const onEditorStateChange1 = (suggestion) => { };
                         types: ['geocode', 'establishment'],
                       }}
                     />
-
                     {/* Job alert create button here */}
                     <button
                       className="btn bg-amber-500 text-white mt-4 md:ml-2 md:mt-0"
@@ -308,12 +292,10 @@ const onEditorStateChange1 = (suggestion) => { };
                               (_, index) => index !== i
                             );
                             setPage(0);
-
                             // Update filter0 by filtering out the removed filter
                             const updatedFilter = filter1.filter(
                               (filterItem) => filterItem.filter !== filter
                             );
-
                             const currentURL = window.location.pathname;
                             const newSearchParams = {
                               ...searchParams,
@@ -353,7 +335,6 @@ const onEditorStateChange1 = (suggestion) => { };
                     ? 'bg-[#f4a10c] md:w-auto text-white animate-pulse font-bold shadow-md'
                     : ' border-gray-500'
                   }
-                  
                   `}
                 onClick={() => {
                   if (category === filterType) {
