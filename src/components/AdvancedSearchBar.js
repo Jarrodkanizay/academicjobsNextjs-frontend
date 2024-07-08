@@ -8,26 +8,28 @@ import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 import Autocomplete from 'react-google-autocomplete';
 import JobAlertsForm from '@/components/profile/JobAlertsForm';
-
 const GOOGLE_GEOCODING_API_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
 
-export default function Page({ p = {}, forceClass = '' }) {
+export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
   const router = useRouter();
   const searchParams = loadFromURLParams(useSearchParams());
-
   let searchParams1 = {};
   if (Object.keys(p).length !== 0) {
     searchParams1 = { ...searchParams, ...p };
   } else {
     searchParams1 = { ...searchParams };
   }
-
-  const { q = '', lon = 0, lat = 0, currentMiddleCategory } = searchParams1;
-
-  const r = p.r || 'Global';
-  const filter0 = p.filter1 && p.filter1.length > 0 ? p.filter1 : [];
+  const { q = '', lon = 0, lat = 0, currentMiddleCategory, r: paramR, filter0: searchFilter0 } = searchParams1;
+  const r = paramR || 'Global';
+  const [filter0, setFilter0] = useState(
+    searchFilter0 && searchFilter0.length > 0
+      ? searchFilter0
+      : (p.filter1 && p.filter1.length > 0
+        ? p.filter1
+        : []
+      )
+  );
   const l = p.l || '';
-
   const updateURLParams = async () => {
     if (l && l.toLowerCase() !== 'tasmania') {
       try {
@@ -47,6 +49,7 @@ export default function Page({ p = {}, forceClass = '' }) {
             l,
             lon: lng,
             lat,
+            filter0
           };
           router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, { scroll: false });
         } else {
@@ -57,7 +60,6 @@ export default function Page({ p = {}, forceClass = '' }) {
       }
     }
   };
-
   useEffect(() => {
     if (l) {
       updateURLParams();
@@ -65,6 +67,7 @@ export default function Page({ p = {}, forceClass = '' }) {
       const currentURL = window.location.pathname;
       const newSearchParams = {
         ...searchParams1,
+        currentMiddleCategory,
         r,
         l,
         lon,
@@ -73,8 +76,7 @@ export default function Page({ p = {}, forceClass = '' }) {
       };
       router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, { scroll: false });
     }
-  }, [l]);
-
+  }, [l, filter0]);
   let filter1 = [...filter0];
   const filteredData = filter1.filter((item) => item.category !== 'region');
   if (!r || r === 'global' || r === 'Global') {
@@ -82,11 +84,9 @@ export default function Page({ p = {}, forceClass = '' }) {
   } else {
     filter1 = [...filteredData, { category: 'region', filter: r }];
   }
-
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
   const [selectedFilters, setSelectedFilters] = useState([]);
-
   useEffect(() => {
     const initialFilters = filter1.map(({ category, filter }) => ({
       category,
@@ -94,7 +94,6 @@ export default function Page({ p = {}, forceClass = '' }) {
     }));
     setSelectedFilters(initialFilters);
   }, []); // Remove isUrlLoaded dependency
-
   const filterType1 = {
     JobType: true,
     ExecutiveJobs: false,
@@ -119,7 +118,6 @@ export default function Page({ p = {}, forceClass = '' }) {
   const onEditorStateChange1 = (suggestion) => { };
   const [category, setCategory] = useState('');
   const [filter2, setfilter2] = useState([]);
-
   useEffect(() => {
     setfilterTypes1((p) => ({ ...p, ExecutiveJobs: false }));
     setfilterTypes1((p) => ({ ...p, PositionType: false }));
@@ -151,7 +149,6 @@ export default function Page({ p = {}, forceClass = '' }) {
   useEffect(() => {
     setfilter2(filter1);
   }, [category]);
-
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -181,7 +178,6 @@ export default function Page({ p = {}, forceClass = '' }) {
     },
     enabled: category !== '',
   });
-
   const filterValues9 = {
     Country: 'Country',
     State: 'State',
@@ -201,7 +197,6 @@ export default function Page({ p = {}, forceClass = '' }) {
   };
   const [isShowFilter, setIsShowFilter] = useState(false);
   const [isFormVisible, setIsFormVisible] = useState(false);
-
   const handleCheckboxChange = (filter) => {
     const isChecked = selectedFilters.some((item) => item.filter === filter);
     let updatedFilters;
@@ -211,12 +206,13 @@ export default function Page({ p = {}, forceClass = '' }) {
     const currentURL = window.location.pathname;
     if (isChecked) {
       updatedFilters = selectedFilters.filter((item) => item.filter !== filter);
-      const updatedFilter1 = filter1.filter((f) => f.filter !== filter);
+      const updatedFilter0 = filter0.filter((f) => f.filter !== filter);
+      setFilter0(updatedFilter0);
       const newSearchParams = {
         ...searchParams,
         r,
         l,
-        filter0: updatedFilter1,
+        filter0: updatedFilter0,
       };
       router.replace(
         `${currentURL}?${toURLParams(newSearchParams)}`,
@@ -224,11 +220,13 @@ export default function Page({ p = {}, forceClass = '' }) {
       );
     } else {
       updatedFilters = [...selectedFilters, { category, filter }];
+      const updatedFilter0 = [...filter0, { category, filter }];
+      setFilter0(updatedFilter0);
       const newSearchParams = {
         ...searchParams,
         r,
         l,
-        filter0: [...searchParams.filter0, { category, filter }],
+        filter0: updatedFilter0,
       };
       router.replace(
         `${currentURL}?${toURLParams(newSearchParams)}`,
@@ -237,7 +235,6 @@ export default function Page({ p = {}, forceClass = '' }) {
     }
     setSelectedFilters(updatedFilters);
   };
-
   return (
     <>
       <div
@@ -265,6 +262,7 @@ export default function Page({ p = {}, forceClass = '' }) {
                             l,
                             lon,
                             lat,
+                            filter0
                           };
                           router.replace(
                             `${currentURL}?${toURLParams(newSearchParams)}`,
@@ -278,7 +276,6 @@ export default function Page({ p = {}, forceClass = '' }) {
                         types: ['geocode', 'establishment'],
                       }}
                     />
-
                     {/* Job alert create button here */}
                     <button
                       className="btn bg-amber-500 text-white mt-4 md:ml-2 md:mt-0"
@@ -287,7 +284,7 @@ export default function Page({ p = {}, forceClass = '' }) {
                       Create Job Alert
                     </button>
                   </div>
-                  {selectedFilters.length > 0 && (
+                  {selectedFilters.length > 0 && !sidebarView && (
                     <div className="md:flex md:flex-wrap pb-2 p-2">
                       {selectedFilters.map(({ category, filter }, i) => (
                         <button
@@ -298,12 +295,10 @@ export default function Page({ p = {}, forceClass = '' }) {
                               (_, index) => index !== i
                             );
                             setPage(0);
-
                             // Update filter0 by filtering out the removed filter
                             const updatedFilter = filter1.filter(
                               (filterItem) => filterItem.filter !== filter
                             );
-
                             const currentURL = window.location.pathname;
                             const newSearchParams = {
                               ...searchParams,
@@ -329,7 +324,7 @@ export default function Page({ p = {}, forceClass = '' }) {
             </div>
           </div>
         </div>
-        <div className="flex gap-4 flex-wrap p-2 border-b border-grey">
+        {!sidebarView && <div className="flex gap-4 flex-wrap p-2 border-b border-grey">
           {Object.entries(filterTypes1).map(([filterType, showYN], i) => (
             <React.Fragment key={i}>
               <button
@@ -343,7 +338,6 @@ export default function Page({ p = {}, forceClass = '' }) {
                     ? 'bg-[#f4a10c] md:w-auto text-white animate-pulse font-bold shadow-md'
                     : ' border-gray-500'
                   }
-                  
                   `}
                 onClick={() => {
                   if (category === filterType) {
@@ -360,8 +354,8 @@ export default function Page({ p = {}, forceClass = '' }) {
               </button>
             </React.Fragment>
           ))}
-        </div>
-        <div className="flex gap-4 flex-wrap p-2">
+        </div>}
+        {!sidebarView && <div className="flex gap-4 flex-wrap p-2">
           {Object.entries(filterTypes).map(
             (
               [filterType, showYN],
@@ -391,7 +385,7 @@ export default function Page({ p = {}, forceClass = '' }) {
               </React.Fragment>
             )
           )}
-        </div>
+        </div>}
         {isShowFilter && (
           <>
             <div className="p-2 w-full max-h-64 overflow-y-scroll custom-scrollbar rounded-xl">

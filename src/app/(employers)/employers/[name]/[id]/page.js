@@ -1,8 +1,8 @@
 import { notFound } from 'next/navigation';
 import { MdLocationPin } from 'react-icons/md';
 import { AiOutlineGlobal } from 'react-icons/ai';
-import SearchResults from '@/components/SearchResults';
-import JobSearchBox2 from '@/components/JobSearchBox2';
+import SearchResults3 from '@/components/SearchResults3';
+import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 import JobFilter from '@/components/JobFilter';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -191,11 +191,13 @@ const Employer = async ({ params }) => {
           }
         </div>
         <div className="listings_panel">
-          <div className="listings_content">
-            {/* <div className="search_panel">
-              <JobSearchBox2 />
-            </div> */}
-            <SearchResults q={{ employer_id: id || 0 }} filterOff={true} />
+          <div className="relative pb-16">
+            <div className="search_panel">
+            <AdvancedSearchBar sidebarView={true} p={{ filter1: [{ category: 'InstitutionName', filter: company_name }] }} />
+            </div>
+            <SearchResults3
+              searchMessage="Related Jobs Found"
+            />
           </div>
         </div>
       </section>

@@ -17,7 +17,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
   const [selectedStates, setSelectedStates] = useState([]);
   const [selectedInstitutions, setSelectedInstitutions] = useState([]);
   const [salaryRange, setSalaryRange] = useState([10000, 250000]);
-  const [frequency, setFrequency] = useState(null);
+  const [frequency, setFrequency] = useState('twiceWeekly');
   const options = fieldsData.master_category_job_type.map((category) => ({
     value: category,
     label: category,
@@ -30,7 +30,7 @@ const JobAlertForm = ({ filters, alert, onClose }) => {
       setSelectedSubFields(JSON.parse(alert.subFields || '[]').map(subField => ({ value: subField, label: subField })));
       setSelectedCountry({ value: alert.country, label: alert.country });
       setSelectedStates(JSON.parse(alert.states || '[]').map(state => ({ value: state, label: state })));
-      setFrequency(alert.frequency || null);
+      setFrequency(alert.frequency);
       setSalaryRange([alert.salaryFrom || 10000, alert.salaryTo || 250000]);
       setSelectedInstitutions(JSON.parse(alert.institutions || '[]').map(institution => ({ value: institution, label: institution })));
     }
