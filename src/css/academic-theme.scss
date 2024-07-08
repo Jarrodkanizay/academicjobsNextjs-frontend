@@ -47,6 +47,26 @@ html {
 html {
   body,
   body .prose {
+    .product_card.one {
+      background-image: url('/blobs/blob1.svg');
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+    .product_card.two {
+      background-image: url('/blobs/blob2.svg');
+      background-position: top right;
+      background-repeat: no-repeat;
+    }
+    .product_card.three {
+      background-image: url('/blobs/blob3.svg');
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+    .product_card.four {
+      background-image: url('/blobs/blob4.svg');
+      background-position: top right;
+      background-repeat: no-repeat;
+    }
     .position_type_links li:hover {
       color: black;
     }

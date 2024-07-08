@@ -1,7 +1,8 @@
 export const productCards = [
   {
+    id: 1,
     title: 'Promo Card 1: Banner Ad',
-    headline: 'Promote Your Hard-to-Fill Positions with a Banner Ad',
+    headline: 'Promote Your Hard-to-Fill Positions with a Banner Ad',
     description:
       'Boost the visibility of your critical or hard-to-fill positions with our prominent banner ads. For just $1500 per month, your job listing will be showcased in a prime location on our website, ensuring it catches the eye of top talent and increases your chances of finding the perfect candidate.',
     benefits: [
@@ -19,10 +20,17 @@ export const productCards = [
       },
     ],
     callToAction: 'Secure your banner ad today! Call us at +61 452 070 156.',
+    src: '/products/academicjobs-banner-ad.png',
+    alt: 'placeholder',
+    iconSrc: '',
+    iconAlt: '',
+    bgSrc: '',
+    css: 'one',
   },
   {
+    id: 2,
     title: 'Promo Card 2: Google Programmatic Advertising',
-    headline: 'Expand Your Reach with Google Programmatic Advertising',
+    headline: 'Expand Your Reach with Google Programmatic Advertising',
     description:
       'Take advantage of Google programmatic advertising to promote your important or hard-to-fill positions. Starting from $1500 per month, your job listing will be displayed across a vast network of websites, reaching potential candidates actively searching for academic roles.',
     benefits: [
@@ -41,8 +49,15 @@ export const productCards = [
     ],
     callToAction:
       'Elevate your job listing with Google ads! Call us at +61 452 070 156.',
+    src: '/products/google-programmatic-advertising-for-universities.webp',
+    alt: 'placeholder',
+    iconSrc: '',
+    iconAlt: '',
+    bgSrc: '',
+    css: 'two',
   },
   {
+    id: 3,
     title: 'Promo Card 3: Your Employee Referral Program',
     headline: 'Leverage the Power of Referrals with Academic Connection',
     description: `Your Employee Referral Program - 'The Academic Connection' Your Team + Our Tech + A.I. = Finding Your Best. Tap into the networks of your current employees to find top talent. For $1900 per month, incentivize your staff to refer qualified candidates, ensuring you secure the best fit for your organisation.`,
@@ -62,8 +77,15 @@ export const productCards = [
     ],
     callToAction:
       'Start your referral program now! Call us at +61 452 070 156.',
+    src: '/products/academic-connection-and-referrals.jpg',
+    alt: 'placeholder',
+    iconSrc: '',
+    iconAlt: '',
+    bgSrc: '',
+    css: 'three',
   },
   {
+    id: 4,
     title: 'Promo Card 4: Global Job Board Posting',
     headline: 'Maximize Your Reach with Global Job Board Posting',
     description:
@@ -83,5 +105,11 @@ export const productCards = [
       },
     ],
     callToAction: 'Expand your reach globally! Call us at +61 452 070 156.',
+    src: '/products/global-job-board.jpg',
+    alt: 'placeholder',
+    iconSrc: '',
+    iconAlt: '',
+    bgSrc: '',
+    css: 'four',
   },
 ];
