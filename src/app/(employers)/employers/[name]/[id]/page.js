@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
     title: {
       absolute: `All jobs at ${company_name} `,
     },
-    description: `All the university jobs at ${company_name} Academic and administration jobs.  Lecturer and research higher ed careers.`,
+    description: `All university jobs at ${company_name} Academic and staff jobs. Lecturer and research higher ed careers.`,
     keywords: `${company_name} jobs, ${company_name} careers, ${company_name} positions,  Work at ${company_name}`,
   };
 }
