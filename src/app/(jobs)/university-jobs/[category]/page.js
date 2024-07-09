@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import citiesAndUniversitiesData from '@/data/citiesAndUniversities.json';
 // import SearchResults from '@/components/SearchResults';
 // import JobSearchBox from '@/components/JobSearchBox';
@@ -111,7 +112,7 @@ export default function Page({ params, searchParams }) {
       {}
       {cityOrUni.type === 'uni' ? (
         <>
-          <div className="w-full relative mb-8">
+          {/*<div className="w-full relative mb-8">
             <Image
               src={image || image !== '' ? image : '/banner-icons/global.png'}
               alt={alt}
@@ -119,54 +120,49 @@ export default function Page({ params, searchParams }) {
               width={2000}
               height={1000}
             />
-            {/* <div className="card glass w-96">
-              <figure>
-                <Image
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                  alt="car!"
-                  width={500}
-                  height={500}
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">Life hack</h2>
-                <p>How to park your car at your garage?</p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">Learn now!</button>
-                </div>
-              </div>
-            </div> */}
 
-            {/* <div className="hero-content mx-auto items-start justify-start py-12 relative z-10">
+             <div className="hero-content mx-auto items-start justify-start py-12 relative z-10">
               <h1 className="md:text-5xl font-bold md:text-left text-white pb-4 m-0">
                 {h1 ? h1 : Title}
                 <p className="mt-4 text-white rounded-lg leading-6">
                   {content1}
                 </p>
               </h1>
-            </div> */}
-          </div>
+            </div> 
+          </div>*/}
           <div
-            className="preview border-base-300 bg-base-100 rounded-b-box rounded-se-box flex min-h-[6rem] min-w-[18rem] max-w-4xl flex-wrap items-center justify-center gap-2 overflow-x-hidden bg-cover bg-top p-4 [border-width:var(--tab-border)]"
+            className="w-full p-8 flex flex-wrap items-center justify-center gap-2 overflow-x-hidden bg-cover bg-center"
             style={{
-              backgroundImage: `url(https://img.daisyui.com/images/stock/photo-1481026469463-66327c86e544.jpg)`,
+              backgroundImage: `url(${
+                image
+                  ? image
+                  : 'https://img.daisyui.com/images/stock/photo-1481026469463-66327c86e544.jpg'
+              })`,
               backgroundSize: `cover`,
             }}
           >
-            <div className="card w-96 glass">
-              <figure>
+            <div
+              className="container p-4 glass flex rounded-xl"
+              style={{ backgroundColor: 'transparent' }}
+            >
+              <figure className="bg-white rounded-lg flex items-center">
                 <Image
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                  alt="car!"
-                  width={500}
-                  height={500}
+                  src={cityOrUni.logoSrc}
+                  alt="Logo"
+                  width={300}
+                  height={300}
+                  className="max-w-[250px]"
                 />
               </figure>{' '}
-              <div class="card-body">
-                <h2 class="card-title">Life hack</h2>{' '}
-                <p>How to park your car at your garage?</p>{' '}
+              <div class="card-body bg-none">
+                <h1 class="text-black">{h1 ? h1 : Title}</h1>{' '}
+                <p className="leading-tight">{cityOrUni.content}</p>
                 <div class="justify-end card-actions">
-                  <button class="btn btn-primary">Learn now!</button>
+                  <Link class="btn btn-aj" href={`${cityOrUni.logoLink}`}>
+                    {cityOrUni.acronym || cityOrUni.acronym !== ''
+                      ? `More about ${cityOrUni.acronym}`
+                      : 'Learn More'}
+                  </Link>
                 </div>
               </div>
             </div>
@@ -180,7 +176,10 @@ export default function Page({ params, searchParams }) {
                     <div
                     // dangerouslySetInnerHTML={{ __html: company_description1 }}
                     />
-                    <p className="bg-slate-400">Left Panel</p>
+                    <h2 className="text-2xl text-gray-blue underline-full">
+                      {footer_h2}
+                    </h2>
+                    <div dangerouslySetInnerHTML={{ __html: footer_content }} />
                   </div>
                 </div>
               }
@@ -188,16 +187,19 @@ export default function Page({ params, searchParams }) {
             <div className="listings_panel">
               <div className="relative pb-16">
                 <div className="search_panel">
-                  {/* <AdvancedSearchBar
-                sidebarView={true}
-                p={{
-                  filter1: [
-                    { category: 'InstitutionName', filter: company_name },
-                  ],
-                }}
-              /> */}
+                  <AdvancedSearchBar
+                    sidebarView={true}
+                    p={{
+                      filter1: [
+                        {
+                          category: 'InstitutionName',
+                          filter: cityOrUni.uni_name,
+                        },
+                      ],
+                    }}
+                  />
                 </div>
-                <SearchResults3 searchMessage="Related Jobs Found" />
+                <SearchResults3 searchMessage={`${cityOrUni.uni_name} Jobs`} />
               </div>
             </div>
           </section>
