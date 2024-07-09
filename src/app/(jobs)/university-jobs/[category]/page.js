@@ -105,23 +105,43 @@ export default function Page({ params, searchParams }) {
     <>
       {ausCities.includes(Name) ? ausHeader : otherHeader}
       {cityOrUni.type === 'uni' ? (
-        <section className="jobs_grid job_post_search_container uni_jobs_grid">
-          <div className={`filters_panel mt-6`}>
-            {
-              <div className={``}>
-                <div>
-                  <div
-                  // dangerouslySetInnerHTML={{ __html: company_description1 }}
-                  />
-                  <p className="bg-slate-400">Left Panel</p>
+        <>
+          <div>
+            <div className="card glass w-96">
+              <figure>
+                <Image
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                  alt="car!"
+                  width={500}
+                  height={500}
+                />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Life hack</h2>
+                <p>How to park your car at your garage?</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">Learn now!</button>
                 </div>
               </div>
-            }
+            </div>
           </div>
-          <div className="listings_panel">
-            <div className="relative pb-16">
-              <div className="search_panel">
-                {/* <AdvancedSearchBar
+          <section className="jobs_grid job_post_search_container uni_jobs_grid">
+            <div className={`filters_panel mt-6`}>
+              {
+                <div className={``}>
+                  <div>
+                    <div
+                    // dangerouslySetInnerHTML={{ __html: company_description1 }}
+                    />
+                    <p className="bg-slate-400">Left Panel</p>
+                  </div>
+                </div>
+              }
+            </div>
+            <div className="listings_panel">
+              <div className="relative pb-16">
+                <div className="search_panel">
+                  {/* <AdvancedSearchBar
                 sidebarView={true}
                 p={{
                   filter1: [
@@ -129,11 +149,12 @@ export default function Page({ params, searchParams }) {
                   ],
                 }}
               /> */}
+                </div>
+                <SearchResults3 searchMessage="Related Jobs Found" />
               </div>
-              <SearchResults3 searchMessage="Related Jobs Found" />
             </div>
-          </div>
-        </section>
+          </section>
+        </>
       ) : (
         <>
           <AdvancedSearchBar p={{ r: country }} />
