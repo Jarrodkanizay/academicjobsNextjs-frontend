@@ -1,6 +1,7 @@
 [
   {
     "Name": "blank",
+    "type": "uni",
     "h1": "",
     "Title": "",
     "Description": "",
@@ -8,6 +9,38 @@
     "image": "",
     "alt": "",
     "content": "",
+    "filter": {
+      "employer_id": ""
+    },
+    "footer_h2": "",
+    "footer_content": ""
+  },
+  {
+    "Name": "the university of queensland uq",
+    "type": "uni",
+    "h1": "University of Queensland (UQ) Jobs and Careers",
+    "Title": "All University of Queensland (UQ) Jobs and Careers",
+    "Description": "Find all 50 university jobs such as lecturer, research, postdoc and HR jobs in the University of Queensland (UQ). New jobs are added daily.",
+    "Keyword": "University Jobs, UQ jobs, UQ careers, University of Queensland jobs",
+    "image": "/uni-campuses/university-of-queensland-st-lucia-campus.jpg",
+    "alt": "University of Queensland Jobs",
+    "content": "Seek all university jobs such as lecturer, research, postdoc and HR jobs in the University of Queensland.",
+    "filter": {
+      "employer_id": ""
+    },
+    "footer_h2": "",
+    "footer_content": "The University of Queensland is a public research university in Brisbane, It is ranked among the top 50 universities in the world.  The university also has a strong research profile, with more than 100 research centres and institutes, and over 7,000 academic and professional staff supporting a diverse student body of around 49,000, including 20,000 international students from over 140 countries.</p><p>Employees working in University of Queensland enjoy many <a href='https://careers.uq.edu.au/why-work-at-uq' target='_blank' className='link link-aj' >employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate and many more."
+  },
+  {
+    "Name": "australian catholic university acu",
+    "type": "uni",
+    "h1": "ACU Jobs & Careers",
+    "Title": "Australian Catholic University Jobs & Careers",
+    "Description": "Find 40 Uni jobs in Australian Catholic University. View uni job vacancies for lecturer, research and postdocs in Australian Catholic University. New Jobs added daily.",
+    "Keyword": "",
+    "image": "",
+    "alt": "",
+    "content": "Australian Catholic University is ranked #1 in QS World University Rankings 2025.",
     "filter": {
       "employer_id": ""
     },

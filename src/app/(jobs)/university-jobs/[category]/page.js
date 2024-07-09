@@ -32,10 +32,12 @@ export default function Page({ params, searchParams }) {
   let { category } = params;
   category = category?.replace(/-/g, ' ');
   // console.log(category);
-  const city = citiesAndUniversitiesData.find((item) => item.Name === category);
-  console.log(city);
-  if (!city) {
-    console.error('City not found');
+  const cityOrUni = citiesAndUniversitiesData.find(
+    (item) => item.Name === category
+  );
+  console.log(cityOrUni);
+  if (!cityOrUni) {
+    console.error('City or University not found');
     return null; // or return an error component, or handle this situation in another appropriate way
   }
   const {
@@ -51,7 +53,7 @@ export default function Page({ params, searchParams }) {
     footer_h2 = '',
     footer_content = '',
     country = '',
-  } = city;
+  } = cityOrUni;
   let ausHeader, otherHeader, content;
 
   // FIXME: Convert this to a component
@@ -102,25 +104,59 @@ export default function Page({ params, searchParams }) {
   content = (
     <>
       {ausCities.includes(Name) ? ausHeader : otherHeader}
-      <div className="content-grid flex-col md:gap-2">
-        <AdvancedSearchBar p={{ r: country }} />
-        <section className="jobs_grid job_post_search_container">
-          <div className="filters_panel">
-            <div className="filters_content">
-              <JobFilter />
-            </div>
+      {cityOrUni.type === 'uni' ? (
+        <section className="jobs_grid job_post_search_container uni_jobs_grid">
+          <div className={`filters_panel mt-6`}>
+            {
+              <div className={``}>
+                <div>
+                  <div
+                  // dangerouslySetInnerHTML={{ __html: company_description1 }}
+                  />
+                  <p className="bg-slate-400">Left Panel</p>
+                </div>
+              </div>
+            }
           </div>
           <div className="listings_panel">
-            <div className="listings_content">
-              <SearchResults3 p={filter6} />
+            <div className="relative pb-16">
+              <div className="search_panel">
+                {/* <AdvancedSearchBar
+                sidebarView={true}
+                p={{
+                  filter1: [
+                    { category: 'InstitutionName', filter: company_name },
+                  ],
+                }}
+              /> */}
+              </div>
+              <SearchResults3 searchMessage="Related Jobs Found" />
             </div>
           </div>
         </section>
-        <div>
-          <h2>{footer_h2}</h2>
-          <div dangerouslySetInnerHTML={{ __html: footer_content }} />
-        </div>
-      </div>
+      ) : (
+        <>
+          <AdvancedSearchBar p={{ r: country }} />
+          <div className="content-grid">
+            <section className="jobs_grid job_post_search_container">
+              <div className="filters_panel">
+                <div className="filters_content">
+                  <JobFilter />
+                </div>
+              </div>
+              <div className="listings_panel">
+                <div className="listings_content">
+                  <SearchResults3 p={filter6} />
+                </div>
+              </div>
+            </section>
+            <div>
+              <h2>{footer_h2}</h2>
+              <div dangerouslySetInnerHTML={{ __html: footer_content }} />
+            </div>
+          </div>
+        </>
+      )}
     </>
   );
   return <div className="overflow-y w-full">{content}</div>;
