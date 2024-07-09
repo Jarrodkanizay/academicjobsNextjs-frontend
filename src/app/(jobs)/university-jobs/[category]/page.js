@@ -103,11 +103,23 @@ export default function Page({ params, searchParams }) {
   ];
   content = (
     <>
-      {ausCities.includes(Name) ? ausHeader : otherHeader}
+      {cityOrUni.type === 'uni'
+        ? null
+        : ausCities.includes(Name)
+        ? ausHeader
+        : otherHeader}
+      {}
       {cityOrUni.type === 'uni' ? (
         <>
-          <div>
-            <div className="card glass w-96">
+          <div className="w-full relative mb-8">
+            <Image
+              src={image || image !== '' ? image : '/banner-icons/global.png'}
+              alt={alt}
+              className="w-full h-full object-cover object-center absolute top-0 left-0"
+              width={2000}
+              height={1000}
+            />
+            {/* <div className="card glass w-96">
               <figure>
                 <Image
                   src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -123,8 +135,43 @@ export default function Page({ params, searchParams }) {
                   <button className="btn btn-primary">Learn now!</button>
                 </div>
               </div>
+            </div> */}
+
+            {/* <div className="hero-content mx-auto items-start justify-start py-12 relative z-10">
+              <h1 className="md:text-5xl font-bold md:text-left text-white pb-4 m-0">
+                {h1 ? h1 : Title}
+                <p className="mt-4 text-white rounded-lg leading-6">
+                  {content1}
+                </p>
+              </h1>
+            </div> */}
+          </div>
+          <div
+            className="preview border-base-300 bg-base-100 rounded-b-box rounded-se-box flex min-h-[6rem] min-w-[18rem] max-w-4xl flex-wrap items-center justify-center gap-2 overflow-x-hidden bg-cover bg-top p-4 [border-width:var(--tab-border)]"
+            style={{
+              backgroundImage: `url(https://img.daisyui.com/images/stock/photo-1481026469463-66327c86e544.jpg)`,
+              backgroundSize: `cover`,
+            }}
+          >
+            <div className="card w-96 glass">
+              <figure>
+                <Image
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                  alt="car!"
+                  width={500}
+                  height={500}
+                />
+              </figure>{' '}
+              <div class="card-body">
+                <h2 class="card-title">Life hack</h2>{' '}
+                <p>How to park your car at your garage?</p>{' '}
+                <div class="justify-end card-actions">
+                  <button class="btn btn-primary">Learn now!</button>
+                </div>
+              </div>
             </div>
           </div>
+
           <section className="jobs_grid job_post_search_container uni_jobs_grid">
             <div className={`filters_panel mt-6`}>
               {
