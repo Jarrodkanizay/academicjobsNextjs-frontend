@@ -4,7 +4,7 @@ import { useSearchParams } from 'next/navigation';
 
 // Function to convert object to URLSearchParams
 export function toURLParams(obj) {
-    const { r = 'Global', q = '', l = '', lon = 0, lat = 0, page = 0, category = '', currentMiddleCategory = '', filter0 = [] } = obj;
+    const { r = 'Global', q = '', l = '', lon = 0, lat = 0, page = 0, category = '', currentMiddleCategory = '', filter0 = [] , mode = 'default'} = obj;
     const params = new URLSearchParams();
 
     params.set('r', encodeURIComponent(r));
@@ -16,6 +16,7 @@ export function toURLParams(obj) {
     params.set('category', encodeURIComponent(category));
     params.set('currentMiddleCategory', encodeURIComponent(currentMiddleCategory));
     params.set('filter0', encodeURIComponent(JSON.stringify(filter0)));
+    params.set('mode', decodeURIComponent(mode));
 
     return params;
 }
@@ -34,8 +35,9 @@ export function loadFromURLParams(searchParams) {
     const currentMiddleCategory = decodeURIComponent(searchParams.get('currentMiddleCategory') || '');
     const filter = decodeURIComponent(searchParams.get('filter0') || '');
     const filter0 = filter ? JSON.parse(filter) : [];
+    const mode = decodeURIComponent(searchParams.get('mode') || 'default');
 
-    return { r, q, l, lon, lat, page, category, currentMiddleCategory, filter0 };
+    return { r, q, l, lon, lat, page, category, currentMiddleCategory, filter0, mode };
 }
 
 // Custom hook to encapsulate URL parameter logic

@@ -90,22 +90,10 @@ const JobDetailPage = async ({ params, searchParams }) => {
       ranking,
     },
     master_category_job_type,
-    subcategory_executive_jobs,
+    thirdcategory,
     subcategory_administration_support,
-    subcategory_hr_jobs,
-    subcategory_studentPhd_jobs,
-    subcategory_industry_jobs,
     subcategory_academic_jobs,
   } = job.data;
-
-  const filterMapping = {
-    'Academic / Faculty': subcategory_academic_jobs,
-    'Industry Jobs': subcategory_industry_jobs,
-    'Staff / Administration': subcategory_administration_support,
-    'Human Resources': subcategory_hr_jobs,
-    'Executive': subcategory_executive_jobs,
-    'Student / Phd Jobs': subcategory_studentPhd_jobs,
-  };
 
   const subject = encodeURIComponent('You might like this job posting!');
   const bccEmail = encodeURIComponent('post@academicjobs.com');
@@ -266,7 +254,18 @@ const JobDetailPage = async ({ params, searchParams }) => {
         <div className="listings_panel">
           <div className="relative pb-16">
             <div className="search_panel">
-              <AdvancedSearchBar sidebarView={true} p={{ filter1: [{ category: master_category_job_type, filter: filterMapping[master_category_job_type] }] }} />
+              <AdvancedSearchBar
+                sidebarView={true}
+                p={{
+                  filter1: [
+                    { category: "JobType", filter: master_category_job_type },
+                    ...(subcategory_academic_jobs ? [{ category: "AcademicPositionType" , filter: subcategory_academic_jobs }] : []),
+                    ...(subcategory_administration_support ? [{ category: "AdministrationSupportJobs" , filter: subcategory_administration_support }] : []),
+                    ...(thirdcategory ? [{ category: "thirdcategory", filter: thirdcategory }] : [])
+                  ]
+                }}
+              />
+
             </div>
             <SearchResults3
               searchMessage="Related Jobs Found"
