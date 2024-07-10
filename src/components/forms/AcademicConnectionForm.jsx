@@ -81,22 +81,24 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    let allSuccess = true;
+    
     for (const form of forms) {
       if (form.emailError) {
         continue; // Skip forms with email errors
       }
-
+  
       let response;
       let userId;
-
+  
       try {
         response = await BaseApi.post("/addUser", {
           ...form,
         });
-
+  
         if (response && response.data && response.data.id) {
           userId = response.data.id;
-
+  
           try {
             await BaseApi.post("/favoriteJobId", {
               mode: "add",
@@ -106,7 +108,7 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
           } catch (favoriteJobError) {
             console.error("Setting favorite job failed:", favoriteJobError);
           }
-
+  
           try {
             await BaseApi.post("/favoriteEmployerId", {
               mode: "add",
@@ -120,17 +122,18 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
         }
       } catch (error) {
         console.error("User add failed:", error);
+        allSuccess = false;
       }
-
+  
       try {
         let emailTemplate;
-
+  
         if (userId) {
           const checkAcademicConnection = await BaseApi.post("/checkAcademicConnection", {
             email: form.email,
             jobId,
           });
-
+  
           if (checkAcademicConnection.data.exists) {
             console.log("User and job already connected. No email will be sent.");
             continue;
@@ -143,17 +146,17 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
             console.log("User does not exist. Sending email with password info.");
             emailTemplate = generateEmailWithPassword(jobId, title, company_name, form.firstName, `${inviter.firstNameInviter} ${inviter.lastNameInviter}`, form.internalEmployee);
           }
-
+  
           const subject = form.internalEmployee
             ? `Our job listing '${title}' needs your help...`
             : `${company_name} Opportunity`;
-
+  
           await BaseApi.post("/shareJobEmail", {
             ...form,
             subject: subject,
             data: emailTemplate,
           });
-
+  
           await BaseApi.post("/addAcademicConnection", {
             userId,
             jobId,
@@ -161,18 +164,26 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
             firstName: form.firstName,
             lastName: form.lastName
           });
-
+  
           swal("Success", `Thank you for sharing!`, "success");
         } else {
           console.log("User creation failed. No email will be sent.");
+          allSuccess = false;
         }
       } catch (error) {
         console.error("Error sending email:", error);
         alert("Failed to send email.");
+        allSuccess = false;
       }
     }
+  
+    if (allSuccess) {
+      // Reset forms and inviter to initial state
+      setForms([{ id: Date.now(), firstName: "", lastName: "", email: "", internalEmployee: false, emailError: false, emailErrorMessage: "" }]);
+      setInviter({ firstNameInviter: "", lastNameInviter: "" });
+    }
   };
-
+  
   return (
     <div className="space-y-6 post_panel mt-8">
       <h2>Welcome to 'Academic connect'!</h2>
