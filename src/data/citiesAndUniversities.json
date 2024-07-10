@@ -31,7 +31,7 @@
       "employer_id": ""
     },
     "footer_h2": "UQ Career and Employment Opportunities",
-    "footer_content": "<p>The University of Queensland is a public research university in Brisbane, It is ranked among the top 50 universities in the world.  The university also has a strong research profile, with more than 100 research centres and institutes, and over 7,000 academic and professional staff supporting a diverse student body of around 49,000, including 20,000 international students from over 140 countries.</p><p>Employees working in University of Queensland enjoy many <a href='https://careers.uq.edu.au/why-work-at-uq' target='_blank' className='link link-aj' >employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate and many more.</p>",
+    "footer_content": "<p>The University of Queensland is a public research university in Brisbane, It is ranked among the top 50 universities in the world.  The university also has a strong research profile, with more than 100 research centres and institutes, and over 7,000 academic and professional staff supporting a diverse student body of around 49,000, including 20,000 international students from over 140 countries.</p><p>Employees working in University of Queensland enjoy many <a href='https://careers.uq.edu.au/why-work-at-uq' target='_blank' class='link link-aj' >employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate and many more.</p>",
     "acronym": "UQ",
     "uni_name": "The University of Queensland (UQ)"
   },
@@ -113,7 +113,7 @@
     },
     "country": "New Zealand",
     "footer_h2": "Careers at University of Auckland",
-    "footer_content": "The University of Auckland is a public research university based in Auckland, New Zealand. It is the largest, most comprehensive and highest-ranked university in New Zealand and consistently places among the top 100 universities. Employees working in University of Auckland enjoy many <a href= '/employers/the-university-of-auckland/3809' className='link link-aj'>employee benefits</a>, such as special leaves schemes, employee assistance programmes, discounted medical insurance and funds for professional development."
+    "footer_content": "The University of Auckland is a public research university based in Auckland, New Zealand. It is the largest, most comprehensive and highest-ranked university in New Zealand and consistently places among the top 100 universities. Employees working in University of Auckland enjoy many <a href= '/employers/the-university-of-auckland/3809' class='link link-aj'>employee benefits</a>, such as special leaves schemes, employee assistance programmes, discounted medical insurance and funds for professional development."
   },
   {
     "Name": "university of waikato",
