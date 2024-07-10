@@ -1,4 +1,4 @@
-export const externalEmail = `
+export const externalEmailNoPassword = `
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,13 +48,12 @@ export const externalEmail = `
     <p>Thanks in advance,</p>
     <p>Sarah West</p>
     <p>(on behalf of \${inviterName})</p>
-    <p><a href="https://www.academicjobs.com/auth/signin" rel="noopener noreferrer" target="_blank">Your Helpful Link</a> to stay connected with us… sign in using your email & this password: dfxg9CIqip </p>
+    <p><a href="https://www.academicjobs.com/auth/signin" rel="noopener noreferrer" target="_blank">Your Helpful Link</a> to stay connected with us… sign in using your email & password</p>
     <p>About AcademicConnect:</p>
     <p>Research suggests that the most desirable candidates come from within our own professional networks.
       The more we share our job with valued connections, the greater chance of you working with an amazing (likeable) superstar.
       ‘Academic Connect’ is used by Oxford, and is extremely successful and efficient.</p>
     <p><i>"Working Together we create better teams"</i></p>
-
     <div class="signature">
       <img src="https://academicjobs.s3.amazonaws.com/img/_misc/sarah-west-email-signature.jpg" alt="Sarah West">
     </div>
