@@ -106,7 +106,7 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
         Where university colleagues participate in the promotion of department jobs, to find the most desirable
         candidates for this job. <span className="text-amber-500">We recommend you tell five colleagues</span>. 'Academic
         Connect' will then inform your contacts about the positive progress of your organisation and its opportunities.
-        Research suggests that refferals and communications from trusted colleagues transalte into desirable candidates.
+        Research suggests that referalls and communications from trusted colleagues transalte into desirable candidates.
       </p>
 
       <p className="font-bold">Your details</p>
