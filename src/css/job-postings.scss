@@ -38,6 +38,9 @@ html {
       max-width: var(--jobs-filter-container-max-width);
       grid-template-areas: 'filters_panel filters_panel filters_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel';
     }
+    .job_post_search_container.uni_jobs_grid {
+      grid-template-areas: 'filters_panel filters_panel filters_panel filters_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel listings_panel';
+    }
 
     .job_post_header_container {
       grid-template-areas: 'location_panel location_panel location_panel location_panel location_panel location_panel location_panel location_panel location_panel location_panel  applications_close_panel applications_close_panel';

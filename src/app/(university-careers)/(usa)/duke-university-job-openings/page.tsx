@@ -59,13 +59,18 @@ export default function Page() {
             </h1>
 
             <p className="font-bold">
-            Discover your potential, ignite your passion, and embark on a journey of growth and fulfillment with Duke. With a commitment to excellence and a supportive community, Duke Careers empowers you to make a meaningful impact while advancing your professional aspirations. 
-
-
+              Discover your potential, ignite your passion, and embark on a
+              journey of growth and fulfillment with Duke. With a commitment to
+              excellence and a supportive community, Duke Careers empowers you
+              to make a meaningful impact while advancing your professional
+              aspirations.
             </p>
-            <p className="font-bold">Elevate your career to new heights. Dare to dream, and let Duke be your launchpad to success.</p>
+            <p className="font-bold">
+              Elevate your career to new heights. Dare to dream, and let Duke be
+              your launchpad to success.
+            </p>
             {/* <Link
-              href="https://www.academicjobs.com/employers/duke-university/3139"
+              href="/employers/duke-university/3139"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -110,16 +115,14 @@ export default function Page() {
         </div>
       </section>
 
-<div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
-      <Link
-              href="https://www.academicjobs.com/employers/duke-university/3139"
-              className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
-            >
-              Careers at Duke
-            </Link>
-            </div>
-
-
+      <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
+        <Link
+          href="/employers/duke-university/3139"
+          className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
+        >
+          Careers at Duke
+        </Link>
+      </div>
     </main>
   );
 }

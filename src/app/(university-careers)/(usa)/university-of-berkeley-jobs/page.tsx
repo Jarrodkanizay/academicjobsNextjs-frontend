@@ -59,13 +59,19 @@ export default function Page() {
             </h1>
 
             <p className="font-bold">
-            Discover a world of possibilities with Berkeley's comprehensive resources and tailored support, guiding you from exploration to achievement. Whether you're launching your career or aiming for advancement, Berkeley is your trusted partner in navigating the professional landscape and realizing your ambitions. 
-
-
+              Discover a world of possibilities with Berkeley's comprehensive
+              resources and tailored support, guiding you from exploration to
+              achievement. Whether you're launching your career or aiming for
+              advancement, Berkeley is your trusted partner in navigating the
+              professional landscape and realizing your ambitions.
             </p>
-            <p className="font-bold">Our dedicated team of career advisors and industry experts are here to provide personalized guidance, mentorship, and networking opportunities tailored to your unique career goals.</p>
+            <p className="font-bold">
+              Our dedicated team of career advisors and industry experts are
+              here to provide personalized guidance, mentorship, and networking
+              opportunities tailored to your unique career goals.
+            </p>
             {/* <Link
-              href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105"
+              href="/employers/university-of-california-berkeley/3105"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -110,16 +116,14 @@ export default function Page() {
         </div>
       </section>
 
-<div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
-      <Link
-              href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105"
-              className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
-            >
-              Careers at Berkeley
-            </Link>
-            </div>
-
-
+      <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
+        <Link
+          href="/employers/university-of-california-berkeley/3105"
+          className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
+        >
+          Careers at Berkeley
+        </Link>
+      </div>
     </main>
   );
 }

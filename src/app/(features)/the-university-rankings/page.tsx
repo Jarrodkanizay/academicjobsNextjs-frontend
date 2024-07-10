@@ -11,15 +11,13 @@ function countryRegionPlural() {
 }
 
 export const metadata: Metadata = {
-  title:
-    'The University Rankings', //Option 1 replaces the %s in layout.tsx
+  title: 'The University Rankings', //Option 1 replaces the %s in layout.tsx
   // title: {
   //   absolute: '  Academic Jobs: Academic, research and science positions locally and globally.', //Option 2 overrides the title in layout.tsx
   // },
   description:
     'AcademicJobs presents the University Rankings, based on employment for your academic job seeker needs.',
-  keywords:
-    'The University Rankings',
+  keywords: 'The University Rankings',
 };
 export default function myPage() {
   return (
@@ -44,7 +42,7 @@ export default function myPage() {
             </h1>
             {/* <div className="text-center"> */}
             {/* <Link
-                  href="https://www.academicjobs.com/the-academic-rankings/find-my-rank"
+                  href="/the-academic-rankings/find-my-rank"
                   className="bg-amber-500 text-white p-4 rounded-3xl font-bold "
                 >
                   FIND YOUR UNIVERSITY EMPLOYER RANK….
@@ -88,7 +86,7 @@ export default function myPage() {
               <div className="card-actions justify-center md:justify-end mt-4">
                 <Link
                   className="bg-gray-500 text-white px-4 py-2 rounded-3xl font-bold"
-                  href="https://www.academicjobs.com/the-academic-rankings/my-academic-rank"
+                  href="/the-academic-rankings/my-academic-rank"
                 >
                   Develop Your Network
                 </Link>
@@ -123,7 +121,7 @@ export default function myPage() {
               <div className="card-actions justify-center md:justify-end mt-4">
                 <Link
                   className="bg-gray-500 text-white px-4 py-2 rounded-3xl font-bold"
-                  href="https://www.academicjobs.com/the-academic-rankings/my-academic-rank"
+                  href="/the-academic-rankings/my-academic-rank"
                 >
                   View Progress
                 </Link>
@@ -157,7 +155,7 @@ export default function myPage() {
               <div className="card-actions justify-center md:justify-end mt-4">
                 <Link
                   className="bg-gray-500 text-white px-4 py-2 rounded-3xl font-bold mt-4"
-                  href="https://www.academicjobs.com/the-academic-rankings/my-academic-rank"
+                  href="/the-academic-rankings/my-academic-rank"
                 >
                   Search Academic Rankings
                 </Link>
@@ -185,7 +183,7 @@ export default function myPage() {
               Set yourself apart from your university ranking. Academics often find themselves stuck in a partnership with their university. This may sometimes be great, but your true talent may go unrecognised under the universities rank which lends itself to the academic output and students results rather than your own work. Your own personal rank acts as an identifier of your success and establishment, putting you on the forefront as an academic, and not just a university professor.
               </p>
               <div className="card-actions justify-center md:justify-start mt-4">
-                <Link className="bg-gray-500 text-white px-4 rounded-3xl font-bold mt-4" href="https://www.academicjobs.com/the-academic-rankings/my-academic-rank">
+                <Link className="bg-gray-500 text-white px-4 rounded-3xl font-bold mt-4" href="/the-academic-rankings/my-academic-rank">
                   View Skills 
                 </Link>
               </div>
@@ -286,7 +284,7 @@ export default function myPage() {
           <h3 className="container mx-auto text-center py-8 px-4">
             Want opportunities delivered to you?{' '}
             <Link
-              href="https://www.academicjobs.com/academic-talent-pool"
+              href="/academic-talent-pool"
               className="bg-gray-500 text-white px-4 py-2 rounded-3xl font-bold mt-4"
             >
               Join our Talent Pool

@@ -652,7 +652,7 @@ export default async function myPage() {
               <li>
                 <Link
                   className="flex flex-col items-center"
-                  href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786"
+                  href="/employers/queensland-university-of-technology-qut-/3786"
                 >
                   <Image
                     width={100}
@@ -669,7 +669,7 @@ export default async function myPage() {
               <li>
                 <Link
                   className="flex flex-col items-center"
-                  href="https://www.academicjobs.com/employers/bond-university/3785/"
+                  href="/employers/bond-university/3785/"
                 >
                   <Image
                     width={100}

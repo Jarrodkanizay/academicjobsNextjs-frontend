@@ -53,19 +53,25 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              monash uni jobs{' '}
+                monash uni jobs{' '}
               </span>
               <br />
             </h1>
 
             <p className="font-bold">
-            Embark on a journey of professional growth and fulfillment at monash uni jobs, where we nurture talent and foster innovation. Explore diverse career opportunities tailored to your skills and aspirations, from academia to administration, research to technology. 
-
-
+              Embark on a journey of professional growth and fulfillment at
+              monash uni jobs, where we nurture talent and foster innovation.
+              Explore diverse career opportunities tailored to your skills and
+              aspirations, from academia to administration, research to
+              technology.
             </p>
-            <p className="font-bold">Join our dynamic community dedicated to excellence and collaboration, where every voice is valued and every idea matters. Discover your potential at monash uni jobs today! </p>
+            <p className="font-bold">
+              Join our dynamic community dedicated to excellence and
+              collaboration, where every voice is valued and every idea matters.
+              Discover your potential at monash uni jobs today!{' '}
+            </p>
             {/* <Link
-              href="https://www.academicjobs.com/employers/hofstra-university/3545"
+              href="/employers/hofstra-university/3545"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -110,16 +116,14 @@ export default function Page() {
         </div>
       </section>
 
-<div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
-      <Link
-              href="https://www.academicjobs.com/employers/monash-university/3182"
-              className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
-            >
-              Careers at monash uni jobs 
-            </Link>
-            </div>
-
-
+      <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
+        <Link
+          href="/employers/monash-university/3182"
+          className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
+        >
+          Careers at monash uni jobs
+        </Link>
+      </div>
     </main>
   );
 }

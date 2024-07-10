@@ -53,19 +53,21 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              U of Penn Jobs{' '}
+                U of Penn Jobs{' '}
               </span>
               <br />
             </h1>
 
             <p className="font-bold">
-            With U Penn Jobs' vast resources and expert support, you may explore countless options and receive guidance from discovery to achievement. Whether you're a beginner or want to progress, U of Penn Jobs is your go-to partner for advice in the business world and accomplishing your objectives. 
-
-
+              With U Penn Jobs' vast resources and expert support, you may
+              explore countless options and receive guidance from discovery to
+              achievement. Whether you're a beginner or want to progress, U of
+              Penn Jobs is your go-to partner for advice in the business world
+              and accomplishing your objectives.
             </p>
             {/* <p className="font-bold">Our committed group of career counselors and business specialists is here to offer you individualized advice, networking opportunities, and mentoring that is catered to your particular professional objectives.</p> */}
             {/* <Link
-              href="https://www.academicjobs.com/employers/university-of-pennsylvania/3131"
+              href="/employers/university-of-pennsylvania/3131"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -110,16 +112,14 @@ export default function Page() {
         </div>
       </section>
 
-<div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
-      <Link
-              href="https://www.academicjobs.com/employers/university-of-pennsylvania/3131"
-              className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
-            >
-              Careers at U of Penn
-            </Link>
-            </div>
-
-
+      <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
+        <Link
+          href="/employers/university-of-pennsylvania/3131"
+          className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
+        >
+          Careers at U of Penn
+        </Link>
+      </div>
     </main>
   );
 }

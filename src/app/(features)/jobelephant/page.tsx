@@ -311,8 +311,6 @@ export default function Page() {
         <div className="cate-group section23 m-4">
           <div className="widget__text-block m-4">
             <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7">
-           
-             
               <div className="column">
                 <ul className="">
                   <li className="mb-1 mt-4 hover:underline">
@@ -374,132 +372,127 @@ export default function Page() {
                 </ul>
               </div>
             </div>
-       
-              <div className="column">
-                <ul className="">
-                  <li className="mb-1 mt-4 hover:underline">
-                    <Link
-                      href="/jobs/career-advisor-senior-career-advisor/82180"
-                      className="text-blue-500 font-bold"
-                    >
-                      Career Advisor/Senior Career Advisor
-                    </Link>
-                  </li>
-                  <ul className="innerUL">
-                    <li>
-                      <Link href="">University of the Pacific</Link>
-                    </li>
-                    <li>
-                      <Link href="">Stockton, CA, USA</Link>
-                    </li>
-                    <li>
-                      <Link href="">Mar 11, 2024</Link>
-                    </li>
-                    <Link
-                      href="https://apptrkr.com/get_redirect.php?id=4921373"
-                      className="btn btn-sm btn-aj mt-4"
-                    >
-                      More Info
-                    </Link>
-                  </ul>
-                </ul>
-              </div>
-              <div className="column">
-                <ul className="">
-                  <li className="mb-1 mt-4 hover:underline">
-                    <Link
-                      href="/jobs/information-technology-faculty/82182"
-                      className="text-blue-500 font-bold"
-                    >
-                      Information Technology Faculty
-                    </Link>
-                  </li>
-                  <ul className="innerUL">
-                    <li>
-                      <Link href="">North Central State College</Link>
-                    </li>
-                    <li>
-                      <Link href="">
-                        2441 Kenwood Circle, Mansfield, OH, USA
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="">Mar 15, 2024</Link>
-                    </li>
-                    <Link
-                      href="https://apptrkr.com/get_redirect.php?id=4931492"
-                      className="btn btn-sm btn-aj mt-4"
-                    >
-                      More Info
-                    </Link>
-                  </ul>
-                </ul>
-              </div>
-             
-              <div className="column">
-                <ul className="">
-                  <li className="mb-1 mt-4 hover:underline">
-                    <Link
-                      href="/jobs/program-coordinator-pre-professional-programs/82178"
-                      className="text-blue-500 font-bold"
-                    >
-                      Program Coordinator- Pre-Professional Programs
-                    </Link>
-                  </li>
-                  <ul className="innerUL">
-                    <li>
-                      <Link href="">Southern Utah University</Link>
-                    </li>
-                    <li>
-                      <Link href="">Cedar City, UT, USA</Link>
-                    </li>
-                    <li>
-                      <Link href="">Mar 10, 2024</Link>
-                    </li>
-                    <Link
-                      href="https://apptrkr.com/get_redirect.php?id=4918224"
-                      className="btn btn-sm btn-aj mt-4"
-                    >
-                      More Info
-                    </Link>
-                  </ul>
-                </ul>
-              </div>
 
-
-            
-              <div className="column">
-                <ul className="">
-                  <li className="mb-1 mt-4 hover:underline">
-                    <Link
-                      href="https://www.academicjobs.com/jobs/clinical-positions-in-cardiology-central-coast-2023-2024/73047/"
-                      className="text-blue-500 font-bold"
-                    >
-                      Assistant Controller (71101)
-                    </Link>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/career-advisor-senior-career-advisor/82180"
+                    className="text-blue-500 font-bold"
+                  >
+                    Career Advisor/Senior Career Advisor
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">University of the Pacific</Link>
                   </li>
-                  <ul className="innerUL">
-                    <li>
-                      <Link href="">Pratt Institute</Link>
-                    </li>
-                    <li>
-                      <Link href="">Brooklyn, NY, USA</Link>
-                    </li>
-                    <li>
-                      <Link href="">Mar 1, 2024</Link>
-                    </li>
-                    <Link
-                      href="https://apptrkr.com/get_redirect.php?id=4970008"
-                      className="btn btn-sm btn-aj mt-4"
-                    >
-                      More Info
-                    </Link>
-                  </ul>
+                  <li>
+                    <Link href="">Stockton, CA, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Mar 11, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4921373"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
                 </ul>
-              </div>
+              </ul>
+            </div>
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/information-technology-faculty/82182"
+                    className="text-blue-500 font-bold"
+                  >
+                    Information Technology Faculty
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">North Central State College</Link>
+                  </li>
+                  <li>
+                    <Link href="">2441 Kenwood Circle, Mansfield, OH, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Mar 15, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4931492"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/program-coordinator-pre-professional-programs/82178"
+                    className="text-blue-500 font-bold"
+                  >
+                    Program Coordinator- Pre-Professional Programs
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">Southern Utah University</Link>
+                  </li>
+                  <li>
+                    <Link href="">Cedar City, UT, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Mar 10, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4918224"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
+            </div>
+
+            <div className="column">
+              <ul className="">
+                <li className="mb-1 mt-4 hover:underline">
+                  <Link
+                    href="/jobs/clinical-positions-in-cardiology-central-coast-2023-2024/73047/"
+                    className="text-blue-500 font-bold"
+                  >
+                    Assistant Controller (71101)
+                  </Link>
+                </li>
+                <ul className="innerUL">
+                  <li>
+                    <Link href="">Pratt Institute</Link>
+                  </li>
+                  <li>
+                    <Link href="">Brooklyn, NY, USA</Link>
+                  </li>
+                  <li>
+                    <Link href="">Mar 1, 2024</Link>
+                  </li>
+                  <Link
+                    href="https://apptrkr.com/get_redirect.php?id=4970008"
+                    className="btn btn-sm btn-aj mt-4"
+                  >
+                    More Info
+                  </Link>
+                </ul>
+              </ul>
             </div>
           </div>
-       
+        </div>
       </main>
     </>
   );

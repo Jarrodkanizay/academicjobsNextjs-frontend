@@ -24,28 +24,28 @@ const TopUniversities = () => {
                   />
                 </figure>
                 <div className="p-4 pl-6 text-gray-500 flex flex-col gap-2.5">
-                  <Link href="https://www.academicjobs.com/employers/harvard-university/3100">
+                  <Link href="/employers/harvard-university/3100">
                     Harvard University
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/massachusetts-institute-of-technology/3103">
+                  <Link href="/employers/massachusetts-institute-of-technology/3103">
                     Massachusetts Institute of Technology (MIT)
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/stanford-university/3101">
+                  <Link href="/employers/stanford-university/3101">
                     Stanford University
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105">
+                  <Link href="/employers/university-of-california-berkeley/3105">
                     University of California Berkeley (UCB)
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/caltech/3128">
+                  <Link href="/employers/caltech/3128">
                     California Institute of Technology (Caltech)
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/yale-university/3125">
+                  <Link href="/employers/yale-university/3125">
                     Yale University
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/princeton-university/3104">
+                  <Link href="/employers/princeton-university/3104">
                     Princeton University
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/columbia-university/3127">
+                  <Link href="/employers/columbia-university/3127">
                     Columbia University
                   </Link>
                 </div>
@@ -76,31 +76,31 @@ const TopUniversities = () => {
                   />
                 </figure>
                 <div className="p-4 pl-6 text-gray-500 flex flex-col gap-2.5">
-                  <Link href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786">
+                  <Link href="/employers/queensland-university-of-technology-qut-/3786">
                     Queensland University of Technology (QUT)
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/bond-university/3785/">
+                  <Link href="/employers/bond-university/3785/">
                     Bond University
                   </Link>
                   <Link href="/employers/university-of-canberra/3821">
                     University of Canberra (UC)
                   </Link>
-                  {/* <Link href="https://www.academicjobs.com/employers/the-university-of-sydney/3171">
+                  {/* <Link href="/employers/the-university-of-sydney/3171">
                     The University of Sydney
                   </Link> */}
-                  <Link href="https://www.academicjobs.com/employers/australian-national-university/3739">
+                  <Link href="/employers/australian-national-university/3739">
                     Australian National University (ANU)
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/monash-university/3182/">
+                  <Link href="/employers/monash-university/3182/">
                     Monash University
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/the-university-of-western-australia/3173">
+                  <Link href="/employers/the-university-of-western-australia/3173">
                     University Western Australia (UWA)
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/the-university-of-queensland/3172">
+                  <Link href="/employers/the-university-of-queensland/3172">
                     The University of Queensland
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/the-university-of-tasmania-utas-/3867">
+                  <Link href="/employers/the-university-of-tasmania-utas-/3867">
                     The University of Tasmania (UTAS)
                   </Link>
                 </div>
@@ -129,29 +129,29 @@ const TopUniversities = () => {
                   />
                 </figure>
                 <div className="p-4 pl-6 text-gray-500 flex flex-col gap-2.5">
-                  <Link href="https://www.academicjobs.com/employers/university-of-oxford/3099">
+                  <Link href="/employers/university-of-oxford/3099">
                     University of Oxford
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/imperial-college-london/3129">
+                  <Link href="/employers/imperial-college-london/3129">
                     Imperial College London
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/university-of-cambridge/12635">
+                  <Link href="/employers/university-of-cambridge/12635">
                     University of Cambridge
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/university-of-edinburgh/12681">
+                  <Link href="/employers/university-of-edinburgh/12681">
                     University of Edinburgh
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/king-s-college-london/3151">
+                  <Link href="/employers/king-s-college-london/3151">
                     Kings College London
                   </Link>
 
-                  <Link href="https://www.academicjobs.com/employers/university-college-london-ucl/3135">
+                  <Link href="/employers/university-college-london-ucl/3135">
                     University College London (UCL)
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/university-of-manchester/3833">
+                  <Link href="/employers/university-of-manchester/3833">
                     University of Manchester
                   </Link>
-                  <Link href="https://www.academicjobs.com/employers/university-of-glasgow/12713">
+                  <Link href="/employers/university-of-glasgow/12713">
                     University of Glasgow
                   </Link>
                 </div>

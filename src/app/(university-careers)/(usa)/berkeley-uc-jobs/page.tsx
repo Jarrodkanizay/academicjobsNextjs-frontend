@@ -53,19 +53,26 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              Berkeley UC Jobs{' '}
+                Berkeley UC Jobs{' '}
               </span>
               <br />
             </h1>
 
             <p className="font-bold">
-            Berkeley's extensive resources and professional assistance enable you to investigate several choices and receive guidance from discovery to accomplishment. Berkeley is the partner you should turn to for guidance on the business world and accomplishing your goals, regardless of whether you're just starting out or seeking to develop.   
-
-
+              Berkeley's extensive resources and professional assistance enable
+              you to investigate several choices and receive guidance from
+              discovery to accomplishment. Berkeley is the partner you should
+              turn to for guidance on the business world and accomplishing your
+              goals, regardless of whether you're just starting out or seeking
+              to develop.
             </p>
-            <p className="font-bold">Our committed group of career counselors and business specialists is here to offer you one-on-one advice, chances for professional networking, and mentorship catered to your individual objectives.</p>
+            <p className="font-bold">
+              Our committed group of career counselors and business specialists
+              is here to offer you one-on-one advice, chances for professional
+              networking, and mentorship catered to your individual objectives.
+            </p>
             {/* <Link
-              href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105"
+              href="/employers/university-of-california-berkeley/3105"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -110,16 +117,14 @@ export default function Page() {
         </div>
       </section>
 
-<div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
-      <Link
-              href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105"
-              className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
-            >
-              Careers at Berkeley
-            </Link>
-            </div>
-
-
+      <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
+        <Link
+          href="/employers/university-of-california-berkeley/3105"
+          className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
+        >
+          Careers at Berkeley
+        </Link>
+      </div>
     </main>
   );
 }

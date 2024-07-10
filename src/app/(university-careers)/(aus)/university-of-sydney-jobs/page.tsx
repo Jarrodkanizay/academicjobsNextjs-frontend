@@ -59,13 +59,19 @@ export default function Page() {
             </h1>
 
             <p className="font-bold">
-            Explore rewarding employment options at university of sydney jobs, where influence and innovation collide. Become a part of a varied community committed to breaking down barriers and influencing the future. Investigate positions in several fields where your abilities flourish and your opinions are valued. 
-
-
+              Explore rewarding employment options at university of sydney jobs,
+              where influence and innovation collide. Become a part of a varied
+              community committed to breaking down barriers and influencing the
+              future. Investigate positions in several fields where your
+              abilities flourish and your opinions are valued.
             </p>
-            <p className="font-bold">Join us in realizing your potential and adding to a generation-spanning heritage of excellence in research, teaching, and service.</p>
+            <p className="font-bold">
+              Join us in realizing your potential and adding to a
+              generation-spanning heritage of excellence in research, teaching,
+              and service.
+            </p>
             {/* <Link
-              href="https://www.academicjobs.com/employers/johns-hopkins-university/3130"
+              href="/employers/johns-hopkins-university/3130"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -110,16 +116,14 @@ export default function Page() {
         </div>
       </section>
 
-<div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
-      <Link
-              href="https://www.academicjobs.com/employers/the-university-of-sydney/3171"
-              className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
-            >
-              Careers at university of sydney
-            </Link>
-            </div>
-
-
+      <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
+        <Link
+          href="/employers/the-university-of-sydney/3171"
+          className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
+        >
+          Careers at university of sydney
+        </Link>
+      </div>
     </main>
   );
 }

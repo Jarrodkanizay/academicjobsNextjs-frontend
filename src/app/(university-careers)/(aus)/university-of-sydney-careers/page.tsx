@@ -53,19 +53,27 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              university of sydney careers{' '}
+                university of sydney careers{' '}
               </span>
               <br />
-            </h1> 
+            </h1>
 
             <p className="font-bold">
-            university of sydney careers' vast resources and expert support allow you to explore many options and be guided from exploration to achievement. Whether you're just starting out or looking to develop, university of sydney careers is the partner you should turn to for advice on the business world and reaching your objectives.  
-
-
+              university of sydney careers' vast resources and expert support
+              allow you to explore many options and be guided from exploration
+              to achievement. Whether you're just starting out or looking to
+              develop, university of sydney careers is the partner you should
+              turn to for advice on the business world and reaching your
+              objectives.
             </p>
-            <p className="font-bold">Our dedicated team of business experts and career counselors is here to provide you with one-on-one guidance, professional networking opportunities, and mentorship tailored to your specific goals.</p>
+            <p className="font-bold">
+              Our dedicated team of business experts and career counselors is
+              here to provide you with one-on-one guidance, professional
+              networking opportunities, and mentorship tailored to your specific
+              goals.
+            </p>
             {/* <Link
-              href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105"
+              href="/employers/university-of-california-berkeley/3105"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -110,16 +118,14 @@ export default function Page() {
         </div>
       </section>
 
-<div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
-      <Link
-              href="https://www.academicjobs.com/employers/the-university-of-sydney/3171"
-              className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
-            >
-              Careers at university of sydney careers
-            </Link>
-            </div>
-
-
+      <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
+        <Link
+          href="/employers/the-university-of-sydney/3171"
+          className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
+        >
+          Careers at university of sydney careers
+        </Link>
+      </div>
     </main>
   );
 }

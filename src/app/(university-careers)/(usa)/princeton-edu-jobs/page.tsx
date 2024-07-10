@@ -53,19 +53,25 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              Princeton edu jobs{' '}
+                Princeton edu jobs{' '}
               </span>
               <br />
             </h1>
 
             <p className="font-bold">
-            Welcome to Princeton edu jobs, where academic opportunities abound for all career stages. Our diverse community fosters innovation and collaboration, equipping you with the skills to thrive globally. Explore resources, connect with employers, and start your journey of growth with us. 
-
-
+              Welcome to Princeton edu jobs, where academic opportunities abound
+              for all career stages. Our diverse community fosters innovation
+              and collaboration, equipping you with the skills to thrive
+              globally. Explore resources, connect with employers, and start
+              your journey of growth with us.
             </p>
-            <p className="font-bold">Join Princeton edu jobs, where every career aspiration finds its perfect match, and embark on a path of lifelong learning and fulfillment.</p>
+            <p className="font-bold">
+              Join Princeton edu jobs, where every career aspiration finds its
+              perfect match, and embark on a path of lifelong learning and
+              fulfillment.
+            </p>
             {/* <Link
-              href="https://www.academicjobs.com/employers/princeton-university/3104"
+              href="/employers/princeton-university/3104"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -110,16 +116,14 @@ export default function Page() {
         </div>
       </section>
 
-<div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
-      <Link
-              href="https://www.academicjobs.com/employers/princeton-university/3104"
-              className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
-            >
-              Careers at Princeton 
-            </Link>
-            </div>
-
-
+      <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
+        <Link
+          href="/employers/princeton-university/3104"
+          className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
+        >
+          Careers at Princeton
+        </Link>
+      </div>
     </main>
   );
 }

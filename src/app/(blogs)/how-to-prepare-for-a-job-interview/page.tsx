@@ -82,10 +82,7 @@ export default function myPage() {
               </p>
               <p>
                 Here’s a guide to some common{' '}
-                <Link
-                  className="link text-red-700 hover:text-white"
-                  href="https://www.academicjobs.com/"
-                >
+                <Link className="link text-red-700 hover:text-white" href="/">
                   academic job
                 </Link>{' '}
                 interview questions and how to answer them effectively.

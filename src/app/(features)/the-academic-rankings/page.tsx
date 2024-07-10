@@ -50,7 +50,7 @@ export default function myPage() {
               </h1>
               <div className="text-center">
                 <Link
-                  href="https://www.academicjobs.com/the-academic-rankings/find-my-rank"
+                  href="/the-academic-rankings/find-my-rank"
                   className="bg-amber-500 text-white p-4 rounded-3xl font-bold "
                 >
                   FIND YOUR ACADEMIC RANK….
@@ -95,7 +95,7 @@ export default function myPage() {
               <div className="card-actions justify-center md:justify-end mt-4">
                 <Link
                   className="bg-gray-500 py-2 text-white px-4 rounded-3xl font-bold"
-                  href="https://www.academicjobs.com/the-academic-rankings/my-academic-rank"
+                  href="/the-academic-rankings/my-academic-rank"
                 >
                   Develop Your Network
                 </Link>
@@ -129,7 +129,7 @@ export default function myPage() {
               <div className="card-actions justify-center md:justify-end mt-4">
                 <Link
                   className="bg-gray-500 py-2 text-white px-4 rounded-3xl font-bold"
-                  href="https://www.academicjobs.com/the-academic-rankings/my-academic-rank"
+                  href="/the-academic-rankings/my-academic-rank"
                 >
                   Earn Extra Cash
                 </Link>
@@ -163,7 +163,7 @@ export default function myPage() {
               <div className="card-actions justify-center md:justify-end mt-4">
                 <Link
                   className="bg-gray-500 py-2 text-white px-4 rounded-3xl font-bold mt-4"
-                  href="https://www.academicjobs.com/the-academic-rankings/my-academic-rank"
+                  href="/the-academic-rankings/my-academic-rank"
                 >
                   Search Academic Rankings
                 </Link>
@@ -199,7 +199,7 @@ export default function myPage() {
               <div className="card-actions justify-center md:justify-start mt-4">
                 <Link
                   className="bg-gray-500 py-2 text-white px-4 rounded-3xl font-bold mt-4"
-                  href="https://www.academicjobs.com/the-academic-rankings/my-academic-rank"
+                  href="/the-academic-rankings/my-academic-rank"
                 >
                   View Skills
                 </Link>
@@ -304,7 +304,7 @@ export default function myPage() {
           <h3 className="container mx-auto text-center py-8 px-4">
             Want opportunities delivered to you?{' '}
             <Link
-              href="https://www.academicjobs.com/academic-talent-pool"
+              href="/academic-talent-pool"
               className="bg-gray-500 py-2 text-white px-4 rounded-3xl font-bold mt-4"
             >
               Join our Talent Pool

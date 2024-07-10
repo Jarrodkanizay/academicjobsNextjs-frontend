@@ -59,13 +59,18 @@ export default function Page() {
             </h1>
 
             <p className="font-bold">
-            At Tufts University, your career journey begins with unparalleled higher ed opportunities. From internships to full-time positions, our Career Services offers tailored guidance, resources, and networking events to help you thrive. 
-
-
+              At Tufts University, your career journey begins with unparalleled
+              higher ed opportunities. From internships to full-time positions,
+              our Career Services offers tailored guidance, resources, and
+              networking events to help you thrive.
             </p>
-            <p className="font-bold">Join us to unleash your potential, connect with a vibrant community, embark on a transformative path towards lifelong success, and make a lasting impact in the world. </p>
+            <p className="font-bold">
+              Join us to unleash your potential, connect with a vibrant
+              community, embark on a transformative path towards lifelong
+              success, and make a lasting impact in the world.{' '}
+            </p>
             {/* <Link
-              href="https://www.academicjobs.com/employers/tufts-university/3460"
+              href="/employers/tufts-university/3460"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -110,16 +115,14 @@ export default function Page() {
         </div>
       </section>
 
-<div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
-      <Link
-              href="https://www.academicjobs.com/employers/tufts-university/3460"
-              className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
-            >
-              Careers at Tufts 
-            </Link>
-            </div>
-
-
+      <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
+        <Link
+          href="/employers/tufts-university/3460"
+          className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
+        >
+          Careers at Tufts
+        </Link>
+      </div>
     </main>
   );
 }
