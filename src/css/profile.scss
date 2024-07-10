@@ -41,9 +41,10 @@ html {
       grid-area: jobs_panel;
     }
 
-    // .custom-select .css-qbdosj-Input {
-    //   grid-area: 1; 
-    // }
+    .custom-select .css-qbdosj-Input {
+      grid-area: 1; 
+    }
+    
     .custom-slider {
       z-index: 0;
     }
