@@ -3,9 +3,9 @@ import { MdLocationPin } from 'react-icons/md';
 import { AiOutlineGlobal } from 'react-icons/ai';
 import SearchResults3 from '@/components/SearchResults3';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
-import JobFilter from '@/components/JobFilter';
+// import JobFilter from '@/components/JobFilter';
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 import { StarRank } from '@/components/StarRank';
 import FavoriteEmployerButton from '@/components/FavoriteEmployerButton';
 import { authOptions } from '@/app/api/auth/[...nextauth]/options';
@@ -190,6 +190,7 @@ const Employer = async ({ params }) => {
             </div>
           }
         </div>
+        {/* <a href="/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default">View all other academic Jobs Australia</a> */}
         <div className="listings_panel">
           <div className="relative pb-16">
             <div className="search_panel">

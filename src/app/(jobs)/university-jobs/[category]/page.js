@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import citiesAndUniversitiesData from '@/data/citiesAndUniversities.json';
+// import cityAndUniversityData from '@/data/citiesAndUniversities.json';
+import { cityAndUniversityData } from '@/data/citiesAndUniversities';
+
 // import SearchResults from '@/components/SearchResults';
 // import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
@@ -19,7 +21,7 @@ export async function generateMetadata({ params, searchParams }) {
     Keyword = '',
     content: content1 = '',
     image = '',
-  } = citiesAndUniversitiesData.find((item) => item.Name === category) || {};
+  } = cityAndUniversityData.find((item) => item.Name === category) || {};
   return {
     title: Title,
     description: Description,
@@ -33,7 +35,7 @@ export default function Page({ params, searchParams }) {
   let { category } = params;
   category = category?.replace(/-/g, ' ');
   // console.log(category);
-  const cityOrUni = citiesAndUniversitiesData.find(
+  const cityOrUni = cityAndUniversityData.find(
     (item) => item.Name === category
   );
   console.log(cityOrUni);
@@ -142,23 +144,23 @@ export default function Page({ params, searchParams }) {
             }}
           >
             <div
-              className="container p-4 glass flex rounded-xl"
+              className="container px-4 glass flex rounded-2xl"
               style={{ backgroundColor: 'transparent' }}
             >
-              <figure className="bg-white rounded-lg flex items-center">
+              <figure className="flex items-center bg-white my-4 rounded-xl p-6">
                 <Image
-                  src={cityOrUni.logoSrc}
-                  alt="Logo"
+                  src={cityOrUni.logo_src}
+                  alt={cityOrUni.logo_alt}
                   width={300}
                   height={300}
                   className="max-w-[250px]"
                 />
-              </figure>{' '}
+              </figure>
               <div class="card-body bg-none">
                 <h1 class="text-black">{h1 ? h1 : Title}</h1>{' '}
                 <p className="leading-tight">{cityOrUni.content}</p>
                 <div class="justify-end card-actions">
-                  <Link class="btn btn-aj" href={`${cityOrUni.logoLink}`}>
+                  <Link class="btn btn-aj" href={`${cityOrUni.to_href}`}>
                     {cityOrUni.acronym || cityOrUni.acronym !== ''
                       ? `More about ${cityOrUni.acronym}`
                       : 'Learn More'}

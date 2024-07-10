@@ -1,7 +1,7 @@
 // import Link from 'next/link';
-import citiesAndUniversitiesData from '@/data/citiesAndUniversities.json';
-import SearchResults from '@/components/SearchResults';
-import JobSearchBox from '@/components/JobSearchBox';
+import { cityAndUniversityData } from '@/data/citiesAndUniversities';
+// import SearchResults from '@/components/SearchResults';
+// import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 import SearchResults3 from '@/components/SearchResults3';
@@ -22,7 +22,7 @@ type MetadataTypes = {
 export async function generateMetadata({ params, searchParams }: any) {
   // console.log(params)
   let { category } = params;
-  // console.log(citiesAndUniversitiesData)
+  // console.log(cityAndUniversityData)
   // console.log(category);
   category = category?.replace(/-/g, ' ');
   // console.log(category);
@@ -35,7 +35,7 @@ export async function generateMetadata({ params, searchParams }: any) {
     content: content1 = '',
     image = '',
     country = '',
-  } = citiesAndUniversitiesData.find((item) => item.Name === category) || {};
+  } = cityAndUniversityData.find((item) => item.Name === category) || {};
 
   return {
     title: Title,
@@ -49,12 +49,12 @@ export default function Page({ params, searchParams }: any) {
   // console.log("````````````````````params````````````````````")
   // console.log(params)
   let { category } = params;
-  // console.log(citiesAndUniversitiesData)
+  // console.log(cityAndUniversityData)
   // console.log(category);
   category = category?.replace(/-/g, ' ');
   // console.log(category);
 
-  const city = citiesAndUniversitiesData.find((item) => item.Name === category);
+  const city = cityAndUniversityData.find((item) => item.Name === category);
 
   if (!city) {
     console.error('City not found');
