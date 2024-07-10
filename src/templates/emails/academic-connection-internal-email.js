@@ -41,15 +41,15 @@ export const internalEmail = `
 <body>
   <div class="container">
     <p>Hello \${firstName},</p>
-    <p>Our <a href="https://www.academicjobs.com/jobs/myjob/\${id}?active=true" rel="noopener noreferrer" target="_blank">\${title}</a> job campaign is underway.</p>
+    <p>Our <a href="/jobs/myjob/\${id}?active=true" rel="noopener noreferrer" target="_blank">\${title}</a> job campaign is underway.</p>
     <p>We want to FIND OUR BEST, and need you to spread the word to your peers and respected colleagues abroad.</p>
-    <p><a href="https://www.academicjobs.com/jobs/myjob/\${id}?mode=share" rel="noopener noreferrer" target="_blank">Click here</a> to use ‘Academic Connect’ that appropriately informs your connections of our job and workplace opportunities.</p>
+    <p><a href="/jobs/myjob/\${id}?mode=share" rel="noopener noreferrer" target="_blank">Click here</a> to use ‘Academic Connect’ that appropriately informs your connections of our job and workplace opportunities.</p>
     <p>Here's why:</p>
     <span>Research suggests that the most desirable candidates come from within our own professional networks.</span>
     <span>The more we share our job with valued connections, the greater chance of you working with an amazing (likeable) superstar.</span>
     <span>‘Academic Connect’ is used by Oxford, and is extremely successful and efficient. Let’s do this!</span>
 
-    <p><a href="https://www.academicjobs.com/auth/signin" rel="noopener noreferrer" target="_blank">Your Helpful Link</a> to stay connected with us… sign in using your email & this password: dfxg9CIqip </p>
+    <p><a href="/auth/signin" rel="noopener noreferrer" target="_blank">Your Helpful Link</a> to stay connected with us… sign in using your email & this password: dfxg9CIqip </p>
 
     <p>Thanks in advance,</p>
     <p>Sarah West</p>
@@ -61,4 +61,4 @@ export const internalEmail = `
     </div>
   </div>
 </body>
-</html>`
+</html>`;

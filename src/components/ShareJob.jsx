@@ -12,7 +12,14 @@ const ShareJob = ({ jobId, employerId, title, company_name, onClose }) => {
     indigenousAcademic: false,
   });
 
-  function generateGenericEmail(id, title, company_name, firstName, inviterFirstName, inviterLastName) {
+  function generateGenericEmail(
+    id,
+    title,
+    company_name,
+    firstName,
+    inviterFirstName,
+    inviterLastName
+  ) {
     const emailTemplateGeneric = `<!DOCTYPE html>
       <html>
       <body style="font-family: Arial, sans-serif; margin-top: 50px;">
@@ -22,15 +29,15 @@ const ShareJob = ({ jobId, employerId, title, company_name, onClose }) => {
             <p>I thought I would share this new opportunity with ${company_name}.</p>
             <p><br></p>
             <p>You (or a colleague) might be interested.</p>
-            <p>Click and check it out - <a href="https://www.academicjobs.com/jobs/myjob/${id}"
+            <p>Click and check it out - <a href="/jobs/myjob/${id}"
                 rel="noopener noreferrer" target="_blank">${company_name}: ${title}</a></p>
             <p><br></p>
-            <p>Also, an account has been created for you to join our network with your email and the password provided below, sign in <a href="https://www.academicjobs.com/auth/signin" rel="noopener noreferrer" target="_blank">here</a> 
+            <p>Also, an account has been created for you to join our network with your email and the password provided below, sign in <a href="/auth/signin" rel="noopener noreferrer" target="_blank">here</a> 
             </p>
             <p>regards,</p>
             <p>The AcademicJobs Team</p>
             <p>(On behalf of ${inviterFirstName} ${inviterLastName})</p>
-            <a href="https://www.academicjobs.com/jobs/myjob/${id}?mode=share" target="_blank">Refer a friend or colleague for this job here./a>
+            <a href="/jobs/myjob/${id}?mode=share" target="_blank">Refer a friend or colleague for this job here./a>
         </div>
       </body>
       </html>`;
@@ -38,15 +45,22 @@ const ShareJob = ({ jobId, employerId, title, company_name, onClose }) => {
   }
 
   const handleCloseForm = () => {
-    setFormData({ firstName: '', lastName: '', email: '', inviterFirstName: '', inviterLastName: '', indigenousAcademic: false });
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      inviterFirstName: '',
+      inviterLastName: '',
+      indigenousAcademic: false,
+    });
     onClose(); // Close the modal
   };
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setFormData(prevData => ({
+    setFormData((prevData) => ({
       ...prevData,
-      [name]: type === 'checkbox' ? checked : value
+      [name]: type === 'checkbox' ? checked : value,
     }));
   };
 
@@ -56,10 +70,22 @@ const ShareJob = ({ jobId, employerId, title, company_name, onClose }) => {
     try {
       await BaseApi.post('/shareJobEmail', {
         ...formData,
-        subject: "We need your help to spread the word about our new job opportunity",
-        data: generateGenericEmail(jobId, title, company_name, formData.firstName, formData.inviterFirstName, formData.inviterLastName),
+        subject:
+          'We need your help to spread the word about our new job opportunity',
+        data: generateGenericEmail(
+          jobId,
+          title,
+          company_name,
+          formData.firstName,
+          formData.inviterFirstName,
+          formData.inviterLastName
+        ),
       });
-      swal("Success", `We've shared this job with ${formData.firstName} ${formData.lastName}!`, "success");
+      swal(
+        'Success',
+        `We've shared this job with ${formData.firstName} ${formData.lastName}!`,
+        'success'
+      );
     } catch (error) {
       console.error('Error sending email:', error);
       alert('Failed to send email.');
@@ -70,11 +96,14 @@ const ShareJob = ({ jobId, employerId, title, company_name, onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex z-50 items-center justify-center">
-      <div className="bg-white p-6 rounded shadow-lg" style={{ width: '90%', maxWidth: '500px' }}>
+      <div
+        className="bg-white p-6 rounded shadow-lg"
+        style={{ width: '90%', maxWidth: '500px' }}
+      >
         <h2 className="text-xl font-bold mb-4">Share this job!</h2>
         <form onSubmit={handleSubmit}>
           <h3 className="text-lg font-semibold mb-2">Your Information</h3>
-          <div className='flex gap-2'>
+          <div className="flex gap-2">
             <label className="block mb-2">
               First Name:
               <input
@@ -100,7 +129,7 @@ const ShareJob = ({ jobId, employerId, title, company_name, onClose }) => {
           </div>
 
           <h3 className="text-lg font-semibold mb-2">Invitee Information</h3>
-          <div className='flex gap-2'>
+          <div className="flex gap-2">
             <label className="block mb-2">
               First Name:
               <input
@@ -144,7 +173,10 @@ const ShareJob = ({ jobId, employerId, title, company_name, onClose }) => {
             >
               Cancel
             </button>
-            <button type="submit" className="bg-amber-500 text-white py-1 px-3 rounded">
+            <button
+              type="submit"
+              className="bg-amber-500 text-white py-1 px-3 rounded"
+            >
               Submit
             </button>
           </div>

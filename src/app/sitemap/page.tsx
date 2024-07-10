@@ -417,8 +417,7 @@ export default function myPage() {
         <div className="cate-group section23 ">
           <div className="widget__text-block">
             <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-8 py-2 px-7">
-           
-            <USA heading="UNITED STATES" />
+              <USA heading="UNITED STATES" />
 
               <div className="column">
                 <ul className="">
@@ -926,38 +925,26 @@ export default function myPage() {
                 <a href="/australia/lecturer/"> Lecturer</a>
               </li>
               <li className="">
-                <a href="https://www.academicjobs.com/australia/research/">
-                  {' '}
-                  Research{' '}
-                </a>
+                <a href="/australia/research/"> Research </a>
               </li>
               <li className=" ">
-                <a href="https://www.academicjobs.com/australia/professor/">
-                  {' '}
-                  Professor
-                </a>
+                <a href="/australia/professor/"> Professor</a>
               </li>
             </ul>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/australia/executive/">
-                {' '}
-                Executive
-              </a>
+              <a href="/australia/executive/"> Executive</a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/australia/admin/">Admin</a>
+              <a href="/australia/admin/">Admin</a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/australia/hr-jobs/"> HR</a>
+              <a href="/australia/hr-jobs/"> HR</a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/australia/student/">
-                {' '}
-                Student
-              </a>
+              <a href="/australia/student/"> Student</a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/online/"> Online </a>
+              <a href="/online/"> Online </a>
             </li>
           </ul>
         </div>
@@ -972,35 +959,26 @@ export default function myPage() {
                 <a href="/usa/lecturer/"> Lecturer</a>
               </li>
               <li className="pb-6">
-                <a href="https://www.academicjobs.com/usa/research/">
-                  {' '}
-                  Research{' '}
-                </a>
+                <a href="/usa/research/"> Research </a>
               </li>
               <li className="pb-6">
-                <a href="https://www.academicjobs.com/usa/professor/">
-                  {' '}
-                  Professor
-                </a>
+                <a href="/usa/professor/"> Professor</a>
               </li>
             </ul>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/usa/executive/">
-                {' '}
-                Executive
-              </a>
+              <a href="/usa/executive/"> Executive</a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/usa/admin/">Admin</a>
+              <a href="/usa/admin/">Admin</a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/usa/hr-jobs/"> HR</a>
+              <a href="/usa/hr-jobs/"> HR</a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/usa/student/"> Student</a>
+              <a href="/usa/student/"> Student</a>
             </li>
             <li className="pb-6">
-              <a href="https://www.academicjobs.com/online/"> Online </a>
+              <a href="/online/"> Online </a>
             </li>
           </ul>
         </div>
