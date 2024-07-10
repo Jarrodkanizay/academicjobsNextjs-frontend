@@ -53,19 +53,25 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              western sydney uni jobs{' '}
+                western sydney uni jobs{' '}
               </span>
               <br />
             </h1>
 
             <p className="font-bold">
-            Welcome to western sydney uni jobs career page, your gateway to all higher education opportunities. Discover unmatched prospects for personal and professional growth, connecting with leaders and innovators shaping tomorrow's landscape. 
-
-
+              Welcome to western sydney uni jobs career page, your gateway to
+              all higher education opportunities. Discover unmatched prospects
+              for personal and professional growth, connecting with leaders and
+              innovators shaping tomorrow's landscape.
             </p>
-            <p className="font-bold">Whether launching your career or pursuing advanced studies, Harvard offers an environment where ambitions flourish. Join a dynamic community across diverse fields, from technology to the arts, and redefine success with us.</p>
+            <p className="font-bold">
+              Whether launching your career or pursuing advanced studies,
+              Harvard offers an environment where ambitions flourish. Join a
+              dynamic community across diverse fields, from technology to the
+              arts, and redefine success with us.
+            </p>
             {/* <Link
-              href="https://www.academicjobs.com/employers/harvard-university/3100"
+              href="/employers/harvard-university/3100"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -110,16 +116,14 @@ export default function Page() {
         </div>
       </section>
 
-<div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
-      <Link
-              href="https://www.academicjobs.com/employers/university-of-western-sydney/3865"
-              className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
-            >
-              western sydney uni jobs 
-            </Link>
-            </div>
-
-
+      <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
+        <Link
+          href="/employers/university-of-western-sydney/3865"
+          className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
+        >
+          western sydney uni jobs
+        </Link>
+      </div>
     </main>
   );
 }

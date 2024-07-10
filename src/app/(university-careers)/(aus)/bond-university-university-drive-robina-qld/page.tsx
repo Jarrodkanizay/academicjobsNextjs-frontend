@@ -59,13 +59,19 @@ export default function Page() {
             </h1>
 
             <p className="font-bold">
-            Discover exciting career opportunities at bond university university drive robina qld, where innovation meets impact. Join a diverse community dedicated to pushing boundaries and shaping the future. Explore roles across disciplines, where your talents thrive and your ideas matter. 
-
-
+              Discover exciting career opportunities at bond university
+              university drive robina qld, where innovation meets impact. Join a
+              diverse community dedicated to pushing boundaries and shaping the
+              future. Explore roles across disciplines, where your talents
+              thrive and your ideas matter.
             </p>
-            <p className="font-bold">Unleash your potential with us, and become part of a legacy of excellence in research, education, and service that spans generations.</p>
+            <p className="font-bold">
+              Unleash your potential with us, and become part of a legacy of
+              excellence in research, education, and service that spans
+              generations.
+            </p>
             {/* <Link
-              href="https://www.academicjobs.com/employers/johns-hopkins-university/3130"
+              href="/employers/johns-hopkins-university/3130"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -110,16 +116,14 @@ export default function Page() {
         </div>
       </section>
 
-<div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
-      <Link
-              href="https://www.academicjobs.com/employers/bond-university/3785"
-              className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
-            >
-              Careers at Bond
-            </Link>
-            </div>
-
-
+      <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
+        <Link
+          href="/employers/bond-university/3785"
+          className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
+        >
+          Careers at Bond
+        </Link>
+      </div>
     </main>
   );
 }

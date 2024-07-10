@@ -46,10 +46,7 @@ export default function myPage() {
               </a>
               <p>
                 Thinking about a career as a{' '}
-                <a
-                  className="underline hover:text-white"
-                  href="https://www.academicjobs.com/research"
-                >
+                <a className="underline hover:text-white" href="/research">
                   research assistant{' '}
                 </a>{' '}
                 in Australia? You’re in the right place! This exciting

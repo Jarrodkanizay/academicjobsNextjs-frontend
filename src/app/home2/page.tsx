@@ -155,23 +155,23 @@ export default async function myPage() {
                   </figure>
 
                   <ul className=" p-4 pl-12 list-disc text-gray-500">
-                    <a href="https://www.academicjobs.com/employers/harvard-university/3100">
+                    <a href="/employers/harvard-university/3100">
                       Harvard University
                     </a>
-                    <a href="https://www.academicjobs.com/employers/massachusetts-institute-of-technology/3103">
+                    <a href="/employers/massachusetts-institute-of-technology/3103">
                       {' '}
                       <br /> Massachusetts Institute of Technology (MIT)
                     </a>
-                    <a href="https://www.academicjobs.com/employers/stanford-university/3101">
+                    <a href="/employers/stanford-university/3101">
                       {' '}
                       Stanford University
                       <br />
                     </a>
-                    <a href="https://www.academicjobs.com/employers/university-of-california-berkeley/3105">
+                    <a href="/employers/university-of-california-berkeley/3105">
                       {' '}
                       University of California Berkeley (UCB)
                     </a>
-                    <a href="https://www.academicjobs.com/employers/caltech/3128">
+                    <a href="/employers/caltech/3128">
                       {' '}
                       California Institute of Technology (Caltech)
                     </a>
@@ -205,25 +205,25 @@ export default async function myPage() {
                     />
                   </figure>
                   <ul className=" p-4 pl-12 list-disc text-gray-500">
-                    <a href="https://www.academicjobs.com/employers/queensland-university-of-technology-qut-/3786">
+                    <a href="/employers/queensland-university-of-technology-qut-/3786">
                       Queensland University of Technology (QUT)
                     </a>
-                    <a href="https://www.academicjobs.com/employers/bond-university/3785/">
+                    <a href="/employers/bond-university/3785/">
                       {' '}
                       Bond University
                       <br />
                     </a>
-                    <a href="https://www.academicjobs.com/employers/the-university-of-sydney/3171">
+                    <a href="/employers/the-university-of-sydney/3171">
                       {' '}
                       The University of Sydney
                       <br />
                     </a>
-                    <a href="https://www.academicjobs.com/employers/australian-national-university/3739">
+                    <a href="/employers/australian-national-university/3739">
                       {' '}
                       Australian National University (ANU)
                       <br />
                     </a>
-                    <a href="https://www.academicjobs.com/employers/monash-university/3182/">
+                    <a href="/employers/monash-university/3182/">
                       {' '}
                       Monash University
                     </a>
@@ -255,21 +255,21 @@ export default async function myPage() {
                     />
                   </figure>
                   <ul className=" p-4 pl-12 list-disc text-gray-500">
-                    <a href="https://www.academicjobs.com/employers/university-of-oxford/3099">
+                    <a href="/employers/university-of-oxford/3099">
                       University of Oxford
                       <br />
                     </a>
-                    <a href="https://www.academicjobs.com/employers/imperial-college-london/3129">
+                    <a href="/employers/imperial-college-london/3129">
                       {' '}
                       Imperial College London
                       <br />
                     </a>
-                    <a href="https://www.academicjobs.com/employers/university-of-cambridge/12635">
+                    <a href="/employers/university-of-cambridge/12635">
                       {' '}
                       University of Cambridge
                       <br />
                     </a>
-                    <a href="https://www.academicjobs.com/employers/university-of-edinburgh/12681">
+                    <a href="/employers/university-of-edinburgh/12681">
                       {' '}
                       University of Edinburgh
                       <br />
@@ -1040,7 +1040,7 @@ export default async function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4">
                   <Link
-                    href="https://www.academicjobs.com/employers/queensland-university-of-technology/3786/"
+                    href="/employers/queensland-university-of-technology/3786/"
                     className="text-[#003463] font-bold"
                   >
                     Queensland University of Technology (QUT)
@@ -1169,7 +1169,7 @@ export default async function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4">
                   <Link
-                    href="https://www.academicjobs.com/employers/university-of-california-san-diego/3149/"
+                    href="/employers/university-of-california-san-diego/3149/"
                     className="text-[#192847] font-bold"
                   >
                     University of California Las Angeles (UCLA)

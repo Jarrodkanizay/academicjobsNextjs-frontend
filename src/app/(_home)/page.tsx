@@ -527,7 +527,7 @@ export default async function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4">
                   <Link
-                    href="https://www.academicjobs.com/employers/queensland-university-of-technology/3786/"
+                    href="/employers/queensland-university-of-technology/3786/"
                     className="text-[#003463] font-bold"
                   >
                     Queensland University of Technology (QUT)
@@ -656,7 +656,7 @@ export default async function myPage() {
               <ul className="">
                 <li className="mb-1 mt-4">
                   <Link
-                    href="https://www.academicjobs.com/employers/university-of-california-san-diego/3149/"
+                    href="/employers/university-of-california-san-diego/3149/"
                     className="text-[#192847] font-bold"
                   >
                     University of California Las Angeles (UCLA)

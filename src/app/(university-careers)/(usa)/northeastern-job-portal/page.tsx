@@ -53,19 +53,26 @@ export default function Page() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-              Northeastern Job Portal{' '}
+                Northeastern Job Portal{' '}
               </span>
               <br />
             </h1>
 
             <p className="font-bold">
-            Northeastern Job Portal has extensive resources and professional support. NorthEastern University is your go-to partner for guidance in the business world and accomplishing your objectives, regardless of whether you're just getting started or want to expand. 
-
-
+              Northeastern Job Portal has extensive resources and professional
+              support. NorthEastern University is your go-to partner for
+              guidance in the business world and accomplishing your objectives,
+              regardless of whether you're just getting started or want to
+              expand.
             </p>
-            <p className="font-bold">Our committed group of career counselors and business specialists is here to offer you individualized advice, networking opportunities, and mentoring that is catered to your particular professional objectives.</p>
+            <p className="font-bold">
+              Our committed group of career counselors and business specialists
+              is here to offer you individualized advice, networking
+              opportunities, and mentoring that is catered to your particular
+              professional objectives.
+            </p>
             {/* <Link
-              href="https://www.academicjobs.com/employers/northeastern-university/3285"
+              href="/employers/northeastern-university/3285"
               className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2"
             >
               Guest Lecturing Jobs
@@ -110,16 +117,14 @@ export default function Page() {
         </div>
       </section>
 
-<div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
-      <Link
-              href="https://www.academicjobs.com/employers/northeastern-university/3285"
-              className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
-            >
-              Careers at Northeastern
-            </Link>
-            </div>
-
-
+      <div className="font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen mt-8 ml-40">
+        <Link
+          href="/employers/northeastern-university/3285"
+          className="btn  btn-aj text-lg font-bold item-center justify-center text-center md:mb-0 mb-2 mx-auto max-w-screen"
+        >
+          Careers at Northeastern
+        </Link>
+      </div>
     </main>
   );
 }
