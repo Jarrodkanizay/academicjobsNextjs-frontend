@@ -61,6 +61,11 @@ const Footer = () => {
           </li>
 
           <li>
+            <Link href="/australian-university-jobs">
+              Australian University Jobs
+            </Link>
+          </li>
+          <li>
             <Link href="/academic-talent-pool">
               Make Extra Money - See How...
             </Link>

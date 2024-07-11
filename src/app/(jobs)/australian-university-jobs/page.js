@@ -334,8 +334,6 @@ export default function Page() {
                     </li>
                   ))}
                 </ul>
-
-                {/* <div dangerouslySetInnerHTML={{ __html: footer_content }} /> */}
               </div>
             </div>
           }
