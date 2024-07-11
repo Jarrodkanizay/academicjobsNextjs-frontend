@@ -172,19 +172,33 @@ export default function Page({ params, searchParams }) {
 
           <section className="jobs_grid job_post_search_container uni_jobs_grid">
             <div className={`filters_panel mt-6`}>
-              {
-                <div className={``}>
-                  <div>
-                    <div
-                    // dangerouslySetInnerHTML={{ __html: company_description1 }}
+              <div className={``}>
+                <div>
+                  <div
+                  // dangerouslySetInnerHTML={{ __html: company_description1 }}
+                  />
+                  <h2 className="text-2xl text-gray-blue underline-full">
+                    {footer_h2}
+                  </h2>
+                  <div dangerouslySetInnerHTML={{ __html: footer_content }} />
+                  <Link href={cityOrUni.job_links} className="link link-aj">
+                    View all other academic Jobs Australia
+                  </Link>
+                  <Link
+                    href="https://www.aheia.edu.au"
+                    className="link link-aj"
+                    target="_blank"
+                  >
+                    <Image
+                      src={'/partners/aheia/aheia-logo-transparent.png'}
+                      alt={'AHEIA Logo'}
+                      width={300}
+                      height={300}
+                      className="max-w-[250px] mt-16"
                     />
-                    <h2 className="text-2xl text-gray-blue underline-full">
-                      {footer_h2}
-                    </h2>
-                    <div dangerouslySetInnerHTML={{ __html: footer_content }} />
-                  </div>
+                  </Link>
                 </div>
-              }
+              </div>
             </div>
             <div className="listings_panel">
               <div className="relative pb-16">
