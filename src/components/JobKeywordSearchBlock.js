@@ -84,7 +84,7 @@ const UniSearchBlock = ({
               {
                 category1,
                 category2,
-                realCtg
+                realCtg, link
               },
               index
             ) => (
@@ -95,10 +95,10 @@ const UniSearchBlock = ({
                   console.log("category21",category2)
                   setQuery(category2);
                   setQ(category2)
-                  onSelect(realCtg, category2)
+                  onSelect(realCtg, category2, link)
                 }                }
               >
-                <div className="w-[100%]"><span className="text-sm font-bold">{category2}</span><span className="text-xs">{` (${category1})`}</span></div>
+                <div className="w-[100%]"><span className="text-sm font-bold">{category2}</span>{category1 && <span className="text-xs">{` (${category1})`}</span>}</div>
               </li>
             )
           )}

@@ -32,11 +32,17 @@ export default function JobSearchBoxCountry({ country }) {
   }, []);
   const keyWordRef = useRef(null);
   const cfRef = useRef(null);
-  const onEditorStateSelect = (category, filter) => {
+  const linkRef = useRef(null);
+  const onEditorStateSelect = (category, filter,link) => {
     if (filter == 'All Indigenous Jobs in Australia') {
       keyWordRef.current = 'Indigenous'
       return
     }
+    if (link) {
+      linkRef.current = link;
+      return
+    }
+    linkRef.current = null;
     cfRef.current = { category, filter };
     console.log(category, filter);
   };
@@ -64,6 +70,12 @@ export default function JobSearchBoxCountry({ country }) {
     //   { scroll: false }
     // );
     //router.push(`/jobs-advanced-search?l=${country}`);
+    if (linkRef.current) {
+      const url = linkRef.current;
+      //alert(url); // Just for debugging purposes
+      window.open(url, '_blank');
+      return
+    }
     let q3 = ""
     if (cfRef.current) {
       q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
