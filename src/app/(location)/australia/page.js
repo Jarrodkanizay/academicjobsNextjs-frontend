@@ -113,7 +113,7 @@ export default async function myPage() {
             <section className="wrapper md:flex ">
               <h2 className="sentence mt-[6rem]">
                 <h2 className="sentence-aus md:mb-[-5rem] mb-[-10rem]">
-                  Australia's University Job Website
+                  Australia's University Jobs Website
                 </h2>
                 <span className="mr-8">Find</span>{' '}
                 <span className="md:hidden block my-[-1rem]">
@@ -289,7 +289,7 @@ export default async function myPage() {
 
             <div>
               <p className="px-7 mb-4 mt-1">
-                Australia’s No.1 university job website! Seek uni jobs in
+                Australia’s No.1 university jobs website! Seek uni jobs in
                 Australia at Academic Jobs, where we list all the best jobs for
                 academics globally! Academic Jobs provides an extensive list of
                 opportunities for the future of your career in education,
@@ -297,12 +297,13 @@ export default async function myPage() {
                 fitting position for you.
               </p>
               <p className="px-7">
-                The No.1 job board for academics in Australia for all your uni
-                jobs requirements, from seeking to recruiting, look no further.
-                In just a few simple steps you can be in the running for your
-                dream uni job!
+                Your on-stop-spot for all Uni Jobs in Australia, from seeking to
+                recruiting, look no further. In just a few simple steps you can
+                be in the running for your dream uni job!
               </p>
-              <p className="px-7">Find all the best jobs here…</p>
+              <p className="px-7">
+                Find all the best Australian University Jobs here…
+              </p>
             </div>
           </div>
 
