@@ -43,11 +43,15 @@ const JobAlert = ({ alert, onEdit, onDelete }) => {
             <div className="mt-2 space-y-1">
                 {alert.country && <p><strong>Country:</strong> {alert.country}</p>}
                 {/* {alert.employmentType && <p><strong>Employment Type:</strong> {alert.employmentType}</p>} */}
-                {alert.frequency && <p><strong>Frequency:</strong> {alert.frequency}</p>}
+                {alert.frequency && (
+                    <p><strong>Frequency:</strong> {alert.frequency === 'twiceWeekly' ? 'Twice a week' : alert.frequency}</p>
+                )}
                 {institutions.length > 0 && <p><strong>Institutions:</strong> {institutions.join(', ')}</p>}
                 {alert.mainField && <p><strong>Field:</strong> {alert.mainField}</p>}
                 {/* {alert.remote !== undefined && <p><strong>Remote:</strong> {alert.remote ? 'Yes' : 'No'}</p>} */}
-                {alert.salaryFrom && alert.salaryTo && <p><strong>Salary Range:</strong> ${alert.salaryFrom} - ${alert.salaryTo}</p>}
+                {alert.salaryFrom && alert.salaryTo && (
+                    <p><strong>Salary Range:</strong> ${alert.salaryFrom.toLocaleString()} - ${alert.salaryTo.toLocaleString()}</p>
+                )}
                 {states.length > 0 && <p><strong>States:</strong> {states.join(', ')}</p>}
                 {subFields.length > 0 && <p><strong>Sub Fields:</strong> {subFields.join(', ')}</p>}
             </div>
@@ -58,6 +62,7 @@ const JobAlert = ({ alert, onEdit, onDelete }) => {
             </div>
         </div>
     );
+    
 };
 
 const JobAlerts = () => {

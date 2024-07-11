@@ -158,9 +158,8 @@ export default function Header() {
             onClick={() => setIsNavOpen(false)}
           />
           <NavItem
-            url={`/${
-              countryMappings2[region?.toLowerCase()]?.url
-            }/university-rankings`}
+            url={`/${countryMappings2[region?.toLowerCase()]?.url
+              }/university-rankings`}
             icon="/upward-arrow.svg"
             navLink="University Rankings"
             forceButtonClass="border-b hover:border-amber-500 "
@@ -240,9 +239,16 @@ export default function Header() {
                   <NavItem
                     url=""
                     icon="/icons/signin.svg"
-                    navLink="Sign In"
+                    navLink="Sign In As Job Seeker"
                     forceButtonClass="border-b hover:border-amber-500 "
                     onClick={() => signIn()}
+                  />
+                  <NavItem
+                    url=""
+                    icon="/icons/signin.svg"
+                    navLink="Sign In As Employer"
+                    forceButtonClass="border-b hover:border-amber-500 "
+                    onClick={() => { window.location.href = 'https://www.iloveacademicjobs.com/login'; }}
                   />
                   <NavItem
                     url="/auth/sign-up"
@@ -250,6 +256,15 @@ export default function Header() {
                     navLink="Sign Up"
                     forceButtonClass="border-b hover:border-amber-500 "
                     forceImageClass="text-amber-500"
+                    onClick={() => setIsNavOpen(false)}
+                  />
+                  <NavItem
+                    url={`/${countryMappings2[region?.toLowerCase()]?.url
+                      }/recruitment/`}
+                    icon="/post-a-job-icon.svg"
+                    navLink="Post a Job"
+                    forceLinkClass=""
+                    forceButtonClass=""
                     onClick={() => setIsNavOpen(false)}
                   />
                 </>
@@ -281,11 +296,10 @@ export default function Header() {
               </details>
             </>
           )}
-          <div className="ml-auto post-a-job-button ">
+          <div className="ml-auto post-a-job-button md:block hidden">
             <NavItem
-              url={`/${
-                countryMappings2[region?.toLowerCase()]?.url
-              }/recruitment/`}
+              url={`/${countryMappings2[region?.toLowerCase()]?.url
+                }/recruitment/`}
               icon="/post-a-job-icon.svg"
               navLink="Post a Job"
               forceLinkClass=""

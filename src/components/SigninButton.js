@@ -52,8 +52,8 @@ const SigninButton = () => {
                     )
                       ? userDetails.image
                       : userDetails?.image
-                      ? `https://academicjobs.s3.amazonaws.com/img/users/${userDetails.image}`
-                      : ''
+                        ? `https://academicjobs.s3.amazonaws.com/img/users/${userDetails.image}`
+                        : ''
                   }
                 />
 
@@ -80,7 +80,22 @@ const SigninButton = () => {
         </>
       ) : (
         <>
-          <Button onClick={() => signIn()}>Sign In</Button>
+          <DropdownMenu>
+            <DropdownMenuTrigger>
+              <Button>Sign In</Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-60 z-99999" align="start">
+              <DropdownMenuItem className="hover:cursor-pointer" onClick={() => signIn()}>
+                Job Seeker
+              </DropdownMenuItem>
+              <a href="https://www.iloveacademicjobs.com/login" target="_blank" rel="noopener noreferrer">
+                <DropdownMenuItem className="hover:cursor-pointer">
+                  Employer
+                </DropdownMenuItem>
+              </a>
+
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Link href={'/auth/sign-up'}>Sign Up</Link>
         </>
       )}
