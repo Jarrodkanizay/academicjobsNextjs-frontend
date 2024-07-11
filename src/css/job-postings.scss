@@ -29,6 +29,11 @@ html {
       gap: 30px;
       padding: 0;
     }
+    .jobs_header.container {
+      width: 100%;
+      max-width: var(--jobs-post-container-max-width);
+      padding: 0;
+    }
 
     .job_post_panel_container {
       grid-template-areas: 'post_panel post_panel post_panel post_panel post_panel post_panel post_panel post_panel listings_panel listings_panel listings_panel listings_panel';
