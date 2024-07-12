@@ -191,7 +191,7 @@ const cityAndUniversityLinks = [
   {
     name: `UTS Jobs`,
     link: `/university-jobs/university-of-technology-sydney-uts`,
-    logo_src: `https://academicjobs.s3.amazonaws.com/img/university-logo/academic%20jobs%20University%20of%20Technology%20Sydney%20logo.jpeg`,
+    logo_src: `https://academicjobs.s3.amazonaws.com/img/university-logo/uts-logo-150h.png`,
   },
   {
     name: `UOW Jobs`,
