@@ -9,7 +9,8 @@ import { useRouter } from 'next/navigation';
 import Autocomplete from 'react-google-autocomplete';
 import JobAlertsForm from '@/components/profile/JobAlertsForm';
 
-const GOOGLE_GEOCODING_API_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
+const GOOGLE_GEOCODING_API_URL =
+  'https://maps.googleapis.com/maps/api/geocode/json';
 
 export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
   const router = useRouter();
@@ -20,15 +21,21 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
   } else {
     searchParams1 = { ...searchParams };
   }
-  const { q = '', lon = 0, lat = 0, currentMiddleCategory, r: paramR, filter0: searchFilter0 } = searchParams1;
+  const {
+    q = '',
+    lon = 0,
+    lat = 0,
+    currentMiddleCategory,
+    r: paramR,
+    filter0: searchFilter0,
+  } = searchParams1;
   const r = paramR || 'Global';
   const [filter0, setFilter0] = useState(
     searchFilter0 && searchFilter0.length > 0
       ? searchFilter0
-      : (p.filter1 && p.filter1.length > 0
-        ? p.filter1
-        : []
-      )
+      : p.filter1 && p.filter1.length > 0
+      ? p.filter1
+      : []
   );
   const filter0Ref = useRef(filter0); // Use useRef to keep a reference to filter0
   const l = p.l || '';
@@ -56,9 +63,11 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
             l,
             lon: lng,
             lat,
-            filter0: filter0Ref.current // Use the ref to get the latest value
+            filter0: filter0Ref.current, // Use the ref to get the latest value
           };
-          router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, { scroll: false });
+          router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, {
+            scroll: false,
+          });
         } else {
           console.warn('No results found for the specified location');
         }
@@ -80,9 +89,11 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
         l,
         lon,
         lat,
-        filter0: filter0Ref.current // Use the ref to get the latest value
+        filter0: filter0Ref.current, // Use the ref to get the latest value
       };
-      router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, { scroll: false });
+      router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, {
+        scroll: false,
+      });
     }
   }, [l, filter0]);
 
@@ -130,7 +141,7 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
   const [filterTypes1, setfilterTypes1] = useState(filterType1);
   const [filterTypes, setfilterTypes] = useState(filterType);
 
-  const onEditorStateChange1 = (suggestion) => { };
+  const onEditorStateChange1 = (suggestion) => {};
 
   const [category, setCategory] = useState('');
   const [filter2, setfilter2] = useState([]);
@@ -236,10 +247,9 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
         l,
         filter0: updatedFilter0,
       };
-      router.replace(
-        `${currentURL}?${toURLParams(newSearchParams)}`,
-        { scroll: false }
-      );
+      router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, {
+        scroll: false,
+      });
     } else {
       updatedFilters = [...selectedFilters, { category, filter }];
       const updatedFilter0 = [...filter0, { category, filter }];
@@ -250,10 +260,9 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
         l,
         filter0: updatedFilter0,
       };
-      router.replace(
-        `${currentURL}?${toURLParams(newSearchParams)}`,
-        { scroll: false }
-      );
+      router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, {
+        scroll: false,
+      });
     }
     setSelectedFilters(updatedFilters);
   };
@@ -271,8 +280,12 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
                   <div className="join mx-auto w-full flex flex-col md:flex-row">
                     <Autocomplete
                       id="autocomplete"
-                      className="input input-bordered join-item w-full md:text-left text-center rounded-xl"
-                      style={{ width: '100%', borderTopRightRadius: '0.75rem', borderBottomRightRadius: '0.75rem' }}
+                      className="search_field input input-bordered join-item w-full md:text-left text-center"
+                      style={{
+                        width: '100%',
+                        borderTopRightRadius: '0.75rem',
+                        borderBottomRightRadius: '0.75rem',
+                      }}
                       apiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
                       onPlaceSelected={(place) => {
                         if (place.geometry && place.geometry.location) {
@@ -285,11 +298,16 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
                             l,
                             lon,
                             lat,
-                            filter0: filter0Ref.current // Use the ref to get the latest value
+                            filter0: filter0Ref.current, // Use the ref to get the latest value
                           };
-                          router.replace(`${currentURL}?${toURLParams(newSearchParams)}`, { scroll: false });
+                          router.replace(
+                            `${currentURL}?${toURLParams(newSearchParams)}`,
+                            { scroll: false }
+                          );
                         } else {
-                          console.warn('Selected place does not have geometry information');
+                          console.warn(
+                            'Selected place does not have geometry information'
+                          );
                         }
                       }}
                       options={{
@@ -299,7 +317,7 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
 
                     {/* Job alert create button here */}
                     <button
-                      className="btn bg-amber-500 text-white mt-4 md:ml-2 md:mt-0 rounded-xl"
+                      className="btn bg-amber-500 text-white mt-4 md:ml-2 md:mt-0 rounded-r-xl rounded-l-[0]"
                       onClick={() => setIsFormVisible(true)} // Set form visibility to true on button click
                     >
                       Create Job Alert
@@ -346,51 +364,24 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
             </div>
           </div>
         </div>
-        {!sidebarView && <div className="flex gap-4 flex-wrap p-2 border-b border-grey">
-          {Object.entries(filterTypes1).map(([filterType, showYN], i) => (
-            <React.Fragment key={i}>
-              <button
-                key={i}
-                className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${category === filterType
-                  ? 'bg-amber-500 text-white border-amber-500'
-                  : ' border-gray-500'
-                  }
-                  ${showYN ? 'block' : 'hidden'}
-                  ${filterType === 'JobType'
-                    ? 'bg-[#f4a10c] md:w-auto text-white animate-pulse font-bold shadow-md'
-                    : ' border-gray-500'
-                  }
-                  `}
-                onClick={() => {
-                  if (category === filterType) {
-                    setIsShowFilter((prev) => !prev);
-                  } else {
-                    setIsShowFilter(true);
-                  }
-                  setCategory(filterType);
-                }}
-              >
-                {filterValues9[filterType] === 'thirdcategory'
-                  ? `${currentMiddleCategory} Specialty`
-                  : filterValues9[filterType]}
-              </button>
-            </React.Fragment>
-          ))}
-        </div>}
-        {!sidebarView && <div className="flex gap-4 flex-wrap p-2">
-          {Object.entries(filterTypes).map(
-            (
-              [filterType, showYN],
-              i // 中层大目录下
-            ) => (
+        {!sidebarView && (
+          <div className="flex gap-4 flex-wrap p-2 border-b border-grey">
+            {Object.entries(filterTypes1).map(([filterType, showYN], i) => (
               <React.Fragment key={i}>
                 <button
                   key={i}
-                  className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${category === filterType
-                    ? 'bg-amber-500 text-white border-amber-500'
-                    : 'bg-white border-gray-500'
-                    }
-                  ${showYN ? 'block' : 'hidden'}`}
+                  className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${
+                    category === filterType
+                      ? 'bg-amber-500 text-white border-amber-500'
+                      : ' border-gray-500'
+                  }
+                  ${showYN ? 'block' : 'hidden'}
+                  ${
+                    filterType === 'JobType'
+                      ? 'bg-[#f4a10c] md:w-auto text-white animate-pulse font-bold shadow-md'
+                      : ' border-gray-500'
+                  }
+                  `}
                   onClick={() => {
                     if (category === filterType) {
                       setIsShowFilter((prev) => !prev);
@@ -401,13 +392,47 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
                   }}
                 >
                   {filterValues9[filterType] === 'thirdcategory'
-                    ? currentMiddleCategory
+                    ? `${currentMiddleCategory} Specialty`
                     : filterValues9[filterType]}
                 </button>
               </React.Fragment>
-            )
-          )}
-        </div>}
+            ))}
+          </div>
+        )}
+        {!sidebarView && (
+          <div className="flex gap-4 flex-wrap p-2">
+            {Object.entries(filterTypes).map(
+              (
+                [filterType, showYN],
+                i // 中层大目录下
+              ) => (
+                <React.Fragment key={i}>
+                  <button
+                    key={i}
+                    className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${
+                      category === filterType
+                        ? 'bg-amber-500 text-white border-amber-500'
+                        : 'bg-white border-gray-500'
+                    }
+                  ${showYN ? 'block' : 'hidden'}`}
+                    onClick={() => {
+                      if (category === filterType) {
+                        setIsShowFilter((prev) => !prev);
+                      } else {
+                        setIsShowFilter(true);
+                      }
+                      setCategory(filterType);
+                    }}
+                  >
+                    {filterValues9[filterType] === 'thirdcategory'
+                      ? currentMiddleCategory
+                      : filterValues9[filterType]}
+                  </button>
+                </React.Fragment>
+              )
+            )}
+          </div>
+        )}
         {isShowFilter && (
           <>
             <div className="p-2 w-full max-h-64 overflow-y-scroll custom-scrollbar rounded-xl">
@@ -420,7 +445,9 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
                     <input
                       type="checkbox"
                       value={filter}
-                      checked={selectedFilters.some((item) => item.filter === filter)}
+                      checked={selectedFilters.some(
+                        (item) => item.filter === filter
+                      )}
                       onChange={() => handleCheckboxChange(filter, category)}
                       className="mr-2"
                     />
@@ -452,7 +479,8 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
           filters={[...selectedFilters]} // Include region filter
           onClose={() => setIsFormVisible(false)}
         />
-      )} {/* Conditionally render JobAlertsForm with filters */}
+      )}{' '}
+      {/* Conditionally render JobAlertsForm with filters */}
     </>
   );
 }

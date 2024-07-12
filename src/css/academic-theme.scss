@@ -1077,6 +1077,11 @@ html {
     .card {
       background-color: white;
     }
+    .search_field {
+      border-radius: 0 !important;
+      border-top-left-radius: 0.75rem !important;
+      border-bottom-left-radius: 0.75rem !important;
+    }
   }
 
   .bg-slate-200 {
