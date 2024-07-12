@@ -313,7 +313,10 @@ export default function Page() {
                 </p>
                 <ul className="remove_bullet grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                   {cityAndUniversityLinks.map((uni, index) => (
-                    <li key={index} className="m-0 p-0 rounded-3xl">
+                    <li
+                      key={index}
+                      className="m-0 p-0 rounded-3xl cursor-pointer"
+                    >
                       <Link href={uni.link}>
                         <div class="flip-card rounded-3xl" tabIndex="0">
                           <div class="flip-card-inner rounded-3xl">
