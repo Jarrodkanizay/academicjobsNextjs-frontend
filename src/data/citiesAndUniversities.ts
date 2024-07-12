@@ -170,9 +170,9 @@ export const cityAndUniversityData = [
   },
   {
     Name: 'melbourne',
-    Title: 'Academic Jobs in Melbourne',
+    Title: 'Academic & University Jobs in Melbourne',
     Description:
-      'Search 110 university and higher education jobs in Melbourne. View our academic vacancies and join our talent pool. New academic jobs added daily.',
+      'Search 110 university and higher education jobs in Melbourne. View our academic vacancies and join our talent pool. New university jobs added daily.',
     Keyword:
       'Academic Jobs Melbourne, Uni jobs Melbourne, Higher education jobs, university jobs',
     content:
@@ -186,9 +186,9 @@ export const cityAndUniversityData = [
   },
   {
     Name: 'sydney',
-    Title: 'Academic jobs in Sydney',
+    Title: 'Academic & University jobs in Sydney',
     Description:
-      'Search 200 university and higher education jobs in Sydney. View our academic vacancies and join our talent pool. New academic jobs added daily.',
+      'Search 200 university and higher education jobs in Sydney. View our academic vacancies and join our talent pool. New university jobs added daily.',
     Keyword:
       'Academic Jobs Sydney, Uni jobs Sydney, Higher education jobs, university jobs',
     image: '/banner-icons/sydney.png',
@@ -199,9 +199,9 @@ export const cityAndUniversityData = [
   },
   {
     Name: 'adelaide',
-    Title: 'Academic Jobs in Adelaide',
+    Title: 'Academic & University Jobs in Adelaide',
     Description:
-      'Search 100 university and higher education jobs in Adelaide. View our academic vacancies and join our talent pool. New academic jobs added daily.',
+      'Search 100 university and higher education jobs in Adelaide. View our academic vacancies and join our talent pool. New university jobs added daily.',
     Keyword:
       'Academic Jobs Adelaide, Uni jobs Adelaide, Higher education jobs, university jobs',
     image: '/banner-icons/adelaide.png',
@@ -213,9 +213,9 @@ export const cityAndUniversityData = [
   {
     break1: true,
     Name: 'brisbane',
-    Title: 'Academic Jobs in Brisbane',
+    Title: 'Academic & University Jobs in Brisbane',
     Description:
-      'Search 100 university and higher education jobs in Brisbane. View our academic vacancies and join our talent pool. New academic jobs added daily.',
+      'Search 100 university and higher education jobs in Brisbane. View our academic vacancies and join our talent pool. New university jobs added daily.',
     Keyword:
       'Academic Jobs Brisbane, Uni jobs Brisbane, Higher education jobs, university jobs',
     image: '/banner-icons/brisbane.png',
@@ -227,9 +227,9 @@ export const cityAndUniversityData = [
   {
     break1: true,
     Name: 'gold coast',
-    Title: 'Academic Jobs in Gold Coast',
+    Title: 'Academic & University Jobs in Gold Coast',
     Description:
-      'Search 100 university and higher education jobs in Gold Coast. View our academic vacancies and join our talent pool. New academic jobs added daily. ',
+      'Search 100 university and higher education jobs in Gold Coast. View our academic vacancies and join our talent pool. New university jobs added daily. ',
     Keyword:
       'Academic Jobs Gold Coast, Uni jobs Gold Coast, Higher education jobs, university jobs',
     image: '/banner-icons/gold-coast.png',
@@ -240,9 +240,9 @@ export const cityAndUniversityData = [
   },
   {
     Name: 'canberra',
-    Title: 'Academic Jobs in Canberra',
+    Title: 'Academic & University Jobs in Canberra',
     Description:
-      'Search 100 university and higher education jobs in Canberra. View our academic vacancies and join our talent pool. New academic jobs added daily. ',
+      'Search 100 university and higher education jobs in Canberra. View our academic vacancies and join our talent pool. New university jobs added daily. ',
     Keyword:
       'Academic Jobs Canberra, Uni jobs Canberra, Higher education jobs, university jobs',
     image: '/banner-icons/canberra.png',
@@ -254,9 +254,9 @@ export const cityAndUniversityData = [
   {
     break1: true,
     Name: 'perth',
-    Title: 'Academic Jobs in Perth',
+    Title: 'Academic & University Jobs in Perth',
     Description:
-      'Search 100 university and higher education jobs in Canberra. View our academic vacancies and join our talent pool. New academic jobs added daily. ',
+      'Search 100 university and higher education jobs in Canberra. View our academic vacancies and join our talent pool. New university jobs added daily. ',
     Keyword:
       'Academic Jobs Perth, Uni jobs Canberra, Higher education jobs, university jobs',
     image: '/banner-icons/perth.png',
