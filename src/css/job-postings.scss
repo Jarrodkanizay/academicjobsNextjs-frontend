@@ -355,7 +355,8 @@ html {
           'listings_panel';
       }
 
-      .job_post_search_container {
+      .job_post_search_container,
+      .job_post_search_container.uni_jobs_grid {
         grid-template-areas:
           'filters_panel'
           'listings_panel';

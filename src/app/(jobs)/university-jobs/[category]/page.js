@@ -114,24 +114,6 @@ export default function Page({ params, searchParams }) {
       {}
       {cityOrUni.type === 'uni' ? (
         <>
-          {/*<div className="w-full relative mb-8">
-            <Image
-              src={image || image !== '' ? image : '/banner-icons/global.png'}
-              alt={alt}
-              className="w-full h-full object-cover object-center absolute top-0 left-0"
-              width={2000}
-              height={1000}
-            />
-
-             <div className="hero-content mx-auto items-start justify-start py-12 relative z-10">
-              <h1 className="md:text-5xl font-bold md:text-left text-white pb-4 m-0">
-                {h1 ? h1 : Title}
-                <p className="mt-4 text-white rounded-lg leading-6">
-                  {content1}
-                </p>
-              </h1>
-            </div> 
-          </div>*/}
           <div
             className="w-full p-8 flex flex-wrap items-center justify-center gap-2 overflow-x-hidden bg-cover bg-center"
             style={{
@@ -144,7 +126,7 @@ export default function Page({ params, searchParams }) {
             }}
           >
             <div
-              className="container px-4 glass flex rounded-2xl"
+              className="container px-4 glass md:flex rounded-2xl"
               style={{ backgroundColor: 'transparent' }}
             >
               <figure className="flex items-center bg-white my-4 rounded-xl p-6">
