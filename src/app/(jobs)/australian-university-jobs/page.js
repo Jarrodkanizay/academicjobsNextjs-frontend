@@ -221,16 +221,16 @@ export default function Page() {
         }}
       >
         <div
-          className="container px-4 glass flex rounded-2xl"
+          className="container px-4 glass md:flex rounded-2xl"
           style={{ backgroundColor: 'transparent' }}
         >
-          <figure className="flex items-center  my-4 rounded-xl p-6">
+          <figure className="flex items-center justify-center my-4 rounded-xl">
             <Image
               src={'/icons/heart.svg'}
               alt={'Australian University Jobs List'}
               width={300}
               height={300}
-              className="max-w-[250px]"
+              className="md:max-w-[250px]"
             />
           </figure>
           <div class="card-body bg-none">

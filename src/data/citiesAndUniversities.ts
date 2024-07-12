@@ -953,7 +953,7 @@ export const cityAndUniversityData = [
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/university-of-technology-sydney-uts-campus.jpg`,
     alt: `University of Technology Sydney (UTS) Jobs Logo`,
-    logo_src: `https://academicjobs.s3.amazonaws.com/img/university-logo/academic%20jobs%20University%20of%20Technology%20Sydney%20logo.jpeg`,
+    logo_src: `https://academicjobs.s3.amazonaws.com/img/university-logo/uts-logo-150h.png`,
     to_href: `/employers/university-of-technology-sydney-uts/3864`,
     logo_alt: `University of Technology Sydney (UTS) Jobs Logo`,
     employerId: 3864,
