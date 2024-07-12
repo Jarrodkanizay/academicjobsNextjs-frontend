@@ -15,10 +15,16 @@ export default function JobSearchBox() {
   };
   const keyWordRef = useRef(null);
   const cfRef = useRef(null);
+  const linkRef = useRef(null);
   const router = useRouter();
   let region = 'Australia';
   const { r = 'Global' } = useURLParams();
-  const onEditorStateSelect = (category, filter) => {
+  const onEditorStateSelect = (category, filter,link) => {
+    if (link) {
+      linkRef.current = link;
+      return
+    }
+    linkRef.current = null;
     cfRef.current = { category, filter }
     console.log(category, filter)
   };
@@ -68,6 +74,12 @@ export default function JobSearchBox() {
         // }
         // router.push(`/jobs-advanced-search?r=${country}&${q3}`
         //alert(country)
+        if (linkRef.current) {
+          const url = linkRef.current;
+          //alert(url); // Just for debugging purposes
+          window.open(url, '_blank');
+          return
+        }
         let q3 = ""
         if (cfRef.current) {
           q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
