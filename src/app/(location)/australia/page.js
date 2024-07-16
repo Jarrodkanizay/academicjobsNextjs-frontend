@@ -620,7 +620,7 @@ export default async function myPage() {
           </div>
         </div>
 
-        <h2 className="underline-full mt-16">Jobs of the week for Australia</h2>
+        <h2 className="underline-full mt-16">University Jobs of the week</h2>
         <JobOfTheWeek jobData={jobData} />
 
         <div id="myUniversity" class="myUniversity">

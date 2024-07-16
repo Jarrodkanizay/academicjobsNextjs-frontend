@@ -18,45 +18,37 @@ const TopUnis = ({ heading }: Props) => {
           </li>
           <li>
             <Link href="/employers/australian-national-university/3739">
-              Australian National University
+              ANU
             </Link>
           </li>
           <li className="text-[#003463] font-bold">
-            <Link href="/employers/university-of-canberra/3821">
-              University of Canberra
-            </Link>
+            <Link href="/employers/university-of-canberra/3821">UC</Link>
           </li>
           <li>
             <h3>New South Wales</h3>
           </li>
           <li>
-            <Link href="/employers/the-university-of-sydney/3171">
-              The University of Sydney
-            </Link>
+            <Link href="/employers/the-university-of-sydney/3171">USYD</Link>
           </li>
           <li>
             <Link href="/employers/university-of-new-south-wales-unsw-/3738">
-              University of New South Wales
+              UNSW
             </Link>
           </li>
           <li>
-            <Link href="/employers/charles-sturt-university/3855">
-              Charles Sturt University
-            </Link>
+            <Link href="/employers/charles-sturt-university/3855">CSU</Link>
           </li>
           <li>
             <Link href="/employers/australian-catholic-university/3853">
-              Australian Catholic University
+              ACU
             </Link>
           </li>
           <li>
-            <Link href="/employers/southern-cross-university/3862">
-              Southern Cross University
-            </Link>
+            <Link href="/employers/southern-cross-university/3862">SCU</Link>
           </li>
           <li>
             <Link href="/employers/university-of-technology-sydney/3864">
-              University of Technology, Sydney
+              UTS
             </Link>
           </li>
           <li>
@@ -65,9 +57,7 @@ const TopUnis = ({ heading }: Props) => {
             </Link>
           </li>
           <li>
-            <Link href="/employers/university-of-new-england/3209">
-              University of New England
-            </Link>
+            <Link href="/employers/university-of-new-england/3209">UNE</Link>
           </li>
           <li>
             <Link href="/employers/university-of-newcastle/3863">
@@ -75,14 +65,12 @@ const TopUnis = ({ heading }: Props) => {
             </Link>
           </li>
           <li>
-            <Link href="/employers/university-of-western-sydney/3865">
-              University of Western Sydney
+            <Link href="/employers/western-sydney-university-wsu-/13128">
+              WSU
             </Link>
           </li>
           <li>
-            <Link href="/employers/university-of-wollongong/3866">
-              University of Wollongong
-            </Link>
+            <Link href="/employers/university-of-wollongong/3866">UOW</Link>
           </li>
         </ul>
         <ul>
@@ -90,9 +78,7 @@ const TopUnis = ({ heading }: Props) => {
             <h3>Victoria</h3>
           </li>
           <li>
-            <Link href="/employers/university-of-melbourne/3170">
-              The University of Melbourne
-            </Link>
+            <Link href="/employers/university-of-melbourne/3170">UniMelb</Link>
           </li>
           <li>
             <Link href="/employers/monash-university/3182">
@@ -100,22 +86,20 @@ const TopUnis = ({ heading }: Props) => {
             </Link>
           </li>
           <li>
-            <Link href="/employers/victoria-university/3871">
-              Victoria University
-            </Link>
+            <Link href="/employers/victoria-university/3871">VU</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/employers/university-of-divinity/3872">
               University of Divinity
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/employers/swimburne-university-of-technology/10541">
-              Swinburne University of Technology
+              Swinburne
             </Link>
           </li>
           <li>
-            <Link href="/employers/rmit-university/3869">RMIT University</Link>
+            <Link href="/employers/rmit-university/3869">RMIT</Link>
           </li>
           <li>
             <Link href="/employers/la-trobe-university/3868">
@@ -123,22 +107,16 @@ const TopUnis = ({ heading }: Props) => {
             </Link>
           </li>
           <li>
-            <Link href="/employers/deakin-university/3856">
-              Deakin University
-            </Link>
+            <Link href="/employers/deakin-university/3856">Deakin</Link>
           </li>
           <li>
-            <Link href="/employers/federation-university/3787">
-              Federation University Australia
-            </Link>
+            <Link href="/employers/federation-university/3787">Federation</Link>
           </li>
           <li>
             <h3>Tasmania</h3>
           </li>
           <li>
-            <Link href="/employers/university-of-tasmania/3867">
-              The University of Tasmania
-            </Link>
+            <Link href="/employers/university-of-tasmania/3867">UTAS</Link>
           </li>
         </ul>
         <ul>
@@ -149,12 +127,10 @@ const TopUnis = ({ heading }: Props) => {
             <Link href="/employers/bond-university/3785">Bond University</Link>
           </li>
           <li>
-            <Link href="/employers/university-of-queensland/3172">
-              The University of Queensland
-            </Link>
+            <Link href="/employers/university-of-queensland/3172">UQ</Link>
           </li>
           <li>
-            <Link href="/employers/cquniversity/3854">CQUniversity</Link>
+            <Link href="/employers/cquniversity/3854">CQU</Link>
           </li>
           <li>
             <Link href="/employers/griffith-university/3218">
@@ -162,32 +138,28 @@ const TopUnis = ({ heading }: Props) => {
             </Link>
           </li>
           <li>
-            <Link href="/employers/james-cook-university/3857">
-              James Cook University
-            </Link>
+            <Link href="/employers/james-cook-university/3857">JCU</Link>
           </li>
           <li>
             <Link href="/employers/university-of-southern-queensland/3861">
-              University of Southern Queensland
+              UniSQ
             </Link>
           </li>
           <li className="text-[#003463] font-bold">
             <Link href="/employers/queensland-university-of-technology-qut-/3786">
-              Queensland University of Technology
+              QUT
             </Link>
           </li>
           <li>
             <Link href="/employers/university-of-sunshine-coast/3859">
-              University of Sunshine Coast
+              UniSC
             </Link>
           </li>
           <li>
             <h3>Northern Territory</h3>
           </li>
           <li>
-            <Link href="/employers/charles-darwin-university/3880">
-              Charles Darwin University
-            </Link>
+            <Link href="/employers/charles-darwin-university/3880">CDU</Link>
           </li>
         </ul>
         <ul>
@@ -199,48 +171,38 @@ const TopUnis = ({ heading }: Props) => {
               The University of Adelaide
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/employers/torrens-university-australia/3875">
               Torrens University Australia
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/employers/university-of-south-australia/3874">
-              University of South Australia
+              UniSA
             </Link>
           </li>
           <li>
-            <Link href="/employers/flinders-university/3873">
-              Flinders University
-            </Link>
+            <Link href="/employers/flinders-university/3873">Flinders</Link>
           </li>
           <li>
             <h3> Western Australia</h3>
           </li>
           <li>
             <Link href="/employers/university-of-western-australia/3173">
-              The University of Western Australia
+              UWA
             </Link>
           </li>
           <li>
-            <Link href="/employers/university-of-notre-dame/3879">
-              University of Notre Dame
-            </Link>
+            <Link href="/employers/university-of-notre-dame/3879">UND</Link>
           </li>
           <li>
-            <Link href="/employers/murdoch-university/3878">
-              Murdoch University
-            </Link>
+            <Link href="/employers/murdoch-university/3878">Murdoch</Link>
           </li>
           <li>
-            <Link href="/employers/edith-cowan-university/3877">
-              Edith Cowan University
-            </Link>
+            <Link href="/employers/edith-cowan-university/3877">ECU</Link>
           </li>
           <li>
-            <Link href="/employers/curtin-university/3876">
-              Curtin University
-            </Link>
+            <Link href="/employers/curtin-university/3876">Curtin</Link>
           </li>
         </ul>
       </div>
