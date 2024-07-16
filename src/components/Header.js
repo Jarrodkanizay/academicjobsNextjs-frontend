@@ -227,6 +227,15 @@ export default function Header() {
                     onClick={() => setIsNavOpen(false)}
                   />
                   <NavItem
+                    url={`/${countryMappings2[region?.toLowerCase()]?.url
+                      }/recruitment/`}
+                    icon="/post-a-job-icon.svg"
+                    navLink="Post a Job"
+                    forceLinkClass=""
+                    forceButtonClass="border-b hover:border-amber-500 "
+                    onClick={() => setIsNavOpen(false)}
+                  />
+                  <NavItem
                     url="./"
                     icon="/icons/logout.svg"
                     navLink="Logout"
@@ -264,7 +273,7 @@ export default function Header() {
                     icon="/post-a-job-icon.svg"
                     navLink="Post a Job"
                     forceLinkClass=""
-                    forceButtonClass=""
+                    forceButtonClass="border-b hover:border-amber-500"
                     onClick={() => setIsNavOpen(false)}
                   />
                 </>
