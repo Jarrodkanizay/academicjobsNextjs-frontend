@@ -3,6 +3,7 @@ export const productData = {
   AUD: [
     {
       id: 'prod_PQqDcoljVuzlC9', //Stripe ID
+      xeroId: 'BJA-1',
       name: 'Single Job Post',
       slug: 'single-job-post-aud',
       currency: 'AUD',
@@ -14,6 +15,7 @@ export const productData = {
     },
     {
       id: 'prod_QJYO5siOzxegVU', //Stripe ID
+      xeroId: 'BJA-3',
       name: '3 Job Pack',
       slug: '3-job-pack-aud',
       currency: 'AUD',
@@ -38,6 +40,7 @@ export const productData = {
   USD: [
     {
       id: 'prod_QMUFGgxEotLfrh', //Stripe ID
+      xeroId: 'BJA-1',
       name: 'Single Job Post',
       slug: 'single-job-post-usd',
       currency: 'USD',
@@ -49,6 +52,7 @@ export const productData = {
     },
     {
       id: 'prod_QMTYh7tPUjL36m', //Stripe ID
+      xeroId: 'BJA-3',
       name: '3 Job Pack',
       slug: '3-job-pack-usd',
       currency: 'USD',
@@ -73,6 +77,7 @@ export const productData = {
   NZD: [
     {
       id: 'prod_Q4UhHuD9LEI2yP', //Stripe ID
+      xeroId: 'BJA-1',
       name: 'Single Job Post',
       slug: 'single-job-post-nzd',
       currency: 'NZD',
@@ -84,6 +89,7 @@ export const productData = {
     },
     {
       id: 'prod_QMUtpv6vUiRi8F', //Stripe ID
+      xeroId: 'BJA-3',
       name: '3 Job Pack',
       slug: '3-job-pack-nzd',
       currency: 'NZD',
