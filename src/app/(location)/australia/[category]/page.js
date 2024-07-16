@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { categoriesAustralia } from '@/data/australiaPositions';
 import JobFilter from '@/components/JobFilter';
 import SearchResults3 from '@/components/SearchResults3';
+import SearchResults1 from '@/components/SearchResults1';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
 import Link from 'next/link';
 
@@ -157,9 +158,18 @@ export default function Page({ params }) {
                 }}
               />
             </div> */}
-            <SearchResults3
-              searchMessage={`${toTitleCase(Name)} Jobs in Australia`}
-            />
+            {Name === 'indigenous' ? (
+              <SearchResults1
+                q={{
+                  q: 'indigenous',
+                  l: 'Australia',
+                }}
+              />
+            ) : (
+              <SearchResults3
+                searchMessage={`${toTitleCase(Name)} Jobs in Australia`}
+              />
+            )}
           </div>
         </div>
       </section>

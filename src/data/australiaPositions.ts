@@ -117,7 +117,7 @@ export const categoriesAustralia = [
     content: `Find 40 HR, People and Culture and management jobs in Australian Universities. View all Academic vacancies now with new jobs added daily!`,
     category2: 'PositionType',
     filter2: 'Professor',
-    Image: '/banner-icons/hr-jobs-banner-image.png',
+    Image: '/banner-icons/indigenous-banner.png',
   },
   {
     Name: `student`,
