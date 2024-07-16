@@ -18,8 +18,9 @@ export default function myPage() {
       <main className="content-grid">
         <div className="prose bg-slate-200 rounded-3xl mt-12">
           <h2 className="underline-full mt-16">
-            WOO HOO, Thank you for your Job Post
+            Thank you for your Job Post!
           </h2>
+          <p>An invoice will be sent to you shortly by email.</p>
           <h3>The AcademicJobs team</h3>
           <p>Have any questions? </p>
           <p className="font-bold">

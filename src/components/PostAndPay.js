@@ -34,9 +34,9 @@ const JobPostForm = ({ product }) => {
   const region = product.currency;
 
   const handleContentChange = (reason) => {
-    //setContent(reason)
     setValue('06_JobPost', reason);
   };
+
   const [regionSelected, setRegion] = useState(region);
   const [standardMode, setStandardMode] = useState(true);
   const [selectedCurrency, setSelectedCurrency] = useState(
@@ -44,14 +44,13 @@ const JobPostForm = ({ product }) => {
   );
   const [paymentMethod, setPaymentMethod] = useState('creditCard');
   const [paymentMessage, setPaymentMessage] = useState('Credit Card');
+
   useEffect(() => {
     console.log('Region', regionSelected);
   }, [regionSelected]); // This effect runs whenever `regionSelected` changes
   const handleChange = (event) => {
     setSelectedCurrency(event.target.value);
-    // Get the selected option element
     const selectedOption = event.target.options[event.target.selectedIndex];
-    // Get the text of the selected option
     const selectedRegion = selectedOption.text;
     setRegion(selectedRegion);
   };
@@ -82,20 +81,76 @@ const JobPostForm = ({ product }) => {
       paymentMethod: 'creditCard',
     },
   });
+
   const onSubmit = async (data) => {
-    // e.preventDefault();
-    // alert()
-    console.log('==========data', data);
-    mutation.mutate({
-      ...data,
-      '00_formSource': `WOO HOO, ring the bell, WE JUST GOT ANOTHER JOB LISTING from the ${partnerName} Post a Job Page`,
-    });
-  };
+    let emailData = {
+        ...data,
+        '00_formSource': `WOO HOO, ring the bell, WE JUST GOT ANOTHER JOB LISTING from the ${partnerName} Post a Job Page`,
+    };
+
+    if (data.paymentMethod === 'invoice') {
+        try {
+            const response = await BaseApi.post('/invoices/create', {
+                product: { id: product.xeroId, description: `${product.description} - ${product.currency}`, price: product.price },
+                customerDetails: {
+                    name: data['01_First_Name'] + ' ' + data['01_Last_Name'],
+                    email: data['02_Email'],
+                    address: data['01_Organisation_Name'],
+                },
+                currencyCode: product.currency,
+                invoiceDetails: {
+                    address: {
+                        line1: data['address_line1'],
+                        line2: data['address_line2'],
+                        city: data['city'],
+                        region: data['region'],
+                        postalCode: data['postalCode'],
+                        country: data['country'],
+                    },
+                    reference: data['08_Invoice_Reference'],
+                },
+            });
+
+            if (response.status === 200) {
+                emailData['Invoice sent'] = 'True';
+                emailData['00_formSource'] += ' (Invoice Sent)';
+            } else {
+                throw new Error('Failed to create invoice');
+            }
+          } catch (error) {
+            console.error('Error during invoice creation:', error);
+          
+            let errorMessage = 'Unknown error occurred during invoice creation';
+            let errorDetails = error.message;
+          
+            if (error.response && error.response.data) {
+              errorMessage = error.response.data.error || errorMessage;
+              errorDetails = error.response.data.details || errorDetails;
+            }
+          
+            emailData['Invoice sent'] = 'False';
+            emailData['Invoice error'] = errorDetails;
+            emailData['00_formSource'] += ' (Invoice Error)';
+            setError('server', {
+                type: 'manual',
+                message: errorMessage,
+            });
+          }
+    }
+
+    try {
+        await mutation.mutateAsync(emailData);
+    } catch (error) {
+        console.error('Error during email sending:', error);
+    }
+};
+
   const mutation = useMutation({
     mutationFn: async (data) => {
       return await BaseApi.post('/sendemail', data);
     },
   });
+
   if (mutation.isLoading) {
     return (
       <div className="bg-white relative max-w-screen-lg mx-auto pl-2">
@@ -109,21 +164,18 @@ const JobPostForm = ({ product }) => {
       </div>
     );
   }
+
   if (mutation.isError) {
     return <div>An error occurred: {mutation.error.message}</div>;
   }
+
   if (mutation.isSuccess) {
     if (paymentMessage === 'Invoice') {
       router.push('/thank-you');
     }
     if (paymentMessage === 'Credit Card') {
-      // router.push('/thank-you');
-
       router.push(product.stripeLink);
     }
-    // if (paymentMessage === 'Credit Card') {
-    //   router.push(stripeLink[regionSelected]);
-    // }
   } else {
     content = (
       <main className=" content-grid">
@@ -132,9 +184,8 @@ const JobPostForm = ({ product }) => {
             <form className=" " onSubmit={handleSubmit(onSubmit)}>
               <div className="flex flex-col gap-4 justify-start">
                 <div
-                  className={`${
-                    newContact || standardMode ? 'show-form' : 'hide-form'
-                  }`}
+                  className={`${newContact || standardMode ? 'show-form' : 'hide-form'
+                    }`}
                 >
                   <div className="grid w-full items-center gap-1.5">
                     <InputBlock
@@ -148,8 +199,6 @@ const JobPostForm = ({ product }) => {
                       autoComplete="organization"
                       hidden={newContact || standardMode ? false : true}
                       required={true}
-                      // value={organisationName}
-                      // onChange={handleInputChange}
                     />
                   </div>
                   <div className="flex gap-2 mt-4">
@@ -277,7 +326,83 @@ const JobPostForm = ({ product }) => {
                   defaultValue={`${product.name} - ${product.currency}${product.price}`}
                   hidden={true}
                 />{' '}
-                {/* <p>{product.id}</p> */}
+                {paymentMethod === 'invoice' && (
+                  <>
+                    <label className="form-control">
+                      <span className="label-text text-xs pb-1">
+                        Invoice Address
+                      </span>
+                    </label>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <InputBlock
+                        register={register}
+                        errors={errors}
+                        label="Address Line 1"
+                        type="text"
+                        field="address_line1"
+                        forceClass=" text-black"
+                        placeholder="Address Line 1"
+                        required={true} />
+                      <InputBlock
+                        register={register}
+                        errors={errors}
+                        label="Address Line 2"
+                        type="text"
+                        field="address_line2"
+                        forceClass=" text-black"
+                        placeholder="Address Line 2"
+                        required={false} />
+
+                      <InputBlock
+                        register={register}
+                        errors={errors}
+                        label="City"
+                        type="text"
+                        field="city"
+                        forceClass=" text-black"
+                        placeholder="City"
+                        required={true} />
+
+
+                      <InputBlock
+                        register={register}
+                        errors={errors}
+                        label="Region"
+                        type="text"
+                        field="region"
+                        forceClass=" text-black"
+                        placeholder="Region"
+                        required={true} />
+
+                      <InputBlock
+                        register={register}
+                        errors={errors}
+                        label="Postal Code"
+                        type="text"
+                        field="postalCode"
+                        forceClass=" text-black"
+                        placeholder="Postal Code"
+                        required={true} />
+
+                      <InputBlock
+                        register={register}
+                        errors={errors}
+                        label="Country"
+                        type="text"
+                        field="country"
+                        forceClass=" text-black"
+                        placeholder="Country"
+                        required={true} />
+                    </div><InputBlock
+                      register={register}
+                      errors={errors}
+                      label="Invoice Reference (for your records)"
+                      type="text"
+                      field="08_Invoice_Reference"
+                      forceClass=" text-black"
+                      placeholder="Invoice Reference"
+                      required={true} /></>
+                )}
                 <p className="m-0 text-xl">
                   Purchase <strong>{product.name}</strong> for{' '}
                   <strong className="text-emerald-600">
@@ -313,7 +438,7 @@ const JobPostForm = ({ product }) => {
                       name="paymentMethod"
                       value="creditCard"
                       {...register('paymentMethod')}
-                      onClick={() => setPaymentMessage('Credit Card')}
+                      onClick={() => { setPaymentMessage('Credit Card'); setPaymentMethod('Credit Card'); }}
                       className="radio radio-aj ml-2"
                     />
                   </label>
@@ -327,7 +452,7 @@ const JobPostForm = ({ product }) => {
                           name="paymentMethod"
                           value="invoice"
                           {...register('paymentMethod')}
-                          onClick={() => setPaymentMessage('Invoice')}
+                          onClick={() => { setPaymentMessage('Invoice'); setPaymentMethod('invoice'); }}
                           className="radio radio-aj ml-2"
                         />
                       </label>
@@ -343,7 +468,6 @@ const JobPostForm = ({ product }) => {
             </form>
           </div>
 
-          {/* Right panel */}
           <div className="relative">
             <div className="flex">
               <Speedo size={80} />
@@ -386,4 +510,5 @@ const JobPostForm = ({ product }) => {
   }
   return <>{content}</>;
 };
+
 export default JobPostForm;
