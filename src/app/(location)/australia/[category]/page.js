@@ -1,8 +1,9 @@
 import Image from 'next/image';
-import { regionData } from '@/data/australiaPositions';
+import { categoriesAustralia } from '@/data/australiaPositions';
 import JobFilter from '@/components/JobFilter';
 import SearchResults3 from '@/components/SearchResults3';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
+import Link from 'next/link';
 
 export async function generateMetadata({ params, searchParams }) {
   let { category } = params;
@@ -15,7 +16,7 @@ export async function generateMetadata({ params, searchParams }) {
     Keyword = '',
     content: content1 = '',
     Image: imageSrc = '',
-  } = regionData.find((item) => item.Name === category) || {};
+  } = categoriesAustralia.find((item) => item.Name === category) || {};
 
   return {
     title: Title,
@@ -25,6 +26,15 @@ export async function generateMetadata({ params, searchParams }) {
   };
 }
 
+function toTitleCase(str) {
+  return str.toLowerCase().replace(/(?:^|\s)\w/g, function (match) {
+    return match.toUpperCase();
+  });
+}
+
+// Example usage
+let title = toTitleCase('hello world');
+console.log(title); // Output: Hello World
 const splitTitle = (title) => {
   const words = title.split(' ');
   const firstPart = words[0];
@@ -43,15 +53,23 @@ export default function Page({ params }) {
   const {
     Name = '',
     Title = '',
+    h1 = '',
+    h2 = '',
     Description = '',
     Keyword = '',
     content: content1 = '',
     category2 = '',
     filter2 = '',
     Image: imageSrc = '',
-  } = regionData.find((item) => item.Name === category) || {};
+  } = categoriesAustralia.find((item) => item.Name === category) || {};
 
-  const titleParts = splitTitle(Title);
+  let heading = Title;
+
+  if (h1 && h1 !== '') {
+    heading = h1;
+  }
+
+  const titleParts = splitTitle(heading);
 
   return (
     <div className="overflow-y w-full">
@@ -82,19 +100,71 @@ export default function Page({ params }) {
           />
         </div>
       </div>
+      <AdvancedSearchBar
+        p={{
+          r: 'Australia',
+          filter1: [
+            {
+              category: category2,
+              filter: filter2,
+            },
+          ],
+        }}
+      />
+      <section className="jobs_grid job_post_search_container uni_jobs_grid">
+        <div className={`filters_panel mt-6`}>
+          <div className={``}>
+            <div>
+              <div
+              // dangerouslySetInnerHTML={{ __html: company_description1 }}
+              />
+              <h2 className="text-2xl text-gray-blue underline-full m-0 mb-6">
+                {h2}
+              </h2>
+              <p>{content1}</p>
+              {/* <div dangerouslySetInnerHTML={{ __html: footer_content }} /> */}
+              {/* <Link href={cityOrUni.job_links} className="link link-aj">
+                View all other academic Jobs Australia
+              </Link> */}
+              {/* <Link
+                href="https://www.aheia.edu.au"
+                className="link link-aj"
+                target="_blank"
+              >
+                <Image
+                  src={'/partners/aheia/aheia-logo-transparent.png'}
+                  alt={'AHEIA Logo'}
+                  width={300}
+                  height={300}
+                  className="max-w-[250px] mt-16"
+                />
+              </Link> */}
+            </div>
+          </div>
+        </div>
+        <div className="listings_panel">
+          <div className="relative pb-16">
+            {/* <div className="search_panel">
+              <AdvancedSearchBar
+                sidebarView={true}
+                p={{
+                  filter1: [
+                    {
+                      category: 'InstitutionName',
+                      filter: cityOrUni.uni_name,
+                    },
+                  ],
+                }}
+              />
+            </div> */}
+            <SearchResults3
+              searchMessage={`${toTitleCase(Name)} Jobs in Australia`}
+            />
+          </div>
+        </div>
+      </section>
 
-      <main className="content-grid flex-col md:gap-2">
-        <AdvancedSearchBar
-          p={{
-            r: "Australia",
-            filter1: [
-              {
-                category: category2,
-                filter: filter2,
-              },
-            ],
-          }}
-        />
+      {/* <div className="content-grid">
         <section className="jobs_grid job_post_search_container">
           <div className="filters_panel">
             <div className="filters_content">
@@ -107,7 +177,13 @@ export default function Page({ params }) {
             </div>
           </div>
         </section>
-      </main>
+        <div>
+          {footer_h2 !== undefined || footer_h2 !== '' ? (
+            <h2>{footer_h2}</h2>
+          ) : null}
+          <div dangerouslySetInnerHTML={{ __html: footer_content }} />
+        </div>
+      </div> */}
     </div>
   );
 }

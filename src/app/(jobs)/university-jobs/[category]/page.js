@@ -111,7 +111,6 @@ export default function Page({ params, searchParams }) {
         : ausCities.includes(Name)
         ? ausHeader
         : otherHeader}
-      {}
       {cityOrUni.type === 'uni' ? (
         <>
           <div

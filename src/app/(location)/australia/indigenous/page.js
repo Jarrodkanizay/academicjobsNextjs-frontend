@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { regionData } from '@/data/australiaPositions';
+import { categoriesAustralia } from '@/data/australiaPositions';
 import SearchResults1 from '@/components/SearchResults1';
 import JobSearchBox from '@/components/JobSearchBox';
 import TalentPool from '@/components/TalentPoolCTA';
@@ -45,7 +45,7 @@ const splitTitle = (title) => {
 // export async function generateMetadata({ params, searchParams }) {
 //   // console.log(params)
 //   let { category } = params;
-//   // console.log(regionData)
+//   // console.log(categoriesAustralia)
 //   // console.log(category);
 //   category = category?.replace(/-/g, ' ');
 //   // console.log(category);
@@ -55,7 +55,7 @@ const splitTitle = (title) => {
 //     Description = '',
 //     Keyword = '',
 //     content: content1 = '',
-//   } = regionData.find((item) => item.Name === category) || {};
+//   } = categoriesAustralia.find((item) => item.Name === category) || {};
 //   return {
 //     title: Title,
 //     description: Description,
@@ -67,7 +67,7 @@ export default function Page({ params, searchParams }) {
   // console.log('````````````````````params````````````````````');
   // console.log(params);
   let { category } = params;
-  // console.log(regionData);
+  // console.log(categoriesAustralia);
   // console.log(category);
   category = category?.replace(/-/g, ' ');
   // console.log(category);
@@ -79,7 +79,7 @@ export default function Page({ params, searchParams }) {
     content: content1 = '',
     category2 = '',
     filter2 = '',
-  } = regionData.find((item) => item.Name === category) || {};
+  } = categoriesAustralia.find((item) => item.Name === category) || {};
   console.log(
     '-------------------------------------------------------------------'
   );

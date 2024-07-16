@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { regionData } from '@/data/australiaPositions';
+import { categoriesAustralia } from '@/data/australiaPositions';
 import SearchResults2 from '@/components/SearchResults2';
 import JobSearchBox from '@/components/JobSearchBox';
 import TalentPool from '@/components/TalentPoolCTA';
@@ -10,7 +10,7 @@ const regionName = 'Australia';
 export async function generateMetadata({ params, searchParams }) {
   // console.log(params)
   let { category } = params;
-  // console.log(regionData)
+  // console.log(categoriesAustralia)
   // console.log(category);
   category = category?.replace(/-/g, ' ');
   // console.log(category);
@@ -21,8 +21,9 @@ export async function generateMetadata({ params, searchParams }) {
     Description = '',
     Keyword = '',
     content: content1 = '',
-  } = regionData.find((item) => item.Name === searchParams.mastercategory) ||
-  {};
+  } = categoriesAustralia.find(
+    (item) => item.Name === searchParams.mastercategory
+  ) || {};
 
   return {
     title: Title,
@@ -36,7 +37,7 @@ export default function Page({ params, searchParams }) {
   // console.log('````````````````````params````````````````````');
   // console.log(params);
   let { category } = params;
-  // console.log(regionData);
+  // console.log(categoriesAustralia);
   // console.log(category);
   category = category?.replace(/-/g, ' ');
   // console.log(category);
@@ -47,8 +48,9 @@ export default function Page({ params, searchParams }) {
     Description = '',
     Keyword = '',
     content: content1 = '',
-  } = regionData.find((item) => item.Name === searchParams.mastercategory) ||
-  {};
+  } = categoriesAustralia.find(
+    (item) => item.Name === searchParams.mastercategory
+  ) || {};
   const filter1 = [{ mastercategory: searchParams.mastercategory }];
   const paras = content1.split('\n');
   console.log('filter1=========', filter1, searchParams.mastercategory);
