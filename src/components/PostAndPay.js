@@ -95,7 +95,7 @@ const JobPostForm = ({ product }) => {
                 customerDetails: {
                     name: data['01_First_Name'] + ' ' + data['01_Last_Name'],
                     email: data['02_Email'],
-                    address: data['03_Institution_Name'],
+                    address: data['01_Organisation_Name'],
                 },
                 currencyCode: product.currency,
                 invoiceDetails: {
