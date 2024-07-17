@@ -75,7 +75,7 @@ export default function Page({ params }) {
 
   return (
     <div className="overflow-y w-full">
-      <div className="w-full relative">
+      <div className="w-full relative bg-amber-400">
         <Image
           src={imageSrc}
           alt={alt}
