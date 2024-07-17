@@ -7,7 +7,7 @@ import Link from 'next/link';
 import JobFilter from '@/components/JobFilter';
 import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
 import { useSearchParams } from 'next/navigation';
-
+import { universityJobsData } from '@/data/universityJobsData';
 import JobTypeFaces from '@/components/JobTypeFaces';
 export default function Page() {
   const searchParams = loadFromURLParams(useSearchParams());
