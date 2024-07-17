@@ -9,78 +9,9 @@ export const regionData = [
     The No.1 job board for uni jobs in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top faculty jobs to find the best position for you!
      
     Find all the best academic faculty jobs here…`,
-    image: '/banner-icons/hr-jobs-banner-image.png',
-    category2: "master_category_job_type",
-    filter2: "Academic / Faculty"
-  },
-  {
-    Name: `lecturer`,
-    Title: `Lecturing Jobs in New Zealand`,
-    Description: `For further information about Lecturer Academic Jobs New Zealand, browse the list of available higher education lecturer roles on this website.`,
-    Keyword: `Lecturer Jobs In New Zealand`,
-    content: `Seek your perfect lecturing position through New Zealand’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top universities in New Zealand. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
- 
-    The No.1 job board for lecturers in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.
-     
-    Find all the best lecturing jobs here…`,
-    image: '/banner-icons/lecturer-banner.png',
-    category2: "PositionType",
-    filter2: "Lecturer/Instructor"
-
-  },
-  {
-    Name: `research`,
-    Title: `Research Jobs in New Zealand`,
-    Description: `Do you like to solve real-world problems and learn new things? If so, you might want to apply for a researcher position at one of the top universities listed on Research Academic Jobs New Zealand.`,
-    Keyword: `Academic Jobs New Zealand Research. Researcher positions`,
-    content: `Seek your perfect research position through New Zealand’s best job board! At Academic Jobs we offer the most renowned research jobs at the top universities in New Zealand. Positions as an academic researcher will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
- 
-    The No.1 job board for researchers in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you!
-     
-    Find all the best research jobs here…`,
-    image: '/banner-icons/research-banner.png',
-    category2: "PositionType",
-    filter2: "Research"
-
-  },
-  {
-    Name: `professor`,
-    Title: `Professor Jobs in New Zealand`,
-    Description: `Professor Academic Jobs New Zealand may cover a wide range of topics and disciplines, depending on the organisation and the area of specialty.`,
-    Keyword: `Professor Academic Jobs New Zealand. professor positions New Zealand`,
-    content: `Seek your perfect professor position through New Zealand’s best job board! At Academic Jobs we offer the most renowned professor jobs at the top universities in New Zealand. Positions as an academic professor will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
- 
-    The No.1 job board for professors in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you!
-     
-    Find all the best jobs here…`,
-    image: '/banner-icons/professor-banner.png',
-    category2: "PositionType",
-    filter2: "Professor"
-
-  },
-  {
-    Name: `student`,
-    Title: `Student Jobs in New Zealand`,
-    Description: `On campus, are you trying to find a flexible, satisfying job? Look through hundreds of student jobs in various fields and specialisations that your school is offering. Send in an application right now to gain practical work experience and skills through Campus New Zealand Graduate Jobs.`,
-    Keyword: `Student Jobs on Campus New Zealand, Student Jobs at University New Zealand`,
-    content: `Find the perfect student job near you through Academic Jobs New Zealand. At Academic Jobs we offer the most exciting student jobs, for young professionals looking for some extra cash for the weekends. Our job listings offer great hourly rates, flexible hours, and access to many perks and opportunities.
- 
-    The No.1 job board for students in New Zealand. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
-     
-    Find all the best student jobs here…`,
-    image: '/banner-icons/student-banner.png',
-  },
-  {
-    Name: `hr jobs`,
-    Title: `Human Resource Jobs in New Zealand`,
-    Description: `A bachelor's degree or higher in a related field, such human resources management, is required to be eligible for Human Resources Academic Jobs New Zealand.`,
-    Keyword: `Human Resources Academic Jobs New Zealand, Human Resources AcademicJobs `,
-    content: `Seek your perfect human resource position through New Zealand’s best job board! At Academic Jobs we offer the most renowned HR jobs at the top universities in New Zealand. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
- 
-    The No.1 job board for HR professionals in universities in New Zealand. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
-    image: '/banner-icons/hr-jobs-banner-image.png',
-    category2: "master_category_job_type",
-    filter2: "Human Resources"
+    image: '/banner-heros/lecturer-banner.png',
+    category2: 'master_category_job_type',
+    filter2: 'Academic / Faculty',
   },
   {
     Name: `executive`,
@@ -92,9 +23,35 @@ export const regionData = [
     The No.1 job board for academics in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!
      
     Find all the best executive jobs here…`,
-    image: '/banner-icons/hr-jobs-banner-image.png',
-    category2: "master_category_job_type",
-    filter2: "Executive"
+    image: '/banner-heros/professor-banner.png',
+    category2: 'master_category_job_type',
+    filter2: 'Executive',
+  },
+  {
+    Name: `hr jobs`,
+    Title: `Human Resource Jobs in New Zealand`,
+    Description: `A bachelor's degree or higher in a related field, such human resources management, is required to be eligible for Human Resources Academic Jobs New Zealand.`,
+    Keyword: `Human Resources Academic Jobs New Zealand, Human Resources AcademicJobs `,
+    content: `Seek your perfect human resource position through New Zealand’s best job board! At Academic Jobs we offer the most renowned HR jobs at the top universities in New Zealand. Most importantly, we are passionate about the HR profession and use our knowledge and expertise to find you your ideal HR job. We have created a network of HR professionals, join our HR 500 Club to be a part of the action.
+ 
+    The No.1 job board for HR professionals in universities in New Zealand. So, if you are looking to advance your career, we are here to help you achieve your ambitions – both in the short term as well as throughout your lifelong career.`,
+    image: '/banner-heros/hr-jobs-banner-image.png',
+    category2: 'master_category_job_type',
+    filter2: 'Human Resources',
+  },
+  {
+    Name: `phd`,
+    Title: `PhD Jobs In New Zealand`,
+    Description: `Numerous PhD job advertisements from institutions in New Zealand and other countries are available. Apply now to gain important job experience and skills!`,
+    Keyword: `Academic PhD Jobs New Zealand`,
+    content: `Seek your perfect PhD position through New Zealand’s best job board! At Academic Jobs we offer PhD positions at the most renowned universities across New Zealand and the globe. PhD opportunities will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+    
+    The No.1 job board for academics in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programs.
+    
+    Find all the best PhD positions here…`,
+    image: '/banner-heros/phd-banner.png',
+    category2: 'master_category_job_type',
+    filter2: 'Student / Phd Jobs',
   },
   {
     Name: `admin`,
@@ -107,11 +64,65 @@ export const regionData = [
     The No.1 job board for academics in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top admin jobs to find the best position for you!
      
     Find all the best staff jobs here…`,
-    image: '/banner-icons/hr-jobs-banner-image.png',
-    category2: "master_category_job_type",
-    filter2: "Staff / Administration"
+    image: '/banner-heros/indigenous-banner.png',
+    category2: 'master_category_job_type',
+    filter2: 'Staff / Administration',
   },
 
+  {
+    Name: `lecturer`,
+    Title: `Lecturing Jobs in New Zealand`,
+    Description: `For further information about Lecturer Academic Jobs New Zealand, browse the list of available higher education lecturer roles on this website.`,
+    Keyword: `Lecturer Jobs In New Zealand`,
+    content: `Seek your perfect lecturing position through New Zealand’s best job board! At Academic Jobs we offer the most renowned lecturing jobs at the top universities in New Zealand. Positions as an academic lecturer will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for lecturers in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed lecturing jobs to find the best position for you.
+     
+    Find all the best lecturing jobs here…`,
+    image: '/banner-heros/lecturer-banner.png',
+    category2: 'PositionType',
+    filter2: 'Lecturer/Instructor',
+  },
+  {
+    Name: `research`,
+    Title: `Research Jobs in New Zealand`,
+    Description: `Do you like to solve real-world problems and learn new things? If so, you might want to apply for a researcher position at one of the top universities listed on Research Academic Jobs New Zealand.`,
+    Keyword: `Academic Jobs New Zealand Research. Researcher positions`,
+    content: `Seek your perfect research position through New Zealand’s best job board! At Academic Jobs we offer the most renowned research jobs at the top universities in New Zealand. Positions as an academic researcher will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for researchers in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top research jobs to find the best position for you!
+     
+    Find all the best research jobs here…`,
+    image: '/banner-heros/research-banner.png',
+    category2: 'PositionType',
+    filter2: 'Research',
+  },
+  {
+    Name: `professor`,
+    Title: `Professor Jobs in New Zealand`,
+    Description: `Professor Academic Jobs New Zealand may cover a wide range of topics and disciplines, depending on the organisation and the area of specialty.`,
+    Keyword: `Professor Academic Jobs New Zealand. professor positions New Zealand`,
+    content: `Seek your perfect professor position through New Zealand’s best job board! At Academic Jobs we offer the most renowned professor jobs at the top universities in New Zealand. Positions as an academic professor will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
+ 
+    The No.1 job board for professors in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top professor jobs to find the best position for you!
+     
+    Find all the best jobs here…`,
+    image: '/banner-heros/professor-banner.png',
+    category2: 'PositionType',
+    filter2: 'Professor',
+  },
+  {
+    Name: `student`,
+    Title: `Student Jobs in New Zealand`,
+    Description: `On campus, are you trying to find a flexible, satisfying job? Look through hundreds of student jobs in various fields and specialisations that your school is offering. Send in an application right now to gain practical work experience and skills through Campus New Zealand Graduate Jobs.`,
+    Keyword: `Student Jobs on Campus New Zealand, Student Jobs at University New Zealand`,
+    content: `Find the perfect student job near you through Academic Jobs New Zealand. At Academic Jobs we offer the most exciting student jobs, for young professionals looking for some extra cash for the weekends. Our job listings offer great hourly rates, flexible hours, and access to many perks and opportunities.
+ 
+    The No.1 job board for students in New Zealand. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
+     
+    Find all the best student jobs here…`,
+    image: '/banner-heros/student-banner.png',
+  },
   {
     Name: `graduate`,
     Title: `Graduate Jobs In New Zealand`,
@@ -122,20 +133,6 @@ export const regionData = [
   The No.1 job board for graduates in New Zealand. Academic Jobs provides an extensive list of opportunities for the next step of your career, carefully sectioning the top jobs to find the best position for you!
   
   Find all the best graduate jobs here…`,
-  image: '/banner-icons/graduate-banner.png',
-  },
-  {
-    Name: `phd`,
-    Title: `PhD Jobs In New Zealand`,
-    Description: `Numerous PhD job advertisements from institutions in New Zealand and other countries are available. Apply now to gain important job experience and skills!`,
-    Keyword: `Academic PhD Jobs New Zealand`,
-    content: `Seek your perfect PhD position through New Zealand’s best job board! At Academic Jobs we offer PhD positions at the most renowned universities across New Zealand and the globe. PhD opportunities will provide you with the chance to engage with partners domestically and internationally, work with some of the brightest minds, and use top-notch facilities and resources.
-    
-    The No.1 job board for academics in New Zealand. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed fellowships, scholarships, and programs.
-    
-    Find all the best PhD positions here…`,
-    image: '/banner-icons/phd-banner.png',
-    category2: "master_category_job_type",
-    filter2: "Student / Phd Jobs"
+    image: '/banner-heros/graduate-banner.png',
   },
 ];

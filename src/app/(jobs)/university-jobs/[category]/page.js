@@ -63,7 +63,7 @@ export default function Page({ params, searchParams }) {
   ausHeader = (
     <div className="w-full relative mb-8">
       <Image
-        src={image || image !== '' ? image : '/banner-icons/global.png'}
+        src={image || image !== '' ? image : '/banners/global.jpg'}
         alt={alt}
         className="w-full h-full object-cover object-center absolute top-0 left-0"
         width={2000}
@@ -80,7 +80,7 @@ export default function Page({ params, searchParams }) {
   otherHeader = (
     <div className="w-full relative mb-8">
       <Image
-        src={image || image !== '' ? image : '/banner-icons/global.png'}
+        src={image || image !== '' ? image : '/banners/global.jpg'}
         alt={alt}
         className="w-full h-full object-cover object-center absolute top-0 left-0"
         width={2000}

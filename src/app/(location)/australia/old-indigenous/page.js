@@ -20,7 +20,7 @@ const regionContent = {
   Discover university jobs for First Nations peoples at the most renowned Australian universities. We are dedicated to ensuring that everyone is accepted and has equal opportunities to gain the best possible employment and job opportunities. Academic Jobs is committed to promoting First Nations people’s excellence in academia and fostering a culture of respect and recognition.
   The No.1 job board for Aboriginals and Torres Strait Islander academics in Australia. Academic Jobs provides an extensive list of opportunities for the future of your career, carefully sectioning the top Higher Ed jobs to find the best position for you.
   Find all the best jobs here…`,
-  Image: '/banner-icons/indigenous-banner.png',
+  Image: '/banner-heros/indigenous-banner.png',
 };
 
 const paras = regionContent.content.split('\n');

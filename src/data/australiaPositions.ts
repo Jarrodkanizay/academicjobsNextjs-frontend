@@ -105,7 +105,7 @@ export const categoriesAustralia = [
     Keyword: `Human Resources Academic Jobs Australia, Human Resources AcademicJobs`,
     category2: 'PositionType',
     filter2: 'Human Resources',
-    Image: '/banner-icons/indigenous-banner.png',
+    Image: '/banner-heros/indigenous-banner.png',
   },
   {
     Name: `indigenous`,
@@ -129,7 +129,7 @@ export const categoriesAustralia = [
     Keyword: `Academic PhD Jobs Australia`,
     category2: 'PositionType',
     filter2: 'Student / Phd Jobs',
-    Image: '/banner-icons/phd-banner.png',
+    Image: '/banner-heros/phd-banner.png',
   },
   {
     Name: `student`,
@@ -141,7 +141,7 @@ export const categoriesAustralia = [
     Keyword: `Student Jobs on Campus Australia, Student Jobs at University Australia`,
     category2: 'PositionType',
     filter2: 'Professor',
-    Image: '/banner-icons/student-banner.png',
+    Image: '/banner-heros/student-banner.png',
   },
   {
     Name: `graduate`,
@@ -153,6 +153,6 @@ export const categoriesAustralia = [
     Keyword: `Graduate Jobs Australia`,
     category2: '',
     filter2: '',
-    Image: '/banner-icons/graduate-banner.png',
+    Image: '/banner-heros/graduate-banner.png',
   },
 ];

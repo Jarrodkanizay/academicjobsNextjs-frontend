@@ -177,7 +177,7 @@ export const cityAndUniversityData = [
       'Academic Jobs Melbourne, Uni jobs Melbourne, Higher education jobs, university jobs',
     content:
       "Seek university jobs from Melbourne's top universities, such as Unimelb, Monash, RMIT, Swinburne, La Trobe, VU and Deakin.",
-    image: '/banner-icons/melbourne.png',
+    image: '/banners/melbourne.jpg',
     alt: 'Melbourne Academic Jobs',
     filter: {
       l: 'Melbourne',
@@ -191,7 +191,7 @@ export const cityAndUniversityData = [
       'Search 200 university and higher education jobs in Sydney. View our academic vacancies and join our talent pool. New university jobs added daily.',
     Keyword:
       'Academic Jobs Sydney, Uni jobs Sydney, Higher education jobs, university jobs',
-    image: '/banner-icons/sydney.png',
+    image: '/banners/sydney.jpg',
     alt: 'Sydney Academic Jobs',
     content:
       "Seek university jobs from Sydney's top universities, such as USYD, UNSW, WSU, UTS, UOW, Macquarie and more.",
@@ -204,7 +204,7 @@ export const cityAndUniversityData = [
       'Search 100 university and higher education jobs in Adelaide. View our academic vacancies and join our talent pool. New university jobs added daily.',
     Keyword:
       'Academic Jobs Adelaide, Uni jobs Adelaide, Higher education jobs, university jobs',
-    image: '/banner-icons/adelaide.png',
+    image: '/banners/adelaide.jpg',
     alt: 'Adelaide Academic Jobs',
     content:
       "Seek University jobs from Adelaide's top universities, such as University of Adelaide, UniSA, and Flinders University.",
@@ -218,7 +218,7 @@ export const cityAndUniversityData = [
       'Search 100 university and higher education jobs in Brisbane. View our academic vacancies and join our talent pool. New university jobs added daily.',
     Keyword:
       'Academic Jobs Brisbane, Uni jobs Brisbane, Higher education jobs, university jobs',
-    image: '/banner-icons/brisbane.png',
+    image: '/banners/brisbane.jpg',
     alt: 'Brisbane Academic Jobs',
     content:
       "Seek university jobs from Brisbane's top universities, such as Bond, QUT, UQ, CQU, Griffith, JCU and more.",
@@ -232,7 +232,7 @@ export const cityAndUniversityData = [
       'Search 100 university and higher education jobs in Gold Coast. View our academic vacancies and join our talent pool. New university jobs added daily. ',
     Keyword:
       'Academic Jobs Gold Coast, Uni jobs Gold Coast, Higher education jobs, university jobs',
-    image: '/banner-icons/gold-coast.png',
+    image: '/banners/gold-coast.jpg',
     alt: 'Gold Coast Academic Jobs',
     content:
       "Seek university jobs from Gold Coast's top universities, such as Bond, Griffith, SCU and more.",
@@ -245,7 +245,7 @@ export const cityAndUniversityData = [
       'Search 100 university and higher education jobs in Canberra. View our academic vacancies and join our talent pool. New university jobs added daily. ',
     Keyword:
       'Academic Jobs Canberra, Uni jobs Canberra, Higher education jobs, university jobs',
-    image: '/banner-icons/canberra.png',
+    image: '/banners/canberra.jpg',
     alt: 'Canberra Academic Jobs',
     content:
       "Seek university jobs from Canberra's top universities, such as ANU, UC, and more",
@@ -259,7 +259,7 @@ export const cityAndUniversityData = [
       'Search 100 university and higher education jobs in Canberra. View our academic vacancies and join our talent pool. New university jobs added daily. ',
     Keyword:
       'Academic Jobs Perth, Uni jobs Canberra, Higher education jobs, university jobs',
-    image: '/banner-icons/perth.png',
+    image: '/banners/perth.jpg',
     alt: 'Perth Academic Jobs',
     content:
       "Seek university jobs from Perth's top universities such as UWA, Notre Dame, Murdoch and more ",
@@ -273,7 +273,7 @@ export const cityAndUniversityData = [
     Description:
       'Find 88 university jobs in Tasmania from top universities such as University of Tasmania (UTAS). View academic job vacancies in lecturer, research and faculty jobs.',
     Keyword: 'Academic and University Jobs in Tasmania',
-    image: '/banner-icons/hobart.png',
+    image: '/banners/hobart.jpg',
     alt: 'Tasmania University jobs',
     content:
       'Seek all university jobs, such as lecturer, postdoctoral and research positions in the University of Tasmania (UTAS).',
@@ -287,7 +287,7 @@ export const cityAndUniversityData = [
     Description:
       ' On Academic Jobs Hobart You can filter by discipline, level, type, location, and more. You can also sign up for email alerts to get notified of new opportunities as they arise.  ',
     Keyword: 'Academic Jobs Hobart',
-    image: '/banner-icons/hobart.png',
+    image: '/banners/hobart.jpg',
     alt: 'Hobart Academic Jobs',
     content: "Seek university jobs from Hobart's top institutions, such as UOT",
     country: 'Australia',
