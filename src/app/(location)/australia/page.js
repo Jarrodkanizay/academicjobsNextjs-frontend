@@ -287,8 +287,27 @@ export default async function myPage() {
               Academic & University Jobs&nbsp;Australia
             </h1>
 
-            {/* June 2024 version */}
+            {/* New changes 18 July 2024… */}
             <div>
+              <p className="px-7 mb-4 mt-1">
+                Australia’s no 1 University Job Board Website! Seek top faculty
+                and university staff positions from Australia’s leading
+                universities. Begin your search for academic jobs, dean and
+                executive roles, HR and admin positions from top universities
+                both nationally and internationally.
+              </p>
+              <p className="px-7">
+                Whether you're a professor, researcher, lecturer or postdocs,
+                our online job board offers the most current opportunities in
+                academia. Stay updated with the latest job vacancies by joining
+                our talent pool. Find your next uni jobs now and join a
+                collaborative environment dedicated to intellectual growth,
+                professional development and research excellence.
+              </p>
+            </div>
+
+            {/* June 2024 version */}
+            {/* <div>
               <p className="px-7 mb-4 mt-1">
                 Australia’s No.1 university job website! Seek uni jobs in
                 Australia at Academic Jobs, where we list all the best jobs for
@@ -304,7 +323,7 @@ export default async function myPage() {
                 dream uni job!
               </p>
               <p className="px-7">Find all the best jobs here…</p>
-            </div>
+            </div> */}
 
             {/* July 2024 version */}
             {/* <div>
