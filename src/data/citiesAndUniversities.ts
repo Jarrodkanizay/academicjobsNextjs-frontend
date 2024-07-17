@@ -194,7 +194,7 @@ export const cityAndUniversityData = [
     image: '/banner-icons/sydney.png',
     alt: 'Sydney Academic Jobs',
     content:
-      "Seek university jobs from Sydney's top universities, such as USYD, UNSW, UTS, UOW, Macquarie and more.",
+      "Seek university jobs from Sydney's top universities, such as USYD, UNSW, WSU, UTS, UOW, Macquarie and more.",
     country: 'Australia',
   },
   {
@@ -246,7 +246,7 @@ export const cityAndUniversityData = [
     Keyword:
       'Academic Jobs Canberra, Uni jobs Canberra, Higher education jobs, university jobs',
     image: '/banner-icons/canberra.png',
-    alt: 'canberra academic jobs',
+    alt: 'Canberra Academic Jobs',
     content:
       "Seek university jobs from Canberra's top universities, such as ANU, UC, and more",
     country: 'Australia',
@@ -276,7 +276,7 @@ export const cityAndUniversityData = [
     image: '/banner-icons/hobart.png',
     alt: 'Tasmania University jobs',
     content:
-      'Seek university jobs from Tasmania’s top universities, such as University of Tasmania (UTAS).',
+      'Seek all university jobs, such as lecturer, postdoctoral and research positions in the University of Tasmania (UTAS).',
     country: 'Australia',
   },
   {
