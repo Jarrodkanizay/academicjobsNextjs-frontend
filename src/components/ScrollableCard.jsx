@@ -240,7 +240,7 @@ const Carousel = () => {
         </button>
       </div>
       <div className="container text-center mt-8">
-        <Link href="/higher-education-tips" className="btn btn-aj">
+        <Link href="/higher-ed-jobs-advice" className="btn btn-aj">
           See more Higher Ed tips
         </Link>
       </div>

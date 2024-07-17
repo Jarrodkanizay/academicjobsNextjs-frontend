@@ -59,7 +59,7 @@ export default function BlogPosts({
         reorder={false}
       />
 
-      <h2 className="underline-full mb-8"> Top Academic Career Help</h2>
+      <h2 className="underline-full mb-8"> Academic Career Tips</h2>
 
       {blogData ? (
         <>
