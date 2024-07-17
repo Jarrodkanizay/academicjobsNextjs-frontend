@@ -176,7 +176,7 @@ export const cityAndUniversityData = [
     Keyword:
       'Academic Jobs Melbourne, Uni jobs Melbourne, Higher education jobs, university jobs',
     content:
-      "Seek university jobs from Melbourne's top institutions, such as University of Melbourne, Monash University, RMIT and more.",
+      "Seek university jobs from Melbourne's top universities, such as Unimelb, Monash, RMIT, Swinburne, La Trobe, VU and Deakin.",
     image: '/banner-icons/melbourne.png',
     alt: 'Melbourne Academic Jobs',
     filter: {
@@ -194,7 +194,7 @@ export const cityAndUniversityData = [
     image: '/banner-icons/sydney.png',
     alt: 'Sydney Academic Jobs',
     content:
-      "Seek university jobs from Sydney's top institutions, such as University of Sydney, University of New South Wales, UTS, Macquarie and more.",
+      "Seek university jobs from Sydney's top universities, such as USYD, UNSW, UTS, UOW, Macquarie and more.",
     country: 'Australia',
   },
   {
@@ -207,7 +207,7 @@ export const cityAndUniversityData = [
     image: '/banner-icons/adelaide.png',
     alt: 'Adelaide Academic Jobs',
     content:
-      "Seek University jobs from Sydney's top institutions, such as Adelaide uni, Carnegie Mellon, Tarren’s, UNISA and more.",
+      "Seek University jobs from Adelaide's top universities, such as University of Adelaide, UniSA, and Flinders University.",
     country: 'Australia',
   },
   {
@@ -221,7 +221,7 @@ export const cityAndUniversityData = [
     image: '/banner-icons/brisbane.png',
     alt: 'Brisbane Academic Jobs',
     content:
-      "Seek university jobs from Brisbane's top institutions, such as University of Queensland, QUT, CQU and more.",
+      "Seek university jobs from Brisbane's top universities, such as Bond, QUT, UQ, CQU, Griffith, JCU and more.",
     country: 'Australia',
   },
   {
@@ -235,7 +235,7 @@ export const cityAndUniversityData = [
     image: '/banner-icons/gold-coast.png',
     alt: 'Gold Coast Academic Jobs',
     content:
-      "Seek university jobs from Brisbane's top institutions Bond, Griffith, Southern Cross University and more.",
+      "Seek university jobs from Gold Coast's top universities, such as Bond, Griffith, SCU and more.",
     country: 'Australia',
   },
   {
@@ -248,7 +248,7 @@ export const cityAndUniversityData = [
     image: '/banner-icons/canberra.png',
     alt: 'canberra academic jobs',
     content:
-      "Seek university jobs from Canberra's top institutions, such as ANU, UC, ACU Canberra and more…",
+      "Seek university jobs from Canberra's top universities, such as ANU, UC, and more",
     country: 'Australia',
   },
   {
@@ -262,7 +262,7 @@ export const cityAndUniversityData = [
     image: '/banner-icons/perth.png',
     alt: 'Perth Academic Jobs',
     content:
-      "Seek university jobs from Perth's top institution such as UWA, Notre Dame, Murdoch University and more… ",
+      "Seek university jobs from Perth's top universities such as UWA, Notre Dame, Murdoch and more ",
     country: 'Australia',
   },
   {
@@ -276,7 +276,7 @@ export const cityAndUniversityData = [
     image: '/banner-icons/hobart.png',
     alt: 'Tasmania University jobs',
     content:
-      'Seek university jobs from Tasmania’s top institutions, such as University of Tasmania (UTAS), Australian Maritime College and Jane Franklin hall.',
+      'Seek university jobs from Tasmania’s top universities, such as University of Tasmania (UTAS).',
     country: 'Australia',
   },
   {
@@ -756,6 +756,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in the University of Queensland.`,
     footer_h2: `UQ Career and Employment Opportunities`,
     footer_content: `<p>The University of Queensland is a public research university in Brisbane, It is ranked among the top 50 universities in the world. The university also has a strong research profile, with more than 100 research centres and institutes, and over 7,000 academic and professional staff supporting a diverse student body of around 49,000, including 20,000 international students from over 140 countries.</p><p>Employees working in University of Queensland enjoy many <a href='https://careers.uq.edu.au/why-work-at-uq' target='_blank' class='link link-aj' >employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/university-of-queensland-st-lucia-campus.jpg`,
@@ -779,6 +780,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Australian National University (ANU).`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>The Australian National University (ANU) is renowned for its commitment to excellence in research, teaching, and innovation. Situated in Canberra, Australia's capital city, ANU offers a vibrant academic environment that fosters collaboration and intellectual growth. With over 4000 academic and professional staff supporting a diverse student body of 22,000, ANU is a hub for both aspiring and seasoned academics to make meaningful contributions to their fields.</p><p>Employees working in ANU enjoy many <a href='https://services.anu.edu.au/human-resources/salaries-benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/australian-national-university-anu-campus.jpg`,
@@ -802,6 +804,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in University of Canberra (UC).`,
     footer_h2: `UC Careers and Employment Opportunities`,
     footer_content: `<p>The University of Canberra (UC) stands as a beacon of innovation and excellence in higher education. With a strong commitment to research, teaching, and community engagement, UC offers a vibrant and collaborative environment that fosters personal and professional growth. The University of Canberra caters to a diverse student body of 17,500 students from across Australia and 100 countries.</p><p>Employees working in UC enjoy many <a href='https://www.canberra.edu.au/about-uc/work-at-uc/financial-and-corporate-benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/university-of-canberra-uc-campus.jpg`,
@@ -825,6 +828,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in the University of Sydney.`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>The University of Sydney (USYD) stands as a beacon of innovation and excellence in higher education. With a strong commitment to research, teaching, and community engagement, USYD offers a vibrant and collaborative environment that fosters personal and professional growth. The USYD employs over 10,000 staff that caters to a diverse student body of 70,000 students from across Australia and 100 countries.</p><p>Employees working in USYD enjoy many <a href='https://www.sydney.edu.au/about-us/careers-at-sydney/staff-benefits.html' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/the-university-of-sydney-usyd-campus.jpg`,
@@ -848,6 +852,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in the University of New South Wales.`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>The University of New South Wales, a prestigious institution known for its commitment to excellence in education, research, and innovation. As a world-renowned university, consistently ranked among the top universities, UNSW employs over 11,000 academic and professional staff supporting a diverse body of 70,000 students.</p><p>Employees working in UNSW enjoy many <a href='https://www.jobs.unsw.edu.au/lifestyle-benefits/discounts-entitlements' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/university-of-new-south-wales-unsw-campus.jpg`,
@@ -871,6 +876,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Charles Sturt University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Charles Sturt University (CSU) is a leading Australian institution committed to providing high-quality education and research opportunities across various disciplines. With campuses spanning multiple regions, CSU fosters a diverse and inclusive learning environment. CSU employs over 2,000 academic and professional staff supporting a diverse body of 20,000 students.</p><p>Employees working in CSU enjoy many <a href='https://www.csu.edu.au/jobs/benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/charles-sturt-university-csu-campus.jpg`,
@@ -894,6 +900,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Australian Catholic University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Australian Catholic University is a publicly funded university with several campuses around Australia. It was founded in 1991 following the merger of four Catholic institutions. ACU employs over 2,000 academic and professional staff supporting a diverse body of 20,000 students. It has four faculties: education and arts, health sciences, law and business and theology and philosophy.</p><p>Employees working in ACU enjoy many <a href='https://www.acu.edu.au/about-acu/careers-at-acu/why-work-at-acu/staff-benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/australian-catholic-university-acu-campus.jpg`,
@@ -917,6 +924,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Southern Cross University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Southern Cross University (SCU) is a vibrant and innovative institution renowned for its commitment to academic excellence, research, and community engagement. Situated in the breathtaking landscapes of Australia's east coast, SCU offers a unique environment that fosters learning and growth. With campuses spanning multiple regions, SCU fosters a diverse and inclusive learning environment and employs over 900 academic and professional staff supporting a diverse body of 18,000 students.</p><p>Employees working in SCU enjoy many <a href='https://www.scu.edu.au/staff/hr-services/pay-conditions--benefits/' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/southern-cross-university-scu-campus.jpg`,
@@ -940,6 +948,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in University of Technology Sydney`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>The University of Technology, Sydney (UTS) is a dynamic and innovative institution dedicated to advancing knowledge and fostering creativity. Located in the heart of Sydney, Australia, UTS employs over 4,000 staff that support a diverse body of 45,000 students. With a commitment to social justice and sustainability, UTS empowers students and staff to make a meaningful impact on the world.</p><p>Employees working in UTS enjoy many <a href='https://www.uts.edu.au/staff/working-uts/our-staff-benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/university-of-technology-sydney-uts-campus.jpg`,
@@ -963,6 +972,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Macquarie University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Macquarie University is renowned for its commitment to innovation, groundbreaking research, and academic excellence. With a strong emphasis on real-world application and interdisciplinary collaboration, Macquarie University stands at the forefront of educational institutions, fostering an environment that nurtures critical thinking, creativity, and global perspectives. Located in the heart of Sydney, Australia, Macquarie employs over 3,000 staff that support a diverse body of 44,000 students.</p><p>Employees working in Macquarie University enjoy many <a href='https://www.scu.edu.au/staff/hr-services/pay-conditions--benefits/' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/macquarie-university-campus.jpg`,
@@ -986,6 +996,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in University of New England`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>The University of New England (UNE) is a regionally based, globally networked university renowned for the quality of its student experience and the excellence of its research. UNE was founded with a mission to provide access to education and research for the regional community. UNE employs 1200 staff supporting a diverse body of 24,000 students.</p><p>Employees working in UNE enjoy many <a href='https://www.une.edu.au/jobs-at-une/benefits#:~:text=Working%20at%20UNE%20provides%20advantages,study%20leave%20and%20much%20more.' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/university-of-new-england-une-campus.jpg`,
@@ -1009,6 +1020,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in University of Newcastle`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>The University of Newcastle is a public university in Newcastle, NSW. It is a regionally based, globally networked university renowned for the quality of its student experience and the excellence of its research. University of Newcastle currently employs 3000 staff supporting a diverse body of 37,000 students.</p><p>Employees working in UniNC enjoy many <a href='https://www.newcastle.edu.au/current-staff/working-here/benefits-and-conditions' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/the-university-of-newcastle-campus.jpg`,
@@ -1032,6 +1044,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in University of Wollongong`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>University of Wollongong is an institution committed to excellence in education, research, and community engagement, making it an ideal place for scholars and professionals looking to grow their careers in academia. UOW employs over 2500 academic and professional staff, catering to a diverse student body of 33,000.</p><p>Employees working in UOW enjoy many <a href='https://www.newcastle.edu.au/current-staff/working-here/benefits-and-conditions' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/university-of-wollongong-uow-campus.jpg`,
@@ -1055,6 +1068,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Monash University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Monash University is a public research university based in Melbourne, Victoria. The university has several campuses, four of which are in Victoria (Clayton, Caulfield, Peninsula, and Parkville). Monash university has a vibrant and diverse community - 86,000 students, 17,000 staff, and more than 440,000 alumni.</p><p>Employees working in Monash enjoy many <a href='https://www.monash.edu/jobs/why-work-at-monash/benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/monash-university-campus.jpg`,
@@ -1078,6 +1092,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Victoria University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Victoria University is a public research university located in Melbourne, Australia. It was founded in 1916 and has since grown to become one of the largest and most diverse universities in Australia. The university offers a wide range of courses across various disciplines, including business, education, engineering, health, law, science, and social sciences.</p><p>Employees working in Victoria University enjoy many <a href='https://www.vu.edu.au/staff/benefits-services-for-staff' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/victoria-university-vu-campus.jpg`,
@@ -1101,6 +1116,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in the University of Melbourne`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>The University of Melbourne is a public research university located in Melbourne, Australia. It is consistently ranked among the leading universities in the world and number one in Australia. Unimelb has more than 10,000 academic and professional staff that support a vibrant student body of more than 54,000.</p><p>Employees working in Unimelb enjoy many <a href='https://about.unimelb.edu.au/careers/staff-benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/the-university-of-melbourne-unimelb-campus.jpg`,
@@ -1124,6 +1140,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Swinburne University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Swinburne University is a public research university located in Melbourne, Australia. It was founded in 1916 and has since grown to become one of the largest and most diverse universities in Australia. The university offers a wide range of courses across various disciplines, including business, education, engineering, health, law, science, and social sciences.</p><p>Employees working in Swinburne enjoy many <a href='https://www.swinburne.edu.au/careers-at-swinburne/' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/swinburne-university-of-technology-campus.jpg`,
@@ -1147,6 +1164,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in RMIT University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>RMIT University is a public research university based in Melbourne, Australia. It offers a wide range of courses across various fields such as arts, business, engineering, law, medicine, science, and more. The university has several campuses across Australia and overseas.</p><p>Employees working in RMIT enjoy many <a href='https://www.rmit.edu.au/careers/employee-benefits/' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/rmit-university-campus.jpg`,
@@ -1170,6 +1188,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in La Trobe University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>La Trobe University, a prestigious institution known for its commitment to academic excellence. With a dedication to fostering career readiness and research excellence, La Trobe University provides diverse opportunities for faculty and university jobs. As a top 1% university worldwide, La Trobe University holds a position of distinction among higher education jobs and academic jobs online.</p><p>Employees working in La Trobe University enjoy many <a href='https://www.latrobe.edu.au/jobs/working/benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/la-trobe-university-campus.jpg`,
@@ -1193,6 +1212,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Deakin University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>As a world-class institution, Deakin provides a wide range of higher education jobs, including professor jobs, faculty jobs, and university HR jobs. With its strong reputation for excellence in teaching, learning, and research, Deakin University is a sought-after destination for those seeking university jobs and academic careers.</p><p>Employees working in Deakin University enjoy many <a href='https://www.deakin.edu.au/about-deakin/careers-at-deakin/why-work-at-deakin/employment-benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/deakin-university-campus.jpg`,
@@ -1216,6 +1236,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Federation University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Federation University Australia, a dynamic institution that embraces innovation and excellence, offers a wide array of academic jobs, faculty jobs, and professor jobs across its campuses in Ballarat, Berwick, Brisbane, Gippsland, and the Wimmera. With over 18,500 domestic and international students and 118,000 alumni worldwide, Federation University Australia boasts a diverse and thriving community of independent thinkers</p><p>Employees working in Federation University enjoy many <a href='https://federation.edu.au/staff/working-at-feduni/people-and-culture/pay,-conditions-and-benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/federation-university-australia-campus.jpg`,
@@ -1239,6 +1260,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in UTAS`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>The University of Tasmania (UTAS) is one of Australia's oldest and most prestigious universities. UTAS provides a wide range of job opportunities that attract professionals from various fields: researcher, lecturer or administration roles. As Australia's fourth oldest university, it boasts a diverse student body of over 34,000 and offers numerous degrees across various disciplines.</p><p>Employees working in UTAS enjoy many <a href='https://www.utas.edu.au/about/work' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/the-university-of-tasmania-utas-campus.jpg`,
@@ -1262,6 +1284,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Bond University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Bond University is Australia’s first private, not-for-profit university, located on the Gold Coast, Queensland. Established in 1989, Bond University has been recognised as one of the leading universities in Australia and the world, ranking in the top 20 in the Times Higher Education Young University Rankings 2020</p><p>Employees working in Bond University enjoy many <ahref='https://bond.edu.au/careers/working-at-bond' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/bond-university-campus.jpg`,
@@ -1285,6 +1308,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in CQUniversity`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Central Queensland University (CQUniversity Australia) is the largest regional university in Australia. Across our 20+ locations nationally, CQ University offers an excellent range of vocational, higher education and research courses, offering exceptional choice to students from within Australia and more than 85 countries around the world.</p><p>Employees working in CQ university enjoy many <a href='https://careers.cqu.edu.au/content/Be-Rewarded/?locale=en_GB#:~:text=We%20are%20leading%20the%20way,well%20as%20rewarding%20long%20service.' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/cquniversity-cqu-campus.jpg`,
@@ -1308,6 +1332,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in James Cook University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>JCU is a leading institution in the fields of marine biology, tropical ecology, environmental science, and sustainability studies, offering a wide range of academic programs and research opportunities. James Cook University has consistently ranked among the top universities in the world, particularly in the fields of marine science and environmental studies.</p><p>Employees working in James Cook university enjoy many <a href='https://www.jcu.edu.au/careers-at-jcu/working-at-jcu/benefits.' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/james-cook-university-jcu-campus.jpg`,
@@ -1331,6 +1356,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in University of Southern Queensland.`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>The University of Southern Queensland (UniSQ) is a regional university that offers a range of academic programs and research opportunities in South East Queensland, Australia. UniSQ has a main campus in Toowoomba, as well as other campuses in Springfield, Ipswich, and online. UniSQ has over 25,000 students and 1,500 staff, and is ranked among the top public universities in Australia.</p><p>Employees working in University of Southern Queensland enjoy many <a href='https://www.unisq.edu.au/about-unisq/jobs-at-unisq/why-work-at-unisq' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/university-of-southern-queensland-unisq-campus.jpg`,
@@ -1354,6 +1380,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Queensland University of Technology`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>QUT is a leading Australian University with a global outlook. QUT is well-known for our strong links to industry and government, and our interdisciplinary teams create high-impact research in areas as diverse as climate change mitigation, digital media, materials science, and biomedical innovation. QUT employs over 5000 staff that supports a diverse student body of 50,000.</p><p>Employees working in QUT enjoy many <a href='https://www.qut.edu.au/careers/life-at-qut/real-benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/queensland-university-of-technology-qut-campus.jpg`,
@@ -1377,6 +1404,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in University of Sunshine Coast.`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>The University of the Sunshine Coast (UniSC) is a young and dynamic institution that offers a range of academic programs and research opportunities in South East Queensland, Australia. UniSC is committed to providing a high-quality education that is relevant, innovative, and engaging for its students and the wider community. UniSC has over 18,000 students and 1,200 staff, and is ranked among the top public universities in Australia.</p><p>Employees working in UniSC enjoy many <a href='https://www.usc.edu.au/about/careers-at-unisc/discover-unisc#:~:text=Competitive%20remuneration%20and%20benefits,for%20long%20service%20leave%20entitlements.' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/university-of-the-sunshine-coast-unisc-campus.jpg`,
@@ -1400,6 +1428,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in University of Adelaide`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>The University of Adelaide, a prominent member of Australia's prestigious Group of Eight research-intensive universities, stands tall among the world's leading institutions of higher education and innovation. This academic profile highlights the university's achievements, research excellence, and commitment to academic advancement, making it an attractive destination for faculty jobs, professor jobs, and other academic positions.</p><p>Employees working in University of Adelaide enjoy many <a href='https://www.adelaide.edu.au/staff/induction/useful-information/staff-benefits.' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/the-university-of-adelaide-campus.jpg`,
@@ -1423,6 +1452,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in University of South Australia`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>The University of South Australia (UniSA) is a leading institution in higher education jobs. Established in 1991, UniSA has a rich history dating back to the 19th century. The university offers a wide range of faculty jobs and academic positions across its campuses. UniSA has a strong commitment to research excellence and industry collaboration, making it an attractive destination for professors and faculty job seekers.</p><p>Employees working in University of South Australia enjoy many <a href='https://i.unisa.edu.au/staff/ptc/pay-and-benefits/' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/university-of-south-australia-unisa-campus.jpg`,
@@ -1446,6 +1476,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Flinders University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Flinders University, a leading higher education institution, has been a centre of inspiring achievement for over 50 years. Driven by a commitment to innovation and positive impact in the communities it serves, Flinders provides numerous opportunities for faculty jobs, professor jobs, and university positions.</p><p>Employees working in Flinders University enjoy many <a href='https://staff.flinders.edu.au/employee-resources/working-at-flinders/new-staff/your-benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/flinders-university-campus.jpg`,
@@ -1469,6 +1500,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in University of Western Australia`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>The University of Western Australia (UWA) stands as a preeminent public research university offering numerous higher education jobs and college jobs across diverse disciplines. Established in 1911, UWA proudly holds the title of the oldest university in Western Australia and stands as one of the world's leading universities. UWA employs over 3,800 academic and professional staff supporting a total of 25,000 students.</p><p>Employees working in University of Western Australia enjoy many <a href='https://www.jobs.uwa.edu.au/choose' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/the-university-of-western-australia-uwa-campus.jpg`,
@@ -1492,6 +1524,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in University of Notre Dame`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>With campuses in Australia and the United States, University of Notre Dame provides a supportive environment that fosters academic freedom and intellectual exploration. As an academic, you can contribute to UND's mission through your teaching, scholarship, and service. The university's dynamic research culture addresses global challenges while adhering to ethical principles and Catholic identity.</p><p>Employees working in University of Notre Dame enjoy many <a href='https://www.notredame.edu.au/staff/work/employment-benefits/staff-benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/the-university-of-notre-dame-australia-und-campus.jpg`,
@@ -1515,6 +1548,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Murdoch University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>With over 25,000 students and 2,400 staff members hailing from 90 different countries, Murdoch University is recognised for the profound impact its graduates, research, and innovations have made, both within Western Australia and across the globe. It has three campuses in Western Australia, namely Perth, Mandurah and Rockingham.</p><p>Employees working in Murdoch University enjoy many <a href='https://www.murdoch.edu.au/explore/work-at-murdoch/benefits-services' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/murdoch-university-campus.jpg`,
@@ -1538,6 +1572,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Curtin University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Curtin University is a renowned global institution located in Western Australia. With a strong commitment to excellence in education, research, and innovation, Curtin has earned its reputation as a leading university both nationally and internationally. Established in 1966, the university has continuously evolved, offering a wide range of higher ed jobs, academic jobs, and research programs to nurture the intellectual growth and career aspirations of its students</p><p>Employees working in Curtin University enjoy many <a href='https://staffportal-stg.curtin.edu.au/employment/employee-benefits/' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/curtin-university-campus.jpg`,
@@ -1561,6 +1596,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Charles Darwin University`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Charles Darwin University (CDU) is an Australian public university that offers a range of academic jobs for qualified academics. It has a main campus in Darwin and eight satellite campuses in some metropolitan and regional areas. CDU provides both VET courses and higher education undergraduate and postgraduate degrees, covering a wide range of subjects and disciplines. CDU employs over 2000 academic and professional staff that supports 22,000 university students.</p><p>Employees working in Charles Darwin University enjoy many <a href='https://www.cdu.edu.au/careers-cdu/benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/charles-darwin-university-cdu-campus.jpg`,
@@ -1584,6 +1620,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Edith Cowan University.`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Edith Cowan University (ECU) is a public university in Western Australia that offers innovative and practical courses across a variety of disciplines. ECU encompasses three campuses in Perth and one in Bunbury, with an additional new city campus scheduled to open in late 2025. The university has a strong track record of collaborating with industry, government, and community partners to deliver impactful research outcomes, further solidifying the prospects for academic careers and professor jobs.</p><p>Employees working in ECU enjoy many <a href='https://www.ecu.edu.au/employment-opportunities/working-with-us/benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/edith-cowan-university-ecu-campus.jpg`,
@@ -1607,6 +1644,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Griffith University.`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Griffith University is considered one of Australia’s most innovative tertiary institutions and an influential contributor to education and research. A relatively young university, Griffith has grown to encompass five physical campuses across South East Queensland, with more than 50,000 students. The university is known for its high-impact research, outstanding student experience and ranks among the top 2 percent of universities worldwide.</p><p>Employees working in Griffith University enjoy many <a href='https://www.griffith.edu.au/jobs' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/griffith-university-campus.jpg`,
@@ -1630,6 +1668,7 @@ export const cityAndUniversityData = [
     content: `Seek all university jobs such as lecturer, research, postdoc and HR jobs in Western Sydney University.`,
     footer_h2: `Careers and Employment Opportunities`,
     footer_content: `<p>Western Sydney University is a world-class university, ranked among the top 2%, with a growing international reach and reputation for academic excellence and impactful research. Western Sydney University is recognised for ranking number #1 for global sustainability impact. WSU employs over 1600 professional and academic staff catering to 42,000 students.</p><p>Employees working in Western Sydney University enjoy many <a href='https://www.westernsydney.edu.au/sb/staff_benefits' target='_blank' class='link link-aj'>employee benefits</a> such as competitive salary rates, flexible work arrangements, leave benefits, high superannuation rate, corporate discounts and many more.</p>`,
+
     academic_connection: ``,
     job_links: `/university-jobs?r=Australia&l=&q=&lon=0&lat=0&page=0&category=&currentMiddleCategory=&filter0=%255B%255D&mode=default `,
     image: `/uni-campuses/western-sydney-university-wsu-campus.jpg`,
