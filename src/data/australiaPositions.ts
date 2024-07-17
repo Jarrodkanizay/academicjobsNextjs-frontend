@@ -9,7 +9,7 @@ export const categoriesAustralia = [
     Keyword: `Lecturer Academic Jobs Australia`,
     category2: 'master_category_job_type',
     filter2: 'Academic / Faculty',
-    Image: '/banner-icons/global.png',
+    Image: '/banners/faculty-bg.jpg',
   },
   {
     Name: `executive`,
@@ -21,7 +21,7 @@ export const categoriesAustralia = [
     Keyword: `Executive Academic Jobs Australia, Executive AcademicJobs Australia `,
     category2: 'master_category_job_type',
     filter2: 'Executive',
-    Image: '/banner-icons/global.png',
+    Image: '/banners/executive-bg.jpg',
   },
   {
     Name: `hr jobs`,
@@ -33,7 +33,7 @@ export const categoriesAustralia = [
     Keyword: `Human Resources Academic Jobs Australia, Human Resources AcademicJobs`,
     category2: 'master_category_job_type',
     filter2: 'Human Resources',
-    Image: '/banners/hr-bg.png',
+    Image: '/banners/hr-bg.jpg',
   },
   {
     Name: `phd`,
@@ -45,7 +45,7 @@ export const categoriesAustralia = [
     Keyword: `Academic PhD Jobs Australia`,
     category2: 'master_category_job_type',
     filter2: 'Student / Phd Jobs',
-    Image: '/banners/phd-bg.png',
+    Image: '/banners/phd-bg.jpg',
   },
   {
     Name: `admin`,
@@ -57,7 +57,7 @@ export const categoriesAustralia = [
     Keyword: `Admin and Support Academic Jobs Australia, Admin and Support AcademicJobs`,
     category2: 'master_category_job_type',
     filter2: 'Staff / Administration',
-    Image: '/banner-icons/global.png',
+    Image: '/banners/admin-bg.jpg',
   },
   {
     Name: `lecturer`,
@@ -69,7 +69,7 @@ export const categoriesAustralia = [
     Keyword: `Lecturer Jobs In Australia`,
     category2: 'PositionType',
     filter2: 'Lecturer/Instructor',
-    Image: '/banners/lecturer-bg.png',
+    Image: '/banners/lecturer-bg.jpg',
   },
   {
     Name: `research`,
@@ -81,7 +81,7 @@ export const categoriesAustralia = [
     Keyword: `Academic Jobs Australia Research. Researcher positions`,
     category2: 'PositionType',
     filter2: 'Research',
-    Image: '/banners/research-bg.png',
+    Image: '/banners/research-bg.jpg',
   },
   {
     Name: `professor`,
@@ -93,7 +93,7 @@ export const categoriesAustralia = [
     Keyword: `Professor Academic Jobs Australia. professor positions Australia`,
     category2: 'PositionType',
     filter2: 'Professor',
-    Image: '/banners/professor-bg.png',
+    Image: '/banners/professor-bg.jpg',
   },
   {
     Name: `human_resources`,
@@ -117,7 +117,7 @@ export const categoriesAustralia = [
     Keyword: `indigenous Academic Jobs Australia, indigenous AcademicJobs`,
     category2: 'PositionType',
     filter2: 'Professor',
-    Image: '/banners/indigenous-bg.png',
+    Image: '/banners/indigenous-bg.jpg',
   },
   {
     Name: `phd_jobs`,
