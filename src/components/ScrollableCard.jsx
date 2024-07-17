@@ -2,6 +2,7 @@
 'use client';
 import { useRef, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Carousel = () => {
   const carouselRef = useRef(null);
@@ -41,11 +42,11 @@ const Carousel = () => {
             height={300}
           />
           <div className="ml-0 md:ml-4 mt-4 md:mt-0 p-6 md:p-16">
-            <a href="/become-a-university-lecturer-earn-115k">
+            <Link href="/become-a-university-lecturer-earn-115k">
               <h2 style={{ color: 'white' }}>
                 Become a University Lecturer in Australia: Earn $115k!
               </h2>
-            </a>
+            </Link>
             <p className="text-base mb-4 hidden md:block">
               Thinking of becoming a university lecturer in Australia? Fantastic
               choice! This career path is not only rewarding but also offers
@@ -80,11 +81,11 @@ const Carousel = () => {
             height={200}
           />
           <div className="ml-0 md:ml-4 mt-4 md:mt-0 p-6 md:p-16">
-            <a href="/how-to-excel-as-a-research-assistant-in-australia">
+            <Link href="/how-to-excel-as-a-research-assistant-in-australia">
               <h2 style={{ color: 'white' }}>
                 How to Excel as a Research Assistant in Australia
               </h2>
-            </a>
+            </Link>
             <p className="hidden text-base mb-4  md:block">
               Thinking about a career as a research assistant in Australia?
               You’re in the right place! This exciting opportunity provides
@@ -120,11 +121,11 @@ const Carousel = () => {
             height={500}
           />
           <div className="ml-0 md:ml-4 mt-4 md:mt-0 p-6 md:p-16">
-            <a href="/postdoctoral-success-how-to-thrive-in-your-research-role">
+            <Link href="/postdoctoral-success-how-to-thrive-in-your-research-role">
               <h2 style={{ color: 'white' }}>
                 Ready for a Postdoc? Here’s How to Stand Out!
               </h2>
-            </a>
+            </Link>
             <p className="hidden text-base mb-4  md:block">
               Are you nearing the end of your PhD and wondering what the next
               step in your academic career should be? A postdoctoral position
@@ -159,11 +160,11 @@ const Carousel = () => {
             height={500}
           />
           <div className="ml-0 md:ml-4 mt-4 md:mt-0 p-6 md:p-16">
-            <a href="/how-to-write-a-winning-academic-cv">
+            <Link href="/how-to-write-a-winning-academic-cv">
               <h2 style={{ color: 'white' }}>
                 How to Write a Winning Academic CV
               </h2>
-            </a>
+            </Link>
             <p className="hidden text-base mb-4  md:block">
               Don’t let your academic resume fall to the bottom of the stack.
               Whether you're aiming for a research position or a teaching role,
@@ -196,11 +197,11 @@ const Carousel = () => {
           />
 
           <div className="ml-0 md:ml-4 mt-4 md:mt-0 p-6 md:p-16">
-            <a href="/how-to-prepare-for-a-job-interview">
+            <Link href="/how-to-prepare-for-a-job-interview">
               <h2 style={{ color: 'white' }}>
                 How to prepare for a Job Interview
               </h2>
-            </a>
+            </Link>
             <p className="text-base mb-4">
               Navigating the interview process for an academic position can be
               daunting. Whether you’re aiming for a role as a lecturer,
@@ -237,6 +238,11 @@ const Carousel = () => {
         <button onClick={() => scrollToItem(4)} className="btn btn-s">
           5
         </button>
+      </div>
+      <div className="container text-center mt-8">
+        <Link href="/higher-education-tips" className="btn btn-aj">
+          See more Higher Ed tips
+        </Link>
       </div>
     </div>
   );

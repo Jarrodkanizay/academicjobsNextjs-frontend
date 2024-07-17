@@ -162,9 +162,12 @@ export default function Page({ params, searchParams }) {
                     {footer_h2}
                   </h2>
                   <div dangerouslySetInnerHTML={{ __html: footer_content }} />
-                  <Link href={cityOrUni.job_links} className="link link-aj">
-                    View all other academic Jobs Australia
-                  </Link>
+                  <p>
+                    View all{' '}
+                    <Link href={cityOrUni.job_links} className="link link-aj">
+                      University Jobs
+                    </Link>
+                  </p>
                   <Link
                     href="https://www.aheia.edu.au"
                     className="link link-aj"

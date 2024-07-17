@@ -302,10 +302,10 @@ export default async function myPage() {
           className="w-full"
         />
       </Link> */}
-
       <h2 className="underline-full">
         Higher Education & Academic Employment tips
       </h2>
+
       <ScrollableCard />
 
       {/* New banner for employer rankings */}

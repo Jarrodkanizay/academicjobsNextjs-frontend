@@ -68,7 +68,15 @@ export default function Page() {
           <div class="filters_panel">
             <div class="filters_content">
               <div className="md:block hidden">
-              <SearchResults q={{ filter1: [{ category: 'postRegion', filter: searchParams.r }] }} filterOff={true} lefthandView={true} />
+                <SearchResults
+                  q={{
+                    filter1: [
+                      { category: 'postRegion', filter: searchParams.r },
+                    ],
+                  }}
+                  filterOff={true}
+                  lefthandView={true}
+                />
               </div>
               <JobFilter />
             </div>
@@ -79,8 +87,14 @@ export default function Page() {
               {/* <SearchResults1 q={{ q: q, l: l || '', lon, lat, filter1 }} /> */}
             </div>
             <div className="block md:hidden">
-              <SearchResults q={{ filter1: [{ category: 'postRegion', filter: searchParams.r }] }} filterOff={true} lefthandView={true} />
-              </div>
+              <SearchResults
+                q={{
+                  filter1: [{ category: 'postRegion', filter: searchParams.r }],
+                }}
+                filterOff={true}
+                lefthandView={true}
+              />
+            </div>
           </div>
         </section>
         <div className="max-w-4xl mx-auto py-8"></div>

@@ -138,7 +138,7 @@ export const cityAndUniversityData = [
     Keyword:
       'Massey University Jobs, Massey University Job Vacancies, uni jobs',
     image: '',
-    alt: 'massey-university',
+    alt: 'Massey University Jobs',
     content:
       'Massey University is a public research university with campuses in Auckland, Palmerston North and Wellington, New Zealand.',
     filter: {
@@ -178,7 +178,7 @@ export const cityAndUniversityData = [
     content:
       "Seek university jobs from Melbourne's top institutions, such as University of Melbourne, Monash University, RMIT and more.",
     image: '/banner-icons/melbourne.png',
-    alt: 'melbourne academic jobs',
+    alt: 'Melbourne Academic Jobs',
     filter: {
       l: 'Melbourne',
     },
@@ -192,7 +192,7 @@ export const cityAndUniversityData = [
     Keyword:
       'Academic Jobs Sydney, Uni jobs Sydney, Higher education jobs, university jobs',
     image: '/banner-icons/sydney.png',
-    alt: 'sydney academic jobs',
+    alt: 'Sydney Academic Jobs',
     content:
       "Seek university jobs from Sydney's top institutions, such as University of Sydney, University of New South Wales, UTS, Macquarie and more.",
     country: 'Australia',
@@ -205,7 +205,7 @@ export const cityAndUniversityData = [
     Keyword:
       'Academic Jobs Adelaide, Uni jobs Adelaide, Higher education jobs, university jobs',
     image: '/banner-icons/adelaide.png',
-    alt: 'adelaide academic jobs',
+    alt: 'Adelaide Academic Jobs',
     content:
       "Seek University jobs from Sydney's top institutions, such as Adelaide uni, Carnegie Mellon, Tarren’s, UNISA and more.",
     country: 'Australia',
@@ -219,7 +219,7 @@ export const cityAndUniversityData = [
     Keyword:
       'Academic Jobs Brisbane, Uni jobs Brisbane, Higher education jobs, university jobs',
     image: '/banner-icons/brisbane.png',
-    alt: 'brisbane academic jobs',
+    alt: 'Brisbane Academic Jobs',
     content:
       "Seek university jobs from Brisbane's top institutions, such as University of Queensland, QUT, CQU and more.",
     country: 'Australia',
@@ -233,7 +233,7 @@ export const cityAndUniversityData = [
     Keyword:
       'Academic Jobs Gold Coast, Uni jobs Gold Coast, Higher education jobs, university jobs',
     image: '/banner-icons/gold-coast.png',
-    alt: 'gold coast academic jobs',
+    alt: 'Gold Coast Academic Jobs',
     content:
       "Seek university jobs from Brisbane's top institutions Bond, Griffith, Southern Cross University and more.",
     country: 'Australia',
@@ -260,7 +260,7 @@ export const cityAndUniversityData = [
     Keyword:
       'Academic Jobs Perth, Uni jobs Canberra, Higher education jobs, university jobs',
     image: '/banner-icons/perth.png',
-    alt: 'perth academic jobs',
+    alt: 'Perth Academic Jobs',
     content:
       "Seek university jobs from Perth's top institution such as UWA, Notre Dame, Murdoch University and more… ",
     country: 'Australia',
@@ -288,7 +288,7 @@ export const cityAndUniversityData = [
       ' On Academic Jobs Hobart You can filter by discipline, level, type, location, and more. You can also sign up for email alerts to get notified of new opportunities as they arise.  ',
     Keyword: 'Academic Jobs Hobart',
     image: '/banner-icons/hobart.png',
-    alt: 'hobart academic jobs',
+    alt: 'Hobart Academic Jobs',
     content: "Seek university jobs from Hobart's top institutions, such as UOT",
     country: 'Australia',
   },
