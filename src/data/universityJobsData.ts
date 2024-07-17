@@ -1,0 +1,48 @@
+export const universityJobsData = [
+  {
+    Name: 'blank',
+    type: 'uni',
+    h1: '',
+    Title: '',
+    Description: '',
+    Keyword: '',
+    image: '',
+    alt: '',
+    content: '',
+    filter: {
+      employer_id: '',
+    },
+    footer_h2: '',
+    footer_content: '',
+  },
+  {
+    Name: 'Australia',
+    h1: 'Australia',
+    Title: 'Australia',
+    Description: 'Australia',
+    Keyword: '',
+    image: '',
+    alt: '',
+    content: 'Australia',
+    filter: {
+      employer_id: '3811',
+    },
+    country: 'Australia',
+    footer_content: '',
+  },
+  {
+    Name: 'Global',
+    h1: 'Global',
+    Title: 'Global',
+    Description: 'Global',
+    Keyword: 'Global',
+    image: '',
+    alt: '',
+    content: 'Global',
+    filter: {
+      employer_id: '3811',
+    },
+    country: 'Global',
+    footer_content: '',
+  },
+];
