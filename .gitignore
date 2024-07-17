@@ -20,6 +20,8 @@
 # misc
 .DS_Store
 *.pem
+update_branches.sh
+
 
 # debug
 npm-debug.log*
