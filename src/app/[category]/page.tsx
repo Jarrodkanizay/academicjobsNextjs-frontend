@@ -120,7 +120,7 @@ export default function Page({ params, searchParams }: any) {
   content = (
     <>
       {ausCities.includes(Name) ? ausHeader : otherHeader}
-      <div className="content-grid flex-col md:gap-2">
+      <div className="container">
         <AdvancedSearchBar
           p={{
             r: country,
