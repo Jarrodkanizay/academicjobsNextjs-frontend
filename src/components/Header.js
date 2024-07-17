@@ -30,6 +30,7 @@ export default function Header() {
   const { data: session } = useSession();
   const { r = 'Global' } = useURLParams();
   const region = r;
+  //alert(region)
   //const { region, setRegion, setFilter1, reset } = useStore();
   const pathname = usePathname();
   const [isNavOpen, setIsNavOpen] = useState(false);
