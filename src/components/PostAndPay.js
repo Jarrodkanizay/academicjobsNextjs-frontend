@@ -84,6 +84,7 @@ const JobPostForm = ({ product }) => {
   } = useForm({
     defaultValues: {
       paymentMethod: 'creditCard',
+      '06_JobPost': '', 
     },
   });
 
