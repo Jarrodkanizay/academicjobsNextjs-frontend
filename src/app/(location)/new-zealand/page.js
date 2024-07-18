@@ -258,31 +258,25 @@ export default function Page() {
           <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
             <h2 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
               <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">
-                ACADEMIC&nbsp;JOBS New Zealand:
+                Academic Jobs New Zealand:
               </span>{' '}
             </h2>
 
             <div>
               <p className="px-7 mb-4 mt-1">
-                Discover top university employment opportunities across New
-                Zealand. Our platform is your gateway to a wide range of
-                university jobs, from top-tier faculty positions and academic
-                jobs to administrative roles at leading universities and
-                colleges. Whether you're seeking lecturer jobs, research jobs,
-                or senior academic positions, we provide a comprehensive listing
-                of opportunities to advance your career in higher education.
-                Explore postdoctoral jobs, professor roles, and university
-                vacancies to find the perfect fit for your professional journey.
+                New Zealand’s no 1 University Job Board Website! Seek top
+                university employment opportunities across New Zealand. Begin
+                your search for academic jobs, dean and executive roles, HR and
+                admin positions from top universities both nationally and
+                internationally.
               </p>
               <p className="px-7 md:flex hidden">
-                Our job board is tailored for aspiring and established
-                professionals in the academic sector. Stay informed with the
-                latest university job openings, including academic careers,
-                student support jobs, and university staff positions. Join a
-                collaborative academic environment dedicated to intellectual
-                growth, professional development, and research excellence. Begin
-                your search for university jobs search in NZ top universities
-                today!
+                Whether you're seeking lecturer jobs, research jobs, or senior
+                academic positions, our online job board offers the most current
+                opportunities in academia. Stay informed with the latest
+                university job openings by joining our talent pool. Find your
+                next uni jobs now and join a collaborative environment dedicated
+                to intellectual growth and research excellence.
               </p>
             </div>
           </div>
