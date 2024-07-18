@@ -47,6 +47,16 @@ html {
 html {
   body,
   body .prose {
+    .blog_article {
+      h3 {
+        color: rgb(193, 0, 193);
+        margin-bottom: 0.5rem;
+      }
+      p {
+        margin-bottom: 1.5rem;
+      }
+    }
+
     .flip-card {
       background-color: transparent;
       width: 100%;
