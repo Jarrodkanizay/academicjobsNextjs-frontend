@@ -67,7 +67,11 @@ export default function BlogPosts({
             {blogData.slice(0, topListCount).map((post, index) => (
               <article key={index} className="card bg-slate-100 shadow-xl">
                 <figure>
-                  <Link href={routePath + post.slug}>
+                  <Link
+                    href={
+                      post.customSlug ? post.customSlug : routePath + post.slug
+                    }
+                  >
                     <Image
                       src={post.image_url}
                       alt={post.alt}
@@ -80,7 +84,11 @@ export default function BlogPosts({
                 <div className="card-body">
                   <h2 className="card-title grow line-clamp-4 m-0 min-h-[130px]">
                     <Link
-                      href={routePath + post.slug}
+                      href={
+                        post.customSlug
+                          ? post.customSlug
+                          : routePath + post.slug
+                      }
                       className="hover:text-orange-500 text-2xl"
                     >
                       {post.title}
@@ -107,7 +115,11 @@ export default function BlogPosts({
                   </p>
                   <div className="card-actions justify-end">
                     <Link
-                      href={routePath + post.slug}
+                      href={
+                        post.customSlug
+                          ? post.customSlug
+                          : routePath + post.slug
+                      }
                       className="btn btn-aj btn-sm"
                     >
                       Read more
@@ -160,7 +172,11 @@ export default function BlogPosts({
                 }}
               >
                 <figure className="aspect-w-16 aspect-h-9">
-                  <Link href={routePath + post.slug}>
+                  <Link
+                    href={
+                      post.customSlug ? post.customSlug : routePath + post.slug
+                    }
+                  >
                     <Image
                       src={post.image_url}
                       alt={post.alt}
@@ -172,7 +188,11 @@ export default function BlogPosts({
                 <div className="card-body p-6">
                   <h2 className="card-title line-clamp-3 leading-tight">
                     <Link
-                      href={routePath + post.slug}
+                      href={
+                        post.customSlug
+                          ? post.customSlug
+                          : routePath + post.slug
+                      }
                       className="text-white hover:text-orange-500 text-lg"
                     >
                       {post.title}
@@ -180,7 +200,11 @@ export default function BlogPosts({
                   </h2>
                   <div className="card-actions justify-end mt-auto">
                     <Link
-                      href={routePath + post.slug}
+                      href={
+                        post.customSlug
+                          ? post.customSlug
+                          : routePath + post.slug
+                      }
                       className="btn btn-aj btn-sm"
                     >
                       Read more

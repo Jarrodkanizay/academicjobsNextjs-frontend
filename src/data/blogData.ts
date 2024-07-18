@@ -3,6 +3,63 @@ export const blogData = [
     status: `published`,
     rank: 0,
     title:
+      'Employer Branding Secrets: Attracting the Best Talent in Higher Education',
+    slug: `employer-branding-secrets-attracting-the-best-talent-in-higher-education`,
+    customSlug: `/employer-branding-secrets-attracting-the-best-talent-in-higher-education`,
+    author: `Raymond Mulyawan`,
+    published_at: '2024-07-18',
+    updated_at: ``,
+    image_url: `/blogs/employer-branding-secrets/netflix-branding.gif`,
+    alt: `Employer Branding Secrets: Attracting the Best Talent for your University`,
+    summary:
+      'Universities are grappling with high turnover rates and struggling to attract and retain top talent. Here are six employer branding strategies to help universities attract more qualified applicants and keep their best employees',
+    tags: ['HR, Talent Acquisition, Academic Jobs, Higher Ed Tech'],
+    keywords: '',
+    content: `
+    <article class="blog-content">
+    <h2 style="margin-top: 0;">In the Digital Age, Efficiency Is Key to Success in Recruitment</h2>
+    <p>Universities and academic institutions, often burdened with lengthy and complex hiring processes, are now witnessing a transformative change thanks to <strong>Quick Job Post Technology</strong>.</p>
+    <p>This innovative solution is not only streamlining the way job positions are listed but is also significantly reducing the time and effort required by HR personnel and recruiters to post a job. In this blog post, we delve into how this technology works and the myriad benefits it brings to the recruitment table.</p>
+    
+    <h2>The word revolutionary is thrown around far too often…</h2>
+    <p>This is one of those cases where the impact of Quick Job Post Technology is so transformative and the word <em>revolutionize</em> has real meaning. In an era where efficiency and speed are paramount, the ability to overhaul and significantly improve traditional practices cannot be understated. Quick Job Post Technology is not just changing the game; it's rewriting the rules of engagement for academic recruitment.</p>
+    
+    <p>For decades, the recruitment process has been mired in procedures that are not only time-consuming but also often ineffective at targeting the right candidates. The advent of this technology marks a pivotal moment, akin to the digital revolution that transformed industries across the globe. It's a leap towards a future where the focus shifts from mundane administrative tasks to strategic human resource management and talent acquisition.</p>
+    
+    <p>Moreover, the revolutionary aspect of Quick Job Post Technology lies not only in its efficiency but also in its inclusivity and accessibility. By simplifying the job posting process, it democratises the recruitment landscape, enabling smaller institutions with limited resources to compete on an equal footing with larger entities. This leveling of the playing field is a testament to the transformative power of technology when applied thoughtfully and innovatively.</p>
+    
+    <p>Additionally, the environmental impact cannot be overlooked. By digitizing and streamlining the job posting process, Quick Job Post Technology significantly reduces the need for paper-based applications and advertisements, contributing to a more sustainable and eco-friendly approach to recruitment.</p>
+    
+    <p>In conclusion, when we talk about revolutionizing an industry or a process, Quick Job Post Technology embodies this concept in every sense. It's not just about making things faster or easier; it's about creating a more effective, inclusive, and sustainable approach to university recruitment. This is why the term 'revolutionary' is not just appropriate but necessary in describing the impact of Quick Job Post Technology on the academic world.</p>
+
+    <h2>The Challenge of Traditional Job Posting</h2>
+    <p>Traditionally, posting a job vacancy, especially in the academic sector, has been a time-consuming task. Not even considering the time it takes to draft a detailed job listing, to target suitable candidates, the process could easily take upwards of 9 minutes per post. That is just the time it takes to post your listing on Seek, Indeed, Unijobs and other Academic Job Board Platforms. This 9-minute timeframe not only slows down the recruitment process but also adds to the workload of HR departments and recruiters, who already have their hands full with numerous other tasks.</p>
+    
+    <h2>Enter Quick Job Post Technology</h2>
+    <p>Quick Job Post Technology is designed to address and eliminate the inefficiencies of traditional job posting methods. By automatically extracting and preparing job positions that universities have on offer, this technology provides a streamlined and user-friendly interface for posting these vacancies.</p>
+<p>The standout feature of this technology is the creation of a "headline job post," which offers a preview of the listing, making it incredibly easy for HR personnel or recruiters to review and convert/post a job in a mere 32 seconds.</p>    
+    <h2>How It Works</h2>
+    <p>The technology behind the Higher Ed Quick Job Post is as straightforward as it is innovative. HR personnel or recruiters have a few options:</p>
+    <ul>
+        <li>Find their headline listing on the Academic Jobs Website and activate the full job post.</li>
+        <li>Upload a job listing from a Word document.</li>
+        <li>Or simply copy and paste the text into a SINGLE FIELD on the platform.</li>
+    </ul>
+    <p>The technology then takes over, automatically formatting and posting the job, working out the categories and which candidates to promote the position to. This drastic reduction in time, from over 9 minutes to an average of 32 seconds, not only enhances productivity but also allows recruiters to focus on other critical aspects of their job, such as candidate engagement and selection.</p>
+    
+    <h2>Benefits Beyond Time-Saving</h2>
+    <p>While the most apparent advantage of the Higher Education Quick Job Post Technology is the significant time savings it offers, its benefits extend far beyond just efficiency. This technology ensures that job posts are consistent in format and appearance, enhancing the professional look and feel of the university's recruitment page (maintaining its brand). Moreover, by automating the posting process it minimizes the risk of human error, ensuring that all relevant details are accurately captured and displayed.</p>
+    <p>Furthermore, the headline job post feature acts as a powerful marketing tool, capturing the essence of each job vacancy in a concise and engaging manner. This not only attracts more applicants but also ensures that the vacancies reach the most suitable candidates.</p>
+    
+    <h2>Transforming University Recruitment</h2>
+    <p>Academic Quick Job Post Technology is not just a tool; it's a game-changer in the realm of university recruitment. Automating and simplifying the job posting process sets a new standard for efficiency and effectiveness in academic hiring practices. Universities & Colleges embracing this technology are not only streamlining their recruitment processes but are also positioning themselves as forward-thinking institutions that value innovation and efficiency.</p>
+    <p>In a world where time is of the essence, Quick Job Post Technology is proving to be an invaluable asset for universities and academic institutions. It's not just about posting job vacancies; it's about revolutionizing recruitment, one post at a time.</p>
+</article>`,
+  },
+  {
+    status: `published`,
+    rank: 0,
+    title:
       'How Quick Job Post Technology is Changing the Game for Colleges & Universities',
     slug: `higher-ed-quick-job-post-technology`,
     author: `Raymond Mulyawan`,
