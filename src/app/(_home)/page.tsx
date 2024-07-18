@@ -329,7 +329,7 @@ export default async function myPage() {
       {/* New banner for employer rankings */}
       <Link href={'/university-rankings'} className="my-16">
         <Image
-          src="/banners/top-universities.png"
+          src="/banners/top-universities.jpg"
           alt="University Rankings"
           width={1875}
           height={625}
