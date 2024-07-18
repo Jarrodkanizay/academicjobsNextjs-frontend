@@ -237,7 +237,7 @@ export default async function myPage() {
         <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
           <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 md:px-0">
             <span className="md:text-4xl font-bold text-gray-500 pb-4 inline-block">
-              Academic & University Jobs:
+              Academic & University Jobs:
             </span>
             <span className="block md:inline-block">
               All Higher Ed positions
@@ -245,6 +245,24 @@ export default async function myPage() {
           </h1>
 
           <div>
+            <p className="md:px-7 mb-4 mt-1 text-[12px] md:text-[16px]">
+              The world’s no 1 University Job Board Website! Seek top faculty
+              and university staff positions in higher education. Begin your
+              search for academic jobs, college faculty positions and university
+              HR & admin opportunities, available both nationally and
+              internationally.
+            </p>
+            <p className="md:px-7 text-[12px] md:text-[16px]">
+              Whether you're a professor, researcher, lecturer, or higher
+              education administrator, our online job board offers the most
+              current opportunities in academia. Stay updated with the latest
+              job vacancies by joining our talent pool. Find your next uni jobs
+              now and join a collaborative environment dedicated to intellectual
+              growth and research excellence.
+            </p>
+          </div>
+          {/* Previous version */}
+          {/* <div>
             <p className="md:px-7 mb-4 mt-1">
               Discover top-tier faculty positions and university staff roles in
               the world of higher education. Begin your search for{' '}
@@ -271,7 +289,7 @@ export default async function myPage() {
               collaborative environment dedicated to intellectual growth,
               professional development and research excellence.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       <h2 className="underline-full">University Jobs of the week</h2>

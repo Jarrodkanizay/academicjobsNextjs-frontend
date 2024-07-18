@@ -288,21 +288,21 @@ export default async function myPage() {
             </h1>
 
             {/* New changes 18 July 2024… */}
-            <div>
-              <p className="px-7 mb-4 mt-1">
+            <div className="">
+              <p className="px-7 mb-4 mt-1 text-[12px] md:text-[16px]">
                 Australia’s no 1 University Job Board Website! Seek top faculty
                 and university staff positions from Australia’s leading
                 universities. Begin your search for academic jobs, dean and
                 executive roles, HR and admin positions from top universities
                 both nationally and internationally.
               </p>
-              <p className="px-7">
+              <p className="px-7 text-[12px] md:text-[16px]">
                 Whether you're a professor, researcher, lecturer or postdocs,
                 our online job board offers the most current opportunities in
                 academia. Stay updated with the latest job vacancies by joining
                 our talent pool. Find your next uni jobs now and join a
-                collaborative environment dedicated to intellectual growth,
-                professional development and research excellence.
+                collaborative environment dedicated to intellectual growth and
+                research excellence.
               </p>
             </div>
 
@@ -346,9 +346,9 @@ export default async function myPage() {
             </div>*/}
           </div>
 
-          <div className="  flex flex-wrap gap-6 px-7 pb-4 text-gray-400 mx-auto">
+          {/* <div className="  flex flex-wrap gap-6 px-7 pb-4 text-gray-400 mx-auto">
             <Link href="/australia/faq"> Aus FAQ</Link>
-          </div>
+          </div> */}
         </div>
 
         <div className="max-w-screen-xl mx-auto mt-4">
