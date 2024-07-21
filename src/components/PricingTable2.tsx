@@ -2,22 +2,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { productData } from '@/data/productData';
-import { Span } from 'next/dist/trace';
-
-// type Props = {
-//   productName: string
-// }
-
-type PricingTypes = {
-  cta: string;
-  currencySymbol: string;
-  basic: string;
-  basicPrice: number;
-  business: string;
-  businessPrice: number;
-  enterprise: string;
-  enterprisePrice: number;
-};
+import PriceCard from '@/components/PriceCard';
 
 type Props = {
   currency?: '' | 'AUD' | 'USD' | 'NZD';
@@ -80,7 +65,6 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
             : 'Region'}
         </label>
       ) : null}
-
       <select
         id="currency"
         value={selectedCurrency}
@@ -99,7 +83,6 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
           </option>
         ))}
       </select>
-
       <h2 className="underline-full gray-blue">
         {selectedCurrency === 'AUD'
           ? 'Special: AHEIA Members Only '
@@ -107,11 +90,17 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
         {selectedCurrency === regionMessage ? '' : selectedCurrency}
       </h2>
 
-      <div
+      <section className="pricing lg:grid lg:grid-cols-3 lg:gap-6 mb-16">
+        <PriceCard product={products[0]} />
+        <PriceCard product={products[1]} />
+        <PriceCard product={products[2]} />
+      </section>
+
+      {/* <div
         id="pricing-table-cards"
         className="flex flex-col justify-between items-center lg:flex-row lg:items-start mb-16"
-      >
-        {/* Pricing Card 1 */}
+      > */}
+      {/* Pricing Card 1 
         <div className="w-full flex-1 mt-8 mb-8 p-8 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:rounded-r-none">
           <div className="mb-7 pb-7 flex items-center border-b border-gray-600">
             <Image
@@ -200,9 +189,9 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
           >
             Buy {products[0].name}
           </a>
-        </div>
+        </div>*/}
 
-        {/* Pricing Card 2 */}
+      {/* Pricing Card 2 
         <div className="w-full flex-1 mt-8 mb-8 p-8 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:rounded">
           <div className="mb-7 pb-7 flex items-center border-b border-gray-600">
             <Image
@@ -288,23 +277,6 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
                 <span className="text-black"> cheaper</span> than Seek
               </span>
             </li>
-            {/* <li className="flex text-lg mb-2">
-              <Image
-                width="20"
-                height="20"
-                alt=""
-                src="/icons/check-grey.svg"
-              />
-              <span className="ml-3">
-                <span className="text-black">
-                  {' '}
-                  Save $
-                  {formatNumberWithCommas(
-                    pricing.basicPrice * 3 - pricing.businessPrice
-                  )}
-                </span>
-              </span>
-            </li> */}
           </ul>
           <a
             href={`/purchase/${products[1].slug}`}
@@ -312,9 +284,9 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
           >
             Buy {products[1].name}
           </a>
-        </div>
+        </div>*/}
 
-        {/* Pricing Card 3 */}
+      {/* Pricing Card 3 
         <div className="w-full flex-1 mt-7 p-8 bg-white shadow-xl rounded-3xl sm:w-96 lg:w-full lg:rounded-l-none">
           <div className="mb-7 pb-7 flex items-center border-b border-gray-600">
             <Image
@@ -350,8 +322,7 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
               />
               <span className="ml-3">
                 Unlimited
-                <span className="text-black"> Job Ads</span>{' '}
-                {/* <span className="text-[12px]">(ends soon)</span> */}
+                <span className="text-black"> Job Ads</span>
               </span>
             </li>
             <li className="flex text-lg mb-2">
@@ -420,8 +391,8 @@ const PricingTable = ({ currency = '', hideRegionSelector = false }: Props) => {
           >
             Subscribe to {products[2].name}
           </a>
-        </div>
-      </div>
+        </div>*/}
+      {/* </div> */}
     </div>
   );
 };

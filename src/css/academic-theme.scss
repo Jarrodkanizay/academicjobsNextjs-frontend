@@ -47,6 +47,53 @@ html {
 html {
   body,
   body .prose {
+    .pricing {
+      // display: grid;
+      // grid-template-columns: repeat(3, 1fr);
+      // gap: 2rem;
+      color: white;
+
+      .card {
+        min-height: 20rem;
+        background: rgb(62, 32, 128);
+        background: radial-gradient(
+          circle at bottom right,
+          rgba(62, 32, 128, 1) 0%,
+          rgba(20, 7, 48, 1) 100%
+        );
+        padding: 1.4rem;
+        margin-bottom: 2rem;
+
+        .card-title {
+          color: white;
+          font-size: 1.6rem;
+          margin: 0;
+          margin-bottom: 1rem;
+        }
+        .card-price {
+          position: relative;
+          color: white;
+          font-size: 3rem;
+          margin: 0;
+        }
+        .special {
+          height: 70px;
+          margin-bottom: 16px;
+        }
+        p {
+          margin: 0;
+          margin-top: -0.5rem;
+          margin-bottom: 2rem;
+          font-size: 0.8rem;
+        }
+        .card-footer {
+          p {
+            color: rgb(193, 0, 193);
+          }
+        }
+      }
+    }
+
     .blog_article {
       h3 {
         color: rgb(193, 0, 193);
