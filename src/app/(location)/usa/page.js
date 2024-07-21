@@ -11,12 +11,12 @@ import { getContentRegion } from '@/actions/getContentRegion';
 
 export const metadata = {
   title: {
-    absolute: ' USA Academic Jobs Online',
+    absolute: 'Higher Ed & University jobs USA',
   },
   description:
-    'Search for academic jobs in USA colleges and apply to the top universities and institutions at USA college jobs with faculty, postdoc or staff roles and more. ',
+    'Search 10200 Higher Ed jobs in the United States. Apply to top colleges and universities for faculty, administrative, postdoc, professor positions today.',
   keywords:
-    'Academic Jobs Online. USA Academic Jobs Online, academic jobs in USA, USA college jobs',
+    'Academic Jobs Online. USA Academic Jobs Online, academic jobs in USA, USA college jobs, Higher Ed Jobs USA',
 };
 export default async function myPage() {
   const size = 180;
@@ -76,23 +76,14 @@ export default async function myPage() {
     <main className="content-grid">
       <div className="full-width md:h-[400px] h-[229px] gradient-aj">
         <div className="hero-bg-usa md:bg-center">
-          <section className="wrapper md:flex ">
-            <h2 className="sentence mt-[6rem]">
-              <h2 className="sentence-usa text-amber-500 md:mb-[-5rem] mb-[-10rem]">
-                All Higher Ed Jobs in the usa
-              </h2>
-              <span className="mr-8">Find</span>{' '}
-              <span className="md:hidden block my-[-1rem]">
-                <br />
-              </span>
-              <div className="slidingVertical ">
-                <span>Opportunity</span>
-                <span>Connections</span>
-                <span>Happiness</span>
-                <span>Opportunity</span>
-                <span>Connections</span>
-              </div>
-            </h2>
+          <section className="wrapper flex flex-col items-center justify-center">
+            <h1 className="sentence text-center m-0 p-0">
+              Higher Ed and University jobs United States
+            </h1>
+            {/* <h2 className="sentence m-0 p-0">Kia ora</h2> */}
+            <h3 className="sentence-aus m-0 p-0">
+              America's University Jobs Website
+            </h3>
           </section>
 
           <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
@@ -170,41 +161,28 @@ export default async function myPage() {
         <JobSearchBoxCountry country={'United States'} />
       </div>
 
-      {/* <div className="pt-[8rem] flex flex-col items-center justify-center">
-        <Image
-          src="https://academicjobs.s3.amazonaws.com/img/_misc/simply-the-best-us-min.png"
-          alt="AcademicJobs USA Logo"
-          className=" w-[20rem] mb-[1rem] "
-          width={330}
-          height={220}
-        />
-      </div>
-      <JobSearchBox l="USA" /> */}
-
-      {/* <h3 className="text-center">We Are USA's University Job Website</h3> */}
-
       <div className=" mt-[3rem] ">
         <ul className=" flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
           <li>
-            <Link href='/boston'> Boston </Link>
+            <Link href="/boston"> Boston </Link>
           </li>
           <li>
-            <Link href='/new-york'> New York</Link>
+            <Link href="/new-york"> New York</Link>
           </li>
           <li>
-            <Link href='/philadelphia'>Philadelphia</Link>
+            <Link href="/philadelphia">Philadelphia</Link>
           </li>
           <li>
-            <Link href='/new-haven'>New Haven</Link>
+            <Link href="/new-haven">New Haven</Link>
           </li>
           <li>
-            <Link href='/los-angeles'>Los Angeles </Link>
+            <Link href="/los-angeles">Los Angeles </Link>
           </li>
           <li>
-            <Link href='/san-francisco'> San Francisco</Link>
+            <Link href="/san-francisco"> San Francisco</Link>
           </li>
           <li>
-            <Link href='/chicago'> Chicago</Link>
+            <Link href="/chicago"> Chicago</Link>
           </li>
         </ul>
       </div>
@@ -230,11 +208,10 @@ export default async function myPage() {
           <li>
             <Link href={`usa/hr-jobs`}> HR</Link>
           </li>
-
         </ul>
       </div>
-      <div className=" mt-2 ">
-        {/* <ul className="faculty-container flex  gap-4 items-center justify-center text-[#f4a10c] ">
+      {/*<div className=" mt-2 ">
+         <ul className="faculty-container flex  gap-4 items-center justify-center text-[#f4a10c] ">
           <li>
             <Link href="/online/"> Online </Link>
           </li>
@@ -253,8 +230,8 @@ export default async function myPage() {
               Casual
             </Link>
           </li>
-        </ul> */}
-      </div>
+        </ul> 
+      </div>*/}
       <a href="/jobelephant-recruitment">
         <Image
           width={180}
@@ -262,7 +239,7 @@ export default async function myPage() {
           src="https://academicjobs.s3.amazonaws.com/img/_misc/JobElephantClientCenter.jpg"
           className="rounded-3xl my-4 bg-white border-2 border-[#265882] items-center justify-center mx-auto mt-8"
           alt="AcademicJobs USA logo"
-        />{' '}
+        />
       </a>
 
       {/* <AmericaUniLogos /> */}
@@ -272,28 +249,29 @@ export default async function myPage() {
         className=" full-width py-4 full-width mb-[175px] bg-slate-200 mt-4"
       >
         <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
-          <h1 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
+          <h2 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
             <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">
-              Higher Ed Jobs:
-            </span>{' '}
-            <br />
-          </h1>
+              Higher Ed jobs in the USA
+            </span>
+          </h2>
           <div>
             <p className="px-7 mb-4 mt-1">
-              Explore what academic positions the United States has to offer
-              through Academic Jobs! We value the importance of an easy to
-              navigate website where your future academic career path is one
-              click away. Academic Jobs provides an extensive list of
-              opportunities for the future of your career in education,
-              carefully sectioning the top Higher Ed jobs to curate the best
-              fitting position for you.{' '}
+              Discover higher education employment opportunities across the
+              United States. Our platform is your gateway to a vast array of
+              higher ed jobs, from top-tier faculty positions and academic jobs
+              to administrative roles at leading universities and colleges.
+              Whether you're seeking university jobs, college faculty positions,
+              or lecturer jobs, we provide multitude of opportunities to advance
+              your career in academia.
             </p>
             <p className="px-7 md:flex hidden">
-              The number 1 job board for academics can help you find your dream
-              Higher Ed job through our services. At Academic Jobs, we value our
-              customers interests by providing the best career choices possible,
-              making us the best job board for higher education positions
-              globally!
+              Our job board is tailored for aspiring and established
+              professionals in the higher education sector. Stay informed with
+              the latest university job openings, including postdoctoral
+              positions, research jobs, and senior academic roles. Join a
+              collaborative academic environment dedicated to intellectual
+              growth, professional development, and research excellence. Begin
+              your search for higher ed careers today!
             </p>
           </div>
           {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
