@@ -49,15 +49,33 @@ export default function Page() {
       link: `/admin?r=Global&filter0=[{"category":"master_category_job_type","filter":"Staff / Administration"}]`,
     },
   ];
+
+  function getH1tag(country) {
+    if (country === "United States" || country === "global") {
+      return `Higher Ed`;
+    } else {
+      return `Academic`;
+    }
+  }
+
+  function getCountryName(country) {
+    if (country === "United States" || country === "United Kingdom") {
+      return `in the ${country}`;
+    } else if (country === "global") {
+      return "around the world";
+    } else {
+      return `in ${country}`;
+    }
+  }
   return (
     <>
       <main>
         <div className="w-full gradient-aj py-4 mb-4 mt-8">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-white">University & Higher Ed Jobs</h1>
+            <h1 className="text-white">University & {getH1tag(searchParams.r)} Jobs</h1>
             <p>
-              Seek all university & higher ed jobs at top universities
-              around the world. You can find all university lecturer, professor,
+              Seek all university & higher ed jobs at top universities {getCountryName(searchParams.r)}
+              . You can find all university lecturer, professor,
               academic instructors, here…
             </p>
           </div>
