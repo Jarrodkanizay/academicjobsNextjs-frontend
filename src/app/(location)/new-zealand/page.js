@@ -20,16 +20,6 @@ export const metadata = {
     'Academic Jobs New Zealand, University job New Zealand, New Zealand university jobs',
 };
 
-// export const metadata = {
-//   title: {
-//     absolute: 'Academic and University jobs New Zealand',
-//   },
-//   description:
-//     'Find 139 University jobs in NZ. View job vacancies for lecturer, research and postdocs  in University of Auckland, AUT, Otago and more. New jobs are added daily.',
-//   keywords:
-//     'Academic Jobs New Zealand, University job New Zealand, New Zealand university jobs',
-// };
-
 const size = 180;
 
 const items = [
