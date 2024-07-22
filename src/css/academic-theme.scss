@@ -231,21 +231,15 @@ html {
       background-image: url('/home/nz-academic.png');
     }
 
-    .hero-bg-usa {
-      position: relative;
+    .hero-bg.usa {
       background-image: url('/home/usa-academic.png');
-      background-size: contain;
-      background-repeat: no-repeat;
     }
     .hero-bg.uk {
       background-image: url('/home/uk-academic.png');
     }
 
-    .hero-bg-eu {
-      position: relative;
+    .hero-bg.eu {
       background-image: url('/home/eu-academic.png');
-      background-size: contain;
-      background-repeat: no-repeat;
     }
 
     .hero-bg-ca {

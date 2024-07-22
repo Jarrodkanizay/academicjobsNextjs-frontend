@@ -7,6 +7,7 @@ import AmericaUniLogos from '@/components/AmericaUniLogos';
 import USA from '@/components/topUnis/USA';
 import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 import { getContentRegion } from '@/actions/getContentRegion';
+import HeroBannerPortrait from '@/components/HeroBannerPortrait';
 //import { useParams } from 'next/navigation'
 
 export const metadata = {
@@ -74,88 +75,12 @@ export default async function myPage() {
 
   return (
     <main className="content-grid">
-      <div className="full-width md:h-[400px] h-[229px] gradient-aj">
-        <div className="hero-bg-usa md:bg-center">
-          <section className="wrapper flex flex-col items-center justify-center">
-            <h1 className="sentence text-center m-0 p-0">
-              Higher Ed and University jobs United States
-            </h1>
-            {/* <h2 className="sentence m-0 p-0">Kia ora</h2> */}
-            <h3 className="sentence-aus m-0 p-0">
-              America's University Jobs Website
-            </h3>
-          </section>
-
-          <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
-            {items.map((item, index) => (
-              <li key={index}>
-                <Link className="grayscale hover:grayscale-0" href={item.link}>
-                  <Image
-                    src={item.src}
-                    width={size}
-                    height={size}
-                    alt={item.alt}
-                  />
-                </Link>
-                <Link className="mb-4" href={item.link}>
-                  <p>{item.label}</p>
-                </Link>
-              </li>
-            ))}
-          </ul>
-
-          <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-[-75px] mt-[-11rem] lg:hidden ">
-            <li>
-              <a className="grayscale hover:grayscale-0" href="usa/faculty">
-                <Image
-                  alt="Academic Faculty Positions"
-                  loading="lazy"
-                  width="180"
-                  height="180"
-                  decoding="async"
-                  data-nimg="1"
-                  src="/home/academic-faculty-positions.png"
-                ></Image>
-              </a>
-              <a className="mb-4" href="usa/faculty">
-                <p>Faculty</p>
-              </a>
-            </li>
-            <li>
-              <a className="grayscale hover:grayscale-0" href="usa/executive">
-                <Image
-                  alt="Academic Executive Positions"
-                  loading="lazy"
-                  width="180"
-                  height="180"
-                  decoding="async"
-                  data-nimg="1"
-                  src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"
-                ></Image>
-              </a>
-              <a className="mb-4" href="usa/executive">
-                <p>Executive</p>
-              </a>
-            </li>
-            <li>
-              <a className="grayscale hover:grayscale-0" href="usa/hr-jobs">
-                <Image
-                  alt="Academic HR Positions"
-                  loading="lazy"
-                  width="180"
-                  height="180"
-                  decoding="async"
-                  data-nimg="1"
-                  src="/home/academic-human-resource-positions.png"
-                ></Image>
-              </a>
-              <a className="mb-4" href="usa/hr-jobs">
-                <p>HR Jobs</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <HeroBannerPortrait
+        h1={`America's Higher Ed & University Jobs Website`}
+        h1_mobile={`US' Higher Ed & University Jobs Website`}
+        country={'us'}
+        items={items}
+      />
 
       <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
         <JobSearchBoxCountry country={'United States'} />

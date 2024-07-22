@@ -12,6 +12,7 @@ import { getContentRegion } from '@/actions/getContentRegion';
 import TopJobs from '@/components/TopJobs';
 import JobOfTheWeek from '@/components/JobOfTheWeek';
 import ScrollableCard from '@/components/ScrollableCard';
+import HeroBannerPortrait from '@/components/HeroBannerPortrait';
 
 export const metadata: Metadata = {
   // title: 'About', //Option 1 replaces the %s in layout.tsx
@@ -67,6 +68,43 @@ const jobData = [
       'https://qut.nga.net.au/cp/index.cfm?event=jobs.viewDisplayOnlyJobDetails&returnToEvent=jobs.listJobs&jobid=80E2854B-378B-4CCF-AD0F-B18B00EBABB5&CurATC=EXT&CurBID=1877E01E%2D78DD%2D4ED2%2D9D7A%2D9DB40135CFF4&JobListID=22fc4f47%2De994%2D46a3%2Db8c9%2D9bc901269f43&jobsListKey=88db6b26%2D44b9%2D4904%2D9ea3%2De03326670378&persistVariables=CurATC,CurBID,JobListID,jobsListKey&lid=64736390008&rmuh=18B96F13A08A836AB65C97B087F13A078C0C7823',
   },
 ];
+const items = [
+  {
+    src: '/home/academic-faculty-positions.png',
+    alt: 'Academic Faculty Positions',
+    label: 'Faculty',
+    //link: `/faculty`,
+    link: `/faculty`,
+  },
+  {
+    src: '/home/academic-executive-positions.png',
+    alt: 'Academic Executive Positions',
+    label: 'Executive',
+    link: `/executive`,
+    // link: `/executive?r=Global&filter0=[{"category":"master_category_job_type","filter":"Executive"}]`,
+  },
+  {
+    src: '/home/academic-human-resource-positions.png',
+    alt: 'Academic Human Resource Positions',
+    label: 'HR Jobs',
+    //link: `/hr-jobs`,
+    link: `/hr-jobs`,
+  },
+  {
+    src: '/home/academic-phd-positions.png',
+    alt: 'Academic PhD Positions',
+    label: 'PhD Jobs',
+    //link: `/phd`,
+    link: `/phd`,
+  },
+  {
+    src: '/home/academic-staff-positions.png',
+    alt: 'Academic Staff Positions',
+    label: 'Staff/Admin',
+    //link: `/admin`,
+    link: `/admin`,
+  },
+];
 
 export default async function myPage() {
   const contentRegion = await getContentRegion();
@@ -75,18 +113,14 @@ export default async function myPage() {
   // showJobElephant = false;
   return (
     <main className="content-grid">
-      {/* <div className="flex flex-col items-center justify-center mb-32"> */}
-      {/* <div className="h-[15vh] flex flex-col items-end justify-end">
-          <LogoAJ forceClass="logo" width={310} height={210} />
-        </div>
-        <div className="w-full md:w-3/6 h-[6vh] flex flex-col items-top mt-[-1rem]">
-          <JobSearchBoxHome />
-        </div>
-      </div> */}
-      <div className="full-width md:h-[400px] h-[220px] gradient-aj">
-        <Top7JobTypes />
-      </div>
-      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
+      <HeroBannerPortrait
+        h1={`Your Higher Ed & University Jobs Website`}
+        h1_mobile={`Your Higher Ed & University Jobs Website`}
+        country={'us'}
+        items={items}
+      />
+
+      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-32">
         <JobSearchBoxHome />
       </div>
       <div className="md:mt-12 mt-4">

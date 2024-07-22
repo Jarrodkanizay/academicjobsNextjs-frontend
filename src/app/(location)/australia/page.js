@@ -11,6 +11,7 @@ import { getContentRegion } from '@/actions/getContentRegion';
 import JobOfTheWeek from '@/components/JobOfTheWeek';
 import JobTypeFaces from '@/components/JobTypeFaces';
 import ScrollableCard from '@/components/ScrollableCard';
+import HeroBannerPortrait from '@/components/HeroBannerPortrait';
 
 //import { useParams } from 'next/navigation'
 export const metadata = {
@@ -109,92 +110,14 @@ export default async function myPage() {
   return (
     <>
       <main className="content-grid">
-        <div className="full-width md:h-[400px] h-[229px] gradient-aj">
-          <div className="hero-bg-aus md:bg-center">
-            <section className="wrapper md:flex ">
-              <h2 className="sentence mt-[6rem]">
-                <h2 className="sentence-aus md:mb-[-5rem] mb-[-10rem]">
-                  Australia's University Jobs Website
-                </h2>
-                <span className="mr-8">Find</span>{' '}
-                <span className="md:hidden block my-[-1rem]">
-                  <br />
-                </span>
-                <div className="slidingVertical ">
-                  <span>Opportunity</span>
-                  <span>Connections</span>
-                  <span>Happiness</span>
-                  <span>Opportunity</span>
-                  <span>Connections</span>
-                </div>
-              </h2>
-            </section>
+        <HeroBannerPortrait
+          h1={`Australia's University Jobs Website`}
+          h1_mobile={`AU's University Jobs Website`}
+          country={'aus'}
+          items={items}
+        />
 
-            <JobTypeFaces items={items} size={size} />
-
-            <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-[-75px] mt-[-11rem] lg:hidden ">
-              <li>
-                <a
-                  className="grayscale hover:grayscale-0"
-                  href={`australia/faculty`}
-                >
-                  <Image
-                    alt="Academic Faculty Positions"
-                    loading="lazy"
-                    width="180"
-                    height="180"
-                    decoding="async"
-                    data-nimg="1"
-                    src="/home/academic-faculty-positions.png"
-                  ></Image>
-                </a>
-                <a className="mb-4" href={`australia/faculty`}>
-                  <p>Faculty</p>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="grayscale hover:grayscale-0"
-                  href={`australia/executive`}
-                >
-                  <Image
-                    alt="Academic Executive Positions"
-                    loading="lazy"
-                    width="180"
-                    height="180"
-                    decoding="async"
-                    data-nimg="1"
-                    src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"
-                  ></Image>
-                </a>
-                <a className="mb-4" href={`australia/executive`}>
-                  <p>Executive</p>
-                </a>
-              </li>
-              <li>
-                <a
-                  className="grayscale hover:grayscale-0"
-                  href={`australia/hr-jobs`}
-                >
-                  <Image
-                    alt="Academic HR Positions"
-                    loading="lazy"
-                    width="180"
-                    height="180"
-                    decoding="async"
-                    data-nimg="1"
-                    src="/home/academic-human-resource-positions.png"
-                  ></Image>
-                </a>
-                <a className="mb-4" href={`australia/hr-jobs`}>
-                  <p>HR Jobs</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top mx-auto mt-24 mb-24">
+        <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top mx-auto mt-32 mb-24">
           <JobSearchBoxCountry country={'Australia'} />
         </div>
         <ul className="position_type_links faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 mb-2 w-full md:w-auto">

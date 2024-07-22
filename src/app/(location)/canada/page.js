@@ -6,6 +6,8 @@ import JobFilter from '@/components/JobFilter';
 import Canada from '@/components/topUnis/Canada';
 import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 import { getContentRegion } from '@/actions/getContentRegion';
+import HeroBannerPortrait from '@/components/HeroBannerPortrait';
+
 //import { useParams } from 'next/navigation'
 export const metadata = {
   title: {
@@ -16,7 +18,6 @@ export const metadata = {
   keywords: 'academic jobs in Canada, Canada university jobs',
 };
 export default async function myPage() {
-  const size = 180;
   const items = [
     {
       src: '/home/academic-faculty-positions.png',
@@ -62,119 +63,25 @@ export default async function myPage() {
     //   label: 'Collaborate',
     //   link: '/canada/graduate',
     // },
-
-
   ];
   const contentRegion = await getContentRegion();
-
 
   //console.log(process.env.NODE_ENV, process.env.REACT_APP_ENV);
   // let showJobElephant = true;
   // showJobElephant = false;
 
-
   return (
     <main className="content-grid">
-      <div className="full-width md:h-[400px] h-[229px] gradient-aj">
-        <div className="hero-bg-ca md:bg-center">
+      <HeroBannerPortrait
+        h1={`Canada’s University Jobs Website`}
+        h1_mobile={`CA's University Jobs Website`}
+        country={'ca'}
+        items={items}
+      />
 
-          <section className="wrapper md:flex ">
-            <h2 className="sentence mt-[6rem]">
-              <h2 className="sentence-ca text-amber-500 md:mb-[-5rem] mb-[-10rem]">Canada's university jobs & affairs</h2>
-              <span className="mr-8">Find</span> <span className="md:hidden block my-[-1rem]"><br /></span>
-              <div className="slidingVertical ">
-                <span>Opportunity</span>
-                <span>Connections</span>
-                <span>Happiness</span>
-                <span>Opportunity</span>
-                <span>Connections</span>
-              </div>
-            </h2>
-
-          </section>
-
-
-          <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center md:mt-0 mt-[-11rem] hidden ">
-            {items.map((item, index) => (
-              <li key={index}>
-                <Link className="grayscale hover:grayscale-0" href={item.link}>
-                  <Image
-                    src={item.src}
-                    width={size}
-                    height={size}
-                    alt={item.alt}
-                  />
-                </Link>
-                <Link className="mb-4" href={item.link}>
-                  <p>{item.label}</p>
-                </Link>
-              </li>
-            ))}
-          </ul>
-
-          <ul className="hero-icons flex gap-4 md:gap-8 mx-auto text-center items-center justify-center md:mt-[-75px] mt-[-11rem] lg:hidden ">
-            <li>
-              <a className="grayscale hover:grayscale-0" href="canada/faculty">
-                <Image
-                  alt="Academic Faculty Positions"
-                  loading="lazy"
-                  width="180"
-                  height="180"
-                  decoding="async"
-                  data-nimg="1"
-                  src="/home/academic-faculty-positions.png"
-                ></Image>
-              </a>
-              <a className="mb-4" href="canada/faculty">
-                <p>Faculty</p>
-              </a>
-            </li>
-            <li>
-              <a className="grayscale hover:grayscale-0" href="canada/executive">
-                <Image
-                  alt="Academic Executive Positions"
-                  loading="lazy"
-                  width="180"
-                  height="180"
-                  decoding="async"
-                  data-nimg="1"
-                  src="/_next/image?url=%2Fhome%2Facademic-executive-positions.png&amp;w=384&amp;q=75"
-
-                ></Image>
-              </a>
-              <a className="mb-4" href="canada/executive">
-                <p>Executive</p>
-              </a>
-            </li>
-            <li>
-              <a className="grayscale hover:grayscale-0" href="canada/hr-jobs">
-                <Image
-                  alt="Academic HR Positions"
-                  loading="lazy"
-                  width="180"
-                  height="180"
-                  decoding="async"
-                  data-nimg="1"
-                  src="/home/academic-human-resource-positions.png"
-                ></Image>
-              </a>
-              <a className="mb-4" href="canada/hr-jobs">
-                <p>HR Jobs</p>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-32">
+        <JobSearchBoxCountry country={'Canada'} />
       </div>
-
-
-      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
-        <JobSearchBoxCountry country={"Canada"} />
-      </div>
-
-
-
-
-
 
       <div className=" mt-[5rem] ">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-500 ">
@@ -232,7 +139,6 @@ export default async function myPage() {
         />{' '}
       </a>
 
-
       <div
         id="section"
         className=" full-width py-4  full-width mb-[175px] bg-slate-200"
@@ -257,13 +163,13 @@ export default async function myPage() {
               professionals looking for a rewarding career.
             </p>
             <p className="px-7">
-              Explore further into university Higher Ed jobs in Canada, with
-              us providing university affairs to ensure you have access to
-              support and guidance from the top job board globally. Whether
-              you’re interested in research, teaching, or lecturing, Academic
-              Jobs is the place to rely on when finding your dream academic
-              job. Just a few simple steps are needed to set up a valuable
-              position for yourself and your future!
+              Explore further into university Higher Ed jobs in Canada, with us
+              providing university affairs to ensure you have access to support
+              and guidance from the top job board globally. Whether you’re
+              interested in research, teaching, or lecturing, Academic Jobs is
+              the place to rely on when finding your dream academic job. Just a
+              few simple steps are needed to set up a valuable position for
+              yourself and your future!
             </p>
           </div>
         </div>
@@ -288,7 +194,6 @@ export default async function myPage() {
 
       <h2 className="">ALL HIGHER ED JOBS IN CANADA BY UNIVERSITY </h2>
       <Canada id="section3" heading="" />
-
     </main>
   );
 }
