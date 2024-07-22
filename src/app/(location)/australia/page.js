@@ -10,6 +10,7 @@ import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 import { getContentRegion } from '@/actions/getContentRegion';
 import JobOfTheWeek from '@/components/JobOfTheWeek';
 import JobTypeFaces from '@/components/JobTypeFaces';
+import ScrollableCard from '@/components/ScrollableCard';
 
 //import { useParams } from 'next/navigation'
 export const metadata = {
@@ -662,7 +663,13 @@ export default async function myPage() {
         <h2 className="underline-full mt-16">University Jobs of the week</h2>
         <JobOfTheWeek jobData={jobData} />
 
-        <div id="myUniversity" class="myUniversity">
+        <h2 className="underline-full">
+          Higher Education & Academic Employment tips
+        </h2>
+
+        <ScrollableCard />
+
+        <div id="myUniversity" className="myUniversity mt-16">
           <div class="widget__text-block1">
             <div>
               <h2 className="">Academic Jobs Australia: All University Jobs</h2>
