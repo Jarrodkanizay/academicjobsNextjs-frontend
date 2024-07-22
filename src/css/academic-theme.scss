@@ -230,11 +230,8 @@ html {
       background-repeat: no-repeat;
     }
 
-    .hero-bg-nz {
-      position: relative;
+    .hero-bg.nz {
       background-image: url('/home/nz-academic.png');
-      background-size: contain;
-      background-repeat: no-repeat;
     }
 
     .hero-bg-usa {
@@ -274,6 +271,22 @@ html {
       background-color: white;
       border-radius: 100vmax;
     }
+
+    @media (max-width: 926px) {
+      .hero-icons.hide li:nth-child(5) {
+        display: none;
+      }
+    }
+    @media (max-width: 768px) {
+      .hero-icons.hide li:nth-child(4) {
+        display: none;
+      }
+    }
+    @media (max-width: 456px) {
+      .hero-icons.hide li:nth-child(3) {
+        display: none;
+      }
+    }
     // .hero-icons li:hover img {
     //   filter: grayscale(100%);
     // }
@@ -282,8 +295,13 @@ html {
       color: #9da0a8;
     }
     .wrapper {
-      .sentence.text-center {
-        text-align: center;
+      .sentence {
+        &.text-center {
+          text-align: center;
+        }
+        &.text-white {
+          color: white;
+        }
       }
     }
 
@@ -291,9 +309,9 @@ html {
       color: #f4a10c !important;
     }
     @media (max-width: 924px) {
-      .hero-icons {
-        position: relative;
-      }
+      // .hero-icons {
+      //   position: relative;
+      // }
       .wrapper {
         .sentence {
           font-size: 36px;

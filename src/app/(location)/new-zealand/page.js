@@ -8,6 +8,7 @@ import JobSearchBoxCountry from '@/components/JobSearchBoxCountry';
 import JobOfTheWeek from '@/components/JobOfTheWeek';
 import ScrollableCardNZ from '@/components/ScrollableCardNZ';
 import TopJobs from '@/components/TopJobs';
+import HeroBannerPortrait from '@/components/HeroBannerPortrait';
 
 //import { useParams } from 'next/navigation'
 export const metadata = {
@@ -19,8 +20,6 @@ export const metadata = {
   keywords:
     'Academic Jobs New Zealand, University job New Zealand, New Zealand university jobs',
 };
-
-const size = 180;
 
 const items = [
   {
@@ -103,54 +102,12 @@ const jobData = [
 export default function Page() {
   return (
     <>
-      <div className="full-width md:h-[400px] h-[229px] gradient-aj">
-        <div className="hero-bg-nz h-full md:bg-center mb-4">
-          <section className="wrapper flex flex-col items-center justify-center">
-            <h1 className="sentence text-center m-0 p-0">
-              University and Academic Jobs NZ
-            </h1>
-            {/* <h2 className="sentence m-0 p-0">Kia ora</h2> */}
-            <h3 className="sentence-aus m-0 p-0">
-              New Zealand's University Jobs Website
-            </h3>
-          </section>
-          <ul className="hero-icons md:hidden flex-wrap md:gap-8 mx-auto text-center items-center justify-center mt-[-5rem] flex">
-            {items.slice(0, 3).map((item, index) => (
-              <li key={index}>
-                <Link className="grayscale hover:grayscale-0" href={item.link}>
-                  <Image
-                    src={item.src}
-                    width={size}
-                    height={size}
-                    alt={item.alt}
-                  />
-                </Link>
-                <Link className="mb-4" href={item.link}>
-                  <p>{item.label}</p>
-                </Link>
-              </li>
-            ))}
-          </ul>
-
-          <ul className="hero-icons md:flex flex-wrap md:gap-8 mx-auto text-center items-center justify-center mt-[-2rem] hidden">
-            {items.map((item, index) => (
-              <li key={index}>
-                <Link className="grayscale hover:grayscale-0" href={item.link}>
-                  <Image
-                    src={item.src}
-                    width={size}
-                    height={size}
-                    alt={item.alt}
-                  />
-                </Link>
-                <Link className="mb-4" href={item.link}>
-                  <p>{item.label}</p>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+      <HeroBannerPortrait
+        h1={`New Zealand's University Jobs Website`}
+        h3={`New Zealand's University Jobs Website`}
+        country={'nz'}
+        items={items}
+      />
 
       <div className="w-full  max-w-[700px] flex flex-col p-2 items-top my-4 mx-auto mt-20">
         <JobSearchBoxCountry country={'New Zealand'} />
