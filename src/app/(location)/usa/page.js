@@ -20,7 +20,6 @@ export const metadata = {
     'Academic Jobs Online. USA Academic Jobs Online, academic jobs in USA, USA college jobs, Higher Ed Jobs USA',
 };
 export default async function myPage() {
-  const size = 180;
   const items = [
     {
       src: '/home/academic-faculty-positions.png',
