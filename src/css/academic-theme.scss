@@ -223,11 +223,8 @@ html {
       background-repeat: no-repeat;
     }
 
-    .hero-bg-aus {
-      position: relative;
+    .hero-bg.aus {
       background-image: url('/home/aus-academic.png');
-      background-size: contain;
-      background-repeat: no-repeat;
     }
 
     .hero-bg.nz {
@@ -240,11 +237,8 @@ html {
       background-size: contain;
       background-repeat: no-repeat;
     }
-    .hero-bg-uk {
-      position: relative;
+    .hero-bg.uk {
       background-image: url('/home/uk-academic.png');
-      background-size: contain;
-      background-repeat: no-repeat;
     }
 
     .hero-bg-eu {
@@ -272,24 +266,6 @@ html {
       border-radius: 100vmax;
     }
 
-    @media (max-width: 926px) {
-      .hero-icons.hide li:nth-child(5) {
-        display: none;
-      }
-    }
-    @media (max-width: 768px) {
-      .hero-icons.hide li:nth-child(4) {
-        display: none;
-      }
-    }
-    @media (max-width: 456px) {
-      .hero-icons.hide li:nth-child(3) {
-        display: none;
-      }
-    }
-    // .hero-icons li:hover img {
-    //   filter: grayscale(100%);
-    // }
     .hero-icons li p {
       margin-top: 8px;
       color: #9da0a8;
@@ -308,82 +284,44 @@ html {
     .hero-icons li:hover a p {
       color: #f4a10c !important;
     }
-    @media (max-width: 924px) {
-      // .hero-icons {
-      //   position: relative;
-      // }
+    @media (max-width: 926px) {
       .wrapper {
         .sentence {
           font-size: 36px;
         }
       }
-    }
-    @media (max-width: 724px) {
-      .wrapper {
-        .sentence {
-          font-size: 24px;
-        }
+      .hero-icons.hide li:nth-child(5) {
+        display: none;
       }
     }
-    @media (max-width: 604px) {
+    @media (max-width: 768px) {
       .wrapper {
         .sentence {
           font-size: 16px;
           font-weight: 600;
         }
       }
-    }
-
-    @media (max-width: 604px) {
-      .wrapper {
-        .sentence-aus {
-          font-size: 11px;
-          font-weight: 600;
-        }
+      .hero-icons.hide li:nth-child(4) {
+        display: none;
       }
     }
 
-    @media (max-width: 604px) {
+    @media (max-width: 490px) {
       .wrapper {
-        .sentence-uk {
-          font-size: 8px;
+        .sentence {
+          font-size: 16px;
           font-weight: 600;
         }
       }
-    }
-
-    @media (max-width: 604px) {
-      .wrapper {
-        .sentence-eu {
-          font-size: 8px;
-          font-weight: 600;
-        }
+      .hero-icons.hide li:nth-child(3) {
+        display: none;
       }
     }
 
-    @media (max-width: 604px) {
-      .wrapper {
-        .sentence-ca {
-          font-size: 8px;
-          font-weight: 600;
-        }
-      }
-    }
-
-    // display: grid;
-    // grid-template-rows: auto 1fr auto;
-    // min-height: 100vh;
-
-    // main,
-    // div {
-    //   align-self: stretch;
-    // }
-    // button[disabled].cursor-not-allowed {
-    //   cursor: not-allowed !important;
-    // }
     time {
       white-space: nowrap;
     }
+
     margin: 0;
     font-family: var(--font-family) 'Open Sans', sans-serif;
     font-size: var(--fs-400);
