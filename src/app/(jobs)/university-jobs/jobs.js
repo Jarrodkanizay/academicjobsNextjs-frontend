@@ -56,7 +56,7 @@ export default function Page() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-white">University & Higher Ed Jobs</h1>
             <p>
-              Seek all university & higher ed jobs in prestigious universities
+              Seek all university & higher ed jobs at top universities
               around the world. You can find all university lecturer, professor,
               academic instructors, here…
             </p>
