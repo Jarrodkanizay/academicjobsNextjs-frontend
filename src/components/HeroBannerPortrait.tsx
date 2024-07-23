@@ -27,7 +27,7 @@ const HeroBannerPortrait = ({
         </section>
 
         {/* Desktop Version */}
-        <ul className="hero-icons hide flex flex-wrap gap-4 mx-auto text-center items-center justify-center mt-[-2rem] p-4">
+        <ul className="hero-icons hide flex gap-1 md:gap-4 mx-auto text-center items-center justify-between md:justify-center mt-[-2rem] p-4">
           {items.map((item, index) => (
             <li key={index}>
               <Link className="grayscale hover:grayscale-0" href={item.link}>
