@@ -28,7 +28,6 @@ export async function generateMetadata({ params, searchParams }) {
     image: imageSrc,
   };
 }
-let region = 'Australia';
 
 const localJobData = {};
 
