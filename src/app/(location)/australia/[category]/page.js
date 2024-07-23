@@ -28,6 +28,7 @@ export async function generateMetadata({ params, searchParams }) {
     image: imageSrc,
   };
 }
+let region = 'Australia';
 
 const localJobData = {};
 
@@ -123,7 +124,9 @@ export default function Page({ params }) {
               <ul>
                 {australiaLocations.cities.map((location) => (
                   <li key={location}>
-                    <Link href={`/australia/${category}/${location}`}>
+                    <Link
+                      href={`?r=${region}&l=${location}&q=&page=0&category=&currentMiddleCategory=&filter0=[{"category":"Position Type","filter":"${category}"}]&mode=default`}
+                    >
                       {toTitleCase(category)} Jobs {location}{' '}
                       <LinkIcon forceClass="pink_icon" />
                     </Link>
