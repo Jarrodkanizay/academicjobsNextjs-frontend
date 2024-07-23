@@ -73,6 +73,20 @@ export default function Page({ params }) {
   let heading = Title;
   let link = '/';
 
+  let categoryProperCase = toTitleCase(category).trim();
+  let shortName = categoryProperCase;
+
+  if (categoryProperCase.toLowerCase().startsWith('hr'))
+    categoryProperCase = category.toUpperCase();
+
+  if (categoryProperCase.toLowerCase().startsWith('phd')) {
+    categoryProperCase = 'PhD';
+    shortName = 'PhD';
+  }
+
+  if (categoryProperCase.toLowerCase().startsWith('research'))
+    categoryProperCase = `${categoryProperCase} Assistant`;
+
   if (h1 && h1 !== '') {
     heading = h1;
   }
@@ -113,8 +127,8 @@ export default function Page({ params }) {
             heading="Browse by City"
             locations={australiaLocations.cities}
             region={region}
-            category={'Research Assistant'}
-            shortName={'Research'}
+            category={categoryProperCase}
+            shortName={shortName}
           />
           <JobFilter />
         </div>
