@@ -114,11 +114,7 @@ export default function Page({ params }) {
               <h2>Research Job Opportunities</h2>
             </Link> */}
 
-            <Link href={link}>
-              <h2>
-                Browse by state <LinkIcon forceClass="pink_icon" />
-              </h2>
-            </Link>
+            <h2>Browse by city</h2>
 
             <nav aria-label="Browse by state">
               <ul>
