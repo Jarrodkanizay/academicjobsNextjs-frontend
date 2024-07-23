@@ -20,16 +20,14 @@ const HeroBannerPortrait = ({
     <div className={`full-width h-[260px] md:h-[340px] gradient-aj`}>
       <div className={`hero-bg ${country} h-full md:bg-center mb-4`}>
         <section className="wrapper flex flex-col items-center justify-center">
-          <h1 className="sentence text-white text-center m-0 p-0 hidden md:block">
-            {h1}
-          </h1>
-          <h1 className="sentence text-white text-center m-0 p-0 md:hidden">
+          <h1 className="sentence text-white text-center m-0 p-0">{h1}</h1>
+          {/* <h1 className="sentence text-white text-center m-0 p-0 md:hidden">
             {h1_mobile}
-          </h1>
+          </h1> */}
         </section>
 
         {/* Desktop Version */}
-        <ul className="hero-icons hide flex flex-wrap gap-8 mx-auto text-center items-center justify-center mt-[-2rem] p-4">
+        <ul className="hero-icons hide flex flex-wrap gap-4 mx-auto text-center items-center justify-center mt-[-2rem] p-4">
           {items.map((item, index) => (
             <li key={index}>
               <Link className="grayscale hover:grayscale-0" href={item.link}>
