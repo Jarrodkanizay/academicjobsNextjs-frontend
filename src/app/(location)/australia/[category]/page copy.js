@@ -18,7 +18,7 @@ export async function generateMetadata({ params, searchParams }) {
     Title = '',
     Description = '',
     Keyword = '',
-    content: content1 = ''
+    content: content1 = '',
   } = regionData.find((item) => item.Name === category) || {};
   return {
     title: Title,
@@ -44,11 +44,13 @@ export default function Page({ params, searchParams }) {
     category2 = '',
     filter2 = '',
   } = regionData.find((item) => item.Name === category) || {};
-  console.log("-------------------------------------------------------------------")
-  console.log(category2, filter2)
-  console.log(Name, category)
+  console.log(
+    '-------------------------------------------------------------------'
+  );
+  console.log(category2, filter2);
+  console.log(Name, category);
   if (category2 && filter2) {
-    Name = ''
+    Name = '';
   }
   const paras = content1.split('\n');
   let content;
@@ -77,7 +79,7 @@ export default function Page({ params, searchParams }) {
       </div>
       <JobSearchBox />
       <section className="jobs_grid job_post_search_container">
-        <div className="filters_panel">
+        <div className="side_panel">
           <div className="filters_content">
             <JobFilter />
           </div>

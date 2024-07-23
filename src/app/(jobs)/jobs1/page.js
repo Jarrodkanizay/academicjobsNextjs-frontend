@@ -1,12 +1,12 @@
 'use client';
-import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 //import JobsForm from '@/components/JobsForm';
 import SearchResults1 from '@/components/SearchResults1';
 import { useSearchParams } from 'next/navigation';
 import JobSearchBox from '@/components/JobSearchBox';
 import JobFilter from '@/components/JobFilter';
 import JobSearchBox2 from '@/components/JobSearchBox2';
-import { filterType } from "@/utils/data";
+import { filterType } from '@/utils/data';
 import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
@@ -40,7 +40,7 @@ export default function Page() {
   //   { skip: !category }
   //   );
   const [filterTypes, setfilterTypes] = useState(filterType);
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState('');
   const [filter1, setfilter] = useState([]);
   const [page, setPage] = useState(0);
   const {
@@ -53,26 +53,33 @@ export default function Page() {
     isPlaceholderData: isPlaceholderDataQty,
   } = useQuery({
     queryKey: ['filter', { category, filter1, q, l }],
-    queryFn: async () => { //{ ...filter1, category,mode: "normal" }
-      const response = await BaseApi.post('/filters', { category, filter1, q, l, mode: "normal" },);
+    queryFn: async () => {
+      //{ ...filter1, category,mode: "normal" }
+      const response = await BaseApi.post('/filters', {
+        category,
+        filter1,
+        q,
+        l,
+        mode: 'normal',
+      });
       console.log(response.data);
       console.log('response.data.data', response.data.data);
       return response.data.data;
     },
-    enabled: category !== "",
+    enabled: category !== '',
   });
   const filterValues9 = {
-    Country: "Country",
-    State: "State",
-    City: "City",
-    "Job Type(i.e. Faculty, Human Resources)": "Job Type",
-    "Faculty/Department(i.e. Science, Business)": "Faculty/Department",
-    "Academic Position Type(i.e. Lecturer, Fellow)": "Academic Position Type",
-    "Executive Jobs(i.e. Directors, Registrars)": "Executive Jobs",
-    "Employment Type(i.e. Full-time, casual)": "Employment Type",
-    "Institution Name": "Institution Name",
-    "Salary Range in USD": "Salary Range in USD",
-    "Onsite/Remote": "Onsite/Remote",
+    Country: 'Country',
+    State: 'State',
+    City: 'City',
+    'Job Type(i.e. Faculty, Human Resources)': 'Job Type',
+    'Faculty/Department(i.e. Science, Business)': 'Faculty/Department',
+    'Academic Position Type(i.e. Lecturer, Fellow)': 'Academic Position Type',
+    'Executive Jobs(i.e. Directors, Registrars)': 'Executive Jobs',
+    'Employment Type(i.e. Full-time, casual)': 'Employment Type',
+    'Institution Name': 'Institution Name',
+    'Salary Range in USD': 'Salary Range in USD',
+    'Onsite/Remote': 'Onsite/Remote',
   };
   //const region = useSelector((state) => state.posts.region);
   //const [query, setQuery] = useState(Object.fromEntries(useSearchParams().entries()));
@@ -119,10 +126,11 @@ export default function Page() {
             filterTypes.map((filterType, i) => (
               <button
                 key={i}
-                className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
-                  ? "bg-orange-500 text-white border-orange-500"
-                  : "bg-white border-gray-500"
-                  }`}
+                className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${
+                  category === filterType
+                    ? 'bg-orange-500 text-white border-orange-500'
+                    : 'bg-white border-gray-500'
+                }`}
                 onClick={() => {
                   if (category === filterType) {
                     setIsShowFilter((prev) => !prev);
@@ -150,8 +158,7 @@ export default function Page() {
                     //dispatch(setfilter([...filter1, { category, filter }]));
                     setIsShowFilter(false);
                   }}
-                >{`${filter ? filter : "Others"
-                  }  (${job_count})`}</button>
+                >{`${filter ? filter : 'Others'}  (${job_count})`}</button>
               ))}
             {/* {filters?.length == 23 && (
               <button
@@ -170,14 +177,14 @@ export default function Page() {
         )}
       </div>
       <section class="jobs_grid job_post_search_container">
-        <div class="filters_panel">
+        <div class="side_panel">
           <div class="filters_content">
             <JobFilter />
           </div>
         </div>
         <div class="listings_panel">
           <div class="listings_content">
-            <SearchResults1 q={{ q: q, l: l || "", filter1 }} />
+            <SearchResults1 q={{ q: q, l: l || '', filter1 }} />
           </div>
         </div>
       </section>

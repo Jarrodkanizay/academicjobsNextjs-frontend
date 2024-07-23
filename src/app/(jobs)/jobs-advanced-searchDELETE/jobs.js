@@ -11,8 +11,6 @@ import Link from 'next/link';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
 
-
-
 export default function Page() {
   const searchParams = useSearchParams();
   //const allSearchParams = Object.fromEntries(searchParams1);
@@ -42,11 +40,11 @@ export default function Page() {
   useEffect(() => {
     // Example: Fetch meta data based on search query or any other relevant data
     // For now, setting dummy values
-  //   setMetaTitle(`Search Results for "${q}" in "${l}"`);
-  //   setMetaDescription(`Search for job results related to "${q}" in "${l}"`);
-  // }, [q, l]);
-  // useEffect(() => {
-  //   console.log('===============================', filter1);
+    //   setMetaTitle(`Search Results for "${q}" in "${l}"`);
+    //   setMetaDescription(`Search for job results related to "${q}" in "${l}"`);
+    // }, [q, l]);
+    // useEffect(() => {
+    //   console.log('===============================', filter1);
     // if (filter1.some(obj => obj.filter.includes("Executive "))) {
     //   setfilterTypes(p => ({ ...p, ExecutiveJobs: true }))
     // } else {
@@ -84,7 +82,7 @@ export default function Page() {
   }, [filter1]);
   useEffect(() => {
     console.log('===============================', category);
-    setfilter2(filter1)
+    setfilter2(filter1);
   }, [category]);
   const {
     isPending: isPendingQty,
@@ -133,7 +131,7 @@ export default function Page() {
   //const filter1 = useSelector((state) => state.posts.filter1);
   //alert(location?.state?.filter1)
   ///console.log('router.query', searchParams);
-  
+
   return (
     <>
       {/* <title>{metaTitle}</title>
@@ -173,8 +171,14 @@ export default function Page() {
         <div className="w-full bg-gray-100 py-4 mb-4 mt-8">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-screen-xl mx-auto ">
-              <JobSearchBox4 forceClass="hidden md:block" type="advancedSearch" />
-              <JobSearchBox2 forceClass="block md:hidden" type="advancedSearch"  />
+              <JobSearchBox4
+                forceClass="hidden md:block"
+                type="advancedSearch"
+              />
+              <JobSearchBox2
+                forceClass="block md:hidden"
+                type="advancedSearch"
+              />
             </div>
           </div>
         </div>
@@ -194,7 +198,7 @@ export default function Page() {
                       setPage(0);
 
                       setfilter(updatedFilter);
-                      setCategory("")
+                      setCategory('');
                       //dispatch(setfilter(updatedFilter));
                     }}
                   >
@@ -212,10 +216,11 @@ export default function Page() {
               ) => (
                 <button
                   key={i}
-                  className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
+                  className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${
+                    category === filterType
                       ? 'bg-orange-500 text-white border-orange-500'
                       : 'bg-white border-gray-500'
-                    }
+                  }
                   ${showYN ? 'block' : 'hidden'}
                   `}
                   onClick={() => {
@@ -246,10 +251,11 @@ export default function Page() {
                 ) => (
                   <button
                     key={i}
-                    className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${category === filterType
+                    className={`px-2 py-1 text-gray-500  border  rounded-md text-sm font-bold ${
+                      category === filterType
                         ? 'bg-orange-500 text-white border-orange-500'
                         : 'bg-white border-gray-500'
-                      }
+                    }
                   ${showYN ? 'block' : 'hidden'}
                   `}
                     onClick={() => {
@@ -300,14 +306,14 @@ export default function Page() {
           )}
         </div>
         <section class="jobs_grid job_post_search_container">
-          <div class="filters_panel">
+          <div class="side_panel">
             <div class="filters_content">
               <JobFilter />
             </div>
           </div>
           <div class="listings_panel">
             <div class="listings_content">
-              <SearchResults1 q={{ q: q, l: l || '', lon, lat,filter1 }} />
+              <SearchResults1 q={{ q: q, l: l || '', lon, lat, filter1 }} />
             </div>
           </div>
         </section>

@@ -34,7 +34,6 @@ export async function generateMetadata({ params, searchParams }: any) {
     description: Description,
     keywords: Keyword,
   };
-  
 }
 
 //const Lecturer = () => {
@@ -71,21 +70,20 @@ export default function Page({ params, searchParams }: any) {
             {Name}
           </h1>
           <p className="px-7 mb-4 mt-1">{content1}</p>
-          
         </div>
       </div>
 
-      <JobSearchBox  />
+      <JobSearchBox />
 
       <section className="jobs_grid job_post_search_container">
-        <div className="filters_panel">
+        <div className="side_panel">
           <div className="filters_content">
             <JobFilter />
           </div>
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-          <SearchResults q={{ q: Name }} />
+            <SearchResults q={{ q: Name }} />
           </div>
         </div>
       </section>

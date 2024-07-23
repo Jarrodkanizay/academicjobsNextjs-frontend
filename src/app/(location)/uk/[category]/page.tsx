@@ -90,7 +90,7 @@ export default function Page({ params, searchParams }: any) {
 
       <AdvancedSearchBar
         p={{
-          r: "United Kingdom",
+          r: 'United Kingdom',
           filter1: [
             {
               category: category2,
@@ -101,7 +101,7 @@ export default function Page({ params, searchParams }: any) {
       />
 
       <section className="jobs_grid job_post_search_container">
-        <div className="filters_panel">
+        <div className="side_panel">
           <div className="filters_content">
             <JobFilter />
           </div>

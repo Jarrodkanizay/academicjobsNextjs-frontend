@@ -36,8 +36,7 @@ export default function myPage() {
         reorder={false}
       />
 
-
-<AdvancedSearchBar
+      <AdvancedSearchBar
         p={{
           filter1: [
             {
@@ -48,8 +47,7 @@ export default function myPage() {
         }}
       />
       <section className="jobs_grid job_post_search_container">
-        
-        <div className="filters_panel">
+        <div className="side_panel">
           <div className="filters_content">
             <JobFilter />
           </div>

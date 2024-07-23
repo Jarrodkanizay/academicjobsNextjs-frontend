@@ -55,7 +55,7 @@ export default function myPage() {
         </div>
       </div>
 
-       {/* <div className="flex justify-center"> */}
+      {/* <div className="flex justify-center"> */}
       <AdvancedSearchBar
         p={{
           filter1: [
@@ -65,10 +65,10 @@ export default function myPage() {
             },
           ],
         }}
-        />
-        {/* </div> */}
+      />
+      {/* </div> */}
       <section className="jobs_grid job_post_search_container">
-        <div className="filters_panel">
+        <div className="side_panel">
           <div className="filters_content">
             <JobFilter />
           </div>

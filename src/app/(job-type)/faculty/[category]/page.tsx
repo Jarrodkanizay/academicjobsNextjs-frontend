@@ -90,10 +90,10 @@ export default function Page({ params, searchParams }: any) {
         </Link>
       </div>
 
-      <JobSearchBox  />
+      <JobSearchBox />
 
       <section className="jobs_grid job_post_search_container">
-        <div className="filters_panel">
+        <div className="side_panel">
           <div className="filters_content">
             <JobFilter />
           </div>

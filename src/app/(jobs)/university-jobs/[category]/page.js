@@ -152,7 +152,7 @@ export default function Page({ params, searchParams }) {
           </div>
 
           <section className="jobs_grid job_post_search_container uni_jobs_grid">
-            <div className={`filters_panel mt-6`}>
+            <div className={`side_panel mt-6`}>
               <div className={``}>
                 <div>
                   <div
@@ -209,7 +209,7 @@ export default function Page({ params, searchParams }) {
           <AdvancedSearchBar p={{ r: country }} />
           <div className="content-grid">
             <section className="jobs_grid job_post_search_container">
-              <div className="filters_panel">
+              <div className="side_panel">
                 <div className="filters_content">
                   <JobFilter />
                 </div>

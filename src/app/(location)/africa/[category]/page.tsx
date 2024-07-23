@@ -80,22 +80,22 @@ export default function Page({ params, searchParams }: any) {
                 {para}
               </p>
             ))}
-                <TalentPool  />
+            <TalentPool />
           </div>
         </div>
       </div>
 
-      <JobSearchBox  />
+      <JobSearchBox />
 
       <section className="jobs_grid job_post_search_container">
-        <div className="filters_panel">
+        <div className="side_panel">
           <div className="filters_content">
             <JobFilter />
           </div>
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-          <SearchResults q={{ q: Name, l: regionName }} />
+            <SearchResults q={{ q: Name, l: regionName }} />
           </div>
         </div>
       </section>

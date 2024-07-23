@@ -98,12 +98,12 @@ export default function Page({ params, searchParams }: any) {
               filter: filter2,
             },
           ],
-          r: "Canada"
+          r: 'Canada',
         }}
       />
 
       <section className="jobs_grid job_post_search_container">
-        <div className="filters_panel">
+        <div className="side_panel">
           <div className="filters_content">
             <JobFilter />
           </div>

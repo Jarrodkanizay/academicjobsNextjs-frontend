@@ -79,10 +79,10 @@ export default function Page({ params, searchParams }: any) {
           Join Our Talent Pool
         </Link>
       </div>
-      <JobSearchBox  forceClass="my-6" />
+      <JobSearchBox forceClass="my-6" />
 
       <section className="jobs_grid job_post_search_container">
-        <div className="filters_panel">
+        <div className="side_panel">
           <div className="filters_content">
             <JobFilter />
           </div>

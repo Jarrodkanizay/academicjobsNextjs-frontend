@@ -65,7 +65,7 @@ export default function Page() {
         <JobTypeFaces items={items} size={size} />
         <AdvancedSearchBar forceClass="block" type="advancedSearch" />
         <section class="jobs_grid job_post_search_container">
-          <div class="filters_panel">
+          <div class="side_panel">
             <div class="filters_content">
               <div className="md:block hidden">
                 <SearchResults

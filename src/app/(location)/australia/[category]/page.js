@@ -102,7 +102,8 @@ export default function Page({ params }) {
         }}
       />
       <section className="jobs_grid job_post_search_container">
-        <div className={`filters_panel mt-6`}>
+        <div className={`side_panel mt-6`}>
+          <h2>Hi</h2>
           <JobFilter />
         </div>
         <div className="listings_panel">
@@ -138,7 +139,7 @@ export default function Page({ params }) {
 
       {/* <div className="content-grid">
         <section className="jobs_grid job_post_search_container">
-          <div className="filters_panel">
+          <div className="side_panel">
             <div className="filters_content">
               <JobFilter />
             </div>

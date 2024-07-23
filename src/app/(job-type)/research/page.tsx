@@ -1,4 +1,3 @@
-
 import Link from 'next/link';
 import SearchResults from '@/components/SearchResults';
 import JobSearchBox from '@/components/JobSearchBox';
@@ -85,7 +84,7 @@ export default function myPage() {
       />
 
       <section className="jobs_grid job_post_search_container">
-        <div className="filters_panel">
+        <div className="side_panel">
           <div className="filters_content">
             <JobFilter />
           </div>
