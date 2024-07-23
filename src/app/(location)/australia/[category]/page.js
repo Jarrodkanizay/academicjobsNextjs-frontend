@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import { categoriesAustralia } from '@/data/australiaPositions';
+import { australiaLocations } from '@/data/australiaLocations';
 import JobFilter from '@/components/JobFilter';
 import SearchResults3 from '@/components/SearchResults3';
 import SearchResults1 from '@/components/SearchResults1';
 import AdvancedSearchBar from '@/components/AdvancedSearchBar';
+import LinkIcon from '@/components/icons/LinkIcon';
 import Link from 'next/link';
 
 export async function generateMetadata({ params, searchParams }) {
@@ -26,6 +28,8 @@ export async function generateMetadata({ params, searchParams }) {
     image: imageSrc,
   };
 }
+
+const localJobData = {};
 
 function toTitleCase(str) {
   return str.toLowerCase().replace(/(?:^|\s)\w/g, function (match) {
@@ -66,6 +70,7 @@ export default function Page({ params }) {
   } = categoriesAustralia.find((item) => item.Name === category) || {};
 
   let heading = Title;
+  let link = '/';
 
   if (h1 && h1 !== '') {
     heading = h1;
@@ -103,7 +108,31 @@ export default function Page({ params }) {
       />
       <section className="jobs_grid job_post_search_container">
         <div className={`side_panel mt-6`}>
-          <h2>Hi</h2>
+          <div className="links_section mb-16">
+            {/* <Link href={link}>
+              <h2>Research Job Opportunities</h2>
+            </Link> */}
+
+            <Link href={link}>
+              <h2>
+                Browse by state <LinkIcon forceClass="pink_icon" />
+              </h2>
+            </Link>
+
+            <nav aria-label="Browse by state">
+              <ul>
+                {australiaLocations.cities.map((location) => (
+                  <li key={location}>
+                    <Link href={`/australia/${category}/${location}`}>
+                      {toTitleCase(category)} Jobs {location}{' '}
+                      <LinkIcon forceClass="pink_icon" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+
           <JobFilter />
         </div>
         <div className="listings_panel">
