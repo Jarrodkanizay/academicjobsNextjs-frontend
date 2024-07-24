@@ -25,7 +25,7 @@ export default function myPage() {
 
           <div className="">
             <p className="px-7 mb-4 mt-1">
-            As the leading job board for academics, AcademicJobs carefully curates the top    postdoc jobs to advance your career. Find the best postdoctoral researcher jobs in diverse fields, such as engineering, science, medicine, and many more. Join the talent pool now and get updated with new university job openings. 
+            As the leading job board for academics, AcademicJobs carefully curates the top    postdoc jobs to advance your career. Find the best postdoctoral researcher jobs in diverse fields, such as engineering, science, medicine, and many more.  
             </p>
             <Link
               href={'/academic-talent-pool'}

@@ -27,7 +27,7 @@ export default function myPage() {
 
           <div className="">
             <p className="px-7 mb-4 mt-1">
-              As the leading job board for academics, AcademicJobs carefully curates the top research jobs to advance your career. Find the best research associate, research assistant and research scientist jobs in diverse fields including science, health, maths, engineering and many more. Join the talent pool now and get updated with new university job openings. 
+              As the leading job board for academics, AcademicJobs carefully curates the top research jobs to advance your career. Find the best research associate, research assistant and research scientist jobs in diverse fields including science, health, maths, engineering and many more. 
             </p>
 
             <Link

@@ -36,7 +36,7 @@ export default function Page() {
               <br />
             </h1>
             <p className="font-bold">
-            As the leading job board for academics, AcademicJobs carefully curates the top higher ed lecturer jobs to advance your career. Find the best lecturer jobs in diverse fields, including business, health science, medicine, fine arts, legal studies and many more. Join the talent pool now to get updated with new university job openings. 
+            As the leading job board for academics, AcademicJobs carefully curates the top higher ed lecturer jobs to advance your career. Find the best lecturer jobs in diverse fields, including business, health science, medicine, fine arts, legal studies and many more.
             </p>
             <p className="font-bold">Find all the best lecturing jobs here…</p>
             <Link

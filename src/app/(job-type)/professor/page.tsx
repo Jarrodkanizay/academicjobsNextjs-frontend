@@ -26,7 +26,7 @@ export default function myPage() {
 
           <div className="">
             <p className="px-7 mb-4 mt-1">
-              As the leading job board for academics, AcademicJobs carefully curates the top    professor jobs to advance your career. Find the best professor, assistant professor and adjunct professor in diverse fields, such as law, history, science, maths, arts, nursing and many more. Join the talent pool now and get updated with new university job openings. 
+              As the leading job board for academics, AcademicJobs carefully curates the top professor jobs to advance your career. Find the best professor, assistant professor and adjunct professor in diverse fields, such as law, history, science, maths, arts, nursing and many more. 
             </p>
 
             <Link
