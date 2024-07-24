@@ -18,7 +18,7 @@ import SavedItems from '@/components/profile/SavedItems';
 import DashboardMenu from '@/components/DashboardMenu';
 import TalentPool from '@/components/TalentPool';
 import TalentPoolForm from '@/components/forms/TalentPoolForm';
-import PrivacySettings from '@/components/profile/PrivacySettings';
+import ResetPassword from '@/components/profile/ResetPassword';
 import JobAlerts from '@/components/profile/JobAlerts';
 
 type UserProps = {
@@ -306,7 +306,6 @@ export default function Profile({
         </div>
       )}
       {selectedCard === 'Jobs Alerts' && (
-        
         // Render content for Jobs For You
         <div className='mt-8'>
           <h2 className="md:hidden block">Job Alerts</h2>
@@ -323,16 +322,17 @@ export default function Profile({
         <div className="gap-5 mt-6 grid grid-cols-1 md:grid-cols-2">
           <div>
             <div className="md:mb-6 mb-4 rounded-2xl px-7 pt-4 pb-6 border-[1px] border-slate-500">
-            <UserProfile
-              id={id}
-              updateProfile={updateProfile}
-              userProfile={profile}
-            />
+              <UserProfile
+                id={id}
+                updateProfile={updateProfile}
+                userProfile={profile}
+              />
             </div>
             <div className="md:mb-6 rounded-2xl px-7 pt-4 pb-6 border-[1px] border-slate-500">
-            <PrivacySettings
-              userId={id}
-            />
+              <h2>Privacy Settings</h2>
+              <ResetPassword
+                userId={id}
+              />
             </div>
           </div>
           <div className="rounded-2xl px-7 pt-4 pb-6 border-[1px] border-slate-500">

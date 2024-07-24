@@ -15,11 +15,11 @@ import { Input } from '@/shadcn/ui/input';
 import { Form } from '@/shadcn/ui/form';
 import GoogleSignInButton from './GoogleSignInButton';
 import { SubmitHandler, useForm } from 'react-hook-form';
-import { toast } from 'react-toastify';
 import { Card, CardDescription, CardHeader, CardTitle } from '@/shadcn/ui/card';
 import { useRouter } from 'next/navigation';
 import { signIn } from 'next-auth/react';
 import { FormSchema } from '@/app/schemas/schemas';
+import { useState } from 'react';
 
 interface Props {
   callbackUrl?: string;
@@ -30,6 +30,7 @@ type InputType = z.infer<typeof FormSchema>;
 const SignInForm = (props: Props) => {
   let callbackUrl = props.callbackUrl ? props.callbackUrl : '/';
   const router = useRouter();
+  const [authError, setAuthError] = useState<string | null>(null);
   const form = useForm<InputType>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -44,27 +45,26 @@ const SignInForm = (props: Props) => {
       email: data.email,
       password: data.password,
     });
-    if (!result?.ok) {
-      toast.error(result?.error);
+
+    if (result?.error && result.status === 401) {
+      setAuthError(result.error);
       return;
     }
-    toast.success('Welcome back!');
 
+    if (result?.error) {
+      setAuthError(result.error);
+      return;
+    }
+
+    setAuthError(null);
     router.push(callbackUrl);
   };
 
   return (
     <div className="flex items-center justify-center mt-16">
       <Card className="p-10">
-        {/* <CardHeader className="pb-0">
-          <CardTitle className="flex justify-center ">Academic Jobs</CardTitle>
-          <CardDescription className="flex justify-center">
-            For EMPLOYERS
-          </CardDescription>
-        </CardHeader> */}
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="w-full">
-            {/* <form className="w-full"> */}
             <div className="space-y-2">
               <FormField
                 control={form.control}
@@ -73,7 +73,18 @@ const SignInForm = (props: Props) => {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="mail@example.com" {...field} />
+                      <>
+                        <Input
+                          className={authError ? 'border-red-500' : ''}
+                          placeholder="mail@example.com"
+                          {...field}
+                        />
+                        {authError && (
+                          <p className="text-red-500 text-sm mt-1">
+                            {authError}
+                          </p>
+                        )}
+                      </>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -86,11 +97,19 @@ const SignInForm = (props: Props) => {
                   <FormItem>
                     <FormLabel>Password</FormLabel>
                     <FormControl>
-                      <Input
-                        type="password"
-                        placeholder="Enter your password"
-                        {...field}
-                      />
+                      <>
+                        <Input
+                          type="password"
+                          className={authError ? 'border-red-500' : ''}
+                          placeholder="Enter your password"
+                          {...field}
+                        />
+                        {authError && (
+                          <p className="text-red-500 text-sm mt-1">
+                            {authError}
+                          </p>
+                        )}
+                      </>
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -113,9 +132,9 @@ const SignInForm = (props: Props) => {
               Sign up
             </Link>
           </p>
-          {/* <p className="text-center text-sm text-blue-500 mt-2">
-            <Link href={'/auth/forgotPassword'}>Forgot Your Password?</Link>
-          </p> */}
+          <p className="text-center text-sm text-gray-600 mt-2">
+            Having trouble signing in? <Link className="text-blue-500 hover:underline" href="/auth/forgot-password">Reset Password.</Link>
+          </p>
         </Form>
       </Card>
     </div>
