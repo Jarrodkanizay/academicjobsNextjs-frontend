@@ -9,9 +9,32 @@ import LocalJobLinks from '@/components/LocalJobLinks';
 import LinkIcon from '@/components/icons/LinkIcon';
 import Link from 'next/link';
 
+const genericCity = {
+  Name: `generic`,
+  Title: `University Jobs`,
+  h1: `University Jobs `,
+  h2: ``,
+  content: `Find all research fellow, research assistant and research associate positions across various fields, including science, medicine, engineering and mathematics from top universities.`,
+  Description: `Find more than 50 research assistant, research fellow and research associate jobs at top Universities. Join the talent pool now. New jobs added daily`,
+  Keyword: `University Jobs`,
+  category2: `master_category_job_type`,
+  filter2: ``,
+  Image: ``,
+  type: `city`,
+};
+
 export async function generateMetadata({ params, searchParams }) {
   let { category } = params;
   category = category?.replace(/-/g, ' ');
+
+  // const {
+  //   Name = '',
+  //   Title = '',
+  //   Description = '',
+  //   Keyword = '',
+  //   content: content1 = '',
+  //   Image: imageSrc = '',
+  // } = categoriesAustralia.find((item) => item.Name === category) || {};
 
   const {
     Name = '',
@@ -20,7 +43,7 @@ export async function generateMetadata({ params, searchParams }) {
     Keyword = '',
     content: content1 = '',
     Image: imageSrc = '',
-  } = categoriesAustralia.find((item) => item.Name === category) || {};
+  } = categoriesAustralia.find((item) => item.Name === category) || genericCity;
 
   return {
     title: Title,
@@ -30,19 +53,12 @@ export async function generateMetadata({ params, searchParams }) {
   };
 }
 
-const region = 'Australia';
-
-const localJobData = {};
-
 function toTitleCase(str) {
   return str.toLowerCase().replace(/(?:^|\s)\w/g, function (match) {
     return match.toUpperCase();
   });
 }
 
-// Example usage
-let title = toTitleCase('hello world');
-console.log(title); // Output: Hello World
 const splitTitle = (title) => {
   const words = title.split(' ');
   const firstPart = words[0];
@@ -66,12 +82,43 @@ export default function Page({ params }) {
     Description = '',
     Keyword = '',
     content: content1 = '',
-    category2 = '',
+    category1 = '',
+    filter1 = '',
+    category2 = ``,
     filter2 = '',
+    category3 = ``,
+    filter3 = ``,
     Image: imageSrc = '',
     alt = '',
     type = '',
-  } = categoriesAustralia.find((item) => item.Name === category) || {};
+  } = categoriesAustralia.find((item) => item.Name === category) || genericCity;
+
+  if (Name === 'generic') {
+  }
+
+  const region = 'Australia';
+  const regionLinks = [
+    {
+      name: `University Jobs`,
+      url: `/${region.toLowerCase()}`,
+    },
+    {
+      name: `Lecturer jobs`,
+      url: `/${region.toLowerCase()}/lecturer`,
+    },
+    {
+      name: `Professor jobs`,
+      url: `/${region.toLowerCase()}/professor`,
+    },
+    {
+      name: `Postdoc jobs`,
+      url: `/${region.toLowerCase()}/phd`,
+    },
+    {
+      name: `University HR jobs`,
+      url: `/${region.toLowerCase()}/hr-jobs`,
+    },
+  ];
 
   let heading = Title;
 
@@ -97,29 +144,6 @@ export default function Page({ params }) {
 
   const titleParts = splitTitle(heading);
 
-  const regionLinks = [
-    {
-      name: 'University Jobs',
-      url: '/australia',
-    },
-    {
-      name: 'Lecturer jobs',
-      url: '/australia/lecturer',
-    },
-    {
-      name: 'Professor jobs',
-      url: '/australia/professor',
-    },
-    {
-      name: 'Postdoc jobs',
-      url: '/australia/phd',
-    },
-    {
-      name: 'University HR jobs',
-      url: '/australia/hr-jobs',
-    },
-  ];
-
   return (
     <div className="overflow-y w-full">
       {type === 'city' ? (
@@ -138,7 +162,7 @@ export default function Page({ params }) {
             style={{ backgroundColor: 'transparent' }}
           >
             <div class="card-body bg-none">
-              <h1 class="text-black">{h1 ? h1 : Title}</h1>
+              <h1 class="text-black p-0 m-0">{h1 ? h1 : Title}</h1>
               <p className="leading-tight">{content1}</p>
             </div>
           </div>
@@ -197,6 +221,12 @@ export default function Page({ params }) {
               region={region}
               category={categoryProperCase}
               shortName={shortName}
+              category1={category1}
+              filter1={filter1}
+              category2={category2}
+              filter2={filter2}
+              category3={category3}
+              filter3={filter3}
             />
           )}
           <JobFilter />
@@ -220,27 +250,6 @@ export default function Page({ params }) {
           </div>
         </div>
       </section>
-
-      {/* <div className="content-grid">
-        <section className="jobs_grid job_post_search_container">
-          <div className="side_panel">
-            <div className="filters_content">
-              <JobFilter />
-            </div>
-          </div>
-          <div className="listings_panel">
-            <div className="listings_content">
-              <SearchResults3 />
-            </div>
-          </div>
-        </section>
-        <div>
-          {footer_h2 !== undefined || footer_h2 !== '' ? (
-            <h2>{footer_h2}</h2>
-          ) : null}
-          <div dangerouslySetInnerHTML={{ __html: footer_content }} />
-        </div>
-      </div> */}
     </div>
   );
 }
