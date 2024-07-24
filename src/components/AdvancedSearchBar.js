@@ -38,7 +38,7 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
       : []
   );
   const filter0Ref = useRef(filter0); // Use useRef to keep a reference to filter0
-  const l = p.l || '';
+  const l = p.l || searchParams.l || '';
 
   useEffect(() => {
     filter0Ref.current = filter0; // Update the ref whenever filter0 changes
