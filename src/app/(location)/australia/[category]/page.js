@@ -29,7 +29,8 @@ export async function generateMetadata({ params, searchParams }) {
     image: imageSrc,
   };
 }
-let region = 'Australia';
+
+const region = 'Australia';
 
 const localJobData = {};
 
@@ -99,7 +100,7 @@ export default function Page({ params }) {
   const regionLinks = [
     {
       name: 'University Jobs',
-      url: '/',
+      url: '/australia',
     },
     {
       name: 'Lecturer jobs',
@@ -161,7 +162,7 @@ export default function Page({ params }) {
       )}
       <AdvancedSearchBar
         p={{
-          r: 'Australia',
+          r: region,
           filter1: [
             {
               category: category2,
@@ -193,7 +194,7 @@ export default function Page({ params }) {
             <LocalJobLinks
               heading="Browse by City"
               locations={australiaLocations.cities}
-              region={'Australia'}
+              region={region}
               category={categoryProperCase}
               shortName={shortName}
             />
@@ -202,19 +203,6 @@ export default function Page({ params }) {
         </div>
         <div className="listings_panel">
           <div className="relative pb-16">
-            {/* <div className="search_panel">
-              <AdvancedSearchBar
-                sidebarView={true}
-                p={{
-                  filter1: [
-                    {
-                      category: 'InstitutionName',
-                      filter: cityOrUni.uni_name,
-                    },
-                  ],
-                }}
-              />
-            </div> */}
             {Name === 'indigenous' ? (
               <SearchResults1
                 q={{
@@ -224,7 +212,9 @@ export default function Page({ params }) {
               />
             ) : (
               <SearchResults3
-                searchMessage={`${toTitleCase(Name)} Jobs in Australia`}
+                searchMessage={`${toTitleCase(Name)} ${
+                  type !== 'city' ? 'Jobs in ' + region : ''
+                }`}
               />
             )}
           </div>
