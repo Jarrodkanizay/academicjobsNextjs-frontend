@@ -117,9 +117,7 @@ export default function Page({ params, searchParams }) {
             className="w-full p-8 flex flex-wrap items-center justify-center gap-2 overflow-x-hidden bg-cover bg-center"
             style={{
               backgroundImage: `url(${
-                image
-                  ? image
-                  : 'https://img.daisyui.com/images/stock/photo-1481026469463-66327c86e544.jpg'
+                image ? image : '/uni-campuses/generic-glass-building.jpg'
               })`,
               backgroundSize: `cover`,
             }}

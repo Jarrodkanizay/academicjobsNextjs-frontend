@@ -1,5 +1,103 @@
 export const categoriesAustralia = [
   {
+    Name: `research assistant jobs melbourne`,
+    Title: `Research Assistant Jobs in Melbourne VIC`,
+    h1: `Research Assistant Jobs in Melbourne VIC`,
+    h2: ``,
+    content: `Find all research fellow, research assistant and research associate positions across various fields, including science, medicine, engineering and mathematics from top universities in Melbourne.`,
+    Description: `Find more than 50 research assistant, research fellow and research associate jobs at Melbourne top Universities. Join the talent pool now. New jobs added daily`,
+    Keyword: `Research Assistant Jobs Melbourne`,
+    category2: `master_category_job_type`,
+    filter2: `Research Assistant`,
+    Image: `/banners/doctor-performing-medical-research-lab-bg.jpg`,
+    type: `city`,
+  },
+
+  {
+    Name: `research assistant jobs sydney`,
+    Title: `Research Assistant Jobs Sydney, NSW`,
+    h1: `Research Assistant Jobs Sydney, NSW`,
+    h2: ``,
+    content: `Find all research fellow, research assistant and research associate positions across various fields, including science, medicine, engineering and mathematics from top universities in Sydney.`,
+    Description: `Find more than 50 research assistant, research fellow and research associate jobs at Sydney’s top Universities. Join the talent pool now. New jobs are added daily`,
+    Keyword: `Research Assistant Jobs Sydney`,
+    category2: `master_category_job_type`,
+    filter2: `Research Assistant`,
+    Image: `/banners/laboratory-team-working-together-bg.jpg`,
+    type: `city`,
+  },
+
+  {
+    Name: `research assistant jobs canberra`,
+    Title: `Research Assistant Jobs Canberra, ACT`,
+    h1: `Research Assistant Jobs Canberra, ACT`,
+    h2: ``,
+    content: `Find all research fellow, research assistant and research associate positions across various fields, including science, medicine, engineering and mathematics from top universities in Canberra.`,
+    Description: `Find more than 50 research assistant, research fellow and research associate jobs at Canberra’s top Universities. Join the talent pool now. New jobs are added daily.`,
+    Keyword: `Research Assistant Jobs Canberra`,
+    category2: `master_category_job_type`,
+    filter2: `Research Assistant`,
+    Image: `/banners/research-assistant-doing-chemistry-bg.jpg`,
+    type: `city`,
+  },
+
+  {
+    Name: `research assistant jobs brisbane`,
+    Title: `Research Assistant Jobs Brisbane, QLD`,
+    h1: `Research Assistant Jobs Brisbane, QLD`,
+    h2: ``,
+    content: `Find all research fellow, research assistant and research associate positions across various fields, including science, medicine, engineering and mathematics from top universities in Brisbane.`,
+    Description: `Find more than 50 research assistant, research fellow and research associate jobs at Brisbane’s top Universities. Join the talent pool now. New jobs added daily.`,
+    Keyword: `Research Assistant Jobs Brisbane`,
+    category2: `master_category_job_type`,
+    filter2: `Research Assistant`,
+    Image: `/banners/research-assistant-looking-through-microscope-bg.jpg`,
+    type: `city`,
+  },
+
+  {
+    Name: `research assistant jobs adelaide`,
+    Title: `Research Assistant Jobs Adelaide, SA`,
+    h1: `Research Assistant Jobs Adelaide, SA`,
+    h2: ``,
+    content: `Find all research fellow, research assistant and research associate positions across various fields, including science, medicine, engineering and mathematics from top universities in Adelaide.`,
+    Description: `Find more than 50 research assistant, research fellow and research associate jobs at Adelaide’s top Universities. Join the talent pool now. New jobs added daily.`,
+    Keyword: `Research Assistant Jobs Adelaide`,
+    category2: `master_category_job_type`,
+    filter2: `Research Assistant`,
+    Image: `/banners/research-assistant-with-eyedropper-bg.jpg`,
+    type: `city`,
+  },
+
+  {
+    Name: `research assistant jobs perth`,
+    Title: `Research Assistant Jobs Perth, WA`,
+    h1: `Research Assistant Jobs Perth, WA`,
+    h2: ``,
+    content: `Find all research fellow, research assistant and research associate positions across various fields, including science, medicine, engineering and mathematics from top universities in Perth.`,
+    Description: `Find more than 50 research assistant, research fellow and research associate jobs at Perth’s top Universities. Join the talent pool now. New jobs added daily.`,
+    Keyword: `Research Assistant Jobs Perth`,
+    category2: `master_category_job_type`,
+    filter2: `Research Assistant`,
+    Image: `/banners/research-assistants-collaborating-bg.jpg`,
+    type: `city`,
+  },
+
+  {
+    Name: `research assistant jobs hobart`,
+    Title: `Research Assistant Jobs Hobart, Tasmania`,
+    h1: `Research Assistant Jobs Hobart, Tasmania`,
+    h2: ``,
+    content: `Find all research fellow, research assistant and research associate positions across various fields, including science, medicine, engineering and mathematics at the University of Tasmania.`,
+    Description: `Find more than 50 research assistant, research fellow and research associate jobs at the University of Tasmania. Join the talent pool now. New jobs added daily.`,
+    Keyword: `Research Assistant Jobs Hobart`,
+    category2: `master_category_job_type`,
+    filter2: `Research Assistant`,
+    Image: `/banners/research-assistants-looking-at-test-tubes-bg.jpg`,
+    type: `city`,
+  },
+
+  {
     Name: `faculty`,
     Title: `Apply University Faculty Jobs in Australia.`,
     h1: `University Jobs Australia for Academics`,
@@ -10,6 +108,7 @@ export const categoriesAustralia = [
     category2: 'master_category_job_type',
     filter2: 'Academic / Faculty',
     Image: '/banners/faculty-bg.jpg',
+    type: 'region',
   },
   {
     Name: `executive`,
@@ -22,6 +121,7 @@ export const categoriesAustralia = [
     category2: 'master_category_job_type',
     filter2: 'Executive',
     Image: '/banners/executive-bg.jpg',
+    type: 'region',
   },
   {
     Name: `hr jobs`,
@@ -34,6 +134,7 @@ export const categoriesAustralia = [
     category2: 'master_category_job_type',
     filter2: 'Human Resources',
     Image: '/banners/hr-bg.jpg',
+    type: 'region',
   },
   {
     Name: `phd`,
@@ -46,6 +147,7 @@ export const categoriesAustralia = [
     category2: 'master_category_job_type',
     filter2: 'Student / Phd Jobs',
     Image: '/banners/phd-bg.jpg',
+    type: 'region',
   },
   {
     Name: `admin`,
@@ -58,6 +160,7 @@ export const categoriesAustralia = [
     category2: 'master_category_job_type',
     filter2: 'Staff / Administration',
     Image: '/banners/admin-bg.jpg',
+    type: 'region',
   },
   {
     Name: `lecturer`,
@@ -70,6 +173,7 @@ export const categoriesAustralia = [
     category2: 'Position Type',
     filter2: 'Lecturer/Instructor',
     Image: '/banners/lecturer-bg.jpg',
+    type: 'region',
   },
   {
     Name: `research`,
@@ -82,6 +186,7 @@ export const categoriesAustralia = [
     category2: 'Position Type',
     filter2: 'Research',
     Image: '/banners/research-bg.jpg',
+    type: 'region',
   },
   {
     Name: `professor`,
@@ -94,6 +199,7 @@ export const categoriesAustralia = [
     category2: 'Position Type',
     filter2: 'Professor',
     Image: '/banners/professor-bg.jpg',
+    type: 'region',
   },
   {
     Name: `human_resources`,
@@ -106,6 +212,7 @@ export const categoriesAustralia = [
     category2: 'Position Type',
     filter2: 'Human Resources',
     Image: '/banner-heros/indigenous-banner.png',
+    type: 'region',
   },
   {
     Name: `indigenous`,
@@ -118,6 +225,7 @@ export const categoriesAustralia = [
     category2: 'Position Type',
     filter2: 'Professor',
     Image: '/banners/indigenous-bg.jpg',
+    type: 'region',
   },
   {
     Name: `phd_jobs`,
@@ -130,6 +238,7 @@ export const categoriesAustralia = [
     category2: 'Position Type',
     filter2: 'Student / Phd Jobs',
     Image: '/banner-heros/phd-banner.png',
+    type: 'region',
   },
   {
     Name: `student`,
@@ -142,6 +251,7 @@ export const categoriesAustralia = [
     category2: 'Position Type',
     filter2: 'Professor',
     Image: '/banner-heros/student-banner.png',
+    type: 'region',
   },
   {
     Name: `graduate`,
@@ -154,5 +264,6 @@ export const categoriesAustralia = [
     category2: '',
     filter2: '',
     Image: '/banner-heros/graduate-banner.png',
+    type: 'region',
   },
 ];

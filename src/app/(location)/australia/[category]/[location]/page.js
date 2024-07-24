@@ -90,7 +90,7 @@ export default function Page({ params }) {
         />
         <div className="hero-content mx-auto items-start justify-start py-12 relative z-10">
           <h1 className="md:text-5xl font-bold md:text-left text-white pb-4 m-0">
-            {h1 ? h1 : Title}
+            {h1 ? h1 : Title}???
             <p className="mt-4 text-white rounded-lg">{content1}</p>
           </h1>
         </div>
@@ -141,7 +141,7 @@ export default function Page({ params }) {
               />
             ) : (
               <SearchResults3
-                searchMessage={`${toTitleCase(Name)} Jobs in Australia`}
+                searchMessage={`${toTitleCase(Name)} Jobs in ${location}`}
               />
             )}
           </div>
