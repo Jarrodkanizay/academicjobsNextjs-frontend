@@ -20,27 +20,12 @@ export default function myPage() {
       <div className="bg-slate-200 full-width">
         <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
           <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">
-            Postdoc Positions
+            Postdoctoral Researcher & Research Fellow
           </h1>
 
           <div className="">
             <p className="px-7 mb-4 mt-1">
-              Discover your ideal postdoctoral position through the world’s best
-              job board! At Academic Jobs, we offer postdoc opportunities at the
-              most prestigious universities worldwide. Engage with domestic and
-              international partners, collaborate with brilliant minds, and
-              access state-of-the-art facilities and resources in a fulfilling
-              postdoctoral experience.
-            </p>
-            <p className="px-7 md:flex hidden">
-              The No.1 job board for academics, Academic Jobs, offers a
-              comprehensive list of opportunities to shape the trajectory of
-              your career. We carefully categorise top Higher Ed fellowships,
-              scholarships, and programs, making it your go-to resource for
-              advancing in academia.
-            </p>
-            <p className="px-7 md:flex hidden">
-              Explore all the finest postdoctoral positions right here...
+            As the leading job board for academics, AcademicJobs carefully curates the top    postdoc jobs to advance your career. Find the best postdoctoral researcher jobs in diverse fields, such as engineering, science, medicine, and many more. Join the talent pool now and get updated with new university job openings. 
             </p>
             <Link
               href={'/academic-talent-pool'}

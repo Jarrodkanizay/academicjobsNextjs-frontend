@@ -32,18 +32,12 @@ export default function myPage() {
           <div className="max-w-2xl mx-auto">
             <h1 className="mb-5  text-white md:text-2xl text-2xl font-normal">
               <span className="text-5xl font-bold text-amber-500">
-                Faculty Jobs{' '}
+                University Jobs for Academics{' '}
               </span>
               <br />
             </h1>
             <p className="px-7 font-bold">
-              The No.1 job board for Faculty Jobs, Academic Jobs, provides an
-              extensive list of opportunities for the future of your career,
-              carefully sectioning the top faculty jobs to find the best
-              position for you!
-            </p>
-            <p className="px-7 font-bold">
-              Find all the best academic faculty jobs here…
+              As the leading job board for academics, AcademicJobs carefully curates the top    faculty positions to advance your career. Find a wide range of faculty positions, including lecturers, postdoctoral and researcher jobs across diverse fields, such as science, health, arts, business and more. Join the talent pool now and stay updated with the latest university job openings. 
             </p>
             <Link
               href="/academic-talent-pool"
