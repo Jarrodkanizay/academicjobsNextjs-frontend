@@ -4,7 +4,7 @@ import { useSearchParams } from 'next/navigation';
 
 // Function to convert object to URLSearchParams
 export function toURLParams(obj) {
-    const { r = 'Global', q = '', l = '', lon = 0, lat = 0, page = 0, category = '', currentMiddleCategory = '', filter0 = [] , mode = 'default'} = obj;
+    const { r = 'Global', q = '', l = '', lon = 0, lat = 0, page = 0, category = '', currentMiddleCategory = '', filter0 = [] , mode = 'default', active= ''} = obj;
     const params = new URLSearchParams();
 
     params.set('r', encodeURIComponent(r));
@@ -17,6 +17,10 @@ export function toURLParams(obj) {
     params.set('currentMiddleCategory', encodeURIComponent(currentMiddleCategory));
     params.set('filter0', encodeURIComponent(JSON.stringify(filter0)));
     params.set('mode', decodeURIComponent(mode));
+    if (decodeURIComponent(active) === 'true') {
+        params.set('active', 'true');
+    }
+    
 
     return params;
 }
@@ -36,8 +40,9 @@ export function loadFromURLParams(searchParams) {
     const filter = decodeURIComponent(searchParams.get('filter0') || '');
     const filter0 = filter ? JSON.parse(filter) : [];
     const mode = decodeURIComponent(searchParams.get('mode') || 'default');
+    const active = decodeURIComponent(searchParams.get('active') || '');
 
-    return { r, q, l, lon, lat, page, category, currentMiddleCategory, filter0, mode };
+    return { r, q, l, lon, lat, page, category, currentMiddleCategory, filter0, mode, active };
 }
 
 // Custom hook to encapsulate URL parameter logic

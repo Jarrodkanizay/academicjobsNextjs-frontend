@@ -64,7 +64,7 @@ async function getJob(data) {
 
 const JobDetailPage = async ({ params, searchParams }) => {
   const session = await getServerSession(authOptions);
-  const active = searchParams['active'] || false;
+  const active = searchParams['active'] || '';
   const mode = searchParams['mode'] || 'default';
 
   const job = await getJob({ id: params.id, userId: session?.user.id });
