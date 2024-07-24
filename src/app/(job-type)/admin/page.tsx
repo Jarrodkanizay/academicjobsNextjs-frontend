@@ -27,7 +27,7 @@ export default function myPage() {
 
           <div className="">
             <p className="px-7 mb-4 mt-1">
-              Find all university admin staff and support roles at the best universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.  Join the talent pool now and stay updated with the latest university job openings. 
+              Find all university admin staff and support roles at the best universities. Positions in admin will provide you with the chance to engage with some of the brightest minds, and use top-notch facilities and resources.
             </p>
             <Link
               href={'/academic-talent-pool'}

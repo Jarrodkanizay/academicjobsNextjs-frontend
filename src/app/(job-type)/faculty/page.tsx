@@ -37,7 +37,7 @@ export default function myPage() {
               <br />
             </h1>
             <p className="px-7 font-bold">
-              As the leading job board for academics, AcademicJobs carefully curates the top    faculty positions to advance your career. Find a wide range of faculty positions, including lecturers, postdoctoral and researcher jobs across diverse fields, such as science, health, arts, business and more. Join the talent pool now and stay updated with the latest university job openings. 
+              As the leading job board for academics, AcademicJobs carefully curates the top    faculty positions to advance your career. Find a wide range of faculty positions, including lecturers, postdoctoral and researcher jobs across diverse fields, such as science, health, arts, business and more.   
             </p>
             <Link
               href="/academic-talent-pool"

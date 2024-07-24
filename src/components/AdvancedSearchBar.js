@@ -270,7 +270,7 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
   return (
     <>
       <div
-        className={`mx-auto bg-white rounded-xl shadow-xl p-4 max-w-5xl flex flex-col mb-8 mt-4 ${forceClass}`}
+        className={`mx-auto bg-white rounded-xl shadow-xl p-4 max-w-5xl flex flex-col mb-8  ${forceClass}`}
       >
         <div className="w-full pt-2">
           <div className="mx-auto">

@@ -61,7 +61,7 @@ export default function myPage() {
 
             <p className="px-7 mb-4 mt-1 font-bold">
 
-              As the leading job board for academic and professional staff, AcademicJobs carefully curates the top university dean, executive and senior management positions available. Find a wide range of senior and management positions, including executive deans and directors. Join the talent pool now and stay updated with the latest university job openings. 
+              As the leading job board for academic and professional staff, AcademicJobs carefully curates the top university dean, executive and senior management positions available. Find a wide range of senior and management positions, including executive deans and directors.   
 
             </p>
 

@@ -26,7 +26,7 @@ export default function myPage() {
 
           <div className="">
             <p className="px-7 mb-4 mt-1">
-              As the leading job board for academics, AcademicJobs carefully curates the top opportunities in PhD positions, scholarships and programmes to advance your career in Higher Education. Find a wide range of PhD positions in various fields, such as science, health, maths, business and more. Join the talent pool now and stay updated with the latest university job openings. 
+              As the leading job board for academics, AcademicJobs carefully curates the top opportunities in PhD positions, scholarships and programmes to advance your career in Higher Education. Find a wide range of PhD positions in various fields, such as science, health, maths, business and more.   
             </p>
             <Link
               href={'/academic-talent-pool'}
