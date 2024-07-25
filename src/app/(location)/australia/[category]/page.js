@@ -9,32 +9,12 @@ import LocalJobLinks from '@/components/LocalJobLinks';
 import LinkIcon from '@/components/icons/LinkIcon';
 import Link from 'next/link';
 
-const genericCity = {
-  Name: `generic`,
-  Title: `University Jobs`,
-  h1: `University Jobs `,
-  h2: ``,
-  content: `Find all research fellow, research assistant and research associate positions across various fields, including science, medicine, engineering and mathematics from top universities.`,
-  Description: `Find more than 50 research assistant, research fellow and research associate jobs at top Universities. Join the talent pool now. New jobs added daily`,
-  Keyword: `University Jobs`,
-  category2: `master_category_job_type`,
-  filter2: ``,
-  Image: ``,
-  type: `city`,
-};
+// let category2 = 'PositionType';
+// let filter2 = 'Research';
 
 export async function generateMetadata({ params, searchParams }) {
   let { category } = params;
   category = category?.replace(/-/g, ' ');
-
-  // const {
-  //   Name = '',
-  //   Title = '',
-  //   Description = '',
-  //   Keyword = '',
-  //   content: content1 = '',
-  //   Image: imageSrc = '',
-  // } = categoriesAustralia.find((item) => item.Name === category) || {};
 
   const {
     Name = '',
@@ -43,7 +23,7 @@ export async function generateMetadata({ params, searchParams }) {
     Keyword = '',
     content: content1 = '',
     Image: imageSrc = '',
-  } = categoriesAustralia.find((item) => item.Name === category) || genericCity;
+  } = categoriesAustralia.find((item) => item.Name === category) || {};
 
   return {
     title: Title,
@@ -74,6 +54,10 @@ export default function Page({ params }) {
   category = category?.replace(/-/g, ' ');
   location = location?.replace(/-/g, ' ');
 
+  const genericItem = categoriesAustralia.find(
+    (item) => item.Name === 'generic'
+  );
+
   const {
     Name = '',
     Title = '',
@@ -82,19 +66,16 @@ export default function Page({ params }) {
     Description = '',
     Keyword = '',
     content: content1 = '',
+    Image: imageSrc = '',
     category1 = '',
     filter1 = '',
-    category2 = ``,
+    category2 = '',
     filter2 = '',
-    category3 = ``,
-    filter3 = ``,
-    Image: imageSrc = '',
+    category3 = '',
+    filter3 = '',
     alt = '',
     type = '',
-  } = categoriesAustralia.find((item) => item.Name === category) || genericCity;
-
-  if (Name === 'generic') {
-  }
+  } = categoriesAustralia.find((item) => item.Name === category) || genericItem;
 
   const region = 'Australia';
   const regionLinks = [
@@ -221,12 +202,6 @@ export default function Page({ params }) {
               region={region}
               category={categoryProperCase}
               shortName={shortName}
-              category1={category1}
-              filter1={filter1}
-              category2={category2}
-              filter2={filter2}
-              category3={category3}
-              filter3={filter3}
             />
           )}
           <JobFilter />
