@@ -20,29 +20,14 @@ export default function myPage() {
     <main className="PHD Jobs">
       <div className="bg-slate-200 full-width">
         <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
-          <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">
-            PHD Jobs
+          <h1 className="md:text-6xl font-bold m-0 md:text-left text-gray-500 pb-4">
+            PhD scholarships & PhD Positions
           </h1>
 
           <div className="">
             <p className="px-7 mb-4 mt-1">
-              Seek your perfect PhD position through the world’s best job board!
-              At Academic Jobs we offer PhD positions at the most renowned
-              universities across the globe. PhD opportunities will provide you
-              with the chance to engage with partners domestically and
-              internationally, work with some of the brightest minds, and use
-              top-notch facilities and resources.
+              As the leading job board for academics, AcademicJobs carefully curates the top opportunities in PhD positions, scholarships and programmes to advance your career in Higher Education. Find a wide range of PhD positions in various fields, such as science, health, maths, business and more.   
             </p>
-            <p className="px-7 md:flex hidden">
-              The No.1 job board for academics, Academic Jobs, provides an
-              extensive list of opportunities for the future of your career,
-              carefully sectioning the top Higher Ed fellowships, scholarships,
-              and programmes.
-            </p>
-            <p className="px-7 md:flex hidden">
-              Find all the best PhD positions here…
-            </p>
-
             <Link
               href={'/academic-talent-pool'}
               className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"

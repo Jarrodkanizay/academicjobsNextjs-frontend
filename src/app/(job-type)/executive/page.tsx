@@ -57,19 +57,12 @@ export default function myPage() {
         <div className="hero-overlay bg-opacity-70 "></div>
         <div className="hero-content text-white ">
           <div className="max-w-2xl mx-auto">
-            <h1 className="md:text-6xl font-bold m-0  pb-4"> Executive Jobs</h1>
+            <h1 className="md:text-6xl font-bold m-0  pb-4">University Dean and Executive Jobs</h1>
 
             <p className="px-7 mb-4 mt-1 font-bold">
-              Find your perfect executive position through the world’s best job
-              board! At Academic Jobs we offer the most renowned High Ed jobs at
-              the top universities. Work with some of the brightest minds, and
-              use top-notch facilities & resources.
-            </p>
-            {/* <p className="px-7 md:flex hidden">
-            The No.1 job board for academics, Academic Jobs, provides an extensive list of opportunities for the future of your career, carefully sectioning the top executive jobs to find the best position for you!
-            </p> */}
-            <p className="px-7 md:flex hidden font-bold">
-              Find all the best executive jobs here…
+
+              As the leading job board for academic and professional staff, AcademicJobs carefully curates the top university dean, executive and senior management positions available. Find a wide range of senior and management positions, including executive deans and directors.   
+
             </p>
 
             <Link

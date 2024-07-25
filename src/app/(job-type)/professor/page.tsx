@@ -21,25 +21,14 @@ export default function myPage() {
       <div className="bg-slate-200 full-width">
         <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
           <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">
-            Professor Jobs
+              Professor & Adjunct Professor Jobs
           </h1>
 
           <div className="">
             <p className="px-7 mb-4 mt-1">
-              Discover your perfect professor position through the world’s best
-              job board! At Academic Jobs we offer the most renowned professor
-              jobs at the top universities. A career as an academic professor
-              will provide you with the chance to engage with partners
-              domestically and internationally, work with some of the brightest
-              minds, and use top-notch facilities and resources.
+              As the leading job board for academics, AcademicJobs carefully curates the top professor jobs to advance your career. Find the best professor, assistant professor and adjunct professor in diverse fields, such as law, history, science, maths, arts, nursing and many more. 
             </p>
-            <p className="px-7 md:flex hidden">
-              The No.1 job board for professors, Academic Jobs, provides an
-              extensive list of opportunities for the future of your career,
-              carefully sectioning the top professor jobs to find the best
-              position for you!
-            </p>
-            <p className="px-7 md:flex hidden">Find all the best jobs here…</p>
+
             <Link
               href={'/academic-talent-pool'}
               className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
@@ -51,7 +40,7 @@ export default function myPage() {
       </div>
 
       <div className="bg-white flex flex-col  ">
-        <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
+        {/* <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
           {professor.map(({ Title, Name }, key) => (
             <li
               className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
@@ -62,7 +51,7 @@ export default function myPage() {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
       <AdvancedSearchBar
         p={{
@@ -83,8 +72,7 @@ export default function myPage() {
         </div>
         <div className="listings_panel">
           <div className="listings_content">
-            {/* <SearchResults1 q={{ q: q, l: l || '', filter1 }} /> */}
-            <SearchResults q={{ q: 'professor' || 0 }} />
+            <SearchResults3 />
           </div>
         </div>
       </section>

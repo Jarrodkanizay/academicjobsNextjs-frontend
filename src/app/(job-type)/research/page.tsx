@@ -22,30 +22,17 @@ export default function myPage() {
       <div className="bg-slate-200 full-width">
         <div className="hero-content flex-col lg:flex-row mx-auto items-start py-12">
           <h1 className="md:text-6xl font-bold m-0 md:text-right text-gray-500 pb-4">
-            Research Jobs
+          Research Assistant and Researcher Jobs
           </h1>
 
           <div className="">
             <p className="px-7 mb-4 mt-1">
-              Find your perfect research position through the world’s best job
-              board! At Academic Jobs we offer the most renowned research jobs
-              at the top universities. A career as an academic researcher will
-              provide you with the chance to engage with partners domestically
-              and internationally, work with some of the brightest minds, and
-              use top-notch facilities and resources.
+              As the leading job board for academics, AcademicJobs carefully curates the top research jobs to advance your career. Find the best research associate, research assistant and research scientist jobs in diverse fields including science, health, maths, engineering and many more. 
             </p>
-            <p className="px-7 md:flex hidden">
-              The No.1 job board for researchers, Academic Job, provides an
-              extensive list of opportunities for the future of your career,
-              carefully sectioning the top research jobs to find the best
-              position for you!
-            </p>
-            <p className="px-7 md:flex hidden">
-              Find all the best research jobs here…
-            </p>
+
             <Link
               href={'/academic-talent-pool'}
-              className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2"
+              className="btn btn-aj btn-sm w-2/3 md:w-1/4 mx-auto my-2 ml-6"
             >
               Join Our Talent Pool
             </Link>
@@ -54,7 +41,7 @@ export default function myPage() {
       </div>
 
       <div className="bg-white flex flex-col  ">
-        <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
+        {/* <ul className=" text-left columns-1 md:columns-4 pt-4 pl-8 md:gap-2  h-auto w-full text-transform: capitalize">
           {research.map(({ Title, Name }, key) => (
             <li
               className={`pb-2 flex ${' md:break'} ${' font-bold text-gray-400'}`}
@@ -65,7 +52,7 @@ export default function myPage() {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
 
       <Link href="/research/faq" className="pt-4 text-sky-500">

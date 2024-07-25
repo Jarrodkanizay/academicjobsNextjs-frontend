@@ -22,11 +22,9 @@ export default function myPage() {
     <main className="content-grid">
       <HeroBanner
         //   bgColorClass?: string; //Optional Tailwind CSS background color class
-        h1="Transform Your Hiring Strategy: Use Quick Post Technology to save time and money"
-        h2="Job Seekers: Find the best University & College Staff Positions"
-        para1="Discover your perfect human resource position through the world’s
-        best job board! At Academic Jobs we offer the most renowned HR
-        jobs at the top universities."
+        h1="University HR and Professional Staff"
+        para1="As the leading job board for university human resource (HR) and professional staffs, Academicjobs carefully curates the top job opportunities in universities. Find top HR positions, recruitment partner, payroll officer and other university staff jobs here.
+"
         btnPrimaryText="Post a Job Now"
         btnPrimaryURL="/post-a-job"
         btnSecondaryText="Join Our Talent Pool"
