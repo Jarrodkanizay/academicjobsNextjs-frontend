@@ -25,7 +25,7 @@ const LocalJobLinks = ({
     <>
       {category.toLowerCase() === 'indigenous' ? null : (
         <div className="links_section mb-16">
-          <p>{category}</p>
+          {/* <p>{category}</p> */}
           <h2>{heading}</h2>
           <nav aria-label={heading}>
             <ul>
