@@ -54,11 +54,14 @@ export default function Page({ params }) {
   category = category?.replace(/-/g, ' ');
   location = location?.replace(/-/g, ' ');
 
-  const genericItem = categoriesAustralia.find(
+  const defaultItem = categoriesAustralia.find(
     (item) => item.Name === 'generic'
   );
 
-  const {
+  const localObj =
+    categoriesAustralia.find((item) => item.Name === category) || defaultItem;
+
+  let {
     Name = '',
     Title = '',
     h1 = '',
@@ -75,7 +78,7 @@ export default function Page({ params }) {
     filter3 = '',
     alt = '',
     type = '',
-  } = categoriesAustralia.find((item) => item.Name === category) || genericItem;
+  } = localObj;
 
   const region = 'Australia';
   const regionLinks = [
@@ -198,6 +201,7 @@ export default function Page({ params }) {
           ) : (
             <LocalJobLinks
               heading="Browse by City"
+              localObj={localObj}
               locations={australiaLocations.cities}
               region={region}
               category={categoryProperCase}

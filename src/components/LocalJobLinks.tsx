@@ -4,6 +4,7 @@ import LinkIcon from '@/components/icons/LinkIcon';
 type Props = {
   title?: string;
   heading: string;
+  localObj: any;
   locations: any;
   region?: string;
   category: string;
@@ -13,6 +14,7 @@ type Props = {
 const LocalJobLinks = ({
   title = '',
   heading,
+  localObj,
   locations,
   region = 'Global',
   category,
@@ -20,7 +22,31 @@ const LocalJobLinks = ({
 }: Props) => {
   // let queryString = `?r=${region}&l=${location}&q=&page=0&category=&currentMiddleCategory=&filter0=[{"category":"${category1}","filter":"${filter1}"},{"category":"${category2}","filter":"${filter2}"},{"category":"${category3}","filter":"${filter3}"}]&mode=default`;
 
-  let queryString = '';
+  let {
+    Name = '',
+    Title = '',
+    h1 = '',
+    h2 = '',
+    Description = '',
+    Keyword = '',
+    content: content1 = '',
+    Image: imageSrc = '',
+    category1 = '',
+    filter1 = '',
+    category2 = '',
+    filter2 = '',
+    category3 = '',
+    filter3 = '',
+    alt = '',
+    type = '',
+  } = localObj;
+
+  const urlPrefix = `?r=${region}&`;
+  const urlLocation = `l=${locations[0]}&`; //Not used just a visual for more poor brain
+  const urlCategory = `filter0=[{"category":"Position Type",`;
+  const urlFilter = `"filter":"Research"}]&`;
+  const urlSuffix = `mode=default`;
+
   return (
     <>
       {category.toLowerCase() === 'indigenous' ? null : (
@@ -37,7 +63,10 @@ const LocalJobLinks = ({
                         .toLowerCase()
                         .replace(/\s+/g, '-')}-jobs-${location
                         .toLowerCase()
-                        .replace(/\s+/g, '-')}`}
+                        .replace(
+                          /\s+/g,
+                          '-'
+                        )}${urlPrefix}l=${location}&${urlCategory}${urlFilter}${urlSuffix}`}
                     >
                       <LinkIcon forceClass="pink_icon" /> {shortName} Jobs 
                       {location}
