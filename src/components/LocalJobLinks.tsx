@@ -20,7 +20,8 @@ const LocalJobLinks = ({
   category,
   shortName = category,
 }: Props) => {
-  // let queryString = `?r=${region}&l=${location}&q=&page=0&category=&currentMiddleCategory=&filter0=[{"category":"${category1}","filter":"${filter1}"},{"category":"${category2}","filter":"${filter2}"},{"category":"${category3}","filter":"${filter3}"}]&mode=default`;
+  // TODO: This is not being used at the moment but once search query string is fixed to work with all levels then we can add the additional features (categories, filters, etc)
+  // TODO: Write a function to build the query string, retrieving the details from the localObj and then pass it to the URL
 
   let {
     Name = '',
@@ -39,7 +40,7 @@ const LocalJobLinks = ({
     filter3 = '',
     alt = '',
     type = '',
-  } = localObj; // This is not being used at the moment but once search query string is fixed to work with all levels then we can add the additional features (categories, filters, etc)
+  } = localObj;
 
   const urlPrefix = `?r=${region}&`;
   const urlLocation = `l=${locations[0]}&`; //Not used just a visual for more poor brain

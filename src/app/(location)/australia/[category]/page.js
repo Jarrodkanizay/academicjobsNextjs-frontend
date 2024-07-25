@@ -119,6 +119,13 @@ export default function Page({ params }) {
     shortName = 'PhD';
   }
 
+  if (categoryProperCase.toLowerCase().startsWith('faculty')) {
+    if (region === 'Australia') {
+      categoryProperCase = 'Academic';
+      shortName = 'Academic';
+    }
+  }
+
   if (categoryProperCase.toLowerCase().startsWith('research'))
     categoryProperCase = `${categoryProperCase} Assistant`;
 
