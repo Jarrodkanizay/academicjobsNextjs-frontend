@@ -39,7 +39,7 @@ const LocalJobLinks = ({
     filter3 = '',
     alt = '',
     type = '',
-  } = localObj;
+  } = localObj; // This is not being used at the moment but once search query string is fixed to work with all levels then we can add the additional features (categories, filters, etc)
 
   const urlPrefix = `?r=${region}&`;
   const urlLocation = `l=${locations[0]}&`; //Not used just a visual for more poor brain
