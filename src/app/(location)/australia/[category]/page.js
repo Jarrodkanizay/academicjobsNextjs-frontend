@@ -83,23 +83,27 @@ export default function Page({ params }) {
   const region = 'Australia';
   const regionLinks = [
     {
-      name: `University Jobs`,
+      name: `University`,
       url: `/${region.toLowerCase()}`,
     },
     {
-      name: `Lecturer jobs`,
+      name: `Research`,
+      url: `/${region.toLowerCase()}/research`,
+    },
+    {
+      name: `Lecturer`,
       url: `/${region.toLowerCase()}/lecturer`,
     },
     {
-      name: `Professor jobs`,
+      name: `Professor`,
       url: `/${region.toLowerCase()}/professor`,
     },
     {
-      name: `Postdoc jobs`,
+      name: `Postdoc`,
       url: `/${region.toLowerCase()}/phd`,
     },
     {
-      name: `University HR jobs`,
+      name: `University HR`,
       url: `/${region.toLowerCase()}/hr-jobs`,
     },
   ];
@@ -111,6 +115,11 @@ export default function Page({ params }) {
 
   if (categoryProperCase.toLowerCase().startsWith('hr')) {
     categoryProperCase = 'HR';
+    shortName = categoryProperCase;
+  }
+
+  if (categoryProperCase.toLowerCase().startsWith('post doc research fellow')) {
+    categoryProperCase = 'Postdoc';
     shortName = categoryProperCase;
   }
 
@@ -139,7 +148,7 @@ export default function Page({ params }) {
     <div className="overflow-y w-full">
       {type === 'city' ? (
         <div
-          className="w-full p-8 flex flex-wrap items-center justify-center gap-2 overflow-x-hidden bg-cover bg-center"
+          className="w-full p-8 flex flex-wrap items-center justify-center gap-2 overflow-x-hidden bg-cover bg-center bg-sky-500"
           style={{
             backgroundImage: `url(${
               imageSrc ? imageSrc : '/uni-campuses/generic-glass-building.jpg'
@@ -193,15 +202,21 @@ export default function Page({ params }) {
               <h2>Other related jobs</h2>
               <nav aria-label="Other related jobs">
                 <ul>
-                  {regionLinks.map((link, index) => (
-                    <li key={index}>
-                      <p>
-                        <Link href={link.url}>
-                          <LinkIcon forceClass="pink_icon" /> {link.name}
-                        </Link>
-                      </p>
-                    </li>
-                  ))}
+                  {regionLinks
+                    // Prevent the current category (filter2) from being listed in the related jobs
+                    .filter(
+                      (link) =>
+                        link.name.toLowerCase() !== filter2.toLowerCase()
+                    )
+                    .map((link, index) => (
+                      <li key={index}>
+                        <p>
+                          <Link href={link.url}>
+                            <LinkIcon forceClass="pink_icon" /> {link.name} Jobs
+                          </Link>
+                        </p>
+                      </li>
+                    ))}
                 </ul>
               </nav>
             </div>

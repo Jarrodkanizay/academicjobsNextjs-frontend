@@ -138,6 +138,9 @@ export default async function myPage() {
             <Link href={`/australia/hr-jobs`}>HR</Link>
           </li>
           <li>
+            <Link href={`/australia/postdoc`}>Postdoc</Link>
+          </li>
+          <li>
             <Link href={`/australia/phd`}>PhD</Link>
           </li>
           <li>
