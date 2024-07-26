@@ -9,5 +9,14 @@ export const australiaLocations = {
     'Victoria',
     'Western Australia',
   ],
-  cities: ['Adelaide', 'Brisbane', 'Canberra', 'Melbourne', 'Perth', 'Sydney'],
+  cities: [
+    'Adelaide',
+    'Brisbane',
+    'Gold Coast',
+    'Canberra',
+    'Melbourne',
+    'Perth',
+    'Sydney',
+    'Tasmania',
+  ],
 };
