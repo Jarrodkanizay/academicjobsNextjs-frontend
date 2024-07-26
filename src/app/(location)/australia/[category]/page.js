@@ -100,6 +100,10 @@ export default function Page({ params }) {
     },
     {
       name: `Postdoc`,
+      url: `/${region.toLowerCase()}/postdoc`,
+    },
+    {
+      name: `PhD`,
       url: `/${region.toLowerCase()}/phd`,
     },
     {
