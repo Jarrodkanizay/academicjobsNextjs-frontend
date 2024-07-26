@@ -47,7 +47,7 @@ firstName2,
 lastName2,
 email2,
 phone2,
-jobTitle2,
+jobTitle2, 
 subcategoryOthers,
 replace to=" to href="
 replace img to <Image
