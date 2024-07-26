@@ -44,15 +44,15 @@ const LocalJobLinks = ({
 
   const urlPrefix = `?r=${region}&`;
   const urlLocation = `l=${locations[0]}&`; //Not used just a visual for more poor brain
-  const urlCategory = `filter0=[{"category":"Position Type",`;
-  const urlFilter = `"filter":"Research"}]&`;
+  const urlCategory = `filter0=[{"category":"${category2}",`;
+  const urlFilter = `"filter":"${filter2}"}]&`;
   const urlSuffix = `mode=default`;
 
   return (
     <>
       {category.toLowerCase() === 'indigenous' ? null : (
         <div className="links_section mb-16">
-          {/* <p>{category}</p> */}
+          <p>{category}</p>
           <h2>{heading}</h2>
           <nav aria-label={heading}>
             <ul>
