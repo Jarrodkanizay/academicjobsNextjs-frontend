@@ -161,23 +161,19 @@ export default async function myPage() {
 
             <div>
               <p className="px-7 mb-4 mt-1">
-                Discover top university employment opportunities across the
-                United Kingdom. AcademicJobs is your gateway to a wide range of
-                university jobs, from top-tier faculty positions, academic jobs
-                to administrative roles at leading universities and colleges.
-                Whether you're seeking lecturer jobs, research jobs, or senior
-                academic positions, we provide a comprehensive listing of
-                opportunities to advance your career in higher education.
-                Explore postdoctoral jobs, professor roles, and university
-                vacancies to find your perfect fit.
+                United Kingdom’s no 1 University Job Board Website! Seek top
+                faculty and university staff positions from UK’s leading
+                universities. Begin your search for academic jobs, senior
+                academic positions, HR and admin roles from top universities
+                both nationally and internationally.
               </p>
               <p className="px-7 mb-4 mt-1">
-                Our job board is tailored for aspiring and established
-                professionals in the academic sector. Stay informed with the
-                latest university job openings, including academic careers,
-                student support jobs, and university staff positions. Join a
-                collaborative academic environment dedicated to intellectual
-                growth, professional development, and research excellence.
+                Whether you're a professor, researcher, lecturer or postdocs,
+                our online job board offers the most current opportunities in
+                academia. Stay updated with the latest job vacancies by joining
+                our talent pool. Find your next university jobs now and join a
+                collaborative environment dedicated to intellectual growth and
+                research excellence.
               </p>
 
               {/* <div className="text-[#f4a10c]  flex flex-col items-center justify-center  text-2xl pt-8  animate-bounce h-6" >
