@@ -75,8 +75,8 @@ export default async function myPage() {
   return (
     <main className="content-grid">
       <HeroBannerPortrait
-        h1={`Higher Ed jobs in the USA`}
-        h1_mobile={`Higher Ed jobs in the USA`}
+        h1={`Higher Ed jobs in the USA`}
+        h1_mobile={`Higher Ed jobs in the USA`}
         country={'us'}
         items={items}
       />
@@ -182,11 +182,11 @@ export default async function myPage() {
             <p className="px-7 mb-4 mt-1">
               Seek higher education employment opportunities across the United
               States. Begin your search for academic jobs, senior academic
-              positions, HR and admin roles from top universities both
+              positions, HR and staff roles from top universities both
               nationally and internationally.
             </p>
             <p className="px-7 md:flex hidden">
-              Whether you're a professor, researcher, lecturer or postdocs, our
+              Whether you're a professor, researcher, lecturer or postdoc, our
               online job board offers the most current opportunities in
               academia. Stay updated with the latest job vacancies by joining
               our talent pool. Find your next higher ed jobs now and join a
