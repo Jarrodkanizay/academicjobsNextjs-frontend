@@ -62,11 +62,16 @@ async function getJob(data) {
   return res;
 }
 
+async function getAcademicConnectionCount(jobId) {
+  const response = await BaseApi.post(`/getJobAcademicConnectionCount/${jobId}`);
+  return response.data.count;
+}
+
 const JobDetailPage = async ({ params, searchParams }) => {
+  const academicConnectCount = await getAcademicConnectionCount(params.id);
   const session = await getServerSession(authOptions);
   const active = searchParams['active'] || '';
   const mode = searchParams['mode'] || 'default';
-
   const job = await getJob({ id: params.id, userId: session?.user.id });
   if (!job) notFound();
 
@@ -103,10 +108,11 @@ const JobDetailPage = async ({ params, searchParams }) => {
 
   let bgColor = 'bg-white';
   if (company_name === 'Bond University') bgColor = 'bg-[#011a4d]';
+
   return (
     <>
       <div className="bg-white relative content-grid mx-auto">
-        <div className="border-b  full-width">
+        <div className="border-b full-width">
           <div className="md:flex items-center p-4 gap-8">
             <div className="flex justify-center">
               <Link
@@ -202,7 +208,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
       {/* main body of job post */}
       <section className="jobs_grid job_post_panel_container">
         {mode === 'share' ? (
-          <><AcademicConnections jobId={jobId} title={title} company_name={company_name} employerId={employer_id} /></>
+          <><AcademicConnections jobId={jobId} title={title} company_name={company_name} employerId={employer_id} connectionCount={academicConnectCount} /></>
         ) : (
           <article className="post_panel mt-[26px]" data-id={jobId}>
             <div className="post_content bg-white border-2 rounded-lg">
