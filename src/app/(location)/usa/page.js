@@ -75,8 +75,8 @@ export default async function myPage() {
   return (
     <main className="content-grid">
       <HeroBannerPortrait
-        h1={`America's Higher Ed & University Jobs Website`}
-        h1_mobile={`US' Higher Ed & University Jobs Website`}
+        h1={`Higher Ed jobs in the USA`}
+        h1_mobile={`Higher Ed jobs in the USA`}
         country={'us'}
         items={items}
       />
@@ -180,22 +180,18 @@ export default async function myPage() {
           </h2>
           <div>
             <p className="px-7 mb-4 mt-1">
-              Discover higher education employment opportunities across the
-              United States. Our platform is your gateway to a vast array of
-              higher ed jobs, from top-tier faculty positions and academic jobs
-              to administrative roles at leading universities and colleges.
-              Whether you're seeking university jobs, college faculty positions,
-              or lecturer jobs, we provide multitude of opportunities to advance
-              your career in academia.
+              Seek higher education employment opportunities across the United
+              States. Begin your search for academic jobs, senior academic
+              positions, HR and staff roles from top universities both
+              nationally and internationally.
             </p>
             <p className="px-7 md:flex hidden">
-              Our job board is tailored for aspiring and established
-              professionals in the higher education sector. Stay informed with
-              the latest university job openings, including postdoctoral
-              positions, research jobs, and senior academic roles. Join a
-              collaborative academic environment dedicated to intellectual
-              growth, professional development, and research excellence. Begin
-              your search for higher ed careers today!
+              Whether you're a professor, researcher, lecturer or postdoc, our
+              online job board offers the most current opportunities in
+              academia. Stay updated with the latest job vacancies by joining
+              our talent pool. Find your next higher ed jobs now and join a
+              collaborative environment dedicated to intellectual growth and
+              research excellence.
             </p>
           </div>
         </div>

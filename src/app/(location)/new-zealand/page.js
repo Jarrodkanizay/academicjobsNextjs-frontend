@@ -237,7 +237,7 @@ export default function Page() {
       <div className="widget__text-block">
         <div className="faculty-container  flex flex-wrap px-7 md:gap-2 py-2  pb-16 text-black">
           <ul className=" flex flex-wrap gap-8">
-            <li className="mb-1 mt-4 mt-4 ">
+            <li className="mb-1 mt-4 ">
               <a
                 href="/jobs/auckland-lecturer/"
                 class="scroll-smooth md:scroll-auto "
@@ -246,7 +246,7 @@ export default function Page() {
                 UOA Lecturing Jobs
               </a>
             </li>
-            <li className="mb-1 mt-4 mt-4 ">
+            <li className="mb-1 mt-4 ">
               <a
                 href="/jobs/auckland-research/"
                 class="scroll-smooth md:scroll-auto"
@@ -256,7 +256,7 @@ export default function Page() {
               </a>
             </li>
 
-            <li className="mb-1 mt-4 mt-4">
+            <li className="mb-1 mt-4">
               <a
                 href="/jobs/auckland-professor/"
                 class="scroll-smooth md:scroll-auto"
@@ -265,7 +265,7 @@ export default function Page() {
                 UOA Professorial Jobs
               </a>
             </li>
-            <li className="mb-1 mt-4 mt-4">
+            <li className="mb-1 mt-4">
               <a
                 href="/jobs/auckland-executive/"
                 class="scroll-smooth md:scroll-auto"
@@ -275,7 +275,7 @@ export default function Page() {
               </a>
             </li>
 
-            <li className="mb-1 mt-4 mt-4">
+            <li className="mb-1 mt-4">
               {' '}
               <a
                 href="/jobs/auckland-admin/"
@@ -285,7 +285,7 @@ export default function Page() {
                 UOA Administration{' '}
               </a>
             </li>
-            <li className="mb-1 mt-4 mt-4">
+            <li className="mb-1 mt-4">
               <a
                 href="/jobs/auckland-hr/"
                 class="scroll-smooth md:scroll-auto"
@@ -295,7 +295,7 @@ export default function Page() {
               </a>
             </li>
 
-            <li className="mb-1 mt-4 mt-4">
+            <li className="mb-1 mt-4">
               <a
                 href="/jobs/auckland/"
                 class="scroll-smooth md:scroll-auto"
