@@ -69,6 +69,8 @@ export default function Page({ params }) {
     Description = '',
     Keyword = '',
     content: content1 = '',
+    h2_footer = '',
+    content_footer = '',
     Image: imageSrc = '',
     category1 = '',
     filter1 = '',
@@ -234,6 +236,10 @@ export default function Page({ params }) {
               shortName={shortName}
             />
           )}
+          <h2 className="text-[22px] text-gray-blue leading-tight">
+            {h2_footer}
+          </h2>
+          <p className="mb-16">{content_footer}</p>
           <JobFilter />
         </div>
         <div className="listings_panel">
