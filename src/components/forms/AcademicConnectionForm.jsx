@@ -1,5 +1,5 @@
-"use client";
-import { useState } from "react";
+'use client'
+import { useState, useEffect } from "react";
 import { BaseApi } from "@/lib/store/Base";
 import swal from "sweetalert";
 import { externalEmail } from "@/templates/emails/academic-connection-external-email.js";
@@ -7,7 +7,7 @@ import { internalEmail } from "@/templates/emails/academic-connection-internal-e
 import { externalEmailNoPassword } from "@/templates/emails/academic-connection-external-email-no-password.js";
 import { internalEmailNoPassword } from "@/templates/emails/academic-connection-internal-email-no-password.js";
 
-const ShareForm = ({ jobId, title, company_name, employerId }) => {
+const ShareForm = ({ jobId, title, company_name, employerId, connectionCount }) => {
   const [forms, setForms] = useState([
     { id: Date.now(), firstName: "", lastName: "", email: "", internalEmployee: false, emailError: false, emailErrorMessage: "" },
   ]);
@@ -22,7 +22,7 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
   };
 
   function generateEmail(jobId, title, company_name, firstName, inviterName, emailTemplate) {
-      return emailTemplate
+    return emailTemplate
       .replace(/\${id}/g, jobId)
       .replace(/\${title}/g, title)
       .replace(/\${company_name}/g, company_name)
@@ -82,23 +82,23 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     let allSuccess = true;
-    
+
     for (const form of forms) {
       if (form.emailError) {
         continue; // Skip forms with email errors
       }
-  
+
       let response;
       let userId;
-  
+
       try {
         response = await BaseApi.post("/addUser", {
           ...form,
         });
-  
+
         if (response && response.data && response.data.id) {
           userId = response.data.id;
-  
+
           try {
             await BaseApi.post("/favoriteJobId", {
               mode: "add",
@@ -108,7 +108,7 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
           } catch (favoriteJobError) {
             console.error("Setting favorite job failed:", favoriteJobError);
           }
-  
+
           try {
             await BaseApi.post("/favoriteEmployerId", {
               mode: "add",
@@ -124,21 +124,21 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
         console.error("User add failed:", error);
         allSuccess = false;
       }
-  
+
       try {
         let emailTemplate;
-  
+
         if (userId) {
           const checkAcademicConnection = await BaseApi.post("/checkAcademicConnection", {
             email: form.email,
             jobId,
           });
-  
+
           if (checkAcademicConnection.data.exists) {
             console.log("User and job already connected. No email will be sent.");
             continue;
           }
-          
+
           if (response.data.exists) {
             console.log("User exists but no job connection. Sending email without password info.");
             emailTemplate = generateEmailWithoutPassword(jobId, title, company_name, form.firstName, `${inviter.firstNameInviter} ${inviter.lastNameInviter}`, form.internalEmployee);
@@ -146,17 +146,17 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
             console.log("User does not exist. Sending email with password info.");
             emailTemplate = generateEmailWithPassword(jobId, title, company_name, form.firstName, `${inviter.firstNameInviter} ${inviter.lastNameInviter}`, form.internalEmployee);
           }
-  
+
           const subject = form.internalEmployee
             ? `Our job listing '${title}' needs your help...`
             : `${company_name} Opportunity`;
-  
+
           await BaseApi.post("/shareJobEmail", {
             ...form,
             subject: subject,
             data: emailTemplate,
           });
-  
+
           await BaseApi.post("/addAcademicConnection", {
             userId,
             jobId,
@@ -164,7 +164,7 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
             firstName: form.firstName,
             lastName: form.lastName
           });
-  
+
           swal("Success", `Thank you for sharing!`, "success");
         } else {
           console.log("User creation failed. No email will be sent.");
@@ -176,23 +176,24 @@ const ShareForm = ({ jobId, title, company_name, employerId }) => {
         allSuccess = false;
       }
     }
-  
+
     if (allSuccess) {
       // Reset forms and inviter to initial state
       setForms([{ id: Date.now(), firstName: "", lastName: "", email: "", internalEmployee: false, emailError: false, emailErrorMessage: "" }]);
       setInviter({ firstNameInviter: "", lastNameInviter: "" });
     }
   };
-  
+
   return (
     <div className="space-y-6 post_panel mt-8">
-      <h2>Welcome to 'Academic connect'!</h2>
+        <h2 className="text-xl font-bold">Welcome to 'Academic connect'!</h2>
       <p>
         Where university colleagues participate in the promotion of department jobs, to find the most desirable
         candidates for this job. <span className="text-amber-500">We recommend you tell five colleagues</span>. 'Academic
         Connect' will then inform your contacts about the positive progress of your organisation and its opportunities.
         Research suggests that referrals and communications from trusted colleagues translate into desirable candidates.
       </p>
+      <p>This Job currently has <span className="font-bold">{connectionCount}</span> {connectionCount === 1 ? "connection" : "connections"}. {connectionCount <= 3 ? "Start sharing below!" : ""}</p>
 
       <p className="font-bold">Your details</p>
       <div className="p-4 border rounded-lg bg-gray-50 shadow-md space-y-4" style={{ marginTop: 0 }}>
