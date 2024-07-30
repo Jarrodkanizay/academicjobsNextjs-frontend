@@ -120,7 +120,7 @@ export default async function myPage() {
         items={items}
       />
 
-      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-32">
+      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto">
         <JobSearchBoxHome />
       </div>
       <div className="md:mt-12 mt-4">
