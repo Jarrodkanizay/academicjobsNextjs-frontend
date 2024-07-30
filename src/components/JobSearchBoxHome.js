@@ -6,6 +6,7 @@ import { useStore } from '@/lib/store/store';
 import { countryMappings, countryMappings1 } from '@/lib/data/data';
 import useURLParams from '@/utils/urlParams';
 import JobKeywordSearchBlock from '@/components/JobKeywordSearchBlock';
+import SearchButton from './SearchButton';
 export default function JobSearchBox() {
   const countryMap = {
     UK: 'United Kingdom',
@@ -19,18 +20,17 @@ export default function JobSearchBox() {
   const router = useRouter();
   let region = 'Australia';
   const { r = 'Global' } = useURLParams();
-  const onEditorStateSelect = (category, filter,link) => {
+  const onEditorStateSelect = (category, filter, link) => {
     if (link) {
       linkRef.current = link;
-      return
+      return;
     }
     linkRef.current = null;
-    cfRef.current = { category, filter }
-    console.log(category, filter)
+    cfRef.current = { category, filter };
+    console.log(category, filter);
   };
   const onInputChange = (inputText) => {
-    keyWordRef.current = inputText
-   
+    keyWordRef.current = inputText;
   };
 
   const handleFormSubmit = async () => {
@@ -39,7 +39,7 @@ export default function JobSearchBox() {
     // alert('1' + r);
     // alert('21' + r);
     // if (  r == "") { alert('3' + r);}
-    if (r !== 'Global' && r !== "") {
+    if (r !== 'Global' && r !== '') {
       //alert(r)
       // const location = (countryMappings1 as any)[region]?.searchLocation || 'Global';
       // const params = new URLSearchParams({
@@ -60,7 +60,6 @@ export default function JobSearchBox() {
       // setFilter1([{ category: 'Country', filter: countryMap[country] }]);
       // router.push(`/jobs-advanced-search?l=${country}`);
       router.push(`/jobs-advanced-search?r=${r}`);
-
     } else {
       try {
         const response = await fetch(
@@ -78,14 +77,14 @@ export default function JobSearchBox() {
           const url = linkRef.current;
           //alert(url); // Just for debugging purposes
           window.open(url, '_blank');
-          return
+          return;
         }
-        let q3 = ""
+        let q3 = '';
         if (cfRef.current) {
-          q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
+          q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`;
         } else {
           if (keyWordRef?.current?.trim()) {
-            q3 = `&q=${keyWordRef?.current?.trim()}`
+            q3 = `&q=${keyWordRef?.current?.trim()}`;
           }
         }
         router.push(`/jobs-advanced-search?r=${country}&${q3}`);
@@ -95,22 +94,26 @@ export default function JobSearchBox() {
     }
   };
   return (
-    <form className="flex flex-col gap-1 items-center md:items-end w-full" onSubmit={handleFormSubmit}>
-      <div className="relative flex flex-col md:flex-row md:gap-2 md:gap-0 mx-18 w-full mt-5 md:border rounded-t-lg md:rounded-lg p-2 md:shadow-md">
-        <div className="relative z-50 flex-grow flex items-center"> {/* Ensure the container is flex and items-center */}
+    <form
+      className="flex flex-col gap-1 items-center md:items-end w-full"
+      onSubmit={handleFormSubmit}
+    >
+      <div className="flex flex-col md:flex-row md:gap-2 mx-18 w-full md:border rounded-t-lg md:rounded-lg p-2 md:shadow-md">
+        <div className="flex-grow flex items-center">
+          {' '}
+          {/* Ensure the container is flex and items-center */}
           <JobKeywordSearchBlock
             forceClass="mb-6"
             onSelect={onEditorStateSelect}
             onInputChange={onInputChange}
             className="w-full"
-             />
+          />
         </div>
-        <button
-          className="h-[50px] ml-auto px-4 py-2 bg-[#f4a10c] w-full md:w-auto text-white rounded-md rounded-b-lg hover:bg-orange-600 animate-pulse font-bold shadow-md"
+        <SearchButton buttonText="Search In Your Country" />
+        {/* <button
+          className="h-[50px] ml-auto px-4 py-2 bg-[#f4a10c] w-full md:w-auto text-white hover:bg-orange-600 animate-pulse font-bold shadow-md rounded-t-none rounded-b-lg md:rounded-lg"
           type="submit"
-        >
-          Search In Your Country
-        </button>
+        ></button> */}
       </div>
       <div className="w-full flex justify-end">
         <button
@@ -118,12 +121,12 @@ export default function JobSearchBox() {
           onClick={(e) => {
             e.preventDefault();
             //alert(keyWordRef.current)
-            let q3 = ""
+            let q3 = '';
             if (cfRef.current) {
-              q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
+              q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`;
             } else {
               if (keyWordRef?.current) {
-                q3 = `&q=${keyWordRef?.current}`
+                q3 = `&q=${keyWordRef?.current}`;
               }
             }
             router.push(`/jobs-advanced-search?r=Global&${q3}`);

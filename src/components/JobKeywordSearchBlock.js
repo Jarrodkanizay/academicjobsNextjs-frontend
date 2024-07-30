@@ -1,6 +1,6 @@
 'use client';
-import React, { useState, useEffect, useRef } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useState, useEffect, useRef } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { keepPreviousData, useQuery } from '@tanstack/react-query';
 import { BaseApi } from '@/lib/store/Base';
 import { useStore } from '@/lib/store/store';
@@ -15,10 +15,10 @@ const UniSearchBlock = ({
   forceClass,
 }) => {
   const { region, setQ } = useStore();
-  const countryRef = useRef("");
-  const [query, setQuery] = useState("");
+  const countryRef = useRef('');
+  const [query, setQuery] = useState('');
   const [showSuggestions, setShowSuggestions] = useState(false);
-  const inputRef = useRef(value1 || "");
+  const inputRef = useRef(value1 || '');
   const {
     isPending: isPending,
     isError: isError,
@@ -31,7 +31,7 @@ const UniSearchBlock = ({
     queryKey: ['filter', { query }],
     queryFn: async () => {
       const response = await BaseApi.post('/getJobKeywordSuggestions', {
-        query
+        query,
       });
       return response.data.data;
     },
@@ -46,9 +46,9 @@ const UniSearchBlock = ({
         setShowSuggestions(false);
       }
     };
-    document.addEventListener("click", handleClickOutside);
+    document.addEventListener('click', handleClickOutside);
     return () => {
-      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener('click', handleClickOutside);
     };
   }, []);
   const handleInputChange = (e) => {
@@ -59,7 +59,7 @@ const UniSearchBlock = ({
   };
   useEffect(() => {
     //inputRef.current.value = value1 || '';
-    setQuery(value1 || "");
+    setQuery(value1 || '');
   }, [value1]);
   return (
     <div className="w-full bg-white ">
@@ -71,37 +71,33 @@ const UniSearchBlock = ({
         onClick={handleInputClick}
         //placeholder="Type at least 3 characters..."
         // className="w-full font-normal py-1 px-1 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-        className={`w-full input input-md input-bordered focus:outline-none focus:border-orange-500 `}
+        className={`w-full input input-md input-bordered focus:outline-none focus:border-orange-500 rounded-b-none md:rounded-lg`}
         autoComplete="one-time-code"
         name={customKey}
         placeholder={label}
-      //onChange={handleInputChange}
+        //onChange={handleInputChange}
       />
       {showSuggestions && (
         <ul className="mt-2 list-none z-10 bg-white">
-          {suggestions.map(
-            (
-              {
-                category1,
-                category2,
-                realCtg, link
-              },
-              index
-            ) => (
-              <li
-                key={index}
-                className="bg-white  w-full py-1 px-1 border-b border-gray-300 hover:bg-gray-100 cursor-pointer"
-                onClick={() => {
-                  console.log("category21",category2)
-                  setQuery(category2);
-                  setQ(category2)
-                  onSelect(realCtg, category2, link)
-                }                }
-              >
-                <div className="w-[100%]"><span className="text-sm font-bold">{category2}</span>{category1 && <span className="text-xs">{` (${category1})`}</span>}</div>
-              </li>
-            )
-          )}
+          {suggestions.map(({ category1, category2, realCtg, link }, index) => (
+            <li
+              key={index}
+              className="bg-white  w-full py-1 px-1 border-b border-gray-300 hover:bg-gray-100 cursor-pointer"
+              onClick={() => {
+                console.log('category21', category2);
+                setQuery(category2);
+                setQ(category2);
+                onSelect(realCtg, category2, link);
+              }}
+            >
+              <div className="w-[100%]">
+                <span className="text-sm font-bold">{category2}</span>
+                {category1 && (
+                  <span className="text-xs">{` (${category1})`}</span>
+                )}
+              </div>
+            </li>
+          ))}
         </ul>
       )}
     </div>

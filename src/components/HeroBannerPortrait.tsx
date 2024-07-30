@@ -29,8 +29,8 @@ const HeroBannerPortrait = ({
           </section>
         </div>
       </div>
-      <ul className="hero-icons hide relative flex gap-1 md:gap-4 mx-auto text-center items-center justify-between md:justify-center mt-[-5rem] p-4 z-20">
-        {items.map((item, index) => (
+      <ul className="hero-icons hide relative flex gap-2 md:gap-5 mx-auto text-center items-center justify-between md:justify-center mt-[-5rem] p-4 z-20">
+        {items.map((item: any, index: number) => (
           <li key={index}>
             <Link className="grayscale hover:grayscale-0" href={item.link}>
               <Image src={item.src} width={size} height={size} alt={item.alt} />

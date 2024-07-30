@@ -247,10 +247,10 @@ html {
     }
 
     .hero-icons {
-      width: 100%;
-      bottom: var(--position_type_y);
+      // width: 100%;
+      // bottom: var(--position_type_y);
     }
-    .hero-icons li {
+    .hero-icons li img {
       width: var(--position_type_size);
       height: var(--position_type_size);
       background-color: white;
