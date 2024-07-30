@@ -810,8 +810,8 @@ export const categoriesAustralia = [
     category3: `PositionType`,
     filter3: `Research Assistant`,
     Image: `/banners/doctor-performing-medical-research-lab-bg.jpg`,
-    h2_footer: `Research Assistant Career Opportunities in Melbourne`,
-    content_footer: `A Research Assistant.`,
+    h2_footer: ``,
+    content_footer: ``,
     type: `city`,
   },
   {
@@ -829,6 +829,8 @@ export const categoriesAustralia = [
     category3: `PositionType`,
     filter3: `Research Assistant`,
     Image: `/banners/laboratory-team-working-together-bg.jpg`,
+    h2_footer: ``,
+    content_footer: ``,
     type: `city`,
   },
   {
@@ -846,6 +848,8 @@ export const categoriesAustralia = [
     category3: `PositionType`,
     filter3: `Research Assistant`,
     Image: `/banners/research-assistant-doing-chemistry-bg.jpg`,
+    h2_footer: ``,
+    content_footer: ``,
     type: `city`,
   },
   {
@@ -863,6 +867,8 @@ export const categoriesAustralia = [
     category3: `PositionType`,
     filter3: `Research Assistant`,
     Image: `/banners/research-assistant-looking-through-microscope-bg.jpg`,
+    h2_footer: ``,
+    content_footer: ``,
     type: `city`,
   },
   {
@@ -880,6 +886,8 @@ export const categoriesAustralia = [
     category3: `PositionType`,
     filter3: `Research Assistant`,
     Image: `/banners/research-assistant-with-eyedropper-bg.jpg`,
+    h2_footer: ``,
+    content_footer: ``,
     type: `city`,
   },
   {
@@ -897,6 +905,8 @@ export const categoriesAustralia = [
     category3: `PositionType`,
     filter3: `Research Assistant`,
     Image: `/banners/research-assistants-collaborating-bg.jpg`,
+    h2_footer: ``,
+    content_footer: ``,
     type: `city`,
   },
   {
@@ -914,6 +924,8 @@ export const categoriesAustralia = [
     category3: `PositionType`,
     filter3: `Research Assistant`,
     Image: `/banners/research-assistants-looking-at-test-tubes-bg.jpg`,
+    h2_footer: ``,
+    content_footer: ``,
     type: `city`,
   },
   {
