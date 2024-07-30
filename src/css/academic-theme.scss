@@ -247,12 +247,16 @@ html {
     }
 
     .hero-icons {
+      background-color: transparent;
       // width: 100%;
       // bottom: var(--position_type_y);
     }
+    .hero-icons li {
+      max-width: var(--position_type_size);
+      // max-height: var(--position_type_size);
+    }
     .hero-icons li img {
-      width: var(--position_type_size);
-      height: var(--position_type_size);
+      aspect-ratio: 1 / 1;
       background-color: white;
       border-radius: 100vmax;
     }
