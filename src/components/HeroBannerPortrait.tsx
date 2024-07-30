@@ -21,7 +21,7 @@ const HeroBannerPortrait = ({
     <>
       <div className={`full-width h-[260px] md:h-[340px] gradient-aj`}>
         <div
-          className={`hero-bg ${country} h-full md:bg-center mb-4 flex items-center justify-center`}
+          className={`hero-bg ${country} h-full md:bg-center mb-4 flex items-center justify-center z-0`}
         >
           <section className="wrapper flex flex-col items-center justify-center mt-[0.25rem] md:mt-[-5rem]">
             <h1 className="sentence text-white text-center m-0 p-0">{h1}</h1>
@@ -29,7 +29,7 @@ const HeroBannerPortrait = ({
           </section>
         </div>
       </div>
-      <ul className="hero-icons hide flex gap-1 md:gap-4 mx-auto text-center items-center justify-between md:justify-center mt-[-5rem] p-4">
+      <ul className="hero-icons hide flex gap-1 md:gap-4 mx-auto text-center items-center justify-between md:justify-center mt-[-5rem] p-4 z-10">
         {items.map((item, index) => (
           <li key={index}>
             <Link className="grayscale hover:grayscale-0" href={item.link}>
