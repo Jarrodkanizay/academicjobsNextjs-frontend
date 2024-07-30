@@ -29,7 +29,7 @@ const HeroBannerPortrait = ({
           </section>
         </div>
       </div>
-      <ul className="hero-icons hide flex gap-1 md:gap-4 mx-auto text-center items-center justify-between md:justify-center mt-[-5rem] p-4 z-10">
+      <ul className="hero-icons hide flex gap-1 md:gap-4 mx-auto text-center items-center justify-between md:justify-center mt-[-5rem] p-4 z-20">
         {items.map((item, index) => (
           <li key={index}>
             <Link className="grayscale hover:grayscale-0" href={item.link}>
