@@ -21,7 +21,7 @@ const Job = ({ job, lefthandView }) => {
     featured,
     id,
   } = job;
-
+  console.log({ 'new Date(expiration_date)': new Date(expiration_date).setHours(0, 0, 0, 0), 'new Date()': new Date().setHours(0, 0, 0, 0) })
   return (
     <article
       className={`listing ${lefthandView ? 'bg-gray-100 border border-gray-300 p-4 mb-4 rounded-xl shadow-md narrow-card' : 'bg-white border border-gray-200 p-4 mb-4 rounded-xl shadow-lg'}`}
@@ -67,7 +67,7 @@ const Job = ({ job, lefthandView }) => {
               )}
             </div>
           </div>
-          {new Date(expiration_date) < new Date() && expiration_date && (
+          {(new Date(expiration_date).setHours(0, 0, 0, 0) < new Date().setHours(0, 0, 0, 0)) && expiration_date && (
             <div className="bg-opacity-50 bg-red-500 text-white text-sm px-1 py-1 rounded-full absolute top-[2%] left-[66%] transform -translate-y-1/2 skew-y-0">
               Job Fulfilled By AcademicJobs.com
             </div>
@@ -140,7 +140,7 @@ const Job = ({ job, lefthandView }) => {
                 )}
               </div>
             </div>
-            {new Date(expiration_date) < new Date() && expiration_date && (
+              {(new Date(expiration_date).setHours(0, 0, 0, 0) < new Date().setHours(0, 0, 0, 0)) && expiration_date && (
               <div className="bg-opacity-50 bg-red-500 text-white text-sm px-1 py-1 rounded-full absolute top-[2%] left-[66%] transform -translate-y-1/2 skew-y-0">
                 Job Fulfilled By AcademicJobs.com
               </div>
