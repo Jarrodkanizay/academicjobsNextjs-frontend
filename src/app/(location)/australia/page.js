@@ -206,7 +206,7 @@ export default async function myPage() {
           Australia's University Jobs Website
         </h2>
 
-        <div id="section" className="bg-slate-200 py-4 full-width mt-8">
+        <div id="section" className="bg-slate-200 py-4 full-width mb-16">
           <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
             <h2 className="text-3xl md:text-6xl font-bold md:text-right text-gray-500 m-0 pb-8 px-7 md:px-0 ">
               University Jobs&nbsp;Australia
