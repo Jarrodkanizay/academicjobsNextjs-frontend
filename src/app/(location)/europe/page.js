@@ -73,43 +73,36 @@ export default async function myPage() {
 
   return (
     <main className="content-grid">
-      <HeroBannerPortrait
-        h1={`Europe's University Jobs Website`}
-        h1_mobile={`EU's University Jobs Website`}
-        country={'us'}
-        items={items}
-      />
+      <HeroBannerPortrait country={'us'} items={items} />
 
-      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-32">
+      <div className="w-full max-w-[700px] mx-auto mb-16">
         <JobSearchBoxCountry country={'Europe'} />
       </div>
 
       {/* <h3 className="text-center ">We Are Europe's University Job Website</h3> */}
 
-      <div className=" mt-[5rem] ">
-        <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
-          <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
-            <li>
-              <Link href="/Europe/lecturer/"> Lecturer</Link>
-            </li>
-            <li>
-              <Link href="/Europe/research/"> Research </Link>
-            </li>
-            <li>
-              <Link href="/Europe/professor/"> Professor</Link>
-            </li>
-          </ul>
+      <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
+        <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
           <li>
-            <Link href="/Europe/executive/"> Executive</Link>
+            <Link href="/Europe/lecturer/"> Lecturer</Link>
           </li>
           <li>
-            <Link href="/Europe/admin/">Admin</Link>
+            <Link href="/Europe/research/"> Research </Link>
           </li>
           <li>
-            <Link href="/Europe/hr-jobs/"> HR</Link>
+            <Link href="/Europe/professor/"> Professor</Link>
           </li>
         </ul>
-      </div>
+        <li>
+          <Link href="/Europe/executive/"> Executive</Link>
+        </li>
+        <li>
+          <Link href="/Europe/admin/">Admin</Link>
+        </li>
+        <li>
+          <Link href="/Europe/hr-jobs/"> HR</Link>
+        </li>
+      </ul>
 
       <div className=" mt-2 ">
         <ul className="faculty-container flex  gap-4 items-center justify-center text-[#f4a10c] ">
@@ -131,16 +124,17 @@ export default async function myPage() {
           </li>
         </ul>
       </div>
+      <h2 className="my-16 text-center">Europe's University Jobs Website</h2>
 
       <div
         id="section"
-        className=" full-width py-4 full-width mb-[175px] bg-slate-200 mt-8"
+        className=" full-width py-4 full-width mb-[175px] bg-slate-200"
       >
         <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
           <h2 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
             <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">
-              ACADEMIC&nbsp;JOBS Europe:
-            </span>{' '}
+              University Jobs Europe
+            </span>
             <br />
           </h2>
 

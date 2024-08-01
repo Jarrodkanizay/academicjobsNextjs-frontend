@@ -5,6 +5,8 @@ import { toURLParams, loadFromURLParams } from '@/utils/urlParams';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 import JobKeywordSearchBlock from '@/components/JobKeywordSearchBlock';
+import SearchButton from '@/components/SearchButton';
+
 export default function JobSearchBoxCountry({ country }) {
   const router = useRouter();
   console.log(
@@ -22,9 +24,9 @@ export default function JobSearchBoxCountry({ country }) {
     Australia: 'Australia',
     Canada: 'Canada',
     USA: 'United States',
-    'United States': 'United States', 
+    'United States': 'United States',
     'New Zealand': 'New Zealand',
-    Europe: 'Europe'
+    Europe: 'Europe',
   };
   const { setQ, q, setRegion, setFilter1, reset } = useStore();
   useEffect(() => {
@@ -33,14 +35,14 @@ export default function JobSearchBoxCountry({ country }) {
   const keyWordRef = useRef(null);
   const cfRef = useRef(null);
   const linkRef = useRef(null);
-  const onEditorStateSelect = (category, filter,link) => {
+  const onEditorStateSelect = (category, filter, link) => {
     if (filter == 'All Indigenous Jobs in Australia') {
-      keyWordRef.current = 'Indigenous'
-      return
+      keyWordRef.current = 'Indigenous';
+      return;
     }
     if (link) {
       linkRef.current = link;
-      return
+      return;
     }
     linkRef.current = null;
     cfRef.current = { category, filter };
@@ -74,14 +76,14 @@ export default function JobSearchBoxCountry({ country }) {
       const url = linkRef.current;
       //alert(url); // Just for debugging purposes
       window.open(url, '_blank');
-      return
+      return;
     }
-    let q3 = ""
+    let q3 = '';
     if (cfRef.current) {
-      q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`
+      q3 = `&filter0=[{"category":"${cfRef.current.category}","filter":"${cfRef.current.filter}"}]`;
     } else {
       if (keyWordRef?.current?.trim()) {
-        q3 = `&q=${keyWordRef?.current?.trim()}`
+        q3 = `&q=${keyWordRef?.current?.trim()}`;
       }
     }
     //alert(country)
@@ -90,9 +92,14 @@ export default function JobSearchBoxCountry({ country }) {
   };
   return (
     <div className="relative z-50  flex flex-col gap-2">
-      <form className="flex flex-col gap-1 items-center md:items-end w-full" onSubmit={handleFormSubmit}>
-        <div className="bg-white relative flex flex-col md:flex-row md:gap-2 md:gap-0 mx-18 w-full mt-5 md:border rounded-t-lg md:rounded-lg p-2 md:shadow-md">
-          <div className="relative z-50 flex-grow flex items-center"> {/* Ensure the container is flex and items-center */}
+      <form
+        className="flex flex-col gap-1 items-center md:items-end w-full"
+        onSubmit={handleFormSubmit}
+      >
+        <div className="bg-white relative flex flex-col md:flex-row md:gap-2 mx-18 w-full mt-5 md:border rounded-t-lg md:rounded-lg p-2 md:shadow-md">
+          <div className="relative z-50 flex-grow flex items-center">
+            {' '}
+            {/* Ensure the container is flex and items-center */}
             <JobKeywordSearchBlock
               forceClass="mb-6"
               onSelect={onEditorStateSelect}
@@ -100,12 +107,7 @@ export default function JobSearchBoxCountry({ country }) {
               className="w-full"
             />
           </div>
-          <button
-            className="h-[50px] ml-auto px-4 py-2 bg-[#f4a10c] w-full md:w-auto text-white rounded-md rounded-b-lg hover:bg-orange-600 animate-pulse font-bold shadow-md"
-            type="submit"
-          >
-            Search In {country}
-          </button>
+          <SearchButton buttonText={`Search In ${country}`} />
         </div>
       </form>
       <button

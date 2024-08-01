@@ -62,14 +62,9 @@ export default async function myPage() {
   return (
     <>
       <main className="content-grid">
-        <HeroBannerPortrait
-          h1={`United Kingdom's University Jobs Website`}
-          h1_mobile={`UK's University Jobs Website`}
-          country={'uk'}
-          items={items}
-        />
+        <HeroBannerPortrait country={'uk'} items={items} />
 
-        <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
+        <div className="w-full max-w-[700px] mx-auto mb-16">
           <JobSearchBoxCountry country={'United Kingdom'} />
         </div>
 
@@ -86,30 +81,28 @@ export default async function myPage() {
      
       <h3 className="text-center ">We Are United Kingdom's University Job Website</h3> */}
 
-        <div className=" mt-[5rem] ">
-          <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
-            <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
-              <li>
-                <Link href="uk/lecturer"> Lecturer</Link>
-              </li>
-              <li>
-                <Link href="/uk/research"> Research </Link>
-              </li>
-              <li>
-                <Link href="/uk/professor"> Professor</Link>
-              </li>
-            </ul>
+        <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
+          <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
             <li>
-              <Link href="uk/executive"> Executive</Link>
+              <Link href="uk/lecturer"> Lecturer</Link>
             </li>
             <li>
-              <Link href="uk/admin">Admin</Link>
+              <Link href="/uk/research"> Research </Link>
             </li>
             <li>
-              <Link href="uk/hr-jobs"> HR</Link>
+              <Link href="/uk/professor"> Professor</Link>
             </li>
           </ul>
-        </div>
+          <li>
+            <Link href="uk/executive"> Executive</Link>
+          </li>
+          <li>
+            <Link href="uk/admin">Admin</Link>
+          </li>
+          <li>
+            <Link href="uk/hr-jobs"> HR</Link>
+          </li>
+        </ul>
 
         <div className=" mt-2 ">
           <ul className="faculty-container flex  gap-4 items-center justify-center text-[#f4a10c] ">
@@ -142,10 +135,13 @@ export default async function myPage() {
             </li>
           </ul>
         </div>
+        <h2 className="my-16 text-center">
+          United Kingdom's University Jobs Website
+        </h2>
 
         <div
           id="section"
-          className="full-width py-4 full-width bg-slate-200 my-16"
+          className="full-width py-4 full-width bg-slate-200 mb-16"
         >
           <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
             {/* <div className="  flex-wrap text-center gap-6 px-7 pb-4  text-gray-400" >
@@ -154,8 +150,8 @@ export default async function myPage() {
           <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
             <h2 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
               <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">
-                University & Academic jobs in the UK
-              </span>{' '}
+                University Jobs UK
+              </span>
               <br />
             </h2>
 

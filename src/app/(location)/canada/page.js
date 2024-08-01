@@ -72,41 +72,34 @@ export default async function myPage() {
 
   return (
     <main className="content-grid">
-      <HeroBannerPortrait
-        h1={`Canada’s University Jobs Website`}
-        h1_mobile={`CA's University Jobs Website`}
-        country={'ca'}
-        items={items}
-      />
+      <HeroBannerPortrait country={'ca'} items={items} />
 
-      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-32">
+      <div className="w-full max-w-[700px] mx-auto mb-16">
         <JobSearchBoxCountry country={'Canada'} />
       </div>
 
-      <div className=" mt-[5rem] ">
-        <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-500 ">
-          <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
-            <li>
-              <Link href="/Canada/lecturer/"> Lecturer</Link>
-            </li>
-            <li>
-              <Link href="/Canada/research/"> Research </Link>
-            </li>
-            <li>
-              <Link href="/Canada/professor/"> Professor</Link>
-            </li>
-          </ul>
+      <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-500 ">
+        <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
           <li>
-            <Link href="/Canada/executive/"> Executive</Link>
+            <Link href="/Canada/lecturer/"> Lecturer</Link>
           </li>
           <li>
-            <Link href="/Canada/admin/">Admin</Link>
+            <Link href="/Canada/research/"> Research </Link>
           </li>
           <li>
-            <Link href="/Canada/hr-jobs/"> HR</Link>
+            <Link href="/Canada/professor/"> Professor</Link>
           </li>
         </ul>
-      </div>
+        <li>
+          <Link href="/Canada/executive/"> Executive</Link>
+        </li>
+        <li>
+          <Link href="/Canada/admin/">Admin</Link>
+        </li>
+        <li>
+          <Link href="/Canada/hr-jobs/"> HR</Link>
+        </li>
+      </ul>
 
       <div className=" mt-2 ">
         <ul className="faculty-container flex  gap-4 items-center justify-center text-amber-500 ">
@@ -138,6 +131,7 @@ export default async function myPage() {
           alt="AcademicJobs Canada logo"
         />{' '}
       </a>
+      <h2 className="my-16 text-center">Canada’s University Jobs Website</h2>
 
       <div
         id="section"
@@ -146,9 +140,8 @@ export default async function myPage() {
         <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
           <h2 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
             <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">
-              ACADEMIC&nbsp;JOBS Canada:
-            </span>{' '}
-            <br />
+              University & Higher Ed Jobs Canada
+            </span>
           </h2>
 
           <div>
@@ -175,7 +168,7 @@ export default async function myPage() {
         </div>
       </div>
 
-      <h2 className="">ALL HIGHER ED JOBS IN CANADA BY UNIVERSITY </h2>
+      <h2 className="">All Higher Ed Jobs in Canada by University </h2>
       <Canada id="section3" heading="" />
     </main>
   );

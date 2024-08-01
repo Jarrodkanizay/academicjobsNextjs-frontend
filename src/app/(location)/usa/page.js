@@ -74,42 +74,36 @@ export default async function myPage() {
 
   return (
     <main className="content-grid">
-      <HeroBannerPortrait
-        h1={`Higher Ed jobs in the USA`}
-        h1_mobile={`Higher Ed jobs in the USA`}
-        country={'us'}
-        items={items}
-      />
+      <HeroBannerPortrait country={'us'} items={items} />
 
-      <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top my-4 mx-auto mt-24">
+      <div className="w-full max-w-[700px] mx-auto mb-16">
         <JobSearchBoxCountry country={'United States'} />
       </div>
 
-      <div className=" mt-[3rem] ">
-        <ul className=" flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
-          <li>
-            <Link href="/boston"> Boston </Link>
-          </li>
-          <li>
-            <Link href="/new-york"> New York</Link>
-          </li>
-          <li>
-            <Link href="/philadelphia">Philadelphia</Link>
-          </li>
-          <li>
-            <Link href="/new-haven">New Haven</Link>
-          </li>
-          <li>
-            <Link href="/los-angeles">Los Angeles </Link>
-          </li>
-          <li>
-            <Link href="/san-francisco"> San Francisco</Link>
-          </li>
-          <li>
-            <Link href="/chicago"> Chicago</Link>
-          </li>
-        </ul>
-      </div>
+      <ul className=" flex flex-wrap gap-4 items-center justify-center text-gray-400 ">
+        <li>
+          <Link href="/boston"> Boston </Link>
+        </li>
+        <li>
+          <Link href="/new-york"> New York</Link>
+        </li>
+        <li>
+          <Link href="/philadelphia">Philadelphia</Link>
+        </li>
+        <li>
+          <Link href="/new-haven">New Haven</Link>
+        </li>
+        <li>
+          <Link href="/los-angeles">Los Angeles </Link>
+        </li>
+        <li>
+          <Link href="/san-francisco"> San Francisco</Link>
+        </li>
+        <li>
+          <Link href="/chicago"> Chicago</Link>
+        </li>
+      </ul>
+
       <div className=" mt-2">
         <ul className="faculty-container flex flex-wrap gap-4 items-center justify-center text-[#f4a10c] ">
           <ul className="w-full  md:w-auto flex items-center  justify-center gap-4">
@@ -167,6 +161,7 @@ export default async function myPage() {
       </a>
 
       {/* <AmericaUniLogos /> */}
+      <h2 className="my-16 text-center">America's University Jobs Website</h2>
 
       <div
         id="section"
@@ -175,7 +170,7 @@ export default async function myPage() {
         <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
           <h2 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
             <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">
-              Higher Ed jobs in the USA
+              Higher Ed Jobs USA
             </span>
           </h2>
           <div>

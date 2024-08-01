@@ -102,14 +102,9 @@ const jobData = [
 export default function Page() {
   return (
     <>
-      <HeroBannerPortrait
-        h1={`New Zealand's University Jobs Website`}
-        h1_mobile={`NZ's University Jobs Website`}
-        country={'nz'}
-        items={items}
-      />
+      <HeroBannerPortrait country={'nz'} items={items} />
 
-      <div className="w-full  max-w-[700px] flex flex-col p-2 items-top my-4 mx-auto mt-20">
+      <div className="w-full max-w-[700px] mx-auto mb-16">
         <JobSearchBoxCountry country={'New Zealand'} />
       </div>
 
@@ -151,6 +146,10 @@ export default function Page() {
           </li>
         </ul>
       </div>
+      <h2 className="my-16 text-center">
+        New Zealand's University Jobs Website
+      </h2>
+
       <div className="content-grid mx-auto mt-16">
         <div
           id="section"
@@ -159,7 +158,7 @@ export default function Page() {
           <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
             <h2 className="text-3xl font-normal md:text-right text-gray-400 m-0 pb-8 px-7 md:px-0 ">
               <span className="md:text-6xl font-bold  md:text-right text-gray-500 pb-4 ">
-                Academic Jobs New Zealand:
+                University Jobs New Zealand:
               </span>{' '}
             </h2>
 
