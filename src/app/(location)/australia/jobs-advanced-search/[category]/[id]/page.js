@@ -279,7 +279,7 @@ const JobDetailPage = async ({ params, searchParams }) => {
           </div>
         </div>
       </section>
-      {new Date(expiration_date) < new Date() && expiration_date && (
+      {(new Date(expiration_date).setHours(0, 0, 0, 0) < new Date().setHours(0, 0, 0, 0)) && expiration_date && (
         <div className="bg-opacity-50 bg-red-500 text-white text-4xl px-8 py-8 rounded-full absolute top-[200px] left-[50%] transform -translate-x-1/2 translate-y-1/2 rotate-45 skew-y-0">
           Job Fulfilled By AcademicJobs.com
         </div>
