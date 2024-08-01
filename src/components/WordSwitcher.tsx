@@ -14,7 +14,7 @@ const WordSwitcher = ({
 
   return (
     <section className="word_switcher">
-      <p className="sentence">
+      <h3 className="sentence">
         <div className="word_slider_wrapper">
           <span className="mr-6">{title}</span>{' '}
           <div className="slidingVertical ">
@@ -23,7 +23,7 @@ const WordSwitcher = ({
             ))}
           </div>
         </div>
-      </p>
+      </h3>
     </section>
   );
 };

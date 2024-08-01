@@ -113,12 +113,7 @@ export default async function myPage() {
   // showJobElephant = false;
   return (
     <main className="content-grid">
-      <HeroBannerPortrait
-        h1={`Your Higher Ed & University Jobs Website`}
-        h1_mobile={`Your Higher Ed & University Jobs Website`}
-        country={'us'}
-        items={items}
-      />
+      <HeroBannerPortrait country={'us'} items={items} />
 
       <div className="w-full max-w-[700px] mx-auto">
         <JobSearchBoxHome />
@@ -267,6 +262,9 @@ export default async function myPage() {
           </figure>
         </Link>
       </ul>
+      <h2 className="my-16 text-center">
+        Your Higher Ed & University Jobs Website
+      </h2>
       <div id="section" className="bg-slate-200 full-width py-4 mb-16">
         <div className="md:hero-content flex flex-col lg:flex-row mx-auto md:items-start py-12">
           <h1 className="text-2xl font-normal sm:text-right text-gray-400 m-0 md:px-0">

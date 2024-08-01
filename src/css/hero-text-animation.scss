@@ -10,15 +10,16 @@
 
   /*Sentence*/
   .sentence {
+    font-size: 3dvw;
+    letter-spacing: 1.5dvw;
+    margin-left: -25dvw;
     color: #ffe367;
-    font-size: 1.5rem;
     text-align: left;
     font-family: 'Noto Sans Lao Looped', sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
     text-transform: uppercase;
-    letter-spacing: 20px;
   }
   h1.sentence {
     color: white;
@@ -27,64 +28,64 @@
 
   .word_slider_wrapper {
     // See academic-theme.scss for responsive adjustments
-    min-width: 550px;
+    // min-width: 550px;
   }
 
-  .sentence-aus {
-    color: white;
-    font-size: 16px;
-    font-family: 'Noto Sans Lao Looped', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-  }
+  // .sentence-aus {
+  //   color: white;
+  //   font-size: 16px;
+  //   font-family: 'Noto Sans Lao Looped', sans-serif;
+  //   font-optical-sizing: auto;
+  //   font-weight: 100;
+  //   font-style: normal;
+  //   text-transform: uppercase;
+  //   letter-spacing: 8px;
+  // }
 
-  .sentence-usa {
-    color: black;
-    font-size: 16px;
+  // .sentence-usa {
+  //   color: black;
+  //   font-size: 16px;
 
-    font-family: 'Noto Sans Lao Looped', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-  }
-  .sentence-uk {
-    color: black;
-    font-size: 16px;
+  //   font-family: 'Noto Sans Lao Looped', sans-serif;
+  //   font-optical-sizing: auto;
+  //   font-weight: 100;
+  //   font-style: normal;
+  //   text-transform: uppercase;
+  //   letter-spacing: 10px;
+  // }
+  // .sentence-uk {
+  //   color: black;
+  //   font-size: 16px;
 
-    font-family: 'Noto Sans Lao Looped', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-  }
-  .sentence-eu {
-    color: black;
-    font-size: 16px;
+  //   font-family: 'Noto Sans Lao Looped', sans-serif;
+  //   font-optical-sizing: auto;
+  //   font-weight: 100;
+  //   font-style: normal;
+  //   text-transform: uppercase;
+  //   letter-spacing: 10px;
+  // }
+  // .sentence-eu {
+  //   color: black;
+  //   font-size: 16px;
 
-    font-family: 'Noto Sans Lao Looped', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-  }
-  .sentence-ca {
-    color: black;
-    font-size: 16px;
+  //   font-family: 'Noto Sans Lao Looped', sans-serif;
+  //   font-optical-sizing: auto;
+  //   font-weight: 100;
+  //   font-style: normal;
+  //   text-transform: uppercase;
+  //   letter-spacing: 10px;
+  // }
+  // .sentence-ca {
+  //   color: black;
+  //   font-size: 16px;
 
-    font-family: 'Noto Sans Lao Looped', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-  }
+  //   font-family: 'Noto Sans Lao Looped', sans-serif;
+  //   font-optical-sizing: auto;
+  //   font-weight: 100;
+  //   font-style: normal;
+  //   text-transform: uppercase;
+  //   letter-spacing: 10px;
+  // }
 
   /*Vertical Sliding*/
   .slidingVertical {
@@ -225,6 +226,32 @@
     }
     100% {
       opacity: 0;
+    }
+  }
+}
+
+@media (max-width: 926px) {
+  .wrapper {
+    .sentence {
+      font-size: 4dvw;
+      margin-left: -32dvw;
+    }
+  }
+}
+@media (max-width: 720px) {
+  .wrapper {
+    margin-top: -5dvw;
+    .sentence {
+      font-size: 5dvw;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    margin-top: -5dvw;
+    .sentence {
+      font-size: 5dvw;
+      margin-left: -38dvw;
     }
   }
 }
