@@ -110,14 +110,9 @@ export default async function myPage() {
   return (
     <>
       <main className="content-grid">
-        <HeroBannerPortrait
-          h1={`Australia's University Jobs Website`}
-          h1_mobile={`AU's University Jobs Website`}
-          country={'aus'}
-          items={items}
-        />
+        <HeroBannerPortrait country={'aus'} items={items} />
 
-        <div className="w-full md:h-[6vh] max-w-[700px] flex flex-col items-top mx-auto mt-32 mb-24">
+        <div className="w-full max-w-[700px] mx-auto mb-16">
           <JobSearchBoxCountry country={'Australia'} />
         </div>
         <ul className="position_type_links faculty-container flex flex-wrap gap-4 items-center justify-center text-gray-400 mb-2 w-full md:w-auto">
@@ -207,11 +202,14 @@ export default async function myPage() {
             </Link>
           </li>
         </ul>
+        <h2 className="my-16 text-center">
+          Australia's University Jobs Website
+        </h2>
 
         <div id="section" className="bg-slate-200 py-4 full-width mt-8">
           <div className="md:hero-content flex-col lg:flex-row mx-auto md:items-start py-12  ">
             <h2 className="text-3xl md:text-6xl font-bold md:text-right text-gray-500 m-0 pb-8 px-7 md:px-0 ">
-              Academic & University Jobs&nbsp;Australia
+              University Jobs&nbsp;Australia
             </h2>
 
             {/* New changes 18 July 2024… */}
