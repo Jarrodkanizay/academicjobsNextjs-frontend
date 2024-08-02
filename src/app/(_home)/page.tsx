@@ -378,14 +378,11 @@ export default async function myPage() {
             </Link>
           </p> */}
       <h2 className="underline-full">
-        Top Faculty Positions: Lecturer, Postdoc and Research Jobs{' '}
+        Top Faculty Positions: Lecturer, Postdoc and Research Jobs
       </h2>
-      <div className="cate-group section23 ">
-        <div className="widget__text-block">
-          <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-4 py-2 px-7"></div>
-          <TopJobs country="United States" />
-        </div>
-      </div>
+
+      <TopJobs country="United States" />
+
       <Link
         className="text-[#f4a10c] mt-4 mb-4 px-2 font-bold"
         href="/university-jobs?r=united%20states"

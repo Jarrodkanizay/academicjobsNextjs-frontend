@@ -34,7 +34,10 @@ const TopJobs = ({ country }) => {
     <div className="faculty-container grid-cols-1 grid md:grid-cols-4 gap-6">
       {jobs?.length > 0 &&
         jobs.map((job, index) => (
-          <div className="card shadow-xl" key={index}>
+          <div
+            className="card shadow-xl border-[1px] border-slate-200"
+            key={index}
+          >
             <div className="card-body">
               <h3 className="card-title">
                 <Link
@@ -49,7 +52,8 @@ const TopJobs = ({ country }) => {
                 <br />
                 {job.location}
                 <br />
-                exp: {new Date(job.expiration_date).toLocaleDateString('en-US', {
+                exp:{' '}
+                {new Date(job.expiration_date).toLocaleDateString('en-US', {
                   month: 'short',
                   day: 'numeric',
                   year: 'numeric',
