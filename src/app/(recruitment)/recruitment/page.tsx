@@ -11,44 +11,54 @@ export const metadata: Metadata = {
     'We make the job posting process quick and easy, Academic Jobs is the best  recruitment platform for higher education institutions to discover academics. ',
   keywords: 'Academic Jobs Recruitment, Academic Recruitment Platform',
 };
+
+let bgImage = '/blobs/purple-blob-with-orange-outline-overlay.svg';
+
 export default function myPage() {
   return (
     <main>
+      {/* Hero banner */}
+      <section className="m-0 p-0 px-4 flex justify-center my-8">
+        <div className="w-full flex justify-center max-w-[1180px] max-h-[340px] mx-auto">
+          <div
+            className="flex flex-col items-start justify-center p-0 md:pr-[20%] md:mb-[3%] w-full md:max-w-[700px]"
+            style={{
+              backgroundImage: `url(${
+                bgImage || '/blobs/purple-blob-with-orange-outline-overlay.svg'
+              })`,
+              backgroundSize: 'contain',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'center right',
+            }}
+          >
+            <h1
+              className="m-0 p-0 mb-4 text-4xl md:text-5xl font-bold max-w-md text-gray-blue leading-tight"
+              style={{
+                textShadow: '1px 1px 3px rgba(255, 255, 255, 0.8)',
+                color: 'white',
+              }}
+            >
+              <span className="text-aj">#1 in Higher Education</span>{' '}
+              Job Advertising & Employer Branding
+            </h1>
+            <p className="m-0 p-0">
+              Enhance your visibility with our targeted advertising solutions.
+            </p>
+          </div>
+          <div className="ml-[-20px] hidden md:block">
+            <Image
+              src="/recruitment-pricing/recruitment-hero.png"
+              className="object-contain h-full w-full"
+              width={532}
+              height={534}
+              alt="Number 1 Recruitment Platform"
+            />
+          </div>
+        </div>
+      </section>
       {/* Pricing Table */}
       <section className="container mx-auto px-4">
         <PricingTable2 />
-      </section>
-
-      {/* Hero banner */}
-      <section>
-        <div className="hero max-h-fit bg-slate-200 py-8 mx-auto">
-          <div className="container mx-auto">
-            <div className="hero-content flex-col xl:flex-row mx-auto max-w-full gap-8">
-              <Image
-                src="https://academicjobs.s3.amazonaws.com/img/_misc/Were-Hiring-Stock-scaled.jpg"
-                className="lg:max-w-lg rounded-lg shadow-2xl mb-8 lg:mb-0"
-                width={1280}
-                height={480}
-                alt="Number 1 Recruitment Platform"
-              />
-              <div>
-                <h1 className="text-3xl font-bold text-aj">
-                  Join the Global No. 1 Academic Job Board & Community
-                </h1>
-                <h4 className="mb-0">
-                  Academic Jobs is the Premier Destination for Academic and
-                  University staff Recruitment
-                </h4>
-                <p className="py-6">
-                  HR professionals love how simple and affordable it is to post
-                  jobs that target the best local & global talent. We understand
-                  the importance of finding the right talent, and we go above
-                  and beyond to help you achieve this.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
       {/* Main Content */}
       <section className="container mx-auto px-4 mt-24">
@@ -235,7 +245,6 @@ export default function myPage() {
           </div>
         </div>
       </section>
-
       {/* Breakout Section */}
       <div className="bg-slate-200 mb-8 mt-16 py-8 px-4">
         <div className="container mx-auto">
@@ -406,7 +415,6 @@ export default function myPage() {
           </div>
         </div>
       </section>
-
       {/* Contact us CTA */}
       <section className="container mx-auto px-4 mt-12">
         <div className="alert mb-10">

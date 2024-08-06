@@ -52,7 +52,8 @@ html {
       // grid-template-columns: repeat(3, 1fr);
       // gap: 2rem;
       color: white;
-
+      // background-size: contain;
+      background-repeat: none;
       .card {
         min-height: 20rem;
         background: rgb(62, 32, 128);
