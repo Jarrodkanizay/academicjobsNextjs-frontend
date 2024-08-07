@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     'Search more than 11,000 university Jobs in research, postdoctoral, science, lecturer and university faculty positions. New university jobs added daily.',
   keywords:
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
+  alternates: {
+    canonical: 'https://www.academicjobs.com/',
+  },
 };
 
 const jobData = [
