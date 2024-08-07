@@ -114,7 +114,10 @@ const Footer = () => {
           <li className=" font-bold text-xl pb-1 ">Navigation</li>
           {/* <li><a className="footer-nav__link" href="/">Home</a></li> */}
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/">University Jobs</Link>
+          </li>
+          <li>
+            <Link href="/">Higher Ed Jobs</Link>
           </li>
           <li>
             <Link href="/faq">FAQ</Link>
