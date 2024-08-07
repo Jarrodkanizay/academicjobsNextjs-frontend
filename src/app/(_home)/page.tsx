@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     'Search more than 11,000 university Jobs in research, postdoctoral, science, lecturer and university faculty positions. New university jobs added daily.',
   keywords:
     'Academic Jobs. Higher Ed Jobs, Academic positions, University Jobs, College Jobs',
+  alternates: {
+    canonical: 'https://www.academicjobs.com/',
+  },
 };
 
 const jobData = [
@@ -293,35 +296,6 @@ export default async function myPage() {
               growth and research excellence.
             </p>
           </div>
-          {/* Previous version */}
-          {/* <div>
-            <p className="md:px-7 mb-4 mt-1">
-              Discover top-tier faculty positions and university staff roles in
-              the world of higher education. Begin your search for{' '}
-              <a
-                className="link-aj"
-                href="/university-jobs?r=global"
-                target="_blank"
-              >
-                university jobs
-              </a>
-              , academic jobs, college faculty positions and administrative
-              opportunities in higher ed. Explore and apply for a range of uni
-              jobs, including lecturer jobs, research jobs, postdoctoral
-              positions, university administrator and senior academic positions,
-              available nationally and internationally.
-            </p>
-            <p className="md:px-7">
-              Whether you're an aspiring or established professor, researcher,
-              lecturer, or higher education administrator, our comprehensive
-              online job board offers the most current opportunities in academia
-              globally. Stay updated with the latest university job openings,
-              job listings, and job vacancies in the higher education employment
-              sector. Find your next university jobs now and join a
-              collaborative environment dedicated to intellectual growth,
-              professional development and research excellence.
-            </p>
-          </div> */}
         </div>
       </div>
       <h2 className="underline-full">University Jobs of the week</h2>
@@ -367,6 +341,16 @@ export default async function myPage() {
           height={625}
           className="block hover:opacity-70"
         />
+        <h2 className="flex gap-4 text-5xl items-center max-w-2xl mx-auto hover:text-amber-600 mt-8">
+          <Image
+            src="/icons/aj-bevelled-icon.png"
+            alt="University Rankings"
+            width={130}
+            height={130}
+            className="block hover:opacity-70"
+          />
+          Top University Employer Rankings
+        </h2>
       </Link>
       {/* <p className="px-7 text-center mt-5">
             <Link
@@ -565,7 +549,6 @@ export default async function myPage() {
           </div>
         </div>
       </div>
-      {/* WIP */}
       {/* <h2 className="underline-full mt-20">Top Universities To Work For</h2>
       <div className="cate-group section23 ">
         <div className="widget__text-block">
