@@ -8,10 +8,8 @@ import { useSearchParams } from 'next/navigation';
 import { useRouter } from 'next/navigation';
 import Autocomplete from 'react-google-autocomplete';
 import JobAlertsForm from '@/components/profile/JobAlertsForm';
-
 const GOOGLE_GEOCODING_API_URL =
   'https://maps.googleapis.com/maps/api/geocode/json';
-
 export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
   const router = useRouter();
   const searchParams = loadFromURLParams(useSearchParams());
@@ -34,16 +32,14 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
     searchFilter0 && searchFilter0.length > 0
       ? searchFilter0
       : p.filter1 && p.filter1.length > 0
-      ? p.filter1
-      : []
+        ? p.filter1
+        : []
   );
   const filter0Ref = useRef(filter0); // Use useRef to keep a reference to filter0
   const l = p.l || searchParams.l || '';
-
   useEffect(() => {
     filter0Ref.current = filter0; // Update the ref whenever filter0 changes
   }, [filter0]);
-
   const updateURLParams = async () => {
     if (l && l.toLowerCase() !== 'tasmania') {
       try {
@@ -76,7 +72,6 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
       }
     }
   };
-
   useEffect(() => {
     if (l) {
       updateURLParams();
@@ -96,7 +91,6 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
       });
     }
   }, [l, filter0]);
-
   let filter1 = [...filter0];
   const filteredData = filter1.filter((item) => item.category !== 'region');
   if (!r || r === 'global' || r === 'Global') {
@@ -104,11 +98,9 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
   } else {
     filter1 = [...filteredData, { category: 'region', filter: r }];
   }
-
   const keyWordRef = useRef(null);
   const [page, setPage] = useState(0);
   const [selectedFilters, setSelectedFilters] = useState([]);
-
   useEffect(() => {
     const initialFilters = filter1.map(({ category, filter }) => ({
       category,
@@ -116,7 +108,6 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
     }));
     setSelectedFilters(initialFilters);
   }, []); // Remove isUrlLoaded dependency
-
   const filterType1 = {
     JobType: true,
     ExecutiveJobs: false,
@@ -125,10 +116,9 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
     StaffAdministration: false,
     FacultyDepartmentJobs: false,
     AcademicPositionType: false,
-    PositionType: true,
+    PositionType: false,
     thirdcategory: false,
   };
-
   const filterType = {
     Country: false,
     State: true,
@@ -137,15 +127,11 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
     SalaryRange: true,
     OnsiteRemote: true,
   };
-
   const [filterTypes1, setfilterTypes1] = useState(filterType1);
   const [filterTypes, setfilterTypes] = useState(filterType);
-
-  const onEditorStateChange1 = (suggestion) => {};
-
+  const onEditorStateChange1 = (suggestion) => { };
   const [category, setCategory] = useState('');
   const [filter2, setfilter2] = useState([]);
-
   useEffect(() => {
     setfilterTypes1((p) => ({ ...p, ExecutiveJobs: false }));
     setfilterTypes1((p) => ({ ...p, PositionType: false }));
@@ -174,11 +160,9 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
       setfilterTypes1((p) => ({ ...p, PositionType: true }));
     }
   }, [JSON.stringify(filter1)]);
-
   useEffect(() => {
     setfilter2(filter1);
   }, [category]);
-
   const {
     isPending: isPendingQty,
     isError: isErrorQty,
@@ -208,7 +192,6 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
     },
     enabled: category !== '',
   });
-
   const filterValues9 = {
     Country: 'Country',
     State: 'State',
@@ -226,10 +209,8 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
     OnsiteRemote: 'Onsite/Remote',
     thirdcategory: 'thirdcategory',
   };
-
   const [isShowFilter, setIsShowFilter] = useState(false);
   const [isFormVisible, setIsFormVisible] = useState(false);
-
   const handleCheckboxChange = (filter) => {
     const isChecked = selectedFilters.some((item) => item.filter === filter);
     let updatedFilters;
@@ -266,7 +247,6 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
     }
     setSelectedFilters(updatedFilters);
   };
-
   return (
     <>
       <div
@@ -314,7 +294,6 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
                         types: ['geocode', 'establishment'],
                       }}
                     />
-
                     {/* Job alert create button here */}
                     <button
                       className="btn bg-amber-500 text-white mt-4 md:ml-2 md:mt-0 rounded-r-xl rounded-l-[0]"
@@ -323,7 +302,6 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
                       Create Job Alert
                     </button>
                   </div>
-
                   {selectedFilters.length > 0 && !sidebarView && (
                     <div className="md:flex md:flex-wrap pb-2 p-2">
                       {selectedFilters.map(({ category, filter }, i) => (
@@ -370,17 +348,15 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
               <React.Fragment key={i}>
                 <button
                   key={i}
-                  className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${
-                    category === filterType
+                  className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${category === filterType
                       ? 'bg-amber-500 text-white border-amber-500'
                       : ' border-gray-500'
-                  }
+                    }
                   ${showYN ? 'block' : 'hidden'}
-                  ${
-                    filterType === 'JobType'
+                  ${filterType === 'JobType'
                       ? 'bg-[#f4a10c] md:w-auto text-white animate-pulse font-bold shadow-md'
                       : ' border-gray-500'
-                  }
+                    }
                   `}
                   onClick={() => {
                     if (category === filterType) {
@@ -397,6 +373,28 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
                 </button>
               </React.Fragment>
             ))}
+            <button
+              className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold bg-white border-gray-500 `}
+              onClick={() => {
+                const currentURL = window.location.pathname;
+                const newSearchParams = {
+                  ...searchParams,
+                  r,
+                  l,
+                  filter0: [],
+                };
+                router.replace(
+                  `${currentURL}?${toURLParams(newSearchParams)}`,
+                  { scroll: false }
+                );
+                setCategory('');
+                setSelectedFilters([]);
+                setfilterTypes1(p => filterType1);
+                //router.push(`/university-jobs`);
+              }}
+            >
+              Clear Filter
+            </button>
           </div>
         )}
         {!sidebarView && (
@@ -409,11 +407,10 @@ export default function Page({ p = {}, forceClass = '', sidebarView = false }) {
                 <React.Fragment key={i}>
                   <button
                     key={i}
-                    className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${
-                      category === filterType
+                    className={`px-2 py-1 text-gray-500 border rounded-md text-sm font-bold ${category === filterType
                         ? 'bg-amber-500 text-white border-amber-500'
                         : 'bg-white border-gray-500'
-                    }
+                      }
                   ${showYN ? 'block' : 'hidden'}`}
                     onClick={() => {
                       if (category === filterType) {
