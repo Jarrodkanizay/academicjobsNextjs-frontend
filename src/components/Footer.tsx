@@ -117,9 +117,6 @@ const Footer = () => {
             <Link href="/">University Jobs</Link>
           </li>
           <li>
-            <Link href="/">Higher Ed Jobs</Link>
-          </li>
-          <li>
             <Link href="/faq">FAQ</Link>
           </li>
 
